@@ -1,0 +1,4 @@
+<Page ux:Class="ExhibitorPage">
+    <Router ux:Dependency="router" />
+    <JavaScript File="ExhibitorPage.js" />
+</Page>

@@ -1,0 +1,4 @@
+<Page ux:Class="ProgramPage">
+    <Router ux:Dependency="router" />
+    <JavaScript File="ProgramPage.js" />
+</Page>

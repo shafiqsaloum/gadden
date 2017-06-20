@@ -1,0 +1,4 @@
+<Page ux:Class="PartnersPage">
+    <Router ux:Dependency="router" />
+    <JavaScript File="PartnersPage.js" />
+</Page>

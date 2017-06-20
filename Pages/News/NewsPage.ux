@@ -1,0 +1,4 @@
+<Page ux:Class="NewsPage">
+    <Router ux:Dependency="router" />
+    <JavaScript File="NewsPage.js" />
+</Page>

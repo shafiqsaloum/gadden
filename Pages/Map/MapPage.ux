@@ -1,0 +1,4 @@
+<Page ux:Class="MapPage">
+    <Router ux:Dependency="router" />
+    <JavaScript File="MapPage.js" />
+</Page>
