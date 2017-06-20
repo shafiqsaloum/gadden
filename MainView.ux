@@ -1,16 +1,13 @@
 <App>
 	<iOS.StatusBarConfig Style="Light" />
-
-
-
 	<EdgeNavigator>
 		<Panel ux:Name="sidebar" Edge="Left" Width="100%" Margin="0,0,56,0" Background="#000">
 			<Shadow ux:Name="shadow" Angle="180" Distance="8" Size="16" Color="#0000" />
 			<Image Layer="Background" File="assets/MenuBackground.png" StretchMode="Fill" />
 
 			<Router ux:Name="router" />
-			<Navigator>
-					<NewsPage ux:Template="news" router="router" />
+			<!-- <Navigator>
+					<NewsPage Label="Details" ux:Template="news" router="router" />
 					<PartnersPage ux:Template="partners" router="router" />
 					<ExhibitorPage ux:Template="exhibitor" router="router" />
 					<ProgramPage ux:Template="program" router="router" />
@@ -18,7 +15,22 @@
 					<SponsorsPage ux:Template="sponsors" router="router" />
 					<MapPage ux:Template="map" router="router" />
 					<AboutUsPage ux:Template="aboutus" router="router" />
-			</Navigator>
+			</Navigator> -->
+
+			<StackPanel Alignment="VerticalCenter">
+				<Panel Alignment="Right" Margin="20" >
+					<Text TextAlignment="Right" LineSpacing="12" Color="#fff" FontSize="22">
+						NYHETER
+						PARTNERS
+						UTSTÄLLARE
+						ICE BREAKERS
+						SPONSORER
+						KARTA
+						OM OSS
+					</Text>
+				</Panel>
+			</StackPanel>
+
 
 			<ActivatingAnimation>
 				<Change shadow.Color="#0004" />
