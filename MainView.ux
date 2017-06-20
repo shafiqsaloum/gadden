@@ -18,8 +18,11 @@
 			</Navigator> -->
 
 			<StackPanel Alignment="VerticalCenter">
-				<Panel Alignment="Right" Margin="20" >
-					<Text TextAlignment="Right" LineSpacing="12" Color="#fff" FontSize="22">
+				<Panel Margin="0,0,20,40">
+					<Image Alignment="TopRight" File="assets/GaddenLogotypeWhite.png" Width="50%" />
+				</Panel>
+				<Panel Alignment="Right" Margin="0,0,20,0" >
+					<Text TextAlignment="Right" LineSpacing="12" Color="#fff" FontSize="20">
 						NYHETER
 						PARTNERS
 						UTSTÄLLARE
@@ -28,6 +31,14 @@
 						KARTA
 						OM OSS
 					</Text>
+				</Panel>
+
+				<Rectangle Alignment="Right" Margin="0,20,20,0" Fill="#979797" Height="1px" SnapToPixels="true" Width="100"/>
+
+				<Panel Margin="0,40,20,0" Height="90">
+					<Image Alignment="TopRight" File="assets/HandelsbankenLogotypeWhite.png" Width="30%" />
+					<Image Alignment="CenterRight" File="assets/ErnstYoungLogotypeWhite.png" Width="10%"  />
+					<Image Alignment="BottomRight" File="assets/HHGSLogotypWhite.png" Width="30%" />
 				</Panel>
 			</StackPanel>
 
