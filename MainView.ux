@@ -15,7 +15,7 @@
 					<SponsorsPage ux:Template="sponsors" router="router" />
 					<MapPage ux:Template="map" router="router" />
 					<AboutUsPage ux:Template="aboutus" router="router" />
-			</Navigator> -->
+			</Navigator>  -->
 
 			<StackPanel Alignment="VerticalCenter">
 				<Panel Margin="0,0,20,40">
@@ -51,17 +51,30 @@
 
 		<DockPanel Color="#263238">
 			<Rectangle ux:Name="sidebarFade" Layer="Overlay" Color="#0005" Opacity="0" HitTestMode="None" />
-			<StackPanel Dock="Top" Color="#2196F3">
+
+			<StackPanel Dock="Top" Color="#000">
+
 				<Shadow Size="3" Distance="1" />
 				<StatusBarBackground />
 				<Panel Height="56">
 					<Hamburger Alignment="Left">
+
 						<Clicked>
 							<NavigateToggle Target="sidebar" />
 						</Clicked>
 					</Hamburger>
+					<Image Alignment="Center" File="assets/GaddenLogotypeSmallWhite.png" Width="20%" />
 				</Panel>
 			</StackPanel>
+
+			<Panel>
+				<Image Margin="0,20,0,0" Alignment="TopCenter" File="assets/GaddenLogotypeWhite.png" Width="60%" />
+			</Panel>
+			<Image Alignment="Center" File="assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
+
+
 		</DockPanel>
 	</EdgeNavigator>
+
+
 </App>

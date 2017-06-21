@@ -1,4 +1,4 @@
-<Page ux:Class="NewsPage">
+<Page ux:Class="NewsPage" ux:Name="news">
     <Router ux:Dependency="router" />
     <JavaScript File="NewsPage.js" />
     <string ux:Property="Label" />
