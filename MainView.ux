@@ -67,10 +67,25 @@
 				</Panel>
 			</StackPanel>
 
+			<Font File="font.ttf" ux:Global="TitleFont" />
+			<Text  />
+
 			<Panel>
-				<Image Margin="0,20,0,0" Alignment="TopCenter" File="assets/GaddenLogotypeWhite.png" Width="60%" />
+				<Image Margin="0,20,0,20" Alignment="TopCenter" File="assets/GaddenLogotypeWhite.png" Width="60%" />
 			</Panel>
-			<Image Alignment="Center" File="assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
+
+			<Panel>
+				<Rectangle Color="#000" Height="75%" Alignment="Bottom" >
+					<Image Alignment="TopCenter" File="assets/NewsExampleImage.png">
+						<Text Font="TitleFont" Alignment="BottomLeft" Color="#fff" Margin="20,0,0,20">NY FÖRELÄSNING! HANNA OCH AMANDA</Text>
+					</Image>
+				</Rectangle>
+
+			</Panel>
+
+			<Panel>
+				<Image Alignment="Center" File="assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
+			</Panel>
 
 
 		</DockPanel>
