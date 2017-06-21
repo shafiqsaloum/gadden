@@ -87,7 +87,7 @@
 			var Observable = require("FuseJS/Observable");
 
 			var images = [
-				"9dD0gFvrFnY","5BCJwkGfIko","N2ZUsECT73U","g1tGjmH8rI4", "9dD0gFvrFnY","5BCJwkGfIko","N2ZUsECT73U","g1tGjmH8rI4",
+				"9dD0gFvrFnY","5BCJwkGfIko","N2ZUsECT73U","g1tGjmH8rI4","9dD0gFvrFnY","5BCJwkGfIko","N2ZUsECT73U","g1tGjmH8rI4","9dD0gFvrFnY","5BCJwkGfIko","N2ZUsECT73U","g1tGjmH8rI4",
 			];
 
 			var list = Observable();
