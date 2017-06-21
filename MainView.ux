@@ -87,15 +87,12 @@
 			var Observable = require("FuseJS/Observable");
 
 			var images = [
-				"eWFdaPRFjwE","_FjegPI89aU","_RBcxo9AU-U","PQvRco_SnpI","6hxvm0NzYP8",
-				"b-yEdfrvQ50","pHANr-CpbYM","45FJgZMXCK8","9wociMvaquU","tI_Odb7ZU6M",
-				"o0RZkkL072U","N-sxA8vEGDk","324ovGl1BwM","RSOxw9X-suY","qv5yb436qRI",
-				"iWFRUyqpCbQ","ZJ4yhJFIzaY","ze0tqwj86S4","gQR4STZ24kM","xMYnPo53ukE"
+				"9dD0gFvrFnY","5BCJwkGfIko","N2ZUsECT73U","g1tGjmH8rI4", "9dD0gFvrFnY","5BCJwkGfIko","N2ZUsECT73U","g1tGjmH8rI4",
 			];
 
 			var list = Observable();
 			var offset = Observable(0);
-			var limit = 20;
+			var limit = 10;
 
 			function increaseOffset() {
 				changeOffset(5);
@@ -144,6 +141,7 @@
 		</Panel>
 
 		<Panel ux:Class="ListItem" Height="204">
+			<Text Font="TitleFont" Alignment="BottomLeft" Color="#fff" Margin="20,0,0,20">NY FÖRELÄSNING! HANNA OCH AMANDA</Text>
 			<Deferred>
 				<Rectangle ux:Name="imageHolder" Opacity="1">
 					<AddingAnimation>
@@ -167,7 +165,7 @@
 			</ScrollView>
 
 		</ClientPanel>
-<Image Alignment="Center" File="assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
+		<Image Alignment="Center" File="assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
 	</DockPanel>
 	</EdgeNavigator>
 
