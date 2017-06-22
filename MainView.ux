@@ -1,174 +1,99 @@
 <App>
 	<iOS.StatusBarConfig Style="Light" />
+
+	<!-- Global fonts -->
 	<Font ux:Global="Raleway" File="Raleway-Regular.ttf" />
+	<Font ux:Global="TitleFont" File="font.ttf" />
+
+	<!-- Text classes-->
+	<Text ux:Class="WelcomeText" FontSize="20" Alignment="Center" Font="Raleway"/>
 
 	<EdgeNavigator>
+		<!-- Slide out menu -->
 		<Panel ux:Name="sidebar" Edge="Left" Width="100%" Margin="0,0,56,0" Background="#000">
 			<Shadow ux:Name="shadow" Angle="180" Distance="8" Size="16" Color="#0000" />
 			<Image Layer="Background" File="assets/MenuBackground.png" StretchMode="Fill" />
-
 			<Router ux:Name="router" />
 
+			<!-- Properties for menu text -->
 			<Panel ux:Class="Tab" ClipToBounds="false" Alignment="Right" Margin="0,0,20,0">
         <string ux:Property="Text" />
         <Text Value="{ReadProperty Text}" Color="#FFF" Alignment="Center" LineSpacing="12" FontSize="20" Font="Raleway" />
     	</Panel>
 
-			<Text ux:Class="WelcomeText" FontSize="30" Alignment="Center"/>
-
+			<!-- Content in slide out menu -->
 			<StackPanel Alignment="VerticalCenter">
+				<!-- Logotype at the top -->
 				<Panel Margin="0,0,20,40">
 					<Image Alignment="TopRight" File="assets/GaddenLogotypeWhite.png" Width="50%" />
 				</Panel>
 
-					<Panel Alignment="Right">
-						<Tab Text="NYHETER">
-	 						 <Clicked>
-	 								 <Set navigation.Active="news" />
-	 						 </Clicked>
-	 				 </Tab>
-				  </Panel>
-					<Panel Alignment="Right">
-							<Tab Text="PARTNERS">
-									<Clicked>
-											<Set navigation.Active="partners" />
-									</Clicked>
-							</Tab>
+				<!-- Links -->
+				<Panel Alignment="Right">
+					<Tab Text="NYHETER">
+	 					<Clicked><Set navigation.Active="news" /> </Clicked>
+	 				</Tab>
+				 </Panel>
+				<Panel Alignment="Right">
+					<Tab Text="PARTNERS">
+						<Clicked><Set navigation.Active="partners" /> </Clicked>
+					</Tab>
 					</Panel>
 					<Panel Alignment="Right">
-							<Tab Text="UTSTÄLLARE">
-									<Clicked>
-											<Set navigation.Active="exhibitor" />
-									</Clicked>
-							</Tab>
+						<Tab Text="UTSTÄLLARE">
+							<Clicked><Set navigation.Active="exhibitor" /></Clicked>
+						</Tab>
 					</Panel>
 					<Panel Alignment="Right">
-							<Tab Text="PROGRAM">
-									<Clicked>
-											<Set navigation.Active="program" />
-									</Clicked>
-							</Tab>
+						<Tab Text="PROGRAM">
+							<Clicked><Set navigation.Active="program" /></Clicked>
+						</Tab>
 					</Panel>
 					<Panel Alignment="Right">
-							<Tab Text="ICE BREAKER">
-									<Clicked>
-											<Set navigation.Active="icebreaker" />
-									</Clicked>
-							</Tab>
+						<Tab Text="ICE BREAKER">
+							<Clicked><Set navigation.Active="icebreaker" /></Clicked>
+						</Tab>
 					</Panel>
 					<Panel Alignment="Right">
-							<Tab Text="SPONSORER">
-									<Clicked>
-											<Set navigation.Active="sponsors" />
-									</Clicked>
-							</Tab>
+						<Tab Text="SPONSORER">
+							<Clicked><Set navigation.Active="sponsors" /></Clicked>
+						</Tab>
 					</Panel>
 					<Panel Alignment="Right">
-							<Tab Text="KARTA">
-									<Clicked>
-											<Set navigation.Active="map" />
-									</Clicked>
-							</Tab>
+						<Tab Text="KARTA">
+							<Clicked><Set navigation.Active="map" /></Clicked>
+						</Tab>
 					</Panel>
 					<Panel Alignment="Right">
-							<Tab Text="OM OSS">
-									<Clicked>
-											<Set navigation.Active="aboutus" />
-									</Clicked>
-							</Tab>
+						<Tab Text="OM OSS">
+							<Clicked><Set navigation.Active="aboutus" /></Clicked>
+						</Tab>
 					</Panel>
 
+				<!-- Line seperator -->
 				<Rectangle Alignment="Right" Margin="0,20,20,0" Fill="#979797" Height="1px" SnapToPixels="true" Width="100"/>
 
+				<!-- Partners logotypes -->
 				<Panel Margin="0,40,20,0" Height="90">
 					<Image Alignment="TopRight" File="assets/HandelsbankenLogotypeWhite.png" Width="30%" />
 					<Image Alignment="CenterRight" File="assets/ErnstYoungLogotypeWhite.png" Width="10%"  />
 					<Image Alignment="BottomRight" File="assets/HHGSLogotypWhite.png" Width="30%" />
 				</Panel>
-
 			</StackPanel>
-			<ActivatingAnimation>
-				<Change shadow.Color="#0004" />
-				<Change sidebarFade.Opacity="1" />
-			</ActivatingAnimation>
+		<!-- End of slide out -->
 		</Panel>
 
-		<DockPanel Color="#263238">
-			<Rectangle ux:Name="sidebarFade" Layer="Overlay" Color="#0005" Opacity="0" HitTestMode="None" />
+		<!-- Main content -->
+		<DockPanel Color="#ccc">
 
-			<StackPanel Dock="Top" Color="#000">
-
-				<Shadow Size="3" Distance="1" />
-				<StatusBarBackground />
-				<Panel Height="56">
-					<Hamburger Alignment="Left">
-
-						<Clicked>
-							<NavigateToggle Target="sidebar" />
-						</Clicked>
-					</Hamburger>
-					<Image Alignment="Center" File="assets/GaddenLogotypeSmallWhite.png" Width="20%" />
-				</Panel>
-			</StackPanel>
-
-			<Font File="font.ttf" ux:Global="TitleFont" />
-
-		<JavaScript>
-			var Observable = require("FuseJS/Observable");
-
-			var images = [
-				"9dD0gFvrFnY","5BCJwkGfIko","N2ZUsECT73U","g1tGjmH8rI4","9dD0gFvrFnY","5BCJwkGfIko","N2ZUsECT73U","g1tGjmH8rI4","9dD0gFvrFnY","5BCJwkGfIko","N2ZUsECT73U","g1tGjmH8rI4",
-			];
-
-			var list = Observable();
-			var offset = Observable(0);
-			var limit = 10;
-
-			function increaseOffset() {
-				changeOffset(5);
-			}
-
-			function decreaseOffset() {
-				changeOffset(-5);
-			}
-
-			function changeOffset(diff) {
-				var nextOffset = offset.value + diff;
-				if (nextOffset >= 0) {
-					offset.value = nextOffset;
-					if ((list.length - nextOffset) <= limit) {
-						loadItems().then(function() {
-							atEnd.check();
-						});
-					}
-				}
-			}
-
-			function loadItems() {
-				var p = new Promise(function(resolve) {
-					var items = images.map(function(i) {
-						return {image: "https://source.unsplash.com/" + i + "/416x208"};
-					});
-					list.addAll(items);
-					resolve();
-				});
-				return p;
-			}
-
-			loadItems();
-
-			module.exports = {
-				list: list,
-				offset: offset,
-				limit: limit,
-				increaseOffset: increaseOffset,
-				decreaseOffset: decreaseOffset
-			}
-		</JavaScript>
-
-		<Panel>
-			<Image Margin="0,20,0,20" Alignment="TopCenter" File="assets/GaddenLogotypeWhite.png" Width="60%" />
-		</Panel>
+		<!-- Headerbar -->
+		<StackPanel Dock="Top" Color="#000">
+			<Panel Height="56">
+				<Hamburger Alignment="Left">
+					<Clicked><NavigateToggle Target="sidebar" /></Clicked>
+				</Hamburger>
+			</Panel>
+		</StackPanel>
 
 	<PageControl ux:Name="navigation">
 		<Page ux:Name="news">
@@ -196,8 +121,9 @@
 				<ux:Include File="Pages/AboutUs/AboutUsPage.ux" />
 		</Page>
 	</PageControl>
+</DockPanel>
 
-	</DockPanel>
 	</EdgeNavigator>
+
 
 </App>
