@@ -8,7 +8,8 @@
 
     <!-- Placeholders for news -->
     <Panel ux:Class="ListItem" Height="204">
-			<Text Font="TitleFont" Alignment="BottomLeft" Color="#fff" Margin="20,0,0,20">NY FÖRELÄSNING! HANNA OCH AMANDA</Text>
+      <!-- Placeholder for title -->
+			<Title>NY FÖRELÄSNING! HANNA OCH AMANDA</Title>
 			<Deferred>
 				<Rectangle ux:Name="imageHolder" Opacity="1">
 					<AddingAnimation>
