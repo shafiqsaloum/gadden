@@ -3,6 +3,7 @@
 
 	<!-- Global fonts -->
 	<Font ux:Global="Raleway" File="Raleway-Regular.ttf" />
+	<Font ux:Global="RalewayBlack" File="Raleway-Black.ttf" />
 	<Font ux:Global="TitleFont" File="font.ttf" />
 
 	<!-- Text classes-->
@@ -10,6 +11,7 @@
 	<Text ux:Class="Title" Font="TitleFont" Alignment="BottomLeft" Color="#fff" Margin="20,0,0,0" />
 	<Text ux:Class="TitleBig" Font="TitleFont" Alignment="TopCenter" Color="#fff" FontSize="30" />
 	<TextView ux:Class="Paragraph" Font="Raleway" Alignment="Left" TextColor="#fff" FontSize="14" TextWrapping="Wrap" />
+	<Text ux:Class="ButtonText" Font="RalewayBlack" FontSize="14" Color="#fff" />
 
 	<EdgeNavigator>
 		<!-- Slide out menu -->

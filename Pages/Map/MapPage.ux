@@ -2,13 +2,13 @@
   <JavaScript File="MapPage.js" />
 
   <!-- Floor navigation -->
-  <Panel ux:Class="TabText" ClipToBounds="false" Margin="0,0,0,4" Background="#000">
+  <Panel  ux:Class="TabText" ClipToBounds="false" Margin="0,0,0,0" Background="#000" >
     <string ux:Property="Text" />
-    <Text Value="{ReadProperty Text}" Color="#FFF" Alignment="Center" FontSize="12"/>
+    <Text  Value="{ReadProperty Text}" Font="RalewayBlack" Alignment="Center" FontSize="12" Color="#fff"/>
   </Panel>
 
   <!-- Sets animation between floors -->
-  <Rectangle ux:Name="indicator" LayoutMaster="plan3Tab" Color="#FFF">
+  <Rectangle ux:Name="indicator" LayoutMaster="plan3Tab" Color="#fff">
     <LayoutAnimation>
       <Move RelativeTo="WorldPositionChange" X="1" Duration="0.4" Easing="BackIn"/>
     </LayoutAnimation>

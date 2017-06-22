@@ -1,5 +1,5 @@
 [Uno.Compiler.UxGenerated]
-public partial class Paragraph: Fuse.Controls.Text
+public partial class Paragraph: Fuse.Controls.TextView
 {
     static Paragraph()
     {
@@ -11,8 +11,9 @@ public partial class Paragraph: Fuse.Controls.Text
     }
     void InitializeUX()
     {
-        this.FontSize = 25f;
-        this.Color = float4(1f, 1f, 1f, 1f);
+        this.TextWrapping = Fuse.Controls.TextWrapping.Wrap;
+        this.FontSize = 14f;
+        this.TextColor = float4(1f, 1f, 1f, 1f);
         this.Alignment = Fuse.Elements.Alignment.Left;
         this.Font = global::MainView.Raleway;
     }

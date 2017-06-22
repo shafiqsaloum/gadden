@@ -13,7 +13,7 @@ public partial class Title: Fuse.Controls.Text
     {
         this.Color = float4(1f, 1f, 1f, 1f);
         this.Alignment = Fuse.Elements.Alignment.BottomLeft;
-        this.Margin = float4(20f, 0f, 0f, 20f);
+        this.Margin = float4(20f, 0f, 0f, 0f);
         this.Font = global::MainView.TitleFont;
     }
 }
