@@ -1,0 +1,29 @@
+<Navigator DefaultPath="home">
+	<!-- <ux:Include File="Login.ux" />
+	<ux:Include File="Chat.ux" /> -->
+	<DockPanel>
+
+		<PageControl>
+			<!-- <Page Name="channels" >
+				<PageControl Interaction="None">
+					<ux:Include File="Channel/List.ux" />
+					<ux:Include File="Channel/View.ux" />
+				</PageControl>
+			</Page>
+-->
+			<!-- <Page Name="AboutUs">
+				<Navigator>
+					<ux:Include File="Pages/AboutUs/AboutUsPage.js" />
+					<ux:Include File="Pages/AboutUs/AboutUsPage.ux"/>
+				</Navigator>
+			</Page> -->
+
+
+
+			<Page Name="AboutUs">
+				<ux:Include File="Pages/AboutUs/AboutUsPage.ux" />
+			</Page>
+		</PageControl>
+
+	</DockPanel>
+</Navigator>

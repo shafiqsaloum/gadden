@@ -1,6 +1,4 @@
-<Page ux:Class="NewsPage" ux:Name="news">
-    <Router ux:Dependency="router" />
-    <JavaScript File="NewsPage.js" />
-    <string ux:Property="Label" />
-    <Button Text="Login" Clicked="{loginClicked}" />
+<Page>
+  <JavaScript File="NewsPage.js" />
+  <WelcomeText>Välkommen till nyheter</WelcomeText>
 </Page>

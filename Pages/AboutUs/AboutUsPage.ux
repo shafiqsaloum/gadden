@@ -1,4 +1,4 @@
-<Page ux:Class="AboutUsPage">
-    <Router ux:Dependency="router" />
-    <JavaScript File="AboutUsPage.js" />
+<Page>
+  <JavaScript File="AboutUsPage.js" />
+  <WelcomeText>Välkommen till ice breakers</WelcomeText>
 </Page>

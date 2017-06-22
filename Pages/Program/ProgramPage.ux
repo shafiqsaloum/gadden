@@ -1,4 +1,4 @@
-<Page ux:Class="ProgramPage">
-    <Router ux:Dependency="router" />
-    <JavaScript File="ProgramPage.js" />
+<Page>
+  <JavaScript File="ProgramPage.js" />
+  <WelcomeText>Välkommen till program</WelcomeText>
 </Page>

@@ -1,4 +1,4 @@
-<Page ux:Class="SponsorsPage">
-    <Router ux:Dependency="router" />
-    <JavaScript File="SponsorsPage.js" />
+<Page>
+  <JavaScript File="SponsorsPage.js" />
+  <WelcomeText>Välkommen till sponsorer</WelcomeText>
 </Page>

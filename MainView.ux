@@ -6,32 +6,75 @@
 			<Image Layer="Background" File="assets/MenuBackground.png" StretchMode="Fill" />
 
 			<Router ux:Name="router" />
-			<!-- <Navigator>
-					<NewsPage Label="Details" ux:Template="news" router="router" />
-					<PartnersPage ux:Template="partners" router="router" />
-					<ExhibitorPage ux:Template="exhibitor" router="router" />
-					<ProgramPage ux:Template="program" router="router" />
-					<IceBreakersPage ux:Template="icebreaker" router="router" />
-					<SponsorsPage ux:Template="sponsors" router="router" />
-					<MapPage ux:Template="map" router="router" />
-					<AboutUsPage ux:Template="aboutus" router="router" />
-			</Navigator>  -->
+
+			<Panel ux:Class="Tab" ClipToBounds="false" Alignment="Right" Margin="0,0,20,0">
+        <string ux:Property="Text" />
+        <Text Value="{ReadProperty Text}" Color="#FFF" Alignment="Center" LineSpacing="12" FontSize="20" />
+    	</Panel>
+
+		<Text ux:Class="WelcomeText" FontSize="30" Alignment="Center"/>
 
 			<StackPanel Alignment="VerticalCenter">
 				<Panel Margin="0,0,20,40">
 					<Image Alignment="TopRight" File="assets/GaddenLogotypeWhite.png" Width="50%" />
 				</Panel>
-				<Panel Alignment="Right" Margin="0,0,20,0" >
-					<Text TextAlignment="Right" LineSpacing="12" Color="#fff" FontSize="20">
-						NYHETER
-						PARTNERS
-						UTSTÄLLARE
-						ICE BREAKERS
-						SPONSORER
-						KARTA
-						OM OSS
-					</Text>
-				</Panel>
+
+					<Panel ux:Name="newspage" Alignment="Right">
+						<Tab Text="NYHETER">
+	 						 <Clicked>
+	 								 <Set navigation.Active="news" />
+	 						 </Clicked>
+	 				 </Tab>
+				  </Panel>
+					<Panel ux:Name="partnerspage" Alignment="Right">
+							<Tab Text="PARTNERS">
+									<Clicked>
+											<Set navigation.Active="partners" />
+									</Clicked>
+							</Tab>
+					</Panel>
+					<Panel ux:Name="exhibitorpage" Alignment="Right">
+							<Tab Text="UTSTÄLLARE">
+									<Clicked>
+											<Set navigation.Active="exhibitor" />
+									</Clicked>
+							</Tab>
+					</Panel>
+					<Panel ux:Name="programpage" Alignment="Right">
+							<Tab Text="PROGRAM">
+									<Clicked>
+											<Set navigation.Active="program" />
+									</Clicked>
+							</Tab>
+					</Panel>
+					<Panel ux:Name="icebreakerspage" Alignment="Right">
+							<Tab Text="ICE BREAKER">
+									<Clicked>
+											<Set navigation.Active="icebreaker" />
+									</Clicked>
+							</Tab>
+					</Panel>
+					<Panel ux:Name="sponsorspage" Alignment="Right">
+							<Tab Text="SPONSORER">
+									<Clicked>
+											<Set navigation.Active="sponsors" />
+									</Clicked>
+							</Tab>
+					</Panel>
+					<Panel ux:Name="mappage" Alignment="Right">
+							<Tab Text="KARTA">
+									<Clicked>
+											<Set navigation.Active="map" />
+									</Clicked>
+							</Tab>
+					</Panel>
+					<Panel ux:Name="aboutuspage" Alignment="Right">
+							<Tab Text="OM OSS">
+									<Clicked>
+											<Set navigation.Active="aboutus" />
+									</Clicked>
+							</Tab>
+					</Panel>
 
 				<Rectangle Alignment="Right" Margin="0,20,20,0" Fill="#979797" Height="1px" SnapToPixels="true" Width="100"/>
 
@@ -40,9 +83,8 @@
 					<Image Alignment="CenterRight" File="assets/ErnstYoungLogotypeWhite.png" Width="10%"  />
 					<Image Alignment="BottomRight" File="assets/HHGSLogotypWhite.png" Width="30%" />
 				</Panel>
+
 			</StackPanel>
-
-
 			<ActivatingAnimation>
 				<Change shadow.Color="#0004" />
 				<Change sidebarFade.Opacity="1" />
@@ -68,20 +110,6 @@
 			</StackPanel>
 
 			<Font File="font.ttf" ux:Global="TitleFont" />
-
-			<!-- <Panel>
-				<Image Margin="0,20,0,20" Alignment="TopCenter" File="assets/GaddenLogotypeWhite.png" Width="60%" />
-			</Panel>
-			<Panel>
-				<Rectangle Color="#000" Height="75%" Alignment="Bottom" >
-					<Image Alignment="TopCenter" File="assets/NewsExampleImage.png">
-						<Text Font="TitleFont" Alignment="BottomLeft" Color="#fff" Margin="20,0,0,20">NY FÖRELÄSNING! HANNA OCH AMANDA</Text>
-					</Image>
-				</Rectangle>
-			</Panel>
-			<Panel>
-				<Image Alignment="Center" File="assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
-			</Panel> -->
 
 		<JavaScript>
 			var Observable = require("FuseJS/Observable");
@@ -140,32 +168,33 @@
 			<Image Margin="0,20,0,20" Alignment="TopCenter" File="assets/GaddenLogotypeWhite.png" Width="60%" />
 		</Panel>
 
-		<Panel ux:Class="ListItem" Height="204">
-			<Text Font="TitleFont" Alignment="BottomLeft" Color="#fff" Margin="20,0,0,20">NY FÖRELÄSNING! HANNA OCH AMANDA</Text>
-			<Deferred>
-				<Rectangle ux:Name="imageHolder" Opacity="1">
-					<AddingAnimation>
-						<Change imageHolder.Opacity="0" Delay="0.16" Duration="0.32" />
-					</AddingAnimation>
-					<ImageFill Url="{image}" StretchMode="UniformToFill" WrapMode="ClampToEdge" MemoryPolicy="UnloadUnused" />
-				</Rectangle>
-			</Deferred>
-			<Rectangle Color="#000" />
-		</Panel>
+	<PageControl ux:Name="navigation">
+		<Page ux:Name="news">
+				<ux:Include File="Pages/News/NewsPage.ux" />
+		</Page>
+		<Page ux:Name="partners">
+				<ux:Include File="Pages/Partners/PartnersPage.ux" />
+		</Page>
+		<Page ux:Name="exhibitor">
+				<ux:Include File="Pages/Exhibitor/ExhibitorPage.ux" />
+		</Page>
+		<Page ux:Name="program">
+				<ux:Include File="Pages/Program/ProgramPage.ux" />
+		</Page>
+		<Page ux:Name="icebreaker">
+				<ux:Include File="Pages/IceBreakers/IceBreakersPage.ux" />
+		</Page>
+		<Page ux:Name="sponsors">
+				<ux:Include File="Pages/Sponsors/SponsorsPage.ux" />
+		</Page>
+		<Page ux:Name="map">
+				<ux:Include File="Pages/Map/MapPage.ux" />
+		</Page>
+		<Page ux:Name="aboutus">
+				<ux:Include File="Pages/AboutUs/AboutUsPage.ux" />
+		</Page>
+	</PageControl>
 
-		<ClientPanel Height="68%" Alignment="Bottom">
-			<ScrollView LayoutMode="PreserveVisual">
-				<Scrolled To="Start" Within="104" Handler="{decreaseOffset}" />
-				<Scrolled ux:Name="atEnd" To="End" Within="104" Handler="{increaseOffset}" />
-				<StackPanel Margin="0" ItemSpacing="0">
-					<Each Items="{list}" Offset="{offset}" Limit="{limit}">
-						<ListItem />
-					</Each>
-				</StackPanel>
-			</ScrollView>
-
-		</ClientPanel>
-		<Image Alignment="Center" File="assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
 	</DockPanel>
 	</EdgeNavigator>
 
