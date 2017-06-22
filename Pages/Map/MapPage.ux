@@ -1,4 +1,52 @@
 <Page>
   <JavaScript File="MapPage.js" />
-  <WelcomeText>Välkommen till karta</WelcomeText>
+
+  <!-- Floor navigation -->
+  <Panel ux:Class="TabText" ClipToBounds="false" Margin="0,0,0,4" Background="#000">
+    <string ux:Property="Text" />
+    <Text Value="{ReadProperty Text}" Color="#FFF" Alignment="Center" FontSize="12"/>
+  </Panel>
+
+  <!-- Sets animation between floors -->
+  <Rectangle ux:Name="indicator" LayoutMaster="plan3Tab" Color="#FFF">
+    <LayoutAnimation>
+      <Move RelativeTo="WorldPositionChange" X="1" Duration="0.4" Easing="BackIn"/>
+    </LayoutAnimation>
+  </Rectangle>
+
+  <DockPanel>
+    <!-- Buttons -->
+    <Grid Dock="Top" ColumnCount="2" Height="30" Background="#000">
+        <Panel ux:Name="plan3Tab">
+            <TabText Text="PLAN 3">
+                <Clicked>
+                    <Set navigationControl.Active="plan3" />
+                </Clicked>
+            </TabText>
+        </Panel>
+        <Panel ux:Name="plan4Tab">
+            <TabText Text="PLAN 4">
+                <Clicked>
+                    <Set navigationControl.Active="plan4" />
+                </Clicked>
+            </TabText>
+        </Panel>
+    </Grid>
+
+    <!-- Content on floors -->
+    <PageControl ux:Name="navigationControl">
+      <Page ux:Name="plan3" Background="#000">
+        <WhileActive Threshold="0.5">
+            <Set indicator.LayoutMaster="plan3Tab" />
+        </WhileActive>
+        <Image Alignment="Center" File="../../assets/MapPlan3.png" Width="90%" />
+      </Page>
+        <Page ux:Name="plan4" Background="#000">
+          <WhileActive Threshold="0.5">
+              <Set indicator.LayoutMaster="plan4Tab" />
+          </WhileActive>
+          <Image Alignment="Center" File="../../assets/MapPlan4.png" Width="90%" />
+        </Page>
+    </PageControl>
+    </DockPanel>
 </Page>

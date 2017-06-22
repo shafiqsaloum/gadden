@@ -7,7 +7,14 @@
   </Panel>
 
   <ClientPanel Height="75%" Alignment="Bottom" Color="#000">
+    <Panel Margin="0,50,0,0">
     <TitleBig>TEMA 2017</TitleBig>
+    <Rectangle Alignment="TopCenter" Margin="0,45,0,0" Fill="#979797" Height="1px" Width="120"/>
+    <Paragraph Margin="0,0,0,0" Width="80%" Alignment="Center" Height="280">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique mauris nec ornare consequat. Pellentesque vitae magna eget lacus facilisis ultricies. Fusce nec feugiat nibh, in tincidunt nulla.
+    </Paragraph>
+
+  </Panel>
   </ClientPanel>
 
   <!-- Background image -->

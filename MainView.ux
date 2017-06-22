@@ -7,8 +7,9 @@
 
 	<!-- Text classes-->
 	<Text ux:Class="WelcomeText" FontSize="20" Alignment="Center" Font="Raleway"/>
-	<Text ux:Class="Title" Font="TitleFont" Alignment="BottomLeft" Color="#fff" Margin="20,0,0,20" />
-	<Text ux:Class="TitleBig" Font="TitleFont" Alignment="TopCenter" Color="#fff" Margin="0,50,0,0" FontSize="30" /> 
+	<Text ux:Class="Title" Font="TitleFont" Alignment="BottomLeft" Color="#fff" Margin="20,0,0,0" />
+	<Text ux:Class="TitleBig" Font="TitleFont" Alignment="TopCenter" Color="#fff" FontSize="30" />
+	<TextView ux:Class="Paragraph" Font="Raleway" Alignment="Left" TextColor="#fff" FontSize="14" TextWrapping="Wrap" />
 
 	<EdgeNavigator>
 		<!-- Slide out menu -->

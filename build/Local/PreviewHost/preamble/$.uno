@@ -218,7 +218,7 @@ public class GeneratedApplication
 : Outracks.Simulator.Application
 {
 public GeneratedApplication()
-: base(new [] {new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("127.0.0.1"), 12124), new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("192.168.2.120"), 12124)}, "/Users/ericaglimsholt/Documents/Skola/Handels marketing/Gadden/gadden/gadden.unoproj", GetBundle, new string[] { ""})
+: base(new [] {new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("127.0.0.1"), 12124), new Uno.Net.IPEndPoint(Uno.Net.IPAddress.Parse("192.168.0.2"), 12124)}, "/Users/ericaglimsholt/Documents/Skola/Handels marketing/Gadden/gadden/gadden.unoproj", GetBundle, new string[] { ""})
 {
 
 							if defined(CPLUSPLUS)
