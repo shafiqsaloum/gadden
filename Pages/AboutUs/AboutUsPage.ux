@@ -1,4 +1,15 @@
 <Page>
   <JavaScript File="AboutUsPage.js" />
-  <WelcomeText>Välkommen till Om oss</WelcomeText>
+
+  <!-- Logotype -->
+  <Panel>
+    <Image Margin="0,20,0,20" Alignment="TopCenter" File="../../assets/GaddenLogotypeWhite.png" Width="60%" />
+  </Panel>
+
+  <ClientPanel Height="75%" Alignment="Bottom" Color="#000">
+    <TitleBig>TEMA 2017</TitleBig>
+  </ClientPanel>
+
+  <!-- Background image -->
+  <Image Alignment="Center" File="../../assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
 </Page>
