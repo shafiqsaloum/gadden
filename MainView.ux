@@ -1,5 +1,7 @@
 <App>
 	<iOS.StatusBarConfig Style="Light" />
+	<Font ux:Global="Raleway" File="Raleway-Regular.ttf" />
+
 	<EdgeNavigator>
 		<Panel ux:Name="sidebar" Edge="Left" Width="100%" Margin="0,0,56,0" Background="#000">
 			<Shadow ux:Name="shadow" Angle="180" Distance="8" Size="16" Color="#0000" />
@@ -9,66 +11,66 @@
 
 			<Panel ux:Class="Tab" ClipToBounds="false" Alignment="Right" Margin="0,0,20,0">
         <string ux:Property="Text" />
-        <Text Value="{ReadProperty Text}" Color="#FFF" Alignment="Center" LineSpacing="12" FontSize="20" />
+        <Text Value="{ReadProperty Text}" Color="#FFF" Alignment="Center" LineSpacing="12" FontSize="20" Font="Raleway" />
     	</Panel>
 
-		<Text ux:Class="WelcomeText" FontSize="30" Alignment="Center"/>
+			<Text ux:Class="WelcomeText" FontSize="30" Alignment="Center"/>
 
 			<StackPanel Alignment="VerticalCenter">
 				<Panel Margin="0,0,20,40">
 					<Image Alignment="TopRight" File="assets/GaddenLogotypeWhite.png" Width="50%" />
 				</Panel>
 
-					<Panel ux:Name="newspage" Alignment="Right">
+					<Panel Alignment="Right">
 						<Tab Text="NYHETER">
 	 						 <Clicked>
 	 								 <Set navigation.Active="news" />
 	 						 </Clicked>
 	 				 </Tab>
 				  </Panel>
-					<Panel ux:Name="partnerspage" Alignment="Right">
+					<Panel Alignment="Right">
 							<Tab Text="PARTNERS">
 									<Clicked>
 											<Set navigation.Active="partners" />
 									</Clicked>
 							</Tab>
 					</Panel>
-					<Panel ux:Name="exhibitorpage" Alignment="Right">
+					<Panel Alignment="Right">
 							<Tab Text="UTSTÄLLARE">
 									<Clicked>
 											<Set navigation.Active="exhibitor" />
 									</Clicked>
 							</Tab>
 					</Panel>
-					<Panel ux:Name="programpage" Alignment="Right">
+					<Panel Alignment="Right">
 							<Tab Text="PROGRAM">
 									<Clicked>
 											<Set navigation.Active="program" />
 									</Clicked>
 							</Tab>
 					</Panel>
-					<Panel ux:Name="icebreakerspage" Alignment="Right">
+					<Panel Alignment="Right">
 							<Tab Text="ICE BREAKER">
 									<Clicked>
 											<Set navigation.Active="icebreaker" />
 									</Clicked>
 							</Tab>
 					</Panel>
-					<Panel ux:Name="sponsorspage" Alignment="Right">
+					<Panel Alignment="Right">
 							<Tab Text="SPONSORER">
 									<Clicked>
 											<Set navigation.Active="sponsors" />
 									</Clicked>
 							</Tab>
 					</Panel>
-					<Panel ux:Name="mappage" Alignment="Right">
+					<Panel Alignment="Right">
 							<Tab Text="KARTA">
 									<Clicked>
 											<Set navigation.Active="map" />
 									</Clicked>
 							</Tab>
 					</Panel>
-					<Panel ux:Name="aboutuspage" Alignment="Right">
+					<Panel Alignment="Right">
 							<Tab Text="OM OSS">
 									<Clicked>
 											<Set navigation.Active="aboutus" />
