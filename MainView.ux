@@ -92,6 +92,7 @@
 				<Hamburger Alignment="Left">
 					<Clicked><NavigateToggle Target="sidebar" /></Clicked>
 				</Hamburger>
+				<Image Alignment="Center" File="assets/GaddenLogotypeSmallWhite.png" Width="20%" />
 			</Panel>
 		</StackPanel>
 

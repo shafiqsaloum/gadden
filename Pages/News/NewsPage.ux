@@ -1,10 +1,36 @@
 <Page>
   <JavaScript File="NewsPage.js" />
-  <WelcomeText>Välkommen till nyheter</WelcomeText>
 
     <!-- Logotype -->
     <Panel>
 			<Image Margin="0,20,0,20" Alignment="TopCenter" File="../../assets/GaddenLogotypeWhite.png" Width="60%" />
 		</Panel>
 
+    <!-- Placeholders for news -->
+    <Panel ux:Class="ListItem" Height="204">
+			<Text Font="TitleFont" Alignment="BottomLeft" Color="#fff" Margin="20,0,0,20">NY FÖRELÄSNING! HANNA OCH AMANDA</Text>
+			<Deferred>
+				<Rectangle ux:Name="imageHolder" Opacity="1">
+					<AddingAnimation>
+						<Change imageHolder.Opacity="0" Delay="0.16" Duration="0.32" />
+					</AddingAnimation>
+					<ImageFill Url="{image}" StretchMode="UniformToFill" WrapMode="ClampToEdge" MemoryPolicy="UnloadUnused" />
+				</Rectangle>
+			</Deferred>
+			<Rectangle Color="#000" />
+		</Panel>
+		<ClientPanel Height="75%" Alignment="Bottom">
+			<ScrollView LayoutMode="PreserveVisual">
+				<Scrolled To="Start" Within="104" Handler="{decreaseOffset}" />
+				<Scrolled ux:Name="atEnd" To="End" Within="104" Handler="{increaseOffset}" />
+				<StackPanel Margin="0" ItemSpacing="0">
+					<Each Items="{list}" Offset="{offset}" Limit="{limit}">
+						<ListItem />
+					</Each>
+				</StackPanel>
+			</ScrollView>
+    </ClientPanel>
+
+    <!-- Background image -->
+    <Image Alignment="Center" File="../../assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
 </Page>
