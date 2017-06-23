@@ -1,4 +1,56 @@
 <Page>
   <JavaScript File="SponsorsPage.js" />
-  <WelcomeText>Välkommen till sponsorer</WelcomeText>
+
+  <!-- Sponsor navigation -->
+  <Panel  ux:Class="TabSponsor" ClipToBounds="false" Margin="0,0,0,0" Background="#000" >
+    <string ux:Property="Text" />
+    <Text  Value="{ReadProperty Text}" Font="RalewayBlack" Alignment="Center" FontSize="12" Color="#fff"/>
+  </Panel>
+
+  <!-- Sets animation -->
+  <Rectangle ux:Name="indicatorSponsor" LayoutMaster="SponsorTab" Color="#fff">
+    <LayoutAnimation>
+      <Move RelativeTo="WorldPositionChange" X="1" Duration="0.4" Easing="BackIn"/>
+    </LayoutAnimation>
+  </Rectangle>
+
+  <DockPanel Background="#000">
+    <!-- Buttons -->
+    <Grid Dock="Top" ColumnCount="2" Height="30" Background="#000">
+        <Panel ux:Name="SponsorTab">
+            <TabText Text="SPONSORER">
+                <Clicked>
+                    <Set navigationSponsors.Active="sponsor" />
+                </Clicked>
+            </TabText>
+        </Panel>
+        <Panel ux:Name="GoodiebagTab">
+            <TabText Text="GOODIEBAG">
+                <Clicked>
+                    <Set navigationSponsors.Active="goodiebag" />
+                </Clicked>
+            </TabText>
+        </Panel>
+    </Grid>
+
+    <!-- Content -->
+    <PageControl ux:Name="navigationSponsors">
+      <Page ux:Name="sponsor" Background="#000">
+        <WhileActive Threshold="0.5">
+            <Set indicatorSponsor.LayoutMaster="SponsorTab" />
+        </WhileActive>
+        <Panel Margin="0,50,0,0">
+          <TitleBig>Tack!</TitleBig>
+          <!-- Line seperator -->
+  				<Rectangle Alignment="TopCenter" Margin="0,50,0,0" Fill="#979797" Height="1px" SnapToPixels="true" Width="100"/>
+        </Panel>
+      </Page>
+        <Page ux:Name="goodiebag" Background="#000">
+          <WhileActive Threshold="0.5">
+              <Set indicatorSponsor.LayoutMaster="GoodiebagTab" />
+          </WhileActive>
+          <Text>Goodiebag</Text>
+        </Page>
+    </PageControl>
+  </DockPanel>
 </Page>
