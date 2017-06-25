@@ -1,4 +1,49 @@
 <Page>
   <JavaScript File="ExhibitorPage.js" />
-  <WelcomeText>Välkommen till utställare</WelcomeText>
+
+  <StackPanel Margin="20">
+    <TextInput PlaceholderText="Sök utställare" PlaceholderColor="#979797" Padding="5,0,0,0" Alignment="TopCenter" TextAlignment="Center" Width="100%" TextColor="White"  Height="30">
+      <Image Height="13" Alignment="Center" Margin="0,0,120,0" StretchMode="UniformToFill" Layer="Background" File="../../assets/SearchGrey.png"  />
+      <Rectangle Fill="White" Layer="Background" CornerRadius="10" >
+        <Stroke Width="1" Color="#979797" />
+      </Rectangle>
+    </TextInput>
+
+    <StackPanel Margin="0,20,0,0" Width="100%">
+      <Paragraph Alignment="Left" Font="RalewayBlack" Value="A" />
+      <Rectangle Margin="0,7,0,7" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+      <Grid RowCount="1" ColumnCount="2">
+        <Paragraph Value="UTSTÄLLARNAMN" />
+        <Image Height="15" Alignment="TopRight" StretchMode="UniformToFill" File="../../assets/StarWhite.png"/>
+      </Grid>
+
+      <Rectangle Margin="0,7,0,7" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+
+      <Grid RowCount="1" ColumnCount="2">
+        <Paragraph Value="UTSTÄLLARNAMN" />
+        <Image Height="15" Alignment="TopRight" StretchMode="UniformToFill" File="../../assets/StarWhite.png"/>
+      </Grid>
+
+      <Rectangle Margin="0,7,0,7" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+
+      <Grid RowCount="1" ColumnCount="2">
+        <Paragraph Value="UTSTÄLLARNAMN" />
+        <Image Height="15" Alignment="TopRight" StretchMode="UniformToFill" File="../../assets/StarWhite.png"/>
+      </Grid>
+
+      <Rectangle Margin="0,7,0,7" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+
+      <Grid RowCount="1" ColumnCount="2">
+        <Paragraph Value="UTSTÄLLARNAMN" />
+        <Image Height="15" Alignment="TopRight" StretchMode="UniformToFill" File="../../assets/StarWhite.png"/>
+      </Grid>
+
+      <Rectangle Margin="0,7,0,7" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+    </StackPanel>
+  </StackPanel>
+
+  <DockPanel Background="#000" >
+    <Image StretchMode="Fill" Layer="Background" File="../../assets/BackgroundExhibitor.png"  />
+  </DockPanel>
+
 </Page>
