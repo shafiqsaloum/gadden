@@ -1,4 +1,17 @@
 <Page>
   <JavaScript File="PartnersPage.js" />
-  <WelcomeText>Välkommen till partners</WelcomeText>
+
+  <DockPanel Background="#000" Height="100%">
+    <Grid RowCount="6" ColumnCount="1">
+      <Rectangle Row="0" Column="0" Height="300">
+        <Image File="../../assets/NewsExampleImage2.png" StretchMode="UniformToFill"/>
+      </Rectangle>
+      <Rectangle Row="2" Column="0" Color="Blue" Height="40" Alignment="Top">
+        <Image Width="40%" Alignment="TopLeft" Margin="20,20,0,0" File="../../assets/HandelsbankenLogotypeWhite.png" />
+      </Rectangle>
+      <Rectangle Row="3" Column="0" Color="Red" Alignment="Top" Height="60">
+        <TitleBig Alignment="TopLeft">Handelbanken</TitleBig>
+      </Rectangle>
+    </Grid>
+  </DockPanel>
 </Page>
