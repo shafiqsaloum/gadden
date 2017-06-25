@@ -1,17 +1,46 @@
 <Page>
   <JavaScript File="PartnersPage.js" />
+  <StackPanel Background="#000" Height="100%">
+      <Image File="../../assets/NewsExampleImage2.png"
+        StretchMode="UniformToFill"
+        Width="100%"
+        Height="200"
+        Alignment="Top"
+        />
 
-  <DockPanel Background="#000" Height="100%">
-    <Grid RowCount="6" ColumnCount="1">
-      <Rectangle Row="0" Column="0" Height="300">
-        <Image File="../../assets/NewsExampleImage2.png" StretchMode="UniformToFill"/>
-      </Rectangle>
-      <Rectangle Row="2" Column="0" Color="Blue" Height="40" Alignment="Top">
-        <Image Width="40%" Alignment="TopLeft" Margin="20,20,0,0" File="../../assets/HandelsbankenLogotypeWhite.png" />
-      </Rectangle>
-      <Rectangle Row="3" Column="0" Color="Red" Alignment="Top" Height="60">
-        <TitleBig Alignment="TopLeft">Handelbanken</TitleBig>
-      </Rectangle>
-    </Grid>
-  </DockPanel>
+        <Image File="../../assets/HandelsbankenLogotypeWhite.png"
+          StretchMode="UniformToFill"
+          Width="40%"
+          Alignment="TopLeft"
+          Margin="20,20,0,20"
+        />
+
+        <TitleBig
+          Alignment="TopLeft"
+          Margin="20,0,0,20"
+          Value="Handelsbanken"
+        />
+
+        <Paragraph Margin="20,0,20,20">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur enim nisl, tempor mollis dui finibus quis.
+        </Paragraph>
+
+
+        <Rectangle
+          Background="Black"
+          Width="40%"
+          Height="40"
+          Alignment="TopLeft"
+          Margin="20,0,0,0">
+          <Stroke Width="1" Color="White" />
+          <Paragraph Alignment="Center" Value="LÄS MER" />
+        </Rectangle>
+
+        <Paragraph Margin="20,20,0,0" Value="www.handelsbanken.se" />
+
+
+
+
+
+  </StackPanel>
 </Page>
