@@ -1,18 +1,20 @@
 <Page>
   <JavaScript File="IceBreakersPage.js" />
 
-  <DockPanel Background="#000">
+<DockPanel Background="#000" Height="100%">
     <!-- Background -->
     <Image Alignment="TopCenter" Layer="Background" File="../../assets/BackgroundIceBreaker.png"  />
 
-    <Panel Alignment="Center">
+    <StackPanel Alignment="Center">
       <TextView Font="TitleFont" TextColor="#fff" FontSize="65" TextWrapping="Wrap" TextAlignment="Center" LineSpacing="20" Alignment="Top" Margin="0,0,0,50">
         SHAKE TO BREAK
       </TextView>
       <Paragraph TextAlignment="Center" Alignment="BottomCenter">
         Skaka telefonen för att få tips på ice breakers
       </Paragraph>
-    </Panel>
+    </StackPanel>
+
+    <Image Width="40%" Alignment="BottomCenter" Layer="Background" File="../../assets/IceBreakerIcon.png"  />
 
   </DockPanel>
 
