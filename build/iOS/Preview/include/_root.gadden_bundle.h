@@ -18,8 +18,12 @@ struct gadden_bundle : uObject
     static uSStrong< ::g::Uno::IO::BundleFile*>& AboutUsPage8a70b474() { return gadden_bundle_typeof()->Init(), AboutUsPage8a70b474_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundAbstractPaintb7a7b0b1_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundAbstractPaintb7a7b0b1() { return gadden_bundle_typeof()->Init(), BackgroundAbstractPaintb7a7b0b1_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundExhibitor7b75354d_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundExhibitor7b75354d() { return gadden_bundle_typeof()->Init(), BackgroundExhibitor7b75354d_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundIceBreaker6c14bba6_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundIceBreaker6c14bba6() { return gadden_bundle_typeof()->Init(), BackgroundIceBreaker6c14bba6_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundProgram03638953_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundProgram03638953() { return gadden_bundle_typeof()->Init(), BackgroundProgram03638953_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> ErnstYoungLogotypeWhiteb47162ad_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& ErnstYoungLogotypeWhiteb47162ad() { return gadden_bundle_typeof()->Init(), ErnstYoungLogotypeWhiteb47162ad_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> ExhibitorPage088081d4_;
@@ -46,6 +50,8 @@ struct gadden_bundle : uObject
     static uSStrong< ::g::Uno::IO::BundleFile*>& MenuBackgrounde8390c5c() { return gadden_bundle_typeof()->Init(), MenuBackgrounde8390c5c_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> NewsExampleImage2dc48e6a7_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& NewsExampleImage2dc48e6a7() { return gadden_bundle_typeof()->Init(), NewsExampleImage2dc48e6a7_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> NewsExampleImagea23648e5_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& NewsExampleImagea23648e5() { return gadden_bundle_typeof()->Init(), NewsExampleImagea23648e5_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> NewsPage6c8b9894_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& NewsPage6c8b9894() { return gadden_bundle_typeof()->Init(), NewsPage6c8b9894_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> PartnersPage3c24808c_;
@@ -56,8 +62,12 @@ struct gadden_bundle : uObject
     static uSStrong< ::g::Uno::IO::BundleFile*>& RalewayBlack5428ecd5() { return gadden_bundle_typeof()->Init(), RalewayBlack5428ecd5_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> RalewayRegularb6f7e684_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& RalewayRegularb6f7e684() { return gadden_bundle_typeof()->Init(), RalewayRegularb6f7e684_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> SearchGreyfcbedeec_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& SearchGreyfcbedeec() { return gadden_bundle_typeof()->Init(), SearchGreyfcbedeec_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> SponsorsPage206270b4_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& SponsorsPage206270b4() { return gadden_bundle_typeof()->Init(), SponsorsPage206270b4_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> StarWhitec08d0b22_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& StarWhitec08d0b22() { return gadden_bundle_typeof()->Init(), StarWhitec08d0b22_; }
 };
 // }
 
