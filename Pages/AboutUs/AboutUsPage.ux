@@ -1,12 +1,26 @@
 <Page>
   <JavaScript File="AboutUsPage.js" />
 
-  <!-- Logotype -->
-  <Panel>
-    <Image Margin="0,20,0,20" Alignment="TopCenter" File="../../assets/GaddenLogotypeWhite.png" Width="60%" />
-  </Panel>
+  <ClientPanel>
+    <ScrollView>
+      <StackPanel Margin="0" ItemSpacing="16" >
+        <Image Margin="0,0,0,0" Alignment="TopCenter" File="../../assets/GaddenLogotypeWhite.png" Width="60%" />
 
-  <ClientPanel Height="75%" Alignment="Bottom" Color="#000">
+        <StackPanel Background="Black">
+          <Each Items="{dataSource}">
+            <StackPanel Margin="20">
+              <TitleBig Value="{title}" TextAlignment="Center" TextWrapping="Wrap" LineSpacing="10"/>
+               <Rectangle Alignment="TopCenter" Margin="0,30,0,30" Fill="#979797" Height="1px" Width="120"/>
+    				  <Paragraph Value="{content}" Margin="0,0,0,0" Width="100%" Alignment="Center" Height="100%"/>
+            </StackPanel>
+           </Each>
+       </StackPanel>
+
+      </StackPanel>
+     </ScrollView>
+  </ClientPanel>
+
+  <!-- <ClientPanel Height="75%" Alignment="Bottom" Color="#000">
     <Panel Margin="0,50,0,0">
     <TitleBig>TEMA 2017</TitleBig>
     <Rectangle Alignment="TopCenter" Margin="0,45,0,0" Fill="#979797" Height="1px" Width="120"/>
@@ -15,7 +29,7 @@
     </Paragraph>
 
   </Panel>
-  </ClientPanel>
+  </ClientPanel> -->
 
   <!-- Background image -->
   <Image Alignment="Center" File="../../assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
