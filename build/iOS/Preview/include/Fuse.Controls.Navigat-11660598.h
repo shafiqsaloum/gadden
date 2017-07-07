@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// private sealed class Navigator.DeferSwitch :1579
+// private sealed class Navigator.DeferSwitch :1578
 // {
 uType* Navigator__DeferSwitch_typeof();
 void Navigator__DeferSwitch__ctor__fn(Navigator__DeferSwitch* __this);

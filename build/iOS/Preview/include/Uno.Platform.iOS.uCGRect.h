@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace Uno{
 namespace Platform{
 namespace iOS{
 
-// public extern struct uCGRect :255
+// public extern struct uCGRect :274
 // {
 uStructType* uCGRect1_typeof();
 void uCGRect1__get_Zero_fn(CGRect* __retval);

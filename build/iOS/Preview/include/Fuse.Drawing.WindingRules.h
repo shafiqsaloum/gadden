@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace Drawing{
 
-// public static class WindingRules :491
+// public static class WindingRules :542
 // {
 uClassType* WindingRules_typeof();
 void WindingRules__AbsoluteGreaterOrEqualsTwo_fn(int* n, bool* __retval);

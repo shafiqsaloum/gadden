@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// internal sealed extern class KeyboardView :1234
+// internal sealed extern class KeyboardView :1224
 // {
 uType* KeyboardView_typeof();
 void KeyboardView__ctor__fn(KeyboardView* __this);

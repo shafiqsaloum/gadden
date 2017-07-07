@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace Fuse{
 namespace Gestures{
 namespace Internal{
 
-// private sealed class SwipeRegion.DoSwiped :800
+// private sealed class SwipeRegion.DoSwiped :812
 // {
 uType* SwipeRegion__DoSwiped_typeof();
 void SwipeRegion__DoSwiped__ctor__fn(SwipeRegion__DoSwiped* __this);

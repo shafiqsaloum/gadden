@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -17,7 +17,7 @@ namespace Fuse{
 namespace iOS{
 namespace Bindings{
 
-// internal sealed class Blitter :905
+// internal sealed class Blitter :342
 // {
 uType* Blitter_typeof();
 void Blitter__ctor__fn(Blitter* __this);

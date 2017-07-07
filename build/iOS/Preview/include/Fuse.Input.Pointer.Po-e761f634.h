@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Input{
 
-// private sealed class Pointer.PointerRecord :1067
+// private sealed class Pointer.PointerRecord :1269
 // {
 uType* Pointer__PointerRecord_typeof();
 void Pointer__PointerRecord__ctor__fn(Pointer__PointerRecord* __this);

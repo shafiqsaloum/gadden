@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -15,7 +15,7 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// internal sealed class LayoutMasterBoxSizing :3173
+// internal sealed class LayoutMasterBoxSizing :3245
 // {
 ::g::Fuse::Elements::BoxSizing_type* LayoutMasterBoxSizing_typeof();
 void LayoutMasterBoxSizing__ctor_1_fn(LayoutMasterBoxSizing* __this);

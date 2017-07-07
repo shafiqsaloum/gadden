@@ -34,8 +34,8 @@ namespace Fuse{
 namespace Drawing{
 namespace Internal{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/0.47.7/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class MultiBuffer.Field :195
 // {
@@ -94,8 +94,8 @@ MultiBuffer__Field* MultiBuffer__Field::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/0.47.7/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Float2Buffer :151
 // {
@@ -191,8 +191,8 @@ Float2Buffer* Float2Buffer::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/0.47.7/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Float3Buffer :115
 // {
@@ -288,8 +288,8 @@ Float3Buffer* Float3Buffer::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/0.47.7/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class FloatBuffer :133
 // {
@@ -385,8 +385,8 @@ FloatBuffer* FloatBuffer::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/0.47.7/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class MultiBuffer :194
 // {
@@ -766,8 +766,8 @@ MultiBuffer* MultiBuffer::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/0.47.7/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class MultiBuffer.Setter :315
 // {
@@ -825,8 +825,8 @@ MultiBuffer__Setter* MultiBuffer__Setter::New1(::g::Fuse::Drawing::Internal::Mul
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/0.47.7/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public class TypedBuffer :22
 // {
@@ -1064,8 +1064,8 @@ TypedBuffer* TypedBuffer::New2(int typeSize1, int initSize)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/0.47.7/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class UShortBuffer :169
 // {

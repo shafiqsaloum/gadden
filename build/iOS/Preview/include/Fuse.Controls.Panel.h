@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.LayoutControl.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -19,6 +20,7 @@
 #include <Uno.Float2.h>
 #include <Uno.UX.IPropertyListener.h>
 namespace g{namespace Fuse{namespace Controls{struct Panel;}}}
+namespace g{namespace Fuse{namespace Drawing{struct Surface;}}}
 namespace g{namespace Fuse{namespace Triggers{struct BusyTask;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct LayoutParams;}}
@@ -31,9 +33,14 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial class Panel :1769
+// public partial class Panel :1940
 // {
-::g::Fuse::Controls::Control_type* Panel_typeof();
+struct Panel_type : ::g::Fuse::Controls::Control_type
+{
+    ::g::Fuse::Drawing::ISurfaceDrawable interface15;
+};
+
+Panel_type* Panel_typeof();
 void Panel__ctor_6_fn(Panel* __this);
 void Panel__ArrangePaddingBox_fn(Panel* __this, ::g::Fuse::LayoutParams* lp);
 void Panel__CleanupBuffer_fn(Panel* __this);
@@ -45,6 +52,9 @@ void Panel__set_DeferFreeze_fn(Panel* __this, int* value);
 void Panel__Draw_fn(Panel* __this, ::g::Fuse::DrawContext* dc);
 void Panel__EndBusy_fn(Panel* __this);
 void Panel__FastTrackDrawWithOpacity_fn(Panel* __this, ::g::Fuse::DrawContext* dc, bool* __retval);
+void Panel__FreezeRooted_fn(Panel* __this);
+void Panel__FreezeUnrooted_fn(Panel* __this);
+void Panel__FuseDrawingISurfaceDrawableDraw_fn(Panel* __this, ::g::Fuse::Drawing::Surface* surface);
 void Panel__GetContentSize_fn(Panel* __this, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval);
 void Panel__get_HasFreezePrepared_fn(Panel* __this, bool* __retval);
 void Panel__get_IsFrozen_fn(Panel* __this, bool* __retval);
@@ -80,6 +90,8 @@ struct Panel : ::g::Fuse::Controls::LayoutControl
     int DeferFreeze();
     void DeferFreeze(int value);
     void EndBusy();
+    void FreezeRooted();
+    void FreezeUnrooted();
     bool HasFreezePrepared();
     bool IsFrozen();
     void IsFrozen(bool value);

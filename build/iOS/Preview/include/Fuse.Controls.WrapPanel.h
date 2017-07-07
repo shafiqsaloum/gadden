@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -24,9 +25,9 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class WrapPanel :2947
+// public sealed class WrapPanel :3192
 // {
-::g::Fuse::Controls::Control_type* WrapPanel_typeof();
+::g::Fuse::Controls::Panel_type* WrapPanel_typeof();
 void WrapPanel__ctor_7_fn(WrapPanel* __this);
 void WrapPanel__get_FlowDirection_fn(WrapPanel* __this, int* __retval);
 void WrapPanel__set_FlowDirection_fn(WrapPanel* __this, int* value);

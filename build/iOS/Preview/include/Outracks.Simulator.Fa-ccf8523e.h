@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/$.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Outracks{
 namespace Simulator{
 
-// public sealed class FailedToConnectToEndPoint :13
+// public sealed class FailedToConnectToEndPoint :1652
 // {
 ::g::Uno::Exception_type* FailedToConnectToEndPoint_typeof();
 void FailedToConnectToEndPoint__ctor_3_fn(FailedToConnectToEndPoint* __this, ::g::Uno::Net::IPEndPoint* endpoint, ::g::Uno::Exception* e);

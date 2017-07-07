@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -93,6 +93,7 @@ void Element__CalcRenderBounds_fn(Element* __this, ::g::Fuse::VisualBounds** __r
 void Element__CalcRenderBoundsWithEffects_fn(Element* __this, ::g::Fuse::VisualBounds** __retval);
 void Element__get_CanAdjustMarginBox_fn(Element* __this, bool* __retval);
 void Element__CaptureRegion_fn(Element* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Rect* region, ::g::Uno::Float2* padding, ::g::Uno::Graphics::Framebuffer** __retval);
+void Element__CleanupBatching_fn(Element* __this);
 void Element__get_ClipToBounds_fn(Element* __this, bool* __retval);
 void Element__set_ClipToBounds_fn(Element* __this, bool* value);
 void Element__Composit_fn(Element* __this, ::g::Fuse::DrawContext* dc);
@@ -263,6 +264,8 @@ struct Element : ::g::Fuse::Visual
     static ::g::Uno::UX::Selector _hitTestModeName_;
     static ::g::Uno::UX::Selector& _hitTestModeName() { return Element_typeof()->Init(), _hitTestModeName_; }
     ::g::Uno::Float2 _intendedSize;
+    static bool _invalidValuesWarn_;
+    static bool& _invalidValuesWarn() { return Element_typeof()->Init(), _invalidValuesWarn_; }
     static ::g::Uno::UX::Selector _opacityName_;
     static ::g::Uno::UX::Selector& _opacityName() { return Element_typeof()->Init(), _opacityName_; }
     bool _pendingDispatchPlacement;
@@ -313,6 +316,7 @@ struct Element : ::g::Fuse::Visual
     ::g::Fuse::VisualBounds* CalcRenderBounds() { ::g::Fuse::VisualBounds* __retval; return (((Element_type*)__type)->fp_CalcRenderBounds)(this, &__retval), __retval; }
     ::g::Fuse::VisualBounds* CalcRenderBoundsWithEffects();
     ::g::Uno::Graphics::Framebuffer* CaptureRegion(::g::Fuse::DrawContext* dc, ::g::Uno::Rect region, ::g::Uno::Float2 padding);
+    void CleanupBatching();
     bool ClipToBounds();
     void ClipToBounds(bool value);
     void Composit(::g::Fuse::DrawContext* dc);

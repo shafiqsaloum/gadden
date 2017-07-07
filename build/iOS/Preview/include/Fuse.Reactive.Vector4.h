@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Expressions/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Expressions/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public sealed class Vector4 :1305
+// public sealed class Vector4 :1306
 // {
 ::g::Fuse::Reactive::QuaternaryOperator_type* Vector4_typeof();
 void Vector4__ctor_2_fn(Vector4* __this, ::g::Fuse::Reactive::Expression* x, ::g::Fuse::Reactive::Expression* y, ::g::Fuse::Reactive::Expression* z, ::g::Fuse::Reactive::Expression* w);

@@ -35,8 +35,8 @@ namespace Fuse{
 namespace Input{
 namespace UX{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/ux/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/ux/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public static class AttachedFocusMembers :7
 // {
@@ -114,8 +114,8 @@ void AttachedFocusMembers::RemoveFocusLostHandler(::g::Fuse::Visual* node, uDele
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/ux/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/ux/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public static class AttachedKeyboardMembers :43
 // {
@@ -193,8 +193,8 @@ void AttachedKeyboardMembers::RemoveKeyReleasedHandler(::g::Fuse::Visual* node, 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/ux/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/ux/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public static class AttachedPointerMembers :83
 // {

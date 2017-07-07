@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/0.47.7/layouts/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{namespace Fuse{struct LayoutParams;}}
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct PropertyHandle;}}
 namespace g{namespace Fuse{struct Visual;}}
-namespace g{namespace Uno{namespace Collections{struct ObservableList;}}}
+namespace g{namespace Uno{namespace Collections{struct RootableList;}}}
 namespace g{namespace Uno{struct Float2;}}
 namespace g{namespace Uno{struct Float4;}}
 
@@ -19,12 +19,11 @@ namespace g{
 namespace Fuse{
 namespace Layouts{
 
-// public sealed class GridLayout :1035
+// public sealed class GridLayout :1034
 // {
 ::g::Fuse::Layouts::Layout_type* GridLayout_typeof();
 void GridLayout__ctor_2_fn(GridLayout* __this);
 void GridLayout__AddListener_fn(GridLayout* __this, ::g::Fuse::Layouts::DefinitionBase* item, bool* __retval);
-void GridLayout__AddListeners_fn(GridLayout* __this, uType* __type, uObject* list);
 void GridLayout__ArrangePaddingBox_fn(GridLayout* __this, uObject* elements, ::g::Uno::Float4* padding, ::g::Fuse::LayoutParams* lp);
 void GridLayout__CalcActualPositions_fn(GridLayout* __this, uObject* elements);
 void GridLayout__CalcAuto_fn(GridLayout* __this, uObject* elements, float* availableWidth, float* availableHeight, bool* secondPass, bool* hasFirstHorzSize, bool* hasFirstVertSize, bool* expandWidth, bool* expandHeight);
@@ -66,12 +65,11 @@ void GridLayout__GetTotalProportion_fn(GridLayout* __this, uType* __type, uObjec
 void GridLayout__IsMarginBoxDependent_fn(GridLayout* __this, ::g::Fuse::Visual* child, int* __retval);
 void GridLayout__Measure_fn(GridLayout* __this, uObject* elements, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval);
 void GridLayout__ModifyCount_fn(GridLayout* __this, uType* __type, uObject* list, int* count, ::g::Fuse::Layouts::DefinitionBase* primordial);
-void GridLayout__ModifyDefault_fn(GridLayout* __this, uType* __type, ::g::Uno::Collections::ObservableList* list, ::g::Fuse::Layouts::DefinitionBase* primordial);
+void GridLayout__ModifyDefault_fn(GridLayout* __this, uType* __type, ::g::Uno::Collections::RootableList* list, ::g::Fuse::Layouts::DefinitionBase* primordial);
 void GridLayout__New2_fn(GridLayout** __retval);
 void GridLayout__OnRooted_fn(GridLayout* __this);
 void GridLayout__OnUnrooted_fn(GridLayout* __this);
 void GridLayout__RemoveListener_fn(GridLayout* __this, ::g::Fuse::Layouts::DefinitionBase* item, bool* __retval);
-void GridLayout__RemoveListeners_fn(GridLayout* __this, uType* __type, uObject* list);
 void GridLayout__ResetColumn_fn(::g::Fuse::Visual* elm);
 void GridLayout__ResetColumnSpan_fn(::g::Fuse::Visual* elm);
 void GridLayout__ResetRow_fn(::g::Fuse::Visual* elm);
@@ -98,7 +96,7 @@ struct GridLayout : ::g::Fuse::Layouts::Layout
     int _childOrder;
     static uSStrong< ::g::Fuse::PropertyHandle*> _columnProperty_;
     static uSStrong< ::g::Fuse::PropertyHandle*>& _columnProperty() { return GridLayout_typeof()->Init(), _columnProperty_; }
-    uStrong< ::g::Uno::Collections::ObservableList*> _columns;
+    uStrong< ::g::Uno::Collections::RootableList*> _columns;
     static uSStrong< ::g::Fuse::PropertyHandle*> _columnSpanProperty_;
     static uSStrong< ::g::Fuse::PropertyHandle*>& _columnSpanProperty() { return GridLayout_typeof()->Init(), _columnSpanProperty_; }
     int _contentAlignment;
@@ -106,7 +104,7 @@ struct GridLayout : ::g::Fuse::Layouts::Layout
     uStrong< ::g::Fuse::Layouts::Row*> _defaultRow;
     static uSStrong< ::g::Fuse::PropertyHandle*> _rowProperty_;
     static uSStrong< ::g::Fuse::PropertyHandle*>& _rowProperty() { return GridLayout_typeof()->Init(), _rowProperty_; }
-    uStrong< ::g::Uno::Collections::ObservableList*> _rows;
+    uStrong< ::g::Uno::Collections::RootableList*> _rows;
     static uSStrong< ::g::Fuse::PropertyHandle*> _rowSpanProperty_;
     static uSStrong< ::g::Fuse::PropertyHandle*>& _rowSpanProperty() { return GridLayout_typeof()->Init(), _rowSpanProperty_; }
     static uSStrong< ::g::Fuse::Layouts::Column*> _staticDefaultColumn_;
@@ -116,7 +114,6 @@ struct GridLayout : ::g::Fuse::Layouts::Layout
 
     void ctor_2();
     bool AddListener(::g::Fuse::Layouts::DefinitionBase* item);
-    void AddListeners(uType* __type, uObject* list);
     void CalcActualPositions(uObject* elements);
     void CalcAuto(uObject* elements, float* availableWidth, float* availableHeight, bool secondPass, bool hasFirstHorzSize, bool hasFirstVertSize, bool expandWidth, bool expandHeight);
     void CalcFill(uType* __type, uObject* list, float available, float proportion, bool expand);
@@ -151,9 +148,8 @@ struct GridLayout : ::g::Fuse::Layouts::Layout
     float GetTotalProportion(uType* __type, uObject* list, bool expand);
     ::g::Uno::Float2 Measure(uObject* elements, ::g::Fuse::LayoutParams lp);
     void ModifyCount(uType* __type, uObject* list, int count, ::g::Fuse::Layouts::DefinitionBase* primordial);
-    void ModifyDefault(uType* __type, ::g::Uno::Collections::ObservableList* list, ::g::Fuse::Layouts::DefinitionBase* primordial);
+    void ModifyDefault(uType* __type, ::g::Uno::Collections::RootableList* list, ::g::Fuse::Layouts::DefinitionBase* primordial);
     bool RemoveListener(::g::Fuse::Layouts::DefinitionBase* item);
-    void RemoveListeners(uType* __type, uObject* list);
     int RowCount();
     void RowCount(int value);
     uObject* RowList();

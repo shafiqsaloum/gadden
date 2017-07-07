@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.Controls.Native.-6a21b22.h>
@@ -27,7 +27,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// public sealed extern class TextView :3060
+// public sealed extern class TextView :3154
 // {
 static void TextView_build(uType* type)
 {
@@ -73,25 +73,25 @@ TextView_type* TextView_typeof()
     return type;
 }
 
-// public TextView() :3065
+// public TextView() :3159
 void TextView__ctor_5_fn(TextView* __this)
 {
     __this->ctor_5();
 }
 
-// public TextView(ObjC.Object handle) :3063
+// public TextView(ObjC.Object handle) :3157
 void TextView__ctor_6_fn(TextView* __this, ::g::ObjC::Object* handle)
 {
     __this->ctor_6(handle);
 }
 
-// private static ObjC.Object Create() :3068
+// private static ObjC.Object Create() :3162
 void TextView__Create_fn(::g::ObjC::Object** __retval)
 {
     *__retval = TextView::Create();
 }
 
-// private void Fuse.Controls.Native.ITextView.set_Font(Fuse.Font value) :3131
+// private void Fuse.Controls.Native.ITextView.set_Font(Fuse.Font value) :3225
 void TextView__FuseControlsNativeITextViewset_Font_fn(TextView* __this, ::g::Fuse::Font* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.TextView", "Fuse.Controls.Native.ITextView.set_Font(Fuse.Font)");
@@ -109,7 +109,7 @@ void TextView__FuseControlsNativeITextViewset_Font_fn(TextView* __this, ::g::Fus
     }
 }
 
-// private void Fuse.Controls.Native.ITextView.set_FontSize(float value) :3112
+// private void Fuse.Controls.Native.ITextView.set_FontSize(float value) :3206
 void TextView__FuseControlsNativeITextViewset_FontSize_fn(TextView* __this, float* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.TextView", "Fuse.Controls.Native.ITextView.set_FontSize(float)");
@@ -118,7 +118,7 @@ void TextView__FuseControlsNativeITextViewset_FontSize_fn(TextView* __this, floa
     ::g::Fuse::Controls::Native::ITextView::Font(uInterface((uObject*)__this, ::TYPES[0/*Fuse.Controls.Native.ITextView*/]), __this->_font);
 }
 
-// private void Fuse.Controls.Native.ITextView.set_LineSpacing(float value) :3102
+// private void Fuse.Controls.Native.ITextView.set_LineSpacing(float value) :3196
 void TextView__FuseControlsNativeITextViewset_LineSpacing_fn(TextView* __this, float* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.TextView", "Fuse.Controls.Native.ITextView.set_LineSpacing(float)");
@@ -127,12 +127,12 @@ void TextView__FuseControlsNativeITextViewset_LineSpacing_fn(TextView* __this, f
     __this->UpdateText();
 }
 
-// private void Fuse.Controls.Native.ITextView.set_MaxLength(int value) :3088
+// private void Fuse.Controls.Native.ITextView.set_MaxLength(int value) :3182
 void TextView__FuseControlsNativeITextViewset_MaxLength_fn(TextView* __this, int* value)
 {
 }
 
-// private void Fuse.Controls.Native.ITextView.set_TextAlignment(Fuse.Controls.TextAlignment value) :3121
+// private void Fuse.Controls.Native.ITextView.set_TextAlignment(Fuse.Controls.TextAlignment value) :3215
 void TextView__FuseControlsNativeITextViewset_TextAlignment_fn(TextView* __this, int* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.TextView", "Fuse.Controls.Native.ITextView.set_TextAlignment(Fuse.Controls.TextAlignment)");
@@ -141,7 +141,7 @@ void TextView__FuseControlsNativeITextViewset_TextAlignment_fn(TextView* __this,
     __this->UpdateText();
 }
 
-// private void Fuse.Controls.Native.ITextView.set_TextColor(float4 value) :3148
+// private void Fuse.Controls.Native.ITextView.set_TextColor(float4 value) :3242
 void TextView__FuseControlsNativeITextViewset_TextColor_fn(TextView* __this, ::g::Uno::Float4* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.TextView", "Fuse.Controls.Native.ITextView.set_TextColor(float4)");
@@ -150,12 +150,12 @@ void TextView__FuseControlsNativeITextViewset_TextColor_fn(TextView* __this, ::g
     __this->UpdateText();
 }
 
-// private void Fuse.Controls.Native.ITextView.set_TextTruncation(Fuse.Controls.TextTruncation value) :3157
+// private void Fuse.Controls.Native.ITextView.set_TextTruncation(Fuse.Controls.TextTruncation value) :3251
 void TextView__FuseControlsNativeITextViewset_TextTruncation_fn(TextView* __this, int* value)
 {
 }
 
-// private void Fuse.Controls.Native.ITextView.set_TextWrapping(Fuse.Controls.TextWrapping value) :3093
+// private void Fuse.Controls.Native.ITextView.set_TextWrapping(Fuse.Controls.TextWrapping value) :3187
 void TextView__FuseControlsNativeITextViewset_TextWrapping_fn(TextView* __this, int* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.TextView", "Fuse.Controls.Native.ITextView.set_TextWrapping(Fuse.Controls.TextWrapping)");
@@ -164,7 +164,7 @@ void TextView__FuseControlsNativeITextViewset_TextWrapping_fn(TextView* __this, 
     __this->UpdateText();
 }
 
-// private void Fuse.Controls.Native.ITextView.set_Value(string value) :3079
+// private void Fuse.Controls.Native.ITextView.set_Value(string value) :3173
 void TextView__FuseControlsNativeITextViewset_Value_fn(TextView* __this, uString* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.TextView", "Fuse.Controls.Native.ITextView.set_Value(string)");
@@ -172,31 +172,31 @@ void TextView__FuseControlsNativeITextViewset_Value_fn(TextView* __this, uString
     __this->UpdateText();
 }
 
-// public TextView New() :3065
+// public TextView New() :3159
 void TextView__New3_fn(TextView** __retval)
 {
     *__retval = TextView::New3();
 }
 
-// public TextView New(ObjC.Object handle) :3063
+// public TextView New(ObjC.Object handle) :3157
 void TextView__New4_fn(::g::ObjC::Object* handle, TextView** __retval)
 {
     *__retval = TextView::New4(handle);
 }
 
-// private static void SetValue(ObjC.Object handle, ObjC.Object attributedString) :3166
+// private static void SetValue(ObjC.Object handle, ObjC.Object attributedString) :3260
 void TextView__SetValue_fn(::g::ObjC::Object* handle, ::g::ObjC::Object* attributedString)
 {
     TextView::SetValue(handle, attributedString);
 }
 
-// private void UpdateText() :3160
+// private void UpdateText() :3254
 void TextView__UpdateText_fn(TextView* __this)
 {
     __this->UpdateText();
 }
 
-// public TextView() [instance] :3065
+// public TextView() [instance] :3159
 void TextView::ctor_5()
 {
     _builder = ::g::Fuse::Controls::Native::iOS::NSAttributedStringBuilder::New1();
@@ -204,7 +204,7 @@ void TextView::ctor_5()
     ctor_6(TextView::Create());
 }
 
-// public TextView(ObjC.Object handle) [instance] :3063
+// public TextView(ObjC.Object handle) [instance] :3157
 void TextView::ctor_6(::g::ObjC::Object* handle)
 {
     _builder = ::g::Fuse::Controls::Native::iOS::NSAttributedStringBuilder::New1();
@@ -212,14 +212,14 @@ void TextView::ctor_6(::g::ObjC::Object* handle)
     ctor_4(handle);
 }
 
-// private void UpdateText() [instance] :3160
+// private void UpdateText() [instance] :3254
 void TextView::UpdateText()
 {
     uStackFrame __("Fuse.Controls.Native.iOS.TextView", "UpdateText()");
     TextView::SetValue(Handle(), uPtr(_builder)->BuildAttributedString());
 }
 
-// private static ObjC.Object Create() [static] :3068
+// private static ObjC.Object Create() [static] :3162
 ::g::ObjC::Object* TextView::Create()
 {
     @autoreleasepool
@@ -235,7 +235,7 @@ void TextView::UpdateText()
     
 }
 
-// public TextView New() [static] :3065
+// public TextView New() [static] :3159
 TextView* TextView::New3()
 {
     TextView* obj2 = (TextView*)uNew(TextView_typeof());
@@ -243,7 +243,7 @@ TextView* TextView::New3()
     return obj2;
 }
 
-// public TextView New(ObjC.Object handle) [static] :3063
+// public TextView New(ObjC.Object handle) [static] :3157
 TextView* TextView::New4(::g::ObjC::Object* handle)
 {
     TextView* obj1 = (TextView*)uNew(TextView_typeof());
@@ -251,7 +251,7 @@ TextView* TextView::New4(::g::ObjC::Object* handle)
     return obj1;
 }
 
-// private static void SetValue(ObjC.Object handle, ObjC.Object attributedString) [static] :3166
+// private static void SetValue(ObjC.Object handle, ObjC.Object attributedString) [static] :3260
 void TextView::SetValue(::g::ObjC::Object* handle, ::g::ObjC::Object* attributedString)
 {
     @autoreleasepool

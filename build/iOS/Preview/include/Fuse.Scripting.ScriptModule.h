@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -41,13 +41,19 @@ void ScriptModule__set_File_fn(ScriptModule* __this, ::g::Uno::UX::FileSource* v
 void ScriptModule__get_FileName_fn(ScriptModule* __this, uString** __retval);
 void ScriptModule__set_FileName_fn(ScriptModule* __this, uString* value);
 void ScriptModule__GenerateArgs_fn(ScriptModule* __this, ::g::Fuse::Scripting::Context* c, ::g::Fuse::Scripting::ModuleResult* result, ::g::Uno::Collections::List* args, uString** __retval);
+void ScriptModule__GetEffectiveCode_fn(ScriptModule* __this, uString** __retval);
 void ScriptModule__GetFile_fn(ScriptModule* __this, ::g::Uno::UX::FileSource** __retval);
+void ScriptModule__GetPreambleNewlines_fn(ScriptModule* __this, int* __retval);
 void ScriptModule__GetSourcePath_fn(ScriptModule* __this, uString** __retval);
 void ScriptModule__IsPathEqual_fn(uString* src, uString* path, bool* __retval);
 void ScriptModule__get_LineNumberOffset_fn(ScriptModule* __this, int* __retval);
 void ScriptModule__set_LineNumberOffset_fn(ScriptModule* __this, int* value);
 void ScriptModule__LookForFile_fn(ScriptModule* __this, uString* path, ::g::Uno::IO::BundleFile** __retval);
 void ScriptModule__New1_fn(ScriptModule** __retval);
+void ScriptModule__get_Postamble_fn(ScriptModule* __this, uString** __retval);
+void ScriptModule__set_Postamble_fn(ScriptModule* __this, uString* value);
+void ScriptModule__get_Preamble_fn(ScriptModule* __this, uString** __retval);
+void ScriptModule__set_Preamble_fn(ScriptModule* __this, uString* value);
 void ScriptModule__TryResolve_fn(ScriptModule* __this, uString* path, bool* isFile, ::g::Fuse::Scripting::Module** __retval);
 
 struct ScriptModule : ::g::Fuse::Scripting::Module
@@ -59,6 +65,8 @@ struct ScriptModule : ::g::Fuse::Scripting::Module
     int _lineNumberOffset;
     static uSStrong<uString*> ModuleContainsAnErrorMessage_;
     static uSStrong<uString*>& ModuleContainsAnErrorMessage() { return ScriptModule_typeof()->Init(), ModuleContainsAnErrorMessage_; }
+    uStrong<uString*> _Postamble;
+    uStrong<uString*> _Preamble;
 
     void ctor_1();
     bool Acceptor(uObject* obj);
@@ -73,10 +81,16 @@ struct ScriptModule : ::g::Fuse::Scripting::Module
     uString* FileName();
     void FileName(uString* value);
     uString* GenerateArgs(::g::Fuse::Scripting::Context* c, ::g::Fuse::Scripting::ModuleResult* result, ::g::Uno::Collections::List* args) { uString* __retval; return (((ScriptModule_type*)__type)->fp_GenerateArgs)(this, c, result, args, &__retval), __retval; }
+    uString* GetEffectiveCode();
+    int GetPreambleNewlines();
     uString* GetSourcePath();
     int LineNumberOffset();
     void LineNumberOffset(int value);
     ::g::Uno::IO::BundleFile* LookForFile(uString* path);
+    uString* Postamble();
+    void Postamble(uString* value);
+    uString* Preamble();
+    void Preamble(uString* value);
     ::g::Fuse::Scripting::Module* TryResolve(uString* path, bool isFile);
     static void CallModuleFunc(ScriptModule* __this, ::g::Fuse::Scripting::Function* moduleFunc, uArray* args) { ScriptModule__CallModuleFunc_fn(__this, moduleFunc, args); }
     static uString* ComputePath1(uString* sourcePath, uString* moduleId);

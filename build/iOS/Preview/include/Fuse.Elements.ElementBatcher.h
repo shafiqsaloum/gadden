@@ -1,9 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/caching/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Resources.ISoftDisposable.h>
+#include <Uno.IDisposable.h>
 #include <Uno.Object.h>
+namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementAtlas;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementBatch;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementBatchEntry;}}}
@@ -18,11 +20,12 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// internal sealed class ElementBatcher :855
+// internal sealed class ElementBatcher :859
 // {
 struct ElementBatcher_type : uType
 {
     ::g::Fuse::Resources::ISoftDisposable interface0;
+    ::g::Uno::IDisposable interface1;
 };
 
 ElementBatcher_type* ElementBatcher_typeof();
@@ -32,12 +35,14 @@ void ElementBatcher__allocAtlas_fn(ElementBatcher* __this, ::g::Fuse::Elements::
 void ElementBatcher__allocBatch_fn(ElementBatcher* __this, ::g::Fuse::Elements::ElementAtlas* atlas, ::g::Fuse::Elements::ElementBatch** __retval);
 void ElementBatcher__DiscardAtlasing_fn(ElementBatcher* __this);
 void ElementBatcher__DiscardBatching_fn(ElementBatcher* __this);
+void ElementBatcher__Dispose_fn(ElementBatcher* __this);
 void ElementBatcher__Draw_fn(ElementBatcher* __this, ::g::Fuse::DrawContext* dc);
 void ElementBatcher__FuseResourcesISoftDisposableSoftDispose_fn(ElementBatcher* __this);
 void ElementBatcher__get_MaxElementPixels_fn(int* __retval);
 void ElementBatcher__get_MaxElementSize_fn(::g::Uno::Int2* __retval);
 void ElementBatcher__New1_fn(ElementBatcher** __retval);
 void ElementBatcher__OnAtlasSizeChanged_fn(ElementBatcher* __this, uObject* sender, ::g::Uno::EventArgs* args);
+void ElementBatcher__Remove_fn(ElementBatcher* __this, ::g::Fuse::Elements::Element* elm);
 void ElementBatcher__RemoveAllElements_fn(ElementBatcher* __this);
 void ElementBatcher__ShouldBatchElement_fn(::g::Fuse::Visual* node, bool* __retval);
 void ElementBatcher__ShouldBatchElementWithCachingMode_fn(int* mode, bool* __retval);
@@ -60,8 +65,10 @@ struct ElementBatcher : uObject
     ::g::Fuse::Elements::ElementBatch* allocBatch(::g::Fuse::Elements::ElementAtlas* atlas);
     void DiscardAtlasing();
     void DiscardBatching();
+    void Dispose();
     void Draw(::g::Fuse::DrawContext* dc);
     void OnAtlasSizeChanged(uObject* sender, ::g::Uno::EventArgs* args);
+    void Remove(::g::Fuse::Elements::Element* elm);
     void RemoveAllElements();
     void UpdateDrawList();
     static ElementBatcher* New1();

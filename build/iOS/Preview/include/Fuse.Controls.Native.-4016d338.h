@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// internal sealed extern class UIControlEvent :3184
+// internal sealed extern class UIControlEvent :3278
 // {
 struct UIControlEvent_type : uType
 {
@@ -23,6 +23,7 @@ struct UIControlEvent_type : uType
 UIControlEvent_type* UIControlEvent_typeof();
 void UIControlEvent__ctor__fn(UIControlEvent* __this, ::g::ObjC::Object* uiControl, uDelegate* handler, int* type);
 void UIControlEvent__AddAllEditingEventsCallback_fn(::g::ObjC::Object* uiControl, uDelegate* handler, uObject** __retval);
+void UIControlEvent__AddAllTouchEventsCallback_fn(::g::ObjC::Object* uiControl, uDelegate* handler, uObject** __retval);
 void UIControlEvent__AddValueChangedCallback_fn(::g::ObjC::Object* uiControl, uDelegate* handler, uObject** __retval);
 void UIControlEvent__Create_fn(::g::ObjC::Object* uiControl, uDelegate* handler, int* type, ::g::ObjC::Object** __retval);
 void UIControlEvent__New1_fn(::g::ObjC::Object* uiControl, uDelegate* handler, int* type, UIControlEvent** __retval);
@@ -37,6 +38,7 @@ struct UIControlEvent : uObject
 
     void ctor_(::g::ObjC::Object* uiControl, uDelegate* handler, int type);
     static uObject* AddAllEditingEventsCallback(::g::ObjC::Object* uiControl, uDelegate* handler);
+    static uObject* AddAllTouchEventsCallback(::g::ObjC::Object* uiControl, uDelegate* handler);
     static uObject* AddValueChangedCallback(::g::ObjC::Object* uiControl, uDelegate* handler);
     static ::g::ObjC::Object* Create(::g::ObjC::Object* uiControl, uDelegate* handler, int type);
     static UIControlEvent* New1(::g::ObjC::Object* uiControl, uDelegate* handler, int type);

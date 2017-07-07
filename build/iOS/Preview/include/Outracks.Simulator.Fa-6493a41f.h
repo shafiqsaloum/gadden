@@ -10,7 +10,7 @@ namespace g{
 namespace Outracks{
 namespace Simulator{
 
-// public sealed class FailedToConnectToSimulator :891
+// public sealed class FailedToConnectToSimulator :1659
 // {
 ::g::Uno::Exception_type* FailedToConnectToSimulator_typeof();
 void FailedToConnectToSimulator__ctor_3_fn(FailedToConnectToSimulator* __this, uObject* innerExceptions);

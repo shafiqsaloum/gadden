@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/0.47.4/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/1.0.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

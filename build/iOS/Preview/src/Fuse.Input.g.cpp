@@ -22,7 +22,9 @@
 #include <Fuse.Input.FocusPredi-2503a529.h>
 #include <Fuse.Input.FocusPrediction.h>
 #include <Fuse.Input.Gesture.h>
+#include <Fuse.Input.GesturePriority.h>
 #include <Fuse.Input.GestureRequest.h>
+#include <Fuse.Input.Gestures.A-f1e8a9d2.h>
 #include <Fuse.Input.Gestures.h>
 #include <Fuse.Input.GestureType.h>
 #include <Fuse.Input.HitTestHelpers.h>
@@ -77,6 +79,7 @@
 #include <Fuse.RootViewport.h>
 #include <Fuse.Scripting.IEvent-434826af.h>
 #include <Fuse.UpdateManager.h>
+#include <Fuse.UpdateStage.h>
 #include <Fuse.Visual.h>
 #include <Fuse.VisualEvent-2.h>
 #include <Fuse.VisualEventArgs.h>
@@ -95,6 +98,7 @@
 #include <Uno.Collections.IList-1.h>
 #include <Uno.Collections.KeyValuePair-2.h>
 #include <Uno.Collections.List-1.h>
+#include <Uno.Comparison-1.h>
 #include <Uno.Delegate.h>
 #include <Uno.Diagnostics.Clock.h>
 #include <Uno.Double.h>
@@ -113,17 +117,75 @@
 #include <Uno.UX.PropertyObject.h>
 #include <Uno.UX.Selector.h>
 #include <Uno.Vector.h>
-static uString* STRINGS[27];
-static uType* TYPES[33];
+static uString* STRINGS[29];
+static uType* TYPES[35];
 
 namespace g{
 namespace Fuse{
 namespace Input{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// internal sealed class Capture :937
+// private sealed class Gestures.ActiveGesture :778
+// {
+static void Gestures__ActiveGesture_build(uType* type)
+{
+    type->SetFields(0,
+        ::g::Fuse::Input::PointerEventArgs_typeof(), offsetof(::g::Fuse::Input::Gestures__ActiveGesture, Args), 0,
+        ::g::Fuse::Input::CaptureType_typeof(), offsetof(::g::Fuse::Input::Gestures__ActiveGesture, CaptureType), 0,
+        ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Input::Gestures__ActiveGesture, ChangeRequest), 0,
+        ::g::Fuse::Input::Gesture_typeof(), offsetof(::g::Fuse::Input::Gestures__ActiveGesture, Gesture), 0,
+        ::g::Fuse::Input::GesturePriority_typeof(), offsetof(::g::Fuse::Input::Gestures__ActiveGesture, Priority), 0,
+        ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Input::Gestures__ActiveGesture, PriorityAdjustment), 0,
+        ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Input::Gestures__ActiveGesture, Significance), 0);
+}
+
+uType* Gestures__ActiveGesture_typeof()
+{
+    static uSStrong<uType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.FieldCount = 7;
+    options.ObjectSize = sizeof(Gestures__ActiveGesture);
+    options.TypeSize = sizeof(uType);
+    type = uClassType::New("Fuse.Input.Gestures.ActiveGesture", options);
+    type->fp_build_ = Gestures__ActiveGesture_build;
+    type->fp_ctor_ = (void*)Gestures__ActiveGesture__New1_fn;
+    return type;
+}
+
+// public generated ActiveGesture() :778
+void Gestures__ActiveGesture__ctor__fn(Gestures__ActiveGesture* __this)
+{
+    __this->ctor_();
+}
+
+// public generated ActiveGesture New() :778
+void Gestures__ActiveGesture__New1_fn(Gestures__ActiveGesture** __retval)
+{
+    *__retval = Gestures__ActiveGesture::New1();
+}
+
+// public generated ActiveGesture() [instance] :778
+void Gestures__ActiveGesture::ctor_()
+{
+}
+
+// public generated ActiveGesture New() [static] :778
+Gestures__ActiveGesture* Gestures__ActiveGesture::New1()
+{
+    Gestures__ActiveGesture* obj1 = (Gestures__ActiveGesture*)uNew(Gestures__ActiveGesture_typeof());
+    obj1->ctor_();
+    return obj1;
+}
+// }
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
+
+// internal sealed class Capture :1129
 // {
 static void Capture_build(uType* type)
 {
@@ -134,6 +196,7 @@ static void Capture_build(uType* type)
         ::g::Uno::Action_typeof(), offsetof(::g::Fuse::Input::Capture, LostCallback), 0,
         ::TYPES[0/*Uno.Collections.List<int>*/], offsetof(::g::Fuse::Input::Capture, PointIndex), 0,
         ::g::Fuse::Input::CaptureType_typeof(), offsetof(::g::Fuse::Input::Capture, Type), 0,
+        ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Input::Capture, VisualDepth), 0,
         uObject_typeof(), offsetof(::g::Fuse::Input::Capture, _Identity), 0,
         ::g::Fuse::Visual_typeof(), offsetof(::g::Fuse::Input::Capture, _Visual), 0);
 }
@@ -144,7 +207,7 @@ uType* Capture_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 6;
+    options.FieldCount = 7;
     options.ObjectSize = sizeof(Capture);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Fuse.Input.Capture", options);
@@ -152,61 +215,61 @@ uType* Capture_typeof()
     return type;
 }
 
-// public Capture(Fuse.Visual n, object identity) :948
+// public Capture(Fuse.Visual n, object identity) :1141
 void Capture__ctor__fn(Capture* __this, ::g::Fuse::Visual* n, uObject* identity)
 {
     __this->ctor_(n, identity);
 }
 
-// public bool AcceptsPoint(int index) :957
+// public bool AcceptsPoint(int index) :1159
 void Capture__AcceptsPoint_fn(Capture* __this, int* index, bool* __retval)
 {
     *__retval = __this->AcceptsPoint(*index);
 }
 
-// public int CompareStrength(Fuse.Input.Capture o) :971
+// public int CompareStrength(Fuse.Input.Capture o) :1173
 void Capture__CompareStrength_fn(Capture* __this, Capture* o, int* __retval)
 {
     *__retval = __this->CompareStrength(o);
 }
 
-// public generated object get_Identity() :940
+// public generated object get_Identity() :1133
 void Capture__get_Identity_fn(Capture* __this, uObject** __retval)
 {
     *__retval = __this->Identity();
 }
 
-// private generated void set_Identity(object value) :940
+// private generated void set_Identity(object value) :1133
 void Capture__set_Identity_fn(Capture* __this, uObject* value)
 {
     __this->Identity(value);
 }
 
-// public bool get_IsSuitable() :964
+// public bool get_IsSuitable() :1166
 void Capture__get_IsSuitable_fn(Capture* __this, bool* __retval)
 {
     *__retval = __this->IsSuitable();
 }
 
-// public Capture New(Fuse.Visual n, object identity) :948
+// public Capture New(Fuse.Visual n, object identity) :1141
 void Capture__New1_fn(::g::Fuse::Visual* n, uObject* identity, Capture** __retval)
 {
     *__retval = Capture::New1(n, identity);
 }
 
-// public generated Fuse.Visual get_Visual() :939
+// public generated Fuse.Visual get_Visual() :1131
 void Capture__get_Visual_fn(Capture* __this, ::g::Fuse::Visual** __retval)
 {
     *__retval = __this->Visual();
 }
 
-// private generated void set_Visual(Fuse.Visual value) :939
+// private generated void set_Visual(Fuse.Visual value) :1131
 void Capture__set_Visual_fn(Capture* __this, ::g::Fuse::Visual* value)
 {
     __this->Visual(value);
 }
 
-// public Capture(Fuse.Visual n, object identity) [instance] :948
+// public Capture(Fuse.Visual n, object identity) [instance] :1141
 void Capture::ctor_(::g::Fuse::Visual* n, uObject* identity)
 {
     uStackFrame __("Fuse.Input.Capture", ".ctor(Fuse.Visual,object)");
@@ -217,9 +280,17 @@ void Capture::ctor_(::g::Fuse::Visual* n, uObject* identity)
 
     Visual(n);
     Identity(identity);
+    VisualDepth = 0;
+    ::g::Fuse::Visual* q = Visual();
+
+    while (uPtr(q)->Parent() != NULL)
+    {
+        VisualDepth++;
+        q = uPtr(q)->Parent();
+    }
 }
 
-// public bool AcceptsPoint(int index) [instance] :957
+// public bool AcceptsPoint(int index) [instance] :1159
 bool Capture::AcceptsPoint(int index)
 {
     uStackFrame __("Fuse.Input.Capture", "AcceptsPoint(int)");
@@ -227,7 +298,7 @@ bool Capture::AcceptsPoint(int index)
     return (::g::Uno::Collections::List__Contains_fn(uPtr(PointIndex), uCRef<int>(index), &ret2), ret2);
 }
 
-// public int CompareStrength(Fuse.Input.Capture o) [instance] :971
+// public int CompareStrength(Fuse.Input.Capture o) [instance] :1173
 int Capture::CompareStrength(Capture* o)
 {
     uStackFrame __("Fuse.Input.Capture", "CompareStrength(Fuse.Input.Capture)");
@@ -240,38 +311,38 @@ int Capture::CompareStrength(Capture* o)
     return hardThis ? 1 : -1;
 }
 
-// public generated object get_Identity() [instance] :940
+// public generated object get_Identity() [instance] :1133
 uObject* Capture::Identity()
 {
     return _Identity;
 }
 
-// private generated void set_Identity(object value) [instance] :940
+// private generated void set_Identity(object value) [instance] :1133
 void Capture::Identity(uObject* value)
 {
     _Identity = value;
 }
 
-// public bool get_IsSuitable() [instance] :964
+// public bool get_IsSuitable() [instance] :1166
 bool Capture::IsSuitable()
 {
     uStackFrame __("Fuse.Input.Capture", "get_IsSuitable()");
     return uPtr(Visual())->IsContextEnabled() && uPtr(Visual())->IsRootingCompleted();
 }
 
-// public generated Fuse.Visual get_Visual() [instance] :939
+// public generated Fuse.Visual get_Visual() [instance] :1131
 ::g::Fuse::Visual* Capture::Visual()
 {
     return _Visual;
 }
 
-// private generated void set_Visual(Fuse.Visual value) [instance] :939
+// private generated void set_Visual(Fuse.Visual value) [instance] :1131
 void Capture::Visual(::g::Fuse::Visual* value)
 {
     _Visual = value;
 }
 
-// public Capture New(Fuse.Visual n, object identity) [static] :948
+// public Capture New(Fuse.Visual n, object identity) [static] :1141
 Capture* Capture::New1(::g::Fuse::Visual* n, uObject* identity)
 {
     Capture* obj1 = (Capture*)uNew(Capture_typeof());
@@ -280,10 +351,10 @@ Capture* Capture::New1(::g::Fuse::Visual* n, uObject* identity)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// private sealed class Pointer.CaptureLockImpl :1094
+// private sealed class Pointer.CaptureLockImpl :1296
 // {
 static void Pointer__CaptureLockImpl_build(uType* type)
 {
@@ -311,36 +382,36 @@ Pointer__CaptureLockImpl_type* Pointer__CaptureLockImpl_typeof()
     return type;
 }
 
-// public generated CaptureLockImpl() :1094
+// public generated CaptureLockImpl() :1296
 void Pointer__CaptureLockImpl__ctor__fn(Pointer__CaptureLockImpl* __this)
 {
     __this->ctor_();
 }
 
-// public void Delete(Fuse.Input.Capture c) :1115
+// public void Delete(Fuse.Input.Capture c) :1317
 void Pointer__CaptureLockImpl__Delete_fn(Pointer__CaptureLockImpl* __this, ::g::Fuse::Input::Capture* c)
 {
     __this->Delete(c);
 }
 
-// public void Dispose() :1099
+// public void Dispose() :1301
 void Pointer__CaptureLockImpl__Dispose_fn(Pointer__CaptureLockImpl* __this)
 {
     __this->Dispose();
 }
 
-// public generated CaptureLockImpl New() :1094
+// public generated CaptureLockImpl New() :1296
 void Pointer__CaptureLockImpl__New1_fn(Pointer__CaptureLockImpl** __retval)
 {
     *__retval = Pointer__CaptureLockImpl::New1();
 }
 
-// public generated CaptureLockImpl() [instance] :1094
+// public generated CaptureLockImpl() [instance] :1296
 void Pointer__CaptureLockImpl::ctor_()
 {
 }
 
-// public void Delete(Fuse.Input.Capture c) [instance] :1115
+// public void Delete(Fuse.Input.Capture c) [instance] :1317
 void Pointer__CaptureLockImpl::Delete(::g::Fuse::Input::Capture* c)
 {
     uStackFrame __("Fuse.Input.Pointer.CaptureLockImpl", "Delete(Fuse.Input.Capture)");
@@ -348,7 +419,7 @@ void Pointer__CaptureLockImpl::Delete(::g::Fuse::Input::Capture* c)
     AnyDeleted = true;
 }
 
-// public void Dispose() [instance] :1099
+// public void Dispose() [instance] :1301
 void Pointer__CaptureLockImpl::Dispose()
 {
     uStackFrame __("Fuse.Input.Pointer.CaptureLockImpl", "Dispose()");
@@ -367,7 +438,7 @@ void Pointer__CaptureLockImpl::Dispose()
     }
 }
 
-// public generated CaptureLockImpl New() [static] :1094
+// public generated CaptureLockImpl New() [static] :1296
 Pointer__CaptureLockImpl* Pointer__CaptureLockImpl::New1()
 {
     Pointer__CaptureLockImpl* obj1 = (Pointer__CaptureLockImpl*)uNew(Pointer__CaptureLockImpl_typeof());
@@ -376,10 +447,10 @@ Pointer__CaptureLockImpl* Pointer__CaptureLockImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public enum CaptureType :925
+// public enum CaptureType :1104
 uEnumType* CaptureType_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -395,10 +466,10 @@ uEnumType* CaptureType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public abstract class CustomPointerEventArgs :1826
+// public abstract class CustomPointerEventArgs :2028
 // {
 static void CustomPointerEventArgs_build(uType* type)
 {
@@ -424,13 +495,13 @@ static void CustomPointerEventArgs_build(uType* type)
     return type;
 }
 
-// protected CustomPointerEventArgs(Fuse.Input.PointerEventArgs args, Fuse.Visual visual) :1828
+// protected CustomPointerEventArgs(Fuse.Input.PointerEventArgs args, Fuse.Visual visual) :2030
 void CustomPointerEventArgs__ctor_3_fn(CustomPointerEventArgs* __this, ::g::Fuse::Input::PointerEventArgs* args, ::g::Fuse::Visual* visual)
 {
     __this->ctor_3(args, visual);
 }
 
-// protected CustomPointerEventArgs(Fuse.Input.PointerEventArgs args, Fuse.Visual visual) [instance] :1828
+// protected CustomPointerEventArgs(Fuse.Input.PointerEventArgs args, Fuse.Visual visual) [instance] :2030
 void CustomPointerEventArgs::ctor_3(::g::Fuse::Input::PointerEventArgs* args, ::g::Fuse::Visual* visual)
 {
     uStackFrame __("Fuse.Input.CustomPointerEventArgs", ".ctor(Fuse.Input.PointerEventArgs,Fuse.Visual)");
@@ -438,10 +509,10 @@ void CustomPointerEventArgs::ctor_3(::g::Fuse::Input::PointerEventArgs* args, ::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// private sealed class Pointer.DefaultPointerEventResponder :1584
+// private sealed class Pointer.DefaultPointerEventResponder :1786
 // {
 static void Pointer__DefaultPointerEventResponder_build(uType* type)
 {
@@ -469,48 +540,48 @@ Pointer__DefaultPointerEventResponder_type* Pointer__DefaultPointerEventResponde
     return type;
 }
 
-// public generated DefaultPointerEventResponder() :1584
+// public generated DefaultPointerEventResponder() :1786
 void Pointer__DefaultPointerEventResponder__ctor__fn(Pointer__DefaultPointerEventResponder* __this)
 {
     __this->ctor_();
 }
 
-// public generated DefaultPointerEventResponder New() :1584
+// public generated DefaultPointerEventResponder New() :1786
 void Pointer__DefaultPointerEventResponder__New1_fn(Pointer__DefaultPointerEventResponder** __retval)
 {
     *__retval = Pointer__DefaultPointerEventResponder::New1();
 }
 
-// public void OnPointerMoved(Fuse.Input.PointerMovedArgs args) :1608
+// public void OnPointerMoved(Fuse.Input.PointerMovedArgs args) :1810
 void Pointer__DefaultPointerEventResponder__OnPointerMoved_fn(Pointer__DefaultPointerEventResponder* __this, ::g::Fuse::Input::PointerMovedArgs* args)
 {
     __this->OnPointerMoved(args);
 }
 
-// public void OnPointerPressed(Fuse.Input.PointerPressedArgs args) :1586
+// public void OnPointerPressed(Fuse.Input.PointerPressedArgs args) :1788
 void Pointer__DefaultPointerEventResponder__OnPointerPressed_fn(Pointer__DefaultPointerEventResponder* __this, ::g::Fuse::Input::PointerPressedArgs* args)
 {
     __this->OnPointerPressed(args);
 }
 
-// public void OnPointerReleased(Fuse.Input.PointerReleasedArgs args) :1625
+// public void OnPointerReleased(Fuse.Input.PointerReleasedArgs args) :1827
 void Pointer__DefaultPointerEventResponder__OnPointerReleased_fn(Pointer__DefaultPointerEventResponder* __this, ::g::Fuse::Input::PointerReleasedArgs* args)
 {
     __this->OnPointerReleased(args);
 }
 
-// public void OnPointerWheelMoved(Fuse.Input.PointerWheelMovedArgs args) :1640
+// public void OnPointerWheelMoved(Fuse.Input.PointerWheelMovedArgs args) :1842
 void Pointer__DefaultPointerEventResponder__OnPointerWheelMoved_fn(Pointer__DefaultPointerEventResponder* __this, ::g::Fuse::Input::PointerWheelMovedArgs* args)
 {
     __this->OnPointerWheelMoved(args);
 }
 
-// public generated DefaultPointerEventResponder() [instance] :1584
+// public generated DefaultPointerEventResponder() [instance] :1786
 void Pointer__DefaultPointerEventResponder::ctor_()
 {
 }
 
-// public void OnPointerMoved(Fuse.Input.PointerMovedArgs args) [instance] :1608
+// public void OnPointerMoved(Fuse.Input.PointerMovedArgs args) [instance] :1810
 void Pointer__DefaultPointerEventResponder::OnPointerMoved(::g::Fuse::Input::PointerMovedArgs* args)
 {
     uStackFrame __("Fuse.Input.Pointer.DefaultPointerEventResponder", "OnPointerMoved(Fuse.Input.PointerMovedArgs)");
@@ -532,7 +603,7 @@ void Pointer__DefaultPointerEventResponder::OnPointerMoved(::g::Fuse::Input::Poi
     uPtr(::g::Fuse::Input::Pointer::Moved())->RaiseWithBubble(args, 1);
 }
 
-// public void OnPointerPressed(Fuse.Input.PointerPressedArgs args) [instance] :1586
+// public void OnPointerPressed(Fuse.Input.PointerPressedArgs args) [instance] :1788
 void Pointer__DefaultPointerEventResponder::OnPointerPressed(::g::Fuse::Input::PointerPressedArgs* args)
 {
     uStackFrame __("Fuse.Input.Pointer.DefaultPointerEventResponder", "OnPointerPressed(Fuse.Input.PointerPressedArgs)");
@@ -554,7 +625,7 @@ void Pointer__DefaultPointerEventResponder::OnPointerPressed(::g::Fuse::Input::P
     uPtr(p)->WasHandled = args->IsHandled();
 }
 
-// public void OnPointerReleased(Fuse.Input.PointerReleasedArgs args) [instance] :1625
+// public void OnPointerReleased(Fuse.Input.PointerReleasedArgs args) [instance] :1827
 void Pointer__DefaultPointerEventResponder::OnPointerReleased(::g::Fuse::Input::PointerReleasedArgs* args)
 {
     uStackFrame __("Fuse.Input.Pointer.DefaultPointerEventResponder", "OnPointerReleased(Fuse.Input.PointerReleasedArgs)");
@@ -577,7 +648,7 @@ void Pointer__DefaultPointerEventResponder::OnPointerReleased(::g::Fuse::Input::
     uPtr(::g::Fuse::Input::Pointer::Released())->RaiseWithBubble(args, 1);
 }
 
-// public void OnPointerWheelMoved(Fuse.Input.PointerWheelMovedArgs args) [instance] :1640
+// public void OnPointerWheelMoved(Fuse.Input.PointerWheelMovedArgs args) [instance] :1842
 void Pointer__DefaultPointerEventResponder::OnPointerWheelMoved(::g::Fuse::Input::PointerWheelMovedArgs* args)
 {
     uStackFrame __("Fuse.Input.Pointer.DefaultPointerEventResponder", "OnPointerWheelMoved(Fuse.Input.PointerWheelMovedArgs)");
@@ -588,7 +659,7 @@ void Pointer__DefaultPointerEventResponder::OnPointerWheelMoved(::g::Fuse::Input
     uPtr(::g::Fuse::Input::Pointer::WheelMoved())->RaiseWithBubble(args, 1);
 }
 
-// public generated DefaultPointerEventResponder New() [static] :1584
+// public generated DefaultPointerEventResponder New() [static] :1786
 Pointer__DefaultPointerEventResponder* Pointer__DefaultPointerEventResponder::New1()
 {
     Pointer__DefaultPointerEventResponder* obj2 = (Pointer__DefaultPointerEventResponder*)uNew(Pointer__DefaultPointerEventResponder_typeof());
@@ -597,8 +668,8 @@ Pointer__DefaultPointerEventResponder* Pointer__DefaultPointerEventResponder::Ne
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public partial static class Focus :173
 // {
@@ -1116,8 +1187,8 @@ void Focus::SetIsFocusable(::g::Fuse::Visual* n, bool focusable)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public delegate Fuse.Visual FocusDelegator() :165
 uDelegateType* FocusDelegator_typeof()
@@ -1130,8 +1201,8 @@ uDelegateType* FocusDelegator_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // internal sealed class FocusGained :440
 // {
@@ -1192,8 +1263,8 @@ FocusGained* FocusGained::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public sealed class FocusGainedArgs :433
 // {
@@ -1251,8 +1322,8 @@ FocusGainedArgs* FocusGainedArgs::New3(::g::Fuse::Visual* visual)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public delegate void FocusGainedHandler(object sender, Fuse.Input.FocusGainedArgs args) :438
 uDelegateType* FocusGainedHandler_typeof()
@@ -1267,8 +1338,8 @@ uDelegateType* FocusGainedHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // internal sealed class FocusLost :458
 // {
@@ -1329,8 +1400,8 @@ FocusLost* FocusLost::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public sealed class FocusLostArgs :451
 // {
@@ -1388,8 +1459,8 @@ FocusLostArgs* FocusLostArgs::New3(::g::Fuse::Visual* visual)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public delegate void FocusLostHandler(object sender, Fuse.Input.FocusLostArgs args) :456
 uDelegateType* FocusLostHandler_typeof()
@@ -1404,8 +1475,8 @@ uDelegateType* FocusLostHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public enum FocusNavigationDirection :157
 uEnumType* FocusNavigationDirection_typeof()
@@ -1422,8 +1493,8 @@ uEnumType* FocusNavigationDirection_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // internal static class FocusPrediction :26
 // {
@@ -1435,7 +1506,7 @@ static void FocusPrediction_build(uType* type)
     ::TYPES[2] = ::g::Fuse::Visual_typeof();
     ::TYPES[8] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
     ::TYPES[9] = ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
-    ::TYPES[10] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(6/*IndexOf<Fuse.Node>*/, ::g::Fuse::Node_typeof(), NULL);
+    ::TYPES[10] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(5/*IndexOf<Fuse.Node>*/, ::g::Fuse::Node_typeof(), NULL);
     ::TYPES[11] = ::g::Uno::Predicate_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
     ::TYPES[12] = ::g::Uno::Func1_typeof()->MakeType(::TYPES[2/*Fuse.Visual*/], ::TYPES[2/*Fuse.Visual*/], NULL);
 }
@@ -1634,8 +1705,8 @@ void FocusPrediction__PreviousSibling1_fn(::g::Fuse::Visual* parent, ::g::Fuse::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // internal static class FocusPredictStrategy :9
 // {
@@ -1679,24 +1750,24 @@ void FocusPredictStrategy__Predict_fn(::g::Fuse::Visual* n, int* direction, ::g:
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public sealed class Gesture :537
+// public sealed class Gesture :589
 // {
 static void Gesture_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("Missing LostCapture");
-    ::STRINGS[6] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno");
+    ::STRINGS[6] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno");
     ::STRINGS[7] = uString::Const("OnPointerMoved");
-    ::TYPES[13] = ::g::Uno::Action_typeof();
-    ::TYPES[14] = ::g::Fuse::Input::IGesture_typeof();
+    ::TYPES[13] = ::g::Fuse::Input::IGesture_typeof();
+    ::TYPES[14] = ::g::Uno::Action_typeof();
     type->SetInterfaces(
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(Gesture_type, interface0));
     type->SetFields(0,
         ::g::Fuse::Input::CaptureType_typeof(), offsetof(::g::Fuse::Input::Gesture, _captureType), 0,
         ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Input::Gesture, _down), 0,
-        ::TYPES[14/*Fuse.Input.IGesture*/], offsetof(::g::Fuse::Input::Gesture, Handler), 0,
+        ::TYPES[13/*Fuse.Input.IGesture*/], offsetof(::g::Fuse::Input::Gesture, Handler), 0,
         ::g::Fuse::Visual_typeof(), offsetof(::g::Fuse::Input::Gesture, Target), 0,
         ::g::Fuse::Input::GestureType_typeof(), offsetof(::g::Fuse::Input::Gesture, Type), 0);
     type->Reflection.SetFunctions(3,
@@ -1722,96 +1793,102 @@ Gesture_type* Gesture_typeof()
     return type;
 }
 
-// public generated Gesture() :537
+// public generated Gesture() :589
 void Gesture__ctor__fn(Gesture* __this)
 {
     __this->ctor_();
 }
 
-// private void Cancel() :607
+// private void Cancel() :668
 void Gesture__Cancel_fn(Gesture* __this)
 {
     __this->Cancel();
 }
 
-// private void Capture(Fuse.Input.PointerEventArgs args, Fuse.Input.CaptureType captureType) :562
-void Gesture__Capture_fn(Gesture* __this, ::g::Fuse::Input::PointerEventArgs* args, int* captureType)
+// private void Capture(Fuse.Input.PointerEventArgs args) :610
+void Gesture__Capture_fn(Gesture* __this, ::g::Fuse::Input::PointerEventArgs* args)
 {
-    __this->Capture(args, *captureType);
+    __this->Capture(args);
 }
 
-// public void Dispose() :647
+// public void Dispose() :713
 void Gesture__Dispose_fn(Gesture* __this)
 {
     __this->Dispose();
 }
 
-// private void HandleRequest(Fuse.Input.GestureRequest req, Fuse.Input.PointerEventArgs args) :546
+// private void HandleRequest(Fuse.Input.GestureRequest req, Fuse.Input.PointerEventArgs args) :598
 void Gesture__HandleRequest_fn(Gesture* __this, int* req, ::g::Fuse::Input::PointerEventArgs* args)
 {
     __this->HandleRequest(*req, args);
 }
 
-// public bool get_IsHardCapture() :590
+// internal static float get_HardCaptureSignificanceThreshold() :608
+void Gesture__get_HardCaptureSignificanceThreshold_fn(float* __retval)
+{
+    *__retval = Gesture::HardCaptureSignificanceThreshold();
+}
+
+// public bool get_IsHardCapture() :650
 void Gesture__get_IsHardCapture_fn(Gesture* __this, bool* __retval)
 {
     *__retval = __this->IsHardCapture();
 }
 
-// private void LostCapture(bool forced) :598
+// private void LostCapture(bool forced) :658
 void Gesture__LostCapture_fn(Gesture* __this, bool* forced)
 {
     __this->LostCapture(*forced);
 }
 
-// private void Maintain() :558
-void Gesture__Maintain_fn(Gesture* __this)
-{
-    __this->Maintain();
-}
-
-// public generated Gesture New() :537
+// public generated Gesture New() :589
 void Gesture__New1_fn(Gesture** __retval)
 {
     *__retval = Gesture::New1();
 }
 
-// private void OnLostCapture() :593
+// private void OnLostCapture() :653
 void Gesture__OnLostCapture_fn(Gesture* __this)
 {
     __this->OnLostCapture();
 }
 
-// internal void OnPointerMoved(object sender, Fuse.Input.PointerMovedArgs args) :623
+// internal void OnPointerMoved(object sender, Fuse.Input.PointerMovedArgs args) :684
 void Gesture__OnPointerMoved_fn(Gesture* __this, uObject* sender, ::g::Fuse::Input::PointerMovedArgs* args)
 {
     __this->OnPointerMoved(sender, args);
 }
 
-// internal void OnPointerPressed(object sender, Fuse.Input.PointerPressedArgs args) :615
+// internal void OnPointerPressed(object sender, Fuse.Input.PointerPressedArgs args) :676
 void Gesture__OnPointerPressed_fn(Gesture* __this, uObject* sender, ::g::Fuse::Input::PointerPressedArgs* args)
 {
     __this->OnPointerPressed(sender, args);
 }
 
-// internal void OnPointerReleased(object sender, Fuse.Input.PointerReleasedArgs args) :639
+// internal void OnPointerReleased(object sender, Fuse.Input.PointerReleasedArgs args) :700
 void Gesture__OnPointerReleased_fn(Gesture* __this, uObject* sender, ::g::Fuse::Input::PointerReleasedArgs* args)
 {
     __this->OnPointerReleased(sender, args);
 }
 
-// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector sel) :654
+// internal void OnRequestChanged(Fuse.Input.PointerEventArgs args, Fuse.Input.CaptureType captureType) :624
+void Gesture__OnRequestChanged_fn(Gesture* __this, ::g::Fuse::Input::PointerEventArgs* args, int* captureType)
+{
+    __this->OnRequestChanged(args, *captureType);
+}
+
+// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector sel) :720
 void Gesture__UnoUXIPropertyListenerOnPropertyChanged_fn(Gesture* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Selector* sel)
 {
 }
 
-// public generated Gesture() [instance] :537
+// public generated Gesture() [instance] :589
 void Gesture::ctor_()
 {
     _down = -1;
 }
 
-// private void Cancel() [instance] :607
+// private void Cancel() [instance] :668
 void Gesture::Cancel()
 {
     uStackFrame __("Fuse.Input.Gesture", "Cancel()");
@@ -1822,10 +1899,12 @@ void Gesture::Cancel()
     LostCapture(false);
 }
 
-// private void Capture(Fuse.Input.PointerEventArgs args, Fuse.Input.CaptureType captureType) [instance] :562
-void Gesture::Capture(::g::Fuse::Input::PointerEventArgs* args, int captureType)
+// private void Capture(Fuse.Input.PointerEventArgs args) [instance] :610
+void Gesture::Capture(::g::Fuse::Input::PointerEventArgs* args)
 {
-    uStackFrame __("Fuse.Input.Gesture", "Capture(Fuse.Input.PointerEventArgs,Fuse.Input.CaptureType)");
+    uStackFrame __("Fuse.Input.Gesture", "Capture(Fuse.Input.PointerEventArgs)");
+    float sig = ::g::Fuse::Input::IGesture::Significance(uInterface(uPtr(Handler), ::TYPES[13/*Fuse.Input.IGesture*/]));
+    int captureType = ((sig >= Gesture::HardCaptureSignificanceThreshold()) || ((_captureType & 2) == 2)) ? 2 : 1;
 
     if ((Type & 2) == 2)
         captureType = captureType | 4;
@@ -1833,25 +1912,11 @@ void Gesture::Capture(::g::Fuse::Input::PointerEventArgs* args, int captureType)
     if ((Type & 4) == 4)
         captureType = captureType | 8;
 
-    if (_captureType == captureType)
-        return;
-
-    if (!::g::Fuse::Input::Pointer::ModifyCapture1(this, Target, uDelegate::New(::TYPES[13/*Uno.Action*/], (void*)Gesture__OnLostCapture_fn, this), captureType, uPtr(args)->PointIndex()))
-    {
-        OnLostCapture();
-        return;
-    }
-
-    _down = uPtr(args)->PointIndex();
-    _captureType = captureType;
-
-    if ((captureType & 2) == 2)
-        uPtr(Target)->BeginInteraction(this, uDelegate::New(::TYPES[13/*Uno.Action*/], (void*)Gesture__OnLostCapture_fn, this));
-
-    ::g::Fuse::Input::IGesture::OnCapture(uInterface(uPtr(Handler), ::TYPES[14/*Fuse.Input.IGesture*/]), args, captureType);
+    ::g::Fuse::Input::Gestures::AddActive(this);
+    ::g::Fuse::Input::Gestures::RequestCaptureChange(this, args, captureType);
 }
 
-// public void Dispose() [instance] :647
+// public void Dispose() [instance] :713
 void Gesture::Dispose()
 {
     uStackFrame __("Fuse.Input.Gesture", "Dispose()");
@@ -1859,7 +1924,7 @@ void Gesture::Dispose()
     ::g::Fuse::Input::Gestures::Remove(Handler);
 }
 
-// private void HandleRequest(Fuse.Input.GestureRequest req, Fuse.Input.PointerEventArgs args) [instance] :546
+// private void HandleRequest(Fuse.Input.GestureRequest req, Fuse.Input.PointerEventArgs args) [instance] :598
 void Gesture::HandleRequest(int req, ::g::Fuse::Input::PointerEventArgs* args)
 {
     uStackFrame __("Fuse.Input.Gesture", "HandleRequest(Fuse.Input.GestureRequest,Fuse.Input.PointerEventArgs)");
@@ -1870,20 +1935,10 @@ void Gesture::HandleRequest(int req, ::g::Fuse::Input::PointerEventArgs* args)
             break;
         case 1:
         {
-            Maintain();
+            Capture(args);
             break;
         }
         case 2:
-        {
-            Capture(args, 1);
-            break;
-        }
-        case 3:
-        {
-            Capture(args, 2);
-            break;
-        }
-        case 4:
         {
             Cancel();
             break;
@@ -1891,36 +1946,32 @@ void Gesture::HandleRequest(int req, ::g::Fuse::Input::PointerEventArgs* args)
     }
 }
 
-// public bool get_IsHardCapture() [instance] :590
+// public bool get_IsHardCapture() [instance] :650
 bool Gesture::IsHardCapture()
 {
     return (_captureType & 2) == 2;
 }
 
-// private void LostCapture(bool forced) [instance] :598
+// private void LostCapture(bool forced) [instance] :658
 void Gesture::LostCapture(bool forced)
 {
     uStackFrame __("Fuse.Input.Gesture", "LostCapture(bool)");
     _down = -1;
     _captureType = 0;
+    ::g::Fuse::Input::Gestures::RemoveActive(this);
     ::g::Fuse::Input::Pointer::ReleaseCapture(this);
     uPtr(Target)->EndInteraction(this);
-    ::g::Fuse::Input::IGesture::OnLostCapture(uInterface(uPtr(Handler), ::TYPES[14/*Fuse.Input.IGesture*/]), forced);
+    ::g::Fuse::Input::IGesture::OnLostCapture(uInterface(uPtr(Handler), ::TYPES[13/*Fuse.Input.IGesture*/]), forced);
 }
 
-// private void Maintain() [instance] :558
-void Gesture::Maintain()
-{
-}
-
-// private void OnLostCapture() [instance] :593
+// private void OnLostCapture() [instance] :653
 void Gesture::OnLostCapture()
 {
     uStackFrame __("Fuse.Input.Gesture", "OnLostCapture()");
     LostCapture(true);
 }
 
-// internal void OnPointerMoved(object sender, Fuse.Input.PointerMovedArgs args) [instance] :623
+// internal void OnPointerMoved(object sender, Fuse.Input.PointerMovedArgs args) [instance] :684
 void Gesture::OnPointerMoved(uObject* sender, ::g::Fuse::Input::PointerMovedArgs* args)
 {
     uStackFrame __("Fuse.Input.Gesture", "OnPointerMoved(object,Fuse.Input.PointerMovedArgs)");
@@ -1930,15 +1981,15 @@ void Gesture::OnPointerMoved(uObject* sender, ::g::Fuse::Input::PointerMovedArgs
 
     if (!::g::Fuse::Input::Pointer::IsPressed1(_down))
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[5/*"Missing Los...*/], this, ::STRINGS[6/*"/Users/eric...*/], 631, ::STRINGS[7/*"OnPointerMo...*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[5/*"Missing Los...*/], this, ::STRINGS[6/*"/Users/eric...*/], 692, ::STRINGS[7/*"OnPointerMo...*/]);
         LostCapture(true);
         return;
     }
 
-    HandleRequest(::g::Fuse::Input::IGesture::OnPointerMoved(uInterface(uPtr(Handler), ::TYPES[14/*Fuse.Input.IGesture*/]), args), args);
+    HandleRequest(::g::Fuse::Input::IGesture::OnPointerMoved(uInterface(uPtr(Handler), ::TYPES[13/*Fuse.Input.IGesture*/]), args), args);
 }
 
-// internal void OnPointerPressed(object sender, Fuse.Input.PointerPressedArgs args) [instance] :615
+// internal void OnPointerPressed(object sender, Fuse.Input.PointerPressedArgs args) [instance] :676
 void Gesture::OnPointerPressed(uObject* sender, ::g::Fuse::Input::PointerPressedArgs* args)
 {
     uStackFrame __("Fuse.Input.Gesture", "OnPointerPressed(object,Fuse.Input.PointerPressedArgs)");
@@ -1946,10 +1997,10 @@ void Gesture::OnPointerPressed(uObject* sender, ::g::Fuse::Input::PointerPressed
     if (_down != -1)
         return;
 
-    HandleRequest(::g::Fuse::Input::IGesture::OnPointerPressed(uInterface(uPtr(Handler), ::TYPES[14/*Fuse.Input.IGesture*/]), args), args);
+    HandleRequest(::g::Fuse::Input::IGesture::OnPointerPressed(uInterface(uPtr(Handler), ::TYPES[13/*Fuse.Input.IGesture*/]), args), args);
 }
 
-// internal void OnPointerReleased(object sender, Fuse.Input.PointerReleasedArgs args) [instance] :639
+// internal void OnPointerReleased(object sender, Fuse.Input.PointerReleasedArgs args) [instance] :700
 void Gesture::OnPointerReleased(uObject* sender, ::g::Fuse::Input::PointerReleasedArgs* args)
 {
     uStackFrame __("Fuse.Input.Gesture", "OnPointerReleased(object,Fuse.Input.PointerReleasedArgs)");
@@ -1957,46 +2008,93 @@ void Gesture::OnPointerReleased(uObject* sender, ::g::Fuse::Input::PointerReleas
     if (_down != uPtr(args)->PointIndex())
         return;
 
-    HandleRequest(::g::Fuse::Input::IGesture::OnPointerReleased(uInterface(uPtr(Handler), ::TYPES[14/*Fuse.Input.IGesture*/]), args), args);
+    HandleRequest(::g::Fuse::Input::IGesture::OnPointerReleased(uInterface(uPtr(Handler), ::TYPES[13/*Fuse.Input.IGesture*/]), args), args);
 }
 
-// public generated Gesture New() [static] :537
+// internal void OnRequestChanged(Fuse.Input.PointerEventArgs args, Fuse.Input.CaptureType captureType) [instance] :624
+void Gesture::OnRequestChanged(::g::Fuse::Input::PointerEventArgs* args, int captureType)
+{
+    uStackFrame __("Fuse.Input.Gesture", "OnRequestChanged(Fuse.Input.PointerEventArgs,Fuse.Input.CaptureType)");
+
+    if (_captureType == captureType)
+        return;
+
+    if (!::g::Fuse::Input::Pointer::ModifyCapture1(this, Target, uDelegate::New(::TYPES[14/*Uno.Action*/], (void*)Gesture__OnLostCapture_fn, this), captureType, uPtr(args)->PointIndex()))
+    {
+        OnLostCapture();
+        return;
+    }
+
+    _down = uPtr(args)->PointIndex();
+    _captureType = captureType;
+
+    if ((captureType & 2) == 2)
+        uPtr(Target)->BeginInteraction(this, uDelegate::New(::TYPES[14/*Uno.Action*/], (void*)Gesture__OnLostCapture_fn, this));
+
+    ::g::Fuse::Input::IGesture::OnCapture(uInterface(uPtr(Handler), ::TYPES[13/*Fuse.Input.IGesture*/]), args, captureType);
+}
+
+// public generated Gesture New() [static] :589
 Gesture* Gesture::New1()
 {
     Gesture* obj1 = (Gesture*)uNew(Gesture_typeof());
     obj1->ctor_();
     return obj1;
 }
+
+// internal static float get_HardCaptureSignificanceThreshold() [static] :608
+float Gesture::HardCaptureSignificanceThreshold()
+{
+    return 10.0f;
+}
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public enum GestureRequest :523
+// public enum GesturePriority :500
+uEnumType* GesturePriority_typeof()
+{
+    static uSStrong<uEnumType*> type;
+    if (type != NULL) return type;
+
+    type = uEnumType::New("Fuse.Input.GesturePriority", ::g::Uno::Int_typeof(), 5);
+    type->SetLiterals(
+        "Lowest", 0LL,
+        "Lower", 1LL,
+        "Normal", 2LL,
+        "Higher", 3LL,
+        "Highest", 4LL);
+    return type;
+}
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
+
+// public enum GestureRequest :570
 uEnumType* GestureRequest_typeof()
 {
     static uSStrong<uEnumType*> type;
     if (type != NULL) return type;
 
-    type = uEnumType::New("Fuse.Input.GestureRequest", ::g::Uno::Int_typeof(), 5);
+    type = uEnumType::New("Fuse.Input.GestureRequest", ::g::Uno::Int_typeof(), 3);
     type->SetLiterals(
         "Ignore", 0LL,
-        "Maintain", 1LL,
-        "SoftCapture", 2LL,
-        "HardCapture", 3LL,
-        "Cancel", 4LL);
+        "Capture", 1LL,
+        "Cancel", 2LL);
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public static class Gestures :665
+// public static class Gestures :731
 // {
-// static Gestures() :665
+// static Gestures() :731
 static void Gestures__cctor__fn(uType* __type)
 {
     Gestures::_gestures_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[15/*Uno.Collections.Dictionary<Fuse.Input.IGesture, Fuse.Input.Gesture>*/]));
+    Gestures::_activeGestures_ = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[16/*Uno.Collections.List<Fuse.Input.Gestures.ActiveGesture>*/]));
 }
 
 static void Gestures_build(uType* type)
@@ -2004,14 +2102,21 @@ static void Gestures_build(uType* type)
     ::STRINGS[8] = uString::Const("This gesture handler is already registered");
     ::STRINGS[9] = uString::Const("Invalid gesture type");
     ::STRINGS[10] = uString::Const("Unregistered gesture");
+    ::STRINGS[11] = uString::Const("RequestCaptureChange on inactive gesture");
     ::TYPES[15] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Fuse::Input::IGesture_typeof(), ::g::Fuse::Input::Gesture_typeof(), NULL);
-    ::TYPES[16] = ::g::Fuse::Input::PointerPressedHandler_typeof();
-    ::TYPES[17] = ::g::Fuse::Input::PointerReleasedHandler_typeof();
-    ::TYPES[18] = ::g::Fuse::Input::PointerMovedHandler_typeof();
+    ::TYPES[16] = ::g::Uno::Collections::List_typeof()->MakeType(Gestures__ActiveGesture_typeof(), NULL);
+    ::TYPES[17] = ::g::Fuse::Input::PointerPressedHandler_typeof();
+    ::TYPES[18] = ::g::Fuse::Input::PointerReleasedHandler_typeof();
+    ::TYPES[19] = ::g::Fuse::Input::PointerMovedHandler_typeof();
+    ::TYPES[20] = ::g::Uno::Comparison_typeof()->MakeType(Gestures__ActiveGesture_typeof(), NULL);
+    ::TYPES[14] = ::g::Uno::Action_typeof();
+    ::TYPES[13] = ::g::Fuse::Input::IGesture_typeof();
     type->SetFields(0,
+        ::TYPES[16/*Uno.Collections.List<Fuse.Input.Gestures.ActiveGesture>*/], (uintptr_t)&::g::Fuse::Input::Gestures::_activeGestures_, uFieldFlagsStatic,
+        ::g::Uno::Int_typeof(), (uintptr_t)&::g::Fuse::Input::Gestures::_changePosted_, uFieldFlagsStatic,
         ::TYPES[15/*Uno.Collections.Dictionary<Fuse.Input.IGesture, Fuse.Input.Gesture>*/], (uintptr_t)&::g::Fuse::Input::Gestures::_gestures_, uFieldFlagsStatic);
     type->Reflection.SetFunctions(1,
-        new uFunction("Add", NULL, (void*)Gestures__Add_fn, 0, true, ::g::Fuse::Input::Gesture_typeof(), 3, ::g::Fuse::Input::IGesture_typeof(), ::g::Fuse::Visual_typeof(), ::g::Fuse::Input::GestureType_typeof()));
+        new uFunction("Add", NULL, (void*)Gestures__Add_fn, 0, true, ::g::Fuse::Input::Gesture_typeof(), 3, ::TYPES[13/*Fuse.Input.IGesture*/], ::g::Fuse::Visual_typeof(), ::g::Fuse::Input::GestureType_typeof()));
 }
 
 uClassType* Gestures_typeof()
@@ -2020,7 +2125,7 @@ uClassType* Gestures_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 1;
+    options.FieldCount = 3;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.Input.Gestures", options);
     type->fp_build_ = Gestures_build;
@@ -2028,29 +2133,73 @@ uClassType* Gestures_typeof()
     return type;
 }
 
-// public static Fuse.Input.Gesture Add(Fuse.Input.IGesture handler, Fuse.Visual target, Fuse.Input.GestureType type) :672
+// public static Fuse.Input.Gesture Add(Fuse.Input.IGesture handler, Fuse.Visual target, Fuse.Input.GestureType type) :742
 void Gestures__Add_fn(uObject* handler, ::g::Fuse::Visual* target, int* type, ::g::Fuse::Input::Gesture** __retval)
 {
     *__retval = Gestures::Add(handler, target, *type);
 }
 
-// internal static void Remove(Fuse.Input.IGesture handler) :696
+// internal static void AddActive(Fuse.Input.Gesture g) :870
+void Gestures__AddActive_fn(::g::Fuse::Input::Gesture* g)
+{
+    Gestures::AddActive(g);
+}
+
+// private static int GetActiveGestureIndex(Fuse.Input.Gesture g) :859
+void Gestures__GetActiveGestureIndex_fn(::g::Fuse::Input::Gesture* g, int* __retval)
+{
+    *__retval = Gestures::GetActiveGestureIndex(g);
+}
+
+// private static int PriorityOrder(Fuse.Input.Gestures.ActiveGesture a, Fuse.Input.Gestures.ActiveGesture b) :813
+void Gestures__PriorityOrder_fn(Gestures__ActiveGesture* a, Gestures__ActiveGesture* b, int* __retval)
+{
+    *__retval = Gestures::PriorityOrder(a, b);
+}
+
+// private static void ProcessCaptureChanges() :833
+void Gestures__ProcessCaptureChanges_fn()
+{
+    Gestures::ProcessCaptureChanges();
+}
+
+// internal static void Remove(Fuse.Input.IGesture handler) :766
 void Gestures__Remove_fn(uObject* handler)
 {
     Gestures::Remove(handler);
 }
 
+// internal static void RemoveActive(Fuse.Input.Gesture g) :877
+void Gestures__RemoveActive_fn(::g::Fuse::Input::Gesture* g)
+{
+    Gestures::RemoveActive(g);
+}
+
+// internal static void RequestCaptureChange(Fuse.Input.Gesture gesture, Fuse.Input.PointerEventArgs args, Fuse.Input.CaptureType captureType) :794
+void Gestures__RequestCaptureChange_fn(::g::Fuse::Input::Gesture* gesture, ::g::Fuse::Input::PointerEventArgs* args, int* captureType)
+{
+    Gestures::RequestCaptureChange(gesture, args, *captureType);
+}
+
+// private static void UpdateSignificance() :822
+void Gestures__UpdateSignificance_fn()
+{
+    Gestures::UpdateSignificance();
+}
+
+uSStrong< ::g::Uno::Collections::List*> Gestures::_activeGestures_;
+int Gestures::_changePosted_;
 uSStrong< ::g::Uno::Collections::Dictionary*> Gestures::_gestures_;
 
-// public static Fuse.Input.Gesture Add(Fuse.Input.IGesture handler, Fuse.Visual target, Fuse.Input.GestureType type) [static] :672
+// public static Fuse.Input.Gesture Add(Fuse.Input.IGesture handler, Fuse.Visual target, Fuse.Input.GestureType type) [static] :742
 ::g::Fuse::Input::Gesture* Gestures::Add(uObject* handler, ::g::Fuse::Visual* target, int type)
 {
     uStackFrame __("Fuse.Input.Gestures", "Add(Fuse.Input.IGesture,Fuse.Visual,Fuse.Input.GestureType)");
     Gestures_typeof()->Init();
     ::g::Fuse::Input::Gesture* collection1;
-    bool ret2;
+    bool ret3;
 
-    if ((::g::Uno::Collections::Dictionary__ContainsKey_fn(uPtr(Gestures::_gestures()), handler, &ret2), ret2))
+    if ((::g::Uno::Collections::Dictionary__ContainsKey_fn(uPtr(Gestures::_gestures()), handler, &ret3), ret3))
         U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[8/*"This gestur...*/]));
 
     if (!((type & 1) == 1))
@@ -2062,35 +2211,155 @@ uSStrong< ::g::Uno::Collections::Dictionary*> Gestures::_gestures_;
     uPtr(collection1)->Target = target;
     ::g::Fuse::Input::Gesture* g = collection1;
     ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(Gestures::_gestures()), handler, g);
-    ::g::Fuse::VisualEvent__AddHandler_fn(uPtr(::g::Fuse::Input::Pointer::Pressed()), target, uDelegate::New(::TYPES[16/*Fuse.Input.PointerPressedHandler*/], (void*)::g::Fuse::Input::Gesture__OnPointerPressed_fn, uPtr(g)));
-    ::g::Fuse::VisualEvent__AddHandler_fn(uPtr(::g::Fuse::Input::Pointer::Released()), target, uDelegate::New(::TYPES[17/*Fuse.Input.PointerReleasedHandler*/], (void*)::g::Fuse::Input::Gesture__OnPointerReleased_fn, g));
-    ::g::Fuse::VisualEvent__AddHandler_fn(uPtr(::g::Fuse::Input::Pointer::Moved()), target, uDelegate::New(::TYPES[18/*Fuse.Input.PointerMovedHandler*/], (void*)::g::Fuse::Input::Gesture__OnPointerMoved_fn, g));
+    ::g::Fuse::VisualEvent__AddHandler_fn(uPtr(::g::Fuse::Input::Pointer::Pressed()), target, uDelegate::New(::TYPES[17/*Fuse.Input.PointerPressedHandler*/], (void*)::g::Fuse::Input::Gesture__OnPointerPressed_fn, uPtr(g)));
+    ::g::Fuse::VisualEvent__AddHandler_fn(uPtr(::g::Fuse::Input::Pointer::Released()), target, uDelegate::New(::TYPES[18/*Fuse.Input.PointerReleasedHandler*/], (void*)::g::Fuse::Input::Gesture__OnPointerReleased_fn, g));
+    ::g::Fuse::VisualEvent__AddHandler_fn(uPtr(::g::Fuse::Input::Pointer::Moved()), target, uDelegate::New(::TYPES[19/*Fuse.Input.PointerMovedHandler*/], (void*)::g::Fuse::Input::Gesture__OnPointerMoved_fn, g));
     return g;
 }
 
-// internal static void Remove(Fuse.Input.IGesture handler) [static] :696
+// internal static void AddActive(Fuse.Input.Gesture g) [static] :870
+void Gestures::AddActive(::g::Fuse::Input::Gesture* g)
+{
+    uStackFrame __("Fuse.Input.Gestures", "AddActive(Fuse.Input.Gesture)");
+    Gestures_typeof()->Init();
+    Gestures__ActiveGesture* collection2;
+    int index = Gestures::GetActiveGestureIndex(g);
+
+    if (index == -1)
+        ::g::Uno::Collections::List__Add_fn(uPtr(Gestures::_activeGestures()), (collection2 = Gestures__ActiveGesture::New1(), uPtr(collection2)->Gesture = g, collection2));
+}
+
+// private static int GetActiveGestureIndex(Fuse.Input.Gesture g) [static] :859
+int Gestures::GetActiveGestureIndex(::g::Fuse::Input::Gesture* g)
+{
+    uStackFrame __("Fuse.Input.Gestures", "GetActiveGestureIndex(Fuse.Input.Gesture)");
+    Gestures_typeof()->Init();
+    Gestures__ActiveGesture* ret4;
+
+    for (int i = 0; i < uPtr(Gestures::_activeGestures())->Count(); ++i)
+        if (uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(Gestures::_activeGestures()), uCRef<int>(i), &ret4), ret4))->Gesture == g)
+            return i;
+
+    return -1;
+}
+
+// private static int PriorityOrder(Fuse.Input.Gestures.ActiveGesture a, Fuse.Input.Gestures.ActiveGesture b) [static] :813
+int Gestures::PriorityOrder(Gestures__ActiveGesture* a, Gestures__ActiveGesture* b)
+{
+    uStackFrame __("Fuse.Input.Gestures", "PriorityOrder(Fuse.Input.Gestures.ActiveGesture,Fuse.Input.Gestures.ActiveGesture)");
+    Gestures_typeof()->Init();
+    int p = uPtr(b)->Priority - uPtr(a)->Priority;
+
+    if (p != 0)
+        return p;
+
+    return b->PriorityAdjustment - a->PriorityAdjustment;
+}
+
+// private static void ProcessCaptureChanges() [static] :833
+void Gestures::ProcessCaptureChanges()
+{
+    uStackFrame __("Fuse.Input.Gestures", "ProcessCaptureChanges()");
+    Gestures_typeof()->Init();
+    Gestures__ActiveGesture* ret5;
+    Gestures__ActiveGesture* ret6;
+    Gestures::UpdateSignificance();
+    uPtr(Gestures::_activeGestures())->Sort(uDelegate::New(::TYPES[20/*Uno.Comparison<Fuse.Input.Gestures.ActiveGesture>*/], (void*)Gestures__PriorityOrder_fn));
+
+    for (int i = 0; i < uPtr(Gestures::_activeGestures())->Count(); ++i)
+    {
+        Gestures__ActiveGesture* ar = (::g::Uno::Collections::List__get_Item_fn(uPtr(Gestures::_activeGestures()), uCRef<int>(i), &ret5), ret5);
+
+        if (!uPtr(ar)->ChangeRequest)
+            continue;
+
+        uPtr(ar)->ChangeRequest = false;
+        Gestures__ActiveGesture* prev = (i > 0) ? (::g::Uno::Collections::List__get_Item_fn(uPtr(Gestures::_activeGestures()), uCRef<int>(i - 1), &ret6), ret6) : NULL;
+        int pdiff = (prev != NULL) ? uPtr(prev)->Priority - ar->Priority : 0;
+
+        if ((pdiff > 0) && ((ar->CaptureType & 2) == 2))
+        {
+            if (uPtr(ar)->Significance < (((float)uPtr(prev)->Priority * 2.0f) + uPtr(prev)->Significance))
+                continue;
+        }
+
+        uPtr(ar->Gesture)->OnRequestChanged(ar->Args, ar->CaptureType);
+    }
+}
+
+// internal static void Remove(Fuse.Input.IGesture handler) [static] :766
 void Gestures::Remove(uObject* handler)
 {
     uStackFrame __("Fuse.Input.Gestures", "Remove(Fuse.Input.IGesture)");
     Gestures_typeof()->Init();
-    bool ret3;
-    bool ret4;
+    bool ret7;
+    bool ret8;
     ::g::Fuse::Input::Gesture* g;
 
-    if (!(::g::Uno::Collections::Dictionary__TryGetValue_fn(uPtr(Gestures::_gestures()), handler, (void**)(&g), &ret3), ret3))
+    if (!(::g::Uno::Collections::Dictionary__TryGetValue_fn(uPtr(Gestures::_gestures()), handler, (void**)(&g), &ret7), ret7))
         U_THROW(::g::Uno::ArgumentException::New4(::STRINGS[10/*"Unregistere...*/]));
 
-    ::g::Fuse::VisualEvent__RemoveHandler_fn(uPtr(::g::Fuse::Input::Pointer::Pressed()), uPtr(g)->Target, uDelegate::New(::TYPES[16/*Fuse.Input.PointerPressedHandler*/], (void*)::g::Fuse::Input::Gesture__OnPointerPressed_fn, uPtr(g)));
-    ::g::Fuse::VisualEvent__RemoveHandler_fn(uPtr(::g::Fuse::Input::Pointer::Released()), g->Target, uDelegate::New(::TYPES[17/*Fuse.Input.PointerReleasedHandler*/], (void*)::g::Fuse::Input::Gesture__OnPointerReleased_fn, g));
-    ::g::Fuse::VisualEvent__AddHandler_fn(uPtr(::g::Fuse::Input::Pointer::Moved()), g->Target, uDelegate::New(::TYPES[18/*Fuse.Input.PointerMovedHandler*/], (void*)::g::Fuse::Input::Gesture__OnPointerMoved_fn, g));
-    ::g::Uno::Collections::Dictionary__Remove_fn(uPtr(Gestures::_gestures()), handler, &ret4);
+    ::g::Fuse::VisualEvent__RemoveHandler_fn(uPtr(::g::Fuse::Input::Pointer::Pressed()), uPtr(g)->Target, uDelegate::New(::TYPES[17/*Fuse.Input.PointerPressedHandler*/], (void*)::g::Fuse::Input::Gesture__OnPointerPressed_fn, uPtr(g)));
+    ::g::Fuse::VisualEvent__RemoveHandler_fn(uPtr(::g::Fuse::Input::Pointer::Released()), g->Target, uDelegate::New(::TYPES[18/*Fuse.Input.PointerReleasedHandler*/], (void*)::g::Fuse::Input::Gesture__OnPointerReleased_fn, g));
+    ::g::Fuse::VisualEvent__AddHandler_fn(uPtr(::g::Fuse::Input::Pointer::Moved()), g->Target, uDelegate::New(::TYPES[19/*Fuse.Input.PointerMovedHandler*/], (void*)::g::Fuse::Input::Gesture__OnPointerMoved_fn, g));
+    ::g::Uno::Collections::Dictionary__Remove_fn(uPtr(Gestures::_gestures()), handler, &ret8);
+}
+
+// internal static void RemoveActive(Fuse.Input.Gesture g) [static] :877
+void Gestures::RemoveActive(::g::Fuse::Input::Gesture* g)
+{
+    uStackFrame __("Fuse.Input.Gestures", "RemoveActive(Fuse.Input.Gesture)");
+    Gestures_typeof()->Init();
+    int index = Gestures::GetActiveGestureIndex(g);
+
+    if (index != -1)
+        uPtr(Gestures::_activeGestures())->RemoveAt(index);
+}
+
+// internal static void RequestCaptureChange(Fuse.Input.Gesture gesture, Fuse.Input.PointerEventArgs args, Fuse.Input.CaptureType captureType) [static] :794
+void Gestures::RequestCaptureChange(::g::Fuse::Input::Gesture* gesture, ::g::Fuse::Input::PointerEventArgs* args, int captureType)
+{
+    uStackFrame __("Fuse.Input.Gestures", "RequestCaptureChange(Fuse.Input.Gesture,Fuse.Input.PointerEventArgs,Fuse.Input.CaptureType)");
+    Gestures_typeof()->Init();
+    Gestures__ActiveGesture* ret9;
+    int index = Gestures::GetActiveGestureIndex(gesture);
+
+    if (index == -1)
+        U_THROW(::g::Uno::Exception::New2(::STRINGS[11/*"RequestCapt...*/]));
+
+    Gestures__ActiveGesture* ar = (::g::Uno::Collections::List__get_Item_fn(uPtr(Gestures::_activeGestures()), uCRef<int>(index), &ret9), ret9);
+    uPtr(ar)->ChangeRequest = true;
+    ar->Args = args;
+    ar->CaptureType = captureType;
+
+    if (Gestures::_changePosted() < ::g::Fuse::UpdateManager::FrameIndex())
+    {
+        ::g::Fuse::UpdateManager::AddDeferredAction(uDelegate::New(::TYPES[14/*Uno.Action*/], (void*)Gestures__ProcessCaptureChanges_fn), -1, 0);
+        Gestures::_changePosted() = ::g::Fuse::UpdateManager::FrameIndex();
+    }
+}
+
+// private static void UpdateSignificance() [static] :822
+void Gestures::UpdateSignificance()
+{
+    uStackFrame __("Fuse.Input.Gestures", "UpdateSignificance()");
+    Gestures_typeof()->Init();
+    Gestures__ActiveGesture* ret10;
+
+    for (int i = 0; i < uPtr(Gestures::_activeGestures())->Count(); ++i)
+    {
+        Gestures__ActiveGesture* ar = (::g::Uno::Collections::List__get_Item_fn(uPtr(Gestures::_activeGestures()), uCRef<int>(i), &ret10), ret10);
+        uPtr(ar)->Significance = ::g::Fuse::Input::IGesture::Significance(uInterface(uPtr(uPtr(uPtr(ar)->Gesture)->Handler), ::TYPES[13/*Fuse.Input.IGesture*/]));
+        ar->PriorityAdjustment = ::g::Fuse::Input::IGesture::PriorityAdjustment(uInterface(uPtr(uPtr(ar->Gesture)->Handler), ::TYPES[13/*Fuse.Input.IGesture*/]));
+        ar->Priority = ::g::Fuse::Input::IGesture::Priority(uInterface(uPtr(uPtr(ar->Gesture)->Handler), ::TYPES[13/*Fuse.Input.IGesture*/]));
+    }
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public enum GestureType :513
+// public enum GestureType :557
 uEnumType* GestureType_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -2104,10 +2373,10 @@ uEnumType* GestureType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public static class HitTestHelpers :741
+// public static class HitTestHelpers :917
 // {
 static void HitTestHelpers_build(uType* type)
 {
@@ -2127,13 +2396,13 @@ uClassType* HitTestHelpers_typeof()
     return type;
 }
 
-// public static Fuse.HitTestResult HitTestNearest(Fuse.Visual root, float2 point) :743
+// public static Fuse.HitTestResult HitTestNearest(Fuse.Visual root, float2 point) :919
 void HitTestHelpers__HitTestNearest_fn(::g::Fuse::Visual* root, ::g::Uno::Float2* point, ::g::Fuse::HitTestResult** __retval)
 {
     *__retval = HitTestHelpers::HitTestNearest(root, *point);
 }
 
-// public static Fuse.HitTestResult HitTestNearest(Fuse.Visual root, float2 point) [static] :743
+// public static Fuse.HitTestResult HitTestNearest(Fuse.Visual root, float2 point) [static] :919
 ::g::Fuse::HitTestResult* HitTestHelpers::HitTestNearest(::g::Fuse::Visual* root, ::g::Uno::Float2 point)
 {
     uStackFrame __("Fuse.Input.HitTestHelpers", "HitTestNearest(Fuse.Visual,float2)");
@@ -2142,10 +2411,10 @@ void HitTestHelpers__HitTestNearest_fn(::g::Fuse::Visual* root, ::g::Uno::Float2
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public abstract interface IGesture :497
+// public abstract interface IGesture :515
 // {
 uInterfaceType* IGesture_typeof()
 {
@@ -2153,18 +2422,21 @@ uInterfaceType* IGesture_typeof()
     if (type != NULL) return type;
 
     type = uInterfaceType::New("Fuse.Input.IGesture", 0, 0);
-    type->Reflection.SetFunctions(5,
+    type->Reflection.SetFunctions(8,
         new uFunction("OnCapture", NULL, NULL, offsetof(IGesture, fp_OnCapture), false, uVoid_typeof(), 2, ::g::Fuse::Input::PointerEventArgs_typeof(), ::g::Fuse::Input::CaptureType_typeof()),
         new uFunction("OnLostCapture", NULL, NULL, offsetof(IGesture, fp_OnLostCapture), false, uVoid_typeof(), 1, ::g::Uno::Bool_typeof()),
         new uFunction("OnPointerMoved", NULL, NULL, offsetof(IGesture, fp_OnPointerMoved), false, ::g::Fuse::Input::GestureRequest_typeof(), 1, ::g::Fuse::Input::PointerMovedArgs_typeof()),
         new uFunction("OnPointerPressed", NULL, NULL, offsetof(IGesture, fp_OnPointerPressed), false, ::g::Fuse::Input::GestureRequest_typeof(), 1, ::g::Fuse::Input::PointerPressedArgs_typeof()),
-        new uFunction("OnPointerReleased", NULL, NULL, offsetof(IGesture, fp_OnPointerReleased), false, ::g::Fuse::Input::GestureRequest_typeof(), 1, ::g::Fuse::Input::PointerReleasedArgs_typeof()));
+        new uFunction("OnPointerReleased", NULL, NULL, offsetof(IGesture, fp_OnPointerReleased), false, ::g::Fuse::Input::GestureRequest_typeof(), 1, ::g::Fuse::Input::PointerReleasedArgs_typeof()),
+        new uFunction("get_Priority", NULL, NULL, offsetof(IGesture, fp_get_Priority), false, ::g::Fuse::Input::GesturePriority_typeof(), 0),
+        new uFunction("get_PriorityAdjustment", NULL, NULL, offsetof(IGesture, fp_get_PriorityAdjustment), false, ::g::Uno::Int_typeof(), 0),
+        new uFunction("get_Significance", NULL, NULL, offsetof(IGesture, fp_get_Significance), false, ::g::Uno::Float_typeof(), 0));
     return type;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public abstract interface INotifyFocus :167
 // {
@@ -2181,10 +2453,10 @@ uInterfaceType* INotifyFocus_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public abstract interface IPointerEventResponder :982
+// public abstract interface IPointerEventResponder :1184
 // {
 uInterfaceType* IPointerEventResponder_typeof()
 {
@@ -2201,8 +2473,8 @@ uInterfaceType* IPointerEventResponder_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public sealed class IsFocusableChangedArgs :467
 // {
@@ -2260,8 +2532,8 @@ IsFocusableChangedArgs* IsFocusableChangedArgs::New3(::g::Fuse::Visual* visual)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // internal sealed class IsFocusableChangedEvent :474
 // {
@@ -2322,8 +2594,8 @@ IsFocusableChangedEvent* IsFocusableChangedEvent::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public delegate void IsFocusableChangedHandler(object sender, Fuse.Input.IsFocusableChangedArgs args) :472
 uDelegateType* IsFocusableChangedHandler_typeof()
@@ -2338,29 +2610,29 @@ uDelegateType* IsFocusableChangedHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public static class Keyboard :840
+// public static class Keyboard :1016
 // {
-// static Keyboard() :840
+// static Keyboard() :1016
 static void Keyboard__cctor__fn(uType* __type)
 {
     Keyboard::_keyPressed_ = ::g::Fuse::Input::KeyPressed::New1();
     Keyboard::_keyReleased_ = ::g::Fuse::Input::KeyReleased::New1();
-    Keyboard::_keysDown_ = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[19/*Uno.Collections.List<Uno.Platform.Key>*/]));
+    Keyboard::_keysDown_ = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[21/*Uno.Collections.List<Uno.Platform.Key>*/]));
     Keyboard::_keyboardHandle_ = ::g::Fuse::Properties::CreateHandle();
 }
 
 static void Keyboard_build(uType* type)
 {
-    ::TYPES[19] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Platform::Key_typeof(), NULL);
-    ::TYPES[13] = ::g::Uno::Action_typeof();
+    ::TYPES[21] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Platform::Key_typeof(), NULL);
+    ::TYPES[14] = ::g::Uno::Action_typeof();
     type->SetFields(0,
         ::g::Fuse::PropertyHandle_typeof(), (uintptr_t)&::g::Fuse::Input::Keyboard::_keyboardHandle_, uFieldFlagsStatic,
         ::g::Fuse::Input::KeyPressed_typeof(), (uintptr_t)&::g::Fuse::Input::Keyboard::_keyPressed_, uFieldFlagsStatic,
         ::g::Fuse::Input::KeyReleased_typeof(), (uintptr_t)&::g::Fuse::Input::Keyboard::_keyReleased_, uFieldFlagsStatic,
-        ::TYPES[19/*Uno.Collections.List<Uno.Platform.Key>*/], (uintptr_t)&::g::Fuse::Input::Keyboard::_keysDown_, uFieldFlagsStatic);
+        ::TYPES[21/*Uno.Collections.List<Uno.Platform.Key>*/], (uintptr_t)&::g::Fuse::Input::Keyboard::_keysDown_, uFieldFlagsStatic);
     type->Reflection.SetFunctions(8,
         new uFunction("AddHandlers", NULL, (void*)Keyboard__AddHandlers_fn, 0, true, uVoid_typeof(), 3, ::g::Fuse::Visual_typeof(), ::g::Fuse::Input::KeyPressedHandler_typeof(), ::g::Fuse::Input::KeyReleasedHandler_typeof()),
         new uFunction("EmulateBackButtonTap", NULL, (void*)Keyboard__EmulateBackButtonTap_fn, 0, true, uVoid_typeof(), 0),
@@ -2386,61 +2658,61 @@ uClassType* Keyboard_typeof()
     return type;
 }
 
-// public static void AddHandlers(Fuse.Visual visual, [Fuse.Input.KeyPressedHandler pressed], [Fuse.Input.KeyReleasedHandler released]) :848
+// public static void AddHandlers(Fuse.Visual visual, [Fuse.Input.KeyPressedHandler pressed], [Fuse.Input.KeyReleasedHandler released]) :1024
 void Keyboard__AddHandlers_fn(::g::Fuse::Visual* visual, uDelegate* pressed, uDelegate* released)
 {
     Keyboard::AddHandlers(visual, pressed, released);
 }
 
-// private static void DispatchEmulateBackButtonTap() :868
+// private static void DispatchEmulateBackButtonTap() :1044
 void Keyboard__DispatchEmulateBackButtonTap_fn()
 {
     Keyboard::DispatchEmulateBackButtonTap();
 }
 
-// public static void EmulateBackButtonTap() :863
+// public static void EmulateBackButtonTap() :1039
 void Keyboard__EmulateBackButtonTap_fn()
 {
     Keyboard::EmulateBackButtonTap();
 }
 
-// public static bool IsKeyPressed(Uno.Platform.Key key) :904
+// public static bool IsKeyPressed(Uno.Platform.Key key) :1080
 void Keyboard__IsKeyPressed_fn(int* key, bool* __retval)
 {
     *__retval = Keyboard::IsKeyPressed(*key);
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.KeyPressedHandler, Fuse.Input.KeyPressedArgs> get_KeyPressed() :845
+// public static Fuse.VisualEvent<Fuse.Input.KeyPressedHandler, Fuse.Input.KeyPressedArgs> get_KeyPressed() :1021
 void Keyboard__get_KeyPressed_fn(::g::Fuse::VisualEvent** __retval)
 {
     *__retval = Keyboard::KeyPressed();
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.KeyReleasedHandler, Fuse.Input.KeyReleasedArgs> get_KeyReleased() :846
+// public static Fuse.VisualEvent<Fuse.Input.KeyReleasedHandler, Fuse.Input.KeyReleasedArgs> get_KeyReleased() :1022
 void Keyboard__get_KeyReleased_fn(::g::Fuse::VisualEvent** __retval)
 {
     *__retval = Keyboard::KeyReleased();
 }
 
-// private static Fuse.Visual get_KeyTargetVisual() :876
+// private static Fuse.Visual get_KeyTargetVisual() :1052
 void Keyboard__get_KeyTargetVisual_fn(::g::Fuse::Visual** __retval)
 {
     *__retval = Keyboard::KeyTargetVisual();
 }
 
-// public static bool RaiseKeyPressed(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed) :882
+// public static bool RaiseKeyPressed(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed) :1058
 void Keyboard__RaiseKeyPressed_fn(int* key, bool* isMetaKeyPressed, bool* isControlKeyPressed, bool* isShiftKeyPressed, bool* isAltKeyPressed, bool* __retval)
 {
     *__retval = Keyboard::RaiseKeyPressed(*key, *isMetaKeyPressed, *isControlKeyPressed, *isShiftKeyPressed, *isAltKeyPressed);
 }
 
-// public static bool RaiseKeyReleased(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed) :892
+// public static bool RaiseKeyReleased(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed) :1068
 void Keyboard__RaiseKeyReleased_fn(int* key, bool* isMetaKeyPressed, bool* isControlKeyPressed, bool* isShiftKeyPressed, bool* isAltKeyPressed, bool* __retval)
 {
     *__retval = Keyboard::RaiseKeyReleased(*key, *isMetaKeyPressed, *isControlKeyPressed, *isShiftKeyPressed, *isAltKeyPressed);
 }
 
-// public static void RemoveHandlers(Fuse.Visual visual, [Fuse.Input.KeyPressedHandler pressed], [Fuse.Input.KeyReleasedHandler released]) :854
+// public static void RemoveHandlers(Fuse.Visual visual, [Fuse.Input.KeyPressedHandler pressed], [Fuse.Input.KeyReleasedHandler released]) :1030
 void Keyboard__RemoveHandlers_fn(::g::Fuse::Visual* visual, uDelegate* pressed, uDelegate* released)
 {
     Keyboard::RemoveHandlers(visual, pressed, released);
@@ -2451,7 +2723,7 @@ uSStrong< ::g::Fuse::Input::KeyPressed*> Keyboard::_keyPressed_;
 uSStrong< ::g::Fuse::Input::KeyReleased*> Keyboard::_keyReleased_;
 uSStrong< ::g::Uno::Collections::List*> Keyboard::_keysDown_;
 
-// public static void AddHandlers(Fuse.Visual visual, [Fuse.Input.KeyPressedHandler pressed], [Fuse.Input.KeyReleasedHandler released]) [static] :848
+// public static void AddHandlers(Fuse.Visual visual, [Fuse.Input.KeyPressedHandler pressed], [Fuse.Input.KeyReleasedHandler released]) [static] :1024
 void Keyboard::AddHandlers(::g::Fuse::Visual* visual, uDelegate* pressed, uDelegate* released)
 {
     uStackFrame __("Fuse.Input.Keyboard", "AddHandlers(Fuse.Visual,[Fuse.Input.KeyPressedHandler],[Fuse.Input.KeyReleasedHandler])");
@@ -2464,7 +2736,7 @@ void Keyboard::AddHandlers(::g::Fuse::Visual* visual, uDelegate* pressed, uDeleg
         ::g::Fuse::VisualEvent__AddHandler_fn(uPtr(Keyboard::KeyReleased()), visual, released);
 }
 
-// private static void DispatchEmulateBackButtonTap() [static] :868
+// private static void DispatchEmulateBackButtonTap() [static] :1044
 void Keyboard::DispatchEmulateBackButtonTap()
 {
     uStackFrame __("Fuse.Input.Keyboard", "DispatchEmulateBackButtonTap()");
@@ -2473,15 +2745,15 @@ void Keyboard::DispatchEmulateBackButtonTap()
     Keyboard::RaiseKeyReleased(201, false, false, false, false);
 }
 
-// public static void EmulateBackButtonTap() [static] :863
+// public static void EmulateBackButtonTap() [static] :1039
 void Keyboard::EmulateBackButtonTap()
 {
     uStackFrame __("Fuse.Input.Keyboard", "EmulateBackButtonTap()");
     Keyboard_typeof()->Init();
-    ::g::Fuse::UpdateManager::PostAction(uDelegate::New(::TYPES[13/*Uno.Action*/], (void*)Keyboard__DispatchEmulateBackButtonTap_fn));
+    ::g::Fuse::UpdateManager::PostAction(uDelegate::New(::TYPES[14/*Uno.Action*/], (void*)Keyboard__DispatchEmulateBackButtonTap_fn));
 }
 
-// public static bool IsKeyPressed(Uno.Platform.Key key) [static] :904
+// public static bool IsKeyPressed(Uno.Platform.Key key) [static] :1080
 bool Keyboard::IsKeyPressed(int key)
 {
     uStackFrame __("Fuse.Input.Keyboard", "IsKeyPressed(Uno.Platform.Key)");
@@ -2495,7 +2767,7 @@ bool Keyboard::IsKeyPressed(int key)
     return false;
 }
 
-// public static bool RaiseKeyPressed(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed) [static] :882
+// public static bool RaiseKeyPressed(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed) [static] :1058
 bool Keyboard::RaiseKeyPressed(int key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed)
 {
     uStackFrame __("Fuse.Input.Keyboard", "RaiseKeyPressed(Uno.Platform.Key,bool,bool,bool,bool)");
@@ -2506,7 +2778,7 @@ bool Keyboard::RaiseKeyPressed(int key, bool isMetaKeyPressed, bool isControlKey
     return args->IsHandled();
 }
 
-// public static bool RaiseKeyReleased(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed) [static] :892
+// public static bool RaiseKeyReleased(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed) [static] :1068
 bool Keyboard::RaiseKeyReleased(int key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed)
 {
     uStackFrame __("Fuse.Input.Keyboard", "RaiseKeyReleased(Uno.Platform.Key,bool,bool,bool,bool)");
@@ -2522,7 +2794,7 @@ bool Keyboard::RaiseKeyReleased(int key, bool isMetaKeyPressed, bool isControlKe
     return args->IsHandled();
 }
 
-// public static void RemoveHandlers(Fuse.Visual visual, [Fuse.Input.KeyPressedHandler pressed], [Fuse.Input.KeyReleasedHandler released]) [static] :854
+// public static void RemoveHandlers(Fuse.Visual visual, [Fuse.Input.KeyPressedHandler pressed], [Fuse.Input.KeyReleasedHandler released]) [static] :1030
 void Keyboard::RemoveHandlers(::g::Fuse::Visual* visual, uDelegate* pressed, uDelegate* released)
 {
     uStackFrame __("Fuse.Input.Keyboard", "RemoveHandlers(Fuse.Visual,[Fuse.Input.KeyPressedHandler],[Fuse.Input.KeyReleasedHandler])");
@@ -2535,21 +2807,21 @@ void Keyboard::RemoveHandlers(::g::Fuse::Visual* visual, uDelegate* pressed, uDe
         ::g::Fuse::VisualEvent__RemoveHandler_fn(uPtr(Keyboard::KeyReleased()), visual, released);
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.KeyPressedHandler, Fuse.Input.KeyPressedArgs> get_KeyPressed() [static] :845
+// public static Fuse.VisualEvent<Fuse.Input.KeyPressedHandler, Fuse.Input.KeyPressedArgs> get_KeyPressed() [static] :1021
 ::g::Fuse::VisualEvent* Keyboard::KeyPressed()
 {
     Keyboard_typeof()->Init();
     return Keyboard::_keyPressed();
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.KeyReleasedHandler, Fuse.Input.KeyReleasedArgs> get_KeyReleased() [static] :846
+// public static Fuse.VisualEvent<Fuse.Input.KeyReleasedHandler, Fuse.Input.KeyReleasedArgs> get_KeyReleased() [static] :1022
 ::g::Fuse::VisualEvent* Keyboard::KeyReleased()
 {
     Keyboard_typeof()->Init();
     return Keyboard::_keyReleased();
 }
 
-// private static Fuse.Visual get_KeyTargetVisual() [static] :876
+// private static Fuse.Visual get_KeyTargetVisual() [static] :1052
 ::g::Fuse::Visual* Keyboard::KeyTargetVisual()
 {
     uStackFrame __("Fuse.Input.Keyboard", "get_KeyTargetVisual()");
@@ -2559,10 +2831,10 @@ void Keyboard::RemoveHandlers(::g::Fuse::Visual* visual, uDelegate* pressed, uDe
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public abstract class KeyEventArgs :760
+// public abstract class KeyEventArgs :936
 // {
 static void KeyEventArgs_build(uType* type)
 {
@@ -2599,73 +2871,73 @@ static void KeyEventArgs_build(uType* type)
     return type;
 }
 
-// protected KeyEventArgs(Uno.Platform.Key key, Fuse.Visual visual) :792
+// protected KeyEventArgs(Uno.Platform.Key key, Fuse.Visual visual) :968
 void KeyEventArgs__ctor_2_fn(KeyEventArgs* __this, int* key, ::g::Fuse::Visual* visual)
 {
     __this->ctor_2(*key, visual);
 }
 
-// public generated bool get_IsAltKeyPressed() :788
+// public generated bool get_IsAltKeyPressed() :964
 void KeyEventArgs__get_IsAltKeyPressed_fn(KeyEventArgs* __this, bool* __retval)
 {
     *__retval = __this->IsAltKeyPressed();
 }
 
-// protected generated void set_IsAltKeyPressed(bool value) :789
+// protected generated void set_IsAltKeyPressed(bool value) :965
 void KeyEventArgs__set_IsAltKeyPressed_fn(KeyEventArgs* __this, bool* value)
 {
     __this->IsAltKeyPressed(*value);
 }
 
-// public generated bool get_IsControlKeyPressed() :776
+// public generated bool get_IsControlKeyPressed() :952
 void KeyEventArgs__get_IsControlKeyPressed_fn(KeyEventArgs* __this, bool* __retval)
 {
     *__retval = __this->IsControlKeyPressed();
 }
 
-// protected generated void set_IsControlKeyPressed(bool value) :777
+// protected generated void set_IsControlKeyPressed(bool value) :953
 void KeyEventArgs__set_IsControlKeyPressed_fn(KeyEventArgs* __this, bool* value)
 {
     __this->IsControlKeyPressed(*value);
 }
 
-// public generated bool get_IsMetaKeyPressed() :770
+// public generated bool get_IsMetaKeyPressed() :946
 void KeyEventArgs__get_IsMetaKeyPressed_fn(KeyEventArgs* __this, bool* __retval)
 {
     *__retval = __this->IsMetaKeyPressed();
 }
 
-// protected generated void set_IsMetaKeyPressed(bool value) :771
+// protected generated void set_IsMetaKeyPressed(bool value) :947
 void KeyEventArgs__set_IsMetaKeyPressed_fn(KeyEventArgs* __this, bool* value)
 {
     __this->IsMetaKeyPressed(*value);
 }
 
-// public generated bool get_IsShiftKeyPressed() :782
+// public generated bool get_IsShiftKeyPressed() :958
 void KeyEventArgs__get_IsShiftKeyPressed_fn(KeyEventArgs* __this, bool* __retval)
 {
     *__retval = __this->IsShiftKeyPressed();
 }
 
-// protected generated void set_IsShiftKeyPressed(bool value) :783
+// protected generated void set_IsShiftKeyPressed(bool value) :959
 void KeyEventArgs__set_IsShiftKeyPressed_fn(KeyEventArgs* __this, bool* value)
 {
     __this->IsShiftKeyPressed(*value);
 }
 
-// public generated Uno.Platform.Key get_Key() :764
+// public generated Uno.Platform.Key get_Key() :940
 void KeyEventArgs__get_Key_fn(KeyEventArgs* __this, int* __retval)
 {
     *__retval = __this->Key();
 }
 
-// private generated void set_Key(Uno.Platform.Key value) :765
+// private generated void set_Key(Uno.Platform.Key value) :941
 void KeyEventArgs__set_Key_fn(KeyEventArgs* __this, int* value)
 {
     __this->Key(*value);
 }
 
-// protected KeyEventArgs(Uno.Platform.Key key, Fuse.Visual visual) [instance] :792
+// protected KeyEventArgs(Uno.Platform.Key key, Fuse.Visual visual) [instance] :968
 void KeyEventArgs::ctor_2(int key, ::g::Fuse::Visual* visual)
 {
     uStackFrame __("Fuse.Input.KeyEventArgs", ".ctor(Uno.Platform.Key,Fuse.Visual)");
@@ -2673,71 +2945,71 @@ void KeyEventArgs::ctor_2(int key, ::g::Fuse::Visual* visual)
     Key(key);
 }
 
-// public generated bool get_IsAltKeyPressed() [instance] :788
+// public generated bool get_IsAltKeyPressed() [instance] :964
 bool KeyEventArgs::IsAltKeyPressed()
 {
     return _IsAltKeyPressed;
 }
 
-// protected generated void set_IsAltKeyPressed(bool value) [instance] :789
+// protected generated void set_IsAltKeyPressed(bool value) [instance] :965
 void KeyEventArgs::IsAltKeyPressed(bool value)
 {
     _IsAltKeyPressed = value;
 }
 
-// public generated bool get_IsControlKeyPressed() [instance] :776
+// public generated bool get_IsControlKeyPressed() [instance] :952
 bool KeyEventArgs::IsControlKeyPressed()
 {
     return _IsControlKeyPressed;
 }
 
-// protected generated void set_IsControlKeyPressed(bool value) [instance] :777
+// protected generated void set_IsControlKeyPressed(bool value) [instance] :953
 void KeyEventArgs::IsControlKeyPressed(bool value)
 {
     _IsControlKeyPressed = value;
 }
 
-// public generated bool get_IsMetaKeyPressed() [instance] :770
+// public generated bool get_IsMetaKeyPressed() [instance] :946
 bool KeyEventArgs::IsMetaKeyPressed()
 {
     return _IsMetaKeyPressed;
 }
 
-// protected generated void set_IsMetaKeyPressed(bool value) [instance] :771
+// protected generated void set_IsMetaKeyPressed(bool value) [instance] :947
 void KeyEventArgs::IsMetaKeyPressed(bool value)
 {
     _IsMetaKeyPressed = value;
 }
 
-// public generated bool get_IsShiftKeyPressed() [instance] :782
+// public generated bool get_IsShiftKeyPressed() [instance] :958
 bool KeyEventArgs::IsShiftKeyPressed()
 {
     return _IsShiftKeyPressed;
 }
 
-// protected generated void set_IsShiftKeyPressed(bool value) [instance] :783
+// protected generated void set_IsShiftKeyPressed(bool value) [instance] :959
 void KeyEventArgs::IsShiftKeyPressed(bool value)
 {
     _IsShiftKeyPressed = value;
 }
 
-// public generated Uno.Platform.Key get_Key() [instance] :764
+// public generated Uno.Platform.Key get_Key() [instance] :940
 int KeyEventArgs::Key()
 {
     return _Key;
 }
 
-// private generated void set_Key(Uno.Platform.Key value) [instance] :765
+// private generated void set_Key(Uno.Platform.Key value) [instance] :941
 void KeyEventArgs::Key(int value)
 {
     _Key = value;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// internal sealed class KeyPressed :811
+// internal sealed class KeyPressed :987
 // {
 static void KeyPressed_build(uType* type)
 {
@@ -2762,32 +3034,32 @@ static void KeyPressed_build(uType* type)
     return type;
 }
 
-// public generated KeyPressed() :811
+// public generated KeyPressed() :987
 void KeyPressed__ctor_1_fn(KeyPressed* __this)
 {
     __this->ctor_1();
 }
 
-// protected override sealed void Invoke(Fuse.Input.KeyPressedHandler handler, object sender, Fuse.Input.KeyPressedArgs args) :813
+// protected override sealed void Invoke(Fuse.Input.KeyPressedHandler handler, object sender, Fuse.Input.KeyPressedArgs args) :989
 void KeyPressed__Invoke_fn(KeyPressed* __this, uDelegate* handler, uObject* sender, ::g::Fuse::Input::KeyPressedArgs* args)
 {
     uStackFrame __("Fuse.Input.KeyPressed", "Invoke(Fuse.Input.KeyPressedHandler,object,Fuse.Input.KeyPressedArgs)");
     uPtr(handler)->Invoke(2, sender, args);
 }
 
-// public generated KeyPressed New() :811
+// public generated KeyPressed New() :987
 void KeyPressed__New1_fn(KeyPressed** __retval)
 {
     *__retval = KeyPressed::New1();
 }
 
-// public generated KeyPressed() [instance] :811
+// public generated KeyPressed() [instance] :987
 void KeyPressed::ctor_1()
 {
     ctor_();
 }
 
-// public generated KeyPressed New() [static] :811
+// public generated KeyPressed New() [static] :987
 KeyPressed* KeyPressed::New1()
 {
     KeyPressed* obj1 = (KeyPressed*)uNew(KeyPressed_typeof());
@@ -2796,10 +3068,10 @@ KeyPressed* KeyPressed::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public sealed class KeyPressedArgs :798
+// public sealed class KeyPressedArgs :974
 // {
 static void KeyPressedArgs_build(uType* type)
 {
@@ -2827,19 +3099,19 @@ static void KeyPressedArgs_build(uType* type)
     return type;
 }
 
-// public KeyPressedArgs(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) :800
+// public KeyPressedArgs(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) :976
 void KeyPressedArgs__ctor_3_fn(KeyPressedArgs* __this, int* key, bool* isMetaKeyPressed, bool* isControlKeyPressed, bool* isShiftKeyPressed, bool* isAltKeyPressed, ::g::Fuse::Visual* visual)
 {
     __this->ctor_3(*key, *isMetaKeyPressed, *isControlKeyPressed, *isShiftKeyPressed, *isAltKeyPressed, visual);
 }
 
-// public KeyPressedArgs New(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) :800
+// public KeyPressedArgs New(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) :976
 void KeyPressedArgs__New3_fn(int* key, bool* isMetaKeyPressed, bool* isControlKeyPressed, bool* isShiftKeyPressed, bool* isAltKeyPressed, ::g::Fuse::Visual* visual, KeyPressedArgs** __retval)
 {
     *__retval = KeyPressedArgs::New3(*key, *isMetaKeyPressed, *isControlKeyPressed, *isShiftKeyPressed, *isAltKeyPressed, visual);
 }
 
-// public KeyPressedArgs(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) [instance] :800
+// public KeyPressedArgs(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) [instance] :976
 void KeyPressedArgs::ctor_3(int key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, ::g::Fuse::Visual* visual)
 {
     uStackFrame __("Fuse.Input.KeyPressedArgs", ".ctor(Uno.Platform.Key,bool,bool,bool,bool,Fuse.Visual)");
@@ -2850,7 +3122,7 @@ void KeyPressedArgs::ctor_3(int key, bool isMetaKeyPressed, bool isControlKeyPre
     IsAltKeyPressed(isAltKeyPressed);
 }
 
-// public KeyPressedArgs New(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) [static] :800
+// public KeyPressedArgs New(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) [static] :976
 KeyPressedArgs* KeyPressedArgs::New3(int key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, ::g::Fuse::Visual* visual)
 {
     KeyPressedArgs* obj1 = (KeyPressedArgs*)uNew(KeyPressedArgs_typeof());
@@ -2859,10 +3131,10 @@ KeyPressedArgs* KeyPressedArgs::New3(int key, bool isMetaKeyPressed, bool isCont
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public delegate void KeyPressedHandler(object sender, Fuse.Input.KeyPressedArgs args) :809
+// public delegate void KeyPressedHandler(object sender, Fuse.Input.KeyPressedArgs args) :985
 uDelegateType* KeyPressedHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -2875,10 +3147,10 @@ uDelegateType* KeyPressedHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// internal sealed class KeyReleased :832
+// internal sealed class KeyReleased :1008
 // {
 static void KeyReleased_build(uType* type)
 {
@@ -2903,32 +3175,32 @@ static void KeyReleased_build(uType* type)
     return type;
 }
 
-// public generated KeyReleased() :832
+// public generated KeyReleased() :1008
 void KeyReleased__ctor_1_fn(KeyReleased* __this)
 {
     __this->ctor_1();
 }
 
-// protected override sealed void Invoke(Fuse.Input.KeyReleasedHandler handler, object sender, Fuse.Input.KeyReleasedArgs args) :834
+// protected override sealed void Invoke(Fuse.Input.KeyReleasedHandler handler, object sender, Fuse.Input.KeyReleasedArgs args) :1010
 void KeyReleased__Invoke_fn(KeyReleased* __this, uDelegate* handler, uObject* sender, ::g::Fuse::Input::KeyReleasedArgs* args)
 {
     uStackFrame __("Fuse.Input.KeyReleased", "Invoke(Fuse.Input.KeyReleasedHandler,object,Fuse.Input.KeyReleasedArgs)");
     uPtr(handler)->Invoke(2, sender, args);
 }
 
-// public generated KeyReleased New() :832
+// public generated KeyReleased New() :1008
 void KeyReleased__New1_fn(KeyReleased** __retval)
 {
     *__retval = KeyReleased::New1();
 }
 
-// public generated KeyReleased() [instance] :832
+// public generated KeyReleased() [instance] :1008
 void KeyReleased::ctor_1()
 {
     ctor_();
 }
 
-// public generated KeyReleased New() [static] :832
+// public generated KeyReleased New() [static] :1008
 KeyReleased* KeyReleased::New1()
 {
     KeyReleased* obj1 = (KeyReleased*)uNew(KeyReleased_typeof());
@@ -2937,10 +3209,10 @@ KeyReleased* KeyReleased::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public sealed class KeyReleasedArgs :819
+// public sealed class KeyReleasedArgs :995
 // {
 static void KeyReleasedArgs_build(uType* type)
 {
@@ -2968,19 +3240,19 @@ static void KeyReleasedArgs_build(uType* type)
     return type;
 }
 
-// public KeyReleasedArgs(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) :821
+// public KeyReleasedArgs(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) :997
 void KeyReleasedArgs__ctor_3_fn(KeyReleasedArgs* __this, int* key, bool* isMetaKeyPressed, bool* isControlKeyPressed, bool* isShiftKeyPressed, bool* isAltKeyPressed, ::g::Fuse::Visual* visual)
 {
     __this->ctor_3(*key, *isMetaKeyPressed, *isControlKeyPressed, *isShiftKeyPressed, *isAltKeyPressed, visual);
 }
 
-// public KeyReleasedArgs New(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) :821
+// public KeyReleasedArgs New(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) :997
 void KeyReleasedArgs__New3_fn(int* key, bool* isMetaKeyPressed, bool* isControlKeyPressed, bool* isShiftKeyPressed, bool* isAltKeyPressed, ::g::Fuse::Visual* visual, KeyReleasedArgs** __retval)
 {
     *__retval = KeyReleasedArgs::New3(*key, *isMetaKeyPressed, *isControlKeyPressed, *isShiftKeyPressed, *isAltKeyPressed, visual);
 }
 
-// public KeyReleasedArgs(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) [instance] :821
+// public KeyReleasedArgs(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) [instance] :997
 void KeyReleasedArgs::ctor_3(int key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, ::g::Fuse::Visual* visual)
 {
     uStackFrame __("Fuse.Input.KeyReleasedArgs", ".ctor(Uno.Platform.Key,bool,bool,bool,bool,Fuse.Visual)");
@@ -2991,7 +3263,7 @@ void KeyReleasedArgs::ctor_3(int key, bool isMetaKeyPressed, bool isControlKeyPr
     IsAltKeyPressed(isAltKeyPressed);
 }
 
-// public KeyReleasedArgs New(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) [static] :821
+// public KeyReleasedArgs New(Uno.Platform.Key key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, Fuse.Visual visual) [static] :997
 KeyReleasedArgs* KeyReleasedArgs::New3(int key, bool isMetaKeyPressed, bool isControlKeyPressed, bool isShiftKeyPressed, bool isAltKeyPressed, ::g::Fuse::Visual* visual)
 {
     KeyReleasedArgs* obj1 = (KeyReleasedArgs*)uNew(KeyReleasedArgs_typeof());
@@ -3000,10 +3272,10 @@ KeyReleasedArgs* KeyReleasedArgs::New3(int key, bool isMetaKeyPressed, bool isCo
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public delegate void KeyReleasedHandler(object sender, Fuse.Input.KeyReleasedArgs args) :830
+// public delegate void KeyReleasedHandler(object sender, Fuse.Input.KeyReleasedArgs args) :1006
 uDelegateType* KeyReleasedHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -3016,10 +3288,10 @@ uDelegateType* KeyReleasedHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// private sealed class Pointer.PELHolder :1538
+// private sealed class Pointer.PELHolder :1740
 // {
 static void Pointer__PELHolder_build(uType* type)
 {
@@ -3043,24 +3315,24 @@ uType* Pointer__PELHolder_typeof()
     return type;
 }
 
-// public generated PELHolder() :1538
+// public generated PELHolder() :1740
 void Pointer__PELHolder__ctor__fn(Pointer__PELHolder* __this)
 {
     __this->ctor_();
 }
 
-// public generated PELHolder New() :1538
+// public generated PELHolder New() :1740
 void Pointer__PELHolder__New1_fn(Pointer__PELHolder** __retval)
 {
     *__retval = Pointer__PELHolder::New1();
 }
 
-// public generated PELHolder() [instance] :1538
+// public generated PELHolder() [instance] :1740
 void Pointer__PELHolder::ctor_()
 {
 }
 
-// public generated PELHolder New() [static] :1538
+// public generated PELHolder New() [static] :1740
 Pointer__PELHolder* Pointer__PELHolder::New1()
 {
     Pointer__PELHolder* obj1 = (Pointer__PELHolder*)uNew(Pointer__PELHolder_typeof());
@@ -3069,10 +3341,10 @@ Pointer__PELHolder* Pointer__PELHolder::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// private enum Pointer.PELStatus :1532
+// private enum Pointer.PELStatus :1734
 uEnumType* Pointer__PELStatus_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -3086,12 +3358,12 @@ uEnumType* Pointer__PELStatus_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public partial static class Pointer :999
+// public partial static class Pointer :1201
 // {
-// static Pointer() :1003
+// static Pointer() :1205
 static void Pointer__cctor__fn(uType* __type)
 {
     Pointer::_pressed_ = ::g::Fuse::Input::PointerPressed::New1();
@@ -3100,56 +3372,57 @@ static void Pointer__cctor__fn(uType* __type)
     Pointer::_entered_ = ::g::Fuse::Input::PointerEntered::New1();
     Pointer::_left_ = ::g::Fuse::Input::PointerLeft::New1();
     Pointer::_wheelMoved_ = ::g::Fuse::Input::PointerWheelMoved::New1();
-    Pointer::_pointersDown_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[20/*Uno.Collections.Dictionary<int, Fuse.Input.Pointer.PointerRecord>*/]));
-    Pointer::_captures_ = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[21/*Uno.Collections.List<Fuse.Input.Capture>*/]));
+    Pointer::_pointersDown_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[22/*Uno.Collections.Dictionary<int, Fuse.Input.Pointer.PointerRecord>*/]));
+    Pointer::_captures_ = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[23/*Uno.Collections.List<Fuse.Input.Capture>*/]));
     Pointer::_captureLockImpl_ = Pointer__CaptureLockImpl::New1();
-    Pointer::_lastHitVisuals_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[22/*Uno.Collections.Dictionary<int, Uno.Collections.List<Fuse.Input.Pointer.PELHolder>>*/]));
+    Pointer::_lastHitVisuals_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[24/*Uno.Collections.Dictionary<int, Uno.Collections.List<Fuse.Input.Pointer.PELHolder>>*/]));
     Pointer::EventResponder((uObject*)Pointer__DefaultPointerEventResponder::New1());
 }
 
 static void Pointer_build(uType* type)
 {
-    ::STRINGS[11] = uString::Const("Attempting to extend unknown capture");
-    ::STRINGS[6] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno");
-    ::STRINGS[12] = uString::Const("ExtendCapture");
-    ::STRINGS[13] = uString::Const("Attempting to modify an unknown capture");
-    ::STRINGS[14] = uString::Const("ModifyCapture");
-    ::STRINGS[15] = uString::Const("Capture requires lostCallback Action");
-    ::STRINGS[16] = uString::Const("Capture requires identity object");
-    ::STRINGS[17] = uString::Const("Capture requires visual");
-    ::STRINGS[18] = uString::Const("Capture can only be done on rooted enabled node");
-    ::TYPES[20] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::Int_typeof(), Pointer__PointerRecord_typeof(), NULL);
-    ::TYPES[21] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Input::Capture_typeof(), NULL);
-    ::TYPES[22] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::Int_typeof(), ::g::Uno::Collections::List_typeof()->MakeType(Pointer__PELHolder_typeof(), NULL), NULL);
-    ::TYPES[23] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Visual_typeof(), NULL);
-    ::TYPES[24] = ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Visual_typeof(), NULL);
-    ::TYPES[25] = ::g::Uno::IDisposable_typeof();
-    ::TYPES[26] = ::g::Uno::Collections::List_typeof()->MakeType(Pointer__PELHolder_typeof(), NULL);
-    ::TYPES[27] = ::g::Uno::Collections::Dictionary__Enumerator_typeof()->MakeType(::g::Uno::Int_typeof(), Pointer__PointerRecord_typeof(), NULL);
-    ::TYPES[28] = ::g::Uno::Collections::KeyValuePair_typeof()->MakeType(::g::Uno::Int_typeof(), Pointer__PointerRecord_typeof(), NULL);
+    ::STRINGS[12] = uString::Const("Attempting to extend unknown capture");
+    ::STRINGS[6] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno");
+    ::STRINGS[13] = uString::Const("ExtendCapture");
+    ::STRINGS[14] = uString::Const("Attempting to modify an unknown capture");
+    ::STRINGS[15] = uString::Const("ModifyCapture");
+    ::STRINGS[16] = uString::Const("Capture requires lostCallback Action");
+    ::STRINGS[17] = uString::Const("Capture requires identity object");
+    ::STRINGS[18] = uString::Const("Capture requires visual");
+    ::STRINGS[19] = uString::Const("Capture can only be done on rooted enabled node");
+    ::STRINGS[20] = uString::Const("Cannot modify the Visual of a capture");
+    ::TYPES[22] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::Int_typeof(), Pointer__PointerRecord_typeof(), NULL);
+    ::TYPES[23] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Input::Capture_typeof(), NULL);
+    ::TYPES[24] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::Int_typeof(), ::g::Uno::Collections::List_typeof()->MakeType(Pointer__PELHolder_typeof(), NULL), NULL);
+    ::TYPES[25] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Visual_typeof(), NULL);
+    ::TYPES[26] = ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Visual_typeof(), NULL);
+    ::TYPES[27] = ::g::Uno::IDisposable_typeof();
+    ::TYPES[28] = ::g::Uno::Collections::List_typeof()->MakeType(Pointer__PELHolder_typeof(), NULL);
+    ::TYPES[29] = ::g::Uno::Collections::Dictionary__Enumerator_typeof()->MakeType(::g::Uno::Int_typeof(), Pointer__PointerRecord_typeof(), NULL);
+    ::TYPES[30] = ::g::Uno::Collections::KeyValuePair_typeof()->MakeType(::g::Uno::Int_typeof(), Pointer__PointerRecord_typeof(), NULL);
     ::TYPES[2] = ::g::Fuse::Visual_typeof();
-    ::TYPES[29] = ::g::Fuse::Input::IPointerEventResponder_typeof();
-    ::TYPES[30] = ::g::Uno::Float2_typeof()->Array();
+    ::TYPES[31] = ::g::Fuse::Input::IPointerEventResponder_typeof();
+    ::TYPES[32] = ::g::Uno::Float2_typeof()->Array();
     type->SetFields(0,
         Pointer__CaptureLockImpl_typeof(), (uintptr_t)&::g::Fuse::Input::Pointer::_captureLockImpl_, uFieldFlagsStatic,
-        ::TYPES[21/*Uno.Collections.List<Fuse.Input.Capture>*/], (uintptr_t)&::g::Fuse::Input::Pointer::_captures_, uFieldFlagsStatic,
+        ::TYPES[23/*Uno.Collections.List<Fuse.Input.Capture>*/], (uintptr_t)&::g::Fuse::Input::Pointer::_captures_, uFieldFlagsStatic,
         ::g::Fuse::Input::PointerEntered_typeof(), (uintptr_t)&::g::Fuse::Input::Pointer::_entered_, uFieldFlagsStatic,
-        ::TYPES[22/*Uno.Collections.Dictionary<int, Uno.Collections.List<Fuse.Input.Pointer.PELHolder>>*/], (uintptr_t)&::g::Fuse::Input::Pointer::_lastHitVisuals_, uFieldFlagsStatic,
+        ::TYPES[24/*Uno.Collections.Dictionary<int, Uno.Collections.List<Fuse.Input.Pointer.PELHolder>>*/], (uintptr_t)&::g::Fuse::Input::Pointer::_lastHitVisuals_, uFieldFlagsStatic,
         ::g::Fuse::Input::PointerLeft_typeof(), (uintptr_t)&::g::Fuse::Input::Pointer::_left_, uFieldFlagsStatic,
         ::g::Fuse::Input::PointerMoved_typeof(), (uintptr_t)&::g::Fuse::Input::Pointer::_moved_, uFieldFlagsStatic,
-        ::TYPES[20/*Uno.Collections.Dictionary<int, Fuse.Input.Pointer.PointerRecord>*/], (uintptr_t)&::g::Fuse::Input::Pointer::_pointersDown_, uFieldFlagsStatic,
+        ::TYPES[22/*Uno.Collections.Dictionary<int, Fuse.Input.Pointer.PointerRecord>*/], (uintptr_t)&::g::Fuse::Input::Pointer::_pointersDown_, uFieldFlagsStatic,
         ::g::Fuse::Input::PointerPressed_typeof(), (uintptr_t)&::g::Fuse::Input::Pointer::_pressed_, uFieldFlagsStatic,
         ::g::Fuse::Input::PointerReleased_typeof(), (uintptr_t)&::g::Fuse::Input::Pointer::_released_, uFieldFlagsStatic,
         ::g::Fuse::Input::PointerWheelMoved_typeof(), (uintptr_t)&::g::Fuse::Input::Pointer::_wheelMoved_, uFieldFlagsStatic,
         ::g::Uno::Float2_typeof(), (uintptr_t)&::g::Fuse::Input::Pointer::_Coord_, uFieldFlagsStatic,
-        ::TYPES[29/*Fuse.Input.IPointerEventResponder*/], (uintptr_t)&::g::Fuse::Input::Pointer::_EventResponder_, uFieldFlagsStatic);
+        ::TYPES[31/*Fuse.Input.IPointerEventResponder*/], (uintptr_t)&::g::Fuse::Input::Pointer::_EventResponder_, uFieldFlagsStatic);
     type->Reflection.SetFunctions(20,
         new uFunction("AddHandlers", NULL, (void*)Pointer__AddHandlers_fn, 0, true, uVoid_typeof(), 7, ::TYPES[2/*Fuse.Visual*/], ::g::Fuse::Input::PointerPressedHandler_typeof(), ::g::Fuse::Input::PointerMovedHandler_typeof(), ::g::Fuse::Input::PointerReleasedHandler_typeof(), ::g::Fuse::Input::PointerEnteredHandler_typeof(), ::g::Fuse::Input::PointerLeftHandler_typeof(), ::g::Fuse::Input::PointerWheelMovedHandler_typeof()),
         new uFunction("get_Coord", NULL, (void*)Pointer__get_Coord_fn, 0, true, ::g::Uno::Float2_typeof(), 0),
-        new uFunction("get_Coords", NULL, (void*)Pointer__get_Coords_fn, 0, true, ::TYPES[30/*float2[]*/], 0),
+        new uFunction("get_Coords", NULL, (void*)Pointer__get_Coords_fn, 0, true, ::TYPES[32/*float2[]*/], 0),
         new uFunction("get_Entered", NULL, (void*)Pointer__get_Entered_fn, 0, true, ::g::Fuse::VisualEvent_typeof()->MakeType(::g::Fuse::Input::PointerEnteredHandler_typeof(), ::g::Fuse::Input::PointerEnteredArgs_typeof(), NULL), 0),
-        new uFunction("get_EventResponder", NULL, (void*)Pointer__get_EventResponder_fn, 0, true, ::TYPES[29/*Fuse.Input.IPointerEventResponder*/], 0),
-        new uFunction("set_EventResponder", NULL, (void*)Pointer__set_EventResponder_fn, 0, true, uVoid_typeof(), 1, ::TYPES[29/*Fuse.Input.IPointerEventResponder*/]),
+        new uFunction("get_EventResponder", NULL, (void*)Pointer__get_EventResponder_fn, 0, true, ::TYPES[31/*Fuse.Input.IPointerEventResponder*/], 0),
+        new uFunction("set_EventResponder", NULL, (void*)Pointer__set_EventResponder_fn, 0, true, uVoid_typeof(), 1, ::TYPES[31/*Fuse.Input.IPointerEventResponder*/]),
         new uFunction("ExtendCapture", NULL, (void*)Pointer__ExtendCapture_fn, 0, true, ::g::Uno::Bool_typeof(), 2, uObject_typeof(), ::g::Uno::Int_typeof()),
         new uFunction("IsCaptured", NULL, (void*)Pointer__IsCaptured_fn, 0, true, ::g::Uno::Bool_typeof(), 3, ::g::Fuse::Input::CaptureType_typeof(), ::g::Uno::Int_typeof(), uObject_typeof()),
         new uFunction("IsCaptured", NULL, (void*)Pointer__IsCaptured1_fn, 0, true, ::g::Uno::Bool_typeof(), 2, ::g::Uno::Int_typeof(), uObject_typeof()),
@@ -3180,229 +3453,229 @@ uClassType* Pointer_typeof()
     return type;
 }
 
-// public static void AddHandlers(Fuse.Visual node, [Fuse.Input.PointerPressedHandler pressed], [Fuse.Input.PointerMovedHandler moved], [Fuse.Input.PointerReleasedHandler released], [Fuse.Input.PointerEnteredHandler entered], [Fuse.Input.PointerLeftHandler left], [Fuse.Input.PointerWheelMovedHandler wheelMoved]) :1022
+// public static void AddHandlers(Fuse.Visual node, [Fuse.Input.PointerPressedHandler pressed], [Fuse.Input.PointerMovedHandler moved], [Fuse.Input.PointerReleasedHandler released], [Fuse.Input.PointerEnteredHandler entered], [Fuse.Input.PointerLeftHandler left], [Fuse.Input.PointerWheelMovedHandler wheelMoved]) :1224
 void Pointer__AddHandlers_fn(::g::Fuse::Visual* node, uDelegate* pressed, uDelegate* moved, uDelegate* released, uDelegate* entered, uDelegate* left, uDelegate* wheelMoved)
 {
     Pointer::AddHandlers(node, pressed, moved, released, entered, left, wheelMoved);
 }
 
-// private static Fuse.Input.Pointer.CaptureLockImpl CaptureLock() :1123
+// private static Fuse.Input.Pointer.CaptureLockImpl CaptureLock() :1325
 void Pointer__CaptureLock_fn(Pointer__CaptureLockImpl** __retval)
 {
     *__retval = Pointer::CaptureLock();
 }
 
-// private static void CheckFocus(Fuse.Input.PointerPressedArgs args, Uno.Collections.IList<Fuse.Visual> nodes) :1562
+// private static void CheckFocus(Fuse.Input.PointerPressedArgs args, Uno.Collections.IList<Fuse.Visual> nodes) :1764
 void Pointer__CheckFocus_fn(::g::Fuse::Input::PointerPressedArgs* args, uObject* nodes)
 {
     Pointer::CheckFocus(args, nodes);
 }
 
-// public static generated float2 get_Coord() :1090
+// public static generated float2 get_Coord() :1292
 void Pointer__get_Coord_fn(::g::Uno::Float2* __retval)
 {
     *__retval = Pointer::Coord();
 }
 
-// private static generated void set_Coord(float2 value) :1090
+// private static generated void set_Coord(float2 value) :1292
 void Pointer__set_Coord_fn(::g::Uno::Float2* value)
 {
     Pointer::Coord(*value);
 }
 
-// public static float2[] get_Coords() :1058
+// public static float2[] get_Coords() :1260
 void Pointer__get_Coords_fn(uArray** __retval)
 {
     *__retval = Pointer::Coords();
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.PointerEnteredHandler, Fuse.Input.PointerEnteredArgs> get_Entered() :1018
+// public static Fuse.VisualEvent<Fuse.Input.PointerEnteredHandler, Fuse.Input.PointerEnteredArgs> get_Entered() :1220
 void Pointer__get_Entered_fn(::g::Fuse::VisualEvent** __retval)
 {
     *__retval = Pointer::Entered();
 }
 
-// public static generated Fuse.Input.IPointerEventResponder get_EventResponder() :1001
+// public static generated Fuse.Input.IPointerEventResponder get_EventResponder() :1203
 void Pointer__get_EventResponder_fn(uObject** __retval)
 {
     *__retval = Pointer::EventResponder();
 }
 
-// public static generated void set_EventResponder(Fuse.Input.IPointerEventResponder value) :1001
+// public static generated void set_EventResponder(Fuse.Input.IPointerEventResponder value) :1203
 void Pointer__set_EventResponder_fn(uObject* value)
 {
     Pointer::EventResponder(value);
 }
 
-// public static bool ExtendCapture(object identity, int pointIndex) :1378
+// public static bool ExtendCapture(object identity, int pointIndex) :1580
 void Pointer__ExtendCapture_fn(uObject* identity, int* pointIndex, bool* __retval)
 {
     *__retval = Pointer::ExtendCapture(identity, *pointIndex);
 }
 
-// internal static Fuse.Input.Capture GetCapture(object identity) :1158
+// internal static Fuse.Input.Capture GetCapture(object identity) :1361
 void Pointer__GetCapture_fn(uObject* identity, ::g::Fuse::Input::Capture** __retval)
 {
     *__retval = Pointer::GetCapture(identity);
 }
 
-// private static Fuse.Input.Capture GetFirstCapture(Fuse.Input.CaptureType type, int pointIndex, object identity) :1188
+// private static Fuse.Input.Capture GetFirstCapture(Fuse.Input.CaptureType type, int pointIndex, object identity) :1391
 void Pointer__GetFirstCapture_fn(int* type, int* pointIndex, uObject* identity, ::g::Fuse::Input::Capture** __retval)
 {
     *__retval = Pointer::GetFirstCapture(*type, *pointIndex, identity);
 }
 
-// private static Uno.Collections.List<Fuse.Input.Pointer.PELHolder> GetLastHitList(int pointIndex) :1547
+// private static Uno.Collections.List<Fuse.Input.Pointer.PELHolder> GetLastHitList(int pointIndex) :1749
 void Pointer__GetLastHitList_fn(int* pointIndex, ::g::Uno::Collections::List** __retval)
 {
     *__retval = Pointer::GetLastHitList(*pointIndex);
 }
 
-// internal static Fuse.Input.Capture GetPrimaryCapture(int pointIndex) :1128
+// internal static Fuse.Input.Capture GetPrimaryCapture(int pointIndex) :1330
 void Pointer__GetPrimaryCapture_fn(int* pointIndex, ::g::Fuse::Input::Capture** __retval)
 {
     *__retval = Pointer::GetPrimaryCapture(*pointIndex);
 }
 
-// private static bool IsCaptureAllowed(Fuse.Input.CaptureType type, Fuse.Visual visual, int pointIndex, object identity) :1210
+// private static bool IsCaptureAllowed(Fuse.Input.CaptureType type, Fuse.Visual visual, int pointIndex, object identity) :1413
 void Pointer__IsCaptureAllowed_fn(int* type, ::g::Fuse::Visual* visual, int* pointIndex, uObject* identity, bool* __retval)
 {
     *__retval = Pointer::IsCaptureAllowed(*type, visual, *pointIndex, identity);
 }
 
-// private static bool IsCaptureAllowedAgainst(Fuse.Input.Capture current, Fuse.Input.CaptureType type, Fuse.Visual visual, int pointIndex, object identity) :1227
+// private static bool IsCaptureAllowedAgainst(Fuse.Input.Capture current, Fuse.Input.CaptureType type, Fuse.Visual visual, int pointIndex, object identity) :1430
 void Pointer__IsCaptureAllowedAgainst_fn(::g::Fuse::Input::Capture* current, int* type, ::g::Fuse::Visual* visual, int* pointIndex, uObject* identity, bool* __retval)
 {
     *__retval = Pointer::IsCaptureAllowedAgainst(current, *type, visual, *pointIndex, identity);
 }
 
-// public static bool IsCaptured(Fuse.Input.CaptureType type, int pointIndex, object identity) :1183
+// public static bool IsCaptured(Fuse.Input.CaptureType type, int pointIndex, object identity) :1386
 void Pointer__IsCaptured_fn(int* type, int* pointIndex, uObject* identity, bool* __retval)
 {
     *__retval = Pointer::IsCaptured(*type, *pointIndex, identity);
 }
 
-// public static bool IsCaptured(int pointIndex, object identity) :1178
+// public static bool IsCaptured(int pointIndex, object identity) :1381
 void Pointer__IsCaptured1_fn(int* pointIndex, uObject* identity, bool* __retval)
 {
     *__retval = Pointer::IsCaptured1(*pointIndex, identity);
 }
 
-// public static bool IsPressed() :1079
+// public static bool IsPressed() :1281
 void Pointer__IsPressed_fn(bool* __retval)
 {
     *__retval = Pointer::IsPressed();
 }
 
-// public static bool IsPressed(int pointIndex) :1084
+// public static bool IsPressed(int pointIndex) :1286
 void Pointer__IsPressed1_fn(int* pointIndex, bool* __retval)
 {
     *__retval = Pointer::IsPressed1(*pointIndex);
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.PointerLeftHandler, Fuse.Input.PointerLeftArgs> get_Left() :1019
+// public static Fuse.VisualEvent<Fuse.Input.PointerLeftHandler, Fuse.Input.PointerLeftArgs> get_Left() :1221
 void Pointer__get_Left_fn(::g::Fuse::VisualEvent** __retval)
 {
     *__retval = Pointer::Left();
 }
 
-// internal static void LoseCapture(int pointIndex) :1289
+// internal static void LoseCapture(int pointIndex) :1492
 void Pointer__LoseCapture_fn(int* pointIndex)
 {
     Pointer::LoseCapture(*pointIndex);
 }
 
-// private static void LoseSoftCapturesTo(Fuse.Input.Capture to) :1245
+// private static void LoseSoftCapturesTo(Fuse.Input.Capture to) :1448
 void Pointer__LoseSoftCapturesTo_fn(::g::Fuse::Input::Capture* to)
 {
     Pointer::LoseSoftCapturesTo(to);
 }
 
-// private static void MarkAncestorHits(Fuse.Visual hitObject, Uno.Collections.List<Fuse.Input.Pointer.PELHolder> list) :1502
+// private static void MarkAncestorHits(Fuse.Visual hitObject, Uno.Collections.List<Fuse.Input.Pointer.PELHolder> list) :1704
 void Pointer__MarkAncestorHits_fn(::g::Fuse::Visual* hitObject, ::g::Uno::Collections::List* list)
 {
     Pointer::MarkAncestorHits(hitObject, list);
 }
 
-// public static bool ModifyCapture(object identity, Fuse.Input.CaptureType type) :1356
+// public static bool ModifyCapture(object identity, Fuse.Input.CaptureType type) :1558
 void Pointer__ModifyCapture_fn(uObject* identity, int* type, bool* __retval)
 {
     *__retval = Pointer::ModifyCapture(identity, *type);
 }
 
-// public static bool ModifyCapture(object identity, Fuse.Visual visual, Uno.Action lostCallback, Fuse.Input.CaptureType type, int pointIndex) :1312
+// public static bool ModifyCapture(object identity, Fuse.Visual visual, Uno.Action lostCallback, Fuse.Input.CaptureType type, int pointIndex) :1515
 void Pointer__ModifyCapture1_fn(uObject* identity, ::g::Fuse::Visual* visual, uDelegate* lostCallback, int* type, int* pointIndex, bool* __retval)
 {
     *__retval = Pointer::ModifyCapture1(identity, visual, lostCallback, *type, *pointIndex);
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.PointerMovedHandler, Fuse.Input.PointerMovedArgs> get_Moved() :1016
+// public static Fuse.VisualEvent<Fuse.Input.PointerMovedHandler, Fuse.Input.PointerMovedArgs> get_Moved() :1218
 void Pointer__get_Moved_fn(::g::Fuse::VisualEvent** __retval)
 {
     *__retval = Pointer::Moved();
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.PointerPressedHandler, Fuse.Input.PointerPressedArgs> get_Pressed() :1015
+// public static Fuse.VisualEvent<Fuse.Input.PointerPressedHandler, Fuse.Input.PointerPressedArgs> get_Pressed() :1217
 void Pointer__get_Pressed_fn(::g::Fuse::VisualEvent** __retval)
 {
     *__retval = Pointer::Pressed();
 }
 
-// private static void ProcessPointerEnterLeave(Fuse.HitTestResult result, Fuse.Input.PointerEventData args) :1478
+// private static void ProcessPointerEnterLeave(Fuse.HitTestResult result, Fuse.Input.PointerEventData args) :1680
 void Pointer__ProcessPointerEnterLeave_fn(::g::Fuse::HitTestResult* result, ::g::Fuse::Input::PointerEventData* args)
 {
     Pointer::ProcessPointerEnterLeave(result, args);
 }
 
-// internal static bool RaiseMoved(Fuse.Visual root, Fuse.Input.PointerEventData data) :1406
+// internal static bool RaiseMoved(Fuse.Visual root, Fuse.Input.PointerEventData data) :1608
 void Pointer__RaiseMoved_fn(::g::Fuse::Visual* root, ::g::Fuse::Input::PointerEventData* data, bool* __retval)
 {
     *__retval = Pointer::RaiseMoved(root, data);
 }
 
-// internal static bool RaisePressed(Fuse.Visual root, Fuse.Input.PointerEventData data) :1398
+// internal static bool RaisePressed(Fuse.Visual root, Fuse.Input.PointerEventData data) :1600
 void Pointer__RaisePressed_fn(::g::Fuse::Visual* root, ::g::Fuse::Input::PointerEventData* data, bool* __retval)
 {
     *__retval = Pointer::RaisePressed(root, data);
 }
 
-// internal static bool RaiseReleased(Fuse.Visual root, Fuse.Input.PointerEventData data) :1414
+// internal static bool RaiseReleased(Fuse.Visual root, Fuse.Input.PointerEventData data) :1616
 void Pointer__RaiseReleased_fn(::g::Fuse::Visual* root, ::g::Fuse::Input::PointerEventData* data, bool* __retval)
 {
     *__retval = Pointer::RaiseReleased(root, data);
 }
 
-// public static void ReleaseCapture(object identity) :1274
+// public static void ReleaseCapture(object identity) :1477
 void Pointer__ReleaseCapture_fn(uObject* identity)
 {
     Pointer::ReleaseCapture(identity);
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.PointerReleasedHandler, Fuse.Input.PointerReleasedArgs> get_Released() :1017
+// public static Fuse.VisualEvent<Fuse.Input.PointerReleasedHandler, Fuse.Input.PointerReleasedArgs> get_Released() :1219
 void Pointer__get_Released_fn(::g::Fuse::VisualEvent** __retval)
 {
     *__retval = Pointer::Released();
 }
 
-// public static void RemoveHandlers(Fuse.Visual node, [Fuse.Input.PointerPressedHandler pressed], [Fuse.Input.PointerMovedHandler moved], [Fuse.Input.PointerReleasedHandler released], [Fuse.Input.PointerEnteredHandler entered], [Fuse.Input.PointerLeftHandler left], [Fuse.Input.PointerWheelMovedHandler wheelMoved]) :1038
+// public static void RemoveHandlers(Fuse.Visual node, [Fuse.Input.PointerPressedHandler pressed], [Fuse.Input.PointerMovedHandler moved], [Fuse.Input.PointerReleasedHandler released], [Fuse.Input.PointerEnteredHandler entered], [Fuse.Input.PointerLeftHandler left], [Fuse.Input.PointerWheelMovedHandler wheelMoved]) :1240
 void Pointer__RemoveHandlers_fn(::g::Fuse::Visual* node, uDelegate* pressed, uDelegate* moved, uDelegate* released, uDelegate* entered, uDelegate* left, uDelegate* wheelMoved)
 {
     Pointer::RemoveHandlers(node, pressed, moved, released, entered, left, wheelMoved);
 }
 
-// private static Fuse.Visual RoutePointerEvent(Fuse.Input.PointerEventData plainEvent, Fuse.Visual root) :1440
+// private static Fuse.Visual RoutePointerEvent(Fuse.Input.PointerEventData plainEvent, Fuse.Visual root) :1642
 void Pointer__RoutePointerEvent_fn(::g::Fuse::Input::PointerEventData* plainEvent, ::g::Fuse::Visual* root, ::g::Fuse::Visual** __retval)
 {
     *__retval = Pointer::RoutePointerEvent(plainEvent, root);
 }
 
-// private static Fuse.Visual RouteToHit(Fuse.Input.PointerEventData args, Fuse.Visual root) :1462
+// private static Fuse.Visual RouteToHit(Fuse.Input.PointerEventData args, Fuse.Visual root) :1664
 void Pointer__RouteToHit_fn(::g::Fuse::Input::PointerEventData* args, ::g::Fuse::Visual* root, ::g::Fuse::Visual** __retval)
 {
     *__retval = Pointer::RouteToHit(args, root);
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.PointerWheelMovedHandler, Fuse.Input.PointerWheelMovedArgs> get_WheelMoved() :1020
+// public static Fuse.VisualEvent<Fuse.Input.PointerWheelMovedHandler, Fuse.Input.PointerWheelMovedArgs> get_WheelMoved() :1222
 void Pointer__get_WheelMoved_fn(::g::Fuse::VisualEvent** __retval)
 {
     *__retval = Pointer::WheelMoved();
@@ -3421,7 +3694,7 @@ uSStrong< ::g::Fuse::Input::PointerWheelMoved*> Pointer::_wheelMoved_;
 ::g::Uno::Float2 Pointer::_Coord_;
 uSStrong<uObject*> Pointer::_EventResponder_;
 
-// public static void AddHandlers(Fuse.Visual node, [Fuse.Input.PointerPressedHandler pressed], [Fuse.Input.PointerMovedHandler moved], [Fuse.Input.PointerReleasedHandler released], [Fuse.Input.PointerEnteredHandler entered], [Fuse.Input.PointerLeftHandler left], [Fuse.Input.PointerWheelMovedHandler wheelMoved]) [static] :1022
+// public static void AddHandlers(Fuse.Visual node, [Fuse.Input.PointerPressedHandler pressed], [Fuse.Input.PointerMovedHandler moved], [Fuse.Input.PointerReleasedHandler released], [Fuse.Input.PointerEnteredHandler entered], [Fuse.Input.PointerLeftHandler left], [Fuse.Input.PointerWheelMovedHandler wheelMoved]) [static] :1224
 void Pointer::AddHandlers(::g::Fuse::Visual* node, uDelegate* pressed, uDelegate* moved, uDelegate* released, uDelegate* entered, uDelegate* left, uDelegate* wheelMoved)
 {
     uStackFrame __("Fuse.Input.Pointer", "AddHandlers(Fuse.Visual,[Fuse.Input.PointerPressedHandler],[Fuse.Input.PointerMovedHandler],[Fuse.Input.PointerReleasedHandler],[Fuse.Input.PointerEnteredHandler],[Fuse.Input.PointerLeftHandler],[Fuse.Input.PointerWheelMovedHandler])");
@@ -3446,14 +3719,14 @@ void Pointer::AddHandlers(::g::Fuse::Visual* node, uDelegate* pressed, uDelegate
         ::g::Fuse::VisualEvent__AddHandler_fn(uPtr(Pointer::WheelMoved()), node, wheelMoved);
 }
 
-// private static Fuse.Input.Pointer.CaptureLockImpl CaptureLock() [static] :1123
+// private static Fuse.Input.Pointer.CaptureLockImpl CaptureLock() [static] :1325
 Pointer__CaptureLockImpl* Pointer::CaptureLock()
 {
     Pointer_typeof()->Init();
     return Pointer::_captureLockImpl();
 }
 
-// private static void CheckFocus(Fuse.Input.PointerPressedArgs args, Uno.Collections.IList<Fuse.Visual> nodes) [static] :1562
+// private static void CheckFocus(Fuse.Input.PointerPressedArgs args, Uno.Collections.IList<Fuse.Visual> nodes) [static] :1764
 void Pointer::CheckFocus(::g::Fuse::Input::PointerPressedArgs* args, uObject* nodes)
 {
     uStackFrame __("Fuse.Input.Pointer", "CheckFocus(Fuse.Input.PointerPressedArgs,Uno.Collections.IList<Fuse.Visual>)");
@@ -3465,8 +3738,8 @@ void Pointer::CheckFocus(::g::Fuse::Input::PointerPressedArgs* args, uObject* no
 
     bool b = false;
 
-    for (int i = 0; i < ::g::Uno::Collections::ICollection::Count(uInterface(uPtr(nodes), ::TYPES[23/*Uno.Collections.ICollection<Fuse.Visual>*/])); ++i)
-        if (::g::Fuse::Input::Focus::HandlesFocusEvent((::g::Uno::Collections::IList::get_Item_ex(uInterface(uPtr(nodes), ::TYPES[24/*Uno.Collections.IList<Fuse.Visual>*/]), uCRef<int>(i), &ret4), ret4)))
+    for (int i = 0; i < ::g::Uno::Collections::ICollection::Count(uInterface(uPtr(nodes), ::TYPES[25/*Uno.Collections.ICollection<Fuse.Visual>*/])); ++i)
+        if (::g::Fuse::Input::Focus::HandlesFocusEvent((::g::Uno::Collections::IList::get_Item_ex(uInterface(uPtr(nodes), ::TYPES[26/*Uno.Collections.IList<Fuse.Visual>*/]), uCRef<int>(i), &ret4), ret4)))
         {
             b = true;
             break;
@@ -3476,7 +3749,7 @@ void Pointer::CheckFocus(::g::Fuse::Input::PointerPressedArgs* args, uObject* no
         ::g::Fuse::Input::Focus::Release();
 }
 
-// public static bool ExtendCapture(object identity, int pointIndex) [static] :1378
+// public static bool ExtendCapture(object identity, int pointIndex) [static] :1580
 bool Pointer::ExtendCapture(uObject* identity, int pointIndex)
 {
     uStackFrame __("Fuse.Input.Pointer", "ExtendCapture(object,int)");
@@ -3486,7 +3759,7 @@ bool Pointer::ExtendCapture(uObject* identity, int pointIndex)
 
     if (c == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[11/*"Attempting ...*/], identity, ::STRINGS[6/*"/Users/eric...*/], 1383, ::STRINGS[12/*"ExtendCapture"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[12/*"Attempting ...*/], identity, ::STRINGS[6/*"/Users/eric...*/], 1585, ::STRINGS[13/*"ExtendCapture"*/]);
         return false;
     }
 
@@ -3500,7 +3773,7 @@ bool Pointer::ExtendCapture(uObject* identity, int pointIndex)
     return true;
 }
 
-// internal static Fuse.Input.Capture GetCapture(object identity) [static] :1158
+// internal static Fuse.Input.Capture GetCapture(object identity) [static] :1361
 ::g::Fuse::Input::Capture* Pointer::GetCapture(uObject* identity)
 {
     uStackFrame __("Fuse.Input.Pointer", "GetCapture(object)");
@@ -3511,7 +3784,7 @@ bool Pointer::ExtendCapture(uObject* identity, int pointIndex)
     {
         const auto __finally_fun = [&]()
         {
-            ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)cl), ::TYPES[25/*Uno.IDisposable*/]));
+            ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)cl), ::TYPES[27/*Uno.IDisposable*/]));
         };
 
         const uFinally<decltype(__finally_fun)> __f(__finally_fun);
@@ -3533,7 +3806,7 @@ bool Pointer::ExtendCapture(uObject* identity, int pointIndex)
     return NULL;
 }
 
-// private static Fuse.Input.Capture GetFirstCapture(Fuse.Input.CaptureType type, int pointIndex, object identity) [static] :1188
+// private static Fuse.Input.Capture GetFirstCapture(Fuse.Input.CaptureType type, int pointIndex, object identity) [static] :1391
 ::g::Fuse::Input::Capture* Pointer::GetFirstCapture(int type, int pointIndex, uObject* identity)
 {
     uStackFrame __("Fuse.Input.Pointer", "GetFirstCapture(Fuse.Input.CaptureType,int,object)");
@@ -3562,7 +3835,7 @@ bool Pointer::ExtendCapture(uObject* identity, int pointIndex)
     return NULL;
 }
 
-// private static Uno.Collections.List<Fuse.Input.Pointer.PELHolder> GetLastHitList(int pointIndex) [static] :1547
+// private static Uno.Collections.List<Fuse.Input.Pointer.PELHolder> GetLastHitList(int pointIndex) [static] :1749
 ::g::Uno::Collections::List* Pointer::GetLastHitList(int pointIndex)
 {
     uStackFrame __("Fuse.Input.Pointer", "GetLastHitList(int)");
@@ -3572,14 +3845,14 @@ bool Pointer::ExtendCapture(uObject* identity, int pointIndex)
 
     if (!(::g::Uno::Collections::Dictionary__TryGetValue_fn(uPtr(Pointer::_lastHitVisuals()), uCRef<int>(pointIndex), (void**)(&lastHitList), &ret8), ret8))
     {
-        lastHitList = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[26/*Uno.Collections.List<Fuse.Input.Pointer.PELHolder>*/]);
+        lastHitList = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[28/*Uno.Collections.List<Fuse.Input.Pointer.PELHolder>*/]);
         ::g::Uno::Collections::Dictionary__Add_fn(uPtr(Pointer::_lastHitVisuals()), uCRef<int>(pointIndex), lastHitList);
     }
 
     return lastHitList;
 }
 
-// internal static Fuse.Input.Capture GetPrimaryCapture(int pointIndex) [static] :1128
+// internal static Fuse.Input.Capture GetPrimaryCapture(int pointIndex) [static] :1330
 ::g::Fuse::Input::Capture* Pointer::GetPrimaryCapture(int pointIndex)
 {
     uStackFrame __("Fuse.Input.Pointer", "GetPrimaryCapture(int)");
@@ -3591,7 +3864,7 @@ bool Pointer::ExtendCapture(uObject* identity, int pointIndex)
     {
         const auto __finally_fun = [&]()
         {
-            ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)cl), ::TYPES[25/*Uno.IDisposable*/]));
+            ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)cl), ::TYPES[27/*Uno.IDisposable*/]));
         };
 
         const uFinally<decltype(__finally_fun)> __f(__finally_fun);
@@ -3615,7 +3888,7 @@ bool Pointer::ExtendCapture(uObject* identity, int pointIndex)
 
             int str = (best == NULL) ? 1 : uPtr(c)->CompareStrength(best);
 
-            if (str > 0)
+            if ((str > 0) || ((str == 0) && (c->VisualDepth > uPtr(best)->VisualDepth)))
                 best = c;
         }
     }
@@ -3623,7 +3896,7 @@ bool Pointer::ExtendCapture(uObject* identity, int pointIndex)
     return best;
 }
 
-// private static bool IsCaptureAllowed(Fuse.Input.CaptureType type, Fuse.Visual visual, int pointIndex, object identity) [static] :1210
+// private static bool IsCaptureAllowed(Fuse.Input.CaptureType type, Fuse.Visual visual, int pointIndex, object identity) [static] :1413
 bool Pointer::IsCaptureAllowed(int type, ::g::Fuse::Visual* visual, int pointIndex, uObject* identity)
 {
     uStackFrame __("Fuse.Input.Pointer", "IsCaptureAllowed(Fuse.Input.CaptureType,Fuse.Visual,int,object)");
@@ -3644,7 +3917,7 @@ bool Pointer::IsCaptureAllowed(int type, ::g::Fuse::Visual* visual, int pointInd
     return true;
 }
 
-// private static bool IsCaptureAllowedAgainst(Fuse.Input.Capture current, Fuse.Input.CaptureType type, Fuse.Visual visual, int pointIndex, object identity) [static] :1227
+// private static bool IsCaptureAllowedAgainst(Fuse.Input.Capture current, Fuse.Input.CaptureType type, Fuse.Visual visual, int pointIndex, object identity) [static] :1430
 bool Pointer::IsCaptureAllowedAgainst(::g::Fuse::Input::Capture* current, int type, ::g::Fuse::Visual* visual, int pointIndex, uObject* identity)
 {
     uStackFrame __("Fuse.Input.Pointer", "IsCaptureAllowedAgainst(Fuse.Input.Capture,Fuse.Input.CaptureType,Fuse.Visual,int,object)");
@@ -3662,7 +3935,7 @@ bool Pointer::IsCaptureAllowedAgainst(::g::Fuse::Input::Capture* current, int ty
     return true;
 }
 
-// public static bool IsCaptured(Fuse.Input.CaptureType type, int pointIndex, object identity) [static] :1183
+// public static bool IsCaptured(Fuse.Input.CaptureType type, int pointIndex, object identity) [static] :1386
 bool Pointer::IsCaptured(int type, int pointIndex, uObject* identity)
 {
     uStackFrame __("Fuse.Input.Pointer", "IsCaptured(Fuse.Input.CaptureType,int,object)");
@@ -3670,7 +3943,7 @@ bool Pointer::IsCaptured(int type, int pointIndex, uObject* identity)
     return Pointer::GetFirstCapture(type, pointIndex, identity) != NULL;
 }
 
-// public static bool IsCaptured(int pointIndex, object identity) [static] :1178
+// public static bool IsCaptured(int pointIndex, object identity) [static] :1381
 bool Pointer::IsCaptured1(int pointIndex, uObject* identity)
 {
     uStackFrame __("Fuse.Input.Pointer", "IsCaptured(int,object)");
@@ -3678,7 +3951,7 @@ bool Pointer::IsCaptured1(int pointIndex, uObject* identity)
     return Pointer::IsCaptured(0, pointIndex, identity);
 }
 
-// public static bool IsPressed() [static] :1079
+// public static bool IsPressed() [static] :1281
 bool Pointer::IsPressed()
 {
     uStackFrame __("Fuse.Input.Pointer", "IsPressed()");
@@ -3686,25 +3959,25 @@ bool Pointer::IsPressed()
     return uPtr(Pointer::_pointersDown())->Count() > 0;
 }
 
-// public static bool IsPressed(int pointIndex) [static] :1084
+// public static bool IsPressed(int pointIndex) [static] :1286
 bool Pointer::IsPressed1(int pointIndex)
 {
     uStackFrame __("Fuse.Input.Pointer", "IsPressed(int)");
     Pointer_typeof()->Init();
     ::g::Uno::Collections::Dictionary__Enumerator<int, uStrong<Pointer__PointerRecord*> > ret11;
 
-    for (::g::Uno::Collections::Dictionary__Enumerator<int, uStrong<Pointer__PointerRecord*> > enum2 = (::g::Uno::Collections::Dictionary__GetEnumerator_fn(uPtr(Pointer::_pointersDown()), &ret11), ret11); enum2.MoveNext(::TYPES[27/*Uno.Collections.Dictionary<int, Fuse.Input.Pointer.PointerRecord>.Enumerator*/]); )
+    for (::g::Uno::Collections::Dictionary__Enumerator<int, uStrong<Pointer__PointerRecord*> > enum2 = (::g::Uno::Collections::Dictionary__GetEnumerator_fn(uPtr(Pointer::_pointersDown()), &ret11), ret11); enum2.MoveNext(::TYPES[29/*Uno.Collections.Dictionary<int, Fuse.Input.Pointer.PointerRecord>.Enumerator*/]); )
     {
-        ::g::Uno::Collections::KeyValuePair<int, uStrong<Pointer__PointerRecord*> > p = enum2.Current(::TYPES[27/*Uno.Collections.Dictionary<int, Fuse.Input.Pointer.PointerRecord>.Enumerator*/]);
+        ::g::Uno::Collections::KeyValuePair<int, uStrong<Pointer__PointerRecord*> > p = enum2.Current(::TYPES[29/*Uno.Collections.Dictionary<int, Fuse.Input.Pointer.PointerRecord>.Enumerator*/]);
 
-        if (p.Key(::TYPES[28/*Uno.Collections.KeyValuePair<int, Fuse.Input.Pointer.PointerRecord>*/]) == pointIndex)
+        if (p.Key(::TYPES[30/*Uno.Collections.KeyValuePair<int, Fuse.Input.Pointer.PointerRecord>*/]) == pointIndex)
             return true;
     }
 
     return false;
 }
 
-// internal static void LoseCapture(int pointIndex) [static] :1289
+// internal static void LoseCapture(int pointIndex) [static] :1492
 void Pointer::LoseCapture(int pointIndex)
 {
     uStackFrame __("Fuse.Input.Pointer", "LoseCapture(int)");
@@ -3715,7 +3988,7 @@ void Pointer::LoseCapture(int pointIndex)
     {
         const auto __finally_fun = [&]()
         {
-            ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)cl), ::TYPES[25/*Uno.IDisposable*/]));
+            ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)cl), ::TYPES[27/*Uno.IDisposable*/]));
         };
 
         const uFinally<decltype(__finally_fun)> __f(__finally_fun);
@@ -3736,7 +4009,7 @@ void Pointer::LoseCapture(int pointIndex)
     }
 }
 
-// private static void LoseSoftCapturesTo(Fuse.Input.Capture to) [static] :1245
+// private static void LoseSoftCapturesTo(Fuse.Input.Capture to) [static] :1448
 void Pointer::LoseSoftCapturesTo(::g::Fuse::Input::Capture* to)
 {
     uStackFrame __("Fuse.Input.Pointer", "LoseSoftCapturesTo(Fuse.Input.Capture)");
@@ -3748,7 +4021,7 @@ void Pointer::LoseSoftCapturesTo(::g::Fuse::Input::Capture* to)
     {
         const auto __finally_fun = [&]()
         {
-            ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)cl), ::TYPES[25/*Uno.IDisposable*/]));
+            ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)cl), ::TYPES[27/*Uno.IDisposable*/]));
         };
 
         const uFinally<decltype(__finally_fun)> __f(__finally_fun);
@@ -3771,7 +4044,7 @@ void Pointer::LoseSoftCapturesTo(::g::Fuse::Input::Capture* to)
     }
 }
 
-// private static void MarkAncestorHits(Fuse.Visual hitObject, Uno.Collections.List<Fuse.Input.Pointer.PELHolder> list) [static] :1502
+// private static void MarkAncestorHits(Fuse.Visual hitObject, Uno.Collections.List<Fuse.Input.Pointer.PELHolder> list) [static] :1704
 void Pointer::MarkAncestorHits(::g::Fuse::Visual* hitObject, ::g::Uno::Collections::List* list)
 {
     uStackFrame __("Fuse.Input.Pointer", "MarkAncestorHits(Fuse.Visual,Uno.Collections.List<Fuse.Input.Pointer.PELHolder>)");
@@ -3803,7 +4076,7 @@ void Pointer::MarkAncestorHits(::g::Fuse::Visual* hitObject, ::g::Uno::Collectio
     }
 }
 
-// public static bool ModifyCapture(object identity, Fuse.Input.CaptureType type) [static] :1356
+// public static bool ModifyCapture(object identity, Fuse.Input.CaptureType type) [static] :1558
 bool Pointer::ModifyCapture(uObject* identity, int type)
 {
     uStackFrame __("Fuse.Input.Pointer", "ModifyCapture(object,Fuse.Input.CaptureType)");
@@ -3812,7 +4085,7 @@ bool Pointer::ModifyCapture(uObject* identity, int type)
 
     if (c == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[13/*"Attempting ...*/], identity, ::STRINGS[6/*"/Users/eric...*/], 1361, ::STRINGS[14/*"ModifyCapture"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[14/*"Attempting ...*/], identity, ::STRINGS[6/*"/Users/eric...*/], 1563, ::STRINGS[15/*"ModifyCapture"*/]);
         return false;
     }
 
@@ -3821,24 +4094,24 @@ bool Pointer::ModifyCapture(uObject* identity, int type)
     return true;
 }
 
-// public static bool ModifyCapture(object identity, Fuse.Visual visual, Uno.Action lostCallback, Fuse.Input.CaptureType type, int pointIndex) [static] :1312
+// public static bool ModifyCapture(object identity, Fuse.Visual visual, Uno.Action lostCallback, Fuse.Input.CaptureType type, int pointIndex) [static] :1515
 bool Pointer::ModifyCapture1(uObject* identity, ::g::Fuse::Visual* visual, uDelegate* lostCallback, int type, int pointIndex)
 {
     uStackFrame __("Fuse.Input.Pointer", "ModifyCapture(object,Fuse.Visual,Uno.Action,Fuse.Input.CaptureType,int)");
     Pointer_typeof()->Init();
 
     if (::g::Uno::Delegate::op_Equality(lostCallback, NULL))
-        U_THROW(::g::Uno::Exception::New2(::STRINGS[15/*"Capture req...*/]));
-
-    if (identity == NULL)
         U_THROW(::g::Uno::Exception::New2(::STRINGS[16/*"Capture req...*/]));
 
-    if (visual == NULL)
+    if (identity == NULL)
         U_THROW(::g::Uno::Exception::New2(::STRINGS[17/*"Capture req...*/]));
+
+    if (visual == NULL)
+        U_THROW(::g::Uno::Exception::New2(::STRINGS[18/*"Capture req...*/]));
 
     if (!uPtr(visual)->IsContextEnabled() || !uPtr(visual)->IsRootingCompleted())
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[18/*"Capture can...*/], NULL, ::STRINGS[6/*"/Users/eric...*/], 1323, ::STRINGS[14/*"ModifyCapture"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[19/*"Capture can...*/], NULL, ::STRINGS[6/*"/Users/eric...*/], 1526, ::STRINGS[15/*"ModifyCapture"*/]);
         return false;
     }
 
@@ -3848,7 +4121,10 @@ bool Pointer::ModifyCapture1(uObject* identity, ::g::Fuse::Visual* visual, uDele
     ::g::Fuse::Input::Capture* c = Pointer::GetCapture(identity);
 
     if (c != NULL)
-        ;
+    {
+        if (uPtr(c)->Visual() != visual)
+            ::g::Fuse::Diagnostics::InternalError(::STRINGS[20/*"Cannot modi...*/], identity, ::STRINGS[6/*"/Users/eric...*/], 1537, ::STRINGS[15/*"ModifyCapture"*/]);
+    }
     else
     {
         c = ::g::Fuse::Input::Capture::New1(visual, identity);
@@ -3863,7 +4139,7 @@ bool Pointer::ModifyCapture1(uObject* identity, ::g::Fuse::Visual* visual, uDele
     return true;
 }
 
-// private static void ProcessPointerEnterLeave(Fuse.HitTestResult result, Fuse.Input.PointerEventData args) [static] :1478
+// private static void ProcessPointerEnterLeave(Fuse.HitTestResult result, Fuse.Input.PointerEventData args) [static] :1680
 void Pointer::ProcessPointerEnterLeave(::g::Fuse::HitTestResult* result, ::g::Fuse::Input::PointerEventData* args)
 {
     uStackFrame __("Fuse.Input.Pointer", "ProcessPointerEnterLeave(Fuse.HitTestResult,Fuse.Input.PointerEventData)");
@@ -3893,36 +4169,36 @@ void Pointer::ProcessPointerEnterLeave(::g::Fuse::HitTestResult* result, ::g::Fu
     }
 }
 
-// internal static bool RaiseMoved(Fuse.Visual root, Fuse.Input.PointerEventData data) [static] :1406
+// internal static bool RaiseMoved(Fuse.Visual root, Fuse.Input.PointerEventData data) [static] :1608
 bool Pointer::RaiseMoved(::g::Fuse::Visual* root, ::g::Fuse::Input::PointerEventData* data)
 {
     uStackFrame __("Fuse.Input.Pointer", "RaiseMoved(Fuse.Visual,Fuse.Input.PointerEventData)");
     Pointer_typeof()->Init();
     ::g::Fuse::Visual* target = Pointer::RoutePointerEvent(data, root);
     ::g::Fuse::Input::PointerMovedArgs* e = ::g::Fuse::Input::PointerMovedArgs::New3(data, target);
-    ::g::Fuse::Input::IPointerEventResponder::OnPointerMoved(uInterface(uPtr(Pointer::EventResponder()), ::TYPES[29/*Fuse.Input.IPointerEventResponder*/]), e);
+    ::g::Fuse::Input::IPointerEventResponder::OnPointerMoved(uInterface(uPtr(Pointer::EventResponder()), ::TYPES[31/*Fuse.Input.IPointerEventResponder*/]), e);
     return e->IsHandled();
 }
 
-// internal static bool RaisePressed(Fuse.Visual root, Fuse.Input.PointerEventData data) [static] :1398
+// internal static bool RaisePressed(Fuse.Visual root, Fuse.Input.PointerEventData data) [static] :1600
 bool Pointer::RaisePressed(::g::Fuse::Visual* root, ::g::Fuse::Input::PointerEventData* data)
 {
     uStackFrame __("Fuse.Input.Pointer", "RaisePressed(Fuse.Visual,Fuse.Input.PointerEventData)");
     Pointer_typeof()->Init();
     ::g::Fuse::Visual* target = Pointer::RoutePointerEvent(data, root);
     ::g::Fuse::Input::PointerPressedArgs* e = ::g::Fuse::Input::PointerPressedArgs::New3(data, target);
-    ::g::Fuse::Input::IPointerEventResponder::OnPointerPressed(uInterface(uPtr(Pointer::EventResponder()), ::TYPES[29/*Fuse.Input.IPointerEventResponder*/]), e);
+    ::g::Fuse::Input::IPointerEventResponder::OnPointerPressed(uInterface(uPtr(Pointer::EventResponder()), ::TYPES[31/*Fuse.Input.IPointerEventResponder*/]), e);
     return e->IsHandled();
 }
 
-// internal static bool RaiseReleased(Fuse.Visual root, Fuse.Input.PointerEventData data) [static] :1414
+// internal static bool RaiseReleased(Fuse.Visual root, Fuse.Input.PointerEventData data) [static] :1616
 bool Pointer::RaiseReleased(::g::Fuse::Visual* root, ::g::Fuse::Input::PointerEventData* data)
 {
     uStackFrame __("Fuse.Input.Pointer", "RaiseReleased(Fuse.Visual,Fuse.Input.PointerEventData)");
     Pointer_typeof()->Init();
     ::g::Fuse::Visual* target = Pointer::RoutePointerEvent(data, root);
     ::g::Fuse::Input::PointerReleasedArgs* e = ::g::Fuse::Input::PointerReleasedArgs::New3(data, target);
-    ::g::Fuse::Input::IPointerEventResponder::OnPointerReleased(uInterface(uPtr(Pointer::EventResponder()), ::TYPES[29/*Fuse.Input.IPointerEventResponder*/]), e);
+    ::g::Fuse::Input::IPointerEventResponder::OnPointerReleased(uInterface(uPtr(Pointer::EventResponder()), ::TYPES[31/*Fuse.Input.IPointerEventResponder*/]), e);
 
     if (uPtr(data)->PointerType == 2)
         Pointer::ProcessPointerEnterLeave(NULL, data);
@@ -3930,7 +4206,7 @@ bool Pointer::RaiseReleased(::g::Fuse::Visual* root, ::g::Fuse::Input::PointerEv
     return e->IsHandled();
 }
 
-// public static void ReleaseCapture(object identity) [static] :1274
+// public static void ReleaseCapture(object identity) [static] :1477
 void Pointer::ReleaseCapture(uObject* identity)
 {
     uStackFrame __("Fuse.Input.Pointer", "ReleaseCapture(object)");
@@ -3941,7 +4217,7 @@ void Pointer::ReleaseCapture(uObject* identity)
     {
         const auto __finally_fun = [&]()
         {
-            ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)cl), ::TYPES[25/*Uno.IDisposable*/]));
+            ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)cl), ::TYPES[27/*Uno.IDisposable*/]));
         };
 
         const uFinally<decltype(__finally_fun)> __f(__finally_fun);
@@ -3959,7 +4235,7 @@ void Pointer::ReleaseCapture(uObject* identity)
     }
 }
 
-// public static void RemoveHandlers(Fuse.Visual node, [Fuse.Input.PointerPressedHandler pressed], [Fuse.Input.PointerMovedHandler moved], [Fuse.Input.PointerReleasedHandler released], [Fuse.Input.PointerEnteredHandler entered], [Fuse.Input.PointerLeftHandler left], [Fuse.Input.PointerWheelMovedHandler wheelMoved]) [static] :1038
+// public static void RemoveHandlers(Fuse.Visual node, [Fuse.Input.PointerPressedHandler pressed], [Fuse.Input.PointerMovedHandler moved], [Fuse.Input.PointerReleasedHandler released], [Fuse.Input.PointerEnteredHandler entered], [Fuse.Input.PointerLeftHandler left], [Fuse.Input.PointerWheelMovedHandler wheelMoved]) [static] :1240
 void Pointer::RemoveHandlers(::g::Fuse::Visual* node, uDelegate* pressed, uDelegate* moved, uDelegate* released, uDelegate* entered, uDelegate* left, uDelegate* wheelMoved)
 {
     uStackFrame __("Fuse.Input.Pointer", "RemoveHandlers(Fuse.Visual,[Fuse.Input.PointerPressedHandler],[Fuse.Input.PointerMovedHandler],[Fuse.Input.PointerReleasedHandler],[Fuse.Input.PointerEnteredHandler],[Fuse.Input.PointerLeftHandler],[Fuse.Input.PointerWheelMovedHandler])");
@@ -3984,7 +4260,7 @@ void Pointer::RemoveHandlers(::g::Fuse::Visual* node, uDelegate* pressed, uDeleg
         ::g::Fuse::VisualEvent__RemoveHandler_fn(uPtr(Pointer::WheelMoved()), node, wheelMoved);
 }
 
-// private static Fuse.Visual RoutePointerEvent(Fuse.Input.PointerEventData plainEvent, Fuse.Visual root) [static] :1440
+// private static Fuse.Visual RoutePointerEvent(Fuse.Input.PointerEventData plainEvent, Fuse.Visual root) [static] :1642
 ::g::Fuse::Visual* Pointer::RoutePointerEvent(::g::Fuse::Input::PointerEventData* plainEvent, ::g::Fuse::Visual* root)
 {
     uStackFrame __("Fuse.Input.Pointer", "RoutePointerEvent(Fuse.Input.PointerEventData,Fuse.Visual)");
@@ -4010,7 +4286,7 @@ void Pointer::RemoveHandlers(::g::Fuse::Visual* node, uDelegate* pressed, uDeleg
     return target;
 }
 
-// private static Fuse.Visual RouteToHit(Fuse.Input.PointerEventData args, Fuse.Visual root) [static] :1462
+// private static Fuse.Visual RouteToHit(Fuse.Input.PointerEventData args, Fuse.Visual root) [static] :1664
 ::g::Fuse::Visual* Pointer::RouteToHit(::g::Fuse::Input::PointerEventData* args, ::g::Fuse::Visual* root)
 {
     uStackFrame __("Fuse.Input.Pointer", "RouteToHit(Fuse.Input.PointerEventData,Fuse.Visual)");
@@ -4028,88 +4304,88 @@ void Pointer::RemoveHandlers(::g::Fuse::Visual* node, uDelegate* pressed, uDeleg
     return uPtr(result)->HitObject();
 }
 
-// public static generated float2 get_Coord() [static] :1090
+// public static generated float2 get_Coord() [static] :1292
 ::g::Uno::Float2 Pointer::Coord()
 {
     Pointer_typeof()->Init();
     return Pointer::_Coord();
 }
 
-// private static generated void set_Coord(float2 value) [static] :1090
+// private static generated void set_Coord(float2 value) [static] :1292
 void Pointer::Coord(::g::Uno::Float2 value)
 {
     Pointer_typeof()->Init();
     Pointer::_Coord() = value;
 }
 
-// public static float2[] get_Coords() [static] :1058
+// public static float2[] get_Coords() [static] :1260
 uArray* Pointer::Coords()
 {
     uStackFrame __("Fuse.Input.Pointer", "get_Coords()");
     Pointer_typeof()->Init();
     ::g::Uno::Collections::Dictionary__Enumerator<int, uStrong<Pointer__PointerRecord*> > ret23;
-    uArray* f = uArray::New(::TYPES[30/*float2[]*/], uPtr(Pointer::_pointersDown())->Count());
+    uArray* f = uArray::New(::TYPES[32/*float2[]*/], uPtr(Pointer::_pointersDown())->Count());
     int i = 0;
 
-    for (::g::Uno::Collections::Dictionary__Enumerator<int, uStrong<Pointer__PointerRecord*> > enum1 = (::g::Uno::Collections::Dictionary__GetEnumerator_fn(uPtr(Pointer::_pointersDown()), &ret23), ret23); enum1.MoveNext(::TYPES[27/*Uno.Collections.Dictionary<int, Fuse.Input.Pointer.PointerRecord>.Enumerator*/]); )
+    for (::g::Uno::Collections::Dictionary__Enumerator<int, uStrong<Pointer__PointerRecord*> > enum1 = (::g::Uno::Collections::Dictionary__GetEnumerator_fn(uPtr(Pointer::_pointersDown()), &ret23), ret23); enum1.MoveNext(::TYPES[29/*Uno.Collections.Dictionary<int, Fuse.Input.Pointer.PointerRecord>.Enumerator*/]); )
     {
-        ::g::Uno::Collections::KeyValuePair<int, uStrong<Pointer__PointerRecord*> > p = enum1.Current(::TYPES[27/*Uno.Collections.Dictionary<int, Fuse.Input.Pointer.PointerRecord>.Enumerator*/]);
-        uPtr(f)->Item< ::g::Uno::Float2>(i++) = uPtr(p.Value(::TYPES[28/*Uno.Collections.KeyValuePair<int, Fuse.Input.Pointer.PointerRecord>*/]))->WindowPoint;
+        ::g::Uno::Collections::KeyValuePair<int, uStrong<Pointer__PointerRecord*> > p = enum1.Current(::TYPES[29/*Uno.Collections.Dictionary<int, Fuse.Input.Pointer.PointerRecord>.Enumerator*/]);
+        uPtr(f)->Item< ::g::Uno::Float2>(i++) = uPtr(p.Value(::TYPES[30/*Uno.Collections.KeyValuePair<int, Fuse.Input.Pointer.PointerRecord>*/]))->WindowPoint;
     }
 
     return f;
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.PointerEnteredHandler, Fuse.Input.PointerEnteredArgs> get_Entered() [static] :1018
+// public static Fuse.VisualEvent<Fuse.Input.PointerEnteredHandler, Fuse.Input.PointerEnteredArgs> get_Entered() [static] :1220
 ::g::Fuse::VisualEvent* Pointer::Entered()
 {
     Pointer_typeof()->Init();
     return Pointer::_entered();
 }
 
-// public static generated Fuse.Input.IPointerEventResponder get_EventResponder() [static] :1001
+// public static generated Fuse.Input.IPointerEventResponder get_EventResponder() [static] :1203
 uObject* Pointer::EventResponder()
 {
     Pointer_typeof()->Init();
     return Pointer::_EventResponder();
 }
 
-// public static generated void set_EventResponder(Fuse.Input.IPointerEventResponder value) [static] :1001
+// public static generated void set_EventResponder(Fuse.Input.IPointerEventResponder value) [static] :1203
 void Pointer::EventResponder(uObject* value)
 {
     Pointer_typeof()->Init();
     Pointer::_EventResponder() = value;
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.PointerLeftHandler, Fuse.Input.PointerLeftArgs> get_Left() [static] :1019
+// public static Fuse.VisualEvent<Fuse.Input.PointerLeftHandler, Fuse.Input.PointerLeftArgs> get_Left() [static] :1221
 ::g::Fuse::VisualEvent* Pointer::Left()
 {
     Pointer_typeof()->Init();
     return Pointer::_left();
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.PointerMovedHandler, Fuse.Input.PointerMovedArgs> get_Moved() [static] :1016
+// public static Fuse.VisualEvent<Fuse.Input.PointerMovedHandler, Fuse.Input.PointerMovedArgs> get_Moved() [static] :1218
 ::g::Fuse::VisualEvent* Pointer::Moved()
 {
     Pointer_typeof()->Init();
     return Pointer::_moved();
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.PointerPressedHandler, Fuse.Input.PointerPressedArgs> get_Pressed() [static] :1015
+// public static Fuse.VisualEvent<Fuse.Input.PointerPressedHandler, Fuse.Input.PointerPressedArgs> get_Pressed() [static] :1217
 ::g::Fuse::VisualEvent* Pointer::Pressed()
 {
     Pointer_typeof()->Init();
     return Pointer::_pressed();
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.PointerReleasedHandler, Fuse.Input.PointerReleasedArgs> get_Released() [static] :1017
+// public static Fuse.VisualEvent<Fuse.Input.PointerReleasedHandler, Fuse.Input.PointerReleasedArgs> get_Released() [static] :1219
 ::g::Fuse::VisualEvent* Pointer::Released()
 {
     Pointer_typeof()->Init();
     return Pointer::_released();
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.PointerWheelMovedHandler, Fuse.Input.PointerWheelMovedArgs> get_WheelMoved() [static] :1020
+// public static Fuse.VisualEvent<Fuse.Input.PointerWheelMovedHandler, Fuse.Input.PointerWheelMovedArgs> get_WheelMoved() [static] :1222
 ::g::Fuse::VisualEvent* Pointer::WheelMoved()
 {
     Pointer_typeof()->Init();
@@ -4117,10 +4393,10 @@ void Pointer::EventResponder(uObject* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// internal sealed class PointerEntered :1905
+// internal sealed class PointerEntered :2107
 // {
 static void PointerEntered_build(uType* type)
 {
@@ -4145,32 +4421,32 @@ static void PointerEntered_build(uType* type)
     return type;
 }
 
-// public generated PointerEntered() :1905
+// public generated PointerEntered() :2107
 void PointerEntered__ctor_1_fn(PointerEntered* __this)
 {
     __this->ctor_1();
 }
 
-// protected override sealed void Invoke(Fuse.Input.PointerEnteredHandler handler, object sender, Fuse.Input.PointerEnteredArgs args) :1907
+// protected override sealed void Invoke(Fuse.Input.PointerEnteredHandler handler, object sender, Fuse.Input.PointerEnteredArgs args) :2109
 void PointerEntered__Invoke_fn(PointerEntered* __this, uDelegate* handler, uObject* sender, ::g::Fuse::Input::PointerEnteredArgs* args)
 {
     uStackFrame __("Fuse.Input.PointerEntered", "Invoke(Fuse.Input.PointerEnteredHandler,object,Fuse.Input.PointerEnteredArgs)");
     uPtr(handler)->Invoke(2, sender, args);
 }
 
-// public generated PointerEntered New() :1905
+// public generated PointerEntered New() :2107
 void PointerEntered__New1_fn(PointerEntered** __retval)
 {
     *__retval = PointerEntered::New1();
 }
 
-// public generated PointerEntered() [instance] :1905
+// public generated PointerEntered() [instance] :2107
 void PointerEntered::ctor_1()
 {
     ctor_();
 }
 
-// public generated PointerEntered New() [static] :1905
+// public generated PointerEntered New() [static] :2107
 PointerEntered* PointerEntered::New1()
 {
     PointerEntered* obj1 = (PointerEntered*)uNew(PointerEntered_typeof());
@@ -4179,10 +4455,10 @@ PointerEntered* PointerEntered::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public sealed class PointerEnteredArgs :1897
+// public sealed class PointerEnteredArgs :2099
 // {
 static void PointerEnteredArgs_build(uType* type)
 {
@@ -4210,25 +4486,25 @@ static void PointerEnteredArgs_build(uType* type)
     return type;
 }
 
-// public PointerEnteredArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) :1899
+// public PointerEnteredArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) :2101
 void PointerEnteredArgs__ctor_3_fn(PointerEnteredArgs* __this, ::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     __this->ctor_3(data, visual);
 }
 
-// public PointerEnteredArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) :1899
+// public PointerEnteredArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) :2101
 void PointerEnteredArgs__New3_fn(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual, PointerEnteredArgs** __retval)
 {
     *__retval = PointerEnteredArgs::New3(data, visual);
 }
 
-// public PointerEnteredArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) [instance] :1899
+// public PointerEnteredArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) [instance] :2101
 void PointerEnteredArgs::ctor_3(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     ctor_2(data, visual);
 }
 
-// public PointerEnteredArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) [static] :1899
+// public PointerEnteredArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) [static] :2101
 PointerEnteredArgs* PointerEnteredArgs::New3(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     PointerEnteredArgs* obj1 = (PointerEnteredArgs*)uNew(PointerEnteredArgs_typeof());
@@ -4237,10 +4513,10 @@ PointerEnteredArgs* PointerEnteredArgs::New3(::g::Fuse::Input::PointerEventData*
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public delegate void PointerEnteredHandler(object sender, Fuse.Input.PointerEnteredArgs args) :1903
+// public delegate void PointerEnteredHandler(object sender, Fuse.Input.PointerEnteredArgs args) :2105
 uDelegateType* PointerEnteredHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -4253,22 +4529,22 @@ uDelegateType* PointerEnteredHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public abstract class PointerEventArgs :1731
+// public abstract class PointerEventArgs :1933
 // {
 static void PointerEventArgs_build(uType* type)
 {
-    ::STRINGS[19] = uString::Const("The capture system no longer supports distinct captures for Soft and Hard capture, instead treating the same identity/behaviour as a single capture. Old code will only work if it captured just one pointer, and followed the pattern of soft then hard capture on it (or just a hard capture)");
-    ::STRINGS[6] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno");
-    ::STRINGS[20] = uString::Const("DeprecatedReleaseCapture");
-    ::STRINGS[21] = uString::Const("x");
-    ::STRINGS[22] = uString::Const("y");
-    ::STRINGS[23] = uString::Const("index");
-    ::STRINGS[24] = uString::Const("localX");
-    ::STRINGS[25] = uString::Const("localY");
-    ::TYPES[31] = ::g::Fuse::Scripting::IEventSerializer_typeof();
+    ::STRINGS[21] = uString::Const("The capture system no longer supports distinct captures for Soft and Hard capture, instead treating the same identity/behaviour as a single capture. Old code will only work if it captured just one pointer, and followed the pattern of soft then hard capture on it (or just a hard capture)");
+    ::STRINGS[6] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno");
+    ::STRINGS[22] = uString::Const("DeprecatedReleaseCapture");
+    ::STRINGS[23] = uString::Const("x");
+    ::STRINGS[24] = uString::Const("y");
+    ::STRINGS[25] = uString::Const("index");
+    ::STRINGS[26] = uString::Const("localX");
+    ::STRINGS[27] = uString::Const("localY");
+    ::TYPES[33] = ::g::Fuse::Scripting::IEventSerializer_typeof();
     type->SetInterfaces(
         ::g::Fuse::Scripting::IScriptEvent_typeof(), offsetof(::g::Fuse::VisualEventArgs_type, interface0));
     type->SetFields(2,
@@ -4310,121 +4586,121 @@ static void PointerEventArgs_build(uType* type)
     return type;
 }
 
-// protected internal PointerEventArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) :1783
+// protected internal PointerEventArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) :1985
 void PointerEventArgs__ctor_2_fn(PointerEventArgs* __this, ::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     __this->ctor_2(data, visual);
 }
 
-// internal Fuse.Input.PointerEventData get_Data() :1735
+// internal Fuse.Input.PointerEventData get_Data() :1937
 void PointerEventArgs__get_Data_fn(PointerEventArgs* __this, ::g::Fuse::Input::PointerEventData** __retval)
 {
     *__retval = __this->Data();
 }
 
-// private void DeprecatedReleaseCapture(object behavior) :1807
+// private void DeprecatedReleaseCapture(object behavior) :2009
 void PointerEventArgs__DeprecatedReleaseCapture_fn(PointerEventArgs* __this, uObject* behavior)
 {
     __this->DeprecatedReleaseCapture(behavior);
 }
 
-// public bool IsCapturedTo(object behavior) :1768
+// public bool IsCapturedTo(object behavior) :1970
 void PointerEventArgs__IsCapturedTo_fn(PointerEventArgs* __this, uObject* behavior, bool* __retval)
 {
     *__retval = __this->IsCapturedTo(behavior);
 }
 
-// public bool IsHardCapturedTo(object behavior) :1778
+// public bool IsHardCapturedTo(object behavior) :1980
 void PointerEventArgs__IsHardCapturedTo_fn(PointerEventArgs* __this, uObject* behavior, bool* __retval)
 {
     *__retval = __this->IsHardCapturedTo(behavior);
 }
 
-// public bool get_IsPrimary() :1744
+// public bool get_IsPrimary() :1946
 void PointerEventArgs__get_IsPrimary_fn(PointerEventArgs* __this, bool* __retval)
 {
     *__retval = __this->IsPrimary();
 }
 
-// public bool IsSoftCapturedTo(object behavior) :1763
+// public bool IsSoftCapturedTo(object behavior) :1965
 void PointerEventArgs__IsSoftCapturedTo_fn(PointerEventArgs* __this, uObject* behavior, bool* __retval)
 {
     *__retval = __this->IsSoftCapturedTo(behavior);
 }
 
-// public Uno.Platform.PointerType get_PointerType() :1743
+// public Uno.Platform.PointerType get_PointerType() :1945
 void PointerEventArgs__get_PointerType_fn(PointerEventArgs* __this, int* __retval)
 {
     *__retval = __this->PointerType();
 }
 
-// public int get_PointIndex() :1742
+// public int get_PointIndex() :1944
 void PointerEventArgs__get_PointIndex_fn(PointerEventArgs* __this, int* __retval)
 {
     *__retval = __this->PointIndex();
 }
 
-// public void ReleaseCapture(object behavior) :1758
+// public void ReleaseCapture(object behavior) :1960
 void PointerEventArgs__ReleaseCapture_fn(PointerEventArgs* __this, uObject* behavior)
 {
     __this->ReleaseCapture(behavior);
 }
 
-// public void ReleaseHardCapture(object behavior) :1804
+// public void ReleaseHardCapture(object behavior) :2006
 void PointerEventArgs__ReleaseHardCapture_fn(PointerEventArgs* __this, uObject* behavior)
 {
     __this->ReleaseHardCapture(behavior);
 }
 
-// public void ReleaseSoftCapture(object behavior) :1801
+// public void ReleaseSoftCapture(object behavior) :2003
 void PointerEventArgs__ReleaseSoftCapture_fn(PointerEventArgs* __this, uObject* behavior)
 {
     __this->ReleaseSoftCapture(behavior);
 }
 
-// private override sealed void Serialize(Fuse.Scripting.IEventSerializer s) :1788
+// private override sealed void Serialize(Fuse.Scripting.IEventSerializer s) :1990
 void PointerEventArgs__Serialize_fn(PointerEventArgs* __this, uObject* s)
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", "Serialize(Fuse.Scripting.IEventSerializer)");
-    ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(uPtr(s), ::TYPES[31/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[21/*"x"*/], (double)__this->WindowPoint().X);
-    ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(s, ::TYPES[31/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[22/*"y"*/], (double)__this->WindowPoint().Y);
-    ::g::Fuse::Scripting::IEventSerializer::AddInt(uInterface(s, ::TYPES[31/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[23/*"index"*/], __this->PointIndex());
+    ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(uPtr(s), ::TYPES[33/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[23/*"x"*/], (double)__this->WindowPoint().X);
+    ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(s, ::TYPES[33/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[24/*"y"*/], (double)__this->WindowPoint().Y);
+    ::g::Fuse::Scripting::IEventSerializer::AddInt(uInterface(s, ::TYPES[33/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[25/*"index"*/], __this->PointIndex());
     ::g::Uno::Float2 localPoint = uPtr(__this->Visual())->WindowToLocal(__this->WindowPoint());
-    ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(s, ::TYPES[31/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[24/*"localX"*/], (double)localPoint.X);
-    ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(s, ::TYPES[31/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[25/*"localY"*/], (double)localPoint.Y);
+    ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(s, ::TYPES[33/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[26/*"localX"*/], (double)localPoint.X);
+    ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(s, ::TYPES[33/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[27/*"localY"*/], (double)localPoint.Y);
 }
 
-// public double get_Timestamp() :1737
+// public double get_Timestamp() :1939
 void PointerEventArgs__get_Timestamp_fn(PointerEventArgs* __this, double* __retval)
 {
     *__retval = __this->Timestamp();
 }
 
-// public bool TryHardCapture(object identity, Uno.Action lostCallback, [Fuse.Visual captureVisual]) :1746
+// public bool TryHardCapture(object identity, Uno.Action lostCallback, [Fuse.Visual captureVisual]) :1948
 void PointerEventArgs__TryHardCapture_fn(PointerEventArgs* __this, uObject* identity, uDelegate* lostCallback, ::g::Fuse::Visual* captureVisual, bool* __retval)
 {
     *__retval = __this->TryHardCapture(identity, lostCallback, captureVisual);
 }
 
-// public bool TrySoftCapture(object identity, Uno.Action lostCallback, [Fuse.Visual captureVisual]) :1752
+// public bool TrySoftCapture(object identity, Uno.Action lostCallback, [Fuse.Visual captureVisual]) :1954
 void PointerEventArgs__TrySoftCapture_fn(PointerEventArgs* __this, uObject* identity, uDelegate* lostCallback, ::g::Fuse::Visual* captureVisual, bool* __retval)
 {
     *__retval = __this->TrySoftCapture(identity, lostCallback, captureVisual);
 }
 
-// public float2 get_WheelDelta() :1740
+// public float2 get_WheelDelta() :1942
 void PointerEventArgs__get_WheelDelta_fn(PointerEventArgs* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->WheelDelta();
 }
 
-// public Uno.Platform.WheelDeltaMode get_WheelDeltaMode() :1741
+// public Uno.Platform.WheelDeltaMode get_WheelDeltaMode() :1943
 void PointerEventArgs__get_WheelDeltaMode_fn(PointerEventArgs* __this, int* __retval)
 {
     *__retval = __this->WheelDeltaMode();
 }
 
-// public float2 get_WindowPoint() :1739
+// public float2 get_WindowPoint() :1941
 void PointerEventArgs__get_WindowPoint_fn(PointerEventArgs* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->WindowPoint();
@@ -4432,7 +4708,7 @@ void PointerEventArgs__get_WindowPoint_fn(PointerEventArgs* __this, ::g::Uno::Fl
 
 bool PointerEventArgs::_drcWarn_;
 
-// protected internal PointerEventArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) [instance] :1783
+// protected internal PointerEventArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) [instance] :1985
 void PointerEventArgs::ctor_2(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", ".ctor(Fuse.Input.PointerEventData,Fuse.Visual)");
@@ -4440,121 +4716,121 @@ void PointerEventArgs::ctor_2(::g::Fuse::Input::PointerEventData* data, ::g::Fus
     _data = data;
 }
 
-// internal Fuse.Input.PointerEventData get_Data() [instance] :1735
+// internal Fuse.Input.PointerEventData get_Data() [instance] :1937
 ::g::Fuse::Input::PointerEventData* PointerEventArgs::Data()
 {
     return _data;
 }
 
-// private void DeprecatedReleaseCapture(object behavior) [instance] :1807
+// private void DeprecatedReleaseCapture(object behavior) [instance] :2009
 void PointerEventArgs::DeprecatedReleaseCapture(uObject* behavior)
 {
     if (!PointerEventArgs::_drcWarn_)
     {
-        ::g::Fuse::Diagnostics::Deprecated(::STRINGS[19/*"The capture...*/], this, ::STRINGS[6/*"/Users/eric...*/], 1812, ::STRINGS[20/*"DeprecatedR...*/]);
+        ::g::Fuse::Diagnostics::Deprecated(::STRINGS[21/*"The capture...*/], this, ::STRINGS[6/*"/Users/eric...*/], 2014, ::STRINGS[22/*"DeprecatedR...*/]);
         PointerEventArgs::_drcWarn_ = true;
     }
 
     ReleaseCapture(behavior);
 }
 
-// public bool IsCapturedTo(object behavior) [instance] :1768
+// public bool IsCapturedTo(object behavior) [instance] :1970
 bool PointerEventArgs::IsCapturedTo(uObject* behavior)
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", "IsCapturedTo(object)");
     return ::g::Fuse::Input::Pointer::IsCaptured1(PointIndex(), behavior);
 }
 
-// public bool IsHardCapturedTo(object behavior) [instance] :1778
+// public bool IsHardCapturedTo(object behavior) [instance] :1980
 bool PointerEventArgs::IsHardCapturedTo(uObject* behavior)
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", "IsHardCapturedTo(object)");
     return ::g::Fuse::Input::Pointer::IsCaptured(2, PointIndex(), behavior);
 }
 
-// public bool get_IsPrimary() [instance] :1744
+// public bool get_IsPrimary() [instance] :1946
 bool PointerEventArgs::IsPrimary()
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", "get_IsPrimary()");
     return uPtr(_data)->IsPrimary;
 }
 
-// public bool IsSoftCapturedTo(object behavior) [instance] :1763
+// public bool IsSoftCapturedTo(object behavior) [instance] :1965
 bool PointerEventArgs::IsSoftCapturedTo(uObject* behavior)
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", "IsSoftCapturedTo(object)");
     return ::g::Fuse::Input::Pointer::IsCaptured(1, PointIndex(), behavior);
 }
 
-// public Uno.Platform.PointerType get_PointerType() [instance] :1743
+// public Uno.Platform.PointerType get_PointerType() [instance] :1945
 int PointerEventArgs::PointerType()
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", "get_PointerType()");
     return uPtr(_data)->PointerType;
 }
 
-// public int get_PointIndex() [instance] :1742
+// public int get_PointIndex() [instance] :1944
 int PointerEventArgs::PointIndex()
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", "get_PointIndex()");
     return uPtr(_data)->PointIndex;
 }
 
-// public void ReleaseCapture(object behavior) [instance] :1758
+// public void ReleaseCapture(object behavior) [instance] :1960
 void PointerEventArgs::ReleaseCapture(uObject* behavior)
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", "ReleaseCapture(object)");
     ::g::Fuse::Input::Pointer::ReleaseCapture(behavior);
 }
 
-// public void ReleaseHardCapture(object behavior) [instance] :1804
+// public void ReleaseHardCapture(object behavior) [instance] :2006
 void PointerEventArgs::ReleaseHardCapture(uObject* behavior)
 {
     DeprecatedReleaseCapture(behavior);
 }
 
-// public void ReleaseSoftCapture(object behavior) [instance] :1801
+// public void ReleaseSoftCapture(object behavior) [instance] :2003
 void PointerEventArgs::ReleaseSoftCapture(uObject* behavior)
 {
     DeprecatedReleaseCapture(behavior);
 }
 
-// public double get_Timestamp() [instance] :1737
+// public double get_Timestamp() [instance] :1939
 double PointerEventArgs::Timestamp()
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", "get_Timestamp()");
     return uPtr(_data)->Timestamp;
 }
 
-// public bool TryHardCapture(object identity, Uno.Action lostCallback, [Fuse.Visual captureVisual]) [instance] :1746
+// public bool TryHardCapture(object identity, Uno.Action lostCallback, [Fuse.Visual captureVisual]) [instance] :1948
 bool PointerEventArgs::TryHardCapture(uObject* identity, uDelegate* lostCallback, ::g::Fuse::Visual* captureVisual)
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", "TryHardCapture(object,Uno.Action,[Fuse.Visual])");
     return ::g::Fuse::Input::Pointer::ModifyCapture1(identity, (captureVisual != NULL) ? captureVisual : (::g::Fuse::Visual*)Visual(), lostCallback, 2, PointIndex());
 }
 
-// public bool TrySoftCapture(object identity, Uno.Action lostCallback, [Fuse.Visual captureVisual]) [instance] :1752
+// public bool TrySoftCapture(object identity, Uno.Action lostCallback, [Fuse.Visual captureVisual]) [instance] :1954
 bool PointerEventArgs::TrySoftCapture(uObject* identity, uDelegate* lostCallback, ::g::Fuse::Visual* captureVisual)
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", "TrySoftCapture(object,Uno.Action,[Fuse.Visual])");
     return ::g::Fuse::Input::Pointer::ModifyCapture1(identity, (captureVisual != NULL) ? captureVisual : (::g::Fuse::Visual*)Visual(), lostCallback, 1, PointIndex());
 }
 
-// public float2 get_WheelDelta() [instance] :1740
+// public float2 get_WheelDelta() [instance] :1942
 ::g::Uno::Float2 PointerEventArgs::WheelDelta()
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", "get_WheelDelta()");
     return uPtr(_data)->WheelDelta;
 }
 
-// public Uno.Platform.WheelDeltaMode get_WheelDeltaMode() [instance] :1741
+// public Uno.Platform.WheelDeltaMode get_WheelDeltaMode() [instance] :1943
 int PointerEventArgs::WheelDeltaMode()
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", "get_WheelDeltaMode()");
     return uPtr(_data)->WheelDeltaMode;
 }
 
-// public float2 get_WindowPoint() [instance] :1739
+// public float2 get_WindowPoint() [instance] :1941
 ::g::Uno::Float2 PointerEventArgs::WindowPoint()
 {
     uStackFrame __("Fuse.Input.PointerEventArgs", "get_WindowPoint()");
@@ -4562,10 +4838,10 @@ int PointerEventArgs::WheelDeltaMode()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public sealed class PointerEventData :1720
+// public sealed class PointerEventData :1922
 // {
 static void PointerEventData_build(uType* type)
 {
@@ -4604,24 +4880,24 @@ uType* PointerEventData_typeof()
     return type;
 }
 
-// public generated PointerEventData() :1720
+// public generated PointerEventData() :1922
 void PointerEventData__ctor__fn(PointerEventData* __this)
 {
     __this->ctor_();
 }
 
-// public generated PointerEventData New() :1720
+// public generated PointerEventData New() :1922
 void PointerEventData__New1_fn(PointerEventData** __retval)
 {
     *__retval = PointerEventData::New1();
 }
 
-// public generated PointerEventData() [instance] :1720
+// public generated PointerEventData() [instance] :1922
 void PointerEventData::ctor_()
 {
 }
 
-// public generated PointerEventData New() [static] :1720
+// public generated PointerEventData New() [static] :1922
 PointerEventData* PointerEventData::New1()
 {
     PointerEventData* obj1 = (PointerEventData*)uNew(PointerEventData_typeof());
@@ -4630,10 +4906,10 @@ PointerEventData* PointerEventData::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// internal sealed class PointerLeft :1925
+// internal sealed class PointerLeft :2127
 // {
 static void PointerLeft_build(uType* type)
 {
@@ -4658,32 +4934,32 @@ static void PointerLeft_build(uType* type)
     return type;
 }
 
-// public generated PointerLeft() :1925
+// public generated PointerLeft() :2127
 void PointerLeft__ctor_1_fn(PointerLeft* __this)
 {
     __this->ctor_1();
 }
 
-// protected override sealed void Invoke(Fuse.Input.PointerLeftHandler handler, object sender, Fuse.Input.PointerLeftArgs args) :1927
+// protected override sealed void Invoke(Fuse.Input.PointerLeftHandler handler, object sender, Fuse.Input.PointerLeftArgs args) :2129
 void PointerLeft__Invoke_fn(PointerLeft* __this, uDelegate* handler, uObject* sender, ::g::Fuse::Input::PointerLeftArgs* args)
 {
     uStackFrame __("Fuse.Input.PointerLeft", "Invoke(Fuse.Input.PointerLeftHandler,object,Fuse.Input.PointerLeftArgs)");
     uPtr(handler)->Invoke(2, sender, args);
 }
 
-// public generated PointerLeft New() :1925
+// public generated PointerLeft New() :2127
 void PointerLeft__New1_fn(PointerLeft** __retval)
 {
     *__retval = PointerLeft::New1();
 }
 
-// public generated PointerLeft() [instance] :1925
+// public generated PointerLeft() [instance] :2127
 void PointerLeft::ctor_1()
 {
     ctor_();
 }
 
-// public generated PointerLeft New() [static] :1925
+// public generated PointerLeft New() [static] :2127
 PointerLeft* PointerLeft::New1()
 {
     PointerLeft* obj1 = (PointerLeft*)uNew(PointerLeft_typeof());
@@ -4692,10 +4968,10 @@ PointerLeft* PointerLeft::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public sealed class PointerLeftArgs :1916
+// public sealed class PointerLeftArgs :2118
 // {
 static void PointerLeftArgs_build(uType* type)
 {
@@ -4723,26 +4999,26 @@ static void PointerLeftArgs_build(uType* type)
     return type;
 }
 
-// public PointerLeftArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) :1918
+// public PointerLeftArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) :2120
 void PointerLeftArgs__ctor_3_fn(PointerLeftArgs* __this, ::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     __this->ctor_3(data, visual);
 }
 
-// public PointerLeftArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) :1918
+// public PointerLeftArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) :2120
 void PointerLeftArgs__New3_fn(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual, PointerLeftArgs** __retval)
 {
     *__retval = PointerLeftArgs::New3(data, visual);
 }
 
-// public PointerLeftArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) [instance] :1918
+// public PointerLeftArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) [instance] :2120
 void PointerLeftArgs::ctor_3(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     uStackFrame __("Fuse.Input.PointerLeftArgs", ".ctor(Fuse.Input.PointerEventData,Fuse.Visual)");
     ctor_2(data, visual);
 }
 
-// public PointerLeftArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) [static] :1918
+// public PointerLeftArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) [static] :2120
 PointerLeftArgs* PointerLeftArgs::New3(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     PointerLeftArgs* obj1 = (PointerLeftArgs*)uNew(PointerLeftArgs_typeof());
@@ -4751,10 +5027,10 @@ PointerLeftArgs* PointerLeftArgs::New3(::g::Fuse::Input::PointerEventData* data,
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public delegate void PointerLeftHandler(object sender, Fuse.Input.PointerLeftArgs args) :1923
+// public delegate void PointerLeftHandler(object sender, Fuse.Input.PointerLeftArgs args) :2125
 uDelegateType* PointerLeftHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -4767,10 +5043,10 @@ uDelegateType* PointerLeftHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// internal sealed class PointerMoved :1866
+// internal sealed class PointerMoved :2068
 // {
 static void PointerMoved_build(uType* type)
 {
@@ -4795,32 +5071,32 @@ static void PointerMoved_build(uType* type)
     return type;
 }
 
-// public generated PointerMoved() :1866
+// public generated PointerMoved() :2068
 void PointerMoved__ctor_1_fn(PointerMoved* __this)
 {
     __this->ctor_1();
 }
 
-// protected override sealed void Invoke(Fuse.Input.PointerMovedHandler handler, object sender, Fuse.Input.PointerMovedArgs args) :1868
+// protected override sealed void Invoke(Fuse.Input.PointerMovedHandler handler, object sender, Fuse.Input.PointerMovedArgs args) :2070
 void PointerMoved__Invoke_fn(PointerMoved* __this, uDelegate* handler, uObject* sender, ::g::Fuse::Input::PointerMovedArgs* args)
 {
     uStackFrame __("Fuse.Input.PointerMoved", "Invoke(Fuse.Input.PointerMovedHandler,object,Fuse.Input.PointerMovedArgs)");
     uPtr(handler)->Invoke(2, sender, args);
 }
 
-// public generated PointerMoved New() :1866
+// public generated PointerMoved New() :2068
 void PointerMoved__New1_fn(PointerMoved** __retval)
 {
     *__retval = PointerMoved::New1();
 }
 
-// public generated PointerMoved() [instance] :1866
+// public generated PointerMoved() [instance] :2068
 void PointerMoved::ctor_1()
 {
     ctor_();
 }
 
-// public generated PointerMoved New() [static] :1866
+// public generated PointerMoved New() [static] :2068
 PointerMoved* PointerMoved::New1()
 {
     PointerMoved* obj1 = (PointerMoved*)uNew(PointerMoved_typeof());
@@ -4829,10 +5105,10 @@ PointerMoved* PointerMoved::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public sealed class PointerMovedArgs :1857
+// public sealed class PointerMovedArgs :2059
 // {
 static void PointerMovedArgs_build(uType* type)
 {
@@ -4860,26 +5136,26 @@ static void PointerMovedArgs_build(uType* type)
     return type;
 }
 
-// public PointerMovedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) :1859
+// public PointerMovedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) :2061
 void PointerMovedArgs__ctor_3_fn(PointerMovedArgs* __this, ::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     __this->ctor_3(data, visual);
 }
 
-// public PointerMovedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) :1859
+// public PointerMovedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) :2061
 void PointerMovedArgs__New3_fn(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual, PointerMovedArgs** __retval)
 {
     *__retval = PointerMovedArgs::New3(data, visual);
 }
 
-// public PointerMovedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) [instance] :1859
+// public PointerMovedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) [instance] :2061
 void PointerMovedArgs::ctor_3(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     uStackFrame __("Fuse.Input.PointerMovedArgs", ".ctor(Fuse.Input.PointerEventData,Fuse.Visual)");
     ctor_2(data, visual);
 }
 
-// public PointerMovedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) [static] :1859
+// public PointerMovedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) [static] :2061
 PointerMovedArgs* PointerMovedArgs::New3(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     PointerMovedArgs* obj1 = (PointerMovedArgs*)uNew(PointerMovedArgs_typeof());
@@ -4888,10 +5164,10 @@ PointerMovedArgs* PointerMovedArgs::New3(::g::Fuse::Input::PointerEventData* dat
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public delegate void PointerMovedHandler(object sender, Fuse.Input.PointerMovedArgs args) :1864
+// public delegate void PointerMovedHandler(object sender, Fuse.Input.PointerMovedArgs args) :2066
 uDelegateType* PointerMovedHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -4904,10 +5180,10 @@ uDelegateType* PointerMovedHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// internal sealed class PointerPressed :1846
+// internal sealed class PointerPressed :2048
 // {
 static void PointerPressed_build(uType* type)
 {
@@ -4932,32 +5208,32 @@ static void PointerPressed_build(uType* type)
     return type;
 }
 
-// public generated PointerPressed() :1846
+// public generated PointerPressed() :2048
 void PointerPressed__ctor_1_fn(PointerPressed* __this)
 {
     __this->ctor_1();
 }
 
-// protected override sealed void Invoke(Fuse.Input.PointerPressedHandler handler, object sender, Fuse.Input.PointerPressedArgs args) :1848
+// protected override sealed void Invoke(Fuse.Input.PointerPressedHandler handler, object sender, Fuse.Input.PointerPressedArgs args) :2050
 void PointerPressed__Invoke_fn(PointerPressed* __this, uDelegate* handler, uObject* sender, ::g::Fuse::Input::PointerPressedArgs* args)
 {
     uStackFrame __("Fuse.Input.PointerPressed", "Invoke(Fuse.Input.PointerPressedHandler,object,Fuse.Input.PointerPressedArgs)");
     uPtr(handler)->Invoke(2, sender, args);
 }
 
-// public generated PointerPressed New() :1846
+// public generated PointerPressed New() :2048
 void PointerPressed__New1_fn(PointerPressed** __retval)
 {
     *__retval = PointerPressed::New1();
 }
 
-// public generated PointerPressed() [instance] :1846
+// public generated PointerPressed() [instance] :2048
 void PointerPressed::ctor_1()
 {
     ctor_();
 }
 
-// public generated PointerPressed New() [static] :1846
+// public generated PointerPressed New() [static] :2048
 PointerPressed* PointerPressed::New1()
 {
     PointerPressed* obj1 = (PointerPressed*)uNew(PointerPressed_typeof());
@@ -4966,10 +5242,10 @@ PointerPressed* PointerPressed::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public sealed class PointerPressedArgs :1837
+// public sealed class PointerPressedArgs :2039
 // {
 static void PointerPressedArgs_build(uType* type)
 {
@@ -4997,26 +5273,26 @@ static void PointerPressedArgs_build(uType* type)
     return type;
 }
 
-// public PointerPressedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) :1839
+// public PointerPressedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) :2041
 void PointerPressedArgs__ctor_3_fn(PointerPressedArgs* __this, ::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     __this->ctor_3(data, visual);
 }
 
-// public PointerPressedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) :1839
+// public PointerPressedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) :2041
 void PointerPressedArgs__New3_fn(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual, PointerPressedArgs** __retval)
 {
     *__retval = PointerPressedArgs::New3(data, visual);
 }
 
-// public PointerPressedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) [instance] :1839
+// public PointerPressedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) [instance] :2041
 void PointerPressedArgs::ctor_3(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     uStackFrame __("Fuse.Input.PointerPressedArgs", ".ctor(Fuse.Input.PointerEventData,Fuse.Visual)");
     ctor_2(data, visual);
 }
 
-// public PointerPressedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) [static] :1839
+// public PointerPressedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) [static] :2041
 PointerPressedArgs* PointerPressedArgs::New3(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     PointerPressedArgs* obj1 = (PointerPressedArgs*)uNew(PointerPressedArgs_typeof());
@@ -5025,10 +5301,10 @@ PointerPressedArgs* PointerPressedArgs::New3(::g::Fuse::Input::PointerEventData*
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public delegate void PointerPressedHandler(object sender, Fuse.Input.PointerPressedArgs args) :1844
+// public delegate void PointerPressedHandler(object sender, Fuse.Input.PointerPressedArgs args) :2046
 uDelegateType* PointerPressedHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -5041,10 +5317,10 @@ uDelegateType* PointerPressedHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// private sealed class Pointer.PointerRecord :1067
+// private sealed class Pointer.PointerRecord :1269
 // {
 static void Pointer__PointerRecord_build(uType* type)
 {
@@ -5070,25 +5346,25 @@ uType* Pointer__PointerRecord_typeof()
     return type;
 }
 
-// public generated PointerRecord() :1067
+// public generated PointerRecord() :1269
 void Pointer__PointerRecord__ctor__fn(Pointer__PointerRecord* __this)
 {
     __this->ctor_();
 }
 
-// public generated PointerRecord New() :1067
+// public generated PointerRecord New() :1269
 void Pointer__PointerRecord__New1_fn(Pointer__PointerRecord** __retval)
 {
     *__retval = Pointer__PointerRecord::New1();
 }
 
-// public generated PointerRecord() [instance] :1067
+// public generated PointerRecord() [instance] :1269
 void Pointer__PointerRecord::ctor_()
 {
     TimeAppeared = ::g::Uno::Diagnostics::Clock::GetSeconds();
 }
 
-// public generated PointerRecord New() [static] :1067
+// public generated PointerRecord New() [static] :1269
 Pointer__PointerRecord* Pointer__PointerRecord::New1()
 {
     Pointer__PointerRecord* obj1 = (Pointer__PointerRecord*)uNew(Pointer__PointerRecord_typeof());
@@ -5097,10 +5373,10 @@ Pointer__PointerRecord* Pointer__PointerRecord::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// internal sealed class PointerReleased :1886
+// internal sealed class PointerReleased :2088
 // {
 static void PointerReleased_build(uType* type)
 {
@@ -5125,32 +5401,32 @@ static void PointerReleased_build(uType* type)
     return type;
 }
 
-// public generated PointerReleased() :1886
+// public generated PointerReleased() :2088
 void PointerReleased__ctor_1_fn(PointerReleased* __this)
 {
     __this->ctor_1();
 }
 
-// protected override sealed void Invoke(Fuse.Input.PointerReleasedHandler handler, object sender, Fuse.Input.PointerReleasedArgs args) :1888
+// protected override sealed void Invoke(Fuse.Input.PointerReleasedHandler handler, object sender, Fuse.Input.PointerReleasedArgs args) :2090
 void PointerReleased__Invoke_fn(PointerReleased* __this, uDelegate* handler, uObject* sender, ::g::Fuse::Input::PointerReleasedArgs* args)
 {
     uStackFrame __("Fuse.Input.PointerReleased", "Invoke(Fuse.Input.PointerReleasedHandler,object,Fuse.Input.PointerReleasedArgs)");
     uPtr(handler)->Invoke(2, sender, args);
 }
 
-// public generated PointerReleased New() :1886
+// public generated PointerReleased New() :2088
 void PointerReleased__New1_fn(PointerReleased** __retval)
 {
     *__retval = PointerReleased::New1();
 }
 
-// public generated PointerReleased() [instance] :1886
+// public generated PointerReleased() [instance] :2088
 void PointerReleased::ctor_1()
 {
     ctor_();
 }
 
-// public generated PointerReleased New() [static] :1886
+// public generated PointerReleased New() [static] :2088
 PointerReleased* PointerReleased::New1()
 {
     PointerReleased* obj1 = (PointerReleased*)uNew(PointerReleased_typeof());
@@ -5159,10 +5435,10 @@ PointerReleased* PointerReleased::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public sealed class PointerReleasedArgs :1877
+// public sealed class PointerReleasedArgs :2079
 // {
 static void PointerReleasedArgs_build(uType* type)
 {
@@ -5190,26 +5466,26 @@ static void PointerReleasedArgs_build(uType* type)
     return type;
 }
 
-// public PointerReleasedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) :1879
+// public PointerReleasedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) :2081
 void PointerReleasedArgs__ctor_3_fn(PointerReleasedArgs* __this, ::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     __this->ctor_3(data, visual);
 }
 
-// public PointerReleasedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) :1879
+// public PointerReleasedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) :2081
 void PointerReleasedArgs__New3_fn(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual, PointerReleasedArgs** __retval)
 {
     *__retval = PointerReleasedArgs::New3(data, visual);
 }
 
-// public PointerReleasedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) [instance] :1879
+// public PointerReleasedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) [instance] :2081
 void PointerReleasedArgs::ctor_3(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     uStackFrame __("Fuse.Input.PointerReleasedArgs", ".ctor(Fuse.Input.PointerEventData,Fuse.Visual)");
     ctor_2(data, visual);
 }
 
-// public PointerReleasedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) [static] :1879
+// public PointerReleasedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) [static] :2081
 PointerReleasedArgs* PointerReleasedArgs::New3(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     PointerReleasedArgs* obj1 = (PointerReleasedArgs*)uNew(PointerReleasedArgs_typeof());
@@ -5218,10 +5494,10 @@ PointerReleasedArgs* PointerReleasedArgs::New3(::g::Fuse::Input::PointerEventDat
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public delegate void PointerReleasedHandler(object sender, Fuse.Input.PointerReleasedArgs args) :1884
+// public delegate void PointerReleasedHandler(object sender, Fuse.Input.PointerReleasedArgs args) :2086
 uDelegateType* PointerReleasedHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -5234,10 +5510,10 @@ uDelegateType* PointerReleasedHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// internal sealed class PointerWheelMoved :1945
+// internal sealed class PointerWheelMoved :2147
 // {
 static void PointerWheelMoved_build(uType* type)
 {
@@ -5262,32 +5538,32 @@ static void PointerWheelMoved_build(uType* type)
     return type;
 }
 
-// public generated PointerWheelMoved() :1945
+// public generated PointerWheelMoved() :2147
 void PointerWheelMoved__ctor_1_fn(PointerWheelMoved* __this)
 {
     __this->ctor_1();
 }
 
-// protected override sealed void Invoke(Fuse.Input.PointerWheelMovedHandler handler, object sender, Fuse.Input.PointerWheelMovedArgs args) :1947
+// protected override sealed void Invoke(Fuse.Input.PointerWheelMovedHandler handler, object sender, Fuse.Input.PointerWheelMovedArgs args) :2149
 void PointerWheelMoved__Invoke_fn(PointerWheelMoved* __this, uDelegate* handler, uObject* sender, ::g::Fuse::Input::PointerWheelMovedArgs* args)
 {
     uStackFrame __("Fuse.Input.PointerWheelMoved", "Invoke(Fuse.Input.PointerWheelMovedHandler,object,Fuse.Input.PointerWheelMovedArgs)");
     uPtr(handler)->Invoke(2, sender, args);
 }
 
-// public generated PointerWheelMoved New() :1945
+// public generated PointerWheelMoved New() :2147
 void PointerWheelMoved__New1_fn(PointerWheelMoved** __retval)
 {
     *__retval = PointerWheelMoved::New1();
 }
 
-// public generated PointerWheelMoved() [instance] :1945
+// public generated PointerWheelMoved() [instance] :2147
 void PointerWheelMoved::ctor_1()
 {
     ctor_();
 }
 
-// public generated PointerWheelMoved New() [static] :1945
+// public generated PointerWheelMoved New() [static] :2147
 PointerWheelMoved* PointerWheelMoved::New1()
 {
     PointerWheelMoved* obj1 = (PointerWheelMoved*)uNew(PointerWheelMoved_typeof());
@@ -5296,10 +5572,10 @@ PointerWheelMoved* PointerWheelMoved::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public sealed class PointerWheelMovedArgs :1936
+// public sealed class PointerWheelMovedArgs :2138
 // {
 static void PointerWheelMovedArgs_build(uType* type)
 {
@@ -5327,26 +5603,26 @@ static void PointerWheelMovedArgs_build(uType* type)
     return type;
 }
 
-// public PointerWheelMovedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) :1938
+// public PointerWheelMovedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) :2140
 void PointerWheelMovedArgs__ctor_3_fn(PointerWheelMovedArgs* __this, ::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     __this->ctor_3(data, visual);
 }
 
-// public PointerWheelMovedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) :1938
+// public PointerWheelMovedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) :2140
 void PointerWheelMovedArgs__New3_fn(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual, PointerWheelMovedArgs** __retval)
 {
     *__retval = PointerWheelMovedArgs::New3(data, visual);
 }
 
-// public PointerWheelMovedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) [instance] :1938
+// public PointerWheelMovedArgs(Fuse.Input.PointerEventData data, Fuse.Visual visual) [instance] :2140
 void PointerWheelMovedArgs::ctor_3(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     uStackFrame __("Fuse.Input.PointerWheelMovedArgs", ".ctor(Fuse.Input.PointerEventData,Fuse.Visual)");
     ctor_2(data, visual);
 }
 
-// public PointerWheelMovedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) [static] :1938
+// public PointerWheelMovedArgs New(Fuse.Input.PointerEventData data, Fuse.Visual visual) [static] :2140
 PointerWheelMovedArgs* PointerWheelMovedArgs::New3(::g::Fuse::Input::PointerEventData* data, ::g::Fuse::Visual* visual)
 {
     PointerWheelMovedArgs* obj1 = (PointerWheelMovedArgs*)uNew(PointerWheelMovedArgs_typeof());
@@ -5355,10 +5631,10 @@ PointerWheelMovedArgs* PointerWheelMovedArgs::New3(::g::Fuse::Input::PointerEven
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public delegate void PointerWheelMovedHandler(object sender, Fuse.Input.PointerWheelMovedArgs args) :1943
+// public delegate void PointerWheelMovedHandler(object sender, Fuse.Input.PointerWheelMovedArgs args) :2145
 uDelegateType* PointerWheelMovedHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -5371,8 +5647,8 @@ uDelegateType* PointerWheelMovedHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // private sealed class FocusPrediction.PredictFilter :28
 // {
@@ -5439,14 +5715,14 @@ FocusPrediction__PredictFilter* FocusPrediction__PredictFilter::New1(::g::Fuse::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// internal sealed class SelectionQuery :718
+// internal sealed class SelectionQuery :894
 // {
 static void SelectionQuery_build(uType* type)
 {
-    ::TYPES[32] = ::g::Fuse::HitTestCallback_typeof();
+    ::TYPES[34] = ::g::Fuse::HitTestCallback_typeof();
     type->SetFields(0,
         ::g::Fuse::HitTestResult_typeof(), offsetof(::g::Fuse::Input::SelectionQuery, _result), 0,
         ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Input::SelectionQuery, count), 0);
@@ -5467,36 +5743,36 @@ uType* SelectionQuery_typeof()
     return type;
 }
 
-// public generated SelectionQuery() :718
+// public generated SelectionQuery() :894
 void SelectionQuery__ctor__fn(SelectionQuery* __this)
 {
     __this->ctor_();
 }
 
-// public generated SelectionQuery New() :718
+// public generated SelectionQuery New() :894
 void SelectionQuery__New1_fn(SelectionQuery** __retval)
 {
     *__retval = SelectionQuery::New1();
 }
 
-// private void Select(Fuse.HitTestResult result) :731
+// private void Select(Fuse.HitTestResult result) :907
 void SelectionQuery__Select_fn(SelectionQuery* __this, ::g::Fuse::HitTestResult* result)
 {
     __this->Select(result);
 }
 
-// public Fuse.HitTestResult Select(Fuse.Visual root, float2 point) :722
+// public Fuse.HitTestResult Select(Fuse.Visual root, float2 point) :898
 void SelectionQuery__Select1_fn(SelectionQuery* __this, ::g::Fuse::Visual* root, ::g::Uno::Float2* point, ::g::Fuse::HitTestResult** __retval)
 {
     *__retval = __this->Select1(root, *point);
 }
 
-// public generated SelectionQuery() [instance] :718
+// public generated SelectionQuery() [instance] :894
 void SelectionQuery::ctor_()
 {
 }
 
-// private void Select(Fuse.HitTestResult result) [instance] :731
+// private void Select(Fuse.HitTestResult result) [instance] :907
 void SelectionQuery::Select(::g::Fuse::HitTestResult* result)
 {
     uStackFrame __("Fuse.Input.SelectionQuery", "Select(Fuse.HitTestResult)");
@@ -5506,17 +5782,17 @@ void SelectionQuery::Select(::g::Fuse::HitTestResult* result)
         _result = result;
 }
 
-// public Fuse.HitTestResult Select(Fuse.Visual root, float2 point) [instance] :722
+// public Fuse.HitTestResult Select(Fuse.Visual root, float2 point) [instance] :898
 ::g::Fuse::HitTestResult* SelectionQuery::Select1(::g::Fuse::Visual* root, ::g::Uno::Float2 point)
 {
     uStackFrame __("Fuse.Input.SelectionQuery", "Select(Fuse.Visual,float2)");
-    ::g::Fuse::HitTestContext* args = ::g::Fuse::HitTestContext::New1(point, uDelegate::New(::TYPES[32/*Fuse.HitTestCallback*/], (void*)SelectionQuery__Select_fn, this));
+    ::g::Fuse::HitTestContext* args = ::g::Fuse::HitTestContext::New1(point, uDelegate::New(::TYPES[34/*Fuse.HitTestCallback*/], (void*)SelectionQuery__Select_fn, this));
     uPtr(root)->HitTest(args);
     args->Dispose();
     return _result;
 }
 
-// public generated SelectionQuery New() [static] :718
+// public generated SelectionQuery New() [static] :894
 SelectionQuery* SelectionQuery::New1()
 {
     SelectionQuery* obj1 = (SelectionQuery*)uNew(SelectionQuery_typeof());
@@ -5525,10 +5801,10 @@ SelectionQuery* SelectionQuery::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// internal sealed class TextEntered :2000
+// internal sealed class TextEntered :2202
 // {
 static void TextEntered_build(uType* type)
 {
@@ -5553,32 +5829,32 @@ static void TextEntered_build(uType* type)
     return type;
 }
 
-// public generated TextEntered() :2000
+// public generated TextEntered() :2202
 void TextEntered__ctor_1_fn(TextEntered* __this)
 {
     __this->ctor_1();
 }
 
-// protected override sealed void Invoke(Fuse.Input.TextEnteredHandler handler, object sender, Fuse.Input.TextEnteredArgs args) :2002
+// protected override sealed void Invoke(Fuse.Input.TextEnteredHandler handler, object sender, Fuse.Input.TextEnteredArgs args) :2204
 void TextEntered__Invoke_fn(TextEntered* __this, uDelegate* handler, uObject* sender, ::g::Fuse::Input::TextEnteredArgs* args)
 {
     uStackFrame __("Fuse.Input.TextEntered", "Invoke(Fuse.Input.TextEnteredHandler,object,Fuse.Input.TextEnteredArgs)");
     uPtr(handler)->Invoke(2, sender, args);
 }
 
-// public generated TextEntered New() :2000
+// public generated TextEntered New() :2202
 void TextEntered__New1_fn(TextEntered** __retval)
 {
     *__retval = TextEntered::New1();
 }
 
-// public generated TextEntered() [instance] :2000
+// public generated TextEntered() [instance] :2202
 void TextEntered::ctor_1()
 {
     ctor_();
 }
 
-// public generated TextEntered New() [static] :2000
+// public generated TextEntered New() [static] :2202
 TextEntered* TextEntered::New1()
 {
     TextEntered* obj1 = (TextEntered*)uNew(TextEntered_typeof());
@@ -5587,15 +5863,15 @@ TextEntered* TextEntered::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public sealed class TextEnteredArgs :1983
+// public sealed class TextEnteredArgs :2185
 // {
 static void TextEnteredArgs_build(uType* type)
 {
-    ::STRINGS[26] = uString::Const("text");
-    ::TYPES[31] = ::g::Fuse::Scripting::IEventSerializer_typeof();
+    ::STRINGS[28] = uString::Const("text");
+    ::TYPES[33] = ::g::Fuse::Scripting::IEventSerializer_typeof();
     type->SetInterfaces(
         ::g::Fuse::Scripting::IScriptEvent_typeof(), offsetof(::g::Fuse::VisualEventArgs_type, interface0));
     type->SetFields(2,
@@ -5623,38 +5899,38 @@ static void TextEnteredArgs_build(uType* type)
     return type;
 }
 
-// public TextEnteredArgs(string text, Fuse.Visual visual) :1987
+// public TextEnteredArgs(string text, Fuse.Visual visual) :2189
 void TextEnteredArgs__ctor_2_fn(TextEnteredArgs* __this, uString* text, ::g::Fuse::Visual* visual)
 {
     __this->ctor_2(text, visual);
 }
 
-// public TextEnteredArgs New(string text, Fuse.Visual visual) :1987
+// public TextEnteredArgs New(string text, Fuse.Visual visual) :2189
 void TextEnteredArgs__New3_fn(uString* text, ::g::Fuse::Visual* visual, TextEnteredArgs** __retval)
 {
     *__retval = TextEnteredArgs::New3(text, visual);
 }
 
-// private override sealed void Serialize(Fuse.Scripting.IEventSerializer s) :1992
+// private override sealed void Serialize(Fuse.Scripting.IEventSerializer s) :2194
 void TextEnteredArgs__Serialize_fn(TextEnteredArgs* __this, uObject* s)
 {
     uStackFrame __("Fuse.Input.TextEnteredArgs", "Serialize(Fuse.Scripting.IEventSerializer)");
-    ::g::Fuse::Scripting::IEventSerializer::AddString(uInterface(uPtr(s), ::TYPES[31/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[26/*"text"*/], __this->Text());
+    ::g::Fuse::Scripting::IEventSerializer::AddString(uInterface(uPtr(s), ::TYPES[33/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[28/*"text"*/], __this->Text());
 }
 
-// public generated string get_Text() :1985
+// public generated string get_Text() :2187
 void TextEnteredArgs__get_Text_fn(TextEnteredArgs* __this, uString** __retval)
 {
     *__retval = __this->Text();
 }
 
-// private generated void set_Text(string value) :1985
+// private generated void set_Text(string value) :2187
 void TextEnteredArgs__set_Text_fn(TextEnteredArgs* __this, uString* value)
 {
     __this->Text(value);
 }
 
-// public TextEnteredArgs(string text, Fuse.Visual visual) [instance] :1987
+// public TextEnteredArgs(string text, Fuse.Visual visual) [instance] :2189
 void TextEnteredArgs::ctor_2(uString* text, ::g::Fuse::Visual* visual)
 {
     uStackFrame __("Fuse.Input.TextEnteredArgs", ".ctor(string,Fuse.Visual)");
@@ -5662,19 +5938,19 @@ void TextEnteredArgs::ctor_2(uString* text, ::g::Fuse::Visual* visual)
     Text(text);
 }
 
-// public generated string get_Text() [instance] :1985
+// public generated string get_Text() [instance] :2187
 uString* TextEnteredArgs::Text()
 {
     return _Text;
 }
 
-// private generated void set_Text(string value) [instance] :1985
+// private generated void set_Text(string value) [instance] :2187
 void TextEnteredArgs::Text(uString* value)
 {
     _Text = value;
 }
 
-// public TextEnteredArgs New(string text, Fuse.Visual visual) [static] :1987
+// public TextEnteredArgs New(string text, Fuse.Visual visual) [static] :2189
 TextEnteredArgs* TextEnteredArgs::New3(uString* text, ::g::Fuse::Visual* visual)
 {
     TextEnteredArgs* obj1 = (TextEnteredArgs*)uNew(TextEnteredArgs_typeof());
@@ -5683,10 +5959,10 @@ TextEnteredArgs* TextEnteredArgs::New3(uString* text, ::g::Fuse::Visual* visual)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public delegate void TextEnteredHandler(object sender, Fuse.Input.TextEnteredArgs args) :1998
+// public delegate void TextEnteredHandler(object sender, Fuse.Input.TextEnteredArgs args) :2200
 uDelegateType* TextEnteredHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -5699,12 +5975,12 @@ uDelegateType* TextEnteredHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno
+// -------------------------------------------------------------------------------------------------
 
-// public static class TextService :1961
+// public static class TextService :2163
 // {
-// static TextService() :1961
+// static TextService() :2163
 static void TextService__cctor__fn(uType* __type)
 {
     TextService::_textEntered_ = ::g::Fuse::Input::TextEntered::New1();
@@ -5732,13 +6008,13 @@ uClassType* TextService_typeof()
     return type;
 }
 
-// internal static bool RaiseTextEntered(string text) :1967
+// internal static bool RaiseTextEntered(string text) :2169
 void TextService__RaiseTextEntered_fn(uString* text, bool* __retval)
 {
     *__retval = TextService::RaiseTextEntered(text);
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.TextEnteredHandler, Fuse.Input.TextEnteredArgs> get_TextEntered() :1965
+// public static Fuse.VisualEvent<Fuse.Input.TextEnteredHandler, Fuse.Input.TextEnteredArgs> get_TextEntered() :2167
 void TextService__get_TextEntered_fn(::g::Fuse::VisualEvent** __retval)
 {
     *__retval = TextService::TextEntered();
@@ -5746,7 +6022,7 @@ void TextService__get_TextEntered_fn(::g::Fuse::VisualEvent** __retval)
 
 uSStrong< ::g::Fuse::Input::TextEntered*> TextService::_textEntered_;
 
-// internal static bool RaiseTextEntered(string text) [static] :1967
+// internal static bool RaiseTextEntered(string text) [static] :2169
 bool TextService::RaiseTextEntered(uString* text)
 {
     uStackFrame __("Fuse.Input.TextService", "RaiseTextEntered(string)");
@@ -5762,7 +6038,7 @@ bool TextService::RaiseTextEntered(uString* text)
     return false;
 }
 
-// public static Fuse.VisualEvent<Fuse.Input.TextEnteredHandler, Fuse.Input.TextEnteredArgs> get_TextEntered() [static] :1965
+// public static Fuse.VisualEvent<Fuse.Input.TextEnteredHandler, Fuse.Input.TextEnteredArgs> get_TextEntered() [static] :2167
 ::g::Fuse::VisualEvent* TextService::TextEntered()
 {
     TextService_typeof()->Init();

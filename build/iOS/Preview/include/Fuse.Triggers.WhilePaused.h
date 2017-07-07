@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -20,7 +20,7 @@ namespace g{
 namespace Fuse{
 namespace Triggers{
 
-// public sealed class WhilePaused :3932
+// public sealed class WhilePaused :3907
 // {
 ::g::Fuse::Triggers::Trigger_type* WhilePaused_typeof();
 void WhilePaused__ctor_6_fn(WhilePaused* __this);

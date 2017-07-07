@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/0.47.7/simulation/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

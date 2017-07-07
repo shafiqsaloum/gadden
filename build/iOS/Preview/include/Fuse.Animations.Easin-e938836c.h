@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal sealed class Easing.QuarticOutImpl :537
+// internal sealed class Easing.QuarticOutImpl :573
 // {
 ::g::Fuse::Animations::Easing_type* Easing__QuarticOutImpl_typeof();
 void Easing__QuarticOutImpl__ctor_1_fn(Easing__QuarticOutImpl* __this);

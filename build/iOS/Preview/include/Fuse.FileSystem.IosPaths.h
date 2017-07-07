@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace FileSystem{
 
-// internal sealed extern class IosPaths :1270
+// internal sealed extern class IosPaths :1357
 // {
 uType* IosPaths_typeof();
 void IosPaths__ctor__fn(IosPaths* __this);

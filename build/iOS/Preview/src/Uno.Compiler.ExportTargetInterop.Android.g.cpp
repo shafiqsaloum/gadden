@@ -9,8 +9,8 @@ namespace Compiler{
 namespace ExportTargetInterop{
 namespace Android{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/exporttargetinterop/foreign/android/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/exporttargetinterop/foreign/android/$.uno
+// -------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class ForeignFixedNameAttribute :25
 // {

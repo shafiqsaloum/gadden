@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.ButtonBase.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -26,7 +27,7 @@ namespace Controls{
 
 // public partial sealed class Button :94
 // {
-::g::Fuse::Controls::Control_type* Button_typeof();
+::g::Fuse::Controls::Panel_type* Button_typeof();
 void Button__ctor_8_fn(Button* __this);
 void Button__InitializeUX_fn(Button* __this);
 void Button__New5_fn(Button** __retval);

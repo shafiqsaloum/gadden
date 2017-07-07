@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/bytecode/$.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/bytecode/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace Outracks{
 namespace Simulator{
 namespace Bytecode{
 
-// public sealed class TypeNameTokenizer :1306
+// public sealed class TypeNameTokenizer :2089
 // {
 uType* TypeNameTokenizer_typeof();
 void TypeNameTokenizer__ctor__fn(TypeNameTokenizer* __this, uString* name);

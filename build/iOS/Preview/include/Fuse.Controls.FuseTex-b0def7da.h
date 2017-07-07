@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/textcontrols/fusetextrenderer/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fusetextrenderer/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

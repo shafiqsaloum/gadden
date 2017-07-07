@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/textcontrols/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -27,11 +28,11 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class Number :1639
+// public sealed class Number :1647
 // {
-struct Number_type : ::g::Fuse::Controls::Control_type
+struct Number_type : ::g::Fuse::Controls::Panel_type
 {
-    ::g::Fuse::Triggers::IValue interface15;
+    ::g::Fuse::Triggers::IValue interface16;
 };
 
 Number_type* Number_typeof();

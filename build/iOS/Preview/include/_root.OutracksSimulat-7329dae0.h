@@ -11,7 +11,7 @@ namespace g{struct OutracksSimulatorClientUno_FuseControlsTextControl_Value_Prop
 
 namespace g{
 
-// internal sealed class OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property :305
+// internal sealed class OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property :391
 // {
 ::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property_typeof();
 void OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property__ctor_3_fn(OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property* __this, ::g::Fuse::Controls::TextControl* obj, ::g::Uno::UX::Selector* name);

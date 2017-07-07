@@ -39,8 +39,8 @@ namespace g{
 namespace Fuse{
 namespace WebSocket{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // private sealed class NativeFunctionModule.FunctionClosure :131
 // {
@@ -119,8 +119,8 @@ NativeFunctionModule__FunctionClosure* NativeFunctionModule__FunctionClosure::Ne
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract interface IWebSocketClient :83
 // {
@@ -134,8 +134,8 @@ uInterfaceType* IWebSocketClient_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public abstract class NativeFunctionModule :111
 // {
@@ -200,8 +200,8 @@ void NativeFunctionModule::ctor_2(uString* name)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class WebSocketClient :8
 // {
@@ -402,8 +402,8 @@ WebSocketClient* WebSocketClient::New1(uString* uri, uArray* protocols)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class WebSocketClientModule :155
 // {
@@ -487,8 +487,8 @@ WebSocketClientModule* WebSocketClientModule::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class WebSocketClientWrapper :172
 // {
@@ -602,7 +602,7 @@ void WebSocketClientWrapper__Send_fn(WebSocketClientWrapper* __this, ::g::Fuse::
 void WebSocketClientWrapper::ctor_3(uArray* args)
 {
     uStackFrame __("Fuse.WebSocket.WebSocketClientWrapper", ".ctor(object[])");
-    ctor_2(false, uArray::Init<uObject*>(::TYPES[7/*object[]*/], 4, ::STRINGS[2/*"open"*/], ::STRINGS[3/*"error"*/], ::STRINGS[4/*"close"*/], ::STRINGS[5/*"receive"*/]));
+    ctor_2(true, uArray::Init<uObject*>(::TYPES[7/*object[]*/], 4, ::STRINGS[2/*"open"*/], ::STRINGS[3/*"error"*/], ::STRINGS[4/*"close"*/], ::STRINGS[5/*"receive"*/]));
     uString* uri = (uPtr(args)->Length() > 0) ? uAs<uString*>(uPtr(args)->Strong<uObject*>(0), ::TYPES[8/*string*/]) : NULL;
 
     if (::g::Uno::String::op_Equality(uri, NULL))

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -20,7 +20,7 @@ namespace g{namespace Uno{namespace UX{struct Template;}}}
 namespace g{
 namespace Fuse{
 
-// public sealed class Deferred :952
+// public sealed class Deferred :964
 // {
 struct Deferred_type : ::g::Fuse::Node_type
 {
@@ -29,7 +29,7 @@ struct Deferred_type : ::g::Fuse::Node_type
 
 Deferred_type* Deferred_typeof();
 void Deferred__ctor_3_fn(Deferred* __this);
-void Deferred__FuseIDeferredPerform_fn(Deferred* __this);
+void Deferred__FuseIDeferredPerform_fn(Deferred* __this, bool* __retval);
 void Deferred__GetLastNodeInGroup_fn(Deferred* __this, ::g::Fuse::Node** __retval);
 void Deferred__New2_fn(Deferred** __retval);
 void Deferred__OnRooted_fn(Deferred* __this);

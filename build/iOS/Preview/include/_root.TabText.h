@@ -5,6 +5,7 @@
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -26,7 +27,7 @@ namespace g{
 
 // public partial sealed class TabText :2
 // {
-::g::Fuse::Controls::Control_type* TabText_typeof();
+::g::Fuse::Controls::Panel_type* TabText_typeof();
 void TabText__ctor_7_fn(TabText* __this);
 void TabText__InitializeUX_fn(TabText* __this);
 void TabText__New4_fn(TabText** __retval);

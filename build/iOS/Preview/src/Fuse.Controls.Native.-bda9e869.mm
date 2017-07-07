@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <CoreGraphics/CoreGraphics.h>
@@ -21,7 +21,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// public sealed extern class ScrollView :1781
+// public sealed extern class ScrollView :1868
 // {
 static void ScrollView_build(uType* type)
 {
@@ -61,80 +61,80 @@ ScrollView_type* ScrollView_typeof()
     return type;
 }
 
-// public ScrollView(Fuse.Controls.Native.IScrollViewHost host) :1797
+// public ScrollView(Fuse.Controls.Native.IScrollViewHost host) :1884
 void ScrollView__ctor_4_fn(ScrollView* __this, uObject* host)
 {
     __this->ctor_4(host);
 }
 
-// private static ObjC.Object AddCallback(ObjC.Object handle, Uno.Action<ObjC.Object> callback) :1819
+// private static ObjC.Object AddCallback(ObjC.Object handle, Uno.Action<ObjC.Object> callback) :1906
 void ScrollView__AddCallback_fn(::g::ObjC::Object* handle, uDelegate* callback, ::g::ObjC::Object** __retval)
 {
     *__retval = ScrollView::AddCallback(handle, callback);
 }
 
-// public void set_AllowedScrollDirections(Fuse.Controls.ScrollDirections value) :1788
+// public void set_AllowedScrollDirections(Fuse.Controls.ScrollDirections value) :1875
 void ScrollView__set_AllowedScrollDirections_fn(ScrollView* __this, int* value)
 {
     __this->AllowedScrollDirections(*value);
 }
 
-// private static ObjC.Object Create() :1810
+// private static ObjC.Object Create() :1897
 void ScrollView__Create_fn(::g::ObjC::Object** __retval)
 {
     *__retval = ScrollView::Create();
 }
 
-// public override sealed void Dispose() :1803
+// public override sealed void Dispose() :1890
 void ScrollView__Dispose_fn(ScrollView* __this)
 {
     __this->_host = NULL;
     ::g::Fuse::Controls::Native::ViewHandle__Dispose_fn(__this);
 }
 
-// private static void GetContentOffset(ObjC.Object handle, float& x, float& y) :1852
+// private static void GetContentOffset(ObjC.Object handle, float& x, float& y) :1939
 void ScrollView__GetContentOffset_fn(::g::ObjC::Object* handle, float* x, float* y)
 {
     ScrollView::GetContentOffset(handle, x, y);
 }
 
-// public ScrollView New(Fuse.Controls.Native.IScrollViewHost host) :1797
+// public ScrollView New(Fuse.Controls.Native.IScrollViewHost host) :1884
 void ScrollView__New3_fn(uObject* host, ScrollView** __retval)
 {
     *__retval = ScrollView::New3(host);
 }
 
-// private void OnScrollViewDidScroll(ObjC.Object scrollViewHandle) :1828
+// private void OnScrollViewDidScroll(ObjC.Object scrollViewHandle) :1915
 void ScrollView__OnScrollViewDidScroll_fn(ScrollView* __this, ::g::ObjC::Object* scrollViewHandle)
 {
     __this->OnScrollViewDidScroll(scrollViewHandle);
 }
 
-// protected internal override sealed void OnSizeChanged() :1836
+// protected internal override sealed void OnSizeChanged() :1923
 void ScrollView__OnSizeChanged_fn(ScrollView* __this)
 {
     ScrollView::SetContentSize(__this->Handle(), __this->Size().X, __this->Size().Y);
 }
 
-// public void set_ScrollPosition(float2 value) :1793
+// public void set_ScrollPosition(float2 value) :1880
 void ScrollView__set_ScrollPosition_fn(ScrollView* __this, ::g::Uno::Float2* value)
 {
     __this->ScrollPosition(*value);
 }
 
-// private static void SetContentOffset(ObjC.Object handle, float x, float y) :1842
+// private static void SetContentOffset(ObjC.Object handle, float x, float y) :1929
 void ScrollView__SetContentOffset_fn(::g::ObjC::Object* handle, float* x, float* y)
 {
     ScrollView::SetContentOffset(handle, *x, *y);
 }
 
-// private static void SetContentSize(ObjC.Object handle, float w, float h) :1861
+// private static void SetContentSize(ObjC.Object handle, float w, float h) :1948
 void ScrollView__SetContentSize_fn(::g::ObjC::Object* handle, float* w, float* h)
 {
     ScrollView::SetContentSize(handle, *w, *h);
 }
 
-// public ScrollView(Fuse.Controls.Native.IScrollViewHost host) [instance] :1797
+// public ScrollView(Fuse.Controls.Native.IScrollViewHost host) [instance] :1884
 void ScrollView::ctor_4(uObject* host)
 {
     ctor_2(ScrollView::Create());
@@ -142,12 +142,12 @@ void ScrollView::ctor_4(uObject* host)
     _delegateHandle = ScrollView::AddCallback(Handle(), uDelegate::New(::TYPES[0/*Uno.Action<ObjC.Object>*/], (void*)ScrollView__OnScrollViewDidScroll_fn, this));
 }
 
-// public void set_AllowedScrollDirections(Fuse.Controls.ScrollDirections value) [instance] :1788
+// public void set_AllowedScrollDirections(Fuse.Controls.ScrollDirections value) [instance] :1875
 void ScrollView::AllowedScrollDirections(int value)
 {
 }
 
-// private void OnScrollViewDidScroll(ObjC.Object scrollViewHandle) [instance] :1828
+// private void OnScrollViewDidScroll(ObjC.Object scrollViewHandle) [instance] :1915
 void ScrollView::OnScrollViewDidScroll(::g::ObjC::Object* scrollViewHandle)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.ScrollView", "OnScrollViewDidScroll(ObjC.Object)");
@@ -157,13 +157,13 @@ void ScrollView::OnScrollViewDidScroll(::g::ObjC::Object* scrollViewHandle)
     ::g::Fuse::Controls::Native::IScrollViewHost::OnScrollPositionChanged(uInterface(uPtr(_host), ::TYPES[1/*Fuse.Controls.Native.IScrollViewHost*/]), ::g::Uno::Float2__New2(x, y));
 }
 
-// public void set_ScrollPosition(float2 value) [instance] :1793
+// public void set_ScrollPosition(float2 value) [instance] :1880
 void ScrollView::ScrollPosition(::g::Uno::Float2 value)
 {
     ScrollView::SetContentOffset(Handle(), value.X, value.Y);
 }
 
-// private static ObjC.Object AddCallback(ObjC.Object handle, Uno.Action<ObjC.Object> callback) [static] :1819
+// private static ObjC.Object AddCallback(ObjC.Object handle, Uno.Action<ObjC.Object> callback) [static] :1906
 ::g::ObjC::Object* ScrollView::AddCallback(::g::ObjC::Object* handle, uDelegate* callback)
 {
     @autoreleasepool
@@ -190,7 +190,7 @@ void ScrollView::ScrollPosition(::g::Uno::Float2 value)
     
 }
 
-// private static ObjC.Object Create() [static] :1810
+// private static ObjC.Object Create() [static] :1897
 ::g::ObjC::Object* ScrollView::Create()
 {
     @autoreleasepool
@@ -207,7 +207,7 @@ void ScrollView::ScrollPosition(::g::Uno::Float2 value)
     
 }
 
-// private static void GetContentOffset(ObjC.Object handle, float& x, float& y) [static] :1852
+// private static void GetContentOffset(ObjC.Object handle, float& x, float& y) [static] :1939
 void ScrollView::GetContentOffset(::g::ObjC::Object* handle, float* x, float* y)
 {
     @autoreleasepool
@@ -224,7 +224,7 @@ void ScrollView::GetContentOffset(::g::ObjC::Object* handle, float* x, float* y)
     
 }
 
-// public ScrollView New(Fuse.Controls.Native.IScrollViewHost host) [static] :1797
+// public ScrollView New(Fuse.Controls.Native.IScrollViewHost host) [static] :1884
 ScrollView* ScrollView::New3(uObject* host)
 {
     ScrollView* obj1 = (ScrollView*)uNew(ScrollView_typeof());
@@ -232,7 +232,7 @@ ScrollView* ScrollView::New3(uObject* host)
     return obj1;
 }
 
-// private static void SetContentOffset(ObjC.Object handle, float x, float y) [static] :1842
+// private static void SetContentOffset(ObjC.Object handle, float x, float y) [static] :1929
 void ScrollView::SetContentOffset(::g::ObjC::Object* handle, float x, float y)
 {
     @autoreleasepool
@@ -250,7 +250,7 @@ void ScrollView::SetContentOffset(::g::ObjC::Object* handle, float x, float y)
     
 }
 
-// private static void SetContentSize(ObjC.Object handle, float w, float h) [static] :1861
+// private static void SetContentSize(ObjC.Object handle, float w, float h) [static] :1948
 void ScrollView::SetContentSize(::g::ObjC::Object* handle, float w, float h)
 {
     @autoreleasepool

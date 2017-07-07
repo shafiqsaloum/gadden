@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace Fuse{
 namespace Controls{
 namespace Native{
 
-// public abstract interface IOffscreenRendererHost :497
+// public abstract interface IOffscreenRendererHost :498
 // {
 uInterfaceType* IOffscreenRendererHost_typeof();
 

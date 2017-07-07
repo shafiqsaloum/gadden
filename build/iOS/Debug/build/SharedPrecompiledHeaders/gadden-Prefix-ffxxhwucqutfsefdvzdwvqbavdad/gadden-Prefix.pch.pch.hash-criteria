@@ -1,0 +1,32 @@
+-x
+objective-c++
+-arch
+armv7
+-std=c++11
+-stdlib=libc++
+-fobjc-arc
+-fmodules
+-gmodules
+-fbuild-session-file=/var/folders/2g/d8r1sqzd37d59h4n16gb87kc0000gn/C/org.llvm.clang/ModuleCache/Session.modulevalidation
+-fpascal-strings
+-Os
+-fno-common
+-DNS_BLOCK_ASSERTIONS=1
+-DOBJC_OLD_DISPATCH_PROTOTYPES=0
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk
+-miphoneos-version-min=8.0
+-g
+-fvisibility=hidden
+-fvisibility-inlines-hidden
+-iquote
+-iquote
+-I/Users/ericaglimsholt/Documents/Skola/Handels marketing/Gadden/gadden/build/iOS/Debug/build/Release-iphoneos/include
+-Iinclude
+-I/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/prebuilt/iOS/include
+-F/Users/ericaglimsholt/Documents/Skola/Handels marketing/Gadden/gadden/build/iOS/Debug/build/Release-iphoneos
+-F/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/0.47.7/ios/jetfire/Jetfire-iOS/Carthage/Build/iOS
+arm-apple-darwin16.3.0
+"4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.42)"
+SDK_PRODUCT_BUILD_VERSION=14E8301
+14E8301

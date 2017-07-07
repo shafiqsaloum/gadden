@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace Fuse{struct FastProperty1Link1;}}
 namespace g{
 namespace Fuse{
 
-// internal sealed class FastProperty1Link<T> :5372
+// internal sealed class FastProperty1Link<T> :5461
 // {
 uType* FastProperty1Link1_typeof();
 void FastProperty1Link1__ctor_1_fn(FastProperty1Link1* __this, int* p, void* value);

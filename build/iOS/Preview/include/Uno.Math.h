@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -48,7 +48,6 @@ void Math__Max1_fn(float* a, float* b, float* __retval);
 void Math__Max2_fn(::g::Uno::Float2* a, float* b, ::g::Uno::Float2* __retval);
 void Math__Max3_fn(::g::Uno::Float2* a, ::g::Uno::Float2* b, ::g::Uno::Float2* __retval);
 void Math__Max5_fn(::g::Uno::Float3* a, ::g::Uno::Float3* b, ::g::Uno::Float3* __retval);
-void Math__Max7_fn(::g::Uno::Float4* a, ::g::Uno::Float4* b, ::g::Uno::Float4* __retval);
 void Math__Max8_fn(int* a, int* b, int* __retval);
 void Math__Max10_fn(::g::Uno::Int2* a, ::g::Uno::Int2* b, ::g::Uno::Int2* __retval);
 void Math__Min_fn(double* a, double* b, double* __retval);
@@ -113,7 +112,6 @@ struct Math : uObject
     static ::g::Uno::Float2 Max2(::g::Uno::Float2 a, float b);
     static ::g::Uno::Float2 Max3(::g::Uno::Float2 a, ::g::Uno::Float2 b);
     static ::g::Uno::Float3 Max5(::g::Uno::Float3 a, ::g::Uno::Float3 b);
-    static ::g::Uno::Float4 Max7(::g::Uno::Float4 a, ::g::Uno::Float4 b);
     static int Max8(int a, int b);
     static ::g::Uno::Int2 Max10(::g::Uno::Int2 a, ::g::Uno::Int2 b);
     static double Min(double a, double b);

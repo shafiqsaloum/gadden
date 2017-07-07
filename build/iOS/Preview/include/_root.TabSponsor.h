@@ -5,6 +5,7 @@
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -26,7 +27,7 @@ namespace g{
 
 // public partial sealed class TabSponsor :2
 // {
-::g::Fuse::Controls::Control_type* TabSponsor_typeof();
+::g::Fuse::Controls::Panel_type* TabSponsor_typeof();
 void TabSponsor__ctor_7_fn(TabSponsor* __this);
 void TabSponsor__InitializeUX_fn(TabSponsor* __this);
 void TabSponsor__New4_fn(TabSponsor** __retval);

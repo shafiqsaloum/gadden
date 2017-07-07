@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/ux/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,16 +10,16 @@ namespace g{
 namespace Uno{
 namespace UX{
 
-// public static extern class SimulatedProperties :388
+// public static extern class SimulatedProperties :398
 // {
 uClassType* SimulatedProperties_typeof();
 void SimulatedProperties__Get_fn(::g::Uno::UX::PropertyObject* obj, uString* name, uObject** __retval);
-void SimulatedProperties__Set_fn(::g::Uno::UX::PropertyObject* obj, uString* name, uObject* value);
+void SimulatedProperties__Set_fn(::g::Uno::UX::PropertyObject* obj, uString* name, uObject* value, uObject* origin);
 
 struct SimulatedProperties : uObject
 {
     static uObject* Get(::g::Uno::UX::PropertyObject* obj, uString* name);
-    static void Set(::g::Uno::UX::PropertyObject* obj, uString* name, uObject* value);
+    static void Set(::g::Uno::UX::PropertyObject* obj, uString* name, uObject* value, uObject* origin);
 };
 // }
 

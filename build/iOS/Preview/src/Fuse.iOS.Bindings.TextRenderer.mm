@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.Controls.TextControl.h>
@@ -38,9 +38,9 @@ namespace Fuse{
 namespace iOS{
 namespace Bindings{
 
-// public sealed extern class TextRenderer :753
+// internal sealed extern class TextRenderer :190
 // {
-// static TextRenderer() :753
+// static TextRenderer() :190
 static void TextRenderer__cctor__fn(uType* __type)
 {
     TextRenderer::_colorSpace_ = TextRenderer::CGColorSpaceCreateDeviceRGB();
@@ -60,14 +60,6 @@ static void TextRenderer_build(uType* type)
         ::g::Fuse::iOS::Bindings::TextLayout_typeof(), offsetof(::g::Fuse::iOS::Bindings::TextRenderer, _textLayout), 0,
         ::g::Uno::Graphics::Texture2D_typeof(), offsetof(::g::Fuse::iOS::Bindings::TextRenderer, _texture), 0,
         ::g::Fuse::iOS::Bindings::CGColorSpaceRef_typeof(), (uintptr_t)&::g::Fuse::iOS::Bindings::TextRenderer::_colorSpace_, uFieldFlagsStatic);
-    type->Reflection.SetFunctions(7,
-        new uFunction("Arrange", NULL, (void*)TextRenderer__Arrange_fn, 0, false, uVoid_typeof(), 2, ::g::Uno::Float2_typeof(), ::g::Uno::Float2_typeof()),
-        new uFunction("Draw", NULL, (void*)TextRenderer__Draw_fn, 0, false, uVoid_typeof(), 2, ::g::Fuse::DrawContext_typeof(), ::g::Fuse::Visual_typeof()),
-        new uFunction("GetContentSize", NULL, (void*)TextRenderer__GetContentSize_fn, 0, false, ::g::Uno::Float2_typeof(), 1, ::g::Fuse::LayoutParams_typeof()),
-        new uFunction("GetRenderBounds", NULL, (void*)TextRenderer__GetRenderBounds_fn, 0, false, ::g::Uno::Rect_typeof(), 0),
-        new uFunction("Invalidate", NULL, (void*)TextRenderer__Invalidate_fn, 0, false, uVoid_typeof(), 0),
-        new uFunction(".ctor", NULL, (void*)TextRenderer__New1_fn, 0, true, type, 1, ::g::Fuse::Controls::TextControl_typeof()),
-        new uFunction("SoftDispose", NULL, (void*)TextRenderer__SoftDispose_fn, 0, false, uVoid_typeof(), 0));
 }
 
 TextRenderer_type* TextRenderer_typeof()
@@ -92,85 +84,85 @@ TextRenderer_type* TextRenderer_typeof()
     return type;
 }
 
-// public TextRenderer(Fuse.Controls.TextControl control) :768
+// public TextRenderer(Fuse.Controls.TextControl control) :205
 void TextRenderer__ctor__fn(TextRenderer* __this, ::g::Fuse::Controls::TextControl* control)
 {
     __this->ctor_(control);
 }
 
-// public void Arrange(float2 position, float2 size) :862
+// public void Arrange(float2 position, float2 size) :299
 void TextRenderer__Arrange_fn(TextRenderer* __this, ::g::Uno::Float2* position, ::g::Uno::Float2* size)
 {
     __this->Arrange(*position, *size);
 }
 
-// private static Fuse.iOS.Bindings.CGContextRef CGBitmapContextCreate(Uno.IntPtr textureBuffer, int width, int height, Fuse.iOS.Bindings.CGColorSpaceRef colorSpace) :834
+// private static Fuse.iOS.Bindings.CGContextRef CGBitmapContextCreate(Uno.IntPtr textureBuffer, int width, int height, Fuse.iOS.Bindings.CGColorSpaceRef colorSpace) :271
 void TextRenderer__CGBitmapContextCreate_fn(void** textureBuffer, int* width, int* height, ::CGColorSpaceRef* colorSpace, ::CGContextRef* __retval)
 {
     *__retval = TextRenderer::CGBitmapContextCreate(*textureBuffer, *width, *height, *colorSpace);
 }
 
-// private static Fuse.iOS.Bindings.CGColorSpaceRef CGColorSpaceCreateDeviceRGB() :757
+// private static Fuse.iOS.Bindings.CGColorSpaceRef CGColorSpaceCreateDeviceRGB() :194
 void TextRenderer__CGColorSpaceCreateDeviceRGB_fn(::CGColorSpaceRef* __retval)
 {
     *__retval = TextRenderer::CGColorSpaceCreateDeviceRGB();
 }
 
-// private static void CGContextRelease(Fuse.iOS.Bindings.CGContextRef context) :840
+// private static void CGContextRelease(Fuse.iOS.Bindings.CGContextRef context) :277
 void TextRenderer__CGContextRelease_fn(::CGContextRef* context)
 {
     TextRenderer::CGContextRelease(*context);
 }
 
-// internal static Fuse.Controls.ITextRenderer Create(Fuse.Controls.TextControl control) :759
+// internal static Fuse.Controls.ITextRenderer Create(Fuse.Controls.TextControl control) :196
 void TextRenderer__Create_fn(::g::Fuse::Controls::TextControl* control, uObject** __retval)
 {
     *__retval = TextRenderer::Create(control);
 }
 
-// public void Draw(Fuse.DrawContext dc, Fuse.Visual where) :789
+// public void Draw(Fuse.DrawContext dc, Fuse.Visual where) :226
 void TextRenderer__Draw_fn(TextRenderer* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Visual* where)
 {
     __this->Draw(dc, where);
 }
 
-// private static void DrawGlyphs(Fuse.iOS.Bindings.CGContextRef context, float x, float y, int width, int height, ObjC.Object layoutManager, ObjC.Object textContainer) :843
+// private static void DrawGlyphs(Fuse.iOS.Bindings.CGContextRef context, float x, float y, int width, int height, ObjC.Object layoutManager, ObjC.Object textContainer) :280
 void TextRenderer__DrawGlyphs_fn(::CGContextRef* context, float* x, float* y, int* width, int* height, ::g::ObjC::Object* layoutManager, ::g::ObjC::Object* textContainer)
 {
     TextRenderer::DrawGlyphs(*context, *x, *y, *width, *height, layoutManager, textContainer);
 }
 
-// public float2 GetContentSize(Fuse.LayoutParams lp) :773
+// public float2 GetContentSize(Fuse.LayoutParams lp) :210
 void TextRenderer__GetContentSize_fn(TextRenderer* __this, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->GetContentSize(*lp);
 }
 
-// public Uno.Rect GetRenderBounds() :894
+// public Uno.Rect GetRenderBounds() :331
 void TextRenderer__GetRenderBounds_fn(TextRenderer* __this, ::g::Uno::Rect* __retval)
 {
     *__retval = __this->GetRenderBounds();
 }
 
-// public void Invalidate() :872
+// public void Invalidate() :309
 void TextRenderer__Invalidate_fn(TextRenderer* __this)
 {
     __this->Invalidate();
 }
 
-// private void InvalidateTexture() :885
+// private void InvalidateTexture() :322
 void TextRenderer__InvalidateTexture_fn(TextRenderer* __this)
 {
     __this->InvalidateTexture();
 }
 
-// public TextRenderer New(Fuse.Controls.TextControl control) :768
+// public TextRenderer New(Fuse.Controls.TextControl control) :205
 void TextRenderer__New1_fn(::g::Fuse::Controls::TextControl* control, TextRenderer** __retval)
 {
     *__retval = TextRenderer::New1(control);
 }
 
-// public void SoftDispose() :880
+// public void SoftDispose() :317
 void TextRenderer__SoftDispose_fn(TextRenderer* __this)
 {
     __this->SoftDispose();
@@ -178,14 +170,14 @@ void TextRenderer__SoftDispose_fn(TextRenderer* __this)
 
 ::CGColorSpaceRef TextRenderer::_colorSpace_;
 
-// public TextRenderer(Fuse.Controls.TextControl control) [instance] :768
+// public TextRenderer(Fuse.Controls.TextControl control) [instance] :205
 void TextRenderer::ctor_(::g::Fuse::Controls::TextControl* control)
 {
     _textLayout = ::g::Fuse::iOS::Bindings::TextLayout::New1();
     _control = control;
 }
 
-// public void Arrange(float2 position, float2 size) [instance] :862
+// public void Arrange(float2 position, float2 size) [instance] :299
 void TextRenderer::Arrange(::g::Uno::Float2 position, ::g::Uno::Float2 size)
 {
     uStackFrame __("Fuse.iOS.Bindings.TextRenderer", "Arrange(float2,float2)");
@@ -195,7 +187,7 @@ void TextRenderer::Arrange(::g::Uno::Float2 position, ::g::Uno::Float2 size)
     uPtr(_textLayout)->UpdateLayout(_control, _arrangeSize, false);
 }
 
-// public void Draw(Fuse.DrawContext dc, Fuse.Visual where) [instance] :789
+// public void Draw(Fuse.DrawContext dc, Fuse.Visual where) [instance] :226
 void TextRenderer::Draw(::g::Fuse::DrawContext* dc, ::g::Fuse::Visual* where)
 {
     uStackFrame __("Fuse.iOS.Bindings.TextRenderer", "Draw(Fuse.DrawContext,Fuse.Visual)");
@@ -236,7 +228,7 @@ void TextRenderer::Draw(::g::Fuse::DrawContext* dc, ::g::Fuse::Visual* where)
     uPtr(::g::Fuse::iOS::Bindings::Blitter::Singleton())->Blit(dc, where, _texture, ::g::Uno::Float2__op_Addition2(::g::Uno::Float2__op_Division1(uPtr(_textLayout)->PixelBounds.Position(), ::g::Fuse::ICommonViewport::PixelsPerPoint(uInterface(uPtr(uPtr(_control)->Viewport()), ::TYPES[0/*Fuse.ICommonViewport*/]))), _arrangePosition), pointSize);
 }
 
-// public float2 GetContentSize(Fuse.LayoutParams lp) [instance] :773
+// public float2 GetContentSize(Fuse.LayoutParams lp) [instance] :210
 ::g::Uno::Float2 TextRenderer::GetContentSize(::g::Fuse::LayoutParams lp)
 {
     uStackFrame __("Fuse.iOS.Bindings.TextRenderer", "GetContentSize(Fuse.LayoutParams)");
@@ -256,7 +248,7 @@ void TextRenderer::Draw(::g::Fuse::DrawContext* dc, ::g::Fuse::Visual* where)
     return ::g::Uno::Float2__op_Division1(uPtr(_measureLayout)->PixelBounds.Size(), ::g::Fuse::ICommonViewport::PixelsPerPoint(uInterface(uPtr(uPtr(_control)->Viewport()), ::TYPES[0/*Fuse.ICommonViewport*/])));
 }
 
-// public Uno.Rect GetRenderBounds() [instance] :894
+// public Uno.Rect GetRenderBounds() [instance] :331
 ::g::Uno::Rect TextRenderer::GetRenderBounds()
 {
     uStackFrame __("Fuse.iOS.Bindings.TextRenderer", "GetRenderBounds()");
@@ -264,7 +256,7 @@ void TextRenderer::Draw(::g::Fuse::DrawContext* dc, ::g::Fuse::Visual* where)
     return ::g::Uno::Rect__Translate(::g::Uno::Rect__New2(::g::Uno::Float2__op_Division1(uPtr(_textLayout)->PixelBounds.Position(), ::g::Fuse::ICommonViewport::PixelsPerPoint(uInterface(uPtr(uPtr(_control)->Viewport()), ::TYPES[0/*Fuse.ICommonViewport*/]))), ::g::Uno::Float2__op_Division1(uPtr(_textLayout)->PixelBounds.Size(), ::g::Fuse::ICommonViewport::PixelsPerPoint(uInterface(uPtr(uPtr(_control)->Viewport()), ::TYPES[0/*Fuse.ICommonViewport*/])))), _arrangePosition);
 }
 
-// public void Invalidate() [instance] :872
+// public void Invalidate() [instance] :309
 void TextRenderer::Invalidate()
 {
     uStackFrame __("Fuse.iOS.Bindings.TextRenderer", "Invalidate()");
@@ -276,7 +268,7 @@ void TextRenderer::Invalidate()
     InvalidateTexture();
 }
 
-// private void InvalidateTexture() [instance] :885
+// private void InvalidateTexture() [instance] :322
 void TextRenderer::InvalidateTexture()
 {
     uStackFrame __("Fuse.iOS.Bindings.TextRenderer", "InvalidateTexture()");
@@ -288,14 +280,14 @@ void TextRenderer::InvalidateTexture()
     }
 }
 
-// public void SoftDispose() [instance] :880
+// public void SoftDispose() [instance] :317
 void TextRenderer::SoftDispose()
 {
     uStackFrame __("Fuse.iOS.Bindings.TextRenderer", "SoftDispose()");
     InvalidateTexture();
 }
 
-// private static Fuse.iOS.Bindings.CGContextRef CGBitmapContextCreate(Uno.IntPtr textureBuffer, int width, int height, Fuse.iOS.Bindings.CGColorSpaceRef colorSpace) [static] :834
+// private static Fuse.iOS.Bindings.CGContextRef CGBitmapContextCreate(Uno.IntPtr textureBuffer, int width, int height, Fuse.iOS.Bindings.CGColorSpaceRef colorSpace) [static] :271
 ::CGContextRef TextRenderer::CGBitmapContextCreate(void* textureBuffer, int width, int height, ::CGColorSpaceRef colorSpace)
 {
     TextRenderer_typeof()->Init();
@@ -303,21 +295,21 @@ void TextRenderer::SoftDispose()
     return ::CGBitmapContextCreate(textureBuffer, width, height, 8, width * 4, colorSpace, flags);
 }
 
-// private static Fuse.iOS.Bindings.CGColorSpaceRef CGColorSpaceCreateDeviceRGB() [static] :757
+// private static Fuse.iOS.Bindings.CGColorSpaceRef CGColorSpaceCreateDeviceRGB() [static] :194
 ::CGColorSpaceRef TextRenderer::CGColorSpaceCreateDeviceRGB()
 {
     TextRenderer_typeof()->Init();
     return ::CGColorSpaceCreateDeviceRGB();
 }
 
-// private static void CGContextRelease(Fuse.iOS.Bindings.CGContextRef context) [static] :840
+// private static void CGContextRelease(Fuse.iOS.Bindings.CGContextRef context) [static] :277
 void TextRenderer::CGContextRelease(::CGContextRef context)
 {
     TextRenderer_typeof()->Init();
     ::CGContextRelease(context);
 }
 
-// internal static Fuse.Controls.ITextRenderer Create(Fuse.Controls.TextControl control) [static] :759
+// internal static Fuse.Controls.ITextRenderer Create(Fuse.Controls.TextControl control) [static] :196
 uObject* TextRenderer::Create(::g::Fuse::Controls::TextControl* control)
 {
     uStackFrame __("Fuse.iOS.Bindings.TextRenderer", "Create(Fuse.Controls.TextControl)");
@@ -325,7 +317,7 @@ uObject* TextRenderer::Create(::g::Fuse::Controls::TextControl* control)
     return (uObject*)TextRenderer::New1(control);
 }
 
-// private static void DrawGlyphs(Fuse.iOS.Bindings.CGContextRef context, float x, float y, int width, int height, ObjC.Object layoutManager, ObjC.Object textContainer) [static] :843
+// private static void DrawGlyphs(Fuse.iOS.Bindings.CGContextRef context, float x, float y, int width, int height, ObjC.Object layoutManager, ObjC.Object textContainer) [static] :280
 void TextRenderer::DrawGlyphs(::CGContextRef context, float x, float y, int width, int height, ::g::ObjC::Object* layoutManager, ::g::ObjC::Object* textContainer)
 {
     TextRenderer_typeof()->Init();
@@ -348,7 +340,7 @@ void TextRenderer::DrawGlyphs(::CGContextRef context, float x, float y, int widt
     
 }
 
-// public TextRenderer New(Fuse.Controls.TextControl control) [static] :768
+// public TextRenderer New(Fuse.Controls.TextControl control) [static] :205
 TextRenderer* TextRenderer::New1(::g::Fuse::Controls::TextControl* control)
 {
     TextRenderer* obj1 = (TextRenderer*)uNew(TextRenderer_typeof());

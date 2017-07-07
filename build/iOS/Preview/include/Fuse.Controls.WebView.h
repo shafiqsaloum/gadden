@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -7,6 +7,7 @@
 #include <Fuse.Controls.ISourceReceiver.h>
 #include <Fuse.Controls.IWebView.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -34,12 +35,12 @@ namespace Controls{
 
 // public partial sealed class WebView :126
 // {
-struct WebView_type : ::g::Fuse::Controls::Control_type
+struct WebView_type : ::g::Fuse::Controls::Panel_type
 {
-    ::g::Fuse::Controls::IWebView interface15;
-    ::g::Fuse::Triggers::IProgress interface16;
-    ::g::Fuse::Navigation::IBaseNavigation interface17;
-    ::g::Fuse::Controls::ISourceReceiver interface18;
+    ::g::Fuse::Controls::IWebView interface16;
+    ::g::Fuse::Triggers::IProgress interface17;
+    ::g::Fuse::Navigation::IBaseNavigation interface18;
+    ::g::Fuse::Controls::ISourceReceiver interface19;
 };
 
 WebView_type* WebView_typeof();

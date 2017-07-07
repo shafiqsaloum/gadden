@@ -4,6 +4,7 @@
 #pragma once
 #include <Fuse.App.h>
 #include <Fuse.IProperties.h>
+#include <Uno.Float4.h>
 namespace g{namespace Fuse{namespace Controls{struct Page;}}}
 namespace g{namespace Fuse{namespace Controls{struct PageControl;}}}
 namespace g{namespace Fuse{namespace Controls{struct Panel;}}}
@@ -11,8 +12,6 @@ namespace g{namespace Fuse{namespace Controls{struct Rectangle;}}}
 namespace g{namespace Fuse{namespace Controls{struct Shadow;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
-namespace g{namespace Fuse{namespace Reactive{struct EventBinding;}}}
-namespace g{namespace Fuse{namespace Triggers{struct Scrolled;}}}
 namespace g{namespace Fuse{struct Font;}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Uno{namespace UX{struct NameTable;}}}
@@ -82,6 +81,10 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector29() { return MainView_typeof()->Init(), __selector29_; }
     static ::g::Uno::UX::Selector __selector3_;
     static ::g::Uno::UX::Selector& __selector3() { return MainView_typeof()->Init(), __selector3_; }
+    static ::g::Uno::UX::Selector __selector30_;
+    static ::g::Uno::UX::Selector& __selector30() { return MainView_typeof()->Init(), __selector30_; }
+    static ::g::Uno::UX::Selector __selector31_;
+    static ::g::Uno::UX::Selector& __selector31() { return MainView_typeof()->Init(), __selector31_; }
     static ::g::Uno::UX::Selector __selector4_;
     static ::g::Uno::UX::Selector& __selector4() { return MainView_typeof()->Init(), __selector4_; }
     static ::g::Uno::UX::Selector __selector5_;
@@ -95,7 +98,6 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector __selector9_;
     static ::g::Uno::UX::Selector& __selector9() { return MainView_typeof()->Init(), __selector9_; }
     uStrong< ::g::Fuse::Controls::Page*> aboutus;
-    uStrong< ::g::Fuse::Triggers::Scrolled*> atEnd;
     uStrong< ::g::Fuse::Controls::Page*> exhibitor;
     uStrong< ::g::Fuse::Controls::Page*> goodiebag;
     uStrong< ::g::Fuse::Controls::Panel*> GoodiebagTab;
@@ -124,15 +126,16 @@ struct MainView : ::g::Fuse::App
     static uSStrong< ::g::Fuse::Font*>& RalewayBlack() { return MainView_typeof()->Init(), RalewayBlack_; }
     uStrong< ::g::Fuse::Navigation::Router*> router;
     uStrong< ::g::Fuse::Controls::Shadow*> shadow;
+    uStrong< ::g::Uno::UX::Property1*> shadow_Color_inst;
+    uStrong< ::g::Fuse::Controls::Shadow*> shadowProfile;
     uStrong< ::g::Fuse::Controls::Panel*> sidebar;
+    uStrong< ::g::Fuse::Controls::Rectangle*> sidebarFade;
+    uStrong< ::g::Uno::UX::Property1*> sidebarFade_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Panel*> sidebarProfile;
     uStrong< ::g::Fuse::Controls::Page*> sponsor;
     uStrong< ::g::Fuse::Controls::Page*> sponsors;
     uStrong< ::g::Fuse::Controls::Panel*> SponsorTab;
-    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb0;
-    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb1;
     uStrong< ::g::Uno::UX::Property1*> temp_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp_Limit_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp_Offset_inst;
     static uSStrong< ::g::Fuse::Font*> TitleFont_;
     static uSStrong< ::g::Fuse::Font*>& TitleFont() { return MainView_typeof()->Init(), TitleFont_; }
 

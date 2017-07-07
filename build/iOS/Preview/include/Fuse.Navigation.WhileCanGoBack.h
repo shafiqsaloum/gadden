@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -18,7 +18,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public sealed class WhileCanGoBack :4813
+// public sealed class WhileCanGoBack :4892
 // {
 ::g::Fuse::Navigation::WhileHistoryTrigger_type* WhileCanGoBack_typeof();
 void WhileCanGoBack__ctor_7_fn(WhileCanGoBack* __this);

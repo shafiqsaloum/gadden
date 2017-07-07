@@ -1,9 +1,10 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
+#include <Fuse.IRaw.h>
 #include <Fuse.Reactive.IEventHandler.h>
-#include <Uno.Object.h>
+#include <Fuse.Reactive.JavaScr-a102336.h>
 namespace g{namespace Fuse{namespace Reactive{struct FunctionMirror;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
 
@@ -16,20 +17,23 @@ namespace Reactive{
 struct FunctionMirror_type : uType
 {
     ::g::Fuse::Reactive::IEventHandler interface0;
+    ::g::Fuse::IRaw interface1;
 };
 
 FunctionMirror_type* FunctionMirror_typeof();
-void FunctionMirror__ctor__fn(FunctionMirror* __this, ::g::Fuse::Scripting::Function* func);
+void FunctionMirror__ctor_1_fn(FunctionMirror* __this, ::g::Fuse::Scripting::Function* func);
 void FunctionMirror__Dispatch_fn(FunctionMirror* __this, uObject* e);
-void FunctionMirror__New1_fn(::g::Fuse::Scripting::Function* func, FunctionMirror** __retval);
+void FunctionMirror__New2_fn(::g::Fuse::Scripting::Function* func, FunctionMirror** __retval);
+void FunctionMirror__get_Raw_fn(FunctionMirror* __this, uObject** __retval);
 
-struct FunctionMirror : uObject
+struct FunctionMirror : ::g::Fuse::Reactive::JavaScript__DiagnosticSubject
 {
     uStrong< ::g::Fuse::Scripting::Function*> _func;
 
-    void ctor_(::g::Fuse::Scripting::Function* func);
+    void ctor_1(::g::Fuse::Scripting::Function* func);
     void Dispatch(uObject* e);
-    static FunctionMirror* New1(::g::Fuse::Scripting::Function* func);
+    uObject* Raw();
+    static FunctionMirror* New2(::g::Fuse::Scripting::Function* func);
 };
 // }
 

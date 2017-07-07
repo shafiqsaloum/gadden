@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -32,7 +32,7 @@ namespace Fuse{
 namespace Controls{
 namespace Primitives{
 
-// internal sealed class ShadowElement :741
+// internal sealed class ShadowElement :745
 // {
 ::g::Fuse::Elements::Element_type* ShadowElement_typeof();
 void ShadowElement__ctor_4_fn(ShadowElement* __this);

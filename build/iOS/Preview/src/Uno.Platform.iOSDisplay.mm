@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <ObjC.ID.h>
@@ -18,6 +18,7 @@
 #include <Uno.String.h>
 #include <Uno.UInt.h>
 #include <Uno-iOS/AppDelegate.h>
+#include <Uno-iOS/Context.h>
 #include <uObjC.Foreign.h>
 #include <Window.h>
 #include <Uno.Rect.h>
@@ -30,7 +31,7 @@ namespace Platform{
 
 // public sealed extern class iOSDisplay :15
 // {
-// ~iOSDisplay() :41
+// ~iOSDisplay() :42
 static void iOSDisplay__Finalize_fn(iOSDisplay* __this)
 {
     iOSDisplay::Destroy(__this->_handle, __this->_displayLink);
@@ -39,7 +40,7 @@ static void iOSDisplay__Finalize_fn(iOSDisplay* __this)
 static void iOSDisplay_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("this._handle != null");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/ios/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno");
     ::TYPES[0] = uObject_typeof()->Array();
     ::TYPES[1] = ::g::Uno::EventHandler_typeof();
     type->SetFields(2,
@@ -78,13 +79,13 @@ void iOSDisplay__ctor_1_fn(iOSDisplay* __this, ::g::ObjC::Object* handle)
     __this->ctor_1(handle);
 }
 
-// private static void Destroy(ObjC.Object handle, ObjC.Object displayLink) :61
+// private static void Destroy(ObjC.Object handle, ObjC.Object displayLink) :62
 void iOSDisplay__Destroy_fn(::g::ObjC::Object* handle, ::g::ObjC::Object* displayLink)
 {
     iOSDisplay::Destroy(handle, displayLink);
 }
 
-// protected override sealed void DisableTicks() :155
+// protected override sealed void DisableTicks() :174
 void iOSDisplay__DisableTicks_fn(iOSDisplay* __this)
 {
     @autoreleasepool
@@ -99,7 +100,7 @@ void iOSDisplay__DisableTicks_fn(iOSDisplay* __this)
     
 }
 
-// protected override sealed void EnableTicks() :132
+// protected override sealed void EnableTicks() :151
 void iOSDisplay__EnableTicks_fn(iOSDisplay* __this)
 {
     @autoreleasepool
@@ -148,25 +149,25 @@ void iOSDisplay__remove_FrameChanged_fn(iOSDisplay* __this, uDelegate* value)
     __this->remove_FrameChanged(value);
 }
 
-// protected override sealed float GetDensity() :54
+// protected override sealed float GetDensity() :55
 void iOSDisplay__GetDensity_fn(iOSDisplay* __this, float* __retval)
 {
     return *__retval = (float)iOSDisplay::GetDensityOfScreenFromWindow(__this->_handle), void();
 }
 
-// private static double GetDensityOfScreen(ObjC.Object screen) :85
+// private static double GetDensityOfScreen(ObjC.Object screen) :104
 void iOSDisplay__GetDensityOfScreen_fn(::g::ObjC::Object* screen, double* __retval)
 {
     *__retval = iOSDisplay::GetDensityOfScreen(screen);
 }
 
-// private static double GetDensityOfScreenFromWindow(ObjC.Object window) :77
+// private static double GetDensityOfScreenFromWindow(ObjC.Object window) :96
 void iOSDisplay__GetDensityOfScreenFromWindow_fn(::g::ObjC::Object* window, double* __retval)
 {
     *__retval = iOSDisplay::GetDensityOfScreenFromWindow(window);
 }
 
-// private Uno.Rect GetFrame() :46
+// private Uno.Rect GetFrame() :47
 void iOSDisplay__GetFrame_fn(iOSDisplay* __this, ::g::Uno::Rect* __retval)
 {
     *__retval = __this->GetFrame();
@@ -184,7 +185,7 @@ void iOSDisplay__OnFrameChanged_fn(iOSDisplay* __this)
     __this->OnFrameChanged();
 }
 
-// protected override sealed void SetTicksPerSecond(uint fps) :96
+// protected override sealed void SetTicksPerSecond(uint fps) :115
 void iOSDisplay__SetTicksPerSecond_fn(iOSDisplay* __this, uint32_t* fps)
 {
     uint32_t fps_ = *fps;
@@ -229,7 +230,7 @@ void iOSDisplay__SetTicksPerSecond_fn(iOSDisplay* __this, uint32_t* fps)
     
 }
 
-// internal static Uno.Platform.Display WrapMainDisplay() :67
+// internal static extern Uno.Platform.Display WrapMainDisplay() :69
 void iOSDisplay__WrapMainDisplay_fn(::g::Uno::Platform::Display** __retval)
 {
     *__retval = iOSDisplay::WrapMainDisplay();
@@ -266,7 +267,7 @@ void iOSDisplay::remove_FrameChanged(uDelegate* value)
     FrameChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(FrameChanged1, value), ::TYPES[1/*Uno.EventHandler*/]);
 }
 
-// private Uno.Rect GetFrame() [instance] :46
+// private Uno.Rect GetFrame() [instance] :47
 ::g::Uno::Rect iOSDisplay::GetFrame()
 {
     uStackFrame __("Uno.Platform.iOSDisplay", "GetFrame()");
@@ -283,7 +284,7 @@ void iOSDisplay::OnFrameChanged()
         uPtr(handler)->Invoke(2, NULL, (::g::Uno::EventArgs*)::g::Uno::EventArgs::Empty());
 }
 
-// private static void Destroy(ObjC.Object handle, ObjC.Object displayLink) [static] :61
+// private static void Destroy(ObjC.Object handle, ObjC.Object displayLink) [static] :62
 void iOSDisplay::Destroy(::g::ObjC::Object* handle, ::g::ObjC::Object* displayLink)
 {
     @autoreleasepool
@@ -297,7 +298,7 @@ void iOSDisplay::Destroy(::g::ObjC::Object* handle, ::g::ObjC::Object* displayLi
     
 }
 
-// private static double GetDensityOfScreen(ObjC.Object screen) [static] :85
+// private static double GetDensityOfScreen(ObjC.Object screen) [static] :104
 double iOSDisplay::GetDensityOfScreen(::g::ObjC::Object* screen)
 {
     @autoreleasepool
@@ -314,7 +315,7 @@ double iOSDisplay::GetDensityOfScreen(::g::ObjC::Object* screen)
     
 }
 
-// private static double GetDensityOfScreenFromWindow(ObjC.Object window) [static] :77
+// private static double GetDensityOfScreenFromWindow(ObjC.Object window) [static] :96
 double iOSDisplay::GetDensityOfScreenFromWindow(::g::ObjC::Object* window)
 {
     @autoreleasepool
@@ -338,7 +339,7 @@ iOSDisplay* iOSDisplay::New1(::g::ObjC::Object* handle)
     return obj1;
 }
 
-// internal static Uno.Platform.Display WrapMainDisplay() [static] :67
+// internal static extern Uno.Platform.Display WrapMainDisplay() [static] :69
 ::g::Uno::Platform::Display* iOSDisplay::WrapMainDisplay()
 {
     @autoreleasepool

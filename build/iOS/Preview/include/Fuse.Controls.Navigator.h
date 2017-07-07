@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Navigat-70e90308.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.Internal.MiniList-1.h>
@@ -45,7 +46,7 @@ namespace Controls{
 // {
 struct Navigator_type : ::g::Fuse::Controls::NavigationControl_type
 {
-    ::g::Fuse::Navigation::IRouterOutlet interface17;
+    ::g::Fuse::Navigation::IRouterOutlet interface18;
 };
 
 Navigator_type* Navigator_typeof();
@@ -95,7 +96,7 @@ void Navigator__OnSwitched_fn(Navigator* __this, ::g::Fuse::Controls::NavigatorS
 void Navigator__OnUnrooted_fn(Navigator* __this);
 void Navigator__OnUpdate_fn(Navigator* __this);
 void Navigator__PageSwipeBackDirection_fn(Navigator* __this, ::g::Fuse::Visual* elm, int* __retval);
-void Navigator__Prepare_fn(Navigator* __this, Navigator__NavPage* curPage, uString** path, uString** parameter, int* operation, ::g::Fuse::Visual** result, bool* usedPrepared, int* __retval);
+void Navigator__Prepare1_fn(Navigator* __this, Navigator__NavPage* curPage, uString** path, uString** parameter, int* operation, ::g::Fuse::Visual** result, bool* usedPrepared, int* __retval);
 void Navigator__ReleasePage_fn(Navigator* __this, ::g::Fuse::Visual* v);
 void Navigator__get_Remove_fn(Navigator* __this, int* __retval);
 void Navigator__set_Remove_fn(Navigator* __this, int* value);
@@ -180,7 +181,7 @@ struct Navigator : ::g::Fuse::Controls::NavigationControl
     void OnSwitched(::g::Fuse::Controls::NavigatorSwitchedArgs* args);
     void OnUpdate();
     int PageSwipeBackDirection(::g::Fuse::Visual* elm);
-    int Prepare(Navigator__NavPage* curPage, uString** path, uString** parameter, int operation, ::g::Fuse::Visual** result, bool* usedPrepared);
+    int Prepare1(Navigator__NavPage* curPage, uString** path, uString** parameter, int operation, ::g::Fuse::Visual** result, bool* usedPrepared);
     void ReleasePage(::g::Fuse::Visual* v);
     int Remove2();
     void Remove2(int value);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/drawing/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/drawing/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -18,7 +18,7 @@ namespace Fuse{
 namespace Elements{
 namespace Internal{
 
-// internal sealed class Scale9Rectangle :367
+// internal sealed class Scale9Rectangle :377
 // {
 uType* Scale9Rectangle_typeof();
 void Scale9Rectangle__ctor__fn(Scale9Rectangle* __this);

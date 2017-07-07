@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,18 +10,18 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// internal abstract interface IProxyHost :261
+// internal abstract interface IProxyHost :269
 // {
 uInterfaceType* IProxyHost_typeof();
 
 struct IProxyHost
 {
     void(*fp_Insert)(uObject*, ::g::Fuse::Controls::Native::ViewHandle*);
-    void(*fp_get_LocalTransform)(uObject*, ::g::Uno::Float4x4*);
     void(*fp_Remove)(uObject*, ::g::Fuse::Controls::Native::ViewHandle*);
+    void(*fp_get_WorldTransformInverse)(uObject*, ::g::Uno::Float4x4*);
     static void Insert(const uInterface& __this, ::g::Fuse::Controls::Native::ViewHandle* viewHandle) { __this.VTable<IProxyHost>()->fp_Insert(__this, viewHandle); }
-    static ::g::Uno::Float4x4 LocalTransform(const uInterface& __this);
     static void Remove(const uInterface& __this, ::g::Fuse::Controls::Native::ViewHandle* viewHandle) { __this.VTable<IProxyHost>()->fp_Remove(__this, viewHandle); }
+    static ::g::Uno::Float4x4 WorldTransformInverse(const uInterface& __this);
 };
 
 }}} // ::g::Fuse::Controls
@@ -32,7 +32,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-inline ::g::Uno::Float4x4 IProxyHost::LocalTransform(const uInterface& __this) { ::g::Uno::Float4x4 __retval; return __this.VTable<IProxyHost>()->fp_get_LocalTransform(__this, &__retval), __retval; }
+inline ::g::Uno::Float4x4 IProxyHost::WorldTransformInverse(const uInterface& __this) { ::g::Uno::Float4x4 __retval; return __this.VTable<IProxyHost>()->fp_get_WorldTransformInverse(__this, &__retval), __retval; }
 // }
 
 }}} // ::g::Fuse::Controls

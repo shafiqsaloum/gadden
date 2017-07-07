@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// internal sealed class PageIndicatorDotTemplate :2650
+// internal sealed class PageIndicatorDotTemplate :2718
 // {
 ::g::Uno::UX::Template_type* PageIndicatorDotTemplate_typeof();
 void PageIndicatorDotTemplate__ctor_1_fn(PageIndicatorDotTemplate* __this);

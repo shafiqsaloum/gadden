@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -14,7 +14,7 @@ namespace Uno{
 namespace Platform{
 namespace iOS{
 
-// public static extern class Support :282
+// public static extern class Support :301
 // {
 uClassType* Support_typeof();
 void Support__CGPointToUnoFloat2_fn(CGPoint* point, float* scale, ::g::Uno::Float2* __retval);

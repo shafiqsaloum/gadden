@@ -45,8 +45,8 @@ namespace g{
 namespace Experimental{
 namespace Http{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/0.47.7/$.uno
-// ---------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // internal sealed class BinaryLoader :10
 // {
@@ -160,8 +160,8 @@ BinaryLoader* BinaryLoader::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/0.47.7/$.uno
-// ---------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // public static class HttpLoader :521
 // {
@@ -274,8 +274,8 @@ void HttpLoader::CacheMaxAge(int value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/0.47.7/$.uno
-// ---------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // public sealed class HttpResponseHeader :602
 // {
@@ -476,8 +476,8 @@ HttpResponseHeader* HttpResponseHeader::Read(::g::Uno::IO::BinaryReader* r)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/0.47.7/$.uno
-// ---------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // internal abstract class Loader :708
 // {
@@ -488,7 +488,7 @@ static void Loader_build(uType* type)
     ::STRINGS[6] = uString::Const("etag");
     ::STRINGS[7] = uString::Const(" ");
     ::STRINGS[8] = uString::Const(":");
-    ::STRINGS[9] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/0.47.7/$.uno");
+    ::STRINGS[9] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno");
     ::STRINGS[10] = uString::Const("Failed loading caching: ");
     ::STRINGS[11] = uString::Const("If-None-Match");
     ::STRINGS[0] = uString::Const("GET");
@@ -811,8 +811,8 @@ uString* Loader::ConstructRecordId(uString* method, uString* uri)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/0.47.7/$.uno
-// ---------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // internal static class LoaderConst :701
 // {
@@ -838,8 +838,8 @@ uClassType* LoaderConst_typeof()
 uSStrong< ::g::Uno::Net::Http::HttpMessageHandler*> LoaderConst::Handler_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/0.47.7/$.uno
-// ---------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // internal sealed class TextLoader :1157
 // {

@@ -14,6 +14,8 @@
 #include <Fuse.Internal.Cache-2.h>
 #include <Fuse.Internal.CacheItem-2.h>
 #include <Fuse.Internal.CacheRef-2.h>
+#include <Fuse.Internal.Curves.-1494dae5.h>
+#include <Fuse.Internal.Curves.h>
 #include <Fuse.Internal.DoubleBlender.h>
 #include <Fuse.Internal.DrawManager.h>
 #include <Fuse.Internal.Float2Blender.h>
@@ -62,7 +64,7 @@
 #include <Uno.Collections.Linke-712f9f5e.h>
 #include <Uno.Collections.LinkedList-1.h>
 #include <Uno.Collections.List-1.h>
-#include <Uno.Collections.Obser-ca008b9a.h>
+#include <Uno.Collections.RootableList-1.h>
 #include <Uno.Delegate.h>
 #include <Uno.Double.h>
 #include <Uno.EventArgs.h>
@@ -91,15 +93,15 @@
 #include <Uno.UX.Size2.h>
 #include <Uno.UX.Unit.h>
 #include <Uno.Vector.h>
-static uString* STRINGS[7];
-static uType* TYPES[37];
+static uString* STRINGS[9];
+static uType* TYPES[38];
 
 namespace g{
 namespace Fuse{
 namespace Internal{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal abstract class Blender<T> :305
 // {
@@ -176,8 +178,8 @@ void Blender::ctor_()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class BlenderMap :252
 // {
@@ -326,8 +328,8 @@ BlenderMap* BlenderMap::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public sealed class Cache<TKey, TValue> :473
 // {
@@ -538,8 +540,8 @@ Cache* Cache::New1(uType* __type, uDelegate* factory, int maxUnused)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public struct CacheItem<TKey, TValue> :563
 // {
@@ -684,8 +686,8 @@ bool CacheItem__op_Inequality(uType* __type, CacheItem x, CacheItem y)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class CacheRef<TKey, TValue> :611
 // {
@@ -809,8 +811,99 @@ void CacheRef::Retain()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
+
+// internal static class Curves :853
+// {
+static void Curves_build(uType* type)
+{
+}
+
+uClassType* Curves_typeof()
+{
+    static uSStrong<uClassType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.TypeSize = sizeof(uClassType);
+    type = uClassType::New("Fuse.Internal.Curves", options);
+    type->fp_build_ = Curves_build;
+    return type;
+}
+
+// public static float2 CalcBezierAt(float2 p0, float2 p1, float2 p2, float2 p3, float t) :903
+void Curves__CalcBezierAt_fn(::g::Uno::Float2* p0, ::g::Uno::Float2* p1, ::g::Uno::Float2* p2, ::g::Uno::Float2* p3, float* t, ::g::Uno::Float2* __retval)
+{
+    *__retval = Curves::CalcBezierAt(*p0, *p1, *p2, *p3, *t);
+}
+
+// public static float4 CubicHermitePoint(float4 p0, float4 p1, float4 m0, float4 m1, float t) :879
+void Curves__CubicHermitePoint_fn(::g::Uno::Float4* p0, ::g::Uno::Float4* p1, ::g::Uno::Float4* m0, ::g::Uno::Float4* m1, float* t, ::g::Uno::Float4* __retval)
+{
+    *__retval = Curves::CubicHermitePoint(*p0, *p1, *m0, *m1, *t);
+}
+
+// public static void CubicHermiteToBezier(float4 p0, float4 p1, float4& t1, float4& t2) :897
+void Curves__CubicHermiteToBezier_fn(::g::Uno::Float4* p0, ::g::Uno::Float4* p1, ::g::Uno::Float4* t1, ::g::Uno::Float4* t2)
+{
+    Curves::CubicHermiteToBezier(*p0, *p1, t1, t2);
+}
+
+// public static void KochanekBartelTangent(float4 pa, float4 pb, float4 pc, float4 pd, float tension, float bias, float continuity, float4& tangentIn, float4& tangentOut) :859
+void Curves__KochanekBartelTangent_fn(::g::Uno::Float4* pa, ::g::Uno::Float4* pb, ::g::Uno::Float4* pc, ::g::Uno::Float4* pd, float* tension, float* bias, float* continuity, ::g::Uno::Float4* tangentIn, ::g::Uno::Float4* tangentOut)
+{
+    Curves::KochanekBartelTangent(*pa, *pb, *pc, *pd, *tension, *bias, *continuity, tangentIn, tangentOut);
+}
+
+// public static float4 LinearPoint(float4 p0, float4 p1, float4 m0, float4 m1, float t) :890
+void Curves__LinearPoint_fn(::g::Uno::Float4* p0, ::g::Uno::Float4* p1, ::g::Uno::Float4* m0, ::g::Uno::Float4* m1, float* t, ::g::Uno::Float4* __retval)
+{
+    *__retval = Curves::LinearPoint(*p0, *p1, *m0, *m1, *t);
+}
+
+// public static float2 CalcBezierAt(float2 p0, float2 p1, float2 p2, float2 p3, float t) [static] :903
+::g::Uno::Float2 Curves::CalcBezierAt(::g::Uno::Float2 p0, ::g::Uno::Float2 p1, ::g::Uno::Float2 p2, ::g::Uno::Float2 p3, float t)
+{
+    float t2 = t * t;
+    float t3 = t2 * t;
+    return ::g::Uno::Float2__op_Addition2(::g::Uno::Float2__op_Addition2(::g::Uno::Float2__op_Addition2(::g::Uno::Float2__op_Multiply(((1.0f - (3.0f * t)) + (3.0f * t2)) - t3, p0), ::g::Uno::Float2__op_Multiply(((3.0f * t) - (6.0f * t2)) + (3.0f * t3), p1)), ::g::Uno::Float2__op_Multiply((3.0f * t2) - (3.0f * t3), p2)), ::g::Uno::Float2__op_Multiply(t3, p3));
+}
+
+// public static float4 CubicHermitePoint(float4 p0, float4 p1, float4 m0, float4 m1, float t) [static] :879
+::g::Uno::Float4 Curves::CubicHermitePoint(::g::Uno::Float4 p0, ::g::Uno::Float4 p1, ::g::Uno::Float4 m0, ::g::Uno::Float4 m1, float t)
+{
+    float t2 = t * t;
+    float t3 = t2 * t;
+    return ::g::Uno::Float4__op_Addition2(::g::Uno::Float4__op_Addition2(::g::Uno::Float4__op_Addition2(::g::Uno::Float4__op_Multiply(((2.0f * t3) - (3.0f * t2)) + 1.0f, p0), ::g::Uno::Float4__op_Multiply((t3 - (2.0f * t2)) + t, m0)), ::g::Uno::Float4__op_Multiply((-2.0f * t3) + (3.0f * t2), p1)), ::g::Uno::Float4__op_Multiply(t3 - t2, m1));
+}
+
+// public static void CubicHermiteToBezier(float4 p0, float4 p1, float4& t1, float4& t2) [static] :897
+void Curves::CubicHermiteToBezier(::g::Uno::Float4 p0, ::g::Uno::Float4 p1, ::g::Uno::Float4* t1, ::g::Uno::Float4* t2)
+{
+    *t1 = ::g::Uno::Float4__op_Addition2(p0, ::g::Uno::Float4__op_Division1(*t1, 3.0f));
+    *t2 = ::g::Uno::Float4__op_Subtraction2(p1, ::g::Uno::Float4__op_Division1(*t2, 3.0f));
+}
+
+// public static void KochanekBartelTangent(float4 pa, float4 pb, float4 pc, float4 pd, float tension, float bias, float continuity, float4& tangentIn, float4& tangentOut) [static] :859
+void Curves::KochanekBartelTangent(::g::Uno::Float4 pa, ::g::Uno::Float4 pb, ::g::Uno::Float4 pc, ::g::Uno::Float4 pd, float tension, float bias, float continuity, ::g::Uno::Float4* tangentIn, ::g::Uno::Float4* tangentOut)
+{
+    float t = tension;
+    float b = bias;
+    float c = continuity;
+    *tangentIn = ::g::Uno::Float4__op_Addition2(::g::Uno::Float4__op_Multiply((((1.0f - t) * (1.0f + b)) * (1.0f + c)) / 2.0f, ::g::Uno::Float4__op_Subtraction2(pb, pa)), ::g::Uno::Float4__op_Multiply((((1.0f - t) * (1.0f - b)) * (1.0f - c)) / 2.0f, ::g::Uno::Float4__op_Subtraction2(pc, pb)));
+    *tangentOut = ::g::Uno::Float4__op_Addition2(::g::Uno::Float4__op_Multiply((((1.0f - t) * (1.0f + b)) * (1.0f - c)) / 2.0f, ::g::Uno::Float4__op_Subtraction2(pc, pb)), ::g::Uno::Float4__op_Multiply((((1.0f - t) * (1.0f - b)) * (1.0f + c)) / 2.0f, ::g::Uno::Float4__op_Subtraction2(pd, pc)));
+}
+
+// public static float4 LinearPoint(float4 p0, float4 p1, float4 m0, float4 m1, float t) [static] :890
+::g::Uno::Float4 Curves::LinearPoint(::g::Uno::Float4 p0, ::g::Uno::Float4 p1, ::g::Uno::Float4 m0, ::g::Uno::Float4 m1, float t)
+{
+    return ::g::Uno::Float4__op_Addition2(p0, ::g::Uno::Float4__op_Multiply(t, ::g::Uno::Float4__op_Subtraction2(p1, p0)));
+}
+// }
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class DoubleBlender :390
 // {
@@ -945,10 +1038,10 @@ DoubleBlender* DoubleBlender::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// internal static class DrawManager :859
+// internal static class DrawManager :886
 // {
 static void DrawManager_build(uType* type)
 {
@@ -970,25 +1063,25 @@ uClassType* DrawManager_typeof()
     return type;
 }
 
-// public static void EndDraw(Fuse.DrawContext dc) :872
+// public static void EndDraw(Fuse.DrawContext dc) :899
 void DrawManager__EndDraw_fn(::g::Fuse::DrawContext* dc)
 {
     DrawManager::EndDraw(dc);
 }
 
-// public static generated void add_Prepared(Uno.Action<Fuse.DrawContext> value) :861
+// public static generated void add_Prepared(Uno.Action<Fuse.DrawContext> value) :888
 void DrawManager__add_Prepared_fn(uDelegate* value)
 {
     DrawManager::add_Prepared(value);
 }
 
-// public static generated void remove_Prepared(Uno.Action<Fuse.DrawContext> value) :861
+// public static generated void remove_Prepared(Uno.Action<Fuse.DrawContext> value) :888
 void DrawManager__remove_Prepared_fn(uDelegate* value)
 {
     DrawManager::remove_Prepared(value);
 }
 
-// public static void PrepareDraw(Fuse.DrawContext dc) :863
+// public static void PrepareDraw(Fuse.DrawContext dc) :890
 void DrawManager__PrepareDraw_fn(::g::Fuse::DrawContext* dc)
 {
     DrawManager::PrepareDraw(dc);
@@ -996,7 +1089,7 @@ void DrawManager__PrepareDraw_fn(::g::Fuse::DrawContext* dc)
 
 uSStrong<uDelegate*> DrawManager::Prepared1_;
 
-// public static void EndDraw(Fuse.DrawContext dc) [static] :872
+// public static void EndDraw(Fuse.DrawContext dc) [static] :899
 void DrawManager::EndDraw(::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Internal.DrawManager", "EndDraw(Fuse.DrawContext)");
@@ -1004,7 +1097,7 @@ void DrawManager::EndDraw(::g::Fuse::DrawContext* dc)
     dc->ReleaseRootbuffer();
 }
 
-// public static void PrepareDraw(Fuse.DrawContext dc) [static] :863
+// public static void PrepareDraw(Fuse.DrawContext dc) [static] :890
 void DrawManager::PrepareDraw(::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Internal.DrawManager", "PrepareDraw(Fuse.DrawContext)");
@@ -1015,14 +1108,14 @@ void DrawManager::PrepareDraw(::g::Fuse::DrawContext* dc)
         uPtr(p)->InvokeVoid(dc);
 }
 
-// public static generated void add_Prepared(Uno.Action<Fuse.DrawContext> value) [static] :861
+// public static generated void add_Prepared(Uno.Action<Fuse.DrawContext> value) [static] :888
 void DrawManager::add_Prepared(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.DrawManager", "add_Prepared(Uno.Action<Fuse.DrawContext>)");
     DrawManager::Prepared1_ = uCast<uDelegate*>(::g::Uno::Delegate::Combine(DrawManager::Prepared1_, value), ::TYPES[9/*Uno.Action<Fuse.DrawContext>*/]);
 }
 
-// public static generated void remove_Prepared(Uno.Action<Fuse.DrawContext> value) [static] :861
+// public static generated void remove_Prepared(Uno.Action<Fuse.DrawContext> value) [static] :888
 void DrawManager::remove_Prepared(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.DrawManager", "remove_Prepared(Uno.Action<Fuse.DrawContext>)");
@@ -1030,30 +1123,30 @@ void DrawManager::remove_Prepared(uDelegate* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
-// private struct MiniList<T>.Enumerator<T> :1544
+// private struct MiniList<T>.Enumerator<T> :1624
 // {
-// public T get_Current() [adapter] :1560
+// public T get_Current() [adapter] :1640
 static void MiniList__Enumerator__get_Current_ex(uObject* __this, uObject** __retval)
 {
     MiniList__Enumerator__get_Current_fn((MiniList__Enumerator*)((uint8_t*)__this + sizeof(uObject)), __this->__type, __retval);
 }
 
-// public void Dispose() [adapter] :1567
+// public void Dispose() [adapter] :1647
 static void MiniList__Enumerator__Dispose_ex(uObject* __this)
 {
     MiniList__Enumerator__Dispose_fn((MiniList__Enumerator*)((uint8_t*)__this + sizeof(uObject)), __this->__type);
 }
 
-// public void Reset() [adapter] :1562
+// public void Reset() [adapter] :1642
 static void MiniList__Enumerator__Reset_ex(uObject* __this)
 {
     MiniList__Enumerator__Reset_fn((MiniList__Enumerator*)((uint8_t*)__this + sizeof(uObject)), __this->__type);
 }
 
-// public bool MoveNext() [adapter] :1555
+// public bool MoveNext() [adapter] :1635
 static void MiniList__Enumerator__MoveNext_ex(uObject* __this, bool* __retval)
 {
     MiniList__Enumerator__MoveNext_fn((MiniList__Enumerator*)((uint8_t*)__this + sizeof(uObject)), __this->__type, __retval);
@@ -1094,50 +1187,50 @@ MiniList__Enumerator_type* MiniList__Enumerator_typeof()
     return type;
 }
 
-// public Enumerator(Fuse.Internal.MiniList<T> source) :1549
+// public Enumerator(Fuse.Internal.MiniList<T> source) :1629
 void MiniList__Enumerator__ctor__fn(MiniList__Enumerator* __this, uType* __type, ::g::Fuse::Internal::MiniList* source)
 {
     __this->ctor_(__type, *source);
 }
 
-// public T get_Current() :1560
+// public T get_Current() :1640
 void MiniList__Enumerator__get_Current_fn(MiniList__Enumerator* __this, uType* __type, uObject** __retval)
 {
     *__retval = __this->Current(__type);
 }
 
-// public void Dispose() :1567
+// public void Dispose() :1647
 void MiniList__Enumerator__Dispose_fn(MiniList__Enumerator* __this, uType* __type)
 {
     __this->Dispose(__type);
 }
 
-// public bool MoveNext() :1555
+// public bool MoveNext() :1635
 void MiniList__Enumerator__MoveNext_fn(MiniList__Enumerator* __this, uType* __type, bool* __retval)
 {
     *__retval = __this->MoveNext(__type);
 }
 
-// public Enumerator New(Fuse.Internal.MiniList<T> source) :1549
+// public Enumerator New(Fuse.Internal.MiniList<T> source) :1629
 void MiniList__Enumerator__New1_fn(uType* __type, ::g::Fuse::Internal::MiniList* source, MiniList__Enumerator* __retval)
 {
     *__retval = MiniList__Enumerator__New1(__type, *source);
 }
 
-// public void Reset() :1562
+// public void Reset() :1642
 void MiniList__Enumerator__Reset_fn(MiniList__Enumerator* __this, uType* __type)
 {
     __this->Reset(__type);
 }
 
-// public Enumerator(Fuse.Internal.MiniList<T> source) [instance] :1549
+// public Enumerator(Fuse.Internal.MiniList<T> source) [instance] :1629
 void MiniList__Enumerator::ctor_(uType* __type, ::g::Fuse::Internal::MiniList source)
 {
     _source = source;
     _index = -1;
 }
 
-// public T get_Current() [instance] :1560
+// public T get_Current() [instance] :1640
 uObject* MiniList__Enumerator::Current(uType* __type)
 {
     uType* __types[] = {
@@ -1147,12 +1240,12 @@ uObject* MiniList__Enumerator::Current(uType* __type)
     return (uObject*)_source.Item(__types[0], _index);
 }
 
-// public void Dispose() [instance] :1567
+// public void Dispose() [instance] :1647
 void MiniList__Enumerator::Dispose(uType* __type)
 {
 }
 
-// public bool MoveNext() [instance] :1555
+// public bool MoveNext() [instance] :1635
 bool MiniList__Enumerator::MoveNext(uType* __type)
 {
     uType* __types[] = {
@@ -1162,13 +1255,13 @@ bool MiniList__Enumerator::MoveNext(uType* __type)
     return (++_index) < _source.Count(__types[0]);
 }
 
-// public void Reset() [instance] :1562
+// public void Reset() [instance] :1642
 void MiniList__Enumerator::Reset(uType* __type)
 {
     _index = -1;
 }
 
-// public Enumerator New(Fuse.Internal.MiniList<T> source) [static] :1549
+// public Enumerator New(Fuse.Internal.MiniList<T> source) [static] :1629
 MiniList__Enumerator MiniList__Enumerator__New1(uType* __type, ::g::Fuse::Internal::MiniList source)
 {
     MiniList__Enumerator obj1;
@@ -1177,8 +1270,8 @@ MiniList__Enumerator MiniList__Enumerator__New1(uType* __type, ::g::Fuse::Intern
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class Float2Blender :408
 // {
@@ -1297,8 +1390,8 @@ Float2Blender* Float2Blender::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class Float3Blender :424
 // {
@@ -1417,8 +1510,8 @@ Float3Blender* Float3Blender::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class Float4Blender :440
 // {
@@ -1537,8 +1630,8 @@ Float4Blender* Float4Blender::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class FloatBlender :372
 // {
@@ -1673,16 +1766,16 @@ FloatBlender* FloatBlender::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
-// internal sealed class FontFaceDescriptor :1857
+// internal sealed class FontFaceDescriptor :2127
 // {
 static void FontFaceDescriptor_build(uType* type)
 {
     ::TYPES[11] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
     ::TYPES[12] = ::g::Uno::String_typeof()->Array();
-    ::TYPES[13] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(10/*SequenceEqual<string>*/, ::g::Uno::String_typeof(), NULL);
+    ::TYPES[13] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*SequenceEqual<string>*/, ::g::Uno::String_typeof(), NULL);
     ::TYPES[14] = ::g::Uno::Int_typeof();
     ::TYPES[15] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
     ::TYPES[16] = ::g::Uno::Collections::IEnumerator_typeof();
@@ -1711,19 +1804,19 @@ uType* FontFaceDescriptor_typeof()
     return type;
 }
 
-// public FontFaceDescriptor(Uno.UX.FileSource fileSource, int index) :1872
+// public FontFaceDescriptor(Uno.UX.FileSource fileSource, int index) :2142
 void FontFaceDescriptor__ctor__fn(FontFaceDescriptor* __this, ::g::Uno::UX::FileSource* fileSource, int* index)
 {
     __this->ctor_(fileSource, *index);
 }
 
-// public FontFaceDescriptor(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) :1864
+// public FontFaceDescriptor(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) :2134
 void FontFaceDescriptor__ctor_1_fn(FontFaceDescriptor* __this, ::g::Uno::UX::FileSource* fileSource, uObject* styles)
 {
     __this->ctor_1(fileSource, styles);
 }
 
-// public override sealed bool Equals(object o) :1884
+// public override sealed bool Equals(object o) :2154
 void FontFaceDescriptor__Equals_fn(FontFaceDescriptor* __this, uObject* o, bool* __retval)
 {
     uStackFrame __("Fuse.Internal.FontFaceDescriptor", "Equals(object)");
@@ -1731,7 +1824,7 @@ void FontFaceDescriptor__Equals_fn(FontFaceDescriptor* __this, uObject* o, bool*
     return *__retval = (((f != NULL) && ::g::Uno::String::op_Equality(uPtr(__this->FileSource)->Name, uPtr(uPtr(f)->FileSource)->Name)) && (__this->Index == uPtr(f)->Index)) && ::g::Uno::Collections::EnumerableExtensions::SequenceEqual(::TYPES[13/*Uno.Collections.EnumerableExtensions.SequenceEqual<string>*/], __this->Styles, uPtr(f)->Styles), void();
 }
 
-// public override sealed int GetHashCode() :1893
+// public override sealed int GetHashCode() :2163
 void FontFaceDescriptor__GetHashCode_fn(FontFaceDescriptor* __this, int* __retval)
 {
     uStackFrame __("Fuse.Internal.FontFaceDescriptor", "GetHashCode()");
@@ -1750,25 +1843,25 @@ void FontFaceDescriptor__GetHashCode_fn(FontFaceDescriptor* __this, int* __retva
     return *__retval = hash, void();
 }
 
-// public bool Match(string styleString) :1879
+// public bool Match(string styleString) :2149
 void FontFaceDescriptor__Match_fn(FontFaceDescriptor* __this, uString* styleString, bool* __retval)
 {
     *__retval = __this->Match(styleString);
 }
 
-// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, int index) :1872
+// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, int index) :2142
 void FontFaceDescriptor__New1_fn(::g::Uno::UX::FileSource* fileSource, int* index, FontFaceDescriptor** __retval)
 {
     *__retval = FontFaceDescriptor::New1(fileSource, *index);
 }
 
-// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) :1864
+// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) :2134
 void FontFaceDescriptor__New2_fn(::g::Uno::UX::FileSource* fileSource, uObject* styles, FontFaceDescriptor** __retval)
 {
     *__retval = FontFaceDescriptor::New2(fileSource, styles);
 }
 
-// public FontFaceDescriptor(Uno.UX.FileSource fileSource, int index) [instance] :1872
+// public FontFaceDescriptor(Uno.UX.FileSource fileSource, int index) [instance] :2142
 void FontFaceDescriptor::ctor_(::g::Uno::UX::FileSource* fileSource, int index)
 {
     uStackFrame __("Fuse.Internal.FontFaceDescriptor", ".ctor(Uno.UX.FileSource,int)");
@@ -1777,7 +1870,7 @@ void FontFaceDescriptor::ctor_(::g::Uno::UX::FileSource* fileSource, int index)
     Styles = (uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable::New1(::TYPES[11/*Uno.Runtime.Implementation.Internal.ArrayEnumerable<string>*/], uArray::New(::TYPES[12/*string[]*/], 0)));
 }
 
-// public FontFaceDescriptor(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) [instance] :1864
+// public FontFaceDescriptor(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) [instance] :2134
 void FontFaceDescriptor::ctor_1(::g::Uno::UX::FileSource* fileSource, uObject* styles)
 {
     FileSource = fileSource;
@@ -1785,14 +1878,14 @@ void FontFaceDescriptor::ctor_1(::g::Uno::UX::FileSource* fileSource, uObject* s
     Styles = styles;
 }
 
-// public bool Match(string styleString) [instance] :1879
+// public bool Match(string styleString) [instance] :2149
 bool FontFaceDescriptor::Match(uString* styleString)
 {
     uStackFrame __("Fuse.Internal.FontFaceDescriptor", "Match(string)");
     return ::g::Uno::Collections::EnumerableExtensions::All(::TYPES[18/*Uno.Collections.EnumerableExtensions.All<string>*/], Styles, uDelegate::New(::TYPES[19/*Uno.Predicate<string>*/], (void*)::g::Uno::String__Contains_fn, uPtr(styleString)));
 }
 
-// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, int index) [static] :1872
+// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, int index) [static] :2142
 FontFaceDescriptor* FontFaceDescriptor::New1(::g::Uno::UX::FileSource* fileSource, int index)
 {
     FontFaceDescriptor* obj4 = (FontFaceDescriptor*)uNew(FontFaceDescriptor_typeof());
@@ -1800,7 +1893,7 @@ FontFaceDescriptor* FontFaceDescriptor::New1(::g::Uno::UX::FileSource* fileSourc
     return obj4;
 }
 
-// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) [static] :1864
+// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) [static] :2134
 FontFaceDescriptor* FontFaceDescriptor::New2(::g::Uno::UX::FileSource* fileSource, uObject* styles)
 {
     FontFaceDescriptor* obj3 = (FontFaceDescriptor*)uNew(FontFaceDescriptor_typeof());
@@ -1809,10 +1902,10 @@ FontFaceDescriptor* FontFaceDescriptor::New2(::g::Uno::UX::FileSource* fileSourc
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
-// internal static class FrustumMatrix :953
+// internal static class FrustumMatrix :1022
 // {
 static void FrustumMatrix_build(uType* type)
 {
@@ -1830,55 +1923,55 @@ uClassType* FrustumMatrix_typeof()
     return type;
 }
 
-// public static float4x4 OrthoLHInverse(float width, float height, float near, float far) :985
+// public static float4x4 OrthoLHInverse(float width, float height, float near, float far) :1054
 void FrustumMatrix__OrthoLHInverse_fn(float* width, float* height, float* near, float* far, ::g::Uno::Float4x4* __retval)
 {
     *__retval = FrustumMatrix::OrthoLHInverse(*width, *height, *near, *far);
 }
 
-// public static float4x4 OrthoRHInverse(float width, float height, float zNear, float zFar) :1000
+// public static float4x4 OrthoRHInverse(float width, float height, float zNear, float zFar) :1069
 void FrustumMatrix__OrthoRHInverse_fn(float* width, float* height, float* zNear, float* zFar, ::g::Uno::Float4x4* __retval)
 {
     *__retval = FrustumMatrix::OrthoRHInverse(*width, *height, *zNear, *zFar);
 }
 
-// public static float4x4 PerspectiveView(float2 viewSize, float distance, float2 relOrigin) :1008
+// public static float4x4 PerspectiveView(float2 viewSize, float distance, float2 relOrigin) :1077
 void FrustumMatrix__PerspectiveView_fn(::g::Uno::Float2* viewSize, float* distance, ::g::Uno::Float2* relOrigin, ::g::Uno::Float4x4* __retval)
 {
     *__retval = FrustumMatrix::PerspectiveView(*viewSize, *distance, *relOrigin);
 }
 
-// public static float4x4 PerspectiveViewInverse(float2 viewSize, float distance, float2 relOrigin) :1015
+// public static float4x4 PerspectiveViewInverse(float2 viewSize, float distance, float2 relOrigin) :1084
 void FrustumMatrix__PerspectiveViewInverse_fn(::g::Uno::Float2* viewSize, float* distance, ::g::Uno::Float2* relOrigin, ::g::Uno::Float4x4* __retval)
 {
     *__retval = FrustumMatrix::PerspectiveViewInverse(*viewSize, *distance, *relOrigin);
 }
 
-// public static bool TryOrthoLH(float width, float height, float near, float far, float4x4& result) :955
+// public static bool TryOrthoLH(float width, float height, float near, float far, float4x4& result) :1024
 void FrustumMatrix__TryOrthoLH_fn(float* width, float* height, float* near, float* far, ::g::Uno::Float4x4* result, bool* __retval)
 {
     *__retval = FrustumMatrix::TryOrthoLH(*width, *height, *near, *far, result);
 }
 
-// public static bool TryOrthoRH(float width, float height, float zNear, float zFar, float4x4& result) :974
+// public static bool TryOrthoRH(float width, float height, float zNear, float zFar, float4x4& result) :1043
 void FrustumMatrix__TryOrthoRH_fn(float* width, float* height, float* zNear, float* zFar, ::g::Uno::Float4x4* result, bool* __retval)
 {
     *__retval = FrustumMatrix::TryOrthoRH(*width, *height, *zNear, *zFar, result);
 }
 
-// public static bool TryPerspectiveProjection(float2 viewSize, float znear, float zfar, float distance, float4x4& result) :1022
+// public static bool TryPerspectiveProjection(float2 viewSize, float znear, float zfar, float distance, float4x4& result) :1091
 void FrustumMatrix__TryPerspectiveProjection_fn(::g::Uno::Float2* viewSize, float* znear, float* zfar, float* distance, ::g::Uno::Float4x4* result, bool* __retval)
 {
     *__retval = FrustumMatrix::TryPerspectiveProjection(*viewSize, *znear, *zfar, *distance, result);
 }
 
-// public static bool TryPerspectiveProjectionInverse(float2 viewSize, float znear, float zfar, float distance, float4x4& result) :1041
+// public static bool TryPerspectiveProjectionInverse(float2 viewSize, float znear, float zfar, float distance, float4x4& result) :1110
 void FrustumMatrix__TryPerspectiveProjectionInverse_fn(::g::Uno::Float2* viewSize, float* znear, float* zfar, float* distance, ::g::Uno::Float4x4* result, bool* __retval)
 {
     *__retval = FrustumMatrix::TryPerspectiveProjectionInverse(*viewSize, *znear, *zfar, *distance, result);
 }
 
-// public static float4x4 OrthoLHInverse(float width, float height, float near, float far) [static] :985
+// public static float4x4 OrthoLHInverse(float width, float height, float near, float far) [static] :1054
 ::g::Uno::Float4x4 FrustumMatrix::OrthoLHInverse(float width, float height, float near, float far)
 {
     float halfWidth = width * 0.5f;
@@ -1891,7 +1984,7 @@ void FrustumMatrix__TryPerspectiveProjectionInverse_fn(::g::Uno::Float2* viewSiz
     return result;
 }
 
-// public static float4x4 OrthoRHInverse(float width, float height, float zNear, float zFar) [static] :1000
+// public static float4x4 OrthoRHInverse(float width, float height, float zNear, float zFar) [static] :1069
 ::g::Uno::Float4x4 FrustumMatrix::OrthoRHInverse(float width, float height, float zNear, float zFar)
 {
     ::g::Uno::Float4x4 result = FrustumMatrix::OrthoLHInverse(width, height, zNear, zFar);
@@ -1900,7 +1993,7 @@ void FrustumMatrix__TryPerspectiveProjectionInverse_fn(::g::Uno::Float2* viewSiz
     return result;
 }
 
-// public static float4x4 PerspectiveView(float2 viewSize, float distance, float2 relOrigin) [static] :1008
+// public static float4x4 PerspectiveView(float2 viewSize, float distance, float2 relOrigin) [static] :1077
 ::g::Uno::Float4x4 FrustumMatrix::PerspectiveView(::g::Uno::Float2 viewSize, float distance, ::g::Uno::Float2 relOrigin)
 {
     ::g::Uno::Float4x4 t = ::g::Uno::Matrix::Translation(-relOrigin.X * viewSize.X, -relOrigin.Y * viewSize.Y, distance);
@@ -1908,7 +2001,7 @@ void FrustumMatrix__TryPerspectiveProjectionInverse_fn(::g::Uno::Float2* viewSiz
     return ::g::Uno::Matrix::Mul8(t, s);
 }
 
-// public static float4x4 PerspectiveViewInverse(float2 viewSize, float distance, float2 relOrigin) [static] :1015
+// public static float4x4 PerspectiveViewInverse(float2 viewSize, float distance, float2 relOrigin) [static] :1084
 ::g::Uno::Float4x4 FrustumMatrix::PerspectiveViewInverse(::g::Uno::Float2 viewSize, float distance, ::g::Uno::Float2 relOrigin)
 {
     ::g::Uno::Float4x4 s = ::g::Uno::Matrix::Scaling1(1.0f, -1.0f, 1.0f);
@@ -1916,7 +2009,7 @@ void FrustumMatrix__TryPerspectiveProjectionInverse_fn(::g::Uno::Float2* viewSiz
     return ::g::Uno::Matrix::Mul8(s, t);
 }
 
-// public static bool TryOrthoLH(float width, float height, float near, float far, float4x4& result) [static] :955
+// public static bool TryOrthoLH(float width, float height, float near, float far, float4x4& result) [static] :1024
 bool FrustumMatrix::TryOrthoLH(float width, float height, float near, float far, ::g::Uno::Float4x4* result)
 {
     float depth = far - near;
@@ -1935,7 +2028,7 @@ bool FrustumMatrix::TryOrthoLH(float width, float height, float near, float far,
     return true;
 }
 
-// public static bool TryOrthoRH(float width, float height, float zNear, float zFar, float4x4& result) [static] :974
+// public static bool TryOrthoRH(float width, float height, float zNear, float zFar, float4x4& result) [static] :1043
 bool FrustumMatrix::TryOrthoRH(float width, float height, float zNear, float zFar, ::g::Uno::Float4x4* result)
 {
     if (FrustumMatrix::TryOrthoLH(width, height, zNear, zFar, result))
@@ -1947,7 +2040,7 @@ bool FrustumMatrix::TryOrthoRH(float width, float height, float zNear, float zFa
     return false;
 }
 
-// public static bool TryPerspectiveProjection(float2 viewSize, float znear, float zfar, float distance, float4x4& result) [static] :1022
+// public static bool TryPerspectiveProjection(float2 viewSize, float znear, float zfar, float distance, float4x4& result) [static] :1091
 bool FrustumMatrix::TryPerspectiveProjection(::g::Uno::Float2 viewSize, float znear, float zfar, float distance, ::g::Uno::Float4x4* result)
 {
     float zdiff = znear - zfar;
@@ -1967,7 +2060,7 @@ bool FrustumMatrix::TryPerspectiveProjection(::g::Uno::Float2 viewSize, float zn
     return true;
 }
 
-// public static bool TryPerspectiveProjectionInverse(float2 viewSize, float znear, float zfar, float distance, float4x4& result) [static] :1041
+// public static bool TryPerspectiveProjectionInverse(float2 viewSize, float znear, float zfar, float distance, float4x4& result) [static] :1110
 bool FrustumMatrix::TryPerspectiveProjectionInverse(::g::Uno::Float2 viewSize, float znear, float zfar, float distance, ::g::Uno::Float4x4* result)
 {
     float zdiv = (2.0f * zfar) * znear;
@@ -1988,8 +2081,8 @@ bool FrustumMatrix::TryPerspectiveProjectionInverse(::g::Uno::Float2 viewSize, f
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/internal/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal static class FuseConfig :13
 // {
@@ -2010,8 +2103,8 @@ uClassType* FuseConfig_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal abstract interface IImageContainerOwner :13
 // {
@@ -2025,34 +2118,38 @@ uInterfaceType* IImageContainerOwner_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal sealed class ImageContainer :20
 // {
 static void ImageContainer_build(uType* type)
 {
-    ::STRINGS[2] = uString::Const("ResampleMode.Mipmap has been deprecated. Use ResampleMode.Linear instead.");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/internal/$.uno");
-    ::STRINGS[4] = uString::Const("set_ResampleMode");
+    ::STRINGS[2] = uString::Const("Switching listen state on null Image");
+    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/internal/$.uno");
+    ::STRINGS[4] = uString::Const("UpdateSourceListen");
+    ::STRINGS[5] = uString::Const("ResampleMode.Mipmap has been deprecated. Use ResampleMode.Linear instead.");
+    ::STRINGS[6] = uString::Const("set_ResampleMode");
     ::TYPES[16] = ::g::Uno::Collections::IEnumerator_typeof();
     ::TYPES[20] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
     ::TYPES[21] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
     ::TYPES[22] = ::g::Fuse::Internal::IImageContainerOwner_typeof();
-    ::TYPES[23] = ::g::Fuse::Resources::FileImageSource_typeof();
-    ::TYPES[24] = ::g::Fuse::Resources::HttpImageSource_typeof();
-    ::TYPES[25] = ::g::Fuse::Resources::MultiDensityImageSource_typeof();
-    ::TYPES[26] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
-    ::TYPES[27] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
-    ::TYPES[28] = ::g::Uno::EventHandler_typeof();
-    ::TYPES[29] = ::g::Fuse::Resources::ImageSourceErrorHandler_typeof();
-    ::TYPES[30] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
-    ::TYPES[31] = ::g::Uno::Collections::ObservableList_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
-    ::TYPES[32] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
+    ::TYPES[23] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
+    ::TYPES[24] = ::g::Fuse::Resources::FileImageSource_typeof();
+    ::TYPES[25] = ::g::Fuse::Resources::HttpImageSource_typeof();
+    ::TYPES[26] = ::g::Fuse::Resources::MultiDensityImageSource_typeof();
+    ::TYPES[27] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
+    ::TYPES[28] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
+    ::TYPES[29] = ::g::Uno::EventHandler_typeof();
+    ::TYPES[30] = ::g::Fuse::Resources::ImageSourceErrorHandler_typeof();
+    ::TYPES[31] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
+    ::TYPES[32] = ::g::Uno::Collections::IList_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
+    ::TYPES[33] = ::g::Uno::Collections::RootableList_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
     type->SetFields(0,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _density), 0,
-        ::TYPES[31/*Uno.Collections.ObservableList<Uno.UX.FileSource>*/], offsetof(::g::Fuse::Internal::ImageContainer, _files), 0,
+        ::TYPES[33/*Uno.Collections.RootableList<Uno.UX.FileSource>*/], offsetof(::g::Fuse::Internal::ImageContainer, _files), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _isRooted), 0,
+        ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _isSourceListen), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _isVisible), 0,
         ::g::Fuse::Resources::MemoryPolicy_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _memoryPolicy), 0,
         ::TYPES[22/*Fuse.Internal.IImageContainerOwner*/], offsetof(::g::Fuse::Internal::ImageContainer, _owner), uFieldFlagsWeak,
@@ -2060,9 +2157,9 @@ static void ImageContainer_build(uType* type)
         ::g::Fuse::Resources::ImageSource_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _source), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _sourcePinned), 0,
         ::g::Fuse::Internal::SizingContainer_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, Sizing), 0,
-        ::TYPES[28/*Uno.EventHandler*/], offsetof(::g::Fuse::Internal::ImageContainer, ParamChanged1), 0,
-        ::TYPES[28/*Uno.EventHandler*/], offsetof(::g::Fuse::Internal::ImageContainer, SourceChanged1), 0,
-        ::TYPES[29/*Fuse.Resources.ImageSourceErrorHandler*/], offsetof(::g::Fuse::Internal::ImageContainer, SourceError1), 0);
+        ::TYPES[29/*Uno.EventHandler*/], offsetof(::g::Fuse::Internal::ImageContainer, ParamChanged1), 0,
+        ::TYPES[29/*Uno.EventHandler*/], offsetof(::g::Fuse::Internal::ImageContainer, SourceChanged1), 0,
+        ::TYPES[30/*Fuse.Resources.ImageSourceErrorHandler*/], offsetof(::g::Fuse::Internal::ImageContainer, SourceError1), 0);
 }
 
 uType* ImageContainer_typeof()
@@ -2071,7 +2168,7 @@ uType* ImageContainer_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 13;
+    options.FieldCount = 14;
     options.ObjectSize = sizeof(ImageContainer);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Fuse.Internal.ImageContainer", options);
@@ -2085,37 +2182,37 @@ void ImageContainer__ctor__fn(ImageContainer* __this, uObject* owner)
     __this->ctor_(owner);
 }
 
-// private void CheckPinning() :226
+// private void CheckPinning() :267
 void ImageContainer__CheckPinning_fn(ImageContainer* __this)
 {
     __this->CheckPinning();
 }
 
-// public Fuse.Elements.Alignment get_ContentAlignment() :309
+// public Fuse.Elements.Alignment get_ContentAlignment() :350
 void ImageContainer__get_ContentAlignment_fn(ImageContainer* __this, int* __retval)
 {
     *__retval = __this->ContentAlignment();
 }
 
-// public void set_ContentAlignment(Fuse.Elements.Alignment value) :310
+// public void set_ContentAlignment(Fuse.Elements.Alignment value) :351
 void ImageContainer__set_ContentAlignment_fn(ImageContainer* __this, int* value)
 {
     __this->ContentAlignment(*value);
 }
 
-// private void CreateMultiDensitySource() :148
+// private void CreateMultiDensitySource() :142
 void ImageContainer__CreateMultiDensitySource_fn(ImageContainer* __this)
 {
     __this->CreateMultiDensitySource();
 }
 
-// public float get_Density() :67
+// public float get_Density() :68
 void ImageContainer__get_Density_fn(ImageContainer* __this, float* __retval)
 {
     *__retval = __this->Density();
 }
 
-// public void set_Density(float value) :68
+// public void set_Density(float value) :69
 void ImageContainer__set_Density_fn(ImageContainer* __this, float* value)
 {
     __this->Density(*value);
@@ -2133,49 +2230,49 @@ void ImageContainer__set_File_fn(ImageContainer* __this, ::g::Uno::UX::FileSourc
     __this->File(value);
 }
 
-// public Uno.Collections.IList<Uno.UX.FileSource> get_Files() :113
+// public Uno.Collections.IList<Uno.UX.FileSource> get_Files() :114
 void ImageContainer__get_Files_fn(ImageContainer* __this, uObject** __retval)
 {
     *__retval = __this->Files();
 }
 
-// public texture2D GetTexture() :317
+// public texture2D GetTexture() :358
 void ImageContainer__GetTexture_fn(ImageContainer* __this, ::g::Uno::Graphics::Texture2D** __retval)
 {
     *__retval = __this->GetTexture();
 }
 
-// public bool get_IsRooted() :214
+// public bool get_IsRooted() :231
 void ImageContainer__get_IsRooted_fn(ImageContainer* __this, bool* __retval)
 {
     *__retval = __this->IsRooted();
 }
 
-// public void set_IsRooted(bool value) :215
+// public void set_IsRooted(bool value) :232
 void ImageContainer__set_IsRooted_fn(ImageContainer* __this, bool* value)
 {
     __this->IsRooted(*value);
 }
 
-// public bool get_IsVisible() :327
+// public bool get_IsVisible() :368
 void ImageContainer__get_IsVisible_fn(ImageContainer* __this, bool* __retval)
 {
     *__retval = __this->IsVisible();
 }
 
-// public void set_IsVisible(bool value) :328
+// public void set_IsVisible(bool value) :369
 void ImageContainer__set_IsVisible_fn(ImageContainer* __this, bool* value)
 {
     __this->IsVisible(*value);
 }
 
-// public Fuse.Resources.MemoryPolicy get_MemoryPolicy() :83
+// public Fuse.Resources.MemoryPolicy get_MemoryPolicy() :84
 void ImageContainer__get_MemoryPolicy_fn(ImageContainer* __this, ::g::Fuse::Resources::MemoryPolicy** __retval)
 {
     *__retval = __this->MemoryPolicy();
 }
 
-// public void set_MemoryPolicy(Fuse.Resources.MemoryPolicy value) :84
+// public void set_MemoryPolicy(Fuse.Resources.MemoryPolicy value) :85
 void ImageContainer__set_MemoryPolicy_fn(ImageContainer* __this, ::g::Fuse::Resources::MemoryPolicy* value)
 {
     __this->MemoryPolicy(value);
@@ -2187,157 +2284,169 @@ void ImageContainer__New1_fn(uObject* owner, ImageContainer** __retval)
     *__retval = ImageContainer::New1(owner);
 }
 
-// private void OnFileAdded(Uno.UX.FileSource file) :120
-void ImageContainer__OnFileAdded_fn(ImageContainer* __this, ::g::Uno::UX::FileSource* file)
+// private void OnFilesChanged(Uno.UX.FileSource ignoreFile) :126
+void ImageContainer__OnFilesChanged_fn(ImageContainer* __this, ::g::Uno::UX::FileSource* ignoreFile)
 {
-    __this->OnFileAdded(file);
+    __this->OnFilesChanged(ignoreFile);
 }
 
-// private void OnFileRemoved(Uno.UX.FileSource file) :132
-void ImageContainer__OnFileRemoved_fn(ImageContainer* __this, ::g::Uno::UX::FileSource* file)
-{
-    __this->OnFileRemoved(file);
-}
-
-// private void OnParamChanged() :262
+// private void OnParamChanged() :303
 void ImageContainer__OnParamChanged_fn(ImageContainer* __this)
 {
     __this->OnParamChanged();
 }
 
-// private void OnSizingChanged() :280
+// private void OnRooted() :248
+void ImageContainer__OnRooted_fn(ImageContainer* __this)
+{
+    __this->OnRooted();
+}
+
+// private void OnSizingChanged() :321
 void ImageContainer__OnSizingChanged_fn(ImageContainer* __this)
 {
     __this->OnSizingChanged();
 }
 
-// private void OnSourceChanged(object s, object a) :180
+// private void OnSourceChanged(object s, object a) :198
 void ImageContainer__OnSourceChanged_fn(ImageContainer* __this, uObject* s, uObject* a)
 {
     __this->OnSourceChanged(s, a);
 }
 
-// private void OnSourceError(object s, Fuse.Resources.ImageSourceErrorArgs args) :190
+// private void OnSourceError(object s, Fuse.Resources.ImageSourceErrorArgs args) :208
 void ImageContainer__OnSourceError_fn(ImageContainer* __this, uObject* s, ::g::Fuse::Resources::ImageSourceErrorArgs* args)
 {
     __this->OnSourceError(s, args);
 }
 
-// public generated void add_ParamChanged(Uno.EventHandler value) :261
+// private void OnUnrooted() :257
+void ImageContainer__OnUnrooted_fn(ImageContainer* __this)
+{
+    __this->OnUnrooted();
+}
+
+// public generated void add_ParamChanged(Uno.EventHandler value) :302
 void ImageContainer__add_ParamChanged_fn(ImageContainer* __this, uDelegate* value)
 {
     __this->add_ParamChanged(value);
 }
 
-// public generated void remove_ParamChanged(Uno.EventHandler value) :261
+// public generated void remove_ParamChanged(Uno.EventHandler value) :302
 void ImageContainer__remove_ParamChanged_fn(ImageContainer* __this, uDelegate* value)
 {
     __this->remove_ParamChanged(value);
 }
 
-// private void ReapplyOptions(Fuse.Resources.ImageSource src) :92
+// private void ReapplyOptions(Fuse.Resources.ImageSource src) :93
 void ImageContainer__ReapplyOptions_fn(ImageContainer* __this, ::g::Fuse::Resources::ImageSource* src)
 {
     __this->ReapplyOptions(src);
 }
 
-// private void ReleaseSource() :196
+// private void ReleaseSource() :214
 void ImageContainer__ReleaseSource_fn(ImageContainer* __this)
 {
     __this->ReleaseSource();
 }
 
-// public Fuse.Drawing.ResampleMode get_ResampleMode() :248
+// public Fuse.Drawing.ResampleMode get_ResampleMode() :289
 void ImageContainer__get_ResampleMode_fn(ImageContainer* __this, int* __retval)
 {
     *__retval = __this->ResampleMode();
 }
 
-// public void set_ResampleMode(Fuse.Drawing.ResampleMode value) :249
+// public void set_ResampleMode(Fuse.Drawing.ResampleMode value) :290
 void ImageContainer__set_ResampleMode_fn(ImageContainer* __this, int* value)
 {
     __this->ResampleMode(*value);
 }
 
-// public Fuse.Resources.ImageSource get_Source() :162
+// public Fuse.Resources.ImageSource get_Source() :156
 void ImageContainer__get_Source_fn(ImageContainer* __this, ::g::Fuse::Resources::ImageSource** __retval)
 {
     *__retval = __this->Source();
 }
 
-// public void set_Source(Fuse.Resources.ImageSource value) :163
+// public void set_Source(Fuse.Resources.ImageSource value) :157
 void ImageContainer__set_Source_fn(ImageContainer* __this, ::g::Fuse::Resources::ImageSource* value)
 {
     __this->Source(value);
 }
 
-// public generated void add_SourceChanged(Uno.EventHandler value) :179
+// public generated void add_SourceChanged(Uno.EventHandler value) :197
 void ImageContainer__add_SourceChanged_fn(ImageContainer* __this, uDelegate* value)
 {
     __this->add_SourceChanged(value);
 }
 
-// public generated void remove_SourceChanged(Uno.EventHandler value) :179
+// public generated void remove_SourceChanged(Uno.EventHandler value) :197
 void ImageContainer__remove_SourceChanged_fn(ImageContainer* __this, uDelegate* value)
 {
     __this->remove_SourceChanged(value);
 }
 
-// public generated void add_SourceError(Fuse.Resources.ImageSourceErrorHandler value) :189
+// public generated void add_SourceError(Fuse.Resources.ImageSourceErrorHandler value) :207
 void ImageContainer__add_SourceError_fn(ImageContainer* __this, uDelegate* value)
 {
     __this->add_SourceError(value);
 }
 
-// public generated void remove_SourceError(Fuse.Resources.ImageSourceErrorHandler value) :189
+// public generated void remove_SourceError(Fuse.Resources.ImageSourceErrorHandler value) :207
 void ImageContainer__remove_SourceError_fn(ImageContainer* __this, uDelegate* value)
 {
     __this->remove_SourceError(value);
 }
 
-// public Fuse.Elements.StretchDirection get_StretchDirection() :289
+// public Fuse.Elements.StretchDirection get_StretchDirection() :330
 void ImageContainer__get_StretchDirection_fn(ImageContainer* __this, int* __retval)
 {
     *__retval = __this->StretchDirection();
 }
 
-// public void set_StretchDirection(Fuse.Elements.StretchDirection value) :290
+// public void set_StretchDirection(Fuse.Elements.StretchDirection value) :331
 void ImageContainer__set_StretchDirection_fn(ImageContainer* __this, int* value)
 {
     __this->StretchDirection(*value);
 }
 
-// public Fuse.Elements.StretchMode get_StretchMode() :272
+// public Fuse.Elements.StretchMode get_StretchMode() :313
 void ImageContainer__get_StretchMode_fn(ImageContainer* __this, int* __retval)
 {
     *__retval = __this->StretchMode();
 }
 
-// public void set_StretchMode(Fuse.Elements.StretchMode value) :273
+// public void set_StretchMode(Fuse.Elements.StretchMode value) :314
 void ImageContainer__set_StretchMode_fn(ImageContainer* __this, int* value)
 {
     __this->StretchMode(*value);
 }
 
-// public Fuse.Elements.StretchSizing get_StretchSizing() :299
+// public Fuse.Elements.StretchSizing get_StretchSizing() :340
 void ImageContainer__get_StretchSizing_fn(ImageContainer* __this, int* __retval)
 {
     *__retval = __this->StretchSizing();
 }
 
-// public void set_StretchSizing(Fuse.Elements.StretchSizing value) :300
+// public void set_StretchSizing(Fuse.Elements.StretchSizing value) :341
 void ImageContainer__set_StretchSizing_fn(ImageContainer* __this, int* value)
 {
     __this->StretchSizing(*value);
 }
 
-// public string get_Url() :51
+// private void UpdateSourceListen([bool forceOff]) :170
+void ImageContainer__UpdateSourceListen_fn(ImageContainer* __this, bool* forceOff)
+{
+    __this->UpdateSourceListen(*forceOff);
+}
+
+// public string get_Url() :52
 void ImageContainer__get_Url_fn(ImageContainer* __this, uString** __retval)
 {
     *__retval = __this->Url();
 }
 
-// public void set_Url(string value) :58
+// public void set_Url(string value) :59
 void ImageContainer__set_Url_fn(ImageContainer* __this, uString* value)
 {
     __this->Url(value);
@@ -2354,7 +2463,7 @@ void ImageContainer::ctor_(uObject* owner)
     _owner = owner;
 }
 
-// private void CheckPinning() [instance] :226
+// private void CheckPinning() [instance] :267
 void ImageContainer::CheckPinning()
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "CheckPinning()");
@@ -2378,14 +2487,14 @@ void ImageContainer::CheckPinning()
     }
 }
 
-// public Fuse.Elements.Alignment get_ContentAlignment() [instance] :309
+// public Fuse.Elements.Alignment get_ContentAlignment() [instance] :350
 int ImageContainer::ContentAlignment()
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "get_ContentAlignment()");
     return uPtr(Sizing)->align;
 }
 
-// public void set_ContentAlignment(Fuse.Elements.Alignment value) [instance] :310
+// public void set_ContentAlignment(Fuse.Elements.Alignment value) [instance] :351
 void ImageContainer::ContentAlignment(int value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "set_ContentAlignment(Fuse.Elements.Alignment)");
@@ -2394,32 +2503,32 @@ void ImageContainer::ContentAlignment(int value)
         OnSizingChanged();
 }
 
-// private void CreateMultiDensitySource() [instance] :148
+// private void CreateMultiDensitySource() [instance] :142
 void ImageContainer::CreateMultiDensitySource()
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "CreateMultiDensitySource()");
-    ::g::Fuse::Resources::FileImageSource* collection6;
-    float ind11;
-    ::g::Fuse::Resources::MemoryPolicy* ind12;
-    ::g::Uno::UX::FileSource* ret16;
+    ::g::Fuse::Resources::FileImageSource* collection5;
+    float ind9;
+    ::g::Fuse::Resources::MemoryPolicy* ind10;
+    ::g::Uno::UX::FileSource* ret14;
     ::g::Fuse::Resources::MultiDensityImageSource* s = ::g::Fuse::Resources::MultiDensityImageSource::New2();
 
-    for (uObject* enum5 = (uObject*)uPtr(_files)->GetEnumerator(); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum5), ::TYPES[16/*Uno.Collections.IEnumerator*/])); )
+    for (uObject* enum4 = (uObject*)uPtr(_files)->GetEnumerator(); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum4), ::TYPES[16/*Uno.Collections.IEnumerator*/])); )
     {
-        ::g::Uno::UX::FileSource* f = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum5), ::TYPES[20/*Uno.Collections.IEnumerator<Uno.UX.FileSource>*/]), &ret16), ret16);
-        ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(s)->Sources()), ::TYPES[21/*Uno.Collections.ICollection<Fuse.Resources.ImageSource>*/]), (collection6 = ::g::Fuse::Resources::FileImageSource::New3(f), ind11 = Density(), uPtr(collection6)->Density(ind11), ind11, ind12 = MemoryPolicy(), uPtr(collection6)->DefaultPolicy(ind12), ind12, collection6));
+        ::g::Uno::UX::FileSource* f = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum4), ::TYPES[20/*Uno.Collections.IEnumerator<Uno.UX.FileSource>*/]), &ret14), ret14);
+        ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(s)->Sources()), ::TYPES[21/*Uno.Collections.ICollection<Fuse.Resources.ImageSource>*/]), (collection5 = ::g::Fuse::Resources::FileImageSource::New3(f), ind9 = Density(), uPtr(collection5)->Density(ind9), ind9, ind10 = MemoryPolicy(), uPtr(collection5)->DefaultPolicy(ind10), ind10, collection5));
     }
 
     Source(s);
 }
 
-// public float get_Density() [instance] :67
+// public float get_Density() [instance] :68
 float ImageContainer::Density()
 {
     return _density;
 }
 
-// public void set_Density(float value) [instance] :68
+// public void set_Density(float value) [instance] :69
 void ImageContainer::Density(float value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "set_Density(float)");
@@ -2435,39 +2544,45 @@ void ImageContainer::Density(float value)
 ::g::Uno::UX::FileSource* ImageContainer::File()
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "get_File()");
-    ::g::Uno::UX::FileSource* ret18;
+    ::g::Uno::UX::FileSource* ret17;
 
     if (_files == NULL)
         return NULL;
     else
-        return (::g::Uno::Collections::ObservableList__get_Item_fn(uPtr(_files), uCRef<int>(0), &ret18), ret18);
+        return (::g::Uno::Collections::RootableList__get_Item_fn(uPtr(_files), uCRef<int>(0), &ret17), ret17);
 }
 
 // public void set_File(Uno.UX.FileSource value) [instance] :39
 void ImageContainer::File(::g::Uno::UX::FileSource* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "set_File(Uno.UX.FileSource)");
-    ::g::Uno::UX::FileSource* ret19;
+    ::g::Uno::UX::FileSource* ret18;
+    uObject* files = Files();
 
-    if ((((_files == NULL) || (uPtr(_files)->Count() == 0)) || (uPtr(_files)->Count() > 1)) || ((::g::Uno::Collections::ObservableList__get_Item_fn(uPtr(_files), uCRef<int>(0), &ret19), ret19) != value))
+    if (((::g::Uno::Collections::ICollection::Count(uInterface(uPtr(files), ::TYPES[31/*Uno.Collections.ICollection<Uno.UX.FileSource>*/])) == 0) || (::g::Uno::Collections::ICollection::Count(uInterface(uPtr(files), ::TYPES[31/*Uno.Collections.ICollection<Uno.UX.FileSource>*/])) > 1)) || ((::g::Uno::Collections::IList::get_Item_ex(uInterface(uPtr(files), ::TYPES[32/*Uno.Collections.IList<Uno.UX.FileSource>*/]), uCRef<int>(0), &ret18), ret18) != value))
     {
-        _files = NULL;
-        ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Files()), ::TYPES[30/*Uno.Collections.ICollection<Uno.UX.FileSource>*/]), value);
+        ::g::Uno::Collections::ICollection::Clear(uInterface(uPtr(files), ::TYPES[31/*Uno.Collections.ICollection<Uno.UX.FileSource>*/]));
+        ::g::Uno::Collections::ICollection::Add_ex(uInterface(files, ::TYPES[31/*Uno.Collections.ICollection<Uno.UX.FileSource>*/]), value);
     }
 }
 
-// public Uno.Collections.IList<Uno.UX.FileSource> get_Files() [instance] :113
+// public Uno.Collections.IList<Uno.UX.FileSource> get_Files() [instance] :114
 uObject* ImageContainer::Files()
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "get_Files()");
 
     if (_files == NULL)
-        _files = ((::g::Uno::Collections::ObservableList*)::g::Uno::Collections::ObservableList::New1(::TYPES[31/*Uno.Collections.ObservableList<Uno.UX.FileSource>*/], uDelegate::New(::TYPES[32/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFileAdded_fn, this), uDelegate::New(::TYPES[32/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFileRemoved_fn, this)));
+    {
+        _files = ((::g::Uno::Collections::RootableList*)::g::Uno::Collections::RootableList::New1(::TYPES[33/*Uno.Collections.RootableList<Uno.UX.FileSource>*/]));
+
+        if (IsRooted())
+            uPtr(_files)->Subscribe(uDelegate::New(::TYPES[23/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFilesChanged_fn, this), uDelegate::New(::TYPES[23/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFilesChanged_fn, this));
+    }
 
     return (uObject*)_files;
 }
 
-// public texture2D GetTexture() [instance] :317
+// public texture2D GetTexture() [instance] :358
 ::g::Uno::Graphics::Texture2D* ImageContainer::GetTexture()
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "GetTexture()");
@@ -2478,27 +2593,38 @@ uObject* ImageContainer::Files()
     return NULL;
 }
 
-// public bool get_IsRooted() [instance] :214
+// public bool get_IsRooted() [instance] :231
 bool ImageContainer::IsRooted()
 {
     return _isRooted;
 }
 
-// public void set_IsRooted(bool value) [instance] :215
+// public void set_IsRooted(bool value) [instance] :232
 void ImageContainer::IsRooted(bool value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "set_IsRooted(bool)");
+
+    if (_isRooted == value)
+        return;
+
     _isRooted = value;
+
+    if (_isRooted)
+        OnRooted();
+    else
+        OnUnrooted();
+
     CheckPinning();
+    UpdateSourceListen(false);
 }
 
-// public bool get_IsVisible() [instance] :327
+// public bool get_IsVisible() [instance] :368
 bool ImageContainer::IsVisible()
 {
     return _isVisible;
 }
 
-// public void set_IsVisible(bool value) [instance] :328
+// public void set_IsVisible(bool value) [instance] :369
 void ImageContainer::IsVisible(bool value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "set_IsVisible(bool)");
@@ -2510,13 +2636,13 @@ void ImageContainer::IsVisible(bool value)
     }
 }
 
-// public Fuse.Resources.MemoryPolicy get_MemoryPolicy() [instance] :83
+// public Fuse.Resources.MemoryPolicy get_MemoryPolicy() [instance] :84
 ::g::Fuse::Resources::MemoryPolicy* ImageContainer::MemoryPolicy()
 {
     return _memoryPolicy;
 }
 
-// public void set_MemoryPolicy(Fuse.Resources.MemoryPolicy value) [instance] :84
+// public void set_MemoryPolicy(Fuse.Resources.MemoryPolicy value) [instance] :85
 void ImageContainer::MemoryPolicy(::g::Fuse::Resources::MemoryPolicy* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "set_MemoryPolicy(Fuse.Resources.MemoryPolicy)");
@@ -2525,37 +2651,25 @@ void ImageContainer::MemoryPolicy(::g::Fuse::Resources::MemoryPolicy* value)
     CheckPinning();
 }
 
-// private void OnFileAdded(Uno.UX.FileSource file) [instance] :120
-void ImageContainer::OnFileAdded(::g::Uno::UX::FileSource* file)
+// private void OnFilesChanged(Uno.UX.FileSource ignoreFile) [instance] :126
+void ImageContainer::OnFilesChanged(::g::Uno::UX::FileSource* ignoreFile)
 {
-    uStackFrame __("Fuse.Internal.ImageContainer", "OnFileAdded(Uno.UX.FileSource)");
+    uStackFrame __("Fuse.Internal.ImageContainer", "OnFilesChanged(Uno.UX.FileSource)");
     ::g::Fuse::Resources::FileImageSource* collection3;
-    float ind7;
+    float ind6;
+    ::g::Uno::UX::FileSource* ind7;
     ::g::Fuse::Resources::MemoryPolicy* ind8;
-
-    if (uPtr(_files)->Count() == 1)
-        Source((collection3 = ::g::Fuse::Resources::FileImageSource::New2(), ind7 = Density(), uPtr(collection3)->Density(ind7), ind7, uPtr(collection3)->File(file), file, ind8 = MemoryPolicy(), uPtr(collection3)->DefaultPolicy(ind8), ind8, collection3));
-    else
-        CreateMultiDensitySource();
-}
-
-// private void OnFileRemoved(Uno.UX.FileSource file) [instance] :132
-void ImageContainer::OnFileRemoved(::g::Uno::UX::FileSource* file)
-{
-    uStackFrame __("Fuse.Internal.ImageContainer", "OnFileRemoved(Uno.UX.FileSource)");
-    ::g::Fuse::Resources::FileImageSource* collection4;
-    float ind9;
-    ::g::Fuse::Resources::MemoryPolicy* ind10;
+    ::g::Uno::UX::FileSource* ret15;
 
     if (uPtr(_files)->Count() == 0)
         Source(NULL);
     else if (uPtr(_files)->Count() == 1)
-        Source((collection4 = ::g::Fuse::Resources::FileImageSource::New2(), ind9 = Density(), uPtr(collection4)->Density(ind9), ind9, uPtr(collection4)->File(file), file, ind10 = MemoryPolicy(), uPtr(collection4)->DefaultPolicy(ind10), ind10, collection4));
+        Source((collection3 = ::g::Fuse::Resources::FileImageSource::New2(), ind6 = Density(), uPtr(collection3)->Density(ind6), ind6, ind7 = (::g::Uno::Collections::RootableList__get_Item_fn(uPtr(_files), uCRef<int>(0), &ret15), ret15), uPtr(collection3)->File(ind7), ind7, ind8 = MemoryPolicy(), uPtr(collection3)->DefaultPolicy(ind8), ind8, collection3));
     else
         CreateMultiDensitySource();
 }
 
-// private void OnParamChanged() [instance] :262
+// private void OnParamChanged() [instance] :303
 void ImageContainer::OnParamChanged()
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "OnParamChanged()");
@@ -2567,7 +2681,19 @@ void ImageContainer::OnParamChanged()
         ::g::Fuse::Internal::IImageContainerOwner::OnParamChanged(uInterface(uPtr(_owner), ::TYPES[22/*Fuse.Internal.IImageContainerOwner*/]));
 }
 
-// private void OnSizingChanged() [instance] :280
+// private void OnRooted() [instance] :248
+void ImageContainer::OnRooted()
+{
+    uStackFrame __("Fuse.Internal.ImageContainer", "OnRooted()");
+
+    if (_files != NULL)
+    {
+        uPtr(_files)->Subscribe(uDelegate::New(::TYPES[23/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFilesChanged_fn, this), uDelegate::New(::TYPES[23/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFilesChanged_fn, this));
+        OnFilesChanged(NULL);
+    }
+}
+
+// private void OnSizingChanged() [instance] :321
 void ImageContainer::OnSizingChanged()
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "OnSizingChanged()");
@@ -2577,7 +2703,7 @@ void ImageContainer::OnSizingChanged()
         ::g::Fuse::Internal::IImageContainerOwner::OnSizingChanged(uInterface(uPtr(_owner), ::TYPES[22/*Fuse.Internal.IImageContainerOwner*/]));
 }
 
-// private void OnSourceChanged(object s, object a) [instance] :180
+// private void OnSourceChanged(object s, object a) [instance] :198
 void ImageContainer::OnSourceChanged(uObject* s, uObject* a)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "OnSourceChanged(object,object)");
@@ -2590,7 +2716,7 @@ void ImageContainer::OnSourceChanged(uObject* s, uObject* a)
         ::g::Fuse::Internal::IImageContainerOwner::OnSourceChanged(uInterface(uPtr(_owner), ::TYPES[22/*Fuse.Internal.IImageContainerOwner*/]));
 }
 
-// private void OnSourceError(object s, Fuse.Resources.ImageSourceErrorArgs args) [instance] :190
+// private void OnSourceError(object s, Fuse.Resources.ImageSourceErrorArgs args) [instance] :208
 void ImageContainer::OnSourceError(uObject* s, ::g::Fuse::Resources::ImageSourceErrorArgs* args)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "OnSourceError(object,Fuse.Resources.ImageSourceErrorArgs)");
@@ -2599,47 +2725,56 @@ void ImageContainer::OnSourceError(uObject* s, ::g::Fuse::Resources::ImageSource
         uPtr(SourceError1)->Invoke(2, this, args);
 }
 
-// public generated void add_ParamChanged(Uno.EventHandler value) [instance] :261
+// private void OnUnrooted() [instance] :257
+void ImageContainer::OnUnrooted()
+{
+    uStackFrame __("Fuse.Internal.ImageContainer", "OnUnrooted()");
+
+    if (_files != NULL)
+        uPtr(_files)->Unsubscribe();
+}
+
+// public generated void add_ParamChanged(Uno.EventHandler value) [instance] :302
 void ImageContainer::add_ParamChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "add_ParamChanged(Uno.EventHandler)");
-    ParamChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(ParamChanged1, value), ::TYPES[28/*Uno.EventHandler*/]);
+    ParamChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(ParamChanged1, value), ::TYPES[29/*Uno.EventHandler*/]);
 }
 
-// public generated void remove_ParamChanged(Uno.EventHandler value) [instance] :261
+// public generated void remove_ParamChanged(Uno.EventHandler value) [instance] :302
 void ImageContainer::remove_ParamChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "remove_ParamChanged(Uno.EventHandler)");
-    ParamChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(ParamChanged1, value), ::TYPES[28/*Uno.EventHandler*/]);
+    ParamChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(ParamChanged1, value), ::TYPES[29/*Uno.EventHandler*/]);
 }
 
-// private void ReapplyOptions(Fuse.Resources.ImageSource src) [instance] :92
+// private void ReapplyOptions(Fuse.Resources.ImageSource src) [instance] :93
 void ImageContainer::ReapplyOptions(::g::Fuse::Resources::ImageSource* src)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "ReapplyOptions(Fuse.Resources.ImageSource)");
-    ::g::Fuse::Resources::ImageSource* ret17;
-    ::g::Fuse::Resources::FileImageSource* f = uAs< ::g::Fuse::Resources::FileImageSource*>(src, ::TYPES[23/*Fuse.Resources.FileImageSource*/]);
+    ::g::Fuse::Resources::ImageSource* ret16;
+    ::g::Fuse::Resources::FileImageSource* f = uAs< ::g::Fuse::Resources::FileImageSource*>(src, ::TYPES[24/*Fuse.Resources.FileImageSource*/]);
 
     if ((f != NULL) && (MemoryPolicy() != NULL))
         uPtr(f)->DefaultPolicy(MemoryPolicy());
 
-    ::g::Fuse::Resources::HttpImageSource* hf = uAs< ::g::Fuse::Resources::HttpImageSource*>(src, ::TYPES[24/*Fuse.Resources.HttpImageSource*/]);
+    ::g::Fuse::Resources::HttpImageSource* hf = uAs< ::g::Fuse::Resources::HttpImageSource*>(src, ::TYPES[25/*Fuse.Resources.HttpImageSource*/]);
 
     if ((hf != NULL) && (MemoryPolicy() != NULL))
         uPtr(hf)->DefaultPolicy(MemoryPolicy());
 
-    ::g::Fuse::Resources::MultiDensityImageSource* mf = uAs< ::g::Fuse::Resources::MultiDensityImageSource*>(Source(), ::TYPES[25/*Fuse.Resources.MultiDensityImageSource*/]);
+    ::g::Fuse::Resources::MultiDensityImageSource* mf = uAs< ::g::Fuse::Resources::MultiDensityImageSource*>(Source(), ::TYPES[26/*Fuse.Resources.MultiDensityImageSource*/]);
 
     if (mf != NULL)
 
-        for (uObject* enum2 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(uPtr(mf)->Sources()), ::TYPES[26/*Uno.Collections.IEnumerable<Fuse.Resources.ImageSource>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum2), ::TYPES[16/*Uno.Collections.IEnumerator*/])); )
+        for (uObject* enum2 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(uPtr(mf)->Sources()), ::TYPES[27/*Uno.Collections.IEnumerable<Fuse.Resources.ImageSource>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum2), ::TYPES[16/*Uno.Collections.IEnumerator*/])); )
         {
-            ::g::Fuse::Resources::ImageSource* s = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum2), ::TYPES[27/*Uno.Collections.IEnumerator<Fuse.Resources.ImageSource>*/]), &ret17), ret17);
+            ::g::Fuse::Resources::ImageSource* s = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum2), ::TYPES[28/*Uno.Collections.IEnumerator<Fuse.Resources.ImageSource>*/]), &ret16), ret16);
             ReapplyOptions(s);
         }
 }
 
-// private void ReleaseSource() [instance] :196
+// private void ReleaseSource() [instance] :214
 void ImageContainer::ReleaseSource()
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "ReleaseSource()");
@@ -2647,8 +2782,7 @@ void ImageContainer::ReleaseSource()
     if (_source == NULL)
         return;
 
-    uPtr(_source)->remove_Changed(uDelegate::New(::TYPES[28/*Uno.EventHandler*/], (void*)ImageContainer__OnSourceChanged_fn, this));
-    uPtr(_source)->remove_Error(uDelegate::New(::TYPES[29/*Fuse.Resources.ImageSourceErrorHandler*/], (void*)ImageContainer__OnSourceError_fn, this));
+    UpdateSourceListen(true);
 
     if (_sourcePinned)
     {
@@ -2659,13 +2793,13 @@ void ImageContainer::ReleaseSource()
     _source = NULL;
 }
 
-// public Fuse.Drawing.ResampleMode get_ResampleMode() [instance] :248
+// public Fuse.Drawing.ResampleMode get_ResampleMode() [instance] :289
 int ImageContainer::ResampleMode()
 {
     return _resampleMode;
 }
 
-// public void set_ResampleMode(Fuse.Drawing.ResampleMode value) [instance] :249
+// public void set_ResampleMode(Fuse.Drawing.ResampleMode value) [instance] :290
 void ImageContainer::ResampleMode(int value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "set_ResampleMode(Fuse.Drawing.ResampleMode)");
@@ -2673,20 +2807,20 @@ void ImageContainer::ResampleMode(int value)
     if (_resampleMode != value)
     {
         if (value == 2)
-            ::g::Fuse::Diagnostics::Deprecated(::STRINGS[2/*"ResampleMod...*/], this, ::STRINGS[3/*"/Users/eric...*/], 254, ::STRINGS[4/*"set_Resampl...*/]);
+            ::g::Fuse::Diagnostics::Deprecated(::STRINGS[5/*"ResampleMod...*/], this, ::STRINGS[3/*"/Users/eric...*/], 295, ::STRINGS[6/*"set_Resampl...*/]);
 
         _resampleMode = value;
         OnParamChanged();
     }
 }
 
-// public Fuse.Resources.ImageSource get_Source() [instance] :162
+// public Fuse.Resources.ImageSource get_Source() [instance] :156
 ::g::Fuse::Resources::ImageSource* ImageContainer::Source()
 {
     return _source;
 }
 
-// public void set_Source(Fuse.Resources.ImageSource value) [instance] :163
+// public void set_Source(Fuse.Resources.ImageSource value) [instance] :157
 void ImageContainer::Source(::g::Fuse::Resources::ImageSource* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "set_Source(Fuse.Resources.ImageSource)");
@@ -2695,53 +2829,47 @@ void ImageContainer::Source(::g::Fuse::Resources::ImageSource* value)
     {
         ReleaseSource();
         _source = value;
-
-        if (_source != NULL)
-        {
-            uPtr(_source)->add_Changed(uDelegate::New(::TYPES[28/*Uno.EventHandler*/], (void*)ImageContainer__OnSourceChanged_fn, this));
-            uPtr(_source)->add_Error(uDelegate::New(::TYPES[29/*Fuse.Resources.ImageSourceErrorHandler*/], (void*)ImageContainer__OnSourceError_fn, this));
-        }
-
+        UpdateSourceListen(false);
         OnSourceChanged(NULL, NULL);
     }
 }
 
-// public generated void add_SourceChanged(Uno.EventHandler value) [instance] :179
+// public generated void add_SourceChanged(Uno.EventHandler value) [instance] :197
 void ImageContainer::add_SourceChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "add_SourceChanged(Uno.EventHandler)");
-    SourceChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SourceChanged1, value), ::TYPES[28/*Uno.EventHandler*/]);
+    SourceChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SourceChanged1, value), ::TYPES[29/*Uno.EventHandler*/]);
 }
 
-// public generated void remove_SourceChanged(Uno.EventHandler value) [instance] :179
+// public generated void remove_SourceChanged(Uno.EventHandler value) [instance] :197
 void ImageContainer::remove_SourceChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "remove_SourceChanged(Uno.EventHandler)");
-    SourceChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SourceChanged1, value), ::TYPES[28/*Uno.EventHandler*/]);
+    SourceChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SourceChanged1, value), ::TYPES[29/*Uno.EventHandler*/]);
 }
 
-// public generated void add_SourceError(Fuse.Resources.ImageSourceErrorHandler value) [instance] :189
+// public generated void add_SourceError(Fuse.Resources.ImageSourceErrorHandler value) [instance] :207
 void ImageContainer::add_SourceError(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "add_SourceError(Fuse.Resources.ImageSourceErrorHandler)");
-    SourceError1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SourceError1, value), ::TYPES[29/*Fuse.Resources.ImageSourceErrorHandler*/]);
+    SourceError1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SourceError1, value), ::TYPES[30/*Fuse.Resources.ImageSourceErrorHandler*/]);
 }
 
-// public generated void remove_SourceError(Fuse.Resources.ImageSourceErrorHandler value) [instance] :189
+// public generated void remove_SourceError(Fuse.Resources.ImageSourceErrorHandler value) [instance] :207
 void ImageContainer::remove_SourceError(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "remove_SourceError(Fuse.Resources.ImageSourceErrorHandler)");
-    SourceError1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SourceError1, value), ::TYPES[29/*Fuse.Resources.ImageSourceErrorHandler*/]);
+    SourceError1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SourceError1, value), ::TYPES[30/*Fuse.Resources.ImageSourceErrorHandler*/]);
 }
 
-// public Fuse.Elements.StretchDirection get_StretchDirection() [instance] :289
+// public Fuse.Elements.StretchDirection get_StretchDirection() [instance] :330
 int ImageContainer::StretchDirection()
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "get_StretchDirection()");
     return uPtr(Sizing)->stretchDirection;
 }
 
-// public void set_StretchDirection(Fuse.Elements.StretchDirection value) [instance] :290
+// public void set_StretchDirection(Fuse.Elements.StretchDirection value) [instance] :331
 void ImageContainer::StretchDirection(int value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "set_StretchDirection(Fuse.Elements.StretchDirection)");
@@ -2750,14 +2878,14 @@ void ImageContainer::StretchDirection(int value)
         OnSizingChanged();
 }
 
-// public Fuse.Elements.StretchMode get_StretchMode() [instance] :272
+// public Fuse.Elements.StretchMode get_StretchMode() [instance] :313
 int ImageContainer::StretchMode()
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "get_StretchMode()");
     return uPtr(Sizing)->stretchMode;
 }
 
-// public void set_StretchMode(Fuse.Elements.StretchMode value) [instance] :273
+// public void set_StretchMode(Fuse.Elements.StretchMode value) [instance] :314
 void ImageContainer::StretchMode(int value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "set_StretchMode(Fuse.Elements.StretchMode)");
@@ -2766,14 +2894,14 @@ void ImageContainer::StretchMode(int value)
         OnSizingChanged();
 }
 
-// public Fuse.Elements.StretchSizing get_StretchSizing() [instance] :299
+// public Fuse.Elements.StretchSizing get_StretchSizing() [instance] :340
 int ImageContainer::StretchSizing()
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "get_StretchSizing()");
     return uPtr(Sizing)->stretchSizing;
 }
 
-// public void set_StretchSizing(Fuse.Elements.StretchSizing value) [instance] :300
+// public void set_StretchSizing(Fuse.Elements.StretchSizing value) [instance] :341
 void ImageContainer::StretchSizing(int value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "set_StretchSizing(Fuse.Elements.StretchSizing)");
@@ -2782,11 +2910,41 @@ void ImageContainer::StretchSizing(int value)
         OnSizingChanged();
 }
 
-// public string get_Url() [instance] :51
+// private void UpdateSourceListen([bool forceOff]) [instance] :170
+void ImageContainer::UpdateSourceListen(bool forceOff)
+{
+    uStackFrame __("Fuse.Internal.ImageContainer", "UpdateSourceListen([bool])");
+    bool should = (!forceOff && (_source != NULL)) && IsRooted();
+
+    if (should == _isSourceListen)
+        return;
+
+    if (_source == NULL)
+    {
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[2/*"Switching l...*/], this, ::STRINGS[3/*"/Users/eric...*/], 179, ::STRINGS[4/*"UpdateSourc...*/]);
+        _isSourceListen = false;
+        return;
+    }
+
+    _isSourceListen = should;
+
+    if (should)
+    {
+        uPtr(_source)->add_Changed(uDelegate::New(::TYPES[29/*Uno.EventHandler*/], (void*)ImageContainer__OnSourceChanged_fn, this));
+        uPtr(_source)->add_Error(uDelegate::New(::TYPES[30/*Fuse.Resources.ImageSourceErrorHandler*/], (void*)ImageContainer__OnSourceError_fn, this));
+    }
+    else
+    {
+        uPtr(_source)->remove_Changed(uDelegate::New(::TYPES[29/*Uno.EventHandler*/], (void*)ImageContainer__OnSourceChanged_fn, this));
+        uPtr(_source)->remove_Error(uDelegate::New(::TYPES[30/*Fuse.Resources.ImageSourceErrorHandler*/], (void*)ImageContainer__OnSourceError_fn, this));
+    }
+}
+
+// public string get_Url() [instance] :52
 uString* ImageContainer::Url()
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "get_Url()");
-    ::g::Fuse::Resources::HttpImageSource* http = uAs< ::g::Fuse::Resources::HttpImageSource*>(Source(), ::TYPES[24/*Fuse.Resources.HttpImageSource*/]);
+    ::g::Fuse::Resources::HttpImageSource* http = uAs< ::g::Fuse::Resources::HttpImageSource*>(Source(), ::TYPES[25/*Fuse.Resources.HttpImageSource*/]);
 
     if (http == NULL)
         return NULL;
@@ -2794,79 +2952,79 @@ uString* ImageContainer::Url()
     return uPtr(http)->Url();
 }
 
-// public void set_Url(string value) [instance] :58
+// public void set_Url(string value) [instance] :59
 void ImageContainer::Url(uString* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "set_Url(string)");
     ::g::Fuse::Resources::HttpImageSource* collection1;
-    float ind13;
-    ::g::Fuse::Resources::MemoryPolicy* ind14;
-    Source((collection1 = ::g::Fuse::Resources::HttpImageSource::New2(), uPtr(collection1)->Url(value), value, ind13 = Density(), uPtr(collection1)->Density(ind13), ind13, ind14 = MemoryPolicy(), uPtr(collection1)->DefaultPolicy(ind14), ind14, collection1));
+    float ind11;
+    ::g::Fuse::Resources::MemoryPolicy* ind12;
+    Source((collection1 = ::g::Fuse::Resources::HttpImageSource::New2(), uPtr(collection1)->Url(value), value, ind11 = Density(), uPtr(collection1)->Density(ind11), ind11, ind12 = MemoryPolicy(), uPtr(collection1)->DefaultPolicy(ind12), ind12, collection1));
 }
 
 // public ImageContainer New([Fuse.Internal.IImageContainerOwner owner]) [static] :25
 ImageContainer* ImageContainer::New1(uObject* owner)
 {
-    ImageContainer* obj15 = (ImageContainer*)uNew(ImageContainer_typeof());
-    obj15->ctor_(owner);
-    return obj15;
+    ImageContainer* obj13 = (ImageContainer*)uNew(ImageContainer_typeof());
+    obj13->ctor_(owner);
+    return obj13;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
-// internal struct MiniList<T> :1436
+// internal struct MiniList<T> :1516
 // {
-// public void Insert(int index, T value) [adapter] :1457
+// public void Insert(int index, T value) [adapter] :1537
 static void MiniList__Insert_ex(uObject* __this, int* index, uObject* value)
 {
     MiniList__Insert_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, index, value);
 }
 
-// public void RemoveAt(int index) [adapter] :1491
+// public void RemoveAt(int index) [adapter] :1571
 static void MiniList__RemoveAt_ex(uObject* __this, int* index)
 {
     MiniList__RemoveAt_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, index);
 }
 
-// public T get_Item(int index) [adapter] :1526
+// public T get_Item(int index) [adapter] :1606
 static void MiniList__get_Item_ex(uObject* __this, int* index, uObject** __retval)
 {
     MiniList__get_Item_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, index, __retval);
 }
 
-// public void Clear() [adapter] :1506
+// public void Clear() [adapter] :1586
 static void MiniList__Clear_ex(uObject* __this)
 {
     MiniList__Clear_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type);
 }
 
-// public void Add(T value) [adapter] :1452
+// public void Add(T value) [adapter] :1532
 static void MiniList__Add_ex(uObject* __this, uObject* value)
 {
     MiniList__Add_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, value);
 }
 
-// public bool Remove(T value) [adapter] :1476
+// public bool Remove(T value) [adapter] :1556
 static void MiniList__Remove_ex(uObject* __this, uObject* value, bool* __retval)
 {
     MiniList__Remove_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, value, __retval);
 }
 
-// public bool Contains(T value) [adapter] :1515
+// public bool Contains(T value) [adapter] :1595
 static void MiniList__Contains_ex(uObject* __this, uObject* value, bool* __retval)
 {
     MiniList__Contains_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, value, __retval);
 }
 
-// public int get_Count() [adapter] :1442
+// public int get_Count() [adapter] :1522
 static void MiniList__get_Count_ex(uObject* __this, int* __retval)
 {
     MiniList__get_Count_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, __retval);
 }
 
-// public Uno.Collections.IEnumerator<T> GetEnumerator() [adapter] :1539
+// public Uno.Collections.IEnumerator<T> GetEnumerator() [adapter] :1619
 static void MiniList__GetEnumerator_ex(uObject* __this, uObject** __retval)
 {
     MiniList__GetEnumerator_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, __retval);
@@ -2874,10 +3032,10 @@ static void MiniList__GetEnumerator_ex(uObject* __this, uObject** __retval)
 
 static void MiniList_build(uType* type)
 {
-    ::STRINGS[5] = uString::Const("value");
-    ::STRINGS[6] = uString::Const("index");
-    ::TYPES[33] = ::g::Uno::Collections::List_typeof();
-    ::TYPES[34] = MiniList__Enumerator_typeof();
+    ::STRINGS[7] = uString::Const("value");
+    ::STRINGS[8] = uString::Const("index");
+    ::TYPES[34] = ::g::Uno::Collections::List_typeof();
+    ::TYPES[35] = MiniList__Enumerator_typeof();
     type->SetPrecalc(
         ::g::Uno::Collections::List_typeof()->MakeType(type->T(0), NULL),
         MiniList__Enumerator_typeof()->MakeType(type->T(0), type->T(0), NULL),
@@ -2916,68 +3074,68 @@ MiniList_type* MiniList_typeof()
     return type;
 }
 
-// public void Add(T value) :1452
+// public void Add(T value) :1532
 void MiniList__Add_fn(MiniList* __this, uType* __type, uObject* value)
 {
     __this->Add(__type, value);
 }
 
-// public void Clear() :1506
+// public void Clear() :1586
 void MiniList__Clear_fn(MiniList* __this, uType* __type)
 {
     __this->Clear(__type);
 }
 
-// public bool Contains(T value) :1515
+// public bool Contains(T value) :1595
 void MiniList__Contains_fn(MiniList* __this, uType* __type, uObject* value, bool* __retval)
 {
     *__retval = __this->Contains(__type, value);
 }
 
-// public int get_Count() :1442
+// public int get_Count() :1522
 void MiniList__get_Count_fn(MiniList* __this, uType* __type, int* __retval)
 {
     *__retval = __this->Count(__type);
 }
 
-// public Uno.Collections.IEnumerator<T> GetEnumerator() :1539
+// public Uno.Collections.IEnumerator<T> GetEnumerator() :1619
 void MiniList__GetEnumerator_fn(MiniList* __this, uType* __type, uObject** __retval)
 {
     *__retval = __this->GetEnumerator(__type);
 }
 
-// public void Insert(int index, T value) :1457
+// public void Insert(int index, T value) :1537
 void MiniList__Insert_fn(MiniList* __this, uType* __type, int* index, uObject* value)
 {
     __this->Insert(__type, *index, value);
 }
 
-// public T get_Item(int index) :1526
+// public T get_Item(int index) :1606
 void MiniList__get_Item_fn(MiniList* __this, uType* __type, int* index, uObject** __retval)
 {
     *__retval = __this->Item(__type, *index);
 }
 
-// public bool Remove(T value) :1476
+// public bool Remove(T value) :1556
 void MiniList__Remove_fn(MiniList* __this, uType* __type, uObject* value, bool* __retval)
 {
     *__retval = __this->Remove(__type, value);
 }
 
-// public void RemoveAt(int index) :1491
+// public void RemoveAt(int index) :1571
 void MiniList__RemoveAt_fn(MiniList* __this, uType* __type, int* index)
 {
     __this->RemoveAt(__type, *index);
 }
 
-// public void Add(T value) [instance] :1452
+// public void Add(T value) [instance] :1532
 void MiniList::Add(uType* __type, uObject* value)
 {
     uStackFrame __("Fuse.Internal.MiniList`1", "Add(T)");
     Insert(__type, Count(__type), value);
 }
 
-// public void Clear() [instance] :1506
+// public void Clear() [instance] :1586
 void MiniList::Clear(uType* __type)
 {
     uType* __types[] = {
@@ -2992,7 +3150,7 @@ void MiniList::Clear(uType* __type)
         _list = NULL;
 }
 
-// public bool Contains(T value) [instance] :1515
+// public bool Contains(T value) [instance] :1595
 bool MiniList::Contains(uType* __type, uObject* value)
 {
     uType* __types[] = {
@@ -3008,7 +3166,7 @@ bool MiniList::Contains(uType* __type, uObject* value)
     return (_list != NULL) && ::g::Uno::Object::Equals1(_list, value);
 }
 
-// public int get_Count() [instance] :1442
+// public int get_Count() [instance] :1522
 int MiniList::Count(uType* __type)
 {
     uType* __types[] = {
@@ -3023,7 +3181,7 @@ int MiniList::Count(uType* __type)
     return (_list == NULL) ? 0 : 1;
 }
 
-// public Uno.Collections.IEnumerator<T> GetEnumerator() [instance] :1539
+// public Uno.Collections.IEnumerator<T> GetEnumerator() [instance] :1619
 uObject* MiniList::GetEnumerator(uType* __type)
 {
     uType* __types[] = {
@@ -3032,7 +3190,7 @@ uObject* MiniList::GetEnumerator(uType* __type)
     return uBox(__types[0], MiniList__Enumerator__New1(__types[0], *this));
 }
 
-// public void Insert(int index, T value) [instance] :1457
+// public void Insert(int index, T value) [instance] :1537
 void MiniList::Insert(uType* __type, int index, uObject* value)
 {
     uType* __types[] = {
@@ -3042,14 +3200,14 @@ void MiniList::Insert(uType* __type, int index, uObject* value)
     uStackFrame __("Fuse.Internal.MiniList`1", "Insert(int,T)");
 
     if (value == NULL)
-        U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[5/*"value"*/]));
+        U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[7/*"value"*/]));
 
     ::g::Uno::Collections::List* list = uAs< ::g::Uno::Collections::List*>(_list, __types[0]);
 
     if (list == NULL)
     {
         if ((_list == NULL) && (index != 0))
-            U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[6/*"index"*/]));
+            U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[8/*"index"*/]));
 
         list = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(__types[0]);
 
@@ -3062,7 +3220,7 @@ void MiniList::Insert(uType* __type, int index, uObject* value)
     ::g::Uno::Collections::List__Insert_fn(uPtr(list), uCRef<int>(index), value);
 }
 
-// public T get_Item(int index) [instance] :1526
+// public T get_Item(int index) [instance] :1606
 uObject* MiniList::Item(uType* __type, int index)
 {
     uType* __types[] = {
@@ -3082,7 +3240,7 @@ uObject* MiniList::Item(uType* __type, int index)
     return uAs<uObject*>(_list, __types[1]);
 }
 
-// public bool Remove(T value) [instance] :1476
+// public bool Remove(T value) [instance] :1556
 bool MiniList::Remove(uType* __type, uObject* value)
 {
     uType* __types[] = {
@@ -3105,7 +3263,7 @@ bool MiniList::Remove(uType* __type, uObject* value)
     return (::g::Uno::Collections::List__Remove_fn(uPtr(list), value, &ret2), ret2);
 }
 
-// public void RemoveAt(int index) [instance] :1491
+// public void RemoveAt(int index) [instance] :1571
 void MiniList::RemoveAt(uType* __type, int index)
 {
     uType* __types[] = {
@@ -3121,22 +3279,41 @@ void MiniList::RemoveAt(uType* __type, int index)
     }
 
     if (index != 0)
-        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[6/*"index"*/]));
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[8/*"index"*/]));
 
     _list = NULL;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
-// internal sealed class RectPacker :1701
+// public delegate float4 Curves.PointInterpolater(float4 p0, float4 p1, float4 m0, float4 m1, float t) :877
+uDelegateType* Curves__PointInterpolater_typeof()
+{
+    static uSStrong<uDelegateType*> type;
+    if (type != NULL) return type;
+
+    type = uDelegateType::New("Fuse.Internal.Curves.PointInterpolater", 5, 0);
+    type->SetSignature(::g::Uno::Float4_typeof(),
+        ::g::Uno::Float4_typeof(),
+        ::g::Uno::Float4_typeof(),
+        ::g::Uno::Float4_typeof(),
+        ::g::Uno::Float4_typeof(),
+        ::g::Uno::Float_typeof());
+    return type;
+}
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
+
+// internal sealed class RectPacker :1807
 // {
 static void RectPacker_build(uType* type)
 {
-    ::TYPES[35] = ::g::Uno::Collections::LinkedList_typeof()->MakeType(::g::Fuse::Internal::SkylineNode_typeof(), NULL);
+    ::TYPES[36] = ::g::Uno::Collections::LinkedList_typeof()->MakeType(::g::Fuse::Internal::SkylineNode_typeof(), NULL);
     type->SetFields(0,
-        ::TYPES[35/*Uno.Collections.LinkedList<Fuse.Internal.SkylineNode>*/], offsetof(::g::Fuse::Internal::RectPacker, _skyline), 0,
+        ::TYPES[36/*Uno.Collections.LinkedList<Fuse.Internal.SkylineNode>*/], offsetof(::g::Fuse::Internal::RectPacker, _skyline), 0,
         ::g::Uno::Int2_typeof(), offsetof(::g::Fuse::Internal::RectPacker, _Size), 0);
 }
 
@@ -3154,65 +3331,65 @@ uType* RectPacker_typeof()
     return type;
 }
 
-// public RectPacker(int2 size) :1706
+// public RectPacker(int2 size) :1812
 void RectPacker__ctor__fn(RectPacker* __this, ::g::Uno::Int2* size)
 {
     __this->ctor_(*size);
 }
 
-// private void MergeNeighbours(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node) :1792
+// private void MergeNeighbours(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node) :1898
 void RectPacker__MergeNeighbours_fn(RectPacker* __this, ::g::Uno::Collections::LinkedListNode* node)
 {
     __this->MergeNeighbours(node);
 }
 
-// public RectPacker New(int2 size) :1706
+// public RectPacker New(int2 size) :1812
 void RectPacker__New1_fn(::g::Uno::Int2* size, RectPacker** __retval)
 {
     *__retval = RectPacker::New1(*size);
 }
 
-// private void ReplaceNodes(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, Fuse.Internal.SkylineNode newSkyline) :1766
+// private void ReplaceNodes(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, Fuse.Internal.SkylineNode newSkyline) :1872
 void RectPacker__ReplaceNodes_fn(RectPacker* __this, ::g::Uno::Collections::LinkedListNode* node, ::g::Fuse::Internal::SkylineNode* newSkyline)
 {
     __this->ReplaceNodes(node, *newSkyline);
 }
 
-// public generated int2 get_Size() :1703
+// public generated int2 get_Size() :1809
 void RectPacker__get_Size_fn(RectPacker* __this, ::g::Uno::Int2* __retval)
 {
     *__retval = __this->Size();
 }
 
-// private generated void set_Size(int2 value) :1703
+// private generated void set_Size(int2 value) :1809
 void RectPacker__set_Size_fn(RectPacker* __this, ::g::Uno::Int2* value)
 {
     __this->Size(*value);
 }
 
-// public bool TryAdd(int2 size, Uno.Recti& rect) :1713
+// public bool TryAdd(int2 size, Uno.Recti& rect) :1819
 void RectPacker__TryAdd_fn(RectPacker* __this, ::g::Uno::Int2* size, ::g::Uno::Recti* rect, bool* __retval)
 {
     *__retval = __this->TryAdd(*size, rect);
 }
 
-// private bool TryFit(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, int2 size, int& height) :1749
+// private bool TryFit(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, int2 size, int& height) :1855
 void RectPacker__TryFit_fn(RectPacker* __this, ::g::Uno::Collections::LinkedListNode* node, ::g::Uno::Int2* size, int* height, bool* __retval)
 {
     *__retval = __this->TryFit(node, *size, height);
 }
 
-// public RectPacker(int2 size) [instance] :1706
+// public RectPacker(int2 size) [instance] :1812
 void RectPacker::ctor_(::g::Uno::Int2 size)
 {
     uStackFrame __("Fuse.Internal.RectPacker", ".ctor(int2)");
     ::g::Uno::Collections::LinkedListNode* ret2;
     Size(size);
-    _skyline = ((::g::Uno::Collections::LinkedList*)::g::Uno::Collections::LinkedList::New1(::TYPES[35/*Uno.Collections.LinkedList<Fuse.Internal.SkylineNode>*/]));
+    _skyline = ((::g::Uno::Collections::LinkedList*)::g::Uno::Collections::LinkedList::New1(::TYPES[36/*Uno.Collections.LinkedList<Fuse.Internal.SkylineNode>*/]));
     ::g::Uno::Collections::LinkedList__AddFirst_fn(uPtr(_skyline), uCRef(::g::Fuse::Internal::SkylineNode__New1(::g::Uno::Int2__New1(0), Size().X)), &ret2);
 }
 
-// private void MergeNeighbours(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node) [instance] :1792
+// private void MergeNeighbours(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node) [instance] :1898
 void RectPacker::MergeNeighbours(::g::Uno::Collections::LinkedListNode* node)
 {
     uStackFrame __("Fuse.Internal.RectPacker", "MergeNeighbours(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode>)");
@@ -3251,7 +3428,7 @@ void RectPacker::MergeNeighbours(::g::Uno::Collections::LinkedListNode* node)
     }
 }
 
-// private void ReplaceNodes(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, Fuse.Internal.SkylineNode newSkyline) [instance] :1766
+// private void ReplaceNodes(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, Fuse.Internal.SkylineNode newSkyline) [instance] :1872
 void RectPacker::ReplaceNodes(::g::Uno::Collections::LinkedListNode* node, ::g::Fuse::Internal::SkylineNode newSkyline)
 {
     uStackFrame __("Fuse.Internal.RectPacker", "ReplaceNodes(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode>,Fuse.Internal.SkylineNode)");
@@ -3281,19 +3458,19 @@ void RectPacker::ReplaceNodes(::g::Uno::Collections::LinkedListNode* node, ::g::
     MergeNeighbours(newNode);
 }
 
-// public generated int2 get_Size() [instance] :1703
+// public generated int2 get_Size() [instance] :1809
 ::g::Uno::Int2 RectPacker::Size()
 {
     return _Size;
 }
 
-// private generated void set_Size(int2 value) [instance] :1703
+// private generated void set_Size(int2 value) [instance] :1809
 void RectPacker::Size(::g::Uno::Int2 value)
 {
     _Size = value;
 }
 
-// public bool TryAdd(int2 size, Uno.Recti& rect) [instance] :1713
+// public bool TryAdd(int2 size, Uno.Recti& rect) [instance] :1819
 bool RectPacker::TryAdd(::g::Uno::Int2 size, ::g::Uno::Recti* rect)
 {
     uStackFrame __("Fuse.Internal.RectPacker", "TryAdd(int2,Uno.Recti&)");
@@ -3332,7 +3509,7 @@ bool RectPacker::TryAdd(::g::Uno::Int2 size, ::g::Uno::Recti* rect)
     }
 }
 
-// private bool TryFit(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, int2 size, int& height) [instance] :1749
+// private bool TryFit(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, int2 size, int& height) [instance] :1855
 bool RectPacker::TryFit(::g::Uno::Collections::LinkedListNode* node, ::g::Uno::Int2 size, int* height)
 {
     uStackFrame __("Fuse.Internal.RectPacker", "TryFit(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode>,int2,int&)");
@@ -3359,7 +3536,7 @@ bool RectPacker::TryFit(::g::Uno::Collections::LinkedListNode* node, ::g::Uno::I
     return false;
 }
 
-// public RectPacker New(int2 size) [static] :1706
+// public RectPacker New(int2 size) [static] :1812
 RectPacker* RectPacker::New1(::g::Uno::Int2 size)
 {
     RectPacker* obj1 = (RectPacker*)uNew(RectPacker_typeof());
@@ -3368,8 +3545,8 @@ RectPacker* RectPacker::New1(::g::Uno::Int2 size)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal abstract class ScalarBlender<T> :366
 // {
@@ -3406,8 +3583,8 @@ void ScalarBlender::ctor_1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class Size2Blender :347
 // {
@@ -3529,8 +3706,8 @@ Size2Blender* Size2Blender::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class SizeBlender :331
 // {
@@ -3649,10 +3826,10 @@ SizeBlender* SizeBlender::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
-// internal sealed class SizingContainer :355
+// internal sealed class SizingContainer :396
 // {
 static void SizingContainer_build(uType* type)
 {
@@ -3681,97 +3858,97 @@ uType* SizingContainer_typeof()
     return type;
 }
 
-// public generated SizingContainer() :355
+// public generated SizingContainer() :396
 void SizingContainer__ctor__fn(SizingContainer* __this)
 {
     __this->ctor_();
 }
 
-// public float4 CalcClip(float2 availableSize, float2& origin, float2& contentActualSize) :579
+// public float4 CalcClip(float2 availableSize, float2& origin, float2& contentActualSize) :620
 void SizingContainer__CalcClip_fn(SizingContainer* __this, ::g::Uno::Float2* availableSize, ::g::Uno::Float2* origin, ::g::Uno::Float2* contentActualSize, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->CalcClip(*availableSize, origin, contentActualSize);
 }
 
-// public float2 CalcContentSize(float2 size, int2 pixelSize) :407
+// public float2 CalcContentSize(float2 size, int2 pixelSize) :448
 void SizingContainer__CalcContentSize_fn(SizingContainer* __this, ::g::Uno::Float2* size, ::g::Uno::Int2* pixelSize, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->CalcContentSize(*size, *pixelSize);
 }
 
-// public float2 CalcOrigin(float2 availableSize, float2 contentActualSize) :537
+// public float2 CalcOrigin(float2 availableSize, float2 contentActualSize) :578
 void SizingContainer__CalcOrigin_fn(SizingContainer* __this, ::g::Uno::Float2* availableSize, ::g::Uno::Float2* contentActualSize, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->CalcOrigin(*availableSize, *contentActualSize);
 }
 
-// public float2 CalcScale(float2 availableSize, float2 desiredSize) :402
+// public float2 CalcScale(float2 availableSize, float2 desiredSize) :443
 void SizingContainer__CalcScale_fn(SizingContainer* __this, ::g::Uno::Float2* availableSize, ::g::Uno::Float2* desiredSize, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->CalcScale(*availableSize, *desiredSize);
 }
 
-// private float2 CalcScale(float2 availableSize, float2 desiredSize, bool autoWidth, bool autoHeight) :453
+// private float2 CalcScale(float2 availableSize, float2 desiredSize, bool autoWidth, bool autoHeight) :494
 void SizingContainer__CalcScale1_fn(SizingContainer* __this, ::g::Uno::Float2* availableSize, ::g::Uno::Float2* desiredSize, bool* autoWidth, bool* autoHeight, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->CalcScale1(*availableSize, *desiredSize, *autoWidth, *autoHeight);
 }
 
-// public float2 ExpandFillSize(float2 size, Fuse.LayoutParams lp) :624
+// public float2 ExpandFillSize(float2 size, Fuse.LayoutParams lp) :665
 void SizingContainer__ExpandFillSize_fn(SizingContainer* __this, ::g::Uno::Float2* size, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->ExpandFillSize(*size, *lp);
 }
 
-// public generated SizingContainer New() :355
+// public generated SizingContainer New() :396
 void SizingContainer__New1_fn(SizingContainer** __retval)
 {
     *__retval = SizingContainer::New1();
 }
 
-// private float get_PaddingHeight() :400
+// private float get_PaddingHeight() :441
 void SizingContainer__get_PaddingHeight_fn(SizingContainer* __this, float* __retval)
 {
     *__retval = __this->PaddingHeight();
 }
 
-// private float get_PaddingWidth() :399
+// private float get_PaddingWidth() :440
 void SizingContainer__get_PaddingWidth_fn(SizingContainer* __this, float* __retval)
 {
     *__retval = __this->PaddingWidth();
 }
 
-// public bool SetAlignment(Fuse.Elements.Alignment a) :378
+// public bool SetAlignment(Fuse.Elements.Alignment a) :419
 void SizingContainer__SetAlignment_fn(SizingContainer* __this, int* a, bool* __retval)
 {
     *__retval = __this->SetAlignment(*a);
 }
 
-// public bool SetStretchDirection(Fuse.Elements.StretchDirection dir) :370
+// public bool SetStretchDirection(Fuse.Elements.StretchDirection dir) :411
 void SizingContainer__SetStretchDirection_fn(SizingContainer* __this, int* dir, bool* __retval)
 {
     *__retval = __this->SetStretchDirection(*dir);
 }
 
-// public bool SetStretchMode(Fuse.Elements.StretchMode mode) :362
+// public bool SetStretchMode(Fuse.Elements.StretchMode mode) :403
 void SizingContainer__SetStretchMode_fn(SizingContainer* __this, int* mode, bool* __retval)
 {
     *__retval = __this->SetStretchMode(*mode);
 }
 
-// public bool SetStretchSizing(Fuse.Elements.StretchSizing ss) :386
+// public bool SetStretchSizing(Fuse.Elements.StretchSizing ss) :427
 void SizingContainer__SetStretchSizing_fn(SizingContainer* __this, int* ss, bool* __retval)
 {
     *__retval = __this->SetStretchSizing(*ss);
 }
 
-// private float2 SnapSize(float2 sz) :448
+// private float2 SnapSize(float2 sz) :489
 void SizingContainer__SnapSize_fn(SizingContainer* __this, ::g::Uno::Float2* sz, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->SnapSize(*sz);
 }
 
-// public generated SizingContainer() [instance] :355
+// public generated SizingContainer() [instance] :396
 void SizingContainer::ctor_()
 {
     stretchMode = 5;
@@ -3780,7 +3957,7 @@ void SizingContainer::ctor_()
     absoluteZoom = 1.0f;
 }
 
-// public float4 CalcClip(float2 availableSize, float2& origin, float2& contentActualSize) [instance] :579
+// public float4 CalcClip(float2 availableSize, float2& origin, float2& contentActualSize) [instance] :620
 ::g::Uno::Float4 SizingContainer::CalcClip(::g::Uno::Float2 availableSize, ::g::Uno::Float2* origin, ::g::Uno::Float2* contentActualSize)
 {
     ::g::Uno::Float4 ind1;
@@ -3824,7 +4001,7 @@ void SizingContainer::ctor_()
     return ::g::Uno::Float4__New2(tl.X, tl.Y, br.X, br.Y);
 }
 
-// public float2 CalcContentSize(float2 size, int2 pixelSize) [instance] :407
+// public float2 CalcContentSize(float2 size, int2 pixelSize) [instance] :448
 ::g::Uno::Float2 SizingContainer::CalcContentSize(::g::Uno::Float2 size, ::g::Uno::Int2 pixelSize)
 {
     switch (stretchMode)
@@ -3859,7 +4036,7 @@ void SizingContainer::ctor_()
     return SnapSize(size);
 }
 
-// public float2 CalcOrigin(float2 availableSize, float2 contentActualSize) [instance] :537
+// public float2 CalcOrigin(float2 availableSize, float2 contentActualSize) [instance] :578
 ::g::Uno::Float2 SizingContainer::CalcOrigin(::g::Uno::Float2 availableSize, ::g::Uno::Float2 contentActualSize)
 {
     uStackFrame __("Fuse.Internal.SizingContainer", "CalcOrigin(float2,float2)");
@@ -3911,13 +4088,13 @@ void SizingContainer::ctor_()
     return origin;
 }
 
-// public float2 CalcScale(float2 availableSize, float2 desiredSize) [instance] :402
+// public float2 CalcScale(float2 availableSize, float2 desiredSize) [instance] :443
 ::g::Uno::Float2 SizingContainer::CalcScale(::g::Uno::Float2 availableSize, ::g::Uno::Float2 desiredSize)
 {
     return CalcScale1(availableSize, desiredSize, false, false);
 }
 
-// private float2 CalcScale(float2 availableSize, float2 desiredSize, bool autoWidth, bool autoHeight) [instance] :453
+// private float2 CalcScale(float2 availableSize, float2 desiredSize, bool autoWidth, bool autoHeight) [instance] :494
 ::g::Uno::Float2 SizingContainer::CalcScale1(::g::Uno::Float2 availableSize, ::g::Uno::Float2 desiredSize, bool autoWidth, bool autoHeight)
 {
     ::g::Uno::Float2 d = availableSize;
@@ -3990,7 +4167,7 @@ void SizingContainer::ctor_()
     return scale;
 }
 
-// public float2 ExpandFillSize(float2 size, Fuse.LayoutParams lp) [instance] :624
+// public float2 ExpandFillSize(float2 size, Fuse.LayoutParams lp) [instance] :665
 ::g::Uno::Float2 SizingContainer::ExpandFillSize(::g::Uno::Float2 size, ::g::Fuse::LayoutParams lp)
 {
     bool autoWidth = !lp.HasX();
@@ -4036,21 +4213,21 @@ void SizingContainer::ctor_()
     return res;
 }
 
-// private float get_PaddingHeight() [instance] :400
+// private float get_PaddingHeight() [instance] :441
 float SizingContainer::PaddingHeight()
 {
     uStackFrame __("Fuse.Internal.SizingContainer", "get_PaddingHeight()");
     return padding.Item(1) + padding.Item(3);
 }
 
-// private float get_PaddingWidth() [instance] :399
+// private float get_PaddingWidth() [instance] :440
 float SizingContainer::PaddingWidth()
 {
     uStackFrame __("Fuse.Internal.SizingContainer", "get_PaddingWidth()");
     return padding.Item(0) + padding.Item(2);
 }
 
-// public bool SetAlignment(Fuse.Elements.Alignment a) [instance] :378
+// public bool SetAlignment(Fuse.Elements.Alignment a) [instance] :419
 bool SizingContainer::SetAlignment(int a)
 {
     if (a == align)
@@ -4060,7 +4237,7 @@ bool SizingContainer::SetAlignment(int a)
     return true;
 }
 
-// public bool SetStretchDirection(Fuse.Elements.StretchDirection dir) [instance] :370
+// public bool SetStretchDirection(Fuse.Elements.StretchDirection dir) [instance] :411
 bool SizingContainer::SetStretchDirection(int dir)
 {
     if (dir == stretchDirection)
@@ -4070,7 +4247,7 @@ bool SizingContainer::SetStretchDirection(int dir)
     return true;
 }
 
-// public bool SetStretchMode(Fuse.Elements.StretchMode mode) [instance] :362
+// public bool SetStretchMode(Fuse.Elements.StretchMode mode) [instance] :403
 bool SizingContainer::SetStretchMode(int mode)
 {
     if (mode == stretchMode)
@@ -4080,7 +4257,7 @@ bool SizingContainer::SetStretchMode(int mode)
     return true;
 }
 
-// public bool SetStretchSizing(Fuse.Elements.StretchSizing ss) [instance] :386
+// public bool SetStretchSizing(Fuse.Elements.StretchSizing ss) [instance] :427
 bool SizingContainer::SetStretchSizing(int ss)
 {
     if (ss == stretchSizing)
@@ -4090,13 +4267,13 @@ bool SizingContainer::SetStretchSizing(int ss)
     return true;
 }
 
-// private float2 SnapSize(float2 sz) [instance] :448
+// private float2 SnapSize(float2 sz) [instance] :489
 ::g::Uno::Float2 SizingContainer::SnapSize(::g::Uno::Float2 sz)
 {
     return ::g::Uno::Float2__op_Division1(::g::Uno::Math::Round4(::g::Uno::Float2__op_Multiply1(sz, absoluteZoom)), absoluteZoom);
 }
 
-// public generated SizingContainer New() [static] :355
+// public generated SizingContainer New() [static] :396
 SizingContainer* SizingContainer::New1()
 {
     SizingContainer* obj3 = (SizingContainer*)uNew(SizingContainer_typeof());
@@ -4105,10 +4282,10 @@ SizingContainer* SizingContainer::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
-// internal struct SkylineNode :1681
+// internal struct SkylineNode :1787
 // {
 static void SkylineNode_build(uType* type)
 {
@@ -4131,26 +4308,26 @@ uStructType* SkylineNode_typeof()
     return type;
 }
 
-// public SkylineNode(int2 position, int width) :1694
+// public SkylineNode(int2 position, int width) :1800
 void SkylineNode__ctor__fn(SkylineNode* __this, ::g::Uno::Int2* position, int* width)
 {
     __this->ctor_(*position, *width);
 }
 
-// public SkylineNode New(int2 position, int width) :1694
+// public SkylineNode New(int2 position, int width) :1800
 void SkylineNode__New1_fn(::g::Uno::Int2* position, int* width, SkylineNode* __retval)
 {
     *__retval = SkylineNode__New1(*position, *width);
 }
 
-// public SkylineNode(int2 position, int width) [instance] :1694
+// public SkylineNode(int2 position, int width) [instance] :1800
 void SkylineNode::ctor_(::g::Uno::Int2 position, int width)
 {
     Position = position;
     Width = width;
 }
 
-// public SkylineNode New(int2 position, int width) [static] :1694
+// public SkylineNode New(int2 position, int width) [static] :1800
 SkylineNode SkylineNode__New1(::g::Uno::Int2 position, int width)
 {
     SkylineNode obj1;
@@ -4159,10 +4336,10 @@ SkylineNode SkylineNode__New1(::g::Uno::Int2 position, int width)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
-// public static class Statistics :1829
+// public static class Statistics :2099
 // {
 static void Statistics_build(uType* type)
 {
@@ -4183,25 +4360,25 @@ uClassType* Statistics_typeof()
     return type;
 }
 
-// public static double ContinuousFilterAlpha(double elapsed, double period) :1840
+// public static double ContinuousFilterAlpha(double elapsed, double period) :2110
 void Statistics__ContinuousFilterAlpha_fn(double* elapsed, double* period, double* __retval)
 {
     *__retval = Statistics::ContinuousFilterAlpha(*elapsed, *period);
 }
 
-// public static double ExponentialMovingAverage(double current, double sample, double elapsed, double period) :1833
+// public static double ExponentialMovingAverage(double current, double sample, double elapsed, double period) :2103
 void Statistics__ExponentialMovingAverage_fn(double* current, double* sample, double* elapsed, double* period, double* __retval)
 {
     *__retval = Statistics::ExponentialMovingAverage(*current, *sample, *elapsed, *period);
 }
 
-// public static double ContinuousFilterAlpha(double elapsed, double period) [static] :1840
+// public static double ContinuousFilterAlpha(double elapsed, double period) [static] :2110
 double Statistics::ContinuousFilterAlpha(double elapsed, double period)
 {
     return 1.0 - ::g::Uno::Math::Pow(2.7182818284590451, -elapsed / period);
 }
 
-// public static double ExponentialMovingAverage(double current, double sample, double elapsed, double period) [static] :1833
+// public static double ExponentialMovingAverage(double current, double sample, double elapsed, double period) [static] :2103
 double Statistics::ExponentialMovingAverage(double current, double sample, double elapsed, double period)
 {
     double alpha = Statistics::ContinuousFilterAlpha(elapsed, period);
@@ -4209,14 +4386,14 @@ double Statistics::ExponentialMovingAverage(double current, double sample, doubl
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
-// internal static class SystemFont :1906
+// internal static class SystemFont :2176
 // {
 static void SystemFont_build(uType* type)
 {
-    ::TYPES[36] = ::g::Uno::String_typeof();
+    ::TYPES[37] = ::g::Uno::String_typeof();
 }
 
 uClassType* SystemFont_typeof()
@@ -4231,62 +4408,62 @@ uClassType* SystemFont_typeof()
     return type;
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> get_Default() :1910
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> get_Default() :2180
 void SystemFont__get_Default_fn(::g::Uno::Collections::List** __retval)
 {
     *__retval = SystemFont::Default();
 }
 
-// public static Uno.Collections.HashSet<string> get_Families() :1937
+// public static Uno.Collections.HashSet<string> get_Families() :2207
 void SystemFont__get_Families_fn(::g::Uno::Collections::HashSet** __retval)
 {
     *__retval = SystemFont::Families();
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> Get(string family, [Fuse.SystemFont.Style style], [Fuse.SystemFont.Weight weight]) :1918
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> Get(string family, [Fuse.SystemFont.Style style], [Fuse.SystemFont.Weight weight]) :2188
 void SystemFont__Get_fn(uString* family, int* style, int* weight, ::g::Uno::Collections::List** __retval)
 {
     *__retval = SystemFont::Get(family, *style, *weight);
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> GetFallback(Uno.UX.FileSource file) :1928
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> GetFallback(Uno.UX.FileSource file) :2198
 void SystemFont__GetFallback_fn(::g::Uno::UX::FileSource* file, ::g::Uno::Collections::List** __retval)
 {
     *__retval = SystemFont::GetFallback(file);
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> Get(string family, [Fuse.SystemFont.Style style], [Fuse.SystemFont.Weight weight]) [static] :1918
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> Get(string family, [Fuse.SystemFont.Style style], [Fuse.SystemFont.Weight weight]) [static] :2188
 ::g::Uno::Collections::List* SystemFont::Get(uString* family, int style, int weight)
 {
     uStackFrame __("Fuse.Internal.SystemFont", "Get(string,[Fuse.SystemFont.Style],[Fuse.SystemFont.Weight])");
-    return ::g::Fuse::Internal::iOSSystemFont::Get(::g::Uno::String::op_Equality(family, NULL) ? uCast<uString*>(NULL, ::TYPES[36/*string*/]) : (uString*)::g::Uno::String::ToLower(uPtr(family)), style, weight);
+    return ::g::Fuse::Internal::iOSSystemFont::Get(::g::Uno::String::op_Equality(family, NULL) ? uCast<uString*>(NULL, ::TYPES[37/*string*/]) : (uString*)::g::Uno::String::ToLower(uPtr(family)), style, weight);
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> GetFallback(Uno.UX.FileSource file) [static] :1928
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> GetFallback(Uno.UX.FileSource file) [static] :2198
 ::g::Uno::Collections::List* SystemFont::GetFallback(::g::Uno::UX::FileSource* file)
 {
     uStackFrame __("Fuse.Internal.SystemFont", "GetFallback(Uno.UX.FileSource)");
     return ::g::Fuse::Internal::iOSSystemFont::GetFallback(file);
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> get_Default() [static] :1910
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> get_Default() [static] :2180
 ::g::Uno::Collections::List* SystemFont::Default()
 {
     uStackFrame __("Fuse.Internal.SystemFont", "get_Default()");
     return ::g::Fuse::Internal::iOSSystemFont::Default();
 }
 
-// public static Uno.Collections.HashSet<string> get_Families() [static] :1937
+// public static Uno.Collections.HashSet<string> get_Families() [static] :2207
 ::g::Uno::Collections::HashSet* SystemFont::Families()
 {
     return ::g::Fuse::Internal::iOSSystemFont::Families();
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
-// internal static class VectorUtil :1954
+// internal static class VectorUtil :2224
 // {
 static void VectorUtil_build(uType* type)
 {
@@ -4304,62 +4481,62 @@ uClassType* VectorUtil_typeof()
     return type;
 }
 
-// public static float Angle(float2 a, float2 b) :1985
+// public static float Angle(float2 a, float2 b) :2255
 void VectorUtil__Angle_fn(::g::Uno::Float2* a, ::g::Uno::Float2* b, float* __retval)
 {
     *__retval = VectorUtil::Angle(*a, *b);
 }
 
-// public static float DistanceLine(float4 line, float2 p) :1993
+// public static float DistanceLine(float4 line, float2 p) :2263
 void VectorUtil__DistanceLine_fn(::g::Uno::Float4* line, ::g::Uno::Float2* p, float* __retval)
 {
     *__retval = VectorUtil::DistanceLine(*line, *p);
 }
 
-// public static float2 Projection(float2 a, float2 b) :1959
+// public static float2 Projection(float2 a, float2 b) :2229
 void VectorUtil__Projection_fn(::g::Uno::Float2* a, ::g::Uno::Float2* b, ::g::Uno::Float2* __retval)
 {
     *__retval = VectorUtil::Projection(*a, *b);
 }
 
-// public static float2 Rejection(float2 a, float2 b) :1975
+// public static float2 Rejection(float2 a, float2 b) :2245
 void VectorUtil__Rejection_fn(::g::Uno::Float2* a, ::g::Uno::Float2* b, ::g::Uno::Float2* __retval)
 {
     *__retval = VectorUtil::Rejection(*a, *b);
 }
 
-// public static float ScalarProjection(float2 a, float2 b) :1967
+// public static float ScalarProjection(float2 a, float2 b) :2237
 void VectorUtil__ScalarProjection_fn(::g::Uno::Float2* a, ::g::Uno::Float2* b, float* __retval)
 {
     *__retval = VectorUtil::ScalarProjection(*a, *b);
 }
 
-// public static float Angle(float2 a, float2 b) [static] :1985
+// public static float Angle(float2 a, float2 b) [static] :2255
 float VectorUtil::Angle(::g::Uno::Float2 a, ::g::Uno::Float2 b)
 {
     return ::g::Uno::Math::Acos1(::g::Uno::Vector::Dot(a, b) / (::g::Uno::Vector::Length(a) * ::g::Uno::Vector::Length(b)));
 }
 
-// public static float DistanceLine(float4 line, float2 p) [static] :1993
+// public static float DistanceLine(float4 line, float2 p) [static] :2263
 float VectorUtil::DistanceLine(::g::Uno::Float4 line, ::g::Uno::Float2 p)
 {
     return ::g::Uno::Vector::Length(VectorUtil::Rejection(::g::Uno::Float2__op_Subtraction2(p, ::g::Uno::Float2__New2(line.X, line.Y)), ::g::Uno::Float2__op_Subtraction2(::g::Uno::Float2__New2(line.Z, line.W), ::g::Uno::Float2__New2(line.X, line.Y))));
 }
 
-// public static float2 Projection(float2 a, float2 b) [static] :1959
+// public static float2 Projection(float2 a, float2 b) [static] :2229
 ::g::Uno::Float2 VectorUtil::Projection(::g::Uno::Float2 a, ::g::Uno::Float2 b)
 {
     return ::g::Uno::Float2__op_Multiply(::g::Uno::Vector::Dot(a, b) / ::g::Uno::Vector::Dot(b, b), b);
 }
 
-// public static float2 Rejection(float2 a, float2 b) [static] :1975
+// public static float2 Rejection(float2 a, float2 b) [static] :2245
 ::g::Uno::Float2 VectorUtil::Rejection(::g::Uno::Float2 a, ::g::Uno::Float2 b)
 {
     ::g::Uno::Float2 a1 = VectorUtil::Projection(a, b);
     return ::g::Uno::Float2__op_Subtraction2(a, a1);
 }
 
-// public static float ScalarProjection(float2 a, float2 b) [static] :1967
+// public static float ScalarProjection(float2 a, float2 b) [static] :2237
 float VectorUtil::ScalarProjection(::g::Uno::Float2 a, ::g::Uno::Float2 b)
 {
     return ::g::Uno::Vector::Dot(a, b) / ::g::Uno::Vector::Length(b);

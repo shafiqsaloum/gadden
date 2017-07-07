@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.Controls.Native.-6a21b22.h>
@@ -28,7 +28,7 @@ namespace Fuse{
 namespace iOS{
 namespace Bindings{
 
-// public sealed extern class TextLayout :577
+// internal sealed extern class TextLayout :14
 // {
 static void TextLayout_build(uType* type)
 {
@@ -44,22 +44,6 @@ static void TextLayout_build(uType* type)
         ::g::ObjC::Object_typeof(), offsetof(::g::Fuse::iOS::Bindings::TextLayout, LayoutManager), 0,
         ::g::Uno::Rect_typeof(), offsetof(::g::Fuse::iOS::Bindings::TextLayout, PixelBounds), 0,
         ::g::ObjC::Object_typeof(), offsetof(::g::Fuse::iOS::Bindings::TextLayout, TextContainer), 0);
-    type->Reflection.SetFields(3,
-        new uField("LayoutManager", 7),
-        new uField("PixelBounds", 8),
-        new uField("TextContainer", 9));
-    type->Reflection.SetFunctions(11,
-        new uFunction("AddNSTextContainer", NULL, (void*)TextLayout__AddNSTextContainer_fn, 0, true, uVoid_typeof(), 2, ::g::ObjC::Object_typeof(), ::g::ObjC::Object_typeof()),
-        new uFunction("ClearTextContainers", NULL, (void*)TextLayout__ClearTextContainers_fn, 0, true, uVoid_typeof(), 1, ::g::ObjC::Object_typeof()),
-        new uFunction("CreateNSTextContainer", NULL, (void*)TextLayout__CreateNSTextContainer_fn, 0, true, ::g::ObjC::Object_typeof(), 2, ::g::Uno::Float_typeof(), ::g::Uno::Float_typeof()),
-        new uFunction("CreateNSTextStorage", NULL, (void*)TextLayout__CreateNSTextStorage_fn, 0, true, ::g::ObjC::Object_typeof(), 4, ::g::Uno::String_typeof(), ::g::ObjC::Object_typeof(), ::g::ObjC::Object_typeof(), ::g::ObjC::Object_typeof()),
-        new uFunction("Invalidate", NULL, (void*)TextLayout__Invalidate_fn, 0, false, uVoid_typeof(), 0),
-        new uFunction(".ctor", NULL, (void*)TextLayout__New1_fn, 0, true, type, 0),
-        new uFunction("SetNSParagraphStyleProperties", NULL, (void*)TextLayout__SetNSParagraphStyleProperties_fn, 0, true, uVoid_typeof(), 4, ::g::ObjC::Object_typeof(), ::g::Fuse::Controls::TextAlignment_typeof(), ::g::Fuse::Controls::TextWrapping_typeof(), ::g::Uno::Float_typeof()),
-        new uFunction("SetNSTextStorage", NULL, (void*)TextLayout__SetNSTextStorage_fn, 0, true, uVoid_typeof(), 2, ::g::ObjC::Object_typeof(), ::g::ObjC::Object_typeof()),
-        new uFunction("ToUIColor", NULL, (void*)TextLayout__ToUIColor_fn, 0, true, ::g::ObjC::Object_typeof(), 1, ::g::Uno::Float4_typeof()),
-        new uFunction("UpdateLayout", NULL, (void*)TextLayout__UpdateLayout_fn, 0, false, ::g::Uno::Bool_typeof(), 3, ::g::Fuse::Controls::TextControl_typeof(), ::g::Uno::Float2_typeof(), ::g::Uno::Bool_typeof()),
-        new uFunction("UsedRectForTextContainer", NULL, (void*)TextLayout__UsedRectForTextContainer_fn, 0, true, ::g::Uno::Rect_typeof(), 2, ::g::ObjC::Object_typeof(), ::g::ObjC::Object_typeof()));
 }
 
 uType* TextLayout_typeof()
@@ -77,85 +61,85 @@ uType* TextLayout_typeof()
     return type;
 }
 
-// public TextLayout() :596
+// public TextLayout() :33
 void TextLayout__ctor__fn(TextLayout* __this)
 {
     __this->ctor_();
 }
 
-// public static void AddNSTextContainer(ObjC.Object layoutManager, ObjC.Object textContainer) :724
+// public static void AddNSTextContainer(ObjC.Object layoutManager, ObjC.Object textContainer) :161
 void TextLayout__AddNSTextContainer_fn(::g::ObjC::Object* layoutManager, ::g::ObjC::Object* textContainer)
 {
     TextLayout::AddNSTextContainer(layoutManager, textContainer);
 }
 
-// public static void ClearTextContainers(ObjC.Object layoutManager) :658
+// public static void ClearTextContainers(ObjC.Object layoutManager) :95
 void TextLayout__ClearTextContainers_fn(::g::ObjC::Object* layoutManager)
 {
     TextLayout::ClearTextContainers(layoutManager);
 }
 
-// public static ObjC.Object CreateNSTextContainer(float width, float height) :666
+// public static ObjC.Object CreateNSTextContainer(float width, float height) :103
 void TextLayout__CreateNSTextContainer_fn(float* width, float* height, ::g::ObjC::Object** __retval)
 {
     *__retval = TextLayout::CreateNSTextContainer(*width, *height);
 }
 
-// public static ObjC.Object CreateNSTextStorage(string value, ObjC.Object font, ObjC.Object color, ObjC.Object style) :707
+// public static ObjC.Object CreateNSTextStorage(string value, ObjC.Object font, ObjC.Object color, ObjC.Object style) :144
 void TextLayout__CreateNSTextStorage_fn(uString* value, ::g::ObjC::Object* font, ::g::ObjC::Object* color, ::g::ObjC::Object* style, ::g::ObjC::Object** __retval)
 {
     *__retval = TextLayout::CreateNSTextStorage(value, font, color, style);
 }
 
-// private static Uno.Rect CreateRect(float2 pos, float2 size) :729
+// private static Uno.Rect CreateRect(float2 pos, float2 size) :166
 void TextLayout__CreateRect_fn(::g::Uno::Float2* pos, ::g::Uno::Float2* size, ::g::Uno::Rect* __retval)
 {
     *__retval = TextLayout::CreateRect(*pos, *size);
 }
 
-// public void Invalidate() :590
+// public void Invalidate() :27
 void TextLayout__Invalidate_fn(TextLayout* __this)
 {
     __this->Invalidate();
 }
 
-// public TextLayout New() :596
+// public TextLayout New() :33
 void TextLayout__New1_fn(TextLayout** __retval)
 {
     *__retval = TextLayout::New1();
 }
 
-// public static void SetNSParagraphStyleProperties(ObjC.Object style, Fuse.Controls.TextAlignment alignment, Fuse.Controls.TextWrapping wrapping, float lineSpacing) :674
+// public static void SetNSParagraphStyleProperties(ObjC.Object style, Fuse.Controls.TextAlignment alignment, Fuse.Controls.TextWrapping wrapping, float lineSpacing) :111
 void TextLayout__SetNSParagraphStyleProperties_fn(::g::ObjC::Object* style, int* alignment, int* wrapping, float* lineSpacing)
 {
     TextLayout::SetNSParagraphStyleProperties(style, *alignment, *wrapping, *lineSpacing);
 }
 
-// public static void SetNSTextStorage(ObjC.Object layoutManager, ObjC.Object textStorage) :718
+// public static void SetNSTextStorage(ObjC.Object layoutManager, ObjC.Object textStorage) :155
 void TextLayout__SetNSTextStorage_fn(::g::ObjC::Object* layoutManager, ::g::ObjC::Object* textStorage)
 {
     TextLayout::SetNSTextStorage(layoutManager, textStorage);
 }
 
-// public static ObjC.Object ToUIColor(float4 color) :649
+// public static ObjC.Object ToUIColor(float4 color) :86
 void TextLayout__ToUIColor_fn(::g::Uno::Float4* color, ::g::ObjC::Object** __retval)
 {
     *__retval = TextLayout::ToUIColor(*color);
 }
 
-// public bool UpdateLayout(Fuse.Controls.TextControl control, float2 size, [bool useMin]) :605
+// public bool UpdateLayout(Fuse.Controls.TextControl control, float2 size, [bool useMin]) :42
 void TextLayout__UpdateLayout_fn(TextLayout* __this, ::g::Fuse::Controls::TextControl* control, ::g::Uno::Float2* size, bool* useMin, bool* __retval)
 {
     *__retval = __this->UpdateLayout(control, *size, *useMin);
 }
 
-// public static Uno.Rect UsedRectForTextContainer(ObjC.Object layoutManager, ObjC.Object textContainer) :735
+// public static Uno.Rect UsedRectForTextContainer(ObjC.Object layoutManager, ObjC.Object textContainer) :172
 void TextLayout__UsedRectForTextContainer_fn(::g::ObjC::Object* layoutManager, ::g::ObjC::Object* textContainer, ::g::Uno::Rect* __retval)
 {
     *__retval = TextLayout::UsedRectForTextContainer(layoutManager, textContainer);
 }
 
-// public TextLayout() [instance] :596
+// public TextLayout() [instance] :33
 void TextLayout::ctor_()
 {
     @autoreleasepool
@@ -173,13 +157,13 @@ void TextLayout::ctor_()
     
 }
 
-// public void Invalidate() [instance] :590
+// public void Invalidate() [instance] :27
 void TextLayout::Invalidate()
 {
     _layoutValid = false;
 }
 
-// public bool UpdateLayout(Fuse.Controls.TextControl control, float2 size, [bool useMin]) [instance] :605
+// public bool UpdateLayout(Fuse.Controls.TextControl control, float2 size, [bool useMin]) [instance] :42
 bool TextLayout::UpdateLayout(::g::Fuse::Controls::TextControl* control, ::g::Uno::Float2 size, bool useMin)
 {
     uStackFrame __("Fuse.iOS.Bindings.TextLayout", "UpdateLayout(Fuse.Controls.TextControl,float2,[bool])");
@@ -210,7 +194,7 @@ bool TextLayout::UpdateLayout(::g::Fuse::Controls::TextControl* control, ::g::Un
     return true;
 }
 
-// public static void AddNSTextContainer(ObjC.Object layoutManager, ObjC.Object textContainer) [static] :724
+// public static void AddNSTextContainer(ObjC.Object layoutManager, ObjC.Object textContainer) [static] :161
 void TextLayout::AddNSTextContainer(::g::ObjC::Object* layoutManager, ::g::ObjC::Object* textContainer)
 {
     @autoreleasepool
@@ -224,7 +208,7 @@ void TextLayout::AddNSTextContainer(::g::ObjC::Object* layoutManager, ::g::ObjC:
     
 }
 
-// public static void ClearTextContainers(ObjC.Object layoutManager) [static] :658
+// public static void ClearTextContainers(ObjC.Object layoutManager) [static] :95
 void TextLayout::ClearTextContainers(::g::ObjC::Object* layoutManager)
 {
     @autoreleasepool
@@ -240,7 +224,7 @@ void TextLayout::ClearTextContainers(::g::ObjC::Object* layoutManager)
     
 }
 
-// public static ObjC.Object CreateNSTextContainer(float width, float height) [static] :666
+// public static ObjC.Object CreateNSTextContainer(float width, float height) [static] :103
 ::g::ObjC::Object* TextLayout::CreateNSTextContainer(float width, float height)
 {
     @autoreleasepool
@@ -256,7 +240,7 @@ void TextLayout::ClearTextContainers(::g::ObjC::Object* layoutManager)
     
 }
 
-// public static ObjC.Object CreateNSTextStorage(string value, ObjC.Object font, ObjC.Object color, ObjC.Object style) [static] :707
+// public static ObjC.Object CreateNSTextStorage(string value, ObjC.Object font, ObjC.Object color, ObjC.Object style) [static] :144
 ::g::ObjC::Object* TextLayout::CreateNSTextStorage(uString* value, ::g::ObjC::Object* font, ::g::ObjC::Object* color, ::g::ObjC::Object* style)
 {
     @autoreleasepool
@@ -275,13 +259,13 @@ void TextLayout::ClearTextContainers(::g::ObjC::Object* layoutManager)
     
 }
 
-// private static Uno.Rect CreateRect(float2 pos, float2 size) [static] :729
+// private static Uno.Rect CreateRect(float2 pos, float2 size) [static] :166
 ::g::Uno::Rect TextLayout::CreateRect(::g::Uno::Float2 pos, ::g::Uno::Float2 size)
 {
     return ::g::Uno::Rect__New2(pos, size);
 }
 
-// public TextLayout New() [static] :596
+// public TextLayout New() [static] :33
 TextLayout* TextLayout::New1()
 {
     TextLayout* obj1 = (TextLayout*)uNew(TextLayout_typeof());
@@ -289,7 +273,7 @@ TextLayout* TextLayout::New1()
     return obj1;
 }
 
-// public static void SetNSParagraphStyleProperties(ObjC.Object style, Fuse.Controls.TextAlignment alignment, Fuse.Controls.TextWrapping wrapping, float lineSpacing) [static] :674
+// public static void SetNSParagraphStyleProperties(ObjC.Object style, Fuse.Controls.TextAlignment alignment, Fuse.Controls.TextWrapping wrapping, float lineSpacing) [static] :111
 void TextLayout::SetNSParagraphStyleProperties(::g::ObjC::Object* style, int alignment, int wrapping, float lineSpacing)
 {
     @autoreleasepool
@@ -326,7 +310,7 @@ void TextLayout::SetNSParagraphStyleProperties(::g::ObjC::Object* style, int ali
     
 }
 
-// public static void SetNSTextStorage(ObjC.Object layoutManager, ObjC.Object textStorage) [static] :718
+// public static void SetNSTextStorage(ObjC.Object layoutManager, ObjC.Object textStorage) [static] :155
 void TextLayout::SetNSTextStorage(::g::ObjC::Object* layoutManager, ::g::ObjC::Object* textStorage)
 {
     @autoreleasepool
@@ -340,7 +324,7 @@ void TextLayout::SetNSTextStorage(::g::ObjC::Object* layoutManager, ::g::ObjC::O
     
 }
 
-// public static ObjC.Object ToUIColor(float4 color) [static] :649
+// public static ObjC.Object ToUIColor(float4 color) [static] :86
 ::g::ObjC::Object* TextLayout::ToUIColor(::g::Uno::Float4 color)
 {
     @autoreleasepool
@@ -357,7 +341,7 @@ void TextLayout::SetNSTextStorage(::g::ObjC::Object* layoutManager, ::g::ObjC::O
     
 }
 
-// public static Uno.Rect UsedRectForTextContainer(ObjC.Object layoutManager, ObjC.Object textContainer) [static] :735
+// public static Uno.Rect UsedRectForTextContainer(ObjC.Object layoutManager, ObjC.Object textContainer) [static] :172
 ::g::Uno::Rect TextLayout::UsedRectForTextContainer(::g::ObjC::Object* layoutManager, ::g::ObjC::Object* textContainer)
 {
     @autoreleasepool

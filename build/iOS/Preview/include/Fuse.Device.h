@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace Fuse{struct Device;}}
 namespace g{
 namespace Fuse{
 
-// internal static extern class Device :232
+// internal static extern class Device :236
 // {
 uClassType* Device_typeof();
 void Device__GetCurrentOrientation_fn(int* __retval);

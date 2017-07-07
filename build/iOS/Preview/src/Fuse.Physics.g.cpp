@@ -69,8 +69,8 @@ namespace g{
 namespace Fuse{
 namespace Physics{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public enum Axis2D :199
 uEnumType* Axis2D_typeof()
@@ -86,8 +86,8 @@ uEnumType* Axis2D_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // internal sealed class Body :9
 // {
@@ -423,8 +423,8 @@ void Body::SetFriction(::g::Fuse::Visual* n, float friction)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public static class BodyAttr :176
 // {
@@ -474,8 +474,8 @@ void BodyAttr::SetFriction(::g::Fuse::Visual* n, float friction)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class Draggable :209
 // {
@@ -763,8 +763,8 @@ Draggable* Draggable::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class EnteredForceField :470
 // {
@@ -779,7 +779,7 @@ static void EnteredForceField_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Physics::ForceFieldTrigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Physics::ForceFieldTrigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Physics::ForceFieldTrigger_type, interface7));
-    type->SetFields(31,
+    type->SetFields(32,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Physics::EnteredForceField, _oldForce), 0,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Physics::EnteredForceField, _Threshold), 0);
     type->Reflection.SetFunctions(3,
@@ -795,7 +795,7 @@ static void EnteredForceField_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Physics::ForceFieldEventTrigger_typeof();
-    options.FieldCount = 33;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(EnteredForceField);
     options.TypeSize = sizeof(::g::Fuse::Physics::ForceFieldTrigger_type);
@@ -887,8 +887,8 @@ EnteredForceField* EnteredForceField::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class ExitedForceField :507
 // {
@@ -903,7 +903,7 @@ static void ExitedForceField_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Physics::ForceFieldTrigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Physics::ForceFieldTrigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Physics::ForceFieldTrigger_type, interface7));
-    type->SetFields(31,
+    type->SetFields(32,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Physics::ExitedForceField, _oldForce), 0,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Physics::ExitedForceField, _Threshold), 0);
     type->Reflection.SetFunctions(3,
@@ -919,7 +919,7 @@ static void ExitedForceField_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Physics::ForceFieldEventTrigger_typeof();
-    options.FieldCount = 33;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(ExitedForceField);
     options.TypeSize = sizeof(::g::Fuse::Physics::ForceFieldTrigger_type);
@@ -1011,8 +1011,8 @@ ExitedForceField* ExitedForceField::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public abstract class ForceField :355
 // {
@@ -1114,8 +1114,8 @@ void ForceField::ctor_3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class ForceFieldEventArgs :415
 // {
@@ -1233,8 +1233,8 @@ ForceFieldEventArgs* ForceFieldEventArgs::New2(::g::Fuse::Physics::Body* body, :
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public delegate void ForceFieldEventHandler(object sender, Fuse.Physics.ForceFieldEventArgs args) :429
 uDelegateType* ForceFieldEventHandler_typeof()
@@ -1249,8 +1249,8 @@ uDelegateType* ForceFieldEventHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public abstract class ForceFieldEventTrigger :431
 // {
@@ -1266,7 +1266,7 @@ static void ForceFieldEventTrigger_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Physics::ForceFieldTrigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Physics::ForceFieldTrigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Physics::ForceFieldTrigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(31,
         ::TYPES[6/*Fuse.Physics.ForceFieldEventHandler*/], offsetof(::g::Fuse::Physics::ForceFieldEventTrigger, Handler1), 0);
     type->Reflection.SetFunctions(2,
         new uFunction("add_Handler", NULL, (void*)ForceFieldEventTrigger__add_Handler_fn, 0, false, uVoid_typeof(), 1, ::TYPES[6/*Fuse.Physics.ForceFieldEventHandler*/]),
@@ -1280,7 +1280,7 @@ static void ForceFieldEventTrigger_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Physics::ForceFieldTrigger_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 32;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(ForceFieldEventTrigger);
     options.TypeSize = sizeof(::g::Fuse::Physics::ForceFieldTrigger_type);
@@ -1365,8 +1365,8 @@ void ForceFieldEventTrigger::OnTriggered(::g::Fuse::Physics::Body* body)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public abstract class ForceFieldTrigger :394
 // {
@@ -1383,7 +1383,7 @@ static void ForceFieldTrigger_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(ForceFieldTrigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(ForceFieldTrigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(ForceFieldTrigger_type, interface7));
-    type->SetFields(29,
+    type->SetFields(30,
         ::g::Fuse::Physics::ForceField_typeof(), offsetof(::g::Fuse::Physics::ForceFieldTrigger, _ForceField), 0);
     type->Reflection.SetFunctions(2,
         new uFunction("get_ForceField", NULL, (void*)ForceFieldTrigger__get_ForceField_fn, 0, false, ::g::Fuse::Physics::ForceField_typeof(), 0),
@@ -1397,7 +1397,7 @@ ForceFieldTrigger_type* ForceFieldTrigger_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 30;
+    options.FieldCount = 31;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(ForceFieldTrigger);
     options.TypeSize = sizeof(ForceFieldTrigger_type);
@@ -1483,8 +1483,8 @@ void ForceFieldTrigger::SetForce1(::g::Fuse::Physics::ForceField* field, ::g::Fu
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class InForceFieldAnimation :549
 // {
@@ -1499,7 +1499,7 @@ static void InForceFieldAnimation_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Physics::ForceFieldTrigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Physics::ForceFieldTrigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Physics::ForceFieldTrigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(31,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Physics::InForceFieldAnimation, _From), 0,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Physics::InForceFieldAnimation, _To), 0);
     type->Reflection.SetFunctions(5,
@@ -1517,7 +1517,7 @@ static void InForceFieldAnimation_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Physics::ForceFieldTrigger_typeof();
-    options.FieldCount = 32;
+    options.FieldCount = 33;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(InForceFieldAnimation);
     options.TypeSize = sizeof(::g::Fuse::Physics::ForceFieldTrigger_type);
@@ -1632,8 +1632,8 @@ InForceFieldAnimation* InForceFieldAnimation::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // internal abstract interface IRule :779
 // {
@@ -1647,8 +1647,8 @@ uInterfaceType* IRule_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class PointAttractor :584
 // {
@@ -1992,8 +1992,8 @@ PointAttractor* PointAttractor::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class Spring :690
 // {
@@ -2221,8 +2221,8 @@ Spring* Spring::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class WhileDragging :327
 // {
@@ -2239,7 +2239,7 @@ static void WhileDragging_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(29);
+    type->SetFields(30);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WhileDragging__New2_fn, 0, true, type, 0));
 }
@@ -2251,7 +2251,7 @@ static void WhileDragging_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 29;
+    options.FieldCount = 30;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileDragging);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -2348,8 +2348,8 @@ WhileDragging* WhileDragging::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class World :786
 // {

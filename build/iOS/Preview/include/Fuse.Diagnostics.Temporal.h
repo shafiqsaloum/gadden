@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{namespace Fuse{struct Diagnostics__Temporal;}}
 namespace g{
 namespace Fuse{
 
-// private sealed class Diagnostics.Temporal :261
+// private sealed class Diagnostics.Temporal :268
 // {
 struct Diagnostics__Temporal_type : uType
 {

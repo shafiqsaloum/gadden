@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -40,6 +40,9 @@ void PointerCapture__FuseInputIGestureOnLostCapture_fn(PointerCapture* __this, b
 void PointerCapture__FuseInputIGestureOnPointerMoved_fn(PointerCapture* __this, ::g::Fuse::Input::PointerMovedArgs* args, int* __retval);
 void PointerCapture__FuseInputIGestureOnPointerPressed_fn(PointerCapture* __this, ::g::Fuse::Input::PointerPressedArgs* args, int* __retval);
 void PointerCapture__FuseInputIGestureOnPointerReleased_fn(PointerCapture* __this, ::g::Fuse::Input::PointerReleasedArgs* args, int* __retval);
+void PointerCapture__FuseInputIGestureget_Priority_fn(PointerCapture* __this, int* __retval);
+void PointerCapture__FuseInputIGestureget_PriorityAdjustment_fn(PointerCapture* __this, int* __retval);
+void PointerCapture__FuseInputIGestureget_Significance_fn(PointerCapture* __this, float* __retval);
 void PointerCapture__get_IsActive_fn(PointerCapture* __this, bool* __retval);
 void PointerCapture__set_IsActive_fn(PointerCapture* __this, bool* value);
 void PointerCapture__New2_fn(PointerCapture** __retval);

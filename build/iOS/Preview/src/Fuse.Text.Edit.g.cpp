@@ -25,8 +25,8 @@ namespace Fuse{
 namespace Text{
 namespace Edit{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // internal struct Caret :183
 // {
@@ -83,8 +83,8 @@ Caret Caret__New1(int cluster, int lineIndex, int runIndex, ::g::Uno::Float2 vis
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public struct CaretContext :199
 // {
@@ -505,7 +505,7 @@ uString* CaretContext::Insert(uChar c, int* i)
     if ((uPtr(_carets)->Count() == 0) || LeftToRight(*i))
         *i = *i + 1;
 
-    return ::g::Uno::String::Insert(uPtr(_source), insertionPos, ::g::Uno::Char::ToString(c, ::TYPES[1/*char*/]));
+    return ::g::Fuse::Text::SubstringExtensions::SafeInsert(_source, insertionPos, ::g::Uno::Char::ToString(c, ::TYPES[1/*char*/]));
 }
 
 // public Fuse.Text.Edit.CaretIndex LeftMost() [instance] :338
@@ -711,8 +711,8 @@ float CaretContext__WeightedSquaredDist(::g::Uno::Float2 p, ::g::Uno::Float2 q, 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public enum CaretIndex :181
 uEnumType* CaretIndex_typeof()

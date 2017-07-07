@@ -11,7 +11,7 @@ namespace g{struct OutracksSimulatorClientUno_FuseElementsElement_Opacity_Proper
 
 namespace g{
 
-// internal sealed class OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property :322
+// internal sealed class OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property :382
 // {
 ::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property_typeof();
 void OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property__ctor_3_fn(OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property* __this, ::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name);

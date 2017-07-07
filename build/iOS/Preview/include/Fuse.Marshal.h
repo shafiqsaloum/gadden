@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Marshal/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Marshal/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -34,6 +34,8 @@ void Marshal__Max_fn(uObject* a, uObject* b, uObject** __retval);
 void Marshal__Min_fn(uObject* a, uObject* b, uObject** __retval);
 void Marshal__Multiply_fn(uObject* a, uObject* b, uObject** __retval);
 void Marshal__Parse_fn(uString* s, uObject** __retval);
+void Marshal__StringToSize_fn(uString* o, ::g::Uno::UX::Size* __retval);
+void Marshal__StringToSize2_fn(uString* o, ::g::Uno::UX::Size2* __retval);
 void Marshal__Subtract_fn(uObject* a, uObject* b, uObject** __retval);
 void Marshal__ToBool_fn(uObject* v, bool* __retval);
 void Marshal__ToByte_fn(uObject* o, int16_t* __retval);
@@ -76,6 +78,8 @@ struct Marshal : uObject
     static uObject* Min(uObject* a, uObject* b);
     static uObject* Multiply(uObject* a, uObject* b);
     static uObject* Parse(uString* s);
+    static ::g::Uno::UX::Size StringToSize(uString* o);
+    static ::g::Uno::UX::Size2 StringToSize2(uString* o);
     static uObject* Subtract(uObject* a, uObject* b);
     static bool ToBool(uObject* v);
     static int16_t ToByte(uObject* o);

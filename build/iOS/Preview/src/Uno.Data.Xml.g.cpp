@@ -59,8 +59,8 @@ namespace Uno{
 namespace Data{
 namespace Xml{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/helpers/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/helpers/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // internal sealed class AttributeHandleConverter :8
 // {
@@ -95,8 +95,8 @@ void AttributeHandleConverter__ConvertToXmlAttribute_fn(::g::Uno::Data::Xml::Xml
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public enum ParseOptions :234
 uEnumType* ParseOptions_typeof()
@@ -113,8 +113,8 @@ uEnumType* ParseOptions_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal struct TargetSpecificXmlNode :56
 // {
@@ -136,8 +136,8 @@ uStructType* TargetSpecificXmlNode_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/helpers/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/helpers/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // internal sealed class ValidationHelper :25
 // {
@@ -246,8 +246,8 @@ void ValidationHelper::ValidateNodeAdding(::g::Uno::Data::Xml::XmlLinkedNode* ow
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/elements/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/elements/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class XmlAttribute :10
 // {
@@ -405,8 +405,8 @@ XmlAttribute* XmlAttribute::New2(uString* name, uString* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/collections/$.uno
-// -----------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class XmlAttributeCollection :111
 // {
@@ -551,8 +551,8 @@ XmlAttributeCollection* XmlAttributeCollection::New1(::g::Uno::Data::Xml::XmlLin
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal sealed class XmlAttributeHandle :187
 // {
@@ -653,8 +653,8 @@ XmlAttributeHandle* XmlAttributeHandle::New1(uString* name, uString* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/elements/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/elements/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class XmlCharacterData :857
 // {
@@ -794,8 +794,8 @@ XmlCharacterData* XmlCharacterData::New2(uString* data)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/elements/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/elements/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class XmlComment :829
 // {
@@ -867,8 +867,8 @@ XmlComment* XmlComment::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/elements/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/elements/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class XmlDeclaration :777
 // {
@@ -1036,8 +1036,8 @@ XmlDeclaration* XmlDeclaration::New2(uString* version, int encoding)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/elements/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/elements/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class XmlDocument :672
 // {
@@ -1209,8 +1209,8 @@ XmlDocument* XmlDocument::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/elements/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/elements/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class XmlDocumentElement :629
 // {
@@ -1309,8 +1309,8 @@ XmlDocumentElement* XmlDocumentElement::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/elements/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/elements/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class XmlElement :538
 // {
@@ -1476,8 +1476,8 @@ XmlElement* XmlElement::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public enum XmlEncoding :219
 uEnumType* XmlEncoding_typeof()
@@ -1500,8 +1500,8 @@ uEnumType* XmlEncoding_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/helpers/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/helpers/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // internal sealed class XmlEncodingHelper :94
 // {
@@ -1652,8 +1652,8 @@ void XmlEncodingHelper::FillEncodingDictionary()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public sealed class XmlException :8
 // {
@@ -1706,8 +1706,8 @@ XmlException* XmlException::New4(uString* message)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/elements/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/elements/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public abstract class XmlLinkedNode :367
 // {
@@ -2168,8 +2168,8 @@ void XmlLinkedNode::TextContent(uString* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/collections/$.uno
-// -----------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class XmlLinkedNodeCollection :202
 // {
@@ -2334,8 +2334,8 @@ XmlLinkedNodeCollection* XmlLinkedNodeCollection::New1(::g::Uno::Data::Xml::XmlL
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/elements/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/elements/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public abstract class XmlNode :335
 // {
@@ -2456,8 +2456,8 @@ void XmlNode::NodeType(int value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/collections/$.uno
-// -----------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public abstract class XmlNodeCollectionBase<T> :8
 // {
@@ -2736,8 +2736,8 @@ bool XmlNodeCollectionBase::HasChildren()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal sealed class XmlNodeHandle :72
 // {
@@ -3151,8 +3151,8 @@ XmlNodeHandle* XmlNodeHandle::New3(uString* name, uString* value, int nodeType)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/helpers/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/helpers/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // internal sealed class XmlNodeHandleConverter :178
 // {
@@ -3271,8 +3271,8 @@ void XmlNodeHandleConverter::ConvertToXmlNodeTree(::g::Uno::Data::Xml::XmlLinked
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal sealed class XmlNodeImpl :34
 // {
@@ -3413,8 +3413,8 @@ void XmlNodeImpl::AppendChild(::g::Uno::Data::Xml::XmlNodeHandle* handle, ::g::U
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public enum XmlNodeType :207
 uEnumType* XmlNodeType_typeof()
@@ -3435,8 +3435,8 @@ uEnumType* XmlNodeType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/elements/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/elements/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class XmlProcessingInstruction :307
 // {
@@ -3509,8 +3509,8 @@ XmlProcessingInstruction* XmlProcessingInstruction::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/elements/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/elements/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class XmlText :274
 // {
@@ -3608,8 +3608,8 @@ XmlText* XmlText::New2(::g::Uno::Data::Xml::XmlValue* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/elements/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/elements/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class XmlValue :47
 // {
@@ -4338,8 +4338,8 @@ bool XmlValue::op_Inequality5(XmlValue* xt, uString* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public enum XmlValueType :242
 uEnumType* XmlValueType_typeof()

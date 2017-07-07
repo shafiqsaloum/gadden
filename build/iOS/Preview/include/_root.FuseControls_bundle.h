@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/0.47.7/.uno/package'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/.uno/package'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -14,6 +14,8 @@ uClassType* FuseControls_bundle_typeof();
 
 struct FuseControls_bundle : uObject
 {
+    static uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> SolidRectangle170ae5e6_;
+    static uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>& SolidRectangle170ae5e6() { return FuseControls_bundle_typeof()->Init(), SolidRectangle170ae5e6_; }
     static uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> SolidRectangle2f148815_;
     static uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>& SolidRectangle2f148815() { return FuseControls_bundle_typeof()->Init(), SolidRectangle2f148815_; }
     static uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> SolidRectangle7463714b_;

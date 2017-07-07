@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/caching/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -24,7 +24,7 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// internal sealed class ElementBatch :1229
+// internal sealed class ElementBatch :1253
 // {
 struct ElementBatch_type : uType
 {

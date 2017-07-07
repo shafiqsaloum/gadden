@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace FuseJS{struct FileReaderImpl__FileReadCommand;}}
 namespace g{
 namespace FuseJS{
 
-// private sealed class FileReaderImpl.FileReadCommand :825
+// private sealed class FileReaderImpl.FileReadCommand :828
 // {
 uType* FileReaderImpl__FileReadCommand_typeof();
 void FileReaderImpl__FileReadCommand__ctor__fn(FileReaderImpl__FileReadCommand* __this, uString* path);

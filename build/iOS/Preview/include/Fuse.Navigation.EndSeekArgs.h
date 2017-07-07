@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// internal sealed class EndSeekArgs :3875
+// internal sealed class EndSeekArgs :3954
 // {
 uType* EndSeekArgs_typeof();
 void EndSeekArgs__ctor__fn(EndSeekArgs* __this, int* snapTo, float* velocity);

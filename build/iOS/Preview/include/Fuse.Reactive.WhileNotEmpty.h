@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -19,7 +19,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public sealed class WhileNotEmpty :2177
+// public sealed class WhileNotEmpty :2341
 // {
 ::g::Fuse::Reactive::WhileCount_type* WhileNotEmpty_typeof();
 void WhileNotEmpty__ctor_7_fn(WhileNotEmpty* __this);

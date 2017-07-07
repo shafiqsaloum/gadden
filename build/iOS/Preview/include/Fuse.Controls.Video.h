@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -33,11 +34,11 @@ namespace Controls{
 
 // public sealed class Video :197
 // {
-struct Video_type : ::g::Fuse::Controls::Control_type
+struct Video_type : ::g::Fuse::Controls::Panel_type
 {
-    ::g::Fuse::Triggers::IMediaPlayback interface15;
-    ::g::Fuse::Triggers::IPlayback interface16;
-    ::g::Fuse::Triggers::IProgress interface17;
+    ::g::Fuse::Triggers::IMediaPlayback interface16;
+    ::g::Fuse::Triggers::IPlayback interface17;
+    ::g::Fuse::Triggers::IProgress interface18;
 };
 
 Video_type* Video_typeof();

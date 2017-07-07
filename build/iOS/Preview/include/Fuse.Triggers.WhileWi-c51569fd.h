@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -18,7 +18,7 @@ namespace g{
 namespace Fuse{
 namespace Triggers{
 
-// public abstract class WhileWindowAspect :4491
+// public abstract class WhileWindowAspect :4466
 // {
 ::g::Fuse::Triggers::WindowSizeTrigger_type* WhileWindowAspect_typeof();
 void WhileWindowAspect__ctor_7_fn(WhileWindowAspect* __this);

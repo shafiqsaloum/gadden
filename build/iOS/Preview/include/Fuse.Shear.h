@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -17,7 +17,7 @@ namespace g{namespace Fuse{struct Shear;}}
 namespace g{
 namespace Fuse{
 
-// public sealed class Shear :4313
+// public sealed class Shear :4402
 // {
 ::g::Fuse::Transform_type* Shear_typeof();
 void Shear__ctor_3_fn(Shear* __this);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// internal sealed class Router_PrepareProgress_Property :1980
+// internal sealed class Router_PrepareProgress_Property :1979
 // {
 ::g::Uno::UX::Property1_type* Router_PrepareProgress_Property_typeof();
 void Router_PrepareProgress_Property__ctor_3_fn(Router_PrepareProgress_Property* __this, ::g::Fuse::Navigation::Router* obj);

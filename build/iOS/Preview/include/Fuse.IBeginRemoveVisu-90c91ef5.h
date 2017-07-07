@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace Fuse{struct PendingRemoveVisual;}}
 namespace g{
 namespace Fuse{
 
-// public abstract interface IBeginRemoveVisualListener :4855
+// public abstract interface IBeginRemoveVisualListener :4944
 // {
 uInterfaceType* IBeginRemoveVisualListener_typeof();
 

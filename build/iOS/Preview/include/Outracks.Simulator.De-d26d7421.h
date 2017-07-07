@@ -5,6 +5,7 @@
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -26,9 +27,9 @@ namespace g{
 namespace Outracks{
 namespace Simulator{
 
-// public partial sealed class DeveloperMenu :2224
+// public partial sealed class DeveloperMenu :1049
 // {
-::g::Fuse::Controls::Control_type* DeveloperMenu_typeof();
+::g::Fuse::Controls::Panel_type* DeveloperMenu_typeof();
 void DeveloperMenu__ctor_7_fn(DeveloperMenu* __this);
 void DeveloperMenu__Close_fn(DeveloperMenu* __this, uObject* sender, ::g::Uno::EventArgs* args);
 void DeveloperMenu__GoBack_fn(DeveloperMenu* __this, uObject* sender, ::g::Uno::EventArgs* args);

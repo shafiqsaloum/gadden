@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/implementation/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <CoreText/CoreText.h>
@@ -36,7 +36,7 @@ namespace Implementation{
 static void CoreTextFont_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("(buffer.Length % stride) == 0");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/implementation/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno");
     ::TYPES[0] = uObject_typeof()->Array();
     ::TYPES[1] = ::g::Uno::Byte_typeof()->Array();
     type->SetInterfaces(

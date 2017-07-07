@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.FileSystem.IosPaths.h>
@@ -12,7 +12,7 @@ namespace g{
 namespace Fuse{
 namespace FileSystem{
 
-// internal sealed extern class IosPaths :1270
+// internal sealed extern class IosPaths :1357
 // {
 static void IosPaths_build(uType* type)
 {
@@ -37,54 +37,54 @@ uType* IosPaths_typeof()
     return type;
 }
 
-// public generated IosPaths() :1270
+// public generated IosPaths() :1357
 void IosPaths__ctor__fn(IosPaths* __this)
 {
     __this->ctor_();
 }
 
-// public static string GetCachesDirectory() :1284
+// public static string GetCachesDirectory() :1371
 void IosPaths__GetCachesDirectory_fn(uString** __retval)
 {
     *__retval = IosPaths::GetCachesDirectory();
 }
 
-// public static string GetDocumentsDirectory() :1291
+// public static string GetDocumentsDirectory() :1378
 void IosPaths__GetDocumentsDirectory_fn(uString** __retval)
 {
     *__retval = IosPaths::GetDocumentsDirectory();
 }
 
-// public static string GetLibraryDirectory() :1298
+// public static string GetLibraryDirectory() :1385
 void IosPaths__GetLibraryDirectory_fn(uString** __retval)
 {
     *__retval = IosPaths::GetLibraryDirectory();
 }
 
-// internal static Uno.Collections.Dictionary<string, string> GetPathDictionary() :1272
+// internal static Uno.Collections.Dictionary<string, string> GetPathDictionary() :1359
 void IosPaths__GetPathDictionary_fn(::g::Uno::Collections::Dictionary** __retval)
 {
     *__retval = IosPaths::GetPathDictionary();
 }
 
-// public static string GetTemporaryDirectory() :1305
+// public static string GetTemporaryDirectory() :1392
 void IosPaths__GetTemporaryDirectory_fn(uString** __retval)
 {
     *__retval = IosPaths::GetTemporaryDirectory();
 }
 
-// public generated IosPaths New() :1270
+// public generated IosPaths New() :1357
 void IosPaths__New1_fn(IosPaths** __retval)
 {
     *__retval = IosPaths::New1();
 }
 
-// public generated IosPaths() [instance] :1270
+// public generated IosPaths() [instance] :1357
 void IosPaths::ctor_()
 {
 }
 
-// public static string GetCachesDirectory() [static] :1284
+// public static string GetCachesDirectory() [static] :1371
 uString* IosPaths::GetCachesDirectory()
 {
     @autoreleasepool
@@ -98,7 +98,7 @@ uString* IosPaths::GetCachesDirectory()
     
 }
 
-// public static string GetDocumentsDirectory() [static] :1291
+// public static string GetDocumentsDirectory() [static] :1378
 uString* IosPaths::GetDocumentsDirectory()
 {
     @autoreleasepool
@@ -112,7 +112,7 @@ uString* IosPaths::GetDocumentsDirectory()
     
 }
 
-// public static string GetLibraryDirectory() [static] :1298
+// public static string GetLibraryDirectory() [static] :1385
 uString* IosPaths::GetLibraryDirectory()
 {
     @autoreleasepool
@@ -126,7 +126,7 @@ uString* IosPaths::GetLibraryDirectory()
     
 }
 
-// internal static Uno.Collections.Dictionary<string, string> GetPathDictionary() [static] :1272
+// internal static Uno.Collections.Dictionary<string, string> GetPathDictionary() [static] :1359
 ::g::Uno::Collections::Dictionary* IosPaths::GetPathDictionary()
 {
     uStackFrame __("Fuse.FileSystem.IosPaths", "GetPathDictionary()");
@@ -138,7 +138,7 @@ uString* IosPaths::GetLibraryDirectory()
     return dict;
 }
 
-// public static string GetTemporaryDirectory() [static] :1305
+// public static string GetTemporaryDirectory() [static] :1392
 uString* IosPaths::GetTemporaryDirectory()
 {
     @autoreleasepool
@@ -152,7 +152,7 @@ uString* IosPaths::GetTemporaryDirectory()
     
 }
 
-// public generated IosPaths New() [static] :1270
+// public generated IosPaths New() [static] :1357
 IosPaths* IosPaths::New1()
 {
     IosPaths* obj1 = (IosPaths*)uNew(IosPaths_typeof());

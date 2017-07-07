@@ -13,8 +13,8 @@ namespace Uno{
 namespace Compiler{
 namespace ExportTargetInterop{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/exporttargetinterop/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/exporttargetinterop/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class DontCopyStructAttribute :6
 // {
@@ -66,8 +66,8 @@ DontCopyStructAttribute* DontCopyStructAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/exporttargetinterop/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/exporttargetinterop/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class DontExportAttribute :17
 // {
@@ -119,8 +119,8 @@ DontExportAttribute* DontExportAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/exporttargetinterop/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/exporttargetinterop/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class OptionalAttribute :114
 // {
@@ -172,8 +172,8 @@ OptionalAttribute* OptionalAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/exporttargetinterop/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/exporttargetinterop/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class StaticAttribute :165
 // {
@@ -225,8 +225,8 @@ StaticAttribute* StaticAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/exporttargetinterop/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/exporttargetinterop/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class TargetSpecificImplementationAttribute :177
 // {
@@ -278,8 +278,8 @@ TargetSpecificImplementationAttribute* TargetSpecificImplementationAttribute::Ne
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/exporttargetinterop/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/exporttargetinterop/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class TargetSpecificTypeAttribute :189
 // {

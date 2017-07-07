@@ -39,7 +39,7 @@ static void Paragraph_build(uType* type)
         ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::TextInputControl_type, interface13),
         ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::TextInputControl_type, interface14),
         ::g::Fuse::Triggers::IValue_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(::g::Fuse::Controls::TextInputControl_type, interface15));
-    type->SetFields(98);
+    type->SetFields(100);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)Paragraph__New4_fn, 0, true, type, 0));
 }
@@ -51,7 +51,7 @@ static void Paragraph_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::TextView_typeof();
-    options.FieldCount = 98;
+    options.FieldCount = 100;
     options.InterfaceCount = 16;
     options.ObjectSize = sizeof(Paragraph);
     options.TypeSize = sizeof(::g::Fuse::Controls::TextInputControl_type);

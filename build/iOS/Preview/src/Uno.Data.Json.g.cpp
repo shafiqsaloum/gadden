@@ -16,22 +16,22 @@ namespace Uno{
 namespace Data{
 namespace Json{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Json/0.47.4/source/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Json/1.0.1/source/$.uno
+// -----------------------------------------------------------------------------------------------------
 
-// public static class JsonWriter :316
+// public static class JsonWriter :280
 // {
 static void JsonWriter_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("\"");
-    ::STRINGS[1] = uString::Const("\\\"");
-    ::STRINGS[2] = uString::Const("\\\\");
-    ::STRINGS[3] = uString::Const("\\b");
-    ::STRINGS[4] = uString::Const("\\f");
-    ::STRINGS[5] = uString::Const("\\n");
-    ::STRINGS[6] = uString::Const("\\r");
-    ::STRINGS[7] = uString::Const("\\t");
-    ::STRINGS[8] = uString::Const("\\u{0:x4}");
+    ::STRINGS[0] = uString::Const("\\\"");
+    ::STRINGS[1] = uString::Const("\\\\");
+    ::STRINGS[2] = uString::Const("\\b");
+    ::STRINGS[3] = uString::Const("\\f");
+    ::STRINGS[4] = uString::Const("\\n");
+    ::STRINGS[5] = uString::Const("\\r");
+    ::STRINGS[6] = uString::Const("\\t");
+    ::STRINGS[7] = uString::Const("\\u{0:x4}");
+    ::STRINGS[8] = uString::Const("\"");
     ::TYPES[0] = uObject_typeof()->Array();
     type->Reflection.SetFunctions(1,
         new uFunction("QuoteString", NULL, (void*)JsonWriter__QuoteString_fn, 0, true, ::g::Uno::String_typeof(), 1, ::g::Uno::String_typeof()));
@@ -49,18 +49,22 @@ uClassType* JsonWriter_typeof()
     return type;
 }
 
-// public static string QuoteString(string str) :322
+// private static void EscapeString(string str, Uno.Text.StringBuilder sb) :308
+void JsonWriter__EscapeString1_fn(uString* str, ::g::Uno::Text::StringBuilder* sb)
+{
+    JsonWriter::EscapeString1(str, sb);
+}
+
+// public static string QuoteString(string str) :287
 void JsonWriter__QuoteString_fn(uString* str, uString** __retval)
 {
     *__retval = JsonWriter::QuoteString(str);
 }
 
-// public static string QuoteString(string str) [static] :322
-uString* JsonWriter::QuoteString(uString* str)
+// private static void EscapeString(string str, Uno.Text.StringBuilder sb) [static] :308
+void JsonWriter::EscapeString1(uString* str, ::g::Uno::Text::StringBuilder* sb)
 {
-    uStackFrame __("Uno.Data.Json.JsonWriter", "QuoteString(string)");
-    ::g::Uno::Text::StringBuilder* sb = ::g::Uno::Text::StringBuilder::New1();
-    sb->Append2(::STRINGS[0/*"\""*/]);
+    uStackFrame __("Uno.Data.Json.JsonWriter", "EscapeString(string,Uno.Text.StringBuilder)");
 
     for (int i = 0; i < uPtr(str)->Length(); ++i)
     {
@@ -70,43 +74,43 @@ uString* JsonWriter::QuoteString(uString* str)
         {
             case '"':
             {
-                uPtr(sb)->Append2(::STRINGS[1/*"\\\""*/]);
+                uPtr(sb)->Append2(::STRINGS[0/*"\\\""*/]);
                 break;
             }
             case '\\':
             {
-                uPtr(sb)->Append2(::STRINGS[2/*"\\\\"*/]);
+                uPtr(sb)->Append2(::STRINGS[1/*"\\\\"*/]);
                 break;
             }
             case 8:
             {
-                uPtr(sb)->Append2(::STRINGS[3/*"\\b"*/]);
+                uPtr(sb)->Append2(::STRINGS[2/*"\\b"*/]);
                 break;
             }
             case 12:
             {
-                uPtr(sb)->Append2(::STRINGS[4/*"\\f"*/]);
+                uPtr(sb)->Append2(::STRINGS[3/*"\\f"*/]);
                 break;
             }
             case 10:
             {
-                uPtr(sb)->Append2(::STRINGS[5/*"\\n"*/]);
+                uPtr(sb)->Append2(::STRINGS[4/*"\\n"*/]);
                 break;
             }
             case 13:
             {
-                uPtr(sb)->Append2(::STRINGS[6/*"\\r"*/]);
+                uPtr(sb)->Append2(::STRINGS[5/*"\\r"*/]);
                 break;
             }
             case 9:
             {
-                uPtr(sb)->Append2(::STRINGS[7/*"\\t"*/]);
+                uPtr(sb)->Append2(::STRINGS[6/*"\\t"*/]);
                 break;
             }
             default:
             {
                 if ((int)ch <= 31)
-                    uPtr(sb)->Append2(::g::Uno::String::Format(::STRINGS[8/*"\\u{0:x4}"*/], uArray::Init<uObject*>(::TYPES[0/*object[]*/], 1, uBox<int>(::g::Uno::Int_typeof(), (int)ch))));
+                    uPtr(sb)->Append2(::g::Uno::String::Format(::STRINGS[7/*"\\u{0:x4}"*/], uArray::Init<uObject*>(::TYPES[0/*object[]*/], 1, uBox<int>(::g::Uno::Int_typeof(), (int)ch))));
                 else
                     uPtr(sb)->Append(ch);
 
@@ -114,8 +118,16 @@ uString* JsonWriter::QuoteString(uString* str)
             }
         }
     }
+}
 
-    sb->Append2(::STRINGS[0/*"\""*/]);
+// public static string QuoteString(string str) [static] :287
+uString* JsonWriter::QuoteString(uString* str)
+{
+    uStackFrame __("Uno.Data.Json.JsonWriter", "QuoteString(string)");
+    ::g::Uno::Text::StringBuilder* sb = ::g::Uno::Text::StringBuilder::New1();
+    sb->Append2(::STRINGS[8/*"\""*/]);
+    JsonWriter::EscapeString1(str, sb);
+    sb->Append2(::STRINGS[8/*"\""*/]);
     return sb->ToString();
 }
 // }

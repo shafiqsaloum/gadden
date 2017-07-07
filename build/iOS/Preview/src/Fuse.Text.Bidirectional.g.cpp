@@ -26,8 +26,8 @@ namespace Fuse{
 namespace Text{
 namespace Bidirectional{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // private sealed class Runs.Range :155
 // {
@@ -82,8 +82,8 @@ Runs__Range* Runs__Range::New1(int level, ::g::Fuse::Text::SinglyLinkedList* lef
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public struct Run :8
 // {
@@ -232,15 +232,15 @@ Run Run__New1(::g::Fuse::Text::Substring* str, int level)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public static class Runs :30
 // {
 static void Runs_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("ranges.Count >= 1");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno");
     ::STRINGS[2] = uString::Const("result.Count == runs.Count");
     ::STRINGS[3] = uString::Const("previous.Level < range.Level");
     ::TYPES[0] = ::g::Uno::Collections::Stack_typeof()->MakeType(Runs__Range_typeof(), NULL);

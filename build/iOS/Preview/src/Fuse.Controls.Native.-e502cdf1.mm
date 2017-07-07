@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <CoreGraphics/CoreGraphics.h>
@@ -23,7 +23,7 @@ namespace Fuse{
 namespace Controls{
 namespace Native{
 
-// public extern class ViewHandle :1178
+// public extern class ViewHandle :1212
 // {
 static void ViewHandle_build(uType* type)
 {
@@ -85,257 +85,257 @@ ViewHandle_type* ViewHandle_typeof()
     return type;
 }
 
-// public ViewHandle(ObjC.Object nativeHandle) :1184
+// public ViewHandle(ObjC.Object nativeHandle) :1218
 void ViewHandle__ctor__fn(ViewHandle* __this, ::g::ObjC::Object* nativeHandle)
 {
     __this->ctor_(nativeHandle);
 }
 
-// public ViewHandle(ObjC.Object nativeHandle, bool isLeafView) :1186
+// public ViewHandle(ObjC.Object nativeHandle, bool isLeafView) :1220
 void ViewHandle__ctor_1_fn(ViewHandle* __this, ::g::ObjC::Object* nativeHandle, bool* isLeafView)
 {
     __this->ctor_1(nativeHandle, *isLeafView);
 }
 
-// public void BringToFront() :1338
+// public void BringToFront() :1372
 void ViewHandle__BringToFront_fn(ViewHandle* __this)
 {
     __this->BringToFront();
 }
 
-// public virtual void Dispose() :1200
+// public virtual void Dispose() :1234
 void ViewHandle__Dispose_fn(ViewHandle* __this)
 {
 }
 
-// public string Format() :1301
+// public string Format() :1335
 void ViewHandle__Format_fn(ViewHandle* __this, uString** __retval)
 {
     *__retval = __this->Format();
 }
 
-// private ObjC.Object GetHitTesthandle() :1229
+// private ObjC.Object GetHitTesthandle() :1263
 void ViewHandle__GetHitTesthandle_fn(ViewHandle* __this, ::g::ObjC::Object** __retval)
 {
     *__retval = __this->GetHitTesthandle();
 }
 
-// internal generated bool get_HitTestEnabled() :1241
+// internal generated bool get_HitTestEnabled() :1275
 void ViewHandle__get_HitTestEnabled_fn(ViewHandle* __this, bool* __retval)
 {
     *__retval = __this->HitTestEnabled();
 }
 
-// internal generated void set_HitTestEnabled(bool value) :1241
+// internal generated void set_HitTestEnabled(bool value) :1275
 void ViewHandle__set_HitTestEnabled_fn(ViewHandle* __this, bool* value)
 {
     __this->HitTestEnabled(*value);
 }
 
-// public ObjC.Object get_HitTestHandle() :1225
+// public ObjC.Object get_HitTestHandle() :1259
 void ViewHandle__get_HitTestHandle_fn(ViewHandle* __this, ::g::ObjC::Object** __retval)
 {
     *__retval = __this->HitTestHandle();
 }
 
-// private void InitAnchorPoint() :1254
+// private void InitAnchorPoint() :1288
 void ViewHandle__InitAnchorPoint_fn(ViewHandle* __this)
 {
     __this->InitAnchorPoint();
 }
 
-// public void InsertChild(Fuse.Controls.Native.ViewHandle childHandle) :1315
+// public void InsertChild(Fuse.Controls.Native.ViewHandle childHandle) :1349
 void ViewHandle__InsertChild_fn(ViewHandle* __this, ViewHandle* childHandle)
 {
     __this->InsertChild(childHandle);
 }
 
-// public void InsertChild(Fuse.Controls.Native.ViewHandle childHandle, int index) :1323
+// public void InsertChild(Fuse.Controls.Native.ViewHandle childHandle, int index) :1357
 void ViewHandle__InsertChild1_fn(ViewHandle* __this, ViewHandle* childHandle, int* index)
 {
     __this->InsertChild1(childHandle, *index);
 }
 
-// internal generated bool get_IsEnabled() :1240
+// internal generated bool get_IsEnabled() :1274
 void ViewHandle__get_IsEnabled_fn(ViewHandle* __this, bool* __retval)
 {
     *__retval = __this->IsEnabled();
 }
 
-// internal generated void set_IsEnabled(bool value) :1240
+// internal generated void set_IsEnabled(bool value) :1274
 void ViewHandle__set_IsEnabled_fn(ViewHandle* __this, bool* value)
 {
     __this->IsEnabled(*value);
 }
 
-// public bool IsUIControl() :1308
+// public bool IsUIControl() :1342
 void ViewHandle__IsUIControl_fn(ViewHandle* __this, bool* __retval)
 {
     *__retval = __this->IsUIControl();
 }
 
-// public float2 Measure(Fuse.LayoutParams lp, float density) :1423
+// public float2 Measure(Fuse.LayoutParams lp, float density) :1457
 void ViewHandle__Measure_fn(ViewHandle* __this, ::g::Fuse::LayoutParams* lp, float* density, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->Measure(*lp, *density);
 }
 
-// public ViewHandle New(ObjC.Object nativeHandle) :1184
+// public ViewHandle New(ObjC.Object nativeHandle) :1218
 void ViewHandle__New1_fn(::g::ObjC::Object* nativeHandle, ViewHandle** __retval)
 {
     *__retval = ViewHandle::New1(nativeHandle);
 }
 
-// public ViewHandle New(ObjC.Object nativeHandle, bool isLeafView) :1186
+// public ViewHandle New(ObjC.Object nativeHandle, bool isLeafView) :1220
 void ViewHandle__New2_fn(::g::ObjC::Object* nativeHandle, bool* isLeafView, ViewHandle** __retval)
 {
     *__retval = ViewHandle::New2(nativeHandle, *isLeafView);
 }
 
-// protected internal virtual void OnPositionChanged() :1243
+// protected internal virtual void OnPositionChanged() :1277
 void ViewHandle__OnPositionChanged_fn(ViewHandle* __this)
 {
 }
 
-// protected internal virtual void OnSizeChanged() :1244
+// protected internal virtual void OnSizeChanged() :1278
 void ViewHandle__OnSizeChanged_fn(ViewHandle* __this)
 {
 }
 
-// protected internal float2 get_Position() :1206
+// protected internal float2 get_Position() :1240
 void ViewHandle__get_Position_fn(ViewHandle* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->Position();
 }
 
-// private void set_Position(float2 value) :1207
+// private void set_Position(float2 value) :1241
 void ViewHandle__set_Position_fn(ViewHandle* __this, ::g::Uno::Float2* value)
 {
     __this->Position(*value);
 }
 
-// public void RemoveChild(Fuse.Controls.Native.ViewHandle childHandle) :1331
+// public void RemoveChild(Fuse.Controls.Native.ViewHandle childHandle) :1365
 void ViewHandle__RemoveChild_fn(ViewHandle* __this, ViewHandle* childHandle)
 {
     __this->RemoveChild(childHandle);
 }
 
-// public void SendToBack() :1347
+// public void SendToBack() :1381
 void ViewHandle__SendToBack_fn(ViewHandle* __this)
 {
     __this->SendToBack();
 }
 
-// public void SetAccessibilityIdentifier(string name) :1247
+// public void SetAccessibilityIdentifier(string name) :1281
 void ViewHandle__SetAccessibilityIdentifier_fn(ViewHandle* __this, uString* name)
 {
     __this->SetAccessibilityIdentifier(name);
 }
 
-// private static void SetBackground(ObjC.Object handle, float r, float g, float b, float a) :1361
+// private static void SetBackground(ObjC.Object handle, float r, float g, float b, float a) :1395
 void ViewHandle__SetBackground_fn(::g::ObjC::Object* handle, float* r, float* g, float* b, float* a)
 {
     ViewHandle::SetBackground(handle, *r, *g, *b, *a);
 }
 
-// public void SetBackgroundColor(float4 c) :1355
+// public void SetBackgroundColor(float4 c) :1389
 void ViewHandle__SetBackgroundColor_fn(ViewHandle* __this, ::g::Uno::Float4* c)
 {
     __this->SetBackgroundColor(*c);
 }
 
-// public void SetClipToBounds(bool clipToBounds) :1261
+// public void SetClipToBounds(bool clipToBounds) :1295
 void ViewHandle__SetClipToBounds_fn(ViewHandle* __this, bool* clipToBounds)
 {
     __this->SetClipToBounds(*clipToBounds);
 }
 
-// public void SetEnabled(bool value) :1280
+// public void SetEnabled(bool value) :1314
 void ViewHandle__SetEnabled_fn(ViewHandle* __this, bool* value)
 {
     __this->SetEnabled(*value);
 }
 
-// private void SetEnabledImpl(bool value) :1287
+// private void SetEnabledImpl(bool value) :1321
 void ViewHandle__SetEnabledImpl_fn(ViewHandle* __this, bool* value)
 {
     __this->SetEnabledImpl(*value);
 }
 
-// public void SetHitTestEnabled(bool value) :1274
+// public void SetHitTestEnabled(bool value) :1308
 void ViewHandle__SetHitTestEnabled_fn(ViewHandle* __this, bool* value)
 {
     __this->SetHitTestEnabled(*value);
 }
 
-// public void SetIsVisible(bool isVisible) :1294
+// public void SetIsVisible(bool isVisible) :1328
 void ViewHandle__SetIsVisible_fn(ViewHandle* __this, bool* isVisible)
 {
     __this->SetIsVisible(*isVisible);
 }
 
-// public void SetOpacity(float value) :1268
+// public void SetOpacity(float value) :1302
 void ViewHandle__SetOpacity_fn(ViewHandle* __this, float* value)
 {
     __this->SetOpacity(*value);
 }
 
-// private void SetSize(float w, float h) :1380
+// private void SetSize(float w, float h) :1414
 void ViewHandle__SetSize_fn(ViewHandle* __this, float* w, float* h)
 {
     __this->SetSize(*w, *h);
 }
 
-// public void SetSize(float2 size) :1373
+// public void SetSize(float2 size) :1407
 void ViewHandle__SetSize1_fn(ViewHandle* __this, ::g::Uno::Float2* size)
 {
     __this->SetSize1(*size);
 }
 
-// private void SetTransform(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44) :1407
+// private void SetTransform(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44) :1441
 void ViewHandle__SetTransform_fn(ViewHandle* __this, float* m11, float* m12, float* m13, float* m14, float* m21, float* m22, float* m23, float* m24, float* m31, float* m32, float* m33, float* m34, float* m41, float* m42, float* m43, float* m44)
 {
     __this->SetTransform(*m11, *m12, *m13, *m14, *m21, *m22, *m23, *m24, *m31, *m32, *m33, *m34, *m41, *m42, *m43, *m44);
 }
 
-// public void SetTransform(float4x4 t) :1396
+// public void SetTransform(float4x4 t) :1430
 void ViewHandle__SetTransform1_fn(ViewHandle* __this, ::g::Uno::Float4x4* t)
 {
     __this->SetTransform1(*t);
 }
 
-// protected internal float2 get_Size() :1215
+// protected internal float2 get_Size() :1249
 void ViewHandle__get_Size_fn(ViewHandle* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->Size();
 }
 
-// private void set_Size(float2 value) :1216
+// private void set_Size(float2 value) :1250
 void ViewHandle__set_Size_fn(ViewHandle* __this, ::g::Uno::Float2* value)
 {
     __this->Size(*value);
 }
 
-// private void SizeThatFits(float w, float h, float& resW, float& resH) :1442
+// private void SizeThatFits(float w, float h, float& resW, float& resH) :1476
 void ViewHandle__SizeThatFits_fn(ViewHandle* __this, float* w, float* h, float* resW, float* resH)
 {
     __this->SizeThatFits(*w, *h, resW, resH);
 }
 
-// public override sealed string ToString() :1195
+// public override sealed string ToString() :1229
 void ViewHandle__ToString_fn(ViewHandle* __this, uString** __retval)
 {
     uStackFrame __("Fuse.Controls.Native.ViewHandle", "ToString()");
     return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[0/*"Fuse.Contro...*/], __this->Format()), ::STRINGS[1/*")"*/]), void();
 }
 
-// public void UpdateViewRect(float4x4 transform, float2 size, float density) :1367
+// public void UpdateViewRect(float4x4 transform, float2 size, float density) :1401
 void ViewHandle__UpdateViewRect_fn(ViewHandle* __this, ::g::Uno::Float4x4* transform, ::g::Uno::Float2* size, float* density)
 {
     __this->UpdateViewRect(*transform, *size, *density);
 }
 
-// public ViewHandle(ObjC.Object nativeHandle) [instance] :1184
+// public ViewHandle(ObjC.Object nativeHandle) [instance] :1218
 void ViewHandle::ctor_(::g::ObjC::Object* nativeHandle)
 {
     _position = ::g::Uno::Float2__New1(0.0f);
@@ -343,7 +343,7 @@ void ViewHandle::ctor_(::g::ObjC::Object* nativeHandle)
     ctor_1(nativeHandle, false);
 }
 
-// public ViewHandle(ObjC.Object nativeHandle, bool isLeafView) [instance] :1186
+// public ViewHandle(ObjC.Object nativeHandle, bool isLeafView) [instance] :1220
 void ViewHandle::ctor_1(::g::ObjC::Object* nativeHandle, bool isLeafView)
 {
     _position = ::g::Uno::Float2__New1(0.0f);
@@ -355,7 +355,7 @@ void ViewHandle::ctor_1(::g::ObjC::Object* nativeHandle, bool isLeafView)
     HitTestEnabled(true);
 }
 
-// public void BringToFront() [instance] :1338
+// public void BringToFront() [instance] :1372
 void ViewHandle::BringToFront()
 {
     @autoreleasepool
@@ -372,7 +372,7 @@ void ViewHandle::BringToFront()
     
 }
 
-// public string Format() [instance] :1301
+// public string Format() [instance] :1335
 uString* ViewHandle::Format()
 {
     @autoreleasepool
@@ -387,7 +387,7 @@ uString* ViewHandle::Format()
     
 }
 
-// private ObjC.Object GetHitTesthandle() [instance] :1229
+// private ObjC.Object GetHitTesthandle() [instance] :1263
 ::g::ObjC::Object* ViewHandle::GetHitTesthandle()
 {
     @autoreleasepool
@@ -407,25 +407,25 @@ uString* ViewHandle::Format()
     
 }
 
-// internal generated bool get_HitTestEnabled() [instance] :1241
+// internal generated bool get_HitTestEnabled() [instance] :1275
 bool ViewHandle::HitTestEnabled()
 {
     return _HitTestEnabled;
 }
 
-// internal generated void set_HitTestEnabled(bool value) [instance] :1241
+// internal generated void set_HitTestEnabled(bool value) [instance] :1275
 void ViewHandle::HitTestEnabled(bool value)
 {
     _HitTestEnabled = value;
 }
 
-// public ObjC.Object get_HitTestHandle() [instance] :1225
+// public ObjC.Object get_HitTestHandle() [instance] :1259
 ::g::ObjC::Object* ViewHandle::HitTestHandle()
 {
     return GetHitTesthandle();
 }
 
-// private void InitAnchorPoint() [instance] :1254
+// private void InitAnchorPoint() [instance] :1288
 void ViewHandle::InitAnchorPoint()
 {
     @autoreleasepool
@@ -440,7 +440,7 @@ void ViewHandle::InitAnchorPoint()
     
 }
 
-// public void InsertChild(Fuse.Controls.Native.ViewHandle childHandle) [instance] :1315
+// public void InsertChild(Fuse.Controls.Native.ViewHandle childHandle) [instance] :1349
 void ViewHandle::InsertChild(ViewHandle* childHandle)
 {
     @autoreleasepool
@@ -456,7 +456,7 @@ void ViewHandle::InsertChild(ViewHandle* childHandle)
     
 }
 
-// public void InsertChild(Fuse.Controls.Native.ViewHandle childHandle, int index) [instance] :1323
+// public void InsertChild(Fuse.Controls.Native.ViewHandle childHandle, int index) [instance] :1357
 void ViewHandle::InsertChild1(ViewHandle* childHandle, int index)
 {
     @autoreleasepool
@@ -472,19 +472,19 @@ void ViewHandle::InsertChild1(ViewHandle* childHandle, int index)
     
 }
 
-// internal generated bool get_IsEnabled() [instance] :1240
+// internal generated bool get_IsEnabled() [instance] :1274
 bool ViewHandle::IsEnabled()
 {
     return _IsEnabled;
 }
 
-// internal generated void set_IsEnabled(bool value) [instance] :1240
+// internal generated void set_IsEnabled(bool value) [instance] :1274
 void ViewHandle::IsEnabled(bool value)
 {
     _IsEnabled = value;
 }
 
-// public bool IsUIControl() [instance] :1308
+// public bool IsUIControl() [instance] :1342
 bool ViewHandle::IsUIControl()
 {
     @autoreleasepool
@@ -499,7 +499,7 @@ bool ViewHandle::IsUIControl()
     
 }
 
-// public float2 Measure(Fuse.LayoutParams lp, float density) [instance] :1423
+// public float2 Measure(Fuse.LayoutParams lp, float density) [instance] :1457
 ::g::Uno::Float2 ViewHandle::Measure(::g::Fuse::LayoutParams lp, float density)
 {
     uStackFrame __("Fuse.Controls.Native.ViewHandle", "Measure(Fuse.LayoutParams,float)");
@@ -519,13 +519,13 @@ bool ViewHandle::IsUIControl()
     return ::g::Fuse::Controls::Native::iOS::iOSDevice::CompensateForOrientation(result);
 }
 
-// protected internal float2 get_Position() [instance] :1206
+// protected internal float2 get_Position() [instance] :1240
 ::g::Uno::Float2 ViewHandle::Position()
 {
     return _position;
 }
 
-// private void set_Position(float2 value) [instance] :1207
+// private void set_Position(float2 value) [instance] :1241
 void ViewHandle::Position(::g::Uno::Float2 value)
 {
     uStackFrame __("Fuse.Controls.Native.ViewHandle", "set_Position(float2)");
@@ -533,7 +533,7 @@ void ViewHandle::Position(::g::Uno::Float2 value)
     OnPositionChanged();
 }
 
-// public void RemoveChild(Fuse.Controls.Native.ViewHandle childHandle) [instance] :1331
+// public void RemoveChild(Fuse.Controls.Native.ViewHandle childHandle) [instance] :1365
 void ViewHandle::RemoveChild(ViewHandle* childHandle)
 {
     @autoreleasepool
@@ -548,7 +548,7 @@ void ViewHandle::RemoveChild(ViewHandle* childHandle)
     
 }
 
-// public void SendToBack() [instance] :1347
+// public void SendToBack() [instance] :1381
 void ViewHandle::SendToBack()
 {
     @autoreleasepool
@@ -565,7 +565,7 @@ void ViewHandle::SendToBack()
     
 }
 
-// public void SetAccessibilityIdentifier(string name) [instance] :1247
+// public void SetAccessibilityIdentifier(string name) [instance] :1281
 void ViewHandle::SetAccessibilityIdentifier(uString* name)
 {
     @autoreleasepool
@@ -580,13 +580,13 @@ void ViewHandle::SetAccessibilityIdentifier(uString* name)
     
 }
 
-// public void SetBackgroundColor(float4 c) [instance] :1355
+// public void SetBackgroundColor(float4 c) [instance] :1389
 void ViewHandle::SetBackgroundColor(::g::Uno::Float4 c)
 {
     ViewHandle::SetBackground(NativeHandle, c.X, c.Y, c.Z, c.W);
 }
 
-// public void SetClipToBounds(bool clipToBounds) [instance] :1261
+// public void SetClipToBounds(bool clipToBounds) [instance] :1295
 void ViewHandle::SetClipToBounds(bool clipToBounds)
 {
     @autoreleasepool
@@ -601,14 +601,14 @@ void ViewHandle::SetClipToBounds(bool clipToBounds)
     
 }
 
-// public void SetEnabled(bool value) [instance] :1280
+// public void SetEnabled(bool value) [instance] :1314
 void ViewHandle::SetEnabled(bool value)
 {
     IsEnabled(value);
     SetEnabledImpl(HitTestEnabled() && IsEnabled());
 }
 
-// private void SetEnabledImpl(bool value) [instance] :1287
+// private void SetEnabledImpl(bool value) [instance] :1321
 void ViewHandle::SetEnabledImpl(bool value)
 {
     @autoreleasepool
@@ -623,14 +623,14 @@ void ViewHandle::SetEnabledImpl(bool value)
     
 }
 
-// public void SetHitTestEnabled(bool value) [instance] :1274
+// public void SetHitTestEnabled(bool value) [instance] :1308
 void ViewHandle::SetHitTestEnabled(bool value)
 {
     HitTestEnabled(value);
     SetEnabledImpl(HitTestEnabled() && IsEnabled());
 }
 
-// public void SetIsVisible(bool isVisible) [instance] :1294
+// public void SetIsVisible(bool isVisible) [instance] :1328
 void ViewHandle::SetIsVisible(bool isVisible)
 {
     @autoreleasepool
@@ -645,7 +645,7 @@ void ViewHandle::SetIsVisible(bool isVisible)
     
 }
 
-// public void SetOpacity(float value) [instance] :1268
+// public void SetOpacity(float value) [instance] :1302
 void ViewHandle::SetOpacity(float value)
 {
     @autoreleasepool
@@ -660,7 +660,7 @@ void ViewHandle::SetOpacity(float value)
     
 }
 
-// private void SetSize(float w, float h) [instance] :1380
+// private void SetSize(float w, float h) [instance] :1414
 void ViewHandle::SetSize(float w, float h)
 {
     @autoreleasepool
@@ -685,7 +685,7 @@ void ViewHandle::SetSize(float w, float h)
     
 }
 
-// public void SetSize(float2 size) [instance] :1373
+// public void SetSize(float2 size) [instance] :1407
 void ViewHandle::SetSize1(::g::Uno::Float2 size)
 {
     uStackFrame __("Fuse.Controls.Native.ViewHandle", "SetSize(float2)");
@@ -693,7 +693,7 @@ void ViewHandle::SetSize1(::g::Uno::Float2 size)
     Size(size);
 }
 
-// private void SetTransform(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44) [instance] :1407
+// private void SetTransform(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44) [instance] :1441
 void ViewHandle::SetTransform(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44)
 {
     @autoreleasepool
@@ -714,7 +714,7 @@ void ViewHandle::SetTransform(float m11, float m12, float m13, float m14, float 
     
 }
 
-// public void SetTransform(float4x4 t) [instance] :1396
+// public void SetTransform(float4x4 t) [instance] :1430
 void ViewHandle::SetTransform1(::g::Uno::Float4x4 t)
 {
     uStackFrame __("Fuse.Controls.Native.ViewHandle", "SetTransform(float4x4)");
@@ -722,13 +722,13 @@ void ViewHandle::SetTransform1(::g::Uno::Float4x4 t)
     Position(::g::Uno::Float2__New2(t.M41, t.M42));
 }
 
-// protected internal float2 get_Size() [instance] :1215
+// protected internal float2 get_Size() [instance] :1249
 ::g::Uno::Float2 ViewHandle::Size()
 {
     return _size;
 }
 
-// private void set_Size(float2 value) [instance] :1216
+// private void set_Size(float2 value) [instance] :1250
 void ViewHandle::Size(::g::Uno::Float2 value)
 {
     uStackFrame __("Fuse.Controls.Native.ViewHandle", "set_Size(float2)");
@@ -736,7 +736,7 @@ void ViewHandle::Size(::g::Uno::Float2 value)
     OnSizeChanged();
 }
 
-// private void SizeThatFits(float w, float h, float& resW, float& resH) [instance] :1442
+// private void SizeThatFits(float w, float h, float& resW, float& resH) [instance] :1476
 void ViewHandle::SizeThatFits(float w, float h, float* resW, float* resH)
 {
     @autoreleasepool
@@ -754,7 +754,7 @@ void ViewHandle::SizeThatFits(float w, float h, float* resW, float* resH)
     
 }
 
-// public void UpdateViewRect(float4x4 transform, float2 size, float density) [instance] :1367
+// public void UpdateViewRect(float4x4 transform, float2 size, float density) [instance] :1401
 void ViewHandle::UpdateViewRect(::g::Uno::Float4x4 transform, ::g::Uno::Float2 size, float density)
 {
     uStackFrame __("Fuse.Controls.Native.ViewHandle", "UpdateViewRect(float4x4,float2,float)");
@@ -762,7 +762,7 @@ void ViewHandle::UpdateViewRect(::g::Uno::Float4x4 transform, ::g::Uno::Float2 s
     SetSize1(size);
 }
 
-// public ViewHandle New(ObjC.Object nativeHandle) [static] :1184
+// public ViewHandle New(ObjC.Object nativeHandle) [static] :1218
 ViewHandle* ViewHandle::New1(::g::ObjC::Object* nativeHandle)
 {
     ViewHandle* obj1 = (ViewHandle*)uNew(ViewHandle_typeof());
@@ -770,7 +770,7 @@ ViewHandle* ViewHandle::New1(::g::ObjC::Object* nativeHandle)
     return obj1;
 }
 
-// public ViewHandle New(ObjC.Object nativeHandle, bool isLeafView) [static] :1186
+// public ViewHandle New(ObjC.Object nativeHandle, bool isLeafView) [static] :1220
 ViewHandle* ViewHandle::New2(::g::ObjC::Object* nativeHandle, bool isLeafView)
 {
     ViewHandle* obj2 = (ViewHandle*)uNew(ViewHandle_typeof());
@@ -778,7 +778,7 @@ ViewHandle* ViewHandle::New2(::g::ObjC::Object* nativeHandle, bool isLeafView)
     return obj2;
 }
 
-// private static void SetBackground(ObjC.Object handle, float r, float g, float b, float a) [static] :1361
+// private static void SetBackground(ObjC.Object handle, float r, float g, float b, float a) [static] :1395
 void ViewHandle::SetBackground(::g::ObjC::Object* handle, float r, float g, float b, float a)
 {
     @autoreleasepool

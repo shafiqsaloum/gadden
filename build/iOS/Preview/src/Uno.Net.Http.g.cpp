@@ -60,8 +60,8 @@ namespace Uno{
 namespace Net{
 namespace Http{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/uriparsers/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class AbsolutePathParser :8
 // {
@@ -135,8 +135,8 @@ uString* AbsolutePathParser::Parse(uString* uriString, int idx, int endIdx, int*
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // private sealed class HttpMessageHandlerRequest.DispatchClosure :333
 // {
@@ -210,8 +210,8 @@ HttpMessageHandlerRequest__DispatchClosure* HttpMessageHandlerRequest__DispatchC
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // private sealed class HttpMessageHandlerRequest.DispatchClosure<TArg1> :356
 // {
@@ -278,8 +278,8 @@ void HttpMessageHandlerRequest__DispatchClosure1::Run()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/uriparsers/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class HashParser :32
 // {
@@ -355,8 +355,8 @@ uString* HashParser::Parse(uString* uriString, int idx, int* startPartIdx)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/uriparsers/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class HostInfo :60
 // {
@@ -489,8 +489,8 @@ HostInfo* HostInfo::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/uriparsers/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class HostInfoParser :69
 // {
@@ -692,8 +692,8 @@ HostInfoParser* HostInfoParser::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // internal sealed class HttpDefaultDispatcher :847
 // {
@@ -758,8 +758,8 @@ HttpDefaultDispatcher* HttpDefaultDispatcher::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public static class HttpMessageCache :5
 // {
@@ -772,7 +772,7 @@ static void HttpMessageCache__cctor__fn(uType* __type)
 static void HttpMessageCache_build(uType* type)
 {
     ::STRINGS[22] = uString::Const("Uno.Net.Http.HttpMessageCache: Changes to IsCacheEnabled are ignored after initialization.");
-    ::STRINGS[23] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno");
+    ::STRINGS[23] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno");
     ::STRINGS[24] = uString::Const("Uno.Net.Http.HttpMessageCache: Changes to MaxCacheSizeInBytes are ignored after initialization.");
     ::TYPES[2] = ::g::Uno::Platform::ApplicationStateTransitionHandler_typeof();
     type->SetFields(0,
@@ -902,8 +902,8 @@ void HttpMessageCache::MaxCacheSizeInBytes(int64_t value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class HttpMessageHandler :93
 // {
@@ -1074,8 +1074,8 @@ HttpMessageHandler* HttpMessageHandler::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class HttpMessageHandlerRequest :203
 // {
@@ -1848,8 +1848,8 @@ HttpMessageHandlerRequest* HttpMessageHandlerRequest::New1(::g::Uno::Net::Http::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public enum HttpRequestState :712
 uEnumType* HttpRequestState_typeof()
@@ -1872,8 +1872,8 @@ uEnumType* HttpRequestState_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public enum HttpResponseType :736
 uEnumType* HttpResponseType_typeof()
@@ -1889,8 +1889,8 @@ uEnumType* HttpResponseType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public static class HttpStatusReasonPhrase :750
 // {
@@ -2026,8 +2026,8 @@ uString* HttpStatusReasonPhrase::GetFromStatusCode(int statusCode)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class InvalidResponseTypeException :691
 // {
@@ -2082,8 +2082,8 @@ InvalidResponseTypeException* InvalidResponseTypeException::New4()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class InvalidStateException :697
 // {
@@ -2165,8 +2165,8 @@ InvalidStateException* InvalidStateException::New5(uString* message)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/uriparsers/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class QueryParser :161
 // {
@@ -2246,8 +2246,8 @@ uString* QueryParser::Parse(uString* uriString, uString* scheme, int idx, int* s
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/uriparsers/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class SchemeParser :201
 // {
@@ -2344,8 +2344,8 @@ SchemeParser* SchemeParser::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/uriparsers/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public struct SchemeParserResult :195
 // {
@@ -2374,8 +2374,8 @@ uStructType* SchemeParserResult_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // internal static class HttpMessageHandler.StaticData :95
 // {
@@ -2418,8 +2418,8 @@ void HttpMessageHandler__StaticData::IncrementPendingRequests()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class UriFormatException :1097
 // {
@@ -2472,8 +2472,8 @@ UriFormatException* UriFormatException::New4(uString* message)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class UriScheme :1120
 // {
@@ -2634,8 +2634,8 @@ UriScheme* UriScheme::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public enum UriSchemeType :1113
 uEnumType* UriSchemeType_typeof()
@@ -2651,8 +2651,8 @@ uEnumType* UriSchemeType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/uriparsers/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class UserInfoParser :257
 // {

@@ -1,15 +1,16 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.Object.h>
+namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct PendingRemoveVisual;}}
 namespace g{namespace Fuse{struct Visual;}}
 
 namespace g{
 namespace Fuse{
 
-// public sealed class PendingRemoveVisual :4809
+// public sealed class PendingRemoveVisual :4898
 // {
 uType* PendingRemoveVisual_typeof();
 void PendingRemoveVisual__ctor__fn(PendingRemoveVisual* __this, ::g::Fuse::Visual* child, ::g::Fuse::Visual* parent, uDelegate* then);

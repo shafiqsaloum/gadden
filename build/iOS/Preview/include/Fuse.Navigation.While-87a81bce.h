@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -19,7 +19,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public sealed class WhileInEnterState :5097
+// public sealed class WhileInEnterState :5193
 // {
 ::g::Fuse::Navigation::WhileNavigationTrigger_type* WhileInEnterState_typeof();
 void WhileInEnterState__ctor_7_fn(WhileInEnterState* __this);

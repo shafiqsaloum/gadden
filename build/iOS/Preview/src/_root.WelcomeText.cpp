@@ -37,7 +37,7 @@ static void WelcomeText_build(uType* type)
         ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::TextControl_type, interface13),
         ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::TextControl_type, interface14),
         ::g::Fuse::Triggers::IValue_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(::g::Fuse::Controls::TextControl_type, interface15));
-    type->SetFields(104);
+    type->SetFields(106);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WelcomeText__New4_fn, 0, true, type, 0));
 }
@@ -49,7 +49,7 @@ static void WelcomeText_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Text_typeof();
-    options.FieldCount = 104;
+    options.FieldCount = 106;
     options.InterfaceCount = 16;
     options.ObjectSize = sizeof(WelcomeText);
     options.TypeSize = sizeof(::g::Fuse::Controls::TextControl_type);

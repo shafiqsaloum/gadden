@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Threading/0.47.13/implementation/cpp/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Threading/1.0.13/implementation/cpp/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Uno{
 namespace Threading{
 
-// public struct PthreadHelpers.ResetEventHandle :110
+// public struct PthreadHelpers.ResetEventHandle :108
 // {
 uStructType* PthreadHelpers__ResetEventHandle_typeof();
 

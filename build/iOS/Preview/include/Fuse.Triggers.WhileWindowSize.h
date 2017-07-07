@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -19,7 +19,7 @@ namespace g{
 namespace Fuse{
 namespace Triggers{
 
-// public sealed class WhileWindowSize :4451
+// public sealed class WhileWindowSize :4426
 // {
 ::g::Fuse::Triggers::WindowSizeTrigger_type* WhileWindowSize_typeof();
 void WhileWindowSize__ctor_7_fn(WhileWindowSize* __this);

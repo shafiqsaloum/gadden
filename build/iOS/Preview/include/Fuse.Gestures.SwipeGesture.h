@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -22,7 +22,7 @@ namespace g{
 namespace Fuse{
 namespace Gestures{
 
-// public sealed class SwipeGesture :964
+// public sealed class SwipeGesture :977
 // {
 struct SwipeGesture_type : ::g::Fuse::Node_type
 {
@@ -35,6 +35,8 @@ void SwipeGesture__get_Direction_fn(SwipeGesture* __this, int* __retval);
 void SwipeGesture__set_Direction_fn(SwipeGesture* __this, int* value);
 void SwipeGesture__get_Edge_fn(SwipeGesture* __this, int* __retval);
 void SwipeGesture__set_Edge_fn(SwipeGesture* __this, int* value);
+void SwipeGesture__get_GesturePriority_fn(SwipeGesture* __this, int* __retval);
+void SwipeGesture__set_GesturePriority_fn(SwipeGesture* __this, int* value);
 void SwipeGesture__get_HitSize_fn(SwipeGesture* __this, float* __retval);
 void SwipeGesture__set_HitSize_fn(SwipeGesture* __this, float* value);
 void SwipeGesture__get_IsActive_fn(SwipeGesture* __this, bool* __retval);
@@ -59,6 +61,7 @@ struct SwipeGesture : ::g::Fuse::Behavior
 {
     int _direction;
     int _edge;
+    int _gesturePriority;
     bool _hasDirection;
     bool _hasEdge;
     static ::g::Uno::UX::Selector _isActiveName_;
@@ -66,12 +69,16 @@ struct SwipeGesture : ::g::Fuse::Behavior
     uStrong< ::g::Fuse::Gestures::Internal::SwipeRegion*> _region;
     uStrong< ::g::Fuse::Gestures::Internal::Swiper*> _swiper;
     int _type;
+    static ::g::Uno::UX::Selector GesturePriorityName_;
+    static ::g::Uno::UX::Selector& GesturePriorityName() { return SwipeGesture_typeof()->Init(), GesturePriorityName_; }
 
     void ctor_3();
     int Direction();
     void Direction(int value);
     int Edge();
     void Edge(int value);
+    int GesturePriority();
+    void GesturePriority(int value);
     float HitSize();
     void HitSize(float value);
     bool IsActive();

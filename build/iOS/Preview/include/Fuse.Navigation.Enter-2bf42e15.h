@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -19,7 +19,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public abstract class EnterExitAnimation :1253
+// public abstract class EnterExitAnimation :1258
 // {
 ::g::Fuse::Navigation::NavigationAnimation_type* EnterExitAnimation_typeof();
 void EnterExitAnimation__ctor_6_fn(EnterExitAnimation* __this);

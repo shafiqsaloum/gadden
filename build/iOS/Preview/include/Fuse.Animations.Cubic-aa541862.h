@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// public sealed class CubicBezierEasing :849
+// public sealed class CubicBezierEasing :885
 // {
 ::g::Fuse::Animations::Easing_type* CubicBezierEasing_typeof();
 void CubicBezierEasing__ctor_1_fn(CubicBezierEasing* __this);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// public sealed class Keyframe :1341
+// public sealed class Keyframe :1343
 // {
 uType* Keyframe_typeof();
 void Keyframe__ctor__fn(Keyframe* __this);
@@ -25,7 +25,6 @@ void Keyframe__get_DegreesY_fn(Keyframe* __this, float* __retval);
 void Keyframe__set_DegreesY_fn(Keyframe* __this, float* value);
 void Keyframe__get_DegreesZ_fn(Keyframe* __this, float* __retval);
 void Keyframe__set_DegreesZ_fn(Keyframe* __this, float* value);
-void Keyframe__KochanekBartelTangent_fn(::g::Uno::Float4* pa, ::g::Uno::Float4* pb, ::g::Uno::Float4* pc, ::g::Uno::Float4* pd, float* t, float* b, float* c, ::g::Uno::Float4* tangentIn, ::g::Uno::Float4* tangentOut);
 void Keyframe__New1_fn(Keyframe** __retval);
 void Keyframe__get_ObjectValue_fn(Keyframe* __this, uObject** __retval);
 void Keyframe__set_ObjectValue_fn(Keyframe* __this, uObject* value);
@@ -95,7 +94,6 @@ struct Keyframe : uObject
     float Z();
     void Z(float value);
     static double CompleteFrames(uObject* frames, float tension, float bias, float continuity);
-    static void KochanekBartelTangent(::g::Uno::Float4 pa, ::g::Uno::Float4 pb, ::g::Uno::Float4 pc, ::g::Uno::Float4 pd, float t, float b, float c, ::g::Uno::Float4* tangentIn, ::g::Uno::Float4* tangentOut);
     static Keyframe* New1();
 };
 // }

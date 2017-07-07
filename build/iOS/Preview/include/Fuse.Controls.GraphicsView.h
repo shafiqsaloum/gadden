@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -43,7 +43,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial sealed class GraphicsView :303
+// public partial class GraphicsView :311
 // {
 struct GraphicsView_type : ::g::Fuse::Controls::Control_type
 {
@@ -63,8 +63,8 @@ void GraphicsView__set_Color_fn(GraphicsView* __this, ::g::Uno::Float4* value);
 void GraphicsView__DrawFrame_fn(GraphicsView* __this);
 void GraphicsView__DrawWithChildren_fn(GraphicsView* __this, ::g::Fuse::DrawContext* dc);
 void GraphicsView__FuseControlsIProxyHostInsert_fn(GraphicsView* __this, ::g::Fuse::Controls::Native::ViewHandle* viewHandle);
-void GraphicsView__FuseControlsIProxyHostget_LocalTransform_fn(GraphicsView* __this, ::g::Uno::Float4x4* __retval);
 void GraphicsView__FuseControlsIProxyHostRemove_fn(GraphicsView* __this, ::g::Fuse::Controls::Native::ViewHandle* viewHandle);
+void GraphicsView__FuseControlsIProxyHostget_WorldTransformInverse_fn(GraphicsView* __this, ::g::Uno::Float4x4* __retval);
 void GraphicsView__FuseElementsITreeRendererBackgroundChanged_fn(GraphicsView* __this, ::g::Fuse::Elements::Element* e, ::g::Fuse::Drawing::Brush* background);
 void GraphicsView__FuseElementsITreeRendererClipToBoundsChanged_fn(GraphicsView* __this, ::g::Fuse::Elements::Element* e, bool* clipToBounds);
 void GraphicsView__FuseElementsITreeRendererHitTestModeChanged_fn(GraphicsView* __this, ::g::Fuse::Elements::Element* e, bool* enabled);

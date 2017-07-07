@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.ButtonBase.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -28,7 +29,7 @@ namespace Controls{
 
 // public partial sealed class BackButton :19
 // {
-::g::Fuse::Controls::Control_type* BackButton_typeof();
+::g::Fuse::Controls::Panel_type* BackButton_typeof();
 void BackButton__ctor_8_fn(BackButton* __this);
 void BackButton__InitializeUX_fn(BackButton* __this);
 void BackButton__New5_fn(BackButton** __retval);

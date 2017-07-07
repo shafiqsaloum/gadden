@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <CoreGraphics/CoreGraphics.h>
@@ -19,7 +19,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// internal sealed extern class Rectangle :1671
+// internal sealed extern class Rectangle :1758
 // {
 static void Rectangle_build(uType* type)
 {
@@ -53,31 +53,31 @@ Rectangle_type* Rectangle_typeof()
     return type;
 }
 
-// public generated Rectangle() :1671
+// public generated Rectangle() :1758
 void Rectangle__ctor_5_fn(Rectangle* __this)
 {
     __this->ctor_5();
 }
 
-// private void AddArcWithCenter(ObjC.Object handle, float centerX, float centerY, float radius, float startAngle, float endAngle) :1754
+// private void AddArcWithCenter(ObjC.Object handle, float centerX, float centerY, float radius, float startAngle, float endAngle) :1841
 void Rectangle__AddArcWithCenter_fn(Rectangle* __this, ::g::ObjC::Object* handle, float* centerX, float* centerY, float* radius, float* startAngle, float* endAngle)
 {
     __this->AddArcWithCenter(handle, *centerX, *centerY, *radius, *startAngle, *endAngle);
 }
 
-// private void AddLineToPoint(ObjC.Object handle, float x, float y) :1747
+// private void AddLineToPoint(ObjC.Object handle, float x, float y) :1834
 void Rectangle__AddLineToPoint_fn(Rectangle* __this, ::g::ObjC::Object* handle, float* x, float* y)
 {
     __this->AddLineToPoint(handle, *x, *y);
 }
 
-// private void ClosePath(ObjC.Object handle) :1733
+// private void ClosePath(ObjC.Object handle) :1820
 void Rectangle__ClosePath_fn(Rectangle* __this, ::g::ObjC::Object* handle)
 {
     __this->ClosePath(handle);
 }
 
-// protected override sealed ObjC.Object CreatePath() :1683
+// protected override sealed ObjC.Object CreatePath() :1770
 void Rectangle__CreatePath_fn(Rectangle* __this, ::g::ObjC::Object** __retval)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.Rectangle", "CreatePath()");
@@ -111,13 +111,13 @@ void Rectangle__CreatePath_fn(Rectangle* __this, ::g::ObjC::Object** __retval)
     return *__retval = path, void();
 }
 
-// private static ObjC.Object CreateUIBezierPath() :1727
+// private static ObjC.Object CreateUIBezierPath() :1814
 void Rectangle__CreateUIBezierPath_fn(::g::ObjC::Object** __retval)
 {
     *__retval = Rectangle::CreateUIBezierPath();
 }
 
-// private void Fuse.Controls.Native.IRectangleView.set_CornerRadius(float4 value) :1676
+// private void Fuse.Controls.Native.IRectangleView.set_CornerRadius(float4 value) :1763
 void Rectangle__FuseControlsNativeIRectangleViewset_CornerRadius_fn(Rectangle* __this, ::g::Uno::Float4* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.Rectangle", "Fuse.Controls.Native.IRectangleView.set_CornerRadius(float4)");
@@ -126,26 +126,26 @@ void Rectangle__FuseControlsNativeIRectangleViewset_CornerRadius_fn(Rectangle* _
     __this->OnShapeChanged();
 }
 
-// private void MoveToPoint(ObjC.Object handle, float x, float y) :1740
+// private void MoveToPoint(ObjC.Object handle, float x, float y) :1827
 void Rectangle__MoveToPoint_fn(Rectangle* __this, ::g::ObjC::Object* handle, float* x, float* y)
 {
     __this->MoveToPoint(handle, *x, *y);
 }
 
-// public generated Rectangle New() :1671
+// public generated Rectangle New() :1758
 void Rectangle__New3_fn(Rectangle** __retval)
 {
     *__retval = Rectangle::New3();
 }
 
-// public generated Rectangle() [instance] :1671
+// public generated Rectangle() [instance] :1758
 void Rectangle::ctor_5()
 {
     _cornerRadius = ::g::Uno::Float4__New1(0.0f);
     ctor_4();
 }
 
-// private void AddArcWithCenter(ObjC.Object handle, float centerX, float centerY, float radius, float startAngle, float endAngle) [instance] :1754
+// private void AddArcWithCenter(ObjC.Object handle, float centerX, float centerY, float radius, float startAngle, float endAngle) [instance] :1841
 void Rectangle::AddArcWithCenter(::g::ObjC::Object* handle, float centerX, float centerY, float radius, float startAngle, float endAngle)
 {
     @autoreleasepool
@@ -160,7 +160,7 @@ void Rectangle::AddArcWithCenter(::g::ObjC::Object* handle, float centerX, float
     
 }
 
-// private void AddLineToPoint(ObjC.Object handle, float x, float y) [instance] :1747
+// private void AddLineToPoint(ObjC.Object handle, float x, float y) [instance] :1834
 void Rectangle::AddLineToPoint(::g::ObjC::Object* handle, float x, float y)
 {
     @autoreleasepool
@@ -175,7 +175,7 @@ void Rectangle::AddLineToPoint(::g::ObjC::Object* handle, float x, float y)
     
 }
 
-// private void ClosePath(ObjC.Object handle) [instance] :1733
+// private void ClosePath(ObjC.Object handle) [instance] :1820
 void Rectangle::ClosePath(::g::ObjC::Object* handle)
 {
     @autoreleasepool
@@ -190,7 +190,7 @@ void Rectangle::ClosePath(::g::ObjC::Object* handle)
     
 }
 
-// private void MoveToPoint(ObjC.Object handle, float x, float y) [instance] :1740
+// private void MoveToPoint(ObjC.Object handle, float x, float y) [instance] :1827
 void Rectangle::MoveToPoint(::g::ObjC::Object* handle, float x, float y)
 {
     @autoreleasepool
@@ -205,7 +205,7 @@ void Rectangle::MoveToPoint(::g::ObjC::Object* handle, float x, float y)
     
 }
 
-// private static ObjC.Object CreateUIBezierPath() [static] :1727
+// private static ObjC.Object CreateUIBezierPath() [static] :1814
 ::g::ObjC::Object* Rectangle::CreateUIBezierPath()
 {
     @autoreleasepool
@@ -219,7 +219,7 @@ void Rectangle::MoveToPoint(::g::ObjC::Object* handle, float x, float y)
     
 }
 
-// public generated Rectangle New() [static] :1671
+// public generated Rectangle New() [static] :1758
 Rectangle* Rectangle::New3()
 {
     Rectangle* obj1 = (Rectangle*)uNew(Rectangle_typeof());

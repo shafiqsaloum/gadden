@@ -9,8 +9,8 @@ namespace Android{
 namespace Controls{
 namespace WebViewUtils{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/0.47.7/android/$.uno
-// ---------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/android/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public static class WebViewForeign :299
 // {

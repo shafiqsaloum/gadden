@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.Controls.Native.-118b98c3.h>
@@ -19,7 +19,7 @@
 #include <Uno.UX.BundleFileSource.h>
 #include <Uno.UX.FileSource.h>
 #include <uObjC.Foreign.h>
-static uString* STRINGS[2];
+static uString* STRINGS[3];
 static uType* TYPES[3];
 
 namespace g{
@@ -39,6 +39,7 @@ static void ImageLoader_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("data/");
     ::STRINGS[1] = uString::Const("/tempImage");
+    ::STRINGS[2] = uString::Const("file://");
     ::TYPES[0] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Fuse::Controls::Native::ImageHandle_typeof(), NULL);
     ::TYPES[1] = ::g::Uno::Threading::Promise_typeof()->MakeType(::g::Fuse::Controls::Native::ImageHandle_typeof(), NULL);
     ::TYPES[2] = ::g::Uno::UX::BundleFileSource_typeof();
@@ -184,7 +185,7 @@ uString* ImageLoader::GetBundleAbsolutePath(uString* bundlePath)
         uArray* data = uPtr(fileSource)->ReadAllBytes();
         uString* path = ::g::Uno::String::op_Addition2(::g::Uno::IO::Directory::GetUserDirectory(1), ::STRINGS[1/*"/tempImage"*/]);
         ::g::Uno::IO::File::WriteAllBytes(path, data);
-        handle = ::g::Fuse::Controls::Native::ImageHandle::New1(fileSource->Name, ImageLoader::LoadUri(path));
+        handle = ::g::Fuse::Controls::Native::ImageHandle::New1(fileSource->Name, ImageLoader::LoadUri(::g::Uno::String::op_Addition2(::STRINGS[2/*"file://"*/], path)));
         ::g::Uno::IO::File::Delete(path);
         ::g::Uno::Collections::Dictionary__Add_fn(uPtr(ImageLoader::_imageHandleCache()), fileSource->Name, handle);
     }

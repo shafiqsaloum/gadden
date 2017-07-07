@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -16,7 +16,7 @@ namespace g{
 namespace Fuse{
 namespace Resources{
 
-// public abstract class ResourceSetter<T> :3598
+// public abstract class ResourceSetter<T> :3660
 // {
 ::g::Fuse::Node_type* ResourceSetter_typeof();
 void ResourceSetter__ctor_3_fn(ResourceSetter* __this);

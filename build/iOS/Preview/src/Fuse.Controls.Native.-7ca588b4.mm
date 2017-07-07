@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <CoreGraphics/CoreGraphics.h>
@@ -28,7 +28,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// internal sealed extern class NativeViewRenderer :1334
+// internal sealed extern class NativeViewRenderer :1324
 // {
 static void NativeViewRenderer_build(uType* type)
 {
@@ -61,31 +61,31 @@ NativeViewRenderer_type* NativeViewRenderer_typeof()
     return type;
 }
 
-// public NativeViewRenderer(ObjC.Object viewHandle) :1341
+// public NativeViewRenderer(ObjC.Object viewHandle) :1331
 void NativeViewRenderer__ctor__fn(NativeViewRenderer* __this, ::g::ObjC::Object* viewHandle)
 {
     __this->ctor_(viewHandle);
 }
 
-// private void DeleteTexture() :1451
+// private void DeleteTexture() :1441
 void NativeViewRenderer__DeleteTexture_fn(NativeViewRenderer* __this)
 {
     __this->DeleteTexture();
 }
 
-// private static void Draw(ObjC.Object viewHandle, int textureName, Uno.IntPtr pixelBufferHandle, int width, int height, float density, bool reuse) :1388
+// private static void Draw(ObjC.Object viewHandle, int textureName, Uno.IntPtr pixelBufferHandle, int width, int height, float density, bool reuse) :1378
 void NativeViewRenderer__Draw_fn(::g::ObjC::Object* viewHandle, int* textureName, void** pixelBufferHandle, int* width, int* height, float* density, bool* reuse)
 {
     NativeViewRenderer::Draw(viewHandle, *textureName, *pixelBufferHandle, *width, *height, *density, *reuse);
 }
 
-// private static void FreePixelBuffer(Uno.IntPtr buffer) :1492
+// private static void FreePixelBuffer(Uno.IntPtr buffer) :1482
 void NativeViewRenderer__FreePixelBuffer_fn(void** buffer)
 {
     NativeViewRenderer::FreePixelBuffer(*buffer);
 }
 
-// private void Fuse.Controls.Native.INativeViewRenderer.Draw(float4x4 localToClipTransform, float2 position, float2 size, float density) :1347
+// private void Fuse.Controls.Native.INativeViewRenderer.Draw(float4x4 localToClipTransform, float2 position, float2 size, float density) :1337
 void NativeViewRenderer__FuseControlsNativeINativeViewRendererDraw_fn(NativeViewRenderer* __this, ::g::Uno::Float4x4* localToClipTransform, ::g::Uno::Float2* position, ::g::Uno::Float2* size, float* density)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.NativeViewRenderer", "Fuse.Controls.Native.INativeViewRenderer.Draw(float4x4,float2,float2,float)");
@@ -117,39 +117,39 @@ void NativeViewRenderer__FuseControlsNativeINativeViewRendererDraw_fn(NativeView
     uPtr(::g::Fuse::Controls::Native::iOS::iOSBlitter::Singleton())->Blit(::g::Uno::Graphics::Texture2D::New2(__this->_textureHandle, realSize, 1, 3), position_, size_, localToClipTransform_);
 }
 
-// private void Fuse.Controls.Native.INativeViewRenderer.Invalidate() :1446
+// private void Fuse.Controls.Native.INativeViewRenderer.Invalidate() :1436
 void NativeViewRenderer__FuseControlsNativeINativeViewRendererInvalidate_fn(NativeViewRenderer* __this)
 {
     __this->_visualValid = false;
 }
 
-// private static Uno.IntPtr MallocPixelBuffer(int size) :1487
+// private static Uno.IntPtr MallocPixelBuffer(int size) :1477
 void NativeViewRenderer__MallocPixelBuffer_fn(int* size, void** __retval)
 {
     *__retval = NativeViewRenderer::MallocPixelBuffer(*size);
 }
 
-// public NativeViewRenderer New(ObjC.Object viewHandle) :1341
+// public NativeViewRenderer New(ObjC.Object viewHandle) :1331
 void NativeViewRenderer__New1_fn(::g::ObjC::Object* viewHandle, NativeViewRenderer** __retval)
 {
     *__retval = NativeViewRenderer::New1(viewHandle);
 }
 
-// private void Uno.IDisposable.Dispose() :1465
+// private void Uno.IDisposable.Dispose() :1455
 void NativeViewRenderer__UnoIDisposableDispose_fn(NativeViewRenderer* __this)
 {
     __this->DeleteTexture();
     __this->_viewHandle = NULL;
 }
 
-// public NativeViewRenderer(ObjC.Object viewHandle) [instance] :1341
+// public NativeViewRenderer(ObjC.Object viewHandle) [instance] :1331
 void NativeViewRenderer::ctor_(::g::ObjC::Object* viewHandle)
 {
     _oldSize = ::g::Uno::Int2__New2(-1, -1);
     _viewHandle = viewHandle;
 }
 
-// private void DeleteTexture() [instance] :1451
+// private void DeleteTexture() [instance] :1441
 void NativeViewRenderer::DeleteTexture()
 {
     if (::g::OpenGL::GLTextureHandle::op_Inequality(_textureHandle, ::g::OpenGL::GLTextureHandle::Zero_))
@@ -165,7 +165,7 @@ void NativeViewRenderer::DeleteTexture()
     }
 }
 
-// private static void Draw(ObjC.Object viewHandle, int textureName, Uno.IntPtr pixelBufferHandle, int width, int height, float density, bool reuse) [static] :1388
+// private static void Draw(ObjC.Object viewHandle, int textureName, Uno.IntPtr pixelBufferHandle, int width, int height, float density, bool reuse) [static] :1378
 void NativeViewRenderer::Draw(::g::ObjC::Object* viewHandle, int textureName, void* pixelBufferHandle, int width, int height, float density, bool reuse)
 {
     @autoreleasepool
@@ -225,19 +225,19 @@ void NativeViewRenderer::Draw(::g::ObjC::Object* viewHandle, int textureName, vo
     
 }
 
-// private static void FreePixelBuffer(Uno.IntPtr buffer) [static] :1492
+// private static void FreePixelBuffer(Uno.IntPtr buffer) [static] :1482
 void NativeViewRenderer::FreePixelBuffer(void* buffer)
 {
     free( buffer );
 }
 
-// private static Uno.IntPtr MallocPixelBuffer(int size) [static] :1487
+// private static Uno.IntPtr MallocPixelBuffer(int size) [static] :1477
 void* NativeViewRenderer::MallocPixelBuffer(int size)
 {
     return malloc( size );
 }
 
-// public NativeViewRenderer New(ObjC.Object viewHandle) [static] :1341
+// public NativeViewRenderer New(ObjC.Object viewHandle) [static] :1331
 NativeViewRenderer* NativeViewRenderer::New1(::g::ObjC::Object* viewHandle)
 {
     NativeViewRenderer* obj1 = (NativeViewRenderer*)uNew(NativeViewRenderer_typeof());

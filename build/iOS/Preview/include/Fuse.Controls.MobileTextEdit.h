@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/textcontrols/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -29,7 +29,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// internal partial sealed class MobileTextEdit :1177
+// internal partial sealed class MobileTextEdit :1184
 // {
 struct MobileTextEdit_type : ::g::Fuse::Controls::TextEdit_type
 {

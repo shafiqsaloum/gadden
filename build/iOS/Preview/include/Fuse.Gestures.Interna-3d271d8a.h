@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -26,6 +26,9 @@ SwipeRegion_type* SwipeRegion_typeof();
 void SwipeRegion__ctor_1_fn(SwipeRegion* __this);
 void SwipeRegion__ActivateStrength_fn(SwipeRegion* __this, ::g::Uno::Float2* diff, float* __retval);
 void SwipeRegion__DoRevertActive_fn(SwipeRegion* __this);
+void SwipeRegion__get_EffectiveLength_fn(SwipeRegion* __this, double* __retval);
+void SwipeRegion__get_GesturePriority_fn(SwipeRegion* __this, int* __retval);
+void SwipeRegion__set_GesturePriority_fn(SwipeRegion* __this, int* value);
 void SwipeRegion__get_InProgress_fn(SwipeRegion* __this, bool* __retval);
 void SwipeRegion__set_InProgress_fn(SwipeRegion* __this, bool* value);
 void SwipeRegion__InteractProgress_fn(SwipeRegion* __this, ::g::Uno::Float2* diff, double* startProgress, bool* __retval);
@@ -38,6 +41,7 @@ void SwipeRegion__get_IsSelectable_fn(SwipeRegion* __this, bool* __retval);
 void SwipeRegion__get_IsStatic_fn(SwipeRegion* __this, bool* __retval);
 void SwipeRegion__New2_fn(SwipeRegion** __retval);
 void SwipeRegion__get_Progress_fn(SwipeRegion* __this, double* __retval);
+void SwipeRegion__ScalarDistance_fn(SwipeRegion* __this, ::g::Uno::Float2* diff, float* __retval);
 void SwipeRegion__ScalarValue_fn(SwipeRegion* __this, ::g::Uno::Float2* x, float* __retval);
 void SwipeRegion__SetActive_fn(SwipeRegion* __this, bool* active);
 void SwipeRegion__SetIsActive_fn(SwipeRegion* __this, bool* value, uObject* origin);
@@ -49,6 +53,7 @@ void SwipeRegion__UnoUXIPropertyListenerOnPropertyChanged_fn(SwipeRegion* __this
 
 struct SwipeRegion : ::g::Uno::UX::PropertyObject
 {
+    int _gesturePriority;
     bool _inProgress;
     bool _isActive;
     static ::g::Uno::UX::Selector _isActiveName_;
@@ -61,7 +66,6 @@ struct SwipeRegion : ::g::Uno::UX::PropertyObject
     ::g::Uno::Float4 AreaVector;
     float AreaVectorDistance;
     bool AutoTrigger;
-    bool Continuous;
     float DeactivationThreshold;
     ::g::Uno::Float2 Direction;
     static ::g::Uno::UX::Selector InProgressName_;
@@ -82,6 +86,9 @@ struct SwipeRegion : ::g::Uno::UX::PropertyObject
     void ctor_1();
     float ActivateStrength(::g::Uno::Float2 diff);
     void DoRevertActive();
+    double EffectiveLength();
+    int GesturePriority();
+    void GesturePriority(int value);
     bool InProgress();
     void InProgress(bool value);
     bool InteractProgress(::g::Uno::Float2 diff, double startProgress);
@@ -93,6 +100,7 @@ struct SwipeRegion : ::g::Uno::UX::PropertyObject
     bool IsSelectable();
     bool IsStatic();
     double Progress();
+    float ScalarDistance(::g::Uno::Float2 diff);
     float ScalarValue(::g::Uno::Float2 x);
     void SetActive(bool active);
     void SetIsActive(bool value, uObject* origin);

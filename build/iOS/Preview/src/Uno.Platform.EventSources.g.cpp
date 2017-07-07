@@ -25,8 +25,8 @@ namespace Uno{
 namespace Platform{
 namespace EventSources{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public static class HardwareKeys :1181
 // {
@@ -150,8 +150,8 @@ void HardwareKeys::remove_KeyUp(uDelegate* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public static class InterAppInvoke :1148
 // {
@@ -266,8 +266,8 @@ void InterAppInvoke::remove_ReceivedURI(uDelegate* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public static class TextSource :1208
 // {

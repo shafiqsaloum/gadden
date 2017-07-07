@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/0.47.7/layouts/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -16,7 +16,7 @@ namespace g{
 namespace Fuse{
 namespace Layouts{
 
-// public abstract class Layout :1915
+// public abstract class Layout :1892
 // {
 struct Layout_type : uType
 {
@@ -38,7 +38,6 @@ void Layout__InvalidateAncestorLayout_fn(::g::Fuse::Visual* child);
 void Layout__InvalidateLayout_fn(Layout* __this);
 void Layout__InvalidateLayout1_fn(::g::Fuse::Visual* elm);
 void Layout__IsMarginBoxDependent_fn(Layout* __this, ::g::Fuse::Visual* child, int* __retval);
-void Layout__get_IsRootingStarted_fn(Layout* __this, bool* __retval);
 void Layout__OnRooted_fn(Layout* __this);
 void Layout__OnUnrooted_fn(Layout* __this);
 void Layout__ResetFillPadding_fn(::g::Fuse::Visual* n);
@@ -65,7 +64,6 @@ struct Layout : ::g::Uno::UX::PropertyObject
     ::g::Uno::Float2 GetContentSize(uObject* elements, ::g::Fuse::LayoutParams lp);
     void InvalidateLayout();
     int IsMarginBoxDependent(::g::Fuse::Visual* child) { int __retval; return (((Layout_type*)__type)->fp_IsMarginBoxDependent)(this, child, &__retval), __retval; }
-    bool IsRootingStarted();
     void OnRooted() { (((Layout_type*)__type)->fp_OnRooted)(this); }
     void OnUnrooted() { (((Layout_type*)__type)->fp_OnUnrooted)(this); }
     void Rooted(::g::Fuse::Controls::LayoutControl* element);

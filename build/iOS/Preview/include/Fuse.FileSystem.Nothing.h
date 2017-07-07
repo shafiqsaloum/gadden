@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace FileSystem{
 
-// internal sealed class Nothing :1318
+// internal sealed class Nothing :1405
 // {
 uType* Nothing_typeof();
 void Nothing__ctor__fn(Nothing* __this);

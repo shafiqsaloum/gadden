@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -22,7 +22,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class NavigatorSwipe :1839
+// public sealed class NavigatorSwipe :1838
 // {
 ::g::Fuse::Node_type* NavigatorSwipe_typeof();
 void NavigatorSwipe__ctor_4_fn(NavigatorSwipe* __this);

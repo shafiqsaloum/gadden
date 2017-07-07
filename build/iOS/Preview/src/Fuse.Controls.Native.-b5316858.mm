@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.Controls.AutoCap-526a856d.h>
@@ -40,7 +40,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// public sealed extern class SingleLineTextEdit :2291
+// public sealed extern class SingleLineTextEdit :2385
 // {
 static void SingleLineTextEdit_build(uType* type)
 {
@@ -110,25 +110,25 @@ SingleLineTextEdit_type* SingleLineTextEdit_typeof()
     return type;
 }
 
-// public SingleLineTextEdit(Fuse.Controls.Native.ITextEditHost textEditHost) :2301
+// public SingleLineTextEdit(Fuse.Controls.Native.ITextEditHost textEditHost) :2395
 void SingleLineTextEdit__ctor_5_fn(SingleLineTextEdit* __this, uObject* textEditHost)
 {
     __this->ctor_5(textEditHost);
 }
 
-// private static ObjC.Object AddOnActionCallback(ObjC.Object handle, Uno.Func<ObjC.Object, bool> callback) :2343
+// private static ObjC.Object AddOnActionCallback(ObjC.Object handle, Uno.Func<ObjC.Object, bool> callback) :2437
 void SingleLineTextEdit__AddOnActionCallback_fn(::g::ObjC::Object* handle, uDelegate* callback, ::g::ObjC::Object** __retval)
 {
     *__retval = SingleLineTextEdit::AddOnActionCallback(handle, callback);
 }
 
-// private static ObjC.Object Create() :2337
+// private static ObjC.Object Create() :2431
 void SingleLineTextEdit__Create_fn(::g::ObjC::Object** __retval)
 {
     *__retval = SingleLineTextEdit::Create();
 }
 
-// public override sealed void Dispose() :2310
+// public override sealed void Dispose() :2404
 void SingleLineTextEdit__Dispose_fn(SingleLineTextEdit* __this)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.SingleLineTextEdit", "Dispose()");
@@ -140,21 +140,21 @@ void SingleLineTextEdit__Dispose_fn(SingleLineTextEdit* __this)
     ::g::Fuse::Controls::Native::ViewHandle__Dispose_fn(__this);
 }
 
-// private void Fuse.Controls.Native.iOS.INativeFocusListener.FocusGained() :2557
+// private void Fuse.Controls.Native.iOS.INativeFocusListener.FocusGained() :2651
 void SingleLineTextEdit__FuseControlsNativeiOSINativeFocusListenerFocusGained_fn(SingleLineTextEdit* __this)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.SingleLineTextEdit", "Fuse.Controls.Native.iOS.INativeFocusListener.FocusGained()");
     ::g::Fuse::Controls::Native::ITextEditHost::OnFocusGained(uInterface(uPtr(__this->_textEditHost), ::TYPES[3/*Fuse.Controls.Native.ITextEditHost*/]));
 }
 
-// private void Fuse.Controls.Native.iOS.INativeFocusListener.FocusLost() :2562
+// private void Fuse.Controls.Native.iOS.INativeFocusListener.FocusLost() :2656
 void SingleLineTextEdit__FuseControlsNativeiOSINativeFocusListenerFocusLost_fn(SingleLineTextEdit* __this)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.SingleLineTextEdit", "Fuse.Controls.Native.iOS.INativeFocusListener.FocusLost()");
     ::g::Fuse::Controls::Native::ITextEditHost::OnFocusLost(uInterface(uPtr(__this->_textEditHost), ::TYPES[3/*Fuse.Controls.Native.ITextEditHost*/]));
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_ActionStyle(Fuse.Controls.TextInputActionStyle value) :2486
+// private void Fuse.Controls.Native.ITextEdit.set_ActionStyle(Fuse.Controls.TextInputActionStyle value) :2580
 void SingleLineTextEdit__FuseControlsNativeITextEditset_ActionStyle_fn(SingleLineTextEdit* __this, int* value)
 {
     int value_ = *value;
@@ -194,7 +194,7 @@ void SingleLineTextEdit__FuseControlsNativeITextEditset_ActionStyle_fn(SingleLin
     }
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_AutoCapitalizationHint(Fuse.Controls.AutoCapitalizationHint value) :2515
+// private void Fuse.Controls.Native.ITextEdit.set_AutoCapitalizationHint(Fuse.Controls.AutoCapitalizationHint value) :2609
 void SingleLineTextEdit__FuseControlsNativeITextEditset_AutoCapitalizationHint_fn(SingleLineTextEdit* __this, int* value)
 {
     int value_ = *value;
@@ -224,7 +224,7 @@ void SingleLineTextEdit__FuseControlsNativeITextEditset_AutoCapitalizationHint_f
     }
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_AutoCorrectHint(Fuse.Controls.AutoCorrectHint value) :2502
+// private void Fuse.Controls.Native.ITextEdit.set_AutoCorrectHint(Fuse.Controls.AutoCorrectHint value) :2596
 void SingleLineTextEdit__FuseControlsNativeITextEditset_AutoCorrectHint_fn(SingleLineTextEdit* __this, int* value)
 {
     int value_ = *value;
@@ -249,28 +249,28 @@ void SingleLineTextEdit__FuseControlsNativeITextEditset_AutoCorrectHint_fn(Singl
     }
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_CaretColor(float4 value) :2468
+// private void Fuse.Controls.Native.ITextEdit.set_CaretColor(float4 value) :2562
 void SingleLineTextEdit__FuseControlsNativeITextEditset_CaretColor_fn(SingleLineTextEdit* __this, ::g::Uno::Float4* value)
 {
     ::g::Uno::Float4 value_ = *value;
     SingleLineTextEdit::SetCaretColor(__this->Handle(), value_.X, value_.Y, value_.Z, value_.W);
 }
 
-// private void Fuse.Controls.Native.ITextEdit.FocusGained() :2547
+// private void Fuse.Controls.Native.ITextEdit.FocusGained() :2641
 void SingleLineTextEdit__FuseControlsNativeITextEditFocusGained_fn(SingleLineTextEdit* __this)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.SingleLineTextEdit", "Fuse.Controls.Native.ITextEdit.FocusGained()");
     ::g::Fuse::Controls::Native::iOS::FocusHelpers::ScheduleBecomeFirstResponder(__this->Handle());
 }
 
-// private void Fuse.Controls.Native.ITextEdit.FocusLost() :2552
+// private void Fuse.Controls.Native.ITextEdit.FocusLost() :2646
 void SingleLineTextEdit__FuseControlsNativeITextEditFocusLost_fn(SingleLineTextEdit* __this)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.SingleLineTextEdit", "Fuse.Controls.Native.ITextEdit.FocusLost()");
     ::g::Fuse::Controls::Native::iOS::FocusHelpers::ScheduleResignFirstResponder(__this->Handle());
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_InputHint(Fuse.Controls.TextInputHint value) :2452
+// private void Fuse.Controls.Native.ITextEdit.set_InputHint(Fuse.Controls.TextInputHint value) :2546
 void SingleLineTextEdit__FuseControlsNativeITextEditset_InputHint_fn(SingleLineTextEdit* __this, int* value)
 {
     int value_ = *value;
@@ -310,24 +310,24 @@ void SingleLineTextEdit__FuseControlsNativeITextEditset_InputHint_fn(SingleLineT
     }
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_IsMultiline(bool value) :2437
+// private void Fuse.Controls.Native.ITextEdit.set_IsMultiline(bool value) :2531
 void SingleLineTextEdit__FuseControlsNativeITextEditset_IsMultiline_fn(SingleLineTextEdit* __this, bool* value)
 {
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_IsPassword(bool value) :2442
+// private void Fuse.Controls.Native.ITextEdit.set_IsPassword(bool value) :2536
 void SingleLineTextEdit__FuseControlsNativeITextEditset_IsPassword_fn(SingleLineTextEdit* __this, bool* value)
 {
     bool value_ = *value;
     SingleLineTextEdit::SetIsPassword(__this->Handle(), value_);
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_IsReadOnly(bool value) :2447
+// private void Fuse.Controls.Native.ITextEdit.set_IsReadOnly(bool value) :2541
 void SingleLineTextEdit__FuseControlsNativeITextEditset_IsReadOnly_fn(SingleLineTextEdit* __this, bool* value)
 {
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_PlaceholderColor(float4 value) :2540
+// private void Fuse.Controls.Native.ITextEdit.set_PlaceholderColor(float4 value) :2634
 void SingleLineTextEdit__FuseControlsNativeITextEditset_PlaceholderColor_fn(SingleLineTextEdit* __this, ::g::Uno::Float4* value)
 {
     ::g::Uno::Float4 value_ = *value;
@@ -335,19 +335,19 @@ void SingleLineTextEdit__FuseControlsNativeITextEditset_PlaceholderColor_fn(Sing
     SingleLineTextEdit::SetPlaceholderText(__this->Handle(), __this->_placeholderText, c.X, c.Y, c.Z, c.W);
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_PlaceholderText(string value) :2530
+// private void Fuse.Controls.Native.ITextEdit.set_PlaceholderText(string value) :2624
 void SingleLineTextEdit__FuseControlsNativeITextEditset_PlaceholderText_fn(SingleLineTextEdit* __this, uString* value)
 {
     ::g::Uno::Float4 c = __this->_placeholderColor;
     SingleLineTextEdit::SetPlaceholderText(__this->Handle(), __this->_placeholderText = value, c.X, c.Y, c.Z, c.W);
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_SelectionColor(float4 value) :2481
+// private void Fuse.Controls.Native.ITextEdit.set_SelectionColor(float4 value) :2575
 void SingleLineTextEdit__FuseControlsNativeITextEditset_SelectionColor_fn(SingleLineTextEdit* __this, ::g::Uno::Float4* value)
 {
 }
 
-// private void Fuse.Controls.Native.ITextView.set_Font(Fuse.Font value) :2399
+// private void Fuse.Controls.Native.ITextView.set_Font(Fuse.Font value) :2493
 void SingleLineTextEdit__FuseControlsNativeITextViewset_Font_fn(SingleLineTextEdit* __this, ::g::Fuse::Font* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.SingleLineTextEdit", "Fuse.Controls.Native.ITextView.set_Font(Fuse.Font)");
@@ -360,7 +360,7 @@ void SingleLineTextEdit__FuseControlsNativeITextViewset_Font_fn(SingleLineTextEd
     }
 }
 
-// private void Fuse.Controls.Native.ITextView.set_FontSize(float value) :2384
+// private void Fuse.Controls.Native.ITextView.set_FontSize(float value) :2478
 void SingleLineTextEdit__FuseControlsNativeITextViewset_FontSize_fn(SingleLineTextEdit* __this, float* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.SingleLineTextEdit", "Fuse.Controls.Native.ITextView.set_FontSize(float)");
@@ -375,19 +375,19 @@ void SingleLineTextEdit__FuseControlsNativeITextViewset_FontSize_fn(SingleLineTe
     }
 }
 
-// private void Fuse.Controls.Native.ITextView.set_LineSpacing(float value) :2378
+// private void Fuse.Controls.Native.ITextView.set_LineSpacing(float value) :2472
 void SingleLineTextEdit__FuseControlsNativeITextViewset_LineSpacing_fn(SingleLineTextEdit* __this, float* value)
 {
 }
 
-// private void Fuse.Controls.Native.ITextView.set_MaxLength(int value) :2361
+// private void Fuse.Controls.Native.ITextView.set_MaxLength(int value) :2455
 void SingleLineTextEdit__FuseControlsNativeITextViewset_MaxLength_fn(SingleLineTextEdit* __this, int* value)
 {
     int value_ = *value;
     SingleLineTextEdit::SetMaxLength(__this->_delegate, (value_ == 0) ? 2147483647 : value_);
 }
 
-// private void Fuse.Controls.Native.ITextView.set_TextAlignment(Fuse.Controls.TextAlignment value) :2414
+// private void Fuse.Controls.Native.ITextView.set_TextAlignment(Fuse.Controls.TextAlignment value) :2508
 void SingleLineTextEdit__FuseControlsNativeITextViewset_TextAlignment_fn(SingleLineTextEdit* __this, int* value)
 {
     int value_ = *value;
@@ -412,132 +412,132 @@ void SingleLineTextEdit__FuseControlsNativeITextViewset_TextAlignment_fn(SingleL
     }
 }
 
-// private void Fuse.Controls.Native.ITextView.set_TextColor(float4 value) :2427
+// private void Fuse.Controls.Native.ITextView.set_TextColor(float4 value) :2521
 void SingleLineTextEdit__FuseControlsNativeITextViewset_TextColor_fn(SingleLineTextEdit* __this, ::g::Uno::Float4* value)
 {
     ::g::Uno::Float4 value_ = *value;
     SingleLineTextEdit::SetTextColor(__this->Handle(), value_.X, value_.Y, value_.Z, value_.W);
 }
 
-// private void Fuse.Controls.Native.ITextView.set_TextTruncation(Fuse.Controls.TextTruncation value) :2432
+// private void Fuse.Controls.Native.ITextView.set_TextTruncation(Fuse.Controls.TextTruncation value) :2526
 void SingleLineTextEdit__FuseControlsNativeITextViewset_TextTruncation_fn(SingleLineTextEdit* __this, int* value)
 {
 }
 
-// private void Fuse.Controls.Native.ITextView.set_TextWrapping(Fuse.Controls.TextWrapping value) :2373
+// private void Fuse.Controls.Native.ITextView.set_TextWrapping(Fuse.Controls.TextWrapping value) :2467
 void SingleLineTextEdit__FuseControlsNativeITextViewset_TextWrapping_fn(SingleLineTextEdit* __this, int* value)
 {
 }
 
-// private void Fuse.Controls.Native.ITextView.set_Value(string value) :2355
+// private void Fuse.Controls.Native.ITextView.set_Value(string value) :2449
 void SingleLineTextEdit__FuseControlsNativeITextViewset_Value_fn(SingleLineTextEdit* __this, uString* value)
 {
     SingleLineTextEdit::SetValue(__this->Handle(), value);
 }
 
-// private static string GetValue(ObjC.Object handle) :2590
+// private static string GetValue(ObjC.Object handle) :2684
 void SingleLineTextEdit__GetValue_fn(::g::ObjC::Object* handle, uString** __retval)
 {
     *__retval = SingleLineTextEdit::GetValue(handle);
 }
 
-// public SingleLineTextEdit New(Fuse.Controls.Native.ITextEditHost textEditHost) :2301
+// public SingleLineTextEdit New(Fuse.Controls.Native.ITextEditHost textEditHost) :2395
 void SingleLineTextEdit__New3_fn(uObject* textEditHost, SingleLineTextEdit** __retval)
 {
     *__retval = SingleLineTextEdit::New3(textEditHost);
 }
 
-// private bool OnAction(ObjC.Object sender) :2320
+// private bool OnAction(ObjC.Object sender) :2414
 void SingleLineTextEdit__OnAction_fn(SingleLineTextEdit* __this, ::g::ObjC::Object* sender, bool* __retval)
 {
     *__retval = __this->OnAction(sender);
 }
 
-// private void OnTextEdit(ObjC.Object sender, ObjC.Object args) :2326
+// private void OnTextEdit(ObjC.Object sender, ObjC.Object args) :2420
 void SingleLineTextEdit__OnTextEdit_fn(SingleLineTextEdit* __this, ::g::ObjC::Object* sender, ::g::ObjC::Object* args)
 {
     __this->OnTextEdit(sender, args);
 }
 
-// private void OnValueChanged() :2331
+// private void OnValueChanged() :2425
 void SingleLineTextEdit__OnValueChanged_fn(SingleLineTextEdit* __this)
 {
     __this->OnValueChanged();
 }
 
-// private static void SetActionStyle(ObjC.Object handle, int style) :2641
+// private static void SetActionStyle(ObjC.Object handle, int style) :2735
 void SingleLineTextEdit__SetActionStyle_fn(::g::ObjC::Object* handle, int* style)
 {
     SingleLineTextEdit::SetActionStyle(handle, *style);
 }
 
-// private static void SetAutoCapitalizationHint(ObjC.Object handle, int hint) :2655
+// private static void SetAutoCapitalizationHint(ObjC.Object handle, int hint) :2749
 void SingleLineTextEdit__SetAutoCapitalizationHint_fn(::g::ObjC::Object* handle, int* hint)
 {
     SingleLineTextEdit::SetAutoCapitalizationHint(handle, *hint);
 }
 
-// private static void SetAutoCorrectHint(ObjC.Object handle, int hint) :2648
+// private static void SetAutoCorrectHint(ObjC.Object handle, int hint) :2742
 void SingleLineTextEdit__SetAutoCorrectHint_fn(::g::ObjC::Object* handle, int* hint)
 {
     SingleLineTextEdit::SetAutoCorrectHint(handle, *hint);
 }
 
-// private static void SetCaretColor(ObjC.Object handle, float r, float g, float b, float a) :2472
+// private static void SetCaretColor(ObjC.Object handle, float r, float g, float b, float a) :2566
 void SingleLineTextEdit__SetCaretColor_fn(::g::ObjC::Object* handle, float* r, float* g, float* b, float* a)
 {
     SingleLineTextEdit::SetCaretColor(handle, *r, *g, *b, *a);
 }
 
-// private static void SetFont(ObjC.Object handle, ObjC.Object fontHandle) :2626
+// private static void SetFont(ObjC.Object handle, ObjC.Object fontHandle) :2720
 void SingleLineTextEdit__SetFont_fn(::g::ObjC::Object* handle, ::g::ObjC::Object* fontHandle)
 {
     SingleLineTextEdit::SetFont(handle, fontHandle);
 }
 
-// private static void SetInputHint(ObjC.Object handle, int hint) :2634
+// private static void SetInputHint(ObjC.Object handle, int hint) :2728
 void SingleLineTextEdit__SetInputHint_fn(::g::ObjC::Object* handle, int* hint)
 {
     SingleLineTextEdit::SetInputHint(handle, *hint);
 }
 
-// private static void SetIsPassword(ObjC.Object handle, bool isPassword) :2611
+// private static void SetIsPassword(ObjC.Object handle, bool isPassword) :2705
 void SingleLineTextEdit__SetIsPassword_fn(::g::ObjC::Object* handle, bool* isPassword)
 {
     SingleLineTextEdit::SetIsPassword(handle, *isPassword);
 }
 
-// private static void SetMaxLength(ObjC.Object delegateHandle, int maxLength) :2365
+// private static void SetMaxLength(ObjC.Object delegateHandle, int maxLength) :2459
 void SingleLineTextEdit__SetMaxLength_fn(::g::ObjC::Object* delegateHandle, int* maxLength)
 {
     SingleLineTextEdit::SetMaxLength(delegateHandle, *maxLength);
 }
 
-// private static void SetPlaceholderText(ObjC.Object handle, string text, float r, float g, float b, float a) :2575
+// private static void SetPlaceholderText(ObjC.Object handle, string text, float r, float g, float b, float a) :2669
 void SingleLineTextEdit__SetPlaceholderText_fn(::g::ObjC::Object* handle, uString* text, float* r, float* g, float* b, float* a)
 {
     SingleLineTextEdit::SetPlaceholderText(handle, text, *r, *g, *b, *a);
 }
 
-// private static void SetTextAlignment(ObjC.Object handle, int alignmnet) :2604
+// private static void SetTextAlignment(ObjC.Object handle, int alignmnet) :2698
 void SingleLineTextEdit__SetTextAlignment_fn(::g::ObjC::Object* handle, int* alignmnet)
 {
     SingleLineTextEdit::SetTextAlignment(handle, *alignmnet);
 }
 
-// private static void SetTextColor(ObjC.Object handle, float r, float g, float b, float a) :2597
+// private static void SetTextColor(ObjC.Object handle, float r, float g, float b, float a) :2691
 void SingleLineTextEdit__SetTextColor_fn(::g::ObjC::Object* handle, float* r, float* g, float* b, float* a)
 {
     SingleLineTextEdit::SetTextColor(handle, *r, *g, *b, *a);
 }
 
-// private static void SetValue(ObjC.Object handle, string value) :2583
+// private static void SetValue(ObjC.Object handle, string value) :2677
 void SingleLineTextEdit__SetValue_fn(::g::ObjC::Object* handle, uString* value)
 {
     SingleLineTextEdit::SetValue(handle, value);
 }
 
-// public SingleLineTextEdit(Fuse.Controls.Native.ITextEditHost textEditHost) [instance] :2301
+// public SingleLineTextEdit(Fuse.Controls.Native.ITextEditHost textEditHost) [instance] :2395
 void SingleLineTextEdit::ctor_5(uObject* textEditHost)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.SingleLineTextEdit", ".ctor(Fuse.Controls.Native.ITextEditHost)");
@@ -552,7 +552,7 @@ void SingleLineTextEdit::ctor_5(uObject* textEditHost)
     ::g::Fuse::Controls::Native::iOS::NativeFocus::AddListener(Handle(), (uObject*)this);
 }
 
-// private bool OnAction(ObjC.Object sender) [instance] :2320
+// private bool OnAction(ObjC.Object sender) [instance] :2414
 bool SingleLineTextEdit::OnAction(::g::ObjC::Object* sender)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.SingleLineTextEdit", "OnAction(ObjC.Object)");
@@ -560,21 +560,21 @@ bool SingleLineTextEdit::OnAction(::g::ObjC::Object* sender)
     return ::g::Fuse::Controls::Native::ITextEditHost::OnInputAction(uInterface(uPtr(_textEditHost), ::TYPES[3/*Fuse.Controls.Native.ITextEditHost*/]), 0);
 }
 
-// private void OnTextEdit(ObjC.Object sender, ObjC.Object args) [instance] :2326
+// private void OnTextEdit(ObjC.Object sender, ObjC.Object args) [instance] :2420
 void SingleLineTextEdit::OnTextEdit(::g::ObjC::Object* sender, ::g::ObjC::Object* args)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.SingleLineTextEdit", "OnTextEdit(ObjC.Object,ObjC.Object)");
     OnValueChanged();
 }
 
-// private void OnValueChanged() [instance] :2331
+// private void OnValueChanged() [instance] :2425
 void SingleLineTextEdit::OnValueChanged()
 {
     uStackFrame __("Fuse.Controls.Native.iOS.SingleLineTextEdit", "OnValueChanged()");
     ::g::Fuse::Controls::Native::ITextEditHost::OnValueChanged(uInterface(uPtr(_textEditHost), ::TYPES[3/*Fuse.Controls.Native.ITextEditHost*/]), SingleLineTextEdit::GetValue(Handle()));
 }
 
-// private static ObjC.Object AddOnActionCallback(ObjC.Object handle, Uno.Func<ObjC.Object, bool> callback) [static] :2343
+// private static ObjC.Object AddOnActionCallback(ObjC.Object handle, Uno.Func<ObjC.Object, bool> callback) [static] :2437
 ::g::ObjC::Object* SingleLineTextEdit::AddOnActionCallback(::g::ObjC::Object* handle, uDelegate* callback)
 {
     @autoreleasepool
@@ -602,7 +602,7 @@ void SingleLineTextEdit::OnValueChanged()
     
 }
 
-// private static ObjC.Object Create() [static] :2337
+// private static ObjC.Object Create() [static] :2431
 ::g::ObjC::Object* SingleLineTextEdit::Create()
 {
     @autoreleasepool
@@ -616,7 +616,7 @@ void SingleLineTextEdit::OnValueChanged()
     
 }
 
-// private static string GetValue(ObjC.Object handle) [static] :2590
+// private static string GetValue(ObjC.Object handle) [static] :2684
 uString* SingleLineTextEdit::GetValue(::g::ObjC::Object* handle)
 {
     @autoreleasepool
@@ -631,7 +631,7 @@ uString* SingleLineTextEdit::GetValue(::g::ObjC::Object* handle)
     
 }
 
-// public SingleLineTextEdit New(Fuse.Controls.Native.ITextEditHost textEditHost) [static] :2301
+// public SingleLineTextEdit New(Fuse.Controls.Native.ITextEditHost textEditHost) [static] :2395
 SingleLineTextEdit* SingleLineTextEdit::New3(uObject* textEditHost)
 {
     SingleLineTextEdit* obj1 = (SingleLineTextEdit*)uNew(SingleLineTextEdit_typeof());
@@ -639,7 +639,7 @@ SingleLineTextEdit* SingleLineTextEdit::New3(uObject* textEditHost)
     return obj1;
 }
 
-// private static void SetActionStyle(ObjC.Object handle, int style) [static] :2641
+// private static void SetActionStyle(ObjC.Object handle, int style) [static] :2735
 void SingleLineTextEdit::SetActionStyle(::g::ObjC::Object* handle, int style)
 {
     @autoreleasepool
@@ -654,7 +654,7 @@ void SingleLineTextEdit::SetActionStyle(::g::ObjC::Object* handle, int style)
     
 }
 
-// private static void SetAutoCapitalizationHint(ObjC.Object handle, int hint) [static] :2655
+// private static void SetAutoCapitalizationHint(ObjC.Object handle, int hint) [static] :2749
 void SingleLineTextEdit::SetAutoCapitalizationHint(::g::ObjC::Object* handle, int hint)
 {
     @autoreleasepool
@@ -669,7 +669,7 @@ void SingleLineTextEdit::SetAutoCapitalizationHint(::g::ObjC::Object* handle, in
     
 }
 
-// private static void SetAutoCorrectHint(ObjC.Object handle, int hint) [static] :2648
+// private static void SetAutoCorrectHint(ObjC.Object handle, int hint) [static] :2742
 void SingleLineTextEdit::SetAutoCorrectHint(::g::ObjC::Object* handle, int hint)
 {
     @autoreleasepool
@@ -684,7 +684,7 @@ void SingleLineTextEdit::SetAutoCorrectHint(::g::ObjC::Object* handle, int hint)
     
 }
 
-// private static void SetCaretColor(ObjC.Object handle, float r, float g, float b, float a) [static] :2472
+// private static void SetCaretColor(ObjC.Object handle, float r, float g, float b, float a) [static] :2566
 void SingleLineTextEdit::SetCaretColor(::g::ObjC::Object* handle, float r, float g, float b, float a)
 {
     @autoreleasepool
@@ -700,7 +700,7 @@ void SingleLineTextEdit::SetCaretColor(::g::ObjC::Object* handle, float r, float
     
 }
 
-// private static void SetFont(ObjC.Object handle, ObjC.Object fontHandle) [static] :2626
+// private static void SetFont(ObjC.Object handle, ObjC.Object fontHandle) [static] :2720
 void SingleLineTextEdit::SetFont(::g::ObjC::Object* handle, ::g::ObjC::Object* fontHandle)
 {
     @autoreleasepool
@@ -716,7 +716,7 @@ void SingleLineTextEdit::SetFont(::g::ObjC::Object* handle, ::g::ObjC::Object* f
     
 }
 
-// private static void SetInputHint(ObjC.Object handle, int hint) [static] :2634
+// private static void SetInputHint(ObjC.Object handle, int hint) [static] :2728
 void SingleLineTextEdit::SetInputHint(::g::ObjC::Object* handle, int hint)
 {
     @autoreleasepool
@@ -731,7 +731,7 @@ void SingleLineTextEdit::SetInputHint(::g::ObjC::Object* handle, int hint)
     
 }
 
-// private static void SetIsPassword(ObjC.Object handle, bool isPassword) [static] :2611
+// private static void SetIsPassword(ObjC.Object handle, bool isPassword) [static] :2705
 void SingleLineTextEdit::SetIsPassword(::g::ObjC::Object* handle, bool isPassword)
 {
     @autoreleasepool
@@ -754,7 +754,7 @@ void SingleLineTextEdit::SetIsPassword(::g::ObjC::Object* handle, bool isPasswor
     
 }
 
-// private static void SetMaxLength(ObjC.Object delegateHandle, int maxLength) [static] :2365
+// private static void SetMaxLength(ObjC.Object delegateHandle, int maxLength) [static] :2459
 void SingleLineTextEdit::SetMaxLength(::g::ObjC::Object* delegateHandle, int maxLength)
 {
     @autoreleasepool
@@ -769,7 +769,7 @@ void SingleLineTextEdit::SetMaxLength(::g::ObjC::Object* delegateHandle, int max
     
 }
 
-// private static void SetPlaceholderText(ObjC.Object handle, string text, float r, float g, float b, float a) [static] :2575
+// private static void SetPlaceholderText(ObjC.Object handle, string text, float r, float g, float b, float a) [static] :2669
 void SingleLineTextEdit::SetPlaceholderText(::g::ObjC::Object* handle, uString* text, float r, float g, float b, float a)
 {
     @autoreleasepool
@@ -785,7 +785,7 @@ void SingleLineTextEdit::SetPlaceholderText(::g::ObjC::Object* handle, uString* 
     
 }
 
-// private static void SetTextAlignment(ObjC.Object handle, int alignmnet) [static] :2604
+// private static void SetTextAlignment(ObjC.Object handle, int alignmnet) [static] :2698
 void SingleLineTextEdit::SetTextAlignment(::g::ObjC::Object* handle, int alignmnet)
 {
     @autoreleasepool
@@ -800,7 +800,7 @@ void SingleLineTextEdit::SetTextAlignment(::g::ObjC::Object* handle, int alignmn
     
 }
 
-// private static void SetTextColor(ObjC.Object handle, float r, float g, float b, float a) [static] :2597
+// private static void SetTextColor(ObjC.Object handle, float r, float g, float b, float a) [static] :2691
 void SingleLineTextEdit::SetTextColor(::g::ObjC::Object* handle, float r, float g, float b, float a)
 {
     @autoreleasepool
@@ -815,7 +815,7 @@ void SingleLineTextEdit::SetTextColor(::g::ObjC::Object* handle, float r, float 
     
 }
 
-// private static void SetValue(ObjC.Object handle, string value) [static] :2583
+// private static void SetValue(ObjC.Object handle, string value) [static] :2677
 void SingleLineTextEdit::SetValue(::g::ObjC::Object* handle, uString* value)
 {
     @autoreleasepool

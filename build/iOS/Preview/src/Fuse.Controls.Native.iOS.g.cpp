@@ -2,20 +2,32 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.FuseControlsNat-fa0facbc.h>
+#include <Fuse.Controls.Native.-3d955b51.h>
+#include <Fuse.Controls.Native.-4016d338.h>
 #include <Fuse.Controls.Native.-4c195cb7.h>
+#include <Fuse.Controls.Native.-5139440e.h>
+#include <Fuse.Controls.Native.-750690c0.h>
 #include <Fuse.Controls.Native.-87450d8.h>
 #include <Fuse.Controls.Native.-8c20fe6.h>
 #include <Fuse.Controls.Native.-98c3244c.h>
 #include <Fuse.Controls.Native.-9b8fa15e.h>
 #include <Fuse.Controls.Native.-a3bae2d8.h>
 #include <Fuse.Controls.Native.-a609c410.h>
+#include <Fuse.Controls.Native.-b38d34c1.h>
 #include <Fuse.Controls.Native.-e7f294af.h>
 #include <Fuse.Controls.Native.-f73efeee.h>
 #include <Fuse.Controls.Native.iOS.View.h>
+#include <Fuse.Input.CaptureType.h>
+#include <Fuse.Input.Pointer.h>
+#include <Fuse.Visual.h>
 #include <ObjC.Object.h>
+#include <Uno.Action.h>
+#include <Uno.Action-2.h>
+#include <Uno.ArgumentException.h>
 #include <Uno.Bool.h>
 #include <Uno.Buffer.h>
 #include <Uno.Collections.Dictionary-2.h>
+#include <Uno.Collections.List-1.h>
 #include <Uno.Float.h>
 #include <Uno.Float4x4.h>
 #include <Uno.Graphics.BlendOperand.h>
@@ -29,8 +41,8 @@
 #include <Uno.Runtime.Implement-6e9df330.h>
 #include <Uno.Runtime.Implement-81e7ab4c.h>
 #include <Uno.String.h>
-static uString* STRINGS[1];
-static uType* TYPES[3];
+static uString* STRINGS[5];
+static uType* TYPES[7];
 
 namespace g{
 namespace Fuse{
@@ -38,8 +50,8 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // internal abstract extern interface INativeFocusListener :147
 // {
@@ -53,12 +65,12 @@ uInterfaceType* INativeFocusListener_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
-// internal sealed extern class iOSBlitter :1499
+// internal sealed extern class iOSBlitter :1489
 // {
-// static iOSBlitter() :1499
+// static iOSBlitter() :1489
 static void iOSBlitter__cctor__fn(uType* __type)
 {
     iOSBlitter::Singleton_ = iOSBlitter::New1();
@@ -90,25 +102,25 @@ uType* iOSBlitter_typeof()
     return type;
 }
 
-// public generated iOSBlitter() :1499
+// public generated iOSBlitter() :1489
 void iOSBlitter__ctor__fn(iOSBlitter* __this)
 {
     __this->ctor_();
 }
 
-// public void Blit(texture2D vt, float2 pos, float2 size, float4x4 localToClipTransform) :1503
+// public void Blit(texture2D vt, float2 pos, float2 size, float4x4 localToClipTransform) :1493
 void iOSBlitter__Blit_fn(iOSBlitter* __this, ::g::Uno::Graphics::Texture2D* vt, ::g::Uno::Float2* pos, ::g::Uno::Float2* size, ::g::Uno::Float4x4* localToClipTransform)
 {
     __this->Blit(vt, *pos, *size, *localToClipTransform);
 }
 
-// private generated void init_DrawCalls() :1499
+// private generated void init_DrawCalls() :1489
 void iOSBlitter__init_DrawCalls_fn(iOSBlitter* __this)
 {
     __this->init_DrawCalls();
 }
 
-// public generated iOSBlitter New() :1499
+// public generated iOSBlitter New() :1489
 void iOSBlitter__New1_fn(iOSBlitter** __retval)
 {
     *__retval = iOSBlitter::New1();
@@ -116,13 +128,13 @@ void iOSBlitter__New1_fn(iOSBlitter** __retval)
 
 uSStrong<iOSBlitter*> iOSBlitter::Singleton_;
 
-// public generated iOSBlitter() [instance] :1499
+// public generated iOSBlitter() [instance] :1489
 void iOSBlitter::ctor_()
 {
     init_DrawCalls();
 }
 
-// public void Blit(texture2D vt, float2 pos, float2 size, float4x4 localToClipTransform) [instance] :1503
+// public void Blit(texture2D vt, float2 pos, float2 size, float4x4 localToClipTransform) [instance] :1493
 void iOSBlitter::Blit(::g::Uno::Graphics::Texture2D* vt, ::g::Uno::Float2 pos, ::g::Uno::Float2 size, ::g::Uno::Float4x4 localToClipTransform)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.iOSBlitter", "Blit(texture2D,float2,float2,float4x4)");
@@ -140,7 +152,7 @@ void iOSBlitter::Blit(::g::Uno::Graphics::Texture2D* vt, ::g::Uno::Float2 pos, :
     _draw_fbdb836b.DrawArrays(uPtr(Blit_verts_fbdb836b_3_3_5)->Length());
 }
 
-// private generated void init_DrawCalls() [instance] :1499
+// private generated void init_DrawCalls() [instance] :1489
 void iOSBlitter::init_DrawCalls()
 {
     uStackFrame __("Fuse.Controls.Native.iOS.iOSBlitter", "init_DrawCalls()");
@@ -150,7 +162,7 @@ void iOSBlitter::init_DrawCalls()
     _draw_fbdb836b = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseControlsNative_bundle::iOSBlitter0a63f4bb());
 }
 
-// public generated iOSBlitter New() [static] :1499
+// public generated iOSBlitter New() [static] :1489
 iOSBlitter* iOSBlitter::New1()
 {
     iOSBlitter* obj1 = (iOSBlitter*)uNew(iOSBlitter_typeof());
@@ -159,10 +171,10 @@ iOSBlitter* iOSBlitter::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
-// public abstract extern class LeafView :1319
+// public abstract extern class LeafView :1309
 // {
 static void LeafView_build(uType* type)
 {
@@ -190,21 +202,21 @@ LeafView_type* LeafView_typeof()
     return type;
 }
 
-// protected LeafView(ObjC.Object handle) :1321
+// protected LeafView(ObjC.Object handle) :1311
 void LeafView__ctor_4_fn(LeafView* __this, ::g::ObjC::Object* handle)
 {
     __this->ctor_4(handle);
 }
 
-// protected LeafView(ObjC.Object handle) [instance] :1321
+// protected LeafView(ObjC.Object handle) [instance] :1311
 void LeafView::ctor_4(::g::ObjC::Object* handle)
 {
     ctor_3(handle, true);
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // internal static extern class NativeFocus :153
 // {
@@ -304,10 +316,10 @@ void NativeFocus::RemoveListener(::g::ObjC::Object* handle)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
-// public sealed extern class OSVersion :1157
+// public sealed extern class OSVersion :1147
 // {
 static void OSVersion_build(uType* type)
 {
@@ -339,26 +351,26 @@ uType* OSVersion_typeof()
     return type;
 }
 
-// public OSVersion(int major, int minor, int patch) :1162
+// public OSVersion(int major, int minor, int patch) :1152
 void OSVersion__ctor__fn(OSVersion* __this, int* major, int* minor, int* patch)
 {
     __this->ctor_(*major, *minor, *patch);
 }
 
-// public OSVersion New(int major, int minor, int patch) :1162
+// public OSVersion New(int major, int minor, int patch) :1152
 void OSVersion__New1_fn(int* major, int* minor, int* patch, OSVersion** __retval)
 {
     *__retval = OSVersion::New1(*major, *minor, *patch);
 }
 
-// public override sealed string ToString() :1168
+// public override sealed string ToString() :1158
 void OSVersion__ToString_fn(OSVersion* __this, uString** __retval)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.OSVersion", "ToString()");
     return *__retval = ::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition(uBox<int>(::g::Uno::Int_typeof(), __this->Major), ::STRINGS[0/*"."*/]), uBox<int>(::g::Uno::Int_typeof(), __this->Minor)), ::STRINGS[0/*"."*/]), uBox<int>(::g::Uno::Int_typeof(), __this->Patch)), void();
 }
 
-// public OSVersion(int major, int minor, int patch) [instance] :1162
+// public OSVersion(int major, int minor, int patch) [instance] :1152
 void OSVersion::ctor_(int major, int minor, int patch)
 {
     Major = major;
@@ -366,7 +378,7 @@ void OSVersion::ctor_(int major, int minor, int patch)
     Patch = patch;
 }
 
-// public OSVersion New(int major, int minor, int patch) [static] :1162
+// public OSVersion New(int major, int minor, int patch) [static] :1152
 OSVersion* OSVersion::New1(int major, int minor, int patch)
 {
     OSVersion* obj1 = (OSVersion*)uNew(OSVersion_typeof());
@@ -375,8 +387,8 @@ OSVersion* OSVersion::New1(int major, int minor, int patch)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // private sealed class FocusHelpers.PerformBecomeFirstResponder :264
 // {
@@ -439,10 +451,160 @@ FocusHelpers__PerformBecomeFirstResponder* FocusHelpers__PerformBecomeFirstRespo
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
-// public enum iOSDevice.ScreenOrientation :1177
+// internal sealed extern class PointerCaptureAdapter :1684
+// {
+static void PointerCaptureAdapter_build(uType* type)
+{
+    ::STRINGS[1] = uString::Const("PointerCaptureAdapter requires Visual");
+    ::STRINGS[2] = uString::Const("visual");
+    ::STRINGS[3] = uString::Const("PointerCaptureAdapter requires UIControl");
+    ::STRINGS[4] = uString::Const("control");
+    ::TYPES[3] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Controls::Native::iOS::UITouch_typeof(), NULL);
+    ::TYPES[4] = ::g::Uno::Action2_typeof()->MakeType(::g::ObjC::Object_typeof(), ::g::ObjC::Object_typeof(), NULL);
+    ::TYPES[5] = ::g::Uno::IDisposable_typeof();
+    ::TYPES[6] = ::g::Uno::Action_typeof();
+    type->SetInterfaces(
+        ::TYPES[5/*Uno.IDisposable*/], offsetof(PointerCaptureAdapter_type, interface0));
+    type->SetFields(0,
+        ::TYPES[3/*Uno.Collections.List<Fuse.Controls.Native.iOS.UITouch>*/], offsetof(::g::Fuse::Controls::Native::iOS::PointerCaptureAdapter, _activeTouches), 0,
+        ::g::ObjC::Object_typeof(), offsetof(::g::Fuse::Controls::Native::iOS::PointerCaptureAdapter, _control), 0,
+        ::TYPES[5/*Uno.IDisposable*/], offsetof(::g::Fuse::Controls::Native::iOS::PointerCaptureAdapter, _touchEvents), 0,
+        ::g::Fuse::Visual_typeof(), offsetof(::g::Fuse::Controls::Native::iOS::PointerCaptureAdapter, _visual), 0);
+}
+
+PointerCaptureAdapter_type* PointerCaptureAdapter_typeof()
+{
+    static uSStrong<PointerCaptureAdapter_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.FieldCount = 4;
+    options.InterfaceCount = 1;
+    options.ObjectSize = sizeof(PointerCaptureAdapter);
+    options.TypeSize = sizeof(PointerCaptureAdapter_type);
+    type = (PointerCaptureAdapter_type*)uClassType::New("Fuse.Controls.Native.iOS.PointerCaptureAdapter", options);
+    type->fp_build_ = PointerCaptureAdapter_build;
+    type->interface0.fp_Dispose = (void(*)(uObject*))PointerCaptureAdapter__Dispose_fn;
+    return type;
+}
+
+// public PointerCaptureAdapter(Fuse.Visual visual, ObjC.Object control) :1691
+void PointerCaptureAdapter__ctor__fn(PointerCaptureAdapter* __this, ::g::Fuse::Visual* visual, ::g::ObjC::Object* control)
+{
+    __this->ctor_(visual, control);
+}
+
+// public void Dispose() :1735
+void PointerCaptureAdapter__Dispose_fn(PointerCaptureAdapter* __this)
+{
+    __this->Dispose();
+}
+
+// private void LostCallback() :1733
+void PointerCaptureAdapter__LostCallback_fn(PointerCaptureAdapter* __this)
+{
+    __this->LostCallback();
+}
+
+// public PointerCaptureAdapter New(Fuse.Visual visual, ObjC.Object control) :1691
+void PointerCaptureAdapter__New1_fn(::g::Fuse::Visual* visual, ::g::ObjC::Object* control, PointerCaptureAdapter** __retval)
+{
+    *__retval = PointerCaptureAdapter::New1(visual, control);
+}
+
+// private void OnTouchEvent(ObjC.Object sender, ObjC.Object uiEvent) :1704
+void PointerCaptureAdapter__OnTouchEvent_fn(PointerCaptureAdapter* __this, ::g::ObjC::Object* sender, ::g::ObjC::Object* uiEvent)
+{
+    __this->OnTouchEvent(sender, uiEvent);
+}
+
+// public PointerCaptureAdapter(Fuse.Visual visual, ObjC.Object control) [instance] :1691
+void PointerCaptureAdapter::ctor_(::g::Fuse::Visual* visual, ::g::ObjC::Object* control)
+{
+    uStackFrame __("Fuse.Controls.Native.iOS.PointerCaptureAdapter", ".ctor(Fuse.Visual,ObjC.Object)");
+
+    if (visual == NULL)
+        U_THROW(::g::Uno::ArgumentException::New5(::STRINGS[1/*"PointerCapt...*/], ::STRINGS[2/*"visual"*/]));
+
+    if (!::g::Fuse::Controls::Native::iOS::ObjectExtensions::IsUIControl(control))
+        U_THROW(::g::Uno::ArgumentException::New5(::STRINGS[3/*"PointerCapt...*/], ::STRINGS[4/*"control"*/]));
+
+    _visual = visual;
+    _control = control;
+    _activeTouches = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[3/*Uno.Collections.List<Fuse.Controls.Native.iOS.UITouch>*/]));
+    _touchEvents = ::g::Fuse::Controls::Native::iOS::UIControlEvent::AddAllTouchEventsCallback(_control, uDelegate::New(::TYPES[4/*Uno.Action<ObjC.Object, ObjC.Object>*/], (void*)PointerCaptureAdapter__OnTouchEvent_fn, this));
+}
+
+// public void Dispose() [instance] :1735
+void PointerCaptureAdapter::Dispose()
+{
+    uStackFrame __("Fuse.Controls.Native.iOS.PointerCaptureAdapter", "Dispose()");
+    ::g::Uno::IDisposable::Dispose(uInterface(uPtr(_touchEvents), ::TYPES[5/*Uno.IDisposable*/]));
+    _touchEvents = NULL;
+    _activeTouches = NULL;
+    _visual = NULL;
+    _control = NULL;
+}
+
+// private void LostCallback() [instance] :1733
+void PointerCaptureAdapter::LostCallback()
+{
+}
+
+// private void OnTouchEvent(ObjC.Object sender, ObjC.Object uiEvent) [instance] :1704
+void PointerCaptureAdapter::OnTouchEvent(::g::ObjC::Object* sender, ::g::ObjC::Object* uiEvent)
+{
+    uStackFrame __("Fuse.Controls.Native.iOS.PointerCaptureAdapter", "OnTouchEvent(ObjC.Object,ObjC.Object)");
+    bool ret2;
+    int ret3;
+    ::g::Fuse::Controls::Native::iOS::UITouch* ret4;
+
+    if (::g::Fuse::Controls::Native::iOS::ObjectExtensions::IsUIControl(sender) && ::g::Fuse::Controls::Native::iOS::ObjectExtensions::IsUIEvent(uiEvent))
+    {
+        bool touchEnded = false;
+        uArray* touches = ::g::Fuse::Controls::Native::iOS::UIEvent::New1(uiEvent)->GetTouchesForView(sender);
+
+        for (int i = 0; i < uPtr(touches)->Length(); i++)
+        {
+            ::g::Fuse::Controls::Native::iOS::UITouch* touch = uPtr(touches)->Strong< ::g::Fuse::Controls::Native::iOS::UITouch*>(i);
+
+            if (!(::g::Uno::Collections::List__Contains_fn(uPtr(_activeTouches), touch, &ret2), ret2))
+                ::g::Uno::Collections::List__Add_fn(uPtr(_activeTouches), touch);
+
+            int pointerIndex = (::g::Uno::Collections::List__IndexOf_fn(uPtr(_activeTouches), touch, &ret3), ret3);
+
+            if (uPtr(touch)->Phase() == 0)
+                ::g::Fuse::Input::Pointer::ModifyCapture1(touch, _visual, uDelegate::New(::TYPES[6/*Uno.Action*/], (void*)PointerCaptureAdapter__LostCallback_fn, this), 2, pointerIndex);
+            else if ((uPtr(touch)->Phase() == 3) || (uPtr(touch)->Phase() == 4))
+                touchEnded = true;
+        }
+
+        if (touchEnded)
+        {
+            for (int i1 = 0; i1 < uPtr(_activeTouches)->Count(); i1++)
+                ::g::Fuse::Input::Pointer::ReleaseCapture((::g::Uno::Collections::List__get_Item_fn(uPtr(_activeTouches), uCRef<int>(i1), &ret4), ret4));
+
+            uPtr(_activeTouches)->Clear();
+        }
+    }
+}
+
+// public PointerCaptureAdapter New(Fuse.Visual visual, ObjC.Object control) [static] :1691
+PointerCaptureAdapter* PointerCaptureAdapter::New1(::g::Fuse::Visual* visual, ::g::ObjC::Object* control)
+{
+    PointerCaptureAdapter* obj1 = (PointerCaptureAdapter*)uNew(PointerCaptureAdapter_typeof());
+    obj1->ctor_(visual, control);
+    return obj1;
+}
+// }
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
+
+// public enum iOSDevice.ScreenOrientation :1167
 uEnumType* iOSDevice__ScreenOrientation_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -455,10 +617,10 @@ uEnumType* iOSDevice__ScreenOrientation_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
-// public enum UITouch.TouchPhase :1006
+// public enum UITouch.TouchPhase :994
 uEnumType* UITouch__TouchPhase_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -474,10 +636,10 @@ uEnumType* UITouch__TouchPhase_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
-// public abstract extern class View :3245
+// public abstract extern class View :3344
 // {
 static void View_build(uType* type)
 {
@@ -507,38 +669,38 @@ View_type* View_typeof()
     return type;
 }
 
-// protected View(ObjC.Object handle) :3251
+// protected View(ObjC.Object handle) :3350
 void View__ctor_2_fn(View* __this, ::g::ObjC::Object* handle)
 {
     __this->ctor_2(handle);
 }
 
-// protected View(ObjC.Object handle, bool isLeafView) :3253
+// protected View(ObjC.Object handle, bool isLeafView) :3352
 void View__ctor_3_fn(View* __this, ::g::ObjC::Object* handle, bool* isLeafView)
 {
     __this->ctor_3(handle, *isLeafView);
 }
 
-// public ObjC.Object get_Handle() :3247
+// public ObjC.Object get_Handle() :3346
 void View__get_Handle_fn(View* __this, ::g::ObjC::Object** __retval)
 {
     *__retval = __this->Handle();
 }
 
-// protected View(ObjC.Object handle) [instance] :3251
+// protected View(ObjC.Object handle) [instance] :3350
 void View::ctor_2(::g::ObjC::Object* handle)
 {
     ctor_3(handle, false);
 }
 
-// protected View(ObjC.Object handle, bool isLeafView) [instance] :3253
+// protected View(ObjC.Object handle, bool isLeafView) [instance] :3352
 void View::ctor_3(::g::ObjC::Object* handle, bool isLeafView)
 {
     ctor_1(handle, isLeafView);
     _handle = handle;
 }
 
-// public ObjC.Object get_Handle() [instance] :3247
+// public ObjC.Object get_Handle() [instance] :3346
 ::g::ObjC::Object* View::Handle()
 {
     return _handle;

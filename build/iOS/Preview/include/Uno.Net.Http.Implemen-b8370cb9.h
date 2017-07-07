@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/implementation/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/implementation/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

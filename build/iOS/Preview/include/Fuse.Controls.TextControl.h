@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/textcontrols/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -33,7 +33,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public interfacemodifiers class TextControl :1821
+// public interfacemodifiers class TextControl :1829
 // {
 struct TextControl_type : ::g::Fuse::Controls::Control_type
 {

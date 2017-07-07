@@ -32,12 +32,12 @@ namespace Fuse{
 namespace iOS{
 namespace Bindings{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
-// internal sealed class Blitter :905
+// internal sealed class Blitter :342
 // {
-// static Blitter() :905
+// static Blitter() :342
 static void Blitter__cctor__fn(uType* __type)
 {
     Blitter::Singleton_ = Blitter::New1();
@@ -71,25 +71,25 @@ uType* Blitter_typeof()
     return type;
 }
 
-// public generated Blitter() :905
+// public generated Blitter() :342
 void Blitter__ctor__fn(Blitter* __this)
 {
     __this->ctor_();
 }
 
-// public void Blit(Fuse.DrawContext dc, Fuse.Visual where, texture2D vt, float2 pos, float2 size) :909
+// public void Blit(Fuse.DrawContext dc, Fuse.Visual where, texture2D vt, float2 pos, float2 size) :346
 void Blitter__Blit_fn(Blitter* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Visual* where, ::g::Uno::Graphics::Texture2D* vt, ::g::Uno::Float2* pos, ::g::Uno::Float2* size)
 {
     __this->Blit(dc, where, vt, *pos, *size);
 }
 
-// private generated void init_DrawCalls() :905
+// private generated void init_DrawCalls() :342
 void Blitter__init_DrawCalls_fn(Blitter* __this)
 {
     __this->init_DrawCalls();
 }
 
-// public generated Blitter New() :905
+// public generated Blitter New() :342
 void Blitter__New1_fn(Blitter** __retval)
 {
     *__retval = Blitter::New1();
@@ -97,13 +97,13 @@ void Blitter__New1_fn(Blitter** __retval)
 
 uSStrong<Blitter*> Blitter::Singleton_;
 
-// public generated Blitter() [instance] :905
+// public generated Blitter() [instance] :342
 void Blitter::ctor_()
 {
     init_DrawCalls();
 }
 
-// public void Blit(Fuse.DrawContext dc, Fuse.Visual where, texture2D vt, float2 pos, float2 size) [instance] :909
+// public void Blit(Fuse.DrawContext dc, Fuse.Visual where, texture2D vt, float2 pos, float2 size) [instance] :346
 void Blitter::Blit(::g::Fuse::DrawContext* dc, ::g::Fuse::Visual* where, ::g::Uno::Graphics::Texture2D* vt, ::g::Uno::Float2 pos, ::g::Uno::Float2 size)
 {
     uStackFrame __("Fuse.iOS.Bindings.Blitter", "Blit(Fuse.DrawContext,Fuse.Visual,texture2D,float2,float2)");
@@ -121,7 +121,7 @@ void Blitter::Blit(::g::Fuse::DrawContext* dc, ::g::Fuse::Visual* where, ::g::Un
     _draw_e36bc3a0.DrawArrays(6);
 }
 
-// private generated void init_DrawCalls() [instance] :905
+// private generated void init_DrawCalls() [instance] :342
 void Blitter::init_DrawCalls()
 {
     uStackFrame __("Fuse.iOS.Bindings.Blitter", "init_DrawCalls()");
@@ -131,7 +131,7 @@ void Blitter::init_DrawCalls()
     _draw_e36bc3a0 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseControls_bundle::Viewportd3ce851b());
 }
 
-// public generated Blitter New() [static] :905
+// public generated Blitter New() [static] :342
 Blitter* Blitter::New1()
 {
     Blitter* obj1 = (Blitter*)uNew(Blitter_typeof());
@@ -140,10 +140,10 @@ Blitter* Blitter::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
-// internal extern struct CGColorSpaceRef :747
+// internal extern struct CGColorSpaceRef :184
 // {
 static void CGColorSpaceRef_build(uType* type)
 {
@@ -166,10 +166,10 @@ uStructType* CGColorSpaceRef_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
-// internal extern struct CGContextRef :751
+// internal extern struct CGContextRef :188
 // {
 static void CGContextRef_build(uType* type)
 {

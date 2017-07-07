@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -21,7 +21,7 @@ namespace g{
 namespace Fuse{
 namespace Triggers{
 
-// public abstract class WhileValue<T> :4238
+// public abstract class WhileValue<T> :4213
 // {
 struct WhileValue_type : ::g::Fuse::Triggers::Trigger_type
 {
@@ -49,7 +49,7 @@ struct WhileValue : ::g::Fuse::Triggers::WhileTrigger
     bool _hasValue;
     uStrong<uObject*> _obj;
     uStrong<uObject*> _source;
-    uTField _value() { return __type->Field(this, 33); }
+    uTField _value() { return __type->Field(this, 34); }
     uStrong<uDelegate*> ValueChanged1;
 
     void ctor_6();

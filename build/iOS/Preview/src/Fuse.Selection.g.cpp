@@ -49,8 +49,8 @@ namespace g{
 namespace Fuse{
 namespace Selection{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // public sealed class Deselected :283
 // {
@@ -65,7 +65,7 @@ static void Deselected_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Selection::SelectionEvent_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Selection::SelectionEvent_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Selection::SelectionEvent_type, interface7));
-    type->SetFields(33);
+    type->SetFields(34);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)Deselected__New2_fn, 0, true, type, 0));
 }
@@ -77,7 +77,7 @@ static void Deselected_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Selection::SelectionEvent_typeof();
-    options.FieldCount = 33;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(Deselected);
     options.TypeSize = sizeof(::g::Fuse::Selection::SelectionEvent_type);
@@ -140,8 +140,8 @@ Deselected* Deselected::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // private enum Selection.How :748
 uEnumType* Selection__How_typeof()
@@ -156,8 +156,8 @@ uEnumType* Selection__How_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // private sealed class Selection.ListWrapper :754
 // {
@@ -240,8 +240,8 @@ Selection__ListWrapper* Selection__ListWrapper::New1(::g::Uno::Collections::List
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // public partial sealed class Selectable :11
 // {
@@ -259,7 +259,7 @@ static void Selectable_build(uType* type)
     ::STRINGS[2] = uString::Const("remove");
     ::STRINGS[3] = uString::Const("toggle");
     ::STRINGS[4] = uString::Const("add requires 0 arguments");
-    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno");
+    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno");
     ::STRINGS[6] = uString::Const("No selection, perhaps not rooted");
     ::STRINGS[7] = uString::Const("Add");
     ::STRINGS[8] = uString::Const("Unable to locate `Selection`");
@@ -534,8 +534,8 @@ void Selectable::toggle(::g::Fuse::Scripting::Context* c, Selectable* s, uArray*
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // public sealed class Selected :272
 // {
@@ -550,7 +550,7 @@ static void Selected_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Selection::SelectionEvent_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Selection::SelectionEvent_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Selection::SelectionEvent_type, interface7));
-    type->SetFields(33);
+    type->SetFields(34);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)Selected__New2_fn, 0, true, type, 0));
 }
@@ -562,7 +562,7 @@ static void Selected_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Selection::SelectionEvent_typeof();
-    options.FieldCount = 33;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(Selected);
     options.TypeSize = sizeof(::g::Fuse::Selection::SelectionEvent_type);
@@ -625,8 +625,8 @@ Selected* Selected::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // public partial sealed class Selection :302
 // {
@@ -647,7 +647,7 @@ static void Selection_build(uType* type)
     ::STRINGS[16] = uString::Const("forceRemove");
     ::STRINGS[3] = uString::Const("toggle");
     ::STRINGS[17] = uString::Const("add requires 1 argument, the value of the item");
-    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno");
+    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno");
     ::STRINGS[18] = uString::Const("clear requires 0 arguments");
     ::STRINGS[19] = uString::Const("forceAdd requires 1 argument, the value of the item");
     ::STRINGS[20] = uString::Const("forceRemove requires 1 argument, the value of the item");
@@ -1623,15 +1623,15 @@ Selection* Selection::TryFindSelection(::g::Fuse::Node* v)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // public abstract class SelectionEvent :222
 // {
 static void SelectionEvent_build(uType* type)
 {
     ::STRINGS[33] = uString::Const("Unable to locate a `Selectable` and `Selection`");
-    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno");
+    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno");
     ::STRINGS[9] = uString::Const("OnRooted");
     ::TYPES[16] = ::g::Uno::EventHandler_typeof();
     type->SetBase(::g::Fuse::Triggers::PulseTrigger_typeof()->MakeType(::g::Fuse::Selection::SelectionEventArgs_typeof(), NULL));
@@ -1644,7 +1644,7 @@ static void SelectionEvent_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(SelectionEvent_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(SelectionEvent_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(SelectionEvent_type, interface7));
-    type->SetFields(30,
+    type->SetFields(31,
         ::g::Fuse::Selection::Selectable_typeof(), offsetof(::g::Fuse::Selection::SelectionEvent, _selectable), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Selection::SelectionEvent, _selected), 0,
         ::g::Fuse::Selection::Selection_typeof(), offsetof(::g::Fuse::Selection::SelectionEvent, _selection), 0);
@@ -1657,7 +1657,7 @@ SelectionEvent_type* SelectionEvent_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::PulseTrigger_typeof();
-    options.FieldCount = 33;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(SelectionEvent);
     options.TypeSize = sizeof(SelectionEvent_type);
@@ -1749,8 +1749,8 @@ void SelectionEvent::OnSelectionChanged(uObject* s, uObject* args)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // public sealed class SelectionEventArgs :204
 // {
@@ -1843,8 +1843,8 @@ SelectionEventArgs* SelectionEventArgs::New2(uString* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // public enum SelectionReplace :424
 uEnumType* SelectionReplace_typeof()
@@ -1860,8 +1860,8 @@ uEnumType* SelectionReplace_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // public enum SelectMode :927
 uEnumType* SelectMode_typeof()
@@ -1877,15 +1877,15 @@ uEnumType* SelectMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // public sealed class ToggleSelection :945
 // {
 static void ToggleSelection_build(uType* type)
 {
     ::STRINGS[35] = uString::Const("Unable to locate Selectable");
-    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno");
+    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno");
     ::STRINGS[36] = uString::Const("Perform");
     type->SetFields(9,
         ::g::Fuse::Selection::SelectMode_typeof(), offsetof(::g::Fuse::Selection::ToggleSelection, _mode), 0);
@@ -1996,15 +1996,15 @@ ToggleSelection* ToggleSelection::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // public sealed class WhileSelected :1003
 // {
 static void WhileSelected_build(uType* type)
 {
     ::STRINGS[33] = uString::Const("Unable to locate a `Selectable` and `Selection`");
-    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/0.47.7/$.uno");
+    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno");
     ::STRINGS[9] = uString::Const("OnRooted");
     ::TYPES[16] = ::g::Uno::EventHandler_typeof();
     type->SetInterfaces(
@@ -2017,7 +2017,7 @@ static void WhileSelected_build(uType* type)
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(WhileSelected_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(WhileSelected_type, interface7),
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(WhileSelected_type, interface8));
-    type->SetFields(30,
+    type->SetFields(31,
         ::g::Fuse::Selection::Selectable_typeof(), offsetof(::g::Fuse::Selection::WhileSelected, _selectable), 0,
         ::g::Fuse::Selection::Selection_typeof(), offsetof(::g::Fuse::Selection::WhileSelected, _selection), 0);
     type->Reflection.SetFunctions(1,
@@ -2031,7 +2031,7 @@ WhileSelected_type* WhileSelected_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 32;
+    options.FieldCount = 33;
     options.InterfaceCount = 9;
     options.ObjectSize = sizeof(WhileSelected);
     options.TypeSize = sizeof(WhileSelected_type);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/0.47.7/.uno/package'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/1.0.5/.uno/package'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -14,14 +14,14 @@ uClassType* FuseReactiveJavaScript_bundle_typeof();
 
 struct FuseReactiveJavaScript_bundle : uObject
 {
-    static uSStrong< ::g::Uno::IO::BundleFile*> Diagnostics16aaa8c0_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& Diagnostics16aaa8c0() { return FuseReactiveJavaScript_bundle_typeof()->Init(), Diagnostics16aaa8c0_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> es6promisemin65cc4303_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& es6promisemin65cc4303() { return FuseReactiveJavaScript_bundle_typeof()->Init(), es6promisemin65cc4303_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> Observable49677b23_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& Observable49677b23() { return FuseReactiveJavaScript_bundle_typeof()->Init(), Observable49677b23_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> setTimeouta19c575b_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& setTimeouta19c575b() { return FuseReactiveJavaScript_bundle_typeof()->Init(), setTimeouta19c575b_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> Diagnosticsd733d8ca_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& Diagnosticsd733d8ca() { return FuseReactiveJavaScript_bundle_typeof()->Init(), Diagnosticsd733d8ca_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> es6promisemin312e72cb_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& es6promisemin312e72cb() { return FuseReactiveJavaScript_bundle_typeof()->Init(), es6promisemin312e72cb_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> Observabled69d4cd3_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& Observabled69d4cd3() { return FuseReactiveJavaScript_bundle_typeof()->Init(), Observabled69d4cd3_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> setTimeout489b9da3_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& setTimeout489b9da3() { return FuseReactiveJavaScript_bundle_typeof()->Init(), setTimeout489b9da3_; }
 };
 // }
 

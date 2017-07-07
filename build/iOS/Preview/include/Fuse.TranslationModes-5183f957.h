@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{namespace Uno{struct Float3;}}
 namespace g{
 namespace Fuse{
 
-// private sealed class TranslationModes.WidthMode :4661
+// private sealed class TranslationModes.WidthMode :4750
 // {
 ::g::Fuse::TranslationModes__SizeMode_type* TranslationModes__WidthMode_typeof();
 void TranslationModes__WidthMode__ctor_1_fn(TranslationModes__WidthMode* __this);

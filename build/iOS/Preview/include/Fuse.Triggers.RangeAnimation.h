@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -18,7 +18,7 @@ namespace g{
 namespace Fuse{
 namespace Triggers{
 
-// public sealed class RangeAnimation :1625
+// public sealed class RangeAnimation :1638
 // {
 ::g::Fuse::Triggers::Trigger_type* RangeAnimation_typeof();
 void RangeAnimation__ctor_5_fn(RangeAnimation* __this);

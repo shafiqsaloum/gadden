@@ -49,8 +49,8 @@ namespace g{
 namespace Uno{
 namespace Platform{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum ApplicationState :13
 uEnumType* ApplicationState_typeof()
@@ -68,8 +68,8 @@ uEnumType* ApplicationState_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public delegate void ApplicationStateTransitionHandler(Uno.Platform.ApplicationState newState) :23
 uDelegateType* ApplicationStateTransitionHandler_typeof()
@@ -83,8 +83,8 @@ uDelegateType* ApplicationStateTransitionHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class ClosingEventArgs :326
 // {
@@ -165,8 +165,8 @@ ClosingEventArgs* ClosingEventArgs::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public abstract class CoreApp :28
 // {
@@ -179,7 +179,7 @@ static void CoreApp__cctor__fn(uType* __type)
 static void CoreApp_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("EnterBackground() called on terminating application");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno");
     ::STRINGS[2] = uString::Const("EnterBackground() called on uninitialized application");
     ::STRINGS[3] = uString::Const("Uno.Platform.CoreApp.State == Uno.Platform.ApplicationState.Foreground");
     ::STRINGS[4] = uString::Const("Uno.Platform.CoreApp.State == Uno.Platform.ApplicationState.Background");
@@ -907,8 +907,8 @@ void CoreApp::remove_Terminating(uDelegate* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public abstract class Display :1066
 // {
@@ -1095,8 +1095,8 @@ void Display::TicksPerSecond(uint32_t value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public static class Displays :1022
 // {
@@ -1224,8 +1224,8 @@ void Displays::All(::g::Uno::Collections::List* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum EventModifiers :482
 uEnumType* EventModifiers_typeof()
@@ -1247,8 +1247,8 @@ uEnumType* EventModifiers_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class FrameChangedEventArgs :501
 // {
@@ -1328,8 +1328,8 @@ FrameChangedEventArgs* FrameChangedEventArgs::New2(::g::Uno::Rect newFrame)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum Key :340
 uEnumType* Key_typeof()
@@ -1424,8 +1424,8 @@ uEnumType* Key_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class KeyEventArgs :519
 // {
@@ -1637,8 +1637,8 @@ KeyEventArgs* KeyEventArgs::New2(int key, int modifiers, ::g::Uno::Platform::OSF
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public class OSFrame :781
 // {
@@ -1721,8 +1721,8 @@ OSFrame* OSFrame::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum PointerCursor :442
 uEnumType* PointerCursor_typeof()
@@ -1752,8 +1752,8 @@ uEnumType* PointerCursor_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum PointerType :464
 uEnumType* PointerType_typeof()
@@ -1768,8 +1768,8 @@ uEnumType* PointerType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class TextInputEventArgs :691
 // {
@@ -1848,8 +1848,8 @@ void TextInputEventArgs::Text(uString* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class TimerEventArgs :757
 // {
@@ -1983,8 +1983,8 @@ TimerEventArgs* TimerEventArgs::New2(double lastTickTimestamp, double tickDurati
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum WheelDeltaMode :578
 uEnumType* WheelDeltaMode_typeof()
@@ -2000,8 +2000,8 @@ uEnumType* WheelDeltaMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed extern class Window :812
 // {

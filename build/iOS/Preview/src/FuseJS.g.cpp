@@ -68,10 +68,10 @@ static uType* TYPES[27];
 namespace g{
 namespace FuseJS{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------
 
-// public sealed class Base64 :430
+// public sealed class Base64 :433
 // {
 static void Base64_build(uType* type)
 {
@@ -122,61 +122,61 @@ static void Base64_build(uType* type)
     return type;
 }
 
-// public Base64() :434
+// public Base64() :437
 void Base64__ctor_2_fn(Base64* __this)
 {
     __this->ctor_2();
 }
 
-// private object DecodeAscii(Fuse.Scripting.Context context, object[] args) :566
+// private object DecodeAscii(Fuse.Scripting.Context context, object[] args) :569
 void Base64__DecodeAscii_fn(Base64* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->DecodeAscii(context, args);
 }
 
-// private object DecodeBuffer(Fuse.Scripting.Context context, object[] args) :462
+// private object DecodeBuffer(Fuse.Scripting.Context context, object[] args) :465
 void Base64__DecodeBuffer_fn(Base64* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->DecodeBuffer(context, args);
 }
 
-// private object DecodeLatin1(Fuse.Scripting.Context context, object[] args) :504
+// private object DecodeLatin1(Fuse.Scripting.Context context, object[] args) :507
 void Base64__DecodeLatin1_fn(Base64* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->DecodeLatin1(context, args);
 }
 
-// private object DecodeUtf8(Fuse.Scripting.Context context, object[] args) :608
+// private object DecodeUtf8(Fuse.Scripting.Context context, object[] args) :611
 void Base64__DecodeUtf8_fn(Base64* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->DecodeUtf8(context, args);
 }
 
-// private object EncodeAscii(Fuse.Scripting.Context context, object[] args) :545
+// private object EncodeAscii(Fuse.Scripting.Context context, object[] args) :548
 void Base64__EncodeAscii_fn(Base64* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->EncodeAscii(context, args);
 }
 
-// private object EncodeBuffer(Fuse.Scripting.Context context, object[] args) :485
+// private object EncodeBuffer(Fuse.Scripting.Context context, object[] args) :488
 void Base64__EncodeBuffer_fn(Base64* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->EncodeBuffer(context, args);
 }
 
-// private object EncodeLatin1(Fuse.Scripting.Context context, object[] args) :523
+// private object EncodeLatin1(Fuse.Scripting.Context context, object[] args) :526
 void Base64__EncodeLatin1_fn(Base64* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->EncodeLatin1(context, args);
 }
 
-// private object EncodeUtf8(Fuse.Scripting.Context context, object[] args) :587
+// private object EncodeUtf8(Fuse.Scripting.Context context, object[] args) :590
 void Base64__EncodeUtf8_fn(Base64* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->EncodeUtf8(context, args);
 }
 
-// public Base64 New() :434
+// public Base64 New() :437
 void Base64__New2_fn(Base64** __retval)
 {
     *__retval = Base64::New2();
@@ -184,7 +184,7 @@ void Base64__New2_fn(Base64** __retval)
 
 uSStrong<Base64*> Base64::_instance_;
 
-// public Base64() [instance] :434
+// public Base64() [instance] :437
 void Base64::ctor_2()
 {
     uStackFrame __("FuseJS.Base64", ".ctor()");
@@ -204,7 +204,7 @@ void Base64::ctor_2()
     AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[8/*"decodeBuffer"*/], uDelegate::New(::TYPES[0/*Fuse.Scripting.NativeCallback*/], (void*)Base64__DecodeBuffer_fn, this)));
 }
 
-// private object DecodeAscii(Fuse.Scripting.Context context, object[] args) [instance] :566
+// private object DecodeAscii(Fuse.Scripting.Context context, object[] args) [instance] :569
 uObject* Base64::DecodeAscii(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("FuseJS.Base64", "DecodeAscii(Fuse.Scripting.Context,object[])");
@@ -220,7 +220,7 @@ uObject* Base64::DecodeAscii(::g::Fuse::Scripting::Context* context, uArray* arg
     return NULL;
 }
 
-// private object DecodeBuffer(Fuse.Scripting.Context context, object[] args) [instance] :462
+// private object DecodeBuffer(Fuse.Scripting.Context context, object[] args) [instance] :465
 uObject* Base64::DecodeBuffer(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("FuseJS.Base64", "DecodeBuffer(Fuse.Scripting.Context,object[])");
@@ -233,7 +233,7 @@ uObject* Base64::DecodeBuffer(::g::Fuse::Scripting::Context* context, uArray* ar
     return ::g::Uno::Text::Base64::GetBytes(base64Str);
 }
 
-// private object DecodeLatin1(Fuse.Scripting.Context context, object[] args) [instance] :504
+// private object DecodeLatin1(Fuse.Scripting.Context context, object[] args) [instance] :507
 uObject* Base64::DecodeLatin1(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("FuseJS.Base64", "DecodeLatin1(Fuse.Scripting.Context,object[])");
@@ -246,7 +246,7 @@ uObject* Base64::DecodeLatin1(::g::Fuse::Scripting::Context* context, uArray* ar
     return ::g::FuseJS::Latin1Helpers::DecodeLatin1(base64Str);
 }
 
-// private object DecodeUtf8(Fuse.Scripting.Context context, object[] args) [instance] :608
+// private object DecodeUtf8(Fuse.Scripting.Context context, object[] args) [instance] :611
 uObject* Base64::DecodeUtf8(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("FuseJS.Base64", "DecodeUtf8(Fuse.Scripting.Context,object[])");
@@ -262,7 +262,7 @@ uObject* Base64::DecodeUtf8(::g::Fuse::Scripting::Context* context, uArray* args
     return NULL;
 }
 
-// private object EncodeAscii(Fuse.Scripting.Context context, object[] args) [instance] :545
+// private object EncodeAscii(Fuse.Scripting.Context context, object[] args) [instance] :548
 uObject* Base64::EncodeAscii(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("FuseJS.Base64", "EncodeAscii(Fuse.Scripting.Context,object[])");
@@ -278,7 +278,7 @@ uObject* Base64::EncodeAscii(::g::Fuse::Scripting::Context* context, uArray* arg
     return NULL;
 }
 
-// private object EncodeBuffer(Fuse.Scripting.Context context, object[] args) [instance] :485
+// private object EncodeBuffer(Fuse.Scripting.Context context, object[] args) [instance] :488
 uObject* Base64::EncodeBuffer(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("FuseJS.Base64", "EncodeBuffer(Fuse.Scripting.Context,object[])");
@@ -291,7 +291,7 @@ uObject* Base64::EncodeBuffer(::g::Fuse::Scripting::Context* context, uArray* ar
     return ::g::Uno::Text::Base64::GetString(buffer);
 }
 
-// private object EncodeLatin1(Fuse.Scripting.Context context, object[] args) [instance] :523
+// private object EncodeLatin1(Fuse.Scripting.Context context, object[] args) [instance] :526
 uObject* Base64::EncodeLatin1(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("FuseJS.Base64", "EncodeLatin1(Fuse.Scripting.Context,object[])");
@@ -303,7 +303,7 @@ uObject* Base64::EncodeLatin1(::g::Fuse::Scripting::Context* context, uArray* ar
     return ::g::FuseJS::Latin1Helpers::EncodeLatin1(str);
 }
 
-// private object EncodeUtf8(Fuse.Scripting.Context context, object[] args) [instance] :587
+// private object EncodeUtf8(Fuse.Scripting.Context context, object[] args) [instance] :590
 uObject* Base64::EncodeUtf8(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("FuseJS.Base64", "EncodeUtf8(Fuse.Scripting.Context,object[])");
@@ -319,7 +319,7 @@ uObject* Base64::EncodeUtf8(::g::Fuse::Scripting::Context* context, uArray* args
     return NULL;
 }
 
-// public Base64 New() [static] :434
+// public Base64 New() [static] :437
 Base64* Base64::New2()
 {
     Base64* obj1 = (Base64*)uNew(Base64_typeof());
@@ -328,10 +328,10 @@ Base64* Base64::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------
 
-// public sealed class Bundle :690
+// public sealed class Bundle :693
 // {
 static void Bundle_build(uType* type)
 {
@@ -377,43 +377,43 @@ static void Bundle_build(uType* type)
     return type;
 }
 
-// public Bundle() :694
+// public Bundle() :697
 void Bundle__ctor_2_fn(Bundle* __this)
 {
     __this->ctor_2();
 }
 
-// public Bundle New() :694
+// public Bundle New() :697
 void Bundle__New2_fn(Bundle** __retval)
 {
     *__retval = Bundle::New2();
 }
 
-// private static object Read(Fuse.Scripting.Context c, object[] args) :760
+// private static object Read(Fuse.Scripting.Context c, object[] args) :763
 void Bundle__Read_fn(::g::Fuse::Scripting::Context* c, uArray* args, uObject** __retval)
 {
     *__retval = Bundle::Read(c, args);
 }
 
-// private static string Read(string filename) :770
+// private static string Read(string filename) :773
 void Bundle__Read1_fn(uString* filename, uString** __retval)
 {
     *__retval = Bundle::Read1(filename);
 }
 
-// private static Uno.Threading.Future<string> ReadAsync(object[] args) :734
+// private static Uno.Threading.Future<string> ReadAsync(object[] args) :737
 void Bundle__ReadAsync_fn(uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = Bundle::ReadAsync(args);
 }
 
-// private static Uno.Threading.Future<string> ReadAsync(string filename) :787
+// private static Uno.Threading.Future<string> ReadAsync(string filename) :790
 void Bundle__ReadAsync1_fn(uString* filename, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = Bundle::ReadAsync1(filename);
 }
 
-// private static bool TryGetBundleFile(string sourcePath, Uno.IO.BundleFile& bundleFile) :702
+// private static bool TryGetBundleFile(string sourcePath, Uno.IO.BundleFile& bundleFile) :705
 void Bundle__TryGetBundleFile_fn(uString* sourcePath, ::g::Uno::IO::BundleFile** bundleFile, bool* __retval)
 {
     *__retval = Bundle::TryGetBundleFile(sourcePath, bundleFile);
@@ -421,7 +421,7 @@ void Bundle__TryGetBundleFile_fn(uString* sourcePath, ::g::Uno::IO::BundleFile**
 
 uSStrong<Bundle*> Bundle::_instance_;
 
-// public Bundle() [instance] :694
+// public Bundle() [instance] :697
 void Bundle::ctor_2()
 {
     uStackFrame __("FuseJS.Bundle", ".ctor()");
@@ -435,7 +435,7 @@ void Bundle::ctor_2()
     AddMember((::g::Fuse::Scripting::NativePromise*)::g::Fuse::Scripting::NativePromise::New1(::TYPES[5/*Fuse.Scripting.NativePromise<string, string>*/], ::STRINGS[16/*"read"*/], uDelegate::New(::TYPES[6/*Fuse.Scripting.FutureFactory<string>*/], (void*)Bundle__ReadAsync_fn), NULL));
 }
 
-// public Bundle New() [static] :694
+// public Bundle New() [static] :697
 Bundle* Bundle::New2()
 {
     Bundle* obj2 = (Bundle*)uNew(Bundle_typeof());
@@ -443,7 +443,7 @@ Bundle* Bundle::New2()
     return obj2;
 }
 
-// private static object Read(Fuse.Scripting.Context c, object[] args) [static] :760
+// private static object Read(Fuse.Scripting.Context c, object[] args) [static] :763
 uObject* Bundle::Read(::g::Fuse::Scripting::Context* c, uArray* args)
 {
     uStackFrame __("FuseJS.Bundle", "Read(Fuse.Scripting.Context,object[])");
@@ -457,7 +457,7 @@ uObject* Bundle::Read(::g::Fuse::Scripting::Context* c, uArray* args)
     return ::STRINGS[17/*""*/];
 }
 
-// private static string Read(string filename) [static] :770
+// private static string Read(string filename) [static] :773
 uString* Bundle::Read1(uString* filename)
 {
     uStackFrame __("FuseJS.Bundle", "Read(string)");
@@ -478,7 +478,7 @@ uString* Bundle::Read1(uString* filename)
     }
 }
 
-// private static Uno.Threading.Future<string> ReadAsync(object[] args) [static] :734
+// private static Uno.Threading.Future<string> ReadAsync(object[] args) [static] :737
 ::g::Uno::Threading::Future1* Bundle::ReadAsync(uArray* args)
 {
     uStackFrame __("FuseJS.Bundle", "ReadAsync(object[])");
@@ -492,13 +492,13 @@ uString* Bundle::Read1(uString* filename)
     return Bundle::ReadAsync1(::STRINGS[17/*""*/]);
 }
 
-// private static Uno.Threading.Future<string> ReadAsync(string filename) [static] :787
+// private static Uno.Threading.Future<string> ReadAsync(string filename) [static] :790
 ::g::Uno::Threading::Future1* Bundle::ReadAsync1(uString* filename)
 {
     return (::g::Uno::Threading::Future1*)::g::Uno::Threading::Promise::Run(::TYPES[8/*Uno.Threading.Promise<string>*/], uDelegate::New(::TYPES[9/*Uno.Func<string>*/], (void*)Bundle__ReadClosure__Invoke_fn, Bundle__ReadClosure::New1(filename)));
 }
 
-// private static bool TryGetBundleFile(string sourcePath, Uno.IO.BundleFile& bundleFile) [static] :702
+// private static bool TryGetBundleFile(string sourcePath, Uno.IO.BundleFile& bundleFile) [static] :705
 bool Bundle::TryGetBundleFile(uString* sourcePath, ::g::Uno::IO::BundleFile** bundleFile)
 {
     uStackFrame __("FuseJS.Bundle", "TryGetBundleFile(string,Uno.IO.BundleFile&)");
@@ -520,10 +520,10 @@ bool Bundle::TryGetBundleFile(uString* sourcePath, ::g::Uno::IO::BundleFile** bu
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------
 
-// public sealed class Environment :377
+// public sealed class Environment :380
 // {
 static void Environment_build(uType* type)
 {
@@ -567,19 +567,19 @@ static void Environment_build(uType* type)
     return type;
 }
 
-// public Environment() :381
+// public Environment() :384
 void Environment__ctor_2_fn(Environment* __this)
 {
     __this->ctor_2();
 }
 
-// private static string GetMobileOSVersion() :394
+// private static string GetMobileOSVersion() :397
 void Environment__GetMobileOSVersion_fn(uString** __retval)
 {
     *__retval = Environment::GetMobileOSVersion();
 }
 
-// public Environment New() :381
+// public Environment New() :384
 void Environment__New2_fn(Environment** __retval)
 {
     *__retval = Environment::New2();
@@ -587,7 +587,7 @@ void Environment__New2_fn(Environment** __retval)
 
 uSStrong<Environment*> Environment::_instance_;
 
-// public Environment() [instance] :381
+// public Environment() [instance] :384
 void Environment::ctor_2()
 {
     uStackFrame __("FuseJS.Environment", ".ctor()");
@@ -612,7 +612,7 @@ void Environment::ctor_2()
     AddMember((::g::Fuse::Scripting::NativeProperty*)::g::Fuse::Scripting::NativeProperty::New2(::TYPES[14/*Fuse.Scripting.NativeProperty<string, string>*/], ::STRINGS[25/*"mobileOSVer...*/], uDelegate::New(::TYPES[9/*Uno.Func<string>*/], (void*)Environment__GetMobileOSVersion_fn), NULL, NULL));
 }
 
-// private static string GetMobileOSVersion() [static] :394
+// private static string GetMobileOSVersion() [static] :397
 uString* Environment::GetMobileOSVersion()
 {
     uStackFrame __("FuseJS.Environment", "GetMobileOSVersion()");
@@ -620,7 +620,7 @@ uString* Environment::GetMobileOSVersion()
     return ::STRINGS[17/*""*/];
 }
 
-// public Environment New() [static] :381
+// public Environment New() [static] :384
 Environment* Environment::New2()
 {
     Environment* obj1 = (Environment*)uNew(Environment_typeof());
@@ -629,10 +629,10 @@ Environment* Environment::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------
 
-// private sealed class FileReaderImpl.FileReadCommand :825
+// private sealed class FileReaderImpl.FileReadCommand :828
 // {
 static void FileReaderImpl__FileReadCommand_build(uType* type)
 {
@@ -659,37 +659,37 @@ uType* FileReaderImpl__FileReadCommand_typeof()
     return type;
 }
 
-// public FileReadCommand(string path) :828
+// public FileReadCommand(string path) :831
 void FileReaderImpl__FileReadCommand__ctor__fn(FileReaderImpl__FileReadCommand* __this, uString* path)
 {
     __this->ctor_(path);
 }
 
-// public FileReadCommand New(string path) :828
+// public FileReadCommand New(string path) :831
 void FileReaderImpl__FileReadCommand__New1_fn(uString* path, FileReaderImpl__FileReadCommand** __retval)
 {
     *__retval = FileReaderImpl__FileReadCommand::New1(path);
 }
 
-// public string ReadAsDataURL() :836
+// public string ReadAsDataURL() :839
 void FileReaderImpl__FileReadCommand__ReadAsDataURL_fn(FileReaderImpl__FileReadCommand* __this, uString** __retval)
 {
     *__retval = __this->ReadAsDataURL();
 }
 
-// public string ReadAsText() :832
+// public string ReadAsText() :835
 void FileReaderImpl__FileReadCommand__ReadAsText_fn(FileReaderImpl__FileReadCommand* __this, uString** __retval)
 {
     *__retval = __this->ReadAsText();
 }
 
-// public FileReadCommand(string path) [instance] :828
+// public FileReadCommand(string path) [instance] :831
 void FileReaderImpl__FileReadCommand::ctor_(uString* path)
 {
     _path = path;
 }
 
-// public string ReadAsDataURL() [instance] :836
+// public string ReadAsDataURL() [instance] :839
 uString* FileReaderImpl__FileReadCommand::ReadAsDataURL()
 {
     uStackFrame __("FuseJS.FileReaderImpl.FileReadCommand", "ReadAsDataURL()");
@@ -699,13 +699,13 @@ uString* FileReaderImpl__FileReadCommand::ReadAsDataURL()
     return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[29/*"data:image/"*/], type), ::STRINGS[30/*";base64,"*/]), base64);
 }
 
-// public string ReadAsText() [instance] :832
+// public string ReadAsText() [instance] :835
 uString* FileReaderImpl__FileReadCommand::ReadAsText()
 {
     return ::g::Uno::IO::File::ReadAllText(_path);
 }
 
-// public FileReadCommand New(string path) [static] :828
+// public FileReadCommand New(string path) [static] :831
 FileReaderImpl__FileReadCommand* FileReaderImpl__FileReadCommand::New1(uString* path)
 {
     FileReaderImpl__FileReadCommand* obj1 = (FileReaderImpl__FileReadCommand*)uNew(FileReaderImpl__FileReadCommand_typeof());
@@ -714,10 +714,10 @@ FileReaderImpl__FileReadCommand* FileReaderImpl__FileReadCommand::New1(uString* 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------
 
-// public sealed class FileReaderImpl :823
+// public sealed class FileReaderImpl :826
 // {
 static void FileReaderImpl_build(uType* type)
 {
@@ -757,25 +757,25 @@ static void FileReaderImpl_build(uType* type)
     return type;
 }
 
-// public FileReaderImpl() :846
+// public FileReaderImpl() :849
 void FileReaderImpl__ctor_2_fn(FileReaderImpl* __this)
 {
     __this->ctor_2();
 }
 
-// public FileReaderImpl New() :846
+// public FileReaderImpl New() :849
 void FileReaderImpl__New2_fn(FileReaderImpl** __retval)
 {
     *__retval = FileReaderImpl::New2();
 }
 
-// private static Uno.Threading.Future<string> readAsDataURL(object[] args) :854
+// private static Uno.Threading.Future<string> readAsDataURL(object[] args) :857
 void FileReaderImpl__readAsDataURL_fn(uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = FileReaderImpl::readAsDataURL(args);
 }
 
-// private static Uno.Threading.Future<string> readAsText(object[] args) :860
+// private static Uno.Threading.Future<string> readAsText(object[] args) :863
 void FileReaderImpl__readAsText_fn(uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = FileReaderImpl::readAsText(args);
@@ -783,7 +783,7 @@ void FileReaderImpl__readAsText_fn(uArray* args, ::g::Uno::Threading::Future1** 
 
 uSStrong<FileReaderImpl*> FileReaderImpl::_instance_;
 
-// public FileReaderImpl() [instance] :846
+// public FileReaderImpl() [instance] :849
 void FileReaderImpl::ctor_2()
 {
     uStackFrame __("FuseJS.FileReaderImpl", ".ctor()");
@@ -797,7 +797,7 @@ void FileReaderImpl::ctor_2()
     AddMember((::g::Fuse::Scripting::NativePromise*)::g::Fuse::Scripting::NativePromise::New1(::TYPES[5/*Fuse.Scripting.NativePromise<string, string>*/], ::STRINGS[33/*"readAsText"*/], uDelegate::New(::TYPES[6/*Fuse.Scripting.FutureFactory<string>*/], (void*)FileReaderImpl__readAsText_fn), NULL));
 }
 
-// public FileReaderImpl New() [static] :846
+// public FileReaderImpl New() [static] :849
 FileReaderImpl* FileReaderImpl::New2()
 {
     FileReaderImpl* obj1 = (FileReaderImpl*)uNew(FileReaderImpl_typeof());
@@ -805,7 +805,7 @@ FileReaderImpl* FileReaderImpl::New2()
     return obj1;
 }
 
-// private static Uno.Threading.Future<string> readAsDataURL(object[] args) [static] :854
+// private static Uno.Threading.Future<string> readAsDataURL(object[] args) [static] :857
 ::g::Uno::Threading::Future1* FileReaderImpl::readAsDataURL(uArray* args)
 {
     uStackFrame __("FuseJS.FileReaderImpl", "readAsDataURL(object[])");
@@ -813,7 +813,7 @@ FileReaderImpl* FileReaderImpl::New2()
     return (::g::Uno::Threading::Future1*)::g::Uno::Threading::Promise::Run(::TYPES[8/*Uno.Threading.Promise<string>*/], uDelegate::New(::TYPES[9/*Uno.Func<string>*/], (void*)FileReaderImpl__FileReadCommand__ReadAsDataURL_fn, FileReaderImpl__FileReadCommand::New1(path)));
 }
 
-// private static Uno.Threading.Future<string> readAsText(object[] args) [static] :860
+// private static Uno.Threading.Future<string> readAsText(object[] args) [static] :863
 ::g::Uno::Threading::Future1* FileReaderImpl::readAsText(uArray* args)
 {
     uStackFrame __("FuseJS.FileReaderImpl", "readAsText(object[])");
@@ -822,8 +822,8 @@ FileReaderImpl* FileReaderImpl::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------
 
 // public sealed class Globals :10
 // {
@@ -946,10 +946,10 @@ uString* Globals::readAsText(uArray* args)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------
 
-// internal static class Latin1Helpers :629
+// internal static class Latin1Helpers :632
 // {
 static void Latin1Helpers_build(uType* type)
 {
@@ -970,19 +970,19 @@ uClassType* Latin1Helpers_typeof()
     return type;
 }
 
-// public static string DecodeLatin1(string base64Str) :631
+// public static string DecodeLatin1(string base64Str) :634
 void Latin1Helpers__DecodeLatin1_fn(uString* base64Str, uString** __retval)
 {
     *__retval = Latin1Helpers::DecodeLatin1(base64Str);
 }
 
-// public static string EncodeLatin1(string str) :644
+// public static string EncodeLatin1(string str) :647
 void Latin1Helpers__EncodeLatin1_fn(uString* str, uString** __retval)
 {
     *__retval = Latin1Helpers::EncodeLatin1(str);
 }
 
-// public static string DecodeLatin1(string base64Str) [static] :631
+// public static string DecodeLatin1(string base64Str) [static] :634
 uString* Latin1Helpers::DecodeLatin1(uString* base64Str)
 {
     uStackFrame __("FuseJS.Latin1Helpers", "DecodeLatin1(string)");
@@ -996,7 +996,7 @@ uString* Latin1Helpers::DecodeLatin1(uString* base64Str)
     return uString::CharArray(chars);
 }
 
-// public static string EncodeLatin1(string str) [static] :644
+// public static string EncodeLatin1(string str) [static] :647
 uString* Latin1Helpers::EncodeLatin1(uString* str)
 {
     uStackFrame __("FuseJS.Latin1Helpers", "EncodeLatin1(string)");
@@ -1017,10 +1017,10 @@ uString* Latin1Helpers::EncodeLatin1(uString* str)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------
 
-// public sealed class Lifecycle :139
+// public sealed class Lifecycle :142
 // {
 static void Lifecycle_build(uType* type)
 {
@@ -1075,73 +1075,73 @@ static void Lifecycle_build(uType* type)
     return type;
 }
 
-// public Lifecycle() :148
+// public Lifecycle() :151
 void Lifecycle__ctor_3_fn(Lifecycle* __this)
 {
     __this->ctor_3();
 }
 
-// private static int Converter(Fuse.Scripting.Context context, int state) :317
+// private static int Converter(Fuse.Scripting.Context context, int state) :320
 void Lifecycle__Converter_fn(::g::Fuse::Scripting::Context* context, int* state, int* __retval)
 {
     *__retval = Lifecycle::Converter(context, *state);
 }
 
-// private static int GetApplicationStateBackground() :198
+// private static int GetApplicationStateBackground() :201
 void Lifecycle__GetApplicationStateBackground_fn(int* __retval)
 {
     *__retval = Lifecycle::GetApplicationStateBackground();
 }
 
-// private static int GetApplicationStateForeground() :206
+// private static int GetApplicationStateForeground() :209
 void Lifecycle__GetApplicationStateForeground_fn(int* __retval)
 {
     *__retval = Lifecycle::GetApplicationStateForeground();
 }
 
-// private static int GetApplicationStateInteractive() :214
+// private static int GetApplicationStateInteractive() :217
 void Lifecycle__GetApplicationStateInteractive_fn(int* __retval)
 {
     *__retval = Lifecycle::GetApplicationStateInteractive();
 }
 
-// private static int GetCurrentState() :230
+// private static int GetCurrentState() :233
 void Lifecycle__GetCurrentState_fn(int* __retval)
 {
     *__retval = Lifecycle::GetCurrentState();
 }
 
-// public Lifecycle New() :148
+// public Lifecycle New() :151
 void Lifecycle__New3_fn(Lifecycle** __retval)
 {
     *__retval = Lifecycle::New3();
 }
 
-// private void OnEnteringBackground(Fuse.Platform.ApplicationState newState) :295
+// private void OnEnteringBackground(Fuse.Platform.ApplicationState newState) :298
 void Lifecycle__OnEnteringBackground_fn(Lifecycle* __this, int* newState)
 {
     __this->OnEnteringBackground(*newState);
 }
 
-// private void OnEnteringForeground(Fuse.Platform.ApplicationState newState) :247
+// private void OnEnteringForeground(Fuse.Platform.ApplicationState newState) :250
 void Lifecycle__OnEnteringForeground_fn(Lifecycle* __this, int* newState)
 {
     __this->OnEnteringForeground(*newState);
 }
 
-// private void OnEnteringInteractive(Fuse.Platform.ApplicationState newState) :263
+// private void OnEnteringInteractive(Fuse.Platform.ApplicationState newState) :266
 void Lifecycle__OnEnteringInteractive_fn(Lifecycle* __this, int* newState)
 {
     __this->OnEnteringInteractive(*newState);
 }
 
-// private void OnExitedInteractive(Fuse.Platform.ApplicationState newState) :279
+// private void OnExitedInteractive(Fuse.Platform.ApplicationState newState) :282
 void Lifecycle__OnExitedInteractive_fn(Lifecycle* __this, int* newState)
 {
     __this->OnExitedInteractive(*newState);
 }
 
-// private void OnStateChanged(Fuse.Platform.ApplicationState newState) :312
+// private void OnStateChanged(Fuse.Platform.ApplicationState newState) :315
 void Lifecycle__OnStateChanged_fn(Lifecycle* __this, int* newState)
 {
     __this->OnStateChanged(*newState);
@@ -1149,7 +1149,7 @@ void Lifecycle__OnStateChanged_fn(Lifecycle* __this, int* newState)
 
 uSStrong<Lifecycle*> Lifecycle::_instance_;
 
-// public Lifecycle() [instance] :148
+// public Lifecycle() [instance] :151
 void Lifecycle::ctor_3()
 {
     uStackFrame __("FuseJS.Lifecycle", ".ctor()");
@@ -1189,72 +1189,72 @@ void Lifecycle::ctor_3()
     ::g::Fuse::Platform::Lifecycle::add_EnteringBackground(uDelegate::New(::TYPES[23/*Uno.Action<Fuse.Platform.ApplicationState>*/], (void*)Lifecycle__OnStateChanged_fn, this));
 }
 
-// private void OnEnteringBackground(Fuse.Platform.ApplicationState newState) [instance] :295
+// private void OnEnteringBackground(Fuse.Platform.ApplicationState newState) [instance] :298
 void Lifecycle::OnEnteringBackground(int newState)
 {
     uStackFrame __("FuseJS.Lifecycle", "OnEnteringBackground(Fuse.Platform.ApplicationState)");
     Emit(uArray::Init<uObject*>(::TYPES[19/*object[]*/], 1, ::STRINGS[43/*"enteringBac...*/]));
 }
 
-// private void OnEnteringForeground(Fuse.Platform.ApplicationState newState) [instance] :247
+// private void OnEnteringForeground(Fuse.Platform.ApplicationState newState) [instance] :250
 void Lifecycle::OnEnteringForeground(int newState)
 {
     uStackFrame __("FuseJS.Lifecycle", "OnEnteringForeground(Fuse.Platform.ApplicationState)");
     Emit(uArray::Init<uObject*>(::TYPES[19/*object[]*/], 1, ::STRINGS[42/*"enteringFor...*/]));
 }
 
-// private void OnEnteringInteractive(Fuse.Platform.ApplicationState newState) [instance] :263
+// private void OnEnteringInteractive(Fuse.Platform.ApplicationState newState) [instance] :266
 void Lifecycle::OnEnteringInteractive(int newState)
 {
     uStackFrame __("FuseJS.Lifecycle", "OnEnteringInteractive(Fuse.Platform.ApplicationState)");
     Emit(uArray::Init<uObject*>(::TYPES[19/*object[]*/], 1, ::STRINGS[40/*"enteringInt...*/]));
 }
 
-// private void OnExitedInteractive(Fuse.Platform.ApplicationState newState) [instance] :279
+// private void OnExitedInteractive(Fuse.Platform.ApplicationState newState) [instance] :282
 void Lifecycle::OnExitedInteractive(int newState)
 {
     uStackFrame __("FuseJS.Lifecycle", "OnExitedInteractive(Fuse.Platform.ApplicationState)");
     Emit(uArray::Init<uObject*>(::TYPES[19/*object[]*/], 1, ::STRINGS[41/*"exitedInter...*/]));
 }
 
-// private void OnStateChanged(Fuse.Platform.ApplicationState newState) [instance] :312
+// private void OnStateChanged(Fuse.Platform.ApplicationState newState) [instance] :315
 void Lifecycle::OnStateChanged(int newState)
 {
     uStackFrame __("FuseJS.Lifecycle", "OnStateChanged(Fuse.Platform.ApplicationState)");
     Emit(uArray::Init<uObject*>(::TYPES[19/*object[]*/], 2, ::STRINGS[44/*"stateChanged"*/], uBox<int>(::g::Uno::Int_typeof(), newState)));
 }
 
-// private static int Converter(Fuse.Scripting.Context context, int state) [static] :317
+// private static int Converter(Fuse.Scripting.Context context, int state) [static] :320
 int Lifecycle::Converter(::g::Fuse::Scripting::Context* context, int state)
 {
     return state;
 }
 
-// private static int GetApplicationStateBackground() [static] :198
+// private static int GetApplicationStateBackground() [static] :201
 int Lifecycle::GetApplicationStateBackground()
 {
     return 1;
 }
 
-// private static int GetApplicationStateForeground() [static] :206
+// private static int GetApplicationStateForeground() [static] :209
 int Lifecycle::GetApplicationStateForeground()
 {
     return 2;
 }
 
-// private static int GetApplicationStateInteractive() [static] :214
+// private static int GetApplicationStateInteractive() [static] :217
 int Lifecycle::GetApplicationStateInteractive()
 {
     return 3;
 }
 
-// private static int GetCurrentState() [static] :230
+// private static int GetCurrentState() [static] :233
 int Lifecycle::GetCurrentState()
 {
     return ::g::Fuse::Platform::Lifecycle::State();
 }
 
-// public Lifecycle New() [static] :148
+// public Lifecycle New() [static] :151
 Lifecycle* Lifecycle::New3()
 {
     Lifecycle* obj1 = (Lifecycle*)uNew(Lifecycle_typeof());
@@ -1263,15 +1263,15 @@ Lifecycle* Lifecycle::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------
 
-// internal sealed class RaiseEvent :877
+// internal sealed class RaiseEvent :880
 // {
 static void RaiseEvent_build(uType* type)
 {
     ::STRINGS[54] = uString::Const("Cannot find message with name: ");
-    ::STRINGS[55] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno");
+    ::STRINGS[55] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno");
     ::STRINGS[56] = uString::Const("Raise");
     type->SetFields(0,
         ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), uObject_typeof(), NULL), offsetof(::g::FuseJS::RaiseEvent, Args), 0,
@@ -1294,30 +1294,30 @@ uType* RaiseEvent_typeof()
     return type;
 }
 
-// public generated RaiseEvent() :877
+// public generated RaiseEvent() :880
 void RaiseEvent__ctor__fn(RaiseEvent* __this)
 {
     __this->ctor_();
 }
 
-// public generated RaiseEvent New() :877
+// public generated RaiseEvent New() :880
 void RaiseEvent__New1_fn(RaiseEvent** __retval)
 {
     *__retval = RaiseEvent::New1();
 }
 
-// public void Raise() :884
+// public void Raise() :887
 void RaiseEvent__Raise_fn(RaiseEvent* __this)
 {
     __this->Raise();
 }
 
-// public generated RaiseEvent() [instance] :877
+// public generated RaiseEvent() [instance] :880
 void RaiseEvent::ctor_()
 {
 }
 
-// public void Raise() [instance] :884
+// public void Raise() [instance] :887
 void RaiseEvent::Raise()
 {
     uStackFrame __("FuseJS.RaiseEvent", "Raise()");
@@ -1325,14 +1325,14 @@ void RaiseEvent::Raise()
 
     if (dispatch == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::STRINGS[54/*"Cannot find...*/], Name), this, ::STRINGS[55/*"/Users/eric...*/], 889, ::STRINGS[56/*"Raise"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::STRINGS[54/*"Cannot find...*/], Name), this, ::STRINGS[55/*"/Users/eric...*/], 892, ::STRINGS[56/*"Raise"*/], NULL);
         return;
     }
 
     uPtr(dispatch)->DirectRaise(Source, Args);
 }
 
-// public generated RaiseEvent New() [static] :877
+// public generated RaiseEvent New() [static] :880
 RaiseEvent* RaiseEvent::New1()
 {
     RaiseEvent* obj1 = (RaiseEvent*)uNew(RaiseEvent_typeof());
@@ -1341,10 +1341,10 @@ RaiseEvent* RaiseEvent::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------
 
-// private sealed class Bundle.ReadClosure :792
+// private sealed class Bundle.ReadClosure :795
 // {
 static void Bundle__ReadClosure_build(uType* type)
 {
@@ -1366,38 +1366,38 @@ uType* Bundle__ReadClosure_typeof()
     return type;
 }
 
-// public ReadClosure(string filename) :796
+// public ReadClosure(string filename) :799
 void Bundle__ReadClosure__ctor__fn(Bundle__ReadClosure* __this, uString* filename)
 {
     __this->ctor_(filename);
 }
 
-// public string Invoke() :801
+// public string Invoke() :804
 void Bundle__ReadClosure__Invoke_fn(Bundle__ReadClosure* __this, uString** __retval)
 {
     *__retval = __this->Invoke();
 }
 
-// public ReadClosure New(string filename) :796
+// public ReadClosure New(string filename) :799
 void Bundle__ReadClosure__New1_fn(uString* filename, Bundle__ReadClosure** __retval)
 {
     *__retval = Bundle__ReadClosure::New1(filename);
 }
 
-// public ReadClosure(string filename) [instance] :796
+// public ReadClosure(string filename) [instance] :799
 void Bundle__ReadClosure::ctor_(uString* filename)
 {
     _filename = filename;
 }
 
-// public string Invoke() [instance] :801
+// public string Invoke() [instance] :804
 uString* Bundle__ReadClosure::Invoke()
 {
     uStackFrame __("FuseJS.Bundle.ReadClosure", "Invoke()");
     return ::g::FuseJS::Bundle::Read1(_filename);
 }
 
-// public ReadClosure New(string filename) [static] :796
+// public ReadClosure New(string filename) [static] :799
 Bundle__ReadClosure* Bundle__ReadClosure::New1(uString* filename)
 {
     Bundle__ReadClosure* obj1 = (Bundle__ReadClosure*)uNew(Bundle__ReadClosure_typeof());
@@ -1406,17 +1406,17 @@ Bundle__ReadClosure* Bundle__ReadClosure::New1(uString* filename)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------
 
-// public sealed class UserEvents :899
+// public sealed class UserEvents :902
 // {
 static void UserEvents_build(uType* type)
 {
     ::STRINGS[57] = uString::Const("FuseJS/UserEvents");
     ::STRINGS[58] = uString::Const("raise");
     ::STRINGS[59] = uString::Const("The FuseJS/UserEvents `Raise` function is deprecated. Use the `object.raise` on a named event instead.");
-    ::STRINGS[55] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno");
+    ::STRINGS[55] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno");
     ::STRINGS[56] = uString::Const("Raise");
     ::TYPES[0] = ::g::Fuse::Scripting::NativeCallback_typeof();
     ::TYPES[1] = ::g::Uno::String_typeof();
@@ -1453,19 +1453,19 @@ static void UserEvents_build(uType* type)
     return type;
 }
 
-// public UserEvents() :902
+// public UserEvents() :905
 void UserEvents__ctor_2_fn(UserEvents* __this)
 {
     __this->ctor_2();
 }
 
-// public UserEvents New() :902
+// public UserEvents New() :905
 void UserEvents__New2_fn(UserEvents** __retval)
 {
     *__retval = UserEvents::New2();
 }
 
-// public static object Raise(Fuse.Scripting.Context context, object[] args) :915
+// public static object Raise(Fuse.Scripting.Context context, object[] args) :918
 void UserEvents__Raise_fn(::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = UserEvents::Raise(context, args);
@@ -1474,7 +1474,7 @@ void UserEvents__Raise_fn(::g::Fuse::Scripting::Context* context, uArray* args, 
 uSStrong<UserEvents*> UserEvents::_instance_;
 bool UserEvents::_warn_;
 
-// public UserEvents() [instance] :902
+// public UserEvents() [instance] :905
 void UserEvents::ctor_2()
 {
     uStackFrame __("FuseJS.UserEvents", ".ctor()");
@@ -1487,7 +1487,7 @@ void UserEvents::ctor_2()
     AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[58/*"raise"*/], uDelegate::New(::TYPES[0/*Fuse.Scripting.NativeCallback*/], (void*)UserEvents__Raise_fn)));
 }
 
-// public UserEvents New() [static] :902
+// public UserEvents New() [static] :905
 UserEvents* UserEvents::New2()
 {
     UserEvents* obj4 = (UserEvents*)uNew(UserEvents_typeof());
@@ -1495,14 +1495,14 @@ UserEvents* UserEvents::New2()
     return obj4;
 }
 
-// public static object Raise(Fuse.Scripting.Context context, object[] args) [static] :915
+// public static object Raise(Fuse.Scripting.Context context, object[] args) [static] :918
 uObject* UserEvents::Raise(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("FuseJS.UserEvents", "Raise(Fuse.Scripting.Context,object[])");
 
     if (!UserEvents::_warn_)
     {
-        ::g::Fuse::Diagnostics::Deprecated(::STRINGS[59/*"The FuseJS/...*/], context, ::STRINGS[55/*"/Users/eric...*/], 920, ::STRINGS[56/*"Raise"*/]);
+        ::g::Fuse::Diagnostics::Deprecated(::STRINGS[59/*"The FuseJS/...*/], context, ::STRINGS[55/*"/Users/eric...*/], 923, ::STRINGS[56/*"Raise"*/]);
         UserEvents::_warn_ = true;
     }
 

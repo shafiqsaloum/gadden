@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -69,13 +69,16 @@ void Control__OnPropertyChanged2_fn(Control* __this, ::g::Uno::UX::PropertyObjec
 void Control__OnRooted_fn(Control* __this);
 void Control__OnUnrooted_fn(Control* __this);
 void Control__PushPropertiesToNativeView_fn(Control* __this);
+void Control__RootBackground_fn(Control* __this);
 void Control__SetBackground_fn(Control* __this, ::g::Fuse::Drawing::Brush* value);
+void Control__UnrootBackground_fn(Control* __this);
 void Control__get_ViewHandle_fn(Control* __this, ::g::Fuse::Controls::Native::ViewHandle** __retval);
 void Control__set_ViewHandle_fn(Control* __this, ::g::Fuse::Controls::Native::ViewHandle* value);
 
 struct Control : ::g::Fuse::Elements::Element
 {
     uStrong< ::g::Fuse::Drawing::Brush*> _background;
+    bool _backgroundRooted;
     uStrong<uObject*> _nativeView;
     uStrong<uObject*> _Appearance;
     uStrong< ::g::Fuse::Visual*> _GraphicsVisual;
@@ -97,7 +100,9 @@ struct Control : ::g::Fuse::Elements::Element
     void NativeView(uObject* value);
     void OnBackgroundChanged();
     void PushPropertiesToNativeView() { (((Control_type*)__type)->fp_PushPropertiesToNativeView)(this); }
+    void RootBackground();
     void SetBackground(::g::Fuse::Drawing::Brush* value);
+    void UnrootBackground();
     ::g::Fuse::Controls::Native::ViewHandle* ViewHandle();
     void ViewHandle(::g::Fuse::Controls::Native::ViewHandle* value);
     static void CompensateForScrollView(Control* __this, ::g::Uno::Float4x4* t) { Control__CompensateForScrollView_fn(__this, t); }

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -18,7 +18,7 @@ namespace g{
 namespace Fuse{
 namespace Triggers{
 
-// public sealed class ProgressAnimation :1465
+// public sealed class ProgressAnimation :1478
 // {
 ::g::Fuse::Triggers::Trigger_type* ProgressAnimation_typeof();
 void ProgressAnimation__ctor_5_fn(ProgressAnimation* __this);

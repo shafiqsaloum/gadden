@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/$.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Outracks{
 namespace Simulator{
 
-// internal sealed class GetSimulatorEndpoint :62
+// internal sealed class GetSimulatorEndpoint :1509
 // {
 uType* GetSimulatorEndpoint_typeof();
 void GetSimulatorEndpoint__ctor__fn(GetSimulatorEndpoint* __this, ::g::Uno::Net::IPEndPoint* proxy1, uString* project1, uArray* defines1);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.Controls.Native.-5139440e.h>
@@ -17,7 +17,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// public sealed extern class UIEvent :1108
+// public sealed extern class UIEvent :1098
 // {
 static void UIEvent_build(uType* type)
 {
@@ -43,43 +43,43 @@ uType* UIEvent_typeof()
     return type;
 }
 
-// public UIEvent(ObjC.Object handle) :1113
+// public UIEvent(ObjC.Object handle) :1103
 void UIEvent__ctor__fn(UIEvent* __this, ::g::ObjC::Object* handle)
 {
     __this->ctor_(handle);
 }
 
-// public Fuse.Controls.Native.iOS.UITouch[] GetTouchesForView(ObjC.Object viewHandle) :1118
+// public Fuse.Controls.Native.iOS.UITouch[] GetTouchesForView(ObjC.Object viewHandle) :1108
 void UIEvent__GetTouchesForView_fn(UIEvent* __this, ::g::ObjC::Object* viewHandle, uArray** __retval)
 {
     *__retval = __this->GetTouchesForView(viewHandle);
 }
 
-// private static long GetTouchesForViewCount(ObjC.Object handle, ObjC.Object viewHandle) :1129
+// private static long GetTouchesForViewCount(ObjC.Object handle, ObjC.Object viewHandle) :1119
 void UIEvent__GetTouchesForViewCount_fn(::g::ObjC::Object* handle, ::g::ObjC::Object* viewHandle, int64_t* __retval)
 {
     *__retval = UIEvent::GetTouchesForViewCount(handle, viewHandle);
 }
 
-// private static ObjC.Object GetTouchForView(ObjC.Object handle, ObjC.Object viewHandle, int index) :1138
+// private static ObjC.Object GetTouchForView(ObjC.Object handle, ObjC.Object viewHandle, int index) :1128
 void UIEvent__GetTouchForView_fn(::g::ObjC::Object* handle, ::g::ObjC::Object* viewHandle, int* index, ::g::ObjC::Object** __retval)
 {
     *__retval = UIEvent::GetTouchForView(handle, viewHandle, *index);
 }
 
-// public UIEvent New(ObjC.Object handle) :1113
+// public UIEvent New(ObjC.Object handle) :1103
 void UIEvent__New1_fn(::g::ObjC::Object* handle, UIEvent** __retval)
 {
     *__retval = UIEvent::New1(handle);
 }
 
-// public UIEvent(ObjC.Object handle) [instance] :1113
+// public UIEvent(ObjC.Object handle) [instance] :1103
 void UIEvent::ctor_(::g::ObjC::Object* handle)
 {
     _handle = handle;
 }
 
-// public Fuse.Controls.Native.iOS.UITouch[] GetTouchesForView(ObjC.Object viewHandle) [instance] :1118
+// public Fuse.Controls.Native.iOS.UITouch[] GetTouchesForView(ObjC.Object viewHandle) [instance] :1108
 uArray* UIEvent::GetTouchesForView(::g::ObjC::Object* viewHandle)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.UIEvent", "GetTouchesForView(ObjC.Object)");
@@ -92,7 +92,7 @@ uArray* UIEvent::GetTouchesForView(::g::ObjC::Object* viewHandle)
     return touches;
 }
 
-// private static long GetTouchesForViewCount(ObjC.Object handle, ObjC.Object viewHandle) [static] :1129
+// private static long GetTouchesForViewCount(ObjC.Object handle, ObjC.Object viewHandle) [static] :1119
 int64_t UIEvent::GetTouchesForViewCount(::g::ObjC::Object* handle, ::g::ObjC::Object* viewHandle)
 {
     @autoreleasepool
@@ -108,7 +108,7 @@ int64_t UIEvent::GetTouchesForViewCount(::g::ObjC::Object* handle, ::g::ObjC::Ob
     
 }
 
-// private static ObjC.Object GetTouchForView(ObjC.Object handle, ObjC.Object viewHandle, int index) [static] :1138
+// private static ObjC.Object GetTouchForView(ObjC.Object handle, ObjC.Object viewHandle, int index) [static] :1128
 ::g::ObjC::Object* UIEvent::GetTouchForView(::g::ObjC::Object* handle, ::g::ObjC::Object* viewHandle, int index)
 {
     @autoreleasepool
@@ -124,7 +124,7 @@ int64_t UIEvent::GetTouchesForViewCount(::g::ObjC::Object* handle, ::g::ObjC::Ob
     
 }
 
-// public UIEvent New(ObjC.Object handle) [static] :1113
+// public UIEvent New(ObjC.Object handle) [static] :1103
 UIEvent* UIEvent::New1(::g::ObjC::Object* handle)
 {
     UIEvent* obj1 = (UIEvent*)uNew(UIEvent_typeof());

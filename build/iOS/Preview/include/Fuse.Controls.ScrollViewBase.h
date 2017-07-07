@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -34,7 +34,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial class ScrollViewBase :533
+// public partial class ScrollViewBase :587
 // {
 struct ScrollViewBase_type : ::g::Fuse::Controls::ContentControl_type
 {
@@ -59,6 +59,8 @@ void ScrollViewBase__FindAnchorElement_fn(ScrollViewBase* __this, ::g::Fuse::Ele
 void ScrollViewBase__FromScalarPosition_fn(ScrollViewBase* __this, float* value, ::g::Uno::Float2* __retval);
 void ScrollViewBase__FuseControlsNativeIScrollViewHostOnScrollPositionChanged_fn(ScrollViewBase* __this, ::g::Uno::Float2* newScrollPosition);
 void ScrollViewBase__FuseControlsNativeIScrollViewHostget_PixelsPerPoint_fn(ScrollViewBase* __this, float* __retval);
+void ScrollViewBase__get_GesturePriority_fn(ScrollViewBase* __this, int* __retval);
+void ScrollViewBase__set_GesturePriority_fn(ScrollViewBase* __this, int* value);
 void ScrollViewBase__GetContentSize_fn(ScrollViewBase* __this, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval);
 void ScrollViewBase__getParams_fn(ScrollViewBase* s, uArray* args, uString* func, ::g::Uno::Float2* pos, bool* __retval);
 void ScrollViewBase__GetVisualScrollPosition_fn(ScrollViewBase* __this, ::g::Fuse::Visual* n, ::g::Uno::Float2* __retval);
@@ -79,8 +81,6 @@ void ScrollViewBase__get_Motion_fn(ScrollViewBase* __this, ::g::Fuse::Motion::Mo
 void ScrollViewBase__set_Motion_fn(ScrollViewBase* __this, ::g::Fuse::Motion::MotionConfig* value);
 void ScrollViewBase__get_NativeScrollView_fn(ScrollViewBase* __this, uObject** __retval);
 void ScrollViewBase__New3_fn(ScrollViewBase** __retval);
-void ScrollViewBase__OnChildAdded_fn(ScrollViewBase* __this, ::g::Fuse::Node* b);
-void ScrollViewBase__OnChildRemoved_fn(ScrollViewBase* __this, ::g::Fuse::Node* b);
 void ScrollViewBase__OnContentChanged_fn(ScrollViewBase* __this);
 void ScrollViewBase__OnRooted_fn(ScrollViewBase* __this);
 void ScrollViewBase__OnScrollPositionChanged_fn(ScrollViewBase* __this, ::g::Uno::Float2* arrangeOffset, bool* adjustment, uObject* origin);
@@ -115,6 +115,7 @@ struct ScrollViewBase : ::g::Fuse::Controls::ContentControl
     int _contentAlignment;
     ::g::Uno::Float2 _contentMarginSize;
     uStrong< ::g::Fuse::Visual*> _currentContent;
+    int _gesturePriority;
     bool _hasPrevArrange;
     bool _keepFocusInView;
     static ::g::Uno::UX::Selector _keepFocusInViewName_;
@@ -134,6 +135,8 @@ struct ScrollViewBase : ::g::Fuse::Controls::ContentControl
     bool _snapMaxTransform;
     bool _snapMinTransform;
     bool _userScroll;
+    static ::g::Uno::UX::Selector GesturePriorityName_;
+    static ::g::Uno::UX::Selector& GesturePriorityName() { return ScrollViewBase_typeof()->Init(), GesturePriorityName_; }
     static ::g::Uno::UX::Selector ScrollPositionName_;
     static ::g::Uno::UX::Selector& ScrollPositionName() { return ScrollViewBase_typeof()->Init(), ScrollPositionName_; }
     static ::g::Uno::UX::Selector UserScrollName_;
@@ -153,6 +156,8 @@ struct ScrollViewBase : ::g::Fuse::Controls::ContentControl
     ::g::Fuse::Elements::Element* Element();
     ::g::Fuse::Elements::Element* FindAnchorElement();
     ::g::Uno::Float2 FromScalarPosition(float value);
+    int GesturePriority();
+    void GesturePriority(int value);
     ::g::Uno::Float2 GetVisualScrollPosition(::g::Fuse::Visual* n);
     void Goto(::g::Uno::Float2 position);
     void GotoRelative(::g::Uno::Float2 position);

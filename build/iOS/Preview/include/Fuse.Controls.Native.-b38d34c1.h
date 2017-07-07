@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// public sealed extern class UIEvent :1108
+// public sealed extern class UIEvent :1098
 // {
 uType* UIEvent_typeof();
 void UIEvent__ctor__fn(UIEvent* __this, ::g::ObjC::Object* handle);

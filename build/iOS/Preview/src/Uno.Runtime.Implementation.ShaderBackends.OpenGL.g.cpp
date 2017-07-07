@@ -88,8 +88,8 @@ namespace Implementation{
 namespace ShaderBackends{
 namespace OpenGL{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/shaderbackends/opengl/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/shaderbackends/opengl/$.uno
+// -------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed extern class GLCompiledProgram :8
 // {
@@ -219,8 +219,8 @@ GLCompiledProgram* GLCompiledProgram::New1(uString* vsSource, uString* fsSource,
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/shaderbackends/opengl/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/shaderbackends/opengl/$.uno
+// -------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public extern struct GLDrawCall :71
 // {
@@ -1371,8 +1371,8 @@ GLDrawCall GLDrawCall__New1(::g::Uno::Runtime::Implementation::ShaderBackends::O
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/shaderbackends/opengl/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/shaderbackends/opengl/$.uno
+// -------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed extern class GLException :621
 // {
@@ -1425,8 +1425,8 @@ GLException* GLException::New4(uString* message)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/shaderbackends/opengl/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/shaderbackends/opengl/$.uno
+// -------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public static extern class GLHelpers :641
 // {
@@ -1716,8 +1716,8 @@ void GLHelpers::TexImage2DFromIntPtr(int target, int w, int h, int mip, int form
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/shaderbackends/opengl/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/shaderbackends/opengl/$.uno
+// -------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public static extern class GLInterop :830
 // {
@@ -2311,8 +2311,8 @@ int GLInterop::ToUnoGraphicsPrimitiveType(int x)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/shaderbackends/opengl/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/shaderbackends/opengl/$.uno
+// -------------------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed extern class GLProgram :1305
 // {

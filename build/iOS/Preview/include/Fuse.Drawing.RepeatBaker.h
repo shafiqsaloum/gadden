@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/drawing/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/drawing/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -15,7 +15,7 @@ namespace g{
 namespace Fuse{
 namespace Drawing{
 
-// internal sealed class RepeatBaker :301
+// internal sealed class RepeatBaker :311
 // {
 uType* RepeatBaker_typeof();
 void RepeatBaker__ctor__fn(RepeatBaker* __this);

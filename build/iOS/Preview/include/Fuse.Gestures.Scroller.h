@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -32,7 +32,7 @@ namespace g{
 namespace Fuse{
 namespace Gestures{
 
-// public class Scroller :133
+// public sealed class Scroller :139
 // {
 struct Scroller_type : ::g::Fuse::Node_type
 {
@@ -42,6 +42,7 @@ struct Scroller_type : ::g::Fuse::Node_type
 
 Scroller_type* Scroller_typeof();
 void Scroller__ctor_3_fn(Scroller* __this);
+void Scroller__ctor_4_fn(Scroller* __this, bool* ignore);
 void Scroller__CheckLimits_fn(Scroller* __this);
 void Scroller__CheckNeedUpdated_fn(Scroller* __this, bool* off);
 void Scroller__get_DelayStart_fn(Scroller* __this, bool* __retval);
@@ -52,9 +53,13 @@ void Scroller__FuseInputIGestureOnLostCapture_fn(Scroller* __this, bool* forced)
 void Scroller__FuseInputIGestureOnPointerMoved_fn(Scroller* __this, ::g::Fuse::Input::PointerMovedArgs* args, int* __retval);
 void Scroller__FuseInputIGestureOnPointerPressed_fn(Scroller* __this, ::g::Fuse::Input::PointerPressedArgs* args, int* __retval);
 void Scroller__FuseInputIGestureOnPointerReleased_fn(Scroller* __this, ::g::Fuse::Input::PointerReleasedArgs* args, int* __retval);
+void Scroller__FuseInputIGestureget_Priority_fn(Scroller* __this, int* __retval);
+void Scroller__FuseInputIGestureget_PriorityAdjustment_fn(Scroller* __this, int* __retval);
+void Scroller__FuseInputIGestureget_Significance_fn(Scroller* __this, float* __retval);
 void Scroller__Goto_fn(Scroller* __this, ::g::Uno::Float2* position);
 void Scroller__MoveUser_fn(Scroller* __this, int* flags, double* time);
 void Scroller__New2_fn(Scroller** __retval);
+void Scroller__New3_fn(bool* ignore, Scroller** __retval);
 void Scroller__OnRequestBringIntoView_fn(Scroller* __this, uObject* sender, ::g::Fuse::RequestBringIntoViewArgs* args);
 void Scroller__OnRooted_fn(Scroller* __this);
 void Scroller__OnScrollPositionChanged_fn(Scroller* __this, uObject* s, ::g::Fuse::Controls::ScrollPositionChangedArgs* args);
@@ -62,6 +67,7 @@ void Scroller__OnUnrooted_fn(Scroller* __this);
 void Scroller__OnUpdated_fn(Scroller* __this);
 void Scroller__get_OverflowExtent_fn(Scroller* __this, ::g::Uno::Float2* __retval);
 void Scroller__PerformBringIntoView_fn(Scroller* __this);
+void Scroller__get_ScrollableUserScroll_fn(Scroller* __this, bool* __retval);
 void Scroller__UnoUXIPropertyListenerOnPropertyChanged_fn(Scroller* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Selector* sel);
 void Scroller__UpdatePointerEvents_fn(Scroller* __this, bool* forceOff);
 void Scroller__UpdateScrollMax_fn(Scroller* __this);
@@ -83,16 +89,17 @@ struct Scroller : ::g::Fuse::Behavior
     double _prevTime;
     uStrong<uObject*> _region;
     uStrong< ::g::Fuse::Controls::ScrollView*> _scrollable;
+    float _significance;
     ::g::Uno::Float2 _softCaptureCurrent;
     ::g::Uno::Float2 _softCaptureStart;
     ::g::Uno::Float2 _startPos;
     bool _updateFirstFrame;
-    bool _userScroll;
     uStrong< ::g::Fuse::Motion::Simulation::PointerVelocity*> _velocity;
     static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper*> _verticalGesture_;
     static uSStrong< ::g::Fuse::Gestures::SwipeGestureHelper*>& _verticalGesture() { return Scroller_typeof()->Init(), _verticalGesture_; }
 
     void ctor_3();
+    void ctor_4(bool ignore);
     void CheckLimits();
     void CheckNeedUpdated(bool off);
     bool DelayStart();
@@ -105,11 +112,13 @@ struct Scroller : ::g::Fuse::Behavior
     void OnUpdated();
     ::g::Uno::Float2 OverflowExtent();
     void PerformBringIntoView();
+    bool ScrollableUserScroll();
     void UpdatePointerEvents(bool forceOff);
     void UpdateScrollMax();
     bool UserScroll();
     void UserScroll(bool value);
     static Scroller* New2();
+    static Scroller* New3(bool ignore);
 };
 // }
 

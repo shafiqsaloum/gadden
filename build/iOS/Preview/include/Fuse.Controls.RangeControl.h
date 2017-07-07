@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/rangecontrols/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/rangecontrols/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -6,6 +6,7 @@
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Native.-5999be91.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -30,11 +31,11 @@ namespace Controls{
 
 // public class RangeControl :561
 // {
-struct RangeControl_type : ::g::Fuse::Controls::Control_type
+struct RangeControl_type : ::g::Fuse::Controls::Panel_type
 {
-    ::g::Fuse::Triggers::IProgress interface15;
-    ::g::Fuse::Triggers::IValue interface16;
-    ::g::Fuse::Controls::Native::IRangeViewHost interface17;
+    ::g::Fuse::Triggers::IProgress interface16;
+    ::g::Fuse::Triggers::IValue interface17;
+    ::g::Fuse::Controls::Native::IRangeViewHost interface18;
 };
 
 RangeControl_type* RangeControl_typeof();

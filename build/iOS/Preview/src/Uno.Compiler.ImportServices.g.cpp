@@ -8,8 +8,8 @@ namespace Uno{
 namespace Compiler{
 namespace ImportServices{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/importservices/$.uno
-// -----------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/importservices/$.uno
+// ----------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class FilenameAttribute :34
 // {

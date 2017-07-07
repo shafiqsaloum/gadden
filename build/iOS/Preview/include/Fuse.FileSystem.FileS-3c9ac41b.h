@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -26,6 +26,8 @@ namespace FileSystem{
 void FileSystemModule__ctor_2_fn(FileSystemModule* __this);
 void FileSystemModule__AppendTextToFile_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval);
 void FileSystemModule__AppendTextToFileSync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval);
+void FileSystemModule__Copy_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval);
+void FileSystemModule__CopySync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval);
 void FileSystemModule__CreateDirectory_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval);
 void FileSystemModule__CreateDirectorySync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval);
 void FileSystemModule__Delete_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval);
@@ -72,6 +74,8 @@ struct FileSystemModule : ::g::Fuse::Scripting::NativeModule
     void ctor_2();
     ::g::Uno::Threading::Future1* AppendTextToFile(uArray* args);
     uObject* AppendTextToFileSync(::g::Fuse::Scripting::Context* context, uArray* args);
+    ::g::Uno::Threading::Future1* Copy(uArray* args);
+    uObject* CopySync(::g::Fuse::Scripting::Context* context, uArray* args);
     ::g::Uno::Threading::Future1* CreateDirectory(uArray* args);
     uObject* CreateDirectorySync(::g::Fuse::Scripting::Context* context, uArray* args);
     ::g::Uno::Threading::Future1* Delete(uArray* args);

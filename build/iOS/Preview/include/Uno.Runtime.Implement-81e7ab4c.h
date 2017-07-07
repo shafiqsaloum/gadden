@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/internal/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/internal/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -7,7 +7,6 @@ namespace g{namespace Uno{namespace Runtime{namespace Implementation{namespace I
 namespace g{namespace Uno{struct Buffer;}}
 namespace g{namespace Uno{struct Float2;}}
 namespace g{namespace Uno{struct Float3;}}
-namespace g{namespace Uno{struct Float4;}}
 
 namespace g{
 namespace Uno{
@@ -20,14 +19,12 @@ namespace Internal{
 uClassType* BufferConverters_typeof();
 void BufferConverters__ToBuffer3_fn(uArray* data, ::g::Uno::Buffer** __retval);
 void BufferConverters__ToBuffer4_fn(uArray* data, ::g::Uno::Buffer** __retval);
-void BufferConverters__ToBuffer5_fn(uArray* data, ::g::Uno::Buffer** __retval);
 void BufferConverters__ToBuffer9_fn(uArray* data, ::g::Uno::Buffer** __retval);
 
 struct BufferConverters : uObject
 {
     static ::g::Uno::Buffer* ToBuffer3(uArray* data);
     static ::g::Uno::Buffer* ToBuffer4(uArray* data);
-    static ::g::Uno::Buffer* ToBuffer5(uArray* data);
     static ::g::Uno::Buffer* ToBuffer9(uArray* data);
 };
 // }

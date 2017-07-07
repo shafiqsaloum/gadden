@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{
 namespace Fuse{
 namespace Scripting{
 
-// public delegate object Callback(object[] args) :2195
+// public delegate object Callback(object[] args) :2223
 uDelegateType* Callback_typeof();
 
 }}} // ::g::Fuse::Scripting

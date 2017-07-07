@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <ObjC.Object.h>
@@ -12,7 +12,7 @@ namespace Uno{
 namespace Platform{
 namespace iOS{
 
-// public static extern class Application :177
+// public static extern class Application :196
 // {
 static void Application_build(uType* type)
 {
@@ -39,37 +39,37 @@ uClassType* Application_typeof()
     return type;
 }
 
-// public static ObjC.Object GetRootView() :218
+// public static ObjC.Object GetRootView() :237
 void Application__GetRootView_fn(::g::ObjC::Object** __retval)
 {
     *__retval = Application::GetRootView();
 }
 
-// public static bool IsLandscape() :236
+// public static bool IsLandscape() :255
 void Application__IsLandscape_fn(bool* __retval)
 {
     *__retval = Application::IsLandscape();
 }
 
-// public static bool IsRootView(ObjC.Object view) :230
+// public static bool IsRootView(ObjC.Object view) :249
 void Application__IsRootView_fn(::g::ObjC::Object* view, bool* __retval)
 {
     *__retval = Application::IsRootView(view);
 }
 
-// public static generated ObjC.Object get_LaunchOptions() :215
+// public static generated ObjC.Object get_LaunchOptions() :234
 void Application__get_LaunchOptions_fn(::g::ObjC::Object** __retval)
 {
     *__retval = Application::LaunchOptions();
 }
 
-// private static generated void set_LaunchOptions(ObjC.Object value) :215
+// private static generated void set_LaunchOptions(ObjC.Object value) :234
 void Application__set_LaunchOptions_fn(::g::ObjC::Object* value)
 {
     Application::LaunchOptions(value);
 }
 
-// public static void SetRootView(ObjC.Object view) :224
+// public static void SetRootView(ObjC.Object view) :243
 void Application__SetRootView_fn(::g::ObjC::Object* view)
 {
     Application::SetRootView(view);
@@ -77,7 +77,7 @@ void Application__SetRootView_fn(::g::ObjC::Object* view)
 
 uSStrong< ::g::ObjC::Object*> Application::_LaunchOptions_;
 
-// public static ObjC.Object GetRootView() [static] :218
+// public static ObjC.Object GetRootView() [static] :237
 ::g::ObjC::Object* Application::GetRootView()
 {
     @autoreleasepool
@@ -91,7 +91,7 @@ uSStrong< ::g::ObjC::Object*> Application::_LaunchOptions_;
     
 }
 
-// public static bool IsLandscape() [static] :236
+// public static bool IsLandscape() [static] :255
 bool Application::IsLandscape()
 {
     @autoreleasepool
@@ -101,7 +101,7 @@ bool Application::IsLandscape()
     
 }
 
-// public static bool IsRootView(ObjC.Object view) [static] :230
+// public static bool IsRootView(ObjC.Object view) [static] :249
 bool Application::IsRootView(::g::ObjC::Object* view)
 {
     @autoreleasepool
@@ -115,7 +115,7 @@ bool Application::IsRootView(::g::ObjC::Object* view)
     
 }
 
-// public static void SetRootView(ObjC.Object view) [static] :224
+// public static void SetRootView(ObjC.Object view) [static] :243
 void Application::SetRootView(::g::ObjC::Object* view)
 {
     @autoreleasepool
@@ -129,13 +129,13 @@ void Application::SetRootView(::g::ObjC::Object* view)
     
 }
 
-// public static generated ObjC.Object get_LaunchOptions() [static] :215
+// public static generated ObjC.Object get_LaunchOptions() [static] :234
 ::g::ObjC::Object* Application::LaunchOptions()
 {
     return Application::_LaunchOptions_;
 }
 
-// private static generated void set_LaunchOptions(ObjC.Object value) [static] :215
+// private static generated void set_LaunchOptions(ObjC.Object value) [static] :234
 void Application::LaunchOptions(::g::ObjC::Object* value)
 {
     Application::_LaunchOptions_ = value;

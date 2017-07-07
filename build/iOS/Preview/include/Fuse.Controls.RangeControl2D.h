@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/rangecontrols/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/rangecontrols/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -28,9 +29,9 @@ namespace Controls{
 
 // public sealed class RangeControl2D :733
 // {
-struct RangeControl2D_type : ::g::Fuse::Controls::Control_type
+struct RangeControl2D_type : ::g::Fuse::Controls::Panel_type
 {
-    ::g::Fuse::Triggers::IValue interface15;
+    ::g::Fuse::Triggers::IValue interface16;
 };
 
 RangeControl2D_type* RangeControl2D_typeof();

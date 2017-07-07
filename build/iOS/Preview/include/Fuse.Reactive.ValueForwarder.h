@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public sealed class ValueForwarder :195
+// internal sealed class ValueForwarder :196
 // {
 ::g::Fuse::Reactive::ValueObserver_type* ValueForwarder_typeof();
 void ValueForwarder__ctor_1_fn(ValueForwarder* __this, uObject* obs, uObject* listener);

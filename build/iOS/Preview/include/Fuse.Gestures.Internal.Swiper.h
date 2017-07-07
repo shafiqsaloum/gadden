@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -22,7 +22,7 @@ namespace Fuse{
 namespace Gestures{
 namespace Internal{
 
-// internal sealed class Swiper :917
+// internal sealed class Swiper :943
 // {
 struct Swiper_type : uType
 {
@@ -41,6 +41,9 @@ void Swiper__FuseInputIGestureOnLostCapture_fn(Swiper* __this, bool* forced);
 void Swiper__FuseInputIGestureOnPointerMoved_fn(Swiper* __this, ::g::Fuse::Input::PointerMovedArgs* args, int* __retval);
 void Swiper__FuseInputIGestureOnPointerPressed_fn(Swiper* __this, ::g::Fuse::Input::PointerPressedArgs* args, int* __retval);
 void Swiper__FuseInputIGestureOnPointerReleased_fn(Swiper* __this, ::g::Fuse::Input::PointerReleasedArgs* args, int* __retval);
+void Swiper__FuseInputIGestureget_Priority_fn(Swiper* __this, int* __retval);
+void Swiper__FuseInputIGestureget_PriorityAdjustment_fn(Swiper* __this, int* __retval);
+void Swiper__FuseInputIGestureget_Significance_fn(Swiper* __this, float* __retval);
 void Swiper__MoveUser_fn(Swiper* __this, ::g::Uno::Float2* coord, double* elapsed, bool* release);
 void Swiper__New1_fn(::g::Fuse::Elements::Element* elm, Swiper** __retval);
 void Swiper__OnRooted_fn(Swiper* __this, ::g::Fuse::Elements::Element* n);
@@ -48,7 +51,7 @@ void Swiper__OnUnrooted_fn(Swiper* __this);
 void Swiper__OnUpdated_fn(Swiper* __this);
 void Swiper__RemoveRegion_fn(Swiper* __this, ::g::Fuse::Gestures::Internal::SwipeRegion* region);
 void Swiper__RestartMove_fn(Swiper* __this, ::g::Uno::Float2* currentCoord);
-void Swiper__SelectRegion_fn(Swiper* __this, ::g::Uno::Float2* diff, bool* force, ::g::Fuse::Gestures::Internal::SwipeRegion** __retval);
+void Swiper__SelectRegion_fn(Swiper* __this, ::g::Uno::Float2* diff, ::g::Fuse::Gestures::Internal::SwipeRegion** __retval);
 void Swiper__SetActivation_fn(Swiper* __this, ::g::Fuse::Gestures::Internal::SwipeRegion* region, bool* on, bool* bypass);
 
 struct Swiper : uObject
@@ -64,6 +67,7 @@ struct Swiper : uObject
     uStrong< ::g::Uno::Collections::List*> _pointerRegions;
     double _prevTime;
     uStrong< ::g::Uno::Collections::List*> _regions;
+    float _significance;
     ::g::Uno::Float2 _startCoord;
     double _startProgress;
     static uSStrong< ::g::Fuse::PropertyHandle*> _swiperProperty_;
@@ -82,7 +86,7 @@ struct Swiper : uObject
     void OnUpdated();
     void RemoveRegion(::g::Fuse::Gestures::Internal::SwipeRegion* region);
     void RestartMove(::g::Uno::Float2 currentCoord);
-    ::g::Fuse::Gestures::Internal::SwipeRegion* SelectRegion(::g::Uno::Float2 diff, bool force);
+    ::g::Fuse::Gestures::Internal::SwipeRegion* SelectRegion(::g::Uno::Float2 diff);
     void SetActivation(::g::Fuse::Gestures::Internal::SwipeRegion* region, bool on, bool bypass);
     static Swiper* AttachSwiper(::g::Fuse::Elements::Element* elm);
     static Swiper* New1(::g::Fuse::Elements::Element* elm);

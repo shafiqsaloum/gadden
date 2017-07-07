@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -34,7 +34,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// internal partial sealed class ThreadWorker :1324
+// internal partial sealed class ThreadWorker :1368
 // {
 struct ThreadWorker_type : uType
 {

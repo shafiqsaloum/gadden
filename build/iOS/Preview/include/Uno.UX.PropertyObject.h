@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/ux/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{
 namespace Uno{
 namespace UX{
 
-// public class PropertyObject :323
+// public class PropertyObject :324
 // {
 uType* PropertyObject_typeof();
 void PropertyObject__ctor__fn(PropertyObject* __this);
@@ -23,7 +23,7 @@ void PropertyObject__New1_fn(PropertyObject** __retval);
 void PropertyObject__OnPropertyChanged_fn(PropertyObject* __this, ::g::Uno::UX::Selector* property);
 void PropertyObject__OnPropertyChanged1_fn(PropertyObject* __this, ::g::Uno::UX::Selector* property, uObject* origin);
 void PropertyObject__RemovePropertyListener_fn(PropertyObject* __this, uObject* listener);
-void PropertyObject__SetSimulatedProperty_fn(PropertyObject* __this, uString* name, uObject* value);
+void PropertyObject__SetSimulatedProperty_fn(PropertyObject* __this, uString* name, uObject* value, uObject* origin);
 
 struct PropertyObject : uObject
 {
@@ -36,7 +36,7 @@ struct PropertyObject : uObject
     void OnPropertyChanged(::g::Uno::UX::Selector property);
     void OnPropertyChanged1(::g::Uno::UX::Selector property, uObject* origin);
     void RemovePropertyListener(uObject* listener);
-    void SetSimulatedProperty(uString* name, uObject* value);
+    void SetSimulatedProperty(uString* name, uObject* value, uObject* origin);
     static void EmulatePropertyChanged(PropertyObject* obj, ::g::Uno::UX::Selector sel, uObject* origin);
     static PropertyObject* New1();
 };

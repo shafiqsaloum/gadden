@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -17,7 +17,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal sealed class FastMatrixTransform :1820
+// internal sealed class FastMatrixTransform :1810
 // {
 ::g::Fuse::Transform_type* FastMatrixTransform_typeof();
 void FastMatrixTransform__ctor_3_fn(FastMatrixTransform* __this);

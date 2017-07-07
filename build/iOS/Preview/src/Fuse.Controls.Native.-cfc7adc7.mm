@@ -1,11 +1,14 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.AppBase.h>
 #include <Fuse.Controls.Native.-5139440e.h>
+#include <Fuse.Controls.Native.-6c93d881.h>
+#include <Fuse.Controls.Native.-750690c0.h>
 #include <Fuse.Controls.Native.-9b8fa15e.h>
 #include <Fuse.Controls.Native.-b38d34c1.h>
 #include <Fuse.Controls.Native.-cfc7adc7.h>
+#include <Fuse.Controls.Native.-e502cdf1.h>
 #include <Fuse.Input.Pointer.h>
 #include <Fuse.Input.PointerEventData.h>
 #include <Fuse.Node.h>
@@ -27,7 +30,7 @@
 #include <Uno.String.h>
 #include <uObjC.Foreign.h>
 static uString* STRINGS[1];
-static uType* TYPES[4];
+static uType* TYPES[5];
 
 namespace g{
 namespace Fuse{
@@ -35,9 +38,9 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// internal static extern class InputDispatch :767
+// internal static extern class InputDispatch :771
 // {
-// static InputDispatch() :773
+// static InputDispatch() :777
 static void InputDispatch__cctor__fn(uType* __type)
 {
     InputDispatch::_captureIdentity_ = ::g::Uno::Object::New();
@@ -52,13 +55,13 @@ static void InputDispatch_build(uType* type)
     ::TYPES[0] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::ObjC::Object_typeof(), ::g::Fuse::Visual_typeof(), NULL);
     ::TYPES[1] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Controls::Native::iOS::UITouch_typeof(), NULL);
     ::TYPES[2] = ::g::Uno::Action2_typeof()->MakeType(::g::ObjC::Object_typeof(), ::g::ObjC::Object_typeof(), NULL);
-    ::TYPES[3] = ::g::Uno::Exception_typeof();
+    ::TYPES[3] = ::g::Fuse::Controls::Native::NativeRootViewport_typeof();
+    ::TYPES[4] = ::g::Uno::Exception_typeof();
     type->SetFields(0,
         ::TYPES[1/*Uno.Collections.List<Fuse.Controls.Native.iOS.UITouch>*/], (uintptr_t)&::g::Fuse::Controls::Native::iOS::InputDispatch::_activeTouches_, uFieldFlagsStatic,
         uObject_typeof(), (uintptr_t)&::g::Fuse::Controls::Native::iOS::InputDispatch::_captureIdentity_, uFieldFlagsStatic,
         ::g::ObjC::Object_typeof(), (uintptr_t)&::g::Fuse::Controls::Native::iOS::InputDispatch::_eventHandler_, uFieldFlagsStatic,
-        ::TYPES[0/*Uno.Collections.Dictionary<ObjC.Object, Fuse.Visual>*/], (uintptr_t)&::g::Fuse::Controls::Native::iOS::InputDispatch::_listeners_, uFieldFlagsStatic,
-        ::g::ObjC::Object_typeof(), (uintptr_t)&::g::Fuse::Controls::Native::iOS::InputDispatch::_RootView_, uFieldFlagsStatic);
+        ::TYPES[0/*Uno.Collections.Dictionary<ObjC.Object, Fuse.Visual>*/], (uintptr_t)&::g::Fuse::Controls::Native::iOS::InputDispatch::_listeners_, uFieldFlagsStatic);
 }
 
 uClassType* InputDispatch_typeof()
@@ -67,7 +70,7 @@ uClassType* InputDispatch_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 5;
+    options.FieldCount = 4;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Fuse.Controls.Native.iOS.InputDispatch", options);
     type->fp_build_ = InputDispatch_build;
@@ -75,139 +78,114 @@ uClassType* InputDispatch_typeof()
     return type;
 }
 
-// private static void ActivateTouch(Fuse.Controls.Native.iOS.UITouch touch) :793
+// private static void ActivateTouch(Fuse.Controls.Native.iOS.UITouch touch) :797
 void InputDispatch__ActivateTouch_fn(::g::Fuse::Controls::Native::iOS::UITouch* touch)
 {
     InputDispatch::ActivateTouch(touch);
 }
 
-// public static void AddListener(Fuse.Visual visual, ObjC.Object handle) :939
+// public static void AddListener(Fuse.Visual visual, ObjC.Object handle) :943
 void InputDispatch__AddListener_fn(::g::Fuse::Visual* visual, ::g::ObjC::Object* handle)
 {
     InputDispatch::AddListener(visual, handle);
 }
 
-// private static void AddListener(ObjC.Object eventHandler, ObjC.Object uicontrol) :985
+// private static void AddListener(ObjC.Object eventHandler, ObjC.Object uicontrol) :973
 void InputDispatch__AddListener1_fn(::g::ObjC::Object* eventHandler, ::g::ObjC::Object* uicontrol)
 {
     InputDispatch::AddListener1(eventHandler, uicontrol);
 }
 
-// private static ObjC.Object CreateEventHandler(Uno.Action<ObjC.Object, ObjC.Object> callback) :975
+// private static ObjC.Object CreateEventHandler(Uno.Action<ObjC.Object, ObjC.Object> callback) :963
 void InputDispatch__CreateEventHandler_fn(uDelegate* callback, ::g::ObjC::Object** __retval)
 {
     *__retval = InputDispatch::CreateEventHandler(callback);
 }
 
-// private static void DeactivateAllTouches() :804
+// private static void DeactivateAllTouches() :808
 void InputDispatch__DeactivateAllTouches_fn()
 {
     InputDispatch::DeactivateAllTouches();
 }
 
-// private static Fuse.Visual FindRoot(Fuse.Visual visual) :885
+// private static Fuse.Visual FindRoot(Fuse.Visual visual) :889
 void InputDispatch__FindRoot_fn(::g::Fuse::Visual* visual, ::g::Fuse::Visual** __retval)
 {
     *__retval = InputDispatch::FindRoot(visual);
 }
 
-// private static int GetPointerIndex(Fuse.Controls.Native.iOS.UITouch touch) :799
+// private static int GetPointerIndex(Fuse.Controls.Native.iOS.UITouch touch) :803
 void InputDispatch__GetPointerIndex_fn(::g::Fuse::Controls::Native::iOS::UITouch* touch, int* __retval)
 {
     *__retval = InputDispatch::GetPointerIndex(touch);
 }
 
-// public static void HandleEvent(ObjC.Object viewHandle, Fuse.Visual origin, Fuse.Controls.Native.iOS.UIEvent uiEvent) :817
+// public static void HandleEvent(ObjC.Object viewHandle, Fuse.Visual origin, Fuse.Controls.Native.iOS.UIEvent uiEvent) :819
 void InputDispatch__HandleEvent_fn(::g::ObjC::Object* viewHandle, ::g::Fuse::Visual* origin, ::g::Fuse::Controls::Native::iOS::UIEvent* uiEvent)
 {
     InputDispatch::HandleEvent(viewHandle, origin, uiEvent);
 }
 
-// public static void HandleEvent(ObjC.Object viewHandle, Fuse.Visual origin, ObjC.Object uiEvent) :811
+// public static void HandleEvent(ObjC.Object viewHandle, Fuse.Visual origin, ObjC.Object uiEvent) :813
 void InputDispatch__HandleEvent1_fn(::g::ObjC::Object* viewHandle, ::g::Fuse::Visual* origin, ::g::ObjC::Object* uiEvent)
 {
     InputDispatch::HandleEvent1(viewHandle, origin, uiEvent);
 }
 
-// public static bool IsUIControl(ObjC.Object handle) :959
-void InputDispatch__IsUIControl_fn(::g::ObjC::Object* handle, bool* __retval)
-{
-    *__retval = InputDispatch::IsUIControl(handle);
-}
-
-// private static bool IsUIEvent(ObjC.Object handle) :967
-void InputDispatch__IsUIEvent_fn(::g::ObjC::Object* handle, bool* __retval)
-{
-    *__retval = InputDispatch::IsUIEvent(handle);
-}
-
-// private static Fuse.Input.PointerEventData MakePointerEventData(Fuse.Controls.Native.iOS.UITouch touch, ObjC.Object rootView, int pointIndex) :872
+// private static Fuse.Input.PointerEventData MakePointerEventData(Fuse.Controls.Native.iOS.UITouch touch, ObjC.Object rootView, int pointIndex) :876
 void InputDispatch__MakePointerEventData_fn(::g::Fuse::Controls::Native::iOS::UITouch* touch, ::g::ObjC::Object* rootView, int* pointIndex, ::g::Fuse::Input::PointerEventData** __retval)
 {
     *__retval = InputDispatch::MakePointerEventData(touch, rootView, *pointIndex);
 }
 
-// private static void OnTouchEvent(ObjC.Object sender, ObjC.Object uiEvent) :780
+// private static void OnTouchEvent(ObjC.Object sender, ObjC.Object uiEvent) :784
 void InputDispatch__OnTouchEvent_fn(::g::ObjC::Object* sender, ::g::ObjC::Object* uiEvent)
 {
     InputDispatch::OnTouchEvent(sender, uiEvent);
 }
 
-// private static void RaiseCancelled(Fuse.Visual visual, Fuse.Input.PointerEventData data) :927
+// private static void RaiseCancelled(Fuse.Visual visual, Fuse.Input.PointerEventData data) :931
 void InputDispatch__RaiseCancelled_fn(::g::Fuse::Visual* visual, ::g::Fuse::Input::PointerEventData* data)
 {
     InputDispatch::RaiseCancelled(visual, data);
 }
 
-// private static void RaiseMoved(Fuse.Visual visual, Fuse.Input.PointerEventData data) :902
-void InputDispatch__RaiseMoved_fn(::g::Fuse::Visual* visual, ::g::Fuse::Input::PointerEventData* data)
+// private static void RaiseMoved(Fuse.Visual root, Fuse.Visual visual, Fuse.Input.PointerEventData data) :906
+void InputDispatch__RaiseMoved_fn(::g::Fuse::Visual* root, ::g::Fuse::Visual* visual, ::g::Fuse::Input::PointerEventData* data)
 {
-    InputDispatch::RaiseMoved(visual, data);
+    InputDispatch::RaiseMoved(root, visual, data);
 }
 
-// private static void RaisePressed(Fuse.Visual visual, Fuse.Input.PointerEventData data) :890
-void InputDispatch__RaisePressed_fn(::g::Fuse::Visual* visual, ::g::Fuse::Input::PointerEventData* data)
+// private static void RaisePressed(Fuse.Visual root, Fuse.Visual visual, Fuse.Input.PointerEventData data) :894
+void InputDispatch__RaisePressed_fn(::g::Fuse::Visual* root, ::g::Fuse::Visual* visual, ::g::Fuse::Input::PointerEventData* data)
 {
-    InputDispatch::RaisePressed(visual, data);
+    InputDispatch::RaisePressed(root, visual, data);
 }
 
-// private static void RaiseReleased(Fuse.Visual visual, Fuse.Input.PointerEventData data) :914
-void InputDispatch__RaiseReleased_fn(::g::Fuse::Visual* visual, ::g::Fuse::Input::PointerEventData* data)
+// private static void RaiseReleased(Fuse.Visual root, Fuse.Visual visual, Fuse.Input.PointerEventData data) :918
+void InputDispatch__RaiseReleased_fn(::g::Fuse::Visual* root, ::g::Fuse::Visual* visual, ::g::Fuse::Input::PointerEventData* data)
 {
-    InputDispatch::RaiseReleased(visual, data);
+    InputDispatch::RaiseReleased(root, visual, data);
 }
 
-// public static void RemoveListener(Fuse.Visual visual, ObjC.Object handle) :948
+// public static void RemoveListener(Fuse.Visual visual, ObjC.Object handle) :952
 void InputDispatch__RemoveListener_fn(::g::Fuse::Visual* visual, ::g::ObjC::Object* handle)
 {
     InputDispatch::RemoveListener(visual, handle);
 }
 
-// private static void RemoveListener(ObjC.Object eventHandler, ObjC.Object uicontrol) :995
+// private static void RemoveListener(ObjC.Object eventHandler, ObjC.Object uicontrol) :983
 void InputDispatch__RemoveListener1_fn(::g::ObjC::Object* eventHandler, ::g::ObjC::Object* uicontrol)
 {
     InputDispatch::RemoveListener1(eventHandler, uicontrol);
-}
-
-// public static generated ObjC.Object get_RootView() :809
-void InputDispatch__get_RootView_fn(::g::ObjC::Object** __retval)
-{
-    *__retval = InputDispatch::RootView();
-}
-
-// public static generated void set_RootView(ObjC.Object value) :809
-void InputDispatch__set_RootView_fn(::g::ObjC::Object* value)
-{
-    InputDispatch::RootView(value);
 }
 
 uSStrong< ::g::Uno::Collections::List*> InputDispatch::_activeTouches_;
 uSStrong<uObject*> InputDispatch::_captureIdentity_;
 uSStrong< ::g::ObjC::Object*> InputDispatch::_eventHandler_;
 uSStrong< ::g::Uno::Collections::Dictionary*> InputDispatch::_listeners_;
-uSStrong< ::g::ObjC::Object*> InputDispatch::_RootView_;
 
-// private static void ActivateTouch(Fuse.Controls.Native.iOS.UITouch touch) [static] :793
+// private static void ActivateTouch(Fuse.Controls.Native.iOS.UITouch touch) [static] :797
 void InputDispatch::ActivateTouch(::g::Fuse::Controls::Native::iOS::UITouch* touch)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "ActivateTouch(Fuse.Controls.Native.iOS.UITouch)");
@@ -218,20 +196,20 @@ void InputDispatch::ActivateTouch(::g::Fuse::Controls::Native::iOS::UITouch* tou
         ::g::Uno::Collections::List__Add_fn(uPtr(InputDispatch::_activeTouches()), touch);
 }
 
-// public static void AddListener(Fuse.Visual visual, ObjC.Object handle) [static] :939
+// public static void AddListener(Fuse.Visual visual, ObjC.Object handle) [static] :943
 void InputDispatch::AddListener(::g::Fuse::Visual* visual, ::g::ObjC::Object* handle)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "AddListener(Fuse.Visual,ObjC.Object)");
     InputDispatch_typeof()->Init();
 
-    if (!InputDispatch::IsUIControl(handle))
+    if (!::g::Fuse::Controls::Native::iOS::ObjectExtensions::IsUIControl(handle))
         U_THROW(::g::Uno::Exception::New2(::STRINGS[0/*"Can only li...*/]));
 
     ::g::Uno::Collections::Dictionary__Add_fn(uPtr(InputDispatch::_listeners()), handle, visual);
     InputDispatch::AddListener1(InputDispatch::_eventHandler(), handle);
 }
 
-// private static void AddListener(ObjC.Object eventHandler, ObjC.Object uicontrol) [static] :985
+// private static void AddListener(ObjC.Object eventHandler, ObjC.Object uicontrol) [static] :973
 void InputDispatch::AddListener1(::g::ObjC::Object* eventHandler, ::g::ObjC::Object* uicontrol)
 {
     InputDispatch_typeof()->Init();
@@ -248,7 +226,7 @@ void InputDispatch::AddListener1(::g::ObjC::Object* eventHandler, ::g::ObjC::Obj
     
 }
 
-// private static ObjC.Object CreateEventHandler(Uno.Action<ObjC.Object, ObjC.Object> callback) [static] :975
+// private static ObjC.Object CreateEventHandler(Uno.Action<ObjC.Object, ObjC.Object> callback) [static] :963
 ::g::ObjC::Object* InputDispatch::CreateEventHandler(uDelegate* callback)
 {
     InputDispatch_typeof()->Init();
@@ -274,7 +252,7 @@ void InputDispatch::AddListener1(::g::ObjC::Object* eventHandler, ::g::ObjC::Obj
     
 }
 
-// private static void DeactivateAllTouches() [static] :804
+// private static void DeactivateAllTouches() [static] :808
 void InputDispatch::DeactivateAllTouches()
 {
     uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "DeactivateAllTouches()");
@@ -282,7 +260,7 @@ void InputDispatch::DeactivateAllTouches()
     uPtr(InputDispatch::_activeTouches())->Clear();
 }
 
-// private static Fuse.Visual FindRoot(Fuse.Visual visual) [static] :885
+// private static Fuse.Visual FindRoot(Fuse.Visual visual) [static] :889
 ::g::Fuse::Visual* InputDispatch::FindRoot(::g::Fuse::Visual* visual)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "FindRoot(Fuse.Visual)");
@@ -290,7 +268,7 @@ void InputDispatch::DeactivateAllTouches()
     return (uPtr(visual)->Parent() != NULL) ? (::g::Fuse::Visual*)InputDispatch::FindRoot(uPtr(visual)->Parent()) : visual;
 }
 
-// private static int GetPointerIndex(Fuse.Controls.Native.iOS.UITouch touch) [static] :799
+// private static int GetPointerIndex(Fuse.Controls.Native.iOS.UITouch touch) [static] :803
 int InputDispatch::GetPointerIndex(::g::Fuse::Controls::Native::iOS::UITouch* touch)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "GetPointerIndex(Fuse.Controls.Native.iOS.UITouch)");
@@ -299,18 +277,19 @@ int InputDispatch::GetPointerIndex(::g::Fuse::Controls::Native::iOS::UITouch* to
     return (::g::Uno::Collections::List__IndexOf_fn(uPtr(InputDispatch::_activeTouches()), touch, &ret3), ret3);
 }
 
-// public static void HandleEvent(ObjC.Object viewHandle, Fuse.Visual origin, Fuse.Controls.Native.iOS.UIEvent uiEvent) [static] :817
+// public static void HandleEvent(ObjC.Object viewHandle, Fuse.Visual origin, Fuse.Controls.Native.iOS.UIEvent uiEvent) [static] :819
 void InputDispatch::HandleEvent(::g::ObjC::Object* viewHandle, ::g::Fuse::Visual* origin, ::g::Fuse::Controls::Native::iOS::UIEvent* uiEvent)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "HandleEvent(ObjC.Object,Fuse.Visual,Fuse.Controls.Native.iOS.UIEvent)");
     InputDispatch_typeof()->Init();
-
-    if (InputDispatch::RootView() == NULL)
-        return;
-
+    ::g::Fuse::Visual* rootVisual = InputDispatch::FindRoot(origin);
     uArray* touches = uPtr(uiEvent)->GetTouchesForView(viewHandle);
     bool touchEnded = false;
-    ::g::ObjC::Object* rootView = InputDispatch::RootView();
+    ::g::ObjC::Object* rootView = NULL;
+    ::g::Fuse::Controls::Native::NativeRootViewport* rootViewport = uAs< ::g::Fuse::Controls::Native::NativeRootViewport*>(rootVisual, ::TYPES[3/*Fuse.Controls.Native.NativeRootViewport*/]);
+
+    if (rootViewport != NULL)
+        rootView = uPtr(uPtr(rootViewport)->RootView())->NativeHandle;
 
     for (int i = 0; i < uPtr(touches)->Length(); i++)
     {
@@ -320,12 +299,12 @@ void InputDispatch::HandleEvent(::g::ObjC::Object* viewHandle, ::g::Fuse::Visual
         ::g::Fuse::Input::PointerEventData* data = InputDispatch::MakePointerEventData(touch, rootView, pointerIndex);
 
         if (uPtr(touch)->Phase() == 0)
-            InputDispatch::RaisePressed(origin, data);
+            InputDispatch::RaisePressed(rootVisual, origin, data);
         else if (uPtr(touch)->Phase() == 1)
-            InputDispatch::RaiseMoved(origin, data);
+            InputDispatch::RaiseMoved(rootVisual, origin, data);
         else if (uPtr(touch)->Phase() == 3)
         {
-            InputDispatch::RaiseReleased(origin, data);
+            InputDispatch::RaiseReleased(rootVisual, origin, data);
             touchEnded = true;
         }
         else if (uPtr(touch)->Phase() == 4)
@@ -343,56 +322,24 @@ void InputDispatch::HandleEvent(::g::ObjC::Object* viewHandle, ::g::Fuse::Visual
             int pointerIndex1 = InputDispatch::GetPointerIndex(touch1);
 
             if (uPtr(touch1)->Phase() != 3)
-                InputDispatch::RaiseReleased(origin, InputDispatch::MakePointerEventData(touch1, rootView, pointerIndex1));
+                InputDispatch::RaiseReleased(rootVisual, origin, InputDispatch::MakePointerEventData(touch1, rootView, pointerIndex1));
         }
 
         InputDispatch::DeactivateAllTouches();
     }
 }
 
-// public static void HandleEvent(ObjC.Object viewHandle, Fuse.Visual origin, ObjC.Object uiEvent) [static] :811
+// public static void HandleEvent(ObjC.Object viewHandle, Fuse.Visual origin, ObjC.Object uiEvent) [static] :813
 void InputDispatch::HandleEvent1(::g::ObjC::Object* viewHandle, ::g::Fuse::Visual* origin, ::g::ObjC::Object* uiEvent)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "HandleEvent(ObjC.Object,Fuse.Visual,ObjC.Object)");
     InputDispatch_typeof()->Init();
 
-    if (InputDispatch::IsUIEvent(uiEvent))
+    if (::g::Fuse::Controls::Native::iOS::ObjectExtensions::IsUIEvent(uiEvent))
         InputDispatch::HandleEvent(viewHandle, origin, ::g::Fuse::Controls::Native::iOS::UIEvent::New1(uiEvent));
 }
 
-// public static bool IsUIControl(ObjC.Object handle) [static] :959
-bool InputDispatch::IsUIControl(::g::ObjC::Object* handle)
-{
-    InputDispatch_typeof()->Init();
-    @autoreleasepool
-    {
-        return [] (::id handle) -> bool
-        {
-            NSObject* obj = (NSObject*)handle;
-            return [obj isKindOfClass:[UIControl class]];
-        } (::g::ObjC::Object::GetHandle(handle));
-        
-    }
-    
-}
-
-// private static bool IsUIEvent(ObjC.Object handle) [static] :967
-bool InputDispatch::IsUIEvent(::g::ObjC::Object* handle)
-{
-    InputDispatch_typeof()->Init();
-    @autoreleasepool
-    {
-        return [] (::id handle) -> bool
-        {
-            NSObject* obj = (NSObject*)handle;
-            return [obj isKindOfClass:[::UIEvent class]];
-        } (::g::ObjC::Object::GetHandle(handle));
-        
-    }
-    
-}
-
-// private static Fuse.Input.PointerEventData MakePointerEventData(Fuse.Controls.Native.iOS.UITouch touch, ObjC.Object rootView, int pointIndex) [static] :872
+// private static Fuse.Input.PointerEventData MakePointerEventData(Fuse.Controls.Native.iOS.UITouch touch, ObjC.Object rootView, int pointIndex) [static] :876
 ::g::Fuse::Input::PointerEventData* InputDispatch::MakePointerEventData(::g::Fuse::Controls::Native::iOS::UITouch* touch, ::g::ObjC::Object* rootView, int pointIndex)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "MakePointerEventData(Fuse.Controls.Native.iOS.UITouch,ObjC.Object,int)");
@@ -408,7 +355,7 @@ bool InputDispatch::IsUIEvent(::g::ObjC::Object* handle)
     return collection1;
 }
 
-// private static void OnTouchEvent(ObjC.Object sender, ObjC.Object uiEvent) [static] :780
+// private static void OnTouchEvent(ObjC.Object sender, ObjC.Object uiEvent) [static] :784
 void InputDispatch::OnTouchEvent(::g::ObjC::Object* sender, ::g::ObjC::Object* uiEvent)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "OnTouchEvent(ObjC.Object,ObjC.Object)");
@@ -416,7 +363,7 @@ void InputDispatch::OnTouchEvent(::g::ObjC::Object* sender, ::g::ObjC::Object* u
     bool ret4;
     ::g::Fuse::Visual* ret5;
 
-    if (InputDispatch::IsUIControl(sender) && InputDispatch::IsUIEvent(uiEvent))
+    if (::g::Fuse::Controls::Native::iOS::ObjectExtensions::IsUIControl(sender) && ::g::Fuse::Controls::Native::iOS::ObjectExtensions::IsUIEvent(uiEvent))
     {
         if ((::g::Uno::Collections::Dictionary__ContainsKey_fn(uPtr(InputDispatch::_listeners()), sender, &ret4), ret4))
         {
@@ -427,7 +374,7 @@ void InputDispatch::OnTouchEvent(::g::ObjC::Object* sender, ::g::ObjC::Object* u
     }
 }
 
-// private static void RaiseCancelled(Fuse.Visual visual, Fuse.Input.PointerEventData data) [static] :927
+// private static void RaiseCancelled(Fuse.Visual visual, Fuse.Input.PointerEventData data) [static] :931
 void InputDispatch::RaiseCancelled(::g::Fuse::Visual* visual, ::g::Fuse::Input::PointerEventData* data)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "RaiseCancelled(Fuse.Visual,Fuse.Input.PointerEventData)");
@@ -444,15 +391,15 @@ void InputDispatch::RaiseCancelled(::g::Fuse::Visual* visual, ::g::Fuse::Input::
     }
 }
 
-// private static void RaiseMoved(Fuse.Visual visual, Fuse.Input.PointerEventData data) [static] :902
-void InputDispatch::RaiseMoved(::g::Fuse::Visual* visual, ::g::Fuse::Input::PointerEventData* data)
+// private static void RaiseMoved(Fuse.Visual root, Fuse.Visual visual, Fuse.Input.PointerEventData data) [static] :906
+void InputDispatch::RaiseMoved(::g::Fuse::Visual* root, ::g::Fuse::Visual* visual, ::g::Fuse::Input::PointerEventData* data)
 {
-    uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "RaiseMoved(Fuse.Visual,Fuse.Input.PointerEventData)");
+    uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "RaiseMoved(Fuse.Visual,Fuse.Visual,Fuse.Input.PointerEventData)");
     InputDispatch_typeof()->Init();
 
     try
     {
-        bool args = ::g::Fuse::Input::Pointer::RaiseMoved(InputDispatch::FindRoot(visual), data);
+        bool args = ::g::Fuse::Input::Pointer::RaiseMoved(root, data);
     }
     catch (const uThrowable& __t)
     {
@@ -461,15 +408,15 @@ void InputDispatch::RaiseMoved(::g::Fuse::Visual* visual, ::g::Fuse::Input::Poin
     }
 }
 
-// private static void RaisePressed(Fuse.Visual visual, Fuse.Input.PointerEventData data) [static] :890
-void InputDispatch::RaisePressed(::g::Fuse::Visual* visual, ::g::Fuse::Input::PointerEventData* data)
+// private static void RaisePressed(Fuse.Visual root, Fuse.Visual visual, Fuse.Input.PointerEventData data) [static] :894
+void InputDispatch::RaisePressed(::g::Fuse::Visual* root, ::g::Fuse::Visual* visual, ::g::Fuse::Input::PointerEventData* data)
 {
-    uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "RaisePressed(Fuse.Visual,Fuse.Input.PointerEventData)");
+    uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "RaisePressed(Fuse.Visual,Fuse.Visual,Fuse.Input.PointerEventData)");
     InputDispatch_typeof()->Init();
 
     try
     {
-        bool args = ::g::Fuse::Input::Pointer::RaisePressed(InputDispatch::FindRoot(visual), data);
+        bool args = ::g::Fuse::Input::Pointer::RaisePressed(root, data);
     }
     catch (const uThrowable& __t)
     {
@@ -478,15 +425,15 @@ void InputDispatch::RaisePressed(::g::Fuse::Visual* visual, ::g::Fuse::Input::Po
     }
 }
 
-// private static void RaiseReleased(Fuse.Visual visual, Fuse.Input.PointerEventData data) [static] :914
-void InputDispatch::RaiseReleased(::g::Fuse::Visual* visual, ::g::Fuse::Input::PointerEventData* data)
+// private static void RaiseReleased(Fuse.Visual root, Fuse.Visual visual, Fuse.Input.PointerEventData data) [static] :918
+void InputDispatch::RaiseReleased(::g::Fuse::Visual* root, ::g::Fuse::Visual* visual, ::g::Fuse::Input::PointerEventData* data)
 {
-    uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "RaiseReleased(Fuse.Visual,Fuse.Input.PointerEventData)");
+    uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "RaiseReleased(Fuse.Visual,Fuse.Visual,Fuse.Input.PointerEventData)");
     InputDispatch_typeof()->Init();
 
     try
     {
-        bool args = ::g::Fuse::Input::Pointer::RaiseReleased(InputDispatch::FindRoot(visual), data);
+        bool args = ::g::Fuse::Input::Pointer::RaiseReleased(root, data);
     }
     catch (const uThrowable& __t)
     {
@@ -495,7 +442,7 @@ void InputDispatch::RaiseReleased(::g::Fuse::Visual* visual, ::g::Fuse::Input::P
     }
 }
 
-// public static void RemoveListener(Fuse.Visual visual, ObjC.Object handle) [static] :948
+// public static void RemoveListener(Fuse.Visual visual, ObjC.Object handle) [static] :952
 void InputDispatch::RemoveListener(::g::Fuse::Visual* visual, ::g::ObjC::Object* handle)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.InputDispatch", "RemoveListener(Fuse.Visual,ObjC.Object)");
@@ -510,7 +457,7 @@ void InputDispatch::RemoveListener(::g::Fuse::Visual* visual, ::g::ObjC::Object*
     }
 }
 
-// private static void RemoveListener(ObjC.Object eventHandler, ObjC.Object uicontrol) [static] :995
+// private static void RemoveListener(ObjC.Object eventHandler, ObjC.Object uicontrol) [static] :983
 void InputDispatch::RemoveListener1(::g::ObjC::Object* eventHandler, ::g::ObjC::Object* uicontrol)
 {
     InputDispatch_typeof()->Init();
@@ -525,20 +472,6 @@ void InputDispatch::RemoveListener1(::g::ObjC::Object* eventHandler, ::g::ObjC::
         
     }
     
-}
-
-// public static generated ObjC.Object get_RootView() [static] :809
-::g::ObjC::Object* InputDispatch::RootView()
-{
-    InputDispatch_typeof()->Init();
-    return InputDispatch::_RootView();
-}
-
-// public static generated void set_RootView(ObjC.Object value) [static] :809
-void InputDispatch::RootView(::g::ObjC::Object* value)
-{
-    InputDispatch_typeof()->Init();
-    InputDispatch::_RootView() = value;
 }
 // }
 

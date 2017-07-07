@@ -5,6 +5,7 @@
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.StackPanel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -23,7 +24,7 @@ namespace g{
 
 // public partial sealed class Hamburger :2
 // {
-::g::Fuse::Controls::Control_type* Hamburger_typeof();
+::g::Fuse::Controls::Panel_type* Hamburger_typeof();
 void Hamburger__ctor_8_fn(Hamburger* __this);
 void Hamburger__InitializeUX_fn(Hamburger* __this);
 void Hamburger__New5_fn(Hamburger** __retval);

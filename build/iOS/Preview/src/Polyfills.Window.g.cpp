@@ -16,8 +16,8 @@ namespace g{
 namespace Polyfills{
 namespace Window{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Polyfills.Window/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Polyfills.Window/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public sealed class WindowModule :12
 // {
@@ -29,7 +29,7 @@ static void WindowModule_build(uType* type)
     type->SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(WindowModule_type, interface0),
         ::g::Fuse::Scripting::IModuleProvider_typeof(), offsetof(WindowModule_type, interface1));
-    type->SetFields(7,
+    type->SetFields(9,
         ::g::Uno::UX::FileSource_typeof(), (uintptr_t)&::g::Polyfills::Window::WindowModule::_fileSourceInstance_, uFieldFlagsStatic,
         type, (uintptr_t)&::g::Polyfills::Window::WindowModule::_instance_, uFieldFlagsStatic);
     type->Reflection.SetFunctions(2,
@@ -44,7 +44,7 @@ WindowModule_type* WindowModule_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Scripting::FileModule_typeof();
-    options.FieldCount = 9;
+    options.FieldCount = 11;
     options.InterfaceCount = 2;
     options.ObjectSize = sizeof(WindowModule);
     options.TypeSize = sizeof(WindowModule_type);

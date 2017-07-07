@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/$.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{
 namespace Outracks{
 namespace Simulator{
 
-// public sealed class ProxyClient :42
+// public sealed class ProxyClient :1482
 // {
 uType* ProxyClient_typeof();
 void ProxyClient__ctor__fn(ProxyClient* __this);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/0.47.4/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -34,7 +34,6 @@ void ObservableList__get_Item_fn(ObservableList* __this, int* index, uTRef __ret
 void ObservableList__New1_fn(uType* __type, uDelegate* added1, uDelegate* removed1, ObservableList** __retval);
 void ObservableList__Remove_fn(ObservableList* __this, void* item, bool* __retval);
 void ObservableList__RemoveAt_fn(ObservableList* __this, int* index);
-void ObservableList__ReplaceAt_fn(ObservableList* __this, int* index, void* item);
 
 struct ObservableList : uObject
 {
@@ -57,8 +56,6 @@ struct ObservableList : uObject
     template<class T>
     bool Remove(T item) { bool __retval; return ObservableList__Remove_fn(this, uConstrain(__type->T(0), item), &__retval), __retval; }
     void RemoveAt(int index);
-    template<class T>
-    void ReplaceAt(int index, T item) { ObservableList__ReplaceAt_fn(this, &index, uConstrain(__type->T(0), item)); }
     static ObservableList* New1(uType* __type, uDelegate* added1, uDelegate* removed1);
 };
 // }

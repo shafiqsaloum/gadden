@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Outracks{
 namespace Simulator{
 
-// public static class IndentString :459
+// public static class IndentString :525
 // {
 uClassType* IndentString_typeof();
 void IndentString__Indent_fn(uString* str, uString** __retval);

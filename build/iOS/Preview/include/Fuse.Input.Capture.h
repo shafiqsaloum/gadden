@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Input{
 
-// internal sealed class Capture :937
+// internal sealed class Capture :1129
 // {
 uType* Capture_typeof();
 void Capture__ctor__fn(Capture* __this, ::g::Fuse::Visual* n, uObject* identity);
@@ -30,6 +30,7 @@ struct Capture : uObject
     uStrong<uDelegate*> LostCallback;
     uStrong< ::g::Uno::Collections::List*> PointIndex;
     int Type;
+    int VisualDepth;
     uStrong<uObject*> _Identity;
     uStrong< ::g::Fuse::Visual*> _Visual;
 

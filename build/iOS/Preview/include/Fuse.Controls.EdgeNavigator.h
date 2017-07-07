@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -34,7 +35,7 @@ namespace Controls{
 
 // public partial sealed class EdgeNavigator :10
 // {
-::g::Fuse::Controls::Control_type* EdgeNavigator_typeof();
+::g::Fuse::Controls::Panel_type* EdgeNavigator_typeof();
 void EdgeNavigator__ctor_7_fn(EdgeNavigator* __this);
 void EdgeNavigator__get_Active_fn(EdgeNavigator* __this, ::g::Fuse::Visual** __retval);
 void EdgeNavigator__set_Active_fn(EdgeNavigator* __this, ::g::Fuse::Visual* value);

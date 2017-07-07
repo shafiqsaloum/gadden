@@ -92,8 +92,8 @@ namespace Fuse{
 namespace Controls{
 namespace VideoImpl{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal sealed class EmptyVideo :32
 // {
@@ -247,8 +247,8 @@ EmptyVideo* EmptyVideo::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal sealed class GraphicsVideoService :677
 // {
@@ -645,8 +645,8 @@ GraphicsVideoService* GraphicsVideoService::New1(uObject* callbacks)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal abstract interface IVideoCallbacks :626
 // {
@@ -660,8 +660,8 @@ uInterfaceType* IVideoCallbacks_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal abstract interface IVideoPlayer :13
 // {
@@ -675,8 +675,8 @@ uInterfaceType* IVideoPlayer_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal abstract interface IVideoService :600
 // {
@@ -690,8 +690,8 @@ uInterfaceType* IVideoService_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal sealed class LoadingClosure :635
 // {
@@ -794,8 +794,8 @@ LoadingClosure* LoadingClosure::New1(::g::Uno::Threading::Future1* loadedFuture,
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal sealed class Scale9Rectangle :1344
 // {
@@ -918,8 +918,8 @@ Scale9Rectangle* Scale9Rectangle::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal static class VideoDiskCache :892
 // {
@@ -935,7 +935,7 @@ static void VideoDiskCache_build(uType* type)
     ::STRINGS[0] = uString::Const("/tempVideo");
     ::STRINGS[1] = uString::Const(".");
     ::STRINGS[2] = uString::Const("Deleting temporary file: ");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/$.uno");
+    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno");
     ::TYPES[11] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
     ::TYPES[12] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Platform::ApplicationState_typeof(), NULL);
     ::TYPES[13] = ::g::Uno::Char_typeof()->Array();
@@ -1032,8 +1032,8 @@ void VideoDiskCache::OnTerminating(int newState)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal sealed class VideoDrawElement :1313
 // {
@@ -1144,8 +1144,8 @@ VideoDrawElement* VideoDrawElement::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal static class VideoLoader :953
 // {
@@ -1195,15 +1195,15 @@ void VideoLoader__Load1_fn(::g::Uno::UX::FileSource* file, ::g::Uno::Threading::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal sealed extern class VideoVisual :1028
 // {
 static void VideoVisual_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("Video error");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/$.uno");
+    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno");
     ::STRINGS[6] = uString::Const("Fuse.Controls.VideoImpl.IVideoCallbacks.OnError");
     ::STRINGS[7] = uString::Const("");
     ::STRINGS[8] = uString::Const("IPlayback.PlayTo(double) not supported in Fuse.Controls.Video");

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -14,6 +14,7 @@ namespace IO{
 // {
 uClassType* File_typeof();
 void File__AppendAllText_fn(uString* filename, uString* contents);
+void File__Copy_fn(uString* sourceFile, uString* destinationFile);
 void File__Delete_fn(uString* filename);
 void File__Exists_fn(uString* filename, bool* __retval);
 void File__Move_fn(uString* oldName, uString* newName);
@@ -27,6 +28,7 @@ void File__WriteAllText_fn(uString* filename, uString* text);
 struct File : uObject
 {
     static void AppendAllText(uString* filename, uString* contents);
+    static void Copy(uString* sourceFile, uString* destinationFile);
     static void Delete(uString* filename);
     static bool Exists(uString* filename);
     static void Move(uString* oldName, uString* newName);

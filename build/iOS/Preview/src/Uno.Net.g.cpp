@@ -34,8 +34,8 @@ namespace g{
 namespace Uno{
 namespace Net{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/0.47.13/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public sealed class Dns :18
 // {
@@ -197,8 +197,8 @@ Dns* Dns::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/0.47.13/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public abstract class EndPoint :178
 // {
@@ -261,8 +261,8 @@ void EndPoint::AddressFamily(int value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/0.47.13/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public sealed class IPAddress :216
 // {
@@ -644,8 +644,8 @@ uArray* IPAddress::ParseIPv6Address(uString* address)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/0.47.13/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // public sealed class IPEndPoint :193
 // {
@@ -762,8 +762,8 @@ IPEndPoint* IPEndPoint::New1(::g::Uno::Net::IPAddress* address, int port)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/0.47.13/$.uno
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
+// -------------------------------------------------------------------------------------------------
 
 // internal sealed extern class NetworkHelpers :463
 // {

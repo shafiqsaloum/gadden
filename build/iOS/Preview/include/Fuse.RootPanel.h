@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Desktop/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Desktop/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -24,7 +25,7 @@ namespace Fuse{
 
 // internal sealed class RootPanel :12
 // {
-::g::Fuse::Controls::Control_type* RootPanel_typeof();
+::g::Fuse::Controls::Panel_type* RootPanel_typeof();
 void RootPanel__ctor_7_fn(RootPanel* __this);
 void RootPanel__New4_fn(RootPanel** __retval);
 void RootPanel__get_TreeRenderer_fn(RootPanel* __this, uObject** __retval);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace FileSystem{
 
-// internal static extern class UnifiedPaths :1379
+// internal static extern class UnifiedPaths :1466
 // {
 uClassType* UnifiedPaths_typeof();
 void UnifiedPaths__GetCacheDirectory_fn(uString** __retval);

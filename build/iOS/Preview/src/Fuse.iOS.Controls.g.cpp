@@ -37,8 +37,8 @@ namespace Fuse{
 namespace iOS{
 namespace Controls{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/0.47.7/ios/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/ios/$.uno
+// ----------------------------------------------------------------------------------------------------------
 
 // public sealed extern class WebView :179
 // {
@@ -61,7 +61,7 @@ static void WebView_build(uType* type)
     ::STRINGS[0] = uString::Const("");
     ::STRINGS[1] = uString::Const("about:blank");
     ::STRINGS[2] = uString::Const("low mem in WebView");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/0.47.7/ios/$.uno");
+    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/ios/$.uno");
     ::TYPES[0] = ::g::Uno::Action_typeof();
     ::TYPES[1] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
     ::TYPES[2] = ::g::Uno::Exception_typeof();

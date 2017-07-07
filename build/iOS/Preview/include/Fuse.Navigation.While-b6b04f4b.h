@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -19,7 +19,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public sealed class WhilePageActive :5126
+// public sealed class WhilePageActive :5222
 // {
 ::g::Fuse::Triggers::Trigger_type* WhilePageActive_typeof();
 void WhilePageActive__ctor_6_fn(WhilePageActive* __this);

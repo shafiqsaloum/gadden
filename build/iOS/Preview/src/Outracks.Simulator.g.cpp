@@ -1,241 +1,121 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <_root.OutracksSimulat-218d2df9.h>
-#include <_root.OutracksSimulat-238d0f83.h>
-#include <_root.OutracksSimulat-307dad8c.h>
-#include <_root.OutracksSimulat-369acd0e.h>
-#include <_root.OutracksSimulat-7329dae0.h>
-#include <_root.OutracksSimulat-a28a5744.h>
-#include <_root.OutracksSimulat-a4cead99.h>
-#include <_root.OutracksSimulat-afca775d.h>
-#include <_root.OutracksSimulat-c3303a78.h>
-#include <_root.OutracksSimulat-cf003b06.h>
-#include <_root.OutracksSimulat-d1289fec.h>
-#include <_root.OutracksSimulat-d50225e2.h>
-#include <_root.OutracksSimulat-d900317a.h>
 #include <_root.OutracksSimulat-eb4af30d.h>
 #include <Fuse.Animations.Animator.h>
 #include <Fuse.Animations.Change-1.h>
 #include <Fuse.Animations.Easing.h>
 #include <Fuse.Animations.Scale.h>
 #include <Fuse.Animations.TrackAnimator.h>
-#include <Fuse.App.h>
-#include <Fuse.AppBase.h>
 #include <Fuse.Controls.Button.h>
 #include <Fuse.Controls.ButtonBase.h>
 #include <Fuse.Controls.ClientPanel.h>
-#include <Fuse.Controls.ContentControl.h>
-#include <Fuse.Controls.Control.h>
-#include <Fuse.Controls.Grid.h>
-#include <Fuse.Controls.Image.h>
-#include <Fuse.Controls.Panel.h>
-#include <Fuse.Controls.Rectangle.h>
-#include <Fuse.Controls.ScrollDirections.h>
-#include <Fuse.Controls.ScrollView.h>
-#include <Fuse.Controls.ScrollViewBase.h>
-#include <Fuse.Controls.Shape.h>
 #include <Fuse.Controls.StackPanel.h>
 #include <Fuse.Controls.Text.h>
-#include <Fuse.Controls.TextAlignment.h>
-#include <Fuse.Controls.TextBox.h>
 #include <Fuse.Controls.TextControl.h>
-#include <Fuse.Controls.TextInput.h>
-#include <Fuse.Controls.TextInputControl.h>
-#include <Fuse.Controls.TextWrapping.h>
-#include <Fuse.Diagnostic.h>
-#include <Fuse.DiagnosticHandler.h>
-#include <Fuse.Diagnostics.h>
-#include <Fuse.DiagnosticType.h>
-#include <Fuse.DrawContext.h>
-#include <Fuse.Drawing.Brush.h>
 #include <Fuse.Drawing.Colors.h>
-#include <Fuse.Drawing.GradientStop.h>
-#include <Fuse.Drawing.LinearGradient.h>
-#include <Fuse.Drawing.Stroke.h>
 #include <Fuse.Elements.Alignment.h>
 #include <Fuse.Elements.Element.h>
-#include <Fuse.Elements.Visibility.h>
-#include <Fuse.Font.h>
 #include <Fuse.Gestures.Clicked.h>
-#include <Fuse.Gestures.ClickedArgs.h>
 #include <Fuse.Gestures.ClickedHandler.h>
-#include <Fuse.HitTestCallback.h>
-#include <Fuse.HitTestContext.h>
-#include <Fuse.HitTestResult.h>
 #include <Fuse.Input.Keyboard.h>
-#include <Fuse.Input.Pointer.h>
-#include <Fuse.Input.PointerEventArgs.h>
-#include <Fuse.Input.PointerMovedArgs.h>
-#include <Fuse.Input.PointerPressedArgs.h>
-#include <Fuse.Input.PointerReleasedArgs.h>
-#include <Fuse.Input.PointerWhe-656d8f41.h>
-#include <Fuse.Layer.h>
-#include <Fuse.Layouts.Orientation.h>
-#include <Fuse.Node.h>
-#include <Fuse.NodeGroupBase.h>
-#include <Fuse.Preview.ISelection.h>
-#include <Fuse.Preview.SelectionManager.h>
-#include <Fuse.Reactive.BindingMode.h>
-#include <Fuse.Reactive.Constan-264ec80.h>
-#include <Fuse.Reactive.DataBinding.h>
-#include <Fuse.Reactive.IExpression.h>
-#include <Fuse.Reactive.Property.h>
-#include <Fuse.Reactive.This.h>
-#include <Fuse.RootViewport.h>
-#include <Fuse.Time.h>
-#include <Fuse.Timer.h>
-#include <Fuse.Toast.h>
 #include <Fuse.Triggers.AddingAnimation.h>
 #include <Fuse.Triggers.Removin-3934475f.h>
 #include <Fuse.Triggers.Trigger.h>
-#include <Fuse.Triggers.WhileBool.h>
-#include <Fuse.Triggers.WhileTrue.h>
-#include <Fuse.UnhandledExceptionArgs.h>
-#include <Fuse.UnhandledExceptionHandler.h>
-#include <Fuse.UpdateManager.h>
-#include <Fuse.UpdateStage.h>
 #include <Fuse.Visual.h>
-#include <Fuse.VisualEventArgs.h>
-#include <Outracks.Simulator.Ag-9820d29f.h>
+#include <Outracks.BinaryMessage.h>
+#include <Outracks.IBinaryMessage.h>
+#include <Outracks.Optional.h>
+#include <Outracks.Optional-1.h>
 #include <Outracks.Simulator.Ap-b454fb05.h>
 #include <Outracks.Simulator.Ap-c44f1d83.h>
-#include <Outracks.Simulator.Application.h>
 #include <Outracks.Simulator.Apply-1.h>
-#include <Outracks.Simulator.ArrayStream.h>
-#include <Outracks.Simulator.Bundle.h>
-#include <Outracks.Simulator.By-3fb73d1c.h>
-#include <Outracks.Simulator.By-7fd54f53.h>
-#include <Outracks.Simulator.By-834e6e47.h>
-#include <Outracks.Simulator.By-f0592b6f.h>
-#include <Outracks.Simulator.ChangeIp.h>
+#include <Outracks.Simulator.Bu-32d2026d.h>
+#include <Outracks.Simulator.Bu-93efea23.h>
+#include <Outracks.Simulator.Bu-9d6aa813.h>
+#include <Outracks.Simulator.BuildLogged.h>
+#include <Outracks.Simulator.Ch-a9dd1b1a.h>
 #include <Outracks.Simulator.Closure.h>
-#include <Outracks.Simulator.Co-4f2eadad.h>
+#include <Outracks.Simulator.Co-3af13cb0.h>
 #include <Outracks.Simulator.Co-6107db6e.h>
 #include <Outracks.Simulator.Co-aed000f3.h>
 #include <Outracks.Simulator.Co-be174b5d.h>
-#include <Outracks.Simulator.Co-c34ceaa5.h>
-#include <Outracks.Simulator.Co-e54d8e0a.h>
-#include <Outracks.Simulator.Connected.h>
-#include <Outracks.Simulator.Connecting.h>
-#include <Outracks.Simulator.Context.h>
+#include <Outracks.Simulator.De-bd4defb7.h>
 #include <Outracks.Simulator.De-d26d7421.h>
-#include <Outracks.Simulator.DeviceInfo.h>
-#include <Outracks.Simulator.Di-25e031f4.h>
-#include <Outracks.Simulator.Di-8a7f61b0.h>
-#include <Outracks.Simulator.Di-dfa84063.h>
 #include <Outracks.Simulator.Du-439b907a.h>
-#include <Outracks.Simulator.En-a81c8e20.h>
-#include <Outracks.Simulator.En-c81800b3.h>
-#include <Outracks.Simulator.ErrorToast.h>
-#include <Outracks.Simulator.Exceptions.h>
-#include <Outracks.Simulator.Fa-3fc04c56.h>
+#include <Outracks.Simulator.EmptyClass.h>
 #include <Outracks.Simulator.Fa-6493a41f.h>
 #include <Outracks.Simulator.Fa-77073135.h>
 #include <Outracks.Simulator.Fa-ccf8523e.h>
-#include <Outracks.Simulator.FakeApp.h>
-#include <Outracks.Simulator.Faulted.h>
-#include <Outracks.Simulator.Flasher.h>
 #include <Outracks.Simulator.Fo-7466e78c.h>
 #include <Outracks.Simulator.Fo-7466e78f.h>
 #include <Outracks.Simulator.Forget-2.h>
 #include <Outracks.Simulator.Forget-3.h>
 #include <Outracks.Simulator.Ge-e4a187f7.h>
-#include <Outracks.Simulator.GoOffline.h>
-#include <Outracks.Simulator.Idle.h>
-#include <Outracks.Simulator.IE-b98cf0cf.h>
+#include <Outracks.Simulator.Gu-38dd0f53.h>
 #include <Outracks.Simulator.Im-4687ab12.h>
 #include <Outracks.Simulator.In-54f82bd4.h>
 #include <Outracks.Simulator.In-8ad043b5.h>
-#include <Outracks.Simulator.InputMode.h>
 #include <Outracks.Simulator.IS-5cd3f04c.h>
+#include <Outracks.Simulator.LineNumber.h>
 #include <Outracks.Simulator.List.h>
-#include <Outracks.Simulator.Lo-82b05288.h>
-#include <Outracks.Simulator.ModalDialog.h>
 #include <Outracks.Simulator.No-322dacc.h>
+#include <Outracks.Simulator.Ob-98516f34.h>
 #include <Outracks.Simulator.Of-c5e231f4.h>
-#include <Outracks.Simulator.Pr-33d3776e.h>
-#include <Outracks.Simulator.Pr-51753a1d.h>
 #include <Outracks.Simulator.Pr-59de7475.h>
-#include <Outracks.Simulator.Pr-5abcc7f1.h>
 #include <Outracks.Simulator.Pr-5b87553c.h>
-#include <Outracks.Simulator.Pr-5f0fd935.h>
-#include <Outracks.Simulator.Pr-79edc900.h>
-#include <Outracks.Simulator.Pr-998e636c.h>
-#include <Outracks.Simulator.Pr-bed485a.h>
-#include <Outracks.Simulator.Pr-f5aa1df7.h>
 #include <Outracks.Simulator.ProxyClient.h>
-#include <Outracks.Simulator.Reifying.h>
-#include <Outracks.Simulator.Ru-34926e08.h>
-#include <Outracks.Simulator.Ru-5a309496.h>
-#include <Outracks.Simulator.Ru-70b8e500.h>
-#include <Outracks.Simulator.Ru-7f512ccc.h>
-#include <Outracks.Simulator.Running.h>
 #include <Outracks.Simulator.Se-c68500b4.h>
-#include <Outracks.Simulator.Sh-de7172b3.h>
-#include <Outracks.Simulator.Sh-f13475c0.h>
 #include <Outracks.Simulator.Si-ca2693fb.h>
+#include <Outracks.Simulator.So-279c538.h>
+#include <Outracks.Simulator.So-adcf757e.h>
 #include <Outracks.Simulator.St-4bd16e5b.h>
-#include <Outracks.Simulator.State.h>
 #include <Outracks.Simulator.Ta-297181eb.h>
 #include <Outracks.Simulator.Task-1.h>
 #include <Outracks.Simulator.Tasks.h>
-#include <Outracks.Simulator.Un-1a12cd67.h>
-#include <Outracks.Simulator.Us-40e87a3.h>
+#include <Outracks.Simulator.Te-b740cdd0.h>
+#include <Outracks.Simulator.Te-eb7ee574.h>
+#include <Outracks.Simulator.TextOffset.h>
+#include <Outracks.Simulator.To-26edca1a.h>
 #include <Outracks.Simulator.Wa-abe0ced7.h>
+#include <Outracks.UnoHost.Bina-58253e0.h>
+#include <System.IO.BinaryReader.h>
+#include <System.IO.BinaryWriter.h>
 #include <Uno.Action.h>
 #include <Uno.Action-1.h>
 #include <Uno.Action-2.h>
-#include <Uno.AggregateException.h>
+#include <Uno.ArgumentNullException.h>
+#include <Uno.ArgumentOutOfRang-6803b39e.h>
 #include <Uno.Array.h>
 #include <Uno.Bool.h>
-#include <Uno.Byte.h>
 #include <Uno.Char.h>
 #include <Uno.Collections.Enume-8ddd045.h>
-#include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IEnumerator.h>
 #include <Uno.Collections.IEnumerator-1.h>
-#include <Uno.Collections.IList-1.h>
-#include <Uno.Collections.IList-b56be992.h>
 #include <Uno.Collections.List-1.h>
 #include <Uno.Collections.Queue-1.h>
-#include <Uno.Collections.ReadO-235c1e0d.h>
-#include <Uno.Color.h>
-#include <Uno.Delegate.h>
 #include <Uno.Diagnostics.Debug.h>
 #include <Uno.Diagnostics.Debug-5d778620.h>
-#include <Uno.Diagnostics.LogHandler.h>
 #include <Uno.Double.h>
+#include <Uno.Enum.h>
 #include <Uno.EventArgs.h>
 #include <Uno.EventHandler.h>
-#include <Uno.EventHandler-1.h>
 #include <Uno.Exception.h>
 #include <Uno.Float.h>
-#include <Uno.Float2.h>
-#include <Uno.Float3.h>
 #include <Uno.Float4.h>
 #include <Uno.Func-1.h>
 #include <Uno.Func-2.h>
+#include <Uno.Guid.h>
 #include <Uno.IDisposable.h>
+#include <Uno.IndexOutOfRangeException.h>
 #include <Uno.Int.h>
-#include <Uno.IO.BinaryReader.h>
-#include <Uno.IO.BinaryWriter.h>
-#include <Uno.IO.Bundle.h>
-#include <Uno.IO.BundleFile.h>
-#include <Uno.IO.Directory.h>
 #include <Uno.IO.EndOfStreamException.h>
-#include <Uno.IO.File.h>
-#include <Uno.IO.FileMode.h>
-#include <Uno.IO.SeekOrigin.h>
 #include <Uno.IO.Stream.h>
 #include <Uno.IO.StreamReader.h>
 #include <Uno.IO.StreamWriter.h>
 #include <Uno.IO.TextReader.h>
 #include <Uno.IO.TextWriter.h>
-#include <Uno.IO.UserDirectory.h>
-#include <Uno.Long.h>
-#include <Uno.Math.h>
 #include <Uno.Net.EndPoint.h>
 #include <Uno.Net.IPAddress.h>
 #include <Uno.Net.IPEndPoint.h>
@@ -246,495 +126,32 @@
 #include <Uno.Net.Sockets.Socket.h>
 #include <Uno.Net.Sockets.SocketShutdown.h>
 #include <Uno.Net.Sockets.SocketType.h>
-#include <Uno.NotImplementedException.h>
 #include <Uno.Object.h>
 #include <Uno.Platform.Applicat-bf686309.h>
 #include <Uno.Platform.ApplicationState.h>
-#include <Uno.Platform.CoreApp.h>
-#include <Uno.Platform.Display.h>
-#include <Uno.Platform.Displays.h>
 #include <Uno.Runtime.Implement-eca777ec.h>
 #include <Uno.String.h>
 #include <Uno.Text.StringBuilder.h>
+#include <Uno.Threading.AutoResetEvent.h>
+#include <Uno.Threading.EventWaitHandle.h>
 #include <Uno.Threading.Monitor.h>
 #include <Uno.Threading.Mutex.h>
 #include <Uno.Threading.Thread.h>
 #include <Uno.Threading.ThreadStart.h>
 #include <Uno.Type.h>
-#include <Uno.UInt.h>
-#include <Uno.UX.BundleFileSource.h>
-#include <Uno.UX.FileSource.h>
-#include <Uno.UX.NameTable.h>
-#include <Uno.UX.Property.h>
 #include <Uno.UX.Property-1.h>
-#include <Uno.UX.PropertyAccessor.h>
-#include <Uno.UX.PropertyObject.h>
-#include <Uno.UX.Resource.h>
 #include <Uno.UX.Selector.h>
-#include <Uno.UX.Size.h>
-#include <Uno.UX.Unit.h>
-static uString* STRINGS[63];
-static uType* TYPES[120];
+static uString* STRINGS[34];
+static uType* TYPES[79];
 
 namespace g{
 namespace Outracks{
 namespace Simulator{
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/$.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// public static class AggregateConnectError :31
-// {
-static void AggregateConnectError_build(uType* type)
-{
-    ::STRINGS[0] = uString::Const("");
-    ::STRINGS[1] = uString::Const("    ");
-    ::STRINGS[2] = uString::Const("\n"
-        "");
-    ::TYPES[0] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
-    ::TYPES[1] = ::g::Uno::Collections::IEnumerator_typeof();
-    ::TYPES[2] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
-    type->Reflection.SetFunctions(1,
-        new uFunction("ToIndentedLines", NULL, (void*)AggregateConnectError__ToIndentedLines_fn, 0, true, ::g::Uno::String_typeof(), 1, ::TYPES[0/*Uno.Collections.IEnumerable<Uno.Exception>*/]));
-}
-
-uClassType* AggregateConnectError_typeof()
-{
-    static uSStrong<uClassType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.TypeSize = sizeof(uClassType);
-    type = uClassType::New("Outracks.Simulator.AggregateConnectError", options);
-    type->fp_build_ = AggregateConnectError_build;
-    return type;
-}
-
-// public static string ToIndentedLines(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) :33
-void AggregateConnectError__ToIndentedLines_fn(uObject* innerExceptions, uString** __retval)
-{
-    *__retval = AggregateConnectError::ToIndentedLines(innerExceptions);
-}
-
-// public static string ToIndentedLines(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) [static] :33
-uString* AggregateConnectError::ToIndentedLines(uObject* innerExceptions)
-{
-    uStackFrame __("Outracks.Simulator.AggregateConnectError", "ToIndentedLines(Uno.Collections.IEnumerable<Uno.Exception>)");
-    ::g::Uno::Exception* ret2;
-    uString* s = ::STRINGS[0/*""*/];
-
-    for (uObject* enum1 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(innerExceptions), ::TYPES[0/*Uno.Collections.IEnumerable<Uno.Exception>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[1/*Uno.Collections.IEnumerator*/])); )
-    {
-        ::g::Uno::Exception* e = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), ::TYPES[2/*Uno.Collections.IEnumerator<Uno.Exception>*/]), &ret2), ret2);
-        s = ::g::Uno::String::op_Addition2(s, ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[1/*"    "*/], uPtr(e)->Message()), ::STRINGS[2/*"\n"*/]));
-    }
-
-    return s;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// public class Application :22
-// {
-static void Application_build(uType* type)
-{
-    ::STRINGS[3] = uString::Const("Failed to properly reset. Try exiting Fuse and restarting.");
-    ::STRINGS[4] = uString::Const("/usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno");
-    ::STRINGS[5] = uString::Const("ResetEverything");
-    ::TYPES[3] = ::g::Outracks::Simulator::ConcurrentQueue_typeof()->MakeType(::g::Uno::Action_typeof(), NULL);
-    ::TYPES[4] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Outracks::Simulator::DiagnosticItem_typeof(), NULL);
-    ::TYPES[5] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Input::PointerPressedArgs_typeof(), NULL);
-    ::TYPES[6] = ::g::Outracks::Simulator::ConcurrentQueue_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
-    ::TYPES[7] = ::g::Fuse::UnhandledExceptionHandler_typeof();
-    ::TYPES[8] = ::g::Fuse::Input::IPointerEventResponder_typeof();
-    ::TYPES[9] = ::g::Uno::Action_typeof();
-    ::TYPES[10] = ::g::Outracks::Simulator::Faulted_typeof();
-    ::TYPES[11] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
-    ::TYPES[12] = ::g::Uno::Exception_typeof();
-    ::TYPES[13] = ::g::Fuse::DiagnosticHandler_typeof();
-    ::TYPES[14] = ::g::Uno::EventHandler1_typeof()->MakeType(::g::Uno::EventArgs_typeof(), NULL);
-    ::TYPES[15] = ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
-    type->SetInterfaces(
-        ::g::Fuse::IProperties_typeof(), offsetof(Application_type, interface0),
-        ::TYPES[8/*Fuse.Input.IPointerEventResponder*/], offsetof(Application_type, interface1));
-    type->SetFields(11,
-        ::TYPES[8/*Fuse.Input.IPointerEventResponder*/], offsetof(::g::Outracks::Simulator::Application, _defaultPointerEventResponder), 0,
-        ::g::Outracks::Simulator::DeveloperMenu_typeof(), offsetof(::g::Outracks::Simulator::Application, _developerMenu), 0,
-        ::TYPES[3/*Outracks.Simulator.ConcurrentQueue<Uno.Action>*/], offsetof(::g::Outracks::Simulator::Application, _dispatcher), 0,
-        ::TYPES[6/*Outracks.Simulator.ConcurrentQueue<Uno.Exception>*/], offsetof(::g::Outracks::Simulator::Application, _exception), 0,
-        ::TYPES[4/*Uno.Collections.List<Outracks.Simulator.DiagnosticItem>*/], offsetof(::g::Outracks::Simulator::Application, _prevDiagnostics), 0,
-        ::g::Outracks::Simulator::State_typeof(), offsetof(::g::Outracks::Simulator::Application, _state), 0,
-        ::TYPES[5/*Uno.Collections.List<Fuse.Input.PointerPressedArgs>*/], offsetof(::g::Outracks::Simulator::Application, pointers), 0);
-    type->Reflection.SetFunctions(7,
-        new uFunction(".ctor", NULL, (void*)Application__New2_fn, 0, true, type, 4, ::g::Uno::Net::IPEndPoint_typeof()->Array(), ::g::Uno::String_typeof(), ::g::Uno::Func_typeof()->MakeType(::g::Uno::IO::Bundle_typeof(), NULL), ::g::Uno::String_typeof()->Array()),
-        new uFunction("OnPointerMoved", NULL, (void*)Application__OnPointerMoved_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Input::PointerMovedArgs_typeof()),
-        new uFunction("OnPointerPressed", NULL, (void*)Application__OnPointerPressed_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Input::PointerPressedArgs_typeof()),
-        new uFunction("OnPointerReleased", NULL, (void*)Application__OnPointerReleased_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Input::PointerReleasedArgs_typeof()),
-        new uFunction("OnPointerWheelMoved", NULL, (void*)Application__OnPointerWheelMoved_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Input::PointerWheelMovedArgs_typeof()),
-        new uFunction("get_Reflection", NULL, (void*)Application__get_Reflection_fn, 0, false, ::g::Outracks::Simulator::Runtime::IReflection_typeof(), 0),
-        new uFunction("set_Reflection", NULL, (void*)Application__set_Reflection_fn, 0, false, uVoid_typeof(), 1, ::g::Outracks::Simulator::Runtime::IReflection_typeof()));
-}
-
-Application_type* Application_typeof()
-{
-    static uSStrong<Application_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Fuse::App_typeof();
-    options.FieldCount = 18;
-    options.InterfaceCount = 2;
-    options.ObjectSize = sizeof(Application);
-    options.TypeSize = sizeof(Application_type);
-    type = (Application_type*)uClassType::New("Outracks.Simulator.Application", options);
-    type->fp_build_ = Application_build;
-    type->fp_OnUpdate = (void(*)(::g::Fuse::AppBase*))Application__OnUpdate_fn;
-    type->interface1.fp_OnPointerPressed = (void(*)(uObject*, ::g::Fuse::Input::PointerPressedArgs*))Application__OnPointerPressed_fn;
-    type->interface1.fp_OnPointerMoved = (void(*)(uObject*, ::g::Fuse::Input::PointerMovedArgs*))Application__OnPointerMoved_fn;
-    type->interface1.fp_OnPointerReleased = (void(*)(uObject*, ::g::Fuse::Input::PointerReleasedArgs*))Application__OnPointerReleased_fn;
-    type->interface1.fp_OnPointerWheelMoved = (void(*)(uObject*, ::g::Fuse::Input::PointerWheelMovedArgs*))Application__OnPointerWheelMoved_fn;
-    type->interface0.fp_get_Properties = (void(*)(uObject*, ::g::Fuse::Properties**))::g::Fuse::AppBase__get_Properties_fn;
-    return type;
-}
-
-// public Application(Uno.Net.IPEndPoint[] proxyEndpoints, string project, Uno.Func<Uno.IO.Bundle> projectBundle, string[] defines) :34
-void Application__ctor_4_fn(Application* __this, uArray* proxyEndpoints, uString* project, uDelegate* projectBundle, uArray* defines)
-{
-    __this->ctor_4(proxyEndpoints, project, projectBundle, defines);
-}
-
-// private void DoNothing() :137
-void Application__DoNothing_fn(Application* __this)
-{
-    __this->DoNothing();
-}
-
-// private void InvalidateSelection(object sender, Uno.EventArgs args) :73
-void Application__InvalidateSelection1_fn(Application* __this, uObject* sender, ::g::Uno::EventArgs* args)
-{
-    __this->InvalidateSelection1(sender, args);
-}
-
-// public Application New(Uno.Net.IPEndPoint[] proxyEndpoints, string project, Uno.Func<Uno.IO.Bundle> projectBundle, string[] defines) :34
-void Application__New2_fn(uArray* proxyEndpoints, uString* project, uDelegate* projectBundle, uArray* defines, Application** __retval)
-{
-    *__retval = Application::New2(proxyEndpoints, project, projectBundle, defines);
-}
-
-// private void OnDiagnosticReported(Fuse.Diagnostic d) :62
-void Application__OnDiagnosticReported_fn(Application* __this, ::g::Fuse::Diagnostic* d)
-{
-    __this->OnDiagnosticReported(d);
-}
-
-// public void OnPointerMoved(Fuse.Input.PointerMovedArgs args) :139
-void Application__OnPointerMoved_fn(Application* __this, ::g::Fuse::Input::PointerMovedArgs* args)
-{
-    __this->OnPointerMoved(args);
-}
-
-// public void OnPointerPressed(Fuse.Input.PointerPressedArgs args) :107
-void Application__OnPointerPressed_fn(Application* __this, ::g::Fuse::Input::PointerPressedArgs* args)
-{
-    __this->OnPointerPressed(args);
-}
-
-// public void OnPointerReleased(Fuse.Input.PointerReleasedArgs args) :146
-void Application__OnPointerReleased_fn(Application* __this, ::g::Fuse::Input::PointerReleasedArgs* args)
-{
-    __this->OnPointerReleased(args);
-}
-
-// public void OnPointerWheelMoved(Fuse.Input.PointerWheelMovedArgs args) :160
-void Application__OnPointerWheelMoved_fn(Application* __this, ::g::Fuse::Input::PointerWheelMovedArgs* args)
-{
-    __this->OnPointerWheelMoved(args);
-}
-
-// private void OnUnhandledException(object sender, Fuse.UnhandledExceptionArgs args) :170
-void Application__OnUnhandledException1_fn(Application* __this, uObject* sender, ::g::Fuse::UnhandledExceptionArgs* args)
-{
-    __this->OnUnhandledException1(sender, args);
-}
-
-// protected override sealed void OnUpdate() :176
-void Application__OnUpdate_fn(Application* __this)
-{
-    uStackFrame __("Outracks.Simulator.Application", "OnUpdate()");
-    bool ret3;
-    bool ret4;
-    ::g::Uno::Exception* exception = NULL, *t;
-
-    while ((::g::Outracks::Simulator::ConcurrentQueue__TryDequeue_fn(uPtr(__this->_exception), (void**)(&t), &ret3), ret3))
-        exception = t;
-
-    if (exception != NULL)
-    {
-        if (uIs((::g::Outracks::Simulator::State*)__this->_state, ::TYPES[10/*Outracks.Simulator.Faulted*/]))
-            ;
-        else
-        {
-            __this->ResetEverything(false);
-            __this->SetState(uPtr(__this->_state)->OnException(exception));
-        }
-    }
-
-    uDelegate* action;
-
-    while ((::g::Outracks::Simulator::ConcurrentQueue__TryDequeue_fn(uPtr(__this->_dispatcher), (void**)(&action), &ret4), ret4))
-        uPtr(action)->InvokeVoid();
-
-    __this->SetState(uPtr(__this->_state)->OnUpdate());
-    ::g::Fuse::App__OnUpdate_fn(__this);
-}
-
-// public Outracks.Simulator.Runtime.IReflection get_Reflection() :30
-void Application__get_Reflection_fn(Application* __this, uObject** __retval)
-{
-    *__retval = __this->Reflection();
-}
-
-// public void set_Reflection(Outracks.Simulator.Runtime.IReflection value) :31
-void Application__set_Reflection_fn(Application* __this, uObject* value)
-{
-    __this->Reflection(value);
-}
-
-// private void ResetEverything(bool initial) :78
-void Application__ResetEverything_fn(Application* __this, bool* initial)
-{
-    __this->ResetEverything(*initial);
-}
-
-// private void RootHandlers() :50
-void Application__RootHandlers_fn(Application* __this)
-{
-    __this->RootHandlers();
-}
-
-// private void SetState(Outracks.Simulator.State nextState) :205
-void Application__SetState_fn(Application* __this, ::g::Outracks::Simulator::State* nextState)
-{
-    __this->SetState(nextState);
-}
-
-// private void ShowDeveloperMenu() :120
-void Application__ShowDeveloperMenu_fn(Application* __this)
-{
-    __this->ShowDeveloperMenu();
-}
-
-// private void ShowDiagnostic(Fuse.Diagnostic d) :68
-void Application__ShowDiagnostic_fn(Application* __this, ::g::Fuse::Diagnostic* d)
-{
-    __this->ShowDiagnostic(d);
-}
-
-// private void UnrootHandlers() :56
-void Application__UnrootHandlers_fn(Application* __this)
-{
-    __this->UnrootHandlers();
-}
-
-// public Application(Uno.Net.IPEndPoint[] proxyEndpoints, string project, Uno.Func<Uno.IO.Bundle> projectBundle, string[] defines) [instance] :34
-void Application::ctor_4(uArray* proxyEndpoints, uString* project, uDelegate* projectBundle, uArray* defines)
-{
-    uStackFrame __("Outracks.Simulator.Application", ".ctor(Uno.Net.IPEndPoint[],string,Uno.Func<Uno.IO.Bundle>,string[])");
-    _state = ::g::Outracks::Simulator::Uninitialized::New1();
-    _dispatcher = ((::g::Outracks::Simulator::ConcurrentQueue*)::g::Outracks::Simulator::ConcurrentQueue::New1(::TYPES[3/*Outracks.Simulator.ConcurrentQueue<Uno.Action>*/]));
-    _prevDiagnostics = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[4/*Uno.Collections.List<Outracks.Simulator.DiagnosticItem>*/]));
-    pointers = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[5/*Uno.Collections.List<Fuse.Input.PointerPressedArgs>*/]));
-    _exception = ((::g::Outracks::Simulator::ConcurrentQueue*)::g::Outracks::Simulator::ConcurrentQueue::New1(::TYPES[6/*Outracks.Simulator.ConcurrentQueue<Uno.Exception>*/]));
-    ctor_3();
-    ::g::Outracks::Simulator::Context::SetGlobals(proxyEndpoints, project, projectBundle, defines);
-    _defaultPointerEventResponder = ::g::Fuse::Input::Pointer::EventResponder();
-    ::g::Fuse::Input::Pointer::EventResponder((uObject*)this);
-    add_UnhandledException(uDelegate::New(::TYPES[7/*Fuse.UnhandledExceptionHandler*/], (void*)Application__OnUnhandledException1_fn, this));
-    ::g::Outracks::Simulator::FakeApp* fakeApp = ::g::Outracks::Simulator::FakeApp::New4(this);
-    ::g::Outracks::Simulator::UserAppState::Default(::g::Outracks::Simulator::UserAppState::Save(fakeApp));
-    ResetEverything(true);
-    _developerMenu = ::g::Outracks::Simulator::DeveloperMenu::New4();
-}
-
-// private void DoNothing() [instance] :137
-void Application::DoNothing()
-{
-}
-
-// private void InvalidateSelection(object sender, Uno.EventArgs args) [instance] :73
-void Application::InvalidateSelection1(uObject* sender, ::g::Uno::EventArgs* args)
-{
-    uStackFrame __("Outracks.Simulator.Application", "InvalidateSelection(object,Uno.EventArgs)");
-    uPtr(RootViewport())->InvalidateVisual();
-}
-
-// private void OnDiagnosticReported(Fuse.Diagnostic d) [instance] :62
-void Application::OnDiagnosticReported(::g::Fuse::Diagnostic* d)
-{
-    uStackFrame __("Outracks.Simulator.Application", "OnDiagnosticReported(Fuse.Diagnostic)");
-    ShowDiagnostic(d);
-}
-
-// public void OnPointerMoved(Fuse.Input.PointerMovedArgs args) [instance] :139
-void Application::OnPointerMoved(::g::Fuse::Input::PointerMovedArgs* args)
-{
-    uStackFrame __("Outracks.Simulator.Application", "OnPointerMoved(Fuse.Input.PointerMovedArgs)");
-    ::g::Fuse::Input::IPointerEventResponder::OnPointerMoved(uInterface(uPtr(_defaultPointerEventResponder), ::TYPES[8/*Fuse.Input.IPointerEventResponder*/]), args);
-}
-
-// public void OnPointerPressed(Fuse.Input.PointerPressedArgs args) [instance] :107
-void Application::OnPointerPressed(::g::Fuse::Input::PointerPressedArgs* args)
-{
-    uStackFrame __("Outracks.Simulator.Application", "OnPointerPressed(Fuse.Input.PointerPressedArgs)");
-    ::g::Uno::Collections::List__Add_fn(uPtr(pointers), args);
-
-    if (uPtr(pointers)->Count() == 3)
-        ::g::Fuse::Timer::Wait(1.0, uDelegate::New(::TYPES[9/*Uno.Action*/], (void*)Application__ShowDeveloperMenu_fn, this));
-
-    SetState(uPtr(_state)->OnPointerPressed(args));
-
-    if (!uPtr(args)->IsHandled())
-        ::g::Fuse::Input::IPointerEventResponder::OnPointerPressed(uInterface(uPtr(_defaultPointerEventResponder), ::TYPES[8/*Fuse.Input.IPointerEventResponder*/]), args);
-}
-
-// public void OnPointerReleased(Fuse.Input.PointerReleasedArgs args) [instance] :146
-void Application::OnPointerReleased(::g::Fuse::Input::PointerReleasedArgs* args)
-{
-    uStackFrame __("Outracks.Simulator.Application", "OnPointerReleased(Fuse.Input.PointerReleasedArgs)");
-    ::g::Fuse::Input::PointerPressedArgs* ret2;
-
-    for (int i = 0; i < uPtr(pointers)->Count(); i++)
-        if (uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(pointers), uCRef<int>(i), &ret2), ret2))->PointIndex() == uPtr(args)->PointIndex())
-        {
-            uPtr(pointers)->RemoveAt(i);
-            break;
-        }
-
-    ::g::Fuse::Input::IPointerEventResponder::OnPointerReleased(uInterface(uPtr(_defaultPointerEventResponder), ::TYPES[8/*Fuse.Input.IPointerEventResponder*/]), args);
-}
-
-// public void OnPointerWheelMoved(Fuse.Input.PointerWheelMovedArgs args) [instance] :160
-void Application::OnPointerWheelMoved(::g::Fuse::Input::PointerWheelMovedArgs* args)
-{
-    uStackFrame __("Outracks.Simulator.Application", "OnPointerWheelMoved(Fuse.Input.PointerWheelMovedArgs)");
-    ::g::Fuse::Input::IPointerEventResponder::OnPointerWheelMoved(uInterface(uPtr(_defaultPointerEventResponder), ::TYPES[8/*Fuse.Input.IPointerEventResponder*/]), args);
-}
-
-// private void OnUnhandledException(object sender, Fuse.UnhandledExceptionArgs args) [instance] :170
-void Application::OnUnhandledException1(uObject* sender, ::g::Fuse::UnhandledExceptionArgs* args)
-{
-    uStackFrame __("Outracks.Simulator.Application", "OnUnhandledException(object,Fuse.UnhandledExceptionArgs)");
-    uPtr(args)->IsHandled(true);
-    ::g::Outracks::Simulator::ConcurrentQueue__Enqueue_fn(uPtr(_exception), args->Exception());
-}
-
-// public Outracks.Simulator.Runtime.IReflection get_Reflection() [instance] :30
-uObject* Application::Reflection()
-{
-    return ::g::Outracks::Simulator::Context::Reflection();
-}
-
-// public void set_Reflection(Outracks.Simulator.Runtime.IReflection value) [instance] :31
-void Application::Reflection(uObject* value)
-{
-    ::g::Outracks::Simulator::Context::Reflection(value);
-}
-
-// private void ResetEverything(bool initial) [instance] :78
-void Application::ResetEverything(bool initial)
-{
-    uStackFrame __("Outracks.Simulator.Application", "ResetEverything(bool)");
-    ::g::Outracks::Simulator::FakeApp* fakeApp = ::g::Outracks::Simulator::FakeApp::New4(this);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(fakeApp->Children1()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), ::g::Fuse::Controls::Panel::New3());
-    ::g::Outracks::Simulator::Context::SetApp(fakeApp);
-
-    if (initial)
-        UnrootHandlers();
-
-    try
-    {
-        ::g::Uno::Collections::ICollection::Clear(uInterface(uPtr(Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]));
-    }
-    catch (const uThrowable& __t)
-    {
-        ::g::Uno::Exception* e = __t.Exception;
-        ::g::Fuse::Diagnostics::UnknownException(::STRINGS[3/*"Failed to p...*/], e, this, ::STRINGS[4/*"/usr/local/...*/], 94, ::STRINGS[5/*"ResetEveryt...*/]);
-    }
-
-    RootHandlers();
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), fakeApp);
-}
-
-// private void RootHandlers() [instance] :50
-void Application::RootHandlers()
-{
-    uStackFrame __("Outracks.Simulator.Application", "RootHandlers()");
-    ::g::Fuse::Diagnostics::add_DiagnosticReported(uDelegate::New(::TYPES[13/*Fuse.DiagnosticHandler*/], (void*)Application__OnDiagnosticReported_fn, this));
-    ::g::Fuse::Preview::SelectionManager::add_SelectionChanged(uDelegate::New(::TYPES[14/*Uno.EventHandler<Uno.EventArgs>*/], (void*)Application__InvalidateSelection1_fn, this));
-}
-
-// private void SetState(Outracks.Simulator.State nextState) [instance] :205
-void Application::SetState(::g::Outracks::Simulator::State* nextState)
-{
-    uStackFrame __("Outracks.Simulator.Application", "SetState(Outracks.Simulator.State)");
-
-    while (nextState != _state)
-    {
-        uPtr(_state)->OnLeaveState();
-        _state = nextState;
-        nextState = uPtr(_state)->OnEnterState();
-    }
-}
-
-// private void ShowDeveloperMenu() [instance] :120
-void Application::ShowDeveloperMenu()
-{
-    uStackFrame __("Outracks.Simulator.Application", "ShowDeveloperMenu()");
-    ::g::Fuse::Input::PointerPressedArgs* ret5;
-    ::g::Fuse::Input::PointerPressedArgs* ret6;
-    bool ret7;
-
-    if (uPtr(pointers)->Count() != 3)
-        return;
-
-    for (int i = 0; i < uPtr(pointers)->Count(); i++)
-        if (uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(pointers), uCRef<int>(i), &ret5), ret5))->TryHardCapture(this, uDelegate::New(::TYPES[9/*Uno.Action*/], (void*)Application__DoNothing_fn, this), NULL))
-            uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(pointers), uCRef<int>(i), &ret6), ret6))->ReleaseCapture(this);
-
-    if (!(::g::Uno::Collections::ICollection::Contains_ex(uInterface(uPtr(Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), _developerMenu, &ret7), ret7))
-        ::g::Uno::Collections::IList::Insert_ex(uInterface(uPtr(Children()), ::TYPES[15/*Uno.Collections.IList<Fuse.Node>*/]), uCRef<int>(0), _developerMenu);
-}
-
-// private void ShowDiagnostic(Fuse.Diagnostic d) [instance] :68
-void Application::ShowDiagnostic(::g::Fuse::Diagnostic* d)
-{
-    uStackFrame __("Outracks.Simulator.Application", "ShowDiagnostic(Fuse.Diagnostic)");
-    ::g::Outracks::Simulator::ConcurrentQueue__Enqueue_fn(uPtr(_dispatcher), uDelegate::New(::TYPES[9/*Uno.Action*/], (void*)::g::Outracks::Simulator::DiagnosticShower__Show_fn, ::g::Outracks::Simulator::DiagnosticShower::New1(d, _prevDiagnostics)));
-}
-
-// private void UnrootHandlers() [instance] :56
-void Application::UnrootHandlers()
-{
-    uStackFrame __("Outracks.Simulator.Application", "UnrootHandlers()");
-    ::g::Fuse::Diagnostics::remove_DiagnosticReported(uDelegate::New(::TYPES[13/*Fuse.DiagnosticHandler*/], (void*)Application__OnDiagnosticReported_fn, this));
-    ::g::Fuse::Preview::SelectionManager::remove_SelectionChanged(uDelegate::New(::TYPES[14/*Uno.EventHandler<Uno.EventArgs>*/], (void*)Application__InvalidateSelection1_fn, this));
-}
-
-// public Application New(Uno.Net.IPEndPoint[] proxyEndpoints, string project, Uno.Func<Uno.IO.Bundle> projectBundle, string[] defines) [static] :34
-Application* Application::New2(uArray* proxyEndpoints, uString* project, uDelegate* projectBundle, uArray* defines)
-{
-    Application* obj1 = (Application*)uNew(Application_typeof());
-    obj1->ctor_4(proxyEndpoints, project, projectBundle, defines);
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
-
-// internal sealed class Apply<TArg1> :107
+// internal sealed class Apply<TArg1> :108
 // {
 static void Apply_build(uType* type)
 {
@@ -758,20 +175,20 @@ uType* Apply_typeof()
     return type;
 }
 
-// public Apply(Uno.Action<TArg1> action, TArg1 arg1) :112
+// public Apply(Uno.Action<TArg1> action, TArg1 arg1) :113
 void Apply__ctor__fn(Apply* __this, uDelegate* action, void* arg1)
 {
     __this->_action = action;
     __this->_arg1() = arg1;
 }
 
-// public void Execute() :118
+// public void Execute() :119
 void Apply__Execute_fn(Apply* __this)
 {
     __this->Execute();
 }
 
-// public Apply New(Uno.Action<TArg1> action, TArg1 arg1) :112
+// public Apply New(Uno.Action<TArg1> action, TArg1 arg1) :113
 void Apply__New1_fn(uType* __type, uDelegate* action, void* arg1, Apply** __retval)
 {
     Apply* obj1 = (Apply*)uNew(__type);
@@ -779,7 +196,7 @@ void Apply__New1_fn(uType* __type, uDelegate* action, void* arg1, Apply** __retv
     return *__retval = obj1, void();
 }
 
-// public void Execute() [instance] :118
+// public void Execute() [instance] :119
 void Apply::Execute()
 {
     uStackFrame __("Outracks.Simulator.Apply`1", "Execute()");
@@ -787,10 +204,10 @@ void Apply::Execute()
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// internal sealed class ApplyFirst<TArg1, TArg2> :124
+// internal sealed class ApplyFirst<TArg1, TArg2> :125
 // {
 static void ApplyFirst_build(uType* type)
 {
@@ -814,21 +231,21 @@ uType* ApplyFirst_typeof()
     return type;
 }
 
-// public ApplyFirst(Uno.Action<TArg1, TArg2> action, TArg1 arg1) :128
+// public ApplyFirst(Uno.Action<TArg1, TArg2> action, TArg1 arg1) :129
 void ApplyFirst__ctor__fn(ApplyFirst* __this, uDelegate* action, void* arg1)
 {
     __this->_action = action;
     __this->_arg1() = arg1;
 }
 
-// public void Execute(TArg2 arg2) :134
+// public void Execute(TArg2 arg2) :135
 void ApplyFirst__Execute_fn(ApplyFirst* __this, void* arg2)
 {
     uStackFrame __("Outracks.Simulator.ApplyFirst`2", "Execute(TArg2)");
     uPtr(__this->_action)->Invoke(2, (void*)__this->_arg1(), arg2);
 }
 
-// public ApplyFirst New(Uno.Action<TArg1, TArg2> action, TArg1 arg1) :128
+// public ApplyFirst New(Uno.Action<TArg1, TArg2> action, TArg1 arg1) :129
 void ApplyFirst__New1_fn(uType* __type, uDelegate* action, void* arg1, ApplyFirst** __retval)
 {
     ApplyFirst* obj1 = (ApplyFirst*)uNew(__type);
@@ -837,10 +254,10 @@ void ApplyFirst__New1_fn(uType* __type, uDelegate* action, void* arg1, ApplyFirs
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// internal sealed class ApplySecond<TArg1, TArg2> :140
+// internal sealed class ApplySecond<TArg1, TArg2> :141
 // {
 static void ApplySecond_build(uType* type)
 {
@@ -864,21 +281,21 @@ uType* ApplySecond_typeof()
     return type;
 }
 
-// public ApplySecond(Uno.Action<TArg1, TArg2> action, TArg2 arg2) :144
+// public ApplySecond(Uno.Action<TArg1, TArg2> action, TArg2 arg2) :145
 void ApplySecond__ctor__fn(ApplySecond* __this, uDelegate* action, void* arg2)
 {
     __this->_action = action;
     __this->_arg2() = arg2;
 }
 
-// public void Execute(TArg1 arg1) :150
+// public void Execute(TArg1 arg1) :151
 void ApplySecond__Execute_fn(ApplySecond* __this, void* arg1)
 {
     uStackFrame __("Outracks.Simulator.ApplySecond`2", "Execute(TArg1)");
     uPtr(__this->_action)->Invoke(2, arg1, (void*)__this->_arg2());
 }
 
-// public ApplySecond New(Uno.Action<TArg1, TArg2> action, TArg2 arg2) :144
+// public ApplySecond New(Uno.Action<TArg1, TArg2> action, TArg2 arg2) :145
 void ApplySecond__New1_fn(uType* __type, uDelegate* action, void* arg2, ApplySecond** __retval)
 {
     ApplySecond* obj1 = (ApplySecond*)uNew(__type);
@@ -887,625 +304,817 @@ void ApplySecond__New1_fn(uType* __type, uDelegate* action, void* arg2, ApplySec
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/messages/$.uno
+// --------------------------------------------------------------------------------
 
-// public sealed class ArrayStream :1079
+// public sealed class BuildIssueDetected :19
 // {
-static void ArrayStream_build(uType* type)
+// static BuildIssueDetected() :19
+static void BuildIssueDetected__cctor__fn(uType* __type)
 {
-    ::TYPES[16] = ::g::Uno::Byte_typeof()->Array();
-    ::TYPES[17] = ::g::Uno::Array_typeof()->MakeMethod(1/*Copy<byte>*/, ::g::Uno::Byte_typeof(), NULL);
-    type->SetInterfaces(
-        ::g::Uno::IDisposable_typeof(), offsetof(::g::Uno::IO::Stream_type, interface0));
-    type->SetFields(0,
-        ::TYPES[16/*byte[]*/], offsetof(::g::Outracks::Simulator::ArrayStream, _buffer), 0,
-        ::g::Uno::Long_typeof(), offsetof(::g::Outracks::Simulator::ArrayStream, _length), 0,
-        ::g::Uno::Int_typeof(), offsetof(::g::Outracks::Simulator::ArrayStream, _nextIncrease), 0,
-        ::g::Uno::Long_typeof(), offsetof(::g::Outracks::Simulator::ArrayStream, _Position), 0);
-    type->Reflection.SetFunctions(3,
-        new uFunction("get_Capacity", NULL, (void*)ArrayStream__get_Capacity_fn, 0, false, ::g::Uno::Int_typeof(), 0),
-        new uFunction("GetBuffer", NULL, (void*)ArrayStream__GetBuffer_fn, 0, false, ::TYPES[16/*byte[]*/], 0),
-        new uFunction(".ctor", NULL, (void*)ArrayStream__New1_fn, 0, true, type, 1, ::TYPES[16/*byte[]*/]));
+    BuildIssueDetected::MessageType_ = ::STRINGS[0/*"BuildIssueD...*/];
 }
 
-::g::Uno::IO::Stream_type* ArrayStream_typeof()
+static void BuildIssueDetected_build(uType* type)
 {
-    static uSStrong< ::g::Uno::IO::Stream_type*> type;
+    ::STRINGS[0] = uString::Const("BuildIssueDetected");
+    ::STRINGS[1] = uString::Const("{0}: {1} {2}: {3}");
+    ::TYPES[0] = ::g::Uno::Type_typeof();
+    ::TYPES[1] = ::g::Outracks::Optional_typeof()->MakeMethod(1/*Read<Outracks.Simulator.SourceReference>*/, ::g::Outracks::Simulator::SourceReference_typeof(), NULL);
+    ::TYPES[2] = ::g::Uno::Func1_typeof()->MakeType(::g::System::IO::BinaryReader_typeof(), ::g::Outracks::Simulator::SourceReference_typeof(), NULL);
+    ::TYPES[3] = uObject_typeof()->Array();
+    ::TYPES[4] = ::g::Uno::Int_typeof();
+    ::TYPES[5] = ::g::Outracks::Optional_typeof()->MakeMethod(4/*Write<Outracks.Simulator.SourceReference>*/, ::g::Outracks::Simulator::SourceReference_typeof(), NULL);
+    ::TYPES[6] = ::g::Uno::Action2_typeof()->MakeType(::g::System::IO::BinaryWriter_typeof(), ::g::Outracks::Simulator::SourceReference_typeof(), NULL);
+    type->SetInterfaces(
+        ::g::Outracks::IBinaryMessage_typeof(), offsetof(BuildIssueDetected_type, interface0));
+    type->SetFields(0,
+        ::g::Uno::Guid_typeof(), offsetof(::g::Outracks::Simulator::BuildIssueDetected, _BuildId), 0,
+        ::g::Uno::String_typeof(), offsetof(::g::Outracks::Simulator::BuildIssueDetected, _Code), 0,
+        ::g::Uno::String_typeof(), offsetof(::g::Outracks::Simulator::BuildIssueDetected, _Message), 0,
+        ::g::Outracks::Simulator::BuildIssueType_typeof(), offsetof(::g::Outracks::Simulator::BuildIssueDetected, _Severity), 0,
+        ::g::Outracks::Optional1_typeof()->MakeType(::g::Outracks::Simulator::SourceReference_typeof(), NULL), (uintptr_t)0, uFieldFlagsConstrained,
+        ::g::Uno::String_typeof(), (uintptr_t)&::g::Outracks::Simulator::BuildIssueDetected::MessageType_, uFieldFlagsStatic);
+    type->Reflection.SetFields(1,
+        new uField("MessageType", 5));
+    type->Reflection.SetFunctions(9,
+        new uFunction("get_BuildId", NULL, (void*)BuildIssueDetected__get_BuildId_fn, 0, false, ::g::Uno::Guid_typeof(), 0),
+        new uFunction("get_Code", NULL, (void*)BuildIssueDetected__get_Code_fn, 0, false, ::g::Uno::String_typeof(), 0),
+        new uFunction("get_Message", NULL, (void*)BuildIssueDetected__get_Message_fn, 0, false, ::g::Uno::String_typeof(), 0),
+        new uFunction(".ctor", NULL, (void*)BuildIssueDetected__New2_fn, 0, true, type, 5, ::g::Outracks::Simulator::BuildIssueType_typeof(), ::g::Uno::String_typeof(), ::g::Uno::String_typeof(), ::g::Outracks::Optional1_typeof()->MakeType(::g::Outracks::Simulator::SourceReference_typeof(), NULL), ::g::Uno::Guid_typeof()),
+        new uFunction("ReadDataFrom", NULL, (void*)BuildIssueDetected__ReadDataFrom_fn, 0, true, type, 1, ::g::System::IO::BinaryReader_typeof()),
+        new uFunction("get_Severity", NULL, (void*)BuildIssueDetected__get_Severity_fn, 0, false, ::g::Outracks::Simulator::BuildIssueType_typeof(), 0),
+        new uFunction("get_Source", NULL, (void*)BuildIssueDetected__get_Source_fn, 0, false, ::g::Outracks::Optional1_typeof()->MakeType(::g::Outracks::Simulator::SourceReference_typeof(), NULL), 0),
+        new uFunction("get_Type", NULL, (void*)BuildIssueDetected__get_Type_fn, 0, false, ::g::Uno::String_typeof(), 0),
+        new uFunction("WriteDataTo", NULL, (void*)BuildIssueDetected__WriteDataTo_fn, 0, false, uVoid_typeof(), 1, ::g::System::IO::BinaryWriter_typeof()));
+}
+
+BuildIssueDetected_type* BuildIssueDetected_typeof()
+{
+    static uSStrong<BuildIssueDetected_type*> type;
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::IO::Stream_typeof();
+    options.FieldCount = 6;
+    options.InterfaceCount = 1;
+    options.ObjectSize = sizeof(BuildIssueDetected);
+    options.TypeSize = sizeof(BuildIssueDetected_type);
+    type = (BuildIssueDetected_type*)uClassType::New("Outracks.Simulator.BuildIssueDetected", options);
+    type->fp_build_ = BuildIssueDetected_build;
+    type->fp_ctor_ = (void*)BuildIssueDetected__New1_fn;
+    type->fp_cctor_ = BuildIssueDetected__cctor__fn;
+    type->fp_ToString = (void(*)(uObject*, uString**))BuildIssueDetected__ToString_fn;
+    type->interface0.fp_WriteDataTo = (void(*)(uObject*, ::g::System::IO::BinaryWriter*))BuildIssueDetected__WriteDataTo_fn;
+    type->interface0.fp_get_Type = (void(*)(uObject*, uString**))BuildIssueDetected__get_Type_fn;
+    return type;
+}
+
+// private BuildIssueDetected() :47
+void BuildIssueDetected__ctor__fn(BuildIssueDetected* __this)
+{
+    __this->ctor_();
+}
+
+// public BuildIssueDetected(Outracks.Simulator.BuildIssueType type, string code, string message, Outracks.Optional<Outracks.Simulator.SourceReference> source, Uno.Guid buildId) :34
+void BuildIssueDetected__ctor_1_fn(BuildIssueDetected* __this, int* type, uString* code, uString* message, ::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::SourceReference*> >* source, ::g::Uno::Guid* buildId)
+{
+    __this->ctor_1(*type, code, message, *source, *buildId);
+}
+
+// public generated Uno.Guid get_BuildId() :28
+void BuildIssueDetected__get_BuildId_fn(BuildIssueDetected* __this, ::g::Uno::Guid* __retval)
+{
+    *__retval = __this->BuildId();
+}
+
+// private generated void set_BuildId(Uno.Guid value) :28
+void BuildIssueDetected__set_BuildId_fn(BuildIssueDetected* __this, ::g::Uno::Guid* value)
+{
+    __this->BuildId(*value);
+}
+
+// public generated string get_Code() :30
+void BuildIssueDetected__get_Code_fn(BuildIssueDetected* __this, uString** __retval)
+{
+    *__retval = __this->Code();
+}
+
+// private generated void set_Code(string value) :30
+void BuildIssueDetected__set_Code_fn(BuildIssueDetected* __this, uString* value)
+{
+    __this->Code(value);
+}
+
+// public generated string get_Message() :31
+void BuildIssueDetected__get_Message_fn(BuildIssueDetected* __this, uString** __retval)
+{
+    *__retval = __this->Message();
+}
+
+// private generated void set_Message(string value) :31
+void BuildIssueDetected__set_Message_fn(BuildIssueDetected* __this, uString* value)
+{
+    __this->Message(value);
+}
+
+// private BuildIssueDetected New() :47
+void BuildIssueDetected__New1_fn(BuildIssueDetected** __retval)
+{
+    *__retval = BuildIssueDetected::New1();
+}
+
+// public BuildIssueDetected New(Outracks.Simulator.BuildIssueType type, string code, string message, Outracks.Optional<Outracks.Simulator.SourceReference> source, Uno.Guid buildId) :34
+void BuildIssueDetected__New2_fn(int* type, uString* code, uString* message, ::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::SourceReference*> >* source, ::g::Uno::Guid* buildId, BuildIssueDetected** __retval)
+{
+    *__retval = BuildIssueDetected::New2(*type, code, message, *source, *buildId);
+}
+
+// public static Outracks.Simulator.BuildIssueDetected ReadDataFrom(System.IO.BinaryReader reader) :58
+void BuildIssueDetected__ReadDataFrom_fn(::g::System::IO::BinaryReader* reader, BuildIssueDetected** __retval)
+{
+    *__retval = BuildIssueDetected::ReadDataFrom(reader);
+}
+
+// public generated Outracks.Simulator.BuildIssueType get_Severity() :29
+void BuildIssueDetected__get_Severity_fn(BuildIssueDetected* __this, int* __retval)
+{
+    *__retval = __this->Severity();
+}
+
+// private generated void set_Severity(Outracks.Simulator.BuildIssueType value) :29
+void BuildIssueDetected__set_Severity_fn(BuildIssueDetected* __this, int* value)
+{
+    __this->Severity(*value);
+}
+
+// public generated Outracks.Optional<Outracks.Simulator.SourceReference> get_Source() :32
+void BuildIssueDetected__get_Source_fn(BuildIssueDetected* __this, ::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::SourceReference*> >* __retval)
+{
+    *__retval = __this->Source();
+}
+
+// private generated void set_Source(Outracks.Optional<Outracks.Simulator.SourceReference> value) :32
+void BuildIssueDetected__set_Source_fn(BuildIssueDetected* __this, ::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::SourceReference*> >* value)
+{
+    __this->Source(*value);
+}
+
+// public override sealed string ToString() :70
+void BuildIssueDetected__ToString_fn(BuildIssueDetected* __this, uString** __retval)
+{
+    uStackFrame __("Outracks.Simulator.BuildIssueDetected", "ToString()");
+    return *__retval = ::g::Uno::String::Format(::STRINGS[1/*"{0}: {1} {2...*/], uArray::Init<uObject*>(::TYPES[3/*object[]*/], 4, (uString*)::g::Outracks::Simulator::SourceReferenceCanonicalization::ToCanonicalForm(__this->Source()), uBox<int>(::g::Outracks::Simulator::BuildIssueType_typeof(), __this->Severity()), (uString*)__this->Code(), (uString*)__this->Message())), void();
+}
+
+// public string get_Type() :25
+void BuildIssueDetected__get_Type_fn(BuildIssueDetected* __this, uString** __retval)
+{
+    *__retval = __this->Type();
+}
+
+// public void WriteDataTo(System.IO.BinaryWriter writer) :49
+void BuildIssueDetected__WriteDataTo_fn(BuildIssueDetected* __this, ::g::System::IO::BinaryWriter* writer)
+{
+    __this->WriteDataTo(writer);
+}
+
+uSStrong<uString*> BuildIssueDetected::MessageType_;
+
+// private BuildIssueDetected() [instance] :47
+void BuildIssueDetected::ctor_()
+{
+}
+
+// public BuildIssueDetected(Outracks.Simulator.BuildIssueType type, string code, string message, Outracks.Optional<Outracks.Simulator.SourceReference> source, Uno.Guid buildId) [instance] :34
+void BuildIssueDetected::ctor_1(int type, uString* code, uString* message, ::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::SourceReference*> > source, ::g::Uno::Guid buildId)
+{
+    BuildId(buildId);
+    Severity(type);
+    Code(code);
+    Message(message);
+    Source(source);
+}
+
+// public generated Uno.Guid get_BuildId() [instance] :28
+::g::Uno::Guid BuildIssueDetected::BuildId()
+{
+    return _BuildId;
+}
+
+// private generated void set_BuildId(Uno.Guid value) [instance] :28
+void BuildIssueDetected::BuildId(::g::Uno::Guid value)
+{
+    _BuildId = value;
+}
+
+// public generated string get_Code() [instance] :30
+uString* BuildIssueDetected::Code()
+{
+    return _Code;
+}
+
+// private generated void set_Code(string value) [instance] :30
+void BuildIssueDetected::Code(uString* value)
+{
+    _Code = value;
+}
+
+// public generated string get_Message() [instance] :31
+uString* BuildIssueDetected::Message()
+{
+    return _Message;
+}
+
+// private generated void set_Message(string value) [instance] :31
+void BuildIssueDetected::Message(uString* value)
+{
+    _Message = value;
+}
+
+// public generated Outracks.Simulator.BuildIssueType get_Severity() [instance] :29
+int BuildIssueDetected::Severity()
+{
+    return _Severity;
+}
+
+// private generated void set_Severity(Outracks.Simulator.BuildIssueType value) [instance] :29
+void BuildIssueDetected::Severity(int value)
+{
+    _Severity = value;
+}
+
+// public generated Outracks.Optional<Outracks.Simulator.SourceReference> get_Source() [instance] :32
+::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::SourceReference*> > BuildIssueDetected::Source()
+{
+    return _Source().Value< ::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::SourceReference*> > >();
+}
+
+// private generated void set_Source(Outracks.Optional<Outracks.Simulator.SourceReference> value) [instance] :32
+void BuildIssueDetected::Source(::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::SourceReference*> > value)
+{
+    _Source().Value< ::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::SourceReference*> > >() = value;
+}
+
+// public string get_Type() [instance] :25
+uString* BuildIssueDetected::Type()
+{
+    return BuildIssueDetected::MessageType();
+}
+
+// public void WriteDataTo(System.IO.BinaryWriter writer) [instance] :49
+void BuildIssueDetected::WriteDataTo(::g::System::IO::BinaryWriter* writer)
+{
+    uStackFrame __("Outracks.Simulator.BuildIssueDetected", "WriteDataTo(System.IO.BinaryWriter)");
+    ::g::Outracks::Simulator::GuidSerializer::WriteGuid(writer, BuildId());
+    uPtr(writer)->Write6(::g::Uno::Int::ToString(Severity(), ::TYPES[4/*int*/]));
+    writer->Write6(Code());
+    writer->Write6(Message());
+    ::g::Outracks::Optional__Write_fn(::TYPES[5/*Outracks.Optional.Write<Outracks.Simulator.SourceReference>*/], writer, uCRef(Source()), uDelegate::New(::TYPES[6/*Uno.Action<System.IO.BinaryWriter, Outracks.Simulator.SourceReference>*/], (void*)::g::Outracks::Simulator::SourceReference__Write_fn));
+}
+
+// private BuildIssueDetected New() [static] :47
+BuildIssueDetected* BuildIssueDetected::New1()
+{
+    BuildIssueDetected* obj8 = (BuildIssueDetected*)uNew(BuildIssueDetected_typeof());
+    obj8->ctor_();
+    return obj8;
+}
+
+// public BuildIssueDetected New(Outracks.Simulator.BuildIssueType type, string code, string message, Outracks.Optional<Outracks.Simulator.SourceReference> source, Uno.Guid buildId) [static] :34
+BuildIssueDetected* BuildIssueDetected::New2(int type, uString* code, uString* message, ::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::SourceReference*> > source, ::g::Uno::Guid buildId)
+{
+    BuildIssueDetected* obj7 = (BuildIssueDetected*)uNew(BuildIssueDetected_typeof());
+    obj7->ctor_1(type, code, message, source, buildId);
+    return obj7;
+}
+
+// public static Outracks.Simulator.BuildIssueDetected ReadDataFrom(System.IO.BinaryReader reader) [static] :58
+BuildIssueDetected* BuildIssueDetected::ReadDataFrom(::g::System::IO::BinaryReader* reader)
+{
+    uStackFrame __("Outracks.Simulator.BuildIssueDetected", "ReadDataFrom(System.IO.BinaryReader)");
+    BuildIssueDetected_typeof()->Init();
+    BuildIssueDetected* collection1;
+    ::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::SourceReference*> > ret9;
+    collection1 = BuildIssueDetected::New1();
+    ::g::Uno::Guid ind2 = ::g::Outracks::Simulator::GuidSerializer::ReadGuid(reader);
+    uPtr(collection1)->BuildId(ind2);
+    ;
+    int ind3 = uUnbox<int>(::g::Outracks::Simulator::BuildIssueType_typeof(), ::g::Uno::Enum::Parse(::g::Outracks::Simulator::BuildIssueType_typeof(), uPtr(reader)->ReadString()));
+    uPtr(collection1)->Severity(ind3);
+    ;
+    uString* ind4 = uPtr(reader)->ReadString();
+    uPtr(collection1)->Code(ind4);
+    ;
+    uString* ind5 = uPtr(reader)->ReadString();
+    uPtr(collection1)->Message(ind5);
+    ;
+    ::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::SourceReference*> > ind6 = (::g::Outracks::Optional__Read_fn(::TYPES[1/*Outracks.Optional.Read<Outracks.Simulator.SourceReference>*/], reader, uDelegate::New(::TYPES[2/*Uno.Func<System.IO.BinaryReader, Outracks.Simulator.SourceReference>*/], (void*)::g::Outracks::Simulator::SourceReference__Read_fn), &ret9), ret9);
+    uPtr(collection1)->Source(ind6);
+    ;
+    return collection1;
+}
+// }
+
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/messages/$.uno
+// --------------------------------------------------------------------------------
+
+// public enum BuildIssueType :11
+uEnumType* BuildIssueType_typeof()
+{
+    static uSStrong<uEnumType*> type;
+    if (type != NULL) return type;
+
+    type = uEnumType::New("Outracks.Simulator.BuildIssueType", ::g::Uno::Int_typeof(), 4);
+    type->SetLiterals(
+        "FatalError", 0LL,
+        "Error", 1LL,
+        "Warning", 2LL,
+        "Message", 3LL);
+    return type;
+}
+
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/messages/$.uno
+// --------------------------------------------------------------------------------
+
+// public enum BuildIssueTypeData :81
+uEnumType* BuildIssueTypeData_typeof()
+{
+    static uSStrong<uEnumType*> type;
+    if (type != NULL) return type;
+
+    type = uEnumType::New("Outracks.Simulator.BuildIssueTypeData", ::g::Uno::Int_typeof(), 5);
+    type->SetLiterals(
+        "Unknown", 0LL,
+        "FatalError", 1LL,
+        "Error", 2LL,
+        "Warning", 3LL,
+        "Message", 4LL);
+    return type;
+}
+
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/messages/$.uno
+// --------------------------------------------------------------------------------
+
+// public sealed class BuildLogged :108
+// {
+// static BuildLogged() :108
+static void BuildLogged__cctor__fn(uType* __type)
+{
+    BuildLogged::MessageType_ = ::STRINGS[2/*"BuildLogged"*/];
+}
+
+static void BuildLogged_build(uType* type)
+{
+    ::STRINGS[2] = uString::Const("BuildLogged");
+    type->SetInterfaces(
+        ::g::Outracks::IBinaryMessage_typeof(), offsetof(BuildLogged_type, interface0));
+    type->SetFields(0,
+        ::g::Uno::Guid_typeof(), offsetof(::g::Outracks::Simulator::BuildLogged, _BuildId), 0,
+        ::g::Outracks::Optional1_typeof()->MakeType(::g::Outracks::Simulator::ConsoleColor_typeof(), NULL), (uintptr_t)0, uFieldFlagsConstrained,
+        ::g::Uno::String_typeof(), offsetof(::g::Outracks::Simulator::BuildLogged, _Text), 0,
+        ::g::Uno::String_typeof(), (uintptr_t)&::g::Outracks::Simulator::BuildLogged::MessageType_, uFieldFlagsStatic);
+    type->Reflection.SetFields(1,
+        new uField("MessageType", 3));
+    type->Reflection.SetFunctions(7,
+        new uFunction("get_BuildId", NULL, (void*)BuildLogged__get_BuildId_fn, 0, false, ::g::Uno::Guid_typeof(), 0),
+        new uFunction("get_Color", NULL, (void*)BuildLogged__get_Color_fn, 0, false, ::g::Outracks::Optional1_typeof()->MakeType(::g::Outracks::Simulator::ConsoleColor_typeof(), NULL), 0),
+        new uFunction(".ctor", NULL, (void*)BuildLogged__New2_fn, 0, true, type, 3, ::g::Uno::String_typeof(), ::g::Outracks::Optional1_typeof()->MakeType(::g::Outracks::Simulator::ConsoleColor_typeof(), NULL), ::g::Uno::Guid_typeof()),
+        new uFunction("ReadDataFrom", NULL, (void*)BuildLogged__ReadDataFrom_fn, 0, true, type, 1, ::g::System::IO::BinaryReader_typeof()),
+        new uFunction("get_Text", NULL, (void*)BuildLogged__get_Text_fn, 0, false, ::g::Uno::String_typeof(), 0),
+        new uFunction("get_Type", NULL, (void*)BuildLogged__get_Type_fn, 0, false, ::g::Uno::String_typeof(), 0),
+        new uFunction("WriteDataTo", NULL, (void*)BuildLogged__WriteDataTo_fn, 0, false, uVoid_typeof(), 1, ::g::System::IO::BinaryWriter_typeof()));
+}
+
+BuildLogged_type* BuildLogged_typeof()
+{
+    static uSStrong<BuildLogged_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
     options.FieldCount = 4;
     options.InterfaceCount = 1;
-    options.ObjectSize = sizeof(ArrayStream);
-    options.TypeSize = sizeof(::g::Uno::IO::Stream_type);
-    type = (::g::Uno::IO::Stream_type*)uClassType::New("Outracks.Simulator.ArrayStream", options);
-    type->fp_build_ = ArrayStream_build;
-    type->fp_get_CanRead = (void(*)(::g::Uno::IO::Stream*, bool*))ArrayStream__get_CanRead_fn;
-    type->fp_get_CanSeek = (void(*)(::g::Uno::IO::Stream*, bool*))ArrayStream__get_CanSeek_fn;
-    type->fp_get_CanTimeout = (void(*)(::g::Uno::IO::Stream*, bool*))ArrayStream__get_CanTimeout_fn;
-    type->fp_get_CanWrite = (void(*)(::g::Uno::IO::Stream*, bool*))ArrayStream__get_CanWrite_fn;
-    type->fp_Flush = (void(*)(::g::Uno::IO::Stream*))ArrayStream__Flush_fn;
-    type->fp_get_Length = (void(*)(::g::Uno::IO::Stream*, int64_t*))ArrayStream__get_Length_fn;
-    type->fp_get_Position = (void(*)(::g::Uno::IO::Stream*, int64_t*))ArrayStream__get_Position_fn;
-    type->fp_set_Position = (void(*)(::g::Uno::IO::Stream*, int64_t*))ArrayStream__set_Position_fn;
-    type->fp_Read = (void(*)(::g::Uno::IO::Stream*, uArray*, int*, int*, int*))ArrayStream__Read_fn;
-    type->fp_Seek = (void(*)(::g::Uno::IO::Stream*, int64_t*, int*, int64_t*))ArrayStream__Seek_fn;
-    type->fp_SetLength = (void(*)(::g::Uno::IO::Stream*, int64_t*))ArrayStream__SetLength_fn;
-    type->fp_Write = (void(*)(::g::Uno::IO::Stream*, uArray*, int*, int*))ArrayStream__Write_fn;
-    type->interface0.fp_Dispose = (void(*)(uObject*))::g::Uno::IO::Stream__Dispose_fn;
+    options.ObjectSize = sizeof(BuildLogged);
+    options.TypeSize = sizeof(BuildLogged_type);
+    type = (BuildLogged_type*)uClassType::New("Outracks.Simulator.BuildLogged", options);
+    type->fp_build_ = BuildLogged_build;
+    type->fp_ctor_ = (void*)BuildLogged__New1_fn;
+    type->fp_cctor_ = BuildLogged__cctor__fn;
+    type->fp_ToString = (void(*)(uObject*, uString**))BuildLogged__ToString_fn;
+    type->interface0.fp_WriteDataTo = (void(*)(uObject*, ::g::System::IO::BinaryWriter*))BuildLogged__WriteDataTo_fn;
+    type->interface0.fp_get_Type = (void(*)(uObject*, uString**))BuildLogged__get_Type_fn;
     return type;
 }
 
-// public ArrayStream(byte[] buffer) :1124
-void ArrayStream__ctor_1_fn(ArrayStream* __this, uArray* buffer)
+// private BuildLogged() :127
+void BuildLogged__ctor__fn(BuildLogged* __this)
 {
-    __this->ctor_1(buffer);
+    __this->ctor_();
 }
 
-// public override sealed bool get_CanRead() :1088
-void ArrayStream__get_CanRead_fn(ArrayStream* __this, bool* __retval)
+// public BuildLogged(string text, Outracks.Optional<Outracks.Simulator.ConsoleColor> color, Uno.Guid buildId) :121
+void BuildLogged__ctor_1_fn(BuildLogged* __this, uString* text, ::g::Outracks::Optional1<int>* color, ::g::Uno::Guid* buildId)
 {
-    return *__retval = true, void();
+    __this->ctor_1(text, *color, *buildId);
 }
 
-// public override sealed bool get_CanSeek() :1098
-void ArrayStream__get_CanSeek_fn(ArrayStream* __this, bool* __retval)
+// public generated Uno.Guid get_BuildId() :117
+void BuildLogged__get_BuildId_fn(BuildLogged* __this, ::g::Uno::Guid* __retval)
 {
-    return *__retval = true, void();
+    *__retval = __this->BuildId();
 }
 
-// public override sealed bool get_CanTimeout() :1103
-void ArrayStream__get_CanTimeout_fn(ArrayStream* __this, bool* __retval)
+// private generated void set_BuildId(Uno.Guid value) :117
+void BuildLogged__set_BuildId_fn(BuildLogged* __this, ::g::Uno::Guid* value)
 {
-    return *__retval = false, void();
+    __this->BuildId(*value);
 }
 
-// public override sealed bool get_CanWrite() :1093
-void ArrayStream__get_CanWrite_fn(ArrayStream* __this, bool* __retval)
+// public generated Outracks.Optional<Outracks.Simulator.ConsoleColor> get_Color() :119
+void BuildLogged__get_Color_fn(BuildLogged* __this, ::g::Outracks::Optional1<int>* __retval)
 {
-    return *__retval = true, void();
+    *__retval = __this->Color();
 }
 
-// public int get_Capacity() :1116
-void ArrayStream__get_Capacity_fn(ArrayStream* __this, int* __retval)
+// private generated void set_Color(Outracks.Optional<Outracks.Simulator.ConsoleColor> value) :119
+void BuildLogged__set_Color_fn(BuildLogged* __this, ::g::Outracks::Optional1<int>* value)
 {
-    *__retval = __this->Capacity();
+    __this->Color(*value);
 }
 
-// private void EnsureCapacity(int byteCount) :1172
-void ArrayStream__EnsureCapacity_fn(ArrayStream* __this, int* byteCount)
+// private BuildLogged New() :127
+void BuildLogged__New1_fn(BuildLogged** __retval)
 {
-    __this->EnsureCapacity(*byteCount);
+    *__retval = BuildLogged::New1();
 }
 
-// public override sealed void Flush() :1206
-void ArrayStream__Flush_fn(ArrayStream* __this)
+// public BuildLogged New(string text, Outracks.Optional<Outracks.Simulator.ConsoleColor> color, Uno.Guid buildId) :121
+void BuildLogged__New2_fn(uString* text, ::g::Outracks::Optional1<int>* color, ::g::Uno::Guid* buildId, BuildLogged** __retval)
+{
+    *__retval = BuildLogged::New2(text, *color, *buildId);
+}
+
+// public static Outracks.Simulator.BuildLogged ReadDataFrom(System.IO.BinaryReader reader) :140
+void BuildLogged__ReadDataFrom_fn(::g::System::IO::BinaryReader* reader, BuildLogged** __retval)
+{
+    *__retval = BuildLogged::ReadDataFrom(reader);
+}
+
+// public generated string get_Text() :118
+void BuildLogged__get_Text_fn(BuildLogged* __this, uString** __retval)
+{
+    *__retval = __this->Text();
+}
+
+// private generated void set_Text(string value) :118
+void BuildLogged__set_Text_fn(BuildLogged* __this, uString* value)
+{
+    __this->Text(value);
+}
+
+// public override sealed string ToString() :129
+void BuildLogged__ToString_fn(BuildLogged* __this, uString** __retval)
+{
+    return *__retval = __this->Text(), void();
+}
+
+// public string get_Type() :114
+void BuildLogged__get_Type_fn(BuildLogged* __this, uString** __retval)
+{
+    *__retval = __this->Type();
+}
+
+// public void WriteDataTo(System.IO.BinaryWriter writer) :134
+void BuildLogged__WriteDataTo_fn(BuildLogged* __this, ::g::System::IO::BinaryWriter* writer)
+{
+    __this->WriteDataTo(writer);
+}
+
+uSStrong<uString*> BuildLogged::MessageType_;
+
+// private BuildLogged() [instance] :127
+void BuildLogged::ctor_()
 {
 }
 
-// public byte[] GetBuffer() :1196
-void ArrayStream__GetBuffer_fn(ArrayStream* __this, uArray** __retval)
+// public BuildLogged(string text, Outracks.Optional<Outracks.Simulator.ConsoleColor> color, Uno.Guid buildId) [instance] :121
+void BuildLogged::ctor_1(uString* text, ::g::Outracks::Optional1<int> color, ::g::Uno::Guid buildId)
 {
-    *__retval = __this->GetBuffer();
+    BuildId(buildId);
+    Text(text);
+    Color(color);
 }
 
-// public override sealed long get_Length() :1108
-void ArrayStream__get_Length_fn(ArrayStream* __this, int64_t* __retval)
+// public generated Uno.Guid get_BuildId() [instance] :117
+::g::Uno::Guid BuildLogged::BuildId()
 {
-    return *__retval = __this->_length, void();
+    return _BuildId;
 }
 
-// public ArrayStream New(byte[] buffer) :1124
-void ArrayStream__New1_fn(uArray* buffer, ArrayStream** __retval)
+// private generated void set_BuildId(Uno.Guid value) [instance] :117
+void BuildLogged::BuildId(::g::Uno::Guid value)
 {
-    *__retval = ArrayStream::New1(buffer);
+    _BuildId = value;
 }
 
-// public generated override sealed long get_Position() :1122
-void ArrayStream__get_Position_fn(ArrayStream* __this, int64_t* __retval)
+// public generated Outracks.Optional<Outracks.Simulator.ConsoleColor> get_Color() [instance] :119
+::g::Outracks::Optional1<int> BuildLogged::Color()
 {
-    return *__retval = __this->_Position, void();
+    return _Color().Value< ::g::Outracks::Optional1<int> >();
 }
 
-// public generated override sealed void set_Position(long value) :1122
-void ArrayStream__set_Position_fn(ArrayStream* __this, int64_t* value)
+// private generated void set_Color(Outracks.Optional<Outracks.Simulator.ConsoleColor> value) [instance] :119
+void BuildLogged::Color(::g::Outracks::Optional1<int> value)
 {
-    int64_t value_ = *value;
-    __this->_Position = value_;
+    _Color().Value< ::g::Outracks::Optional1<int> >() = value;
 }
 
-// public override sealed int Read(byte[] dst, int byteOffset, int byteCount) :1144
-void ArrayStream__Read_fn(ArrayStream* __this, uArray* dst, int* byteOffset, int* byteCount, int* __retval)
+// public generated string get_Text() [instance] :118
+uString* BuildLogged::Text()
 {
-    uStackFrame __("Outracks.Simulator.ArrayStream", "Read(byte[],int,int)");
-    int byteCount_ = *byteCount;
-    int byteOffset_ = *byteOffset;
-    int i = 0;
-
-    for (; (i < byteCount_) && ((__this->Position() + (int64_t)i) < __this->Length()); i++)
-        uPtr(dst)->Item<uint8_t>(i + byteOffset_) = uPtr(__this->_buffer)->Item<uint8_t>((int)__this->Position() + i);
-
-    __this->Position(__this->Position() + (int64_t)i);
-    return *__retval = i, void();
+    return _Text;
 }
 
-// private void ResizeTo(int newSize) :1188
-void ArrayStream__ResizeTo_fn(ArrayStream* __this, int* newSize)
+// private generated void set_Text(string value) [instance] :118
+void BuildLogged::Text(uString* value)
 {
-    __this->ResizeTo(*newSize);
+    _Text = value;
 }
 
-// public override sealed long Seek(long byteOffset, Uno.IO.SeekOrigin origin) :1155
-void ArrayStream__Seek_fn(ArrayStream* __this, int64_t* byteOffset, int* origin, int64_t* __retval)
+// public string get_Type() [instance] :114
+uString* BuildLogged::Type()
 {
-    int origin_ = *origin;
-    int64_t byteOffset_ = *byteOffset;
-
-    switch (origin_)
-    {
-        case 0:
-        {
-            __this->Position(byteOffset_);
-            break;
-        }
-        case 2:
-        {
-            __this->Position(__this->Length() + byteOffset_);
-            break;
-        }
-        default:
-        {
-            __this->Position(__this->Position() + byteOffset_);
-            break;
-        }
-    }
-
-    return *__retval = __this->Position(), void();
+    return BuildLogged::MessageType();
 }
 
-// public override sealed void SetLength(long value) :1201
-void ArrayStream__SetLength_fn(ArrayStream* __this, int64_t* value)
+// public void WriteDataTo(System.IO.BinaryWriter writer) [instance] :134
+void BuildLogged::WriteDataTo(::g::System::IO::BinaryWriter* writer)
 {
-    uStackFrame __("Outracks.Simulator.ArrayStream", "SetLength(long)");
-    U_THROW(::g::Uno::NotImplementedException::New4());
+    uStackFrame __("Outracks.Simulator.BuildLogged", "WriteDataTo(System.IO.BinaryWriter)");
+    ::g::Outracks::Simulator::GuidSerializer::WriteGuid(writer, BuildId());
+    uPtr(writer)->Write6(Text());
 }
 
-// public override sealed void Write(byte[] src, int byteOffset, int byteCount) :1130
-void ArrayStream__Write_fn(ArrayStream* __this, uArray* src, int* byteOffset, int* byteCount)
+// private BuildLogged New() [static] :127
+BuildLogged* BuildLogged::New1()
 {
-    uStackFrame __("Outracks.Simulator.ArrayStream", "Write(byte[],int,int)");
-    int byteCount_ = *byteCount;
-    int byteOffset_ = *byteOffset;
-    __this->EnsureCapacity(byteCount_);
-
-    for (int i = byteOffset_; i < (byteOffset_ + byteCount_); i++)
-    {
-        uPtr(__this->_buffer)->Item<uint8_t>((int)__this->Position()) = uPtr(src)->Item<uint8_t>(i);
-        __this->Position(__this->Position() + 1LL);
-    }
-
-    if (__this->Position() > __this->Length())
-        __this->_length = __this->Position();
+    BuildLogged* obj5 = (BuildLogged*)uNew(BuildLogged_typeof());
+    obj5->ctor_();
+    return obj5;
 }
 
-// public ArrayStream(byte[] buffer) [instance] :1124
-void ArrayStream::ctor_1(uArray* buffer)
+// public BuildLogged New(string text, Outracks.Optional<Outracks.Simulator.ConsoleColor> color, Uno.Guid buildId) [static] :121
+BuildLogged* BuildLogged::New2(uString* text, ::g::Outracks::Optional1<int> color, ::g::Uno::Guid buildId)
 {
-    uStackFrame __("Outracks.Simulator.ArrayStream", ".ctor(byte[])");
-    _buffer = uArray::New(::TYPES[16/*byte[]*/], 0);
-    _nextIncrease = 256;
-    ctor_();
-    _buffer = buffer;
-    _length = (int64_t)uPtr(_buffer)->Length();
+    BuildLogged* obj4 = (BuildLogged*)uNew(BuildLogged_typeof());
+    obj4->ctor_1(text, color, buildId);
+    return obj4;
 }
 
-// public int get_Capacity() [instance] :1116
-int ArrayStream::Capacity()
+// public static Outracks.Simulator.BuildLogged ReadDataFrom(System.IO.BinaryReader reader) [static] :140
+BuildLogged* BuildLogged::ReadDataFrom(::g::System::IO::BinaryReader* reader)
 {
-    uStackFrame __("Outracks.Simulator.ArrayStream", "get_Capacity()");
-    return uPtr(_buffer)->Length();
-}
-
-// private void EnsureCapacity(int byteCount) [instance] :1172
-void ArrayStream::EnsureCapacity(int byteCount)
-{
-    uStackFrame __("Outracks.Simulator.ArrayStream", "EnsureCapacity(int)");
-
-    if ((Position() + (int64_t)byteCount) <= (int64_t)Capacity())
-        return;
-    else if ((Position() + (int64_t)byteCount) <= (int64_t)(Capacity() + _nextIncrease))
-        ResizeTo(Capacity() + _nextIncrease);
-    else
-        ResizeTo((int)Position() + byteCount);
-}
-
-// public byte[] GetBuffer() [instance] :1196
-uArray* ArrayStream::GetBuffer()
-{
-    return _buffer;
-}
-
-// private void ResizeTo(int newSize) [instance] :1188
-void ArrayStream::ResizeTo(int newSize)
-{
-    uStackFrame __("Outracks.Simulator.ArrayStream", "ResizeTo(int)");
-    uArray* newBuffer = uArray::New(::TYPES[16/*byte[]*/], newSize);
-    ::g::Uno::Array::Copy1(::TYPES[17/*Uno.Array.Copy<byte>*/], _buffer, newBuffer, uPtr(_buffer)->Length());
-    _buffer = newBuffer;
-    _nextIncrease = Capacity();
-}
-
-// public ArrayStream New(byte[] buffer) [static] :1124
-ArrayStream* ArrayStream::New1(uArray* buffer)
-{
-    ArrayStream* obj1 = (ArrayStream*)uNew(ArrayStream_typeof());
-    obj1->ctor_1(buffer);
-    return obj1;
+    uStackFrame __("Outracks.Simulator.BuildLogged", "ReadDataFrom(System.IO.BinaryReader)");
+    BuildLogged_typeof()->Init();
+    BuildLogged* collection1;
+    collection1 = BuildLogged::New1();
+    ::g::Uno::Guid ind2 = ::g::Outracks::Simulator::GuidSerializer::ReadGuid(reader);
+    uPtr(collection1)->BuildId(ind2);
+    ;
+    uString* ind3 = uPtr(reader)->ReadString();
+    uPtr(collection1)->Text(ind3);
+    ;
+    return collection1;
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// public static class Bundle :2171
+// public struct CharacterNumber :827
 // {
-static void Bundle_build(uType* type)
+static void CharacterNumber_build(uType* type)
 {
-    ::TYPES[18] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::IO::BundleFile_typeof(), NULL);
-    ::TYPES[1] = ::g::Uno::Collections::IEnumerator_typeof();
-    ::TYPES[19] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::IO::BundleFile_typeof(), NULL);
-    type->Reflection.SetFunctions(1,
-        new uFunction("AddOrUpdateFile", NULL, (void*)Bundle__AddOrUpdateFile_fn, 0, true, uVoid_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::Byte_typeof()->Array()));
-}
-
-uClassType* Bundle_typeof()
-{
-    static uSStrong<uClassType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.TypeSize = sizeof(uClassType);
-    type = uClassType::New("Outracks.Simulator.Bundle", options);
-    type->fp_build_ = Bundle_build;
-    return type;
-}
-
-// public static extern void AddOrUpdateFile(string projectRelativeFilePath, byte[] data) :2174
-void Bundle__AddOrUpdateFile_fn(uString* projectRelativeFilePath, uArray* data)
-{
-    Bundle::AddOrUpdateFile(projectRelativeFilePath, data);
-}
-
-// public static extern void AddOrUpdateFile(string projectRelativeFilePath, byte[] data) [static] :2174
-void Bundle::AddOrUpdateFile(uString* projectRelativeFilePath, uArray* data)
-{
-    uStackFrame __("Outracks.Simulator.Bundle", "AddOrUpdateFile(string,byte[])");
-    ::g::Uno::IO::BundleFile* ret2;
-    ::g::Uno::IO::Bundle* bundle = ::g::Outracks::Simulator::Context::ProjectBundle();
-
-    for (uObject* enum1 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(uPtr(bundle)->Files()), ::TYPES[18/*Uno.Collections.IEnumerable<Uno.IO.BundleFile>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[1/*Uno.Collections.IEnumerator*/])); )
-    {
-        ::g::Uno::IO::BundleFile* exisitingFile = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), ::TYPES[19/*Uno.Collections.IEnumerator<Uno.IO.BundleFile>*/]), &ret2), ret2);
-
-        if (::g::Uno::String::op_Equality(uPtr(exisitingFile)->SourcePath(), projectRelativeFilePath))
-        {
-            uPtr(exisitingFile)->Update(data);
-            return;
-        }
-    }
-
-    bundle->CreateFile(projectRelativeFilePath, data);
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// public static class BytecodeCache :1575
-// {
-static void BytecodeCache_build(uType* type)
-{
-    ::STRINGS[6] = uString::Const("The impossible has happened");
-    ::STRINGS[7] = uString::Const(".");
-    ::STRINGS[8] = uString::Const("/");
-    ::STRINGS[9] = uString::Const("Fusetools");
-    ::STRINGS[10] = uString::Const("Fuse");
-    ::STRINGS[11] = uString::Const("Cache");
-    ::TYPES[20] = ::g::Uno::IDisposable_typeof();
-    ::TYPES[12] = ::g::Uno::Exception_typeof();
-    ::TYPES[21] = ::g::Outracks::Simulator::Bytecode::Optional_typeof()->MakeMethod(3/*Some<Outracks.Simulator.Protocol.Reify>*/, ::g::Outracks::Simulator::Protocol::Reify_typeof(), NULL);
-    ::TYPES[22] = ::g::Outracks::Simulator::Bytecode::Optional1_typeof()->MakeType(::g::Outracks::Simulator::Protocol::Reify_typeof(), NULL);
+    ::STRINGS[3] = uString::Const("character");
+    ::STRINGS[4] = uString::Const("CharacterNumber must be >= 1");
+    ::TYPES[4] = ::g::Uno::Int_typeof();
+    type->SetFields(0,
+        ::TYPES[4/*int*/], offsetof(::g::Outracks::Simulator::CharacterNumber, _characterMinusOne), 0);
     type->Reflection.SetFunctions(2,
-        new uFunction("TryLoad", NULL, (void*)BytecodeCache__TryLoad_fn, 0, true, ::TYPES[22/*Outracks.Simulator.Bytecode.Optional<Outracks.Simulator.Protocol.Reify>*/], 0),
-        new uFunction("TrySave", NULL, (void*)BytecodeCache__TrySave_fn, 0, true, uVoid_typeof(), 1, ::g::Outracks::Simulator::Protocol::Reify_typeof()));
+        new uFunction("Equals", NULL, (void*)CharacterNumber__Equals2_fn, 0, false, ::g::Uno::Bool_typeof(), 1, type),
+        new uFunction(".ctor", NULL, (void*)CharacterNumber__New1_fn, 0, true, type, 1, ::TYPES[4/*int*/]));
 }
 
-uClassType* BytecodeCache_typeof()
+uStructType* CharacterNumber_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uStructType*> type;
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.TypeSize = sizeof(uClassType);
-    type = uClassType::New("Outracks.Simulator.BytecodeCache", options);
-    type->fp_build_ = BytecodeCache_build;
+    options.FieldCount = 1;
+    options.ValueSize = sizeof(CharacterNumber);
+    options.TypeSize = sizeof(uStructType);
+    type = uStructType::New("Outracks.Simulator.CharacterNumber", options);
+    type->fp_build_ = CharacterNumber_build;
+    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))CharacterNumber__Equals_fn;
+    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))CharacterNumber__GetHashCode_fn;
+    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))CharacterNumber__ToString_fn;
     return type;
 }
 
-// private static string get_CacheFileName() :1636
-void BytecodeCache__get_CacheFileName_fn(uString** __retval)
+// public CharacterNumber(int character) :831
+void CharacterNumber__ctor__fn(CharacterNumber* __this, int* character)
 {
-    *__retval = BytecodeCache::CacheFileName();
+    __this->ctor_(*character);
 }
 
-// private static string get_CachePath() :1626
-void BytecodeCache__get_CachePath_fn(uString** __retval)
+// public override sealed bool Equals(object obj) :852
+void CharacterNumber__Equals_fn(CharacterNumber* __this, uType* __type, uObject* obj, bool* __retval)
 {
-    *__retval = BytecodeCache::CachePath();
+    uStackFrame __("Outracks.Simulator.CharacterNumber", "Equals(object)");
+
+    if (::g::Uno::Object::ReferenceEquals(NULL, obj))
+        return *__retval = false, void();
+
+    return *__retval = uIs(obj, __type) && __this->Equals2(uUnbox<CharacterNumber>(__type, obj)), void();
 }
 
-// private static string get_FuseDataDirectory() :1631
-void BytecodeCache__get_FuseDataDirectory_fn(uString** __retval)
+// public bool Equals(Outracks.Simulator.CharacterNumber other) :847
+void CharacterNumber__Equals2_fn(CharacterNumber* __this, CharacterNumber* other, bool* __retval)
 {
-    *__retval = BytecodeCache::FuseDataDirectory();
+    *__retval = __this->Equals2(*other);
 }
 
-// private static Outracks.Simulator.Protocol.Reify Load() :1614
-void BytecodeCache__Load_fn(::g::Outracks::Simulator::Protocol::Reify** __retval)
+// public override sealed int GetHashCode() :858
+void CharacterNumber__GetHashCode_fn(CharacterNumber* __this, uType* __type, int* __retval)
 {
-    *__retval = BytecodeCache::Load();
+    return *__retval = __this->_characterMinusOne, void();
 }
 
-// private static uint get_ProjectHash() :1641
-void BytecodeCache__get_ProjectHash_fn(uint32_t* __retval)
+// public CharacterNumber New(int character) :831
+void CharacterNumber__New1_fn(int* character, CharacterNumber* __retval)
 {
-    *__retval = BytecodeCache::ProjectHash();
+    *__retval = CharacterNumber__New1(*character);
 }
 
-// private static void Save(Outracks.Simulator.Protocol.Reify reify) :1590
-void BytecodeCache__Save_fn(::g::Outracks::Simulator::Protocol::Reify* reify)
+// public static operator ==(Outracks.Simulator.CharacterNumber left, Outracks.Simulator.CharacterNumber right) :863
+void CharacterNumber__op_Equality_fn(CharacterNumber* left, CharacterNumber* right, bool* __retval)
 {
-    BytecodeCache::Save(reify);
+    *__retval = CharacterNumber__op_Equality(*left, *right);
 }
 
-// public static Outracks.Simulator.Bytecode.Optional<Outracks.Simulator.Protocol.Reify> TryLoad() :1602
-void BytecodeCache__TryLoad_fn(::g::Outracks::Simulator::Bytecode::Optional1<uStrong< ::g::Outracks::Simulator::Protocol::Reify*> >* __retval)
+// public static operator >(Outracks.Simulator.CharacterNumber left, Outracks.Simulator.CharacterNumber right) :878
+void CharacterNumber__op_GreaterThan_fn(CharacterNumber* left, CharacterNumber* right, bool* __retval)
 {
-    *__retval = BytecodeCache::TryLoad();
+    *__retval = CharacterNumber__op_GreaterThan(*left, *right);
 }
 
-// public static void TrySave(Outracks.Simulator.Protocol.Reify reify) :1578
-void BytecodeCache__TrySave_fn(::g::Outracks::Simulator::Protocol::Reify* reify)
+// public static operator >=(Outracks.Simulator.CharacterNumber left, Outracks.Simulator.CharacterNumber right) :888
+void CharacterNumber__op_GreaterThanOrEqual_fn(CharacterNumber* left, CharacterNumber* right, bool* __retval)
 {
-    BytecodeCache::TrySave(reify);
+    *__retval = CharacterNumber__op_GreaterThanOrEqual(*left, *right);
 }
 
-// private static Outracks.Simulator.Protocol.Reify Load() [static] :1614
-::g::Outracks::Simulator::Protocol::Reify* BytecodeCache::Load()
+// public static implicit operator int(Outracks.Simulator.CharacterNumber line) :837
+void CharacterNumber__op_Implicit_fn(CharacterNumber* line, int* __retval)
 {
-    uStackFrame __("Outracks.Simulator.BytecodeCache", "Load()");
-    ::g::Uno::IO::Stream* stream = ::g::Uno::IO::File::OpenRead(BytecodeCache::CachePath());
-    ::g::Uno::IO::BinaryReader* reader = ::g::Uno::IO::BinaryReader::New1(stream);
-
-    {
-        const auto __finally_fun = [&]()
-        {
-            ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)reader), ::TYPES[20/*Uno.IDisposable*/]));
-        };
-
-        const uFinally<decltype(__finally_fun)> __f(__finally_fun);
-        return ::g::Outracks::Simulator::Protocol::Reify::Read1(reader);
-    }
-
-    U_THROW(::g::Uno::Exception::New2(::STRINGS[6/*"The impossi...*/]));
+    *__retval = CharacterNumber__op_Implicit(*line);
 }
 
-// private static void Save(Outracks.Simulator.Protocol.Reify reify) [static] :1590
-void BytecodeCache::Save(::g::Outracks::Simulator::Protocol::Reify* reify)
+// public static operator !=(Outracks.Simulator.CharacterNumber left, Outracks.Simulator.CharacterNumber right) :868
+void CharacterNumber__op_Inequality_fn(CharacterNumber* left, CharacterNumber* right, bool* __retval)
 {
-    uStackFrame __("Outracks.Simulator.BytecodeCache", "Save(Outracks.Simulator.Protocol.Reify)");
-    ::g::Uno::IO::Directory::CreateDirectory(BytecodeCache::FuseDataDirectory());
-    ::g::Uno::IO::Stream* stream = ::g::Uno::IO::File::Open(BytecodeCache::CachePath(), 4);
-    ::g::Uno::IO::BinaryWriter* writer = ::g::Uno::IO::BinaryWriter::New1(stream);
-
-    {
-        const auto __finally_fun = [&]()
-        {
-            ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)writer), ::TYPES[20/*Uno.IDisposable*/]));
-        };
-
-        const uFinally<decltype(__finally_fun)> __f(__finally_fun);
-        ::g::Outracks::Simulator::Protocol::Reify::Write1(reify, writer);
-    }
+    *__retval = CharacterNumber__op_Inequality(*left, *right);
 }
 
-// public static Outracks.Simulator.Bytecode.Optional<Outracks.Simulator.Protocol.Reify> TryLoad() [static] :1602
-::g::Outracks::Simulator::Bytecode::Optional1<uStrong< ::g::Outracks::Simulator::Protocol::Reify*> > BytecodeCache::TryLoad()
+// public static operator <(Outracks.Simulator.CharacterNumber left, Outracks.Simulator.CharacterNumber right) :873
+void CharacterNumber__op_LessThan_fn(CharacterNumber* left, CharacterNumber* right, bool* __retval)
 {
-    uStackFrame __("Outracks.Simulator.BytecodeCache", "TryLoad()");
-    ::g::Outracks::Simulator::Bytecode::Optional1<uStrong< ::g::Outracks::Simulator::Protocol::Reify*> > ret1;
-    ::g::Outracks::Simulator::Bytecode::Optional1<uStrong< ::g::Outracks::Simulator::Protocol::Reify*> > ret2;
-
-    try
-    {
-        return (::g::Outracks::Simulator::Bytecode::Optional__Some_fn(::TYPES[21/*Outracks.Simulator.Bytecode.Optional.Some<Outracks.Simulator.Protocol.Reify>*/], BytecodeCache::Load(), &ret1), ret1);
-    }
-    catch (const uThrowable& __t)
-    {
-        ::g::Uno::Exception* _ = __t.Exception;
-        return (::g::Outracks::Simulator::Bytecode::Optional1__op_Implicit_fn(::TYPES[22/*Outracks.Simulator.Bytecode.Optional<Outracks.Simulator.Protocol.Reify>*/], ::g::Outracks::Simulator::Bytecode::Optional::None(), &ret2), ret2);
-    }
+    *__retval = CharacterNumber__op_LessThan(*left, *right);
 }
 
-// public static void TrySave(Outracks.Simulator.Protocol.Reify reify) [static] :1578
-void BytecodeCache::TrySave(::g::Outracks::Simulator::Protocol::Reify* reify)
+// public static operator <=(Outracks.Simulator.CharacterNumber left, Outracks.Simulator.CharacterNumber right) :883
+void CharacterNumber__op_LessThanOrEqual_fn(CharacterNumber* left, CharacterNumber* right, bool* __retval)
 {
-    uStackFrame __("Outracks.Simulator.BytecodeCache", "TrySave(Outracks.Simulator.Protocol.Reify)");
-
-    try
-    {
-        BytecodeCache::Save(reify);
-    }
-    catch (const uThrowable& __t)
-    {
-        ::g::Uno::Exception* _ = __t.Exception;
-    }
+    *__retval = CharacterNumber__op_LessThanOrEqual(*left, *right);
 }
 
-// private static string get_CacheFileName() [static] :1636
-uString* BytecodeCache::CacheFileName()
+// public override sealed string ToString() :842
+void CharacterNumber__ToString_fn(CharacterNumber* __this, uType* __type, uString** __retval)
 {
-    uStackFrame __("Outracks.Simulator.BytecodeCache", "get_CacheFileName()");
-    return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition(uBox<uint32_t>(::g::Uno::UInt_typeof(), BytecodeCache::ProjectHash()), ::STRINGS[7/*"."*/]), ::g::Outracks::Simulator::Protocol::Reify::BinaryFormat());
+    uStackFrame __("Outracks.Simulator.CharacterNumber", "ToString()");
+    return *__retval = ::g::Uno::Int::ToString(CharacterNumber__op_Implicit(*__this), ::TYPES[4/*int*/]), void();
 }
 
-// private static string get_CachePath() [static] :1626
-uString* BytecodeCache::CachePath()
+// public CharacterNumber(int character) [instance] :831
+void CharacterNumber::ctor_(int character)
 {
-    uStackFrame __("Outracks.Simulator.BytecodeCache", "get_CachePath()");
-    return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(BytecodeCache::FuseDataDirectory(), ::STRINGS[8/*"/"*/]), BytecodeCache::CacheFileName());
+    uStackFrame __("Outracks.Simulator.CharacterNumber", ".ctor(int)");
+
+    if (character <= 0)
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New7(::STRINGS[3/*"character"*/], ::STRINGS[4/*"CharacterNu...*/]));
+
+    _characterMinusOne = (character - 1);
 }
 
-// private static string get_FuseDataDirectory() [static] :1631
-uString* BytecodeCache::FuseDataDirectory()
+// public bool Equals(Outracks.Simulator.CharacterNumber other) [instance] :847
+bool CharacterNumber::Equals2(CharacterNumber other)
 {
-    uStackFrame __("Outracks.Simulator.BytecodeCache", "get_FuseDataDirectory()");
-    return ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::IO::Directory::GetUserDirectory(1), ::STRINGS[8/*"/"*/]), ::STRINGS[9/*"Fusetools"*/]), ::STRINGS[8/*"/"*/]), ::STRINGS[10/*"Fuse"*/]), ::STRINGS[8/*"/"*/]), ::STRINGS[11/*"Cache"*/]);
+    return _characterMinusOne == other._characterMinusOne;
 }
 
-// private static uint get_ProjectHash() [static] :1641
-uint32_t BytecodeCache::ProjectHash()
+// public CharacterNumber New(int character) [static] :831
+CharacterNumber CharacterNumber__New1(int character)
 {
-    uStackFrame __("Outracks.Simulator.BytecodeCache", "get_ProjectHash()");
-    return (uint32_t)(uPtr(::g::Outracks::Simulator::Context::Project())->GetHashCode() ^ uPtr(::g::Outracks::Simulator::Context::Project())->Length());
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal sealed class ChangeIp :697
-// {
-static void ChangeIp_build(uType* type)
-{
-    ::STRINGS[12] = uString::Const("Connect to IP");
-    ::STRINGS[13] = uString::Const("\n"
-        "E.g. '192.168.1.1'");
-    ::TYPES[23] = ::g::Uno::Net::IPEndPoint_typeof()->Array();
-    type->SetFields(5);
-}
-
-::g::Outracks::Simulator::ShowingPrompt_type* ChangeIp_typeof()
-{
-    static uSStrong< ::g::Outracks::Simulator::ShowingPrompt_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Outracks::Simulator::ShowingPrompt_typeof();
-    options.FieldCount = 5;
-    options.ObjectSize = sizeof(ChangeIp);
-    options.TypeSize = sizeof(::g::Outracks::Simulator::ShowingPrompt_type);
-    type = (::g::Outracks::Simulator::ShowingPrompt_type*)uClassType::New("Outracks.Simulator.ChangeIp", options);
-    type->fp_build_ = ChangeIp_build;
-    type->fp_OnCancel = (void(*)(::g::Outracks::Simulator::ShowingPrompt*, ::g::Outracks::Simulator::State**))ChangeIp__OnCancel_fn;
-    type->fp_OnException = (void(*)(::g::Outracks::Simulator::State*, ::g::Uno::Exception*, ::g::Outracks::Simulator::State**))ChangeIp__OnException_fn;
-    type->fp_OnOk = (void(*)(::g::Outracks::Simulator::ShowingPrompt*, uString*, ::g::Outracks::Simulator::State**))ChangeIp__OnOk_fn;
-    return type;
-}
-
-// public ChangeIp([string body]) :699
-void ChangeIp__ctor_2_fn(ChangeIp* __this, uString* body)
-{
-    __this->ctor_2(body);
-}
-
-// public ChangeIp New([string body]) :699
-void ChangeIp__New1_fn(uString* body, ChangeIp** __retval)
-{
-    *__retval = ChangeIp::New1(body);
-}
-
-// protected override sealed Outracks.Simulator.State OnCancel() :713
-void ChangeIp__OnCancel_fn(ChangeIp* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    return *__retval = ::g::Outracks::Simulator::ConnectingToProxy::New1(), void();
-}
-
-// public override sealed Outracks.Simulator.State OnException(Uno.Exception e) :718
-void ChangeIp__OnException_fn(ChangeIp* __this, ::g::Uno::Exception* e, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.ChangeIp", "OnException(Uno.Exception)");
-    return *__retval = ChangeIp::New1(uPtr(e)->Message()), void();
-}
-
-// protected override sealed Outracks.Simulator.State OnOk(string input) :704
-void ChangeIp__OnOk_fn(ChangeIp* __this, uString* input, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.ChangeIp", "OnOk(string)");
-    uArray* endpoints = uArray::Init< ::g::Uno::Net::IPEndPoint*>(::TYPES[23/*Uno.Net.IPEndPoint[]*/], 1, (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(input), uPtr(uPtr(::g::Outracks::Simulator::Context::ProxyEndpoints())->Strong< ::g::Uno::Net::IPEndPoint*>(0))->Port()));
-    return *__retval = ::g::Outracks::Simulator::ConnectingToProxy::New2(endpoints), void();
-}
-
-// public ChangeIp([string body]) [instance] :699
-void ChangeIp::ctor_2(uString* body)
-{
-    uStackFrame __("Outracks.Simulator.ChangeIp", ".ctor([string])");
-    ctor_1(::STRINGS[12/*"Connect to IP"*/], ::g::Uno::String::op_Addition2(body, ::STRINGS[13/*"\nE.g. '192...*/]));
-}
-
-// public ChangeIp New([string body]) [static] :699
-ChangeIp* ChangeIp::New1(uString* body)
-{
-    ChangeIp* obj1 = (ChangeIp*)uNew(ChangeIp_typeof());
-    obj1->ctor_2(body);
+    CharacterNumber obj1;
+    obj1.ctor_(character);
     return obj1;
 }
+
+// public static operator ==(Outracks.Simulator.CharacterNumber left, Outracks.Simulator.CharacterNumber right) [static] :863
+bool CharacterNumber__op_Equality(CharacterNumber left, CharacterNumber right)
+{
+    return left.Equals2(right);
+}
+
+// public static operator >(Outracks.Simulator.CharacterNumber left, Outracks.Simulator.CharacterNumber right) [static] :878
+bool CharacterNumber__op_GreaterThan(CharacterNumber left, CharacterNumber right)
+{
+    return left._characterMinusOne > right._characterMinusOne;
+}
+
+// public static operator >=(Outracks.Simulator.CharacterNumber left, Outracks.Simulator.CharacterNumber right) [static] :888
+bool CharacterNumber__op_GreaterThanOrEqual(CharacterNumber left, CharacterNumber right)
+{
+    return left._characterMinusOne >= right._characterMinusOne;
+}
+
+// public static implicit operator int(Outracks.Simulator.CharacterNumber line) [static] :837
+int CharacterNumber__op_Implicit(CharacterNumber line)
+{
+    return line._characterMinusOne + 1;
+}
+
+// public static operator !=(Outracks.Simulator.CharacterNumber left, Outracks.Simulator.CharacterNumber right) [static] :868
+bool CharacterNumber__op_Inequality(CharacterNumber left, CharacterNumber right)
+{
+    return !left.Equals2(right);
+}
+
+// public static operator <(Outracks.Simulator.CharacterNumber left, Outracks.Simulator.CharacterNumber right) [static] :873
+bool CharacterNumber__op_LessThan(CharacterNumber left, CharacterNumber right)
+{
+    return left._characterMinusOne < right._characterMinusOne;
+}
+
+// public static operator <=(Outracks.Simulator.CharacterNumber left, Outracks.Simulator.CharacterNumber right) [static] :883
+bool CharacterNumber__op_LessThanOrEqual(CharacterNumber left, CharacterNumber right)
+{
+    return left._characterMinusOne <= right._characterMinusOne;
+}
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
 // public static class Closure :10
 // {
 static void Closure_build(uType* type)
 {
-    ::TYPES[9] = ::g::Uno::Action_typeof();
-    ::TYPES[24] = ::g::Outracks::Simulator::Apply_typeof();
-    ::TYPES[25] = ::g::Uno::Action1_typeof();
-    ::TYPES[26] = ::g::Outracks::Simulator::ApplyFirst_typeof();
-    ::TYPES[27] = ::g::Outracks::Simulator::ApplySecond_typeof();
-    ::TYPES[28] = ::g::Uno::Action2_typeof();
-    ::TYPES[29] = ::g::Outracks::Simulator::ForgetAction1_typeof();
-    ::TYPES[30] = ::g::Uno::Func1_typeof();
-    ::TYPES[31] = ::g::Outracks::Simulator::Forget_typeof();
-    ::TYPES[32] = ::g::Uno::Platform::ApplicationStateTransitionHandler_typeof();
-    ::TYPES[33] = ::g::Outracks::Simulator::ForgetAction_typeof()->MakeType(::g::Uno::Platform::ApplicationState_typeof(), NULL);
-    ::TYPES[34] = ::g::Uno::EventHandler_typeof();
-    ::TYPES[35] = ::TYPES[29/*Outracks.Simulator.ForgetAction`2*/]->MakeType(uObject_typeof(), ::g::Uno::EventArgs_typeof(), NULL);
+    ::TYPES[7] = ::g::Uno::Action_typeof();
+    ::TYPES[8] = ::g::Outracks::Simulator::Apply_typeof();
+    ::TYPES[9] = ::g::Uno::Action1_typeof();
+    ::TYPES[10] = ::g::Outracks::Simulator::ApplyFirst_typeof();
+    ::TYPES[11] = ::g::Outracks::Simulator::ApplySecond_typeof();
+    ::TYPES[12] = ::g::Uno::Action2_typeof();
+    ::TYPES[13] = ::g::Outracks::Simulator::ForgetAction1_typeof();
+    ::TYPES[14] = ::g::Uno::Func1_typeof();
+    ::TYPES[15] = ::g::Outracks::Simulator::Forget_typeof();
+    ::TYPES[16] = ::g::Uno::Platform::ApplicationStateTransitionHandler_typeof();
+    ::TYPES[17] = ::g::Outracks::Simulator::ForgetAction_typeof()->MakeType(::g::Uno::Platform::ApplicationState_typeof(), NULL);
+    ::TYPES[18] = ::g::Uno::EventHandler_typeof();
+    ::TYPES[19] = ::TYPES[13/*Outracks.Simulator.ForgetAction`2*/]->MakeType(uObject_typeof(), ::g::Uno::EventArgs_typeof(), NULL);
     type->MethodTypes[0]->SetPrecalc(
-        ::TYPES[24/*Outracks.Simulator.Apply`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL));
+        ::TYPES[8/*Outracks.Simulator.Apply`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL));
     type->MethodTypes[1]->SetPrecalc(
-        ::TYPES[25/*Uno.Action`1*/]->MakeType(type->MethodTypes[1]->U(1), NULL),
-        ::TYPES[26/*Outracks.Simulator.ApplyFirst`2*/]->MakeType(type->MethodTypes[1]->U(0), type->MethodTypes[1]->U(1), NULL));
+        ::TYPES[9/*Uno.Action`1*/]->MakeType(type->MethodTypes[1]->U(1), NULL),
+        ::TYPES[10/*Outracks.Simulator.ApplyFirst`2*/]->MakeType(type->MethodTypes[1]->U(0), type->MethodTypes[1]->U(1), NULL));
     type->MethodTypes[2]->SetPrecalc(
-        ::TYPES[25/*Uno.Action`1*/]->MakeType(type->MethodTypes[2]->U(0), NULL),
-        ::TYPES[27/*Outracks.Simulator.ApplySecond`2*/]->MakeType(type->MethodTypes[2]->U(0), type->MethodTypes[2]->U(1), NULL));
+        ::TYPES[9/*Uno.Action`1*/]->MakeType(type->MethodTypes[2]->U(0), NULL),
+        ::TYPES[11/*Outracks.Simulator.ApplySecond`2*/]->MakeType(type->MethodTypes[2]->U(0), type->MethodTypes[2]->U(1), NULL));
     type->MethodTypes[3]->SetPrecalc(
-        ::TYPES[28/*Uno.Action`2*/]->MakeType(type->MethodTypes[3]->U(0), type->MethodTypes[3]->U(1), NULL),
-        ::TYPES[29/*Outracks.Simulator.ForgetAction`2*/]->MakeType(type->MethodTypes[3]->U(0), type->MethodTypes[3]->U(1), NULL));
+        ::TYPES[12/*Uno.Action`2*/]->MakeType(type->MethodTypes[3]->U(0), type->MethodTypes[3]->U(1), NULL),
+        ::TYPES[13/*Outracks.Simulator.ForgetAction`2*/]->MakeType(type->MethodTypes[3]->U(0), type->MethodTypes[3]->U(1), NULL));
     type->MethodTypes[4]->SetPrecalc(
-        ::TYPES[30/*Uno.Func`2*/]->MakeType(type->MethodTypes[4]->U(0), type->MethodTypes[4]->U(1), NULL),
-        ::TYPES[31/*Outracks.Simulator.Forget`2*/]->MakeType(type->MethodTypes[4]->U(0), type->MethodTypes[4]->U(1), NULL));
+        ::TYPES[14/*Uno.Func`2*/]->MakeType(type->MethodTypes[4]->U(0), type->MethodTypes[4]->U(1), NULL),
+        ::TYPES[15/*Outracks.Simulator.Forget`2*/]->MakeType(type->MethodTypes[4]->U(0), type->MethodTypes[4]->U(1), NULL));
     type->Reflection.SetFunctions(7,
-        new uFunction("Apply`1", type->MethodTypes[0], (void*)Closure__Apply_fn, 0, true, ::TYPES[9/*Uno.Action*/], 2, ::TYPES[25/*Uno.Action`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL), type->MethodTypes[0]->U(0)),
-        new uFunction("ApplyFirst`2", type->MethodTypes[1], (void*)Closure__ApplyFirst_fn, 0, true, ::TYPES[25/*Uno.Action`1*/]->MakeType(type->MethodTypes[1]->U(1), NULL), 2, ::TYPES[28/*Uno.Action`2*/]->MakeType(type->MethodTypes[1]->U(0), type->MethodTypes[1]->U(1), NULL), type->MethodTypes[1]->U(0)),
-        new uFunction("ApplySecond`2", type->MethodTypes[2], (void*)Closure__ApplySecond_fn, 0, true, ::TYPES[25/*Uno.Action`1*/]->MakeType(type->MethodTypes[2]->U(0), NULL), 2, ::TYPES[28/*Uno.Action`2*/]->MakeType(type->MethodTypes[2]->U(0), type->MethodTypes[2]->U(1), NULL), type->MethodTypes[2]->U(1)),
-        new uFunction("Forget`2", type->MethodTypes[3], (void*)Closure__Forget_fn, 0, true, ::TYPES[28/*Uno.Action`2*/]->MakeType(type->MethodTypes[3]->U(0), type->MethodTypes[3]->U(1), NULL), 1, ::TYPES[9/*Uno.Action*/]),
-        new uFunction("Return`2", type->MethodTypes[4], (void*)Closure__Return_fn, 0, true, ::TYPES[30/*Uno.Func`2*/]->MakeType(type->MethodTypes[4]->U(0), type->MethodTypes[4]->U(1), NULL), 1, type->MethodTypes[4]->U(1)),
-        new uFunction("ToAppStateChangeHandler", NULL, (void*)Closure__ToAppStateChangeHandler_fn, 0, true, ::TYPES[32/*Uno.Platform.ApplicationStateTransitionHandler*/], 1, ::TYPES[9/*Uno.Action*/]),
-        new uFunction("ToEventHandler", NULL, (void*)Closure__ToEventHandler_fn, 0, true, ::TYPES[34/*Uno.EventHandler*/], 1, ::TYPES[9/*Uno.Action*/]));
+        new uFunction("Apply`1", type->MethodTypes[0], (void*)Closure__Apply_fn, 0, true, ::TYPES[7/*Uno.Action*/], 2, ::TYPES[9/*Uno.Action`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL), type->MethodTypes[0]->U(0)),
+        new uFunction("ApplyFirst`2", type->MethodTypes[1], (void*)Closure__ApplyFirst_fn, 0, true, ::TYPES[9/*Uno.Action`1*/]->MakeType(type->MethodTypes[1]->U(1), NULL), 2, ::TYPES[12/*Uno.Action`2*/]->MakeType(type->MethodTypes[1]->U(0), type->MethodTypes[1]->U(1), NULL), type->MethodTypes[1]->U(0)),
+        new uFunction("ApplySecond`2", type->MethodTypes[2], (void*)Closure__ApplySecond_fn, 0, true, ::TYPES[9/*Uno.Action`1*/]->MakeType(type->MethodTypes[2]->U(0), NULL), 2, ::TYPES[12/*Uno.Action`2*/]->MakeType(type->MethodTypes[2]->U(0), type->MethodTypes[2]->U(1), NULL), type->MethodTypes[2]->U(1)),
+        new uFunction("Forget`2", type->MethodTypes[3], (void*)Closure__Forget_fn, 0, true, ::TYPES[12/*Uno.Action`2*/]->MakeType(type->MethodTypes[3]->U(0), type->MethodTypes[3]->U(1), NULL), 1, ::TYPES[7/*Uno.Action*/]),
+        new uFunction("Return`2", type->MethodTypes[4], (void*)Closure__Return_fn, 0, true, ::TYPES[14/*Uno.Func`2*/]->MakeType(type->MethodTypes[4]->U(0), type->MethodTypes[4]->U(1), NULL), 1, type->MethodTypes[4]->U(1)),
+        new uFunction("ToAppStateChangeHandler", NULL, (void*)Closure__ToAppStateChangeHandler_fn, 0, true, ::TYPES[16/*Uno.Platform.ApplicationStateTransitionHandler*/], 1, ::TYPES[7/*Uno.Action*/]),
+        new uFunction("ToEventHandler", NULL, (void*)Closure__ToEventHandler_fn, 0, true, ::TYPES[18/*Uno.EventHandler*/], 1, ::TYPES[7/*Uno.Action*/]));
 }
 
 uClassType* Closure_typeof()
@@ -1533,7 +1142,7 @@ void Closure__Apply_fn(uType* __type, uDelegate* action, void* arg, uDelegate** 
         __type->Precalced(0/*Outracks.Simulator.Apply<T>*/),
     };
     ::g::Outracks::Simulator::Apply* ret1;
-    return *__retval = uDelegate::New(::TYPES[9/*Uno.Action*/], (void*)::g::Outracks::Simulator::Apply__Execute_fn, (::g::Outracks::Simulator::Apply__New1_fn(__types[0], action, arg, &ret1), ret1)), void();
+    return *__retval = uDelegate::New(::TYPES[7/*Uno.Action*/], (void*)::g::Outracks::Simulator::Apply__Execute_fn, (::g::Outracks::Simulator::Apply__New1_fn(__types[0], action, arg, &ret1), ret1)), void();
 }
 
 // public static Uno.Action<TArg2> ApplyFirst<TArg1, TArg2>(Uno.Action<TArg1, TArg2> action, TArg1 arg1) :12
@@ -1600,95 +1209,30 @@ uDelegate* Closure::Forget(uType* __type, uDelegate* action)
 // public static Uno.Platform.ApplicationStateTransitionHandler ToAppStateChangeHandler(Uno.Action action) [static] :42
 uDelegate* Closure::ToAppStateChangeHandler(uDelegate* action)
 {
-    return uDelegate::New(::TYPES[32/*Uno.Platform.ApplicationStateTransitionHandler*/], (void*)::g::Outracks::Simulator::ForgetAction__Execute_fn, (::g::Outracks::Simulator::ForgetAction*)::g::Outracks::Simulator::ForgetAction::New1(::TYPES[33/*Outracks.Simulator.ForgetAction<Uno.Platform.ApplicationState>*/], action));
+    return uDelegate::New(::TYPES[16/*Uno.Platform.ApplicationStateTransitionHandler*/], (void*)::g::Outracks::Simulator::ForgetAction__Execute_fn, (::g::Outracks::Simulator::ForgetAction*)::g::Outracks::Simulator::ForgetAction::New1(::TYPES[17/*Outracks.Simulator.ForgetAction<Uno.Platform.ApplicationState>*/], action));
 }
 
 // public static Uno.EventHandler ToEventHandler(Uno.Action action) [static] :37
 uDelegate* Closure::ToEventHandler(uDelegate* action)
 {
-    return uDelegate::New(::TYPES[34/*Uno.EventHandler*/], (void*)::g::Outracks::Simulator::ForgetAction1__Execute_fn, (::g::Outracks::Simulator::ForgetAction1*)::g::Outracks::Simulator::ForgetAction1::New1(::TYPES[35/*Outracks.Simulator.ForgetAction<object, Uno.EventArgs>*/], action));
+    return uDelegate::New(::TYPES[18/*Uno.EventHandler*/], (void*)::g::Outracks::Simulator::ForgetAction1__Execute_fn, (::g::Outracks::Simulator::ForgetAction1*)::g::Outracks::Simulator::ForgetAction1::New1(::TYPES[19/*Outracks.Simulator.ForgetAction<object, Uno.EventArgs>*/], action));
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// private sealed class EnumerableHitTestExtension.CollectHitNodesClosure :2060
-// {
-static void EnumerableHitTestExtension__CollectHitNodesClosure_build(uType* type)
-{
-    type->SetFields(0,
-        ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Visual_typeof(), NULL), offsetof(::g::Outracks::Simulator::EnumerableHitTestExtension__CollectHitNodesClosure, _nodes), 0);
-}
-
-uType* EnumerableHitTestExtension__CollectHitNodesClosure_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.FieldCount = 1;
-    options.ObjectSize = sizeof(EnumerableHitTestExtension__CollectHitNodesClosure);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Outracks.Simulator.EnumerableHitTestExtension.CollectHitNodesClosure", options);
-    type->fp_build_ = EnumerableHitTestExtension__CollectHitNodesClosure_build;
-    return type;
-}
-
-// public CollectHitNodesClosure(Uno.Collections.List<Fuse.Visual> nodes) :2064
-void EnumerableHitTestExtension__CollectHitNodesClosure__ctor__fn(EnumerableHitTestExtension__CollectHitNodesClosure* __this, ::g::Uno::Collections::List* nodes)
-{
-    __this->ctor_(nodes);
-}
-
-// public void HitTestCallback(Fuse.HitTestResult result) :2069
-void EnumerableHitTestExtension__CollectHitNodesClosure__HitTestCallback_fn(EnumerableHitTestExtension__CollectHitNodesClosure* __this, ::g::Fuse::HitTestResult* result)
-{
-    __this->HitTestCallback(result);
-}
-
-// public CollectHitNodesClosure New(Uno.Collections.List<Fuse.Visual> nodes) :2064
-void EnumerableHitTestExtension__CollectHitNodesClosure__New1_fn(::g::Uno::Collections::List* nodes, EnumerableHitTestExtension__CollectHitNodesClosure** __retval)
-{
-    *__retval = EnumerableHitTestExtension__CollectHitNodesClosure::New1(nodes);
-}
-
-// public CollectHitNodesClosure(Uno.Collections.List<Fuse.Visual> nodes) [instance] :2064
-void EnumerableHitTestExtension__CollectHitNodesClosure::ctor_(::g::Uno::Collections::List* nodes)
-{
-    _nodes = nodes;
-}
-
-// public void HitTestCallback(Fuse.HitTestResult result) [instance] :2069
-void EnumerableHitTestExtension__CollectHitNodesClosure::HitTestCallback(::g::Fuse::HitTestResult* result)
-{
-    uStackFrame __("Outracks.Simulator.EnumerableHitTestExtension.CollectHitNodesClosure", "HitTestCallback(Fuse.HitTestResult)");
-    ::g::Uno::Collections::List__Add_fn(uPtr(_nodes), uPtr(result)->HitObject());
-}
-
-// public CollectHitNodesClosure New(Uno.Collections.List<Fuse.Visual> nodes) [static] :2064
-EnumerableHitTestExtension__CollectHitNodesClosure* EnumerableHitTestExtension__CollectHitNodesClosure::New1(::g::Uno::Collections::List* nodes)
-{
-    EnumerableHitTestExtension__CollectHitNodesClosure* obj1 = (EnumerableHitTestExtension__CollectHitNodesClosure*)uNew(EnumerableHitTestExtension__CollectHitNodesClosure_typeof());
-    obj1->ctor_(nodes);
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/concurrency/$.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/concurrency/$.uno
+// -----------------------------------------------------------------------------------
 
 // public sealed class ConcurrentQueue<T> :10
 // {
 static void ConcurrentQueue_build(uType* type)
 {
-    ::TYPES[36] = ::g::Uno::Collections::Queue_typeof();
+    ::TYPES[20] = ::g::Uno::Collections::Queue_typeof();
     type->SetPrecalc(
         ::g::Uno::Collections::Queue_typeof()->MakeType(type->T(0), NULL),
         type->T(0));
     type->SetFields(0,
         uObject_typeof(), offsetof(::g::Outracks::Simulator::ConcurrentQueue, _mutex), 0,
-        ::TYPES[36/*Uno.Collections.Queue`1*/]->MakeType(type->T(0), NULL), offsetof(::g::Outracks::Simulator::ConcurrentQueue, _queue), 0);
+        ::TYPES[20/*Uno.Collections.Queue`1*/]->MakeType(type->T(0), NULL), offsetof(::g::Outracks::Simulator::ConcurrentQueue, _queue), 0);
     type->Reflection.SetFunctions(3,
         new uFunction("Enqueue", NULL, (void*)ConcurrentQueue__Enqueue_fn, 0, false, uVoid_typeof(), 1, type->T(0)),
         new uFunction(".ctor", type, (void*)ConcurrentQueue__New1_fn, 0, true, type, 0),
@@ -1793,465 +1337,15 @@ ConcurrentQueue* ConcurrentQueue::New1(uType* __type)
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
 // -----------------------------------------------------------------------
 
-// internal abstract class Connected :370
-// {
-static void Connected_build(uType* type)
-{
-    ::TYPES[37] = uObject_typeof()->Array();
-    ::TYPES[38] = ::g::Outracks::Simulator::ISimulatorClient_typeof();
-    ::TYPES[39] = ::g::Outracks::Simulator::Protocol::MessageToClient_typeof()->MakeMethod(0/*Match<Outracks.Simulator.State>*/, ::g::Outracks::Simulator::State_typeof(), NULL);
-    ::TYPES[40] = ::g::Uno::Func1_typeof()->MakeType(::g::Outracks::Simulator::Protocol::Reify_typeof(), ::g::Outracks::Simulator::State_typeof(), NULL);
-    ::TYPES[41] = ::g::Uno::Func1_typeof()->MakeType(::g::Outracks::Simulator::Protocol::Execute_typeof(), ::g::Outracks::Simulator::State_typeof(), NULL);
-    ::TYPES[42] = ::g::Uno::Func1_typeof()->MakeType(::g::Outracks::Simulator::Protocol::Error_typeof(), ::g::Outracks::Simulator::State_typeof(), NULL);
-    type->SetFields(0,
-        ::TYPES[38/*Outracks.Simulator.ISimulatorClient*/], offsetof(::g::Outracks::Simulator::Connected, Client), 0);
-}
-
-Connected_type* Connected_typeof()
-{
-    static uSStrong<Connected_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Outracks::Simulator::State_typeof();
-    options.FieldCount = 1;
-    options.ObjectSize = sizeof(Connected);
-    options.TypeSize = sizeof(Connected_type);
-    type = (Connected_type*)uClassType::New("Outracks.Simulator.Connected", options);
-    type->fp_build_ = Connected_build;
-    type->fp_OnEnterState = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))Connected__OnEnterState_fn;
-    type->fp_OnException = (void(*)(::g::Outracks::Simulator::State*, ::g::Uno::Exception*, ::g::Outracks::Simulator::State**))Connected__OnException_fn;
-    type->fp_OnUpdate = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))Connected__OnUpdate_fn;
-    return type;
-}
-
-// protected Connected(Outracks.Simulator.ISimulatorClient client) :374
-void Connected__ctor_1_fn(Connected* __this, uObject* client)
-{
-    __this->ctor_1(client);
-}
-
-// protected Outracks.Simulator.State OnConnectionError(Outracks.Simulator.Protocol.Error error) :424
-void Connected__OnConnectionError_fn(Connected* __this, ::g::Outracks::Simulator::Protocol::Error* error, ::g::Outracks::Simulator::State** __retval)
-{
-    *__retval = __this->OnConnectionError(error);
-}
-
-// public override Outracks.Simulator.State OnEnterState() :380
-void Connected__OnEnterState_fn(Connected* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.Connected", "OnEnterState()");
-    uPtr(::g::Outracks::Simulator::UserAppState::Default())->ApplyTo(::g::Outracks::Simulator::Context::App());
-    return *__retval = __this, void();
-}
-
-// public override sealed Outracks.Simulator.State OnException(Uno.Exception e) :386
-void Connected__OnException_fn(Connected* __this, ::g::Uno::Exception* e, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.Connected", "OnException(Uno.Exception)");
-    ::g::Uno::Exception* ret1;
-    ::g::Uno::Collections::List* exceptions = ::g::Outracks::Simulator::Exceptions::Unpack(e);
-    ::g::Outracks::Simulator::Exceptions::Send(__this->Client, exceptions);
-    ::g::Uno::Exception* f = (uPtr(exceptions)->Count() == 1) ? (::g::Uno::Collections::List__get_Item_fn(uPtr(exceptions), uCRef<int>(0), &ret1), ret1) : e;
-    return *__retval = __this->OnFaulted(f), void();
-}
-
-// protected Outracks.Simulator.State OnExecute(Outracks.Simulator.Protocol.Execute args) :418
-void Connected__OnExecute_fn(Connected* __this, ::g::Outracks::Simulator::Protocol::Execute* args, ::g::Outracks::Simulator::State** __retval)
-{
-    *__retval = __this->OnExecute(args);
-}
-
-// protected Outracks.Simulator.State OnReify(Outracks.Simulator.Protocol.Reify reify) :413
-void Connected__OnReify_fn(Connected* __this, ::g::Outracks::Simulator::Protocol::Reify* reify, ::g::Outracks::Simulator::State** __retval)
-{
-    *__retval = __this->OnReify(reify);
-}
-
-// public override Outracks.Simulator.State OnUpdate() :396
-void Connected__OnUpdate_fn(Connected* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.Connected", "OnUpdate()");
-    bool ret2;
-    ::g::Outracks::Simulator::State* ret3;
-    ::g::Outracks::Simulator::Protocol::MessageToClient* message;
-
-    while ((::g::Outracks::Simulator::ConcurrentQueue__TryDequeue_fn(uPtr(::g::Outracks::Simulator::ISimulatorClient::IncommingMessages(uInterface(uPtr(__this->Client), ::TYPES[38/*Outracks.Simulator.ISimulatorClient*/]))), (void**)(&message), &ret2), ret2))
-    {
-        ::g::Outracks::Simulator::State* newState = (::g::Outracks::Simulator::Protocol::MessageToClient__Match1_fn(uPtr(message), ::TYPES[39/*Outracks.Simulator.Protocol.MessageToClient.Match<Outracks.Simulator.State>*/], uDelegate::New(::TYPES[40/*Uno.Func<Outracks.Simulator.Protocol.Reify, Outracks.Simulator.State>*/], (void*)Connected__OnReify_fn, __this), uDelegate::New(::TYPES[41/*Uno.Func<Outracks.Simulator.Protocol.Execute, Outracks.Simulator.State>*/], (void*)Connected__OnExecute_fn, __this), uDelegate::New(::TYPES[42/*Uno.Func<Outracks.Simulator.Protocol.Error, Outracks.Simulator.State>*/], (void*)Connected__OnConnectionError_fn, __this), &ret3), ret3);
-
-        if (newState != __this)
-            return *__retval = newState, void();
-    }
-
-    return *__retval = __this, void();
-}
-
-// protected Connected(Outracks.Simulator.ISimulatorClient client) [instance] :374
-void Connected::ctor_1(uObject* client)
-{
-    ctor_();
-    Client = client;
-}
-
-// protected Outracks.Simulator.State OnConnectionError(Outracks.Simulator.Protocol.Error error) [instance] :424
-::g::Outracks::Simulator::State* Connected::OnConnectionError(::g::Outracks::Simulator::Protocol::Error* error)
-{
-    uStackFrame __("Outracks.Simulator.Connected", "OnConnectionError(Outracks.Simulator.Protocol.Error)");
-    return ::g::Outracks::Simulator::ConnectionLost::New2(uPtr(error)->Exception);
-}
-
-// protected Outracks.Simulator.State OnExecute(Outracks.Simulator.Protocol.Execute args) [instance] :418
-::g::Outracks::Simulator::State* Connected::OnExecute(::g::Outracks::Simulator::Protocol::Execute* args)
-{
-    uStackFrame __("Outracks.Simulator.Connected", "OnExecute(Outracks.Simulator.Protocol.Execute)");
-    ::g::Outracks::Simulator::Runtime::VirtualMachine::Execute(uPtr(args)->Function, uArray::New(::TYPES[37/*object[]*/], 0));
-    return this;
-}
-
-// protected Outracks.Simulator.State OnReify(Outracks.Simulator.Protocol.Reify reify) [instance] :413
-::g::Outracks::Simulator::State* Connected::OnReify(::g::Outracks::Simulator::Protocol::Reify* reify)
-{
-    return ::g::Outracks::Simulator::Reifying::New1(Client, reify);
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal abstract class Connecting :282
-// {
-static void Connecting_build(uType* type)
-{
-}
-
-::g::Outracks::Simulator::State_type* Connecting_typeof()
-{
-    static uSStrong< ::g::Outracks::Simulator::State_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Outracks::Simulator::State_typeof();
-    options.ObjectSize = sizeof(Connecting);
-    options.TypeSize = sizeof(::g::Outracks::Simulator::State_type);
-    type = (::g::Outracks::Simulator::State_type*)uClassType::New("Outracks.Simulator.Connecting", options);
-    type->fp_build_ = Connecting_build;
-    type->fp_OnException = (void(*)(::g::Outracks::Simulator::State*, ::g::Uno::Exception*, ::g::Outracks::Simulator::State**))Connecting__OnException_fn;
-    return type;
-}
-
-// protected generated Connecting() :282
-void Connecting__ctor_1_fn(Connecting* __this)
-{
-    __this->ctor_1();
-}
-
-// public override sealed Outracks.Simulator.State OnException(Uno.Exception e) :284
-void Connecting__OnException_fn(Connecting* __this, ::g::Uno::Exception* e, ::g::Outracks::Simulator::State** __retval)
-{
-    return *__retval = ::g::Outracks::Simulator::FailedToConnect::New2(e), void();
-}
-
-// protected generated Connecting() [instance] :282
-void Connecting::ctor_1()
-{
-    ctor_();
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal sealed class ConnectingToHost :329
-// {
-static void ConnectingToHost_build(uType* type)
-{
-    ::STRINGS[14] = uString::Const("Connecting");
-    ::STRINGS[15] = uString::Const("Fetching project data from computer");
-    ::TYPES[43] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(11/*ToArray<Uno.Net.IPEndPoint>*/, ::g::Uno::Net::IPEndPoint_typeof(), NULL);
-    ::TYPES[44] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof(), NULL);
-    ::TYPES[9] = ::g::Uno::Action_typeof();
-    type->SetFields(0,
-        ::g::Outracks::Simulator::Task_typeof()->MakeType(::g::Uno::Net::Sockets::Socket_typeof(), NULL), offsetof(::g::Outracks::Simulator::ConnectingToHost, _connecting), 0,
-        ::g::Uno::Net::IPEndPoint_typeof()->Array(), offsetof(::g::Outracks::Simulator::ConnectingToHost, _simulatorEndpoints), 0);
-}
-
-::g::Outracks::Simulator::State_type* ConnectingToHost_typeof()
-{
-    static uSStrong< ::g::Outracks::Simulator::State_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Outracks::Simulator::Connecting_typeof();
-    options.FieldCount = 2;
-    options.ObjectSize = sizeof(ConnectingToHost);
-    options.TypeSize = sizeof(::g::Outracks::Simulator::State_type);
-    type = (::g::Outracks::Simulator::State_type*)uClassType::New("Outracks.Simulator.ConnectingToHost", options);
-    type->fp_build_ = ConnectingToHost_build;
-    type->fp_OnEnterState = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))ConnectingToHost__OnEnterState_fn;
-    type->fp_OnUpdate = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))ConnectingToHost__OnUpdate_fn;
-    return type;
-}
-
-// public ConnectingToHost(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint> simulatorEndpoints) :333
-void ConnectingToHost__ctor_2_fn(ConnectingToHost* __this, uObject* simulatorEndpoints)
-{
-    __this->ctor_2(simulatorEndpoints);
-}
-
-// public ConnectingToHost New(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint> simulatorEndpoints) :333
-void ConnectingToHost__New1_fn(uObject* simulatorEndpoints, ConnectingToHost** __retval)
-{
-    *__retval = ConnectingToHost::New1(simulatorEndpoints);
-}
-
-// public override sealed Outracks.Simulator.State OnEnterState() :340
-void ConnectingToHost__OnEnterState_fn(ConnectingToHost* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.ConnectingToHost", "OnEnterState()");
-    __this->_connecting = ::g::Outracks::Simulator::ConnectToFirstRespondingEndpoint::Execute((uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable::New1(::TYPES[44/*Uno.Runtime.Implementation.Internal.ArrayEnumerable<Uno.Net.IPEndPoint>*/], __this->_simulatorEndpoints)));
-    ::g::Outracks::Simulator::LoadingScreen::Show(::g::Outracks::Simulator::Context::App(), ::STRINGS[14/*"Connecting"*/], ::STRINGS[15/*"Fetching pr...*/]);
-    return *__retval = __this, void();
-}
-
-// public override sealed Outracks.Simulator.State OnUpdate() :355
-void ConnectingToHost__OnUpdate_fn(ConnectingToHost* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.ConnectingToHost", "OnUpdate()");
-    ::g::Uno::Net::Sockets::Socket* ret2;
-
-    if (uPtr(__this->_connecting)->IsCompleted())
-    {
-        ::g::Outracks::Simulator::SimulatorClient* client = ::g::Outracks::Simulator::SimulatorClient::New1((::g::Outracks::Simulator::Task__get_Result_fn(uPtr(__this->_connecting), &ret2), ret2));
-        ::g::Uno::Platform::CoreApp::add_Terminating(::g::Outracks::Simulator::Closure::ToAppStateChangeHandler(uDelegate::New(::TYPES[9/*Uno.Action*/], (void*)::g::Outracks::Simulator::SimulatorClient__Dispose_fn, client)));
-        return *__retval = ::g::Outracks::Simulator::Idle::New1((uObject*)client), void();
-    }
-
-    return *__retval = __this, void();
-}
-
-// public ConnectingToHost(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint> simulatorEndpoints) [instance] :333
-void ConnectingToHost::ctor_2(uObject* simulatorEndpoints)
-{
-    uStackFrame __("Outracks.Simulator.ConnectingToHost", ".ctor(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint>)");
-    ctor_1();
-    _simulatorEndpoints = ((uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[43/*Uno.Collections.EnumerableExtensions.ToArray<Uno.Net.IPEndPoint>*/], simulatorEndpoints));
-}
-
-// public ConnectingToHost New(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint> simulatorEndpoints) [static] :333
-ConnectingToHost* ConnectingToHost::New1(uObject* simulatorEndpoints)
-{
-    ConnectingToHost* obj1 = (ConnectingToHost*)uNew(ConnectingToHost_typeof());
-    obj1->ctor_2(simulatorEndpoints);
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal sealed class ConnectingToProxy :291
-// {
-static void ConnectingToProxy_build(uType* type)
-{
-    ::STRINGS[14] = uString::Const("Connecting");
-    ::STRINGS[16] = uString::Const("Connecting to computer...");
-    ::TYPES[44] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof(), NULL);
-    ::TYPES[45] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
-    type->SetFields(0,
-        ::g::Outracks::Simulator::Task_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL), offsetof(::g::Outracks::Simulator::ConnectingToProxy, _connecting), 0,
-        ::g::Uno::Net::IPEndPoint_typeof()->Array(), offsetof(::g::Outracks::Simulator::ConnectingToProxy, _proxyEndpoints), 0);
-}
-
-::g::Outracks::Simulator::State_type* ConnectingToProxy_typeof()
-{
-    static uSStrong< ::g::Outracks::Simulator::State_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Outracks::Simulator::Connecting_typeof();
-    options.FieldCount = 2;
-    options.ObjectSize = sizeof(ConnectingToProxy);
-    options.TypeSize = sizeof(::g::Outracks::Simulator::State_type);
-    type = (::g::Outracks::Simulator::State_type*)uClassType::New("Outracks.Simulator.ConnectingToProxy", options);
-    type->fp_build_ = ConnectingToProxy_build;
-    type->fp_ctor_ = (void*)ConnectingToProxy__New1_fn;
-    type->fp_OnEnterState = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))ConnectingToProxy__OnEnterState_fn;
-    type->fp_OnUpdate = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))ConnectingToProxy__OnUpdate_fn;
-    return type;
-}
-
-// public ConnectingToProxy() :301
-void ConnectingToProxy__ctor_2_fn(ConnectingToProxy* __this)
-{
-    __this->ctor_2();
-}
-
-// public ConnectingToProxy(Uno.Net.IPEndPoint[] proxyEndpoints) :296
-void ConnectingToProxy__ctor_3_fn(ConnectingToProxy* __this, uArray* proxyEndpoints)
-{
-    __this->ctor_3(proxyEndpoints);
-}
-
-// public ConnectingToProxy New() :301
-void ConnectingToProxy__New1_fn(ConnectingToProxy** __retval)
-{
-    *__retval = ConnectingToProxy::New1();
-}
-
-// public ConnectingToProxy New(Uno.Net.IPEndPoint[] proxyEndpoints) :296
-void ConnectingToProxy__New2_fn(uArray* proxyEndpoints, ConnectingToProxy** __retval)
-{
-    *__retval = ConnectingToProxy::New2(proxyEndpoints);
-}
-
-// public override sealed Outracks.Simulator.State OnEnterState() :306
-void ConnectingToProxy__OnEnterState_fn(ConnectingToProxy* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.ConnectingToProxy", "OnEnterState()");
-    __this->_connecting = ::g::Outracks::Simulator::ProxyClient::GetSimulatorEndpoint((uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable::New1(::TYPES[44/*Uno.Runtime.Implementation.Internal.ArrayEnumerable<Uno.Net.IPEndPoint>*/], __this->_proxyEndpoints)), ::g::Outracks::Simulator::Context::Project(), (uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable::New1(::TYPES[45/*Uno.Runtime.Implementation.Internal.ArrayEnumerable<string>*/], ::g::Outracks::Simulator::Context::Defines())));
-    ::g::Outracks::Simulator::LoadingScreen::Show(::g::Outracks::Simulator::Context::App(), ::STRINGS[14/*"Connecting"*/], ::STRINGS[16/*"Connecting ...*/]);
-    return *__retval = __this, void();
-}
-
-// public override sealed Outracks.Simulator.State OnUpdate() :320
-void ConnectingToProxy__OnUpdate_fn(ConnectingToProxy* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.ConnectingToProxy", "OnUpdate()");
-    uArray* ret3;
-
-    if (uPtr(__this->_connecting)->IsCompleted())
-        return *__retval = ::g::Outracks::Simulator::ConnectingToHost::New1((uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable::New1(::TYPES[44/*Uno.Runtime.Implementation.Internal.ArrayEnumerable<Uno.Net.IPEndPoint>*/], (::g::Outracks::Simulator::Task__get_Result_fn(uPtr(__this->_connecting), &ret3), ret3)))), void();
-
-    return *__retval = __this, void();
-}
-
-// public ConnectingToProxy() [instance] :301
-void ConnectingToProxy::ctor_2()
-{
-    ctor_1();
-    _proxyEndpoints = ::g::Outracks::Simulator::Context::ProxyEndpoints();
-}
-
-// public ConnectingToProxy(Uno.Net.IPEndPoint[] proxyEndpoints) [instance] :296
-void ConnectingToProxy::ctor_3(uArray* proxyEndpoints)
-{
-    ctor_1();
-    _proxyEndpoints = proxyEndpoints;
-}
-
-// public ConnectingToProxy New() [static] :301
-ConnectingToProxy* ConnectingToProxy::New1()
-{
-    ConnectingToProxy* obj2 = (ConnectingToProxy*)uNew(ConnectingToProxy_typeof());
-    obj2->ctor_2();
-    return obj2;
-}
-
-// public ConnectingToProxy New(Uno.Net.IPEndPoint[] proxyEndpoints) [static] :296
-ConnectingToProxy* ConnectingToProxy::New2(uArray* proxyEndpoints)
-{
-    ConnectingToProxy* obj1 = (ConnectingToProxy*)uNew(ConnectingToProxy_typeof());
-    obj1->ctor_3(proxyEndpoints);
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal sealed class ConnectionLost :667
-// {
-static void ConnectionLost_build(uType* type)
-{
-    ::STRINGS[17] = uString::Const("Connection lost");
-    ::STRINGS[0] = uString::Const("");
-    ::STRINGS[18] = uString::Const("Change IP");
-    ::STRINGS[19] = uString::Const("Reconnect");
-    ::TYPES[46] = ::g::Outracks::Simulator::DialogButton_typeof()->Array();
-    type->SetFields(5);
-}
-
-::g::Outracks::Simulator::State_type* ConnectionLost_typeof()
-{
-    static uSStrong< ::g::Outracks::Simulator::State_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Outracks::Simulator::ShowingModalDialog_typeof();
-    options.FieldCount = 5;
-    options.ObjectSize = sizeof(ConnectionLost);
-    options.TypeSize = sizeof(::g::Outracks::Simulator::State_type);
-    type = (::g::Outracks::Simulator::State_type*)uClassType::New("Outracks.Simulator.ConnectionLost", options);
-    type->fp_build_ = ConnectionLost_build;
-    return type;
-}
-
-// public ConnectionLost(Outracks.Simulator.Protocol.ExceptionInfo exception) :673
-void ConnectionLost__ctor_2_fn(ConnectionLost* __this, ::g::Outracks::Simulator::Protocol::ExceptionInfo* exception)
-{
-    __this->ctor_2(exception);
-}
-
-// public ConnectionLost(Uno.Exception exception) :669
-void ConnectionLost__ctor_3_fn(ConnectionLost* __this, ::g::Uno::Exception* exception)
-{
-    __this->ctor_3(exception);
-}
-
-// public ConnectionLost New(Outracks.Simulator.Protocol.ExceptionInfo exception) :673
-void ConnectionLost__New2_fn(::g::Outracks::Simulator::Protocol::ExceptionInfo* exception, ConnectionLost** __retval)
-{
-    *__retval = ConnectionLost::New2(exception);
-}
-
-// public ConnectionLost New(Uno.Exception exception) :669
-void ConnectionLost__New3_fn(::g::Uno::Exception* exception, ConnectionLost** __retval)
-{
-    *__retval = ConnectionLost::New3(exception);
-}
-
-// public ConnectionLost(Outracks.Simulator.Protocol.ExceptionInfo exception) [instance] :673
-void ConnectionLost::ctor_2(::g::Outracks::Simulator::Protocol::ExceptionInfo* exception)
-{
-    uStackFrame __("Outracks.Simulator.ConnectionLost", ".ctor(Outracks.Simulator.Protocol.ExceptionInfo)");
-    ctor_1(::STRINGS[17/*"Connection ...*/], uPtr(exception)->Message, ::STRINGS[0/*""*/], ::g::Outracks::Simulator::GoOffline::PrependOption(uArray::Init< ::g::Outracks::Simulator::DialogButton*>(::TYPES[46/*Outracks.Simulator.DialogButton[]*/], 2, (::g::Outracks::Simulator::DialogButton*)::g::Outracks::Simulator::DialogButton::New1(::STRINGS[18/*"Change IP"*/], ::g::Outracks::Simulator::ChangeIp::New1(::STRINGS[0/*""*/])), (::g::Outracks::Simulator::DialogButton*)::g::Outracks::Simulator::DialogButton::New1(::STRINGS[19/*"Reconnect"*/], ::g::Outracks::Simulator::ConnectingToProxy::New1()))));
-}
-
-// public ConnectionLost(Uno.Exception exception) [instance] :669
-void ConnectionLost::ctor_3(::g::Uno::Exception* exception)
-{
-    uStackFrame __("Outracks.Simulator.ConnectionLost", ".ctor(Uno.Exception)");
-    ctor_2(::g::Outracks::Simulator::Protocol::ExceptionInfo::Capture(exception));
-}
-
-// public ConnectionLost New(Outracks.Simulator.Protocol.ExceptionInfo exception) [static] :673
-ConnectionLost* ConnectionLost::New2(::g::Outracks::Simulator::Protocol::ExceptionInfo* exception)
-{
-    ConnectionLost* obj2 = (ConnectionLost*)uNew(ConnectionLost_typeof());
-    obj2->ctor_2(exception);
-    return obj2;
-}
-
-// public ConnectionLost New(Uno.Exception exception) [static] :669
-ConnectionLost* ConnectionLost::New3(::g::Uno::Exception* exception)
-{
-    ConnectionLost* obj1 = (ConnectionLost*)uNew(ConnectionLost_typeof());
-    obj1->ctor_3(exception);
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal sealed class ConnectToEndpointClosure :920
+// internal sealed class ConnectToEndpointClosure :1699
 // {
 static void ConnectToEndpointClosure_build(uType* type)
 {
-    ::TYPES[12] = ::g::Uno::Exception_typeof();
+    ::STRINGS[5] = uString::Const("Connection already established");
+    ::TYPES[21] = ::g::Uno::Exception_typeof();
     type->SetFields(0,
-        ::g::Uno::Net::IPEndPoint_typeof(), offsetof(::g::Outracks::Simulator::ConnectToEndpointClosure, _endpoint), 0);
+        ::g::Uno::Net::IPEndPoint_typeof(), offsetof(::g::Outracks::Simulator::ConnectToEndpointClosure, _endpoint), 0,
+        ::g::Uno::Threading::EventWaitHandle_typeof(), offsetof(::g::Outracks::Simulator::ConnectToEndpointClosure, _isNotConnected), 0);
 }
 
 uType* ConnectToEndpointClosure_typeof()
@@ -2260,7 +1354,7 @@ uType* ConnectToEndpointClosure_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 1;
+    options.FieldCount = 2;
     options.ObjectSize = sizeof(ConnectToEndpointClosure);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Outracks.Simulator.ConnectToEndpointClosure", options);
@@ -2268,31 +1362,32 @@ uType* ConnectToEndpointClosure_typeof()
     return type;
 }
 
-// public ConnectToEndpointClosure(Uno.Net.IPEndPoint endpoint) :924
-void ConnectToEndpointClosure__ctor__fn(ConnectToEndpointClosure* __this, ::g::Uno::Net::IPEndPoint* endpoint)
+// public ConnectToEndpointClosure(Uno.Net.IPEndPoint endpoint, Uno.Threading.EventWaitHandle isNotConnected) :1704
+void ConnectToEndpointClosure__ctor__fn(ConnectToEndpointClosure* __this, ::g::Uno::Net::IPEndPoint* endpoint, ::g::Uno::Threading::EventWaitHandle* isNotConnected)
 {
-    __this->ctor_(endpoint);
+    __this->ctor_(endpoint, isNotConnected);
 }
 
-// public Uno.Net.Sockets.Socket Execute() :929
+// public Uno.Net.Sockets.Socket Execute() :1710
 void ConnectToEndpointClosure__Execute_fn(ConnectToEndpointClosure* __this, ::g::Uno::Net::Sockets::Socket** __retval)
 {
     *__retval = __this->Execute();
 }
 
-// public ConnectToEndpointClosure New(Uno.Net.IPEndPoint endpoint) :924
-void ConnectToEndpointClosure__New1_fn(::g::Uno::Net::IPEndPoint* endpoint, ConnectToEndpointClosure** __retval)
+// public ConnectToEndpointClosure New(Uno.Net.IPEndPoint endpoint, Uno.Threading.EventWaitHandle isNotConnected) :1704
+void ConnectToEndpointClosure__New1_fn(::g::Uno::Net::IPEndPoint* endpoint, ::g::Uno::Threading::EventWaitHandle* isNotConnected, ConnectToEndpointClosure** __retval)
 {
-    *__retval = ConnectToEndpointClosure::New1(endpoint);
+    *__retval = ConnectToEndpointClosure::New1(endpoint, isNotConnected);
 }
 
-// public ConnectToEndpointClosure(Uno.Net.IPEndPoint endpoint) [instance] :924
-void ConnectToEndpointClosure::ctor_(::g::Uno::Net::IPEndPoint* endpoint)
+// public ConnectToEndpointClosure(Uno.Net.IPEndPoint endpoint, Uno.Threading.EventWaitHandle isNotConnected) [instance] :1704
+void ConnectToEndpointClosure::ctor_(::g::Uno::Net::IPEndPoint* endpoint, ::g::Uno::Threading::EventWaitHandle* isNotConnected)
 {
     _endpoint = endpoint;
+    _isNotConnected = isNotConnected;
 }
 
-// public Uno.Net.Sockets.Socket Execute() [instance] :929
+// public Uno.Net.Sockets.Socket Execute() [instance] :1710
 ::g::Uno::Net::Sockets::Socket* ConnectToEndpointClosure::Execute()
 {
     uStackFrame __("Outracks.Simulator.ConnectToEndpointClosure", "Execute()");
@@ -2301,6 +1396,13 @@ void ConnectToEndpointClosure::ctor_(::g::Uno::Net::IPEndPoint* endpoint)
     {
         ::g::Uno::Net::Sockets::Socket* socket = ::g::Uno::Net::Sockets::Socket::New1(2, 1, 6);
         socket->Connect1(_endpoint);
+
+        if (uPtr(_isNotConnected)->WaitOne1(0) == false)
+        {
+            uPtr(socket)->Dispose();
+            U_THROW(::g::Uno::Exception::New2(::STRINGS[5/*"Connection ...*/]));
+        }
+
         return socket;
     }
     catch (const uThrowable& __t)
@@ -2310,11 +1412,11 @@ void ConnectToEndpointClosure::ctor_(::g::Uno::Net::IPEndPoint* endpoint)
     }
 }
 
-// public ConnectToEndpointClosure New(Uno.Net.IPEndPoint endpoint) [static] :924
-ConnectToEndpointClosure* ConnectToEndpointClosure::New1(::g::Uno::Net::IPEndPoint* endpoint)
+// public ConnectToEndpointClosure New(Uno.Net.IPEndPoint endpoint, Uno.Threading.EventWaitHandle isNotConnected) [static] :1704
+ConnectToEndpointClosure* ConnectToEndpointClosure::New1(::g::Uno::Net::IPEndPoint* endpoint, ::g::Uno::Threading::EventWaitHandle* isNotConnected)
 {
     ConnectToEndpointClosure* obj1 = (ConnectToEndpointClosure*)uNew(ConnectToEndpointClosure_typeof());
-    obj1->ctor_(endpoint);
+    obj1->ctor_(endpoint, isNotConnected);
     return obj1;
 }
 // }
@@ -2322,20 +1424,20 @@ ConnectToEndpointClosure* ConnectToEndpointClosure::New1(::g::Uno::Net::IPEndPoi
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
 // -----------------------------------------------------------------------
 
-// public static class ConnectToFirstRespondingEndpoint :903
+// public static class ConnectToFirstRespondingEndpoint :1681
 // {
 static void ConnectToFirstRespondingEndpoint_build(uType* type)
 {
-    ::TYPES[47] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Outracks::Simulator::Task_typeof()->MakeType(::g::Uno::Net::Sockets::Socket_typeof(), NULL), NULL);
-    ::TYPES[48] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof(), NULL);
-    ::TYPES[1] = ::g::Uno::Collections::IEnumerator_typeof();
-    ::TYPES[49] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof(), NULL);
-    ::TYPES[50] = ::g::Outracks::Simulator::Tasks_typeof()->MakeMethod(0/*Run<Uno.Net.Sockets.Socket>*/, ::g::Uno::Net::Sockets::Socket_typeof(), NULL);
-    ::TYPES[51] = ::g::Uno::Func_typeof()->MakeType(::g::Uno::Net::Sockets::Socket_typeof(), NULL);
-    ::TYPES[52] = ::g::Outracks::Simulator::Tasks_typeof()->MakeMethod(1/*WaitForFirstResult<Uno.Net.Sockets.Socket>*/, ::g::Uno::Net::Sockets::Socket_typeof(), NULL);
-    ::TYPES[53] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL), ::g::Uno::Net::Sockets::Socket_typeof(), NULL);
+    ::TYPES[22] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Outracks::Simulator::Task_typeof()->MakeType(::g::Uno::Net::Sockets::Socket_typeof(), NULL), NULL);
+    ::TYPES[23] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof(), NULL);
+    ::TYPES[24] = ::g::Uno::Collections::IEnumerator_typeof();
+    ::TYPES[25] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof(), NULL);
+    ::TYPES[26] = ::g::Outracks::Simulator::Tasks_typeof()->MakeMethod(0/*Run<Uno.Net.Sockets.Socket>*/, ::g::Uno::Net::Sockets::Socket_typeof(), NULL);
+    ::TYPES[27] = ::g::Uno::Func_typeof()->MakeType(::g::Uno::Net::Sockets::Socket_typeof(), NULL);
+    ::TYPES[28] = ::g::Outracks::Simulator::Tasks_typeof()->MakeMethod(1/*WaitForFirstResult<Uno.Net.Sockets.Socket>*/, ::g::Uno::Net::Sockets::Socket_typeof(), NULL);
+    ::TYPES[29] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL), ::g::Uno::Net::Sockets::Socket_typeof(), NULL);
     type->Reflection.SetFunctions(1,
-        new uFunction("Execute", NULL, (void*)ConnectToFirstRespondingEndpoint__Execute_fn, 0, true, ::g::Outracks::Simulator::Task_typeof()->MakeType(::g::Uno::Net::Sockets::Socket_typeof(), NULL), 1, ::TYPES[48/*Uno.Collections.IEnumerable<Uno.Net.IPEndPoint>*/]));
+        new uFunction("Execute", NULL, (void*)ConnectToFirstRespondingEndpoint__Execute_fn, 0, true, ::g::Outracks::Simulator::Task_typeof()->MakeType(::g::Uno::Net::Sockets::Socket_typeof(), NULL), 1, ::TYPES[23/*Uno.Collections.IEnumerable<Uno.Net.IPEndPoint>*/]));
 }
 
 uClassType* ConnectToFirstRespondingEndpoint_typeof()
@@ -2350,35 +1452,36 @@ uClassType* ConnectToFirstRespondingEndpoint_typeof()
     return type;
 }
 
-// public static Outracks.Simulator.Task<Uno.Net.Sockets.Socket> Execute(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint> simulatorEndpoints) :905
+// public static Outracks.Simulator.Task<Uno.Net.Sockets.Socket> Execute(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint> simulatorEndpoints) :1683
 void ConnectToFirstRespondingEndpoint__Execute_fn(uObject* simulatorEndpoints, ::g::Outracks::Simulator::Task** __retval)
 {
     *__retval = ConnectToFirstRespondingEndpoint::Execute(simulatorEndpoints);
 }
 
-// private static Uno.Net.Sockets.Socket OnNoResult(Uno.Collections.IEnumerable<Uno.Exception> exceptions) :914
+// private static Uno.Net.Sockets.Socket OnNoResult(Uno.Collections.IEnumerable<Uno.Exception> exceptions) :1693
 void ConnectToFirstRespondingEndpoint__OnNoResult_fn(uObject* exceptions, ::g::Uno::Net::Sockets::Socket** __retval)
 {
     *__retval = ConnectToFirstRespondingEndpoint::OnNoResult(exceptions);
 }
 
-// public static Outracks.Simulator.Task<Uno.Net.Sockets.Socket> Execute(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint> simulatorEndpoints) [static] :905
+// public static Outracks.Simulator.Task<Uno.Net.Sockets.Socket> Execute(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint> simulatorEndpoints) [static] :1683
 ::g::Outracks::Simulator::Task* ConnectToFirstRespondingEndpoint::Execute(uObject* simulatorEndpoints)
 {
     uStackFrame __("Outracks.Simulator.ConnectToFirstRespondingEndpoint", "Execute(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint>)");
     ::g::Uno::Net::IPEndPoint* ret2;
-    ::g::Uno::Collections::List* socketTasks = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[47/*Uno.Collections.List<Outracks.Simulator.Task<Uno.Net.Sockets.Socket>>*/]);
+    ::g::Uno::Threading::AutoResetEvent* isNotConnected = ::g::Uno::Threading::AutoResetEvent::New2(true);
+    ::g::Uno::Collections::List* socketTasks = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[22/*Uno.Collections.List<Outracks.Simulator.Task<Uno.Net.Sockets.Socket>>*/]);
 
-    for (uObject* enum1 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(simulatorEndpoints), ::TYPES[48/*Uno.Collections.IEnumerable<Uno.Net.IPEndPoint>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[1/*Uno.Collections.IEnumerator*/])); )
+    for (uObject* enum1 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(simulatorEndpoints), ::TYPES[23/*Uno.Collections.IEnumerable<Uno.Net.IPEndPoint>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[24/*Uno.Collections.IEnumerator*/])); )
     {
-        ::g::Uno::Net::IPEndPoint* endpoint = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), ::TYPES[49/*Uno.Collections.IEnumerator<Uno.Net.IPEndPoint>*/]), &ret2), ret2);
-        ::g::Uno::Collections::List__Add_fn(uPtr(socketTasks), (::g::Outracks::Simulator::Task*)::g::Outracks::Simulator::Tasks::Run(::TYPES[50/*Outracks.Simulator.Tasks.Run<Uno.Net.Sockets.Socket>*/], uDelegate::New(::TYPES[51/*Uno.Func<Uno.Net.Sockets.Socket>*/], (void*)::g::Outracks::Simulator::ConnectToEndpointClosure__Execute_fn, ::g::Outracks::Simulator::ConnectToEndpointClosure::New1(endpoint))));
+        ::g::Uno::Net::IPEndPoint* endpoint = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), ::TYPES[25/*Uno.Collections.IEnumerator<Uno.Net.IPEndPoint>*/]), &ret2), ret2);
+        ::g::Uno::Collections::List__Add_fn(uPtr(socketTasks), (::g::Outracks::Simulator::Task*)::g::Outracks::Simulator::Tasks::Run(::TYPES[26/*Outracks.Simulator.Tasks.Run<Uno.Net.Sockets.Socket>*/], uDelegate::New(::TYPES[27/*Uno.Func<Uno.Net.Sockets.Socket>*/], (void*)::g::Outracks::Simulator::ConnectToEndpointClosure__Execute_fn, ::g::Outracks::Simulator::ConnectToEndpointClosure::New1(endpoint, isNotConnected))));
     }
 
-    return (::g::Outracks::Simulator::Task*)::g::Outracks::Simulator::Tasks::WaitForFirstResult(::TYPES[52/*Outracks.Simulator.Tasks.WaitForFirstResult<Uno.Net.Sockets.Socket>*/], (uObject*)socketTasks, uDelegate::New(::TYPES[53/*Uno.Func<Uno.Collections.IEnumerable<Uno.Exception>, Uno.Net.Sockets.Socket>*/], (void*)ConnectToFirstRespondingEndpoint__OnNoResult_fn));
+    return (::g::Outracks::Simulator::Task*)::g::Outracks::Simulator::Tasks::WaitForFirstResult(::TYPES[28/*Outracks.Simulator.Tasks.WaitForFirstResult<Uno.Net.Sockets.Socket>*/], (uObject*)socketTasks, uDelegate::New(::TYPES[29/*Uno.Func<Uno.Collections.IEnumerable<Uno.Exception>, Uno.Net.Sockets.Socket>*/], (void*)ConnectToFirstRespondingEndpoint__OnNoResult_fn));
 }
 
-// private static Uno.Net.Sockets.Socket OnNoResult(Uno.Collections.IEnumerable<Uno.Exception> exceptions) [static] :914
+// private static Uno.Net.Sockets.Socket OnNoResult(Uno.Collections.IEnumerable<Uno.Exception> exceptions) [static] :1693
 ::g::Uno::Net::Sockets::Socket* ConnectToFirstRespondingEndpoint::OnNoResult(uObject* exceptions)
 {
     uStackFrame __("Outracks.Simulator.ConnectToFirstRespondingEndpoint", "OnNoResult(Uno.Collections.IEnumerable<Uno.Exception>)");
@@ -2386,342 +1489,139 @@ void ConnectToFirstRespondingEndpoint__OnNoResult_fn(uObject* exceptions, ::g::U
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/messages/$.uno
+// --------------------------------------------------------------------------------
 
-// public static class Context :1752
-// {
-static void Context_build(uType* type)
+// public enum ConsoleColor :101
+uEnumType* ConsoleColor_typeof()
 {
-    ::STRINGS[20] = uString::Const("N/A");
-    ::STRINGS[21] = uString::Const("DESIGN MODE");
-    ::STRINGS[22] = uString::Const("PREVIEW MODE");
-    type->SetFields(0,
-        ::g::Uno::Func_typeof()->MakeType(::g::Uno::IO::Bundle_typeof(), NULL), (uintptr_t)&::g::Outracks::Simulator::Context::_projectBundleFactory_, uFieldFlagsStatic,
-        ::g::Outracks::Simulator::FakeApp_typeof(), (uintptr_t)&::g::Outracks::Simulator::Context::_App_, uFieldFlagsStatic,
-        ::g::Uno::String_typeof()->Array(), (uintptr_t)&::g::Outracks::Simulator::Context::_Defines_, uFieldFlagsStatic,
-        ::g::Outracks::Simulator::InputMode_typeof(), (uintptr_t)&::g::Outracks::Simulator::Context::_InputMode_, uFieldFlagsStatic,
-        ::g::Uno::String_typeof(), (uintptr_t)&::g::Outracks::Simulator::Context::_Project_, uFieldFlagsStatic,
-        ::g::Uno::Net::IPEndPoint_typeof()->Array(), (uintptr_t)&::g::Outracks::Simulator::Context::_ProxyEndpoints_, uFieldFlagsStatic,
-        ::g::Outracks::Simulator::Runtime::IReflection_typeof(), (uintptr_t)&::g::Outracks::Simulator::Context::_Reflection_, uFieldFlagsStatic);
-    type->Reflection.SetFunctions(12,
-        new uFunction("get_App", NULL, (void*)Context__get_App_fn, 0, true, ::g::Outracks::Simulator::FakeApp_typeof(), 0),
-        new uFunction("get_Defines", NULL, (void*)Context__get_Defines_fn, 0, true, ::g::Uno::String_typeof()->Array(), 0),
-        new uFunction("get_InputMode", NULL, (void*)Context__get_InputMode_fn, 0, true, ::g::Outracks::Simulator::InputMode_typeof(), 0),
-        new uFunction("get_Project", NULL, (void*)Context__get_Project_fn, 0, true, ::g::Uno::String_typeof(), 0),
-        new uFunction("get_ProjectBundle", NULL, (void*)Context__get_ProjectBundle_fn, 0, true, ::g::Uno::IO::Bundle_typeof(), 0),
-        new uFunction("get_ProxyEndpoints", NULL, (void*)Context__get_ProxyEndpoints_fn, 0, true, ::g::Uno::Net::IPEndPoint_typeof()->Array(), 0),
-        new uFunction("get_Reflection", NULL, (void*)Context__get_Reflection_fn, 0, true, ::g::Outracks::Simulator::Runtime::IReflection_typeof(), 0),
-        new uFunction("set_Reflection", NULL, (void*)Context__set_Reflection_fn, 0, true, uVoid_typeof(), 1, ::g::Outracks::Simulator::Runtime::IReflection_typeof()),
-        new uFunction("SetApp", NULL, (void*)Context__SetApp_fn, 0, true, uVoid_typeof(), 1, ::g::Outracks::Simulator::FakeApp_typeof()),
-        new uFunction("SetDesignMode", NULL, (void*)Context__SetDesignMode_fn, 0, true, uVoid_typeof(), 0),
-        new uFunction("SetGlobals", NULL, (void*)Context__SetGlobals_fn, 0, true, uVoid_typeof(), 4, ::g::Uno::Net::IPEndPoint_typeof()->Array(), ::g::Uno::String_typeof(), ::g::Uno::Func_typeof()->MakeType(::g::Uno::IO::Bundle_typeof(), NULL), ::g::Uno::String_typeof()->Array()),
-        new uFunction("SetInteractiveMode", NULL, (void*)Context__SetInteractiveMode_fn, 0, true, uVoid_typeof(), 0));
-}
-
-uClassType* Context_typeof()
-{
-    static uSStrong<uClassType*> type;
+    static uSStrong<uEnumType*> type;
     if (type != NULL) return type;
 
-    uTypeOptions options;
-    options.FieldCount = 7;
-    options.TypeSize = sizeof(uClassType);
-    type = uClassType::New("Outracks.Simulator.Context", options);
-    type->fp_build_ = Context_build;
+    type = uEnumType::New("Outracks.Simulator.ConsoleColor", ::g::Uno::Int_typeof(), 3);
+    type->SetLiterals(
+        "Red", 0LL,
+        "Default", 1LL,
+        "Orange", 2LL);
     return type;
 }
 
-// public static generated Outracks.Simulator.FakeApp get_App() :1755
-void Context__get_App_fn(::g::Outracks::Simulator::FakeApp** __retval)
+// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
+// -----------------------------------------------------------------------
+
+// public sealed class DesignerNotRunning :1477
+// {
+static void DesignerNotRunning_build(uType* type)
 {
-    *__retval = Context::App();
+    type->SetFields(3);
+    type->Reflection.SetFunctions(1,
+        new uFunction(".ctor", NULL, (void*)DesignerNotRunning__New4_fn, 0, true, type, 0));
 }
 
-// private static generated void set_App(Outracks.Simulator.FakeApp value) :1755
-void Context__set_App_fn(::g::Outracks::Simulator::FakeApp* value)
+::g::Uno::Exception_type* DesignerNotRunning_typeof()
 {
-    Context::App(value);
+    static uSStrong< ::g::Uno::Exception_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::Exception_typeof();
+    options.FieldCount = 3;
+    options.ObjectSize = sizeof(DesignerNotRunning);
+    options.TypeSize = sizeof(::g::Uno::Exception_type);
+    type = (::g::Uno::Exception_type*)uClassType::New("Outracks.Simulator.DesignerNotRunning", options);
+    type->fp_build_ = DesignerNotRunning_build;
+    type->fp_ctor_ = (void*)DesignerNotRunning__New4_fn;
+    return type;
 }
 
-// public static generated string[] get_Defines() :1758
-void Context__get_Defines_fn(uArray** __retval)
+// public generated DesignerNotRunning() :1477
+void DesignerNotRunning__ctor_3_fn(DesignerNotRunning* __this)
 {
-    *__retval = Context::Defines();
+    __this->ctor_3();
 }
 
-// private static generated void set_Defines(string[] value) :1758
-void Context__set_Defines_fn(uArray* value)
+// public generated DesignerNotRunning New() :1477
+void DesignerNotRunning__New4_fn(DesignerNotRunning** __retval)
 {
-    Context::Defines(value);
+    *__retval = DesignerNotRunning::New4();
 }
 
-// public static generated Outracks.Simulator.InputMode get_InputMode() :1754
-void Context__get_InputMode_fn(int* __retval)
+// public generated DesignerNotRunning() [instance] :1477
+void DesignerNotRunning::ctor_3()
 {
-    *__retval = Context::InputMode();
+    ctor_();
 }
 
-// private static generated void set_InputMode(Outracks.Simulator.InputMode value) :1754
-void Context__set_InputMode_fn(int* value)
+// public generated DesignerNotRunning New() [static] :1477
+DesignerNotRunning* DesignerNotRunning::New4()
 {
-    Context::InputMode(*value);
-}
-
-// public static generated string get_Project() :1757
-void Context__get_Project_fn(uString** __retval)
-{
-    *__retval = Context::Project();
-}
-
-// private static generated void set_Project(string value) :1757
-void Context__set_Project_fn(uString* value)
-{
-    Context::Project(value);
-}
-
-// public static Uno.IO.Bundle get_ProjectBundle() :1763
-void Context__get_ProjectBundle_fn(::g::Uno::IO::Bundle** __retval)
-{
-    *__retval = Context::ProjectBundle();
-}
-
-// public static generated Uno.Net.IPEndPoint[] get_ProxyEndpoints() :1756
-void Context__get_ProxyEndpoints_fn(uArray** __retval)
-{
-    *__retval = Context::ProxyEndpoints();
-}
-
-// private static generated void set_ProxyEndpoints(Uno.Net.IPEndPoint[] value) :1756
-void Context__set_ProxyEndpoints_fn(uArray* value)
-{
-    Context::ProxyEndpoints(value);
-}
-
-// public static generated Outracks.Simulator.Runtime.IReflection get_Reflection() :1766
-void Context__get_Reflection_fn(uObject** __retval)
-{
-    *__retval = Context::Reflection();
-}
-
-// public static generated void set_Reflection(Outracks.Simulator.Runtime.IReflection value) :1766
-void Context__set_Reflection_fn(uObject* value)
-{
-    Context::Reflection(value);
-}
-
-// public static void SetApp(Outracks.Simulator.FakeApp app) :1784
-void Context__SetApp_fn(::g::Outracks::Simulator::FakeApp* app)
-{
-    Context::SetApp(app);
-}
-
-// public static void SetDesignMode() :1768
-void Context__SetDesignMode_fn()
-{
-    Context::SetDesignMode();
-}
-
-// public static void SetGlobals(Uno.Net.IPEndPoint[] proxyEndpoints, string project, Uno.Func<Uno.IO.Bundle> projectBundle, string[] defines) :1789
-void Context__SetGlobals_fn(uArray* proxyEndpoints, uString* project, uDelegate* projectBundle, uArray* defines)
-{
-    Context::SetGlobals(proxyEndpoints, project, projectBundle, defines);
-}
-
-// public static void SetInteractiveMode() :1776
-void Context__SetInteractiveMode_fn()
-{
-    Context::SetInteractiveMode();
-}
-
-uSStrong<uDelegate*> Context::_projectBundleFactory_;
-uSStrong< ::g::Outracks::Simulator::FakeApp*> Context::_App_;
-uSStrong<uArray*> Context::_Defines_;
-int Context::_InputMode_;
-uSStrong<uString*> Context::_Project_;
-uSStrong<uArray*> Context::_ProxyEndpoints_;
-uSStrong<uObject*> Context::_Reflection_;
-
-// public static void SetApp(Outracks.Simulator.FakeApp app) [static] :1784
-void Context::SetApp(::g::Outracks::Simulator::FakeApp* app)
-{
-    Context::App(app);
-}
-
-// public static void SetDesignMode() [static] :1768
-void Context::SetDesignMode()
-{
-    uStackFrame __("Outracks.Simulator.Context", "SetDesignMode()");
-
-    if (Context::InputMode() == 1)
-        return;
-
-    Context::InputMode(1);
-    ::g::Fuse::Preview::SelectionManager::SetSelection((uObject*)::g::Outracks::Simulator::Runtime::Selection::New1(::STRINGS[20/*"N/A"*/], NULL));
-    uPtr(Context::App())->Flash(::STRINGS[21/*"DESIGN MODE"*/]);
-}
-
-// public static void SetGlobals(Uno.Net.IPEndPoint[] proxyEndpoints, string project, Uno.Func<Uno.IO.Bundle> projectBundle, string[] defines) [static] :1789
-void Context::SetGlobals(uArray* proxyEndpoints, uString* project, uDelegate* projectBundle, uArray* defines)
-{
-    Context::ProxyEndpoints(proxyEndpoints);
-    Context::Project(project);
-    Context::_projectBundleFactory_ = projectBundle;
-    Context::Defines(defines);
-}
-
-// public static void SetInteractiveMode() [static] :1776
-void Context::SetInteractiveMode()
-{
-    uStackFrame __("Outracks.Simulator.Context", "SetInteractiveMode()");
-
-    if (Context::InputMode() == 0)
-        return;
-
-    Context::InputMode(0);
-    ::g::Fuse::Preview::SelectionManager::SetSelection((uObject*)::g::Outracks::Simulator::Runtime::Selection::New1(::STRINGS[20/*"N/A"*/], NULL));
-    uPtr(Context::App())->Flash(::STRINGS[22/*"PREVIEW MODE"*/]);
-}
-
-// public static generated Outracks.Simulator.FakeApp get_App() [static] :1755
-::g::Outracks::Simulator::FakeApp* Context::App()
-{
-    return Context::_App_;
-}
-
-// private static generated void set_App(Outracks.Simulator.FakeApp value) [static] :1755
-void Context::App(::g::Outracks::Simulator::FakeApp* value)
-{
-    Context::_App_ = value;
-}
-
-// public static generated string[] get_Defines() [static] :1758
-uArray* Context::Defines()
-{
-    return Context::_Defines_;
-}
-
-// private static generated void set_Defines(string[] value) [static] :1758
-void Context::Defines(uArray* value)
-{
-    Context::_Defines_ = value;
-}
-
-// public static generated Outracks.Simulator.InputMode get_InputMode() [static] :1754
-int Context::InputMode()
-{
-    return Context::_InputMode_;
-}
-
-// private static generated void set_InputMode(Outracks.Simulator.InputMode value) [static] :1754
-void Context::InputMode(int value)
-{
-    Context::_InputMode_ = value;
-}
-
-// public static generated string get_Project() [static] :1757
-uString* Context::Project()
-{
-    return Context::_Project_;
-}
-
-// private static generated void set_Project(string value) [static] :1757
-void Context::Project(uString* value)
-{
-    Context::_Project_ = value;
-}
-
-// public static Uno.IO.Bundle get_ProjectBundle() [static] :1763
-::g::Uno::IO::Bundle* Context::ProjectBundle()
-{
-    uStackFrame __("Outracks.Simulator.Context", "get_ProjectBundle()");
-    return (::g::Uno::IO::Bundle*)uPtr(Context::_projectBundleFactory_)->Invoke();
-}
-
-// public static generated Uno.Net.IPEndPoint[] get_ProxyEndpoints() [static] :1756
-uArray* Context::ProxyEndpoints()
-{
-    return Context::_ProxyEndpoints_;
-}
-
-// private static generated void set_ProxyEndpoints(Uno.Net.IPEndPoint[] value) [static] :1756
-void Context::ProxyEndpoints(uArray* value)
-{
-    Context::_ProxyEndpoints_ = value;
-}
-
-// public static generated Outracks.Simulator.Runtime.IReflection get_Reflection() [static] :1766
-uObject* Context::Reflection()
-{
-    return Context::_Reflection_;
-}
-
-// public static generated void set_Reflection(Outracks.Simulator.Runtime.IReflection value) [static] :1766
-void Context::Reflection(uObject* value)
-{
-    Context::_Reflection_ = value;
+    DesignerNotRunning* obj1 = (DesignerNotRunning*)uNew(DesignerNotRunning_typeof());
+    obj1->ctor_3();
+    return obj1;
 }
 // }
 
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
 // -----------------------------------------------------------------------
 
-// public partial sealed class DeveloperMenu :2224
+// public partial sealed class DeveloperMenu :1049
 // {
-// static DeveloperMenu() :199
+// static DeveloperMenu() :9
 static void DeveloperMenu__cctor_4_fn(uType* __type)
 {
-    DeveloperMenu::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[23/*"Opacity"*/]);
+    DeveloperMenu::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[6/*"Opacity"*/]);
 }
 
 static void DeveloperMenu_build(uType* type)
 {
-    ::STRINGS[23] = uString::Const("Opacity");
-    ::STRINGS[24] = uString::Const("Go back");
-    ::STRINGS[25] = uString::Const("Fuse Preview Menu");
-    ::STRINGS[26] = uString::Const("Tap to dismiss");
-    ::TYPES[54] = ::g::Fuse::Animations::Change_typeof()->MakeType(::g::Uno::Float_typeof(), NULL);
-    ::TYPES[55] = ::g::Fuse::Gestures::ClickedHandler_typeof();
-    ::TYPES[11] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
-    ::TYPES[56] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Animations::Animator_typeof(), NULL);
+    ::STRINGS[6] = uString::Const("Opacity");
+    ::STRINGS[7] = uString::Const("Go back");
+    ::STRINGS[8] = uString::Const("Fuse Preview Menu");
+    ::STRINGS[9] = uString::Const("Tap to dismiss");
+    ::TYPES[30] = ::g::Fuse::Animations::Change_typeof()->MakeType(::g::Uno::Float_typeof(), NULL);
+    ::TYPES[31] = ::g::Fuse::Gestures::ClickedHandler_typeof();
+    ::TYPES[32] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
+    ::TYPES[33] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Animations::Animator_typeof(), NULL);
     type->SetInterfaces(
-        ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface0),
-        ::g::Fuse::Scripting::IScriptObject_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface1),
-        ::g::Fuse::IProperties_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface2),
-        ::g::Fuse::INotifyUnrooted_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface3),
-        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface4),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface5),
-        ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface6),
-        ::g::Uno::UX::IPropertyListener_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface7),
-        ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/], offsetof(::g::Fuse::Controls::Control_type, interface8),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface9),
-        ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface10),
-        ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface11),
-        ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface12),
-        ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface13),
-        ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface14));
-    type->SetFields(103,
+        ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface0),
+        ::g::Fuse::Scripting::IScriptObject_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface1),
+        ::g::Fuse::IProperties_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface2),
+        ::g::Fuse::INotifyUnrooted_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface3),
+        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface4),
+        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface5),
+        ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface6),
+        ::g::Uno::UX::IPropertyListener_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface7),
+        ::TYPES[32/*Uno.Collections.ICollection<Fuse.Node>*/], offsetof(::g::Fuse::Controls::Panel_type, interface8),
+        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface9),
+        ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface10),
+        ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface11),
+        ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface12),
+        ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface13),
+        ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface14),
+        ::g::Fuse::Drawing::ISurfaceDrawable_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface15));
+    type->SetFields(105,
         ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Float_typeof(), NULL), offsetof(::g::Outracks::Simulator::DeveloperMenu, this_Opacity_inst), 0,
         ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::Outracks::Simulator::DeveloperMenu::__selector0_, uFieldFlagsStatic);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)DeveloperMenu__New4_fn, 0, true, type, 0));
 }
 
-::g::Fuse::Controls::Control_type* DeveloperMenu_typeof()
+::g::Fuse::Controls::Panel_type* DeveloperMenu_typeof()
 {
-    static uSStrong< ::g::Fuse::Controls::Control_type*> type;
+    static uSStrong< ::g::Fuse::Controls::Panel_type*> type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Panel_typeof();
-    options.FieldCount = 105;
-    options.InterfaceCount = 15;
+    options.FieldCount = 107;
+    options.InterfaceCount = 16;
     options.ObjectSize = sizeof(DeveloperMenu);
-    options.TypeSize = sizeof(::g::Fuse::Controls::Control_type);
-    type = (::g::Fuse::Controls::Control_type*)uClassType::New("Outracks.Simulator.DeveloperMenu", options);
+    options.TypeSize = sizeof(::g::Fuse::Controls::Panel_type);
+    type = (::g::Fuse::Controls::Panel_type*)uClassType::New("Outracks.Simulator.DeveloperMenu", options);
     type->fp_build_ = DeveloperMenu_build;
     type->fp_ctor_ = (void*)DeveloperMenu__New4_fn;
     type->fp_cctor_ = DeveloperMenu__cctor_4_fn;
+    type->interface15.fp_Draw = (void(*)(uObject*, ::g::Fuse::Drawing::Surface*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableDraw_fn;
     type->interface10.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
     type->interface12.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
     type->interface11.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;
@@ -2758,31 +1658,31 @@ static void DeveloperMenu_build(uType* type)
     return type;
 }
 
-// public DeveloperMenu() :203
+// public DeveloperMenu() :13
 void DeveloperMenu__ctor_7_fn(DeveloperMenu* __this)
 {
     __this->ctor_7();
 }
 
-// private void Close(object sender, Uno.EventArgs args) :2231
+// private void Close(object sender, Uno.EventArgs args) :1056
 void DeveloperMenu__Close_fn(DeveloperMenu* __this, uObject* sender, ::g::Uno::EventArgs* args)
 {
     __this->Close(sender, args);
 }
 
-// private void GoBack(object sender, Uno.EventArgs args) :2226
+// private void GoBack(object sender, Uno.EventArgs args) :1051
 void DeveloperMenu__GoBack_fn(DeveloperMenu* __this, uObject* sender, ::g::Uno::EventArgs* args)
 {
     __this->GoBack(sender, args);
 }
 
-// private void InitializeUX() :207
+// private void InitializeUX() :17
 void DeveloperMenu__InitializeUX_fn(DeveloperMenu* __this)
 {
     __this->InitializeUX();
 }
 
-// public DeveloperMenu New() :203
+// public DeveloperMenu New() :13
 void DeveloperMenu__New4_fn(DeveloperMenu** __retval)
 {
     *__retval = DeveloperMenu::New4();
@@ -2790,7 +1690,7 @@ void DeveloperMenu__New4_fn(DeveloperMenu** __retval)
 
 ::g::Uno::UX::Selector DeveloperMenu::__selector0_;
 
-// public DeveloperMenu() [instance] :203
+// public DeveloperMenu() [instance] :13
 void DeveloperMenu::ctor_7()
 {
     uStackFrame __("Outracks.Simulator.DeveloperMenu", ".ctor()");
@@ -2798,21 +1698,21 @@ void DeveloperMenu::ctor_7()
     InitializeUX();
 }
 
-// private void Close(object sender, Uno.EventArgs args) [instance] :2231
+// private void Close(object sender, Uno.EventArgs args) [instance] :1056
 void DeveloperMenu::Close(uObject* sender, ::g::Uno::EventArgs* args)
 {
     uStackFrame __("Outracks.Simulator.DeveloperMenu", "Close(object,Uno.EventArgs)");
     uPtr(Parent())->BeginRemoveVisual(this, NULL);
 }
 
-// private void GoBack(object sender, Uno.EventArgs args) [instance] :2226
+// private void GoBack(object sender, Uno.EventArgs args) [instance] :1051
 void DeveloperMenu::GoBack(uObject* sender, ::g::Uno::EventArgs* args)
 {
     uStackFrame __("Outracks.Simulator.DeveloperMenu", "GoBack(object,Uno.EventArgs)");
     ::g::Fuse::Input::Keyboard::EmulateBackButtonTap();
 }
 
-// private void InitializeUX() [instance] :207
+// private void InitializeUX() [instance] :17
 void DeveloperMenu::InitializeUX()
 {
     uStackFrame __("Outracks.Simulator.DeveloperMenu", "InitializeUX()");
@@ -2823,50 +1723,50 @@ void DeveloperMenu::InitializeUX()
     ::g::Fuse::Controls::Text* temp3 = ::g::Fuse::Controls::Text::New3();
     ::g::Fuse::Controls::Text* temp4 = ::g::Fuse::Controls::Text::New3();
     ::g::Fuse::Triggers::AddingAnimation* temp5 = ::g::Fuse::Triggers::AddingAnimation::New2();
-    ::g::Fuse::Animations::Change* temp6 = (::g::Fuse::Animations::Change*)::g::Fuse::Animations::Change::New2(::TYPES[54/*Fuse.Animations.Change<float>*/], this_Opacity_inst);
+    ::g::Fuse::Animations::Change* temp6 = (::g::Fuse::Animations::Change*)::g::Fuse::Animations::Change::New2(::TYPES[30/*Fuse.Animations.Change<float>*/], this_Opacity_inst);
     ::g::Fuse::Animations::Scale* temp7 = ::g::Fuse::Animations::Scale::New2();
     ::g::Fuse::Triggers::RemovingAnimation* temp8 = ::g::Fuse::Triggers::RemovingAnimation::New2();
-    ::g::Fuse::Animations::Change* temp9 = (::g::Fuse::Animations::Change*)::g::Fuse::Animations::Change::New2(::TYPES[54/*Fuse.Animations.Change<float>*/], this_Opacity_inst);
+    ::g::Fuse::Animations::Change* temp9 = (::g::Fuse::Animations::Change*)::g::Fuse::Animations::Change::New2(::TYPES[30/*Fuse.Animations.Change<float>*/], this_Opacity_inst);
     ::g::Fuse::Animations::Scale* temp10 = ::g::Fuse::Animations::Scale::New2();
     Color(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 0.8f));
-    ::g::Fuse::Gestures::Clicked::AddHandler(this, uDelegate::New(::TYPES[55/*Fuse.Gestures.ClickedHandler*/], (void*)DeveloperMenu__Close_fn, this));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp1);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp2);
-    temp1->Text(::STRINGS[24/*"Go back"*/]);
+    ::g::Fuse::Gestures::Clicked::AddHandler(this, uDelegate::New(::TYPES[31/*Fuse.Gestures.ClickedHandler*/], (void*)DeveloperMenu__Close_fn, this));
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Children()), ::TYPES[32/*Uno.Collections.ICollection<Fuse.Node>*/]), temp1);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Children()), ::TYPES[32/*Uno.Collections.ICollection<Fuse.Node>*/]), temp2);
+    temp1->Text(::STRINGS[7/*"Go back"*/]);
     temp1->Alignment(5);
     temp1->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 20.0f, 20.0f));
-    ::g::Fuse::Gestures::Clicked::AddHandler(temp1, uDelegate::New(::TYPES[55/*Fuse.Gestures.ClickedHandler*/], (void*)DeveloperMenu__GoBack_fn, this));
+    ::g::Fuse::Gestures::Clicked::AddHandler(temp1, uDelegate::New(::TYPES[31/*Fuse.Gestures.ClickedHandler*/], (void*)DeveloperMenu__GoBack_fn, this));
     temp2->Alignment(10);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp3);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp4);
-    temp3->Value(::STRINGS[25/*"Fuse Previe...*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Children()), ::TYPES[32/*Uno.Collections.ICollection<Fuse.Node>*/]), temp3);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Children()), ::TYPES[32/*Uno.Collections.ICollection<Fuse.Node>*/]), temp4);
+    temp3->Value(::STRINGS[8/*"Fuse Previe...*/]);
     temp3->Color(::g::Fuse::Drawing::Colors::White());
     temp3->Alignment(10);
-    temp4->Value(::STRINGS[26/*"Tap to dism...*/]);
+    temp4->Value(::STRINGS[9/*"Tap to dism...*/]);
     temp4->Color(::g::Uno::Float4__New2(0.8666667f, 0.8666667f, 0.8666667f, 1.0f));
     temp4->Alignment(10);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp5->Animators()), ::TYPES[56/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp6);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp5->Animators()), ::TYPES[56/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp7);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp5->Animators()), ::TYPES[33/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp6);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp5->Animators()), ::TYPES[33/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp7);
     ::g::Fuse::Animations::Change__set_Value_fn(temp6, uCRef(0.0f));
     temp6->Duration(0.3);
     temp6->Easing(::g::Fuse::Animations::Easing::CubicIn());
     temp7->Factor(1.2f);
     temp7->Duration(0.3);
     temp7->Easing(::g::Fuse::Animations::Easing::BackIn());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp8->Animators()), ::TYPES[56/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp9);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp8->Animators()), ::TYPES[56/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp10);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp8->Animators()), ::TYPES[33/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp9);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp8->Animators()), ::TYPES[33/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp10);
     ::g::Fuse::Animations::Change__set_Value_fn(temp9, uCRef(0.0f));
     temp9->Duration(0.3);
     temp9->Easing(::g::Fuse::Animations::Easing::CubicOut());
     temp10->Factor(0.8f);
     temp10->Duration(0.3);
     temp10->Easing(::g::Fuse::Animations::Easing::CubicOut());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp5);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp8);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[32/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[32/*Uno.Collections.ICollection<Fuse.Node>*/]), temp5);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[32/*Uno.Collections.ICollection<Fuse.Node>*/]), temp8);
 }
 
-// public DeveloperMenu New() [static] :203
+// public DeveloperMenu New() [static] :13
 DeveloperMenu* DeveloperMenu::New4()
 {
     DeveloperMenu* obj1 = (DeveloperMenu*)uNew(DeveloperMenu_typeof());
@@ -2875,297 +1775,10 @@ DeveloperMenu* DeveloperMenu::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// internal sealed class DiagnosticItem :2253
-// {
-static void DiagnosticItem_build(uType* type)
-{
-    type->SetFields(0,
-        ::g::Fuse::Diagnostic_typeof(), offsetof(::g::Outracks::Simulator::DiagnosticItem, Diagnostic), 0,
-        ::g::Uno::Double_typeof(), offsetof(::g::Outracks::Simulator::DiagnosticItem, Expire), 0,
-        ::g::Uno::Int_typeof(), offsetof(::g::Outracks::Simulator::DiagnosticItem, FrameIndex), 0);
-}
-
-uType* DiagnosticItem_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.FieldCount = 3;
-    options.ObjectSize = sizeof(DiagnosticItem);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Outracks.Simulator.DiagnosticItem", options);
-    type->fp_build_ = DiagnosticItem_build;
-    type->fp_ctor_ = (void*)DiagnosticItem__New1_fn;
-    return type;
-}
-
-// public generated DiagnosticItem() :2253
-void DiagnosticItem__ctor__fn(DiagnosticItem* __this)
-{
-    __this->ctor_();
-}
-
-// public generated DiagnosticItem New() :2253
-void DiagnosticItem__New1_fn(DiagnosticItem** __retval)
-{
-    *__retval = DiagnosticItem::New1();
-}
-
-// public bool SameAs(Fuse.Diagnostic d) :2259
-void DiagnosticItem__SameAs_fn(DiagnosticItem* __this, ::g::Fuse::Diagnostic* d, bool* __retval)
-{
-    *__retval = __this->SameAs(d);
-}
-
-// public generated DiagnosticItem() [instance] :2253
-void DiagnosticItem::ctor_()
-{
-}
-
-// public bool SameAs(Fuse.Diagnostic d) [instance] :2259
-bool DiagnosticItem::SameAs(::g::Fuse::Diagnostic* d)
-{
-    uStackFrame __("Outracks.Simulator.DiagnosticItem", "SameAs(Fuse.Diagnostic)");
-
-    if (FrameIndex != ::g::Fuse::UpdateManager::FrameIndex())
-        return false;
-
-    if (uPtr(d)->Type != uPtr(Diagnostic)->Type)
-        return false;
-
-    if (::g::Uno::String::op_Equality(uPtr(d)->Message, uPtr(Diagnostic)->Message))
-        return true;
-
-    return ::g::Uno::String::op_Equality(uPtr(d)->FilePath, uPtr(Diagnostic)->FilePath) && (uPtr(d)->LineNumber == uPtr(Diagnostic)->LineNumber);
-}
-
-// public generated DiagnosticItem New() [static] :2253
-DiagnosticItem* DiagnosticItem::New1()
-{
-    DiagnosticItem* obj1 = (DiagnosticItem*)uNew(DiagnosticItem_typeof());
-    obj1->ctor_();
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal sealed class DiagnosticShower :2272
-// {
-static void DiagnosticShower_build(uType* type)
-{
-    ::STRINGS[27] = uString::Const("DC3232");
-    ::STRINGS[28] = uString::Const("C11717");
-    ::STRINGS[29] = uString::Const("60E800");
-    ::STRINGS[30] = uString::Const("3DA939");
-    ::STRINGS[31] = uString::Const("FFB60E");
-    ::STRINGS[32] = uString::Const("B6B60E");
-    ::TYPES[9] = ::g::Uno::Action_typeof();
-    type->SetFields(0,
-        ::g::Fuse::Diagnostic_typeof(), offsetof(::g::Outracks::Simulator::DiagnosticShower, _diagnosticItem), 0,
-        ::g::Uno::Collections::List_typeof()->MakeType(::g::Outracks::Simulator::DiagnosticItem_typeof(), NULL), offsetof(::g::Outracks::Simulator::DiagnosticShower, _previousDiagnosticItems), 0);
-}
-
-uType* DiagnosticShower_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.FieldCount = 2;
-    options.ObjectSize = sizeof(DiagnosticShower);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Outracks.Simulator.DiagnosticShower", options);
-    type->fp_build_ = DiagnosticShower_build;
-    return type;
-}
-
-// public DiagnosticShower(Fuse.Diagnostic diagnosticItem, Uno.Collections.List<Outracks.Simulator.DiagnosticItem> previousDiagnosticItems) :2277
-void DiagnosticShower__ctor__fn(DiagnosticShower* __this, ::g::Fuse::Diagnostic* diagnosticItem, ::g::Uno::Collections::List* previousDiagnosticItems)
-{
-    __this->ctor_(diagnosticItem, previousDiagnosticItems);
-}
-
-// private void DisplayDiagnostic(Fuse.Diagnostic d) :2313
-void DiagnosticShower__DisplayDiagnostic_fn(DiagnosticShower* __this, ::g::Fuse::Diagnostic* d)
-{
-    __this->DisplayDiagnostic(d);
-}
-
-// public DiagnosticShower New(Fuse.Diagnostic diagnosticItem, Uno.Collections.List<Outracks.Simulator.DiagnosticItem> previousDiagnosticItems) :2277
-void DiagnosticShower__New1_fn(::g::Fuse::Diagnostic* diagnosticItem, ::g::Uno::Collections::List* previousDiagnosticItems, DiagnosticShower** __retval)
-{
-    *__retval = DiagnosticShower::New1(diagnosticItem, previousDiagnosticItems);
-}
-
-// public void Show() :2283
-void DiagnosticShower__Show_fn(DiagnosticShower* __this)
-{
-    __this->Show();
-}
-
-// public DiagnosticShower(Fuse.Diagnostic diagnosticItem, Uno.Collections.List<Outracks.Simulator.DiagnosticItem> previousDiagnosticItems) [instance] :2277
-void DiagnosticShower::ctor_(::g::Fuse::Diagnostic* diagnosticItem, ::g::Uno::Collections::List* previousDiagnosticItems)
-{
-    _diagnosticItem = diagnosticItem;
-    _previousDiagnosticItems = previousDiagnosticItems;
-}
-
-// private void DisplayDiagnostic(Fuse.Diagnostic d) [instance] :2313
-void DiagnosticShower::DisplayDiagnostic(::g::Fuse::Diagnostic* d)
-{
-    uStackFrame __("Outracks.Simulator.DiagnosticShower", "DisplayDiagnostic(Fuse.Diagnostic)");
-    ::g::Uno::Float4 color = ::g::Uno::Color::FromHex(::STRINGS[27/*"DC3232"*/]);
-    ::g::Uno::Float4 strokeColor = ::g::Uno::Color::FromHex(::STRINGS[28/*"C11717"*/]);
-    float duration = 8.0f;
-    bool showMonitorInfo = false;
-
-    switch (uPtr(d)->Type)
-    {
-        case 0:
-        {
-            color = ::g::Uno::Color::FromHex(::STRINGS[29/*"60E800"*/]);
-            strokeColor = ::g::Uno::Color::FromHex(::STRINGS[30/*"3DA939"*/]);
-            duration = 2.5f;
-            break;
-        }
-        case 1:
-        {
-            duration = -1.0f;
-            showMonitorInfo = true;
-            break;
-        }
-        case 2:
-        {
-            color = ::g::Uno::Color::FromHex(::STRINGS[31/*"FFB60E"*/]);
-            strokeColor = ::g::Uno::Color::FromHex(::STRINGS[31/*"FFB60E"*/]);
-            showMonitorInfo = true;
-            break;
-        }
-        case 5:
-        {
-            color = ::g::Uno::Color::FromHex(::STRINGS[32/*"B6B60E"*/]);
-            strokeColor = ::g::Uno::Color::FromHex(::STRINGS[32/*"B6B60E"*/]);
-            break;
-        }
-        case 4:
-        case 3:
-        case 6:
-            return;
-    }
-
-    ::g::Outracks::Simulator::ErrorToast* t = ::g::Outracks::Simulator::ErrorToast::New6();
-    t->Message(uPtr(d)->Message);
-    t->FillColor(color);
-    t->StrokeColor(strokeColor);
-    t->ShowMonitorInfo(showMonitorInfo);
-    ::g::Fuse::Toast* toast = ::g::Fuse::Toast::Post(t, (double)duration);
-    t->add_Dismissed(uDelegate::New(::TYPES[9/*Uno.Action*/], (void*)::g::Fuse::Toast__Dismiss_fn, uPtr(toast)));
-}
-
-// public void Show() [instance] :2283
-void DiagnosticShower::Show()
-{
-    uStackFrame __("Outracks.Simulator.DiagnosticShower", "Show()");
-    ::g::Outracks::Simulator::DiagnosticItem* collection1;
-    ::g::Outracks::Simulator::DiagnosticItem* ret3;
-    double time = ::g::Fuse::Time::FrameTime();
-
-    for (int i = uPtr(_previousDiagnosticItems)->Count() - 1; i >= 0; --i)
-    {
-        ::g::Outracks::Simulator::DiagnosticItem* old = (::g::Uno::Collections::List__get_Item_fn(uPtr(_previousDiagnosticItems), uCRef<int>(i), &ret3), ret3);
-
-        if (time > uPtr(old)->Expire)
-        {
-            uPtr(_previousDiagnosticItems)->RemoveAt(i);
-            continue;
-        }
-
-        if (uPtr(old)->SameAs(_diagnosticItem))
-            return;
-    }
-
-    collection1 = ::g::Outracks::Simulator::DiagnosticItem::New1();
-    uPtr(collection1)->FrameIndex = ::g::Fuse::UpdateManager::FrameIndex();
-    uPtr(collection1)->Expire = (time + 5.0);
-    uPtr(collection1)->Diagnostic = _diagnosticItem;
-    ::g::Outracks::Simulator::DiagnosticItem* item = collection1;
-    ::g::Uno::Collections::List__Add_fn(uPtr(_previousDiagnosticItems), item);
-    DisplayDiagnostic(_diagnosticItem);
-}
-
-// public DiagnosticShower New(Fuse.Diagnostic diagnosticItem, Uno.Collections.List<Outracks.Simulator.DiagnosticItem> previousDiagnosticItems) [static] :2277
-DiagnosticShower* DiagnosticShower::New1(::g::Fuse::Diagnostic* diagnosticItem, ::g::Uno::Collections::List* previousDiagnosticItems)
-{
-    DiagnosticShower* obj2 = (DiagnosticShower*)uNew(DiagnosticShower_typeof());
-    obj2->ctor_(diagnosticItem, previousDiagnosticItems);
-    return obj2;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal sealed class DialogButton :1545
-// {
-static void DialogButton_build(uType* type)
-{
-    type->SetFields(0,
-        ::g::Outracks::Simulator::State_typeof(), offsetof(::g::Outracks::Simulator::DialogButton, Destination), 0,
-        ::g::Uno::String_typeof(), offsetof(::g::Outracks::Simulator::DialogButton, Text), 0);
-}
-
-uType* DialogButton_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.FieldCount = 2;
-    options.ObjectSize = sizeof(DialogButton);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Outracks.Simulator.DialogButton", options);
-    type->fp_build_ = DialogButton_build;
-    return type;
-}
-
-// public DialogButton(string text, Outracks.Simulator.State destination) :1550
-void DialogButton__ctor__fn(DialogButton* __this, uString* text, ::g::Outracks::Simulator::State* destination)
-{
-    __this->ctor_(text, destination);
-}
-
-// public DialogButton New(string text, Outracks.Simulator.State destination) :1550
-void DialogButton__New1_fn(uString* text, ::g::Outracks::Simulator::State* destination, DialogButton** __retval)
-{
-    *__retval = DialogButton::New1(text, destination);
-}
-
-// public DialogButton(string text, Outracks.Simulator.State destination) [instance] :1550
-void DialogButton::ctor_(uString* text, ::g::Outracks::Simulator::State* destination)
-{
-    Text = text;
-    Destination = destination;
-}
-
-// public DialogButton New(string text, Outracks.Simulator.State destination) [static] :1550
-DialogButton* DialogButton::New1(uString* text, ::g::Outracks::Simulator::State* destination)
-{
-    DialogButton* obj1 = (DialogButton*)uNew(DialogButton_typeof());
-    obj1->ctor_(text, destination);
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
-
-// public sealed class DummyApplication :587
+// public sealed class DummyApplication :706
 // {
 static void DummyApplication_build(uType* type)
 {
@@ -3190,26 +1803,26 @@ uType* DummyApplication_typeof()
     return type;
 }
 
-// public generated DummyApplication() :587
+// public generated DummyApplication() :706
 void DummyApplication__ctor_2_fn(DummyApplication* __this)
 {
     __this->ctor_2();
 }
 
-// public generated DummyApplication New() :587
+// public generated DummyApplication New() :706
 void DummyApplication__New1_fn(DummyApplication** __retval)
 {
     *__retval = DummyApplication::New1();
 }
 
-// public generated DummyApplication() [instance] :587
+// public generated DummyApplication() [instance] :706
 void DummyApplication::ctor_2()
 {
     uStackFrame __("Outracks.Simulator.DummyApplication", ".ctor()");
     ctor_1();
 }
 
-// public generated DummyApplication New() [static] :587
+// public generated DummyApplication New() [static] :706
 DummyApplication* DummyApplication::New1()
 {
     DummyApplication* obj1 = (DummyApplication*)uNew(DummyApplication_typeof());
@@ -3218,550 +1831,53 @@ DummyApplication* DummyApplication::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/$.uno
 // -----------------------------------------------------------------------
 
-// internal static class EnumerableHitTestExtension :2050
+// public sealed class EmptyClass :7
 // {
-static void EnumerableHitTestExtension_build(uType* type)
+static void EmptyClass_build(uType* type)
 {
-    ::TYPES[57] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Visual_typeof(), NULL);
-    ::TYPES[58] = ::g::Fuse::HitTestCallback_typeof();
+    type->Reflection.SetFunctions(1,
+        new uFunction(".ctor", NULL, (void*)EmptyClass__New1_fn, 0, true, type, 0));
 }
 
-uClassType* EnumerableHitTestExtension_typeof()
+uType* EmptyClass_typeof()
 {
-    static uSStrong<uClassType*> type;
+    static uSStrong<uType*> type;
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.TypeSize = sizeof(uClassType);
-    type = uClassType::New("Outracks.Simulator.EnumerableHitTestExtension", options);
-    type->fp_build_ = EnumerableHitTestExtension_build;
+    options.ObjectSize = sizeof(EmptyClass);
+    options.TypeSize = sizeof(uType);
+    type = uClassType::New("Outracks.Simulator.EmptyClass", options);
+    type->fp_build_ = EmptyClass_build;
+    type->fp_ctor_ = (void*)EmptyClass__New1_fn;
     return type;
 }
 
-// public static Uno.Collections.IList<Fuse.Visual> HitTest2(Fuse.Visual node, float2 windowPoint) :2052
-void EnumerableHitTestExtension__HitTest2_fn(::g::Fuse::Visual* node, ::g::Uno::Float2* windowPoint, uObject** __retval)
+// public EmptyClass() :9
+void EmptyClass__ctor__fn(EmptyClass* __this)
 {
-    *__retval = EnumerableHitTestExtension::HitTest2(node, *windowPoint);
+    __this->ctor_();
 }
 
-// public static Uno.Collections.IList<Fuse.Visual> HitTest2(Fuse.Visual node, float2 windowPoint) [static] :2052
-uObject* EnumerableHitTestExtension::HitTest2(::g::Fuse::Visual* node, ::g::Uno::Float2 windowPoint)
+// public EmptyClass New() :9
+void EmptyClass__New1_fn(EmptyClass** __retval)
 {
-    uStackFrame __("Outracks.Simulator.EnumerableHitTestExtension", "HitTest2(Fuse.Visual,float2)");
-    ::g::Uno::Collections::List* nodes = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[57/*Uno.Collections.List<Fuse.Visual>*/]);
-    ::g::Fuse::HitTestContext* htc = ::g::Fuse::HitTestContext::New1(windowPoint, uDelegate::New(::TYPES[58/*Fuse.HitTestCallback*/], (void*)EnumerableHitTestExtension__CollectHitNodesClosure__HitTestCallback_fn, EnumerableHitTestExtension__CollectHitNodesClosure::New1(nodes)));
-    uPtr(node)->HitTest(htc);
-    return (uObject*)nodes;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// public partial sealed class ErrorToast :2200
-// {
-// static ErrorToast() :80
-static void ErrorToast__cctor_5_fn(uType* __type)
-{
-    ErrorToast::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[59/*string[]*/], 0);
-    ErrorToast::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[33/*"Value"*/]);
-    ErrorToast::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[34/*"Message"*/]);
-    ErrorToast::__selector2_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[35/*"FillColor"*/]);
-    ErrorToast::__selector3_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[36/*"StrokeColor"*/]);
-    ErrorToast::__selector4_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[37/*"ShowMonitor...*/]);
-    ErrorToast::__selector5_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[23/*"Opacity"*/]);
-    ErrorToast::__selector6_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[38/*"Color"*/]);
+    *__retval = EmptyClass::New1();
 }
 
-static void ErrorToast_build(uType* type)
+// public EmptyClass() [instance] :9
+void EmptyClass::ctor_()
 {
-    ::STRINGS[33] = uString::Const("Value");
-    ::STRINGS[34] = uString::Const("Message");
-    ::STRINGS[35] = uString::Const("FillColor");
-    ::STRINGS[36] = uString::Const("StrokeColor");
-    ::STRINGS[37] = uString::Const("ShowMonitorInfo");
-    ::STRINGS[23] = uString::Const("Opacity");
-    ::STRINGS[38] = uString::Const("Color");
-    ::STRINGS[39] = uString::Const("See Fuse Monitor (Cmd/Ctrl+M) for details");
-    ::STRINGS[40] = uString::Const("Got it");
-    ::TYPES[59] = ::g::Uno::String_typeof()->Array();
-    ::TYPES[54] = ::g::Fuse::Animations::Change_typeof()->MakeType(::g::Uno::Float_typeof(), NULL);
-    ::TYPES[11] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
-    ::TYPES[60] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL);
-    ::TYPES[55] = ::g::Fuse::Gestures::ClickedHandler_typeof();
-    ::TYPES[56] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Animations::Animator_typeof(), NULL);
-    ::TYPES[61] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Drawing::Stroke_typeof(), NULL);
-    ::TYPES[62] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Property_typeof(), NULL);
-    ::TYPES[9] = ::g::Uno::Action_typeof();
-    type->SetInterfaces(
-        ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface0),
-        ::g::Fuse::Scripting::IScriptObject_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface1),
-        ::g::Fuse::IProperties_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface2),
-        ::g::Fuse::INotifyUnrooted_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface3),
-        ::TYPES[60/*Uno.Collections.ICollection<Fuse.Binding>*/], offsetof(::g::Fuse::Controls::Control_type, interface4),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface5),
-        ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface6),
-        ::g::Uno::UX::IPropertyListener_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface7),
-        ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/], offsetof(::g::Fuse::Controls::Control_type, interface8),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface9),
-        ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface10),
-        ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface11),
-        ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface12),
-        ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface13),
-        ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface14));
-    type->SetFields(104,
-        ::g::Uno::UX::NameTable_typeof(), offsetof(::g::Outracks::Simulator::ErrorToast, __g_nametable1), 0,
-        ::g::Uno::Float4_typeof(), offsetof(::g::Outracks::Simulator::ErrorToast, _field_FillColor), 0,
-        ::g::Uno::String_typeof(), offsetof(::g::Outracks::Simulator::ErrorToast, _field_Message), 0,
-        ::g::Uno::Bool_typeof(), offsetof(::g::Outracks::Simulator::ErrorToast, _field_ShowMonitorInfo), 0,
-        ::g::Uno::Float4_typeof(), offsetof(::g::Outracks::Simulator::ErrorToast, _field_StrokeColor), 0,
-        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(::g::Outracks::Simulator::ErrorToast, temp_Value_inst), 0,
-        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Bool_typeof(), NULL), offsetof(::g::Outracks::Simulator::ErrorToast, temp1_Value_inst), 0,
-        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL), offsetof(::g::Outracks::Simulator::ErrorToast, temp2_Color_inst), 0,
-        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL), offsetof(::g::Outracks::Simulator::ErrorToast, temp3_Color_inst), 0,
-        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL), offsetof(::g::Outracks::Simulator::ErrorToast, this_FillColor_inst), 0,
-        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(::g::Outracks::Simulator::ErrorToast, this_Message_inst), 0,
-        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Float_typeof(), NULL), offsetof(::g::Outracks::Simulator::ErrorToast, this_Opacity_inst), 0,
-        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Bool_typeof(), NULL), offsetof(::g::Outracks::Simulator::ErrorToast, this_ShowMonitorInfo_inst), 0,
-        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL), offsetof(::g::Outracks::Simulator::ErrorToast, this_StrokeColor_inst), 0,
-        ::TYPES[9/*Uno.Action*/], offsetof(::g::Outracks::Simulator::ErrorToast, Dismissed1), 0,
-        ::TYPES[59/*string[]*/], (uintptr_t)&::g::Outracks::Simulator::ErrorToast::__g_static_nametable1_, uFieldFlagsStatic,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::Outracks::Simulator::ErrorToast::__selector0_, uFieldFlagsStatic,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::Outracks::Simulator::ErrorToast::__selector1_, uFieldFlagsStatic,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::Outracks::Simulator::ErrorToast::__selector2_, uFieldFlagsStatic,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::Outracks::Simulator::ErrorToast::__selector3_, uFieldFlagsStatic,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::Outracks::Simulator::ErrorToast::__selector4_, uFieldFlagsStatic,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::Outracks::Simulator::ErrorToast::__selector5_, uFieldFlagsStatic,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::Outracks::Simulator::ErrorToast::__selector6_, uFieldFlagsStatic);
-    type->Reflection.SetFunctions(15,
-        new uFunction("add_Dismissed", NULL, (void*)ErrorToast__add_Dismissed_fn, 0, false, uVoid_typeof(), 1, ::TYPES[9/*Uno.Action*/]),
-        new uFunction("remove_Dismissed", NULL, (void*)ErrorToast__remove_Dismissed_fn, 0, false, uVoid_typeof(), 1, ::TYPES[9/*Uno.Action*/]),
-        new uFunction("get_FillColor", NULL, (void*)ErrorToast__get_FillColor_fn, 0, false, ::g::Uno::Float4_typeof(), 0),
-        new uFunction("set_FillColor", NULL, (void*)ErrorToast__set_FillColor_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float4_typeof()),
-        new uFunction("get_Message", NULL, (void*)ErrorToast__get_Message_fn, 0, false, ::g::Uno::String_typeof(), 0),
-        new uFunction("set_Message", NULL, (void*)ErrorToast__set_Message_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
-        new uFunction(".ctor", NULL, (void*)ErrorToast__New6_fn, 0, true, type, 0),
-        new uFunction("SetFillColor", NULL, (void*)ErrorToast__SetFillColor_fn, 0, false, uVoid_typeof(), 2, ::g::Uno::Float4_typeof(), ::g::Uno::UX::IPropertyListener_typeof()),
-        new uFunction("SetMessage", NULL, (void*)ErrorToast__SetMessage_fn, 0, false, uVoid_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::UX::IPropertyListener_typeof()),
-        new uFunction("SetShowMonitorInfo", NULL, (void*)ErrorToast__SetShowMonitorInfo_fn, 0, false, uVoid_typeof(), 2, ::g::Uno::Bool_typeof(), ::g::Uno::UX::IPropertyListener_typeof()),
-        new uFunction("SetStrokeColor", NULL, (void*)ErrorToast__SetStrokeColor_fn, 0, false, uVoid_typeof(), 2, ::g::Uno::Float4_typeof(), ::g::Uno::UX::IPropertyListener_typeof()),
-        new uFunction("get_ShowMonitorInfo", NULL, (void*)ErrorToast__get_ShowMonitorInfo_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
-        new uFunction("set_ShowMonitorInfo", NULL, (void*)ErrorToast__set_ShowMonitorInfo_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Bool_typeof()),
-        new uFunction("get_StrokeColor", NULL, (void*)ErrorToast__get_StrokeColor_fn, 0, false, ::g::Uno::Float4_typeof(), 0),
-        new uFunction("set_StrokeColor", NULL, (void*)ErrorToast__set_StrokeColor_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float4_typeof()));
 }
 
-::g::Fuse::Controls::Control_type* ErrorToast_typeof()
+// public EmptyClass New() [static] :9
+EmptyClass* EmptyClass::New1()
 {
-    static uSStrong< ::g::Fuse::Controls::Control_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Fuse::Controls::ClientPanel_typeof();
-    options.FieldCount = 127;
-    options.InterfaceCount = 15;
-    options.ObjectSize = sizeof(ErrorToast);
-    options.TypeSize = sizeof(::g::Fuse::Controls::Control_type);
-    type = (::g::Fuse::Controls::Control_type*)uClassType::New("Outracks.Simulator.ErrorToast", options);
-    type->fp_build_ = ErrorToast_build;
-    type->fp_ctor_ = (void*)ErrorToast__New6_fn;
-    type->fp_cctor_ = ErrorToast__cctor_5_fn;
-    type->fp_OnUnrooted = (void(*)(::g::Fuse::Node*))ErrorToast__OnUnrooted_fn;
-    type->interface10.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
-    type->interface12.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
-    type->interface11.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;
-    type->interface14.fp_SetSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Elements::Element__FuseAnimationsIResizeSetSize_fn;
-    type->interface13.fp_get_ActualSize = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualSize_fn;
-    type->interface13.fp_get_ActualPosition = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualPosition_fn;
-    type->interface13.fp_add_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__add_Placed_fn;
-    type->interface13.fp_remove_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__remove_Placed_fn;
-    type->interface8.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
-    type->interface8.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
-    type->interface6.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsIListFuseNodeRemoveAt_fn;
-    type->interface9.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
-    type->interface8.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
-    type->interface6.fp_get_Item = (void(*)(uObject*, int*, uTRef))::g::Fuse::Visual__UnoCollectionsIListFuseNodeget_Item_fn;
-    type->interface6.fp_Insert = (void(*)(uObject*, int*, void*))::g::Fuse::Visual__Insert1_fn;
-    type->interface7.fp_OnPropertyChanged = (void(*)(uObject*, ::g::Uno::UX::PropertyObject*, ::g::Uno::UX::Selector*))::g::Fuse::Controls::Control__OnPropertyChanged2_fn;
-    type->interface8.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
-    type->interface8.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
-    type->interface4.fp_Clear = (void(*)(uObject*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingClear_fn;
-    type->interface4.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingContains_fn;
-    type->interface0.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Node__UnoCollectionsIListFuseBindingRemoveAt_fn;
-    type->interface5.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Node__UnoCollectionsIEnumerableFuseBindingGetEnumerator_fn;
-    type->interface1.fp_SetScriptObject = (void(*)(uObject*, uObject*, ::g::Fuse::Scripting::Context*))::g::Fuse::Node__FuseScriptingIScriptObjectSetScriptObject_fn;
-    type->interface4.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingget_Count_fn;
-    type->interface0.fp_get_Item = (void(*)(uObject*, int*, uTRef))::g::Fuse::Node__UnoCollectionsIListFuseBindingget_Item_fn;
-    type->interface1.fp_get_ScriptObject = (void(*)(uObject*, uObject**))::g::Fuse::Node__FuseScriptingIScriptObjectget_ScriptObject_fn;
-    type->interface1.fp_get_ScriptContext = (void(*)(uObject*, ::g::Fuse::Scripting::Context**))::g::Fuse::Node__FuseScriptingIScriptObjectget_ScriptContext_fn;
-    type->interface3.fp_add_Unrooted = (void(*)(uObject*, uDelegate*))::g::Fuse::Node__FuseINotifyUnrootedadd_Unrooted_fn;
-    type->interface3.fp_remove_Unrooted = (void(*)(uObject*, uDelegate*))::g::Fuse::Node__FuseINotifyUnrootedremove_Unrooted_fn;
-    type->interface0.fp_Insert = (void(*)(uObject*, int*, void*))::g::Fuse::Node__Insert_fn;
-    type->interface2.fp_get_Properties = (void(*)(uObject*, ::g::Fuse::Properties**))::g::Fuse::Node__get_Properties_fn;
-    type->interface4.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Node__Add_fn;
-    type->interface4.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Node__Remove_fn;
-    return type;
-}
-
-// public ErrorToast() :84
-void ErrorToast__ctor_9_fn(ErrorToast* __this)
-{
-    __this->ctor_9();
-}
-
-// public generated void add_Dismissed(Uno.Action value) :2214
-void ErrorToast__add_Dismissed_fn(ErrorToast* __this, uDelegate* value)
-{
-    __this->add_Dismissed(value);
-}
-
-// public generated void remove_Dismissed(Uno.Action value) :2214
-void ErrorToast__remove_Dismissed_fn(ErrorToast* __this, uDelegate* value)
-{
-    __this->remove_Dismissed(value);
-}
-
-// public float4 get_FillColor() :27
-void ErrorToast__get_FillColor_fn(ErrorToast* __this, ::g::Uno::Float4* __retval)
-{
-    *__retval = __this->FillColor();
-}
-
-// public void set_FillColor(float4 value) :28
-void ErrorToast__set_FillColor_fn(ErrorToast* __this, ::g::Uno::Float4* value)
-{
-    __this->FillColor(*value);
-}
-
-// private void InitializeUX() :88
-void ErrorToast__InitializeUX1_fn(ErrorToast* __this)
-{
-    __this->InitializeUX1();
-}
-
-// public string get_Message() :12
-void ErrorToast__get_Message_fn(ErrorToast* __this, uString** __retval)
-{
-    *__retval = __this->Message();
-}
-
-// public void set_Message(string value) :13
-void ErrorToast__set_Message_fn(ErrorToast* __this, uString* value)
-{
-    __this->Message(value);
-}
-
-// public ErrorToast New() :84
-void ErrorToast__New6_fn(ErrorToast** __retval)
-{
-    *__retval = ErrorToast::New6();
-}
-
-// private void OnClicked(object sender, Uno.EventArgs args) :2202
-void ErrorToast__OnClicked_fn(ErrorToast* __this, uObject* sender, ::g::Uno::EventArgs* args)
-{
-    __this->OnClicked(sender, args);
-}
-
-// protected override sealed void OnUnrooted() :2208
-void ErrorToast__OnUnrooted_fn(ErrorToast* __this)
-{
-    uStackFrame __("Outracks.Simulator.ErrorToast", "OnUnrooted()");
-    ::g::Fuse::Toast::OnUnrooted(__this);
-    ::g::Fuse::Controls::Panel__OnUnrooted_fn(__this);
-}
-
-// public void SetFillColor(float4 value, Uno.UX.IPropertyListener origin) :30
-void ErrorToast__SetFillColor_fn(ErrorToast* __this, ::g::Uno::Float4* value, uObject* origin)
-{
-    __this->SetFillColor(*value, origin);
-}
-
-// public void SetMessage(string value, Uno.UX.IPropertyListener origin) :15
-void ErrorToast__SetMessage_fn(ErrorToast* __this, uString* value, uObject* origin)
-{
-    __this->SetMessage(value, origin);
-}
-
-// public void SetShowMonitorInfo(bool value, Uno.UX.IPropertyListener origin) :60
-void ErrorToast__SetShowMonitorInfo_fn(ErrorToast* __this, bool* value, uObject* origin)
-{
-    __this->SetShowMonitorInfo(*value, origin);
-}
-
-// public void SetStrokeColor(float4 value, Uno.UX.IPropertyListener origin) :45
-void ErrorToast__SetStrokeColor_fn(ErrorToast* __this, ::g::Uno::Float4* value, uObject* origin)
-{
-    __this->SetStrokeColor(*value, origin);
-}
-
-// public bool get_ShowMonitorInfo() :57
-void ErrorToast__get_ShowMonitorInfo_fn(ErrorToast* __this, bool* __retval)
-{
-    *__retval = __this->ShowMonitorInfo();
-}
-
-// public void set_ShowMonitorInfo(bool value) :58
-void ErrorToast__set_ShowMonitorInfo_fn(ErrorToast* __this, bool* value)
-{
-    __this->ShowMonitorInfo(*value);
-}
-
-// public float4 get_StrokeColor() :42
-void ErrorToast__get_StrokeColor_fn(ErrorToast* __this, ::g::Uno::Float4* __retval)
-{
-    *__retval = __this->StrokeColor();
-}
-
-// public void set_StrokeColor(float4 value) :43
-void ErrorToast__set_StrokeColor_fn(ErrorToast* __this, ::g::Uno::Float4* value)
-{
-    __this->StrokeColor(*value);
-}
-
-uSStrong<uArray*> ErrorToast::__g_static_nametable1_;
-::g::Uno::UX::Selector ErrorToast::__selector0_;
-::g::Uno::UX::Selector ErrorToast::__selector1_;
-::g::Uno::UX::Selector ErrorToast::__selector2_;
-::g::Uno::UX::Selector ErrorToast::__selector3_;
-::g::Uno::UX::Selector ErrorToast::__selector4_;
-::g::Uno::UX::Selector ErrorToast::__selector5_;
-::g::Uno::UX::Selector ErrorToast::__selector6_;
-
-// public ErrorToast() [instance] :84
-void ErrorToast::ctor_9()
-{
-    uStackFrame __("Outracks.Simulator.ErrorToast", ".ctor()");
-    ctor_8();
-    InitializeUX1();
-}
-
-// public generated void add_Dismissed(Uno.Action value) [instance] :2214
-void ErrorToast::add_Dismissed(uDelegate* value)
-{
-    uStackFrame __("Outracks.Simulator.ErrorToast", "add_Dismissed(Uno.Action)");
-    Dismissed1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Dismissed1, value), ::TYPES[9/*Uno.Action*/]);
-}
-
-// public generated void remove_Dismissed(Uno.Action value) [instance] :2214
-void ErrorToast::remove_Dismissed(uDelegate* value)
-{
-    uStackFrame __("Outracks.Simulator.ErrorToast", "remove_Dismissed(Uno.Action)");
-    Dismissed1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Dismissed1, value), ::TYPES[9/*Uno.Action*/]);
-}
-
-// public float4 get_FillColor() [instance] :27
-::g::Uno::Float4 ErrorToast::FillColor()
-{
-    return _field_FillColor;
-}
-
-// public void set_FillColor(float4 value) [instance] :28
-void ErrorToast::FillColor(::g::Uno::Float4 value)
-{
-    uStackFrame __("Outracks.Simulator.ErrorToast", "set_FillColor(float4)");
-    SetFillColor(value, NULL);
-}
-
-// private void InitializeUX() [instance] :88
-void ErrorToast::InitializeUX1()
-{
-    uStackFrame __("Outracks.Simulator.ErrorToast", "InitializeUX()");
-    ::g::Fuse::Reactive::This* temp4 = ::g::Fuse::Reactive::This::New1();
-    ::g::Fuse::Controls::Text* temp = ::g::Fuse::Controls::Text::New3();
-    temp_Value_inst = ::g::OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property::New1(temp, ErrorToast::__selector0());
-    ::g::Fuse::Reactive::Property* temp5 = ::g::Fuse::Reactive::Property::New1(temp4, ::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message::Singleton());
-    this_Message_inst = ::g::OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property::New1(this, ErrorToast::__selector1());
-    this_FillColor_inst = ::g::OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property::New1(this, ErrorToast::__selector2());
-    this_StrokeColor_inst = ::g::OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property::New1(this, ErrorToast::__selector3());
-    this_ShowMonitorInfo_inst = ::g::OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property::New1(this, ErrorToast::__selector4());
-    __g_nametable1 = ::g::Uno::UX::NameTable::New1(NULL, ErrorToast::__g_static_nametable1());
-    ::g::Fuse::Reactive::This* temp6 = ::g::Fuse::Reactive::This::New1();
-    ::g::Fuse::Triggers::WhileTrue* temp1 = ::g::Fuse::Triggers::WhileTrue::New2();
-    temp1_Value_inst = ::g::OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property::New1(temp1, ErrorToast::__selector0());
-    ::g::Fuse::Reactive::Property* temp7 = ::g::Fuse::Reactive::Property::New1(temp6, ::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo::Singleton());
-    this_Opacity_inst = ::g::OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property::New1(this, ErrorToast::__selector5());
-    ::g::Fuse::Reactive::This* temp8 = ::g::Fuse::Reactive::This::New1();
-    ::g::Fuse::Reactive::This* temp9 = ::g::Fuse::Reactive::This::New1();
-    ::g::Fuse::Controls::Rectangle* temp2 = ::g::Fuse::Controls::Rectangle::New3();
-    temp2_Color_inst = ::g::OutracksSimulatorClientUno_FuseControlsShape_Color_Property::New1(temp2, ErrorToast::__selector6());
-    ::g::Fuse::Reactive::Property* temp10 = ::g::Fuse::Reactive::Property::New1(temp9, ::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor::Singleton());
-    ::g::Fuse::Drawing::Stroke* temp3 = ::g::Fuse::Drawing::Stroke::New2();
-    temp3_Color_inst = ::g::OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property::New1(temp3, ErrorToast::__selector6());
-    ::g::Fuse::Reactive::Property* temp11 = ::g::Fuse::Reactive::Property::New1(temp8, ::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor::Singleton());
-    ::g::Fuse::Controls::StackPanel* temp12 = ::g::Fuse::Controls::StackPanel::New4();
-    ::g::Fuse::Reactive::DataBinding* temp13 = ::g::Fuse::Reactive::DataBinding::New1(temp_Value_inst, (uObject*)temp5, __g_nametable1, 3);
-    ::g::Fuse::Controls::Text* temp14 = ::g::Fuse::Controls::Text::New3();
-    ::g::Fuse::Controls::Button* temp15 = ::g::Fuse::Controls::Button::New5();
-    ::g::Fuse::Reactive::DataBinding* temp16 = ::g::Fuse::Reactive::DataBinding::New1(temp1_Value_inst, (uObject*)temp7, __g_nametable1, 3);
-    ::g::Fuse::Triggers::AddingAnimation* temp17 = ::g::Fuse::Triggers::AddingAnimation::New2();
-    ::g::Fuse::Animations::Scale* temp18 = ::g::Fuse::Animations::Scale::New2();
-    ::g::Fuse::Animations::Change* temp19 = (::g::Fuse::Animations::Change*)::g::Fuse::Animations::Change::New2(::TYPES[54/*Fuse.Animations.Change<float>*/], this_Opacity_inst);
-    ::g::Fuse::Triggers::RemovingAnimation* temp20 = ::g::Fuse::Triggers::RemovingAnimation::New2();
-    ::g::Fuse::Animations::Scale* temp21 = ::g::Fuse::Animations::Scale::New2();
-    ::g::Fuse::Animations::Change* temp22 = (::g::Fuse::Animations::Change*)::g::Fuse::Animations::Change::New2(::TYPES[54/*Fuse.Animations.Change<float>*/], this_Opacity_inst);
-    ::g::Fuse::Reactive::DataBinding* temp23 = ::g::Fuse::Reactive::DataBinding::New1(temp2_Color_inst, (uObject*)temp10, __g_nametable1, 3);
-    ::g::Fuse::Reactive::DataBinding* temp24 = ::g::Fuse::Reactive::DataBinding::New1(temp3_Color_inst, (uObject*)temp11, __g_nametable1, 3);
-    temp12->Width(::g::Uno::UX::Size__New1(75.0f, 4));
-    temp12->Alignment(14);
-    temp12->Margin(::g::Uno::Float4__New2(40.0f, 40.0f, 40.0f, 40.0f));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp12->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp12->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp1);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp12->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp17);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp12->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp20);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp12->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp2);
-    temp->TextWrapping(1);
-    temp->FontSize(16.0f);
-    temp->TextAlignment(1);
-    temp->TextColor(::g::Fuse::Drawing::Colors::White());
-    temp->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 20.0f, 20.0f));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[60/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp13);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp1->Nodes()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp14);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp1->Nodes()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp15);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp1->Bindings()), ::TYPES[60/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp16);
-    temp14->Value(::STRINGS[39/*"See Fuse Mo...*/]);
-    temp14->TextWrapping(1);
-    temp14->FontSize(10.0f);
-    temp14->TextAlignment(1);
-    temp14->TextColor(::g::Fuse::Drawing::Colors::White());
-    temp14->Margin(::g::Uno::Float4__New2(10.0f, 10.0f, 10.0f, 10.0f));
-    temp15->Text(::STRINGS[40/*"Got it"*/]);
-    temp15->Padding(::g::Uno::Float4__New2(10.0f, 10.0f, 10.0f, 10.0f));
-    ::g::Fuse::Gestures::Clicked::AddHandler(temp15, uDelegate::New(::TYPES[55/*Fuse.Gestures.ClickedHandler*/], (void*)ErrorToast__OnClicked_fn, this));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp17->Animators()), ::TYPES[56/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp18);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp17->Animators()), ::TYPES[56/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp19);
-    temp18->Factor(0.8f);
-    temp18->Duration(0.2);
-    temp18->Easing(::g::Fuse::Animations::Easing::BackIn());
-    ::g::Fuse::Animations::Change__set_Value_fn(temp19, uCRef(0.0f));
-    temp19->Duration(0.25);
-    temp19->Easing(::g::Fuse::Animations::Easing::CubicIn());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp20->Animators()), ::TYPES[56/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp21);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp20->Animators()), ::TYPES[56/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp22);
-    temp21->Factor(0.8f);
-    temp21->Duration(0.4);
-    temp21->Easing(::g::Fuse::Animations::Easing::BackOut());
-    ::g::Fuse::Animations::Change__set_Value_fn(temp22, uCRef(0.0f));
-    temp22->Duration(0.4);
-    temp22->Easing(::g::Fuse::Animations::Easing::CubicOut());
-    temp2->CornerRadius(::g::Uno::Float4__New2(4.0f, 4.0f, 4.0f, 4.0f));
-    temp2->Layer(1);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Strokes()), ::TYPES[61/*Uno.Collections.ICollection<Fuse.Drawing.Stroke>*/]), temp3);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Bindings()), ::TYPES[60/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp23);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Bindings()), ::TYPES[60/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp24);
-    temp3->Width(2.0f);
-    uPtr(__g_nametable1)->This(this);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Properties()), ::TYPES[62/*Uno.Collections.ICollection<Uno.UX.Property>*/]), this_Message_inst);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Properties()), ::TYPES[62/*Uno.Collections.ICollection<Uno.UX.Property>*/]), this_FillColor_inst);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Properties()), ::TYPES[62/*Uno.Collections.ICollection<Uno.UX.Property>*/]), this_StrokeColor_inst);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Properties()), ::TYPES[62/*Uno.Collections.ICollection<Uno.UX.Property>*/]), this_ShowMonitorInfo_inst);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), temp12);
-}
-
-// public string get_Message() [instance] :12
-uString* ErrorToast::Message()
-{
-    return _field_Message;
-}
-
-// public void set_Message(string value) [instance] :13
-void ErrorToast::Message(uString* value)
-{
-    uStackFrame __("Outracks.Simulator.ErrorToast", "set_Message(string)");
-    SetMessage(value, NULL);
-}
-
-// private void OnClicked(object sender, Uno.EventArgs args) [instance] :2202
-void ErrorToast::OnClicked(uObject* sender, ::g::Uno::EventArgs* args)
-{
-    uStackFrame __("Outracks.Simulator.ErrorToast", "OnClicked(object,Uno.EventArgs)");
-
-    if (::g::Uno::Delegate::op_Inequality(Dismissed1, NULL))
-        uPtr(Dismissed1)->InvokeVoid();
-}
-
-// public void SetFillColor(float4 value, Uno.UX.IPropertyListener origin) [instance] :30
-void ErrorToast::SetFillColor(::g::Uno::Float4 value, uObject* origin)
-{
-    uStackFrame __("Outracks.Simulator.ErrorToast", "SetFillColor(float4,Uno.UX.IPropertyListener)");
-
-    if (::g::Uno::Float4__op_Inequality(value, _field_FillColor))
-    {
-        _field_FillColor = value;
-        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit(::STRINGS[35/*"FillColor"*/]), origin);
-    }
-}
-
-// public void SetMessage(string value, Uno.UX.IPropertyListener origin) [instance] :15
-void ErrorToast::SetMessage(uString* value, uObject* origin)
-{
-    uStackFrame __("Outracks.Simulator.ErrorToast", "SetMessage(string,Uno.UX.IPropertyListener)");
-
-    if (::g::Uno::String::op_Inequality(value, _field_Message))
-    {
-        _field_Message = value;
-        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit(::STRINGS[34/*"Message"*/]), origin);
-    }
-}
-
-// public void SetShowMonitorInfo(bool value, Uno.UX.IPropertyListener origin) [instance] :60
-void ErrorToast::SetShowMonitorInfo(bool value, uObject* origin)
-{
-    uStackFrame __("Outracks.Simulator.ErrorToast", "SetShowMonitorInfo(bool,Uno.UX.IPropertyListener)");
-
-    if (value != _field_ShowMonitorInfo)
-    {
-        _field_ShowMonitorInfo = value;
-        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit(::STRINGS[37/*"ShowMonitor...*/]), origin);
-    }
-}
-
-// public void SetStrokeColor(float4 value, Uno.UX.IPropertyListener origin) [instance] :45
-void ErrorToast::SetStrokeColor(::g::Uno::Float4 value, uObject* origin)
-{
-    uStackFrame __("Outracks.Simulator.ErrorToast", "SetStrokeColor(float4,Uno.UX.IPropertyListener)");
-
-    if (::g::Uno::Float4__op_Inequality(value, _field_StrokeColor))
-    {
-        _field_StrokeColor = value;
-        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit(::STRINGS[36/*"StrokeColor"*/]), origin);
-    }
-}
-
-// public bool get_ShowMonitorInfo() [instance] :57
-bool ErrorToast::ShowMonitorInfo()
-{
-    return _field_ShowMonitorInfo;
-}
-
-// public void set_ShowMonitorInfo(bool value) [instance] :58
-void ErrorToast::ShowMonitorInfo(bool value)
-{
-    uStackFrame __("Outracks.Simulator.ErrorToast", "set_ShowMonitorInfo(bool)");
-    SetShowMonitorInfo(value, NULL);
-}
-
-// public float4 get_StrokeColor() [instance] :42
-::g::Uno::Float4 ErrorToast::StrokeColor()
-{
-    return _field_StrokeColor;
-}
-
-// public void set_StrokeColor(float4 value) [instance] :43
-void ErrorToast::StrokeColor(::g::Uno::Float4 value)
-{
-    uStackFrame __("Outracks.Simulator.ErrorToast", "set_StrokeColor(float4)");
-    SetStrokeColor(value, NULL);
-}
-
-// public ErrorToast New() [static] :84
-ErrorToast* ErrorToast::New6()
-{
-    ErrorToast* obj1 = (ErrorToast*)uNew(ErrorToast_typeof());
-    obj1->ctor_9();
+    EmptyClass* obj1 = (EmptyClass*)uNew(EmptyClass_typeof());
+    obj1->ctor_();
     return obj1;
 }
 // }
@@ -3769,152 +1885,11 @@ ErrorToast* ErrorToast::New6()
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
 // -----------------------------------------------------------------------
 
-// internal static class Exceptions :621
-// {
-static void Exceptions_build(uType* type)
-{
-    ::TYPES[38] = ::g::Outracks::Simulator::ISimulatorClient_typeof();
-    ::TYPES[63] = ::g::Uno::AggregateException_typeof();
-    ::TYPES[64] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
-    ::TYPES[1] = ::g::Uno::Collections::IEnumerator_typeof();
-    ::TYPES[2] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
-}
-
-uClassType* Exceptions_typeof()
-{
-    static uSStrong<uClassType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.TypeSize = sizeof(uClassType);
-    type = uClassType::New("Outracks.Simulator.Exceptions", options);
-    type->fp_build_ = Exceptions_build;
-    return type;
-}
-
-// public static void Send(Outracks.Simulator.ISimulatorClient client, Uno.Collections.List<Uno.Exception> exceptions) :623
-void Exceptions__Send_fn(uObject* client, ::g::Uno::Collections::List* exceptions)
-{
-    Exceptions::Send(client, exceptions);
-}
-
-// public static Uno.Collections.List<Uno.Exception> Unpack(Uno.Exception e) :632
-void Exceptions__Unpack_fn(::g::Uno::Exception* e, ::g::Uno::Collections::List** __retval)
-{
-    *__retval = Exceptions::Unpack(e);
-}
-
-// public static void Send(Outracks.Simulator.ISimulatorClient client, Uno.Collections.List<Uno.Exception> exceptions) [static] :623
-void Exceptions::Send(uObject* client, ::g::Uno::Collections::List* exceptions)
-{
-    uStackFrame __("Outracks.Simulator.Exceptions", "Send(Outracks.Simulator.ISimulatorClient,Uno.Collections.List<Uno.Exception>)");
-    ::g::Uno::Exception* ret3;
-
-    for (int i = 0; i < uPtr(exceptions)->Count(); ++i)
-    {
-        ::g::Uno::Exception* unpacked = (::g::Uno::Collections::List__get_Item_fn(uPtr(exceptions), uCRef<int>(i), &ret3), ret3);
-        ::g::Outracks::Simulator::ISimulatorClient::Send(uInterface(uPtr(client), ::TYPES[38/*Outracks.Simulator.ISimulatorClient*/]), ::g::Outracks::Simulator::Protocol::UnhandledException::New1(::g::Outracks::Simulator::DeviceInfo::GUID(), ::g::Outracks::Simulator::DeviceInfo::Name(), uPtr(unpacked)->Message(), uPtr(unpacked)->StackTrace(), uPtr(::g::Uno::Object::GetType(uPtr(unpacked)))->ToString()));
-    }
-}
-
-// public static Uno.Collections.List<Uno.Exception> Unpack(Uno.Exception e) [static] :632
-::g::Uno::Collections::List* Exceptions::Unpack(::g::Uno::Exception* e)
-{
-    uStackFrame __("Outracks.Simulator.Exceptions", "Unpack(Uno.Exception)");
-    ::g::Uno::Collections::List* collection2;
-    ::g::Uno::Exception* ret4;
-
-    if (uIs(e, ::TYPES[63/*Uno.AggregateException*/]))
-    {
-        ::g::Uno::AggregateException* aggregate = uCast< ::g::Uno::AggregateException*>(e, ::TYPES[63/*Uno.AggregateException*/]);
-        ::g::Uno::Collections::List* exceptions = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[64/*Uno.Collections.List<Uno.Exception>*/]);
-
-        for (uObject* enum1 = (uObject*)uPtr(uPtr(aggregate)->InnerExceptions())->GetEnumerator(); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[1/*Uno.Collections.IEnumerator*/])); )
-        {
-            ::g::Uno::Exception* inner = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), ::TYPES[2/*Uno.Collections.IEnumerator<Uno.Exception>*/]), &ret4), ret4);
-            uPtr(exceptions)->AddRange((uObject*)Exceptions::Unpack(inner));
-        }
-
-        return exceptions;
-    }
-    else if (uPtr(e)->InnerException() != NULL)
-        return Exceptions::Unpack(uPtr(e)->InnerException());
-    else
-    {
-        collection2 = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[64/*Uno.Collections.List<Uno.Exception>*/]);
-        ::g::Uno::Collections::List__Add_fn(uPtr(collection2), e);
-        return collection2;
-    }
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal sealed class FailedToConnect :684
-// {
-static void FailedToConnect_build(uType* type)
-{
-    ::STRINGS[41] = uString::Const("Failed to connect");
-    ::STRINGS[42] = uString::Const("Please check that this device is connected to the same network as your computer.");
-    ::STRINGS[18] = uString::Const("Change IP");
-    ::STRINGS[0] = uString::Const("");
-    ::STRINGS[43] = uString::Const("Try again");
-    ::TYPES[46] = ::g::Outracks::Simulator::DialogButton_typeof()->Array();
-    type->SetFields(5);
-}
-
-::g::Outracks::Simulator::State_type* FailedToConnect_typeof()
-{
-    static uSStrong< ::g::Outracks::Simulator::State_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Outracks::Simulator::ShowingModalDialog_typeof();
-    options.FieldCount = 5;
-    options.ObjectSize = sizeof(FailedToConnect);
-    options.TypeSize = sizeof(::g::Outracks::Simulator::State_type);
-    type = (::g::Outracks::Simulator::State_type*)uClassType::New("Outracks.Simulator.FailedToConnect", options);
-    type->fp_build_ = FailedToConnect_build;
-    return type;
-}
-
-// public FailedToConnect(Uno.Exception exception) :686
-void FailedToConnect__ctor_2_fn(FailedToConnect* __this, ::g::Uno::Exception* exception)
-{
-    __this->ctor_2(exception);
-}
-
-// public FailedToConnect New(Uno.Exception exception) :686
-void FailedToConnect__New2_fn(::g::Uno::Exception* exception, FailedToConnect** __retval)
-{
-    *__retval = FailedToConnect::New2(exception);
-}
-
-// public FailedToConnect(Uno.Exception exception) [instance] :686
-void FailedToConnect::ctor_2(::g::Uno::Exception* exception)
-{
-    uStackFrame __("Outracks.Simulator.FailedToConnect", ".ctor(Uno.Exception)");
-    ctor_1(::STRINGS[41/*"Failed to c...*/], ::STRINGS[42/*"Please chec...*/], uPtr(exception)->Message(), ::g::Outracks::Simulator::GoOffline::PrependOption(uArray::Init< ::g::Outracks::Simulator::DialogButton*>(::TYPES[46/*Outracks.Simulator.DialogButton[]*/], 2, (::g::Outracks::Simulator::DialogButton*)::g::Outracks::Simulator::DialogButton::New1(::STRINGS[18/*"Change IP"*/], ::g::Outracks::Simulator::ChangeIp::New1(::STRINGS[0/*""*/])), (::g::Outracks::Simulator::DialogButton*)::g::Outracks::Simulator::DialogButton::New1(::STRINGS[43/*"Try again"*/], ::g::Outracks::Simulator::ConnectingToProxy::New1()))));
-}
-
-// public FailedToConnect New(Uno.Exception exception) [static] :686
-FailedToConnect* FailedToConnect::New2(::g::Uno::Exception* exception)
-{
-    FailedToConnect* obj1 = (FailedToConnect*)uNew(FailedToConnect_typeof());
-    obj1->ctor_2(exception);
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/$.uno
-// -------------------------------------------------------------------------
-
-// public sealed class FailedToConnectToEndPoint :13
+// public sealed class FailedToConnectToEndPoint :1652
 // {
 static void FailedToConnectToEndPoint_build(uType* type)
 {
-    ::STRINGS[44] = uString::Const(": ");
+    ::STRINGS[10] = uString::Const(": ");
     type->SetFields(3);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)FailedToConnectToEndPoint__New4_fn, 0, true, type, 2, ::g::Uno::Net::IPEndPoint_typeof(), ::g::Uno::Exception_typeof()));
@@ -3935,25 +1910,25 @@ static void FailedToConnectToEndPoint_build(uType* type)
     return type;
 }
 
-// public FailedToConnectToEndPoint(Uno.Net.IPEndPoint endpoint, Uno.Exception e) :15
+// public FailedToConnectToEndPoint(Uno.Net.IPEndPoint endpoint, Uno.Exception e) :1654
 void FailedToConnectToEndPoint__ctor_3_fn(FailedToConnectToEndPoint* __this, ::g::Uno::Net::IPEndPoint* endpoint, ::g::Uno::Exception* e)
 {
     __this->ctor_3(endpoint, e);
 }
 
-// public FailedToConnectToEndPoint New(Uno.Net.IPEndPoint endpoint, Uno.Exception e) :15
+// public FailedToConnectToEndPoint New(Uno.Net.IPEndPoint endpoint, Uno.Exception e) :1654
 void FailedToConnectToEndPoint__New4_fn(::g::Uno::Net::IPEndPoint* endpoint, ::g::Uno::Exception* e, FailedToConnectToEndPoint** __retval)
 {
     *__retval = FailedToConnectToEndPoint::New4(endpoint, e);
 }
 
-// public FailedToConnectToEndPoint(Uno.Net.IPEndPoint endpoint, Uno.Exception e) [instance] :15
+// public FailedToConnectToEndPoint(Uno.Net.IPEndPoint endpoint, Uno.Exception e) [instance] :1654
 void FailedToConnectToEndPoint::ctor_3(::g::Uno::Net::IPEndPoint* endpoint, ::g::Uno::Exception* e)
 {
-    ctor_1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uPtr(endpoint)->ToString(), ::STRINGS[44/*": "*/]), uPtr(e)->Message()));
+    ctor_1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uPtr(endpoint)->ToString(), ::STRINGS[10/*": "*/]), uPtr(e)->Message()));
 }
 
-// public FailedToConnectToEndPoint New(Uno.Net.IPEndPoint endpoint, Uno.Exception e) [static] :15
+// public FailedToConnectToEndPoint New(Uno.Net.IPEndPoint endpoint, Uno.Exception e) [static] :1654
 FailedToConnectToEndPoint* FailedToConnectToEndPoint::New4(::g::Uno::Net::IPEndPoint* endpoint, ::g::Uno::Exception* e)
 {
     FailedToConnectToEndPoint* obj1 = (FailedToConnectToEndPoint*)uNew(FailedToConnectToEndPoint_typeof());
@@ -3962,16 +1937,16 @@ FailedToConnectToEndPoint* FailedToConnectToEndPoint::New4(::g::Uno::Net::IPEndP
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/$.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
+// -----------------------------------------------------------------------
 
-// public sealed class FailedToConnectToProxy :20
+// public sealed class FailedToConnectToProxy :1466
 // {
 static void FailedToConnectToProxy_build(uType* type)
 {
-    ::STRINGS[45] = uString::Const("Failed to connect to proxy:\n"
+    ::STRINGS[11] = uString::Const("Failed to connect to proxy:\n"
         "");
-    ::TYPES[65] = ::g::Outracks::Simulator::List_typeof()->MakeMethod(3/*ToImmutableList<Uno.Exception>*/, ::g::Uno::Exception_typeof(), NULL);
+    ::TYPES[34] = ::g::Outracks::Simulator::List_typeof()->MakeMethod(3/*ToImmutableList<Uno.Exception>*/, ::g::Uno::Exception_typeof(), NULL);
     type->SetFields(3,
         ::g::Outracks::Simulator::ImmutableList_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL), offsetof(::g::Outracks::Simulator::FailedToConnectToProxy, InnerExceptions), 0);
     type->Reflection.SetFields(1,
@@ -3995,26 +1970,26 @@ static void FailedToConnectToProxy_build(uType* type)
     return type;
 }
 
-// public FailedToConnectToProxy(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) :24
+// public FailedToConnectToProxy(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) :1470
 void FailedToConnectToProxy__ctor_3_fn(FailedToConnectToProxy* __this, uObject* innerExceptions)
 {
     __this->ctor_3(innerExceptions);
 }
 
-// public FailedToConnectToProxy New(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) :24
+// public FailedToConnectToProxy New(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) :1470
 void FailedToConnectToProxy__New4_fn(uObject* innerExceptions, FailedToConnectToProxy** __retval)
 {
     *__retval = FailedToConnectToProxy::New4(innerExceptions);
 }
 
-// public FailedToConnectToProxy(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) [instance] :24
+// public FailedToConnectToProxy(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) [instance] :1470
 void FailedToConnectToProxy::ctor_3(uObject* innerExceptions)
 {
-    ctor_1(::g::Uno::String::op_Addition2(::STRINGS[45/*"Failed to c...*/], ::g::Outracks::Simulator::AggregateConnectError::ToIndentedLines(innerExceptions)));
-    InnerExceptions = ((::g::Outracks::Simulator::ImmutableList*)::g::Outracks::Simulator::List::ToImmutableList(::TYPES[65/*Outracks.Simulator.List.ToImmutableList<Uno.Exception>*/], innerExceptions));
+    ctor_1(::g::Uno::String::op_Addition2(::STRINGS[11/*"Failed to c...*/], ::g::Outracks::Simulator::ToIndentedLinesExtension::ToIndentedLines(innerExceptions)));
+    InnerExceptions = ((::g::Outracks::Simulator::ImmutableList*)::g::Outracks::Simulator::List::ToImmutableList(::TYPES[34/*Outracks.Simulator.List.ToImmutableList<Uno.Exception>*/], innerExceptions));
 }
 
-// public FailedToConnectToProxy New(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) [static] :24
+// public FailedToConnectToProxy New(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) [static] :1470
 FailedToConnectToProxy* FailedToConnectToProxy::New4(uObject* innerExceptions)
 {
     FailedToConnectToProxy* obj1 = (FailedToConnectToProxy*)uNew(FailedToConnectToProxy_typeof());
@@ -4026,12 +2001,12 @@ FailedToConnectToProxy* FailedToConnectToProxy::New4(uObject* innerExceptions)
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
 // -----------------------------------------------------------------------
 
-// public sealed class FailedToConnectToSimulator :891
+// public sealed class FailedToConnectToSimulator :1659
 // {
 static void FailedToConnectToSimulator_build(uType* type)
 {
-    ::STRINGS[46] = uString::Const("Failed to connect to simulator host: ");
-    ::TYPES[65] = ::g::Outracks::Simulator::List_typeof()->MakeMethod(3/*ToImmutableList<Uno.Exception>*/, ::g::Uno::Exception_typeof(), NULL);
+    ::STRINGS[12] = uString::Const("Failed to connect to simulator host: ");
+    ::TYPES[34] = ::g::Outracks::Simulator::List_typeof()->MakeMethod(3/*ToImmutableList<Uno.Exception>*/, ::g::Uno::Exception_typeof(), NULL);
     type->SetFields(3,
         ::g::Outracks::Simulator::ImmutableList_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL), offsetof(::g::Outracks::Simulator::FailedToConnectToSimulator, InnerExceptions), 0);
     type->Reflection.SetFields(1,
@@ -4055,26 +2030,26 @@ static void FailedToConnectToSimulator_build(uType* type)
     return type;
 }
 
-// public FailedToConnectToSimulator(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) :895
+// public FailedToConnectToSimulator(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) :1663
 void FailedToConnectToSimulator__ctor_3_fn(FailedToConnectToSimulator* __this, uObject* innerExceptions)
 {
     __this->ctor_3(innerExceptions);
 }
 
-// public FailedToConnectToSimulator New(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) :895
+// public FailedToConnectToSimulator New(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) :1663
 void FailedToConnectToSimulator__New4_fn(uObject* innerExceptions, FailedToConnectToSimulator** __retval)
 {
     *__retval = FailedToConnectToSimulator::New4(innerExceptions);
 }
 
-// public FailedToConnectToSimulator(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) [instance] :895
+// public FailedToConnectToSimulator(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) [instance] :1663
 void FailedToConnectToSimulator::ctor_3(uObject* innerExceptions)
 {
-    ctor_1(::g::Uno::String::op_Addition2(::STRINGS[46/*"Failed to c...*/], ::g::Outracks::Simulator::AggregateConnectError::ToIndentedLines(innerExceptions)));
-    InnerExceptions = ((::g::Outracks::Simulator::ImmutableList*)::g::Outracks::Simulator::List::ToImmutableList(::TYPES[65/*Outracks.Simulator.List.ToImmutableList<Uno.Exception>*/], innerExceptions));
+    ctor_1(::g::Uno::String::op_Addition2(::STRINGS[12/*"Failed to c...*/], ::g::Outracks::Simulator::ToIndentedLinesExtension::ToIndentedLines(innerExceptions)));
+    InnerExceptions = ((::g::Outracks::Simulator::ImmutableList*)::g::Outracks::Simulator::List::ToImmutableList(::TYPES[34/*Outracks.Simulator.List.ToImmutableList<Uno.Exception>*/], innerExceptions));
 }
 
-// public FailedToConnectToSimulator New(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) [static] :895
+// public FailedToConnectToSimulator New(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) [static] :1663
 FailedToConnectToSimulator* FailedToConnectToSimulator::New4(uObject* innerExceptions)
 {
     FailedToConnectToSimulator* obj1 = (FailedToConnectToSimulator*)uNew(FailedToConnectToSimulator_typeof());
@@ -4083,626 +2058,8 @@ FailedToConnectToSimulator* FailedToConnectToSimulator::New4(uObject* innerExcep
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// public sealed class FakeApp :1821
-// {
-static void FakeApp_build(uType* type)
-{
-    ::TYPES[66] = ::g::Outracks::Simulator::ConcurrentQueue_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
-    ::TYPES[11] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
-    ::TYPES[9] = ::g::Uno::Action_typeof();
-    ::TYPES[67] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(4/*FirstOrDefault<Fuse.Node>*/, ::g::Fuse::Node_typeof(), NULL);
-    type->SetInterfaces(
-        ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface0),
-        ::g::Fuse::Scripting::IScriptObject_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface1),
-        ::g::Fuse::IProperties_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface2),
-        ::g::Fuse::INotifyUnrooted_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface3),
-        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface4),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface5),
-        ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface6),
-        ::g::Uno::UX::IPropertyListener_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface7),
-        ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/], offsetof(::g::Fuse::Controls::Control_type, interface8),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface9),
-        ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface10),
-        ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface11),
-        ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface12),
-        ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface13),
-        ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface14));
-    type->SetFields(103,
-        ::g::Fuse::App_typeof(), offsetof(::g::Outracks::Simulator::FakeApp, _app), 0,
-        ::g::Outracks::Simulator::Flasher_typeof(), offsetof(::g::Outracks::Simulator::FakeApp, _currentFlash), 0,
-        ::TYPES[66/*Outracks.Simulator.ConcurrentQueue<string>*/], offsetof(::g::Outracks::Simulator::FakeApp, _flashes), 0,
-        ::g::Fuse::Controls::Panel_typeof(), offsetof(::g::Outracks::Simulator::FakeApp, _overlayPlaceholde), 0,
-        ::g::Fuse::Controls::Panel_typeof(), offsetof(::g::Outracks::Simulator::FakeApp, _rootPlaceholder), 0);
-    type->Reflection.SetFunctions(10,
-        new uFunction("get_Background", NULL, (void*)FakeApp__get_Background1_fn, 0, false, ::g::Uno::Float4_typeof(), 0),
-        new uFunction("set_Background", NULL, (void*)FakeApp__set_Background1_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float4_typeof()),
-        new uFunction("get_Children", NULL, (void*)FakeApp__get_Children1_fn, 0, false, ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), 0),
-        new uFunction("get_ClearColor", NULL, (void*)FakeApp__get_ClearColor_fn, 0, false, ::g::Uno::Float4_typeof(), 0),
-        new uFunction("set_ClearColor", NULL, (void*)FakeApp__set_ClearColor_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float4_typeof()),
-        new uFunction("Flash", NULL, (void*)FakeApp__Flash_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
-        new uFunction(".ctor", NULL, (void*)FakeApp__New4_fn, 0, true, type, 1, ::g::Fuse::App_typeof()),
-        new uFunction("get_Overlay", NULL, (void*)FakeApp__get_Overlay_fn, 0, false, ::g::Fuse::Node_typeof(), 0),
-        new uFunction("set_Overlay", NULL, (void*)FakeApp__set_Overlay_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Node_typeof()),
-        new uFunction("get_Resources", NULL, (void*)FakeApp__get_Resources1_fn, 0, false, ::g::Uno::Collections::IList_typeof()->MakeType(::g::Uno::UX::Resource_typeof(), NULL), 0));
-}
-
-::g::Fuse::Controls::Control_type* FakeApp_typeof()
-{
-    static uSStrong< ::g::Fuse::Controls::Control_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Fuse::Controls::Panel_typeof();
-    options.FieldCount = 108;
-    options.InterfaceCount = 15;
-    options.ObjectSize = sizeof(FakeApp);
-    options.TypeSize = sizeof(::g::Fuse::Controls::Control_type);
-    type = (::g::Fuse::Controls::Control_type*)uClassType::New("Outracks.Simulator.FakeApp", options);
-    type->fp_build_ = FakeApp_build;
-    type->fp_OnDraw = (void(*)(::g::Fuse::Elements::Element*, ::g::Fuse::DrawContext*))FakeApp__OnDraw_fn;
-    type->fp_OnRooted = (void(*)(::g::Fuse::Node*))FakeApp__OnRooted_fn;
-    type->fp_OnUnrooted = (void(*)(::g::Fuse::Node*))FakeApp__OnUnrooted_fn;
-    type->interface10.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
-    type->interface12.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
-    type->interface11.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;
-    type->interface14.fp_SetSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Elements::Element__FuseAnimationsIResizeSetSize_fn;
-    type->interface13.fp_get_ActualSize = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualSize_fn;
-    type->interface13.fp_get_ActualPosition = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualPosition_fn;
-    type->interface13.fp_add_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__add_Placed_fn;
-    type->interface13.fp_remove_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__remove_Placed_fn;
-    type->interface8.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
-    type->interface8.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
-    type->interface6.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsIListFuseNodeRemoveAt_fn;
-    type->interface9.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
-    type->interface8.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
-    type->interface6.fp_get_Item = (void(*)(uObject*, int*, uTRef))::g::Fuse::Visual__UnoCollectionsIListFuseNodeget_Item_fn;
-    type->interface6.fp_Insert = (void(*)(uObject*, int*, void*))::g::Fuse::Visual__Insert1_fn;
-    type->interface7.fp_OnPropertyChanged = (void(*)(uObject*, ::g::Uno::UX::PropertyObject*, ::g::Uno::UX::Selector*))::g::Fuse::Controls::Control__OnPropertyChanged2_fn;
-    type->interface8.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
-    type->interface8.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
-    type->interface4.fp_Clear = (void(*)(uObject*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingClear_fn;
-    type->interface4.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingContains_fn;
-    type->interface0.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Node__UnoCollectionsIListFuseBindingRemoveAt_fn;
-    type->interface5.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Node__UnoCollectionsIEnumerableFuseBindingGetEnumerator_fn;
-    type->interface1.fp_SetScriptObject = (void(*)(uObject*, uObject*, ::g::Fuse::Scripting::Context*))::g::Fuse::Node__FuseScriptingIScriptObjectSetScriptObject_fn;
-    type->interface4.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingget_Count_fn;
-    type->interface0.fp_get_Item = (void(*)(uObject*, int*, uTRef))::g::Fuse::Node__UnoCollectionsIListFuseBindingget_Item_fn;
-    type->interface1.fp_get_ScriptObject = (void(*)(uObject*, uObject**))::g::Fuse::Node__FuseScriptingIScriptObjectget_ScriptObject_fn;
-    type->interface1.fp_get_ScriptContext = (void(*)(uObject*, ::g::Fuse::Scripting::Context**))::g::Fuse::Node__FuseScriptingIScriptObjectget_ScriptContext_fn;
-    type->interface3.fp_add_Unrooted = (void(*)(uObject*, uDelegate*))::g::Fuse::Node__FuseINotifyUnrootedadd_Unrooted_fn;
-    type->interface3.fp_remove_Unrooted = (void(*)(uObject*, uDelegate*))::g::Fuse::Node__FuseINotifyUnrootedremove_Unrooted_fn;
-    type->interface0.fp_Insert = (void(*)(uObject*, int*, void*))::g::Fuse::Node__Insert_fn;
-    type->interface2.fp_get_Properties = (void(*)(uObject*, ::g::Fuse::Properties**))::g::Fuse::Node__get_Properties_fn;
-    type->interface4.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Node__Add_fn;
-    type->interface4.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Node__Remove_fn;
-    return type;
-}
-
-// public FakeApp(Fuse.App app) :1841
-void FakeApp__ctor_7_fn(FakeApp* __this, ::g::Fuse::App* app)
-{
-    __this->ctor_7(app);
-}
-
-// private void AddNewFlashes() :1894
-void FakeApp__AddNewFlashes_fn(FakeApp* __this)
-{
-    __this->AddNewFlashes();
-}
-
-// public new float4 get_Background() :1908
-void FakeApp__get_Background1_fn(FakeApp* __this, ::g::Uno::Float4* __retval)
-{
-    *__retval = __this->Background1();
-}
-
-// public new void set_Background(float4 value) :1909
-void FakeApp__set_Background1_fn(FakeApp* __this, ::g::Uno::Float4* value)
-{
-    __this->Background1(*value);
-}
-
-// public new Uno.Collections.IList<Fuse.Node> get_Children() :1914
-void FakeApp__get_Children1_fn(FakeApp* __this, uObject** __retval)
-{
-    *__retval = __this->Children1();
-}
-
-// public float4 get_ClearColor() :1942
-void FakeApp__get_ClearColor_fn(FakeApp* __this, ::g::Uno::Float4* __retval)
-{
-    *__retval = __this->ClearColor();
-}
-
-// public void set_ClearColor(float4 value) :1943
-void FakeApp__set_ClearColor_fn(FakeApp* __this, ::g::Uno::Float4* value)
-{
-    __this->ClearColor(*value);
-}
-
-// public void Flash(string message) :1868
-void FakeApp__Flash_fn(FakeApp* __this, uString* message)
-{
-    __this->Flash(message);
-}
-
-// private bool get_HasFlash() :1882
-void FakeApp__get_HasFlash_fn(FakeApp* __this, bool* __retval)
-{
-    *__retval = __this->HasFlash();
-}
-
-// public FakeApp New(Fuse.App app) :1841
-void FakeApp__New4_fn(::g::Fuse::App* app, FakeApp** __retval)
-{
-    *__retval = FakeApp::New4(app);
-}
-
-// protected override sealed void OnDraw(Fuse.DrawContext dc) :1946
-void FakeApp__OnDraw_fn(FakeApp* __this, ::g::Fuse::DrawContext* dc)
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "OnDraw(Fuse.DrawContext)");
-    ::g::Fuse::Controls::Control__OnDraw_fn(__this, dc);
-}
-
-// protected override sealed void OnRooted() :1849
-void FakeApp__OnRooted_fn(FakeApp* __this)
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "OnRooted()");
-    ::g::Fuse::Controls::Panel__OnRooted_fn(__this);
-    ::g::Fuse::UpdateManager::AddAction1(uDelegate::New(::TYPES[9/*Uno.Action*/], (void*)FakeApp__OnUpdate_fn, __this), 0);
-}
-
-// protected override sealed void OnUnrooted() :1855
-void FakeApp__OnUnrooted_fn(FakeApp* __this)
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "OnUnrooted()");
-    ::g::Fuse::UpdateManager::RemoveAction1(uDelegate::New(::TYPES[9/*Uno.Action*/], (void*)FakeApp__OnUpdate_fn, __this), 0);
-    ::g::Fuse::Controls::Panel__OnUnrooted_fn(__this);
-}
-
-// private void OnUpdate() :1861
-void FakeApp__OnUpdate_fn(FakeApp* __this)
-{
-    __this->OnUpdate();
-}
-
-// public Fuse.Node get_Overlay() :1926
-void FakeApp__get_Overlay_fn(FakeApp* __this, ::g::Fuse::Node** __retval)
-{
-    *__retval = __this->Overlay();
-}
-
-// public void set_Overlay(Fuse.Node value) :1927
-void FakeApp__set_Overlay_fn(FakeApp* __this, ::g::Fuse::Node* value)
-{
-    __this->Overlay(value);
-}
-
-// private bool get_OverlayVisible() :1833
-void FakeApp__get_OverlayVisible_fn(FakeApp* __this, bool* __retval)
-{
-    *__retval = __this->OverlayVisible();
-}
-
-// private void set_OverlayVisible(bool value) :1834
-void FakeApp__set_OverlayVisible_fn(FakeApp* __this, bool* value)
-{
-    __this->OverlayVisible(*value);
-}
-
-// private void RemoveExpiredFlashes() :1885
-void FakeApp__RemoveExpiredFlashes_fn(FakeApp* __this)
-{
-    __this->RemoveExpiredFlashes();
-}
-
-// public new Uno.Collections.IList<Uno.UX.Resource> get_Resources() :1921
-void FakeApp__get_Resources1_fn(FakeApp* __this, uObject** __retval)
-{
-    *__retval = __this->Resources1();
-}
-
-// private void UpdateFlashes() :1873
-void FakeApp__UpdateFlashes_fn(FakeApp* __this)
-{
-    __this->UpdateFlashes();
-}
-
-// public FakeApp(Fuse.App app) [instance] :1841
-void FakeApp::ctor_7(::g::Fuse::App* app)
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", ".ctor(Fuse.App)");
-    _rootPlaceholder = ::g::Fuse::Controls::Panel::New3();
-    _overlayPlaceholde = ::g::Fuse::Controls::Panel::New3();
-    _flashes = ((::g::Outracks::Simulator::ConcurrentQueue*)::g::Outracks::Simulator::ConcurrentQueue::New1(::TYPES[66/*Outracks.Simulator.ConcurrentQueue<string>*/]));
-    ctor_6();
-    _app = app;
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children1()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), _overlayPlaceholde);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children1()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), _rootPlaceholder);
-    OverlayVisible(false);
-}
-
-// private void AddNewFlashes() [instance] :1894
-void FakeApp::AddNewFlashes()
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "AddNewFlashes()");
-    bool ret2;
-    uString* flashText;
-
-    if ((::g::Outracks::Simulator::ConcurrentQueue__TryDequeue_fn(uPtr(_flashes), (void**)(&flashText), &ret2), ret2))
-        Overlay(_currentFlash = ::g::Outracks::Simulator::Flasher::New4(flashText));
-}
-
-// public new float4 get_Background() [instance] :1908
-::g::Uno::Float4 FakeApp::Background1()
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "get_Background()");
-    return uPtr(_app)->Background();
-}
-
-// public new void set_Background(float4 value) [instance] :1909
-void FakeApp::Background1(::g::Uno::Float4 value)
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "set_Background(float4)");
-    uPtr(_app)->Background(value);
-}
-
-// public new Uno.Collections.IList<Fuse.Node> get_Children() [instance] :1914
-uObject* FakeApp::Children1()
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "get_Children()");
-    return uPtr(_app)->Children();
-}
-
-// public float4 get_ClearColor() [instance] :1942
-::g::Uno::Float4 FakeApp::ClearColor()
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "get_ClearColor()");
-    return uPtr(_app)->Background();
-}
-
-// public void set_ClearColor(float4 value) [instance] :1943
-void FakeApp::ClearColor(::g::Uno::Float4 value)
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "set_ClearColor(float4)");
-    uPtr(_app)->Background(value);
-}
-
-// public void Flash(string message) [instance] :1868
-void FakeApp::Flash(uString* message)
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "Flash(string)");
-    ::g::Outracks::Simulator::ConcurrentQueue__Enqueue_fn(uPtr(_flashes), message);
-}
-
-// private bool get_HasFlash() [instance] :1882
-bool FakeApp::HasFlash()
-{
-    return _currentFlash != NULL;
-}
-
-// private void OnUpdate() [instance] :1861
-void FakeApp::OnUpdate()
-{
-    UpdateFlashes();
-}
-
-// public Fuse.Node get_Overlay() [instance] :1926
-::g::Fuse::Node* FakeApp::Overlay()
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "get_Overlay()");
-    ::g::Fuse::Node* ret3;
-    return (::g::Uno::Collections::EnumerableExtensions__FirstOrDefault_fn(::TYPES[67/*Uno.Collections.EnumerableExtensions.FirstOrDefault<Fuse.Node>*/], uPtr(_overlayPlaceholde)->Children(), &ret3), ret3);
-}
-
-// public void set_Overlay(Fuse.Node value) [instance] :1927
-void FakeApp::Overlay(::g::Fuse::Node* value)
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "set_Overlay(Fuse.Node)");
-    ::g::Uno::Collections::ICollection::Clear(uInterface(uPtr(uPtr(_overlayPlaceholde)->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]));
-    OverlayVisible(false);
-
-    if (value != NULL)
-    {
-        ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(_overlayPlaceholde)->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), value);
-        OverlayVisible(true);
-    }
-}
-
-// private bool get_OverlayVisible() [instance] :1833
-bool FakeApp::OverlayVisible()
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "get_OverlayVisible()");
-    return uPtr(_overlayPlaceholde)->Visibility() == 0;
-}
-
-// private void set_OverlayVisible(bool value) [instance] :1834
-void FakeApp::OverlayVisible(bool value)
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "set_OverlayVisible(bool)");
-
-    if (value)
-        uPtr(_overlayPlaceholde)->Visibility(0);
-    else
-        uPtr(_overlayPlaceholde)->Visibility(2);
-}
-
-// private void RemoveExpiredFlashes() [instance] :1885
-void FakeApp::RemoveExpiredFlashes()
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "RemoveExpiredFlashes()");
-
-    if ((_currentFlash != NULL) && uPtr(_currentFlash)->IsExpired())
-    {
-        Overlay(NULL);
-        _currentFlash = NULL;
-    }
-}
-
-// public new Uno.Collections.IList<Uno.UX.Resource> get_Resources() [instance] :1921
-uObject* FakeApp::Resources1()
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "get_Resources()");
-    return uPtr(_app)->Resources();
-}
-
-// private void UpdateFlashes() [instance] :1873
-void FakeApp::UpdateFlashes()
-{
-    uStackFrame __("Outracks.Simulator.FakeApp", "UpdateFlashes()");
-    RemoveExpiredFlashes();
-
-    if (!HasFlash())
-        AddNewFlashes();
-}
-
-// public FakeApp New(Fuse.App app) [static] :1841
-FakeApp* FakeApp::New4(::g::Fuse::App* app)
-{
-    FakeApp* obj1 = (FakeApp*)uNew(FakeApp_typeof());
-    obj1->ctor_7(app);
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal sealed class Faulted :656
-// {
-static void Faulted_build(uType* type)
-{
-    ::STRINGS[47] = uString::Const("Oops! Something went wrong here.");
-    ::STRINGS[48] = uString::Const("\n"
-        "\n"
-        "Please see the Fuse Monitor (Cmd/Ctrl+M) for details.");
-    ::STRINGS[0] = uString::Const("");
-    type->SetFields(5);
-}
-
-::g::Outracks::Simulator::State_type* Faulted_typeof()
-{
-    static uSStrong< ::g::Outracks::Simulator::State_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Outracks::Simulator::ShowingModalDialog_typeof();
-    options.FieldCount = 5;
-    options.ObjectSize = sizeof(Faulted);
-    options.TypeSize = sizeof(::g::Outracks::Simulator::State_type);
-    type = (::g::Outracks::Simulator::State_type*)uClassType::New("Outracks.Simulator.Faulted", options);
-    type->fp_build_ = Faulted_build;
-    return type;
-}
-
-// public Faulted(bool isOnline, Uno.Exception exception, Outracks.Simulator.DialogButton[] buttons) :658
-void Faulted__ctor_2_fn(Faulted* __this, bool* isOnline, ::g::Uno::Exception* exception, uArray* buttons)
-{
-    __this->ctor_2(*isOnline, exception, buttons);
-}
-
-// public Faulted New(bool isOnline, Uno.Exception exception, Outracks.Simulator.DialogButton[] buttons) :658
-void Faulted__New2_fn(bool* isOnline, ::g::Uno::Exception* exception, uArray* buttons, Faulted** __retval)
-{
-    *__retval = Faulted::New2(*isOnline, exception, buttons);
-}
-
-// public Faulted(bool isOnline, Uno.Exception exception, Outracks.Simulator.DialogButton[] buttons) [instance] :658
-void Faulted::ctor_2(bool isOnline, ::g::Uno::Exception* exception, uArray* buttons)
-{
-    uStackFrame __("Outracks.Simulator.Faulted", ".ctor(bool,Uno.Exception,Outracks.Simulator.DialogButton[])");
-    ctor_1(::STRINGS[47/*"Oops! Somet...*/], ::g::Uno::String::op_Addition2(uPtr(exception)->Message(), isOnline ? ::STRINGS[48/*"\n\nPlease ...*/] : ::STRINGS[0/*""*/]), ::STRINGS[0/*""*/], buttons);
-}
-
-// public Faulted New(bool isOnline, Uno.Exception exception, Outracks.Simulator.DialogButton[] buttons) [static] :658
-Faulted* Faulted::New2(bool isOnline, ::g::Uno::Exception* exception, uArray* buttons)
-{
-    Faulted* obj1 = (Faulted*)uNew(Faulted_typeof());
-    obj1->ctor_2(isOnline, exception, buttons);
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal sealed class Flasher :1975
-// {
-static void Flasher_build(uType* type)
-{
-    ::STRINGS[49] = uString::Const("#222");
-    ::TYPES[68] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Drawing::GradientStop_typeof(), NULL);
-    ::TYPES[11] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
-    ::TYPES[9] = ::g::Uno::Action_typeof();
-    type->SetInterfaces(
-        ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface0),
-        ::g::Fuse::Scripting::IScriptObject_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface1),
-        ::g::Fuse::IProperties_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface2),
-        ::g::Fuse::INotifyUnrooted_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface3),
-        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface4),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface5),
-        ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface6),
-        ::g::Uno::UX::IPropertyListener_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface7),
-        ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/], offsetof(::g::Fuse::Controls::Control_type, interface8),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Control_type, interface9),
-        ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface10),
-        ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface11),
-        ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface12),
-        ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface13),
-        ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::Control_type, interface14));
-    type->SetFields(103,
-        ::g::Uno::Double_typeof(), offsetof(::g::Outracks::Simulator::Flasher, _lastRooted), 0);
-}
-
-::g::Fuse::Controls::Control_type* Flasher_typeof()
-{
-    static uSStrong< ::g::Fuse::Controls::Control_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Fuse::Controls::Panel_typeof();
-    options.FieldCount = 104;
-    options.InterfaceCount = 15;
-    options.ObjectSize = sizeof(Flasher);
-    options.TypeSize = sizeof(::g::Fuse::Controls::Control_type);
-    type = (::g::Fuse::Controls::Control_type*)uClassType::New("Outracks.Simulator.Flasher", options);
-    type->fp_build_ = Flasher_build;
-    type->fp_OnRooted = (void(*)(::g::Fuse::Node*))Flasher__OnRooted_fn;
-    type->fp_OnUnrooted = (void(*)(::g::Fuse::Node*))Flasher__OnUnrooted_fn;
-    type->interface10.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
-    type->interface12.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
-    type->interface11.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;
-    type->interface14.fp_SetSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Elements::Element__FuseAnimationsIResizeSetSize_fn;
-    type->interface13.fp_get_ActualSize = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualSize_fn;
-    type->interface13.fp_get_ActualPosition = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualPosition_fn;
-    type->interface13.fp_add_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__add_Placed_fn;
-    type->interface13.fp_remove_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__remove_Placed_fn;
-    type->interface8.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
-    type->interface8.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
-    type->interface6.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsIListFuseNodeRemoveAt_fn;
-    type->interface9.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
-    type->interface8.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
-    type->interface6.fp_get_Item = (void(*)(uObject*, int*, uTRef))::g::Fuse::Visual__UnoCollectionsIListFuseNodeget_Item_fn;
-    type->interface6.fp_Insert = (void(*)(uObject*, int*, void*))::g::Fuse::Visual__Insert1_fn;
-    type->interface7.fp_OnPropertyChanged = (void(*)(uObject*, ::g::Uno::UX::PropertyObject*, ::g::Uno::UX::Selector*))::g::Fuse::Controls::Control__OnPropertyChanged2_fn;
-    type->interface8.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
-    type->interface8.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
-    type->interface4.fp_Clear = (void(*)(uObject*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingClear_fn;
-    type->interface4.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingContains_fn;
-    type->interface0.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Node__UnoCollectionsIListFuseBindingRemoveAt_fn;
-    type->interface5.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Node__UnoCollectionsIEnumerableFuseBindingGetEnumerator_fn;
-    type->interface1.fp_SetScriptObject = (void(*)(uObject*, uObject*, ::g::Fuse::Scripting::Context*))::g::Fuse::Node__FuseScriptingIScriptObjectSetScriptObject_fn;
-    type->interface4.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingget_Count_fn;
-    type->interface0.fp_get_Item = (void(*)(uObject*, int*, uTRef))::g::Fuse::Node__UnoCollectionsIListFuseBindingget_Item_fn;
-    type->interface1.fp_get_ScriptObject = (void(*)(uObject*, uObject**))::g::Fuse::Node__FuseScriptingIScriptObjectget_ScriptObject_fn;
-    type->interface1.fp_get_ScriptContext = (void(*)(uObject*, ::g::Fuse::Scripting::Context**))::g::Fuse::Node__FuseScriptingIScriptObjectget_ScriptContext_fn;
-    type->interface3.fp_add_Unrooted = (void(*)(uObject*, uDelegate*))::g::Fuse::Node__FuseINotifyUnrootedadd_Unrooted_fn;
-    type->interface3.fp_remove_Unrooted = (void(*)(uObject*, uDelegate*))::g::Fuse::Node__FuseINotifyUnrootedremove_Unrooted_fn;
-    type->interface0.fp_Insert = (void(*)(uObject*, int*, void*))::g::Fuse::Node__Insert_fn;
-    type->interface2.fp_get_Properties = (void(*)(uObject*, ::g::Fuse::Properties**))::g::Fuse::Node__get_Properties_fn;
-    type->interface4.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Node__Add_fn;
-    type->interface4.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Node__Remove_fn;
-    return type;
-}
-
-// public Flasher(string text) :1979
-void Flasher__ctor_7_fn(Flasher* __this, uString* text)
-{
-    __this->ctor_7(text);
-}
-
-// private double get_AnimationParameter() :2023
-void Flasher__get_AnimationParameter_fn(Flasher* __this, double* __retval)
-{
-    *__retval = __this->AnimationParameter();
-}
-
-// public bool IsExpired() :2016
-void Flasher__IsExpired_fn(Flasher* __this, bool* __retval)
-{
-    *__retval = __this->IsExpired();
-}
-
-// public Flasher New(string text) :1979
-void Flasher__New4_fn(uString* text, Flasher** __retval)
-{
-    *__retval = Flasher::New4(text);
-}
-
-// protected override sealed void OnRooted() :1998
-void Flasher__OnRooted_fn(Flasher* __this)
-{
-    uStackFrame __("Outracks.Simulator.Flasher", "OnRooted()");
-    __this->_lastRooted = ::g::Fuse::Time::FrameTime();
-    ::g::Fuse::UpdateManager::AddAction1(uDelegate::New(::TYPES[9/*Uno.Action*/], (void*)Flasher__OnUpdate_fn, __this), 0);
-    uPtr(__this->Background())->Pin();
-}
-
-// protected override sealed void OnUnrooted() :2005
-void Flasher__OnUnrooted_fn(Flasher* __this)
-{
-    uStackFrame __("Outracks.Simulator.Flasher", "OnUnrooted()");
-    ::g::Fuse::UpdateManager::RemoveAction1(uDelegate::New(::TYPES[9/*Uno.Action*/], (void*)Flasher__OnUpdate_fn, __this), 0);
-    uPtr(__this->Background())->Unpin();
-}
-
-// private void OnUpdate() :2011
-void Flasher__OnUpdate_fn(Flasher* __this)
-{
-    __this->OnUpdate();
-}
-
-// public Flasher(string text) [instance] :1979
-void Flasher::ctor_7(uString* text)
-{
-    uStackFrame __("Outracks.Simulator.Flasher", ".ctor(string)");
-    ::g::Uno::Float4 ind2;
-    ::g::Uno::Float4 ind3;
-    ::g::Fuse::Controls::Text* collection1;
-    ::g::Fuse::Font* ind4;
-    ::g::Uno::Float4 ind5;
-    ctor_6();
-    ::g::Fuse::Drawing::LinearGradient* linearGradient = ::g::Fuse::Drawing::LinearGradient::New2();
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(linearGradient->Stops()), ::TYPES[68/*Uno.Collections.ICollection<Fuse.Drawing.GradientStop>*/]), ::g::Fuse::Drawing::GradientStop::New3(::g::Uno::Float4__New8((ind2 = ::g::Uno::Color::FromHex(::STRINGS[49/*"#222"*/]), ::g::Uno::Float3__New2(ind2.X, ind2.Y, ind2.Z)), 0.9f), 0.0f));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(linearGradient->Stops()), ::TYPES[68/*Uno.Collections.ICollection<Fuse.Drawing.GradientStop>*/]), ::g::Fuse::Drawing::GradientStop::New3(::g::Uno::Float4__New8((ind3 = ::g::Uno::Color::FromHex(::STRINGS[49/*"#222"*/]), ::g::Uno::Float3__New2(ind3.X, ind3.Y, ind3.Z)), 0.9f), 1.0f));
-    Background(linearGradient);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), (collection1 = ::g::Fuse::Controls::Text::New3(), ind4 = ::g::Fuse::Font::PlatformDefault(), uPtr(collection1)->Font(ind4), ind4, uPtr(collection1)->FontSize(25.0f), 25.0f, uPtr(collection1)->Value(text), text, ind5 = ::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f), uPtr(collection1)->TextColor(ind5), ind5, uPtr(collection1)->Alignment(10), 10, collection1));
-}
-
-// private double get_AnimationParameter() [instance] :2023
-double Flasher::AnimationParameter()
-{
-    return (::g::Fuse::Time::FrameTime() - _lastRooted) / 0.3;
-}
-
-// public bool IsExpired() [instance] :2016
-bool Flasher::IsExpired()
-{
-    return AnimationParameter() >= 1.1;
-}
-
-// private void OnUpdate() [instance] :2011
-void Flasher::OnUpdate()
-{
-    uStackFrame __("Outracks.Simulator.Flasher", "OnUpdate()");
-    Opacity(::g::Uno::Math::Saturate1((1.0f - (float)AnimationParameter()) * 3.0f));
-}
-
-// public Flasher New(string text) [static] :1979
-Flasher* Flasher::New4(uString* text)
-{
-    Flasher* obj6 = (Flasher*)uNew(Flasher_typeof());
-    obj6->ctor_7(text);
-    return obj6;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
 // internal sealed class Forget<TArg, TResult> :49
 // {
@@ -4748,10 +2105,10 @@ void Forget__New1_fn(uType* __type, void* result, Forget** __retval)
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// internal sealed class Forget<TArg1, TArg2, TResult> :93
+// internal sealed class Forget<TArg1, TArg2, TResult> :94
 // {
 static void Forget1_build(uType* type)
 {
@@ -4774,19 +2131,19 @@ uType* Forget1_typeof()
     return type;
 }
 
-// public Forget(TResult result) :96
+// public Forget(TResult result) :97
 void Forget1__ctor__fn(Forget1* __this, void* result)
 {
     __this->_result() = result;
 }
 
-// public TResult Execute(TArg1 arg1, TArg2 arg2) :101
+// public TResult Execute(TArg1 arg1, TArg2 arg2) :102
 void Forget1__Execute_fn(Forget1* __this, void* arg1, void* arg2, uTRef __retval)
 {
     return __retval.Store(__this->_result()), void();
 }
 
-// public Forget New(TResult result) :96
+// public Forget New(TResult result) :97
 void Forget1__New1_fn(uType* __type, void* result, Forget1** __retval)
 {
     Forget1* obj1 = (Forget1*)uNew(__type);
@@ -4795,8 +2152,8 @@ void Forget1__New1_fn(uType* __type, void* result, Forget1** __retval)
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
 // public sealed class ForgetAction<TArg1> :63
 // {
@@ -4858,10 +2215,10 @@ ForgetAction* ForgetAction::New1(uType* __type, uDelegate* action)
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// public sealed class ForgetAction<TArg1, TArg2> :78
+// public sealed class ForgetAction<TArg1, TArg2> :79
 // {
 static void ForgetAction1_build(uType* type)
 {
@@ -4887,32 +2244,32 @@ uType* ForgetAction1_typeof()
     return type;
 }
 
-// public ForgetAction(Uno.Action action) :82
+// public ForgetAction(Uno.Action action) :83
 void ForgetAction1__ctor__fn(ForgetAction1* __this, uDelegate* action)
 {
     __this->ctor_(action);
 }
 
-// public void Execute(TArg1 arg1, TArg2 arg2) :87
+// public void Execute(TArg1 arg1, TArg2 arg2) :88
 void ForgetAction1__Execute_fn(ForgetAction1* __this, void* arg1, void* arg2)
 {
     uStackFrame __("Outracks.Simulator.ForgetAction`2", "Execute(TArg1,TArg2)");
     uPtr(__this->_action)->InvokeVoid();
 }
 
-// public ForgetAction New(Uno.Action action) :82
+// public ForgetAction New(Uno.Action action) :83
 void ForgetAction1__New1_fn(uType* __type, uDelegate* action, ForgetAction1** __retval)
 {
     *__retval = ForgetAction1::New1(__type, action);
 }
 
-// public ForgetAction(Uno.Action action) [instance] :82
+// public ForgetAction(Uno.Action action) [instance] :83
 void ForgetAction1::ctor_(uDelegate* action)
 {
     _action = action;
 }
 
-// public ForgetAction New(Uno.Action action) [static] :82
+// public ForgetAction New(Uno.Action action) [static] :83
 ForgetAction1* ForgetAction1::New1(uType* __type, uDelegate* action)
 {
     ForgetAction1* obj1 = (ForgetAction1*)uNew(__type);
@@ -4921,18 +2278,20 @@ ForgetAction1* ForgetAction1::New1(uType* __type, uDelegate* action)
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/$.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
+// -----------------------------------------------------------------------
 
-// internal sealed class GetSimulatorEndpoint :62
+// internal sealed class GetSimulatorEndpoint :1509
 // {
 static void GetSimulatorEndpoint_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("");
-    ::STRINGS[50] = uString::Const("Call Tom Curise");
-    ::TYPES[12] = ::g::Uno::Exception_typeof();
-    ::TYPES[23] = ::g::Uno::Net::IPEndPoint_typeof()->Array();
-    ::TYPES[20] = ::g::Uno::IDisposable_typeof();
+    ::STRINGS[13] = uString::Const("");
+    ::STRINGS[14] = uString::Const("DESIGNER_NOT_RUNNING");
+    ::STRINGS[15] = uString::Const("Call Tom Curise");
+    ::TYPES[35] = ::g::Outracks::Simulator::DesignerNotRunning_typeof();
+    ::TYPES[21] = ::g::Uno::Exception_typeof();
+    ::TYPES[36] = ::g::Uno::Net::IPEndPoint_typeof()->Array();
+    ::TYPES[37] = ::g::Uno::IDisposable_typeof();
     type->SetFields(0,
         ::g::Uno::String_typeof()->Array(), offsetof(::g::Outracks::Simulator::GetSimulatorEndpoint, defines), 0,
         ::g::Uno::String_typeof(), offsetof(::g::Outracks::Simulator::GetSimulatorEndpoint, project), 0,
@@ -4953,25 +2312,25 @@ uType* GetSimulatorEndpoint_typeof()
     return type;
 }
 
-// public GetSimulatorEndpoint(Uno.Net.IPEndPoint proxy, string project, string[] defines) :69
+// public GetSimulatorEndpoint(Uno.Net.IPEndPoint proxy, string project, string[] defines) :1516
 void GetSimulatorEndpoint__ctor__fn(GetSimulatorEndpoint* __this, ::g::Uno::Net::IPEndPoint* proxy1, uString* project1, uArray* defines1)
 {
     __this->ctor_(proxy1, project1, defines1);
 }
 
-// public Uno.Net.IPEndPoint[] Execute() :76
+// public Uno.Net.IPEndPoint[] Execute() :1523
 void GetSimulatorEndpoint__Execute_fn(GetSimulatorEndpoint* __this, uArray** __retval)
 {
     *__retval = __this->Execute();
 }
 
-// public GetSimulatorEndpoint New(Uno.Net.IPEndPoint proxy, string project, string[] defines) :69
+// public GetSimulatorEndpoint New(Uno.Net.IPEndPoint proxy, string project, string[] defines) :1516
 void GetSimulatorEndpoint__New1_fn(::g::Uno::Net::IPEndPoint* proxy1, uString* project1, uArray* defines1, GetSimulatorEndpoint** __retval)
 {
     *__retval = GetSimulatorEndpoint::New1(proxy1, project1, defines1);
 }
 
-// public GetSimulatorEndpoint(Uno.Net.IPEndPoint proxy, string project, string[] defines) [instance] :69
+// public GetSimulatorEndpoint(Uno.Net.IPEndPoint proxy, string project, string[] defines) [instance] :1516
 void GetSimulatorEndpoint::ctor_(::g::Uno::Net::IPEndPoint* proxy1, uString* project1, uArray* defines1)
 {
     proxy = proxy1;
@@ -4979,7 +2338,7 @@ void GetSimulatorEndpoint::ctor_(::g::Uno::Net::IPEndPoint* proxy1, uString* pro
     defines = defines1;
 }
 
-// public Uno.Net.IPEndPoint[] Execute() [instance] :76
+// public Uno.Net.IPEndPoint[] Execute() [instance] :1523
 uArray* GetSimulatorEndpoint::Execute()
 {
     uStackFrame __("Outracks.Simulator.GetSimulatorEndpoint", "Execute()");
@@ -4993,7 +2352,7 @@ uArray* GetSimulatorEndpoint::Execute()
         {
             const auto __finally_fun = [&]()
             {
-                ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)stream), ::TYPES[20/*Uno.IDisposable*/]));
+                ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)stream), ::TYPES[37/*Uno.IDisposable*/]));
             };
 
             const uFinally<decltype(__finally_fun)> __f(__finally_fun);
@@ -5002,7 +2361,7 @@ uArray* GetSimulatorEndpoint::Execute()
             {
                 const auto __finally_fun = [&]()
                 {
-                    ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)writer), ::TYPES[20/*Uno.IDisposable*/]));
+                    ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)writer), ::TYPES[37/*Uno.IDisposable*/]));
                 };
 
                 const uFinally<decltype(__finally_fun)> __f(__finally_fun);
@@ -5011,19 +2370,23 @@ uArray* GetSimulatorEndpoint::Execute()
                 {
                     const auto __finally_fun = [&]()
                     {
-                        ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)reader), ::TYPES[20/*Uno.IDisposable*/]));
+                        ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)reader), ::TYPES[37/*Uno.IDisposable*/]));
                     };
 
                     const uFinally<decltype(__finally_fun)> __f(__finally_fun);
                     uPtr(writer)->WriteLine10(project);
-                    writer->WriteLine10(::g::Uno::String::Join(::STRINGS[0/*""*/], defines));
+                    writer->WriteLine10(::g::Uno::String::Join(::STRINGS[13/*""*/], defines));
                     writer->Flush();
-                    uString* endpointCount = uPtr(reader)->ReadLine();
+                    uString* line = uPtr(reader)->ReadLine();
 
-                    if (::g::Uno::String::op_Equality(endpointCount, NULL))
+                    if (::g::Uno::String::op_Equality(line, NULL))
                         U_THROW(::g::Uno::IO::EndOfStreamException::New5());
 
-                    uArray* endpoints = uArray::New(::TYPES[23/*Uno.Net.IPEndPoint[]*/], ::g::Uno::Int::Parse(endpointCount));
+                    if (::g::Uno::String::Equals2(uPtr<uString*>(::STRINGS[14/*"DESIGNER_NO...*/]), line))
+                        U_THROW(::g::Outracks::Simulator::DesignerNotRunning::New4());
+
+                    int endpointCount = ::g::Uno::Int::Parse(line);
+                    uArray* endpoints = uArray::New(::TYPES[36/*Uno.Net.IPEndPoint[]*/], endpointCount);
 
                     for (int i = 0; i < endpoints->Length(); i++)
                     {
@@ -5054,16 +2417,25 @@ uArray* GetSimulatorEndpoint::Execute()
             }
         }
 
-        U_THROW(::g::Uno::Exception::New2(::STRINGS[50/*"Call Tom Cu...*/]));
+        U_THROW(::g::Uno::Exception::New2(::STRINGS[15/*"Call Tom Cu...*/]));
     }
     catch (const uThrowable& __t)
     {
-        ::g::Uno::Exception* e = __t.Exception;
-        U_THROW(::g::Outracks::Simulator::FailedToConnectToEndPoint::New4(proxy, e));
+        if (uIs(__t.Exception, ::TYPES[35/*Outracks.Simulator.DesignerNotRunning*/]))
+        {
+            ::g::Outracks::Simulator::DesignerNotRunning* exception_ = (::g::Outracks::Simulator::DesignerNotRunning*)__t.Exception;
+            throw __t;
+        }
+        else if (uIs(__t.Exception, ::TYPES[21/*Uno.Exception*/]))
+        {
+            ::g::Uno::Exception* e = (::g::Uno::Exception*)__t.Exception;
+            U_THROW(::g::Outracks::Simulator::FailedToConnectToEndPoint::New4(proxy, e));
+        }
+        else throw __t;
     }
 }
 
-// public GetSimulatorEndpoint New(Uno.Net.IPEndPoint proxy, string project, string[] defines) [static] :69
+// public GetSimulatorEndpoint New(Uno.Net.IPEndPoint proxy, string project, string[] defines) [static] :1516
 GetSimulatorEndpoint* GetSimulatorEndpoint::New1(::g::Uno::Net::IPEndPoint* proxy1, uString* project1, uArray* defines1)
 {
     GetSimulatorEndpoint* obj1 = (GetSimulatorEndpoint*)uNew(GetSimulatorEndpoint_typeof());
@@ -5072,190 +2444,83 @@ GetSimulatorEndpoint* GetSimulatorEndpoint::New1(::g::Uno::Net::IPEndPoint* prox
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// internal static class GoOffline :724
+// public static class GuidSerializer :681
 // {
-static void GoOffline_build(uType* type)
+static void GuidSerializer_build(uType* type)
 {
-    ::STRINGS[51] = uString::Const("Go offline");
-    ::TYPES[22] = ::g::Outracks::Simulator::Bytecode::Optional1_typeof()->MakeType(::g::Outracks::Simulator::Protocol::Reify_typeof(), NULL);
-    ::TYPES[69] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(11/*ToArray<Outracks.Simulator.DialogButton>*/, ::g::Outracks::Simulator::DialogButton_typeof(), NULL);
-    ::TYPES[70] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(13/*Union<Outracks.Simulator.DialogButton>*/, ::g::Outracks::Simulator::DialogButton_typeof(), NULL);
-    ::TYPES[71] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(1/*AsEnumerable<Outracks.Simulator.DialogButton>*/, ::g::Outracks::Simulator::DialogButton_typeof(), NULL);
-    ::TYPES[46] = ::g::Outracks::Simulator::DialogButton_typeof()->Array();
-    ::TYPES[72] = ::g::Outracks::Simulator::Protocol::MessageToClient_typeof()->Array();
-    ::TYPES[73] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof()->MakeType(::g::Outracks::Simulator::DialogButton_typeof(), NULL);
+    ::TYPES[38] = ::g::Uno::Guid_typeof();
+    type->Reflection.SetFunctions(2,
+        new uFunction("ReadGuid", NULL, (void*)GuidSerializer__ReadGuid_fn, 0, true, ::TYPES[38/*Uno.Guid*/], 1, ::g::System::IO::BinaryReader_typeof()),
+        new uFunction("WriteGuid", NULL, (void*)GuidSerializer__WriteGuid_fn, 0, true, uVoid_typeof(), 2, ::g::System::IO::BinaryWriter_typeof(), ::TYPES[38/*Uno.Guid*/]));
 }
 
-uClassType* GoOffline_typeof()
+uClassType* GuidSerializer_typeof()
 {
     static uSStrong<uClassType*> type;
     if (type != NULL) return type;
 
     uTypeOptions options;
     options.TypeSize = sizeof(uClassType);
-    type = uClassType::New("Outracks.Simulator.GoOffline", options);
-    type->fp_build_ = GoOffline_build;
+    type = uClassType::New("Outracks.Simulator.GuidSerializer", options);
+    type->fp_build_ = GuidSerializer_build;
     return type;
 }
 
-// public static Outracks.Simulator.DialogButton[] PrependOption(Outracks.Simulator.DialogButton[] otherButtons) :726
-void GoOffline__PrependOption_fn(uArray* otherButtons, uArray** __retval)
+// public static Uno.Guid ReadGuid(System.IO.BinaryReader reader) :690
+void GuidSerializer__ReadGuid_fn(::g::System::IO::BinaryReader* reader, ::g::Uno::Guid* __retval)
 {
-    *__retval = GoOffline::PrependOption(otherButtons);
+    *__retval = GuidSerializer::ReadGuid(reader);
 }
 
-// public static Outracks.Simulator.DialogButton[] PrependOption(Outracks.Simulator.DialogButton[] otherButtons) [static] :726
-uArray* GoOffline::PrependOption(uArray* otherButtons)
+// public static void WriteGuid(System.IO.BinaryWriter writer, Uno.Guid guid) :685
+void GuidSerializer__WriteGuid_fn(::g::System::IO::BinaryWriter* writer, ::g::Uno::Guid* guid)
 {
-    uStackFrame __("Outracks.Simulator.GoOffline", "PrependOption(Outracks.Simulator.DialogButton[])");
-    ::g::Outracks::Simulator::Bytecode::Optional1<uStrong< ::g::Outracks::Simulator::Protocol::Reify*> > oldReify = ::g::Outracks::Simulator::BytecodeCache::TryLoad();
-    return oldReify.HasValue(::TYPES[22/*Outracks.Simulator.Bytecode.Optional<Outracks.Simulator.Protocol.Reify>*/]) ? (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[69/*Uno.Collections.EnumerableExtensions.ToArray<Outracks.Simulator.DialogButton>*/], (uObject*)::g::Uno::Collections::EnumerableExtensions::Union(::TYPES[70/*Uno.Collections.EnumerableExtensions.Union<Outracks.Simulator.DialogButton>*/], (uObject*)::g::Uno::Collections::EnumerableExtensions::AsEnumerable(::TYPES[71/*Uno.Collections.EnumerableExtensions.AsEnumerable<Outracks.Simulator.DialogButton>*/], uArray::Init< ::g::Outracks::Simulator::DialogButton*>(::TYPES[46/*Outracks.Simulator.DialogButton[]*/], 1, (::g::Outracks::Simulator::DialogButton*)::g::Outracks::Simulator::DialogButton::New1(::STRINGS[51/*"Go offline"*/], ::g::Outracks::Simulator::Idle::New1((uObject*)::g::Outracks::Simulator::OfflineSimulatorClient::New1(uArray::Init< ::g::Outracks::Simulator::Protocol::MessageToClient*>(::TYPES[72/*Outracks.Simulator.Protocol.MessageToClient[]*/], 1, (::g::Outracks::Simulator::Protocol::Reify*)oldReify.Value(::TYPES[22/*Outracks.Simulator.Bytecode.Optional<Outracks.Simulator.Protocol.Reify>*/]))))))), (uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable::New1(::TYPES[73/*Uno.Runtime.Implementation.Internal.ArrayEnumerable<Outracks.Simulator.DialogButton>*/], otherButtons)))) : otherButtons;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal sealed class Idle :431
-// {
-static void Idle_build(uType* type)
-{
-    ::STRINGS[52] = uString::Const("Loading");
-    ::STRINGS[53] = uString::Const("Starting project...");
-    ::STRINGS[43] = uString::Const("Try again");
-    ::TYPES[74] = ::g::Uno::Diagnostics::LogHandler_typeof();
-    ::TYPES[38] = ::g::Outracks::Simulator::ISimulatorClient_typeof();
-    ::TYPES[13] = ::g::Fuse::DiagnosticHandler_typeof();
-    ::TYPES[46] = ::g::Outracks::Simulator::DialogButton_typeof()->Array();
-    type->SetFields(1);
+    GuidSerializer::WriteGuid(writer, *guid);
 }
 
-::g::Outracks::Simulator::Connected_type* Idle_typeof()
+// public static Uno.Guid ReadGuid(System.IO.BinaryReader reader) [static] :690
+::g::Uno::Guid GuidSerializer::ReadGuid(::g::System::IO::BinaryReader* reader)
 {
-    static uSStrong< ::g::Outracks::Simulator::Connected_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Outracks::Simulator::Connected_typeof();
-    options.FieldCount = 1;
-    options.ObjectSize = sizeof(Idle);
-    options.TypeSize = sizeof(::g::Outracks::Simulator::Connected_type);
-    type = (::g::Outracks::Simulator::Connected_type*)uClassType::New("Outracks.Simulator.Idle", options);
-    type->fp_build_ = Idle_build;
-    type->fp_OnEnterState = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))Idle__OnEnterState_fn;
-    type->fp_OnFaulted = (void(*)(::g::Outracks::Simulator::Connected*, ::g::Uno::Exception*, ::g::Outracks::Simulator::State**))Idle__OnFaulted_fn;
-    return type;
+    uStackFrame __("Outracks.Simulator.GuidSerializer", "ReadGuid(System.IO.BinaryReader)");
+    return ::g::Uno::Guid__New4(uPtr(reader)->ReadString());
 }
 
-// public Idle(Outracks.Simulator.ISimulatorClient client) :433
-void Idle__ctor_2_fn(Idle* __this, uObject* client)
+// public static void WriteGuid(System.IO.BinaryWriter writer, Uno.Guid guid) [static] :685
+void GuidSerializer::WriteGuid(::g::System::IO::BinaryWriter* writer, ::g::Uno::Guid guid)
 {
-    __this->ctor_2(client);
-}
-
-// public Idle New(Outracks.Simulator.ISimulatorClient client) :433
-void Idle__New1_fn(uObject* client, Idle** __retval)
-{
-    *__retval = Idle::New1(client);
-}
-
-// private void OnDiagnosticReported(Fuse.Diagnostic d) :446
-void Idle__OnDiagnosticReported_fn(Idle* __this, ::g::Fuse::Diagnostic* d)
-{
-    __this->OnDiagnosticReported(d);
-}
-
-// public override sealed Outracks.Simulator.State OnEnterState() :437
-void Idle__OnEnterState_fn(Idle* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.Idle", "OnEnterState()");
-    ::g::Uno::Diagnostics::Debug::SetLogHandler(uDelegate::New(::TYPES[74/*Uno.Diagnostics.LogHandler*/], (void*)Idle__SendDebugLog_fn, __this));
-    ::g::Outracks::Simulator::ISimulatorClient::Send(uInterface(uPtr(__this->Client), ::TYPES[38/*Outracks.Simulator.ISimulatorClient*/]), ::g::Outracks::Simulator::Protocol::RegisterName::New1(::g::Outracks::Simulator::DeviceInfo::GUID(), ::g::Outracks::Simulator::DeviceInfo::Name()));
-    ::g::Fuse::Diagnostics::add_DiagnosticReported(uDelegate::New(::TYPES[13/*Fuse.DiagnosticHandler*/], (void*)Idle__OnDiagnosticReported_fn, __this));
-    ::g::Outracks::Simulator::LoadingScreen::Show(::g::Outracks::Simulator::Context::App(), ::STRINGS[52/*"Loading"*/], ::STRINGS[53/*"Starting pr...*/]);
-    return *__retval = __this, void();
-}
-
-// protected override sealed Outracks.Simulator.State OnFaulted(Uno.Exception e) :456
-void Idle__OnFaulted_fn(Idle* __this, ::g::Uno::Exception* e, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.Idle", "OnFaulted(Uno.Exception)");
-    return *__retval = ::g::Outracks::Simulator::Faulted::New2(::g::Outracks::Simulator::ISimulatorClient::IsOnline(uInterface(uPtr(__this->Client), ::TYPES[38/*Outracks.Simulator.ISimulatorClient*/])), e, uArray::Init< ::g::Outracks::Simulator::DialogButton*>(::TYPES[46/*Outracks.Simulator.DialogButton[]*/], 1, (::g::Outracks::Simulator::DialogButton*)::g::Outracks::Simulator::DialogButton::New1(::STRINGS[43/*"Try again"*/], __this))), void();
-}
-
-// private void SendDebugLog(string text, Uno.Diagnostics.DebugMessageType type) :451
-void Idle__SendDebugLog_fn(Idle* __this, uString* text, int* type)
-{
-    __this->SendDebugLog(text, *type);
-}
-
-// public Idle(Outracks.Simulator.ISimulatorClient client) [instance] :433
-void Idle::ctor_2(uObject* client)
-{
-    ctor_1(client);
-}
-
-// private void OnDiagnosticReported(Fuse.Diagnostic d) [instance] :446
-void Idle::OnDiagnosticReported(::g::Fuse::Diagnostic* d)
-{
-    uStackFrame __("Outracks.Simulator.Idle", "OnDiagnosticReported(Fuse.Diagnostic)");
-    SendDebugLog(uPtr(d)->ToString(), 0);
-}
-
-// private void SendDebugLog(string text, Uno.Diagnostics.DebugMessageType type) [instance] :451
-void Idle::SendDebugLog(uString* text, int type)
-{
-    uStackFrame __("Outracks.Simulator.Idle", "SendDebugLog(string,Uno.Diagnostics.DebugMessageType)");
-    ::g::Outracks::Simulator::ISimulatorClient::Send(uInterface(uPtr(Client), ::TYPES[38/*Outracks.Simulator.ISimulatorClient*/]), ::g::Outracks::Simulator::Protocol::DebugLog::New1(::g::Outracks::Simulator::DeviceInfo::GUID(), ::g::Outracks::Simulator::DeviceInfo::Name(), text));
-}
-
-// public Idle New(Outracks.Simulator.ISimulatorClient client) [static] :433
-Idle* Idle::New1(uObject* client)
-{
-    Idle* obj1 = (Idle*)uNew(Idle_typeof());
-    obj1->ctor_2(client);
-    return obj1;
+    uStackFrame __("Outracks.Simulator.GuidSerializer", "WriteGuid(System.IO.BinaryWriter,Uno.Guid)");
+    uPtr(writer)->Write6(guid.ToString(::TYPES[38/*Uno.Guid*/]));
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// internal abstract interface IEquatable<T> :572
-// {
-uInterfaceType* IEquatable_typeof()
-{
-    static uSStrong<uInterfaceType*> type;
-    if (type != NULL) return type;
-
-    type = uInterfaceType::New("Outracks.Simulator.IEquatable`1", 1, 0);
-    return type;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
-
-// public sealed class ImmutableList<T> :166
+// public sealed class ImmutableList<T> :169
 // {
 static void ImmutableList_build(uType* type)
 {
-    ::TYPES[37] = uObject_typeof()->Array();
-    ::TYPES[75] = ::g::Uno::Array_typeof();
-    ::TYPES[76] = ::g::Uno::Collections::IEnumerable_typeof();
-    ::TYPES[77] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof();
-    ::TYPES[78] = ::g::Uno::Collections::EnumerableExtensions_typeof();
+    ::STRINGS[16] = uString::Const("[");
+    ::STRINGS[17] = uString::Const(", ");
+    ::STRINGS[18] = uString::Const("]");
+    ::TYPES[3] = uObject_typeof()->Array();
+    ::TYPES[39] = ::g::Uno::Array_typeof();
+    ::TYPES[40] = ::g::Uno::Collections::IEnumerable_typeof();
+    ::TYPES[41] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof();
+    ::TYPES[42] = ::g::Uno::Collections::EnumerableExtensions_typeof();
+    ::TYPES[43] = ::g::Outracks::Simulator::StringSplitting_typeof();
     type->SetPrecalc(
         type->T(0)->Array(),
         ::g::Uno::Array_typeof()->MakeMethod(1/*Copy<T>*/, type->T(0), NULL),
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(type->T(0), NULL),
         ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof()->MakeType(type->T(0), NULL),
-        ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(11/*ToArray<T>*/, type->T(0), NULL));
+        ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(10/*ToArray<T>*/, type->T(0), NULL),
+        ::g::Outracks::Simulator::StringSplitting_typeof()->MakeMethod(0/*JoinToString<T>*/, type->T(0), NULL));
     type->SetInterfaces(
-        ::TYPES[76/*Uno.Collections.IEnumerable`1*/]->MakeType(type->T(0), NULL), offsetof(ImmutableList_type, interface0));
+        ::TYPES[40/*Uno.Collections.IEnumerable`1*/]->MakeType(type->T(0), NULL), offsetof(ImmutableList_type, interface0));
     type->SetFields(0,
         type->T(0)->Array(), offsetof(::g::Outracks::Simulator::ImmutableList, _array), 0);
     type->Reflection.SetFunctions(8,
@@ -5264,7 +2529,7 @@ static void ImmutableList_build(uType* type)
         new uFunction("get_Empty", type, (void*)ImmutableList__get_Empty_fn, 0, true, type, 0),
         new uFunction("Get", NULL, (void*)ImmutableList__Get_fn, 0, false, type->T(0), 1, ::g::Uno::Int_typeof()),
         new uFunction("GetEnumerator", NULL, (void*)ImmutableList__GetEnumerator_fn, 0, false, ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(type->T(0), NULL), 0),
-        new uFunction("InsertRange", NULL, (void*)ImmutableList__InsertRange_fn, 0, false, type, 2, ::g::Uno::Int_typeof(), ::TYPES[76/*Uno.Collections.IEnumerable`1*/]->MakeType(type->T(0), NULL)),
+        new uFunction("InsertRange", NULL, (void*)ImmutableList__InsertRange_fn, 0, false, type, 2, ::g::Uno::Int_typeof(), ::TYPES[40/*Uno.Collections.IEnumerable`1*/]->MakeType(type->T(0), NULL)),
         new uFunction("get_Item", NULL, (void*)ImmutableList__get_Item_fn, 0, false, type->T(0), 1, ::g::Uno::Int_typeof()),
         new uFunction("Replace", NULL, (void*)ImmutableList__Replace_fn, 0, false, type, 2, type->T(0), type->T(0)));
 }
@@ -5278,22 +2543,23 @@ ImmutableList_type* ImmutableList_typeof()
     options.FieldCount = 1;
     options.GenericCount = 1;
     options.InterfaceCount = 1;
-    options.PrecalcCount = 5;
+    options.PrecalcCount = 6;
     options.ObjectSize = sizeof(ImmutableList);
     options.TypeSize = sizeof(ImmutableList_type);
     type = (ImmutableList_type*)uClassType::New("Outracks.Simulator.ImmutableList`1", options);
     type->fp_build_ = ImmutableList_build;
+    type->fp_ToString = (void(*)(uObject*, uString**))ImmutableList__ToString_fn;
     type->interface0.fp_GetEnumerator = (void(*)(uObject*, uObject**))ImmutableList__GetEnumerator_fn;
     return type;
 }
 
-// internal ImmutableList(T[] array) :175
+// internal ImmutableList(T[] array) :178
 void ImmutableList__ctor__fn(ImmutableList* __this, uArray* array)
 {
     __this->ctor_(array);
 }
 
-// public Outracks.Simulator.ImmutableList<T> Add(T element) :190
+// public Outracks.Simulator.ImmutableList<T> Add(T element) :193
 void ImmutableList__Add_fn(ImmutableList* __this, void* element, ImmutableList** __retval)
 {
     uType* __types[] = {
@@ -5307,19 +2573,19 @@ void ImmutableList__Add_fn(ImmutableList* __this, void* element, ImmutableList**
     return *__retval = ImmutableList::New1(__this->__type, copy), void();
 }
 
-// public int get_Count() :182
+// public int get_Count() :185
 void ImmutableList__get_Count_fn(ImmutableList* __this, int* __retval)
 {
     *__retval = __this->Count();
 }
 
-// public static Outracks.Simulator.ImmutableList<T> get_Empty() :170
+// public static Outracks.Simulator.ImmutableList<T> get_Empty() :173
 void ImmutableList__get_Empty_fn(uType* __type, ImmutableList** __retval)
 {
     *__retval = ImmutableList::Empty(__type);
 }
 
-// public T Get(int i) :219
+// public T Get(int i) :222
 void ImmutableList__Get_fn(ImmutableList* __this, int* i, uTRef __retval)
 {
     uStackFrame __("Outracks.Simulator.ImmutableList`1", "Get(int)");
@@ -5327,19 +2593,19 @@ void ImmutableList__Get_fn(ImmutableList* __this, int* i, uTRef __retval)
     return __retval.Store(uPtr(__this->_array)->TItem(i_)), void();
 }
 
-// public Uno.Collections.IEnumerator<T> GetEnumerator() :185
+// public Uno.Collections.IEnumerator<T> GetEnumerator() :188
 void ImmutableList__GetEnumerator_fn(ImmutableList* __this, uObject** __retval)
 {
     *__retval = __this->GetEnumerator();
 }
 
-// public Outracks.Simulator.ImmutableList<T> InsertRange(int index, Uno.Collections.IEnumerable<T> items) :198
+// public Outracks.Simulator.ImmutableList<T> InsertRange(int index, Uno.Collections.IEnumerable<T> items) :201
 void ImmutableList__InsertRange_fn(ImmutableList* __this, int* index, uObject* items, ImmutableList** __retval)
 {
     *__retval = __this->InsertRange(*index, items);
 }
 
-// public T get_Item(int i) :226
+// public T get_Item(int i) :229
 void ImmutableList__get_Item_fn(ImmutableList* __this, int* i, uTRef __retval)
 {
     uStackFrame __("Outracks.Simulator.ImmutableList`1", "get_Item(int)");
@@ -5347,13 +2613,13 @@ void ImmutableList__get_Item_fn(ImmutableList* __this, int* i, uTRef __retval)
     return __retval.Store(uPtr(__this->_array)->TItem(i_)), void();
 }
 
-// internal ImmutableList New(T[] array) :175
+// internal ImmutableList New(T[] array) :178
 void ImmutableList__New1_fn(uType* __type, uArray* array, ImmutableList** __retval)
 {
     *__retval = ImmutableList::New1(__type, array);
 }
 
-// public Outracks.Simulator.ImmutableList<T> Replace(T element, T replacement) :209
+// public Outracks.Simulator.ImmutableList<T> Replace(T element, T replacement) :212
 void ImmutableList__Replace_fn(ImmutableList* __this, void* element, void* replacement, ImmutableList** __retval)
 {
     uType* __types[] = {
@@ -5368,20 +2634,30 @@ void ImmutableList__Replace_fn(ImmutableList* __this, void* element, void* repla
     return *__retval = ImmutableList::New1(__this->__type, copy), void();
 }
 
-// internal ImmutableList(T[] array) [instance] :175
+// public override sealed string ToString() :232
+void ImmutableList__ToString_fn(ImmutableList* __this, uString** __retval)
+{
+    uType* __types[] = {
+        __this->__type->Precalced(5/*Outracks.Simulator.StringSplitting.JoinToString<T>*/),
+    };
+    uStackFrame __("Outracks.Simulator.ImmutableList`1", "ToString()");
+    return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[16/*"["*/], ::g::Outracks::Simulator::StringSplitting::JoinToString(__types[0], (uObject*)__this, ::STRINGS[17/*", "*/])), ::STRINGS[18/*"]"*/]), void();
+}
+
+// internal ImmutableList(T[] array) [instance] :178
 void ImmutableList::ctor_(uArray* array)
 {
     _array = array;
 }
 
-// public int get_Count() [instance] :182
+// public int get_Count() [instance] :185
 int ImmutableList::Count()
 {
     uStackFrame __("Outracks.Simulator.ImmutableList`1", "get_Count()");
     return uPtr(_array)->Length();
 }
 
-// public Uno.Collections.IEnumerator<T> GetEnumerator() [instance] :185
+// public Uno.Collections.IEnumerator<T> GetEnumerator() [instance] :188
 uObject* ImmutableList::GetEnumerator()
 {
     uType* __types[] = {
@@ -5392,7 +2668,7 @@ uObject* ImmutableList::GetEnumerator()
     return (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface((uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable::New1(__types[1], _array)), __types[0]));
 }
 
-// public Outracks.Simulator.ImmutableList<T> InsertRange(int index, Uno.Collections.IEnumerable<T> items) [instance] :198
+// public Outracks.Simulator.ImmutableList<T> InsertRange(int index, Uno.Collections.IEnumerable<T> items) [instance] :201
 ImmutableList* ImmutableList::InsertRange(int index, uObject* items)
 {
     uType* __types[] = {
@@ -5412,7 +2688,7 @@ ImmutableList* ImmutableList::InsertRange(int index, uObject* items)
     return ImmutableList::New1(__type, copy);
 }
 
-// internal ImmutableList New(T[] array) [static] :175
+// internal ImmutableList New(T[] array) [static] :178
 ImmutableList* ImmutableList::New1(uType* __type, uArray* array)
 {
     ImmutableList* obj1 = (ImmutableList*)uNew(__type);
@@ -5420,7 +2696,7 @@ ImmutableList* ImmutableList::New1(uType* __type, uArray* array)
     return obj1;
 }
 
-// public static Outracks.Simulator.ImmutableList<T> get_Empty() [static] :170
+// public static Outracks.Simulator.ImmutableList<T> get_Empty() [static] :173
 ImmutableList* ImmutableList::Empty(uType* __type)
 {
     uType* __types[] = {
@@ -5430,20 +2706,20 @@ ImmutableList* ImmutableList::Empty(uType* __type)
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// public static class IndentString :459
+// public static class IndentString :525
 // {
 static void IndentString_build(uType* type)
 {
-    ::STRINGS[2] = uString::Const("\n"
+    ::STRINGS[19] = uString::Const("\n"
         "");
-    ::STRINGS[54] = uString::Const("\t");
-    ::TYPES[79] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*Select<string, string>*/, ::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
+    ::STRINGS[20] = uString::Const("\t");
+    ::TYPES[44] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*Select<string, string>*/, ::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
     ::TYPES[45] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
-    ::TYPES[80] = ::g::Uno::Char_typeof()->Array();
-    ::TYPES[81] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
+    ::TYPES[46] = ::g::Uno::Char_typeof()->Array();
+    ::TYPES[47] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
     type->Reflection.SetFunctions(1,
         new uFunction("Indent", NULL, (void*)IndentString__Indent_fn, 0, true, ::g::Uno::String_typeof(), 1, ::g::Uno::String_typeof()));
 }
@@ -5460,53 +2736,37 @@ uClassType* IndentString_typeof()
     return type;
 }
 
-// public static string Indent(string str) :461
+// public static string Indent(string str) :527
 void IndentString__Indent_fn(uString* str, uString** __retval)
 {
     *__retval = IndentString::Indent(str);
 }
 
-// private static string PrefixWithTab(string s) :466
+// private static string PrefixWithTab(string s) :532
 void IndentString__PrefixWithTab_fn(uString* s, uString** __retval)
 {
     *__retval = IndentString::PrefixWithTab(s);
 }
 
-// public static string Indent(string str) [static] :461
+// public static string Indent(string str) [static] :527
 uString* IndentString::Indent(uString* str)
 {
     uStackFrame __("Outracks.Simulator.IndentString", "Indent(string)");
-    return ::g::Outracks::Simulator::StringSplitting::Join((uObject*)::g::Uno::Collections::EnumerableExtensions::Select(::TYPES[79/*Uno.Collections.EnumerableExtensions.Select<string, string>*/], (uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable::New1(::TYPES[45/*Uno.Runtime.Implementation.Internal.ArrayEnumerable<string>*/], ::g::Uno::String::Split(uPtr(str), uArray::Init<int>(::TYPES[80/*char[]*/], 1, 10)))), uDelegate::New(::TYPES[81/*Uno.Func<string, string>*/], (void*)IndentString__PrefixWithTab_fn)), ::STRINGS[2/*"\n"*/]);
+    return ::g::Outracks::Simulator::StringSplitting::Join((uObject*)::g::Uno::Collections::EnumerableExtensions::Select(::TYPES[44/*Uno.Collections.EnumerableExtensions.Select<string, string>*/], (uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable::New1(::TYPES[45/*Uno.Runtime.Implementation.Internal.ArrayEnumerable<string>*/], ::g::Uno::String::Split(uPtr(str), uArray::Init<int>(::TYPES[46/*char[]*/], 1, 10)))), uDelegate::New(::TYPES[47/*Uno.Func<string, string>*/], (void*)IndentString__PrefixWithTab_fn)), ::STRINGS[19/*"\n"*/]);
 }
 
-// private static string PrefixWithTab(string s) [static] :466
+// private static string PrefixWithTab(string s) [static] :532
 uString* IndentString::PrefixWithTab(uString* s)
 {
     uStackFrame __("Outracks.Simulator.IndentString", "PrefixWithTab(string)");
-    return ::g::Uno::String::op_Addition2(::STRINGS[54/*"\t"*/], s);
+    return ::g::Uno::String::op_Addition2(::STRINGS[20/*"\t"*/], s);
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/exceptions/$.uno
+// ----------------------------------------------------------------------------------
 
-// public enum InputMode :1746
-uEnumType* InputMode_typeof()
-{
-    static uSStrong<uEnumType*> type;
-    if (type != NULL) return type;
-
-    type = uEnumType::New("Outracks.Simulator.InputMode", ::g::Uno::Int_typeof(), 2);
-    type->SetLiterals(
-        "Interactive", 0LL,
-        "Design", 1LL);
-    return type;
-}
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/$.uno
-// -------------------------------------------------------------------------
-
-// public sealed class InvalidDataException :143
+// public sealed class InvalidDataException :56
 // {
 static void InvalidDataException_build(uType* type)
 {
@@ -5531,25 +2791,25 @@ static void InvalidDataException_build(uType* type)
     return type;
 }
 
-// public generated InvalidDataException() :143
+// public generated InvalidDataException() :56
 void InvalidDataException__ctor_3_fn(InvalidDataException* __this)
 {
     __this->ctor_3();
 }
 
-// public generated InvalidDataException New() :143
+// public generated InvalidDataException New() :56
 void InvalidDataException__New4_fn(InvalidDataException** __retval)
 {
     *__retval = InvalidDataException::New4();
 }
 
-// public generated InvalidDataException() [instance] :143
+// public generated InvalidDataException() [instance] :56
 void InvalidDataException::ctor_3()
 {
     ctor_();
 }
 
-// public generated InvalidDataException New() [static] :143
+// public generated InvalidDataException New() [static] :56
 InvalidDataException* InvalidDataException::New4()
 {
     InvalidDataException* obj1 = (InvalidDataException*)uNew(InvalidDataException_typeof());
@@ -5561,7 +2821,7 @@ InvalidDataException* InvalidDataException::New4()
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
 // -----------------------------------------------------------------------
 
-// public abstract interface ISimulatorClient :847
+// public abstract interface ISimulatorClient :1608
 // {
 uInterfaceType* ISimulatorClient_typeof()
 {
@@ -5570,46 +2830,246 @@ uInterfaceType* ISimulatorClient_typeof()
 
     type = uInterfaceType::New("Outracks.Simulator.ISimulatorClient", 0, 0);
     type->Reflection.SetFunctions(3,
-        new uFunction("get_IncommingMessages", NULL, NULL, offsetof(ISimulatorClient, fp_get_IncommingMessages), false, ::g::Outracks::Simulator::ConcurrentQueue_typeof()->MakeType(::g::Outracks::Simulator::Protocol::MessageToClient_typeof(), NULL), 0),
+        new uFunction("get_IncommingMessages", NULL, NULL, offsetof(ISimulatorClient, fp_get_IncommingMessages), false, ::g::Outracks::Simulator::ConcurrentQueue_typeof()->MakeType(::g::Outracks::IBinaryMessage_typeof(), NULL), 0),
         new uFunction("get_IsOnline", NULL, NULL, offsetof(ISimulatorClient, fp_get_IsOnline), false, ::g::Uno::Bool_typeof(), 0),
-        new uFunction("Send", NULL, NULL, offsetof(ISimulatorClient, fp_Send), false, uVoid_typeof(), 1, ::g::Outracks::Simulator::Protocol::MessageFromClient_typeof()));
+        new uFunction("Send", NULL, NULL, offsetof(ISimulatorClient, fp_Send), false, uVoid_typeof(), 1, ::g::Outracks::IBinaryMessage_typeof()));
     return type;
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// public static class List :231
+// public struct LineNumber :911
+// {
+static void LineNumber_build(uType* type)
+{
+    ::STRINGS[21] = uString::Const("line");
+    ::STRINGS[22] = uString::Const("LineNumber must be >= 1");
+    ::TYPES[4] = ::g::Uno::Int_typeof();
+    type->SetFields(0,
+        ::TYPES[4/*int*/], offsetof(::g::Outracks::Simulator::LineNumber, _lineMinusOne), 0);
+    type->Reflection.SetFunctions(2,
+        new uFunction("Equals", NULL, (void*)LineNumber__Equals2_fn, 0, false, ::g::Uno::Bool_typeof(), 1, type),
+        new uFunction(".ctor", NULL, (void*)LineNumber__New1_fn, 0, true, type, 1, ::TYPES[4/*int*/]));
+}
+
+uStructType* LineNumber_typeof()
+{
+    static uSStrong<uStructType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.FieldCount = 1;
+    options.ValueSize = sizeof(LineNumber);
+    options.TypeSize = sizeof(uStructType);
+    type = uStructType::New("Outracks.Simulator.LineNumber", options);
+    type->fp_build_ = LineNumber_build;
+    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))LineNumber__Equals_fn;
+    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))LineNumber__GetHashCode_fn;
+    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))LineNumber__ToString_fn;
+    return type;
+}
+
+// public LineNumber(int line) :915
+void LineNumber__ctor__fn(LineNumber* __this, int* line)
+{
+    __this->ctor_(*line);
+}
+
+// public override sealed bool Equals(object obj) :936
+void LineNumber__Equals_fn(LineNumber* __this, uType* __type, uObject* obj, bool* __retval)
+{
+    uStackFrame __("Outracks.Simulator.LineNumber", "Equals(object)");
+
+    if (::g::Uno::Object::ReferenceEquals(NULL, obj))
+        return *__retval = false, void();
+
+    return *__retval = uIs(obj, __type) && __this->Equals2(uUnbox<LineNumber>(__type, obj)), void();
+}
+
+// public bool Equals(Outracks.Simulator.LineNumber other) :931
+void LineNumber__Equals2_fn(LineNumber* __this, LineNumber* other, bool* __retval)
+{
+    *__retval = __this->Equals2(*other);
+}
+
+// public override sealed int GetHashCode() :942
+void LineNumber__GetHashCode_fn(LineNumber* __this, uType* __type, int* __retval)
+{
+    return *__retval = __this->_lineMinusOne, void();
+}
+
+// public LineNumber New(int line) :915
+void LineNumber__New1_fn(int* line, LineNumber* __retval)
+{
+    *__retval = LineNumber__New1(*line);
+}
+
+// public static operator ==(Outracks.Simulator.LineNumber left, Outracks.Simulator.LineNumber right) :947
+void LineNumber__op_Equality_fn(LineNumber* left, LineNumber* right, bool* __retval)
+{
+    *__retval = LineNumber__op_Equality(*left, *right);
+}
+
+// public static operator >(Outracks.Simulator.LineNumber left, Outracks.Simulator.LineNumber right) :962
+void LineNumber__op_GreaterThan_fn(LineNumber* left, LineNumber* right, bool* __retval)
+{
+    *__retval = LineNumber__op_GreaterThan(*left, *right);
+}
+
+// public static operator >=(Outracks.Simulator.LineNumber left, Outracks.Simulator.LineNumber right) :972
+void LineNumber__op_GreaterThanOrEqual_fn(LineNumber* left, LineNumber* right, bool* __retval)
+{
+    *__retval = LineNumber__op_GreaterThanOrEqual(*left, *right);
+}
+
+// public static implicit operator int(Outracks.Simulator.LineNumber line) :921
+void LineNumber__op_Implicit_fn(LineNumber* line, int* __retval)
+{
+    *__retval = LineNumber__op_Implicit(*line);
+}
+
+// public static operator !=(Outracks.Simulator.LineNumber left, Outracks.Simulator.LineNumber right) :952
+void LineNumber__op_Inequality_fn(LineNumber* left, LineNumber* right, bool* __retval)
+{
+    *__retval = LineNumber__op_Inequality(*left, *right);
+}
+
+// public static operator <(Outracks.Simulator.LineNumber left, Outracks.Simulator.LineNumber right) :957
+void LineNumber__op_LessThan_fn(LineNumber* left, LineNumber* right, bool* __retval)
+{
+    *__retval = LineNumber__op_LessThan(*left, *right);
+}
+
+// public static operator <=(Outracks.Simulator.LineNumber left, Outracks.Simulator.LineNumber right) :967
+void LineNumber__op_LessThanOrEqual_fn(LineNumber* left, LineNumber* right, bool* __retval)
+{
+    *__retval = LineNumber__op_LessThanOrEqual(*left, *right);
+}
+
+// public override sealed string ToString() :926
+void LineNumber__ToString_fn(LineNumber* __this, uType* __type, uString** __retval)
+{
+    uStackFrame __("Outracks.Simulator.LineNumber", "ToString()");
+    return *__retval = ::g::Uno::Int::ToString(LineNumber__op_Implicit(*__this), ::TYPES[4/*int*/]), void();
+}
+
+// public LineNumber(int line) [instance] :915
+void LineNumber::ctor_(int line)
+{
+    uStackFrame __("Outracks.Simulator.LineNumber", ".ctor(int)");
+
+    if (line <= 0)
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New7(::STRINGS[21/*"line"*/], ::STRINGS[22/*"LineNumber ...*/]));
+
+    _lineMinusOne = (line - 1);
+}
+
+// public bool Equals(Outracks.Simulator.LineNumber other) [instance] :931
+bool LineNumber::Equals2(LineNumber other)
+{
+    return _lineMinusOne == other._lineMinusOne;
+}
+
+// public LineNumber New(int line) [static] :915
+LineNumber LineNumber__New1(int line)
+{
+    LineNumber obj1;
+    obj1.ctor_(line);
+    return obj1;
+}
+
+// public static operator ==(Outracks.Simulator.LineNumber left, Outracks.Simulator.LineNumber right) [static] :947
+bool LineNumber__op_Equality(LineNumber left, LineNumber right)
+{
+    return left.Equals2(right);
+}
+
+// public static operator >(Outracks.Simulator.LineNumber left, Outracks.Simulator.LineNumber right) [static] :962
+bool LineNumber__op_GreaterThan(LineNumber left, LineNumber right)
+{
+    return left._lineMinusOne > right._lineMinusOne;
+}
+
+// public static operator >=(Outracks.Simulator.LineNumber left, Outracks.Simulator.LineNumber right) [static] :972
+bool LineNumber__op_GreaterThanOrEqual(LineNumber left, LineNumber right)
+{
+    return left._lineMinusOne >= right._lineMinusOne;
+}
+
+// public static implicit operator int(Outracks.Simulator.LineNumber line) [static] :921
+int LineNumber__op_Implicit(LineNumber line)
+{
+    return line._lineMinusOne + 1;
+}
+
+// public static operator !=(Outracks.Simulator.LineNumber left, Outracks.Simulator.LineNumber right) [static] :952
+bool LineNumber__op_Inequality(LineNumber left, LineNumber right)
+{
+    return !left.Equals2(right);
+}
+
+// public static operator <(Outracks.Simulator.LineNumber left, Outracks.Simulator.LineNumber right) [static] :957
+bool LineNumber__op_LessThan(LineNumber left, LineNumber right)
+{
+    return left._lineMinusOne < right._lineMinusOne;
+}
+
+// public static operator <=(Outracks.Simulator.LineNumber left, Outracks.Simulator.LineNumber right) [static] :967
+bool LineNumber__op_LessThanOrEqual(LineNumber left, LineNumber right)
+{
+    return left._lineMinusOne <= right._lineMinusOne;
+}
+// }
+
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
+
+// public static class List :239
 // {
 static void List_build(uType* type)
 {
-    ::TYPES[82] = ::g::Outracks::Simulator::ImmutableList_typeof();
-    ::TYPES[37] = uObject_typeof()->Array();
-    ::TYPES[78] = ::g::Uno::Collections::EnumerableExtensions_typeof();
-    ::TYPES[1] = ::g::Uno::Collections::IEnumerator_typeof();
-    ::TYPES[83] = ::g::Uno::Collections::IEnumerator1_typeof();
+    ::TYPES[48] = ::g::Outracks::Simulator::ImmutableList_typeof();
+    ::TYPES[3] = uObject_typeof()->Array();
+    ::TYPES[42] = ::g::Uno::Collections::EnumerableExtensions_typeof();
+    ::TYPES[49] = ::g::Outracks::Optional1_typeof();
+    ::TYPES[24] = ::g::Uno::Collections::IEnumerator_typeof();
+    ::TYPES[50] = ::g::Uno::Collections::IEnumerator1_typeof();
+    ::TYPES[40] = ::g::Uno::Collections::IEnumerable_typeof();
+    ::TYPES[51] = ::TYPES[42/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(10/*ToArray<object>*/, uObject_typeof(), NULL);
     type->MethodTypes[0]->SetPrecalc(
-        ::TYPES[82/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL));
+        ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL));
     type->MethodTypes[1]->SetPrecalc(
         type->MakeMethod(2/*ReadImmutableList<T>*/, type->MethodTypes[1]->U(0), NULL));
     type->MethodTypes[2]->SetPrecalc(
         type->MethodTypes[2]->U(0)->Array(),
-        ::TYPES[82/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[2]->U(0), NULL));
+        ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[2]->U(0), NULL));
     type->MethodTypes[3]->SetPrecalc(
-        ::TYPES[82/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[3]->U(0), NULL),
-        ::TYPES[78/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(11/*ToArray<T>*/, type->MethodTypes[3]->U(0), NULL));
+        ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[3]->U(0), NULL),
+        ::TYPES[42/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(10/*ToArray<T>*/, type->MethodTypes[3]->U(0), NULL));
     type->MethodTypes[4]->SetPrecalc(
-        type->MakeMethod(5/*Write<T>*/, type->MethodTypes[4]->U(0), NULL));
+        ::TYPES[49/*Outracks.Optional`1*/]->MakeType(type->MethodTypes[4]->U(0), NULL),
+        ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[4]->U(0), NULL),
+        type->MethodTypes[4]->U(0)->Array());
     type->MethodTypes[5]->SetPrecalc(
-        ::TYPES[83/*Uno.Collections.IEnumerator`1*/]->MakeType(type->MethodTypes[5]->U(0), NULL));
-    type->Reflection.SetFunctions(6,
-        new uFunction("Create`1", type->MethodTypes[0], (void*)List__Create_fn, 0, true, ::TYPES[82/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL), 1, type->MethodTypes[0]->U(0)->Array()),
-        new uFunction("Read`1", type->MethodTypes[1], (void*)List__Read_fn, 0, true, ::TYPES[82/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL), 2, ::g::Uno::IO::BinaryReader_typeof(), ::g::Uno::Func1_typeof()->MakeType(::g::Uno::IO::BinaryReader_typeof(), type->MethodTypes[1]->U(0), NULL)),
-        new uFunction("ReadImmutableList`1", type->MethodTypes[2], (void*)List__ReadImmutableList_fn, 0, true, ::TYPES[82/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[2]->U(0), NULL), 2, ::g::Uno::IO::BinaryReader_typeof(), ::g::Uno::Func1_typeof()->MakeType(::g::Uno::IO::BinaryReader_typeof(), type->MethodTypes[2]->U(0), NULL)),
-        new uFunction("ToImmutableList`1", type->MethodTypes[3], (void*)List__ToImmutableList_fn, 0, true, ::TYPES[82/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[3]->U(0), NULL), 1, ::g::Uno::Collections::IEnumerable_typeof()->MakeType(type->MethodTypes[3]->U(0), NULL)),
-        new uFunction("Write`1", type->MethodTypes[4], (void*)List__Write_fn, 0, true, uVoid_typeof(), 3, ::TYPES[82/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[4]->U(0), NULL), ::g::Uno::IO::BinaryWriter_typeof(), ::g::Uno::Action2_typeof()->MakeType(type->MethodTypes[4]->U(0), ::g::Uno::IO::BinaryWriter_typeof(), NULL)),
-        new uFunction("Write`1", type->MethodTypes[5], (void*)List__Write1_fn, 0, true, uVoid_typeof(), 3, ::g::Uno::IO::BinaryWriter_typeof(), ::TYPES[82/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[5]->U(0), NULL), ::g::Uno::Action2_typeof()->MakeType(type->MethodTypes[5]->U(0), ::g::Uno::IO::BinaryWriter_typeof(), NULL)));
+        type->MakeMethod(6/*Write<T>*/, type->MethodTypes[5]->U(0), NULL));
+    type->MethodTypes[6]->SetPrecalc(
+        ::TYPES[50/*Uno.Collections.IEnumerator`1*/]->MakeType(type->MethodTypes[6]->U(0), NULL));
+    type->MethodTypes[7]->SetPrecalc(
+        ::TYPES[42/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(2/*Count<T>*/, type->MethodTypes[7]->U(0), NULL),
+        ::TYPES[40/*Uno.Collections.IEnumerable`1*/]->MakeType(type->MethodTypes[7]->U(0), NULL),
+        ::TYPES[50/*Uno.Collections.IEnumerator`1*/]->MakeType(type->MethodTypes[7]->U(0), NULL));
+    type->Reflection.SetFunctions(9,
+        new uFunction("Create`1", type->MethodTypes[0], (void*)List__Create_fn, 0, true, ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL), 1, type->MethodTypes[0]->U(0)->Array()),
+        new uFunction("Read`1", type->MethodTypes[1], (void*)List__Read_fn, 0, true, ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL), 2, ::g::System::IO::BinaryReader_typeof(), ::g::Uno::Func1_typeof()->MakeType(::g::System::IO::BinaryReader_typeof(), type->MethodTypes[1]->U(0), NULL)),
+        new uFunction("ReadImmutableList`1", type->MethodTypes[2], (void*)List__ReadImmutableList_fn, 0, true, ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[2]->U(0), NULL), 2, ::g::System::IO::BinaryReader_typeof(), ::g::Uno::Func1_typeof()->MakeType(::g::System::IO::BinaryReader_typeof(), type->MethodTypes[2]->U(0), NULL)),
+        new uFunction("ToImmutableList`1", type->MethodTypes[3], (void*)List__ToImmutableList_fn, 0, true, ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[3]->U(0), NULL), 1, ::TYPES[40/*Uno.Collections.IEnumerable`1*/]->MakeType(type->MethodTypes[3]->U(0), NULL)),
+        new uFunction("ToList`1", type->MethodTypes[4], (void*)List__ToList_fn, 0, true, ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[4]->U(0), NULL), 1, ::TYPES[49/*Outracks.Optional`1*/]->MakeType(type->MethodTypes[4]->U(0), NULL)),
+        new uFunction("Write`1", type->MethodTypes[5], (void*)List__Write_fn, 0, true, uVoid_typeof(), 3, ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[5]->U(0), NULL), ::g::System::IO::BinaryWriter_typeof(), ::g::Uno::Action2_typeof()->MakeType(type->MethodTypes[5]->U(0), ::g::System::IO::BinaryWriter_typeof(), NULL)),
+        new uFunction("Write`1", type->MethodTypes[6], (void*)List__Write1_fn, 0, true, uVoid_typeof(), 3, ::g::System::IO::BinaryWriter_typeof(), ::TYPES[48/*Outracks.Simulator.ImmutableList`1*/]->MakeType(type->MethodTypes[6]->U(0), NULL), ::g::Uno::Action2_typeof()->MakeType(type->MethodTypes[6]->U(0), ::g::System::IO::BinaryWriter_typeof(), NULL)),
+        new uFunction("Write`1", type->MethodTypes[7], (void*)List__Write2_fn, 0, true, uVoid_typeof(), 3, ::g::System::IO::BinaryWriter_typeof(), ::TYPES[40/*Uno.Collections.IEnumerable`1*/]->MakeType(type->MethodTypes[7]->U(0), NULL), ::g::Uno::Action2_typeof()->MakeType(type->MethodTypes[7]->U(0), ::g::System::IO::BinaryWriter_typeof(), NULL)),
+        new uFunction("WriteImmutableList", NULL, (void*)List__WriteImmutableList_fn, 0, true, uVoid_typeof(), 3, ::g::System::IO::BinaryWriter_typeof(), ::TYPES[40/*Uno.Collections.IEnumerable`1*/]->MakeType(uObject_typeof(), NULL), ::g::Uno::Action1_typeof()->MakeType(uObject_typeof(), NULL)));
 }
 
 uClassType* List_typeof()
@@ -5618,56 +3078,93 @@ uClassType* List_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.MethodTypeCount = 6;
+    options.MethodTypeCount = 8;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Outracks.Simulator.List", options);
     type->MethodTypes[0] = type->NewMethodType(1, 1);
     type->MethodTypes[1] = type->NewMethodType(1, 1);
     type->MethodTypes[2] = type->NewMethodType(1, 2);
     type->MethodTypes[3] = type->NewMethodType(1, 2);
-    type->MethodTypes[4] = type->NewMethodType(1, 1);
+    type->MethodTypes[4] = type->NewMethodType(1, 3);
     type->MethodTypes[5] = type->NewMethodType(1, 1);
+    type->MethodTypes[6] = type->NewMethodType(1, 1);
+    type->MethodTypes[7] = type->NewMethodType(1, 3);
     type->fp_build_ = List_build;
     return type;
 }
 
-// public static Outracks.Simulator.ImmutableList<T> Create<T>(T[] elements) :233
+// public static Outracks.Simulator.ImmutableList<T> Create<T>(T[] elements) :251
 void List__Create_fn(uType* __type, uArray* elements, ::g::Outracks::Simulator::ImmutableList** __retval)
 {
     *__retval = List::Create(__type, elements);
 }
 
-// public static Outracks.Simulator.ImmutableList<T> Read<T>(Uno.IO.BinaryReader reader, Uno.Func<Uno.IO.BinaryReader, T> elementReader) :255
-void List__Read_fn(uType* __type, ::g::Uno::IO::BinaryReader* reader, uDelegate* elementReader, ::g::Outracks::Simulator::ImmutableList** __retval)
+// public static Outracks.Simulator.ImmutableList<T> Read<T>(System.IO.BinaryReader reader, Uno.Func<System.IO.BinaryReader, T> elementReader) :280
+void List__Read_fn(uType* __type, ::g::System::IO::BinaryReader* reader, uDelegate* elementReader, ::g::Outracks::Simulator::ImmutableList** __retval)
 {
     *__retval = List::Read(__type, reader, elementReader);
 }
 
-// public static Outracks.Simulator.ImmutableList<T> ReadImmutableList<T>(Uno.IO.BinaryReader reader, Uno.Func<Uno.IO.BinaryReader, T> elementReader) :260
-void List__ReadImmutableList_fn(uType* __type, ::g::Uno::IO::BinaryReader* reader, uDelegate* elementReader, ::g::Outracks::Simulator::ImmutableList** __retval)
+// public static Outracks.Simulator.ImmutableList<T> ReadImmutableList<T>(System.IO.BinaryReader reader, Uno.Func<System.IO.BinaryReader, T> elementReader) :293
+void List__ReadImmutableList_fn(uType* __type, ::g::System::IO::BinaryReader* reader, uDelegate* elementReader, ::g::Outracks::Simulator::ImmutableList** __retval)
 {
     *__retval = List::ReadImmutableList(__type, reader, elementReader);
 }
 
-// public static Outracks.Simulator.ImmutableList<T> ToImmutableList<T>(Uno.Collections.IEnumerable<T> self) :238
+// public static Outracks.Simulator.ImmutableList<T> ToImmutableList<T>(Uno.Collections.IEnumerable<T> self) :256
 void List__ToImmutableList_fn(uType* __type, uObject* self, ::g::Outracks::Simulator::ImmutableList** __retval)
 {
     *__retval = List::ToImmutableList(__type, self);
 }
 
-// public static void Write<T>(Outracks.Simulator.ImmutableList<T> array, Uno.IO.BinaryWriter writer, Uno.Action<T, Uno.IO.BinaryWriter> elementWriter) :243
-void List__Write_fn(uType* __type, ::g::Outracks::Simulator::ImmutableList* array, ::g::Uno::IO::BinaryWriter* writer, uDelegate* elementWriter)
+// public static Outracks.Simulator.ImmutableList<T> ToList<T>(Outracks.Optional<T> element) :241
+void List__ToList_fn(uType* __type, void* element, ::g::Outracks::Simulator::ImmutableList** __retval)
+{
+    uType* __types[] = {
+        __type->Precalced(0/*Outracks.Optional<T>*/),
+        __type->U(0),
+        __type->Precalced(1/*Outracks.Simulator.ImmutableList<T>*/),
+        __type->Precalced(2/*T[]*/),
+    };
+    uStackFrame __("Outracks.Simulator.List", "ToList`1(Outracks.Optional<T>)");
+    uT element_(__types[0], U_ALLOCA(__types[0]->ValueSize));
+    uT ret6(__types[1], U_ALLOCA(__types[1]->ValueSize));
+    bool ret5;
+    element_ = element;
+
+    if (!(::g::Outracks::Optional1__get_HasValue_fn(&element_, __types[0], &ret5), ret5))
+        return *__retval = (::g::Outracks::Simulator::ImmutableList*)::g::Outracks::Simulator::ImmutableList::Empty(__types[2]), void();
+
+    uArray* array = uArray::New(__types[3], 1);
+    array->TItem(0) = (::g::Outracks::Optional1__get_Value_fn(&element_, __types[0], &ret6), ret6);
+    return *__retval = (::g::Outracks::Simulator::ImmutableList*)::g::Outracks::Simulator::ImmutableList::New1(__types[2], array), void();
+}
+
+// public static void Write<T>(Outracks.Simulator.ImmutableList<T> array, System.IO.BinaryWriter writer, Uno.Action<T, System.IO.BinaryWriter> elementWriter) :261
+void List__Write_fn(uType* __type, ::g::Outracks::Simulator::ImmutableList* array, ::g::System::IO::BinaryWriter* writer, uDelegate* elementWriter)
 {
     List::Write(__type, array, writer, elementWriter);
 }
 
-// public static void Write<T>(Uno.IO.BinaryWriter writer, Outracks.Simulator.ImmutableList<T> array, Uno.Action<T, Uno.IO.BinaryWriter> elementWriter) :248
-void List__Write1_fn(uType* __type, ::g::Uno::IO::BinaryWriter* writer, ::g::Outracks::Simulator::ImmutableList* array, uDelegate* elementWriter)
+// public static void Write<T>(System.IO.BinaryWriter writer, Outracks.Simulator.ImmutableList<T> array, Uno.Action<T, System.IO.BinaryWriter> elementWriter) :273
+void List__Write1_fn(uType* __type, ::g::System::IO::BinaryWriter* writer, ::g::Outracks::Simulator::ImmutableList* array, uDelegate* elementWriter)
 {
     List::Write1(__type, writer, array, elementWriter);
 }
 
-// public static Outracks.Simulator.ImmutableList<T> Create<T>(T[] elements) [static] :233
+// public static void Write<T>(System.IO.BinaryWriter writer, Uno.Collections.IEnumerable<T> array, Uno.Action<T, System.IO.BinaryWriter> elementWriter) :266
+void List__Write2_fn(uType* __type, ::g::System::IO::BinaryWriter* writer, uObject* array, uDelegate* elementWriter)
+{
+    List::Write2(__type, writer, array, elementWriter);
+}
+
+// public static void WriteImmutableList(System.IO.BinaryWriter writer, Uno.Collections.IEnumerable<object> elements, Uno.Action<object> writeElement) :285
+void List__WriteImmutableList_fn(::g::System::IO::BinaryWriter* writer, uObject* elements, uDelegate* writeElement)
+{
+    List::WriteImmutableList(writer, elements, writeElement);
+}
+
+// public static Outracks.Simulator.ImmutableList<T> Create<T>(T[] elements) [static] :251
 ::g::Outracks::Simulator::ImmutableList* List::Create(uType* __type, uArray* elements)
 {
     uType* __types[] = {
@@ -5676,35 +3173,35 @@ void List__Write1_fn(uType* __type, ::g::Uno::IO::BinaryWriter* writer, ::g::Out
     return (::g::Outracks::Simulator::ImmutableList*)::g::Outracks::Simulator::ImmutableList::New1(__types[0], elements);
 }
 
-// public static Outracks.Simulator.ImmutableList<T> Read<T>(Uno.IO.BinaryReader reader, Uno.Func<Uno.IO.BinaryReader, T> elementReader) [static] :255
-::g::Outracks::Simulator::ImmutableList* List::Read(uType* __type, ::g::Uno::IO::BinaryReader* reader, uDelegate* elementReader)
+// public static Outracks.Simulator.ImmutableList<T> Read<T>(System.IO.BinaryReader reader, Uno.Func<System.IO.BinaryReader, T> elementReader) [static] :280
+::g::Outracks::Simulator::ImmutableList* List::Read(uType* __type, ::g::System::IO::BinaryReader* reader, uDelegate* elementReader)
 {
     uType* __types[] = {
         __type->Precalced(0/*Outracks.Simulator.List.ReadImmutableList<T>*/),
     };
-    uStackFrame __("Outracks.Simulator.List", "Read`1(Uno.IO.BinaryReader,Uno.Func<Uno.IO.BinaryReader, T>)");
+    uStackFrame __("Outracks.Simulator.List", "Read`1(System.IO.BinaryReader,Uno.Func<System.IO.BinaryReader, T>)");
     return (::g::Outracks::Simulator::ImmutableList*)List::ReadImmutableList(__types[0], reader, elementReader);
 }
 
-// public static Outracks.Simulator.ImmutableList<T> ReadImmutableList<T>(Uno.IO.BinaryReader reader, Uno.Func<Uno.IO.BinaryReader, T> elementReader) [static] :260
-::g::Outracks::Simulator::ImmutableList* List::ReadImmutableList(uType* __type, ::g::Uno::IO::BinaryReader* reader, uDelegate* elementReader)
+// public static Outracks.Simulator.ImmutableList<T> ReadImmutableList<T>(System.IO.BinaryReader reader, Uno.Func<System.IO.BinaryReader, T> elementReader) [static] :293
+::g::Outracks::Simulator::ImmutableList* List::ReadImmutableList(uType* __type, ::g::System::IO::BinaryReader* reader, uDelegate* elementReader)
 {
     uType* __types[] = {
         __type->U(0),
         __type->Precalced(0/*T[]*/),
         __type->Precalced(1/*Outracks.Simulator.ImmutableList<T>*/),
     };
-    uStackFrame __("Outracks.Simulator.List", "ReadImmutableList`1(Uno.IO.BinaryReader,Uno.Func<Uno.IO.BinaryReader, T>)");
-    uT ret1(__types[0], U_ALLOCA(__types[0]->ValueSize));
-    uArray* array = uArray::New(__types[1], uPtr(reader)->ReadInt());
+    uStackFrame __("Outracks.Simulator.List", "ReadImmutableList`1(System.IO.BinaryReader,Uno.Func<System.IO.BinaryReader, T>)");
+    uT ret4(__types[0], U_ALLOCA(__types[0]->ValueSize));
+    uArray* array = uArray::New(__types[1], uPtr(reader)->ReadInt32());
 
     for (int i = 0; i < array->Length(); i++)
-        uPtr(array)->TItem(i) = (uPtr(elementReader)->Invoke(&ret1, 1, reader), ret1);
+        uPtr(array)->TItem(i) = (uPtr(elementReader)->Invoke(&ret4, 1, reader), ret4);
 
     return (::g::Outracks::Simulator::ImmutableList*)::g::Outracks::Simulator::ImmutableList::New1(__types[2], array);
 }
 
-// public static Outracks.Simulator.ImmutableList<T> ToImmutableList<T>(Uno.Collections.IEnumerable<T> self) [static] :238
+// public static Outracks.Simulator.ImmutableList<T> ToImmutableList<T>(Uno.Collections.IEnumerable<T> self) [static] :256
 ::g::Outracks::Simulator::ImmutableList* List::ToImmutableList(uType* __type, uObject* self)
 {
     uType* __types[] = {
@@ -5715,299 +3212,75 @@ void List__Write1_fn(uType* __type, ::g::Uno::IO::BinaryWriter* writer, ::g::Out
     return (::g::Outracks::Simulator::ImmutableList*)::g::Outracks::Simulator::ImmutableList::New1(__types[0], (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(__types[1], self));
 }
 
-// public static void Write<T>(Outracks.Simulator.ImmutableList<T> array, Uno.IO.BinaryWriter writer, Uno.Action<T, Uno.IO.BinaryWriter> elementWriter) [static] :243
-void List::Write(uType* __type, ::g::Outracks::Simulator::ImmutableList* array, ::g::Uno::IO::BinaryWriter* writer, uDelegate* elementWriter)
+// public static void Write<T>(Outracks.Simulator.ImmutableList<T> array, System.IO.BinaryWriter writer, Uno.Action<T, System.IO.BinaryWriter> elementWriter) [static] :261
+void List::Write(uType* __type, ::g::Outracks::Simulator::ImmutableList* array, ::g::System::IO::BinaryWriter* writer, uDelegate* elementWriter)
 {
     uType* __types[] = {
         __type->Precalced(0/*Outracks.Simulator.List.Write<T>*/),
     };
-    uStackFrame __("Outracks.Simulator.List", "Write`1(Outracks.Simulator.ImmutableList<T>,Uno.IO.BinaryWriter,Uno.Action<T, Uno.IO.BinaryWriter>)");
+    uStackFrame __("Outracks.Simulator.List", "Write`1(Outracks.Simulator.ImmutableList<T>,System.IO.BinaryWriter,Uno.Action<T, System.IO.BinaryWriter>)");
     List::Write1(__types[0], writer, array, elementWriter);
 }
 
-// public static void Write<T>(Uno.IO.BinaryWriter writer, Outracks.Simulator.ImmutableList<T> array, Uno.Action<T, Uno.IO.BinaryWriter> elementWriter) [static] :248
-void List::Write1(uType* __type, ::g::Uno::IO::BinaryWriter* writer, ::g::Outracks::Simulator::ImmutableList* array, uDelegate* elementWriter)
+// public static void Write<T>(System.IO.BinaryWriter writer, Outracks.Simulator.ImmutableList<T> array, Uno.Action<T, System.IO.BinaryWriter> elementWriter) [static] :273
+void List::Write1(uType* __type, ::g::System::IO::BinaryWriter* writer, ::g::Outracks::Simulator::ImmutableList* array, uDelegate* elementWriter)
 {
     uType* __types[] = {
         __type->U(0),
         __type->Precalced(0/*Uno.Collections.IEnumerator<T>*/),
     };
-    uStackFrame __("Outracks.Simulator.List", "Write`1(Uno.IO.BinaryWriter,Outracks.Simulator.ImmutableList<T>,Uno.Action<T, Uno.IO.BinaryWriter>)");
-    uT ret2(__types[0], U_ALLOCA(__types[0]->ValueSize));
+    uStackFrame __("Outracks.Simulator.List", "Write`1(System.IO.BinaryWriter,Outracks.Simulator.ImmutableList<T>,Uno.Action<T, System.IO.BinaryWriter>)");
+    uT ret7(__types[0], U_ALLOCA(__types[0]->ValueSize));
     uT elm(__types[0], U_ALLOCA(__types[0]->ValueSize));
-    uPtr(writer)->Write13(uPtr(array)->Count());
+    uPtr(writer)->Write5(uPtr(array)->Count());
 
-    for (uObject* enum1 = (uObject*)array->GetEnumerator(); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[1/*Uno.Collections.IEnumerator*/])); )
+    for (uObject* enum1 = (uObject*)array->GetEnumerator(); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[24/*Uno.Collections.IEnumerator*/])); )
     {
-        elm = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), __types[1]), &ret2), ret2);
+        elm = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), __types[1]), &ret7), ret7);
         uPtr(elementWriter)->Invoke(2, (void*)elm, writer);
     }
 }
-// }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal sealed class LoadingScreen :1230
-// {
-static void LoadingScreen_build(uType* type)
+// public static void Write<T>(System.IO.BinaryWriter writer, Uno.Collections.IEnumerable<T> array, Uno.Action<T, System.IO.BinaryWriter> elementWriter) [static] :266
+void List::Write2(uType* __type, ::g::System::IO::BinaryWriter* writer, uObject* array, uDelegate* elementWriter)
 {
-    ::TYPES[11] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
+    uType* __types[] = {
+        __type->U(0),
+        __type->Precalced(0/*Uno.Collections.EnumerableExtensions.Count<T>*/),
+        __type->Precalced(1/*Uno.Collections.IEnumerable<T>*/),
+        __type->Precalced(2/*Uno.Collections.IEnumerator<T>*/),
+    };
+    uStackFrame __("Outracks.Simulator.List", "Write`1(System.IO.BinaryWriter,Uno.Collections.IEnumerable<T>,Uno.Action<T, System.IO.BinaryWriter>)");
+    uT ret8(__types[0], U_ALLOCA(__types[0]->ValueSize));
+    uT elm(__types[0], U_ALLOCA(__types[0]->ValueSize));
+    uPtr(writer)->Write5(::g::Uno::Collections::EnumerableExtensions::Count(__types[1], array));
+
+    for (uObject* enum1 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(array), __types[2])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[24/*Uno.Collections.IEnumerator*/])); )
+    {
+        elm = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), __types[3]), &ret8), ret8);
+        uPtr(elementWriter)->Invoke(2, (void*)elm, writer);
+    }
 }
 
-uType* LoadingScreen_typeof()
+// public static void WriteImmutableList(System.IO.BinaryWriter writer, Uno.Collections.IEnumerable<object> elements, Uno.Action<object> writeElement) [static] :285
+void List::WriteImmutableList(::g::System::IO::BinaryWriter* writer, uObject* elements, uDelegate* writeElement)
 {
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
+    uStackFrame __("Outracks.Simulator.List", "WriteImmutableList(System.IO.BinaryWriter,Uno.Collections.IEnumerable<object>,Uno.Action<object>)");
+    uArray* elementsArray = (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[51/*Uno.Collections.EnumerableExtensions.ToArray<object>*/], elements);
+    uPtr(writer)->Write5(uPtr(elementsArray)->Length());
 
-    uTypeOptions options;
-    options.ObjectSize = sizeof(LoadingScreen);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Outracks.Simulator.LoadingScreen", options);
-    type->fp_build_ = LoadingScreen_build;
-    type->fp_ctor_ = (void*)LoadingScreen__New1_fn;
-    return type;
-}
-
-// public generated LoadingScreen() :1230
-void LoadingScreen__ctor__fn(LoadingScreen* __this)
-{
-    __this->ctor_();
-}
-
-// public generated LoadingScreen New() :1230
-void LoadingScreen__New1_fn(LoadingScreen** __retval)
-{
-    *__retval = LoadingScreen::New1();
-}
-
-// public static void Show(Outracks.Simulator.FakeApp app, string header, string message) :1232
-void LoadingScreen__Show_fn(::g::Outracks::Simulator::FakeApp* app, uString* header, uString* message)
-{
-    LoadingScreen::Show(app, header, message);
-}
-
-// public generated LoadingScreen() [instance] :1230
-void LoadingScreen::ctor_()
-{
-}
-
-// public generated LoadingScreen New() [static] :1230
-LoadingScreen* LoadingScreen::New1()
-{
-    LoadingScreen* obj8 = (LoadingScreen*)uNew(LoadingScreen_typeof());
-    obj8->ctor_();
-    return obj8;
-}
-
-// public static void Show(Outracks.Simulator.FakeApp app, string header, string message) [static] :1232
-void LoadingScreen::Show(::g::Outracks::Simulator::FakeApp* app, uString* header, uString* message)
-{
-    uStackFrame __("Outracks.Simulator.LoadingScreen", "Show(Outracks.Simulator.FakeApp,string,string)");
-    ::g::Fuse::Controls::StackPanel* collection1;
-    ::g::Uno::Float4 ind5;
-    uObject* array2;
-    ::g::Fuse::Controls::Text* collection3;
-    ::g::Uno::Float4 ind6;
-    ::g::Fuse::Controls::Text* collection4;
-    ::g::Uno::Float4 ind7;
-    uPtr(::g::Outracks::Simulator::UserAppState::Default())->ApplyTo(app);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(app)->Children1()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), (collection1 = ::g::Fuse::Controls::StackPanel::New4(), uPtr(collection1)->Alignment(10), 10, ind5 = ::g::Uno::Float4__New1(40.0f), uPtr(collection1)->Padding(ind5), ind5, array2 = uPtr(collection1)->Children(), ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array2), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), (collection3 = ::g::Fuse::Controls::Text::New3(), ind6 = ::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 20.0f), uPtr(collection3)->Margin(ind6), ind6, uPtr(collection3)->Value(header), header, uPtr(collection3)->FontSize(40.0f), 40.0f, uPtr(collection3)->TextAlignment(1), 1, uPtr(collection3)->TextWrapping(1), 1, collection3)), ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array2), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), (collection4 = ::g::Fuse::Controls::Text::New3(), ind7 = ::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 20.0f), uPtr(collection4)->Margin(ind7), ind7, uPtr(collection4)->Value(message), message, uPtr(collection4)->TextWrapping(1), 1, collection4)), collection1));
+    for (int index2 = 0, length3 = elementsArray->Length(); index2 < length3; ++index2)
+    {
+        uObject* element = uPtr(elementsArray)->Strong<uObject*>(index2);
+        uPtr(writeElement)->InvokeVoid(element);
+    }
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/exceptions/$.uno
+// ----------------------------------------------------------------------------------
 
-// internal sealed class ModalDialog :1261
-// {
-static void ModalDialog_build(uType* type)
-{
-    ::STRINGS[55] = uString::Const("auto");
-    ::STRINGS[56] = uString::Const("1*,auto");
-    ::STRINGS[57] = uString::Const("1*,1*,2*");
-    ::TYPES[11] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
-    ::TYPES[84] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(11/*ToArray<Fuse.Controls.Control>*/, ::g::Fuse::Controls::Control_typeof(), NULL);
-    ::TYPES[85] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Controls::Control_typeof(), NULL);
-    ::TYPES[1] = ::g::Uno::Collections::IEnumerator_typeof();
-    ::TYPES[86] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Fuse::Controls::Control_typeof(), NULL);
-}
-
-uType* ModalDialog_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.ObjectSize = sizeof(ModalDialog);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("Outracks.Simulator.ModalDialog", options);
-    type->fp_build_ = ModalDialog_build;
-    type->fp_ctor_ = (void*)ModalDialog__New1_fn;
-    return type;
-}
-
-// public generated ModalDialog() :1261
-void ModalDialog__ctor__fn(ModalDialog* __this)
-{
-    __this->ctor_();
-}
-
-// public generated ModalDialog New() :1261
-void ModalDialog__New1_fn(ModalDialog** __retval)
-{
-    *__retval = ModalDialog::New1();
-}
-
-// public static void Show(Outracks.Simulator.FakeApp app, string header, string body, string details, Uno.Collections.IEnumerable<Fuse.Controls.Control> buttons) :1307
-void ModalDialog__Show_fn(::g::Outracks::Simulator::FakeApp* app, uString* header, uString* body, uString* details, uObject* buttons)
-{
-    ModalDialog::Show(app, header, body, details, buttons);
-}
-
-// public static void ShowPrompt(Outracks.Simulator.FakeApp app, string header, string body, Fuse.Controls.Control inputControl, Uno.Collections.IEnumerable<Fuse.Controls.Control> buttons) :1263
-void ModalDialog__ShowPrompt_fn(::g::Outracks::Simulator::FakeApp* app, uString* header, uString* body, ::g::Fuse::Controls::Control* inputControl, uObject* buttons)
-{
-    ModalDialog::ShowPrompt(app, header, body, inputControl, buttons);
-}
-
-// public generated ModalDialog() [instance] :1261
-void ModalDialog::ctor_()
-{
-}
-
-// public generated ModalDialog New() [static] :1261
-ModalDialog* ModalDialog::New1()
-{
-    ModalDialog* obj42 = (ModalDialog*)uNew(ModalDialog_typeof());
-    obj42->ctor_();
-    return obj42;
-}
-
-// public static void Show(Outracks.Simulator.FakeApp app, string header, string body, string details, Uno.Collections.IEnumerable<Fuse.Controls.Control> buttons) [static] :1307
-void ModalDialog::Show(::g::Outracks::Simulator::FakeApp* app, uString* header, uString* body, uString* details, uObject* buttons)
-{
-    uStackFrame __("Outracks.Simulator.ModalDialog", "Show(Outracks.Simulator.FakeApp,string,string,string,Uno.Collections.IEnumerable<Fuse.Controls.Control>)");
-    ::g::Fuse::Controls::Grid* collection7;
-    ::g::Fuse::Controls::ClientPanel* collection8;
-    uObject* array9;
-    ::g::Fuse::Controls::Grid* collection10;
-    uObject* array11;
-    ::g::Fuse::Controls::Grid* collection12;
-    ::g::Uno::Float4 ind34;
-    uObject* array13;
-    ::g::Fuse::Controls::Image* collection14;
-    ::g::Uno::UX::FileSource* ind35;
-    ::g::Fuse::Controls::Text* collection15;
-    ::g::Fuse::Controls::Panel* collection16;
-    uObject* array17;
-    ::g::Fuse::Controls::ScrollView* collection18;
-    ::g::Uno::Float4 ind36;
-    ::g::Fuse::Elements::Element* ind37;
-    ::g::Fuse::Controls::StackPanel* collection19;
-    uObject* array20;
-    ::g::Fuse::Controls::Text* collection21;
-    ::g::Uno::Float4 ind38;
-    ::g::Fuse::Controls::Panel* collection22;
-    uObject* array23;
-    ::g::Fuse::Controls::ScrollView* collection24;
-    ::g::Fuse::Controls::Text* collection25;
-    collection7 = ::g::Fuse::Controls::Grid::New4();
-    ::g::Uno::Float4 ind33 = ::g::Uno::Float4__New1(15.0f);
-    uPtr(collection7)->Margin(ind33);
-    ;
-    uPtr(collection7)->DefaultRow(::STRINGS[55/*"auto"*/]);
-    ::STRINGS[55/*"auto"*/];
-    ::g::Fuse::Controls::Grid* buttonGrid = collection7;
-    ::g::Fuse::Controls::Panel* detailPanel = ::g::Fuse::Controls::Panel::New3();
-    collection8 = ::g::Fuse::Controls::ClientPanel::New5();
-    array9 = uPtr(collection8)->Children();
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array9), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), (collection10 = ::g::Fuse::Controls::Grid::New4(), uPtr(collection10)->Rows(::STRINGS[56/*"1*,auto"*/]), ::STRINGS[56/*"1*,auto"*/], array11 = uPtr(collection10)->Children(), ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array11), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), (collection12 = ::g::Fuse::Controls::Grid::New4(), uPtr(collection12)->Rows(::STRINGS[57/*"1*,1*,2*"*/]), ::STRINGS[57/*"1*,1*,2*"*/], ind34 = ::g::Uno::Float4__New1(40.0f), uPtr(collection12)->Margin(ind34), ind34, array13 = uPtr(collection12)->Children(), ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array13), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), (collection14 = ::g::Fuse::Controls::Image::New3(), ind35 = ::g::Uno::UX::BundleFileSource::New1(::g::OutracksSimulatorClientUno_bundle::fight90e57290()), uPtr(collection14)->File(ind35), ind35, collection14)), ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array13), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), (collection15 = ::g::Fuse::Controls::Text::New3(), uPtr(collection15)->Value(header), header, uPtr(collection15)->FontSize(25.0f), 25.0f, uPtr(collection15)->TextAlignment(1), 1, uPtr(collection15)->Alignment(8), 8, uPtr(collection15)->TextWrapping(1), 1, collection15)), ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array13), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), (collection16 = ::g::Fuse::Controls::Panel::New3(), array17 = uPtr(collection16)->Children(), ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array17), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), (collection18 = ::g::Fuse::Controls::ScrollView::New4(), ind36 = ::g::Uno::Float4__New2(0.0f, 10.0f, 0.0f, 10.0f), uPtr(collection18)->Margin(ind36), ind36, ind37 = (collection19 = ::g::Fuse::Controls::StackPanel::New4(), array20 = uPtr(collection19)->Children(), ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array20), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), (collection21 = ::g::Fuse::Controls::Text::New3(), uPtr(collection21)->TextWrapping(1), 1, uPtr(collection21)->TextAlignment(0), 0, uPtr(collection21)->Alignment(2), 2, uPtr(collection21)->Value(body), body, uPtr(collection21)->FontSize(15.0f), 15.0f, ind38 = ::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 20.0f), uPtr(collection21)->Margin(ind38), ind38, collection21)), ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array20), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), detailPanel), collection19), uPtr(collection18)->Content(ind37), ind37, collection18)), collection16)), collection12)), ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array11), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), (collection22 = ::g::Fuse::Controls::Panel::New3(), array23 = uPtr(collection22)->Children(), ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array23), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), buttonGrid), collection22)), collection10));
-    ::g::Fuse::Controls::ClientPanel* clientPanel = collection8;
-
-    if (!::g::Uno::String::IsNullOrWhiteSpace(details))
-    {
-        collection24 = ::g::Fuse::Controls::ScrollView::New4();
-        ::g::Uno::Float4 ind39 = ::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 20.0f);
-        uPtr(collection24)->Margin(ind39);
-        ;
-        uPtr(collection24)->AllowedScrollDirections(3);
-        3;
-        ::g::Uno::UX::Size ind40 = ::g::Uno::UX::Size__op_Implicit1(200);
-        uPtr(collection24)->MaxHeight(ind40);
-        ;
-        ::g::Fuse::Elements::Element* ind41 = (collection25 = ::g::Fuse::Controls::Text::New3(), uPtr(collection25)->FontSize(10.0f), 10.0f, uPtr(collection25)->Value(details), details, collection25);
-        uPtr(collection24)->Content(ind41);
-        ;
-        ::g::Fuse::Controls::ScrollView* detailsScroller = collection24;
-        ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(detailPanel)->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), detailsScroller);
-    }
-
-    uArray* buttonArray = (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[84/*Uno.Collections.EnumerableExtensions.ToArray<Fuse.Controls.Control>*/], buttons);
-    uPtr(buttonGrid)->ColumnCount(uPtr(buttonArray)->Length());
-
-    for (int index27 = 0, length28 = buttonArray->Length(); index27 < length28; ++index27)
-    {
-        ::g::Fuse::Controls::Control* btn = uPtr(buttonArray)->Strong< ::g::Fuse::Controls::Control*>(index27);
-        ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(buttonGrid)->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), btn);
-    }
-
-    uPtr(::g::Outracks::Simulator::UserAppState::Default())->ApplyTo(::g::Outracks::Simulator::Context::App());
-    ::g::Uno::Collections::ICollection::Clear(uInterface(uPtr(uPtr(app)->Children1()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(app->Children1()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), clientPanel);
-}
-
-// public static void ShowPrompt(Outracks.Simulator.FakeApp app, string header, string body, Fuse.Controls.Control inputControl, Uno.Collections.IEnumerable<Fuse.Controls.Control> buttons) [static] :1263
-void ModalDialog::ShowPrompt(::g::Outracks::Simulator::FakeApp* app, uString* header, uString* body, ::g::Fuse::Controls::Control* inputControl, uObject* buttons)
-{
-    uStackFrame __("Outracks.Simulator.ModalDialog", "ShowPrompt(Outracks.Simulator.FakeApp,string,string,Fuse.Controls.Control,Uno.Collections.IEnumerable<Fuse.Controls.Control>)");
-    ::g::Fuse::Controls::StackPanel* collection1;
-    uObject* array2;
-    ::g::Fuse::Controls::Text* collection3;
-    ::g::Uno::Float4 ind30;
-    ::g::Fuse::Controls::Text* collection4;
-    ::g::Uno::Float4 ind31;
-    ::g::Fuse::Controls::StackPanel* collection5;
-    ::g::Fuse::Controls::Control* ret43;
-    collection1 = ::g::Fuse::Controls::StackPanel::New4();
-    uPtr(collection1)->Alignment(10);
-    10;
-    ::g::Uno::Float4 ind29 = ::g::Uno::Float4__New1(40.0f);
-    uPtr(collection1)->Padding(ind29);
-    ;
-    array2 = uPtr(collection1)->Children();
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array2), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), (collection3 = ::g::Fuse::Controls::Text::New3(), ind30 = ::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 20.0f), uPtr(collection3)->Margin(ind30), ind30, uPtr(collection3)->Value(header), header, uPtr(collection3)->FontSize(40.0f), 40.0f, uPtr(collection3)->TextAlignment(1), 1, uPtr(collection3)->TextWrapping(1), 1, collection3));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array2), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), (collection4 = ::g::Fuse::Controls::Text::New3(), ind31 = ::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 20.0f), uPtr(collection4)->Margin(ind31), ind31, uPtr(collection4)->Value(body), body, uPtr(collection4)->TextWrapping(1), 1, collection4));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(array2), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), inputControl);
-    ::g::Fuse::Controls::StackPanel* stackPanel = collection1;
-    collection5 = ::g::Fuse::Controls::StackPanel::New4();
-    ::g::Uno::Float4 ind32 = ::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 20.0f);
-    uPtr(collection5)->Margin(ind32);
-    ;
-    uPtr(collection5)->Orientation(0);
-    0;
-    uPtr(collection5)->Alignment(10);
-    10;
-    ::g::Fuse::Controls::StackPanel* buttonPanel = collection5;
-
-    for (uObject* enum6 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(buttons), ::TYPES[85/*Uno.Collections.IEnumerable<Fuse.Controls.Control>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum6), ::TYPES[1/*Uno.Collections.IEnumerator*/])); )
-    {
-        ::g::Fuse::Controls::Control* btn = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum6), ::TYPES[86/*Uno.Collections.IEnumerator<Fuse.Controls.Control>*/]), &ret43), ret43);
-        ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(buttonPanel)->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), btn);
-    }
-
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(stackPanel)->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), buttonPanel);
-    ::g::Fuse::Controls::ClientPanel* root = ::g::Fuse::Controls::ClientPanel::New5();
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(root->Children()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), stackPanel);
-    uPtr(::g::Outracks::Simulator::UserAppState::Default())->ApplyTo(::g::Outracks::Simulator::Context::App());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(app)->Children1()), ::TYPES[11/*Uno.Collections.ICollection<Fuse.Node>*/]), root);
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/$.uno
-// -------------------------------------------------------------------------
-
-// public sealed class NonExhaustiveMatch :148
+// public sealed class NonExhaustiveMatch :61
 // {
 static void NonExhaustiveMatch_build(uType* type)
 {
@@ -6032,25 +3305,25 @@ static void NonExhaustiveMatch_build(uType* type)
     return type;
 }
 
-// public generated NonExhaustiveMatch() :148
+// public generated NonExhaustiveMatch() :61
 void NonExhaustiveMatch__ctor_3_fn(NonExhaustiveMatch* __this)
 {
     __this->ctor_3();
 }
 
-// public generated NonExhaustiveMatch New() :148
+// public generated NonExhaustiveMatch New() :61
 void NonExhaustiveMatch__New4_fn(NonExhaustiveMatch** __retval)
 {
     *__retval = NonExhaustiveMatch::New4();
 }
 
-// public generated NonExhaustiveMatch() [instance] :148
+// public generated NonExhaustiveMatch() [instance] :61
 void NonExhaustiveMatch::ctor_3()
 {
     ctor_();
 }
 
-// public generated NonExhaustiveMatch New() [static] :148
+// public generated NonExhaustiveMatch New() [static] :61
 NonExhaustiveMatch* NonExhaustiveMatch::New4()
 {
     NonExhaustiveMatch* obj1 = (NonExhaustiveMatch*)uNew(NonExhaustiveMatch_typeof());
@@ -6059,27 +3332,252 @@ NonExhaustiveMatch* NonExhaustiveMatch::New4()
 }
 // }
 
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/$.uno
+// -----------------------------------------------------------------------
+
+// public sealed class ObjectIdentifier :24
+// {
+// static ObjectIdentifier() :24
+static void ObjectIdentifier__cctor__fn(uType* __type)
+{
+    ObjectIdentifier::None_ = ObjectIdentifier::New2(::STRINGS[23/*"N/A"*/], 0);
+}
+
+static void ObjectIdentifier_build(uType* type)
+{
+    ::STRINGS[23] = uString::Const("N/A");
+    ::STRINGS[24] = uString::Const("#");
+    type->SetFields(0,
+        ::g::Uno::String_typeof(), offsetof(::g::Outracks::Simulator::ObjectIdentifier, _string), 0,
+        ::g::Uno::String_typeof(), offsetof(::g::Outracks::Simulator::ObjectIdentifier, Document), 0,
+        type, (uintptr_t)&::g::Outracks::Simulator::ObjectIdentifier::None_, uFieldFlagsStatic);
+    type->Reflection.SetFields(2,
+        new uField("Document", 1),
+        new uField("None", 2));
+    type->Reflection.SetFunctions(6,
+        new uFunction("Equals", NULL, (void*)ObjectIdentifier__Equals2_fn, 0, false, ::g::Uno::Bool_typeof(), 1, type),
+        new uFunction(".ctor", NULL, (void*)ObjectIdentifier__New1_fn, 0, true, type, 2, ::g::Uno::String_typeof(), ::g::Uno::String_typeof()),
+        new uFunction(".ctor", NULL, (void*)ObjectIdentifier__New2_fn, 0, true, type, 2, ::g::Uno::String_typeof(), ::g::Uno::Int_typeof()),
+        new uFunction("Read", NULL, (void*)ObjectIdentifier__Read_fn, 0, true, type, 1, ::g::System::IO::BinaryReader_typeof()),
+        new uFunction("Write", NULL, (void*)ObjectIdentifier__Write_fn, 0, true, uVoid_typeof(), 2, type, ::g::System::IO::BinaryWriter_typeof()),
+        new uFunction("Write", NULL, (void*)ObjectIdentifier__Write1_fn, 0, false, uVoid_typeof(), 1, ::g::System::IO::BinaryWriter_typeof()));
+}
+
+uType* ObjectIdentifier_typeof()
+{
+    static uSStrong<uType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.FieldCount = 3;
+    options.ObjectSize = sizeof(ObjectIdentifier);
+    options.TypeSize = sizeof(uType);
+    type = uClassType::New("Outracks.Simulator.ObjectIdentifier", options);
+    type->fp_build_ = ObjectIdentifier_build;
+    type->fp_cctor_ = ObjectIdentifier__cctor__fn;
+    type->fp_Equals = (void(*)(uObject*, uObject*, bool*))ObjectIdentifier__Equals_fn;
+    type->fp_GetHashCode = (void(*)(uObject*, int*))ObjectIdentifier__GetHashCode_fn;
+    type->fp_ToString = (void(*)(uObject*, uString**))ObjectIdentifier__ToString_fn;
+    return type;
+}
+
+// public ObjectIdentifier(string str, [string document]) :59
+void ObjectIdentifier__ctor__fn(ObjectIdentifier* __this, uString* str, uString* document)
+{
+    __this->ctor_(str, document);
+}
+
+// public ObjectIdentifier(string document, int tagIndex) :53
+void ObjectIdentifier__ctor_1_fn(ObjectIdentifier* __this, uString* document, int* tagIndex)
+{
+    __this->ctor_1(document, *tagIndex);
+}
+
+// public override sealed bool Equals(object obj) :72
+void ObjectIdentifier__Equals_fn(ObjectIdentifier* __this, uObject* obj, bool* __retval)
+{
+    uStackFrame __("Outracks.Simulator.ObjectIdentifier", "Equals(object)");
+
+    if (::g::Uno::Object::ReferenceEquals(NULL, obj))
+        return *__retval = false, void();
+
+    if (::g::Uno::Object::ReferenceEquals(__this, obj))
+        return *__retval = true, void();
+
+    return *__retval = uIs(obj, __this->__type) && __this->Equals2(uCast<ObjectIdentifier*>(obj, __this->__type)), void();
+}
+
+// public bool Equals(Outracks.Simulator.ObjectIdentifier other) :65
+void ObjectIdentifier__Equals2_fn(ObjectIdentifier* __this, ObjectIdentifier* other, bool* __retval)
+{
+    *__retval = __this->Equals2(other);
+}
+
+// public override sealed int GetHashCode() :79
+void ObjectIdentifier__GetHashCode_fn(ObjectIdentifier* __this, int* __retval)
+{
+    uStackFrame __("Outracks.Simulator.ObjectIdentifier", "GetHashCode()");
+    return *__retval = uPtr(__this->_string)->GetHashCode(), void();
+}
+
+// public ObjectIdentifier New(string str, [string document]) :59
+void ObjectIdentifier__New1_fn(uString* str, uString* document, ObjectIdentifier** __retval)
+{
+    *__retval = ObjectIdentifier::New1(str, document);
+}
+
+// public ObjectIdentifier New(string document, int tagIndex) :53
+void ObjectIdentifier__New2_fn(uString* document, int* tagIndex, ObjectIdentifier** __retval)
+{
+    *__retval = ObjectIdentifier::New2(document, *tagIndex);
+}
+
+// public static operator ==(Outracks.Simulator.ObjectIdentifier left, Outracks.Simulator.ObjectIdentifier right) :84
+void ObjectIdentifier__op_Equality_fn(ObjectIdentifier* left, ObjectIdentifier* right, bool* __retval)
+{
+    *__retval = ObjectIdentifier::op_Equality(left, right);
+}
+
+// public static operator !=(Outracks.Simulator.ObjectIdentifier left, Outracks.Simulator.ObjectIdentifier right) :89
+void ObjectIdentifier__op_Inequality_fn(ObjectIdentifier* left, ObjectIdentifier* right, bool* __retval)
+{
+    *__retval = ObjectIdentifier::op_Inequality(left, right);
+}
+
+// public static Outracks.Simulator.ObjectIdentifier Read(System.IO.BinaryReader reader) :39
+void ObjectIdentifier__Read_fn(::g::System::IO::BinaryReader* reader, ObjectIdentifier** __retval)
+{
+    *__retval = ObjectIdentifier::Read(reader);
+}
+
+// public override sealed string ToString() :94
+void ObjectIdentifier__ToString_fn(ObjectIdentifier* __this, uString** __retval)
+{
+    return *__retval = __this->_string, void();
+}
+
+// public static void Write(Outracks.Simulator.ObjectIdentifier id, System.IO.BinaryWriter writer) :28
+void ObjectIdentifier__Write_fn(ObjectIdentifier* id, ::g::System::IO::BinaryWriter* writer)
+{
+    ObjectIdentifier::Write(id, writer);
+}
+
+// public void Write(System.IO.BinaryWriter writer) :33
+void ObjectIdentifier__Write1_fn(ObjectIdentifier* __this, ::g::System::IO::BinaryWriter* writer)
+{
+    __this->Write1(writer);
+}
+
+uSStrong<ObjectIdentifier*> ObjectIdentifier::None_;
+
+// public ObjectIdentifier(string str, [string document]) [instance] :59
+void ObjectIdentifier::ctor_(uString* str, uString* document)
+{
+    _string = str;
+    Document = document;
+}
+
+// public ObjectIdentifier(string document, int tagIndex) [instance] :53
+void ObjectIdentifier::ctor_1(uString* document, int tagIndex)
+{
+    uStackFrame __("Outracks.Simulator.ObjectIdentifier", ".ctor(string,int)");
+    _string = ::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(document, ::STRINGS[24/*"#"*/]), uBox<int>(::TYPES[4/*int*/], tagIndex));
+    Document = document;
+}
+
+// public bool Equals(Outracks.Simulator.ObjectIdentifier other) [instance] :65
+bool ObjectIdentifier::Equals2(ObjectIdentifier* other)
+{
+    uStackFrame __("Outracks.Simulator.ObjectIdentifier", "Equals(Outracks.Simulator.ObjectIdentifier)");
+
+    if (::g::Uno::Object::ReferenceEquals(NULL, other))
+        return false;
+
+    if (::g::Uno::Object::ReferenceEquals(this, other))
+        return true;
+
+    return ::g::Uno::String::Equals2(uPtr(_string), uPtr(other)->_string);
+}
+
+// public void Write(System.IO.BinaryWriter writer) [instance] :33
+void ObjectIdentifier::Write1(::g::System::IO::BinaryWriter* writer)
+{
+    uStackFrame __("Outracks.Simulator.ObjectIdentifier", "Write(System.IO.BinaryWriter)");
+    uPtr(writer)->Write6(_string);
+    writer->Write6(Document);
+}
+
+// public ObjectIdentifier New(string str, [string document]) [static] :59
+ObjectIdentifier* ObjectIdentifier::New1(uString* str, uString* document)
+{
+    ObjectIdentifier* obj2 = (ObjectIdentifier*)uNew(ObjectIdentifier_typeof());
+    obj2->ctor_(str, document);
+    return obj2;
+}
+
+// public ObjectIdentifier New(string document, int tagIndex) [static] :53
+ObjectIdentifier* ObjectIdentifier::New2(uString* document, int tagIndex)
+{
+    ObjectIdentifier* obj1 = (ObjectIdentifier*)uNew(ObjectIdentifier_typeof());
+    obj1->ctor_1(document, tagIndex);
+    return obj1;
+}
+
+// public static operator ==(Outracks.Simulator.ObjectIdentifier left, Outracks.Simulator.ObjectIdentifier right) [static] :84
+bool ObjectIdentifier::op_Equality(ObjectIdentifier* left, ObjectIdentifier* right)
+{
+    uStackFrame __("Outracks.Simulator.ObjectIdentifier", "==(Outracks.Simulator.ObjectIdentifier,Outracks.Simulator.ObjectIdentifier)");
+    ObjectIdentifier_typeof()->Init();
+    return ::g::Uno::Object::Equals1(left, right);
+}
+
+// public static operator !=(Outracks.Simulator.ObjectIdentifier left, Outracks.Simulator.ObjectIdentifier right) [static] :89
+bool ObjectIdentifier::op_Inequality(ObjectIdentifier* left, ObjectIdentifier* right)
+{
+    uStackFrame __("Outracks.Simulator.ObjectIdentifier", "!=(Outracks.Simulator.ObjectIdentifier,Outracks.Simulator.ObjectIdentifier)");
+    ObjectIdentifier_typeof()->Init();
+    return !::g::Uno::Object::Equals1(left, right);
+}
+
+// public static Outracks.Simulator.ObjectIdentifier Read(System.IO.BinaryReader reader) [static] :39
+ObjectIdentifier* ObjectIdentifier::Read(::g::System::IO::BinaryReader* reader)
+{
+    uStackFrame __("Outracks.Simulator.ObjectIdentifier", "Read(System.IO.BinaryReader)");
+    ObjectIdentifier_typeof()->Init();
+    uString* str = uPtr(reader)->ReadString();
+    uString* document = reader->ReadString();
+    return ObjectIdentifier::New1(str, document);
+}
+
+// public static void Write(Outracks.Simulator.ObjectIdentifier id, System.IO.BinaryWriter writer) [static] :28
+void ObjectIdentifier::Write(ObjectIdentifier* id, ::g::System::IO::BinaryWriter* writer)
+{
+    uStackFrame __("Outracks.Simulator.ObjectIdentifier", "Write(Outracks.Simulator.ObjectIdentifier,System.IO.BinaryWriter)");
+    ObjectIdentifier_typeof()->Init();
+    uPtr(id)->Write1(writer);
+}
+// }
+
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
 // -----------------------------------------------------------------------
 
-// public sealed class OfflineSimulatorClient :856
+// public sealed class OfflineSimulatorClient :1617
 // {
 static void OfflineSimulatorClient_build(uType* type)
 {
-    ::TYPES[87] = ::g::Outracks::Simulator::ConcurrentQueue_typeof()->MakeType(::g::Outracks::Simulator::Protocol::MessageFromClient_typeof(), NULL);
-    ::TYPES[88] = ::g::Outracks::Simulator::ConcurrentQueue_typeof()->MakeType(::g::Outracks::Simulator::Protocol::MessageToClient_typeof(), NULL);
+    ::TYPES[52] = ::g::Outracks::Simulator::ConcurrentQueue_typeof()->MakeType(::g::Outracks::IBinaryMessage_typeof(), NULL);
     type->SetInterfaces(
         ::g::Outracks::Simulator::ISimulatorClient_typeof(), offsetof(OfflineSimulatorClient_type, interface0),
         ::g::Uno::IDisposable_typeof(), offsetof(OfflineSimulatorClient_type, interface1));
     type->SetFields(0,
-        ::TYPES[87/*Outracks.Simulator.ConcurrentQueue<Outracks.Simulator.Protocol.MessageFromClient>*/], offsetof(::g::Outracks::Simulator::OfflineSimulatorClient, _messagesFromClient), 0,
-        ::TYPES[88/*Outracks.Simulator.ConcurrentQueue<Outracks.Simulator.Protocol.MessageToClient>*/], offsetof(::g::Outracks::Simulator::OfflineSimulatorClient, _messagesToClient), 0);
+        ::TYPES[52/*Outracks.Simulator.ConcurrentQueue<Outracks.IBinaryMessage>*/], offsetof(::g::Outracks::Simulator::OfflineSimulatorClient, _messagesFromClient), 0,
+        ::TYPES[52/*Outracks.Simulator.ConcurrentQueue<Outracks.IBinaryMessage>*/], offsetof(::g::Outracks::Simulator::OfflineSimulatorClient, _messagesToClient), 0);
     type->Reflection.SetFunctions(5,
         new uFunction("Dispose", NULL, (void*)OfflineSimulatorClient__Dispose_fn, 0, false, uVoid_typeof(), 0),
-        new uFunction("get_IncommingMessages", NULL, (void*)OfflineSimulatorClient__get_IncommingMessages_fn, 0, false, ::TYPES[88/*Outracks.Simulator.ConcurrentQueue<Outracks.Simulator.Protocol.MessageToClient>*/], 0),
+        new uFunction("get_IncommingMessages", NULL, (void*)OfflineSimulatorClient__get_IncommingMessages_fn, 0, false, ::TYPES[52/*Outracks.Simulator.ConcurrentQueue<Outracks.IBinaryMessage>*/], 0),
         new uFunction("get_IsOnline", NULL, (void*)OfflineSimulatorClient__get_IsOnline_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
-        new uFunction(".ctor", NULL, (void*)OfflineSimulatorClient__New1_fn, 0, true, type, 1, ::g::Outracks::Simulator::Protocol::MessageToClient_typeof()->Array()),
-        new uFunction("Send", NULL, (void*)OfflineSimulatorClient__Send_fn, 0, false, uVoid_typeof(), 1, ::g::Outracks::Simulator::Protocol::MessageFromClient_typeof()));
+        new uFunction(".ctor", NULL, (void*)OfflineSimulatorClient__New1_fn, 0, true, type, 1, ::g::Outracks::IBinaryMessage_typeof()->Array()),
+        new uFunction("Send", NULL, (void*)OfflineSimulatorClient__Send_fn, 0, false, uVoid_typeof(), 1, ::g::Outracks::IBinaryMessage_typeof()));
 }
 
 OfflineSimulatorClient_type* OfflineSimulatorClient_typeof()
@@ -6094,91 +3592,91 @@ OfflineSimulatorClient_type* OfflineSimulatorClient_typeof()
     options.TypeSize = sizeof(OfflineSimulatorClient_type);
     type = (OfflineSimulatorClient_type*)uClassType::New("Outracks.Simulator.OfflineSimulatorClient", options);
     type->fp_build_ = OfflineSimulatorClient_build;
-    type->interface0.fp_Send = (void(*)(uObject*, ::g::Outracks::Simulator::Protocol::MessageFromClient*))OfflineSimulatorClient__Send_fn;
+    type->interface0.fp_Send = (void(*)(uObject*, uObject*))OfflineSimulatorClient__Send_fn;
     type->interface0.fp_get_IncommingMessages = (void(*)(uObject*, ::g::Outracks::Simulator::ConcurrentQueue**))OfflineSimulatorClient__get_IncommingMessages_fn;
     type->interface0.fp_get_IsOnline = (void(*)(uObject*, bool*))OfflineSimulatorClient__get_IsOnline_fn;
     type->interface1.fp_Dispose = (void(*)(uObject*))OfflineSimulatorClient__Dispose_fn;
     return type;
 }
 
-// public OfflineSimulatorClient(Outracks.Simulator.Protocol.MessageToClient[] initialMessages) :861
+// public OfflineSimulatorClient(Outracks.IBinaryMessage[] initialMessages) :1622
 void OfflineSimulatorClient__ctor__fn(OfflineSimulatorClient* __this, uArray* initialMessages)
 {
     __this->ctor_(initialMessages);
 }
 
-// public void Dispose() :877
+// public void Dispose() :1638
 void OfflineSimulatorClient__Dispose_fn(OfflineSimulatorClient* __this)
 {
     __this->Dispose();
 }
 
-// public Outracks.Simulator.ConcurrentQueue<Outracks.Simulator.Protocol.MessageToClient> get_IncommingMessages() :869
+// public Outracks.Simulator.ConcurrentQueue<Outracks.IBinaryMessage> get_IncommingMessages() :1630
 void OfflineSimulatorClient__get_IncommingMessages_fn(OfflineSimulatorClient* __this, ::g::Outracks::Simulator::ConcurrentQueue** __retval)
 {
     *__retval = __this->IncommingMessages();
 }
 
-// public bool get_IsOnline() :884
+// public bool get_IsOnline() :1645
 void OfflineSimulatorClient__get_IsOnline_fn(OfflineSimulatorClient* __this, bool* __retval)
 {
     *__retval = __this->IsOnline();
 }
 
-// public OfflineSimulatorClient New(Outracks.Simulator.Protocol.MessageToClient[] initialMessages) :861
+// public OfflineSimulatorClient New(Outracks.IBinaryMessage[] initialMessages) :1622
 void OfflineSimulatorClient__New1_fn(uArray* initialMessages, OfflineSimulatorClient** __retval)
 {
     *__retval = OfflineSimulatorClient::New1(initialMessages);
 }
 
-// public void Send(Outracks.Simulator.Protocol.MessageFromClient message) :872
-void OfflineSimulatorClient__Send_fn(OfflineSimulatorClient* __this, ::g::Outracks::Simulator::Protocol::MessageFromClient* message)
+// public void Send(Outracks.IBinaryMessage message) :1633
+void OfflineSimulatorClient__Send_fn(OfflineSimulatorClient* __this, uObject* message)
 {
     __this->Send(message);
 }
 
-// public OfflineSimulatorClient(Outracks.Simulator.Protocol.MessageToClient[] initialMessages) [instance] :861
+// public OfflineSimulatorClient(Outracks.IBinaryMessage[] initialMessages) [instance] :1622
 void OfflineSimulatorClient::ctor_(uArray* initialMessages)
 {
-    uStackFrame __("Outracks.Simulator.OfflineSimulatorClient", ".ctor(Outracks.Simulator.Protocol.MessageToClient[])");
+    uStackFrame __("Outracks.Simulator.OfflineSimulatorClient", ".ctor(Outracks.IBinaryMessage[])");
     uArray* array1;
     int index2;
     int length3;
-    _messagesFromClient = ((::g::Outracks::Simulator::ConcurrentQueue*)::g::Outracks::Simulator::ConcurrentQueue::New1(::TYPES[87/*Outracks.Simulator.ConcurrentQueue<Outracks.Simulator.Protocol.MessageFromClient>*/]));
-    _messagesToClient = ((::g::Outracks::Simulator::ConcurrentQueue*)::g::Outracks::Simulator::ConcurrentQueue::New1(::TYPES[88/*Outracks.Simulator.ConcurrentQueue<Outracks.Simulator.Protocol.MessageToClient>*/]));
+    _messagesFromClient = ((::g::Outracks::Simulator::ConcurrentQueue*)::g::Outracks::Simulator::ConcurrentQueue::New1(::TYPES[52/*Outracks.Simulator.ConcurrentQueue<Outracks.IBinaryMessage>*/]));
+    _messagesToClient = ((::g::Outracks::Simulator::ConcurrentQueue*)::g::Outracks::Simulator::ConcurrentQueue::New1(::TYPES[52/*Outracks.Simulator.ConcurrentQueue<Outracks.IBinaryMessage>*/]));
 
     for (array1 = initialMessages, index2 = 0, length3 = uPtr(array1)->Length(); index2 < length3; ++index2)
     {
-        ::g::Outracks::Simulator::Protocol::MessageToClient* msg = uPtr(array1)->Strong< ::g::Outracks::Simulator::Protocol::MessageToClient*>(index2);
+        uObject* msg = uPtr(array1)->Strong<uObject*>(index2);
         ::g::Outracks::Simulator::ConcurrentQueue__Enqueue_fn(uPtr(_messagesToClient), msg);
     }
 }
 
-// public void Dispose() [instance] :877
+// public void Dispose() [instance] :1638
 void OfflineSimulatorClient::Dispose()
 {
 }
 
-// public Outracks.Simulator.ConcurrentQueue<Outracks.Simulator.Protocol.MessageToClient> get_IncommingMessages() [instance] :869
+// public Outracks.Simulator.ConcurrentQueue<Outracks.IBinaryMessage> get_IncommingMessages() [instance] :1630
 ::g::Outracks::Simulator::ConcurrentQueue* OfflineSimulatorClient::IncommingMessages()
 {
     return _messagesToClient;
 }
 
-// public bool get_IsOnline() [instance] :884
+// public bool get_IsOnline() [instance] :1645
 bool OfflineSimulatorClient::IsOnline()
 {
     return false;
 }
 
-// public void Send(Outracks.Simulator.Protocol.MessageFromClient message) [instance] :872
-void OfflineSimulatorClient::Send(::g::Outracks::Simulator::Protocol::MessageFromClient* message)
+// public void Send(Outracks.IBinaryMessage message) [instance] :1633
+void OfflineSimulatorClient::Send(uObject* message)
 {
-    uStackFrame __("Outracks.Simulator.OfflineSimulatorClient", "Send(Outracks.Simulator.Protocol.MessageFromClient)");
+    uStackFrame __("Outracks.Simulator.OfflineSimulatorClient", "Send(Outracks.IBinaryMessage)");
     ::g::Outracks::Simulator::ConcurrentQueue__Enqueue_fn(uPtr(_messagesFromClient), message);
 }
 
-// public OfflineSimulatorClient New(Outracks.Simulator.Protocol.MessageToClient[] initialMessages) [static] :861
+// public OfflineSimulatorClient New(Outracks.IBinaryMessage[] initialMessages) [static] :1622
 OfflineSimulatorClient* OfflineSimulatorClient::New1(uArray* initialMessages)
 {
     OfflineSimulatorClient* obj4 = (OfflineSimulatorClient*)uNew(OfflineSimulatorClient_typeof());
@@ -6187,24 +3685,27 @@ OfflineSimulatorClient* OfflineSimulatorClient::New1(uArray* initialMessages)
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/$.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
+// -----------------------------------------------------------------------
 
-// public sealed class ProxyClient :42
+// public sealed class ProxyClient :1482
 // {
 static void ProxyClient_build(uType* type)
 {
-    ::TYPES[89] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Outracks::Simulator::Task_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL), NULL);
-    ::TYPES[48] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof(), NULL);
-    ::TYPES[1] = ::g::Uno::Collections::IEnumerator_typeof();
-    ::TYPES[49] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof(), NULL);
-    ::TYPES[90] = ::g::Outracks::Simulator::Tasks_typeof()->MakeMethod(0/*Run<Uno.Net.IPEndPoint[]>*/, ::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL);
-    ::TYPES[91] = ::g::Uno::Func_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL);
-    ::TYPES[92] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(11/*ToArray<string>*/, ::g::Uno::String_typeof(), NULL);
-    ::TYPES[93] = ::g::Outracks::Simulator::Tasks_typeof()->MakeMethod(1/*WaitForFirstResult<Uno.Net.IPEndPoint[]>*/, ::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL);
-    ::TYPES[94] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL), ::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL);
+    ::TYPES[53] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Outracks::Simulator::Task_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL), NULL);
+    ::TYPES[23] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof(), NULL);
+    ::TYPES[24] = ::g::Uno::Collections::IEnumerator_typeof();
+    ::TYPES[25] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof(), NULL);
+    ::TYPES[54] = ::g::Outracks::Simulator::Tasks_typeof()->MakeMethod(0/*Run<Uno.Net.IPEndPoint[]>*/, ::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL);
+    ::TYPES[55] = ::g::Uno::Func_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL);
+    ::TYPES[56] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(10/*ToArray<string>*/, ::g::Uno::String_typeof(), NULL);
+    ::TYPES[57] = ::g::Outracks::Simulator::Tasks_typeof()->MakeMethod(1/*WaitForFirstResult<Uno.Net.IPEndPoint[]>*/, ::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL);
+    ::TYPES[58] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL), ::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL);
+    ::TYPES[59] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
+    ::TYPES[60] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
+    ::TYPES[35] = ::g::Outracks::Simulator::DesignerNotRunning_typeof();
     type->Reflection.SetFunctions(2,
-        new uFunction("GetSimulatorEndpoint", NULL, (void*)ProxyClient__GetSimulatorEndpoint_fn, 0, true, ::g::Outracks::Simulator::Task_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL), 3, ::TYPES[48/*Uno.Collections.IEnumerable<Uno.Net.IPEndPoint>*/], ::g::Uno::String_typeof(), ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL)),
+        new uFunction("GetSimulatorEndpoint", NULL, (void*)ProxyClient__GetSimulatorEndpoint_fn, 0, true, ::g::Outracks::Simulator::Task_typeof()->MakeType(::g::Uno::Net::IPEndPoint_typeof()->Array(), NULL), 3, ::TYPES[23/*Uno.Collections.IEnumerable<Uno.Net.IPEndPoint>*/], ::g::Uno::String_typeof(), ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL)),
         new uFunction(".ctor", NULL, (void*)ProxyClient__New1_fn, 0, true, type, 0));
 }
 
@@ -6222,327 +3723,93 @@ uType* ProxyClient_typeof()
     return type;
 }
 
-// public generated ProxyClient() :42
+// public generated ProxyClient() :1482
 void ProxyClient__ctor__fn(ProxyClient* __this)
 {
     __this->ctor_();
 }
 
-// public static Outracks.Simulator.Task<Uno.Net.IPEndPoint[]> GetSimulatorEndpoint(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint> proxyEndpoints, string project, Uno.Collections.IEnumerable<string> defines) :44
+// public static Outracks.Simulator.Task<Uno.Net.IPEndPoint[]> GetSimulatorEndpoint(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint> proxyEndpoints, string project, Uno.Collections.IEnumerable<string> defines) :1484
 void ProxyClient__GetSimulatorEndpoint_fn(uObject* proxyEndpoints, uString* project, uObject* defines, ::g::Outracks::Simulator::Task** __retval)
 {
     *__retval = ProxyClient::GetSimulatorEndpoint(proxyEndpoints, project, defines);
 }
 
-// public generated ProxyClient New() :42
+// public generated ProxyClient New() :1482
 void ProxyClient__New1_fn(ProxyClient** __retval)
 {
     *__retval = ProxyClient::New1();
 }
 
-// private static Uno.Net.IPEndPoint[] OnNoResult(Uno.Collections.IEnumerable<Uno.Exception> exceptions) :56
+// private static Uno.Net.IPEndPoint[] OnNoResult(Uno.Collections.IEnumerable<Uno.Exception> exceptions) :1496
 void ProxyClient__OnNoResult_fn(uObject* exceptions, uArray** __retval)
 {
     *__retval = ProxyClient::OnNoResult(exceptions);
 }
 
-// public generated ProxyClient() [instance] :42
+// public generated ProxyClient() [instance] :1482
 void ProxyClient::ctor_()
 {
 }
 
-// public static Outracks.Simulator.Task<Uno.Net.IPEndPoint[]> GetSimulatorEndpoint(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint> proxyEndpoints, string project, Uno.Collections.IEnumerable<string> defines) [static] :44
+// public static Outracks.Simulator.Task<Uno.Net.IPEndPoint[]> GetSimulatorEndpoint(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint> proxyEndpoints, string project, Uno.Collections.IEnumerable<string> defines) [static] :1484
 ::g::Outracks::Simulator::Task* ProxyClient::GetSimulatorEndpoint(uObject* proxyEndpoints, uString* project, uObject* defines)
 {
     uStackFrame __("Outracks.Simulator.ProxyClient", "GetSimulatorEndpoint(Uno.Collections.IEnumerable<Uno.Net.IPEndPoint>,string,Uno.Collections.IEnumerable<string>)");
-    ::g::Uno::Net::IPEndPoint* ret3;
-    ::g::Uno::Collections::List* tasks = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[89/*Uno.Collections.List<Outracks.Simulator.Task<Uno.Net.IPEndPoint[]>>*/]);
+    ::g::Uno::Net::IPEndPoint* ret4;
+    ::g::Uno::Collections::List* tasks = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[53/*Uno.Collections.List<Outracks.Simulator.Task<Uno.Net.IPEndPoint[]>>*/]);
 
-    for (uObject* enum1 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(proxyEndpoints), ::TYPES[48/*Uno.Collections.IEnumerable<Uno.Net.IPEndPoint>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[1/*Uno.Collections.IEnumerator*/])); )
+    for (uObject* enum1 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(proxyEndpoints), ::TYPES[23/*Uno.Collections.IEnumerable<Uno.Net.IPEndPoint>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[24/*Uno.Collections.IEnumerator*/])); )
     {
-        ::g::Uno::Net::IPEndPoint* endpoint = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), ::TYPES[49/*Uno.Collections.IEnumerator<Uno.Net.IPEndPoint>*/]), &ret3), ret3);
-        ::g::Uno::Collections::List__Add_fn(uPtr(tasks), (::g::Outracks::Simulator::Task*)::g::Outracks::Simulator::Tasks::Run(::TYPES[90/*Outracks.Simulator.Tasks.Run<Uno.Net.IPEndPoint[]>*/], uDelegate::New(::TYPES[91/*Uno.Func<Uno.Net.IPEndPoint[]>*/], (void*)::g::Outracks::Simulator::GetSimulatorEndpoint__Execute_fn, ::g::Outracks::Simulator::GetSimulatorEndpoint::New1(endpoint, project, (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[92/*Uno.Collections.EnumerableExtensions.ToArray<string>*/], defines)))));
+        ::g::Uno::Net::IPEndPoint* endpoint = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), ::TYPES[25/*Uno.Collections.IEnumerator<Uno.Net.IPEndPoint>*/]), &ret4), ret4);
+        ::g::Uno::Collections::List__Add_fn(uPtr(tasks), (::g::Outracks::Simulator::Task*)::g::Outracks::Simulator::Tasks::Run(::TYPES[54/*Outracks.Simulator.Tasks.Run<Uno.Net.IPEndPoint[]>*/], uDelegate::New(::TYPES[55/*Uno.Func<Uno.Net.IPEndPoint[]>*/], (void*)::g::Outracks::Simulator::GetSimulatorEndpoint__Execute_fn, ::g::Outracks::Simulator::GetSimulatorEndpoint::New1(endpoint, project, (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[56/*Uno.Collections.EnumerableExtensions.ToArray<string>*/], defines)))));
     }
 
-    return (::g::Outracks::Simulator::Task*)::g::Outracks::Simulator::Tasks::WaitForFirstResult(::TYPES[93/*Outracks.Simulator.Tasks.WaitForFirstResult<Uno.Net.IPEndPoint[]>*/], (uObject*)tasks, uDelegate::New(::TYPES[94/*Uno.Func<Uno.Collections.IEnumerable<Uno.Exception>, Uno.Net.IPEndPoint[]>*/], (void*)ProxyClient__OnNoResult_fn));
+    return (::g::Outracks::Simulator::Task*)::g::Outracks::Simulator::Tasks::WaitForFirstResult(::TYPES[57/*Outracks.Simulator.Tasks.WaitForFirstResult<Uno.Net.IPEndPoint[]>*/], (uObject*)tasks, uDelegate::New(::TYPES[58/*Uno.Func<Uno.Collections.IEnumerable<Uno.Exception>, Uno.Net.IPEndPoint[]>*/], (void*)ProxyClient__OnNoResult_fn));
 }
 
-// public generated ProxyClient New() [static] :42
+// public generated ProxyClient New() [static] :1482
 ProxyClient* ProxyClient::New1()
 {
-    ProxyClient* obj2 = (ProxyClient*)uNew(ProxyClient_typeof());
-    obj2->ctor_();
-    return obj2;
+    ProxyClient* obj3 = (ProxyClient*)uNew(ProxyClient_typeof());
+    obj3->ctor_();
+    return obj3;
 }
 
-// private static Uno.Net.IPEndPoint[] OnNoResult(Uno.Collections.IEnumerable<Uno.Exception> exceptions) [static] :56
+// private static Uno.Net.IPEndPoint[] OnNoResult(Uno.Collections.IEnumerable<Uno.Exception> exceptions) [static] :1496
 uArray* ProxyClient::OnNoResult(uObject* exceptions)
 {
     uStackFrame __("Outracks.Simulator.ProxyClient", "OnNoResult(Uno.Collections.IEnumerable<Uno.Exception>)");
+    ::g::Uno::Exception* ret5;
+
+    for (uObject* enum2 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(exceptions), ::TYPES[59/*Uno.Collections.IEnumerable<Uno.Exception>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum2), ::TYPES[24/*Uno.Collections.IEnumerator*/])); )
+    {
+        ::g::Uno::Exception* exception = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum2), ::TYPES[60/*Uno.Collections.IEnumerator<Uno.Exception>*/]), &ret5), ret5);
+
+        if (uIs(exception, ::TYPES[35/*Outracks.Simulator.DesignerNotRunning*/]))
+            U_THROW(::g::Outracks::Simulator::DesignerNotRunning::New4());
+    }
+
     U_THROW(::g::Outracks::Simulator::FailedToConnectToProxy::New4(exceptions));
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// internal sealed class Reifying :500
+// internal static class Serialization :696
 // {
-static void Reifying_build(uType* type)
-{
-    ::STRINGS[43] = uString::Const("Try again");
-    ::TYPES[37] = uObject_typeof()->Array();
-    ::TYPES[38] = ::g::Outracks::Simulator::ISimulatorClient_typeof();
-    ::TYPES[46] = ::g::Outracks::Simulator::DialogButton_typeof()->Array();
-    type->SetFields(1,
-        ::g::Outracks::Simulator::Protocol::Reify_typeof(), offsetof(::g::Outracks::Simulator::Reifying, _reify), 0);
-}
-
-::g::Outracks::Simulator::Connected_type* Reifying_typeof()
-{
-    static uSStrong< ::g::Outracks::Simulator::Connected_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Outracks::Simulator::Connected_typeof();
-    options.FieldCount = 2;
-    options.ObjectSize = sizeof(Reifying);
-    options.TypeSize = sizeof(::g::Outracks::Simulator::Connected_type);
-    type = (::g::Outracks::Simulator::Connected_type*)uClassType::New("Outracks.Simulator.Reifying", options);
-    type->fp_build_ = Reifying_build;
-    type->fp_OnEnterState = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))Reifying__OnEnterState_fn;
-    type->fp_OnFaulted = (void(*)(::g::Outracks::Simulator::Connected*, ::g::Uno::Exception*, ::g::Outracks::Simulator::State**))Reifying__OnFaulted_fn;
-    return type;
-}
-
-// public Reifying(Outracks.Simulator.ISimulatorClient client, Outracks.Simulator.Protocol.Reify reify) :504
-void Reifying__ctor_2_fn(Reifying* __this, uObject* client, ::g::Outracks::Simulator::Protocol::Reify* reify)
-{
-    __this->ctor_2(client, reify);
-}
-
-// public Reifying New(Outracks.Simulator.ISimulatorClient client, Outracks.Simulator.Protocol.Reify reify) :504
-void Reifying__New1_fn(uObject* client, ::g::Outracks::Simulator::Protocol::Reify* reify, Reifying** __retval)
-{
-    *__retval = Reifying::New1(client, reify);
-}
-
-// public override sealed Outracks.Simulator.State OnEnterState() :510
-void Reifying__OnEnterState_fn(Reifying* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.Reifying", "OnEnterState()");
-    ::g::Outracks::Simulator::BytecodeCache::TrySave(__this->_reify);
-    uPtr(::g::Outracks::Simulator::UserAppState::Default())->ApplyTo(::g::Outracks::Simulator::Context::App());
-    ::g::Outracks::Simulator::Runtime::VirtualMachine::Execute(uPtr(__this->_reify)->AppMutator, uArray::Init<uObject*>(::TYPES[37/*object[]*/], 1, (::g::Outracks::Simulator::FakeApp*)::g::Outracks::Simulator::Context::App()));
-    ::g::Outracks::Simulator::UserAppState* userState = ::g::Outracks::Simulator::UserAppState::Save(::g::Outracks::Simulator::Context::App());
-    return *__retval = ::g::Outracks::Simulator::Running::New1(__this->Client, userState, __this->_reify), void();
-}
-
-// protected override sealed Outracks.Simulator.State OnFaulted(Uno.Exception e) :522
-void Reifying__OnFaulted_fn(Reifying* __this, ::g::Uno::Exception* e, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.Reifying", "OnFaulted(Uno.Exception)");
-    return *__retval = ::g::Outracks::Simulator::Faulted::New2(::g::Outracks::Simulator::ISimulatorClient::IsOnline(uInterface(uPtr(__this->Client), ::TYPES[38/*Outracks.Simulator.ISimulatorClient*/])), e, uArray::Init< ::g::Outracks::Simulator::DialogButton*>(::TYPES[46/*Outracks.Simulator.DialogButton[]*/], 1, (::g::Outracks::Simulator::DialogButton*)::g::Outracks::Simulator::DialogButton::New1(::STRINGS[43/*"Try again"*/], ::g::Outracks::Simulator::ConnectingToProxy::New1()))), void();
-}
-
-// public Reifying(Outracks.Simulator.ISimulatorClient client, Outracks.Simulator.Protocol.Reify reify) [instance] :504
-void Reifying::ctor_2(uObject* client, ::g::Outracks::Simulator::Protocol::Reify* reify)
-{
-    ctor_1(client);
-    _reify = reify;
-}
-
-// public Reifying New(Outracks.Simulator.ISimulatorClient client, Outracks.Simulator.Protocol.Reify reify) [static] :504
-Reifying* Reifying::New1(uObject* client, ::g::Outracks::Simulator::Protocol::Reify* reify)
-{
-    Reifying* obj1 = (Reifying*)uNew(Reifying_typeof());
-    obj1->ctor_2(client, reify);
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal sealed class Running :528
-// {
-static void Running_build(uType* type)
-{
-    ::STRINGS[0] = uString::Const("");
-    ::STRINGS[58] = uString::Const("Restart");
-    ::STRINGS[20] = uString::Const("N/A");
-    ::STRINGS[59] = uString::Const("Density changed, reifying");
-    ::STRINGS[4] = uString::Const("/usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno");
-    ::TYPES[38] = ::g::Outracks::Simulator::ISimulatorClient_typeof();
-    ::TYPES[46] = ::g::Outracks::Simulator::DialogButton_typeof()->Array();
-    ::TYPES[95] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Visual_typeof(), NULL);
-    ::TYPES[96] = ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Visual_typeof(), NULL);
-    type->SetFields(1,
-        ::g::Outracks::Simulator::Protocol::Reify_typeof(), offsetof(::g::Outracks::Simulator::Running, _runningReify), 0,
-        ::g::Outracks::Simulator::UserAppState_typeof(), offsetof(::g::Outracks::Simulator::Running, _userApp), 0,
-        ::g::Uno::Float_typeof(), offsetof(::g::Outracks::Simulator::Running, _zoomWhenRooted), 0);
-}
-
-::g::Outracks::Simulator::Connected_type* Running_typeof()
-{
-    static uSStrong< ::g::Outracks::Simulator::Connected_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Outracks::Simulator::Connected_typeof();
-    options.FieldCount = 4;
-    options.ObjectSize = sizeof(Running);
-    options.TypeSize = sizeof(::g::Outracks::Simulator::Connected_type);
-    type = (::g::Outracks::Simulator::Connected_type*)uClassType::New("Outracks.Simulator.Running", options);
-    type->fp_build_ = Running_build;
-    type->fp_OnEnterState = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))Running__OnEnterState_fn;
-    type->fp_OnFaulted = (void(*)(::g::Outracks::Simulator::Connected*, ::g::Uno::Exception*, ::g::Outracks::Simulator::State**))Running__OnFaulted_fn;
-    type->fp_OnLeaveState = (void(*)(::g::Outracks::Simulator::State*))Running__OnLeaveState_fn;
-    type->fp_OnPointerPressed = (void(*)(::g::Outracks::Simulator::State*, ::g::Fuse::Input::PointerPressedArgs*, ::g::Outracks::Simulator::State**))Running__OnPointerPressed_fn;
-    type->fp_OnUpdate = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))Running__OnUpdate_fn;
-    return type;
-}
-
-// public Running(Outracks.Simulator.ISimulatorClient client, Outracks.Simulator.UserAppState userApp, Outracks.Simulator.Protocol.Reify runningReify) :535
-void Running__ctor_2_fn(Running* __this, uObject* client, ::g::Outracks::Simulator::UserAppState* userApp, ::g::Outracks::Simulator::Protocol::Reify* runningReify)
-{
-    __this->ctor_2(client, userApp, runningReify);
-}
-
-// private static string GetTag(Fuse.Node node) :609
-void Running__GetTag_fn(::g::Fuse::Node* node, uString** __retval)
-{
-    *__retval = Running::GetTag(node);
-}
-
-// public Running New(Outracks.Simulator.ISimulatorClient client, Outracks.Simulator.UserAppState userApp, Outracks.Simulator.Protocol.Reify runningReify) :535
-void Running__New1_fn(uObject* client, ::g::Outracks::Simulator::UserAppState* userApp, ::g::Outracks::Simulator::Protocol::Reify* runningReify, Running** __retval)
-{
-    *__retval = Running::New1(client, userApp, runningReify);
-}
-
-// public override sealed Outracks.Simulator.State OnEnterState() :545
-void Running__OnEnterState_fn(Running* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.Running", "OnEnterState()");
-    uPtr(__this->_userApp)->ApplyTo(::g::Outracks::Simulator::Context::App());
-    __this->_zoomWhenRooted = Running::QueryDensity();
-    return *__retval = __this, void();
-}
-
-// protected override sealed Outracks.Simulator.State OnFaulted(Uno.Exception e) :569
-void Running__OnFaulted_fn(Running* __this, ::g::Uno::Exception* e, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.Running", "OnFaulted(Uno.Exception)");
-    return *__retval = ::g::Outracks::Simulator::Faulted::New2(::g::Outracks::Simulator::ISimulatorClient::IsOnline(uInterface(uPtr(__this->Client), ::TYPES[38/*Outracks.Simulator.ISimulatorClient*/])), e, uArray::Init< ::g::Outracks::Simulator::DialogButton*>(::TYPES[46/*Outracks.Simulator.DialogButton[]*/], 1, (::g::Outracks::Simulator::DialogButton*)::g::Outracks::Simulator::DialogButton::New1(::STRINGS[58/*"Restart"*/], ::g::Outracks::Simulator::ConnectingToProxy::New1()))), void();
-}
-
-// public override sealed void OnLeaveState() :552
-void Running__OnLeaveState_fn(Running* __this)
-{
-    uStackFrame __("Outracks.Simulator.Running", "OnLeaveState()");
-    __this->_userApp = ::g::Outracks::Simulator::UserAppState::Save(::g::Outracks::Simulator::Context::App());
-}
-
-// public override sealed Outracks.Simulator.State OnPointerPressed(Fuse.Input.PointerPressedArgs args) :587
-void Running__OnPointerPressed_fn(Running* __this, ::g::Fuse::Input::PointerPressedArgs* args, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.Running", "OnPointerPressed(Fuse.Input.PointerPressedArgs)");
-    ::g::Fuse::Visual* ret2;
-
-    if (::g::Outracks::Simulator::Context::InputMode() != 1)
-        return *__retval = __this, void();
-
-    if (uPtr(uPtr(__this->_userApp)->Children)->Length() == 0)
-        return *__retval = __this, void();
-
-    ::g::Fuse::Visual* root = uPtr(uPtr(uPtr(__this->_userApp)->Children)->Strong< ::g::Fuse::Node*>(0))->Parent();
-
-    if (root == NULL)
-        return *__retval = __this, void();
-
-    uObject* nodes = ::g::Outracks::Simulator::EnumerableHitTestExtension::HitTest2(root, uPtr(args)->WindowPoint());
-    uString* selectedTag = (::g::Uno::Collections::ICollection::Count(uInterface(uPtr(nodes), ::TYPES[95/*Uno.Collections.ICollection<Fuse.Visual>*/])) >= 1) ? (uString*)Running::GetTag((::g::Uno::Collections::IList::get_Item_ex(uInterface(uPtr(nodes), ::TYPES[96/*Uno.Collections.IList<Fuse.Visual>*/]), uCRef<int>(0), &ret2), ret2)) : ::STRINGS[20/*"N/A"*/];
-    ::g::Outracks::Simulator::ISimulatorClient::Send(uInterface(uPtr(__this->Client), ::TYPES[38/*Outracks.Simulator.ISimulatorClient*/]), ::g::Outracks::Simulator::Protocol::SetSelection::New1(selectedTag));
-    ::g::Fuse::Preview::SelectionManager::SetSelection((uObject*)::g::Outracks::Simulator::Runtime::Selection::New1(selectedTag, NULL));
-    args->IsHandled(true);
-    return *__retval = __this, void();
-}
-
-// public override sealed Outracks.Simulator.State OnUpdate() :557
-void Running__OnUpdate_fn(Running* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.Running", "OnUpdate()");
-    ::g::Outracks::Simulator::State* ret3;
-    float currentZoom = Running::QueryDensity();
-
-    if (currentZoom != __this->_zoomWhenRooted)
-    {
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[59/*"Density cha...*/], 1, ::STRINGS[4/*"/usr/local/...*/], 562);
-        return *__retval = ::g::Outracks::Simulator::Reifying::New1(__this->Client, __this->_runningReify), void();
-    }
-
-    return *__retval = (::g::Outracks::Simulator::Connected__OnUpdate_fn(__this, &ret3), ret3), void();
-}
-
-// private static float QueryDensity() :574
-void Running__QueryDensity_fn(float* __retval)
-{
-    *__retval = Running::QueryDensity();
-}
-
-// public Running(Outracks.Simulator.ISimulatorClient client, Outracks.Simulator.UserAppState userApp, Outracks.Simulator.Protocol.Reify runningReify) [instance] :535
-void Running::ctor_2(uObject* client, ::g::Outracks::Simulator::UserAppState* userApp, ::g::Outracks::Simulator::Protocol::Reify* runningReify)
-{
-    ctor_1(client);
-    _userApp = userApp;
-    _runningReify = runningReify;
-}
-
-// private static string GetTag(Fuse.Node node) [static] :609
-uString* Running::GetTag(::g::Fuse::Node* node)
-{
-    uStackFrame __("Outracks.Simulator.Running", "GetTag(Fuse.Node)");
-
-    if (node == NULL)
-        return ::STRINGS[0/*""*/];
-
-    uString* tag = ::g::Outracks::Simulator::Runtime::ObjectTagRegistry::GetTagHash(node);
-    return ::g::Uno::String::op_Equality(tag, NULL) ? (uString*)Running::GetTag(uPtr(node)->Parent()) : tag;
-}
-
-// public Running New(Outracks.Simulator.ISimulatorClient client, Outracks.Simulator.UserAppState userApp, Outracks.Simulator.Protocol.Reify runningReify) [static] :535
-Running* Running::New1(uObject* client, ::g::Outracks::Simulator::UserAppState* userApp, ::g::Outracks::Simulator::Protocol::Reify* runningReify)
-{
-    Running* obj1 = (Running*)uNew(Running_typeof());
-    obj1->ctor_2(client, userApp, runningReify);
-    return obj1;
-}
-
-// private static float QueryDensity() [static] :574
-float Running::QueryDensity()
-{
-    uStackFrame __("Outracks.Simulator.Running", "QueryDensity()");
-    return uPtr(::g::Uno::Platform::Displays::MainDisplay())->Density();
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
-
-// internal static class Serialization :577
-// {
-// static Serialization() :577
+// static Serialization() :696
 static void Serialization__cctor__fn(uType* __type)
 {
-    Serialization::ReadString_ = uDelegate::New(::TYPES[97/*Uno.Func<Uno.IO.BinaryReader, string>*/], (void*)Serialization___ReadString_fn);
+    Serialization::ReadString_ = uDelegate::New(::TYPES[61/*Uno.Func<System.IO.BinaryReader, string>*/], (void*)Serialization___ReadString_fn);
 }
 
 static void Serialization_build(uType* type)
 {
-    ::TYPES[97] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::IO::BinaryReader_typeof(), ::g::Uno::String_typeof(), NULL);
+    ::TYPES[61] = ::g::Uno::Func1_typeof()->MakeType(::g::System::IO::BinaryReader_typeof(), ::g::Uno::String_typeof(), NULL);
     type->SetFields(0,
-        ::TYPES[97/*Uno.Func<Uno.IO.BinaryReader, string>*/], (uintptr_t)&::g::Outracks::Simulator::Serialization::ReadString_, uFieldFlagsStatic);
+        ::TYPES[61/*Uno.Func<System.IO.BinaryReader, string>*/], (uintptr_t)&::g::Outracks::Simulator::Serialization::ReadString_, uFieldFlagsStatic);
 }
 
 uClassType* Serialization_typeof()
@@ -6559,18 +3826,18 @@ uClassType* Serialization_typeof()
     return type;
 }
 
-// public static string _ReadString(Uno.IO.BinaryReader reader) :581
-void Serialization___ReadString_fn(::g::Uno::IO::BinaryReader* reader, uString** __retval)
+// public static string _ReadString(System.IO.BinaryReader reader) :700
+void Serialization___ReadString_fn(::g::System::IO::BinaryReader* reader, uString** __retval)
 {
     *__retval = Serialization::_ReadString(reader);
 }
 
 uSStrong<uDelegate*> Serialization::ReadString_;
 
-// public static string _ReadString(Uno.IO.BinaryReader reader) [static] :581
-uString* Serialization::_ReadString(::g::Uno::IO::BinaryReader* reader)
+// public static string _ReadString(System.IO.BinaryReader reader) [static] :700
+uString* Serialization::_ReadString(::g::System::IO::BinaryReader* reader)
 {
-    uStackFrame __("Outracks.Simulator.Serialization", "_ReadString(Uno.IO.BinaryReader)");
+    uStackFrame __("Outracks.Simulator.Serialization", "_ReadString(System.IO.BinaryReader)");
     Serialization_typeof()->Init();
     return uPtr(reader)->ReadString();
 }
@@ -6579,288 +3846,36 @@ uString* Serialization::_ReadString(::g::Uno::IO::BinaryReader* reader)
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
 // -----------------------------------------------------------------------
 
-// internal class ShowingModalDialog :1483
-// {
-static void ShowingModalDialog_build(uType* type)
-{
-    ::STRINGS[4] = uString::Const("/usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno");
-    ::TYPES[98] = ::g::Outracks::Simulator::Bytecode::Optional_typeof()->MakeMethod(3/*Some<Outracks.Simulator.DialogButton>*/, ::g::Outracks::Simulator::DialogButton_typeof(), NULL);
-    ::TYPES[99] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Controls::Control_typeof(), NULL);
-    ::TYPES[100] = ::g::Outracks::Simulator::Closure_typeof()->MakeMethod(0/*Apply<Outracks.Simulator.DialogButton>*/, ::g::Outracks::Simulator::DialogButton_typeof(), NULL);
-    ::TYPES[101] = ::g::Uno::Action1_typeof()->MakeType(::g::Outracks::Simulator::DialogButton_typeof(), NULL);
-    ::TYPES[55] = ::g::Fuse::Gestures::ClickedHandler_typeof();
-    ::TYPES[102] = ::g::Outracks::Simulator::ForgetAction1_typeof()->MakeType(uObject_typeof(), ::g::Fuse::Gestures::ClickedArgs_typeof(), NULL);
-    ::TYPES[103] = ::g::Outracks::Simulator::Bytecode::Optional1_typeof()->MakeType(::g::Outracks::Simulator::DialogButton_typeof(), NULL);
-    type->SetFields(0,
-        ::g::Uno::String_typeof(), offsetof(::g::Outracks::Simulator::ShowingModalDialog, _body), 0,
-        ::g::Outracks::Simulator::DialogButton_typeof()->Array(), offsetof(::g::Outracks::Simulator::ShowingModalDialog, _buttons), 0,
-        ::TYPES[103/*Outracks.Simulator.Bytecode.Optional<Outracks.Simulator.DialogButton>*/], (uintptr_t)0, uFieldFlagsConstrained,
-        ::g::Uno::String_typeof(), offsetof(::g::Outracks::Simulator::ShowingModalDialog, _details), 0,
-        ::g::Uno::String_typeof(), offsetof(::g::Outracks::Simulator::ShowingModalDialog, _header), 0);
-}
-
-::g::Outracks::Simulator::State_type* ShowingModalDialog_typeof()
-{
-    static uSStrong< ::g::Outracks::Simulator::State_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Outracks::Simulator::State_typeof();
-    options.FieldCount = 5;
-    options.ObjectSize = sizeof(ShowingModalDialog);
-    options.TypeSize = sizeof(::g::Outracks::Simulator::State_type);
-    type = (::g::Outracks::Simulator::State_type*)uClassType::New("Outracks.Simulator.ShowingModalDialog", options);
-    type->fp_build_ = ShowingModalDialog_build;
-    type->fp_OnEnterState = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))ShowingModalDialog__OnEnterState_fn;
-    type->fp_OnException = (void(*)(::g::Outracks::Simulator::State*, ::g::Uno::Exception*, ::g::Outracks::Simulator::State**))ShowingModalDialog__OnException_fn;
-    type->fp_OnUpdate = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))ShowingModalDialog__OnUpdate_fn;
-    return type;
-}
-
-// public ShowingModalDialog(string header, string body, string details, Outracks.Simulator.DialogButton[] buttons) :1492
-void ShowingModalDialog__ctor_1_fn(ShowingModalDialog* __this, uString* header, uString* body, uString* details, uArray* buttons)
-{
-    __this->ctor_1(header, body, details, buttons);
-}
-
-// public ShowingModalDialog New(string header, string body, string details, Outracks.Simulator.DialogButton[] buttons) :1492
-void ShowingModalDialog__New1_fn(uString* header, uString* body, uString* details, uArray* buttons, ShowingModalDialog** __retval)
-{
-    *__retval = ShowingModalDialog::New1(header, body, details, buttons);
-}
-
-// private void OnButtonClicked(Outracks.Simulator.DialogButton button) :1525
-void ShowingModalDialog__OnButtonClicked_fn(ShowingModalDialog* __this, ::g::Outracks::Simulator::DialogButton* button)
-{
-    __this->OnButtonClicked(button);
-}
-
-// public override sealed Outracks.Simulator.State OnEnterState() :1504
-void ShowingModalDialog__OnEnterState_fn(ShowingModalDialog* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.ShowingModalDialog", "OnEnterState()");
-    uArray* array1;
-    int index2;
-    int length3;
-    ::g::Fuse::Controls::Button* collection4;
-    uDelegate* ret8;
-    ::g::Uno::Collections::List* buttons = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[99/*Uno.Collections.List<Fuse.Controls.Control>*/]);
-
-    for (array1 = __this->_buttons, index2 = 0, length3 = uPtr(array1)->Length(); index2 < length3; ++index2)
-    {
-        ::g::Outracks::Simulator::DialogButton* button = uPtr(array1)->Strong< ::g::Outracks::Simulator::DialogButton*>(index2);
-        collection4 = ::g::Fuse::Controls::Button::New5();
-        uString* ind5 = uPtr(button)->Text;
-        uPtr(collection4)->Text(ind5);
-        ;
-        ::g::Fuse::Controls::Button* node = collection4;
-        uDelegate* action = (::g::Outracks::Simulator::Closure__Apply_fn(::TYPES[100/*Outracks.Simulator.Closure.Apply<Outracks.Simulator.DialogButton>*/], uDelegate::New(::TYPES[101/*Uno.Action<Outracks.Simulator.DialogButton>*/], (void*)ShowingModalDialog__OnButtonClicked_fn, __this), button, &ret8), ret8);
-        uDelegate* handler = uDelegate::New(::TYPES[55/*Fuse.Gestures.ClickedHandler*/], (void*)::g::Outracks::Simulator::ForgetAction1__Execute_fn, (::g::Outracks::Simulator::ForgetAction1*)::g::Outracks::Simulator::ForgetAction1::New1(::TYPES[102/*Outracks.Simulator.ForgetAction<object, Fuse.Gestures.ClickedArgs>*/], action));
-        ::g::Fuse::Gestures::Clicked::AddHandler(node, handler);
-        ::g::Uno::Collections::List__Add_fn(uPtr(buttons), node);
-    }
-
-    ::g::Outracks::Simulator::ModalDialog::Show(::g::Outracks::Simulator::Context::App(), __this->_header, __this->_body, __this->_details, (uObject*)buttons);
-    return *__retval = __this, void();
-}
-
-// public override sealed Outracks.Simulator.State OnException(Uno.Exception e) :1538
-void ShowingModalDialog__OnException_fn(ShowingModalDialog* __this, ::g::Uno::Exception* e, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.ShowingModalDialog", "OnException(Uno.Exception)");
-    ::g::Uno::Diagnostics::Debug::Log5(uPtr(e)->Message(), 1, ::STRINGS[4/*"/usr/local/...*/], 1540);
-    return *__retval = __this, void();
-}
-
-// public override sealed Outracks.Simulator.State OnUpdate() :1530
-void ShowingModalDialog__OnUpdate_fn(ShowingModalDialog* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.ShowingModalDialog", "OnUpdate()");
-
-    if (__this->_clickedButton().Value< ::g::Outracks::Simulator::Bytecode::Optional1<uStrong< ::g::Outracks::Simulator::DialogButton*> > >().HasValue(::TYPES[103/*Outracks.Simulator.Bytecode.Optional<Outracks.Simulator.DialogButton>*/]))
-        return *__retval = uPtr(__this->_clickedButton().Value< ::g::Outracks::Simulator::Bytecode::Optional1<uStrong< ::g::Outracks::Simulator::DialogButton*> > >().Value(::TYPES[103/*Outracks.Simulator.Bytecode.Optional<Outracks.Simulator.DialogButton>*/]))->Destination, void();
-
-    return *__retval = __this, void();
-}
-
-// public ShowingModalDialog(string header, string body, string details, Outracks.Simulator.DialogButton[] buttons) [instance] :1492
-void ShowingModalDialog::ctor_1(uString* header, uString* body, uString* details, uArray* buttons)
-{
-    ctor_();
-    _header = header;
-    _body = body;
-    _details = details;
-    _buttons = buttons;
-}
-
-// private void OnButtonClicked(Outracks.Simulator.DialogButton button) [instance] :1525
-void ShowingModalDialog::OnButtonClicked(::g::Outracks::Simulator::DialogButton* button)
-{
-    ::g::Outracks::Simulator::Bytecode::Optional1<uStrong< ::g::Outracks::Simulator::DialogButton*> > ret7;
-    _clickedButton().Value< ::g::Outracks::Simulator::Bytecode::Optional1<uStrong< ::g::Outracks::Simulator::DialogButton*> > >() = (::g::Outracks::Simulator::Bytecode::Optional__Some_fn(::TYPES[98/*Outracks.Simulator.Bytecode.Optional.Some<Outracks.Simulator.DialogButton>*/], button, &ret7), ret7);
-}
-
-// public ShowingModalDialog New(string header, string body, string details, Outracks.Simulator.DialogButton[] buttons) [static] :1492
-ShowingModalDialog* ShowingModalDialog::New1(uString* header, uString* body, uString* details, uArray* buttons)
-{
-    ShowingModalDialog* obj6 = (ShowingModalDialog*)uNew(ShowingModalDialog_typeof());
-    obj6->ctor_1(header, body, details, buttons);
-    return obj6;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal abstract class ShowingPrompt :1412
-// {
-static void ShowingPrompt_build(uType* type)
-{
-    ::STRINGS[60] = uString::Const("Ok");
-    ::STRINGS[61] = uString::Const("Cancel");
-    ::STRINGS[62] = uString::Const("# ");
-    ::STRINGS[4] = uString::Const("/usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno");
-    ::TYPES[55] = ::g::Fuse::Gestures::ClickedHandler_typeof();
-    ::TYPES[104] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof()->MakeType(::g::Fuse::Controls::Control_typeof(), NULL);
-    ::TYPES[105] = ::g::Fuse::Controls::Control_typeof()->Array();
-    type->SetFields(0,
-        ::g::Uno::String_typeof(), offsetof(::g::Outracks::Simulator::ShowingPrompt, _body), 0,
-        ::g::Uno::Bool_typeof(), offsetof(::g::Outracks::Simulator::ShowingPrompt, _cancelClicked), 0,
-        ::g::Uno::String_typeof(), offsetof(::g::Outracks::Simulator::ShowingPrompt, _header), 0,
-        ::g::Fuse::Controls::TextInput_typeof(), offsetof(::g::Outracks::Simulator::ShowingPrompt, _input), 0,
-        ::g::Uno::Bool_typeof(), offsetof(::g::Outracks::Simulator::ShowingPrompt, _okClicked), 0);
-}
-
-ShowingPrompt_type* ShowingPrompt_typeof()
-{
-    static uSStrong<ShowingPrompt_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Outracks::Simulator::State_typeof();
-    options.FieldCount = 5;
-    options.ObjectSize = sizeof(ShowingPrompt);
-    options.TypeSize = sizeof(ShowingPrompt_type);
-    type = (ShowingPrompt_type*)uClassType::New("Outracks.Simulator.ShowingPrompt", options);
-    type->fp_build_ = ShowingPrompt_build;
-    type->fp_OnEnterState = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))ShowingPrompt__OnEnterState_fn;
-    type->fp_OnUpdate = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))ShowingPrompt__OnUpdate_fn;
-    return type;
-}
-
-// protected ShowingPrompt(string header, string body) :1421
-void ShowingPrompt__ctor_1_fn(ShowingPrompt* __this, uString* header, uString* body)
-{
-    __this->ctor_1(header, body);
-}
-
-// private void OnCancelClicked(object s, Fuse.Gestures.ClickedArgs args) :1462
-void ShowingPrompt__OnCancelClicked_fn(ShowingPrompt* __this, uObject* s, ::g::Fuse::Gestures::ClickedArgs* args)
-{
-    __this->OnCancelClicked(s, args);
-}
-
-// public override sealed Outracks.Simulator.State OnEnterState() :1429
-void ShowingPrompt__OnEnterState_fn(ShowingPrompt* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.ShowingPrompt", "OnEnterState()");
-    ::g::Fuse::Controls::Button* collection1;
-    ::g::Fuse::Controls::Button* collection2;
-    collection1 = ::g::Fuse::Controls::Button::New5();
-    ::g::Uno::Float4 ind3 = ::g::Uno::Float4__New1(20.0f);
-    uPtr(collection1)->Margin(ind3);
-    ;
-    uPtr(collection1)->Text(::STRINGS[60/*"Ok"*/]);
-    ::STRINGS[60/*"Ok"*/];
-    ::g::Fuse::Controls::Button* ok = collection1;
-    ::g::Fuse::Gestures::Clicked::AddHandler(ok, uDelegate::New(::TYPES[55/*Fuse.Gestures.ClickedHandler*/], (void*)ShowingPrompt__OnOkClicked_fn, __this));
-    collection2 = ::g::Fuse::Controls::Button::New5();
-    ::g::Uno::Float4 ind4 = ::g::Uno::Float4__New1(20.0f);
-    uPtr(collection2)->Margin(ind4);
-    ;
-    uPtr(collection2)->Text(::STRINGS[61/*"Cancel"*/]);
-    ::STRINGS[61/*"Cancel"*/];
-    ::g::Fuse::Controls::Button* cancel = collection2;
-    ::g::Fuse::Gestures::Clicked::AddHandler(cancel, uDelegate::New(::TYPES[55/*Fuse.Gestures.ClickedHandler*/], (void*)ShowingPrompt__OnCancelClicked_fn, __this));
-    __this->_input = ::g::Fuse::Controls::TextBox::New4();
-    ::g::Uno::Diagnostics::Debug::Log5(::g::Uno::String::op_Addition2(::STRINGS[62/*"# "*/], __this->_header), 1, ::STRINGS[4/*"/usr/local/...*/], 1450);
-    ::g::Uno::Diagnostics::Debug::Log5(__this->_body, 1, ::STRINGS[4/*"/usr/local/...*/], 1451);
-    ::g::Outracks::Simulator::ModalDialog::ShowPrompt(::g::Outracks::Simulator::Context::App(), __this->_header, __this->_body, __this->_input, (uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable::New1(::TYPES[104/*Uno.Runtime.Implementation.Internal.ArrayEnumerable<Fuse.Controls.Control>*/], uArray::Init< ::g::Fuse::Controls::Control*>(::TYPES[105/*Fuse.Controls.Control[]*/], 2, cancel, ok))));
-    return *__retval = __this, void();
-}
-
-// private void OnOkClicked(object s, Fuse.Gestures.ClickedArgs args) :1457
-void ShowingPrompt__OnOkClicked_fn(ShowingPrompt* __this, uObject* s, ::g::Fuse::Gestures::ClickedArgs* args)
-{
-    __this->OnOkClicked(s, args);
-}
-
-// public override sealed Outracks.Simulator.State OnUpdate() :1471
-void ShowingPrompt__OnUpdate_fn(ShowingPrompt* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.ShowingPrompt", "OnUpdate()");
-
-    if (__this->_cancelClicked)
-        return *__retval = __this->OnCancel(), void();
-
-    if (__this->_okClicked)
-        return *__retval = __this->OnOk(uPtr(__this->_input)->Value()), void();
-
-    return *__retval = __this, void();
-}
-
-// protected ShowingPrompt(string header, string body) [instance] :1421
-void ShowingPrompt::ctor_1(uString* header, uString* body)
-{
-    ctor_();
-    _header = header;
-    _body = body;
-}
-
-// private void OnCancelClicked(object s, Fuse.Gestures.ClickedArgs args) [instance] :1462
-void ShowingPrompt::OnCancelClicked(uObject* s, ::g::Fuse::Gestures::ClickedArgs* args)
-{
-    _cancelClicked = true;
-}
-
-// private void OnOkClicked(object s, Fuse.Gestures.ClickedArgs args) [instance] :1457
-void ShowingPrompt::OnOkClicked(uObject* s, ::g::Fuse::Gestures::ClickedArgs* args)
-{
-    _okClicked = true;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// public sealed class SimulatorClient :945
+// public sealed class SimulatorClient :1733
 // {
 static void SimulatorClient_build(uType* type)
 {
-    ::STRINGS[4] = uString::Const("/usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno");
-    ::TYPES[87] = ::g::Outracks::Simulator::ConcurrentQueue_typeof()->MakeType(::g::Outracks::Simulator::Protocol::MessageFromClient_typeof(), NULL);
-    ::TYPES[88] = ::g::Outracks::Simulator::ConcurrentQueue_typeof()->MakeType(::g::Outracks::Simulator::Protocol::MessageToClient_typeof(), NULL);
-    ::TYPES[106] = ::g::Uno::Threading::ThreadStart_typeof();
-    ::TYPES[12] = ::g::Uno::Exception_typeof();
+    ::STRINGS[25] = uString::Const("/usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno");
+    ::TYPES[52] = ::g::Outracks::Simulator::ConcurrentQueue_typeof()->MakeType(::g::Outracks::IBinaryMessage_typeof(), NULL);
+    ::TYPES[62] = ::g::Uno::Threading::ThreadStart_typeof();
+    ::TYPES[63] = ::g::Uno::Action1_typeof()->MakeType(::g::Outracks::IBinaryMessage_typeof(), NULL);
+    ::TYPES[37] = ::g::Uno::IDisposable_typeof();
+    ::TYPES[21] = ::g::Uno::Exception_typeof();
     type->SetInterfaces(
         ::g::Outracks::Simulator::ISimulatorClient_typeof(), offsetof(SimulatorClient_type, interface0),
-        ::g::Uno::IDisposable_typeof(), offsetof(SimulatorClient_type, interface1));
+        ::TYPES[37/*Uno.IDisposable*/], offsetof(SimulatorClient_type, interface1));
     type->SetFields(0,
-        ::TYPES[87/*Outracks.Simulator.ConcurrentQueue<Outracks.Simulator.Protocol.MessageFromClient>*/], offsetof(::g::Outracks::Simulator::SimulatorClient, _messagesFromClient), 0,
-        ::TYPES[88/*Outracks.Simulator.ConcurrentQueue<Outracks.Simulator.Protocol.MessageToClient>*/], offsetof(::g::Outracks::Simulator::SimulatorClient, _messagesToClient), 0,
-        ::g::Uno::IO::BinaryReader_typeof(), offsetof(::g::Outracks::Simulator::SimulatorClient, _reader), 0,
+        ::TYPES[37/*Uno.IDisposable*/], offsetof(::g::Outracks::Simulator::SimulatorClient, _alsoReceieveMessagesFromPipe), 0,
+        ::TYPES[52/*Outracks.Simulator.ConcurrentQueue<Outracks.IBinaryMessage>*/], offsetof(::g::Outracks::Simulator::SimulatorClient, _messagesFromClient), 0,
+        ::TYPES[52/*Outracks.Simulator.ConcurrentQueue<Outracks.IBinaryMessage>*/], offsetof(::g::Outracks::Simulator::SimulatorClient, _messagesToClient), 0,
+        ::g::System::IO::BinaryReader_typeof(), offsetof(::g::Outracks::Simulator::SimulatorClient, _reader), 0,
         ::g::Uno::Threading::Thread_typeof(), offsetof(::g::Outracks::Simulator::SimulatorClient, _readWorker), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Outracks::Simulator::SimulatorClient, _running), 0,
         ::g::Uno::Net::Sockets::Socket_typeof(), offsetof(::g::Outracks::Simulator::SimulatorClient, _socket), 0,
         ::g::Uno::Net::Sockets::NetworkStream_typeof(), offsetof(::g::Outracks::Simulator::SimulatorClient, _stream), 0,
-        ::g::Uno::IO::BinaryWriter_typeof(), offsetof(::g::Outracks::Simulator::SimulatorClient, _writer), 0,
+        ::g::System::IO::BinaryWriter_typeof(), offsetof(::g::Outracks::Simulator::SimulatorClient, _writer), 0,
         ::g::Uno::Threading::Thread_typeof(), offsetof(::g::Outracks::Simulator::SimulatorClient, _writeWorker), 0);
     type->Reflection.SetFunctions(5,
         new uFunction("Dispose", NULL, (void*)SimulatorClient__Dispose_fn, 0, false, uVoid_typeof(), 0),
-        new uFunction("get_IncommingMessages", NULL, (void*)SimulatorClient__get_IncommingMessages_fn, 0, false, ::TYPES[88/*Outracks.Simulator.ConcurrentQueue<Outracks.Simulator.Protocol.MessageToClient>*/], 0),
+        new uFunction("get_IncommingMessages", NULL, (void*)SimulatorClient__get_IncommingMessages_fn, 0, false, ::TYPES[52/*Outracks.Simulator.ConcurrentQueue<Outracks.IBinaryMessage>*/], 0),
         new uFunction("get_IsOnline", NULL, (void*)SimulatorClient__get_IsOnline_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
         new uFunction(".ctor", NULL, (void*)SimulatorClient__New1_fn, 0, true, type, 1, ::g::Uno::Net::Sockets::Socket_typeof()),
-        new uFunction("Send", NULL, (void*)SimulatorClient__Send_fn, 0, false, uVoid_typeof(), 1, ::g::Outracks::Simulator::Protocol::MessageFromClient_typeof()));
+        new uFunction("Send", NULL, (void*)SimulatorClient__Send_fn, 0, false, uVoid_typeof(), 1, ::g::Outracks::IBinaryMessage_typeof()));
 }
 
 SimulatorClient_type* SimulatorClient_typeof()
@@ -6869,89 +3884,91 @@ SimulatorClient_type* SimulatorClient_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 9;
+    options.FieldCount = 10;
     options.InterfaceCount = 2;
     options.ObjectSize = sizeof(SimulatorClient);
     options.TypeSize = sizeof(SimulatorClient_type);
     type = (SimulatorClient_type*)uClassType::New("Outracks.Simulator.SimulatorClient", options);
     type->fp_build_ = SimulatorClient_build;
-    type->interface0.fp_Send = (void(*)(uObject*, ::g::Outracks::Simulator::Protocol::MessageFromClient*))SimulatorClient__Send_fn;
+    type->interface0.fp_Send = (void(*)(uObject*, uObject*))SimulatorClient__Send_fn;
     type->interface0.fp_get_IncommingMessages = (void(*)(uObject*, ::g::Outracks::Simulator::ConcurrentQueue**))SimulatorClient__get_IncommingMessages_fn;
     type->interface0.fp_get_IsOnline = (void(*)(uObject*, bool*))SimulatorClient__get_IsOnline_fn;
     type->interface1.fp_Dispose = (void(*)(uObject*))SimulatorClient__Dispose_fn;
     return type;
 }
 
-// public SimulatorClient(Uno.Net.Sockets.Socket socket) :966
+// public SimulatorClient(Uno.Net.Sockets.Socket socket) :1755
 void SimulatorClient__ctor__fn(SimulatorClient* __this, ::g::Uno::Net::Sockets::Socket* socket)
 {
     __this->ctor_(socket);
 }
 
-// public void Dispose() :1030
+// public void Dispose() :1821
 void SimulatorClient__Dispose_fn(SimulatorClient* __this)
 {
     __this->Dispose();
 }
 
-// public Outracks.Simulator.ConcurrentQueue<Outracks.Simulator.Protocol.MessageToClient> get_IncommingMessages() :958
+// public Outracks.Simulator.ConcurrentQueue<Outracks.IBinaryMessage> get_IncommingMessages() :1747
 void SimulatorClient__get_IncommingMessages_fn(SimulatorClient* __this, ::g::Outracks::Simulator::ConcurrentQueue** __retval)
 {
     *__retval = __this->IncommingMessages();
 }
 
-// public bool get_IsOnline() :1051
+// public bool get_IsOnline() :1844
 void SimulatorClient__get_IsOnline_fn(SimulatorClient* __this, bool* __retval)
 {
     *__retval = __this->IsOnline();
 }
 
-// public SimulatorClient New(Uno.Net.Sockets.Socket socket) :966
+// public SimulatorClient New(Uno.Net.Sockets.Socket socket) :1755
 void SimulatorClient__New1_fn(::g::Uno::Net::Sockets::Socket* socket, SimulatorClient** __retval)
 {
     *__retval = SimulatorClient::New1(socket);
 }
 
-// private void ReadLoop() :992
+// private void ReadLoop() :1783
 void SimulatorClient__ReadLoop_fn(SimulatorClient* __this)
 {
     __this->ReadLoop();
 }
 
-// public void Send(Outracks.Simulator.Protocol.MessageFromClient message) :961
-void SimulatorClient__Send_fn(SimulatorClient* __this, ::g::Outracks::Simulator::Protocol::MessageFromClient* message)
+// public void Send(Outracks.IBinaryMessage message) :1750
+void SimulatorClient__Send_fn(SimulatorClient* __this, uObject* message)
 {
     __this->Send(message);
 }
 
-// private void WriteLoop() :1010
+// private void WriteLoop() :1801
 void SimulatorClient__WriteLoop_fn(SimulatorClient* __this)
 {
     __this->WriteLoop();
 }
 
-// public SimulatorClient(Uno.Net.Sockets.Socket socket) [instance] :966
+// public SimulatorClient(Uno.Net.Sockets.Socket socket) [instance] :1755
 void SimulatorClient::ctor_(::g::Uno::Net::Sockets::Socket* socket)
 {
     uStackFrame __("Outracks.Simulator.SimulatorClient", ".ctor(Uno.Net.Sockets.Socket)");
-    _messagesFromClient = ((::g::Outracks::Simulator::ConcurrentQueue*)::g::Outracks::Simulator::ConcurrentQueue::New1(::TYPES[87/*Outracks.Simulator.ConcurrentQueue<Outracks.Simulator.Protocol.MessageFromClient>*/]));
-    _messagesToClient = ((::g::Outracks::Simulator::ConcurrentQueue*)::g::Outracks::Simulator::ConcurrentQueue::New1(::TYPES[88/*Outracks.Simulator.ConcurrentQueue<Outracks.Simulator.Protocol.MessageToClient>*/]));
+    _messagesFromClient = ((::g::Outracks::Simulator::ConcurrentQueue*)::g::Outracks::Simulator::ConcurrentQueue::New1(::TYPES[52/*Outracks.Simulator.ConcurrentQueue<Outracks.IBinaryMessage>*/]));
+    _messagesToClient = ((::g::Outracks::Simulator::ConcurrentQueue*)::g::Outracks::Simulator::ConcurrentQueue::New1(::TYPES[52/*Outracks.Simulator.ConcurrentQueue<Outracks.IBinaryMessage>*/]));
     _running = true;
     _socket = socket;
     _stream = ::g::Uno::Net::Sockets::NetworkStream::New1(_socket);
-    _writer = ::g::Uno::IO::BinaryWriter::New1(_stream);
-    _reader = ::g::Uno::IO::BinaryReader::New1(_stream);
-    _readWorker = ::g::Uno::Threading::Thread::New2(uDelegate::New(::TYPES[106/*Uno.Threading.ThreadStart*/], (void*)SimulatorClient__ReadLoop_fn, this));
-    _writeWorker = ::g::Uno::Threading::Thread::New2(uDelegate::New(::TYPES[106/*Uno.Threading.ThreadStart*/], (void*)SimulatorClient__WriteLoop_fn, this));
+    _writer = ::g::System::IO::BinaryWriter::New1(_stream);
+    _reader = ::g::System::IO::BinaryReader::New1(_stream);
+    _readWorker = ::g::Uno::Threading::Thread::New2(uDelegate::New(::TYPES[62/*Uno.Threading.ThreadStart*/], (void*)SimulatorClient__ReadLoop_fn, this));
+    _writeWorker = ::g::Uno::Threading::Thread::New2(uDelegate::New(::TYPES[62/*Uno.Threading.ThreadStart*/], (void*)SimulatorClient__WriteLoop_fn, this));
+    _alsoReceieveMessagesFromPipe = ::g::Outracks::UnoHost::BinaryMessageInbox::Receive1(uDelegate::New(::TYPES[63/*Uno.Action<Outracks.IBinaryMessage>*/], (void*)::g::Outracks::Simulator::ConcurrentQueue__Enqueue_fn, uPtr(_messagesToClient)));
     uPtr(_readWorker)->Start();
     uPtr(_writeWorker)->Start();
 }
 
-// public void Dispose() [instance] :1030
+// public void Dispose() [instance] :1821
 void SimulatorClient::Dispose()
 {
     uStackFrame __("Outracks.Simulator.SimulatorClient", "Dispose()");
     _running = false;
+    ::g::Uno::IDisposable::Dispose(uInterface(uPtr(_alsoReceieveMessagesFromPipe), ::TYPES[37/*Uno.IDisposable*/]));
     uPtr(_readWorker)->Join();
     uPtr(_writeWorker)->Join();
     uPtr(_stream)->Dispose();
@@ -6964,23 +3981,23 @@ void SimulatorClient::Dispose()
     catch (const uThrowable& __t)
     {
         ::g::Uno::Exception* e = __t.Exception;
-        ::g::Uno::Diagnostics::Debug::Log5(uPtr(e)->Message(), 1, ::STRINGS[4/*"/usr/local/...*/], 1045);
+        ::g::Uno::Diagnostics::Debug::Log5(uPtr(e)->Message(), 1, ::STRINGS[25/*"/usr/local/...*/], 1838);
     }
 }
 
-// public Outracks.Simulator.ConcurrentQueue<Outracks.Simulator.Protocol.MessageToClient> get_IncommingMessages() [instance] :958
+// public Outracks.Simulator.ConcurrentQueue<Outracks.IBinaryMessage> get_IncommingMessages() [instance] :1747
 ::g::Outracks::Simulator::ConcurrentQueue* SimulatorClient::IncommingMessages()
 {
     return _messagesToClient;
 }
 
-// public bool get_IsOnline() [instance] :1051
+// public bool get_IsOnline() [instance] :1844
 bool SimulatorClient::IsOnline()
 {
     return true;
 }
 
-// private void ReadLoop() [instance] :992
+// private void ReadLoop() [instance] :1783
 void SimulatorClient::ReadLoop()
 {
     uStackFrame __("Outracks.Simulator.SimulatorClient", "ReadLoop()");
@@ -6990,7 +4007,7 @@ void SimulatorClient::ReadLoop()
         while (_running)
         {
             while (uPtr(_socket)->Poll(0, 0))
-                ::g::Outracks::Simulator::ConcurrentQueue__Enqueue_fn(uPtr(_messagesToClient), ::g::Outracks::Simulator::Protocol::MessageToClient::Read(_reader));
+                ::g::Outracks::Simulator::ConcurrentQueue__Enqueue_fn(uPtr(_messagesToClient), ::g::Outracks::BinaryMessage::ReadFrom(_reader));
 
             ::g::Uno::Threading::Thread::Sleep(10);
         }
@@ -6998,18 +4015,18 @@ void SimulatorClient::ReadLoop()
     catch (const uThrowable& __t)
     {
         ::g::Uno::Exception* e = __t.Exception;
-        ::g::Outracks::Simulator::ConcurrentQueue__Enqueue_fn(uPtr(_messagesToClient), ::g::Outracks::Simulator::Protocol::Error::New1(::g::Outracks::Simulator::Protocol::ExceptionInfo::Capture(e)));
+        ::g::Outracks::Simulator::ConcurrentQueue__Enqueue_fn(uPtr(_messagesToClient), (uObject*)::g::Outracks::Simulator::Protocol::Error::New2(::g::Outracks::Simulator::Protocol::ExceptionInfo::Capture(e)));
     }
 }
 
-// public void Send(Outracks.Simulator.Protocol.MessageFromClient message) [instance] :961
-void SimulatorClient::Send(::g::Outracks::Simulator::Protocol::MessageFromClient* message)
+// public void Send(Outracks.IBinaryMessage message) [instance] :1750
+void SimulatorClient::Send(uObject* message)
 {
-    uStackFrame __("Outracks.Simulator.SimulatorClient", "Send(Outracks.Simulator.Protocol.MessageFromClient)");
+    uStackFrame __("Outracks.Simulator.SimulatorClient", "Send(Outracks.IBinaryMessage)");
     ::g::Outracks::Simulator::ConcurrentQueue__Enqueue_fn(uPtr(_messagesFromClient), message);
 }
 
-// private void WriteLoop() [instance] :1010
+// private void WriteLoop() [instance] :1801
 void SimulatorClient::WriteLoop()
 {
     uStackFrame __("Outracks.Simulator.SimulatorClient", "WriteLoop()");
@@ -7019,10 +4036,10 @@ void SimulatorClient::WriteLoop()
     {
         while (_running)
         {
-            ::g::Outracks::Simulator::Protocol::MessageFromClient* message;
+            uObject* message;
 
             while ((::g::Outracks::Simulator::ConcurrentQueue__TryDequeue_fn(uPtr(_messagesFromClient), (void**)(&message), &ret2), ret2))
-                ::g::Outracks::Simulator::Protocol::MessageFromClient::Write(message, _writer);
+                ::g::Outracks::BinaryMessage::WriteTo(message, _writer);
 
             ::g::Uno::Threading::Thread::Sleep(10);
         }
@@ -7030,12 +4047,12 @@ void SimulatorClient::WriteLoop()
     catch (const uThrowable& __t)
     {
         ::g::Uno::Exception* e = __t.Exception;
-        ::g::Outracks::Simulator::ConcurrentQueue__Enqueue_fn(uPtr(_messagesToClient), ::g::Outracks::Simulator::Protocol::Error::New1(::g::Outracks::Simulator::Protocol::ExceptionInfo::Capture(e)));
+        ::g::Outracks::Simulator::ConcurrentQueue__Enqueue_fn(uPtr(_messagesToClient), (uObject*)::g::Outracks::Simulator::Protocol::Error::New2(::g::Outracks::Simulator::Protocol::ExceptionInfo::Capture(e)));
         _running = false;
     }
 }
 
-// public SimulatorClient New(Uno.Net.Sockets.Socket socket) [static] :966
+// public SimulatorClient New(Uno.Net.Sockets.Socket socket) [static] :1755
 SimulatorClient* SimulatorClient::New1(::g::Uno::Net::Sockets::Socket* socket)
 {
     SimulatorClient* obj1 = (SimulatorClient*)uNew(SimulatorClient_typeof());
@@ -7044,89 +4061,196 @@ SimulatorClient* SimulatorClient::New1(::g::Uno::Net::Sockets::Socket* socket)
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// internal abstract class State :216
+// public sealed class SourceReference :993
 // {
-static void State_build(uType* type)
+static void SourceReference_build(uType* type)
 {
+    ::TYPES[64] = ::g::Outracks::Optional_typeof()->MakeMethod(1/*Read<Outracks.Simulator.TextPosition>*/, ::g::Outracks::Simulator::TextPosition_typeof(), NULL);
+    ::TYPES[65] = ::g::Uno::Func1_typeof()->MakeType(::g::System::IO::BinaryReader_typeof(), ::g::Outracks::Simulator::TextPosition_typeof(), NULL);
+    ::TYPES[66] = ::g::Outracks::Optional_typeof()->MakeMethod(4/*Write<Outracks.Simulator.TextPosition>*/, ::g::Outracks::Simulator::TextPosition_typeof(), NULL);
+    ::TYPES[67] = ::g::Uno::Action2_typeof()->MakeType(::g::System::IO::BinaryWriter_typeof(), ::g::Outracks::Simulator::TextPosition_typeof(), NULL);
+    type->SetFields(0,
+        ::g::Uno::String_typeof(), offsetof(::g::Outracks::Simulator::SourceReference, File), 0,
+        ::g::Outracks::Optional1_typeof()->MakeType(::g::Outracks::Simulator::TextPosition_typeof(), NULL), (uintptr_t)0, uFieldFlagsConstrained);
+    type->Reflection.SetFields(2,
+        new uField("File", 0),
+        new uField("Location", 1));
+    type->Reflection.SetFunctions(3,
+        new uFunction(".ctor", NULL, (void*)SourceReference__New1_fn, 0, true, type, 2, ::g::Uno::String_typeof(), ::g::Outracks::Optional1_typeof()->MakeType(::g::Outracks::Simulator::TextPosition_typeof(), NULL)),
+        new uFunction("Read", NULL, (void*)SourceReference__Read_fn, 0, true, type, 1, ::g::System::IO::BinaryReader_typeof()),
+        new uFunction("Write", NULL, (void*)SourceReference__Write_fn, 0, true, uVoid_typeof(), 2, ::g::System::IO::BinaryWriter_typeof(), type));
 }
 
-State_type* State_typeof()
+uType* SourceReference_typeof()
 {
-    static uSStrong<State_type*> type;
+    static uSStrong<uType*> type;
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.ObjectSize = sizeof(State);
-    options.TypeSize = sizeof(State_type);
-    type = (State_type*)uClassType::New("Outracks.Simulator.State", options);
-    type->fp_build_ = State_build;
-    type->fp_OnEnterState = State__OnEnterState_fn;
-    type->fp_OnLeaveState = State__OnLeaveState_fn;
-    type->fp_OnPointerPressed = State__OnPointerPressed_fn;
-    type->fp_OnUpdate = State__OnUpdate_fn;
+    options.FieldCount = 2;
+    options.ObjectSize = sizeof(SourceReference);
+    options.TypeSize = sizeof(uType);
+    type = uClassType::New("Outracks.Simulator.SourceReference", options);
+    type->fp_build_ = SourceReference_build;
     return type;
 }
 
-// protected generated State() :216
-void State__ctor__fn(State* __this)
+// public SourceReference(string file, Outracks.Optional<Outracks.Simulator.TextPosition> location) :995
+void SourceReference__ctor__fn(SourceReference* __this, uString* file, ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition>* location)
 {
-    __this->ctor_();
+    __this->ctor_(file, *location);
 }
 
-// public virtual Outracks.Simulator.State OnEnterState() :218
-void State__OnEnterState_fn(State* __this, State** __retval)
+// public SourceReference New(string file, Outracks.Optional<Outracks.Simulator.TextPosition> location) :995
+void SourceReference__New1_fn(uString* file, ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition>* location, SourceReference** __retval)
 {
-    return *__retval = __this, void();
+    *__retval = SourceReference::New1(file, *location);
 }
 
-// public virtual void OnLeaveState() :223
-void State__OnLeaveState_fn(State* __this)
+// public static Outracks.Simulator.SourceReference Read(System.IO.BinaryReader r) :1006
+void SourceReference__Read_fn(::g::System::IO::BinaryReader* r, SourceReference** __retval)
 {
+    *__retval = SourceReference::Read(r);
 }
 
-// public virtual Outracks.Simulator.State OnPointerPressed(Fuse.Input.PointerPressedArgs args) :232
-void State__OnPointerPressed_fn(State* __this, ::g::Fuse::Input::PointerPressedArgs* args, State** __retval)
+// public static void Write(System.IO.BinaryWriter w, Outracks.Simulator.SourceReference s) :1014
+void SourceReference__Write_fn(::g::System::IO::BinaryWriter* w, SourceReference* s)
 {
-    return *__retval = __this, void();
+    SourceReference::Write(w, s);
 }
 
-// public virtual Outracks.Simulator.State OnUpdate() :227
-void State__OnUpdate_fn(State* __this, State** __retval)
+// public SourceReference(string file, Outracks.Optional<Outracks.Simulator.TextPosition> location) [instance] :995
+void SourceReference::ctor_(uString* file, ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> location)
 {
-    return *__retval = __this, void();
+    File = file;
+    Location().Value< ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> >() = location;
 }
 
-// protected generated State() [instance] :216
-void State::ctor_()
+// public SourceReference New(string file, Outracks.Optional<Outracks.Simulator.TextPosition> location) [static] :995
+SourceReference* SourceReference::New1(uString* file, ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> location)
 {
+    SourceReference* obj1 = (SourceReference*)uNew(SourceReference_typeof());
+    obj1->ctor_(file, location);
+    return obj1;
+}
+
+// public static Outracks.Simulator.SourceReference Read(System.IO.BinaryReader r) [static] :1006
+SourceReference* SourceReference::Read(::g::System::IO::BinaryReader* r)
+{
+    uStackFrame __("Outracks.Simulator.SourceReference", "Read(System.IO.BinaryReader)");
+    ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> ret2;
+    uString* file = uPtr(r)->ReadString();
+    ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> location = (::g::Outracks::Optional__Read_fn(::TYPES[64/*Outracks.Optional.Read<Outracks.Simulator.TextPosition>*/], r, uDelegate::New(::TYPES[65/*Uno.Func<System.IO.BinaryReader, Outracks.Simulator.TextPosition>*/], (void*)::g::Outracks::Simulator::TextPosition__Read_fn), &ret2), ret2);
+    return SourceReference::New1(file, location);
+}
+
+// public static void Write(System.IO.BinaryWriter w, Outracks.Simulator.SourceReference s) [static] :1014
+void SourceReference::Write(::g::System::IO::BinaryWriter* w, SourceReference* s)
+{
+    uStackFrame __("Outracks.Simulator.SourceReference", "Write(System.IO.BinaryWriter,Outracks.Simulator.SourceReference)");
+    uPtr(w)->Write6(uPtr(s)->File);
+    ::g::Outracks::Optional__Write_fn(::TYPES[66/*Outracks.Optional.Write<Outracks.Simulator.TextPosition>*/], w, uCRef(s->Location().Value< ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> >()), uDelegate::New(::TYPES[67/*Uno.Action<System.IO.BinaryWriter, Outracks.Simulator.TextPosition>*/], (void*)::g::Outracks::Simulator::TextPosition__Write_fn));
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// public static class StringSplitting :472
+// public static class SourceReferenceCanonicalization :1021
+// {
+static void SourceReferenceCanonicalization_build(uType* type)
+{
+    ::STRINGS[26] = uString::Const("?");
+    ::STRINGS[27] = uString::Const("(");
+    ::STRINGS[28] = uString::Const(")");
+    ::STRINGS[13] = uString::Const("");
+    ::STRINGS[29] = uString::Const(",");
+    ::TYPES[68] = ::g::Outracks::Optional1_typeof()->MakeType(::g::Outracks::Simulator::SourceReference_typeof(), NULL);
+    ::TYPES[69] = ::g::Outracks::Optional1_typeof()->MakeType(::g::Outracks::Simulator::TextPosition_typeof(), NULL);
+    type->Reflection.SetFunctions(2,
+        new uFunction("ToCanonicalForm", NULL, (void*)SourceReferenceCanonicalization__ToCanonicalForm_fn, 0, true, ::g::Uno::String_typeof(), 1, ::TYPES[68/*Outracks.Optional<Outracks.Simulator.SourceReference>*/]),
+        new uFunction("ToCanonicalForm", NULL, (void*)SourceReferenceCanonicalization__ToCanonicalForm1_fn, 0, true, ::g::Uno::String_typeof(), 1, ::g::Outracks::Simulator::SourceReference_typeof()));
+}
+
+uClassType* SourceReferenceCanonicalization_typeof()
+{
+    static uSStrong<uClassType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.TypeSize = sizeof(uClassType);
+    type = uClassType::New("Outracks.Simulator.SourceReferenceCanonicalization", options);
+    type->fp_build_ = SourceReferenceCanonicalization_build;
+    return type;
+}
+
+// public static string ToCanonicalForm(Outracks.Optional<Outracks.Simulator.SourceReference> src) :1023
+void SourceReferenceCanonicalization__ToCanonicalForm_fn(::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::SourceReference*> >* src, uString** __retval)
+{
+    *__retval = SourceReferenceCanonicalization::ToCanonicalForm(*src);
+}
+
+// public static string ToCanonicalForm(Outracks.Simulator.SourceReference src) :1028
+void SourceReferenceCanonicalization__ToCanonicalForm1_fn(::g::Outracks::Simulator::SourceReference* src, uString** __retval)
+{
+    *__retval = SourceReferenceCanonicalization::ToCanonicalForm1(src);
+}
+
+// private static string ToCanonicalForm(Outracks.Simulator.TextPosition pos) :1036
+void SourceReferenceCanonicalization__ToCanonicalForm2_fn(::g::Outracks::Simulator::TextPosition* pos, uString** __retval)
+{
+    *__retval = SourceReferenceCanonicalization::ToCanonicalForm2(*pos);
+}
+
+// public static string ToCanonicalForm(Outracks.Optional<Outracks.Simulator.SourceReference> src) [static] :1023
+uString* SourceReferenceCanonicalization::ToCanonicalForm(::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::SourceReference*> > src)
+{
+    uStackFrame __("Outracks.Simulator.SourceReferenceCanonicalization", "ToCanonicalForm(Outracks.Optional<Outracks.Simulator.SourceReference>)");
+    return src.HasValue(::TYPES[68/*Outracks.Optional<Outracks.Simulator.SourceReference>*/]) ? (uString*)SourceReferenceCanonicalization::ToCanonicalForm1(src.Value(::TYPES[68/*Outracks.Optional<Outracks.Simulator.SourceReference>*/])) : ::STRINGS[26/*"?"*/];
+}
+
+// public static string ToCanonicalForm(Outracks.Simulator.SourceReference src) [static] :1028
+uString* SourceReferenceCanonicalization::ToCanonicalForm1(::g::Outracks::Simulator::SourceReference* src)
+{
+    uStackFrame __("Outracks.Simulator.SourceReferenceCanonicalization", "ToCanonicalForm(Outracks.Simulator.SourceReference)");
+    ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> ind1;
+    ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> ind2;
+    return ::g::Uno::String::op_Addition2(uPtr(src)->File, (ind1 = uPtr(src)->Location().Value< ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> >(), (&ind1))->HasValue(::TYPES[69/*Outracks.Optional<Outracks.Simulator.TextPosition>*/]) ? (uString*)::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[27/*"("*/], SourceReferenceCanonicalization::ToCanonicalForm2((ind2 = uPtr(src)->Location().Value< ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> >(), (&ind2))->Value(::TYPES[69/*Outracks.Optional<Outracks.Simulator.TextPosition>*/]))), ::STRINGS[28/*")"*/]) : ::STRINGS[13/*""*/]);
+}
+
+// private static string ToCanonicalForm(Outracks.Simulator.TextPosition pos) [static] :1036
+uString* SourceReferenceCanonicalization::ToCanonicalForm2(::g::Outracks::Simulator::TextPosition pos)
+{
+    uStackFrame __("Outracks.Simulator.SourceReferenceCanonicalization", "ToCanonicalForm(Outracks.Simulator.TextPosition)");
+    return ::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition(uBox(::TYPES[76/*Outracks.Simulator.LineNumber*/], pos.Line), ::STRINGS[29/*","*/]), uBox(::TYPES[77/*Outracks.Simulator.CharacterNumber*/], pos.Character));
+}
+// }
+
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
+
+// public static class StringSplitting :538
 // {
 static void StringSplitting_build(uType* type)
 {
-    ::TYPES[107] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
-    ::TYPES[1] = ::g::Uno::Collections::IEnumerator_typeof();
-    ::TYPES[108] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
-    ::TYPES[76] = ::g::Uno::Collections::IEnumerable_typeof();
-    ::TYPES[83] = ::g::Uno::Collections::IEnumerator1_typeof();
+    ::TYPES[70] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
+    ::TYPES[24] = ::g::Uno::Collections::IEnumerator_typeof();
+    ::TYPES[71] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
+    ::TYPES[40] = ::g::Uno::Collections::IEnumerable_typeof();
+    ::TYPES[50] = ::g::Uno::Collections::IEnumerator1_typeof();
     type->MethodTypes[0]->SetPrecalc(
-        ::TYPES[76/*Uno.Collections.IEnumerable`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL),
-        ::TYPES[83/*Uno.Collections.IEnumerator`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL));
+        ::TYPES[40/*Uno.Collections.IEnumerable`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL),
+        ::TYPES[50/*Uno.Collections.IEnumerator`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL));
     type->Reflection.SetFunctions(8,
         new uFunction("AfterFirst", NULL, (void*)StringSplitting__AfterFirst_fn, 0, true, ::g::Uno::String_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::String_typeof()),
         new uFunction("AfterLast", NULL, (void*)StringSplitting__AfterLast_fn, 0, true, ::g::Uno::String_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::String_typeof()),
         new uFunction("BeforeFirst", NULL, (void*)StringSplitting__BeforeFirst_fn, 0, true, ::g::Uno::String_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::String_typeof()),
         new uFunction("BeforeLast", NULL, (void*)StringSplitting__BeforeLast_fn, 0, true, ::g::Uno::String_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::String_typeof()),
-        new uFunction("Join", NULL, (void*)StringSplitting__Join_fn, 0, true, ::g::Uno::String_typeof(), 2, ::TYPES[107/*Uno.Collections.IEnumerable<string>*/], ::g::Uno::String_typeof()),
-        new uFunction("JoinToString`1", type->MethodTypes[0], (void*)StringSplitting__JoinToString_fn, 0, true, ::g::Uno::String_typeof(), 2, ::TYPES[76/*Uno.Collections.IEnumerable`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL), ::g::Uno::String_typeof()),
+        new uFunction("Join", NULL, (void*)StringSplitting__Join_fn, 0, true, ::g::Uno::String_typeof(), 2, ::TYPES[70/*Uno.Collections.IEnumerable<string>*/], ::g::Uno::String_typeof()),
+        new uFunction("JoinToString`1", type->MethodTypes[0], (void*)StringSplitting__JoinToString_fn, 0, true, ::g::Uno::String_typeof(), 2, ::TYPES[40/*Uno.Collections.IEnumerable`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL), ::g::Uno::String_typeof()),
         new uFunction("OrdinalIndexOf", NULL, (void*)StringSplitting__OrdinalIndexOf_fn, 0, true, ::g::Uno::Int_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::String_typeof()),
         new uFunction("OrdinalLastIndexOf", NULL, (void*)StringSplitting__OrdinalLastIndexOf_fn, 0, true, ::g::Uno::Int_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::String_typeof()));
 }
@@ -7145,55 +4269,55 @@ uClassType* StringSplitting_typeof()
     return type;
 }
 
-// public static string AfterFirst(string s, string seperator) :509
+// public static string AfterFirst(string s, string seperator) :575
 void StringSplitting__AfterFirst_fn(uString* s, uString* seperator, uString** __retval)
 {
     *__retval = StringSplitting::AfterFirst(s, seperator);
 }
 
-// public static string AfterLast(string s, string seperator) :492
+// public static string AfterLast(string s, string seperator) :558
 void StringSplitting__AfterLast_fn(uString* s, uString* seperator, uString** __retval)
 {
     *__retval = StringSplitting::AfterLast(s, seperator);
 }
 
-// public static string BeforeFirst(string s, string seperator) :517
+// public static string BeforeFirst(string s, string seperator) :583
 void StringSplitting__BeforeFirst_fn(uString* s, uString* seperator, uString** __retval)
 {
     *__retval = StringSplitting::BeforeFirst(s, seperator);
 }
 
-// public static string BeforeLast(string s, string seperator) :500
+// public static string BeforeLast(string s, string seperator) :566
 void StringSplitting__BeforeLast_fn(uString* s, uString* seperator, uString** __retval)
 {
     *__retval = StringSplitting::BeforeLast(s, seperator);
 }
 
-// public static string Join(Uno.Collections.IEnumerable<string> si, string separator) :543
+// public static string Join(Uno.Collections.IEnumerable<string> si, string separator) :609
 void StringSplitting__Join_fn(uObject* si, uString* separator, uString** __retval)
 {
     *__retval = StringSplitting::Join(si, separator);
 }
 
-// public static string JoinToString<T>(Uno.Collections.IEnumerable<T> objects, string separator) :526
+// public static string JoinToString<T>(Uno.Collections.IEnumerable<T> objects, string separator) :592
 void StringSplitting__JoinToString_fn(uType* __type, uObject* objects, uString* separator, uString** __retval)
 {
     *__retval = StringSplitting::JoinToString(__type, objects, separator);
 }
 
-// public static int OrdinalIndexOf(string str, string seperator) :487
+// public static int OrdinalIndexOf(string str, string seperator) :553
 void StringSplitting__OrdinalIndexOf_fn(uString* str, uString* seperator, int* __retval)
 {
     *__retval = StringSplitting::OrdinalIndexOf(str, seperator);
 }
 
-// public static int OrdinalLastIndexOf(string str, string seperator) :474
+// public static int OrdinalLastIndexOf(string str, string seperator) :540
 void StringSplitting__OrdinalLastIndexOf_fn(uString* str, uString* seperator, int* __retval)
 {
     *__retval = StringSplitting::OrdinalLastIndexOf(str, seperator);
 }
 
-// public static string AfterFirst(string s, string seperator) [static] :509
+// public static string AfterFirst(string s, string seperator) [static] :575
 uString* StringSplitting::AfterFirst(uString* s, uString* seperator)
 {
     uStackFrame __("Outracks.Simulator.StringSplitting", "AfterFirst(string,string)");
@@ -7205,7 +4329,7 @@ uString* StringSplitting::AfterFirst(uString* s, uString* seperator)
     return ::g::Uno::String::Substring(s, index + uPtr(seperator)->Length());
 }
 
-// public static string AfterLast(string s, string seperator) [static] :492
+// public static string AfterLast(string s, string seperator) [static] :558
 uString* StringSplitting::AfterLast(uString* s, uString* seperator)
 {
     uStackFrame __("Outracks.Simulator.StringSplitting", "AfterLast(string,string)");
@@ -7217,7 +4341,7 @@ uString* StringSplitting::AfterLast(uString* s, uString* seperator)
     return ::g::Uno::String::Substring(uPtr(s), index + uPtr(seperator)->Length());
 }
 
-// public static string BeforeFirst(string s, string seperator) [static] :517
+// public static string BeforeFirst(string s, string seperator) [static] :583
 uString* StringSplitting::BeforeFirst(uString* s, uString* seperator)
 {
     uStackFrame __("Outracks.Simulator.StringSplitting", "BeforeFirst(string,string)");
@@ -7229,7 +4353,7 @@ uString* StringSplitting::BeforeFirst(uString* s, uString* seperator)
     return ::g::Uno::String::Substring1(s, 0, index);
 }
 
-// public static string BeforeLast(string s, string seperator) [static] :500
+// public static string BeforeLast(string s, string seperator) [static] :566
 uString* StringSplitting::BeforeLast(uString* s, uString* seperator)
 {
     uStackFrame __("Outracks.Simulator.StringSplitting", "BeforeLast(string,string)");
@@ -7241,7 +4365,7 @@ uString* StringSplitting::BeforeLast(uString* s, uString* seperator)
     return ::g::Uno::String::Substring1(uPtr(s), 0, index);
 }
 
-// public static string Join(Uno.Collections.IEnumerable<string> si, string separator) [static] :543
+// public static string Join(Uno.Collections.IEnumerable<string> si, string separator) [static] :609
 uString* StringSplitting::Join(uObject* si, uString* separator)
 {
     uStackFrame __("Outracks.Simulator.StringSplitting", "Join(Uno.Collections.IEnumerable<string>,string)");
@@ -7249,9 +4373,9 @@ uString* StringSplitting::Join(uObject* si, uString* separator)
     ::g::Uno::Text::StringBuilder* sb = ::g::Uno::Text::StringBuilder::New1();
     bool isFirst = true;
 
-    for (uObject* enum1 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(si), ::TYPES[107/*Uno.Collections.IEnumerable<string>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[1/*Uno.Collections.IEnumerator*/])); )
+    for (uObject* enum1 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(si), ::TYPES[70/*Uno.Collections.IEnumerable<string>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[24/*Uno.Collections.IEnumerator*/])); )
     {
-        uString* part = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), ::TYPES[108/*Uno.Collections.IEnumerator<string>*/]), &ret2), ret2);
+        uString* part = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), ::TYPES[71/*Uno.Collections.IEnumerator<string>*/]), &ret2), ret2);
 
         if (isFirst)
             isFirst = false;
@@ -7264,7 +4388,7 @@ uString* StringSplitting::Join(uObject* si, uString* separator)
     return sb->ToString();
 }
 
-// public static string JoinToString<T>(Uno.Collections.IEnumerable<T> objects, string separator) [static] :526
+// public static string JoinToString<T>(Uno.Collections.IEnumerable<T> objects, string separator) [static] :592
 uString* StringSplitting::JoinToString(uType* __type, uObject* objects, uString* separator)
 {
     uType* __types[] = {
@@ -7278,7 +4402,7 @@ uString* StringSplitting::JoinToString(uType* __type, uObject* objects, uString*
     ::g::Uno::Text::StringBuilder* sb = ::g::Uno::Text::StringBuilder::New1();
     bool isFirst = true;
 
-    for (uObject* enum1 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(objects), __types[1])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[1/*Uno.Collections.IEnumerator*/])); )
+    for (uObject* enum1 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(objects), __types[1])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[24/*Uno.Collections.IEnumerator*/])); )
     {
         obj = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), __types[2]), &ret3), ret3);
 
@@ -7293,14 +4417,14 @@ uString* StringSplitting::JoinToString(uType* __type, uObject* objects, uString*
     return sb->ToString();
 }
 
-// public static int OrdinalIndexOf(string str, string seperator) [static] :487
+// public static int OrdinalIndexOf(string str, string seperator) [static] :553
 int StringSplitting::OrdinalIndexOf(uString* str, uString* seperator)
 {
     uStackFrame __("Outracks.Simulator.StringSplitting", "OrdinalIndexOf(string,string)");
     return ::g::Uno::String::IndexOf1(uPtr(str), seperator, 0);
 }
 
-// public static int OrdinalLastIndexOf(string str, string seperator) [static] :474
+// public static int OrdinalLastIndexOf(string str, string seperator) [static] :540
 int StringSplitting::OrdinalLastIndexOf(uString* str, uString* seperator)
 {
     uStackFrame __("Outracks.Simulator.StringSplitting", "OrdinalLastIndexOf(string,string)");
@@ -7320,8 +4444,8 @@ int StringSplitting::OrdinalLastIndexOf(uString* str, uString* seperator)
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/concurrency/$.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/concurrency/$.uno
+// -----------------------------------------------------------------------------------
 
 // public sealed class Task<T> :54
 // {
@@ -7474,24 +4598,24 @@ Task* Task::New1(uType* __type, uDelegate* wait)
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/concurrency/$.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/concurrency/$.uno
+// -----------------------------------------------------------------------------------
 
 // public static class Tasks :88
 // {
 static void Tasks_build(uType* type)
 {
-    ::TYPES[109] = ::g::Outracks::Simulator::TaskThread_typeof();
-    ::TYPES[110] = ::g::Uno::Func_typeof();
-    ::TYPES[111] = ::g::Outracks::Simulator::WaitForFirstResult_typeof();
+    ::TYPES[72] = ::g::Outracks::Simulator::TaskThread_typeof();
+    ::TYPES[73] = ::g::Uno::Func_typeof();
+    ::TYPES[74] = ::g::Outracks::Simulator::WaitForFirstResult_typeof();
     type->MethodTypes[0]->SetPrecalc(
-        ::TYPES[109/*Outracks.Simulator.TaskThread`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL));
+        ::TYPES[72/*Outracks.Simulator.TaskThread`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL));
     type->MethodTypes[1]->SetPrecalc(
         type->MakeMethod(0/*Run<T>*/, type->MethodTypes[1]->U(0), NULL),
-        ::TYPES[110/*Uno.Func`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL),
-        ::TYPES[111/*Outracks.Simulator.WaitForFirstResult`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL));
+        ::TYPES[73/*Uno.Func`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL),
+        ::TYPES[74/*Outracks.Simulator.WaitForFirstResult`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL));
     type->Reflection.SetFunctions(2,
-        new uFunction("Run`1", type->MethodTypes[0], (void*)Tasks__Run_fn, 0, true, ::g::Outracks::Simulator::Task_typeof()->MakeType(type->MethodTypes[0]->U(0), NULL), 1, ::TYPES[110/*Uno.Func`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL)),
+        new uFunction("Run`1", type->MethodTypes[0], (void*)Tasks__Run_fn, 0, true, ::g::Outracks::Simulator::Task_typeof()->MakeType(type->MethodTypes[0]->U(0), NULL), 1, ::TYPES[73/*Uno.Func`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL)),
         new uFunction("WaitForFirstResult`1", type->MethodTypes[1], (void*)Tasks__WaitForFirstResult_fn, 0, true, ::g::Outracks::Simulator::Task_typeof()->MakeType(type->MethodTypes[1]->U(0), NULL), 2, ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Outracks::Simulator::Task_typeof()->MakeType(type->MethodTypes[1]->U(0), NULL), NULL), ::g::Uno::Func1_typeof()->MakeType(::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL), type->MethodTypes[1]->U(0), NULL)));
 }
 
@@ -7547,23 +4671,23 @@ void Tasks__WaitForFirstResult_fn(uType* __type, uObject* tasks, uDelegate* onNo
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/concurrency/$.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/concurrency/$.uno
+// -----------------------------------------------------------------------------------
 
 // internal sealed class TaskThread<T> :111
 // {
 static void TaskThread_build(uType* type)
 {
-    ::TYPES[106] = ::g::Uno::Threading::ThreadStart_typeof();
-    ::TYPES[112] = ::g::Outracks::Simulator::Task_typeof();
-    ::TYPES[9] = ::g::Uno::Action_typeof();
-    ::TYPES[12] = ::g::Uno::Exception_typeof();
+    ::TYPES[62] = ::g::Uno::Threading::ThreadStart_typeof();
+    ::TYPES[75] = ::g::Outracks::Simulator::Task_typeof();
+    ::TYPES[7] = ::g::Uno::Action_typeof();
+    ::TYPES[21] = ::g::Uno::Exception_typeof();
     type->SetPrecalc(
         ::g::Outracks::Simulator::Task_typeof()->MakeType(type->T(0), NULL),
         type->T(0));
     type->SetFields(0,
         ::g::Uno::Func_typeof()->MakeType(type->T(0), NULL), offsetof(::g::Outracks::Simulator::TaskThread, _func), 0,
-        ::TYPES[112/*Outracks.Simulator.Task`1*/]->MakeType(type->T(0), NULL), offsetof(::g::Outracks::Simulator::TaskThread, Task), 0,
+        ::TYPES[75/*Outracks.Simulator.Task`1*/]->MakeType(type->T(0), NULL), offsetof(::g::Outracks::Simulator::TaskThread, Task), 0,
         ::g::Uno::Threading::Thread_typeof(), offsetof(::g::Outracks::Simulator::TaskThread, Thread), 0);
 }
 
@@ -7609,8 +4733,8 @@ void TaskThread::ctor_(uDelegate* func)
     };
     uStackFrame __("Outracks.Simulator.TaskThread`1", ".ctor(Uno.Func<T>)");
     _func = func;
-    Thread = ::g::Uno::Threading::Thread::New2(uDelegate::New(::TYPES[106/*Uno.Threading.ThreadStart*/], (void*)TaskThread__Run_fn, this));
-    Task = ((::g::Outracks::Simulator::Task*)::g::Outracks::Simulator::Task::New1(__types[0], uDelegate::New(::TYPES[9/*Uno.Action*/], (void*)::g::Uno::Threading::Thread__Join_fn, uPtr(Thread))));
+    Thread = ::g::Uno::Threading::Thread::New2(uDelegate::New(::TYPES[62/*Uno.Threading.ThreadStart*/], (void*)TaskThread__Run_fn, this));
+    Task = ((::g::Outracks::Simulator::Task*)::g::Outracks::Simulator::Task::New1(__types[0], uDelegate::New(::TYPES[7/*Uno.Action*/], (void*)::g::Uno::Threading::Thread__Join_fn, uPtr(Thread))));
 }
 
 // private void Run() [instance] :125
@@ -7645,294 +4769,575 @@ TaskThread* TaskThread::New1(uType* __type, uDelegate* func)
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
 
-// internal sealed class Uninitialized :264
+// public sealed class TextOffset :1049
 // {
-static void Uninitialized_build(uType* type)
+static void TextOffset_build(uType* type)
 {
-    ::STRINGS[43] = uString::Const("Try again");
-    ::TYPES[46] = ::g::Outracks::Simulator::DialogButton_typeof()->Array();
-}
-
-::g::Outracks::Simulator::State_type* Uninitialized_typeof()
-{
-    static uSStrong< ::g::Outracks::Simulator::State_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Outracks::Simulator::State_typeof();
-    options.ObjectSize = sizeof(Uninitialized);
-    options.TypeSize = sizeof(::g::Outracks::Simulator::State_type);
-    type = (::g::Outracks::Simulator::State_type*)uClassType::New("Outracks.Simulator.Uninitialized", options);
-    type->fp_build_ = Uninitialized_build;
-    type->fp_ctor_ = (void*)Uninitialized__New1_fn;
-    type->fp_OnException = (void(*)(::g::Outracks::Simulator::State*, ::g::Uno::Exception*, ::g::Outracks::Simulator::State**))Uninitialized__OnException_fn;
-    type->fp_OnUpdate = (void(*)(::g::Outracks::Simulator::State*, ::g::Outracks::Simulator::State**))Uninitialized__OnUpdate_fn;
-    return type;
-}
-
-// public generated Uninitialized() :264
-void Uninitialized__ctor_1_fn(Uninitialized* __this)
-{
-    __this->ctor_1();
-}
-
-// public generated Uninitialized New() :264
-void Uninitialized__New1_fn(Uninitialized** __retval)
-{
-    *__retval = Uninitialized::New1();
-}
-
-// public override sealed Outracks.Simulator.State OnException(Uno.Exception e) :274
-void Uninitialized__OnException_fn(Uninitialized* __this, ::g::Uno::Exception* e, ::g::Outracks::Simulator::State** __retval)
-{
-    uStackFrame __("Outracks.Simulator.Uninitialized", "OnException(Uno.Exception)");
-    return *__retval = ::g::Outracks::Simulator::Faulted::New2(false, e, uArray::Init< ::g::Outracks::Simulator::DialogButton*>(::TYPES[46/*Outracks.Simulator.DialogButton[]*/], 1, (::g::Outracks::Simulator::DialogButton*)::g::Outracks::Simulator::DialogButton::New1(::STRINGS[43/*"Try again"*/], __this))), void();
-}
-
-// public override sealed Outracks.Simulator.State OnUpdate() :266
-void Uninitialized__OnUpdate_fn(Uninitialized* __this, ::g::Outracks::Simulator::State** __retval)
-{
-    if (::g::Outracks::Simulator::Context::Reflection() != NULL)
-        return *__retval = ::g::Outracks::Simulator::ConnectingToProxy::New1(), void();
-
-    return *__retval = __this, void();
-}
-
-// public generated Uninitialized() [instance] :264
-void Uninitialized::ctor_1()
-{
-    ctor_();
-}
-
-// public generated Uninitialized New() [static] :264
-Uninitialized* Uninitialized::New1()
-{
-    Uninitialized* obj1 = (Uninitialized*)uNew(Uninitialized_typeof());
-    obj1->ctor_1();
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// internal sealed class UserAppState :760
-// {
-static void UserAppState_build(uType* type)
-{
-    ::TYPES[113] = type->MakeMethod(1/*SetIfNotEqual<Fuse.Node>*/, ::g::Fuse::Node_typeof(), NULL);
-    ::TYPES[114] = type->MakeMethod(1/*SetIfNotEqual<Uno.UX.Resource>*/, ::g::Uno::UX::Resource_typeof(), NULL);
-    ::TYPES[115] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(11/*ToArray<Fuse.Node>*/, ::g::Fuse::Node_typeof(), NULL);
-    ::TYPES[116] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(11/*ToArray<Uno.UX.Resource>*/, ::g::Uno::UX::Resource_typeof(), NULL);
-    ::TYPES[117] = ::g::Uno::Collections::ICollection_typeof();
-    ::TYPES[118] = ::g::Uno::Collections::IList_typeof();
-    ::TYPES[119] = ::g::Uno::Collections::IListExtensions_typeof();
-    ::TYPES[77] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof();
-    type->MethodTypes[0]->SetPrecalc(
-        ::TYPES[117/*Uno.Collections.ICollection`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL),
-        ::TYPES[118/*Uno.Collections.IList`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL));
-    type->MethodTypes[1]->SetPrecalc(
-        type->MakeMethod(0/*SequenceEquals<T>*/, type->MethodTypes[1]->U(0), NULL),
-        type->MakeMethod(2/*SetSequence<T>*/, type->MethodTypes[1]->U(0), NULL));
-    type->MethodTypes[2]->SetPrecalc(
-        ::TYPES[117/*Uno.Collections.ICollection`1*/]->MakeType(type->MethodTypes[2]->U(0), NULL),
-        ::TYPES[119/*Uno.Collections.IListExtensions*/]->MakeMethod(0/*AddRange<T>*/, type->MethodTypes[2]->U(0), NULL),
-        ::TYPES[77/*Uno.Runtime.Implementation.Internal.ArrayEnumerable`1*/]->MakeType(type->MethodTypes[2]->U(0), NULL));
+    ::STRINGS[30] = uString::Const("@");
+    ::TYPES[4] = ::g::Uno::Int_typeof();
     type->SetFields(0,
-        ::g::Uno::Float4_typeof(), offsetof(::g::Outracks::Simulator::UserAppState, Background), 0,
-        ::g::Fuse::Node_typeof()->Array(), offsetof(::g::Outracks::Simulator::UserAppState, Children), 0,
-        ::g::Uno::Float4_typeof(), offsetof(::g::Outracks::Simulator::UserAppState, ClearColor), 0,
-        ::g::Uno::UX::Resource_typeof()->Array(), offsetof(::g::Outracks::Simulator::UserAppState, Resources), 0,
-        type, (uintptr_t)&::g::Outracks::Simulator::UserAppState::_Default_, uFieldFlagsStatic);
+        ::TYPES[4/*int*/], offsetof(::g::Outracks::Simulator::TextOffset, _offset), 0);
+    type->Reflection.SetFunctions(2,
+        new uFunction("Equals", NULL, (void*)TextOffset__Equals2_fn, 0, false, ::g::Uno::Bool_typeof(), 1, type),
+        new uFunction(".ctor", NULL, (void*)TextOffset__New1_fn, 0, true, type, 1, ::TYPES[4/*int*/]));
 }
 
-uType* UserAppState_typeof()
+uType* TextOffset_typeof()
 {
     static uSStrong<uType*> type;
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 5;
-    options.MethodTypeCount = 3;
-    options.ObjectSize = sizeof(UserAppState);
+    options.FieldCount = 1;
+    options.ObjectSize = sizeof(TextOffset);
     options.TypeSize = sizeof(uType);
-    type = uClassType::New("Outracks.Simulator.UserAppState", options);
-    type->MethodTypes[0] = type->NewMethodType(1, 2);
-    type->MethodTypes[1] = type->NewMethodType(1, 2);
-    type->MethodTypes[2] = type->NewMethodType(1, 3);
-    type->fp_build_ = UserAppState_build;
+    type = uClassType::New("Outracks.Simulator.TextOffset", options);
+    type->fp_build_ = TextOffset_build;
+    type->fp_Equals = (void(*)(uObject*, uObject*, bool*))TextOffset__Equals_fn;
+    type->fp_GetHashCode = (void(*)(uObject*, int*))TextOffset__GetHashCode_fn;
+    type->fp_ToString = (void(*)(uObject*, uString**))TextOffset__ToString_fn;
     return type;
 }
 
-// public UserAppState(float4 background, Fuse.Node[] children, Uno.UX.Resource[] resources, float4 clearColor) :773
-void UserAppState__ctor__fn(UserAppState* __this, ::g::Uno::Float4* background, uArray* children, uArray* resources, ::g::Uno::Float4* clearColor)
+// public TextOffset(int offset) :1053
+void TextOffset__ctor__fn(TextOffset* __this, int* offset)
 {
-    __this->ctor_(*background, children, resources, *clearColor);
+    __this->ctor_(*offset);
 }
 
-// public void ApplyTo(Outracks.Simulator.FakeApp app) :797
-void UserAppState__ApplyTo_fn(UserAppState* __this, ::g::Outracks::Simulator::FakeApp* app)
+// public override sealed bool Equals(object obj) :1080
+void TextOffset__Equals_fn(TextOffset* __this, uObject* obj, bool* __retval)
 {
-    __this->ApplyTo(app);
+    uStackFrame __("Outracks.Simulator.TextOffset", "Equals(object)");
+    return *__retval = uIs(obj, __this->__type) && __this->Equals2(uCast<TextOffset*>(obj, __this->__type)), void();
 }
 
-// public static generated Outracks.Simulator.UserAppState get_Default() :786
-void UserAppState__get_Default_fn(UserAppState** __retval)
+// public bool Equals(Outracks.Simulator.TextOffset other) :1085
+void TextOffset__Equals2_fn(TextOffset* __this, TextOffset* other, bool* __retval)
 {
-    *__retval = UserAppState::Default();
+    *__retval = __this->Equals2(other);
 }
 
-// public static generated void set_Default(Outracks.Simulator.UserAppState value) :786
-void UserAppState__set_Default_fn(UserAppState* value)
+// public override sealed int GetHashCode() :1075
+void TextOffset__GetHashCode_fn(TextOffset* __this, int* __retval)
 {
-    UserAppState::Default(value);
+    uStackFrame __("Outracks.Simulator.TextOffset", "GetHashCode()");
+    int ind1;
+    return *__retval = ::g::Uno::Int::GetHashCode((ind1 = __this->_offset, ind1), ::TYPES[4/*int*/]), void();
 }
 
-// public UserAppState New(float4 background, Fuse.Node[] children, Uno.UX.Resource[] resources, float4 clearColor) :773
-void UserAppState__New1_fn(::g::Uno::Float4* background, uArray* children, uArray* resources, ::g::Uno::Float4* clearColor, UserAppState** __retval)
+// public TextOffset New(int offset) :1053
+void TextOffset__New1_fn(int* offset, TextOffset** __retval)
 {
-    *__retval = UserAppState::New1(*background, children, resources, *clearColor);
+    *__retval = TextOffset::New1(*offset);
 }
 
-// public static Outracks.Simulator.UserAppState Save(Outracks.Simulator.FakeApp app) :788
-void UserAppState__Save_fn(::g::Outracks::Simulator::FakeApp* app, UserAppState** __retval)
+// public static operator ==(Outracks.Simulator.TextOffset a, Outracks.Simulator.TextOffset b) :1090
+void TextOffset__op_Equality_fn(TextOffset* a, TextOffset* b, bool* __retval)
 {
-    *__retval = UserAppState::Save(app);
+    *__retval = TextOffset::op_Equality(a, b);
 }
 
-// private static bool SequenceEquals<T>(Uno.Collections.IList<T> left, T[] right) :817
-void UserAppState__SequenceEquals_fn(uType* __type, uObject* left, uArray* right, bool* __retval)
+// public static operator >(Outracks.Simulator.TextOffset a, Outracks.Simulator.TextOffset b) :1108
+void TextOffset__op_GreaterThan_fn(TextOffset* a, TextOffset* b, bool* __retval)
 {
-    *__retval = UserAppState::SequenceEquals(__type, left, right);
+    *__retval = TextOffset::op_GreaterThan(a, b);
 }
 
-// private static void SetIfNotEqual<T>(Uno.Collections.IList<T> list, T[] elements) :805
-void UserAppState__SetIfNotEqual_fn(uType* __type, uObject* list, uArray* elements)
+// public static operator >=(Outracks.Simulator.TextOffset a, Outracks.Simulator.TextOffset b) :1118
+void TextOffset__op_GreaterThanOrEqual_fn(TextOffset* a, TextOffset* b, bool* __retval)
 {
-    UserAppState::SetIfNotEqual(__type, list, elements);
+    *__retval = TextOffset::op_GreaterThanOrEqual(a, b);
 }
 
-// private static void SetSequence<T>(Uno.Collections.IList<T> list, T[] elements) :811
-void UserAppState__SetSequence_fn(uType* __type, uObject* list, uArray* elements)
+// public static implicit operator int(Outracks.Simulator.TextOffset d) :1058
+void TextOffset__op_Implicit_fn(TextOffset* d, int* __retval)
 {
-    UserAppState::SetSequence(__type, list, elements);
+    *__retval = TextOffset::op_Implicit(d);
 }
 
-uSStrong<UserAppState*> UserAppState::_Default_;
-
-// public UserAppState(float4 background, Fuse.Node[] children, Uno.UX.Resource[] resources, float4 clearColor) [instance] :773
-void UserAppState::ctor_(::g::Uno::Float4 background, uArray* children, uArray* resources, ::g::Uno::Float4 clearColor)
+// public static operator !=(Outracks.Simulator.TextOffset a, Outracks.Simulator.TextOffset b) :1098
+void TextOffset__op_Inequality_fn(TextOffset* a, TextOffset* b, bool* __retval)
 {
-    Background = background;
-    Children = children;
-    Resources = resources;
-    ClearColor = clearColor;
+    *__retval = TextOffset::op_Inequality(a, b);
 }
 
-// public void ApplyTo(Outracks.Simulator.FakeApp app) [instance] :797
-void UserAppState::ApplyTo(::g::Outracks::Simulator::FakeApp* app)
+// public static operator <(Outracks.Simulator.TextOffset a, Outracks.Simulator.TextOffset b) :1103
+void TextOffset__op_LessThan_fn(TextOffset* a, TextOffset* b, bool* __retval)
 {
-    uStackFrame __("Outracks.Simulator.UserAppState", "ApplyTo(Outracks.Simulator.FakeApp)");
-
-    if (::g::Uno::Float4__op_Inequality(uPtr(app)->Background1(), Background))
-        uPtr(app)->Background1(Background);
-
-    UserAppState::SetIfNotEqual(::TYPES[113/*Outracks.Simulator.UserAppState.SetIfNotEqual<Fuse.Node>*/], uPtr(app)->Children1(), Children);
-    UserAppState::SetIfNotEqual(::TYPES[114/*Outracks.Simulator.UserAppState.SetIfNotEqual<Uno.UX.Resource>*/], app->Resources1(), Resources);
-
-    if (::g::Uno::Float4__op_Inequality(app->ClearColor(), ClearColor))
-        uPtr(app)->ClearColor(ClearColor);
+    *__retval = TextOffset::op_LessThan(a, b);
 }
 
-// public UserAppState New(float4 background, Fuse.Node[] children, Uno.UX.Resource[] resources, float4 clearColor) [static] :773
-UserAppState* UserAppState::New1(::g::Uno::Float4 background, uArray* children, uArray* resources, ::g::Uno::Float4 clearColor)
+// public static operator <=(Outracks.Simulator.TextOffset a, Outracks.Simulator.TextOffset b) :1113
+void TextOffset__op_LessThanOrEqual_fn(TextOffset* a, TextOffset* b, bool* __retval)
 {
-    UserAppState* obj1 = (UserAppState*)uNew(UserAppState_typeof());
-    obj1->ctor_(background, children, resources, clearColor);
-    return obj1;
+    *__retval = TextOffset::op_LessThanOrEqual(a, b);
 }
 
-// public static Outracks.Simulator.UserAppState Save(Outracks.Simulator.FakeApp app) [static] :788
-UserAppState* UserAppState::Save(::g::Outracks::Simulator::FakeApp* app)
+// public override sealed string ToString() :1070
+void TextOffset__ToString_fn(TextOffset* __this, uString** __retval)
 {
-    uStackFrame __("Outracks.Simulator.UserAppState", "Save(Outracks.Simulator.FakeApp)");
-    return UserAppState::New1(uPtr(app)->Background1(), (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[115/*Uno.Collections.EnumerableExtensions.ToArray<Fuse.Node>*/], uPtr(app)->Children1()), (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[116/*Uno.Collections.EnumerableExtensions.ToArray<Uno.UX.Resource>*/], uPtr(app)->Resources1()), uPtr(app)->ClearColor());
+    uStackFrame __("Outracks.Simulator.TextOffset", "ToString()");
+    return *__retval = ::g::Uno::String::op_Addition1(::STRINGS[30/*"@"*/], uBox<int>(::TYPES[4/*int*/], __this->_offset)), void();
 }
 
-// private static bool SequenceEquals<T>(Uno.Collections.IList<T> left, T[] right) [static] :817
-bool UserAppState::SequenceEquals(uType* __type, uObject* left, uArray* right)
+// public TextOffset(int offset) [instance] :1053
+void TextOffset::ctor_(int offset)
 {
-    uType* __types[] = {
-        __type->U(0),
-        __type->Precalced(0/*Uno.Collections.ICollection<T>*/),
-        __type->Precalced(1/*Uno.Collections.IList<T>*/),
-    };
-    uStackFrame __("Outracks.Simulator.UserAppState", "SequenceEquals`1(Uno.Collections.IList<T>,T[])");
-    uT ret2(__types[0], U_ALLOCA(__types[0]->ValueSize));
-
-    if (::g::Uno::Collections::ICollection::Count(uInterface(uPtr(left), __types[1])) != uPtr(right)->Length())
-        return false;
-
-    for (int i = 0; i < uPtr(right)->Length(); i++)
-        if (uBoxPtr(__types[0], (::g::Uno::Collections::IList::get_Item_ex(uInterface(uPtr(left), __types[2]), uCRef<int>(i), &ret2), ret2)) != uBoxPtr(__types[0], uPtr(right)->TItem(i)))
-            return false;
-
-    return true;
+    _offset = offset;
 }
 
-// private static void SetIfNotEqual<T>(Uno.Collections.IList<T> list, T[] elements) [static] :805
-void UserAppState::SetIfNotEqual(uType* __type, uObject* list, uArray* elements)
+// public bool Equals(Outracks.Simulator.TextOffset other) [instance] :1085
+bool TextOffset::Equals2(TextOffset* other)
 {
-    uType* __types[] = {
-        __type->Precalced(0/*Outracks.Simulator.UserAppState.SequenceEquals<T>*/),
-        __type->Precalced(1/*Outracks.Simulator.UserAppState.SetSequence<T>*/),
-    };
-    uStackFrame __("Outracks.Simulator.UserAppState", "SetIfNotEqual`1(Uno.Collections.IList<T>,T[])");
-
-    if (!UserAppState::SequenceEquals(__types[0], list, elements))
-        UserAppState::SetSequence(__types[1], list, elements);
+    uStackFrame __("Outracks.Simulator.TextOffset", "Equals(Outracks.Simulator.TextOffset)");
+    return _offset == uPtr(other)->_offset;
 }
 
-// private static void SetSequence<T>(Uno.Collections.IList<T> list, T[] elements) [static] :811
-void UserAppState::SetSequence(uType* __type, uObject* list, uArray* elements)
+// public TextOffset New(int offset) [static] :1053
+TextOffset* TextOffset::New1(int offset)
 {
-    uType* __types[] = {
-        __type->Precalced(0/*Uno.Collections.ICollection<T>*/),
-        __type->Precalced(1/*Uno.Collections.IListExtensions.AddRange<T>*/),
-        __type->Precalced(2/*Uno.Runtime.Implementation.Internal.ArrayEnumerable<T>*/),
-    };
-    uStackFrame __("Outracks.Simulator.UserAppState", "SetSequence`1(Uno.Collections.IList<T>,T[])");
-    ::g::Uno::Collections::ICollection::Clear(uInterface(uPtr(list), __types[0]));
-    ::g::Uno::Collections::IListExtensions::AddRange(__types[1], list, (uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable::New1(__types[2], elements)));
+    TextOffset* obj2 = (TextOffset*)uNew(TextOffset_typeof());
+    obj2->ctor_(offset);
+    return obj2;
 }
 
-// public static generated Outracks.Simulator.UserAppState get_Default() [static] :786
-UserAppState* UserAppState::Default()
+// public static operator ==(Outracks.Simulator.TextOffset a, Outracks.Simulator.TextOffset b) [static] :1090
+bool TextOffset::op_Equality(TextOffset* a, TextOffset* b)
 {
-    return UserAppState::_Default_;
+    uStackFrame __("Outracks.Simulator.TextOffset", "==(Outracks.Simulator.TextOffset,Outracks.Simulator.TextOffset)");
+
+    if (a == NULL)
+        return b == NULL;
+
+    return uPtr(a)->Equals2(b);
 }
 
-// public static generated void set_Default(Outracks.Simulator.UserAppState value) [static] :786
-void UserAppState::Default(UserAppState* value)
+// public static operator >(Outracks.Simulator.TextOffset a, Outracks.Simulator.TextOffset b) [static] :1108
+bool TextOffset::op_GreaterThan(TextOffset* a, TextOffset* b)
 {
-    UserAppState::_Default_ = value;
+    uStackFrame __("Outracks.Simulator.TextOffset", ">(Outracks.Simulator.TextOffset,Outracks.Simulator.TextOffset)");
+    return uPtr(a)->_offset > uPtr(b)->_offset;
+}
+
+// public static operator >=(Outracks.Simulator.TextOffset a, Outracks.Simulator.TextOffset b) [static] :1118
+bool TextOffset::op_GreaterThanOrEqual(TextOffset* a, TextOffset* b)
+{
+    uStackFrame __("Outracks.Simulator.TextOffset", ">=(Outracks.Simulator.TextOffset,Outracks.Simulator.TextOffset)");
+    return uPtr(a)->_offset >= uPtr(b)->_offset;
+}
+
+// public static implicit operator int(Outracks.Simulator.TextOffset d) [static] :1058
+int TextOffset::op_Implicit(TextOffset* d)
+{
+    uStackFrame __("Outracks.Simulator.TextOffset", "op_Implicit(Outracks.Simulator.TextOffset)~int");
+    return uPtr(d)->_offset;
+}
+
+// public static operator !=(Outracks.Simulator.TextOffset a, Outracks.Simulator.TextOffset b) [static] :1098
+bool TextOffset::op_Inequality(TextOffset* a, TextOffset* b)
+{
+    uStackFrame __("Outracks.Simulator.TextOffset", "!=(Outracks.Simulator.TextOffset,Outracks.Simulator.TextOffset)");
+    return !TextOffset::op_Equality(a, b);
+}
+
+// public static operator <(Outracks.Simulator.TextOffset a, Outracks.Simulator.TextOffset b) [static] :1103
+bool TextOffset::op_LessThan(TextOffset* a, TextOffset* b)
+{
+    uStackFrame __("Outracks.Simulator.TextOffset", "<(Outracks.Simulator.TextOffset,Outracks.Simulator.TextOffset)");
+    return uPtr(a)->_offset < uPtr(b)->_offset;
+}
+
+// public static operator <=(Outracks.Simulator.TextOffset a, Outracks.Simulator.TextOffset b) [static] :1113
+bool TextOffset::op_LessThanOrEqual(TextOffset* a, TextOffset* b)
+{
+    uStackFrame __("Outracks.Simulator.TextOffset", "<=(Outracks.Simulator.TextOffset,Outracks.Simulator.TextOffset)");
+    return uPtr(a)->_offset <= uPtr(b)->_offset;
 }
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/concurrency/$.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
+
+// public static class TextOffsetConversion :1142
+// {
+static void TextOffsetConversion_build(uType* type)
+{
+    ::STRINGS[31] = uString::Const("\r");
+    ::STRINGS[13] = uString::Const("");
+    ::TYPES[46] = ::g::Uno::Char_typeof()->Array();
+    type->Reflection.SetFunctions(3,
+        new uFunction("OffsetBy", NULL, (void*)TextOffsetConversion__OffsetBy_fn, 0, true, ::g::Outracks::Simulator::TextPosition_typeof(), 3, ::g::Outracks::Simulator::TextPosition_typeof(), ::g::Uno::Int_typeof(), ::g::Uno::String_typeof()),
+        new uFunction("ToOffset", NULL, (void*)TextOffsetConversion__ToOffset_fn, 0, true, ::g::Outracks::Simulator::TextOffset_typeof(), 2, ::g::Outracks::Simulator::TextPosition_typeof(), ::g::Uno::String_typeof()),
+        new uFunction("ToPosition", NULL, (void*)TextOffsetConversion__ToPosition_fn, 0, true, ::g::Outracks::Simulator::TextPosition_typeof(), 2, ::g::Outracks::Simulator::TextOffset_typeof(), ::g::Uno::String_typeof()));
+}
+
+uClassType* TextOffsetConversion_typeof()
+{
+    static uSStrong<uClassType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.TypeSize = sizeof(uClassType);
+    type = uClassType::New("Outracks.Simulator.TextOffsetConversion", options);
+    type->fp_build_ = TextOffsetConversion_build;
+    return type;
+}
+
+// public static Outracks.Simulator.TextPosition OffsetBy(Outracks.Simulator.TextPosition pos, int characters, string code) :1200
+void TextOffsetConversion__OffsetBy_fn(::g::Outracks::Simulator::TextPosition* pos, int* characters, uString* code, ::g::Outracks::Simulator::TextPosition* __retval)
+{
+    *__retval = TextOffsetConversion::OffsetBy(*pos, *characters, code);
+}
+
+// public static Outracks.Simulator.TextOffset ToOffset(Outracks.Simulator.TextPosition pos, string data) :1151
+void TextOffsetConversion__ToOffset_fn(::g::Outracks::Simulator::TextPosition* pos, uString* data, ::g::Outracks::Simulator::TextOffset** __retval)
+{
+    *__retval = TextOffsetConversion::ToOffset(*pos, data);
+}
+
+// public static Outracks.Simulator.TextPosition ToPosition(Outracks.Simulator.TextOffset offset, string data) :1174
+void TextOffsetConversion__ToPosition_fn(::g::Outracks::Simulator::TextOffset* offset, uString* data, ::g::Outracks::Simulator::TextPosition* __retval)
+{
+    *__retval = TextOffsetConversion::ToPosition(offset, data);
+}
+
+// public static Outracks.Simulator.TextPosition OffsetBy(Outracks.Simulator.TextPosition pos, int characters, string code) [static] :1200
+::g::Outracks::Simulator::TextPosition TextOffsetConversion::OffsetBy(::g::Outracks::Simulator::TextPosition pos, int characters, uString* code)
+{
+    uStackFrame __("Outracks.Simulator.TextOffsetConversion", "OffsetBy(Outracks.Simulator.TextPosition,int,string)");
+    return TextOffsetConversion::ToPosition(::g::Outracks::Simulator::TextOffset::New1(::g::Outracks::Simulator::TextOffset::op_Implicit(TextOffsetConversion::ToOffset(pos, code)) + characters), code);
+}
+
+// public static Outracks.Simulator.TextOffset ToOffset(Outracks.Simulator.TextPosition pos, string data) [static] :1151
+::g::Outracks::Simulator::TextOffset* TextOffsetConversion::ToOffset(::g::Outracks::Simulator::TextPosition pos, uString* data)
+{
+    uStackFrame __("Outracks.Simulator.TextOffsetConversion", "ToOffset(Outracks.Simulator.TextPosition,string)");
+
+    if (::g::Uno::String::IsNullOrEmpty(data))
+        U_THROW(::g::Uno::ArgumentNullException::New6(data));
+
+    uArray* lines = ::g::Uno::String::Split(uPtr(data), uArray::Init<int>(::TYPES[46/*char[]*/], 1, 10));
+
+    if ((::g::Outracks::Simulator::LineNumber__op_Implicit(pos.Line) < 1) || (::g::Outracks::Simulator::LineNumber__op_Implicit(pos.Line) > uPtr(lines)->Length()))
+        U_THROW(::g::Uno::IndexOutOfRangeException::New4());
+
+    int sizeOfDataBefore = 0;
+
+    for (int i = 0; i < (::g::Outracks::Simulator::LineNumber__op_Implicit(pos.Line) - 1); ++i)
+        sizeOfDataBefore = sizeOfDataBefore + (uPtr(::g::Uno::String::Replace1(uPtr(uPtr(lines)->Strong<uString*>(i)), ::STRINGS[31/*"\r"*/], ::STRINGS[13/*""*/]))->Length() + 1);
+
+    uString* line = ::g::Uno::String::Replace1(uPtr(uPtr(lines)->Strong<uString*>(::g::Outracks::Simulator::LineNumber__op_Implicit(pos.Line) - 1)), ::STRINGS[31/*"\r"*/], ::STRINGS[13/*""*/]);
+
+    if ((::g::Outracks::Simulator::CharacterNumber__op_Implicit(pos.Character) < 1) || ((::g::Outracks::Simulator::CharacterNumber__op_Implicit(pos.Character) - 1) > uPtr(line)->Length()))
+        U_THROW(::g::Uno::IndexOutOfRangeException::New4());
+
+    return ::g::Outracks::Simulator::TextOffset::New1((sizeOfDataBefore + ::g::Outracks::Simulator::CharacterNumber__op_Implicit(pos.Character)) - 1);
+}
+
+// public static Outracks.Simulator.TextPosition ToPosition(Outracks.Simulator.TextOffset offset, string data) [static] :1174
+::g::Outracks::Simulator::TextPosition TextOffsetConversion::ToPosition(::g::Outracks::Simulator::TextOffset* offset, uString* data)
+{
+    uStackFrame __("Outracks.Simulator.TextOffsetConversion", "ToPosition(Outracks.Simulator.TextOffset,string)");
+
+    if (::g::Uno::String::IsNullOrEmpty(data))
+        U_THROW(::g::Uno::ArgumentNullException::New6(data));
+
+    uArray* lines = ::g::Uno::String::Split(uPtr(::g::Uno::String::Replace1(uPtr(data), ::STRINGS[31/*"\r"*/], ::STRINGS[13/*""*/])), uArray::Init<int>(::TYPES[46/*char[]*/], 1, 10));
+    int numLinesBeforeOffset = 0;
+    int pos = 0;
+
+    for (int i = 0; i < uPtr(lines)->Length(); ++i)
+    {
+        if (::g::Outracks::Simulator::TextOffset::op_Implicit(offset) < ((pos + uPtr(uPtr(lines)->Strong<uString*>(i))->Length()) + 1))
+            break;
+
+        ++numLinesBeforeOffset;
+        pos = pos + (uPtr(uPtr(lines)->Strong<uString*>(i))->Length() + 1);
+    }
+
+    int character = ::g::Outracks::Simulator::TextOffset::op_Implicit(offset) - pos;
+    return ::g::Outracks::Simulator::TextPosition__New1(::g::Outracks::Simulator::LineNumber__New1(numLinesBeforeOffset + 1), ::g::Outracks::Simulator::CharacterNumber__New1(character + 1));
+}
+// }
+
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno
+// ------------------------------------------------------------------------------
+
+// public struct TextPosition :1224
+// {
+static void TextPosition_build(uType* type)
+{
+    ::STRINGS[32] = uString::Const(":");
+    ::TYPES[76] = ::g::Outracks::Simulator::LineNumber_typeof();
+    ::TYPES[77] = ::g::Outracks::Simulator::CharacterNumber_typeof();
+    type->SetFields(0,
+        ::TYPES[76/*Outracks.Simulator.LineNumber*/], offsetof(::g::Outracks::Simulator::TextPosition, Line), 0,
+        ::TYPES[77/*Outracks.Simulator.CharacterNumber*/], offsetof(::g::Outracks::Simulator::TextPosition, Character), 0);
+    type->Reflection.SetFields(2,
+        new uField("Character", 1),
+        new uField("Line", 0));
+    type->Reflection.SetFunctions(4,
+        new uFunction("Equals", NULL, (void*)TextPosition__Equals2_fn, 0, false, ::g::Uno::Bool_typeof(), 1, type),
+        new uFunction(".ctor", NULL, (void*)TextPosition__New1_fn, 0, true, type, 2, ::TYPES[76/*Outracks.Simulator.LineNumber*/], ::TYPES[77/*Outracks.Simulator.CharacterNumber*/]),
+        new uFunction("Read", NULL, (void*)TextPosition__Read_fn, 0, true, type, 1, ::g::System::IO::BinaryReader_typeof()),
+        new uFunction("Write", NULL, (void*)TextPosition__Write_fn, 0, true, uVoid_typeof(), 2, ::g::System::IO::BinaryWriter_typeof(), type));
+}
+
+uStructType* TextPosition_typeof()
+{
+    static uSStrong<uStructType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.FieldCount = 2;
+    options.ValueSize = sizeof(TextPosition);
+    options.TypeSize = sizeof(uStructType);
+    type = uStructType::New("Outracks.Simulator.TextPosition", options);
+    type->fp_build_ = TextPosition_build;
+    type->fp_Equals_struct = (void(*)(void*, uType*, uObject*, bool*))TextPosition__Equals_fn;
+    type->fp_GetHashCode_struct = (void(*)(void*, uType*, int*))TextPosition__GetHashCode_fn;
+    type->fp_ToString_struct = (void(*)(void*, uType*, uString**))TextPosition__ToString_fn;
+    return type;
+}
+
+// public TextPosition(Outracks.Simulator.LineNumber line, Outracks.Simulator.CharacterNumber character) :1229
+void TextPosition__ctor__fn(TextPosition* __this, ::g::Outracks::Simulator::LineNumber* line, ::g::Outracks::Simulator::CharacterNumber* character)
+{
+    __this->ctor_(*line, *character);
+}
+
+// public override sealed bool Equals(object obj) :1245
+void TextPosition__Equals_fn(TextPosition* __this, uType* __type, uObject* obj, bool* __retval)
+{
+    uStackFrame __("Outracks.Simulator.TextPosition", "Equals(object)");
+    return *__retval = uIs(obj, __type) && __this->Equals2(uUnbox<TextPosition>(__type, obj)), void();
+}
+
+// public bool Equals(Outracks.Simulator.TextPosition other) :1250
+void TextPosition__Equals2_fn(TextPosition* __this, TextPosition* other, bool* __retval)
+{
+    *__retval = __this->Equals2(*other);
+}
+
+// public override sealed int GetHashCode() :1240
+void TextPosition__GetHashCode_fn(TextPosition* __this, uType* __type, int* __retval)
+{
+    uStackFrame __("Outracks.Simulator.TextPosition", "GetHashCode()");
+    ::g::Outracks::Simulator::LineNumber ind1;
+    ::g::Outracks::Simulator::CharacterNumber ind2;
+    return *__retval = (ind1 = __this->Line, (&ind1))->GetHashCode(::TYPES[76/*Outracks.Simulator.LineNumber*/]) ^ (ind2 = __this->Character, (&ind2))->GetHashCode(::TYPES[77/*Outracks.Simulator.CharacterNumber*/]), void();
+}
+
+// public TextPosition New(Outracks.Simulator.LineNumber line, Outracks.Simulator.CharacterNumber character) :1229
+void TextPosition__New1_fn(::g::Outracks::Simulator::LineNumber* line, ::g::Outracks::Simulator::CharacterNumber* character, TextPosition* __retval)
+{
+    *__retval = TextPosition__New1(*line, *character);
+}
+
+// public static operator ==(Outracks.Simulator.TextPosition a, Outracks.Simulator.TextPosition b) :1255
+void TextPosition__op_Equality_fn(TextPosition* a, TextPosition* b, bool* __retval)
+{
+    *__retval = TextPosition__op_Equality(*a, *b);
+}
+
+// public static operator >(Outracks.Simulator.TextPosition a, Outracks.Simulator.TextPosition b) :1272
+void TextPosition__op_GreaterThan_fn(TextPosition* a, TextPosition* b, bool* __retval)
+{
+    *__retval = TextPosition__op_GreaterThan(*a, *b);
+}
+
+// public static operator >=(Outracks.Simulator.TextPosition a, Outracks.Simulator.TextPosition b) :1282
+void TextPosition__op_GreaterThanOrEqual_fn(TextPosition* a, TextPosition* b, bool* __retval)
+{
+    *__retval = TextPosition__op_GreaterThanOrEqual(*a, *b);
+}
+
+// public static operator !=(Outracks.Simulator.TextPosition a, Outracks.Simulator.TextPosition b) :1260
+void TextPosition__op_Inequality_fn(TextPosition* a, TextPosition* b, bool* __retval)
+{
+    *__retval = TextPosition__op_Inequality(*a, *b);
+}
+
+// public static operator <(Outracks.Simulator.TextPosition a, Outracks.Simulator.TextPosition b) :1265
+void TextPosition__op_LessThan_fn(TextPosition* a, TextPosition* b, bool* __retval)
+{
+    *__retval = TextPosition__op_LessThan(*a, *b);
+}
+
+// public static operator <=(Outracks.Simulator.TextPosition a, Outracks.Simulator.TextPosition b) :1277
+void TextPosition__op_LessThanOrEqual_fn(TextPosition* a, TextPosition* b, bool* __retval)
+{
+    *__retval = TextPosition__op_LessThanOrEqual(*a, *b);
+}
+
+// public static Outracks.Simulator.TextPosition Read(System.IO.BinaryReader reader) :1287
+void TextPosition__Read_fn(::g::System::IO::BinaryReader* reader, TextPosition* __retval)
+{
+    *__retval = TextPosition__Read(reader);
+}
+
+// public override sealed string ToString() :1235
+void TextPosition__ToString_fn(TextPosition* __this, uType* __type, uString** __retval)
+{
+    uStackFrame __("Outracks.Simulator.TextPosition", "ToString()");
+    return *__retval = ::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition(uBox(::TYPES[76/*Outracks.Simulator.LineNumber*/], __this->Line), ::STRINGS[32/*":"*/]), uBox(::TYPES[77/*Outracks.Simulator.CharacterNumber*/], __this->Character)), void();
+}
+
+// public static void Write(System.IO.BinaryWriter writer, Outracks.Simulator.TextPosition value) :1296
+void TextPosition__Write_fn(::g::System::IO::BinaryWriter* writer, TextPosition* value)
+{
+    TextPosition__Write(writer, *value);
+}
+
+// public TextPosition(Outracks.Simulator.LineNumber line, Outracks.Simulator.CharacterNumber character) [instance] :1229
+void TextPosition::ctor_(::g::Outracks::Simulator::LineNumber line, ::g::Outracks::Simulator::CharacterNumber character)
+{
+    Line = line;
+    Character = character;
+}
+
+// public bool Equals(Outracks.Simulator.TextPosition other) [instance] :1250
+bool TextPosition::Equals2(TextPosition other)
+{
+    return ::g::Outracks::Simulator::LineNumber__op_Equality(Line, other.Line) && ::g::Outracks::Simulator::CharacterNumber__op_Equality(Character, other.Character);
+}
+
+// public TextPosition New(Outracks.Simulator.LineNumber line, Outracks.Simulator.CharacterNumber character) [static] :1229
+TextPosition TextPosition__New1(::g::Outracks::Simulator::LineNumber line, ::g::Outracks::Simulator::CharacterNumber character)
+{
+    TextPosition obj3;
+    obj3.ctor_(line, character);
+    return obj3;
+}
+
+// public static operator ==(Outracks.Simulator.TextPosition a, Outracks.Simulator.TextPosition b) [static] :1255
+bool TextPosition__op_Equality(TextPosition a, TextPosition b)
+{
+    return a.Equals2(b);
+}
+
+// public static operator >(Outracks.Simulator.TextPosition a, Outracks.Simulator.TextPosition b) [static] :1272
+bool TextPosition__op_GreaterThan(TextPosition a, TextPosition b)
+{
+    return TextPosition__op_Inequality(a, b) && !TextPosition__op_LessThan(a, b);
+}
+
+// public static operator >=(Outracks.Simulator.TextPosition a, Outracks.Simulator.TextPosition b) [static] :1282
+bool TextPosition__op_GreaterThanOrEqual(TextPosition a, TextPosition b)
+{
+    return TextPosition__op_Equality(a, b) || TextPosition__op_GreaterThan(a, b);
+}
+
+// public static operator !=(Outracks.Simulator.TextPosition a, Outracks.Simulator.TextPosition b) [static] :1260
+bool TextPosition__op_Inequality(TextPosition a, TextPosition b)
+{
+    return !TextPosition__op_Equality(a, b);
+}
+
+// public static operator <(Outracks.Simulator.TextPosition a, Outracks.Simulator.TextPosition b) [static] :1265
+bool TextPosition__op_LessThan(TextPosition a, TextPosition b)
+{
+    if (::g::Outracks::Simulator::LineNumber__op_LessThan(a.Line, b.Line))
+        return true;
+
+    if (::g::Outracks::Simulator::LineNumber__op_GreaterThan(a.Line, b.Line))
+        return false;
+
+    return ::g::Outracks::Simulator::CharacterNumber__op_LessThan(a.Character, b.Character);
+}
+
+// public static operator <=(Outracks.Simulator.TextPosition a, Outracks.Simulator.TextPosition b) [static] :1277
+bool TextPosition__op_LessThanOrEqual(TextPosition a, TextPosition b)
+{
+    return TextPosition__op_Equality(a, b) || TextPosition__op_LessThan(a, b);
+}
+
+// public static Outracks.Simulator.TextPosition Read(System.IO.BinaryReader reader) [static] :1287
+TextPosition TextPosition__Read(::g::System::IO::BinaryReader* reader)
+{
+    uStackFrame __("Outracks.Simulator.TextPosition", "Read(System.IO.BinaryReader)");
+    int line = uPtr(reader)->ReadInt32();
+    int character = reader->ReadInt32();
+    return TextPosition__New1(::g::Outracks::Simulator::LineNumber__New1(line), ::g::Outracks::Simulator::CharacterNumber__New1(character));
+}
+
+// public static void Write(System.IO.BinaryWriter writer, Outracks.Simulator.TextPosition value) [static] :1296
+void TextPosition__Write(::g::System::IO::BinaryWriter* writer, TextPosition value)
+{
+    uStackFrame __("Outracks.Simulator.TextPosition", "Write(System.IO.BinaryWriter,Outracks.Simulator.TextPosition)");
+    uPtr(writer)->Write5(::g::Outracks::Simulator::LineNumber__op_Implicit(value.Line));
+    writer->Write5(::g::Outracks::Simulator::CharacterNumber__op_Implicit(value.Character));
+}
+// }
+
+// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
+// -----------------------------------------------------------------------
+
+// public static class ToIndentedLinesExtension :1670
+// {
+static void ToIndentedLinesExtension_build(uType* type)
+{
+    ::STRINGS[13] = uString::Const("");
+    ::STRINGS[33] = uString::Const("    ");
+    ::STRINGS[19] = uString::Const("\n"
+        "");
+    ::TYPES[59] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
+    ::TYPES[24] = ::g::Uno::Collections::IEnumerator_typeof();
+    ::TYPES[60] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
+    type->Reflection.SetFunctions(1,
+        new uFunction("ToIndentedLines", NULL, (void*)ToIndentedLinesExtension__ToIndentedLines_fn, 0, true, ::g::Uno::String_typeof(), 1, ::TYPES[59/*Uno.Collections.IEnumerable<Uno.Exception>*/]));
+}
+
+uClassType* ToIndentedLinesExtension_typeof()
+{
+    static uSStrong<uClassType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.TypeSize = sizeof(uClassType);
+    type = uClassType::New("Outracks.Simulator.ToIndentedLinesExtension", options);
+    type->fp_build_ = ToIndentedLinesExtension_build;
+    return type;
+}
+
+// public static string ToIndentedLines(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) :1672
+void ToIndentedLinesExtension__ToIndentedLines_fn(uObject* innerExceptions, uString** __retval)
+{
+    *__retval = ToIndentedLinesExtension::ToIndentedLines(innerExceptions);
+}
+
+// public static string ToIndentedLines(Uno.Collections.IEnumerable<Uno.Exception> innerExceptions) [static] :1672
+uString* ToIndentedLinesExtension::ToIndentedLines(uObject* innerExceptions)
+{
+    uStackFrame __("Outracks.Simulator.ToIndentedLinesExtension", "ToIndentedLines(Uno.Collections.IEnumerable<Uno.Exception>)");
+    ::g::Uno::Exception* ret2;
+    uString* s = ::STRINGS[13/*""*/];
+
+    for (uObject* enum1 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(innerExceptions), ::TYPES[59/*Uno.Collections.IEnumerable<Uno.Exception>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[24/*Uno.Collections.IEnumerator*/])); )
+    {
+        ::g::Uno::Exception* e = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), ::TYPES[60/*Uno.Collections.IEnumerator<Uno.Exception>*/]), &ret2), ret2);
+        s = ::g::Uno::String::op_Addition2(s, ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[33/*"    "*/], uPtr(e)->Message()), ::STRINGS[19/*"\n"*/]));
+    }
+
+    return s;
+}
+// }
+
+// /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/concurrency/$.uno
+// -----------------------------------------------------------------------------------
 
 // internal sealed class WaitForFirstResult<T> :141
 // {
 static void WaitForFirstResult_build(uType* type)
 {
-    ::TYPES[78] = ::g::Uno::Collections::EnumerableExtensions_typeof();
-    ::TYPES[64] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
+    ::TYPES[42] = ::g::Uno::Collections::EnumerableExtensions_typeof();
+    ::TYPES[78] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
     type->SetPrecalc(
-        ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(12/*ToList<Outracks.Simulator.Task<T>>*/, ::g::Outracks::Simulator::Task_typeof()->MakeType(type->T(0), NULL), NULL),
+        ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(11/*ToList<Outracks.Simulator.Task<T>>*/, ::g::Outracks::Simulator::Task_typeof()->MakeType(type->T(0), NULL), NULL),
         type->T(0));
     type->SetFields(0,
         ::g::Uno::Func1_typeof()->MakeType(::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL), type->T(0), NULL), offsetof(::g::Outracks::Simulator::WaitForFirstResult, _onNoResult), 0,
@@ -7974,7 +5379,7 @@ void WaitForFirstResult__Execute_fn(WaitForFirstResult* __this, uTRef __retval)
     int index2;
     int length3;
     bool ret3;
-    ::g::Uno::Collections::List* exceptions = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[64/*Uno.Collections.List<Uno.Exception>*/]);
+    ::g::Uno::Collections::List* exceptions = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[78/*Uno.Collections.List<Uno.Exception>*/]);
 
     while (uPtr(__this->_pending)->Count() != 0)
 

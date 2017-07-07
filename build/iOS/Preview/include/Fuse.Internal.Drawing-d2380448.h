@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -16,7 +16,7 @@ namespace Fuse{
 namespace Internal{
 namespace Drawing{
 
-// internal sealed class SolidRectangle :118
+// internal sealed class SolidRectangle :134
 // {
 uType* SolidRectangle_typeof();
 void SolidRectangle__ctor__fn(SolidRectangle* __this);
@@ -28,10 +28,12 @@ struct SolidRectangle : uObject
 {
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_66ccbe7e;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_77a0ae88;
+    ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_b4859fb9;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_c5598fc3;
     ::g::Uno::Float4x4 DrawElement_LocalTransform_77a0ae88_4_9_2;
     ::g::Uno::Float4x4 DrawElement_LocalTransform_77a0ae88_4_9_3;
     ::g::Uno::Float4x4 DrawElement_LocalTransform_77a0ae88_4_9_4;
+    uStrong< ::g::Uno::Graphics::VertexBuffer*> DrawElement_VertexData_55f8ce74_7_2_1;
     uStrong< ::g::Uno::Graphics::VertexBuffer*> DrawElement_VertexData_66ccbe7e_7_2_1;
     uStrong< ::g::Uno::Graphics::VertexBuffer*> DrawElement_VertexData_77a0ae88_7_2_1;
     uStrong< ::g::Uno::Graphics::VertexBuffer*> DrawElement_VertexData_b4859fb9_7_2_1;

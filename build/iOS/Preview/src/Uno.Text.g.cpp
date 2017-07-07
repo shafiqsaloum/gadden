@@ -26,8 +26,8 @@ namespace g{
 namespace Uno{
 namespace Text{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/text/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/text/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public static class Ascii :7
 // {
@@ -77,8 +77,8 @@ uString* Ascii::GetString(uArray* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/text/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/text/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public static class Base64 :27
 // {
@@ -127,8 +127,8 @@ uString* Base64::GetString(uArray* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/text/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/text/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public abstract class Decoder :145
 // {
@@ -163,8 +163,8 @@ void Decoder::ctor_()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/text/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/text/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public abstract class Encoding :396
 // {
@@ -220,8 +220,8 @@ Encoding* Encoding::UTF8()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/text/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/text/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class StringBuilder :45
 // {
@@ -429,8 +429,8 @@ StringBuilder* StringBuilder::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/text/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/text/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // internal sealed class StringBuilderElement :129
 // {
@@ -482,8 +482,8 @@ StringBuilderElement* StringBuilderElement::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/text/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/text/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public static class Utf8 :422
 // {
@@ -531,8 +531,8 @@ uString* Utf8::GetString(uArray* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/text/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/text/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // internal sealed class UTF8Decoder :152
 // {
@@ -823,8 +823,8 @@ UTF8Decoder* UTF8Decoder::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/text/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/text/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class UTF8Encoding :414
 // {

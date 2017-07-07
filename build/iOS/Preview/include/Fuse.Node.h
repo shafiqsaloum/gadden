@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -22,7 +22,7 @@ namespace g{namespace Uno{namespace Text{struct StringBuilder;}}}
 namespace g{
 namespace Fuse{
 
-// public interfacemodifiers class Node :2180
+// public interfacemodifiers class Node :2207
 // {
 struct Node_type : uType
 {
@@ -77,6 +77,7 @@ void Node__IterPreserveRootFrame_fn(Node* __this, Node* n);
 void Node__MakeBindingList_fn(Node* __this, ::g::Fuse::Binding* newItem);
 void Node__get_Name_fn(Node* __this, ::g::Uno::UX::Selector* __retval);
 void Node__set_Name_fn(Node* __this, ::g::Uno::UX::Selector* value);
+void Node__get_NodeDepth_fn(Node* __this, int* __retval);
 void Node__OnDataChanged_fn(Node* __this, uString* key, uObject* newValue);
 void Node__OnPreserveRootFrame_fn(Node* __this);
 void Node__OnRooted_fn(Node* __this);
@@ -160,6 +161,7 @@ struct Node : ::g::Uno::UX::PropertyObject
     void MakeBindingList(::g::Fuse::Binding* newItem);
     ::g::Uno::UX::Selector Name();
     void Name(::g::Uno::UX::Selector value);
+    int NodeDepth();
     void OnDataChanged(uString* key, uObject* newValue);
     void OnPreserveRootFrame() { (((Node_type*)__type)->fp_OnPreserveRootFrame)(this); }
     void OnRooted() { (((Node_type*)__type)->fp_OnRooted)(this); }

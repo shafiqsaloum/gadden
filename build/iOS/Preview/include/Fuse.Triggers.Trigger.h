@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -18,12 +18,13 @@ namespace g{namespace Fuse{namespace Animations{struct TriggerAnimationState;}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction;}}}}
 namespace g{namespace Fuse{namespace Triggers{struct Trigger;}}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
+namespace g{namespace Uno{namespace UX{struct Selector;}}}
 
 namespace g{
 namespace Fuse{
 namespace Triggers{
 
-// public abstract class Trigger :2700
+// public abstract class Trigger :2667
 // {
 struct Trigger_type : ::g::Fuse::Node_type
 {
@@ -107,6 +108,9 @@ struct Trigger : ::g::Fuse::NodeGroupBase
     int _rootPlayState;
     double _rootProgress;
     bool _startAtZero;
+    bool _suppressPropertyChangedProgress;
+    static ::g::Uno::UX::Selector ProgressName_;
+    static ::g::Uno::UX::Selector& ProgressName() { return Trigger_typeof()->Init(), ProgressName_; }
     int _Bypass;
 
     void ctor_4();

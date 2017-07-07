@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -15,12 +15,13 @@ namespace g{namespace Fuse{namespace Reactive{struct Case;}}}
 namespace g{namespace Fuse{namespace Reactive{struct Match;}}}
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
+namespace g{namespace Uno{namespace Collections{struct RootableList;}}}
 
 namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public sealed class Match :1537
+// public sealed class Match :1670
 // {
 struct Match_type : ::g::Fuse::Node_type
 {
@@ -62,7 +63,7 @@ void Match__set_Value_fn(Match* __this, uObject* value);
 
 struct Match : ::g::Fuse::Behavior
 {
-    uStrong<uObject*> _cases;
+    uStrong< ::g::Uno::Collections::RootableList*> _cases;
     uStrong< ::g::Uno::Collections::List*> _elements;
     uStrong< ::g::Fuse::Reactive::Case*> _oldCase;
     uStrong<uObject*> _realValue;

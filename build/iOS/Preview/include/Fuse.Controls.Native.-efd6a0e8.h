@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// internal static extern class TextEditSpeedHack :3018
+// internal static extern class TextEditSpeedHack :3112
 // {
 uClassType* TextEditSpeedHack_typeof();
 void TextEditSpeedHack__Run_fn();

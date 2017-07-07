@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/0.47.7/brushes/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/brushes/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Drawing{
 
-// public sealed class StaticSolidColor :458
+// public sealed class StaticSolidColor :490
 // {
 struct StaticSolidColor_type : ::g::Fuse::Drawing::Brush_type
 {

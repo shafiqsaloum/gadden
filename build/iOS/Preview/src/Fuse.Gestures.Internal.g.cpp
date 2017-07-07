@@ -20,6 +20,7 @@
 #include <Fuse.Gestures.SwipeGe-f1aed91a.h>
 #include <Fuse.Input.CaptureType.h>
 #include <Fuse.Input.Gesture.h>
+#include <Fuse.Input.GesturePriority.h>
 #include <Fuse.Input.GestureRequest.h>
 #include <Fuse.Input.Gestures.h>
 #include <Fuse.Input.GestureType.h>
@@ -75,10 +76,10 @@ namespace Fuse{
 namespace Gestures{
 namespace Internal{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
-// private sealed class SwipeRegion.DoSwiped :800
+// private sealed class SwipeRegion.DoSwiped :812
 // {
 static void SwipeRegion__DoSwiped_build(uType* type)
 {
@@ -103,30 +104,30 @@ uType* SwipeRegion__DoSwiped_typeof()
     return type;
 }
 
-// public generated DoSwiped() :800
+// public generated DoSwiped() :812
 void SwipeRegion__DoSwiped__ctor__fn(SwipeRegion__DoSwiped* __this)
 {
     __this->ctor_();
 }
 
-// public generated DoSwiped New() :800
+// public generated DoSwiped New() :812
 void SwipeRegion__DoSwiped__New1_fn(SwipeRegion__DoSwiped** __retval)
 {
     *__retval = SwipeRegion__DoSwiped::New1();
 }
 
-// public void Perform() :806
+// public void Perform() :818
 void SwipeRegion__DoSwiped__Perform_fn(SwipeRegion__DoSwiped* __this)
 {
     __this->Perform();
 }
 
-// public generated DoSwiped() [instance] :800
+// public generated DoSwiped() [instance] :812
 void SwipeRegion__DoSwiped::ctor_()
 {
 }
 
-// public void Perform() [instance] :806
+// public void Perform() [instance] :818
 void SwipeRegion__DoSwiped::Perform()
 {
     uStackFrame __("Fuse.Gestures.Internal.SwipeRegion.DoSwiped", "Perform()");
@@ -135,7 +136,7 @@ void SwipeRegion__DoSwiped::Perform()
         uPtr(uPtr(Region)->Swiped1)->Invoke(2, uCRef(Active), uCRef(Cancelled));
 }
 
-// public generated DoSwiped New() [static] :800
+// public generated DoSwiped New() [static] :812
 SwipeRegion__DoSwiped* SwipeRegion__DoSwiped::New1()
 {
     SwipeRegion__DoSwiped* obj1 = (SwipeRegion__DoSwiped*)uNew(SwipeRegion__DoSwiped_typeof());
@@ -144,8 +145,8 @@ SwipeRegion__DoSwiped* SwipeRegion__DoSwiped::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal sealed class EdgeSwiper :282
 // {
@@ -742,10 +743,10 @@ EdgeSwiper* EdgeSwiper::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
-// private sealed class TwoFinger.Point :1366
+// private sealed class TwoFinger.Point :1399
 // {
 static void TwoFinger__Point_build(uType* type)
 {
@@ -771,25 +772,25 @@ uType* TwoFinger__Point_typeof()
     return type;
 }
 
-// public generated Point() :1366
+// public generated Point() :1399
 void TwoFinger__Point__ctor__fn(TwoFinger__Point* __this)
 {
     __this->ctor_();
 }
 
-// public generated Point New() :1366
+// public generated Point New() :1399
 void TwoFinger__Point__New1_fn(TwoFinger__Point** __retval)
 {
     *__retval = TwoFinger__Point::New1();
 }
 
-// public generated Point() [instance] :1366
+// public generated Point() [instance] :1399
 void TwoFinger__Point::ctor_()
 {
     Down = -1;
 }
 
-// public generated Point New() [static] :1366
+// public generated Point New() [static] :1399
 TwoFinger__Point* TwoFinger__Point::New1()
 {
     TwoFinger__Point* obj1 = (TwoFinger__Point*)uNew(TwoFinger__Point_typeof());
@@ -798,10 +799,10 @@ TwoFinger__Point* TwoFinger__Point::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
-// public enum SwipeRegion.ProgressFlags :700
+// public enum SwipeRegion.ProgressFlags :707
 uEnumType* SwipeRegion__ProgressFlags_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -815,12 +816,12 @@ uEnumType* SwipeRegion__ProgressFlags_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
-// internal sealed class Swiper :917
+// internal sealed class Swiper :943
 // {
-// static Swiper() :917
+// static Swiper() :943
 static void Swiper__cctor__fn(uType* __type)
 {
     Swiper::_swiperProperty_ = ::g::Fuse::Properties::CreateHandle();
@@ -829,7 +830,7 @@ static void Swiper__cctor__fn(uType* __type)
 static void Swiper_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("incomplete swipe detected");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno");
     ::STRINGS[2] = uString::Const("CheckNeedUpdated");
     ::STRINGS[3] = uString::Const("invalid OnCapture");
     ::STRINGS[4] = uString::Const("Fuse.Input.IGesture.OnCapture");
@@ -853,6 +854,7 @@ static void Swiper_build(uType* type)
         ::TYPES[11/*Uno.Collections.List<Fuse.Gestures.Internal.SwipeRegion>*/], offsetof(::g::Fuse::Gestures::Internal::Swiper, _pointerRegions), 0,
         ::g::Uno::Double_typeof(), offsetof(::g::Fuse::Gestures::Internal::Swiper, _prevTime), 0,
         ::TYPES[11/*Uno.Collections.List<Fuse.Gestures.Internal.SwipeRegion>*/], offsetof(::g::Fuse::Gestures::Internal::Swiper, _regions), 0,
+        ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Gestures::Internal::Swiper, _significance), 0,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Gestures::Internal::Swiper, _startCoord), 0,
         ::g::Uno::Double_typeof(), offsetof(::g::Fuse::Gestures::Internal::Swiper, _startProgress), 0,
         ::TYPES[2/*Fuse.Motion.Simulation.PointerVelocity<float2>*/], offsetof(::g::Fuse::Gestures::Internal::Swiper, _velocity), 0,
@@ -866,7 +868,7 @@ Swiper_type* Swiper_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 16;
+    options.FieldCount = 17;
     options.InterfaceCount = 1;
     options.ObjectSize = sizeof(Swiper);
     options.TypeSize = sizeof(Swiper_type);
@@ -878,68 +880,70 @@ Swiper_type* Swiper_typeof()
     type->interface0.fp_OnCapture = (void(*)(uObject*, ::g::Fuse::Input::PointerEventArgs*, int*))Swiper__FuseInputIGestureOnCapture_fn;
     type->interface0.fp_OnPointerMoved = (void(*)(uObject*, ::g::Fuse::Input::PointerMovedArgs*, int*))Swiper__FuseInputIGestureOnPointerMoved_fn;
     type->interface0.fp_OnPointerReleased = (void(*)(uObject*, ::g::Fuse::Input::PointerReleasedArgs*, int*))Swiper__FuseInputIGestureOnPointerReleased_fn;
+    type->interface0.fp_get_Significance = (void(*)(uObject*, float*))Swiper__FuseInputIGestureget_Significance_fn;
+    type->interface0.fp_get_PriorityAdjustment = (void(*)(uObject*, int*))Swiper__FuseInputIGestureget_PriorityAdjustment_fn;
+    type->interface0.fp_get_Priority = (void(*)(uObject*, int*))Swiper__FuseInputIGestureget_Priority_fn;
     return type;
 }
 
-// private Swiper(Fuse.Elements.Element elm) :923
+// private Swiper(Fuse.Elements.Element elm) :949
 void Swiper__ctor__fn(Swiper* __this, ::g::Fuse::Elements::Element* elm)
 {
     __this->ctor_(elm);
 }
 
-// public void AddRegion(Fuse.Gestures.Internal.SwipeRegion region) :963
+// public void AddRegion(Fuse.Gestures.Internal.SwipeRegion region) :989
 void Swiper__AddRegion_fn(Swiper* __this, ::g::Fuse::Gestures::Internal::SwipeRegion* region)
 {
     __this->AddRegion(region);
 }
 
-// public static Fuse.Gestures.Internal.Swiper AttachSwiper(Fuse.Elements.Element elm) :929
+// public static Fuse.Gestures.Internal.Swiper AttachSwiper(Fuse.Elements.Element elm) :955
 void Swiper__AttachSwiper_fn(::g::Fuse::Elements::Element* elm, Swiper** __retval)
 {
     *__retval = Swiper::AttachSwiper(elm);
 }
 
-// private void CheckNeedUpdated([bool off]) :997
+// private void CheckNeedUpdated([bool off]) :1023
 void Swiper__CheckNeedUpdated_fn(Swiper* __this, bool* off)
 {
     __this->CheckNeedUpdated(*off);
 }
 
-// public void Detach() :945
+// public void Detach() :971
 void Swiper__Detach_fn(Swiper* __this)
 {
     __this->Detach();
 }
 
-// private float2 FromWindow(float2 p) :1097
+// private float2 FromWindow(float2 p) :1144
 void Swiper__FromWindow_fn(Swiper* __this, ::g::Uno::Float2* p, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->FromWindow(*p);
 }
 
-// private void Fuse.Input.IGesture.OnCapture(Fuse.Input.PointerEventArgs args, Fuse.Input.CaptureType how) :1084
+// private void Fuse.Input.IGesture.OnCapture(Fuse.Input.PointerEventArgs args, Fuse.Input.CaptureType how) :1132
 void Swiper__FuseInputIGestureOnCapture_fn(Swiper* __this, ::g::Fuse::Input::PointerEventArgs* args, int* how)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "Fuse.Input.IGesture.OnCapture(Fuse.Input.PointerEventArgs,Fuse.Input.CaptureType)");
-    int how_ = *how;
 
     if (uPtr(__this->_pointerRegions)->Count() == 0)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[3/*"invalid OnC...*/], NULL, ::STRINGS[1/*"/Users/eric...*/], 1088, ::STRINGS[4/*"Fuse.Input....*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[3/*"invalid OnC...*/], NULL, ::STRINGS[1/*"/Users/eric...*/], 1136, ::STRINGS[4/*"Fuse.Input....*/]);
         return;
     }
 
-    if (!((how_ & 2) == 2))
-        __this->RestartMove(__this->FromWindow(uPtr(args)->WindowPoint()));
+    __this->RestartMove(__this->FromWindow(uPtr(args)->WindowPoint()));
 }
 
-// private void Fuse.Input.IGesture.OnLostCapture(bool forced) :1046
+// private void Fuse.Input.IGesture.OnLostCapture(bool forced) :1072
 void Swiper__FuseInputIGestureOnLostCapture_fn(Swiper* __this, bool* forced)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "Fuse.Input.IGesture.OnLostCapture(bool)");
     bool forced_ = *forced;
     ::g::Fuse::Gestures::Internal::SwipeRegion* ret4;
     ::g::Fuse::Gestures::Internal::SwipeRegion* ret5;
+    __this->_significance = 0.0f;
 
     if (forced_)
     {
@@ -953,14 +957,13 @@ void Swiper__FuseInputIGestureOnLostCapture_fn(Swiper* __this, bool* forced)
     __this->CheckNeedUpdated(false);
 }
 
-// private Fuse.Input.GestureRequest Fuse.Input.IGesture.OnPointerMoved(Fuse.Input.PointerMovedArgs args) :1119
+// private Fuse.Input.GestureRequest Fuse.Input.IGesture.OnPointerMoved(Fuse.Input.PointerMovedArgs args) :1166
 void Swiper__FuseInputIGestureOnPointerMoved_fn(Swiper* __this, ::g::Fuse::Input::PointerMovedArgs* args, int* __retval)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "Fuse.Input.IGesture.OnPointerMoved(Fuse.Input.PointerMovedArgs)");
     __this->MoveUser(__this->FromWindow(uPtr(args)->WindowPoint()), uPtr(args)->Timestamp() - __this->_prevTime, false);
     ::g::Uno::Float2 currentCoord = __this->FromWindow(args->WindowPoint());
     __this->_prevTime = args->Timestamp();
-    bool wantHard = false;
 
     for (int i = 0; i < 2; ++i)
     {
@@ -968,7 +971,7 @@ void Swiper__FuseInputIGestureOnPointerMoved_fn(Swiper* __this, ::g::Fuse::Input
 
         if (!uPtr(__this->_gesture)->IsHardCapture() || __this->_allowNewRegion)
         {
-            ::g::Fuse::Gestures::Internal::SwipeRegion* selRegion = __this->SelectRegion(diff, uPtr(__this->_gesture)->IsHardCapture());
+            ::g::Fuse::Gestures::Internal::SwipeRegion* selRegion = __this->SelectRegion(diff);
 
             if ((selRegion == __this->_excludeRegion) && (__this->_excludeRegion != NULL))
                 __this->RestartMove(currentCoord);
@@ -979,21 +982,16 @@ void Swiper__FuseInputIGestureOnPointerMoved_fn(Swiper* __this, ::g::Fuse::Input
 
                 __this->_excludeRegion = NULL;
                 __this->_pointerRegion = selRegion;
-
-                if (!uPtr(__this->_gesture)->IsHardCapture())
-                {
-                    __this->RestartMove(__this->FromWindow(uPtr(args)->WindowPoint()));
-                    wantHard = true;
-                }
-
                 __this->_startProgress = uPtr(__this->_pointerRegion)->Progress();
                 currentCoord = __this->FromWindow(uPtr(args)->WindowPoint());
                 diff = ::g::Uno::Float2__op_Subtraction2(currentCoord, __this->_startCoord);
-                __this->_allowNewRegion = uPtr(__this->_pointerRegion)->Continuous;
+                __this->_allowNewRegion = false;
             }
         }
 
-        if (__this->_pointerRegion != NULL)
+        __this->_significance = ((__this->_pointerRegion == NULL) ? 0.0f : ::g::Uno::Math::Abs1(uPtr(__this->_pointerRegion)->ScalarDistance(diff)));
+
+        if ((__this->_pointerRegion != NULL) && uPtr(__this->_gesture)->IsHardCapture())
         {
             if (uPtr(__this->_pointerRegion)->InteractProgress(diff, __this->_startProgress))
             {
@@ -1012,10 +1010,10 @@ void Swiper__FuseInputIGestureOnPointerMoved_fn(Swiper* __this, ::g::Fuse::Input
         break;
     }
 
-    return *__retval = wantHard ? 3 : 1, void();
+    return *__retval = 1, void();
 }
 
-// private Fuse.Input.GestureRequest Fuse.Input.IGesture.OnPointerPressed(Fuse.Input.PointerPressedArgs args) :1066
+// private Fuse.Input.GestureRequest Fuse.Input.IGesture.OnPointerPressed(Fuse.Input.PointerPressedArgs args) :1113
 void Swiper__FuseInputIGestureOnPointerPressed_fn(Swiper* __this, ::g::Fuse::Input::PointerPressedArgs* args, int* __retval)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "Fuse.Input.IGesture.OnPointerPressed(Fuse.Input.PointerPressedArgs)");
@@ -1025,6 +1023,7 @@ void Swiper__FuseInputIGestureOnPointerPressed_fn(Swiper* __this, ::g::Fuse::Inp
     uPtr(__this->_pointerRegions)->Clear();
     __this->_pointerRegion = NULL;
     __this->_excludeRegion = NULL;
+    __this->_significance = 0.0f;
 
     for (int i = 0; i < uPtr(__this->_regions)->Count(); ++i)
     {
@@ -1037,17 +1036,17 @@ void Swiper__FuseInputIGestureOnPointerPressed_fn(Swiper* __this, ::g::Fuse::Inp
     if (uPtr(__this->_pointerRegions)->Count() == 0)
         return *__retval = 0, void();
 
-    return *__retval = 2, void();
+    return *__retval = 1, void();
 }
 
-// private Fuse.Input.GestureRequest Fuse.Input.IGesture.OnPointerReleased(Fuse.Input.PointerReleasedArgs args) :1216
+// private Fuse.Input.GestureRequest Fuse.Input.IGesture.OnPointerReleased(Fuse.Input.PointerReleasedArgs args) :1249
 void Swiper__FuseInputIGestureOnPointerReleased_fn(Swiper* __this, ::g::Fuse::Input::PointerReleasedArgs* args, int* __retval)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "Fuse.Input.IGesture.OnPointerReleased(Fuse.Input.PointerReleasedArgs)");
     ::g::Uno::Float2 ret7;
 
     if (!uPtr(__this->_gesture)->IsHardCapture() || (__this->_pointerRegion == NULL))
-        return *__retval = 4, void();
+        return *__retval = 2, void();
 
     ::g::Uno::Float2 currentCoord = __this->FromWindow(uPtr(args)->WindowPoint());
     uPtr(__this->_pointerRegion)->InteractProgress(::g::Uno::Float2__op_Subtraction2(currentCoord, __this->_startCoord), __this->_startProgress);
@@ -1066,58 +1065,78 @@ void Swiper__FuseInputIGestureOnPointerReleased_fn(Swiper* __this, ::g::Fuse::In
         on = !(uPtr(__this->_pointerRegion)->Progress() < (double)uPtr(__this->_pointerRegion)->DeactivationThreshold);
 
     __this->SetActivation(__this->_pointerRegion, on, false);
-    return *__retval = 4, void();
+    return *__retval = 2, void();
 }
 
-// private void MoveUser(float2 coord, double elapsed, [bool release]) :1105
+// private Fuse.Input.GesturePriority Fuse.Input.IGesture.get_Priority() :1110
+void Swiper__FuseInputIGestureget_Priority_fn(Swiper* __this, int* __retval)
+{
+    uStackFrame __("Fuse.Gestures.Internal.Swiper", "Fuse.Input.IGesture.get_Priority()");
+    return *__retval = (__this->_pointerRegion == NULL) ? 2 : uPtr(__this->_pointerRegion)->GesturePriority(), void();
+}
+
+// private int Fuse.Input.IGesture.get_PriorityAdjustment() :1101
+void Swiper__FuseInputIGestureget_PriorityAdjustment_fn(Swiper* __this, int* __retval)
+{
+    uStackFrame __("Fuse.Gestures.Internal.Swiper", "Fuse.Input.IGesture.get_PriorityAdjustment()");
+    return *__retval = (__this->_pointerRegion == NULL) ? 0 : (uPtr(__this->_pointerRegion)->Priority < 100) ? 1 : 0, void();
+}
+
+// private float Fuse.Input.IGesture.get_Significance() :1096
+void Swiper__FuseInputIGestureget_Significance_fn(Swiper* __this, float* __retval)
+{
+    return *__retval = __this->_significance, void();
+}
+
+// private void MoveUser(float2 coord, double elapsed, [bool release]) :1152
 void Swiper__MoveUser_fn(Swiper* __this, ::g::Uno::Float2* coord, double* elapsed, bool* release)
 {
     __this->MoveUser(*coord, *elapsed, *release);
 }
 
-// private Swiper New(Fuse.Elements.Element elm) :923
+// private Swiper New(Fuse.Elements.Element elm) :949
 void Swiper__New1_fn(::g::Fuse::Elements::Element* elm, Swiper** __retval)
 {
     *__retval = Swiper::New1(elm);
 }
 
-// private void OnRooted(Fuse.Elements.Element n) :981
+// private void OnRooted(Fuse.Elements.Element n) :1007
 void Swiper__OnRooted_fn(Swiper* __this, ::g::Fuse::Elements::Element* n)
 {
     __this->OnRooted(n);
 }
 
-// private void OnUnrooted() :990
+// private void OnUnrooted() :1016
 void Swiper__OnUnrooted_fn(Swiper* __this)
 {
     __this->OnUnrooted();
 }
 
-// private void OnUpdated() :1030
+// private void OnUpdated() :1056
 void Swiper__OnUpdated_fn(Swiper* __this)
 {
     __this->OnUpdated();
 }
 
-// public void RemoveRegion(Fuse.Gestures.Internal.SwipeRegion region) :974
+// public void RemoveRegion(Fuse.Gestures.Internal.SwipeRegion region) :1000
 void Swiper__RemoveRegion_fn(Swiper* __this, ::g::Fuse::Gestures::Internal::SwipeRegion* region)
 {
     __this->RemoveRegion(region);
 }
 
-// private void RestartMove(float2 currentCoord) :1112
+// private void RestartMove(float2 currentCoord) :1159
 void Swiper__RestartMove_fn(Swiper* __this, ::g::Uno::Float2* currentCoord)
 {
     __this->RestartMove(*currentCoord);
 }
 
-// private Fuse.Gestures.Internal.SwipeRegion SelectRegion(float2 diff, bool force) :1193
-void Swiper__SelectRegion_fn(Swiper* __this, ::g::Uno::Float2* diff, bool* force, ::g::Fuse::Gestures::Internal::SwipeRegion** __retval)
+// private Fuse.Gestures.Internal.SwipeRegion SelectRegion(float2 diff) :1228
+void Swiper__SelectRegion_fn(Swiper* __this, ::g::Uno::Float2* diff, ::g::Fuse::Gestures::Internal::SwipeRegion** __retval)
 {
-    *__retval = __this->SelectRegion(*diff, *force);
+    *__retval = __this->SelectRegion(*diff);
 }
 
-// public void SetActivation(Fuse.Gestures.Internal.SwipeRegion region, bool on, [bool bypass]) :1242
+// public void SetActivation(Fuse.Gestures.Internal.SwipeRegion region, bool on, [bool bypass]) :1275
 void Swiper__SetActivation_fn(Swiper* __this, ::g::Fuse::Gestures::Internal::SwipeRegion* region, bool* on, bool* bypass)
 {
     __this->SetActivation(region, *on, *bypass);
@@ -1125,7 +1144,7 @@ void Swiper__SetActivation_fn(Swiper* __this, ::g::Fuse::Gestures::Internal::Swi
 
 uSStrong< ::g::Fuse::PropertyHandle*> Swiper::_swiperProperty_;
 
-// private Swiper(Fuse.Elements.Element elm) [instance] :923
+// private Swiper(Fuse.Elements.Element elm) [instance] :949
 void Swiper::ctor_(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", ".ctor(Fuse.Elements.Element)");
@@ -1138,7 +1157,7 @@ void Swiper::ctor_(::g::Fuse::Elements::Element* elm)
     _element = elm;
 }
 
-// public void AddRegion(Fuse.Gestures.Internal.SwipeRegion region) [instance] :963
+// public void AddRegion(Fuse.Gestures.Internal.SwipeRegion region) [instance] :989
 void Swiper::AddRegion(::g::Fuse::Gestures::Internal::SwipeRegion* region)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "AddRegion(Fuse.Gestures.Internal.SwipeRegion)");
@@ -1153,7 +1172,7 @@ void Swiper::AddRegion(::g::Fuse::Gestures::Internal::SwipeRegion* region)
     CheckNeedUpdated(false);
 }
 
-// private void CheckNeedUpdated([bool off]) [instance] :997
+// private void CheckNeedUpdated([bool off]) [instance] :1023
 void Swiper::CheckNeedUpdated(bool off)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "CheckNeedUpdated([bool])");
@@ -1168,7 +1187,7 @@ void Swiper::CheckNeedUpdated(bool off)
             needUpdated = true;
         else if (uPtr(region)->InProgress())
         {
-            ::g::Fuse::Diagnostics::InternalError(::STRINGS[0/*"incomplete ...*/], this, ::STRINGS[1/*"/Users/eric...*/], 1010, ::STRINGS[2/*"CheckNeedUp...*/]);
+            ::g::Fuse::Diagnostics::InternalError(::STRINGS[0/*"incomplete ...*/], this, ::STRINGS[1/*"/Users/eric...*/], 1036, ::STRINGS[2/*"CheckNeedUp...*/]);
             uPtr(region)->SetProgress(uPtr(region)->StableProgress(), 2);
         }
     }
@@ -1188,7 +1207,7 @@ void Swiper::CheckNeedUpdated(bool off)
     }
 }
 
-// public void Detach() [instance] :945
+// public void Detach() [instance] :971
 void Swiper::Detach()
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "Detach()");
@@ -1201,7 +1220,7 @@ void Swiper::Detach()
     }
 }
 
-// private float2 FromWindow(float2 p) [instance] :1097
+// private float2 FromWindow(float2 p) [instance] :1144
 ::g::Uno::Float2 Swiper::FromWindow(::g::Uno::Float2 p)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "FromWindow(float2)");
@@ -1212,14 +1231,14 @@ void Swiper::Detach()
     return uPtr(uPtr(_element)->Parent())->WindowToLocal(p);
 }
 
-// private void MoveUser(float2 coord, double elapsed, [bool release]) [instance] :1105
+// private void MoveUser(float2 coord, double elapsed, [bool release]) [instance] :1152
 void Swiper::MoveUser(::g::Uno::Float2 coord, double elapsed, bool release)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "MoveUser(float2,double,[bool])");
     ::g::Fuse::Motion::Simulation::PointerVelocity__AddSample_fn(uPtr(_velocity), uCRef(coord), uCRef((double)(float)elapsed), uCRef<int>((!uPtr(_gesture)->IsHardCapture() ? 1 : 0) | (release ? 2 : 0)));
 }
 
-// private void OnRooted(Fuse.Elements.Element n) [instance] :981
+// private void OnRooted(Fuse.Elements.Element n) [instance] :1007
 void Swiper::OnRooted(::g::Fuse::Elements::Element* n)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "OnRooted(Fuse.Elements.Element)");
@@ -1229,7 +1248,7 @@ void Swiper::OnRooted(::g::Fuse::Elements::Element* n)
     _gesture = ::g::Fuse::Input::Gestures::Add((uObject*)this, _element, 5);
 }
 
-// private void OnUnrooted() [instance] :990
+// private void OnUnrooted() [instance] :1016
 void Swiper::OnUnrooted()
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "OnUnrooted()");
@@ -1237,7 +1256,7 @@ void Swiper::OnUnrooted()
     _element = NULL;
 }
 
-// private void OnUpdated() [instance] :1030
+// private void OnUpdated() [instance] :1056
 void Swiper::OnUpdated()
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "OnUpdated()");
@@ -1260,7 +1279,7 @@ void Swiper::OnUpdated()
     CheckNeedUpdated(true);
 }
 
-// public void RemoveRegion(Fuse.Gestures.Internal.SwipeRegion region) [instance] :974
+// public void RemoveRegion(Fuse.Gestures.Internal.SwipeRegion region) [instance] :1000
 void Swiper::RemoveRegion(::g::Fuse::Gestures::Internal::SwipeRegion* region)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "RemoveRegion(Fuse.Gestures.Internal.SwipeRegion)");
@@ -1269,7 +1288,7 @@ void Swiper::RemoveRegion(::g::Fuse::Gestures::Internal::SwipeRegion* region)
     CheckNeedUpdated(false);
 }
 
-// private void RestartMove(float2 currentCoord) [instance] :1112
+// private void RestartMove(float2 currentCoord) [instance] :1159
 void Swiper::RestartMove(::g::Uno::Float2 currentCoord)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "RestartMove(float2)");
@@ -1277,10 +1296,10 @@ void Swiper::RestartMove(::g::Uno::Float2 currentCoord)
     ::g::Fuse::Motion::Simulation::PointerVelocity__Reset_fn(uPtr(_velocity), uCRef(_startCoord));
 }
 
-// private Fuse.Gestures.Internal.SwipeRegion SelectRegion(float2 diff, bool force) [instance] :1193
-::g::Fuse::Gestures::Internal::SwipeRegion* Swiper::SelectRegion(::g::Uno::Float2 diff, bool force)
+// private Fuse.Gestures.Internal.SwipeRegion SelectRegion(float2 diff) [instance] :1228
+::g::Fuse::Gestures::Internal::SwipeRegion* Swiper::SelectRegion(::g::Uno::Float2 diff)
 {
-    uStackFrame __("Fuse.Gestures.Internal.Swiper", "SelectRegion(float2,bool)");
+    uStackFrame __("Fuse.Gestures.Internal.Swiper", "SelectRegion(float2)");
     ::g::Fuse::Gestures::Internal::SwipeRegion* ret11;
     ::g::Fuse::Gestures::Internal::SwipeRegion* sel = NULL;
 
@@ -1292,9 +1311,6 @@ void Swiper::RestartMove(::g::Uno::Float2 currentCoord)
         if (str <= 0.0f)
             continue;
 
-        if (!force && (str < 10.0f))
-            continue;
-
         if ((sel == NULL) || (uPtr(sel)->Progress() < region->Progress()))
             sel = region;
     }
@@ -1302,7 +1318,7 @@ void Swiper::RestartMove(::g::Uno::Float2 currentCoord)
     return sel;
 }
 
-// public void SetActivation(Fuse.Gestures.Internal.SwipeRegion region, bool on, [bool bypass]) [instance] :1242
+// public void SetActivation(Fuse.Gestures.Internal.SwipeRegion region, bool on, [bool bypass]) [instance] :1275
 void Swiper::SetActivation(::g::Fuse::Gestures::Internal::SwipeRegion* region, bool on, bool bypass)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "SetActivation(Fuse.Gestures.Internal.SwipeRegion,bool,[bool])");
@@ -1333,7 +1349,7 @@ void Swiper::SetActivation(::g::Fuse::Gestures::Internal::SwipeRegion* region, b
     CheckNeedUpdated(false);
 }
 
-// public static Fuse.Gestures.Internal.Swiper AttachSwiper(Fuse.Elements.Element elm) [static] :929
+// public static Fuse.Gestures.Internal.Swiper AttachSwiper(Fuse.Elements.Element elm) [static] :955
 Swiper* Swiper::AttachSwiper(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Gestures.Internal.Swiper", "AttachSwiper(Fuse.Elements.Element)");
@@ -1353,7 +1369,7 @@ Swiper* Swiper::AttachSwiper(::g::Fuse::Elements::Element* elm)
     return ns;
 }
 
-// private Swiper New(Fuse.Elements.Element elm) [static] :923
+// private Swiper New(Fuse.Elements.Element elm) [static] :949
 Swiper* Swiper::New1(::g::Fuse::Elements::Element* elm)
 {
     Swiper* obj1 = (Swiper*)uNew(Swiper_typeof());
@@ -1362,8 +1378,8 @@ Swiper* Swiper::New1(::g::Fuse::Elements::Element* elm)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal sealed class SwipeRegion :677
 // {
@@ -1381,7 +1397,7 @@ static void SwipeRegion_build(uType* type)
     ::STRINGS[6] = uString::Const("Progress");
     ::STRINGS[7] = uString::Const("IsActive");
     ::STRINGS[8] = uString::Const("Unexpected progress in swipe");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno");
     ::STRINGS[9] = uString::Const("SetProgress");
     ::TYPES[1] = ::g::Fuse::Motion::Simulation::SmoothSnap_typeof()->MakeType(::g::Uno::Float_typeof(), NULL);
     ::TYPES[5] = ::g::Fuse::Motion::Simulation::DestinationSimulation_typeof()->MakeType(::g::Uno::Float_typeof(), NULL);
@@ -1391,6 +1407,7 @@ static void SwipeRegion_build(uType* type)
     type->SetInterfaces(
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(SwipeRegion_type, interface0));
     type->SetFields(2,
+        ::g::Fuse::Input::GesturePriority_typeof(), offsetof(::g::Fuse::Gestures::Internal::SwipeRegion, _gesturePriority), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Gestures::Internal::SwipeRegion, _inProgress), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Gestures::Internal::SwipeRegion, _isActive), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Gestures::Internal::SwipeRegion, _isEnabled), 0,
@@ -1401,7 +1418,6 @@ static void SwipeRegion_build(uType* type)
         ::g::Uno::Float4_typeof(), offsetof(::g::Fuse::Gestures::Internal::SwipeRegion, AreaVector), 0,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Gestures::Internal::SwipeRegion, AreaVectorDistance), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Gestures::Internal::SwipeRegion, AutoTrigger), 0,
-        ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Gestures::Internal::SwipeRegion, Continuous), 0,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Gestures::Internal::SwipeRegion, DeactivationThreshold), 0,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Gestures::Internal::SwipeRegion, Direction), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Gestures::Internal::SwipeRegion, IsInterruptible), 0,
@@ -1444,43 +1460,61 @@ void SwipeRegion__ctor_1_fn(SwipeRegion* __this)
     __this->ctor_1();
 }
 
-// public float ActivateStrength(float2 diff) :885
+// public float ActivateStrength(float2 diff) :895
 void SwipeRegion__ActivateStrength_fn(SwipeRegion* __this, ::g::Uno::Float2* diff, float* __retval)
 {
     *__retval = __this->ActivateStrength(*diff);
 }
 
-// private void DoRevertActive() :792
+// private void DoRevertActive() :804
 void SwipeRegion__DoRevertActive_fn(SwipeRegion* __this)
 {
     __this->DoRevertActive();
 }
 
-// public bool get_InProgress() :711
+// private double get_EffectiveLength() :919
+void SwipeRegion__get_EffectiveLength_fn(SwipeRegion* __this, double* __retval)
+{
+    *__retval = __this->EffectiveLength();
+}
+
+// public Fuse.Input.GesturePriority get_GesturePriority() :691
+void SwipeRegion__get_GesturePriority_fn(SwipeRegion* __this, int* __retval)
+{
+    *__retval = __this->GesturePriority();
+}
+
+// public void set_GesturePriority(Fuse.Input.GesturePriority value) :692
+void SwipeRegion__set_GesturePriority_fn(SwipeRegion* __this, int* value)
+{
+    __this->GesturePriority(*value);
+}
+
+// public bool get_InProgress() :718
 void SwipeRegion__get_InProgress_fn(SwipeRegion* __this, bool* __retval)
 {
     *__retval = __this->InProgress();
 }
 
-// private void set_InProgress(bool value) :712
+// private void set_InProgress(bool value) :719
 void SwipeRegion__set_InProgress_fn(SwipeRegion* __this, bool* value)
 {
     __this->InProgress(*value);
 }
 
-// public bool InteractProgress(float2 diff, double startProgress) :900
+// public bool InteractProgress(float2 diff, double startProgress) :927
 void SwipeRegion__InteractProgress_fn(SwipeRegion* __this, ::g::Uno::Float2* diff, double* startProgress, bool* __retval)
 {
     *__retval = __this->InteractProgress(*diff, *startProgress);
 }
 
-// public bool get_IsActive() :779
+// public bool get_IsActive() :791
 void SwipeRegion__get_IsActive_fn(SwipeRegion* __this, bool* __retval)
 {
     *__retval = __this->IsActive();
 }
 
-// public void set_IsActive(bool value) :780
+// public void set_IsActive(bool value) :792
 void SwipeRegion__set_IsActive_fn(SwipeRegion* __this, bool* value)
 {
     __this->IsActive(*value);
@@ -1498,19 +1532,19 @@ void SwipeRegion__set_IsEnabled_fn(SwipeRegion* __this, bool* value)
     __this->IsEnabled(*value);
 }
 
-// public bool IsPointInside(Fuse.Elements.Element prime, float2 coord) :865
+// public bool IsPointInside(Fuse.Elements.Element prime, float2 coord) :874
 void SwipeRegion__IsPointInside_fn(SwipeRegion* __this, ::g::Fuse::Elements::Element* prime, ::g::Uno::Float2* coord, bool* __retval)
 {
     *__retval = __this->IsPointInside(prime, *coord);
 }
 
-// public bool get_IsSelectable() :828
+// public bool get_IsSelectable() :840
 void SwipeRegion__get_IsSelectable_fn(SwipeRegion* __this, bool* __retval)
 {
     *__retval = __this->IsSelectable();
 }
 
-// public bool get_IsStatic() :823
+// public bool get_IsStatic() :835
 void SwipeRegion__get_IsStatic_fn(SwipeRegion* __this, bool* __retval)
 {
     *__retval = __this->IsStatic();
@@ -1522,49 +1556,55 @@ void SwipeRegion__New2_fn(SwipeRegion** __retval)
     *__retval = SwipeRegion::New2();
 }
 
-// public double get_Progress() :691
+// public double get_Progress() :698
 void SwipeRegion__get_Progress_fn(SwipeRegion* __this, double* __retval)
 {
     *__retval = __this->Progress();
 }
 
-// public float ScalarValue(float2 x) :911
+// public float ScalarDistance(float2 diff) :912
+void SwipeRegion__ScalarDistance_fn(SwipeRegion* __this, ::g::Uno::Float2* diff, float* __retval)
+{
+    *__retval = __this->ScalarDistance(*diff);
+}
+
+// public float ScalarValue(float2 x) :937
 void SwipeRegion__ScalarValue_fn(SwipeRegion* __this, ::g::Uno::Float2* x, float* __retval)
 {
     *__retval = __this->ScalarValue(*x);
 }
 
-// public void SetActive(bool active) :722
+// public void SetActive(bool active) :729
 void SwipeRegion__SetActive_fn(SwipeRegion* __this, bool* active)
 {
     __this->SetActive(*active);
 }
 
-// public void SetIsActive(bool value, Uno.UX.IPropertyListener origin) :783
+// public void SetIsActive(bool value, Uno.UX.IPropertyListener origin) :795
 void SwipeRegion__SetIsActive_fn(SwipeRegion* __this, bool* value, uObject* origin)
 {
     __this->SetIsActive(*value, origin);
 }
 
-// internal bool SetProgress(double value, [Fuse.Gestures.Internal.SwipeRegion.ProgressFlags flags]) :728
+// internal bool SetProgress(double value, [Fuse.Gestures.Internal.SwipeRegion.ProgressFlags flags]) :735
 void SwipeRegion__SetProgress_fn(SwipeRegion* __this, double* value, int* flags, bool* __retval)
 {
     *__retval = __this->SetProgress(*value, *flags);
 }
 
-// public double get_StableProgress() :697
+// public double get_StableProgress() :704
 void SwipeRegion__get_StableProgress_fn(SwipeRegion* __this, double* __retval)
 {
     *__retval = __this->StableProgress();
 }
 
-// public generated void add_Swiped(Uno.Action<bool, bool> value) :773
+// public generated void add_Swiped(Uno.Action<bool, bool> value) :785
 void SwipeRegion__add_Swiped_fn(SwipeRegion* __this, uDelegate* value)
 {
     __this->add_Swiped(value);
 }
 
-// public generated void remove_Swiped(Uno.Action<bool, bool> value) :773
+// public generated void remove_Swiped(Uno.Action<bool, bool> value) :785
 void SwipeRegion__remove_Swiped_fn(SwipeRegion* __this, uDelegate* value)
 {
     __this->remove_Swiped(value);
@@ -1584,6 +1624,7 @@ void SwipeRegion::ctor_1()
 {
     uStackFrame __("Fuse.Gestures.Internal.SwipeRegion", ".ctor()");
     _isEnabled = true;
+    _gesturePriority = 3;
     Range = ::g::Uno::Math::DegreesToRadians1(30.0f);
     PointBody1D = (uObject*)((::g::Fuse::Motion::Simulation::SmoothSnap*)::g::Fuse::Motion::Simulation::SmoothSnap::CreateNormalized(::TYPES[1/*Fuse.Motion.Simulation.SmoothSnap<float>*/]));
     AreaVectorDistance = 100.0f;
@@ -1595,10 +1636,14 @@ void SwipeRegion::ctor_1()
     ctor_();
 }
 
-// public float ActivateStrength(float2 diff) [instance] :885
+// public float ActivateStrength(float2 diff) [instance] :895
 float SwipeRegion::ActivateStrength(::g::Uno::Float2 diff)
 {
     float l = ::g::Uno::Vector::Length(diff);
+
+    if (l < 1e-05f)
+        return 0.0f;
+
     float a = ::g::Fuse::Internal::VectorUtil::Angle(diff, Direction);
 
     if ((Progress() < 1.0) && (a < (Range / 2.0f)))
@@ -1610,7 +1655,7 @@ float SwipeRegion::ActivateStrength(::g::Uno::Float2 diff)
     return 0.0f;
 }
 
-// private void DoRevertActive() [instance] :792
+// private void DoRevertActive() [instance] :804
 void SwipeRegion::DoRevertActive()
 {
     uStackFrame __("Fuse.Gestures.Internal.SwipeRegion", "DoRevertActive()");
@@ -1619,13 +1664,36 @@ void SwipeRegion::DoRevertActive()
     IsActive(false);
 }
 
-// public bool get_InProgress() [instance] :711
+// private double get_EffectiveLength() [instance] :919
+double SwipeRegion::EffectiveLength()
+{
+    uStackFrame __("Fuse.Gestures.Internal.SwipeRegion", "get_EffectiveLength()");
+
+    if (LengthElement == NULL)
+        return Length;
+
+    return (double)::g::Uno::Math::Abs1(::g::Uno::Vector::Dot(Direction, uPtr(LengthElement)->ActualSize()));
+}
+
+// public Fuse.Input.GesturePriority get_GesturePriority() [instance] :691
+int SwipeRegion::GesturePriority()
+{
+    return _gesturePriority;
+}
+
+// public void set_GesturePriority(Fuse.Input.GesturePriority value) [instance] :692
+void SwipeRegion::GesturePriority(int value)
+{
+    _gesturePriority = value;
+}
+
+// public bool get_InProgress() [instance] :718
 bool SwipeRegion::InProgress()
 {
     return _inProgress;
 }
 
-// private void set_InProgress(bool value) [instance] :712
+// private void set_InProgress(bool value) [instance] :719
 void SwipeRegion::InProgress(bool value)
 {
     uStackFrame __("Fuse.Gestures.Internal.SwipeRegion", "set_InProgress(bool)");
@@ -1637,27 +1705,27 @@ void SwipeRegion::InProgress(bool value)
     OnPropertyChanged(SwipeRegion::InProgressName());
 }
 
-// public bool InteractProgress(float2 diff, double startProgress) [instance] :900
+// public bool InteractProgress(float2 diff, double startProgress) [instance] :927
 bool SwipeRegion::InteractProgress(::g::Uno::Float2 diff, double startProgress)
 {
     uStackFrame __("Fuse.Gestures.Internal.SwipeRegion", "InteractProgress(float2,double)");
-    float l = ::g::Fuse::Internal::VectorUtil::ScalarProjection(diff, Direction);
-    double extent = Length;
+    float l = ScalarDistance(diff);
+    double p = ::g::Uno::Math::Clamp(((double)l / EffectiveLength()) + startProgress, 0.0, 1.0);
+    int flags = 1;
 
-    if (LengthElement != NULL)
-        extent = (double)::g::Uno::Math::Abs1(::g::Uno::Vector::Dot(Direction, uPtr(LengthElement)->ActualSize()));
+    if (AutoTrigger && (p == 1.0))
+        flags = flags | 2;
 
-    double p = ::g::Uno::Math::Clamp(((double)l / extent) + startProgress, 0.0, 1.0);
-    return SetProgress(p, 1);
+    return SetProgress(p, flags);
 }
 
-// public bool get_IsActive() [instance] :779
+// public bool get_IsActive() [instance] :791
 bool SwipeRegion::IsActive()
 {
     return _isActive;
 }
 
-// public void set_IsActive(bool value) [instance] :780
+// public void set_IsActive(bool value) [instance] :792
 void SwipeRegion::IsActive(bool value)
 {
     uStackFrame __("Fuse.Gestures.Internal.SwipeRegion", "set_IsActive(bool)");
@@ -1676,7 +1744,7 @@ void SwipeRegion::IsEnabled(bool value)
     _isEnabled = value;
 }
 
-// public bool IsPointInside(Fuse.Elements.Element prime, float2 coord) [instance] :865
+// public bool IsPointInside(Fuse.Elements.Element prime, float2 coord) [instance] :874
 bool SwipeRegion::IsPointInside(::g::Fuse::Elements::Element* prime, ::g::Uno::Float2 coord)
 {
     uStackFrame __("Fuse.Gestures.Internal.SwipeRegion", "IsPointInside(Fuse.Elements.Element,float2)");
@@ -1693,46 +1761,52 @@ bool SwipeRegion::IsPointInside(::g::Fuse::Elements::Element* prime, ::g::Uno::F
 
         ::g::Uno::Float4 v = ::g::Uno::Float4__op_Multiply2(AreaVector, ::g::Uno::Float4__New7(size, size));
         float l = ::g::Fuse::Internal::VectorUtil::DistanceLine(v, coord);
-        return l < AreaVectorDistance;
+        return (double)l < ::g::Uno::Math::Max((double)AreaVectorDistance, EffectiveLength() * Progress());
     }
 
     return false;
 }
 
-// public bool get_IsSelectable() [instance] :828
+// public bool get_IsSelectable() [instance] :840
 bool SwipeRegion::IsSelectable()
 {
     uStackFrame __("Fuse.Gestures.Internal.SwipeRegion", "get_IsSelectable()");
     return (IsStatic() || IsInterruptible) && IsEnabled();
 }
 
-// public bool get_IsStatic() [instance] :823
+// public bool get_IsStatic() [instance] :835
 bool SwipeRegion::IsStatic()
 {
     uStackFrame __("Fuse.Gestures.Internal.SwipeRegion", "get_IsStatic()");
     return ::g::Fuse::Motion::Simulation::Simulation::IsStatic(uInterface(uPtr(PointBody1D), ::TYPES[3/*Fuse.Motion.Simulation.Simulation*/]));
 }
 
-// public double get_Progress() [instance] :691
+// public double get_Progress() [instance] :698
 double SwipeRegion::Progress()
 {
     return _progress;
 }
 
-// public float ScalarValue(float2 x) [instance] :911
+// public float ScalarDistance(float2 diff) [instance] :912
+float SwipeRegion::ScalarDistance(::g::Uno::Float2 diff)
+{
+    return ::g::Fuse::Internal::VectorUtil::ScalarProjection(diff, Direction);
+}
+
+// public float ScalarValue(float2 x) [instance] :937
 float SwipeRegion::ScalarValue(::g::Uno::Float2 x)
 {
     return ::g::Fuse::Internal::VectorUtil::ScalarProjection(x, Direction);
 }
 
-// public void SetActive(bool active) [instance] :722
+// public void SetActive(bool active) [instance] :729
 void SwipeRegion::SetActive(bool active)
 {
     uStackFrame __("Fuse.Gestures.Internal.SwipeRegion", "SetActive(bool)");
     SetProgress((double)(active ? 1 : 0), 2);
 }
 
-// public void SetIsActive(bool value, Uno.UX.IPropertyListener origin) [instance] :783
+// public void SetIsActive(bool value, Uno.UX.IPropertyListener origin) [instance] :795
 void SwipeRegion::SetIsActive(bool value, uObject* origin)
 {
     uStackFrame __("Fuse.Gestures.Internal.SwipeRegion", "SetIsActive(bool,Uno.UX.IPropertyListener)");
@@ -1744,7 +1818,7 @@ void SwipeRegion::SetIsActive(bool value, uObject* origin)
     OnPropertyChanged(SwipeRegion::_isActiveName());
 }
 
-// internal bool SetProgress(double value, [Fuse.Gestures.Internal.SwipeRegion.ProgressFlags flags]) [instance] :728
+// internal bool SetProgress(double value, [Fuse.Gestures.Internal.SwipeRegion.ProgressFlags flags]) [instance] :735
 bool SwipeRegion::SetProgress(double value, int flags)
 {
     uStackFrame __("Fuse.Gestures.Internal.SwipeRegion", "SetProgress(double,[Fuse.Gestures.Internal.SwipeRegion.ProgressFlags])");
@@ -1762,8 +1836,12 @@ bool SwipeRegion::SetProgress(double value, int flags)
 
     if (endProgress)
     {
-        if (!((_progress == 1.0) || (_progress == 0.0)))
-            ::g::Fuse::Diagnostics::InternalError(::STRINGS[8/*"Unexpected ...*/], this, ::STRINGS[1/*"/Users/eric...*/], 748, ::STRINGS[9/*"SetProgress"*/]);
+        if (::g::Uno::Math::Abs(_progress) < 9.9999997473787516e-06)
+            _progress = 0.0;
+        else if (::g::Uno::Math::Abs(_progress - 1.0) < 9.9999997473787516e-06)
+            _progress = 1.0;
+        else
+            ::g::Fuse::Diagnostics::InternalError(::STRINGS[8/*"Unexpected ...*/], this, ::STRINGS[1/*"/Users/eric...*/], 760, ::STRINGS[9/*"SetProgress"*/]);
 
         bool active = _progress == 1.0;
         bool cancelled = _stableProgress == _progress;
@@ -1784,20 +1862,20 @@ bool SwipeRegion::SetProgress(double value, int flags)
     return swiped;
 }
 
-// public double get_StableProgress() [instance] :697
+// public double get_StableProgress() [instance] :704
 double SwipeRegion::StableProgress()
 {
     return _stableProgress;
 }
 
-// public generated void add_Swiped(Uno.Action<bool, bool> value) [instance] :773
+// public generated void add_Swiped(Uno.Action<bool, bool> value) [instance] :785
 void SwipeRegion::add_Swiped(uDelegate* value)
 {
     uStackFrame __("Fuse.Gestures.Internal.SwipeRegion", "add_Swiped(Uno.Action<bool, bool>)");
     Swiped1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Swiped1, value), ::TYPES[12/*Uno.Action<bool, bool>*/]);
 }
 
-// public generated void remove_Swiped(Uno.Action<bool, bool> value) [instance] :773
+// public generated void remove_Swiped(Uno.Action<bool, bool> value) [instance] :785
 void SwipeRegion::remove_Swiped(uDelegate* value)
 {
     uStackFrame __("Fuse.Gestures.Internal.SwipeRegion", "remove_Swiped(Uno.Action<bool, bool>)");
@@ -1813,8 +1891,8 @@ SwipeRegion* SwipeRegion::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal enum SwipeRegionArea :671
 uEnumType* SwipeRegionArea_typeof()
@@ -1829,12 +1907,12 @@ uEnumType* SwipeRegionArea_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
-// internal sealed class TwoFinger :1290
+// internal sealed class TwoFinger :1323
 // {
-// static TwoFinger() :1290
+// static TwoFinger() :1323
 static void TwoFinger__cctor__fn(uType* __type)
 {
     TwoFinger::_property_ = ::g::Fuse::Properties::CreateHandle();
@@ -1884,139 +1962,139 @@ uType* TwoFinger_typeof()
     return type;
 }
 
-// private TwoFinger(Fuse.Visual n) :1299
+// private TwoFinger(Fuse.Visual n) :1332
 void TwoFinger__ctor__fn(TwoFinger* __this, ::g::Fuse::Visual* n)
 {
     __this->ctor_(n);
 }
 
-// public static Fuse.Gestures.Internal.TwoFinger Attach(Fuse.Visual n) :1307
+// public static Fuse.Gestures.Internal.TwoFinger Attach(Fuse.Visual n) :1340
 void TwoFinger__Attach_fn(::g::Fuse::Visual* n, TwoFinger** __retval)
 {
     *__retval = TwoFinger::Attach(n);
 }
 
-// private void Begin() :1398
+// private void Begin() :1431
 void TwoFinger__Begin_fn(TwoFinger* __this)
 {
     __this->Begin();
 }
 
-// public void Detach() :1323
+// public void Detach() :1356
 void TwoFinger__Detach_fn(TwoFinger* __this)
 {
     __this->Detach();
 }
 
-// public generated void add_Ended(Fuse.Gestures.Internal.TwoFingerEventHandler value) :1348
+// public generated void add_Ended(Fuse.Gestures.Internal.TwoFingerEventHandler value) :1381
 void TwoFinger__add_Ended_fn(TwoFinger* __this, uDelegate* value)
 {
     __this->add_Ended(value);
 }
 
-// public generated void remove_Ended(Fuse.Gestures.Internal.TwoFingerEventHandler value) :1348
+// public generated void remove_Ended(Fuse.Gestures.Internal.TwoFingerEventHandler value) :1381
 void TwoFinger__remove_Ended_fn(TwoFinger* __this, uDelegate* value)
 {
     __this->remove_Ended(value);
 }
 
-// private float2 FromWindow(float2 p) :1417
+// private float2 FromWindow(float2 p) :1450
 void TwoFinger__FromWindow_fn(TwoFinger* __this, ::g::Uno::Float2* p, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->FromWindow(*p);
 }
 
-// private TwoFinger New(Fuse.Visual n) :1299
+// private TwoFinger New(Fuse.Visual n) :1332
 void TwoFinger__New1_fn(::g::Fuse::Visual* n, TwoFinger** __retval)
 {
     *__retval = TwoFinger::New1(n);
 }
 
-// private void OnLostCapture() :1353
+// private void OnLostCapture() :1386
 void TwoFinger__OnLostCapture_fn(TwoFinger* __this)
 {
     __this->OnLostCapture();
 }
 
-// private void OnPointerMoved(object sender, Fuse.Input.PointerMovedArgs args) :1434
+// private void OnPointerMoved(object sender, Fuse.Input.PointerMovedArgs args) :1467
 void TwoFinger__OnPointerMoved_fn(TwoFinger* __this, uObject* sender, ::g::Fuse::Input::PointerMovedArgs* args)
 {
     __this->OnPointerMoved(sender, args);
 }
 
-// private void OnPointerPressed(object sender, Fuse.Input.PointerPressedArgs args) :1374
+// private void OnPointerPressed(object sender, Fuse.Input.PointerPressedArgs args) :1407
 void TwoFinger__OnPointerPressed_fn(TwoFinger* __this, uObject* sender, ::g::Fuse::Input::PointerPressedArgs* args)
 {
     __this->OnPointerPressed(sender, args);
 }
 
-// private void OnPointerReleased(object sender, Fuse.Input.PointerReleasedArgs args) :1506
+// private void OnPointerReleased(object sender, Fuse.Input.PointerReleasedArgs args) :1539
 void TwoFinger__OnPointerReleased_fn(TwoFinger* __this, uObject* sender, ::g::Fuse::Input::PointerReleasedArgs* args)
 {
     __this->OnPointerReleased(sender, args);
 }
 
-// private void OnRooted() :1333
+// private void OnRooted() :1366
 void TwoFinger__OnRooted_fn(TwoFinger* __this)
 {
     __this->OnRooted();
 }
 
-// private void OnUnrooted() :1340
+// private void OnUnrooted() :1373
 void TwoFinger__OnUnrooted_fn(TwoFinger* __this)
 {
     __this->OnUnrooted();
 }
 
-// private Fuse.Gestures.Internal.TwoFinger.Point PointFromArgs(Fuse.Input.PointerEventArgs args) :1425
+// private Fuse.Gestures.Internal.TwoFinger.Point PointFromArgs(Fuse.Input.PointerEventArgs args) :1458
 void TwoFinger__PointFromArgs_fn(TwoFinger* __this, ::g::Fuse::Input::PointerEventArgs* args, TwoFinger__Point** __retval)
 {
     *__retval = __this->PointFromArgs(args);
 }
 
-// public generated void add_Rotated(Fuse.Gestures.Internal.TwoFingerRotateHandler value) :1350
+// public generated void add_Rotated(Fuse.Gestures.Internal.TwoFingerRotateHandler value) :1383
 void TwoFinger__add_Rotated_fn(TwoFinger* __this, uDelegate* value)
 {
     __this->add_Rotated(value);
 }
 
-// public generated void remove_Rotated(Fuse.Gestures.Internal.TwoFingerRotateHandler value) :1350
+// public generated void remove_Rotated(Fuse.Gestures.Internal.TwoFingerRotateHandler value) :1383
 void TwoFinger__remove_Rotated_fn(TwoFinger* __this, uDelegate* value)
 {
     __this->remove_Rotated(value);
 }
 
-// public generated void add_Started(Fuse.Gestures.Internal.TwoFingerEventHandler value) :1347
+// public generated void add_Started(Fuse.Gestures.Internal.TwoFingerEventHandler value) :1380
 void TwoFinger__add_Started_fn(TwoFinger* __this, uDelegate* value)
 {
     __this->add_Started(value);
 }
 
-// public generated void remove_Started(Fuse.Gestures.Internal.TwoFingerEventHandler value) :1347
+// public generated void remove_Started(Fuse.Gestures.Internal.TwoFingerEventHandler value) :1380
 void TwoFinger__remove_Started_fn(TwoFinger* __this, uDelegate* value)
 {
     __this->remove_Started(value);
 }
 
-// public generated void add_Translated(Fuse.Gestures.Internal.TwoFingerTranslateHandler value) :1351
+// public generated void add_Translated(Fuse.Gestures.Internal.TwoFingerTranslateHandler value) :1384
 void TwoFinger__add_Translated_fn(TwoFinger* __this, uDelegate* value)
 {
     __this->add_Translated(value);
 }
 
-// public generated void remove_Translated(Fuse.Gestures.Internal.TwoFingerTranslateHandler value) :1351
+// public generated void remove_Translated(Fuse.Gestures.Internal.TwoFingerTranslateHandler value) :1384
 void TwoFinger__remove_Translated_fn(TwoFinger* __this, uDelegate* value)
 {
     __this->remove_Translated(value);
 }
 
-// public generated void add_Zoomed(Fuse.Gestures.Internal.TwoFingerZoomHandler value) :1349
+// public generated void add_Zoomed(Fuse.Gestures.Internal.TwoFingerZoomHandler value) :1382
 void TwoFinger__add_Zoomed_fn(TwoFinger* __this, uDelegate* value)
 {
     __this->add_Zoomed(value);
 }
 
-// public generated void remove_Zoomed(Fuse.Gestures.Internal.TwoFingerZoomHandler value) :1349
+// public generated void remove_Zoomed(Fuse.Gestures.Internal.TwoFingerZoomHandler value) :1382
 void TwoFinger__remove_Zoomed_fn(TwoFinger* __this, uDelegate* value)
 {
     __this->remove_Zoomed(value);
@@ -2024,7 +2102,7 @@ void TwoFinger__remove_Zoomed_fn(TwoFinger* __this, uDelegate* value)
 
 uSStrong< ::g::Fuse::PropertyHandle*> TwoFinger::_property_;
 
-// private TwoFinger(Fuse.Visual n) [instance] :1299
+// private TwoFinger(Fuse.Visual n) [instance] :1332
 void TwoFinger::ctor_(::g::Fuse::Visual* n)
 {
     _keyZoomRangeUp = 200.0f;
@@ -2036,7 +2114,7 @@ void TwoFinger::ctor_(::g::Fuse::Visual* n)
     _node = n;
 }
 
-// private void Begin() [instance] :1398
+// private void Begin() [instance] :1431
 void TwoFinger::Begin()
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "Begin()");
@@ -2057,7 +2135,7 @@ void TwoFinger::Begin()
         uPtr(Started1)->InvokeVoid();
 }
 
-// public void Detach() [instance] :1323
+// public void Detach() [instance] :1356
 void TwoFinger::Detach()
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "Detach()");
@@ -2070,21 +2148,21 @@ void TwoFinger::Detach()
     }
 }
 
-// public generated void add_Ended(Fuse.Gestures.Internal.TwoFingerEventHandler value) [instance] :1348
+// public generated void add_Ended(Fuse.Gestures.Internal.TwoFingerEventHandler value) [instance] :1381
 void TwoFinger::add_Ended(uDelegate* value)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "add_Ended(Fuse.Gestures.Internal.TwoFingerEventHandler)");
     Ended1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Ended1, value), ::TYPES[14/*Fuse.Gestures.Internal.TwoFingerEventHandler*/]);
 }
 
-// public generated void remove_Ended(Fuse.Gestures.Internal.TwoFingerEventHandler value) [instance] :1348
+// public generated void remove_Ended(Fuse.Gestures.Internal.TwoFingerEventHandler value) [instance] :1381
 void TwoFinger::remove_Ended(uDelegate* value)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "remove_Ended(Fuse.Gestures.Internal.TwoFingerEventHandler)");
     Ended1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Ended1, value), ::TYPES[14/*Fuse.Gestures.Internal.TwoFingerEventHandler*/]);
 }
 
-// private float2 FromWindow(float2 p) [instance] :1417
+// private float2 FromWindow(float2 p) [instance] :1450
 ::g::Uno::Float2 TwoFinger::FromWindow(::g::Uno::Float2 p)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "FromWindow(float2)");
@@ -2095,7 +2173,7 @@ void TwoFinger::remove_Ended(uDelegate* value)
     return uPtr(uPtr(_node)->Parent())->WindowToLocal(p);
 }
 
-// private void OnLostCapture() [instance] :1353
+// private void OnLostCapture() [instance] :1386
 void TwoFinger::OnLostCapture()
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "OnLostCapture()");
@@ -2113,7 +2191,7 @@ void TwoFinger::OnLostCapture()
     _begun = false;
 }
 
-// private void OnPointerMoved(object sender, Fuse.Input.PointerMovedArgs args) [instance] :1434
+// private void OnPointerMoved(object sender, Fuse.Input.PointerMovedArgs args) [instance] :1467
 void TwoFinger::OnPointerMoved(uObject* sender, ::g::Fuse::Input::PointerMovedArgs* args)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "OnPointerMoved(object,Fuse.Input.PointerMovedArgs)");
@@ -2172,7 +2250,7 @@ void TwoFinger::OnPointerMoved(uObject* sender, ::g::Fuse::Input::PointerMovedAr
         Begin();
 }
 
-// private void OnPointerPressed(object sender, Fuse.Input.PointerPressedArgs args) [instance] :1374
+// private void OnPointerPressed(object sender, Fuse.Input.PointerPressedArgs args) [instance] :1407
 void TwoFinger::OnPointerPressed(uObject* sender, ::g::Fuse::Input::PointerPressedArgs* args)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "OnPointerPressed(object,Fuse.Input.PointerPressedArgs)");
@@ -2193,7 +2271,7 @@ void TwoFinger::OnPointerPressed(uObject* sender, ::g::Fuse::Input::PointerPress
     _fullTrans = ::g::Uno::Float2__New1(0.0f);
 }
 
-// private void OnPointerReleased(object sender, Fuse.Input.PointerReleasedArgs args) [instance] :1506
+// private void OnPointerReleased(object sender, Fuse.Input.PointerReleasedArgs args) [instance] :1539
 void TwoFinger::OnPointerReleased(uObject* sender, ::g::Fuse::Input::PointerReleasedArgs* args)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "OnPointerReleased(object,Fuse.Input.PointerReleasedArgs)");
@@ -2202,7 +2280,7 @@ void TwoFinger::OnPointerReleased(uObject* sender, ::g::Fuse::Input::PointerRele
         OnLostCapture();
 }
 
-// private void OnRooted() [instance] :1333
+// private void OnRooted() [instance] :1366
 void TwoFinger::OnRooted()
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "OnRooted()");
@@ -2211,7 +2289,7 @@ void TwoFinger::OnRooted()
     ::g::Fuse::VisualEvent__AddHandler_fn(uPtr(::g::Fuse::Input::Pointer::Moved()), _node, uDelegate::New(::TYPES[8/*Fuse.Input.PointerMovedHandler*/], (void*)TwoFinger__OnPointerMoved_fn, this));
 }
 
-// private void OnUnrooted() [instance] :1340
+// private void OnUnrooted() [instance] :1373
 void TwoFinger::OnUnrooted()
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "OnUnrooted()");
@@ -2220,7 +2298,7 @@ void TwoFinger::OnUnrooted()
     ::g::Fuse::VisualEvent__RemoveHandler_fn(uPtr(::g::Fuse::Input::Pointer::Moved()), _node, uDelegate::New(::TYPES[8/*Fuse.Input.PointerMovedHandler*/], (void*)TwoFinger__OnPointerMoved_fn, this));
 }
 
-// private Fuse.Gestures.Internal.TwoFinger.Point PointFromArgs(Fuse.Input.PointerEventArgs args) [instance] :1425
+// private Fuse.Gestures.Internal.TwoFinger.Point PointFromArgs(Fuse.Input.PointerEventArgs args) [instance] :1458
 TwoFinger__Point* TwoFinger::PointFromArgs(::g::Fuse::Input::PointerEventArgs* args)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "PointFromArgs(Fuse.Input.PointerEventArgs)");
@@ -2234,63 +2312,63 @@ TwoFinger__Point* TwoFinger::PointFromArgs(::g::Fuse::Input::PointerEventArgs* a
     return NULL;
 }
 
-// public generated void add_Rotated(Fuse.Gestures.Internal.TwoFingerRotateHandler value) [instance] :1350
+// public generated void add_Rotated(Fuse.Gestures.Internal.TwoFingerRotateHandler value) [instance] :1383
 void TwoFinger::add_Rotated(uDelegate* value)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "add_Rotated(Fuse.Gestures.Internal.TwoFingerRotateHandler)");
     Rotated1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Rotated1, value), ::TYPES[15/*Fuse.Gestures.Internal.TwoFingerRotateHandler*/]);
 }
 
-// public generated void remove_Rotated(Fuse.Gestures.Internal.TwoFingerRotateHandler value) [instance] :1350
+// public generated void remove_Rotated(Fuse.Gestures.Internal.TwoFingerRotateHandler value) [instance] :1383
 void TwoFinger::remove_Rotated(uDelegate* value)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "remove_Rotated(Fuse.Gestures.Internal.TwoFingerRotateHandler)");
     Rotated1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Rotated1, value), ::TYPES[15/*Fuse.Gestures.Internal.TwoFingerRotateHandler*/]);
 }
 
-// public generated void add_Started(Fuse.Gestures.Internal.TwoFingerEventHandler value) [instance] :1347
+// public generated void add_Started(Fuse.Gestures.Internal.TwoFingerEventHandler value) [instance] :1380
 void TwoFinger::add_Started(uDelegate* value)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "add_Started(Fuse.Gestures.Internal.TwoFingerEventHandler)");
     Started1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Started1, value), ::TYPES[14/*Fuse.Gestures.Internal.TwoFingerEventHandler*/]);
 }
 
-// public generated void remove_Started(Fuse.Gestures.Internal.TwoFingerEventHandler value) [instance] :1347
+// public generated void remove_Started(Fuse.Gestures.Internal.TwoFingerEventHandler value) [instance] :1380
 void TwoFinger::remove_Started(uDelegate* value)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "remove_Started(Fuse.Gestures.Internal.TwoFingerEventHandler)");
     Started1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Started1, value), ::TYPES[14/*Fuse.Gestures.Internal.TwoFingerEventHandler*/]);
 }
 
-// public generated void add_Translated(Fuse.Gestures.Internal.TwoFingerTranslateHandler value) [instance] :1351
+// public generated void add_Translated(Fuse.Gestures.Internal.TwoFingerTranslateHandler value) [instance] :1384
 void TwoFinger::add_Translated(uDelegate* value)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "add_Translated(Fuse.Gestures.Internal.TwoFingerTranslateHandler)");
     Translated1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Translated1, value), ::TYPES[16/*Fuse.Gestures.Internal.TwoFingerTranslateHandler*/]);
 }
 
-// public generated void remove_Translated(Fuse.Gestures.Internal.TwoFingerTranslateHandler value) [instance] :1351
+// public generated void remove_Translated(Fuse.Gestures.Internal.TwoFingerTranslateHandler value) [instance] :1384
 void TwoFinger::remove_Translated(uDelegate* value)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "remove_Translated(Fuse.Gestures.Internal.TwoFingerTranslateHandler)");
     Translated1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Translated1, value), ::TYPES[16/*Fuse.Gestures.Internal.TwoFingerTranslateHandler*/]);
 }
 
-// public generated void add_Zoomed(Fuse.Gestures.Internal.TwoFingerZoomHandler value) [instance] :1349
+// public generated void add_Zoomed(Fuse.Gestures.Internal.TwoFingerZoomHandler value) [instance] :1382
 void TwoFinger::add_Zoomed(uDelegate* value)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "add_Zoomed(Fuse.Gestures.Internal.TwoFingerZoomHandler)");
     Zoomed1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Zoomed1, value), ::TYPES[17/*Fuse.Gestures.Internal.TwoFingerZoomHandler*/]);
 }
 
-// public generated void remove_Zoomed(Fuse.Gestures.Internal.TwoFingerZoomHandler value) [instance] :1349
+// public generated void remove_Zoomed(Fuse.Gestures.Internal.TwoFingerZoomHandler value) [instance] :1382
 void TwoFinger::remove_Zoomed(uDelegate* value)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "remove_Zoomed(Fuse.Gestures.Internal.TwoFingerZoomHandler)");
     Zoomed1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Zoomed1, value), ::TYPES[17/*Fuse.Gestures.Internal.TwoFingerZoomHandler*/]);
 }
 
-// public static Fuse.Gestures.Internal.TwoFinger Attach(Fuse.Visual n) [static] :1307
+// public static Fuse.Gestures.Internal.TwoFinger Attach(Fuse.Visual n) [static] :1340
 TwoFinger* TwoFinger::Attach(::g::Fuse::Visual* n)
 {
     uStackFrame __("Fuse.Gestures.Internal.TwoFinger", "Attach(Fuse.Visual)");
@@ -2310,7 +2388,7 @@ TwoFinger* TwoFinger::Attach(::g::Fuse::Visual* n)
     return nt;
 }
 
-// private TwoFinger New(Fuse.Visual n) [static] :1299
+// private TwoFinger New(Fuse.Visual n) [static] :1332
 TwoFinger* TwoFinger::New1(::g::Fuse::Visual* n)
 {
     TwoFinger* obj2 = (TwoFinger*)uNew(TwoFinger_typeof());
@@ -2319,10 +2397,10 @@ TwoFinger* TwoFinger::New1(::g::Fuse::Visual* n)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
-// internal delegate void TwoFingerEventHandler() :1285
+// internal delegate void TwoFingerEventHandler() :1318
 uDelegateType* TwoFingerEventHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -2333,10 +2411,10 @@ uDelegateType* TwoFingerEventHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
-// internal delegate void TwoFingerRotateHandler(float angle) :1287
+// internal delegate void TwoFingerRotateHandler(float angle) :1320
 uDelegateType* TwoFingerRotateHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -2348,10 +2426,10 @@ uDelegateType* TwoFingerRotateHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
-// internal delegate void TwoFingerTranslateHandler(float2 amount) :1288
+// internal delegate void TwoFingerTranslateHandler(float2 amount) :1321
 uDelegateType* TwoFingerTranslateHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -2363,10 +2441,10 @@ uDelegateType* TwoFingerTranslateHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
-// internal delegate void TwoFingerZoomHandler(float factor) :1286
+// internal delegate void TwoFingerZoomHandler(float factor) :1319
 uDelegateType* TwoFingerZoomHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;

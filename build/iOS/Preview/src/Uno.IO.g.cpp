@@ -73,8 +73,8 @@ namespace g{
 namespace Uno{
 namespace IO{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class BinaryReader :8
 // {
@@ -371,8 +371,8 @@ BinaryReader* BinaryReader::New1(::g::Uno::IO::Stream* stream)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class BinaryWriter :365
 // {
@@ -600,8 +600,8 @@ BinaryWriter* BinaryWriter::New1(::g::Uno::IO::Stream* stream)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class Bundle :835
 // {
@@ -842,8 +842,8 @@ uObject* Bundle::AllFiles()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal sealed extern class CppXliStream :974
 // {
@@ -1070,8 +1070,8 @@ CppXliStream* CppXliStream::New1(uBase::Stream* handle)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal extern struct CppXliStreamHandle :966
 // {
@@ -1093,8 +1093,8 @@ uStructType* CppXliStreamHandle_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public static class Directory :1144
 // {
@@ -1236,8 +1236,8 @@ void Directory::Move(uString* oldName, uString* newName)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class EndOfStreamException :2495
 // {
@@ -1292,15 +1292,16 @@ EndOfStreamException* EndOfStreamException::New5()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public static class File :1318
 // {
 static void File_build(uType* type)
 {
-    type->Reflection.SetFunctions(10,
+    type->Reflection.SetFunctions(11,
         new uFunction("AppendAllText", NULL, (void*)File__AppendAllText_fn, 0, true, uVoid_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::String_typeof()),
+        new uFunction("Copy", NULL, (void*)File__Copy_fn, 0, true, uVoid_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::String_typeof()),
         new uFunction("Delete", NULL, (void*)File__Delete_fn, 0, true, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
         new uFunction("Exists", NULL, (void*)File__Exists_fn, 0, true, ::g::Uno::Bool_typeof(), 1, ::g::Uno::String_typeof()),
         new uFunction("Move", NULL, (void*)File__Move_fn, 0, true, uVoid_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::String_typeof()),
@@ -1328,6 +1329,12 @@ uClassType* File_typeof()
 void File__AppendAllText_fn(uString* filename, uString* contents)
 {
     File::AppendAllText(filename, contents);
+}
+
+// public static void Copy(string sourceFile, string destinationFile) :1358
+void File__Copy_fn(uString* sourceFile, uString* destinationFile)
+{
+    File::Copy(sourceFile, destinationFile);
 }
 
 // public static void Delete(string filename) :1350
@@ -1390,6 +1397,12 @@ void File::AppendAllText(uString* filename, uString* contents)
     ::g::Uno::IO::FileSystemImpl::AppendAllText(filename, contents);
 }
 
+// public static void Copy(string sourceFile, string destinationFile) [static] :1358
+void File::Copy(uString* sourceFile, uString* destinationFile)
+{
+    ::g::Uno::IO::FileSystemImpl::CopyFile(sourceFile, destinationFile, false);
+}
+
 // public static void Delete(string filename) [static] :1350
 void File::Delete(uString* filename)
 {
@@ -1445,8 +1458,8 @@ void File::WriteAllText(uString* filename, uString* text)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public enum FileMode :1545
 uEnumType* FileMode_typeof()
@@ -1465,8 +1478,8 @@ uEnumType* FileMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal sealed class FileSystemEnumerable :1784
 // {
@@ -1536,8 +1549,8 @@ FileSystemEnumerable* FileSystemEnumerable::New1(uString* dirName, int mode)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal sealed class FileSystemEnumerator :1818
 // {
@@ -1660,8 +1673,8 @@ FileSystemEnumerator* FileSystemEnumerator::New1(::CppXliFileSystemEnumerator* h
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal struct FileSystemEnumeratorHandle :1878
 // {
@@ -1683,8 +1696,8 @@ uStructType* FileSystemEnumeratorHandle_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal static class FileSystemEnumeratorImpl :1883
 // {
@@ -1765,8 +1778,8 @@ void FileSystemEnumeratorImpl::Reset(::CppXliFileSystemEnumerator* handle)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal enum FileSystemEnumeratorMode :1811
 uEnumType* FileSystemEnumeratorMode_typeof()
@@ -1782,8 +1795,8 @@ uEnumType* FileSystemEnumeratorMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal static class FileSystemImpl :1941
 // {
@@ -1807,6 +1820,12 @@ uClassType* FileSystemImpl_typeof()
 void FileSystemImpl__AppendAllText_fn(uString* filename, uString* contents)
 {
     FileSystemImpl::AppendAllText(filename, contents);
+}
+
+// public static void CopyFile(string sourceName, string destinationName, bool overwrite) :2142
+void FileSystemImpl__CopyFile_fn(uString* sourceName, uString* destinationName, bool* overwrite)
+{
+    FileSystemImpl::CopyFile(sourceName, destinationName, *overwrite);
 }
 
 // public static extern Uno.IO.CppXliStreamHandle CppXliOpen(string filename, Uno.IO.FileMode filemode) :1970
@@ -1911,6 +1930,19 @@ void FileSystemImpl::AppendAllText(uString* filename, uString* contents)
     try
     {
         uBase::Text::Append(uStringToXliString(filename), uStringToXliString(contents));
+    }
+    catch (const uBase::Exception& e)
+    {
+        throw uThrowable(::g::Uno::IO::IOException::New4(uStringFromXliString(e.GetMessage())), e.GetFunction(), e.GetLine());
+    }
+}
+
+// public static void CopyFile(string sourceName, string destinationName, bool overwrite) [static] :2142
+void FileSystemImpl::CopyFile(uString* sourceName, uString* destinationName, bool overwrite)
+{
+    try
+    {
+        uBase::Disk->CopyFile(uStringToXliString(sourceName), uStringToXliString(destinationName), overwrite);
     }
     catch (const uBase::Exception& e)
     {
@@ -2174,8 +2206,8 @@ void FileSystemImpl::WriteAllText(uString* filename, uString* text)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public class IOException :2486
 // {
@@ -2228,8 +2260,8 @@ IOException* IOException::New4(uString* message)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class MemoryStream :2513
 // {
@@ -2570,8 +2602,8 @@ MemoryStream* MemoryStream::New3(uArray* buffer, bool writable)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public static class Path :2671
 // {
@@ -2692,8 +2724,8 @@ uChar Path::DirectorySeparatorChar()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public enum SeekOrigin :2895
 uEnumType* SeekOrigin_typeof()
@@ -2709,8 +2741,8 @@ uEnumType* SeekOrigin_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public abstract class Stream :2912
 // {
@@ -2834,8 +2866,8 @@ void Stream::Dispose()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class StreamReader :2990
 // {
@@ -3022,8 +3054,8 @@ StreamReader* StreamReader::New1(::g::Uno::IO::Stream* stream)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class StreamWriter :3153
 // {
@@ -3198,8 +3230,8 @@ StreamWriter* StreamWriter::New1(::g::Uno::IO::Stream* stream)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class StringReader :3263
 // {
@@ -3300,8 +3332,8 @@ StringReader* StringReader::New1(uString* text)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class StringWriter :3366
 // {
@@ -3480,8 +3512,8 @@ StringWriter* StringWriter::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public abstract class TextReader :3486
 // {
@@ -3590,8 +3622,8 @@ uString* TextReader::ReadLine()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public abstract class TextWriter :3608
 // {
@@ -4077,8 +4109,8 @@ void TextWriter::WriteLine13(uint64_t value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public enum UserDirectory :1303
 uEnumType* UserDirectory_typeof()

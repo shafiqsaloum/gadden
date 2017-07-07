@@ -1,10 +1,12 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/shapes/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/shapes/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
-#include <Fuse.Controls.PathShape.h>
+#include <Fuse.Controls.EllipticalShape.h>
+#include <Fuse.Drawing.IDrawObj-d34d045e.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -16,30 +18,28 @@
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
-#include <Uno.Float2.h>
 #include <Uno.UX.IPropertyListener.h>
 namespace g{namespace Fuse{namespace Controls{struct Ellipse;}}}
-namespace g{namespace Fuse{namespace Drawing{struct PathGeometryRenderer;}}}
+namespace g{namespace Fuse{namespace Drawing{struct Surface;}}}
+namespace g{namespace Fuse{namespace Drawing{struct SurfacePath;}}}
 
 namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial sealed class Ellipse :318
+// public partial sealed class Ellipse :836
 // {
-::g::Fuse::Controls::PathShape_type* Ellipse_typeof();
+::g::Fuse::Controls::Shape_type* Ellipse_typeof();
 void Ellipse__ctor_8_fn(Ellipse* __this);
 void Ellipse__CreateNativeView_fn(Ellipse* __this, uObject** __retval);
-void Ellipse__New4_fn(Ellipse** __retval);
-void Ellipse__UpdatePath_fn(Ellipse* __this, ::g::Fuse::Drawing::PathGeometryRenderer* renderer);
+void Ellipse__CreateSurfacePath_fn(Ellipse* __this, ::g::Fuse::Drawing::Surface* surface, ::g::Fuse::Drawing::SurfacePath** __retval);
+void Ellipse__get_NeedSurface_fn(Ellipse* __this, bool* __retval);
+void Ellipse__New3_fn(Ellipse** __retval);
 
-struct Ellipse : ::g::Fuse::Controls::PathShape
+struct Ellipse : ::g::Fuse::Controls::EllipticalShape
 {
-    ::g::Uno::Float2 _cachedCenter;
-    ::g::Uno::Float2 _cachedRadius;
-
     void ctor_8();
-    static Ellipse* New4();
+    static Ellipse* New3();
 };
 // }
 

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <CoreGraphics/CoreGraphics.h>
@@ -28,7 +28,7 @@ namespace Fuse{
 namespace Controls{
 namespace Native{
 
-// public sealed extern class NativeViewRenderer :551
+// public sealed extern class NativeViewRenderer :552
 // {
 static void NativeViewRenderer_build(uType* type)
 {
@@ -66,74 +66,74 @@ NativeViewRenderer_type* NativeViewRenderer_typeof()
     return type;
 }
 
-// public generated NativeViewRenderer() :551
+// public generated NativeViewRenderer() :552
 void NativeViewRenderer__ctor__fn(NativeViewRenderer* __this)
 {
     __this->ctor_();
 }
 
-// private static extern Uno.IntPtr AllocPixelBuffer(int width, int height) :746
+// private static extern Uno.IntPtr AllocPixelBuffer(int width, int height) :747
 void NativeViewRenderer__AllocPixelBuffer_fn(int* width, int* height, void** __retval)
 {
     *__retval = NativeViewRenderer::AllocPixelBuffer(*width, *height);
 }
 
-// public void Dispose() :617
+// public void Dispose() :618
 void NativeViewRenderer__Dispose_fn(NativeViewRenderer* __this)
 {
     __this->Dispose();
 }
 
-// public void Draw(Fuse.Controls.Native.ViewHandle viewHandle, float4x4 localToClipTransform, float2 position, float2 size, float density) :559
+// public void Draw(Fuse.Controls.Native.ViewHandle viewHandle, float4x4 localToClipTransform, float2 position, float2 size, float density) :560
 void NativeViewRenderer__Draw_fn(NativeViewRenderer* __this, ::g::Fuse::Controls::Native::ViewHandle* viewHandle, ::g::Uno::Float4x4* localToClipTransform, ::g::Uno::Float2* position, ::g::Uno::Float2* size, float* density)
 {
     __this->Draw(viewHandle, *localToClipTransform, *position, *size, *density);
 }
 
-// private static extern void FreePixelBuffer(Uno.IntPtr buffer) :753
+// private static extern void FreePixelBuffer(Uno.IntPtr buffer) :754
 void NativeViewRenderer__FreePixelBuffer_fn(void** buffer)
 {
     NativeViewRenderer::FreePixelBuffer(*buffer);
 }
 
-// public void Invalidate() :612
+// public void Invalidate() :613
 void NativeViewRenderer__Invalidate_fn(NativeViewRenderer* __this)
 {
     __this->Invalidate();
 }
 
-// public generated NativeViewRenderer New() :551
+// public generated NativeViewRenderer New() :552
 void NativeViewRenderer__New1_fn(NativeViewRenderer** __retval)
 {
     *__retval = NativeViewRenderer::New1();
 }
 
-// private void ReleaseResources() :622
+// private void ReleaseResources() :623
 void NativeViewRenderer__ReleaseResources_fn(NativeViewRenderer* __this)
 {
     __this->ReleaseResources();
 }
 
-// private static extern void Upload(ObjC.Object viewHandle, int textureName, Uno.IntPtr pixelBufferHandle, int width, int height, float density, bool reuse) :647
+// private static extern void Upload(ObjC.Object viewHandle, int textureName, Uno.IntPtr pixelBufferHandle, int width, int height, float density, bool reuse) :648
 void NativeViewRenderer__Upload_fn(::g::ObjC::Object* viewHandle, int* textureName, void** pixelBufferHandle, int* width, int* height, float* density, bool* reuse)
 {
     NativeViewRenderer::Upload(viewHandle, *textureName, *pixelBufferHandle, *width, *height, *density, *reuse);
 }
 
-// public generated NativeViewRenderer() [instance] :551
+// public generated NativeViewRenderer() [instance] :552
 void NativeViewRenderer::ctor_()
 {
     _prevSize = ::g::Uno::Int2__New1(-1);
 }
 
-// public void Dispose() [instance] :617
+// public void Dispose() [instance] :618
 void NativeViewRenderer::Dispose()
 {
     uStackFrame __("Fuse.Controls.Native.NativeViewRenderer", "Dispose()");
     ReleaseResources();
 }
 
-// public void Draw(Fuse.Controls.Native.ViewHandle viewHandle, float4x4 localToClipTransform, float2 position, float2 size, float density) [instance] :559
+// public void Draw(Fuse.Controls.Native.ViewHandle viewHandle, float4x4 localToClipTransform, float2 position, float2 size, float density) [instance] :560
 void NativeViewRenderer::Draw(::g::Fuse::Controls::Native::ViewHandle* viewHandle, ::g::Uno::Float4x4 localToClipTransform, ::g::Uno::Float2 position, ::g::Uno::Float2 size, float density)
 {
     uStackFrame __("Fuse.Controls.Native.NativeViewRenderer", "Draw(Fuse.Controls.Native.ViewHandle,float4x4,float2,float2,float)");
@@ -161,13 +161,13 @@ void NativeViewRenderer::Draw(::g::Fuse::Controls::Native::ViewHandle* viewHandl
     uPtr(::g::Fuse::Controls::Native::Blitter::Singleton())->Blit(::g::Uno::Graphics::Texture2D::New2(_textureHandle, pixelSize, 1, 3), position, size, localToClipTransform);
 }
 
-// public void Invalidate() [instance] :612
+// public void Invalidate() [instance] :613
 void NativeViewRenderer::Invalidate()
 {
     _valid = false;
 }
 
-// private void ReleaseResources() [instance] :622
+// private void ReleaseResources() [instance] :623
 void NativeViewRenderer::ReleaseResources()
 {
     uStackFrame __("Fuse.Controls.Native.NativeViewRenderer", "ReleaseResources()");
@@ -185,20 +185,20 @@ void NativeViewRenderer::ReleaseResources()
     }
 }
 
-// private static extern Uno.IntPtr AllocPixelBuffer(int width, int height) [static] :746
+// private static extern Uno.IntPtr AllocPixelBuffer(int width, int height) [static] :747
 void* NativeViewRenderer::AllocPixelBuffer(int width, int height)
 {
     int size = (width * height) * 4;
     return malloc( size );
 }
 
-// private static extern void FreePixelBuffer(Uno.IntPtr buffer) [static] :753
+// private static extern void FreePixelBuffer(Uno.IntPtr buffer) [static] :754
 void NativeViewRenderer::FreePixelBuffer(void* buffer)
 {
     free( buffer );
 }
 
-// public generated NativeViewRenderer New() [static] :551
+// public generated NativeViewRenderer New() [static] :552
 NativeViewRenderer* NativeViewRenderer::New1()
 {
     NativeViewRenderer* obj1 = (NativeViewRenderer*)uNew(NativeViewRenderer_typeof());
@@ -206,7 +206,7 @@ NativeViewRenderer* NativeViewRenderer::New1()
     return obj1;
 }
 
-// private static extern void Upload(ObjC.Object viewHandle, int textureName, Uno.IntPtr pixelBufferHandle, int width, int height, float density, bool reuse) [static] :647
+// private static extern void Upload(ObjC.Object viewHandle, int textureName, Uno.IntPtr pixelBufferHandle, int width, int height, float density, bool reuse) [static] :648
 void NativeViewRenderer::Upload(::g::ObjC::Object* viewHandle, int textureName, void* pixelBufferHandle, int width, int height, float density, bool reuse)
 {
     @autoreleasepool

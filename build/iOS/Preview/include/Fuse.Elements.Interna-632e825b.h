@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/drawing/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/drawing/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -17,7 +17,7 @@ namespace Fuse{
 namespace Elements{
 namespace Internal{
 
-// internal sealed class ElementDraw :342
+// internal sealed class ElementDraw :352
 // {
 uType* ElementDraw_typeof();
 void ElementDraw__ctor__fn(ElementDraw* __this);

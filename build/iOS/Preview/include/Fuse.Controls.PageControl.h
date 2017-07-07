@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Navigat-70e90308.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -41,12 +42,12 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class PageControl :2217
+// public sealed class PageControl :2285
 // {
 struct PageControl_type : ::g::Fuse::Controls::NavigationControl_type
 {
-    ::g::Fuse::Navigation::ISeekableNavigation interface17;
-    ::g::Fuse::Navigation::IRouterOutlet interface18;
+    ::g::Fuse::Navigation::ISeekableNavigation interface18;
+    ::g::Fuse::Navigation::IRouterOutlet interface19;
 };
 
 PageControl_type* PageControl_typeof();

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.AppRoot.h>
@@ -27,6 +27,7 @@ static void AppRoot__cctor__fn(uType* __type)
 {
     AppRoot::_clearColor_ = ::g::Uno::Float4__New1(1.0f);
     AppRoot::_appRootView_ = AppRoot::CreateAppRootView(uPtr(::g::Fuse::Controls::Native::iOS::FocusHelpers::KeyboardView())->Handle());
+    AppRoot::SetClearColor(AppRoot::_appRootView_, AppRoot::_clearColor_.X, AppRoot::_clearColor_.Y, AppRoot::_clearColor_.Z, AppRoot::_clearColor_.W);
 }
 
 static void AppRoot_build(uType* type)
@@ -53,25 +54,25 @@ uClassType* AppRoot_typeof()
     return type;
 }
 
-// public static float4 get_ClearColor() :41
+// public static float4 get_ClearColor() :43
 void AppRoot__get_ClearColor_fn(::g::Uno::Float4* __retval)
 {
     *__retval = AppRoot::ClearColor();
 }
 
-// public static void set_ClearColor(float4 value) :42
+// public static void set_ClearColor(float4 value) :44
 void AppRoot__set_ClearColor_fn(::g::Uno::Float4* value)
 {
     AppRoot::ClearColor(*value);
 }
 
-// public static void ClearRoot(Fuse.Controls.Native.ViewHandle root) :66
+// public static void ClearRoot(Fuse.Controls.Native.ViewHandle root) :71
 void AppRoot__ClearRoot_fn(::g::Fuse::Controls::Native::ViewHandle* root)
 {
     AppRoot::ClearRoot(root);
 }
 
-// private static ObjC.Object CreateAppRootView(ObjC.Object handle) :26
+// private static ObjC.Object CreateAppRootView(ObjC.Object handle) :27
 void AppRoot__CreateAppRootView_fn(::g::ObjC::Object* handle, ::g::ObjC::Object** __retval)
 {
     *__retval = AppRoot::CreateAppRootView(handle);
@@ -83,25 +84,25 @@ void AppRoot__get_Handle_fn(::g::ObjC::Object** __retval)
     *__retval = AppRoot::Handle();
 }
 
-// private static void Remove(ObjC.Object childHandle) :84
+// private static void Remove(ObjC.Object childHandle) :89
 void AppRoot__Remove_fn(::g::ObjC::Object* childHandle)
 {
     AppRoot::Remove(childHandle);
 }
 
-// private static void Set(ObjC.Object handle, ObjC.Object childHandle) :76
+// private static void Set(ObjC.Object handle, ObjC.Object childHandle) :81
 void AppRoot__Set_fn(::g::ObjC::Object* handle, ::g::ObjC::Object* childHandle)
 {
     AppRoot::Set(handle, childHandle);
 }
 
-// private static void SetClearColor(ObjC.Object handle, float r, float g, float b, float a) :50
+// private static void SetClearColor(ObjC.Object handle, float r, float g, float b, float a) :55
 void AppRoot__SetClearColor_fn(::g::ObjC::Object* handle, float* r, float* g, float* b, float* a)
 {
     AppRoot::SetClearColor(handle, *r, *g, *b, *a);
 }
 
-// public static void SetRootView(Fuse.Controls.Native.ViewHandle root) :57
+// public static void SetRootView(Fuse.Controls.Native.ViewHandle root) :62
 void AppRoot__SetRootView_fn(::g::Fuse::Controls::Native::ViewHandle* root)
 {
     AppRoot::SetRootView(root);
@@ -111,7 +112,7 @@ uSStrong< ::g::ObjC::Object*> AppRoot::_appRootView_;
 ::g::Uno::Float4 AppRoot::_clearColor_;
 uSStrong< ::g::Fuse::Controls::Native::ViewHandle*> AppRoot::_root_;
 
-// public static void ClearRoot(Fuse.Controls.Native.ViewHandle root) [static] :66
+// public static void ClearRoot(Fuse.Controls.Native.ViewHandle root) [static] :71
 void AppRoot::ClearRoot(::g::Fuse::Controls::Native::ViewHandle* root)
 {
     uStackFrame __("Fuse.AppRoot", "ClearRoot(Fuse.Controls.Native.ViewHandle)");
@@ -124,7 +125,7 @@ void AppRoot::ClearRoot(::g::Fuse::Controls::Native::ViewHandle* root)
     AppRoot::_root() = NULL;
 }
 
-// private static ObjC.Object CreateAppRootView(ObjC.Object handle) [static] :26
+// private static ObjC.Object CreateAppRootView(ObjC.Object handle) [static] :27
 ::g::ObjC::Object* AppRoot::CreateAppRootView(::g::ObjC::Object* handle)
 {
     AppRoot_typeof()->Init();
@@ -136,6 +137,7 @@ void AppRoot::ClearRoot(::g::Fuse::Controls::Native::ViewHandle* root)
             [root setUserInteractionEnabled: true];
             [root setMultipleTouchEnabled: true];
             [root setOpaque: false];
+            [[root layer] setAnchorPoint: { 0.0f, 0.0f }];
             ::g::Fuse::Platform::SystemUI::RootView(::g::ObjC::Object::Create(root));
             [root sizeToFit];
             root.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -146,7 +148,7 @@ void AppRoot::ClearRoot(::g::Fuse::Controls::Native::ViewHandle* root)
     
 }
 
-// private static void Remove(ObjC.Object childHandle) [static] :84
+// private static void Remove(ObjC.Object childHandle) [static] :89
 void AppRoot::Remove(::g::ObjC::Object* childHandle)
 {
     AppRoot_typeof()->Init();
@@ -162,7 +164,7 @@ void AppRoot::Remove(::g::ObjC::Object* childHandle)
     
 }
 
-// private static void Set(ObjC.Object handle, ObjC.Object childHandle) [static] :76
+// private static void Set(ObjC.Object handle, ObjC.Object childHandle) [static] :81
 void AppRoot::Set(::g::ObjC::Object* handle, ::g::ObjC::Object* childHandle)
 {
     AppRoot_typeof()->Init();
@@ -179,7 +181,7 @@ void AppRoot::Set(::g::ObjC::Object* handle, ::g::ObjC::Object* childHandle)
     
 }
 
-// private static void SetClearColor(ObjC.Object handle, float r, float g, float b, float a) [static] :50
+// private static void SetClearColor(ObjC.Object handle, float r, float g, float b, float a) [static] :55
 void AppRoot::SetClearColor(::g::ObjC::Object* handle, float r, float g, float b, float a)
 {
     AppRoot_typeof()->Init();
@@ -195,7 +197,7 @@ void AppRoot::SetClearColor(::g::ObjC::Object* handle, float r, float g, float b
     
 }
 
-// public static void SetRootView(Fuse.Controls.Native.ViewHandle root) [static] :57
+// public static void SetRootView(Fuse.Controls.Native.ViewHandle root) [static] :62
 void AppRoot::SetRootView(::g::Fuse::Controls::Native::ViewHandle* root)
 {
     uStackFrame __("Fuse.AppRoot", "SetRootView(Fuse.Controls.Native.ViewHandle)");
@@ -208,17 +210,21 @@ void AppRoot::SetRootView(::g::Fuse::Controls::Native::ViewHandle* root)
     AppRoot::Set(AppRoot::_appRootView(), uPtr(AppRoot::_root())->NativeHandle);
 }
 
-// public static float4 get_ClearColor() [static] :41
+// public static float4 get_ClearColor() [static] :43
 ::g::Uno::Float4 AppRoot::ClearColor()
 {
     AppRoot_typeof()->Init();
     return AppRoot::_clearColor();
 }
 
-// public static void set_ClearColor(float4 value) [static] :42
+// public static void set_ClearColor(float4 value) [static] :44
 void AppRoot::ClearColor(::g::Uno::Float4 value)
 {
     AppRoot_typeof()->Init();
+
+    if (::g::Uno::Float4__op_Equality(AppRoot::_clearColor(), value))
+        return;
+
     AppRoot::_clearColor() = value;
     AppRoot::SetClearColor(AppRoot::_appRootView(), value.X, value.Y, value.Z, value.W);
 }

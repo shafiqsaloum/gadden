@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.Controls.Native.-4016d338.h>
@@ -19,7 +19,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// public sealed extern class Switch :2226
+// public sealed extern class Switch :2320
 // {
 static void Switch_build(uType* type)
 {
@@ -58,19 +58,19 @@ Switch_type* Switch_typeof()
     return type;
 }
 
-// public Switch(Fuse.Controls.Native.IToggleViewHost host) :2238
+// public Switch(Fuse.Controls.Native.IToggleViewHost host) :2332
 void Switch__ctor_5_fn(Switch* __this, uObject* host)
 {
     __this->ctor_5(host);
 }
 
-// private static ObjC.Object Create() :2258
+// private static ObjC.Object Create() :2352
 void Switch__Create_fn(::g::ObjC::Object** __retval)
 {
     *__retval = Switch::Create();
 }
 
-// public override sealed void Dispose() :2244
+// public override sealed void Dispose() :2338
 void Switch__Dispose_fn(Switch* __this)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.Switch", "Dispose()");
@@ -80,37 +80,37 @@ void Switch__Dispose_fn(Switch* __this)
     ::g::Fuse::Controls::Native::ViewHandle__Dispose_fn(__this);
 }
 
-// private static bool GetValue(ObjC.Object handle) :2264
+// private static bool GetValue(ObjC.Object handle) :2358
 void Switch__GetValue_fn(::g::ObjC::Object* handle, bool* __retval)
 {
     *__retval = Switch::GetValue(handle);
 }
 
-// public Switch New(Fuse.Controls.Native.IToggleViewHost host) :2238
+// public Switch New(Fuse.Controls.Native.IToggleViewHost host) :2332
 void Switch__New3_fn(uObject* host, Switch** __retval)
 {
     *__retval = Switch::New3(host);
 }
 
-// private void OnValueChanged(ObjC.Object sender, ObjC.Object uiEvent) :2252
+// private void OnValueChanged(ObjC.Object sender, ObjC.Object uiEvent) :2346
 void Switch__OnValueChanged_fn(Switch* __this, ::g::ObjC::Object* sender, ::g::ObjC::Object* uiEvent)
 {
     __this->OnValueChanged(sender, uiEvent);
 }
 
-// private static void SetValue(ObjC.Object handle, bool value) :2271
+// private static void SetValue(ObjC.Object handle, bool value) :2365
 void Switch__SetValue_fn(::g::ObjC::Object* handle, bool* value)
 {
     Switch::SetValue(handle, *value);
 }
 
-// public void set_Value(bool value) :2231
+// public void set_Value(bool value) :2325
 void Switch__set_Value_fn(Switch* __this, bool* value)
 {
     __this->Value(*value);
 }
 
-// public Switch(Fuse.Controls.Native.IToggleViewHost host) [instance] :2238
+// public Switch(Fuse.Controls.Native.IToggleViewHost host) [instance] :2332
 void Switch::ctor_5(uObject* host)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.Switch", ".ctor(Fuse.Controls.Native.IToggleViewHost)");
@@ -119,20 +119,20 @@ void Switch::ctor_5(uObject* host)
     _valueChangedEvent = ::g::Fuse::Controls::Native::iOS::UIControlEvent::AddValueChangedCallback(Handle(), uDelegate::New(::TYPES[0/*Uno.Action<ObjC.Object, ObjC.Object>*/], (void*)Switch__OnValueChanged_fn, this));
 }
 
-// private void OnValueChanged(ObjC.Object sender, ObjC.Object uiEvent) [instance] :2252
+// private void OnValueChanged(ObjC.Object sender, ObjC.Object uiEvent) [instance] :2346
 void Switch::OnValueChanged(::g::ObjC::Object* sender, ::g::ObjC::Object* uiEvent)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.Switch", "OnValueChanged(ObjC.Object,ObjC.Object)");
     ::g::Fuse::Controls::Native::IToggleViewHost::OnValueChanged(uInterface(uPtr(_host), ::TYPES[2/*Fuse.Controls.Native.IToggleViewHost*/]), Switch::GetValue(Handle()));
 }
 
-// public void set_Value(bool value) [instance] :2231
+// public void set_Value(bool value) [instance] :2325
 void Switch::Value(bool value)
 {
     Switch::SetValue(Handle(), value);
 }
 
-// private static ObjC.Object Create() [static] :2258
+// private static ObjC.Object Create() [static] :2352
 ::g::ObjC::Object* Switch::Create()
 {
     @autoreleasepool
@@ -146,7 +146,7 @@ void Switch::Value(bool value)
     
 }
 
-// private static bool GetValue(ObjC.Object handle) [static] :2264
+// private static bool GetValue(ObjC.Object handle) [static] :2358
 bool Switch::GetValue(::g::ObjC::Object* handle)
 {
     @autoreleasepool
@@ -161,7 +161,7 @@ bool Switch::GetValue(::g::ObjC::Object* handle)
     
 }
 
-// public Switch New(Fuse.Controls.Native.IToggleViewHost host) [static] :2238
+// public Switch New(Fuse.Controls.Native.IToggleViewHost host) [static] :2332
 Switch* Switch::New3(uObject* host)
 {
     Switch* obj1 = (Switch*)uNew(Switch_typeof());
@@ -169,7 +169,7 @@ Switch* Switch::New3(uObject* host)
     return obj1;
 }
 
-// private static void SetValue(ObjC.Object handle, bool value) [static] :2271
+// private static void SetValue(ObjC.Object handle, bool value) [static] :2365
 void Switch::SetValue(::g::ObjC::Object* handle, bool value)
 {
     @autoreleasepool

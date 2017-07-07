@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal sealed class Easing.CircularInOutImpl :663
+// internal sealed class Easing.CircularInOutImpl :699
 // {
 ::g::Fuse::Animations::Easing_type* Easing__CircularInOutImpl_typeof();
 void Easing__CircularInOutImpl__ctor_1_fn(Easing__CircularInOutImpl* __this);

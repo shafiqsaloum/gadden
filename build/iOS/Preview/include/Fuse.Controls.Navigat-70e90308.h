@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -35,10 +36,10 @@ namespace Controls{
 
 // public interfacemodifiers class NavigationControl :314
 // {
-struct NavigationControl_type : ::g::Fuse::Controls::Control_type
+struct NavigationControl_type : ::g::Fuse::Controls::Panel_type
 {
-    ::g::Fuse::Navigation::INavigation interface15;
-    ::g::Fuse::Navigation::IBaseNavigation interface16;
+    ::g::Fuse::Navigation::INavigation interface16;
+    ::g::Fuse::Navigation::IBaseNavigation interface17;
     void(*fp_CreateTriggers)(::g::Fuse::Controls::NavigationControl*, ::g::Fuse::Elements::Element*, ::g::Fuse::Controls::NavigationControl__PageData*);
     void(*fp_UpdateInteraction)(::g::Fuse::Controls::NavigationControl*);
     void(*fp_UpdateProgress)(::g::Fuse::Controls::NavigationControl*, ::g::Fuse::Elements::Element*, ::g::Fuse::Navigation::NavigationPageState*, ::g::Fuse::Controls::NavigationControl__PageData*);

@@ -70,8 +70,8 @@ namespace Uno{
 namespace Content{
 namespace Fonts{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public sealed class BitmapFont :9
 // {
@@ -221,8 +221,8 @@ BitmapFont* BitmapFont::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public struct BitmapFont.CharPair :20
 // {
@@ -290,8 +290,8 @@ BitmapFont__CharPair BitmapFont__CharPair__New1(uChar left, uChar right)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // internal sealed extern class CppFontFace :198
 // {
@@ -491,8 +491,8 @@ CppFontFace* CppFontFace::New2(::g::Uno::IO::BundleFile* file)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // internal extern struct CppFontFaceHandle :190
 // {
@@ -514,15 +514,15 @@ uStructType* CppFontFaceHandle_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public sealed class DefaultTextTransform :301
 // {
 static void DefaultTextTransform_build(uType* type)
 {
     ::STRINGS[1] = uString::Const("DefaultTextTransform: Not implemented on mobile");
-    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno");
+    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno");
     type->SetFields(0,
         ::g::Uno::Float4x4_typeof(), offsetof(::g::Uno::Content::Fonts::DefaultTextTransform, _matrix), 0);
     type->Reflection.SetFunctions(1,
@@ -596,8 +596,8 @@ DefaultTextTransform* DefaultTextTransform::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public abstract class FontFace :338
 // {
@@ -670,8 +670,8 @@ FontFace* FontFace::Load1(::g::Uno::IO::BundleFile* file)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public static class FontFaceHelpers :401
 // {
@@ -806,8 +806,8 @@ void FontFaceHelpers__RenderSpriteFont_fn(::g::Uno::Content::Fonts::FontFace* fo
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public struct BitmapFont.GlyphInfo :11
 // {
@@ -842,8 +842,8 @@ uStructType* BitmapFont__GlyphInfo_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public struct RenderedGlyph :536
 // {
@@ -904,8 +904,8 @@ RenderedGlyph RenderedGlyph__New1(::g::Uno::Float2 advance, ::g::Uno::Float2 bea
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public sealed class SdfFontShader :594
 // {
@@ -995,8 +995,8 @@ SdfFontShader* SdfFontShader::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public sealed class SpriteFontShader :645
 // {
@@ -1084,8 +1084,8 @@ SpriteFontShader* SpriteFontShader::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public sealed class TextRenderer :666
 // {
@@ -1506,8 +1506,8 @@ TextRenderer* TextRenderer::New1(int maxCharCount, ::g::Uno::Content::Fonts::Tex
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public abstract class TextShader :1003
 // {
@@ -1542,8 +1542,8 @@ void TextShader::ctor_()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public sealed class TextShaderData :959
 // {
@@ -1632,8 +1632,8 @@ TextShaderData* TextShaderData::New1(::g::Uno::Graphics::IndexBuffer* ibo, ::g::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/content/fonts/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public abstract class TextTransform :1036
 // {

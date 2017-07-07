@@ -100,8 +100,8 @@ namespace g{
 namespace Fuse{
 namespace Text{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // internal struct Batch :1235
 // {
@@ -181,8 +181,8 @@ Batch Batch__New1(int textureIndex, ::g::Uno::Graphics::VertexBuffer* vbo, int q
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // private sealed class Substring.CharEnumerator :1910
 // {
@@ -294,8 +294,8 @@ Substring__CharEnumerator* Substring__CharEnumerator::New1(::g::Fuse::Text::Subs
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/implementation/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // private sealed class SinglyLinkedList<T>.Enumerator :1301
 // {
@@ -421,15 +421,15 @@ SinglyLinkedList__Enumerator* SinglyLinkedList__Enumerator::New1(uType* __type, 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public sealed class FallingBackFont :622
 // {
 static void FallingBackFont_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("fonts.Length > 0");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno");
     ::STRINGS[2] = uString::Const("fontIndex == 0");
     ::TYPES[1] = uObject_typeof()->Array();
     ::TYPES[2] = ::g::Fuse::Internal::CacheItem_typeof()->MakeType(::g::Uno::Int_typeof(), ::g::Fuse::Text::Font_typeof(), NULL);
@@ -659,15 +659,15 @@ FallingBackFont* FallingBackFont::New1(uArray* fonts)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public sealed class FallingBackFontFace :590
 // {
 static void FallingBackFontFace_build(uType* type)
 {
     ::STRINGS[3] = uString::Const("fontFaces.Length > 0");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno");
     ::TYPES[1] = uObject_typeof()->Array();
     ::TYPES[4] = ::g::Fuse::Internal::CacheItem_typeof()->MakeType(::g::Fuse::Internal::FontFaceDescriptor_typeof(), ::g::Fuse::Text::FontFace_typeof(), NULL);
     ::TYPES[5] = ::g::Fuse::Internal::CacheItem_typeof()->MakeType(::g::Uno::Int_typeof(), ::g::Fuse::Text::Font_typeof(), NULL)->Array();
@@ -766,8 +766,8 @@ FallingBackFontFace* FallingBackFontFace::New1(uArray* fontFaces)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public abstract class Font :837
 // {
@@ -782,7 +782,7 @@ static void Font_build(uType* type)
     ::STRINGS[4] = uString::Const("...");
     ::STRINGS[5] = uString::Const("Error loading glyph: ");
     ::STRINGS[6] = uString::Const(" ");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno");
     ::STRINGS[7] = uString::Const("GetCachedGlyphTexture");
     ::TYPES[6] = ::g::Fuse::Text::GlyphTexture_typeof()->Array();
     ::TYPES[7] = ::g::Uno::Exception_typeof();
@@ -979,8 +979,8 @@ uArray* Font::ShapedTruncation()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public abstract class FontFace :775
 // {
@@ -1103,8 +1103,8 @@ FontFace* FontFace::Load2(uString* fileName, int index, uDelegate* stylePredicat
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public struct Glyph :733
 // {
@@ -1160,15 +1160,15 @@ Glyph Glyph__New1(int fontIndex, uint32_t index)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public sealed class GlyphAtlas :952
 // {
 static void GlyphAtlas_build(uType* type)
 {
     ::STRINGS[8] = uString::Const("(format == Uno.Graphics.Format.L8) || (format == Uno.Graphics.Format.RGBA8888)");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno");
     ::TYPES[12] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Graphics::Texture2D_typeof(), NULL);
     ::TYPES[1] = uObject_typeof()->Array();
     ::TYPES[13] = ::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Uno::Graphics::Texture2D_typeof(), NULL);
@@ -1287,8 +1287,8 @@ GlyphAtlas* GlyphAtlas::New1(::g::Uno::Int2 size)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public struct GlyphTexture :1178
 // {
@@ -1387,8 +1387,8 @@ GlyphTexture GlyphTexture__New1(::g::Fuse::Text::SubTexture subTexture, ::g::Uno
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public sealed class LazyFont :1047
 // {
@@ -1574,8 +1574,8 @@ LazyFont* LazyFont::New1(::g::Fuse::Text::LazyFontFace* fontFace, int pixelSize)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public sealed class LazyFontFace :1001
 // {
@@ -1701,8 +1701,8 @@ LazyFontFace* LazyFontFace::New1(::g::Fuse::Internal::FontFaceDescriptor* descri
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // internal static class LineBreaks :1111
 // {
@@ -1736,8 +1736,8 @@ void LineBreaks__Get_fn(::g::Fuse::Text::Substring* text, ::g::Fuse::Text::Imple
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // private sealed class Substring.LineEnumerable :1954
 // {
@@ -1805,8 +1805,8 @@ Substring__LineEnumerable* Substring__LineEnumerable::New1(::g::Fuse::Text::Subs
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // private sealed class Substring.LineEnumerator :1969
 // {
@@ -1960,8 +1960,8 @@ Substring__LineEnumerator* Substring__LineEnumerator::New1(::g::Fuse::Text::Subs
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public static class Measure :1133
 // {
@@ -2035,8 +2035,8 @@ void Measure__Lines_fn(::g::Fuse::Text::Font* font, float* lineSpacing, ::g::Uno
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // private sealed class ShapedRun.PGEnumerator :1752
 // {
@@ -2148,8 +2148,8 @@ ShapedRun__PGEnumerator* ShapedRun__PGEnumerator::New1(::g::Fuse::Text::ShapedRu
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public struct PositionedGlyph :745
 // {
@@ -2260,8 +2260,8 @@ PositionedGlyph PositionedGlyph__New1(::g::Fuse::Text::Glyph glyph, ::g::Uno::Fl
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // internal sealed class PositionedRun :1196
 // {
@@ -2342,8 +2342,8 @@ PositionedRun* PositionedRun::Translate(PositionedRun* positionedRun, ::g::Uno::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // internal struct Quad :1219
 // {
@@ -2401,8 +2401,8 @@ Quad Quad__New1(::g::Uno::Float2 position, ::g::Uno::Recti texCoords, float scal
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public struct RenderedGlyph :761
 // {
@@ -2461,8 +2461,8 @@ RenderedGlyph RenderedGlyph__New1(::g::Uno::Content::Images::Bitmap* bitmap, ::g
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public sealed class Renderer :1255
 // {
@@ -2911,8 +2911,8 @@ void Renderer::RecreateGlyphAtlas(int version)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public static class Shape :1569
 // {
@@ -3019,8 +3019,8 @@ void Shape__ShapeLines_fn(::g::Fuse::Text::Font* font, ::g::Uno::Collections::Li
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public sealed class ShapedRun :1636
 // {
@@ -3279,8 +3279,8 @@ ShapedRun* ShapedRun::New2(::g::Fuse::Text::Bidirectional::Run run, uArray* pare
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // internal static class Renderer.SharedIndexBuffer :1436
 // {
@@ -3363,8 +3363,8 @@ void Renderer__SharedIndexBuffer::Retain()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/implementation/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // internal sealed class SinglyLinkedList<T> :1273
 // {
@@ -3480,8 +3480,8 @@ SinglyLinkedList* SinglyLinkedList::FromEnumerable(uType* __type, uObject* xs)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public sealed class Substring :1800
 // {
@@ -3490,7 +3490,7 @@ static void Substring_build(uType* type)
     ::STRINGS[10] = uString::Const("start");
     ::STRINGS[13] = uString::Const("length");
     ::STRINGS[12] = uString::Const("index");
-    ::TYPES[33] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(10/*SequenceEqual<char>*/, ::g::Uno::Char_typeof(), NULL);
+    ::TYPES[33] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*SequenceEqual<char>*/, ::g::Uno::Char_typeof(), NULL);
     ::TYPES[30] = ::g::Uno::Collections::IEnumerator_typeof();
     ::TYPES[34] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::Char_typeof(), NULL);
     type->SetInterfaces(
@@ -3802,8 +3802,8 @@ Substring* Substring::New3(uString* parent, int start, int length)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // internal static class SubstringExtensions :2045
 // {
@@ -3812,11 +3812,11 @@ static void SubstringExtensions_build(uType* type)
     ::STRINGS[14] = uString::Const("i");
     ::STRINGS[15] = uString::Const("s");
     ::STRINGS[16] = uString::Const("!Fuse.Text.SubstringExtensions.IsTrailingSurrogate(s[start])");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno");
     ::STRINGS[17] = uString::Const("end < s.Length");
     ::STRINGS[18] = uString::Const("");
     ::TYPES[1] = uObject_typeof()->Array();
-    ::TYPES[35] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*Select<Fuse.Text.Substring, Fuse.Text.Substring>*/, ::g::Fuse::Text::Substring_typeof(), ::g::Fuse::Text::Substring_typeof(), NULL);
+    ::TYPES[35] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*Select<Fuse.Text.Substring, Fuse.Text.Substring>*/, ::g::Fuse::Text::Substring_typeof(), ::g::Fuse::Text::Substring_typeof(), NULL);
     ::TYPES[36] = ::g::Uno::Func1_typeof()->MakeType(::g::Fuse::Text::Substring_typeof(), ::g::Fuse::Text::Substring_typeof(), NULL);
 }
 
@@ -3850,7 +3850,7 @@ void SubstringExtensions__DeleteAt_fn(uString* s, int* index, uString** __retval
     *__retval = SubstringExtensions::DeleteAt(s, index);
 }
 
-// public static string DeleteSpan(string s, int start, int end) :2148
+// public static string DeleteSpan(string s, int start, int end) :2154
 void SubstringExtensions__DeleteSpan_fn(uString* s, int* start, int* end, uString** __retval)
 {
     *__retval = SubstringExtensions::DeleteSpan(s, *start, *end);
@@ -3886,6 +3886,12 @@ void SubstringExtensions__PrevCharIndex_fn(uString* s, int* i, int* __retval)
     *__retval = SubstringExtensions::PrevCharIndex(s, *i);
 }
 
+// public static string SafeInsert(string s, int index, string insert) :2148
+void SubstringExtensions__SafeInsert_fn(uString* s, int* index, uString* insert, uString** __retval)
+{
+    *__retval = SubstringExtensions::SafeInsert(s, *index, insert);
+}
+
 // public static string SafeSubstring(string s, int start) :2127
 void SubstringExtensions__SafeSubstring_fn(uString* s, int* start, uString** __retval)
 {
@@ -3898,13 +3904,13 @@ void SubstringExtensions__SafeSubstring1_fn(uString* s, int* start, int* length,
     *__retval = SubstringExtensions::SafeSubstring1(s, *start, *length);
 }
 
-// private static Fuse.Text.Substring TrimLine(Fuse.Text.Substring line) :2163
+// private static Fuse.Text.Substring TrimLine(Fuse.Text.Substring line) :2169
 void SubstringExtensions__TrimLine_fn(::g::Fuse::Text::Substring* line, ::g::Fuse::Text::Substring** __retval)
 {
     *__retval = SubstringExtensions::TrimLine(line);
 }
 
-// public static Uno.Collections.IEnumerable<Fuse.Text.Substring> TrimmedLines(Fuse.Text.Substring str) :2158
+// public static Uno.Collections.IEnumerable<Fuse.Text.Substring> TrimmedLines(Fuse.Text.Substring str) :2164
 void SubstringExtensions__TrimmedLines_fn(::g::Fuse::Text::Substring* str, uObject** __retval)
 {
     *__retval = SubstringExtensions::TrimmedLines(str);
@@ -3966,7 +3972,7 @@ uString* SubstringExtensions::DeleteAt(uString* s, int* index)
     return ::g::Uno::String::op_Addition2(SubstringExtensions::SafeSubstring1(s, 0, *index), SubstringExtensions::SafeSubstring(s, *index + len));
 }
 
-// public static string DeleteSpan(string s, int start, int end) [static] :2148
+// public static string DeleteSpan(string s, int start, int end) [static] :2154
 uString* SubstringExtensions::DeleteSpan(uString* s, int start, int end)
 {
     uStackFrame __("Fuse.Text.SubstringExtensions", "DeleteSpan(string,int,int)");
@@ -4043,6 +4049,14 @@ int SubstringExtensions::PrevCharIndex(uString* s, int i)
     return i - 1;
 }
 
+// public static string SafeInsert(string s, int index, string insert) [static] :2148
+uString* SubstringExtensions::SafeInsert(uString* s, int index, uString* insert)
+{
+    uStackFrame __("Fuse.Text.SubstringExtensions", "SafeInsert(string,int,string)");
+    index = ::g::Uno::Math::Clamp8(index, 0, uPtr(s)->Length());
+    return ::g::Uno::String::Insert(s, index, insert);
+}
+
 // public static string SafeSubstring(string s, int start) [static] :2127
 uString* SubstringExtensions::SafeSubstring(uString* s, int start)
 {
@@ -4069,7 +4083,7 @@ uString* SubstringExtensions::SafeSubstring1(uString* s, int start, int length)
     return ::g::Uno::String::Substring1(s, start, length);
 }
 
-// private static Fuse.Text.Substring TrimLine(Fuse.Text.Substring line) [static] :2163
+// private static Fuse.Text.Substring TrimLine(Fuse.Text.Substring line) [static] :2169
 ::g::Fuse::Text::Substring* SubstringExtensions::TrimLine(::g::Fuse::Text::Substring* line)
 {
     uStackFrame __("Fuse.Text.SubstringExtensions", "TrimLine(Fuse.Text.Substring)");
@@ -4081,7 +4095,7 @@ uString* SubstringExtensions::SafeSubstring1(uString* s, int start, int length)
     return trimmedLine;
 }
 
-// public static Uno.Collections.IEnumerable<Fuse.Text.Substring> TrimmedLines(Fuse.Text.Substring str) [static] :2158
+// public static Uno.Collections.IEnumerable<Fuse.Text.Substring> TrimmedLines(Fuse.Text.Substring str) [static] :2164
 uObject* SubstringExtensions::TrimmedLines(::g::Fuse::Text::Substring* str)
 {
     uStackFrame __("Fuse.Text.SubstringExtensions", "TrimmedLines(Fuse.Text.Substring)");
@@ -4089,10 +4103,10 @@ uObject* SubstringExtensions::TrimmedLines(::g::Fuse::Text::Substring* str)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
-// public struct SubTexture :2184
+// public struct SubTexture :2190
 // {
 static void SubTexture_build(uType* type)
 {
@@ -4120,26 +4134,26 @@ uStructType* SubTexture_typeof()
     return type;
 }
 
-// public SubTexture(int textureIndex, Uno.Recti rect) :2190
+// public SubTexture(int textureIndex, Uno.Recti rect) :2196
 void SubTexture__ctor__fn(SubTexture* __this, int* textureIndex, ::g::Uno::Recti* rect)
 {
     __this->ctor_(*textureIndex, *rect);
 }
 
-// public SubTexture New(int textureIndex, Uno.Recti rect) :2190
+// public SubTexture New(int textureIndex, Uno.Recti rect) :2196
 void SubTexture__New1_fn(int* textureIndex, ::g::Uno::Recti* rect, SubTexture* __retval)
 {
     *__retval = SubTexture__New1(*textureIndex, *rect);
 }
 
-// public SubTexture(int textureIndex, Uno.Recti rect) [instance] :2190
+// public SubTexture(int textureIndex, Uno.Recti rect) [instance] :2196
 void SubTexture::ctor_(int textureIndex, ::g::Uno::Recti rect)
 {
     TextureIndex = textureIndex;
     Rect = rect;
 }
 
-// public SubTexture New(int textureIndex, Uno.Recti rect) [static] :2190
+// public SubTexture New(int textureIndex, Uno.Recti rect) [static] :2196
 SubTexture SubTexture__New1(int textureIndex, ::g::Uno::Recti rect)
 {
     SubTexture obj1;
@@ -4148,8 +4162,8 @@ SubTexture SubTexture__New1(int textureIndex, ::g::Uno::Recti rect)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
 // public enum TextDirection :831
 uEnumType* TextDirection_typeof()
@@ -4164,15 +4178,15 @@ uEnumType* TextDirection_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
-// public sealed class TextureAtlas :2197
+// public sealed class TextureAtlas :2203
 // {
 static void TextureAtlas_build(uType* type)
 {
     ::STRINGS[19] = uString::Const("bitmap.Format == this._format");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno");
     ::STRINGS[20] = uString::Const("Bitmap too large for the texture atlas size");
     ::STRINGS[21] = uString::Const("(&new Uno.Recti(new int2(0), dst.Size)).Contains(new Uno.Recti(dstPos, src.Size))");
     ::STRINGS[22] = uString::Const("src.Format == dst.Format");
@@ -4205,43 +4219,43 @@ uType* TextureAtlas_typeof()
     return type;
 }
 
-// public TextureAtlas(int2 minimumTextureSize, Uno.Graphics.Format format, Uno.Collections.List<texture2D> textures) :2209
+// public TextureAtlas(int2 minimumTextureSize, Uno.Graphics.Format format, Uno.Collections.List<texture2D> textures) :2215
 void TextureAtlas__ctor__fn(TextureAtlas* __this, ::g::Uno::Int2* minimumTextureSize, int* format, ::g::Uno::Collections::List* textures)
 {
     __this->ctor_(*minimumTextureSize, *format, textures);
 }
 
-// public Fuse.Text.SubTexture Add(Uno.Content.Images.Bitmap bitmap) :2223
+// public Fuse.Text.SubTexture Add(Uno.Content.Images.Bitmap bitmap) :2229
 void TextureAtlas__Add_fn(TextureAtlas* __this, ::g::Uno::Content::Images::Bitmap* bitmap, ::g::Fuse::Text::SubTexture* __retval)
 {
     *__retval = __this->Add(bitmap);
 }
 
-// private static void Blit(Uno.Content.Images.Bitmap dst, Uno.Content.Images.Bitmap src, int2 dstPos) :2269
+// private static void Blit(Uno.Content.Images.Bitmap dst, Uno.Content.Images.Bitmap src, int2 dstPos) :2275
 void TextureAtlas__Blit_fn(::g::Uno::Content::Images::Bitmap* dst, ::g::Uno::Content::Images::Bitmap* src, ::g::Uno::Int2* dstPos)
 {
     TextureAtlas::Blit(dst, src, *dstPos);
 }
 
-// public void Commit() :2250
+// public void Commit() :2256
 void TextureAtlas__Commit_fn(TextureAtlas* __this)
 {
     __this->Commit();
 }
 
-// public TextureAtlas New(int2 minimumTextureSize, Uno.Graphics.Format format, Uno.Collections.List<texture2D> textures) :2209
+// public TextureAtlas New(int2 minimumTextureSize, Uno.Graphics.Format format, Uno.Collections.List<texture2D> textures) :2215
 void TextureAtlas__New1_fn(::g::Uno::Int2* minimumTextureSize, int* format, ::g::Uno::Collections::List* textures, TextureAtlas** __retval)
 {
     *__retval = TextureAtlas::New1(*minimumTextureSize, *format, textures);
 }
 
-// private void NewTexture(int2 size) :2260
+// private void NewTexture(int2 size) :2266
 void TextureAtlas__NewTexture_fn(TextureAtlas* __this, ::g::Uno::Int2* size)
 {
     __this->NewTexture(*size);
 }
 
-// public TextureAtlas(int2 minimumTextureSize, Uno.Graphics.Format format, Uno.Collections.List<texture2D> textures) [instance] :2209
+// public TextureAtlas(int2 minimumTextureSize, Uno.Graphics.Format format, Uno.Collections.List<texture2D> textures) [instance] :2215
 void TextureAtlas::ctor_(::g::Uno::Int2 minimumTextureSize, int format, ::g::Uno::Collections::List* textures)
 {
     uStackFrame __("Fuse.Text.TextureAtlas", ".ctor(int2,Uno.Graphics.Format,Uno.Collections.List<texture2D>)");
@@ -4251,13 +4265,13 @@ void TextureAtlas::ctor_(::g::Uno::Int2 minimumTextureSize, int format, ::g::Uno
     NewTexture(_minimumTextureSize);
 }
 
-// public Fuse.Text.SubTexture Add(Uno.Content.Images.Bitmap bitmap) [instance] :2223
+// public Fuse.Text.SubTexture Add(Uno.Content.Images.Bitmap bitmap) [instance] :2229
 ::g::Fuse::Text::SubTexture TextureAtlas::Add(::g::Uno::Content::Images::Bitmap* bitmap)
 {
     uStackFrame __("Fuse.Text.TextureAtlas", "Add(Uno.Content.Images.Bitmap)");
     int assert1;
     assert1 = uPtr(bitmap)->Format();
-    ::g::Uno::Diagnostics::Debug::Assert(assert1 == _format, ::STRINGS[19/*"bitmap.Form...*/], ::STRINGS[1/*"/Users/eric...*/], 2225, uArray::Init<uObject*>(::TYPES[1/*object[]*/], 2, uBox<int>(::g::Uno::Graphics::Format_typeof(), assert1), uBox<int>(::g::Uno::Graphics::Format_typeof(), _format)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert1 == _format, ::STRINGS[19/*"bitmap.Form...*/], ::STRINGS[1/*"/Users/eric...*/], 2231, uArray::Init<uObject*>(::TYPES[1/*object[]*/], 2, uBox<int>(::g::Uno::Graphics::Format_typeof(), assert1), uBox<int>(::g::Uno::Graphics::Format_typeof(), _format)));
     ::g::Uno::Recti rectWithBorder;
     ::g::Uno::Int2 sizeWithBorder = ::g::Uno::Int2__op_Addition1(bitmap->Size(), ::g::Uno::Int2__New2(1, 1));
 
@@ -4276,7 +4290,7 @@ void TextureAtlas::ctor_(::g::Uno::Int2 minimumTextureSize, int format, ::g::Uno
     return ::g::Fuse::Text::SubTexture__New1(_textureIndex, rect);
 }
 
-// public void Commit() [instance] :2250
+// public void Commit() [instance] :2256
 void TextureAtlas::Commit()
 {
     uStackFrame __("Fuse.Text.TextureAtlas", "Commit()");
@@ -4290,7 +4304,7 @@ void TextureAtlas::Commit()
     }
 }
 
-// private void NewTexture(int2 size) [instance] :2260
+// private void NewTexture(int2 size) [instance] :2266
 void TextureAtlas::NewTexture(::g::Uno::Int2 size)
 {
     uStackFrame __("Fuse.Text.TextureAtlas", "NewTexture(int2)");
@@ -4301,7 +4315,7 @@ void TextureAtlas::NewTexture(::g::Uno::Int2 size)
     ::g::Uno::Collections::List__Add_fn(uPtr(_textures), ::g::Uno::Graphics::Texture2D::New1(size, _format, false));
 }
 
-// private static void Blit(Uno.Content.Images.Bitmap dst, Uno.Content.Images.Bitmap src, int2 dstPos) [static] :2269
+// private static void Blit(Uno.Content.Images.Bitmap dst, Uno.Content.Images.Bitmap src, int2 dstPos) [static] :2275
 void TextureAtlas::Blit(::g::Uno::Content::Images::Bitmap* dst, ::g::Uno::Content::Images::Bitmap* src, ::g::Uno::Int2 dstPos)
 {
     uStackFrame __("Fuse.Text.TextureAtlas", "Blit(Uno.Content.Images.Bitmap,Uno.Content.Images.Bitmap,int2)");
@@ -4309,10 +4323,10 @@ void TextureAtlas::Blit(::g::Uno::Content::Images::Bitmap* dst, ::g::Uno::Conten
     int assert3;
     int assert4;
     assert2 = ::g::Uno::Recti__New2(dstPos, uPtr(src)->Size());
-    ::g::Uno::Diagnostics::Debug::Assert(::g::Uno::Recti__New2(::g::Uno::Int2__New1(0), uPtr(dst)->Size()).Contains1(assert2), ::STRINGS[21/*"(&new Uno.R...*/], ::STRINGS[1/*"/Users/eric...*/], 2271, uArray::Init<uObject*>(::TYPES[1/*object[]*/], 1, uBox(::g::Uno::Recti_typeof(), assert2)));
+    ::g::Uno::Diagnostics::Debug::Assert(::g::Uno::Recti__New2(::g::Uno::Int2__New1(0), uPtr(dst)->Size()).Contains1(assert2), ::STRINGS[21/*"(&new Uno.R...*/], ::STRINGS[1/*"/Users/eric...*/], 2277, uArray::Init<uObject*>(::TYPES[1/*object[]*/], 1, uBox(::g::Uno::Recti_typeof(), assert2)));
     assert3 = src->Format();
     assert4 = dst->Format();
-    ::g::Uno::Diagnostics::Debug::Assert(assert3 == assert4, ::STRINGS[22/*"src.Format ...*/], ::STRINGS[1/*"/Users/eric...*/], 2272, uArray::Init<uObject*>(::TYPES[1/*object[]*/], 2, uBox<int>(::g::Uno::Graphics::Format_typeof(), assert3), uBox<int>(::g::Uno::Graphics::Format_typeof(), assert4)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert3 == assert4, ::STRINGS[22/*"src.Format ...*/], ::STRINGS[1/*"/Users/eric...*/], 2278, uArray::Init<uObject*>(::TYPES[1/*object[]*/], 2, uBox<int>(::g::Uno::Graphics::Format_typeof(), assert3), uBox<int>(::g::Uno::Graphics::Format_typeof(), assert4)));
     int bpp = ::g::Uno::Graphics::FormatHelpers::GetStrideInBytes(src->Format());
     ::g::Uno::Int2 bsrcSize = ::g::Uno::Int2__New2(src->Size().X * bpp, src->Size().Y);
     ::g::Uno::Int2 bdstSize = ::g::Uno::Int2__New2(dst->Size().X * bpp, dst->Size().Y);
@@ -4328,7 +4342,7 @@ void TextureAtlas::Blit(::g::Uno::Content::Images::Bitmap* dst, ::g::Uno::Conten
     }
 }
 
-// public TextureAtlas New(int2 minimumTextureSize, Uno.Graphics.Format format, Uno.Collections.List<texture2D> textures) [static] :2209
+// public TextureAtlas New(int2 minimumTextureSize, Uno.Graphics.Format format, Uno.Collections.List<texture2D> textures) [static] :2215
 TextureAtlas* TextureAtlas::New1(::g::Uno::Int2 minimumTextureSize, int format, ::g::Uno::Collections::List* textures)
 {
     TextureAtlas* obj5 = (TextureAtlas*)uNew(TextureAtlas_typeof());
@@ -4337,10 +4351,10 @@ TextureAtlas* TextureAtlas::New1(::g::Uno::Int2 minimumTextureSize, int format, 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
-// public static class Truncate :2302
+// public static class Truncate :2308
 // {
 static void Truncate_build(uType* type)
 {
@@ -4364,25 +4378,25 @@ uClassType* Truncate_typeof()
     return type;
 }
 
-// public static Uno.Collections.List<Fuse.Text.ShapedRun> Line(Fuse.Text.Font font, Uno.Collections.List<Fuse.Text.ShapedRun> lineRuns, float maxPixelWidth, float& minTolerance, float& maxTolerance) :2319
+// public static Uno.Collections.List<Fuse.Text.ShapedRun> Line(Fuse.Text.Font font, Uno.Collections.List<Fuse.Text.ShapedRun> lineRuns, float maxPixelWidth, float& minTolerance, float& maxTolerance) :2325
 void Truncate__Line_fn(::g::Fuse::Text::Font* font, ::g::Uno::Collections::List* lineRuns, float* maxPixelWidth, float* minTolerance, float* maxTolerance, ::g::Uno::Collections::List** __retval)
 {
     *__retval = Truncate::Line(font, lineRuns, *maxPixelWidth, minTolerance, maxTolerance);
 }
 
-// public static Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> Lines(Fuse.Text.Font font, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> lines, float maxPixelWidth, float& minTolerance, float& maxTolerance) :2304
+// public static Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> Lines(Fuse.Text.Font font, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> lines, float maxPixelWidth, float& minTolerance, float& maxTolerance) :2310
 void Truncate__Lines_fn(::g::Fuse::Text::Font* font, ::g::Uno::Collections::List* lines, float* maxPixelWidth, float* minTolerance, float* maxTolerance, ::g::Uno::Collections::List** __retval)
 {
     *__retval = Truncate::Lines(font, lines, *maxPixelWidth, minTolerance, maxTolerance);
 }
 
-// private static Uno.Collections.List<Fuse.Text.ShapedRun> TruncatedLine(Fuse.Text.Font font, Uno.Collections.List<Fuse.Text.ShapedRun> lineRuns, float maxPixelWidth, float& minTolerance, float& maxTolerance, float2 pos, int runIndex, int i) :2366
+// private static Uno.Collections.List<Fuse.Text.ShapedRun> TruncatedLine(Fuse.Text.Font font, Uno.Collections.List<Fuse.Text.ShapedRun> lineRuns, float maxPixelWidth, float& minTolerance, float& maxTolerance, float2 pos, int runIndex, int i) :2372
 void Truncate__TruncatedLine_fn(::g::Fuse::Text::Font* font, ::g::Uno::Collections::List* lineRuns, float* maxPixelWidth, float* minTolerance, float* maxTolerance, ::g::Uno::Float2* pos, int* runIndex, int* i, ::g::Uno::Collections::List** __retval)
 {
     *__retval = Truncate::TruncatedLine(font, lineRuns, *maxPixelWidth, minTolerance, maxTolerance, *pos, *runIndex, *i);
 }
 
-// public static Uno.Collections.List<Fuse.Text.ShapedRun> Line(Fuse.Text.Font font, Uno.Collections.List<Fuse.Text.ShapedRun> lineRuns, float maxPixelWidth, float& minTolerance, float& maxTolerance) [static] :2319
+// public static Uno.Collections.List<Fuse.Text.ShapedRun> Line(Fuse.Text.Font font, Uno.Collections.List<Fuse.Text.ShapedRun> lineRuns, float maxPixelWidth, float& minTolerance, float& maxTolerance) [static] :2325
 ::g::Uno::Collections::List* Truncate::Line(::g::Fuse::Text::Font* font, ::g::Uno::Collections::List* lineRuns, float maxPixelWidth, float* minTolerance, float* maxTolerance)
 {
     uStackFrame __("Fuse.Text.Truncate", "Line(Fuse.Text.Font,Uno.Collections.List<Fuse.Text.ShapedRun>,float,float&,float&)");
@@ -4419,7 +4433,7 @@ void Truncate__TruncatedLine_fn(::g::Fuse::Text::Font* font, ::g::Uno::Collectio
     return lineRuns;
 }
 
-// public static Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> Lines(Fuse.Text.Font font, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> lines, float maxPixelWidth, float& minTolerance, float& maxTolerance) [static] :2304
+// public static Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> Lines(Fuse.Text.Font font, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> lines, float maxPixelWidth, float& minTolerance, float& maxTolerance) [static] :2310
 ::g::Uno::Collections::List* Truncate::Lines(::g::Fuse::Text::Font* font, ::g::Uno::Collections::List* lines, float maxPixelWidth, float* minTolerance, float* maxTolerance)
 {
     uStackFrame __("Fuse.Text.Truncate", "Lines(Fuse.Text.Font,Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>>,float,float&,float&)");
@@ -4437,7 +4451,7 @@ void Truncate__TruncatedLine_fn(::g::Fuse::Text::Font* font, ::g::Uno::Collectio
     return result;
 }
 
-// private static Uno.Collections.List<Fuse.Text.ShapedRun> TruncatedLine(Fuse.Text.Font font, Uno.Collections.List<Fuse.Text.ShapedRun> lineRuns, float maxPixelWidth, float& minTolerance, float& maxTolerance, float2 pos, int runIndex, int i) [static] :2366
+// private static Uno.Collections.List<Fuse.Text.ShapedRun> TruncatedLine(Fuse.Text.Font font, Uno.Collections.List<Fuse.Text.ShapedRun> lineRuns, float maxPixelWidth, float& minTolerance, float& maxTolerance, float2 pos, int runIndex, int i) [static] :2372
 ::g::Uno::Collections::List* Truncate::TruncatedLine(::g::Fuse::Text::Font* font, ::g::Uno::Collections::List* lineRuns, float maxPixelWidth, float* minTolerance, float* maxTolerance, ::g::Uno::Float2 pos, int runIndex, int i)
 {
     uStackFrame __("Fuse.Text.Truncate", "TruncatedLine(Fuse.Text.Font,Uno.Collections.List<Fuse.Text.ShapedRun>,float,float&,float&,float2,int,int)");
@@ -4493,10 +4507,10 @@ void Truncate__TruncatedLine_fn(::g::Fuse::Text::Font* font, ::g::Uno::Collectio
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------
 
-// public static class Wrap :2441
+// public static class Wrap :2447
 // {
 static void Wrap_build(uType* type)
 {
@@ -4527,31 +4541,31 @@ uClassType* Wrap_typeof()
     return type;
 }
 
-// public static Uno.Collections.List<Uno.Collections.List<Fuse.Text.Bidirectional.Run>> ActualLineBreaks(Uno.Collections.List<Fuse.Text.Bidirectional.Run> logicalRuns) :2443
+// public static Uno.Collections.List<Uno.Collections.List<Fuse.Text.Bidirectional.Run>> ActualLineBreaks(Uno.Collections.List<Fuse.Text.Bidirectional.Run> logicalRuns) :2449
 void Wrap__ActualLineBreaks_fn(::g::Uno::Collections::List* logicalRuns, ::g::Uno::Collections::List** __retval)
 {
     *__retval = Wrap::ActualLineBreaks(logicalRuns);
 }
 
-// public static Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> Lines(Fuse.Text.Font font, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> logicalLineRuns, float maxPixelWidth, float& minTolerance, float& maxTolerance) :2465
+// public static Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> Lines(Fuse.Text.Font font, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> logicalLineRuns, float maxPixelWidth, float& minTolerance, float& maxTolerance) :2471
 void Wrap__Lines_fn(::g::Fuse::Text::Font* font, ::g::Uno::Collections::List* logicalLineRuns, float* maxPixelWidth, float* minTolerance, float* maxTolerance, ::g::Uno::Collections::List** __retval)
 {
     *__retval = Wrap::Lines(font, logicalLineRuns, *maxPixelWidth, minTolerance, maxTolerance);
 }
 
-// private static void WrapLine(Fuse.Text.Font font, float maxPixelWidth, float& minTolerance, float& maxTolerance, Uno.Collections.List<Fuse.Text.ShapedRun> line, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> result) :2481
+// private static void WrapLine(Fuse.Text.Font font, float maxPixelWidth, float& minTolerance, float& maxTolerance, Uno.Collections.List<Fuse.Text.ShapedRun> line, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> result) :2487
 void Wrap__WrapLine_fn(::g::Fuse::Text::Font* font, float* maxPixelWidth, float* minTolerance, float* maxTolerance, ::g::Uno::Collections::List* line, ::g::Uno::Collections::List* result)
 {
     Wrap::WrapLine(font, *maxPixelWidth, minTolerance, maxTolerance, line, result);
 }
 
-// private static void WrapRun(Fuse.Text.Font font, float maxPixelWidth, float& minTolerance, float& maxTolerance, Fuse.Text.ShapedRun srun, float2& pos, Uno.Collections.List<Fuse.Text.ShapedRun>& currentLine, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> result) :2519
+// private static void WrapRun(Fuse.Text.Font font, float maxPixelWidth, float& minTolerance, float& maxTolerance, Fuse.Text.ShapedRun srun, float2& pos, Uno.Collections.List<Fuse.Text.ShapedRun>& currentLine, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> result) :2525
 void Wrap__WrapRun_fn(::g::Fuse::Text::Font* font, float* maxPixelWidth, float* minTolerance, float* maxTolerance, ::g::Fuse::Text::ShapedRun* srun, ::g::Uno::Float2* pos, ::g::Uno::Collections::List** currentLine, ::g::Uno::Collections::List* result)
 {
     Wrap::WrapRun(font, *maxPixelWidth, minTolerance, maxTolerance, srun, pos, currentLine, result);
 }
 
-// public static Uno.Collections.List<Uno.Collections.List<Fuse.Text.Bidirectional.Run>> ActualLineBreaks(Uno.Collections.List<Fuse.Text.Bidirectional.Run> logicalRuns) [static] :2443
+// public static Uno.Collections.List<Uno.Collections.List<Fuse.Text.Bidirectional.Run>> ActualLineBreaks(Uno.Collections.List<Fuse.Text.Bidirectional.Run> logicalRuns) [static] :2449
 ::g::Uno::Collections::List* Wrap::ActualLineBreaks(::g::Uno::Collections::List* logicalRuns)
 {
     uStackFrame __("Fuse.Text.Wrap", "ActualLineBreaks(Uno.Collections.List<Fuse.Text.Bidirectional.Run>)");
@@ -4584,7 +4598,7 @@ void Wrap__WrapRun_fn(::g::Fuse::Text::Font* font, float* maxPixelWidth, float* 
     return result;
 }
 
-// public static Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> Lines(Fuse.Text.Font font, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> logicalLineRuns, float maxPixelWidth, float& minTolerance, float& maxTolerance) [static] :2465
+// public static Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> Lines(Fuse.Text.Font font, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> logicalLineRuns, float maxPixelWidth, float& minTolerance, float& maxTolerance) [static] :2471
 ::g::Uno::Collections::List* Wrap::Lines(::g::Fuse::Text::Font* font, ::g::Uno::Collections::List* logicalLineRuns, float maxPixelWidth, float* minTolerance, float* maxTolerance)
 {
     uStackFrame __("Fuse.Text.Wrap", "Lines(Fuse.Text.Font,Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>>,float,float&,float&)");
@@ -4602,7 +4616,7 @@ void Wrap__WrapRun_fn(::g::Fuse::Text::Font* font, float* maxPixelWidth, float* 
     return result;
 }
 
-// private static void WrapLine(Fuse.Text.Font font, float maxPixelWidth, float& minTolerance, float& maxTolerance, Uno.Collections.List<Fuse.Text.ShapedRun> line, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> result) [static] :2481
+// private static void WrapLine(Fuse.Text.Font font, float maxPixelWidth, float& minTolerance, float& maxTolerance, Uno.Collections.List<Fuse.Text.ShapedRun> line, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> result) [static] :2487
 void Wrap::WrapLine(::g::Fuse::Text::Font* font, float maxPixelWidth, float* minTolerance, float* maxTolerance, ::g::Uno::Collections::List* line, ::g::Uno::Collections::List* result)
 {
     uStackFrame __("Fuse.Text.Wrap", "WrapLine(Fuse.Text.Font,float,float&,float&,Uno.Collections.List<Fuse.Text.ShapedRun>,Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>>)");
@@ -4636,7 +4650,7 @@ void Wrap::WrapLine(::g::Fuse::Text::Font* font, float maxPixelWidth, float* min
     ::g::Uno::Collections::List__Add_fn(uPtr(result), currentLine);
 }
 
-// private static void WrapRun(Fuse.Text.Font font, float maxPixelWidth, float& minTolerance, float& maxTolerance, Fuse.Text.ShapedRun srun, float2& pos, Uno.Collections.List<Fuse.Text.ShapedRun>& currentLine, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> result) [static] :2519
+// private static void WrapRun(Fuse.Text.Font font, float maxPixelWidth, float& minTolerance, float& maxTolerance, Fuse.Text.ShapedRun srun, float2& pos, Uno.Collections.List<Fuse.Text.ShapedRun>& currentLine, Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>> result) [static] :2525
 void Wrap::WrapRun(::g::Fuse::Text::Font* font, float maxPixelWidth, float* minTolerance, float* maxTolerance, ::g::Fuse::Text::ShapedRun* srun, ::g::Uno::Float2* pos, ::g::Uno::Collections::List** currentLine, ::g::Uno::Collections::List* result)
 {
     uStackFrame __("Fuse.Text.Wrap", "WrapRun(Fuse.Text.Font,float,float&,float&,Fuse.Text.ShapedRun,float2&,Uno.Collections.List<Fuse.Text.ShapedRun>&,Uno.Collections.List<Uno.Collections.List<Fuse.Text.ShapedRun>>)");

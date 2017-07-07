@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -17,7 +17,7 @@ namespace g{
 namespace Fuse{
 namespace Resources{
 
-// public sealed class ResourceString :3640
+// public sealed class ResourceString :3702
 // {
 ::g::Fuse::Node_type* ResourceString_typeof();
 void ResourceString__ctor_4_fn(ResourceString* __this);

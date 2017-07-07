@@ -10,10 +10,15 @@
 {
 @private
     uRuntime* _uno;
+    EAGLContext* _glContext;
+    UIWindow* (^_windowGetter)();
 }
 @end
 
 @implementation uContext
+
+@synthesize window = _window;
+@synthesize glContext = _glContext;
 
 struct NotificationSelector
 {
@@ -31,11 +36,55 @@ const static NotificationSelector _notifications[] = {
     { UIApplicationDidReceiveMemoryWarningNotification, @selector(applicationDidReceiveMemoryWarning:) },
 };
 
+static uContext* instance = nil;
++ (instancetype)sharedContext
+{
+    if (instance == nil)
+    {
+        NSException* notInitializedException = [NSException
+            exceptionWithName:@"Failed to get sharedContext"
+            reason:@"uContext has not been initialized"
+            userInfo: nil];
+        @throw notInitializedException;
+    }
+    return instance;
+}
+
++ (instancetype)initSharedContext
+{
+    if (instance == nil)
+    {
+        instance = [[uContext alloc] init];
+    }
+    return instance;
+}
+
++ (instancetype)initSharedContextWithWindow:(UIWindow*(^)())windowGetter
+{
+    uContext* context = [uContext initSharedContext];
+    context->_windowGetter = windowGetter;
+    return context;
+}
+
+- (UIWindow*)window
+{
+    if (self->_windowGetter != nil)
+    {
+        return self->_windowGetter();
+    }
+    else
+    {
+        return nil;
+    }
+}
+
 - (instancetype)init
 {
     if (self = [super init])
     {
         _uno = new uRuntime();
+        _glContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+        [EAGLContext setCurrentContext:_glContext];
 
         NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
 

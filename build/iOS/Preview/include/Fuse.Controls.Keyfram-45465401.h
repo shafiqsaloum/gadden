@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public static class KeyframeAccessors :373
+// public static class KeyframeAccessors :385
 // {
 uClassType* KeyframeAccessors_typeof();
 void KeyframeAccessors__SetVisibility_fn(::g::Fuse::Animations::Keyframe* kf, int* __retval);

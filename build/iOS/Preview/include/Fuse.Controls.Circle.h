@@ -1,10 +1,12 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/shapes/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/shapes/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
-#include <Fuse.Controls.Shape.h>
+#include <Fuse.Controls.EllipticalShape.h>
+#include <Fuse.Drawing.IDrawObj-d34d045e.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -20,71 +22,42 @@
 namespace g{namespace Fuse{namespace Controls{struct Circle;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Stroke;}}}
+namespace g{namespace Fuse{namespace Drawing{struct Surface;}}}
+namespace g{namespace Fuse{namespace Drawing{struct SurfacePath;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct HitTestContext;}}
+namespace g{namespace Uno{struct Float2;}}
 
 namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial sealed class Circle :60
+// public partial sealed class Circle :104
 // {
 ::g::Fuse::Controls::Shape_type* Circle_typeof();
-void Circle__ctor_7_fn(Circle* __this);
-void Circle__AngleInRange_fn(float* angle, float* start, float* end, bool* __retval);
+void Circle__ctor_8_fn(Circle* __this);
+void Circle__get_CanvasAngles_fn(Circle* __this, ::g::Uno::Float2* __retval);
+void Circle__get_Center_fn(Circle* __this, ::g::Uno::Float2* __retval);
 void Circle__CreateNativeView_fn(Circle* __this, uObject** __retval);
+void Circle__CreateSurfacePath_fn(Circle* __this, ::g::Fuse::Drawing::Surface* surface, ::g::Fuse::Drawing::SurfacePath** __retval);
 void Circle__DrawFill_fn(Circle* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Drawing::Brush* fill);
 void Circle__DrawStroke_fn(Circle* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Drawing::Stroke* stroke);
-void Circle__get_EffectiveEndAngle_fn(Circle* __this, float* __retval);
-void Circle__get_EffectiveEndAngleDegrees_fn(Circle* __this, float* __retval);
-void Circle__get_EndAngle_fn(Circle* __this, float* __retval);
-void Circle__set_EndAngle_fn(Circle* __this, float* value);
-void Circle__get_EndAngleDegrees_fn(Circle* __this, float* __retval);
-void Circle__set_EndAngleDegrees_fn(Circle* __this, float* value);
-void Circle__get_LengthAngle_fn(Circle* __this, float* __retval);
-void Circle__set_LengthAngle_fn(Circle* __this, float* value);
-void Circle__get_LengthAngleDegrees_fn(Circle* __this, float* __retval);
-void Circle__set_LengthAngleDegrees_fn(Circle* __this, float* value);
+void Circle__InvalidateSurfacePath_fn(Circle* __this);
 void Circle__get_NativeCircle_fn(Circle* __this, uObject** __retval);
 void Circle__New3_fn(Circle** __retval);
 void Circle__OnHitTestLocalVisual_fn(Circle* __this, ::g::Fuse::HitTestContext* htc);
 void Circle__PushPropertiesToNativeView_fn(Circle* __this);
 void Circle__get_Radius_fn(Circle* __this, float* __retval);
-void Circle__get_StartAngle_fn(Circle* __this, float* __retval);
-void Circle__set_StartAngle_fn(Circle* __this, float* value);
-void Circle__get_StartAngleDegrees_fn(Circle* __this, float* __retval);
-void Circle__set_StartAngleDegrees_fn(Circle* __this, float* value);
 void Circle__UpdateNativeCircle_fn(Circle* __this);
-void Circle__get_UseAngle_fn(Circle* __this, bool* __retval);
 
-struct Circle : ::g::Fuse::Controls::Shape
+struct Circle : ::g::Fuse::Controls::EllipticalShape
 {
-    float _endAngle;
-    bool _hasAngle;
-    bool _hasLengthAngle;
-    float _lengthAngle;
-    float _startAngle;
-
-    void ctor_7();
-    float EffectiveEndAngle();
-    float EffectiveEndAngleDegrees();
-    float EndAngle();
-    void EndAngle(float value);
-    float EndAngleDegrees();
-    void EndAngleDegrees(float value);
-    float LengthAngle();
-    void LengthAngle(float value);
-    float LengthAngleDegrees();
-    void LengthAngleDegrees(float value);
+    void ctor_8();
+    ::g::Uno::Float2 CanvasAngles();
+    ::g::Uno::Float2 Center();
     uObject* NativeCircle();
     float Radius();
-    float StartAngle();
-    void StartAngle(float value);
-    float StartAngleDegrees();
-    void StartAngleDegrees(float value);
     void UpdateNativeCircle();
-    bool UseAngle();
-    static bool AngleInRange(float angle, float start, float end);
     static Circle* New3();
 };
 // }

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -18,7 +18,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal sealed class SplineTrack :2965
+// internal sealed class SplineTrack :2957
 // {
 struct SplineTrack_type : uType
 {
@@ -34,7 +34,6 @@ void SplineTrack__get_Bias_fn(SplineTrack* __this, float* __retval);
 void SplineTrack__set_Bias_fn(SplineTrack* __this, float* value);
 void SplineTrack__get_Continuity_fn(SplineTrack* __this, float* __retval);
 void SplineTrack__set_Continuity_fn(SplineTrack* __this, float* value);
-void SplineTrack__CubicHermitePoint_fn(::g::Uno::Float4* p0, ::g::Uno::Float4* p1, ::g::Uno::Float4* m0, ::g::Uno::Float4* m1, float* t, ::g::Uno::Float4* __retval);
 void SplineTrack__FuseAnimationsContinuousTrackProviderGetSeekProgress_fn(SplineTrack* __this, ::g::Fuse::Animations::TrackAnimatorState* tas, double* progress, double* interval, int* dir, ::g::Uno::Float4* value, double* strength, int* __retval);
 void SplineTrack__FuseAnimationsContinuousTrackProviderGetSeekTime_fn(SplineTrack* __this, ::g::Fuse::Animations::TrackAnimatorState* tas, double* elapsed, double* interval, int* dir, ::g::Uno::Float4* value, double* strength, int* __retval);
 void SplineTrack__FuseAnimationsTrackProviderGetAnimatorVariant_fn(SplineTrack* __this, ::g::Fuse::Animations::TrackAnimator* tas, int* __retval);
@@ -43,7 +42,6 @@ void SplineTrack__Init_fn(SplineTrack* __this);
 void SplineTrack__get_Interpolation_fn(SplineTrack* __this, int* __retval);
 void SplineTrack__set_Interpolation_fn(SplineTrack* __this, int* value);
 void SplineTrack__get_Keyframes_fn(SplineTrack* __this, uObject** __retval);
-void SplineTrack__LinearPoint_fn(::g::Uno::Float4* p0, ::g::Uno::Float4* p1, ::g::Uno::Float4* m0, ::g::Uno::Float4* m1, float* t, ::g::Uno::Float4* __retval);
 void SplineTrack__New1_fn(SplineTrack** __retval);
 void SplineTrack__get_Tension_fn(SplineTrack* __this, float* __retval);
 void SplineTrack__set_Tension_fn(SplineTrack* __this, float* value);
@@ -70,8 +68,6 @@ struct SplineTrack : uObject
     uObject* Keyframes();
     float Tension();
     void Tension(float value);
-    static ::g::Uno::Float4 CubicHermitePoint(::g::Uno::Float4 p0, ::g::Uno::Float4 p1, ::g::Uno::Float4 m0, ::g::Uno::Float4 m1, float t);
-    static ::g::Uno::Float4 LinearPoint(::g::Uno::Float4 p0, ::g::Uno::Float4 p1, ::g::Uno::Float4 m0, ::g::Uno::Float4 m1, float t);
     static SplineTrack* New1();
 };
 // }

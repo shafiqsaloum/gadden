@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -25,9 +26,9 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class MultiLayoutPanel :1216
+// public sealed class MultiLayoutPanel :1384
 // {
-::g::Fuse::Controls::Control_type* MultiLayoutPanel_typeof();
+::g::Fuse::Controls::Panel_type* MultiLayoutPanel_typeof();
 void MultiLayoutPanel__ctor_7_fn(MultiLayoutPanel* __this);
 void MultiLayoutPanel__get_LayoutElement_fn(MultiLayoutPanel* __this, ::g::Fuse::Elements::Element** __retval);
 void MultiLayoutPanel__set_LayoutElement_fn(MultiLayoutPanel* __this, ::g::Fuse::Elements::Element* value);

@@ -21,8 +21,8 @@ namespace Uno{
 namespace Time{
 namespace Calendars{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/calendars/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/calendars/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // public sealed class Era :5
 // {
@@ -117,8 +117,8 @@ Era* Era::New1(uString* name)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/calendars/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/calendars/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class GregorianYearMonthDayCalculator :40
 // {
@@ -320,8 +320,8 @@ GregorianYearMonthDayCalculator* GregorianYearMonthDayCalculator::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/calendars/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/calendars/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal static class TimeOfDayCalculator :265
 // {
@@ -515,8 +515,8 @@ int64_t TimeOfDayCalculator::GetTicks2(int hourOfDay, int minuteOfHour, int seco
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/calendars/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/calendars/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class WeekYearCalculator :405
 // {
@@ -569,8 +569,8 @@ WeekYearCalculator* WeekYearCalculator::New1(::g::Uno::Time::Calendars::YearMont
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/calendars/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/calendars/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal abstract class YearMonthDayCalculator :510
 // {

@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -27,9 +28,9 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class Grid :652
+// public sealed class Grid :663
 // {
-::g::Fuse::Controls::Control_type* Grid_typeof();
+::g::Fuse::Controls::Panel_type* Grid_typeof();
 void Grid__ctor_7_fn(Grid* __this);
 void Grid__get_CellSpacing_fn(Grid* __this, float* __retval);
 void Grid__set_CellSpacing_fn(Grid* __this, float* value);

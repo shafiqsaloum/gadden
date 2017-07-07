@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -19,7 +19,7 @@ namespace g{namespace Uno{struct Exception;}}
 namespace g{
 namespace Fuse{
 
-// public abstract class AppBase :164
+// public abstract class AppBase :185
 // {
 struct AppBase_type : uType
 {
@@ -51,6 +51,7 @@ void AppBase__get_Properties_fn(AppBase* __this, ::g::Fuse::Properties** __retva
 void AppBase__get_Resources_fn(AppBase* __this, uObject** __retval);
 void AppBase__get_RootViewport_fn(AppBase* __this, ::g::Fuse::RootViewport** __retval);
 void AppBase__set_RootViewport_fn(AppBase* __this, ::g::Fuse::RootViewport* value);
+void AppBase__TestSetRootViewport_fn(::g::Fuse::RootViewport* rv);
 void AppBase__add_UnhandledException_fn(AppBase* __this, uDelegate* value);
 void AppBase__remove_UnhandledException_fn(AppBase* __this, uDelegate* value);
 
@@ -89,6 +90,7 @@ struct AppBase : ::g::Uno::Application
     void remove_UnhandledException(uDelegate* value);
     static void OnUnhandledExceptionInternal(::g::Uno::Exception* e);
     static void OnUpdate(AppBase* __this) { AppBase__OnUpdate_fn(__this); }
+    static void TestSetRootViewport(::g::Fuse::RootViewport* rv);
     static AppBase* Current2();
     static ::g::Fuse::RootViewport* CurrentRootViewport();
 };

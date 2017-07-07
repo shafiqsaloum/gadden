@@ -46,8 +46,8 @@ namespace g{
 namespace Fuse{
 namespace Designer{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class AdvancedAttribute :59
 // {
@@ -99,8 +99,8 @@ AdvancedAttribute* AdvancedAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class ChildExtensionAttribute :14
 // {
@@ -152,8 +152,8 @@ ChildExtensionAttribute* ChildExtensionAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class ColorAttribute :113
 // {
@@ -205,8 +205,8 @@ ColorAttribute* ColorAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class ComponentOfAttribute :95
 // {
@@ -263,8 +263,8 @@ ComponentOfAttribute* ComponentOfAttribute::New1(uString* entityClass)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class DefaultComponentAttribute :101
 // {
@@ -321,8 +321,8 @@ DefaultComponentAttribute* DefaultComponentAttribute::New1(uString* componentCla
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class DefaultInstanceAttribute :16
 // {
@@ -382,8 +382,8 @@ DefaultInstanceAttribute* DefaultInstanceAttribute::New1(uString* targetProperty
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class DesignerNameAttribute :89
 // {
@@ -440,8 +440,8 @@ DesignerNameAttribute* DesignerNameAttribute::New1(uString* name)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class DragDropPriorityAttribute :87
 // {
@@ -493,8 +493,8 @@ DragDropPriorityAttribute* DragDropPriorityAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class ExtensionAttribute :13
 // {
@@ -546,8 +546,8 @@ ExtensionAttribute* ExtensionAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class GroupAttribute :46
 // {
@@ -607,8 +607,8 @@ GroupAttribute* GroupAttribute::New1(uString* name, int priority)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class HideAttribute :8
 // {
@@ -660,8 +660,8 @@ HideAttribute* HideAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class HidesAttribute :53
 // {
@@ -718,8 +718,8 @@ HidesAttribute* HidesAttribute::New1(uString* targetProperty)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class IconAttribute :28
 // {
@@ -776,8 +776,8 @@ IconAttribute* IconAttribute::New1(uString* path)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class InlineAttribute :11
 // {
@@ -829,8 +829,8 @@ InlineAttribute* InlineAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class IntervalAttribute :125
 // {
@@ -887,8 +887,8 @@ IntervalAttribute* IntervalAttribute::New1(float interval)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class OptionalHideAttribute :9
 // {
@@ -940,8 +940,8 @@ OptionalHideAttribute* OptionalHideAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class PriorityAttribute :37
 // {
@@ -998,8 +998,8 @@ PriorityAttribute* PriorityAttribute::New1(int Priority1)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class RangeAttribute :116
 // {
@@ -1093,8 +1093,8 @@ RangeAttribute* RangeAttribute::New2(float min, float max, float exponent)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class RecursionSafeAttribute :131
 // {
@@ -1146,8 +1146,8 @@ RecursionSafeAttribute* RecursionSafeAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class RequiredComponentAttribute :107
 // {
@@ -1204,8 +1204,8 @@ RequiredComponentAttribute* RequiredComponentAttribute::New1(uString* componentC
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class SpawnableAttribute :61
 // {
@@ -1257,8 +1257,8 @@ SpawnableAttribute* SpawnableAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class SpawnsAttribute :63
 // {
@@ -1318,8 +1318,8 @@ SpawnsAttribute* SpawnsAttribute::New1(uString* sourceType, uString* targetPrope
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class ThicknessAttribute :114
 // {
@@ -1371,8 +1371,8 @@ ThicknessAttribute* ThicknessAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class TransitionAttribute :74
 // {
@@ -1435,8 +1435,8 @@ TransitionAttribute* TransitionAttribute::New1(uString* incomingType, uString* t
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/0.47.7/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Designer/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public static extern class UnoHostInterface :142
 // {

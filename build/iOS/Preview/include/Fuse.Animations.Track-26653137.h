@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -14,7 +14,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal abstract class TrackAnimatorState :3416
+// internal abstract class TrackAnimatorState :3378
 // {
 struct TrackAnimatorState_type : ::g::Fuse::Animations::AnimatorState_type
 {

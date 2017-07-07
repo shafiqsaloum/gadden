@@ -36,12 +36,12 @@ namespace Fuse{
 namespace Elements{
 namespace Internal{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/drawing/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/drawing/$.uno
+// ------------------------------------------------------------------------------------------------------
 
-// internal sealed class ElementDraw :342
+// internal sealed class ElementDraw :352
 // {
-// static ElementDraw() :342
+// static ElementDraw() :352
 static void ElementDraw__cctor__fn(uType* __type)
 {
     ElementDraw::Impl_ = ElementDraw::New1();
@@ -75,25 +75,25 @@ uType* ElementDraw_typeof()
     return type;
 }
 
-// public generated ElementDraw() :342
+// public generated ElementDraw() :352
 void ElementDraw__ctor__fn(ElementDraw* __this)
 {
     __this->ctor_();
 }
 
-// private generated void init_DrawCalls() :342
+// private generated void init_DrawCalls() :352
 void ElementDraw__init_DrawCalls_fn(ElementDraw* __this)
 {
     __this->init_DrawCalls();
 }
 
-// public generated ElementDraw New() :342
+// public generated ElementDraw New() :352
 void ElementDraw__New1_fn(ElementDraw** __retval)
 {
     *__retval = ElementDraw::New1();
 }
 
-// public void Rectangle(Fuse.DrawContext dc, Fuse.Elements.Element element, float2 offset, float2 size, float4 color) :346
+// public void Rectangle(Fuse.DrawContext dc, Fuse.Elements.Element element, float2 offset, float2 size, float4 color) :356
 void ElementDraw__Rectangle_fn(ElementDraw* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::Element* element, ::g::Uno::Float2* offset, ::g::Uno::Float2* size, ::g::Uno::Float4* color)
 {
     __this->Rectangle(dc, element, *offset, *size, *color);
@@ -101,13 +101,13 @@ void ElementDraw__Rectangle_fn(ElementDraw* __this, ::g::Fuse::DrawContext* dc, 
 
 uSStrong<ElementDraw*> ElementDraw::Impl_;
 
-// public generated ElementDraw() [instance] :342
+// public generated ElementDraw() [instance] :352
 void ElementDraw::ctor_()
 {
     init_DrawCalls();
 }
 
-// private generated void init_DrawCalls() [instance] :342
+// private generated void init_DrawCalls() [instance] :352
 void ElementDraw::init_DrawCalls()
 {
     uStackFrame __("Fuse.Elements.Internal.ElementDraw", "init_DrawCalls()");
@@ -117,7 +117,7 @@ void ElementDraw::init_DrawCalls()
     _draw_ecf1769 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseElements_bundle::ElementDraw1f583284());
 }
 
-// public void Rectangle(Fuse.DrawContext dc, Fuse.Elements.Element element, float2 offset, float2 size, float4 color) [instance] :346
+// public void Rectangle(Fuse.DrawContext dc, Fuse.Elements.Element element, float2 offset, float2 size, float4 color) [instance] :356
 void ElementDraw::Rectangle(::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::Element* element, ::g::Uno::Float2 offset, ::g::Uno::Float2 size, ::g::Uno::Float4 color)
 {
     uStackFrame __("Fuse.Elements.Internal.ElementDraw", "Rectangle(Fuse.DrawContext,Fuse.Elements.Element,float2,float2,float4)");
@@ -136,7 +136,7 @@ void ElementDraw::Rectangle(::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::Ele
     _draw_ecf1769.DrawArrays(6);
 }
 
-// public generated ElementDraw New() [static] :342
+// public generated ElementDraw New() [static] :352
 ElementDraw* ElementDraw::New1()
 {
     ElementDraw* obj1 = (ElementDraw*)uNew(ElementDraw_typeof());
@@ -145,12 +145,12 @@ ElementDraw* ElementDraw::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/drawing/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/drawing/$.uno
+// ------------------------------------------------------------------------------------------------------
 
-// internal sealed class Scale9Rectangle :367
+// internal sealed class Scale9Rectangle :377
 // {
-// static Scale9Rectangle() :367
+// static Scale9Rectangle() :377
 static void Scale9Rectangle__cctor__fn(uType* __type)
 {
     Scale9Rectangle::Impl_ = Scale9Rectangle::New1();
@@ -186,25 +186,25 @@ uType* Scale9Rectangle_typeof()
     return type;
 }
 
-// public generated Scale9Rectangle() :367
+// public generated Scale9Rectangle() :377
 void Scale9Rectangle__ctor__fn(Scale9Rectangle* __this)
 {
     __this->ctor_();
 }
 
-// public void Draw(Fuse.DrawContext dc, Fuse.Visual element, float2 size, float2 scaleTextureSize, texture2D tex, float4 color, float4 margin) :371
+// public void Draw(Fuse.DrawContext dc, Fuse.Visual element, float2 size, float2 scaleTextureSize, texture2D tex, float4 color, float4 margin) :381
 void Scale9Rectangle__Draw_fn(Scale9Rectangle* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Visual* element, ::g::Uno::Float2* size, ::g::Uno::Float2* scaleTextureSize, ::g::Uno::Graphics::Texture2D* tex, ::g::Uno::Float4* color, ::g::Uno::Float4* margin)
 {
     __this->Draw(dc, element, *size, *scaleTextureSize, tex, *color, *margin);
 }
 
-// private generated void init_DrawCalls() :367
+// private generated void init_DrawCalls() :377
 void Scale9Rectangle__init_DrawCalls_fn(Scale9Rectangle* __this)
 {
     __this->init_DrawCalls();
 }
 
-// public generated Scale9Rectangle New() :367
+// public generated Scale9Rectangle New() :377
 void Scale9Rectangle__New1_fn(Scale9Rectangle** __retval)
 {
     *__retval = Scale9Rectangle::New1();
@@ -212,13 +212,13 @@ void Scale9Rectangle__New1_fn(Scale9Rectangle** __retval)
 
 uSStrong<Scale9Rectangle*> Scale9Rectangle::Impl_;
 
-// public generated Scale9Rectangle() [instance] :367
+// public generated Scale9Rectangle() [instance] :377
 void Scale9Rectangle::ctor_()
 {
     init_DrawCalls();
 }
 
-// public void Draw(Fuse.DrawContext dc, Fuse.Visual element, float2 size, float2 scaleTextureSize, texture2D tex, float4 color, float4 margin) [instance] :371
+// public void Draw(Fuse.DrawContext dc, Fuse.Visual element, float2 size, float2 scaleTextureSize, texture2D tex, float4 color, float4 margin) [instance] :381
 void Scale9Rectangle::Draw(::g::Fuse::DrawContext* dc, ::g::Fuse::Visual* element, ::g::Uno::Float2 size, ::g::Uno::Float2 scaleTextureSize, ::g::Uno::Graphics::Texture2D* tex, ::g::Uno::Float4 color, ::g::Uno::Float4 margin)
 {
     uStackFrame __("Fuse.Elements.Internal.Scale9Rectangle", "Draw(Fuse.DrawContext,Fuse.Visual,float2,float2,texture2D,float4,float4)");
@@ -249,7 +249,7 @@ void Scale9Rectangle::Draw(::g::Fuse::DrawContext* dc, ::g::Fuse::Visual* elemen
     _draw_42808b82.Draw(uPtr(Draw_indices_42808b82_1_2_13)->Length(), 2, Draw_xv_42808b82_1_3_2);
 }
 
-// private generated void init_DrawCalls() [instance] :367
+// private generated void init_DrawCalls() [instance] :377
 void Scale9Rectangle::init_DrawCalls()
 {
     uStackFrame __("Fuse.Elements.Internal.Scale9Rectangle", "init_DrawCalls()");
@@ -261,7 +261,7 @@ void Scale9Rectangle::init_DrawCalls()
     _draw_42808b82 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseElements_bundle::Scale9Rectangle720ad3ad());
 }
 
-// public generated Scale9Rectangle New() [static] :367
+// public generated Scale9Rectangle New() [static] :377
 Scale9Rectangle* Scale9Rectangle::New1()
 {
     Scale9Rectangle* obj1 = (Scale9Rectangle*)uNew(Scale9Rectangle_typeof());

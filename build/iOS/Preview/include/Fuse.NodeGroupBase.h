@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,12 +12,13 @@
 #include <Uno.Collections.IList-1.h>
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct NodeGroupBase;}}
+namespace g{namespace Uno{namespace Collections{struct RootableList;}}}
 namespace g{namespace Uno{namespace UX{struct Resource;}}}
 
 namespace g{
 namespace Fuse{
 
-// public abstract class NodeGroupBase :3055
+// public abstract class NodeGroupBase :3099
 // {
 ::g::Fuse::Node_type* NodeGroupBase_typeof();
 void NodeGroupBase__ctor_3_fn(NodeGroupBase* __this);
@@ -37,8 +38,8 @@ void NodeGroupBase__set_UseContent_fn(NodeGroupBase* __this, bool* value);
 struct NodeGroupBase : ::g::Fuse::Behavior
 {
     bool _contentAdded;
-    uStrong<uObject*> _nodes;
-    uStrong<uObject*> _resources;
+    uStrong< ::g::Uno::Collections::RootableList*> _nodes;
+    uStrong< ::g::Uno::Collections::RootableList*> _resources;
     bool _useContent;
 
     void ctor_3();

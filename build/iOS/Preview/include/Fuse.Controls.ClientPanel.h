@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.DockPanel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -23,9 +24,9 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial class ClientPanel :33
+// public partial sealed class ClientPanel :33
 // {
-::g::Fuse::Controls::Control_type* ClientPanel_typeof();
+::g::Fuse::Controls::Panel_type* ClientPanel_typeof();
 void ClientPanel__ctor_8_fn(ClientPanel* __this);
 void ClientPanel__InitializeUX_fn(ClientPanel* __this);
 void ClientPanel__New5_fn(ClientPanel** __retval);

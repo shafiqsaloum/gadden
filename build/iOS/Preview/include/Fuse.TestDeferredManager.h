@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace Fuse{struct TestDeferredManager;}}
 namespace g{
 namespace Fuse{
 
-// internal static class TestDeferredManager :919
+// internal static class TestDeferredManager :931
 // {
 uClassType* TestDeferredManager_typeof();
 void TestDeferredManager__get_HasPending_fn(bool* __retval);

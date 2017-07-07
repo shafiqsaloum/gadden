@@ -19,10 +19,6 @@ bool uPthreadWaitOneMutex(pthread_mutex_t* mutexHandle, int millisecondsTimeout)
     else if (millisecondsTimeout == 0)
         return pthread_mutex_trylock(mutexHandle) == 0;
 
-#ifdef __ANDROID__
-     return pthread_mutex_lock_timeout_np(mutexHandle, millisecondsTimeout) == 0;
-#else
-
     // spin-based emulation
     long long timeout = uBase::GetTicks() + millisecondsTimeout * 10000ll;
     while (pthread_mutex_trylock(mutexHandle) == EBUSY)
@@ -31,9 +27,7 @@ bool uPthreadWaitOneMutex(pthread_mutex_t* mutexHandle, int millisecondsTimeout)
         if (now >= timeout)
             return false;
 
-        // pthread_yield();
         sched_yield();
     }
     return true;
-#endif
 }

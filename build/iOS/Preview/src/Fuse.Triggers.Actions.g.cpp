@@ -113,8 +113,8 @@ namespace Fuse{
 namespace Triggers{
 namespace Actions{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/triggers/actions/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/actions/$.uno
+// ---------------------------------------------------------------------------------------------------------------
 
 // public sealed class BringIntoView :41
 // {
@@ -180,8 +180,8 @@ BringIntoView* BringIntoView::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/0.47.7/triggers/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/triggers/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class BringToFront :39
 // {
@@ -280,8 +280,8 @@ BringToFront* BringToFront::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Callback :27
 // {
@@ -406,8 +406,8 @@ Callback* Callback::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class CancelInteractions :56
 // {
@@ -501,8 +501,8 @@ CancelInteractions* CancelInteractions::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Collapse :1129
 // {
@@ -567,8 +567,8 @@ Collapse* Collapse::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class DebugAction :90
 // {
@@ -691,8 +691,8 @@ DebugAction* DebugAction::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class DebugFrame :183
 // {
@@ -776,8 +776,8 @@ DebugFrame* DebugFrame::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class DebugProperty<T> :139
 // {
@@ -924,8 +924,8 @@ DebugProperty* DebugProperty::New1(uType* __type, ::g::Uno::UX::Property1* val)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class DebugTime :170
 // {
@@ -1009,8 +1009,8 @@ DebugTime* DebugTime::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class EvaluateJS :963
 // {
@@ -1215,8 +1215,8 @@ EvaluateJS* EvaluateJS::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class GiveFocus :224
 // {
@@ -1319,8 +1319,8 @@ GiveFocus* GiveFocus::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Hide :1097
 // {
@@ -1385,8 +1385,8 @@ Hide* Hide::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract interface ICollapse :1105
 // {
@@ -1402,8 +1402,8 @@ uInterfaceType* ICollapse_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract interface IHide :1073
 // {
@@ -1419,8 +1419,8 @@ uInterfaceType* IHide_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract interface IShow :1040
 // {
@@ -1436,8 +1436,8 @@ uInterfaceType* IShow_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract interface ITaggedDebugProperty :133
 // {
@@ -1454,8 +1454,8 @@ uInterfaceType* ITaggedDebugProperty_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract interface IToggleable :870
 // {
@@ -1471,8 +1471,8 @@ uInterfaceType* IToggleable_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class JSEventArgs :868
 // {
@@ -1542,8 +1542,8 @@ JSEventArgs* JSEventArgs::New2(uString* resultJson)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public delegate void JSEventHandler(object sender, Fuse.Triggers.Actions.JSEventArgs args) :882
 uDelegateType* JSEventHandler_typeof()
@@ -1558,8 +1558,8 @@ uDelegateType* JSEventHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class LoadHtml :739
 // {
@@ -1712,8 +1712,8 @@ LoadHtml* LoadHtml::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class LoadUrl :697
 // {
@@ -1805,8 +1805,8 @@ LoadUrl* LoadUrl::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Pause :403
 // {
@@ -1873,8 +1873,8 @@ Pause* Pause::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public class Play :472
 // {
@@ -1941,8 +1941,8 @@ Play* Play::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract class PlaybackAction :300
 // {
@@ -2007,15 +2007,15 @@ void PlaybackAction::Target(uObject* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class PlayTo :540
 // {
 static void PlayTo_build(uType* type)
 {
     ::STRINGS[7] = uString::Const("Use the TimelineAction with `How=\"PlayTo\" instead.");
-    ::STRINGS[8] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno");
+    ::STRINGS[8] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno");
     ::STRINGS[9] = uString::Const(".ctor");
     ::TYPES[12] = ::g::Fuse::Triggers::IPlayback_typeof();
     type->SetFields(10,
@@ -2106,8 +2106,8 @@ PlayTo* PlayTo::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Pulse :583
 // {
@@ -2200,8 +2200,8 @@ Pulse* Pulse::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class PulseBackward :598
 // {
@@ -2293,8 +2293,8 @@ PulseBackward* PulseBackward::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class PulseForward :613
 // {
@@ -2386,15 +2386,15 @@ PulseForward* PulseForward::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class RaiseUserEvent :192
 // {
 static void RaiseUserEvent_build(uType* type)
 {
     ::STRINGS[10] = uString::Const("no UserEvent found: ");
-    ::STRINGS[11] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/0.47.7/$.uno");
+    ::STRINGS[11] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/1.0.5/$.uno");
     ::STRINGS[12] = uString::Const("Perform");
     ::TYPES[14] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Triggers::Actions::UserEventArg_typeof(), NULL);
     ::TYPES[15] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), uObject_typeof(), NULL);
@@ -2549,8 +2549,8 @@ RaiseUserEvent* RaiseUserEvent::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class ReleaseFocus :248
 // {
@@ -2612,15 +2612,15 @@ ReleaseFocus* ReleaseFocus::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class ReleasePage :273
 // {
 static void ReleasePage_build(uType* type)
 {
     ::STRINGS[13] = uString::Const("Requires a Visual and Navigator parent");
-    ::STRINGS[14] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/$.uno");
+    ::STRINGS[14] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno");
     ::STRINGS[12] = uString::Const("Perform");
     ::TYPES[1] = ::g::Fuse::Visual_typeof();
     ::TYPES[20] = ::g::Fuse::Controls::Navigator_typeof();
@@ -2711,8 +2711,8 @@ ReleasePage* ReleasePage::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Reload :673
 // {
@@ -2774,15 +2774,15 @@ Reload* Reload::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Resume :485
 // {
 static void Resume_build(uType* type)
 {
     ::STRINGS[15] = uString::Const("Use `Play` instead of `Resume`");
-    ::STRINGS[8] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno");
+    ::STRINGS[8] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno");
     ::STRINGS[9] = uString::Const(".ctor");
     type->SetFields(10);
     type->Reflection.SetFunctions(1,
@@ -2833,8 +2833,8 @@ Resume* Resume::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/0.47.7/triggers/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/triggers/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class SendToBack :84
 // {
@@ -2933,8 +2933,8 @@ SendToBack* SendToBack::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Set<T> :664
 // {
@@ -3121,8 +3121,8 @@ Set* Set::New2(uType* __type, ::g::Uno::UX::Property1* target)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Show :1065
 // {
@@ -3187,8 +3187,8 @@ Show* Show::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Stop :371
 // {
@@ -3255,8 +3255,8 @@ Stop* Stop::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class StopLoading :685
 // {
@@ -3318,15 +3318,15 @@ StopLoading* StopLoading::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class TimelineAction :811
 // {
 static void TimelineAction_build(uType* type)
 {
     ::STRINGS[17] = uString::Const("`TimelineAction` called without a `Timeline` `Target`");
-    ::STRINGS[8] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno");
+    ::STRINGS[8] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno");
     ::STRINGS[12] = uString::Const("Perform");
     type->SetFields(9,
         ::g::Fuse::Triggers::Actions::TimelineActionHow_typeof(), offsetof(::g::Fuse::Triggers::Actions::TimelineAction, _How), 0,
@@ -3516,8 +3516,8 @@ TimelineAction* TimelineAction::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public enum TimelineActionHow :784
 uEnumType* TimelineActionHow_typeof()
@@ -3539,8 +3539,8 @@ uEnumType* TimelineActionHow_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Toggle :894
 // {
@@ -3658,8 +3658,8 @@ Toggle* Toggle::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/triggers/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class TransitionLayout :343
 // {
@@ -3777,8 +3777,8 @@ TransitionLayout* TransitionLayout::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class TransitionState :759
 // {
@@ -3903,8 +3903,8 @@ TransitionState* TransitionState::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public enum TransitionStateType :751
 uEnumType* TransitionStateType_typeof()
@@ -3918,15 +3918,15 @@ uEnumType* TransitionStateType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract class TriggerAction :948
 // {
 static void TriggerAction_build(uType* type)
 {
     ::STRINGS[18] = uString::Const("Use `Trigger.When` instead of `Trigger.Direction`");
-    ::STRINGS[8] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno");
+    ::STRINGS[8] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno");
     ::STRINGS[19] = uString::Const("set_Direction");
     type->SetFields(2,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Triggers::Actions::TriggerAction, _delay), 0,
@@ -4176,8 +4176,8 @@ void TriggerAction::When(int value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/actions/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public enum TriggerWhen :924
 uEnumType* TriggerWhen_typeof()
@@ -4196,8 +4196,8 @@ uEnumType* TriggerWhen_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class UserEventArg :286
 // {
@@ -4413,8 +4413,8 @@ UserEventArg* UserEventArg::New2(uString* name)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract class WebViewNavAction :651
 // {

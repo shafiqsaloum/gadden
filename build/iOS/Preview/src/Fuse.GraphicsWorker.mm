@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.Diagnostics.h>
@@ -25,9 +25,9 @@ static uType* TYPES[6];
 namespace g{
 namespace Fuse{
 
-// public static class GraphicsWorker :1794
+// public static class GraphicsWorker :1933
 // {
-// static GraphicsWorker() :1794
+// static GraphicsWorker() :1933
 static void GraphicsWorker__cctor__fn(uType* __type)
 {
     GraphicsWorker::_exceptionQueue_ = ((::g::Uno::Threading::ConcurrentQueue*)::g::Uno::Threading::ConcurrentQueue::New1(::TYPES[0/*Uno.Threading.ConcurrentQueue<Uno.Exception>*/]));
@@ -37,7 +37,7 @@ static void GraphicsWorker_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("_exceptionQueue mismatch");
     ::STRINGS[1] = uString::Const("GraphicsWorker failed");
-    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/$.uno");
+    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno");
     ::STRINGS[3] = uString::Const("Run");
     ::TYPES[0] = ::g::Uno::Threading::ConcurrentQueue_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
     ::TYPES[1] = ::g::Uno::Exception_typeof();
@@ -70,43 +70,43 @@ uClassType* GraphicsWorker_typeof()
     return type;
 }
 
-// private static extern ObjC.Object CreateContext() :1819
+// private static extern ObjC.Object CreateContext() :1958
 void GraphicsWorker__CreateContext_fn(::g::ObjC::Object** __retval)
 {
     *__retval = GraphicsWorker::CreateContext();
 }
 
-// public static void Dispatch(Uno.Action a) :1796
+// public static void Dispatch(Uno.Action a) :1935
 void GraphicsWorker__Dispatch_fn(uDelegate* a)
 {
     GraphicsWorker::Dispatch(a);
 }
 
-// public static void DispatchException() :1855
+// public static void DispatchException() :1994
 void GraphicsWorker__DispatchException_fn()
 {
     GraphicsWorker::DispatchException();
 }
 
-// private static void OnTerminating(Fuse.Platform.ApplicationState newState) :1847
+// private static void OnTerminating(Fuse.Platform.ApplicationState newState) :1986
 void GraphicsWorker__OnTerminating_fn(int* newState)
 {
     GraphicsWorker::OnTerminating(*newState);
 }
 
-// private static void Run() :1863
+// private static void Run() :2002
 void GraphicsWorker__Run_fn()
 {
     GraphicsWorker::Run();
 }
 
-// private static extern void SetCurrentContext(ObjC.Object context) :1825
+// private static extern void SetCurrentContext(ObjC.Object context) :1964
 void GraphicsWorker__SetCurrentContext_fn(::g::ObjC::Object* context)
 {
     GraphicsWorker::SetCurrentContext(context);
 }
 
-// private static void Start() :1830
+// private static void Start() :1969
 void GraphicsWorker__Start_fn()
 {
     GraphicsWorker::Start();
@@ -118,7 +118,7 @@ uSStrong< ::g::Uno::Threading::Thread*> GraphicsWorker::_thread_;
 uSStrong< ::g::Uno::Threading::ConcurrentQueue*> GraphicsWorker::_work_;
 uSStrong< ::g::ObjC::Object*> GraphicsWorker::_workerContext_;
 
-// private static extern ObjC.Object CreateContext() [static] :1819
+// private static extern ObjC.Object CreateContext() [static] :1958
 ::g::ObjC::Object* GraphicsWorker::CreateContext()
 {
     GraphicsWorker_typeof()->Init();
@@ -133,7 +133,7 @@ uSStrong< ::g::ObjC::Object*> GraphicsWorker::_workerContext_;
     
 }
 
-// public static void Dispatch(Uno.Action a) [static] :1796
+// public static void Dispatch(Uno.Action a) [static] :1935
 void GraphicsWorker::Dispatch(uDelegate* a)
 {
     uStackFrame __("Fuse.GraphicsWorker", "Dispatch(Uno.Action)");
@@ -142,7 +142,7 @@ void GraphicsWorker::Dispatch(uDelegate* a)
     ::g::Uno::Threading::ConcurrentQueue__Enqueue_fn(uPtr(GraphicsWorker::_work()), a);
 }
 
-// public static void DispatchException() [static] :1855
+// public static void DispatchException() [static] :1994
 void GraphicsWorker::DispatchException()
 {
     uStackFrame __("Fuse.GraphicsWorker", "DispatchException()");
@@ -156,7 +156,7 @@ void GraphicsWorker::DispatchException()
     U_THROW(::g::Fuse::WrapException::New4(e));
 }
 
-// private static void OnTerminating(Fuse.Platform.ApplicationState newState) [static] :1847
+// private static void OnTerminating(Fuse.Platform.ApplicationState newState) [static] :1986
 void GraphicsWorker::OnTerminating(int newState)
 {
     uStackFrame __("Fuse.GraphicsWorker", "OnTerminating(Fuse.Platform.ApplicationState)");
@@ -165,7 +165,7 @@ void GraphicsWorker::OnTerminating(int newState)
     uPtr(GraphicsWorker::_thread())->Join();
 }
 
-// private static void Run() [static] :1863
+// private static void Run() [static] :2002
 void GraphicsWorker::Run()
 {
     uStackFrame __("Fuse.GraphicsWorker", "Run()");
@@ -187,7 +187,7 @@ void GraphicsWorker::Run()
             catch (const uThrowable& __t)
             {
                 ::g::Uno::Exception* e = __t.Exception;
-                ::g::Fuse::Diagnostics::UnknownException(::STRINGS[1/*"GraphicsWor...*/], e, a, ::STRINGS[2/*"/Users/eric...*/], 1884, ::STRINGS[3/*"Run"*/]);
+                ::g::Fuse::Diagnostics::UnknownException(::STRINGS[1/*"GraphicsWor...*/], e, a, ::STRINGS[2/*"/Users/eric...*/], 2023, ::STRINGS[3/*"Run"*/]);
                 ::g::Uno::Threading::ConcurrentQueue__Enqueue_fn(uPtr(GraphicsWorker::_exceptionQueue()), e);
                 ::g::Fuse::UpdateManager::PostAction(uDelegate::New(::TYPES[2/*Uno.Action*/], (void*)GraphicsWorker__DispatchException_fn));
             }
@@ -201,7 +201,7 @@ void GraphicsWorker::Run()
     GraphicsWorker::_workerContext() = NULL;
 }
 
-// private static extern void SetCurrentContext(ObjC.Object context) [static] :1825
+// private static extern void SetCurrentContext(ObjC.Object context) [static] :1964
 void GraphicsWorker::SetCurrentContext(::g::ObjC::Object* context)
 {
     GraphicsWorker_typeof()->Init();
@@ -216,7 +216,7 @@ void GraphicsWorker::SetCurrentContext(::g::ObjC::Object* context)
     
 }
 
-// private static void Start() [static] :1830
+// private static void Start() [static] :1969
 void GraphicsWorker::Start()
 {
     uStackFrame __("Fuse.GraphicsWorker", "Start()");

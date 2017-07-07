@@ -14,8 +14,8 @@ namespace g{
 namespace Uno{
 namespace Compiler{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class CallerFilePathAttribute :9
 // {
@@ -67,8 +67,8 @@ CallerFilePathAttribute* CallerFilePathAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class CallerLineNumberAttribute :23
 // {
@@ -120,8 +120,8 @@ CallerLineNumberAttribute* CallerLineNumberAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class CallerMemberNameAttribute :37
 // {
@@ -173,8 +173,8 @@ CallerMemberNameAttribute* CallerMemberNameAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class CallerPackageNameAttribute :42
 // {
@@ -226,8 +226,8 @@ CallerPackageNameAttribute* CallerPackageNameAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class HideFromCodeCompleterAttribute :69
 // {
@@ -279,8 +279,8 @@ HideFromCodeCompleterAttribute* HideFromCodeCompleterAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class IgnoreMainClassAttribute :80
 // {
@@ -332,8 +332,8 @@ IgnoreMainClassAttribute* IgnoreMainClassAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class MainClassAttribute :91
 // {
@@ -385,8 +385,8 @@ MainClassAttribute* MainClassAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/compiler/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class UxGeneratedAttribute :102
 // {

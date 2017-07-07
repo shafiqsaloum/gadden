@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -15,7 +15,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// public abstract class TransformAnimator<TransformType> :3537
+// public abstract class TransformAnimator<TransformType> :3499
 // {
 struct TransformAnimator_type : ::g::Fuse::Animations::Animator_type
 {

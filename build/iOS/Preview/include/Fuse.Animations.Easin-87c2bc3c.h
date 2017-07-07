@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal sealed class Easing.ExponentialOutImpl :620
+// internal sealed class Easing.ExponentialOutImpl :656
 // {
 ::g::Fuse::Animations::Easing_type* Easing__ExponentialOutImpl_typeof();
 void Easing__ExponentialOutImpl__ctor_1_fn(Easing__ExponentialOutImpl* __this);

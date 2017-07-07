@@ -19,8 +19,8 @@ namespace g{
 namespace Experimental{
 namespace Cache{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/0.47.7/$.uno
-// ---------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // public delegate void CacheLoaded(Experimental.Cache.ICacheReader record) :678
 uDelegateType* CacheLoaded_typeof()
@@ -34,8 +34,8 @@ uDelegateType* CacheLoaded_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/0.47.7/$.uno
-// ---------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // public abstract interface ICache :680
 // {
@@ -53,8 +53,8 @@ uInterfaceType* ICache_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/0.47.7/$.uno
-// ---------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // public abstract interface ICacheReader :669
 // {
@@ -72,8 +72,8 @@ uInterfaceType* ICacheReader_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/0.47.7/$.uno
-// ---------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // public abstract interface ICacheWriter :660
 // {
@@ -91,8 +91,8 @@ uInterfaceType* ICacheWriter_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/0.47.7/$.uno
-// ---------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // internal sealed class ProxyStream :121
 // {

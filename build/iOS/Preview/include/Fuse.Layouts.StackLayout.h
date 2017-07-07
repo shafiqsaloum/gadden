@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/0.47.7/layouts/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Layouts{
 
-// public sealed class StackLayout :2162
+// public sealed class StackLayout :2139
 // {
 ::g::Fuse::Layouts::Layout_type* StackLayout_typeof();
 void StackLayout__ctor_2_fn(StackLayout* __this);

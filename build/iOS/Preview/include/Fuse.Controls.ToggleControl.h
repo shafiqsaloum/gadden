@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/togglecontrols/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/togglecontrols/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -6,6 +6,7 @@
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Native.-ba5282a0.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -30,11 +31,11 @@ namespace Controls{
 
 // public class ToggleControl :66
 // {
-struct ToggleControl_type : ::g::Fuse::Controls::Control_type
+struct ToggleControl_type : ::g::Fuse::Controls::Panel_type
 {
-    ::g::Fuse::Triggers::IValue interface15;
-    ::g::Fuse::Controls::Native::IToggleViewHost interface16;
-    ::g::Fuse::Triggers::Actions::IToggleable interface17;
+    ::g::Fuse::Triggers::IValue interface16;
+    ::g::Fuse::Controls::Native::IToggleViewHost interface17;
+    ::g::Fuse::Triggers::Actions::IToggleable interface18;
 };
 
 ToggleControl_type* ToggleControl_typeof();

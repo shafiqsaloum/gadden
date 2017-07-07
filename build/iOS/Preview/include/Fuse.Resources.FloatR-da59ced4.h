@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Resources{
 
-// internal sealed class FloatResourceConverter :3446
+// internal sealed class FloatResourceConverter :3508
 // {
 ::g::Fuse::Resources::NumericResourceConverter_type* FloatResourceConverter_typeof();
 void FloatResourceConverter__ctor_1_fn(FloatResourceConverter* __this);

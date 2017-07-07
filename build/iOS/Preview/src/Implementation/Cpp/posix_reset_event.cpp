@@ -1,4 +1,4 @@
-#include <Implementation/CPP/posix_reset_event.h>
+#include <Implementation/Cpp/posix_reset_event.h>
 #include <errno.h>
 #include <sys/time.h>
 #include <stdint.h>

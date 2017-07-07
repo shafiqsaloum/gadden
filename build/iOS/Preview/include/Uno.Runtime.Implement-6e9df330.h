@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/shaderbackends/opengl/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/shaderbackends/opengl/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

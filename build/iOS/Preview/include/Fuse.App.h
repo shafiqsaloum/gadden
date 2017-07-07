@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -15,7 +15,7 @@ namespace g{namespace Uno{namespace Platform{struct TimerEventArgs;}}}
 namespace g{
 namespace Fuse{
 
-// public extern class App :108
+// public extern class App :113
 // {
 ::g::Fuse::AppBase_type* App_typeof();
 void App__ctor_3_fn(App* __this);

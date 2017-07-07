@@ -104,8 +104,8 @@ namespace g{
 namespace Fuse{
 namespace Resources{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // private sealed class HttpImageSourceImpl.BackgroundLoad :436
 // {
@@ -235,8 +235,8 @@ HttpImageSourceImpl__BackgroundLoad* HttpImageSourceImpl__BackgroundLoad::New1(:
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // private sealed class FileImageSourceImpl.BackgroundLoad :236
 // {
@@ -365,8 +365,8 @@ FileImageSourceImpl__BackgroundLoad* FileImageSourceImpl__BackgroundLoad::New1(:
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // protected enum LoadingImageSource.CleanupReason :689
 uEnumType* LoadingImageSource__CleanupReason_typeof()
@@ -382,8 +382,8 @@ uEnumType* LoadingImageSource__CleanupReason_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/resources/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/resources/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal static class DisposalManager :9
 // {
@@ -580,8 +580,8 @@ void DisposalManager::VerifyAttach()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/resources/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/resources/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal abstract class DisposalPolicy :124
 // {
@@ -614,8 +614,8 @@ void DisposalPolicy::ctor_()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/resources/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/resources/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public enum DisposalRequest :203
 uEnumType* DisposalRequest_typeof()
@@ -631,10 +631,10 @@ uEnumType* DisposalRequest_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// internal sealed class DoubleResourceConverter :3450
+// internal sealed class DoubleResourceConverter :3512
 // {
 static void DoubleResourceConverter_build(uType* type)
 {
@@ -662,32 +662,32 @@ static void DoubleResourceConverter_build(uType* type)
     return type;
 }
 
-// public generated DoubleResourceConverter() :3450
+// public generated DoubleResourceConverter() :3512
 void DoubleResourceConverter__ctor_1_fn(DoubleResourceConverter* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Convert(object o) :3452
+// public override sealed double Convert(object o) :3514
 void DoubleResourceConverter__Convert_fn(DoubleResourceConverter* __this, uObject* o, double* __retval)
 {
     uStackFrame __("Fuse.Resources.DoubleResourceConverter", "Convert(object)");
     return *__retval = __this->InternConvert(o), void();
 }
 
-// public generated DoubleResourceConverter New() :3450
+// public generated DoubleResourceConverter New() :3512
 void DoubleResourceConverter__New1_fn(DoubleResourceConverter** __retval)
 {
     *__retval = DoubleResourceConverter::New1();
 }
 
-// public generated DoubleResourceConverter() [instance] :3450
+// public generated DoubleResourceConverter() [instance] :3512
 void DoubleResourceConverter::ctor_1()
 {
     ctor_();
 }
 
-// public generated DoubleResourceConverter New() [static] :3450
+// public generated DoubleResourceConverter New() [static] :3512
 DoubleResourceConverter* DoubleResourceConverter::New1()
 {
     DoubleResourceConverter* obj1 = (DoubleResourceConverter*)uNew(DoubleResourceConverter_typeof());
@@ -696,8 +696,8 @@ DoubleResourceConverter* DoubleResourceConverter::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/resources/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/resources/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class ExpirationDisposalPolicy :131
 // {
@@ -809,8 +809,8 @@ ExpirationDisposalPolicy* ExpirationDisposalPolicy::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public sealed class FileImageSource :69
 // {
@@ -1058,8 +1058,8 @@ FileImageSource* FileImageSource::New3(::g::Uno::UX::FileSource* file)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal static class FileImageSourceCache :13
 // {
@@ -1124,8 +1124,8 @@ uSStrong< ::g::Uno::Collections::Dictionary*> FileImageSourceCache::_cache_;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal sealed class FileImageSourceImpl :143
 // {
@@ -1307,8 +1307,8 @@ FileImageSourceImpl* FileImageSourceImpl::New2(::g::Uno::UX::FileSource* file)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/resources/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/resources/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class FileResource :181
 // {
@@ -1372,10 +1372,10 @@ FileResource* FileResource::New1(::g::Uno::UX::FileSource* file)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// internal sealed class FloatResourceConverter :3446
+// internal sealed class FloatResourceConverter :3508
 // {
 static void FloatResourceConverter_build(uType* type)
 {
@@ -1403,32 +1403,32 @@ static void FloatResourceConverter_build(uType* type)
     return type;
 }
 
-// public generated FloatResourceConverter() :3446
+// public generated FloatResourceConverter() :3508
 void FloatResourceConverter__ctor_1_fn(FloatResourceConverter* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed float Convert(object o) :3448
+// public override sealed float Convert(object o) :3510
 void FloatResourceConverter__Convert_fn(FloatResourceConverter* __this, uObject* o, float* __retval)
 {
     uStackFrame __("Fuse.Resources.FloatResourceConverter", "Convert(object)");
     return *__retval = (float)__this->InternConvert(o), void();
 }
 
-// public generated FloatResourceConverter New() :3446
+// public generated FloatResourceConverter New() :3508
 void FloatResourceConverter__New1_fn(FloatResourceConverter** __retval)
 {
     *__retval = FloatResourceConverter::New1();
 }
 
-// public generated FloatResourceConverter() [instance] :3446
+// public generated FloatResourceConverter() [instance] :3508
 void FloatResourceConverter::ctor_1()
 {
     ctor_();
 }
 
-// public generated FloatResourceConverter New() [static] :3446
+// public generated FloatResourceConverter New() [static] :3508
 FloatResourceConverter* FloatResourceConverter::New1()
 {
     FloatResourceConverter* obj1 = (FloatResourceConverter*)uNew(FloatResourceConverter_typeof());
@@ -1437,10 +1437,10 @@ FloatResourceConverter* FloatResourceConverter::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// internal sealed class GenericResourceConverter<T> :3459
+// internal sealed class GenericResourceConverter<T> :3521
 // {
 static void GenericResourceConverter_build(uType* type)
 {
@@ -1469,37 +1469,37 @@ GenericResourceConverter_type* GenericResourceConverter_typeof()
     return type;
 }
 
-// public generated GenericResourceConverter() :3459
+// public generated GenericResourceConverter() :3521
 void GenericResourceConverter__ctor__fn(GenericResourceConverter* __this)
 {
     __this->ctor_();
 }
 
-// public bool Accept(object o) :3461
+// public bool Accept(object o) :3523
 void GenericResourceConverter__Accept_fn(GenericResourceConverter* __this, uObject* o, bool* __retval)
 {
     *__retval = __this->Accept(o);
 }
 
-// public T Convert(object o) :3466
+// public T Convert(object o) :3528
 void GenericResourceConverter__Convert_fn(GenericResourceConverter* __this, uObject* o, uTRef __retval)
 {
     uStackFrame __("Fuse.Resources.GenericResourceConverter`1", "Convert(object)");
     return __retval.Store(__this->__type->T(0), uUnboxAny(__this->__type->T(0), o)), void();
 }
 
-// public generated GenericResourceConverter New() :3459
+// public generated GenericResourceConverter New() :3521
 void GenericResourceConverter__New1_fn(uType* __type, GenericResourceConverter** __retval)
 {
     *__retval = GenericResourceConverter::New1(__type);
 }
 
-// public generated GenericResourceConverter() [instance] :3459
+// public generated GenericResourceConverter() [instance] :3521
 void GenericResourceConverter::ctor_()
 {
 }
 
-// public bool Accept(object o) [instance] :3461
+// public bool Accept(object o) [instance] :3523
 bool GenericResourceConverter::Accept(uObject* o)
 {
     uType* __types[] = {
@@ -1508,7 +1508,7 @@ bool GenericResourceConverter::Accept(uObject* o)
     return uIs(o, __types[0]);
 }
 
-// public generated GenericResourceConverter New() [static] :3459
+// public generated GenericResourceConverter New() [static] :3521
 GenericResourceConverter* GenericResourceConverter::New1(uType* __type)
 {
     GenericResourceConverter* obj1 = (GenericResourceConverter*)uNew(__type);
@@ -1517,8 +1517,8 @@ GenericResourceConverter* GenericResourceConverter::New1(uType* __type)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public sealed class HttpImageSource :314
 // {
@@ -1765,8 +1765,8 @@ HttpImageSource* HttpImageSource::New3(uString* url)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal static class HttpImageSourceCache :361
 // {
@@ -1831,8 +1831,8 @@ uSStrong< ::g::Uno::Collections::Dictionary*> HttpImageSourceCache::_cache_;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal sealed class HttpImageSourceImpl :381
 // {
@@ -2021,8 +2021,8 @@ HttpImageSourceImpl* HttpImageSourceImpl::New2(uString* url)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/resources/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/resources/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal abstract interface IDeferredDisposable :210
 // {
@@ -2036,8 +2036,8 @@ uInterfaceType* IDeferredDisposable_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public abstract class ImageSource :591
 // {
@@ -2045,7 +2045,7 @@ static void ImageSource_build(uType* type)
 {
     ::STRINGS[11] = uString::Const("ImageSource error: '");
     ::STRINGS[12] = uString::Const("'");
-    ::STRINGS[13] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno");
+    ::STRINGS[13] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno");
     ::STRINGS[14] = uString::Const("OnError");
     ::TYPES[0] = ::g::Uno::Action_typeof();
     ::TYPES[18] = ::g::Uno::EventHandler_typeof();
@@ -2302,8 +2302,8 @@ void ImageSource::Unpin()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal sealed class ImageSourceChangedArgs :556
 // {
@@ -2369,8 +2369,8 @@ ImageSourceChangedArgs* ImageSourceChangedArgs::New2(::g::Fuse::Resources::Image
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public sealed class ImageSourceErrorArgs :530
 // {
@@ -2454,8 +2454,8 @@ ImageSourceErrorArgs* ImageSourceErrorArgs::New2(::g::Fuse::Resources::ImageSour
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public delegate void ImageSourceErrorHandler(object sender, Fuse.Resources.ImageSourceErrorArgs args) :554
 uDelegateType* ImageSourceErrorHandler_typeof()
@@ -2470,8 +2470,8 @@ uDelegateType* ImageSourceErrorHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public enum ImageSourceState :518
 uEnumType* ImageSourceState_typeof()
@@ -2488,8 +2488,8 @@ uEnumType* ImageSourceState_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/resources/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/resources/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal abstract interface IMemoryResource :353
 // {
@@ -2503,10 +2503,10 @@ uInterfaceType* IMemoryResource_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// internal sealed class IntResourceConverter :3454
+// internal sealed class IntResourceConverter :3516
 // {
 static void IntResourceConverter_build(uType* type)
 {
@@ -2534,32 +2534,32 @@ static void IntResourceConverter_build(uType* type)
     return type;
 }
 
-// public generated IntResourceConverter() :3454
+// public generated IntResourceConverter() :3516
 void IntResourceConverter__ctor_1_fn(IntResourceConverter* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed int Convert(object o) :3456
+// public override sealed int Convert(object o) :3518
 void IntResourceConverter__Convert_fn(IntResourceConverter* __this, uObject* o, int* __retval)
 {
     uStackFrame __("Fuse.Resources.IntResourceConverter", "Convert(object)");
     return *__retval = (int)__this->InternConvert(o), void();
 }
 
-// public generated IntResourceConverter New() :3454
+// public generated IntResourceConverter New() :3516
 void IntResourceConverter__New1_fn(IntResourceConverter** __retval)
 {
     *__retval = IntResourceConverter::New1();
 }
 
-// public generated IntResourceConverter() [instance] :3454
+// public generated IntResourceConverter() [instance] :3516
 void IntResourceConverter::ctor_1()
 {
     ctor_();
 }
 
-// public generated IntResourceConverter New() [static] :3454
+// public generated IntResourceConverter New() [static] :3516
 IntResourceConverter* IntResourceConverter::New1()
 {
     IntResourceConverter* obj1 = (IntResourceConverter*)uNew(IntResourceConverter_typeof());
@@ -2568,10 +2568,10 @@ IntResourceConverter* IntResourceConverter::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// internal abstract interface IResourceConverter<T> :3421
+// internal abstract interface IResourceConverter<T> :3483
 // {
 uInterfaceType* IResourceConverter_typeof()
 {
@@ -2583,8 +2583,8 @@ uInterfaceType* IResourceConverter_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/resources/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/resources/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal abstract interface ISoftDisposable :271
 // {
@@ -2598,8 +2598,8 @@ uInterfaceType* ISoftDisposable_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal abstract class LoadingImageSource :687
 // {
@@ -2880,8 +2880,8 @@ void LoadingImageSource::SetTexture(::g::Uno::Graphics::Texture2D* texture)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/resources/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/resources/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class MemoryPolicy :288
 // {
@@ -3120,8 +3120,8 @@ MemoryPolicy* MemoryPolicy::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public sealed class MultiDensityImageSource :882
 // {
@@ -3374,10 +3374,10 @@ MultiDensityImageSource* MultiDensityImageSource::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// internal abstract class NumericResourceConverter<T> :3427
+// internal abstract class NumericResourceConverter<T> :3489
 // {
 static void NumericResourceConverter_build(uType* type)
 {
@@ -3404,37 +3404,37 @@ NumericResourceConverter_type* NumericResourceConverter_typeof()
     return type;
 }
 
-// protected generated NumericResourceConverter() :3427
+// protected generated NumericResourceConverter() :3489
 void NumericResourceConverter__ctor__fn(NumericResourceConverter* __this)
 {
     __this->ctor_();
 }
 
-// public bool Accept(object o) :3429
+// public bool Accept(object o) :3491
 void NumericResourceConverter__Accept_fn(NumericResourceConverter* __this, uObject* o, bool* __retval)
 {
     *__retval = __this->Accept(o);
 }
 
-// protected double InternConvert(object o) :3434
+// protected double InternConvert(object o) :3496
 void NumericResourceConverter__InternConvert_fn(NumericResourceConverter* __this, uObject* o, double* __retval)
 {
     *__retval = __this->InternConvert(o);
 }
 
-// protected generated NumericResourceConverter() [instance] :3427
+// protected generated NumericResourceConverter() [instance] :3489
 void NumericResourceConverter::ctor_()
 {
 }
 
-// public bool Accept(object o) [instance] :3429
+// public bool Accept(object o) [instance] :3491
 bool NumericResourceConverter::Accept(uObject* o)
 {
     bool q = (uIs(o, ::TYPES[25/*float*/]) || uIs(o, ::TYPES[26/*int*/])) || uIs(o, ::TYPES[27/*double*/]);
     return q;
 }
 
-// protected double InternConvert(object o) [instance] :3434
+// protected double InternConvert(object o) [instance] :3496
 double NumericResourceConverter::InternConvert(uObject* o)
 {
     uStackFrame __("Fuse.Resources.NumericResourceConverter`1", "InternConvert(object)");
@@ -3452,8 +3452,8 @@ double NumericResourceConverter::InternConvert(uObject* o)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/resources/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/resources/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal abstract class PolicyDeferredDisposable :217
 // {
@@ -3539,8 +3539,8 @@ void PolicyDeferredDisposable::MarkUsed()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal sealed class ProxyImageSource :1029
 // {
@@ -3875,10 +3875,10 @@ ProxyImageSource* ProxyImageSource::New1(::g::Fuse::Resources::ImageSource* oute
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// public sealed class ResourceBinding<T> :3529
+// public sealed class ResourceBinding<T> :3591
 // {
 static void ResourceBinding_build(uType* type)
 {
@@ -3920,37 +3920,37 @@ static void ResourceBinding_build(uType* type)
     return type;
 }
 
-// public ResourceBinding(Uno.UX.Property<T> target, string key) :3538
+// public ResourceBinding(Uno.UX.Property<T> target, string key) :3600
 void ResourceBinding__ctor_1_fn(ResourceBinding* __this, ::g::Uno::UX::Property1* target, uString* key)
 {
     __this->ctor_1(target, key);
 }
 
-// public generated string get_Key() :3535
+// public generated string get_Key() :3597
 void ResourceBinding__get_Key_fn(ResourceBinding* __this, uString** __retval)
 {
     *__retval = __this->Key();
 }
 
-// private generated void set_Key(string value) :3535
+// private generated void set_Key(string value) :3597
 void ResourceBinding__set_Key_fn(ResourceBinding* __this, uString* value)
 {
     __this->Key(value);
 }
 
-// public ResourceBinding New(Uno.UX.Property<T> target, string key) :3538
+// public ResourceBinding New(Uno.UX.Property<T> target, string key) :3600
 void ResourceBinding__New1_fn(uType* __type, ::g::Uno::UX::Property1* target, uString* key, ResourceBinding** __retval)
 {
     *__retval = ResourceBinding::New1(__type, target, key);
 }
 
-// private void OnChanged() :3559
+// private void OnChanged() :3621
 void ResourceBinding__OnChanged_fn(ResourceBinding* __this)
 {
     __this->OnChanged();
 }
 
-// protected override sealed void OnRooted() :3547
+// protected override sealed void OnRooted() :3609
 void ResourceBinding__OnRooted_fn(ResourceBinding* __this)
 {
     uType* __types[] = {
@@ -3962,26 +3962,26 @@ void ResourceBinding__OnRooted_fn(ResourceBinding* __this)
     __this->OnChanged();
 }
 
-// protected override sealed void OnUnrooted() :3554
+// protected override sealed void OnUnrooted() :3616
 void ResourceBinding__OnUnrooted_fn(ResourceBinding* __this)
 {
     uStackFrame __("Fuse.Resources.ResourceBinding`1", "OnUnrooted()");
     ::g::Fuse::Resources::ResourceRegistry::RemoveResourceChangedHandler(__this->Key(), uDelegate::New(::TYPES[0/*Uno.Action*/], (void*)ResourceBinding__OnChanged_fn, __this));
 }
 
-// public generated Uno.UX.Property<T> get_Target() :3532
+// public generated Uno.UX.Property<T> get_Target() :3594
 void ResourceBinding__get_Target_fn(ResourceBinding* __this, ::g::Uno::UX::Property1** __retval)
 {
     *__retval = __this->Target();
 }
 
-// private generated void set_Target(Uno.UX.Property<T> value) :3532
+// private generated void set_Target(Uno.UX.Property<T> value) :3594
 void ResourceBinding__set_Target_fn(ResourceBinding* __this, ::g::Uno::UX::Property1* value)
 {
     __this->Target(value);
 }
 
-// public ResourceBinding(Uno.UX.Property<T> target, string key) [instance] :3538
+// public ResourceBinding(Uno.UX.Property<T> target, string key) [instance] :3600
 void ResourceBinding::ctor_1(::g::Uno::UX::Property1* target, uString* key)
 {
     uStackFrame __("Fuse.Resources.ResourceBinding`1", ".ctor(Uno.UX.Property<T>,string)");
@@ -3994,19 +3994,19 @@ void ResourceBinding::ctor_1(::g::Uno::UX::Property1* target, uString* key)
     Key(key);
 }
 
-// public generated string get_Key() [instance] :3535
+// public generated string get_Key() [instance] :3597
 uString* ResourceBinding::Key()
 {
     return _Key;
 }
 
-// private generated void set_Key(string value) [instance] :3535
+// private generated void set_Key(string value) [instance] :3597
 void ResourceBinding::Key(uString* value)
 {
     _Key = value;
 }
 
-// private void OnChanged() [instance] :3559
+// private void OnChanged() [instance] :3621
 void ResourceBinding::OnChanged()
 {
     uType* __types[] = {
@@ -4021,19 +4021,19 @@ void ResourceBinding::OnChanged()
         ::g::Uno::UX::Property1__Set_fn(uPtr(Target()), (::g::Fuse::Resources::IResourceConverter::Convert_ex(uInterface(uPtr(_converter), __types[1]), resource, &ret2), ret2), NULL);
 }
 
-// public generated Uno.UX.Property<T> get_Target() [instance] :3532
+// public generated Uno.UX.Property<T> get_Target() [instance] :3594
 ::g::Uno::UX::Property1* ResourceBinding::Target()
 {
     return _Target;
 }
 
-// private generated void set_Target(Uno.UX.Property<T> value) [instance] :3532
+// private generated void set_Target(Uno.UX.Property<T> value) [instance] :3594
 void ResourceBinding::Target(::g::Uno::UX::Property1* value)
 {
     _Target = value;
 }
 
-// public ResourceBinding New(Uno.UX.Property<T> target, string key) [static] :3538
+// public ResourceBinding New(Uno.UX.Property<T> target, string key) [static] :3600
 ResourceBinding* ResourceBinding::New1(uType* __type, ::g::Uno::UX::Property1* target, uString* key)
 {
     ResourceBinding* obj1 = (ResourceBinding*)uNew(__type);
@@ -4042,10 +4042,10 @@ ResourceBinding* ResourceBinding::New1(uType* __type, ::g::Uno::UX::Property1* t
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// public sealed class ResourceBool :3642
+// public sealed class ResourceBool :3704
 // {
 static void ResourceBool_build(uType* type)
 {
@@ -4094,25 +4094,25 @@ static void ResourceBool_build(uType* type)
     return type;
 }
 
-// public generated ResourceBool() :3642
+// public generated ResourceBool() :3704
 void ResourceBool__ctor_4_fn(ResourceBool* __this)
 {
     __this->ctor_4();
 }
 
-// public generated ResourceBool New() :3642
+// public generated ResourceBool New() :3704
 void ResourceBool__New2_fn(ResourceBool** __retval)
 {
     *__retval = ResourceBool::New2();
 }
 
-// public generated ResourceBool() [instance] :3642
+// public generated ResourceBool() [instance] :3704
 void ResourceBool::ctor_4()
 {
     ctor_3();
 }
 
-// public generated ResourceBool New() [static] :3642
+// public generated ResourceBool New() [static] :3704
 ResourceBool* ResourceBool::New2()
 {
     ResourceBool* obj1 = (ResourceBool*)uNew(ResourceBool_typeof());
@@ -4121,12 +4121,12 @@ ResourceBool* ResourceBool::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// internal static class ResourceConverters :3476
+// internal static class ResourceConverters :3538
 // {
-// static ResourceConverters() :3476
+// static ResourceConverters() :3538
 static void ResourceConverters__cctor__fn(uType* __type)
 {
     ResourceConverters::_converters_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[33/*Uno.Collections.Dictionary<Uno.Type, object>*/]));
@@ -4159,7 +4159,7 @@ uClassType* ResourceConverters_typeof()
     return type;
 }
 
-// public static Fuse.Resources.IResourceConverter<T> Get<T>() :3480
+// public static Fuse.Resources.IResourceConverter<T> Get<T>() :3542
 void ResourceConverters__Get_fn(uType* __type, uObject** __retval)
 {
     *__retval = ResourceConverters::Get(__type);
@@ -4167,7 +4167,7 @@ void ResourceConverters__Get_fn(uType* __type, uObject** __retval)
 
 uSStrong< ::g::Uno::Collections::Dictionary*> ResourceConverters::_converters_;
 
-// public static Fuse.Resources.IResourceConverter<T> Get<T>() [static] :3480
+// public static Fuse.Resources.IResourceConverter<T> Get<T>() [static] :3542
 uObject* ResourceConverters::Get(uType* __type)
 {
     uType* __types[] = {
@@ -4196,10 +4196,10 @@ uObject* ResourceConverters::Get(uType* __type)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// public sealed class ResourceFloat :3643
+// public sealed class ResourceFloat :3705
 // {
 static void ResourceFloat_build(uType* type)
 {
@@ -4248,25 +4248,25 @@ static void ResourceFloat_build(uType* type)
     return type;
 }
 
-// public generated ResourceFloat() :3643
+// public generated ResourceFloat() :3705
 void ResourceFloat__ctor_4_fn(ResourceFloat* __this)
 {
     __this->ctor_4();
 }
 
-// public generated ResourceFloat New() :3643
+// public generated ResourceFloat New() :3705
 void ResourceFloat__New2_fn(ResourceFloat** __retval)
 {
     *__retval = ResourceFloat::New2();
 }
 
-// public generated ResourceFloat() [instance] :3643
+// public generated ResourceFloat() [instance] :3705
 void ResourceFloat::ctor_4()
 {
     ctor_3();
 }
 
-// public generated ResourceFloat New() [static] :3643
+// public generated ResourceFloat New() [static] :3705
 ResourceFloat* ResourceFloat::New2()
 {
     ResourceFloat* obj1 = (ResourceFloat*)uNew(ResourceFloat_typeof());
@@ -4275,10 +4275,10 @@ ResourceFloat* ResourceFloat::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// public sealed class ResourceFloat2 :3644
+// public sealed class ResourceFloat2 :3706
 // {
 static void ResourceFloat2_build(uType* type)
 {
@@ -4327,25 +4327,25 @@ static void ResourceFloat2_build(uType* type)
     return type;
 }
 
-// public generated ResourceFloat2() :3644
+// public generated ResourceFloat2() :3706
 void ResourceFloat2__ctor_4_fn(ResourceFloat2* __this)
 {
     __this->ctor_4();
 }
 
-// public generated ResourceFloat2 New() :3644
+// public generated ResourceFloat2 New() :3706
 void ResourceFloat2__New2_fn(ResourceFloat2** __retval)
 {
     *__retval = ResourceFloat2::New2();
 }
 
-// public generated ResourceFloat2() [instance] :3644
+// public generated ResourceFloat2() [instance] :3706
 void ResourceFloat2::ctor_4()
 {
     ctor_3();
 }
 
-// public generated ResourceFloat2 New() [static] :3644
+// public generated ResourceFloat2 New() [static] :3706
 ResourceFloat2* ResourceFloat2::New2()
 {
     ResourceFloat2* obj1 = (ResourceFloat2*)uNew(ResourceFloat2_typeof());
@@ -4354,10 +4354,10 @@ ResourceFloat2* ResourceFloat2::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// public sealed class ResourceFloat3 :3645
+// public sealed class ResourceFloat3 :3707
 // {
 static void ResourceFloat3_build(uType* type)
 {
@@ -4406,25 +4406,25 @@ static void ResourceFloat3_build(uType* type)
     return type;
 }
 
-// public generated ResourceFloat3() :3645
+// public generated ResourceFloat3() :3707
 void ResourceFloat3__ctor_4_fn(ResourceFloat3* __this)
 {
     __this->ctor_4();
 }
 
-// public generated ResourceFloat3 New() :3645
+// public generated ResourceFloat3 New() :3707
 void ResourceFloat3__New2_fn(ResourceFloat3** __retval)
 {
     *__retval = ResourceFloat3::New2();
 }
 
-// public generated ResourceFloat3() [instance] :3645
+// public generated ResourceFloat3() [instance] :3707
 void ResourceFloat3::ctor_4()
 {
     ctor_3();
 }
 
-// public generated ResourceFloat3 New() [static] :3645
+// public generated ResourceFloat3 New() [static] :3707
 ResourceFloat3* ResourceFloat3::New2()
 {
     ResourceFloat3* obj1 = (ResourceFloat3*)uNew(ResourceFloat3_typeof());
@@ -4433,10 +4433,10 @@ ResourceFloat3* ResourceFloat3::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// public sealed class ResourceFloat4 :3646
+// public sealed class ResourceFloat4 :3708
 // {
 static void ResourceFloat4_build(uType* type)
 {
@@ -4485,25 +4485,25 @@ static void ResourceFloat4_build(uType* type)
     return type;
 }
 
-// public generated ResourceFloat4() :3646
+// public generated ResourceFloat4() :3708
 void ResourceFloat4__ctor_4_fn(ResourceFloat4* __this)
 {
     __this->ctor_4();
 }
 
-// public generated ResourceFloat4 New() :3646
+// public generated ResourceFloat4 New() :3708
 void ResourceFloat4__New2_fn(ResourceFloat4** __retval)
 {
     *__retval = ResourceFloat4::New2();
 }
 
-// public generated ResourceFloat4() [instance] :3646
+// public generated ResourceFloat4() [instance] :3708
 void ResourceFloat4::ctor_4()
 {
     ctor_3();
 }
 
-// public generated ResourceFloat4 New() [static] :3646
+// public generated ResourceFloat4 New() [static] :3708
 ResourceFloat4* ResourceFloat4::New2()
 {
     ResourceFloat4* obj1 = (ResourceFloat4*)uNew(ResourceFloat4_typeof());
@@ -4512,10 +4512,10 @@ ResourceFloat4* ResourceFloat4::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// public sealed class ResourceObject :3641
+// public sealed class ResourceObject :3703
 // {
 static void ResourceObject_build(uType* type)
 {
@@ -4564,25 +4564,25 @@ static void ResourceObject_build(uType* type)
     return type;
 }
 
-// public generated ResourceObject() :3641
+// public generated ResourceObject() :3703
 void ResourceObject__ctor_4_fn(ResourceObject* __this)
 {
     __this->ctor_4();
 }
 
-// public generated ResourceObject New() :3641
+// public generated ResourceObject New() :3703
 void ResourceObject__New2_fn(ResourceObject** __retval)
 {
     *__retval = ResourceObject::New2();
 }
 
-// public generated ResourceObject() [instance] :3641
+// public generated ResourceObject() [instance] :3703
 void ResourceObject::ctor_4()
 {
     ctor_3();
 }
 
-// public generated ResourceObject New() [static] :3641
+// public generated ResourceObject New() [static] :3703
 ResourceObject* ResourceObject::New2()
 {
     ResourceObject* obj1 = (ResourceObject*)uNew(ResourceObject_typeof());
@@ -4591,8 +4591,8 @@ ResourceObject* ResourceObject::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/resources/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/resources/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public static class ResourceRegistry :371
 // {
@@ -4697,10 +4697,10 @@ void ResourceRegistry::RemoveResourceChangedHandler(uString* key, uDelegate* han
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// public abstract class ResourceSetter<T> :3598
+// public abstract class ResourceSetter<T> :3660
 // {
 static void ResourceSetter_build(uType* type)
 {
@@ -4754,31 +4754,31 @@ static void ResourceSetter_build(uType* type)
     return type;
 }
 
-// protected generated ResourceSetter() :3598
+// protected generated ResourceSetter() :3660
 void ResourceSetter__ctor_3_fn(ResourceSetter* __this)
 {
     __this->ctor_3();
 }
 
-// public string get_Key() :3603
+// public string get_Key() :3665
 void ResourceSetter__get_Key_fn(ResourceSetter* __this, uString** __retval)
 {
     *__retval = __this->Key();
 }
 
-// public void set_Key(string value) :3604
+// public void set_Key(string value) :3666
 void ResourceSetter__set_Key_fn(ResourceSetter* __this, uString* value)
 {
     __this->Key(value);
 }
 
-// private void OnChanged() :3631
+// private void OnChanged() :3693
 void ResourceSetter__OnChanged_fn(ResourceSetter* __this)
 {
     __this->OnChanged();
 }
 
-// protected override sealed void OnRooted() :3625
+// protected override sealed void OnRooted() :3687
 void ResourceSetter__OnRooted_fn(ResourceSetter* __this)
 {
     uStackFrame __("Fuse.Resources.ResourceSetter`1", "OnRooted()");
@@ -4786,13 +4786,13 @@ void ResourceSetter__OnRooted_fn(ResourceSetter* __this)
     __this->OnChanged();
 }
 
-// public T get_Value() :3614
+// public T get_Value() :3676
 void ResourceSetter__get_Value_fn(ResourceSetter* __this, uTRef __retval)
 {
     return __retval.Store(__this->_value()), void();
 }
 
-// public void set_Value(T value) :3615
+// public void set_Value(T value) :3677
 void ResourceSetter__set_Value_fn(ResourceSetter* __this, void* value)
 {
     uStackFrame __("Fuse.Resources.ResourceSetter`1", "set_Value(T)");
@@ -4804,19 +4804,19 @@ void ResourceSetter__set_Value_fn(ResourceSetter* __this, void* value)
     }
 }
 
-// protected generated ResourceSetter() [instance] :3598
+// protected generated ResourceSetter() [instance] :3660
 void ResourceSetter::ctor_3()
 {
     ctor_2();
 }
 
-// public string get_Key() [instance] :3603
+// public string get_Key() [instance] :3665
 uString* ResourceSetter::Key()
 {
     return _key;
 }
 
-// public void set_Key(string value) [instance] :3604
+// public void set_Key(string value) [instance] :3666
 void ResourceSetter::Key(uString* value)
 {
     uStackFrame __("Fuse.Resources.ResourceSetter`1", "set_Key(string)");
@@ -4824,7 +4824,7 @@ void ResourceSetter::Key(uString* value)
     OnChanged();
 }
 
-// private void OnChanged() [instance] :3631
+// private void OnChanged() [instance] :3693
 void ResourceSetter::OnChanged()
 {
     uStackFrame __("Fuse.Resources.ResourceSetter`1", "OnChanged()");
@@ -4834,10 +4834,10 @@ void ResourceSetter::OnChanged()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// public sealed class ResourceString :3640
+// public sealed class ResourceString :3702
 // {
 static void ResourceString_build(uType* type)
 {
@@ -4886,25 +4886,25 @@ static void ResourceString_build(uType* type)
     return type;
 }
 
-// public generated ResourceString() :3640
+// public generated ResourceString() :3702
 void ResourceString__ctor_4_fn(ResourceString* __this)
 {
     __this->ctor_4();
 }
 
-// public generated ResourceString New() :3640
+// public generated ResourceString New() :3702
 void ResourceString__New2_fn(ResourceString** __retval)
 {
     *__retval = ResourceString::New2();
 }
 
-// public generated ResourceString() [instance] :3640
+// public generated ResourceString() [instance] :3702
 void ResourceString::ctor_4()
 {
     ctor_3();
 }
 
-// public generated ResourceString New() [static] :3640
+// public generated ResourceString New() [static] :3702
 ResourceString* ResourceString::New2()
 {
     ResourceString* obj1 = (ResourceString*)uNew(ResourceString_typeof());
@@ -4913,8 +4913,8 @@ ResourceString* ResourceString::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/resources/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/resources/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class RetainDisposalPolicy :164
 // {
@@ -4984,8 +4984,8 @@ RetainDisposalPolicy* RetainDisposalPolicy::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/resources/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/resources/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class SystemFileSource :409
 // {
@@ -5044,8 +5044,8 @@ SystemFileSource* SystemFileSource::New1(uString* file)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/resources/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/resources/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public sealed class TextureImageSource :1197
 // {

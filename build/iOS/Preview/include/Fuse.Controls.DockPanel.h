@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -25,9 +26,9 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public class DockPanel :164
+// public class DockPanel :172
 // {
-::g::Fuse::Controls::Control_type* DockPanel_typeof();
+::g::Fuse::Controls::Panel_type* DockPanel_typeof();
 void DockPanel__ctor_7_fn(DockPanel* __this);
 void DockPanel__GetDock_fn(::g::Fuse::Elements::Element* elm, int* __retval);
 void DockPanel__New4_fn(DockPanel** __retval);

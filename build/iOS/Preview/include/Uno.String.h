@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -29,7 +29,6 @@ void String__IndexOfLastNotWhiteSpace_fn(uString* __this, int* __retval);
 void String__Insert_fn(uString* __this, int* pos, uString* str, uString** __retval);
 void String__InSet_fn(uString* __this, uChar* c, uArray* charSet, bool* __retval);
 void String__IsNullOrEmpty_fn(uString* s, bool* __retval);
-void String__IsNullOrWhiteSpace_fn(uString* value, bool* __retval);
 void String__Join_fn(uString* separator, uArray* value, uString** __retval);
 void String__LastIndexOf_fn(uString* __this, uChar* c, int* __retval);
 void String__LastIndexOf1_fn(uString* __this, uChar* c, int* startIndex, int* __retval);
@@ -92,7 +91,6 @@ struct String
     static bool Equals3(uString* left, uString* right);
     static uString* Format(uString* str, uArray* objs);
     static bool IsNullOrEmpty(uString* s);
-    static bool IsNullOrWhiteSpace(uString* value);
     static uString* Join(uString* separator, uArray* value);
     static uString* op_Addition(uObject* a, uString* b);
     static uString* op_Addition1(uString* a, uObject* b);

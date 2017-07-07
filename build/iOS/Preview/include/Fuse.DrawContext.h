@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -19,7 +19,7 @@ namespace g{namespace Uno{struct Recti;}}
 namespace g{
 namespace Fuse{
 
-// public sealed class DrawContext :502
+// public sealed class DrawContext :523
 // {
 uType* DrawContext_typeof();
 void DrawContext__ctor__fn(DrawContext* __this, uObject* viewport);
@@ -47,6 +47,7 @@ void DrawContext__PopRenderTargetViewport_fn(DrawContext* __this);
 void DrawContext__PopScissor_fn(DrawContext* __this);
 void DrawContext__PopViewport_fn(DrawContext* __this);
 void DrawContext__PushCullFace_fn(DrawContext* __this, int* cf);
+void DrawContext__PushEmptyRenderTarget_fn(DrawContext* __this);
 void DrawContext__PushRenderTarget_fn(DrawContext* __this, ::g::Uno::Graphics::Framebuffer* fb);
 void DrawContext__PushRenderTarget1_fn(DrawContext* __this, ::g::Uno::Graphics::RenderTarget* rt);
 void DrawContext__PushRenderTarget2_fn(DrawContext* __this, ::g::Uno::Graphics::RenderTarget* rt, ::g::Uno::Int2* viewportPixelSize, ::g::Uno::Int4* glscissor);
@@ -104,6 +105,7 @@ struct DrawContext : uObject
     void PopScissor();
     void PopViewport();
     void PushCullFace(int cf);
+    void PushEmptyRenderTarget();
     void PushRenderTarget(::g::Uno::Graphics::Framebuffer* fb);
     void PushRenderTarget1(::g::Uno::Graphics::RenderTarget* rt);
     void PushRenderTarget2(::g::Uno::Graphics::RenderTarget* rt, ::g::Uno::Int2 viewportPixelSize, ::g::Uno::Int4 glscissor);

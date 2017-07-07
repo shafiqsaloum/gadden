@@ -11,8 +11,8 @@ namespace Experimental{
 namespace Http{
 namespace Internal{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/0.47.7/internal/$.uno
-// ------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // internal static class DateUtil :7
 // {

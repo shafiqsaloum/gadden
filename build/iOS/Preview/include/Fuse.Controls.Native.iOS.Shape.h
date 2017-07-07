@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -20,7 +20,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// internal abstract extern class Shape :1898
+// internal abstract extern class Shape :1985
 // {
 struct Shape_type : ::g::Fuse::Controls::Native::iOS::View_type
 {

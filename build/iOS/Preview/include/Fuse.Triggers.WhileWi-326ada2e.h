@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -18,7 +18,7 @@ namespace g{
 namespace Fuse{
 namespace Triggers{
 
-// public sealed class WhileWindowLandscape :4516
+// public sealed class WhileWindowLandscape :4491
 // {
 ::g::Fuse::Triggers::WindowSizeTrigger_type* WhileWindowLandscape_typeof();
 void WhileWindowLandscape__ctor_8_fn(WhileWindowLandscape* __this);

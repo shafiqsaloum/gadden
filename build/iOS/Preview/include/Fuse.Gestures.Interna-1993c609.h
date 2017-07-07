@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/0.47.7/internal/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -18,7 +18,7 @@ namespace Fuse{
 namespace Gestures{
 namespace Internal{
 
-// internal sealed class TwoFinger :1290
+// internal sealed class TwoFinger :1323
 // {
 uType* TwoFinger_typeof();
 void TwoFinger__ctor__fn(TwoFinger* __this, ::g::Fuse::Visual* n);

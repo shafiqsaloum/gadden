@@ -68,8 +68,8 @@ namespace g{
 namespace Uno{
 namespace Graphics{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum BlendEquation :199
 uEnumType* BlendEquation_typeof()
@@ -87,8 +87,8 @@ uEnumType* BlendEquation_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum BlendOperand :185
 uEnumType* BlendOperand_typeof()
@@ -111,8 +111,8 @@ uEnumType* BlendOperand_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum BufferUsage :125
 uEnumType* BufferUsage_typeof()
@@ -128,8 +128,8 @@ uEnumType* BufferUsage_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum CompareFunc :208
 uEnumType* CompareFunc_typeof()
@@ -150,8 +150,8 @@ uEnumType* CompareFunc_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum CubeFace :175
 uEnumType* CubeFace_typeof()
@@ -170,8 +170,8 @@ uEnumType* CubeFace_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public abstract class DeviceBuffer :9
 // {
@@ -424,8 +424,8 @@ void DeviceBuffer::Usage(int value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum Format :245
 uEnumType* Format_typeof()
@@ -445,8 +445,8 @@ uEnumType* Format_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public static class FormatHelpers :265
 // {
@@ -501,8 +501,8 @@ int FormatHelpers::GetStrideInBytes(int format)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class Framebuffer :297
 // {
@@ -683,8 +683,8 @@ Framebuffer* Framebuffer::New1(::g::Uno::Int2 size, int format, int flags)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum FramebufferFlags :290
 uEnumType* FramebufferFlags_typeof()
@@ -700,8 +700,8 @@ uEnumType* FramebufferFlags_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class IndexBuffer :552
 // {
@@ -788,8 +788,8 @@ IndexBuffer* IndexBuffer::New3(int usage)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum IndexType :141
 uEnumType* IndexType_typeof()
@@ -806,8 +806,8 @@ uEnumType* IndexType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum PolygonFace :230
 uEnumType* PolygonFace_typeof()
@@ -824,8 +824,8 @@ uEnumType* PolygonFace_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum PolygonWinding :238
 uEnumType* PolygonWinding_typeof()
@@ -840,8 +840,8 @@ uEnumType* PolygonWinding_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum PrimitiveType :132
 uEnumType* PrimitiveType_typeof()
@@ -859,8 +859,8 @@ uEnumType* PrimitiveType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class RenderTarget :634
 // {
@@ -1150,8 +1150,8 @@ RenderTarget* RenderTarget::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public struct SamplerState :779
 // {
@@ -1293,8 +1293,8 @@ SamplerState SamplerState__TrilinearClamp()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public intrinsic sealed class Texture2D :873
 // {
@@ -1302,7 +1302,7 @@ static void Texture2D_build(uType* type)
 {
     ::STRINGS[4] = uString::Const("OpenGL ES ");
     ::STRINGS[5] = uString::Const("**** Invalid version string: ");
-    ::STRINGS[6] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno");
+    ::STRINGS[6] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno");
     ::STRINGS[7] = uString::Const("Texture2D");
     ::STRINGS[8] = uString::Const("Texture does not support mipmap");
     ::STRINGS[9] = uString::Const("Texture is immutable and cannot be updated");
@@ -1761,8 +1761,8 @@ int Texture2D::MaxSize()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum TextureAddressMode :773
 uEnumType* TextureAddressMode_typeof()
@@ -1777,8 +1777,8 @@ uEnumType* TextureAddressMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public intrinsic sealed class TextureCube :1264
 // {
@@ -1906,8 +1906,8 @@ void TextureCube::Size(int value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum TextureFilter :762
 uEnumType* TextureFilter_typeof()
@@ -1926,8 +1926,8 @@ uEnumType* TextureFilter_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public static class TextureHelpers :1561
 // {
@@ -2024,8 +2024,8 @@ int TextureHelpers::GetMipCount1(::g::Uno::Int2 size)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public struct VertexAttributeInfo :1633
 // {
@@ -2058,8 +2058,8 @@ uStructType* VertexAttributeInfo_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public enum VertexAttributeType :149
 uEnumType* VertexAttributeType_typeof()
@@ -2093,8 +2093,8 @@ uEnumType* VertexAttributeType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class VertexBuffer :1712
 // {
@@ -2181,8 +2181,8 @@ VertexBuffer* VertexBuffer::New3(int usage)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/graphics/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public intrinsic sealed class VideoTexture :1788
 // {

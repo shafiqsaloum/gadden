@@ -19,8 +19,8 @@ namespace Net{
 namespace Http{
 namespace Implementation{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/implementation/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/implementation/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public abstract interface IHttpRequest :9
 // {
@@ -46,8 +46,8 @@ uInterfaceType* IHttpRequest_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/implementation/ios/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/implementation/ios/$.uno
+// -----------------------------------------------------------------------------------------------------------------
 
 // internal sealed extern class iOSHttpRequest :13
 // {
@@ -259,8 +259,8 @@ iOSHttpRequest* iOSHttpRequest::New1(::g::Uno::Net::Http::HttpMessageHandlerRequ
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/implementation/ios/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/implementation/ios/$.uno
+// -----------------------------------------------------------------------------------------------------------------
 
 // internal extern struct iOSHttpRequestHandle :8
 // {
@@ -282,8 +282,8 @@ uStructType* iOSHttpRequestHandle_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/0.47.13/implementation/ios/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/implementation/ios/$.uno
+// -----------------------------------------------------------------------------------------------------------------
 
 // internal static extern class iOSHttpSharedCache :103
 // {

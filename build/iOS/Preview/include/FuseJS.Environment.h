@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{namespace FuseJS{struct Environment;}}
 namespace g{
 namespace FuseJS{
 
-// public sealed class Environment :377
+// public sealed class Environment :380
 // {
 ::g::Fuse::Scripting::NativeModule_type* Environment_typeof();
 void Environment__ctor_2_fn(Environment* __this);

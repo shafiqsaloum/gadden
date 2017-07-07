@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/0.47.7/brushes/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/brushes/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -17,7 +17,7 @@ namespace g{
 namespace Fuse{
 namespace Drawing{
 
-// internal sealed class LinearGradientDrawable :315
+// internal sealed class LinearGradientDrawable :342
 // {
 uType* LinearGradientDrawable_typeof();
 void LinearGradientDrawable__ctor__fn(LinearGradientDrawable* __this);

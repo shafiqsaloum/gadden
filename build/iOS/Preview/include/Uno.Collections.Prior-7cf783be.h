@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -6,23 +6,27 @@
 #include <Uno.Object.h>
 namespace g{namespace Uno{namespace Collections{struct List;}}}
 namespace g{namespace Uno{namespace Collections{struct PriorityQueue;}}}
+namespace g{namespace Uno{struct Float2;}}
+namespace g{namespace Uno{struct Float4;}}
 
 namespace g{
 namespace Uno{
 namespace Collections{
 
-// internal sealed class PriorityQueue<T> :1597
+// internal sealed class PriorityQueue<T> :1677
 // {
 uType* PriorityQueue_typeof();
 void PriorityQueue__ctor__fn(PriorityQueue* __this, int* type);
-void PriorityQueue__Add_fn(PriorityQueue* __this, void* value, float* priority);
+void PriorityQueue__Add2_fn(PriorityQueue* __this, void* value, ::g::Uno::Float2* priority);
+void PriorityQueue__Add4_fn(PriorityQueue* __this, void* value, ::g::Uno::Float4* priority);
+void PriorityQueue__Compare_fn(uType* __type, ::g::Uno::Float4* a, ::g::Uno::Float4* b, int* __retval);
 void PriorityQueue__get_Count_fn(PriorityQueue* __this, int* __retval);
 void PriorityQueue__get_Empty_fn(PriorityQueue* __this, bool* __retval);
-void PriorityQueue__LowerBound_fn(PriorityQueue* __this, float* priority, int* __retval);
+void PriorityQueue__LowerBound_fn(PriorityQueue* __this, ::g::Uno::Float4* priority, int* __retval);
 void PriorityQueue__New1_fn(uType* __type, int* type, PriorityQueue** __retval);
-void PriorityQueue__PopTop_fn(PriorityQueue* __this, uTRef __retval);
+void PriorityQueue__PopTop1_fn(PriorityQueue* __this, ::g::Uno::Float4* priority, uTRef __retval);
 void PriorityQueue__Remove_fn(PriorityQueue* __this, void* value);
-void PriorityQueue__UpperBound_fn(PriorityQueue* __this, float* priority, int* __retval);
+void PriorityQueue__UpperBound_fn(PriorityQueue* __this, ::g::Uno::Float4* priority, int* __retval);
 
 struct PriorityQueue : uObject
 {
@@ -31,17 +35,34 @@ struct PriorityQueue : uObject
 
     void ctor_(int type);
     template<class T>
-    void Add(T value, float priority) { PriorityQueue__Add_fn(this, uConstrain(__type->T(0), value), &priority); }
+    void Add2(T value, ::g::Uno::Float2 priority);
+    template<class T>
+    void Add4(T value, ::g::Uno::Float4 priority);
     int Count();
     bool Empty();
-    int LowerBound(float priority);
+    int LowerBound(::g::Uno::Float4 priority);
     template<class T>
-    T PopTop() { T __retval; return PriorityQueue__PopTop_fn(this, &__retval), __retval; }
+    T PopTop1(::g::Uno::Float4* priority) { T __retval; return PriorityQueue__PopTop1_fn(this, priority, &__retval), __retval; }
     template<class T>
     void Remove(T value) { PriorityQueue__Remove_fn(this, uConstrain(__type->T(0), value)); }
-    int UpperBound(float priority);
+    int UpperBound(::g::Uno::Float4 priority);
+    static int Compare(uType* __type, ::g::Uno::Float4 a, ::g::Uno::Float4 b);
     static PriorityQueue* New1(uType* __type, int type);
 };
+
+}}} // ::g::Uno::Collections
+
+#include <Uno.Float2.h>
+#include <Uno.Float4.h>
+
+namespace g{
+namespace Uno{
+namespace Collections{
+
+template<class T>
+void PriorityQueue::Add2(T value, ::g::Uno::Float2 priority) { PriorityQueue__Add2_fn(this, uConstrain(__type->T(0), value), &priority); }
+template<class T>
+void PriorityQueue::Add4(T value, ::g::Uno::Float4 priority) { PriorityQueue__Add4_fn(this, uConstrain(__type->T(0), value), &priority); }
 // }
 
 }}} // ::g::Uno::Collections

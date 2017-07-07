@@ -14,8 +14,8 @@
 {
     if ((self = [super init]))
     {
-        _context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
-        _unoContext = [[uContext alloc] init];
+        _unoContext = [uContext initSharedContext];
+        _context = [_unoContext glContext];
     }
     return self;
 }

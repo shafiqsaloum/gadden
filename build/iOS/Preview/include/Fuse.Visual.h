@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -32,6 +32,7 @@ namespace g{namespace Fuse{struct Visual__ParameterProperty;}}
 namespace g{namespace Fuse{struct VisualBounds;}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
+namespace g{namespace Uno{namespace Collections{struct RootableList;}}}
 namespace g{namespace Uno{namespace Geometry{struct Box;}}}
 namespace g{namespace Uno{namespace Text{struct StringBuilder;}}}
 namespace g{namespace Uno{namespace UX{struct Property1;}}}
@@ -47,7 +48,7 @@ namespace g{namespace Uno{struct Rect;}}
 namespace g{
 namespace Fuse{
 
-// public interfacemodifiers class Visual :4860
+// public interfacemodifiers class Visual :4949
 // {
 struct Visual_type : ::g::Fuse::Node_type
 {
@@ -86,6 +87,7 @@ struct Visual_type : ::g::Fuse::Node_type
     void(*fp_OnRootedPreChildren)(::g::Fuse::Visual*);
     void(*fp_OnZOrderInvalidated)(::g::Fuse::Visual*);
     void(*fp_get_ParentWorldTransformInternal)(::g::Fuse::Visual*, ::g::Fuse::FastMatrix**);
+    void(*fp_Prepare)(::g::Fuse::Visual*, uString*);
     void(*fp_PrependImplicitTransform)(::g::Fuse::Visual*, ::g::Fuse::FastMatrix*);
     void(*fp_PrependInverseTransformOrigin)(::g::Fuse::Visual*, ::g::Fuse::FastMatrix*);
     void(*fp_PrependTransformOrigin)(::g::Fuse::Visual*, ::g::Fuse::FastMatrix*);
@@ -265,6 +267,7 @@ void Visual__remove_ParameterChanged_fn(Visual* __this, uDelegate* value);
 void Visual__get_ParentWorldTransformInternal_fn(Visual* __this, ::g::Fuse::FastMatrix** __retval);
 void Visual__PerformLayout_fn(Visual* __this);
 void Visual__PerformLayout1_fn(Visual* __this, ::g::Uno::Float2* clientSize);
+void Visual__Prepare_fn(Visual* __this, uString* parameter);
 void Visual__PrependExplicitTransforms_fn(Visual* __this, ::g::Fuse::FastMatrix* m);
 void Visual__PrependImplicitTransform_fn(Visual* __this, ::g::Fuse::FastMatrix* m);
 void Visual__PrependInverseTransformOrigin_fn(Visual* __this, ::g::Fuse::FastMatrix* m);
@@ -280,6 +283,8 @@ void Visual__add_RequestBringIntoView_fn(Visual* __this, uDelegate* value);
 void Visual__remove_RequestBringIntoView_fn(Visual* __this, uDelegate* value);
 void Visual__ResetParameterListeners_fn(Visual* __this);
 void Visual__get_Resources_fn(Visual* __this, uObject** __retval);
+void Visual__RootResources_fn(Visual* __this);
+void Visual__RootTemplates_fn(Visual* __this);
 void Visual__SendToBack_fn(Visual* __this, Visual* item);
 void Visual__Set_fn(Visual* __this, uType* __type, int* p, void* value, void* defaultValue);
 void Visual__Set1_fn(Visual* __this, uType* __type, int* p, void* value, void* defaultValue);
@@ -305,6 +310,8 @@ void Visual__UnoCollectionsICollectionFuseNodeget_Count_fn(Visual* __this, int* 
 void Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn(Visual* __this, uObject** __retval);
 void Visual__UnoCollectionsIListFuseNodeget_Item_fn(Visual* __this, int* index, ::g::Fuse::Node** __retval);
 void Visual__UnoCollectionsIListFuseNodeRemoveAt_fn(Visual* __this, int* index);
+void Visual__UnrootResources_fn(Visual* __this);
+void Visual__UnrootTemplates_fn(Visual* __this);
 void Visual__UpdateContextSnapToPixelsCache_fn(Visual* __this);
 void Visual__UpdateIsContextEnabledCache_fn(Visual* __this);
 void Visual__UpdateIsVisibleCache_fn(Visual* __this);
@@ -375,7 +382,7 @@ struct Visual : ::g::Fuse::Node
     static uSStrong< ::g::Fuse::PropertyHandle*> _resourcesHandle_;
     static uSStrong< ::g::Fuse::PropertyHandle*>& _resourcesHandle() { return Visual_typeof()->Init(), _resourcesHandle_; }
     bool _sortedZOrder;
-    uStrong<uObject*> _templates;
+    uStrong< ::g::Uno::Collections::RootableList*> _templates;
     int _transformCount;
     uStrong<uObject*> _viewport;
     uStrong< ::g::Fuse::FastMatrix*> _worldTransform;
@@ -564,6 +571,7 @@ struct Visual : ::g::Fuse::Node
     ::g::Fuse::FastMatrix* ParentWorldTransformInternal() { ::g::Fuse::FastMatrix* __retval; return (((Visual_type*)__type)->fp_get_ParentWorldTransformInternal)(this, &__retval), __retval; }
     void PerformLayout();
     void PerformLayout1(::g::Uno::Float2 clientSize);
+    void Prepare(uString* parameter) { (((Visual_type*)__type)->fp_Prepare)(this, parameter); }
     void PrependExplicitTransforms(::g::Fuse::FastMatrix* m);
     void PrependImplicitTransform(::g::Fuse::FastMatrix* m) { (((Visual_type*)__type)->fp_PrependImplicitTransform)(this, m); }
     void PrependInverseTransformOrigin(::g::Fuse::FastMatrix* m) { (((Visual_type*)__type)->fp_PrependInverseTransformOrigin)(this, m); }
@@ -579,6 +587,8 @@ struct Visual : ::g::Fuse::Node
     void remove_RequestBringIntoView(uDelegate* value);
     void ResetParameterListeners();
     uObject* Resources();
+    void RootResources();
+    void RootTemplates();
     void SendToBack(Visual* item);
     template<class T>
     void Set(uType* __type, int p, T value, T defaultValue) { Visual__Set_fn(this, __type, &p, uConstrain(__type->U(0), value), uConstrain(__type->U(0), defaultValue)); }
@@ -598,6 +608,8 @@ struct Visual : ::g::Fuse::Node
     void SoftInvalidateZOrder(bool force);
     uObject* Templates();
     bool TryParentToLocal(::g::Uno::Float2 parentPoint, ::g::Uno::Float2* result);
+    void UnrootResources();
+    void UnrootTemplates();
     void UpdateContextSnapToPixelsCache();
     void UpdateIsContextEnabledCache();
     void UpdateIsVisibleCache();
@@ -643,6 +655,7 @@ struct Visual : ::g::Fuse::Node
     static void OnPropertyChanged2(Visual* __this, ::g::Uno::UX::PropertyObject* sender, ::g::Uno::UX::Selector property);
     static void OnRootedPreChildren(Visual* __this) { Visual__OnRootedPreChildren_fn(__this); }
     static void OnZOrderInvalidated(Visual* __this) { Visual__OnZOrderInvalidated_fn(__this); }
+    static void Prepare(Visual* __this, uString* parameter) { Visual__Prepare_fn(__this, parameter); }
     static void PrependImplicitTransform(Visual* __this, ::g::Fuse::FastMatrix* m) { Visual__PrependImplicitTransform_fn(__this, m); }
     static void PrependInverseTransformOrigin(Visual* __this, ::g::Fuse::FastMatrix* m) { Visual__PrependInverseTransformOrigin_fn(__this, m); }
     static void PrependTransformOrigin(Visual* __this, ::g::Fuse::FastMatrix* m) { Visual__PrependTransformOrigin_fn(__this, m); }

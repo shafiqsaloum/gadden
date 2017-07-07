@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public static class NavigationPageProperty :1770
+// public static class NavigationPageProperty :1775
 // {
 uClassType* NavigationPageProperty_typeof();
 void NavigationPageProperty__AddPageWatcher_fn(::g::Fuse::Visual* where, uObject* callback);

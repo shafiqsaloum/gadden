@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -22,6 +22,7 @@ void SubstringExtensions__IsLeadingSurrogate_fn(uChar* c, bool* __retval);
 void SubstringExtensions__IsTrailingSurrogate_fn(uChar* c, bool* __retval);
 void SubstringExtensions__NextCharIndex_fn(uString* s, int* i, int* __retval);
 void SubstringExtensions__PrevCharIndex_fn(uString* s, int* i, int* __retval);
+void SubstringExtensions__SafeInsert_fn(uString* s, int* index, uString* insert, uString** __retval);
 void SubstringExtensions__SafeSubstring_fn(uString* s, int* start, uString** __retval);
 void SubstringExtensions__SafeSubstring1_fn(uString* s, int* start, int* length, uString** __retval);
 void SubstringExtensions__TrimLine_fn(::g::Fuse::Text::Substring* line, ::g::Fuse::Text::Substring** __retval);
@@ -38,6 +39,7 @@ struct SubstringExtensions : uObject
     static bool IsTrailingSurrogate(uChar c);
     static int NextCharIndex(uString* s, int i);
     static int PrevCharIndex(uString* s, int i);
+    static uString* SafeInsert(uString* s, int index, uString* insert);
     static uString* SafeSubstring(uString* s, int start);
     static uString* SafeSubstring1(uString* s, int start, int length);
     static ::g::Fuse::Text::Substring* TrimLine(::g::Fuse::Text::Substring* line);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.Controls.Native.-efd6a0e8.h>
@@ -16,7 +16,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// internal static extern class TextEditSpeedHack :3018
+// internal static extern class TextEditSpeedHack :3112
 // {
 static void TextEditSpeedHack_build(uType* type)
 {
@@ -38,13 +38,13 @@ uClassType* TextEditSpeedHack_typeof()
     return type;
 }
 
-// public static void Run() :3022
+// public static void Run() :3116
 void TextEditSpeedHack__Run_fn()
 {
     TextEditSpeedHack::Run();
 }
 
-// private static void RunInner(ObjC.Object win) :3035
+// private static void RunInner(ObjC.Object win) :3129
 void TextEditSpeedHack__RunInner_fn(::g::ObjC::Object* win)
 {
     TextEditSpeedHack::RunInner(win);
@@ -52,7 +52,7 @@ void TextEditSpeedHack__RunInner_fn(::g::ObjC::Object* win)
 
 bool TextEditSpeedHack::_done_;
 
-// public static void Run() [static] :3022
+// public static void Run() [static] :3116
 void TextEditSpeedHack::Run()
 {
     uStackFrame __("Fuse.Controls.Native.iOS.TextEditSpeedHack", "Run()");
@@ -66,7 +66,7 @@ void TextEditSpeedHack::Run()
     TextEditSpeedHack::RunInner(wobj);
 }
 
-// private static void RunInner(ObjC.Object win) [static] :3035
+// private static void RunInner(ObjC.Object win) [static] :3129
 void TextEditSpeedHack::RunInner(::g::ObjC::Object* win)
 {
     @autoreleasepool

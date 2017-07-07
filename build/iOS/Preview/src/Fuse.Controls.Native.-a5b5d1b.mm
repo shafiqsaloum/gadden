@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.Controls.Native.-a5b5d1b.h>
@@ -12,7 +12,7 @@ namespace Fuse{
 namespace Controls{
 namespace Native{
 
-// internal static extern class ViewFactory :1452
+// internal static extern class ViewFactory :1486
 // {
 static void ViewFactory_build(uType* type)
 {
@@ -30,25 +30,25 @@ uClassType* ViewFactory_typeof()
     return type;
 }
 
-// public static Fuse.Controls.Native.ViewHandle InstantiateViewGroup() :1454
+// public static Fuse.Controls.Native.ViewHandle InstantiateViewGroup() :1488
 void ViewFactory__InstantiateViewGroup_fn(::g::Fuse::Controls::Native::ViewHandle** __retval)
 {
     *__retval = ViewFactory::InstantiateViewGroup();
 }
 
-// private static ObjC.Object InstantiateViewGroupImpl() :1460
+// private static ObjC.Object InstantiateViewGroupImpl() :1494
 void ViewFactory__InstantiateViewGroupImpl_fn(::g::ObjC::Object** __retval)
 {
     *__retval = ViewFactory::InstantiateViewGroupImpl();
 }
 
-// public static Fuse.Controls.Native.ViewHandle InstantiateViewGroup() [static] :1454
+// public static Fuse.Controls.Native.ViewHandle InstantiateViewGroup() [static] :1488
 ::g::Fuse::Controls::Native::ViewHandle* ViewFactory::InstantiateViewGroup()
 {
     return ::g::Fuse::Controls::Native::ViewHandle::New2(ViewFactory::InstantiateViewGroupImpl(), false);
 }
 
-// private static ObjC.Object InstantiateViewGroupImpl() [static] :1460
+// private static ObjC.Object InstantiateViewGroupImpl() [static] :1494
 ::g::ObjC::Object* ViewFactory::InstantiateViewGroupImpl()
 {
     @autoreleasepool

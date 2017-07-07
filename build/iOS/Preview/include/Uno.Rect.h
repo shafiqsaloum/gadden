@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -44,7 +44,6 @@ void Rect__set_Size_fn(Rect* __this, ::g::Uno::Float2* value);
 void Rect__ToString_fn(Rect* __this, uType* __type, uString** __retval);
 void Rect__Transform_fn(Rect* r, ::g::Uno::Float4x4* matrix, Rect* __retval);
 void Rect__Translate_fn(Rect* r, ::g::Uno::Float2* offset, Rect* __retval);
-void Rect__Union_fn(Rect* a, Rect* b, Rect* __retval);
 void Rect__get_Width_fn(Rect* __this, float* __retval);
 void Rect__set_Width_fn(Rect* __this, float* value);
 
@@ -89,7 +88,6 @@ Rect Rect__Scale(Rect r, float scale);
 Rect Rect__Scale1(Rect r, ::g::Uno::Float2 scale);
 Rect Rect__Transform(Rect r, ::g::Uno::Float4x4 matrix);
 Rect Rect__Translate(Rect r, ::g::Uno::Float2 offset);
-Rect Rect__Union(Rect a, Rect b);
 // }
 
 }} // ::g::Uno

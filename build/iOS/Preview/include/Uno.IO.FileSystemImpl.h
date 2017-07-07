@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/io/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -15,6 +15,7 @@ namespace IO{
 // {
 uClassType* FileSystemImpl_typeof();
 void FileSystemImpl__AppendAllText_fn(uString* filename, uString* contents);
+void FileSystemImpl__CopyFile_fn(uString* sourceName, uString* destinationName, bool* overwrite);
 void FileSystemImpl__CppXliOpen_fn(uString* filename, int* filemode, uBase::Stream** __retval);
 void FileSystemImpl__CppXliOpenRead_fn(uString* filename, uBase::Stream** __retval);
 void FileSystemImpl__CreateDirectory_fn(uString* dirName);
@@ -35,6 +36,7 @@ void FileSystemImpl__WriteAllText_fn(uString* filename, uString* text);
 struct FileSystemImpl : uObject
 {
     static void AppendAllText(uString* filename, uString* contents);
+    static void CopyFile(uString* sourceName, uString* destinationName, bool overwrite);
     static uBase::Stream* CppXliOpen(uString* filename, int filemode);
     static uBase::Stream* CppXliOpenRead(uString* filename);
     static void CreateDirectory(uString* dirName);

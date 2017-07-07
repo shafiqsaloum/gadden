@@ -1,8 +1,9 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.Object.h>
+namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct Toast;}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
@@ -10,12 +11,12 @@ namespace g{namespace Uno{namespace Collections{struct List;}}}
 namespace g{
 namespace Fuse{
 
-// public sealed class Toast :4057
+// public sealed class Toast :4146
 // {
 uType* Toast_typeof();
 void Toast__ctor__fn(Toast* __this, ::g::Fuse::Visual* visual, double* duration);
 void Toast__Dismiss_fn(Toast* __this);
-void Toast__DispatchNext_fn();
+void Toast__DispatchNext_fn(::g::Fuse::Node* ignoreNode);
 void Toast__New1_fn(::g::Fuse::Visual* visual, double* duration, Toast** __retval);
 void Toast__OnUnrooted_fn(::g::Fuse::Visual* toast);
 void Toast__Post_fn(::g::Fuse::Visual* visual, double* duration, Toast** __retval);
@@ -31,7 +32,7 @@ struct Toast : uObject
 
     void ctor_(::g::Fuse::Visual* visual, double duration);
     void Dismiss();
-    static void DispatchNext();
+    static void DispatchNext(::g::Fuse::Node* ignoreNode);
     static Toast* New1(::g::Fuse::Visual* visual, double duration);
     static void OnUnrooted(::g::Fuse::Visual* toast);
     static Toast* Post(::g::Fuse::Visual* visual, double duration);

@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.StackPanel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -24,9 +25,9 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial sealed class PageIndicator :2567
+// public partial sealed class PageIndicator :2635
 // {
-::g::Fuse::Controls::Control_type* PageIndicator_typeof();
+::g::Fuse::Controls::Panel_type* PageIndicator_typeof();
 void PageIndicator__ctor_8_fn(PageIndicator* __this, uObject* navigation);
 void PageIndicator__get_DotFactory_fn(PageIndicator* __this, ::g::Uno::UX::Template** __retval);
 void PageIndicator__set_DotFactory_fn(PageIndicator* __this, ::g::Uno::UX::Template* value);

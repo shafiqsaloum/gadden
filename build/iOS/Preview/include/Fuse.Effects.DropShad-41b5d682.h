@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -19,7 +19,7 @@ namespace g{
 namespace Fuse{
 namespace Effects{
 
-// private sealed class DropShadow.Blitter :457
+// private sealed class DropShadow.Blitter :461
 // {
 uType* DropShadow__Blitter_typeof();
 void DropShadow__Blitter__ctor__fn(DropShadow__Blitter* __this);

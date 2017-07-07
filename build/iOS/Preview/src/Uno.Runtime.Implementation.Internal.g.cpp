@@ -12,7 +12,6 @@
 #include <Uno.Float.h>
 #include <Uno.Float2.h>
 #include <Uno.Float3.h>
-#include <Uno.Float4.h>
 #include <Uno.FormatException.h>
 #include <Uno.Int.h>
 #include <Uno.Long.h>
@@ -48,8 +47,8 @@ namespace Runtime{
 namespace Implementation{
 namespace Internal{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/internal/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/internal/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class ArrayEnumerable<T> :118
 // {
@@ -128,8 +127,8 @@ ArrayEnumerable* ArrayEnumerable::New1(uType* __type, uArray* source)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/internal/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/internal/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class ArrayEnumerator<T> :76
 // {
@@ -250,8 +249,8 @@ ArrayEnumerator* ArrayEnumerator::New1(uType* __type, uArray* source)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/internal/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/internal/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class ArrayList<T> :133
 // {
@@ -449,17 +448,16 @@ ArrayList* ArrayList::New1(uType* __type, uArray* source)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/internal/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/internal/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------
 
 // public static class BufferConverters :447
 // {
 static void BufferConverters_build(uType* type)
 {
-    type->Reflection.SetFunctions(4,
+    type->Reflection.SetFunctions(3,
         new uFunction("ToBuffer", NULL, (void*)BufferConverters__ToBuffer3_fn, 0, true, ::g::Uno::Buffer_typeof(), 1, ::g::Uno::Float2_typeof()->Array()),
         new uFunction("ToBuffer", NULL, (void*)BufferConverters__ToBuffer4_fn, 0, true, ::g::Uno::Buffer_typeof(), 1, ::g::Uno::Float3_typeof()->Array()),
-        new uFunction("ToBuffer", NULL, (void*)BufferConverters__ToBuffer5_fn, 0, true, ::g::Uno::Buffer_typeof(), 1, ::g::Uno::Float4_typeof()->Array()),
         new uFunction("ToBuffer", NULL, (void*)BufferConverters__ToBuffer9_fn, 0, true, ::g::Uno::Buffer_typeof(), 1, ::g::Uno::UShort_typeof()->Array()));
 }
 
@@ -485,12 +483,6 @@ void BufferConverters__ToBuffer3_fn(uArray* data, ::g::Uno::Buffer** __retval)
 void BufferConverters__ToBuffer4_fn(uArray* data, ::g::Uno::Buffer** __retval)
 {
     *__retval = BufferConverters::ToBuffer4(data);
-}
-
-// public static Uno.Buffer ToBuffer(float4[] data) :479
-void BufferConverters__ToBuffer5_fn(uArray* data, ::g::Uno::Buffer** __retval)
-{
-    *__retval = BufferConverters::ToBuffer5(data);
 }
 
 // public static Uno.Buffer ToBuffer(ushort[] data) :509
@@ -523,18 +515,6 @@ void BufferConverters__ToBuffer9_fn(uArray* data, ::g::Uno::Buffer** __retval)
     return result;
 }
 
-// public static Uno.Buffer ToBuffer(float4[] data) [static] :479
-::g::Uno::Buffer* BufferConverters::ToBuffer5(uArray* data)
-{
-    uStackFrame __("Uno.Runtime.Implementation.Internal.BufferConverters", "ToBuffer(float4[])");
-    ::g::Uno::Buffer* result = ::g::Uno::Buffer::New4(uPtr(data)->Length() * 16);
-
-    for (int i = 0; i < data->Length(); i++)
-        uPtr(result)->Set8(i * 16, uPtr(data)->Item< ::g::Uno::Float4>(i), true);
-
-    return result;
-}
-
 // public static Uno.Buffer ToBuffer(ushort[] data) [static] :509
 ::g::Uno::Buffer* BufferConverters::ToBuffer9(uArray* data)
 {
@@ -548,8 +528,8 @@ void BufferConverters__ToBuffer9_fn(uArray* data, ::g::Uno::Buffer** __retval)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/internal/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/internal/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class BufferReader :556
 // {
@@ -725,8 +705,8 @@ BufferReader* BufferReader::New1(::g::Uno::Buffer* buffer)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/internal/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/internal/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------
 
 // internal enum FormatSpecifier :1128
 uEnumType* FormatSpecifier_typeof()
@@ -747,8 +727,8 @@ uEnumType* FormatSpecifier_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/internal/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/internal/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class FormatStringItem :880
 // {
@@ -942,8 +922,8 @@ FormatStringItem* FormatStringItem::New1(uString* lexeme)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/internal/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/internal/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class FormatStringLiteral :965
 // {
@@ -1028,8 +1008,8 @@ FormatStringLiteral* FormatStringLiteral::New1(uString* lexeme)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/internal/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/internal/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------
 
 // public abstract class FormatStringToken :998
 // {
@@ -1093,8 +1073,8 @@ void FormatStringToken::Lexeme(uString* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/internal/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/internal/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class FormatStringTokenizer :1017
 // {
@@ -1311,8 +1291,8 @@ FormatStringTokenizer* FormatStringTokenizer::New1(uString* format)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/internal/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/internal/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------
 
 // public static class NumericFormatter :1140
 // {
@@ -2263,8 +2243,8 @@ uString* NumericFormatter::DecimalPoint()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/runtime/implementation/internal/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/internal/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------
 
 // private enum FormatStringTokenizer.State :1019
 uEnumType* FormatStringTokenizer__State_typeof()

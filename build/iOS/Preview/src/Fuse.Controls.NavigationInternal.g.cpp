@@ -40,13 +40,13 @@ namespace Fuse{
 namespace Controls{
 namespace NavigationInternal{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/navigationinternal/$.uno
-// -----------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/navigationinternal/$.uno
+// ----------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class EnterHorizontal :11
 // {
 // static EnterHorizontal() :68
-static void EnterHorizontal__cctor_1_fn(uType* __type)
+static void EnterHorizontal__cctor_2_fn(uType* __type)
 {
 }
 
@@ -62,7 +62,7 @@ static void EnterHorizontal_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Navigation::NavigationAnimation_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Navigation::NavigationAnimation_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Navigation::NavigationAnimation_type, interface7));
-    type->SetFields(36);
+    type->SetFields(37);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)EnterHorizontal__New3_fn, 0, true, type, 0));
 }
@@ -74,14 +74,14 @@ static void EnterHorizontal_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Navigation::EnteringAnimation_typeof();
-    options.FieldCount = 36;
+    options.FieldCount = 37;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(EnterHorizontal);
     options.TypeSize = sizeof(::g::Fuse::Navigation::NavigationAnimation_type);
     type = (::g::Fuse::Navigation::NavigationAnimation_type*)uClassType::New("Fuse.Controls.NavigationInternal.EnterHorizontal", options);
     type->fp_build_ = EnterHorizontal_build;
     type->fp_ctor_ = (void*)EnterHorizontal__New3_fn;
-    type->fp_cctor_ = EnterHorizontal__cctor_1_fn;
+    type->fp_cctor_ = EnterHorizontal__cctor_2_fn;
     type->interface7.fp_OnPlaybackDone = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnPlaybackDone_fn;
     type->interface7.fp_OnStable = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnStable_fn;
     type->interface6.fp_OnProgressUpdated = (void(*)(uObject*, uObject*, double*, double*, int*))::g::Fuse::Triggers::Trigger__FuseAnimationsIUnwrappedPlayerFeedbackOnProgressUpdated_fn;
@@ -148,13 +148,13 @@ EnterHorizontal* EnterHorizontal::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/navigationinternal/$.uno
-// -----------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/navigationinternal/$.uno
+// ----------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class EnterVertical :28
 // {
 // static EnterVertical() :94
-static void EnterVertical__cctor_1_fn(uType* __type)
+static void EnterVertical__cctor_2_fn(uType* __type)
 {
 }
 
@@ -170,7 +170,7 @@ static void EnterVertical_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Navigation::NavigationAnimation_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Navigation::NavigationAnimation_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Navigation::NavigationAnimation_type, interface7));
-    type->SetFields(36);
+    type->SetFields(37);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)EnterVertical__New3_fn, 0, true, type, 0));
 }
@@ -182,14 +182,14 @@ static void EnterVertical_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Navigation::EnteringAnimation_typeof();
-    options.FieldCount = 36;
+    options.FieldCount = 37;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(EnterVertical);
     options.TypeSize = sizeof(::g::Fuse::Navigation::NavigationAnimation_type);
     type = (::g::Fuse::Navigation::NavigationAnimation_type*)uClassType::New("Fuse.Controls.NavigationInternal.EnterVertical", options);
     type->fp_build_ = EnterVertical_build;
     type->fp_ctor_ = (void*)EnterVertical__New3_fn;
-    type->fp_cctor_ = EnterVertical__cctor_1_fn;
+    type->fp_cctor_ = EnterVertical__cctor_2_fn;
     type->interface7.fp_OnPlaybackDone = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnPlaybackDone_fn;
     type->interface7.fp_OnStable = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnStable_fn;
     type->interface6.fp_OnProgressUpdated = (void(*)(uObject*, uObject*, double*, double*, int*))::g::Fuse::Triggers::Trigger__FuseAnimationsIUnwrappedPlayerFeedbackOnProgressUpdated_fn;
@@ -256,13 +256,13 @@ EnterVertical* EnterVertical::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/navigationinternal/$.uno
-// -----------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/navigationinternal/$.uno
+// ----------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class ExitHorizontal :44
 // {
 // static ExitHorizontal() :120
-static void ExitHorizontal__cctor_1_fn(uType* __type)
+static void ExitHorizontal__cctor_2_fn(uType* __type)
 {
 }
 
@@ -278,7 +278,7 @@ static void ExitHorizontal_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Navigation::NavigationAnimation_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Navigation::NavigationAnimation_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Navigation::NavigationAnimation_type, interface7));
-    type->SetFields(36);
+    type->SetFields(37);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)ExitHorizontal__New3_fn, 0, true, type, 0));
 }
@@ -290,14 +290,14 @@ static void ExitHorizontal_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Navigation::ExitingAnimation_typeof();
-    options.FieldCount = 36;
+    options.FieldCount = 37;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(ExitHorizontal);
     options.TypeSize = sizeof(::g::Fuse::Navigation::NavigationAnimation_type);
     type = (::g::Fuse::Navigation::NavigationAnimation_type*)uClassType::New("Fuse.Controls.NavigationInternal.ExitHorizontal", options);
     type->fp_build_ = ExitHorizontal_build;
     type->fp_ctor_ = (void*)ExitHorizontal__New3_fn;
-    type->fp_cctor_ = ExitHorizontal__cctor_1_fn;
+    type->fp_cctor_ = ExitHorizontal__cctor_2_fn;
     type->interface7.fp_OnPlaybackDone = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnPlaybackDone_fn;
     type->interface7.fp_OnStable = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnStable_fn;
     type->interface6.fp_OnProgressUpdated = (void(*)(uObject*, uObject*, double*, double*, int*))::g::Fuse::Triggers::Trigger__FuseAnimationsIUnwrappedPlayerFeedbackOnProgressUpdated_fn;
@@ -364,13 +364,13 @@ ExitHorizontal* ExitHorizontal::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/navigationinternal/$.uno
-// -----------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/navigationinternal/$.uno
+// ----------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class ExitVertical :60
 // {
 // static ExitVertical() :146
-static void ExitVertical__cctor_1_fn(uType* __type)
+static void ExitVertical__cctor_2_fn(uType* __type)
 {
 }
 
@@ -386,7 +386,7 @@ static void ExitVertical_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Navigation::NavigationAnimation_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Navigation::NavigationAnimation_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Navigation::NavigationAnimation_type, interface7));
-    type->SetFields(36);
+    type->SetFields(37);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)ExitVertical__New3_fn, 0, true, type, 0));
 }
@@ -398,14 +398,14 @@ static void ExitVertical_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Navigation::ExitingAnimation_typeof();
-    options.FieldCount = 36;
+    options.FieldCount = 37;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(ExitVertical);
     options.TypeSize = sizeof(::g::Fuse::Navigation::NavigationAnimation_type);
     type = (::g::Fuse::Navigation::NavigationAnimation_type*)uClassType::New("Fuse.Controls.NavigationInternal.ExitVertical", options);
     type->fp_build_ = ExitVertical_build;
     type->fp_ctor_ = (void*)ExitVertical__New3_fn;
-    type->fp_cctor_ = ExitVertical__cctor_1_fn;
+    type->fp_cctor_ = ExitVertical__cctor_2_fn;
     type->interface7.fp_OnPlaybackDone = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnPlaybackDone_fn;
     type->interface7.fp_OnStable = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnStable_fn;
     type->interface6.fp_OnProgressUpdated = (void(*)(uObject*, uObject*, double*, double*, int*))::g::Fuse::Triggers::Trigger__FuseAnimationsIUnwrappedPlayerFeedbackOnProgressUpdated_fn;
@@ -472,13 +472,13 @@ ExitVertical* ExitVertical::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class NavEnterHorizontal :170
 // {
 // static NavEnterHorizontal() :172
-static void NavEnterHorizontal__cctor_1_fn(uType* __type)
+static void NavEnterHorizontal__cctor_2_fn(uType* __type)
 {
 }
 
@@ -495,7 +495,7 @@ static void NavEnterHorizontal_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(39);
+    type->SetFields(40);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)NavEnterHorizontal__New3_fn, 0, true, type, 0));
 }
@@ -507,14 +507,14 @@ static void NavEnterHorizontal_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Transition_typeof();
-    options.FieldCount = 39;
+    options.FieldCount = 40;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(NavEnterHorizontal);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
     type = (::g::Fuse::Triggers::Trigger_type*)uClassType::New("Fuse.Controls.NavigationInternal.NavEnterHorizontal", options);
     type->fp_build_ = NavEnterHorizontal_build;
     type->fp_ctor_ = (void*)NavEnterHorizontal__New3_fn;
-    type->fp_cctor_ = NavEnterHorizontal__cctor_1_fn;
+    type->fp_cctor_ = NavEnterHorizontal__cctor_2_fn;
     type->interface7.fp_OnPlaybackDone = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnPlaybackDone_fn;
     type->interface7.fp_OnStable = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnStable_fn;
     type->interface6.fp_OnProgressUpdated = (void(*)(uObject*, uObject*, double*, double*, int*))::g::Fuse::Triggers::Trigger__FuseAnimationsIUnwrappedPlayerFeedbackOnProgressUpdated_fn;
@@ -587,13 +587,13 @@ NavEnterHorizontal* NavEnterHorizontal::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class NavExitHorizontal :202
 // {
 // static NavExitHorizontal() :204
-static void NavExitHorizontal__cctor_1_fn(uType* __type)
+static void NavExitHorizontal__cctor_2_fn(uType* __type)
 {
 }
 
@@ -610,7 +610,7 @@ static void NavExitHorizontal_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(39);
+    type->SetFields(40);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)NavExitHorizontal__New3_fn, 0, true, type, 0));
 }
@@ -622,14 +622,14 @@ static void NavExitHorizontal_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Transition_typeof();
-    options.FieldCount = 39;
+    options.FieldCount = 40;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(NavExitHorizontal);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
     type = (::g::Fuse::Triggers::Trigger_type*)uClassType::New("Fuse.Controls.NavigationInternal.NavExitHorizontal", options);
     type->fp_build_ = NavExitHorizontal_build;
     type->fp_ctor_ = (void*)NavExitHorizontal__New3_fn;
-    type->fp_cctor_ = NavExitHorizontal__cctor_1_fn;
+    type->fp_cctor_ = NavExitHorizontal__cctor_2_fn;
     type->interface7.fp_OnPlaybackDone = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnPlaybackDone_fn;
     type->interface7.fp_OnStable = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnStable_fn;
     type->interface6.fp_OnProgressUpdated = (void(*)(uObject*, uObject*, double*, double*, int*))::g::Fuse::Triggers::Trigger__FuseAnimationsIUnwrappedPlayerFeedbackOnProgressUpdated_fn;
@@ -702,13 +702,13 @@ NavExitHorizontal* NavExitHorizontal::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class NavRemoveHorizontal :234
 // {
 // static NavRemoveHorizontal() :236
-static void NavRemoveHorizontal__cctor_1_fn(uType* __type)
+static void NavRemoveHorizontal__cctor_2_fn(uType* __type)
 {
 }
 
@@ -725,7 +725,7 @@ static void NavRemoveHorizontal_build(uType* type)
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::RemovingAnimation_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::RemovingAnimation_type, interface7),
         ::g::Fuse::IBeginRemoveVisualListener_typeof(), offsetof(::g::Fuse::Triggers::RemovingAnimation_type, interface8));
-    type->SetFields(30);
+    type->SetFields(31);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)NavRemoveHorizontal__New3_fn, 0, true, type, 0));
 }
@@ -737,14 +737,14 @@ static void NavRemoveHorizontal_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::RemovingAnimation_typeof();
-    options.FieldCount = 30;
+    options.FieldCount = 31;
     options.InterfaceCount = 9;
     options.ObjectSize = sizeof(NavRemoveHorizontal);
     options.TypeSize = sizeof(::g::Fuse::Triggers::RemovingAnimation_type);
     type = (::g::Fuse::Triggers::RemovingAnimation_type*)uClassType::New("Fuse.Controls.NavigationInternal.NavRemoveHorizontal", options);
     type->fp_build_ = NavRemoveHorizontal_build;
     type->fp_ctor_ = (void*)NavRemoveHorizontal__New3_fn;
-    type->fp_cctor_ = NavRemoveHorizontal__cctor_1_fn;
+    type->fp_cctor_ = NavRemoveHorizontal__cctor_2_fn;
     type->interface8.fp_OnBeginRemoveVisual = (void(*)(uObject*, ::g::Fuse::PendingRemoveVisual*))::g::Fuse::Triggers::RemovingAnimation__FuseIBeginRemoveVisualListenerOnBeginRemoveVisual_fn;
     type->interface7.fp_OnPlaybackDone = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnPlaybackDone_fn;
     type->interface7.fp_OnStable = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnStable_fn;
@@ -812,13 +812,13 @@ NavRemoveHorizontal* NavRemoveHorizontal::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class PageWhileNavigatingFreeze :260
 // {
 // static PageWhileNavigatingFreeze() :264
-static void PageWhileNavigatingFreeze__cctor_1_fn(uType* __type)
+static void PageWhileNavigatingFreeze__cctor_2_fn(uType* __type)
 {
     PageWhileNavigatingFreeze::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"IsFrozen"*/]);
 }
@@ -837,7 +837,7 @@ static void PageWhileNavigatingFreeze_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31,
+    type->SetFields(32,
         ::g::Fuse::Controls::Page_typeof(), offsetof(::g::Fuse::Controls::NavigationInternal::PageWhileNavigatingFreeze, page), 0,
         ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Bool_typeof(), NULL), offsetof(::g::Fuse::Controls::NavigationInternal::PageWhileNavigatingFreeze, page_IsFrozen_inst), 0,
         ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::Fuse::Controls::NavigationInternal::PageWhileNavigatingFreeze::__selector0_, uFieldFlagsStatic);
@@ -852,13 +852,13 @@ static void PageWhileNavigatingFreeze_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Navigation::WhileNavigating_typeof();
-    options.FieldCount = 34;
+    options.FieldCount = 35;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(PageWhileNavigatingFreeze);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
     type = (::g::Fuse::Triggers::Trigger_type*)uClassType::New("Fuse.Controls.NavigationInternal.PageWhileNavigatingFreeze", options);
     type->fp_build_ = PageWhileNavigatingFreeze_build;
-    type->fp_cctor_ = PageWhileNavigatingFreeze__cctor_1_fn;
+    type->fp_cctor_ = PageWhileNavigatingFreeze__cctor_2_fn;
     type->interface7.fp_OnPlaybackDone = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnPlaybackDone_fn;
     type->interface7.fp_OnStable = (void(*)(uObject*, uObject*))::g::Fuse::Triggers::Trigger__FuseAnimationsIBasePlayerFeedbackOnStable_fn;
     type->interface6.fp_OnProgressUpdated = (void(*)(uObject*, uObject*, double*, double*, int*))::g::Fuse::Triggers::Trigger__FuseAnimationsIUnwrappedPlayerFeedbackOnProgressUpdated_fn;

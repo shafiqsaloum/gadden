@@ -43,8 +43,8 @@ namespace g{
 namespace Uno{
 namespace Time{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class CalendarSystem :8
 // {
@@ -274,8 +274,8 @@ CalendarSystem* CalendarSystem::Iso()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/utilities/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/utilities/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // public static class Constants :5
 // {
@@ -314,8 +314,8 @@ uClassType* Constants_typeof()
 ::g::Uno::Time::Instant Constants::UnixEpoch_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/utilities/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/utilities/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal static class Converter :53
 // {
@@ -351,8 +351,8 @@ int Converter::TicksToDays(int64_t ticks)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public abstract class DateTimeZone :308
 // {
@@ -528,8 +528,8 @@ DateTimeZone* DateTimeZone::Utc()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/timezones/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/timezones/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // public sealed class DeviceTimeZone :7
 // {
@@ -645,8 +645,8 @@ DeviceTimeZone* DeviceTimeZone::New2(uString* id1)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public struct Duration :383
 // {
@@ -779,8 +779,8 @@ Duration Duration__New1(int64_t ticks1)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/timezones/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/timezones/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FixedDateTimeZone :50
 // {
@@ -884,8 +884,8 @@ FixedDateTimeZone* FixedDateTimeZone::New2(::g::Uno::Time::Offset offset1)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/utilities/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/utilities/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal static class HashCodeHelper :71
 // {
@@ -945,8 +945,8 @@ int HashCodeHelper::MakeHash(int code, int value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public struct Instant :585
 // {
@@ -1129,8 +1129,8 @@ bool Instant__op_Equality(Instant left, Instant right)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class LocalDate :792
 // {
@@ -1291,8 +1291,8 @@ bool LocalDate::op_Equality(LocalDate* lhs, LocalDate* rhs)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class LocalDateTime :1003
 // {
@@ -1681,8 +1681,8 @@ bool LocalDateTime::op_Equality(LocalDateTime* left, LocalDateTime* right)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public struct LocalTime :1322
 // {
@@ -1886,8 +1886,8 @@ bool LocalTime__op_Equality(LocalTime lhs, LocalTime rhs)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public struct Offset :1559
 // {
@@ -2100,8 +2100,8 @@ bool Offset__op_Equality(Offset left, Offset right)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class OffsetDateTime :1726
 // {
@@ -2329,8 +2329,8 @@ bool OffsetDateTime::op_Equality(OffsetDateTime* left, OffsetDateTime* right)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/utilities/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/utilities/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal static class Preconditions :104
 // {
@@ -2403,8 +2403,8 @@ uObject* Preconditions::CheckNotNull(uType* __type, uObject* argument, uString* 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/time/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class ZonedDateTime :2191
 // {

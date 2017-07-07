@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{namespace Fuse{struct App__RootViewHost;}}
 namespace g{
 namespace Fuse{
 
-// private sealed class App.RootViewHost :110
+// private sealed class App.RootViewHost :115
 // {
 struct App__RootViewHost_type : uType
 {

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/ux/attributes/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Uno{
 namespace UX{
 
-// public sealed class UXFileNameAttribute :261
+// public sealed class UXFileNameAttribute :278
 // {
 uType* UXFileNameAttribute_typeof();
 void UXFileNameAttribute__ctor_1_fn(UXFileNameAttribute* __this);

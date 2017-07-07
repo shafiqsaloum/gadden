@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Outracks{
 namespace Simulator{
 
-// public sealed class ForgetAction<TArg1, TArg2> :78
+// public sealed class ForgetAction<TArg1, TArg2> :79
 // {
 uType* ForgetAction1_typeof();
 void ForgetAction1__ctor__fn(ForgetAction1* __this, uDelegate* action);

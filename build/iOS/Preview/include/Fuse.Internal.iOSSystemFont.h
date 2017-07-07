@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/0.47.7/internal/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -15,17 +15,19 @@ namespace g{
 namespace Fuse{
 namespace Internal{
 
-// internal static extern class iOSSystemFont :1075
+// internal static extern class iOSSystemFont :1144
 // {
 uClassType* iOSSystemFont_typeof();
 void iOSSystemFont__AddFamily_fn(uString* name);
 void iOSSystemFont__AddFontPath_fn(uString* name, uString* path);
 void iOSSystemFont__AddFontPaths_fn();
 void iOSSystemFont__get_Default_fn(::g::Uno::Collections::List** __retval);
+void iOSSystemFont__get_DefaultFontName_fn(uString** __retval);
 void iOSSystemFont__EnsureFontPathsAdded_fn();
 void iOSSystemFont__get_Families_fn(::g::Uno::Collections::HashSet** __retval);
 void iOSSystemFont__get_FontPaths_fn(::g::Uno::Collections::Dictionary** __retval);
 void iOSSystemFont__Get_fn(uString* family, int* style, int* weight, ::g::Uno::Collections::List** __retval);
+void iOSSystemFont__GetDefaultFontFamily_fn(uString** __retval);
 void iOSSystemFont__GetDefaultUIFontDescriptor_fn(::g::ObjC::Object** __retval);
 void iOSSystemFont__GetDescriptorFontName_fn(::g::ObjC::Object* descriptor, uString** __retval);
 void iOSSystemFont__GetDescriptors_fn(uString* fileName, uArray** __retval);
@@ -53,6 +55,7 @@ struct iOSSystemFont : uObject
     static void AddFontPaths();
     static void EnsureFontPathsAdded();
     static ::g::Uno::Collections::List* Get(uString* family, int style, int weight);
+    static uString* GetDefaultFontFamily();
     static ::g::ObjC::Object* GetDefaultUIFontDescriptor();
     static uString* GetDescriptorFontName(::g::ObjC::Object* descriptor);
     static uArray* GetDescriptors(uString* fileName);
@@ -66,6 +69,7 @@ struct iOSSystemFont : uObject
     static uString* GetPostscriptName(::g::ObjC::Object* descriptor);
     static uString* GetStyleName(::g::ObjC::Object* descriptor);
     static ::g::Uno::Collections::List* Default();
+    static uString* DefaultFontName();
     static ::g::Uno::Collections::HashSet* Families();
     static ::g::Uno::Collections::Dictionary* FontPaths();
 };

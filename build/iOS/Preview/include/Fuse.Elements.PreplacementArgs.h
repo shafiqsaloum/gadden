@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// public sealed class PreplacementArgs :1789
+// public sealed class PreplacementArgs :1850
 // {
 uType* PreplacementArgs_typeof();
 void PreplacementArgs__ctor_1_fn(PreplacementArgs* __this, bool* hasPrev);

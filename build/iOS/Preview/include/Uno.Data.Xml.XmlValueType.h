@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/0.47.4/source/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Data.Xml/1.0.1/source/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

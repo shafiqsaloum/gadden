@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.Controls.AutoCap-526a856d.h>
@@ -39,7 +39,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// public sealed extern class MultiLineTextEdit :2664
+// public sealed extern class MultiLineTextEdit :2758
 // {
 static void MultiLineTextEdit_build(uType* type)
 {
@@ -106,25 +106,25 @@ MultiLineTextEdit_type* MultiLineTextEdit_typeof()
     return type;
 }
 
-// public MultiLineTextEdit(Fuse.Controls.Native.ITextEditHost host) :2695
+// public MultiLineTextEdit(Fuse.Controls.Native.ITextEditHost host) :2789
 void MultiLineTextEdit__ctor_5_fn(MultiLineTextEdit* __this, uObject* host)
 {
     __this->ctor_5(host);
 }
 
-// private static ObjC.Object Create() :2712
+// private static ObjC.Object Create() :2806
 void MultiLineTextEdit__Create_fn(::g::ObjC::Object** __retval)
 {
     *__retval = MultiLineTextEdit::Create();
 }
 
-// private static ObjC.Object CreateDelegate(ObjC.Object handle, Uno.Action<ObjC.Object> callback, Uno.Action didBeginEditingCallback) :2720
+// private static ObjC.Object CreateDelegate(ObjC.Object handle, Uno.Action<ObjC.Object> callback, Uno.Action didBeginEditingCallback) :2814
 void MultiLineTextEdit__CreateDelegate_fn(::g::ObjC::Object* handle, uDelegate* callback, uDelegate* didBeginEditingCallback, ::g::ObjC::Object** __retval)
 {
     *__retval = MultiLineTextEdit::CreateDelegate(handle, callback, didBeginEditingCallback);
 }
 
-// public override sealed void Dispose() :2703
+// public override sealed void Dispose() :2797
 void MultiLineTextEdit__Dispose_fn(MultiLineTextEdit* __this)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", "Dispose()");
@@ -134,21 +134,21 @@ void MultiLineTextEdit__Dispose_fn(MultiLineTextEdit* __this)
     ::g::Fuse::Controls::Native::ViewHandle__Dispose_fn(__this);
 }
 
-// private void Fuse.Controls.Native.iOS.INativeFocusListener.FocusGained() :2753
+// private void Fuse.Controls.Native.iOS.INativeFocusListener.FocusGained() :2847
 void MultiLineTextEdit__FuseControlsNativeiOSINativeFocusListenerFocusGained_fn(MultiLineTextEdit* __this)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", "Fuse.Controls.Native.iOS.INativeFocusListener.FocusGained()");
     ::g::Fuse::Controls::Native::ITextEditHost::OnFocusGained(uInterface(uPtr(__this->_host), ::TYPES[2/*Fuse.Controls.Native.ITextEditHost*/]));
 }
 
-// private void Fuse.Controls.Native.iOS.INativeFocusListener.FocusLost() :2758
+// private void Fuse.Controls.Native.iOS.INativeFocusListener.FocusLost() :2852
 void MultiLineTextEdit__FuseControlsNativeiOSINativeFocusListenerFocusLost_fn(MultiLineTextEdit* __this)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", "Fuse.Controls.Native.iOS.INativeFocusListener.FocusLost()");
     ::g::Fuse::Controls::Native::ITextEditHost::OnFocusLost(uInterface(uPtr(__this->_host), ::TYPES[2/*Fuse.Controls.Native.ITextEditHost*/]));
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_ActionStyle(Fuse.Controls.TextInputActionStyle value) :2894
+// private void Fuse.Controls.Native.ITextEdit.set_ActionStyle(Fuse.Controls.TextInputActionStyle value) :2988
 void MultiLineTextEdit__FuseControlsNativeITextEditset_ActionStyle_fn(MultiLineTextEdit* __this, int* value)
 {
     int value_ = *value;
@@ -188,7 +188,7 @@ void MultiLineTextEdit__FuseControlsNativeITextEditset_ActionStyle_fn(MultiLineT
     }
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_AutoCapitalizationHint(Fuse.Controls.AutoCapitalizationHint value) :2923
+// private void Fuse.Controls.Native.ITextEdit.set_AutoCapitalizationHint(Fuse.Controls.AutoCapitalizationHint value) :3017
 void MultiLineTextEdit__FuseControlsNativeITextEditset_AutoCapitalizationHint_fn(MultiLineTextEdit* __this, int* value)
 {
     int value_ = *value;
@@ -218,7 +218,7 @@ void MultiLineTextEdit__FuseControlsNativeITextEditset_AutoCapitalizationHint_fn
     }
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_AutoCorrectHint(Fuse.Controls.AutoCorrectHint value) :2910
+// private void Fuse.Controls.Native.ITextEdit.set_AutoCorrectHint(Fuse.Controls.AutoCorrectHint value) :3004
 void MultiLineTextEdit__FuseControlsNativeITextEditset_AutoCorrectHint_fn(MultiLineTextEdit* __this, int* value)
 {
     int value_ = *value;
@@ -243,28 +243,28 @@ void MultiLineTextEdit__FuseControlsNativeITextEditset_AutoCorrectHint_fn(MultiL
     }
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_CaretColor(float4 value) :2876
+// private void Fuse.Controls.Native.ITextEdit.set_CaretColor(float4 value) :2970
 void MultiLineTextEdit__FuseControlsNativeITextEditset_CaretColor_fn(MultiLineTextEdit* __this, ::g::Uno::Float4* value)
 {
     ::g::Uno::Float4 value_ = *value;
     MultiLineTextEdit::SetCaretColor(__this->Handle(), value_.X, value_.Y, value_.Z, value_.W);
 }
 
-// private void Fuse.Controls.Native.ITextEdit.FocusGained() :2743
+// private void Fuse.Controls.Native.ITextEdit.FocusGained() :2837
 void MultiLineTextEdit__FuseControlsNativeITextEditFocusGained_fn(MultiLineTextEdit* __this)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", "Fuse.Controls.Native.ITextEdit.FocusGained()");
     ::g::Fuse::Controls::Native::iOS::FocusHelpers::ScheduleBecomeFirstResponder(__this->Handle());
 }
 
-// private void Fuse.Controls.Native.ITextEdit.FocusLost() :2748
+// private void Fuse.Controls.Native.ITextEdit.FocusLost() :2842
 void MultiLineTextEdit__FuseControlsNativeITextEditFocusLost_fn(MultiLineTextEdit* __this)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", "Fuse.Controls.Native.ITextEdit.FocusLost()");
     ::g::Fuse::Controls::Native::iOS::FocusHelpers::ScheduleResignFirstResponder(__this->Handle());
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_InputHint(Fuse.Controls.TextInputHint value) :2860
+// private void Fuse.Controls.Native.ITextEdit.set_InputHint(Fuse.Controls.TextInputHint value) :2954
 void MultiLineTextEdit__FuseControlsNativeITextEditset_InputHint_fn(MultiLineTextEdit* __this, int* value)
 {
     int value_ = *value;
@@ -304,43 +304,43 @@ void MultiLineTextEdit__FuseControlsNativeITextEditset_InputHint_fn(MultiLineTex
     }
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_IsMultiline(bool value) :2845
+// private void Fuse.Controls.Native.ITextEdit.set_IsMultiline(bool value) :2939
 void MultiLineTextEdit__FuseControlsNativeITextEditset_IsMultiline_fn(MultiLineTextEdit* __this, bool* value)
 {
     bool value_ = *value;
     MultiLineTextEdit::SetIsMultiline(__this->Handle(), value_);
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_IsPassword(bool value) :2850
+// private void Fuse.Controls.Native.ITextEdit.set_IsPassword(bool value) :2944
 void MultiLineTextEdit__FuseControlsNativeITextEditset_IsPassword_fn(MultiLineTextEdit* __this, bool* value)
 {
     bool value_ = *value;
     MultiLineTextEdit::SetIsPassword(__this->Handle(), value_);
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_IsReadOnly(bool value) :2855
+// private void Fuse.Controls.Native.ITextEdit.set_IsReadOnly(bool value) :2949
 void MultiLineTextEdit__FuseControlsNativeITextEditset_IsReadOnly_fn(MultiLineTextEdit* __this, bool* value)
 {
     bool value_ = *value;
     MultiLineTextEdit::SetIsReadOnly(__this->Handle(), value_);
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_PlaceholderColor(float4 value) :2942
+// private void Fuse.Controls.Native.ITextEdit.set_PlaceholderColor(float4 value) :3036
 void MultiLineTextEdit__FuseControlsNativeITextEditset_PlaceholderColor_fn(MultiLineTextEdit* __this, ::g::Uno::Float4* value)
 {
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_PlaceholderText(string value) :2937
+// private void Fuse.Controls.Native.ITextEdit.set_PlaceholderText(string value) :3031
 void MultiLineTextEdit__FuseControlsNativeITextEditset_PlaceholderText_fn(MultiLineTextEdit* __this, uString* value)
 {
 }
 
-// private void Fuse.Controls.Native.ITextEdit.set_SelectionColor(float4 value) :2889
+// private void Fuse.Controls.Native.ITextEdit.set_SelectionColor(float4 value) :2983
 void MultiLineTextEdit__FuseControlsNativeITextEditset_SelectionColor_fn(MultiLineTextEdit* __this, ::g::Uno::Float4* value)
 {
 }
 
-// private void Fuse.Controls.Native.ITextView.set_Font(Fuse.Font value) :2814
+// private void Fuse.Controls.Native.ITextView.set_Font(Fuse.Font value) :2908
 void MultiLineTextEdit__FuseControlsNativeITextViewset_Font_fn(MultiLineTextEdit* __this, ::g::Fuse::Font* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", "Fuse.Controls.Native.ITextView.set_Font(Fuse.Font)");
@@ -354,7 +354,7 @@ void MultiLineTextEdit__FuseControlsNativeITextViewset_Font_fn(MultiLineTextEdit
     }
 }
 
-// private void Fuse.Controls.Native.ITextView.set_FontSize(float value) :2801
+// private void Fuse.Controls.Native.ITextView.set_FontSize(float value) :2895
 void MultiLineTextEdit__FuseControlsNativeITextViewset_FontSize_fn(MultiLineTextEdit* __this, float* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", "Fuse.Controls.Native.ITextView.set_FontSize(float)");
@@ -369,7 +369,7 @@ void MultiLineTextEdit__FuseControlsNativeITextViewset_FontSize_fn(MultiLineText
     }
 }
 
-// private void Fuse.Controls.Native.ITextView.set_LineSpacing(float value) :2795
+// private void Fuse.Controls.Native.ITextView.set_LineSpacing(float value) :2889
 void MultiLineTextEdit__FuseControlsNativeITextViewset_LineSpacing_fn(MultiLineTextEdit* __this, float* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", "Fuse.Controls.Native.ITextView.set_LineSpacing(float)");
@@ -377,14 +377,14 @@ void MultiLineTextEdit__FuseControlsNativeITextViewset_LineSpacing_fn(MultiLineT
     MultiLineTextEdit::SetValue(__this->Handle(), uPtr(uPtr(__this->_builder)->SetLineSpacing(value_))->BuildAttributedString());
 }
 
-// private void Fuse.Controls.Native.ITextView.set_MaxLength(int value) :2778
+// private void Fuse.Controls.Native.ITextView.set_MaxLength(int value) :2872
 void MultiLineTextEdit__FuseControlsNativeITextViewset_MaxLength_fn(MultiLineTextEdit* __this, int* value)
 {
     int value_ = *value;
     MultiLineTextEdit::SetMaxLength(__this->_delegate, (value_ == 0) ? 2147483647 : value_);
 }
 
-// private void Fuse.Controls.Native.ITextView.set_TextAlignment(Fuse.Controls.TextAlignment value) :2830
+// private void Fuse.Controls.Native.ITextView.set_TextAlignment(Fuse.Controls.TextAlignment value) :2924
 void MultiLineTextEdit__FuseControlsNativeITextViewset_TextAlignment_fn(MultiLineTextEdit* __this, int* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", "Fuse.Controls.Native.ITextView.set_TextAlignment(Fuse.Controls.TextAlignment)");
@@ -392,7 +392,7 @@ void MultiLineTextEdit__FuseControlsNativeITextViewset_TextAlignment_fn(MultiLin
     MultiLineTextEdit::SetValue(__this->Handle(), uPtr(uPtr(__this->_builder)->SetTextAlignment(value_))->BuildAttributedString());
 }
 
-// private void Fuse.Controls.Native.ITextView.set_TextColor(float4 value) :2835
+// private void Fuse.Controls.Native.ITextView.set_TextColor(float4 value) :2929
 void MultiLineTextEdit__FuseControlsNativeITextViewset_TextColor_fn(MultiLineTextEdit* __this, ::g::Uno::Float4* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", "Fuse.Controls.Native.ITextView.set_TextColor(float4)");
@@ -400,12 +400,12 @@ void MultiLineTextEdit__FuseControlsNativeITextViewset_TextColor_fn(MultiLineTex
     MultiLineTextEdit::SetValue(__this->Handle(), uPtr(uPtr(__this->_builder)->SetTextColor(value_))->BuildAttributedString());
 }
 
-// private void Fuse.Controls.Native.ITextView.set_TextTruncation(Fuse.Controls.TextTruncation value) :2840
+// private void Fuse.Controls.Native.ITextView.set_TextTruncation(Fuse.Controls.TextTruncation value) :2934
 void MultiLineTextEdit__FuseControlsNativeITextViewset_TextTruncation_fn(MultiLineTextEdit* __this, int* value)
 {
 }
 
-// private void Fuse.Controls.Native.ITextView.set_TextWrapping(Fuse.Controls.TextWrapping value) :2790
+// private void Fuse.Controls.Native.ITextView.set_TextWrapping(Fuse.Controls.TextWrapping value) :2884
 void MultiLineTextEdit__FuseControlsNativeITextViewset_TextWrapping_fn(MultiLineTextEdit* __this, int* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", "Fuse.Controls.Native.ITextView.set_TextWrapping(Fuse.Controls.TextWrapping)");
@@ -413,116 +413,116 @@ void MultiLineTextEdit__FuseControlsNativeITextViewset_TextWrapping_fn(MultiLine
     MultiLineTextEdit::SetValue(__this->Handle(), uPtr(uPtr(__this->_builder)->SetTextWrapping(value_))->BuildAttributedString());
 }
 
-// private void Fuse.Controls.Native.ITextView.set_Value(string value) :2772
+// private void Fuse.Controls.Native.ITextView.set_Value(string value) :2866
 void MultiLineTextEdit__FuseControlsNativeITextViewset_Value_fn(MultiLineTextEdit* __this, uString* value)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", "Fuse.Controls.Native.ITextView.set_Value(string)");
     MultiLineTextEdit::SetValue(__this->Handle(), uPtr(uPtr(__this->_builder)->SetValue(value))->BuildAttributedString());
 }
 
-// private static string GetValue(ObjC.Object handle) :2960
+// private static string GetValue(ObjC.Object handle) :3054
 void MultiLineTextEdit__GetValue_fn(::g::ObjC::Object* handle, uString** __retval)
 {
     *__retval = MultiLineTextEdit::GetValue(handle);
 }
 
-// public MultiLineTextEdit New(Fuse.Controls.Native.ITextEditHost host) :2695
+// public MultiLineTextEdit New(Fuse.Controls.Native.ITextEditHost host) :2789
 void MultiLineTextEdit__New3_fn(uObject* host, MultiLineTextEdit** __retval)
 {
     *__retval = MultiLineTextEdit::New3(host);
 }
 
-// private void OnDidBeginEditing() :2731
+// private void OnDidBeginEditing() :2825
 void MultiLineTextEdit__OnDidBeginEditing_fn(MultiLineTextEdit* __this)
 {
     __this->OnDidBeginEditing();
 }
 
-// protected internal override sealed void OnSizeChanged() :2667
+// protected internal override sealed void OnSizeChanged() :2761
 void MultiLineTextEdit__OnSizeChanged_fn(MultiLineTextEdit* __this)
 {
     MultiLineTextEdit::UpdateContentOffset(__this->Handle());
 }
 
-// private void OnTextChanged(ObjC.Object uitextView) :2763
+// private void OnTextChanged(ObjC.Object uitextView) :2857
 void MultiLineTextEdit__OnTextChanged_fn(MultiLineTextEdit* __this, ::g::ObjC::Object* uitextView)
 {
     __this->OnTextChanged(uitextView);
 }
 
-// private static void SetActionStyle(ObjC.Object handle, int style) :2995
+// private static void SetActionStyle(ObjC.Object handle, int style) :3089
 void MultiLineTextEdit__SetActionStyle_fn(::g::ObjC::Object* handle, int* style)
 {
     MultiLineTextEdit::SetActionStyle(handle, *style);
 }
 
-// private static void SetAutoCapitalizationHint(ObjC.Object handle, int hint) :3009
+// private static void SetAutoCapitalizationHint(ObjC.Object handle, int hint) :3103
 void MultiLineTextEdit__SetAutoCapitalizationHint_fn(::g::ObjC::Object* handle, int* hint)
 {
     MultiLineTextEdit::SetAutoCapitalizationHint(handle, *hint);
 }
 
-// private static void SetAutoCorrectHint(ObjC.Object handle, int hint) :3002
+// private static void SetAutoCorrectHint(ObjC.Object handle, int hint) :3096
 void MultiLineTextEdit__SetAutoCorrectHint_fn(::g::ObjC::Object* handle, int* hint)
 {
     MultiLineTextEdit::SetAutoCorrectHint(handle, *hint);
 }
 
-// private static void SetCaretColor(ObjC.Object handle, float r, float g, float b, float a) :2880
+// private static void SetCaretColor(ObjC.Object handle, float r, float g, float b, float a) :2974
 void MultiLineTextEdit__SetCaretColor_fn(::g::ObjC::Object* handle, float* r, float* g, float* b, float* a)
 {
     MultiLineTextEdit::SetCaretColor(handle, *r, *g, *b, *a);
 }
 
-// private static void SetInputHint(ObjC.Object handle, int hint) :2988
+// private static void SetInputHint(ObjC.Object handle, int hint) :3082
 void MultiLineTextEdit__SetInputHint_fn(::g::ObjC::Object* handle, int* hint)
 {
     MultiLineTextEdit::SetInputHint(handle, *hint);
 }
 
-// private static void SetIsMultiline(ObjC.Object handle, bool isMultiline) :2981
+// private static void SetIsMultiline(ObjC.Object handle, bool isMultiline) :3075
 void MultiLineTextEdit__SetIsMultiline_fn(::g::ObjC::Object* handle, bool* isMultiline)
 {
     MultiLineTextEdit::SetIsMultiline(handle, *isMultiline);
 }
 
-// private static void SetIsPassword(ObjC.Object handle, bool isPassword) :2974
+// private static void SetIsPassword(ObjC.Object handle, bool isPassword) :3068
 void MultiLineTextEdit__SetIsPassword_fn(::g::ObjC::Object* handle, bool* isPassword)
 {
     MultiLineTextEdit::SetIsPassword(handle, *isPassword);
 }
 
-// private static void SetIsReadOnly(ObjC.Object handle, bool isReadOnly) :2967
+// private static void SetIsReadOnly(ObjC.Object handle, bool isReadOnly) :3061
 void MultiLineTextEdit__SetIsReadOnly_fn(::g::ObjC::Object* handle, bool* isReadOnly)
 {
     MultiLineTextEdit::SetIsReadOnly(handle, *isReadOnly);
 }
 
-// private static void SetMaxLength(ObjC.Object delegateHandle, int maxLength) :2782
+// private static void SetMaxLength(ObjC.Object delegateHandle, int maxLength) :2876
 void MultiLineTextEdit__SetMaxLength_fn(::g::ObjC::Object* delegateHandle, int* maxLength)
 {
     MultiLineTextEdit::SetMaxLength(delegateHandle, *maxLength);
 }
 
-// private static void SetTypingAttributes(ObjC.Object handle, ObjC.Object typingAttributes) :2737
+// private static void SetTypingAttributes(ObjC.Object handle, ObjC.Object typingAttributes) :2831
 void MultiLineTextEdit__SetTypingAttributes_fn(::g::ObjC::Object* handle, ::g::ObjC::Object* typingAttributes)
 {
     MultiLineTextEdit::SetTypingAttributes(handle, typingAttributes);
 }
 
-// private static void SetValue(ObjC.Object handle, ObjC.Object value) :2953
+// private static void SetValue(ObjC.Object handle, ObjC.Object value) :3047
 void MultiLineTextEdit__SetValue_fn(::g::ObjC::Object* handle, ::g::ObjC::Object* value)
 {
     MultiLineTextEdit::SetValue(handle, value);
 }
 
-// private static void UpdateContentOffset(ObjC.Object handle) :2673
+// private static void UpdateContentOffset(ObjC.Object handle) :2767
 void MultiLineTextEdit__UpdateContentOffset_fn(::g::ObjC::Object* handle)
 {
     MultiLineTextEdit::UpdateContentOffset(handle);
 }
 
-// public MultiLineTextEdit(Fuse.Controls.Native.ITextEditHost host) [instance] :2695
+// public MultiLineTextEdit(Fuse.Controls.Native.ITextEditHost host) [instance] :2789
 void MultiLineTextEdit::ctor_5(uObject* host)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", ".ctor(Fuse.Controls.Native.ITextEditHost)");
@@ -535,14 +535,14 @@ void MultiLineTextEdit::ctor_5(uObject* host)
     ::g::Fuse::Controls::Native::iOS::NativeFocus::AddListener(Handle(), (uObject*)this);
 }
 
-// private void OnDidBeginEditing() [instance] :2731
+// private void OnDidBeginEditing() [instance] :2825
 void MultiLineTextEdit::OnDidBeginEditing()
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", "OnDidBeginEditing()");
     MultiLineTextEdit::SetTypingAttributes(Handle(), uPtr(_builder)->BuildAttributes());
 }
 
-// private void OnTextChanged(ObjC.Object uitextView) [instance] :2763
+// private void OnTextChanged(ObjC.Object uitextView) [instance] :2857
 void MultiLineTextEdit::OnTextChanged(::g::ObjC::Object* uitextView)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.MultiLineTextEdit", "OnTextChanged(ObjC.Object)");
@@ -551,7 +551,7 @@ void MultiLineTextEdit::OnTextChanged(::g::ObjC::Object* uitextView)
     ::g::Fuse::Controls::Native::ITextEditHost::OnValueChanged(uInterface(uPtr(_host), ::TYPES[2/*Fuse.Controls.Native.ITextEditHost*/]), value);
 }
 
-// private static ObjC.Object Create() [static] :2712
+// private static ObjC.Object Create() [static] :2806
 ::g::ObjC::Object* MultiLineTextEdit::Create()
 {
     @autoreleasepool
@@ -567,7 +567,7 @@ void MultiLineTextEdit::OnTextChanged(::g::ObjC::Object* uitextView)
     
 }
 
-// private static ObjC.Object CreateDelegate(ObjC.Object handle, Uno.Action<ObjC.Object> callback, Uno.Action didBeginEditingCallback) [static] :2720
+// private static ObjC.Object CreateDelegate(ObjC.Object handle, Uno.Action<ObjC.Object> callback, Uno.Action didBeginEditingCallback) [static] :2814
 ::g::ObjC::Object* MultiLineTextEdit::CreateDelegate(::g::ObjC::Object* handle, uDelegate* callback, uDelegate* didBeginEditingCallback)
 {
     @autoreleasepool
@@ -605,7 +605,7 @@ void MultiLineTextEdit::OnTextChanged(::g::ObjC::Object* uitextView)
     
 }
 
-// private static string GetValue(ObjC.Object handle) [static] :2960
+// private static string GetValue(ObjC.Object handle) [static] :3054
 uString* MultiLineTextEdit::GetValue(::g::ObjC::Object* handle)
 {
     @autoreleasepool
@@ -620,7 +620,7 @@ uString* MultiLineTextEdit::GetValue(::g::ObjC::Object* handle)
     
 }
 
-// public MultiLineTextEdit New(Fuse.Controls.Native.ITextEditHost host) [static] :2695
+// public MultiLineTextEdit New(Fuse.Controls.Native.ITextEditHost host) [static] :2789
 MultiLineTextEdit* MultiLineTextEdit::New3(uObject* host)
 {
     MultiLineTextEdit* obj1 = (MultiLineTextEdit*)uNew(MultiLineTextEdit_typeof());
@@ -628,7 +628,7 @@ MultiLineTextEdit* MultiLineTextEdit::New3(uObject* host)
     return obj1;
 }
 
-// private static void SetActionStyle(ObjC.Object handle, int style) [static] :2995
+// private static void SetActionStyle(ObjC.Object handle, int style) [static] :3089
 void MultiLineTextEdit::SetActionStyle(::g::ObjC::Object* handle, int style)
 {
     @autoreleasepool
@@ -643,7 +643,7 @@ void MultiLineTextEdit::SetActionStyle(::g::ObjC::Object* handle, int style)
     
 }
 
-// private static void SetAutoCapitalizationHint(ObjC.Object handle, int hint) [static] :3009
+// private static void SetAutoCapitalizationHint(ObjC.Object handle, int hint) [static] :3103
 void MultiLineTextEdit::SetAutoCapitalizationHint(::g::ObjC::Object* handle, int hint)
 {
     @autoreleasepool
@@ -658,7 +658,7 @@ void MultiLineTextEdit::SetAutoCapitalizationHint(::g::ObjC::Object* handle, int
     
 }
 
-// private static void SetAutoCorrectHint(ObjC.Object handle, int hint) [static] :3002
+// private static void SetAutoCorrectHint(ObjC.Object handle, int hint) [static] :3096
 void MultiLineTextEdit::SetAutoCorrectHint(::g::ObjC::Object* handle, int hint)
 {
     @autoreleasepool
@@ -673,7 +673,7 @@ void MultiLineTextEdit::SetAutoCorrectHint(::g::ObjC::Object* handle, int hint)
     
 }
 
-// private static void SetCaretColor(ObjC.Object handle, float r, float g, float b, float a) [static] :2880
+// private static void SetCaretColor(ObjC.Object handle, float r, float g, float b, float a) [static] :2974
 void MultiLineTextEdit::SetCaretColor(::g::ObjC::Object* handle, float r, float g, float b, float a)
 {
     @autoreleasepool
@@ -689,7 +689,7 @@ void MultiLineTextEdit::SetCaretColor(::g::ObjC::Object* handle, float r, float 
     
 }
 
-// private static void SetInputHint(ObjC.Object handle, int hint) [static] :2988
+// private static void SetInputHint(ObjC.Object handle, int hint) [static] :3082
 void MultiLineTextEdit::SetInputHint(::g::ObjC::Object* handle, int hint)
 {
     @autoreleasepool
@@ -704,7 +704,7 @@ void MultiLineTextEdit::SetInputHint(::g::ObjC::Object* handle, int hint)
     
 }
 
-// private static void SetIsMultiline(ObjC.Object handle, bool isMultiline) [static] :2981
+// private static void SetIsMultiline(ObjC.Object handle, bool isMultiline) [static] :3075
 void MultiLineTextEdit::SetIsMultiline(::g::ObjC::Object* handle, bool isMultiline)
 {
     @autoreleasepool
@@ -719,7 +719,7 @@ void MultiLineTextEdit::SetIsMultiline(::g::ObjC::Object* handle, bool isMultili
     
 }
 
-// private static void SetIsPassword(ObjC.Object handle, bool isPassword) [static] :2974
+// private static void SetIsPassword(ObjC.Object handle, bool isPassword) [static] :3068
 void MultiLineTextEdit::SetIsPassword(::g::ObjC::Object* handle, bool isPassword)
 {
     @autoreleasepool
@@ -734,7 +734,7 @@ void MultiLineTextEdit::SetIsPassword(::g::ObjC::Object* handle, bool isPassword
     
 }
 
-// private static void SetIsReadOnly(ObjC.Object handle, bool isReadOnly) [static] :2967
+// private static void SetIsReadOnly(ObjC.Object handle, bool isReadOnly) [static] :3061
 void MultiLineTextEdit::SetIsReadOnly(::g::ObjC::Object* handle, bool isReadOnly)
 {
     @autoreleasepool
@@ -749,7 +749,7 @@ void MultiLineTextEdit::SetIsReadOnly(::g::ObjC::Object* handle, bool isReadOnly
     
 }
 
-// private static void SetMaxLength(ObjC.Object delegateHandle, int maxLength) [static] :2782
+// private static void SetMaxLength(ObjC.Object delegateHandle, int maxLength) [static] :2876
 void MultiLineTextEdit::SetMaxLength(::g::ObjC::Object* delegateHandle, int maxLength)
 {
     @autoreleasepool
@@ -764,7 +764,7 @@ void MultiLineTextEdit::SetMaxLength(::g::ObjC::Object* delegateHandle, int maxL
     
 }
 
-// private static void SetTypingAttributes(ObjC.Object handle, ObjC.Object typingAttributes) [static] :2737
+// private static void SetTypingAttributes(ObjC.Object handle, ObjC.Object typingAttributes) [static] :2831
 void MultiLineTextEdit::SetTypingAttributes(::g::ObjC::Object* handle, ::g::ObjC::Object* typingAttributes)
 {
     @autoreleasepool
@@ -779,7 +779,7 @@ void MultiLineTextEdit::SetTypingAttributes(::g::ObjC::Object* handle, ::g::ObjC
     
 }
 
-// private static void SetValue(ObjC.Object handle, ObjC.Object value) [static] :2953
+// private static void SetValue(ObjC.Object handle, ObjC.Object value) [static] :3047
 void MultiLineTextEdit::SetValue(::g::ObjC::Object* handle, ::g::ObjC::Object* value)
 {
     @autoreleasepool
@@ -794,7 +794,7 @@ void MultiLineTextEdit::SetValue(::g::ObjC::Object* handle, ::g::ObjC::Object* v
     
 }
 
-// private static void UpdateContentOffset(ObjC.Object handle) [static] :2673
+// private static void UpdateContentOffset(ObjC.Object handle) [static] :2767
 void MultiLineTextEdit::UpdateContentOffset(::g::ObjC::Object* handle)
 {
     @autoreleasepool

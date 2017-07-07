@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -17,7 +17,7 @@ namespace g{
 namespace Fuse{
 namespace Resources{
 
-// public sealed class ResourceFloat :3643
+// public sealed class ResourceFloat :3705
 // {
 ::g::Fuse::Node_type* ResourceFloat_typeof();
 void ResourceFloat__ctor_4_fn(ResourceFloat* __this);

@@ -1,7 +1,8 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <_root.FuseAndroid_bundle.h>
+#include <_root.DashedSolidColor.h>
+#include <_root.FuseAndroidText-9d82b652.h>
 #include <_root.FuseControls_bundle.h>
 #include <_root.FuseControlsNat-fa0facbc.h>
 #include <_root.FuseControlsNav-a8c01cdb.h>
@@ -20,36 +21,32 @@
 #include <_root.FuseControlsPri-d52a5a11.h>
 #include <_root.FuseControlsPri-d9ada289.h>
 #include <_root.FuseControlsPri-e9d2ee5b.h>
-#include <_root.FuseControlsScr-18c1b8f6.h>
 #include <_root.FuseControlsScr-48813899.h>
-#include <_root.FuseControlsScr-60808f6d.h>
 #include <_root.FuseControlsScr-f1bcb258.h>
 #include <_root.FuseControlsVideo_bundle.h>
 #include <_root.FuseDrawing_bundle.h>
-#include <_root.FuseDrawingPoly-82f4f34.h>
 #include <_root.FuseDrawingPrim-c6713933.h>
+#include <_root.FuseDrawingSurf-41037ecc.h>
 #include <_root.FuseEffects_bundle.h>
 #include <_root.FuseElements_bundle.h>
 #include <_root.FuseNodes_bundle.h>
 #include <_root.FuseReactiveJav-1015c09d.h>
 #include <_root.FuseText_bundle.h>
-#include <_root.HashableWeakReference.h>
-#include <_root.OutracksSimulat-218d2df9.h>
-#include <_root.OutracksSimulat-238d0f83.h>
-#include <_root.OutracksSimulat-307dad8c.h>
-#include <_root.OutracksSimulat-369acd0e.h>
+#include <_root.OutracksSimulat-28d0228.h>
+#include <_root.OutracksSimulat-3176f451.h>
+#include <_root.OutracksSimulat-41c33877.h>
+#include <_root.OutracksSimulat-4a6a98a8.h>
+#include <_root.OutracksSimulat-61b10ffd.h>
+#include <_root.OutracksSimulat-72874f79.h>
 #include <_root.OutracksSimulat-7329dae0.h>
-#include <_root.OutracksSimulat-a28a5744.h>
-#include <_root.OutracksSimulat-a4cead99.h>
+#include <_root.OutracksSimulat-7f31d2ed.h>
+#include <_root.OutracksSimulat-84973ed3.h>
+#include <_root.OutracksSimulat-88868d11.h>
 #include <_root.OutracksSimulat-afca775d.h>
-#include <_root.OutracksSimulat-c3303a78.h>
-#include <_root.OutracksSimulat-cf003b06.h>
-#include <_root.OutracksSimulat-d1289fec.h>
-#include <_root.OutracksSimulat-d50225e2.h>
-#include <_root.OutracksSimulat-d900317a.h>
+#include <_root.OutracksSimulat-c5ccb7a7.h>
+#include <_root.OutracksSimulat-d5b16023.h>
 #include <_root.OutracksSimulat-eb4af30d.h>
 #include <_root.UnoCore_bundle.h>
-#include <_root.WeakDictionary-2.h>
 #include <Fuse.Controls.ButtonBase.h>
 #include <Fuse.Controls.Panel.h>
 #include <Fuse.Controls.ScrollViewBase.h>
@@ -60,15 +57,14 @@
 #include <Fuse.Drawing.Stroke.h>
 #include <Fuse.Effects.DropShadow.h>
 #include <Fuse.Elements.Element.h>
-#include <Fuse.Gestures.Scroller.h>
 #include <Fuse.Gestures.SwipeGesture.h>
 #include <Fuse.Triggers.WhileBool.h>
-#include <Outracks.Simulator.ErrorToast.h>
+#include <Fuse.Triggers.WhileString.h>
+#include <Fuse.Triggers.WhileValue-1.h>
+#include <Outracks.Simulator.Cl-1b215019.h>
+#include <Outracks.Simulator.Cl-b47ea6ce.h>
 #include <Uno.Bool.h>
-#include <Uno.Collections.Dictionary-2.h>
-#include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.KeyValuePair-2.h>
-#include <Uno.Float4.h>
+#include <Uno.Float.h>
 #include <Uno.Int.h>
 #include <Uno.IO.Bundle.h>
 #include <Uno.IO.BundleFile.h>
@@ -79,26 +75,217 @@
 #include <Uno.UX.IPropertyListener.h>
 #include <Uno.UX.PropertyObject.h>
 #include <Uno.UX.Selector.h>
-#include <Uno.WeakReference-1.h>
-static uString* STRINGS[178];
-static uType* TYPES[19];
+static uString* STRINGS[185];
+static uType* TYPES[18];
 
 namespace g{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Android/0.47.7/.uno/package
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
+// -----------------------------------------------------------------------
 
-// public static generated class FuseAndroid_bundle :0
+// public sealed class DashedSolidColor :955
 // {
-// static FuseAndroid_bundle() :0
-static void FuseAndroid_bundle__cctor__fn(uType* __type)
+// static DashedSolidColor() :955
+static void DashedSolidColor__cctor_1_fn(uType* __type)
 {
-    FuseAndroid_bundle::Blitter83cfc6f0_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[0/*"uniform vec...*/], ::STRINGS[1/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 5, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[6/*"f"*/]));
+    DashedSolidColor::_colorName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"Color"*/]);
+    DashedSolidColor::_dashSizeName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[1/*"DashSize"*/]);
 }
 
-static void FuseAndroid_bundle_build(uType* type)
+static void DashedSolidColor_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("uniform vec2 c, b;\n"
+    ::STRINGS[0] = uString::Const("Color");
+    ::STRINGS[1] = uString::Const("DashSize");
+    type->SetFields(4,
+        ::g::Uno::Float4_typeof(), offsetof(::g::DashedSolidColor, _color), 0,
+        ::g::Uno::Float_typeof(), offsetof(::g::DashedSolidColor, _dashSize), 0,
+        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::DashedSolidColor::_colorName_, uFieldFlagsStatic,
+        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::DashedSolidColor::_dashSizeName_, uFieldFlagsStatic);
+    type->Reflection.SetFunctions(7,
+        new uFunction("get_Color", NULL, (void*)DashedSolidColor__get_Color_fn, 0, false, ::g::Uno::Float4_typeof(), 0),
+        new uFunction("set_Color", NULL, (void*)DashedSolidColor__set_Color_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float4_typeof()),
+        new uFunction("get_DashSize", NULL, (void*)DashedSolidColor__get_DashSize_fn, 0, false, ::g::Uno::Float_typeof(), 0),
+        new uFunction("set_DashSize", NULL, (void*)DashedSolidColor__set_DashSize_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
+        new uFunction(".ctor", NULL, (void*)DashedSolidColor__New2_fn, 0, true, type, 0),
+        new uFunction(".ctor", NULL, (void*)DashedSolidColor__New3_fn, 0, true, type, 1, ::g::Uno::Float4_typeof()),
+        new uFunction("SetColor", NULL, (void*)DashedSolidColor__SetColor1_fn, 0, false, uVoid_typeof(), 2, ::g::Uno::Float4_typeof(), ::g::Uno::UX::IPropertyListener_typeof()));
+}
+
+::g::Fuse::Drawing::Brush_type* DashedSolidColor_typeof()
+{
+    static uSStrong< ::g::Fuse::Drawing::Brush_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Fuse::Drawing::DynamicBrush_typeof();
+    options.FieldCount = 8;
+    options.ObjectSize = sizeof(DashedSolidColor);
+    options.TypeSize = sizeof(::g::Fuse::Drawing::Brush_type);
+    type = (::g::Fuse::Drawing::Brush_type*)uClassType::New("DashedSolidColor", options);
+    type->fp_build_ = DashedSolidColor_build;
+    type->fp_ctor_ = (void*)DashedSolidColor__New2_fn;
+    type->fp_cctor_ = DashedSolidColor__cctor_1_fn;
+    type->fp_get_IsCompletelyTransparent = (void(*)(::g::Fuse::Drawing::Brush*, bool*))DashedSolidColor__get_IsCompletelyTransparent_fn;
+    return type;
+}
+
+// public DashedSolidColor() :1033
+void DashedSolidColor__ctor_3_fn(DashedSolidColor* __this)
+{
+    __this->ctor_3();
+}
+
+// public DashedSolidColor(float4 color) :1038
+void DashedSolidColor__ctor_4_fn(DashedSolidColor* __this, ::g::Uno::Float4* color)
+{
+    __this->ctor_4(*color);
+}
+
+// public float4 get_Color() :964
+void DashedSolidColor__get_Color_fn(DashedSolidColor* __this, ::g::Uno::Float4* __retval)
+{
+    *__retval = __this->Color();
+}
+
+// public void set_Color(float4 value) :965
+void DashedSolidColor__set_Color_fn(DashedSolidColor* __this, ::g::Uno::Float4* value)
+{
+    __this->Color(*value);
+}
+
+// public float get_DashSize() :978
+void DashedSolidColor__get_DashSize_fn(DashedSolidColor* __this, float* __retval)
+{
+    *__retval = __this->DashSize();
+}
+
+// public void set_DashSize(float value) :979
+void DashedSolidColor__set_DashSize_fn(DashedSolidColor* __this, float* value)
+{
+    __this->DashSize(*value);
+}
+
+// public override sealed bool get_IsCompletelyTransparent() :1004
+void DashedSolidColor__get_IsCompletelyTransparent_fn(DashedSolidColor* __this, bool* __retval)
+{
+    bool ret3;
+    return *__retval = (::g::Fuse::Drawing::DynamicBrush__get_IsCompletelyTransparent_fn(__this, &ret3), ret3) || (__this->Color().W == 0.0f), void();
+}
+
+// public DashedSolidColor New() :1033
+void DashedSolidColor__New2_fn(DashedSolidColor** __retval)
+{
+    *__retval = DashedSolidColor::New2();
+}
+
+// public DashedSolidColor New(float4 color) :1038
+void DashedSolidColor__New3_fn(::g::Uno::Float4* color, DashedSolidColor** __retval)
+{
+    *__retval = DashedSolidColor::New3(*color);
+}
+
+// public void SetColor(float4 c, Uno.UX.IPropertyListener origin) :989
+void DashedSolidColor__SetColor1_fn(DashedSolidColor* __this, ::g::Uno::Float4* c, uObject* origin)
+{
+    __this->SetColor1(*c, origin);
+}
+
+::g::Uno::UX::Selector DashedSolidColor::_colorName_;
+::g::Uno::UX::Selector DashedSolidColor::_dashSizeName_;
+
+// public DashedSolidColor() [instance] :1033
+void DashedSolidColor::ctor_3()
+{
+    ctor_2();
+    _color = ::g::Uno::Float4__New1(1.0f);
+}
+
+// public DashedSolidColor(float4 color) [instance] :1038
+void DashedSolidColor::ctor_4(::g::Uno::Float4 color)
+{
+    ctor_2();
+    _color = color;
+}
+
+// public float4 get_Color() [instance] :964
+::g::Uno::Float4 DashedSolidColor::Color()
+{
+    return _color;
+}
+
+// public void set_Color(float4 value) [instance] :965
+void DashedSolidColor::Color(::g::Uno::Float4 value)
+{
+    uStackFrame __("DashedSolidColor", "set_Color(float4)");
+
+    if (::g::Uno::Float4__op_Inequality(_color, value))
+    {
+        _color = value;
+        OnPropertyChanged(DashedSolidColor::_colorName());
+    }
+}
+
+// public float get_DashSize() [instance] :978
+float DashedSolidColor::DashSize()
+{
+    return _dashSize;
+}
+
+// public void set_DashSize(float value) [instance] :979
+void DashedSolidColor::DashSize(float value)
+{
+    uStackFrame __("DashedSolidColor", "set_DashSize(float)");
+
+    if (_dashSize != value)
+    {
+        _dashSize = value;
+        OnPropertyChanged(DashedSolidColor::_dashSizeName());
+    }
+}
+
+// public void SetColor(float4 c, Uno.UX.IPropertyListener origin) [instance] :989
+void DashedSolidColor::SetColor1(::g::Uno::Float4 c, uObject* origin)
+{
+    uStackFrame __("DashedSolidColor", "SetColor(float4,Uno.UX.IPropertyListener)");
+
+    if (::g::Uno::Float4__op_Inequality(_color, c))
+    {
+        _color = c;
+        OnPropertyChanged1(DashedSolidColor::_colorName(), origin);
+    }
+}
+
+// public DashedSolidColor New() [static] :1033
+DashedSolidColor* DashedSolidColor::New2()
+{
+    DashedSolidColor* obj1 = (DashedSolidColor*)uNew(DashedSolidColor_typeof());
+    obj1->ctor_3();
+    return obj1;
+}
+
+// public DashedSolidColor New(float4 color) [static] :1038
+DashedSolidColor* DashedSolidColor::New3(::g::Uno::Float4 color)
+{
+    DashedSolidColor* obj2 = (DashedSolidColor*)uNew(DashedSolidColor_typeof());
+    obj2->ctor_4(color);
+    return obj2;
+}
+// }
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Android.TextRenderer/1.0.5/.uno/package
+// -----------------------------------------------------------------------------------------------------------------
+
+// public static generated class FuseAndroidTextRenderer_bundle :0
+// {
+// static FuseAndroidTextRenderer_bundle() :0
+static void FuseAndroidTextRenderer_bundle__cctor__fn(uType* __type)
+{
+    FuseAndroidTextRenderer_bundle::Blitter83cfc6f0_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[2/*"uniform vec...*/], ::STRINGS[3/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 5, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[8/*"f"*/]));
+}
+
+static void FuseAndroidTextRenderer_bundle_build(uType* type)
+{
+    ::STRINGS[2] = uString::Const("uniform vec2 c, b;\n"
         "uniform mat4 d;\n"
         "\n"
         "attribute vec2 a;\n"
@@ -111,7 +298,7 @@ static void FuseAndroid_bundle_build(uType* type)
         "    gl_Position = d * vec4(c + (a * b), 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[1] = uString::Const("uniform sampler2D f;\n"
+    ::STRINGS[3] = uString::Const("uniform sampler2D f;\n"
         "\n"
         "varying vec2 e;\n"
         "\n"
@@ -120,19 +307,19 @@ static void FuseAndroid_bundle_build(uType* type)
         "    gl_FragColor = texture2D(f, e);\n"
         "}\n"
         "");
-    ::STRINGS[2] = uString::Const("a");
-    ::STRINGS[3] = uString::Const("b");
-    ::STRINGS[4] = uString::Const("c");
-    ::STRINGS[5] = uString::Const("d");
-    ::STRINGS[6] = uString::Const("f");
+    ::STRINGS[4] = uString::Const("a");
+    ::STRINGS[5] = uString::Const("b");
+    ::STRINGS[6] = uString::Const("c");
+    ::STRINGS[7] = uString::Const("d");
+    ::STRINGS[8] = uString::Const("f");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
     type->SetFields(0,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseAndroid_bundle::Blitter83cfc6f0_, uFieldFlagsStatic);
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseAndroidTextRenderer_bundle::Blitter83cfc6f0_, uFieldFlagsStatic);
     type->Reflection.SetFields(1,
         new uField("Blitter83cfc6f0", 0));
 }
 
-uClassType* FuseAndroid_bundle_typeof()
+uClassType* FuseAndroidTextRenderer_bundle_typeof()
 {
     static uSStrong<uClassType*> type;
     if (type != NULL) return type;
@@ -140,32 +327,139 @@ uClassType* FuseAndroid_bundle_typeof()
     uTypeOptions options;
     options.FieldCount = 1;
     options.TypeSize = sizeof(uClassType);
-    type = uClassType::New("FuseAndroid_bundle", options);
-    type->fp_build_ = FuseAndroid_bundle_build;
-    type->fp_cctor_ = FuseAndroid_bundle__cctor__fn;
+    type = uClassType::New("FuseAndroidTextRenderer_bundle", options);
+    type->fp_build_ = FuseAndroidTextRenderer_bundle_build;
+    type->fp_cctor_ = FuseAndroidTextRenderer_bundle__cctor__fn;
     return type;
 }
 
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseAndroid_bundle::Blitter83cfc6f0_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseAndroidTextRenderer_bundle::Blitter83cfc6f0_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/0.47.7/.uno/package
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/.uno/package
+// -----------------------------------------------------------------------------------------------------
 
 // public static generated class FuseControls_bundle :0
 // {
 // static FuseControls_bundle() :0
 static void FuseControls_bundle__cctor__fn(uType* __type)
 {
-    FuseControls_bundle::SolidRectangle2f148815_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[7/*"uniform mat...*/], ::STRINGS[8/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 18, ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[2/*"a"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[21/*"t"*/]));
-    FuseControls_bundle::SolidRectangle7463714b_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[22/*"uniform mat...*/], ::STRINGS[23/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 11, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[15/*"l"*/]));
-    FuseControls_bundle::SolidRectangled1bbfcb0_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[24/*"uniform mat...*/], ::STRINGS[25/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/]));
-    FuseControls_bundle::Viewportd3ce851b_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[26/*"uniform mat...*/], ::STRINGS[27/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/]));
+    FuseControls_bundle::SolidRectangle170ae5e6_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[9/*"uniform mat...*/], ::STRINGS[10/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 11, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[16/*"l"*/]));
+    FuseControls_bundle::SolidRectangle2f148815_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[17/*"uniform mat...*/], ::STRINGS[18/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 9, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/]));
+    FuseControls_bundle::SolidRectangle7463714b_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[19/*"uniform mat...*/], ::STRINGS[20/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/]));
+    FuseControls_bundle::SolidRectangled1bbfcb0_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[21/*"uniform mat...*/], ::STRINGS[22/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 18, ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[4/*"a"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[29/*"t"*/]));
+    FuseControls_bundle::Viewportd3ce851b_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[30/*"uniform mat...*/], ::STRINGS[31/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/]));
 }
 
 static void FuseControls_bundle_build(uType* type)
 {
-    ::STRINGS[7] = uString::Const("uniform mat4 q, d;\n"
+    ::STRINGS[9] = uString::Const("uniform mat4 g, b;\n"
+        "uniform vec2 c, d, i;\n"
+        "uniform vec4 h;\n"
+        "uniform float j;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying float k;\n"
+        "\n"
+        "float m(vec2 n, vec2 o, vec2 p, float q){\n"
+        "    vec2 r = (n * c) - o;\n"
+        "    float s = dot(r, p) / q;\n"
+        "    return (s - d.x) / d.y;\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    k = m(false ? vec2(a.x, float(1) - a.y) : a, h.xy, i, j);\n"
+        "    gl_Position = b * (g * vec4(vec3(a, float(0)), 1.));\n"
+        "}\n"
+        "");
+    ::STRINGS[10] = uString::Const("uniform float e, f;\n"
+        "\n"
+        "uniform sampler2D l;\n"
+        "\n"
+        "varying float k;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (texture2D(l, vec2(k, 0.5)) * e) * f;\n"
+        "}\n"
+        "");
+    ::STRINGS[4] = uString::Const("a");
+    ::STRINGS[5] = uString::Const("b");
+    ::STRINGS[6] = uString::Const("c");
+    ::STRINGS[7] = uString::Const("d");
+    ::STRINGS[11] = uString::Const("e");
+    ::STRINGS[8] = uString::Const("f");
+    ::STRINGS[12] = uString::Const("g");
+    ::STRINGS[13] = uString::Const("h");
+    ::STRINGS[14] = uString::Const("i");
+    ::STRINGS[15] = uString::Const("j");
+    ::STRINGS[16] = uString::Const("l");
+    ::STRINGS[17] = uString::Const("uniform mat4 i, b;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying vec2 j;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    j = false ? vec2(a.x, float(1) - a.y) : a;\n"
+        "    gl_Position = b * (i * vec4(vec3(a, float(0)), 1.));\n"
+        "}\n"
+        "");
+    ::STRINGS[18] = uString::Const("uniform vec2 c, d;\n"
+        "uniform float e, g, h;\n"
+        "uniform vec4 f;\n"
+        "\n"
+        "varying vec2 j;\n"
+        "\n"
+        "float k(vec2 n, vec2 o){\n"
+        "    vec2 p = abs(n) - o;\n"
+        "    return min(max(p.x, p.y), 0.0) + length(max(p, 0.0));\n"
+        "}\n"
+        "\n"
+        "vec2 l(vec2 n, vec2 o){\n"
+        "    return mod(n, o) - (0.5 * o);\n"
+        "}\n"
+        "\n"
+        "float m(vec2 n){\n"
+        "    vec2 o = d.xy / e;\n"
+        "    ivec2 p = ivec2(o);\n"
+        "\n"
+        "    if (mod(float(p.x), float(2)) == float(0))\n"
+        "        ++p.x;\n"
+        "\n"
+        "    if (mod(float(p.y), float(2)) == float(0))\n"
+        "        ++p.y;\n"
+        "\n"
+        "    o = d.xy / vec2(p);\n"
+        "    float q = k(l(n, o * float(2)) + vec2(e), vec2(e));\n"
+        "    return -floor(q);\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (mix(vec4(float(0)), f, clamp(m(j.xy * c), 0.0, 1.0)) * g) * h;\n"
+        "}\n"
+        "");
+    ::STRINGS[19] = uString::Const("uniform mat4 d, b;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_Position = b * (d * vec4(vec3(a, float(0)), 1.));\n"
+        "}\n"
+        "");
+    ::STRINGS[20] = uString::Const("uniform vec4 c;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = c;\n"
+        "}\n"
+        "");
+    ::STRINGS[21] = uString::Const("uniform mat4 q, d;\n"
         "uniform vec2 e, f, g, h, i, k, j;\n"
         "\n"
         "attribute vec2 a;\n"
@@ -180,7 +474,7 @@ static void FuseControls_bundle_build(uType* type)
         "    gl_Position = d * (q * vec4(vec3(a, float(0)), 1.));\n"
         "}\n"
         "");
-    ::STRINGS[8] = uString::Const("uniform vec2 m, l;\n"
+    ::STRINGS[22] = uString::Const("uniform vec2 m, l;\n"
         "uniform vec4 n;\n"
         "uniform float o, p;\n"
         "\n"
@@ -194,72 +488,14 @@ static void FuseControls_bundle_build(uType* type)
         "    gl_FragColor = (vec4(u.xyz * u.w, u.w) * o) * p;\n"
         "}\n"
         "");
-    ::STRINGS[3] = uString::Const("b");
-    ::STRINGS[4] = uString::Const("c");
-    ::STRINGS[2] = uString::Const("a");
-    ::STRINGS[5] = uString::Const("d");
-    ::STRINGS[9] = uString::Const("e");
-    ::STRINGS[6] = uString::Const("f");
-    ::STRINGS[10] = uString::Const("g");
-    ::STRINGS[11] = uString::Const("h");
-    ::STRINGS[12] = uString::Const("i");
-    ::STRINGS[13] = uString::Const("j");
-    ::STRINGS[14] = uString::Const("k");
-    ::STRINGS[15] = uString::Const("l");
-    ::STRINGS[16] = uString::Const("m");
-    ::STRINGS[17] = uString::Const("n");
-    ::STRINGS[18] = uString::Const("o");
-    ::STRINGS[19] = uString::Const("p");
-    ::STRINGS[20] = uString::Const("q");
-    ::STRINGS[21] = uString::Const("t");
-    ::STRINGS[22] = uString::Const("uniform mat4 h, b;\n"
-        "uniform vec2 c, d, e, i;\n"
-        "uniform float j;\n"
-        "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "varying float k;\n"
-        "\n"
-        "float m(vec2 n, vec2 o, float p){\n"
-        "    vec2 q = (n * c) - d;\n"
-        "    float r = dot(q, o) / p;\n"
-        "    return (r - e.x) / e.y;\n"
-        "}\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    k = m(false ? vec2(a.x, float(1) - a.y) : a, i, j);\n"
-        "    gl_Position = b * (h * vec4(vec3(a, float(0)), 1.));\n"
-        "}\n"
-        "");
-    ::STRINGS[23] = uString::Const("uniform float f, g;\n"
-        "\n"
-        "uniform sampler2D l;\n"
-        "\n"
-        "varying float k;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = (texture2D(l, vec2(k, 0.5)) * f) * g;\n"
-        "}\n"
-        "");
-    ::STRINGS[24] = uString::Const("uniform mat4 d, b;\n"
-        "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_Position = b * (d * vec4(vec3(a, float(0)), 1.));\n"
-        "}\n"
-        "");
-    ::STRINGS[25] = uString::Const("uniform vec4 c;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = c;\n"
-        "}\n"
-        "");
-    ::STRINGS[26] = uString::Const("uniform mat4 c, b;\n"
+    ::STRINGS[23] = uString::Const("k");
+    ::STRINGS[24] = uString::Const("m");
+    ::STRINGS[25] = uString::Const("n");
+    ::STRINGS[26] = uString::Const("o");
+    ::STRINGS[27] = uString::Const("p");
+    ::STRINGS[28] = uString::Const("q");
+    ::STRINGS[29] = uString::Const("t");
+    ::STRINGS[30] = uString::Const("uniform mat4 c, b;\n"
         "\n"
         "attribute vec2 a;\n"
         "\n"
@@ -271,7 +507,7 @@ static void FuseControls_bundle_build(uType* type)
         "    gl_Position = b * (c * vec4(vec3(a, float(0)), 1.));\n"
         "}\n"
         "");
-    ::STRINGS[27] = uString::Const("uniform sampler2D e;\n"
+    ::STRINGS[31] = uString::Const("uniform sampler2D e;\n"
         "\n"
         "varying vec2 d;\n"
         "\n"
@@ -282,15 +518,17 @@ static void FuseControls_bundle_build(uType* type)
         "");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
     type->SetFields(0,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseControls_bundle::SolidRectangle170ae5e6_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseControls_bundle::SolidRectangle2f148815_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseControls_bundle::SolidRectangle7463714b_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseControls_bundle::SolidRectangled1bbfcb0_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseControls_bundle::Viewportd3ce851b_, uFieldFlagsStatic);
-    type->Reflection.SetFields(4,
-        new uField("SolidRectangle2f148815", 0),
-        new uField("SolidRectangle7463714b", 1),
-        new uField("SolidRectangled1bbfcb0", 2),
-        new uField("Viewportd3ce851b", 3));
+    type->Reflection.SetFields(5,
+        new uField("SolidRectangle170ae5e6", 0),
+        new uField("SolidRectangle2f148815", 1),
+        new uField("SolidRectangle7463714b", 2),
+        new uField("SolidRectangled1bbfcb0", 3),
+        new uField("Viewportd3ce851b", 4));
 }
 
 uClassType* FuseControls_bundle_typeof()
@@ -299,7 +537,7 @@ uClassType* FuseControls_bundle_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 4;
+    options.FieldCount = 5;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("FuseControls_bundle", options);
     type->fp_build_ = FuseControls_bundle_build;
@@ -307,27 +545,28 @@ uClassType* FuseControls_bundle_typeof()
     return type;
 }
 
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseControls_bundle::SolidRectangle170ae5e6_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseControls_bundle::SolidRectangle2f148815_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseControls_bundle::SolidRectangle7463714b_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseControls_bundle::SolidRectangled1bbfcb0_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseControls_bundle::Viewportd3ce851b_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/.uno/package
-// -------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/.uno/package
+// ------------------------------------------------------------------------------------------------------------
 
 // public static generated class FuseControlsNative_bundle :0
 // {
 // static FuseControlsNative_bundle() :0
 static void FuseControlsNative_bundle__cctor__fn(uType* __type)
 {
-    FuseControlsNative_bundle::Blitter65ac1d08_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[28/*"uniform vec...*/], ::STRINGS[29/*"uniform sam...*/], 1, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 6, ::STRINGS[3/*"b"*/], ::STRINGS[2/*"a"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[11/*"h"*/]));
-    FuseControlsNative_bundle::iOSBlitter0a63f4bb_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[30/*"uniform vec...*/], ::STRINGS[1/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 5, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[6/*"f"*/]));
+    FuseControlsNative_bundle::Blitter65ac1d08_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[32/*"uniform vec...*/], ::STRINGS[33/*"uniform sam...*/], 1, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 6, ::STRINGS[5/*"b"*/], ::STRINGS[4/*"a"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[13/*"h"*/]));
+    FuseControlsNative_bundle::iOSBlitter0a63f4bb_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[34/*"uniform vec...*/], ::STRINGS[3/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 5, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[8/*"f"*/]));
 }
 
 static void FuseControlsNative_bundle_build(uType* type)
 {
-    ::STRINGS[28] = uString::Const("uniform vec2 d, c;\n"
+    ::STRINGS[32] = uString::Const("uniform vec2 d, c;\n"
         "uniform mat4 e;\n"
         "\n"
         "attribute vec2 a;\n"
@@ -341,7 +580,7 @@ static void FuseControlsNative_bundle_build(uType* type)
         "    gl_Position = e * vec4(d + (a * c), 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[29] = uString::Const("uniform sampler2D h;\n"
+    ::STRINGS[33] = uString::Const("uniform sampler2D h;\n"
         "\n"
         "varying vec2 f, g;\n"
         "\n"
@@ -350,13 +589,13 @@ static void FuseControlsNative_bundle_build(uType* type)
         "    gl_FragColor = b ? texture2D(h, f) : texture2D(h, g);\n"
         "}\n"
         "");
-    ::STRINGS[3] = uString::Const("b");
-    ::STRINGS[2] = uString::Const("a");
-    ::STRINGS[4] = uString::Const("c");
-    ::STRINGS[5] = uString::Const("d");
-    ::STRINGS[9] = uString::Const("e");
-    ::STRINGS[11] = uString::Const("h");
-    ::STRINGS[30] = uString::Const("uniform vec2 c, b;\n"
+    ::STRINGS[5] = uString::Const("b");
+    ::STRINGS[4] = uString::Const("a");
+    ::STRINGS[6] = uString::Const("c");
+    ::STRINGS[7] = uString::Const("d");
+    ::STRINGS[11] = uString::Const("e");
+    ::STRINGS[13] = uString::Const("h");
+    ::STRINGS[34] = uString::Const("uniform vec2 c, b;\n"
         "uniform mat4 d;\n"
         "\n"
         "attribute vec2 a;\n"
@@ -369,7 +608,7 @@ static void FuseControlsNative_bundle_build(uType* type)
         "    gl_Position = d * vec4(c + (a * b), 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[1] = uString::Const("uniform sampler2D f;\n"
+    ::STRINGS[3] = uString::Const("uniform sampler2D f;\n"
         "\n"
         "varying vec2 e;\n"
         "\n"
@@ -378,7 +617,7 @@ static void FuseControlsNative_bundle_build(uType* type)
         "    gl_FragColor = texture2D(f, e);\n"
         "}\n"
         "");
-    ::STRINGS[6] = uString::Const("f");
+    ::STRINGS[8] = uString::Const("f");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
     type->SetFields(0,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseControlsNative_bundle::Blitter65ac1d08_, uFieldFlagsStatic,
@@ -406,8 +645,8 @@ uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseControlsNative_bundle::iOSBlitter0a63f4bb_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsNavigation_FuseControlsPanel_IsFrozen_Property :297
 // {
@@ -486,8 +725,8 @@ FuseControlsNavigation_FuseControlsPanel_IsFrozen_Property* FuseControlsNavigati
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsNavigation_FuseControlsShape_Color_Property :288
 // {
@@ -573,20 +812,20 @@ FuseControlsNavigation_FuseControlsShape_Color_Property* FuseControlsNavigation_
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/0.47.7/.uno/package
-// -------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/.uno/package
+// ------------------------------------------------------------------------------------------------------------
 
 // public static generated class FuseControlsPanels_bundle :0
 // {
 // static FuseControlsPanels_bundle() :0
 static void FuseControlsPanels_bundle__cctor__fn(uType* __type)
 {
-    FuseControlsPanels_bundle::FreezeDrawable1e2faccf_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[31/*"uniform mat...*/], ::STRINGS[32/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 5, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[6/*"f"*/]));
+    FuseControlsPanels_bundle::FreezeDrawable1e2faccf_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[35/*"uniform mat...*/], ::STRINGS[36/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 5, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[8/*"f"*/]));
 }
 
 static void FuseControlsPanels_bundle_build(uType* type)
 {
-    ::STRINGS[31] = uString::Const("uniform mat4 d, b;\n"
+    ::STRINGS[35] = uString::Const("uniform mat4 d, b;\n"
         "\n"
         "attribute vec2 a;\n"
         "\n"
@@ -598,7 +837,7 @@ static void FuseControlsPanels_bundle_build(uType* type)
         "    gl_Position = b * (d * vec4(vec3(a, float(0)), 1.));\n"
         "}\n"
         "");
-    ::STRINGS[32] = uString::Const("uniform float c;\n"
+    ::STRINGS[36] = uString::Const("uniform float c;\n"
         "\n"
         "uniform sampler2D f;\n"
         "\n"
@@ -610,11 +849,11 @@ static void FuseControlsPanels_bundle_build(uType* type)
         "    gl_FragColor = vec4(g.xyz, g.w * c);\n"
         "}\n"
         "");
-    ::STRINGS[2] = uString::Const("a");
-    ::STRINGS[3] = uString::Const("b");
-    ::STRINGS[4] = uString::Const("c");
-    ::STRINGS[5] = uString::Const("d");
-    ::STRINGS[6] = uString::Const("f");
+    ::STRINGS[4] = uString::Const("a");
+    ::STRINGS[5] = uString::Const("b");
+    ::STRINGS[6] = uString::Const("c");
+    ::STRINGS[7] = uString::Const("d");
+    ::STRINGS[8] = uString::Const("f");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
     type->SetFields(0,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseControlsPanels_bundle::FreezeDrawable1e2faccf_, uFieldFlagsStatic);
@@ -639,8 +878,8 @@ uClassType* FuseControlsPanels_bundle_typeof()
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseControlsPanels_bundle::FreezeDrawable1e2faccf_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_accessor_Fuse_Controls_ButtonBase_Text :751
 // {
@@ -648,12 +887,12 @@ uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>
 static void FuseControlsPrimitives_accessor_Fuse_Controls_ButtonBase_Text__cctor__fn(uType* __type)
 {
     FuseControlsPrimitives_accessor_Fuse_Controls_ButtonBase_Text::Singleton_ = FuseControlsPrimitives_accessor_Fuse_Controls_ButtonBase_Text::New1();
-    FuseControlsPrimitives_accessor_Fuse_Controls_ButtonBase_Text::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[33/*"Text"*/]);
+    FuseControlsPrimitives_accessor_Fuse_Controls_ButtonBase_Text::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[37/*"Text"*/]);
 }
 
 static void FuseControlsPrimitives_accessor_Fuse_Controls_ButtonBase_Text_build(uType* type)
 {
-    ::STRINGS[33] = uString::Const("Text");
+    ::STRINGS[37] = uString::Const("Text");
     ::TYPES[3] = ::g::Fuse::Controls::ButtonBase_typeof();
     ::TYPES[4] = ::g::Uno::String_typeof();
     ::TYPES[5] = ::g::Uno::Type_typeof();
@@ -746,8 +985,8 @@ FuseControlsPrimitives_accessor_Fuse_Controls_ButtonBase_Text* FuseControlsPrimi
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_accessor_Fuse_Controls_ToggleControl_Value :761
 // {
@@ -755,12 +994,12 @@ FuseControlsPrimitives_accessor_Fuse_Controls_ButtonBase_Text* FuseControlsPrimi
 static void FuseControlsPrimitives_accessor_Fuse_Controls_ToggleControl_Value__cctor__fn(uType* __type)
 {
     FuseControlsPrimitives_accessor_Fuse_Controls_ToggleControl_Value::Singleton_ = FuseControlsPrimitives_accessor_Fuse_Controls_ToggleControl_Value::New1();
-    FuseControlsPrimitives_accessor_Fuse_Controls_ToggleControl_Value::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[34/*"Value"*/]);
+    FuseControlsPrimitives_accessor_Fuse_Controls_ToggleControl_Value::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[38/*"Value"*/]);
 }
 
 static void FuseControlsPrimitives_accessor_Fuse_Controls_ToggleControl_Value_build(uType* type)
 {
-    ::STRINGS[34] = uString::Const("Value");
+    ::STRINGS[38] = uString::Const("Value");
     ::TYPES[6] = ::g::Fuse::Controls::ToggleControl_typeof();
     ::TYPES[5] = ::g::Uno::Type_typeof();
     type->SetFields(0,
@@ -852,20 +1091,20 @@ FuseControlsPrimitives_accessor_Fuse_Controls_ToggleControl_Value* FuseControlsP
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/.uno/package
-// -----------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/.uno/package
+// ----------------------------------------------------------------------------------------------------------------
 
 // public static generated class FuseControlsPrimitives_bundle :0
 // {
 // static FuseControlsPrimitives_bundle() :0
 static void FuseControlsPrimitives_bundle__cctor__fn(uType* __type)
 {
-    FuseControlsPrimitives_bundle::ImageElementDraw7660063a_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[35/*"uniform mat...*/], ::STRINGS[36/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[11/*"h"*/]));
+    FuseControlsPrimitives_bundle::ImageElementDraw7660063a_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[39/*"uniform mat...*/], ::STRINGS[40/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[13/*"h"*/]));
 }
 
 static void FuseControlsPrimitives_bundle_build(uType* type)
 {
-    ::STRINGS[35] = uString::Const("uniform mat4 f, b;\n"
+    ::STRINGS[39] = uString::Const("uniform mat4 f, b;\n"
         "uniform vec2 c, d;\n"
         "\n"
         "attribute vec2 a;\n"
@@ -878,7 +1117,7 @@ static void FuseControlsPrimitives_bundle_build(uType* type)
         "    gl_Position = b * (f * vec4(vec3(a, float(0)), 1.));\n"
         "}\n"
         "");
-    ::STRINGS[36] = uString::Const("uniform vec4 e;\n"
+    ::STRINGS[40] = uString::Const("uniform vec4 e;\n"
         "\n"
         "uniform sampler2D h;\n"
         "\n"
@@ -889,13 +1128,13 @@ static void FuseControlsPrimitives_bundle_build(uType* type)
         "    gl_FragColor = texture2D(h, g) * e;\n"
         "}\n"
         "");
-    ::STRINGS[2] = uString::Const("a");
-    ::STRINGS[3] = uString::Const("b");
-    ::STRINGS[4] = uString::Const("c");
-    ::STRINGS[5] = uString::Const("d");
-    ::STRINGS[9] = uString::Const("e");
-    ::STRINGS[6] = uString::Const("f");
-    ::STRINGS[11] = uString::Const("h");
+    ::STRINGS[4] = uString::Const("a");
+    ::STRINGS[5] = uString::Const("b");
+    ::STRINGS[6] = uString::Const("c");
+    ::STRINGS[7] = uString::Const("d");
+    ::STRINGS[11] = uString::Const("e");
+    ::STRINGS[8] = uString::Const("f");
+    ::STRINGS[13] = uString::Const("h");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
     type->SetFields(0,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseControlsPrimitives_bundle::ImageElementDraw7660063a_, uFieldFlagsStatic);
@@ -920,8 +1159,8 @@ uClassType* FuseControlsPrimitives_bundle_typeof()
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseControlsPrimitives_bundle::ImageElementDraw7660063a_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseControlsShape_Fill_Property :797
 // {
@@ -999,8 +1238,8 @@ FuseControlsPrimitives_FuseControlsShape_Fill_Property* FuseControlsPrimitives_F
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseControlsTextControl_TextColor_Property :780
 // {
@@ -1079,8 +1318,8 @@ FuseControlsPrimitives_FuseControlsTextControl_TextColor_Property* FuseControlsP
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseControlsTextControl_Value_Property :771
 // {
@@ -1165,8 +1404,8 @@ FuseControlsPrimitives_FuseControlsTextControl_Value_Property* FuseControlsPrimi
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseDrawingSolidColor_Color_Property :847
 // {
@@ -1252,8 +1491,8 @@ FuseControlsPrimitives_FuseDrawingSolidColor_Color_Property* FuseControlsPrimiti
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseDrawingStroke_Brush_Property :805
 // {
@@ -1331,8 +1570,8 @@ FuseControlsPrimitives_FuseDrawingStroke_Brush_Property* FuseControlsPrimitives_
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseDrawingStroke_Color_Property :829
 // {
@@ -1418,8 +1657,8 @@ FuseControlsPrimitives_FuseDrawingStroke_Color_Property* FuseControlsPrimitives_
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseEffectsDropShadow_Distance_Property :813
 // {
@@ -1498,8 +1737,8 @@ FuseControlsPrimitives_FuseEffectsDropShadow_Distance_Property* FuseControlsPrim
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseEffectsDropShadow_Size_Property :821
 // {
@@ -1578,8 +1817,8 @@ FuseControlsPrimitives_FuseEffectsDropShadow_Size_Property* FuseControlsPrimitiv
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseElementsElement_Opacity_Property :788
 // {
@@ -1665,8 +1904,8 @@ FuseControlsPrimitives_FuseElementsElement_Opacity_Property* FuseControlsPrimiti
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class FuseControlsPrimitives_FuseGesturesSwipeGesture_IsActive_Property :838
 // {
@@ -1752,21 +1991,21 @@ FuseControlsPrimitives_FuseGesturesSwipeGesture_IsActive_Property* FuseControlsP
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
-// internal sealed class FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView :179
+// internal sealed class FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView :142
 // {
-// static FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView() :179
+// static FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView() :142
 static void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView__cctor__fn(uType* __type)
 {
     FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView::Singleton_ = FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView::New1();
-    FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[37/*"KeepFocusIn...*/]);
+    FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[41/*"KeepFocusIn...*/]);
 }
 
 static void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView_build(uType* type)
 {
-    ::STRINGS[37] = uString::Const("KeepFocusInView");
+    ::STRINGS[41] = uString::Const("KeepFocusInView");
     ::TYPES[13] = ::g::Fuse::Controls::ScrollViewBase_typeof();
     ::TYPES[5] = ::g::Uno::Type_typeof();
     type->SetFields(0,
@@ -1795,38 +2034,38 @@ static void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFoc
     return type;
 }
 
-// public generated FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView() :179
+// public generated FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView() :142
 void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView__ctor_1_fn(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :185
+// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :148
 void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView__GetAsObject_fn(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
 {
     uStackFrame __("FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView", "GetAsObject(Uno.UX.PropertyObject)");
     return *__retval = uBox(::g::Uno::Bool_typeof(), uPtr(uCast< ::g::Fuse::Controls::ScrollViewBase*>(obj, ::TYPES[13/*Fuse.Controls.ScrollViewBase*/]))->KeepFocusInView()), void();
 }
 
-// public override sealed Uno.UX.Selector get_Name() :182
+// public override sealed Uno.UX.Selector get_Name() :145
 void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView__get_Name_fn(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView* __this, ::g::Uno::UX::Selector* __retval)
 {
     return *__retval = FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView::_name(), void();
 }
 
-// public generated FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView New() :179
+// public generated FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView New() :142
 void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView__New1_fn(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView** __retval)
 {
     *__retval = FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView::New1();
 }
 
-// public override sealed Uno.Type get_PropertyType() :184
+// public override sealed Uno.Type get_PropertyType() :147
 void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView__get_PropertyType_fn(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView* __this, uType** __retval)
 {
     return *__retval = ::g::Uno::Bool_typeof(), void();
 }
 
-// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :186
+// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :149
 void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView__SetAsObject_fn(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView* __this, ::g::Uno::UX::PropertyObject* obj, uObject* v, uObject* origin)
 {
     uStackFrame __("FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView", "SetAsObject(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
@@ -1836,13 +2075,13 @@ void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInVie
 ::g::Uno::UX::Selector FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView::_name_;
 uSStrong< ::g::Uno::UX::PropertyAccessor*> FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView::Singleton_;
 
-// public generated FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView() [instance] :179
+// public generated FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView() [instance] :142
 void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView::ctor_1()
 {
     ctor_();
 }
 
-// public generated FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView New() [static] :179
+// public generated FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView New() [static] :142
 FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView* FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView::New1()
 {
     FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView* obj1 = (FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView*)uNew(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView_typeof());
@@ -1851,196 +2090,17 @@ FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_KeepFocusInView* Fu
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/.uno/ux11/$.uno
+// -------------------------------------------------------------------------------------------------------------------
 
-// internal sealed class FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll :170
-// {
-// static FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll() :170
-static void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll__cctor__fn(uType* __type)
-{
-    FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll::Singleton_ = FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll::New1();
-    FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[38/*"UserScroll"*/]);
-}
-
-static void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll_build(uType* type)
-{
-    ::STRINGS[38] = uString::Const("UserScroll");
-    ::TYPES[13] = ::g::Fuse::Controls::ScrollViewBase_typeof();
-    ::TYPES[5] = ::g::Uno::Type_typeof();
-    type->SetFields(0,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll::_name_, uFieldFlagsStatic,
-        ::g::Uno::UX::PropertyAccessor_typeof(), (uintptr_t)&::g::FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll::Singleton_, uFieldFlagsStatic);
-}
-
-::g::Uno::UX::PropertyAccessor_type* FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll_typeof()
-{
-    static uSStrong< ::g::Uno::UX::PropertyAccessor_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::UX::PropertyAccessor_typeof();
-    options.FieldCount = 2;
-    options.ObjectSize = sizeof(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll);
-    options.TypeSize = sizeof(::g::Uno::UX::PropertyAccessor_type);
-    type = (::g::Uno::UX::PropertyAccessor_type*)uClassType::New("FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll", options);
-    type->fp_build_ = FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll_build;
-    type->fp_ctor_ = (void*)FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll__New1_fn;
-    type->fp_cctor_ = FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll__cctor__fn;
-    type->fp_GetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject**))FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll__GetAsObject_fn;
-    type->fp_get_Name = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::Selector*))FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll__get_Name_fn;
-    type->fp_get_PropertyType = (void(*)(::g::Uno::UX::PropertyAccessor*, uType**))FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll__get_PropertyType_fn;
-    type->fp_SetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject*, uObject*))FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll__SetAsObject_fn;
-    return type;
-}
-
-// public generated FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll() :170
-void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll__ctor_1_fn(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll* __this)
-{
-    __this->ctor_1();
-}
-
-// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :176
-void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll__GetAsObject_fn(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
-{
-    uStackFrame __("FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll", "GetAsObject(Uno.UX.PropertyObject)");
-    return *__retval = uBox(::g::Uno::Bool_typeof(), uPtr(uCast< ::g::Fuse::Controls::ScrollViewBase*>(obj, ::TYPES[13/*Fuse.Controls.ScrollViewBase*/]))->UserScroll()), void();
-}
-
-// public override sealed Uno.UX.Selector get_Name() :173
-void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll__get_Name_fn(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll* __this, ::g::Uno::UX::Selector* __retval)
-{
-    return *__retval = FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll::_name(), void();
-}
-
-// public generated FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll New() :170
-void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll__New1_fn(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll** __retval)
-{
-    *__retval = FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll::New1();
-}
-
-// public override sealed Uno.Type get_PropertyType() :175
-void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll__get_PropertyType_fn(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll* __this, uType** __retval)
-{
-    return *__retval = ::g::Uno::Bool_typeof(), void();
-}
-
-// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :177
-void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll__SetAsObject_fn(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll* __this, ::g::Uno::UX::PropertyObject* obj, uObject* v, uObject* origin)
-{
-    uStackFrame __("FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll", "SetAsObject(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
-    uPtr(uCast< ::g::Fuse::Controls::ScrollViewBase*>(obj, ::TYPES[13/*Fuse.Controls.ScrollViewBase*/]))->UserScroll(uUnbox<bool>(::g::Uno::Bool_typeof(), v));
-}
-
-::g::Uno::UX::Selector FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll::_name_;
-uSStrong< ::g::Uno::UX::PropertyAccessor*> FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll::Singleton_;
-
-// public generated FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll() [instance] :170
-void FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll::ctor_1()
-{
-    ctor_();
-}
-
-// public generated FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll New() [static] :170
-FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll* FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll::New1()
-{
-    FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll* obj1 = (FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll*)uNew(FuseControlsScrollView_accessor_Fuse_Controls_ScrollViewBase_UserScroll_typeof());
-    obj1->ctor_1();
-    return obj1;
-}
-// }
-
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
-
-// internal sealed class FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property :188
-// {
-static void FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property_build(uType* type)
-{
-    ::TYPES[14] = ::g::Fuse::Gestures::Scroller_typeof();
-    type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Bool_typeof(), NULL));
-    type->SetFields(1,
-        ::TYPES[14/*Fuse.Gestures.Scroller*/], offsetof(::g::FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property, _obj), uFieldFlagsWeak);
-}
-
-::g::Uno::UX::Property1_type* FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property_typeof()
-{
-    static uSStrong< ::g::Uno::UX::Property1_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::UX::Property1_typeof();
-    options.FieldCount = 2;
-    options.ObjectSize = sizeof(FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property);
-    options.TypeSize = sizeof(::g::Uno::UX::Property1_type);
-    type = (::g::Uno::UX::Property1_type*)uClassType::New("FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property", options);
-    type->fp_build_ = FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property_build;
-    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property__Get1_fn;
-    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property__get_Object_fn;
-    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property__Set1_fn;
-    return type;
-}
-
-// public FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property(Fuse.Gestures.Scroller obj, Uno.UX.Selector name) :191
-void FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property__ctor_3_fn(FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property* __this, ::g::Fuse::Gestures::Scroller* obj, ::g::Uno::UX::Selector* name)
-{
-    __this->ctor_3(obj, *name);
-}
-
-// public override sealed bool Get(Uno.UX.PropertyObject obj) :193
-void FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property__Get1_fn(FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property* __this, ::g::Uno::UX::PropertyObject* obj, bool* __retval)
-{
-    uStackFrame __("FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property", "Get(Uno.UX.PropertyObject)");
-    return *__retval = uPtr(uCast< ::g::Fuse::Gestures::Scroller*>(obj, ::TYPES[14/*Fuse.Gestures.Scroller*/]))->UserScroll(), void();
-}
-
-// public FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property New(Fuse.Gestures.Scroller obj, Uno.UX.Selector name) :191
-void FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property__New1_fn(::g::Fuse::Gestures::Scroller* obj, ::g::Uno::UX::Selector* name, FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property** __retval)
-{
-    *__retval = FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property::New1(obj, *name);
-}
-
-// public override sealed Uno.UX.PropertyObject get_Object() :192
-void FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property__get_Object_fn(FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
-{
-    return *__retval = __this->_obj, void();
-}
-
-// public override sealed void Set(Uno.UX.PropertyObject obj, bool v, Uno.UX.IPropertyListener origin) :194
-void FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property__Set1_fn(FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property* __this, ::g::Uno::UX::PropertyObject* obj, bool* v, uObject* origin)
-{
-    uStackFrame __("FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property", "Set(Uno.UX.PropertyObject,bool,Uno.UX.IPropertyListener)");
-    bool v_ = *v;
-    uPtr(uCast< ::g::Fuse::Gestures::Scroller*>(obj, ::TYPES[14/*Fuse.Gestures.Scroller*/]))->UserScroll(v_);
-}
-
-// public FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property(Fuse.Gestures.Scroller obj, Uno.UX.Selector name) [instance] :191
-void FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property::ctor_3(::g::Fuse::Gestures::Scroller* obj, ::g::Uno::UX::Selector name)
-{
-    ctor_2(name);
-    _obj = obj;
-}
-
-// public FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property New(Fuse.Gestures.Scroller obj, Uno.UX.Selector name) [static] :191
-FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property* FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property::New1(::g::Fuse::Gestures::Scroller* obj, ::g::Uno::UX::Selector name)
-{
-    FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property* obj1 = (FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property*)uNew(FuseControlsScrollView_FuseGesturesScroller_UserScroll_Property_typeof());
-    obj1->ctor_3(obj, name);
-    return obj1;
-}
-// }
-
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/0.47.7/.uno/ux11/$.uno
-// --------------------------------------------------------------------------------------------------------------------
-
-// internal sealed class FuseControlsScrollView_FuseTriggersWhileBool_Value_Property :196
+// internal sealed class FuseControlsScrollView_FuseTriggersWhileBool_Value_Property :151
 // {
 static void FuseControlsScrollView_FuseTriggersWhileBool_Value_Property_build(uType* type)
 {
-    ::TYPES[15] = ::g::Fuse::Triggers::WhileBool_typeof();
+    ::TYPES[14] = ::g::Fuse::Triggers::WhileBool_typeof();
     type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Bool_typeof(), NULL));
     type->SetFields(1,
-        ::TYPES[15/*Fuse.Triggers.WhileBool*/], offsetof(::g::FuseControlsScrollView_FuseTriggersWhileBool_Value_Property, _obj), uFieldFlagsWeak);
+        ::TYPES[14/*Fuse.Triggers.WhileBool*/], offsetof(::g::FuseControlsScrollView_FuseTriggersWhileBool_Value_Property, _obj), uFieldFlagsWeak);
 }
 
 ::g::Uno::UX::Property1_type* FuseControlsScrollView_FuseTriggersWhileBool_Value_Property_typeof()
@@ -2061,47 +2121,47 @@ static void FuseControlsScrollView_FuseTriggersWhileBool_Value_Property_build(uT
     return type;
 }
 
-// public FuseControlsScrollView_FuseTriggersWhileBool_Value_Property(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) :199
+// public FuseControlsScrollView_FuseTriggersWhileBool_Value_Property(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) :154
 void FuseControlsScrollView_FuseTriggersWhileBool_Value_Property__ctor_3_fn(FuseControlsScrollView_FuseTriggersWhileBool_Value_Property* __this, ::g::Fuse::Triggers::WhileBool* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed bool Get(Uno.UX.PropertyObject obj) :201
+// public override sealed bool Get(Uno.UX.PropertyObject obj) :156
 void FuseControlsScrollView_FuseTriggersWhileBool_Value_Property__Get1_fn(FuseControlsScrollView_FuseTriggersWhileBool_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, bool* __retval)
 {
     uStackFrame __("FuseControlsScrollView_FuseTriggersWhileBool_Value_Property", "Get(Uno.UX.PropertyObject)");
-    return *__retval = uPtr(uCast< ::g::Fuse::Triggers::WhileBool*>(obj, ::TYPES[15/*Fuse.Triggers.WhileBool*/]))->Value1(), void();
+    return *__retval = uPtr(uCast< ::g::Fuse::Triggers::WhileBool*>(obj, ::TYPES[14/*Fuse.Triggers.WhileBool*/]))->Value1(), void();
 }
 
-// public FuseControlsScrollView_FuseTriggersWhileBool_Value_Property New(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) :199
+// public FuseControlsScrollView_FuseTriggersWhileBool_Value_Property New(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) :154
 void FuseControlsScrollView_FuseTriggersWhileBool_Value_Property__New1_fn(::g::Fuse::Triggers::WhileBool* obj, ::g::Uno::UX::Selector* name, FuseControlsScrollView_FuseTriggersWhileBool_Value_Property** __retval)
 {
     *__retval = FuseControlsScrollView_FuseTriggersWhileBool_Value_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :200
+// public override sealed Uno.UX.PropertyObject get_Object() :155
 void FuseControlsScrollView_FuseTriggersWhileBool_Value_Property__get_Object_fn(FuseControlsScrollView_FuseTriggersWhileBool_Value_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, bool v, Uno.UX.IPropertyListener origin) :202
+// public override sealed void Set(Uno.UX.PropertyObject obj, bool v, Uno.UX.IPropertyListener origin) :157
 void FuseControlsScrollView_FuseTriggersWhileBool_Value_Property__Set1_fn(FuseControlsScrollView_FuseTriggersWhileBool_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, bool* v, uObject* origin)
 {
     uStackFrame __("FuseControlsScrollView_FuseTriggersWhileBool_Value_Property", "Set(Uno.UX.PropertyObject,bool,Uno.UX.IPropertyListener)");
     bool v_ = *v;
-    uPtr(uCast< ::g::Fuse::Triggers::WhileBool*>(obj, ::TYPES[15/*Fuse.Triggers.WhileBool*/]))->Value1(v_);
+    uPtr(uCast< ::g::Fuse::Triggers::WhileBool*>(obj, ::TYPES[14/*Fuse.Triggers.WhileBool*/]))->Value1(v_);
 }
 
-// public FuseControlsScrollView_FuseTriggersWhileBool_Value_Property(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) [instance] :199
+// public FuseControlsScrollView_FuseTriggersWhileBool_Value_Property(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) [instance] :154
 void FuseControlsScrollView_FuseTriggersWhileBool_Value_Property::ctor_3(::g::Fuse::Triggers::WhileBool* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public FuseControlsScrollView_FuseTriggersWhileBool_Value_Property New(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) [static] :199
+// public FuseControlsScrollView_FuseTriggersWhileBool_Value_Property New(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) [static] :154
 FuseControlsScrollView_FuseTriggersWhileBool_Value_Property* FuseControlsScrollView_FuseTriggersWhileBool_Value_Property::New1(::g::Fuse::Triggers::WhileBool* obj, ::g::Uno::UX::Selector name)
 {
     FuseControlsScrollView_FuseTriggersWhileBool_Value_Property* obj1 = (FuseControlsScrollView_FuseTriggersWhileBool_Value_Property*)uNew(FuseControlsScrollView_FuseTriggersWhileBool_Value_Property_typeof());
@@ -2110,21 +2170,21 @@ FuseControlsScrollView_FuseTriggersWhileBool_Value_Property* FuseControlsScrollV
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/0.47.7/.uno/package
-// ------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/.uno/package
+// -----------------------------------------------------------------------------------------------------------
 
 // public static generated class FuseControlsVideo_bundle :0
 // {
 // static FuseControlsVideo_bundle() :0
 static void FuseControlsVideo_bundle__cctor__fn(uType* __type)
 {
-    FuseControlsVideo_bundle::Scale9Rectangleda875692_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[39/*"uniform flo...*/], ::STRINGS[40/*"uniform sam...*/], 0, 2, uArray::Init<uString*>(::TYPES[0/*string[]*/], 16, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[20/*"q"*/]));
-    FuseControlsVideo_bundle::VideoDrawElement5c829975_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[41/*"uniform mat...*/], ::STRINGS[42/*"uniform sam...*/], 1, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[3/*"b"*/], ::STRINGS[2/*"a"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[11/*"h"*/]));
+    FuseControlsVideo_bundle::Scale9Rectangleda875692_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[42/*"uniform flo...*/], ::STRINGS[43/*"uniform sam...*/], 0, 2, uArray::Init<uString*>(::TYPES[0/*string[]*/], 16, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[28/*"q"*/]));
+    FuseControlsVideo_bundle::VideoDrawElement5c829975_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[44/*"uniform mat...*/], ::STRINGS[45/*"uniform sam...*/], 1, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[5/*"b"*/], ::STRINGS[4/*"a"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[13/*"h"*/]));
 }
 
 static void FuseControlsVideo_bundle_build(uType* type)
 {
-    ::STRINGS[39] = uString::Const("uniform float c, d, e, f, g, h, k, l, m, n;\n"
+    ::STRINGS[42] = uString::Const("uniform float c, d, e, f, g, h, k, l, m, n;\n"
         "uniform mat4 i, j;\n"
         "uniform vec2 o;\n"
         "\n"
@@ -2138,7 +2198,7 @@ static void FuseControlsVideo_bundle_build(uType* type)
         "    gl_Position = j * (i * vec4(vec2(((a.x * c) + (a.y * d)) + (a.z * e), ((b.x * f) + (b.y * g)) + (b.z * h)), float(0), float(1)));\n"
         "}\n"
         "");
-    ::STRINGS[40] = uString::Const("uniform sampler2D q;\n"
+    ::STRINGS[43] = uString::Const("uniform sampler2D q;\n"
         "\n"
         "varying vec2 p;\n"
         "\n"
@@ -2147,23 +2207,23 @@ static void FuseControlsVideo_bundle_build(uType* type)
         "    gl_FragColor = vec4(texture2D(q, p).xyz, 1.0);\n"
         "}\n"
         "");
-    ::STRINGS[2] = uString::Const("a");
-    ::STRINGS[3] = uString::Const("b");
-    ::STRINGS[4] = uString::Const("c");
-    ::STRINGS[5] = uString::Const("d");
-    ::STRINGS[9] = uString::Const("e");
-    ::STRINGS[6] = uString::Const("f");
-    ::STRINGS[10] = uString::Const("g");
-    ::STRINGS[11] = uString::Const("h");
-    ::STRINGS[12] = uString::Const("i");
-    ::STRINGS[13] = uString::Const("j");
-    ::STRINGS[14] = uString::Const("k");
-    ::STRINGS[15] = uString::Const("l");
-    ::STRINGS[16] = uString::Const("m");
-    ::STRINGS[17] = uString::Const("n");
-    ::STRINGS[18] = uString::Const("o");
-    ::STRINGS[20] = uString::Const("q");
-    ::STRINGS[41] = uString::Const("uniform mat4 f, c;\n"
+    ::STRINGS[4] = uString::Const("a");
+    ::STRINGS[5] = uString::Const("b");
+    ::STRINGS[6] = uString::Const("c");
+    ::STRINGS[7] = uString::Const("d");
+    ::STRINGS[11] = uString::Const("e");
+    ::STRINGS[8] = uString::Const("f");
+    ::STRINGS[12] = uString::Const("g");
+    ::STRINGS[13] = uString::Const("h");
+    ::STRINGS[14] = uString::Const("i");
+    ::STRINGS[15] = uString::Const("j");
+    ::STRINGS[23] = uString::Const("k");
+    ::STRINGS[16] = uString::Const("l");
+    ::STRINGS[24] = uString::Const("m");
+    ::STRINGS[25] = uString::Const("n");
+    ::STRINGS[26] = uString::Const("o");
+    ::STRINGS[28] = uString::Const("q");
+    ::STRINGS[44] = uString::Const("uniform mat4 f, c;\n"
         "uniform vec2 d, e;\n"
         "\n"
         "attribute vec2 a;\n"
@@ -2189,7 +2249,7 @@ static void FuseControlsVideo_bundle_build(uType* type)
         "    gl_Position = c * (f * vec4(vec3(a, float(0)), 1.));\n"
         "}\n"
         "");
-    ::STRINGS[42] = uString::Const("uniform sampler2D h;\n"
+    ::STRINGS[45] = uString::Const("uniform sampler2D h;\n"
         "\n"
         "varying vec2 g;\n"
         "\n"
@@ -2225,20 +2285,20 @@ uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseControlsVideo_bundle::VideoDrawElement5c829975_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/0.47.7/.uno/package
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/.uno/package
+// ----------------------------------------------------------------------------------------------------
 
 // public static generated class FuseDrawing_bundle :0
 // {
 // static FuseDrawing_bundle() :0
 static void FuseDrawing_bundle__cctor__fn(uType* __type)
 {
-    FuseDrawing_bundle::LinearGradientDrawable479fd075_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[43/*"attribute v...*/], ::STRINGS[44/*"uniform flo...*/], 3, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[2/*"a"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/]));
+    FuseDrawing_bundle::LinearGradientDrawable479fd075_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[46/*"attribute v...*/], ::STRINGS[47/*"uniform flo...*/], 3, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/]));
 }
 
 static void FuseDrawing_bundle_build(uType* type)
 {
-    ::STRINGS[43] = uString::Const("attribute vec2 a;\n"
+    ::STRINGS[46] = uString::Const("attribute vec2 a;\n"
         "\n"
         "varying vec2 h;\n"
         "\n"
@@ -2248,7 +2308,7 @@ static void FuseDrawing_bundle_build(uType* type)
         "    gl_Position = vec4((a.x * float(2)) - float(1), (-a.y * float(2)) + float(1), float(0), float(1));\n"
         "}\n"
         "");
-    ::STRINGS[44] = uString::Const("uniform float e[b], f;\n"
+    ::STRINGS[47] = uString::Const("uniform float e[b], f;\n"
         "uniform vec4 g[c];\n"
         "\n"
         "varying vec2 h;\n"
@@ -2277,13 +2337,13 @@ static void FuseDrawing_bundle_build(uType* type)
         "    gl_FragColor = j(h);\n"
         "}\n"
         "");
-    ::STRINGS[3] = uString::Const("b");
-    ::STRINGS[4] = uString::Const("c");
-    ::STRINGS[5] = uString::Const("d");
-    ::STRINGS[2] = uString::Const("a");
-    ::STRINGS[9] = uString::Const("e");
-    ::STRINGS[6] = uString::Const("f");
-    ::STRINGS[10] = uString::Const("g");
+    ::STRINGS[5] = uString::Const("b");
+    ::STRINGS[6] = uString::Const("c");
+    ::STRINGS[7] = uString::Const("d");
+    ::STRINGS[4] = uString::Const("a");
+    ::STRINGS[11] = uString::Const("e");
+    ::STRINGS[8] = uString::Const("f");
+    ::STRINGS[12] = uString::Const("g");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
     type->SetFields(0,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawing_bundle::LinearGradientDrawable479fd075_, uFieldFlagsStatic);
@@ -2308,572 +2368,69 @@ uClassType* FuseDrawing_bundle_typeof()
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawing_bundle::LinearGradientDrawable479fd075_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Polygons/0.47.7/.uno/package
-// --------------------------------------------------------------------------------------------------------------
-
-// public static generated class FuseDrawingPolygons_bundle :0
-// {
-// static FuseDrawingPolygons_bundle() :0
-static void FuseDrawingPolygons_bundle__cctor__fn(uType* __type)
-{
-    FuseDrawingPolygons_bundle::Border59574a1c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[45/*"uniform mat...*/], ::STRINGS[46/*"varying vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/]));
-    FuseDrawingPolygons_bundle::Border896a8e7a_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[47/*"uniform mat...*/], ::STRINGS[48/*"varying vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 3, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/]));
-    FuseDrawingPolygons_bundle::Borderb6afd581_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[49/*"uniform mat...*/], ::STRINGS[50/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 16, ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[2/*"a"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[51/*"s"*/]));
-    FuseDrawingPolygons_bundle::Borderfbfebeb7_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[52/*"uniform mat...*/], ::STRINGS[53/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 9, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[14/*"k"*/]));
-    FuseDrawingPolygons_bundle::PolygonDrawable13820064_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[54/*"uniform mat...*/], ::STRINGS[25/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 3, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/]));
-    FuseDrawingPolygons_bundle::PolygonDrawable13820065_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[55/*"uniform mat...*/], ::STRINGS[56/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 9, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[13/*"j"*/]));
-    FuseDrawingPolygons_bundle::PolygonDrawable13820067_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[57/*"uniform mat...*/], ::STRINGS[58/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 16, ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[2/*"a"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[59/*"r"*/]));
-}
-
-static void FuseDrawingPolygons_bundle_build(uType* type)
-{
-    ::STRINGS[45] = uString::Const("uniform mat4 b;\n"
-        "uniform vec4 c;\n"
-        "uniform float d;\n"
-        "\n"
-        "attribute vec4 a;\n"
-        "\n"
-        "varying vec4 e;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    e = (c * a.zw.x) * d;\n"
-        "    gl_Position = b * vec4(a.xy, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[46] = uString::Const("varying vec4 e;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = e;\n"
-        "}\n"
-        "");
-    ::STRINGS[2] = uString::Const("a");
-    ::STRINGS[3] = uString::Const("b");
-    ::STRINGS[4] = uString::Const("c");
-    ::STRINGS[5] = uString::Const("d");
-    ::STRINGS[47] = uString::Const("uniform mat4 b;\n"
-        "uniform vec4 c;\n"
-        "\n"
-        "attribute vec4 a;\n"
-        "\n"
-        "varying vec4 d;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    d = c * a.zw.x;\n"
-        "    gl_Position = b * vec4(a.xy, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[48] = uString::Const("varying vec4 d;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = d;\n"
-        "}\n"
-        "");
-    ::STRINGS[49] = uString::Const("uniform mat4 d;\n"
-        "uniform vec2 e, f, g, h, i, k, j;\n"
-        "\n"
-        "attribute vec4 a;\n"
-        "\n"
-        "varying float p;\n"
-        "varying vec2 q, r;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec2 t = ((((e * (a.xy / e)) - f) / g) * h) + i;\n"
-        "    p = a.zw.x;\n"
-        "    q = k + (t * j);\n"
-        "    r = t;\n"
-        "    gl_Position = d * vec4(a.xy, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[50] = uString::Const("uniform vec2 m, l;\n"
-        "uniform vec4 n;\n"
-        "uniform float o;\n"
-        "\n"
-        "uniform sampler2D s;\n"
-        "\n"
-        "varying float p;\n"
-        "varying vec2 q, r;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec4 t = (c ? vec4(float(0)) : texture2D(s, b ? (m + (fract(q) * l)) : r)) * n;\n"
-        "    gl_FragColor = (vec4(t.xyz * t.w, t.w) * p) * o;\n"
-        "}\n"
-        "");
-    ::STRINGS[9] = uString::Const("e");
-    ::STRINGS[6] = uString::Const("f");
-    ::STRINGS[10] = uString::Const("g");
-    ::STRINGS[11] = uString::Const("h");
-    ::STRINGS[12] = uString::Const("i");
-    ::STRINGS[13] = uString::Const("j");
-    ::STRINGS[14] = uString::Const("k");
-    ::STRINGS[15] = uString::Const("l");
-    ::STRINGS[16] = uString::Const("m");
-    ::STRINGS[17] = uString::Const("n");
-    ::STRINGS[18] = uString::Const("o");
-    ::STRINGS[51] = uString::Const("s");
-    ::STRINGS[52] = uString::Const("uniform mat4 b;\n"
-        "uniform vec2 c, d, e, g;\n"
-        "uniform float h;\n"
-        "\n"
-        "attribute vec4 a;\n"
-        "\n"
-        "varying float i, j;\n"
-        "\n"
-        "float l(vec2 m, vec2 n, float o){\n"
-        "    vec2 p = (m * c) - d;\n"
-        "    float q = dot(p, n) / o;\n"
-        "    return (q - e.x) / e.y;\n"
-        "}\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    i = a.zw.x;\n"
-        "    j = l(a.xy / c, g, h);\n"
-        "    gl_Position = b * vec4(a.xy, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[53] = uString::Const("uniform float f;\n"
-        "\n"
-        "uniform sampler2D k;\n"
-        "\n"
-        "varying float i, j;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = (texture2D(k, vec2(j, 0.5)) * i) * f;\n"
-        "}\n"
-        "");
-    ::STRINGS[54] = uString::Const("uniform mat4 b;\n"
-        "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_Position = b * vec4(a, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[25] = uString::Const("uniform vec4 c;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = c;\n"
-        "}\n"
-        "");
-    ::STRINGS[55] = uString::Const("uniform mat4 b;\n"
-        "uniform vec2 c, d, e, g;\n"
-        "uniform float h;\n"
-        "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "varying float i;\n"
-        "\n"
-        "float k(vec2 l, vec2 m, float n){\n"
-        "    vec2 o = (l * c) - d;\n"
-        "    float p = dot(o, m) / n;\n"
-        "    return (p - e.x) / e.y;\n"
-        "}\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    i = k(a / c, g, h);\n"
-        "    gl_Position = b * vec4(a, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[56] = uString::Const("uniform float f;\n"
-        "\n"
-        "uniform sampler2D j;\n"
-        "\n"
-        "varying float i;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = texture2D(j, vec2(i, 0.5)) * f;\n"
-        "}\n"
-        "");
-    ::STRINGS[57] = uString::Const("uniform mat4 d;\n"
-        "uniform vec2 e, f, g, h, i, k, j;\n"
-        "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "varying vec2 p, q;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec2 s = ((((e * (a / e)) - f) / g) * h) + i;\n"
-        "    p = k + (s * j);\n"
-        "    q = s;\n"
-        "    gl_Position = d * vec4(a, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[58] = uString::Const("uniform vec2 m, l;\n"
-        "uniform vec4 n;\n"
-        "uniform float o;\n"
-        "\n"
-        "uniform sampler2D r;\n"
-        "\n"
-        "varying vec2 p, q;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec4 s = (c ? vec4(float(0)) : texture2D(r, b ? (m + (fract(p) * l)) : q)) * n;\n"
-        "    gl_FragColor = vec4(s.xyz * s.w, s.w) * o;\n"
-        "}\n"
-        "");
-    ::STRINGS[59] = uString::Const("r");
-    ::TYPES[0] = ::g::Uno::String_typeof()->Array();
-    type->SetFields(0,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPolygons_bundle::Border59574a1c_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPolygons_bundle::Border896a8e7a_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPolygons_bundle::Borderb6afd581_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPolygons_bundle::Borderfbfebeb7_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPolygons_bundle::PolygonDrawable13820064_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPolygons_bundle::PolygonDrawable13820065_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPolygons_bundle::PolygonDrawable13820067_, uFieldFlagsStatic);
-    type->Reflection.SetFields(7,
-        new uField("Border59574a1c", 0),
-        new uField("Border896a8e7a", 1),
-        new uField("Borderb6afd581", 2),
-        new uField("Borderfbfebeb7", 3),
-        new uField("PolygonDrawable13820064", 4),
-        new uField("PolygonDrawable13820065", 5),
-        new uField("PolygonDrawable13820067", 6));
-}
-
-uClassType* FuseDrawingPolygons_bundle_typeof()
-{
-    static uSStrong<uClassType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.FieldCount = 7;
-    options.TypeSize = sizeof(uClassType);
-    type = uClassType::New("FuseDrawingPolygons_bundle", options);
-    type->fp_build_ = FuseDrawingPolygons_bundle_build;
-    type->fp_cctor_ = FuseDrawingPolygons_bundle__cctor__fn;
-    return type;
-}
-
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPolygons_bundle::Border59574a1c_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPolygons_bundle::Border896a8e7a_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPolygons_bundle::Borderb6afd581_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPolygons_bundle::Borderfbfebeb7_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPolygons_bundle::PolygonDrawable13820064_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPolygons_bundle::PolygonDrawable13820065_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPolygons_bundle::PolygonDrawable13820067_;
-// }
-
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/0.47.7/.uno/package
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/.uno/package
+// ---------------------------------------------------------------------------------------------------------------
 
 // public static generated class FuseDrawingPrimitives_bundle :0
 // {
 // static FuseDrawingPrimitives_bundle() :0
 static void FuseDrawingPrimitives_bundle__cctor__fn(uType* __type)
 {
-    FuseDrawingPrimitives_bundle::Circle01247f96_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[60/*"uniform vec...*/], ::STRINGS[61/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 19, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[59/*"r"*/], ::STRINGS[62/*"u"*/]));
-    FuseDrawingPrimitives_bundle::Circle038d0b56_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[63/*"uniform vec...*/], ::STRINGS[64/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 26, ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[2/*"a"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[59/*"r"*/], ::STRINGS[51/*"s"*/], ::STRINGS[21/*"t"*/], ::STRINGS[62/*"u"*/], ::STRINGS[65/*"v"*/], ::STRINGS[66/*"w"*/], ::STRINGS[67/*"x"*/], ::STRINGS[68/*"y"*/], ::STRINGS[69/*"C"*/]));
-    FuseDrawingPrimitives_bundle::Circle09647386_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[70/*"uniform vec...*/], ::STRINGS[71/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 17, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[51/*"s"*/]));
-    FuseDrawingPrimitives_bundle::Circle09647387_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[72/*"uniform vec...*/], ::STRINGS[73/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 14, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[19/*"p"*/]));
-    FuseDrawingPrimitives_bundle::Circle09647389_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[70/*"uniform vec...*/], ::STRINGS[74/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 17, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[51/*"s"*/]));
-    FuseDrawingPrimitives_bundle::Circle27c6b7fe_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[60/*"uniform vec...*/], ::STRINGS[75/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 19, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[59/*"r"*/], ::STRINGS[62/*"u"*/]));
-    FuseDrawingPrimitives_bundle::Circle27c6b7ff_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[76/*"uniform vec...*/], ::STRINGS[77/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 16, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[59/*"r"*/]));
-    FuseDrawingPrimitives_bundle::Circle4a971b16_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[78/*"uniform vec...*/], ::STRINGS[79/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 10, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/]));
-    FuseDrawingPrimitives_bundle::Circle4c78c62c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[80/*"uniform vec...*/], ::STRINGS[81/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 14, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/]));
-    FuseDrawingPrimitives_bundle::Circle60e596bb_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[63/*"uniform vec...*/], ::STRINGS[82/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 26, ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[2/*"a"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[59/*"r"*/], ::STRINGS[51/*"s"*/], ::STRINGS[21/*"t"*/], ::STRINGS[62/*"u"*/], ::STRINGS[65/*"v"*/], ::STRINGS[66/*"w"*/], ::STRINGS[67/*"x"*/], ::STRINGS[68/*"y"*/], ::STRINGS[69/*"C"*/]));
-    FuseDrawingPrimitives_bundle::Circle7aaa5f74_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[83/*"uniform vec...*/], ::STRINGS[84/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 13, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/]));
-    FuseDrawingPrimitives_bundle::Circle91c7af62_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[85/*"uniform vec...*/], ::STRINGS[86/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 11, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/]));
-    FuseDrawingPrimitives_bundle::Circlebe3e2220_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[87/*"uniform vec...*/], ::STRINGS[88/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 23, ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[2/*"a"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[59/*"r"*/], ::STRINGS[51/*"s"*/], ::STRINGS[21/*"t"*/], ::STRINGS[62/*"u"*/], ::STRINGS[65/*"v"*/], ::STRINGS[89/*"z"*/]));
-    FuseDrawingPrimitives_bundle::Circlecfb305c7_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[90/*"uniform vec...*/], ::STRINGS[91/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 24, ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[2/*"a"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[59/*"r"*/], ::STRINGS[51/*"s"*/], ::STRINGS[21/*"t"*/], ::STRINGS[62/*"u"*/], ::STRINGS[65/*"v"*/], ::STRINGS[66/*"w"*/], ::STRINGS[92/*"A"*/]));
-    FuseDrawingPrimitives_bundle::Circlecfb305c9_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[93/*"uniform vec...*/], ::STRINGS[94/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 21, ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[2/*"a"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[59/*"r"*/], ::STRINGS[51/*"s"*/], ::STRINGS[21/*"t"*/], ::STRINGS[67/*"x"*/]));
-    FuseDrawingPrimitives_bundle::Circlecfb305ca_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[90/*"uniform vec...*/], ::STRINGS[95/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 24, ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[2/*"a"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[59/*"r"*/], ::STRINGS[51/*"s"*/], ::STRINGS[21/*"t"*/], ::STRINGS[62/*"u"*/], ::STRINGS[65/*"v"*/], ::STRINGS[66/*"w"*/], ::STRINGS[92/*"A"*/]));
-    FuseDrawingPrimitives_bundle::Circled0e74ba4_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[96/*"uniform vec...*/], ::STRINGS[97/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 9, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/]));
-    FuseDrawingPrimitives_bundle::Circled802ead9_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[83/*"uniform vec...*/], ::STRINGS[98/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 13, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/]));
-    FuseDrawingPrimitives_bundle::Circlee8f0edda_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[99/*"uniform vec...*/], ::STRINGS[100/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 12, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/]));
-    FuseDrawingPrimitives_bundle::Circlee8f0eddb_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[99/*"uniform vec...*/], ::STRINGS[101/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 12, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/]));
-    FuseDrawingPrimitives_bundle::Circleef203ac7_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[80/*"uniform vec...*/], ::STRINGS[102/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 14, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/]));
-    FuseDrawingPrimitives_bundle::Circlef28f173b_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[103/*"uniform vec...*/], ::STRINGS[104/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 8, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/]));
-    FuseDrawingPrimitives_bundle::Circlef28f173d_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[85/*"uniform vec...*/], ::STRINGS[105/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 11, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/]));
-    FuseDrawingPrimitives_bundle::Circlef28f173e_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[85/*"uniform vec...*/], ::STRINGS[106/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 11, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/]));
-    FuseDrawingPrimitives_bundle::Rectangle5aede5cb_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[107/*"uniform flo...*/], ::STRINGS[108/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 16, ::STRINGS[5/*"d"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[21/*"t"*/]));
-    FuseDrawingPrimitives_bundle::Rectangle5aede5cc_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[107/*"uniform flo...*/], ::STRINGS[109/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 16, ::STRINGS[5/*"d"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[21/*"t"*/]));
-    FuseDrawingPrimitives_bundle::Rectangle6bc1d5d3_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[110/*"uniform flo...*/], ::STRINGS[111/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 10, ::STRINGS[5/*"d"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/]));
-    FuseDrawingPrimitives_bundle::Rectangle6bc1d5d4_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[110/*"uniform flo...*/], ::STRINGS[112/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 10, ::STRINGS[5/*"d"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/]));
-    FuseDrawingPrimitives_bundle::Rectangle7c95c5e3_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[113/*"uniform flo...*/], ::STRINGS[114/*"uniform vec...*/], 3, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 23, ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[59/*"r"*/], ::STRINGS[51/*"s"*/], ::STRINGS[21/*"t"*/], ::STRINGS[62/*"u"*/], ::STRINGS[65/*"v"*/], ::STRINGS[115/*"B"*/]));
-    FuseDrawingPrimitives_bundle::Rectangle7c95c5e4_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[113/*"uniform flo...*/], ::STRINGS[116/*"uniform vec...*/], 3, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 23, ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[59/*"r"*/], ::STRINGS[51/*"s"*/], ::STRINGS[21/*"t"*/], ::STRINGS[62/*"u"*/], ::STRINGS[65/*"v"*/], ::STRINGS[115/*"B"*/]));
-    FuseDrawingPrimitives_bundle::Rectangle7fa93ce4_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[117/*"uniform flo...*/], ::STRINGS[118/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 12, ::STRINGS[5/*"d"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/]));
-    FuseDrawingPrimitives_bundle::Rectangle8d69b5eb_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[119/*"uniform flo...*/], ::STRINGS[120/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 11, ::STRINGS[5/*"d"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/]));
-    FuseDrawingPrimitives_bundle::Rectangle8d69b5ec_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[119/*"uniform flo...*/], ::STRINGS[121/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 11, ::STRINGS[5/*"d"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/]));
-    FuseDrawingPrimitives_bundle::Rectanglea858f3bc_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[117/*"uniform flo...*/], ::STRINGS[122/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 12, ::STRINGS[5/*"d"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/]));
-    FuseDrawingPrimitives_bundle::Rectanglea858f4fc_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[123/*"uniform flo...*/], ::STRINGS[124/*"uniform vec...*/], 3, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 25, ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[59/*"r"*/], ::STRINGS[51/*"s"*/], ::STRINGS[21/*"t"*/], ::STRINGS[62/*"u"*/], ::STRINGS[65/*"v"*/], ::STRINGS[66/*"w"*/], ::STRINGS[67/*"x"*/], ::STRINGS[125/*"D"*/]));
-    FuseDrawingPrimitives_bundle::Rectanglea858f503_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[123/*"uniform flo...*/], ::STRINGS[126/*"uniform vec...*/], 3, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 25, ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[59/*"r"*/], ::STRINGS[51/*"s"*/], ::STRINGS[21/*"t"*/], ::STRINGS[62/*"u"*/], ::STRINGS[65/*"v"*/], ::STRINGS[66/*"w"*/], ::STRINGS[67/*"x"*/], ::STRINGS[125/*"D"*/]));
-    FuseDrawingPrimitives_bundle::Rectanglea858f53c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[127/*"uniform flo...*/], ::STRINGS[128/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 13, ::STRINGS[5/*"d"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/]));
-    FuseDrawingPrimitives_bundle::Rectanglea858f53f_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[127/*"uniform flo...*/], ::STRINGS[129/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 13, ::STRINGS[5/*"d"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/]));
-    FuseDrawingPrimitives_bundle::Rectanglea858f57b_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[130/*"uniform flo...*/], ::STRINGS[131/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 18, ::STRINGS[5/*"d"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[65/*"v"*/]));
-    FuseDrawingPrimitives_bundle::Rectanglea858f57c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[130/*"uniform flo...*/], ::STRINGS[132/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 18, ::STRINGS[5/*"d"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[20/*"q"*/], ::STRINGS[65/*"v"*/]));
+    FuseDrawingPrimitives_bundle::Circle01247f96_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[48/*"uniform vec...*/], ::STRINGS[49/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 14, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/]));
+    FuseDrawingPrimitives_bundle::Circle038d0b56_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[50/*"uniform vec...*/], ::STRINGS[51/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 17, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/]));
+    FuseDrawingPrimitives_bundle::Circle054832c3_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[52/*"uniform vec...*/], ::STRINGS[53/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 13, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/]));
+    FuseDrawingPrimitives_bundle::Circle0962c76a_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[54/*"uniform vec...*/], ::STRINGS[55/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 21, ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[4/*"a"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[56/*"r"*/], ::STRINGS[57/*"s"*/], ::STRINGS[29/*"t"*/], ::STRINGS[58/*"x"*/]));
+    FuseDrawingPrimitives_bundle::Circle0962c76b_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[59/*"uniform vec...*/], ::STRINGS[60/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 24, ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[4/*"a"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[56/*"r"*/], ::STRINGS[57/*"s"*/], ::STRINGS[29/*"t"*/], ::STRINGS[61/*"u"*/], ::STRINGS[62/*"v"*/], ::STRINGS[63/*"w"*/], ::STRINGS[64/*"A"*/]));
+    FuseDrawingPrimitives_bundle::Circle0962c76c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[59/*"uniform vec...*/], ::STRINGS[65/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 24, ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[4/*"a"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[56/*"r"*/], ::STRINGS[57/*"s"*/], ::STRINGS[29/*"t"*/], ::STRINGS[61/*"u"*/], ::STRINGS[62/*"v"*/], ::STRINGS[63/*"w"*/], ::STRINGS[64/*"A"*/]));
+    FuseDrawingPrimitives_bundle::Circle27c6b7fe_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[48/*"uniform vec...*/], ::STRINGS[66/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 14, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/]));
+    FuseDrawingPrimitives_bundle::Circle27c6b7ff_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[67/*"uniform vec...*/], ::STRINGS[68/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 11, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/]));
+    FuseDrawingPrimitives_bundle::Circle4a971b16_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[69/*"uniform vec...*/], ::STRINGS[70/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 16, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[56/*"r"*/]));
+    FuseDrawingPrimitives_bundle::Circle4c78c62c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[71/*"uniform vec...*/], ::STRINGS[72/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 26, ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[4/*"a"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[56/*"r"*/], ::STRINGS[57/*"s"*/], ::STRINGS[29/*"t"*/], ::STRINGS[61/*"u"*/], ::STRINGS[62/*"v"*/], ::STRINGS[63/*"w"*/], ::STRINGS[58/*"x"*/], ::STRINGS[73/*"y"*/], ::STRINGS[74/*"C"*/]));
+    FuseDrawingPrimitives_bundle::Circle60e596bb_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[50/*"uniform vec...*/], ::STRINGS[75/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 17, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/]));
+    FuseDrawingPrimitives_bundle::Circle62a0be28_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[76/*"uniform vec...*/], ::STRINGS[77/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 10, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/]));
+    FuseDrawingPrimitives_bundle::Circle7aaa5f74_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[78/*"uniform vec...*/], ::STRINGS[79/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 19, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[56/*"r"*/], ::STRINGS[61/*"u"*/]));
+    FuseDrawingPrimitives_bundle::Circle832ca9c8_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[80/*"uniform vec...*/], ::STRINGS[81/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 17, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[57/*"s"*/]));
+    FuseDrawingPrimitives_bundle::Circle832ca9d6_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[82/*"uniform vec...*/], ::STRINGS[83/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 14, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[27/*"p"*/]));
+    FuseDrawingPrimitives_bundle::Circle832ca9d7_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[80/*"uniform vec...*/], ::STRINGS[84/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 17, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[57/*"s"*/]));
+    FuseDrawingPrimitives_bundle::Circle91c7af62_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[85/*"uniform vec...*/], ::STRINGS[86/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 23, ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[4/*"a"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[56/*"r"*/], ::STRINGS[57/*"s"*/], ::STRINGS[29/*"t"*/], ::STRINGS[61/*"u"*/], ::STRINGS[62/*"v"*/], ::STRINGS[87/*"z"*/]));
+    FuseDrawingPrimitives_bundle::Circlea7efa75e_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[52/*"uniform vec...*/], ::STRINGS[88/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 13, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/]));
+    FuseDrawingPrimitives_bundle::Circlebe3e2220_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[89/*"uniform vec...*/], ::STRINGS[90/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 14, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/]));
+    FuseDrawingPrimitives_bundle::Circled0e59707_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[91/*"uniform vec...*/], ::STRINGS[92/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 12, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/]));
+    FuseDrawingPrimitives_bundle::Circled802ead9_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[78/*"uniform vec...*/], ::STRINGS[93/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 19, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[56/*"r"*/], ::STRINGS[61/*"u"*/]));
+    FuseDrawingPrimitives_bundle::Circlee8ef393e_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[94/*"uniform vec...*/], ::STRINGS[95/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 15, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/]));
+    FuseDrawingPrimitives_bundle::Circlee8ef393f_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[94/*"uniform vec...*/], ::STRINGS[96/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 15, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/]));
+    FuseDrawingPrimitives_bundle::Circleef203ac7_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[71/*"uniform vec...*/], ::STRINGS[97/*"uniform vec...*/], 2, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 26, ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[4/*"a"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[56/*"r"*/], ::STRINGS[57/*"s"*/], ::STRINGS[29/*"t"*/], ::STRINGS[61/*"u"*/], ::STRINGS[62/*"v"*/], ::STRINGS[63/*"w"*/], ::STRINGS[58/*"x"*/], ::STRINGS[73/*"y"*/], ::STRINGS[74/*"C"*/]));
+    FuseDrawingPrimitives_bundle::Circlef28d6b18_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[98/*"uniform vec...*/], ::STRINGS[99/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 9, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/]));
+    FuseDrawingPrimitives_bundle::Circlef28d6b19_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[100/*"uniform vec...*/], ::STRINGS[101/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 12, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/]));
+    FuseDrawingPrimitives_bundle::Circlef28d6b1a_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[100/*"uniform vec...*/], ::STRINGS[102/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 12, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/]));
+    FuseDrawingPrimitives_bundle::Circlef7c3f433_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[103/*"uniform vec...*/], ::STRINGS[104/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 8, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/]));
+    FuseDrawingPrimitives_bundle::Circlef7c3f434_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[67/*"uniform vec...*/], ::STRINGS[105/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 11, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/]));
+    FuseDrawingPrimitives_bundle::Circlef7c3f435_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[67/*"uniform vec...*/], ::STRINGS[106/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 11, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/]));
+    FuseDrawingPrimitives_bundle::Rectangle0e3d84e4_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[107/*"uniform flo...*/], ::STRINGS[108/*"uniform vec...*/], 3, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 23, ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[56/*"r"*/], ::STRINGS[57/*"s"*/], ::STRINGS[29/*"t"*/], ::STRINGS[61/*"u"*/], ::STRINGS[62/*"v"*/], ::STRINGS[109/*"B"*/]));
+    FuseDrawingPrimitives_bundle::Rectangle26472755_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[110/*"uniform flo...*/], ::STRINGS[111/*"uniform vec...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 14, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/]));
+    FuseDrawingPrimitives_bundle::Rectangle538c6e5c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[110/*"uniform flo...*/], ::STRINGS[112/*"uniform vec...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 14, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/]));
+    FuseDrawingPrimitives_bundle::Rectangle565a6cfd_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[113/*"uniform flo...*/], ::STRINGS[114/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 16, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[29/*"t"*/]));
+    FuseDrawingPrimitives_bundle::Rectangle7c9a26db_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[115/*"uniform flo...*/], ::STRINGS[116/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 12, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/]));
+    FuseDrawingPrimitives_bundle::Rectangle7c9a26dc_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[115/*"uniform flo...*/], ::STRINGS[117/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 12, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/]));
+    FuseDrawingPrimitives_bundle::Rectangle7fa93ce4_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[118/*"uniform flo...*/], ::STRINGS[119/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 18, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[62/*"v"*/]));
+    FuseDrawingPrimitives_bundle::Rectanglea858f3bc_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[118/*"uniform flo...*/], ::STRINGS[120/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 18, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[62/*"v"*/]));
+    FuseDrawingPrimitives_bundle::Rectanglea858f4fc_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[121/*"uniform flo...*/], ::STRINGS[122/*"uniform vec...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 16, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/]));
+    FuseDrawingPrimitives_bundle::Rectanglea858f503_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[121/*"uniform flo...*/], ::STRINGS[123/*"uniform vec...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 16, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/]));
+    FuseDrawingPrimitives_bundle::Rectanglea858f53c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[124/*"uniform flo...*/], ::STRINGS[125/*"uniform vec...*/], 3, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 25, ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[56/*"r"*/], ::STRINGS[57/*"s"*/], ::STRINGS[29/*"t"*/], ::STRINGS[61/*"u"*/], ::STRINGS[62/*"v"*/], ::STRINGS[63/*"w"*/], ::STRINGS[58/*"x"*/], ::STRINGS[126/*"D"*/]));
+    FuseDrawingPrimitives_bundle::Rectanglea858f53f_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[124/*"uniform flo...*/], ::STRINGS[127/*"uniform vec...*/], 3, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 25, ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[56/*"r"*/], ::STRINGS[57/*"s"*/], ::STRINGS[29/*"t"*/], ::STRINGS[61/*"u"*/], ::STRINGS[62/*"v"*/], ::STRINGS[63/*"w"*/], ::STRINGS[58/*"x"*/], ::STRINGS[126/*"D"*/]));
+    FuseDrawingPrimitives_bundle::Rectanglea858f57b_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[128/*"uniform flo...*/], ::STRINGS[129/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 13, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/]));
+    FuseDrawingPrimitives_bundle::Rectanglea858f57c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[128/*"uniform flo...*/], ::STRINGS[130/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 13, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/]));
+    FuseDrawingPrimitives_bundle::Rectangleb0e4f93d_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[131/*"uniform flo...*/], ::STRINGS[132/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 11, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/]));
+    FuseDrawingPrimitives_bundle::Rectangleb3b2f694_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[131/*"uniform flo...*/], ::STRINGS[133/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 11, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/]));
+    FuseDrawingPrimitives_bundle::Rectanglec8ee9d37_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[113/*"uniform flo...*/], ::STRINGS[134/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 16, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[29/*"t"*/]));
+    FuseDrawingPrimitives_bundle::Rectangled46c7a4a_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[135/*"uniform flo...*/], ::STRINGS[136/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 10, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/]));
+    FuseDrawingPrimitives_bundle::Rectangleec761c79_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[135/*"uniform flo...*/], ::STRINGS[137/*"uniform flo...*/], 1, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 10, ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/]));
+    FuseDrawingPrimitives_bundle::Rectanglef633e2b5_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[107/*"uniform flo...*/], ::STRINGS[138/*"uniform vec...*/], 3, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 23, ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[28/*"q"*/], ::STRINGS[56/*"r"*/], ::STRINGS[57/*"s"*/], ::STRINGS[29/*"t"*/], ::STRINGS[61/*"u"*/], ::STRINGS[62/*"v"*/], ::STRINGS[109/*"B"*/]));
 }
 
 static void FuseDrawingPrimitives_bundle_build(uType* type)
 {
-    ::STRINGS[60] = uString::Const("uniform vec2 b, c, e, f, g, n;\n"
-        "uniform mat4 d;\n"
-        "uniform float o;\n"
-        "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "varying float s;\n"
-        "varying vec2 t;\n"
-        "\n"
-        "float v(vec2 w, vec2 x, float y){\n"
-        "    vec2 z = (w * e) - f;\n"
-        "    float A = dot(z, x) / y;\n"
-        "    return (A - g.x) / g.y;\n"
-        "}\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec2 w = a * b;\n"
-        "    vec2 x = w + c;\n"
-        "    s = v(x / e, n, o);\n"
-        "    t = w;\n"
-        "    gl_Position = d * vec4(x, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[61] = uString::Const("uniform float h, i, j, k, l, m;\n"
-        "uniform vec2 p, q, r;\n"
-        "\n"
-        "uniform sampler2D u;\n"
-        "\n"
-        "varying float s;\n"
-        "varying vec2 t;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = (texture2D(u, vec2(s, 0.5)) * (clamp(0.5 - (((abs((length(t) - h) - i) - j) * k) * l), float(0), float(1)) * clamp(0.5 - ((min(dot(t, p), min(dot(t, q), dot(t, r))) * k) * l), float(0), float(1)))) * m;\n"
-        "}\n"
-        "");
-    ::STRINGS[2] = uString::Const("a");
-    ::STRINGS[3] = uString::Const("b");
-    ::STRINGS[4] = uString::Const("c");
-    ::STRINGS[5] = uString::Const("d");
-    ::STRINGS[9] = uString::Const("e");
-    ::STRINGS[6] = uString::Const("f");
-    ::STRINGS[10] = uString::Const("g");
-    ::STRINGS[11] = uString::Const("h");
-    ::STRINGS[12] = uString::Const("i");
-    ::STRINGS[13] = uString::Const("j");
-    ::STRINGS[14] = uString::Const("k");
-    ::STRINGS[15] = uString::Const("l");
-    ::STRINGS[16] = uString::Const("m");
-    ::STRINGS[17] = uString::Const("n");
-    ::STRINGS[18] = uString::Const("o");
-    ::STRINGS[19] = uString::Const("p");
-    ::STRINGS[20] = uString::Const("q");
-    ::STRINGS[59] = uString::Const("r");
-    ::STRINGS[62] = uString::Const("u");
-    ::STRINGS[63] = uString::Const("uniform vec2 d, e, g, h, i, j, k, m, l;\n"
-        "uniform mat4 f;\n"
-        "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "varying vec2 z, A, B;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec2 D = a * d;\n"
-        "    vec2 E = D + e;\n"
-        "    vec2 F = ((((g * (E / g)) - h) / i) * j) + k;\n"
-        "    z = m + (F * l);\n"
-        "    A = F;\n"
-        "    B = D;\n"
-        "    gl_Position = f * vec4(E, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[64] = uString::Const("uniform vec2 o, n, w, x, y;\n"
-        "uniform vec4 p;\n"
-        "uniform float q, r, s, t, u, v;\n"
-        "\n"
-        "uniform sampler2D C;\n"
-        "\n"
-        "varying vec2 z, A, B;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec4 D = (c ? vec4(float(0)) : texture2D(C, b ? (o + (fract(z) * n)) : A)) * p;\n"
-        "    gl_FragColor = (vec4(D.xyz * D.w, D.w) * (clamp(0.5 - (((abs((length(B) - q) - r) - s) * t) * u), float(0), float(1)) * clamp(0.5 - ((min(dot(B, w), min(dot(B, x), dot(B, y))) * t) * u), float(0), float(1)))) * v;\n"
-        "}\n"
-        "");
-    ::STRINGS[51] = uString::Const("s");
-    ::STRINGS[21] = uString::Const("t");
-    ::STRINGS[65] = uString::Const("v");
-    ::STRINGS[66] = uString::Const("w");
-    ::STRINGS[67] = uString::Const("x");
-    ::STRINGS[68] = uString::Const("y");
-    ::STRINGS[69] = uString::Const("C");
-    ::STRINGS[70] = uString::Const("uniform vec2 b, c, e, f, g, l;\n"
-        "uniform mat4 d;\n"
-        "uniform float m;\n"
-        "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "varying float q;\n"
-        "varying vec2 r;\n"
-        "\n"
-        "float t(vec2 u, vec2 v, float w){\n"
-        "    vec2 x = (u * e) - f;\n"
-        "    float y = dot(x, v) / w;\n"
-        "    return (y - g.x) / g.y;\n"
-        "}\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec2 u = a * b;\n"
-        "    vec2 v = u + c;\n"
-        "    q = t(v / e, l, m);\n"
-        "    r = u;\n"
-        "    gl_Position = d * vec4(v, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[71] = uString::Const("uniform float h, i, j, k;\n"
-        "uniform vec2 n, o, p;\n"
-        "\n"
-        "uniform sampler2D s;\n"
-        "\n"
-        "varying float q;\n"
-        "varying vec2 r;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = (texture2D(s, vec2(q, 0.5)) * (clamp(0.5 - (((length(r) - h) * i) * j), float(0), float(1)) * clamp(0.5 - ((max(dot(r, n), max(dot(r, o), dot(r, p))) * i) * j), float(0), float(1)))) * k;\n"
-        "}\n"
-        "");
-    ::STRINGS[72] = uString::Const("uniform vec2 b, c, e, f, g, l;\n"
-        "uniform mat4 d;\n"
-        "uniform float m;\n"
-        "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "varying float n;\n"
-        "varying vec2 o;\n"
-        "\n"
-        "float q(vec2 r, vec2 s, float t){\n"
-        "    vec2 u = (r * e) - f;\n"
-        "    float v = dot(u, s) / t;\n"
-        "    return (v - g.x) / g.y;\n"
-        "}\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec2 r = a * b;\n"
-        "    vec2 s = r + c;\n"
-        "    n = q(s / e, l, m);\n"
-        "    o = r;\n"
-        "    gl_Position = d * vec4(s, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[73] = uString::Const("uniform float h, i, j, k;\n"
-        "\n"
-        "uniform sampler2D p;\n"
-        "\n"
-        "varying float n;\n"
-        "varying vec2 o;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = (texture2D(p, vec2(n, 0.5)) * (clamp(0.5 - (((length(o) - h) * i) * j), float(0), float(1)) * float(1))) * k;\n"
-        "}\n"
-        "");
-    ::STRINGS[74] = uString::Const("uniform float h, i, j, k;\n"
-        "uniform vec2 n, o, p;\n"
-        "\n"
-        "uniform sampler2D s;\n"
-        "\n"
-        "varying float q;\n"
-        "varying vec2 r;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = (texture2D(s, vec2(q, 0.5)) * (clamp(0.5 - (((length(r) - h) * i) * j), float(0), float(1)) * clamp(0.5 - ((min(dot(r, n), min(dot(r, o), dot(r, p))) * i) * j), float(0), float(1)))) * k;\n"
-        "}\n"
-        "");
-    ::STRINGS[75] = uString::Const("uniform float h, i, j, k, l, m;\n"
-        "uniform vec2 p, q, r;\n"
-        "\n"
-        "uniform sampler2D u;\n"
-        "\n"
-        "varying float s;\n"
-        "varying vec2 t;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = (texture2D(u, vec2(s, 0.5)) * (clamp(0.5 - (((abs((length(t) - h) - i) - j) * k) * l), float(0), float(1)) * clamp(0.5 - ((max(dot(t, p), max(dot(t, q), dot(t, r))) * k) * l), float(0), float(1)))) * m;\n"
-        "}\n"
-        "");
-    ::STRINGS[76] = uString::Const("uniform vec2 b, c, e, f, g, n;\n"
-        "uniform mat4 d;\n"
-        "uniform float o;\n"
-        "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "varying float p;\n"
-        "varying vec2 q;\n"
-        "\n"
-        "float s(vec2 t, vec2 u, float v){\n"
-        "    vec2 w = (t * e) - f;\n"
-        "    float x = dot(w, u) / v;\n"
-        "    return (x - g.x) / g.y;\n"
-        "}\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec2 t = a * b;\n"
-        "    vec2 u = t + c;\n"
-        "    p = s(u / e, n, o);\n"
-        "    q = t;\n"
-        "    gl_Position = d * vec4(u, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[77] = uString::Const("uniform float h, i, j, k, l, m;\n"
-        "\n"
-        "uniform sampler2D r;\n"
-        "\n"
-        "varying float p;\n"
-        "varying vec2 q;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = (texture2D(r, vec2(p, 0.5)) * (clamp(0.5 - (((abs((length(q) - h) - i) - j) * k) * l), float(0), float(1)) * float(1))) * m;\n"
-        "}\n"
-        "");
-    ::STRINGS[78] = uString::Const("uniform vec2 b, c;\n"
-        "uniform mat4 d;\n"
-        "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "varying vec2 k;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec2 l = a * b;\n"
-        "    k = l;\n"
-        "    gl_Position = d * vec4(l + c, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[79] = uString::Const("uniform float e, f, g, h, i;\n"
-        "uniform vec4 j;\n"
-        "\n"
-        "varying vec2 k;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = j * (clamp(0.5 - (((abs((length(k) - e) - f) - g) * h) * i), float(0), float(1)) * float(1));\n"
-        "}\n"
-        "");
-    ::STRINGS[80] = uString::Const("uniform vec2 b, c;\n"
+    ::STRINGS[48] = uString::Const("uniform vec2 b, c;\n"
         "uniform mat4 d;\n"
         "\n"
         "attribute vec2 a;\n"
@@ -2887,7 +2444,7 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_Position = d * vec4(p + c, 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[81] = uString::Const("uniform float e, f, g, h, i, k;\n"
+    ::STRINGS[49] = uString::Const("uniform float e, f, g, h, i, k;\n"
         "uniform vec2 l, m, n;\n"
         "uniform vec4 j;\n"
         "\n"
@@ -2898,21 +2455,75 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_FragColor = (j * (clamp(0.5 - (((abs((length(o) - e) - f) - g) * h) * i), float(0), float(1)) * clamp(0.5 - ((min(dot(o, l), min(dot(o, m), dot(o, n))) * h) * i), float(0), float(1)))) * k;\n"
         "}\n"
         "");
-    ::STRINGS[82] = uString::Const("uniform vec2 o, n, w, x, y;\n"
-        "uniform vec4 p;\n"
-        "uniform float q, r, s, t, u, v;\n"
+    ::STRINGS[4] = uString::Const("a");
+    ::STRINGS[5] = uString::Const("b");
+    ::STRINGS[6] = uString::Const("c");
+    ::STRINGS[7] = uString::Const("d");
+    ::STRINGS[11] = uString::Const("e");
+    ::STRINGS[8] = uString::Const("f");
+    ::STRINGS[12] = uString::Const("g");
+    ::STRINGS[13] = uString::Const("h");
+    ::STRINGS[14] = uString::Const("i");
+    ::STRINGS[15] = uString::Const("j");
+    ::STRINGS[23] = uString::Const("k");
+    ::STRINGS[16] = uString::Const("l");
+    ::STRINGS[24] = uString::Const("m");
+    ::STRINGS[25] = uString::Const("n");
+    ::STRINGS[50] = uString::Const("uniform vec2 b, c, e;\n"
+        "uniform mat4 d;\n"
         "\n"
-        "uniform sampler2D C;\n"
+        "attribute vec2 a;\n"
         "\n"
-        "varying vec2 z, A, B;\n"
+        "varying vec2 r, s;\n"
         "\n"
         "void main()\n"
         "{\n"
-        "    vec4 D = (c ? vec4(float(0)) : texture2D(C, b ? (o + (fract(z) * n)) : A)) * p;\n"
-        "    gl_FragColor = (vec4(D.xyz * D.w, D.w) * (clamp(0.5 - (((abs((length(B) - q) - r) - s) * t) * u), float(0), float(1)) * clamp(0.5 - ((max(dot(B, w), max(dot(B, x), dot(B, y))) * t) * u), float(0), float(1)))) * v;\n"
+        "    vec2 w = a * b;\n"
+        "    vec2 x = w + c;\n"
+        "    r = x / e;\n"
+        "    s = w;\n"
+        "    gl_Position = d * vec4(x, 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[83] = uString::Const("uniform vec2 b, c;\n"
+    ::STRINGS[51] = uString::Const("uniform vec2 f, e, o, p, q;\n"
+        "uniform float g, i, j, k, l, m, n;\n"
+        "uniform vec4 h;\n"
+        "\n"
+        "varying vec2 r, s;\n"
+        "\n"
+        "float t(vec2 w, vec2 x){\n"
+        "    vec2 y = abs(w) - x;\n"
+        "    return min(max(y.x, y.y), 0.0) + length(max(y, 0.0));\n"
+        "}\n"
+        "\n"
+        "vec2 u(vec2 w, vec2 x){\n"
+        "    return mod(w, x) - (0.5 * x);\n"
+        "}\n"
+        "\n"
+        "float v(vec2 w){\n"
+        "    vec2 x = e.xy / g;\n"
+        "    ivec2 y = ivec2(x);\n"
+        "\n"
+        "    if (mod(float(y.x), float(2)) == float(0))\n"
+        "        ++y.x;\n"
+        "\n"
+        "    if (mod(float(y.y), float(2)) == float(0))\n"
+        "        ++y.y;\n"
+        "\n"
+        "    x = e.xy / vec2(y);\n"
+        "    float z = t(u(w, x * float(2)) + vec2(g), vec2(g));\n"
+        "    return -floor(z);\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (mix(vec4(float(0)), h, clamp(v(r.xy * f), 0.0, 1.0)) * (clamp(0.5 - (((abs((length(s) - i) - j) - k) * l) * m), float(0), float(1)) * clamp(0.5 - ((min(dot(s, o), min(dot(s, p), dot(s, q))) * l) * m), float(0), float(1)))) * n;\n"
+        "}\n"
+        "");
+    ::STRINGS[26] = uString::Const("o");
+    ::STRINGS[27] = uString::Const("p");
+    ::STRINGS[28] = uString::Const("q");
+    ::STRINGS[52] = uString::Const("uniform vec2 b, c;\n"
         "uniform mat4 d;\n"
         "\n"
         "attribute vec2 a;\n"
@@ -2926,7 +2537,7 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_Position = d * vec4(o + c, 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[84] = uString::Const("uniform float e, f, g, h, i;\n"
+    ::STRINGS[53] = uString::Const("uniform float e, f, g, h, i;\n"
         "uniform vec2 k, l, m;\n"
         "uniform vec4 j;\n"
         "\n"
@@ -2934,100 +2545,10 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "\n"
         "void main()\n"
         "{\n"
-        "    gl_FragColor = j * (clamp(0.5 - (((abs((length(n) - e) - f) - g) * h) * i), float(0), float(1)) * clamp(0.5 - ((min(dot(n, k), min(dot(n, l), dot(n, m))) * h) * i), float(0), float(1)));\n"
+        "    gl_FragColor = j * (clamp(0.5 - (((abs((length(n) - e) - f) - g) * h) * i), float(0), float(1)) * clamp(0.5 - ((max(dot(n, k), max(dot(n, l), dot(n, m))) * h) * i), float(0), float(1)));\n"
         "}\n"
         "");
-    ::STRINGS[85] = uString::Const("uniform vec2 b, c;\n"
-        "uniform mat4 d;\n"
-        "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "varying vec2 l;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec2 m = a * b;\n"
-        "    l = m;\n"
-        "    gl_Position = d * vec4(m + c, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[86] = uString::Const("uniform float e, f, g, h, i, k;\n"
-        "uniform vec4 j;\n"
-        "\n"
-        "varying vec2 l;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = (j * (clamp(0.5 - (((abs((length(l) - e) - f) - g) * h) * i), float(0), float(1)) * float(1))) * k;\n"
-        "}\n"
-        "");
-    ::STRINGS[87] = uString::Const("uniform vec2 d, e, g, h, i, j, k, m, l;\n"
-        "uniform mat4 f;\n"
-        "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "varying vec2 w, x, y;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec2 A = a * d;\n"
-        "    vec2 B = A + e;\n"
-        "    vec2 C = ((((g * (B / g)) - h) / i) * j) + k;\n"
-        "    w = m + (C * l);\n"
-        "    x = C;\n"
-        "    y = A;\n"
-        "    gl_Position = f * vec4(B, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[88] = uString::Const("uniform vec2 o, n;\n"
-        "uniform vec4 p;\n"
-        "uniform float q, r, s, t, u, v;\n"
-        "\n"
-        "uniform sampler2D z;\n"
-        "\n"
-        "varying vec2 w, x, y;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec4 A = (c ? vec4(float(0)) : texture2D(z, b ? (o + (fract(w) * n)) : x)) * p;\n"
-        "    gl_FragColor = (vec4(A.xyz * A.w, A.w) * (clamp(0.5 - (((abs((length(y) - q) - r) - s) * t) * u), float(0), float(1)) * float(1))) * v;\n"
-        "}\n"
-        "");
-    ::STRINGS[89] = uString::Const("z");
-    ::STRINGS[90] = uString::Const("uniform vec2 d, e, g, h, i, j, k, m, l;\n"
-        "uniform mat4 f;\n"
-        "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "varying vec2 x, y, z;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec2 B = a * d;\n"
-        "    vec2 C = B + e;\n"
-        "    vec2 D = ((((g * (C / g)) - h) / i) * j) + k;\n"
-        "    x = m + (D * l);\n"
-        "    y = D;\n"
-        "    z = B;\n"
-        "    gl_Position = f * vec4(C, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[91] = uString::Const("uniform vec2 o, n, u, v, w;\n"
-        "uniform vec4 p;\n"
-        "uniform float q, r, s, t;\n"
-        "\n"
-        "uniform sampler2D A;\n"
-        "\n"
-        "varying vec2 x, y, z;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec4 B = (c ? vec4(float(0)) : texture2D(A, b ? (o + (fract(x) * n)) : y)) * p;\n"
-        "    gl_FragColor = (vec4(B.xyz * B.w, B.w) * (clamp(0.5 - (((length(z) - q) * r) * s), float(0), float(1)) * clamp(0.5 - ((min(dot(z, u), min(dot(z, v), dot(z, w))) * r) * s), float(0), float(1)))) * t;\n"
-        "}\n"
-        "");
-    ::STRINGS[92] = uString::Const("A");
-    ::STRINGS[93] = uString::Const("uniform vec2 d, e, g, h, i, j, k, m, l;\n"
+    ::STRINGS[54] = uString::Const("uniform vec2 d, e, g, h, i, j, k, m, l;\n"
         "uniform mat4 f;\n"
         "\n"
         "attribute vec2 a;\n"
@@ -3045,7 +2566,7 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_Position = f * vec4(z, 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[94] = uString::Const("uniform vec2 o, n;\n"
+    ::STRINGS[55] = uString::Const("uniform vec2 o, n;\n"
         "uniform vec4 p;\n"
         "uniform float q, r, s, t;\n"
         "\n"
@@ -3059,7 +2580,29 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_FragColor = (vec4(y.xyz * y.w, y.w) * (clamp(0.5 - (((length(w) - q) * r) * s), float(0), float(1)) * float(1))) * t;\n"
         "}\n"
         "");
-    ::STRINGS[95] = uString::Const("uniform vec2 o, n, u, v, w;\n"
+    ::STRINGS[56] = uString::Const("r");
+    ::STRINGS[57] = uString::Const("s");
+    ::STRINGS[29] = uString::Const("t");
+    ::STRINGS[58] = uString::Const("x");
+    ::STRINGS[59] = uString::Const("uniform vec2 d, e, g, h, i, j, k, m, l;\n"
+        "uniform mat4 f;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying vec2 x, y, z;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 B = a * d;\n"
+        "    vec2 C = B + e;\n"
+        "    vec2 D = ((((g * (C / g)) - h) / i) * j) + k;\n"
+        "    x = m + (D * l);\n"
+        "    y = D;\n"
+        "    z = B;\n"
+        "    gl_Position = f * vec4(C, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[60] = uString::Const("uniform vec2 o, n, u, v, w;\n"
         "uniform vec4 p;\n"
         "uniform float q, r, s, t;\n"
         "\n"
@@ -3073,7 +2616,575 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_FragColor = (vec4(B.xyz * B.w, B.w) * (clamp(0.5 - (((length(z) - q) * r) * s), float(0), float(1)) * clamp(0.5 - ((max(dot(z, u), max(dot(z, v), dot(z, w))) * r) * s), float(0), float(1)))) * t;\n"
         "}\n"
         "");
-    ::STRINGS[96] = uString::Const("uniform vec2 b, c;\n"
+    ::STRINGS[61] = uString::Const("u");
+    ::STRINGS[62] = uString::Const("v");
+    ::STRINGS[63] = uString::Const("w");
+    ::STRINGS[64] = uString::Const("A");
+    ::STRINGS[65] = uString::Const("uniform vec2 o, n, u, v, w;\n"
+        "uniform vec4 p;\n"
+        "uniform float q, r, s, t;\n"
+        "\n"
+        "uniform sampler2D A;\n"
+        "\n"
+        "varying vec2 x, y, z;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec4 B = (c ? vec4(float(0)) : texture2D(A, b ? (o + (fract(x) * n)) : y)) * p;\n"
+        "    gl_FragColor = (vec4(B.xyz * B.w, B.w) * (clamp(0.5 - (((length(z) - q) * r) * s), float(0), float(1)) * clamp(0.5 - ((min(dot(z, u), min(dot(z, v), dot(z, w))) * r) * s), float(0), float(1)))) * t;\n"
+        "}\n"
+        "");
+    ::STRINGS[66] = uString::Const("uniform float e, f, g, h, i, k;\n"
+        "uniform vec2 l, m, n;\n"
+        "uniform vec4 j;\n"
+        "\n"
+        "varying vec2 o;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (j * (clamp(0.5 - (((abs((length(o) - e) - f) - g) * h) * i), float(0), float(1)) * clamp(0.5 - ((max(dot(o, l), max(dot(o, m), dot(o, n))) * h) * i), float(0), float(1)))) * k;\n"
+        "}\n"
+        "");
+    ::STRINGS[67] = uString::Const("uniform vec2 b, c;\n"
+        "uniform mat4 d;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying vec2 l;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 m = a * b;\n"
+        "    l = m;\n"
+        "    gl_Position = d * vec4(m + c, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[68] = uString::Const("uniform float e, f, g, h, i, k;\n"
+        "uniform vec4 j;\n"
+        "\n"
+        "varying vec2 l;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (j * (clamp(0.5 - (((abs((length(l) - e) - f) - g) * h) * i), float(0), float(1)) * float(1))) * k;\n"
+        "}\n"
+        "");
+    ::STRINGS[69] = uString::Const("uniform vec2 b, c, e, f, n;\n"
+        "uniform mat4 d;\n"
+        "uniform vec4 m;\n"
+        "uniform float o;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying float p;\n"
+        "varying vec2 q;\n"
+        "\n"
+        "float s(vec2 t, vec2 u, vec2 v, float w){\n"
+        "    vec2 x = (t * e) - u;\n"
+        "    float y = dot(x, v) / w;\n"
+        "    return (y - f.x) / f.y;\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 t = a * b;\n"
+        "    vec2 u = t + c;\n"
+        "    p = s(u / e, m.xy, n, o);\n"
+        "    q = t;\n"
+        "    gl_Position = d * vec4(u, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[70] = uString::Const("uniform float g, h, i, j, k, l;\n"
+        "\n"
+        "uniform sampler2D r;\n"
+        "\n"
+        "varying float p;\n"
+        "varying vec2 q;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (texture2D(r, vec2(p, 0.5)) * (clamp(0.5 - (((abs((length(q) - g) - h) - i) * j) * k), float(0), float(1)) * float(1))) * l;\n"
+        "}\n"
+        "");
+    ::STRINGS[71] = uString::Const("uniform vec2 d, e, g, h, i, j, k, m, l;\n"
+        "uniform mat4 f;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying vec2 z, A, B;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 D = a * d;\n"
+        "    vec2 E = D + e;\n"
+        "    vec2 F = ((((g * (E / g)) - h) / i) * j) + k;\n"
+        "    z = m + (F * l);\n"
+        "    A = F;\n"
+        "    B = D;\n"
+        "    gl_Position = f * vec4(E, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[72] = uString::Const("uniform vec2 o, n, w, x, y;\n"
+        "uniform vec4 p;\n"
+        "uniform float q, r, s, t, u, v;\n"
+        "\n"
+        "uniform sampler2D C;\n"
+        "\n"
+        "varying vec2 z, A, B;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec4 D = (c ? vec4(float(0)) : texture2D(C, b ? (o + (fract(z) * n)) : A)) * p;\n"
+        "    gl_FragColor = (vec4(D.xyz * D.w, D.w) * (clamp(0.5 - (((abs((length(B) - q) - r) - s) * t) * u), float(0), float(1)) * clamp(0.5 - ((min(dot(B, w), min(dot(B, x), dot(B, y))) * t) * u), float(0), float(1)))) * v;\n"
+        "}\n"
+        "");
+    ::STRINGS[73] = uString::Const("y");
+    ::STRINGS[74] = uString::Const("C");
+    ::STRINGS[75] = uString::Const("uniform vec2 f, e, o, p, q;\n"
+        "uniform float g, i, j, k, l, m, n;\n"
+        "uniform vec4 h;\n"
+        "\n"
+        "varying vec2 r, s;\n"
+        "\n"
+        "float t(vec2 w, vec2 x){\n"
+        "    vec2 y = abs(w) - x;\n"
+        "    return min(max(y.x, y.y), 0.0) + length(max(y, 0.0));\n"
+        "}\n"
+        "\n"
+        "vec2 u(vec2 w, vec2 x){\n"
+        "    return mod(w, x) - (0.5 * x);\n"
+        "}\n"
+        "\n"
+        "float v(vec2 w){\n"
+        "    vec2 x = e.xy / g;\n"
+        "    ivec2 y = ivec2(x);\n"
+        "\n"
+        "    if (mod(float(y.x), float(2)) == float(0))\n"
+        "        ++y.x;\n"
+        "\n"
+        "    if (mod(float(y.y), float(2)) == float(0))\n"
+        "        ++y.y;\n"
+        "\n"
+        "    x = e.xy / vec2(y);\n"
+        "    float z = t(u(w, x * float(2)) + vec2(g), vec2(g));\n"
+        "    return -floor(z);\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (mix(vec4(float(0)), h, clamp(v(r.xy * f), 0.0, 1.0)) * (clamp(0.5 - (((abs((length(s) - i) - j) - k) * l) * m), float(0), float(1)) * clamp(0.5 - ((max(dot(s, o), max(dot(s, p), dot(s, q))) * l) * m), float(0), float(1)))) * n;\n"
+        "}\n"
+        "");
+    ::STRINGS[76] = uString::Const("uniform vec2 b, c;\n"
+        "uniform mat4 d;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying vec2 k;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 l = a * b;\n"
+        "    k = l;\n"
+        "    gl_Position = d * vec4(l + c, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[77] = uString::Const("uniform float e, f, g, h, i;\n"
+        "uniform vec4 j;\n"
+        "\n"
+        "varying vec2 k;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = j * (clamp(0.5 - (((abs((length(k) - e) - f) - g) * h) * i), float(0), float(1)) * float(1));\n"
+        "}\n"
+        "");
+    ::STRINGS[78] = uString::Const("uniform vec2 b, c, e, f, n;\n"
+        "uniform mat4 d;\n"
+        "uniform vec4 m;\n"
+        "uniform float o;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying float s;\n"
+        "varying vec2 t;\n"
+        "\n"
+        "float v(vec2 w, vec2 x, vec2 y, float z){\n"
+        "    vec2 A = (w * e) - x;\n"
+        "    float B = dot(A, y) / z;\n"
+        "    return (B - f.x) / f.y;\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 w = a * b;\n"
+        "    vec2 x = w + c;\n"
+        "    s = v(x / e, m.xy, n, o);\n"
+        "    t = w;\n"
+        "    gl_Position = d * vec4(x, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[79] = uString::Const("uniform float g, h, i, j, k, l;\n"
+        "uniform vec2 p, q, r;\n"
+        "\n"
+        "uniform sampler2D u;\n"
+        "\n"
+        "varying float s;\n"
+        "varying vec2 t;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (texture2D(u, vec2(s, 0.5)) * (clamp(0.5 - (((abs((length(t) - g) - h) - i) * j) * k), float(0), float(1)) * clamp(0.5 - ((min(dot(t, p), min(dot(t, q), dot(t, r))) * j) * k), float(0), float(1)))) * l;\n"
+        "}\n"
+        "");
+    ::STRINGS[80] = uString::Const("uniform vec2 b, c, e, f, l;\n"
+        "uniform mat4 d;\n"
+        "uniform vec4 k;\n"
+        "uniform float m;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying float q;\n"
+        "varying vec2 r;\n"
+        "\n"
+        "float t(vec2 u, vec2 v, vec2 w, float x){\n"
+        "    vec2 y = (u * e) - v;\n"
+        "    float z = dot(y, w) / x;\n"
+        "    return (z - f.x) / f.y;\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 u = a * b;\n"
+        "    vec2 v = u + c;\n"
+        "    q = t(v / e, k.xy, l, m);\n"
+        "    r = u;\n"
+        "    gl_Position = d * vec4(v, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[81] = uString::Const("uniform float g, h, i, j;\n"
+        "uniform vec2 n, o, p;\n"
+        "\n"
+        "uniform sampler2D s;\n"
+        "\n"
+        "varying float q;\n"
+        "varying vec2 r;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (texture2D(s, vec2(q, 0.5)) * (clamp(0.5 - (((length(r) - g) * h) * i), float(0), float(1)) * clamp(0.5 - ((min(dot(r, n), min(dot(r, o), dot(r, p))) * h) * i), float(0), float(1)))) * j;\n"
+        "}\n"
+        "");
+    ::STRINGS[82] = uString::Const("uniform vec2 b, c, e, f, l;\n"
+        "uniform mat4 d;\n"
+        "uniform vec4 k;\n"
+        "uniform float m;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying float n;\n"
+        "varying vec2 o;\n"
+        "\n"
+        "float q(vec2 r, vec2 s, vec2 t, float u){\n"
+        "    vec2 v = (r * e) - s;\n"
+        "    float w = dot(v, t) / u;\n"
+        "    return (w - f.x) / f.y;\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 r = a * b;\n"
+        "    vec2 s = r + c;\n"
+        "    n = q(s / e, k.xy, l, m);\n"
+        "    o = r;\n"
+        "    gl_Position = d * vec4(s, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[83] = uString::Const("uniform float g, h, i, j;\n"
+        "\n"
+        "uniform sampler2D p;\n"
+        "\n"
+        "varying float n;\n"
+        "varying vec2 o;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (texture2D(p, vec2(n, 0.5)) * (clamp(0.5 - (((length(o) - g) * h) * i), float(0), float(1)) * float(1))) * j;\n"
+        "}\n"
+        "");
+    ::STRINGS[84] = uString::Const("uniform float g, h, i, j;\n"
+        "uniform vec2 n, o, p;\n"
+        "\n"
+        "uniform sampler2D s;\n"
+        "\n"
+        "varying float q;\n"
+        "varying vec2 r;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (texture2D(s, vec2(q, 0.5)) * (clamp(0.5 - (((length(r) - g) * h) * i), float(0), float(1)) * clamp(0.5 - ((max(dot(r, n), max(dot(r, o), dot(r, p))) * h) * i), float(0), float(1)))) * j;\n"
+        "}\n"
+        "");
+    ::STRINGS[85] = uString::Const("uniform vec2 d, e, g, h, i, j, k, m, l;\n"
+        "uniform mat4 f;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying vec2 w, x, y;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 A = a * d;\n"
+        "    vec2 B = A + e;\n"
+        "    vec2 C = ((((g * (B / g)) - h) / i) * j) + k;\n"
+        "    w = m + (C * l);\n"
+        "    x = C;\n"
+        "    y = A;\n"
+        "    gl_Position = f * vec4(B, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[86] = uString::Const("uniform vec2 o, n;\n"
+        "uniform vec4 p;\n"
+        "uniform float q, r, s, t, u, v;\n"
+        "\n"
+        "uniform sampler2D z;\n"
+        "\n"
+        "varying vec2 w, x, y;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec4 A = (c ? vec4(float(0)) : texture2D(z, b ? (o + (fract(w) * n)) : x)) * p;\n"
+        "    gl_FragColor = (vec4(A.xyz * A.w, A.w) * (clamp(0.5 - (((abs((length(y) - q) - r) - s) * t) * u), float(0), float(1)) * float(1))) * v;\n"
+        "}\n"
+        "");
+    ::STRINGS[87] = uString::Const("z");
+    ::STRINGS[88] = uString::Const("uniform float e, f, g, h, i;\n"
+        "uniform vec2 k, l, m;\n"
+        "uniform vec4 j;\n"
+        "\n"
+        "varying vec2 n;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = j * (clamp(0.5 - (((abs((length(n) - e) - f) - g) * h) * i), float(0), float(1)) * clamp(0.5 - ((min(dot(n, k), min(dot(n, l), dot(n, m))) * h) * i), float(0), float(1)));\n"
+        "}\n"
+        "");
+    ::STRINGS[89] = uString::Const("uniform vec2 b, c, e;\n"
+        "uniform mat4 d;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying vec2 o, p;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 t = a * b;\n"
+        "    vec2 u = t + c;\n"
+        "    o = u / e;\n"
+        "    p = t;\n"
+        "    gl_Position = d * vec4(u, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[90] = uString::Const("uniform vec2 f, e;\n"
+        "uniform float g, i, j, k, l, m, n;\n"
+        "uniform vec4 h;\n"
+        "\n"
+        "varying vec2 o, p;\n"
+        "\n"
+        "float q(vec2 t, vec2 u){\n"
+        "    vec2 v = abs(t) - u;\n"
+        "    return min(max(v.x, v.y), 0.0) + length(max(v, 0.0));\n"
+        "}\n"
+        "\n"
+        "vec2 r(vec2 t, vec2 u){\n"
+        "    return mod(t, u) - (0.5 * u);\n"
+        "}\n"
+        "\n"
+        "float s(vec2 t){\n"
+        "    vec2 u = e.xy / g;\n"
+        "    ivec2 v = ivec2(u);\n"
+        "\n"
+        "    if (mod(float(v.x), float(2)) == float(0))\n"
+        "        ++v.x;\n"
+        "\n"
+        "    if (mod(float(v.y), float(2)) == float(0))\n"
+        "        ++v.y;\n"
+        "\n"
+        "    u = e.xy / vec2(v);\n"
+        "    float w = q(r(t, u * float(2)) + vec2(g), vec2(g));\n"
+        "    return -floor(w);\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (mix(vec4(float(0)), h, clamp(s(o.xy * f), 0.0, 1.0)) * (clamp(0.5 - (((abs((length(p) - i) - j) - k) * l) * m), float(0), float(1)) * float(1))) * n;\n"
+        "}\n"
+        "");
+    ::STRINGS[91] = uString::Const("uniform vec2 b, c, e;\n"
+        "uniform mat4 d;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying vec2 m, n;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 r = a * b;\n"
+        "    vec2 s = r + c;\n"
+        "    m = s / e;\n"
+        "    n = r;\n"
+        "    gl_Position = d * vec4(s, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[92] = uString::Const("uniform vec2 f, e;\n"
+        "uniform float g, i, j, k, l;\n"
+        "uniform vec4 h;\n"
+        "\n"
+        "varying vec2 m, n;\n"
+        "\n"
+        "float o(vec2 r, vec2 s){\n"
+        "    vec2 t = abs(r) - s;\n"
+        "    return min(max(t.x, t.y), 0.0) + length(max(t, 0.0));\n"
+        "}\n"
+        "\n"
+        "vec2 p(vec2 r, vec2 s){\n"
+        "    return mod(r, s) - (0.5 * s);\n"
+        "}\n"
+        "\n"
+        "float q(vec2 r){\n"
+        "    vec2 s = e.xy / g;\n"
+        "    ivec2 t = ivec2(s);\n"
+        "\n"
+        "    if (mod(float(t.x), float(2)) == float(0))\n"
+        "        ++t.x;\n"
+        "\n"
+        "    if (mod(float(t.y), float(2)) == float(0))\n"
+        "        ++t.y;\n"
+        "\n"
+        "    s = e.xy / vec2(t);\n"
+        "    float u = o(p(r, s * float(2)) + vec2(g), vec2(g));\n"
+        "    return -floor(u);\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (mix(vec4(float(0)), h, clamp(q(m.xy * f), 0.0, 1.0)) * (clamp(0.5 - (((length(n) - i) * j) * k), float(0), float(1)) * float(1))) * l;\n"
+        "}\n"
+        "");
+    ::STRINGS[93] = uString::Const("uniform float g, h, i, j, k, l;\n"
+        "uniform vec2 p, q, r;\n"
+        "\n"
+        "uniform sampler2D u;\n"
+        "\n"
+        "varying float s;\n"
+        "varying vec2 t;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (texture2D(u, vec2(s, 0.5)) * (clamp(0.5 - (((abs((length(t) - g) - h) - i) * j) * k), float(0), float(1)) * clamp(0.5 - ((max(dot(t, p), max(dot(t, q), dot(t, r))) * j) * k), float(0), float(1)))) * l;\n"
+        "}\n"
+        "");
+    ::STRINGS[94] = uString::Const("uniform vec2 b, c, e;\n"
+        "uniform mat4 d;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying vec2 p, q;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 u = a * b;\n"
+        "    vec2 v = u + c;\n"
+        "    p = v / e;\n"
+        "    q = u;\n"
+        "    gl_Position = d * vec4(v, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[95] = uString::Const("uniform vec2 f, e, m, n, o;\n"
+        "uniform float g, i, j, k, l;\n"
+        "uniform vec4 h;\n"
+        "\n"
+        "varying vec2 p, q;\n"
+        "\n"
+        "float r(vec2 u, vec2 v){\n"
+        "    vec2 w = abs(u) - v;\n"
+        "    return min(max(w.x, w.y), 0.0) + length(max(w, 0.0));\n"
+        "}\n"
+        "\n"
+        "vec2 s(vec2 u, vec2 v){\n"
+        "    return mod(u, v) - (0.5 * v);\n"
+        "}\n"
+        "\n"
+        "float t(vec2 u){\n"
+        "    vec2 v = e.xy / g;\n"
+        "    ivec2 w = ivec2(v);\n"
+        "\n"
+        "    if (mod(float(w.x), float(2)) == float(0))\n"
+        "        ++w.x;\n"
+        "\n"
+        "    if (mod(float(w.y), float(2)) == float(0))\n"
+        "        ++w.y;\n"
+        "\n"
+        "    v = e.xy / vec2(w);\n"
+        "    float x = r(s(u, v * float(2)) + vec2(g), vec2(g));\n"
+        "    return -floor(x);\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (mix(vec4(float(0)), h, clamp(t(p.xy * f), 0.0, 1.0)) * (clamp(0.5 - (((length(q) - i) * j) * k), float(0), float(1)) * clamp(0.5 - ((min(dot(q, m), min(dot(q, n), dot(q, o))) * j) * k), float(0), float(1)))) * l;\n"
+        "}\n"
+        "");
+    ::STRINGS[96] = uString::Const("uniform vec2 f, e, m, n, o;\n"
+        "uniform float g, i, j, k, l;\n"
+        "uniform vec4 h;\n"
+        "\n"
+        "varying vec2 p, q;\n"
+        "\n"
+        "float r(vec2 u, vec2 v){\n"
+        "    vec2 w = abs(u) - v;\n"
+        "    return min(max(w.x, w.y), 0.0) + length(max(w, 0.0));\n"
+        "}\n"
+        "\n"
+        "vec2 s(vec2 u, vec2 v){\n"
+        "    return mod(u, v) - (0.5 * v);\n"
+        "}\n"
+        "\n"
+        "float t(vec2 u){\n"
+        "    vec2 v = e.xy / g;\n"
+        "    ivec2 w = ivec2(v);\n"
+        "\n"
+        "    if (mod(float(w.x), float(2)) == float(0))\n"
+        "        ++w.x;\n"
+        "\n"
+        "    if (mod(float(w.y), float(2)) == float(0))\n"
+        "        ++w.y;\n"
+        "\n"
+        "    v = e.xy / vec2(w);\n"
+        "    float x = r(s(u, v * float(2)) + vec2(g), vec2(g));\n"
+        "    return -floor(x);\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (mix(vec4(float(0)), h, clamp(t(p.xy * f), 0.0, 1.0)) * (clamp(0.5 - (((length(q) - i) * j) * k), float(0), float(1)) * clamp(0.5 - ((max(dot(q, m), max(dot(q, n), dot(q, o))) * j) * k), float(0), float(1)))) * l;\n"
+        "}\n"
+        "");
+    ::STRINGS[97] = uString::Const("uniform vec2 o, n, w, x, y;\n"
+        "uniform vec4 p;\n"
+        "uniform float q, r, s, t, u, v;\n"
+        "\n"
+        "uniform sampler2D C;\n"
+        "\n"
+        "varying vec2 z, A, B;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec4 D = (c ? vec4(float(0)) : texture2D(C, b ? (o + (fract(z) * n)) : A)) * p;\n"
+        "    gl_FragColor = (vec4(D.xyz * D.w, D.w) * (clamp(0.5 - (((abs((length(B) - q) - r) - s) * t) * u), float(0), float(1)) * clamp(0.5 - ((max(dot(B, w), max(dot(B, x), dot(B, y))) * t) * u), float(0), float(1)))) * v;\n"
+        "}\n"
+        "");
+    ::STRINGS[98] = uString::Const("uniform vec2 b, c;\n"
         "uniform mat4 d;\n"
         "\n"
         "attribute vec2 a;\n"
@@ -3087,7 +3198,7 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_Position = d * vec4(k + c, 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[97] = uString::Const("uniform float e, f, g, i;\n"
+    ::STRINGS[99] = uString::Const("uniform float e, f, g, i;\n"
         "uniform vec4 h;\n"
         "\n"
         "varying vec2 j;\n"
@@ -3097,18 +3208,7 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_FragColor = (h * (clamp(0.5 - (((length(j) - e) * f) * g), float(0), float(1)) * float(1))) * i;\n"
         "}\n"
         "");
-    ::STRINGS[98] = uString::Const("uniform float e, f, g, h, i;\n"
-        "uniform vec2 k, l, m;\n"
-        "uniform vec4 j;\n"
-        "\n"
-        "varying vec2 n;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = j * (clamp(0.5 - (((abs((length(n) - e) - f) - g) * h) * i), float(0), float(1)) * clamp(0.5 - ((max(dot(n, k), max(dot(n, l), dot(n, m))) * h) * i), float(0), float(1)));\n"
-        "}\n"
-        "");
-    ::STRINGS[99] = uString::Const("uniform vec2 b, c;\n"
+    ::STRINGS[100] = uString::Const("uniform vec2 b, c;\n"
         "uniform mat4 d;\n"
         "\n"
         "attribute vec2 a;\n"
@@ -3122,7 +3222,7 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_Position = d * vec4(n + c, 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[100] = uString::Const("uniform float e, f, g, i;\n"
+    ::STRINGS[101] = uString::Const("uniform float e, f, g, i;\n"
         "uniform vec2 j, k, l;\n"
         "uniform vec4 h;\n"
         "\n"
@@ -3133,7 +3233,7 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_FragColor = (h * (clamp(0.5 - (((length(m) - e) * f) * g), float(0), float(1)) * clamp(0.5 - ((max(dot(m, j), max(dot(m, k), dot(m, l))) * f) * g), float(0), float(1)))) * i;\n"
         "}\n"
         "");
-    ::STRINGS[101] = uString::Const("uniform float e, f, g, i;\n"
+    ::STRINGS[102] = uString::Const("uniform float e, f, g, i;\n"
         "uniform vec2 j, k, l;\n"
         "uniform vec4 h;\n"
         "\n"
@@ -3142,17 +3242,6 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "void main()\n"
         "{\n"
         "    gl_FragColor = (h * (clamp(0.5 - (((length(m) - e) * f) * g), float(0), float(1)) * clamp(0.5 - ((min(dot(m, j), min(dot(m, k), dot(m, l))) * f) * g), float(0), float(1)))) * i;\n"
-        "}\n"
-        "");
-    ::STRINGS[102] = uString::Const("uniform float e, f, g, h, i, k;\n"
-        "uniform vec2 l, m, n;\n"
-        "uniform vec4 j;\n"
-        "\n"
-        "varying vec2 o;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = (j * (clamp(0.5 - (((abs((length(o) - e) - f) - g) * h) * i), float(0), float(1)) * clamp(0.5 - ((max(dot(o, l), max(dot(o, m), dot(o, n))) * h) * i), float(0), float(1)))) * k;\n"
         "}\n"
         "");
     ::STRINGS[103] = uString::Const("uniform vec2 b, c;\n"
@@ -3187,7 +3276,7 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "\n"
         "void main()\n"
         "{\n"
-        "    gl_FragColor = h * (clamp(0.5 - (((length(l) - e) * f) * g), float(0), float(1)) * clamp(0.5 - ((min(dot(l, i), min(dot(l, j), dot(l, k))) * f) * g), float(0), float(1)));\n"
+        "    gl_FragColor = h * (clamp(0.5 - (((length(l) - e) * f) * g), float(0), float(1)) * clamp(0.5 - ((max(dot(l, i), max(dot(l, j), dot(l, k))) * f) * g), float(0), float(1)));\n"
         "}\n"
         "");
     ::STRINGS[106] = uString::Const("uniform float e, f, g;\n"
@@ -3198,103 +3287,10 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "\n"
         "void main()\n"
         "{\n"
-        "    gl_FragColor = h * (clamp(0.5 - (((length(l) - e) * f) * g), float(0), float(1)) * clamp(0.5 - ((max(dot(l, i), max(dot(l, j), dot(l, k))) * f) * g), float(0), float(1)));\n"
+        "    gl_FragColor = h * (clamp(0.5 - (((length(l) - e) * f) * g), float(0), float(1)) * clamp(0.5 - ((min(dot(l, i), min(dot(l, j), dot(l, k))) * f) * g), float(0), float(1)));\n"
         "}\n"
         "");
-    ::STRINGS[107] = uString::Const("uniform float e[d], o;\n"
-        "uniform vec2 f, h, i, j, n;\n"
-        "uniform mat4 g;\n"
-        "\n"
-        "attribute vec4 a, b;\n"
-        "attribute float c;\n"
-        "\n"
-        "varying float p, q;\n"
-        "varying vec2 r, s;\n"
-        "\n"
-        "float u(vec2 v, vec2 w, float x){\n"
-        "    vec2 y = (v * h) - i;\n"
-        "    float z = dot(y, w) / x;\n"
-        "    return (z - j.x) / j.y;\n"
-        "}\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec2 v = vec2((sign(a.x) * e[int(abs(a.x))]) + (sign(a.y) * e[int(abs(a.y))]), (sign(a.z) * e[int(abs(a.z))]) + (sign(a.w) * e[int(abs(a.w))])) + f;\n"
-        "    p = e[int(c)];\n"
-        "    q = u(v / h, n, o);\n"
-        "    r = v;\n"
-        "    s = vec2((sign(b.x) * e[int(abs(b.x))]) + (sign(b.y) * e[int(abs(b.y))]), (sign(b.z) * e[int(abs(b.z))]) + (sign(b.w) * e[int(abs(b.w))])) + f;\n"
-        "    gl_Position = g * vec4(v, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[108] = uString::Const("uniform float k, l, m;\n"
-        "\n"
-        "uniform sampler2D t;\n"
-        "\n"
-        "varying float p, q;\n"
-        "varying vec2 r, s;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = (texture2D(t, vec2(q, 0.5)) * clamp(0.5 - (((distance(r, s) - p) * k) * l), float(0), float(1))) * m;\n"
-        "}\n"
-        "");
-    ::STRINGS[109] = uString::Const("uniform float k, l, m;\n"
-        "\n"
-        "uniform sampler2D t;\n"
-        "\n"
-        "varying float p, q;\n"
-        "varying vec2 r, s;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    float v = clamp(0.5 - (((distance(r, s) - p) * k) * l), float(0), float(1));\n"
-        "    gl_FragColor = (texture2D(t, vec2(q, 0.5)) * (((v * v) * v) * ((v * ((v * float(6)) - float(15))) + float(10)))) * m;\n"
-        "}\n"
-        "");
-    ::STRINGS[110] = uString::Const("uniform float e[d];\n"
-        "uniform vec2 f;\n"
-        "uniform mat4 g;\n"
-        "\n"
-        "attribute vec4 a, b;\n"
-        "attribute float c;\n"
-        "\n"
-        "varying float k;\n"
-        "varying vec2 l, m;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec2 n = vec2((sign(a.x) * e[int(abs(a.x))]) + (sign(a.y) * e[int(abs(a.y))]), (sign(a.z) * e[int(abs(a.z))]) + (sign(a.w) * e[int(abs(a.w))])) + f;\n"
-        "    k = e[int(c)];\n"
-        "    l = n;\n"
-        "    m = vec2((sign(b.x) * e[int(abs(b.x))]) + (sign(b.y) * e[int(abs(b.y))]), (sign(b.z) * e[int(abs(b.z))]) + (sign(b.w) * e[int(abs(b.w))])) + f;\n"
-        "    gl_Position = g * vec4(n, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[111] = uString::Const("uniform float h, i;\n"
-        "uniform vec4 j;\n"
-        "\n"
-        "varying float k;\n"
-        "varying vec2 l, m;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = j * clamp(0.5 - (((distance(l, m) - k) * h) * i), float(0), float(1));\n"
-        "}\n"
-        "");
-    ::STRINGS[112] = uString::Const("uniform float h, i;\n"
-        "uniform vec4 j;\n"
-        "\n"
-        "varying float k;\n"
-        "varying vec2 l, m;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    float n = clamp(0.5 - (((distance(l, m) - k) * h) * i), float(0), float(1));\n"
-        "    gl_FragColor = j * (((n * n) * n) * ((n * ((n * float(6)) - float(15))) + float(10)));\n"
-        "}\n"
-        "");
-    ::STRINGS[113] = uString::Const("uniform float g[d];\n"
+    ::STRINGS[107] = uString::Const("uniform float g[d];\n"
         "uniform vec2 h, j, k, l, m, n, p, o;\n"
         "uniform mat4 i;\n"
         "\n"
@@ -3316,7 +3312,7 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_Position = i * vec4(C, 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[114] = uString::Const("uniform vec2 r, q;\n"
+    ::STRINGS[108] = uString::Const("uniform vec2 r, q;\n"
         "uniform vec4 s;\n"
         "uniform float t, u, v;\n"
         "\n"
@@ -3331,24 +3327,141 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_FragColor = (vec4(C.xyz * C.w, C.w) * clamp(0.5 - (((distance(z, A) - w) * t) * u), float(0), float(1))) * v;\n"
         "}\n"
         "");
-    ::STRINGS[115] = uString::Const("B");
-    ::STRINGS[116] = uString::Const("uniform vec2 r, q;\n"
-        "uniform vec4 s;\n"
-        "uniform float t, u, v;\n"
+    ::STRINGS[109] = uString::Const("B");
+    ::STRINGS[110] = uString::Const("uniform float e[d];\n"
+        "uniform vec2 f, h;\n"
+        "uniform mat4 g;\n"
         "\n"
-        "uniform sampler2D B;\n"
+        "attribute vec4 a, b;\n"
+        "attribute float c;\n"
         "\n"
-        "varying float w;\n"
-        "varying vec2 x, y, z, A;\n"
+        "varying float o;\n"
+        "varying vec2 p, q, r;\n"
         "\n"
         "void main()\n"
         "{\n"
-        "    vec4 C = (f ? vec4(float(0)) : texture2D(B, e ? (r + (fract(x) * q)) : y)) * s;\n"
-        "    float D = clamp(0.5 - (((distance(z, A) - w) * t) * u), float(0), float(1));\n"
-        "    gl_FragColor = (vec4(C.xyz * C.w, C.w) * (((D * D) * D) * ((D * ((D * float(6)) - float(15))) + float(10)))) * v;\n"
+        "    vec2 v = vec2((sign(a.x) * e[int(abs(a.x))]) + (sign(a.y) * e[int(abs(a.y))]), (sign(a.z) * e[int(abs(a.z))]) + (sign(a.w) * e[int(abs(a.w))])) + f;\n"
+        "    o = e[int(c)];\n"
+        "    p = v / h;\n"
+        "    q = v;\n"
+        "    r = vec2((sign(b.x) * e[int(abs(b.x))]) + (sign(b.y) * e[int(abs(b.y))]), (sign(b.z) * e[int(abs(b.z))]) + (sign(b.w) * e[int(abs(b.w))])) + f;\n"
+        "    gl_Position = g * vec4(v, 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[117] = uString::Const("uniform float e[d];\n"
+    ::STRINGS[111] = uString::Const("uniform vec2 i, h;\n"
+        "uniform float j, l, m, n;\n"
+        "uniform vec4 k;\n"
+        "\n"
+        "varying float o;\n"
+        "varying vec2 p, q, r;\n"
+        "\n"
+        "float s(vec2 v, vec2 w){\n"
+        "    vec2 x = abs(v) - w;\n"
+        "    return min(max(x.x, x.y), 0.0) + length(max(x, 0.0));\n"
+        "}\n"
+        "\n"
+        "vec2 t(vec2 v, vec2 w){\n"
+        "    return mod(v, w) - (0.5 * w);\n"
+        "}\n"
+        "\n"
+        "float u(vec2 v){\n"
+        "    vec2 w = h.xy / j;\n"
+        "    ivec2 x = ivec2(w);\n"
+        "\n"
+        "    if (mod(float(x.x), float(2)) == float(0))\n"
+        "        ++x.x;\n"
+        "\n"
+        "    if (mod(float(x.y), float(2)) == float(0))\n"
+        "        ++x.y;\n"
+        "\n"
+        "    w = h.xy / vec2(x);\n"
+        "    float y = s(t(v, w * float(2)) + vec2(j), vec2(j));\n"
+        "    return -floor(y);\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    float v = clamp(0.5 - (((distance(q, r) - o) * l) * m), float(0), float(1));\n"
+        "    gl_FragColor = (mix(vec4(float(0)), k, clamp(u(p.xy * i), 0.0, 1.0)) * (((v * v) * v) * ((v * ((v * float(6)) - float(15))) + float(10)))) * n;\n"
+        "}\n"
+        "");
+    ::STRINGS[112] = uString::Const("uniform vec2 i, h;\n"
+        "uniform float j, l, m, n;\n"
+        "uniform vec4 k;\n"
+        "\n"
+        "varying float o;\n"
+        "varying vec2 p, q, r;\n"
+        "\n"
+        "float s(vec2 v, vec2 w){\n"
+        "    vec2 x = abs(v) - w;\n"
+        "    return min(max(x.x, x.y), 0.0) + length(max(x, 0.0));\n"
+        "}\n"
+        "\n"
+        "vec2 t(vec2 v, vec2 w){\n"
+        "    return mod(v, w) - (0.5 * w);\n"
+        "}\n"
+        "\n"
+        "float u(vec2 v){\n"
+        "    vec2 w = h.xy / j;\n"
+        "    ivec2 x = ivec2(w);\n"
+        "\n"
+        "    if (mod(float(x.x), float(2)) == float(0))\n"
+        "        ++x.x;\n"
+        "\n"
+        "    if (mod(float(x.y), float(2)) == float(0))\n"
+        "        ++x.y;\n"
+        "\n"
+        "    w = h.xy / vec2(x);\n"
+        "    float y = s(t(v, w * float(2)) + vec2(j), vec2(j));\n"
+        "    return -floor(y);\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (mix(vec4(float(0)), k, clamp(u(p.xy * i), 0.0, 1.0)) * clamp(0.5 - (((distance(q, r) - o) * l) * m), float(0), float(1))) * n;\n"
+        "}\n"
+        "");
+    ::STRINGS[113] = uString::Const("uniform float e[d], o;\n"
+        "uniform vec2 f, h, i, n;\n"
+        "uniform mat4 g;\n"
+        "uniform vec4 m;\n"
+        "\n"
+        "attribute vec4 a, b;\n"
+        "attribute float c;\n"
+        "\n"
+        "varying float p, q;\n"
+        "varying vec2 r, s;\n"
+        "\n"
+        "float u(vec2 v, vec2 w, vec2 x, float y){\n"
+        "    vec2 z = (v * h) - w;\n"
+        "    float A = dot(z, x) / y;\n"
+        "    return (A - i.x) / i.y;\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 v = vec2((sign(a.x) * e[int(abs(a.x))]) + (sign(a.y) * e[int(abs(a.y))]), (sign(a.z) * e[int(abs(a.z))]) + (sign(a.w) * e[int(abs(a.w))])) + f;\n"
+        "    p = e[int(c)];\n"
+        "    q = u(v / h, m.xy, n, o);\n"
+        "    r = v;\n"
+        "    s = vec2((sign(b.x) * e[int(abs(b.x))]) + (sign(b.y) * e[int(abs(b.y))]), (sign(b.z) * e[int(abs(b.z))]) + (sign(b.w) * e[int(abs(b.w))])) + f;\n"
+        "    gl_Position = g * vec4(v, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[114] = uString::Const("uniform float j, k, l;\n"
+        "\n"
+        "uniform sampler2D t;\n"
+        "\n"
+        "varying float p, q;\n"
+        "varying vec2 r, s;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    float v = clamp(0.5 - (((distance(r, s) - p) * j) * k), float(0), float(1));\n"
+        "    gl_FragColor = (texture2D(t, vec2(q, 0.5)) * (((v * v) * v) * ((v * ((v * float(6)) - float(15))) + float(10)))) * l;\n"
+        "}\n"
+        "");
+    ::STRINGS[115] = uString::Const("uniform float e[d];\n"
         "uniform vec2 f;\n"
         "uniform mat4 g;\n"
         "\n"
@@ -3367,7 +3480,7 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_Position = g * vec4(p, 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[118] = uString::Const("uniform float h, i, j, k;\n"
+    ::STRINGS[116] = uString::Const("uniform float h, i, j, k;\n"
         "uniform vec4 l;\n"
         "\n"
         "varying float m;\n"
@@ -3378,49 +3491,7 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_FragColor = l * clamp(0.5 - (((abs((distance(n, o) - m) - h) - i) * j) * k), float(0), float(1));\n"
         "}\n"
         "");
-    ::STRINGS[119] = uString::Const("uniform float e[d];\n"
-        "uniform vec2 f;\n"
-        "uniform mat4 g;\n"
-        "\n"
-        "attribute vec4 a, b;\n"
-        "attribute float c;\n"
-        "\n"
-        "varying float l;\n"
-        "varying vec2 m, n;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    vec2 o = vec2((sign(a.x) * e[int(abs(a.x))]) + (sign(a.y) * e[int(abs(a.y))]), (sign(a.z) * e[int(abs(a.z))]) + (sign(a.w) * e[int(abs(a.w))])) + f;\n"
-        "    l = e[int(c)];\n"
-        "    m = o;\n"
-        "    n = vec2((sign(b.x) * e[int(abs(b.x))]) + (sign(b.y) * e[int(abs(b.y))]), (sign(b.z) * e[int(abs(b.z))]) + (sign(b.w) * e[int(abs(b.w))])) + f;\n"
-        "    gl_Position = g * vec4(o, 0., 1.);\n"
-        "}\n"
-        "");
-    ::STRINGS[120] = uString::Const("uniform float h, i, k;\n"
-        "uniform vec4 j;\n"
-        "\n"
-        "varying float l;\n"
-        "varying vec2 m, n;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    gl_FragColor = (j * clamp(0.5 - (((distance(m, n) - l) * h) * i), float(0), float(1))) * k;\n"
-        "}\n"
-        "");
-    ::STRINGS[121] = uString::Const("uniform float h, i, k;\n"
-        "uniform vec4 j;\n"
-        "\n"
-        "varying float l;\n"
-        "varying vec2 m, n;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    float o = clamp(0.5 - (((distance(m, n) - l) * h) * i), float(0), float(1));\n"
-        "    gl_FragColor = (j * (((o * o) * o) * ((o * ((o * float(6)) - float(15))) + float(10)))) * k;\n"
-        "}\n"
-        "");
-    ::STRINGS[122] = uString::Const("uniform float h, i, j, k;\n"
+    ::STRINGS[117] = uString::Const("uniform float h, i, j, k;\n"
         "uniform vec4 l;\n"
         "\n"
         "varying float m;\n"
@@ -3432,7 +3503,152 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_FragColor = l * (((p * p) * p) * ((p * ((p * float(6)) - float(15))) + float(10)));\n"
         "}\n"
         "");
-    ::STRINGS[123] = uString::Const("uniform float g[d];\n"
+    ::STRINGS[118] = uString::Const("uniform float e[d], q;\n"
+        "uniform vec2 f, h, i, p;\n"
+        "uniform mat4 g;\n"
+        "uniform vec4 o;\n"
+        "\n"
+        "attribute vec4 a, b;\n"
+        "attribute float c;\n"
+        "\n"
+        "varying float r, s;\n"
+        "varying vec2 t, u;\n"
+        "\n"
+        "float w(vec2 x, vec2 y, vec2 z, float A){\n"
+        "    vec2 B = (x * h) - y;\n"
+        "    float C = dot(B, z) / A;\n"
+        "    return (C - i.x) / i.y;\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 x = vec2((sign(a.x) * e[int(abs(a.x))]) + (sign(a.y) * e[int(abs(a.y))]), (sign(a.z) * e[int(abs(a.z))]) + (sign(a.w) * e[int(abs(a.w))])) + f;\n"
+        "    r = e[int(c)];\n"
+        "    s = w(x / h, o.xy, p, q);\n"
+        "    t = x;\n"
+        "    u = vec2((sign(b.x) * e[int(abs(b.x))]) + (sign(b.y) * e[int(abs(b.y))]), (sign(b.z) * e[int(abs(b.z))]) + (sign(b.w) * e[int(abs(b.w))])) + f;\n"
+        "    gl_Position = g * vec4(x, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[119] = uString::Const("uniform float j, k, l, m, n;\n"
+        "\n"
+        "uniform sampler2D v;\n"
+        "\n"
+        "varying float r, s;\n"
+        "varying vec2 t, u;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (texture2D(v, vec2(s, 0.5)) * clamp(0.5 - (((abs((distance(t, u) - r) - j) - k) * l) * m), float(0), float(1))) * n;\n"
+        "}\n"
+        "");
+    ::STRINGS[120] = uString::Const("uniform float j, k, l, m, n;\n"
+        "\n"
+        "uniform sampler2D v;\n"
+        "\n"
+        "varying float r, s;\n"
+        "varying vec2 t, u;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    float x = clamp(0.5 - (((abs((distance(t, u) - r) - j) - k) * l) * m), float(0), float(1));\n"
+        "    gl_FragColor = (texture2D(v, vec2(s, 0.5)) * (((x * x) * x) * ((x * ((x * float(6)) - float(15))) + float(10)))) * n;\n"
+        "}\n"
+        "");
+    ::STRINGS[121] = uString::Const("uniform float e[d];\n"
+        "uniform vec2 f, h;\n"
+        "uniform mat4 g;\n"
+        "\n"
+        "attribute vec4 a, b;\n"
+        "attribute float c;\n"
+        "\n"
+        "varying float q;\n"
+        "varying vec2 r, s, t;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 x = vec2((sign(a.x) * e[int(abs(a.x))]) + (sign(a.y) * e[int(abs(a.y))]), (sign(a.z) * e[int(abs(a.z))]) + (sign(a.w) * e[int(abs(a.w))])) + f;\n"
+        "    q = e[int(c)];\n"
+        "    r = x / h;\n"
+        "    s = x;\n"
+        "    t = vec2((sign(b.x) * e[int(abs(b.x))]) + (sign(b.y) * e[int(abs(b.y))]), (sign(b.z) * e[int(abs(b.z))]) + (sign(b.w) * e[int(abs(b.w))])) + f;\n"
+        "    gl_Position = g * vec4(x, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[122] = uString::Const("uniform vec2 i, h;\n"
+        "uniform float j, l, m, n, o, p;\n"
+        "uniform vec4 k;\n"
+        "\n"
+        "varying float q;\n"
+        "varying vec2 r, s, t;\n"
+        "\n"
+        "float u(vec2 x, vec2 y){\n"
+        "    vec2 z = abs(x) - y;\n"
+        "    return min(max(z.x, z.y), 0.0) + length(max(z, 0.0));\n"
+        "}\n"
+        "\n"
+        "vec2 v(vec2 x, vec2 y){\n"
+        "    return mod(x, y) - (0.5 * y);\n"
+        "}\n"
+        "\n"
+        "float w(vec2 x){\n"
+        "    vec2 y = h.xy / j;\n"
+        "    ivec2 z = ivec2(y);\n"
+        "\n"
+        "    if (mod(float(z.x), float(2)) == float(0))\n"
+        "        ++z.x;\n"
+        "\n"
+        "    if (mod(float(z.y), float(2)) == float(0))\n"
+        "        ++z.y;\n"
+        "\n"
+        "    y = h.xy / vec2(z);\n"
+        "    float A = u(v(x, y * float(2)) + vec2(j), vec2(j));\n"
+        "    return -floor(A);\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    float x = clamp(0.5 - (((abs((distance(s, t) - q) - l) - m) * n) * o), float(0), float(1));\n"
+        "    gl_FragColor = (mix(vec4(float(0)), k, clamp(w(r.xy * i), 0.0, 1.0)) * (((x * x) * x) * ((x * ((x * float(6)) - float(15))) + float(10)))) * p;\n"
+        "}\n"
+        "");
+    ::STRINGS[123] = uString::Const("uniform vec2 i, h;\n"
+        "uniform float j, l, m, n, o, p;\n"
+        "uniform vec4 k;\n"
+        "\n"
+        "varying float q;\n"
+        "varying vec2 r, s, t;\n"
+        "\n"
+        "float u(vec2 x, vec2 y){\n"
+        "    vec2 z = abs(x) - y;\n"
+        "    return min(max(z.x, z.y), 0.0) + length(max(z, 0.0));\n"
+        "}\n"
+        "\n"
+        "vec2 v(vec2 x, vec2 y){\n"
+        "    return mod(x, y) - (0.5 * y);\n"
+        "}\n"
+        "\n"
+        "float w(vec2 x){\n"
+        "    vec2 y = h.xy / j;\n"
+        "    ivec2 z = ivec2(y);\n"
+        "\n"
+        "    if (mod(float(z.x), float(2)) == float(0))\n"
+        "        ++z.x;\n"
+        "\n"
+        "    if (mod(float(z.y), float(2)) == float(0))\n"
+        "        ++z.y;\n"
+        "\n"
+        "    y = h.xy / vec2(z);\n"
+        "    float A = u(v(x, y * float(2)) + vec2(j), vec2(j));\n"
+        "    return -floor(A);\n"
+        "}\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (mix(vec4(float(0)), k, clamp(w(r.xy * i), 0.0, 1.0)) * clamp(0.5 - (((abs((distance(s, t) - q) - l) - m) * n) * o), float(0), float(1))) * p;\n"
+        "}\n"
+        "");
+    ::STRINGS[124] = uString::Const("uniform float g[d];\n"
         "uniform vec2 h, j, k, l, m, n, p, o;\n"
         "uniform mat4 i;\n"
         "\n"
@@ -3454,7 +3670,7 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_Position = i * vec4(E, 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[124] = uString::Const("uniform vec2 r, q;\n"
+    ::STRINGS[125] = uString::Const("uniform vec2 r, q;\n"
         "uniform vec4 s;\n"
         "uniform float t, u, v, w, x;\n"
         "\n"
@@ -3470,8 +3686,8 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_FragColor = (vec4(E.xyz * E.w, E.w) * (((F * F) * F) * ((F * ((F * float(6)) - float(15))) + float(10)))) * x;\n"
         "}\n"
         "");
-    ::STRINGS[125] = uString::Const("D");
-    ::STRINGS[126] = uString::Const("uniform vec2 r, q;\n"
+    ::STRINGS[126] = uString::Const("D");
+    ::STRINGS[127] = uString::Const("uniform vec2 r, q;\n"
         "uniform vec4 s;\n"
         "uniform float t, u, v, w, x;\n"
         "\n"
@@ -3486,7 +3702,7 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_FragColor = (vec4(E.xyz * E.w, E.w) * clamp(0.5 - (((abs((distance(B, C) - y) - t) - u) * v) * w), float(0), float(1))) * x;\n"
         "}\n"
         "");
-    ::STRINGS[127] = uString::Const("uniform float e[d];\n"
+    ::STRINGS[128] = uString::Const("uniform float e[d];\n"
         "uniform vec2 f;\n"
         "uniform mat4 g;\n"
         "\n"
@@ -3505,18 +3721,6 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_Position = g * vec4(q, 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[128] = uString::Const("uniform float h, i, j, k, m;\n"
-        "uniform vec4 l;\n"
-        "\n"
-        "varying float n;\n"
-        "varying vec2 o, p;\n"
-        "\n"
-        "void main()\n"
-        "{\n"
-        "    float q = clamp(0.5 - (((abs((distance(o, p) - n) - h) - i) * j) * k), float(0), float(1));\n"
-        "    gl_FragColor = (l * (((q * q) * q) * ((q * ((q * float(6)) - float(15))) + float(10)))) * m;\n"
-        "}\n"
-        "");
     ::STRINGS[129] = uString::Const("uniform float h, i, j, k, m;\n"
         "uniform vec4 l;\n"
         "\n"
@@ -3528,140 +3732,233 @@ static void FuseDrawingPrimitives_bundle_build(uType* type)
         "    gl_FragColor = (l * clamp(0.5 - (((abs((distance(o, p) - n) - h) - i) * j) * k), float(0), float(1))) * m;\n"
         "}\n"
         "");
-    ::STRINGS[130] = uString::Const("uniform float e[d], q;\n"
-        "uniform vec2 f, h, i, j, p;\n"
+    ::STRINGS[130] = uString::Const("uniform float h, i, j, k, m;\n"
+        "uniform vec4 l;\n"
+        "\n"
+        "varying float n;\n"
+        "varying vec2 o, p;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    float q = clamp(0.5 - (((abs((distance(o, p) - n) - h) - i) * j) * k), float(0), float(1));\n"
+        "    gl_FragColor = (l * (((q * q) * q) * ((q * ((q * float(6)) - float(15))) + float(10)))) * m;\n"
+        "}\n"
+        "");
+    ::STRINGS[131] = uString::Const("uniform float e[d];\n"
+        "uniform vec2 f;\n"
         "uniform mat4 g;\n"
         "\n"
         "attribute vec4 a, b;\n"
         "attribute float c;\n"
         "\n"
-        "varying float r, s;\n"
-        "varying vec2 t, u;\n"
-        "\n"
-        "float w(vec2 x, vec2 y, float z){\n"
-        "    vec2 A = (x * h) - i;\n"
-        "    float B = dot(A, y) / z;\n"
-        "    return (B - j.x) / j.y;\n"
-        "}\n"
+        "varying float l;\n"
+        "varying vec2 m, n;\n"
         "\n"
         "void main()\n"
         "{\n"
-        "    vec2 x = vec2((sign(a.x) * e[int(abs(a.x))]) + (sign(a.y) * e[int(abs(a.y))]), (sign(a.z) * e[int(abs(a.z))]) + (sign(a.w) * e[int(abs(a.w))])) + f;\n"
-        "    r = e[int(c)];\n"
-        "    s = w(x / h, p, q);\n"
-        "    t = x;\n"
-        "    u = vec2((sign(b.x) * e[int(abs(b.x))]) + (sign(b.y) * e[int(abs(b.y))]), (sign(b.z) * e[int(abs(b.z))]) + (sign(b.w) * e[int(abs(b.w))])) + f;\n"
-        "    gl_Position = g * vec4(x, 0., 1.);\n"
+        "    vec2 o = vec2((sign(a.x) * e[int(abs(a.x))]) + (sign(a.y) * e[int(abs(a.y))]), (sign(a.z) * e[int(abs(a.z))]) + (sign(a.w) * e[int(abs(a.w))])) + f;\n"
+        "    l = e[int(c)];\n"
+        "    m = o;\n"
+        "    n = vec2((sign(b.x) * e[int(abs(b.x))]) + (sign(b.y) * e[int(abs(b.y))]), (sign(b.z) * e[int(abs(b.z))]) + (sign(b.w) * e[int(abs(b.w))])) + f;\n"
+        "    gl_Position = g * vec4(o, 0., 1.);\n"
         "}\n"
         "");
-    ::STRINGS[131] = uString::Const("uniform float k, l, m, n, o;\n"
+    ::STRINGS[132] = uString::Const("uniform float h, i, k;\n"
+        "uniform vec4 j;\n"
         "\n"
-        "uniform sampler2D v;\n"
-        "\n"
-        "varying float r, s;\n"
-        "varying vec2 t, u;\n"
+        "varying float l;\n"
+        "varying vec2 m, n;\n"
         "\n"
         "void main()\n"
         "{\n"
-        "    gl_FragColor = (texture2D(v, vec2(s, 0.5)) * clamp(0.5 - (((abs((distance(t, u) - r) - k) - l) * m) * n), float(0), float(1))) * o;\n"
+        "    float o = clamp(0.5 - (((distance(m, n) - l) * h) * i), float(0), float(1));\n"
+        "    gl_FragColor = (j * (((o * o) * o) * ((o * ((o * float(6)) - float(15))) + float(10)))) * k;\n"
         "}\n"
         "");
-    ::STRINGS[132] = uString::Const("uniform float k, l, m, n, o;\n"
+    ::STRINGS[133] = uString::Const("uniform float h, i, k;\n"
+        "uniform vec4 j;\n"
         "\n"
-        "uniform sampler2D v;\n"
-        "\n"
-        "varying float r, s;\n"
-        "varying vec2 t, u;\n"
+        "varying float l;\n"
+        "varying vec2 m, n;\n"
         "\n"
         "void main()\n"
         "{\n"
-        "    float x = clamp(0.5 - (((abs((distance(t, u) - r) - k) - l) * m) * n), float(0), float(1));\n"
-        "    gl_FragColor = (texture2D(v, vec2(s, 0.5)) * (((x * x) * x) * ((x * ((x * float(6)) - float(15))) + float(10)))) * o;\n"
+        "    gl_FragColor = (j * clamp(0.5 - (((distance(m, n) - l) * h) * i), float(0), float(1))) * k;\n"
+        "}\n"
+        "");
+    ::STRINGS[134] = uString::Const("uniform float j, k, l;\n"
+        "\n"
+        "uniform sampler2D t;\n"
+        "\n"
+        "varying float p, q;\n"
+        "varying vec2 r, s;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = (texture2D(t, vec2(q, 0.5)) * clamp(0.5 - (((distance(r, s) - p) * j) * k), float(0), float(1))) * l;\n"
+        "}\n"
+        "");
+    ::STRINGS[135] = uString::Const("uniform float e[d];\n"
+        "uniform vec2 f;\n"
+        "uniform mat4 g;\n"
+        "\n"
+        "attribute vec4 a, b;\n"
+        "attribute float c;\n"
+        "\n"
+        "varying float k;\n"
+        "varying vec2 l, m;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec2 n = vec2((sign(a.x) * e[int(abs(a.x))]) + (sign(a.y) * e[int(abs(a.y))]), (sign(a.z) * e[int(abs(a.z))]) + (sign(a.w) * e[int(abs(a.w))])) + f;\n"
+        "    k = e[int(c)];\n"
+        "    l = n;\n"
+        "    m = vec2((sign(b.x) * e[int(abs(b.x))]) + (sign(b.y) * e[int(abs(b.y))]), (sign(b.z) * e[int(abs(b.z))]) + (sign(b.w) * e[int(abs(b.w))])) + f;\n"
+        "    gl_Position = g * vec4(n, 0., 1.);\n"
+        "}\n"
+        "");
+    ::STRINGS[136] = uString::Const("uniform float h, i;\n"
+        "uniform vec4 j;\n"
+        "\n"
+        "varying float k;\n"
+        "varying vec2 l, m;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = j * clamp(0.5 - (((distance(l, m) - k) * h) * i), float(0), float(1));\n"
+        "}\n"
+        "");
+    ::STRINGS[137] = uString::Const("uniform float h, i;\n"
+        "uniform vec4 j;\n"
+        "\n"
+        "varying float k;\n"
+        "varying vec2 l, m;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    float n = clamp(0.5 - (((distance(l, m) - k) * h) * i), float(0), float(1));\n"
+        "    gl_FragColor = j * (((n * n) * n) * ((n * ((n * float(6)) - float(15))) + float(10)));\n"
+        "}\n"
+        "");
+    ::STRINGS[138] = uString::Const("uniform vec2 r, q;\n"
+        "uniform vec4 s;\n"
+        "uniform float t, u, v;\n"
+        "\n"
+        "uniform sampler2D B;\n"
+        "\n"
+        "varying float w;\n"
+        "varying vec2 x, y, z, A;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    vec4 C = (f ? vec4(float(0)) : texture2D(B, e ? (r + (fract(x) * q)) : y)) * s;\n"
+        "    float D = clamp(0.5 - (((distance(z, A) - w) * t) * u), float(0), float(1));\n"
+        "    gl_FragColor = (vec4(C.xyz * C.w, C.w) * (((D * D) * D) * ((D * ((D * float(6)) - float(15))) + float(10)))) * v;\n"
         "}\n"
         "");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
     type->SetFields(0,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle01247f96_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle038d0b56_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle09647386_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle09647387_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle09647389_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle054832c3_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle0962c76a_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle0962c76b_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle0962c76c_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle27c6b7fe_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle27c6b7ff_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle4a971b16_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle4c78c62c_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle60e596bb_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle62a0be28_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle7aaa5f74_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle832ca9c8_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle832ca9d6_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle832ca9d7_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circle91c7af62_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlea7efa75e_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlebe3e2220_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlecfb305c7_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlecfb305c9_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlecfb305ca_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circled0e74ba4_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circled0e59707_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circled802ead9_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlee8f0edda_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlee8f0eddb_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlee8ef393e_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlee8ef393f_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circleef203ac7_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlef28f173b_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlef28f173d_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlef28f173e_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle5aede5cb_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle5aede5cc_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle6bc1d5d3_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle6bc1d5d4_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle7c95c5e3_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle7c95c5e4_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlef28d6b18_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlef28d6b19_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlef28d6b1a_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlef7c3f433_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlef7c3f434_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Circlef7c3f435_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle0e3d84e4_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle26472755_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle538c6e5c_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle565a6cfd_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle7c9a26db_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle7c9a26dc_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle7fa93ce4_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle8d69b5eb_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangle8d69b5ec_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectanglea858f3bc_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectanglea858f4fc_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectanglea858f503_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectanglea858f53c_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectanglea858f53f_, uFieldFlagsStatic,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectanglea858f57b_, uFieldFlagsStatic,
-        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectanglea858f57c_, uFieldFlagsStatic);
-    type->Reflection.SetFields(40,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectanglea858f57c_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangleb0e4f93d_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangleb3b2f694_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectanglec8ee9d37_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangled46c7a4a_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectangleec761c79_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingPrimitives_bundle::Rectanglef633e2b5_, uFieldFlagsStatic);
+    type->Reflection.SetFields(50,
         new uField("Circle01247f96", 0),
         new uField("Circle038d0b56", 1),
-        new uField("Circle09647386", 2),
-        new uField("Circle09647387", 3),
-        new uField("Circle09647389", 4),
-        new uField("Circle27c6b7fe", 5),
-        new uField("Circle27c6b7ff", 6),
-        new uField("Circle4a971b16", 7),
-        new uField("Circle4c78c62c", 8),
-        new uField("Circle60e596bb", 9),
-        new uField("Circle7aaa5f74", 10),
-        new uField("Circle91c7af62", 11),
-        new uField("Circlebe3e2220", 12),
-        new uField("Circlecfb305c7", 13),
-        new uField("Circlecfb305c9", 14),
-        new uField("Circlecfb305ca", 15),
-        new uField("Circled0e74ba4", 16),
-        new uField("Circled802ead9", 17),
-        new uField("Circlee8f0edda", 18),
-        new uField("Circlee8f0eddb", 19),
-        new uField("Circleef203ac7", 20),
-        new uField("Circlef28f173b", 21),
-        new uField("Circlef28f173d", 22),
-        new uField("Circlef28f173e", 23),
-        new uField("Rectangle5aede5cb", 24),
-        new uField("Rectangle5aede5cc", 25),
-        new uField("Rectangle6bc1d5d3", 26),
-        new uField("Rectangle6bc1d5d4", 27),
-        new uField("Rectangle7c95c5e3", 28),
-        new uField("Rectangle7c95c5e4", 29),
-        new uField("Rectangle7fa93ce4", 30),
-        new uField("Rectangle8d69b5eb", 31),
-        new uField("Rectangle8d69b5ec", 32),
-        new uField("Rectanglea858f3bc", 33),
-        new uField("Rectanglea858f4fc", 34),
-        new uField("Rectanglea858f503", 35),
-        new uField("Rectanglea858f53c", 36),
-        new uField("Rectanglea858f53f", 37),
-        new uField("Rectanglea858f57b", 38),
-        new uField("Rectanglea858f57c", 39));
+        new uField("Circle054832c3", 2),
+        new uField("Circle0962c76a", 3),
+        new uField("Circle0962c76b", 4),
+        new uField("Circle0962c76c", 5),
+        new uField("Circle27c6b7fe", 6),
+        new uField("Circle27c6b7ff", 7),
+        new uField("Circle4a971b16", 8),
+        new uField("Circle4c78c62c", 9),
+        new uField("Circle60e596bb", 10),
+        new uField("Circle62a0be28", 11),
+        new uField("Circle7aaa5f74", 12),
+        new uField("Circle832ca9c8", 13),
+        new uField("Circle832ca9d6", 14),
+        new uField("Circle832ca9d7", 15),
+        new uField("Circle91c7af62", 16),
+        new uField("Circlea7efa75e", 17),
+        new uField("Circlebe3e2220", 18),
+        new uField("Circled0e59707", 19),
+        new uField("Circled802ead9", 20),
+        new uField("Circlee8ef393e", 21),
+        new uField("Circlee8ef393f", 22),
+        new uField("Circleef203ac7", 23),
+        new uField("Circlef28d6b18", 24),
+        new uField("Circlef28d6b19", 25),
+        new uField("Circlef28d6b1a", 26),
+        new uField("Circlef7c3f433", 27),
+        new uField("Circlef7c3f434", 28),
+        new uField("Circlef7c3f435", 29),
+        new uField("Rectangle0e3d84e4", 30),
+        new uField("Rectangle26472755", 31),
+        new uField("Rectangle538c6e5c", 32),
+        new uField("Rectangle565a6cfd", 33),
+        new uField("Rectangle7c9a26db", 34),
+        new uField("Rectangle7c9a26dc", 35),
+        new uField("Rectangle7fa93ce4", 36),
+        new uField("Rectanglea858f3bc", 37),
+        new uField("Rectanglea858f4fc", 38),
+        new uField("Rectanglea858f503", 39),
+        new uField("Rectanglea858f53c", 40),
+        new uField("Rectanglea858f53f", 41),
+        new uField("Rectanglea858f57b", 42),
+        new uField("Rectanglea858f57c", 43),
+        new uField("Rectangleb0e4f93d", 44),
+        new uField("Rectangleb3b2f694", 45),
+        new uField("Rectanglec8ee9d37", 46),
+        new uField("Rectangled46c7a4a", 47),
+        new uField("Rectangleec761c79", 48),
+        new uField("Rectanglef633e2b5", 49));
 }
 
 uClassType* FuseDrawingPrimitives_bundle_typeof()
@@ -3670,7 +3967,7 @@ uClassType* FuseDrawingPrimitives_bundle_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 40;
+    options.FieldCount = 50;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("FuseDrawingPrimitives_bundle", options);
     type->fp_build_ = FuseDrawingPrimitives_bundle_build;
@@ -3680,37 +3977,41 @@ uClassType* FuseDrawingPrimitives_bundle_typeof()
 
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle01247f96_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle038d0b56_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle09647386_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle09647387_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle09647389_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle054832c3_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle0962c76a_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle0962c76b_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle0962c76c_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle27c6b7fe_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle27c6b7ff_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle4a971b16_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle4c78c62c_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle60e596bb_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle62a0be28_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle7aaa5f74_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle832ca9c8_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle832ca9d6_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle832ca9d7_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circle91c7af62_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlea7efa75e_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlebe3e2220_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlecfb305c7_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlecfb305c9_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlecfb305ca_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circled0e74ba4_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circled0e59707_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circled802ead9_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlee8f0edda_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlee8f0eddb_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlee8ef393e_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlee8ef393f_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circleef203ac7_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlef28f173b_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlef28f173d_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlef28f173e_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle5aede5cb_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle5aede5cc_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle6bc1d5d3_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle6bc1d5d4_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle7c95c5e3_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle7c95c5e4_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlef28d6b18_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlef28d6b19_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlef28d6b1a_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlef7c3f433_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlef7c3f434_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Circlef7c3f435_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle0e3d84e4_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle26472755_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle538c6e5c_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle565a6cfd_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle7c9a26db_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle7c9a26dc_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle7fa93ce4_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle8d69b5eb_;
-uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangle8d69b5ec_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectanglea858f3bc_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectanglea858f4fc_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectanglea858f503_;
@@ -3718,64 +4019,50 @@ uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectanglea858f53f_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectanglea858f57b_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectanglea858f57c_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangleb0e4f93d_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangleb3b2f694_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectanglec8ee9d37_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangled46c7a4a_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectangleec761c79_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingPrimitives_bundle::Rectanglef633e2b5_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/0.47.7/.uno/package
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/.uno/package
+// ------------------------------------------------------------------------------------------------------------
 
-// public static generated class FuseEffects_bundle :0
+// public static generated class FuseDrawingSurface_bundle :0
 // {
-// static FuseEffects_bundle() :0
-static void FuseEffects_bundle__cctor__fn(uType* __type)
+// static FuseDrawingSurface_bundle() :0
+static void FuseDrawingSurface_bundle__cctor__fn(uType* __type)
 {
-    FuseEffects_bundle::Blitter6e650d31_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[133/*"uniform mat...*/], ::STRINGS[134/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[11/*"h"*/]));
-    FuseEffects_bundle::Blur115443aa_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[26/*"uniform mat...*/], ::STRINGS[27/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/]));
-    FuseEffects_bundle::Desaturate88bb7f94_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[31/*"uniform mat...*/], ::STRINGS[135/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 5, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[6/*"f"*/]));
-    FuseEffects_bundle::Duotone26eb7e3c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[133/*"uniform mat...*/], ::STRINGS[136/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[11/*"h"*/]));
-    FuseEffects_bundle::EffectHelpers52052d40_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[137/*"attribute v...*/], ::STRINGS[138/*"uniform flo...*/], 3, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[2/*"a"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[11/*"h"*/]));
-    FuseEffects_bundle::EffectHelpers9b892494_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[139/*"attribute v...*/], ::STRINGS[140/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 2, ::STRINGS[2/*"a"*/], ::STRINGS[4/*"c"*/]));
-    FuseEffects_bundle::EffectHelpersd8c2e3e5_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[141/*"uniform vec...*/], ::STRINGS[142/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 11, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[21/*"t"*/]));
-    FuseEffects_bundle::EffectHelperse7e608d1_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[143/*"uniform vec...*/], ::STRINGS[144/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 8, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[16/*"m"*/]));
-    FuseEffects_bundle::Halftone3c4c510c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[145/*"uniform mat...*/], ::STRINGS[146/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 14, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[20/*"q"*/]));
-    FuseEffects_bundle::Mask0da73af7_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[147/*"uniform mat...*/], ::STRINGS[148/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/]));
-    FuseEffects_bundle::Mask6affc65c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[147/*"uniform mat...*/], ::STRINGS[149/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/]));
-    FuseEffects_bundle::Maskb04eaf92_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[147/*"uniform mat...*/], ::STRINGS[150/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/]));
+    FuseDrawingSurface_bundle::CoreGraphicsDrawHelpere074f602_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[139/*"attribute v...*/], ::STRINGS[140/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 2, ::STRINGS[4/*"a"*/], ::STRINGS[6/*"c"*/]));
+    FuseDrawingSurface_bundle::Surface541b21c2_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[30/*"uniform mat...*/], ::STRINGS[31/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/]));
 }
 
-static void FuseEffects_bundle_build(uType* type)
+static void FuseDrawingSurface_bundle_build(uType* type)
 {
-    ::STRINGS[133] = uString::Const("uniform mat4 f, b;\n"
+    ::STRINGS[139] = uString::Const("attribute vec2 a;\n"
         "\n"
-        "attribute vec2 a;\n"
-        "\n"
-        "varying vec2 g;\n"
+        "varying vec2 b;\n"
         "\n"
         "void main()\n"
         "{\n"
-        "    g = true ? vec2(a.x, float(1) - a.y) : a;\n"
-        "    gl_Position = b * (f * vec4(vec3(a, float(0)), 1.));\n"
+        "    b = vec2(a.x, float(1) - a.y);\n"
+        "    gl_Position = vec4((a * float(2)) - float(1), float(0), float(1));\n"
         "}\n"
         "");
-    ::STRINGS[134] = uString::Const("uniform vec3 e;\n"
-        "uniform float c, d;\n"
+    ::STRINGS[140] = uString::Const("uniform sampler2D c;\n"
         "\n"
-        "uniform sampler2D h;\n"
-        "\n"
-        "varying vec2 g;\n"
+        "varying vec2 b;\n"
         "\n"
         "void main()\n"
         "{\n"
-        "    gl_FragColor = vec4(e, clamp(texture2D(h, g).w * c, float(0), float(1)) * d);\n"
+        "    gl_FragColor = texture2D(c, b);\n"
         "}\n"
         "");
-    ::STRINGS[2] = uString::Const("a");
-    ::STRINGS[3] = uString::Const("b");
-    ::STRINGS[4] = uString::Const("c");
-    ::STRINGS[5] = uString::Const("d");
-    ::STRINGS[9] = uString::Const("e");
-    ::STRINGS[6] = uString::Const("f");
-    ::STRINGS[11] = uString::Const("h");
-    ::STRINGS[26] = uString::Const("uniform mat4 c, b;\n"
+    ::STRINGS[4] = uString::Const("a");
+    ::STRINGS[6] = uString::Const("c");
+    ::STRINGS[30] = uString::Const("uniform mat4 c, b;\n"
         "\n"
         "attribute vec2 a;\n"
         "\n"
@@ -3787,7 +4074,7 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_Position = b * (c * vec4(vec3(a, float(0)), 1.));\n"
         "}\n"
         "");
-    ::STRINGS[27] = uString::Const("uniform sampler2D e;\n"
+    ::STRINGS[31] = uString::Const("uniform sampler2D e;\n"
         "\n"
         "varying vec2 d;\n"
         "\n"
@@ -3796,7 +4083,112 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_FragColor = texture2D(e, d);\n"
         "}\n"
         "");
-    ::STRINGS[31] = uString::Const("uniform mat4 d, b;\n"
+    ::STRINGS[5] = uString::Const("b");
+    ::STRINGS[11] = uString::Const("e");
+    ::TYPES[0] = ::g::Uno::String_typeof()->Array();
+    type->SetFields(0,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingSurface_bundle::CoreGraphicsDrawHelpere074f602_, uFieldFlagsStatic,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseDrawingSurface_bundle::Surface541b21c2_, uFieldFlagsStatic);
+    type->Reflection.SetFields(2,
+        new uField("CoreGraphicsDrawHelpere074f602", 0),
+        new uField("Surface541b21c2", 1));
+}
+
+uClassType* FuseDrawingSurface_bundle_typeof()
+{
+    static uSStrong<uClassType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.FieldCount = 2;
+    options.TypeSize = sizeof(uClassType);
+    type = uClassType::New("FuseDrawingSurface_bundle", options);
+    type->fp_build_ = FuseDrawingSurface_bundle_build;
+    type->fp_cctor_ = FuseDrawingSurface_bundle__cctor__fn;
+    return type;
+}
+
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingSurface_bundle::CoreGraphicsDrawHelpere074f602_;
+uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseDrawingSurface_bundle::Surface541b21c2_;
+// }
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/.uno/package
+// ----------------------------------------------------------------------------------------------------
+
+// public static generated class FuseEffects_bundle :0
+// {
+// static FuseEffects_bundle() :0
+static void FuseEffects_bundle__cctor__fn(uType* __type)
+{
+    FuseEffects_bundle::Blitter6e650d31_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[141/*"uniform mat...*/], ::STRINGS[142/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[13/*"h"*/]));
+    FuseEffects_bundle::Blur115443aa_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[30/*"uniform mat...*/], ::STRINGS[31/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/]));
+    FuseEffects_bundle::Desaturate88bb7f94_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[35/*"uniform mat...*/], ::STRINGS[143/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 5, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[8/*"f"*/]));
+    FuseEffects_bundle::Duotone26eb7e3c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[141/*"uniform mat...*/], ::STRINGS[144/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[13/*"h"*/]));
+    FuseEffects_bundle::EffectHelpers52052d40_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[145/*"attribute v...*/], ::STRINGS[146/*"uniform flo...*/], 3, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[4/*"a"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[13/*"h"*/]));
+    FuseEffects_bundle::EffectHelpers9b892494_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[147/*"attribute v...*/], ::STRINGS[140/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 2, ::STRINGS[4/*"a"*/], ::STRINGS[6/*"c"*/]));
+    FuseEffects_bundle::EffectHelpersd8c2e3e5_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[148/*"uniform vec...*/], ::STRINGS[149/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 11, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[29/*"t"*/]));
+    FuseEffects_bundle::EffectHelperse7e608d1_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[150/*"uniform vec...*/], ::STRINGS[151/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 8, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[24/*"m"*/]));
+    FuseEffects_bundle::Halftone3c4c510c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[152/*"uniform mat...*/], ::STRINGS[153/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 14, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[28/*"q"*/]));
+    FuseEffects_bundle::Mask0da73af7_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[154/*"uniform mat...*/], ::STRINGS[155/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/]));
+    FuseEffects_bundle::Mask6affc65c_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[154/*"uniform mat...*/], ::STRINGS[156/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/]));
+    FuseEffects_bundle::Maskb04eaf92_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[154/*"uniform mat...*/], ::STRINGS[157/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/]));
+}
+
+static void FuseEffects_bundle_build(uType* type)
+{
+    ::STRINGS[141] = uString::Const("uniform mat4 f, b;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying vec2 g;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    g = true ? vec2(a.x, float(1) - a.y) : a;\n"
+        "    gl_Position = b * (f * vec4(vec3(a, float(0)), 1.));\n"
+        "}\n"
+        "");
+    ::STRINGS[142] = uString::Const("uniform vec3 e;\n"
+        "uniform float c, d;\n"
+        "\n"
+        "uniform sampler2D h;\n"
+        "\n"
+        "varying vec2 g;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = vec4(e, clamp(texture2D(h, g).w * c, float(0), float(1)) * d);\n"
+        "}\n"
+        "");
+    ::STRINGS[4] = uString::Const("a");
+    ::STRINGS[5] = uString::Const("b");
+    ::STRINGS[6] = uString::Const("c");
+    ::STRINGS[7] = uString::Const("d");
+    ::STRINGS[11] = uString::Const("e");
+    ::STRINGS[8] = uString::Const("f");
+    ::STRINGS[13] = uString::Const("h");
+    ::STRINGS[30] = uString::Const("uniform mat4 c, b;\n"
+        "\n"
+        "attribute vec2 a;\n"
+        "\n"
+        "varying vec2 d;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    d = true ? vec2(a.x, float(1) - a.y) : a;\n"
+        "    gl_Position = b * (c * vec4(vec3(a, float(0)), 1.));\n"
+        "}\n"
+        "");
+    ::STRINGS[31] = uString::Const("uniform sampler2D e;\n"
+        "\n"
+        "varying vec2 d;\n"
+        "\n"
+        "void main()\n"
+        "{\n"
+        "    gl_FragColor = texture2D(e, d);\n"
+        "}\n"
+        "");
+    ::STRINGS[35] = uString::Const("uniform mat4 d, b;\n"
         "\n"
         "attribute vec2 a;\n"
         "\n"
@@ -3808,7 +4200,7 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_Position = b * (d * vec4(vec3(a, float(0)), 1.));\n"
         "}\n"
         "");
-    ::STRINGS[135] = uString::Const("uniform float c;\n"
+    ::STRINGS[143] = uString::Const("uniform float c;\n"
         "\n"
         "uniform sampler2D f;\n"
         "\n"
@@ -3821,7 +4213,7 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_FragColor = vec4(mix(h.xyz, vec3(sqrt(dot(h.xyz * h.xyz, vec3(0.299, 0.587, 0.114)))), c), h.w);\n"
         "}\n"
         "");
-    ::STRINGS[136] = uString::Const("uniform vec3 c, d;\n"
+    ::STRINGS[144] = uString::Const("uniform vec3 c, d;\n"
         "uniform float e;\n"
         "\n"
         "uniform sampler2D h;\n"
@@ -3835,7 +4227,7 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_FragColor = vec4(mix(j.xyz, mix(c, d, sqrt(dot(j.xyz * j.xyz, vec3(0.299, 0.587, 0.114)))).xyz, e), j.w);\n"
         "}\n"
         "");
-    ::STRINGS[137] = uString::Const("attribute vec2 a;\n"
+    ::STRINGS[145] = uString::Const("attribute vec2 a;\n"
         "\n"
         "varying vec2 g;\n"
         "\n"
@@ -3846,7 +4238,7 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_Position = vec4(j, float(1));\n"
         "}\n"
         "");
-    ::STRINGS[138] = uString::Const("uniform float e[b];\n"
+    ::STRINGS[146] = uString::Const("uniform float e[b];\n"
         "uniform vec2 f[d];\n"
         "\n"
         "uniform sampler2D h;\n"
@@ -3870,7 +4262,7 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_FragColor = i(g);\n"
         "}\n"
         "");
-    ::STRINGS[139] = uString::Const("attribute vec2 a;\n"
+    ::STRINGS[147] = uString::Const("attribute vec2 a;\n"
         "\n"
         "varying vec2 b;\n"
         "\n"
@@ -3890,7 +4282,7 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_FragColor = texture2D(c, b);\n"
         "}\n"
         "");
-    ::STRINGS[141] = uString::Const("uniform vec2 c, e, f, h, i, j;\n"
+    ::STRINGS[148] = uString::Const("uniform vec2 c, e, f, h, i, j;\n"
         "\n"
         "attribute vec2 a;\n"
         "\n"
@@ -3912,7 +4304,7 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_Position = vec4(u, float(1));\n"
         "}\n"
         "");
-    ::STRINGS[142] = uString::Const("uniform float b, d, g;\n"
+    ::STRINGS[149] = uString::Const("uniform float b, d, g;\n"
         "\n"
         "uniform sampler2D t;\n"
         "\n"
@@ -3923,11 +4315,11 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_FragColor = ((((((((texture2D(t, k) * b) + (texture2D(t, l) * d)) + (texture2D(t, m) * d)) + (texture2D(t, n) * d)) + (texture2D(t, o) * d)) + (texture2D(t, p) * g)) + (texture2D(t, q) * g)) + (texture2D(t, r) * g)) + (texture2D(t, s) * g);\n"
         "}\n"
         "");
-    ::STRINGS[10] = uString::Const("g");
-    ::STRINGS[12] = uString::Const("i");
-    ::STRINGS[13] = uString::Const("j");
-    ::STRINGS[21] = uString::Const("t");
-    ::STRINGS[143] = uString::Const("uniform vec2 c, e, f, g;\n"
+    ::STRINGS[12] = uString::Const("g");
+    ::STRINGS[14] = uString::Const("i");
+    ::STRINGS[15] = uString::Const("j");
+    ::STRINGS[29] = uString::Const("t");
+    ::STRINGS[150] = uString::Const("uniform vec2 c, e, f, g;\n"
         "\n"
         "attribute vec2 a;\n"
         "\n"
@@ -3945,7 +4337,7 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_Position = vec4(n, float(1));\n"
         "}\n"
         "");
-    ::STRINGS[144] = uString::Const("uniform float b, d;\n"
+    ::STRINGS[151] = uString::Const("uniform float b, d;\n"
         "\n"
         "uniform sampler2D m;\n"
         "\n"
@@ -3956,8 +4348,8 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_FragColor = ((((texture2D(m, h) * b) + (texture2D(m, i) * d)) + (texture2D(m, j) * d)) + (texture2D(m, k) * d)) + (texture2D(m, l) * d);\n"
         "}\n"
         "");
-    ::STRINGS[16] = uString::Const("m");
-    ::STRINGS[145] = uString::Const("uniform mat4 m, b;\n"
+    ::STRINGS[24] = uString::Const("m");
+    ::STRINGS[152] = uString::Const("uniform mat4 m, b;\n"
         "uniform vec2 g, h;\n"
         "uniform mat2 i;\n"
         "\n"
@@ -3975,7 +4367,7 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_Position = b * (m * vec4(vec3(a, float(0)), 1.));\n"
         "}\n"
         "");
-    ::STRINGS[146] = uString::Const("uniform float c, d, e, f, k, l;\n"
+    ::STRINGS[153] = uString::Const("uniform float c, d, e, f, k, l;\n"
         "uniform mat2 j;\n"
         "\n"
         "uniform sampler2D q;\n"
@@ -3988,10 +4380,10 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_FragColor = mix(mix(vec4(float(1), float(1), float(1), r.w), r, c), mix(vec4(float(0), float(0), float(0), r.w), r, d), clamp(0.5 - ((((((float(1) - sqrt((float(1) - dot(r.xyz * r.xyz, vec3(0.299, 0.587, 0.114))) / 3.14159274)) * e) * f) - length(p - (j * ((floor(o / e) + 0.5) * e)))) * k) * l), float(0), float(1)));\n"
         "}\n"
         "");
-    ::STRINGS[14] = uString::Const("k");
-    ::STRINGS[15] = uString::Const("l");
-    ::STRINGS[20] = uString::Const("q");
-    ::STRINGS[147] = uString::Const("uniform mat4 e, b;\n"
+    ::STRINGS[23] = uString::Const("k");
+    ::STRINGS[16] = uString::Const("l");
+    ::STRINGS[28] = uString::Const("q");
+    ::STRINGS[154] = uString::Const("uniform mat4 e, b;\n"
         "uniform vec2 c, d;\n"
         "\n"
         "attribute vec2 a;\n"
@@ -4006,7 +4398,7 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_Position = b * (e * vec4(vec3(a, float(0)), 1.));\n"
         "}\n"
         "");
-    ::STRINGS[148] = uString::Const("uniform sampler2D h, i;\n"
+    ::STRINGS[155] = uString::Const("uniform sampler2D h, i;\n"
         "\n"
         "varying vec2 f, g;\n"
         "\n"
@@ -4015,7 +4407,7 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_FragColor = texture2D(h, f) * texture2D(i, g).x;\n"
         "}\n"
         "");
-    ::STRINGS[149] = uString::Const("uniform sampler2D h, i;\n"
+    ::STRINGS[156] = uString::Const("uniform sampler2D h, i;\n"
         "\n"
         "varying vec2 f, g;\n"
         "\n"
@@ -4025,7 +4417,7 @@ static void FuseEffects_bundle_build(uType* type)
         "    gl_FragColor = texture2D(h, f) * vec4(j.xyz * j.w, j.w);\n"
         "}\n"
         "");
-    ::STRINGS[150] = uString::Const("uniform sampler2D h, i;\n"
+    ::STRINGS[157] = uString::Const("uniform sampler2D h, i;\n"
         "\n"
         "varying vec2 f, g;\n"
         "\n"
@@ -4091,24 +4483,24 @@ uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseEffects_bundle::Maskb04eaf92_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/.uno/package
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/.uno/package
+// -----------------------------------------------------------------------------------------------------
 
 // public static generated class FuseElements_bundle :0
 // {
 // static FuseElements_bundle() :0
 static void FuseElements_bundle__cctor__fn(uType* __type)
 {
-    FuseElements_bundle::CacheHelper230c69b7_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[151/*"uniform vec...*/], ::STRINGS[152/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 6, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[10/*"g"*/]));
-    FuseElements_bundle::ElementBatchd43eeb4e_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[153/*"uniform mat...*/], ::STRINGS[154/*"uniform sam...*/], 0, 2, uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[6/*"f"*/]));
-    FuseElements_bundle::ElementDraw1f583284_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[24/*"uniform mat...*/], ::STRINGS[25/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/]));
-    FuseElements_bundle::RepeatBaker447c61dc_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[155/*"uniform vec...*/], ::STRINGS[156/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[9/*"e"*/]));
-    FuseElements_bundle::Scale9Rectangle720ad3ad_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[157/*"uniform flo...*/], ::STRINGS[158/*"uniform vec...*/], 0, 2, uArray::Init<uString*>(::TYPES[0/*string[]*/], 17, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[10/*"g"*/], ::STRINGS[11/*"h"*/], ::STRINGS[12/*"i"*/], ::STRINGS[13/*"j"*/], ::STRINGS[14/*"k"*/], ::STRINGS[15/*"l"*/], ::STRINGS[16/*"m"*/], ::STRINGS[17/*"n"*/], ::STRINGS[18/*"o"*/], ::STRINGS[19/*"p"*/], ::STRINGS[59/*"r"*/]));
+    FuseElements_bundle::CacheHelper230c69b7_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[158/*"uniform vec...*/], ::STRINGS[159/*"uniform flo...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 6, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[12/*"g"*/]));
+    FuseElements_bundle::ElementBatchd43eeb4e_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[160/*"uniform mat...*/], ::STRINGS[161/*"uniform sam...*/], 0, 2, uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[8/*"f"*/]));
+    FuseElements_bundle::ElementDraw1f583284_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[19/*"uniform mat...*/], ::STRINGS[20/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/]));
+    FuseElements_bundle::RepeatBaker447c61dc_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[162/*"uniform vec...*/], ::STRINGS[163/*"uniform sam...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[11/*"e"*/]));
+    FuseElements_bundle::Scale9Rectangle720ad3ad_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[164/*"uniform flo...*/], ::STRINGS[165/*"uniform vec...*/], 0, 2, uArray::Init<uString*>(::TYPES[0/*string[]*/], 17, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[12/*"g"*/], ::STRINGS[13/*"h"*/], ::STRINGS[14/*"i"*/], ::STRINGS[15/*"j"*/], ::STRINGS[23/*"k"*/], ::STRINGS[16/*"l"*/], ::STRINGS[24/*"m"*/], ::STRINGS[25/*"n"*/], ::STRINGS[26/*"o"*/], ::STRINGS[27/*"p"*/], ::STRINGS[56/*"r"*/]));
 }
 
 static void FuseElements_bundle_build(uType* type)
 {
-    ::STRINGS[151] = uString::Const("uniform vec2 b;\n"
+    ::STRINGS[158] = uString::Const("uniform vec2 b;\n"
         "uniform mat4 c, d;\n"
         "\n"
         "attribute vec2 a;\n"
@@ -4121,7 +4513,7 @@ static void FuseElements_bundle_build(uType* type)
         "    gl_Position = d * (c * vec4(a * b, float(0), float(1)));\n"
         "}\n"
         "");
-    ::STRINGS[152] = uString::Const("uniform float e;\n"
+    ::STRINGS[159] = uString::Const("uniform float e;\n"
         "\n"
         "uniform sampler2D g;\n"
         "\n"
@@ -4133,13 +4525,13 @@ static void FuseElements_bundle_build(uType* type)
         "    gl_FragColor = vec4(h.xyz * e, h.w * e);\n"
         "}\n"
         "");
-    ::STRINGS[2] = uString::Const("a");
-    ::STRINGS[3] = uString::Const("b");
-    ::STRINGS[4] = uString::Const("c");
-    ::STRINGS[5] = uString::Const("d");
-    ::STRINGS[9] = uString::Const("e");
-    ::STRINGS[10] = uString::Const("g");
-    ::STRINGS[153] = uString::Const("uniform mat4 c;\n"
+    ::STRINGS[4] = uString::Const("a");
+    ::STRINGS[5] = uString::Const("b");
+    ::STRINGS[6] = uString::Const("c");
+    ::STRINGS[7] = uString::Const("d");
+    ::STRINGS[11] = uString::Const("e");
+    ::STRINGS[12] = uString::Const("g");
+    ::STRINGS[160] = uString::Const("uniform mat4 c;\n"
         "\n"
         "attribute vec3 a;\n"
         "attribute vec2 b;\n"
@@ -4154,7 +4546,7 @@ static void FuseElements_bundle_build(uType* type)
         "    gl_Position = (a.z > float(0)) ? (c * vec4(a.xy, float(0), float(1))) : vec4(float(0), float(0), float(0), float(-1));\n"
         "}\n"
         "");
-    ::STRINGS[154] = uString::Const("uniform sampler2D f;\n"
+    ::STRINGS[161] = uString::Const("uniform sampler2D f;\n"
         "\n"
         "varying float d;\n"
         "varying vec2 e;\n"
@@ -4164,8 +4556,8 @@ static void FuseElements_bundle_build(uType* type)
         "    gl_FragColor = texture2D(f, e) * d;\n"
         "}\n"
         "");
-    ::STRINGS[6] = uString::Const("f");
-    ::STRINGS[24] = uString::Const("uniform mat4 d, b;\n"
+    ::STRINGS[8] = uString::Const("f");
+    ::STRINGS[19] = uString::Const("uniform mat4 d, b;\n"
         "\n"
         "attribute vec2 a;\n"
         "\n"
@@ -4174,14 +4566,14 @@ static void FuseElements_bundle_build(uType* type)
         "    gl_Position = b * (d * vec4(vec3(a, float(0)), 1.));\n"
         "}\n"
         "");
-    ::STRINGS[25] = uString::Const("uniform vec4 c;\n"
+    ::STRINGS[20] = uString::Const("uniform vec4 c;\n"
         "\n"
         "void main()\n"
         "{\n"
         "    gl_FragColor = c;\n"
         "}\n"
         "");
-    ::STRINGS[155] = uString::Const("uniform vec2 b, c;\n"
+    ::STRINGS[162] = uString::Const("uniform vec2 b, c;\n"
         "\n"
         "attribute vec2 a;\n"
         "\n"
@@ -4193,7 +4585,7 @@ static void FuseElements_bundle_build(uType* type)
         "    gl_Position = vec4((a * float(2)) - float(1), float(0), float(1));\n"
         "}\n"
         "");
-    ::STRINGS[156] = uString::Const("uniform sampler2D e;\n"
+    ::STRINGS[163] = uString::Const("uniform sampler2D e;\n"
         "\n"
         "varying vec2 d;\n"
         "\n"
@@ -4202,7 +4594,7 @@ static void FuseElements_bundle_build(uType* type)
         "    gl_FragColor = texture2D(e, fract(d));\n"
         "}\n"
         "");
-    ::STRINGS[157] = uString::Const("uniform float c, d, e, f, g, h, k, l, m, n;\n"
+    ::STRINGS[164] = uString::Const("uniform float c, d, e, f, g, h, k, l, m, n;\n"
         "uniform mat4 i, j;\n"
         "uniform vec2 o;\n"
         "\n"
@@ -4216,7 +4608,7 @@ static void FuseElements_bundle_build(uType* type)
         "    gl_Position = j * (i * vec4(vec2(((a.x * c) + (a.y * d)) + (a.z * e), ((b.x * f) + (b.y * g)) + (b.z * h)), float(0), float(1)));\n"
         "}\n"
         "");
-    ::STRINGS[158] = uString::Const("uniform vec4 p;\n"
+    ::STRINGS[165] = uString::Const("uniform vec4 p;\n"
         "\n"
         "uniform sampler2D r;\n"
         "\n"
@@ -4227,16 +4619,16 @@ static void FuseElements_bundle_build(uType* type)
         "    gl_FragColor = texture2D(r, q) * p;\n"
         "}\n"
         "");
-    ::STRINGS[11] = uString::Const("h");
-    ::STRINGS[12] = uString::Const("i");
-    ::STRINGS[13] = uString::Const("j");
-    ::STRINGS[14] = uString::Const("k");
-    ::STRINGS[15] = uString::Const("l");
-    ::STRINGS[16] = uString::Const("m");
-    ::STRINGS[17] = uString::Const("n");
-    ::STRINGS[18] = uString::Const("o");
-    ::STRINGS[19] = uString::Const("p");
-    ::STRINGS[59] = uString::Const("r");
+    ::STRINGS[13] = uString::Const("h");
+    ::STRINGS[14] = uString::Const("i");
+    ::STRINGS[15] = uString::Const("j");
+    ::STRINGS[23] = uString::Const("k");
+    ::STRINGS[16] = uString::Const("l");
+    ::STRINGS[24] = uString::Const("m");
+    ::STRINGS[25] = uString::Const("n");
+    ::STRINGS[26] = uString::Const("o");
+    ::STRINGS[27] = uString::Const("p");
+    ::STRINGS[56] = uString::Const("r");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
     type->SetFields(0,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseElements_bundle::CacheHelper230c69b7_, uFieldFlagsStatic,
@@ -4273,20 +4665,20 @@ uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*>
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseElements_bundle::Scale9Rectangle720ad3ad_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/.uno/package
-// ---------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/.uno/package
+// --------------------------------------------------------------------------------------------------
 
 // public static generated class FuseNodes_bundle :0
 // {
 // static FuseNodes_bundle() :0
 static void FuseNodes_bundle__cctor__fn(uType* __type)
 {
-    FuseNodes_bundle::DrawHelpers4c5c39ae_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[159/*"uniform vec...*/], ::STRINGS[160/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 5, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/]));
+    FuseNodes_bundle::DrawHelpers4c5c39ae_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[166/*"uniform vec...*/], ::STRINGS[167/*"uniform vec...*/], 0, 1, uArray::Init<uString*>(::TYPES[0/*string[]*/], 5, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/]));
 }
 
 static void FuseNodes_bundle_build(uType* type)
 {
-    ::STRINGS[159] = uString::Const("uniform vec2 c, b;\n"
+    ::STRINGS[166] = uString::Const("uniform vec2 c, b;\n"
         "uniform mat4 d;\n"
         "\n"
         "attribute vec2 a;\n"
@@ -4296,18 +4688,18 @@ static void FuseNodes_bundle_build(uType* type)
         "    gl_Position = d * vec4(c + (a * b), float(0), float(1));\n"
         "}\n"
         "");
-    ::STRINGS[160] = uString::Const("uniform vec4 e;\n"
+    ::STRINGS[167] = uString::Const("uniform vec4 e;\n"
         "\n"
         "void main()\n"
         "{\n"
         "    gl_FragColor = e;\n"
         "}\n"
         "");
-    ::STRINGS[2] = uString::Const("a");
-    ::STRINGS[3] = uString::Const("b");
-    ::STRINGS[4] = uString::Const("c");
-    ::STRINGS[5] = uString::Const("d");
-    ::STRINGS[9] = uString::Const("e");
+    ::STRINGS[4] = uString::Const("a");
+    ::STRINGS[5] = uString::Const("b");
+    ::STRINGS[6] = uString::Const("c");
+    ::STRINGS[7] = uString::Const("d");
+    ::STRINGS[11] = uString::Const("e");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
     type->SetFields(0,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseNodes_bundle::DrawHelpers4c5c39ae_, uFieldFlagsStatic);
@@ -4332,37 +4724,37 @@ uClassType* FuseNodes_bundle_typeof()
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseNodes_bundle::DrawHelpers4c5c39ae_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/0.47.7/.uno/package
-// -----------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/1.0.5/.uno/package
+// ----------------------------------------------------------------------------------------------------------------
 
 // public static generated class FuseReactiveJavaScript_bundle :0
 // {
 // static FuseReactiveJavaScript_bundle() :0
 static void FuseReactiveJavaScript_bundle__cctor__fn(uType* __type)
 {
-    FuseReactiveJavaScript_bundle::Diagnostics16aaa8c0_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[161/*"Fuse.Reacti...*/]))->GetFile(::STRINGS[162/*"diagnostics...*/]);
-    FuseReactiveJavaScript_bundle::es6promisemin65cc4303_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[161/*"Fuse.Reacti...*/]))->GetFile(::STRINGS[163/*"es6-promise...*/]);
-    FuseReactiveJavaScript_bundle::Observable49677b23_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[161/*"Fuse.Reacti...*/]))->GetFile(::STRINGS[164/*"observable-...*/]);
-    FuseReactiveJavaScript_bundle::setTimeouta19c575b_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[161/*"Fuse.Reacti...*/]))->GetFile(::STRINGS[165/*"settimeout-...*/]);
+    FuseReactiveJavaScript_bundle::Diagnosticsd733d8ca_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[168/*"Fuse.Reacti...*/]))->GetFile(::STRINGS[169/*"diagnostics...*/]);
+    FuseReactiveJavaScript_bundle::es6promisemin312e72cb_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[168/*"Fuse.Reacti...*/]))->GetFile(::STRINGS[170/*"es6-promise...*/]);
+    FuseReactiveJavaScript_bundle::Observabled69d4cd3_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[168/*"Fuse.Reacti...*/]))->GetFile(::STRINGS[171/*"observable-...*/]);
+    FuseReactiveJavaScript_bundle::setTimeout489b9da3_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[168/*"Fuse.Reacti...*/]))->GetFile(::STRINGS[172/*"settimeout-...*/]);
 }
 
 static void FuseReactiveJavaScript_bundle_build(uType* type)
 {
-    ::STRINGS[161] = uString::Const("Fuse.Reactive.JavaScript");
-    ::STRINGS[162] = uString::Const("diagnostics-4c71cb84.js");
-    ::STRINGS[163] = uString::Const("es6-promise.min-a3069df9.js");
-    ::STRINGS[164] = uString::Const("observable-66183501.js");
-    ::STRINGS[165] = uString::Const("settimeout-cb0e3491.js");
+    ::STRINGS[168] = uString::Const("Fuse.Reactive.JavaScript");
+    ::STRINGS[169] = uString::Const("diagnostics-4c71cb84.js");
+    ::STRINGS[170] = uString::Const("es6-promise.min-a3069df9.js");
+    ::STRINGS[171] = uString::Const("observable-66183501.js");
+    ::STRINGS[172] = uString::Const("settimeout-cb0e3491.js");
     type->SetFields(0,
-        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::FuseReactiveJavaScript_bundle::Diagnostics16aaa8c0_, uFieldFlagsStatic,
-        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::FuseReactiveJavaScript_bundle::es6promisemin65cc4303_, uFieldFlagsStatic,
-        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::FuseReactiveJavaScript_bundle::Observable49677b23_, uFieldFlagsStatic,
-        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::FuseReactiveJavaScript_bundle::setTimeouta19c575b_, uFieldFlagsStatic);
+        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::FuseReactiveJavaScript_bundle::Diagnosticsd733d8ca_, uFieldFlagsStatic,
+        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::FuseReactiveJavaScript_bundle::es6promisemin312e72cb_, uFieldFlagsStatic,
+        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::FuseReactiveJavaScript_bundle::Observabled69d4cd3_, uFieldFlagsStatic,
+        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::FuseReactiveJavaScript_bundle::setTimeout489b9da3_, uFieldFlagsStatic);
     type->Reflection.SetFields(4,
-        new uField("Diagnostics16aaa8c0", 0),
-        new uField("es6promisemin65cc4303", 1),
-        new uField("Observable49677b23", 2),
-        new uField("setTimeouta19c575b", 3));
+        new uField("Diagnosticsd733d8ca", 0),
+        new uField("es6promisemin312e72cb", 1),
+        new uField("Observabled69d4cd3", 2),
+        new uField("setTimeout489b9da3", 3));
 }
 
 uClassType* FuseReactiveJavaScript_bundle_typeof()
@@ -4379,26 +4771,26 @@ uClassType* FuseReactiveJavaScript_bundle_typeof()
     return type;
 }
 
-uSStrong< ::g::Uno::IO::BundleFile*> FuseReactiveJavaScript_bundle::Diagnostics16aaa8c0_;
-uSStrong< ::g::Uno::IO::BundleFile*> FuseReactiveJavaScript_bundle::es6promisemin65cc4303_;
-uSStrong< ::g::Uno::IO::BundleFile*> FuseReactiveJavaScript_bundle::Observable49677b23_;
-uSStrong< ::g::Uno::IO::BundleFile*> FuseReactiveJavaScript_bundle::setTimeouta19c575b_;
+uSStrong< ::g::Uno::IO::BundleFile*> FuseReactiveJavaScript_bundle::Diagnosticsd733d8ca_;
+uSStrong< ::g::Uno::IO::BundleFile*> FuseReactiveJavaScript_bundle::es6promisemin312e72cb_;
+uSStrong< ::g::Uno::IO::BundleFile*> FuseReactiveJavaScript_bundle::Observabled69d4cd3_;
+uSStrong< ::g::Uno::IO::BundleFile*> FuseReactiveJavaScript_bundle::setTimeout489b9da3_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/0.47.7/.uno/package
-// --------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/.uno/package
+// -------------------------------------------------------------------------------------------------
 
 // public static generated class FuseText_bundle :0
 // {
 // static FuseText_bundle() :0
 static void FuseText_bundle__cctor__fn(uType* __type)
 {
-    FuseText_bundle::Renderer0b7f7722_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[166/*"uniform mat...*/], ::STRINGS[167/*"uniform vec...*/], 1, 2, uArray::Init<uString*>(::TYPES[0/*string[]*/], 6, ::STRINGS[4/*"c"*/], ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[10/*"g"*/]));
+    FuseText_bundle::Renderer0b7f7722_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[173/*"uniform mat...*/], ::STRINGS[174/*"uniform vec...*/], 1, 2, uArray::Init<uString*>(::TYPES[0/*string[]*/], 6, ::STRINGS[6/*"c"*/], ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[12/*"g"*/]));
 }
 
 static void FuseText_bundle_build(uType* type)
 {
-    ::STRINGS[166] = uString::Const("uniform mat4 d;\n"
+    ::STRINGS[173] = uString::Const("uniform mat4 d;\n"
         "\n"
         "attribute vec2 a, b;\n"
         "\n"
@@ -4410,7 +4802,7 @@ static void FuseText_bundle_build(uType* type)
         "    gl_Position = d * vec4(a, float(0), float(1));\n"
         "}\n"
         "");
-    ::STRINGS[167] = uString::Const("uniform vec4 e;\n"
+    ::STRINGS[174] = uString::Const("uniform vec4 e;\n"
         "\n"
         "uniform sampler2D g;\n"
         "\n"
@@ -4422,12 +4814,12 @@ static void FuseText_bundle_build(uType* type)
         "    gl_FragColor = c ? (e * vec4(h.x)) : h;\n"
         "}\n"
         "");
-    ::STRINGS[4] = uString::Const("c");
-    ::STRINGS[2] = uString::Const("a");
-    ::STRINGS[3] = uString::Const("b");
-    ::STRINGS[5] = uString::Const("d");
-    ::STRINGS[9] = uString::Const("e");
-    ::STRINGS[10] = uString::Const("g");
+    ::STRINGS[6] = uString::Const("c");
+    ::STRINGS[4] = uString::Const("a");
+    ::STRINGS[5] = uString::Const("b");
+    ::STRINGS[7] = uString::Const("d");
+    ::STRINGS[11] = uString::Const("e");
+    ::STRINGS[12] = uString::Const("g");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
     type->SetFields(0,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::FuseText_bundle::Renderer0b7f7722_, uFieldFlagsStatic);
@@ -4452,238 +4844,30 @@ uClassType* FuseText_bundle_typeof()
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> FuseText_bundle::Renderer0b7f7722_;
 // }
 
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// public sealed class HashableWeakReference :2092
-// {
-static void HashableWeakReference_build(uType* type)
-{
-    type->SetFields(0,
-        ::g::Uno::WeakReference_typeof()->MakeType(uObject_typeof(), NULL), offsetof(::g::HashableWeakReference, _reference), 0);
-    type->Reflection.SetFunctions(2,
-        new uFunction(".ctor", NULL, (void*)HashableWeakReference__New1_fn, 0, true, type, 1, ::g::Uno::WeakReference_typeof()->MakeType(uObject_typeof(), NULL)),
-        new uFunction("TryGetTarget", NULL, (void*)HashableWeakReference__TryGetTarget_fn, 0, false, ::g::Uno::Bool_typeof(), 1, uObject_typeof()->ByRef()));
-}
-
-uType* HashableWeakReference_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.FieldCount = 1;
-    options.ObjectSize = sizeof(HashableWeakReference);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("HashableWeakReference", options);
-    type->fp_build_ = HashableWeakReference_build;
-    type->fp_Equals = (void(*)(uObject*, uObject*, bool*))HashableWeakReference__Equals_fn;
-    type->fp_GetHashCode = (void(*)(uObject*, int*))HashableWeakReference__GetHashCode_fn;
-    return type;
-}
-
-// public HashableWeakReference(Uno.WeakReference<object> reference) :2095
-void HashableWeakReference__ctor__fn(HashableWeakReference* __this, ::g::Uno::WeakReference* reference)
-{
-    __this->ctor_(reference);
-}
-
-// public override sealed bool Equals(object that) :2114
-void HashableWeakReference__Equals_fn(HashableWeakReference* __this, uObject* that, bool* __retval)
-{
-    uStackFrame __("HashableWeakReference", "Equals(object)");
-
-    if (::g::Uno::Object::ReferenceEquals(__this, that))
-        return *__retval = true, void();
-
-    uObject* a = NULL;
-    uObject* b = NULL;
-
-    if (!uPtr(__this->_reference)->TryGetTarget((uObject**)(&a)))
-        return *__retval = false, void();
-
-    if (!uIs(that, __this->__type) || !uPtr(uPtr(uCast<HashableWeakReference*>(that, __this->__type))->_reference)->TryGetTarget((uObject**)(&b)))
-        return *__retval = false, void();
-
-    return *__retval = ::g::Uno::Object::Equals(uPtr(a), b), void();
-}
-
-// public override sealed int GetHashCode() :2105
-void HashableWeakReference__GetHashCode_fn(HashableWeakReference* __this, int* __retval)
-{
-    uStackFrame __("HashableWeakReference", "GetHashCode()");
-    uObject* obj;
-
-    if (!uPtr(__this->_reference)->TryGetTarget((uObject**)(&obj)))
-        return *__retval = 0, void();
-
-    return *__retval = ::g::Uno::Object::GetHashCode(uPtr(obj)), void();
-}
-
-// public HashableWeakReference New(Uno.WeakReference<object> reference) :2095
-void HashableWeakReference__New1_fn(::g::Uno::WeakReference* reference, HashableWeakReference** __retval)
-{
-    *__retval = HashableWeakReference::New1(reference);
-}
-
-// public bool TryGetTarget(object& obj) :2100
-void HashableWeakReference__TryGetTarget_fn(HashableWeakReference* __this, uObject** obj, bool* __retval)
-{
-    *__retval = __this->TryGetTarget(obj);
-}
-
-// public HashableWeakReference(Uno.WeakReference<object> reference) [instance] :2095
-void HashableWeakReference::ctor_(::g::Uno::WeakReference* reference)
-{
-    _reference = reference;
-}
-
-// public bool TryGetTarget(object& obj) [instance] :2100
-bool HashableWeakReference::TryGetTarget(uObject** obj)
-{
-    uStackFrame __("HashableWeakReference", "TryGetTarget(object&)");
-    return uPtr(_reference)->TryGetTarget((uObject**)obj);
-}
-
-// public HashableWeakReference New(Uno.WeakReference<object> reference) [static] :2095
-HashableWeakReference* HashableWeakReference::New1(::g::Uno::WeakReference* reference)
-{
-    HashableWeakReference* obj1 = (HashableWeakReference*)uNew(HashableWeakReference_typeof());
-    obj1->ctor_(reference);
-    return obj1;
-}
-// }
-
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
 // ---------------------------------------------------------------------------------
 
-// internal sealed class OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor :285
+// internal sealed class OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header :332
 // {
-// static OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor() :285
-static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__cctor__fn(uType* __type)
+// static OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header() :332
+static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__cctor__fn(uType* __type)
 {
-    OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor::Singleton_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor::New1();
-    OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[168/*"FillColor"*/]);
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header::Singleton_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header::New1();
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[175/*"Header"*/]);
 }
 
-static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor_build(uType* type)
+static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header_build(uType* type)
 {
-    ::STRINGS[168] = uString::Const("FillColor");
-    ::TYPES[16] = ::g::Outracks::Simulator::ErrorToast_typeof();
-    ::TYPES[5] = ::g::Uno::Type_typeof();
-    type->SetFields(0,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor::_name_, uFieldFlagsStatic,
-        ::g::Uno::UX::PropertyAccessor_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor::Singleton_, uFieldFlagsStatic);
-}
-
-::g::Uno::UX::PropertyAccessor_type* OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor_typeof()
-{
-    static uSStrong< ::g::Uno::UX::PropertyAccessor_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::UX::PropertyAccessor_typeof();
-    options.FieldCount = 2;
-    options.ObjectSize = sizeof(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor);
-    options.TypeSize = sizeof(::g::Uno::UX::PropertyAccessor_type);
-    type = (::g::Uno::UX::PropertyAccessor_type*)uClassType::New("OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor", options);
-    type->fp_build_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor_build;
-    type->fp_ctor_ = (void*)OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__New1_fn;
-    type->fp_cctor_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__cctor__fn;
-    type->fp_GetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__GetAsObject_fn;
-    type->fp_get_Name = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::Selector*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__get_Name_fn;
-    type->fp_get_PropertyType = (void(*)(::g::Uno::UX::PropertyAccessor*, uType**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__get_PropertyType_fn;
-    type->fp_SetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject*, uObject*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__SetAsObject_fn;
-    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__get_SupportsOriginSetter_fn;
-    return type;
-}
-
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor() :285
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__ctor_1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor* __this)
-{
-    __this->ctor_1();
-}
-
-// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :291
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__GetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
-{
-    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor", "GetAsObject(Uno.UX.PropertyObject)");
-    return *__retval = uBox(::g::Uno::Float4_typeof(), uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->FillColor()), void();
-}
-
-// public override sealed Uno.UX.Selector get_Name() :288
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__get_Name_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor* __this, ::g::Uno::UX::Selector* __retval)
-{
-    return *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor::_name(), void();
-}
-
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor New() :285
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__New1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor** __retval)
-{
-    *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor::New1();
-}
-
-// public override sealed Uno.Type get_PropertyType() :290
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__get_PropertyType_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor* __this, uType** __retval)
-{
-    return *__retval = ::g::Uno::Float4_typeof(), void();
-}
-
-// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :292
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__SetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor* __this, ::g::Uno::UX::PropertyObject* obj, uObject* v, uObject* origin)
-{
-    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor", "SetAsObject(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
-    uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->SetFillColor(uUnbox< ::g::Uno::Float4>(::g::Uno::Float4_typeof(), v), origin);
-}
-
-// public override sealed bool get_SupportsOriginSetter() :293
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor* __this, bool* __retval)
-{
-    return *__retval = true, void();
-}
-
-::g::Uno::UX::Selector OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor::_name_;
-uSStrong< ::g::Uno::UX::PropertyAccessor*> OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor::Singleton_;
-
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor() [instance] :285
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor::ctor_1()
-{
-    ctor_();
-}
-
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor New() [static] :285
-OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor* OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor::New1()
-{
-    OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor* obj1 = (OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor*)uNew(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_FillColor_typeof());
-    obj1->ctor_1();
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
-// ---------------------------------------------------------------------------------
-
-// internal sealed class OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message :265
-// {
-// static OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message() :265
-static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__cctor__fn(uType* __type)
-{
-    OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message::Singleton_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message::New1();
-    OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[169/*"Message"*/]);
-}
-
-static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message_build(uType* type)
-{
-    ::STRINGS[169] = uString::Const("Message");
-    ::TYPES[16] = ::g::Outracks::Simulator::ErrorToast_typeof();
+    ::STRINGS[175] = uString::Const("Header");
+    ::TYPES[15] = ::g::Outracks::Simulator::Client::Dialogs::LoadingScreen_typeof();
     ::TYPES[4] = ::g::Uno::String_typeof();
     ::TYPES[5] = ::g::Uno::Type_typeof();
     type->SetFields(0,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message::_name_, uFieldFlagsStatic,
-        ::g::Uno::UX::PropertyAccessor_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message::Singleton_, uFieldFlagsStatic);
+        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header::_name_, uFieldFlagsStatic,
+        ::g::Uno::UX::PropertyAccessor_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header::Singleton_, uFieldFlagsStatic);
 }
 
-::g::Uno::UX::PropertyAccessor_type* OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message_typeof()
+::g::Uno::UX::PropertyAccessor_type* OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header_typeof()
 {
     static uSStrong< ::g::Uno::UX::PropertyAccessor_type*> type;
     if (type != NULL) return type;
@@ -4691,77 +4875,77 @@ static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Me
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::UX::PropertyAccessor_typeof();
     options.FieldCount = 2;
-    options.ObjectSize = sizeof(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message);
+    options.ObjectSize = sizeof(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header);
     options.TypeSize = sizeof(::g::Uno::UX::PropertyAccessor_type);
-    type = (::g::Uno::UX::PropertyAccessor_type*)uClassType::New("OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message", options);
-    type->fp_build_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message_build;
-    type->fp_ctor_ = (void*)OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__New1_fn;
-    type->fp_cctor_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__cctor__fn;
-    type->fp_GetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__GetAsObject_fn;
-    type->fp_get_Name = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::Selector*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__get_Name_fn;
-    type->fp_get_PropertyType = (void(*)(::g::Uno::UX::PropertyAccessor*, uType**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__get_PropertyType_fn;
-    type->fp_SetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject*, uObject*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__SetAsObject_fn;
-    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__get_SupportsOriginSetter_fn;
+    type = (::g::Uno::UX::PropertyAccessor_type*)uClassType::New("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header", options);
+    type->fp_build_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header_build;
+    type->fp_ctor_ = (void*)OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__New1_fn;
+    type->fp_cctor_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__cctor__fn;
+    type->fp_GetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__GetAsObject_fn;
+    type->fp_get_Name = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::Selector*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__get_Name_fn;
+    type->fp_get_PropertyType = (void(*)(::g::Uno::UX::PropertyAccessor*, uType**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__get_PropertyType_fn;
+    type->fp_SetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject*, uObject*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__SetAsObject_fn;
+    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__get_SupportsOriginSetter_fn;
     return type;
 }
 
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message() :265
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__ctor_1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message* __this)
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header() :332
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__ctor_1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :271
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__GetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
+// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :338
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__GetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
 {
-    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message", "GetAsObject(Uno.UX.PropertyObject)");
-    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->Message(), void();
+    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header", "GetAsObject(Uno.UX.PropertyObject)");
+    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::LoadingScreen*>(obj, ::TYPES[15/*Outracks.Simulator.Client.Dialogs.LoadingScreen*/]))->Header(), void();
 }
 
-// public override sealed Uno.UX.Selector get_Name() :268
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__get_Name_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message* __this, ::g::Uno::UX::Selector* __retval)
+// public override sealed Uno.UX.Selector get_Name() :335
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__get_Name_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header* __this, ::g::Uno::UX::Selector* __retval)
 {
-    return *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message::_name(), void();
+    return *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header::_name(), void();
 }
 
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message New() :265
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__New1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message** __retval)
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header New() :332
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__New1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header** __retval)
 {
-    *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message::New1();
+    *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header::New1();
 }
 
-// public override sealed Uno.Type get_PropertyType() :270
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__get_PropertyType_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message* __this, uType** __retval)
+// public override sealed Uno.Type get_PropertyType() :337
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__get_PropertyType_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header* __this, uType** __retval)
 {
     return *__retval = ::TYPES[4/*string*/], void();
 }
 
-// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :272
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__SetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message* __this, ::g::Uno::UX::PropertyObject* obj, uObject* v, uObject* origin)
+// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :339
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__SetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header* __this, ::g::Uno::UX::PropertyObject* obj, uObject* v, uObject* origin)
 {
-    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message", "SetAsObject(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
-    uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->SetMessage(uCast<uString*>(v, ::TYPES[4/*string*/]), origin);
+    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header", "SetAsObject(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
+    uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::LoadingScreen*>(obj, ::TYPES[15/*Outracks.Simulator.Client.Dialogs.LoadingScreen*/]))->SetHeader(uCast<uString*>(v, ::TYPES[4/*string*/]), origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :273
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message* __this, bool* __retval)
+// public override sealed bool get_SupportsOriginSetter() :340
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-::g::Uno::UX::Selector OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message::_name_;
-uSStrong< ::g::Uno::UX::PropertyAccessor*> OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message::Singleton_;
+::g::Uno::UX::Selector OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header::_name_;
+uSStrong< ::g::Uno::UX::PropertyAccessor*> OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header::Singleton_;
 
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message() [instance] :265
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message::ctor_1()
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header() [instance] :332
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header::ctor_1()
 {
     ctor_();
 }
 
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message New() [static] :265
-OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message* OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message::New1()
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header New() [static] :332
+OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header* OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header::New1()
 {
-    OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message* obj1 = (OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message*)uNew(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message_typeof());
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header* obj1 = (OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header*)uNew(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Header_typeof());
     obj1->ctor_1();
     return obj1;
 }
@@ -4770,26 +4954,27 @@ OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Message* Outra
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
 // ---------------------------------------------------------------------------------
 
-// internal sealed class OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo :275
+// internal sealed class OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message :342
 // {
-// static OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo() :275
-static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__cctor__fn(uType* __type)
+// static OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message() :342
+static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__cctor__fn(uType* __type)
 {
-    OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo::Singleton_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo::New1();
-    OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[170/*"ShowMonitor...*/]);
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message::Singleton_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message::New1();
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[176/*"Message"*/]);
 }
 
-static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo_build(uType* type)
+static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message_build(uType* type)
 {
-    ::STRINGS[170] = uString::Const("ShowMonitorInfo");
-    ::TYPES[16] = ::g::Outracks::Simulator::ErrorToast_typeof();
+    ::STRINGS[176] = uString::Const("Message");
+    ::TYPES[15] = ::g::Outracks::Simulator::Client::Dialogs::LoadingScreen_typeof();
+    ::TYPES[4] = ::g::Uno::String_typeof();
     ::TYPES[5] = ::g::Uno::Type_typeof();
     type->SetFields(0,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo::_name_, uFieldFlagsStatic,
-        ::g::Uno::UX::PropertyAccessor_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo::Singleton_, uFieldFlagsStatic);
+        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message::_name_, uFieldFlagsStatic,
+        ::g::Uno::UX::PropertyAccessor_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message::Singleton_, uFieldFlagsStatic);
 }
 
-::g::Uno::UX::PropertyAccessor_type* OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo_typeof()
+::g::Uno::UX::PropertyAccessor_type* OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message_typeof()
 {
     static uSStrong< ::g::Uno::UX::PropertyAccessor_type*> type;
     if (type != NULL) return type;
@@ -4797,77 +4982,77 @@ static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_Sh
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::UX::PropertyAccessor_typeof();
     options.FieldCount = 2;
-    options.ObjectSize = sizeof(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo);
+    options.ObjectSize = sizeof(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message);
     options.TypeSize = sizeof(::g::Uno::UX::PropertyAccessor_type);
-    type = (::g::Uno::UX::PropertyAccessor_type*)uClassType::New("OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo", options);
-    type->fp_build_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo_build;
-    type->fp_ctor_ = (void*)OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__New1_fn;
-    type->fp_cctor_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__cctor__fn;
-    type->fp_GetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__GetAsObject_fn;
-    type->fp_get_Name = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::Selector*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__get_Name_fn;
-    type->fp_get_PropertyType = (void(*)(::g::Uno::UX::PropertyAccessor*, uType**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__get_PropertyType_fn;
-    type->fp_SetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject*, uObject*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__SetAsObject_fn;
-    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__get_SupportsOriginSetter_fn;
+    type = (::g::Uno::UX::PropertyAccessor_type*)uClassType::New("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message", options);
+    type->fp_build_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message_build;
+    type->fp_ctor_ = (void*)OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__New1_fn;
+    type->fp_cctor_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__cctor__fn;
+    type->fp_GetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__GetAsObject_fn;
+    type->fp_get_Name = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::Selector*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__get_Name_fn;
+    type->fp_get_PropertyType = (void(*)(::g::Uno::UX::PropertyAccessor*, uType**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__get_PropertyType_fn;
+    type->fp_SetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject*, uObject*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__SetAsObject_fn;
+    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__get_SupportsOriginSetter_fn;
     return type;
 }
 
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo() :275
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__ctor_1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo* __this)
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message() :342
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__ctor_1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :281
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__GetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
+// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :348
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__GetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
 {
-    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo", "GetAsObject(Uno.UX.PropertyObject)");
-    return *__retval = uBox(::g::Uno::Bool_typeof(), uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->ShowMonitorInfo()), void();
+    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message", "GetAsObject(Uno.UX.PropertyObject)");
+    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::LoadingScreen*>(obj, ::TYPES[15/*Outracks.Simulator.Client.Dialogs.LoadingScreen*/]))->Message(), void();
 }
 
-// public override sealed Uno.UX.Selector get_Name() :278
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__get_Name_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo* __this, ::g::Uno::UX::Selector* __retval)
+// public override sealed Uno.UX.Selector get_Name() :345
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__get_Name_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message* __this, ::g::Uno::UX::Selector* __retval)
 {
-    return *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo::_name(), void();
+    return *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message::_name(), void();
 }
 
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo New() :275
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__New1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo** __retval)
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message New() :342
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__New1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message** __retval)
 {
-    *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo::New1();
+    *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message::New1();
 }
 
-// public override sealed Uno.Type get_PropertyType() :280
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__get_PropertyType_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo* __this, uType** __retval)
+// public override sealed Uno.Type get_PropertyType() :347
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__get_PropertyType_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message* __this, uType** __retval)
 {
-    return *__retval = ::g::Uno::Bool_typeof(), void();
+    return *__retval = ::TYPES[4/*string*/], void();
 }
 
-// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :282
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__SetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo* __this, ::g::Uno::UX::PropertyObject* obj, uObject* v, uObject* origin)
+// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :349
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__SetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message* __this, ::g::Uno::UX::PropertyObject* obj, uObject* v, uObject* origin)
 {
-    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo", "SetAsObject(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
-    uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->SetShowMonitorInfo(uUnbox<bool>(::g::Uno::Bool_typeof(), v), origin);
+    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message", "SetAsObject(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
+    uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::LoadingScreen*>(obj, ::TYPES[15/*Outracks.Simulator.Client.Dialogs.LoadingScreen*/]))->SetMessage(uCast<uString*>(v, ::TYPES[4/*string*/]), origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :283
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo* __this, bool* __retval)
+// public override sealed bool get_SupportsOriginSetter() :350
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-::g::Uno::UX::Selector OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo::_name_;
-uSStrong< ::g::Uno::UX::PropertyAccessor*> OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo::Singleton_;
+::g::Uno::UX::Selector OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message::_name_;
+uSStrong< ::g::Uno::UX::PropertyAccessor*> OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message::Singleton_;
 
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo() [instance] :275
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo::ctor_1()
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message() [instance] :342
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message::ctor_1()
 {
     ctor_();
 }
 
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo New() [static] :275
-OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo* OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo::New1()
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message New() [static] :342
+OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message* OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message::New1()
 {
-    OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo* obj1 = (OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo*)uNew(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInfo_typeof());
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message* obj1 = (OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message*)uNew(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_LoadingScreen_Message_typeof());
     obj1->ctor_1();
     return obj1;
 }
@@ -4876,26 +5061,27 @@ OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_ShowMonitorInf
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
 // ---------------------------------------------------------------------------------
 
-// internal sealed class OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor :295
+// internal sealed class OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body :362
 // {
-// static OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor() :295
-static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__cctor__fn(uType* __type)
+// static OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body() :362
+static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__cctor__fn(uType* __type)
 {
-    OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor::Singleton_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor::New1();
-    OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[171/*"StrokeColor"*/]);
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body::Singleton_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body::New1();
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[177/*"Body"*/]);
 }
 
-static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor_build(uType* type)
+static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body_build(uType* type)
 {
-    ::STRINGS[171] = uString::Const("StrokeColor");
-    ::TYPES[16] = ::g::Outracks::Simulator::ErrorToast_typeof();
+    ::STRINGS[177] = uString::Const("Body");
+    ::TYPES[16] = ::g::Outracks::Simulator::Client::Dialogs::ModalDialog_typeof();
+    ::TYPES[4] = ::g::Uno::String_typeof();
     ::TYPES[5] = ::g::Uno::Type_typeof();
     type->SetFields(0,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor::_name_, uFieldFlagsStatic,
-        ::g::Uno::UX::PropertyAccessor_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor::Singleton_, uFieldFlagsStatic);
+        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body::_name_, uFieldFlagsStatic,
+        ::g::Uno::UX::PropertyAccessor_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body::Singleton_, uFieldFlagsStatic);
 }
 
-::g::Uno::UX::PropertyAccessor_type* OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor_typeof()
+::g::Uno::UX::PropertyAccessor_type* OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body_typeof()
 {
     static uSStrong< ::g::Uno::UX::PropertyAccessor_type*> type;
     if (type != NULL) return type;
@@ -4903,77 +5089,291 @@ static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_St
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::UX::PropertyAccessor_typeof();
     options.FieldCount = 2;
-    options.ObjectSize = sizeof(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor);
+    options.ObjectSize = sizeof(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body);
     options.TypeSize = sizeof(::g::Uno::UX::PropertyAccessor_type);
-    type = (::g::Uno::UX::PropertyAccessor_type*)uClassType::New("OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor", options);
-    type->fp_build_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor_build;
-    type->fp_ctor_ = (void*)OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__New1_fn;
-    type->fp_cctor_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__cctor__fn;
-    type->fp_GetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__GetAsObject_fn;
-    type->fp_get_Name = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::Selector*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__get_Name_fn;
-    type->fp_get_PropertyType = (void(*)(::g::Uno::UX::PropertyAccessor*, uType**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__get_PropertyType_fn;
-    type->fp_SetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject*, uObject*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__SetAsObject_fn;
-    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__get_SupportsOriginSetter_fn;
+    type = (::g::Uno::UX::PropertyAccessor_type*)uClassType::New("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body", options);
+    type->fp_build_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body_build;
+    type->fp_ctor_ = (void*)OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__New1_fn;
+    type->fp_cctor_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__cctor__fn;
+    type->fp_GetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__GetAsObject_fn;
+    type->fp_get_Name = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::Selector*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__get_Name_fn;
+    type->fp_get_PropertyType = (void(*)(::g::Uno::UX::PropertyAccessor*, uType**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__get_PropertyType_fn;
+    type->fp_SetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject*, uObject*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__SetAsObject_fn;
+    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__get_SupportsOriginSetter_fn;
     return type;
 }
 
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor() :295
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__ctor_1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor* __this)
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body() :362
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__ctor_1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :301
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__GetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
+// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :368
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__GetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
 {
-    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor", "GetAsObject(Uno.UX.PropertyObject)");
-    return *__retval = uBox(::g::Uno::Float4_typeof(), uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->StrokeColor()), void();
+    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body", "GetAsObject(Uno.UX.PropertyObject)");
+    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::ModalDialog*>(obj, ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/]))->Body(), void();
 }
 
-// public override sealed Uno.UX.Selector get_Name() :298
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__get_Name_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor* __this, ::g::Uno::UX::Selector* __retval)
+// public override sealed Uno.UX.Selector get_Name() :365
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__get_Name_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body* __this, ::g::Uno::UX::Selector* __retval)
 {
-    return *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor::_name(), void();
+    return *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body::_name(), void();
 }
 
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor New() :295
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__New1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor** __retval)
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body New() :362
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__New1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body** __retval)
 {
-    *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor::New1();
+    *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body::New1();
 }
 
-// public override sealed Uno.Type get_PropertyType() :300
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__get_PropertyType_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor* __this, uType** __retval)
+// public override sealed Uno.Type get_PropertyType() :367
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__get_PropertyType_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body* __this, uType** __retval)
 {
-    return *__retval = ::g::Uno::Float4_typeof(), void();
+    return *__retval = ::TYPES[4/*string*/], void();
 }
 
-// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :302
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__SetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor* __this, ::g::Uno::UX::PropertyObject* obj, uObject* v, uObject* origin)
+// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :369
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__SetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body* __this, ::g::Uno::UX::PropertyObject* obj, uObject* v, uObject* origin)
 {
-    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor", "SetAsObject(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
-    uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->SetStrokeColor(uUnbox< ::g::Uno::Float4>(::g::Uno::Float4_typeof(), v), origin);
+    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body", "SetAsObject(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
+    uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::ModalDialog*>(obj, ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/]))->SetBody(uCast<uString*>(v, ::TYPES[4/*string*/]), origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :303
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor* __this, bool* __retval)
+// public override sealed bool get_SupportsOriginSetter() :370
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-::g::Uno::UX::Selector OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor::_name_;
-uSStrong< ::g::Uno::UX::PropertyAccessor*> OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor::Singleton_;
+::g::Uno::UX::Selector OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body::_name_;
+uSStrong< ::g::Uno::UX::PropertyAccessor*> OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body::Singleton_;
 
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor() [instance] :295
-void OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor::ctor_1()
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body() [instance] :362
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body::ctor_1()
 {
     ctor_();
 }
 
-// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor New() [static] :295
-OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor* OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor::New1()
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body New() [static] :362
+OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body* OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body::New1()
 {
-    OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor* obj1 = (OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor*)uNew(OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor_typeof());
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body* obj1 = (OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body*)uNew(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Body_typeof());
+    obj1->ctor_1();
+    return obj1;
+}
+// }
+
+// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
+// ---------------------------------------------------------------------------------
+
+// internal sealed class OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details :372
+// {
+// static OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details() :372
+static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__cctor__fn(uType* __type)
+{
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details::Singleton_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details::New1();
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[178/*"Details"*/]);
+}
+
+static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details_build(uType* type)
+{
+    ::STRINGS[178] = uString::Const("Details");
+    ::TYPES[16] = ::g::Outracks::Simulator::Client::Dialogs::ModalDialog_typeof();
+    ::TYPES[4] = ::g::Uno::String_typeof();
+    ::TYPES[5] = ::g::Uno::Type_typeof();
+    type->SetFields(0,
+        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details::_name_, uFieldFlagsStatic,
+        ::g::Uno::UX::PropertyAccessor_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details::Singleton_, uFieldFlagsStatic);
+}
+
+::g::Uno::UX::PropertyAccessor_type* OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details_typeof()
+{
+    static uSStrong< ::g::Uno::UX::PropertyAccessor_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::UX::PropertyAccessor_typeof();
+    options.FieldCount = 2;
+    options.ObjectSize = sizeof(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details);
+    options.TypeSize = sizeof(::g::Uno::UX::PropertyAccessor_type);
+    type = (::g::Uno::UX::PropertyAccessor_type*)uClassType::New("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details", options);
+    type->fp_build_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details_build;
+    type->fp_ctor_ = (void*)OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__New1_fn;
+    type->fp_cctor_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__cctor__fn;
+    type->fp_GetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__GetAsObject_fn;
+    type->fp_get_Name = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::Selector*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__get_Name_fn;
+    type->fp_get_PropertyType = (void(*)(::g::Uno::UX::PropertyAccessor*, uType**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__get_PropertyType_fn;
+    type->fp_SetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject*, uObject*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__SetAsObject_fn;
+    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__get_SupportsOriginSetter_fn;
+    return type;
+}
+
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details() :372
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__ctor_1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details* __this)
+{
+    __this->ctor_1();
+}
+
+// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :378
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__GetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
+{
+    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details", "GetAsObject(Uno.UX.PropertyObject)");
+    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::ModalDialog*>(obj, ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/]))->Details(), void();
+}
+
+// public override sealed Uno.UX.Selector get_Name() :375
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__get_Name_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details* __this, ::g::Uno::UX::Selector* __retval)
+{
+    return *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details::_name(), void();
+}
+
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details New() :372
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__New1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details** __retval)
+{
+    *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details::New1();
+}
+
+// public override sealed Uno.Type get_PropertyType() :377
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__get_PropertyType_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details* __this, uType** __retval)
+{
+    return *__retval = ::TYPES[4/*string*/], void();
+}
+
+// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :379
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__SetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details* __this, ::g::Uno::UX::PropertyObject* obj, uObject* v, uObject* origin)
+{
+    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details", "SetAsObject(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
+    uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::ModalDialog*>(obj, ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/]))->SetDetails(uCast<uString*>(v, ::TYPES[4/*string*/]), origin);
+}
+
+// public override sealed bool get_SupportsOriginSetter() :380
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details* __this, bool* __retval)
+{
+    return *__retval = true, void();
+}
+
+::g::Uno::UX::Selector OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details::_name_;
+uSStrong< ::g::Uno::UX::PropertyAccessor*> OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details::Singleton_;
+
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details() [instance] :372
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details::ctor_1()
+{
+    ctor_();
+}
+
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details New() [static] :372
+OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details* OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details::New1()
+{
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details* obj1 = (OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details*)uNew(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Details_typeof());
+    obj1->ctor_1();
+    return obj1;
+}
+// }
+
+// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
+// ---------------------------------------------------------------------------------
+
+// internal sealed class OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header :352
+// {
+// static OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header() :352
+static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__cctor__fn(uType* __type)
+{
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header::Singleton_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header::New1();
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[175/*"Header"*/]);
+}
+
+static void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header_build(uType* type)
+{
+    ::STRINGS[175] = uString::Const("Header");
+    ::TYPES[16] = ::g::Outracks::Simulator::Client::Dialogs::ModalDialog_typeof();
+    ::TYPES[4] = ::g::Uno::String_typeof();
+    ::TYPES[5] = ::g::Uno::Type_typeof();
+    type->SetFields(0,
+        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header::_name_, uFieldFlagsStatic,
+        ::g::Uno::UX::PropertyAccessor_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header::Singleton_, uFieldFlagsStatic);
+}
+
+::g::Uno::UX::PropertyAccessor_type* OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header_typeof()
+{
+    static uSStrong< ::g::Uno::UX::PropertyAccessor_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::UX::PropertyAccessor_typeof();
+    options.FieldCount = 2;
+    options.ObjectSize = sizeof(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header);
+    options.TypeSize = sizeof(::g::Uno::UX::PropertyAccessor_type);
+    type = (::g::Uno::UX::PropertyAccessor_type*)uClassType::New("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header", options);
+    type->fp_build_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header_build;
+    type->fp_ctor_ = (void*)OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__New1_fn;
+    type->fp_cctor_ = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__cctor__fn;
+    type->fp_GetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__GetAsObject_fn;
+    type->fp_get_Name = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::Selector*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__get_Name_fn;
+    type->fp_get_PropertyType = (void(*)(::g::Uno::UX::PropertyAccessor*, uType**))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__get_PropertyType_fn;
+    type->fp_SetAsObject = (void(*)(::g::Uno::UX::PropertyAccessor*, ::g::Uno::UX::PropertyObject*, uObject*, uObject*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__SetAsObject_fn;
+    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__get_SupportsOriginSetter_fn;
+    return type;
+}
+
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header() :352
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__ctor_1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header* __this)
+{
+    __this->ctor_1();
+}
+
+// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :358
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__GetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
+{
+    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header", "GetAsObject(Uno.UX.PropertyObject)");
+    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::ModalDialog*>(obj, ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/]))->Header(), void();
+}
+
+// public override sealed Uno.UX.Selector get_Name() :355
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__get_Name_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header* __this, ::g::Uno::UX::Selector* __retval)
+{
+    return *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header::_name(), void();
+}
+
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header New() :352
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__New1_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header** __retval)
+{
+    *__retval = OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header::New1();
+}
+
+// public override sealed Uno.Type get_PropertyType() :357
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__get_PropertyType_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header* __this, uType** __retval)
+{
+    return *__retval = ::TYPES[4/*string*/], void();
+}
+
+// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :359
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__SetAsObject_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header* __this, ::g::Uno::UX::PropertyObject* obj, uObject* v, uObject* origin)
+{
+    uStackFrame __("OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header", "SetAsObject(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
+    uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::ModalDialog*>(obj, ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/]))->SetHeader(uCast<uString*>(v, ::TYPES[4/*string*/]), origin);
+}
+
+// public override sealed bool get_SupportsOriginSetter() :360
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header* __this, bool* __retval)
+{
+    return *__retval = true, void();
+}
+
+::g::Uno::UX::Selector OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header::_name_;
+uSStrong< ::g::Uno::UX::PropertyAccessor*> OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header::Singleton_;
+
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header() [instance] :352
+void OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header::ctor_1()
+{
+    ctor_();
+}
+
+// public generated OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header New() [static] :352
+OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header* OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header::New1()
+{
+    OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header* obj1 = (OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header*)uNew(OutracksSimulatorClientUno_accessor_Outracks_Simulator_Client_Dialogs_ModalDialog_Header_typeof());
     obj1->ctor_1();
     return obj1;
 }
@@ -4987,13 +5387,13 @@ OutracksSimulatorClientUno_accessor_Outracks_Simulator_ErrorToast_StrokeColor* O
 // static OutracksSimulatorClientUno_bundle() :0
 static void OutracksSimulatorClientUno_bundle__cctor__fn(uType* __type)
 {
-    OutracksSimulatorClientUno_bundle::fight90e57290_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[172/*"Outracks.Si...*/]))->GetFile(::STRINGS[173/*"fight-15374...*/]);
+    OutracksSimulatorClientUno_bundle::fight90e57290_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[179/*"Outracks.Si...*/]))->GetFile(::STRINGS[180/*"fight-15374...*/]);
 }
 
 static void OutracksSimulatorClientUno_bundle_build(uType* type)
 {
-    ::STRINGS[172] = uString::Const("Outracks.Simulator.Client.Uno");
-    ::STRINGS[173] = uString::Const("fight-1537455b.png");
+    ::STRINGS[179] = uString::Const("Outracks.Simulator.Client.Uno");
+    ::STRINGS[180] = uString::Const("fight-1537455b.png");
     type->SetFields(0,
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::OutracksSimulatorClientUno_bundle::fight90e57290_, uFieldFlagsStatic);
     type->Reflection.SetFields(1,
@@ -5020,94 +5420,7 @@ uSStrong< ::g::Uno::IO::BundleFile*> OutracksSimulatorClientUno_bundle::fight90e
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
 // ---------------------------------------------------------------------------------
 
-// internal sealed class OutracksSimulatorClientUno_FuseControlsShape_Color_Property :331
-// {
-static void OutracksSimulatorClientUno_FuseControlsShape_Color_Property_build(uType* type)
-{
-    ::TYPES[2] = ::g::Fuse::Controls::Shape_typeof();
-    type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL));
-    type->SetFields(1,
-        ::TYPES[2/*Fuse.Controls.Shape*/], offsetof(::g::OutracksSimulatorClientUno_FuseControlsShape_Color_Property, _obj), uFieldFlagsWeak);
-}
-
-::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_FuseControlsShape_Color_Property_typeof()
-{
-    static uSStrong< ::g::Uno::UX::Property1_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::UX::Property1_typeof();
-    options.FieldCount = 2;
-    options.ObjectSize = sizeof(OutracksSimulatorClientUno_FuseControlsShape_Color_Property);
-    options.TypeSize = sizeof(::g::Uno::UX::Property1_type);
-    type = (::g::Uno::UX::Property1_type*)uClassType::New("OutracksSimulatorClientUno_FuseControlsShape_Color_Property", options);
-    type->fp_build_ = OutracksSimulatorClientUno_FuseControlsShape_Color_Property_build;
-    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))OutracksSimulatorClientUno_FuseControlsShape_Color_Property__Get1_fn;
-    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))OutracksSimulatorClientUno_FuseControlsShape_Color_Property__get_Object_fn;
-    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))OutracksSimulatorClientUno_FuseControlsShape_Color_Property__Set1_fn;
-    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_FuseControlsShape_Color_Property__get_SupportsOriginSetter_fn;
-    return type;
-}
-
-// public OutracksSimulatorClientUno_FuseControlsShape_Color_Property(Fuse.Controls.Shape obj, Uno.UX.Selector name) :334
-void OutracksSimulatorClientUno_FuseControlsShape_Color_Property__ctor_3_fn(OutracksSimulatorClientUno_FuseControlsShape_Color_Property* __this, ::g::Fuse::Controls::Shape* obj, ::g::Uno::UX::Selector* name)
-{
-    __this->ctor_3(obj, *name);
-}
-
-// public override sealed float4 Get(Uno.UX.PropertyObject obj) :336
-void OutracksSimulatorClientUno_FuseControlsShape_Color_Property__Get1_fn(OutracksSimulatorClientUno_FuseControlsShape_Color_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::Float4* __retval)
-{
-    uStackFrame __("OutracksSimulatorClientUno_FuseControlsShape_Color_Property", "Get(Uno.UX.PropertyObject)");
-    return *__retval = uPtr(uCast< ::g::Fuse::Controls::Shape*>(obj, ::TYPES[2/*Fuse.Controls.Shape*/]))->Color(), void();
-}
-
-// public OutracksSimulatorClientUno_FuseControlsShape_Color_Property New(Fuse.Controls.Shape obj, Uno.UX.Selector name) :334
-void OutracksSimulatorClientUno_FuseControlsShape_Color_Property__New1_fn(::g::Fuse::Controls::Shape* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_FuseControlsShape_Color_Property** __retval)
-{
-    *__retval = OutracksSimulatorClientUno_FuseControlsShape_Color_Property::New1(obj, *name);
-}
-
-// public override sealed Uno.UX.PropertyObject get_Object() :335
-void OutracksSimulatorClientUno_FuseControlsShape_Color_Property__get_Object_fn(OutracksSimulatorClientUno_FuseControlsShape_Color_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
-{
-    return *__retval = __this->_obj, void();
-}
-
-// public override sealed void Set(Uno.UX.PropertyObject obj, float4 v, Uno.UX.IPropertyListener origin) :337
-void OutracksSimulatorClientUno_FuseControlsShape_Color_Property__Set1_fn(OutracksSimulatorClientUno_FuseControlsShape_Color_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::Float4* v, uObject* origin)
-{
-    uStackFrame __("OutracksSimulatorClientUno_FuseControlsShape_Color_Property", "Set(Uno.UX.PropertyObject,float4,Uno.UX.IPropertyListener)");
-    ::g::Uno::Float4 v_ = *v;
-    uPtr(uCast< ::g::Fuse::Controls::Shape*>(obj, ::TYPES[2/*Fuse.Controls.Shape*/]))->SetColor(v_, origin);
-}
-
-// public override sealed bool get_SupportsOriginSetter() :338
-void OutracksSimulatorClientUno_FuseControlsShape_Color_Property__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_FuseControlsShape_Color_Property* __this, bool* __retval)
-{
-    return *__retval = true, void();
-}
-
-// public OutracksSimulatorClientUno_FuseControlsShape_Color_Property(Fuse.Controls.Shape obj, Uno.UX.Selector name) [instance] :334
-void OutracksSimulatorClientUno_FuseControlsShape_Color_Property::ctor_3(::g::Fuse::Controls::Shape* obj, ::g::Uno::UX::Selector name)
-{
-    ctor_2(name);
-    _obj = obj;
-}
-
-// public OutracksSimulatorClientUno_FuseControlsShape_Color_Property New(Fuse.Controls.Shape obj, Uno.UX.Selector name) [static] :334
-OutracksSimulatorClientUno_FuseControlsShape_Color_Property* OutracksSimulatorClientUno_FuseControlsShape_Color_Property::New1(::g::Fuse::Controls::Shape* obj, ::g::Uno::UX::Selector name)
-{
-    OutracksSimulatorClientUno_FuseControlsShape_Color_Property* obj1 = (OutracksSimulatorClientUno_FuseControlsShape_Color_Property*)uNew(OutracksSimulatorClientUno_FuseControlsShape_Color_Property_typeof());
-    obj1->ctor_3(obj, name);
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
-// ---------------------------------------------------------------------------------
-
-// internal sealed class OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property :305
+// internal sealed class OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property :391
 // {
 static void OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property_build(uType* type)
 {
@@ -5136,52 +5449,52 @@ static void OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property_bu
     return type;
 }
 
-// public OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property(Fuse.Controls.TextControl obj, Uno.UX.Selector name) :308
+// public OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property(Fuse.Controls.TextControl obj, Uno.UX.Selector name) :394
 void OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property__ctor_3_fn(OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property* __this, ::g::Fuse::Controls::TextControl* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed string Get(Uno.UX.PropertyObject obj) :310
+// public override sealed string Get(Uno.UX.PropertyObject obj) :396
 void OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property__Get1_fn(OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString** __retval)
 {
     uStackFrame __("OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Fuse::Controls::TextControl*>(obj, ::TYPES[7/*Fuse.Controls.TextControl*/]))->Value(), void();
 }
 
-// public OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property New(Fuse.Controls.TextControl obj, Uno.UX.Selector name) :308
+// public OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property New(Fuse.Controls.TextControl obj, Uno.UX.Selector name) :394
 void OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property__New1_fn(::g::Fuse::Controls::TextControl* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property** __retval)
 {
     *__retval = OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :309
+// public override sealed Uno.UX.PropertyObject get_Object() :395
 void OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property__get_Object_fn(OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :311
+// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :397
 void OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property__Set1_fn(OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString* v, uObject* origin)
 {
     uStackFrame __("OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property", "Set(Uno.UX.PropertyObject,string,Uno.UX.IPropertyListener)");
     uPtr(uCast< ::g::Fuse::Controls::TextControl*>(obj, ::TYPES[7/*Fuse.Controls.TextControl*/]))->SetValue(v, origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :312
+// public override sealed bool get_SupportsOriginSetter() :398
 void OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-// public OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property(Fuse.Controls.TextControl obj, Uno.UX.Selector name) [instance] :308
+// public OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property(Fuse.Controls.TextControl obj, Uno.UX.Selector name) [instance] :394
 void OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property::ctor_3(::g::Fuse::Controls::TextControl* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property New(Fuse.Controls.TextControl obj, Uno.UX.Selector name) [static] :308
+// public OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property New(Fuse.Controls.TextControl obj, Uno.UX.Selector name) [static] :394
 OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property* OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property::New1(::g::Fuse::Controls::TextControl* obj, ::g::Uno::UX::Selector name)
 {
     OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property* obj1 = (OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property*)uNew(OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property_typeof());
@@ -5193,94 +5506,7 @@ OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property* OutracksSimul
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
 // ---------------------------------------------------------------------------------
 
-// internal sealed class OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property :340
-// {
-static void OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property_build(uType* type)
-{
-    ::TYPES[9] = ::g::Fuse::Drawing::Stroke_typeof();
-    type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL));
-    type->SetFields(1,
-        ::TYPES[9/*Fuse.Drawing.Stroke*/], offsetof(::g::OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property, _obj), uFieldFlagsWeak);
-}
-
-::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property_typeof()
-{
-    static uSStrong< ::g::Uno::UX::Property1_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::UX::Property1_typeof();
-    options.FieldCount = 2;
-    options.ObjectSize = sizeof(OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property);
-    options.TypeSize = sizeof(::g::Uno::UX::Property1_type);
-    type = (::g::Uno::UX::Property1_type*)uClassType::New("OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property", options);
-    type->fp_build_ = OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property_build;
-    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property__Get1_fn;
-    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property__get_Object_fn;
-    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property__Set1_fn;
-    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property__get_SupportsOriginSetter_fn;
-    return type;
-}
-
-// public OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property(Fuse.Drawing.Stroke obj, Uno.UX.Selector name) :343
-void OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property__ctor_3_fn(OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property* __this, ::g::Fuse::Drawing::Stroke* obj, ::g::Uno::UX::Selector* name)
-{
-    __this->ctor_3(obj, *name);
-}
-
-// public override sealed float4 Get(Uno.UX.PropertyObject obj) :345
-void OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property__Get1_fn(OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::Float4* __retval)
-{
-    uStackFrame __("OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property", "Get(Uno.UX.PropertyObject)");
-    return *__retval = uPtr(uCast< ::g::Fuse::Drawing::Stroke*>(obj, ::TYPES[9/*Fuse.Drawing.Stroke*/]))->Color(), void();
-}
-
-// public OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property New(Fuse.Drawing.Stroke obj, Uno.UX.Selector name) :343
-void OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property__New1_fn(::g::Fuse::Drawing::Stroke* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property** __retval)
-{
-    *__retval = OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property::New1(obj, *name);
-}
-
-// public override sealed Uno.UX.PropertyObject get_Object() :344
-void OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property__get_Object_fn(OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
-{
-    return *__retval = __this->_obj, void();
-}
-
-// public override sealed void Set(Uno.UX.PropertyObject obj, float4 v, Uno.UX.IPropertyListener origin) :346
-void OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property__Set1_fn(OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::Float4* v, uObject* origin)
-{
-    uStackFrame __("OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property", "Set(Uno.UX.PropertyObject,float4,Uno.UX.IPropertyListener)");
-    ::g::Uno::Float4 v_ = *v;
-    uPtr(uCast< ::g::Fuse::Drawing::Stroke*>(obj, ::TYPES[9/*Fuse.Drawing.Stroke*/]))->SetColor(v_, origin);
-}
-
-// public override sealed bool get_SupportsOriginSetter() :347
-void OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property* __this, bool* __retval)
-{
-    return *__retval = true, void();
-}
-
-// public OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property(Fuse.Drawing.Stroke obj, Uno.UX.Selector name) [instance] :343
-void OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property::ctor_3(::g::Fuse::Drawing::Stroke* obj, ::g::Uno::UX::Selector name)
-{
-    ctor_2(name);
-    _obj = obj;
-}
-
-// public OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property New(Fuse.Drawing.Stroke obj, Uno.UX.Selector name) [static] :343
-OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property* OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property::New1(::g::Fuse::Drawing::Stroke* obj, ::g::Uno::UX::Selector name)
-{
-    OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property* obj1 = (OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property*)uNew(OutracksSimulatorClientUno_FuseDrawingStroke_Color_Property_typeof());
-    obj1->ctor_3(obj, name);
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
-// ---------------------------------------------------------------------------------
-
-// internal sealed class OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property :322
+// internal sealed class OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property :382
 // {
 static void OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property_build(uType* type)
 {
@@ -5309,32 +5535,32 @@ static void OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property_buil
     return type;
 }
 
-// public OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) :325
+// public OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) :385
 void OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property__ctor_3_fn(OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property* __this, ::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed float Get(Uno.UX.PropertyObject obj) :327
+// public override sealed float Get(Uno.UX.PropertyObject obj) :387
 void OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property__Get1_fn(OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property* __this, ::g::Uno::UX::PropertyObject* obj, float* __retval)
 {
     uStackFrame __("OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Fuse::Elements::Element*>(obj, ::TYPES[11/*Fuse.Elements.Element*/]))->Opacity(), void();
 }
 
-// public OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) :325
+// public OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) :385
 void OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property__New1_fn(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property** __retval)
 {
     *__retval = OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :326
+// public override sealed Uno.UX.PropertyObject get_Object() :386
 void OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property__get_Object_fn(OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, float v, Uno.UX.IPropertyListener origin) :328
+// public override sealed void Set(Uno.UX.PropertyObject obj, float v, Uno.UX.IPropertyListener origin) :388
 void OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property__Set1_fn(OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property* __this, ::g::Uno::UX::PropertyObject* obj, float* v, uObject* origin)
 {
     uStackFrame __("OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property", "Set(Uno.UX.PropertyObject,float,Uno.UX.IPropertyListener)");
@@ -5342,20 +5568,20 @@ void OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property__Set1_fn(Ou
     uPtr(uCast< ::g::Fuse::Elements::Element*>(obj, ::TYPES[11/*Fuse.Elements.Element*/]))->SetOpacity(v_, origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :329
+// public override sealed bool get_SupportsOriginSetter() :389
 void OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-// public OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) [instance] :325
+// public OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) [instance] :385
 void OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property::ctor_3(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) [static] :325
+// public OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) [static] :385
 OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property* OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property::New1(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector name)
 {
     OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property* obj1 = (OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property*)uNew(OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property_typeof());
@@ -5367,184 +5593,17 @@ OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property* OutracksSimulat
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
 // ---------------------------------------------------------------------------------
 
-// internal sealed class OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property :314
+// internal sealed class OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property :400
 // {
-static void OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property_build(uType* type)
+static void OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property_build(uType* type)
 {
-    ::TYPES[15] = ::g::Fuse::Triggers::WhileBool_typeof();
-    type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Bool_typeof(), NULL));
-    type->SetFields(1,
-        ::TYPES[15/*Fuse.Triggers.WhileBool*/], offsetof(::g::OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property, _obj), uFieldFlagsWeak);
-}
-
-::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property_typeof()
-{
-    static uSStrong< ::g::Uno::UX::Property1_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::UX::Property1_typeof();
-    options.FieldCount = 2;
-    options.ObjectSize = sizeof(OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property);
-    options.TypeSize = sizeof(::g::Uno::UX::Property1_type);
-    type = (::g::Uno::UX::Property1_type*)uClassType::New("OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property", options);
-    type->fp_build_ = OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property_build;
-    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property__Get1_fn;
-    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property__get_Object_fn;
-    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property__Set1_fn;
-    return type;
-}
-
-// public OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) :317
-void OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property__ctor_3_fn(OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property* __this, ::g::Fuse::Triggers::WhileBool* obj, ::g::Uno::UX::Selector* name)
-{
-    __this->ctor_3(obj, *name);
-}
-
-// public override sealed bool Get(Uno.UX.PropertyObject obj) :319
-void OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property__Get1_fn(OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, bool* __retval)
-{
-    uStackFrame __("OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property", "Get(Uno.UX.PropertyObject)");
-    return *__retval = uPtr(uCast< ::g::Fuse::Triggers::WhileBool*>(obj, ::TYPES[15/*Fuse.Triggers.WhileBool*/]))->Value1(), void();
-}
-
-// public OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property New(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) :317
-void OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property__New1_fn(::g::Fuse::Triggers::WhileBool* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property** __retval)
-{
-    *__retval = OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property::New1(obj, *name);
-}
-
-// public override sealed Uno.UX.PropertyObject get_Object() :318
-void OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property__get_Object_fn(OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
-{
-    return *__retval = __this->_obj, void();
-}
-
-// public override sealed void Set(Uno.UX.PropertyObject obj, bool v, Uno.UX.IPropertyListener origin) :320
-void OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property__Set1_fn(OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, bool* v, uObject* origin)
-{
-    uStackFrame __("OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property", "Set(Uno.UX.PropertyObject,bool,Uno.UX.IPropertyListener)");
-    bool v_ = *v;
-    uPtr(uCast< ::g::Fuse::Triggers::WhileBool*>(obj, ::TYPES[15/*Fuse.Triggers.WhileBool*/]))->Value1(v_);
-}
-
-// public OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) [instance] :317
-void OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property::ctor_3(::g::Fuse::Triggers::WhileBool* obj, ::g::Uno::UX::Selector name)
-{
-    ctor_2(name);
-    _obj = obj;
-}
-
-// public OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property New(Fuse.Triggers.WhileBool obj, Uno.UX.Selector name) [static] :317
-OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property* OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property::New1(::g::Fuse::Triggers::WhileBool* obj, ::g::Uno::UX::Selector name)
-{
-    OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property* obj1 = (OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property*)uNew(OutracksSimulatorClientUno_FuseTriggersWhileBool_Value_Property_typeof());
-    obj1->ctor_3(obj, name);
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
-// ---------------------------------------------------------------------------------
-
-// internal sealed class OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property :358
-// {
-static void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property_build(uType* type)
-{
-    ::TYPES[16] = ::g::Outracks::Simulator::ErrorToast_typeof();
-    type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL));
-    type->SetFields(1,
-        ::TYPES[16/*Outracks.Simulator.ErrorToast*/], offsetof(::g::OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property, _obj), uFieldFlagsWeak);
-}
-
-::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property_typeof()
-{
-    static uSStrong< ::g::Uno::UX::Property1_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::UX::Property1_typeof();
-    options.FieldCount = 2;
-    options.ObjectSize = sizeof(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property);
-    options.TypeSize = sizeof(::g::Uno::UX::Property1_type);
-    type = (::g::Uno::UX::Property1_type*)uClassType::New("OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property", options);
-    type->fp_build_ = OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property_build;
-    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property__Get1_fn;
-    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property__get_Object_fn;
-    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property__Set1_fn;
-    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property__get_SupportsOriginSetter_fn;
-    return type;
-}
-
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) :361
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property__ctor_3_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property* __this, ::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector* name)
-{
-    __this->ctor_3(obj, *name);
-}
-
-// public override sealed float4 Get(Uno.UX.PropertyObject obj) :363
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property__Get1_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::Float4* __retval)
-{
-    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property", "Get(Uno.UX.PropertyObject)");
-    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->FillColor(), void();
-}
-
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property New(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) :361
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property__New1_fn(::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property** __retval)
-{
-    *__retval = OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property::New1(obj, *name);
-}
-
-// public override sealed Uno.UX.PropertyObject get_Object() :362
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property__get_Object_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
-{
-    return *__retval = __this->_obj, void();
-}
-
-// public override sealed void Set(Uno.UX.PropertyObject obj, float4 v, Uno.UX.IPropertyListener origin) :364
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property__Set1_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::Float4* v, uObject* origin)
-{
-    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property", "Set(Uno.UX.PropertyObject,float4,Uno.UX.IPropertyListener)");
-    ::g::Uno::Float4 v_ = *v;
-    uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->SetFillColor(v_, origin);
-}
-
-// public override sealed bool get_SupportsOriginSetter() :365
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property* __this, bool* __retval)
-{
-    return *__retval = true, void();
-}
-
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) [instance] :361
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property::ctor_3(::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector name)
-{
-    ctor_2(name);
-    _obj = obj;
-}
-
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property New(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) [static] :361
-OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property* OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property::New1(::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector name)
-{
-    OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property* obj1 = (OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property*)uNew(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_FillColor_Property_typeof());
-    obj1->ctor_3(obj, name);
-    return obj1;
-}
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
-// ---------------------------------------------------------------------------------
-
-// internal sealed class OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property :349
-// {
-static void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property_build(uType* type)
-{
-    ::TYPES[16] = ::g::Outracks::Simulator::ErrorToast_typeof();
+    ::TYPES[17] = ::g::Fuse::Triggers::WhileString_typeof();
     type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL));
     type->SetFields(1,
-        ::TYPES[16/*Outracks.Simulator.ErrorToast*/], offsetof(::g::OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property, _obj), uFieldFlagsWeak);
+        ::TYPES[17/*Fuse.Triggers.WhileString*/], offsetof(::g::OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property, _obj), uFieldFlagsWeak);
 }
 
-::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property_typeof()
+::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property_typeof()
 {
     static uSStrong< ::g::Uno::UX::Property1_type*> type;
     if (type != NULL) return type;
@@ -5552,66 +5611,60 @@ static void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Prope
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::UX::Property1_typeof();
     options.FieldCount = 2;
-    options.ObjectSize = sizeof(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property);
+    options.ObjectSize = sizeof(OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property);
     options.TypeSize = sizeof(::g::Uno::UX::Property1_type);
-    type = (::g::Uno::UX::Property1_type*)uClassType::New("OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property", options);
-    type->fp_build_ = OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property_build;
-    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property__Get1_fn;
-    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property__get_Object_fn;
-    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property__Set1_fn;
-    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property__get_SupportsOriginSetter_fn;
+    type = (::g::Uno::UX::Property1_type*)uClassType::New("OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property", options);
+    type->fp_build_ = OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property_build;
+    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property__Get1_fn;
+    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property__get_Object_fn;
+    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property__Set1_fn;
     return type;
 }
 
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) :352
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property__ctor_3_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property* __this, ::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector* name)
+// public OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property(Fuse.Triggers.WhileString obj, Uno.UX.Selector name) :403
+void OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property__ctor_3_fn(OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property* __this, ::g::Fuse::Triggers::WhileString* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed string Get(Uno.UX.PropertyObject obj) :354
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property__Get1_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString** __retval)
+// public override sealed string Get(Uno.UX.PropertyObject obj) :405
+void OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property__Get1_fn(OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString** __retval)
 {
-    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property", "Get(Uno.UX.PropertyObject)");
-    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->Message(), void();
+    uStackFrame __("OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property", "Get(Uno.UX.PropertyObject)");
+    uString* ret2;
+    return *__retval = (::g::Fuse::Triggers::WhileValue__get_Value_fn(uPtr(uCast< ::g::Fuse::Triggers::WhileString*>(obj, ::TYPES[17/*Fuse.Triggers.WhileString*/])), &ret2), ret2), void();
 }
 
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property New(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) :352
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property__New1_fn(::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property** __retval)
+// public OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property New(Fuse.Triggers.WhileString obj, Uno.UX.Selector name) :403
+void OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property__New1_fn(::g::Fuse::Triggers::WhileString* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property** __retval)
 {
-    *__retval = OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property::New1(obj, *name);
+    *__retval = OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :353
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property__get_Object_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
+// public override sealed Uno.UX.PropertyObject get_Object() :404
+void OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property__get_Object_fn(OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :355
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property__Set1_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString* v, uObject* origin)
+// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :406
+void OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property__Set1_fn(OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString* v, uObject* origin)
 {
-    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property", "Set(Uno.UX.PropertyObject,string,Uno.UX.IPropertyListener)");
-    uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->SetMessage(v, origin);
+    uStackFrame __("OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property", "Set(Uno.UX.PropertyObject,string,Uno.UX.IPropertyListener)");
+    ::g::Fuse::Triggers::WhileValue__set_Value_fn(uPtr(uCast< ::g::Fuse::Triggers::WhileString*>(obj, ::TYPES[17/*Fuse.Triggers.WhileString*/])), v);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :356
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property* __this, bool* __retval)
-{
-    return *__retval = true, void();
-}
-
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) [instance] :352
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property::ctor_3(::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector name)
+// public OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property(Fuse.Triggers.WhileString obj, Uno.UX.Selector name) [instance] :403
+void OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property::ctor_3(::g::Fuse::Triggers::WhileString* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property New(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) [static] :352
-OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property* OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property::New1(::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector name)
+// public OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property New(Fuse.Triggers.WhileString obj, Uno.UX.Selector name) [static] :403
+OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property* OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property::New1(::g::Fuse::Triggers::WhileString* obj, ::g::Uno::UX::Selector name)
 {
-    OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property* obj1 = (OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property*)uNew(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property_typeof());
+    OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property* obj1 = (OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property*)uNew(OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property_typeof());
     obj1->ctor_3(obj, name);
     return obj1;
 }
@@ -5620,17 +5673,17 @@ OutracksSimulatorClientUno_OutracksSimulatorErrorToast_Message_Property* Outrack
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
 // ---------------------------------------------------------------------------------
 
-// internal sealed class OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property :376
+// internal sealed class OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property :408
 // {
-static void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property_build(uType* type)
+static void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property_build(uType* type)
 {
-    ::TYPES[16] = ::g::Outracks::Simulator::ErrorToast_typeof();
-    type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Bool_typeof(), NULL));
+    ::TYPES[15] = ::g::Outracks::Simulator::Client::Dialogs::LoadingScreen_typeof();
+    type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL));
     type->SetFields(1,
-        ::TYPES[16/*Outracks.Simulator.ErrorToast*/], offsetof(::g::OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property, _obj), uFieldFlagsWeak);
+        ::TYPES[15/*Outracks.Simulator.Client.Dialogs.LoadingScreen*/], offsetof(::g::OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property, _obj), uFieldFlagsWeak);
 }
 
-::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property_typeof()
+::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property_typeof()
 {
     static uSStrong< ::g::Uno::UX::Property1_type*> type;
     if (type != NULL) return type;
@@ -5638,67 +5691,66 @@ static void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorIn
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::UX::Property1_typeof();
     options.FieldCount = 2;
-    options.ObjectSize = sizeof(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property);
+    options.ObjectSize = sizeof(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property);
     options.TypeSize = sizeof(::g::Uno::UX::Property1_type);
-    type = (::g::Uno::UX::Property1_type*)uClassType::New("OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property", options);
-    type->fp_build_ = OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property_build;
-    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property__Get1_fn;
-    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property__get_Object_fn;
-    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property__Set1_fn;
-    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property__get_SupportsOriginSetter_fn;
+    type = (::g::Uno::UX::Property1_type*)uClassType::New("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property", options);
+    type->fp_build_ = OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property_build;
+    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property__Get1_fn;
+    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property__get_Object_fn;
+    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property__Set1_fn;
+    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property__get_SupportsOriginSetter_fn;
     return type;
 }
 
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) :379
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property__ctor_3_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property* __this, ::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector* name)
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property(Outracks.Simulator.Client.Dialogs.LoadingScreen obj, Uno.UX.Selector name) :411
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property__ctor_3_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property* __this, ::g::Outracks::Simulator::Client::Dialogs::LoadingScreen* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed bool Get(Uno.UX.PropertyObject obj) :381
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property__Get1_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property* __this, ::g::Uno::UX::PropertyObject* obj, bool* __retval)
+// public override sealed string Get(Uno.UX.PropertyObject obj) :413
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property__Get1_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString** __retval)
 {
-    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property", "Get(Uno.UX.PropertyObject)");
-    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->ShowMonitorInfo(), void();
+    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property", "Get(Uno.UX.PropertyObject)");
+    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::LoadingScreen*>(obj, ::TYPES[15/*Outracks.Simulator.Client.Dialogs.LoadingScreen*/]))->Header(), void();
 }
 
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property New(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) :379
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property__New1_fn(::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property** __retval)
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property New(Outracks.Simulator.Client.Dialogs.LoadingScreen obj, Uno.UX.Selector name) :411
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property__New1_fn(::g::Outracks::Simulator::Client::Dialogs::LoadingScreen* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property** __retval)
 {
-    *__retval = OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property::New1(obj, *name);
+    *__retval = OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :380
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property__get_Object_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
+// public override sealed Uno.UX.PropertyObject get_Object() :412
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property__get_Object_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, bool v, Uno.UX.IPropertyListener origin) :382
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property__Set1_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property* __this, ::g::Uno::UX::PropertyObject* obj, bool* v, uObject* origin)
+// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :414
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property__Set1_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString* v, uObject* origin)
 {
-    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property", "Set(Uno.UX.PropertyObject,bool,Uno.UX.IPropertyListener)");
-    bool v_ = *v;
-    uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->SetShowMonitorInfo(v_, origin);
+    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property", "Set(Uno.UX.PropertyObject,string,Uno.UX.IPropertyListener)");
+    uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::LoadingScreen*>(obj, ::TYPES[15/*Outracks.Simulator.Client.Dialogs.LoadingScreen*/]))->SetHeader(v, origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :383
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property* __this, bool* __retval)
+// public override sealed bool get_SupportsOriginSetter() :415
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) [instance] :379
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property::ctor_3(::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector name)
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property(Outracks.Simulator.Client.Dialogs.LoadingScreen obj, Uno.UX.Selector name) [instance] :411
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property::ctor_3(::g::Outracks::Simulator::Client::Dialogs::LoadingScreen* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property New(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) [static] :379
-OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property* OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property::New1(::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector name)
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property New(Outracks.Simulator.Client.Dialogs.LoadingScreen obj, Uno.UX.Selector name) [static] :411
+OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property* OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property::New1(::g::Outracks::Simulator::Client::Dialogs::LoadingScreen* obj, ::g::Uno::UX::Selector name)
 {
-    OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property* obj1 = (OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property*)uNew(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property_typeof());
+    OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property* obj1 = (OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property*)uNew(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Header_Property_typeof());
     obj1->ctor_3(obj, name);
     return obj1;
 }
@@ -5707,17 +5759,17 @@ OutracksSimulatorClientUno_OutracksSimulatorErrorToast_ShowMonitorInfo_Property*
 // /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
 // ---------------------------------------------------------------------------------
 
-// internal sealed class OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property :367
+// internal sealed class OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property :417
 // {
-static void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property_build(uType* type)
+static void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property_build(uType* type)
 {
-    ::TYPES[16] = ::g::Outracks::Simulator::ErrorToast_typeof();
-    type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL));
+    ::TYPES[15] = ::g::Outracks::Simulator::Client::Dialogs::LoadingScreen_typeof();
+    type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL));
     type->SetFields(1,
-        ::TYPES[16/*Outracks.Simulator.ErrorToast*/], offsetof(::g::OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property, _obj), uFieldFlagsWeak);
+        ::TYPES[15/*Outracks.Simulator.Client.Dialogs.LoadingScreen*/], offsetof(::g::OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property, _obj), uFieldFlagsWeak);
 }
 
-::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property_typeof()
+::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property_typeof()
 {
     static uSStrong< ::g::Uno::UX::Property1_type*> type;
     if (type != NULL) return type;
@@ -5725,87 +5777,344 @@ static void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_P
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::UX::Property1_typeof();
     options.FieldCount = 2;
-    options.ObjectSize = sizeof(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property);
+    options.ObjectSize = sizeof(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property);
     options.TypeSize = sizeof(::g::Uno::UX::Property1_type);
-    type = (::g::Uno::UX::Property1_type*)uClassType::New("OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property", options);
-    type->fp_build_ = OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property_build;
-    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property__Get1_fn;
-    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property__get_Object_fn;
-    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property__Set1_fn;
-    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property__get_SupportsOriginSetter_fn;
+    type = (::g::Uno::UX::Property1_type*)uClassType::New("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property", options);
+    type->fp_build_ = OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property_build;
+    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property__Get1_fn;
+    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property__get_Object_fn;
+    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property__Set1_fn;
+    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property__get_SupportsOriginSetter_fn;
     return type;
 }
 
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) :370
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property__ctor_3_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property* __this, ::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector* name)
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property(Outracks.Simulator.Client.Dialogs.LoadingScreen obj, Uno.UX.Selector name) :420
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property__ctor_3_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property* __this, ::g::Outracks::Simulator::Client::Dialogs::LoadingScreen* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed float4 Get(Uno.UX.PropertyObject obj) :372
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property__Get1_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::Float4* __retval)
+// public override sealed string Get(Uno.UX.PropertyObject obj) :422
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property__Get1_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString** __retval)
 {
-    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property", "Get(Uno.UX.PropertyObject)");
-    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->StrokeColor(), void();
+    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property", "Get(Uno.UX.PropertyObject)");
+    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::LoadingScreen*>(obj, ::TYPES[15/*Outracks.Simulator.Client.Dialogs.LoadingScreen*/]))->Message(), void();
 }
 
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property New(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) :370
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property__New1_fn(::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property** __retval)
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property New(Outracks.Simulator.Client.Dialogs.LoadingScreen obj, Uno.UX.Selector name) :420
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property__New1_fn(::g::Outracks::Simulator::Client::Dialogs::LoadingScreen* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property** __retval)
 {
-    *__retval = OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property::New1(obj, *name);
+    *__retval = OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :371
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property__get_Object_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
+// public override sealed Uno.UX.PropertyObject get_Object() :421
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property__get_Object_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, float4 v, Uno.UX.IPropertyListener origin) :373
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property__Set1_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::Float4* v, uObject* origin)
+// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :423
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property__Set1_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString* v, uObject* origin)
 {
-    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property", "Set(Uno.UX.PropertyObject,float4,Uno.UX.IPropertyListener)");
-    ::g::Uno::Float4 v_ = *v;
-    uPtr(uCast< ::g::Outracks::Simulator::ErrorToast*>(obj, ::TYPES[16/*Outracks.Simulator.ErrorToast*/]))->SetStrokeColor(v_, origin);
+    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property", "Set(Uno.UX.PropertyObject,string,Uno.UX.IPropertyListener)");
+    uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::LoadingScreen*>(obj, ::TYPES[15/*Outracks.Simulator.Client.Dialogs.LoadingScreen*/]))->SetMessage(v, origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :374
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property* __this, bool* __retval)
+// public override sealed bool get_SupportsOriginSetter() :424
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) [instance] :370
-void OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property::ctor_3(::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector name)
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property(Outracks.Simulator.Client.Dialogs.LoadingScreen obj, Uno.UX.Selector name) [instance] :420
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property::ctor_3(::g::Outracks::Simulator::Client::Dialogs::LoadingScreen* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property New(Outracks.Simulator.ErrorToast obj, Uno.UX.Selector name) [static] :370
-OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property* OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property::New1(::g::Outracks::Simulator::ErrorToast* obj, ::g::Uno::UX::Selector name)
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property New(Outracks.Simulator.Client.Dialogs.LoadingScreen obj, Uno.UX.Selector name) [static] :420
+OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property* OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property::New1(::g::Outracks::Simulator::Client::Dialogs::LoadingScreen* obj, ::g::Uno::UX::Selector name)
 {
-    OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property* obj1 = (OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property*)uNew(OutracksSimulatorClientUno_OutracksSimulatorErrorToast_StrokeColor_Property_typeof());
+    OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property* obj1 = (OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property*)uNew(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsLoadingScreen_Message_Property_typeof());
     obj1->ctor_3(obj, name);
     return obj1;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/.uno/package
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
+// ---------------------------------------------------------------------------------
+
+// internal sealed class OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property :435
+// {
+static void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property_build(uType* type)
+{
+    ::TYPES[16] = ::g::Outracks::Simulator::Client::Dialogs::ModalDialog_typeof();
+    type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL));
+    type->SetFields(1,
+        ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/], offsetof(::g::OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property, _obj), uFieldFlagsWeak);
+}
+
+::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property_typeof()
+{
+    static uSStrong< ::g::Uno::UX::Property1_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::UX::Property1_typeof();
+    options.FieldCount = 2;
+    options.ObjectSize = sizeof(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property);
+    options.TypeSize = sizeof(::g::Uno::UX::Property1_type);
+    type = (::g::Uno::UX::Property1_type*)uClassType::New("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property", options);
+    type->fp_build_ = OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property_build;
+    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property__Get1_fn;
+    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property__get_Object_fn;
+    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property__Set1_fn;
+    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property__get_SupportsOriginSetter_fn;
+    return type;
+}
+
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property(Outracks.Simulator.Client.Dialogs.ModalDialog obj, Uno.UX.Selector name) :438
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property__ctor_3_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property* __this, ::g::Outracks::Simulator::Client::Dialogs::ModalDialog* obj, ::g::Uno::UX::Selector* name)
+{
+    __this->ctor_3(obj, *name);
+}
+
+// public override sealed string Get(Uno.UX.PropertyObject obj) :440
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property__Get1_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString** __retval)
+{
+    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property", "Get(Uno.UX.PropertyObject)");
+    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::ModalDialog*>(obj, ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/]))->Body(), void();
+}
+
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property New(Outracks.Simulator.Client.Dialogs.ModalDialog obj, Uno.UX.Selector name) :438
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property__New1_fn(::g::Outracks::Simulator::Client::Dialogs::ModalDialog* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property** __retval)
+{
+    *__retval = OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property::New1(obj, *name);
+}
+
+// public override sealed Uno.UX.PropertyObject get_Object() :439
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property__get_Object_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
+{
+    return *__retval = __this->_obj, void();
+}
+
+// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :441
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property__Set1_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString* v, uObject* origin)
+{
+    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property", "Set(Uno.UX.PropertyObject,string,Uno.UX.IPropertyListener)");
+    uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::ModalDialog*>(obj, ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/]))->SetBody(v, origin);
+}
+
+// public override sealed bool get_SupportsOriginSetter() :442
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property* __this, bool* __retval)
+{
+    return *__retval = true, void();
+}
+
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property(Outracks.Simulator.Client.Dialogs.ModalDialog obj, Uno.UX.Selector name) [instance] :438
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property::ctor_3(::g::Outracks::Simulator::Client::Dialogs::ModalDialog* obj, ::g::Uno::UX::Selector name)
+{
+    ctor_2(name);
+    _obj = obj;
+}
+
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property New(Outracks.Simulator.Client.Dialogs.ModalDialog obj, Uno.UX.Selector name) [static] :438
+OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property* OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property::New1(::g::Outracks::Simulator::Client::Dialogs::ModalDialog* obj, ::g::Uno::UX::Selector name)
+{
+    OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property* obj1 = (OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property*)uNew(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Body_Property_typeof());
+    obj1->ctor_3(obj, name);
+    return obj1;
+}
+// }
+
+// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
+// ---------------------------------------------------------------------------------
+
+// internal sealed class OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property :444
+// {
+static void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property_build(uType* type)
+{
+    ::TYPES[16] = ::g::Outracks::Simulator::Client::Dialogs::ModalDialog_typeof();
+    type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL));
+    type->SetFields(1,
+        ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/], offsetof(::g::OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property, _obj), uFieldFlagsWeak);
+}
+
+::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property_typeof()
+{
+    static uSStrong< ::g::Uno::UX::Property1_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::UX::Property1_typeof();
+    options.FieldCount = 2;
+    options.ObjectSize = sizeof(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property);
+    options.TypeSize = sizeof(::g::Uno::UX::Property1_type);
+    type = (::g::Uno::UX::Property1_type*)uClassType::New("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property", options);
+    type->fp_build_ = OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property_build;
+    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property__Get1_fn;
+    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property__get_Object_fn;
+    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property__Set1_fn;
+    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property__get_SupportsOriginSetter_fn;
+    return type;
+}
+
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property(Outracks.Simulator.Client.Dialogs.ModalDialog obj, Uno.UX.Selector name) :447
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property__ctor_3_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property* __this, ::g::Outracks::Simulator::Client::Dialogs::ModalDialog* obj, ::g::Uno::UX::Selector* name)
+{
+    __this->ctor_3(obj, *name);
+}
+
+// public override sealed string Get(Uno.UX.PropertyObject obj) :449
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property__Get1_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString** __retval)
+{
+    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property", "Get(Uno.UX.PropertyObject)");
+    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::ModalDialog*>(obj, ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/]))->Details(), void();
+}
+
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property New(Outracks.Simulator.Client.Dialogs.ModalDialog obj, Uno.UX.Selector name) :447
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property__New1_fn(::g::Outracks::Simulator::Client::Dialogs::ModalDialog* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property** __retval)
+{
+    *__retval = OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property::New1(obj, *name);
+}
+
+// public override sealed Uno.UX.PropertyObject get_Object() :448
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property__get_Object_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
+{
+    return *__retval = __this->_obj, void();
+}
+
+// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :450
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property__Set1_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString* v, uObject* origin)
+{
+    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property", "Set(Uno.UX.PropertyObject,string,Uno.UX.IPropertyListener)");
+    uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::ModalDialog*>(obj, ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/]))->SetDetails(v, origin);
+}
+
+// public override sealed bool get_SupportsOriginSetter() :451
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property* __this, bool* __retval)
+{
+    return *__retval = true, void();
+}
+
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property(Outracks.Simulator.Client.Dialogs.ModalDialog obj, Uno.UX.Selector name) [instance] :447
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property::ctor_3(::g::Outracks::Simulator::Client::Dialogs::ModalDialog* obj, ::g::Uno::UX::Selector name)
+{
+    ctor_2(name);
+    _obj = obj;
+}
+
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property New(Outracks.Simulator.Client.Dialogs.ModalDialog obj, Uno.UX.Selector name) [static] :447
+OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property* OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property::New1(::g::Outracks::Simulator::Client::Dialogs::ModalDialog* obj, ::g::Uno::UX::Selector name)
+{
+    OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property* obj1 = (OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property*)uNew(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property_typeof());
+    obj1->ctor_3(obj, name);
+    return obj1;
+}
+// }
+
+// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/.uno/ux11/$.uno
+// ---------------------------------------------------------------------------------
+
+// internal sealed class OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property :426
+// {
+static void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property_build(uType* type)
+{
+    ::TYPES[16] = ::g::Outracks::Simulator::Client::Dialogs::ModalDialog_typeof();
+    type->SetBase(::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL));
+    type->SetFields(1,
+        ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/], offsetof(::g::OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property, _obj), uFieldFlagsWeak);
+}
+
+::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property_typeof()
+{
+    static uSStrong< ::g::Uno::UX::Property1_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::UX::Property1_typeof();
+    options.FieldCount = 2;
+    options.ObjectSize = sizeof(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property);
+    options.TypeSize = sizeof(::g::Uno::UX::Property1_type);
+    type = (::g::Uno::UX::Property1_type*)uClassType::New("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property", options);
+    type->fp_build_ = OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property_build;
+    type->fp_Get1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, uTRef))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property__Get1_fn;
+    type->fp_get_Object = (void(*)(::g::Uno::UX::Property*, ::g::Uno::UX::PropertyObject**))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property__get_Object_fn;
+    type->fp_Set1 = (void(*)(::g::Uno::UX::Property1*, ::g::Uno::UX::PropertyObject*, void*, uObject*))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property__Set1_fn;
+    type->fp_get_SupportsOriginSetter = (void(*)(::g::Uno::UX::PropertyAccessor*, bool*))OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property__get_SupportsOriginSetter_fn;
+    return type;
+}
+
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property(Outracks.Simulator.Client.Dialogs.ModalDialog obj, Uno.UX.Selector name) :429
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property__ctor_3_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property* __this, ::g::Outracks::Simulator::Client::Dialogs::ModalDialog* obj, ::g::Uno::UX::Selector* name)
+{
+    __this->ctor_3(obj, *name);
+}
+
+// public override sealed string Get(Uno.UX.PropertyObject obj) :431
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property__Get1_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString** __retval)
+{
+    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property", "Get(Uno.UX.PropertyObject)");
+    return *__retval = uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::ModalDialog*>(obj, ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/]))->Header(), void();
+}
+
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property New(Outracks.Simulator.Client.Dialogs.ModalDialog obj, Uno.UX.Selector name) :429
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property__New1_fn(::g::Outracks::Simulator::Client::Dialogs::ModalDialog* obj, ::g::Uno::UX::Selector* name, OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property** __retval)
+{
+    *__retval = OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property::New1(obj, *name);
+}
+
+// public override sealed Uno.UX.PropertyObject get_Object() :430
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property__get_Object_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
+{
+    return *__retval = __this->_obj, void();
+}
+
+// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :432
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property__Set1_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString* v, uObject* origin)
+{
+    uStackFrame __("OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property", "Set(Uno.UX.PropertyObject,string,Uno.UX.IPropertyListener)");
+    uPtr(uCast< ::g::Outracks::Simulator::Client::Dialogs::ModalDialog*>(obj, ::TYPES[16/*Outracks.Simulator.Client.Dialogs.ModalDialog*/]))->SetHeader(v, origin);
+}
+
+// public override sealed bool get_SupportsOriginSetter() :433
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property__get_SupportsOriginSetter_fn(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property* __this, bool* __retval)
+{
+    return *__retval = true, void();
+}
+
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property(Outracks.Simulator.Client.Dialogs.ModalDialog obj, Uno.UX.Selector name) [instance] :429
+void OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property::ctor_3(::g::Outracks::Simulator::Client::Dialogs::ModalDialog* obj, ::g::Uno::UX::Selector name)
+{
+    ctor_2(name);
+    _obj = obj;
+}
+
+// public OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property New(Outracks.Simulator.Client.Dialogs.ModalDialog obj, Uno.UX.Selector name) [static] :429
+OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property* OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property::New1(::g::Outracks::Simulator::Client::Dialogs::ModalDialog* obj, ::g::Uno::UX::Selector name)
+{
+    OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property* obj1 = (OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property*)uNew(OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property_typeof());
+    obj1->ctor_3(obj, name);
+    return obj1;
+}
+// }
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/.uno/package
+// ------------------------------------------------------------------------------------------------
 
 // public static generated class UnoCore_bundle :0
 // {
 // static UnoCore_bundle() :0
 static void UnoCore_bundle__cctor__fn(uType* __type)
 {
-    UnoCore_bundle::SdfFontShaderc4d110ba_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[174/*"uniform mat...*/], ::STRINGS[175/*"uniform flo...*/], 0, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[9/*"e"*/], ::STRINGS[6/*"f"*/], ::STRINGS[12/*"i"*/]));
-    UnoCore_bundle::SpriteFontShader901b6a86_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[176/*"uniform mat...*/], ::STRINGS[177/*"uniform sam...*/], 0, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 5, ::STRINGS[2/*"a"*/], ::STRINGS[3/*"b"*/], ::STRINGS[4/*"c"*/], ::STRINGS[5/*"d"*/], ::STRINGS[10/*"g"*/]));
+    UnoCore_bundle::SdfFontShaderc4d110ba_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[181/*"uniform mat...*/], ::STRINGS[182/*"uniform flo...*/], 0, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 7, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[11/*"e"*/], ::STRINGS[8/*"f"*/], ::STRINGS[14/*"i"*/]));
+    UnoCore_bundle::SpriteFontShader901b6a86_ = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram::Create(::STRINGS[183/*"uniform mat...*/], ::STRINGS[184/*"uniform sam...*/], 0, 3, uArray::Init<uString*>(::TYPES[0/*string[]*/], 5, ::STRINGS[4/*"a"*/], ::STRINGS[5/*"b"*/], ::STRINGS[6/*"c"*/], ::STRINGS[7/*"d"*/], ::STRINGS[12/*"g"*/]));
 }
 
 static void UnoCore_bundle_build(uType* type)
 {
-    ::STRINGS[174] = uString::Const("uniform mat4 d;\n"
+    ::STRINGS[181] = uString::Const("uniform mat4 d;\n"
         "\n"
         "attribute vec2 a, b;\n"
         "attribute vec4 c;\n"
@@ -5820,7 +6129,7 @@ static void UnoCore_bundle_build(uType* type)
         "    gl_Position = d * vec4(a, float(0), float(1));\n"
         "}\n"
         "");
-    ::STRINGS[175] = uString::Const("uniform float e, f;\n"
+    ::STRINGS[182] = uString::Const("uniform float e, f;\n"
         "\n"
         "uniform sampler2D i;\n"
         "\n"
@@ -5834,14 +6143,14 @@ static void UnoCore_bundle_build(uType* type)
         "    gl_FragColor = h * vec4(float(1), float(1), float(1), j);\n"
         "}\n"
         "");
-    ::STRINGS[2] = uString::Const("a");
-    ::STRINGS[3] = uString::Const("b");
-    ::STRINGS[4] = uString::Const("c");
-    ::STRINGS[5] = uString::Const("d");
-    ::STRINGS[9] = uString::Const("e");
-    ::STRINGS[6] = uString::Const("f");
-    ::STRINGS[12] = uString::Const("i");
-    ::STRINGS[176] = uString::Const("uniform mat4 d;\n"
+    ::STRINGS[4] = uString::Const("a");
+    ::STRINGS[5] = uString::Const("b");
+    ::STRINGS[6] = uString::Const("c");
+    ::STRINGS[7] = uString::Const("d");
+    ::STRINGS[11] = uString::Const("e");
+    ::STRINGS[8] = uString::Const("f");
+    ::STRINGS[14] = uString::Const("i");
+    ::STRINGS[183] = uString::Const("uniform mat4 d;\n"
         "\n"
         "attribute vec2 a, c;\n"
         "attribute vec4 b;\n"
@@ -5856,7 +6165,7 @@ static void UnoCore_bundle_build(uType* type)
         "    gl_Position = d * vec4(a, float(0), float(1));\n"
         "}\n"
         "");
-    ::STRINGS[177] = uString::Const("uniform sampler2D g;\n"
+    ::STRINGS[184] = uString::Const("uniform sampler2D g;\n"
         "\n"
         "varying vec2 e;\n"
         "varying vec4 f;\n"
@@ -5866,7 +6175,7 @@ static void UnoCore_bundle_build(uType* type)
         "    gl_FragColor = f * vec4(float(1), float(1), float(1), texture2D(g, e).x);\n"
         "}\n"
         "");
-    ::STRINGS[10] = uString::Const("g");
+    ::STRINGS[12] = uString::Const("g");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
     type->SetFields(0,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram_typeof(), (uintptr_t)&::g::UnoCore_bundle::SdfFontShaderc4d110ba_, uFieldFlagsStatic,
@@ -5892,152 +6201,6 @@ uClassType* UnoCore_bundle_typeof()
 
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> UnoCore_bundle::SdfFontShaderc4d110ba_;
 uSStrong< ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram*> UnoCore_bundle::SpriteFontShader901b6a86_;
-// }
-
-// /usr/local/share/uno/Packages/Outracks.Simulator.Client.Uno/0.1.0/$.uno
-// -----------------------------------------------------------------------
-
-// public sealed class WeakDictionary<TKey, TValue> :2129
-// {
-static void WeakDictionary_build(uType* type)
-{
-    ::TYPES[17] = ::g::Uno::Collections::Dictionary_typeof();
-    ::TYPES[18] = ::g::Uno::WeakReference_typeof()->MakeType(uObject_typeof(), NULL);
-    type->SetPrecalc(
-        ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::HashableWeakReference_typeof(), type->T(1), NULL),
-        type->T(1));
-    type->SetFields(0,
-        ::TYPES[17/*Uno.Collections.Dictionary`2*/]->MakeType(::g::HashableWeakReference_typeof(), type->T(1), NULL), offsetof(::g::WeakDictionary, _dictionary), 0);
-    type->Reflection.SetFunctions(7,
-        new uFunction("AsEnumerable", NULL, (void*)WeakDictionary__AsEnumerable_fn, 0, false, ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Collections::KeyValuePair_typeof()->MakeType(::g::HashableWeakReference_typeof(), type->T(1), NULL), NULL), 0),
-        new uFunction("Clear", NULL, (void*)WeakDictionary__Clear_fn, 0, false, uVoid_typeof(), 0),
-        new uFunction("get_Item", NULL, (void*)WeakDictionary__get_Item_fn, 0, false, type->T(1), 1, type->T(0)),
-        new uFunction("set_Item", NULL, (void*)WeakDictionary__set_Item_fn, 0, false, uVoid_typeof(), 2, type->T(0), type->T(1)),
-        new uFunction(".ctor", type, (void*)WeakDictionary__New1_fn, 0, true, type, 0),
-        new uFunction("Remove", NULL, (void*)WeakDictionary__Remove_fn, 0, false, ::g::Uno::Bool_typeof(), 1, ::g::HashableWeakReference_typeof()),
-        new uFunction("TryGetValue", NULL, (void*)WeakDictionary__TryGetValue_fn, 0, false, ::g::Uno::Bool_typeof(), 2, type->T(0), type->T(1)->ByRef()));
-}
-
-uType* WeakDictionary_typeof()
-{
-    static uSStrong<uType*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.FieldCount = 1;
-    options.GenericCount = 2;
-    options.PrecalcCount = 2;
-    options.ObjectSize = sizeof(WeakDictionary);
-    options.TypeSize = sizeof(uType);
-    type = uClassType::New("WeakDictionary`2", options);
-    type->fp_build_ = WeakDictionary_build;
-    type->fp_ctor_ = (void*)WeakDictionary__New1_fn;
-    return type;
-}
-
-// public generated WeakDictionary() :2129
-void WeakDictionary__ctor__fn(WeakDictionary* __this)
-{
-    __this->ctor_();
-}
-
-// public Uno.Collections.IEnumerable<Uno.Collections.KeyValuePair<HashableWeakReference, TValue>> AsEnumerable() :2133
-void WeakDictionary__AsEnumerable_fn(WeakDictionary* __this, uObject** __retval)
-{
-    *__retval = __this->AsEnumerable();
-}
-
-// public void Clear() :2138
-void WeakDictionary__Clear_fn(WeakDictionary* __this)
-{
-    __this->Clear();
-}
-
-// private static HashableWeakReference GetKey(TKey obj) :2159
-void WeakDictionary__GetKey_fn(uType* __type, void* obj, ::g::HashableWeakReference** __retval)
-{
-    return *__retval = ::g::HashableWeakReference::New1((::g::Uno::WeakReference*)::g::Uno::WeakReference::New1(::TYPES[18/*Uno.WeakReference<object>*/], uBoxPtr(__type->T(0), obj))), void();
-}
-
-// public TValue get_Item(TKey key) :2155
-void WeakDictionary__get_Item_fn(WeakDictionary* __this, void* key, uTRef __retval)
-{
-    uType* __types[] = {
-        __this->__type->Precalced(1/*TValue*/),
-    };
-    uStackFrame __("WeakDictionary`2", "get_Item(TKey)");
-    uT ret5(__types[0], U_ALLOCA(__types[0]->ValueSize));
-    ::g::HashableWeakReference* ret6;
-    return __retval.Store((::g::Uno::Collections::Dictionary__get_Item_fn(uPtr(__this->_dictionary), (WeakDictionary__GetKey_fn(__this->__type, key, &ret6), ret6), &ret5), ret5)), void();
-}
-
-// public void set_Item(TKey key, TValue value) :2156
-void WeakDictionary__set_Item_fn(WeakDictionary* __this, void* key, void* value)
-{
-    uStackFrame __("WeakDictionary`2", "set_Item(TKey,TValue)");
-    ::g::HashableWeakReference* ret7;
-    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(__this->_dictionary), (WeakDictionary__GetKey_fn(__this->__type, key, &ret7), ret7), value);
-}
-
-// public generated WeakDictionary New() :2129
-void WeakDictionary__New1_fn(uType* __type, WeakDictionary** __retval)
-{
-    *__retval = WeakDictionary::New1(__type);
-}
-
-// public bool Remove(HashableWeakReference key) :2148
-void WeakDictionary__Remove_fn(WeakDictionary* __this, ::g::HashableWeakReference* key, bool* __retval)
-{
-    *__retval = __this->Remove(key);
-}
-
-// public bool TryGetValue(TKey key, TValue& value) :2143
-void WeakDictionary__TryGetValue_fn(WeakDictionary* __this, void* key, uTRef value, bool* __retval)
-{
-    uStackFrame __("WeakDictionary`2", "TryGetValue(TKey,TValue&)");
-    bool ret3;
-    ::g::HashableWeakReference* ret4;
-    return *__retval = (::g::Uno::Collections::Dictionary__TryGetValue_fn(uPtr(__this->_dictionary), (WeakDictionary__GetKey_fn(__this->__type, key, &ret4), ret4), value, &ret3), ret3), void();
-}
-
-// public generated WeakDictionary() [instance] :2129
-void WeakDictionary::ctor_()
-{
-    uType* __types[] = {
-        __type->Precalced(0/*Uno.Collections.Dictionary<HashableWeakReference, TValue>*/),
-    };
-    _dictionary = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(__types[0]));
-}
-
-// public Uno.Collections.IEnumerable<Uno.Collections.KeyValuePair<HashableWeakReference, TValue>> AsEnumerable() [instance] :2133
-uObject* WeakDictionary::AsEnumerable()
-{
-    uStackFrame __("WeakDictionary`2", "AsEnumerable()");
-    return (uObject*)_dictionary;
-}
-
-// public void Clear() [instance] :2138
-void WeakDictionary::Clear()
-{
-    uStackFrame __("WeakDictionary`2", "Clear()");
-    uPtr(_dictionary)->Clear();
-}
-
-// public bool Remove(HashableWeakReference key) [instance] :2148
-bool WeakDictionary::Remove(::g::HashableWeakReference* key)
-{
-    uStackFrame __("WeakDictionary`2", "Remove(HashableWeakReference)");
-    bool ret2;
-    return (::g::Uno::Collections::Dictionary__Remove_fn(uPtr(_dictionary), key, &ret2), ret2);
-}
-
-// public generated WeakDictionary New() [static] :2129
-WeakDictionary* WeakDictionary::New1(uType* __type)
-{
-    WeakDictionary* obj1 = (WeakDictionary*)uNew(__type);
-    obj1->ctor_();
-    return obj1;
-}
 // }
 
 } // ::g

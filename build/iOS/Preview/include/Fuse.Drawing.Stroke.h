@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -15,7 +15,7 @@ namespace g{
 namespace Fuse{
 namespace Drawing{
 
-// public sealed class Stroke :241
+// public sealed class Stroke :249
 // {
 struct Stroke_type : uType
 {
@@ -35,12 +35,14 @@ void Stroke__get_Brush_fn(Stroke* __this, ::g::Fuse::Drawing::Brush** __retval);
 void Stroke__set_Brush_fn(Stroke* __this, ::g::Fuse::Drawing::Brush* value);
 void Stroke__get_Color_fn(Stroke* __this, ::g::Uno::Float4* __retval);
 void Stroke__set_Color_fn(Stroke* __this, ::g::Uno::Float4* value);
-void Stroke__GetDeviceAdjusted_fn(Stroke* __this, float* ppi, ::g::Uno::Float2* __retval);
+void Stroke__GetDeviceAdjusted_fn(Stroke* __this, float* pixelsPerPoint, ::g::Uno::Float2* __retval);
 void Stroke__get_IsPinned_fn(Stroke* __this, bool* __retval);
 void Stroke__get_LineCap_fn(Stroke* __this, int* __retval);
 void Stroke__set_LineCap_fn(Stroke* __this, int* value);
 void Stroke__get_LineJoin_fn(Stroke* __this, int* __retval);
 void Stroke__set_LineJoin_fn(Stroke* __this, int* value);
+void Stroke__get_LineJoinMiterLimit_fn(Stroke* __this, float* __retval);
+void Stroke__set_LineJoinMiterLimit_fn(Stroke* __this, float* value);
 void Stroke__New2_fn(Stroke** __retval);
 void Stroke__New3_fn(::g::Fuse::Drawing::Brush* brush, float* width, int* lineCap, int* lineJoin, Stroke** __retval);
 void Stroke__get_Offset_fn(Stroke* __this, float* __retval);
@@ -72,6 +74,9 @@ struct Stroke : ::g::Uno::UX::PropertyObject
     static ::g::Uno::UX::Selector _lineCapName_;
     static ::g::Uno::UX::Selector& _lineCapName() { return Stroke_typeof()->Init(), _lineCapName_; }
     int _lineJoin;
+    float _lineJoinMiterLimit;
+    static ::g::Uno::UX::Selector _lineJoinMiterLimitName_;
+    static ::g::Uno::UX::Selector& _lineJoinMiterLimitName() { return Stroke_typeof()->Init(), _lineJoinMiterLimitName_; }
     static ::g::Uno::UX::Selector _lineJoinName_;
     static ::g::Uno::UX::Selector& _lineJoinName() { return Stroke_typeof()->Init(), _lineJoinName_; }
     float _offset;
@@ -96,12 +101,14 @@ struct Stroke : ::g::Uno::UX::PropertyObject
     void Brush(::g::Fuse::Drawing::Brush* value);
     ::g::Uno::Float4 Color();
     void Color(::g::Uno::Float4 value);
-    ::g::Uno::Float2 GetDeviceAdjusted(float ppi);
+    ::g::Uno::Float2 GetDeviceAdjusted(float pixelsPerPoint);
     bool IsPinned();
     int LineCap();
     void LineCap(int value);
     int LineJoin();
     void LineJoin(int value);
+    float LineJoinMiterLimit();
+    void LineJoinMiterLimit(float value);
     float Offset();
     void Offset(float value);
     void OnPinned();

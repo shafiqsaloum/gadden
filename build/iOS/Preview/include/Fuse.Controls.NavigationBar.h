@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Panel.h>
+#include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -25,7 +26,7 @@ namespace Controls{
 
 // public sealed class NavigationBar :255
 // {
-::g::Fuse::Controls::Control_type* NavigationBar_typeof();
+::g::Fuse::Controls::Panel_type* NavigationBar_typeof();
 void NavigationBar__ctor_7_fn(NavigationBar* __this);
 void NavigationBar__New4_fn(NavigationBar** __retval);
 

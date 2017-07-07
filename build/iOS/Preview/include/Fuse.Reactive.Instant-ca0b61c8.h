@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// private sealed class Instantiator.CountItem :1071
+// private sealed class Instantiator.CountItem :1116
 // {
 uType* Instantiator__CountItem_typeof();
 void Instantiator__CountItem__ctor__fn(Instantiator__CountItem* __this);

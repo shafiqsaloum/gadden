@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Documents/Skola/Handels marketing/Gadden/gadden/build/iOS/Preview/preamble/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/runtime/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace Outracks{
 namespace Simulator{
 namespace Runtime{
 
-// public sealed class UxTemplate :10
+// public sealed class UxTemplate :548
 // {
 ::g::Uno::UX::Template_type* UxTemplate_typeof();
 void UxTemplate__ctor_1_fn(UxTemplate* __this, uDelegate* create, uString* matchCase, bool* isDefault);

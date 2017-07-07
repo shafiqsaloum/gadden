@@ -11,10 +11,10 @@ namespace Uno{
 namespace Platform{
 namespace iOS{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/ios/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno
+// -----------------------------------------------------------------------------------------------------------------
 
-// public extern struct uCGPoint :266
+// public extern struct uCGPoint :285
 // {
 static void uCGPoint1_build(uType* type)
 {
@@ -34,10 +34,10 @@ uStructType* uCGPoint1_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/ios/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno
+// -----------------------------------------------------------------------------------------------------------------
 
-// public extern struct uCGRect :255
+// public extern struct uCGRect :274
 // {
 static void uCGRect1_build(uType* type)
 {
@@ -58,23 +58,23 @@ uStructType* uCGRect1_typeof()
     return type;
 }
 
-// public static Uno.Platform.iOS.uCGRect get_Zero() :257
+// public static Uno.Platform.iOS.uCGRect get_Zero() :276
 void uCGRect1__get_Zero_fn(CGRect* __retval)
 {
     *__retval = uCGRect1::Zero();
 }
 
-// public static Uno.Platform.iOS.uCGRect get_Zero() [static] :257
+// public static Uno.Platform.iOS.uCGRect get_Zero() [static] :276
 CGRect uCGRect1::Zero()
 {
     return CGRectZero;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/ios/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno
+// -----------------------------------------------------------------------------------------------------------------
 
-// public extern struct uCGSize :261
+// public extern struct uCGSize :280
 // {
 static void uCGSize1_build(uType* type)
 {
@@ -94,10 +94,10 @@ uStructType* uCGSize1_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/0.47.13/source/uno/platform/ios/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno
+// -----------------------------------------------------------------------------------------------------------------
 
-// public extern struct UIImage :271
+// public extern struct UIImage :290
 // {
 static void UIImage_build(uType* type)
 {

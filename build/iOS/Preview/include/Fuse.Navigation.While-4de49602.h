@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -19,7 +19,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public class WhileNavigating :4850
+// public class WhileNavigating :4946
 // {
 ::g::Fuse::Triggers::Trigger_type* WhileNavigating_typeof();
 void WhileNavigating__ctor_6_fn(WhileNavigating* __this);

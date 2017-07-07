@@ -42,8 +42,8 @@ namespace Fuse{
 namespace Controls{
 namespace FallbackTextEdit{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/textcontrols/fallbacktextedit/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class DegreeSpan :18
 // {
@@ -122,8 +122,8 @@ DegreeSpan* DegreeSpan::New1(float a, float b)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/textcontrols/fallbacktextedit/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class LineCache :75
 // {
@@ -913,8 +913,8 @@ LineCache* LineCache::New1(uDelegate* onTextChanged, uDelegate* invalideLayout, 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/textcontrols/fallbacktextedit/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class LineCacheLine :531
 // {
@@ -1238,8 +1238,8 @@ LineCacheLine* LineCacheLine::New1(uString* text, uObject* transform)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/textcontrols/fallbacktextedit/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class LineCachePasswordTransform :701
 // {
@@ -1336,8 +1336,8 @@ LineCachePasswordTransform* LineCachePasswordTransform::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/textcontrols/fallbacktextedit/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal abstract interface LineCacheTransform :696
 // {
@@ -1351,8 +1351,8 @@ uInterfaceType* LineCacheTransform_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/textcontrols/fallbacktextedit/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class SwipeGestureHelper :42
 // {
@@ -1429,8 +1429,8 @@ SwipeGestureHelper* SwipeGestureHelper::New1(float lengthThreshold, uArray* span
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/textcontrols/fallbacktextedit/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class TextPosition :736
 // {
@@ -1662,8 +1662,8 @@ bool TextPosition::op_LessThanOrEqual(TextPosition* a, TextPosition* b)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/textcontrols/fallbacktextedit/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class TextSpan :838
 // {
@@ -1813,8 +1813,8 @@ bool TextSpan::op_Inequality(TextSpan* a, TextSpan* b)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/textcontrols/fallbacktextedit/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class TextWindow :912
 // {

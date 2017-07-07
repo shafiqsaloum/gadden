@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Protocol.Uno/0.0.0/common/$.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Outracks.Simulator.Common.Uno/0.0.0/common/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Outracks{
 namespace Simulator{
 
-// public sealed class ImmutableList<T> :166
+// public sealed class ImmutableList<T> :169
 // {
 struct ImmutableList_type : uType
 {
@@ -28,6 +28,7 @@ void ImmutableList__InsertRange_fn(ImmutableList* __this, int* index, uObject* i
 void ImmutableList__get_Item_fn(ImmutableList* __this, int* i, uTRef __retval);
 void ImmutableList__New1_fn(uType* __type, uArray* array, ImmutableList** __retval);
 void ImmutableList__Replace_fn(ImmutableList* __this, void* element, void* replacement, ImmutableList** __retval);
+void ImmutableList__ToString_fn(ImmutableList* __this, uString** __retval);
 
 struct ImmutableList : uObject
 {

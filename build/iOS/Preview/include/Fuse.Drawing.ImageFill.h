@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/drawing/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/drawing/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,6 +10,7 @@
 #include <Uno.Float4.h>
 namespace g{namespace Fuse{namespace Drawing{struct ImageFill;}}}
 namespace g{namespace Fuse{namespace Internal{struct ImageContainer;}}}
+namespace g{namespace Fuse{namespace Internal{struct SizingContainer;}}}
 namespace g{namespace Fuse{namespace Resources{struct ImageSource;}}}
 namespace g{namespace Fuse{namespace Resources{struct MemoryPolicy;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
@@ -61,6 +62,7 @@ void ImageFill__OnPrepare_fn(ImageFill* __this, ::g::Fuse::DrawContext* dc, ::g:
 void ImageFill__OnUnpinned_fn(ImageFill* __this);
 void ImageFill__get_ResampleMode_fn(ImageFill* __this, int* __retval);
 void ImageFill__set_ResampleMode_fn(ImageFill* __this, int* value);
+void ImageFill__get_SizingContainer_fn(ImageFill* __this, ::g::Fuse::Internal::SizingContainer** __retval);
 void ImageFill__get_Source_fn(ImageFill* __this, ::g::Fuse::Resources::ImageSource** __retval);
 void ImageFill__set_Source_fn(ImageFill* __this, ::g::Fuse::Resources::ImageSource* value);
 void ImageFill__get_StretchDirection_fn(ImageFill* __this, int* __retval);
@@ -108,6 +110,7 @@ struct ImageFill : ::g::Fuse::Drawing::DynamicBrush
     void MemoryPolicy(::g::Fuse::Resources::MemoryPolicy* value);
     int ResampleMode();
     void ResampleMode(int value);
+    ::g::Fuse::Internal::SizingContainer* SizingContainer();
     ::g::Fuse::Resources::ImageSource* Source();
     void Source(::g::Fuse::Resources::ImageSource* value);
     int StretchDirection();

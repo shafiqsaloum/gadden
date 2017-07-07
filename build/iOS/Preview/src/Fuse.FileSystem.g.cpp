@@ -62,17 +62,17 @@
 #include <Uno.Time.ZonedDateTime.h>
 #include <Uno.UX.Resource.h>
 #include <Uno/Support.h>
-static uString* STRINGS[45];
+static uString* STRINGS[47];
 static uType* TYPES[58];
 
 namespace g{
 namespace Fuse{
 namespace FileSystem{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
-// private sealed class FileSystemOperations.Closure<T1, TResult> :1220
+// private sealed class FileSystemOperations.Closure<T1, TResult> :1307
 // {
 static void FileSystemOperations__Closure_build(uType* type)
 {
@@ -99,14 +99,14 @@ uType* FileSystemOperations__Closure_typeof()
     return type;
 }
 
-// public Closure(Uno.Func<T1, TResult> del, T1 arg1) :1225
+// public Closure(Uno.Func<T1, TResult> del, T1 arg1) :1312
 void FileSystemOperations__Closure__ctor__fn(FileSystemOperations__Closure* __this, uDelegate* del, void* arg1)
 {
     __this->_del = del;
     __this->_arg1() = arg1;
 }
 
-// public TResult Invoke() :1231
+// public TResult Invoke() :1318
 void FileSystemOperations__Closure__Invoke_fn(FileSystemOperations__Closure* __this, uTRef __retval)
 {
     uType* __types[] = {
@@ -117,7 +117,7 @@ void FileSystemOperations__Closure__Invoke_fn(FileSystemOperations__Closure* __t
     return __retval.Store((uPtr(__this->_del)->Invoke(&ret2, 1, (void*)__this->_arg1()), ret2)), void();
 }
 
-// public Closure New(Uno.Func<T1, TResult> del, T1 arg1) :1225
+// public Closure New(Uno.Func<T1, TResult> del, T1 arg1) :1312
 void FileSystemOperations__Closure__New1_fn(uType* __type, uDelegate* del, void* arg1, FileSystemOperations__Closure** __retval)
 {
     FileSystemOperations__Closure* obj1 = (FileSystemOperations__Closure*)uNew(__type);
@@ -126,10 +126,10 @@ void FileSystemOperations__Closure__New1_fn(uType* __type, uDelegate* del, void*
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
-// private sealed class FileSystemOperations.Closure<T1, T2, TResult> :1238
+// private sealed class FileSystemOperations.Closure<T1, T2, TResult> :1325
 // {
 static void FileSystemOperations__Closure1_build(uType* type)
 {
@@ -157,7 +157,7 @@ uType* FileSystemOperations__Closure1_typeof()
     return type;
 }
 
-// public Closure(Uno.Func<T1, T2, TResult> del, T1 arg1, T2 arg2) :1244
+// public Closure(Uno.Func<T1, T2, TResult> del, T1 arg1, T2 arg2) :1331
 void FileSystemOperations__Closure1__ctor__fn(FileSystemOperations__Closure1* __this, uDelegate* del, void* arg1, void* arg2)
 {
     __this->_del = del;
@@ -165,7 +165,7 @@ void FileSystemOperations__Closure1__ctor__fn(FileSystemOperations__Closure1* __
     __this->_arg2() = arg2;
 }
 
-// public TResult Invoke() :1251
+// public TResult Invoke() :1338
 void FileSystemOperations__Closure1__Invoke_fn(FileSystemOperations__Closure1* __this, uTRef __retval)
 {
     uType* __types[] = {
@@ -176,7 +176,7 @@ void FileSystemOperations__Closure1__Invoke_fn(FileSystemOperations__Closure1* _
     return __retval.Store((uPtr(__this->_del)->Invoke(&ret2, 2, (void*)__this->_arg1(), (void*)__this->_arg2()), ret2)), void();
 }
 
-// public Closure New(Uno.Func<T1, T2, TResult> del, T1 arg1, T2 arg2) :1244
+// public Closure New(Uno.Func<T1, T2, TResult> del, T1 arg1, T2 arg2) :1331
 void FileSystemOperations__Closure1__New1_fn(uType* __type, uDelegate* del, void* arg1, void* arg2, FileSystemOperations__Closure1** __retval)
 {
     FileSystemOperations__Closure1* obj1 = (FileSystemOperations__Closure1*)uNew(__type);
@@ -185,8 +185,8 @@ void FileSystemOperations__Closure1__New1_fn(uType* __type, uDelegate* del, void
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class DirectoryInfo :7
 // {
@@ -254,8 +254,8 @@ DirectoryInfo* DirectoryInfo::New1(uString* originalPath)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public enum FileAttributes :37
 uEnumType* FileAttributes_typeof()
@@ -271,8 +271,8 @@ uEnumType* FileAttributes_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class FileInfo :66
 // {
@@ -354,8 +354,8 @@ FileInfo* FileInfo::New1(uString* originalPath)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal sealed class FileStatus :114
 // {
@@ -531,8 +531,8 @@ FileStatus* FileStatus::New2(int64_t length, int attributes, ::g::Uno::Time::Zon
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal static extern class FileStatusHelpers :186
 // {
@@ -612,8 +612,8 @@ void FileStatusHelpers__UnixTimeToZoned_fn(int64_t* sec, ::g::Uno::Time::ZonedDa
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/uno/io/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/uno/io/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public abstract class FileSystemInfo :336
 // {
@@ -781,8 +781,8 @@ void FileSystemInfo::Refresh()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class FileSystemModule :112
 // {
@@ -811,27 +811,29 @@ static void FileSystemModule_build(uType* type)
     ::STRINGS[21] = uString::Const("readBufferFromFile");
     ::STRINGS[22] = uString::Const("moveSync");
     ::STRINGS[23] = uString::Const("move");
-    ::STRINGS[24] = uString::Const("readBufferFromFileSync");
-    ::STRINGS[25] = uString::Const("readTextFromFile");
-    ::STRINGS[26] = uString::Const("readTextFromFileSync");
-    ::STRINGS[27] = uString::Const("writeBufferToFile");
-    ::STRINGS[28] = uString::Const("writeBufferToFileSync");
-    ::STRINGS[29] = uString::Const("writeTextToFile");
-    ::STRINGS[30] = uString::Const("writeTextToFileSync");
-    ::STRINGS[31] = uString::Const("appendTextToFile");
-    ::STRINGS[32] = uString::Const("appendTextToFileSync");
-    ::STRINGS[33] = uString::Const("Second argument \"text\" is required to be a string");
-    ::STRINGS[34] = uString::Const("args");
-    ::STRINGS[35] = uString::Const("first argument path is required to be a string");
+    ::STRINGS[24] = uString::Const("copySync");
+    ::STRINGS[25] = uString::Const("copy");
+    ::STRINGS[26] = uString::Const("readBufferFromFileSync");
+    ::STRINGS[27] = uString::Const("readTextFromFile");
+    ::STRINGS[28] = uString::Const("readTextFromFileSync");
+    ::STRINGS[29] = uString::Const("writeBufferToFile");
+    ::STRINGS[30] = uString::Const("writeBufferToFileSync");
+    ::STRINGS[31] = uString::Const("writeTextToFile");
+    ::STRINGS[32] = uString::Const("writeTextToFileSync");
+    ::STRINGS[33] = uString::Const("appendTextToFile");
+    ::STRINGS[34] = uString::Const("appendTextToFileSync");
+    ::STRINGS[35] = uString::Const("Second argument \"text\" is required to be a string");
     ::STRINGS[36] = uString::Const("First argument `source` has to be a valid path");
     ::STRINGS[37] = uString::Const("Second argument `destination` has to be a valid path");
-    ::STRINGS[38] = uString::Const("(Date Converter)");
-    ::STRINGS[39] = uString::Const("new Date({0})");
-    ::STRINGS[40] = uString::Const("length");
-    ::STRINGS[41] = uString::Const("fullName");
-    ::STRINGS[42] = uString::Const("lastWriteTime");
-    ::STRINGS[43] = uString::Const("lastAccessTime");
-    ::STRINGS[44] = uString::Const("Second argument \"data\" is required to be an ArrayBuffer");
+    ::STRINGS[38] = uString::Const("args");
+    ::STRINGS[39] = uString::Const("first argument path is required to be a string");
+    ::STRINGS[40] = uString::Const("(Date Converter)");
+    ::STRINGS[41] = uString::Const("new Date({0})");
+    ::STRINGS[42] = uString::Const("length");
+    ::STRINGS[43] = uString::Const("fullName");
+    ::STRINGS[44] = uString::Const("lastWriteTime");
+    ::STRINGS[45] = uString::Const("lastAccessTime");
+    ::STRINGS[46] = uString::Const("Second argument \"data\" is required to be an ArrayBuffer");
     ::TYPES[1] = ::g::Fuse::Scripting::NativeProperty_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
     ::TYPES[2] = ::g::Uno::Func_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
     ::TYPES[3] = ::g::Fuse::Scripting::NativeProperty_typeof()->MakeType(::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL), ::g::Fuse::Scripting::Object_typeof(), NULL);
@@ -857,7 +859,7 @@ static void FileSystemModule_build(uType* type)
     ::TYPES[23] = type->MakeMethod(0/*GetArg<string>*/, ::g::Uno::String_typeof(), NULL);
     ::TYPES[24] = ::g::Uno::Bool_typeof();
     ::TYPES[25] = ::g::Uno::String_typeof();
-    ::TYPES[26] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(11/*ToArray<object>*/, uObject_typeof(), NULL);
+    ::TYPES[26] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(10/*ToArray<object>*/, uObject_typeof(), NULL);
     ::TYPES[27] = ::g::Uno::Collections::EnumerableExtensions_typeof();
     ::TYPES[28] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof();
     ::TYPES[29] = uObject_typeof()->Array();
@@ -866,7 +868,7 @@ static void FileSystemModule_build(uType* type)
     ::TYPES[32] = ::g::Uno::Collections::KeyValuePair_typeof();
     ::TYPES[33] = type->MakeMethod(0/*GetArg<byte[]>*/, ::g::Uno::Byte_typeof()->Array(), NULL);
     type->MethodTypes[1]->SetPrecalc(
-        ::TYPES[27/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(7/*OfType<T, object>*/, type->MethodTypes[1]->U(0), uObject_typeof(), NULL),
+        ::TYPES[27/*Uno.Collections.EnumerableExtensions*/]->MakeMethod(6/*OfType<T, object>*/, type->MethodTypes[1]->U(0), uObject_typeof(), NULL),
         ::TYPES[28/*Uno.Runtime.Implementation.Internal.ArrayEnumerable`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL));
     type->MethodTypes[2]->SetPrecalc(
         ::TYPES[31/*Uno.Collections.Dictionary`2.Enumerator*/]->MakeType(::TYPES[25/*string*/], type->MethodTypes[2]->U(0), NULL),
@@ -912,151 +914,163 @@ void FileSystemModule__ctor_2_fn(FileSystemModule* __this)
     __this->ctor_2();
 }
 
-// private Uno.Threading.Future<Fuse.FileSystem.Nothing> AppendTextToFile(object[] args) :186
+// private Uno.Threading.Future<Fuse.FileSystem.Nothing> AppendTextToFile(object[] args) :188
 void FileSystemModule__AppendTextToFile_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->AppendTextToFile(args);
 }
 
-// private object AppendTextToFileSync(Fuse.Scripting.Context context, object[] args) :207
+// private object AppendTextToFileSync(Fuse.Scripting.Context context, object[] args) :209
 void FileSystemModule__AppendTextToFileSync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->AppendTextToFileSync(context, args);
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.Nothing> CreateDirectory(object[] args) :234
+// private Uno.Threading.Future<Fuse.FileSystem.Nothing> Copy(object[] args) :748
+void FileSystemModule__Copy_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
+{
+    *__retval = __this->Copy(args);
+}
+
+// private object CopySync(Fuse.Scripting.Context context, object[] args) :769
+void FileSystemModule__CopySync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
+{
+    *__retval = __this->CopySync(context, args);
+}
+
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> CreateDirectory(object[] args) :236
 void FileSystemModule__CreateDirectory_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->CreateDirectory(args);
 }
 
-// public object CreateDirectorySync(Fuse.Scripting.Context context, object[] args) :252
+// public object CreateDirectorySync(Fuse.Scripting.Context context, object[] args) :254
 void FileSystemModule__CreateDirectorySync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->CreateDirectorySync(context, args);
 }
 
-// private Uno.Threading.Future<Fuse.FileSystem.Nothing> Delete(object[] args) :278
+// private Uno.Threading.Future<Fuse.FileSystem.Nothing> Delete(object[] args) :280
 void FileSystemModule__Delete_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->Delete(args);
 }
 
-// private object DeleteSync(Fuse.Scripting.Context context, object[] args) :298
+// private object DeleteSync(Fuse.Scripting.Context context, object[] args) :300
 void FileSystemModule__DeleteSync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->DeleteSync(context, args);
 }
 
-// private Uno.Threading.Future<bool> Exists(object[] args) :324
+// private Uno.Threading.Future<bool> Exists(object[] args) :326
 void FileSystemModule__Exists_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->Exists(args);
 }
 
-// private object ExistsSync(Fuse.Scripting.Context context, object[] args) :343
+// private object ExistsSync(Fuse.Scripting.Context context, object[] args) :345
 void FileSystemModule__ExistsSync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->ExistsSync(context, args);
 }
 
-// private static T GetArg<T>(object[] args, int index, string error) :919
+// private static T GetArg<T>(object[] args, int index, string error) :971
 void FileSystemModule__GetArg_fn(uType* __type, uArray* args, int* index, uString* error, uObject** __retval)
 {
     *__retval = FileSystemModule::GetArg(__type, args, *index, error);
 }
 
-// private string GetCacheDirectory() :379
+// private string GetCacheDirectory() :381
 void FileSystemModule__GetCacheDirectory_fn(FileSystemModule* __this, uString** __retval)
 {
     *__retval = __this->GetCacheDirectory();
 }
 
-// private string GetDataDirectory() :396
+// private string GetDataDirectory() :398
 void FileSystemModule__GetDataDirectory_fn(FileSystemModule* __this, uString** __retval)
 {
     *__retval = __this->GetDataDirectory();
 }
 
-// private Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetDirectoryInfo(object[] args) :428
+// private Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetDirectoryInfo(object[] args) :430
 void FileSystemModule__GetDirectoryInfo_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->GetDirectoryInfo(args);
 }
 
-// private object GetDirectoryInfoSync(Fuse.Scripting.Context context, object[] args) :455
+// private object GetDirectoryInfoSync(Fuse.Scripting.Context context, object[] args) :457
 void FileSystemModule__GetDirectoryInfoSync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->GetDirectoryInfoSync(context, args);
 }
 
-// private Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetFileInfo(object[] args) :488
+// private Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetFileInfo(object[] args) :490
 void FileSystemModule__GetFileInfo_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->GetFileInfo(args);
 }
 
-// private object GetFileInfoSync(Fuse.Scripting.Context context, object[] args) :515
+// private object GetFileInfoSync(Fuse.Scripting.Context context, object[] args) :517
 void FileSystemModule__GetFileInfoSync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->GetFileInfoSync(context, args);
 }
 
-// private Uno.Collections.Dictionary<string, string> GetIosPaths() :531
+// private Uno.Collections.Dictionary<string, string> GetIosPaths() :533
 void FileSystemModule__GetIosPaths_fn(FileSystemModule* __this, ::g::Uno::Collections::Dictionary** __retval)
 {
     *__retval = __this->GetIosPaths();
 }
 
-// private static string GetPathFromArgs(object[] args) :934
+// private static string GetPathFromArgs(object[] args) :986
 void FileSystemModule__GetPathFromArgs_fn(uArray* args, uString** __retval)
 {
     *__retval = FileSystemModule::GetPathFromArgs(args);
 }
 
-// private Uno.Threading.Future<string[]> ListDirectories(object[] args) :562
+// private Uno.Threading.Future<string[]> ListDirectories(object[] args) :564
 void FileSystemModule__ListDirectories_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->ListDirectories(args);
 }
 
-// private object ListDirectoriesSync(Fuse.Scripting.Context context, object[] args) :582
+// private object ListDirectoriesSync(Fuse.Scripting.Context context, object[] args) :584
 void FileSystemModule__ListDirectoriesSync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->ListDirectoriesSync(context, args);
 }
 
-// private Uno.Threading.Future<string[]> ListEntries(object[] args) :606
+// private Uno.Threading.Future<string[]> ListEntries(object[] args) :608
 void FileSystemModule__ListEntries_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->ListEntries(args);
 }
 
-// private object ListEntriesSync(Fuse.Scripting.Context context, object[] args) :626
+// private object ListEntriesSync(Fuse.Scripting.Context context, object[] args) :628
 void FileSystemModule__ListEntriesSync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->ListEntriesSync(context, args);
 }
 
-// private Uno.Threading.Future<string[]> ListFiles(object[] args) :650
+// private Uno.Threading.Future<string[]> ListFiles(object[] args) :652
 void FileSystemModule__ListFiles_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->ListFiles(args);
 }
 
-// private object ListFilesSync(Fuse.Scripting.Context context, object[] args) :670
+// private object ListFilesSync(Fuse.Scripting.Context context, object[] args) :672
 void FileSystemModule__ListFilesSync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->ListFilesSync(context, args);
 }
 
-// private Uno.Threading.Future<Fuse.FileSystem.Nothing> Move(object[] args) :696
+// private Uno.Threading.Future<Fuse.FileSystem.Nothing> Move(object[] args) :698
 void FileSystemModule__Move_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->Move(args);
 }
 
-// private object MoveSync(Fuse.Scripting.Context context, object[] args) :717
+// private object MoveSync(Fuse.Scripting.Context context, object[] args) :719
 void FileSystemModule__MoveSync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->MoveSync(context, args);
@@ -1068,73 +1082,73 @@ void FileSystemModule__New2_fn(FileSystemModule** __retval)
     *__retval = FileSystemModule::New2();
 }
 
-// private Uno.Threading.Future<byte[]> ReadBufferFromFile(object[] args) :744
+// private Uno.Threading.Future<byte[]> ReadBufferFromFile(object[] args) :796
 void FileSystemModule__ReadBufferFromFile_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->ReadBufferFromFile(args);
 }
 
-// private object ReadBufferFromFileSync(Fuse.Scripting.Context context, object[] args) :763
+// private object ReadBufferFromFileSync(Fuse.Scripting.Context context, object[] args) :815
 void FileSystemModule__ReadBufferFromFileSync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->ReadBufferFromFileSync(context, args);
 }
 
-// private Uno.Threading.Future<string> ReadTextFromFile(object[] args) :787
+// private Uno.Threading.Future<string> ReadTextFromFile(object[] args) :839
 void FileSystemModule__ReadTextFromFile_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->ReadTextFromFile(args);
 }
 
-// private object ReadTextFromFileSync(Fuse.Scripting.Context context, object[] args) :807
+// private object ReadTextFromFileSync(Fuse.Scripting.Context context, object[] args) :859
 void FileSystemModule__ReadTextFromFileSync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->ReadTextFromFileSync(context, args);
 }
 
-// private static Fuse.Scripting.Array ToScriptingArray<T>(Fuse.Scripting.Context context, T[] sourceArray) :948
+// private static Fuse.Scripting.Array ToScriptingArray<T>(Fuse.Scripting.Context context, T[] sourceArray) :1000
 void FileSystemModule__ToScriptingArray_fn(uType* __type, ::g::Fuse::Scripting::Context* context, uArray* sourceArray, ::g::Fuse::Scripting::Array** __retval)
 {
     *__retval = FileSystemModule::ToScriptingArray(__type, context, sourceArray);
 }
 
-// private static object ToScriptingDate(Fuse.Scripting.Context context, Uno.Time.ZonedDateTime time) :971
+// private static object ToScriptingDate(Fuse.Scripting.Context context, Uno.Time.ZonedDateTime time) :1023
 void FileSystemModule__ToScriptingDate_fn(::g::Fuse::Scripting::Context* context, ::g::Uno::Time::ZonedDateTime* time, uObject** __retval)
 {
     *__retval = FileSystemModule::ToScriptingDate(context, time);
 }
 
-// private static Fuse.Scripting.Object ToScriptingObject(Fuse.Scripting.Context context, Fuse.FileSystem.FileSystemInfo info) :955
+// private static Fuse.Scripting.Object ToScriptingObject(Fuse.Scripting.Context context, Fuse.FileSystem.FileSystemInfo info) :1007
 void FileSystemModule__ToScriptingObject_fn(::g::Fuse::Scripting::Context* context, ::g::Fuse::FileSystem::FileSystemInfo* info, ::g::Fuse::Scripting::Object** __retval)
 {
     *__retval = FileSystemModule::ToScriptingObject(context, info);
 }
 
-// private static Fuse.Scripting.Object ToScriptingObject<T>(Fuse.Scripting.Context context, Uno.Collections.Dictionary<string, T> dict) :979
+// private static Fuse.Scripting.Object ToScriptingObject<T>(Fuse.Scripting.Context context, Uno.Collections.Dictionary<string, T> dict) :1031
 void FileSystemModule__ToScriptingObject1_fn(uType* __type, ::g::Fuse::Scripting::Context* context, ::g::Uno::Collections::Dictionary* dict, ::g::Fuse::Scripting::Object** __retval)
 {
     *__retval = FileSystemModule::ToScriptingObject1(__type, context, dict);
 }
 
-// private Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteBufferToFile(object[] args) :836
+// private Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteBufferToFile(object[] args) :888
 void FileSystemModule__WriteBufferToFile_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->WriteBufferToFile(args);
 }
 
-// private object WriteBufferToFileSync(Fuse.Scripting.Context context, object[] args) :861
+// private object WriteBufferToFileSync(Fuse.Scripting.Context context, object[] args) :913
 void FileSystemModule__WriteBufferToFileSync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->WriteBufferToFileSync(context, args);
 }
 
-// private Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteTextToFile(object[] args) :889
+// private Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteTextToFile(object[] args) :941
 void FileSystemModule__WriteTextToFile_fn(FileSystemModule* __this, uArray* args, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->WriteTextToFile(args);
 }
 
-// private object WriteTextToFileSync(Fuse.Scripting.Context context, object[] args) :910
+// private object WriteTextToFileSync(Fuse.Scripting.Context context, object[] args) :962
 void FileSystemModule__WriteTextToFileSync_fn(FileSystemModule* __this, ::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
 {
     *__retval = __this->WriteTextToFileSync(context, args);
@@ -1175,44 +1189,65 @@ void FileSystemModule::ctor_2()
     AddMember((::g::Fuse::Scripting::NativePromise*)::g::Fuse::Scripting::NativePromise::New1(::TYPES[19/*Fuse.Scripting.NativePromise<byte[], Fuse.Scripting.Object>*/], ::STRINGS[21/*"readBufferF...*/], uDelegate::New(::TYPES[20/*Fuse.Scripting.FutureFactory<byte[]>*/], (void*)FileSystemModule__ReadBufferFromFile_fn, this), NULL));
     AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[22/*"moveSync"*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.NativeCallback*/], (void*)FileSystemModule__MoveSync_fn, this)));
     AddMember((::g::Fuse::Scripting::NativePromise*)::g::Fuse::Scripting::NativePromise::New1(::TYPES[7/*Fuse.Scripting.NativePromise<Fuse.FileSystem.Nothing, Fuse.Scripting.Object>*/], ::STRINGS[23/*"move"*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.FutureFactory<Fuse.FileSystem.Nothing>*/], (void*)FileSystemModule__Move_fn, this), NULL));
-    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[24/*"readBufferF...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.NativeCallback*/], (void*)FileSystemModule__ReadBufferFromFileSync_fn, this)));
-    AddMember((::g::Fuse::Scripting::NativePromise*)::g::Fuse::Scripting::NativePromise::New1(::TYPES[21/*Fuse.Scripting.NativePromise<string, string>*/], ::STRINGS[25/*"readTextFro...*/], uDelegate::New(::TYPES[22/*Fuse.Scripting.FutureFactory<string>*/], (void*)FileSystemModule__ReadTextFromFile_fn, this), NULL));
-    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[26/*"readTextFro...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.NativeCallback*/], (void*)FileSystemModule__ReadTextFromFileSync_fn, this)));
-    AddMember((::g::Fuse::Scripting::NativePromise*)::g::Fuse::Scripting::NativePromise::New1(::TYPES[7/*Fuse.Scripting.NativePromise<Fuse.FileSystem.Nothing, Fuse.Scripting.Object>*/], ::STRINGS[27/*"writeBuffer...*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.FutureFactory<Fuse.FileSystem.Nothing>*/], (void*)FileSystemModule__WriteBufferToFile_fn, this), NULL));
-    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[28/*"writeBuffer...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.NativeCallback*/], (void*)FileSystemModule__WriteBufferToFileSync_fn, this)));
-    AddMember((::g::Fuse::Scripting::NativePromise*)::g::Fuse::Scripting::NativePromise::New1(::TYPES[7/*Fuse.Scripting.NativePromise<Fuse.FileSystem.Nothing, Fuse.Scripting.Object>*/], ::STRINGS[29/*"writeTextTo...*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.FutureFactory<Fuse.FileSystem.Nothing>*/], (void*)FileSystemModule__WriteTextToFile_fn, this), NULL));
-    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[30/*"writeTextTo...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.NativeCallback*/], (void*)FileSystemModule__WriteTextToFileSync_fn, this)));
-    AddMember((::g::Fuse::Scripting::NativePromise*)::g::Fuse::Scripting::NativePromise::New1(::TYPES[7/*Fuse.Scripting.NativePromise<Fuse.FileSystem.Nothing, Fuse.Scripting.Object>*/], ::STRINGS[31/*"appendTextT...*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.FutureFactory<Fuse.FileSystem.Nothing>*/], (void*)FileSystemModule__AppendTextToFile_fn, this), NULL));
-    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[32/*"appendTextT...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.NativeCallback*/], (void*)FileSystemModule__AppendTextToFileSync_fn, this)));
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[24/*"copySync"*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.NativeCallback*/], (void*)FileSystemModule__CopySync_fn, this)));
+    AddMember((::g::Fuse::Scripting::NativePromise*)::g::Fuse::Scripting::NativePromise::New1(::TYPES[7/*Fuse.Scripting.NativePromise<Fuse.FileSystem.Nothing, Fuse.Scripting.Object>*/], ::STRINGS[25/*"copy"*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.FutureFactory<Fuse.FileSystem.Nothing>*/], (void*)FileSystemModule__Copy_fn, this), NULL));
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[26/*"readBufferF...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.NativeCallback*/], (void*)FileSystemModule__ReadBufferFromFileSync_fn, this)));
+    AddMember((::g::Fuse::Scripting::NativePromise*)::g::Fuse::Scripting::NativePromise::New1(::TYPES[21/*Fuse.Scripting.NativePromise<string, string>*/], ::STRINGS[27/*"readTextFro...*/], uDelegate::New(::TYPES[22/*Fuse.Scripting.FutureFactory<string>*/], (void*)FileSystemModule__ReadTextFromFile_fn, this), NULL));
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[28/*"readTextFro...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.NativeCallback*/], (void*)FileSystemModule__ReadTextFromFileSync_fn, this)));
+    AddMember((::g::Fuse::Scripting::NativePromise*)::g::Fuse::Scripting::NativePromise::New1(::TYPES[7/*Fuse.Scripting.NativePromise<Fuse.FileSystem.Nothing, Fuse.Scripting.Object>*/], ::STRINGS[29/*"writeBuffer...*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.FutureFactory<Fuse.FileSystem.Nothing>*/], (void*)FileSystemModule__WriteBufferToFile_fn, this), NULL));
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[30/*"writeBuffer...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.NativeCallback*/], (void*)FileSystemModule__WriteBufferToFileSync_fn, this)));
+    AddMember((::g::Fuse::Scripting::NativePromise*)::g::Fuse::Scripting::NativePromise::New1(::TYPES[7/*Fuse.Scripting.NativePromise<Fuse.FileSystem.Nothing, Fuse.Scripting.Object>*/], ::STRINGS[31/*"writeTextTo...*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.FutureFactory<Fuse.FileSystem.Nothing>*/], (void*)FileSystemModule__WriteTextToFile_fn, this), NULL));
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[32/*"writeTextTo...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.NativeCallback*/], (void*)FileSystemModule__WriteTextToFileSync_fn, this)));
+    AddMember((::g::Fuse::Scripting::NativePromise*)::g::Fuse::Scripting::NativePromise::New1(::TYPES[7/*Fuse.Scripting.NativePromise<Fuse.FileSystem.Nothing, Fuse.Scripting.Object>*/], ::STRINGS[33/*"appendTextT...*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.FutureFactory<Fuse.FileSystem.Nothing>*/], (void*)FileSystemModule__AppendTextToFile_fn, this), NULL));
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[34/*"appendTextT...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.NativeCallback*/], (void*)FileSystemModule__AppendTextToFileSync_fn, this)));
 }
 
-// private Uno.Threading.Future<Fuse.FileSystem.Nothing> AppendTextToFile(object[] args) [instance] :186
+// private Uno.Threading.Future<Fuse.FileSystem.Nothing> AppendTextToFile(object[] args) [instance] :188
 ::g::Uno::Threading::Future1* FileSystemModule::AppendTextToFile(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "AppendTextToFile(object[])");
     uString* path = FileSystemModule::GetPathFromArgs(args);
-    uString* text = (uString*)FileSystemModule::GetArg(::TYPES[23/*Fuse.FileSystem.FileSystemModule.GetArg<string>*/], args, 1, ::STRINGS[33/*"Second argu...*/]);
+    uString* text = (uString*)FileSystemModule::GetArg(::TYPES[23/*Fuse.FileSystem.FileSystemModule.GetArg<string>*/], args, 1, ::STRINGS[35/*"Second argu...*/]);
     return uPtr(_operations)->AppendTextToFile(path, text);
 }
 
-// private object AppendTextToFileSync(Fuse.Scripting.Context context, object[] args) [instance] :207
+// private object AppendTextToFileSync(Fuse.Scripting.Context context, object[] args) [instance] :209
 uObject* FileSystemModule::AppendTextToFileSync(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "AppendTextToFileSync(Fuse.Scripting.Context,object[])");
     uString* path = FileSystemModule::GetPathFromArgs(args);
-    uString* text = (uString*)FileSystemModule::GetArg(::TYPES[23/*Fuse.FileSystem.FileSystemModule.GetArg<string>*/], args, 1, ::STRINGS[33/*"Second argu...*/]);
+    uString* text = (uString*)FileSystemModule::GetArg(::TYPES[23/*Fuse.FileSystem.FileSystemModule.GetArg<string>*/], args, 1, ::STRINGS[35/*"Second argu...*/]);
     uPtr(_operations)->AppendTextToFileSync(path, text);
     return NULL;
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.Nothing> CreateDirectory(object[] args) [instance] :234
+// private Uno.Threading.Future<Fuse.FileSystem.Nothing> Copy(object[] args) [instance] :748
+::g::Uno::Threading::Future1* FileSystemModule::Copy(uArray* args)
+{
+    uStackFrame __("Fuse.FileSystem.FileSystemModule", "Copy(object[])");
+    uString* source = (uString*)FileSystemModule::GetArg(::TYPES[23/*Fuse.FileSystem.FileSystemModule.GetArg<string>*/], args, 0, ::STRINGS[36/*"First argum...*/]);
+    uString* destination = (uString*)FileSystemModule::GetArg(::TYPES[23/*Fuse.FileSystem.FileSystemModule.GetArg<string>*/], args, 1, ::STRINGS[37/*"Second argu...*/]);
+    return uPtr(_operations)->Copy(source, destination);
+}
+
+// private object CopySync(Fuse.Scripting.Context context, object[] args) [instance] :769
+uObject* FileSystemModule::CopySync(::g::Fuse::Scripting::Context* context, uArray* args)
+{
+    uStackFrame __("Fuse.FileSystem.FileSystemModule", "CopySync(Fuse.Scripting.Context,object[])");
+    uString* source = (uString*)FileSystemModule::GetArg(::TYPES[23/*Fuse.FileSystem.FileSystemModule.GetArg<string>*/], args, 0, ::STRINGS[36/*"First argum...*/]);
+    uString* destination = (uString*)FileSystemModule::GetArg(::TYPES[23/*Fuse.FileSystem.FileSystemModule.GetArg<string>*/], args, 1, ::STRINGS[37/*"Second argu...*/]);
+    uPtr(_operations)->CopySync(source, destination);
+    return NULL;
+}
+
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> CreateDirectory(object[] args) [instance] :236
 ::g::Uno::Threading::Future1* FileSystemModule::CreateDirectory(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "CreateDirectory(object[])");
     return uPtr(_operations)->CreateDirectory(FileSystemModule::GetPathFromArgs(args));
 }
 
-// public object CreateDirectorySync(Fuse.Scripting.Context context, object[] args) [instance] :252
+// public object CreateDirectorySync(Fuse.Scripting.Context context, object[] args) [instance] :254
 uObject* FileSystemModule::CreateDirectorySync(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "CreateDirectorySync(Fuse.Scripting.Context,object[])");
@@ -1220,7 +1255,7 @@ uObject* FileSystemModule::CreateDirectorySync(::g::Fuse::Scripting::Context* co
     return NULL;
 }
 
-// private Uno.Threading.Future<Fuse.FileSystem.Nothing> Delete(object[] args) [instance] :278
+// private Uno.Threading.Future<Fuse.FileSystem.Nothing> Delete(object[] args) [instance] :280
 ::g::Uno::Threading::Future1* FileSystemModule::Delete(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "Delete(object[])");
@@ -1228,7 +1263,7 @@ uObject* FileSystemModule::CreateDirectorySync(::g::Fuse::Scripting::Context* co
     return uPtr(_operations)->Delete(FileSystemModule::GetPathFromArgs(args), recursive);
 }
 
-// private object DeleteSync(Fuse.Scripting.Context context, object[] args) [instance] :298
+// private object DeleteSync(Fuse.Scripting.Context context, object[] args) [instance] :300
 uObject* FileSystemModule::DeleteSync(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "DeleteSync(Fuse.Scripting.Context,object[])");
@@ -1237,109 +1272,109 @@ uObject* FileSystemModule::DeleteSync(::g::Fuse::Scripting::Context* context, uA
     return NULL;
 }
 
-// private Uno.Threading.Future<bool> Exists(object[] args) [instance] :324
+// private Uno.Threading.Future<bool> Exists(object[] args) [instance] :326
 ::g::Uno::Threading::Future1* FileSystemModule::Exists(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "Exists(object[])");
     return uPtr(_operations)->Exists(FileSystemModule::GetPathFromArgs(args));
 }
 
-// private object ExistsSync(Fuse.Scripting.Context context, object[] args) [instance] :343
+// private object ExistsSync(Fuse.Scripting.Context context, object[] args) [instance] :345
 uObject* FileSystemModule::ExistsSync(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "ExistsSync(Fuse.Scripting.Context,object[])");
     return uBox(::TYPES[24/*bool*/], uPtr(_operations)->ExistsSync(FileSystemModule::GetPathFromArgs(args)));
 }
 
-// private string GetCacheDirectory() [instance] :379
+// private string GetCacheDirectory() [instance] :381
 uString* FileSystemModule::GetCacheDirectory()
 {
     return ::g::Fuse::FileSystem::UnifiedPaths::GetCacheDirectory();
 }
 
-// private string GetDataDirectory() [instance] :396
+// private string GetDataDirectory() [instance] :398
 uString* FileSystemModule::GetDataDirectory()
 {
     return ::g::Fuse::FileSystem::UnifiedPaths::GetDataDirectory();
 }
 
-// private Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetDirectoryInfo(object[] args) [instance] :428
+// private Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetDirectoryInfo(object[] args) [instance] :430
 ::g::Uno::Threading::Future1* FileSystemModule::GetDirectoryInfo(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "GetDirectoryInfo(object[])");
     return uPtr(_operations)->GetDirectoryInfo(FileSystemModule::GetPathFromArgs(args));
 }
 
-// private object GetDirectoryInfoSync(Fuse.Scripting.Context context, object[] args) [instance] :455
+// private object GetDirectoryInfoSync(Fuse.Scripting.Context context, object[] args) [instance] :457
 uObject* FileSystemModule::GetDirectoryInfoSync(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "GetDirectoryInfoSync(Fuse.Scripting.Context,object[])");
     return FileSystemModule::ToScriptingObject(context, uPtr(_operations)->GetDirectoryInfoSync(FileSystemModule::GetPathFromArgs(args)));
 }
 
-// private Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetFileInfo(object[] args) [instance] :488
+// private Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetFileInfo(object[] args) [instance] :490
 ::g::Uno::Threading::Future1* FileSystemModule::GetFileInfo(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "GetFileInfo(object[])");
     return uPtr(_operations)->GetFileInfo(FileSystemModule::GetPathFromArgs(args));
 }
 
-// private object GetFileInfoSync(Fuse.Scripting.Context context, object[] args) [instance] :515
+// private object GetFileInfoSync(Fuse.Scripting.Context context, object[] args) [instance] :517
 uObject* FileSystemModule::GetFileInfoSync(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "GetFileInfoSync(Fuse.Scripting.Context,object[])");
     return FileSystemModule::ToScriptingObject(context, uPtr(_operations)->GetFileInfoSync(FileSystemModule::GetPathFromArgs(args)));
 }
 
-// private Uno.Collections.Dictionary<string, string> GetIosPaths() [instance] :531
+// private Uno.Collections.Dictionary<string, string> GetIosPaths() [instance] :533
 ::g::Uno::Collections::Dictionary* FileSystemModule::GetIosPaths()
 {
     return ::g::Fuse::FileSystem::IosPaths::GetPathDictionary();
 }
 
-// private Uno.Threading.Future<string[]> ListDirectories(object[] args) [instance] :562
+// private Uno.Threading.Future<string[]> ListDirectories(object[] args) [instance] :564
 ::g::Uno::Threading::Future1* FileSystemModule::ListDirectories(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "ListDirectories(object[])");
     return uPtr(_operations)->ListDirectories(FileSystemModule::GetPathFromArgs(args));
 }
 
-// private object ListDirectoriesSync(Fuse.Scripting.Context context, object[] args) [instance] :582
+// private object ListDirectoriesSync(Fuse.Scripting.Context context, object[] args) [instance] :584
 uObject* FileSystemModule::ListDirectoriesSync(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "ListDirectoriesSync(Fuse.Scripting.Context,object[])");
     return FileSystemModule::ToScriptingArray(::TYPES[18/*Fuse.FileSystem.FileSystemModule.ToScriptingArray<string>*/], context, uPtr(_operations)->ListDirectoriesSync(FileSystemModule::GetPathFromArgs(args)));
 }
 
-// private Uno.Threading.Future<string[]> ListEntries(object[] args) [instance] :606
+// private Uno.Threading.Future<string[]> ListEntries(object[] args) [instance] :608
 ::g::Uno::Threading::Future1* FileSystemModule::ListEntries(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "ListEntries(object[])");
     return uPtr(_operations)->ListEntries(FileSystemModule::GetPathFromArgs(args));
 }
 
-// private object ListEntriesSync(Fuse.Scripting.Context context, object[] args) [instance] :626
+// private object ListEntriesSync(Fuse.Scripting.Context context, object[] args) [instance] :628
 uObject* FileSystemModule::ListEntriesSync(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "ListEntriesSync(Fuse.Scripting.Context,object[])");
     return FileSystemModule::ToScriptingArray(::TYPES[18/*Fuse.FileSystem.FileSystemModule.ToScriptingArray<string>*/], context, uPtr(_operations)->ListEntriesSync(FileSystemModule::GetPathFromArgs(args)));
 }
 
-// private Uno.Threading.Future<string[]> ListFiles(object[] args) [instance] :650
+// private Uno.Threading.Future<string[]> ListFiles(object[] args) [instance] :652
 ::g::Uno::Threading::Future1* FileSystemModule::ListFiles(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "ListFiles(object[])");
     return uPtr(_operations)->ListFiles(FileSystemModule::GetPathFromArgs(args));
 }
 
-// private object ListFilesSync(Fuse.Scripting.Context context, object[] args) [instance] :670
+// private object ListFilesSync(Fuse.Scripting.Context context, object[] args) [instance] :672
 uObject* FileSystemModule::ListFilesSync(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "ListFilesSync(Fuse.Scripting.Context,object[])");
     return FileSystemModule::ToScriptingArray(::TYPES[18/*Fuse.FileSystem.FileSystemModule.ToScriptingArray<string>*/], context, uPtr(_operations)->ListFilesSync(FileSystemModule::GetPathFromArgs(args)));
 }
 
-// private Uno.Threading.Future<Fuse.FileSystem.Nothing> Move(object[] args) [instance] :696
+// private Uno.Threading.Future<Fuse.FileSystem.Nothing> Move(object[] args) [instance] :698
 ::g::Uno::Threading::Future1* FileSystemModule::Move(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "Move(object[])");
@@ -1348,83 +1383,83 @@ uObject* FileSystemModule::ListFilesSync(::g::Fuse::Scripting::Context* context,
     return uPtr(_operations)->Move(source, destination);
 }
 
-// private object MoveSync(Fuse.Scripting.Context context, object[] args) [instance] :717
+// private object MoveSync(Fuse.Scripting.Context context, object[] args) [instance] :719
 uObject* FileSystemModule::MoveSync(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "MoveSync(Fuse.Scripting.Context,object[])");
     uString* source = (uString*)FileSystemModule::GetArg(::TYPES[23/*Fuse.FileSystem.FileSystemModule.GetArg<string>*/], args, 0, ::STRINGS[36/*"First argum...*/]);
     uString* destination = (uString*)FileSystemModule::GetArg(::TYPES[23/*Fuse.FileSystem.FileSystemModule.GetArg<string>*/], args, 1, ::STRINGS[37/*"Second argu...*/]);
-    uPtr(_operations)->Move(source, destination);
+    uPtr(_operations)->MoveSync(source, destination);
     return NULL;
 }
 
-// private Uno.Threading.Future<byte[]> ReadBufferFromFile(object[] args) [instance] :744
+// private Uno.Threading.Future<byte[]> ReadBufferFromFile(object[] args) [instance] :796
 ::g::Uno::Threading::Future1* FileSystemModule::ReadBufferFromFile(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "ReadBufferFromFile(object[])");
     return uPtr(_operations)->ReadBufferFromFile(FileSystemModule::GetPathFromArgs(args));
 }
 
-// private object ReadBufferFromFileSync(Fuse.Scripting.Context context, object[] args) [instance] :763
+// private object ReadBufferFromFileSync(Fuse.Scripting.Context context, object[] args) [instance] :815
 uObject* FileSystemModule::ReadBufferFromFileSync(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "ReadBufferFromFileSync(Fuse.Scripting.Context,object[])");
     return uPtr(_operations)->ReadBufferFromFileSync(FileSystemModule::GetPathFromArgs(args));
 }
 
-// private Uno.Threading.Future<string> ReadTextFromFile(object[] args) [instance] :787
+// private Uno.Threading.Future<string> ReadTextFromFile(object[] args) [instance] :839
 ::g::Uno::Threading::Future1* FileSystemModule::ReadTextFromFile(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "ReadTextFromFile(object[])");
     return uPtr(_operations)->ReadTextFromFile(FileSystemModule::GetPathFromArgs(args));
 }
 
-// private object ReadTextFromFileSync(Fuse.Scripting.Context context, object[] args) [instance] :807
+// private object ReadTextFromFileSync(Fuse.Scripting.Context context, object[] args) [instance] :859
 uObject* FileSystemModule::ReadTextFromFileSync(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "ReadTextFromFileSync(Fuse.Scripting.Context,object[])");
     return uPtr(_operations)->ReadTextFromFileSync(FileSystemModule::GetPathFromArgs(args));
 }
 
-// private Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteBufferToFile(object[] args) [instance] :836
+// private Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteBufferToFile(object[] args) [instance] :888
 ::g::Uno::Threading::Future1* FileSystemModule::WriteBufferToFile(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "WriteBufferToFile(object[])");
     uString* path = FileSystemModule::GetPathFromArgs(args);
-    uArray* data = (uArray*)FileSystemModule::GetArg(::TYPES[33/*Fuse.FileSystem.FileSystemModule.GetArg<byte[]>*/], args, 1, ::STRINGS[44/*"Second argu...*/]);
+    uArray* data = (uArray*)FileSystemModule::GetArg(::TYPES[33/*Fuse.FileSystem.FileSystemModule.GetArg<byte[]>*/], args, 1, ::STRINGS[46/*"Second argu...*/]);
     return uPtr(_operations)->WriteBufferToFile(path, data);
 }
 
-// private object WriteBufferToFileSync(Fuse.Scripting.Context context, object[] args) [instance] :861
+// private object WriteBufferToFileSync(Fuse.Scripting.Context context, object[] args) [instance] :913
 uObject* FileSystemModule::WriteBufferToFileSync(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "WriteBufferToFileSync(Fuse.Scripting.Context,object[])");
     uString* path = FileSystemModule::GetPathFromArgs(args);
-    uArray* data = (uArray*)FileSystemModule::GetArg(::TYPES[33/*Fuse.FileSystem.FileSystemModule.GetArg<byte[]>*/], args, 1, ::STRINGS[44/*"Second argu...*/]);
+    uArray* data = (uArray*)FileSystemModule::GetArg(::TYPES[33/*Fuse.FileSystem.FileSystemModule.GetArg<byte[]>*/], args, 1, ::STRINGS[46/*"Second argu...*/]);
     uPtr(_operations)->WriteBufferToFileSync(path, data);
     return NULL;
 }
 
-// private Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteTextToFile(object[] args) [instance] :889
+// private Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteTextToFile(object[] args) [instance] :941
 ::g::Uno::Threading::Future1* FileSystemModule::WriteTextToFile(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "WriteTextToFile(object[])");
     uString* path = FileSystemModule::GetPathFromArgs(args);
-    uString* text = (uString*)FileSystemModule::GetArg(::TYPES[23/*Fuse.FileSystem.FileSystemModule.GetArg<string>*/], args, 1, ::STRINGS[33/*"Second argu...*/]);
+    uString* text = (uString*)FileSystemModule::GetArg(::TYPES[23/*Fuse.FileSystem.FileSystemModule.GetArg<string>*/], args, 1, ::STRINGS[35/*"Second argu...*/]);
     return uPtr(_operations)->WriteTextToFile(path, text);
 }
 
-// private object WriteTextToFileSync(Fuse.Scripting.Context context, object[] args) [instance] :910
+// private object WriteTextToFileSync(Fuse.Scripting.Context context, object[] args) [instance] :962
 uObject* FileSystemModule::WriteTextToFileSync(::g::Fuse::Scripting::Context* context, uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "WriteTextToFileSync(Fuse.Scripting.Context,object[])");
     uString* path = FileSystemModule::GetPathFromArgs(args);
-    uString* text = (uString*)FileSystemModule::GetArg(::TYPES[23/*Fuse.FileSystem.FileSystemModule.GetArg<string>*/], args, 1, ::STRINGS[33/*"Second argu...*/]);
+    uString* text = (uString*)FileSystemModule::GetArg(::TYPES[23/*Fuse.FileSystem.FileSystemModule.GetArg<string>*/], args, 1, ::STRINGS[35/*"Second argu...*/]);
     uPtr(_operations)->WriteTextToFileSync(path, text);
     return NULL;
 }
 
-// private static T GetArg<T>(object[] args, int index, string error) [static] :919
+// private static T GetArg<T>(object[] args, int index, string error) [static] :971
 uObject* FileSystemModule::GetArg(uType* __type, uArray* args, int index, uString* error)
 {
     uType* __types[] = {
@@ -1433,7 +1468,7 @@ uObject* FileSystemModule::GetArg(uType* __type, uArray* args, int index, uStrin
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "GetArg`1(object[],int,string)");
 
     if (args == NULL)
-        U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[34/*"args"*/]));
+        U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[38/*"args"*/]));
 
     uObject* val = (uPtr(args)->Length() > index) ? uAs<uObject*>(uPtr(args)->Strong<uObject*>(index), __types[0]) : NULL;
 
@@ -1443,18 +1478,18 @@ uObject* FileSystemModule::GetArg(uType* __type, uArray* args, int index, uStrin
     return val;
 }
 
-// private static string GetPathFromArgs(object[] args) [static] :934
+// private static string GetPathFromArgs(object[] args) [static] :986
 uString* FileSystemModule::GetPathFromArgs(uArray* args)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "GetPathFromArgs(object[])");
 
     if (args == NULL)
-        U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[34/*"args"*/]));
+        U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[38/*"args"*/]));
 
     uString* filename = (uPtr(args)->Length() > 0) ? uAs<uString*>(uPtr(args)->Strong<uObject*>(0), ::TYPES[25/*string*/]) : NULL;
 
     if (::g::Uno::String::op_Equality(filename, NULL))
-        U_THROW(::g::Fuse::Scripting::Error::New4(::STRINGS[35/*"first argum...*/]));
+        U_THROW(::g::Fuse::Scripting::Error::New4(::STRINGS[39/*"first argum...*/]));
 
     return filename;
 }
@@ -1467,7 +1502,7 @@ FileSystemModule* FileSystemModule::New2()
     return obj1;
 }
 
-// private static Fuse.Scripting.Array ToScriptingArray<T>(Fuse.Scripting.Context context, T[] sourceArray) [static] :948
+// private static Fuse.Scripting.Array ToScriptingArray<T>(Fuse.Scripting.Context context, T[] sourceArray) [static] :1000
 ::g::Fuse::Scripting::Array* FileSystemModule::ToScriptingArray(uType* __type, ::g::Fuse::Scripting::Context* context, uArray* sourceArray)
 {
     uType* __types[] = {
@@ -1479,15 +1514,15 @@ FileSystemModule* FileSystemModule::New2()
     return uPtr(context)->NewArray(convertedArray);
 }
 
-// private static object ToScriptingDate(Fuse.Scripting.Context context, Uno.Time.ZonedDateTime time) [static] :971
+// private static object ToScriptingDate(Fuse.Scripting.Context context, Uno.Time.ZonedDateTime time) [static] :1023
 uObject* FileSystemModule::ToScriptingDate(::g::Fuse::Scripting::Context* context, ::g::Uno::Time::ZonedDateTime* time)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "ToScriptingDate(Fuse.Scripting.Context,Uno.Time.ZonedDateTime)");
     int64_t msSinceUnixEpoch = ::g::Uno::Time::Instant__op_Subtraction1(uPtr(time)->ToInstant(), ::g::Uno::Time::Constants::UnixEpoch()).Ticks() / 10000LL;
-    return uPtr(context)->Evaluate(::STRINGS[38/*"(Date Conve...*/], ::g::Uno::String::Format(::STRINGS[39/*"new Date({0})"*/], uArray::Init<uObject*>(::TYPES[29/*object[]*/], 1, uBox<int64_t>(::g::Uno::Long_typeof(), msSinceUnixEpoch))));
+    return uPtr(context)->Evaluate(::STRINGS[40/*"(Date Conve...*/], ::g::Uno::String::Format(::STRINGS[41/*"new Date({0})"*/], uArray::Init<uObject*>(::TYPES[29/*object[]*/], 1, uBox<int64_t>(::g::Uno::Long_typeof(), msSinceUnixEpoch))));
 }
 
-// private static Fuse.Scripting.Object ToScriptingObject(Fuse.Scripting.Context context, Fuse.FileSystem.FileSystemInfo info) [static] :955
+// private static Fuse.Scripting.Object ToScriptingObject(Fuse.Scripting.Context context, Fuse.FileSystem.FileSystemInfo info) [static] :1007
 ::g::Fuse::Scripting::Object* FileSystemModule::ToScriptingObject(::g::Fuse::Scripting::Context* context, ::g::Fuse::FileSystem::FileSystemInfo* info)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemModule", "ToScriptingObject(Fuse.Scripting.Context,Fuse.FileSystem.FileSystemInfo)");
@@ -1495,16 +1530,16 @@ uObject* FileSystemModule::ToScriptingDate(::g::Fuse::Scripting::Context* contex
     ::g::Fuse::FileSystem::FileInfo* fileInfo = uAs< ::g::Fuse::FileSystem::FileInfo*>(info, ::TYPES[30/*Fuse.FileSystem.FileInfo*/]);
 
     if (fileInfo != NULL)
-        uPtr(jsobj)->Item(::STRINGS[40/*"length"*/], uBox(::g::Uno::Double_typeof(), (double)uPtr(fileInfo)->Length()));
+        uPtr(jsobj)->Item(::STRINGS[42/*"length"*/], uBox(::g::Uno::Double_typeof(), (double)uPtr(fileInfo)->Length()));
 
     uPtr(jsobj)->Item(::STRINGS[9/*"exists"*/], uBox(::TYPES[24/*bool*/], uPtr(info)->Exists()));
-    jsobj->Item(::STRINGS[41/*"fullName"*/], ::g::Fuse::FileSystem::PathTools::NormalizePath(info->FullName()));
-    jsobj->Item(::STRINGS[42/*"lastWriteTime"*/], FileSystemModule::ToScriptingDate(context, info->LastWriteTimeUtc()));
-    jsobj->Item(::STRINGS[43/*"lastAccessT...*/], FileSystemModule::ToScriptingDate(context, info->LastAccessTimeUtc()));
+    jsobj->Item(::STRINGS[43/*"fullName"*/], ::g::Fuse::FileSystem::PathTools::NormalizePath(info->FullName()));
+    jsobj->Item(::STRINGS[44/*"lastWriteTime"*/], FileSystemModule::ToScriptingDate(context, info->LastWriteTimeUtc()));
+    jsobj->Item(::STRINGS[45/*"lastAccessT...*/], FileSystemModule::ToScriptingDate(context, info->LastAccessTimeUtc()));
     return jsobj;
 }
 
-// private static Fuse.Scripting.Object ToScriptingObject<T>(Fuse.Scripting.Context context, Uno.Collections.Dictionary<string, T> dict) [static] :979
+// private static Fuse.Scripting.Object ToScriptingObject<T>(Fuse.Scripting.Context context, Uno.Collections.Dictionary<string, T> dict) [static] :1031
 ::g::Fuse::Scripting::Object* FileSystemModule::ToScriptingObject1(uType* __type, ::g::Fuse::Scripting::Context* context, ::g::Uno::Collections::Dictionary* dict)
 {
     uType* __types[] = {
@@ -1532,10 +1567,10 @@ uObject* FileSystemModule::ToScriptingDate(::g::Fuse::Scripting::Context* contex
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
-// internal sealed class FileSystemOperations :1001
+// internal sealed class FileSystemOperations :1053
 // {
 static void FileSystemOperations_build(uType* type)
 {
@@ -1551,8 +1586,8 @@ static void FileSystemOperations_build(uType* type)
     ::TYPES[43] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Fuse::FileSystem::FileSystemInfo_typeof(), NULL);
     ::TYPES[44] = type->MakeMethod(1/*RunTask<string, string[]>*/, ::g::Uno::String_typeof(), ::g::Uno::String_typeof()->Array(), NULL);
     ::TYPES[45] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::String_typeof()->Array(), NULL);
-    ::TYPES[46] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(11/*ToArray<string>*/, ::g::Uno::String_typeof(), NULL);
-    ::TYPES[47] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*Select<string, string>*/, ::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
+    ::TYPES[46] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(10/*ToArray<string>*/, ::g::Uno::String_typeof(), NULL);
+    ::TYPES[47] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(8/*Select<string, string>*/, ::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
     ::TYPES[48] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
     ::TYPES[49] = type->MakeMethod(1/*RunTask<string, byte[]>*/, ::g::Uno::String_typeof(), ::g::Uno::Byte_typeof()->Array(), NULL);
     ::TYPES[50] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::Byte_typeof()->Array(), NULL);
@@ -1596,181 +1631,199 @@ uType* FileSystemOperations_typeof()
     return type;
 }
 
-// public FileSystemOperations() :1006
+// public FileSystemOperations() :1058
 void FileSystemOperations__ctor__fn(FileSystemOperations* __this)
 {
     __this->ctor_();
 }
 
-// public FileSystemOperations(Uno.Threading.IDispatcher dispatcher) :1009
+// public FileSystemOperations(Uno.Threading.IDispatcher dispatcher) :1061
 void FileSystemOperations__ctor_1_fn(FileSystemOperations* __this, uObject* dispatcher)
 {
     __this->ctor_1(dispatcher);
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.Nothing> AppendTextToFile(string path, string text) :1015
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> AppendTextToFile(string path, string text) :1067
 void FileSystemOperations__AppendTextToFile_fn(FileSystemOperations* __this, uString* path, uString* text, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->AppendTextToFile(path, text);
 }
 
-// public Fuse.FileSystem.Nothing AppendTextToFileSync(string path, string text) :1021
+// public Fuse.FileSystem.Nothing AppendTextToFileSync(string path, string text) :1073
 void FileSystemOperations__AppendTextToFileSync_fn(FileSystemOperations* __this, uString* path, uString* text, ::g::Fuse::FileSystem::Nothing** __retval)
 {
     *__retval = __this->AppendTextToFileSync(path, text);
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.Nothing> CreateDirectory(string path) :1028
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> Copy(string source, string destination) :1200
+void FileSystemOperations__Copy_fn(FileSystemOperations* __this, uString* source, uString* destination, ::g::Uno::Threading::Future1** __retval)
+{
+    *__retval = __this->Copy(source, destination);
+}
+
+// private void CopyDirectory(string source, string destination) :1215
+void FileSystemOperations__CopyDirectory_fn(FileSystemOperations* __this, uString* source, uString* destination)
+{
+    __this->CopyDirectory(source, destination);
+}
+
+// public Fuse.FileSystem.Nothing CopySync(string source, string destination) :1206
+void FileSystemOperations__CopySync_fn(FileSystemOperations* __this, uString* source, uString* destination, ::g::Fuse::FileSystem::Nothing** __retval)
+{
+    *__retval = __this->CopySync(source, destination);
+}
+
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> CreateDirectory(string path) :1080
 void FileSystemOperations__CreateDirectory_fn(FileSystemOperations* __this, uString* path, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->CreateDirectory(path);
 }
 
-// public Fuse.FileSystem.Nothing CreateDirectorySync(string path) :1034
+// public Fuse.FileSystem.Nothing CreateDirectorySync(string path) :1086
 void FileSystemOperations__CreateDirectorySync_fn(FileSystemOperations* __this, uString* path, ::g::Fuse::FileSystem::Nothing** __retval)
 {
     *__retval = __this->CreateDirectorySync(path);
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.Nothing> Delete(string path, bool recursive) :1041
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> Delete(string path, bool recursive) :1093
 void FileSystemOperations__Delete_fn(FileSystemOperations* __this, uString* path, bool* recursive, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->Delete(path, *recursive);
 }
 
-// public Fuse.FileSystem.Nothing DeleteSync(string path, bool recursive) :1047
+// public Fuse.FileSystem.Nothing DeleteSync(string path, bool recursive) :1099
 void FileSystemOperations__DeleteSync_fn(FileSystemOperations* __this, uString* path, bool* recursive, ::g::Fuse::FileSystem::Nothing** __retval)
 {
     *__retval = __this->DeleteSync(path, *recursive);
 }
 
-// public Uno.Threading.Future<bool> Exists(string path) :1058
+// public Uno.Threading.Future<bool> Exists(string path) :1110
 void FileSystemOperations__Exists_fn(FileSystemOperations* __this, uString* path, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->Exists(path);
 }
 
-// public bool ExistsSync(string path) :1064
+// public bool ExistsSync(string path) :1116
 void FileSystemOperations__ExistsSync_fn(FileSystemOperations* __this, uString* path, bool* __retval)
 {
     *__retval = __this->ExistsSync(path);
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetDirectoryInfo(string path) :1072
+// public Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetDirectoryInfo(string path) :1124
 void FileSystemOperations__GetDirectoryInfo_fn(FileSystemOperations* __this, uString* path, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->GetDirectoryInfo(path);
 }
 
-// public Fuse.FileSystem.FileSystemInfo GetDirectoryInfoSync(string path) :1078
+// public Fuse.FileSystem.FileSystemInfo GetDirectoryInfoSync(string path) :1130
 void FileSystemOperations__GetDirectoryInfoSync_fn(FileSystemOperations* __this, uString* path, ::g::Fuse::FileSystem::FileSystemInfo** __retval)
 {
     *__retval = __this->GetDirectoryInfoSync(path);
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetFileInfo(string path) :1084
+// public Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetFileInfo(string path) :1136
 void FileSystemOperations__GetFileInfo_fn(FileSystemOperations* __this, uString* path, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->GetFileInfo(path);
 }
 
-// public Fuse.FileSystem.FileSystemInfo GetFileInfoSync(string path) :1090
+// public Fuse.FileSystem.FileSystemInfo GetFileInfoSync(string path) :1142
 void FileSystemOperations__GetFileInfoSync_fn(FileSystemOperations* __this, uString* path, ::g::Fuse::FileSystem::FileSystemInfo** __retval)
 {
     *__retval = __this->GetFileInfoSync(path);
 }
 
-// public Uno.Threading.Future<string[]> ListDirectories(string path) :1096
+// public Uno.Threading.Future<string[]> ListDirectories(string path) :1148
 void FileSystemOperations__ListDirectories_fn(FileSystemOperations* __this, uString* path, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->ListDirectories(path);
 }
 
-// public string[] ListDirectoriesSync(string path) :1102
+// public string[] ListDirectoriesSync(string path) :1154
 void FileSystemOperations__ListDirectoriesSync_fn(FileSystemOperations* __this, uString* path, uArray** __retval)
 {
     *__retval = __this->ListDirectoriesSync(path);
 }
 
-// public Uno.Threading.Future<string[]> ListEntries(string path) :1108
+// public Uno.Threading.Future<string[]> ListEntries(string path) :1160
 void FileSystemOperations__ListEntries_fn(FileSystemOperations* __this, uString* path, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->ListEntries(path);
 }
 
-// public string[] ListEntriesSync(string path) :1114
+// public string[] ListEntriesSync(string path) :1166
 void FileSystemOperations__ListEntriesSync_fn(FileSystemOperations* __this, uString* path, uArray** __retval)
 {
     *__retval = __this->ListEntriesSync(path);
 }
 
-// public Uno.Threading.Future<string[]> ListFiles(string path) :1120
+// public Uno.Threading.Future<string[]> ListFiles(string path) :1172
 void FileSystemOperations__ListFiles_fn(FileSystemOperations* __this, uString* path, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->ListFiles(path);
 }
 
-// public string[] ListFilesSync(string path) :1126
+// public string[] ListFilesSync(string path) :1178
 void FileSystemOperations__ListFilesSync_fn(FileSystemOperations* __this, uString* path, uArray** __retval)
 {
     *__retval = __this->ListFilesSync(path);
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.Nothing> Move(string source, string destination) :1132
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> Move(string source, string destination) :1184
 void FileSystemOperations__Move_fn(FileSystemOperations* __this, uString* source, uString* destination, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->Move(source, destination);
 }
 
-// public Fuse.FileSystem.Nothing MoveSync(string source, string destination) :1138
+// public Fuse.FileSystem.Nothing MoveSync(string source, string destination) :1190
 void FileSystemOperations__MoveSync_fn(FileSystemOperations* __this, uString* source, uString* destination, ::g::Fuse::FileSystem::Nothing** __retval)
 {
     *__retval = __this->MoveSync(source, destination);
 }
 
-// public FileSystemOperations New() :1006
+// public FileSystemOperations New() :1058
 void FileSystemOperations__New1_fn(FileSystemOperations** __retval)
 {
     *__retval = FileSystemOperations::New1();
 }
 
-// public FileSystemOperations New(Uno.Threading.IDispatcher dispatcher) :1009
+// public FileSystemOperations New(Uno.Threading.IDispatcher dispatcher) :1061
 void FileSystemOperations__New2_fn(uObject* dispatcher, FileSystemOperations** __retval)
 {
     *__retval = FileSystemOperations::New2(dispatcher);
 }
 
-// public Uno.Threading.Future<byte[]> ReadBufferFromFile(string path) :1148
+// public Uno.Threading.Future<byte[]> ReadBufferFromFile(string path) :1235
 void FileSystemOperations__ReadBufferFromFile_fn(FileSystemOperations* __this, uString* path, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->ReadBufferFromFile(path);
 }
 
-// public byte[] ReadBufferFromFileSync(string path) :1154
+// public byte[] ReadBufferFromFileSync(string path) :1241
 void FileSystemOperations__ReadBufferFromFileSync_fn(FileSystemOperations* __this, uString* path, uArray** __retval)
 {
     *__retval = __this->ReadBufferFromFileSync(path);
 }
 
-// public Uno.Threading.Future<string> ReadTextFromFile(string path) :1161
+// public Uno.Threading.Future<string> ReadTextFromFile(string path) :1248
 void FileSystemOperations__ReadTextFromFile_fn(FileSystemOperations* __this, uString* path, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->ReadTextFromFile(path);
 }
 
-// public string ReadTextFromFileSync(string path) :1167
+// public string ReadTextFromFileSync(string path) :1254
 void FileSystemOperations__ReadTextFromFileSync_fn(FileSystemOperations* __this, uString* path, uString** __retval)
 {
     *__retval = __this->ReadTextFromFileSync(path);
 }
 
-// private Uno.Threading.Future<T> RunTask<T>(Uno.Func<T> del) :1200
+// private Uno.Threading.Future<T> RunTask<T>(Uno.Func<T> del) :1287
 void FileSystemOperations__RunTask_fn(FileSystemOperations* __this, uType* __type, uDelegate* del, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->RunTask(__type, del);
 }
 
-// private Uno.Threading.Future<TResult> RunTask<T1, TResult>(Uno.Func<T1, TResult> del, T1 arg1) :1208
+// private Uno.Threading.Future<TResult> RunTask<T1, TResult>(Uno.Func<T1, TResult> del, T1 arg1) :1295
 void FileSystemOperations__RunTask1_fn(FileSystemOperations* __this, uType* __type, uDelegate* del, void* arg1, ::g::Uno::Threading::Future1** __retval)
 {
     uType* __types[] = {
@@ -1778,11 +1831,11 @@ void FileSystemOperations__RunTask1_fn(FileSystemOperations* __this, uType* __ty
         __type->Precalced(1/*Uno.Func<TResult>*/),
         __type->Precalced(2/*Fuse.FileSystem.FileSystemOperations.Closure<T1, TResult>*/),
     };
-    FileSystemOperations__Closure* ret15;
-    return *__retval = (::g::Uno::Threading::Future1*)__this->RunTask(__types[0], uDelegate::New(__types[1], (void*)FileSystemOperations__Closure__Invoke_fn, (FileSystemOperations__Closure__New1_fn(__types[2], del, arg1, &ret15), ret15))), void();
+    FileSystemOperations__Closure* ret19;
+    return *__retval = (::g::Uno::Threading::Future1*)__this->RunTask(__types[0], uDelegate::New(__types[1], (void*)FileSystemOperations__Closure__Invoke_fn, (FileSystemOperations__Closure__New1_fn(__types[2], del, arg1, &ret19), ret19))), void();
 }
 
-// private Uno.Threading.Future<TResult> RunTask<T1, T2, TResult>(Uno.Func<T1, T2, TResult> del, T1 arg1, T2 arg2) :1214
+// private Uno.Threading.Future<TResult> RunTask<T1, T2, TResult>(Uno.Func<T1, T2, TResult> del, T1 arg1, T2 arg2) :1301
 void FileSystemOperations__RunTask2_fn(FileSystemOperations* __this, uType* __type, uDelegate* del, void* arg1, void* arg2, ::g::Uno::Threading::Future1** __retval)
 {
     uType* __types[] = {
@@ -1790,82 +1843,127 @@ void FileSystemOperations__RunTask2_fn(FileSystemOperations* __this, uType* __ty
         __type->Precalced(1/*Uno.Func<TResult>*/),
         __type->Precalced(2/*Fuse.FileSystem.FileSystemOperations.Closure<T1, T2, TResult>*/),
     };
-    FileSystemOperations__Closure1* ret16;
-    return *__retval = (::g::Uno::Threading::Future1*)__this->RunTask(__types[0], uDelegate::New(__types[1], (void*)FileSystemOperations__Closure1__Invoke_fn, (FileSystemOperations__Closure1__New1_fn(__types[2], del, arg1, arg2, &ret16), ret16))), void();
+    FileSystemOperations__Closure1* ret20;
+    return *__retval = (::g::Uno::Threading::Future1*)__this->RunTask(__types[0], uDelegate::New(__types[1], (void*)FileSystemOperations__Closure1__Invoke_fn, (FileSystemOperations__Closure1__New1_fn(__types[2], del, arg1, arg2, &ret20), ret20))), void();
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteBufferToFile(string path, byte[] data) :1174
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteBufferToFile(string path, byte[] data) :1261
 void FileSystemOperations__WriteBufferToFile_fn(FileSystemOperations* __this, uString* path, uArray* data, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->WriteBufferToFile(path, data);
 }
 
-// public Fuse.FileSystem.Nothing WriteBufferToFileSync(string path, byte[] data) :1180
+// public Fuse.FileSystem.Nothing WriteBufferToFileSync(string path, byte[] data) :1267
 void FileSystemOperations__WriteBufferToFileSync_fn(FileSystemOperations* __this, uString* path, uArray* data, ::g::Fuse::FileSystem::Nothing** __retval)
 {
     *__retval = __this->WriteBufferToFileSync(path, data);
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteTextToFile(string path, string text) :1187
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteTextToFile(string path, string text) :1274
 void FileSystemOperations__WriteTextToFile_fn(FileSystemOperations* __this, uString* path, uString* text, ::g::Uno::Threading::Future1** __retval)
 {
     *__retval = __this->WriteTextToFile(path, text);
 }
 
-// public Fuse.FileSystem.Nothing WriteTextToFileSync(string path, string text) :1193
+// public Fuse.FileSystem.Nothing WriteTextToFileSync(string path, string text) :1280
 void FileSystemOperations__WriteTextToFileSync_fn(FileSystemOperations* __this, uString* path, uString* text, ::g::Fuse::FileSystem::Nothing** __retval)
 {
     *__retval = __this->WriteTextToFileSync(path, text);
 }
 
-// public FileSystemOperations() [instance] :1006
+// public FileSystemOperations() [instance] :1058
 void FileSystemOperations::ctor_()
 {
     ctor_1(NULL);
 }
 
-// public FileSystemOperations(Uno.Threading.IDispatcher dispatcher) [instance] :1009
+// public FileSystemOperations(Uno.Threading.IDispatcher dispatcher) [instance] :1061
 void FileSystemOperations::ctor_1(uObject* dispatcher)
 {
     _dispatcher = dispatcher;
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.Nothing> AppendTextToFile(string path, string text) [instance] :1015
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> AppendTextToFile(string path, string text) [instance] :1067
 ::g::Uno::Threading::Future1* FileSystemOperations::AppendTextToFile(uString* path, uString* text)
 {
-    ::g::Uno::Threading::Future1* ret3;
-    return (FileSystemOperations__RunTask2_fn(this, ::TYPES[34/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string, Fuse.FileSystem.Nothing>*/], uDelegate::New(::TYPES[35/*Uno.Func<string, string, Fuse.FileSystem.Nothing>*/], (void*)FileSystemOperations__AppendTextToFileSync_fn, this), path, text, &ret3), ret3);
+    ::g::Uno::Threading::Future1* ret6;
+    return (FileSystemOperations__RunTask2_fn(this, ::TYPES[34/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string, Fuse.FileSystem.Nothing>*/], uDelegate::New(::TYPES[35/*Uno.Func<string, string, Fuse.FileSystem.Nothing>*/], (void*)FileSystemOperations__AppendTextToFileSync_fn, this), path, text, &ret6), ret6);
 }
 
-// public Fuse.FileSystem.Nothing AppendTextToFileSync(string path, string text) [instance] :1021
+// public Fuse.FileSystem.Nothing AppendTextToFileSync(string path, string text) [instance] :1073
 ::g::Fuse::FileSystem::Nothing* FileSystemOperations::AppendTextToFileSync(uString* path, uString* text)
 {
     ::g::Uno::IO::File::AppendAllText(path, text);
     return NULL;
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.Nothing> CreateDirectory(string path) [instance] :1028
-::g::Uno::Threading::Future1* FileSystemOperations::CreateDirectory(uString* path)
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> Copy(string source, string destination) [instance] :1200
+::g::Uno::Threading::Future1* FileSystemOperations::Copy(uString* source, uString* destination)
 {
-    ::g::Uno::Threading::Future1* ret4;
-    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[36/*Fuse.FileSystem.FileSystemOperations.RunTask<string, Fuse.FileSystem.Nothing>*/], uDelegate::New(::TYPES[37/*Uno.Func<string, Fuse.FileSystem.Nothing>*/], (void*)FileSystemOperations__CreateDirectorySync_fn, this), path, &ret4), ret4);
+    ::g::Uno::Threading::Future1* ret7;
+    return (FileSystemOperations__RunTask2_fn(this, ::TYPES[34/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string, Fuse.FileSystem.Nothing>*/], uDelegate::New(::TYPES[35/*Uno.Func<string, string, Fuse.FileSystem.Nothing>*/], (void*)FileSystemOperations__CopySync_fn, this), source, destination, &ret7), ret7);
 }
 
-// public Fuse.FileSystem.Nothing CreateDirectorySync(string path) [instance] :1034
+// private void CopyDirectory(string source, string destination) [instance] :1215
+void FileSystemOperations::CopyDirectory(uString* source, uString* destination)
+{
+    uStackFrame __("Fuse.FileSystem.FileSystemOperations", "CopyDirectory(string,string)");
+
+    if (!::g::Uno::IO::Directory::Exists(destination))
+        ::g::Uno::IO::Directory::CreateDirectory(destination);
+
+    uArray* files = ListEntriesSync(source);
+
+    for (int index2 = 0, length3 = uPtr(files)->Length(); index2 < length3; ++index2)
+    {
+        uString* file = uPtr(files)->Strong<uString*>(index2);
+
+        if (::g::Uno::IO::Directory::Exists(file))
+        {
+            CopyDirectory(file, destination);
+            continue;
+        }
+
+        uString* temppath = ::g::Uno::String::Replace1(uPtr(file), source, destination);
+        ::g::Uno::IO::File::Copy(file, temppath);
+    }
+}
+
+// public Fuse.FileSystem.Nothing CopySync(string source, string destination) [instance] :1206
+::g::Fuse::FileSystem::Nothing* FileSystemOperations::CopySync(uString* source, uString* destination)
+{
+    uStackFrame __("Fuse.FileSystem.FileSystemOperations", "CopySync(string,string)");
+
+    if (::g::Uno::IO::Directory::Exists(source))
+        CopyDirectory(source, destination);
+    else
+        ::g::Uno::IO::File::Copy(source, destination);
+
+    return NULL;
+}
+
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> CreateDirectory(string path) [instance] :1080
+::g::Uno::Threading::Future1* FileSystemOperations::CreateDirectory(uString* path)
+{
+    ::g::Uno::Threading::Future1* ret8;
+    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[36/*Fuse.FileSystem.FileSystemOperations.RunTask<string, Fuse.FileSystem.Nothing>*/], uDelegate::New(::TYPES[37/*Uno.Func<string, Fuse.FileSystem.Nothing>*/], (void*)FileSystemOperations__CreateDirectorySync_fn, this), path, &ret8), ret8);
+}
+
+// public Fuse.FileSystem.Nothing CreateDirectorySync(string path) [instance] :1086
 ::g::Fuse::FileSystem::Nothing* FileSystemOperations::CreateDirectorySync(uString* path)
 {
     ::g::Uno::IO::Directory::CreateDirectory(path);
     return NULL;
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.Nothing> Delete(string path, bool recursive) [instance] :1041
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> Delete(string path, bool recursive) [instance] :1093
 ::g::Uno::Threading::Future1* FileSystemOperations::Delete(uString* path, bool recursive)
 {
-    ::g::Uno::Threading::Future1* ret5;
-    return (FileSystemOperations__RunTask2_fn(this, ::TYPES[38/*Fuse.FileSystem.FileSystemOperations.RunTask<string, bool, Fuse.FileSystem.Nothing>*/], uDelegate::New(::TYPES[39/*Uno.Func<string, bool, Fuse.FileSystem.Nothing>*/], (void*)FileSystemOperations__DeleteSync_fn, this), path, uCRef(recursive), &ret5), ret5);
+    ::g::Uno::Threading::Future1* ret9;
+    return (FileSystemOperations__RunTask2_fn(this, ::TYPES[38/*Fuse.FileSystem.FileSystemOperations.RunTask<string, bool, Fuse.FileSystem.Nothing>*/], uDelegate::New(::TYPES[39/*Uno.Func<string, bool, Fuse.FileSystem.Nothing>*/], (void*)FileSystemOperations__DeleteSync_fn, this), path, uCRef(recursive), &ret9), ret9);
 }
 
-// public Fuse.FileSystem.Nothing DeleteSync(string path, bool recursive) [instance] :1047
+// public Fuse.FileSystem.Nothing DeleteSync(string path, bool recursive) [instance] :1099
 ::g::Fuse::FileSystem::Nothing* FileSystemOperations::DeleteSync(uString* path, bool recursive)
 {
     if (::g::Uno::IO::Directory::Exists(path))
@@ -1876,97 +1974,97 @@ void FileSystemOperations::ctor_1(uObject* dispatcher)
     return NULL;
 }
 
-// public Uno.Threading.Future<bool> Exists(string path) [instance] :1058
+// public Uno.Threading.Future<bool> Exists(string path) [instance] :1110
 ::g::Uno::Threading::Future1* FileSystemOperations::Exists(uString* path)
 {
-    ::g::Uno::Threading::Future1* ret6;
-    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[40/*Fuse.FileSystem.FileSystemOperations.RunTask<string, bool>*/], uDelegate::New(::TYPES[41/*Uno.Func<string, bool>*/], (void*)FileSystemOperations__ExistsSync_fn, this), path, &ret6), ret6);
+    ::g::Uno::Threading::Future1* ret10;
+    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[40/*Fuse.FileSystem.FileSystemOperations.RunTask<string, bool>*/], uDelegate::New(::TYPES[41/*Uno.Func<string, bool>*/], (void*)FileSystemOperations__ExistsSync_fn, this), path, &ret10), ret10);
 }
 
-// public bool ExistsSync(string path) [instance] :1064
+// public bool ExistsSync(string path) [instance] :1116
 bool FileSystemOperations::ExistsSync(uString* path)
 {
     return ::g::Uno::IO::File::Exists(path) || ::g::Uno::IO::Directory::Exists(path);
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetDirectoryInfo(string path) [instance] :1072
+// public Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetDirectoryInfo(string path) [instance] :1124
 ::g::Uno::Threading::Future1* FileSystemOperations::GetDirectoryInfo(uString* path)
 {
-    ::g::Uno::Threading::Future1* ret7;
-    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[42/*Fuse.FileSystem.FileSystemOperations.RunTask<string, Fuse.FileSystem.FileSystemInfo>*/], uDelegate::New(::TYPES[43/*Uno.Func<string, Fuse.FileSystem.FileSystemInfo>*/], (void*)FileSystemOperations__GetDirectoryInfoSync_fn, this), path, &ret7), ret7);
+    ::g::Uno::Threading::Future1* ret11;
+    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[42/*Fuse.FileSystem.FileSystemOperations.RunTask<string, Fuse.FileSystem.FileSystemInfo>*/], uDelegate::New(::TYPES[43/*Uno.Func<string, Fuse.FileSystem.FileSystemInfo>*/], (void*)FileSystemOperations__GetDirectoryInfoSync_fn, this), path, &ret11), ret11);
 }
 
-// public Fuse.FileSystem.FileSystemInfo GetDirectoryInfoSync(string path) [instance] :1078
+// public Fuse.FileSystem.FileSystemInfo GetDirectoryInfoSync(string path) [instance] :1130
 ::g::Fuse::FileSystem::FileSystemInfo* FileSystemOperations::GetDirectoryInfoSync(uString* path)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemOperations", "GetDirectoryInfoSync(string)");
     return ::g::Fuse::FileSystem::DirectoryInfo::New1(path);
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetFileInfo(string path) [instance] :1084
+// public Uno.Threading.Future<Fuse.FileSystem.FileSystemInfo> GetFileInfo(string path) [instance] :1136
 ::g::Uno::Threading::Future1* FileSystemOperations::GetFileInfo(uString* path)
 {
-    ::g::Uno::Threading::Future1* ret8;
-    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[42/*Fuse.FileSystem.FileSystemOperations.RunTask<string, Fuse.FileSystem.FileSystemInfo>*/], uDelegate::New(::TYPES[43/*Uno.Func<string, Fuse.FileSystem.FileSystemInfo>*/], (void*)FileSystemOperations__GetFileInfoSync_fn, this), path, &ret8), ret8);
+    ::g::Uno::Threading::Future1* ret12;
+    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[42/*Fuse.FileSystem.FileSystemOperations.RunTask<string, Fuse.FileSystem.FileSystemInfo>*/], uDelegate::New(::TYPES[43/*Uno.Func<string, Fuse.FileSystem.FileSystemInfo>*/], (void*)FileSystemOperations__GetFileInfoSync_fn, this), path, &ret12), ret12);
 }
 
-// public Fuse.FileSystem.FileSystemInfo GetFileInfoSync(string path) [instance] :1090
+// public Fuse.FileSystem.FileSystemInfo GetFileInfoSync(string path) [instance] :1142
 ::g::Fuse::FileSystem::FileSystemInfo* FileSystemOperations::GetFileInfoSync(uString* path)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemOperations", "GetFileInfoSync(string)");
     return ::g::Fuse::FileSystem::FileInfo::New1(path);
 }
 
-// public Uno.Threading.Future<string[]> ListDirectories(string path) [instance] :1096
+// public Uno.Threading.Future<string[]> ListDirectories(string path) [instance] :1148
 ::g::Uno::Threading::Future1* FileSystemOperations::ListDirectories(uString* path)
 {
-    ::g::Uno::Threading::Future1* ret9;
-    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[44/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string[]>*/], uDelegate::New(::TYPES[45/*Uno.Func<string, string[]>*/], (void*)FileSystemOperations__ListDirectoriesSync_fn, this), path, &ret9), ret9);
+    ::g::Uno::Threading::Future1* ret13;
+    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[44/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string[]>*/], uDelegate::New(::TYPES[45/*Uno.Func<string, string[]>*/], (void*)FileSystemOperations__ListDirectoriesSync_fn, this), path, &ret13), ret13);
 }
 
-// public string[] ListDirectoriesSync(string path) [instance] :1102
+// public string[] ListDirectoriesSync(string path) [instance] :1154
 uArray* FileSystemOperations::ListDirectoriesSync(uString* path)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemOperations", "ListDirectoriesSync(string)");
     return (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[46/*Uno.Collections.EnumerableExtensions.ToArray<string>*/], (uObject*)::g::Uno::Collections::EnumerableExtensions::Select(::TYPES[47/*Uno.Collections.EnumerableExtensions.Select<string, string>*/], ::g::Uno::IO::Directory::EnumerateDirectories(path), uDelegate::New(::TYPES[48/*Uno.Func<string, string>*/], (void*)::g::Fuse::FileSystem::PathTools__NormalizePath_fn)));
 }
 
-// public Uno.Threading.Future<string[]> ListEntries(string path) [instance] :1108
+// public Uno.Threading.Future<string[]> ListEntries(string path) [instance] :1160
 ::g::Uno::Threading::Future1* FileSystemOperations::ListEntries(uString* path)
 {
-    ::g::Uno::Threading::Future1* ret10;
-    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[44/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string[]>*/], uDelegate::New(::TYPES[45/*Uno.Func<string, string[]>*/], (void*)FileSystemOperations__ListEntriesSync_fn, this), path, &ret10), ret10);
+    ::g::Uno::Threading::Future1* ret14;
+    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[44/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string[]>*/], uDelegate::New(::TYPES[45/*Uno.Func<string, string[]>*/], (void*)FileSystemOperations__ListEntriesSync_fn, this), path, &ret14), ret14);
 }
 
-// public string[] ListEntriesSync(string path) [instance] :1114
+// public string[] ListEntriesSync(string path) [instance] :1166
 uArray* FileSystemOperations::ListEntriesSync(uString* path)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemOperations", "ListEntriesSync(string)");
     return (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[46/*Uno.Collections.EnumerableExtensions.ToArray<string>*/], (uObject*)::g::Uno::Collections::EnumerableExtensions::Select(::TYPES[47/*Uno.Collections.EnumerableExtensions.Select<string, string>*/], ::g::Uno::IO::Directory::EnumerateFileSystemEntries(path), uDelegate::New(::TYPES[48/*Uno.Func<string, string>*/], (void*)::g::Fuse::FileSystem::PathTools__NormalizePath_fn)));
 }
 
-// public Uno.Threading.Future<string[]> ListFiles(string path) [instance] :1120
+// public Uno.Threading.Future<string[]> ListFiles(string path) [instance] :1172
 ::g::Uno::Threading::Future1* FileSystemOperations::ListFiles(uString* path)
 {
-    ::g::Uno::Threading::Future1* ret11;
-    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[44/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string[]>*/], uDelegate::New(::TYPES[45/*Uno.Func<string, string[]>*/], (void*)FileSystemOperations__ListFilesSync_fn, this), path, &ret11), ret11);
+    ::g::Uno::Threading::Future1* ret15;
+    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[44/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string[]>*/], uDelegate::New(::TYPES[45/*Uno.Func<string, string[]>*/], (void*)FileSystemOperations__ListFilesSync_fn, this), path, &ret15), ret15);
 }
 
-// public string[] ListFilesSync(string path) [instance] :1126
+// public string[] ListFilesSync(string path) [instance] :1178
 uArray* FileSystemOperations::ListFilesSync(uString* path)
 {
     uStackFrame __("Fuse.FileSystem.FileSystemOperations", "ListFilesSync(string)");
     return (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[46/*Uno.Collections.EnumerableExtensions.ToArray<string>*/], (uObject*)::g::Uno::Collections::EnumerableExtensions::Select(::TYPES[47/*Uno.Collections.EnumerableExtensions.Select<string, string>*/], ::g::Uno::IO::Directory::EnumerateFiles(path), uDelegate::New(::TYPES[48/*Uno.Func<string, string>*/], (void*)::g::Fuse::FileSystem::PathTools__NormalizePath_fn)));
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.Nothing> Move(string source, string destination) [instance] :1132
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> Move(string source, string destination) [instance] :1184
 ::g::Uno::Threading::Future1* FileSystemOperations::Move(uString* source, uString* destination)
 {
-    ::g::Uno::Threading::Future1* ret12;
-    return (FileSystemOperations__RunTask2_fn(this, ::TYPES[34/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string, Fuse.FileSystem.Nothing>*/], uDelegate::New(::TYPES[35/*Uno.Func<string, string, Fuse.FileSystem.Nothing>*/], (void*)FileSystemOperations__MoveSync_fn, this), source, destination, &ret12), ret12);
+    ::g::Uno::Threading::Future1* ret16;
+    return (FileSystemOperations__RunTask2_fn(this, ::TYPES[34/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string, Fuse.FileSystem.Nothing>*/], uDelegate::New(::TYPES[35/*Uno.Func<string, string, Fuse.FileSystem.Nothing>*/], (void*)FileSystemOperations__MoveSync_fn, this), source, destination, &ret16), ret16);
 }
 
-// public Fuse.FileSystem.Nothing MoveSync(string source, string destination) [instance] :1138
+// public Fuse.FileSystem.Nothing MoveSync(string source, string destination) [instance] :1190
 ::g::Fuse::FileSystem::Nothing* FileSystemOperations::MoveSync(uString* source, uString* destination)
 {
     if (::g::Uno::IO::Directory::Exists(source))
@@ -1977,33 +2075,33 @@ uArray* FileSystemOperations::ListFilesSync(uString* path)
     return NULL;
 }
 
-// public Uno.Threading.Future<byte[]> ReadBufferFromFile(string path) [instance] :1148
+// public Uno.Threading.Future<byte[]> ReadBufferFromFile(string path) [instance] :1235
 ::g::Uno::Threading::Future1* FileSystemOperations::ReadBufferFromFile(uString* path)
 {
-    ::g::Uno::Threading::Future1* ret13;
-    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[49/*Fuse.FileSystem.FileSystemOperations.RunTask<string, byte[]>*/], uDelegate::New(::TYPES[50/*Uno.Func<string, byte[]>*/], (void*)FileSystemOperations__ReadBufferFromFileSync_fn, this), path, &ret13), ret13);
+    ::g::Uno::Threading::Future1* ret17;
+    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[49/*Fuse.FileSystem.FileSystemOperations.RunTask<string, byte[]>*/], uDelegate::New(::TYPES[50/*Uno.Func<string, byte[]>*/], (void*)FileSystemOperations__ReadBufferFromFileSync_fn, this), path, &ret17), ret17);
 }
 
-// public byte[] ReadBufferFromFileSync(string path) [instance] :1154
+// public byte[] ReadBufferFromFileSync(string path) [instance] :1241
 uArray* FileSystemOperations::ReadBufferFromFileSync(uString* path)
 {
     return ::g::Uno::IO::File::ReadAllBytes(path);
 }
 
-// public Uno.Threading.Future<string> ReadTextFromFile(string path) [instance] :1161
+// public Uno.Threading.Future<string> ReadTextFromFile(string path) [instance] :1248
 ::g::Uno::Threading::Future1* FileSystemOperations::ReadTextFromFile(uString* path)
 {
-    ::g::Uno::Threading::Future1* ret14;
-    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[51/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string>*/], uDelegate::New(::TYPES[48/*Uno.Func<string, string>*/], (void*)FileSystemOperations__ReadTextFromFileSync_fn, this), path, &ret14), ret14);
+    ::g::Uno::Threading::Future1* ret18;
+    return (FileSystemOperations__RunTask1_fn(this, ::TYPES[51/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string>*/], uDelegate::New(::TYPES[48/*Uno.Func<string, string>*/], (void*)FileSystemOperations__ReadTextFromFileSync_fn, this), path, &ret18), ret18);
 }
 
-// public string ReadTextFromFileSync(string path) [instance] :1167
+// public string ReadTextFromFileSync(string path) [instance] :1254
 uString* FileSystemOperations::ReadTextFromFileSync(uString* path)
 {
     return ::g::Uno::IO::File::ReadAllText(path);
 }
 
-// private Uno.Threading.Future<T> RunTask<T>(Uno.Func<T> del) [instance] :1200
+// private Uno.Threading.Future<T> RunTask<T>(Uno.Func<T> del) [instance] :1287
 ::g::Uno::Threading::Future1* FileSystemOperations::RunTask(uType* __type, uDelegate* del)
 {
     uType* __types[] = {
@@ -2016,55 +2114,55 @@ uString* FileSystemOperations::ReadTextFromFileSync(uString* path)
     return (::g::Uno::Threading::Future1*)::g::Uno::Threading::Promise::Run1(__types[0], _dispatcher, del);
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteBufferToFile(string path, byte[] data) [instance] :1174
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteBufferToFile(string path, byte[] data) [instance] :1261
 ::g::Uno::Threading::Future1* FileSystemOperations::WriteBufferToFile(uString* path, uArray* data)
 {
-    ::g::Uno::Threading::Future1* ret17;
-    return (FileSystemOperations__RunTask2_fn(this, ::TYPES[56/*Fuse.FileSystem.FileSystemOperations.RunTask<string, byte[], Fuse.FileSystem.Nothing>*/], uDelegate::New(::TYPES[57/*Uno.Func<string, byte[], Fuse.FileSystem.Nothing>*/], (void*)FileSystemOperations__WriteBufferToFileSync_fn, this), path, data, &ret17), ret17);
+    ::g::Uno::Threading::Future1* ret21;
+    return (FileSystemOperations__RunTask2_fn(this, ::TYPES[56/*Fuse.FileSystem.FileSystemOperations.RunTask<string, byte[], Fuse.FileSystem.Nothing>*/], uDelegate::New(::TYPES[57/*Uno.Func<string, byte[], Fuse.FileSystem.Nothing>*/], (void*)FileSystemOperations__WriteBufferToFileSync_fn, this), path, data, &ret21), ret21);
 }
 
-// public Fuse.FileSystem.Nothing WriteBufferToFileSync(string path, byte[] data) [instance] :1180
+// public Fuse.FileSystem.Nothing WriteBufferToFileSync(string path, byte[] data) [instance] :1267
 ::g::Fuse::FileSystem::Nothing* FileSystemOperations::WriteBufferToFileSync(uString* path, uArray* data)
 {
     ::g::Uno::IO::File::WriteAllBytes(path, data);
     return NULL;
 }
 
-// public Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteTextToFile(string path, string text) [instance] :1187
+// public Uno.Threading.Future<Fuse.FileSystem.Nothing> WriteTextToFile(string path, string text) [instance] :1274
 ::g::Uno::Threading::Future1* FileSystemOperations::WriteTextToFile(uString* path, uString* text)
 {
-    ::g::Uno::Threading::Future1* ret18;
-    return (FileSystemOperations__RunTask2_fn(this, ::TYPES[34/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string, Fuse.FileSystem.Nothing>*/], uDelegate::New(::TYPES[35/*Uno.Func<string, string, Fuse.FileSystem.Nothing>*/], (void*)FileSystemOperations__WriteTextToFileSync_fn, this), path, text, &ret18), ret18);
+    ::g::Uno::Threading::Future1* ret22;
+    return (FileSystemOperations__RunTask2_fn(this, ::TYPES[34/*Fuse.FileSystem.FileSystemOperations.RunTask<string, string, Fuse.FileSystem.Nothing>*/], uDelegate::New(::TYPES[35/*Uno.Func<string, string, Fuse.FileSystem.Nothing>*/], (void*)FileSystemOperations__WriteTextToFileSync_fn, this), path, text, &ret22), ret22);
 }
 
-// public Fuse.FileSystem.Nothing WriteTextToFileSync(string path, string text) [instance] :1193
+// public Fuse.FileSystem.Nothing WriteTextToFileSync(string path, string text) [instance] :1280
 ::g::Fuse::FileSystem::Nothing* FileSystemOperations::WriteTextToFileSync(uString* path, uString* text)
 {
     ::g::Uno::IO::File::WriteAllText(path, text);
     return NULL;
 }
 
-// public FileSystemOperations New() [static] :1006
+// public FileSystemOperations New() [static] :1058
 FileSystemOperations* FileSystemOperations::New1()
 {
-    FileSystemOperations* obj1 = (FileSystemOperations*)uNew(FileSystemOperations_typeof());
-    obj1->ctor_();
-    return obj1;
+    FileSystemOperations* obj4 = (FileSystemOperations*)uNew(FileSystemOperations_typeof());
+    obj4->ctor_();
+    return obj4;
 }
 
-// public FileSystemOperations New(Uno.Threading.IDispatcher dispatcher) [static] :1009
+// public FileSystemOperations New(Uno.Threading.IDispatcher dispatcher) [static] :1061
 FileSystemOperations* FileSystemOperations::New2(uObject* dispatcher)
 {
-    FileSystemOperations* obj2 = (FileSystemOperations*)uNew(FileSystemOperations_typeof());
-    obj2->ctor_1(dispatcher);
-    return obj2;
+    FileSystemOperations* obj5 = (FileSystemOperations*)uNew(FileSystemOperations_typeof());
+    obj5->ctor_1(dispatcher);
+    return obj5;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
-// internal sealed class Nothing :1318
+// internal sealed class Nothing :1405
 // {
 static void Nothing_build(uType* type)
 {
@@ -2084,24 +2182,24 @@ uType* Nothing_typeof()
     return type;
 }
 
-// private Nothing() :1321
+// private Nothing() :1408
 void Nothing__ctor__fn(Nothing* __this)
 {
     __this->ctor_();
 }
 
-// private Nothing New() :1321
+// private Nothing New() :1408
 void Nothing__New1_fn(Nothing** __retval)
 {
     *__retval = Nothing::New1();
 }
 
-// private Nothing() [instance] :1321
+// private Nothing() [instance] :1408
 void Nothing::ctor_()
 {
 }
 
-// private Nothing New() [static] :1321
+// private Nothing New() [static] :1408
 Nothing* Nothing::New1()
 {
     Nothing* obj1 = (Nothing*)uNew(Nothing_typeof());
@@ -2110,10 +2208,10 @@ Nothing* Nothing::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
-// internal static class PathTools :1333
+// internal static class PathTools :1420
 // {
 static void PathTools_build(uType* type)
 {
@@ -2131,13 +2229,13 @@ uClassType* PathTools_typeof()
     return type;
 }
 
-// public static string NormalizePath(string path) :1335
+// public static string NormalizePath(string path) :1422
 void PathTools__NormalizePath_fn(uString* path, uString** __retval)
 {
     *__retval = PathTools::NormalizePath(path);
 }
 
-// public static string NormalizePath(string path) [static] :1335
+// public static string NormalizePath(string path) [static] :1422
 uString* PathTools::NormalizePath(uString* path)
 {
     uStackFrame __("Fuse.FileSystem.PathTools", "NormalizePath(string)");

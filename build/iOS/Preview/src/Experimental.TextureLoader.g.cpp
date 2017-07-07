@@ -27,8 +27,8 @@ namespace g{
 namespace Experimental{
 namespace TextureLoader{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/0.47.4/$.uno
-// ------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/1.0.1/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // internal sealed class Callback :11
 // {
@@ -92,8 +92,8 @@ Callback* Callback::New1(uDelegate* action)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/0.47.4/$.uno
-// ------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/1.0.1/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public sealed class InvalidContentTypeException :27
 // {
@@ -146,8 +146,8 @@ InvalidContentTypeException* InvalidContentTypeException::New4(uString* reason)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/0.47.4/$.uno
-// ------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/1.0.1/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public static class TextureLoader :32
 // {
@@ -283,8 +283,8 @@ void TextureLoader::PngByteArrayToTexture2D(::g::Uno::Buffer* arr, uDelegate* ca
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/0.47.4/$.uno
-// ------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/1.0.1/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // internal static class TextureLoaderImpl :108
 // {
@@ -324,12 +324,22 @@ void TextureLoaderImpl::JpegByteArrayToTexture2D(::g::Uno::Buffer* arr_, ::g::Ex
         uBase::Auto<uBase::BufferPtr> bp = new uBase::BufferPtr(U_BUFFER_PTR(arr_), U_BUFFER_SIZE(arr_), false);
         uBase::Auto<uBase::BufferStream> bs = new uBase::BufferStream(bp, true, false);
         uBase::Auto<uImage::ImageReader> ir = uImage::Jpeg::CreateReader(bs);
-        uBase::Auto<uImage::Bitmap> bmp = ir->ReadBitmap();
+        uBase::Auto<uImage ::Bitmap> bmp = ir->ReadBitmap();
+        int originalWidth = bmp->GetWidth(), originalHeight = bmp->GetHeight();
+    
+        int maxTextureSize;
+        glGetIntegerv(GL_MAX_TEXTURE_SIZE, &maxTextureSize);
+        while (bmp->GetWidth() > maxTextureSize ||
+               bmp->GetHeight() > maxTextureSize)
+        {
+            bmp = bmp->DownSample2x2();
+        }
+    
         uBase::Auto<uImage::Texture> tex = uImage::Texture::Create(bmp);
         uGLTextureInfo info;
         GLuint handle = uCreateGLTexture(tex, false, &info);
     
-        callback_->Execute(::g::Uno::Graphics::Texture2D::New2(handle, ::g::Uno::Int2__New2(info.Width, info.Height), info.MipCount, 0));
+        callback_->Execute(::g::Uno::Graphics::Texture2D::New2(handle, ::g::Uno::Int2__New2(originalWidth, originalHeight), info.MipCount, 0));
     }
     catch (const uBase::Exception &e)
     {
@@ -346,11 +356,21 @@ void TextureLoaderImpl::PngByteArrayToTexture2D(::g::Uno::Buffer* arr_, ::g::Exp
         uBase::Auto<uBase::BufferStream> bs = new uBase::BufferStream(bp, true, false);
         uBase::Auto<uImage::ImageReader> ir = uImage::Png::CreateReader(bs);
         uBase::Auto<uImage::Bitmap> bmp = ir->ReadBitmap();
+        int originalWidth = bmp->GetWidth(), originalHeight = bmp->GetHeight();
+    
+        int maxTextureSize;
+        glGetIntegerv(GL_MAX_TEXTURE_SIZE, &maxTextureSize);
+        while (bmp->GetWidth() > maxTextureSize ||
+               bmp->GetHeight() > maxTextureSize)
+        {
+            bmp = bmp->DownSample2x2();
+        }
+    
         uBase::Auto<uImage::Texture> tex = uImage::Texture::Create(bmp);
         uGLTextureInfo info;
         GLuint handle = uCreateGLTexture(tex, false, &info);
     
-        callback_->Execute(::g::Uno::Graphics::Texture2D::New2(handle, ::g::Uno::Int2__New2(info.Width, info.Height), info.MipCount, 0));
+        callback_->Execute(::g::Uno::Graphics::Texture2D::New2(handle, ::g::Uno::Int2__New2(originalWidth, originalHeight), info.MipCount, 0));
     }
     catch (const uBase::Exception &e)
     {

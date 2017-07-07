@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// public abstract class TrackAnimator :3198
+// public abstract class TrackAnimator :3160
 // {
 ::g::Fuse::Animations::Animator_type* TrackAnimator_typeof();
 void TrackAnimator__ctor_2_fn(TrackAnimator* __this);

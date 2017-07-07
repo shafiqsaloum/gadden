@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Geometry/0.47.4/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Geometry/1.0.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

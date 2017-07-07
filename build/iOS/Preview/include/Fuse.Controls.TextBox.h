@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/0.47.7/textcontrols/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -32,7 +32,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial sealed class TextBox :1807
+// public partial sealed class TextBox :1815
 // {
 ::g::Fuse::Controls::TextInput_type* TextBox_typeof();
 void TextBox__ctor_8_fn(TextBox* __this);

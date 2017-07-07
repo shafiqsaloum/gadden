@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/0.47.4/extensions/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

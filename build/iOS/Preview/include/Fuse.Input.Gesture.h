@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/0.47.7/input/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -17,7 +17,7 @@ namespace g{
 namespace Fuse{
 namespace Input{
 
-// public sealed class Gesture :537
+// public sealed class Gesture :589
 // {
 struct Gesture_type : uType
 {
@@ -27,17 +27,18 @@ struct Gesture_type : uType
 Gesture_type* Gesture_typeof();
 void Gesture__ctor__fn(Gesture* __this);
 void Gesture__Cancel_fn(Gesture* __this);
-void Gesture__Capture_fn(Gesture* __this, ::g::Fuse::Input::PointerEventArgs* args, int* captureType);
+void Gesture__Capture_fn(Gesture* __this, ::g::Fuse::Input::PointerEventArgs* args);
 void Gesture__Dispose_fn(Gesture* __this);
 void Gesture__HandleRequest_fn(Gesture* __this, int* req, ::g::Fuse::Input::PointerEventArgs* args);
+void Gesture__get_HardCaptureSignificanceThreshold_fn(float* __retval);
 void Gesture__get_IsHardCapture_fn(Gesture* __this, bool* __retval);
 void Gesture__LostCapture_fn(Gesture* __this, bool* forced);
-void Gesture__Maintain_fn(Gesture* __this);
 void Gesture__New1_fn(Gesture** __retval);
 void Gesture__OnLostCapture_fn(Gesture* __this);
 void Gesture__OnPointerMoved_fn(Gesture* __this, uObject* sender, ::g::Fuse::Input::PointerMovedArgs* args);
 void Gesture__OnPointerPressed_fn(Gesture* __this, uObject* sender, ::g::Fuse::Input::PointerPressedArgs* args);
 void Gesture__OnPointerReleased_fn(Gesture* __this, uObject* sender, ::g::Fuse::Input::PointerReleasedArgs* args);
+void Gesture__OnRequestChanged_fn(Gesture* __this, ::g::Fuse::Input::PointerEventArgs* args, int* captureType);
 void Gesture__UnoUXIPropertyListenerOnPropertyChanged_fn(Gesture* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Selector* sel);
 
 struct Gesture : uObject
@@ -50,17 +51,18 @@ struct Gesture : uObject
 
     void ctor_();
     void Cancel();
-    void Capture(::g::Fuse::Input::PointerEventArgs* args, int captureType);
+    void Capture(::g::Fuse::Input::PointerEventArgs* args);
     void Dispose();
     void HandleRequest(int req, ::g::Fuse::Input::PointerEventArgs* args);
     bool IsHardCapture();
     void LostCapture(bool forced);
-    void Maintain();
     void OnLostCapture();
     void OnPointerMoved(uObject* sender, ::g::Fuse::Input::PointerMovedArgs* args);
     void OnPointerPressed(uObject* sender, ::g::Fuse::Input::PointerPressedArgs* args);
     void OnPointerReleased(uObject* sender, ::g::Fuse::Input::PointerReleasedArgs* args);
+    void OnRequestChanged(::g::Fuse::Input::PointerEventArgs* args, int captureType);
     static Gesture* New1();
+    static float HardCaptureSignificanceThreshold();
 };
 // }
 

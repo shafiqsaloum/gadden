@@ -1,18 +1,19 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.h>
 namespace g{namespace Fuse{struct DeferredManager;}}
 namespace g{namespace Uno{namespace Collections{struct PriorityQueue;}}}
+namespace g{namespace Uno{struct Float2;}}
 
 namespace g{
 namespace Fuse{
 
-// internal static class DeferredManager :850
+// internal static class DeferredManager :855
 // {
 uClassType* DeferredManager_typeof();
-void DeferredManager__AddPending_fn(uObject* d, float* priority);
+void DeferredManager__AddPending_fn(uObject* d, ::g::Uno::Float2* priority);
 void DeferredManager__CheckUpdate_fn();
 void DeferredManager__get_HasPending_fn(bool* __retval);
 void DeferredManager__OnUpdate_fn();
@@ -29,7 +30,7 @@ struct DeferredManager : uObject
     static double TimeLimit_;
     static double& TimeLimit() { return DeferredManager_typeof()->Init(), TimeLimit_; }
 
-    static void AddPending(uObject* d, float priority);
+    static void AddPending(uObject* d, ::g::Uno::Float2 priority);
     static void CheckUpdate();
     static void OnUpdate();
     static void RemovePending(uObject* d);

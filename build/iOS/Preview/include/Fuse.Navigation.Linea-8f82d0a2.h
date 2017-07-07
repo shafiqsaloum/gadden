@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -20,7 +20,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public sealed class LinearNavigation :3801
+// public sealed class LinearNavigation :3880
 // {
 ::g::Fuse::Navigation::StructuredNavigation_type* LinearNavigation_typeof();
 void LinearNavigation__ctor_5_fn(LinearNavigation* __this);

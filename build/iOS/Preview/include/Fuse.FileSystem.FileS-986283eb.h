@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,13 +12,16 @@ namespace g{
 namespace Fuse{
 namespace FileSystem{
 
-// internal sealed class FileSystemOperations :1001
+// internal sealed class FileSystemOperations :1053
 // {
 uType* FileSystemOperations_typeof();
 void FileSystemOperations__ctor__fn(FileSystemOperations* __this);
 void FileSystemOperations__ctor_1_fn(FileSystemOperations* __this, uObject* dispatcher);
 void FileSystemOperations__AppendTextToFile_fn(FileSystemOperations* __this, uString* path, uString* text, ::g::Uno::Threading::Future1** __retval);
 void FileSystemOperations__AppendTextToFileSync_fn(FileSystemOperations* __this, uString* path, uString* text, ::g::Fuse::FileSystem::Nothing** __retval);
+void FileSystemOperations__Copy_fn(FileSystemOperations* __this, uString* source, uString* destination, ::g::Uno::Threading::Future1** __retval);
+void FileSystemOperations__CopyDirectory_fn(FileSystemOperations* __this, uString* source, uString* destination);
+void FileSystemOperations__CopySync_fn(FileSystemOperations* __this, uString* source, uString* destination, ::g::Fuse::FileSystem::Nothing** __retval);
 void FileSystemOperations__CreateDirectory_fn(FileSystemOperations* __this, uString* path, ::g::Uno::Threading::Future1** __retval);
 void FileSystemOperations__CreateDirectorySync_fn(FileSystemOperations* __this, uString* path, ::g::Fuse::FileSystem::Nothing** __retval);
 void FileSystemOperations__Delete_fn(FileSystemOperations* __this, uString* path, bool* recursive, ::g::Uno::Threading::Future1** __retval);
@@ -59,6 +62,9 @@ struct FileSystemOperations : uObject
     void ctor_1(uObject* dispatcher);
     ::g::Uno::Threading::Future1* AppendTextToFile(uString* path, uString* text);
     ::g::Fuse::FileSystem::Nothing* AppendTextToFileSync(uString* path, uString* text);
+    ::g::Uno::Threading::Future1* Copy(uString* source, uString* destination);
+    void CopyDirectory(uString* source, uString* destination);
+    ::g::Fuse::FileSystem::Nothing* CopySync(uString* source, uString* destination);
     ::g::Uno::Threading::Future1* CreateDirectory(uString* path);
     ::g::Fuse::FileSystem::Nothing* CreateDirectorySync(uString* path);
     ::g::Uno::Threading::Future1* Delete(uString* path, bool recursive);

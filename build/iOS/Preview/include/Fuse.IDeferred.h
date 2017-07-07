@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/0.47.7/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,8 +13,8 @@ uInterfaceType* IDeferred_typeof();
 
 struct IDeferred
 {
-    void(*fp_Perform)(uObject*);
-    static void Perform(const uInterface& __this) { __this.VTable<IDeferred>()->fp_Perform(__this); }
+    void(*fp_Perform)(uObject*, bool*);
+    static bool Perform(const uInterface& __this) { bool __retval; return __this.VTable<IDeferred>()->fp_Perform(__this, &__retval), __retval; }
 };
 // }
 

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/0.47.7/android/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/android/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace Controls{
 namespace Native{
 namespace Android{
 
-// public sealed extern class TextView :2302
+// public sealed extern class TextView :2407
 // {
 uType* TextView_typeof();
 void TextView__ctor__fn(TextView* __this);

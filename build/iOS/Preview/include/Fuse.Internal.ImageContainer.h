@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/0.47.7/internal/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/internal/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace Fuse{namespace Internal{struct SizingContainer;}}}
 namespace g{namespace Fuse{namespace Resources{struct ImageSource;}}}
 namespace g{namespace Fuse{namespace Resources{struct ImageSourceErrorArgs;}}}
 namespace g{namespace Fuse{namespace Resources{struct MemoryPolicy;}}}
-namespace g{namespace Uno{namespace Collections{struct ObservableList;}}}
+namespace g{namespace Uno{namespace Collections{struct RootableList;}}}
 namespace g{namespace Uno{namespace Graphics{struct Texture2D;}}}
 namespace g{namespace Uno{namespace UX{struct FileSource;}}}
 
@@ -37,12 +37,13 @@ void ImageContainer__set_IsVisible_fn(ImageContainer* __this, bool* value);
 void ImageContainer__get_MemoryPolicy_fn(ImageContainer* __this, ::g::Fuse::Resources::MemoryPolicy** __retval);
 void ImageContainer__set_MemoryPolicy_fn(ImageContainer* __this, ::g::Fuse::Resources::MemoryPolicy* value);
 void ImageContainer__New1_fn(uObject* owner, ImageContainer** __retval);
-void ImageContainer__OnFileAdded_fn(ImageContainer* __this, ::g::Uno::UX::FileSource* file);
-void ImageContainer__OnFileRemoved_fn(ImageContainer* __this, ::g::Uno::UX::FileSource* file);
+void ImageContainer__OnFilesChanged_fn(ImageContainer* __this, ::g::Uno::UX::FileSource* ignoreFile);
 void ImageContainer__OnParamChanged_fn(ImageContainer* __this);
+void ImageContainer__OnRooted_fn(ImageContainer* __this);
 void ImageContainer__OnSizingChanged_fn(ImageContainer* __this);
 void ImageContainer__OnSourceChanged_fn(ImageContainer* __this, uObject* s, uObject* a);
 void ImageContainer__OnSourceError_fn(ImageContainer* __this, uObject* s, ::g::Fuse::Resources::ImageSourceErrorArgs* args);
+void ImageContainer__OnUnrooted_fn(ImageContainer* __this);
 void ImageContainer__add_ParamChanged_fn(ImageContainer* __this, uDelegate* value);
 void ImageContainer__remove_ParamChanged_fn(ImageContainer* __this, uDelegate* value);
 void ImageContainer__ReapplyOptions_fn(ImageContainer* __this, ::g::Fuse::Resources::ImageSource* src);
@@ -61,14 +62,16 @@ void ImageContainer__get_StretchMode_fn(ImageContainer* __this, int* __retval);
 void ImageContainer__set_StretchMode_fn(ImageContainer* __this, int* value);
 void ImageContainer__get_StretchSizing_fn(ImageContainer* __this, int* __retval);
 void ImageContainer__set_StretchSizing_fn(ImageContainer* __this, int* value);
+void ImageContainer__UpdateSourceListen_fn(ImageContainer* __this, bool* forceOff);
 void ImageContainer__get_Url_fn(ImageContainer* __this, uString** __retval);
 void ImageContainer__set_Url_fn(ImageContainer* __this, uString* value);
 
 struct ImageContainer : uObject
 {
     float _density;
-    uStrong< ::g::Uno::Collections::ObservableList*> _files;
+    uStrong< ::g::Uno::Collections::RootableList*> _files;
     bool _isRooted;
+    bool _isSourceListen;
     bool _isVisible;
     uStrong< ::g::Fuse::Resources::MemoryPolicy*> _memoryPolicy;
     uWeak<uObject*> _owner;
@@ -97,12 +100,13 @@ struct ImageContainer : uObject
     void IsVisible(bool value);
     ::g::Fuse::Resources::MemoryPolicy* MemoryPolicy();
     void MemoryPolicy(::g::Fuse::Resources::MemoryPolicy* value);
-    void OnFileAdded(::g::Uno::UX::FileSource* file);
-    void OnFileRemoved(::g::Uno::UX::FileSource* file);
+    void OnFilesChanged(::g::Uno::UX::FileSource* ignoreFile);
     void OnParamChanged();
+    void OnRooted();
     void OnSizingChanged();
     void OnSourceChanged(uObject* s, uObject* a);
     void OnSourceError(uObject* s, ::g::Fuse::Resources::ImageSourceErrorArgs* args);
+    void OnUnrooted();
     void add_ParamChanged(uDelegate* value);
     void remove_ParamChanged(uDelegate* value);
     void ReapplyOptions(::g::Fuse::Resources::ImageSource* src);
@@ -121,6 +125,7 @@ struct ImageContainer : uObject
     void StretchMode(int value);
     int StretchSizing();
     void StretchSizing(int value);
+    void UpdateSourceListen(bool forceOff);
     uString* Url();
     void Url(uString* value);
     static ImageContainer* New1(uObject* owner);
