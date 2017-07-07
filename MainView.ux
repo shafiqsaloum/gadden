@@ -8,7 +8,7 @@
 
 	<!-- Text classes-->
 	<Text ux:Class="WelcomeText" FontSize="20" Alignment="Center" Font="Raleway"/>
-	<Text ux:Class="Title" Font="TitleFont" Alignment="BottomLeft" Color="#fff" Margin="20,0,0,20" />
+	<TextView ux:Class="Title" Font="TitleFont" Alignment="BottomLeft" TextColor="#fff" Margin="20,0,0,20" TextWrapping="Wrap" FontSize="20"/>
 	<Text ux:Class="TitleBig" Font="TitleFont" Alignment="TopCenter" Color="#fff" FontSize="30" />
 	<TextView ux:Class="Paragraph" Font="Raleway" Alignment="Left" TextColor="#fff" FontSize="14" TextWrapping="Wrap" />
 	<Text ux:Class="ButtonText" Font="RalewayBlack" FontSize="14" Color="#fff" />
@@ -52,7 +52,7 @@
 			<Router ux:Name="router" />
 
 			<!-- Properties for menu text -->
-			<Panel ux:Class="Tab" ClipToBounds="false" Alignment="Right" Margin="0,0,20,0">
+			<Panel ux:Class="Tab" ClipToBounds="false" Alignment="Right" Margin="0,5,20,5">
         <string ux:Property="Text" />
         <Text Value="{ReadProperty Text}" Color="#FFF" Alignment="Center" LineSpacing="12" FontSize="20" Font="Raleway" />
     	</Panel>
@@ -125,7 +125,7 @@
 		<DockPanel Color="#ccc">
 
 		<!-- Headerbar -->
-		<StackPanel Dock="Top" Color="#000">
+		<StackPanel Dock="Top" Color="#000" Padding="0,20,0,0">
 			<Panel Height="56">
 				<Hamburger Alignment="Left">
 					<Clicked><NavigateToggle Target="sidebar" /></Clicked>

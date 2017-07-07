@@ -28,7 +28,7 @@
   };
 </JavaScript>
 
-<ClientPanel Height="100%" Alignment="TopCenter">
+<ClientPanel>
   <ScrollView>
     <StackPanel Margin="0" ItemSpacing="16" >
       <Image Margin="0,0,0,0" Alignment="TopCenter" File="../../assets/GaddenLogotypeWhite.png" Width="60%" />
@@ -46,8 +46,8 @@
    </ScrollView>
 </ClientPanel>
 
+<!-- Background image -->
+<Image Alignment="Center" File="../../assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
 
 
-    <!-- Background image -->
-    <Image Alignment="Center" File="../../assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
 </Page>
