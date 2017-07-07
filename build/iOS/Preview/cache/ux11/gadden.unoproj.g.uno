@@ -70,6 +70,14 @@ sealed class gadden_FuseReactiveEach_Items_Property: Uno.UX.Property<object>
     public override object Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Reactive.Each)obj).Items; }
     public override void Set(global::Uno.UX.PropertyObject obj, object v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Reactive.Each)obj).Items = v; }
 }
+sealed class gadden_FuseControlsImage_Url_Property: Uno.UX.Property<string>
+{
+    [Uno.WeakReference] readonly Fuse.Controls.Image _obj;
+    public gadden_FuseControlsImage_Url_Property(Fuse.Controls.Image obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override string Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.Image)obj).Url; }
+    public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.Image)obj).Url = v; }
+}
 sealed class gadden_FuseElementsElement_ElementLayoutMaster_Property: Uno.UX.Property<Fuse.Elements.Element>
 {
     [Uno.WeakReference] readonly Fuse.Elements.Element _obj;

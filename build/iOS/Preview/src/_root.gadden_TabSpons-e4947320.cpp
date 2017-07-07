@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Documents/Skola/Handels marketing/Gadden/gadden/build/iOS/Preview/cache/ux11/gadden.unoproj.g.uno'.
+// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/gadden.unoproj.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.gadden_TabSpons-e4947320.h>
@@ -11,7 +11,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class gadden_TabSponsor_Text_Property :90
+// internal sealed class gadden_TabSponsor_Text_Property :98
 // {
 static void gadden_TabSponsor_Text_Property_build(uType* type)
 {
@@ -40,52 +40,52 @@ static void gadden_TabSponsor_Text_Property_build(uType* type)
     return type;
 }
 
-// public gadden_TabSponsor_Text_Property(TabSponsor obj, Uno.UX.Selector name) :93
+// public gadden_TabSponsor_Text_Property(TabSponsor obj, Uno.UX.Selector name) :101
 void gadden_TabSponsor_Text_Property__ctor_3_fn(gadden_TabSponsor_Text_Property* __this, ::g::TabSponsor* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed string Get(Uno.UX.PropertyObject obj) :95
+// public override sealed string Get(Uno.UX.PropertyObject obj) :103
 void gadden_TabSponsor_Text_Property__Get1_fn(gadden_TabSponsor_Text_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString** __retval)
 {
     uStackFrame __("gadden_TabSponsor_Text_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::TabSponsor*>(obj, ::TYPES[0/*TabSponsor*/]))->Text(), void();
 }
 
-// public gadden_TabSponsor_Text_Property New(TabSponsor obj, Uno.UX.Selector name) :93
+// public gadden_TabSponsor_Text_Property New(TabSponsor obj, Uno.UX.Selector name) :101
 void gadden_TabSponsor_Text_Property__New1_fn(::g::TabSponsor* obj, ::g::Uno::UX::Selector* name, gadden_TabSponsor_Text_Property** __retval)
 {
     *__retval = gadden_TabSponsor_Text_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :94
+// public override sealed Uno.UX.PropertyObject get_Object() :102
 void gadden_TabSponsor_Text_Property__get_Object_fn(gadden_TabSponsor_Text_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :96
+// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :104
 void gadden_TabSponsor_Text_Property__Set1_fn(gadden_TabSponsor_Text_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString* v, uObject* origin)
 {
     uStackFrame __("gadden_TabSponsor_Text_Property", "Set(Uno.UX.PropertyObject,string,Uno.UX.IPropertyListener)");
     uPtr(uCast< ::g::TabSponsor*>(obj, ::TYPES[0/*TabSponsor*/]))->SetText(v, origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :97
+// public override sealed bool get_SupportsOriginSetter() :105
 void gadden_TabSponsor_Text_Property__get_SupportsOriginSetter_fn(gadden_TabSponsor_Text_Property* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-// public gadden_TabSponsor_Text_Property(TabSponsor obj, Uno.UX.Selector name) [instance] :93
+// public gadden_TabSponsor_Text_Property(TabSponsor obj, Uno.UX.Selector name) [instance] :101
 void gadden_TabSponsor_Text_Property::ctor_3(::g::TabSponsor* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public gadden_TabSponsor_Text_Property New(TabSponsor obj, Uno.UX.Selector name) [static] :93
+// public gadden_TabSponsor_Text_Property New(TabSponsor obj, Uno.UX.Selector name) [static] :101
 gadden_TabSponsor_Text_Property* gadden_TabSponsor_Text_Property::New1(::g::TabSponsor* obj, ::g::Uno::UX::Selector name)
 {
     gadden_TabSponsor_Text_Property* obj1 = (gadden_TabSponsor_Text_Property*)uNew(gadden_TabSponsor_Text_Property_typeof());

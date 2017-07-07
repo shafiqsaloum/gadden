@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Documents/Skola/Handels marketing/Gadden/gadden/build/iOS/Preview/cache/ux11/gadden.unoproj.g.uno'.
+// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/gadden.unoproj.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{struct TabSponsor;}
 
 namespace g{
 
-// internal sealed class gadden_TabSponsor_Text_Property :90
+// internal sealed class gadden_TabSponsor_Text_Property :98
 // {
 ::g::Uno::UX::Property1_type* gadden_TabSponsor_Text_Property_typeof();
 void gadden_TabSponsor_Text_Property__ctor_3_fn(gadden_TabSponsor_Text_Property* __this, ::g::TabSponsor* obj, ::g::Uno::UX::Selector* name);

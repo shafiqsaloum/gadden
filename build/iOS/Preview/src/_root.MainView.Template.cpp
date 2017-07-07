@@ -1,11 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Documents/Skola/Handels marketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno'.
+// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.gadden_FuseCont-44c720e0.h>
 #include <_root.MainView.h>
 #include <_root.MainView.Template.h>
+#include <_root.Title.h>
 #include <Fuse.Binding.h>
-#include <Fuse.Controls.Text.h>
 #include <Fuse.Controls.TextAlignment.h>
 #include <Fuse.Controls.TextControl.h>
 #include <Fuse.Controls.TextWrapping.h>
@@ -83,14 +83,14 @@ void MainView__Template__ctor_1_fn(MainView__Template* __this, ::g::MainView* pa
 void MainView__Template__New1_fn(MainView__Template* __this, uObject** __retval)
 {
     uStackFrame __("MainView.Template", "New()");
-    ::g::Fuse::Controls::Text* __self1 = ::g::Fuse::Controls::Text::New3();
+    ::g::Title* __self1 = ::g::Title::New4();
     __this->__self_Value_inst1 = ::g::gadden_FuseControlsTextControl_Value_Property::New1(__self1, MainView__Template::__selector0());
     ::g::Fuse::Reactive::Data* temp = ::g::Fuse::Reactive::Data::New1(::STRINGS[1/*"title"*/]);
     __this->__g_nametable1 = ::g::Uno::UX::NameTable::New1(uPtr(__this->__parent1)->__g_nametable1, MainView__Template::__g_static_nametable1());
     ::g::Fuse::Reactive::DataBinding* temp1 = ::g::Fuse::Reactive::DataBinding::New1(__this->__self_Value_inst1, (uObject*)temp, __this->__g_nametable1, 3);
     __self1->TextWrapping(1);
-    __self1->TextAlignment(1);
-    __self1->Alignment(10);
+    __self1->TextAlignment(0);
+    __self1->Alignment(1);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Bindings()), ::TYPES[1/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp1);
     return *__retval = __self1, void();
 }

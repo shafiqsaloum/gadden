@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Documents/Skola/Handels marketing/Gadden/gadden/build/iOS/Preview/preamble/$.uno'.
+// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/preamble/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
