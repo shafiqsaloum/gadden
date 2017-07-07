@@ -6,7 +6,7 @@
       <StackPanel Margin="0" ItemSpacing="16" >
         <Image Margin="0,0,0,0" Alignment="TopCenter" File="../../assets/GaddenLogotypeWhite.png" Width="60%" />
 
-        <StackPanel Background="Black">
+        <StackPanel Background="Black" Padding="0,40,0,0">
           <Each Items="{dataSource}">
             <StackPanel Margin="20">
               <TitleBig Value="{title}" TextAlignment="Center" TextWrapping="Wrap" LineSpacing="10"/>
@@ -14,8 +14,9 @@
     				  <Paragraph Value="{content}" Margin="0,0,0,0" Width="100%" Alignment="Center" Height="100%"/>
             </StackPanel>
            </Each>
-       </StackPanel>
 
+         <Image Margin="20" Width="60%" Alignment="Center" File="../../assets/MiljomarktLogotypeWhite.png" />
+       </StackPanel>
       </StackPanel>
      </ScrollView>
   </ClientPanel>
