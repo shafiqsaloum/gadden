@@ -4,7 +4,7 @@
   <!-- Floor navigation -->
   <Panel  ux:Class="TabText" ClipToBounds="false" Margin="0,0,0,0" Background="#000" >
     <string ux:Property="Text" />
-    <Text  Value="{ReadProperty Text}" Font="RalewayBlack" Alignment="Center" FontSize="12" Color="#fff"/>
+    <Text Value="{ReadProperty Text}" Font="RalewayBlack" Alignment="Center" FontSize="12" Color="#fff"/>
   </Panel>
 
   <!-- Sets animation between floors -->

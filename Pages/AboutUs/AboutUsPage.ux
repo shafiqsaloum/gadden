@@ -6,31 +6,69 @@
       <StackPanel Margin="0" ItemSpacing="16" >
         <Image Margin="0,0,0,0" Alignment="TopCenter" File="../../assets/GaddenLogotypeWhite.png" Width="60%" />
 
-        <StackPanel Background="Black" Padding="0,40,0,0">
-          <Each Items="{dataSource}">
-            <StackPanel Margin="20">
-              <TitleBig Value="{title}" TextAlignment="Center" TextWrapping="Wrap" LineSpacing="10"/>
-               <Rectangle Alignment="TopCenter" Margin="0,30,0,30" Fill="#979797" Height="1px" Width="120"/>
-    				  <Paragraph Value="{content}" Margin="0,0,0,0" Width="100%" Alignment="Center" Height="100%"/>
-            </StackPanel>
-           </Each>
+        <!-- Navigation -->
+        <Panel ux:Class="AboutAboutUs" ClipToBounds="false" Margin="0,0,0,0" Background="#000" >
+          <string ux:Property="Text" />
+          <Text Value="{ReadProperty Text}" Font="RalewayBlack" Alignment="Center" FontSize="12" Color="#fff"/>
+        </Panel>
 
-         <Image Margin="20" Width="60%" Alignment="Center" File="../../assets/MiljomarktLogotypeWhite.png" />
-       </StackPanel>
+        <!-- Sets animation -->
+        <Rectangle ux:Name="indicatorAbout" LayoutMaster="AboutUsTab" Color="#fff">
+          <LayoutAnimation>
+            <Move RelativeTo="WorldPositionChange" X="1" Duration="0.4" Easing="BackIn"/>
+          </LayoutAnimation>
+        </Rectangle>
+
+<DockPanel>
+        <Grid Dock="Top" ColumnCount="2" Height="30" Background="#000">
+            <Panel ux:Name="AboutUsTab">
+                <AboutAboutUs Text="OM OSS">
+                    <Clicked>
+                        <Set navigationControlAbout.Active="about" />
+                    </Clicked>
+                </AboutAboutUs>
+            </Panel>
+            <Panel ux:Name="ProjectTab">
+                <AboutAboutUs Text="PROJEKTKOMMITTÈN">
+                    <Clicked>
+                        <Set navigationControlAbout.Active="project" />
+                    </Clicked>
+                </AboutAboutUs>
+            </Panel>
+        </Grid>
+
+        <!-- Content -->
+        <PageControl ux:Name="navigationControlAbout">
+          <Page ux:Name="about" Background="#000">
+            <WhileActive Threshold="0.5">
+                <Set indicatorAbout.LayoutMaster="AboutUsTab" />
+            </WhileActive>
+            <StackPanel Background="Black" Padding="0,40,0,0">
+              <Each Items="{dataSource}">
+                <StackPanel Margin="20">
+                  <TitleBig Value="{title}" TextAlignment="Center" TextWrapping="Wrap" LineSpacing="10"/>
+                   <Rectangle Alignment="TopCenter" Margin="0,30,0,30" Fill="#979797" Height="1px" Width="120"/>
+                  <Paragraph Value="{content}" Margin="0,0,0,0" Width="100%" Alignment="Center" Height="100%"/>
+                </StackPanel>
+               </Each>
+
+             <Image Margin="20" Width="60%" Alignment="Center" File="../../assets/MiljomarktLogotypeWhite.png" />
+           </StackPanel>
+
+          </Page>
+            <Page ux:Name="project" Background="#000">
+              <WhileActive Threshold="0.5">
+                  <Set indicatorAbout.LayoutMaster="ProjectTab" />
+              </WhileActive>
+              <Text Value="Hej" />
+            </Page>
+        </PageControl>
+        </DockPanel>
+
+
       </StackPanel>
      </ScrollView>
   </ClientPanel>
-
-  <!-- <ClientPanel Height="75%" Alignment="Bottom" Color="#000">
-    <Panel Margin="0,50,0,0">
-    <TitleBig>TEMA 2017</TitleBig>
-    <Rectangle Alignment="TopCenter" Margin="0,45,0,0" Fill="#979797" Height="1px" Width="120"/>
-    <Paragraph Margin="0,0,0,0" Width="80%" Alignment="Center" Height="280">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique mauris nec ornare consequat. Pellentesque vitae magna eget lacus facilisis ultricies. Fusce nec feugiat nibh, in tincidunt nulla.
-    </Paragraph>
-
-  </Panel>
-  </ClientPanel> -->
 
   <!-- Background image -->
   <Image Alignment="Center" File="../../assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
