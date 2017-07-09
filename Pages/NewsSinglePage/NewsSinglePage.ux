@@ -1,0 +1,13 @@
+<Page>
+  <JavaScript File="NewsSinglePage.js" />
+  
+  <ScrollView>
+		<StackPanel>
+      <Image Url="{image}" Width="100%" Margin="0,0,0,0" Alignment="TopLeft" />
+			<Title Value="{title}" />
+      <Paragraph Value="{text}" />
+      <Button Text="GÅ TILL EVENT" Clicked="{goEvent}" />
+		</StackPanel>
+	</ScrollView>
+
+</Page>

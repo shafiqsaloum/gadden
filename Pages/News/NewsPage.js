@@ -22,3 +22,13 @@ fetch("https://dev.jexpo.se/dev/forms/news?getAttributes=1")
 module.exports = {
     dataSource: data
 };
+
+// function goToSinglePage(arg) {
+//   var news = arg.data;
+//   routerNews.push("singlePage", news);
+// }
+//
+// module.exports = {
+// 	news: news,
+// 	goToSinglePage: goToSinglePage
+// };

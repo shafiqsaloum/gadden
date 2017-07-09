@@ -28,6 +28,16 @@ sealed class gadden_accessor_TabText_Text: global::Uno.UX.PropertyAccessor
     public override void SetAsObject(global::Uno.UX.PropertyObject obj, object v, global::Uno.UX.IPropertyListener origin) { ((TabText)obj).SetText((string)v, origin); }
     public override bool SupportsOriginSetter { get { return true; } }
 }
+sealed class gadden_accessor_AboutAboutUs_Text: global::Uno.UX.PropertyAccessor
+{
+    public static global::Uno.UX.PropertyAccessor Singleton = new gadden_accessor_AboutAboutUs_Text();
+    public override global::Uno.UX.Selector Name { get { return _name; } }
+    static global::Uno.UX.Selector _name = "Text";
+    public override global::Uno.Type PropertyType { get { return typeof(string); } }
+    public override object GetAsObject(global::Uno.UX.PropertyObject obj) { return ((AboutAboutUs)obj).Text; }
+    public override void SetAsObject(global::Uno.UX.PropertyObject obj, object v, global::Uno.UX.IPropertyListener origin) { ((AboutAboutUs)obj).SetText((string)v, origin); }
+    public override bool SupportsOriginSetter { get { return true; } }
+}
 sealed class gadden_FuseControlsShadow_Color_Property: Uno.UX.Property<float4>
 {
     [Uno.WeakReference] readonly Fuse.Controls.Shadow _obj;
@@ -70,6 +80,15 @@ sealed class gadden_FuseReactiveEach_Items_Property: Uno.UX.Property<object>
     public override object Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Reactive.Each)obj).Items; }
     public override void Set(global::Uno.UX.PropertyObject obj, object v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Reactive.Each)obj).Items = v; }
 }
+sealed class gadden_FuseControlsTextInputControl_Value_Property: Uno.UX.Property<string>
+{
+    [Uno.WeakReference] readonly Fuse.Controls.TextInputControl _obj;
+    public gadden_FuseControlsTextInputControl_Value_Property(Fuse.Controls.TextInputControl obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override string Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.TextInputControl)obj).Value; }
+    public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.TextInputControl)obj).SetValue(v, origin); }
+    public override bool SupportsOriginSetter { get { return true; } }
+}
 sealed class gadden_FuseControlsImage_Url_Property: Uno.UX.Property<string>
 {
     [Uno.WeakReference] readonly Fuse.Controls.Image _obj;
@@ -111,5 +130,14 @@ sealed class gadden_TabText_Text_Property: Uno.UX.Property<string>
     public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
     public override string Get(global::Uno.UX.PropertyObject obj) { return ((TabText)obj).Text; }
     public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((TabText)obj).SetText(v, origin); }
+    public override bool SupportsOriginSetter { get { return true; } }
+}
+sealed class gadden_AboutAboutUs_Text_Property: Uno.UX.Property<string>
+{
+    [Uno.WeakReference] readonly AboutAboutUs _obj;
+    public gadden_AboutAboutUs_Text_Property(AboutAboutUs obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override string Get(global::Uno.UX.PropertyObject obj) { return ((AboutAboutUs)obj).Text; }
+    public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((AboutAboutUs)obj).SetText(v, origin); }
     public override bool SupportsOriginSetter { get { return true; } }
 }

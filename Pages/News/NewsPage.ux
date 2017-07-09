@@ -1,5 +1,6 @@
 <Page>
   <JavaScript File="NewsPage.js" />
+
 <ClientPanel>
   <ScrollView>
     <StackPanel Margin="0" ItemSpacing="16" >
@@ -7,19 +8,21 @@
 
       <StackPanel Background="Black">
         <Each Items="{dataSource}">
-          <Panel>
-            <Title Value="{title}" Alignment="BottomLeft" TextAlignment="Left" TextWrapping="Wrap" />
-  				  <Image Url="{image}" Width="100%" Margin="0,0,0,0" Alignment="TopLeft" />
-          </Panel>
+          <!-- <Button Text="Tryck" Clicked="{goToSinglePage}" /> -->
+
+            <Panel>
+              <Title Value="{title}" Alignment="BottomLeft" TextAlignment="Left" TextWrapping="Wrap" />
+    				  <Image Url="{image}" Width="100%" Margin="0,0,0,0" Alignment="TopLeft" />
+
+            </Panel>
+
          </Each>
      </StackPanel>
-
     </StackPanel>
    </ScrollView>
 </ClientPanel>
 
 <!-- Background image -->
 <Image Alignment="Center" File="../../assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
-
 
 </Page>
