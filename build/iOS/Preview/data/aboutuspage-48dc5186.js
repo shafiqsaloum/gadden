@@ -9,6 +9,8 @@ function AboutUs(item) {
 
 function ContactInformation(item) {
   this.name = item.name;
+  this.image = item.image.url;
+  this.title = item.title;
 }
 
 fetch("https://dev.jexpo.se/dev/forms/aboutus?getAttributes=1")

@@ -44,8 +44,6 @@ struct gadden_bundle : uObject
     static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakersPaged6f6d67e() { return gadden_bundle_typeof()->Init(), IceBreakersPaged6f6d67e_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> MapPageedc903fe_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& MapPageedc903fe() { return gadden_bundle_typeof()->Init(), MapPageedc903fe_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> MapPlan33b43bb45_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& MapPlan33b43bb45() { return gadden_bundle_typeof()->Init(), MapPlan33b43bb45_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> MapPlan4d288e982_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& MapPlan4d288e982() { return gadden_bundle_typeof()->Init(), MapPlan4d288e982_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> MenuBackground6a8fe2ea_;

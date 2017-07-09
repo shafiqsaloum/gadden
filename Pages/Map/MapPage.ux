@@ -39,7 +39,15 @@
         <WhileActive Threshold="0.5">
             <Set indicator.LayoutMaster="plan3Tab" />
         </WhileActive>
-        <Image Alignment="Center" File="../../assets/MapPlan3.png" Width="90%" />
+
+        <Each Items="{dataSource}">
+          <Image Url="{image}" Width="100%" Margin="0,0,0,0" Alignment="TopLeft" >
+          <InteractiveTransform ux:Name="imgtransform"/>
+            <PanGesture Target="imgtransform" />
+            <ZoomGesture Target="imgtransform"  />
+          </Image>
+        </Each>
+
       </Page>
         <Page ux:Name="plan4" Background="#000">
           <WhileActive Threshold="0.5">
