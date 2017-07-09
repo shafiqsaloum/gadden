@@ -11,7 +11,7 @@ namespace g{struct gadden_FuseControlsShadow_Color_Property;}
 
 namespace g{
 
-// internal sealed class gadden_FuseControlsShadow_Color_Property :31
+// internal sealed class gadden_FuseControlsShadow_Color_Property :41
 // {
 ::g::Uno::UX::Property1_type* gadden_FuseControlsShadow_Color_Property_typeof();
 void gadden_FuseControlsShadow_Color_Property__ctor_3_fn(gadden_FuseControlsShadow_Color_Property* __this, ::g::Fuse::Controls::Shadow* obj, ::g::Uno::UX::Selector* name);

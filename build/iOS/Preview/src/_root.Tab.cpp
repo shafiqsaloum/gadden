@@ -196,7 +196,7 @@ void Tab::InitializeUX()
     __g_nametable1 = ::g::Uno::UX::NameTable::New1(NULL, Tab::__g_static_nametable1());
     ::g::Fuse::Reactive::DataBinding* temp3 = ::g::Fuse::Reactive::DataBinding::New1(temp_Value_inst, (uObject*)temp2, __g_nametable1, 1);
     Alignment(3);
-    Margin(::g::Uno::Float4__New2(0.0f, 0.0f, 20.0f, 0.0f));
+    Margin(::g::Uno::Float4__New2(0.0f, 5.0f, 20.0f, 5.0f));
     ClipToBounds(false);
     temp->LineSpacing(12.0f);
     temp->FontSize(20.0f);

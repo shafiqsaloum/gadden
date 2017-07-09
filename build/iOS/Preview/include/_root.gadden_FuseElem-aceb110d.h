@@ -11,7 +11,7 @@ namespace g{struct gadden_FuseElementsElement_Opacity_Property;}
 
 namespace g{
 
-// internal sealed class gadden_FuseElementsElement_Opacity_Property :39
+// internal sealed class gadden_FuseElementsElement_Opacity_Property :49
 // {
 ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_Opacity_Property_typeof();
 void gadden_FuseElementsElement_Opacity_Property__ctor_3_fn(gadden_FuseElementsElement_Opacity_Property* __this, ::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name);

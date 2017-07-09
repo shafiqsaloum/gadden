@@ -61,7 +61,10 @@ namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Pr
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property_typeof();}
 namespace g{uClassType* UnoCore_bundle_typeof();}
+namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* AboutAboutUs_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} ::g::Fuse::Controls::TextControl_type* ButtonText_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_AboutAboutUs_Text_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* gadden_accessor_AboutAboutUs_Text_typeof();}
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* gadden_accessor_Tab_Text_typeof();}
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* gadden_accessor_TabSponsor_Text_typeof();}
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* gadden_accessor_TabText_Text_typeof();}
@@ -70,6 +73,7 @@ namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Pr
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsNavigationControl_Active_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsShadow_Color_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsTextControl_Value_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsTextInputControl_Value_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_ElementLayoutMaster_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_Opacity_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseReactiveEach_Items_Property_typeof();}
@@ -80,13 +84,14 @@ namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Tem
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* Hamburger_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template1_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template2_typeof();}
 namespace g{namespace Fuse{struct AppBase_type;} ::g::Fuse::AppBase_type* MainView_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct TextInputControl_type;}} ::g::Fuse::Controls::TextInputControl_type* Paragraph_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* Profile_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* Tab_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* TabSponsor_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* TabText_typeof();}
-namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} ::g::Fuse::Controls::TextControl_type* Title_typeof();}
+namespace g{namespace Fuse{namespace Controls{struct TextInputControl_type;}} ::g::Fuse::Controls::TextInputControl_type* Title_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} ::g::Fuse::Controls::TextControl_type* TitleBig_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} ::g::Fuse::Controls::TextControl_type* WelcomeText_typeof();}
 namespace g{namespace OpenGL{uClassType* GL_typeof();}}
@@ -2002,7 +2007,10 @@ void uInitRtti()
         (uType*(*)())&::g::OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Details_Property_typeof,
         (uType*(*)())&::g::OutracksSimulatorClientUno_OutracksSimulatorClientDialogsModalDialog_Header_Property_typeof,
         (uType*(*)())&::g::UnoCore_bundle_typeof,
+        (uType*(*)())&::g::AboutAboutUs_typeof,
         (uType*(*)())&::g::ButtonText_typeof,
+        (uType*(*)())&::g::gadden_AboutAboutUs_Text_Property_typeof,
+        (uType*(*)())&::g::gadden_accessor_AboutAboutUs_Text_typeof,
         (uType*(*)())&::g::gadden_accessor_Tab_Text_typeof,
         (uType*(*)())&::g::gadden_accessor_TabSponsor_Text_typeof,
         (uType*(*)())&::g::gadden_accessor_TabText_Text_typeof,
@@ -2011,6 +2019,7 @@ void uInitRtti()
         (uType*(*)())&::g::gadden_FuseControlsNavigationControl_Active_Property_typeof,
         (uType*(*)())&::g::gadden_FuseControlsShadow_Color_Property_typeof,
         (uType*(*)())&::g::gadden_FuseControlsTextControl_Value_Property_typeof,
+        (uType*(*)())&::g::gadden_FuseControlsTextInputControl_Value_Property_typeof,
         (uType*(*)())&::g::gadden_FuseElementsElement_ElementLayoutMaster_Property_typeof,
         (uType*(*)())&::g::gadden_FuseElementsElement_Opacity_Property_typeof,
         (uType*(*)())&::g::gadden_FuseReactiveEach_Items_Property_typeof,
@@ -2021,6 +2030,7 @@ void uInitRtti()
         (uType*(*)())&::g::Hamburger_typeof,
         (uType*(*)())&::g::MainView__Template_typeof,
         (uType*(*)())&::g::MainView__Template1_typeof,
+        (uType*(*)())&::g::MainView__Template2_typeof,
         (uType*(*)())&::g::MainView_typeof,
         (uType*(*)())&::g::Paragraph_typeof,
         (uType*(*)())&::g::Profile_typeof,

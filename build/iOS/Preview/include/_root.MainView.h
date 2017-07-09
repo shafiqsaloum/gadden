@@ -85,6 +85,18 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector30() { return MainView_typeof()->Init(), __selector30_; }
     static ::g::Uno::UX::Selector __selector31_;
     static ::g::Uno::UX::Selector& __selector31() { return MainView_typeof()->Init(), __selector31_; }
+    static ::g::Uno::UX::Selector __selector32_;
+    static ::g::Uno::UX::Selector& __selector32() { return MainView_typeof()->Init(), __selector32_; }
+    static ::g::Uno::UX::Selector __selector33_;
+    static ::g::Uno::UX::Selector& __selector33() { return MainView_typeof()->Init(), __selector33_; }
+    static ::g::Uno::UX::Selector __selector34_;
+    static ::g::Uno::UX::Selector& __selector34() { return MainView_typeof()->Init(), __selector34_; }
+    static ::g::Uno::UX::Selector __selector35_;
+    static ::g::Uno::UX::Selector& __selector35() { return MainView_typeof()->Init(), __selector35_; }
+    static ::g::Uno::UX::Selector __selector36_;
+    static ::g::Uno::UX::Selector& __selector36() { return MainView_typeof()->Init(), __selector36_; }
+    static ::g::Uno::UX::Selector __selector37_;
+    static ::g::Uno::UX::Selector& __selector37() { return MainView_typeof()->Init(), __selector37_; }
     static ::g::Uno::UX::Selector __selector4_;
     static ::g::Uno::UX::Selector& __selector4() { return MainView_typeof()->Init(), __selector4_; }
     static ::g::Uno::UX::Selector __selector5_;
@@ -97,13 +109,17 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector8() { return MainView_typeof()->Init(), __selector8_; }
     static ::g::Uno::UX::Selector __selector9_;
     static ::g::Uno::UX::Selector& __selector9() { return MainView_typeof()->Init(), __selector9_; }
+    uStrong< ::g::Fuse::Controls::Page*> about;
     uStrong< ::g::Fuse::Controls::Page*> aboutus;
+    uStrong< ::g::Fuse::Controls::Panel*> AboutUsTab;
     uStrong< ::g::Fuse::Controls::Page*> exhibitor;
     uStrong< ::g::Fuse::Controls::Page*> goodiebag;
     uStrong< ::g::Fuse::Controls::Panel*> GoodiebagTab;
     uStrong< ::g::Fuse::Controls::Page*> icebreaker;
     uStrong< ::g::Fuse::Controls::Rectangle*> indicator;
     uStrong< ::g::Uno::UX::Property1*> indicator_Element_LayoutMaster_inst;
+    uStrong< ::g::Fuse::Controls::Rectangle*> indicatorAbout;
+    uStrong< ::g::Uno::UX::Property1*> indicatorAbout_Element_LayoutMaster_inst;
     uStrong< ::g::Fuse::Controls::Rectangle*> indicatorSponsor;
     uStrong< ::g::Uno::UX::Property1*> indicatorSponsor_Element_LayoutMaster_inst;
     uStrong< ::g::Fuse::Controls::Page*> map;
@@ -111,6 +127,8 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> navigation_Active_inst;
     uStrong< ::g::Fuse::Controls::PageControl*> navigationControl;
     uStrong< ::g::Uno::UX::Property1*> navigationControl_Active_inst;
+    uStrong< ::g::Fuse::Controls::PageControl*> navigationControlAbout;
+    uStrong< ::g::Uno::UX::Property1*> navigationControlAbout_Active_inst;
     uStrong< ::g::Fuse::Controls::PageControl*> navigationSponsors;
     uStrong< ::g::Uno::UX::Property1*> navigationSponsors_Active_inst;
     uStrong< ::g::Fuse::Controls::Page*> news;
@@ -120,6 +138,8 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Page*> plan4;
     uStrong< ::g::Fuse::Controls::Panel*> plan4Tab;
     uStrong< ::g::Fuse::Controls::Page*> program;
+    uStrong< ::g::Fuse::Controls::Page*> project;
+    uStrong< ::g::Fuse::Controls::Panel*> ProjectTab;
     static uSStrong< ::g::Fuse::Font*> Raleway_;
     static uSStrong< ::g::Fuse::Font*>& Raleway() { return MainView_typeof()->Init(), Raleway_; }
     static uSStrong< ::g::Fuse::Font*> RalewayBlack_;
@@ -136,6 +156,8 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Page*> sponsors;
     uStrong< ::g::Fuse::Controls::Panel*> SponsorTab;
     uStrong< ::g::Uno::UX::Property1*> temp_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp1_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp2_Items_inst;
     static uSStrong< ::g::Fuse::Font*> TitleFont_;
     static uSStrong< ::g::Fuse::Font*>& TitleFont() { return MainView_typeof()->Init(), TitleFont_; }
 

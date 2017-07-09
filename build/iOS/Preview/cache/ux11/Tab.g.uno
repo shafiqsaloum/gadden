@@ -39,7 +39,7 @@ public partial class Tab: Fuse.Controls.Panel
         __g_nametable = new global::Uno.UX.NameTable(null, __g_static_nametable);
         var temp3 = new global::Fuse.Reactive.DataBinding(temp_Value_inst, temp2, __g_nametable, Fuse.Reactive.BindingMode.Read);
         this.Alignment = Fuse.Elements.Alignment.Right;
-        this.Margin = float4(0f, 0f, 20f, 0f);
+        this.Margin = float4(0f, 5f, 20f, 5f);
         this.ClipToBounds = false;
         temp.LineSpacing = 12f;
         temp.FontSize = 20f;

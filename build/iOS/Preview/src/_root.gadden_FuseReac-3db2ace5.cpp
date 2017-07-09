@@ -10,7 +10,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class gadden_FuseReactiveEach_Items_Property :65
+// internal sealed class gadden_FuseReactiveEach_Items_Property :75
 // {
 static void gadden_FuseReactiveEach_Items_Property_build(uType* type)
 {
@@ -38,46 +38,46 @@ static void gadden_FuseReactiveEach_Items_Property_build(uType* type)
     return type;
 }
 
-// public gadden_FuseReactiveEach_Items_Property(Fuse.Reactive.Each obj, Uno.UX.Selector name) :68
+// public gadden_FuseReactiveEach_Items_Property(Fuse.Reactive.Each obj, Uno.UX.Selector name) :78
 void gadden_FuseReactiveEach_Items_Property__ctor_3_fn(gadden_FuseReactiveEach_Items_Property* __this, ::g::Fuse::Reactive::Each* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed object Get(Uno.UX.PropertyObject obj) :70
+// public override sealed object Get(Uno.UX.PropertyObject obj) :80
 void gadden_FuseReactiveEach_Items_Property__Get1_fn(gadden_FuseReactiveEach_Items_Property* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
 {
     uStackFrame __("gadden_FuseReactiveEach_Items_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Fuse::Reactive::Each*>(obj, ::TYPES[0/*Fuse.Reactive.Each*/]))->Items(), void();
 }
 
-// public gadden_FuseReactiveEach_Items_Property New(Fuse.Reactive.Each obj, Uno.UX.Selector name) :68
+// public gadden_FuseReactiveEach_Items_Property New(Fuse.Reactive.Each obj, Uno.UX.Selector name) :78
 void gadden_FuseReactiveEach_Items_Property__New1_fn(::g::Fuse::Reactive::Each* obj, ::g::Uno::UX::Selector* name, gadden_FuseReactiveEach_Items_Property** __retval)
 {
     *__retval = gadden_FuseReactiveEach_Items_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :69
+// public override sealed Uno.UX.PropertyObject get_Object() :79
 void gadden_FuseReactiveEach_Items_Property__get_Object_fn(gadden_FuseReactiveEach_Items_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :71
+// public override sealed void Set(Uno.UX.PropertyObject obj, object v, Uno.UX.IPropertyListener origin) :81
 void gadden_FuseReactiveEach_Items_Property__Set1_fn(gadden_FuseReactiveEach_Items_Property* __this, ::g::Uno::UX::PropertyObject* obj, uObject* v, uObject* origin)
 {
     uStackFrame __("gadden_FuseReactiveEach_Items_Property", "Set(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
     uPtr(uCast< ::g::Fuse::Reactive::Each*>(obj, ::TYPES[0/*Fuse.Reactive.Each*/]))->Items(v);
 }
 
-// public gadden_FuseReactiveEach_Items_Property(Fuse.Reactive.Each obj, Uno.UX.Selector name) [instance] :68
+// public gadden_FuseReactiveEach_Items_Property(Fuse.Reactive.Each obj, Uno.UX.Selector name) [instance] :78
 void gadden_FuseReactiveEach_Items_Property::ctor_3(::g::Fuse::Reactive::Each* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public gadden_FuseReactiveEach_Items_Property New(Fuse.Reactive.Each obj, Uno.UX.Selector name) [static] :68
+// public gadden_FuseReactiveEach_Items_Property New(Fuse.Reactive.Each obj, Uno.UX.Selector name) [static] :78
 gadden_FuseReactiveEach_Items_Property* gadden_FuseReactiveEach_Items_Property::New1(::g::Fuse::Reactive::Each* obj, ::g::Uno::UX::Selector name)
 {
     gadden_FuseReactiveEach_Items_Property* obj1 = (gadden_FuseReactiveEach_Items_Property*)uNew(gadden_FuseReactiveEach_Items_Property_typeof());

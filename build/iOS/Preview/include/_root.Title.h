@@ -4,7 +4,7 @@
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
-#include <Fuse.Controls.Text.h>
+#include <Fuse.Controls.TextView.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -25,15 +25,15 @@ namespace g{
 
 // public partial sealed class Title :2
 // {
-::g::Fuse::Controls::TextControl_type* Title_typeof();
+::g::Fuse::Controls::TextInputControl_type* Title_typeof();
 void Title__ctor_8_fn(Title* __this);
-void Title__InitializeUX1_fn(Title* __this);
+void Title__InitializeUX_fn(Title* __this);
 void Title__New4_fn(Title** __retval);
 
-struct Title : ::g::Fuse::Controls::Text
+struct Title : ::g::Fuse::Controls::TextView
 {
     void ctor_8();
-    void InitializeUX1();
+    void InitializeUX();
     static Title* New4();
 };
 // }

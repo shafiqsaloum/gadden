@@ -27,7 +27,10 @@ struct MainView__Template : ::g::Uno::UX::Template
     uWeak< ::g::MainView*> __parentInstance1;
     static ::g::Uno::UX::Selector __selector0_;
     static ::g::Uno::UX::Selector& __selector0() { return MainView__Template_typeof()->Init(), __selector0_; }
-    uStrong< ::g::Uno::UX::Property1*> __self_Value_inst1;
+    static ::g::Uno::UX::Selector __selector1_;
+    static ::g::Uno::UX::Selector& __selector1() { return MainView__Template_typeof()->Init(), __selector1_; }
+    uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp1_Url_inst;
 
     void ctor_1(::g::MainView* parent, ::g::MainView* parentInstance);
     static MainView__Template* New2(::g::MainView* parent, ::g::MainView* parentInstance);
