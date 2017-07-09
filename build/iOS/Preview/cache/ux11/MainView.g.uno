@@ -388,7 +388,7 @@ public partial class MainView: Fuse.App
         var temp21 = new global::Fuse.Reactive.Data("dataInfo");
         var temp2 = new global::Fuse.Reactive.Each();
         temp2_Items_inst = new gadden_FuseReactiveEach_Items_Property(temp2, __selector3);
-        var temp22 = new global::Fuse.Reactive.Data("contact");
+        var temp22 = new global::Fuse.Reactive.Data("dataContact");
         var temp23 = new global::Fuse.iOS.StatusBarConfig();
         var temp24 = new global::Fuse.Controls.EdgeNavigator();
         sidebarProfile = new global::Fuse.Controls.Panel();

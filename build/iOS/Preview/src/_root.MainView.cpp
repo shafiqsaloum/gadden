@@ -432,7 +432,7 @@ static void MainView_build(uType* type)
     ::STRINGS[126] = uString::Const("TitleFont");
     ::STRINGS[127] = uString::Const("dataSource");
     ::STRINGS[128] = uString::Const("dataInfo");
-    ::STRINGS[129] = uString::Const("contact");
+    ::STRINGS[129] = uString::Const("dataContact");
     ::STRINGS[130] = uString::Const("LOGGA IN");
     ::STRINGS[131] = uString::Const("STJ\303\204RNMARKERADE UTST\303\204LLARE");
     ::STRINGS[132] = uString::Const("F\303\226REL\303\204SNING");
@@ -742,7 +742,7 @@ void MainView::InitializeUX()
     ::g::Fuse::Reactive::Data* temp21 = ::g::Fuse::Reactive::Data::New1(::STRINGS[128/*"dataInfo"*/]);
     ::g::Fuse::Reactive::Each* temp2 = ::g::Fuse::Reactive::Each::New4();
     temp2_Items_inst = ::g::gadden_FuseReactiveEach_Items_Property::New1(temp2, MainView::__selector3());
-    ::g::Fuse::Reactive::Data* temp22 = ::g::Fuse::Reactive::Data::New1(::STRINGS[129/*"contact"*/]);
+    ::g::Fuse::Reactive::Data* temp22 = ::g::Fuse::Reactive::Data::New1(::STRINGS[129/*"dataContact"*/]);
     ::g::Fuse::iOS::StatusBarConfig* temp23 = ::g::Fuse::iOS::StatusBarConfig::New2();
     ::g::Fuse::Controls::EdgeNavigator* temp24 = ::g::Fuse::Controls::EdgeNavigator::New4();
     sidebarProfile = ::g::Fuse::Controls::Panel::New3();

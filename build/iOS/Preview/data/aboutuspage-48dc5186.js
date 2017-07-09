@@ -31,7 +31,7 @@ fetch("https://dev.jexpo.se/dev/forms/contacts?getAttributes=1")
     responseObject.results.forEach(function(r) {
         items.push(new ContactInformation(r));
     });
-    contact.replaceAll(items);
+    contactData.replaceAll(items);
     debug_log("data: " + JSON.stringify(data));
 }).catch(function(e) {
     console.log("Error: " + e.message);

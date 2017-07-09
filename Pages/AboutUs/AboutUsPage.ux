@@ -61,17 +61,19 @@
                   <Set indicatorAbout.LayoutMaster="ProjectTab" />
               </WhileActive>
               <StackPanel Background="Black" Padding="0,40,0,0">
+                <TitleBig Value="PROJEKTKOMMITÉN" Alignment="Center" />
+                <Rectangle Alignment="TopCenter" Margin="0,30,0,30" Fill="#979797" Height="1px" Width="120"/>
                 <Each Items="{dataContact}">
                   <StackPanel Margin="20">
-                    <TitleBig Value="{name}" TextAlignment="Center" TextWrapping="Wrap" LineSpacing="10"/>
+                    <Image Url="{image}" StretchMode="UniformToFill" Width="40%" Height="120" Margin="20"/>
+                    <Paragraph Value="{= toUpper({name})}" Alignment="Center" TextAlignment="Center" TextWrapping="Wrap" LineSpacing="10" FontSize="16"/>
+                    <Paragraph Value="{= toUpper({title})}" Alignment="Center" FontSize="12"/>
                   </StackPanel>
                  </Each>
              </StackPanel>
             </Page>
         </PageControl>
         </DockPanel>
-
-
       </StackPanel>
      </ScrollView>
   </ClientPanel>
