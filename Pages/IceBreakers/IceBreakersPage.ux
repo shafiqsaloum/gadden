@@ -1,13 +1,21 @@
 <Page>
   <JavaScript File="IceBreakersPage.js" />
-
-<DockPanel Background="#000" Height="100%">
+  <DockPanel ux:Name="popupBackground" Height="100%" Background="Black" Opacity="1">
     <!-- Background -->
-    <Image Alignment="TopRight" Layer="Background" Width="30" Height="30" Margin="20" File="../../assets/InfoIconWhite.png"/>
-    <Image Alignment="TopCenter" Layer="Background" File="../../assets/BackgroundIceBreaker.png"  />
+    <Image Alignment="TopRight" Width="30" Height="30" Margin="20" File="../../assets/InfoIconWhite.png">
+    <Clicked>
+      <Toggle Target="opacityToggle" />
+      <DebugAction Message="clicked" />
+    </Clicked>
+    </Image>
+    <Image Alignment="TopCenter" Layer="Background" File="../../assets/BackgroundIceBreaker.png"/>
 
-    <Panel ux:Name="popupInfo" Opacity="0" Margin="20,60,20,20" Alignment="TopCenter">
-      <Rectangle Fill="White" CornerRadius="15" Width="300" Height="200" >
+    <WhileTrue ux:Name="opacityToggle">
+        <Change popupInfo.Opacity="1" Duration="0.3" />
+    </WhileTrue>
+
+    <Panel ux:Name="popupInfo" Opacity="0" Height="100%" Width="100%" Background="#0006">
+      <Rectangle Color="White" CornerRadius="15" Width="300" Height="200" Margin="20,60,20,20" Alignment="TopCenter">
         <Paragraph TextColor="Black" TextAlignment="Center" Alignment="Center" Padding="30">
           Gadden har 4000 besökare varje år. Hur sjutton gör man ett bra och bestående första intryck i den konkurrensen?
 
