@@ -1,6 +1,7 @@
 <Page>
   <JavaScript File="SponsorsPage.js" />
 
+
   <!-- Sponsor navigation -->
   <Panel  ux:Class="TabSponsor" ClipToBounds="false" Margin="0,0,0,0" Background="#000" >
     <string ux:Property="Text" />
@@ -45,11 +46,21 @@
   				<Rectangle Alignment="TopCenter" Margin="0,50,0,0" Fill="#979797" Height="1px" SnapToPixels="true" Width="100"/>
         </Panel>
       </Page>
-        <Page ux:Name="goodiebag" Background="#000">
+        <Page ux:Name="goodiebag" Background="Black">
           <WhileActive Threshold="0.5">
               <Set indicatorSponsor.LayoutMaster="GoodiebagTab" />
           </WhileActive>
-          <Text>Goodiebag</Text>
+
+          <StackPanel>
+            <Each Items="{dataGoodiebag}">
+              <StackPanel Margin="20" ItemSpacing="10" Background="#d27bbb">
+                <Text Color="White" Alignment="Center" Value="{company}" />
+                <Title Value="{article}" Alignment="Center" />
+                <Paragraph Value="{content}" Margin="0,0,0,0" Width="100%" Alignment="Center" TextAlignment="Center" Height="100%"/>
+                <Text Value="{= toUpper({code})}" Alignment="Center" />
+              </StackPanel>
+            </Each>
+          </StackPanel>
         </Page>
     </PageControl>
   </DockPanel>

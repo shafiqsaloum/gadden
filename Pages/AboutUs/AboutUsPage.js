@@ -3,6 +3,7 @@ var data = Observable();
 var contactData = Observable();
 
 function AboutUs(item) {
+
     this.title = item.title;
     this.content = item.content;
 };

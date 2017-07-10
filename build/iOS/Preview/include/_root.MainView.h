@@ -159,6 +159,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> temp1_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp2_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp3_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp4_Items_inst;
     static uSStrong< ::g::Fuse::Font*> TitleFont_;
     static uSStrong< ::g::Fuse::Font*>& TitleFont() { return MainView_typeof()->Init(), TitleFont_; }
 
