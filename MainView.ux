@@ -145,9 +145,7 @@
 
 
 	<PageControl ux:Name="navigation">
-		<Page ux:Name="login">
-			<ux:Include File="Pages/Login/Login.ux" />
-		</Page>
+
 		<Page ux:Name="news">
 				<ux:Include File="Pages/News/NewsPage.ux" />
 		</Page>
@@ -171,6 +169,9 @@
 		</Page>
 		<Page ux:Name="aboutus">
 				<ux:Include File="Pages/AboutUs/AboutUsPage.ux" />
+		</Page>
+		<Page ux:Name="login">
+			<ux:Include File="Pages/Login/Login.ux" />
 		</Page>
 
 	</PageControl>

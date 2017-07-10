@@ -3,7 +3,19 @@
 
 <DockPanel Background="#000" Height="100%">
     <!-- Background -->
+    <Image Alignment="TopRight" Layer="Background" Width="30" Height="30" Margin="20" File="../../assets/InfoIconWhite.png"/>
     <Image Alignment="TopCenter" Layer="Background" File="../../assets/BackgroundIceBreaker.png"  />
+
+    <Panel ux:Name="popupInfo" Opacity="0" Margin="20,60,20,20" Alignment="TopCenter">
+      <Rectangle Fill="White" CornerRadius="15" Width="300" Height="200" >
+        <Paragraph TextColor="Black" TextAlignment="Center" Alignment="Center" Padding="30">
+          Gadden har 4000 besökare varje år. Hur sjutton gör man ett bra och bestående första intryck i den konkurrensen?
+
+          Lugn, vi hjälper dig! Skaka telefonen och få tips på hur du kan bryta isen med din drömarbetsgivare.
+        </Paragraph>
+      </Rectangle>
+    </Panel>
+
 
     <StackPanel Alignment="Center">
       <TextView Font="TitleFont" TextColor="#fff" FontSize="65" TextWrapping="Wrap" TextAlignment="Center" LineSpacing="20" Alignment="Top" Margin="0,0,0,50">
