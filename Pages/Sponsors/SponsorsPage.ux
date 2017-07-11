@@ -50,17 +50,18 @@
           <WhileActive Threshold="0.5">
               <Set indicatorSponsor.LayoutMaster="GoodiebagTab" />
           </WhileActive>
-
-          <StackPanel>
-            <Each Items="{dataGoodiebag}">
-              <StackPanel Margin="20" ItemSpacing="10" Background="#d27bbb">
-                <Text Color="White" Alignment="Center" Value="{company}" />
-                <Title Value="{article}" Alignment="Center" />
-                <Paragraph Value="{content}" Margin="0,0,0,0" Width="100%" Alignment="Center" TextAlignment="Center" Height="100%"/>
-                <Text Value="{= toUpper({code})}" Alignment="Center" />
-              </StackPanel>
-            </Each>
-          </StackPanel>
+          <ScrollView>
+            <StackPanel Background="#d27bbb">
+              <Each Items="{dataGoodiebag}">
+                <StackPanel Margin="20" ItemSpacing="10" >
+                  <Text Color="White" Alignment="Center" Value="{company}" />
+                  <Title Value="{article}" Alignment="Center" />
+                  <Paragraph Value="{content}" Margin="0,0,0,0" Width="100%" Alignment="Center" TextAlignment="Center" Height="100%"/>
+                  <Text Value="{= toUpper({code})}" Alignment="Center" />
+                </StackPanel>
+              </Each>
+            </StackPanel>
+          </ScrollView>
         </Page>
     </PageControl>
   </DockPanel>
