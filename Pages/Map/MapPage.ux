@@ -77,10 +77,49 @@
       </Panel>
       <Image Alignment="Center" File="../../assets/MapPlan3.png" Width="90%" />
       </Page>
+
+
         <Page ux:Name="plan4" Background="#000">
           <WhileActive Threshold="0.5">
               <Set indicator.LayoutMaster="plan4Tab" />
           </WhileActive>
+
+          <Image Alignment="TopRight" Width="30" Height="30" Margin="20" File="../../assets/InfoIconWhite.png">
+            <Clicked>
+              <Toggle Target="MapToggle2" />
+            </Clicked>
+          </Image>
+
+          <WhileTrue ux:Name="MapToggle2">
+              <Change popupInfoMap2.Opacity="1" Duration="0.3" />
+          </WhileTrue>
+
+          <Panel ux:Name="popupInfoMap2" Opacity="0" Height="100%" Width="100%" Background="#0006">
+            <Rectangle Color="White" CornerRadius="15" Width="300" Height="270" Margin="20,60,20,20" Alignment="TopCenter">
+              <StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="20,0,0,0">
+                  <Image Width="30" Height="30" Margin="20,20,20,10" File="../../assets/InfoDiskIcon.png" />
+                  <Paragraph Value="Infodisk" TextColor="Black" Alignment="Center" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="20,0,0,0">
+                  <Image Width="30" Height="30" Margin="20,10,20,10" File="../../assets/ForetagsGarderobIcon.png" />
+                  <Paragraph Value="Företagsgarderob" TextColor="Black" Alignment="Center" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="20,0,0,0">
+                  <Image Width="30" Height="30" Margin="20,10,20,10" File="../../assets/ForetagsLoungeIcon.png" />
+                  <Paragraph Value="Företagslounge" TextColor="Black" Alignment="Center" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="20,0,0,0">
+                  <Image Width="30" Height="30" Margin="20,10,20,10" File="../../assets/StudentGarderobIcon.png" />
+                  <Paragraph Value="Studentgarderob" TextColor="Black" Alignment="Center" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="20,0,0,0">
+                  <Image Width="30" Height="30" Margin="20,10,20,10" File="../../assets/StudentLoungeIcon.png" />
+                  <Paragraph Value="Studentlounge" TextColor="Black" Alignment="Center" />
+                </StackPanel>
+              </StackPanel>
+            </Rectangle>
+          </Panel>
           <Image Alignment="Center" File="../../assets/MapPlan4.png" Width="90%" />
         </Page>
     </PageControl>
