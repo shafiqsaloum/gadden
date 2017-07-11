@@ -5,6 +5,7 @@
 #include <Fuse.App.h>
 #include <Fuse.IProperties.h>
 #include <Uno.Float4.h>
+namespace g{namespace Fuse{namespace Controls{struct DockPanel;}}}
 namespace g{namespace Fuse{namespace Controls{struct Page;}}}
 namespace g{namespace Fuse{namespace Controls{struct PageControl;}}}
 namespace g{namespace Fuse{namespace Controls{struct Panel;}}}
@@ -12,6 +13,7 @@ namespace g{namespace Fuse{namespace Controls{struct Rectangle;}}}
 namespace g{namespace Fuse{namespace Controls{struct Shadow;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
+namespace g{namespace Fuse{namespace Triggers{struct WhileTrue;}}}
 namespace g{namespace Fuse{struct Font;}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Uno{namespace UX{struct NameTable;}}}
@@ -97,8 +99,20 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector36() { return MainView_typeof()->Init(), __selector36_; }
     static ::g::Uno::UX::Selector __selector37_;
     static ::g::Uno::UX::Selector& __selector37() { return MainView_typeof()->Init(), __selector37_; }
+    static ::g::Uno::UX::Selector __selector38_;
+    static ::g::Uno::UX::Selector& __selector38() { return MainView_typeof()->Init(), __selector38_; }
+    static ::g::Uno::UX::Selector __selector39_;
+    static ::g::Uno::UX::Selector& __selector39() { return MainView_typeof()->Init(), __selector39_; }
     static ::g::Uno::UX::Selector __selector4_;
     static ::g::Uno::UX::Selector& __selector4() { return MainView_typeof()->Init(), __selector4_; }
+    static ::g::Uno::UX::Selector __selector40_;
+    static ::g::Uno::UX::Selector& __selector40() { return MainView_typeof()->Init(), __selector40_; }
+    static ::g::Uno::UX::Selector __selector41_;
+    static ::g::Uno::UX::Selector& __selector41() { return MainView_typeof()->Init(), __selector41_; }
+    static ::g::Uno::UX::Selector __selector42_;
+    static ::g::Uno::UX::Selector& __selector42() { return MainView_typeof()->Init(), __selector42_; }
+    static ::g::Uno::UX::Selector __selector43_;
+    static ::g::Uno::UX::Selector& __selector43() { return MainView_typeof()->Init(), __selector43_; }
     static ::g::Uno::UX::Selector __selector5_;
     static ::g::Uno::UX::Selector& __selector5() { return MainView_typeof()->Init(), __selector5_; }
     static ::g::Uno::UX::Selector __selector6_;
@@ -122,7 +136,9 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> indicatorAbout_Element_LayoutMaster_inst;
     uStrong< ::g::Fuse::Controls::Rectangle*> indicatorSponsor;
     uStrong< ::g::Uno::UX::Property1*> indicatorSponsor_Element_LayoutMaster_inst;
+    uStrong< ::g::Fuse::Controls::Page*> login;
     uStrong< ::g::Fuse::Controls::Page*> map;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> MapToggle;
     uStrong< ::g::Fuse::Controls::PageControl*> navigation;
     uStrong< ::g::Uno::UX::Property1*> navigation_Active_inst;
     uStrong< ::g::Fuse::Controls::PageControl*> navigationControl;
@@ -132,11 +148,17 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::PageControl*> navigationSponsors;
     uStrong< ::g::Uno::UX::Property1*> navigationSponsors_Active_inst;
     uStrong< ::g::Fuse::Controls::Page*> news;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityToggle;
     uStrong< ::g::Fuse::Controls::Page*> partners;
     uStrong< ::g::Fuse::Controls::Page*> plan3;
     uStrong< ::g::Fuse::Controls::Panel*> plan3Tab;
     uStrong< ::g::Fuse::Controls::Page*> plan4;
     uStrong< ::g::Fuse::Controls::Panel*> plan4Tab;
+    uStrong< ::g::Fuse::Controls::DockPanel*> popupBackground;
+    uStrong< ::g::Fuse::Controls::Panel*> popupInfo;
+    uStrong< ::g::Uno::UX::Property1*> popupInfo_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Panel*> popupInfoMap;
+    uStrong< ::g::Uno::UX::Property1*> popupInfoMap_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> program;
     uStrong< ::g::Fuse::Controls::Page*> project;
     uStrong< ::g::Fuse::Controls::Panel*> ProjectTab;
@@ -159,7 +181,6 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> temp1_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp2_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp3_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp4_Items_inst;
     static uSStrong< ::g::Fuse::Font*> TitleFont_;
     static uSStrong< ::g::Fuse::Font*>& TitleFont() { return MainView_typeof()->Init(), TitleFont_; }
 

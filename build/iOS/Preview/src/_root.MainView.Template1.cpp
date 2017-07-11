@@ -8,12 +8,15 @@
 #include <_root.Paragraph.h>
 #include <_root.Title.h>
 #include <Fuse.Binding.h>
+#include <Fuse.Controls.Control.h>
 #include <Fuse.Controls.StackPanel.h>
 #include <Fuse.Controls.Text.h>
 #include <Fuse.Controls.TextAlignment.h>
 #include <Fuse.Controls.TextControl.h>
 #include <Fuse.Controls.TextInputControl.h>
+#include <Fuse.Drawing.Brush.h>
 #include <Fuse.Drawing.Colors.h>
+#include <Fuse.Drawing.StaticSolidColor.h>
 #include <Fuse.Elements.Alignment.h>
 #include <Fuse.Elements.Element.h>
 #include <Fuse.Node.h>
@@ -121,6 +124,7 @@ void MainView__Template1__New1_fn(MainView__Template1* __this, uObject** __retva
     ::g::Fuse::Reactive::DataBinding* temp10 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp1_Value_inst, (uObject*)temp5, __this->__g_nametable1, 3);
     ::g::Fuse::Reactive::DataBinding* temp11 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp2_Value_inst, (uObject*)temp6, __this->__g_nametable1, 3);
     ::g::Fuse::Reactive::DataBinding* temp12 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp3_Value_inst, (uObject*)temp8, __this->__g_nametable1, 3);
+    ::g::Fuse::Drawing::StaticSolidColor* temp13 = ::g::Fuse::Drawing::StaticSolidColor::New2(::g::Uno::Float4__New2(0.8235294f, 0.4823529f, 0.7333333f, 1.0f));
     __self1->ItemSpacing(10.0f);
     __self1->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 20.0f, 20.0f));
     temp->Color(::g::Fuse::Drawing::Colors::White());
@@ -136,6 +140,7 @@ void MainView__Template1__New1_fn(MainView__Template1* __this, uObject** __retva
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Bindings()), ::TYPES[1/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp11);
     temp3->Alignment(10);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp3->Bindings()), ::TYPES[1/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp12);
+    __self1->Background(temp13);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp1);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp2);
