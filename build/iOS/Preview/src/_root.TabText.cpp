@@ -202,7 +202,7 @@ void TabText::InitializeUX()
     Margin(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 0.0f));
     ClipToBounds(false);
     temp->FontSize(12.0f);
-    temp->Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
+    temp->TextColor(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
     temp->Alignment(10);
     temp->Font(::g::MainView::RalewayBlack());
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[1/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp3);

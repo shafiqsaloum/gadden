@@ -41,9 +41,9 @@ static uType* TYPES[3];
 
 namespace g{
 
-// public partial sealed class MainView.Template3 :170
+// public partial sealed class MainView.Template3 :168
 // {
-// static Template3() :185
+// static Template3() :183
 static void MainView__Template3__cctor__fn(uType* __type)
 {
     MainView__Template3::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 0);
@@ -92,13 +92,13 @@ static void MainView__Template3_build(uType* type)
     return type;
 }
 
-// public Template3(MainView parent, MainView parentInstance) :174
+// public Template3(MainView parent, MainView parentInstance) :172
 void MainView__Template3__ctor_1_fn(MainView__Template3* __this, ::g::MainView* parent, ::g::MainView* parentInstance)
 {
     __this->ctor_1(parent, parentInstance);
 }
 
-// public override sealed object New() :188
+// public override sealed object New() :186
 void MainView__Template3__New1_fn(MainView__Template3* __this, uObject** __retval)
 {
     uStackFrame __("MainView.Template3", "New()");
@@ -139,7 +139,7 @@ void MainView__Template3__New1_fn(MainView__Template3* __this, uObject** __retva
     return *__retval = __self1, void();
 }
 
-// public Template3 New(MainView parent, MainView parentInstance) :174
+// public Template3 New(MainView parent, MainView parentInstance) :172
 void MainView__Template3__New2_fn(::g::MainView* parent, ::g::MainView* parentInstance, MainView__Template3** __retval)
 {
     *__retval = MainView__Template3::New2(parent, parentInstance);
@@ -149,7 +149,7 @@ uSStrong<uArray*> MainView__Template3::__g_static_nametable1_;
 ::g::Uno::UX::Selector MainView__Template3::__selector0_;
 ::g::Uno::UX::Selector MainView__Template3::__selector1_;
 
-// public Template3(MainView parent, MainView parentInstance) [instance] :174
+// public Template3(MainView parent, MainView parentInstance) [instance] :172
 void MainView__Template3::ctor_1(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     ctor_(NULL, false);
@@ -157,7 +157,7 @@ void MainView__Template3::ctor_1(::g::MainView* parent, ::g::MainView* parentIns
     __parentInstance1 = parentInstance;
 }
 
-// public Template3 New(MainView parent, MainView parentInstance) [static] :174
+// public Template3 New(MainView parent, MainView parentInstance) [static] :172
 MainView__Template3* MainView__Template3::New2(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     MainView__Template3* obj1 = (MainView__Template3*)uNew(MainView__Template3_typeof());

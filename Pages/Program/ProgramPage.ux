@@ -4,32 +4,20 @@
   <StackPanel Margin="20">
     <TitleBig Margin="0,40,0,20" Color="Black" Value="ONSDAG 8/11" />
 
-    <Grid RowCount="1" ColumnCount="2" Height="80" Margin="0,20,0,10">
-      <Image Height="80" Alignment="BottomLeft" StretchMode="UniformToFill" File="../../assets/NewsExampleImage.png"/>
-      <Grid RowCount="2" ColumnCount="1" Alignment="BottomLeft" Margin="0,0,0,0">
-        <Paragraph Font="RalewayBlack" TextWrapping="Wrap">FÖRELÄSNING</Paragraph>
-        <Paragraph FontSize="10">14.00 SEKTION 4 SAL 3</Paragraph>
+    <Each Items="{dataProgram}">
+      <Grid RowCount="1" ColumnCount="2" Height="80" Margin="0,20,0,10">
+        <Image Height="80" Alignment="BottomLeft" StretchMode="UniformToFill" Url="{image}"/>
+        <Grid RowCount="2" ColumnCount="1" Alignment="BottomLeft" Margin="0,0,0,0" Height="100%">
+          <StackPanel>
+          <Paragraph Row="1" Value="{name}" Font="RalewayBlack" TextWrapping="Wrap" />
+          <Paragraph Row="2" Value="{location}" FontSize="10"  />
+        </StackPanel>
+        </Grid>
       </Grid>
-    </Grid>
-    <Rectangle Margin="0,7,0,7" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
 
-    <Grid RowCount="1" ColumnCount="2" Height="80" Margin="0,20,0,10">
-      <Image Height="80" Alignment="BottomLeft" StretchMode="UniformToFill" File="../../assets/NewsExampleImage.png"/>
-      <Grid RowCount="2" ColumnCount="1" Alignment="BottomLeft" Margin="0,0,0,0">
-        <Paragraph Font="RalewayBlack" TextWrapping="Wrap">FÖRELÄSNING</Paragraph>
-        <Paragraph FontSize="10">14.00 SEKTION 4 SAL 3</Paragraph>
-      </Grid>
-    </Grid>
-    <Rectangle Margin="0,7,0,7" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+      <Rectangle Margin="0,7,0,7" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+    </Each>
 
-    <Grid RowCount="1" ColumnCount="2" Height="80" Margin="0,20,0,10">
-      <Image Height="80" Alignment="BottomLeft" StretchMode="UniformToFill" File="../../assets/NewsExampleImage.png"/>
-      <Grid RowCount="2" ColumnCount="1" Alignment="BottomLeft" Margin="0,0,0,0">
-        <Paragraph Font="RalewayBlack" TextWrapping="Wrap">FÖRELÄSNING</Paragraph>
-        <Paragraph FontSize="10">14.00 SEKTION 4 SAL 3</Paragraph>
-      </Grid>
-    </Grid>
-    <Rectangle Margin="0,7,0,7" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
   </StackPanel>
 
   <DockPanel Background="#000" >

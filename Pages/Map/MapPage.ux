@@ -1,22 +1,25 @@
 <Page>
   <JavaScript File="MapPage.js" />
 
-  <!-- Floor navigation -->
-  <Panel  ux:Class="TabText" ClipToBounds="false" Margin="0,0,0,0" Background="#000" >
-    <string ux:Property="Text" />
-    <Text Value="{ReadProperty Text}" Font="RalewayBlack" Alignment="Center" FontSize="12" Color="#fff"/>
-  </Panel>
-
   <!-- Sets animation between floors -->
-  <Rectangle ux:Name="indicator" LayoutMaster="plan3Tab" Color="#fff">
+  <Panel ux:Name="indicator" LayoutMaster="plan3Tab" Background="Black">
+    <TabText Background="#fff" ZOffset="1.0">
+      <Text TextColor="#000" ZOffset="2.0"/>
+    </TabText>
     <LayoutAnimation>
       <Move RelativeTo="WorldPositionChange" X="1" Duration="0.4" Easing="BackIn"/>
     </LayoutAnimation>
-  </Rectangle>
+  </Panel>
 
-  <DockPanel>
+  <!-- Floor navigation -->
+  <Panel ux:Class="TabText" ClipToBounds="false" Margin="0,0,0,0" Background="#000">
+    <string ux:Property="Text" />
+    <Text Value="{ReadProperty Text}" Font="RalewayBlack" Alignment="Center" FontSize="12" TextColor="#fff" />
+  </Panel>
+
+<DockPanel>
     <!-- Buttons -->
-    <Grid Dock="Top" ColumnCount="2" Height="30" Background="#000">
+    <Grid Dock="Top" ColumnCount="2" Height="30">
         <Panel ux:Name="plan3Tab">
             <TabText Text="PLAN 3">
                 <Clicked>
@@ -36,6 +39,7 @@
     <!-- Content on floors -->
     <PageControl ux:Name="navigationControl">
       <Page ux:Name="plan3" Background="#000">
+
         <WhileActive Threshold="0.5">
             <Set indicator.LayoutMaster="plan3Tab" />
         </WhileActive>

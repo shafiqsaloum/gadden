@@ -113,6 +113,10 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector42() { return MainView_typeof()->Init(), __selector42_; }
     static ::g::Uno::UX::Selector __selector43_;
     static ::g::Uno::UX::Selector& __selector43() { return MainView_typeof()->Init(), __selector43_; }
+    static ::g::Uno::UX::Selector __selector44_;
+    static ::g::Uno::UX::Selector& __selector44() { return MainView_typeof()->Init(), __selector44_; }
+    static ::g::Uno::UX::Selector __selector45_;
+    static ::g::Uno::UX::Selector& __selector45() { return MainView_typeof()->Init(), __selector45_; }
     static ::g::Uno::UX::Selector __selector5_;
     static ::g::Uno::UX::Selector& __selector5() { return MainView_typeof()->Init(), __selector5_; }
     static ::g::Uno::UX::Selector __selector6_;
@@ -130,7 +134,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Page*> goodiebag;
     uStrong< ::g::Fuse::Controls::Panel*> GoodiebagTab;
     uStrong< ::g::Fuse::Controls::Page*> icebreaker;
-    uStrong< ::g::Fuse::Controls::Rectangle*> indicator;
+    uStrong< ::g::Fuse::Controls::Panel*> indicator;
     uStrong< ::g::Uno::UX::Property1*> indicator_Element_LayoutMaster_inst;
     uStrong< ::g::Fuse::Controls::Rectangle*> indicatorAbout;
     uStrong< ::g::Uno::UX::Property1*> indicatorAbout_Element_LayoutMaster_inst;
@@ -139,6 +143,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Page*> login;
     uStrong< ::g::Fuse::Controls::Page*> map;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> MapToggle;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> MapToggle2;
     uStrong< ::g::Fuse::Controls::PageControl*> navigation;
     uStrong< ::g::Uno::UX::Property1*> navigation_Active_inst;
     uStrong< ::g::Fuse::Controls::PageControl*> navigationControl;
@@ -159,6 +164,8 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> popupInfo_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Panel*> popupInfoMap;
     uStrong< ::g::Uno::UX::Property1*> popupInfoMap_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Panel*> popupInfoMap2;
+    uStrong< ::g::Uno::UX::Property1*> popupInfoMap2_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> program;
     uStrong< ::g::Fuse::Controls::Page*> project;
     uStrong< ::g::Fuse::Controls::Panel*> ProjectTab;
