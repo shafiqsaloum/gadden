@@ -1,6 +1,18 @@
 <App>
 	<iOS.StatusBarConfig Style="Light" />
 
+	<JavaScript>
+	var Observable = require('FuseJS/Observable');
+
+    function closeTest(){
+        TheSidebar.dismiss()
+    }
+
+    module.exports = {
+			closeTest: closeTest
+		};
+	</JavaScript>
+
 	<!-- Global fonts -->
 	<Font ux:Global="Raleway" File="Raleway-Regular.ttf" />
 	<Font ux:Global="RalewayBlack" File="Raleway-Black.ttf" />
@@ -13,7 +25,7 @@
 	<TextView ux:Class="Paragraph" Font="Raleway"  TextColor="#fff" FontSize="14" TextWrapping="Wrap" />
 	<Text ux:Class="ButtonText" Font="RalewayBlack" FontSize="14" Color="#fff" />
 
-	<EdgeNavigator>
+	<EdgeNavigator ux:Name="TheSidebar">
 		<Panel ux:Name="sidebarProfile" Edge="Right" Width="100%" Margin="56,0,0,0" Background="#000">
 			<Shadow ux:Name="shadowProfile" Angle="180" Distance="8" Size="16" Color="#0000" />
 			<ActivatingAnimation>
@@ -55,7 +67,8 @@
 			<!-- Properties for menu text -->
 			<Panel ux:Class="Tab" ClipToBounds="false" Alignment="Right" Margin="0,5,20,5">
         <string ux:Property="Text" />
-        <Text Value="{ReadProperty Text}" Color="#FFF" Alignment="Center" LineSpacing="12" FontSize="20" Font="Raleway" />
+        <Text Value="{ReadProperty Text}" Color="#FFF" Alignment="Center" LineSpacing="12" FontSize="20" Font="Raleway">
+				</Text>
     	</Panel>
 
 			<!-- Content in slide out menu -->
@@ -68,42 +81,47 @@
 				<!-- Links -->
 				<Panel Alignment="Right">
 					<Tab Text="NYHETER">
-	 					<Clicked><Set navigation.Active="news" /> </Clicked>
+	 					<Clicked><Set navigation.Active="news" />
+					<Callback Handler="{closeTest}"/>
+				</Clicked>
 	 				</Tab>
 				 </Panel>
 				<Panel Alignment="Right">
 					<Tab Text="PARTNERS">
-						<Clicked><Set navigation.Active="partners" /> </Clicked>
+						<Clicked>
+							<Set navigation.Active="partners" />
+							<Callback Handler="{closeTest}"/>
+					</Clicked>
 					</Tab>
 					</Panel>
 					<Panel Alignment="Right">
 						<Tab Text="UTSTÄLLARE">
-							<Clicked><Set navigation.Active="exhibitor" /></Clicked>
+							<Clicked><Set navigation.Active="exhibitor" /><Callback Handler="{closeTest}"/></Clicked>
 						</Tab>
 					</Panel>
 					<Panel Alignment="Right">
 						<Tab Text="PROGRAM">
-							<Clicked><Set navigation.Active="program" /></Clicked>
+							<Clicked><Set navigation.Active="program" /><Callback Handler="{closeTest}"/></Clicked>
 						</Tab>
 					</Panel>
 					<Panel Alignment="Right">
 						<Tab Text="ICE BREAKER">
-							<Clicked><Set navigation.Active="icebreaker" /></Clicked>
+							<Clicked><Set navigation.Active="icebreaker" /><Callback Handler="{closeTest}"/></Clicked>
 						</Tab>
 					</Panel>
 					<Panel Alignment="Right">
 						<Tab Text="SPONSORER">
-							<Clicked><Set navigation.Active="sponsors" /></Clicked>
+							<Clicked><Set navigation.Active="sponsors" /><Callback Handler="{closeTest}"/></Clicked>
 						</Tab>
 					</Panel>
 					<Panel Alignment="Right">
 						<Tab Text="KARTA">
-							<Clicked><Set navigation.Active="map" /></Clicked>
+							<Clicked><Set navigation.Active="map" /><Callback Handler="{closeTest}"/></Clicked>
 						</Tab>
 					</Panel>
 					<Panel Alignment="Right">
 						<Tab Text="OM OSS">
-							<Clicked><Set navigation.Active="aboutus" /></Clicked>
+							<Clicked><Set navigation.Active="aboutus" /><Callback Handler="{closeTest}"/></Clicked>
 						</Tab>
 					</Panel>
 
