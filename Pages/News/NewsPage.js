@@ -4,6 +4,11 @@ var data = Observable();
 function Article(item) {
     this.title = item.title;
     this.image = item.image.url;
+    this.text = item.text;
+};
+
+function articleClicked(args) {
+    console.log(args.data.title);
 };
 
 fetch("https://dev.jexpo.se/dev/forms/news?getAttributes=1")
@@ -20,15 +25,6 @@ fetch("https://dev.jexpo.se/dev/forms/news?getAttributes=1")
 });
 
 module.exports = {
-    dataSource: data
+    dataSource: data,
+    articleClicked: articleClicked
 };
-
-// function goToSinglePage(arg) {
-//   var news = arg.data;
-//   routerNews.push("singlePage", news);
-// }
-//
-// module.exports = {
-// 	news: news,
-// 	goToSinglePage: goToSinglePage
-// };

@@ -1,28 +1,47 @@
 <Page>
-  <JavaScript File="NewsPage.js" />
+<JavaScript File="NewsPage.js" />
 
-<ClientPanel>
+<Panel ux:Name="NewsFeed" Opacity="1">
   <ScrollView>
-    <StackPanel Margin="0" ItemSpacing="16" >
-      <Image Margin="0,0,0,0" Alignment="TopCenter" File="../../assets/GaddenLogotypeWhite.png" Width="60%" />
+    <StackPanel>
+      <!-- Logotype -->
+      <Image Margin="10" Alignment="TopCenter" File="../../assets/GaddenLogotypeWhite.png" Width="60%" />
 
-      <StackPanel Background="Black">
-        <Each Items="{dataSource}">
-          <!-- <Button Text="Tryck" Clicked="{goToSinglePage}" /> -->
+      <!-- Outputing newfeed from JSON -->
+      <Each Items="{dataSource}">
 
-            <Panel>
-              <Title Value="{title}" Alignment="BottomLeft" TextAlignment="Left" TextWrapping="Wrap" />
-    				  <Image Url="{image}" Width="100%" Margin="0,0,0,0" Alignment="TopLeft" />
+        <Image Width="100%" Height="100%" Url="{image}" ZOffset="0.0">
+          <Clicked>
+            <Toggle Target="opacityNews" />
+            <Callback Handler="{articleClicked}"/>
+          </Clicked>
 
-            </Panel>
+          <Panel Alignment="BottomLeft" Margin="20">
+            <Text Value="{title}" Font="TitleFont" TextColor="#fff" TextWrapping="Wrap" FontSize="20" LineSpacing="10" />
+          </Panel>
+        </Image>
 
-         </Each>
-     </StackPanel>
+      </Each>
     </StackPanel>
-   </ScrollView>
-</ClientPanel>
+  </ScrollView>
+</Panel>
+
+<WhileTrue ux:Name="opacityNews">
+    <Change NewsDetails.Opacity="1" Duration="0.1" />
+    <Change NewsFeed.Opacity="0" />
+    <Change BackgroundImage.Opacity="0" />
+</WhileTrue>
+
+<!-- Output newsfeed details -->
+<Panel ux:Name="NewsDetails" Opacity="0" >
+  <Rectangle Width="100%" Height="100%"  Background="White" ZOffset="1.0">
+    <Each Items="{articleClicked}">
+      <Text Value="{title}" Alignment="Center" />
+    </Each>
+  </Rectangle>
+</Panel>
 
 <!-- Background image -->
-<Image Alignment="Center" File="../../assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
+<Image ux:Name="BackgroundImage" Opacity="1" Alignment="Center" File="../../assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
 
 </Page>

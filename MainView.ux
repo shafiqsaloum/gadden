@@ -8,7 +8,7 @@
 
 	<!-- Text classes-->
 	<Text ux:Class="WelcomeText" FontSize="20" Alignment="Center" Font="Raleway"/>
-	<TextView ux:Class="Title" Font="TitleFont" Alignment="BottomLeft" TextColor="#fff" Margin="20,0,0,20" TextWrapping="Wrap" FontSize="20"/>
+	<TextView ux:Class="Title" Font="TitleFont" Alignment="BottomLeft" TextColor="#fff" Margin="20,0,0,0" TextWrapping="Wrap" FontSize="20"/>
 	<Text ux:Class="TitleBig" Font="TitleFont" Alignment="TopCenter" Color="#fff" FontSize="30" />
 	<TextView ux:Class="Paragraph" Font="Raleway"  TextColor="#fff" FontSize="14" TextWrapping="Wrap" />
 	<Text ux:Class="ButtonText" Font="RalewayBlack" FontSize="14" Color="#fff" />

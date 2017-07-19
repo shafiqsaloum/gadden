@@ -4,6 +4,7 @@ var data = Observable();
 function Article(item) {
     this.title = item.title;
     this.image = item.image.url;
+    this.text = item.text;
 };
 
 fetch("https://dev.jexpo.se/dev/forms/news?getAttributes=1")

@@ -1,5 +1,5 @@
 var Observable = require("FuseJS/Observable");
-var data = Observable();
+var singleNews = Observable();
 
 function SingleDetails(item) {
     this.title = item.title;
@@ -14,12 +14,12 @@ fetch("https://dev.jexpo.se/dev/forms/news?getAttributes=1")
     responseObject.results.forEach(function(r) {
         items.push(new SingleDetails(r));
     });
-    data.replaceAll(items);
+    singleNews.replaceAll(items);
     debug_log("data: " + JSON.stringify(data));
 }).catch(function(e) {
     console.log("Error: " + e.message);
 });
 
 module.exports = {
-    dataSource: data
+    dataNewsSingle: data
 };

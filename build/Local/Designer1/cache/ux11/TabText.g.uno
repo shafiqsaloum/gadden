@@ -42,7 +42,7 @@ public partial class TabText: Fuse.Controls.Panel
         this.Margin = float4(0f, 0f, 0f, 0f);
         this.ClipToBounds = false;
         temp.FontSize = 12f;
-        temp.Color = float4(1f, 1f, 1f, 1f);
+        temp.TextColor = float4(1f, 1f, 1f, 1f);
         temp.Alignment = Fuse.Elements.Alignment.Center;
         temp.Font = global::MainView.RalewayBlack;
         temp.Bindings.Add(temp3);

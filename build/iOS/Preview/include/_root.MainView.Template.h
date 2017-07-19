@@ -29,6 +29,13 @@ struct MainView__Template : ::g::Uno::UX::Template
     static ::g::Uno::UX::Selector& __selector0() { return MainView__Template_typeof()->Init(), __selector0_; }
     static ::g::Uno::UX::Selector __selector1_;
     static ::g::Uno::UX::Selector& __selector1() { return MainView__Template_typeof()->Init(), __selector1_; }
+    static ::g::Uno::UX::Selector __selector2_;
+    static ::g::Uno::UX::Selector& __selector2() { return MainView__Template_typeof()->Init(), __selector2_; }
+    static ::g::Uno::UX::Selector __selector3_;
+    static ::g::Uno::UX::Selector& __selector3() { return MainView__Template_typeof()->Init(), __selector3_; }
+    static ::g::Uno::UX::Selector __selector4_;
+    static ::g::Uno::UX::Selector& __selector4() { return MainView__Template_typeof()->Init(), __selector4_; }
+    uStrong< ::g::Uno::UX::Property1*> popupNews_Opacity_inst;
     uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp1_Url_inst;
 

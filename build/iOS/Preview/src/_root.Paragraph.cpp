@@ -5,8 +5,6 @@
 #include <_root.Paragraph.h>
 #include <Fuse.Controls.TextInputControl.h>
 #include <Fuse.Controls.TextWrapping.h>
-#include <Fuse.Elements.Alignment.h>
-#include <Fuse.Elements.Element.h>
 #include <Fuse.Font.h>
 #include <Uno.Float.h>
 #include <Uno.Float4.h>
@@ -132,7 +130,6 @@ void Paragraph::InitializeUX()
     TextWrapping(1);
     FontSize(14.0f);
     TextColor(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
-    Alignment(1);
     Font(::g::MainView::Raleway());
 }
 

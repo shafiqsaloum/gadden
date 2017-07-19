@@ -1,13 +1,31 @@
 <Page>
   <JavaScript File="NewsSinglePage.js" />
-  
-  <ScrollView>
-		<StackPanel>
-      <Image Url="{image}" Width="100%" Margin="0,0,0,0" Alignment="TopLeft" />
-			<Title Value="{title}" />
-      <Paragraph Value="{text}" />
-      <Button Text="GÅ TILL EVENT" Clicked="{goEvent}" />
-		</StackPanel>
-	</ScrollView>
+
+  <ScrollView ux:Name="scrollViewDetail">
+    <StackPanel>
+      <Panel>
+        <Image Url="{image}" Margin="0,20,0,20" />
+      </Panel>
+
+      <Panel>
+        <Text Value="{title}" TextWrapping="Wrap" FontSize="25" />
+      </Panel>
+
+      <Panel>
+        <Text Value="{text}" TextWrapping="Wrap" />
+      </Panel>
+    </StackPanel>
+  </ScrollView>
+
+  <!-- <ScrollView>
+    <Each Items="{dataNewsSingle}">
+  		<StackPanel>
+        <Image Url="{image}" Width="100%" Margin="0,0,0,0" Alignment="TopLeft" />
+  			<Title Value="{title}" />
+        <Paragraph Value="{text}" />
+        <Button Text="GÅ TILL EVENT" Clicked="{goEvent}" />
+  		</StackPanel>
+    </Each>
+	</ScrollView> -->
 
 </Page>
