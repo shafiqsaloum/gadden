@@ -2,16 +2,21 @@
   <JavaScript File="IceBreakersPage.js" />
   <DockPanel ux:Name="popupBackground" Height="100%" Background="Black" Opacity="1">
     <!-- Background -->
-    <Image Alignment="TopRight" Width="30" Height="30" Margin="20" File="../../assets/InfoIconWhite.png">
+    <Image ux:Name="infoIcon" Opacity="1" Alignment="TopRight" Width="30" Height="30" Margin="20" File="../../assets/InfoIconWhite.png">
     <Clicked>
       <Toggle Target="opacityToggle" />
       <DebugAction Message="clicked" />
     </Clicked>
     </Image>
+
+    <Image ux:Name="crossIcon" Opacity="0" Alignment="TopRight" Width="25" Height="25" Margin="20" File="../../assets/CrossIcon.png" />
+
     <Image Alignment="TopCenter" Layer="Background" File="../../assets/BackgroundIceBreaker.png"/>
 
     <WhileTrue ux:Name="opacityToggle">
-        <Change popupInfo.Opacity="1" Duration="0.3" />
+        <Change popupInfo.Opacity="1" Duration="0.1" />
+        <Change infoIcon.Opacity="0" />
+        <Change crossIcon.Opacity="1" />
     </WhileTrue>
 
     <Panel ux:Name="popupInfo" Opacity="0" Height="100%" Width="100%" Background="#0006">

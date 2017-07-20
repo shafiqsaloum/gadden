@@ -204,6 +204,7 @@ void MainView__Template1__New1_fn(MainView__Template1* __this, uObject** __retva
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(showDetails1->Animators()), ::TYPES[7/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp12);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(showDetails1->Animators()), ::TYPES[7/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp13);
     ::g::Fuse::Animations::Change__set_Value_fn(temp12, uCRef(1.0f));
+    temp12->Duration(0.2);
     ::g::Fuse::Animations::Change__set_Value_fn(temp13, uCRef(0.0f));
     temp14->Width(::g::Uno::UX::Size__New1(100.0f, 4));
     temp14->Height(::g::Uno::UX::Size__New1(1.0f, 3));

@@ -43,14 +43,18 @@
         <WhileActive Threshold="0.5">
             <Set indicator.LayoutMaster="plan3Tab" />
         </WhileActive>
-        <Image Alignment="TopRight" Width="30" Height="30" Margin="20" File="../../assets/InfoIconWhite.png">
+        <Image ux:Name="infoIconMap" Alignment="TopRight" Width="30" Height="30" Margin="20" File="../../assets/InfoIconWhite.png">
           <Clicked>
             <Toggle Target="MapToggle" />
           </Clicked>
         </Image>
 
+        <Image ux:Name="crossIconMap" Opacity="0" Alignment="TopRight" Width="25" Height="25" Margin="20" File="../../assets/CrossIcon.png" />
+
       <WhileTrue ux:Name="MapToggle">
           <Change popupInfoMap.Opacity="1" Duration="0.3" />
+          <Change infoIconMap.Opacity="0" />
+          <Change crossIconMap.Opacity="1" />
       </WhileTrue>
 
       <Panel ux:Name="popupInfoMap" Opacity="0" Height="100%" Width="100%" Background="#0006">
@@ -88,15 +92,19 @@
               <Set indicator.LayoutMaster="plan4Tab" />
           </WhileActive>
 
-          <Image Alignment="TopRight" Width="30" Height="30" Margin="20" File="../../assets/InfoIconWhite.png">
+          <Image ux:Name="infoIconMap2" Alignment="TopRight" Width="30" Height="30" Margin="20" File="../../assets/InfoIconWhite.png">
             <Clicked>
               <Toggle Target="MapToggle2" />
             </Clicked>
           </Image>
 
-          <WhileTrue ux:Name="MapToggle2">
-              <Change popupInfoMap2.Opacity="1" Duration="0.3" />
-          </WhileTrue>
+          <Image ux:Name="crossIconMap2" Opacity="0" Alignment="TopRight" Width="25" Height="25" Margin="20" File="../../assets/CrossIcon.png" />
+
+        <WhileTrue ux:Name="MapToggle2">
+            <Change popupInfoMap.Opacity="1" Duration="0.3" />
+            <Change infoIconMap2.Opacity="0" />
+            <Change crossIconMap2.Opacity="1" />
+        </WhileTrue>
 
           <Panel ux:Name="popupInfoMap2" Opacity="0" Height="100%" Width="100%" Background="#0006">
             <Rectangle Color="White" CornerRadius="15" Width="300" Height="270" Margin="20,60,20,20" Alignment="TopCenter">

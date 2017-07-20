@@ -3,6 +3,7 @@
 
 #pragma once
 #include <Uno.UX.Template.h>
+namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
 namespace g{namespace Uno{namespace UX{struct NameTable;}}}
 namespace g{namespace Uno{namespace UX{struct Property1;}}}
 namespace g{namespace Uno{namespace UX{struct Selector;}}}
@@ -11,7 +12,7 @@ namespace g{struct MainView__Template6;}
 
 namespace g{
 
-// public partial sealed class MainView.Template6 :403
+// public partial sealed class MainView.Template6 :345
 // {
 ::g::Uno::UX::Template_type* MainView__Template6_typeof();
 void MainView__Template6__ctor_1_fn(MainView__Template6* __this, ::g::MainView* parent, ::g::MainView* parentInstance);
@@ -29,9 +30,11 @@ struct MainView__Template6 : ::g::Uno::UX::Template
     static ::g::Uno::UX::Selector& __selector0() { return MainView__Template6_typeof()->Init(), __selector0_; }
     static ::g::Uno::UX::Selector __selector1_;
     static ::g::Uno::UX::Selector& __selector1() { return MainView__Template6_typeof()->Init(), __selector1_; }
-    uStrong< ::g::Uno::UX::Property1*> temp_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> __self_Background_inst1;
+    uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp1_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
 
     void ctor_1(::g::MainView* parent, ::g::MainView* parentInstance);
     static MainView__Template6* New2(::g::MainView* parent, ::g::MainView* parentInstance);

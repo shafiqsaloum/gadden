@@ -69,6 +69,7 @@ namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno:
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* gadden_accessor_TabSponsor_Text_typeof();}
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* gadden_accessor_TabText_Text_typeof();}
 namespace g{uClassType* gadden_bundle_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsControl_Background_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsImage_Color_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsImage_Url_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsNavigationControl_Active_Property_typeof();}
@@ -91,6 +92,8 @@ namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Tem
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template4_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template5_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template6_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template7_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template8_typeof();}
 namespace g{namespace Fuse{struct AppBase_type;} ::g::Fuse::AppBase_type* MainView_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct TextInputControl_type;}} ::g::Fuse::Controls::TextInputControl_type* Paragraph_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* Profile_typeof();}
@@ -2022,6 +2025,7 @@ void uInitRtti()
         (uType*(*)())&::g::gadden_accessor_TabSponsor_Text_typeof,
         (uType*(*)())&::g::gadden_accessor_TabText_Text_typeof,
         (uType*(*)())&::g::gadden_bundle_typeof,
+        (uType*(*)())&::g::gadden_FuseControlsControl_Background_Property_typeof,
         (uType*(*)())&::g::gadden_FuseControlsImage_Color_Property_typeof,
         (uType*(*)())&::g::gadden_FuseControlsImage_Url_Property_typeof,
         (uType*(*)())&::g::gadden_FuseControlsNavigationControl_Active_Property_typeof,
@@ -2044,6 +2048,8 @@ void uInitRtti()
         (uType*(*)())&::g::MainView__Template4_typeof,
         (uType*(*)())&::g::MainView__Template5_typeof,
         (uType*(*)())&::g::MainView__Template6_typeof,
+        (uType*(*)())&::g::MainView__Template7_typeof,
+        (uType*(*)())&::g::MainView__Template8_typeof,
         (uType*(*)())&::g::MainView_typeof,
         (uType*(*)())&::g::Paragraph_typeof,
         (uType*(*)())&::g::Profile_typeof,

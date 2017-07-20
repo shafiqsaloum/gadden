@@ -44,6 +44,17 @@
           <TitleBig>Tack!</TitleBig>
           <!-- Line seperator -->
   				<Rectangle Alignment="TopCenter" Margin="0,50,0,0" Fill="#979797" Height="1px" SnapToPixels="true" Width="100"/>
+          <ScrollView>
+            <StackPanel>
+          <Each Items="{dataSponsors}">
+ <!-- FÖRSÖKER FÅ UT DATA MEN BLIR ERROR SÅ KOLLA OM DU FÅR UT BILDERNA -->
+                <!-- <Image Url="{logo}" Width="40" />
+                <Text Value="{logo}" /> -->
+
+          </Each>
+        </StackPanel>
+      </ScrollView>
+
         </Panel>
       </Page>
         <Page ux:Name="goodiebag" Background="Black">
@@ -62,8 +73,9 @@
                     <Panel>
                       <Title Value="{article}" Alignment="Center" />
                     </Panel>
+
                     <Paragraph Value="{content}" Margin="0,0,0,0" Width="100%" Alignment="Center" TextAlignment="Center" Height="100%"/>
-                    <Text Value="{= toUpper({code})}" Alignment="Center" />
+                    <Text Color="White" Value="{= toUpper({code})}" Alignment="Center" />
 
 
                   </StackPanel>

@@ -121,6 +121,14 @@ sealed class gadden_FuseElementsElement_ElementLayoutMaster_Property: Uno.UX.Pro
     public override Fuse.Elements.Element Get(global::Uno.UX.PropertyObject obj) { return global::Fuse.Controls.LayoutControl.GetLayoutMaster((Fuse.Elements.Element)obj); }
     public override void Set(global::Uno.UX.PropertyObject obj, Fuse.Elements.Element v, global::Uno.UX.IPropertyListener origin) { global::Fuse.Controls.LayoutControl.SetLayoutMaster((Fuse.Elements.Element)obj, v); }
 }
+sealed class gadden_FuseControlsControl_Background_Property: Uno.UX.Property<Fuse.Drawing.Brush>
+{
+    [Uno.WeakReference] readonly Fuse.Controls.Control _obj;
+    public gadden_FuseControlsControl_Background_Property(Fuse.Controls.Control obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override Fuse.Drawing.Brush Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.Control)obj).Background; }
+    public override void Set(global::Uno.UX.PropertyObject obj, Fuse.Drawing.Brush v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.Control)obj).Background = v; }
+}
 sealed class gadden_Tab_Text_Property: Uno.UX.Property<string>
 {
     [Uno.WeakReference] readonly Tab _obj;

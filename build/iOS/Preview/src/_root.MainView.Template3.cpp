@@ -19,9 +19,9 @@
 
 namespace g{
 
-// public partial sealed class MainView.Template3 :260
+// public partial sealed class MainView.Template3 :261
 // {
-// static Template3() :269
+// static Template3() :270
 static void MainView__Template3__cctor__fn(uType* __type)
 {
 }
@@ -52,13 +52,13 @@ static void MainView__Template3_build(uType* type)
     return type;
 }
 
-// public Template3(MainView parent, MainView parentInstance) :264
+// public Template3(MainView parent, MainView parentInstance) :265
 void MainView__Template3__ctor_1_fn(MainView__Template3* __this, ::g::MainView* parent, ::g::MainView* parentInstance)
 {
     __this->ctor_1(parent, parentInstance);
 }
 
-// public override sealed object New() :272
+// public override sealed object New() :273
 void MainView__Template3__New1_fn(MainView__Template3* __this, uObject** __retval)
 {
     uStackFrame __("MainView.Template3", "New()");
@@ -72,13 +72,13 @@ void MainView__Template3__New1_fn(MainView__Template3* __this, uObject** __retva
     return *__retval = __self1, void();
 }
 
-// public Template3 New(MainView parent, MainView parentInstance) :264
+// public Template3 New(MainView parent, MainView parentInstance) :265
 void MainView__Template3__New2_fn(::g::MainView* parent, ::g::MainView* parentInstance, MainView__Template3** __retval)
 {
     *__retval = MainView__Template3::New2(parent, parentInstance);
 }
 
-// public Template3(MainView parent, MainView parentInstance) [instance] :264
+// public Template3(MainView parent, MainView parentInstance) [instance] :265
 void MainView__Template3::ctor_1(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     ctor_(NULL, false);
@@ -86,7 +86,7 @@ void MainView__Template3::ctor_1(::g::MainView* parent, ::g::MainView* parentIns
     __parentInstance1 = parentInstance;
 }
 
-// public Template3 New(MainView parent, MainView parentInstance) [static] :264
+// public Template3 New(MainView parent, MainView parentInstance) [static] :265
 MainView__Template3* MainView__Template3::New2(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     MainView__Template3* obj1 = (MainView__Template3*)uNew(MainView__Template3_typeof());

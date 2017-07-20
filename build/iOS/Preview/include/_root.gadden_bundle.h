@@ -40,6 +40,8 @@ struct gadden_bundle : uObject
     static uSStrong< ::g::Uno::IO::BundleFile*>& GaddenLogotypeSmallWhite740d07ab() { return gadden_bundle_typeof()->Init(), GaddenLogotypeSmallWhite740d07ab_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> GaddenLogotypeWhite1c35d470_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& GaddenLogotypeWhite1c35d470() { return gadden_bundle_typeof()->Init(), GaddenLogotypeWhite1c35d470_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> GoodiebagBackgroundda8e66b6_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& GoodiebagBackgroundda8e66b6() { return gadden_bundle_typeof()->Init(), GoodiebagBackgroundda8e66b6_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> HandelsbankenLogotypeWhitefcc429e9_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& HandelsbankenLogotypeWhitefcc429e9() { return gadden_bundle_typeof()->Init(), HandelsbankenLogotypeWhitefcc429e9_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> HHGSLogotypWhite257b8c22_;

@@ -242,11 +242,13 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> temp12_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp13_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp14_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp15_Data_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp16_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp15_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp16_Data_inst;
     uStrong< ::g::Uno::UX::Property1*> temp17_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp18_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp19_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp20_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp4_Data_inst;
     uStrong< ::g::Uno::UX::Property1*> temp5_Items_inst;

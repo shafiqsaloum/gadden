@@ -7,6 +7,7 @@ function Program(item) {
     this.image = item.attachment.url;
     this.date = item.start_date;
     this.time = item.start_time;
+    this.description = item.description;
 };
 
 var selectedProgram = Observable();
