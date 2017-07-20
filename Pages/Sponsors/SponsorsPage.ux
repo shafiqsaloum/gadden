@@ -51,14 +51,24 @@
               <Set indicatorSponsor.LayoutMaster="GoodiebagTab" />
           </WhileActive>
           <ScrollView>
-            <StackPanel Background="#d27bbb">
+            <StackPanel >
               <Each Items="{dataGoodiebag}">
-                <StackPanel Margin="20" ItemSpacing="10" >
-                  <Text Color="White" Alignment="Center" Value="{company}" />
-                  <Title Value="{article}" Alignment="Center" />
-                  <Paragraph Value="{content}" Margin="0,0,0,0" Width="100%" Alignment="Center" TextAlignment="Center" Height="100%"/>
-                  <Text Value="{= toUpper({code})}" Alignment="Center" />
-                </StackPanel>
+                <Panel Background="{color}">
+                  <StackPanel Margin="20" ItemSpacing="10">
+                    <Panel>
+                      <Text Color="White" Alignment="Center" Value="{company}" />
+                    </Panel>
+
+                    <Panel>
+                      <Title Value="{article}" Alignment="Center" />
+                    </Panel>
+                    <Paragraph Value="{content}" Margin="0,0,0,0" Width="100%" Alignment="Center" TextAlignment="Center" Height="100%"/>
+                    <Text Value="{= toUpper({code})}" Alignment="Center" />
+
+
+                  </StackPanel>
+                  <Image StretchMode="Fill" Layer="Background" File="../../assets/GoodiebagBackground.png" />
+                </Panel>
               </Each>
             </StackPanel>
           </ScrollView>

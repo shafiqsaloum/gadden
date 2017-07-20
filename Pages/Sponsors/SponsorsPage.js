@@ -6,6 +6,7 @@ function Goodiebag(item) {
     this.article = item.article;
     this.content = item.content;
     this.code = item.code;
+    this.color = item.color;
 };
 
 fetch("https://dev.jexpo.se/dev/forms/coupons?getAttributes=1")

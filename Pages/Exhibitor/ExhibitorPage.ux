@@ -37,7 +37,7 @@
             </WhileTrue>
 
             <WhileTrue ux:Name="showDetails">
-              <Change ExhibitorDetails.Opacity="1" />
+              <Change ExhibitorDetails.Opacity="1" Duration="0.2" />
               <Change ExibitorList.Opacity="0" />
               <!-- <Change ExibitorBackground.Opacity="0" /> -->
             </WhileTrue>
@@ -53,12 +53,11 @@
 </Panel>
 
 <!-- Output exhibitor details -->
-<Panel ux:Name="ExhibitorDetails" Opacity="0" Width="100%" Height="100%">
+<Panel ux:Name="ExhibitorDetails" Opacity="0">
   <Rectangle Width="100%" Height="100%" Background="Black" ZOffset="3.0">
-    <With Data="{selectedExhibitor}">
-    <ScrollView LayoutMode="PreserveScrollPosition">
-        <StackPanel>
-
+    <ScrollView>
+      <StackPanel>
+        <With Data="{selectedExhibitor}">
           <Panel Width="100%">
               <Image Alignment="TopCenter" File="../../assets/NewsExampleImage.png" Width="100%" />
           </Panel>
@@ -74,12 +73,10 @@
           <Panel Margin="20">
             <Paragraph Value="{about}" />
           </Panel>
-
-        </StackPanel>
-        </ScrollView>
-    </With>
+        </With>
+      </StackPanel>
+    </ScrollView>
   </Rectangle>
-
 </Panel>
 
 <!-- Background image -->
