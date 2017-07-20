@@ -11,7 +11,7 @@ namespace g{struct Tab;}
 
 namespace g{
 
-// internal sealed class gadden_Tab_Text_Property :108
+// internal sealed class gadden_Tab_Text_Property :124
 // {
 ::g::Uno::UX::Property1_type* gadden_Tab_Text_Property_typeof();
 void gadden_Tab_Text_Property__ctor_3_fn(gadden_Tab_Text_Property* __this, ::g::Tab* obj, ::g::Uno::UX::Selector* name);

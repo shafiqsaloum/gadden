@@ -22,6 +22,8 @@ struct gadden_bundle : uObject
     static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundExhibitor67ed3f2d() { return gadden_bundle_typeof()->Init(), BackgroundExhibitor67ed3f2d_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundIceBreaker4245b230_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundIceBreaker4245b230() { return gadden_bundle_typeof()->Init(), BackgroundIceBreaker4245b230_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundNewsDetails0b71a49a_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundNewsDetails0b71a49a() { return gadden_bundle_typeof()->Init(), BackgroundNewsDetails0b71a49a_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundProgram6a52ad4b_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundProgram6a52ad4b() { return gadden_bundle_typeof()->Init(), BackgroundProgram6a52ad4b_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> ErnstYoungLogotypeWhite0bff62cd_;

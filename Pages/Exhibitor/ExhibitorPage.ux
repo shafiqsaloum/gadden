@@ -1,44 +1,88 @@
 <Page>
-  <JavaScript File="ExhibitorPage.js" />
+<JavaScript File="ExhibitorPage.js" />
 
+<!-- Output exhibitor list -->
+<Panel ux:Name="ExibitorList" Opacity="1">
   <ScrollView>
     <StackPanel Margin="20">
 
-    <TextInput PlaceholderText="Sök utställare" PlaceholderColor="#979797" Padding="5,0,0,0" Alignment="TopCenter" TextAlignment="Center" Width="100%" TextColor="White" Height="40" Margin="0,0,0,50">
-      <Image Height="13" Alignment="Center" Margin="0,0,120,0" StretchMode="UniformToFill" Layer="Background" File="../../assets/SearchGrey.png"  />
-      <Rectangle Fill="White" Layer="Background" CornerRadius="10" >
-        <Stroke Width="1" Color="#979797" />
-      </Rectangle>
-    </TextInput>
+      <!-- Search input -->
+      <TextInput PlaceholderText="Sök utställare" PlaceholderColor="#979797" Padding="5,0,0,0" Alignment="TopCenter" TextAlignment="Center" Width="100%" TextColor="White" Height="40" Margin="0,0,0,50">
+        <Image Height="13" Alignment="Center" Margin="0,0,120,0" StretchMode="UniformToFill" Layer="Background" File="../../assets/SearchGrey.png"  />
+        <Rectangle Fill="White" Layer="Background" CornerRadius="10" >
+          <Stroke Width="1" Color="#979797" />
+        </Rectangle>
+      </TextInput>
 
-    <!-- Outputs exhibitor list -->
-    <Each Items="{exhibitor}">
-        <StackPanel>
-          <Grid RowCount="1" ColumnCount="2">
-            <Paragraph Value="{= toUpper({name})}" Width="180" />
+      <!-- Output data -->
+      <Each Items="{exhibitor}">
+          <StackPanel>
+            <Grid RowCount="1" ColumnCount="2">
+
+              <SmallText Opacity="1" Value="{= toUpper({name})}" Width="180" Margin="0,3,0,3">
+                <Clicked>
+                  <Toggle Target="showDetails" />
+                  <Callback Handler="{exhibitorClicked}"/>
+                </Clicked>
+              </SmallText>
+
             <Image ux:Name="starImage" Height="15" Alignment="BottomRight" StretchMode="UniformToFill" File="../../assets/StarWhite.png" Margin="0,0,0,7" Color="White">
               <Clicked>
                 <Toggle Target="yellowStar" />
               </Clicked>
-
-              <WhileTrue ux:Name="yellowStar">
-                  <Change starImage.Color="Yellow" Duration="0.3" />
-              </WhileTrue>
             </Image>
+
+            <WhileTrue ux:Name="yellowStar">
+                <Change starImage.Color="Yellow" Duration="0.3" />
+            </WhileTrue>
+
+            <WhileTrue ux:Name="showDetails">
+              <Change ExhibitorDetails.Opacity="1" />
+              <Change ExibitorList.Opacity="0" />
+              <!-- <Change ExibitorBackground.Opacity="0" /> -->
+            </WhileTrue>
 
           </Grid>
           <Rectangle Margin="0,3,0,3" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
         </StackPanel>
-
     </Each>
 
+</StackPanel>
+</ScrollView>
 
+</Panel>
 
-  </StackPanel>
-      </ScrollView>
+<!-- Output exhibitor details -->
+<Panel ux:Name="ExhibitorDetails" Opacity="0" Width="100%" Height="100%">
+  <Rectangle Width="100%" Height="100%" Background="Black" ZOffset="3.0">
+    <With Data="{selectedExhibitor}">
+    <ScrollView LayoutMode="PreserveScrollPosition">
+        <StackPanel>
 
-  <DockPanel Background="#000" >
-    <Image StretchMode="Fill" Layer="Background" File="../../assets/BackgroundExhibitor.png"  />
-  </DockPanel>
+          <Panel Width="100%">
+              <Image Alignment="TopCenter" File="../../assets/NewsExampleImage.png" Width="100%" />
+          </Panel>
+
+          <Panel Margin="20" MaxHeight="60">
+            <Image Alignment="Left" Url="{logo}" />
+          </Panel>
+
+          <Panel Alignment="BottomLeft" Margin="0,20,0,0" Width="100%" Height="100%">
+            <Title Value="{name}" FontSize="28" LineSpacing="10" Height="100%" TextAlignment="Left"/>
+          </Panel>
+
+          <Panel Margin="20">
+            <Paragraph Value="{about}" />
+          </Panel>
+
+        </StackPanel>
+        </ScrollView>
+    </With>
+  </Rectangle>
+
+</Panel>
+
+<!-- Background image -->
+<Image StretchMode="Fill" Layer="Background" File="../../assets/BackgroundExhibitor.png"  />
 
 </Page>

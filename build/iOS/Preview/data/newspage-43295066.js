@@ -7,9 +7,12 @@ function Article(item) {
     this.text = item.text;
 };
 
+var selectedArticle = Observable();
+
 function articleClicked(args) {
-    console.log(args.data.title);
-};
+		console.log(JSON.stringify(args.data));
+		selectedArticle.value = args.data;
+	};
 
 fetch("https://dev.jexpo.se/dev/forms/news?getAttributes=1")
 .then(function(response) { return response.json(); })
@@ -26,5 +29,6 @@ fetch("https://dev.jexpo.se/dev/forms/news?getAttributes=1")
 
 module.exports = {
     dataSource: data,
-    articleClicked: articleClicked
+    articleClicked: articleClicked,
+    selectedArticle: selectedArticle
 };

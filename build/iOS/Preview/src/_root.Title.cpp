@@ -8,6 +8,7 @@
 #include <Fuse.Elements.Alignment.h>
 #include <Fuse.Elements.Element.h>
 #include <Fuse.Font.h>
+#include <Uno.Bool.h>
 #include <Uno.Float.h>
 #include <Uno.Float4.h>
 
@@ -132,6 +133,7 @@ void Title::InitializeUX()
     TextWrapping(1);
     FontSize(20.0f);
     TextColor(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
+    IsReadOnly(true);
     Alignment(13);
     Margin(::g::Uno::Float4__New2(20.0f, 0.0f, 0.0f, 0.0f));
     Font(::g::MainView::TitleFont());

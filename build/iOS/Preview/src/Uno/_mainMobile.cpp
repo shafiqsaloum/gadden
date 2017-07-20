@@ -69,6 +69,7 @@ namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno:
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* gadden_accessor_TabSponsor_Text_typeof();}
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* gadden_accessor_TabText_Text_typeof();}
 namespace g{uClassType* gadden_bundle_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsImage_Color_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsImage_Url_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsNavigationControl_Active_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsShadow_Color_Property_typeof();}
@@ -77,6 +78,7 @@ namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Pr
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_ElementLayoutMaster_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_Opacity_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseReactiveEach_Items_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseReactiveWith_Data_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_Tab_Text_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_TabSponsor_Text_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_TabText_Text_Property_typeof();}
@@ -92,6 +94,7 @@ namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Tem
 namespace g{namespace Fuse{struct AppBase_type;} ::g::Fuse::AppBase_type* MainView_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct TextInputControl_type;}} ::g::Fuse::Controls::TextInputControl_type* Paragraph_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* Profile_typeof();}
+namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} ::g::Fuse::Controls::TextControl_type* SmallText_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* Tab_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* TabSponsor_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* TabText_typeof();}
@@ -2019,6 +2022,7 @@ void uInitRtti()
         (uType*(*)())&::g::gadden_accessor_TabSponsor_Text_typeof,
         (uType*(*)())&::g::gadden_accessor_TabText_Text_typeof,
         (uType*(*)())&::g::gadden_bundle_typeof,
+        (uType*(*)())&::g::gadden_FuseControlsImage_Color_Property_typeof,
         (uType*(*)())&::g::gadden_FuseControlsImage_Url_Property_typeof,
         (uType*(*)())&::g::gadden_FuseControlsNavigationControl_Active_Property_typeof,
         (uType*(*)())&::g::gadden_FuseControlsShadow_Color_Property_typeof,
@@ -2027,6 +2031,7 @@ void uInitRtti()
         (uType*(*)())&::g::gadden_FuseElementsElement_ElementLayoutMaster_Property_typeof,
         (uType*(*)())&::g::gadden_FuseElementsElement_Opacity_Property_typeof,
         (uType*(*)())&::g::gadden_FuseReactiveEach_Items_Property_typeof,
+        (uType*(*)())&::g::gadden_FuseReactiveWith_Data_Property_typeof,
         (uType*(*)())&::g::gadden_Tab_Text_Property_typeof,
         (uType*(*)())&::g::gadden_TabSponsor_Text_Property_typeof,
         (uType*(*)())&::g::gadden_TabText_Text_Property_typeof,
@@ -2042,6 +2047,7 @@ void uInitRtti()
         (uType*(*)())&::g::MainView_typeof,
         (uType*(*)())&::g::Paragraph_typeof,
         (uType*(*)())&::g::Profile_typeof,
+        (uType*(*)())&::g::SmallText_typeof,
         (uType*(*)())&::g::Tab_typeof,
         (uType*(*)())&::g::TabSponsor_typeof,
         (uType*(*)())&::g::TabText_typeof,

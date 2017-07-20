@@ -132,6 +132,16 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector5() { return MainView_typeof()->Init(), __selector5_; }
     static ::g::Uno::UX::Selector __selector50_;
     static ::g::Uno::UX::Selector& __selector50() { return MainView_typeof()->Init(), __selector50_; }
+    static ::g::Uno::UX::Selector __selector51_;
+    static ::g::Uno::UX::Selector& __selector51() { return MainView_typeof()->Init(), __selector51_; }
+    static ::g::Uno::UX::Selector __selector52_;
+    static ::g::Uno::UX::Selector& __selector52() { return MainView_typeof()->Init(), __selector52_; }
+    static ::g::Uno::UX::Selector __selector53_;
+    static ::g::Uno::UX::Selector& __selector53() { return MainView_typeof()->Init(), __selector53_; }
+    static ::g::Uno::UX::Selector __selector54_;
+    static ::g::Uno::UX::Selector& __selector54() { return MainView_typeof()->Init(), __selector54_; }
+    static ::g::Uno::UX::Selector __selector55_;
+    static ::g::Uno::UX::Selector& __selector55() { return MainView_typeof()->Init(), __selector55_; }
     static ::g::Uno::UX::Selector __selector6_;
     static ::g::Uno::UX::Selector& __selector6() { return MainView_typeof()->Init(), __selector6_; }
     static ::g::Uno::UX::Selector __selector7_;
@@ -146,6 +156,8 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Image*> BackgroundImage;
     uStrong< ::g::Uno::UX::Property1*> BackgroundImage_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> exhibitor;
+    uStrong< ::g::Fuse::Controls::Panel*> ExhibitorDetails;
+    uStrong< ::g::Fuse::Controls::Panel*> ExibitorList;
     uStrong< ::g::Fuse::Controls::Page*> goodiebag;
     uStrong< ::g::Fuse::Controls::Panel*> GoodiebagTab;
     uStrong< ::g::Fuse::Controls::Page*> icebreaker;
@@ -213,11 +225,19 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb6;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb7;
     uStrong< ::g::Uno::UX::Property1*> temp_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp1_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp2_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp3_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp4_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp1_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp10_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp11_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp12_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp13_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp4_Data_inst;
     uStrong< ::g::Uno::UX::Property1*> temp5_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp6_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp7_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp8_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp9_Data_inst;
     uStrong< ::g::Fuse::Controls::EdgeNavigator*> TheSidebar;
     static uSStrong< ::g::Fuse::Font*> TitleFont_;
     static uSStrong< ::g::Fuse::Font*>& TitleFont() { return MainView_typeof()->Init(), TitleFont_; }
