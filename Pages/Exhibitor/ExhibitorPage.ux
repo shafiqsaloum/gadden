@@ -16,11 +16,23 @@
         <StackPanel>
           <Grid RowCount="1" ColumnCount="2">
             <Paragraph Value="{= toUpper({name})}" Width="180" />
-            <Image Height="15" Alignment="BottomRight" StretchMode="UniformToFill" File="../../assets/StarWhite.png" Margin="0,0,0,7"/>
+            <Image ux:Name="starImage" Height="15" Alignment="BottomRight" StretchMode="UniformToFill" File="../../assets/StarWhite.png" Margin="0,0,0,7" Color="White">
+              <Clicked>
+                <Toggle Target="yellowStar" />
+              </Clicked>
+
+              <WhileTrue ux:Name="yellowStar">
+                  <Change starImage.Color="Yellow" Duration="0.3" />
+              </WhileTrue>
+            </Image>
+
           </Grid>
           <Rectangle Margin="0,3,0,3" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
         </StackPanel>
+
     </Each>
+
+
 
   </StackPanel>
       </ScrollView>
