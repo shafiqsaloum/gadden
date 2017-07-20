@@ -7,6 +7,10 @@ function Article(item) {
     this.text = item.text;
 };
 
+function articleClicked(args) {
+    console.log(args.data.title);
+};
+
 fetch("https://dev.jexpo.se/dev/forms/news?getAttributes=1")
 .then(function(response) { return response.json(); })
 .then(function(responseObject) {
@@ -21,15 +25,6 @@ fetch("https://dev.jexpo.se/dev/forms/news?getAttributes=1")
 });
 
 module.exports = {
-    dataSource: data
+    dataSource: data,
+    articleClicked: articleClicked
 };
-
-// function goToSinglePage(arg) {
-//   var news = arg.data;
-//   routerNews.push("singlePage", news);
-// }
-//
-// module.exports = {
-// 	news: news,
-// 	goToSinglePage: goToSinglePage
-// };

@@ -11,7 +11,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class gadden_FuseControlsTextInputControl_Value_Property :83
+// internal sealed class gadden_FuseControlsTextInputControl_Value_Property :91
 // {
 static void gadden_FuseControlsTextInputControl_Value_Property_build(uType* type)
 {
@@ -40,52 +40,52 @@ static void gadden_FuseControlsTextInputControl_Value_Property_build(uType* type
     return type;
 }
 
-// public gadden_FuseControlsTextInputControl_Value_Property(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) :86
+// public gadden_FuseControlsTextInputControl_Value_Property(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) :94
 void gadden_FuseControlsTextInputControl_Value_Property__ctor_3_fn(gadden_FuseControlsTextInputControl_Value_Property* __this, ::g::Fuse::Controls::TextInputControl* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed string Get(Uno.UX.PropertyObject obj) :88
+// public override sealed string Get(Uno.UX.PropertyObject obj) :96
 void gadden_FuseControlsTextInputControl_Value_Property__Get1_fn(gadden_FuseControlsTextInputControl_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString** __retval)
 {
     uStackFrame __("gadden_FuseControlsTextInputControl_Value_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Fuse::Controls::TextInputControl*>(obj, ::TYPES[0/*Fuse.Controls.TextInputControl*/]))->Value(), void();
 }
 
-// public gadden_FuseControlsTextInputControl_Value_Property New(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) :86
+// public gadden_FuseControlsTextInputControl_Value_Property New(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) :94
 void gadden_FuseControlsTextInputControl_Value_Property__New1_fn(::g::Fuse::Controls::TextInputControl* obj, ::g::Uno::UX::Selector* name, gadden_FuseControlsTextInputControl_Value_Property** __retval)
 {
     *__retval = gadden_FuseControlsTextInputControl_Value_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :87
+// public override sealed Uno.UX.PropertyObject get_Object() :95
 void gadden_FuseControlsTextInputControl_Value_Property__get_Object_fn(gadden_FuseControlsTextInputControl_Value_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :89
+// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :97
 void gadden_FuseControlsTextInputControl_Value_Property__Set1_fn(gadden_FuseControlsTextInputControl_Value_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString* v, uObject* origin)
 {
     uStackFrame __("gadden_FuseControlsTextInputControl_Value_Property", "Set(Uno.UX.PropertyObject,string,Uno.UX.IPropertyListener)");
     uPtr(uCast< ::g::Fuse::Controls::TextInputControl*>(obj, ::TYPES[0/*Fuse.Controls.TextInputControl*/]))->SetValue(v, origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :90
+// public override sealed bool get_SupportsOriginSetter() :98
 void gadden_FuseControlsTextInputControl_Value_Property__get_SupportsOriginSetter_fn(gadden_FuseControlsTextInputControl_Value_Property* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-// public gadden_FuseControlsTextInputControl_Value_Property(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) [instance] :86
+// public gadden_FuseControlsTextInputControl_Value_Property(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) [instance] :94
 void gadden_FuseControlsTextInputControl_Value_Property::ctor_3(::g::Fuse::Controls::TextInputControl* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public gadden_FuseControlsTextInputControl_Value_Property New(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) [static] :86
+// public gadden_FuseControlsTextInputControl_Value_Property New(Fuse.Controls.TextInputControl obj, Uno.UX.Selector name) [static] :94
 gadden_FuseControlsTextInputControl_Value_Property* gadden_FuseControlsTextInputControl_Value_Property::New1(::g::Fuse::Controls::TextInputControl* obj, ::g::Uno::UX::Selector name)
 {
     gadden_FuseControlsTextInputControl_Value_Property* obj1 = (gadden_FuseControlsTextInputControl_Value_Property*)uNew(gadden_FuseControlsTextInputControl_Value_Property_typeof());

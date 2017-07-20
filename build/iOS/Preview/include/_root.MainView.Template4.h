@@ -11,7 +11,7 @@ namespace g{struct MainView__Template4;}
 
 namespace g{
 
-// public partial sealed class MainView.Template4 :244
+// public partial sealed class MainView.Template4 :190
 // {
 ::g::Uno::UX::Template_type* MainView__Template4_typeof();
 void MainView__Template4__ctor_1_fn(MainView__Template4* __this, ::g::MainView* parent, ::g::MainView* parentInstance);
@@ -29,6 +29,8 @@ struct MainView__Template4 : ::g::Uno::UX::Template
     static ::g::Uno::UX::Selector& __selector0() { return MainView__Template4_typeof()->Init(), __selector0_; }
     uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp1_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
 
     void ctor_1(::g::MainView* parent, ::g::MainView* parentInstance);
     static MainView__Template4* New2(::g::MainView* parent, ::g::MainView* parentInstance);

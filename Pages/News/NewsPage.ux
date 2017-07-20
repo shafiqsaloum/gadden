@@ -27,19 +27,39 @@
 </Panel>
 
 <WhileTrue ux:Name="opacityNews">
-    <Change NewsDetails.Opacity="1" Duration="0.1" />
+    <Change NewsDetails.Opacity="1" Duration="0.2" />
     <Change NewsFeed.Opacity="0" />
     <Change BackgroundImage.Opacity="0" />
 </WhileTrue>
 
 <!-- Output newsfeed details -->
 <Panel ux:Name="NewsDetails" Opacity="0" >
-  <Rectangle Width="100%" Height="100%"  Background="White" ZOffset="1.0">
-    <Each Items="{articleClicked}">
-      <Text Value="{title}" Alignment="Center" />
-    </Each>
-  </Rectangle>
-</Panel>
+	  <Rectangle Width="100%" Height="100%"  Background="Black" ZOffset="1.0">
+		<With Data="{selectedArticle}">
+      <ScrollView>
+      <StackPanel Height="100%">
+
+        <Panel Width="100%">
+          <Image Url="{image}" />
+        </Panel>
+
+        <Panel Alignment="BottomLeft" Margin="0,20,0,0" Width="100%" Height="100%">
+          <Title Value="{title}" FontSize="28" LineSpacing="10" Height="100%" TextAlignment="Left"/>
+        </Panel>
+
+        <Rectangle Alignment="TopLeft" Fill="#979797" Height="1px" SnapToPixels="true" Width="60%" Margin="20,20,0,0"/>
+
+        <Panel Margin="20">
+          <Paragraph Value="{text}" />
+        </Panel>
+
+        <Image File="../../assets/BackgroundNewsDetails.png" Width="100%" Layer="Background" Alignment="BottomCenter"/>
+
+      </StackPanel>
+      </ScrollView>
+		</With>
+	  </Rectangle>
+	</Panel>
 
 <!-- Background image -->
 <Image ux:Name="BackgroundImage" Opacity="1" Alignment="Center" File="../../assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />

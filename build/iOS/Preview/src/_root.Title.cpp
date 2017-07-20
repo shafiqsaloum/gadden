@@ -133,7 +133,7 @@ void Title::InitializeUX()
     FontSize(20.0f);
     TextColor(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
     Alignment(13);
-    Margin(::g::Uno::Float4__New2(20.0f, 0.0f, 0.0f, 20.0f));
+    Margin(::g::Uno::Float4__New2(20.0f, 0.0f, 0.0f, 0.0f));
     Font(::g::MainView::TitleFont());
 }
 

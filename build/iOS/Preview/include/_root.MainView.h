@@ -6,6 +6,8 @@
 #include <Fuse.IProperties.h>
 #include <Uno.Float4.h>
 namespace g{namespace Fuse{namespace Controls{struct DockPanel;}}}
+namespace g{namespace Fuse{namespace Controls{struct EdgeNavigator;}}}
+namespace g{namespace Fuse{namespace Controls{struct Image;}}}
 namespace g{namespace Fuse{namespace Controls{struct Page;}}}
 namespace g{namespace Fuse{namespace Controls{struct PageControl;}}}
 namespace g{namespace Fuse{namespace Controls{struct Panel;}}}
@@ -13,6 +15,7 @@ namespace g{namespace Fuse{namespace Controls{struct Rectangle;}}}
 namespace g{namespace Fuse{namespace Controls{struct Shadow;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
+namespace g{namespace Fuse{namespace Reactive{struct EventBinding;}}}
 namespace g{namespace Fuse{namespace Triggers{struct WhileTrue;}}}
 namespace g{namespace Fuse{struct Font;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -117,8 +120,18 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector44() { return MainView_typeof()->Init(), __selector44_; }
     static ::g::Uno::UX::Selector __selector45_;
     static ::g::Uno::UX::Selector& __selector45() { return MainView_typeof()->Init(), __selector45_; }
+    static ::g::Uno::UX::Selector __selector46_;
+    static ::g::Uno::UX::Selector& __selector46() { return MainView_typeof()->Init(), __selector46_; }
+    static ::g::Uno::UX::Selector __selector47_;
+    static ::g::Uno::UX::Selector& __selector47() { return MainView_typeof()->Init(), __selector47_; }
+    static ::g::Uno::UX::Selector __selector48_;
+    static ::g::Uno::UX::Selector& __selector48() { return MainView_typeof()->Init(), __selector48_; }
+    static ::g::Uno::UX::Selector __selector49_;
+    static ::g::Uno::UX::Selector& __selector49() { return MainView_typeof()->Init(), __selector49_; }
     static ::g::Uno::UX::Selector __selector5_;
     static ::g::Uno::UX::Selector& __selector5() { return MainView_typeof()->Init(), __selector5_; }
+    static ::g::Uno::UX::Selector __selector50_;
+    static ::g::Uno::UX::Selector& __selector50() { return MainView_typeof()->Init(), __selector50_; }
     static ::g::Uno::UX::Selector __selector6_;
     static ::g::Uno::UX::Selector& __selector6() { return MainView_typeof()->Init(), __selector6_; }
     static ::g::Uno::UX::Selector __selector7_;
@@ -130,6 +143,8 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Page*> about;
     uStrong< ::g::Fuse::Controls::Page*> aboutus;
     uStrong< ::g::Fuse::Controls::Panel*> AboutUsTab;
+    uStrong< ::g::Fuse::Controls::Image*> BackgroundImage;
+    uStrong< ::g::Uno::UX::Property1*> BackgroundImage_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> exhibitor;
     uStrong< ::g::Fuse::Controls::Page*> goodiebag;
     uStrong< ::g::Fuse::Controls::Panel*> GoodiebagTab;
@@ -153,6 +168,11 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::PageControl*> navigationSponsors;
     uStrong< ::g::Uno::UX::Property1*> navigationSponsors_Active_inst;
     uStrong< ::g::Fuse::Controls::Page*> news;
+    uStrong< ::g::Fuse::Controls::Panel*> NewsDetails;
+    uStrong< ::g::Uno::UX::Property1*> NewsDetails_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Panel*> NewsFeed;
+    uStrong< ::g::Uno::UX::Property1*> NewsFeed_Opacity_inst;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityNews;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityToggle;
     uStrong< ::g::Fuse::Controls::Page*> partners;
     uStrong< ::g::Fuse::Controls::Page*> plan3;
@@ -184,11 +204,21 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Page*> sponsor;
     uStrong< ::g::Fuse::Controls::Page*> sponsors;
     uStrong< ::g::Fuse::Controls::Panel*> SponsorTab;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb0;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb1;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb2;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb3;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb4;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb5;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb6;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb7;
     uStrong< ::g::Uno::UX::Property1*> temp_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp1_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp2_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp3_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp4_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp5_Items_inst;
+    uStrong< ::g::Fuse::Controls::EdgeNavigator*> TheSidebar;
     static uSStrong< ::g::Fuse::Font*> TitleFont_;
     static uSStrong< ::g::Fuse::Font*>& TitleFont() { return MainView_typeof()->Init(), TitleFont_; }
 

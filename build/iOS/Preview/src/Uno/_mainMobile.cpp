@@ -88,6 +88,7 @@ namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Tem
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template3_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template4_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template5_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template6_typeof();}
 namespace g{namespace Fuse{struct AppBase_type;} ::g::Fuse::AppBase_type* MainView_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct TextInputControl_type;}} ::g::Fuse::Controls::TextInputControl_type* Paragraph_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* Profile_typeof();}
@@ -2037,6 +2038,7 @@ void uInitRtti()
         (uType*(*)())&::g::MainView__Template3_typeof,
         (uType*(*)())&::g::MainView__Template4_typeof,
         (uType*(*)())&::g::MainView__Template5_typeof,
+        (uType*(*)())&::g::MainView__Template6_typeof,
         (uType*(*)())&::g::MainView_typeof,
         (uType*(*)())&::g::Paragraph_typeof,
         (uType*(*)())&::g::Profile_typeof,
