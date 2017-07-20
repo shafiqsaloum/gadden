@@ -5,6 +5,15 @@ function Program(item) {
     this.name = item.name;
     this.location = item.location;
     this.image = item.attachment.url;
+    this.date = item.start_date;
+    this.time = item.start_time;
+};
+
+var selectedProgram = Observable();
+
+function programClicked(args) {
+	console.log(JSON.stringify(args.data));
+	selectedProgram.value = args.data;
 };
 
 fetch("http://dev.jexpo.se/dev/events/ws:2017?getAttributes=true")
@@ -22,4 +31,6 @@ fetch("http://dev.jexpo.se/dev/events/ws:2017?getAttributes=true")
 
 module.exports = {
     dataProgram: program,
+    selectedProgram: selectedProgram,
+    programClicked: programClicked
 };

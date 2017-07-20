@@ -1,6 +1,7 @@
 <Page>
   <JavaScript File="ProgramPage.js" />
 
+ <Panel ux:Name="ProgramFeed">
   <StackPanel Margin="20">
     <TitleBig Margin="0,40,0,20" Color="Black" Value="ONSDAG 8/11" />
 
@@ -13,12 +14,65 @@
           <Paragraph Row="2" Value="{location}" FontSize="10"  />
         </StackPanel>
         </Grid>
+
+        <Clicked>
+          <Toggle Target="opacityProgram" />
+          <Callback Handler="{programClicked}"/>
+        </Clicked>
       </Grid>
 
       <Rectangle Margin="0,7,0,7" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
     </Each>
 
   </StackPanel>
+</Panel>
+
+  <WhileTrue ux:Name="opacityProgram">
+      <Change ProgramDetails.Opacity="1" Duration="0.2" />
+      <Change ProgramFeed.Opacity="0" />
+      <!-- <Change BackgroundImage.Opacity="0" /> -->
+  </WhileTrue>
+
+  <!-- Output program details -->
+  <Panel ux:Name="ProgramDetails" Opacity="0"  >
+    <Rectangle Width="100%" Height="100%"  Background="Black" ZOffset="1.0" >
+      <ScrollView>
+      <StackPanel>
+        <With Data="{selectedProgram}">
+
+          <Panel Width="100%" Height="100%">
+            <Image Url="{image}" Height="100%" />
+          </Panel>
+
+          <Panel Alignment="BottomLeft" Margin="0,20,0,0" Width="100%" Height="100%">
+            <Title Value="{name}" FontSize="28" LineSpacing="10" Height="100%" Width="100%" TextAlignment="Left"/>
+          </Panel>
+
+          <Panel Margin="20">
+            <StackPanel>
+              <SmallText FontSize="18" Color="#979797" Margin="0,0,0,5" Value="{= toUpper({date})} {time}" />
+              <SmallText FontSize="12" Value="{= toUpper({location})}" />
+            </StackPanel>
+          </Panel>
+
+          <Rectangle Alignment="Left" Fill="#979797" Height="1px" SnapToPixels="true" Width="60%" Margin="20,0,0,0"/>
+
+          <Panel Margin="20">
+            <Paragraph Value="{description}" />
+          </Panel>
+
+          <Panel Margin="0,0,0,50">
+          <Rectangle Background="Black" Width="70%" Height="50" Alignment="Center" Margin="20,0,0,0">
+            <Stroke Width="1" Color="White" />
+            <Paragraph FontSize="16" Alignment="Center" Value="BOKA FÖRELÄSNING" />
+          </Rectangle>
+        </Panel>
+
+        </With>
+      </StackPanel>
+    </ScrollView>
+    </Rectangle>
+  </Panel>
 
   <DockPanel Background="#000" >
     <Image StretchMode="Fill" Layer="Background" File="../../assets/BackgroundProgram.png"  />

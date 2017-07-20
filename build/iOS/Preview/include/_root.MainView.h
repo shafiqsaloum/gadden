@@ -142,6 +142,12 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector54() { return MainView_typeof()->Init(), __selector54_; }
     static ::g::Uno::UX::Selector __selector55_;
     static ::g::Uno::UX::Selector& __selector55() { return MainView_typeof()->Init(), __selector55_; }
+    static ::g::Uno::UX::Selector __selector56_;
+    static ::g::Uno::UX::Selector& __selector56() { return MainView_typeof()->Init(), __selector56_; }
+    static ::g::Uno::UX::Selector __selector57_;
+    static ::g::Uno::UX::Selector& __selector57() { return MainView_typeof()->Init(), __selector57_; }
+    static ::g::Uno::UX::Selector __selector58_;
+    static ::g::Uno::UX::Selector& __selector58() { return MainView_typeof()->Init(), __selector58_; }
     static ::g::Uno::UX::Selector __selector6_;
     static ::g::Uno::UX::Selector& __selector6() { return MainView_typeof()->Init(), __selector6_; }
     static ::g::Uno::UX::Selector __selector7_;
@@ -185,6 +191,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Panel*> NewsFeed;
     uStrong< ::g::Uno::UX::Property1*> NewsFeed_Opacity_inst;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityNews;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityProgram;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityToggle;
     uStrong< ::g::Fuse::Controls::Page*> partners;
     uStrong< ::g::Fuse::Controls::Page*> plan3;
@@ -199,6 +206,10 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Panel*> popupInfoMap2;
     uStrong< ::g::Uno::UX::Property1*> popupInfoMap2_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> program;
+    uStrong< ::g::Fuse::Controls::Panel*> ProgramDetails;
+    uStrong< ::g::Uno::UX::Property1*> ProgramDetails_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Panel*> ProgramFeed;
+    uStrong< ::g::Uno::UX::Property1*> ProgramFeed_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> project;
     uStrong< ::g::Fuse::Controls::Panel*> ProjectTab;
     static uSStrong< ::g::Fuse::Font*> Raleway_;
@@ -227,9 +238,14 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> temp_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp1_Url_inst;
     uStrong< ::g::Uno::UX::Property1*> temp10_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp11_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp12_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp13_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp11_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp12_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp13_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp14_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp15_Data_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp16_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp17_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp18_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp4_Data_inst;

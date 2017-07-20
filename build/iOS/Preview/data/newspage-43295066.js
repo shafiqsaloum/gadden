@@ -10,9 +10,9 @@ function Article(item) {
 var selectedArticle = Observable();
 
 function articleClicked(args) {
-		console.log(JSON.stringify(args.data));
-		selectedArticle.value = args.data;
-	};
+	console.log(JSON.stringify(args.data));
+	selectedArticle.value = args.data;
+};
 
 fetch("https://dev.jexpo.se/dev/forms/news?getAttributes=1")
 .then(function(response) { return response.json(); })
