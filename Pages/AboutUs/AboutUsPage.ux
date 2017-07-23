@@ -77,6 +77,7 @@
                   </StackPanel>
                  </Each>
               </Grid>
+              <Image Width="100%" Alignment="Center" File="../../assets/BackgroundNewsDetails.png" />
 
            </StackPanel>
           </Page>
