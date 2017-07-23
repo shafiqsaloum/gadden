@@ -3,7 +3,7 @@
 
   <ScrollView>
     <StackPanel Margin="0" ItemSpacing="16" >
-      <Image Margin="0,0,0,0" Alignment="TopCenter" File="../../assets/GaddenLogotypeWhite.png" Width="60%" />
+      <Image Margin="0,10,0,0" Alignment="TopCenter" File="../../assets/GaddenLogotypeWhite.png" Width="60%" />
 
       <!-- Navigation -->
       <Panel ux:Class="AboutAboutUs" ClipToBounds="false" Margin="0,0,0,0" Background="#000" >
@@ -61,14 +61,23 @@
             </WhileActive>
             <StackPanel Background="Black" Padding="0,40,0,0">
               <TitleBig Value="PROJEKTKOMMITÉN" Alignment="Center" />
+
               <Rectangle Alignment="TopCenter" Margin="0,30,0,30" Fill="#979797" Height="1px" Width="120"/>
-              <Each Items="{dataContact}">
-                <StackPanel Margin="20">
-                  <Image Url="{image}" StretchMode="UniformToFill" Width="40%" Height="120" Margin="20"/>
-                  <Paragraph Value="{= toUpper({name})}" Alignment="Center" TextAlignment="Center" TextWrapping="Wrap" LineSpacing="10" FontSize="16"/>
-                  <Paragraph Value="{= toUpper({title})}" Alignment="Center" FontSize="12"/>
-                </StackPanel>
-               </Each>
+              <Grid Row="0" ColumnCount="2">
+                <Each Items="{dataContact}">
+                  <StackPanel Margin="20" >
+
+                    <Circle Width="120" Height="120" >
+                      <ImageFill StretchMode="UniformToFill" Url="{image}" />
+                    </Circle>
+
+                    <Paragraph Value="{= toUpper({name})}" Alignment="Center" TextAlignment="Center" TextWrapping="Wrap" LineSpacing="8" FontSize="16"  Height="100%" Width="100%" Margin="0,10,0,0" />
+                    <Paragraph Value="{= toUpper({title})}" Alignment="Center" FontSize="12" Height="100%" Width="100%" TextAlignment="Center" Margin="0" />
+
+                  </StackPanel>
+                 </Each>
+              </Grid>
+
            </StackPanel>
           </Page>
       </PageControl>

@@ -80,6 +80,22 @@ sealed class gadden_FuseReactiveEach_Items_Property: Uno.UX.Property<object>
     public override object Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Reactive.Each)obj).Items; }
     public override void Set(global::Uno.UX.PropertyObject obj, object v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Reactive.Each)obj).Items = v; }
 }
+sealed class gadden_FuseControlsImage_Url_Property: Uno.UX.Property<string>
+{
+    [Uno.WeakReference] readonly Fuse.Controls.Image _obj;
+    public gadden_FuseControlsImage_Url_Property(Fuse.Controls.Image obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override string Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.Image)obj).Url; }
+    public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.Image)obj).Url = v; }
+}
+sealed class gadden_FuseReactiveWith_Data_Property: Uno.UX.Property<object>
+{
+    [Uno.WeakReference] readonly Fuse.Reactive.With _obj;
+    public gadden_FuseReactiveWith_Data_Property(Fuse.Reactive.With obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override object Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Reactive.With)obj).Data; }
+    public override void Set(global::Uno.UX.PropertyObject obj, object v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Reactive.With)obj).Data = v; }
+}
 sealed class gadden_FuseControlsTextInputControl_Value_Property: Uno.UX.Property<string>
 {
     [Uno.WeakReference] readonly Fuse.Controls.TextInputControl _obj;
@@ -89,13 +105,13 @@ sealed class gadden_FuseControlsTextInputControl_Value_Property: Uno.UX.Property
     public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.TextInputControl)obj).SetValue(v, origin); }
     public override bool SupportsOriginSetter { get { return true; } }
 }
-sealed class gadden_FuseControlsImage_Url_Property: Uno.UX.Property<string>
+sealed class gadden_FuseControlsImage_Color_Property: Uno.UX.Property<float4>
 {
     [Uno.WeakReference] readonly Fuse.Controls.Image _obj;
-    public gadden_FuseControlsImage_Url_Property(Fuse.Controls.Image obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public gadden_FuseControlsImage_Color_Property(Fuse.Controls.Image obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
     public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
-    public override string Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.Image)obj).Url; }
-    public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.Image)obj).Url = v; }
+    public override float4 Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.Image)obj).Color; }
+    public override void Set(global::Uno.UX.PropertyObject obj, float4 v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.Image)obj).Color = v; }
 }
 sealed class gadden_FuseElementsElement_ElementLayoutMaster_Property: Uno.UX.Property<Fuse.Elements.Element>
 {
@@ -104,6 +120,14 @@ sealed class gadden_FuseElementsElement_ElementLayoutMaster_Property: Uno.UX.Pro
     public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
     public override Fuse.Elements.Element Get(global::Uno.UX.PropertyObject obj) { return global::Fuse.Controls.LayoutControl.GetLayoutMaster((Fuse.Elements.Element)obj); }
     public override void Set(global::Uno.UX.PropertyObject obj, Fuse.Elements.Element v, global::Uno.UX.IPropertyListener origin) { global::Fuse.Controls.LayoutControl.SetLayoutMaster((Fuse.Elements.Element)obj, v); }
+}
+sealed class gadden_FuseControlsControl_Background_Property: Uno.UX.Property<Fuse.Drawing.Brush>
+{
+    [Uno.WeakReference] readonly Fuse.Controls.Control _obj;
+    public gadden_FuseControlsControl_Background_Property(Fuse.Controls.Control obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override Fuse.Drawing.Brush Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.Control)obj).Background; }
+    public override void Set(global::Uno.UX.PropertyObject obj, Fuse.Drawing.Brush v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.Control)obj).Background = v; }
 }
 sealed class gadden_Tab_Text_Property: Uno.UX.Property<string>
 {

@@ -1,11 +1,11 @@
 [Uno.Compiler.UxGenerated]
-public partial class Paragraph: Fuse.Controls.TextView
+public partial class SmallText: Fuse.Controls.Text
 {
-    static Paragraph()
+    static SmallText()
     {
     }
     [global::Uno.UX.UXConstructor]
-    public Paragraph()
+    public SmallText()
     {
         InitializeUX();
     }

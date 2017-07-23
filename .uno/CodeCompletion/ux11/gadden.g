@@ -5,6 +5,7 @@
 .uno/CodeCompletion/ux11/TitleBig.g.uno
 .uno/CodeCompletion/ux11/Paragraph.g.uno
 .uno/CodeCompletion/ux11/ButtonText.g.uno
+.uno/CodeCompletion/ux11/SmallText.g.uno
 .uno/CodeCompletion/ux11/Tab.g.uno
 .uno/CodeCompletion/ux11/TabSponsor.g.uno
 .uno/CodeCompletion/ux11/TabText.g.uno
