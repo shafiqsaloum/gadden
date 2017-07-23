@@ -148,8 +148,20 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector57() { return MainView_typeof()->Init(), __selector57_; }
     static ::g::Uno::UX::Selector __selector58_;
     static ::g::Uno::UX::Selector& __selector58() { return MainView_typeof()->Init(), __selector58_; }
+    static ::g::Uno::UX::Selector __selector59_;
+    static ::g::Uno::UX::Selector& __selector59() { return MainView_typeof()->Init(), __selector59_; }
     static ::g::Uno::UX::Selector __selector6_;
     static ::g::Uno::UX::Selector& __selector6() { return MainView_typeof()->Init(), __selector6_; }
+    static ::g::Uno::UX::Selector __selector60_;
+    static ::g::Uno::UX::Selector& __selector60() { return MainView_typeof()->Init(), __selector60_; }
+    static ::g::Uno::UX::Selector __selector61_;
+    static ::g::Uno::UX::Selector& __selector61() { return MainView_typeof()->Init(), __selector61_; }
+    static ::g::Uno::UX::Selector __selector62_;
+    static ::g::Uno::UX::Selector& __selector62() { return MainView_typeof()->Init(), __selector62_; }
+    static ::g::Uno::UX::Selector __selector63_;
+    static ::g::Uno::UX::Selector& __selector63() { return MainView_typeof()->Init(), __selector63_; }
+    static ::g::Uno::UX::Selector __selector64_;
+    static ::g::Uno::UX::Selector& __selector64() { return MainView_typeof()->Init(), __selector64_; }
     static ::g::Uno::UX::Selector __selector7_;
     static ::g::Uno::UX::Selector& __selector7() { return MainView_typeof()->Init(), __selector7_; }
     static ::g::Uno::UX::Selector __selector8_;
@@ -161,6 +173,12 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Panel*> AboutUsTab;
     uStrong< ::g::Fuse::Controls::Image*> BackgroundImage;
     uStrong< ::g::Uno::UX::Property1*> BackgroundImage_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Image*> crossIcon;
+    uStrong< ::g::Uno::UX::Property1*> crossIcon_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Image*> crossIconMap;
+    uStrong< ::g::Uno::UX::Property1*> crossIconMap_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Image*> crossIconMap2;
+    uStrong< ::g::Uno::UX::Property1*> crossIconMap2_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> exhibitor;
     uStrong< ::g::Fuse::Controls::Panel*> ExhibitorDetails;
     uStrong< ::g::Fuse::Controls::Panel*> ExibitorList;
@@ -173,6 +191,12 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> indicatorAbout_Element_LayoutMaster_inst;
     uStrong< ::g::Fuse::Controls::Rectangle*> indicatorSponsor;
     uStrong< ::g::Uno::UX::Property1*> indicatorSponsor_Element_LayoutMaster_inst;
+    uStrong< ::g::Fuse::Controls::Image*> infoIcon;
+    uStrong< ::g::Uno::UX::Property1*> infoIcon_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Image*> infoIconMap;
+    uStrong< ::g::Uno::UX::Property1*> infoIconMap_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Image*> infoIconMap2;
+    uStrong< ::g::Uno::UX::Property1*> infoIconMap2_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> login;
     uStrong< ::g::Fuse::Controls::Page*> map;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> MapToggle;
@@ -204,7 +228,6 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Panel*> popupInfoMap;
     uStrong< ::g::Uno::UX::Property1*> popupInfoMap_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Panel*> popupInfoMap2;
-    uStrong< ::g::Uno::UX::Property1*> popupInfoMap2_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> program;
     uStrong< ::g::Fuse::Controls::Panel*> ProgramDetails;
     uStrong< ::g::Uno::UX::Property1*> ProgramDetails_Opacity_inst;

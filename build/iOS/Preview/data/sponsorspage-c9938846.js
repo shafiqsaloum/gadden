@@ -11,7 +11,7 @@ function Goodiebag(item) {
 };
 
 function Sponsors(item) {
-    this.logo = item.profile.logotype.url;
+    // this.logo = item.profile.logotype.thumbs.large;
 };
 
 
