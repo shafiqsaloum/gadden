@@ -14,8 +14,9 @@ public partial class Title: Fuse.Controls.TextView
         this.TextWrapping = Fuse.Controls.TextWrapping.Wrap;
         this.FontSize = 20f;
         this.TextColor = float4(1f, 1f, 1f, 1f);
+        this.IsReadOnly = true;
         this.Alignment = Fuse.Elements.Alignment.BottomLeft;
-        this.Margin = float4(20f, 0f, 0f, 20f);
+        this.Margin = float4(20f, 0f, 0f, 0f);
         this.Font = global::MainView.TitleFont;
     }
 }

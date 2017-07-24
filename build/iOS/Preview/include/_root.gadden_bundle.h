@@ -68,8 +68,6 @@ struct gadden_bundle : uObject
     static uSStrong< ::g::Uno::IO::BundleFile*>& MenuBackground6a8fe2ea() { return gadden_bundle_typeof()->Init(), MenuBackground6a8fe2ea_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> MiljomarktLogotypeWhiteca9eb941_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& MiljomarktLogotypeWhiteca9eb941() { return gadden_bundle_typeof()->Init(), MiljomarktLogotypeWhiteca9eb941_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> NewsExampleImage228d73f7f_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& NewsExampleImage228d73f7f() { return gadden_bundle_typeof()->Init(), NewsExampleImage228d73f7f_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> NewsExampleImage799d0165_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& NewsExampleImage799d0165() { return gadden_bundle_typeof()->Init(), NewsExampleImage799d0165_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> NewsPagea12da51e_;

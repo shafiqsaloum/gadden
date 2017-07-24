@@ -5,7 +5,7 @@
 #include <Uno.IO.Bundle.h>
 #include <Uno.IO.BundleFile.h>
 #include <Uno.String.h>
-static uString* STRINGS[41];
+static uString* STRINGS[40];
 
 namespace g{
 
@@ -41,19 +41,18 @@ static void gadden_bundle__cctor__fn(uType* __type)
     gadden_bundle::MapPlan4d288e982_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[25/*"mapplan4-36...*/]);
     gadden_bundle::MenuBackground6a8fe2ea_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[26/*"menubackgro...*/]);
     gadden_bundle::MiljomarktLogotypeWhiteca9eb941_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[27/*"miljomarktl...*/]);
-    gadden_bundle::NewsExampleImage228d73f7f_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[28/*"newsexample...*/]);
-    gadden_bundle::NewsExampleImage799d0165_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[29/*"newsexample...*/]);
-    gadden_bundle::NewsPagea12da51e_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[30/*"newspage-43...*/]);
-    gadden_bundle::PartnersPageec88aa66_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[31/*"partnerspag...*/]);
-    gadden_bundle::ProfileIcon9300a9dd_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[32/*"profileicon...*/]);
-    gadden_bundle::ProgramPagec84f4f3e_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[33/*"programpage...*/]);
-    gadden_bundle::RalewayBlackcd5035ad_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[34/*"raleway-bla...*/]);
-    gadden_bundle::RalewayRegulara87b1aaa_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[35/*"raleway-reg...*/]);
-    gadden_bundle::SearchGrey1d3e7726_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[36/*"searchgrey-...*/]);
-    gadden_bundle::SponsorsPage55b7763e_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[37/*"sponsorspag...*/]);
-    gadden_bundle::StarWhite6e65c160_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[38/*"starwhite-3...*/]);
-    gadden_bundle::StudentGarderobIcona35cfd01_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[39/*"studentgard...*/]);
-    gadden_bundle::StudentLoungeIcon0d682f55_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[40/*"studentloun...*/]);
+    gadden_bundle::NewsExampleImage799d0165_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[28/*"newsexample...*/]);
+    gadden_bundle::NewsPagea12da51e_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[29/*"newspage-43...*/]);
+    gadden_bundle::PartnersPageec88aa66_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[30/*"partnerspag...*/]);
+    gadden_bundle::ProfileIcon9300a9dd_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[31/*"profileicon...*/]);
+    gadden_bundle::ProgramPagec84f4f3e_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[32/*"programpage...*/]);
+    gadden_bundle::RalewayBlackcd5035ad_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[33/*"raleway-bla...*/]);
+    gadden_bundle::RalewayRegulara87b1aaa_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[34/*"raleway-reg...*/]);
+    gadden_bundle::SearchGrey1d3e7726_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[35/*"searchgrey-...*/]);
+    gadden_bundle::SponsorsPage55b7763e_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[36/*"sponsorspag...*/]);
+    gadden_bundle::StarWhite6e65c160_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[37/*"starwhite-3...*/]);
+    gadden_bundle::StudentGarderobIcona35cfd01_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[38/*"studentgard...*/]);
+    gadden_bundle::StudentLoungeIcon0d682f55_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"gadden"*/]))->GetFile(::STRINGS[39/*"studentloun...*/]);
 }
 
 static void gadden_bundle_build(uType* type)
@@ -86,19 +85,18 @@ static void gadden_bundle_build(uType* type)
     ::STRINGS[25] = uString::Const("mapplan4-36010d7a.png");
     ::STRINGS[26] = uString::Const("menubackground-252b4c36.png");
     ::STRINGS[27] = uString::Const("miljomarktlogotypew-394176a7.png");
-    ::STRINGS[28] = uString::Const("newsexampleimage2-eaafa8d1.png");
-    ::STRINGS[29] = uString::Const("newsexampleimage-4990c8c3.png");
-    ::STRINGS[30] = uString::Const("newspage-43295066.js");
-    ::STRINGS[31] = uString::Const("partnerspage-66a3e99a.js");
-    ::STRINGS[32] = uString::Const("profileicon-c8fe56df.png");
-    ::STRINGS[33] = uString::Const("programpage-82c0fb86.js");
-    ::STRINGS[34] = uString::Const("raleway-black-b7712087.ttf");
-    ::STRINGS[35] = uString::Const("raleway-regular-01f0c7aa.ttf");
-    ::STRINGS[36] = uString::Const("searchgrey-ce08404e.png");
-    ::STRINGS[37] = uString::Const("sponsorspage-c9938846.js");
-    ::STRINGS[38] = uString::Const("starwhite-3c838d0c.png");
-    ::STRINGS[39] = uString::Const("studentgarderobicon-049a6e23.png");
-    ::STRINGS[40] = uString::Const("studentloungeicon-80a6e757.png");
+    ::STRINGS[28] = uString::Const("newsexampleimage-4990c8c3.png");
+    ::STRINGS[29] = uString::Const("newspage-43295066.js");
+    ::STRINGS[30] = uString::Const("partnerspage-66a3e99a.js");
+    ::STRINGS[31] = uString::Const("profileicon-c8fe56df.png");
+    ::STRINGS[32] = uString::Const("programpage-82c0fb86.js");
+    ::STRINGS[33] = uString::Const("raleway-black-b7712087.ttf");
+    ::STRINGS[34] = uString::Const("raleway-regular-01f0c7aa.ttf");
+    ::STRINGS[35] = uString::Const("searchgrey-ce08404e.png");
+    ::STRINGS[36] = uString::Const("sponsorspage-c9938846.js");
+    ::STRINGS[37] = uString::Const("starwhite-3c838d0c.png");
+    ::STRINGS[38] = uString::Const("studentgarderobicon-049a6e23.png");
+    ::STRINGS[39] = uString::Const("studentloungeicon-80a6e757.png");
     type->SetFields(0,
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::gadden_bundle::AboutUsPaged71bc3be_, uFieldFlagsStatic,
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::gadden_bundle::BackgroundAbstractPaint7eb0f5a1_, uFieldFlagsStatic,
@@ -127,7 +125,6 @@ static void gadden_bundle_build(uType* type)
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::gadden_bundle::MapPlan4d288e982_, uFieldFlagsStatic,
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::gadden_bundle::MenuBackground6a8fe2ea_, uFieldFlagsStatic,
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::gadden_bundle::MiljomarktLogotypeWhiteca9eb941_, uFieldFlagsStatic,
-        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::gadden_bundle::NewsExampleImage228d73f7f_, uFieldFlagsStatic,
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::gadden_bundle::NewsExampleImage799d0165_, uFieldFlagsStatic,
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::gadden_bundle::NewsPagea12da51e_, uFieldFlagsStatic,
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::gadden_bundle::PartnersPageec88aa66_, uFieldFlagsStatic,
@@ -140,7 +137,7 @@ static void gadden_bundle_build(uType* type)
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::gadden_bundle::StarWhite6e65c160_, uFieldFlagsStatic,
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::gadden_bundle::StudentGarderobIcona35cfd01_, uFieldFlagsStatic,
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&::g::gadden_bundle::StudentLoungeIcon0d682f55_, uFieldFlagsStatic);
-    type->Reflection.SetFields(40,
+    type->Reflection.SetFields(39,
         new uField("AboutUsPaged71bc3be", 0),
         new uField("BackgroundAbstractPaint7eb0f5a1", 1),
         new uField("BackgroundExhibitor67ed3f2d", 2),
@@ -168,19 +165,18 @@ static void gadden_bundle_build(uType* type)
         new uField("MapPlan4d288e982", 24),
         new uField("MenuBackground6a8fe2ea", 25),
         new uField("MiljomarktLogotypeWhiteca9eb941", 26),
-        new uField("NewsExampleImage228d73f7f", 27),
-        new uField("NewsExampleImage799d0165", 28),
-        new uField("NewsPagea12da51e", 29),
-        new uField("PartnersPageec88aa66", 30),
-        new uField("ProfileIcon9300a9dd", 31),
-        new uField("ProgramPagec84f4f3e", 32),
-        new uField("RalewayBlackcd5035ad", 33),
-        new uField("RalewayRegulara87b1aaa", 34),
-        new uField("SearchGrey1d3e7726", 35),
-        new uField("SponsorsPage55b7763e", 36),
-        new uField("StarWhite6e65c160", 37),
-        new uField("StudentGarderobIcona35cfd01", 38),
-        new uField("StudentLoungeIcon0d682f55", 39));
+        new uField("NewsExampleImage799d0165", 27),
+        new uField("NewsPagea12da51e", 28),
+        new uField("PartnersPageec88aa66", 29),
+        new uField("ProfileIcon9300a9dd", 30),
+        new uField("ProgramPagec84f4f3e", 31),
+        new uField("RalewayBlackcd5035ad", 32),
+        new uField("RalewayRegulara87b1aaa", 33),
+        new uField("SearchGrey1d3e7726", 34),
+        new uField("SponsorsPage55b7763e", 35),
+        new uField("StarWhite6e65c160", 36),
+        new uField("StudentGarderobIcona35cfd01", 37),
+        new uField("StudentLoungeIcon0d682f55", 38));
 }
 
 uClassType* gadden_bundle_typeof()
@@ -189,7 +185,7 @@ uClassType* gadden_bundle_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 40;
+    options.FieldCount = 39;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("gadden_bundle", options);
     type->fp_build_ = gadden_bundle_build;
@@ -224,7 +220,6 @@ uSStrong< ::g::Uno::IO::BundleFile*> gadden_bundle::MapPlan33b43bb45_;
 uSStrong< ::g::Uno::IO::BundleFile*> gadden_bundle::MapPlan4d288e982_;
 uSStrong< ::g::Uno::IO::BundleFile*> gadden_bundle::MenuBackground6a8fe2ea_;
 uSStrong< ::g::Uno::IO::BundleFile*> gadden_bundle::MiljomarktLogotypeWhiteca9eb941_;
-uSStrong< ::g::Uno::IO::BundleFile*> gadden_bundle::NewsExampleImage228d73f7f_;
 uSStrong< ::g::Uno::IO::BundleFile*> gadden_bundle::NewsExampleImage799d0165_;
 uSStrong< ::g::Uno::IO::BundleFile*> gadden_bundle::NewsPagea12da51e_;
 uSStrong< ::g::Uno::IO::BundleFile*> gadden_bundle::PartnersPageec88aa66_;
