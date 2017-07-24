@@ -1,5 +1,16 @@
+<!--
+TODO:
+  * Fix an easier animation when user has clicked on the info-icon
+  * Create an animation for the shake-icon that wiggles back and forward
+  * Function for shake
+  * Include button that appears after the first shake
+  * Create vue for getting a result
+  * Function for randomally show a result
+ -->
+
 <Page>
   <JavaScript File="IceBreakersPage.js" />
+
   <DockPanel ux:Name="popupBackground" Height="100%" Background="Black" Opacity="1">
     <!-- Background -->
     <Image ux:Name="infoIcon" Opacity="1" Alignment="TopRight" Width="30" Height="30" Margin="20" File="../../assets/InfoIconWhite.png">
@@ -8,17 +19,17 @@
       <DebugAction Message="clicked" />
     </Clicked>
     </Image>
-
+    <!-- Cross icon -->
     <Image ux:Name="crossIcon" Opacity="0" Alignment="TopRight" Width="25" Height="25" Margin="20" File="../../assets/CrossIcon.png" />
-
+    <!-- Background -->
     <Image Alignment="TopCenter" Layer="Background" File="../../assets/BackgroundIceBreaker.png"/>
-
+    <!-- While true target -->
     <WhileTrue ux:Name="opacityToggle">
-        <Change popupInfo.Opacity="1" Duration="0.1" />
-        <Change infoIcon.Opacity="0" />
-        <Change crossIcon.Opacity="1" />
+      <Change popupInfo.Opacity="1" Duration="0.1" />
+      <Change infoIcon.Opacity="0" />
+      <Change crossIcon.Opacity="1" />
     </WhileTrue>
-
+    <!-- Info pop-up -->
     <Panel ux:Name="popupInfo" Opacity="0" Height="100%" Width="100%" Background="#0006">
       <Rectangle Color="White" CornerRadius="15" Width="300" Height="200" Margin="20,60,20,20" Alignment="TopCenter">
         <Paragraph TextColor="Black" TextAlignment="Center" Alignment="TopCenter" Padding="20" Height="100%">
@@ -29,7 +40,7 @@
       </Rectangle>
     </Panel>
 
-
+    <!-- Main content -->
     <StackPanel Alignment="Center">
       <TextView Font="TitleFont" TextColor="#fff" FontSize="65" TextWrapping="Wrap" TextAlignment="Center" LineSpacing="20" Alignment="Top" Margin="0,0,0,50">
         SHAKE TO BREAK
@@ -38,10 +49,7 @@
         Skaka telefonen för att få tips på ice breakers
       </Paragraph>
     </StackPanel>
-
+    <!-- Info icon -->
     <Image Width="40%" Alignment="BottomCenter" Layer="Background" File="../../assets/IceBreakerIcon.png"  />
-
   </DockPanel>
-
-
 </Page>

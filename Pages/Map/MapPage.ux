@@ -1,3 +1,9 @@
+<!--
+TODO:
+  * Fetch the map from API
+  * Fix the information pop-up for "plan 4" page
+ -->
+
 <Page>
   <JavaScript File="MapPage.js" />
 

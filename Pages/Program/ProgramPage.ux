@@ -1,31 +1,42 @@
+<!--
+TODO:
+  * Sort program after schedual
+  * Forward the user to booking vue when target the button
+ -->
+
 <Page>
   <JavaScript File="ProgramPage.js" />
 
- <Panel ux:Name="ProgramFeed">
-  <StackPanel Margin="20">
-    <TitleBig Margin="0,40,0,20" Color="Black" Value="ONSDAG 8/11" />
+   <Panel ux:Name="ProgramFeed">
+    <StackPanel Margin="20">
+      <!-- Schedual title -->
+      <TitleBig Margin="0,40,0,20" Color="Black" Value="ONSDAG 8/11" />
 
-    <Each Items="{dataProgram}">
-      <Grid RowCount="1" ColumnCount="2" Height="80" Margin="0,20,0,10">
-        <Image Height="80" Alignment="BottomLeft" StretchMode="UniformToFill" Url="{image}"/>
-        <Grid RowCount="2" ColumnCount="1" Alignment="BottomLeft" Margin="0,0,0,0" Height="100%">
-          <StackPanel>
-          <Paragraph Row="1" Value="{name}" Font="RalewayBlack" TextWrapping="Wrap" />
-          <Paragraph Row="2" Value="{location}" FontSize="10"  />
-        </StackPanel>
+      <Each Items="{dataProgram}">
+        <Grid RowCount="1" ColumnCount="2" Height="80" Margin="0,20,0,10">
+          <!-- Get image from JSON -->
+          <Image Height="80" Alignment="BottomLeft" StretchMode="UniformToFill" Url="{image}"/>
+          <Grid RowCount="2" ColumnCount="1" Alignment="BottomLeft" Margin="0,0,0,0" Height="100%">
+            <StackPanel>
+              <!-- Get name from JSON -->
+              <Paragraph Row="1" Value="{name}" Font="RalewayBlack" TextWrapping="Wrap" />
+              <!-- Get location from JSON -->
+              <Paragraph Row="2" Value="{location}" FontSize="10"  />
+            </StackPanel>
+          </Grid>
+
+          <!-- Click event -->
+          <Clicked>
+            <Toggle Target="opacityProgram" />
+            <Callback Handler="{programClicked}"/>
+          </Clicked>
         </Grid>
 
-        <Clicked>
-          <Toggle Target="opacityProgram" />
-          <Callback Handler="{programClicked}"/>
-        </Clicked>
-      </Grid>
-
-      <Rectangle Margin="0,7,0,7" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
-    </Each>
-
-  </StackPanel>
-</Panel>
+        <!-- Septerator -->
+        <Rectangle Margin="0,7,0,7" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+      </Each>
+    </StackPanel>
+  </Panel>
 
   <WhileTrue ux:Name="opacityProgram">
       <Change ProgramDetails.Opacity="1" Duration="0.2" />
@@ -37,45 +48,44 @@
   <Panel ux:Name="ProgramDetails" Opacity="0"  >
     <Rectangle Width="100%" Height="100%"  Background="Black" ZOffset="1.0" >
       <ScrollView>
-      <StackPanel>
-        <With Data="{selectedProgram}">
-
-          <Panel Width="100%" Height="100%">
-            <Image Url="{image}" Height="100%" />
-          </Panel>
-
-          <Panel Alignment="BottomLeft" Margin="0,20,0,0" Width="100%" Height="100%">
-            <Title Value="{name}" FontSize="28" LineSpacing="10" Height="100%" Width="100%" TextAlignment="Left"/>
-          </Panel>
-
-          <Panel Margin="20">
-            <StackPanel>
-              <SmallText FontSize="18" Color="#979797" Margin="0,0,0,5" Value="{= toUpper({date})} {time}" />
-              <SmallText FontSize="12" Value="{= toUpper({location})}" />
-            </StackPanel>
-          </Panel>
-
-          <Rectangle Alignment="Left" Fill="#979797" Height="1px" SnapToPixels="true" Width="60%" Margin="20,0,0,0"/>
-
-          <Panel Margin="20">
-            <Paragraph Value="{description}" />
-          </Panel>
-
-          <Panel Margin="0,0,0,50">
-          <Rectangle Background="Black" Width="70%" Height="50" Alignment="Center" Margin="20,0,0,0">
-            <Stroke Width="1" Color="White" />
-            <Paragraph FontSize="16" Alignment="Center" Value="BOKA FÖRELÄSNING" />
-          </Rectangle>
-        </Panel>
-
-        </With>
-      </StackPanel>
-    </ScrollView>
+        <StackPanel>
+          <With Data="{selectedProgram}">
+            <!-- Get image from JSON -->
+            <Panel Width="100%" Height="100%">
+              <Image Url="{image}" Height="100%" />
+            </Panel>
+            <!-- Get name from JSON -->
+            <Panel Alignment="BottomLeft" Margin="0,20,0,0" Width="100%" Height="100%">
+              <Title Value="{name}" FontSize="28" LineSpacing="10" Height="100%" Width="100%" TextAlignment="Left"/>
+            </Panel>
+            <!-- Get time and location from JSON -->
+            <Panel Margin="20">
+              <StackPanel>
+                <SmallText FontSize="18" Color="#979797" Margin="0,0,0,5" Value="{= toUpper({date})} {time}" />
+                <SmallText FontSize="12" Value="{= toUpper({location})}" />
+              </StackPanel>
+            </Panel>
+            <!-- Seperator -->
+            <Rectangle Alignment="Left" Fill="#979797" Height="1px" SnapToPixels="true" Width="60%" Margin="20,0,0,0"/>
+            <!-- Get description from JSON -->
+            <Panel Margin="20">
+              <Paragraph Value="{description}" />
+            </Panel>
+            <!-- Butotn -->
+            <Panel Margin="0,0,0,50">
+              <Rectangle Background="Black" Width="70%" Height="50" Alignment="Center" Margin="20,0,0,0">
+                <Stroke Width="1" Color="White" />
+                <Paragraph FontSize="16" Alignment="Center" Value="BOKA FÖRELÄSNING" />
+              </Rectangle>
+            </Panel>
+          </With>
+        </StackPanel>
+      </ScrollView>
     </Rectangle>
   </Panel>
 
+  <!-- Include background locally -->
   <DockPanel Background="#000" >
     <Image StretchMode="Fill" Layer="Background" File="../../assets/BackgroundProgram.png"  />
   </DockPanel>
-
 </Page>
