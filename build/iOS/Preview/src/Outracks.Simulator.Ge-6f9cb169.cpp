@@ -23,7 +23,7 @@ namespace Simulator{
 static void GeneratedApplication_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("127.0.0.1");
-    ::STRINGS[1] = uString::Const("192.168.0.2");
+    ::STRINGS[1] = uString::Const("192.168.1.124");
     ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/gadden.unoproj");
     ::STRINGS[3] = uString::Const("gadden");
     ::TYPES[0] = ::g::Uno::Net::IPEndPoint_typeof()->Array();
@@ -74,7 +74,7 @@ void GeneratedApplication__New3_fn(GeneratedApplication** __retval)
 void GeneratedApplication::ctor_5()
 {
     uStackFrame __("Outracks.Simulator.GeneratedApplication", ".ctor()");
-    ctor_4(uArray::Init< ::g::Uno::Net::IPEndPoint*>(::TYPES[0/*Uno.Net.IPEndPoint[]*/], 2, (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[0/*"127.0.0.1"*/]), 12124), (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[1/*"192.168.0.2"*/]), 12124)), ::STRINGS[2/*"/Users/eric...*/], uArray::Init<uString*>(::TYPES[1/*string[]*/], 0));
+    ctor_4(uArray::Init< ::g::Uno::Net::IPEndPoint*>(::TYPES[0/*Uno.Net.IPEndPoint[]*/], 2, (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[0/*"127.0.0.1"*/]), 12124), (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[1/*"192.168.1.124"*/]), 12124)), ::STRINGS[2/*"/Users/eric...*/], uArray::Init<uString*>(::TYPES[1/*string[]*/], 0));
     ::g::Outracks::Simulator::Runtime::Bundle::Initialize(::STRINGS[3/*"gadden"*/]);
     Reflection((uObject*)::g::Outracks::Simulator::Runtime::NativeReflection::New1((uObject*)::g::Outracks::Simulator::Runtime::SimpleTypeMap::New1()));
 }

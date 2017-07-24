@@ -40,22 +40,27 @@
         <WhileActive Threshold="0.5">
             <Set indicatorSponsor.LayoutMaster="SponsorTab" />
         </WhileActive>
-        <Panel Margin="0,50,0,0">
-          <TitleBig>Tack!</TitleBig>
-          <!-- Line seperator -->
-  				<Rectangle Alignment="TopCenter" Margin="0,50,0,0" Fill="#979797" Height="1px" SnapToPixels="true" Width="100"/>
-          <ScrollView>
-            <StackPanel>
-          <Each Items="{dataSponsors}">
- <!-- FÖRSÖKER FÅ UT DATA MEN BLIR ERROR SÅ KOLLA OM DU FÅR UT BILDERNA -->
-                <!-- <Image Url="{logo}" Width="40" />
-                <Text Value="{logo}" /> -->
+        <ScrollView>
+          <Panel>
+            <StackPanel >
+              <TitleBig Margin="0,50,0,0">Tack!</TitleBig>
+              <!-- Line seperator -->
+      				<Rectangle Alignment="TopCenter" Margin="0,30,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100"/>
 
-          </Each>
-        </StackPanel>
-      </ScrollView>
+              <Grid Row="0" ColumnCount="3">
+                <Each Items="{dataSponsors}" >
+                  <!-- White background to see that all results exist, but every one doesnt have a picture -->
+                  <Rectangle Background="White" Margin="10">
+                    <Image Url="{logo}" Width="100" Height="100" />
+                  </Rectangle>
+                </Each>
+              </Grid>
 
-        </Panel>
+              <Image Margin="0,0,0,0" Width="100%" Alignment="BottomCenter" File="../../assets/BackgroundNewsDetails.png" />
+            </StackPanel>
+          </Panel>
+        </ScrollView>
+
       </Page>
         <Page ux:Name="goodiebag" Background="Black">
           <WhileActive Threshold="0.5">

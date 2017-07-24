@@ -36,7 +36,6 @@
 #include <Fuse.Animations.TrackAnimator.h>
 #include <Fuse.Animations.Trans-997c8373.h>
 #include <Fuse.Binding.h>
-#include <Fuse.Controls.ClientPanel.h>
 #include <Fuse.Controls.Control.h>
 #include <Fuse.Controls.DockPanel.h>
 #include <Fuse.Controls.EdgeNavigator.h>
@@ -165,7 +164,7 @@ namespace g{
 
 // public partial sealed class MainView :2
 // {
-// static MainView() :660
+// static MainView() :668
 static void MainView__cctor_1_fn(uType* __type)
 {
     MainView::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 65, ::STRINGS[0/*"TheSidebar"*/], ::STRINGS[1/*"sidebarProf...*/], ::STRINGS[2/*"shadowProfile"*/], ::STRINGS[3/*"sidebar"*/], ::STRINGS[4/*"shadow"*/], ::STRINGS[5/*"router"*/], ::STRINGS[6/*"temp_eb0"*/], ::STRINGS[7/*"temp_eb1"*/], ::STRINGS[8/*"temp_eb2"*/], ::STRINGS[9/*"temp_eb3"*/], ::STRINGS[10/*"temp_eb4"*/], ::STRINGS[11/*"temp_eb5"*/], ::STRINGS[12/*"temp_eb6"*/], ::STRINGS[13/*"temp_eb7"*/], ::STRINGS[14/*"sidebarFade"*/], ::STRINGS[15/*"navigation"*/], ::STRINGS[16/*"news"*/], ::STRINGS[17/*"NewsFeed"*/], ::STRINGS[18/*"opacityNews"*/], ::STRINGS[19/*"NewsDetails"*/], ::STRINGS[20/*"BackgroundI...*/], ::STRINGS[21/*"partners"*/], ::STRINGS[22/*"exhibitor"*/], ::STRINGS[23/*"ExibitorList"*/], ::STRINGS[24/*"ExhibitorDe...*/], ::STRINGS[25/*"program"*/], ::STRINGS[26/*"ProgramFeed"*/], ::STRINGS[27/*"opacityProg...*/], ::STRINGS[28/*"ProgramDeta...*/], ::STRINGS[29/*"icebreaker"*/], ::STRINGS[30/*"popupBackgr...*/], ::STRINGS[31/*"infoIcon"*/], ::STRINGS[32/*"crossIcon"*/], ::STRINGS[33/*"opacityToggle"*/], ::STRINGS[34/*"popupInfo"*/], ::STRINGS[35/*"sponsors"*/], ::STRINGS[36/*"indicatorSp...*/], ::STRINGS[37/*"SponsorTab"*/], ::STRINGS[38/*"GoodiebagTab"*/], ::STRINGS[39/*"navigationS...*/], ::STRINGS[40/*"sponsor"*/], ::STRINGS[41/*"goodiebag"*/], ::STRINGS[42/*"map"*/], ::STRINGS[43/*"indicator"*/], ::STRINGS[44/*"plan3Tab"*/], ::STRINGS[45/*"plan4Tab"*/], ::STRINGS[46/*"navigationC...*/], ::STRINGS[47/*"plan3"*/], ::STRINGS[48/*"infoIconMap"*/], ::STRINGS[49/*"crossIconMap"*/], ::STRINGS[50/*"MapToggle"*/], ::STRINGS[51/*"popupInfoMap"*/], ::STRINGS[52/*"plan4"*/], ::STRINGS[53/*"infoIconMap2"*/], ::STRINGS[54/*"crossIconMap2"*/], ::STRINGS[55/*"MapToggle2"*/], ::STRINGS[56/*"popupInfoMap2"*/], ::STRINGS[57/*"aboutus"*/], ::STRINGS[58/*"indicatorAb...*/], ::STRINGS[59/*"AboutUsTab"*/], ::STRINGS[60/*"ProjectTab"*/], ::STRINGS[61/*"navigationC...*/], ::STRINGS[62/*"about"*/], ::STRINGS[63/*"project"*/], 
@@ -819,19 +818,19 @@ static void MainView_build(uType* type)
     return type;
 }
 
-// public MainView() :779
+// public MainView() :787
 void MainView__ctor_4_fn(MainView* __this)
 {
     __this->ctor_4();
 }
 
-// private void InitializeUX() :783
+// private void InitializeUX() :791
 void MainView__InitializeUX_fn(MainView* __this)
 {
     __this->InitializeUX();
 }
 
-// public MainView New() :779
+// public MainView New() :787
 void MainView__New2_fn(MainView** __retval)
 {
     *__retval = MainView::New2();
@@ -907,7 +906,7 @@ uSStrong< ::g::Fuse::Font*> MainView::Raleway_;
 uSStrong< ::g::Fuse::Font*> MainView::RalewayBlack_;
 uSStrong< ::g::Fuse::Font*> MainView::TitleFont_;
 
-// public MainView() [instance] :779
+// public MainView() [instance] :787
 void MainView::ctor_4()
 {
     uStackFrame __("MainView", ".ctor()");
@@ -915,7 +914,7 @@ void MainView::ctor_4()
     InitializeUX();
 }
 
-// private void InitializeUX() [instance] :783
+// private void InitializeUX() [instance] :791
 void MainView::InitializeUX()
 {
     uStackFrame __("MainView", "InitializeUX()");
@@ -1387,59 +1386,60 @@ void MainView::InitializeUX()
     aboutus = ::g::Fuse::Controls::Page::New4();
     ::g::Fuse::Controls::Page* temp362 = ::g::Fuse::Controls::Page::New4();
     ::g::Fuse::Reactive::JavaScript* temp363 = ::g::Fuse::Reactive::JavaScript::New2(__g_nametable1);
-    ::g::Fuse::Controls::ClientPanel* temp364 = ::g::Fuse::Controls::ClientPanel::New5();
-    ::g::Fuse::Controls::ScrollView* temp365 = ::g::Fuse::Controls::ScrollView::New4();
-    ::g::Fuse::Controls::StackPanel* temp366 = ::g::Fuse::Controls::StackPanel::New4();
-    ::g::Fuse::Controls::Image* temp367 = ::g::Fuse::Controls::Image::New3();
-    ::g::Fuse::Triggers::LayoutAnimation* temp368 = ::g::Fuse::Triggers::LayoutAnimation::New2();
-    ::g::Fuse::Animations::Move* temp369 = ::g::Fuse::Animations::Move::New2();
-    ::g::Fuse::Controls::DockPanel* temp370 = ::g::Fuse::Controls::DockPanel::New4();
-    ::g::Fuse::Controls::Grid* temp371 = ::g::Fuse::Controls::Grid::New4();
+    ::g::Fuse::Controls::ScrollView* temp364 = ::g::Fuse::Controls::ScrollView::New4();
+    ::g::Fuse::Controls::StackPanel* temp365 = ::g::Fuse::Controls::StackPanel::New4();
+    ::g::Fuse::Controls::Image* temp366 = ::g::Fuse::Controls::Image::New3();
+    ::g::Fuse::Triggers::LayoutAnimation* temp367 = ::g::Fuse::Triggers::LayoutAnimation::New2();
+    ::g::Fuse::Animations::Move* temp368 = ::g::Fuse::Animations::Move::New2();
+    ::g::Fuse::Controls::DockPanel* temp369 = ::g::Fuse::Controls::DockPanel::New4();
+    ::g::Fuse::Controls::Grid* temp370 = ::g::Fuse::Controls::Grid::New4();
     AboutUsTab = ::g::Fuse::Controls::Panel::New3();
-    ::g::AboutAboutUs* temp372 = ::g::AboutAboutUs::New4();
-    ::g::Fuse::Gestures::Clicked* temp373 = ::g::Fuse::Gestures::Clicked::New2();
-    ::g::Fuse::Triggers::Actions::Set* temp374 = (::g::Fuse::Triggers::Actions::Set*)::g::Fuse::Triggers::Actions::Set::New2(::TYPES[3/*Fuse.Triggers.Actions.Set<Fuse.Visual>*/], navigationControlAbout_Active_inst);
+    ::g::AboutAboutUs* temp371 = ::g::AboutAboutUs::New4();
+    ::g::Fuse::Gestures::Clicked* temp372 = ::g::Fuse::Gestures::Clicked::New2();
+    ::g::Fuse::Triggers::Actions::Set* temp373 = (::g::Fuse::Triggers::Actions::Set*)::g::Fuse::Triggers::Actions::Set::New2(::TYPES[3/*Fuse.Triggers.Actions.Set<Fuse.Visual>*/], navigationControlAbout_Active_inst);
     ProjectTab = ::g::Fuse::Controls::Panel::New3();
-    ::g::AboutAboutUs* temp375 = ::g::AboutAboutUs::New4();
-    ::g::Fuse::Gestures::Clicked* temp376 = ::g::Fuse::Gestures::Clicked::New2();
-    ::g::Fuse::Triggers::Actions::Set* temp377 = (::g::Fuse::Triggers::Actions::Set*)::g::Fuse::Triggers::Actions::Set::New2(::TYPES[3/*Fuse.Triggers.Actions.Set<Fuse.Visual>*/], navigationControlAbout_Active_inst);
-    ::g::Fuse::Drawing::StaticSolidColor* temp378 = ::g::Fuse::Drawing::StaticSolidColor::New2(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
+    ::g::AboutAboutUs* temp374 = ::g::AboutAboutUs::New4();
+    ::g::Fuse::Gestures::Clicked* temp375 = ::g::Fuse::Gestures::Clicked::New2();
+    ::g::Fuse::Triggers::Actions::Set* temp376 = (::g::Fuse::Triggers::Actions::Set*)::g::Fuse::Triggers::Actions::Set::New2(::TYPES[3/*Fuse.Triggers.Actions.Set<Fuse.Visual>*/], navigationControlAbout_Active_inst);
+    ::g::Fuse::Drawing::StaticSolidColor* temp377 = ::g::Fuse::Drawing::StaticSolidColor::New2(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
     about = ::g::Fuse::Controls::Page::New4();
-    ::g::Fuse::Navigation::WhileActive* temp379 = ::g::Fuse::Navigation::WhileActive::New2();
-    ::g::Fuse::Triggers::Actions::Set* temp380 = (::g::Fuse::Triggers::Actions::Set*)::g::Fuse::Triggers::Actions::Set::New2(::TYPES[4/*Fuse.Triggers.Actions.Set<Fuse.Elements.Element>*/], indicatorAbout_Element_LayoutMaster_inst);
-    ::g::Fuse::Controls::StackPanel* temp381 = ::g::Fuse::Controls::StackPanel::New4();
-    MainView__Template5* temp382 = MainView__Template5::New2(this, this);
-    ::g::Fuse::Reactive::DataBinding* temp383 = ::g::Fuse::Reactive::DataBinding::New1(temp19_Items_inst, (uObject*)temp72, __g_nametable1, 3);
-    ::g::Fuse::Controls::Image* temp384 = ::g::Fuse::Controls::Image::New3();
-    ::g::Fuse::Drawing::StaticSolidColor* temp385 = ::g::Fuse::Drawing::StaticSolidColor::New2(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
+    ::g::Fuse::Navigation::WhileActive* temp378 = ::g::Fuse::Navigation::WhileActive::New2();
+    ::g::Fuse::Triggers::Actions::Set* temp379 = (::g::Fuse::Triggers::Actions::Set*)::g::Fuse::Triggers::Actions::Set::New2(::TYPES[4/*Fuse.Triggers.Actions.Set<Fuse.Elements.Element>*/], indicatorAbout_Element_LayoutMaster_inst);
+    ::g::Fuse::Controls::StackPanel* temp380 = ::g::Fuse::Controls::StackPanel::New4();
+    MainView__Template5* temp381 = MainView__Template5::New2(this, this);
+    ::g::Fuse::Reactive::DataBinding* temp382 = ::g::Fuse::Reactive::DataBinding::New1(temp19_Items_inst, (uObject*)temp72, __g_nametable1, 3);
+    ::g::Fuse::Controls::Image* temp383 = ::g::Fuse::Controls::Image::New3();
+    ::g::Fuse::Drawing::StaticSolidColor* temp384 = ::g::Fuse::Drawing::StaticSolidColor::New2(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
     project = ::g::Fuse::Controls::Page::New4();
-    ::g::Fuse::Navigation::WhileActive* temp386 = ::g::Fuse::Navigation::WhileActive::New2();
-    ::g::Fuse::Triggers::Actions::Set* temp387 = (::g::Fuse::Triggers::Actions::Set*)::g::Fuse::Triggers::Actions::Set::New2(::TYPES[4/*Fuse.Triggers.Actions.Set<Fuse.Elements.Element>*/], indicatorAbout_Element_LayoutMaster_inst);
-    ::g::Fuse::Controls::StackPanel* temp388 = ::g::Fuse::Controls::StackPanel::New4();
-    ::g::TitleBig* temp389 = ::g::TitleBig::New4();
-    ::g::Fuse::Controls::Rectangle* temp390 = ::g::Fuse::Controls::Rectangle::New3();
-    ::g::Fuse::Drawing::StaticSolidColor* temp391 = ::g::Fuse::Drawing::StaticSolidColor::New2(::g::Uno::Float4__New2(0.5921569f, 0.5921569f, 0.5921569f, 1.0f));
+    ::g::Fuse::Navigation::WhileActive* temp385 = ::g::Fuse::Navigation::WhileActive::New2();
+    ::g::Fuse::Triggers::Actions::Set* temp386 = (::g::Fuse::Triggers::Actions::Set*)::g::Fuse::Triggers::Actions::Set::New2(::TYPES[4/*Fuse.Triggers.Actions.Set<Fuse.Elements.Element>*/], indicatorAbout_Element_LayoutMaster_inst);
+    ::g::Fuse::Controls::StackPanel* temp387 = ::g::Fuse::Controls::StackPanel::New4();
+    ::g::TitleBig* temp388 = ::g::TitleBig::New4();
+    ::g::Fuse::Controls::Rectangle* temp389 = ::g::Fuse::Controls::Rectangle::New3();
+    ::g::Fuse::Drawing::StaticSolidColor* temp390 = ::g::Fuse::Drawing::StaticSolidColor::New2(::g::Uno::Float4__New2(0.5921569f, 0.5921569f, 0.5921569f, 1.0f));
+    ::g::Fuse::Controls::Grid* temp391 = ::g::Fuse::Controls::Grid::New4();
     MainView__Template6* temp392 = MainView__Template6::New2(this, this);
     ::g::Fuse::Reactive::DataBinding* temp393 = ::g::Fuse::Reactive::DataBinding::New1(temp20_Items_inst, (uObject*)temp73, __g_nametable1, 3);
-    ::g::Fuse::Drawing::StaticSolidColor* temp394 = ::g::Fuse::Drawing::StaticSolidColor::New2(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
-    ::g::Fuse::Controls::Image* temp395 = ::g::Fuse::Controls::Image::New3();
+    ::g::Fuse::Controls::Image* temp394 = ::g::Fuse::Controls::Image::New3();
+    ::g::Fuse::Drawing::StaticSolidColor* temp395 = ::g::Fuse::Drawing::StaticSolidColor::New2(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
+    ::g::Fuse::Controls::Image* temp396 = ::g::Fuse::Controls::Image::New3();
     login = ::g::Fuse::Controls::Page::New4();
-    ::g::Fuse::Controls::Page* temp396 = ::g::Fuse::Controls::Page::New4();
-    ::g::Fuse::Reactive::JavaScript* temp397 = ::g::Fuse::Reactive::JavaScript::New2(__g_nametable1);
-    ::g::Fuse::Controls::Image* temp398 = ::g::Fuse::Controls::Image::New3();
-    ::g::Fuse::Controls::StackPanel* temp399 = ::g::Fuse::Controls::StackPanel::New4();
-    ::g::Fuse::Controls::TextInput* temp400 = ::g::Fuse::Controls::TextInput::New3();
-    ::g::Fuse::Controls::Rectangle* temp401 = ::g::Fuse::Controls::Rectangle::New3();
-    ::g::Fuse::Controls::TextInput* temp402 = ::g::Fuse::Controls::TextInput::New3();
-    ::g::Fuse::Controls::Rectangle* temp403 = ::g::Fuse::Controls::Rectangle::New3();
+    ::g::Fuse::Controls::Page* temp397 = ::g::Fuse::Controls::Page::New4();
+    ::g::Fuse::Reactive::JavaScript* temp398 = ::g::Fuse::Reactive::JavaScript::New2(__g_nametable1);
+    ::g::Fuse::Controls::Image* temp399 = ::g::Fuse::Controls::Image::New3();
+    ::g::Fuse::Controls::StackPanel* temp400 = ::g::Fuse::Controls::StackPanel::New4();
+    ::g::Fuse::Controls::TextInput* temp401 = ::g::Fuse::Controls::TextInput::New3();
+    ::g::Fuse::Controls::Rectangle* temp402 = ::g::Fuse::Controls::Rectangle::New3();
+    ::g::Fuse::Controls::TextInput* temp403 = ::g::Fuse::Controls::TextInput::New3();
     ::g::Fuse::Controls::Rectangle* temp404 = ::g::Fuse::Controls::Rectangle::New3();
-    ::g::Fuse::Controls::Text* temp405 = ::g::Fuse::Controls::Text::New3();
+    ::g::Fuse::Controls::Rectangle* temp405 = ::g::Fuse::Controls::Rectangle::New3();
     ::g::Fuse::Controls::Text* temp406 = ::g::Fuse::Controls::Text::New3();
-    ::g::Fuse::Controls::StackPanel* temp407 = ::g::Fuse::Controls::StackPanel::New4();
-    ::g::Fuse::Controls::Text* temp408 = ::g::Fuse::Controls::Text::New3();
-    ::g::Fuse::Controls::Rectangle* temp409 = ::g::Fuse::Controls::Rectangle::New3();
-    ::g::Fuse::Drawing::Stroke* temp410 = ::g::Fuse::Drawing::Stroke::New2();
-    ::g::Fuse::Controls::Text* temp411 = ::g::Fuse::Controls::Text::New3();
+    ::g::Fuse::Controls::Text* temp407 = ::g::Fuse::Controls::Text::New3();
+    ::g::Fuse::Controls::StackPanel* temp408 = ::g::Fuse::Controls::StackPanel::New4();
+    ::g::Fuse::Controls::Text* temp409 = ::g::Fuse::Controls::Text::New3();
+    ::g::Fuse::Controls::Rectangle* temp410 = ::g::Fuse::Controls::Rectangle::New3();
+    ::g::Fuse::Drawing::Stroke* temp411 = ::g::Fuse::Drawing::Stroke::New2();
+    ::g::Fuse::Controls::Text* temp412 = ::g::Fuse::Controls::Text::New3();
     temp74->Style(1);
     temp75->Code(::STRINGS[182/*"\n\tvar Obs...*/]);
     temp75->LineNumber(4);
@@ -2418,179 +2418,185 @@ void MainView::InitializeUX()
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(aboutus)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp362);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp362->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp363);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp362->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp364);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp362->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp395);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp362->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp396);
     temp363->LineNumber(2);
     temp363->FileName(::STRINGS[223/*"Pages/About...*/]);
     temp363->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::AboutUsPaged71bc3be()));
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp364->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp365);
+    temp365->ItemSpacing(16.0f);
+    temp365->Margin(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 0.0f));
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp365->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp366);
-    temp366->ItemSpacing(16.0f);
-    temp366->Margin(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 0.0f));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp366->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp367);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp366->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), indicatorAbout);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp366->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp370);
-    temp367->Width(::g::Uno::UX::Size__New1(60.0f, 4));
-    temp367->Alignment(6);
-    temp367->Margin(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 0.0f));
-    temp367->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::GaddenLogotypeWhite1c35d470()));
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp365->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), indicatorAbout);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp365->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp369);
+    temp366->Width(::g::Uno::UX::Size__New1(60.0f, 4));
+    temp366->Alignment(6);
+    temp366->Margin(::g::Uno::Float4__New2(0.0f, 10.0f, 0.0f, 0.0f));
+    temp366->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::GaddenLogotypeWhite1c35d470()));
     uPtr(indicatorAbout)->Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
     uPtr(indicatorAbout)->Name(MainView::__selector58());
     ::g::Fuse::Controls::LayoutControl::SetLayoutMaster(indicatorAbout, AboutUsTab);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(indicatorAbout)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp368);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp368->Animators()), ::TYPES[6/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp369);
-    temp369->X(1.0f);
-    temp369->Duration(0.4);
-    temp369->RelativeTo(::g::Fuse::Triggers::LayoutTransition::WorldPositionChange());
-    temp369->Easing(::g::Fuse::Animations::Easing::BackIn());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp370->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp371);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp370->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), navigationControlAbout);
-    temp371->ColumnCount(2);
-    temp371->Height(::g::Uno::UX::Size__New1(30.0f, 1));
-    ::g::Fuse::Controls::DockPanel::SetDock(temp371, 2);
-    temp371->Background(temp378);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp371->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), AboutUsTab);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp371->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), ProjectTab);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(indicatorAbout)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp367);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp367->Animators()), ::TYPES[6/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp368);
+    temp368->X(1.0f);
+    temp368->Duration(0.4);
+    temp368->RelativeTo(::g::Fuse::Triggers::LayoutTransition::WorldPositionChange());
+    temp368->Easing(::g::Fuse::Animations::Easing::BackIn());
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp369->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp370);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp369->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), navigationControlAbout);
+    temp370->ColumnCount(2);
+    temp370->Height(::g::Uno::UX::Size__New1(30.0f, 1));
+    ::g::Fuse::Controls::DockPanel::SetDock(temp370, 2);
+    temp370->Background(temp377);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp370->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), AboutUsTab);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp370->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), ProjectTab);
     uPtr(AboutUsTab)->Name(MainView::__selector59());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(AboutUsTab)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp372);
-    temp372->Text(::STRINGS[195/*"OM OSS"*/]);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp372->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp373);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp373->Actions()), ::TYPES[8/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp374);
-    ::g::Fuse::Triggers::Actions::Set__set_Value_fn(temp374, about);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(AboutUsTab)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp371);
+    temp371->Text(::STRINGS[195/*"OM OSS"*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp371->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp372);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp372->Actions()), ::TYPES[8/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp373);
+    ::g::Fuse::Triggers::Actions::Set__set_Value_fn(temp373, about);
     uPtr(ProjectTab)->Name(MainView::__selector60());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(ProjectTab)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp375);
-    temp375->Text(::STRINGS[224/*"PROJEKTKOMM...*/]);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp375->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp376);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp376->Actions()), ::TYPES[8/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp377);
-    ::g::Fuse::Triggers::Actions::Set__set_Value_fn(temp377, project);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(ProjectTab)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp374);
+    temp374->Text(::STRINGS[224/*"PROJEKTKOMM...*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp374->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp375);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp375->Actions()), ::TYPES[8/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp376);
+    ::g::Fuse::Triggers::Actions::Set__set_Value_fn(temp376, project);
     uPtr(navigationControlAbout)->Name(MainView::__selector61());
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(navigationControlAbout)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), about);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(navigationControlAbout)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), project);
     uPtr(about)->Name(MainView::__selector62());
-    uPtr(about)->Background(temp385);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(about)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp379);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(about)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp381);
-    temp379->Threshold(0.5f);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp379->Actions()), ::TYPES[8/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp380);
-    ::g::Fuse::Triggers::Actions::Set__set_Value_fn(temp380, AboutUsTab);
-    temp381->Padding(::g::Uno::Float4__New2(0.0f, 40.0f, 0.0f, 0.0f));
-    temp381->Background(::g::Fuse::Drawing::Brushes::Black());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp381->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp19);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp381->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp384);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp19->Templates()), ::TYPES[11/*Uno.Collections.ICollection<Uno.UX.Template>*/]), temp382);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp19->Bindings()), ::TYPES[9/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp383);
-    temp384->Width(::g::Uno::UX::Size__New1(60.0f, 4));
-    temp384->Alignment(10);
-    temp384->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 20.0f, 20.0f));
-    temp384->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::MiljomarktLogotypeWhiteca9eb941()));
+    uPtr(about)->Background(temp384);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(about)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp378);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(about)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp380);
+    temp378->Threshold(0.5f);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp378->Actions()), ::TYPES[8/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp379);
+    ::g::Fuse::Triggers::Actions::Set__set_Value_fn(temp379, AboutUsTab);
+    temp380->Padding(::g::Uno::Float4__New2(0.0f, 40.0f, 0.0f, 0.0f));
+    temp380->Background(::g::Fuse::Drawing::Brushes::Black());
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp380->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp19);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp380->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp383);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp19->Templates()), ::TYPES[11/*Uno.Collections.ICollection<Uno.UX.Template>*/]), temp381);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp19->Bindings()), ::TYPES[9/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp382);
+    temp383->Width(::g::Uno::UX::Size__New1(60.0f, 4));
+    temp383->Alignment(10);
+    temp383->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 20.0f, 20.0f));
+    temp383->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::MiljomarktLogotypeWhiteca9eb941()));
     uPtr(project)->Name(MainView::__selector63());
-    uPtr(project)->Background(temp394);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(project)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp386);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(project)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp388);
-    temp386->Threshold(0.5f);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp386->Actions()), ::TYPES[8/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp387);
-    ::g::Fuse::Triggers::Actions::Set__set_Value_fn(temp387, ProjectTab);
-    temp388->Padding(::g::Uno::Float4__New2(0.0f, 40.0f, 0.0f, 0.0f));
-    temp388->Background(::g::Fuse::Drawing::Brushes::Black());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp388->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp389);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp388->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp390);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp388->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp20);
-    temp389->Value(::STRINGS[225/*"PROJEKTKOMM...*/]);
-    temp389->Alignment(10);
-    temp390->Width(::g::Uno::UX::Size__New1(120.0f, 1));
-    temp390->Height(::g::Uno::UX::Size__New1(1.0f, 3));
-    temp390->Alignment(6);
-    temp390->Margin(::g::Uno::Float4__New2(0.0f, 30.0f, 0.0f, 30.0f));
-    temp390->Fill(temp391);
+    uPtr(project)->Background(temp395);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(project)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp385);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(project)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp387);
+    temp385->Threshold(0.5f);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp385->Actions()), ::TYPES[8/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp386);
+    ::g::Fuse::Triggers::Actions::Set__set_Value_fn(temp386, ProjectTab);
+    temp387->Padding(::g::Uno::Float4__New2(0.0f, 40.0f, 0.0f, 0.0f));
+    temp387->Background(::g::Fuse::Drawing::Brushes::Black());
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp387->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp388);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp387->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp389);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp387->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp391);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp387->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp394);
+    temp388->Value(::STRINGS[225/*"PROJEKTKOMM...*/]);
+    temp388->Alignment(10);
+    temp389->Width(::g::Uno::UX::Size__New1(120.0f, 1));
+    temp389->Height(::g::Uno::UX::Size__New1(1.0f, 3));
+    temp389->Alignment(6);
+    temp389->Margin(::g::Uno::Float4__New2(0.0f, 30.0f, 0.0f, 30.0f));
+    temp389->Fill(temp390);
+    temp391->ColumnCount(2);
+    ::g::Fuse::Controls::Grid::SetRow(temp391, 0);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp391->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp20);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp20->Templates()), ::TYPES[11/*Uno.Collections.ICollection<Uno.UX.Template>*/]), temp392);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp20->Bindings()), ::TYPES[9/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp393);
-    temp395->StretchMode(6);
-    temp395->Alignment(10);
-    temp395->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::BackgroundAbstractPaint7eb0f5a1()));
+    temp394->Width(::g::Uno::UX::Size__New1(100.0f, 4));
+    temp394->Alignment(10);
+    temp394->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::BackgroundNewsDetails0b71a49a()));
+    temp396->StretchMode(6);
+    temp396->Alignment(10);
+    temp396->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::BackgroundAbstractPaint7eb0f5a1()));
     uPtr(login)->Name(MainView::__selector64());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(login)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp396);
-    temp396->Background(::g::Fuse::Drawing::Brushes::Black());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp396->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp397);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp396->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp398);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp396->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp399);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp396->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp407);
-    temp397->LineNumber(2);
-    temp397->FileName(::STRINGS[226/*"Pages/Login...*/]);
-    temp397->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::Login51b2d545()));
-    temp398->Alignment(6);
-    temp398->Layer(1);
-    temp398->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::BackgroundIceBreaker4245b230()));
-    temp399->Margin(::g::Uno::Float4__New2(60.0f, 120.0f, 60.0f, 60.0f));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp399->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp400);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp399->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp401);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp399->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp402);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp399->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp403);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp399->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp404);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp399->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp406);
-    temp400->PlaceholderText(::STRINGS[227/*"E-POST"*/]);
-    temp400->PlaceholderColor(::g::Fuse::Drawing::Colors::White());
-    temp400->TextAlignment(1);
-    temp400->TextColor(::g::Fuse::Drawing::Colors::White());
-    temp400->CaretColor(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
-    temp400->Padding(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 10.0f));
-    ::g::Fuse::Controls::Grid::SetRow(temp400, 0);
-    ::g::Fuse::Controls::Grid::SetColumn(temp400, 1);
-    temp400->Font(MainView::Raleway());
-    temp401->Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
-    temp401->Height(::g::Uno::UX::Size__New1(1.0f, 1));
-    temp401->Alignment(12);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(login)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp397);
+    temp397->Background(::g::Fuse::Drawing::Brushes::Black());
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp397->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp398);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp397->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp399);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp397->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp400);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp397->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp408);
+    temp398->LineNumber(2);
+    temp398->FileName(::STRINGS[226/*"Pages/Login...*/]);
+    temp398->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::Login51b2d545()));
+    temp399->Alignment(6);
+    temp399->Layer(1);
+    temp399->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::BackgroundIceBreaker4245b230()));
+    temp400->Margin(::g::Uno::Float4__New2(60.0f, 120.0f, 60.0f, 60.0f));
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp400->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp401);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp400->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp402);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp400->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp403);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp400->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp404);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp400->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp405);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp400->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp407);
+    temp401->PlaceholderText(::STRINGS[227/*"E-POST"*/]);
+    temp401->PlaceholderColor(::g::Fuse::Drawing::Colors::White());
+    temp401->TextAlignment(1);
+    temp401->TextColor(::g::Fuse::Drawing::Colors::White());
+    temp401->CaretColor(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
+    temp401->Padding(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 10.0f));
     ::g::Fuse::Controls::Grid::SetRow(temp401, 0);
-    ::g::Fuse::Controls::Grid::SetColumn(temp401, 0);
-    ::g::Fuse::Controls::Grid::SetColumnSpan(temp401, 2);
-    temp402->PlaceholderText(::STRINGS[228/*"LÖSENORD"*/]);
-    temp402->PlaceholderColor(::g::Fuse::Drawing::Colors::White());
-    temp402->TextAlignment(1);
-    temp402->TextColor(::g::Fuse::Drawing::Colors::White());
-    temp402->CaretColor(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
-    temp402->Margin(::g::Uno::Float4__New2(0.0f, 40.0f, 0.0f, 0.0f));
-    temp402->Padding(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 10.0f));
+    ::g::Fuse::Controls::Grid::SetColumn(temp401, 1);
+    temp401->Font(MainView::Raleway());
+    temp402->Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
+    temp402->Height(::g::Uno::UX::Size__New1(1.0f, 1));
+    temp402->Alignment(12);
     ::g::Fuse::Controls::Grid::SetRow(temp402, 0);
-    ::g::Fuse::Controls::Grid::SetColumn(temp402, 1);
-    temp402->Font(MainView::Raleway());
-    temp403->Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
-    temp403->Height(::g::Uno::UX::Size__New1(1.0f, 1));
-    temp403->Alignment(12);
+    ::g::Fuse::Controls::Grid::SetColumn(temp402, 0);
+    ::g::Fuse::Controls::Grid::SetColumnSpan(temp402, 2);
+    temp403->PlaceholderText(::STRINGS[228/*"LÖSENORD"*/]);
+    temp403->PlaceholderColor(::g::Fuse::Drawing::Colors::White());
+    temp403->TextAlignment(1);
+    temp403->TextColor(::g::Fuse::Drawing::Colors::White());
+    temp403->CaretColor(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
+    temp403->Margin(::g::Uno::Float4__New2(0.0f, 40.0f, 0.0f, 0.0f));
+    temp403->Padding(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 10.0f));
     ::g::Fuse::Controls::Grid::SetRow(temp403, 0);
-    ::g::Fuse::Controls::Grid::SetColumn(temp403, 0);
-    ::g::Fuse::Controls::Grid::SetColumnSpan(temp403, 2);
-    temp404->Width(::g::Uno::UX::Size__New1(200.0f, 1));
-    temp404->Height(::g::Uno::UX::Size__New1(50.0f, 1));
-    temp404->Margin(::g::Uno::Float4__New2(0.0f, 60.0f, 0.0f, 15.0f));
-    temp404->Background(::g::Fuse::Drawing::Brushes::White());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp404->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp405);
-    temp405->Value(::STRINGS[184/*"LOGGA IN"*/]);
-    temp405->Color(::g::Fuse::Drawing::Colors::Black());
-    temp405->Alignment(10);
-    temp405->Font(MainView::RalewayBlack());
-    temp406->Value(::STRINGS[229/*"Har du glöm...*/]);
-    temp406->FontSize(12.0f);
-    temp406->Color(::g::Fuse::Drawing::Colors::White());
+    ::g::Fuse::Controls::Grid::SetColumn(temp403, 1);
+    temp403->Font(MainView::Raleway());
+    temp404->Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
+    temp404->Height(::g::Uno::UX::Size__New1(1.0f, 1));
+    temp404->Alignment(12);
+    ::g::Fuse::Controls::Grid::SetRow(temp404, 0);
+    ::g::Fuse::Controls::Grid::SetColumn(temp404, 0);
+    ::g::Fuse::Controls::Grid::SetColumnSpan(temp404, 2);
+    temp405->Width(::g::Uno::UX::Size__New1(200.0f, 1));
+    temp405->Height(::g::Uno::UX::Size__New1(50.0f, 1));
+    temp405->Margin(::g::Uno::Float4__New2(0.0f, 60.0f, 0.0f, 15.0f));
+    temp405->Background(::g::Fuse::Drawing::Brushes::White());
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp405->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp406);
+    temp406->Value(::STRINGS[184/*"LOGGA IN"*/]);
+    temp406->Color(::g::Fuse::Drawing::Colors::Black());
     temp406->Alignment(10);
-    temp406->Font(MainView::Raleway());
-    temp407->Alignment(12);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp407->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp408);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp407->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp409);
-    temp408->Value(::STRINGS[230/*"Har du inge...*/]);
-    temp408->FontSize(12.0f);
-    temp408->Color(::g::Fuse::Drawing::Colors::White());
-    temp408->Alignment(10);
-    temp408->Font(MainView::Raleway());
-    temp409->Width(::g::Uno::UX::Size__New1(200.0f, 1));
-    temp409->Height(::g::Uno::UX::Size__New1(50.0f, 1));
-    temp409->Margin(::g::Uno::Float4__New2(0.0f, 15.0f, 0.0f, 30.0f));
-    temp409->Background(::g::Fuse::Drawing::Brushes::Black());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp409->Strokes()), ::TYPES[7/*Uno.Collections.ICollection<Fuse.Drawing.Stroke>*/]), temp410);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp409->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp411);
-    temp410->Color(::g::Fuse::Drawing::Colors::White());
-    temp410->Width(1.0f);
-    temp411->Value(::STRINGS[231/*"SKAPA ETT K...*/]);
+    temp406->Font(MainView::RalewayBlack());
+    temp407->Value(::STRINGS[229/*"Har du glöm...*/]);
+    temp407->FontSize(12.0f);
+    temp407->Color(::g::Fuse::Drawing::Colors::White());
+    temp407->Alignment(10);
+    temp407->Font(MainView::Raleway());
+    temp408->Alignment(12);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp408->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp409);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp408->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp410);
+    temp409->Value(::STRINGS[230/*"Har du inge...*/]);
+    temp409->FontSize(12.0f);
+    temp409->Color(::g::Fuse::Drawing::Colors::White());
+    temp409->Alignment(10);
+    temp409->Font(MainView::Raleway());
+    temp410->Width(::g::Uno::UX::Size__New1(200.0f, 1));
+    temp410->Height(::g::Uno::UX::Size__New1(50.0f, 1));
+    temp410->Margin(::g::Uno::Float4__New2(0.0f, 15.0f, 0.0f, 30.0f));
+    temp410->Background(::g::Fuse::Drawing::Brushes::Black());
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp410->Strokes()), ::TYPES[7/*Uno.Collections.ICollection<Fuse.Drawing.Stroke>*/]), temp411);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp410->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp412);
     temp411->Color(::g::Fuse::Drawing::Colors::White());
-    temp411->Alignment(10);
-    temp411->Font(MainView::RalewayBlack());
+    temp411->Width(1.0f);
+    temp412->Value(::STRINGS[231/*"SKAPA ETT K...*/]);
+    temp412->Color(::g::Fuse::Drawing::Colors::White());
+    temp412->Alignment(10);
+    temp412->Font(MainView::RalewayBlack());
     uPtr(__g_nametable1)->This(this);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[12/*Uno.Collections.ICollection<object>*/]), TheSidebar);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[12/*Uno.Collections.ICollection<object>*/]), sidebarProfile);
@@ -2662,7 +2668,7 @@ void MainView::InitializeUX()
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), TheSidebar);
 }
 
-// public MainView New() [static] :779
+// public MainView New() [static] :787
 MainView* MainView::New2()
 {
     MainView* obj1 = (MainView*)uNew(MainView_typeof());

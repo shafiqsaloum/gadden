@@ -129,6 +129,14 @@ sealed class gadden_FuseControlsControl_Background_Property: Uno.UX.Property<Fus
     public override Fuse.Drawing.Brush Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.Control)obj).Background; }
     public override void Set(global::Uno.UX.PropertyObject obj, Fuse.Drawing.Brush v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.Control)obj).Background = v; }
 }
+sealed class gadden_FuseDrawingImageFill_Url_Property: Uno.UX.Property<string>
+{
+    [Uno.WeakReference] readonly Fuse.Drawing.ImageFill _obj;
+    public gadden_FuseDrawingImageFill_Url_Property(Fuse.Drawing.ImageFill obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override string Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Drawing.ImageFill)obj).Url; }
+    public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Drawing.ImageFill)obj).Url = v; }
+}
 sealed class gadden_Tab_Text_Property: Uno.UX.Property<string>
 {
     [Uno.WeakReference] readonly Tab _obj;
