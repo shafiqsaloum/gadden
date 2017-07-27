@@ -2,11 +2,11 @@ var Observable = require("FuseJS/Observable");
 var partners = Observable();
 
 function Partners(item) {
-    this.title = item.title;
-    this.image = item.cover.url;
-    this.text = item.text;
-    this.link = item.link;
-    this.logo = item.logotype.thumbs.small;
+  this.title = item.title;
+  this.image = item.cover.url;
+  this.text = item.text;
+  this.link = item.link;
+  this.logo = item.logotype.thumbs.small;
 };
 
 fetch("http://dev.jexpo.se/dev/forms/partners?getAttributes=1")

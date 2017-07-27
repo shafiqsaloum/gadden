@@ -1695,7 +1695,7 @@ public partial class MainView: Fuse.App
         temp159.Children.Add(opacityNews);
         temp159.Children.Add(NewsDetails);
         temp159.Children.Add(BackgroundImage);
-        temp160.LineNumber = 2;
+        temp160.LineNumber = 8;
         temp160.FileName = "Pages/News/NewsPage.ux";
         temp160.File = new global::Uno.UX.BundleFileSource(import global::Uno.IO.BundleFile("../../../../../Pages/News/NewsPage.js"));
         NewsFeed.Opacity = 1f;
@@ -1787,7 +1787,7 @@ public partial class MainView: Fuse.App
         temp190.Children.Add(ExibitorList);
         temp190.Children.Add(ExhibitorDetails);
         temp190.Children.Add(temp212);
-        temp191.LineNumber = 2;
+        temp191.LineNumber = 11;
         temp191.FileName = "Pages/Exhibitor/ExhibitorPage.ux";
         temp191.File = new global::Uno.UX.BundleFileSource(import global::Uno.IO.BundleFile("../../../../../Pages/Exhibitor/ExhibitorPage.js"));
         ExibitorList.Opacity = 1f;
@@ -1870,7 +1870,7 @@ public partial class MainView: Fuse.App
         temp213.Children.Add(opacityProgram);
         temp213.Children.Add(ProgramDetails);
         temp213.Children.Add(temp242);
-        temp214.LineNumber = 2;
+        temp214.LineNumber = 8;
         temp214.FileName = "Pages/Program/ProgramPage.ux";
         temp214.File = new global::Uno.UX.BundleFileSource(import global::Uno.IO.BundleFile("../../../../../Pages/Program/ProgramPage.js"));
         ProgramFeed.Name = __selector26;
@@ -1965,7 +1965,7 @@ public partial class MainView: Fuse.App
         icebreaker.Children.Add(temp245);
         temp245.Children.Add(temp246);
         temp245.Children.Add(popupBackground);
-        temp246.LineNumber = 2;
+        temp246.LineNumber = 12;
         temp246.FileName = "Pages/IceBreakers/IceBreakersPage.ux";
         temp246.File = new global::Uno.UX.BundleFileSource(import global::Uno.IO.BundleFile("../../../../../Pages/IceBreakers/IceBreakersPage.js"));
         popupBackground.Height = new Uno.UX.Size(100f, Uno.UX.Unit.Percent);
@@ -2134,7 +2134,7 @@ public partial class MainView: Fuse.App
         temp294.Children.Add(temp295);
         temp294.Children.Add(indicator);
         temp294.Children.Add(temp301);
-        temp295.LineNumber = 2;
+        temp295.LineNumber = 8;
         temp295.FileName = "Pages/Map/MapPage.ux";
         temp295.File = new global::Uno.UX.BundleFileSource(import global::Uno.IO.BundleFile("../../../../../Pages/Map/MapPage.js"));
         indicator.Name = __selector43;

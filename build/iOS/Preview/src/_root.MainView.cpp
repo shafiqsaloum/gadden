@@ -1695,7 +1695,7 @@ void MainView::InitializeUX()
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp159->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), opacityNews);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp159->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), NewsDetails);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp159->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), BackgroundImage);
-    temp160->LineNumber(2);
+    temp160->LineNumber(8);
     temp160->FileName(::STRINGS[196/*"Pages/News/...*/]);
     temp160->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::NewsPagea12da51e()));
     uPtr(NewsFeed)->Opacity(1.0f);
@@ -1787,7 +1787,7 @@ void MainView::InitializeUX()
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp190->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), ExibitorList);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp190->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), ExhibitorDetails);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp190->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp212);
-    temp191->LineNumber(2);
+    temp191->LineNumber(11);
     temp191->FileName(::STRINGS[198/*"Pages/Exhib...*/]);
     temp191->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::ExhibitorPage13f35c9e()));
     uPtr(ExibitorList)->Opacity(1.0f);
@@ -1870,7 +1870,7 @@ void MainView::InitializeUX()
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp213->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), opacityProgram);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp213->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), ProgramDetails);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp213->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp242);
-    temp214->LineNumber(2);
+    temp214->LineNumber(8);
     temp214->FileName(::STRINGS[200/*"Pages/Progr...*/]);
     temp214->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::ProgramPagec84f4f3e()));
     uPtr(ProgramFeed)->Name(MainView::__selector26());
@@ -1965,7 +1965,7 @@ void MainView::InitializeUX()
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(icebreaker)->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp245);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp245->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp246);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp245->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), popupBackground);
-    temp246->LineNumber(2);
+    temp246->LineNumber(12);
     temp246->FileName(::STRINGS[203/*"Pages/IceBr...*/]);
     temp246->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::IceBreakersPaged6f6d67e()));
     uPtr(popupBackground)->Height(::g::Uno::UX::Size__New1(100.0f, 4));
@@ -2134,7 +2134,7 @@ void MainView::InitializeUX()
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp294->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp295);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp294->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), indicator);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp294->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp301);
-    temp295->LineNumber(2);
+    temp295->LineNumber(8);
     temp295->FileName(::STRINGS[211/*"Pages/Map/M...*/]);
     temp295->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::MapPageedc903fe()));
     uPtr(indicator)->Name(MainView::__selector43());
