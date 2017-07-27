@@ -162,6 +162,10 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector63() { return MainView_typeof()->Init(), __selector63_; }
     static ::g::Uno::UX::Selector __selector64_;
     static ::g::Uno::UX::Selector& __selector64() { return MainView_typeof()->Init(), __selector64_; }
+    static ::g::Uno::UX::Selector __selector65_;
+    static ::g::Uno::UX::Selector& __selector65() { return MainView_typeof()->Init(), __selector65_; }
+    static ::g::Uno::UX::Selector __selector66_;
+    static ::g::Uno::UX::Selector& __selector66() { return MainView_typeof()->Init(), __selector66_; }
     static ::g::Uno::UX::Selector __selector7_;
     static ::g::Uno::UX::Selector& __selector7() { return MainView_typeof()->Init(), __selector7_; }
     static ::g::Uno::UX::Selector __selector8_;
@@ -172,7 +176,6 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Page*> aboutus;
     uStrong< ::g::Fuse::Controls::Panel*> AboutUsTab;
     uStrong< ::g::Fuse::Controls::Image*> BackgroundImage;
-    uStrong< ::g::Uno::UX::Property1*> BackgroundImage_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Image*> crossIcon;
     uStrong< ::g::Uno::UX::Property1*> crossIcon_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Image*> crossIconMap;
@@ -215,6 +218,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Panel*> NewsFeed;
     uStrong< ::g::Uno::UX::Property1*> NewsFeed_Opacity_inst;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityNews;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityNewsReverted;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityProgram;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityToggle;
     uStrong< ::g::Fuse::Controls::Page*> partners;
@@ -283,6 +287,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::EdgeNavigator*> TheSidebar;
     static uSStrong< ::g::Fuse::Font*> TitleFont_;
     static uSStrong< ::g::Fuse::Font*>& TitleFont() { return MainView_typeof()->Init(), TitleFont_; }
+    uStrong< ::g::Fuse::Controls::Panel*> TitleTest;
 
     void ctor_4();
     void InitializeUX();

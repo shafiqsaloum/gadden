@@ -1,7 +1,6 @@
 <!--
 TODO:
   * Create an animation where the detail page slides in
-  * Take away the white glitch that appears when the detail page are showed
  -->
 
 <Page>
@@ -11,7 +10,7 @@ TODO:
       <StackPanel>
 
         <!-- Logotype included locally -->
-        <Image Margin="10" Alignment="TopCenter" File="../../assets/GaddenLogotypeWhite.png" Width="60%" />
+        <Image ux:Name="logoImage" Margin="10" Alignment="TopCenter" File="../../assets/GaddenLogotypeWhite.png" Width="60%" />
         <Each Items="{dataSource}">
 
           <!-- Get image from JSON -->
@@ -36,6 +35,7 @@ TODO:
   <!-- While true event -->
   <WhileTrue ux:Name="opacityNews">
     <Change NewsDetails.Opacity="1" Duration="0.2" />
+    <Change logoImage.Width="0%" Duration="0.2" />
     <Change NewsFeed.Opacity="0" Duration="0.2" />
   </WhileTrue>
 
@@ -44,15 +44,16 @@ TODO:
     <Rectangle Width="100%" Height="100%"  Background="Black" ZOffset="1.0">
   		<With Data="{selectedArticle}">
         <ScrollView>
-          <StackPanel Height="100%">
+          <StackPanel Width="100%" Height="100%">
 
             <!-- Get image from JSON -->
             <Panel Width="100%">
+              <Image Alignment="TopRight" Width="25" Height="25" Margin="20" File="../../assets/CrossIcon.png" />
               <Image Url="{image}" />
             </Panel>
 
             <!-- Get title from JSON -->
-            <Panel Alignment="BottomLeft" Margin="0,20,0,0" Width="100%" Height="100%">
+            <Panel ux:Name="TitleTest" Alignment="BottomLeft" Margin="0,20,0,0" Width="100%" Height="100%">
               <Title Value="{title}" FontSize="28" LineSpacing="10" Height="100%" TextAlignment="Left"/>
             </Panel>
 
@@ -61,7 +62,16 @@ TODO:
 
             <!-- Get text from JSON -->
             <Panel Margin="20">
-              <Paragraph Value="{text}" />
+              <StackPanel>
+                <Paragraph Value="{text}" />
+                <Paragraph>
+                  * Function for the search input
+                  * Add filter button to top
+                  * Add filter functions and create the vue
+                  * Fetch the image to exhibitor details page when it's included in the API
+                  * Save exhibitors locally for the user (is not in need of inlogged user)
+                </Paragraph>
+              </StackPanel>
             </Panel>
 
             <!-- Includes background locally -->
