@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,14 +10,13 @@
 #include <Fuse.IProperties.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
 #include <Uno.UX.IPropertyListener.h>
-namespace g{namespace Fuse{namespace Controls{namespace Native{struct ViewHandle;}}}}
 namespace g{namespace Fuse{namespace Controls{struct Control;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
@@ -65,6 +64,7 @@ void Control__set_NativeView_fn(Control* __this, uObject* value);
 void Control__OnBackgroundChanged_fn(Control* __this);
 void Control__OnDraw_fn(Control* __this, ::g::Fuse::DrawContext* dc);
 void Control__OnHitTestLocalVisual_fn(Control* __this, ::g::Fuse::HitTestContext* htc);
+void Control__OnInvalidateVisual_fn(Control* __this);
 void Control__OnPropertyChanged2_fn(Control* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Selector* prop);
 void Control__OnRooted_fn(Control* __this);
 void Control__OnUnrooted_fn(Control* __this);
@@ -72,8 +72,6 @@ void Control__PushPropertiesToNativeView_fn(Control* __this);
 void Control__RootBackground_fn(Control* __this);
 void Control__SetBackground_fn(Control* __this, ::g::Fuse::Drawing::Brush* value);
 void Control__UnrootBackground_fn(Control* __this);
-void Control__get_ViewHandle_fn(Control* __this, ::g::Fuse::Controls::Native::ViewHandle** __retval);
-void Control__set_ViewHandle_fn(Control* __this, ::g::Fuse::Controls::Native::ViewHandle* value);
 
 struct Control : ::g::Fuse::Elements::Element
 {
@@ -82,7 +80,6 @@ struct Control : ::g::Fuse::Elements::Element
     uStrong<uObject*> _nativeView;
     uStrong<uObject*> _Appearance;
     uStrong< ::g::Fuse::Visual*> _GraphicsVisual;
-    uStrong< ::g::Fuse::Controls::Native::ViewHandle*> _ViewHandle;
 
     void ctor_4();
     uObject* Appearance();
@@ -103,8 +100,6 @@ struct Control : ::g::Fuse::Elements::Element
     void RootBackground();
     void SetBackground(::g::Fuse::Drawing::Brush* value);
     void UnrootBackground();
-    ::g::Fuse::Controls::Native::ViewHandle* ViewHandle();
-    void ViewHandle(::g::Fuse::Controls::Native::ViewHandle* value);
     static void CompensateForScrollView(Control* __this, ::g::Uno::Float4x4* t) { Control__CompensateForScrollView_fn(__this, t); }
     static uObject* CreateNativeView(Control* __this) { uObject* __retval; return Control__CreateNativeView_fn(__this, &__retval), __retval; }
     static void DrawVisual(Control* __this, ::g::Fuse::DrawContext* dc) { Control__DrawVisual_fn(__this, dc); }

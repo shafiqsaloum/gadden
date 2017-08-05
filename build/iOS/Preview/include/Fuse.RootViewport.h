@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -18,15 +18,15 @@
 #include <Uno.UX.IPropertyListener.h>
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct FrustumViewport;}}
+namespace g{namespace Fuse{struct Ray;}}
 namespace g{namespace Fuse{struct RootViewport;}}
-namespace g{namespace Uno{namespace Geometry{struct Ray;}}}
 namespace g{namespace Uno{struct Float3;}}
 namespace g{namespace Uno{struct Float4x4;}}
 
 namespace g{
 namespace Fuse{
 
-// public class RootViewport :3747
+// public class RootViewport :3622
 // {
 struct RootViewport_type : ::g::Fuse::Visual_type
 {
@@ -48,7 +48,7 @@ void RootViewport__OverrideSize_fn(RootViewport* __this, ::g::Uno::Float2* pixel
 void RootViewport__get_PixelSize_fn(RootViewport* __this, ::g::Uno::Float2* __retval);
 void RootViewport__get_PixelsPerOSPoint_fn(RootViewport* __this, float* __retval);
 void RootViewport__get_PixelsPerPoint_fn(RootViewport* __this, float* __retval);
-void RootViewport__PointToWorldRay_fn(RootViewport* __this, ::g::Uno::Float2* pixelPos, ::g::Uno::Geometry::Ray* __retval);
+void RootViewport__PointToWorldRay_fn(RootViewport* __this, ::g::Uno::Float2* pixelPos, ::g::Fuse::Ray* __retval);
 void RootViewport__get_ProjectionTransform_fn(RootViewport* __this, ::g::Uno::Float4x4* __retval);
 void RootViewport__get_ProjectionTransformInverse_fn(RootViewport* __this, ::g::Uno::Float4x4* __retval);
 void RootViewport__add_Resized_fn(RootViewport* __this, uDelegate* value);
@@ -62,7 +62,7 @@ void RootViewport__get_ViewRange_fn(RootViewport* __this, ::g::Uno::Float2* __re
 void RootViewport__get_ViewTransform_fn(RootViewport* __this, ::g::Uno::Float4x4* __retval);
 void RootViewport__get_ViewTransformInverse_fn(RootViewport* __this, ::g::Uno::Float4x4* __retval);
 void RootViewport__get_VisualContext_fn(RootViewport* __this, int* __retval);
-void RootViewport__WorldToLocalRay_fn(RootViewport* __this, uObject* world, ::g::Uno::Geometry::Ray* worldRay, ::g::Fuse::Visual* where, ::g::Uno::Geometry::Ray* __retval);
+void RootViewport__WorldToLocalRay_fn(RootViewport* __this, uObject* world, ::g::Fuse::Ray* worldRay, ::g::Fuse::Visual* where, ::g::Fuse::Ray* __retval);
 
 struct RootViewport : ::g::Fuse::Visual
 {
@@ -85,7 +85,7 @@ struct RootViewport : ::g::Fuse::Visual
     ::g::Uno::Float2 PixelSize();
     float PixelsPerOSPoint();
     float PixelsPerPoint();
-    ::g::Uno::Geometry::Ray PointToWorldRay(::g::Uno::Float2 pixelPos);
+    ::g::Fuse::Ray PointToWorldRay(::g::Uno::Float2 pixelPos);
     ::g::Uno::Float4x4 ProjectionTransform();
     ::g::Uno::Float4x4 ProjectionTransformInverse();
     void add_Resized(uDelegate* value);
@@ -97,7 +97,7 @@ struct RootViewport : ::g::Fuse::Visual
     ::g::Uno::Float2 ViewRange();
     ::g::Uno::Float4x4 ViewTransform();
     ::g::Uno::Float4x4 ViewTransformInverse();
-    ::g::Uno::Geometry::Ray WorldToLocalRay(uObject* world, ::g::Uno::Geometry::Ray worldRay, ::g::Fuse::Visual* where);
+    ::g::Fuse::Ray WorldToLocalRay(uObject* world, ::g::Fuse::Ray worldRay, ::g::Fuse::Visual* where);
     static RootViewport* New2();
     static RootViewport* New3(uObject* frame);
 };

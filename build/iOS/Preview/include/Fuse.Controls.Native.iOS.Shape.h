@@ -1,9 +1,9 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.-11768b55.h>
 #include <Fuse.Controls.Native.iOS.View.h>
+#include <Fuse.Controls.Native.IShapeView.h>
 #include <Fuse.Controls.Native.IView.h>
 #include <Uno.IDisposable.h>
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct Shape;}}}}}
@@ -20,7 +20,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// internal abstract extern class Shape :1985
+// internal abstract extern class Shape :1778
 // {
 struct Shape_type : ::g::Fuse::Controls::Native::iOS::View_type
 {

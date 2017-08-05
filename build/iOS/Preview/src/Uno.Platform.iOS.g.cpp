@@ -11,8 +11,8 @@ namespace Uno{
 namespace Platform{
 namespace iOS{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno
-// -----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------------
 
 // public extern struct uCGPoint :285
 // {
@@ -34,8 +34,8 @@ uStructType* uCGPoint1_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno
-// -----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------------
 
 // public extern struct uCGRect :274
 // {
@@ -71,8 +71,8 @@ CGRect uCGRect1::Zero()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno
-// -----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------------
 
 // public extern struct uCGSize :280
 // {
@@ -94,8 +94,8 @@ uStructType* uCGSize1_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno
-// -----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------------
 
 // public extern struct UIImage :290
 // {

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/exceptions/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/exceptions/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -32,6 +32,7 @@ struct Exception : uObject
     uStrong<Exception*> _inner;
     uStrong<uString*> _message;
     uStrong<uString*> _trace;
+    uStrong<uArray*> NativeStackTrace;
 
     void ctor_();
     void ctor_1(uString* message);

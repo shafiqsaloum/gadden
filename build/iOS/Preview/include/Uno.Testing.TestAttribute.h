@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Testing/1.0.13/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Uno.Testing/1.1.3/attributes/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Uno{
 namespace Testing{
 
-// public sealed class TestAttribute :1068
+// public sealed class TestAttribute :25
 // {
 uType* TestAttribute_typeof();
 void TestAttribute__ctor_1_fn(TestAttribute* __this);

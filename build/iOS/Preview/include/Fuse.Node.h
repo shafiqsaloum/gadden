@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -22,7 +22,7 @@ namespace g{namespace Uno{namespace Text{struct StringBuilder;}}}
 namespace g{
 namespace Fuse{
 
-// public interfacemodifiers class Node :2207
+// public interfacemodifiers class Node :2215
 // {
 struct Node_type : uType
 {
@@ -57,6 +57,7 @@ void Node__Contains_fn(uArray* strs, uString* s, bool* __retval);
 void Node__get_ContextParent_fn(Node* __this, Node** __retval);
 void Node__DistanceTo_fn(Node* __this, Node* obj, int* reference, int* __retval);
 void Node__EnumerateData_fn(Node* __this, uObject* e);
+void Node__FindBehavior_fn(Node* __this, uType* __type, Node** __retval);
 void Node__FindNodeByName_fn(Node* __this, ::g::Uno::UX::Selector* name, uDelegate* acceptor, Node** __retval);
 void Node__FuseINotifyUnrootedadd_Unrooted_fn(Node* __this, uDelegate* value);
 void Node__FuseINotifyUnrootedremove_Unrooted_fn(Node* __this, uDelegate* value);
@@ -147,6 +148,7 @@ struct Node : ::g::Uno::UX::PropertyObject
     Node* ContextParent();
     int DistanceTo(Node* obj, int reference);
     void EnumerateData(uObject* e);
+    Node* FindBehavior(uType* __type);
     Node* FindNodeByName(::g::Uno::UX::Selector name, uDelegate* acceptor);
     uObject* GetFirstData();
     Node* GetLastNodeInGroup() { Node* __retval; return (((Node_type*)__type)->fp_GetLastNodeInGroup)(this, &__retval), __retval; }

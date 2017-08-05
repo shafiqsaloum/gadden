@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Drawing{
 
-// public struct LineSegment :3459
+// public struct LineSegment :2731
 // {
 uStructType* LineSegment_typeof();
 void LineSegment__get_HasTo_fn(LineSegment* __this, bool* __retval);

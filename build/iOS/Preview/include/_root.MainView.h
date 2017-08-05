@@ -1,10 +1,11 @@
-// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno.
+// This file was generated based on build/iOS/Preview/cache/ux11/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.App.h>
 #include <Fuse.IProperties.h>
 #include <Uno.Float4.h>
+#include <Uno.UX.Size.h>
 namespace g{namespace Fuse{namespace Controls{struct DockPanel;}}}
 namespace g{namespace Fuse{namespace Controls{struct EdgeNavigator;}}}
 namespace g{namespace Fuse{namespace Controls{struct Image;}}}
@@ -166,6 +167,8 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector65() { return MainView_typeof()->Init(), __selector65_; }
     static ::g::Uno::UX::Selector __selector66_;
     static ::g::Uno::UX::Selector& __selector66() { return MainView_typeof()->Init(), __selector66_; }
+    static ::g::Uno::UX::Selector __selector67_;
+    static ::g::Uno::UX::Selector& __selector67() { return MainView_typeof()->Init(), __selector67_; }
     static ::g::Uno::UX::Selector __selector7_;
     static ::g::Uno::UX::Selector& __selector7() { return MainView_typeof()->Init(), __selector7_; }
     static ::g::Uno::UX::Selector __selector8_;
@@ -201,6 +204,8 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Image*> infoIconMap2;
     uStrong< ::g::Uno::UX::Property1*> infoIconMap2_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> login;
+    uStrong< ::g::Fuse::Controls::Image*> logoImage;
+    uStrong< ::g::Uno::UX::Property1*> logoImage_Width_inst;
     uStrong< ::g::Fuse::Controls::Page*> map;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> MapToggle;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> MapToggle2;
@@ -218,7 +223,6 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Panel*> NewsFeed;
     uStrong< ::g::Uno::UX::Property1*> NewsFeed_Opacity_inst;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityNews;
-    uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityNewsReverted;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityProgram;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityToggle;
     uStrong< ::g::Fuse::Controls::Page*> partners;
@@ -277,6 +281,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp20_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp21_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp22_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp4_Data_inst;
     uStrong< ::g::Uno::UX::Property1*> temp5_Items_inst;

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{namespace Uno{struct Float3;}}
 namespace g{
 namespace Fuse{
 
-// private sealed class ScalingModes.IdentityMode :4009
+// private sealed class ScalingModes.IdentityMode :3884
 // {
 struct ScalingModes__IdentityMode_type : uType
 {

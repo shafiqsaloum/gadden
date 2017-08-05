@@ -1,50 +1,50 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Animations.Anima-9f6f3909.h>
+#include <Fuse.Animations.AnimationVariant.h>
 #include <Fuse.Controls.RangeControl.h>
 #include <Fuse.Controls.RangeControl2D.h>
 #include <Fuse.Controls.ScrollDirections.h>
-#include <Fuse.Controls.ScrollP-640a7167.h>
-#include <Fuse.Controls.ScrollP-f741d328.h>
+#include <Fuse.Controls.ScrollPositionChangedArgs.h>
+#include <Fuse.Controls.ScrollPositionChangedHandler.h>
 #include <Fuse.Controls.ScrollView.h>
 #include <Fuse.Controls.ScrollViewBase.h>
 #include <Fuse.Diagnostics.h>
 #include <Fuse.Elements.Element.h>
-#include <Fuse.Elements.Interac-8b35c528.h>
+#include <Fuse.Elements.InteractiveTransform.h>
 #include <Fuse.FastMatrix.h>
-#include <Fuse.Gestures.Circula-7f42f5a3.h>
+#include <Fuse.Gestures.CircularRangeBehavior.h>
 #include <Fuse.Gestures.Clicked.h>
 #include <Fuse.Gestures.ClickedArgs.h>
 #include <Fuse.Gestures.ClickedHandler.h>
 #include <Fuse.Gestures.Clicker.h>
-#include <Fuse.Gestures.Clicker-80b144c2.h>
+#include <Fuse.Gestures.ClickerEventHandler.h>
 #include <Fuse.Gestures.ClickerTrigger.h>
 #include <Fuse.Gestures.DegreeSpan.h>
 #include <Fuse.Gestures.double2.h>
 #include <Fuse.Gestures.DoubleClicked.h>
-#include <Fuse.Gestures.DoubleT-472dff4.h>
 #include <Fuse.Gestures.DoubleTapped.h>
 #include <Fuse.Gestures.DoubleTappedArgs.h>
+#include <Fuse.Gestures.DoubleTappedHandler.h>
 #include <Fuse.Gestures.Edge.h>
-#include <Fuse.Gestures.EdgeSwi-cc5b6d9e.h>
-#include <Fuse.Gestures.Interna-1993c609.h>
-#include <Fuse.Gestures.Interna-24f4f437.h>
-#include <Fuse.Gestures.Interna-3d271d8a.h>
-#include <Fuse.Gestures.Interna-44ea7a95.h>
-#include <Fuse.Gestures.Interna-47e25f2f.h>
-#include <Fuse.Gestures.Interna-4c26ec11.h>
-#include <Fuse.Gestures.Interna-e54305f8.h>
-#include <Fuse.Gestures.Interna-ea178680.h>
+#include <Fuse.Gestures.EdgeSwipeAnimation.h>
+#include <Fuse.Gestures.Internal.EdgeSwiper.h>
 #include <Fuse.Gestures.Internal.Swiper.h>
+#include <Fuse.Gestures.Internal.SwipeRegion.h>
+#include <Fuse.Gestures.Internal.SwipeRegionArea.h>
+#include <Fuse.Gestures.Internal.TwoFinger.h>
+#include <Fuse.Gestures.Internal.TwoFingerEventHandler.h>
+#include <Fuse.Gestures.Internal.TwoFingerRotateHandler.h>
+#include <Fuse.Gestures.Internal.TwoFingerTranslateHandler.h>
+#include <Fuse.Gestures.Internal.TwoFingerZoomHandler.h>
 #include <Fuse.Gestures.ISizeConstraint.h>
 #include <Fuse.Gestures.KeepFocusInView.h>
 #include <Fuse.Gestures.KeepInView.h>
 #include <Fuse.Gestures.KeepInViewCommon.h>
-#include <Fuse.Gestures.LinearR-c00ebdcf.h>
-#include <Fuse.Gestures.LongPre-ba2c5b25.h>
+#include <Fuse.Gestures.LinearRangeBehavior.h>
 #include <Fuse.Gestures.LongPressed.h>
 #include <Fuse.Gestures.LongPressedArgs.h>
+#include <Fuse.Gestures.LongPressedHandler.h>
 #include <Fuse.Gestures.PanGesture.h>
 #include <Fuse.Gestures.PointerCapture.h>
 #include <Fuse.Gestures.PointerCaptureOn.h>
@@ -52,23 +52,23 @@
 #include <Fuse.Gestures.Released.h>
 #include <Fuse.Gestures.RotateGesture.h>
 #include <Fuse.Gestures.ScrollableGoto.h>
-#include <Fuse.Gestures.Scrolle-e832eba2.h>
 #include <Fuse.Gestures.Scroller.h>
+#include <Fuse.Gestures.Scroller.MoveUserFlags.h>
 #include <Fuse.Gestures.ScrollTo.h>
 #include <Fuse.Gestures.SetSwipeActive.h>
 #include <Fuse.Gestures.Swiped.h>
 #include <Fuse.Gestures.SwipedHow.h>
 #include <Fuse.Gestures.SwipeDirection.h>
-#include <Fuse.Gestures.SwipeGe-f1aed91a.h>
 #include <Fuse.Gestures.SwipeGesture.h>
+#include <Fuse.Gestures.SwipeGestureHelper.h>
 #include <Fuse.Gestures.SwipeType.h>
 #include <Fuse.Gestures.SwipingAnimation.h>
 #include <Fuse.Gestures.Tapped.h>
 #include <Fuse.Gestures.TappedArgs.h>
 #include <Fuse.Gestures.TappedHandler.h>
-#include <Fuse.Gestures.ToggleS-2ddf1b4f.h>
+#include <Fuse.Gestures.ToggleSwipeActive.h>
 #include <Fuse.Gestures.TransformGesture.h>
-#include <Fuse.Gestures.WhileCl-726486cf.h>
+#include <Fuse.Gestures.WhileClickerTrigger.h>
 #include <Fuse.Gestures.WhileHovering.h>
 #include <Fuse.Gestures.WhilePressed.h>
 #include <Fuse.Gestures.WhileSwipeActive.h>
@@ -86,33 +86,33 @@
 #include <Fuse.Input.Gestures.h>
 #include <Fuse.Input.GestureType.h>
 #include <Fuse.Input.Pointer.h>
-#include <Fuse.Input.PointerEnt-cfe04f3d.h>
 #include <Fuse.Input.PointerEnteredArgs.h>
+#include <Fuse.Input.PointerEnteredHandler.h>
 #include <Fuse.Input.PointerEventArgs.h>
 #include <Fuse.Input.PointerLeftArgs.h>
 #include <Fuse.Input.PointerLeftHandler.h>
 #include <Fuse.Input.PointerMovedArgs.h>
 #include <Fuse.Input.PointerMovedHandler.h>
-#include <Fuse.Input.PointerPre-d85d5994.h>
 #include <Fuse.Input.PointerPressedArgs.h>
-#include <Fuse.Input.PointerRel-5863e73d.h>
+#include <Fuse.Input.PointerPressedHandler.h>
 #include <Fuse.Input.PointerReleasedArgs.h>
-#include <Fuse.Input.PointerWhe-d06481ac.h>
+#include <Fuse.Input.PointerReleasedHandler.h>
+#include <Fuse.Input.PointerWheelMovedHandler.h>
 #include <Fuse.LayoutPriority.h>
 #include <Fuse.Layouts.Orientation.h>
 #include <Fuse.Motion.MotionConfig.h>
-#include <Fuse.Motion.Simulatio-2e0ddcfb.h>
-#include <Fuse.Motion.Simulatio-7cce7e04.h>
-#include <Fuse.Motion.Simulatio-8063728b.h>
-#include <Fuse.Motion.Simulatio-871f3635.h>
-#include <Fuse.Motion.Simulatio-a4ba96c1.h>
-#include <Fuse.Motion.Simulatio-edb97e3.h>
+#include <Fuse.Motion.Simulation.BasicBoundedRegion2D.h>
+#include <Fuse.Motion.Simulation.BoundedRegion2D.h>
+#include <Fuse.Motion.Simulation.MotionSimulation-1.h>
+#include <Fuse.Motion.Simulation.PointerVelocity-1.h>
+#include <Fuse.Motion.Simulation.SampleFlags.h>
+#include <Fuse.Motion.Simulation.Simulation.h>
 #include <Fuse.Node.h>
 #include <Fuse.PlacedHandler.h>
 #include <Fuse.Properties.h>
 #include <Fuse.PropertyHandle.h>
-#include <Fuse.RequestBringInto-2d120b4f.h>
 #include <Fuse.RequestBringIntoViewArgs.h>
+#include <Fuse.RequestBringIntoViewHandler.h>
 #include <Fuse.Time.h>
 #include <Fuse.Triggers.Trigger.h>
 #include <Fuse.UpdateManager.h>
@@ -149,8 +149,8 @@ namespace g{
 namespace Fuse{
 namespace Gestures{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/rangecontrols/$.uno
-// -----------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/rangecontrols/$.uno
+// ----------------------------------------------------------------------------------------------------------------------
 
 // public sealed class CircularRangeBehavior :78
 // {
@@ -166,7 +166,7 @@ static void CircularRangeBehavior_build(uType* type)
     ::STRINGS[0] = uString::Const("Value");
     ::STRINGS[1] = uString::Const("DegreesValue");
     ::STRINGS[2] = uString::Const("RangeControl or BinaryRangeControl");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/rangecontrols/$.uno");
+    ::STRINGS[3] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/rangecontrols/$.uno");
     ::STRINGS[4] = uString::Const("OnRooted");
     ::TYPES[0] = ::g::Uno::Action_typeof();
     ::TYPES[1] = ::g::Fuse::Elements::Element_typeof();
@@ -417,7 +417,7 @@ void CircularRangeBehavior__OnRooted_fn(CircularRangeBehavior* __this)
     __this->_binaryRangeControl = uAs< ::g::Fuse::Controls::RangeControl2D*>(__this->Parent(), ::TYPES[3/*Fuse.Controls.RangeControl2D*/]);
 
     if ((__this->_rangeControl == NULL) && (__this->_binaryRangeControl == NULL))
-        ::g::Fuse::Diagnostics::UserRootError(::STRINGS[2/*"RangeContro...*/], __this->Parent(), __this, ::STRINGS[3/*"/Users/eric...*/], 137, ::STRINGS[4/*"OnRooted"*/]);
+        ::g::Fuse::Diagnostics::UserRootError(::STRINGS[2/*"RangeContro...*/], __this->Parent(), __this, ::STRINGS[3/*"/Users/star...*/], 137, ::STRINGS[4/*"OnRooted"*/]);
     else
     {
         ::g::Fuse::Input::Pointer::AddHandlers(__this->_control, uDelegate::New(::TYPES[4/*Fuse.Input.PointerPressedHandler*/], (void*)CircularRangeBehavior__OnPointerPressed_fn, __this), uDelegate::New(::TYPES[5/*Fuse.Input.PointerMovedHandler*/], (void*)CircularRangeBehavior__OnPointerMoved_fn, __this), uDelegate::New(::TYPES[6/*Fuse.Input.PointerReleasedHandler*/], (void*)CircularRangeBehavior__OnPointerReleased_fn, __this), NULL, NULL, NULL);
@@ -795,8 +795,8 @@ CircularRangeBehavior* CircularRangeBehavior::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class Clicked :32
 // {
@@ -988,8 +988,8 @@ void Clicked::RemoveHandler(::g::Fuse::Visual* visual, uDelegate* handler)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class ClickedArgs :9
 // {
@@ -1047,8 +1047,8 @@ ClickedArgs* ClickedArgs::New3(::g::Fuse::Input::PointerEventArgs* args, ::g::Fu
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public delegate void ClickedHandler(object sender, Fuse.Gestures.ClickedArgs args) :14
 uDelegateType* ClickedHandler_typeof()
@@ -1063,8 +1063,8 @@ uDelegateType* ClickedHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class Clicker :47
 // {
@@ -1560,8 +1560,8 @@ Clicker* Clicker::New1(::g::Fuse::Visual* visual)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal delegate void ClickerEventHandler(Fuse.Input.PointerEventArgs args, int count) :11
 uDelegateType* ClickerEventHandler_typeof()
@@ -1576,8 +1576,8 @@ uDelegateType* ClickerEventHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract class ClickerTrigger :13
 // {
@@ -1662,8 +1662,8 @@ void ClickerTrigger::ctor_5()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class DegreeSpan :584
 // {
@@ -1742,8 +1742,8 @@ DegreeSpan* DegreeSpan::New1(float a, float b)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/rangecontrols/$.uno
-// -----------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/rangecontrols/$.uno
+// ----------------------------------------------------------------------------------------------------------------------
 
 // internal struct double2 :13
 // {
@@ -1835,8 +1835,8 @@ double2 double2__New2(::g::Uno::Float2 v)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class DoubleClicked :96
 // {
@@ -1987,8 +1987,8 @@ DoubleClicked* DoubleClicked::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class DoubleTapped :1673
 // {
@@ -2168,8 +2168,8 @@ DoubleTapped* DoubleTapped::New3(uDelegate* handler)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class DoubleTappedArgs :1649
 // {
@@ -2227,8 +2227,8 @@ DoubleTappedArgs* DoubleTappedArgs::New3(::g::Fuse::Input::PointerEventArgs* arg
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public delegate void DoubleTappedHandler(object sender, Fuse.Gestures.DoubleTappedArgs args) :1657
 uDelegateType* DoubleTappedHandler_typeof()
@@ -2243,8 +2243,8 @@ uDelegateType* DoubleTappedHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public enum Edge :1829
 uEnumType* Edge_typeof()
@@ -2261,8 +2261,8 @@ uEnumType* Edge_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class EdgeSwipeAnimation :1841
 // {
@@ -2533,8 +2533,8 @@ EdgeSwipeAnimation* EdgeSwipeAnimation::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public abstract interface ISizeConstraint :1725
 // {
@@ -2551,8 +2551,8 @@ uInterfaceType* ISizeConstraint_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class KeepFocusInView :235
 // {
@@ -2677,8 +2677,8 @@ KeepFocusInView* KeepFocusInView::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class KeepInView :228
 // {
@@ -2755,8 +2755,8 @@ KeepInView* KeepInView::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public class KeepInViewCommon :137
 // {
@@ -2968,8 +2968,8 @@ KeepInViewCommon* KeepInViewCommon::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/rangecontrols/$.uno
-// -----------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/rangecontrols/$.uno
+// ----------------------------------------------------------------------------------------------------------------------
 
 // public sealed class LinearRangeBehavior :394
 // {
@@ -2983,7 +2983,7 @@ static void LinearRangeBehavior__cctor_1_fn(uType* __type)
 static void LinearRangeBehavior_build(uType* type)
 {
     ::STRINGS[6] = uString::Const("RangeControl");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/rangecontrols/$.uno");
+    ::STRINGS[3] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/rangecontrols/$.uno");
     ::STRINGS[4] = uString::Const("OnRooted");
     ::TYPES[20] = ::g::Fuse::Gestures::DegreeSpan_typeof()->Array();
     ::TYPES[2] = ::g::Fuse::Controls::RangeControl_typeof();
@@ -3103,7 +3103,7 @@ void LinearRangeBehavior__OnRooted_fn(LinearRangeBehavior* __this)
     __this->Control = __this->FindRangeControl();
 
     if (__this->Control == NULL)
-        ::g::Fuse::Diagnostics::UserRootError(::STRINGS[6/*"RangeControl"*/], __this->Parent(), __this, ::STRINGS[3/*"/Users/eric...*/], 418, ::STRINGS[4/*"OnRooted"*/]);
+        ::g::Fuse::Diagnostics::UserRootError(::STRINGS[6/*"RangeControl"*/], __this->Parent(), __this, ::STRINGS[3/*"/Users/star...*/], 418, ::STRINGS[4/*"OnRooted"*/]);
 
     ::g::Fuse::Input::Pointer::AddHandlers(__this->Control, uDelegate::New(::TYPES[4/*Fuse.Input.PointerPressedHandler*/], (void*)LinearRangeBehavior__OnPointerPressed_fn, __this), uDelegate::New(::TYPES[5/*Fuse.Input.PointerMovedHandler*/], (void*)LinearRangeBehavior__OnPointerMoved_fn, __this), uDelegate::New(::TYPES[6/*Fuse.Input.PointerReleasedHandler*/], (void*)LinearRangeBehavior__OnPointerReleased_fn, __this), NULL, NULL, NULL);
 }
@@ -3275,8 +3275,8 @@ LinearRangeBehavior* LinearRangeBehavior::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class LongPressed :286
 // {
@@ -3423,8 +3423,8 @@ LongPressed* LongPressed::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class LongPressedArgs :272
 // {
@@ -3482,8 +3482,8 @@ LongPressedArgs* LongPressedArgs::New3(::g::Fuse::Input::PointerEventArgs* args,
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public delegate void LongPressedHandler(object sender, Fuse.Gestures.LongPressedArgs args) :280
 uDelegateType* LongPressedHandler_typeof()
@@ -3498,8 +3498,8 @@ uDelegateType* LongPressedHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // private enum Scroller.MoveUserFlags :524
 uEnumType* Scroller__MoveUserFlags_typeof()
@@ -3515,8 +3515,8 @@ uEnumType* Scroller__MoveUserFlags_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class PanGesture :336
 // {
@@ -3787,8 +3787,8 @@ PanGesture* PanGesture::New2(::g::Fuse::Elements::InteractiveTransform* target)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class PointerCapture :521
 // {
@@ -4049,8 +4049,8 @@ PointerCapture* PointerCapture::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public enum PointerCaptureOn :509
 uEnumType* PointerCaptureOn_typeof()
@@ -4065,8 +4065,8 @@ uEnumType* PointerCaptureOn_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class Pressed :637
 // {
@@ -4180,8 +4180,8 @@ Pressed* Pressed::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class Released :809
 // {
@@ -4295,8 +4295,8 @@ Released* Released::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class RotateGesture :852
 // {
@@ -4495,15 +4495,15 @@ RotateGesture* RotateGesture::New2(::g::Fuse::Elements::InteractiveTransform* ta
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public sealed class ScrollableGoto :107
 // {
 static void ScrollableGoto_build(uType* type)
 {
     ::STRINGS[8] = uString::Const("Use ScrollTo instead, it has the same interface");
-    ::STRINGS[9] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/$.uno");
+    ::STRINGS[9] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.1.1/$.uno");
     ::STRINGS[10] = uString::Const(".ctor");
     type->SetFields(14);
     type->Reflection.SetFunctions(1,
@@ -4542,7 +4542,7 @@ void ScrollableGoto__New3_fn(ScrollableGoto** __retval)
 void ScrollableGoto::ctor_3()
 {
     ctor_2();
-    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[8/*"Use ScrollT...*/], this, ::STRINGS[9/*"/Users/eric...*/], 112, ::STRINGS[10/*".ctor"*/]);
+    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[8/*"Use ScrollT...*/], this, ::STRINGS[9/*"/Users/star...*/], 112, ::STRINGS[10/*".ctor"*/]);
 }
 
 // public ScrollableGoto New() [static] :110
@@ -4554,8 +4554,8 @@ ScrollableGoto* ScrollableGoto::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public sealed class Scroller :139
 // {
@@ -4569,7 +4569,7 @@ static void Scroller__cctor_1_fn(uType* __type)
 static void Scroller_build(uType* type)
 {
     ::STRINGS[11] = uString::Const("Scroller should not be used directly as it is an internal class. The ScrollView provides the entire interface for scrolling.");
-    ::STRINGS[9] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/$.uno");
+    ::STRINGS[9] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.1.1/$.uno");
     ::STRINGS[10] = uString::Const(".ctor");
     ::STRINGS[12] = uString::Const("Scroller can only be used in a ScrollView");
     ::STRINGS[13] = uString::Const("Invalid scroller update");
@@ -4977,7 +4977,7 @@ void Scroller::ctor_3()
     _delayStart = true;
     _down = -1;
     ctor_2();
-    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[11/*"Scroller sh...*/], this, ::STRINGS[9/*"/Users/eric...*/], 148, ::STRINGS[10/*".ctor"*/]);
+    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[11/*"Scroller sh...*/], this, ::STRINGS[9/*"/Users/star...*/], 148, ::STRINGS[10/*".ctor"*/]);
 }
 
 // internal Scroller(bool ignore) [instance] :142
@@ -5032,7 +5032,7 @@ bool Scroller::DelayStart()
 void Scroller::DelayStart(bool value)
 {
     _delayStart = value;
-    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[18/*"Scroller.De...*/], this, ::STRINGS[9/*"/Users/eric...*/], 167, ::STRINGS[19/*"set_DelaySt...*/]);
+    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[18/*"Scroller.De...*/], this, ::STRINGS[9/*"/Users/star...*/], 167, ::STRINGS[19/*"set_DelaySt...*/]);
 }
 
 // private float2 FromWindow(float2 p) [instance] :340
@@ -5131,7 +5131,7 @@ void Scroller::OnUpdated()
 
     if ((_region == NULL) || (_scrollable == NULL))
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[13/*"Invalid scr...*/], NULL, ::STRINGS[9/*"/Users/eric...*/], 484, ::STRINGS[14/*"OnUpdated"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[13/*"Invalid scr...*/], NULL, ::STRINGS[9/*"/Users/star...*/], 484, ::STRINGS[14/*"OnUpdated"*/]);
         return;
     }
 
@@ -5180,14 +5180,14 @@ void Scroller::UpdatePointerEvents(bool forceOff)
     if (shouldListen)
     {
         if (_gesture != NULL)
-            ::g::Fuse::Diagnostics::InternalError(::STRINGS[15/*"inconsisten...*/], NULL, ::STRINGS[9/*"/Users/eric...*/], 245, ::STRINGS[16/*"UpdatePoint...*/]);
+            ::g::Fuse::Diagnostics::InternalError(::STRINGS[15/*"inconsisten...*/], NULL, ::STRINGS[9/*"/Users/star...*/], 245, ::STRINGS[16/*"UpdatePoint...*/]);
         else
             _gesture = ::g::Fuse::Input::Gestures::Add((uObject*)this, _scrollable, 5);
     }
     else if (_scrollable != NULL)
     {
         if (_gesture == NULL)
-            ::g::Fuse::Diagnostics::InternalError(::STRINGS[15/*"inconsisten...*/], NULL, ::STRINGS[9/*"/Users/eric...*/], 252, ::STRINGS[16/*"UpdatePoint...*/]);
+            ::g::Fuse::Diagnostics::InternalError(::STRINGS[15/*"inconsisten...*/], NULL, ::STRINGS[9/*"/Users/star...*/], 252, ::STRINGS[16/*"UpdatePoint...*/]);
         else
         {
             uPtr(_gesture)->Dispose();
@@ -5225,7 +5225,7 @@ bool Scroller::UserScroll()
 // public void set_UserScroll(bool value) [instance] :221
 void Scroller::UserScroll(bool value)
 {
-    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[20/*"This value ...*/], this, ::STRINGS[9/*"/Users/eric...*/], 224, ::STRINGS[21/*"set_UserScr...*/]);
+    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[20/*"This value ...*/], this, ::STRINGS[9/*"/Users/star...*/], 224, ::STRINGS[21/*"set_UserScr...*/]);
 }
 
 // public Scroller New() [static] :145
@@ -5245,8 +5245,8 @@ Scroller* Scroller::New3(bool ignore)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public class ScrollTo :52
 // {
@@ -5400,8 +5400,8 @@ ScrollTo* ScrollTo::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class SetSwipeActive :1299
 // {
@@ -5546,8 +5546,8 @@ SetSwipeActive* SetSwipeActive::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class Swiped :1456
 // {
@@ -5729,8 +5729,8 @@ Swiped* Swiped::New2(::g::Fuse::Gestures::SwipeGesture* source)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public enum SwipedHow :1417
 uEnumType* SwipedHow_typeof()
@@ -5747,8 +5747,8 @@ uEnumType* SwipedHow_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public enum SwipeDirection :937
 uEnumType* SwipeDirection_typeof()
@@ -5765,8 +5765,8 @@ uEnumType* SwipeDirection_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class SwipeGesture :977
 // {
@@ -5782,7 +5782,7 @@ static void SwipeGesture_build(uType* type)
     ::STRINGS[22] = uString::Const("GesturePriority");
     ::STRINGS[7] = uString::Const("IsActive");
     ::STRINGS[23] = uString::Const("Element");
-    ::STRINGS[24] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno");
+    ::STRINGS[24] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno");
     ::STRINGS[4] = uString::Const("OnRooted");
     ::TYPES[1] = ::g::Fuse::Elements::Element_typeof();
     type->SetInterfaces(
@@ -5980,7 +5980,7 @@ void SwipeGesture__OnRooted_fn(SwipeGesture* __this)
 
     if (element == NULL)
     {
-        ::g::Fuse::Diagnostics::UserRootError(::STRINGS[23/*"Element"*/], __this->Parent(), __this, ::STRINGS[24/*"/Users/eric...*/], 1158, ::STRINGS[4/*"OnRooted"*/]);
+        ::g::Fuse::Diagnostics::UserRootError(::STRINGS[23/*"Element"*/], __this->Parent(), __this, ::STRINGS[24/*"/Users/star...*/], 1158, ::STRINGS[4/*"OnRooted"*/]);
         return;
     }
 
@@ -6283,8 +6283,8 @@ SwipeGesture* SwipeGesture::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class SwipeGestureHelper :623
 // {
@@ -6361,8 +6361,8 @@ SwipeGestureHelper* SwipeGestureHelper::New1(float lengthThreshold, uArray* span
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public enum SwipeType :946
 uEnumType* SwipeType_typeof()
@@ -6378,8 +6378,8 @@ uEnumType* SwipeType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class SwipingAnimation :1246
 // {
@@ -6536,8 +6536,8 @@ SwipingAnimation* SwipingAnimation::New2(::g::Fuse::Gestures::SwipeGesture* sour
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class Tapped :1592
 // {
@@ -6754,8 +6754,8 @@ void Tapped::RemoveHandler(::g::Fuse::Visual* visual, uDelegate* handler)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class TappedArgs :1566
 // {
@@ -6813,8 +6813,8 @@ TappedArgs* TappedArgs::New3(::g::Fuse::Input::PointerEventArgs* args, ::g::Fuse
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public delegate void TappedHandler(object sender, Fuse.Gestures.TappedArgs args) :1574
 uDelegateType* TappedHandler_typeof()
@@ -6829,8 +6829,8 @@ uDelegateType* TappedHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class ToggleSwipeActive :1332
 // {
@@ -6921,8 +6921,8 @@ ToggleSwipeActive* ToggleSwipeActive::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public abstract class TransformGesture :1755
 // {
@@ -7086,8 +7086,8 @@ void TransformGesture::Update()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract class WhileClickerTrigger :30
 // {
@@ -7172,8 +7172,8 @@ void WhileClickerTrigger::ctor_6()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class WhileHovering :1942
 // {
@@ -7319,8 +7319,8 @@ WhileHovering* WhileHovering::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class WhilePressed :672
 // {
@@ -7604,8 +7604,8 @@ WhilePressed* WhilePressed::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class WhileSwipeActive :1358
 // {
@@ -7788,8 +7788,8 @@ WhileSwipeActive* WhileSwipeActive::New2(::g::Fuse::Gestures::SwipeGesture* sour
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class WhileSwiping :1514
 // {
@@ -7944,8 +7944,8 @@ WhileSwiping* WhileSwiping::New2(::g::Fuse::Gestures::SwipeGesture* source)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class ZoomGesture :2015
 // {

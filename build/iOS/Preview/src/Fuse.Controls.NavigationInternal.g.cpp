@@ -1,30 +1,30 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <_root.FuseControlsNav-bfeb1093.h>
+#include <_root.FuseControlsNavigation_FuseControlsPanel_IsFrozen_Property.h>
 #include <Fuse.Animations.Animator.h>
 #include <Fuse.Animations.Change-1.h>
 #include <Fuse.Animations.Easing.h>
 #include <Fuse.Animations.Move.h>
 #include <Fuse.Animations.Scale.h>
 #include <Fuse.Animations.TrackAnimator.h>
-#include <Fuse.Animations.Trans-997c8373.h>
-#include <Fuse.Controls.Navigat-325d320d.h>
-#include <Fuse.Controls.Navigat-3abd94bc.h>
-#include <Fuse.Controls.Navigat-72feefa7.h>
-#include <Fuse.Controls.Navigat-831df711.h>
-#include <Fuse.Controls.Navigat-8b5bc4f.h>
-#include <Fuse.Controls.Navigat-8c78e52a.h>
-#include <Fuse.Controls.Navigat-9705f33a.h>
-#include <Fuse.Controls.Navigat-9f619694.h>
+#include <Fuse.Animations.TransformAnimator-1.h>
+#include <Fuse.Controls.NavigationInternal.EnterHorizontal.h>
+#include <Fuse.Controls.NavigationInternal.EnterVertical.h>
+#include <Fuse.Controls.NavigationInternal.ExitHorizontal.h>
+#include <Fuse.Controls.NavigationInternal.ExitVertical.h>
+#include <Fuse.Controls.NavigationInternal.NavEnterHorizontal.h>
+#include <Fuse.Controls.NavigationInternal.NavExitHorizontal.h>
+#include <Fuse.Controls.NavigationInternal.NavRemoveHorizontal.h>
+#include <Fuse.Controls.NavigationInternal.PageWhileNavigatingFreeze.h>
 #include <Fuse.Controls.Page.h>
 #include <Fuse.Controls.Panel.h>
 #include <Fuse.ITranslationMode.h>
 #include <Fuse.Translation.h>
 #include <Fuse.TranslationModes.h>
-#include <Fuse.Triggers.Actions-e720de5b.h>
-#include <Fuse.Triggers.Actions-fcab7e57.h>
-#include <Fuse.Triggers.Transit-122edce0.h>
+#include <Fuse.Triggers.Actions.ReleasePage.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.TransitionDirection.h>
 #include <Fuse.Triggers.Trigger.h>
 #include <Uno.Bool.h>
 #include <Uno.Double.h>
@@ -40,8 +40,8 @@ namespace Fuse{
 namespace Controls{
 namespace NavigationInternal{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/navigationinternal/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.1.1/navigationinternal/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class EnterHorizontal :11
 // {
@@ -148,8 +148,8 @@ EnterHorizontal* EnterHorizontal::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/navigationinternal/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.1.1/navigationinternal/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class EnterVertical :28
 // {
@@ -256,8 +256,8 @@ EnterVertical* EnterVertical::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/navigationinternal/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.1.1/navigationinternal/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class ExitHorizontal :44
 // {
@@ -364,8 +364,8 @@ ExitHorizontal* ExitHorizontal::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/navigationinternal/$.uno
-// ----------------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.1.1/navigationinternal/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class ExitVertical :60
 // {
@@ -472,8 +472,8 @@ ExitVertical* ExitVertical::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/.uno/ux11/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.1.1/.uno/ux11/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class NavEnterHorizontal :170
 // {
@@ -587,8 +587,8 @@ NavEnterHorizontal* NavEnterHorizontal::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/.uno/ux11/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.1.1/.uno/ux11/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class NavExitHorizontal :202
 // {
@@ -702,8 +702,8 @@ NavExitHorizontal* NavExitHorizontal::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/.uno/ux11/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.1.1/.uno/ux11/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class NavRemoveHorizontal :234
 // {
@@ -812,8 +812,8 @@ NavRemoveHorizontal* NavRemoveHorizontal::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/.uno/ux11/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.1.1/.uno/ux11/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class PageWhileNavigatingFreeze :260
 // {

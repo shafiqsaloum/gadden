@@ -1,9 +1,9 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.VideoIm-90575e3.h>
-#include <Fuse.Controls.VideoIm-9eda924d.h>
-#include <Fuse.Controls.VideoIm-a0cadcf7.h>
+#include <Fuse.Controls.VideoImpl.iOS.VideoLoader.VideoPromise.h>
+#include <Fuse.Controls.VideoImpl.iOS.VideoPlayer.h>
+#include <Fuse.Controls.VideoImpl.iOS.VideoPlayerImpl.h>
 #include <Fuse.UpdateManager.h>
 #include <Fuse.UpdateStage.h>
 #include <OpenGL.GLTextureHandle.h>
@@ -31,8 +31,8 @@ namespace Controls{
 namespace VideoImpl{
 namespace iOS{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/ios/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.1.1/ios/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal sealed extern class VideoPlayer :13
 // {
@@ -366,8 +366,8 @@ VideoPlayer* VideoPlayer::New1(uString* uri, uDelegate* onLoaded, uDelegate* onL
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/ios/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.1.1/ios/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // private sealed class VideoLoader.VideoPromise :214
 // {

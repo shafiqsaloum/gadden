@@ -15,8 +15,8 @@ namespace g{
 namespace Uno{
 namespace Reflection{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/reflection/$.uno
-// ---------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/reflection/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public extern struct CppField :34
 // {
@@ -121,8 +121,8 @@ uField* CppField::Null()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/reflection/$.uno
-// ---------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/reflection/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public extern struct CppFunction :80
 // {
@@ -234,8 +234,8 @@ uFunction* CppFunction::Null()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/reflection/$.uno
-// ---------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/reflection/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed extern class CppReflection :135
 // {
@@ -378,8 +378,8 @@ CppReflection* CppReflection::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/reflection/$.uno
-// ---------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/reflection/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public abstract interface IField :7
 // {
@@ -396,8 +396,8 @@ uInterfaceType* IField_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/reflection/$.uno
-// ---------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/reflection/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public abstract interface IFunction :18
 // {

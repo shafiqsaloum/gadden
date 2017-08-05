@@ -1,15 +1,15 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.Fallbac-2048a2c7.h>
-#include <Fuse.Controls.Fallbac-3ba1f49e.h>
-#include <Fuse.Controls.Fallbac-686c12bd.h>
-#include <Fuse.Controls.Fallbac-88c65e06.h>
-#include <Fuse.Controls.Fallbac-8b30b373.h>
-#include <Fuse.Controls.Fallbac-8d2cb690.h>
-#include <Fuse.Controls.Fallbac-949442c6.h>
-#include <Fuse.Controls.Fallbac-b5651652.h>
-#include <Fuse.Controls.Fallbac-c67e82be.h>
+#include <Fuse.Controls.FallbackTextRenderer.DefaultTextRenderer.FontKey.h>
+#include <Fuse.Controls.FallbackTextRenderer.DefaultTextRenderer.h>
+#include <Fuse.Controls.FallbackTextRenderer.ProperTextTransform.h>
+#include <Fuse.Controls.FallbackTextRenderer.RectExtensions.h>
+#include <Fuse.Controls.FallbackTextRenderer.TextRenderer.h>
+#include <Fuse.Controls.FallbackTextRenderer.WordWrapInfo.h>
+#include <Fuse.Controls.FallbackTextRenderer.WordWrapper.h>
+#include <Fuse.Controls.FallbackTextRenderer.WordWrapperWord.h>
+#include <Fuse.Controls.FallbackTextRenderer.WrappedLine.h>
 #include <Fuse.Controls.TextAlignment.h>
 #include <Fuse.Controls.TextControl.h>
 #include <Fuse.Controls.TextWrapping.h>
@@ -26,12 +26,12 @@
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.List-1.h>
 #include <Uno.Content.Fonts.BitmapFont.h>
-#include <Uno.Content.Fonts.Fon-7ac6afa6.h>
 #include <Uno.Content.Fonts.FontFace.h>
-#include <Uno.Content.Fonts.Spr-ee6ea36c.h>
-#include <Uno.Content.Fonts.Tex-76761aaa.h>
+#include <Uno.Content.Fonts.FontFaceHelpers.h>
+#include <Uno.Content.Fonts.SpriteFontShader.h>
 #include <Uno.Content.Fonts.TextRenderer.h>
 #include <Uno.Content.Fonts.TextShader.h>
+#include <Uno.Content.Fonts.TextTransform.h>
 #include <Uno.Float.h>
 #include <Uno.Float2.h>
 #include <Uno.Float4.h>
@@ -42,7 +42,7 @@
 #include <Uno.Math.h>
 #include <Uno.Matrix.h>
 #include <Uno.Rect.h>
-#include <Uno.Runtime.Implement-eca777ec.h>
+#include <Uno.Runtime.Implementation.Internal.ArrayEnumerable-1.h>
 #include <Uno.String.h>
 #include <Uno.UX.BundleFileSource.h>
 #include <Uno.UX.FileSource.h>
@@ -54,8 +54,8 @@ namespace Fuse{
 namespace Controls{
 namespace FallbackTextRenderer{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextrenderer/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextrenderer/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class DefaultTextRenderer :11
 // {
@@ -343,8 +343,8 @@ DefaultTextRenderer* DefaultTextRenderer::New1(::g::Uno::Content::Fonts::FontFac
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextrenderer/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextrenderer/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 // private sealed class DefaultTextRenderer.FontKey :13
 // {
@@ -420,8 +420,8 @@ DefaultTextRenderer__FontKey* DefaultTextRenderer__FontKey::New1(::g::Uno::Conte
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextrenderer/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextrenderer/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class ProperTextTransform :184
 // {
@@ -508,8 +508,8 @@ ProperTextTransform* ProperTextTransform::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextrenderer/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextrenderer/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 // internal static class RectExtensions :216
 // {
@@ -582,8 +582,8 @@ void RectExtensions__MoveRectToContainRect_fn(::g::Uno::Rect* a, ::g::Uno::Rect*
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextrenderer/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextrenderer/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class TextRenderer :286
 // {
@@ -932,8 +932,8 @@ TextRenderer* TextRenderer::New1(::g::Fuse::Controls::TextControl* text)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextrenderer/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextrenderer/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class WordWrapInfo :484
 // {
@@ -1026,8 +1026,8 @@ WordWrapInfo* WordWrapInfo::New1(::g::Fuse::Controls::FallbackTextRenderer::Defa
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextrenderer/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextrenderer/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 // internal static class WordWrapper :566
 // {
@@ -1170,8 +1170,8 @@ uArray* WordWrapper::WrapLine(::g::Fuse::Controls::FallbackTextRenderer::WordWra
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextrenderer/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextrenderer/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class WordWrapperWord :544
 // {
@@ -1246,8 +1246,8 @@ WordWrapperWord* WordWrapperWord::New1(uString* contents, uString* whitespace, i
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextrenderer/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextrenderer/$.uno
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class WrappedLine :673
 // {

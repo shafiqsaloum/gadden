@@ -51,5 +51,13 @@ TODO:
     </StackPanel>
     <!-- Info icon -->
     <Image Width="40%" Alignment="BottomCenter" Layer="Background" File="../../assets/IceBreakerIcon.png"  />
+
+    <Each Items="{dataSource}">
+        <!-- Get title from JSON -->
+        <Panel Alignment="BottomLeft" Margin="20">
+          <Text Value="{IceBreaker}" Font="TitleFont" TextColor="#fff" TextWrapping="Wrap" FontSize="20" LineSpacing="10" />
+        </Panel>
+    </Each>
+    
   </DockPanel>
 </Page>

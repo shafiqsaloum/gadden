@@ -25,10 +25,10 @@ namespace Fuse{
 namespace Text{
 namespace Edit{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/$.uno
+// -----------------------------------------------------------------------------------------
 
-// internal struct Caret :183
+// internal struct Caret :182
 // {
 static void Caret_build(uType* type)
 {
@@ -53,19 +53,19 @@ uStructType* Caret_typeof()
     return type;
 }
 
-// public Caret(int cluster, int lineIndex, int runIndex, float2 visualPos) :190
+// public Caret(int cluster, int lineIndex, int runIndex, float2 visualPos) :189
 void Caret__ctor__fn(Caret* __this, int* cluster, int* lineIndex, int* runIndex, ::g::Uno::Float2* visualPos)
 {
     __this->ctor_(*cluster, *lineIndex, *runIndex, *visualPos);
 }
 
-// public Caret New(int cluster, int lineIndex, int runIndex, float2 visualPos) :190
+// public Caret New(int cluster, int lineIndex, int runIndex, float2 visualPos) :189
 void Caret__New1_fn(int* cluster, int* lineIndex, int* runIndex, ::g::Uno::Float2* visualPos, Caret* __retval)
 {
     *__retval = Caret__New1(*cluster, *lineIndex, *runIndex, *visualPos);
 }
 
-// public Caret(int cluster, int lineIndex, int runIndex, float2 visualPos) [instance] :190
+// public Caret(int cluster, int lineIndex, int runIndex, float2 visualPos) [instance] :189
 void Caret::ctor_(int cluster, int lineIndex, int runIndex, ::g::Uno::Float2 visualPos)
 {
     Cluster = cluster;
@@ -74,7 +74,7 @@ void Caret::ctor_(int cluster, int lineIndex, int runIndex, ::g::Uno::Float2 vis
     VisualPos = visualPos;
 }
 
-// public Caret New(int cluster, int lineIndex, int runIndex, float2 visualPos) [static] :190
+// public Caret New(int cluster, int lineIndex, int runIndex, float2 visualPos) [static] :189
 Caret Caret__New1(int cluster, int lineIndex, int runIndex, ::g::Uno::Float2 visualPos)
 {
     Caret obj1;
@@ -83,10 +83,10 @@ Caret Caret__New1(int cluster, int lineIndex, int runIndex, ::g::Uno::Float2 vis
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/$.uno
+// -----------------------------------------------------------------------------------------
 
-// public struct CaretContext :199
+// public struct CaretContext :198
 // {
 static void CaretContext_build(uType* type)
 {
@@ -129,151 +129,151 @@ uStructType* CaretContext_typeof()
     return type;
 }
 
-// public CaretContext(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> pruns, string source) :206
+// public CaretContext(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> pruns, string source) :205
 void CaretContext__ctor__fn(CaretContext* __this, ::g::Uno::Collections::List* pruns, uString* source)
 {
     __this->ctor_(pruns, source);
 }
 
-// public string Backspace(Fuse.Text.Edit.CaretIndex& i) :536
+// public string Backspace(Fuse.Text.Edit.CaretIndex& i) :535
 void CaretContext__Backspace_fn(CaretContext* __this, int* i, uString** __retval)
 {
     *__retval = __this->Backspace(i);
 }
 
-// private Fuse.Text.Edit.CaretIndex Clamp(Fuse.Text.Edit.CaretIndex i) :344
+// private Fuse.Text.Edit.CaretIndex Clamp(Fuse.Text.Edit.CaretIndex i) :343
 void CaretContext__Clamp_fn(CaretContext* __this, int* i, int* __retval)
 {
     *__retval = __this->Clamp(*i);
 }
 
-// private Fuse.Text.Edit.CaretIndex ClosestCaretOnLine(float2 pos, int desiredLine, Fuse.Text.Edit.CaretIndex def) :415
+// private Fuse.Text.Edit.CaretIndex ClosestCaretOnLine(float2 pos, int desiredLine, Fuse.Text.Edit.CaretIndex def) :414
 void CaretContext__ClosestCaretOnLine_fn(CaretContext* __this, ::g::Uno::Float2* pos, int* desiredLine, int* def, int* __retval)
 {
     *__retval = __this->ClosestCaretOnLine(*pos, *desiredLine, *def);
 }
 
-// public string Delete(Fuse.Text.Edit.CaretIndex& i) :522
+// public string Delete(Fuse.Text.Edit.CaretIndex& i) :521
 void CaretContext__Delete_fn(CaretContext* __this, int* i, uString** __retval)
 {
     *__retval = __this->Delete(i);
 }
 
-// public string DeleteSpan(Fuse.Text.Edit.CaretIndex start, Fuse.Text.Edit.CaretIndex& caret) :553
+// public string DeleteSpan(Fuse.Text.Edit.CaretIndex start, Fuse.Text.Edit.CaretIndex& caret) :552
 void CaretContext__DeleteSpan_fn(CaretContext* __this, int* start, int* caret, uString** __retval)
 {
     *__retval = __this->DeleteSpan(*start, caret);
 }
 
-// public Fuse.Text.Edit.CaretIndex GetClosest(float2 pos, float lineHeight) :358
+// public Fuse.Text.Edit.CaretIndex GetClosest(float2 pos, float lineHeight) :357
 void CaretContext__GetClosest_fn(CaretContext* __this, ::g::Uno::Float2* pos, float* lineHeight, int* __retval)
 {
     *__retval = __this->GetClosest(*pos, *lineHeight);
 }
 
-// public float2 GetVisualPosition(Fuse.Text.Edit.CaretIndex i) :349
+// public float2 GetVisualPosition(Fuse.Text.Edit.CaretIndex i) :348
 void CaretContext__GetVisualPosition_fn(CaretContext* __this, int* i, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->GetVisualPosition(*i);
 }
 
-// public Uno.Collections.List<Uno.Rect> GetVisualRects(Fuse.Text.Edit.CaretIndex i1, Fuse.Text.Edit.CaretIndex i2, float lineHeight) :436
+// public Uno.Collections.List<Uno.Rect> GetVisualRects(Fuse.Text.Edit.CaretIndex i1, Fuse.Text.Edit.CaretIndex i2, float lineHeight) :435
 void CaretContext__GetVisualRects_fn(CaretContext* __this, int* i1, int* i2, float* lineHeight, ::g::Uno::Collections::List** __retval)
 {
     *__retval = __this->GetVisualRects(*i1, *i2, *lineHeight);
 }
 
-// public string Insert(char c, Fuse.Text.Edit.CaretIndex& i) :512
+// public string Insert(char c, Fuse.Text.Edit.CaretIndex& i) :511
 void CaretContext__Insert_fn(CaretContext* __this, uChar* c, int* i, uString** __retval)
 {
     *__retval = __this->Insert(*c, i);
 }
 
-// public Fuse.Text.Edit.CaretIndex LeftMost() :338
+// public Fuse.Text.Edit.CaretIndex LeftMost() :337
 void CaretContext__LeftMost_fn(CaretContext* __this, int* __retval)
 {
     *__retval = __this->LeftMost();
 }
 
-// private bool LeftToRight(Fuse.Text.Edit.CaretIndex i) :506
+// private bool LeftToRight(Fuse.Text.Edit.CaretIndex i) :505
 void CaretContext__LeftToRight_fn(CaretContext* __this, int* i, bool* __retval)
 {
     *__retval = __this->LeftToRight(*i);
 }
 
-// private static void LerpClustersLTR(string source, int cluster1, float2 pos1, int cluster2, float2 pos2, int lineIndex, int runIndex, Uno.Collections.List<Fuse.Text.Edit.Caret> result) :292
+// private static void LerpClustersLTR(string source, int cluster1, float2 pos1, int cluster2, float2 pos2, int lineIndex, int runIndex, Uno.Collections.List<Fuse.Text.Edit.Caret> result) :291
 void CaretContext__LerpClustersLTR_fn(uString* source, int* cluster1, ::g::Uno::Float2* pos1, int* cluster2, ::g::Uno::Float2* pos2, int* lineIndex, int* runIndex, ::g::Uno::Collections::List* result)
 {
     CaretContext__LerpClustersLTR(source, *cluster1, *pos1, *cluster2, *pos2, *lineIndex, *runIndex, result);
 }
 
-// private static void LerpClustersRTL(string source, int cluster1, float2 pos1, int cluster2, float2 pos2, int lineIndex, int runIndex, Uno.Collections.List<Fuse.Text.Edit.Caret> result) :311
+// private static void LerpClustersRTL(string source, int cluster1, float2 pos1, int cluster2, float2 pos2, int lineIndex, int runIndex, Uno.Collections.List<Fuse.Text.Edit.Caret> result) :310
 void CaretContext__LerpClustersRTL_fn(uString* source, int* cluster1, ::g::Uno::Float2* pos1, int* cluster2, ::g::Uno::Float2* pos2, int* lineIndex, int* runIndex, ::g::Uno::Collections::List* result)
 {
     CaretContext__LerpClustersRTL(source, *cluster1, *pos1, *cluster2, *pos2, *lineIndex, *runIndex, result);
 }
 
-// public Fuse.Text.Edit.CaretIndex MoveDown(Fuse.Text.Edit.CaretIndex currentIndex) :403
+// public Fuse.Text.Edit.CaretIndex MoveDown(Fuse.Text.Edit.CaretIndex currentIndex) :402
 void CaretContext__MoveDown_fn(CaretContext* __this, int* currentIndex, int* __retval)
 {
     *__retval = __this->MoveDown(*currentIndex);
 }
 
-// public Fuse.Text.Edit.CaretIndex MoveLeft(Fuse.Text.Edit.CaretIndex i) :342
+// public Fuse.Text.Edit.CaretIndex MoveLeft(Fuse.Text.Edit.CaretIndex i) :341
 void CaretContext__MoveLeft_fn(CaretContext* __this, int* i, int* __retval)
 {
     *__retval = __this->MoveLeft(*i);
 }
 
-// public Fuse.Text.Edit.CaretIndex MoveRight(Fuse.Text.Edit.CaretIndex i) :341
+// public Fuse.Text.Edit.CaretIndex MoveRight(Fuse.Text.Edit.CaretIndex i) :340
 void CaretContext__MoveRight_fn(CaretContext* __this, int* i, int* __retval)
 {
     *__retval = __this->MoveRight(*i);
 }
 
-// public Fuse.Text.Edit.CaretIndex MoveUp(Fuse.Text.Edit.CaretIndex currentIndex) :391
+// public Fuse.Text.Edit.CaretIndex MoveUp(Fuse.Text.Edit.CaretIndex currentIndex) :390
 void CaretContext__MoveUp_fn(CaretContext* __this, int* currentIndex, int* __retval)
 {
     *__retval = __this->MoveUp(*currentIndex);
 }
 
-// public CaretContext New(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> pruns, string source) :206
+// public CaretContext New(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> pruns, string source) :205
 void CaretContext__New1_fn(::g::Uno::Collections::List* pruns, uString* source, CaretContext* __retval)
 {
     *__retval = CaretContext__New1(pruns, source);
 }
 
-// private static Uno.Collections.List<Fuse.Text.Edit.Caret> PossibleCaretPositions(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> lines, string source) :214
+// private static Uno.Collections.List<Fuse.Text.Edit.Caret> PossibleCaretPositions(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> lines, string source) :213
 void CaretContext__PossibleCaretPositions_fn(::g::Uno::Collections::List* lines, uString* source, ::g::Uno::Collections::List** __retval)
 {
     *__retval = CaretContext::PossibleCaretPositions(lines, source);
 }
 
-// public Fuse.Text.Edit.CaretIndex RightMost() :339
+// public Fuse.Text.Edit.CaretIndex RightMost() :338
 void CaretContext__RightMost_fn(CaretContext* __this, int* __retval)
 {
     *__retval = __this->RightMost();
 }
 
-// private static float SquaredDist(float2 p, float2 q) :384
+// private static float SquaredDist(float2 p, float2 q) :383
 void CaretContext__SquaredDist_fn(::g::Uno::Float2* p, ::g::Uno::Float2* q, float* __retval)
 {
     *__retval = CaretContext__SquaredDist(*p, *q);
 }
 
-// private static int StringRangeLength(string source, int cluster1, int cluster2) :329
+// private static int StringRangeLength(string source, int cluster1, int cluster2) :328
 void CaretContext__StringRangeLength_fn(uString* source, int* cluster1, int* cluster2, int* __retval)
 {
     *__retval = CaretContext::StringRangeLength(source, *cluster1, *cluster2);
 }
 
-// private static float WeightedSquaredDist(float2 p, float2 q, float yweight) :377
+// private static float WeightedSquaredDist(float2 p, float2 q, float yweight) :376
 void CaretContext__WeightedSquaredDist_fn(::g::Uno::Float2* p, ::g::Uno::Float2* q, float* yweight, float* __retval)
 {
     *__retval = CaretContext__WeightedSquaredDist(*p, *q, *yweight);
 }
 
-// public CaretContext(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> pruns, string source) [instance] :206
+// public CaretContext(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> pruns, string source) [instance] :205
 void CaretContext::ctor_(::g::Uno::Collections::List* pruns, uString* source)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", ".ctor(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>>,string)");
@@ -282,7 +282,7 @@ void CaretContext::ctor_(::g::Uno::Collections::List* pruns, uString* source)
     _carets = CaretContext::PossibleCaretPositions(_runs, _source);
 }
 
-// public string Backspace(Fuse.Text.Edit.CaretIndex& i) [instance] :536
+// public string Backspace(Fuse.Text.Edit.CaretIndex& i) [instance] :535
 uString* CaretContext::Backspace(int* i)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "Backspace(Fuse.Text.Edit.CaretIndex&)");
@@ -303,14 +303,14 @@ uString* CaretContext::Backspace(int* i)
     return _source;
 }
 
-// private Fuse.Text.Edit.CaretIndex Clamp(Fuse.Text.Edit.CaretIndex i) [instance] :344
+// private Fuse.Text.Edit.CaretIndex Clamp(Fuse.Text.Edit.CaretIndex i) [instance] :343
 int CaretContext::Clamp(int i)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "Clamp(Fuse.Text.Edit.CaretIndex)");
     return ::g::Uno::Math::Clamp8(i, LeftMost(), RightMost());
 }
 
-// private Fuse.Text.Edit.CaretIndex ClosestCaretOnLine(float2 pos, int desiredLine, Fuse.Text.Edit.CaretIndex def) [instance] :415
+// private Fuse.Text.Edit.CaretIndex ClosestCaretOnLine(float2 pos, int desiredLine, Fuse.Text.Edit.CaretIndex def) [instance] :414
 int CaretContext::ClosestCaretOnLine(::g::Uno::Float2 pos, int desiredLine, int def)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "ClosestCaretOnLine(float2,int,Fuse.Text.Edit.CaretIndex)");
@@ -337,7 +337,7 @@ int CaretContext::ClosestCaretOnLine(::g::Uno::Float2 pos, int desiredLine, int 
     return minIndex;
 }
 
-// public string Delete(Fuse.Text.Edit.CaretIndex& i) [instance] :522
+// public string Delete(Fuse.Text.Edit.CaretIndex& i) [instance] :521
 uString* CaretContext::Delete(int* i)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "Delete(Fuse.Text.Edit.CaretIndex&)");
@@ -358,7 +358,7 @@ uString* CaretContext::Delete(int* i)
     return _source;
 }
 
-// public string DeleteSpan(Fuse.Text.Edit.CaretIndex start, Fuse.Text.Edit.CaretIndex& caret) [instance] :553
+// public string DeleteSpan(Fuse.Text.Edit.CaretIndex start, Fuse.Text.Edit.CaretIndex& caret) [instance] :552
 uString* CaretContext::DeleteSpan(int start, int* caret)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "DeleteSpan(Fuse.Text.Edit.CaretIndex,Fuse.Text.Edit.CaretIndex&)");
@@ -388,7 +388,7 @@ uString* CaretContext::DeleteSpan(int start, int* caret)
     return ::g::Fuse::Text::SubstringExtensions::DeleteSpan(_source, deletionStart, deletionEnd);
 }
 
-// public Fuse.Text.Edit.CaretIndex GetClosest(float2 pos, float lineHeight) [instance] :358
+// public Fuse.Text.Edit.CaretIndex GetClosest(float2 pos, float lineHeight) [instance] :357
 int CaretContext::GetClosest(::g::Uno::Float2 pos, float lineHeight)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "GetClosest(float2,float)");
@@ -411,7 +411,7 @@ int CaretContext::GetClosest(::g::Uno::Float2 pos, float lineHeight)
     return minIndex;
 }
 
-// public float2 GetVisualPosition(Fuse.Text.Edit.CaretIndex i) [instance] :349
+// public float2 GetVisualPosition(Fuse.Text.Edit.CaretIndex i) [instance] :348
 ::g::Uno::Float2 CaretContext::GetVisualPosition(int i)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "GetVisualPosition(Fuse.Text.Edit.CaretIndex)");
@@ -424,7 +424,7 @@ int CaretContext::GetClosest(::g::Uno::Float2 pos, float lineHeight)
     return (::g::Uno::Collections::List__get_Item_fn(uPtr(_carets), uCRef<int>(i), &ret8), ret8).VisualPos;
 }
 
-// public Uno.Collections.List<Uno.Rect> GetVisualRects(Fuse.Text.Edit.CaretIndex i1, Fuse.Text.Edit.CaretIndex i2, float lineHeight) [instance] :436
+// public Uno.Collections.List<Uno.Rect> GetVisualRects(Fuse.Text.Edit.CaretIndex i1, Fuse.Text.Edit.CaretIndex i2, float lineHeight) [instance] :435
 ::g::Uno::Collections::List* CaretContext::GetVisualRects(int i1, int i2, float lineHeight)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "GetVisualRects(Fuse.Text.Edit.CaretIndex,Fuse.Text.Edit.CaretIndex,float)");
@@ -494,7 +494,7 @@ int CaretContext::GetClosest(::g::Uno::Float2 pos, float lineHeight)
     return result;
 }
 
-// public string Insert(char c, Fuse.Text.Edit.CaretIndex& i) [instance] :512
+// public string Insert(char c, Fuse.Text.Edit.CaretIndex& i) [instance] :511
 uString* CaretContext::Insert(uChar c, int* i)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "Insert(char,Fuse.Text.Edit.CaretIndex&)");
@@ -508,13 +508,13 @@ uString* CaretContext::Insert(uChar c, int* i)
     return ::g::Fuse::Text::SubstringExtensions::SafeInsert(_source, insertionPos, ::g::Uno::Char::ToString(c, ::TYPES[1/*char*/]));
 }
 
-// public Fuse.Text.Edit.CaretIndex LeftMost() [instance] :338
+// public Fuse.Text.Edit.CaretIndex LeftMost() [instance] :337
 int CaretContext::LeftMost()
 {
     return 0;
 }
 
-// private bool LeftToRight(Fuse.Text.Edit.CaretIndex i) [instance] :506
+// private bool LeftToRight(Fuse.Text.Edit.CaretIndex i) [instance] :505
 bool CaretContext::LeftToRight(int i)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "LeftToRight(Fuse.Text.Edit.CaretIndex)");
@@ -525,7 +525,7 @@ bool CaretContext::LeftToRight(int i)
     return uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(_runs), uCRef<int>(caret.LineIndex), &ret18), ret18)), uCRef<int>(caret.RunIndex), &ret17), ret17))->Run().IsLeftToRight();
 }
 
-// public Fuse.Text.Edit.CaretIndex MoveDown(Fuse.Text.Edit.CaretIndex currentIndex) [instance] :403
+// public Fuse.Text.Edit.CaretIndex MoveDown(Fuse.Text.Edit.CaretIndex currentIndex) [instance] :402
 int CaretContext::MoveDown(int currentIndex)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "MoveDown(Fuse.Text.Edit.CaretIndex)");
@@ -539,21 +539,21 @@ int CaretContext::MoveDown(int currentIndex)
     return ClosestCaretOnLine((::g::Uno::Collections::List__get_Item_fn(uPtr(_carets), uCRef<int>(currentIndex), &ret19), ret19).VisualPos, (::g::Uno::Collections::List__get_Item_fn(uPtr(_carets), uCRef<int>(currentIndex), &ret20), ret20).LineIndex + 1, RightMost());
 }
 
-// public Fuse.Text.Edit.CaretIndex MoveLeft(Fuse.Text.Edit.CaretIndex i) [instance] :342
+// public Fuse.Text.Edit.CaretIndex MoveLeft(Fuse.Text.Edit.CaretIndex i) [instance] :341
 int CaretContext::MoveLeft(int i)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "MoveLeft(Fuse.Text.Edit.CaretIndex)");
     return Clamp(i - 1);
 }
 
-// public Fuse.Text.Edit.CaretIndex MoveRight(Fuse.Text.Edit.CaretIndex i) [instance] :341
+// public Fuse.Text.Edit.CaretIndex MoveRight(Fuse.Text.Edit.CaretIndex i) [instance] :340
 int CaretContext::MoveRight(int i)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "MoveRight(Fuse.Text.Edit.CaretIndex)");
     return Clamp(i + 1);
 }
 
-// public Fuse.Text.Edit.CaretIndex MoveUp(Fuse.Text.Edit.CaretIndex currentIndex) [instance] :391
+// public Fuse.Text.Edit.CaretIndex MoveUp(Fuse.Text.Edit.CaretIndex currentIndex) [instance] :390
 int CaretContext::MoveUp(int currentIndex)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "MoveUp(Fuse.Text.Edit.CaretIndex)");
@@ -567,14 +567,14 @@ int CaretContext::MoveUp(int currentIndex)
     return ClosestCaretOnLine((::g::Uno::Collections::List__get_Item_fn(uPtr(_carets), uCRef<int>(currentIndex), &ret21), ret21).VisualPos, (::g::Uno::Collections::List__get_Item_fn(uPtr(_carets), uCRef<int>(currentIndex), &ret22), ret22).LineIndex - 1, LeftMost());
 }
 
-// public Fuse.Text.Edit.CaretIndex RightMost() [instance] :339
+// public Fuse.Text.Edit.CaretIndex RightMost() [instance] :338
 int CaretContext::RightMost()
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "RightMost()");
     return (uPtr(_carets)->Count() > 0) ? uPtr(_carets)->Count() - 1 : LeftMost();
 }
 
-// private static Uno.Collections.List<Fuse.Text.Edit.Caret> PossibleCaretPositions(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> lines, string source) [static] :214
+// private static Uno.Collections.List<Fuse.Text.Edit.Caret> PossibleCaretPositions(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> lines, string source) [static] :213
 ::g::Uno::Collections::List* CaretContext::PossibleCaretPositions(::g::Uno::Collections::List* lines, uString* source)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "PossibleCaretPositions(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>>,string)");
@@ -640,7 +640,7 @@ int CaretContext::RightMost()
     return result;
 }
 
-// private static int StringRangeLength(string source, int cluster1, int cluster2) [static] :329
+// private static int StringRangeLength(string source, int cluster1, int cluster2) [static] :328
 int CaretContext::StringRangeLength(uString* source, int cluster1, int cluster2)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "StringRangeLength(string,int,int)");
@@ -653,7 +653,7 @@ int CaretContext::StringRangeLength(uString* source, int cluster1, int cluster2)
     return len;
 }
 
-// private static void LerpClustersLTR(string source, int cluster1, float2 pos1, int cluster2, float2 pos2, int lineIndex, int runIndex, Uno.Collections.List<Fuse.Text.Edit.Caret> result) [static] :292
+// private static void LerpClustersLTR(string source, int cluster1, float2 pos1, int cluster2, float2 pos2, int lineIndex, int runIndex, Uno.Collections.List<Fuse.Text.Edit.Caret> result) [static] :291
 void CaretContext__LerpClustersLTR(uString* source, int cluster1, ::g::Uno::Float2 pos1, int cluster2, ::g::Uno::Float2 pos2, int lineIndex, int runIndex, ::g::Uno::Collections::List* result)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "LerpClustersLTR(string,int,float2,int,float2,int,int,Uno.Collections.List<Fuse.Text.Edit.Caret>)");
@@ -670,7 +670,7 @@ void CaretContext__LerpClustersLTR(uString* source, int cluster1, ::g::Uno::Floa
     }
 }
 
-// private static void LerpClustersRTL(string source, int cluster1, float2 pos1, int cluster2, float2 pos2, int lineIndex, int runIndex, Uno.Collections.List<Fuse.Text.Edit.Caret> result) [static] :311
+// private static void LerpClustersRTL(string source, int cluster1, float2 pos1, int cluster2, float2 pos2, int lineIndex, int runIndex, Uno.Collections.List<Fuse.Text.Edit.Caret> result) [static] :310
 void CaretContext__LerpClustersRTL(uString* source, int cluster1, ::g::Uno::Float2 pos1, int cluster2, ::g::Uno::Float2 pos2, int lineIndex, int runIndex, ::g::Uno::Collections::List* result)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", "LerpClustersRTL(string,int,float2,int,float2,int,int,Uno.Collections.List<Fuse.Text.Edit.Caret>)");
@@ -686,7 +686,7 @@ void CaretContext__LerpClustersRTL(uString* source, int cluster1, ::g::Uno::Floa
     }
 }
 
-// public CaretContext New(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> pruns, string source) [static] :206
+// public CaretContext New(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> pruns, string source) [static] :205
 CaretContext CaretContext__New1(::g::Uno::Collections::List* pruns, uString* source)
 {
     CaretContext obj1;
@@ -694,7 +694,7 @@ CaretContext CaretContext__New1(::g::Uno::Collections::List* pruns, uString* sou
     return obj1;
 }
 
-// private static float SquaredDist(float2 p, float2 q) [static] :384
+// private static float SquaredDist(float2 p, float2 q) [static] :383
 float CaretContext__SquaredDist(::g::Uno::Float2 p, ::g::Uno::Float2 q)
 {
     float x = p.X - q.X;
@@ -702,7 +702,7 @@ float CaretContext__SquaredDist(::g::Uno::Float2 p, ::g::Uno::Float2 q)
     return (x * x) + (y * y);
 }
 
-// private static float WeightedSquaredDist(float2 p, float2 q, float yweight) [static] :377
+// private static float WeightedSquaredDist(float2 p, float2 q, float yweight) [static] :376
 float CaretContext__WeightedSquaredDist(::g::Uno::Float2 p, ::g::Uno::Float2 q, float yweight)
 {
     float x = p.X - q.X;
@@ -711,10 +711,10 @@ float CaretContext__WeightedSquaredDist(::g::Uno::Float2 p, ::g::Uno::Float2 q, 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/$.uno
+// -----------------------------------------------------------------------------------------
 
-// public enum CaretIndex :181
+// public enum CaretIndex :180
 uEnumType* CaretIndex_typeof()
 {
     static uSStrong<uEnumType*> type;

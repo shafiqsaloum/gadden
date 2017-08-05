@@ -1,9 +1,9 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/content/fonts/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Content.Fonts.Bit-56c783db.h>
-#include <Uno.Content.Fonts.Bit-e08d0819.h>
+#include <Uno.Content.Fonts.BitmapFont.CharPair.h>
+#include <Uno.Content.Fonts.BitmapFont.GlyphInfo.h>
 #include <Uno.IDisposable.h>
 #include <Uno.Object.h>
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}

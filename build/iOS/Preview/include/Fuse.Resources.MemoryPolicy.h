@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/resources/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/resources/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -30,6 +30,8 @@ struct MemoryPolicy : uObject
 {
     static uSStrong<MemoryPolicy*> PreloadRetain_;
     static uSStrong<MemoryPolicy*>& PreloadRetain() { return MemoryPolicy_typeof()->Init(), PreloadRetain_; }
+    static uSStrong<MemoryPolicy*> QuickUnload_;
+    static uSStrong<MemoryPolicy*>& QuickUnload() { return MemoryPolicy_typeof()->Init(), QuickUnload_; }
     static uSStrong<MemoryPolicy*> UnloadInBackgroundPolicy_;
     static uSStrong<MemoryPolicy*>& UnloadInBackgroundPolicy() { return MemoryPolicy_typeof()->Init(), UnloadInBackgroundPolicy_; }
     static uSStrong<MemoryPolicy*> UnloadUnused_;

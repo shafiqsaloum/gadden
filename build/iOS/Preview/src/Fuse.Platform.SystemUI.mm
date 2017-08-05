@@ -1,16 +1,16 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Platform/1.0.5/ios/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Platform/1.1.1/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <AppDelegateSoftKeyboard.h>
 #include <CoreGraphics/CoreGraphics.h>
 #include <Fuse.Platform.ApplicationState.h>
 #include <Fuse.Platform.Lifecycle.h>
-#include <Fuse.Platform.StatusB-487afe75.h>
+#include <Fuse.Platform.StatusBarAnimation.h>
 #include <Fuse.Platform.StatusBarStyle.h>
-#include <Fuse.Platform.SystemU-2024c55a.h>
-#include <Fuse.Platform.SystemU-a6dfc5d1.h>
 #include <Fuse.Platform.SystemUI.h>
 #include <Fuse.Platform.SystemUIID.h>
+#include <Fuse.Platform.SystemUIResizeReason.h>
+#include <Fuse.Platform.SystemUIWillResizeEventArgs.h>
 #include <ObjC.Object.h>
 #include <Uno.Bool.h>
 #include <Uno.Delegate.h>

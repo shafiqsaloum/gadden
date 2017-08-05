@@ -1,8 +1,8 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.Trans-997c8373.h>
+#include <Fuse.Animations.TransformAnimator-1.h>
 #include <Fuse.Scaling.h>
 namespace g{namespace Fuse{namespace Animations{struct Scale;}}}
 namespace g{namespace Fuse{struct Visual;}}

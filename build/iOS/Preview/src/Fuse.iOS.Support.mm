@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.iOS/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <CoreGraphics/CoreGraphics.h>
@@ -25,7 +25,7 @@ namespace g{
 namespace Fuse{
 namespace iOS{
 
-// public static extern class Support :585
+// public static extern class Support :515
 // {
 static void Support_build(uType* type)
 {
@@ -54,79 +54,79 @@ uClassType* Support_typeof()
     return type;
 }
 
-// public static extern Uno.Platform.iOS.uCGPoint CGPointFromUnoFloat2(float2 unoPoint, float scale) :704
+// public static extern Uno.Platform.iOS.uCGPoint CGPointFromUnoFloat2(float2 unoPoint, float scale) :634
 void Support__CGPointFromUnoFloat2_fn(::g::Uno::Float2* unoPoint, float* scale, CGPoint* __retval)
 {
     *__retval = Support::CGPointFromUnoFloat2(*unoPoint, *scale);
 }
 
-// public static extern Uno.Platform.iOS.uCGPoint CGPointFromUnoInt2(int2 unoPoint, float scale) :696
+// public static extern Uno.Platform.iOS.uCGPoint CGPointFromUnoInt2(int2 unoPoint, float scale) :626
 void Support__CGPointFromUnoInt2_fn(::g::Uno::Int2* unoPoint, float* scale, CGPoint* __retval)
 {
     *__retval = Support::CGPointFromUnoInt2(*unoPoint, *scale);
 }
 
-// public static extern int2 CGPointToUnoInt2(Uno.Platform.iOS.uCGPoint point, float scale) :688
+// public static extern int2 CGPointToUnoInt2(Uno.Platform.iOS.uCGPoint point, float scale) :618
 void Support__CGPointToUnoInt2_fn(CGPoint* point, float* scale, ::g::Uno::Int2* __retval)
 {
     *__retval = Support::CGPointToUnoInt2(*point, *scale);
 }
 
-// public static extern Uno.Platform.iOS.uCGRect CGRectFromUnoRect(Uno.Rect unoRect, float scale) :712
+// public static extern Uno.Platform.iOS.uCGRect CGRectFromUnoRect(Uno.Rect unoRect, float scale) :642
 void Support__CGRectFromUnoRect_fn(::g::Uno::Rect* unoRect, float* scale, CGRect* __retval)
 {
     *__retval = Support::CGRectFromUnoRect(*unoRect, *scale);
 }
 
-// public static extern Uno.Platform.iOS.uCGRect CGRectFromUnoRecti(Uno.Recti unoRect, float scale) :722
+// public static extern Uno.Platform.iOS.uCGRect CGRectFromUnoRecti(Uno.Recti unoRect, float scale) :652
 void Support__CGRectFromUnoRecti_fn(::g::Uno::Recti* unoRect, float* scale, CGRect* __retval)
 {
     *__retval = Support::CGRectFromUnoRecti(*unoRect, *scale);
 }
 
-// public static extern Uno.Recti CGRectToUnoRecti(Uno.Platform.iOS.uCGRect rect, float scale) :733
+// public static extern Uno.Recti CGRectToUnoRecti(Uno.Platform.iOS.uCGRect rect, float scale) :663
 void Support__CGRectToUnoRecti_fn(CGRect* rect, float* scale, ::g::Uno::Recti* __retval)
 {
     *__retval = Support::CGRectToUnoRecti(*rect, *scale);
 }
 
-// public static extern Uno.Platform.iOS.uCGSize CGSizeFromUnoFloat2(float2 unoSize, float scale) :757
+// public static extern Uno.Platform.iOS.uCGSize CGSizeFromUnoFloat2(float2 unoSize, float scale) :687
 void Support__CGSizeFromUnoFloat2_fn(::g::Uno::Float2* unoSize, float* scale, CGSize* __retval)
 {
     *__retval = Support::CGSizeFromUnoFloat2(*unoSize, *scale);
 }
 
-// public static extern Uno.Platform.iOS.uCGSize CGSizeFromUnoInt2(int2 unoSize, float scale) :749
+// public static extern Uno.Platform.iOS.uCGSize CGSizeFromUnoInt2(int2 unoSize, float scale) :679
 void Support__CGSizeFromUnoInt2_fn(::g::Uno::Int2* unoSize, float* scale, CGSize* __retval)
 {
     *__retval = Support::CGSizeFromUnoInt2(*unoSize, *scale);
 }
 
-// public static extern int2 CGSizeToUnoInt2(Uno.Platform.iOS.uCGSize size, float scale) :740
+// public static extern int2 CGSizeToUnoInt2(Uno.Platform.iOS.uCGSize size, float scale) :670
 void Support__CGSizeToUnoInt2_fn(CGSize* size, float* scale, ::g::Uno::Int2* __retval)
 {
     *__retval = Support::CGSizeToUnoInt2(*size, *scale);
 }
 
-// public static texture2D CreateTextureFromImage(Uno.Platform.iOS.UIImage image) :587
+// public static texture2D CreateTextureFromImage(Uno.Platform.iOS.UIImage image) :517
 void Support__CreateTextureFromImage_fn(::UIImage ** image, ::g::Uno::Graphics::Texture2D** __retval)
 {
     *__retval = Support::CreateTextureFromImage(*image);
 }
 
-// private static int2 UIImageGetSize(Uno.Platform.iOS.UIImage image) :598
+// private static int2 UIImageGetSize(Uno.Platform.iOS.UIImage image) :528
 void Support__UIImageGetSize_fn(::UIImage ** image, ::g::Uno::Int2* __retval)
 {
     *__retval = Support::UIImageGetSize(*image);
 }
 
-// private static byte[] UIImageToRGBA8888(Uno.Platform.iOS.UIImage _image) :608
+// private static byte[] UIImageToRGBA8888(Uno.Platform.iOS.UIImage _image) :538
 void Support__UIImageToRGBA8888_fn(::UIImage ** _image, uArray** __retval)
 {
     *__retval = Support::UIImageToRGBA8888(*_image);
 }
 
-// public static extern Uno.Platform.iOS.uCGPoint CGPointFromUnoFloat2(float2 unoPoint, float scale) [static] :704
+// public static extern Uno.Platform.iOS.uCGPoint CGPointFromUnoFloat2(float2 unoPoint, float scale) [static] :634
 CGPoint Support::CGPointFromUnoFloat2(::g::Uno::Float2 unoPoint, float scale)
 {
     CGPoint point;
@@ -135,7 +135,7 @@ CGPoint Support::CGPointFromUnoFloat2(::g::Uno::Float2 unoPoint, float scale)
     return point;
 }
 
-// public static extern Uno.Platform.iOS.uCGPoint CGPointFromUnoInt2(int2 unoPoint, float scale) [static] :696
+// public static extern Uno.Platform.iOS.uCGPoint CGPointFromUnoInt2(int2 unoPoint, float scale) [static] :626
 CGPoint Support::CGPointFromUnoInt2(::g::Uno::Int2 unoPoint, float scale)
 {
     CGPoint point;
@@ -144,7 +144,7 @@ CGPoint Support::CGPointFromUnoInt2(::g::Uno::Int2 unoPoint, float scale)
     return point;
 }
 
-// public static extern int2 CGPointToUnoInt2(Uno.Platform.iOS.uCGPoint point, float scale) [static] :688
+// public static extern int2 CGPointToUnoInt2(Uno.Platform.iOS.uCGPoint point, float scale) [static] :618
 ::g::Uno::Int2 Support::CGPointToUnoInt2(CGPoint point, float scale)
 {
     ::g::Uno::Int2 unoPoint;
@@ -153,7 +153,7 @@ CGPoint Support::CGPointFromUnoInt2(::g::Uno::Int2 unoPoint, float scale)
     return unoPoint;
 }
 
-// public static extern Uno.Platform.iOS.uCGRect CGRectFromUnoRect(Uno.Rect unoRect, float scale) [static] :712
+// public static extern Uno.Platform.iOS.uCGRect CGRectFromUnoRect(Uno.Rect unoRect, float scale) [static] :642
 CGRect Support::CGRectFromUnoRect(::g::Uno::Rect unoRect, float scale)
 {
     CGRect rect;
@@ -164,7 +164,7 @@ CGRect Support::CGRectFromUnoRect(::g::Uno::Rect unoRect, float scale)
     return rect;
 }
 
-// public static extern Uno.Platform.iOS.uCGRect CGRectFromUnoRecti(Uno.Recti unoRect, float scale) [static] :722
+// public static extern Uno.Platform.iOS.uCGRect CGRectFromUnoRecti(Uno.Recti unoRect, float scale) [static] :652
 CGRect Support::CGRectFromUnoRecti(::g::Uno::Recti unoRect, float scale)
 {
     CGRect rect;
@@ -175,7 +175,7 @@ CGRect Support::CGRectFromUnoRecti(::g::Uno::Recti unoRect, float scale)
     return rect;
 }
 
-// public static extern Uno.Recti CGRectToUnoRecti(Uno.Platform.iOS.uCGRect rect, float scale) [static] :733
+// public static extern Uno.Recti CGRectToUnoRecti(Uno.Platform.iOS.uCGRect rect, float scale) [static] :663
 ::g::Uno::Recti Support::CGRectToUnoRecti(CGRect rect, float scale)
 {
     ::g::Uno::Int2 origin = Support::CGPointToUnoInt2(rect.origin, scale);
@@ -183,7 +183,7 @@ CGRect Support::CGRectFromUnoRecti(::g::Uno::Recti unoRect, float scale)
     return ::g::Uno::Recti__New2(origin, size);
 }
 
-// public static extern Uno.Platform.iOS.uCGSize CGSizeFromUnoFloat2(float2 unoSize, float scale) [static] :757
+// public static extern Uno.Platform.iOS.uCGSize CGSizeFromUnoFloat2(float2 unoSize, float scale) [static] :687
 CGSize Support::CGSizeFromUnoFloat2(::g::Uno::Float2 unoSize, float scale)
 {
     CGSize size;
@@ -192,7 +192,7 @@ CGSize Support::CGSizeFromUnoFloat2(::g::Uno::Float2 unoSize, float scale)
     return size;
 }
 
-// public static extern Uno.Platform.iOS.uCGSize CGSizeFromUnoInt2(int2 unoSize, float scale) [static] :749
+// public static extern Uno.Platform.iOS.uCGSize CGSizeFromUnoInt2(int2 unoSize, float scale) [static] :679
 CGSize Support::CGSizeFromUnoInt2(::g::Uno::Int2 unoSize, float scale)
 {
     CGSize size;
@@ -201,7 +201,7 @@ CGSize Support::CGSizeFromUnoInt2(::g::Uno::Int2 unoSize, float scale)
     return size;
 }
 
-// public static extern int2 CGSizeToUnoInt2(Uno.Platform.iOS.uCGSize size, float scale) [static] :740
+// public static extern int2 CGSizeToUnoInt2(Uno.Platform.iOS.uCGSize size, float scale) [static] :670
 ::g::Uno::Int2 Support::CGSizeToUnoInt2(CGSize size, float scale)
 {
     ::g::Uno::Int2 unoSize;
@@ -210,7 +210,7 @@ CGSize Support::CGSizeFromUnoInt2(::g::Uno::Int2 unoSize, float scale)
     return unoSize;
 }
 
-// public static texture2D CreateTextureFromImage(Uno.Platform.iOS.UIImage image) [static] :587
+// public static texture2D CreateTextureFromImage(Uno.Platform.iOS.UIImage image) [static] :517
 ::g::Uno::Graphics::Texture2D* Support::CreateTextureFromImage(::UIImage * image)
 {
     uStackFrame __("Fuse.iOS.Support", "CreateTextureFromImage(Uno.Platform.iOS.UIImage)");
@@ -221,7 +221,7 @@ CGSize Support::CGSizeFromUnoInt2(::g::Uno::Int2 unoSize, float scale)
     return texture;
 }
 
-// private static int2 UIImageGetSize(Uno.Platform.iOS.UIImage image) [static] :598
+// private static int2 UIImageGetSize(Uno.Platform.iOS.UIImage image) [static] :528
 ::g::Uno::Int2 Support::UIImageGetSize(::UIImage * image)
 {
     CGSize imageSize = image.size;
@@ -232,7 +232,7 @@ CGSize Support::CGSizeFromUnoInt2(::g::Uno::Int2 unoSize, float scale)
     return ::g::Uno::Int2__New2(width, height);
 }
 
-// private static byte[] UIImageToRGBA8888(Uno.Platform.iOS.UIImage _image) [static] :608
+// private static byte[] UIImageToRGBA8888(Uno.Platform.iOS.UIImage _image) [static] :538
 uArray* Support::UIImageToRGBA8888(::UIImage * _image)
 {
     CGImageRef image = [((UIImage*)_image) CGImage];

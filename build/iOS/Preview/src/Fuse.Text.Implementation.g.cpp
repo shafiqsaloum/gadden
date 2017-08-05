@@ -5,17 +5,17 @@
 #include <ft2build.h>
 #include <Fuse.Text.Font.h>
 #include <Fuse.Text.Glyph.h>
-#include <Fuse.Text.Implementat-165dcd99.h>
-#include <Fuse.Text.Implementat-348650f4.h>
-#include <Fuse.Text.Implementat-43418381.h>
-#include <Fuse.Text.Implementat-85443989.h>
-#include <Fuse.Text.Implementat-b446b980.h>
-#include <Fuse.Text.Implementat-b71ef622.h>
-#include <Fuse.Text.Implementat-bfee6ae0.h>
-#include <Fuse.Text.Implementat-c1cf4160.h>
-#include <Fuse.Text.Implementat-cd33f78a.h>
-#include <Fuse.Text.Implementat-ee23e8b3.h>
+#include <Fuse.Text.Implementation.BitArray.h>
+#include <Fuse.Text.Implementation.CString.h>
+#include <Fuse.Text.Implementation.FreeType.h>
+#include <Fuse.Text.Implementation.FreeTypeFont.h>
+#include <Fuse.Text.Implementation.FreeTypeFontFace.h>
+#include <Fuse.Text.Implementation.FT_Error.h>
+#include <Fuse.Text.Implementation.Harfbuzz.h>
+#include <Fuse.Text.Implementation.HarfbuzzFont.h>
+#include <Fuse.Text.Implementation.ICU.ErrorCode.h>
 #include <Fuse.Text.Implementation.ICU.h>
+#include <Fuse.Text.Implementation.Memory.h>
 #include <Fuse.Text.Implementation.UBrk.h>
 #include <Fuse.Text.PositionedGlyph.h>
 #include <Fuse.Text.RenderedGlyph.h>
@@ -42,7 +42,7 @@
 #include <Uno.IntPtr.h>
 #include <Uno.Object.h>
 #include <Uno.Predicate-1.h>
-#include <Uno.Runtime.Implement-ed55561e.h>
+#include <Uno.Runtime.Implementation.BufferImpl.h>
 #include <Uno.String.h>
 #include <Uno.Text.Utf8.h>
 #include <Uno.Threading.Monitor.h>
@@ -58,8 +58,8 @@ namespace Fuse{
 namespace Text{
 namespace Implementation{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/implementation/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal sealed class BitArray :5
 // {
@@ -166,8 +166,8 @@ BitArray* BitArray::New1(int length)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/implementation/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal static extern class CString :1500
 // {
@@ -216,8 +216,8 @@ uString* CString::ToString(void* cstr)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/implementation/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public enum ICU.ErrorCode :1130
 uEnumType* ICU__ErrorCode_typeof()
@@ -229,8 +229,8 @@ uEnumType* ICU__ErrorCode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/implementation/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal static extern class FreeType :303
 // {
@@ -812,8 +812,8 @@ void* FreeType::Library()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/implementation/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal sealed extern class FreeTypeFont :742
 // {
@@ -1033,8 +1033,8 @@ FreeTypeFont* FreeTypeFont::New1(void* ftFace, void* ftSize, int pixelSize, floa
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/implementation/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal sealed extern class FreeTypeFontFace :624
 // {
@@ -1298,8 +1298,8 @@ FreeTypeFontFace* FreeTypeFontFace::New2(uString* fileName, int index, uDelegate
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/implementation/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal static extern class FT_Error :269
 // {
@@ -1364,8 +1364,8 @@ uString* FT_Error::ErrorString(int err)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/implementation/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal static extern class Harfbuzz :874
 // {
@@ -1599,8 +1599,8 @@ void Harfbuzz::get_shape_data(void* font, void* buffer, uArray* output)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/implementation/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal abstract extern class HarfbuzzFont :1007
 // {
@@ -1737,8 +1737,8 @@ void HarfbuzzFont::ctor_1(void* hbFont)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/implementation/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal static extern class ICU :1128
 // {
@@ -1799,8 +1799,8 @@ int ICU::IsFailure(int errorCode)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/implementation/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal static extern class Memory :1490
 // {
@@ -1836,8 +1836,8 @@ void Memory::Copy(uArray* dst, void* src, int len)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/implementation/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal static extern class UBrk :1445
 // {

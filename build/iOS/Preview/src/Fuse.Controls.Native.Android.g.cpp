@@ -1,17 +1,17 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.Native.-454aa827.h>
-#include <Fuse.Controls.Native.-51b6e8e5.h>
-#include <Fuse.Controls.Native.-5999be91.h>
-#include <Fuse.Controls.Native.-737f180b.h>
-#include <Fuse.Controls.Native.-9abb3393.h>
-#include <Fuse.Controls.Native.-ba5282a0.h>
-#include <Fuse.Controls.Native.-c67cabe.h>
-#include <Fuse.Controls.Native.-ca2427b3.h>
-#include <Fuse.Controls.Native.-cb7bb609.h>
-#include <Fuse.Controls.Native.-dd7dd49d.h>
-#include <Fuse.Controls.Native.-fb992a16.h>
+#include <Fuse.Controls.Native.Android.Button.h>
+#include <Fuse.Controls.Native.Android.GraphicsViewBase.h>
+#include <Fuse.Controls.Native.Android.ScrollView.h>
+#include <Fuse.Controls.Native.Android.Slider.h>
+#include <Fuse.Controls.Native.Android.SurfaceView.h>
+#include <Fuse.Controls.Native.Android.Switch.h>
+#include <Fuse.Controls.Native.Android.TextureView.h>
+#include <Fuse.Controls.Native.Android.TextView.h>
+#include <Fuse.Controls.Native.IRangeViewHost.h>
+#include <Fuse.Controls.Native.IScrollViewHost.h>
+#include <Fuse.Controls.Native.IToggleViewHost.h>
 #include <Uno.Bool.h>
 #include <Uno.Double.h>
 
@@ -21,8 +21,8 @@ namespace Controls{
 namespace Native{
 namespace Android{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/android/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/android/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public sealed extern class Button :8
 // {
@@ -72,10 +72,10 @@ Button* Button::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/android/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/android/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
-// public abstract extern class GraphicsViewBase :142
+// public abstract extern class GraphicsViewBase :223
 // {
 static void GraphicsViewBase_build(uType* type)
 {
@@ -94,22 +94,22 @@ uType* GraphicsViewBase_typeof()
     return type;
 }
 
-// protected generated GraphicsViewBase() :142
+// protected generated GraphicsViewBase() :223
 void GraphicsViewBase__ctor__fn(GraphicsViewBase* __this)
 {
     __this->ctor_();
 }
 
-// protected generated GraphicsViewBase() [instance] :142
+// protected generated GraphicsViewBase() [instance] :223
 void GraphicsViewBase::ctor_()
 {
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/android/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/android/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
-// public sealed extern class ScrollView :1200
+// public sealed extern class ScrollView :1121
 // {
 static void ScrollView_build(uType* type)
 {
@@ -130,24 +130,24 @@ uType* ScrollView_typeof()
     return type;
 }
 
-// public ScrollView(Fuse.Controls.Native.IScrollViewHost host) :1203
+// public ScrollView(Fuse.Controls.Native.IScrollViewHost host) :1124
 void ScrollView__ctor__fn(ScrollView* __this, uObject* host)
 {
     __this->ctor_(host);
 }
 
-// public ScrollView New(Fuse.Controls.Native.IScrollViewHost host) :1203
+// public ScrollView New(Fuse.Controls.Native.IScrollViewHost host) :1124
 void ScrollView__New1_fn(uObject* host, ScrollView** __retval)
 {
     *__retval = ScrollView::New1(host);
 }
 
-// public ScrollView(Fuse.Controls.Native.IScrollViewHost host) [instance] :1203
+// public ScrollView(Fuse.Controls.Native.IScrollViewHost host) [instance] :1124
 void ScrollView::ctor_(uObject* host)
 {
 }
 
-// public ScrollView New(Fuse.Controls.Native.IScrollViewHost host) [static] :1203
+// public ScrollView New(Fuse.Controls.Native.IScrollViewHost host) [static] :1124
 ScrollView* ScrollView::New1(uObject* host)
 {
     ScrollView* obj1 = (ScrollView*)uNew(ScrollView_typeof());
@@ -156,10 +156,10 @@ ScrollView* ScrollView::New1(uObject* host)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/android/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/android/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
-// public sealed extern class Slider :1516
+// public sealed extern class Slider :1437
 // {
 static void Slider_build(uType* type)
 {
@@ -185,35 +185,35 @@ Slider_type* Slider_typeof()
     return type;
 }
 
-// public Slider(Fuse.Controls.Native.IRangeViewHost host) :1521
+// public Slider(Fuse.Controls.Native.IRangeViewHost host) :1442
 void Slider__ctor__fn(Slider* __this, uObject* host)
 {
     __this->ctor_(host);
 }
 
-// public Slider New(Fuse.Controls.Native.IRangeViewHost host) :1521
+// public Slider New(Fuse.Controls.Native.IRangeViewHost host) :1442
 void Slider__New1_fn(uObject* host, Slider** __retval)
 {
     *__retval = Slider::New1(host);
 }
 
-// public void set_Progress(double value) :1518
+// public void set_Progress(double value) :1439
 void Slider__set_Progress_fn(Slider* __this, double* value)
 {
     __this->Progress(*value);
 }
 
-// public Slider(Fuse.Controls.Native.IRangeViewHost host) [instance] :1521
+// public Slider(Fuse.Controls.Native.IRangeViewHost host) [instance] :1442
 void Slider::ctor_(uObject* host)
 {
 }
 
-// public void set_Progress(double value) [instance] :1518
+// public void set_Progress(double value) [instance] :1439
 void Slider::Progress(double value)
 {
 }
 
-// public Slider New(Fuse.Controls.Native.IRangeViewHost host) [static] :1521
+// public Slider New(Fuse.Controls.Native.IRangeViewHost host) [static] :1442
 Slider* Slider::New1(uObject* host)
 {
     Slider* obj1 = (Slider*)uNew(Slider_typeof());
@@ -222,10 +222,10 @@ Slider* Slider::New1(uObject* host)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/android/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/android/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
-// public sealed extern class SurfaceView :1589
+// public sealed extern class SurfaceView :1510
 // {
 static void SurfaceView_build(uType* type)
 {
@@ -248,25 +248,25 @@ uType* SurfaceView_typeof()
     return type;
 }
 
-// public generated SurfaceView() :1589
+// public generated SurfaceView() :1510
 void SurfaceView__ctor_1_fn(SurfaceView* __this)
 {
     __this->ctor_1();
 }
 
-// public generated SurfaceView New() :1589
+// public generated SurfaceView New() :1510
 void SurfaceView__New1_fn(SurfaceView** __retval)
 {
     *__retval = SurfaceView::New1();
 }
 
-// public generated SurfaceView() [instance] :1589
+// public generated SurfaceView() [instance] :1510
 void SurfaceView::ctor_1()
 {
     ctor_();
 }
 
-// public generated SurfaceView New() [static] :1589
+// public generated SurfaceView New() [static] :1510
 SurfaceView* SurfaceView::New1()
 {
     SurfaceView* obj1 = (SurfaceView*)uNew(SurfaceView_typeof());
@@ -275,10 +275,10 @@ SurfaceView* SurfaceView::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/android/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/android/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
-// public sealed extern class Switch :1653
+// public sealed extern class Switch :1574
 // {
 static void Switch_build(uType* type)
 {
@@ -305,46 +305,46 @@ Switch_type* Switch_typeof()
     return type;
 }
 
-// public Switch(Fuse.Controls.Native.IToggleViewHost host) :1659
+// public Switch(Fuse.Controls.Native.IToggleViewHost host) :1580
 void Switch__ctor__fn(Switch* __this, uObject* host)
 {
     __this->ctor_(host);
 }
 
-// public void set_Host(Fuse.Controls.Native.IToggleViewHost value) :1656
+// public void set_Host(Fuse.Controls.Native.IToggleViewHost value) :1577
 void Switch__set_Host_fn(Switch* __this, uObject* value)
 {
     __this->Host(value);
 }
 
-// public Switch New(Fuse.Controls.Native.IToggleViewHost host) :1659
+// public Switch New(Fuse.Controls.Native.IToggleViewHost host) :1580
 void Switch__New1_fn(uObject* host, Switch** __retval)
 {
     *__retval = Switch::New1(host);
 }
 
-// public void set_Value(bool value) :1655
+// public void set_Value(bool value) :1576
 void Switch__set_Value_fn(Switch* __this, bool* value)
 {
     __this->Value(*value);
 }
 
-// public Switch(Fuse.Controls.Native.IToggleViewHost host) [instance] :1659
+// public Switch(Fuse.Controls.Native.IToggleViewHost host) [instance] :1580
 void Switch::ctor_(uObject* host)
 {
 }
 
-// public void set_Host(Fuse.Controls.Native.IToggleViewHost value) [instance] :1656
+// public void set_Host(Fuse.Controls.Native.IToggleViewHost value) [instance] :1577
 void Switch::Host(uObject* value)
 {
 }
 
-// public void set_Value(bool value) [instance] :1655
+// public void set_Value(bool value) [instance] :1576
 void Switch::Value(bool value)
 {
 }
 
-// public Switch New(Fuse.Controls.Native.IToggleViewHost host) [static] :1659
+// public Switch New(Fuse.Controls.Native.IToggleViewHost host) [static] :1580
 Switch* Switch::New1(uObject* host)
 {
     Switch* obj1 = (Switch*)uNew(Switch_typeof());
@@ -353,10 +353,10 @@ Switch* Switch::New1(uObject* host)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/android/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/android/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
-// public sealed extern class TextureView :2351
+// public sealed extern class TextureView :2272
 // {
 static void TextureView_build(uType* type)
 {
@@ -379,25 +379,25 @@ uType* TextureView_typeof()
     return type;
 }
 
-// public generated TextureView() :2351
+// public generated TextureView() :2272
 void TextureView__ctor_1_fn(TextureView* __this)
 {
     __this->ctor_1();
 }
 
-// public generated TextureView New() :2351
+// public generated TextureView New() :2272
 void TextureView__New1_fn(TextureView** __retval)
 {
     *__retval = TextureView::New1();
 }
 
-// public generated TextureView() [instance] :2351
+// public generated TextureView() [instance] :2272
 void TextureView::ctor_1()
 {
     ctor_();
 }
 
-// public generated TextureView New() [static] :2351
+// public generated TextureView New() [static] :2272
 TextureView* TextureView::New1()
 {
     TextureView* obj1 = (TextureView*)uNew(TextureView_typeof());
@@ -406,10 +406,10 @@ TextureView* TextureView::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/android/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/android/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
-// public sealed extern class TextView :2407
+// public sealed extern class TextView :2328
 // {
 static void TextView_build(uType* type)
 {
@@ -431,24 +431,24 @@ uType* TextView_typeof()
     return type;
 }
 
-// public generated TextView() :2407
+// public generated TextView() :2328
 void TextView__ctor__fn(TextView* __this)
 {
     __this->ctor_();
 }
 
-// public generated TextView New() :2407
+// public generated TextView New() :2328
 void TextView__New1_fn(TextView** __retval)
 {
     *__retval = TextView::New1();
 }
 
-// public generated TextView() [instance] :2407
+// public generated TextView() [instance] :2328
 void TextView::ctor_()
 {
 }
 
-// public generated TextView New() [static] :2407
+// public generated TextView New() [static] :2328
 TextView* TextView::New1()
 {
     TextView* obj1 = (TextView*)uNew(TextView_typeof());

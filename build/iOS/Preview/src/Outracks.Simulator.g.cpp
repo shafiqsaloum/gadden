@@ -1,7 +1,7 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <_root.OutracksSimulat-eb4af30d.h>
+#include <_root.OutracksSimulatorClientUno_FuseElementsElement_Opacity_Property.h>
 #include <Fuse.Animations.Animator.h>
 #include <Fuse.Animations.Change-1.h>
 #include <Fuse.Animations.Easing.h>
@@ -20,83 +20,83 @@
 #include <Fuse.Gestures.ClickedHandler.h>
 #include <Fuse.Input.Keyboard.h>
 #include <Fuse.Triggers.AddingAnimation.h>
-#include <Fuse.Triggers.Removin-3934475f.h>
+#include <Fuse.Triggers.RemovingAnimation.h>
 #include <Fuse.Triggers.Trigger.h>
 #include <Fuse.Visual.h>
 #include <Outracks.BinaryMessage.h>
 #include <Outracks.IBinaryMessage.h>
 #include <Outracks.Optional.h>
 #include <Outracks.Optional-1.h>
-#include <Outracks.Simulator.Ap-b454fb05.h>
-#include <Outracks.Simulator.Ap-c44f1d83.h>
 #include <Outracks.Simulator.Apply-1.h>
-#include <Outracks.Simulator.Bu-32d2026d.h>
-#include <Outracks.Simulator.Bu-93efea23.h>
-#include <Outracks.Simulator.Bu-9d6aa813.h>
+#include <Outracks.Simulator.ApplyFirst-2.h>
+#include <Outracks.Simulator.ApplySecond-2.h>
+#include <Outracks.Simulator.BuildIssueDetected.h>
+#include <Outracks.Simulator.BuildIssueType.h>
+#include <Outracks.Simulator.BuildIssueTypeData.h>
 #include <Outracks.Simulator.BuildLogged.h>
-#include <Outracks.Simulator.Ch-a9dd1b1a.h>
+#include <Outracks.Simulator.CharacterNumber.h>
 #include <Outracks.Simulator.Closure.h>
-#include <Outracks.Simulator.Co-3af13cb0.h>
-#include <Outracks.Simulator.Co-6107db6e.h>
-#include <Outracks.Simulator.Co-aed000f3.h>
-#include <Outracks.Simulator.Co-be174b5d.h>
-#include <Outracks.Simulator.De-bd4defb7.h>
-#include <Outracks.Simulator.De-d26d7421.h>
-#include <Outracks.Simulator.Du-439b907a.h>
+#include <Outracks.Simulator.ConcurrentQueue-1.h>
+#include <Outracks.Simulator.ConnectToEndpointClosure.h>
+#include <Outracks.Simulator.ConnectToFirstRespondingEndpoint.h>
+#include <Outracks.Simulator.ConsoleColor.h>
+#include <Outracks.Simulator.DesignerNotRunning.h>
+#include <Outracks.Simulator.DeveloperMenu.h>
+#include <Outracks.Simulator.DummyApplication.h>
 #include <Outracks.Simulator.EmptyClass.h>
-#include <Outracks.Simulator.Fa-6493a41f.h>
-#include <Outracks.Simulator.Fa-77073135.h>
-#include <Outracks.Simulator.Fa-ccf8523e.h>
-#include <Outracks.Simulator.Fo-7466e78c.h>
-#include <Outracks.Simulator.Fo-7466e78f.h>
+#include <Outracks.Simulator.FailedToConnectToEndPoint.h>
+#include <Outracks.Simulator.FailedToConnectToProxy.h>
+#include <Outracks.Simulator.FailedToConnectToSimulator.h>
 #include <Outracks.Simulator.Forget-2.h>
 #include <Outracks.Simulator.Forget-3.h>
-#include <Outracks.Simulator.Ge-e4a187f7.h>
-#include <Outracks.Simulator.Gu-38dd0f53.h>
-#include <Outracks.Simulator.Im-4687ab12.h>
-#include <Outracks.Simulator.In-54f82bd4.h>
-#include <Outracks.Simulator.In-8ad043b5.h>
-#include <Outracks.Simulator.IS-5cd3f04c.h>
+#include <Outracks.Simulator.ForgetAction-1.h>
+#include <Outracks.Simulator.ForgetAction-2.h>
+#include <Outracks.Simulator.GetSimulatorEndpoint.h>
+#include <Outracks.Simulator.GuidSerializer.h>
+#include <Outracks.Simulator.ImmutableList-1.h>
+#include <Outracks.Simulator.IndentString.h>
+#include <Outracks.Simulator.InvalidDataException.h>
+#include <Outracks.Simulator.ISimulatorClient.h>
 #include <Outracks.Simulator.LineNumber.h>
 #include <Outracks.Simulator.List.h>
-#include <Outracks.Simulator.No-322dacc.h>
-#include <Outracks.Simulator.Ob-98516f34.h>
-#include <Outracks.Simulator.Of-c5e231f4.h>
-#include <Outracks.Simulator.Pr-59de7475.h>
-#include <Outracks.Simulator.Pr-5b87553c.h>
+#include <Outracks.Simulator.NonExhaustiveMatch.h>
+#include <Outracks.Simulator.ObjectIdentifier.h>
+#include <Outracks.Simulator.OfflineSimulatorClient.h>
+#include <Outracks.Simulator.Protocol.Error.h>
+#include <Outracks.Simulator.Protocol.ExceptionInfo.h>
 #include <Outracks.Simulator.ProxyClient.h>
-#include <Outracks.Simulator.Se-c68500b4.h>
-#include <Outracks.Simulator.Si-ca2693fb.h>
-#include <Outracks.Simulator.So-279c538.h>
-#include <Outracks.Simulator.So-adcf757e.h>
-#include <Outracks.Simulator.St-4bd16e5b.h>
-#include <Outracks.Simulator.Ta-297181eb.h>
+#include <Outracks.Simulator.Serialization.h>
+#include <Outracks.Simulator.SimulatorClient.h>
+#include <Outracks.Simulator.SourceReference.h>
+#include <Outracks.Simulator.SourceReferenceCanonicalization.h>
+#include <Outracks.Simulator.StringSplitting.h>
 #include <Outracks.Simulator.Task-1.h>
 #include <Outracks.Simulator.Tasks.h>
-#include <Outracks.Simulator.Te-b740cdd0.h>
-#include <Outracks.Simulator.Te-eb7ee574.h>
+#include <Outracks.Simulator.TaskThread-1.h>
 #include <Outracks.Simulator.TextOffset.h>
-#include <Outracks.Simulator.To-26edca1a.h>
-#include <Outracks.Simulator.Wa-abe0ced7.h>
-#include <Outracks.UnoHost.Bina-58253e0.h>
+#include <Outracks.Simulator.TextOffsetConversion.h>
+#include <Outracks.Simulator.TextPosition.h>
+#include <Outracks.Simulator.ToIndentedLinesExtension.h>
+#include <Outracks.Simulator.WaitForFirstResult-1.h>
+#include <Outracks.UnoHost.BinaryMessageInbox.h>
 #include <System.IO.BinaryReader.h>
 #include <System.IO.BinaryWriter.h>
 #include <Uno.Action.h>
 #include <Uno.Action-1.h>
 #include <Uno.Action-2.h>
 #include <Uno.ArgumentNullException.h>
-#include <Uno.ArgumentOutOfRang-6803b39e.h>
+#include <Uno.ArgumentOutOfRangeException.h>
 #include <Uno.Array.h>
 #include <Uno.Bool.h>
 #include <Uno.Char.h>
-#include <Uno.Collections.Enume-8ddd045.h>
+#include <Uno.Collections.EnumerableExtensions.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IEnumerator.h>
 #include <Uno.Collections.IEnumerator-1.h>
 #include <Uno.Collections.List-1.h>
 #include <Uno.Collections.Queue-1.h>
 #include <Uno.Diagnostics.Debug.h>
-#include <Uno.Diagnostics.Debug-5d778620.h>
+#include <Uno.Diagnostics.DebugMessageType.h>
 #include <Uno.Double.h>
 #include <Uno.Enum.h>
 #include <Uno.EventArgs.h>
@@ -127,9 +127,9 @@
 #include <Uno.Net.Sockets.SocketShutdown.h>
 #include <Uno.Net.Sockets.SocketType.h>
 #include <Uno.Object.h>
-#include <Uno.Platform.Applicat-bf686309.h>
 #include <Uno.Platform.ApplicationState.h>
-#include <Uno.Runtime.Implement-eca777ec.h>
+#include <Uno.Platform.ApplicationStateTransitionHandler.h>
+#include <Uno.Runtime.Implementation.Internal.ArrayEnumerable-1.h>
 #include <Uno.String.h>
 #include <Uno.Text.StringBuilder.h>
 #include <Uno.Threading.AutoResetEvent.h>
@@ -141,7 +141,7 @@
 #include <Uno.Type.h>
 #include <Uno.UX.Property-1.h>
 #include <Uno.UX.Selector.h>
-static uString* STRINGS[34];
+static uString* STRINGS[35];
 static uType* TYPES[79];
 
 namespace g{
@@ -1513,7 +1513,7 @@ uEnumType* ConsoleColor_typeof()
 // {
 static void DesignerNotRunning_build(uType* type)
 {
-    type->SetFields(3);
+    type->SetFields(4);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)DesignerNotRunning__New4_fn, 0, true, type, 0));
 }
@@ -1525,7 +1525,7 @@ static void DesignerNotRunning_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 3;
+    options.FieldCount = 4;
     options.ObjectSize = sizeof(DesignerNotRunning);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Outracks.Simulator.DesignerNotRunning", options);
@@ -1622,6 +1622,8 @@ static void DeveloperMenu_build(uType* type)
     type->fp_ctor_ = (void*)DeveloperMenu__New4_fn;
     type->fp_cctor_ = DeveloperMenu__cctor_4_fn;
     type->interface15.fp_Draw = (void(*)(uObject*, ::g::Fuse::Drawing::Surface*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableDraw_fn;
+    type->interface15.fp_get_IsPrimary = (void(*)(uObject*, bool*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_IsPrimary_fn;
+    type->interface15.fp_get_ElementSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_ElementSize_fn;
     type->interface10.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
     type->interface12.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
     type->interface11.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;
@@ -1890,7 +1892,7 @@ EmptyClass* EmptyClass::New1()
 static void FailedToConnectToEndPoint_build(uType* type)
 {
     ::STRINGS[10] = uString::Const(": ");
-    type->SetFields(3);
+    type->SetFields(4);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)FailedToConnectToEndPoint__New4_fn, 0, true, type, 2, ::g::Uno::Net::IPEndPoint_typeof(), ::g::Uno::Exception_typeof()));
 }
@@ -1902,7 +1904,7 @@ static void FailedToConnectToEndPoint_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 3;
+    options.FieldCount = 4;
     options.ObjectSize = sizeof(FailedToConnectToEndPoint);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Outracks.Simulator.FailedToConnectToEndPoint", options);
@@ -1947,10 +1949,10 @@ static void FailedToConnectToProxy_build(uType* type)
     ::STRINGS[11] = uString::Const("Failed to connect to proxy:\n"
         "");
     ::TYPES[34] = ::g::Outracks::Simulator::List_typeof()->MakeMethod(3/*ToImmutableList<Uno.Exception>*/, ::g::Uno::Exception_typeof(), NULL);
-    type->SetFields(3,
+    type->SetFields(4,
         ::g::Outracks::Simulator::ImmutableList_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL), offsetof(::g::Outracks::Simulator::FailedToConnectToProxy, InnerExceptions), 0);
     type->Reflection.SetFields(1,
-        new uField("InnerExceptions", 3));
+        new uField("InnerExceptions", 4));
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)FailedToConnectToProxy__New4_fn, 0, true, type, 1, ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL)));
 }
@@ -1962,7 +1964,7 @@ static void FailedToConnectToProxy_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 4;
+    options.FieldCount = 5;
     options.ObjectSize = sizeof(FailedToConnectToProxy);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Outracks.Simulator.FailedToConnectToProxy", options);
@@ -2007,10 +2009,10 @@ static void FailedToConnectToSimulator_build(uType* type)
 {
     ::STRINGS[12] = uString::Const("Failed to connect to simulator host: ");
     ::TYPES[34] = ::g::Outracks::Simulator::List_typeof()->MakeMethod(3/*ToImmutableList<Uno.Exception>*/, ::g::Uno::Exception_typeof(), NULL);
-    type->SetFields(3,
+    type->SetFields(4,
         ::g::Outracks::Simulator::ImmutableList_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL), offsetof(::g::Outracks::Simulator::FailedToConnectToSimulator, InnerExceptions), 0);
     type->Reflection.SetFields(1,
-        new uField("InnerExceptions", 3));
+        new uField("InnerExceptions", 4));
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)FailedToConnectToSimulator__New4_fn, 0, true, type, 1, ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL)));
 }
@@ -2022,7 +2024,7 @@ static void FailedToConnectToSimulator_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 4;
+    options.FieldCount = 5;
     options.ObjectSize = sizeof(FailedToConnectToSimulator);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Outracks.Simulator.FailedToConnectToSimulator", options);
@@ -2285,7 +2287,7 @@ ForgetAction1* ForgetAction1::New1(uType* __type, uDelegate* action)
 // {
 static void GetSimulatorEndpoint_build(uType* type)
 {
-    ::STRINGS[13] = uString::Const("");
+    ::STRINGS[13] = uString::Const(" ");
     ::STRINGS[14] = uString::Const("DESIGNER_NOT_RUNNING");
     ::STRINGS[15] = uString::Const("Call Tom Curise");
     ::TYPES[35] = ::g::Outracks::Simulator::DesignerNotRunning_typeof();
@@ -2375,7 +2377,7 @@ uArray* GetSimulatorEndpoint::Execute()
 
                     const uFinally<decltype(__finally_fun)> __f(__finally_fun);
                     uPtr(writer)->WriteLine10(project);
-                    writer->WriteLine10(::g::Uno::String::Join(::STRINGS[13/*""*/], defines));
+                    writer->WriteLine10(::g::Uno::String::Join(::STRINGS[13/*" "*/], defines));
                     writer->Flush();
                     uString* line = uPtr(reader)->ReadLine();
 
@@ -2770,7 +2772,7 @@ uString* IndentString::PrefixWithTab(uString* s)
 // {
 static void InvalidDataException_build(uType* type)
 {
-    type->SetFields(3);
+    type->SetFields(4);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)InvalidDataException__New4_fn, 0, true, type, 0));
 }
@@ -2782,7 +2784,7 @@ static void InvalidDataException_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 3;
+    options.FieldCount = 4;
     options.ObjectSize = sizeof(InvalidDataException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Outracks.Simulator.InvalidDataException", options);
@@ -3284,7 +3286,7 @@ void List::WriteImmutableList(::g::System::IO::BinaryWriter* writer, uObject* el
 // {
 static void NonExhaustiveMatch_build(uType* type)
 {
-    type->SetFields(3);
+    type->SetFields(4);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)NonExhaustiveMatch__New4_fn, 0, true, type, 0));
 }
@@ -3296,7 +3298,7 @@ static void NonExhaustiveMatch_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 3;
+    options.FieldCount = 4;
     options.ObjectSize = sizeof(NonExhaustiveMatch);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Outracks.Simulator.NonExhaustiveMatch", options);
@@ -4166,8 +4168,8 @@ static void SourceReferenceCanonicalization_build(uType* type)
     ::STRINGS[26] = uString::Const("?");
     ::STRINGS[27] = uString::Const("(");
     ::STRINGS[28] = uString::Const(")");
-    ::STRINGS[13] = uString::Const("");
-    ::STRINGS[29] = uString::Const(",");
+    ::STRINGS[29] = uString::Const("");
+    ::STRINGS[30] = uString::Const(",");
     ::TYPES[68] = ::g::Outracks::Optional1_typeof()->MakeType(::g::Outracks::Simulator::SourceReference_typeof(), NULL);
     ::TYPES[69] = ::g::Outracks::Optional1_typeof()->MakeType(::g::Outracks::Simulator::TextPosition_typeof(), NULL);
     type->Reflection.SetFunctions(2,
@@ -4218,14 +4220,14 @@ uString* SourceReferenceCanonicalization::ToCanonicalForm1(::g::Outracks::Simula
     uStackFrame __("Outracks.Simulator.SourceReferenceCanonicalization", "ToCanonicalForm(Outracks.Simulator.SourceReference)");
     ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> ind1;
     ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> ind2;
-    return ::g::Uno::String::op_Addition2(uPtr(src)->File, (ind1 = uPtr(src)->Location().Value< ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> >(), (&ind1))->HasValue(::TYPES[69/*Outracks.Optional<Outracks.Simulator.TextPosition>*/]) ? (uString*)::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[27/*"("*/], SourceReferenceCanonicalization::ToCanonicalForm2((ind2 = uPtr(src)->Location().Value< ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> >(), (&ind2))->Value(::TYPES[69/*Outracks.Optional<Outracks.Simulator.TextPosition>*/]))), ::STRINGS[28/*")"*/]) : ::STRINGS[13/*""*/]);
+    return ::g::Uno::String::op_Addition2(uPtr(src)->File, (ind1 = uPtr(src)->Location().Value< ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> >(), (&ind1))->HasValue(::TYPES[69/*Outracks.Optional<Outracks.Simulator.TextPosition>*/]) ? (uString*)::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[27/*"("*/], SourceReferenceCanonicalization::ToCanonicalForm2((ind2 = uPtr(src)->Location().Value< ::g::Outracks::Optional1< ::g::Outracks::Simulator::TextPosition> >(), (&ind2))->Value(::TYPES[69/*Outracks.Optional<Outracks.Simulator.TextPosition>*/]))), ::STRINGS[28/*")"*/]) : ::STRINGS[29/*""*/]);
 }
 
 // private static string ToCanonicalForm(Outracks.Simulator.TextPosition pos) [static] :1036
 uString* SourceReferenceCanonicalization::ToCanonicalForm2(::g::Outracks::Simulator::TextPosition pos)
 {
     uStackFrame __("Outracks.Simulator.SourceReferenceCanonicalization", "ToCanonicalForm(Outracks.Simulator.TextPosition)");
-    return ::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition(uBox(::TYPES[76/*Outracks.Simulator.LineNumber*/], pos.Line), ::STRINGS[29/*","*/]), uBox(::TYPES[77/*Outracks.Simulator.CharacterNumber*/], pos.Character));
+    return ::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition(uBox(::TYPES[76/*Outracks.Simulator.LineNumber*/], pos.Line), ::STRINGS[30/*","*/]), uBox(::TYPES[77/*Outracks.Simulator.CharacterNumber*/], pos.Character));
 }
 // }
 
@@ -4776,7 +4778,7 @@ TaskThread* TaskThread::New1(uType* __type, uDelegate* func)
 // {
 static void TextOffset_build(uType* type)
 {
-    ::STRINGS[30] = uString::Const("@");
+    ::STRINGS[31] = uString::Const("@");
     ::TYPES[4] = ::g::Uno::Int_typeof();
     type->SetFields(0,
         ::TYPES[4/*int*/], offsetof(::g::Outracks::Simulator::TextOffset, _offset), 0);
@@ -4881,7 +4883,7 @@ void TextOffset__op_LessThanOrEqual_fn(TextOffset* a, TextOffset* b, bool* __ret
 void TextOffset__ToString_fn(TextOffset* __this, uString** __retval)
 {
     uStackFrame __("Outracks.Simulator.TextOffset", "ToString()");
-    return *__retval = ::g::Uno::String::op_Addition1(::STRINGS[30/*"@"*/], uBox<int>(::TYPES[4/*int*/], __this->_offset)), void();
+    return *__retval = ::g::Uno::String::op_Addition1(::STRINGS[31/*"@"*/], uBox<int>(::TYPES[4/*int*/], __this->_offset)), void();
 }
 
 // public TextOffset(int offset) [instance] :1053
@@ -4966,8 +4968,8 @@ bool TextOffset::op_LessThanOrEqual(TextOffset* a, TextOffset* b)
 // {
 static void TextOffsetConversion_build(uType* type)
 {
-    ::STRINGS[31] = uString::Const("\r");
-    ::STRINGS[13] = uString::Const("");
+    ::STRINGS[32] = uString::Const("\r");
+    ::STRINGS[29] = uString::Const("");
     ::TYPES[46] = ::g::Uno::Char_typeof()->Array();
     type->Reflection.SetFunctions(3,
         new uFunction("OffsetBy", NULL, (void*)TextOffsetConversion__OffsetBy_fn, 0, true, ::g::Outracks::Simulator::TextPosition_typeof(), 3, ::g::Outracks::Simulator::TextPosition_typeof(), ::g::Uno::Int_typeof(), ::g::Uno::String_typeof()),
@@ -5028,9 +5030,9 @@ void TextOffsetConversion__ToPosition_fn(::g::Outracks::Simulator::TextOffset* o
     int sizeOfDataBefore = 0;
 
     for (int i = 0; i < (::g::Outracks::Simulator::LineNumber__op_Implicit(pos.Line) - 1); ++i)
-        sizeOfDataBefore = sizeOfDataBefore + (uPtr(::g::Uno::String::Replace1(uPtr(uPtr(lines)->Strong<uString*>(i)), ::STRINGS[31/*"\r"*/], ::STRINGS[13/*""*/]))->Length() + 1);
+        sizeOfDataBefore = sizeOfDataBefore + (uPtr(::g::Uno::String::Replace1(uPtr(uPtr(lines)->Strong<uString*>(i)), ::STRINGS[32/*"\r"*/], ::STRINGS[29/*""*/]))->Length() + 1);
 
-    uString* line = ::g::Uno::String::Replace1(uPtr(uPtr(lines)->Strong<uString*>(::g::Outracks::Simulator::LineNumber__op_Implicit(pos.Line) - 1)), ::STRINGS[31/*"\r"*/], ::STRINGS[13/*""*/]);
+    uString* line = ::g::Uno::String::Replace1(uPtr(uPtr(lines)->Strong<uString*>(::g::Outracks::Simulator::LineNumber__op_Implicit(pos.Line) - 1)), ::STRINGS[32/*"\r"*/], ::STRINGS[29/*""*/]);
 
     if ((::g::Outracks::Simulator::CharacterNumber__op_Implicit(pos.Character) < 1) || ((::g::Outracks::Simulator::CharacterNumber__op_Implicit(pos.Character) - 1) > uPtr(line)->Length()))
         U_THROW(::g::Uno::IndexOutOfRangeException::New4());
@@ -5046,7 +5048,7 @@ void TextOffsetConversion__ToPosition_fn(::g::Outracks::Simulator::TextOffset* o
     if (::g::Uno::String::IsNullOrEmpty(data))
         U_THROW(::g::Uno::ArgumentNullException::New6(data));
 
-    uArray* lines = ::g::Uno::String::Split(uPtr(::g::Uno::String::Replace1(uPtr(data), ::STRINGS[31/*"\r"*/], ::STRINGS[13/*""*/])), uArray::Init<int>(::TYPES[46/*char[]*/], 1, 10));
+    uArray* lines = ::g::Uno::String::Split(uPtr(::g::Uno::String::Replace1(uPtr(data), ::STRINGS[32/*"\r"*/], ::STRINGS[29/*""*/])), uArray::Init<int>(::TYPES[46/*char[]*/], 1, 10));
     int numLinesBeforeOffset = 0;
     int pos = 0;
 
@@ -5071,7 +5073,7 @@ void TextOffsetConversion__ToPosition_fn(::g::Outracks::Simulator::TextOffset* o
 // {
 static void TextPosition_build(uType* type)
 {
-    ::STRINGS[32] = uString::Const(":");
+    ::STRINGS[33] = uString::Const(":");
     ::TYPES[76] = ::g::Outracks::Simulator::LineNumber_typeof();
     ::TYPES[77] = ::g::Outracks::Simulator::CharacterNumber_typeof();
     type->SetFields(0,
@@ -5184,7 +5186,7 @@ void TextPosition__Read_fn(::g::System::IO::BinaryReader* reader, TextPosition* 
 void TextPosition__ToString_fn(TextPosition* __this, uType* __type, uString** __retval)
 {
     uStackFrame __("Outracks.Simulator.TextPosition", "ToString()");
-    return *__retval = ::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition(uBox(::TYPES[76/*Outracks.Simulator.LineNumber*/], __this->Line), ::STRINGS[32/*":"*/]), uBox(::TYPES[77/*Outracks.Simulator.CharacterNumber*/], __this->Character)), void();
+    return *__retval = ::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition(uBox(::TYPES[76/*Outracks.Simulator.LineNumber*/], __this->Line), ::STRINGS[33/*":"*/]), uBox(::TYPES[77/*Outracks.Simulator.CharacterNumber*/], __this->Character)), void();
 }
 
 // public static void Write(System.IO.BinaryWriter writer, Outracks.Simulator.TextPosition value) :1296
@@ -5281,8 +5283,8 @@ void TextPosition__Write(::g::System::IO::BinaryWriter* writer, TextPosition val
 // {
 static void ToIndentedLinesExtension_build(uType* type)
 {
-    ::STRINGS[13] = uString::Const("");
-    ::STRINGS[33] = uString::Const("    ");
+    ::STRINGS[29] = uString::Const("");
+    ::STRINGS[34] = uString::Const("    ");
     ::STRINGS[19] = uString::Const("\n"
         "");
     ::TYPES[59] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
@@ -5315,12 +5317,12 @@ uString* ToIndentedLinesExtension::ToIndentedLines(uObject* innerExceptions)
 {
     uStackFrame __("Outracks.Simulator.ToIndentedLinesExtension", "ToIndentedLines(Uno.Collections.IEnumerable<Uno.Exception>)");
     ::g::Uno::Exception* ret2;
-    uString* s = ::STRINGS[13/*""*/];
+    uString* s = ::STRINGS[29/*""*/];
 
     for (uObject* enum1 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(innerExceptions), ::TYPES[59/*Uno.Collections.IEnumerable<Uno.Exception>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[24/*Uno.Collections.IEnumerator*/])); )
     {
         ::g::Uno::Exception* e = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), ::TYPES[60/*Uno.Collections.IEnumerator<Uno.Exception>*/]), &ret2), ret2);
-        s = ::g::Uno::String::op_Addition2(s, ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[33/*"    "*/], uPtr(e)->Message()), ::STRINGS[19/*"\n"*/]));
+        s = ::g::Uno::String::op_Addition2(s, ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[34/*"    "*/], uPtr(e)->Message()), ::STRINGS[19/*"\n"*/]));
     }
 
     return s;

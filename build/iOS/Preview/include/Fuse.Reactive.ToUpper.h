@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Expressions/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Reactive.Expressions/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public sealed class ToUpper :916
+// public sealed class ToUpper :1381
 // {
 ::g::Fuse::Reactive::UnaryOperator_type* ToUpper_typeof();
 void ToUpper__ctor_2_fn(ToUpper* __this, ::g::Fuse::Reactive::Expression* value);

@@ -1,8 +1,8 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Navigation.Navig-7d6b9b9f.h>
+#include <Fuse.Navigation.NavigationTriggerAction.h>
 namespace g{namespace Fuse{namespace Navigation{struct NavigateToggle;}}}
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public sealed class NavigateToggle :4441
+// public sealed class NavigateToggle :4832
 // {
 ::g::Fuse::Navigation::NavigationTriggerAction_type* NavigateToggle_typeof();
 void NavigateToggle__ctor_3_fn(NavigateToggle* __this);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -15,8 +15,10 @@
 #include <Uno.Collections.IList-1.h>
 #include <Uno.Float2.h>
 #include <Uno.UX.IPropertyListener.h>
+namespace g{namespace Fuse{namespace Controls{namespace Native{struct ViewHandle;}}}}
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
+namespace g{namespace Fuse{struct Box;}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct FastMatrix;}}
 namespace g{namespace Fuse{struct FastProperty1Link;}}
@@ -33,7 +35,6 @@ namespace g{namespace Fuse{struct VisualBounds;}}
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
 namespace g{namespace Uno{namespace Collections{struct RootableList;}}}
-namespace g{namespace Uno{namespace Geometry{struct Box;}}}
 namespace g{namespace Uno{namespace Text{struct StringBuilder;}}}
 namespace g{namespace Uno{namespace UX{struct Property1;}}}
 namespace g{namespace Uno{namespace UX{struct PropertyObject;}}}
@@ -48,7 +49,7 @@ namespace g{namespace Uno{struct Rect;}}
 namespace g{
 namespace Fuse{
 
-// public interfacemodifiers class Visual :4949
+// public interfacemodifiers class Visual :5434
 // {
 struct Visual_type : ::g::Fuse::Node_type
 {
@@ -69,7 +70,7 @@ struct Visual_type : ::g::Fuse::Node_type
     void(*fp_get_IsLayoutRoot)(::g::Fuse::Visual*, bool*);
     void(*fp_get_IsLocalVisible)(::g::Fuse::Visual*, bool*);
     void(*fp_IsMarginBoxDependent)(::g::Fuse::Visual*, ::g::Fuse::Visual*, int*);
-    void(*fp_get_LocalBounds)(::g::Fuse::Visual*, ::g::Uno::Geometry::Box*);
+    void(*fp_get_LocalBounds)(::g::Fuse::Visual*, ::g::Fuse::Box*);
     void(*fp_get_LocalRenderBounds)(::g::Fuse::Visual*, ::g::Fuse::VisualBounds**);
     void(*fp_OnAdjustMarginBoxPosition)(::g::Fuse::Visual*, ::g::Uno::Float2*);
     void(*fp_OnArrangeMarginBox)(::g::Fuse::Visual*, ::g::Uno::Float2*, ::g::Fuse::LayoutParams*, ::g::Uno::Float2*);
@@ -217,7 +218,7 @@ void Visual__get_Layer_fn(Visual* __this, int* __retval);
 void Visual__set_Layer_fn(Visual* __this, int* value);
 void Visual__get_LayoutRole_fn(Visual* __this, int* __retval);
 void Visual__set_LayoutRole_fn(Visual* __this, int* value);
-void Visual__get_LocalBounds_fn(Visual* __this, ::g::Uno::Geometry::Box* __retval);
+void Visual__get_LocalBounds_fn(Visual* __this, ::g::Fuse::Box* __retval);
 void Visual__get_LocalRenderBounds_fn(Visual* __this, ::g::Fuse::VisualBounds** __retval);
 void Visual__LocalToParent_fn(Visual* __this, ::g::Uno::Float2* localPoint, ::g::Uno::Float2* __retval);
 void Visual__get_LocalTransform_fn(Visual* __this, ::g::Uno::Float4x4* __retval);
@@ -317,6 +318,8 @@ void Visual__UpdateIsContextEnabledCache_fn(Visual* __this);
 void Visual__UpdateIsVisibleCache_fn(Visual* __this);
 void Visual__UpdateLayout_fn(Visual* __this);
 void Visual__get_ValidFrameCount_fn(Visual* __this, int* __retval);
+void Visual__get_ViewHandle_fn(Visual* __this, ::g::Fuse::Controls::Native::ViewHandle** __retval);
+void Visual__set_ViewHandle_fn(Visual* __this, ::g::Fuse::Controls::Native::ViewHandle* value);
 void Visual__get_Viewport_fn(Visual* __this, uObject** __retval);
 void Visual__VisitSubtree_fn(Visual* __this, uDelegate* action);
 void Visual__get_VisualContext_fn(Visual* __this, int* __retval);
@@ -396,6 +399,7 @@ struct Visual : ::g::Fuse::Node
     int ZLayer;
     bool ZOffsetFixed;
     int ZOffsetNatural;
+    uStrong< ::g::Fuse::Controls::Native::ViewHandle*> _ViewHandle;
     uStrong<uDelegate*> IsInteractingChanged1;
     uStrong<uDelegate*> RequestBringIntoView1;
     uStrong<uDelegate*> ZOrderChanged1;
@@ -524,7 +528,7 @@ struct Visual : ::g::Fuse::Node
     void Layer(int value);
     int LayoutRole();
     void LayoutRole(int value);
-    ::g::Uno::Geometry::Box LocalBounds();
+    ::g::Fuse::Box LocalBounds();
     ::g::Fuse::VisualBounds* LocalRenderBounds() { ::g::Fuse::VisualBounds* __retval; return (((Visual_type*)__type)->fp_get_LocalRenderBounds)(this, &__retval), __retval; }
     ::g::Uno::Float2 LocalToParent(::g::Uno::Float2 localPoint);
     ::g::Uno::Float4x4 LocalTransform();
@@ -615,6 +619,8 @@ struct Visual : ::g::Fuse::Node
     void UpdateIsVisibleCache();
     void UpdateLayout();
     int ValidFrameCount();
+    ::g::Fuse::Controls::Native::ViewHandle* ViewHandle();
+    void ViewHandle(::g::Fuse::Controls::Native::ViewHandle* value);
     uObject* Viewport();
     int VisualContext() { int __retval; return (((Visual_type*)__type)->fp_get_VisualContext)(this, &__retval), __retval; }
     ::g::Uno::Float2 WindowToLocal(::g::Uno::Float2 windowCoord);
@@ -666,7 +672,7 @@ struct Visual : ::g::Fuse::Node
     static int HitTestTransform(Visual* __this) { int __retval; return Visual__get_HitTestTransform_fn(__this, &__retval), __retval; }
     static bool IsLayoutRoot(Visual* __this) { bool __retval; return Visual__get_IsLayoutRoot_fn(__this, &__retval), __retval; }
     static bool IsLocalVisible(Visual* __this) { bool __retval; return Visual__get_IsLocalVisible_fn(__this, &__retval), __retval; }
-    static ::g::Uno::Geometry::Box LocalBounds(Visual* __this);
+    static ::g::Fuse::Box LocalBounds(Visual* __this);
     static ::g::Fuse::VisualBounds* LocalRenderBounds(Visual* __this) { ::g::Fuse::VisualBounds* __retval; return Visual__get_LocalRenderBounds_fn(__this, &__retval), __retval; }
     static ::g::Fuse::FastMatrix* ParentWorldTransformInternal(Visual* __this) { ::g::Fuse::FastMatrix* __retval; return Visual__get_ParentWorldTransformInternal_fn(__this, &__retval), __retval; }
     static int VisualContext(Visual* __this) { int __retval; return Visual__get_VisualContext_fn(__this, &__retval), __retval; }
@@ -674,10 +680,10 @@ struct Visual : ::g::Fuse::Node
 
 }} // ::g::Fuse
 
+#include <Fuse.Box.h>
 #include <Uno.Float3.h>
 #include <Uno.Float4.h>
 #include <Uno.Float4x4.h>
-#include <Uno.Geometry.Box.h>
 #include <Uno.Rect.h>
 #include <Uno.UX.Selector.h>
 
@@ -686,7 +692,7 @@ namespace Fuse{
 
 inline ::g::Uno::Float2 Visual::AbsoluteViewportOrigin() { ::g::Uno::Float2 __retval; return (((Visual_type*)__type)->fp_get_AbsoluteViewportOrigin)(this, &__retval), __retval; }
 inline ::g::Uno::Float2 Visual::GetMarginSize(::g::Fuse::LayoutParams lp) { ::g::Uno::Float2 __retval; return (((Visual_type*)__type)->fp_GetMarginSize)(this, &lp, &__retval), __retval; }
-inline ::g::Uno::Geometry::Box Visual::LocalBounds() { ::g::Uno::Geometry::Box __retval; return (((Visual_type*)__type)->fp_get_LocalBounds)(this, &__retval), __retval; }
+inline ::g::Fuse::Box Visual::LocalBounds() { ::g::Fuse::Box __retval; return (((Visual_type*)__type)->fp_get_LocalBounds)(this, &__retval), __retval; }
 inline void Visual::OnAdjustMarginBoxPosition(::g::Uno::Float2 position) { (((Visual_type*)__type)->fp_OnAdjustMarginBoxPosition)(this, &position); }
 inline ::g::Uno::Float2 Visual::OnArrangeMarginBox(::g::Uno::Float2 position, ::g::Fuse::LayoutParams lp) { ::g::Uno::Float2 __retval; return (((Visual_type*)__type)->fp_OnArrangeMarginBox)(this, &position, &lp, &__retval), __retval; }
 inline void Visual::OnPropertyChanged2(::g::Uno::UX::PropertyObject* sender, ::g::Uno::UX::Selector property) { (((Visual_type*)__type)->fp_OnPropertyChanged2)(this, sender, &property); }
@@ -695,7 +701,7 @@ inline void Visual::OnAdjustMarginBoxPosition(Visual* __this, ::g::Uno::Float2 p
 inline ::g::Uno::Float2 Visual::OnArrangeMarginBox(Visual* __this, ::g::Uno::Float2 position, ::g::Fuse::LayoutParams lp) { ::g::Uno::Float2 __retval; return Visual__OnArrangeMarginBox_fn(__this, &position, &lp, &__retval), __retval; }
 inline void Visual::OnPropertyChanged2(Visual* __this, ::g::Uno::UX::PropertyObject* sender, ::g::Uno::UX::Selector property) { Visual__OnPropertyChanged2_fn(__this, sender, &property); }
 inline ::g::Uno::Float2 Visual::AbsoluteViewportOrigin(Visual* __this) { ::g::Uno::Float2 __retval; return Visual__get_AbsoluteViewportOrigin_fn(__this, &__retval), __retval; }
-inline ::g::Uno::Geometry::Box Visual::LocalBounds(Visual* __this) { ::g::Uno::Geometry::Box __retval; return Visual__get_LocalBounds_fn(__this, &__retval), __retval; }
+inline ::g::Fuse::Box Visual::LocalBounds(Visual* __this) { ::g::Fuse::Box __retval; return Visual__get_LocalBounds_fn(__this, &__retval), __retval; }
 // }
 
 }} // ::g::Fuse

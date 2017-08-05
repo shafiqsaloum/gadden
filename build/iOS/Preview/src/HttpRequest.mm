@@ -2,7 +2,7 @@
 
 #include <Uno.Byte.h>
 #include <Uno.String.h>
-#include <Uno.Net.Http.HttpMess-1d2e0b2f.h>
+#include <Uno.Net.Http.HttpMessageHandlerRequest.h>
 
 #include <Foundation/Foundation.h>
 

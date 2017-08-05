@@ -1,19 +1,19 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <_root.OutracksSimulat-28d0228.h>
-#include <_root.OutracksSimulat-3176f451.h>
-#include <_root.OutracksSimulat-41c33877.h>
-#include <_root.OutracksSimulat-4a6a98a8.h>
-#include <_root.OutracksSimulat-61b10ffd.h>
-#include <_root.OutracksSimulat-72874f79.h>
-#include <_root.OutracksSimulat-7329dae0.h>
-#include <_root.OutracksSimulat-7f31d2ed.h>
-#include <_root.OutracksSimulat-84973ed3.h>
-#include <_root.OutracksSimulat-88868d11.h>
-#include <_root.OutracksSimulat-afca775d.h>
-#include <_root.OutracksSimulat-c5ccb7a7.h>
-#include <_root.OutracksSimulat-d5b16023.h>
+#include <_root.OutracksSimulatorClientUno_accessor_Outracks_Simulator_Cl-28d0228.h>
+#include <_root.OutracksSimulatorClientUno_accessor_Outracks_Simulator_Cl-41c33877.h>
+#include <_root.OutracksSimulatorClientUno_accessor_Outracks_Simulator_Cl-61b10ffd.h>
+#include <_root.OutracksSimulatorClientUno_accessor_Outracks_Simulator_Cl-c5ccb7a7.h>
+#include <_root.OutracksSimulatorClientUno_accessor_Outracks_Simulator_Cl-d5b16023.h>
+#include <_root.OutracksSimulatorClientUno_bundle.h>
+#include <_root.OutracksSimulatorClientUno_FuseControlsTextControl_Value_Property.h>
+#include <_root.OutracksSimulatorClientUno_FuseTriggersWhileString_Value_Property.h>
+#include <_root.OutracksSimulatorClientUno_OutracksSimulatorClientDialogs-3176f451.h>
+#include <_root.OutracksSimulatorClientUno_OutracksSimulatorClientDialogs-4a6a98a8.h>
+#include <_root.OutracksSimulatorClientUno_OutracksSimulatorClientDialogs-72874f79.h>
+#include <_root.OutracksSimulatorClientUno_OutracksSimulatorClientDialogs-84973ed3.h>
+#include <_root.OutracksSimulatorClientUno_OutracksSimulatorClientDialogs-88868d11.h>
 #include <Fuse.Controls.ClientPanel.h>
 #include <Fuse.Controls.Grid.h>
 #include <Fuse.Controls.Image.h>
@@ -29,7 +29,7 @@
 #include <Fuse.Elements.Element.h>
 #include <Fuse.NodeGroupBase.h>
 #include <Fuse.Reactive.BindingMode.h>
-#include <Fuse.Reactive.Constan-264ec80.h>
+#include <Fuse.Reactive.ConstantExpression.h>
 #include <Fuse.Reactive.DataBinding.h>
 #include <Fuse.Reactive.IExpression.h>
 #include <Fuse.Reactive.Property.h>
@@ -37,8 +37,8 @@
 #include <Fuse.Triggers.WhileString.h>
 #include <Fuse.Triggers.WhileStringTest.h>
 #include <Fuse.Visual.h>
-#include <Outracks.Simulator.Cl-1b215019.h>
-#include <Outracks.Simulator.Cl-b47ea6ce.h>
+#include <Outracks.Simulator.Client.Dialogs.LoadingScreen.h>
+#include <Outracks.Simulator.Client.Dialogs.ModalDialog.h>
 #include <Uno.Bool.h>
 #include <Uno.Float.h>
 #include <Uno.Float4.h>
@@ -142,6 +142,8 @@ static void LoadingScreen_build(uType* type)
     type->fp_ctor_ = (void*)LoadingScreen__New4_fn;
     type->fp_cctor_ = LoadingScreen__cctor_4_fn;
     type->interface15.fp_Draw = (void(*)(uObject*, ::g::Fuse::Drawing::Surface*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableDraw_fn;
+    type->interface15.fp_get_IsPrimary = (void(*)(uObject*, bool*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_IsPrimary_fn;
+    type->interface15.fp_get_ElementSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_ElementSize_fn;
     type->interface10.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
     type->interface12.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
     type->interface11.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;
@@ -436,6 +438,8 @@ static void ModalDialog_build(uType* type)
     type->fp_ctor_ = (void*)ModalDialog__New4_fn;
     type->fp_cctor_ = ModalDialog__cctor_4_fn;
     type->interface15.fp_Draw = (void(*)(uObject*, ::g::Fuse::Drawing::Surface*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableDraw_fn;
+    type->interface15.fp_get_IsPrimary = (void(*)(uObject*, bool*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_IsPrimary_fn;
+    type->interface15.fp_get_ElementSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_ElementSize_fn;
     type->interface10.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
     type->interface12.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
     type->interface11.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;

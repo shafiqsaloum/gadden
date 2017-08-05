@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.h>
 namespace g{namespace Fuse{struct GraphicsWorker;}}
 namespace g{namespace ObjC{struct Object;}}
+namespace g{namespace Uno{namespace Threading{struct AutoResetEvent;}}}
 namespace g{namespace Uno{namespace Threading{struct ConcurrentQueue;}}}
 namespace g{namespace Uno{namespace Threading{struct Thread;}}}
 namespace g{namespace Uno{struct Exception;}}
@@ -12,7 +13,7 @@ namespace g{namespace Uno{struct Exception;}}
 namespace g{
 namespace Fuse{
 
-// public static class GraphicsWorker :1933
+// public static class GraphicsWorker :2087
 // {
 uClassType* GraphicsWorker_typeof();
 void GraphicsWorker__CreateContext_fn(::g::ObjC::Object** __retval);
@@ -27,6 +28,8 @@ struct GraphicsWorker : uObject
 {
     static uSStrong< ::g::Uno::Threading::ConcurrentQueue*> _exceptionQueue_;
     static uSStrong< ::g::Uno::Threading::ConcurrentQueue*>& _exceptionQueue() { return GraphicsWorker_typeof()->Init(), _exceptionQueue_; }
+    static uSStrong< ::g::Uno::Threading::AutoResetEvent*> _resetEvent_;
+    static uSStrong< ::g::Uno::Threading::AutoResetEvent*>& _resetEvent() { return GraphicsWorker_typeof()->Init(), _resetEvent_; }
     static bool _terminating_;
     static bool& _terminating() { return GraphicsWorker_typeof()->Init(), _terminating_; }
     static uSStrong< ::g::Uno::Threading::Thread*> _thread_;

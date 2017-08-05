@@ -1,10 +1,10 @@
-// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/AboutAboutUs.g.uno.
+// This file was generated based on build/iOS/Preview/cache/ux11/AboutAboutUs.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.AboutAboutUs.h>
-#include <_root.gadden_AboutAbo-874af215.h>
-#include <_root.gadden_accessor-c35ff9ef.h>
-#include <_root.gadden_FuseCont-44c720e0.h>
+#include <_root.gadden_AboutAboutUs_Text_Property.h>
+#include <_root.gadden_accessor_AboutAboutUs_Text.h>
+#include <_root.gadden_FuseControlsTextControl_Value_Property.h>
 #include <_root.MainView.h>
 #include <Fuse.Controls.Control.h>
 #include <Fuse.Controls.Text.h>
@@ -15,7 +15,7 @@
 #include <Fuse.Elements.Element.h>
 #include <Fuse.Font.h>
 #include <Fuse.Reactive.BindingMode.h>
-#include <Fuse.Reactive.Constan-264ec80.h>
+#include <Fuse.Reactive.ConstantExpression.h>
 #include <Fuse.Reactive.DataBinding.h>
 #include <Fuse.Reactive.IExpression.h>
 #include <Fuse.Reactive.Property.h>
@@ -103,6 +103,8 @@ static void AboutAboutUs_build(uType* type)
     type->fp_ctor_ = (void*)AboutAboutUs__New4_fn;
     type->fp_cctor_ = AboutAboutUs__cctor_4_fn;
     type->interface15.fp_Draw = (void(*)(uObject*, ::g::Fuse::Drawing::Surface*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableDraw_fn;
+    type->interface15.fp_get_IsPrimary = (void(*)(uObject*, bool*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_IsPrimary_fn;
+    type->interface15.fp_get_ElementSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_ElementSize_fn;
     type->interface10.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
     type->interface12.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
     type->interface11.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/input/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Input{
 
-// private sealed class Pointer.PELHolder :1740
+// private sealed class Pointer.PELHolder :1748
 // {
 uType* Pointer__PELHolder_typeof();
 void Pointer__PELHolder__ctor__fn(Pointer__PELHolder* __this);

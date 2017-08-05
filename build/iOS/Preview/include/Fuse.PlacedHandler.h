@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -7,7 +7,7 @@
 namespace g{
 namespace Fuse{
 
-// public delegate void PlacedHandler(object sender, Fuse.PlacedArgs args) :4674
+// public delegate void PlacedHandler(object sender, Fuse.PlacedArgs args) :4549
 uDelegateType* PlacedHandler_typeof();
 
 }} // ::g::Fuse

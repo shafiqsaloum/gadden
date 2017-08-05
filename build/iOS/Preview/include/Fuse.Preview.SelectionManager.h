@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Preview{
 
-// public static class SelectionManager :2862
+// public static class SelectionManager :3136
 // {
 uClassType* SelectionManager_typeof();
 void SelectionManager__IsSelected_fn(uObject* obj, bool* __retval);

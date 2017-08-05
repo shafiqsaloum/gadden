@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Testing/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -24,7 +24,7 @@ namespace g{
 namespace Fuse{
 namespace Testing{
 
-// internal sealed class TestRootViewport :86
+// internal sealed class TestRootViewport :92
 // {
 struct TestRootViewport_type : ::g::Fuse::RootViewport_type
 {

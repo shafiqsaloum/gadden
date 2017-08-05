@@ -6,7 +6,7 @@
 #include <Fuse.Effects.BasicEffect.h>
 #include <Fuse.Effects.Blur.h>
 #include <Fuse.Effects.Desaturate.h>
-#include <Fuse.Effects.DropShad-41b5d682.h>
+#include <Fuse.Effects.DropShadow.Blitter.h>
 #include <Fuse.Effects.DropShadow.h>
 #include <Fuse.Effects.Duotone.h>
 #include <Fuse.Effects.Effect.h>
@@ -44,15 +44,15 @@
 #include <Uno.Graphics.PolygonFace.h>
 #include <Uno.Graphics.SamplerState.h>
 #include <Uno.Graphics.Texture2D.h>
-#include <Uno.Graphics.VertexAt-4a875e1d.h>
+#include <Uno.Graphics.VertexAttributeType.h>
 #include <Uno.Graphics.VertexBuffer.h>
 #include <Uno.Int.h>
 #include <Uno.Int2.h>
 #include <Uno.Math.h>
 #include <Uno.Matrix.h>
 #include <Uno.Rect.h>
-#include <Uno.Runtime.Implement-6e9df330.h>
-#include <Uno.Runtime.Implement-81e7ab4c.h>
+#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
 #include <Uno.String.h>
 #include <Uno.UShort.h>
 #include <Uno.UX.FileSource.h>
@@ -63,8 +63,8 @@ namespace g{
 namespace Fuse{
 namespace Effects{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public abstract class BasicEffect :9
 // {
@@ -155,14 +155,14 @@ void BasicEffect::ctor_3(int effectType)
 // internal static Uno.Recti ConservativelySnapToCoveringIntegers(Uno.Rect r) [static] :24
 ::g::Uno::Recti BasicEffect::ConservativelySnapToCoveringIntegers(::g::Uno::Rect r)
 {
-    ::g::Uno::Int2 origin = ::g::Uno::Int2__op_Explicit(::g::Uno::Math::Floor2(r.LeftTop()));
-    ::g::Uno::Int2 size = ::g::Uno::Int2__op_Explicit(::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Addition1(::g::Uno::Float2__op_Subtraction2(r.RightBottom(), r.LeftTop()), 0.01f)));
+    ::g::Uno::Int2 origin = ::g::Uno::Int2__op_Explicit1(::g::Uno::Math::Floor2(r.LeftTop()));
+    ::g::Uno::Int2 size = ::g::Uno::Int2__op_Explicit1(::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Addition1(::g::Uno::Float2__op_Subtraction2(r.RightBottom(), r.LeftTop()), 0.01f)));
     return ::g::Uno::Recti__New1(origin.X, origin.Y, (origin.X + size.X) + 1, (origin.Y + size.Y) + 1);
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // private sealed class DropShadow.Blitter :461
 // {
@@ -279,8 +279,8 @@ DropShadow__Blitter* DropShadow__Blitter::Instance()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class Blur :62
 // {
@@ -484,8 +484,8 @@ Blur* Blur::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class Desaturate :139
 // {
@@ -647,8 +647,8 @@ Desaturate* Desaturate::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class DropShadow :300
 // {
@@ -1000,8 +1000,8 @@ DropShadow* DropShadow::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class Duotone :201
 // {
@@ -1233,8 +1233,8 @@ Duotone* Duotone::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/effects/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.1.1/effects/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public abstract class Effect :17
 // {
@@ -1469,8 +1469,8 @@ int Effect::Type()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // internal partial sealed class EffectHelpers :498
 // {
@@ -1596,7 +1596,7 @@ void EffectHelpers::ctor_()
         maxSamples = maxSamples * 2;
     }
 
-    ::g::Uno::Int2 samples = ::g::Uno::Int2__op_Explicit(::g::Uno::Math::Max2(::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Multiply(3.0f, sigmas)), 1.0f));
+    ::g::Uno::Int2 samples = ::g::Uno::Int2__op_Explicit1(::g::Uno::Math::Max2(::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Multiply(3.0f, sigmas)), 1.0f));
     ::g::Uno::Graphics::Framebuffer* tmp = BlurHorizontal(dc, uPtr(src)->Size(), src, sigmas.X, samples.X);
 
     if (fb != NULL)
@@ -1735,8 +1735,8 @@ EffectHelpers* EffectHelpers::Instance()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/effects/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.1.1/effects/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public enum EffectType :10
 uEnumType* EffectType_typeof()
@@ -1752,8 +1752,8 @@ uEnumType* EffectType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class Halftone :730
 // {
@@ -2064,8 +2064,8 @@ Halftone* Halftone::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class Mask :874
 // {
@@ -2386,8 +2386,8 @@ Mask* Mask::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public enum Mask.MaskMode :902
 uEnumType* Mask__MaskMode_typeof()

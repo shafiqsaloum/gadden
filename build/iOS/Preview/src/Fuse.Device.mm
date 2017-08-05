@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.iOS/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.Device.h>
@@ -9,7 +9,7 @@
 namespace g{
 namespace Fuse{
 
-// internal static extern class Device :236
+// internal static extern class Device :252
 // {
 static void Device_build(uType* type)
 {
@@ -27,31 +27,31 @@ uClassType* Device_typeof()
     return type;
 }
 
-// private static int GetCurrentOrientation() :249
+// private static int GetCurrentOrientation() :265
 void Device__GetCurrentOrientation_fn(int* __retval)
 {
     *__retval = Device::GetCurrentOrientation();
 }
 
-// private static int GetStatusBarOrientation() :255
+// private static int GetStatusBarOrientation() :271
 void Device__GetStatusBarOrientation_fn(int* __retval)
 {
     *__retval = Device::GetStatusBarOrientation();
 }
 
-// public static int get_Orientation() :240
+// public static int get_Orientation() :256
 void Device__get_Orientation_fn(int* __retval)
 {
     *__retval = Device::Orientation();
 }
 
-// public static int get_StatusBarOrientation() :245
+// public static int get_StatusBarOrientation() :261
 void Device__get_StatusBarOrientation_fn(int* __retval)
 {
     *__retval = Device::StatusBarOrientation();
 }
 
-// private static int GetCurrentOrientation() [static] :249
+// private static int GetCurrentOrientation() [static] :265
 int Device::GetCurrentOrientation()
 {
     @autoreleasepool
@@ -61,7 +61,7 @@ int Device::GetCurrentOrientation()
     
 }
 
-// private static int GetStatusBarOrientation() [static] :255
+// private static int GetStatusBarOrientation() [static] :271
 int Device::GetStatusBarOrientation()
 {
     @autoreleasepool
@@ -71,13 +71,13 @@ int Device::GetStatusBarOrientation()
     
 }
 
-// public static int get_Orientation() [static] :240
+// public static int get_Orientation() [static] :256
 int Device::Orientation()
 {
     return Device::GetCurrentOrientation();
 }
 
-// public static int get_StatusBarOrientation() [static] :245
+// public static int get_StatusBarOrientation() [static] :261
 int Device::StatusBarOrientation()
 {
     return Device::GetStatusBarOrientation();

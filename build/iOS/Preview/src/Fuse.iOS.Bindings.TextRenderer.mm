@@ -1,11 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.Controls.TextControl.h>
 #include <Fuse.DrawContext.h>
 #include <Fuse.ICommonViewport.h>
 #include <Fuse.iOS.Bindings.Blitter.h>
-#include <Fuse.iOS.Bindings.CGC-1303de24.h>
+#include <Fuse.iOS.Bindings.CGColorSpaceRef.h>
 #include <Fuse.iOS.Bindings.CGContextRef.h>
 #include <Fuse.iOS.Bindings.TextLayout.h>
 #include <Fuse.iOS.Bindings.TextRenderer.h>
@@ -195,7 +195,7 @@ void TextRenderer::Draw(::g::Fuse::DrawContext* dc, ::g::Fuse::Visual* where)
     if (uPtr(_textLayout)->UpdateLayout(_control, _arrangeSize, false))
         InvalidateTexture();
 
-    ::g::Uno::Int2 pixelSize = ::g::Uno::Int2__op_Explicit(::g::Uno::Math::Ceil2(uPtr(_textLayout)->PixelBounds.Size()));
+    ::g::Uno::Int2 pixelSize = ::g::Uno::Int2__op_Explicit1(::g::Uno::Math::Ceil2(uPtr(_textLayout)->PixelBounds.Size()));
 
     if ((((pixelSize.X < 1) || (pixelSize.Y < 1)) || (pixelSize.X > ::g::Uno::Graphics::Texture2D::MaxSize())) || (pixelSize.Y > ::g::Uno::Graphics::Texture2D::MaxSize()))
         return;

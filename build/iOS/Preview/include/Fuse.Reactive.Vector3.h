@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Expressions/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Reactive.Expressions/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public sealed class Vector3 :1290
+// public sealed class Vector3 :1755
 // {
 ::g::Fuse::Reactive::TernaryOperator_type* Vector3_typeof();
 void Vector3__ctor_2_fn(Vector3* __this, ::g::Fuse::Reactive::Expression* x, ::g::Fuse::Reactive::Expression* y, ::g::Fuse::Reactive::Expression* z);

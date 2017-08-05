@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Text{
 
-// public sealed class FallingBackFontFace :590
+// public sealed class FallingBackFontFace :589
 // {
 ::g::Fuse::Text::FontFace_type* FallingBackFontFace_typeof();
 void FallingBackFontFace__ctor_1_fn(FallingBackFontFace* __this, uArray* fontFaces);

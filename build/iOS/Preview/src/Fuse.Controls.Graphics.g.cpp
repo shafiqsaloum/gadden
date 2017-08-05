@@ -1,7 +1,7 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.Graphic-2a754d11.h>
+#include <Fuse.Controls.Graphics.ControlVisual-1.h>
 #include <Fuse.Controls.Graphics.Visual.h>
 #include <Fuse.FastMatrix.h>
 #include <Fuse.LayoutParams.h>
@@ -23,8 +23,8 @@ namespace Fuse{
 namespace Controls{
 namespace Graphics{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.1.1/graphics/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract class ControlVisual<T> :6
 // {
@@ -45,7 +45,7 @@ static void ControlVisual_build(uType* type)
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(ControlVisual_type, interface7),
         ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(ControlVisual_type, interface8),
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(ControlVisual_type, interface9));
-    type->SetFields(57,
+    type->SetFields(58,
         type->T(0), (uintptr_t)0, uFieldFlagsConstrained);
 }
 
@@ -56,7 +56,7 @@ ControlVisual_type* ControlVisual_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Graphics::Visual_typeof();
-    options.FieldCount = 58;
+    options.FieldCount = 59;
     options.GenericCount = 1;
     options.InterfaceCount = 10;
     options.PrecalcCount = 1;
@@ -166,8 +166,8 @@ void ControlVisual::ctor_4()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.1.1/graphics/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract class Visual :60
 // {
@@ -184,7 +184,7 @@ static void Visual_build(uType* type)
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(::g::Fuse::Visual_type, interface7),
         ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Visual_type, interface8),
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Visual_type, interface9));
-    type->SetFields(55,
+    type->SetFields(56,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Controls::Graphics::Visual, _position), 0,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Controls::Graphics::Visual, _ActualSize), 0);
     type->Reflection.SetFunctions(1,
@@ -198,7 +198,7 @@ static void Visual_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Visual_typeof();
-    options.FieldCount = 57;
+    options.FieldCount = 58;
     options.InterfaceCount = 10;
     options.ObjectSize = sizeof(Visual);
     options.TypeSize = sizeof(::g::Fuse::Visual_type);

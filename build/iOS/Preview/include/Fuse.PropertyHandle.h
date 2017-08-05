@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace Fuse{struct PropertyHandle;}}
 namespace g{
 namespace Fuse{
 
-// public sealed class PropertyHandle :2655
+// public sealed class PropertyHandle :2899
 // {
 uType* PropertyHandle_typeof();
 void PropertyHandle__ctor__fn(PropertyHandle* __this);

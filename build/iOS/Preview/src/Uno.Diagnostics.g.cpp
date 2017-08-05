@@ -6,18 +6,18 @@
 #include <Uno.Collections.List-1.h>
 #include <Uno.Delegate.h>
 #include <Uno.Diagnostics.AllocateEvent.h>
-#include <Uno.Diagnostics.Alway-797f5864.h>
-#include <Uno.Diagnostics.Asser-ca8bbf62.h>
+#include <Uno.Diagnostics.AlwaysProfileAttribute.h>
+#include <Uno.Diagnostics.AssertionHandler.h>
 #include <Uno.Diagnostics.Clock.h>
 #include <Uno.Diagnostics.Debug.h>
-#include <Uno.Diagnostics.Debug-5d778620.h>
+#include <Uno.Diagnostics.DebugMessageType.h>
 #include <Uno.Diagnostics.EnterEvent.h>
 #include <Uno.Diagnostics.EventType.h>
 #include <Uno.Diagnostics.ExitEvent.h>
 #include <Uno.Diagnostics.FreeEvent.h>
 #include <Uno.Diagnostics.IdMap-1.h>
 #include <Uno.Diagnostics.LogHandler.h>
-#include <Uno.Diagnostics.Never-614590f9.h>
+#include <Uno.Diagnostics.NeverProfileAttribute.h>
 #include <Uno.Diagnostics.Profile.h>
 #include <Uno.Diagnostics.ProfileData.h>
 #include <Uno.Diagnostics.ProfileEvent.h>
@@ -25,8 +25,8 @@
 #include <Uno.Int.h>
 #include <Uno.Long.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implement-2110557a.h>
-#include <Uno.Runtime.Implement-6eefa8cd.h>
+#include <Uno.Runtime.Implementation.ClockImpl.h>
+#include <Uno.Runtime.Implementation.DebugImpl.h>
 #include <Uno.String.h>
 static uString* STRINGS[5];
 static uType* TYPES[5];
@@ -35,8 +35,8 @@ namespace g{
 namespace Uno{
 namespace Diagnostics{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public sealed class AllocateEvent :5
 // {
@@ -68,8 +68,8 @@ void AllocateEvent__get_Type_fn(AllocateEvent* __this, int* __retval)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public sealed class AlwaysProfileAttribute :292
 // {
@@ -121,8 +121,8 @@ AlwaysProfileAttribute* AlwaysProfileAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public delegate void AssertionHandler(bool value, string expression, string filename, int line, object[] operands) :69
 uDelegateType* AssertionHandler_typeof()
@@ -140,8 +140,8 @@ uDelegateType* AssertionHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public static class Clock :31
 // {
@@ -202,8 +202,8 @@ int Clock::GetTimezoneOffset(int year, int month, int day)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public static class Debug :75
 // {
@@ -358,8 +358,8 @@ void Debug::SetLogHandler(uDelegate* handler)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public enum DebugMessageType :59
 uEnumType* DebugMessageType_typeof()
@@ -377,8 +377,8 @@ uEnumType* DebugMessageType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public sealed class EnterEvent :187
 // {
@@ -410,8 +410,8 @@ void EnterEvent__get_Type_fn(EnterEvent* __this, int* __retval)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public enum EventType :204
 uEnumType* EventType_typeof()
@@ -428,8 +428,8 @@ uEnumType* EventType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public sealed class ExitEvent :215
 // {
@@ -490,8 +490,8 @@ ExitEvent* ExitEvent::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public sealed class FreeEvent :226
 // {
@@ -523,8 +523,8 @@ void FreeEvent__get_Type_fn(FreeEvent* __this, int* __retval)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public sealed class IdMap<T> :249
 // {
@@ -592,8 +592,8 @@ IdMap* IdMap::New1(uType* __type, bool twoWay)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public delegate void LogHandler(string message, Uno.Diagnostics.DebugMessageType type) :72
 uDelegateType* LogHandler_typeof()
@@ -608,8 +608,8 @@ uDelegateType* LogHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public sealed class NeverProfileAttribute :293
 // {
@@ -661,8 +661,8 @@ NeverProfileAttribute* NeverProfileAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public static class Profile :295
 // {
@@ -690,8 +690,8 @@ uClassType* Profile_typeof()
 double Profile::StartTimeStamp_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public sealed class ProfileData :385
 // {
@@ -756,8 +756,8 @@ ProfileData* ProfileData::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno
-// ----------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/diagnostics/$.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public abstract class ProfileEvent :398
 // {

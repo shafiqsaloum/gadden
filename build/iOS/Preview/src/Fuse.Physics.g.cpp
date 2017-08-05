@@ -1,19 +1,20 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Animations.Anima-9f6f3909.h>
+#include <Fuse.Animations.AnimationVariant.h>
+#include <Fuse.Box.h>
 #include <Fuse.Elements.Element.h>
 #include <Fuse.Input.Pointer.h>
-#include <Fuse.Input.PointerEnt-cfe04f3d.h>
+#include <Fuse.Input.PointerEnteredHandler.h>
 #include <Fuse.Input.PointerEventArgs.h>
 #include <Fuse.Input.PointerLeftHandler.h>
 #include <Fuse.Input.PointerMovedArgs.h>
 #include <Fuse.Input.PointerMovedHandler.h>
-#include <Fuse.Input.PointerPre-d85d5994.h>
 #include <Fuse.Input.PointerPressedArgs.h>
-#include <Fuse.Input.PointerRel-5863e73d.h>
+#include <Fuse.Input.PointerPressedHandler.h>
 #include <Fuse.Input.PointerReleasedArgs.h>
-#include <Fuse.Input.PointerWhe-d06481ac.h>
+#include <Fuse.Input.PointerReleasedHandler.h>
+#include <Fuse.Input.PointerWheelMovedHandler.h>
 #include <Fuse.Node.h>
 #include <Fuse.Physics.Axis2D.h>
 #include <Fuse.Physics.Body.h>
@@ -21,12 +22,12 @@
 #include <Fuse.Physics.Draggable.h>
 #include <Fuse.Physics.EnteredForceField.h>
 #include <Fuse.Physics.ExitedForceField.h>
-#include <Fuse.Physics.ForceFie-91943ec1.h>
-#include <Fuse.Physics.ForceFie-b92741a1.h>
-#include <Fuse.Physics.ForceFie-bad7f0a0.h>
 #include <Fuse.Physics.ForceField.h>
+#include <Fuse.Physics.ForceFieldEventArgs.h>
+#include <Fuse.Physics.ForceFieldEventHandler.h>
+#include <Fuse.Physics.ForceFieldEventTrigger.h>
 #include <Fuse.Physics.ForceFieldTrigger.h>
-#include <Fuse.Physics.InForceF-dbd43c1e.h>
+#include <Fuse.Physics.InForceFieldAnimation.h>
 #include <Fuse.Physics.IRule.h>
 #include <Fuse.Physics.PointAttractor.h>
 #include <Fuse.Physics.Spring.h>
@@ -48,8 +49,8 @@
 #include <Uno.Collections.IEnumerator.h>
 #include <Uno.Collections.IEnumerator-1.h>
 #include <Uno.Collections.IList-1.h>
+#include <Uno.Collections.List-1.Enumerator.h>
 #include <Uno.Collections.List-1.h>
-#include <Uno.Collections.List--251bdc7d.h>
 #include <Uno.Delegate.h>
 #include <Uno.Double.h>
 #include <Uno.Float.h>
@@ -57,7 +58,6 @@
 #include <Uno.Float3.h>
 #include <Uno.Float4.h>
 #include <Uno.Float4x4.h>
-#include <Uno.Geometry.Box.h>
 #include <Uno.Int.h>
 #include <Uno.Math.h>
 #include <Uno.Object.h>
@@ -69,8 +69,8 @@ namespace g{
 namespace Fuse{
 namespace Physics{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public enum Axis2D :199
 uEnumType* Axis2D_typeof()
@@ -86,8 +86,8 @@ uEnumType* Axis2D_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // internal sealed class Body :9
 // {
@@ -423,8 +423,8 @@ void Body::SetFriction(::g::Fuse::Visual* n, float friction)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public static class BodyAttr :176
 // {
@@ -474,8 +474,8 @@ void BodyAttr::SetFriction(::g::Fuse::Visual* n, float friction)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class Draggable :209
 // {
@@ -763,8 +763,8 @@ Draggable* Draggable::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class EnteredForceField :470
 // {
@@ -887,8 +887,8 @@ EnteredForceField* EnteredForceField::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class ExitedForceField :507
 // {
@@ -1011,8 +1011,8 @@ ExitedForceField* ExitedForceField::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public abstract class ForceField :355
 // {
@@ -1114,8 +1114,8 @@ void ForceField::ctor_3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class ForceFieldEventArgs :415
 // {
@@ -1233,8 +1233,8 @@ ForceFieldEventArgs* ForceFieldEventArgs::New2(::g::Fuse::Physics::Body* body, :
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public delegate void ForceFieldEventHandler(object sender, Fuse.Physics.ForceFieldEventArgs args) :429
 uDelegateType* ForceFieldEventHandler_typeof()
@@ -1249,8 +1249,8 @@ uDelegateType* ForceFieldEventHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public abstract class ForceFieldEventTrigger :431
 // {
@@ -1365,8 +1365,8 @@ void ForceFieldEventTrigger::OnTriggered(::g::Fuse::Physics::Body* body)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public abstract class ForceFieldTrigger :394
 // {
@@ -1483,8 +1483,8 @@ void ForceFieldTrigger::SetForce1(::g::Fuse::Physics::ForceField* field, ::g::Fu
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class InForceFieldAnimation :549
 // {
@@ -1632,8 +1632,8 @@ InForceFieldAnimation* InForceFieldAnimation::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // internal abstract interface IRule :779
 // {
@@ -1647,8 +1647,8 @@ uInterfaceType* IRule_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class PointAttractor :584
 // {
@@ -1992,8 +1992,8 @@ PointAttractor* PointAttractor::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class Spring :690
 // {
@@ -2221,8 +2221,8 @@ Spring* Spring::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class WhileDragging :327
 // {
@@ -2348,8 +2348,8 @@ WhileDragging* WhileDragging::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class World :786
 // {

@@ -1,4 +1,4 @@
-// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/SmallText.g.uno.
+// This file was generated based on build/iOS/Preview/cache/ux11/SmallText.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.MainView.h>

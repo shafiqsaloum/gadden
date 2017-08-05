@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace Fuse{struct RequiresRootedException;}}
 namespace g{
 namespace Fuse{
 
-// public sealed class RequiresRootedException :7469
+// public sealed class RequiresRootedException :7954
 // {
 ::g::Uno::Exception_type* RequiresRootedException_typeof();
 void RequiresRootedException__ctor_3_fn(RequiresRootedException* __this);

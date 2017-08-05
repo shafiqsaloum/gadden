@@ -1,20 +1,20 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/shapes/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/shapes/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Shape.h>
-#include <Fuse.Drawing.IDrawObj-d34d045e.h>
+#include <Fuse.Drawing.IDrawObjectWatcherFeedback.h>
 #include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -34,7 +34,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial sealed class Rectangle :1292
+// public partial sealed class Rectangle :1289
 // {
 ::g::Fuse::Controls::Shape_type* Rectangle_typeof();
 void Rectangle__ctor_7_fn(Rectangle* __this);
@@ -47,6 +47,7 @@ void Rectangle__DrawFill_fn(Rectangle* __this, ::g::Fuse::DrawContext* dc, ::g::
 void Rectangle__DrawStroke_fn(Rectangle* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Drawing::Stroke* stroke);
 void Rectangle__GetConstrainedCornerRadius_fn(Rectangle* __this, ::g::Uno::Float2* sz, ::g::Uno::Float4* __retval);
 void Rectangle__get_NativeRect_fn(Rectangle* __this, uObject** __retval);
+void Rectangle__get_NeedSurface_fn(Rectangle* __this, bool* __retval);
 void Rectangle__New3_fn(Rectangle** __retval);
 void Rectangle__OnHitTestLocalVisual_fn(Rectangle* __this, ::g::Fuse::HitTestContext* htc);
 void Rectangle__PushPropertiesToNativeView_fn(Rectangle* __this);

@@ -1,9 +1,9 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.Native.-e502cdf1.h>
 #include <Fuse.Controls.Native.IView.h>
+#include <Fuse.Controls.Native.ViewHandle.h>
 #include <Uno.IDisposable.h>
 namespace g{namespace Fuse{namespace Controls{namespace Native{namespace iOS{struct View;}}}}}
 namespace g{namespace ObjC{struct Object;}}
@@ -14,7 +14,7 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// public abstract extern class View :3344
+// public abstract extern class View :3179
 // {
 struct View_type : ::g::Fuse::Controls::Native::ViewHandle_type
 {

@@ -1,20 +1,20 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/shapes/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/shapes/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.EllipticalShape.h>
-#include <Fuse.Drawing.IDrawObj-d34d045e.h>
+#include <Fuse.Drawing.IDrawObjectWatcherFeedback.h>
 #include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -32,7 +32,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial sealed class Circle :104
+// public partial sealed class Circle :102
 // {
 ::g::Fuse::Controls::Shape_type* Circle_typeof();
 void Circle__ctor_8_fn(Circle* __this);
@@ -44,6 +44,7 @@ void Circle__DrawFill_fn(Circle* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::
 void Circle__DrawStroke_fn(Circle* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Drawing::Stroke* stroke);
 void Circle__InvalidateSurfacePath_fn(Circle* __this);
 void Circle__get_NativeCircle_fn(Circle* __this, uObject** __retval);
+void Circle__get_NeedSurface_fn(Circle* __this, bool* __retval);
 void Circle__New3_fn(Circle** __retval);
 void Circle__OnHitTestLocalVisual_fn(Circle* __this, ::g::Fuse::HitTestContext* htc);
 void Circle__PushPropertiesToNativeView_fn(Circle* __this);
