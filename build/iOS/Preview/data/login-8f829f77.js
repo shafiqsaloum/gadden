@@ -2,7 +2,7 @@ var Observable = require("FuseJS/Observable");
 var email = Observable("jeremydanner2@gmail.com");
 var name = Observable("Jeremy");
 
-var post = [];
+var APIurl = "";
 function signup(arg) {
 
     var requestObject = {
@@ -16,7 +16,7 @@ function signup(arg) {
     var x = '';
     var y = '';
 
-    fetch(post, {
+    fetch(APIurl, {
         method: 'POST',
         headers: {
             "Content-type": "application/json"
