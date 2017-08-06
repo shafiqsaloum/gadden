@@ -107,7 +107,7 @@ TODO:
           <Image ux:Name="crossIconMap2" Opacity="0" Alignment="TopRight" Width="25" Height="25" Margin="20" File="../../assets/CrossIcon.png" />
 
         <WhileTrue ux:Name="MapToggle2">
-            <Change popupInfoMap.Opacity="1" Duration="0.3" />
+            <Change popupInfoMap2.Opacity="1" Duration="0.3" />
             <Change infoIconMap2.Opacity="0" />
             <Change crossIconMap2.Opacity="1" />
         </WhileTrue>

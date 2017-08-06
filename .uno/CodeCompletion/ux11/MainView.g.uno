@@ -684,6 +684,7 @@ public partial class MainView: Fuse.App
     global::Uno.UX.Property<float> popupInfoMap_Opacity_inst;
     global::Uno.UX.Property<float> infoIconMap_Opacity_inst;
     global::Uno.UX.Property<float> crossIconMap_Opacity_inst;
+    global::Uno.UX.Property<float> popupInfoMap2_Opacity_inst;
     global::Uno.UX.Property<float> infoIconMap2_Opacity_inst;
     global::Uno.UX.Property<float> crossIconMap2_Opacity_inst;
     global::Uno.UX.Property<Fuse.Visual> navigationControlAbout_Active_inst;
@@ -925,7 +926,6 @@ public partial class MainView: Fuse.App
         global::Uno.UX.Resource.SetGlobalKey(global::Fuse.Triggers.IScrolledLengths.ScrollViewSize, "ScrollViewSize");
         global::Uno.UX.Resource.SetGlobalKey(global::Fuse.Resources.MemoryPolicy.PreloadRetain, "PreloadRetain");
         global::Uno.UX.Resource.SetGlobalKey(global::Fuse.Resources.MemoryPolicy.UnloadUnused, "UnloadUnused");
-        global::Uno.UX.Resource.SetGlobalKey(global::Fuse.Resources.MemoryPolicy.QuickUnload, "QuickUnload");
         global::Uno.UX.Resource.SetGlobalKey(global::Fuse.Resources.MemoryPolicy.UnloadInBackgroundPolicy, "UnloadInBackground");
         global::Uno.UX.Resource.SetGlobalKey(global::Fuse.Font.Thin, "Thin");
         global::Uno.UX.Resource.SetGlobalKey(global::Fuse.Font.Light, "Light");
@@ -1092,6 +1092,8 @@ public partial class MainView: Fuse.App
         infoIconMap_Opacity_inst = new gadden_FuseElementsElement_Opacity_Property(infoIconMap, __selector1);
         crossIconMap = new global::Fuse.Controls.Image();
         crossIconMap_Opacity_inst = new gadden_FuseElementsElement_Opacity_Property(crossIconMap, __selector1);
+        popupInfoMap2 = new global::Fuse.Controls.Panel();
+        popupInfoMap2_Opacity_inst = new gadden_FuseElementsElement_Opacity_Property(popupInfoMap2, __selector1);
         infoIconMap2 = new global::Fuse.Controls.Image();
         infoIconMap2_Opacity_inst = new gadden_FuseElementsElement_Opacity_Property(infoIconMap2, __selector1);
         crossIconMap2 = new global::Fuse.Controls.Image();
@@ -1413,10 +1415,9 @@ public partial class MainView: Fuse.App
         var temp343 = new global::Fuse.Gestures.Clicked();
         var temp344 = new global::Fuse.Triggers.Actions.Toggle();
         MapToggle2 = new global::Fuse.Triggers.WhileTrue();
-        var temp345 = new global::Fuse.Animations.Change<float>(popupInfoMap_Opacity_inst);
+        var temp345 = new global::Fuse.Animations.Change<float>(popupInfoMap2_Opacity_inst);
         var temp346 = new global::Fuse.Animations.Change<float>(infoIconMap2_Opacity_inst);
         var temp347 = new global::Fuse.Animations.Change<float>(crossIconMap2_Opacity_inst);
-        popupInfoMap2 = new global::Fuse.Controls.Panel();
         var temp348 = new global::Fuse.Controls.Rectangle();
         var temp349 = new global::Fuse.Controls.StackPanel();
         var temp350 = new global::Fuse.Controls.StackPanel();
@@ -1846,7 +1847,7 @@ public partial class MainView: Fuse.App
         temp192.Children.Add(ExibitorList);
         temp192.Children.Add(ExhibitorDetails);
         temp192.Children.Add(temp214);
-        temp193.LineNumber = 11;
+        temp193.LineNumber = 12;
         temp193.FileName = "Pages/Exhibitor/ExhibitorPage.ux";
         temp193.File = new global::Uno.UX.BundleFileSource(import global::Uno.IO.BundleFile("../../../Pages/Exhibitor/ExhibitorPage.js"));
         ExibitorList.Opacity = 1f;
