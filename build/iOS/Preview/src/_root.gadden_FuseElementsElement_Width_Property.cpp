@@ -10,7 +10,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class gadden_FuseElementsElement_Width_Property :101
+// internal sealed class gadden_FuseElementsElement_Width_Property :91
 // {
 static void gadden_FuseElementsElement_Width_Property_build(uType* type)
 {
@@ -38,32 +38,32 @@ static void gadden_FuseElementsElement_Width_Property_build(uType* type)
     return type;
 }
 
-// public gadden_FuseElementsElement_Width_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) :104
+// public gadden_FuseElementsElement_Width_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) :94
 void gadden_FuseElementsElement_Width_Property__ctor_3_fn(gadden_FuseElementsElement_Width_Property* __this, ::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed Uno.UX.Size Get(Uno.UX.PropertyObject obj) :106
+// public override sealed Uno.UX.Size Get(Uno.UX.PropertyObject obj) :96
 void gadden_FuseElementsElement_Width_Property__Get1_fn(gadden_FuseElementsElement_Width_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Size* __retval)
 {
     uStackFrame __("gadden_FuseElementsElement_Width_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Fuse::Elements::Element*>(obj, ::TYPES[0/*Fuse.Elements.Element*/]))->Width(), void();
 }
 
-// public gadden_FuseElementsElement_Width_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) :104
+// public gadden_FuseElementsElement_Width_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) :94
 void gadden_FuseElementsElement_Width_Property__New1_fn(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name, gadden_FuseElementsElement_Width_Property** __retval)
 {
     *__retval = gadden_FuseElementsElement_Width_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :105
+// public override sealed Uno.UX.PropertyObject get_Object() :95
 void gadden_FuseElementsElement_Width_Property__get_Object_fn(gadden_FuseElementsElement_Width_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, Uno.UX.Size v, Uno.UX.IPropertyListener origin) :107
+// public override sealed void Set(Uno.UX.PropertyObject obj, Uno.UX.Size v, Uno.UX.IPropertyListener origin) :97
 void gadden_FuseElementsElement_Width_Property__Set1_fn(gadden_FuseElementsElement_Width_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Size* v, uObject* origin)
 {
     uStackFrame __("gadden_FuseElementsElement_Width_Property", "Set(Uno.UX.PropertyObject,Uno.UX.Size,Uno.UX.IPropertyListener)");
@@ -71,14 +71,14 @@ void gadden_FuseElementsElement_Width_Property__Set1_fn(gadden_FuseElementsEleme
     uPtr(uCast< ::g::Fuse::Elements::Element*>(obj, ::TYPES[0/*Fuse.Elements.Element*/]))->Width(v_);
 }
 
-// public gadden_FuseElementsElement_Width_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) [instance] :104
+// public gadden_FuseElementsElement_Width_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) [instance] :94
 void gadden_FuseElementsElement_Width_Property::ctor_3(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public gadden_FuseElementsElement_Width_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) [static] :104
+// public gadden_FuseElementsElement_Width_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) [static] :94
 gadden_FuseElementsElement_Width_Property* gadden_FuseElementsElement_Width_Property::New1(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector name)
 {
     gadden_FuseElementsElement_Width_Property* obj1 = (gadden_FuseElementsElement_Width_Property*)uNew(gadden_FuseElementsElement_Width_Property_typeof());

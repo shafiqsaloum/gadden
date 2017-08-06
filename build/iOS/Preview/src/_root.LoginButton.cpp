@@ -1,67 +1,45 @@
 // This file was generated based on build/iOS/Preview/cache/ux11/LoginButton.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <_root.gadden_accessor_LoginButton_Text.h>
-#include <_root.gadden_FuseControlsTextControl_Value_Property.h>
-#include <_root.gadden_LoginButton_Text_Property.h>
 #include <_root.LoginButton.h>
-#include <Fuse.Controls.Text.h>
-#include <Fuse.Controls.TextControl.h>
 #include <Fuse.Drawing.Colors.h>
 #include <Fuse.Elements.Alignment.h>
 #include <Fuse.Elements.Element.h>
 #include <Fuse.Elements.HitTestMode.h>
-#include <Fuse.Reactive.BindingMode.h>
-#include <Fuse.Reactive.ConstantExpression.h>
-#include <Fuse.Reactive.DataBinding.h>
-#include <Fuse.Reactive.IExpression.h>
-#include <Fuse.Reactive.Property.h>
-#include <Fuse.Reactive.This.h>
 #include <Fuse.Visual.h>
 #include <Uno.Bool.h>
 #include <Uno.Float.h>
 #include <Uno.Float4.h>
-#include <Uno.Object.h>
 #include <Uno.String.h>
-#include <Uno.UX.NameTable.h>
-#include <Uno.UX.Property.h>
-#include <Uno.UX.Property-1.h>
-#include <Uno.UX.PropertyAccessor.h>
 #include <Uno.UX.PropertyObject.h>
 #include <Uno.UX.Selector.h>
 static uString* STRINGS[2];
-static uType* TYPES[4];
+static uType* TYPES[1];
 
 namespace g{
 
 // public partial sealed class LoginButton :2
 // {
-// static LoginButton() :24
+// static LoginButton() :19
 static void LoginButton__cctor_4_fn(uType* __type)
 {
-    LoginButton::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 0);
-    LoginButton::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"Value"*/]);
-    LoginButton::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[1/*"Text"*/]);
 }
 
 static void LoginButton_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("Value");
+    ::STRINGS[0] = uString::Const("LOGGA IN / REGISTRERA");
     ::STRINGS[1] = uString::Const("Text");
-    ::TYPES[0] = ::g::Uno::String_typeof()->Array();
-    ::TYPES[1] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL);
-    ::TYPES[2] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Property_typeof(), NULL);
-    ::TYPES[3] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
+    ::TYPES[0] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
     type->SetInterfaces(
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface0),
         ::g::Fuse::Scripting::IScriptObject_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface1),
         ::g::Fuse::IProperties_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface2),
         ::g::Fuse::INotifyUnrooted_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface3),
-        ::TYPES[1/*Uno.Collections.ICollection<Fuse.Binding>*/], offsetof(::g::Fuse::Controls::Panel_type, interface4),
+        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface4),
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface5),
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface6),
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface7),
-        ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/], offsetof(::g::Fuse::Controls::Panel_type, interface8),
+        ::TYPES[0/*Uno.Collections.ICollection<Fuse.Node>*/], offsetof(::g::Fuse::Controls::Panel_type, interface8),
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface9),
         ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface10),
         ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface11),
@@ -70,13 +48,7 @@ static void LoginButton_build(uType* type)
         ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface14),
         ::g::Fuse::Drawing::ISurfaceDrawable_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface15));
     type->SetFields(105,
-        ::g::Uno::UX::NameTable_typeof(), offsetof(::g::LoginButton, __g_nametable1), 0,
-        ::g::Uno::String_typeof(), offsetof(::g::LoginButton, _field_Text), 0,
-        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(::g::LoginButton, temp_Value_inst), 0,
-        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(::g::LoginButton, this_Text_inst), 0,
-        ::TYPES[0/*string[]*/], (uintptr_t)&::g::LoginButton::__g_static_nametable1_, uFieldFlagsStatic,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::LoginButton::__selector0_, uFieldFlagsStatic,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::LoginButton::__selector1_, uFieldFlagsStatic);
+        ::g::Uno::String_typeof(), offsetof(::g::LoginButton, _field_Text), 0);
     type->Reflection.SetFunctions(4,
         new uFunction(".ctor", NULL, (void*)LoginButton__New4_fn, 0, true, type, 0),
         new uFunction("SetText", NULL, (void*)LoginButton__SetText_fn, 0, false, uVoid_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::UX::IPropertyListener_typeof()),
@@ -91,7 +63,7 @@ static void LoginButton_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Panel_typeof();
-    options.FieldCount = 112;
+    options.FieldCount = 106;
     options.InterfaceCount = 16;
     options.ObjectSize = sizeof(LoginButton);
     options.TypeSize = sizeof(::g::Fuse::Controls::Panel_type);
@@ -138,19 +110,19 @@ static void LoginButton_build(uType* type)
     return type;
 }
 
-// public LoginButton() :28
+// public LoginButton() :23
 void LoginButton__ctor_7_fn(LoginButton* __this)
 {
     __this->ctor_7();
 }
 
-// private void InitializeUX() :32
+// private void InitializeUX() :27
 void LoginButton__InitializeUX_fn(LoginButton* __this)
 {
     __this->InitializeUX();
 }
 
-// public LoginButton New() :28
+// public LoginButton New() :23
 void LoginButton__New4_fn(LoginButton** __retval)
 {
     *__retval = LoginButton::New4();
@@ -174,11 +146,7 @@ void LoginButton__set_Text_fn(LoginButton* __this, uString* value)
     __this->Text(value);
 }
 
-uSStrong<uArray*> LoginButton::__g_static_nametable1_;
-::g::Uno::UX::Selector LoginButton::__selector0_;
-::g::Uno::UX::Selector LoginButton::__selector1_;
-
-// public LoginButton() [instance] :28
+// public LoginButton() [instance] :23
 void LoginButton::ctor_7()
 {
     uStackFrame __("LoginButton", ".ctor()");
@@ -186,27 +154,19 @@ void LoginButton::ctor_7()
     InitializeUX();
 }
 
-// private void InitializeUX() [instance] :32
+// private void InitializeUX() [instance] :27
 void LoginButton::InitializeUX()
 {
     uStackFrame __("LoginButton", "InitializeUX()");
-    ::g::Fuse::Reactive::This* temp1 = ::g::Fuse::Reactive::This::New1();
-    ::g::Fuse::Controls::Text* temp = ::g::Fuse::Controls::Text::New3();
-    temp_Value_inst = ::g::gadden_FuseControlsTextControl_Value_Property::New1(temp, LoginButton::__selector0());
-    ::g::Fuse::Reactive::Property* temp2 = ::g::Fuse::Reactive::Property::New1(temp1, ::g::gadden_accessor_LoginButton_Text::Singleton());
-    this_Text_inst = ::g::gadden_LoginButton_Text_Property::New1(this, LoginButton::__selector1());
-    __g_nametable1 = ::g::Uno::UX::NameTable::New1(NULL, LoginButton::__g_static_nametable1());
-    ::g::Fuse::Reactive::DataBinding* temp3 = ::g::Fuse::Reactive::DataBinding::New1(temp_Value_inst, (uObject*)temp2, __g_nametable1, 1);
+    LoginButton* temp = LoginButton::New4();
     Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
     HitTestMode(2);
     Margin(::g::Uno::Float4__New2(4.0f, 4.0f, 4.0f, 4.0f));
     temp->Color(::g::Fuse::Drawing::Colors::Black());
     temp->Alignment(10);
     temp->Margin(::g::Uno::Float4__New2(30.0f, 15.0f, 30.0f, 15.0f));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[1/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp3);
-    uPtr(__g_nametable1)->This(this);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Properties()), ::TYPES[2/*Uno.Collections.ICollection<Uno.UX.Property>*/]), this_Text_inst);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
+    temp->Text(::STRINGS[0/*"LOGGA IN / ...*/]);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
 }
 
 // public void SetText(string value, Uno.UX.IPropertyListener origin) [instance] :11
@@ -234,7 +194,7 @@ void LoginButton::Text(uString* value)
     SetText(value, NULL);
 }
 
-// public LoginButton New() [static] :28
+// public LoginButton New() [static] :23
 LoginButton* LoginButton::New4()
 {
     LoginButton* obj1 = (LoginButton*)uNew(LoginButton_typeof());

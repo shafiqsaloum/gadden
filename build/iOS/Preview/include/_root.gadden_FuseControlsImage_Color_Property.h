@@ -11,7 +11,7 @@ namespace g{struct gadden_FuseControlsImage_Color_Property;}
 
 namespace g{
 
-// internal sealed class gadden_FuseControlsImage_Color_Property :126
+// internal sealed class gadden_FuseControlsImage_Color_Property :116
 // {
 ::g::Uno::UX::Property1_type* gadden_FuseControlsImage_Color_Property_typeof();
 void gadden_FuseControlsImage_Color_Property__ctor_3_fn(gadden_FuseControlsImage_Color_Property* __this, ::g::Fuse::Controls::Image* obj, ::g::Uno::UX::Selector* name);

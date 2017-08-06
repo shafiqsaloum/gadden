@@ -11,7 +11,7 @@ namespace g{struct gadden_FuseReactiveWith_Data_Property;}
 
 namespace g{
 
-// internal sealed class gadden_FuseReactiveWith_Data_Property :109
+// internal sealed class gadden_FuseReactiveWith_Data_Property :99
 // {
 ::g::Uno::UX::Property1_type* gadden_FuseReactiveWith_Data_Property_typeof();
 void gadden_FuseReactiveWith_Data_Property__ctor_3_fn(gadden_FuseReactiveWith_Data_Property* __this, ::g::Fuse::Reactive::With* obj, ::g::Uno::UX::Selector* name);

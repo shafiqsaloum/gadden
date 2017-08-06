@@ -18,9 +18,6 @@
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
 #include <Uno.UX.IPropertyListener.h>
-namespace g{namespace Uno{namespace UX{struct NameTable;}}}
-namespace g{namespace Uno{namespace UX{struct Property1;}}}
-namespace g{namespace Uno{namespace UX{struct Selector;}}}
 namespace g{struct LoginButton;}
 
 namespace g{
@@ -37,16 +34,7 @@ void LoginButton__set_Text_fn(LoginButton* __this, uString* value);
 
 struct LoginButton : ::g::Fuse::Controls::Panel
 {
-    uStrong< ::g::Uno::UX::NameTable*> __g_nametable1;
-    static uSStrong<uArray*> __g_static_nametable1_;
-    static uSStrong<uArray*>& __g_static_nametable1() { return LoginButton_typeof()->Init(), __g_static_nametable1_; }
-    static ::g::Uno::UX::Selector __selector0_;
-    static ::g::Uno::UX::Selector& __selector0() { return LoginButton_typeof()->Init(), __selector0_; }
-    static ::g::Uno::UX::Selector __selector1_;
-    static ::g::Uno::UX::Selector& __selector1() { return LoginButton_typeof()->Init(), __selector1_; }
     uStrong<uString*> _field_Text;
-    uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> this_Text_inst;
 
     void ctor_7();
     void InitializeUX();

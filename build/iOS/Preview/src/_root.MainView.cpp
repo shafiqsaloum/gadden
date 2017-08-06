@@ -14,7 +14,6 @@
 #include <_root.gadden_FuseReactiveEach_Items_Property.h>
 #include <_root.gadden_FuseReactiveWith_Data_Property.h>
 #include <_root.Hamburger.h>
-#include <_root.LoginButton.h>
 #include <_root.MainView.h>
 #include <_root.MainView.Template.h>
 #include <_root.MainView.Template1.h>
@@ -1474,7 +1473,6 @@ void MainView::InitializeUX()
     ::g::Fuse::Controls::Rectangle* temp410 = ::g::Fuse::Controls::Rectangle::New3();
     ::g::Fuse::Controls::Rectangle* temp411 = ::g::Fuse::Controls::Rectangle::New3();
     ::g::Fuse::Controls::Text* temp412 = ::g::Fuse::Controls::Text::New3();
-    ::g::LoginButton* temp413 = ::g::LoginButton::New4();
     temp78->Style(1);
     temp79->Code(::STRINGS[188/*"\n\tvar Obs...*/]);
     temp79->LineNumber(4);
@@ -2572,7 +2570,6 @@ void MainView::InitializeUX()
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp406->Children()), ::TYPES[6/*Uno.Collections.ICollection<Fuse.Node>*/]), temp409);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp406->Children()), ::TYPES[6/*Uno.Collections.ICollection<Fuse.Node>*/]), temp410);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp406->Children()), ::TYPES[6/*Uno.Collections.ICollection<Fuse.Node>*/]), temp411);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp406->Children()), ::TYPES[6/*Uno.Collections.ICollection<Fuse.Node>*/]), temp413);
     temp407->PlaceholderText(::STRINGS[229/*"E-POST"*/]);
     temp407->PlaceholderColor(::g::Fuse::Drawing::Colors::White());
     temp407->TextAlignment(1);
@@ -2613,7 +2610,6 @@ void MainView::InitializeUX()
     temp412->Color(::g::Fuse::Drawing::Colors::Black());
     temp412->Alignment(10);
     temp412->Font(MainView::RalewayBlack());
-    temp413->Text(::STRINGS[231/*"LOGGA IN / ...*/]);
     uPtr(__g_nametable1)->This(this);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[13/*Uno.Collections.ICollection<object>*/]), TheSidebar);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[13/*Uno.Collections.ICollection<object>*/]), sidebarProfile);

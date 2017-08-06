@@ -55,8 +55,6 @@ TODO:
         </Panel>
         <Timeline ux:Name="timeline">
             <Move Target="iconPanel" Y="0.50" Duration="1"   Delay="1" Easing="BackOut" RelativeTo="Size"/>
-            <!-- <Move Target="iconPanel" Y="-2" Duration="1" Delay="1" Easing="BackOut" RelativeTo="Size" /> -->
-            <!-- <Move Target="iconPanel" Duration="0.8" Delay="3.5" Easing="BackOut" X="25"/> -->
         </Timeline>
 
         <Each Items="{IceBreakers}">

@@ -65,7 +65,6 @@ namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Co
 namespace g{namespace Fuse{namespace Controls{struct TextControl_type;}} ::g::Fuse::Controls::TextControl_type* ButtonText_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_AboutAboutUs_Text_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* gadden_accessor_AboutAboutUs_Text_typeof();}
-namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* gadden_accessor_LoginButton_Text_typeof();}
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* gadden_accessor_Tab_Text_typeof();}
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* gadden_accessor_TabSponsor_Text_typeof();}
 namespace g{namespace Uno{namespace UX{struct PropertyAccessor_type;}} ::g::Uno::UX::PropertyAccessor_type* gadden_accessor_TabText_Text_typeof();}
@@ -83,7 +82,6 @@ namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Pr
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_Width_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseReactiveEach_Items_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseReactiveWith_Data_Property_typeof();}
-namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_LoginButton_Text_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_Tab_Text_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_TabSponsor_Text_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_TabText_Text_Property_typeof();}
@@ -2034,7 +2032,6 @@ void uInitRtti()
         (uType*(*)())&::g::ButtonText_typeof,
         (uType*(*)())&::g::gadden_AboutAboutUs_Text_Property_typeof,
         (uType*(*)())&::g::gadden_accessor_AboutAboutUs_Text_typeof,
-        (uType*(*)())&::g::gadden_accessor_LoginButton_Text_typeof,
         (uType*(*)())&::g::gadden_accessor_Tab_Text_typeof,
         (uType*(*)())&::g::gadden_accessor_TabSponsor_Text_typeof,
         (uType*(*)())&::g::gadden_accessor_TabText_Text_typeof,
@@ -2052,7 +2049,6 @@ void uInitRtti()
         (uType*(*)())&::g::gadden_FuseElementsElement_Width_Property_typeof,
         (uType*(*)())&::g::gadden_FuseReactiveEach_Items_Property_typeof,
         (uType*(*)())&::g::gadden_FuseReactiveWith_Data_Property_typeof,
-        (uType*(*)())&::g::gadden_LoginButton_Text_Property_typeof,
         (uType*(*)())&::g::gadden_Tab_Text_Property_typeof,
         (uType*(*)())&::g::gadden_TabSponsor_Text_Property_typeof,
         (uType*(*)())&::g::gadden_TabText_Text_Property_typeof,

@@ -1488,7 +1488,6 @@ public partial class MainView: Fuse.App
         var temp410 = new global::Fuse.Controls.Rectangle();
         var temp411 = new global::Fuse.Controls.Rectangle();
         var temp412 = new global::Fuse.Controls.Text();
-        var temp413 = new global::LoginButton();
         temp78.Style = Fuse.Platform.StatusBarStyle.Light;
         temp79.Code = "\n\tvar Observable = require('FuseJS/Observable');\n\n    function closeTest(){\n        TheSidebar.dismiss()\n    }\n\n    module.exports = {\n\t\t\tcloseTest: closeTest\n\t\t};\n\t";
         temp79.LineNumber = 4;
@@ -2586,7 +2585,6 @@ public partial class MainView: Fuse.App
         temp406.Children.Add(temp409);
         temp406.Children.Add(temp410);
         temp406.Children.Add(temp411);
-        temp406.Children.Add(temp413);
         temp407.PlaceholderText = "E-POST";
         temp407.PlaceholderColor = Fuse.Drawing.Colors.White;
         temp407.TextAlignment = Fuse.Controls.TextAlignment.Center;
@@ -2627,7 +2625,6 @@ public partial class MainView: Fuse.App
         temp412.Color = Fuse.Drawing.Colors.Black;
         temp412.Alignment = Fuse.Elements.Alignment.Center;
         temp412.Font = global::MainView.RalewayBlack;
-        temp413.Text = "LOGGA IN / REGISTRERA";
         __g_nametable.This = this;
         __g_nametable.Objects.Add(TheSidebar);
         __g_nametable.Objects.Add(sidebarProfile);

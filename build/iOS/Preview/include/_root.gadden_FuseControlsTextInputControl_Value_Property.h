@@ -11,7 +11,7 @@ namespace g{struct gadden_FuseControlsTextInputControl_Value_Property;}
 
 namespace g{
 
-// internal sealed class gadden_FuseControlsTextInputControl_Value_Property :117
+// internal sealed class gadden_FuseControlsTextInputControl_Value_Property :107
 // {
 ::g::Uno::UX::Property1_type* gadden_FuseControlsTextInputControl_Value_Property_typeof();
 void gadden_FuseControlsTextInputControl_Value_Property__ctor_3_fn(gadden_FuseControlsTextInputControl_Value_Property* __this, ::g::Fuse::Controls::TextInputControl* obj, ::g::Uno::UX::Selector* name);

@@ -38,16 +38,6 @@ sealed class gadden_accessor_AboutAboutUs_Text: global::Uno.UX.PropertyAccessor
     public override void SetAsObject(global::Uno.UX.PropertyObject obj, object v, global::Uno.UX.IPropertyListener origin) { ((AboutAboutUs)obj).SetText((string)v, origin); }
     public override bool SupportsOriginSetter { get { return true; } }
 }
-sealed class gadden_accessor_LoginButton_Text: global::Uno.UX.PropertyAccessor
-{
-    public static global::Uno.UX.PropertyAccessor Singleton = new gadden_accessor_LoginButton_Text();
-    public override global::Uno.UX.Selector Name { get { return _name; } }
-    static global::Uno.UX.Selector _name = "Text";
-    public override global::Uno.Type PropertyType { get { return typeof(string); } }
-    public override object GetAsObject(global::Uno.UX.PropertyObject obj) { return ((LoginButton)obj).Text; }
-    public override void SetAsObject(global::Uno.UX.PropertyObject obj, object v, global::Uno.UX.IPropertyListener origin) { ((LoginButton)obj).SetText((string)v, origin); }
-    public override bool SupportsOriginSetter { get { return true; } }
-}
 sealed class gadden_FuseControlsShadow_Color_Property: Uno.UX.Property<float4>
 {
     [Uno.WeakReference] readonly Fuse.Controls.Shadow _obj;
@@ -189,14 +179,5 @@ sealed class gadden_AboutAboutUs_Text_Property: Uno.UX.Property<string>
     public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
     public override string Get(global::Uno.UX.PropertyObject obj) { return ((AboutAboutUs)obj).Text; }
     public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((AboutAboutUs)obj).SetText(v, origin); }
-    public override bool SupportsOriginSetter { get { return true; } }
-}
-sealed class gadden_LoginButton_Text_Property: Uno.UX.Property<string>
-{
-    [Uno.WeakReference] readonly LoginButton _obj;
-    public gadden_LoginButton_Text_Property(LoginButton obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
-    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
-    public override string Get(global::Uno.UX.PropertyObject obj) { return ((LoginButton)obj).Text; }
-    public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((LoginButton)obj).SetText(v, origin); }
     public override bool SupportsOriginSetter { get { return true; } }
 }

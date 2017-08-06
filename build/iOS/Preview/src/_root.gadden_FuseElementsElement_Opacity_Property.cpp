@@ -11,7 +11,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class gadden_FuseElementsElement_Opacity_Property :59
+// internal sealed class gadden_FuseElementsElement_Opacity_Property :49
 // {
 static void gadden_FuseElementsElement_Opacity_Property_build(uType* type)
 {
@@ -40,32 +40,32 @@ static void gadden_FuseElementsElement_Opacity_Property_build(uType* type)
     return type;
 }
 
-// public gadden_FuseElementsElement_Opacity_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) :62
+// public gadden_FuseElementsElement_Opacity_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) :52
 void gadden_FuseElementsElement_Opacity_Property__ctor_3_fn(gadden_FuseElementsElement_Opacity_Property* __this, ::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed float Get(Uno.UX.PropertyObject obj) :64
+// public override sealed float Get(Uno.UX.PropertyObject obj) :54
 void gadden_FuseElementsElement_Opacity_Property__Get1_fn(gadden_FuseElementsElement_Opacity_Property* __this, ::g::Uno::UX::PropertyObject* obj, float* __retval)
 {
     uStackFrame __("gadden_FuseElementsElement_Opacity_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Fuse::Elements::Element*>(obj, ::TYPES[0/*Fuse.Elements.Element*/]))->Opacity(), void();
 }
 
-// public gadden_FuseElementsElement_Opacity_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) :62
+// public gadden_FuseElementsElement_Opacity_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) :52
 void gadden_FuseElementsElement_Opacity_Property__New1_fn(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name, gadden_FuseElementsElement_Opacity_Property** __retval)
 {
     *__retval = gadden_FuseElementsElement_Opacity_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :63
+// public override sealed Uno.UX.PropertyObject get_Object() :53
 void gadden_FuseElementsElement_Opacity_Property__get_Object_fn(gadden_FuseElementsElement_Opacity_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, float v, Uno.UX.IPropertyListener origin) :65
+// public override sealed void Set(Uno.UX.PropertyObject obj, float v, Uno.UX.IPropertyListener origin) :55
 void gadden_FuseElementsElement_Opacity_Property__Set1_fn(gadden_FuseElementsElement_Opacity_Property* __this, ::g::Uno::UX::PropertyObject* obj, float* v, uObject* origin)
 {
     uStackFrame __("gadden_FuseElementsElement_Opacity_Property", "Set(Uno.UX.PropertyObject,float,Uno.UX.IPropertyListener)");
@@ -73,20 +73,20 @@ void gadden_FuseElementsElement_Opacity_Property__Set1_fn(gadden_FuseElementsEle
     uPtr(uCast< ::g::Fuse::Elements::Element*>(obj, ::TYPES[0/*Fuse.Elements.Element*/]))->SetOpacity(v_, origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :66
+// public override sealed bool get_SupportsOriginSetter() :56
 void gadden_FuseElementsElement_Opacity_Property__get_SupportsOriginSetter_fn(gadden_FuseElementsElement_Opacity_Property* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-// public gadden_FuseElementsElement_Opacity_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) [instance] :62
+// public gadden_FuseElementsElement_Opacity_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) [instance] :52
 void gadden_FuseElementsElement_Opacity_Property::ctor_3(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public gadden_FuseElementsElement_Opacity_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) [static] :62
+// public gadden_FuseElementsElement_Opacity_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) [static] :52
 gadden_FuseElementsElement_Opacity_Property* gadden_FuseElementsElement_Opacity_Property::New1(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector name)
 {
     gadden_FuseElementsElement_Opacity_Property* obj1 = (gadden_FuseElementsElement_Opacity_Property*)uNew(gadden_FuseElementsElement_Opacity_Property_typeof());

@@ -11,7 +11,7 @@ namespace g{struct gadden_FuseElementsElement_Width_Property;}
 
 namespace g{
 
-// internal sealed class gadden_FuseElementsElement_Width_Property :101
+// internal sealed class gadden_FuseElementsElement_Width_Property :91
 // {
 ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_Width_Property_typeof();
 void gadden_FuseElementsElement_Width_Property__ctor_3_fn(gadden_FuseElementsElement_Width_Property* __this, ::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name);
