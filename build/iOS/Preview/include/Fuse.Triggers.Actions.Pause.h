@@ -1,8 +1,8 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions-baf069a8.h>
+#include <Fuse.Triggers.Actions.PlaybackAction.h>
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct Pause;}}}}
 namespace g{namespace Fuse{struct Node;}}
 

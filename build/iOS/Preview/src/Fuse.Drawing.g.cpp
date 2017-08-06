@@ -2,9 +2,10 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.FuseDrawing_bundle.h>
-#include <_root.FuseDrawingSurf-41037ecc.h>
+#include <_root.FuseDrawingSurface_bundle.h>
 #include <_root.FuseElements_bundle.h>
 #include <CoreGraphicsLib.h>
+#include <Fuse.Controls.Native.ViewHandle.h>
 #include <Fuse.Diagnostics.h>
 #include <Fuse.DrawContext.h>
 #include <Fuse.Drawing.Antialiasing.h>
@@ -12,23 +13,24 @@
 #include <Fuse.Drawing.BrushConverter.h>
 #include <Fuse.Drawing.Brushes.h>
 #include <Fuse.Drawing.Colors.h>
-#include <Fuse.Drawing.CoreGrap-2053a9a9.h>
-#include <Fuse.Drawing.CoreGrap-2753809c.h>
-#include <Fuse.Drawing.CoreGrap-3b03c7e3.h>
-#include <Fuse.Drawing.DrawObje-53c107e5.h>
+#include <Fuse.Drawing.CoreGraphicsDrawHelper.h>
+#include <Fuse.Drawing.CoreGraphicsSurface.h>
+#include <Fuse.Drawing.CoreGraphicsSurfacePath.h>
 #include <Fuse.Drawing.DrawObjectWatcher.h>
+#include <Fuse.Drawing.DrawObjectWatcher.Item.h>
 #include <Fuse.Drawing.DynamicBrush.h>
 #include <Fuse.Drawing.FillRule.h>
 #include <Fuse.Drawing.GradientStop.h>
-#include <Fuse.Drawing.IDrawObj-d34d045e.h>
-#include <Fuse.Drawing.ImageFil-1398d2ef.h>
+#include <Fuse.Drawing.IDrawObjectWatcherFeedback.h>
+#include <Fuse.Drawing.ImageFill.DrawParams.h>
 #include <Fuse.Drawing.ImageFill.h>
+#include <Fuse.Drawing.INativeSurfaceOwner.h>
 #include <Fuse.Drawing.ISolidColor.h>
 #include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.Drawing.ISurfaceProvider.h>
-#include <Fuse.Drawing.LinearGr-4a6ec6a4.h>
 #include <Fuse.Drawing.LinearGradient.h>
-#include <Fuse.Drawing.LinearGr-f3a25b50.h>
+#include <Fuse.Drawing.LinearGradientDrawable.h>
+#include <Fuse.Drawing.LinearGradientInterpolation.h>
 #include <Fuse.Drawing.LineCap.h>
 #include <Fuse.Drawing.LineJoin.h>
 #include <Fuse.Drawing.LineMetrics.h>
@@ -69,21 +71,22 @@
 #include <Fuse.Marshal.h>
 #include <Fuse.Node.h>
 #include <Fuse.Resources.DisposalManager.h>
-#include <Fuse.Resources.ImageS-d58bb329.h>
 #include <Fuse.Resources.ImageSource.h>
+#include <Fuse.Resources.ImageSourceState.h>
 #include <Fuse.Resources.MemoryPolicy.h>
 #include <Fuse.Time.h>
 #include <Fuse.Visual.h>
 #include <Fuse.VisualBounds.h>
+#include <Fuse.VisualContext.h>
 #include <OpenGL.GLTextureHandle.h>
 #include <OpenGLES/ES2/gl.h>
 #include <Uno.Action-1.h>
 #include <Uno.Bool.h>
 #include <Uno.Buffer.h>
 #include <Uno.Char.h>
-#include <Uno.Collections.Dicti-d1699346.h>
+#include <Uno.Collections.Dictionary-2.Enumerator.h>
 #include <Uno.Collections.Dictionary-2.h>
-#include <Uno.Collections.Enume-8ddd045.h>
+#include <Uno.Collections.EnumerableExtensions.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -105,7 +108,7 @@
 #include <Uno.Graphics.PolygonFace.h>
 #include <Uno.Graphics.SamplerState.h>
 #include <Uno.Graphics.Texture2D.h>
-#include <Uno.Graphics.VertexAt-4a875e1d.h>
+#include <Uno.Graphics.VertexAttributeType.h>
 #include <Uno.Graphics.VertexBuffer.h>
 #include <Uno.Int.h>
 #include <Uno.Int2.h>
@@ -114,8 +117,8 @@
 #include <Uno.Matrix.h>
 #include <Uno.Object.h>
 #include <Uno.Rect.h>
-#include <Uno.Runtime.Implement-6e9df330.h>
-#include <Uno.Runtime.Implement-81e7ab4c.h>
+#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
 #include <Uno.String.h>
 #include <Uno.Type.h>
 #include <Uno.UInt.h>
@@ -124,15 +127,15 @@
 #include <Uno.UX.PropertyObject.h>
 #include <Uno.UX.Selector.h>
 #include <Uno.Vector.h>
-static uString* STRINGS[46];
-static uType* TYPES[31];
+static uString* STRINGS[48];
+static uType* TYPES[33];
 
 namespace g{
 namespace Fuse{
 namespace Drawing{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public enum Antialiasing :207
 uEnumType* Antialiasing_typeof()
@@ -147,15 +150,15 @@ uEnumType* Antialiasing_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public abstract class Brush :34
 // {
 static void Brush_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("Brush is not pinned, preparation invalid");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno");
     ::STRINGS[2] = uString::Const("Prepare");
     type->SetFields(2,
         ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Drawing::Brush, _pinCount), 0);
@@ -265,7 +268,7 @@ void Brush::Prepare(::g::Fuse::DrawContext* dc, ::g::Uno::Float2 canvasSize)
     uStackFrame __("Fuse.Drawing.Brush", "Prepare(Fuse.DrawContext,float2)");
 
     if (!IsPinned())
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[0/*"Brush is no...*/], this, ::STRINGS[1/*"/Users/eric...*/], 71, ::STRINGS[2/*"Prepare"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[0/*"Brush is no...*/], this, ::STRINGS[1/*"/Users/star...*/], 71, ::STRINGS[2/*"Prepare"*/]);
 
     OnPrepare(dc, canvasSize);
 }
@@ -281,8 +284,8 @@ void Brush::Unpin()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class BrushConverter :11
 // {
@@ -381,8 +384,8 @@ BrushConverter* BrushConverter::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public static class Brushes :132
 // {
@@ -481,8 +484,8 @@ uSStrong< ::g::Fuse::Drawing::StaticSolidColor*> Brushes::White_;
 uSStrong< ::g::Fuse::Drawing::StaticSolidColor*> Brushes::Yellow_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public static class Colors :111
 // {
@@ -581,12 +584,12 @@ uClassType* Colors_typeof()
 ::g::Uno::Float4 Colors::Yellow_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal sealed extern class CoreGraphicsDrawHelper :1400
+// internal sealed extern class CoreGraphicsDrawHelper :672
 // {
-// static CoreGraphicsDrawHelper() :1400
+// static CoreGraphicsDrawHelper() :672
 static void CoreGraphicsDrawHelper__cctor__fn(uType* __type)
 {
     CoreGraphicsDrawHelper::Singleton_ = CoreGraphicsDrawHelper::New1();
@@ -617,25 +620,25 @@ uType* CoreGraphicsDrawHelper_typeof()
     return type;
 }
 
-// public generated CoreGraphicsDrawHelper() :1400
+// public generated CoreGraphicsDrawHelper() :672
 void CoreGraphicsDrawHelper__ctor__fn(CoreGraphicsDrawHelper* __this)
 {
     __this->ctor_();
 }
 
-// public void DrawImageFill(texture2D texture) :1404
+// public void DrawImageFill(texture2D texture) :676
 void CoreGraphicsDrawHelper__DrawImageFill_fn(CoreGraphicsDrawHelper* __this, ::g::Uno::Graphics::Texture2D* texture)
 {
     __this->DrawImageFill(texture);
 }
 
-// private generated void init_DrawCalls() :1400
+// private generated void init_DrawCalls() :672
 void CoreGraphicsDrawHelper__init_DrawCalls_fn(CoreGraphicsDrawHelper* __this)
 {
     __this->init_DrawCalls();
 }
 
-// public generated CoreGraphicsDrawHelper New() :1400
+// public generated CoreGraphicsDrawHelper New() :672
 void CoreGraphicsDrawHelper__New1_fn(CoreGraphicsDrawHelper** __retval)
 {
     *__retval = CoreGraphicsDrawHelper::New1();
@@ -643,13 +646,13 @@ void CoreGraphicsDrawHelper__New1_fn(CoreGraphicsDrawHelper** __retval)
 
 uSStrong<CoreGraphicsDrawHelper*> CoreGraphicsDrawHelper::Singleton_;
 
-// public generated CoreGraphicsDrawHelper() [instance] :1400
+// public generated CoreGraphicsDrawHelper() [instance] :672
 void CoreGraphicsDrawHelper::ctor_()
 {
     init_DrawCalls();
 }
 
-// public void DrawImageFill(texture2D texture) [instance] :1404
+// public void DrawImageFill(texture2D texture) [instance] :676
 void CoreGraphicsDrawHelper::DrawImageFill(::g::Uno::Graphics::Texture2D* texture)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsDrawHelper", "DrawImageFill(texture2D)");
@@ -660,7 +663,7 @@ void CoreGraphicsDrawHelper::DrawImageFill(::g::Uno::Graphics::Texture2D* textur
     _draw_2b8a7405.DrawArrays(6);
 }
 
-// private generated void init_DrawCalls() [instance] :1400
+// private generated void init_DrawCalls() [instance] :672
 void CoreGraphicsDrawHelper::init_DrawCalls()
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsDrawHelper", "init_DrawCalls()");
@@ -668,7 +671,7 @@ void CoreGraphicsDrawHelper::init_DrawCalls()
     _draw_2b8a7405 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseDrawingSurface_bundle::CoreGraphicsDrawHelpere074f602());
 }
 
-// public generated CoreGraphicsDrawHelper New() [static] :1400
+// public generated CoreGraphicsDrawHelper New() [static] :672
 CoreGraphicsDrawHelper* CoreGraphicsDrawHelper::New1()
 {
     CoreGraphicsDrawHelper* obj1 = (CoreGraphicsDrawHelper*)uNew(CoreGraphicsDrawHelper_typeof());
@@ -677,16 +680,16 @@ CoreGraphicsDrawHelper* CoreGraphicsDrawHelper::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal sealed extern class CoreGraphicsSurface :754
+// internal sealed extern class CoreGraphicsSurface :26
 // {
 static void CoreGraphicsSurface_build(uType* type)
 {
     ::STRINGS[3] = uString::Const("Failed to create Surface object");
     ::STRINGS[4] = uString::Const("Non CoreGraphicSurfacePath used");
-    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno");
+    ::STRINGS[5] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno");
     ::STRINGS[6] = uString::Const("DisposePath");
     ::STRINGS[7] = uString::Const("Duplicate dipose of SurfacePath");
     ::STRINGS[8] = uString::Const("FillPath");
@@ -757,19 +760,19 @@ static void CoreGraphicsSurface_build(uType* type)
     return type;
 }
 
-// public CoreGraphicsSurface() :763
+// public CoreGraphicsSurface() :35
 void CoreGraphicsSurface__ctor_1_fn(CoreGraphicsSurface* __this)
 {
     __this->ctor_1();
 }
 
-// private float2 AddSegments(Uno.IntPtr path, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments, float2 prevPoint) :907
+// private float2 AddSegments(Uno.IntPtr path, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments, float2 prevPoint) :179
 void CoreGraphicsSurface__AddSegments_fn(CoreGraphicsSurface* __this, void** path, uObject* segments, ::g::Uno::Float2* prevPoint, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->AddSegments(*path, segments, *prevPoint);
 }
 
-// public override sealed void Begin(Fuse.DrawContext dc, framebuffer fb, float pixelsPerPoint) :815
+// public override sealed void Begin(Fuse.DrawContext dc, framebuffer fb, float pixelsPerPoint) :87
 void CoreGraphicsSurface__Begin_fn(CoreGraphicsSurface* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Graphics::Framebuffer* fb, float* pixelsPerPoint)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "Begin(Fuse.DrawContext,framebuffer,float)");
@@ -780,47 +783,47 @@ void CoreGraphicsSurface__Begin_fn(CoreGraphicsSurface* __this, ::g::Fuse::DrawC
     __this->_pixelsPerPoint = pixelsPerPoint_;
     __this->_size = ::g::Uno::Float2__op_Division1(::g::Uno::Float2__op_Implicit1(uPtr(fb)->Size()), pixelsPerPoint_);
 
-    if (!CoreGraphicsSurface::BeginImpl(__this->_context, fb->Size().X, fb->Size().Y, ::g::OpenGL::GLTextureHandle::op_Explicit1(uPtr(fb->ColorBuffer())->GLTextureHandle())))
+    if (!CoreGraphicsSurface::BeginImpl(__this->_context, fb->Size().X, fb->Size().Y, ::g::OpenGL::GLTextureHandle::op_Explicit2(uPtr(fb->ColorBuffer())->GLTextureHandle())))
         U_THROW(::g::Uno::Exception::New2(::STRINGS[3/*"Failed to c...*/]));
 }
 
-// private static bool BeginImpl(Uno.IntPtr cp, int width, int height, int glTexture) :827
+// private static bool BeginImpl(Uno.IntPtr cp, int width, int height, int glTexture) :99
 void CoreGraphicsSurface__BeginImpl_fn(void** cp, int* width, int* height, int* glTexture, bool* __retval)
 {
     *__retval = CoreGraphicsSurface::BeginImpl(*cp, *width, *height, *glTexture);
 }
 
-// private static void CGFloatDeleteArray(Uno.IntPtr a) :1270
+// private static void CGFloatDeleteArray(Uno.IntPtr a) :542
 void CoreGraphicsSurface__CGFloatDeleteArray_fn(void** a)
 {
     CoreGraphicsSurface::CGFloatDeleteArray(*a);
 }
 
-// private static Uno.IntPtr CGFloatNewArray(int size) :1264
+// private static Uno.IntPtr CGFloatNewArray(int size) :536
 void CoreGraphicsSurface__CGFloatNewArray_fn(int* size, void** __retval)
 {
     *__retval = CoreGraphicsSurface::CGFloatNewArray(*size);
 }
 
-// private static void CGFloatSet(Uno.IntPtr a, int index, double value) :1276
+// private static void CGFloatSet(Uno.IntPtr a, int index, double value) :548
 void CoreGraphicsSurface__CGFloatSet_fn(void** a, int* index, double* value)
 {
     CoreGraphicsSurface::CGFloatSet(*a, *index, *value);
 }
 
-// private static void ConcatTransform(Uno.IntPtr cp, float m11, float m12, float m21, float m22, float m31, float m32) :1375
+// private static void ConcatTransform(Uno.IntPtr cp, float m11, float m12, float m21, float m22, float m31, float m32) :647
 void CoreGraphicsSurface__ConcatTransform_fn(void** cp, float* m11, float* m12, float* m21, float* m22, float* m31, float* m32)
 {
     CoreGraphicsSurface::ConcatTransform(*cp, *m11, *m12, *m21, *m22, *m31, *m32);
 }
 
-// private static Uno.IntPtr CreateLinearGradient(Uno.IntPtr cp, Uno.IntPtr colors, Uno.IntPtr stops, int count) :1321
+// private static Uno.IntPtr CreateLinearGradient(Uno.IntPtr cp, Uno.IntPtr colors, Uno.IntPtr stops, int count) :593
 void CoreGraphicsSurface__CreateLinearGradient_fn(void** cp, void** colors, void** stops, int* count, void** __retval)
 {
     *__retval = CoreGraphicsSurface::CreateLinearGradient(*cp, *colors, *stops, *count);
 }
 
-// public override sealed Fuse.Drawing.SurfacePath CreatePath(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments, [Fuse.Drawing.FillRule fillRule]) :899
+// public override sealed Fuse.Drawing.SurfacePath CreatePath(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments, [Fuse.Drawing.FillRule fillRule]) :171
 void CoreGraphicsSurface__CreatePath_fn(CoreGraphicsSurface* __this, uObject* segments, int* fillRule, ::g::Fuse::Drawing::SurfacePath** __retval)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "CreatePath(Uno.Collections.IList<Fuse.Drawing.LineSegment>,[Fuse.Drawing.FillRule])");
@@ -831,19 +834,19 @@ void CoreGraphicsSurface__CreatePath_fn(CoreGraphicsSurface* __this, uObject* se
     return *__retval = (collection3 = ::g::Fuse::Drawing::CoreGraphicsSurfacePath::New1(), uPtr(collection3)->Path = path, uPtr(collection3)->FillRule = fillRule_, collection3), void();
 }
 
-// private static Uno.IntPtr CreateStrokedPath(Uno.IntPtr path, float width, int fjoin, int fcap, float miterLimit) :1249
+// private static Uno.IntPtr CreateStrokedPath(Uno.IntPtr path, float width, int fjoin, int fcap, float miterLimit) :521
 void CoreGraphicsSurface__CreateStrokedPath_fn(void** path, float* width, int* fjoin, int* fcap, float* miterLimit, void** __retval)
 {
     *__retval = CoreGraphicsSurface::CreateStrokedPath(*path, *width, *fjoin, *fcap, *miterLimit);
 }
 
-// private static void DeleteContext(Uno.IntPtr cp) :805
+// private static void DeleteContext(Uno.IntPtr cp) :77
 void CoreGraphicsSurface__DeleteContext_fn(void** cp)
 {
     CoreGraphicsSurface::DeleteContext(*cp);
 }
 
-// public override sealed void Dispose() :768
+// public override sealed void Dispose() :40
 void CoreGraphicsSurface__Dispose_fn(CoreGraphicsSurface* __this)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "Dispose()");
@@ -869,7 +872,7 @@ void CoreGraphicsSurface__Dispose_fn(CoreGraphicsSurface* __this)
     __this->_context = ::g::Uno::IntPtr::Zero_;
 }
 
-// public override sealed void DisposePath(Fuse.Drawing.SurfacePath path) :951
+// public override sealed void DisposePath(Fuse.Drawing.SurfacePath path) :223
 void CoreGraphicsSurface__DisposePath_fn(CoreGraphicsSurface* __this, ::g::Fuse::Drawing::SurfacePath* path)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "DisposePath(Fuse.Drawing.SurfacePath)");
@@ -877,13 +880,13 @@ void CoreGraphicsSurface__DisposePath_fn(CoreGraphicsSurface* __this, ::g::Fuse:
 
     if (cgPath == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[4/*"Non CoreGra...*/], path, ::STRINGS[5/*"/Users/eric...*/], 956, ::STRINGS[6/*"DisposePath"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[4/*"Non CoreGra...*/], path, ::STRINGS[5/*"/Users/star...*/], 228, ::STRINGS[6/*"DisposePath"*/]);
         return;
     }
 
     if (::g::Uno::IntPtr::op_Equality(uPtr(cgPath)->Path, ::g::Uno::IntPtr::Zero_))
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[7/*"Duplicate d...*/], path, ::STRINGS[5/*"/Users/eric...*/], 962, ::STRINGS[6/*"DisposePath"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[7/*"Duplicate d...*/], path, ::STRINGS[5/*"/Users/star...*/], 234, ::STRINGS[6/*"DisposePath"*/]);
         return;
     }
 
@@ -891,7 +894,7 @@ void CoreGraphicsSurface__DisposePath_fn(CoreGraphicsSurface* __this, ::g::Fuse:
     cgPath->Path = ::g::Uno::IntPtr::Zero_;
 }
 
-// public override sealed void End() :873
+// public override sealed void End() :145
 void CoreGraphicsSurface__End_fn(CoreGraphicsSurface* __this)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "End()");
@@ -900,13 +903,13 @@ void CoreGraphicsSurface__End_fn(CoreGraphicsSurface* __this)
     __this->_buffer = NULL;
 }
 
-// private static void EndImpl(Uno.IntPtr cp) :881
+// private static void EndImpl(Uno.IntPtr cp) :153
 void CoreGraphicsSurface__EndImpl_fn(void** cp)
 {
     CoreGraphicsSurface::EndImpl(*cp);
 }
 
-// public override sealed void FillPath(Fuse.Drawing.SurfacePath path, Fuse.Drawing.Brush fill) :1157
+// public override sealed void FillPath(Fuse.Drawing.SurfacePath path, Fuse.Drawing.Brush fill) :429
 void CoreGraphicsSurface__FillPath_fn(CoreGraphicsSurface* __this, ::g::Fuse::Drawing::SurfacePath* path, ::g::Fuse::Drawing::Brush* fill)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "FillPath(Fuse.Drawing.SurfacePath,Fuse.Drawing.Brush)");
@@ -915,98 +918,98 @@ void CoreGraphicsSurface__FillPath_fn(CoreGraphicsSurface* __this, ::g::Fuse::Dr
 
     if (cgPath == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[4/*"Non CoreGra...*/], path, ::STRINGS[5/*"/Users/eric...*/], 1163, ::STRINGS[8/*"FillPath"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[4/*"Non CoreGra...*/], path, ::STRINGS[5/*"/Users/star...*/], 435, ::STRINGS[8/*"FillPath"*/]);
         return;
     }
 
     __this->FillPathImpl(uPtr(cgPath)->Path, fill, uPtr(cgPath)->FillRule);
 }
 
-// private static void FillPathImage(Uno.IntPtr cp, Uno.IntPtr path, Uno.IntPtr image, float originX, float originY, float tileSizeX, float tileSizeY, bool eoFill) :1305
+// private static void FillPathImage(Uno.IntPtr cp, Uno.IntPtr path, Uno.IntPtr image, float originX, float originY, float tileSizeX, float tileSizeY, bool eoFill) :577
 void CoreGraphicsSurface__FillPathImage_fn(void** cp, void** path, void** image, float* originX, float* originY, float* tileSizeX, float* tileSizeY, bool* eoFill)
 {
     CoreGraphicsSurface::FillPathImage(*cp, *path, *image, *originX, *originY, *tileSizeX, *tileSizeY, *eoFill);
 }
 
-// private void FillPathImpl(Uno.IntPtr path, Fuse.Drawing.Brush fill, Fuse.Drawing.FillRule fillRule) :1169
+// private void FillPathImpl(Uno.IntPtr path, Fuse.Drawing.Brush fill, Fuse.Drawing.FillRule fillRule) :441
 void CoreGraphicsSurface__FillPathImpl_fn(CoreGraphicsSurface* __this, void** path, ::g::Fuse::Drawing::Brush* fill, int* fillRule)
 {
     __this->FillPathImpl(*path, fill, *fillRule);
 }
 
-// private static void FillPathLinearGradient(Uno.IntPtr cp, Uno.IntPtr path, Uno.IntPtr gradient, float sx, float sy, float ex, float ey, bool eoFill) :1292
+// private static void FillPathLinearGradient(Uno.IntPtr cp, Uno.IntPtr path, Uno.IntPtr gradient, float sx, float sy, float ex, float ey, bool eoFill) :564
 void CoreGraphicsSurface__FillPathLinearGradient_fn(void** cp, void** path, void** gradient, float* sx, float* sy, float* ex, float* ey, bool* eoFill)
 {
     CoreGraphicsSurface::FillPathLinearGradient(*cp, *path, *gradient, *sx, *sy, *ex, *ey, *eoFill);
 }
 
-// private static void FillPathSolidColor(Uno.IntPtr cp, Uno.IntPtr path, float r, float g, float b, float a, bool eoFill) :1282
+// private static void FillPathSolidColor(Uno.IntPtr cp, Uno.IntPtr path, float r, float g, float b, float a, bool eoFill) :554
 void CoreGraphicsSurface__FillPathSolidColor_fn(void** cp, void** path, float* r, float* g, float* b, float* a, bool* eoFill)
 {
     CoreGraphicsSurface::FillPathSolidColor(*cp, *path, *r, *g, *b, *a, *eoFill);
 }
 
-// private static Uno.IntPtr LoadImagePoor(Uno.IntPtr cp, int width, int height) :1122
+// private static Uno.IntPtr LoadImagePoor(Uno.IntPtr cp, int width, int height) :394
 void CoreGraphicsSurface__LoadImagePoor_fn(void** cp, int* width, int* height, void** __retval)
 {
     *__retval = CoreGraphicsSurface::LoadImagePoor(*cp, *width, *height);
 }
 
-// public CoreGraphicsSurface New() :763
+// public CoreGraphicsSurface New() :35
 void CoreGraphicsSurface__New1_fn(CoreGraphicsSurface** __retval)
 {
     *__retval = CoreGraphicsSurface::New1();
 }
 
-// private static Uno.IntPtr NewContext() :797
+// private static Uno.IntPtr NewContext() :69
 void CoreGraphicsSurface__NewContext_fn(void** __retval)
 {
     *__retval = CoreGraphicsSurface::NewContext();
 }
 
-// private static void PathClose(Uno.IntPtr path) :1001
+// private static void PathClose(Uno.IntPtr path) :273
 void CoreGraphicsSurface__PathClose_fn(void** path)
 {
     CoreGraphicsSurface::PathClose(*path);
 }
 
-// private static Uno.IntPtr PathCreateMutable() :971
+// private static Uno.IntPtr PathCreateMutable() :243
 void CoreGraphicsSurface__PathCreateMutable_fn(void** __retval)
 {
     *__retval = CoreGraphicsSurface::PathCreateMutable();
 }
 
-// private static void PathCurveTo(Uno.IntPtr path, float x, float y, float ax, float ay, float bx, float by) :995
+// private static void PathCurveTo(Uno.IntPtr path, float x, float y, float ax, float ay, float bx, float by) :267
 void CoreGraphicsSurface__PathCurveTo_fn(void** path, float* x, float* y, float* ax, float* ay, float* bx, float* by)
 {
     CoreGraphicsSurface::PathCurveTo(*path, *x, *y, *ax, *ay, *bx, *by);
 }
 
-// private static void PathLineTo(Uno.IntPtr path, float x, float y) :989
+// private static void PathLineTo(Uno.IntPtr path, float x, float y) :261
 void CoreGraphicsSurface__PathLineTo_fn(void** path, float* x, float* y)
 {
     CoreGraphicsSurface::PathLineTo(*path, *x, *y);
 }
 
-// private static void PathMoveTo(Uno.IntPtr path, float x, float y) :983
+// private static void PathMoveTo(Uno.IntPtr path, float x, float y) :255
 void CoreGraphicsSurface__PathMoveTo_fn(void** path, float* x, float* y)
 {
     CoreGraphicsSurface::PathMoveTo(*path, *x, *y);
 }
 
-// private static void PathRelease(Uno.IntPtr path) :977
+// private static void PathRelease(Uno.IntPtr path) :249
 void CoreGraphicsSurface__PathRelease_fn(void** path)
 {
     CoreGraphicsSurface::PathRelease(*path);
 }
 
-// private float2 PixelFromPoint(float2 point) :893
+// private float2 PixelFromPoint(float2 point) :165
 void CoreGraphicsSurface__PixelFromPoint_fn(CoreGraphicsSurface* __this, ::g::Uno::Float2* point, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->PixelFromPoint(*point);
 }
 
-// public override sealed void PopTransform() :1382
+// public override sealed void PopTransform() :654
 void CoreGraphicsSurface__PopTransform_fn(CoreGraphicsSurface* __this)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "PopTransform()");
@@ -1014,7 +1017,7 @@ void CoreGraphicsSurface__PopTransform_fn(CoreGraphicsSurface* __this)
     CoreGraphicsSurface::RestoreContextState(__this->_context);
 }
 
-// public override sealed void Prepare(Fuse.Drawing.Brush brush) :1006
+// public override sealed void Prepare(Fuse.Drawing.Brush brush) :278
 void CoreGraphicsSurface__Prepare_fn(CoreGraphicsSurface* __this, ::g::Fuse::Drawing::Brush* brush)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "Prepare(Fuse.Drawing.Brush)");
@@ -1040,22 +1043,22 @@ void CoreGraphicsSurface__Prepare_fn(CoreGraphicsSurface* __this, ::g::Fuse::Dra
         return;
     }
 
-    ::g::Fuse::Diagnostics::UserError(::STRINGS[12/*"Unsupported...*/], brush, ::STRINGS[5/*"/Users/eric...*/], 1027, ::STRINGS[2/*"Prepare"*/], NULL);
+    ::g::Fuse::Diagnostics::UserError(::STRINGS[12/*"Unsupported...*/], brush, ::STRINGS[5/*"/Users/star...*/], 299, ::STRINGS[2/*"Prepare"*/], NULL);
 }
 
-// private void PrepareImageFill(Fuse.Drawing.ImageFill img) :1062
+// private void PrepareImageFill(Fuse.Drawing.ImageFill img) :334
 void CoreGraphicsSurface__PrepareImageFill_fn(CoreGraphicsSurface* __this, ::g::Fuse::Drawing::ImageFill* img)
 {
     __this->PrepareImageFill(img);
 }
 
-// private void PrepareLinearGradient(Fuse.Drawing.LinearGradient lg) :1031
+// private void PrepareLinearGradient(Fuse.Drawing.LinearGradient lg) :303
 void CoreGraphicsSurface__PrepareLinearGradient_fn(CoreGraphicsSurface* __this, ::g::Fuse::Drawing::LinearGradient* lg)
 {
     __this->PrepareLinearGradient(lg);
 }
 
-// public override sealed void PushTransform(float4x4 t) :1341
+// public override sealed void PushTransform(float4x4 t) :613
 void CoreGraphicsSurface__PushTransform_fn(CoreGraphicsSurface* __this, ::g::Uno::Float4x4* t)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "PushTransform(float4x4)");
@@ -1065,38 +1068,38 @@ void CoreGraphicsSurface__PushTransform_fn(CoreGraphicsSurface* __this, ::g::Uno
 
     if (!CoreGraphicsSurface::_transformWarn_ && (((((((((::g::Uno::Math::Abs1(t_.M13) > 1e-05f) || (::g::Uno::Math::Abs1(t_.M14) > 1e-05f)) || (::g::Uno::Math::Abs1(t_.M23) > 1e-05f)) || (::g::Uno::Math::Abs1(t_.M24) > 1e-05f)) || (::g::Uno::Math::Abs1(t_.M31) > 1e-05f)) || (::g::Uno::Math::Abs1(t_.M32) > 1e-05f)) || (::g::Uno::Math::Abs1(t_.M34) > 1e-05f)) || (::g::Uno::Math::Abs1(t_.M43) > 1e-05f)) || (::g::Uno::Math::Abs1(t_.M44 - 1.0f) > 1e-05f)))
     {
-        ::g::Fuse::Diagnostics::UserWarning(::STRINGS[15/*"iOS/OSX doe...*/], __this, ::STRINGS[5/*"/Users/eric...*/], 1358, ::STRINGS[16/*"PushTransform"*/]);
+        ::g::Fuse::Diagnostics::UserWarning(::STRINGS[15/*"iOS/OSX doe...*/], __this, ::STRINGS[5/*"/Users/star...*/], 630, ::STRINGS[16/*"PushTransform"*/]);
         CoreGraphicsSurface::_transformWarn_ = true;
     }
 
     CoreGraphicsSurface::ConcatTransform(__this->_context, t_.M11, t_.M12, t_.M21, t_.M22, t_.M41 * __this->_pixelsPerPoint, t_.M42 * __this->_pixelsPerPoint);
 }
 
-// private static void ReleaseGradient(Uno.IntPtr cp, Uno.IntPtr gradient) :1329
+// private static void ReleaseGradient(Uno.IntPtr cp, Uno.IntPtr gradient) :601
 void CoreGraphicsSurface__ReleaseGradient_fn(void** cp, void** gradient)
 {
     CoreGraphicsSurface::ReleaseGradient(*cp, *gradient);
 }
 
-// private static void ReleaseImage(Uno.IntPtr cp, Uno.IntPtr gradient) :1335
+// private static void ReleaseImage(Uno.IntPtr cp, Uno.IntPtr gradient) :607
 void CoreGraphicsSurface__ReleaseImage_fn(void** cp, void** gradient)
 {
     CoreGraphicsSurface::ReleaseImage(*cp, *gradient);
 }
 
-// private static void RestoreContextState(Uno.IntPtr cp) :1389
+// private static void RestoreContextState(Uno.IntPtr cp) :661
 void CoreGraphicsSurface__RestoreContextState_fn(void** cp)
 {
     CoreGraphicsSurface::RestoreContextState(*cp);
 }
 
-// private static void SaveContextState(Uno.IntPtr cp) :1368
+// private static void SaveContextState(Uno.IntPtr cp) :640
 void CoreGraphicsSurface__SaveContextState_fn(void** cp)
 {
     CoreGraphicsSurface::SaveContextState(*cp);
 }
 
-// public override sealed void StrokePath(Fuse.Drawing.SurfacePath path, Fuse.Drawing.Stroke stroke) :1223
+// public override sealed void StrokePath(Fuse.Drawing.SurfacePath path, Fuse.Drawing.Stroke stroke) :495
 void CoreGraphicsSurface__StrokePath_fn(CoreGraphicsSurface* __this, ::g::Fuse::Drawing::SurfacePath* path, ::g::Fuse::Drawing::Stroke* stroke)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "StrokePath(Fuse.Drawing.SurfacePath,Fuse.Drawing.Stroke)");
@@ -1105,14 +1108,14 @@ void CoreGraphicsSurface__StrokePath_fn(CoreGraphicsSurface* __this, ::g::Fuse::
     if (((uPtr(stroke)->Offset() != 0.0f) || (uPtr(stroke)->Alignment() != 0)) && !CoreGraphicsSurface::_strokeWarning_)
     {
         CoreGraphicsSurface::_strokeWarning_ = true;
-        ::g::Fuse::Diagnostics::UserWarning(::STRINGS[17/*"iOS/OSX doe...*/], stroke, ::STRINGS[5/*"/Users/eric...*/], 1232, ::STRINGS[18/*"StrokePath"*/]);
+        ::g::Fuse::Diagnostics::UserWarning(::STRINGS[17/*"iOS/OSX doe...*/], stroke, ::STRINGS[5/*"/Users/star...*/], 504, ::STRINGS[18/*"StrokePath"*/]);
     }
 
     ::g::Fuse::Drawing::CoreGraphicsSurfacePath* cgPath = uAs< ::g::Fuse::Drawing::CoreGraphicsSurfacePath*>(path, ::TYPES[8/*Fuse.Drawing.CoreGraphicsSurfacePath*/]);
 
     if (cgPath == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[4/*"Non CoreGra...*/], path, ::STRINGS[5/*"/Users/eric...*/], 1238, ::STRINGS[18/*"StrokePath"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[4/*"Non CoreGra...*/], path, ::STRINGS[5/*"/Users/star...*/], 510, ::STRINGS[18/*"StrokePath"*/]);
         return;
     }
 
@@ -1121,7 +1124,7 @@ void CoreGraphicsSurface__StrokePath_fn(CoreGraphicsSurface* __this, ::g::Fuse::
     CoreGraphicsSurface::PathRelease(strokedPath);
 }
 
-// public override sealed void Unprepare(Fuse.Drawing.Brush brush) :1140
+// public override sealed void Unprepare(Fuse.Drawing.Brush brush) :412
 void CoreGraphicsSurface__Unprepare_fn(CoreGraphicsSurface* __this, ::g::Fuse::Drawing::Brush* brush)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "Unprepare(Fuse.Drawing.Brush)");
@@ -1146,13 +1149,13 @@ void CoreGraphicsSurface__Unprepare_fn(CoreGraphicsSurface* __this, ::g::Fuse::D
     }
 }
 
-// private void VerifyBegun() :790
+// private void VerifyBegun() :62
 void CoreGraphicsSurface__VerifyBegun_fn(CoreGraphicsSurface* __this)
 {
     __this->VerifyBegun();
 }
 
-// private void VerifyCreated() :784
+// private void VerifyCreated() :56
 void CoreGraphicsSurface__VerifyCreated_fn(CoreGraphicsSurface* __this)
 {
     __this->VerifyCreated();
@@ -1161,7 +1164,7 @@ void CoreGraphicsSurface__VerifyCreated_fn(CoreGraphicsSurface* __this)
 bool CoreGraphicsSurface::_strokeWarning_;
 bool CoreGraphicsSurface::_transformWarn_;
 
-// public CoreGraphicsSurface() [instance] :763
+// public CoreGraphicsSurface() [instance] :35
 void CoreGraphicsSurface::ctor_1()
 {
     _temp = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[2/*Uno.Collections.List<Fuse.Drawing.LineSegment>*/]));
@@ -1171,7 +1174,7 @@ void CoreGraphicsSurface::ctor_1()
     _context = CoreGraphicsSurface::NewContext();
 }
 
-// private float2 AddSegments(Uno.IntPtr path, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments, float2 prevPoint) [instance] :907
+// private float2 AddSegments(Uno.IntPtr path, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments, float2 prevPoint) [instance] :179
 ::g::Uno::Float2 CoreGraphicsSurface::AddSegments(void* path, uObject* segments, ::g::Uno::Float2 prevPoint)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "AddSegments(Uno.IntPtr,Uno.Collections.IList<Fuse.Drawing.LineSegment>,float2)");
@@ -1221,7 +1224,7 @@ void CoreGraphicsSurface::ctor_1()
     return prevPoint;
 }
 
-// private void FillPathImpl(Uno.IntPtr path, Fuse.Drawing.Brush fill, Fuse.Drawing.FillRule fillRule) [instance] :1169
+// private void FillPathImpl(Uno.IntPtr path, Fuse.Drawing.Brush fill, Fuse.Drawing.FillRule fillRule) [instance] :441
 void CoreGraphicsSurface::FillPathImpl(void* path, ::g::Fuse::Drawing::Brush* fill, int fillRule)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "FillPathImpl(Uno.IntPtr,Fuse.Drawing.Brush,Fuse.Drawing.FillRule)");
@@ -1245,7 +1248,7 @@ void CoreGraphicsSurface::FillPathImpl(void* path, ::g::Fuse::Drawing::Brush* fi
 
         if (!(::g::Uno::Collections::Dictionary__TryGetValue_fn(uPtr(_gradientBrushes), fill, &gradient, &ret8), ret8))
         {
-            ::g::Fuse::Diagnostics::InternalError(::STRINGS[9/*"Unprepared ...*/], fill, ::STRINGS[5/*"/Users/eric...*/], 1187, ::STRINGS[10/*"FillPathImpl"*/]);
+            ::g::Fuse::Diagnostics::InternalError(::STRINGS[9/*"Unprepared ...*/], fill, ::STRINGS[5/*"/Users/star...*/], 459, ::STRINGS[10/*"FillPathImpl"*/]);
             return;
         }
 
@@ -1262,7 +1265,7 @@ void CoreGraphicsSurface::FillPathImpl(void* path, ::g::Fuse::Drawing::Brush* fi
 
         if (!(::g::Uno::Collections::Dictionary__TryGetValue_fn(uPtr(_imageBrushes), fill, &image, &ret9), ret9))
         {
-            ::g::Fuse::Diagnostics::InternalError(::STRINGS[11/*"Unprepared ...*/], fill, ::STRINGS[5/*"/Users/eric...*/], 1202, ::STRINGS[10/*"FillPathImpl"*/]);
+            ::g::Fuse::Diagnostics::InternalError(::STRINGS[11/*"Unprepared ...*/], fill, ::STRINGS[5/*"/Users/star...*/], 474, ::STRINGS[10/*"FillPathImpl"*/]);
             return;
         }
 
@@ -1277,16 +1280,16 @@ void CoreGraphicsSurface::FillPathImpl(void* path, ::g::Fuse::Drawing::Brush* fi
         return;
     }
 
-    ::g::Fuse::Diagnostics::UserError(::STRINGS[12/*"Unsupported...*/], fill, ::STRINGS[5/*"/Users/eric...*/], 1219, ::STRINGS[10/*"FillPathImpl"*/], NULL);
+    ::g::Fuse::Diagnostics::UserError(::STRINGS[12/*"Unsupported...*/], fill, ::STRINGS[5/*"/Users/star...*/], 491, ::STRINGS[10/*"FillPathImpl"*/], NULL);
 }
 
-// private float2 PixelFromPoint(float2 point) [instance] :893
+// private float2 PixelFromPoint(float2 point) [instance] :165
 ::g::Uno::Float2 CoreGraphicsSurface::PixelFromPoint(::g::Uno::Float2 point)
 {
     return ::g::Uno::Float2__op_Multiply1(point, _pixelsPerPoint);
 }
 
-// private void PrepareImageFill(Fuse.Drawing.ImageFill img) [instance] :1062
+// private void PrepareImageFill(Fuse.Drawing.ImageFill img) [instance] :334
 void CoreGraphicsSurface::PrepareImageFill(::g::Fuse::Drawing::ImageFill* img)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "PrepareImageFill(Fuse.Drawing.ImageFill)");
@@ -1306,7 +1309,7 @@ void CoreGraphicsSurface::PrepareImageFill(::g::Fuse::Drawing::ImageFill* img)
     ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(_imageBrushes), img, uCRef(imageRef));
 }
 
-// private void PrepareLinearGradient(Fuse.Drawing.LinearGradient lg) [instance] :1031
+// private void PrepareLinearGradient(Fuse.Drawing.LinearGradient lg) [instance] :303
 void CoreGraphicsSurface::PrepareLinearGradient(::g::Fuse::Drawing::LinearGradient* lg)
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "PrepareLinearGradient(Fuse.Drawing.LinearGradient)");
@@ -1324,7 +1327,7 @@ void CoreGraphicsSurface::PrepareLinearGradient(::g::Fuse::Drawing::LinearGradie
         CoreGraphicsSurface::CGFloatSet(offsets, i, (double)::g::Uno::Math::Clamp1(stop->Offset(), 0.0f, 1.0f));
 
         if ((stop->Offset() > 1.0f) || (stop->Offset() < 0.0f))
-            ::g::Fuse::Diagnostics::UserWarning(::STRINGS[13/*"iOS/OSX doe...*/], uBox(::g::Uno::Float_typeof(), uPtr(stop)->Offset()), ::STRINGS[5/*"/Users/eric...*/], 1047, ::STRINGS[14/*"PrepareLine...*/]);
+            ::g::Fuse::Diagnostics::UserWarning(::STRINGS[13/*"iOS/OSX doe...*/], uBox(::g::Uno::Float_typeof(), uPtr(stop)->Offset()), ::STRINGS[5/*"/Users/star...*/], 319, ::STRINGS[14/*"PrepareLine...*/]);
     }
 
     ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(_gradientBrushes), lg, uCRef(CoreGraphicsSurface::CreateLinearGradient(_context, colors, offsets, stops->Length())));
@@ -1332,7 +1335,7 @@ void CoreGraphicsSurface::PrepareLinearGradient(::g::Fuse::Drawing::LinearGradie
     CoreGraphicsSurface::CGFloatDeleteArray(offsets);
 }
 
-// private void VerifyBegun() [instance] :790
+// private void VerifyBegun() [instance] :62
 void CoreGraphicsSurface::VerifyBegun()
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "VerifyBegun()");
@@ -1341,7 +1344,7 @@ void CoreGraphicsSurface::VerifyBegun()
         U_THROW(::g::Uno::Exception::New2(::STRINGS[19/*"Surface.Beg...*/]));
 }
 
-// private void VerifyCreated() [instance] :784
+// private void VerifyCreated() [instance] :56
 void CoreGraphicsSurface::VerifyCreated()
 {
     uStackFrame __("Fuse.Drawing.CoreGraphicsSurface", "VerifyCreated()");
@@ -1350,7 +1353,7 @@ void CoreGraphicsSurface::VerifyCreated()
         U_THROW(::g::Uno::Exception::New2(::STRINGS[20/*"Object disp...*/]));
 }
 
-// private static bool BeginImpl(Uno.IntPtr cp, int width, int height, int glTexture) [static] :827
+// private static bool BeginImpl(Uno.IntPtr cp, int width, int height, int glTexture) [static] :99
 bool CoreGraphicsSurface::BeginImpl(void* cp, int width, int height, int glTexture)
 {
     auto ctx = (CGLib::Context*)cp;
@@ -1397,25 +1400,25 @@ bool CoreGraphicsSurface::BeginImpl(void* cp, int width, int height, int glTextu
     return true;
 }
 
-// private static void CGFloatDeleteArray(Uno.IntPtr a) [static] :1270
+// private static void CGFloatDeleteArray(Uno.IntPtr a) [static] :542
 void CoreGraphicsSurface::CGFloatDeleteArray(void* a)
 {
     return delete[]((CGFloat*)a);
 }
 
-// private static Uno.IntPtr CGFloatNewArray(int size) [static] :1264
+// private static Uno.IntPtr CGFloatNewArray(int size) [static] :536
 void* CoreGraphicsSurface::CGFloatNewArray(int size)
 {
     return new CGFloat[size];
 }
 
-// private static void CGFloatSet(Uno.IntPtr a, int index, double value) [static] :1276
+// private static void CGFloatSet(Uno.IntPtr a, int index, double value) [static] :548
 void CoreGraphicsSurface::CGFloatSet(void* a, int index, double value)
 {
     ((CGFloat*)a)[index] = (CGFloat)value;
 }
 
-// private static void ConcatTransform(Uno.IntPtr cp, float m11, float m12, float m21, float m22, float m31, float m32) [static] :1375
+// private static void ConcatTransform(Uno.IntPtr cp, float m11, float m12, float m21, float m22, float m31, float m32) [static] :647
 void CoreGraphicsSurface::ConcatTransform(void* cp, float m11, float m12, float m21, float m22, float m31, float m32)
 {
     auto ctx = (CGLib::Context*)cp;
@@ -1423,7 +1426,7 @@ void CoreGraphicsSurface::ConcatTransform(void* cp, float m11, float m12, float 
     CGContextConcatCTM(ctx->Context, ctm);
 }
 
-// private static Uno.IntPtr CreateLinearGradient(Uno.IntPtr cp, Uno.IntPtr colors, Uno.IntPtr stops, int count) [static] :1321
+// private static Uno.IntPtr CreateLinearGradient(Uno.IntPtr cp, Uno.IntPtr colors, Uno.IntPtr stops, int count) [static] :593
 void* CoreGraphicsSurface::CreateLinearGradient(void* cp, void* colors, void* stops, int count)
 {
     auto ctx = (CGLib::Context*)cp;
@@ -1431,7 +1434,7 @@ void* CoreGraphicsSurface::CreateLinearGradient(void* cp, void* colors, void* st
     	(CGFloat*)colors, (CGFloat*)stops, count);
 }
 
-// private static Uno.IntPtr CreateStrokedPath(Uno.IntPtr path, float width, int fjoin, int fcap, float miterLimit) [static] :1249
+// private static Uno.IntPtr CreateStrokedPath(Uno.IntPtr path, float width, int fjoin, int fcap, float miterLimit) [static] :521
 void* CoreGraphicsSurface::CreateStrokedPath(void* path, float width, int fjoin, int fcap, float miterLimit)
 {
     //supported by test SurfaceTest.EnumChecks
@@ -1445,7 +1448,7 @@ void* CoreGraphicsSurface::CreateStrokedPath(void* path, float width, int fjoin,
     return (void*)res;
 }
 
-// private static void DeleteContext(Uno.IntPtr cp) [static] :805
+// private static void DeleteContext(Uno.IntPtr cp) [static] :77
 void CoreGraphicsSurface::DeleteContext(void* cp)
 {
     auto ctx = (CGLib::Context*)cp;
@@ -1456,7 +1459,7 @@ void CoreGraphicsSurface::DeleteContext(void* cp)
     delete ctx;
 }
 
-// private static void EndImpl(Uno.IntPtr cp) [static] :881
+// private static void EndImpl(Uno.IntPtr cp) [static] :153
 void CoreGraphicsSurface::EndImpl(void* cp)
 {
     auto ctx = (CGLib::Context*)cp;
@@ -1469,7 +1472,7 @@ void CoreGraphicsSurface::EndImpl(void* cp)
     ctx->ReleaseContext();
 }
 
-// private static void FillPathImage(Uno.IntPtr cp, Uno.IntPtr path, Uno.IntPtr image, float originX, float originY, float tileSizeX, float tileSizeY, bool eoFill) [static] :1305
+// private static void FillPathImage(Uno.IntPtr cp, Uno.IntPtr path, Uno.IntPtr image, float originX, float originY, float tileSizeX, float tileSizeY, bool eoFill) [static] :577
 void CoreGraphicsSurface::FillPathImage(void* cp, void* path, void* image, float originX, float originY, float tileSizeX, float tileSizeY, bool eoFill)
 {
     auto ctx = (CGLib::Context*)cp;
@@ -1483,7 +1486,7 @@ void CoreGraphicsSurface::FillPathImage(void* cp, void* path, void* image, float
     ctx->RestoreState();
 }
 
-// private static void FillPathLinearGradient(Uno.IntPtr cp, Uno.IntPtr path, Uno.IntPtr gradient, float sx, float sy, float ex, float ey, bool eoFill) [static] :1292
+// private static void FillPathLinearGradient(Uno.IntPtr cp, Uno.IntPtr path, Uno.IntPtr gradient, float sx, float sy, float ex, float ey, bool eoFill) [static] :564
 void CoreGraphicsSurface::FillPathLinearGradient(void* cp, void* path, void* gradient, float sx, float sy, float ex, float ey, bool eoFill)
 {
     auto ctx = (CGLib::Context*)cp;
@@ -1495,7 +1498,7 @@ void CoreGraphicsSurface::FillPathLinearGradient(void* cp, void* path, void* gra
     	kCGGradientDrawsBeforeStartLocation | kCGGradientDrawsAfterEndLocation);
 }
 
-// private static void FillPathSolidColor(Uno.IntPtr cp, Uno.IntPtr path, float r, float g, float b, float a, bool eoFill) [static] :1282
+// private static void FillPathSolidColor(Uno.IntPtr cp, Uno.IntPtr path, float r, float g, float b, float a, bool eoFill) [static] :554
 void CoreGraphicsSurface::FillPathSolidColor(void* cp, void* path, float r, float g, float b, float a, bool eoFill)
 {
     auto ctx = (CGLib::Context*)cp;
@@ -1505,7 +1508,7 @@ void CoreGraphicsSurface::FillPathSolidColor(void* cp, void* path, float r, floa
     ctx->FillPath((CGPathRef)path, eoFill);
 }
 
-// private static Uno.IntPtr LoadImagePoor(Uno.IntPtr cp, int width, int height) [static] :1122
+// private static Uno.IntPtr LoadImagePoor(Uno.IntPtr cp, int width, int height) [static] :394
 void* CoreGraphicsSurface::LoadImagePoor(void* cp, int width, int height)
 {
     auto ctx = (CGLib::Context*)cp;
@@ -1524,7 +1527,7 @@ void* CoreGraphicsSurface::LoadImagePoor(void* cp, int width, int height)
     return imageRef;
 }
 
-// public CoreGraphicsSurface New() [static] :763
+// public CoreGraphicsSurface New() [static] :35
 CoreGraphicsSurface* CoreGraphicsSurface::New1()
 {
     CoreGraphicsSurface* obj4 = (CoreGraphicsSurface*)uNew(CoreGraphicsSurface_typeof());
@@ -1532,7 +1535,7 @@ CoreGraphicsSurface* CoreGraphicsSurface::New1()
     return obj4;
 }
 
-// private static Uno.IntPtr NewContext() [static] :797
+// private static Uno.IntPtr NewContext() [static] :69
 void* CoreGraphicsSurface::NewContext()
 {
     auto c = new CGLib::Context();
@@ -1540,55 +1543,55 @@ void* CoreGraphicsSurface::NewContext()
     return c;
 }
 
-// private static void PathClose(Uno.IntPtr path) [static] :1001
+// private static void PathClose(Uno.IntPtr path) [static] :273
 void CoreGraphicsSurface::PathClose(void* path)
 {
     CGPathCloseSubpath( (CGMutablePathRef)path );
 }
 
-// private static Uno.IntPtr PathCreateMutable() [static] :971
+// private static Uno.IntPtr PathCreateMutable() [static] :243
 void* CoreGraphicsSurface::PathCreateMutable()
 {
     return CGPathCreateMutable();
 }
 
-// private static void PathCurveTo(Uno.IntPtr path, float x, float y, float ax, float ay, float bx, float by) [static] :995
+// private static void PathCurveTo(Uno.IntPtr path, float x, float y, float ax, float ay, float bx, float by) [static] :267
 void CoreGraphicsSurface::PathCurveTo(void* path, float x, float y, float ax, float ay, float bx, float by)
 {
     CGPathAddCurveToPoint( (CGMutablePathRef)path, nullptr, ax, ay, bx, by, x, y );
 }
 
-// private static void PathLineTo(Uno.IntPtr path, float x, float y) [static] :989
+// private static void PathLineTo(Uno.IntPtr path, float x, float y) [static] :261
 void CoreGraphicsSurface::PathLineTo(void* path, float x, float y)
 {
     CGPathAddLineToPoint( (CGMutablePathRef)path, nullptr, x, y );
 }
 
-// private static void PathMoveTo(Uno.IntPtr path, float x, float y) [static] :983
+// private static void PathMoveTo(Uno.IntPtr path, float x, float y) [static] :255
 void CoreGraphicsSurface::PathMoveTo(void* path, float x, float y)
 {
     CGPathMoveToPoint( (CGMutablePathRef)path, nullptr, x, y );
 }
 
-// private static void PathRelease(Uno.IntPtr path) [static] :977
+// private static void PathRelease(Uno.IntPtr path) [static] :249
 void CoreGraphicsSurface::PathRelease(void* path)
 {
     return CGPathRelease((CGPathRef)path);
 }
 
-// private static void ReleaseGradient(Uno.IntPtr cp, Uno.IntPtr gradient) [static] :1329
+// private static void ReleaseGradient(Uno.IntPtr cp, Uno.IntPtr gradient) [static] :601
 void CoreGraphicsSurface::ReleaseGradient(void* cp, void* gradient)
 {
     CGGradientRelease((CGGradientRef)gradient);
 }
 
-// private static void ReleaseImage(Uno.IntPtr cp, Uno.IntPtr gradient) [static] :1335
+// private static void ReleaseImage(Uno.IntPtr cp, Uno.IntPtr gradient) [static] :607
 void CoreGraphicsSurface::ReleaseImage(void* cp, void* gradient)
 {
     CGImageRelease((CGImageRef)gradient);
 }
 
-// private static void RestoreContextState(Uno.IntPtr cp) [static] :1389
+// private static void RestoreContextState(Uno.IntPtr cp) [static] :661
 void CoreGraphicsSurface::RestoreContextState(void* cp)
 {
     auto ctx = (CGLib::Context*)cp;
@@ -1598,7 +1601,7 @@ void CoreGraphicsSurface::RestoreContextState(void* cp)
     }
 }
 
-// private static void SaveContextState(Uno.IntPtr cp) [static] :1368
+// private static void SaveContextState(Uno.IntPtr cp) [static] :640
 void CoreGraphicsSurface::SaveContextState(void* cp)
 {
     auto ctx = (CGLib::Context*)cp;
@@ -1606,10 +1609,10 @@ void CoreGraphicsSurface::SaveContextState(void* cp)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal sealed extern class CoreGraphicsSurfacePath :742
+// internal sealed extern class CoreGraphicsSurfacePath :14
 // {
 static void CoreGraphicsSurfacePath_build(uType* type)
 {
@@ -1634,25 +1637,25 @@ uType* CoreGraphicsSurfacePath_typeof()
     return type;
 }
 
-// public generated CoreGraphicsSurfacePath() :742
+// public generated CoreGraphicsSurfacePath() :14
 void CoreGraphicsSurfacePath__ctor_1_fn(CoreGraphicsSurfacePath* __this)
 {
     __this->ctor_1();
 }
 
-// public generated CoreGraphicsSurfacePath New() :742
+// public generated CoreGraphicsSurfacePath New() :14
 void CoreGraphicsSurfacePath__New1_fn(CoreGraphicsSurfacePath** __retval)
 {
     *__retval = CoreGraphicsSurfacePath::New1();
 }
 
-// public generated CoreGraphicsSurfacePath() [instance] :742
+// public generated CoreGraphicsSurfacePath() [instance] :14
 void CoreGraphicsSurfacePath::ctor_1()
 {
     ctor_();
 }
 
-// public generated CoreGraphicsSurfacePath New() [static] :742
+// public generated CoreGraphicsSurfacePath New() [static] :14
 CoreGraphicsSurfacePath* CoreGraphicsSurfacePath::New1()
 {
     CoreGraphicsSurfacePath* obj1 = (CoreGraphicsSurfacePath*)uNew(CoreGraphicsSurfacePath_typeof());
@@ -1661,12 +1664,12 @@ CoreGraphicsSurfacePath* CoreGraphicsSurfacePath::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal sealed class DrawObjectWatcher :2838
+// internal sealed class DrawObjectWatcher :2110
 // {
-// static DrawObjectWatcher() :2838
+// static DrawObjectWatcher() :2110
 static void DrawObjectWatcher__cctor__fn(uType* __type)
 {
     DrawObjectWatcher::ShadingName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[21/*"Shading"*/]);
@@ -1676,7 +1679,7 @@ static void DrawObjectWatcher_build(uType* type)
 {
     ::STRINGS[21] = uString::Const("Shading");
     ::STRINGS[22] = uString::Const("Sync while not rooted");
-    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno");
+    ::STRINGS[5] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno");
     ::STRINGS[23] = uString::Const("Sync");
     ::TYPES[12] = ::g::Fuse::Internal::MiniList_typeof()->MakeType(DrawObjectWatcher__Item_typeof(), NULL);
     ::TYPES[13] = ::g::Fuse::Drawing::IDrawObjectWatcherFeedback_typeof();
@@ -1707,61 +1710,61 @@ DrawObjectWatcher_type* DrawObjectWatcher_typeof()
     return type;
 }
 
-// public generated DrawObjectWatcher() :2838
+// public generated DrawObjectWatcher() :2110
 void DrawObjectWatcher__ctor__fn(DrawObjectWatcher* __this)
 {
     __this->ctor_();
 }
 
-// public void Add(Fuse.Drawing.Brush brush) :2930
+// public void Add(Fuse.Drawing.Brush brush) :2202
 void DrawObjectWatcher__Add_fn(DrawObjectWatcher* __this, ::g::Fuse::Drawing::Brush* brush)
 {
     __this->Add(brush);
 }
 
-// public void Add(Fuse.Drawing.Stroke stroke) :2924
+// public void Add(Fuse.Drawing.Stroke stroke) :2196
 void DrawObjectWatcher__Add1_fn(DrawObjectWatcher* __this, ::g::Fuse::Drawing::Stroke* stroke)
 {
     __this->Add1(stroke);
 }
 
-// private void AddObject(Uno.UX.PropertyObject drawObject) :2935
+// private void AddObject(Uno.UX.PropertyObject drawObject) :2207
 void DrawObjectWatcher__AddObject_fn(DrawObjectWatcher* __this, ::g::Uno::UX::PropertyObject* drawObject)
 {
     __this->AddObject(drawObject);
 }
 
-// public generated DrawObjectWatcher New() :2838
+// public generated DrawObjectWatcher New() :2110
 void DrawObjectWatcher__New1_fn(DrawObjectWatcher** __retval)
 {
     *__retval = DrawObjectWatcher::New1();
 }
 
-// public void OnRooted(Fuse.Drawing.IDrawObjectWatcherFeedback feedback) :2886
+// public void OnRooted(Fuse.Drawing.IDrawObjectWatcherFeedback feedback) :2158
 void DrawObjectWatcher__OnRooted_fn(DrawObjectWatcher* __this, uObject* feedback)
 {
     __this->OnRooted(feedback);
 }
 
-// public void OnUnrooted() :2899
+// public void OnUnrooted() :2171
 void DrawObjectWatcher__OnUnrooted_fn(DrawObjectWatcher* __this)
 {
     __this->OnUnrooted();
 }
 
-// public void Reset() :2915
+// public void Reset() :2187
 void DrawObjectWatcher__Reset_fn(DrawObjectWatcher* __this)
 {
     __this->Reset();
 }
 
-// public void Sync() :2852
+// public void Sync() :2124
 void DrawObjectWatcher__Sync_fn(DrawObjectWatcher* __this)
 {
     __this->Sync();
 }
 
-// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector prop) :2961
+// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector prop) :2233
 void DrawObjectWatcher__UnoUXIPropertyListenerOnPropertyChanged_fn(DrawObjectWatcher* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Selector* prop)
 {
     uStackFrame __("Fuse.Drawing.DrawObjectWatcher", "Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject,Uno.UX.Selector)");
@@ -1787,19 +1790,19 @@ void DrawObjectWatcher__UnoUXIPropertyListenerOnPropertyChanged_fn(DrawObjectWat
 
 ::g::Uno::UX::Selector DrawObjectWatcher::ShadingName_;
 
-// public generated DrawObjectWatcher() [instance] :2838
+// public generated DrawObjectWatcher() [instance] :2110
 void DrawObjectWatcher::ctor_()
 {
 }
 
-// public void Add(Fuse.Drawing.Brush brush) [instance] :2930
+// public void Add(Fuse.Drawing.Brush brush) [instance] :2202
 void DrawObjectWatcher::Add(::g::Fuse::Drawing::Brush* brush)
 {
     uStackFrame __("Fuse.Drawing.DrawObjectWatcher", "Add(Fuse.Drawing.Brush)");
     AddObject(brush);
 }
 
-// public void Add(Fuse.Drawing.Stroke stroke) [instance] :2924
+// public void Add(Fuse.Drawing.Stroke stroke) [instance] :2196
 void DrawObjectWatcher::Add1(::g::Fuse::Drawing::Stroke* stroke)
 {
     uStackFrame __("Fuse.Drawing.DrawObjectWatcher", "Add(Fuse.Drawing.Stroke)");
@@ -1807,7 +1810,7 @@ void DrawObjectWatcher::Add1(::g::Fuse::Drawing::Stroke* stroke)
     AddObject(uPtr(stroke)->Brush());
 }
 
-// private void AddObject(Uno.UX.PropertyObject drawObject) [instance] :2935
+// private void AddObject(Uno.UX.PropertyObject drawObject) [instance] :2207
 void DrawObjectWatcher::AddObject(::g::Uno::UX::PropertyObject* drawObject)
 {
     uStackFrame __("Fuse.Drawing.DrawObjectWatcher", "AddObject(Uno.UX.PropertyObject)");
@@ -1830,7 +1833,7 @@ void DrawObjectWatcher::AddObject(::g::Uno::UX::PropertyObject* drawObject)
     _items.Add(::TYPES[12/*Fuse.Internal.MiniList<Fuse.Drawing.DrawObjectWatcher.Item>*/], (collection1 = DrawObjectWatcher__Item::New1(), uPtr(collection1)->Used = true, uPtr(collection1)->DrawObject = drawObject, uPtr(collection1)->Listening = _rooted, uPtr(collection1)->Dirty = true, collection1));
 }
 
-// public void OnRooted(Fuse.Drawing.IDrawObjectWatcherFeedback feedback) [instance] :2886
+// public void OnRooted(Fuse.Drawing.IDrawObjectWatcherFeedback feedback) [instance] :2158
 void DrawObjectWatcher::OnRooted(uObject* feedback)
 {
     uStackFrame __("Fuse.Drawing.DrawObjectWatcher", "OnRooted(Fuse.Drawing.IDrawObjectWatcherFeedback)");
@@ -1846,7 +1849,7 @@ void DrawObjectWatcher::OnRooted(uObject* feedback)
     }
 }
 
-// public void OnUnrooted() [instance] :2899
+// public void OnUnrooted() [instance] :2171
 void DrawObjectWatcher::OnUnrooted()
 {
     uStackFrame __("Fuse.Drawing.DrawObjectWatcher", "OnUnrooted()");
@@ -1865,7 +1868,7 @@ void DrawObjectWatcher::OnUnrooted()
     _feedback = NULL;
 }
 
-// public void Reset() [instance] :2915
+// public void Reset() [instance] :2187
 void DrawObjectWatcher::Reset()
 {
     uStackFrame __("Fuse.Drawing.DrawObjectWatcher", "Reset()");
@@ -1877,14 +1880,14 @@ void DrawObjectWatcher::Reset()
     }
 }
 
-// public void Sync() [instance] :2852
+// public void Sync() [instance] :2124
 void DrawObjectWatcher::Sync()
 {
     uStackFrame __("Fuse.Drawing.DrawObjectWatcher", "Sync()");
 
     if (!_rooted)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[22/*"Sync while ...*/], this, ::STRINGS[5/*"/Users/eric...*/], 2856, ::STRINGS[23/*"Sync"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[22/*"Sync while ...*/], this, ::STRINGS[5/*"/Users/star...*/], 2128, ::STRINGS[23/*"Sync"*/]);
         return;
     }
 
@@ -1914,7 +1917,7 @@ void DrawObjectWatcher::Sync()
     }
 }
 
-// public generated DrawObjectWatcher New() [static] :2838
+// public generated DrawObjectWatcher New() [static] :2110
 DrawObjectWatcher* DrawObjectWatcher::New1()
 {
     DrawObjectWatcher* obj2 = (DrawObjectWatcher*)uNew(DrawObjectWatcher_typeof());
@@ -1923,8 +1926,8 @@ DrawObjectWatcher* DrawObjectWatcher::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/drawing/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.1.1/drawing/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public struct ImageFill.DrawParams :110
 // {
@@ -1969,8 +1972,8 @@ uStructType* ImageFill__DrawParams_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public abstract class DynamicBrush :83
 // {
@@ -2060,8 +2063,8 @@ void DynamicBrush::Opacity(float value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public enum FillRule :202
 uEnumType* FillRule_typeof()
@@ -2076,8 +2079,8 @@ uEnumType* FillRule_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/brushes/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/brushes/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public sealed class GradientStop :13
 // {
@@ -2243,10 +2246,10 @@ GradientStop* GradientStop::New3(::g::Uno::Float4 color, float offset)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal abstract interface IDrawObjectWatcherFeedback :2827
+// internal abstract interface IDrawObjectWatcherFeedback :2099
 // {
 uInterfaceType* IDrawObjectWatcherFeedback_typeof()
 {
@@ -2258,8 +2261,8 @@ uInterfaceType* IDrawObjectWatcherFeedback_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/drawing/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.1.1/drawing/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public sealed class ImageFill :28
 // {
@@ -2889,8 +2892,23 @@ ImageFill* ImageFill::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/brushes/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
+
+// internal abstract interface INativeSurfaceOwner :3103
+// {
+uInterfaceType* INativeSurfaceOwner_typeof()
+{
+    static uSStrong<uInterfaceType*> type;
+    if (type != NULL) return type;
+
+    type = uInterfaceType::New("Fuse.Drawing.INativeSurfaceOwner", 0, 0);
+    return type;
+}
+// }
+
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/brushes/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public abstract interface ISolidColor :431
 // {
@@ -2906,10 +2924,10 @@ uInterfaceType* ISolidColor_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// public abstract interface ISurfaceDrawable :3779
+// public abstract interface ISurfaceDrawable :3072
 // {
 uInterfaceType* ISurfaceDrawable_typeof()
 {
@@ -2917,16 +2935,18 @@ uInterfaceType* ISurfaceDrawable_typeof()
     if (type != NULL) return type;
 
     type = uInterfaceType::New("Fuse.Drawing.ISurfaceDrawable", 0, 0);
-    type->Reflection.SetFunctions(1,
-        new uFunction("Draw", NULL, NULL, offsetof(ISurfaceDrawable, fp_Draw), false, uVoid_typeof(), 1, ::g::Fuse::Drawing::Surface_typeof()));
+    type->Reflection.SetFunctions(3,
+        new uFunction("Draw", NULL, NULL, offsetof(ISurfaceDrawable, fp_Draw), false, uVoid_typeof(), 1, ::g::Fuse::Drawing::Surface_typeof()),
+        new uFunction("get_ElementSize", NULL, NULL, offsetof(ISurfaceDrawable, fp_get_ElementSize), false, ::g::Uno::Float2_typeof(), 0),
+        new uFunction("get_IsPrimary", NULL, NULL, offsetof(ISurfaceDrawable, fp_get_IsPrimary), false, ::g::Uno::Bool_typeof(), 0));
     return type;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal abstract interface ISurfaceProvider :3868
+// internal abstract interface ISurfaceProvider :3192
 // {
 uInterfaceType* ISurfaceProvider_typeof()
 {
@@ -2938,10 +2958,10 @@ uInterfaceType* ISurfaceProvider_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// private sealed class DrawObjectWatcher.Item :2840
+// private sealed class DrawObjectWatcher.Item :2112
 // {
 static void DrawObjectWatcher__Item_build(uType* type)
 {
@@ -2968,24 +2988,24 @@ uType* DrawObjectWatcher__Item_typeof()
     return type;
 }
 
-// public generated Item() :2840
+// public generated Item() :2112
 void DrawObjectWatcher__Item__ctor__fn(DrawObjectWatcher__Item* __this)
 {
     __this->ctor_();
 }
 
-// public generated Item New() :2840
+// public generated Item New() :2112
 void DrawObjectWatcher__Item__New1_fn(DrawObjectWatcher__Item** __retval)
 {
     *__retval = DrawObjectWatcher__Item::New1();
 }
 
-// public generated Item() [instance] :2840
+// public generated Item() [instance] :2112
 void DrawObjectWatcher__Item::ctor_()
 {
 }
 
-// public generated Item New() [static] :2840
+// public generated Item New() [static] :2112
 DrawObjectWatcher__Item* DrawObjectWatcher__Item::New1()
 {
     DrawObjectWatcher__Item* obj1 = (DrawObjectWatcher__Item*)uNew(DrawObjectWatcher__Item_typeof());
@@ -2994,8 +3014,8 @@ DrawObjectWatcher__Item* DrawObjectWatcher__Item::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/brushes/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/brushes/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public sealed class LinearGradient :106
 // {
@@ -3491,8 +3511,8 @@ void LinearGradient::ValidateStopsSorted(uObject* stops)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/brushes/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/brushes/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal sealed class LinearGradientDrawable :342
 // {
@@ -3660,8 +3680,8 @@ LinearGradientDrawable* LinearGradientDrawable::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/brushes/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/brushes/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public enum LinearGradientInterpolation :59
 uEnumType* LinearGradientInterpolation_typeof()
@@ -3676,8 +3696,8 @@ uEnumType* LinearGradientInterpolation_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public enum LineCap :188
 uEnumType* LineCap_typeof()
@@ -3693,8 +3713,8 @@ uEnumType* LineCap_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public enum LineJoin :195
 uEnumType* LineJoin_typeof()
@@ -3710,10 +3730,10 @@ uEnumType* LineJoin_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// public static class LineMetrics :2993
+// public static class LineMetrics :2265
 // {
 static void LineMetrics_build(uType* type)
 {
@@ -3733,13 +3753,13 @@ uClassType* LineMetrics_typeof()
     return type;
 }
 
-// public static Uno.Rect GetBounds(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) :2995
+// public static Uno.Rect GetBounds(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) :2267
 void LineMetrics__GetBounds_fn(uObject* segments, ::g::Uno::Rect* __retval)
 {
     *__retval = LineMetrics::GetBounds(segments);
 }
 
-// public static Uno.Rect GetBounds(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) [static] :2995
+// public static Uno.Rect GetBounds(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) [static] :2267
 ::g::Uno::Rect LineMetrics::GetBounds(uObject* segments)
 {
     uStackFrame __("Fuse.Drawing.LineMetrics", "GetBounds(Uno.Collections.IList<Fuse.Drawing.LineSegment>)");
@@ -3747,10 +3767,10 @@ void LineMetrics__GetBounds_fn(uObject* segments, ::g::Uno::Rect* __retval)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal sealed class LineMetricsImpl :3001
+// internal sealed class LineMetricsImpl :2273
 // {
 static void LineMetricsImpl_build(uType* type)
 {
@@ -3777,55 +3797,55 @@ uType* LineMetricsImpl_typeof()
     return type;
 }
 
-// public generated LineMetricsImpl() :3001
+// public generated LineMetricsImpl() :2273
 void LineMetricsImpl__ctor__fn(LineMetricsImpl* __this)
 {
     __this->ctor_();
 }
 
-// private void AddPoint(float2 pt) :3007
+// private void AddPoint(float2 pt) :2279
 void LineMetricsImpl__AddPoint_fn(LineMetricsImpl* __this, ::g::Uno::Float2* pt)
 {
     __this->AddPoint(*pt);
 }
 
-// private void BezierBounds(float2 s, float2 e, float2 c1, float2 c2) :3063
+// private void BezierBounds(float2 s, float2 e, float2 c1, float2 c2) :2335
 void LineMetricsImpl__BezierBounds_fn(LineMetricsImpl* __this, ::g::Uno::Float2* s, ::g::Uno::Float2* e, ::g::Uno::Float2* c1, ::g::Uno::Float2* c2)
 {
     __this->BezierBounds(*s, *e, *c1, *c2);
 }
 
-// private static float2 BezierMinMax(float p0, float p1, float p2, float p3) :3074
+// private static float2 BezierMinMax(float p0, float p1, float p2, float p3) :2346
 void LineMetricsImpl__BezierMinMax_fn(float* p0, float* p1, float* p2, float* p3, ::g::Uno::Float2* __retval)
 {
     *__retval = LineMetricsImpl::BezierMinMax(*p0, *p1, *p2, *p3);
 }
 
-// private void EllipticBounds(float2 from, Fuse.Drawing.LineSegment seg) :3112
+// private void EllipticBounds(float2 from, Fuse.Drawing.LineSegment seg) :2384
 void LineMetricsImpl__EllipticBounds_fn(LineMetricsImpl* __this, ::g::Uno::Float2* from, ::g::Fuse::Drawing::LineSegment* seg)
 {
     __this->EllipticBounds(*from, *seg);
 }
 
-// public Uno.Rect GetBounds(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) :3027
+// public Uno.Rect GetBounds(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) :2299
 void LineMetricsImpl__GetBounds_fn(LineMetricsImpl* __this, uObject* segments, ::g::Uno::Rect* __retval)
 {
     *__retval = __this->GetBounds(segments);
 }
 
-// public generated LineMetricsImpl New() :3001
+// public generated LineMetricsImpl New() :2273
 void LineMetricsImpl__New1_fn(LineMetricsImpl** __retval)
 {
     *__retval = LineMetricsImpl::New1();
 }
 
-// public generated LineMetricsImpl() [instance] :3001
+// public generated LineMetricsImpl() [instance] :2273
 void LineMetricsImpl::ctor_()
 {
     _curPos = ::g::Uno::Float2__New1(0.0f);
 }
 
-// private void AddPoint(float2 pt) [instance] :3007
+// private void AddPoint(float2 pt) [instance] :2279
 void LineMetricsImpl::AddPoint(::g::Uno::Float2 pt)
 {
     if (!_hasInit)
@@ -3840,7 +3860,7 @@ void LineMetricsImpl::AddPoint(::g::Uno::Float2 pt)
     _bounds.Maximum(::g::Uno::Math::Max3(_bounds.Maximum(), pt));
 }
 
-// private void BezierBounds(float2 s, float2 e, float2 c1, float2 c2) [instance] :3063
+// private void BezierBounds(float2 s, float2 e, float2 c1, float2 c2) [instance] :2335
 void LineMetricsImpl::BezierBounds(::g::Uno::Float2 s, ::g::Uno::Float2 e, ::g::Uno::Float2 c1, ::g::Uno::Float2 c2)
 {
     uStackFrame __("Fuse.Drawing.LineMetricsImpl", "BezierBounds(float2,float2,float2,float2)");
@@ -3852,7 +3872,7 @@ void LineMetricsImpl::BezierBounds(::g::Uno::Float2 s, ::g::Uno::Float2 e, ::g::
     AddPoint(::g::Fuse::Internal::Curves::CalcBezierAt(s, c1, c2, e, y.Item(1)));
 }
 
-// private void EllipticBounds(float2 from, Fuse.Drawing.LineSegment seg) [instance] :3112
+// private void EllipticBounds(float2 from, Fuse.Drawing.LineSegment seg) [instance] :2384
 void LineMetricsImpl::EllipticBounds(::g::Uno::Float2 from, ::g::Fuse::Drawing::LineSegment seg)
 {
     uStackFrame __("Fuse.Drawing.LineMetricsImpl", "EllipticBounds(float2,Fuse.Drawing.LineSegment)");
@@ -3886,7 +3906,7 @@ void LineMetricsImpl::EllipticBounds(::g::Uno::Float2 from, ::g::Fuse::Drawing::
     AddPoint(::g::Fuse::Drawing::SurfaceUtil::EllipticArcPoint(c, radius, xAngle, angles.Item(0) + angles.Item(1)));
 }
 
-// public Uno.Rect GetBounds(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) [instance] :3027
+// public Uno.Rect GetBounds(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) [instance] :2299
 ::g::Uno::Rect LineMetricsImpl::GetBounds(uObject* segments)
 {
     uStackFrame __("Fuse.Drawing.LineMetricsImpl", "GetBounds(Uno.Collections.IList<Fuse.Drawing.LineSegment>)");
@@ -3930,7 +3950,7 @@ void LineMetricsImpl::EllipticBounds(::g::Uno::Float2 from, ::g::Fuse::Drawing::
     return _bounds;
 }
 
-// private static float2 BezierMinMax(float p0, float p1, float p2, float p3) [static] :3074
+// private static float2 BezierMinMax(float p0, float p1, float p2, float p3) [static] :2346
 ::g::Uno::Float2 LineMetricsImpl::BezierMinMax(float p0, float p1, float p2, float p3)
 {
     float b = ((2.0f * p0) - (4.0f * p1)) + (2.0f * p2);
@@ -3951,7 +3971,7 @@ void LineMetricsImpl::EllipticBounds(::g::Uno::Float2 from, ::g::Fuse::Drawing::
     return ::g::Uno::Float2__New2(::g::Uno::Math::Clamp1(t1, 0.0f, 1.0f), ::g::Uno::Math::Clamp1(t2, 0.0f, 1.0f));
 }
 
-// public generated LineMetricsImpl New() [static] :3001
+// public generated LineMetricsImpl New() [static] :2273
 LineMetricsImpl* LineMetricsImpl::New1()
 {
     LineMetricsImpl* obj1 = (LineMetricsImpl*)uNew(LineMetricsImpl_typeof());
@@ -3960,15 +3980,15 @@ LineMetricsImpl* LineMetricsImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// public sealed class LineParser :3163
+// public sealed class LineParser :2435
 // {
 static void LineParser_build(uType* type)
 {
     ::STRINGS[37] = uString::Const("Unsupported SVG Path data");
-    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno");
+    ::STRINGS[5] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno");
     ::STRINGS[38] = uString::Const("ParseSVGPath");
     ::TYPES[23] = ::g::Uno::Exception_typeof();
     type->Reflection.SetFunctions(2,
@@ -3990,30 +4010,30 @@ uType* LineParser_typeof()
     return type;
 }
 
-// public generated LineParser() :3163
+// public generated LineParser() :2435
 void LineParser__ctor__fn(LineParser* __this)
 {
     __this->ctor_();
 }
 
-// public generated LineParser New() :3163
+// public generated LineParser New() :2435
 void LineParser__New1_fn(LineParser** __retval)
 {
     *__retval = LineParser::New1();
 }
 
-// public static void ParseSVGPath(string data, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) :3165
+// public static void ParseSVGPath(string data, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) :2437
 void LineParser__ParseSVGPath_fn(uString* data, uObject* segments)
 {
     LineParser::ParseSVGPath(data, segments);
 }
 
-// public generated LineParser() [instance] :3163
+// public generated LineParser() [instance] :2435
 void LineParser::ctor_()
 {
 }
 
-// public generated LineParser New() [static] :3163
+// public generated LineParser New() [static] :2435
 LineParser* LineParser::New1()
 {
     LineParser* obj1 = (LineParser*)uNew(LineParser_typeof());
@@ -4021,7 +4041,7 @@ LineParser* LineParser::New1()
     return obj1;
 }
 
-// public static void ParseSVGPath(string data, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) [static] :3165
+// public static void ParseSVGPath(string data, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) [static] :2437
 void LineParser::ParseSVGPath(uString* data, uObject* segments)
 {
     uStackFrame __("Fuse.Drawing.LineParser", "ParseSVGPath(string,Uno.Collections.IList<Fuse.Drawing.LineSegment>)");
@@ -4036,15 +4056,15 @@ void LineParser::ParseSVGPath(uString* data, uObject* segments)
     catch (const uThrowable& __t)
     {
         ::g::Uno::Exception* ex = __t.Exception;
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[37/*"Unsupported...*/], data, ::STRINGS[5/*"/Users/eric...*/], 3176, ::STRINGS[38/*"ParseSVGPath"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[37/*"Unsupported...*/], data, ::STRINGS[5/*"/Users/star...*/], 2448, ::STRINGS[38/*"ParseSVGPath"*/], NULL);
     }
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// public struct LineSegment :3459
+// public struct LineSegment :2731
 // {
 static void LineSegment_build(uType* type)
 {
@@ -4080,31 +4100,31 @@ uStructType* LineSegment_typeof()
     return type;
 }
 
-// public bool get_HasTo() :3468
+// public bool get_HasTo() :2740
 void LineSegment__get_HasTo_fn(LineSegment* __this, bool* __retval)
 {
     *__retval = __this->HasTo();
 }
 
-// public void Scale(float2 factor) :3483
+// public void Scale(float2 factor) :2755
 void LineSegment__Scale_fn(LineSegment* __this, ::g::Uno::Float2* factor)
 {
     __this->Scale(*factor);
 }
 
-// public void Translate(float2 offset) :3471
+// public void Translate(float2 offset) :2743
 void LineSegment__Translate_fn(LineSegment* __this, ::g::Uno::Float2* offset)
 {
     __this->Translate(*offset);
 }
 
-// public bool get_HasTo() [instance] :3468
+// public bool get_HasTo() [instance] :2740
 bool LineSegment::HasTo()
 {
     return Type != 4;
 }
 
-// public void Scale(float2 factor) [instance] :3483
+// public void Scale(float2 factor) [instance] :2755
 void LineSegment::Scale(::g::Uno::Float2 factor)
 {
     if (Type != 4)
@@ -4119,7 +4139,7 @@ void LineSegment::Scale(::g::Uno::Float2 factor)
         A = ::g::Uno::Float2__op_Multiply2(A, factor);
 }
 
-// public void Translate(float2 offset) [instance] :3471
+// public void Translate(float2 offset) [instance] :2743
 void LineSegment::Translate(::g::Uno::Float2 offset)
 {
     if (Type != 4)
@@ -4133,10 +4153,10 @@ void LineSegment::Translate(::g::Uno::Float2 offset)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// public enum LineSegmentFlags :3449
+// public enum LineSegmentFlags :2721
 uEnumType* LineSegmentFlags_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -4150,10 +4170,10 @@ uEnumType* LineSegmentFlags_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// public sealed class LineSegments :3513
+// public sealed class LineSegments :2785
 // {
 static void LineSegments_build(uType* type)
 {
@@ -4201,151 +4221,151 @@ uType* LineSegments_typeof()
     return type;
 }
 
-// public LineSegments() :3540
+// public LineSegments() :2812
 void LineSegments__ctor__fn(LineSegments* __this)
 {
     __this->ctor_();
 }
 
-// public LineSegments(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) :3546
+// public LineSegments(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) :2818
 void LineSegments__ctor_1_fn(LineSegments* __this, uObject* segments)
 {
     __this->ctor_1(segments);
 }
 
-// private void Add(Fuse.Drawing.LineSegment seg) :3553
+// private void Add(Fuse.Drawing.LineSegment seg) :2825
 void LineSegments__Add_fn(LineSegments* __this, ::g::Fuse::Drawing::LineSegment* seg)
 {
     __this->Add(*seg);
 }
 
-// public void BezierCurveTo(float2 pt, float2 controlA, float2 controlB) :3600
+// public void BezierCurveTo(float2 pt, float2 controlA, float2 controlB) :2872
 void LineSegments__BezierCurveTo_fn(LineSegments* __this, ::g::Uno::Float2* pt, ::g::Uno::Float2* controlA, ::g::Uno::Float2* controlB)
 {
     __this->BezierCurveTo(*pt, *controlA, *controlB);
 }
 
-// public void BezierCurveToRel(float2 pt, float2 controlA, float2 controlB) :3606
+// public void BezierCurveToRel(float2 pt, float2 controlA, float2 controlB) :2878
 void LineSegments__BezierCurveToRel_fn(LineSegments* __this, ::g::Uno::Float2* pt, ::g::Uno::Float2* controlA, ::g::Uno::Float2* controlB)
 {
     __this->BezierCurveToRel(*pt, *controlA, *controlB);
 }
 
-// public void Clear() :3529
+// public void Clear() :2801
 void LineSegments__Clear_fn(LineSegments* __this)
 {
     __this->Clear();
 }
 
-// public void ClosePath() :3611
+// public void ClosePath() :2883
 void LineSegments__ClosePath_fn(LineSegments* __this)
 {
     __this->ClosePath();
 }
 
-// public int get_Count() :3537
+// public int get_Count() :2809
 void LineSegments__get_Count_fn(LineSegments* __this, int* __retval)
 {
     *__retval = __this->Count();
 }
 
-// public float2 get_CurPos() :3526
+// public float2 get_CurPos() :2798
 void LineSegments__get_CurPos_fn(LineSegments* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->CurPos();
 }
 
-// public void EllipticArcTo(float2 pt, float2 radius, float xAngle, bool large, bool sweep) :3616
+// public void EllipticArcTo(float2 pt, float2 radius, float xAngle, bool large, bool sweep) :2888
 void LineSegments__EllipticArcTo_fn(LineSegments* __this, ::g::Uno::Float2* pt, ::g::Uno::Float2* radius, float* xAngle, bool* large, bool* sweep)
 {
     __this->EllipticArcTo(*pt, *radius, *xAngle, *large, *sweep);
 }
 
-// public void EllipticArcToRel(float2 pt, float2 radius, float xAngle, bool large, bool sweep) :3624
+// public void EllipticArcToRel(float2 pt, float2 radius, float xAngle, bool large, bool sweep) :2896
 void LineSegments__EllipticArcToRel_fn(LineSegments* __this, ::g::Uno::Float2* pt, ::g::Uno::Float2* radius, float* xAngle, bool* large, bool* sweep)
 {
     __this->EllipticArcToRel(*pt, *radius, *xAngle, *large, *sweep);
 }
 
-// public void HorizLineTo(float x) :3580
+// public void HorizLineTo(float x) :2852
 void LineSegments__HorizLineTo_fn(LineSegments* __this, float* x)
 {
     __this->HorizLineTo(*x);
 }
 
-// public void HorizLineToRel(float x) :3585
+// public void HorizLineToRel(float x) :2857
 void LineSegments__HorizLineToRel_fn(LineSegments* __this, float* x)
 {
     __this->HorizLineToRel(*x);
 }
 
-// public Fuse.Drawing.LineSegment get_Last() :3521
+// public Fuse.Drawing.LineSegment get_Last() :2793
 void LineSegments__get_Last_fn(LineSegments* __this, ::g::Fuse::Drawing::LineSegment* __retval)
 {
     *__retval = __this->Last();
 }
 
-// public void LineTo(float2 pt) :3570
+// public void LineTo(float2 pt) :2842
 void LineSegments__LineTo_fn(LineSegments* __this, ::g::Uno::Float2* pt)
 {
     __this->LineTo(*pt);
 }
 
-// public void LineToRel(float2 pt) :3575
+// public void LineToRel(float2 pt) :2847
 void LineSegments__LineToRel_fn(LineSegments* __this, ::g::Uno::Float2* pt)
 {
     __this->LineToRel(*pt);
 }
 
-// public void MoveTo(float2 pt) :3560
+// public void MoveTo(float2 pt) :2832
 void LineSegments__MoveTo_fn(LineSegments* __this, ::g::Uno::Float2* pt)
 {
     __this->MoveTo(*pt);
 }
 
-// public void MoveToRel(float2 pt) :3565
+// public void MoveToRel(float2 pt) :2837
 void LineSegments__MoveToRel_fn(LineSegments* __this, ::g::Uno::Float2* pt)
 {
     __this->MoveToRel(*pt);
 }
 
-// public LineSegments New() :3540
+// public LineSegments New() :2812
 void LineSegments__New1_fn(LineSegments** __retval)
 {
     *__retval = LineSegments::New1();
 }
 
-// public LineSegments New(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) :3546
+// public LineSegments New(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) :2818
 void LineSegments__New2_fn(uObject* segments, LineSegments** __retval)
 {
     *__retval = LineSegments::New2(segments);
 }
 
-// public generated Uno.Collections.IList<Fuse.Drawing.LineSegment> get_Segments() :3515
+// public generated Uno.Collections.IList<Fuse.Drawing.LineSegment> get_Segments() :2787
 void LineSegments__get_Segments_fn(LineSegments* __this, uObject** __retval)
 {
     *__retval = __this->Segments();
 }
 
-// private generated void set_Segments(Uno.Collections.IList<Fuse.Drawing.LineSegment> value) :3515
+// private generated void set_Segments(Uno.Collections.IList<Fuse.Drawing.LineSegment> value) :2787
 void LineSegments__set_Segments_fn(LineSegments* __this, uObject* value)
 {
     __this->Segments(value);
 }
 
-// public void VertLineTo(float y) :3590
+// public void VertLineTo(float y) :2862
 void LineSegments__VertLineTo_fn(LineSegments* __this, float* y)
 {
     __this->VertLineTo(*y);
 }
 
-// public void VertLineToRel(float y) :3595
+// public void VertLineToRel(float y) :2867
 void LineSegments__VertLineToRel_fn(LineSegments* __this, float* y)
 {
     __this->VertLineToRel(*y);
 }
 
-// public LineSegments() [instance] :3540
+// public LineSegments() [instance] :2812
 void LineSegments::ctor_()
 {
     uStackFrame __("Fuse.Drawing.LineSegments", ".ctor()");
@@ -4353,7 +4373,7 @@ void LineSegments::ctor_()
     _curPos = ::g::Uno::Float2__New1(0.0f);
 }
 
-// public LineSegments(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) [instance] :3546
+// public LineSegments(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) [instance] :2818
 void LineSegments::ctor_1(uObject* segments)
 {
     uStackFrame __("Fuse.Drawing.LineSegments", ".ctor(Uno.Collections.IList<Fuse.Drawing.LineSegment>)");
@@ -4364,7 +4384,7 @@ void LineSegments::ctor_1(uObject* segments)
         _curPos = (::g::Uno::Collections::IList::get_Item_ex(uInterface(uPtr(segments), ::TYPES[5/*Uno.Collections.IList<Fuse.Drawing.LineSegment>*/]), uCRef<int>(::g::Uno::Collections::ICollection::Count(uInterface(uPtr(segments), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Drawing.LineSegment>*/]))), &ret8), ret8).To;
 }
 
-// private void Add(Fuse.Drawing.LineSegment seg) [instance] :3553
+// private void Add(Fuse.Drawing.LineSegment seg) [instance] :2825
 void LineSegments::Add(::g::Fuse::Drawing::LineSegment seg)
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "Add(Fuse.Drawing.LineSegment)");
@@ -4374,7 +4394,7 @@ void LineSegments::Add(::g::Fuse::Drawing::LineSegment seg)
         _curPos = seg.To;
 }
 
-// public void BezierCurveTo(float2 pt, float2 controlA, float2 controlB) [instance] :3600
+// public void BezierCurveTo(float2 pt, float2 controlA, float2 controlB) [instance] :2872
 void LineSegments::BezierCurveTo(::g::Uno::Float2 pt, ::g::Uno::Float2 controlA, ::g::Uno::Float2 controlB)
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "BezierCurveTo(float2,float2,float2)");
@@ -4382,14 +4402,14 @@ void LineSegments::BezierCurveTo(::g::Uno::Float2 pt, ::g::Uno::Float2 controlA,
     Add((collection3 = uDefault< ::g::Fuse::Drawing::LineSegment>(), collection3.Type = 2, collection3.To = pt, collection3.A = controlA, collection3.B = controlB, collection3));
 }
 
-// public void BezierCurveToRel(float2 pt, float2 controlA, float2 controlB) [instance] :3606
+// public void BezierCurveToRel(float2 pt, float2 controlA, float2 controlB) [instance] :2878
 void LineSegments::BezierCurveToRel(::g::Uno::Float2 pt, ::g::Uno::Float2 controlA, ::g::Uno::Float2 controlB)
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "BezierCurveToRel(float2,float2,float2)");
     BezierCurveTo(::g::Uno::Float2__op_Addition2(pt, _curPos), ::g::Uno::Float2__op_Addition2(controlA, _curPos), ::g::Uno::Float2__op_Addition2(controlB, _curPos));
 }
 
-// public void Clear() [instance] :3529
+// public void Clear() [instance] :2801
 void LineSegments::Clear()
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "Clear()");
@@ -4397,7 +4417,7 @@ void LineSegments::Clear()
     _curPos = ::g::Uno::Float2__New1(0.0f);
 }
 
-// public void ClosePath() [instance] :3611
+// public void ClosePath() [instance] :2883
 void LineSegments::ClosePath()
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "ClosePath()");
@@ -4405,20 +4425,20 @@ void LineSegments::ClosePath()
     Add((collection4 = uDefault< ::g::Fuse::Drawing::LineSegment>(), collection4.Type = 4, collection4));
 }
 
-// public int get_Count() [instance] :3537
+// public int get_Count() [instance] :2809
 int LineSegments::Count()
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "get_Count()");
     return ::g::Uno::Collections::ICollection::Count(uInterface(uPtr(Segments()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Drawing.LineSegment>*/]));
 }
 
-// public float2 get_CurPos() [instance] :3526
+// public float2 get_CurPos() [instance] :2798
 ::g::Uno::Float2 LineSegments::CurPos()
 {
     return _curPos;
 }
 
-// public void EllipticArcTo(float2 pt, float2 radius, float xAngle, bool large, bool sweep) [instance] :3616
+// public void EllipticArcTo(float2 pt, float2 radius, float xAngle, bool large, bool sweep) [instance] :2888
 void LineSegments::EllipticArcTo(::g::Uno::Float2 pt, ::g::Uno::Float2 radius, float xAngle, bool large, bool sweep)
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "EllipticArcTo(float2,float2,float,bool,bool)");
@@ -4426,26 +4446,26 @@ void LineSegments::EllipticArcTo(::g::Uno::Float2 pt, ::g::Uno::Float2 radius, f
     Add((collection5 = uDefault< ::g::Fuse::Drawing::LineSegment>(), collection5.Type = 3, collection5.To = pt, collection5.A = radius, collection5.B = ::g::Uno::Float2__New2(xAngle, 0.0f), collection5.Flags = ((large ? 1 : 0) | (sweep ? 2 : 0)), collection5));
 }
 
-// public void EllipticArcToRel(float2 pt, float2 radius, float xAngle, bool large, bool sweep) [instance] :3624
+// public void EllipticArcToRel(float2 pt, float2 radius, float xAngle, bool large, bool sweep) [instance] :2896
 void LineSegments::EllipticArcToRel(::g::Uno::Float2 pt, ::g::Uno::Float2 radius, float xAngle, bool large, bool sweep)
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "EllipticArcToRel(float2,float2,float,bool,bool)");
     EllipticArcTo(::g::Uno::Float2__op_Addition2(pt, _curPos), radius, xAngle, large, sweep);
 }
 
-// public void HorizLineTo(float x) [instance] :3580
+// public void HorizLineTo(float x) [instance] :2852
 void LineSegments::HorizLineTo(float x)
 {
     LineTo(::g::Uno::Float2__New2(x, _curPos.Y));
 }
 
-// public void HorizLineToRel(float x) [instance] :3585
+// public void HorizLineToRel(float x) [instance] :2857
 void LineSegments::HorizLineToRel(float x)
 {
     LineTo(::g::Uno::Float2__op_Addition2(_curPos, ::g::Uno::Float2__New2(x, 0.0f)));
 }
 
-// public Fuse.Drawing.LineSegment get_Last() [instance] :3521
+// public Fuse.Drawing.LineSegment get_Last() [instance] :2793
 ::g::Fuse::Drawing::LineSegment LineSegments::Last()
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "get_Last()");
@@ -4453,7 +4473,7 @@ void LineSegments::HorizLineToRel(float x)
     return (::g::Uno::Collections::IList::get_Item_ex(uInterface(uPtr(Segments()), ::TYPES[5/*Uno.Collections.IList<Fuse.Drawing.LineSegment>*/]), uCRef<int>(::g::Uno::Collections::ICollection::Count(uInterface(uPtr(Segments()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Drawing.LineSegment>*/])) - 1), &ret9), ret9);
 }
 
-// public void LineTo(float2 pt) [instance] :3570
+// public void LineTo(float2 pt) [instance] :2842
 void LineSegments::LineTo(::g::Uno::Float2 pt)
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "LineTo(float2)");
@@ -4461,14 +4481,14 @@ void LineSegments::LineTo(::g::Uno::Float2 pt)
     Add((collection2 = uDefault< ::g::Fuse::Drawing::LineSegment>(), collection2.Type = 1, collection2.To = pt, collection2));
 }
 
-// public void LineToRel(float2 pt) [instance] :3575
+// public void LineToRel(float2 pt) [instance] :2847
 void LineSegments::LineToRel(::g::Uno::Float2 pt)
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "LineToRel(float2)");
     LineTo(::g::Uno::Float2__op_Addition2(pt, _curPos));
 }
 
-// public void MoveTo(float2 pt) [instance] :3560
+// public void MoveTo(float2 pt) [instance] :2832
 void LineSegments::MoveTo(::g::Uno::Float2 pt)
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "MoveTo(float2)");
@@ -4476,40 +4496,40 @@ void LineSegments::MoveTo(::g::Uno::Float2 pt)
     Add((collection1 = uDefault< ::g::Fuse::Drawing::LineSegment>(), collection1.Type = 0, collection1.To = pt, collection1));
 }
 
-// public void MoveToRel(float2 pt) [instance] :3565
+// public void MoveToRel(float2 pt) [instance] :2837
 void LineSegments::MoveToRel(::g::Uno::Float2 pt)
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "MoveToRel(float2)");
     MoveTo(::g::Uno::Float2__op_Addition2(pt, _curPos));
 }
 
-// public generated Uno.Collections.IList<Fuse.Drawing.LineSegment> get_Segments() [instance] :3515
+// public generated Uno.Collections.IList<Fuse.Drawing.LineSegment> get_Segments() [instance] :2787
 uObject* LineSegments::Segments()
 {
     return _Segments;
 }
 
-// private generated void set_Segments(Uno.Collections.IList<Fuse.Drawing.LineSegment> value) [instance] :3515
+// private generated void set_Segments(Uno.Collections.IList<Fuse.Drawing.LineSegment> value) [instance] :2787
 void LineSegments::Segments(uObject* value)
 {
     _Segments = value;
 }
 
-// public void VertLineTo(float y) [instance] :3590
+// public void VertLineTo(float y) [instance] :2862
 void LineSegments::VertLineTo(float y)
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "VertLineTo(float)");
     LineTo(::g::Uno::Float2__New2(_curPos.X, y));
 }
 
-// public void VertLineToRel(float y) [instance] :3595
+// public void VertLineToRel(float y) [instance] :2867
 void LineSegments::VertLineToRel(float y)
 {
     uStackFrame __("Fuse.Drawing.LineSegments", "VertLineToRel(float)");
     LineTo(::g::Uno::Float2__op_Addition2(_curPos, ::g::Uno::Float2__New2(0.0f, y)));
 }
 
-// public LineSegments New() [static] :3540
+// public LineSegments New() [static] :2812
 LineSegments* LineSegments::New1()
 {
     LineSegments* obj6 = (LineSegments*)uNew(LineSegments_typeof());
@@ -4517,7 +4537,7 @@ LineSegments* LineSegments::New1()
     return obj6;
 }
 
-// public LineSegments New(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) [static] :3546
+// public LineSegments New(Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) [static] :2818
 LineSegments* LineSegments::New2(uObject* segments)
 {
     LineSegments* obj7 = (LineSegments*)uNew(LineSegments_typeof());
@@ -4526,10 +4546,10 @@ LineSegments* LineSegments::New2(uObject* segments)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// public enum LineSegmentType :3431
+// public enum LineSegmentType :2703
 uEnumType* LineSegmentType_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -4545,8 +4565,8 @@ uEnumType* LineSegmentType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/drawing/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.1.1/drawing/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class RepeatBaker :311
 // {
@@ -4649,8 +4669,8 @@ RepeatBaker* RepeatBaker::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public enum ResampleMode :212
 uEnumType* ResampleMode_typeof()
@@ -4666,8 +4686,8 @@ uEnumType* ResampleMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/brushes/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/brushes/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public sealed class SolidColor :436
 // {
@@ -4837,8 +4857,8 @@ SolidColor* SolidColor::New3(::g::Uno::Float4 color)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public abstract class StaticBrush :81
 // {
@@ -4875,8 +4895,8 @@ void StaticBrush::ctor_2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/brushes/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/brushes/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // public sealed class StaticSolidColor :490
 // {
@@ -4956,8 +4976,8 @@ StaticSolidColor* StaticSolidColor::New2(::g::Uno::Float4 color)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class Stroke :249
 // {
@@ -5630,8 +5650,8 @@ Stroke* Stroke::New3(::g::Fuse::Drawing::Brush* brush, float width, int lineCap,
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public enum StrokeAdjustment :234
 uEnumType* StrokeAdjustment_typeof()
@@ -5648,8 +5668,8 @@ uEnumType* StrokeAdjustment_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public enum StrokeAlignment :242
 uEnumType* StrokeAlignment_typeof()
@@ -5665,16 +5685,19 @@ uEnumType* StrokeAlignment_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// public abstract class Surface :3657
+// public abstract class Surface :2932
 // {
 static void Surface_build(uType* type)
 {
+    ::STRINGS[46] = uString::Const("GLDraw called with mismatched elements");
+    ::STRINGS[5] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno");
+    ::STRINGS[47] = uString::Const("Draw");
     ::TYPES[26] = ::g::Fuse::ICommonViewport_typeof();
-    ::TYPES[27] = ::g::Fuse::Drawing::ISurfaceDrawable_typeof();
-    ::TYPES[28] = ::g::Fuse::IRenderViewport_typeof();
+    ::TYPES[27] = ::g::Fuse::IRenderViewport_typeof();
+    ::TYPES[28] = ::g::Fuse::Drawing::ISurfaceDrawable_typeof();
     ::TYPES[1] = ::g::Uno::Float2_typeof()->Array();
     type->SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(Surface_type, interface0));
@@ -5685,12 +5708,13 @@ static void Surface_build(uType* type)
         ::g::Uno::Graphics::VertexBuffer_typeof(), offsetof(::g::Fuse::Drawing::Surface, Draw_VertexData_7678ae3a_7_2_1), 0,
         uObject_typeof(), offsetof(::g::Fuse::Drawing::Surface, Owner), 0,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Drawing::Surface, _ElementSize), 0);
-    type->Reflection.SetFunctions(13,
+    type->Reflection.SetFunctions(14,
         new uFunction("Begin", NULL, NULL, offsetof(Surface_type, fp_Begin), false, uVoid_typeof(), 3, ::g::Fuse::DrawContext_typeof(), ::g::Uno::Graphics::Framebuffer_typeof(), ::g::Uno::Float_typeof()),
         new uFunction("CreatePath", NULL, NULL, offsetof(Surface_type, fp_CreatePath), false, ::g::Fuse::Drawing::SurfacePath_typeof(), 2, ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Drawing::LineSegment_typeof(), NULL), ::g::Fuse::Drawing::FillRule_typeof()),
         new uFunction("Dispose", NULL, NULL, offsetof(Surface_type, fp_Dispose), false, uVoid_typeof(), 0),
         new uFunction("DisposePath", NULL, NULL, offsetof(Surface_type, fp_DisposePath), false, uVoid_typeof(), 1, ::g::Fuse::Drawing::SurfacePath_typeof()),
-        new uFunction("Draw", NULL, (void*)Surface__Draw_fn, 0, false, uVoid_typeof(), 3, ::g::Fuse::DrawContext_typeof(), ::g::Fuse::Elements::Element_typeof(), ::TYPES[27/*Fuse.Drawing.ISurfaceDrawable*/]),
+        new uFunction("Draw", NULL, (void*)Surface__Draw_fn, 0, false, uVoid_typeof(), 3, ::g::Fuse::DrawContext_typeof(), ::g::Fuse::Elements::Element_typeof(), ::TYPES[28/*Fuse.Drawing.ISurfaceDrawable*/]),
+        new uFunction("DrawLocal", NULL, (void*)Surface__DrawLocal_fn, 0, false, uVoid_typeof(), 1, ::TYPES[28/*Fuse.Drawing.ISurfaceDrawable*/]),
         new uFunction("End", NULL, NULL, offsetof(Surface_type, fp_End), false, uVoid_typeof(), 0),
         new uFunction("FillPath", NULL, NULL, offsetof(Surface_type, fp_FillPath), false, uVoid_typeof(), 2, ::g::Fuse::Drawing::SurfacePath_typeof(), ::g::Fuse::Drawing::Brush_typeof()),
         new uFunction("PopTransform", NULL, NULL, offsetof(Surface_type, fp_PopTransform), false, uVoid_typeof(), 0),
@@ -5716,66 +5740,75 @@ Surface_type* Surface_typeof()
     return type;
 }
 
-// internal Surface() :3660
+// internal Surface() :2935
 void Surface__ctor__fn(Surface* __this)
 {
     __this->ctor_();
 }
 
-// public void Draw(Fuse.DrawContext dc, Fuse.Elements.Element elm, Fuse.Drawing.ISurfaceDrawable drawable) :3743
+// public void Draw(Fuse.DrawContext dc, Fuse.Elements.Element elm, Fuse.Drawing.ISurfaceDrawable drawable) :3020
 void Surface__Draw_fn(Surface* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::Element* elm, uObject* drawable)
 {
     __this->Draw(dc, elm, drawable);
 }
 
-// protected generated float2 get_ElementSize() :3664
+// public void DrawLocal(Fuse.Drawing.ISurfaceDrawable drawable) :3060
+void Surface__DrawLocal_fn(Surface* __this, uObject* drawable)
+{
+    __this->DrawLocal(drawable);
+}
+
+// protected generated float2 get_ElementSize() :2939
 void Surface__get_ElementSize_fn(Surface* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->ElementSize();
 }
 
-// private generated void set_ElementSize(float2 value) :3664
+// private generated void set_ElementSize(float2 value) :2939
 void Surface__set_ElementSize_fn(Surface* __this, ::g::Uno::Float2* value)
 {
     __this->ElementSize(*value);
 }
 
-// private generated void init_DrawCalls() :3657
+// private generated void init_DrawCalls() :2932
 void Surface__init_DrawCalls_fn(Surface* __this)
 {
     __this->init_DrawCalls();
 }
 
-// public void SetElementSize(float2 size) :3666
+// public void SetElementSize(float2 size) :2941
 void Surface__SetElementSize_fn(Surface* __this, ::g::Uno::Float2* size)
 {
     __this->SetElementSize(*size);
 }
 
-// internal Surface() [instance] :3660
+// internal Surface() [instance] :2935
 void Surface::ctor_()
 {
     init_DrawCalls();
 }
 
-// public void Draw(Fuse.DrawContext dc, Fuse.Elements.Element elm, Fuse.Drawing.ISurfaceDrawable drawable) [instance] :3743
+// public void Draw(Fuse.DrawContext dc, Fuse.Elements.Element elm, Fuse.Drawing.ISurfaceDrawable drawable) [instance] :3020
 void Surface::Draw(::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::Element* elm, uObject* drawable)
 {
     uStackFrame __("Fuse.Drawing.Surface", "Draw(Fuse.DrawContext,Fuse.Elements.Element,Fuse.Drawing.ISurfaceDrawable)");
     ::g::Uno::Float3 ind1;
     ::g::Uno::Float3 ind2;
     ::g::Uno::Float3 ind3;
+
+    if (elm != drawable)
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[46/*"GLDraw call...*/], this, ::STRINGS[5/*"/Users/star...*/], 3023, ::STRINGS[47/*"Draw"*/]);
+
     float pixelsPerPoint = ::g::Fuse::ICommonViewport::PixelsPerPoint(uInterface(uPtr(uPtr(elm)->Viewport()), ::TYPES[26/*Fuse.ICommonViewport*/]));
     ::g::Fuse::VisualBounds* bounds = elm->RenderBoundsWithoutEffects();
-    ::g::Uno::Int2 pixelSize = ::g::Uno::Int2__op_Explicit(::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Subtraction1(::g::Uno::Float2__op_Multiply1((ind1 = uPtr(bounds)->Size(), ::g::Uno::Float2__New2(ind1.X, ind1.Y)), pixelsPerPoint), 1e-05f)));
+    ::g::Uno::Int2 pixelSize = ::g::Uno::Int2__op_Explicit1(::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Subtraction1(::g::Uno::Float2__op_Multiply1((ind1 = uPtr(bounds)->Size(), ::g::Uno::Float2__New2(ind1.X, ind1.Y)), pixelsPerPoint), 1e-05f)));
     ::g::Uno::Graphics::Framebuffer* fb = ::g::Fuse::FramebufferPool::Lock(pixelSize.X, pixelSize.Y, 3, true);
     Begin(dc, fb, pixelsPerPoint);
     ::g::Uno::Float4x4 m = ::g::Uno::Float4x4__Identity();
     m.M41 = -bounds->AxisMin().X;
     m.M42 = -bounds->AxisMin().Y;
     PushTransform(m);
-    SetElementSize(elm->ActualSize());
-    ::g::Fuse::Drawing::ISurfaceDrawable::Draw(uInterface(uPtr(drawable), ::TYPES[27/*Fuse.Drawing.ISurfaceDrawable*/]), this);
+    DrawLocal(drawable);
     End();
     ::g::Uno::Float4x4 LocalTransform_7678ae3a_4_9_4 = ::g::Uno::Matrix::Mul10(Draw_LocalTransform_7678ae3a_4_9_2, ::g::Uno::Matrix::Scaling1(::g::Uno::Float2__op_Division1(::g::Uno::Float2__op_Implicit1(pixelSize), pixelsPerPoint).X, ::g::Uno::Float2__op_Division1(::g::Uno::Float2__op_Implicit1(pixelSize), pixelsPerPoint).Y, 1.0f), Draw_LocalTransform_7678ae3a_4_9_3, ::g::Uno::Matrix::Translation((ind2 = bounds->AxisMin(), ::g::Uno::Float2__New2(ind2.X, ind2.Y)).X, (ind3 = bounds->AxisMin(), ::g::Uno::Float2__New2(ind3.X, ind3.Y)).Y, 0.0f));
     _draw_7678ae3a.BlendEnabled(true);
@@ -5785,26 +5818,34 @@ void Surface::Draw(::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::Element* elm
     _draw_7678ae3a.BlendDstRgb(3);
     _draw_7678ae3a.Use();
     _draw_7678ae3a.Attrib1(0, 2, Draw_VertexData_7678ae3a_7_2_1, 8, 0);
-    _draw_7678ae3a.Uniform12(1, ::g::Fuse::IRenderViewport::ViewProjectionTransform(uInterface(uPtr(dc->Viewport()), ::TYPES[28/*Fuse.IRenderViewport*/])));
+    _draw_7678ae3a.Uniform12(1, ::g::Fuse::IRenderViewport::ViewProjectionTransform(uInterface(uPtr(dc->Viewport()), ::TYPES[27/*Fuse.IRenderViewport*/])));
     _draw_7678ae3a.Uniform12(2, (elm != NULL) ? ::g::Uno::Matrix::Mul8(LocalTransform_7678ae3a_4_9_4, uPtr(elm)->WorldTransform()) : LocalTransform_7678ae3a_4_9_4);
     _draw_7678ae3a.Sampler3(3, uPtr(fb)->ColorBuffer(), ::g::Uno::Graphics::SamplerState__LinearClamp());
     _draw_7678ae3a.DrawArrays(6);
     ::g::Fuse::FramebufferPool::Release(fb);
 }
 
-// protected generated float2 get_ElementSize() [instance] :3664
+// public void DrawLocal(Fuse.Drawing.ISurfaceDrawable drawable) [instance] :3060
+void Surface::DrawLocal(uObject* drawable)
+{
+    uStackFrame __("Fuse.Drawing.Surface", "DrawLocal(Fuse.Drawing.ISurfaceDrawable)");
+    SetElementSize(::g::Fuse::Drawing::ISurfaceDrawable::ElementSize(uInterface(uPtr(drawable), ::TYPES[28/*Fuse.Drawing.ISurfaceDrawable*/])));
+    ::g::Fuse::Drawing::ISurfaceDrawable::Draw(uInterface(drawable, ::TYPES[28/*Fuse.Drawing.ISurfaceDrawable*/]), this);
+}
+
+// protected generated float2 get_ElementSize() [instance] :2939
 ::g::Uno::Float2 Surface::ElementSize()
 {
     return _ElementSize;
 }
 
-// private generated void set_ElementSize(float2 value) [instance] :3664
+// private generated void set_ElementSize(float2 value) [instance] :2939
 void Surface::ElementSize(::g::Uno::Float2 value)
 {
     _ElementSize = value;
 }
 
-// private generated void init_DrawCalls() [instance] :3657
+// private generated void init_DrawCalls() [instance] :2932
 void Surface::init_DrawCalls()
 {
     uStackFrame __("Fuse.Drawing.Surface", "init_DrawCalls()");
@@ -5814,19 +5855,19 @@ void Surface::init_DrawCalls()
     _draw_7678ae3a = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseDrawingSurface_bundle::Surface541b21c2());
 }
 
-// public void SetElementSize(float2 size) [instance] :3666
+// public void SetElementSize(float2 size) [instance] :2941
 void Surface::SetElementSize(::g::Uno::Float2 size)
 {
     ElementSize(size);
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// public static class SurfaceManager :3798
+// public static class SurfaceManager :3108
 // {
-// static SurfaceManager() :3798
+// static SurfaceManager() :3108
 static void SurfaceManager__cctor__fn(uType* __type)
 {
     SurfaceManager::_owners_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[29/*Uno.Collections.Dictionary<object, Fuse.Drawing.Surface>*/]));
@@ -5835,8 +5876,10 @@ static void SurfaceManager__cctor__fn(uType* __type)
 static void SurfaceManager_build(uType* type)
 {
     ::TYPES[29] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(uObject_typeof(), ::g::Fuse::Drawing::Surface_typeof(), NULL);
-    ::TYPES[30] = ::g::Fuse::Drawing::ISurfaceProvider_typeof();
-    ::TYPES[27] = ::g::Fuse::Drawing::ISurfaceDrawable_typeof();
+    ::TYPES[30] = ::g::Fuse::Visual_typeof();
+    ::TYPES[31] = ::g::Fuse::Drawing::INativeSurfaceOwner_typeof();
+    ::TYPES[32] = ::g::Fuse::Drawing::ISurfaceProvider_typeof();
+    ::TYPES[28] = ::g::Fuse::Drawing::ISurfaceDrawable_typeof();
     type->SetFields(0,
         ::TYPES[29/*Uno.Collections.Dictionary<object, Fuse.Drawing.Surface>*/], (uintptr_t)&::g::Fuse::Drawing::SurfaceManager::_owners_, uFieldFlagsStatic);
     type->Reflection.SetFunctions(4,
@@ -5860,31 +5903,31 @@ uClassType* SurfaceManager_typeof()
     return type;
 }
 
-// public static Fuse.Drawing.Surface Create(object owner) :3800
+// public static Fuse.Drawing.Surface Create(object owner) :3110
 void SurfaceManager__Create_fn(uObject* owner, ::g::Fuse::Drawing::Surface** __retval)
 {
     *__retval = SurfaceManager::Create(owner);
 }
 
-// public static Fuse.Drawing.Surface Find(Fuse.Node source) :3819
+// public static Fuse.Drawing.Surface Find(Fuse.Node source) :3143
 void SurfaceManager__Find_fn(::g::Fuse::Node* source, ::g::Fuse::Drawing::Surface** __retval)
 {
     *__retval = SurfaceManager::Find(source);
 }
 
-// private static Fuse.Drawing.Surface FindImpl(Fuse.Node source, bool create) :3829
+// private static Fuse.Drawing.Surface FindImpl(Fuse.Node source, bool create) :3153
 void SurfaceManager__FindImpl_fn(::g::Fuse::Node* source, bool* create, ::g::Fuse::Drawing::Surface** __retval)
 {
     *__retval = SurfaceManager::FindImpl(source, *create);
 }
 
-// public static Fuse.Drawing.Surface FindOrCreate(Fuse.Node source) :3824
+// public static Fuse.Drawing.Surface FindOrCreate(Fuse.Node source) :3148
 void SurfaceManager__FindOrCreate_fn(::g::Fuse::Node* source, ::g::Fuse::Drawing::Surface** __retval)
 {
     *__retval = SurfaceManager::FindOrCreate(source);
 }
 
-// public static void Release(object owner, Fuse.Drawing.Surface c) :3858
+// public static void Release(object owner, Fuse.Drawing.Surface c) :3182
 void SurfaceManager__Release_fn(uObject* owner, ::g::Fuse::Drawing::Surface* c)
 {
     SurfaceManager::Release(owner, c);
@@ -5892,17 +5935,30 @@ void SurfaceManager__Release_fn(uObject* owner, ::g::Fuse::Drawing::Surface* c)
 
 uSStrong< ::g::Uno::Collections::Dictionary*> SurfaceManager::_owners_;
 
-// public static Fuse.Drawing.Surface Create(object owner) [static] :3800
+// public static Fuse.Drawing.Surface Create(object owner) [static] :3110
 ::g::Fuse::Drawing::Surface* SurfaceManager::Create(uObject* owner)
 {
+    uStackFrame __("Fuse.Drawing.SurfaceManager", "Create(object)");
     SurfaceManager_typeof()->Init();
-    ::g::Fuse::Drawing::Surface* c;
-    c = ::g::Fuse::Drawing::CoreGraphicsSurface::New1();
-    c->Owner = owner;
+    ::g::Fuse::Drawing::Surface* c = NULL;
+    ::g::Fuse::Visual* v = uAs< ::g::Fuse::Visual*>(owner, ::TYPES[30/*Fuse.Visual*/]);
+
+    if ((v != NULL) && (uPtr(v)->VisualContext() == 2))
+    {
+        uObject* nativeOwner = uAs<uObject*>(uPtr(v)->ViewHandle(), ::TYPES[31/*Fuse.Drawing.INativeSurfaceOwner*/]);
+
+        if (nativeOwner != NULL)
+            c = ::g::Fuse::Drawing::INativeSurfaceOwner::GetSurface(uInterface(uPtr(nativeOwner), ::TYPES[31/*Fuse.Drawing.INativeSurfaceOwner*/]));
+    }
+
+    if (c == NULL)
+        c = ::g::Fuse::Drawing::CoreGraphicsSurface::New1();
+
+    uPtr(c)->Owner = owner;
     return c;
 }
 
-// public static Fuse.Drawing.Surface Find(Fuse.Node source) [static] :3819
+// public static Fuse.Drawing.Surface Find(Fuse.Node source) [static] :3143
 ::g::Fuse::Drawing::Surface* SurfaceManager::Find(::g::Fuse::Node* source)
 {
     uStackFrame __("Fuse.Drawing.SurfaceManager", "Find(Fuse.Node)");
@@ -5910,7 +5966,7 @@ uSStrong< ::g::Uno::Collections::Dictionary*> SurfaceManager::_owners_;
     return SurfaceManager::FindImpl(source, false);
 }
 
-// private static Fuse.Drawing.Surface FindImpl(Fuse.Node source, bool create) [static] :3829
+// private static Fuse.Drawing.Surface FindImpl(Fuse.Node source, bool create) [static] :3153
 ::g::Fuse::Drawing::Surface* SurfaceManager::FindImpl(::g::Fuse::Node* source, bool create)
 {
     uStackFrame __("Fuse.Drawing.SurfaceManager", "FindImpl(Fuse.Node,bool)");
@@ -5921,10 +5977,10 @@ uSStrong< ::g::Uno::Collections::Dictionary*> SurfaceManager::_owners_;
 
     while (from != NULL)
     {
-        if (uIs(from, ::TYPES[30/*Fuse.Drawing.ISurfaceProvider*/]) && (from != source))
-            provider = uAs<uObject*>(from, ::TYPES[30/*Fuse.Drawing.ISurfaceProvider*/]);
+        if (uIs(from, ::TYPES[32/*Fuse.Drawing.ISurfaceProvider*/]) && (from != source))
+            provider = uAs<uObject*>(from, ::TYPES[32/*Fuse.Drawing.ISurfaceProvider*/]);
 
-        if (uIs(from, ::TYPES[27/*Fuse.Drawing.ISurfaceDrawable*/]))
+        if (uIs(from, ::TYPES[28/*Fuse.Drawing.ISurfaceDrawable*/]))
             from = uPtr(from)->Parent();
         else
             break;
@@ -5945,7 +6001,7 @@ uSStrong< ::g::Uno::Collections::Dictionary*> SurfaceManager::_owners_;
     return cur;
 }
 
-// public static Fuse.Drawing.Surface FindOrCreate(Fuse.Node source) [static] :3824
+// public static Fuse.Drawing.Surface FindOrCreate(Fuse.Node source) [static] :3148
 ::g::Fuse::Drawing::Surface* SurfaceManager::FindOrCreate(::g::Fuse::Node* source)
 {
     uStackFrame __("Fuse.Drawing.SurfaceManager", "FindOrCreate(Fuse.Node)");
@@ -5953,7 +6009,7 @@ uSStrong< ::g::Uno::Collections::Dictionary*> SurfaceManager::_owners_;
     return SurfaceManager::FindImpl(source, true);
 }
 
-// public static void Release(object owner, Fuse.Drawing.Surface c) [static] :3858
+// public static void Release(object owner, Fuse.Drawing.Surface c) [static] :3182
 void SurfaceManager::Release(uObject* owner, ::g::Fuse::Drawing::Surface* c)
 {
     uStackFrame __("Fuse.Drawing.SurfaceManager", "Release(object,Fuse.Drawing.Surface)");
@@ -5968,10 +6024,10 @@ void SurfaceManager::Release(uObject* owner, ::g::Fuse::Drawing::Surface* c)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// public abstract class SurfacePath :3646
+// public abstract class SurfacePath :2918
 // {
 static void SurfacePath_build(uType* type)
 {
@@ -5990,22 +6046,22 @@ uType* SurfacePath_typeof()
     return type;
 }
 
-// protected generated SurfacePath() :3646
+// protected generated SurfacePath() :2918
 void SurfacePath__ctor__fn(SurfacePath* __this)
 {
     __this->ctor_();
 }
 
-// protected generated SurfacePath() [instance] :3646
+// protected generated SurfacePath() [instance] :2918
 void SurfacePath::ctor_()
 {
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// public static class SurfaceUtil :3884
+// public static class SurfaceUtil :3208
 // {
 static void SurfaceUtil_build(uType* type)
 {
@@ -6030,55 +6086,55 @@ uClassType* SurfaceUtil_typeof()
     return type;
 }
 
-// public static bool AngleInRange(float angle, float start, float end) :4055
+// public static bool AngleInRange(float angle, float start, float end) :3379
 void SurfaceUtil__AngleInRange_fn(float* angle, float* start, float* end, bool* __retval)
 {
     *__retval = SurfaceUtil::AngleInRange(*angle, *start, *end);
 }
 
-// public static float2 EllipticArcDerivative(float2 c, float2 r, float xAngle, float t) :4048
+// public static float2 EllipticArcDerivative(float2 c, float2 r, float xAngle, float t) :3372
 void SurfaceUtil__EllipticArcDerivative_fn(::g::Uno::Float2* c, ::g::Uno::Float2* r, float* xAngle, float* t, ::g::Uno::Float2* __retval)
 {
     *__retval = SurfaceUtil::EllipticArcDerivative(*c, *r, *xAngle, *t);
 }
 
-// internal static bool EllipticArcOutOfRange(float2 from, Fuse.Drawing.LineSegment arc) :3912
+// internal static bool EllipticArcOutOfRange(float2 from, Fuse.Drawing.LineSegment arc) :3236
 void SurfaceUtil__EllipticArcOutOfRange_fn(::g::Uno::Float2* from, ::g::Fuse::Drawing::LineSegment* arc, bool* __retval)
 {
     *__retval = SurfaceUtil::EllipticArcOutOfRange(*from, *arc);
 }
 
-// public static float2 EllipticArcPoint(float2 c, float2 r, float xAngle, float t) :4041
+// public static float2 EllipticArcPoint(float2 c, float2 r, float xAngle, float t) :3365
 void SurfaceUtil__EllipticArcPoint_fn(::g::Uno::Float2* c, ::g::Uno::Float2* r, float* xAngle, float* t, ::g::Uno::Float2* __retval)
 {
     *__retval = SurfaceUtil::EllipticArcPoint(*c, *r, *xAngle, *t);
 }
 
-// public static void EllipticArcToBezierCurve(float2 center, float2 radius, float xAngle, float startAngle, float deltaAngle, bool moveToStart, Uno.Collections.IList<Fuse.Drawing.LineSegment> curves) :3926
+// public static void EllipticArcToBezierCurve(float2 center, float2 radius, float xAngle, float startAngle, float deltaAngle, bool moveToStart, Uno.Collections.IList<Fuse.Drawing.LineSegment> curves) :3250
 void SurfaceUtil__EllipticArcToBezierCurve_fn(::g::Uno::Float2* center, ::g::Uno::Float2* radius, float* xAngle, float* startAngle, float* deltaAngle, bool* moveToStart, uObject* curves)
 {
     SurfaceUtil::EllipticArcToBezierCurve(*center, *radius, *xAngle, *startAngle, *deltaAngle, *moveToStart, curves);
 }
 
-// public static void EllipticArcToBezierCurve(float2 from, Fuse.Drawing.LineSegment arc, Uno.Collections.IList<Fuse.Drawing.LineSegment> curves) :3891
+// public static void EllipticArcToBezierCurve(float2 from, Fuse.Drawing.LineSegment arc, Uno.Collections.IList<Fuse.Drawing.LineSegment> curves) :3215
 void SurfaceUtil__EllipticArcToBezierCurve1_fn(::g::Uno::Float2* from, ::g::Fuse::Drawing::LineSegment* arc, uObject* curves)
 {
     SurfaceUtil::EllipticArcToBezierCurve1(*from, *arc, curves);
 }
 
-// internal static void EndpointToCenterArcParams(float2 p1, float2 p2, float2& r_, float xAngle, bool flagA, bool flagS, float2& c, float2& angles) :3966
+// internal static void EndpointToCenterArcParams(float2 p1, float2 p2, float2& r_, float xAngle, bool flagA, bool flagS, float2& c, float2& angles) :3290
 void SurfaceUtil__EndpointToCenterArcParams_fn(::g::Uno::Float2* p1, ::g::Uno::Float2* p2, ::g::Uno::Float2* r_, float* xAngle, bool* flagA, bool* flagS, ::g::Uno::Float2* c, ::g::Uno::Float2* angles)
 {
     SurfaceUtil::EndpointToCenterArcParams(*p1, *p2, r_, *xAngle, *flagA, *flagS, c, angles);
 }
 
-// private static float svgAngle(double ux, double uy, double vx, double vy) :4022
+// private static float svgAngle(double ux, double uy, double vx, double vy) :3346
 void SurfaceUtil__svgAngle_fn(double* ux, double* uy, double* vx, double* vy, float* __retval)
 {
     *__retval = SurfaceUtil::svgAngle(*ux, *uy, *vx, *vy);
 }
 
-// public static bool AngleInRange(float angle, float start, float end) [static] :4055
+// public static bool AngleInRange(float angle, float start, float end) [static] :3379
 bool SurfaceUtil::AngleInRange(float angle, float start, float end)
 {
     if (end < start)
@@ -6106,13 +6162,13 @@ bool SurfaceUtil::AngleInRange(float angle, float start, float end)
     return false;
 }
 
-// public static float2 EllipticArcDerivative(float2 c, float2 r, float xAngle, float t) [static] :4048
+// public static float2 EllipticArcDerivative(float2 c, float2 r, float xAngle, float t) [static] :3372
 ::g::Uno::Float2 SurfaceUtil::EllipticArcDerivative(::g::Uno::Float2 c, ::g::Uno::Float2 r, float xAngle, float t)
 {
     return ::g::Uno::Float2__New2(((-r.X * ::g::Uno::Math::Cos1(xAngle)) * ::g::Uno::Math::Sin1(t)) - ((r.Y * ::g::Uno::Math::Sin1(xAngle)) * ::g::Uno::Math::Cos1(t)), ((-r.X * ::g::Uno::Math::Sin1(xAngle)) * ::g::Uno::Math::Sin1(t)) + ((r.Y * ::g::Uno::Math::Cos1(xAngle)) * ::g::Uno::Math::Cos1(t)));
 }
 
-// internal static bool EllipticArcOutOfRange(float2 from, Fuse.Drawing.LineSegment arc) [static] :3912
+// internal static bool EllipticArcOutOfRange(float2 from, Fuse.Drawing.LineSegment arc) [static] :3236
 bool SurfaceUtil::EllipticArcOutOfRange(::g::Uno::Float2 from, ::g::Fuse::Drawing::LineSegment arc)
 {
     float len = ::g::Uno::Vector::Length(::g::Uno::Float2__op_Subtraction2(arc.To, from));
@@ -6128,13 +6184,13 @@ bool SurfaceUtil::EllipticArcOutOfRange(::g::Uno::Float2 from, ::g::Fuse::Drawin
     return false;
 }
 
-// public static float2 EllipticArcPoint(float2 c, float2 r, float xAngle, float t) [static] :4041
+// public static float2 EllipticArcPoint(float2 c, float2 r, float xAngle, float t) [static] :3365
 ::g::Uno::Float2 SurfaceUtil::EllipticArcPoint(::g::Uno::Float2 c, ::g::Uno::Float2 r, float xAngle, float t)
 {
     return ::g::Uno::Float2__New2((c.X + ((r.X * ::g::Uno::Math::Cos1(xAngle)) * ::g::Uno::Math::Cos1(t))) - ((r.Y * ::g::Uno::Math::Sin1(xAngle)) * ::g::Uno::Math::Sin1(t)), (c.Y + ((r.X * ::g::Uno::Math::Sin1(xAngle)) * ::g::Uno::Math::Cos1(t))) + ((r.Y * ::g::Uno::Math::Cos1(xAngle)) * ::g::Uno::Math::Sin1(t)));
 }
 
-// public static void EllipticArcToBezierCurve(float2 center, float2 radius, float xAngle, float startAngle, float deltaAngle, bool moveToStart, Uno.Collections.IList<Fuse.Drawing.LineSegment> curves) [static] :3926
+// public static void EllipticArcToBezierCurve(float2 center, float2 radius, float xAngle, float startAngle, float deltaAngle, bool moveToStart, Uno.Collections.IList<Fuse.Drawing.LineSegment> curves) [static] :3250
 void SurfaceUtil::EllipticArcToBezierCurve(::g::Uno::Float2 center, ::g::Uno::Float2 radius, float xAngle, float startAngle, float deltaAngle, bool moveToStart, uObject* curves)
 {
     uStackFrame __("Fuse.Drawing.SurfaceUtil", "EllipticArcToBezierCurve(float2,float2,float,float,float,bool,Uno.Collections.IList<Fuse.Drawing.LineSegment>)");
@@ -6167,7 +6223,7 @@ void SurfaceUtil::EllipticArcToBezierCurve(::g::Uno::Float2 center, ::g::Uno::Fl
     }
 }
 
-// public static void EllipticArcToBezierCurve(float2 from, Fuse.Drawing.LineSegment arc, Uno.Collections.IList<Fuse.Drawing.LineSegment> curves) [static] :3891
+// public static void EllipticArcToBezierCurve(float2 from, Fuse.Drawing.LineSegment arc, Uno.Collections.IList<Fuse.Drawing.LineSegment> curves) [static] :3215
 void SurfaceUtil::EllipticArcToBezierCurve1(::g::Uno::Float2 from, ::g::Fuse::Drawing::LineSegment arc, uObject* curves)
 {
     uStackFrame __("Fuse.Drawing.SurfaceUtil", "EllipticArcToBezierCurve(float2,Fuse.Drawing.LineSegment,Uno.Collections.IList<Fuse.Drawing.LineSegment>)");
@@ -6187,7 +6243,7 @@ void SurfaceUtil::EllipticArcToBezierCurve1(::g::Uno::Float2 from, ::g::Fuse::Dr
     SurfaceUtil::EllipticArcToBezierCurve(center, radius, xAngle, angles.Item(0), angles.Item(1), false, curves);
 }
 
-// internal static void EndpointToCenterArcParams(float2 p1, float2 p2, float2& r_, float xAngle, bool flagA, bool flagS, float2& c, float2& angles) [static] :3966
+// internal static void EndpointToCenterArcParams(float2 p1, float2 p2, float2& r_, float xAngle, bool flagA, bool flagS, float2& c, float2& angles) [static] :3290
 void SurfaceUtil::EndpointToCenterArcParams(::g::Uno::Float2 p1, ::g::Uno::Float2 p2, ::g::Uno::Float2* r_, float xAngle, bool flagA, bool flagS, ::g::Uno::Float2* c, ::g::Uno::Float2* angles)
 {
     double rX = (double)::g::Uno::Math::Abs1((*r_).X);
@@ -6234,7 +6290,7 @@ void SurfaceUtil::EndpointToCenterArcParams(::g::Uno::Float2 p1, ::g::Uno::Float
     *angles = ::g::Uno::Float2__New2((float)theta, (float)delta);
 }
 
-// private static float svgAngle(double ux, double uy, double vx, double vy) [static] :4022
+// private static float svgAngle(double ux, double uy, double vx, double vy) [static] :3346
 float SurfaceUtil::svgAngle(double ux, double uy, double vx, double vy)
 {
     ::g::Uno::Float2 u = ::g::Uno::Float2__New2((float)ux, (float)uy);
@@ -6250,10 +6306,10 @@ float SurfaceUtil::svgAngle(double ux, double uy, double vx, double vy)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal sealed class SVGPathParser :3181
+// internal sealed class SVGPathParser :2453
 // {
 static void SVGPathParser_build(uType* type)
 {
@@ -6281,49 +6337,49 @@ uType* SVGPathParser_typeof()
     return type;
 }
 
-// public SVGPathParser(string data, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) :3189
+// public SVGPathParser(string data, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) :2461
 void SVGPathParser__ctor__fn(SVGPathParser* __this, uString* data, uObject* segments)
 {
     __this->ctor_(data, segments);
 }
 
-// private void Execute(char c, char prev) :3272
+// private void Execute(char c, char prev) :2544
 void SVGPathParser__Execute_fn(SVGPathParser* __this, uChar* c, uChar* prev)
 {
     __this->Execute(*c, *prev);
 }
 
-// public SVGPathParser New(string data, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) :3189
+// public SVGPathParser New(string data, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) :2461
 void SVGPathParser__New1_fn(uString* data, uObject* segments, SVGPathParser** __retval)
 {
     *__retval = SVGPathParser::New1(data, segments);
 }
 
-// public void Parse() :3195
+// public void Parse() :2467
 void SVGPathParser__Parse_fn(SVGPathParser* __this)
 {
     __this->Parse();
 }
 
-// private float ReadFloat() :3388
+// private float ReadFloat() :2660
 void SVGPathParser__ReadFloat_fn(SVGPathParser* __this, float* __retval)
 {
     *__retval = __this->ReadFloat();
 }
 
-// private float2 ReadFloat2() :3396
+// private float2 ReadFloat2() :2668
 void SVGPathParser__ReadFloat2_fn(SVGPathParser* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->ReadFloat2();
 }
 
-// private void StartNewToken(int prevLastChar, int nextFirstChar, [bool hasAction]) :3381
+// private void StartNewToken(int prevLastChar, int nextFirstChar, [bool hasAction]) :2653
 void SVGPathParser__StartNewToken_fn(SVGPathParser* __this, int* prevLastChar, int* nextFirstChar, bool* hasAction)
 {
     __this->StartNewToken(*prevLastChar, *nextFirstChar, *hasAction);
 }
 
-// public SVGPathParser(string data, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) [instance] :3189
+// public SVGPathParser(string data, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) [instance] :2461
 void SVGPathParser::ctor_(uString* data, uObject* segments)
 {
     uStackFrame __("Fuse.Drawing.SVGPathParser", ".ctor(string,Uno.Collections.IList<Fuse.Drawing.LineSegment>)");
@@ -6331,7 +6387,7 @@ void SVGPathParser::ctor_(uString* data, uObject* segments)
     _segments = ::g::Fuse::Drawing::LineSegments::New2(segments);
 }
 
-// private void Execute(char c, char prev) [instance] :3272
+// private void Execute(char c, char prev) [instance] :2544
 void SVGPathParser::Execute(uChar c, uChar prev)
 {
     uStackFrame __("Fuse.Drawing.SVGPathParser", "Execute(char,char)");
@@ -6459,7 +6515,7 @@ void SVGPathParser::Execute(uChar c, uChar prev)
         _hasPrevControlB = false;
 }
 
-// public void Parse() [instance] :3195
+// public void Parse() [instance] :2467
 void SVGPathParser::Parse()
 {
     uStackFrame __("Fuse.Drawing.SVGPathParser", "Parse()");
@@ -6548,7 +6604,7 @@ void SVGPathParser::Parse()
     }
 }
 
-// private float ReadFloat() [instance] :3388
+// private float ReadFloat() [instance] :2660
 float SVGPathParser::ReadFloat()
 {
     uStackFrame __("Fuse.Drawing.SVGPathParser", "ReadFloat()");
@@ -6558,7 +6614,7 @@ float SVGPathParser::ReadFloat()
     return res;
 }
 
-// private float2 ReadFloat2() [instance] :3396
+// private float2 ReadFloat2() [instance] :2668
 ::g::Uno::Float2 SVGPathParser::ReadFloat2()
 {
     uStackFrame __("Fuse.Drawing.SVGPathParser", "ReadFloat2()");
@@ -6567,7 +6623,7 @@ float SVGPathParser::ReadFloat()
     return ::g::Uno::Float2__New2(a, b);
 }
 
-// private void StartNewToken(int prevLastChar, int nextFirstChar, [bool hasAction]) [instance] :3381
+// private void StartNewToken(int prevLastChar, int nextFirstChar, [bool hasAction]) [instance] :2653
 void SVGPathParser::StartNewToken(int prevLastChar, int nextFirstChar, bool hasAction)
 {
     uStackFrame __("Fuse.Drawing.SVGPathParser", "StartNewToken(int,int,[bool])");
@@ -6575,7 +6631,7 @@ void SVGPathParser::StartNewToken(int prevLastChar, int nextFirstChar, bool hasA
     _prevToken = (uPtr(_prevToken)->Next = ::g::Fuse::Drawing::Token::New1(nextFirstChar, hasAction));
 }
 
-// public SVGPathParser New(string data, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) [static] :3189
+// public SVGPathParser New(string data, Uno.Collections.IList<Fuse.Drawing.LineSegment> segments) [static] :2461
 SVGPathParser* SVGPathParser::New1(uString* data, uObject* segments)
 {
     SVGPathParser* obj1 = (SVGPathParser*)uNew(SVGPathParser_typeof());
@@ -6584,10 +6640,10 @@ SVGPathParser* SVGPathParser::New1(uString* data, uObject* segments)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal sealed class Token :3404
+// internal sealed class Token :2676
 // {
 static void Token_build(uType* type)
 {
@@ -6612,26 +6668,26 @@ uType* Token_typeof()
     return type;
 }
 
-// public Token(int first, bool hasAction) :3413
+// public Token(int first, bool hasAction) :2685
 void Token__ctor__fn(Token* __this, int* first, bool* hasAction)
 {
     __this->ctor_(*first, *hasAction);
 }
 
-// public Token New(int first, bool hasAction) :3413
+// public Token New(int first, bool hasAction) :2685
 void Token__New1_fn(int* first, bool* hasAction, Token** __retval)
 {
     *__retval = Token::New1(*first, *hasAction);
 }
 
-// public Token(int first, bool hasAction) [instance] :3413
+// public Token(int first, bool hasAction) [instance] :2685
 void Token::ctor_(int first, bool hasAction)
 {
     First = first;
     HasAction = hasAction;
 }
 
-// public Token New(int first, bool hasAction) [static] :3413
+// public Token New(int first, bool hasAction) [static] :2685
 Token* Token::New1(int first, bool hasAction)
 {
     Token* obj1 = (Token*)uNew(Token_typeof());
@@ -6640,8 +6696,8 @@ Token* Token::New1(int first, bool hasAction)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public static class WindingRules :542
 // {
@@ -6728,8 +6784,8 @@ bool WindingRules::Positive(int n)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public enum WrapMode :219
 uEnumType* WrapMode_typeof()

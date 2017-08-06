@@ -1,10 +1,10 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.IRaw.h>
 #include <Fuse.Reactive.IEventHandler.h>
-#include <Fuse.Reactive.JavaScr-a102336.h>
+#include <Fuse.Reactive.JavaScript.DiagnosticSubject.h>
 namespace g{namespace Fuse{namespace Reactive{struct FunctionMirror;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
 

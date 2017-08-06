@@ -1,9 +1,9 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/input/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Input.PointerWhe-656d8f41.h>
-#include <Fuse.Input.PointerWhe-d06481ac.h>
+#include <Fuse.Input.PointerWheelMovedArgs.h>
+#include <Fuse.Input.PointerWheelMovedHandler.h>
 #include <Fuse.VisualEvent-2.h>
 namespace g{namespace Fuse{namespace Input{struct PointerWheelMoved;}}}
 
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Input{
 
-// internal sealed class PointerWheelMoved :2147
+// internal sealed class PointerWheelMoved :2154
 // {
 ::g::Fuse::VisualEvent_type* PointerWheelMoved_typeof();
 void PointerWheelMoved__ctor_1_fn(PointerWheelMoved* __this);

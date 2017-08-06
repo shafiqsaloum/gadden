@@ -1,8 +1,8 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Navigation.Navig-7d6b9b9f.h>
+#include <Fuse.Navigation.NavigationTriggerAction.h>
 namespace g{namespace Fuse{namespace Navigation{struct NavigateTo;}}}
 namespace g{namespace Fuse{struct Node;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public sealed class NavigateTo :4386
+// public sealed class NavigateTo :4777
 // {
 ::g::Fuse::Navigation::NavigationTriggerAction_type* NavigateTo_typeof();
 void NavigateTo__ctor_3_fn(NavigateTo* __this);

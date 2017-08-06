@@ -1,20 +1,20 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.LayoutControl.h>
-#include <Fuse.Controls.Native.-77f68bed.h>
+#include <Fuse.Controls.Native.IOffscreenRendererHost.h>
 #include <Fuse.Elements.ITreeRenderer.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -36,7 +36,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class NativeViewHost :1542
+// public sealed class NativeViewHost :1543
 // {
 struct NativeViewHost_type : ::g::Fuse::Controls::Control_type
 {

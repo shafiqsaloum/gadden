@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/ux/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -23,7 +23,7 @@ void Size__New1_fn(float* value, int* unit, Size* __retval);
 void Size__op_Addition_fn(Size* a, Size* b, Size* __retval);
 void Size__op_Division1_fn(Size* a, Size* b, Size* __retval);
 void Size__op_Equality_fn(Size* a, Size* b, bool* __retval);
-void Size__op_Explicit_fn(Size* s, float* __retval);
+void Size__op_Explicit1_fn(Size* s, float* __retval);
 void Size__op_Implicit_fn(float* unspecifiedUnits, Size* __retval);
 void Size__op_Implicit1_fn(int* unspecifiedUnits, Size* __retval);
 void Size__op_Inequality_fn(Size* a, Size* b, bool* __retval);
@@ -50,7 +50,7 @@ Size Size__New1(float value, int unit);
 Size Size__op_Addition(Size a, Size b);
 Size Size__op_Division1(Size a, Size b);
 bool Size__op_Equality(Size a, Size b);
-float Size__op_Explicit(Size s);
+float Size__op_Explicit1(Size s);
 Size Size__op_Implicit(float unspecifiedUnits);
 Size Size__op_Implicit1(int unspecifiedUnits);
 bool Size__op_Inequality(Size a, Size b);

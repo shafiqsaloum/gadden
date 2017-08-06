@@ -4,13 +4,13 @@
 #include <Fuse.FileSystem.DirectoryInfo.h>
 #include <Fuse.FileSystem.FileAttributes.h>
 #include <Fuse.FileSystem.FileInfo.h>
-#include <Fuse.FileSystem.FileS-3c9ac41b.h>
-#include <Fuse.FileSystem.FileS-6a2addd0.h>
-#include <Fuse.FileSystem.FileS-986283eb.h>
-#include <Fuse.FileSystem.FileS-cd2526b.h>
-#include <Fuse.FileSystem.FileS-f9e26269.h>
 #include <Fuse.FileSystem.FileStatus.h>
+#include <Fuse.FileSystem.FileStatusHelpers.h>
 #include <Fuse.FileSystem.FileSystemInfo.h>
+#include <Fuse.FileSystem.FileSystemModule.h>
+#include <Fuse.FileSystem.FileSystemOperations.Closure-2.h>
+#include <Fuse.FileSystem.FileSystemOperations.Closure-3.h>
+#include <Fuse.FileSystem.FileSystemOperations.h>
 #include <Fuse.FileSystem.IosPaths.h>
 #include <Fuse.FileSystem.Nothing.h>
 #include <Fuse.FileSystem.PathTools.h>
@@ -19,14 +19,14 @@
 #include <Fuse.Scripting.Context.h>
 #include <Fuse.Scripting.Error.h>
 #include <Fuse.Scripting.FutureFactory-1.h>
-#include <Fuse.Scripting.Native-c8feecef.h>
 #include <Fuse.Scripting.NativeCallback.h>
 #include <Fuse.Scripting.NativeFunction.h>
 #include <Fuse.Scripting.NativeMember.h>
 #include <Fuse.Scripting.NativePromise-2.h>
+#include <Fuse.Scripting.NativeProperty-2.h>
 #include <Fuse.Scripting.Object.h>
-#include <Fuse.Scripting.Result-92713bce.h>
-#include <Fuse.Scripting.ValueC-23d67df6.h>
+#include <Fuse.Scripting.ResultConverter-2.h>
+#include <Fuse.Scripting.ValueConverter-2.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -35,9 +35,9 @@
 #include <Uno.Bool.h>
 #include <Uno.Byte.h>
 #include <Uno.Char.h>
-#include <Uno.Collections.Dicti-d1699346.h>
+#include <Uno.Collections.Dictionary-2.Enumerator.h>
 #include <Uno.Collections.Dictionary-2.h>
-#include <Uno.Collections.Enume-8ddd045.h>
+#include <Uno.Collections.EnumerableExtensions.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.KeyValuePair-2.h>
 #include <Uno.Double.h>
@@ -50,7 +50,7 @@
 #include <Uno.IO.Path.h>
 #include <Uno.Long.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implement-eca777ec.h>
+#include <Uno.Runtime.Implementation.Internal.ArrayEnumerable-1.h>
 #include <Uno.String.h>
 #include <Uno.Threading.Future-1.h>
 #include <Uno.Threading.IDispatcher.h>
@@ -69,8 +69,8 @@ namespace g{
 namespace Fuse{
 namespace FileSystem{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.1.1/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // private sealed class FileSystemOperations.Closure<T1, TResult> :1307
 // {
@@ -126,8 +126,8 @@ void FileSystemOperations__Closure__New1_fn(uType* __type, uDelegate* del, void*
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.1.1/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // private sealed class FileSystemOperations.Closure<T1, T2, TResult> :1325
 // {
@@ -185,8 +185,8 @@ void FileSystemOperations__Closure1__New1_fn(uType* __type, uDelegate* del, void
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/uno/io/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.1.1/uno/io/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class DirectoryInfo :7
 // {
@@ -254,8 +254,8 @@ DirectoryInfo* DirectoryInfo::New1(uString* originalPath)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/uno/io/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.1.1/uno/io/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public enum FileAttributes :37
 uEnumType* FileAttributes_typeof()
@@ -271,8 +271,8 @@ uEnumType* FileAttributes_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/uno/io/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.1.1/uno/io/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class FileInfo :66
 // {
@@ -354,8 +354,8 @@ FileInfo* FileInfo::New1(uString* originalPath)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/uno/io/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.1.1/uno/io/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class FileStatus :114
 // {
@@ -531,8 +531,8 @@ FileStatus* FileStatus::New2(int64_t length, int attributes, ::g::Uno::Time::Zon
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/uno/io/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.1.1/uno/io/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal static extern class FileStatusHelpers :186
 // {
@@ -612,8 +612,8 @@ void FileStatusHelpers__UnixTimeToZoned_fn(int64_t* sec, ::g::Uno::Time::ZonedDa
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/uno/io/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.1.1/uno/io/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract class FileSystemInfo :336
 // {
@@ -781,8 +781,8 @@ void FileSystemInfo::Refresh()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.1.1/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // public sealed class FileSystemModule :112
 // {
@@ -1567,8 +1567,8 @@ uObject* FileSystemModule::ToScriptingDate(::g::Fuse::Scripting::Context* contex
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.1.1/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // internal sealed class FileSystemOperations :1053
 // {
@@ -2159,8 +2159,8 @@ FileSystemOperations* FileSystemOperations::New2(uObject* dispatcher)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.1.1/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // internal sealed class Nothing :1405
 // {
@@ -2208,8 +2208,8 @@ Nothing* Nothing::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.FileSystem/1.1.1/$.uno
+// -----------------------------------------------------------------------------------------------
 
 // internal static class PathTools :1420
 // {

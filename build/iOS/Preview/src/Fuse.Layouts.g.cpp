@@ -6,7 +6,7 @@
 #include <Fuse.Elements.Alignment.h>
 #include <Fuse.Elements.AlignmentHelpers.h>
 #include <Fuse.Elements.Element.h>
-#include <Fuse.Elements.Optiona-b611048b.h>
+#include <Fuse.Elements.OptionalSimpleAlignment.h>
 #include <Fuse.Elements.SimpleAlignment.h>
 #include <Fuse.InvalidateLayoutReason.h>
 #include <Fuse.Layer.h>
@@ -15,10 +15,10 @@
 #include <Fuse.LayoutRole.h>
 #include <Fuse.Layouts.CircleLayout.h>
 #include <Fuse.Layouts.Column.h>
-#include <Fuse.Layouts.ColumnLa-8bb1ac12.h>
 #include <Fuse.Layouts.ColumnLayout.h>
+#include <Fuse.Layouts.ColumnLayoutSizing.h>
 #include <Fuse.Layouts.DefaultLayout.h>
-#include <Fuse.Layouts.Definiti-98edc253.h>
+#include <Fuse.Layouts.DefinitionBase.CreationType.h>
 #include <Fuse.Layouts.DefinitionBase.h>
 #include <Fuse.Layouts.Dock.h>
 #include <Fuse.Layouts.DockLayout.h>
@@ -46,7 +46,7 @@
 #include <Uno.Collections.IEnumerator.h>
 #include <Uno.Collections.IEnumerator-1.h>
 #include <Uno.Collections.IList-1.h>
-#include <Uno.Collections.IList-b56be992.h>
+#include <Uno.Collections.IListExtensions.h>
 #include <Uno.Collections.List-1.h>
 #include <Uno.Collections.RootableList-1.h>
 #include <Uno.Delegate.h>
@@ -67,8 +67,8 @@ namespace g{
 namespace Fuse{
 namespace Layouts{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public sealed class CircleLayout :34
 // {
@@ -302,8 +302,8 @@ CircleLayout* CircleLayout::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public sealed class Column :978
 // {
@@ -462,8 +462,8 @@ Column* Column::New4(Column* copy, int creation)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public sealed class ColumnLayout :184
 // {
@@ -900,8 +900,8 @@ ColumnLayout* ColumnLayout::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public enum ColumnLayoutSizing :164
 uEnumType* ColumnLayoutSizing_typeof()
@@ -916,8 +916,8 @@ uEnumType* ColumnLayoutSizing_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // internal enum DefinitionBase.CreationType :822
 uEnumType* DefinitionBase__CreationType_typeof()
@@ -934,8 +934,8 @@ uEnumType* DefinitionBase__CreationType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public sealed class DefaultLayout :508
 // {
@@ -1058,8 +1058,8 @@ DefaultLayout* DefaultLayout::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public abstract class DefinitionBase :786
 // {
@@ -1462,8 +1462,8 @@ uString* DefinitionBase::Serialize1(uType* __type, uObject* columns)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public enum Dock :586
 uEnumType* Dock_typeof()
@@ -1481,8 +1481,8 @@ uEnumType* Dock_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public sealed class DockLayout :591
 // {
@@ -1769,8 +1769,8 @@ void DockLayout::SetDock(::g::Fuse::Visual* elm, int dock)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public enum FlowDirection :2375
 uEnumType* FlowDirection_typeof()
@@ -1785,8 +1785,8 @@ uEnumType* FlowDirection_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public enum GridChildOrder :1028
 uEnumType* GridChildOrder_typeof()
@@ -1801,8 +1801,8 @@ uEnumType* GridChildOrder_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public sealed class GridLayout :1034
 // {
@@ -1824,7 +1824,7 @@ static void GridLayout__cctor_1_fn(uType* __type)
 static void GridLayout_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("RowCount and ColumnCount must be >= 1");
-    ::STRINGS[6] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno");
+    ::STRINGS[6] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno");
     ::STRINGS[7] = uString::Const("ModifyCount");
     ::TYPES[14] = ::g::Uno::Collections::RootableList_typeof()->MakeType(::g::Fuse::Layouts::Row_typeof(), NULL);
     ::TYPES[15] = ::g::Uno::Collections::RootableList_typeof()->MakeType(::g::Fuse::Layouts::Column_typeof(), NULL);
@@ -1878,7 +1878,7 @@ static void GridLayout_build(uType* type)
     type->MethodTypes[4]->SetPrecalc(
         ::TYPES[9/*Uno.Collections.ICollection`1*/]->MakeType(type->MethodTypes[4]->U(0), NULL),
         ::TYPES[29/*Fuse.Layouts.DefinitionBase*/]->MakeMethod(0/*Copy<T>*/, type->MethodTypes[4]->U(0), NULL),
-        ::TYPES[30/*Uno.Collections.IListExtensions*/]->MakeMethod(2/*RemoveLast<T>*/, type->MethodTypes[4]->U(0), NULL),
+        ::TYPES[30/*Uno.Collections.IListExtensions*/]->MakeMethod(1/*RemoveLast<T>*/, type->MethodTypes[4]->U(0), NULL),
         ::TYPES[12/*Uno.Collections.IList`1*/]->MakeType(type->MethodTypes[4]->U(0), NULL));
     type->MethodTypes[5]->SetPrecalc(
         ::TYPES[29/*Fuse.Layouts.DefinitionBase*/]->MakeMethod(0/*Copy<T>*/, type->MethodTypes[5]->U(0), NULL));
@@ -3114,7 +3114,7 @@ void GridLayout::ModifyCount(uType* __type, uObject* list, int count, ::g::Fuse:
 
     if (count < 0)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[5/*"RowCount an...*/], this, ::STRINGS[6/*"/Users/eric...*/], 1115, ::STRINGS[7/*"ModifyCount"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[5/*"RowCount an...*/], this, ::STRINGS[6/*"/Users/star...*/], 1115, ::STRINGS[7/*"ModifyCount"*/], NULL);
         return;
     }
 
@@ -3383,8 +3383,8 @@ void GridLayout::SetRowSpan(::g::Fuse::Visual* elm, int span)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public abstract class Layout :1892
 // {
@@ -3789,8 +3789,8 @@ float Layout::SimpleOff(float sz, ::g::Uno::Float2 range, int align)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public static class Layouts :2107
 // {
@@ -3825,8 +3825,8 @@ uClassType* Layouts_typeof()
 uSStrong< ::g::Fuse::Layouts::Layout*> Layouts::Default_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public enum Metric :954
 uEnumType* Metric_typeof()
@@ -3843,8 +3843,8 @@ uEnumType* Metric_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public enum Orientation :2127
 uEnumType* Orientation_typeof()
@@ -3859,8 +3859,8 @@ uEnumType* Orientation_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public sealed class Row :1003
 // {
@@ -4022,8 +4022,8 @@ Row* Row::New4(Row* copy, int creation)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public sealed class StackLayout :2139
 // {
@@ -4424,8 +4424,8 @@ StackLayout* StackLayout::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public enum StackLayoutMode :2133
 uEnumType* StackLayoutMode_typeof()
@@ -4440,8 +4440,8 @@ uEnumType* StackLayoutMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/layouts/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/layouts/$.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public sealed class WrapLayout :2380
 // {

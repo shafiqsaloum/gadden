@@ -1,4 +1,4 @@
-// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno.
+// This file was generated based on build/iOS/Preview/cache/ux11/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -27,7 +27,7 @@ struct MainView__Template5 : ::g::Uno::UX::Template
     uWeak< ::g::MainView*> __parentInstance1;
     static ::g::Uno::UX::Selector __selector0_;
     static ::g::Uno::UX::Selector& __selector0() { return MainView__Template5_typeof()->Init(), __selector0_; }
-    uStrong< ::g::Uno::UX::Property1*> temp_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
 
     void ctor_1(::g::MainView* parent, ::g::MainView* parentInstance);
     static MainView__Template5* New2(::g::MainView* parent, ::g::MainView* parentInstance);

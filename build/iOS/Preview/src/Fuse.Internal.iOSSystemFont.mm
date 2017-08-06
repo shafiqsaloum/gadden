@@ -1,10 +1,10 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <CoreText/CoreText.h>
-#include <Fuse.Internal.FontFac-589fc2ef.h>
+#include <Fuse.Internal.FontFaceDescriptor.h>
 #include <Fuse.Internal.iOSSystemFont.h>
-#include <Fuse.Resources.System-1e583f40.h>
+#include <Fuse.Resources.SystemFileSource.h>
 #include <Fuse.SystemFont.Style.h>
 #include <Fuse.SystemFont.Weight.h>
 #include <ObjC.Object.h>

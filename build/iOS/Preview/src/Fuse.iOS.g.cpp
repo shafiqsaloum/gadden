@@ -3,7 +3,7 @@
 
 #include <Fuse.iOS.StatusBarConfig.h>
 #include <Fuse.Node.h>
-#include <Fuse.Platform.StatusB-487afe75.h>
+#include <Fuse.Platform.StatusBarAnimation.h>
 #include <Fuse.Platform.StatusBarStyle.h>
 #include <Fuse.Platform.SystemUI.h>
 #include <Uno.Bool.h>
@@ -15,12 +15,12 @@ namespace g{
 namespace Fuse{
 namespace iOS{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.iOS/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------
 
-// public sealed class StatusBarConfig :442
+// public sealed class StatusBarConfig :372
 // {
-// static StatusBarConfig() :442
+// static StatusBarConfig() :372
 static void StatusBarConfig__cctor_1_fn(uType* __type)
 {
     StatusBarConfig::_stack_ = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[0/*Uno.Collections.List<Fuse.iOS.StatusBarConfig>*/]));
@@ -89,67 +89,67 @@ static void StatusBarConfig_build(uType* type)
     return type;
 }
 
-// public generated StatusBarConfig() :442
+// public generated StatusBarConfig() :372
 void StatusBarConfig__ctor_3_fn(StatusBarConfig* __this)
 {
     __this->ctor_3();
 }
 
-// public Fuse.Platform.StatusBarAnimation get_Animation() :491
+// public Fuse.Platform.StatusBarAnimation get_Animation() :421
 void StatusBarConfig__get_Animation_fn(StatusBarConfig* __this, int* __retval)
 {
     *__retval = __this->Animation();
 }
 
-// public void set_Animation(Fuse.Platform.StatusBarAnimation value) :492
+// public void set_Animation(Fuse.Platform.StatusBarAnimation value) :422
 void StatusBarConfig__set_Animation_fn(StatusBarConfig* __this, int* value)
 {
     __this->Animation(*value);
 }
 
-// private static void Apply() :550
+// private static void Apply() :480
 void StatusBarConfig__Apply_fn()
 {
     StatusBarConfig::Apply();
 }
 
-// private static Fuse.Platform.StatusBarAnimation GetAnimation() :540
+// private static Fuse.Platform.StatusBarAnimation GetAnimation() :470
 void StatusBarConfig__GetAnimation_fn(int* __retval)
 {
     *__retval = StatusBarConfig::GetAnimation();
 }
 
-// private static bool GetIsVisible() :520
+// private static bool GetIsVisible() :450
 void StatusBarConfig__GetIsVisible_fn(bool* __retval)
 {
     *__retval = StatusBarConfig::GetIsVisible();
 }
 
-// private static Fuse.Platform.StatusBarStyle GetStyle() :530
+// private static Fuse.Platform.StatusBarStyle GetStyle() :460
 void StatusBarConfig__GetStyle_fn(int* __retval)
 {
     *__retval = StatusBarConfig::GetStyle();
 }
 
-// public bool get_IsVisible() :452
+// public bool get_IsVisible() :382
 void StatusBarConfig__get_IsVisible_fn(StatusBarConfig* __this, bool* __retval)
 {
     *__retval = __this->IsVisible();
 }
 
-// public void set_IsVisible(bool value) :453
+// public void set_IsVisible(bool value) :383
 void StatusBarConfig__set_IsVisible_fn(StatusBarConfig* __this, bool* value)
 {
     __this->IsVisible(*value);
 }
 
-// public generated StatusBarConfig New() :442
+// public generated StatusBarConfig New() :372
 void StatusBarConfig__New2_fn(StatusBarConfig** __retval)
 {
     *__retval = StatusBarConfig::New2();
 }
 
-// protected override sealed void OnRooted() :504
+// protected override sealed void OnRooted() :434
 void StatusBarConfig__OnRooted_fn(StatusBarConfig* __this)
 {
     uStackFrame __("Fuse.iOS.StatusBarConfig", "OnRooted()");
@@ -158,7 +158,7 @@ void StatusBarConfig__OnRooted_fn(StatusBarConfig* __this)
     StatusBarConfig::Apply();
 }
 
-// protected override sealed void OnUnrooted() :512
+// protected override sealed void OnUnrooted() :442
 void StatusBarConfig__OnUnrooted_fn(StatusBarConfig* __this)
 {
     uStackFrame __("Fuse.iOS.StatusBarConfig", "OnUnrooted()");
@@ -168,13 +168,13 @@ void StatusBarConfig__OnUnrooted_fn(StatusBarConfig* __this)
     ::g::Fuse::Node__OnUnrooted_fn(__this);
 }
 
-// public Fuse.Platform.StatusBarStyle get_Style() :471
+// public Fuse.Platform.StatusBarStyle get_Style() :401
 void StatusBarConfig__get_Style_fn(StatusBarConfig* __this, int* __retval)
 {
     *__retval = __this->Style();
 }
 
-// public void set_Style(Fuse.Platform.StatusBarStyle value) :472
+// public void set_Style(Fuse.Platform.StatusBarStyle value) :402
 void StatusBarConfig__set_Style_fn(StatusBarConfig* __this, int* value)
 {
     __this->Style(*value);
@@ -182,19 +182,19 @@ void StatusBarConfig__set_Style_fn(StatusBarConfig* __this, int* value)
 
 uSStrong< ::g::Uno::Collections::List*> StatusBarConfig::_stack_;
 
-// public generated StatusBarConfig() [instance] :442
+// public generated StatusBarConfig() [instance] :372
 void StatusBarConfig::ctor_3()
 {
     ctor_2();
 }
 
-// public Fuse.Platform.StatusBarAnimation get_Animation() [instance] :491
+// public Fuse.Platform.StatusBarAnimation get_Animation() [instance] :421
 int StatusBarConfig::Animation()
 {
     return _animation;
 }
 
-// public void set_Animation(Fuse.Platform.StatusBarAnimation value) [instance] :492
+// public void set_Animation(Fuse.Platform.StatusBarAnimation value) [instance] :422
 void StatusBarConfig::Animation(int value)
 {
     uStackFrame __("Fuse.iOS.StatusBarConfig", "set_Animation(Fuse.Platform.StatusBarAnimation)");
@@ -207,13 +207,13 @@ void StatusBarConfig::Animation(int value)
     }
 }
 
-// public bool get_IsVisible() [instance] :452
+// public bool get_IsVisible() [instance] :382
 bool StatusBarConfig::IsVisible()
 {
     return _isVisible;
 }
 
-// public void set_IsVisible(bool value) [instance] :453
+// public void set_IsVisible(bool value) [instance] :383
 void StatusBarConfig::IsVisible(bool value)
 {
     uStackFrame __("Fuse.iOS.StatusBarConfig", "set_IsVisible(bool)");
@@ -226,13 +226,13 @@ void StatusBarConfig::IsVisible(bool value)
     }
 }
 
-// public Fuse.Platform.StatusBarStyle get_Style() [instance] :471
+// public Fuse.Platform.StatusBarStyle get_Style() [instance] :401
 int StatusBarConfig::Style()
 {
     return _style;
 }
 
-// public void set_Style(Fuse.Platform.StatusBarStyle value) [instance] :472
+// public void set_Style(Fuse.Platform.StatusBarStyle value) [instance] :402
 void StatusBarConfig::Style(int value)
 {
     uStackFrame __("Fuse.iOS.StatusBarConfig", "set_Style(Fuse.Platform.StatusBarStyle)");
@@ -245,7 +245,7 @@ void StatusBarConfig::Style(int value)
     }
 }
 
-// private static void Apply() [static] :550
+// private static void Apply() [static] :480
 void StatusBarConfig::Apply()
 {
     uStackFrame __("Fuse.iOS.StatusBarConfig", "Apply()");
@@ -264,7 +264,7 @@ void StatusBarConfig::Apply()
         ::g::Fuse::Platform::SystemUI::IsTopFrameVisible(visible);
 }
 
-// private static Fuse.Platform.StatusBarAnimation GetAnimation() [static] :540
+// private static Fuse.Platform.StatusBarAnimation GetAnimation() [static] :470
 int StatusBarConfig::GetAnimation()
 {
     uStackFrame __("Fuse.iOS.StatusBarConfig", "GetAnimation()");
@@ -279,7 +279,7 @@ int StatusBarConfig::GetAnimation()
     return 0;
 }
 
-// private static bool GetIsVisible() [static] :520
+// private static bool GetIsVisible() [static] :450
 bool StatusBarConfig::GetIsVisible()
 {
     uStackFrame __("Fuse.iOS.StatusBarConfig", "GetIsVisible()");
@@ -294,7 +294,7 @@ bool StatusBarConfig::GetIsVisible()
     return true;
 }
 
-// private static Fuse.Platform.StatusBarStyle GetStyle() [static] :530
+// private static Fuse.Platform.StatusBarStyle GetStyle() [static] :460
 int StatusBarConfig::GetStyle()
 {
     uStackFrame __("Fuse.iOS.StatusBarConfig", "GetStyle()");
@@ -309,7 +309,7 @@ int StatusBarConfig::GetStyle()
     return 0;
 }
 
-// public generated StatusBarConfig New() [static] :442
+// public generated StatusBarConfig New() [static] :372
 StatusBarConfig* StatusBarConfig::New2()
 {
     StatusBarConfig* obj1 = (StatusBarConfig*)uNew(StatusBarConfig_typeof());

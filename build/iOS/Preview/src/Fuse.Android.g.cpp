@@ -1,12 +1,12 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <_root.FuseAndroidText-9d82b652.h>
+#include <_root.FuseAndroidTextRenderer_bundle.h>
 #include <Fuse.Android.Blitter.h>
-#include <Fuse.Android.RootGrap-9e25fcdc.h>
 #include <Fuse.Android.RootGraphicsView.h>
+#include <Fuse.Android.RootGraphicsView.Template.h>
 #include <Fuse.Android.StatusBarConfig.h>
-#include <Fuse.Controls.Native.-ca2427b3.h>
+#include <Fuse.Controls.Native.Android.SurfaceView.h>
 #include <Fuse.Visual.h>
 #include <Uno.Bool.h>
 #include <Uno.Buffer.h>
@@ -18,12 +18,12 @@
 #include <Uno.Graphics.PolygonFace.h>
 #include <Uno.Graphics.SamplerState.h>
 #include <Uno.Graphics.Texture2D.h>
-#include <Uno.Graphics.VertexAt-4a875e1d.h>
+#include <Uno.Graphics.VertexAttributeType.h>
 #include <Uno.Graphics.VertexBuffer.h>
 #include <Uno.Int.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implement-6e9df330.h>
-#include <Uno.Runtime.Implement-81e7ab4c.h>
+#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
 #include <Uno.String.h>
 #include <Uno.UX.Template.h>
 static uString* STRINGS[1];
@@ -33,8 +33,8 @@ namespace g{
 namespace Fuse{
 namespace Android{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Android.TextRenderer/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Android.TextRenderer/1.1.1/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // internal sealed class Blitter :353
 // {
@@ -139,8 +139,8 @@ Blitter* Blitter::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Android/1.0.5/.uno/ux11/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Android/1.1.1/.uno/ux11/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public partial sealed class RootGraphicsView :6
 // {
@@ -209,8 +209,8 @@ static void RootGraphicsView_build(uType* type)
     type->interface17.fp_ZOrderChanged = (void(*)(uObject*, ::g::Fuse::Elements::Element*, ::g::Uno::Collections::List*))::g::Fuse::Controls::GraphicsView__FuseElementsITreeRendererZOrderChanged_fn;
     type->interface17.fp_Measure = (void(*)(uObject*, ::g::Fuse::Elements::Element*, ::g::Fuse::LayoutParams*, ::g::Uno::Float2*, bool*))::g::Fuse::Controls::GraphicsView__FuseElementsITreeRendererMeasure_fn;
     type->interface18.fp_get_WorldTransformInverse = (void(*)(uObject*, ::g::Uno::Float4x4*))::g::Fuse::Controls::GraphicsView__FuseControlsIProxyHostget_WorldTransformInverse_fn;
-    type->interface15.fp_PointToWorldRay = (void(*)(uObject*, ::g::Uno::Float2*, ::g::Uno::Geometry::Ray*))::g::Fuse::Controls::GraphicsView__PointToWorldRay_fn;
-    type->interface15.fp_WorldToLocalRay = (void(*)(uObject*, uObject*, ::g::Uno::Geometry::Ray*, ::g::Fuse::Visual*, ::g::Uno::Geometry::Ray*))::g::Fuse::Controls::GraphicsView__WorldToLocalRay_fn;
+    type->interface15.fp_PointToWorldRay = (void(*)(uObject*, ::g::Uno::Float2*, ::g::Fuse::Ray*))::g::Fuse::Controls::GraphicsView__PointToWorldRay_fn;
+    type->interface15.fp_WorldToLocalRay = (void(*)(uObject*, uObject*, ::g::Fuse::Ray*, ::g::Fuse::Visual*, ::g::Fuse::Ray*))::g::Fuse::Controls::GraphicsView__WorldToLocalRay_fn;
     type->interface16.fp_get_ProjectionTransform = (void(*)(uObject*, ::g::Uno::Float4x4*))::g::Fuse::Controls::GraphicsView__get_ProjectionTransform_fn;
     type->interface16.fp_get_ViewProjectionTransform = (void(*)(uObject*, ::g::Uno::Float4x4*))::g::Fuse::Controls::GraphicsView__get_ViewProjectionTransform_fn;
     type->interface16.fp_get_ViewOrigin = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Controls::GraphicsView__get_ViewOrigin_fn;
@@ -298,8 +298,8 @@ RootGraphicsView* RootGraphicsView::New4()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Android/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Android/1.1.1/$.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class StatusBarConfig :84
 // {
@@ -437,8 +437,8 @@ StatusBarConfig* StatusBarConfig::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Android/1.0.5/.uno/ux11/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Android/1.1.1/.uno/ux11/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public partial sealed class RootGraphicsView.Template :9
 // {

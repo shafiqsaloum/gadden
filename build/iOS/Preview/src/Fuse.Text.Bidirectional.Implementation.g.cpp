@@ -1,9 +1,9 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
+#include <Fuse.Text.Bidirectional.Implementation.UBidiRuns.h>
 #include <Fuse.Text.Bidirectional.Run.h>
-#include <Fuse.Text.Bidirection-d76428a6.h>
-#include <Fuse.Text.Implementat-c1cf4160.h>
+#include <Fuse.Text.Implementation.ICU.ErrorCode.h>
 #include <Fuse.Text.Implementation.ICU.h>
 #include <Fuse.Text.Substring.h>
 #include <string.h>
@@ -22,8 +22,8 @@ namespace Text{
 namespace Bidirectional{
 namespace Implementation{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/implementation/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal static extern class UBidiRuns :1356
 // {

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Expressions/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Reactive.Expressions/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public sealed class Snapshot :860
+// public sealed class Snapshot :1325
 // {
 ::g::Fuse::Reactive::Expression_type* Snapshot_typeof();
 void Snapshot__ctor_1_fn(Snapshot* __this, ::g::Fuse::Reactive::Expression* source);

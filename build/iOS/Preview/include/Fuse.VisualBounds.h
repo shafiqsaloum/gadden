@@ -1,13 +1,13 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Geometry.Box.h>
+#include <Fuse.Box.h>
 #include <Uno.Object.h>
 namespace g{namespace Fuse{struct FastMatrix;}}
+namespace g{namespace Fuse{struct Ray;}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Fuse{struct VisualBounds;}}
-namespace g{namespace Uno{namespace Geometry{struct Ray;}}}
 namespace g{namespace Uno{struct Float2;}}
 namespace g{namespace Uno{struct Float3;}}
 namespace g{namespace Uno{struct Float4x4;}}
@@ -16,7 +16,7 @@ namespace g{namespace Uno{struct Rect;}}
 namespace g{
 namespace Fuse{
 
-// public sealed class VisualBounds :7982
+// public sealed class VisualBounds :8467
 // {
 uType* VisualBounds_typeof();
 void VisualBounds__ctor__fn(VisualBounds* __this);
@@ -26,14 +26,14 @@ void VisualBounds__AddRect_fn(VisualBounds* __this, ::g::Uno::Float2* mn, ::g::U
 void VisualBounds__AddRect1_fn(VisualBounds* __this, ::g::Uno::Rect* r, VisualBounds** __retval);
 void VisualBounds__get_AxisMax_fn(VisualBounds* __this, ::g::Uno::Float3* __retval);
 void VisualBounds__get_AxisMin_fn(VisualBounds* __this, ::g::Uno::Float3* __retval);
-void VisualBounds__Box_fn(::g::Uno::Geometry::Box* a, VisualBounds** __retval);
-void VisualBounds__BoxTransform_fn(::g::Uno::Geometry::Box* box, ::g::Uno::Float4x4* transform, ::g::Uno::Geometry::Box* __retval);
+void VisualBounds__Box_fn(::g::Fuse::Box* a, VisualBounds** __retval);
+void VisualBounds__BoxTransform_fn(::g::Fuse::Box* box, ::g::Uno::Float4x4* transform, ::g::Fuse::Box* __retval);
 void VisualBounds__ContainsPoint_fn(VisualBounds* __this, ::g::Uno::Float2* pt, bool* __retval);
 void VisualBounds__get_Empty_fn(VisualBounds** __retval);
 void VisualBounds__get_FlatRect_fn(VisualBounds* __this, ::g::Uno::Rect* __retval);
 void VisualBounds__get_Infinite_fn(VisualBounds** __retval);
 void VisualBounds__InflateXY_fn(VisualBounds* __this, float* padding, VisualBounds** __retval);
-void VisualBounds__IntersectsRay_fn(VisualBounds* __this, ::g::Uno::Geometry::Ray* ray, bool* __retval);
+void VisualBounds__IntersectsRay_fn(VisualBounds* __this, ::g::Fuse::Ray* ray, bool* __retval);
 void VisualBounds__IntersectXY_fn(VisualBounds* __this, VisualBounds* nb, VisualBounds** __retval);
 void VisualBounds__get_IsEmpty_fn(VisualBounds* __this, bool* __retval);
 void VisualBounds__get_IsFlat_fn(VisualBounds* __this, bool* __retval);
@@ -52,7 +52,7 @@ void VisualBounds__Translate_fn(VisualBounds* __this, ::g::Uno::Float3* offset, 
 
 struct VisualBounds : uObject
 {
-    ::g::Uno::Geometry::Box _box;
+    ::g::Fuse::Box _box;
     static uSStrong<VisualBounds*> _empty_;
     static uSStrong<VisualBounds*>& _empty() { return VisualBounds_typeof()->Init(), _empty_; }
     static uSStrong<VisualBounds*> _infinite_;
@@ -68,7 +68,7 @@ struct VisualBounds : uObject
     bool ContainsPoint(::g::Uno::Float2 pt);
     ::g::Uno::Rect FlatRect();
     VisualBounds* InflateXY(float padding);
-    bool IntersectsRay(::g::Uno::Geometry::Ray ray);
+    bool IntersectsRay(::g::Fuse::Ray ray);
     VisualBounds* IntersectXY(VisualBounds* nb);
     bool IsEmpty();
     bool IsFlat();
@@ -80,8 +80,8 @@ struct VisualBounds : uObject
     VisualBounds* Transform(::g::Uno::Float4x4 matrix);
     VisualBounds* TransformFlatten(::g::Uno::Float4x4 matrix);
     VisualBounds* Translate(::g::Uno::Float3 offset);
-    static VisualBounds* Box(::g::Uno::Geometry::Box a);
-    static ::g::Uno::Geometry::Box BoxTransform(::g::Uno::Geometry::Box box, ::g::Uno::Float4x4 transform);
+    static VisualBounds* Box(::g::Fuse::Box a);
+    static ::g::Fuse::Box BoxTransform(::g::Fuse::Box box, ::g::Uno::Float4x4 transform);
     static VisualBounds* New1();
     static VisualBounds* Point(::g::Uno::Float3 pt);
     static VisualBounds* Rect(::g::Uno::Float2 a, ::g::Uno::Float2 b);

@@ -1,13 +1,13 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.Native.-e502cdf1.h>
-#include <Fuse.Controls.URISche-2ed3a615.h>
+#include <Fuse.Controls.Native.ViewHandle.h>
+#include <Fuse.Controls.URISchemeEventArgs.h>
 #include <Fuse.Controls.WebView.h>
 #include <Fuse.iOS.Controls.NavDelegate.h>
 #include <Fuse.iOS.Controls.WebView.h>
-#include <Fuse.iOS.Controls.WKW-d3d6e7d4.h>
-#include <Fuse.Navigation.Histo-b65f239b.h>
+#include <Fuse.iOS.Controls.WKWebViewHelpers.h>
+#include <Fuse.Navigation.HistoryChangedHandler.h>
 #include <Fuse.Platform.AppEvents.h>
 #include <Fuse.UpdateManager.h>
 #include <Fuse.UpdateStage.h>
@@ -17,7 +17,7 @@
 #include <Uno.Bool.h>
 #include <Uno.Delegate.h>
 #include <Uno.Diagnostics.Debug.h>
-#include <Uno.Diagnostics.Debug-5d778620.h>
+#include <Uno.Diagnostics.DebugMessageType.h>
 #include <Uno.Double.h>
 #include <Uno.EventArgs.h>
 #include <Uno.EventHandler.h>
@@ -37,12 +37,12 @@ namespace Fuse{
 namespace iOS{
 namespace Controls{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/ios/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
-// public sealed extern class WebView :179
+// public sealed extern class WebView :181
 // {
-// ~WebView() :218
+// ~WebView() :220
 static void WebView__Finalize_fn(WebView* __this)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "Finalize()");
@@ -61,7 +61,7 @@ static void WebView_build(uType* type)
     ::STRINGS[0] = uString::Const("");
     ::STRINGS[1] = uString::Const("about:blank");
     ::STRINGS[2] = uString::Const("low mem in WebView");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/ios/$.uno");
+    ::STRINGS[3] = uString::Const("../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/ios/$.uno");
     ::TYPES[0] = ::g::Uno::Action_typeof();
     ::TYPES[1] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
     ::TYPES[2] = ::g::Uno::Exception_typeof();
@@ -84,13 +84,14 @@ static void WebView_build(uType* type)
         ::g::ObjC::Object_typeof(), offsetof(::g::Fuse::iOS::Controls::WebView, Handle1), 0,
         ::g::ObjC::Object_typeof(), offsetof(::g::Fuse::iOS::Controls::WebView, NavigationDelegate), 0,
         ::g::Uno::String_typeof(), offsetof(::g::Fuse::iOS::Controls::WebView, _BaseUrl), 0,
+        ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::iOS::Controls::WebView, _ScrollEnabled), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::iOS::Controls::WebView, _ZoomEnabled), 0,
         ::TYPES[4/*Uno.EventHandler*/], offsetof(::g::Fuse::iOS::Controls::WebView, BeginLoading1), 0,
         ::TYPES[4/*Uno.EventHandler*/], offsetof(::g::Fuse::iOS::Controls::WebView, PageLoaded1), 0,
         ::TYPES[5/*Uno.UX.ValueChangedHandler<double>*/], offsetof(::g::Fuse::iOS::Controls::WebView, ProgressChanged1), 0,
         ::TYPES[4/*Uno.EventHandler*/], offsetof(::g::Fuse::iOS::Controls::WebView, URISchemeHandler1), 0,
         ::TYPES[4/*Uno.EventHandler*/], offsetof(::g::Fuse::iOS::Controls::WebView, UrlChanged1), 0);
-    type->Reflection.SetFunctions(37,
+    type->Reflection.SetFunctions(39,
         new uFunction("get_BaseUrl", NULL, (void*)WebView__get_BaseUrl_fn, 0, false, ::g::Uno::String_typeof(), 0),
         new uFunction("set_BaseUrl", NULL, (void*)WebView__set_BaseUrl_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
         new uFunction("add_BeginLoading", NULL, (void*)WebView__add_BeginLoading_fn, 0, false, uVoid_typeof(), 1, ::TYPES[4/*Uno.EventHandler*/]),
@@ -117,6 +118,8 @@ static void WebView_build(uType* type)
         new uFunction("add_ProgressChanged", NULL, (void*)WebView__add_ProgressChanged_fn, 0, false, uVoid_typeof(), 1, ::TYPES[5/*Uno.UX.ValueChangedHandler<double>*/]),
         new uFunction("remove_ProgressChanged", NULL, (void*)WebView__remove_ProgressChanged_fn, 0, false, uVoid_typeof(), 1, ::TYPES[5/*Uno.UX.ValueChangedHandler<double>*/]),
         new uFunction("Reload", NULL, (void*)WebView__Reload_fn, 0, false, uVoid_typeof(), 0),
+        new uFunction("get_ScrollEnabled", NULL, (void*)WebView__get_ScrollEnabled_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
+        new uFunction("set_ScrollEnabled", NULL, (void*)WebView__set_ScrollEnabled_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Bool_typeof()),
         new uFunction("get_Source", NULL, (void*)WebView__get_Source_fn, 0, false, ::g::Uno::String_typeof(), 0),
         new uFunction("set_Source", NULL, (void*)WebView__set_Source_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
         new uFunction("Stop", NULL, (void*)WebView__Stop_fn, 0, false, uVoid_typeof(), 0),
@@ -137,7 +140,7 @@ WebView_type* WebView_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Native::iOS::LeafView_typeof();
-    options.FieldCount = 20;
+    options.FieldCount = 21;
     options.InterfaceCount = 7;
     options.ObjectSize = sizeof(WebView);
     options.TypeSize = sizeof(WebView_type);
@@ -161,6 +164,8 @@ WebView_type* WebView_typeof()
     type->interface3.fp_set_File = (void(*)(uObject*, ::g::Uno::UX::FileSource*))WebView__set_File_fn;
     type->interface3.fp_get_ZoomEnabled = (void(*)(uObject*, bool*))WebView__get_ZoomEnabled_fn;
     type->interface3.fp_set_ZoomEnabled = (void(*)(uObject*, bool*))WebView__set_ZoomEnabled_fn;
+    type->interface3.fp_get_ScrollEnabled = (void(*)(uObject*, bool*))WebView__get_ScrollEnabled_fn;
+    type->interface3.fp_set_ScrollEnabled = (void(*)(uObject*, bool*))WebView__set_ScrollEnabled_fn;
     type->interface3.fp_add_PageLoaded = (void(*)(uObject*, uDelegate*))WebView__add_PageLoaded_fn;
     type->interface3.fp_remove_PageLoaded = (void(*)(uObject*, uDelegate*))WebView__remove_PageLoaded_fn;
     type->interface3.fp_add_BeginLoading = (void(*)(uObject*, uDelegate*))WebView__add_BeginLoading_fn;
@@ -184,55 +189,55 @@ WebView_type* WebView_typeof()
     return type;
 }
 
-// private WebView(Fuse.Controls.WebView webViewHost, ObjC.Object wvHandle, string[] schemes) :195
+// private WebView(Fuse.Controls.WebView webViewHost, ObjC.Object wvHandle, string[] schemes) :197
 void WebView__ctor_5_fn(WebView* __this, ::g::Fuse::Controls::WebView* webViewHost, ::g::ObjC::Object* wvHandle, uArray* schemes)
 {
     __this->ctor_5(webViewHost, wvHandle, schemes);
 }
 
-// public generated string get_BaseUrl() :233
+// public generated string get_BaseUrl() :235
 void WebView__get_BaseUrl_fn(WebView* __this, uString** __retval)
 {
     *__retval = __this->BaseUrl();
 }
 
-// public generated void set_BaseUrl(string value) :233
+// public generated void set_BaseUrl(string value) :235
 void WebView__set_BaseUrl_fn(WebView* __this, uString* value)
 {
     __this->BaseUrl(value);
 }
 
-// public generated void add_BeginLoading(Uno.EventHandler value) :357
+// public generated void add_BeginLoading(Uno.EventHandler value) :359
 void WebView__add_BeginLoading_fn(WebView* __this, uDelegate* value)
 {
     __this->add_BeginLoading(value);
 }
 
-// public generated void remove_BeginLoading(Uno.EventHandler value) :357
+// public generated void remove_BeginLoading(Uno.EventHandler value) :359
 void WebView__remove_BeginLoading_fn(WebView* __this, uDelegate* value)
 {
     __this->remove_BeginLoading(value);
 }
 
-// public bool get_CanGoBack() :351
+// public bool get_CanGoBack() :353
 void WebView__get_CanGoBack_fn(WebView* __this, bool* __retval)
 {
     *__retval = __this->CanGoBack();
 }
 
-// public bool get_CanGoForward() :352
+// public bool get_CanGoForward() :354
 void WebView__get_CanGoForward_fn(WebView* __this, bool* __retval)
 {
     *__retval = __this->CanGoForward();
 }
 
-// public static Fuse.iOS.Controls.WebView Create(Fuse.Controls.WebView webViewHost, string[] schemes) :189
+// public static Fuse.iOS.Controls.WebView Create(Fuse.Controls.WebView webViewHost, string[] schemes) :191
 void WebView__Create_fn(::g::Fuse::Controls::WebView* webViewHost, uArray* schemes, WebView** __retval)
 {
     *__retval = WebView::Create(webViewHost, schemes);
 }
 
-// public override sealed void Dispose() :205
+// public override sealed void Dispose() :207
 void WebView__Dispose_fn(WebView* __this)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "Dispose()");
@@ -241,247 +246,259 @@ void WebView__Dispose_fn(WebView* __this)
     ::g::Fuse::Controls::Native::ViewHandle__Dispose_fn(__this);
 }
 
-// public string get_DocumentTitle() :350
+// public string get_DocumentTitle() :352
 void WebView__get_DocumentTitle_fn(WebView* __this, uString** __retval)
 {
     *__retval = __this->DocumentTitle();
 }
 
-// public void Eval(string js) :283
+// public void Eval(string js) :285
 void WebView__Eval_fn(WebView* __this, uString* js)
 {
     __this->Eval(js);
 }
 
-// public void Eval(string js, Uno.Action<string> onResult) :288
+// public void Eval(string js, Uno.Action<string> onResult) :290
 void WebView__Eval1_fn(WebView* __this, uString* js, uDelegate* onResult)
 {
     __this->Eval1(js, onResult);
 }
 
-// public Uno.UX.FileSource get_File() :296
+// public Uno.UX.FileSource get_File() :298
 void WebView__get_File_fn(WebView* __this, ::g::Uno::UX::FileSource** __retval)
 {
     *__retval = __this->File();
 }
 
-// public void set_File(Uno.UX.FileSource value) :297
+// public void set_File(Uno.UX.FileSource value) :299
 void WebView__set_File_fn(WebView* __this, ::g::Uno::UX::FileSource* value)
 {
     __this->File(value);
 }
 
-// public void GoBack() :353
+// public void GoBack() :355
 void WebView__GoBack_fn(WebView* __this)
 {
     __this->GoBack();
 }
 
-// public void GoForward() :354
+// public void GoForward() :356
 void WebView__GoForward_fn(WebView* __this)
 {
     __this->GoForward();
 }
 
-// public void add_HistoryChanged(Fuse.Navigation.HistoryChangedHandler value) :214
+// public void add_HistoryChanged(Fuse.Navigation.HistoryChangedHandler value) :216
 void WebView__add_HistoryChanged_fn(WebView* __this, uDelegate* value)
 {
     __this->add_HistoryChanged(value);
 }
 
-// public void remove_HistoryChanged(Fuse.Navigation.HistoryChangedHandler value) :215
+// public void remove_HistoryChanged(Fuse.Navigation.HistoryChangedHandler value) :217
 void WebView__remove_HistoryChanged_fn(WebView* __this, uDelegate* value)
 {
     __this->remove_HistoryChanged(value);
 }
 
-// private void LoadFile(Uno.UX.FileSource file) :305
+// private void LoadFile(Uno.UX.FileSource file) :307
 void WebView__LoadFile_fn(WebView* __this, ::g::Uno::UX::FileSource* file)
 {
     __this->LoadFile(file);
 }
 
-// public void LoadHtml(string html) :242
+// public void LoadHtml(string html) :244
 void WebView__LoadHtml_fn(WebView* __this, uString* html)
 {
     __this->LoadHtml(html);
 }
 
-// public void LoadHtml(string html, string baseUrl) :247
+// public void LoadHtml(string html, string baseUrl) :249
 void WebView__LoadHtml1_fn(WebView* __this, uString* html, uString* baseUrl)
 {
     __this->LoadHtml1(html, baseUrl);
 }
 
-// public bool get_Loading() :348
+// public bool get_Loading() :350
 void WebView__get_Loading_fn(WebView* __this, bool* __retval)
 {
     *__retval = __this->Loading();
 }
 
-// public void LoadUrl(string url) :259
+// public void LoadUrl(string url) :261
 void WebView__LoadUrl_fn(WebView* __this, uString* url)
 {
     __this->LoadUrl(url);
 }
 
-// private WebView New(Fuse.Controls.WebView webViewHost, ObjC.Object wvHandle, string[] schemes) :195
+// private WebView New(Fuse.Controls.WebView webViewHost, ObjC.Object wvHandle, string[] schemes) :197
 void WebView__New3_fn(::g::Fuse::Controls::WebView* webViewHost, ::g::ObjC::Object* wvHandle, uArray* schemes, WebView** __retval)
 {
     *__retval = WebView::New3(webViewHost, wvHandle, schemes);
 }
 
-// private void OnBeginNavigation() :324
+// private void OnBeginNavigation() :326
 void WebView__OnBeginNavigation_fn(WebView* __this)
 {
     __this->OnBeginNavigation();
 }
 
-// private void OnCustomURI(string url) :336
+// private void OnCustomURI(string url) :338
 void WebView__OnCustomURI_fn(WebView* __this, uString* url)
 {
     __this->OnCustomURI(url);
 }
 
-// private void OnFinishNavigation() :342
+// private void OnFinishNavigation() :344
 void WebView__OnFinishNavigation_fn(WebView* __this)
 {
     __this->OnFinishNavigation();
 }
 
-// private void OnLowMemory() :227
+// private void OnLowMemory() :229
 void WebView__OnLowMemory_fn(WebView* __this)
 {
     __this->OnLowMemory();
 }
 
-// private void OnProgressChanged() :317
+// private void OnProgressChanged() :319
 void WebView__OnProgressChanged_fn(WebView* __this)
 {
     __this->OnProgressChanged();
 }
 
-// private void OnUpdate() :273
+// private void OnUpdate() :275
 void WebView__OnUpdate_fn(WebView* __this)
 {
     __this->OnUpdate();
 }
 
-// private void OnURLChanged() :330
+// private void OnURLChanged() :332
 void WebView__OnURLChanged_fn(WebView* __this)
 {
     __this->OnURLChanged();
 }
 
-// public generated void add_PageLoaded(Uno.EventHandler value) :358
+// public generated void add_PageLoaded(Uno.EventHandler value) :360
 void WebView__add_PageLoaded_fn(WebView* __this, uDelegate* value)
 {
     __this->add_PageLoaded(value);
 }
 
-// public generated void remove_PageLoaded(Uno.EventHandler value) :358
+// public generated void remove_PageLoaded(Uno.EventHandler value) :360
 void WebView__remove_PageLoaded_fn(WebView* __this, uDelegate* value)
 {
     __this->remove_PageLoaded(value);
 }
 
-// public double get_Progress() :349
+// public double get_Progress() :351
 void WebView__get_Progress_fn(WebView* __this, double* __retval)
 {
     *__retval = __this->Progress();
 }
 
-// public generated void add_ProgressChanged(Uno.UX.ValueChangedHandler<double> value) :184
+// public generated void add_ProgressChanged(Uno.UX.ValueChangedHandler<double> value) :186
 void WebView__add_ProgressChanged_fn(WebView* __this, uDelegate* value)
 {
     __this->add_ProgressChanged(value);
 }
 
-// public generated void remove_ProgressChanged(Uno.UX.ValueChangedHandler<double> value) :184
+// public generated void remove_ProgressChanged(Uno.UX.ValueChangedHandler<double> value) :186
 void WebView__remove_ProgressChanged_fn(WebView* __this, uDelegate* value)
 {
     __this->remove_ProgressChanged(value);
 }
 
-// public void Reload() :355
+// public void Reload() :357
 void WebView__Reload_fn(WebView* __this)
 {
     __this->Reload();
 }
 
-// public string get_Source() :238
+// public generated bool get_ScrollEnabled() :364
+void WebView__get_ScrollEnabled_fn(WebView* __this, bool* __retval)
+{
+    *__retval = __this->ScrollEnabled();
+}
+
+// public generated void set_ScrollEnabled(bool value) :364
+void WebView__set_ScrollEnabled_fn(WebView* __this, bool* value)
+{
+    __this->ScrollEnabled(*value);
+}
+
+// public string get_Source() :240
 void WebView__get_Source_fn(WebView* __this, uString** __retval)
 {
     *__retval = __this->Source();
 }
 
-// public void set_Source(string value) :239
+// public void set_Source(string value) :241
 void WebView__set_Source_fn(WebView* __this, uString* value)
 {
     __this->Source(value);
 }
 
-// private void StartProgressUpdate() :267
+// private void StartProgressUpdate() :269
 void WebView__StartProgressUpdate_fn(WebView* __this)
 {
     __this->StartProgressUpdate();
 }
 
-// public void Stop() :356
+// public void Stop() :358
 void WebView__Stop_fn(WebView* __this)
 {
     __this->Stop();
 }
 
-// public generated void add_URISchemeHandler(Uno.EventHandler value) :360
+// public generated void add_URISchemeHandler(Uno.EventHandler value) :362
 void WebView__add_URISchemeHandler_fn(WebView* __this, uDelegate* value)
 {
     __this->add_URISchemeHandler(value);
 }
 
-// public generated void remove_URISchemeHandler(Uno.EventHandler value) :360
+// public generated void remove_URISchemeHandler(Uno.EventHandler value) :362
 void WebView__remove_URISchemeHandler_fn(WebView* __this, uDelegate* value)
 {
     __this->remove_URISchemeHandler(value);
 }
 
-// public string get_Url() :255
+// public string get_Url() :257
 void WebView__get_Url_fn(WebView* __this, uString** __retval)
 {
     *__retval = __this->Url();
 }
 
-// public void set_Url(string value) :256
+// public void set_Url(string value) :258
 void WebView__set_Url_fn(WebView* __this, uString* value)
 {
     __this->Url(value);
 }
 
-// public generated void add_UrlChanged(Uno.EventHandler value) :359
+// public generated void add_UrlChanged(Uno.EventHandler value) :361
 void WebView__add_UrlChanged_fn(WebView* __this, uDelegate* value)
 {
     __this->add_UrlChanged(value);
 }
 
-// public generated void remove_UrlChanged(Uno.EventHandler value) :359
+// public generated void remove_UrlChanged(Uno.EventHandler value) :361
 void WebView__remove_UrlChanged_fn(WebView* __this, uDelegate* value)
 {
     __this->remove_UrlChanged(value);
 }
 
-// public generated bool get_ZoomEnabled() :361
+// public generated bool get_ZoomEnabled() :363
 void WebView__get_ZoomEnabled_fn(WebView* __this, bool* __retval)
 {
     *__retval = __this->ZoomEnabled();
 }
 
-// public generated void set_ZoomEnabled(bool value) :361
+// public generated void set_ZoomEnabled(bool value) :363
 void WebView__set_ZoomEnabled_fn(WebView* __this, bool* value)
 {
     __this->ZoomEnabled(*value);
 }
 
-// private WebView(Fuse.Controls.WebView webViewHost, ObjC.Object wvHandle, string[] schemes) [instance] :195
+// private WebView(Fuse.Controls.WebView webViewHost, ObjC.Object wvHandle, string[] schemes) [instance] :197
 void WebView::ctor_5(::g::Fuse::Controls::WebView* webViewHost, ::g::ObjC::Object* wvHandle, uArray* schemes)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", ".ctor(Fuse.Controls.WebView,ObjC.Object,string[])");
@@ -494,69 +511,69 @@ void WebView::ctor_5(::g::Fuse::Controls::WebView* webViewHost, ::g::ObjC::Objec
     uPtr(_webViewHost)->WebViewClient((uObject*)this);
 }
 
-// public generated string get_BaseUrl() [instance] :233
+// public generated string get_BaseUrl() [instance] :235
 uString* WebView::BaseUrl()
 {
     return _BaseUrl;
 }
 
-// public generated void set_BaseUrl(string value) [instance] :233
+// public generated void set_BaseUrl(string value) [instance] :235
 void WebView::BaseUrl(uString* value)
 {
     _BaseUrl = value;
 }
 
-// public generated void add_BeginLoading(Uno.EventHandler value) [instance] :357
+// public generated void add_BeginLoading(Uno.EventHandler value) [instance] :359
 void WebView::add_BeginLoading(uDelegate* value)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "add_BeginLoading(Uno.EventHandler)");
     BeginLoading1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(BeginLoading1, value), ::TYPES[4/*Uno.EventHandler*/]);
 }
 
-// public generated void remove_BeginLoading(Uno.EventHandler value) [instance] :357
+// public generated void remove_BeginLoading(Uno.EventHandler value) [instance] :359
 void WebView::remove_BeginLoading(uDelegate* value)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "remove_BeginLoading(Uno.EventHandler)");
     BeginLoading1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(BeginLoading1, value), ::TYPES[4/*Uno.EventHandler*/]);
 }
 
-// public bool get_CanGoBack() [instance] :351
+// public bool get_CanGoBack() [instance] :353
 bool WebView::CanGoBack()
 {
     return ::g::Fuse::iOS::Controls::WKWebViewHelpers::GetCanGoBack(Handle1);
 }
 
-// public bool get_CanGoForward() [instance] :352
+// public bool get_CanGoForward() [instance] :354
 bool WebView::CanGoForward()
 {
     return ::g::Fuse::iOS::Controls::WKWebViewHelpers::GetCanGoForward(Handle1);
 }
 
-// public string get_DocumentTitle() [instance] :350
+// public string get_DocumentTitle() [instance] :352
 uString* WebView::DocumentTitle()
 {
     return ::g::Fuse::iOS::Controls::WKWebViewHelpers::GetTitle(Handle1);
 }
 
-// public void Eval(string js) [instance] :283
+// public void Eval(string js) [instance] :285
 void WebView::Eval(uString* js)
 {
     ::g::Fuse::iOS::Controls::WKWebViewHelpers::EvalOnWebView(Handle1, js);
 }
 
-// public void Eval(string js, Uno.Action<string> onResult) [instance] :288
+// public void Eval(string js, Uno.Action<string> onResult) [instance] :290
 void WebView::Eval1(uString* js, uDelegate* onResult)
 {
     ::g::Fuse::iOS::Controls::WKWebViewHelpers::EvalOnWebViewWithHandler(Handle1, js, onResult);
 }
 
-// public Uno.UX.FileSource get_File() [instance] :296
+// public Uno.UX.FileSource get_File() [instance] :298
 ::g::Uno::UX::FileSource* WebView::File()
 {
     return _file;
 }
 
-// public void set_File(Uno.UX.FileSource value) [instance] :297
+// public void set_File(Uno.UX.FileSource value) [instance] :299
 void WebView::File(::g::Uno::UX::FileSource* value)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "set_File(Uno.UX.FileSource)");
@@ -566,33 +583,33 @@ void WebView::File(::g::Uno::UX::FileSource* value)
         LoadFile(_file);
 }
 
-// public void GoBack() [instance] :353
+// public void GoBack() [instance] :355
 void WebView::GoBack()
 {
     ::g::Fuse::iOS::Controls::WKWebViewHelpers::GoBack(Handle1);
 }
 
-// public void GoForward() [instance] :354
+// public void GoForward() [instance] :356
 void WebView::GoForward()
 {
     ::g::Fuse::iOS::Controls::WKWebViewHelpers::GoForward(Handle1);
 }
 
-// public void add_HistoryChanged(Fuse.Navigation.HistoryChangedHandler value) [instance] :214
+// public void add_HistoryChanged(Fuse.Navigation.HistoryChangedHandler value) [instance] :216
 void WebView::add_HistoryChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "add_HistoryChanged(Fuse.Navigation.HistoryChangedHandler)");
     U_THROW(::g::Uno::NotImplementedException::New4());
 }
 
-// public void remove_HistoryChanged(Fuse.Navigation.HistoryChangedHandler value) [instance] :215
+// public void remove_HistoryChanged(Fuse.Navigation.HistoryChangedHandler value) [instance] :217
 void WebView::remove_HistoryChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "remove_HistoryChanged(Fuse.Navigation.HistoryChangedHandler)");
     U_THROW(::g::Uno::NotImplementedException::New4());
 }
 
-// private void LoadFile(Uno.UX.FileSource file) [instance] :305
+// private void LoadFile(Uno.UX.FileSource file) [instance] :307
 void WebView::LoadFile(::g::Uno::UX::FileSource* file)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "LoadFile(Uno.UX.FileSource)");
@@ -617,26 +634,26 @@ void WebView::LoadFile(::g::Uno::UX::FileSource* file)
     }
 }
 
-// public void LoadHtml(string html) [instance] :242
+// public void LoadHtml(string html) [instance] :244
 void WebView::LoadHtml(uString* html)
 {
     LoadHtml1(html, ::STRINGS[0/*""*/]);
 }
 
-// public void LoadHtml(string html, string baseUrl) [instance] :247
+// public void LoadHtml(string html, string baseUrl) [instance] :249
 void WebView::LoadHtml1(uString* html, uString* baseUrl)
 {
     ::g::Fuse::iOS::Controls::WKWebViewHelpers::LoadHTML(Handle1, html, baseUrl);
     StartProgressUpdate();
 }
 
-// public bool get_Loading() [instance] :348
+// public bool get_Loading() [instance] :350
 bool WebView::Loading()
 {
     return ::g::Fuse::iOS::Controls::WKWebViewHelpers::GetIsLoading(Handle1);
 }
 
-// public void LoadUrl(string url) [instance] :259
+// public void LoadUrl(string url) [instance] :261
 void WebView::LoadUrl(uString* url)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "LoadUrl(string)");
@@ -648,7 +665,7 @@ void WebView::LoadUrl(uString* url)
     StartProgressUpdate();
 }
 
-// private void OnBeginNavigation() [instance] :324
+// private void OnBeginNavigation() [instance] :326
 void WebView::OnBeginNavigation()
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "OnBeginNavigation()");
@@ -657,7 +674,7 @@ void WebView::OnBeginNavigation()
         uPtr(BeginLoading1)->Invoke(2, this, (::g::Uno::EventArgs*)::g::Uno::EventArgs::Empty());
 }
 
-// private void OnCustomURI(string url) [instance] :336
+// private void OnCustomURI(string url) [instance] :338
 void WebView::OnCustomURI(uString* url)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "OnCustomURI(string)");
@@ -666,7 +683,7 @@ void WebView::OnCustomURI(uString* url)
         uPtr(URISchemeHandler1)->Invoke(2, this, (::g::Fuse::Controls::URISchemeEventArgs*)::g::Fuse::Controls::URISchemeEventArgs::New2(url));
 }
 
-// private void OnFinishNavigation() [instance] :342
+// private void OnFinishNavigation() [instance] :344
 void WebView::OnFinishNavigation()
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "OnFinishNavigation()");
@@ -675,15 +692,15 @@ void WebView::OnFinishNavigation()
         uPtr(PageLoaded1)->Invoke(2, this, (::g::Uno::EventArgs*)::g::Uno::EventArgs::Empty());
 }
 
-// private void OnLowMemory() [instance] :227
+// private void OnLowMemory() [instance] :229
 void WebView::OnLowMemory()
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "OnLowMemory()");
-    ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[2/*"low mem in ...*/], 1, ::STRINGS[3/*"/Users/eric...*/], 229);
+    ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[2/*"low mem in ...*/], 1, ::STRINGS[3/*"../../../Li...*/], 231);
     ::g::Fuse::iOS::Controls::WKWebViewHelpers::FreeMemory();
 }
 
-// private void OnProgressChanged() [instance] :317
+// private void OnProgressChanged() [instance] :319
 void WebView::OnProgressChanged()
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "OnProgressChanged()");
@@ -693,7 +710,7 @@ void WebView::OnProgressChanged()
         uPtr(ProgressChanged1)->Invoke(2, this, (::g::Uno::UX::ValueChangedArgs__New2_fn(::TYPES[3/*Uno.UX.ValueChangedArgs<double>*/], uCRef(Progress()), &ret2), ret2));
 }
 
-// private void OnUpdate() [instance] :273
+// private void OnUpdate() [instance] :275
 void WebView::OnUpdate()
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "OnUpdate()");
@@ -706,7 +723,7 @@ void WebView::OnUpdate()
     }
 }
 
-// private void OnURLChanged() [instance] :330
+// private void OnURLChanged() [instance] :332
 void WebView::OnURLChanged()
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "OnURLChanged()");
@@ -715,59 +732,71 @@ void WebView::OnURLChanged()
         uPtr(UrlChanged1)->Invoke(2, this, (::g::Uno::EventArgs*)::g::Uno::EventArgs::Empty());
 }
 
-// public generated void add_PageLoaded(Uno.EventHandler value) [instance] :358
+// public generated void add_PageLoaded(Uno.EventHandler value) [instance] :360
 void WebView::add_PageLoaded(uDelegate* value)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "add_PageLoaded(Uno.EventHandler)");
     PageLoaded1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(PageLoaded1, value), ::TYPES[4/*Uno.EventHandler*/]);
 }
 
-// public generated void remove_PageLoaded(Uno.EventHandler value) [instance] :358
+// public generated void remove_PageLoaded(Uno.EventHandler value) [instance] :360
 void WebView::remove_PageLoaded(uDelegate* value)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "remove_PageLoaded(Uno.EventHandler)");
     PageLoaded1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(PageLoaded1, value), ::TYPES[4/*Uno.EventHandler*/]);
 }
 
-// public double get_Progress() [instance] :349
+// public double get_Progress() [instance] :351
 double WebView::Progress()
 {
     return ::g::Fuse::iOS::Controls::WKWebViewHelpers::GetEstimatedProgress(Handle1);
 }
 
-// public generated void add_ProgressChanged(Uno.UX.ValueChangedHandler<double> value) [instance] :184
+// public generated void add_ProgressChanged(Uno.UX.ValueChangedHandler<double> value) [instance] :186
 void WebView::add_ProgressChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "add_ProgressChanged(Uno.UX.ValueChangedHandler<double>)");
     ProgressChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(ProgressChanged1, value), ::TYPES[5/*Uno.UX.ValueChangedHandler<double>*/]);
 }
 
-// public generated void remove_ProgressChanged(Uno.UX.ValueChangedHandler<double> value) [instance] :184
+// public generated void remove_ProgressChanged(Uno.UX.ValueChangedHandler<double> value) [instance] :186
 void WebView::remove_ProgressChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "remove_ProgressChanged(Uno.UX.ValueChangedHandler<double>)");
     ProgressChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(ProgressChanged1, value), ::TYPES[5/*Uno.UX.ValueChangedHandler<double>*/]);
 }
 
-// public void Reload() [instance] :355
+// public void Reload() [instance] :357
 void WebView::Reload()
 {
     ::g::Fuse::iOS::Controls::WKWebViewHelpers::Reload(Handle1);
 }
 
-// public string get_Source() [instance] :238
+// public generated bool get_ScrollEnabled() [instance] :364
+bool WebView::ScrollEnabled()
+{
+    return _ScrollEnabled;
+}
+
+// public generated void set_ScrollEnabled(bool value) [instance] :364
+void WebView::ScrollEnabled(bool value)
+{
+    _ScrollEnabled = value;
+}
+
+// public string get_Source() [instance] :240
 uString* WebView::Source()
 {
     return _source;
 }
 
-// public void set_Source(string value) [instance] :239
+// public void set_Source(string value) [instance] :241
 void WebView::Source(uString* value)
 {
     LoadHtml(_source = value);
 }
 
-// private void StartProgressUpdate() [instance] :267
+// private void StartProgressUpdate() [instance] :269
 void WebView::StartProgressUpdate()
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "StartProgressUpdate()");
@@ -776,74 +805,74 @@ void WebView::StartProgressUpdate()
         ::g::Fuse::UpdateManager::AddAction1(uDelegate::New(::TYPES[0/*Uno.Action*/], (void*)WebView__OnUpdate_fn, this), 0);
 }
 
-// public void Stop() [instance] :356
+// public void Stop() [instance] :358
 void WebView::Stop()
 {
     ::g::Fuse::iOS::Controls::WKWebViewHelpers::StopLoading(Handle1);
 }
 
-// public generated void add_URISchemeHandler(Uno.EventHandler value) [instance] :360
+// public generated void add_URISchemeHandler(Uno.EventHandler value) [instance] :362
 void WebView::add_URISchemeHandler(uDelegate* value)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "add_URISchemeHandler(Uno.EventHandler)");
     URISchemeHandler1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(URISchemeHandler1, value), ::TYPES[4/*Uno.EventHandler*/]);
 }
 
-// public generated void remove_URISchemeHandler(Uno.EventHandler value) [instance] :360
+// public generated void remove_URISchemeHandler(Uno.EventHandler value) [instance] :362
 void WebView::remove_URISchemeHandler(uDelegate* value)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "remove_URISchemeHandler(Uno.EventHandler)");
     URISchemeHandler1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(URISchemeHandler1, value), ::TYPES[4/*Uno.EventHandler*/]);
 }
 
-// public string get_Url() [instance] :255
+// public string get_Url() [instance] :257
 uString* WebView::Url()
 {
     return ::g::Fuse::iOS::Controls::WKWebViewHelpers::GetURL(Handle1);
 }
 
-// public void set_Url(string value) [instance] :256
+// public void set_Url(string value) [instance] :258
 void WebView::Url(uString* value)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "set_Url(string)");
     LoadUrl(value);
 }
 
-// public generated void add_UrlChanged(Uno.EventHandler value) [instance] :359
+// public generated void add_UrlChanged(Uno.EventHandler value) [instance] :361
 void WebView::add_UrlChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "add_UrlChanged(Uno.EventHandler)");
     UrlChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(UrlChanged1, value), ::TYPES[4/*Uno.EventHandler*/]);
 }
 
-// public generated void remove_UrlChanged(Uno.EventHandler value) [instance] :359
+// public generated void remove_UrlChanged(Uno.EventHandler value) [instance] :361
 void WebView::remove_UrlChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "remove_UrlChanged(Uno.EventHandler)");
     UrlChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(UrlChanged1, value), ::TYPES[4/*Uno.EventHandler*/]);
 }
 
-// public generated bool get_ZoomEnabled() [instance] :361
+// public generated bool get_ZoomEnabled() [instance] :363
 bool WebView::ZoomEnabled()
 {
     return _ZoomEnabled;
 }
 
-// public generated void set_ZoomEnabled(bool value) [instance] :361
+// public generated void set_ZoomEnabled(bool value) [instance] :363
 void WebView::ZoomEnabled(bool value)
 {
     _ZoomEnabled = value;
 }
 
-// public static Fuse.iOS.Controls.WebView Create(Fuse.Controls.WebView webViewHost, string[] schemes) [static] :189
+// public static Fuse.iOS.Controls.WebView Create(Fuse.Controls.WebView webViewHost, string[] schemes) [static] :191
 WebView* WebView::Create(::g::Fuse::Controls::WebView* webViewHost, uArray* schemes)
 {
     uStackFrame __("Fuse.iOS.Controls.WebView", "Create(Fuse.Controls.WebView,string[])");
-    ::g::ObjC::Object* wv = ::g::Fuse::iOS::Controls::WKWebViewHelpers::CreateWebView(uPtr(webViewHost)->ZoomEnabled());
+    ::g::ObjC::Object* wv = ::g::Fuse::iOS::Controls::WKWebViewHelpers::CreateWebView(uPtr(webViewHost)->ZoomEnabled(), uPtr(webViewHost)->ScrollEnabled());
     return WebView::New3(webViewHost, wv, schemes);
 }
 
-// private WebView New(Fuse.Controls.WebView webViewHost, ObjC.Object wvHandle, string[] schemes) [static] :195
+// private WebView New(Fuse.Controls.WebView webViewHost, ObjC.Object wvHandle, string[] schemes) [static] :197
 WebView* WebView::New3(::g::Fuse::Controls::WebView* webViewHost, ::g::ObjC::Object* wvHandle, uArray* schemes)
 {
     WebView* obj1 = (WebView*)uNew(WebView_typeof());

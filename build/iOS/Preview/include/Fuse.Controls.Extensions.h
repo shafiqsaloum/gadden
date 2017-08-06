@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// internal static extern class Extensions :3038
+// internal static extern class Extensions :3042
 // {
 uClassType* Extensions_typeof();
 void Extensions__GetColor_fn(::g::Fuse::Drawing::Brush* brush, ::g::Uno::Float4* __retval);

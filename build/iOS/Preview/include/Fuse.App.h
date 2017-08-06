@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.iOS/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -29,6 +29,7 @@ void App__New1_fn(App** __retval);
 void App__OnTick_fn(App* __this, uObject* sender, ::g::Uno::Platform::TimerEventArgs* args);
 void App__OnUpdate_fn(App* __this);
 void App__PropagateBackground_fn(App* __this);
+void App__get_RootVisual_fn(App* __this, ::g::Fuse::Visual** __retval);
 
 struct App : ::g::Fuse::AppBase
 {
@@ -42,6 +43,7 @@ struct App : ::g::Fuse::AppBase
     void CheckStatusBarOrientation();
     void OnTick(uObject* sender, ::g::Uno::Platform::TimerEventArgs* args);
     void PropagateBackground();
+    ::g::Fuse::Visual* RootVisual();
     static bool Compare(::g::ObjC::Object* x, ::g::ObjC::Object* y);
     static bool IsNull(::g::ObjC::Object* x);
     static App* New1();

@@ -1,20 +1,20 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/shapes/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/shapes/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.LayoutControl.h>
-#include <Fuse.Drawing.IDrawObj-d34d045e.h>
+#include <Fuse.Drawing.IDrawObjectWatcherFeedback.h>
 #include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -80,6 +80,8 @@ void Shape__FuseDrawingIDrawObjectWatcherFeedbackChanged_fn(Shape* __this, uObje
 void Shape__FuseDrawingIDrawObjectWatcherFeedbackPrepare_fn(Shape* __this, uObject* obj);
 void Shape__FuseDrawingIDrawObjectWatcherFeedbackUnprepare_fn(Shape* __this, uObject* obj);
 void Shape__FuseDrawingISurfaceDrawableDraw_fn(Shape* __this, ::g::Fuse::Drawing::Surface* surface);
+void Shape__FuseDrawingISurfaceDrawableget_ElementSize_fn(Shape* __this, ::g::Uno::Float2* __retval);
+void Shape__FuseDrawingISurfaceDrawableget_IsPrimary_fn(Shape* __this, bool* __retval);
 void Shape__GetSurfacePath_fn(Shape* __this, ::g::Fuse::Drawing::Surface* surface, ::g::Fuse::Drawing::SurfacePath** __retval);
 void Shape__get_HasFills_fn(Shape* __this, bool* __retval);
 void Shape__get_HasLoadingResources_fn(Shape* __this, bool* __retval);

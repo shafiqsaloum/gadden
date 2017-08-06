@@ -1,10 +1,10 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Experimental.TextureL-1a97077a.h>
-#include <Experimental.TextureL-1f379d0f.h>
-#include <Experimental.TextureL-932cb361.h>
-#include <Experimental.TextureL-b6dfce5c.h>
+#include <Experimental.TextureLoader.Callback.h>
+#include <Experimental.TextureLoader.InvalidContentTypeException.h>
+#include <Experimental.TextureLoader.TextureLoader.h>
+#include <Experimental.TextureLoader.TextureLoaderImpl.h>
 #include <uBase/Buffer.h>
 #include <uBase/BufferStream.h>
 #include <uBase/Memory.h>
@@ -27,8 +27,8 @@ namespace g{
 namespace Experimental{
 namespace TextureLoader{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/1.0.1/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------------
 
 // internal sealed class Callback :11
 // {
@@ -92,14 +92,14 @@ Callback* Callback::New1(uDelegate* action)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/1.0.1/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------------
 
 // public sealed class InvalidContentTypeException :27
 // {
 static void InvalidContentTypeException_build(uType* type)
 {
-    type->SetFields(3);
+    type->SetFields(4);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)InvalidContentTypeException__New4_fn, 0, true, type, 1, ::g::Uno::String_typeof()));
 }
@@ -111,7 +111,7 @@ static void InvalidContentTypeException_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 3;
+    options.FieldCount = 4;
     options.ObjectSize = sizeof(InvalidContentTypeException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Experimental.TextureLoader.InvalidContentTypeException", options);
@@ -146,8 +146,8 @@ InvalidContentTypeException* InvalidContentTypeException::New4(uString* reason)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/1.0.1/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------------
 
 // public static class TextureLoader :32
 // {
@@ -283,8 +283,8 @@ void TextureLoader::PngByteArrayToTexture2D(::g::Uno::Buffer* arr, uDelegate* ca
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/1.0.1/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Experimental.TextureLoader/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------------------
 
 // internal static class TextureLoaderImpl :108
 // {

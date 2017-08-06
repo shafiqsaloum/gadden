@@ -1,4 +1,4 @@
-// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno.
+// This file was generated based on build/iOS/Preview/cache/ux11/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -17,6 +17,7 @@ namespace g{namespace Fuse{namespace Controls{struct Shadow;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
 namespace g{namespace Fuse{namespace Reactive{struct EventBinding;}}}
+namespace g{namespace Fuse{namespace Triggers{struct Timeline;}}}
 namespace g{namespace Fuse{namespace Triggers{struct WhileTrue;}}}
 namespace g{namespace Fuse{struct Font;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -169,6 +170,13 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector66() { return MainView_typeof()->Init(), __selector66_; }
     static ::g::Uno::UX::Selector __selector67_;
     static ::g::Uno::UX::Selector& __selector67() { return MainView_typeof()->Init(), __selector67_; }
+<<<<<<< HEAD
+=======
+    static ::g::Uno::UX::Selector __selector68_;
+    static ::g::Uno::UX::Selector& __selector68() { return MainView_typeof()->Init(), __selector68_; }
+    static ::g::Uno::UX::Selector __selector69_;
+    static ::g::Uno::UX::Selector& __selector69() { return MainView_typeof()->Init(), __selector69_; }
+>>>>>>> 1b78b750525f1c14d0676759d68b214d8813e7b4
     static ::g::Uno::UX::Selector __selector7_;
     static ::g::Uno::UX::Selector& __selector7() { return MainView_typeof()->Init(), __selector7_; }
     static ::g::Uno::UX::Selector __selector8_;
@@ -191,6 +199,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Page*> goodiebag;
     uStrong< ::g::Fuse::Controls::Panel*> GoodiebagTab;
     uStrong< ::g::Fuse::Controls::Page*> icebreaker;
+    uStrong< ::g::Fuse::Controls::Panel*> iconPanel;
     uStrong< ::g::Fuse::Controls::Panel*> indicator;
     uStrong< ::g::Uno::UX::Property1*> indicator_Element_LayoutMaster_inst;
     uStrong< ::g::Fuse::Controls::Rectangle*> indicatorAbout;
@@ -281,6 +290,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp20_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp21_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp22_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp4_Data_inst;
     uStrong< ::g::Uno::UX::Property1*> temp5_Items_inst;
@@ -289,6 +299,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> temp8_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp9_Value_inst;
     uStrong< ::g::Fuse::Controls::EdgeNavigator*> TheSidebar;
+    uStrong< ::g::Fuse::Triggers::Timeline*> timeline;
     static uSStrong< ::g::Fuse::Font*> TitleFont_;
     static uSStrong< ::g::Fuse::Font*>& TitleFont() { return MainView_typeof()->Init(), TitleFont_; }
     uStrong< ::g::Fuse::Controls::Panel*> TitleTest;

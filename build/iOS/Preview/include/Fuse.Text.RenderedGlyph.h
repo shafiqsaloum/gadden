@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Text{
 
-// public struct RenderedGlyph :761
+// public struct RenderedGlyph :760
 // {
 uStructType* RenderedGlyph_typeof();
 void RenderedGlyph__ctor__fn(RenderedGlyph* __this, ::g::Uno::Content::Images::Bitmap* bitmap, ::g::Uno::Float2* offset, float* scale);

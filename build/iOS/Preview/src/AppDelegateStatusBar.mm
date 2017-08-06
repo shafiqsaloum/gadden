@@ -1,7 +1,7 @@
 #include <Uno/Uno.h>
 
 #include <Fuse.Platform.SystemUI.h>
-#include <Fuse.Platform.SystemU-2024c55a.h>
+#include <Fuse.Platform.SystemUIWillResizeEventArgs.h>
 #include <ObjC.Object.h>
 #include <Uno.Platform.iOS.Support.h>
 #include <Fuse.Platform.SystemUI.h>

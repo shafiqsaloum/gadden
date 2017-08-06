@@ -1,8 +1,8 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.iOSDevice.h>
-#include <Fuse.iOSDevice.Screen-3b02247a.h>
+#include <Fuse.iOSDevice.ScreenOrientation.h>
 #include <Fuse.OSVersion.h>
 #include <UIKit/UIKit.h>
 #include <Uno.Bool.h>
@@ -15,7 +15,7 @@
 namespace g{
 namespace Fuse{
 
-// public static extern class iOSDevice :292
+// public static extern class iOSDevice :2255
 // {
 static void iOSDevice_build(uType* type)
 {
@@ -41,37 +41,37 @@ uClassType* iOSDevice_typeof()
     return type;
 }
 
-// public static float2 CompensateForOrientation(float2 size) :326
+// public static float2 CompensateForOrientation(float2 size) :2289
 void iOSDevice__CompensateForOrientation_fn(::g::Uno::Float2* size, ::g::Uno::Float2* __retval)
 {
     *__retval = iOSDevice::CompensateForOrientation(*size);
 }
 
-// public static Uno.Rect CompensateForOrientation(Uno.Rect rect) :333
+// public static Uno.Rect CompensateForOrientation(Uno.Rect rect) :2296
 void iOSDevice__CompensateForOrientation1_fn(::g::Uno::Rect* rect, ::g::Uno::Rect* __retval)
 {
     *__retval = iOSDevice::CompensateForOrientation1(*rect);
 }
 
-// private static void GetiOSVersion(int& major, int& minor, int& patch) :314
+// private static void GetiOSVersion(int& major, int& minor, int& patch) :2277
 void iOSDevice__GetiOSVersion_fn(int* major, int* minor, int* patch)
 {
     iOSDevice::GetiOSVersion(major, minor, patch);
 }
 
-// private static bool IsLandscapeOrientation() :342
+// private static bool IsLandscapeOrientation() :2305
 void iOSDevice__IsLandscapeOrientation_fn(bool* __retval)
 {
     *__retval = iOSDevice::IsLandscapeOrientation();
 }
 
-// public static Fuse.OSVersion get_OperatingSystemVersion() :303
+// public static Fuse.OSVersion get_OperatingSystemVersion() :2266
 void iOSDevice__get_OperatingSystemVersion_fn(::g::Fuse::OSVersion** __retval)
 {
     *__retval = iOSDevice::OperatingSystemVersion();
 }
 
-// public static Fuse.iOSDevice.ScreenOrientation get_Orientation() :323
+// public static Fuse.iOSDevice.ScreenOrientation get_Orientation() :2286
 void iOSDevice__get_Orientation_fn(int* __retval)
 {
     *__retval = iOSDevice::Orientation();
@@ -79,14 +79,14 @@ void iOSDevice__get_Orientation_fn(int* __retval)
 
 uSStrong< ::g::Fuse::OSVersion*> iOSDevice::_osVersion_;
 
-// public static float2 CompensateForOrientation(float2 size) [static] :326
+// public static float2 CompensateForOrientation(float2 size) [static] :2289
 ::g::Uno::Float2 iOSDevice::CompensateForOrientation(::g::Uno::Float2 size)
 {
     uStackFrame __("Fuse.iOSDevice", "CompensateForOrientation(float2)");
     return ((uPtr(iOSDevice::OperatingSystemVersion())->Major < 8) && (iOSDevice::Orientation() == 1)) ? ::g::Uno::Float2__New2(size.Y, size.X) : size;
 }
 
-// public static Uno.Rect CompensateForOrientation(Uno.Rect rect) [static] :333
+// public static Uno.Rect CompensateForOrientation(Uno.Rect rect) [static] :2296
 ::g::Uno::Rect iOSDevice::CompensateForOrientation1(::g::Uno::Rect rect)
 {
     uStackFrame __("Fuse.iOSDevice", "CompensateForOrientation(Uno.Rect)");
@@ -95,7 +95,7 @@ uSStrong< ::g::Fuse::OSVersion*> iOSDevice::_osVersion_;
     return ((uPtr(iOSDevice::OperatingSystemVersion())->Major < 8) && (iOSDevice::Orientation() == 1)) ? ::g::Uno::Rect__New2((ind1 = rect.Position(), ::g::Uno::Float2__New2(ind1.Y, ind1.X)), (ind2 = rect.Size(), ::g::Uno::Float2__New2(ind2.Y, ind2.X))) : rect;
 }
 
-// private static void GetiOSVersion(int& major, int& minor, int& patch) [static] :314
+// private static void GetiOSVersion(int& major, int& minor, int& patch) [static] :2277
 void iOSDevice::GetiOSVersion(int* major, int* minor, int* patch)
 {
     @autoreleasepool
@@ -107,7 +107,7 @@ void iOSDevice::GetiOSVersion(int* major, int* minor, int* patch)
     
 }
 
-// private static bool IsLandscapeOrientation() [static] :342
+// private static bool IsLandscapeOrientation() [static] :2305
 bool iOSDevice::IsLandscapeOrientation()
 {
     @autoreleasepool
@@ -118,7 +118,7 @@ bool iOSDevice::IsLandscapeOrientation()
     
 }
 
-// public static Fuse.OSVersion get_OperatingSystemVersion() [static] :303
+// public static Fuse.OSVersion get_OperatingSystemVersion() [static] :2266
 ::g::Fuse::OSVersion* iOSDevice::OperatingSystemVersion()
 {
     if (iOSDevice::_osVersion_ != NULL)
@@ -129,7 +129,7 @@ bool iOSDevice::IsLandscapeOrientation()
     return iOSDevice::_osVersion_ = ::g::Fuse::OSVersion::New1(major, minor, patch);
 }
 
-// public static Fuse.iOSDevice.ScreenOrientation get_Orientation() [static] :323
+// public static Fuse.iOSDevice.ScreenOrientation get_Orientation() [static] :2286
 int iOSDevice::Orientation()
 {
     return iOSDevice::IsLandscapeOrientation() ? 1 : 0;

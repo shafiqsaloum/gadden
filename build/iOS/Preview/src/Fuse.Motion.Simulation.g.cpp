@@ -8,20 +8,20 @@
 #include <Fuse.Internal.Statistics.h>
 #include <Fuse.Motion.MotionUnit.h>
 #include <Fuse.Motion.OverflowType.h>
-#include <Fuse.Motion.Simulatio-17bdd43e.h>
-#include <Fuse.Motion.Simulatio-1b299d00.h>
-#include <Fuse.Motion.Simulatio-2e0ddcfb.h>
-#include <Fuse.Motion.Simulatio-73b2da14.h>
-#include <Fuse.Motion.Simulatio-7cce7e04.h>
-#include <Fuse.Motion.Simulatio-8063728b.h>
-#include <Fuse.Motion.Simulatio-8291fa3c.h>
-#include <Fuse.Motion.Simulatio-871f3635.h>
-#include <Fuse.Motion.Simulatio-a4ba96c1.h>
-#include <Fuse.Motion.Simulatio-b08483ab.h>
-#include <Fuse.Motion.Simulatio-b08eb1c5.h>
-#include <Fuse.Motion.Simulatio-bc50bd.h>
-#include <Fuse.Motion.Simulatio-ca33dcbb.h>
-#include <Fuse.Motion.Simulatio-edb97e3.h>
+#include <Fuse.Motion.Simulation.AdapterMultiplier-1.h>
+#include <Fuse.Motion.Simulation.AngularAdapter-1.h>
+#include <Fuse.Motion.Simulation.BasicBoundedRegion2D.h>
+#include <Fuse.Motion.Simulation.BasicBoundedRegion2D.MoveMode.h>
+#include <Fuse.Motion.Simulation.BoundedRegion2D.h>
+#include <Fuse.Motion.Simulation.DestinationSimulation-1.h>
+#include <Fuse.Motion.Simulation.EasingMotion-1.h>
+#include <Fuse.Motion.Simulation.ElasticForce-1.h>
+#include <Fuse.Motion.Simulation.Friction-1.h>
+#include <Fuse.Motion.Simulation.MotionSimulation-1.h>
+#include <Fuse.Motion.Simulation.PointerVelocity-1.h>
+#include <Fuse.Motion.Simulation.SampleFlags.h>
+#include <Fuse.Motion.Simulation.Simulation.h>
+#include <Fuse.Motion.Simulation.SmoothSnap-1.h>
 #include <Uno.Bool.h>
 #include <Uno.Double.h>
 #include <Uno.Exception.h>
@@ -38,8 +38,8 @@ namespace Fuse{
 namespace Motion{
 namespace Simulation{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/simulation/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class AdapterMultiplier<T> :94
 // {
@@ -273,8 +273,8 @@ AdapterMultiplier* AdapterMultiplier::New1(uType* __type, uObject* impl, double 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/simulation/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class AngularAdapter<T> :10
 // {
@@ -512,8 +512,8 @@ AngularAdapter* AngularAdapter::New1(uType* __type, uObject* impl)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/simulation/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class BasicBoundedRegion2D :185
 // {
@@ -1252,8 +1252,8 @@ BasicBoundedRegion2D* BasicBoundedRegion2D::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/simulation/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal abstract interface BoundedRegion2D :164
 // {
@@ -1267,8 +1267,8 @@ uInterfaceType* BoundedRegion2D_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/simulation/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal abstract interface DestinationSimulation<T> :1324
 // {
@@ -1282,8 +1282,8 @@ uInterfaceType* DestinationSimulation_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/simulation/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class EasingMotion<T> :544
 // {
@@ -1763,8 +1763,8 @@ EasingMotion* EasingMotion::New1(uType* __type)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/simulation/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class ElasticForce<T> :787
 // {
@@ -2311,8 +2311,8 @@ ElasticForce* ElasticForce::New1(uType* __type, float scale)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/simulation/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class Friction<T> :1019
 // {
@@ -2647,8 +2647,8 @@ Friction* Friction::New1(uType* __type)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/simulation/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal abstract interface MotionSimulation<T> :1318
 // {
@@ -2662,8 +2662,8 @@ uInterfaceType* MotionSimulation_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/simulation/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // private enum BasicBoundedRegion2D.MoveMode :224
 uEnumType* BasicBoundedRegion2D__MoveMode_typeof()
@@ -2681,8 +2681,8 @@ uEnumType* BasicBoundedRegion2D__MoveMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/simulation/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class PointerVelocity<T> :1166
 // {
@@ -2953,8 +2953,8 @@ PointerVelocity* PointerVelocity::New1(uType* __type)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/simulation/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public enum SampleFlags :1155
 uEnumType* SampleFlags_typeof()
@@ -2970,8 +2970,8 @@ uEnumType* SampleFlags_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/simulation/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal abstract interface Simulation :1304
 // {
@@ -2985,8 +2985,8 @@ uInterfaceType* Simulation_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/simulation/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/simulation/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class SmoothSnap<T> :1345
 // {

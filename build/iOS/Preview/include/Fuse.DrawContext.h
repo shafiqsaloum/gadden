@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -19,7 +19,7 @@ namespace g{namespace Uno{struct Recti;}}
 namespace g{
 namespace Fuse{
 
-// public sealed class DrawContext :523
+// public sealed class DrawContext :524
 // {
 uType* DrawContext_typeof();
 void DrawContext__ctor__fn(DrawContext* __this, uObject* viewport);

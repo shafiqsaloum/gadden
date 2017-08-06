@@ -1,9 +1,9 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Scripting/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Scripting.Function.h>
-#include <Fuse.Scripting.Native-c8feecef.h>
+#include <Fuse.Scripting.NativeProperty-2.h>
 namespace g{namespace Fuse{namespace Scripting{struct NativeEvent;}}}
 namespace g{namespace Uno{namespace Collections{struct Queue;}}}
 

@@ -6,20 +6,20 @@
 #include <Fuse.Scripting.External.h>
 #include <Fuse.Scripting.Function.h>
 #include <Fuse.Scripting.IThreadWorker.h>
-#include <Fuse.Scripting.JavaSc-11784553.h>
-#include <Fuse.Scripting.JavaSc-206c1e89.h>
-#include <Fuse.Scripting.JavaSc-40985a5e.h>
-#include <Fuse.Scripting.JavaSc-50050f2a.h>
-#include <Fuse.Scripting.JavaSc-575dc855.h>
-#include <Fuse.Scripting.JavaSc-6ea00389.h>
-#include <Fuse.Scripting.JavaSc-6f67e115.h>
-#include <Fuse.Scripting.JavaSc-8233480d.h>
-#include <Fuse.Scripting.JavaSc-82cbe67d.h>
-#include <Fuse.Scripting.JavaSc-8a5cd254.h>
-#include <Fuse.Scripting.JavaSc-a187229b.h>
-#include <Fuse.Scripting.JavaSc-bfe89f22.h>
-#include <Fuse.Scripting.JavaSc-c8bd1f7b.h>
-#include <Fuse.Scripting.JavaSc-fcde12cf.h>
+#include <Fuse.Scripting.JavaScriptCore.Array.h>
+#include <Fuse.Scripting.JavaScriptCore.Context.CallbackWrapper.h>
+#include <Fuse.Scripting.JavaScriptCore.Context.h>
+#include <Fuse.Scripting.JavaScriptCore.Function.h>
+#include <Fuse.Scripting.JavaScriptCore.JSClassRef.h>
+#include <Fuse.Scripting.JavaScriptCore.JSClassRef.RawCallback.h>
+#include <Fuse.Scripting.JavaScriptCore.JSContextRef.h>
+#include <Fuse.Scripting.JavaScriptCore.JSObjectRef.h>
+#include <Fuse.Scripting.JavaScriptCore.JSPropertyNameArray.h>
+#include <Fuse.Scripting.JavaScriptCore.JSStringRef.h>
+#include <Fuse.Scripting.JavaScriptCore.JSType.h>
+#include <Fuse.Scripting.JavaScriptCore.JSTypedArray.h>
+#include <Fuse.Scripting.JavaScriptCore.JSValueRef.h>
+#include <Fuse.Scripting.JavaScriptCore.Object.h>
 #include <Fuse.Scripting.Object.h>
 #include <Fuse.Scripting.ScriptException.h>
 #include <JavaScriptCore/JSBase.h>
@@ -48,8 +48,8 @@ namespace Fuse{
 namespace Scripting{
 namespace JavaScriptCore{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // internal sealed extern class Array :9
 // {
@@ -172,8 +172,8 @@ Array* Array::New1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JSO
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // private sealed extern class Context.CallbackWrapper :358
 // {
@@ -256,8 +256,8 @@ Context__CallbackWrapper* Context__CallbackWrapper::New1(::g::Fuse::Scripting::J
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed extern class Context :82
 // {
@@ -718,8 +718,8 @@ void Context::OnSetupErrorError(::JSValueRef exception)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // internal sealed extern class Function :394
 // {
@@ -825,8 +825,8 @@ Function* Function::New1(::g::Fuse::Scripting::JavaScriptCore::Context* context,
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // internal extern struct JSClassRef :859
 // {
@@ -955,8 +955,8 @@ void JSClassRef::Dispose(::JSClassRef __this)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // internal extern struct JSContextRef :796
 // {
@@ -1090,8 +1090,8 @@ void JSContextRef::Dispose(::JSContextRef __this)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // internal extern struct JSObjectRef :613
 // {
@@ -1445,8 +1445,8 @@ bool JSObjectRef::op_Inequality(::JSObjectRef o1, ::JSObjectRef o2)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // internal extern struct JSPropertyNameArray :768
 // {
@@ -1517,8 +1517,8 @@ int JSPropertyNameArray::GetCount(::JSPropertyNameArrayRef __this)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // internal extern struct JSStringRef :586
 // {
@@ -1587,8 +1587,8 @@ void JSStringRef::Dispose(::JSStringRef __this)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // internal extern enum JSType :571
 uEnumType* JSType_typeof()
@@ -1608,8 +1608,8 @@ uEnumType* JSType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // internal static extern class JSTypedArray :941
 // {
@@ -1692,15 +1692,15 @@ uArray* JSTypedArray::TryCopyArrayBufferBytes(::JSContextRef ctx, ::JSObjectRef 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // internal extern struct JSValueRef :455
 // {
 static void JSValueRef_build(uType* type)
 {
     ::STRINGS[23] = uString::Const("(&this).IsObject(ctx)");
-    ::STRINGS[24] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno");
+    ::STRINGS[24] = uString::Const("../../../Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno");
     ::STRINGS[25] = uString::Const("str");
     ::TYPES[16] = uObject_typeof()->Array();
     ::TYPES[18] = ::g::Uno::IDisposable_typeof();
@@ -1829,7 +1829,7 @@ void JSValueRef__Unprotect_fn(::JSValueRef* __this, ::JSContextRef* ctx)
 ::JSObjectRef JSValueRef::GetJSObjectRef(::JSValueRef __this, ::JSContextRef ctx)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.JSValueRef", "GetJSObjectRef(Fuse.Scripting.JavaScriptCore.JSContextRef)");
-    ::g::Uno::Diagnostics::Debug::Assert(JSValueRef::IsObject(__this, ctx), ::STRINGS[23/*"(&this).IsO...*/], ::STRINGS[24/*"/Users/eric...*/], 476, uArray::Init<uObject*>(::TYPES[16/*object[]*/], 1, uBox(::g::Fuse::Scripting::JavaScriptCore::JSContextRef_typeof(), ctx)));
+    ::g::Uno::Diagnostics::Debug::Assert(JSValueRef::IsObject(__this, ctx), ::STRINGS[23/*"(&this).IsO...*/], ::STRINGS[24/*"../../../Li...*/], 476, uArray::Init<uObject*>(::TYPES[16/*object[]*/], 1, uBox(::g::Fuse::Scripting::JavaScriptCore::JSContextRef_typeof(), ctx)));
     return (::JSObjectRef)*&__this;
 }
 
@@ -1979,8 +1979,8 @@ bool JSValueRef::op_Inequality(::JSValueRef v1, ::JSValueRef v2)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // internal sealed extern class Object :1003
 // {
@@ -2153,8 +2153,8 @@ Object* Object::New1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::J
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Scripting.JavaScriptCore/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public delegate Fuse.Scripting.JavaScriptCore.JSValueRef JSClassRef.RawCallback(Fuse.Scripting.JavaScriptCore.JSValueRef[] args, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :875
 uDelegateType* JSClassRef__RawCallback_typeof()

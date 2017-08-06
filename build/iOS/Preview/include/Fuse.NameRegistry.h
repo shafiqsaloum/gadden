@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{namespace Uno{namespace UX{struct Selector;}}}
 namespace g{
 namespace Fuse{
 
-// public static class NameRegistry :2101
+// public static class NameRegistry :2098
 // {
 uClassType* NameRegistry_typeof();
 void NameRegistry__AddListener_fn(::g::Uno::UX::Selector* name, uObject* listener);
@@ -21,6 +21,7 @@ void NameRegistry__GetName_fn(::g::Fuse::Node* obj, ::g::Uno::UX::Selector* __re
 void NameRegistry__GetObjectsWithName_fn(::g::Uno::UX::Selector* name, ::g::Uno::Collections::List** __retval);
 void NameRegistry__NotifyNameChanged_fn(::g::Fuse::Node* obj, ::g::Uno::UX::Selector* name);
 void NameRegistry__RemoveListener_fn(uObject* listener);
+void NameRegistry__RemoveListener1_fn(::g::Uno::UX::Selector* name, uObject* listener);
 void NameRegistry__SetName_fn(::g::Fuse::Node* obj, ::g::Uno::UX::Selector* name);
 
 struct NameRegistry : uObject
@@ -38,6 +39,7 @@ struct NameRegistry : uObject
     static ::g::Uno::Collections::List* GetObjectsWithName(::g::Uno::UX::Selector name);
     static void NotifyNameChanged(::g::Fuse::Node* obj, ::g::Uno::UX::Selector name);
     static void RemoveListener(uObject* listener);
+    static void RemoveListener1(::g::Uno::UX::Selector name, uObject* listener);
     static void SetName(::g::Fuse::Node* obj, ::g::Uno::UX::Selector name);
 };
 // }

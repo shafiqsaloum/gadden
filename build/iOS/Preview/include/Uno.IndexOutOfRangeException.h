@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/exceptions/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/exceptions/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace Uno{struct IndexOutOfRangeException;}}
 namespace g{
 namespace Uno{
 
-// public sealed class IndexOutOfRangeException :209
+// public sealed class IndexOutOfRangeException :214
 // {
 ::g::Uno::Exception_type* IndexOutOfRangeException_typeof();
 void IndexOutOfRangeException__ctor_3_fn(IndexOutOfRangeException* __this);

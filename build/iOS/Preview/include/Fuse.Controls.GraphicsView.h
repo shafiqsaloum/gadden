@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -15,9 +15,9 @@
 #include <Fuse.IViewport.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -31,10 +31,10 @@ namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct FrustumViewport;}}
 namespace g{namespace Fuse{struct LayoutParams;}}
 namespace g{namespace Fuse{struct OrthographicFrustum;}}
+namespace g{namespace Fuse{struct Ray;}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Fuse{struct VisualBounds;}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
-namespace g{namespace Uno{namespace Geometry{struct Ray;}}}
 namespace g{namespace Uno{struct Float2;}}
 namespace g{namespace Uno{struct Float3;}}
 namespace g{namespace Uno{struct Float4x4;}}
@@ -43,7 +43,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial class GraphicsView :311
+// public partial class GraphicsView :310
 // {
 struct GraphicsView_type : ::g::Fuse::Controls::Control_type
 {
@@ -88,7 +88,7 @@ void GraphicsView__OnRooted_fn(GraphicsView* __this);
 void GraphicsView__OnUnrooted_fn(GraphicsView* __this);
 void GraphicsView__get_PixelSize_fn(GraphicsView* __this, ::g::Uno::Float2* __retval);
 void GraphicsView__get_PixelsPerPoint_fn(GraphicsView* __this, float* __retval);
-void GraphicsView__PointToWorldRay_fn(GraphicsView* __this, ::g::Uno::Float2* pixelPos, ::g::Uno::Geometry::Ray* __retval);
+void GraphicsView__PointToWorldRay_fn(GraphicsView* __this, ::g::Uno::Float2* pixelPos, ::g::Fuse::Ray* __retval);
 void GraphicsView__get_ProjectionTransform_fn(GraphicsView* __this, ::g::Uno::Float4x4* __retval);
 void GraphicsView__get_ProjectionTransformInverse_fn(GraphicsView* __this, ::g::Uno::Float4x4* __retval);
 void GraphicsView__ScheduleFrame_fn(GraphicsView* __this);
@@ -101,7 +101,7 @@ void GraphicsView__get_ViewRange_fn(GraphicsView* __this, ::g::Uno::Float2* __re
 void GraphicsView__get_ViewTransform_fn(GraphicsView* __this, ::g::Uno::Float4x4* __retval);
 void GraphicsView__get_ViewTransformInverse_fn(GraphicsView* __this, ::g::Uno::Float4x4* __retval);
 void GraphicsView__get_VisualContext_fn(GraphicsView* __this, int* __retval);
-void GraphicsView__WorldToLocalRay_fn(GraphicsView* __this, uObject* world, ::g::Uno::Geometry::Ray* worldRay, ::g::Fuse::Visual* where, ::g::Uno::Geometry::Ray* __retval);
+void GraphicsView__WorldToLocalRay_fn(GraphicsView* __this, uObject* world, ::g::Fuse::Ray* worldRay, ::g::Fuse::Visual* where, ::g::Fuse::Ray* __retval);
 
 struct GraphicsView : ::g::Fuse::Controls::LayoutControl
 {
@@ -124,7 +124,7 @@ struct GraphicsView : ::g::Fuse::Controls::LayoutControl
     void OnEnteringForeground(int s);
     ::g::Uno::Float2 PixelSize();
     float PixelsPerPoint();
-    ::g::Uno::Geometry::Ray PointToWorldRay(::g::Uno::Float2 pixelPos);
+    ::g::Fuse::Ray PointToWorldRay(::g::Uno::Float2 pixelPos);
     ::g::Uno::Float4x4 ProjectionTransform();
     ::g::Uno::Float4x4 ProjectionTransformInverse();
     void ScheduleFrame();
@@ -135,7 +135,7 @@ struct GraphicsView : ::g::Fuse::Controls::LayoutControl
     ::g::Uno::Float2 ViewRange();
     ::g::Uno::Float4x4 ViewTransform();
     ::g::Uno::Float4x4 ViewTransformInverse();
-    ::g::Uno::Geometry::Ray WorldToLocalRay(uObject* world, ::g::Uno::Geometry::Ray worldRay, ::g::Fuse::Visual* where);
+    ::g::Fuse::Ray WorldToLocalRay(uObject* world, ::g::Fuse::Ray worldRay, ::g::Fuse::Visual* where);
     static GraphicsView* New3();
 };
 // }

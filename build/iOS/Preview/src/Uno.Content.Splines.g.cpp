@@ -3,13 +3,13 @@
 
 #include <Uno.Bool.h>
 #include <Uno.Collections.List-1.h>
-#include <Uno.Content.Splines.K-28fac039.h>
-#include <Uno.Content.Splines.K-6d15f6c0.h>
-#include <Uno.Content.Splines.L-6e1d2f5e.h>
-#include <Uno.Content.Splines.L-76ac92a5.h>
-#include <Uno.Content.Splines.L-cb75bac3.h>
-#include <Uno.Content.Splines.L-f2c1b9fd.h>
-#include <Uno.Content.Splines.L-fb88ff21.h>
+#include <Uno.Content.Splines.KeyframedSpline-2.h>
+#include <Uno.Content.Splines.KeyframedSpline-2.Key.h>
+#include <Uno.Content.Splines.LinearSplineFloat.h>
+#include <Uno.Content.Splines.LinearSplineFloat2.h>
+#include <Uno.Content.Splines.LinearSplineFloat3.h>
+#include <Uno.Content.Splines.LinearSplineFloat4.h>
+#include <Uno.Content.Splines.LinearSplineFloat4x4.h>
 #include <Uno.Content.Splines.Spline-1.h>
 #include <Uno.Double.h>
 #include <Uno.Float.h>
@@ -22,8 +22,8 @@ namespace Uno{
 namespace Content{
 namespace Splines{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/splines/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/content/splines/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public struct KeyframedSpline<TValue, TData>.Key :50
 // {
@@ -84,8 +84,8 @@ void KeyframedSpline__Key__New1_fn(uType* __type, double* time, void* value, uTR
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/splines/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/content/splines/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public abstract class KeyframedSpline<TValue, TData> :46
 // {
@@ -505,8 +505,8 @@ float KeyframedSpline::Map(uType* __type, double a, double b, double t)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/splines/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/content/splines/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public sealed class LinearSplineFloat :236
 // {
@@ -600,8 +600,8 @@ LinearSplineFloat* LinearSplineFloat::New2(uArray* keys1)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/splines/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/content/splines/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public sealed class LinearSplineFloat2 :264
 // {
@@ -696,8 +696,8 @@ LinearSplineFloat2* LinearSplineFloat2::New2(uArray* keys1)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/splines/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/content/splines/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public sealed class LinearSplineFloat3 :293
 // {
@@ -792,8 +792,8 @@ LinearSplineFloat3* LinearSplineFloat3::New2(uArray* keys1)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/splines/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/content/splines/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public sealed class LinearSplineFloat4 :322
 // {
@@ -888,8 +888,8 @@ LinearSplineFloat4* LinearSplineFloat4::New2(uArray* keys1)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/splines/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/content/splines/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public sealed class LinearSplineFloat4x4 :351
 // {
@@ -984,8 +984,8 @@ LinearSplineFloat4x4* LinearSplineFloat4x4::New2(uArray* keys1)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/splines/$.uno
-// --------------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/content/splines/$.uno
+// ------------------------------------------------------------------------------------------------------------------
 
 // public abstract class Spline<T> :378
 // {

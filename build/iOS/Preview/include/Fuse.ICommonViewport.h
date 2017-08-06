@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{namespace Uno{struct Float4x4;}}
 namespace g{
 namespace Fuse{
 
-// public abstract interface ICommonViewport :1225
+// public abstract interface ICommonViewport :1224
 // {
 uInterfaceType* ICommonViewport_typeof();
 

@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Uno.Bool.h>
+#include <Uno.Collections.List-1.Enumerator.h>
 #include <Uno.Collections.List-1.h>
-#include <Uno.Collections.List--251bdc7d.h>
 #include <Uno.Delegate.h>
 #include <Uno.Diagnostics.Debug.h>
-#include <Uno.Diagnostics.Debug-5d778620.h>
+#include <Uno.Diagnostics.DebugMessageType.h>
 #include <Uno.Double.h>
 #include <Uno.EventArgs.h>
 #include <Uno.EventHandler.h>
@@ -16,28 +16,28 @@
 #include <Uno.Int.h>
 #include <Uno.Int2.h>
 #include <Uno.Object.h>
-#include <Uno.Platform.Applicat-bf686309.h>
 #include <Uno.Platform.ApplicationState.h>
+#include <Uno.Platform.ApplicationStateTransitionHandler.h>
 #include <Uno.Platform.ClosingEventArgs.h>
 #include <Uno.Platform.CoreApp.h>
 #include <Uno.Platform.Display.h>
 #include <Uno.Platform.Displays.h>
 #include <Uno.Platform.EventModifiers.h>
-#include <Uno.Platform.EventSou-774431f7.h>
-#include <Uno.Platform.EventSou-b16da529.h>
-#include <Uno.Platform.FrameCha-70b333cb.h>
+#include <Uno.Platform.EventSources.HardwareKeys.h>
+#include <Uno.Platform.EventSources.TextSource.h>
+#include <Uno.Platform.FrameChangedEventArgs.h>
 #include <Uno.Platform.iOSDisplay.h>
 #include <Uno.Platform.Key.h>
 #include <Uno.Platform.KeyEventArgs.h>
 #include <Uno.Platform.OSFrame.h>
 #include <Uno.Platform.PointerCursor.h>
 #include <Uno.Platform.PointerType.h>
-#include <Uno.Platform.TextInpu-ce73556b.h>
+#include <Uno.Platform.TextInputEventArgs.h>
 #include <Uno.Platform.TimerEventArgs.h>
 #include <Uno.Platform.WheelDeltaMode.h>
 #include <Uno.Platform.Window.h>
-#include <Uno.Runtime.Implement-ce657879.h>
-#include <Uno.Runtime.Implement-e6156e0b.h>
+#include <Uno.Runtime.Implementation.Internal.Unsafe.h>
+#include <Uno.Runtime.Implementation.PlatformWindowHandle.h>
 #include <Uno.String.h>
 #include <Uno.UInt.h>
 void uInitRtti();
@@ -49,8 +49,8 @@ namespace g{
 namespace Uno{
 namespace Platform{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public enum ApplicationState :13
 uEnumType* ApplicationState_typeof()
@@ -68,8 +68,8 @@ uEnumType* ApplicationState_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public delegate void ApplicationStateTransitionHandler(Uno.Platform.ApplicationState newState) :23
 uDelegateType* ApplicationStateTransitionHandler_typeof()
@@ -83,8 +83,8 @@ uDelegateType* ApplicationStateTransitionHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public sealed class ClosingEventArgs :326
 // {
@@ -165,8 +165,8 @@ ClosingEventArgs* ClosingEventArgs::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public abstract class CoreApp :28
 // {
@@ -179,7 +179,7 @@ static void CoreApp__cctor__fn(uType* __type)
 static void CoreApp_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("EnterBackground() called on terminating application");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno");
+    ::STRINGS[1] = uString::Const("../../../Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno");
     ::STRINGS[2] = uString::Const("EnterBackground() called on uninitialized application");
     ::STRINGS[3] = uString::Const("Uno.Platform.CoreApp.State == Uno.Platform.ApplicationState.Foreground");
     ::STRINGS[4] = uString::Const("Uno.Platform.CoreApp.State == Uno.Platform.ApplicationState.Background");
@@ -500,12 +500,12 @@ void CoreApp::EnterBackground()
     {
         case -1:
         {
-            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[0/*"EnterBackgr...*/], 1, ::STRINGS[1/*"/Users/eric...*/], 198);
+            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[0/*"EnterBackgr...*/], 1, ::STRINGS[1/*"../../../Li...*/], 198);
             return;
         }
         case 0:
         {
-            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[2/*"EnterBackgr...*/], 1, ::STRINGS[1/*"/Users/eric...*/], 202);
+            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[2/*"EnterBackgr...*/], 1, ::STRINGS[1/*"../../../Li...*/], 202);
             return;
         }
         case 1:
@@ -520,7 +520,7 @@ void CoreApp::EnterBackground()
     }
 
     assert9 = CoreApp::State();
-    ::g::Uno::Diagnostics::Debug::Assert(assert9 == 2, ::STRINGS[3/*"Uno.Platfor...*/], ::STRINGS[1/*"/Users/eric...*/], 216, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert9), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 2)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert9 == 2, ::STRINGS[3/*"Uno.Platfor...*/], ::STRINGS[1/*"../../../Li...*/], 216, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert9), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 2)));
     CoreApp::State(1);
     uDelegate* handler = CoreApp::EnteringBackground1();
 
@@ -528,7 +528,7 @@ void CoreApp::EnterBackground()
         uPtr(handler)->InvokeVoid(uCRef<int>(CoreApp::State()));
 
     assert10 = CoreApp::State();
-    ::g::Uno::Diagnostics::Debug::Assert(assert10 == 1, ::STRINGS[4/*"Uno.Platfor...*/], ::STRINGS[1/*"/Users/eric...*/], 224, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert10), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 1)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert10 == 1, ::STRINGS[4/*"Uno.Platfor...*/], ::STRINGS[1/*"../../../Li...*/], 224, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert10), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 1)));
 }
 
 // internal static void EnterForeground() [static] :89
@@ -543,12 +543,12 @@ void CoreApp::EnterForeground()
     {
         case -1:
         {
-            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[5/*"EnterForegr...*/], 1, ::STRINGS[1/*"/Users/eric...*/], 94);
+            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[5/*"EnterForegr...*/], 1, ::STRINGS[1/*"../../../Li...*/], 94);
             return;
         }
         case 0:
         {
-            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[6/*"EnterForegr...*/], 1, ::STRINGS[1/*"/Users/eric...*/], 98);
+            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[6/*"EnterForegr...*/], 1, ::STRINGS[1/*"../../../Li...*/], 98);
             return;
         }
         case 1:
@@ -559,7 +559,7 @@ void CoreApp::EnterForeground()
     }
 
     assert3 = CoreApp::State();
-    ::g::Uno::Diagnostics::Debug::Assert(assert3 == 1, ::STRINGS[4/*"Uno.Platfor...*/], ::STRINGS[1/*"/Users/eric...*/], 110, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert3), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 1)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert3 == 1, ::STRINGS[4/*"Uno.Platfor...*/], ::STRINGS[1/*"../../../Li...*/], 110, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert3), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 1)));
     CoreApp::State(2);
     uDelegate* handler = CoreApp::EnteringForeground1();
 
@@ -567,7 +567,7 @@ void CoreApp::EnterForeground()
         uPtr(handler)->InvokeVoid(uCRef<int>(CoreApp::State()));
 
     assert4 = CoreApp::State();
-    ::g::Uno::Diagnostics::Debug::Assert(assert4 == 2, ::STRINGS[3/*"Uno.Platfor...*/], ::STRINGS[1/*"/Users/eric...*/], 118, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert4), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 2)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert4 == 2, ::STRINGS[3/*"Uno.Platfor...*/], ::STRINGS[1/*"../../../Li...*/], 118, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert4), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 2)));
 }
 
 // internal static void EnterInteractive() [static] :122
@@ -582,12 +582,12 @@ void CoreApp::EnterInteractive()
     {
         case -1:
         {
-            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[7/*"EnterIntera...*/], 1, ::STRINGS[1/*"/Users/eric...*/], 130);
+            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[7/*"EnterIntera...*/], 1, ::STRINGS[1/*"../../../Li...*/], 130);
             return;
         }
         case 0:
         {
-            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[8/*"EnterIntera...*/], 1, ::STRINGS[1/*"/Users/eric...*/], 134);
+            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[8/*"EnterIntera...*/], 1, ::STRINGS[1/*"../../../Li...*/], 134);
             return;
         }
         case 1:
@@ -602,7 +602,7 @@ void CoreApp::EnterInteractive()
     }
 
     assert5 = CoreApp::State();
-    ::g::Uno::Diagnostics::Debug::Assert(assert5 == 2, ::STRINGS[3/*"Uno.Platfor...*/], ::STRINGS[1/*"/Users/eric...*/], 148, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert5), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 2)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert5 == 2, ::STRINGS[3/*"Uno.Platfor...*/], ::STRINGS[1/*"../../../Li...*/], 148, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert5), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 2)));
     CoreApp::State(3);
     uDelegate* handler = CoreApp::EnteringInteractive1();
 
@@ -610,7 +610,7 @@ void CoreApp::EnterInteractive()
         uPtr(handler)->InvokeVoid(uCRef<int>(CoreApp::State()));
 
     assert6 = CoreApp::State();
-    ::g::Uno::Diagnostics::Debug::Assert(assert6 == 3, ::STRINGS[9/*"Uno.Platfor...*/], ::STRINGS[1/*"/Users/eric...*/], 156, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert6), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 3)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert6 == 3, ::STRINGS[9/*"Uno.Platfor...*/], ::STRINGS[1/*"../../../Li...*/], 156, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert6), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 3)));
 }
 
 // internal static void ExitInteractive() [static] :159
@@ -625,12 +625,12 @@ void CoreApp::ExitInteractive()
     {
         case -1:
         {
-            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[10/*"ExitInterac...*/], 1, ::STRINGS[1/*"/Users/eric...*/], 167);
+            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[10/*"ExitInterac...*/], 1, ::STRINGS[1/*"../../../Li...*/], 167);
             return;
         }
         case 0:
         {
-            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[11/*"ExitInterac...*/], 1, ::STRINGS[1/*"/Users/eric...*/], 171);
+            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[11/*"ExitInterac...*/], 1, ::STRINGS[1/*"../../../Li...*/], 171);
             return;
         }
         case 1:
@@ -641,7 +641,7 @@ void CoreApp::ExitInteractive()
     }
 
     assert7 = CoreApp::State();
-    ::g::Uno::Diagnostics::Debug::Assert(assert7 == 3, ::STRINGS[9/*"Uno.Platfor...*/], ::STRINGS[1/*"/Users/eric...*/], 182, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert7), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 3)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert7 == 3, ::STRINGS[9/*"Uno.Platfor...*/], ::STRINGS[1/*"../../../Li...*/], 182, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert7), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 3)));
     CoreApp::State(2);
     uDelegate* handler = CoreApp::ExitedInteractive1();
 
@@ -649,7 +649,7 @@ void CoreApp::ExitInteractive()
         uPtr(handler)->InvokeVoid(uCRef<int>(CoreApp::State()));
 
     assert8 = CoreApp::State();
-    ::g::Uno::Diagnostics::Debug::Assert(assert8 == 2, ::STRINGS[3/*"Uno.Platfor...*/], ::STRINGS[1/*"/Users/eric...*/], 190, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert8), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 2)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert8 == 2, ::STRINGS[3/*"Uno.Platfor...*/], ::STRINGS[1/*"../../../Li...*/], 190, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert8), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 2)));
 }
 
 // internal static void OnReceivedLowMemoryWarning() [static] :262
@@ -685,7 +685,7 @@ void CoreApp::Start()
 
     uInitRtti();
     assert1 = CoreApp::State();
-    ::g::Uno::Diagnostics::Debug::Assert(assert1 == 0, ::STRINGS[12/*"Uno.Platfor...*/], ::STRINGS[1/*"/Users/eric...*/], 76, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert1), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 0)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert1 == 0, ::STRINGS[12/*"Uno.Platfor...*/], ::STRINGS[1/*"../../../Li...*/], 76, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert1), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 0)));
     uStartApp();
     CoreApp::State(1);
     uDelegate* handler = CoreApp::Started1();
@@ -694,7 +694,7 @@ void CoreApp::Start()
         uPtr(handler)->InvokeVoid(uCRef<int>(CoreApp::State()));
 
     assert2 = CoreApp::State();
-    ::g::Uno::Diagnostics::Debug::Assert(assert2 == 1, ::STRINGS[4/*"Uno.Platfor...*/], ::STRINGS[1/*"/Users/eric...*/], 86, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert2), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 1)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert2 == 1, ::STRINGS[4/*"Uno.Platfor...*/], ::STRINGS[1/*"../../../Li...*/], 86, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert2), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 1)));
 }
 
 // internal static void Terminate() [static] :227
@@ -721,7 +721,7 @@ void CoreApp::Terminate()
     }
 
     assert11 = CoreApp::State();
-    ::g::Uno::Diagnostics::Debug::Assert(assert11 == 1, ::STRINGS[4/*"Uno.Platfor...*/], ::STRINGS[1/*"/Users/eric...*/], 244, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert11), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 1)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert11 == 1, ::STRINGS[4/*"Uno.Platfor...*/], ::STRINGS[1/*"../../../Li...*/], 244, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert11), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), 1)));
     CoreApp::State(-1);
     uDelegate* handler = CoreApp::Terminating1();
 
@@ -729,7 +729,7 @@ void CoreApp::Terminate()
         uPtr(handler)->InvokeVoid(uCRef<int>(CoreApp::State()));
 
     assert12 = CoreApp::State();
-    ::g::Uno::Diagnostics::Debug::Assert(assert12 == -1, ::STRINGS[13/*"Uno.Platfor...*/], ::STRINGS[1/*"/Users/eric...*/], 252, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert12), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), -1)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert12 == -1, ::STRINGS[13/*"Uno.Platfor...*/], ::STRINGS[1/*"../../../Li...*/], 252, uArray::Init<uObject*>(::TYPES[2/*object[]*/], 2, uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), assert12), uBox<int>(::g::Uno::Platform::ApplicationState_typeof(), -1)));
     CoreApp::State(0);
 }
 
@@ -907,8 +907,8 @@ void CoreApp::remove_Terminating(uDelegate* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public abstract class Display :1066
 // {
@@ -1095,8 +1095,8 @@ void Display::TicksPerSecond(uint32_t value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public static class Displays :1022
 // {
@@ -1224,8 +1224,8 @@ void Displays::All(::g::Uno::Collections::List* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public enum EventModifiers :482
 uEnumType* EventModifiers_typeof()
@@ -1247,8 +1247,8 @@ uEnumType* EventModifiers_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public sealed class FrameChangedEventArgs :501
 // {
@@ -1328,8 +1328,8 @@ FrameChangedEventArgs* FrameChangedEventArgs::New2(::g::Uno::Rect newFrame)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public enum Key :340
 uEnumType* Key_typeof()
@@ -1424,8 +1424,8 @@ uEnumType* Key_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public sealed class KeyEventArgs :519
 // {
@@ -1637,8 +1637,8 @@ KeyEventArgs* KeyEventArgs::New2(int key, int modifiers, ::g::Uno::Platform::OSF
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public class OSFrame :781
 // {
@@ -1721,8 +1721,8 @@ OSFrame* OSFrame::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public enum PointerCursor :442
 uEnumType* PointerCursor_typeof()
@@ -1752,8 +1752,8 @@ uEnumType* PointerCursor_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public enum PointerType :464
 uEnumType* PointerType_typeof()
@@ -1768,8 +1768,8 @@ uEnumType* PointerType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public sealed class TextInputEventArgs :691
 // {
@@ -1848,8 +1848,8 @@ void TextInputEventArgs::Text(uString* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public sealed class TimerEventArgs :757
 // {
@@ -1983,8 +1983,8 @@ TimerEventArgs* TimerEventArgs::New2(double lastTickTimestamp, double tickDurati
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public enum WheelDeltaMode :578
 uEnumType* WheelDeltaMode_typeof()
@@ -2000,8 +2000,8 @@ uEnumType* WheelDeltaMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public sealed extern class Window :812
 // {

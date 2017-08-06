@@ -4,27 +4,27 @@
 #include <Fuse.Animations.Easing.h>
 #include <Fuse.Diagnostics.h>
 #include <Fuse.Marshal.h>
-#include <Fuse.Motion.DelayFunc-f2d2023d.h>
 #include <Fuse.Motion.DelayFunction.h>
-#include <Fuse.Motion.Destinati-bd678751.h>
+#include <Fuse.Motion.DelayFunction.SetClosure.h>
+#include <Fuse.Motion.DestinationMotion-1.h>
 #include <Fuse.Motion.MotionConfig.h>
-#include <Fuse.Motion.MotionDes-5490bd7d.h>
+#include <Fuse.Motion.MotionDestinationType.h>
 #include <Fuse.Motion.MotionUnit.h>
 #include <Fuse.Motion.NavigationMotion.h>
 #include <Fuse.Motion.OverflowType.h>
 #include <Fuse.Motion.ScrollViewMotion.h>
-#include <Fuse.Motion.Simulatio-17bdd43e.h>
-#include <Fuse.Motion.Simulatio-1b299d00.h>
-#include <Fuse.Motion.Simulatio-2e0ddcfb.h>
-#include <Fuse.Motion.Simulatio-73b2da14.h>
-#include <Fuse.Motion.Simulatio-8063728b.h>
-#include <Fuse.Motion.Simulatio-8291fa3c.h>
-#include <Fuse.Motion.Simulatio-871f3635.h>
-#include <Fuse.Motion.Simulatio-b08483ab.h>
-#include <Fuse.Motion.Simulatio-b08eb1c5.h>
-#include <Fuse.Motion.Simulatio-ca33dcbb.h>
-#include <Fuse.Motion.SpringFun-9f762851.h>
+#include <Fuse.Motion.Simulation.AdapterMultiplier-1.h>
+#include <Fuse.Motion.Simulation.AngularAdapter-1.h>
+#include <Fuse.Motion.Simulation.BasicBoundedRegion2D.h>
+#include <Fuse.Motion.Simulation.BoundedRegion2D.h>
+#include <Fuse.Motion.Simulation.DestinationSimulation-1.h>
+#include <Fuse.Motion.Simulation.EasingMotion-1.h>
+#include <Fuse.Motion.Simulation.ElasticForce-1.h>
+#include <Fuse.Motion.Simulation.Friction-1.h>
+#include <Fuse.Motion.Simulation.MotionSimulation-1.h>
+#include <Fuse.Motion.Simulation.SmoothSnap-1.h>
 #include <Fuse.Motion.SpringFunction.h>
+#include <Fuse.Motion.SpringFunction.Subscription.h>
 #include <Fuse.Reactive.Expression.h>
 #include <Fuse.Reactive.IContext.h>
 #include <Fuse.Reactive.IExpression.h>
@@ -51,8 +51,8 @@ namespace g{
 namespace Fuse{
 namespace Motion{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------
 
 // public sealed class DelayFunction :520
 // {
@@ -118,15 +118,15 @@ DelayFunction* DelayFunction::New1(::g::Fuse::Reactive::Expression* value, ::g::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------
 
 // public sealed class DestinationMotion<T> :246
 // {
 static void DestinationMotion_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("Invalidate simulation type: ");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/$.uno");
     ::STRINGS[2] = uString::Const("Create");
     ::TYPES[1] = ::g::Fuse::Motion::Simulation::EasingMotion_typeof();
     ::TYPES[2] = ::g::Fuse::Motion::Simulation::ElasticForce_typeof();
@@ -342,7 +342,7 @@ uObject* DestinationMotion::Create()
         }
         default:
         {
-            ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition1(::STRINGS[0/*"Invalidate ...*/], uBox<int>(::g::Fuse::Motion::MotionDestinationType_typeof(), Type())), this, ::STRINGS[1/*"/Users/eric...*/], 401, ::STRINGS[2/*"Create"*/], NULL);
+            ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition1(::STRINGS[0/*"Invalidate ...*/], uBox<int>(::g::Fuse::Motion::MotionDestinationType_typeof(), Type())), this, ::STRINGS[1/*"/Users/star...*/], 401, ::STRINGS[2/*"Create"*/], NULL);
             dest = (uObject*)((::g::Fuse::Motion::Simulation::ElasticForce*)::g::Fuse::Motion::Simulation::ElasticForce::CreateNormalized(__types[1]));
             break;
         }
@@ -447,8 +447,8 @@ DestinationMotion* DestinationMotion::New1(uType* __type)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------
 
 // public class MotionConfig :18
 // {
@@ -948,8 +948,8 @@ MotionConfig* MotionConfig::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------
 
 // public enum MotionDestinationType :573
 uEnumType* MotionDestinationType_typeof()
@@ -965,8 +965,8 @@ uEnumType* MotionDestinationType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------
 
 // public enum MotionUnit :586
 uEnumType* MotionUnit_typeof()
@@ -983,8 +983,8 @@ uEnumType* MotionUnit_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------
 
 // public sealed class NavigationMotion :194
 // {
@@ -1044,8 +1044,8 @@ NavigationMotion* NavigationMotion::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------
 
 // public enum OverflowType :560
 uEnumType* OverflowType_typeof()
@@ -1061,8 +1061,8 @@ uEnumType* OverflowType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------
 
 // public sealed class ScrollViewMotion :213
 // {
@@ -1122,8 +1122,8 @@ ScrollViewMotion* ScrollViewMotion::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------
 
 // private sealed class DelayFunction.SetClosure :530
 // {
@@ -1192,8 +1192,8 @@ DelayFunction__SetClosure* DelayFunction__SetClosure::New1(::g::Fuse::Motion::De
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------
 
 // public sealed class SpringFunction :427
 // {
@@ -1285,8 +1285,8 @@ SpringFunction* SpringFunction::New1(::g::Fuse::Reactive::Expression* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.1.1/$.uno
+// -------------------------------------------------------------------------------------------
 
 // private sealed class SpringFunction.Subscription :443
 // {

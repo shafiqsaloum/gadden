@@ -9,19 +9,19 @@
 #include <Fuse.Reactive.ISubscription.h>
 #include <Fuse.Scripting.Context.h>
 #include <Fuse.Scripting.ExecutionThread.h>
-#include <Fuse.Scripting.IEvent-434826af.h>
+#include <Fuse.Scripting.IEventSerializer.h>
 #include <Fuse.Scripting.ScriptClass.h>
 #include <Fuse.Scripting.ScriptMember.h>
 #include <Fuse.Scripting.ScriptMethod-1.h>
 #include <Fuse.Selection.Deselected.h>
-#include <Fuse.Selection.Select-30798591.h>
-#include <Fuse.Selection.Select-383213fc.h>
-#include <Fuse.Selection.Select-94349afa.h>
 #include <Fuse.Selection.Selectable.h>
 #include <Fuse.Selection.Selected.h>
 #include <Fuse.Selection.Selection.h>
 #include <Fuse.Selection.Selection.How.h>
+#include <Fuse.Selection.Selection.ListWrapper.h>
 #include <Fuse.Selection.SelectionEvent.h>
+#include <Fuse.Selection.SelectionEventArgs.h>
+#include <Fuse.Selection.SelectionReplace.h>
 #include <Fuse.Selection.SelectMode.h>
 #include <Fuse.Selection.ToggleSelection.h>
 #include <Fuse.Selection.WhileSelected.h>
@@ -49,8 +49,8 @@ namespace g{
 namespace Fuse{
 namespace Selection{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class Deselected :283
 // {
@@ -140,8 +140,8 @@ Deselected* Deselected::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // private enum Selection.How :748
 uEnumType* Selection__How_typeof()
@@ -156,8 +156,8 @@ uEnumType* Selection__How_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // private sealed class Selection.ListWrapper :754
 // {
@@ -240,8 +240,8 @@ Selection__ListWrapper* Selection__ListWrapper::New1(::g::Uno::Collections::List
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public partial sealed class Selectable :11
 // {
@@ -259,7 +259,7 @@ static void Selectable_build(uType* type)
     ::STRINGS[2] = uString::Const("remove");
     ::STRINGS[3] = uString::Const("toggle");
     ::STRINGS[4] = uString::Const("add requires 0 arguments");
-    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno");
+    ::STRINGS[5] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno");
     ::STRINGS[6] = uString::Const("No selection, perhaps not rooted");
     ::STRINGS[7] = uString::Const("Add");
     ::STRINGS[8] = uString::Const("Unable to locate `Selection`");
@@ -361,7 +361,7 @@ void Selectable__OnRooted_fn(Selectable* __this)
     __this->_selection = ::g::Fuse::Selection::Selection::TryFindSelection(__this->Parent());
 
     if (__this->_selection == NULL)
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[8/*"Unable to l...*/], __this, ::STRINGS[5/*"/Users/eric...*/], 116, ::STRINGS[9/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[8/*"Unable to l...*/], __this, ::STRINGS[5/*"/Users/star...*/], 116, ::STRINGS[9/*"OnRooted"*/], NULL);
 }
 
 // protected override sealed void OnUnrooted() :119
@@ -422,7 +422,7 @@ void Selectable::Add1()
 
     if (_selection == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[6/*"No selectio...*/], this, ::STRINGS[5/*"/Users/eric...*/], 157, ::STRINGS[7/*"Add"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[6/*"No selectio...*/], this, ::STRINGS[5/*"/Users/star...*/], 157, ::STRINGS[7/*"Add"*/], NULL);
         return;
     }
 
@@ -436,7 +436,7 @@ void Selectable::Remove1()
 
     if (_selection == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[6/*"No selectio...*/], this, ::STRINGS[5/*"/Users/eric...*/], 171, ::STRINGS[11/*"Remove"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[6/*"No selectio...*/], this, ::STRINGS[5/*"/Users/star...*/], 171, ::STRINGS[11/*"Remove"*/], NULL);
         return;
     }
 
@@ -450,7 +450,7 @@ void Selectable::Toggle()
 
     if (_selection == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[6/*"No selectio...*/], this, ::STRINGS[5/*"/Users/eric...*/], 185, ::STRINGS[13/*"Toggle"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[6/*"No selectio...*/], this, ::STRINGS[5/*"/Users/star...*/], 185, ::STRINGS[13/*"Toggle"*/], NULL);
         return;
     }
 
@@ -488,7 +488,7 @@ void Selectable::add(::g::Fuse::Scripting::Context* c, Selectable* s, uArray* ar
 
     if (uPtr(args)->Length() != 0)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[4/*"add require...*/], s, ::STRINGS[5/*"/Users/eric...*/], 30, ::STRINGS[1/*"add"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[4/*"add require...*/], s, ::STRINGS[5/*"/Users/star...*/], 30, ::STRINGS[1/*"add"*/], NULL);
         return;
     }
 
@@ -511,7 +511,7 @@ void Selectable::remove(::g::Fuse::Scripting::Context* c, Selectable* s, uArray*
 
     if (uPtr(args)->Length() != 0)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[10/*"remove requ...*/], s, ::STRINGS[5/*"/Users/eric...*/], 48, ::STRINGS[2/*"remove"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[10/*"remove requ...*/], s, ::STRINGS[5/*"/Users/star...*/], 48, ::STRINGS[2/*"remove"*/], NULL);
         return;
     }
 
@@ -526,7 +526,7 @@ void Selectable::toggle(::g::Fuse::Scripting::Context* c, Selectable* s, uArray*
 
     if (uPtr(args)->Length() != 0)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[12/*"toggle requ...*/], s, ::STRINGS[5/*"/Users/eric...*/], 64, ::STRINGS[3/*"toggle"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[12/*"toggle requ...*/], s, ::STRINGS[5/*"/Users/star...*/], 64, ::STRINGS[3/*"toggle"*/], NULL);
         return;
     }
 
@@ -534,8 +534,8 @@ void Selectable::toggle(::g::Fuse::Scripting::Context* c, Selectable* s, uArray*
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class Selected :272
 // {
@@ -625,8 +625,8 @@ Selected* Selected::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public partial sealed class Selection :302
 // {
@@ -647,7 +647,7 @@ static void Selection_build(uType* type)
     ::STRINGS[16] = uString::Const("forceRemove");
     ::STRINGS[3] = uString::Const("toggle");
     ::STRINGS[17] = uString::Const("add requires 1 argument, the value of the item");
-    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno");
+    ::STRINGS[5] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno");
     ::STRINGS[18] = uString::Const("clear requires 0 arguments");
     ::STRINGS[19] = uString::Const("forceAdd requires 1 argument, the value of the item");
     ::STRINGS[20] = uString::Const("forceRemove requires 1 argument, the value of the item");
@@ -867,7 +867,7 @@ void Selection__FuseReactiveIObserverOnFailed_fn(Selection* __this, uString* mes
 {
     uStackFrame __("Fuse.Selection.Selection", "Fuse.Reactive.IObserver.OnFailed(string)");
     ::g::Fuse::Reactive::IObserver::OnClear(uInterface(uPtr(uAs<uObject*>(__this, ::TYPES[9/*Fuse.Reactive.IObserver*/])), ::TYPES[9/*Fuse.Reactive.IObserver*/]));
-    ::g::Fuse::Diagnostics::InternalError(message, __this, ::STRINGS[5/*"/Users/eric...*/], 901, ::STRINGS[21/*"Fuse.Reacti...*/]);
+    ::g::Fuse::Diagnostics::InternalError(message, __this, ::STRINGS[5/*"/Users/star...*/], 901, ::STRINGS[21/*"Fuse.Reacti...*/]);
 }
 
 // private void Fuse.Reactive.IObserver.OnInsertAt(int index, object value) :887
@@ -879,7 +879,7 @@ void Selection__FuseReactiveIObserverOnInsertAt_fn(Selection* __this, int* index
 
     if ((index_ < 0) || (index_ > uPtr(__this->_values)->Count()))
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[22/*"removing in...*/], __this, ::STRINGS[5/*"/Users/eric...*/], 891, ::STRINGS[23/*"Fuse.Reacti...*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[22/*"removing in...*/], __this, ::STRINGS[5/*"/Users/star...*/], 891, ::STRINGS[23/*"Fuse.Reacti...*/]);
         return;
     }
 
@@ -909,7 +909,7 @@ void Selection__FuseReactiveIObserverOnNewAt_fn(Selection* __this, int* index, u
 
     if ((index_ < 0) || (index_ >= uPtr(__this->_values)->Count()))
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[22/*"removing in...*/], __this, ::STRINGS[5/*"/Users/eric...*/], 856, ::STRINGS[24/*"Fuse.Reacti...*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[22/*"removing in...*/], __this, ::STRINGS[5/*"/Users/star...*/], 856, ::STRINGS[24/*"Fuse.Reacti...*/]);
         return;
     }
 
@@ -925,7 +925,7 @@ void Selection__FuseReactiveIObserverOnRemoveAt_fn(Selection* __this, int* index
 
     if ((index_ < 0) || (index_ >= uPtr(__this->_values)->Count()))
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[22/*"removing in...*/], __this, ::STRINGS[5/*"/Users/eric...*/], 880, ::STRINGS[25/*"Fuse.Reacti...*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[22/*"removing in...*/], __this, ::STRINGS[5/*"/Users/star...*/], 880, ::STRINGS[25/*"Fuse.Reacti...*/]);
         return;
     }
 
@@ -1260,7 +1260,7 @@ void Selection::MaxCount(int value)
 
     if (value < 1)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[28/*"MaxCount mu...*/], this, ::STRINGS[5/*"/Users/eric...*/], 553, ::STRINGS[29/*"set_MaxCount"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[28/*"MaxCount mu...*/], this, ::STRINGS[5/*"/Users/star...*/], 553, ::STRINGS[29/*"set_MaxCount"*/], NULL);
         return;
     }
 
@@ -1453,7 +1453,7 @@ void Selection::Values(uObject* value)
 
     if ((value != NULL) && (q == NULL))
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[31/*"`Values` mu...*/], this, ::STRINGS[5/*"/Users/eric...*/], 807, ::STRINGS[32/*"set_Values"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[31/*"`Values` mu...*/], this, ::STRINGS[5/*"/Users/star...*/], 807, ::STRINGS[32/*"set_Values"*/], NULL);
         return;
     }
 
@@ -1473,7 +1473,7 @@ void Selection::add(::g::Fuse::Scripting::Context* c, Selection* s, uArray* args
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[17/*"add require...*/], s, ::STRINGS[5/*"/Users/eric...*/], 342, ::STRINGS[1/*"add"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[17/*"add require...*/], s, ::STRINGS[5/*"/Users/star...*/], 342, ::STRINGS[1/*"add"*/], NULL);
         return;
     }
 
@@ -1488,7 +1488,7 @@ void Selection::clear(::g::Fuse::Scripting::Context* c, Selection* s, uArray* ar
 
     if (uPtr(args)->Length() != 0)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[18/*"clear requi...*/], s, ::STRINGS[5/*"/Users/eric...*/], 324, ::STRINGS[14/*"clear"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[18/*"clear requi...*/], s, ::STRINGS[5/*"/Users/star...*/], 324, ::STRINGS[14/*"clear"*/], NULL);
         return;
     }
 
@@ -1504,7 +1504,7 @@ void Selection::forceAdd(::g::Fuse::Scripting::Context* c, Selection* s, uArray*
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[19/*"forceAdd re...*/], s, ::STRINGS[5/*"/Users/eric...*/], 374, ::STRINGS[15/*"forceAdd"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[19/*"forceAdd re...*/], s, ::STRINGS[5/*"/Users/star...*/], 374, ::STRINGS[15/*"forceAdd"*/], NULL);
         return;
     }
 
@@ -1520,7 +1520,7 @@ void Selection::forceRemove(::g::Fuse::Scripting::Context* c, Selection* s, uArr
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[20/*"forceRemove...*/], s, ::STRINGS[5/*"/Users/eric...*/], 388, ::STRINGS[16/*"forceRemove"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[20/*"forceRemove...*/], s, ::STRINGS[5/*"/Users/star...*/], 388, ::STRINGS[16/*"forceRemove"*/], NULL);
         return;
     }
 
@@ -1544,7 +1544,7 @@ void Selection::remove(::g::Fuse::Scripting::Context* c, Selection* s, uArray* a
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[26/*"remove requ...*/], s, ::STRINGS[5/*"/Users/eric...*/], 360, ::STRINGS[2/*"remove"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[26/*"remove requ...*/], s, ::STRINGS[5/*"/Users/star...*/], 360, ::STRINGS[2/*"remove"*/], NULL);
         return;
     }
 
@@ -1560,7 +1560,7 @@ void Selection::toggle(::g::Fuse::Scripting::Context* c, Selection* s, uArray* a
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[27/*"toggle requ...*/], s, ::STRINGS[5/*"/Users/eric...*/], 404, ::STRINGS[3/*"toggle"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[27/*"toggle requ...*/], s, ::STRINGS[5/*"/Users/star...*/], 404, ::STRINGS[3/*"toggle"*/], NULL);
         return;
     }
 
@@ -1623,15 +1623,15 @@ Selection* Selection::TryFindSelection(::g::Fuse::Node* v)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public abstract class SelectionEvent :222
 // {
 static void SelectionEvent_build(uType* type)
 {
     ::STRINGS[33] = uString::Const("Unable to locate a `Selectable` and `Selection`");
-    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno");
+    ::STRINGS[5] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno");
     ::STRINGS[9] = uString::Const("OnRooted");
     ::TYPES[16] = ::g::Uno::EventHandler_typeof();
     type->SetBase(::g::Fuse::Triggers::PulseTrigger_typeof()->MakeType(::g::Fuse::Selection::SelectionEventArgs_typeof(), NULL));
@@ -1700,7 +1700,7 @@ void SelectionEvent__OnRooted_fn(SelectionEvent* __this)
 
     if (!::g::Fuse::Selection::Selection::TryFindSelectable(__this->Parent(), &__this->_selectable, &__this->_selection))
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[33/*"Unable to l...*/], __this, ::STRINGS[5/*"/Users/eric...*/], 237, ::STRINGS[9/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[33/*"Unable to l...*/], __this, ::STRINGS[5/*"/Users/star...*/], 237, ::STRINGS[9/*"OnRooted"*/], NULL);
         return;
     }
 
@@ -1749,8 +1749,8 @@ void SelectionEvent::OnSelectionChanged(uObject* s, uObject* args)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class SelectionEventArgs :204
 // {
@@ -1843,8 +1843,8 @@ SelectionEventArgs* SelectionEventArgs::New2(uString* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public enum SelectionReplace :424
 uEnumType* SelectionReplace_typeof()
@@ -1860,8 +1860,8 @@ uEnumType* SelectionReplace_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public enum SelectMode :927
 uEnumType* SelectMode_typeof()
@@ -1877,15 +1877,15 @@ uEnumType* SelectMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class ToggleSelection :945
 // {
 static void ToggleSelection_build(uType* type)
 {
     ::STRINGS[35] = uString::Const("Unable to locate Selectable");
-    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno");
+    ::STRINGS[5] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno");
     ::STRINGS[36] = uString::Const("Perform");
     type->SetFields(9,
         ::g::Fuse::Selection::SelectMode_typeof(), offsetof(::g::Fuse::Selection::ToggleSelection, _mode), 0);
@@ -1945,7 +1945,7 @@ void ToggleSelection__Perform_fn(ToggleSelection* __this, ::g::Fuse::Node* targe
 
     if (!::g::Fuse::Selection::Selection::TryFindSelectable(target, &selectable, &selection))
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[35/*"Unable to l...*/], __this, ::STRINGS[5/*"/Users/eric...*/], 965, ::STRINGS[36/*"Perform"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[35/*"Unable to l...*/], __this, ::STRINGS[5/*"/Users/star...*/], 965, ::STRINGS[36/*"Perform"*/], NULL);
         return;
     }
 
@@ -1996,15 +1996,15 @@ ToggleSelection* ToggleSelection::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class WhileSelected :1003
 // {
 static void WhileSelected_build(uType* type)
 {
     ::STRINGS[33] = uString::Const("Unable to locate a `Selectable` and `Selection`");
-    ::STRINGS[5] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno");
+    ::STRINGS[5] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.1.1/$.uno");
     ::STRINGS[9] = uString::Const("OnRooted");
     ::TYPES[16] = ::g::Uno::EventHandler_typeof();
     type->SetInterfaces(
@@ -2082,7 +2082,7 @@ void WhileSelected__OnRooted_fn(WhileSelected* __this)
 
     if (!::g::Fuse::Selection::Selection::TryFindSelectable(__this->Parent(), &__this->_selectable, &__this->_selection))
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[33/*"Unable to l...*/], __this, ::STRINGS[5/*"/Users/eric...*/], 1014, ::STRINGS[9/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[33/*"Unable to l...*/], __this, ::STRINGS[5/*"/Users/star...*/], 1014, ::STRINGS[9/*"OnRooted"*/], NULL);
         return;
     }
 

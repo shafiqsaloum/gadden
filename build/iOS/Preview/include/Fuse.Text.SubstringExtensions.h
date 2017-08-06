@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Text{
 
-// internal static class SubstringExtensions :2045
+// internal static class SubstringExtensions :2044
 // {
 uClassType* SubstringExtensions_typeof();
 void SubstringExtensions__CharStart_fn(::g::Fuse::Text::Substring* s, int* i, int* __retval);

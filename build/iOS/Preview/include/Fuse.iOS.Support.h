@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/1.0.5/$.uno'.
+// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.iOS/1.1.1/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -16,7 +16,7 @@ namespace g{
 namespace Fuse{
 namespace iOS{
 
-// public static extern class Support :585
+// public static extern class Support :515
 // {
 uClassType* Support_typeof();
 void Support__CGPointFromUnoFloat2_fn(::g::Uno::Float2* unoPoint, float* scale, CGPoint* __retval);
