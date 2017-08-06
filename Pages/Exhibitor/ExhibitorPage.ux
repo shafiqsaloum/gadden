@@ -5,6 +5,7 @@ TODO:
   * Add filter functions and create the vue
   * Fetch the image to exhibitor details page when it's included in the API
   * Save exhibitors locally for the user (is not in need of inlogged user)
+  *
  -->
 
 <Page>
