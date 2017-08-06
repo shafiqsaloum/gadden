@@ -64,13 +64,6 @@ TODO:
             <Panel Margin="20">
               <StackPanel>
                 <Paragraph Value="{text}" />
-                <Paragraph>
-                  * Function for the search input
-                  * Add filter button to top
-                  * Add filter functions and create the vue
-                  * Fetch the image to exhibitor details page when it's included in the API
-                  * Save exhibitors locally for the user (is not in need of inlogged user)
-                </Paragraph>
               </StackPanel>
             </Panel>
 
