@@ -8,10 +8,8 @@
 #include <Fuse.Controls.Panel.h>
 #include <Fuse.Controls.Text.h>
 #include <Fuse.Controls.TextControl.h>
-#include <Fuse.Controls.TextWrapping.h>
 #include <Fuse.Elements.Alignment.h>
 #include <Fuse.Elements.Element.h>
-#include <Fuse.Font.h>
 #include <Fuse.Node.h>
 #include <Fuse.Reactive.BindingMode.h>
 #include <Fuse.Reactive.Data.h>
@@ -96,11 +94,6 @@ void MainView__Template5__New1_fn(MainView__Template5* __this, uObject** __retva
     ::g::Fuse::Reactive::DataBinding* temp2 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp_Value_inst, (uObject*)temp1, __this->__g_nametable1, 3);
     __self1->Alignment(13);
     __self1->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 20.0f, 20.0f));
-    temp->TextWrapping(1);
-    temp->LineSpacing(10.0f);
-    temp->FontSize(20.0f);
-    temp->TextColor(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
-    temp->Font(::g::MainView::TitleFont());
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[1/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp2);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
     return *__retval = __self1, void();
