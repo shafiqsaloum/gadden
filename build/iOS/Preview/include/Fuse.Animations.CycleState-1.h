@@ -1,8 +1,8 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.OpenAnimatorState.h>
+#include <Fuse.Animations.OpenA-dfad1354.h>
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
 namespace g{namespace Fuse{namespace Animations{struct Cycle;}}}
 namespace g{namespace Fuse{namespace Animations{struct CycleState;}}}

@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{namespace Uno{struct Float4;}}
 namespace g{
 namespace Fuse{
 
-// public class Font :1636
+// public class Font :1482
 // {
 uType* Font_typeof();
 void Font__ctor__fn(Font* __this, ::g::Uno::Collections::List* descriptors);

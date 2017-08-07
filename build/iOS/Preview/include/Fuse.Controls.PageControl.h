@@ -1,23 +1,23 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
-#include <Fuse.Controls.NavigationControl.h>
+#include <Fuse.Controls.Navigat-70e90308.h>
 #include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
+#include <Fuse.Navigation.IBase-84e3f965.h>
 #include <Fuse.Navigation.INavigation.h>
 #include <Fuse.Navigation.IRouterOutlet.h>
-#include <Fuse.Navigation.ISeekableNavigation.h>
+#include <Fuse.Navigation.ISeek-75d60b5e.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
+#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>

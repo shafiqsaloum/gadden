@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{
 namespace Fuse{
 namespace Drawing{
 
-// public static class SurfaceManager :3108
+// public static class SurfaceManager :3798
 // {
 uClassType* SurfaceManager_typeof();
 void SurfaceManager__Create_fn(uObject* owner, ::g::Fuse::Drawing::Surface** __retval);

@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Text{
 
-// internal static class LineBreaks :1110
+// internal static class LineBreaks :1111
 // {
 uClassType* LineBreaks_typeof();
 void LineBreaks__Get_fn(::g::Fuse::Text::Substring* text, ::g::Fuse::Text::Implementation::BitArray** __retval);

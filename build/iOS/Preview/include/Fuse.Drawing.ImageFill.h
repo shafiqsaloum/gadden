@@ -1,11 +1,11 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Elements/1.1.1/drawing/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/drawing/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Drawing.DynamicBrush.h>
-#include <Fuse.Drawing.ImageFill.DrawParams.h>
+#include <Fuse.Drawing.ImageFil-1398d2ef.h>
 #include <Fuse.ILoading.h>
-#include <Fuse.Internal.IImageContainerOwner.h>
+#include <Fuse.Internal.IImageC-c450902.h>
 #include <Fuse.Resources.IMemoryResource.h>
 #include <Uno.Float4.h>
 namespace g{namespace Fuse{namespace Drawing{struct ImageFill;}}}

@@ -1,10 +1,10 @@
-// This file was generated based on build/iOS/Preview/cache/ux11/MainView.g.uno.
+// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.gadden_bundle.h>
-#include <_root.gadden_FuseControlsImage_Color_Property.h>
-#include <_root.gadden_FuseControlsTextControl_Value_Property.h>
-#include <_root.gadden_FuseElementsElement_Opacity_Property.h>
+#include <_root.gadden_FuseCont-44c720e0.h>
+#include <_root.gadden_FuseCont-7bb5d785.h>
+#include <_root.gadden_FuseElem-aceb110d.h>
 #include <_root.MainView.h>
 #include <_root.MainView.Template2.h>
 #include <_root.SmallText.h>
@@ -35,9 +35,9 @@
 #include <Fuse.Reactive.IExpression.h>
 #include <Fuse.Reactive.ToUpper.h>
 #include <Fuse.Triggers.Actions.Callback.h>
-#include <Fuse.Triggers.Actions.IToggleable.h>
 #include <Fuse.Triggers.Actions.Toggle.h>
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions-b5190bae.h>
+#include <Fuse.Triggers.Actions-fcab7e57.h>
 #include <Fuse.Triggers.Trigger.h>
 #include <Fuse.Triggers.WhileTrue.h>
 #include <Fuse.Visual.h>
@@ -192,7 +192,7 @@ void MainView__Template2__New1_fn(MainView__Template2* __this, uObject** __retva
     starImage1->Alignment(15);
     starImage1->Margin(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 7.0f));
     starImage1->Name(MainView__Template2::__selector3());
-    starImage1->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::StarWhite70dbff3d()));
+    starImage1->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::StarWhite6e65c160()));
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(starImage1->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp9);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp9->Actions()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp10);
     temp10->Target((uObject*)yellowStar1);

@@ -1,9 +1,9 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Outracks.BinaryMessage.ComposedMessage.h>
+#include <Outracks.BinaryMessag-ba12b60e.h>
+#include <Outracks.BinaryMessag-c6e276d5.h>
 #include <Outracks.BinaryMessage.h>
-#include <Outracks.BinaryMessage.WriteClosure.h>
 #include <Outracks.IBinaryMessage.h>
 #include <Outracks.NullToNone.h>
 #include <Outracks.Optional.h>

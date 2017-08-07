@@ -1,19 +1,21 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.Native.iOS.FocusHelpers.h>
-#include <Fuse.Controls.Native.iOS.FocusHelpers.PerformBecomeFirstResponder.h>
-#include <Fuse.Controls.Native.iOS.INativeFocusListener.h>
-#include <Fuse.Controls.Native.iOS.iOSDevice.ScreenOrientation.h>
-#include <Fuse.Controls.Native.iOS.LeafView.h>
-#include <Fuse.Controls.Native.iOS.NativeFocus.h>
-#include <Fuse.Controls.Native.iOS.ObjectExtensions.h>
-#include <Fuse.Controls.Native.iOS.OSVersion.h>
-#include <Fuse.Controls.Native.iOS.PointerCaptureAdapter.h>
-#include <Fuse.Controls.Native.iOS.UIControlEvent.h>
-#include <Fuse.Controls.Native.iOS.UIEvent.h>
-#include <Fuse.Controls.Native.iOS.UITouch.h>
-#include <Fuse.Controls.Native.iOS.UITouch.TouchPhase.h>
+#include <_root.FuseControlsNat-fa0facbc.h>
+#include <Fuse.Controls.Native.-3d955b51.h>
+#include <Fuse.Controls.Native.-4016d338.h>
+#include <Fuse.Controls.Native.-4c195cb7.h>
+#include <Fuse.Controls.Native.-5139440e.h>
+#include <Fuse.Controls.Native.-750690c0.h>
+#include <Fuse.Controls.Native.-87450d8.h>
+#include <Fuse.Controls.Native.-8c20fe6.h>
+#include <Fuse.Controls.Native.-98c3244c.h>
+#include <Fuse.Controls.Native.-9b8fa15e.h>
+#include <Fuse.Controls.Native.-a3bae2d8.h>
+#include <Fuse.Controls.Native.-a609c410.h>
+#include <Fuse.Controls.Native.-b38d34c1.h>
+#include <Fuse.Controls.Native.-e7f294af.h>
+#include <Fuse.Controls.Native.-f73efeee.h>
 #include <Fuse.Controls.Native.iOS.View.h>
 #include <Fuse.Input.CaptureType.h>
 #include <Fuse.Input.Pointer.h>
@@ -23,12 +25,24 @@
 #include <Uno.Action-2.h>
 #include <Uno.ArgumentException.h>
 #include <Uno.Bool.h>
+#include <Uno.Buffer.h>
 #include <Uno.Collections.Dictionary-2.h>
 #include <Uno.Collections.List-1.h>
+#include <Uno.Float.h>
+#include <Uno.Float4x4.h>
+#include <Uno.Graphics.BlendOperand.h>
+#include <Uno.Graphics.BufferUsage.h>
+#include <Uno.Graphics.PolygonFace.h>
+#include <Uno.Graphics.SamplerState.h>
+#include <Uno.Graphics.Texture2D.h>
+#include <Uno.Graphics.VertexAt-4a875e1d.h>
+#include <Uno.Graphics.VertexBuffer.h>
 #include <Uno.Int.h>
+#include <Uno.Runtime.Implement-6e9df330.h>
+#include <Uno.Runtime.Implement-81e7ab4c.h>
 #include <Uno.String.h>
 static uString* STRINGS[5];
-static uType* TYPES[6];
+static uType* TYPES[7];
 
 namespace g{
 namespace Fuse{
@@ -36,8 +50,8 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/ios/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // internal abstract extern interface INativeFocusListener :147
 // {
@@ -51,8 +65,114 @@ uInterfaceType* INativeFocusListener_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/ios/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
+
+// internal sealed extern class iOSBlitter :1489
+// {
+// static iOSBlitter() :1489
+static void iOSBlitter__cctor__fn(uType* __type)
+{
+    iOSBlitter::Singleton_ = iOSBlitter::New1();
+}
+
+static void iOSBlitter_build(uType* type)
+{
+    ::TYPES[0] = ::g::Uno::Float2_typeof()->Array();
+    type->SetFields(0,
+        ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall_typeof(), offsetof(::g::Fuse::Controls::Native::iOS::iOSBlitter, _draw_fbdb836b), 0,
+        ::g::Uno::Graphics::VertexBuffer_typeof(), offsetof(::g::Fuse::Controls::Native::iOS::iOSBlitter, Blit_v_fbdb836b_3_4_1), 0,
+        ::TYPES[0/*float2[]*/], offsetof(::g::Fuse::Controls::Native::iOS::iOSBlitter, Blit_verts_fbdb836b_3_3_5), 0,
+        type, (uintptr_t)&::g::Fuse::Controls::Native::iOS::iOSBlitter::Singleton_, uFieldFlagsStatic);
+}
+
+uType* iOSBlitter_typeof()
+{
+    static uSStrong<uType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.FieldCount = 4;
+    options.ObjectSize = sizeof(iOSBlitter);
+    options.TypeSize = sizeof(uType);
+    type = uClassType::New("Fuse.Controls.Native.iOS.iOSBlitter", options);
+    type->fp_build_ = iOSBlitter_build;
+    type->fp_ctor_ = (void*)iOSBlitter__New1_fn;
+    type->fp_cctor_ = iOSBlitter__cctor__fn;
+    return type;
+}
+
+// public generated iOSBlitter() :1489
+void iOSBlitter__ctor__fn(iOSBlitter* __this)
+{
+    __this->ctor_();
+}
+
+// public void Blit(texture2D vt, float2 pos, float2 size, float4x4 localToClipTransform) :1493
+void iOSBlitter__Blit_fn(iOSBlitter* __this, ::g::Uno::Graphics::Texture2D* vt, ::g::Uno::Float2* pos, ::g::Uno::Float2* size, ::g::Uno::Float4x4* localToClipTransform)
+{
+    __this->Blit(vt, *pos, *size, *localToClipTransform);
+}
+
+// private generated void init_DrawCalls() :1489
+void iOSBlitter__init_DrawCalls_fn(iOSBlitter* __this)
+{
+    __this->init_DrawCalls();
+}
+
+// public generated iOSBlitter New() :1489
+void iOSBlitter__New1_fn(iOSBlitter** __retval)
+{
+    *__retval = iOSBlitter::New1();
+}
+
+uSStrong<iOSBlitter*> iOSBlitter::Singleton_;
+
+// public generated iOSBlitter() [instance] :1489
+void iOSBlitter::ctor_()
+{
+    init_DrawCalls();
+}
+
+// public void Blit(texture2D vt, float2 pos, float2 size, float4x4 localToClipTransform) [instance] :1493
+void iOSBlitter::Blit(::g::Uno::Graphics::Texture2D* vt, ::g::Uno::Float2 pos, ::g::Uno::Float2 size, ::g::Uno::Float4x4 localToClipTransform)
+{
+    uStackFrame __("Fuse.Controls.Native.iOS.iOSBlitter", "Blit(texture2D,float2,float2,float4x4)");
+    _draw_fbdb836b.BlendEnabled(true);
+    _draw_fbdb836b.DepthTestEnabled(false);
+    _draw_fbdb836b.CullFace(0);
+    _draw_fbdb836b.BlendSrcAlpha(7);
+    _draw_fbdb836b.BlendDstRgb(3);
+    _draw_fbdb836b.Use();
+    _draw_fbdb836b.Attrib1(0, 2, Blit_v_fbdb836b_3_4_1, 8, 0);
+    _draw_fbdb836b.Uniform2(1, size);
+    _draw_fbdb836b.Uniform2(2, pos);
+    _draw_fbdb836b.Uniform12(3, localToClipTransform);
+    _draw_fbdb836b.Sampler3(4, vt, ::g::Uno::Graphics::SamplerState__LinearClamp());
+    _draw_fbdb836b.DrawArrays(uPtr(Blit_verts_fbdb836b_3_3_5)->Length());
+}
+
+// private generated void init_DrawCalls() [instance] :1489
+void iOSBlitter::init_DrawCalls()
+{
+    uStackFrame __("Fuse.Controls.Native.iOS.iOSBlitter", "init_DrawCalls()");
+    uArray* verts_fbdb836b_3_3_0 = uArray::Init< ::g::Uno::Float2>(::TYPES[0/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 1.0f));
+    Blit_v_fbdb836b_3_4_1 = ::g::Uno::Graphics::VertexBuffer::New2(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(verts_fbdb836b_3_3_0), 0);
+    Blit_verts_fbdb836b_3_3_5 = verts_fbdb836b_3_3_0;
+    _draw_fbdb836b = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseControlsNative_bundle::iOSBlitter0a63f4bb());
+}
+
+// public generated iOSBlitter New() [static] :1489
+iOSBlitter* iOSBlitter::New1()
+{
+    iOSBlitter* obj1 = (iOSBlitter*)uNew(iOSBlitter_typeof());
+    obj1->ctor_();
+    return obj1;
+}
+// }
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public abstract extern class LeafView :1309
 // {
@@ -95,23 +215,23 @@ void LeafView::ctor_4(::g::ObjC::Object* handle)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/ios/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // internal static extern class NativeFocus :153
 // {
 // static NativeFocus() :153
 static void NativeFocus__cctor__fn(uType* __type)
 {
-    NativeFocus::_listeners_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[0/*Uno.Collections.Dictionary<ObjC.Object, Fuse.Controls.Native.iOS.INativeFocusListener>*/]));
+    NativeFocus::_listeners_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[1/*Uno.Collections.Dictionary<ObjC.Object, Fuse.Controls.Native.iOS.INativeFocusListener>*/]));
 }
 
 static void NativeFocus_build(uType* type)
 {
-    ::TYPES[0] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::ObjC::Object_typeof(), ::g::Fuse::Controls::Native::iOS::INativeFocusListener_typeof(), NULL);
-    ::TYPES[1] = ::g::Fuse::Controls::Native::iOS::INativeFocusListener_typeof();
+    ::TYPES[1] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::ObjC::Object_typeof(), ::g::Fuse::Controls::Native::iOS::INativeFocusListener_typeof(), NULL);
+    ::TYPES[2] = ::g::Fuse::Controls::Native::iOS::INativeFocusListener_typeof();
     type->SetFields(0,
-        ::TYPES[0/*Uno.Collections.Dictionary<ObjC.Object, Fuse.Controls.Native.iOS.INativeFocusListener>*/], (uintptr_t)&::g::Fuse::Controls::Native::iOS::NativeFocus::_listeners_, uFieldFlagsStatic);
+        ::TYPES[1/*Uno.Collections.Dictionary<ObjC.Object, Fuse.Controls.Native.iOS.INativeFocusListener>*/], (uintptr_t)&::g::Fuse::Controls::Native::iOS::NativeFocus::_listeners_, uFieldFlagsStatic);
 }
 
 uClassType* NativeFocus_typeof()
@@ -171,7 +291,7 @@ void NativeFocus::RaiseFocusGained(::g::ObjC::Object* handle)
     uObject* ret2;
 
     if ((::g::Uno::Collections::Dictionary__ContainsKey_fn(uPtr(NativeFocus::_listeners()), handle, &ret1), ret1))
-        ::g::Fuse::Controls::Native::iOS::INativeFocusListener::FocusGained(uInterface(uPtr((::g::Uno::Collections::Dictionary__get_Item_fn(uPtr(NativeFocus::_listeners()), handle, &ret2), ret2)), ::TYPES[1/*Fuse.Controls.Native.iOS.INativeFocusListener*/]));
+        ::g::Fuse::Controls::Native::iOS::INativeFocusListener::FocusGained(uInterface(uPtr((::g::Uno::Collections::Dictionary__get_Item_fn(uPtr(NativeFocus::_listeners()), handle, &ret2), ret2)), ::TYPES[2/*Fuse.Controls.Native.iOS.INativeFocusListener*/]));
 }
 
 // public static void RaiseFocusLost(ObjC.Object handle) [static] :177
@@ -183,7 +303,7 @@ void NativeFocus::RaiseFocusLost(::g::ObjC::Object* handle)
     uObject* ret4;
 
     if ((::g::Uno::Collections::Dictionary__ContainsKey_fn(uPtr(NativeFocus::_listeners()), handle, &ret3), ret3))
-        ::g::Fuse::Controls::Native::iOS::INativeFocusListener::FocusLost(uInterface(uPtr((::g::Uno::Collections::Dictionary__get_Item_fn(uPtr(NativeFocus::_listeners()), handle, &ret4), ret4)), ::TYPES[1/*Fuse.Controls.Native.iOS.INativeFocusListener*/]));
+        ::g::Fuse::Controls::Native::iOS::INativeFocusListener::FocusLost(uInterface(uPtr((::g::Uno::Collections::Dictionary__get_Item_fn(uPtr(NativeFocus::_listeners()), handle, &ret4), ret4)), ::TYPES[2/*Fuse.Controls.Native.iOS.INativeFocusListener*/]));
 }
 
 // public static void RemoveListener(ObjC.Object handle) [static] :164
@@ -196,8 +316,8 @@ void NativeFocus::RemoveListener(::g::ObjC::Object* handle)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/ios/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed extern class OSVersion :1147
 // {
@@ -267,8 +387,8 @@ OSVersion* OSVersion::New1(int major, int minor, int patch)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/ios/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // private sealed class FocusHelpers.PerformBecomeFirstResponder :264
 // {
@@ -331,10 +451,10 @@ FocusHelpers__PerformBecomeFirstResponder* FocusHelpers__PerformBecomeFirstRespo
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/ios/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
-// internal sealed extern class PointerCaptureAdapter :1477
+// internal sealed extern class PointerCaptureAdapter :1684
 // {
 static void PointerCaptureAdapter_build(uType* type)
 {
@@ -342,16 +462,16 @@ static void PointerCaptureAdapter_build(uType* type)
     ::STRINGS[2] = uString::Const("visual");
     ::STRINGS[3] = uString::Const("PointerCaptureAdapter requires UIControl");
     ::STRINGS[4] = uString::Const("control");
-    ::TYPES[2] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Controls::Native::iOS::UITouch_typeof(), NULL);
-    ::TYPES[3] = ::g::Uno::Action2_typeof()->MakeType(::g::ObjC::Object_typeof(), ::g::ObjC::Object_typeof(), NULL);
-    ::TYPES[4] = ::g::Uno::IDisposable_typeof();
-    ::TYPES[5] = ::g::Uno::Action_typeof();
+    ::TYPES[3] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Controls::Native::iOS::UITouch_typeof(), NULL);
+    ::TYPES[4] = ::g::Uno::Action2_typeof()->MakeType(::g::ObjC::Object_typeof(), ::g::ObjC::Object_typeof(), NULL);
+    ::TYPES[5] = ::g::Uno::IDisposable_typeof();
+    ::TYPES[6] = ::g::Uno::Action_typeof();
     type->SetInterfaces(
-        ::TYPES[4/*Uno.IDisposable*/], offsetof(PointerCaptureAdapter_type, interface0));
+        ::TYPES[5/*Uno.IDisposable*/], offsetof(PointerCaptureAdapter_type, interface0));
     type->SetFields(0,
-        ::TYPES[2/*Uno.Collections.List<Fuse.Controls.Native.iOS.UITouch>*/], offsetof(::g::Fuse::Controls::Native::iOS::PointerCaptureAdapter, _activeTouches), 0,
+        ::TYPES[3/*Uno.Collections.List<Fuse.Controls.Native.iOS.UITouch>*/], offsetof(::g::Fuse::Controls::Native::iOS::PointerCaptureAdapter, _activeTouches), 0,
         ::g::ObjC::Object_typeof(), offsetof(::g::Fuse::Controls::Native::iOS::PointerCaptureAdapter, _control), 0,
-        ::TYPES[4/*Uno.IDisposable*/], offsetof(::g::Fuse::Controls::Native::iOS::PointerCaptureAdapter, _touchEvents), 0,
+        ::TYPES[5/*Uno.IDisposable*/], offsetof(::g::Fuse::Controls::Native::iOS::PointerCaptureAdapter, _touchEvents), 0,
         ::g::Fuse::Visual_typeof(), offsetof(::g::Fuse::Controls::Native::iOS::PointerCaptureAdapter, _visual), 0);
 }
 
@@ -371,37 +491,37 @@ PointerCaptureAdapter_type* PointerCaptureAdapter_typeof()
     return type;
 }
 
-// public PointerCaptureAdapter(Fuse.Visual visual, ObjC.Object control) :1484
+// public PointerCaptureAdapter(Fuse.Visual visual, ObjC.Object control) :1691
 void PointerCaptureAdapter__ctor__fn(PointerCaptureAdapter* __this, ::g::Fuse::Visual* visual, ::g::ObjC::Object* control)
 {
     __this->ctor_(visual, control);
 }
 
-// public void Dispose() :1528
+// public void Dispose() :1735
 void PointerCaptureAdapter__Dispose_fn(PointerCaptureAdapter* __this)
 {
     __this->Dispose();
 }
 
-// private void LostCallback() :1526
+// private void LostCallback() :1733
 void PointerCaptureAdapter__LostCallback_fn(PointerCaptureAdapter* __this)
 {
     __this->LostCallback();
 }
 
-// public PointerCaptureAdapter New(Fuse.Visual visual, ObjC.Object control) :1484
+// public PointerCaptureAdapter New(Fuse.Visual visual, ObjC.Object control) :1691
 void PointerCaptureAdapter__New1_fn(::g::Fuse::Visual* visual, ::g::ObjC::Object* control, PointerCaptureAdapter** __retval)
 {
     *__retval = PointerCaptureAdapter::New1(visual, control);
 }
 
-// private void OnTouchEvent(ObjC.Object sender, ObjC.Object uiEvent) :1497
+// private void OnTouchEvent(ObjC.Object sender, ObjC.Object uiEvent) :1704
 void PointerCaptureAdapter__OnTouchEvent_fn(PointerCaptureAdapter* __this, ::g::ObjC::Object* sender, ::g::ObjC::Object* uiEvent)
 {
     __this->OnTouchEvent(sender, uiEvent);
 }
 
-// public PointerCaptureAdapter(Fuse.Visual visual, ObjC.Object control) [instance] :1484
+// public PointerCaptureAdapter(Fuse.Visual visual, ObjC.Object control) [instance] :1691
 void PointerCaptureAdapter::ctor_(::g::Fuse::Visual* visual, ::g::ObjC::Object* control)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.PointerCaptureAdapter", ".ctor(Fuse.Visual,ObjC.Object)");
@@ -414,27 +534,27 @@ void PointerCaptureAdapter::ctor_(::g::Fuse::Visual* visual, ::g::ObjC::Object* 
 
     _visual = visual;
     _control = control;
-    _activeTouches = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[2/*Uno.Collections.List<Fuse.Controls.Native.iOS.UITouch>*/]));
-    _touchEvents = ::g::Fuse::Controls::Native::iOS::UIControlEvent::AddAllTouchEventsCallback(_control, uDelegate::New(::TYPES[3/*Uno.Action<ObjC.Object, ObjC.Object>*/], (void*)PointerCaptureAdapter__OnTouchEvent_fn, this));
+    _activeTouches = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[3/*Uno.Collections.List<Fuse.Controls.Native.iOS.UITouch>*/]));
+    _touchEvents = ::g::Fuse::Controls::Native::iOS::UIControlEvent::AddAllTouchEventsCallback(_control, uDelegate::New(::TYPES[4/*Uno.Action<ObjC.Object, ObjC.Object>*/], (void*)PointerCaptureAdapter__OnTouchEvent_fn, this));
 }
 
-// public void Dispose() [instance] :1528
+// public void Dispose() [instance] :1735
 void PointerCaptureAdapter::Dispose()
 {
     uStackFrame __("Fuse.Controls.Native.iOS.PointerCaptureAdapter", "Dispose()");
-    ::g::Uno::IDisposable::Dispose(uInterface(uPtr(_touchEvents), ::TYPES[4/*Uno.IDisposable*/]));
+    ::g::Uno::IDisposable::Dispose(uInterface(uPtr(_touchEvents), ::TYPES[5/*Uno.IDisposable*/]));
     _touchEvents = NULL;
     _activeTouches = NULL;
     _visual = NULL;
     _control = NULL;
 }
 
-// private void LostCallback() [instance] :1526
+// private void LostCallback() [instance] :1733
 void PointerCaptureAdapter::LostCallback()
 {
 }
 
-// private void OnTouchEvent(ObjC.Object sender, ObjC.Object uiEvent) [instance] :1497
+// private void OnTouchEvent(ObjC.Object sender, ObjC.Object uiEvent) [instance] :1704
 void PointerCaptureAdapter::OnTouchEvent(::g::ObjC::Object* sender, ::g::ObjC::Object* uiEvent)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.PointerCaptureAdapter", "OnTouchEvent(ObjC.Object,ObjC.Object)");
@@ -457,7 +577,7 @@ void PointerCaptureAdapter::OnTouchEvent(::g::ObjC::Object* sender, ::g::ObjC::O
             int pointerIndex = (::g::Uno::Collections::List__IndexOf_fn(uPtr(_activeTouches), touch, &ret3), ret3);
 
             if (uPtr(touch)->Phase() == 0)
-                ::g::Fuse::Input::Pointer::ModifyCapture1(touch, _visual, uDelegate::New(::TYPES[5/*Uno.Action*/], (void*)PointerCaptureAdapter__LostCallback_fn, this), 2, pointerIndex);
+                ::g::Fuse::Input::Pointer::ModifyCapture1(touch, _visual, uDelegate::New(::TYPES[6/*Uno.Action*/], (void*)PointerCaptureAdapter__LostCallback_fn, this), 2, pointerIndex);
             else if ((uPtr(touch)->Phase() == 3) || (uPtr(touch)->Phase() == 4))
                 touchEnded = true;
         }
@@ -472,7 +592,7 @@ void PointerCaptureAdapter::OnTouchEvent(::g::ObjC::Object* sender, ::g::ObjC::O
     }
 }
 
-// public PointerCaptureAdapter New(Fuse.Visual visual, ObjC.Object control) [static] :1484
+// public PointerCaptureAdapter New(Fuse.Visual visual, ObjC.Object control) [static] :1691
 PointerCaptureAdapter* PointerCaptureAdapter::New1(::g::Fuse::Visual* visual, ::g::ObjC::Object* control)
 {
     PointerCaptureAdapter* obj1 = (PointerCaptureAdapter*)uNew(PointerCaptureAdapter_typeof());
@@ -481,8 +601,8 @@ PointerCaptureAdapter* PointerCaptureAdapter::New1(::g::Fuse::Visual* visual, ::
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/ios/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public enum iOSDevice.ScreenOrientation :1167
 uEnumType* iOSDevice__ScreenOrientation_typeof()
@@ -497,8 +617,8 @@ uEnumType* iOSDevice__ScreenOrientation_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/ios/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public enum UITouch.TouchPhase :994
 uEnumType* UITouch__TouchPhase_typeof()
@@ -516,10 +636,10 @@ uEnumType* UITouch__TouchPhase_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/ios/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
-// public abstract extern class View :3179
+// public abstract extern class View :3344
 // {
 static void View_build(uType* type)
 {
@@ -549,38 +669,38 @@ View_type* View_typeof()
     return type;
 }
 
-// protected View(ObjC.Object handle) :3185
+// protected View(ObjC.Object handle) :3350
 void View__ctor_2_fn(View* __this, ::g::ObjC::Object* handle)
 {
     __this->ctor_2(handle);
 }
 
-// protected View(ObjC.Object handle, bool isLeafView) :3187
+// protected View(ObjC.Object handle, bool isLeafView) :3352
 void View__ctor_3_fn(View* __this, ::g::ObjC::Object* handle, bool* isLeafView)
 {
     __this->ctor_3(handle, *isLeafView);
 }
 
-// public ObjC.Object get_Handle() :3181
+// public ObjC.Object get_Handle() :3346
 void View__get_Handle_fn(View* __this, ::g::ObjC::Object** __retval)
 {
     *__retval = __this->Handle();
 }
 
-// protected View(ObjC.Object handle) [instance] :3185
+// protected View(ObjC.Object handle) [instance] :3350
 void View::ctor_2(::g::ObjC::Object* handle)
 {
     ctor_3(handle, false);
 }
 
-// protected View(ObjC.Object handle, bool isLeafView) [instance] :3187
+// protected View(ObjC.Object handle, bool isLeafView) [instance] :3352
 void View::ctor_3(::g::ObjC::Object* handle, bool isLeafView)
 {
     ctor_1(handle, isLeafView);
     _handle = handle;
 }
 
-// public ObjC.Object get_Handle() [instance] :3181
+// public ObjC.Object get_Handle() [instance] :3346
 ::g::ObjC::Object* View::Handle()
 {
     return _handle;

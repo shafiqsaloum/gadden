@@ -1,10 +1,10 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.Float2.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
+#include <Uno.Runtime.Implement-476e2792.h>
 namespace g{namespace Fuse{namespace Controls{namespace Native{struct Blitter;}}}}
 namespace g{namespace Uno{namespace Graphics{struct Texture2D;}}}
 namespace g{namespace Uno{namespace Graphics{struct VertexBuffer;}}}

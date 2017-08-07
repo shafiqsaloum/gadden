@@ -1,8 +1,8 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.WebViewNavAction.h>
+#include <Fuse.Triggers.Actions-e0dcfc3.h>
 namespace g{namespace Fuse{namespace Controls{struct WebView;}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct LoadUrl;}}}}
 
@@ -11,7 +11,7 @@ namespace Fuse{
 namespace Triggers{
 namespace Actions{
 
-// public sealed class LoadUrl :722
+// public sealed class LoadUrl :697
 // {
 ::g::Fuse::Triggers::Actions::WebViewNavAction_type* LoadUrl_typeof();
 void LoadUrl__ctor_3_fn(LoadUrl* __this);

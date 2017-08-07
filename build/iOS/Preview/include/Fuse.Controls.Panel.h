@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,9 +11,9 @@
 #include <Fuse.IProperties.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
+#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -33,7 +33,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial class Panel :1941
+// public partial class Panel :1940
 // {
 struct Panel_type : ::g::Fuse::Controls::Control_type
 {
@@ -55,8 +55,6 @@ void Panel__FastTrackDrawWithOpacity_fn(Panel* __this, ::g::Fuse::DrawContext* d
 void Panel__FreezeRooted_fn(Panel* __this);
 void Panel__FreezeUnrooted_fn(Panel* __this);
 void Panel__FuseDrawingISurfaceDrawableDraw_fn(Panel* __this, ::g::Fuse::Drawing::Surface* surface);
-void Panel__FuseDrawingISurfaceDrawableget_ElementSize_fn(Panel* __this, ::g::Uno::Float2* __retval);
-void Panel__FuseDrawingISurfaceDrawableget_IsPrimary_fn(Panel* __this, bool* __retval);
 void Panel__GetContentSize_fn(Panel* __this, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval);
 void Panel__get_HasFreezePrepared_fn(Panel* __this, bool* __retval);
 void Panel__get_IsFrozen_fn(Panel* __this, bool* __retval);

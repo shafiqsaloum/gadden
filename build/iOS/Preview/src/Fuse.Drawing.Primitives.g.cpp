@@ -2,30 +2,30 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.DashedSolidColor.h>
-#include <_root.FuseDrawingPrimitives_bundle.h>
+#include <_root.FuseDrawingPrim-c6713933.h>
 #include <Fuse.DrawContext.h>
 #include <Fuse.Drawing.Brush.h>
 #include <Fuse.Drawing.DynamicBrush.h>
-#include <Fuse.Drawing.ImageFill.DrawParams.h>
+#include <Fuse.Drawing.ImageFil-1398d2ef.h>
 #include <Fuse.Drawing.ImageFill.h>
-#include <Fuse.Drawing.Internal.Float2Buffer.h>
-#include <Fuse.Drawing.Internal.FloatBuffer.h>
-#include <Fuse.Drawing.Internal.TypedBuffer.h>
-#include <Fuse.Drawing.Internal.UShortBuffer.h>
+#include <Fuse.Drawing.Internal-3dcc41e8.h>
+#include <Fuse.Drawing.Internal-b9d8148e.h>
+#include <Fuse.Drawing.Internal-bacec382.h>
+#include <Fuse.Drawing.Internal-bcd6298f.h>
 #include <Fuse.Drawing.LinearGradient.h>
+#include <Fuse.Drawing.Primitiv-19cb13fc.h>
+#include <Fuse.Drawing.Primitiv-1b750ab3.h>
+#include <Fuse.Drawing.Primitiv-330a8dc2.h>
+#include <Fuse.Drawing.Primitiv-5853c2d0.h>
+#include <Fuse.Drawing.Primitiv-6417a2eb.h>
+#include <Fuse.Drawing.Primitiv-8a015a04.h>
+#include <Fuse.Drawing.Primitiv-8e6a7ca2.h>
+#include <Fuse.Drawing.Primitiv-af20238a.h>
+#include <Fuse.Drawing.Primitiv-caafe7bf.h>
 #include <Fuse.Drawing.Primitives.Circle.h>
-#include <Fuse.Drawing.Primitives.ConcaveWedgeCoverage.h>
-#include <Fuse.Drawing.Primitives.ConvexWedgeCoverage.h>
-#include <Fuse.Drawing.Primitives.Coverage.h>
-#include <Fuse.Drawing.Primitives.Falloff.h>
-#include <Fuse.Drawing.Primitives.FillCoverage.h>
-#include <Fuse.Drawing.Primitives.LimitCoverage.h>
-#include <Fuse.Drawing.Primitives.OneLimitCoverage.h>
-#include <Fuse.Drawing.Primitives.Rectangle.h>
-#include <Fuse.Drawing.Primitives.ShadowFalloff.h>
-#include <Fuse.Drawing.Primitives.StrokeCoverage.h>
 #include <Fuse.Drawing.Primitives.Wedge.h>
-#include <Fuse.Drawing.Primitives.WedgeCoverage.h>
+#include <Fuse.Drawing.Primitiv-f4d76a57.h>
+#include <Fuse.Drawing.Primitiv-f6feaa19.h>
 #include <Fuse.Drawing.SolidColor.h>
 #include <Fuse.Drawing.StaticSolidColor.h>
 #include <Fuse.Drawing.Stroke.h>
@@ -49,12 +49,12 @@
 #include <Uno.Graphics.PolygonFace.h>
 #include <Uno.Graphics.SamplerState.h>
 #include <Uno.Graphics.Texture2D.h>
-#include <Uno.Graphics.VertexAttributeType.h>
+#include <Uno.Graphics.VertexAt-4a875e1d.h>
 #include <Uno.Graphics.VertexBuffer.h>
 #include <Uno.Int.h>
 #include <Uno.Int2.h>
 #include <Uno.Math.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
+#include <Uno.Runtime.Implement-6e9df330.h>
 #include <Uno.String.h>
 #include <Uno.UShort.h>
 #include <Uno.Vector.h>
@@ -66,8 +66,8 @@ namespace Fuse{
 namespace Drawing{
 namespace Primitives{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public sealed class Circle :21
 // {
@@ -1199,8 +1199,8 @@ Circle* Circle::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal sealed class ConcaveWedgeCoverage :589
 // {
@@ -1252,8 +1252,8 @@ ConcaveWedgeCoverage* ConcaveWedgeCoverage::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal sealed class ConvexWedgeCoverage :584
 // {
@@ -1305,8 +1305,8 @@ ConvexWedgeCoverage* ConvexWedgeCoverage::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal abstract class Coverage :200
 // {
@@ -1339,8 +1339,8 @@ void Coverage::ctor_()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal class Falloff :219
 // {
@@ -1388,8 +1388,8 @@ Falloff* Falloff::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal sealed class FillCoverage :204
 // {
@@ -1439,8 +1439,8 @@ FillCoverage* FillCoverage::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal abstract class LimitCoverage :12
 // {
@@ -1473,8 +1473,8 @@ void LimitCoverage::ctor_()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal sealed class OneLimitCoverage :16
 // {
@@ -1524,8 +1524,8 @@ OneLimitCoverage* OneLimitCoverage::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public sealed class Rectangle :231
 // {
@@ -2456,8 +2456,8 @@ Rectangle* Rectangle::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal sealed class ShadowFalloff :224
 // {
@@ -2507,8 +2507,8 @@ ShadowFalloff* ShadowFalloff::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal sealed class StrokeCoverage :210
 // {
@@ -2564,8 +2564,8 @@ StrokeCoverage* StrokeCoverage::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public sealed class Wedge :594
 // {
@@ -2698,8 +2698,8 @@ Wedge* Wedge::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------------
 
 // internal abstract class WedgeCoverage :553
 // {

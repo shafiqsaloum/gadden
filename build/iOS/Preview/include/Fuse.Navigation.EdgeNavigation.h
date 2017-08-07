@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -6,9 +6,9 @@
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IParentObserver.h>
 #include <Fuse.IProperties.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
+#include <Fuse.Navigation.IBase-84e3f965.h>
 #include <Fuse.Navigation.INavigation.h>
-#include <Fuse.Navigation.VisualNavigation.h>
+#include <Fuse.Navigation.Visua-f5708ad5.h>
 #include <Fuse.Scripting.IScriptObject.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
@@ -27,7 +27,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public sealed class EdgeNavigation :301
+// public sealed class EdgeNavigation :295
 // {
 ::g::Fuse::Navigation::VisualNavigation_type* EdgeNavigation_typeof();
 void EdgeNavigation__ctor_4_fn(EdgeNavigation* __this);

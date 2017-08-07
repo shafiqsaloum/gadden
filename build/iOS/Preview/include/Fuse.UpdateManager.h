@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{namespace Uno{struct Exception;}}
 namespace g{
 namespace Fuse{
 
-// public static class UpdateManager :3493
+// public static class UpdateManager :3219
 // {
 uClassType* UpdateManager_typeof();
 void UpdateManager__AddAction_fn(uObject* pu, int* stage);

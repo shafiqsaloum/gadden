@@ -1,14 +1,14 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
+#include <Fuse.Animations.IBase-d3bd6f2e.h>
+#include <Fuse.Animations.IUnwr-594abe9.h>
 #include <Fuse.Binding.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
 #include <Fuse.Node.ISubtreeDataProvider.h>
-#include <Fuse.Reactive.ValueForwarder.IValueListener.h>
+#include <Fuse.Reactive.ValueFo-a26c06f.h>
 #include <Fuse.Reactive.With.h>
 #include <Fuse.Scripting.IScriptObject.h>
 #include <Uno.Collections.ICollection-1.h>
@@ -20,7 +20,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public sealed class Select :2637
+// public sealed class Select :2443
 // {
 ::g::Fuse::Reactive::With_type* Select_typeof();
 void Select__ctor_6_fn(Select* __this);

@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -28,10 +28,8 @@ void Vector__Normalize1_fn(::g::Uno::Float3* v, ::g::Uno::Float3* __retval);
 void Vector__Normalize2_fn(::g::Uno::Float4* v, ::g::Uno::Float4* __retval);
 void Vector__Transform1_fn(::g::Uno::Float2* vector, ::g::Uno::Float4x4* matrix, ::g::Uno::Float4* __retval);
 void Vector__Transform4_fn(::g::Uno::Float3* vector, ::g::Uno::Float4x4* matrix, ::g::Uno::Float4* __retval);
-void Vector__Transform5_fn(::g::Uno::Float4* vector, ::g::Uno::Float4x4* matrix, ::g::Uno::Float4* __retval);
 void Vector__TransformCoordinate_fn(::g::Uno::Float2* vector, ::g::Uno::Float4x4* matrix, ::g::Uno::Float2* __retval);
 void Vector__TransformCoordinate1_fn(::g::Uno::Float3* vector, ::g::Uno::Float4x4* matrix, ::g::Uno::Float3* __retval);
-void Vector__TransformNormal1_fn(::g::Uno::Float3* vector, ::g::Uno::Float4x4* matrix, ::g::Uno::Float3* __retval);
 
 struct Vector : uObject
 {
@@ -48,10 +46,8 @@ struct Vector : uObject
     static ::g::Uno::Float4 Normalize2(::g::Uno::Float4 v);
     static ::g::Uno::Float4 Transform1(::g::Uno::Float2 vector, ::g::Uno::Float4x4 matrix);
     static ::g::Uno::Float4 Transform4(::g::Uno::Float3 vector, ::g::Uno::Float4x4 matrix);
-    static ::g::Uno::Float4 Transform5(::g::Uno::Float4 vector, ::g::Uno::Float4x4 matrix);
     static ::g::Uno::Float2 TransformCoordinate(::g::Uno::Float2 vector, ::g::Uno::Float4x4 matrix);
     static ::g::Uno::Float3 TransformCoordinate1(::g::Uno::Float3 vector, ::g::Uno::Float4x4 matrix);
-    static ::g::Uno::Float3 TransformNormal1(::g::Uno::Float3 vector, ::g::Uno::Float4x4 matrix);
 };
 // }
 

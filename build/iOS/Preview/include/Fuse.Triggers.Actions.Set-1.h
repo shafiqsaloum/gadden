@@ -1,8 +1,8 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions-fcab7e57.h>
 namespace g{namespace Fuse{namespace Internal{struct Blender;}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct Set;}}}}
 namespace g{namespace Fuse{struct Node;}}

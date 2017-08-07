@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -84,7 +84,7 @@ struct List : uObject
 
 }}} // ::g::Uno::Collections
 
-#include <Uno.Collections.List-1.Enumerator.h>
+#include <Uno.Collections.List--251bdc7d.h>
 
 namespace g{
 namespace Uno{

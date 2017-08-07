@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Elements/1.1.1/caching/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// internal static class DisplayHelpers :420
+// internal static class DisplayHelpers :415
 // {
 uClassType* DisplayHelpers_typeof();
 void DisplayHelpers__get_DisplaySizeHint_fn(::g::Uno::Int2* __retval);

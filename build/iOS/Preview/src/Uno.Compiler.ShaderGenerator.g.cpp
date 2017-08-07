@@ -1,15 +1,15 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Uno.Compiler.ShaderGenerator.ShaderStageInlineAttribute.h>
+#include <Uno.Compiler.ShaderGe-a2eef5f3.h>
 
 namespace g{
 namespace Uno{
 namespace Compiler{
 namespace ShaderGenerator{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/compiler/shadergenerator/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/shadergenerator/$.uno
+// -----------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class ShaderStageInlineAttribute :26
 // {

@@ -1,8 +1,8 @@
-// This file was generated based on build/iOS/Preview/cache/ux11/MainView.g.uno.
+// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <_root.gadden_FuseControlsImage_Url_Property.h>
-#include <_root.gadden_FuseControlsTextControl_Value_Property.h>
+#include <_root.gadden_FuseCont-44c720e0.h>
+#include <_root.gadden_FuseCont-b9403983.h>
 #include <_root.MainView.h>
 #include <_root.MainView.Template.h>
 #include <Fuse.Binding.h>
@@ -22,9 +22,9 @@
 #include <Fuse.Reactive.EventBinding.h>
 #include <Fuse.Reactive.IExpression.h>
 #include <Fuse.Triggers.Actions.Callback.h>
-#include <Fuse.Triggers.Actions.IToggleable.h>
 #include <Fuse.Triggers.Actions.Toggle.h>
-#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions-b5190bae.h>
+#include <Fuse.Triggers.Actions-fcab7e57.h>
 #include <Fuse.Triggers.Trigger.h>
 #include <Fuse.Triggers.WhileTrue.h>
 #include <Fuse.Visual.h>

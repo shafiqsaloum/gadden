@@ -1,21 +1,21 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Uno.Compiler.CallerFilePathAttribute.h>
-#include <Uno.Compiler.CallerLineNumberAttribute.h>
-#include <Uno.Compiler.CallerMemberNameAttribute.h>
-#include <Uno.Compiler.CallerPackageNameAttribute.h>
-#include <Uno.Compiler.HideFromCodeCompleterAttribute.h>
-#include <Uno.Compiler.IgnoreMainClassAttribute.h>
-#include <Uno.Compiler.MainClassAttribute.h>
-#include <Uno.Compiler.UxGeneratedAttribute.h>
+#include <Uno.Compiler.CallerFi-fc3f1b35.h>
+#include <Uno.Compiler.CallerLi-9bbbe993.h>
+#include <Uno.Compiler.CallerMe-815aa141.h>
+#include <Uno.Compiler.CallerPa-abdf924f.h>
+#include <Uno.Compiler.HideFrom-853f6793.h>
+#include <Uno.Compiler.IgnoreMa-46e69c46.h>
+#include <Uno.Compiler.MainClas-b2f288b4.h>
+#include <Uno.Compiler.UxGenera-2011f7d5.h>
 
 namespace g{
 namespace Uno{
 namespace Compiler{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/compiler/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class CallerFilePathAttribute :9
 // {
@@ -67,8 +67,8 @@ CallerFilePathAttribute* CallerFilePathAttribute::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/compiler/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class CallerLineNumberAttribute :23
 // {
@@ -120,8 +120,8 @@ CallerLineNumberAttribute* CallerLineNumberAttribute::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/compiler/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class CallerMemberNameAttribute :37
 // {
@@ -173,8 +173,8 @@ CallerMemberNameAttribute* CallerMemberNameAttribute::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/compiler/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class CallerPackageNameAttribute :42
 // {
@@ -226,8 +226,8 @@ CallerPackageNameAttribute* CallerPackageNameAttribute::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/compiler/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class HideFromCodeCompleterAttribute :69
 // {
@@ -279,8 +279,8 @@ HideFromCodeCompleterAttribute* HideFromCodeCompleterAttribute::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/compiler/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class IgnoreMainClassAttribute :80
 // {
@@ -332,8 +332,8 @@ IgnoreMainClassAttribute* IgnoreMainClassAttribute::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/compiler/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class MainClassAttribute :91
 // {
@@ -385,8 +385,8 @@ MainClassAttribute* MainClassAttribute::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/compiler/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public sealed class UxGeneratedAttribute :102
 // {

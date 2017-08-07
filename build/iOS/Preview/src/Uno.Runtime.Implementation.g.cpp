@@ -6,29 +6,29 @@
 #include <uBase/Time.h>
 #include <Uno.ArgumentException.h>
 #include <Uno.ArgumentNullException.h>
-#include <Uno.ArgumentOutOfRangeException.h>
+#include <Uno.ArgumentOutOfRang-6803b39e.h>
 #include <Uno.Bool.h>
 #include <Uno.Byte.h>
 #include <Uno.Char.h>
 #include <Uno.Collections.List-1.h>
 #include <Uno.Comparison-1.h>
 #include <Uno.Delegate.h>
-#include <Uno.Diagnostics.DebugMessageType.h>
+#include <Uno.Diagnostics.Debug-5d778620.h>
 #include <Uno.Double.h>
 #include <Uno.Float.h>
 #include <Uno.Int.h>
 #include <Uno.InvalidOperationException.h>
 #include <Uno.Long.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.ArrayCopyImpl.h>
-#include <Uno.Runtime.Implementation.ArraySortImpl.h>
-#include <Uno.Runtime.Implementation.BufferImpl.h>
-#include <Uno.Runtime.Implementation.ClockImpl.h>
-#include <Uno.Runtime.Implementation.DebugImpl.h>
-#include <Uno.Runtime.Implementation.GenericEqualsImpl.h>
-#include <Uno.Runtime.Implementation.GraphicsContextHandle.h>
-#include <Uno.Runtime.Implementation.PlatformWindowHandle.h>
-#include <Uno.Runtime.Implementation.TextEncodingImpl.h>
+#include <Uno.Runtime.Implement-2110557a.h>
+#include <Uno.Runtime.Implement-444123a4.h>
+#include <Uno.Runtime.Implement-496b321b.h>
+#include <Uno.Runtime.Implement-5299dae0.h>
+#include <Uno.Runtime.Implement-6eefa8cd.h>
+#include <Uno.Runtime.Implement-78c05898.h>
+#include <Uno.Runtime.Implement-ce657879.h>
+#include <Uno.Runtime.Implement-ed55561e.h>
+#include <Uno.Runtime.Implement-f781096a.h>
 #include <Uno.Short.h>
 #include <Uno.String.h>
 #include <Uno.UInt.h>
@@ -43,8 +43,8 @@ namespace Uno{
 namespace Runtime{
 namespace Implementation{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/runtime/implementation/$.uno
-// -------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // internal static class ArrayCopyImpl :9
 // {
@@ -131,8 +131,8 @@ void ArrayCopyImpl::ValidateArguments(uType* __type, uArray* sourceArray, int so
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/runtime/implementation/$.uno
-// -------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // internal static class ArraySortImpl :68
 // {
@@ -327,8 +327,8 @@ void ArraySortImpl::ValidateArguments(uType* __type, uArray* elements, int index
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/runtime/implementation/$.uno
-// -------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // public static class BufferImpl :181
 // {
@@ -467,8 +467,8 @@ void BufferImpl::SetUShort(uArray* buffer, int offset, uint16_t value, bool litt
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/runtime/implementation/$.uno
-// -------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // internal static class ClockImpl :487
 // {
@@ -550,8 +550,8 @@ int ClockImpl::GetTimezoneOffset(int year, int month, int day)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/runtime/implementation/$.uno
-// -------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // internal static class DebugImpl :581
 // {
@@ -585,8 +585,8 @@ void DebugImpl::Log(uString* message, int type)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/runtime/implementation/$.uno
-// -------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // internal static class GenericEqualsImpl :690
 // {
@@ -622,8 +622,8 @@ void GenericEqualsImpl__Equals_fn(uType* __type, void* left, void* right, bool* 
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/runtime/implementation/$.uno
-// -------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // internal struct GraphicsContextHandle :733
 // {
@@ -645,8 +645,8 @@ uStructType* GraphicsContextHandle_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/runtime/implementation/$.uno
-// -------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // public struct PlatformWindowHandle :841
 // {
@@ -668,8 +668,8 @@ uStructType* PlatformWindowHandle_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/runtime/implementation/$.uno
-// -------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------
 
 // internal static class TextEncodingImpl :1262
 // {

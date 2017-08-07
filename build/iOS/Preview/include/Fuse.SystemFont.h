@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace Fuse{struct SystemFont;}}
 namespace g{
 namespace Fuse{
 
-// public sealed class SystemFont :3202
+// public sealed class SystemFont :2928
 // {
 uType* SystemFont_typeof();
 void SystemFont__ctor_2_fn(SystemFont* __this, uString* family, int* style, int* weight);

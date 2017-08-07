@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -28,7 +28,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public class Instantiator :884
+// public class Instantiator :872
 // {
 struct Instantiator_type : ::g::Fuse::Node_type
 {
@@ -48,7 +48,6 @@ void Instantiator__CompleteWindowItems_fn(Instantiator* __this, bool* one, bool*
 void Instantiator__CompleteWindowItemsAction_fn(Instantiator* __this);
 void Instantiator__get_Count_fn(Instantiator* __this, int* __retval);
 void Instantiator__set_Count_fn(Instantiator* __this, int* value);
-void Instantiator__DataIndexOfChild_fn(Instantiator* __this, ::g::Fuse::Node* child, int* __retval);
 void Instantiator__get_Defer_fn(Instantiator* __this, int* __retval);
 void Instantiator__set_Defer_fn(Instantiator* __this, int* value);
 void Instantiator__get_DeferredPriority_fn(Instantiator* __this, float* __retval);
@@ -83,8 +82,6 @@ void Instantiator__OnItemsChanged_fn(Instantiator* __this);
 void Instantiator__OnRooted_fn(Instantiator* __this);
 void Instantiator__OnTemplatesChanged_fn(Instantiator* __this, ::g::Uno::UX::Template* factory);
 void Instantiator__OnUnrooted_fn(Instantiator* __this);
-void Instantiator__OnUpdatedWindowItems_fn(Instantiator* __this);
-void Instantiator__PostUpdatedWindowItems_fn(Instantiator* __this);
 void Instantiator__RemoveAll_fn(Instantiator* __this);
 void Instantiator__RemoveAt_fn(Instantiator* __this, int* dataIndex);
 void Instantiator__RemoveFromParent_fn(Instantiator* __this, ::g::Fuse::Node* n);
@@ -98,13 +95,10 @@ void Instantiator__get_Templates_fn(Instantiator* __this, uObject** __retval);
 void Instantiator__get_TemplateSource_fn(Instantiator* __this, ::g::Fuse::Visual** __retval);
 void Instantiator__set_TemplateSource_fn(Instantiator* __this, ::g::Fuse::Visual* value);
 void Instantiator__TrimAndPad_fn(Instantiator* __this);
-void Instantiator__add_UpdatedWindowItems_fn(Instantiator* __this, uDelegate* value);
-void Instantiator__remove_UpdatedWindowItems_fn(Instantiator* __this, uDelegate* value);
 
 struct Instantiator : ::g::Fuse::Behavior
 {
     uStrong< ::g::Fuse::Triggers::BusyTask*> _busyTask;
-    uStrong<uDelegate*> _completedRemove;
     int _count;
     uStrong< ::g::Uno::Collections::Dictionary*> _dataMap;
     int _defer;
@@ -116,14 +110,12 @@ struct Instantiator : ::g::Fuse::Behavior
     uStrong<uString*> _matchKey;
     int _offset;
     bool _pendingNew;
-    bool _pendingUpdateWindowItems;
     uStrong< ::g::Uno::Collections::RootableList*> _rootTemplates;
     uStrong<uObject*> _subscription;
     uStrong<uObject*> _templates;
     uStrong< ::g::Uno::Collections::List*> _windowItems;
     uStrong<uString*> _TemplateKey;
     uStrong< ::g::Fuse::Visual*> _TemplateSource;
-    uStrong<uDelegate*> UpdatedWindowItems1;
 
     void ctor_3();
     void ctor_4(uObject* templates);
@@ -134,7 +126,6 @@ struct Instantiator : ::g::Fuse::Behavior
     void CompleteWindowItemsAction();
     int Count();
     void Count(int value);
-    int DataIndexOfChild(::g::Fuse::Node* child);
     int Defer();
     void Defer(int value);
     float DeferredPriority();
@@ -153,8 +144,6 @@ struct Instantiator : ::g::Fuse::Behavior
     void Offset(int value);
     void OnItemsChanged();
     void OnTemplatesChanged(::g::Uno::UX::Template* factory);
-    void OnUpdatedWindowItems();
-    void PostUpdatedWindowItems();
     void RemoveAll();
     void RemoveAt(int dataIndex);
     void RemoveFromParent(::g::Fuse::Node* n);
@@ -168,8 +157,6 @@ struct Instantiator : ::g::Fuse::Behavior
     ::g::Fuse::Visual* TemplateSource();
     void TemplateSource(::g::Fuse::Visual* value);
     void TrimAndPad();
-    void add_UpdatedWindowItems(uDelegate* value);
-    void remove_UpdatedWindowItems(uDelegate* value);
     static Instantiator* New2();
     static Instantiator* New3(uObject* templates);
 };

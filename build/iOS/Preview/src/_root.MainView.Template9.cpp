@@ -1,8 +1,8 @@
-// This file was generated based on build/iOS/Preview/cache/ux11/MainView.g.uno.
+// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <_root.gadden_FuseControlsTextInputControl_Value_Property.h>
-#include <_root.gadden_FuseDrawingImageFill_Url_Property.h>
+#include <_root.gadden_FuseCont-b48cdba6.h>
+#include <_root.gadden_FuseDraw-aa645b14.h>
 #include <_root.MainView.h>
 #include <_root.MainView.Template9.h>
 #include <_root.Paragraph.h>

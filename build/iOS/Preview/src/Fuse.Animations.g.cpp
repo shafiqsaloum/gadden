@@ -1,107 +1,107 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Animations.AnimationVariant.h>
+#include <Fuse.Animations.Anima-2f54bcf0.h>
+#include <Fuse.Animations.Anima-9f6f3909.h>
 #include <Fuse.Animations.Animator.h>
 #include <Fuse.Animations.AnimatorState.h>
-#include <Fuse.Animations.AnimatorVariant.h>
 #include <Fuse.Animations.Attractor-1.h>
-#include <Fuse.Animations.AverageMasterProperty-1.h>
-#include <Fuse.Animations.AverageMasterTransform.h>
+#include <Fuse.Animations.Avera-2b3394b0.h>
+#include <Fuse.Animations.Avera-d2893fe7.h>
 #include <Fuse.Animations.AverageMixer.h>
 #include <Fuse.Animations.Change-1.h>
-#include <Fuse.Animations.ContinuousTrackChangeState-1.h>
-#include <Fuse.Animations.ContinuousTrackProvider.h>
+#include <Fuse.Animations.Conti-233bd07.h>
+#include <Fuse.Animations.Conti-d67e9f3.h>
+#include <Fuse.Animations.Conve-36a5c7e0.h>
+#include <Fuse.Animations.Conve-36a5c7e2.h>
+#include <Fuse.Animations.Conve-36a5c7e3.h>
+#include <Fuse.Animations.Conve-d9da2591.h>
 #include <Fuse.Animations.Converter-1.h>
-#include <Fuse.Animations.ConverterDouble.h>
 #include <Fuse.Animations.ConverterFloat.h>
-#include <Fuse.Animations.ConverterFloat2.h>
-#include <Fuse.Animations.ConverterFloat3.h>
-#include <Fuse.Animations.ConverterFloat4.h>
 #include <Fuse.Animations.ConverterSize.h>
 #include <Fuse.Animations.ConverterSize2.h>
-#include <Fuse.Animations.CreateStateParams.h>
-#include <Fuse.Animations.CubicBezierEasing.h>
+#include <Fuse.Animations.Creat-d717a85f.h>
+#include <Fuse.Animations.Cubic-aa541862.h>
 #include <Fuse.Animations.Cycle-1.h>
 #include <Fuse.Animations.CycleState-1.h>
 #include <Fuse.Animations.CycleWaveform.h>
-#include <Fuse.Animations.DiscreteKeyframeTrack.h>
-#include <Fuse.Animations.DiscreteMasterProperty-1.h>
-#include <Fuse.Animations.DiscreteMasterTransform.h>
+#include <Fuse.Animations.Discr-864f74d9.h>
+#include <Fuse.Animations.Discr-ab696ab5.h>
+#include <Fuse.Animations.Discr-c06613e4.h>
+#include <Fuse.Animations.Discr-c354302b.h>
+#include <Fuse.Animations.Discr-c9a8607c.h>
+#include <Fuse.Animations.Discr-ed319c64.h>
 #include <Fuse.Animations.DiscreteMixer.h>
-#include <Fuse.Animations.DiscreteSingleTrack.h>
-#include <Fuse.Animations.DiscreteTrackChangeState-1.h>
-#include <Fuse.Animations.DiscreteTrackProvider.h>
-#include <Fuse.Animations.Easing.BackInImpl.h>
-#include <Fuse.Animations.Easing.BackInOutImpl.h>
-#include <Fuse.Animations.Easing.BackOutImpl.h>
-#include <Fuse.Animations.Easing.BounceInImpl.h>
-#include <Fuse.Animations.Easing.BounceInOutImpl.h>
-#include <Fuse.Animations.Easing.BounceOutImpl.h>
-#include <Fuse.Animations.Easing.CircularInImpl.h>
-#include <Fuse.Animations.Easing.CircularInOutImpl.h>
-#include <Fuse.Animations.Easing.CircularOutImpl.h>
-#include <Fuse.Animations.Easing.CubicInImpl.h>
-#include <Fuse.Animations.Easing.CubicInOutImpl.h>
-#include <Fuse.Animations.Easing.CubicOutImpl.h>
-#include <Fuse.Animations.Easing.ElasticInImpl.h>
-#include <Fuse.Animations.Easing.ElasticInOutImpl.h>
-#include <Fuse.Animations.Easing.ElasticOutImpl.h>
-#include <Fuse.Animations.Easing.ExponentialInImpl.h>
-#include <Fuse.Animations.Easing.ExponentialInOutImpl.h>
-#include <Fuse.Animations.Easing.ExponentialOutImpl.h>
+#include <Fuse.Animations.Easin-1629b8de.h>
+#include <Fuse.Animations.Easin-2bc722aa.h>
+#include <Fuse.Animations.Easin-2cfac9fd.h>
+#include <Fuse.Animations.Easin-3403b834.h>
+#include <Fuse.Animations.Easin-3a4eddc3.h>
+#include <Fuse.Animations.Easin-415c2349.h>
+#include <Fuse.Animations.Easin-4465e553.h>
+#include <Fuse.Animations.Easin-575a1f5f.h>
+#include <Fuse.Animations.Easin-5b6cada4.h>
+#include <Fuse.Animations.Easin-5c94be4a.h>
+#include <Fuse.Animations.Easin-5e2591f2.h>
+#include <Fuse.Animations.Easin-5f101b83.h>
+#include <Fuse.Animations.Easin-61472a22.h>
+#include <Fuse.Animations.Easin-63fc962e.h>
+#include <Fuse.Animations.Easin-69caaa88.h>
+#include <Fuse.Animations.Easin-76822aaf.h>
+#include <Fuse.Animations.Easin-77784bb7.h>
+#include <Fuse.Animations.Easin-7c43bf9c.h>
+#include <Fuse.Animations.Easin-87c2bc3c.h>
+#include <Fuse.Animations.Easin-88f71b99.h>
+#include <Fuse.Animations.Easin-8d87fbcd.h>
+#include <Fuse.Animations.Easin-9b0d98b6.h>
+#include <Fuse.Animations.Easin-a5b90955.h>
+#include <Fuse.Animations.Easin-b5669208.h>
+#include <Fuse.Animations.Easin-bcab48ca.h>
+#include <Fuse.Animations.Easin-ccffb351.h>
+#include <Fuse.Animations.Easin-d718cbb3.h>
+#include <Fuse.Animations.Easin-dd81a6a5.h>
+#include <Fuse.Animations.Easin-e748cec3.h>
+#include <Fuse.Animations.Easin-e938836c.h>
+#include <Fuse.Animations.Easin-f2fa966f.h>
+#include <Fuse.Animations.Easin-fbce721d.h>
 #include <Fuse.Animations.Easing.h>
-#include <Fuse.Animations.Easing.LinearImpl.h>
-#include <Fuse.Animations.Easing.QuadraticInImpl.h>
-#include <Fuse.Animations.Easing.QuadraticInOutImpl.h>
-#include <Fuse.Animations.Easing.QuadraticOutImpl.h>
-#include <Fuse.Animations.Easing.QuarticInImpl.h>
-#include <Fuse.Animations.Easing.QuarticInOutImpl.h>
-#include <Fuse.Animations.Easing.QuarticOutImpl.h>
-#include <Fuse.Animations.Easing.QuinticInImpl.h>
-#include <Fuse.Animations.Easing.QuinticInOutImpl.h>
-#include <Fuse.Animations.Easing.QuinticOutImpl.h>
-#include <Fuse.Animations.Easing.SinusoidalInImpl.h>
-#include <Fuse.Animations.Easing.SinusoidalInOutImpl.h>
-#include <Fuse.Animations.Easing.SinusoidalOutImpl.h>
 #include <Fuse.Animations.EasingFunction.h>
-#include <Fuse.Animations.EasingFunctions.h>
 #include <Fuse.Animations.EasingTrack.h>
-#include <Fuse.Animations.FastMatrixTransform.h>
-#include <Fuse.Animations.IBasePlayerFeedback.h>
+#include <Fuse.Animations.FastM-24ef5203.h>
+#include <Fuse.Animations.IBase-d3bd6f2e.h>
 #include <Fuse.Animations.IMixer.h>
 #include <Fuse.Animations.IMixerHandle-1.h>
 #include <Fuse.Animations.IMixerMaster.h>
-#include <Fuse.Animations.IPlayerFeedback.h>
+#include <Fuse.Animations.IPlay-a3f2f81f.h>
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Animations.IResizeMode.h>
 #include <Fuse.Animations.ITrackProvider.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
+#include <Fuse.Animations.IUnwr-594abe9.h>
+#include <Fuse.Animations.Keyfr-30a8e414.h>
 #include <Fuse.Animations.Keyframe.h>
-#include <Fuse.Animations.KeyframeInterpolation.h>
 #include <Fuse.Animations.KeyframeTrack.h>
-#include <Fuse.Animations.MasterBase-1.GFWResult.h>
+#include <Fuse.Animations.Maste-197394bf.h>
+#include <Fuse.Animations.Maste-2a82cad6.h>
+#include <Fuse.Animations.Maste-4c7af709.h>
+#include <Fuse.Animations.Maste-9f52236c.h>
 #include <Fuse.Animations.MasterBase-1.h>
-#include <Fuse.Animations.MasterProperty-1.h>
-#include <Fuse.Animations.MasterPropertyGet.h>
-#include <Fuse.Animations.MasterTransform.h>
 #include <Fuse.Animations.Mixer.h>
 #include <Fuse.Animations.MixerBase.h>
 #include <Fuse.Animations.MixerHandle-1.h>
 #include <Fuse.Animations.MixOp.h>
 #include <Fuse.Animations.Move.h>
+#include <Fuse.Animations.Nothi-ca9c5305.h>
 #include <Fuse.Animations.Nothing.h>
-#include <Fuse.Animations.NothingAnimatorState.h>
+#include <Fuse.Animations.OpenA-dfad1354.h>
 #include <Fuse.Animations.OpenAnimator.h>
-#include <Fuse.Animations.OpenAnimatorState.h>
+#include <Fuse.Animations.Playe-8fa817d1.h>
 #include <Fuse.Animations.Player.h>
-#include <Fuse.Animations.PlayerFeedbackFlags.h>
 #include <Fuse.Animations.PlayerPart.h>
 #include <Fuse.Animations.PlayMode.h>
+#include <Fuse.Animations.Range-39d99c29.h>
 #include <Fuse.Animations.RangeAdapter-1.h>
-#include <Fuse.Animations.RangeAdapterHelpers.h>
+#include <Fuse.Animations.Resiz-a57d457c.h>
 #include <Fuse.Animations.Resize.h>
-#include <Fuse.Animations.ResizeAnimatorState.h>
 #include <Fuse.Animations.Rotate.h>
 #include <Fuse.Animations.Scale.h>
 #include <Fuse.Animations.SeekDirection.h>
@@ -110,31 +110,31 @@
 #include <Fuse.Animations.Spin.h>
 #include <Fuse.Animations.SpinState.h>
 #include <Fuse.Animations.SplineTrack.h>
+#include <Fuse.Animations.Track-26653137.h>
 #include <Fuse.Animations.TrackAnimator.h>
-#include <Fuse.Animations.TrackAnimatorState.h>
 #include <Fuse.Animations.TrackProvider.h>
-#include <Fuse.Animations.TransformAnimator-1.h>
-#include <Fuse.Animations.TransformAnimatorState-1.h>
-#include <Fuse.Animations.TransformPriority.h>
-#include <Fuse.Animations.TriggerAnimation.h>
-#include <Fuse.Animations.TriggerAnimationState.h>
-#include <Fuse.Animations.TriggerAnimationState.SeekFlags.h>
+#include <Fuse.Animations.Trans-1cbe36aa.h>
+#include <Fuse.Animations.Trans-55a8cee6.h>
+#include <Fuse.Animations.Trans-997c8373.h>
+#include <Fuse.Animations.Trigg-21dd249.h>
+#include <Fuse.Animations.Trigg-75f4f270.h>
+#include <Fuse.Animations.Trigg-96b74ffc.h>
 #include <Fuse.Diagnostics.h>
 #include <Fuse.FastMatrix.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.Internal.Blender-1.h>
 #include <Fuse.Internal.BlenderMap.h>
+#include <Fuse.Internal.Curves.-1494dae5.h>
 #include <Fuse.Internal.Curves.h>
-#include <Fuse.Internal.Curves.PointInterpolater.h>
 #include <Fuse.Internal.ScalarBlender-1.h>
 #include <Fuse.IScalingMode.h>
 #include <Fuse.ITranslationMode.h>
-#include <Fuse.Motion.DestinationMotion-1.h>
-#include <Fuse.Motion.MotionDestinationType.h>
+#include <Fuse.Motion.Destinati-bd678751.h>
+#include <Fuse.Motion.MotionDes-5490bd7d.h>
 #include <Fuse.Motion.MotionUnit.h>
-#include <Fuse.Motion.Simulation.DestinationSimulation-1.h>
-#include <Fuse.Motion.Simulation.MotionSimulation-1.h>
-#include <Fuse.Motion.Simulation.Simulation.h>
+#include <Fuse.Motion.Simulatio-8063728b.h>
+#include <Fuse.Motion.Simulatio-a4ba96c1.h>
+#include <Fuse.Motion.Simulatio-b08eb1c5.h>
 #include <Fuse.Node.h>
 #include <Fuse.PlacedHandler.h>
 #include <Fuse.Properties.h>
@@ -159,7 +159,7 @@
 #include <Uno.Collections.List-1.h>
 #include <Uno.Delegate.h>
 #include <Uno.Diagnostics.Debug.h>
-#include <Uno.Diagnostics.DebugMessageType.h>
+#include <Uno.Diagnostics.Debug-5d778620.h>
 #include <Uno.Double.h>
 #include <Uno.Exception.h>
 #include <Uno.Float.h>
@@ -179,15 +179,15 @@
 #include <Uno.UX.Selector.h>
 #include <Uno.UX.Size.h>
 #include <Uno.UX.Size2.h>
-static uString* STRINGS[21];
+static uString* STRINGS[20];
 static uType* TYPES[80];
 
 namespace g{
 namespace Fuse{
 namespace Animations{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public enum AnimationVariant :3903
 uEnumType* AnimationVariant_typeof()
@@ -202,8 +202,8 @@ uEnumType* AnimationVariant_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public abstract class Animator :70
 // {
@@ -313,8 +313,8 @@ void Animator::MixOp(int value)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract class AnimatorState :124
 // {
@@ -369,8 +369,8 @@ void AnimatorState::ctor_(::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal enum AnimatorVariant :8
 uEnumType* AnimatorVariant_typeof()
@@ -386,8 +386,8 @@ uEnumType* AnimatorVariant_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class Attractor<T> :176
 // {
@@ -395,7 +395,7 @@ static void Attractor_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("target");
     ::STRINGS[1] = uString::Const("Motion should not be changed post-rooting");
-    ::STRINGS[2] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno");
+    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
     ::STRINGS[3] = uString::Const("set_Motion");
     ::TYPES[0] = ::g::Fuse::Motion::DestinationMotion_typeof();
     ::TYPES[1] = ::g::Fuse::Motion::Simulation::Simulation_typeof();
@@ -866,7 +866,7 @@ void Attractor::Motion(::g::Fuse::Motion::DestinationMotion* value)
     _motion = value;
 
     if (IsRootingCompleted())
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[1/*"Motion shou...*/], this, ::STRINGS[2/*"/Users/star...*/], 201, ::STRINGS[3/*"set_Motion"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[1/*"Motion shou...*/], this, ::STRINGS[2/*"/Users/eric...*/], 201, ::STRINGS[3/*"set_Motion"*/], NULL);
 }
 
 // public generated Uno.UX.Property<T> get_Target() [instance] :183
@@ -957,8 +957,8 @@ Attractor* Attractor::New3(uType* __type, ::g::Uno::UX::Property1* target)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class AverageMasterProperty<T> :377
 // {
@@ -1081,8 +1081,8 @@ AverageMasterProperty* AverageMasterProperty::New1(uType* __type, ::g::Uno::UX::
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class AverageMasterTransform :417
 // {
@@ -1167,8 +1167,8 @@ AverageMasterTransform* AverageMasterTransform::New1(::g::Fuse::Visual* node, ::
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class AverageMixer :367
 // {
@@ -1248,10 +1248,10 @@ AverageMixer* AverageMixer::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.BackInImpl :910
+// internal sealed class Easing.BackInImpl :756
 // {
 static void Easing__BackInImpl_build(uType* type)
 {
@@ -1273,13 +1273,13 @@ static void Easing__BackInImpl_build(uType* type)
     return type;
 }
 
-// public generated BackInImpl() :910
+// public generated BackInImpl() :756
 void Easing__BackInImpl__ctor_1_fn(Easing__BackInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :912
+// public override sealed double Map(double k) :758
 void Easing__BackInImpl__Map_fn(Easing__BackInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -1287,19 +1287,19 @@ void Easing__BackInImpl__Map_fn(Easing__BackInImpl* __this, double* k, double* _
     return *__retval = (k_ * k_) * (((double)(s + 1.0f) * k_) - (double)s), void();
 }
 
-// public generated BackInImpl New() :910
+// public generated BackInImpl New() :756
 void Easing__BackInImpl__New1_fn(Easing__BackInImpl** __retval)
 {
     *__retval = Easing__BackInImpl::New1();
 }
 
-// public generated BackInImpl() [instance] :910
+// public generated BackInImpl() [instance] :756
 void Easing__BackInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated BackInImpl New() [static] :910
+// public generated BackInImpl New() [static] :756
 Easing__BackInImpl* Easing__BackInImpl::New1()
 {
     Easing__BackInImpl* obj1 = (Easing__BackInImpl*)uNew(Easing__BackInImpl_typeof());
@@ -1308,10 +1308,10 @@ Easing__BackInImpl* Easing__BackInImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.BackInOutImpl :929
+// internal sealed class Easing.BackInOutImpl :775
 // {
 static void Easing__BackInOutImpl_build(uType* type)
 {
@@ -1333,13 +1333,13 @@ static void Easing__BackInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated BackInOutImpl() :929
+// public generated BackInOutImpl() :775
 void Easing__BackInOutImpl__ctor_1_fn(Easing__BackInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :931
+// public override sealed double Map(double k) :777
 void Easing__BackInOutImpl__Map_fn(Easing__BackInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -1353,19 +1353,19 @@ void Easing__BackInOutImpl__Map_fn(Easing__BackInOutImpl* __this, double* k, dou
     return *__retval = 0.5 * (((k_ * k_) * (((double)(s + 1.0f) * k_) + (double)s)) + 2.0), void();
 }
 
-// public generated BackInOutImpl New() :929
+// public generated BackInOutImpl New() :775
 void Easing__BackInOutImpl__New1_fn(Easing__BackInOutImpl** __retval)
 {
     *__retval = Easing__BackInOutImpl::New1();
 }
 
-// public generated BackInOutImpl() [instance] :929
+// public generated BackInOutImpl() [instance] :775
 void Easing__BackInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated BackInOutImpl New() [static] :929
+// public generated BackInOutImpl New() [static] :775
 Easing__BackInOutImpl* Easing__BackInOutImpl::New1()
 {
     Easing__BackInOutImpl* obj1 = (Easing__BackInOutImpl*)uNew(Easing__BackInOutImpl_typeof());
@@ -1374,10 +1374,10 @@ Easing__BackInOutImpl* Easing__BackInOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.BackOutImpl :919
+// internal sealed class Easing.BackOutImpl :765
 // {
 static void Easing__BackOutImpl_build(uType* type)
 {
@@ -1399,13 +1399,13 @@ static void Easing__BackOutImpl_build(uType* type)
     return type;
 }
 
-// public generated BackOutImpl() :919
+// public generated BackOutImpl() :765
 void Easing__BackOutImpl__ctor_1_fn(Easing__BackOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :921
+// public override sealed double Map(double k) :767
 void Easing__BackOutImpl__Map_fn(Easing__BackOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -1414,19 +1414,19 @@ void Easing__BackOutImpl__Map_fn(Easing__BackOutImpl* __this, double* k, double*
     return *__retval = ((k_ * k_) * (((double)(s + 1.0f) * k_) + (double)s)) + 1.0, void();
 }
 
-// public generated BackOutImpl New() :919
+// public generated BackOutImpl New() :765
 void Easing__BackOutImpl__New1_fn(Easing__BackOutImpl** __retval)
 {
     *__retval = Easing__BackOutImpl::New1();
 }
 
-// public generated BackOutImpl() [instance] :919
+// public generated BackOutImpl() [instance] :765
 void Easing__BackOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated BackOutImpl New() [static] :919
+// public generated BackOutImpl New() [static] :765
 Easing__BackOutImpl* Easing__BackOutImpl::New1()
 {
     Easing__BackOutImpl* obj1 = (Easing__BackOutImpl*)uNew(Easing__BackOutImpl_typeof());
@@ -1435,10 +1435,10 @@ Easing__BackOutImpl* Easing__BackOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.BounceInImpl :944
+// internal sealed class Easing.BounceInImpl :790
 // {
 static void Easing__BounceInImpl_build(uType* type)
 {
@@ -1460,13 +1460,13 @@ static void Easing__BounceInImpl_build(uType* type)
     return type;
 }
 
-// public generated BounceInImpl() :944
+// public generated BounceInImpl() :790
 void Easing__BounceInImpl__ctor_1_fn(Easing__BounceInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :946
+// public override sealed double Map(double k) :792
 void Easing__BounceInImpl__Map_fn(Easing__BounceInImpl* __this, double* k, double* __retval)
 {
     uStackFrame __("Fuse.Animations.Easing.BounceInImpl", "Map(double)");
@@ -1474,19 +1474,19 @@ void Easing__BounceInImpl__Map_fn(Easing__BounceInImpl* __this, double* k, doubl
     return *__retval = 1.0 - uPtr(::g::Fuse::Animations::Easing::BounceOut())->Map(1.0 - k_), void();
 }
 
-// public generated BounceInImpl New() :944
+// public generated BounceInImpl New() :790
 void Easing__BounceInImpl__New1_fn(Easing__BounceInImpl** __retval)
 {
     *__retval = Easing__BounceInImpl::New1();
 }
 
-// public generated BounceInImpl() [instance] :944
+// public generated BounceInImpl() [instance] :790
 void Easing__BounceInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated BounceInImpl New() [static] :944
+// public generated BounceInImpl New() [static] :790
 Easing__BounceInImpl* Easing__BounceInImpl::New1()
 {
     Easing__BounceInImpl* obj1 = (Easing__BounceInImpl*)uNew(Easing__BounceInImpl_typeof());
@@ -1495,10 +1495,10 @@ Easing__BounceInImpl* Easing__BounceInImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.BounceInOutImpl :978
+// internal sealed class Easing.BounceInOutImpl :824
 // {
 static void Easing__BounceInOutImpl_build(uType* type)
 {
@@ -1520,13 +1520,13 @@ static void Easing__BounceInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated BounceInOutImpl() :978
+// public generated BounceInOutImpl() :824
 void Easing__BounceInOutImpl__ctor_1_fn(Easing__BounceInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :980
+// public override sealed double Map(double k) :826
 void Easing__BounceInOutImpl__Map_fn(Easing__BounceInOutImpl* __this, double* k, double* __retval)
 {
     uStackFrame __("Fuse.Animations.Easing.BounceInOutImpl", "Map(double)");
@@ -1538,19 +1538,19 @@ void Easing__BounceInOutImpl__Map_fn(Easing__BounceInOutImpl* __this, double* k,
     return *__retval = (uPtr(::g::Fuse::Animations::Easing::BounceOut())->Map((k_ * 2.0) - 1.0) * 0.5) + 0.5, void();
 }
 
-// public generated BounceInOutImpl New() :978
+// public generated BounceInOutImpl New() :824
 void Easing__BounceInOutImpl__New1_fn(Easing__BounceInOutImpl** __retval)
 {
     *__retval = Easing__BounceInOutImpl::New1();
 }
 
-// public generated BounceInOutImpl() [instance] :978
+// public generated BounceInOutImpl() [instance] :824
 void Easing__BounceInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated BounceInOutImpl New() [static] :978
+// public generated BounceInOutImpl New() [static] :824
 Easing__BounceInOutImpl* Easing__BounceInOutImpl::New1()
 {
     Easing__BounceInOutImpl* obj1 = (Easing__BounceInOutImpl*)uNew(Easing__BounceInOutImpl_typeof());
@@ -1559,10 +1559,10 @@ Easing__BounceInOutImpl* Easing__BounceInOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.BounceOutImpl :952
+// internal sealed class Easing.BounceOutImpl :798
 // {
 static void Easing__BounceOutImpl_build(uType* type)
 {
@@ -1584,13 +1584,13 @@ static void Easing__BounceOutImpl_build(uType* type)
     return type;
 }
 
-// public generated BounceOutImpl() :952
+// public generated BounceOutImpl() :798
 void Easing__BounceOutImpl__ctor_1_fn(Easing__BounceOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :954
+// public override sealed double Map(double k) :800
 void Easing__BounceOutImpl__Map_fn(Easing__BounceOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -1614,19 +1614,19 @@ void Easing__BounceOutImpl__Map_fn(Easing__BounceOutImpl* __this, double* k, dou
     }
 }
 
-// public generated BounceOutImpl New() :952
+// public generated BounceOutImpl New() :798
 void Easing__BounceOutImpl__New1_fn(Easing__BounceOutImpl** __retval)
 {
     *__retval = Easing__BounceOutImpl::New1();
 }
 
-// public generated BounceOutImpl() [instance] :952
+// public generated BounceOutImpl() [instance] :798
 void Easing__BounceOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated BounceOutImpl New() [static] :952
+// public generated BounceOutImpl New() [static] :798
 Easing__BounceOutImpl* Easing__BounceOutImpl::New1()
 {
     Easing__BounceOutImpl* obj1 = (Easing__BounceOutImpl*)uNew(Easing__BounceOutImpl_typeof());
@@ -1635,8 +1635,8 @@ Easing__BounceOutImpl* Easing__BounceOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class Change<T> :487
 // {
@@ -2028,10 +2028,10 @@ Change* Change::New2(uType* __type, ::g::Uno::UX::Property1* target)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.CircularInImpl :836
+// internal sealed class Easing.CircularInImpl :682
 // {
 static void Easing__CircularInImpl_build(uType* type)
 {
@@ -2053,32 +2053,32 @@ static void Easing__CircularInImpl_build(uType* type)
     return type;
 }
 
-// public generated CircularInImpl() :836
+// public generated CircularInImpl() :682
 void Easing__CircularInImpl__ctor_1_fn(Easing__CircularInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :838
+// public override sealed double Map(double k) :684
 void Easing__CircularInImpl__Map_fn(Easing__CircularInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = 1.0 - ::g::Uno::Math::Sqrt(1.0 - (k_ * k_)), void();
 }
 
-// public generated CircularInImpl New() :836
+// public generated CircularInImpl New() :682
 void Easing__CircularInImpl__New1_fn(Easing__CircularInImpl** __retval)
 {
     *__retval = Easing__CircularInImpl::New1();
 }
 
-// public generated CircularInImpl() [instance] :836
+// public generated CircularInImpl() [instance] :682
 void Easing__CircularInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated CircularInImpl New() [static] :836
+// public generated CircularInImpl New() [static] :682
 Easing__CircularInImpl* Easing__CircularInImpl::New1()
 {
     Easing__CircularInImpl* obj1 = (Easing__CircularInImpl*)uNew(Easing__CircularInImpl_typeof());
@@ -2087,10 +2087,10 @@ Easing__CircularInImpl* Easing__CircularInImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.CircularInOutImpl :853
+// internal sealed class Easing.CircularInOutImpl :699
 // {
 static void Easing__CircularInOutImpl_build(uType* type)
 {
@@ -2112,13 +2112,13 @@ static void Easing__CircularInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated CircularInOutImpl() :853
+// public generated CircularInOutImpl() :699
 void Easing__CircularInOutImpl__ctor_1_fn(Easing__CircularInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :855
+// public override sealed double Map(double k) :701
 void Easing__CircularInOutImpl__Map_fn(Easing__CircularInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -2131,19 +2131,19 @@ void Easing__CircularInOutImpl__Map_fn(Easing__CircularInOutImpl* __this, double
     return *__retval = 0.5 * (::g::Uno::Math::Sqrt(1.0 - (k_ * k_)) + 1.0), void();
 }
 
-// public generated CircularInOutImpl New() :853
+// public generated CircularInOutImpl New() :699
 void Easing__CircularInOutImpl__New1_fn(Easing__CircularInOutImpl** __retval)
 {
     *__retval = Easing__CircularInOutImpl::New1();
 }
 
-// public generated CircularInOutImpl() [instance] :853
+// public generated CircularInOutImpl() [instance] :699
 void Easing__CircularInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated CircularInOutImpl New() [static] :853
+// public generated CircularInOutImpl New() [static] :699
 Easing__CircularInOutImpl* Easing__CircularInOutImpl::New1()
 {
     Easing__CircularInOutImpl* obj1 = (Easing__CircularInOutImpl*)uNew(Easing__CircularInOutImpl_typeof());
@@ -2152,10 +2152,10 @@ Easing__CircularInOutImpl* Easing__CircularInOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.CircularOutImpl :844
+// internal sealed class Easing.CircularOutImpl :690
 // {
 static void Easing__CircularOutImpl_build(uType* type)
 {
@@ -2177,13 +2177,13 @@ static void Easing__CircularOutImpl_build(uType* type)
     return type;
 }
 
-// public generated CircularOutImpl() :844
+// public generated CircularOutImpl() :690
 void Easing__CircularOutImpl__ctor_1_fn(Easing__CircularOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :846
+// public override sealed double Map(double k) :692
 void Easing__CircularOutImpl__Map_fn(Easing__CircularOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -2191,19 +2191,19 @@ void Easing__CircularOutImpl__Map_fn(Easing__CircularOutImpl* __this, double* k,
     return *__retval = ::g::Uno::Math::Sqrt(1.0 - (k_ * k_)), void();
 }
 
-// public generated CircularOutImpl New() :844
+// public generated CircularOutImpl New() :690
 void Easing__CircularOutImpl__New1_fn(Easing__CircularOutImpl** __retval)
 {
     *__retval = Easing__CircularOutImpl::New1();
 }
 
-// public generated CircularOutImpl() [instance] :844
+// public generated CircularOutImpl() [instance] :690
 void Easing__CircularOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated CircularOutImpl New() [static] :844
+// public generated CircularOutImpl New() [static] :690
 Easing__CircularOutImpl* Easing__CircularOutImpl::New1()
 {
     Easing__CircularOutImpl* obj1 = (Easing__CircularOutImpl*)uNew(Easing__CircularOutImpl_typeof());
@@ -2212,15 +2212,15 @@ Easing__CircularOutImpl* Easing__CircularOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class ContinuousTrackChangeState<T> :661
 // {
 static void ContinuousTrackChangeState_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("Invalid Seek");
-    ::STRINGS[6] = uString::Const("../../../Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno");
+    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[13] = ::g::Fuse::Animations::IMixerHandle_typeof();
     type->SetPrecalc(
@@ -2292,7 +2292,7 @@ void ContinuousTrackChangeState__SeekValue_fn(ContinuousTrackChangeState* __this
 
     if (__this->mixHandle == NULL)
     {
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[5/*"Invalid Seek"*/], 1, ::STRINGS[6/*"../../../Li...*/], 686);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[5/*"Invalid Seek"*/], 1, ::STRINGS[2/*"/Users/eric...*/], 686);
         return;
     }
 
@@ -2320,8 +2320,8 @@ ContinuousTrackChangeState* ContinuousTrackChangeState::New1(uType* __type, ::g:
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract interface ContinuousTrackProvider :3128
 // {
@@ -2335,8 +2335,8 @@ uInterfaceType* ContinuousTrackProvider_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract class Converter<T> :693
 // {
@@ -2370,8 +2370,8 @@ void Converter::ctor_()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class ConverterDouble :742
 // {
@@ -2450,8 +2450,8 @@ ConverterDouble* ConverterDouble::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class ConverterFloat :699
 // {
@@ -2530,8 +2530,8 @@ ConverterFloat* ConverterFloat::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class ConverterFloat2 :721
 // {
@@ -2610,8 +2610,8 @@ ConverterFloat2* ConverterFloat2::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class ConverterFloat3 :728
 // {
@@ -2690,8 +2690,8 @@ ConverterFloat3* ConverterFloat3::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class ConverterFloat4 :735
 // {
@@ -2770,8 +2770,8 @@ ConverterFloat4* ConverterFloat4::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class ConverterSize :706
 // {
@@ -2850,8 +2850,8 @@ ConverterSize* ConverterSize::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class ConverterSize2 :713
 // {
@@ -2897,7 +2897,7 @@ void ConverterSize2__ctor_1_fn(ConverterSize2* __this)
 void ConverterSize2__In_fn(ConverterSize2* __this, ::g::Uno::UX::Size2* value, ::g::Uno::Float4* __retval)
 {
     ::g::Uno::UX::Size2 value_ = *value;
-    return *__retval = ::g::Uno::Float4__New2(::g::Uno::UX::Size__op_Explicit1(value_.X), ::g::Uno::UX::Size__op_Explicit1(value_.Y), 0.0f, 0.0f), void();
+    return *__retval = ::g::Uno::Float4__New2(::g::Uno::UX::Size__op_Explicit(value_.X), ::g::Uno::UX::Size__op_Explicit(value_.Y), 0.0f, 0.0f), void();
 }
 
 // public generated ConverterSize2 New() :713
@@ -2930,8 +2930,8 @@ ConverterSize2* ConverterSize2::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class CreateStateParams :103
 // {
@@ -2984,10 +2984,10 @@ CreateStateParams* CreateStateParams::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// public sealed class CubicBezierEasing :1039
+// public sealed class CubicBezierEasing :885
 // {
 static void CubicBezierEasing_build(uType* type)
 {
@@ -3027,73 +3027,73 @@ static void CubicBezierEasing_build(uType* type)
     return type;
 }
 
-// public generated CubicBezierEasing() :1039
+// public generated CubicBezierEasing() :885
 void CubicBezierEasing__ctor_1_fn(CubicBezierEasing* __this)
 {
     __this->ctor_1();
 }
 
-// public generated double get_C1X() :1046
+// public generated double get_C1X() :892
 void CubicBezierEasing__get_C1X_fn(CubicBezierEasing* __this, double* __retval)
 {
     *__retval = __this->C1X();
 }
 
-// public generated void set_C1X(double value) :1046
+// public generated void set_C1X(double value) :892
 void CubicBezierEasing__set_C1X_fn(CubicBezierEasing* __this, double* value)
 {
     __this->C1X(*value);
 }
 
-// public generated double get_C1Y() :1047
+// public generated double get_C1Y() :893
 void CubicBezierEasing__get_C1Y_fn(CubicBezierEasing* __this, double* __retval)
 {
     *__retval = __this->C1Y();
 }
 
-// public generated void set_C1Y(double value) :1047
+// public generated void set_C1Y(double value) :893
 void CubicBezierEasing__set_C1Y_fn(CubicBezierEasing* __this, double* value)
 {
     __this->C1Y(*value);
 }
 
-// public generated double get_C2X() :1048
+// public generated double get_C2X() :894
 void CubicBezierEasing__get_C2X_fn(CubicBezierEasing* __this, double* __retval)
 {
     *__retval = __this->C2X();
 }
 
-// public generated void set_C2X(double value) :1048
+// public generated void set_C2X(double value) :894
 void CubicBezierEasing__set_C2X_fn(CubicBezierEasing* __this, double* value)
 {
     __this->C2X(*value);
 }
 
-// public generated double get_C2Y() :1049
+// public generated double get_C2Y() :895
 void CubicBezierEasing__get_C2Y_fn(CubicBezierEasing* __this, double* __retval)
 {
     *__retval = __this->C2Y();
 }
 
-// public generated void set_C2Y(double value) :1049
+// public generated void set_C2Y(double value) :895
 void CubicBezierEasing__set_C2Y_fn(CubicBezierEasing* __this, double* value)
 {
     __this->C2Y(*value);
 }
 
-// public float4 get_ControlPoints() :1053
+// public float4 get_ControlPoints() :899
 void CubicBezierEasing__get_ControlPoints_fn(CubicBezierEasing* __this, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->ControlPoints();
 }
 
-// public void set_ControlPoints(float4 value) :1054
+// public void set_ControlPoints(float4 value) :900
 void CubicBezierEasing__set_ControlPoints_fn(CubicBezierEasing* __this, ::g::Uno::Float4* value)
 {
     __this->ControlPoints(*value);
 }
 
-// public override sealed double Map(double p) :1057
+// public override sealed double Map(double p) :903
 void CubicBezierEasing__Map_fn(CubicBezierEasing* __this, double* p, double* __retval)
 {
     double p_ = *p;
@@ -3123,73 +3123,73 @@ void CubicBezierEasing__Map_fn(CubicBezierEasing* __this, double* p, double* __r
     return *__retval = (((e * ((t * t) * t)) + (f * (t * t))) + (g * t)) + h, void();
 }
 
-// public generated CubicBezierEasing New() :1039
+// public generated CubicBezierEasing New() :885
 void CubicBezierEasing__New1_fn(CubicBezierEasing** __retval)
 {
     *__retval = CubicBezierEasing::New1();
 }
 
-// public generated CubicBezierEasing() [instance] :1039
+// public generated CubicBezierEasing() [instance] :885
 void CubicBezierEasing::ctor_1()
 {
     ctor_();
 }
 
-// public generated double get_C1X() [instance] :1046
+// public generated double get_C1X() [instance] :892
 double CubicBezierEasing::C1X()
 {
     return _C1X;
 }
 
-// public generated void set_C1X(double value) [instance] :1046
+// public generated void set_C1X(double value) [instance] :892
 void CubicBezierEasing::C1X(double value)
 {
     _C1X = value;
 }
 
-// public generated double get_C1Y() [instance] :1047
+// public generated double get_C1Y() [instance] :893
 double CubicBezierEasing::C1Y()
 {
     return _C1Y;
 }
 
-// public generated void set_C1Y(double value) [instance] :1047
+// public generated void set_C1Y(double value) [instance] :893
 void CubicBezierEasing::C1Y(double value)
 {
     _C1Y = value;
 }
 
-// public generated double get_C2X() [instance] :1048
+// public generated double get_C2X() [instance] :894
 double CubicBezierEasing::C2X()
 {
     return _C2X;
 }
 
-// public generated void set_C2X(double value) [instance] :1048
+// public generated void set_C2X(double value) [instance] :894
 void CubicBezierEasing::C2X(double value)
 {
     _C2X = value;
 }
 
-// public generated double get_C2Y() [instance] :1049
+// public generated double get_C2Y() [instance] :895
 double CubicBezierEasing::C2Y()
 {
     return _C2Y;
 }
 
-// public generated void set_C2Y(double value) [instance] :1049
+// public generated void set_C2Y(double value) [instance] :895
 void CubicBezierEasing::C2Y(double value)
 {
     _C2Y = value;
 }
 
-// public float4 get_ControlPoints() [instance] :1053
+// public float4 get_ControlPoints() [instance] :899
 ::g::Uno::Float4 CubicBezierEasing::ControlPoints()
 {
     return ::g::Uno::Float4__New2((float)C1X(), (float)C1Y(), (float)C2X(), (float)C2Y());
 }
 
-// public void set_ControlPoints(float4 value) [instance] :1054
+// public void set_ControlPoints(float4 value) [instance] :900
 void CubicBezierEasing::ControlPoints(::g::Uno::Float4 value)
 {
     C1X((double)value.X);
@@ -3198,7 +3198,7 @@ void CubicBezierEasing::ControlPoints(::g::Uno::Float4 value)
     C2Y((double)value.W);
 }
 
-// public generated CubicBezierEasing New() [static] :1039
+// public generated CubicBezierEasing New() [static] :885
 CubicBezierEasing* CubicBezierEasing::New1()
 {
     CubicBezierEasing* obj1 = (CubicBezierEasing*)uNew(CubicBezierEasing_typeof());
@@ -3207,10 +3207,10 @@ CubicBezierEasing* CubicBezierEasing::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.CubicInImpl :689
+// internal sealed class Easing.CubicInImpl :535
 // {
 static void Easing__CubicInImpl_build(uType* type)
 {
@@ -3232,32 +3232,32 @@ static void Easing__CubicInImpl_build(uType* type)
     return type;
 }
 
-// public generated CubicInImpl() :689
+// public generated CubicInImpl() :535
 void Easing__CubicInImpl__ctor_1_fn(Easing__CubicInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :691
+// public override sealed double Map(double k) :537
 void Easing__CubicInImpl__Map_fn(Easing__CubicInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = (k_ * k_) * k_, void();
 }
 
-// public generated CubicInImpl New() :689
+// public generated CubicInImpl New() :535
 void Easing__CubicInImpl__New1_fn(Easing__CubicInImpl** __retval)
 {
     *__retval = Easing__CubicInImpl::New1();
 }
 
-// public generated CubicInImpl() [instance] :689
+// public generated CubicInImpl() [instance] :535
 void Easing__CubicInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated CubicInImpl New() [static] :689
+// public generated CubicInImpl New() [static] :535
 Easing__CubicInImpl* Easing__CubicInImpl::New1()
 {
     Easing__CubicInImpl* obj1 = (Easing__CubicInImpl*)uNew(Easing__CubicInImpl_typeof());
@@ -3266,10 +3266,10 @@ Easing__CubicInImpl* Easing__CubicInImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.CubicInOutImpl :706
+// internal sealed class Easing.CubicInOutImpl :552
 // {
 static void Easing__CubicInOutImpl_build(uType* type)
 {
@@ -3291,13 +3291,13 @@ static void Easing__CubicInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated CubicInOutImpl() :706
+// public generated CubicInOutImpl() :552
 void Easing__CubicInOutImpl__ctor_1_fn(Easing__CubicInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :708
+// public override sealed double Map(double k) :554
 void Easing__CubicInOutImpl__Map_fn(Easing__CubicInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -3310,19 +3310,19 @@ void Easing__CubicInOutImpl__Map_fn(Easing__CubicInOutImpl* __this, double* k, d
     return *__retval = 0.5 * (((k_ * k_) * k_) + 2.0), void();
 }
 
-// public generated CubicInOutImpl New() :706
+// public generated CubicInOutImpl New() :552
 void Easing__CubicInOutImpl__New1_fn(Easing__CubicInOutImpl** __retval)
 {
     *__retval = Easing__CubicInOutImpl::New1();
 }
 
-// public generated CubicInOutImpl() [instance] :706
+// public generated CubicInOutImpl() [instance] :552
 void Easing__CubicInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated CubicInOutImpl New() [static] :706
+// public generated CubicInOutImpl New() [static] :552
 Easing__CubicInOutImpl* Easing__CubicInOutImpl::New1()
 {
     Easing__CubicInOutImpl* obj1 = (Easing__CubicInOutImpl*)uNew(Easing__CubicInOutImpl_typeof());
@@ -3331,10 +3331,10 @@ Easing__CubicInOutImpl* Easing__CubicInOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.CubicOutImpl :697
+// internal sealed class Easing.CubicOutImpl :543
 // {
 static void Easing__CubicOutImpl_build(uType* type)
 {
@@ -3356,13 +3356,13 @@ static void Easing__CubicOutImpl_build(uType* type)
     return type;
 }
 
-// public generated CubicOutImpl() :697
+// public generated CubicOutImpl() :543
 void Easing__CubicOutImpl__ctor_1_fn(Easing__CubicOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :699
+// public override sealed double Map(double k) :545
 void Easing__CubicOutImpl__Map_fn(Easing__CubicOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -3370,19 +3370,19 @@ void Easing__CubicOutImpl__Map_fn(Easing__CubicOutImpl* __this, double* k, doubl
     return *__retval = ((k_ * k_) * k_) + 1.0, void();
 }
 
-// public generated CubicOutImpl New() :697
+// public generated CubicOutImpl New() :543
 void Easing__CubicOutImpl__New1_fn(Easing__CubicOutImpl** __retval)
 {
     *__retval = Easing__CubicOutImpl::New1();
 }
 
-// public generated CubicOutImpl() [instance] :697
+// public generated CubicOutImpl() [instance] :543
 void Easing__CubicOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated CubicOutImpl New() [static] :697
+// public generated CubicOutImpl New() [static] :543
 Easing__CubicOutImpl* Easing__CubicOutImpl::New1()
 {
     Easing__CubicOutImpl* obj1 = (Easing__CubicOutImpl*)uNew(Easing__CubicOutImpl_typeof());
@@ -3391,14 +3391,14 @@ Easing__CubicOutImpl* Easing__CubicOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class Cycle<T> :803
 // {
 static void Cycle_build(uType* type)
 {
-    ::STRINGS[7] = uString::Const("Target");
+    ::STRINGS[6] = uString::Const("Target");
     ::TYPES[5] = ::g::Fuse::Internal::BlenderMap_typeof();
     ::TYPES[14] = ::g::Fuse::Animations::CycleState_typeof();
     type->SetPrecalc(
@@ -3639,7 +3639,7 @@ void Cycle::ctor_3(::g::Uno::UX::Property1* Target1)
     ctor_2();
 
     if (Target1 == NULL)
-        U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[7/*"Target"*/]));
+        U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[6/*"Target"*/]));
 
     Target(Target1);
     ::g::Fuse::Internal::Blender* blender = (::g::Fuse::Internal::Blender*)::g::Fuse::Internal::BlenderMap::Get(__types[1]);
@@ -3822,15 +3822,15 @@ Cycle* Cycle::New2(uType* __type, ::g::Uno::UX::Property1* Target1)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class CycleState<T> :974
 // {
 static void CycleState_build(uType* type)
 {
-    ::STRINGS[8] = uString::Const("Invalid seek");
-    ::STRINGS[6] = uString::Const("../../../Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno");
+    ::STRINGS[7] = uString::Const("Invalid seek");
+    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[5] = ::g::Fuse::Internal::BlenderMap_typeof();
     ::TYPES[13] = ::g::Fuse::Animations::IMixerHandle_typeof();
@@ -3912,7 +3912,7 @@ void CycleState__Seek_fn(CycleState* __this, bool* on, float* interval, float* s
 
     if (__this->mixHandle == NULL)
     {
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[8/*"Invalid seek"*/], 1, ::STRINGS[6/*"../../../Li...*/], 1010);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[7/*"Invalid seek"*/], 1, ::STRINGS[2/*"/Users/eric...*/], 1010);
         return *__retval = true, void();
     }
 
@@ -3961,8 +3961,8 @@ CycleState* CycleState::New1(uType* __type, ::g::Fuse::Animations::Cycle* animat
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public enum CycleWaveform :759
 uEnumType* CycleWaveform_typeof()
@@ -3979,8 +3979,8 @@ uEnumType* CycleWaveform_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class DiscreteKeyframeTrack :1050
 // {
@@ -4166,8 +4166,8 @@ DiscreteKeyframeTrack* DiscreteKeyframeTrack::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class DiscreteMasterProperty<T> :1144
 // {
@@ -4258,8 +4258,8 @@ DiscreteMasterProperty* DiscreteMasterProperty::New1(uType* __type, ::g::Uno::UX
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class DiscreteMasterTransform :1167
 // {
@@ -4340,8 +4340,8 @@ DiscreteMasterTransform* DiscreteMasterTransform::New1(::g::Fuse::Visual* node, 
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class DiscreteMixer :1134
 // {
@@ -4421,8 +4421,8 @@ DiscreteMixer* DiscreteMixer::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class DiscreteSingleTrack :1202
 // {
@@ -4536,15 +4536,15 @@ DiscreteSingleTrack* DiscreteSingleTrack::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class DiscreteTrackChangeState<T> :628
 // {
 static void DiscreteTrackChangeState_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("Invalid Seek");
-    ::STRINGS[6] = uString::Const("../../../Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno");
+    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[13] = ::g::Fuse::Animations::IMixerHandle_typeof();
     type->SetPrecalc(
@@ -4614,7 +4614,7 @@ void DiscreteTrackChangeState__SeekObjectValue_fn(DiscreteTrackChangeState* __th
 
     if (__this->mixHandle == NULL)
     {
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[5/*"Invalid Seek"*/], 1, ::STRINGS[6/*"../../../Li...*/], 653);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[5/*"Invalid Seek"*/], 1, ::STRINGS[2/*"/Users/eric...*/], 653);
         return;
     }
 
@@ -4643,8 +4643,8 @@ DiscreteTrackChangeState* DiscreteTrackChangeState::New1(uType* __type, ::g::Fus
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract interface DiscreteTrackProvider :3136
 // {
@@ -4658,12 +4658,12 @@ uInterfaceType* DiscreteTrackProvider_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// public abstract class Easing :603
+// public abstract class Easing :449
 // {
-// static Easing() :603
+// static Easing() :449
 static void Easing__cctor__fn(uType* __type)
 {
     Easing::Linear_ = Easing__LinearImpl::New1();
@@ -4784,7 +4784,7 @@ Easing_type* Easing_typeof()
     return type;
 }
 
-// protected generated Easing() :603
+// protected generated Easing() :449
 void Easing__ctor__fn(Easing* __this)
 {
     __this->ctor_();
@@ -4822,16 +4822,16 @@ uSStrong<Easing*> Easing::SinusoidalIn_;
 uSStrong<Easing*> Easing::SinusoidalInOut_;
 uSStrong<Easing*> Easing::SinusoidalOut_;
 
-// protected generated Easing() [instance] :603
+// protected generated Easing() [instance] :449
 void Easing::ctor_()
 {
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// public delegate float EasingFunction(float f) :1085
+// public delegate float EasingFunction(float f) :931
 uDelegateType* EasingFunction_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -4843,10 +4843,10 @@ uDelegateType* EasingFunction_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// public static class EasingFunctions :1093
+// public static class EasingFunctions :939
 // {
 static void EasingFunctions_build(uType* type)
 {
@@ -4929,206 +4929,206 @@ uClassType* EasingFunctions_typeof()
     return type;
 }
 
-// public static float BackIn(float k) :1327
+// public static float BackIn(float k) :1173
 void EasingFunctions__BackIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::BackIn(*k);
 }
 
-// public static float BackInOut(float k) :1340
+// public static float BackInOut(float k) :1186
 void EasingFunctions__BackInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::BackInOut(*k);
 }
 
-// public static float BackOut(float k) :1333
+// public static float BackOut(float k) :1179
 void EasingFunctions__BackOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::BackOut(*k);
 }
 
-// public static float BounceIn(float k) :1352
+// public static float BounceIn(float k) :1198
 void EasingFunctions__BounceIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::BounceIn(*k);
 }
 
-// public static float BounceInOut(float k) :1380
+// public static float BounceInOut(float k) :1226
 void EasingFunctions__BounceInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::BounceInOut(*k);
 }
 
-// public static float BounceOut(float k) :1357
+// public static float BounceOut(float k) :1203
 void EasingFunctions__BounceOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::BounceOut(*k);
 }
 
-// public static float CircularIn(float k) :1271
+// public static float CircularIn(float k) :1117
 void EasingFunctions__CircularIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::CircularIn(*k);
 }
 
-// public static float CircularInOut(float k) :1282
+// public static float CircularInOut(float k) :1128
 void EasingFunctions__CircularInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::CircularInOut(*k);
 }
 
-// public static float CircularOut(float k) :1276
+// public static float CircularOut(float k) :1122
 void EasingFunctions__CircularOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::CircularOut(*k);
 }
 
-// public static float CubicIn(float k) :1169
+// public static float CubicIn(float k) :1015
 void EasingFunctions__CubicIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::CubicIn(*k);
 }
 
-// public static float CubicInOut(float k) :1180
+// public static float CubicInOut(float k) :1026
 void EasingFunctions__CubicInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::CubicInOut(*k);
 }
 
-// public static float CubicOut(float k) :1174
+// public static float CubicOut(float k) :1020
 void EasingFunctions__CubicOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::CubicOut(*k);
 }
 
-// public static float ElasticIn(float k) :1291
+// public static float ElasticIn(float k) :1137
 void EasingFunctions__ElasticIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::ElasticIn(*k);
 }
 
-// public static float ElasticInOut(float k) :1313
+// public static float ElasticInOut(float k) :1159
 void EasingFunctions__ElasticInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::ElasticInOut(*k);
 }
 
-// public static float ElasticOut(float k) :1302
+// public static float ElasticOut(float k) :1148
 void EasingFunctions__ElasticOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::ElasticOut(*k);
 }
 
-// public static float ExponentialIn(float k) :1246
+// public static float ExponentialIn(float k) :1092
 void EasingFunctions__ExponentialIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::ExponentialIn(*k);
 }
 
-// public static float ExponentialInOut(float k) :1256
+// public static float ExponentialInOut(float k) :1102
 void EasingFunctions__ExponentialInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::ExponentialInOut(*k);
 }
 
-// public static float ExponentialOut(float k) :1251
+// public static float ExponentialOut(float k) :1097
 void EasingFunctions__ExponentialOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::ExponentialOut(*k);
 }
 
-// public static Fuse.Animations.EasingFunction FromEasing(Fuse.Animations.Easing e) :1095
+// public static Fuse.Animations.EasingFunction FromEasing(Fuse.Animations.Easing e) :941
 void EasingFunctions__FromEasing_fn(::g::Fuse::Animations::Easing* e, uDelegate** __retval)
 {
     *__retval = EasingFunctions::FromEasing(e);
 }
 
-// public static float Linear(float k) :1142
+// public static float Linear(float k) :988
 void EasingFunctions__Linear_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::Linear(*k);
 }
 
-// public static float QuadraticIn(float k) :1147
+// public static float QuadraticIn(float k) :993
 void EasingFunctions__QuadraticIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuadraticIn(*k);
 }
 
-// public static float QuadraticInOut(float k) :1157
+// public static float QuadraticInOut(float k) :1003
 void EasingFunctions__QuadraticInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuadraticInOut(*k);
 }
 
-// public static float QuadraticOut(float k) :1152
+// public static float QuadraticOut(float k) :998
 void EasingFunctions__QuadraticOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuadraticOut(*k);
 }
 
-// public static float QuarticIn(float k) :1190
+// public static float QuarticIn(float k) :1036
 void EasingFunctions__QuarticIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuarticIn(*k);
 }
 
-// public static float QuarticInOut(float k) :1201
+// public static float QuarticInOut(float k) :1047
 void EasingFunctions__QuarticInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuarticInOut(*k);
 }
 
-// public static float QuarticOut(float k) :1195
+// public static float QuarticOut(float k) :1041
 void EasingFunctions__QuarticOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuarticOut(*k);
 }
 
-// public static float QuinticIn(float k) :1210
+// public static float QuinticIn(float k) :1056
 void EasingFunctions__QuinticIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuinticIn(*k);
 }
 
-// public static float QuinticInOut(float k) :1221
+// public static float QuinticInOut(float k) :1067
 void EasingFunctions__QuinticInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuinticInOut(*k);
 }
 
-// public static float QuinticOut(float k) :1215
+// public static float QuinticOut(float k) :1061
 void EasingFunctions__QuinticOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuinticOut(*k);
 }
 
-// public static float SinusoidalIn(float k) :1231
+// public static float SinusoidalIn(float k) :1077
 void EasingFunctions__SinusoidalIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::SinusoidalIn(*k);
 }
 
-// public static float SinusoidalInOut(float k) :1241
+// public static float SinusoidalInOut(float k) :1087
 void EasingFunctions__SinusoidalInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::SinusoidalInOut(*k);
 }
 
-// public static float SinusoidalOut(float k) :1236
+// public static float SinusoidalOut(float k) :1082
 void EasingFunctions__SinusoidalOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::SinusoidalOut(*k);
 }
 
-// public static float BackIn(float k) [static] :1327
+// public static float BackIn(float k) [static] :1173
 float EasingFunctions::BackIn(float k)
 {
     float s = 1.70158f;
     return (k * k) * (((s + 1.0f) * k) - s);
 }
 
-// public static float BackInOut(float k) [static] :1340
+// public static float BackInOut(float k) [static] :1186
 float EasingFunctions::BackInOut(float k)
 {
     float s = 2.59490943f;
@@ -5141,7 +5141,7 @@ float EasingFunctions::BackInOut(float k)
     return 0.5f * (((k * k) * (((s + 1.0f) * k) + s)) + 2.0f);
 }
 
-// public static float BackOut(float k) [static] :1333
+// public static float BackOut(float k) [static] :1179
 float EasingFunctions::BackOut(float k)
 {
     float s = 1.70158f;
@@ -5149,13 +5149,13 @@ float EasingFunctions::BackOut(float k)
     return ((k * k) * (((s + 1.0f) * k) + s)) + 1.0f;
 }
 
-// public static float BounceIn(float k) [static] :1352
+// public static float BounceIn(float k) [static] :1198
 float EasingFunctions::BounceIn(float k)
 {
     return 1.0f - EasingFunctions::BounceOut(1.0f - k);
 }
 
-// public static float BounceInOut(float k) [static] :1380
+// public static float BounceInOut(float k) [static] :1226
 float EasingFunctions::BounceInOut(float k)
 {
     if (k < 0.5f)
@@ -5164,7 +5164,7 @@ float EasingFunctions::BounceInOut(float k)
     return (EasingFunctions::BounceOut((k * 2.0f) - 1.0f) * 0.5f) + 0.5f;
 }
 
-// public static float BounceOut(float k) [static] :1357
+// public static float BounceOut(float k) [static] :1203
 float EasingFunctions::BounceOut(float k)
 {
     if (k < 0.363636374f)
@@ -5186,13 +5186,13 @@ float EasingFunctions::BounceOut(float k)
     }
 }
 
-// public static float CircularIn(float k) [static] :1271
+// public static float CircularIn(float k) [static] :1117
 float EasingFunctions::CircularIn(float k)
 {
     return 1.0f - ::g::Uno::Math::Sqrt1(1.0f - (k * k));
 }
 
-// public static float CircularInOut(float k) [static] :1282
+// public static float CircularInOut(float k) [static] :1128
 float EasingFunctions::CircularInOut(float k)
 {
     k = k * 2.0f;
@@ -5204,20 +5204,20 @@ float EasingFunctions::CircularInOut(float k)
     return 0.5f * (::g::Uno::Math::Sqrt1(1.0f - (k * k)) + 1.0f);
 }
 
-// public static float CircularOut(float k) [static] :1276
+// public static float CircularOut(float k) [static] :1122
 float EasingFunctions::CircularOut(float k)
 {
     k = k - 1.0f;
     return ::g::Uno::Math::Sqrt1(1.0f - (k * k));
 }
 
-// public static float CubicIn(float k) [static] :1169
+// public static float CubicIn(float k) [static] :1015
 float EasingFunctions::CubicIn(float k)
 {
     return (k * k) * k;
 }
 
-// public static float CubicInOut(float k) [static] :1180
+// public static float CubicInOut(float k) [static] :1026
 float EasingFunctions::CubicInOut(float k)
 {
     k = k * 2.0f;
@@ -5229,14 +5229,14 @@ float EasingFunctions::CubicInOut(float k)
     return 0.5f * (((k * k) * k) + 2.0f);
 }
 
-// public static float CubicOut(float k) [static] :1174
+// public static float CubicOut(float k) [static] :1020
 float EasingFunctions::CubicOut(float k)
 {
     k = k - 1.0f;
     return ((k * k) * k) + 1.0f;
 }
 
-// public static float ElasticIn(float k) [static] :1291
+// public static float ElasticIn(float k) [static] :1137
 float EasingFunctions::ElasticIn(float k)
 {
     if (k == 0.0f)
@@ -5249,7 +5249,7 @@ float EasingFunctions::ElasticIn(float k)
     return -::g::Uno::Math::Pow1(2.0f, 10.0f * k) * ::g::Uno::Math::Sin1(((k - 0.1f) * 6.28318548f) * 2.5f);
 }
 
-// public static float ElasticInOut(float k) [static] :1313
+// public static float ElasticInOut(float k) [static] :1159
 float EasingFunctions::ElasticInOut(float k)
 {
     if (k == 0.0f)
@@ -5266,7 +5266,7 @@ float EasingFunctions::ElasticInOut(float k)
     return ((::g::Uno::Math::Pow1(2.0f, -10.0f * k) * ::g::Uno::Math::Sin1(((k - 0.1f) * 6.28318548f) * 2.5f)) * 0.5f) + 1.0f;
 }
 
-// public static float ElasticOut(float k) [static] :1302
+// public static float ElasticOut(float k) [static] :1148
 float EasingFunctions::ElasticOut(float k)
 {
     if (k == 0.0f)
@@ -5278,13 +5278,13 @@ float EasingFunctions::ElasticOut(float k)
     return (::g::Uno::Math::Pow1(2.0f, -10.0f * k) * ::g::Uno::Math::Sin1(((k - 0.1f) * 6.28318548f) * 2.5f)) + 1.0f;
 }
 
-// public static float ExponentialIn(float k) [static] :1246
+// public static float ExponentialIn(float k) [static] :1092
 float EasingFunctions::ExponentialIn(float k)
 {
     return (k == 0.0f) ? 0.0f : ::g::Uno::Math::Pow1(1024.0f, k - 1.0f);
 }
 
-// public static float ExponentialInOut(float k) [static] :1256
+// public static float ExponentialInOut(float k) [static] :1102
 float EasingFunctions::ExponentialInOut(float k)
 {
     if (k == 0.0f)
@@ -5301,13 +5301,13 @@ float EasingFunctions::ExponentialInOut(float k)
     return 0.5f * (-::g::Uno::Math::Pow1(2.0f, -10.0f * (k - 1.0f)) + 2.0f);
 }
 
-// public static float ExponentialOut(float k) [static] :1251
+// public static float ExponentialOut(float k) [static] :1097
 float EasingFunctions::ExponentialOut(float k)
 {
     return (k == 1.0f) ? 1.0f : 1.0f - ::g::Uno::Math::Pow1(2.0f, -10.0f * k);
 }
 
-// public static Fuse.Animations.EasingFunction FromEasing(Fuse.Animations.Easing e) [static] :1095
+// public static Fuse.Animations.EasingFunction FromEasing(Fuse.Animations.Easing e) [static] :941
 uDelegate* EasingFunctions::FromEasing(::g::Fuse::Animations::Easing* e)
 {
     if (uIs(e, ::TYPES[18/*Fuse.Animations.Easing.LinearImpl*/]))
@@ -5406,19 +5406,19 @@ uDelegate* EasingFunctions::FromEasing(::g::Fuse::Animations::Easing* e)
     return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__Linear_fn);
 }
 
-// public static float Linear(float k) [static] :1142
+// public static float Linear(float k) [static] :988
 float EasingFunctions::Linear(float k)
 {
     return k;
 }
 
-// public static float QuadraticIn(float k) [static] :1147
+// public static float QuadraticIn(float k) [static] :993
 float EasingFunctions::QuadraticIn(float k)
 {
     return k * k;
 }
 
-// public static float QuadraticInOut(float k) [static] :1157
+// public static float QuadraticInOut(float k) [static] :1003
 float EasingFunctions::QuadraticInOut(float k)
 {
     k = k * 2.0f;
@@ -5430,19 +5430,19 @@ float EasingFunctions::QuadraticInOut(float k)
     return -0.5f * ((k * (k - 2.0f)) - 1.0f);
 }
 
-// public static float QuadraticOut(float k) [static] :1152
+// public static float QuadraticOut(float k) [static] :998
 float EasingFunctions::QuadraticOut(float k)
 {
     return k * (2.0f - k);
 }
 
-// public static float QuarticIn(float k) [static] :1190
+// public static float QuarticIn(float k) [static] :1036
 float EasingFunctions::QuarticIn(float k)
 {
     return ((k * k) * k) * k;
 }
 
-// public static float QuarticInOut(float k) [static] :1201
+// public static float QuarticInOut(float k) [static] :1047
 float EasingFunctions::QuarticInOut(float k)
 {
     k = k * 2.0f;
@@ -5454,20 +5454,20 @@ float EasingFunctions::QuarticInOut(float k)
     return -0.5f * ((((k * k) * k) * k) - 2.0f);
 }
 
-// public static float QuarticOut(float k) [static] :1195
+// public static float QuarticOut(float k) [static] :1041
 float EasingFunctions::QuarticOut(float k)
 {
     k = k - 1.0f;
     return 1.0f - (((k * k) * k) * k);
 }
 
-// public static float QuinticIn(float k) [static] :1210
+// public static float QuinticIn(float k) [static] :1056
 float EasingFunctions::QuinticIn(float k)
 {
     return (((k * k) * k) * k) * k;
 }
 
-// public static float QuinticInOut(float k) [static] :1221
+// public static float QuinticInOut(float k) [static] :1067
 float EasingFunctions::QuinticInOut(float k)
 {
     k = k * 2.0f;
@@ -5479,34 +5479,34 @@ float EasingFunctions::QuinticInOut(float k)
     return 0.5f * (((((k * k) * k) * k) * k) + 2.0f);
 }
 
-// public static float QuinticOut(float k) [static] :1215
+// public static float QuinticOut(float k) [static] :1061
 float EasingFunctions::QuinticOut(float k)
 {
     k = k - 1.0f;
     return ((((k * k) * k) * k) * k) + 1.0f;
 }
 
-// public static float SinusoidalIn(float k) [static] :1231
+// public static float SinusoidalIn(float k) [static] :1077
 float EasingFunctions::SinusoidalIn(float k)
 {
     return 1.0f - ::g::Uno::Math::Cos1((k * 3.14159274f) / 2.0f);
 }
 
-// public static float SinusoidalInOut(float k) [static] :1241
+// public static float SinusoidalInOut(float k) [static] :1087
 float EasingFunctions::SinusoidalInOut(float k)
 {
     return 0.5f * (1.0f - ::g::Uno::Math::Cos1(3.14159274f * k));
 }
 
-// public static float SinusoidalOut(float k) [static] :1236
+// public static float SinusoidalOut(float k) [static] :1082
 float EasingFunctions::SinusoidalOut(float k)
 {
     return ::g::Uno::Math::Sin1((k * 3.14159274f) / 2.0f);
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class EasingTrack :1257
 // {
@@ -5622,10 +5622,10 @@ EasingTrack* EasingTrack::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.ElasticInImpl :865
+// internal sealed class Easing.ElasticInImpl :711
 // {
 static void Easing__ElasticInImpl_build(uType* type)
 {
@@ -5647,13 +5647,13 @@ static void Easing__ElasticInImpl_build(uType* type)
     return type;
 }
 
-// public generated ElasticInImpl() :865
+// public generated ElasticInImpl() :711
 void Easing__ElasticInImpl__ctor_1_fn(Easing__ElasticInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :867
+// public override sealed double Map(double k) :713
 void Easing__ElasticInImpl__Map_fn(Easing__ElasticInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -5668,19 +5668,19 @@ void Easing__ElasticInImpl__Map_fn(Easing__ElasticInImpl* __this, double* k, dou
     return *__retval = -::g::Uno::Math::Pow(2.0, 10.0 * k_) * ::g::Uno::Math::Sin(((k_ - 0.10000000149011612) * 6.2831854820251465) * 2.5), void();
 }
 
-// public generated ElasticInImpl New() :865
+// public generated ElasticInImpl New() :711
 void Easing__ElasticInImpl__New1_fn(Easing__ElasticInImpl** __retval)
 {
     *__retval = Easing__ElasticInImpl::New1();
 }
 
-// public generated ElasticInImpl() [instance] :865
+// public generated ElasticInImpl() [instance] :711
 void Easing__ElasticInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated ElasticInImpl New() [static] :865
+// public generated ElasticInImpl New() [static] :711
 Easing__ElasticInImpl* Easing__ElasticInImpl::New1()
 {
     Easing__ElasticInImpl* obj1 = (Easing__ElasticInImpl*)uNew(Easing__ElasticInImpl_typeof());
@@ -5689,10 +5689,10 @@ Easing__ElasticInImpl* Easing__ElasticInImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.ElasticInOutImpl :893
+// internal sealed class Easing.ElasticInOutImpl :739
 // {
 static void Easing__ElasticInOutImpl_build(uType* type)
 {
@@ -5714,13 +5714,13 @@ static void Easing__ElasticInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated ElasticInOutImpl() :893
+// public generated ElasticInOutImpl() :739
 void Easing__ElasticInOutImpl__ctor_1_fn(Easing__ElasticInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :895
+// public override sealed double Map(double k) :741
 void Easing__ElasticInOutImpl__Map_fn(Easing__ElasticInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -5739,19 +5739,19 @@ void Easing__ElasticInOutImpl__Map_fn(Easing__ElasticInOutImpl* __this, double* 
     return *__retval = ((::g::Uno::Math::Pow(2.0, -10.0 * k_) * ::g::Uno::Math::Sin(((k_ - 0.10000000149011612) * 6.2831854820251465) * 2.5)) * 0.5) + 1.0, void();
 }
 
-// public generated ElasticInOutImpl New() :893
+// public generated ElasticInOutImpl New() :739
 void Easing__ElasticInOutImpl__New1_fn(Easing__ElasticInOutImpl** __retval)
 {
     *__retval = Easing__ElasticInOutImpl::New1();
 }
 
-// public generated ElasticInOutImpl() [instance] :893
+// public generated ElasticInOutImpl() [instance] :739
 void Easing__ElasticInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated ElasticInOutImpl New() [static] :893
+// public generated ElasticInOutImpl New() [static] :739
 Easing__ElasticInOutImpl* Easing__ElasticInOutImpl::New1()
 {
     Easing__ElasticInOutImpl* obj1 = (Easing__ElasticInOutImpl*)uNew(Easing__ElasticInOutImpl_typeof());
@@ -5760,10 +5760,10 @@ Easing__ElasticInOutImpl* Easing__ElasticInOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.ElasticOutImpl :879
+// internal sealed class Easing.ElasticOutImpl :725
 // {
 static void Easing__ElasticOutImpl_build(uType* type)
 {
@@ -5785,13 +5785,13 @@ static void Easing__ElasticOutImpl_build(uType* type)
     return type;
 }
 
-// public generated ElasticOutImpl() :879
+// public generated ElasticOutImpl() :725
 void Easing__ElasticOutImpl__ctor_1_fn(Easing__ElasticOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :881
+// public override sealed double Map(double k) :727
 void Easing__ElasticOutImpl__Map_fn(Easing__ElasticOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -5805,19 +5805,19 @@ void Easing__ElasticOutImpl__Map_fn(Easing__ElasticOutImpl* __this, double* k, d
     return *__retval = (::g::Uno::Math::Pow(2.0, -10.0 * k_) * ::g::Uno::Math::Sin(((k_ - 0.10000000149011612) * 6.2831854820251465) * 2.5)) + 1.0, void();
 }
 
-// public generated ElasticOutImpl New() :879
+// public generated ElasticOutImpl New() :725
 void Easing__ElasticOutImpl__New1_fn(Easing__ElasticOutImpl** __retval)
 {
     *__retval = Easing__ElasticOutImpl::New1();
 }
 
-// public generated ElasticOutImpl() [instance] :879
+// public generated ElasticOutImpl() [instance] :725
 void Easing__ElasticOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated ElasticOutImpl New() [static] :879
+// public generated ElasticOutImpl New() [static] :725
 Easing__ElasticOutImpl* Easing__ElasticOutImpl::New1()
 {
     Easing__ElasticOutImpl* obj1 = (Easing__ElasticOutImpl*)uNew(Easing__ElasticOutImpl_typeof());
@@ -5826,10 +5826,10 @@ Easing__ElasticOutImpl* Easing__ElasticOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.ExponentialInImpl :802
+// internal sealed class Easing.ExponentialInImpl :648
 // {
 static void Easing__ExponentialInImpl_build(uType* type)
 {
@@ -5851,32 +5851,32 @@ static void Easing__ExponentialInImpl_build(uType* type)
     return type;
 }
 
-// public generated ExponentialInImpl() :802
+// public generated ExponentialInImpl() :648
 void Easing__ExponentialInImpl__ctor_1_fn(Easing__ExponentialInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :804
+// public override sealed double Map(double k) :650
 void Easing__ExponentialInImpl__Map_fn(Easing__ExponentialInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = (k_ == 0.0) ? 0.0 : ::g::Uno::Math::Pow(1024.0, k_ - 1.0), void();
 }
 
-// public generated ExponentialInImpl New() :802
+// public generated ExponentialInImpl New() :648
 void Easing__ExponentialInImpl__New1_fn(Easing__ExponentialInImpl** __retval)
 {
     *__retval = Easing__ExponentialInImpl::New1();
 }
 
-// public generated ExponentialInImpl() [instance] :802
+// public generated ExponentialInImpl() [instance] :648
 void Easing__ExponentialInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated ExponentialInImpl New() [static] :802
+// public generated ExponentialInImpl New() [static] :648
 Easing__ExponentialInImpl* Easing__ExponentialInImpl::New1()
 {
     Easing__ExponentialInImpl* obj1 = (Easing__ExponentialInImpl*)uNew(Easing__ExponentialInImpl_typeof());
@@ -5885,10 +5885,10 @@ Easing__ExponentialInImpl* Easing__ExponentialInImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.ExponentialInOutImpl :818
+// internal sealed class Easing.ExponentialInOutImpl :664
 // {
 static void Easing__ExponentialInOutImpl_build(uType* type)
 {
@@ -5910,13 +5910,13 @@ static void Easing__ExponentialInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated ExponentialInOutImpl() :818
+// public generated ExponentialInOutImpl() :664
 void Easing__ExponentialInOutImpl__ctor_1_fn(Easing__ExponentialInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :820
+// public override sealed double Map(double k) :666
 void Easing__ExponentialInOutImpl__Map_fn(Easing__ExponentialInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -5935,19 +5935,19 @@ void Easing__ExponentialInOutImpl__Map_fn(Easing__ExponentialInOutImpl* __this, 
     return *__retval = 0.5 * (-::g::Uno::Math::Pow(2.0, -10.0 * (k_ - 1.0)) + 2.0), void();
 }
 
-// public generated ExponentialInOutImpl New() :818
+// public generated ExponentialInOutImpl New() :664
 void Easing__ExponentialInOutImpl__New1_fn(Easing__ExponentialInOutImpl** __retval)
 {
     *__retval = Easing__ExponentialInOutImpl::New1();
 }
 
-// public generated ExponentialInOutImpl() [instance] :818
+// public generated ExponentialInOutImpl() [instance] :664
 void Easing__ExponentialInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated ExponentialInOutImpl New() [static] :818
+// public generated ExponentialInOutImpl New() [static] :664
 Easing__ExponentialInOutImpl* Easing__ExponentialInOutImpl::New1()
 {
     Easing__ExponentialInOutImpl* obj1 = (Easing__ExponentialInOutImpl*)uNew(Easing__ExponentialInOutImpl_typeof());
@@ -5956,10 +5956,10 @@ Easing__ExponentialInOutImpl* Easing__ExponentialInOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.ExponentialOutImpl :810
+// internal sealed class Easing.ExponentialOutImpl :656
 // {
 static void Easing__ExponentialOutImpl_build(uType* type)
 {
@@ -5981,32 +5981,32 @@ static void Easing__ExponentialOutImpl_build(uType* type)
     return type;
 }
 
-// public generated ExponentialOutImpl() :810
+// public generated ExponentialOutImpl() :656
 void Easing__ExponentialOutImpl__ctor_1_fn(Easing__ExponentialOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :812
+// public override sealed double Map(double k) :658
 void Easing__ExponentialOutImpl__Map_fn(Easing__ExponentialOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = (k_ == 1.0) ? 1.0 : 1.0 - ::g::Uno::Math::Pow(2.0, -10.0 * k_), void();
 }
 
-// public generated ExponentialOutImpl New() :810
+// public generated ExponentialOutImpl New() :656
 void Easing__ExponentialOutImpl__New1_fn(Easing__ExponentialOutImpl** __retval)
 {
     *__retval = Easing__ExponentialOutImpl::New1();
 }
 
-// public generated ExponentialOutImpl() [instance] :810
+// public generated ExponentialOutImpl() [instance] :656
 void Easing__ExponentialOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated ExponentialOutImpl New() [static] :810
+// public generated ExponentialOutImpl New() [static] :656
 Easing__ExponentialOutImpl* Easing__ExponentialOutImpl::New1()
 {
     Easing__ExponentialOutImpl* obj1 = (Easing__ExponentialOutImpl*)uNew(Easing__ExponentialOutImpl_typeof());
@@ -6015,8 +6015,8 @@ Easing__ExponentialOutImpl* Easing__ExponentialOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class FastMatrixTransform :1810
 // {
@@ -6132,8 +6132,8 @@ FastMatrixTransform* FastMatrixTransform::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // protected struct MasterBase<T>.GFWResult :1696
 // {
@@ -6160,8 +6160,8 @@ uStructType* MasterBase__GFWResult_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract interface IBasePlayerFeedback :4113
 // {
@@ -6175,8 +6175,8 @@ uInterfaceType* IBasePlayerFeedback_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public abstract interface IMixer :1540
 // {
@@ -6194,8 +6194,8 @@ uInterfaceType* IMixer_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public abstract interface IMixerHandle<T> :1546
 // {
@@ -6213,8 +6213,8 @@ uInterfaceType* IMixerHandle_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract interface IMixerMaster :1561
 // {
@@ -6228,8 +6228,8 @@ uInterfaceType* IMixerMaster_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract interface IPlayerFeedback :4119
 // {
@@ -6243,8 +6243,8 @@ uInterfaceType* IPlayerFeedback_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public abstract interface IResize :2661
 // {
@@ -6260,8 +6260,8 @@ uInterfaceType* IResize_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public abstract interface IResizeMode :2666
 // {
@@ -6277,8 +6277,8 @@ uInterfaceType* IResizeMode_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public abstract interface ITrackProvider :3119
 // {
@@ -6292,8 +6292,8 @@ uInterfaceType* ITrackProvider_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract interface IUnwrappedPlayerFeedback :4124
 // {
@@ -6307,8 +6307,8 @@ uInterfaceType* IUnwrappedPlayerFeedback_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class Keyframe :1343
 // {
@@ -6820,8 +6820,8 @@ Keyframe* Keyframe::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public enum KeyframeInterpolation :2944
 uEnumType* KeyframeInterpolation_typeof()
@@ -6838,8 +6838,8 @@ uEnumType* KeyframeInterpolation_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract interface KeyframeTrack :3144
 // {
@@ -6853,10 +6853,10 @@ uInterfaceType* KeyframeTrack_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.LinearImpl :650
+// internal sealed class Easing.LinearImpl :496
 // {
 static void Easing__LinearImpl_build(uType* type)
 {
@@ -6878,32 +6878,32 @@ static void Easing__LinearImpl_build(uType* type)
     return type;
 }
 
-// public generated LinearImpl() :650
+// public generated LinearImpl() :496
 void Easing__LinearImpl__ctor_1_fn(Easing__LinearImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :652
+// public override sealed double Map(double k) :498
 void Easing__LinearImpl__Map_fn(Easing__LinearImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = k_, void();
 }
 
-// public generated LinearImpl New() :650
+// public generated LinearImpl New() :496
 void Easing__LinearImpl__New1_fn(Easing__LinearImpl** __retval)
 {
     *__retval = Easing__LinearImpl::New1();
 }
 
-// public generated LinearImpl() [instance] :650
+// public generated LinearImpl() [instance] :496
 void Easing__LinearImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated LinearImpl New() [static] :650
+// public generated LinearImpl New() [static] :496
 Easing__LinearImpl* Easing__LinearImpl::New1()
 {
     Easing__LinearImpl* obj1 = (Easing__LinearImpl*)uNew(Easing__LinearImpl_typeof());
@@ -6912,8 +6912,8 @@ Easing__LinearImpl* Easing__LinearImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract class MasterBase<T> :1613
 // {
@@ -6924,9 +6924,9 @@ static void MasterBase__Finalize_fn(MasterBase* __this)
 
 static void MasterBase_build(uType* type)
 {
-    ::STRINGS[9] = uString::Const("Attempt to register in inactive Master");
-    ::STRINGS[2] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno");
-    ::STRINGS[10] = uString::Const("Register");
+    ::STRINGS[8] = uString::Const("Attempt to register in inactive Master");
+    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
+    ::STRINGS[9] = uString::Const("Register");
     ::TYPES[53] = ::g::Uno::Collections::List_typeof();
     ::TYPES[2] = ::g::Uno::Action_typeof();
     type->SetPrecalc(
@@ -7078,7 +7078,7 @@ void MasterBase::Register(::g::Fuse::Animations::MixerHandle* handle)
 
     if (_inactive)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[9/*"Attempt to ...*/], this, ::STRINGS[2/*"/Users/star...*/], 1636, ::STRINGS[10/*"Register"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[8/*"Attempt to ...*/], this, ::STRINGS[2/*"/Users/eric...*/], 1636, ::STRINGS[9/*"Register"*/]);
         return;
     }
 
@@ -7112,18 +7112,18 @@ void MasterBase::Unregister(::g::Fuse::Animations::MixerHandle* handle)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract class MasterProperty<T> :1729
 // {
 static void MasterProperty_build(uType* type)
 {
-    ::STRINGS[11] = uString::Const("The property ");
-    ::STRINGS[12] = uString::Const(" of ");
-    ::STRINGS[13] = uString::Const(" cannot be reliably animated because it does not provide an origin-setter. Animating this property may lead to visual glitches or inconsistencies.");
-    ::STRINGS[2] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno");
-    ::STRINGS[14] = uString::Const("GiveOriginSetterWarning");
+    ::STRINGS[10] = uString::Const("The property ");
+    ::STRINGS[11] = uString::Const(" of ");
+    ::STRINGS[12] = uString::Const(" cannot be reliably animated because it does not provide an origin-setter. Animating this property may lead to visual glitches or inconsistencies.");
+    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
+    ::STRINGS[13] = uString::Const("GiveOriginSetterWarning");
     type->SetBase(::g::Fuse::Animations::MasterBase_typeof()->MakeType(type->T(0), NULL));
     type->SetPrecalc(
         type->T(0));
@@ -7280,13 +7280,13 @@ void MasterProperty::GiveOriginSetterWarning()
     if (!_warningGiven)
     {
         _warningGiven = true;
-        ::g::Fuse::Diagnostics::UserWarning(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[11/*"The property "*/], ::g::Uno::UX::Selector__op_Implicit1(uPtr(Property)->Name())), ::STRINGS[12/*" of "*/]), uPtr(Property)->Object()), ::STRINGS[13/*" cannot be ...*/]), this, ::STRINGS[2/*"/Users/star...*/], 1793, ::STRINGS[14/*"GiveOriginS...*/]);
+        ::g::Fuse::Diagnostics::UserWarning(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[10/*"The property "*/], ::g::Uno::UX::Selector__op_Implicit1(uPtr(Property)->Name())), ::STRINGS[11/*" of "*/]), uPtr(Property)->Object()), ::STRINGS[12/*" cannot be ...*/]), this, ::STRINGS[2/*"/Users/eric...*/], 1793, ::STRINGS[13/*"GiveOriginS...*/]);
     }
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract interface MasterPropertyGet :1725
 // {
@@ -7300,8 +7300,8 @@ uInterfaceType* MasterPropertyGet_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract class MasterTransform :1846
 // {
@@ -7382,8 +7382,8 @@ void MasterTransform::ctor_1(::g::Fuse::Visual* node, ::g::Fuse::Animations::Mix
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class Mixer :1553
 // {
@@ -7472,8 +7472,8 @@ uObject* Mixer::DefaultDiscrete()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract class MixerBase :1563
 // {
@@ -7604,16 +7604,16 @@ void MixerBase::Unused(uObject* mb)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class MixerHandle<T> :1877
 // {
 static void MixerHandle_build(uType* type)
 {
-    ::STRINGS[15] = uString::Const("invalid MixerHandle.Set post-Unregister");
-    ::STRINGS[6] = uString::Const("../../../Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno");
-    ::STRINGS[16] = uString::Const("Invalid MixerHandle.RestValue post-Unregister");
+    ::STRINGS[14] = uString::Const("invalid MixerHandle.Set post-Unregister");
+    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
+    ::STRINGS[15] = uString::Const("Invalid MixerHandle.RestValue post-Unregister");
     type->SetPrecalc(
         type->T(0));
     type->SetInterfaces(
@@ -7699,7 +7699,7 @@ void MixerHandle__get_RestValue_fn(MixerHandle* __this, uTRef __retval)
     uT ret2(__types[0], U_ALLOCA(__types[0]->ValueSize));
 
     if (__this->Master == NULL)
-        U_THROW(::g::Uno::Exception::New2(::STRINGS[16/*"Invalid Mix...*/]));
+        U_THROW(::g::Uno::Exception::New2(::STRINGS[15/*"Invalid Mix...*/]));
 
     return __retval.Store((uPtr(__this->Master)->get_RestValue_ex(&ret2), ret2)), void();
 }
@@ -7712,7 +7712,7 @@ void MixerHandle__Set_fn(MixerHandle* __this, void* value, float* strength)
 
     if (__this->Master == NULL)
     {
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[15/*"invalid Mix...*/], 1, ::STRINGS[6/*"../../../Li...*/], 1909);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[14/*"invalid Mix...*/], 1, ::STRINGS[2/*"/Users/eric...*/], 1909);
         return;
     }
 
@@ -7786,8 +7786,8 @@ MixerHandle* MixerHandle::New1(uType* __type, ::g::Fuse::Animations::MasterBase*
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public enum MixOp :1530
 uEnumType* MixOp_typeof()
@@ -7803,8 +7803,8 @@ uEnumType* MixOp_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class Move :3688
 // {
@@ -7900,8 +7900,8 @@ Move* Move::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class Nothing :1943
 // {
@@ -7963,8 +7963,8 @@ Nothing* Nothing::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class NothingAnimatorState :1951
 // {
@@ -8016,8 +8016,8 @@ NothingAnimatorState* NothingAnimatorState::New1(::g::Fuse::Animations::Nothing*
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public abstract class OpenAnimator :1976
 // {
@@ -8137,8 +8137,8 @@ void OpenAnimator::ResetDuration()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract class OpenAnimatorState :2019
 // {
@@ -8222,8 +8222,8 @@ void OpenAnimatorState::ctor_1(::g::Fuse::Animations::OpenAnimator* animator, ::
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class Player :2244
 // {
@@ -8800,8 +8800,8 @@ Player* Player::New1(::g::Fuse::Visual* elm, ::g::Fuse::Animations::TriggerAnima
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal enum PlayerFeedbackFlags :4106
 uEnumType* PlayerFeedbackFlags_typeof()
@@ -8817,8 +8817,8 @@ uEnumType* PlayerFeedbackFlags_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class PlayerPart :2086
 // {
@@ -9077,8 +9077,8 @@ PlayerPart* PlayerPart::New1(double currentProgress)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public enum PlayMode :3909
 uEnumType* PlayMode_typeof()
@@ -9093,10 +9093,10 @@ uEnumType* PlayMode_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.QuadraticInImpl :658
+// internal sealed class Easing.QuadraticInImpl :504
 // {
 static void Easing__QuadraticInImpl_build(uType* type)
 {
@@ -9118,32 +9118,32 @@ static void Easing__QuadraticInImpl_build(uType* type)
     return type;
 }
 
-// public generated QuadraticInImpl() :658
+// public generated QuadraticInImpl() :504
 void Easing__QuadraticInImpl__ctor_1_fn(Easing__QuadraticInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :660
+// public override sealed double Map(double k) :506
 void Easing__QuadraticInImpl__Map_fn(Easing__QuadraticInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = k_ * k_, void();
 }
 
-// public generated QuadraticInImpl New() :658
+// public generated QuadraticInImpl New() :504
 void Easing__QuadraticInImpl__New1_fn(Easing__QuadraticInImpl** __retval)
 {
     *__retval = Easing__QuadraticInImpl::New1();
 }
 
-// public generated QuadraticInImpl() [instance] :658
+// public generated QuadraticInImpl() [instance] :504
 void Easing__QuadraticInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuadraticInImpl New() [static] :658
+// public generated QuadraticInImpl New() [static] :504
 Easing__QuadraticInImpl* Easing__QuadraticInImpl::New1()
 {
     Easing__QuadraticInImpl* obj1 = (Easing__QuadraticInImpl*)uNew(Easing__QuadraticInImpl_typeof());
@@ -9152,10 +9152,10 @@ Easing__QuadraticInImpl* Easing__QuadraticInImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.QuadraticInOutImpl :674
+// internal sealed class Easing.QuadraticInOutImpl :520
 // {
 static void Easing__QuadraticInOutImpl_build(uType* type)
 {
@@ -9177,13 +9177,13 @@ static void Easing__QuadraticInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated QuadraticInOutImpl() :674
+// public generated QuadraticInOutImpl() :520
 void Easing__QuadraticInOutImpl__ctor_1_fn(Easing__QuadraticInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :676
+// public override sealed double Map(double k) :522
 void Easing__QuadraticInOutImpl__Map_fn(Easing__QuadraticInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -9196,19 +9196,19 @@ void Easing__QuadraticInOutImpl__Map_fn(Easing__QuadraticInOutImpl* __this, doub
     return *__retval = -0.5 * ((k_ * (k_ - 2.0)) - 1.0), void();
 }
 
-// public generated QuadraticInOutImpl New() :674
+// public generated QuadraticInOutImpl New() :520
 void Easing__QuadraticInOutImpl__New1_fn(Easing__QuadraticInOutImpl** __retval)
 {
     *__retval = Easing__QuadraticInOutImpl::New1();
 }
 
-// public generated QuadraticInOutImpl() [instance] :674
+// public generated QuadraticInOutImpl() [instance] :520
 void Easing__QuadraticInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuadraticInOutImpl New() [static] :674
+// public generated QuadraticInOutImpl New() [static] :520
 Easing__QuadraticInOutImpl* Easing__QuadraticInOutImpl::New1()
 {
     Easing__QuadraticInOutImpl* obj1 = (Easing__QuadraticInOutImpl*)uNew(Easing__QuadraticInOutImpl_typeof());
@@ -9217,10 +9217,10 @@ Easing__QuadraticInOutImpl* Easing__QuadraticInOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.QuadraticOutImpl :666
+// internal sealed class Easing.QuadraticOutImpl :512
 // {
 static void Easing__QuadraticOutImpl_build(uType* type)
 {
@@ -9242,32 +9242,32 @@ static void Easing__QuadraticOutImpl_build(uType* type)
     return type;
 }
 
-// public generated QuadraticOutImpl() :666
+// public generated QuadraticOutImpl() :512
 void Easing__QuadraticOutImpl__ctor_1_fn(Easing__QuadraticOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :668
+// public override sealed double Map(double k) :514
 void Easing__QuadraticOutImpl__Map_fn(Easing__QuadraticOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = k_ * (2.0 - k_), void();
 }
 
-// public generated QuadraticOutImpl New() :666
+// public generated QuadraticOutImpl New() :512
 void Easing__QuadraticOutImpl__New1_fn(Easing__QuadraticOutImpl** __retval)
 {
     *__retval = Easing__QuadraticOutImpl::New1();
 }
 
-// public generated QuadraticOutImpl() [instance] :666
+// public generated QuadraticOutImpl() [instance] :512
 void Easing__QuadraticOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuadraticOutImpl New() [static] :666
+// public generated QuadraticOutImpl New() [static] :512
 Easing__QuadraticOutImpl* Easing__QuadraticOutImpl::New1()
 {
     Easing__QuadraticOutImpl* obj1 = (Easing__QuadraticOutImpl*)uNew(Easing__QuadraticOutImpl_typeof());
@@ -9276,10 +9276,10 @@ Easing__QuadraticOutImpl* Easing__QuadraticOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.QuarticInImpl :719
+// internal sealed class Easing.QuarticInImpl :565
 // {
 static void Easing__QuarticInImpl_build(uType* type)
 {
@@ -9301,32 +9301,32 @@ static void Easing__QuarticInImpl_build(uType* type)
     return type;
 }
 
-// public generated QuarticInImpl() :719
+// public generated QuarticInImpl() :565
 void Easing__QuarticInImpl__ctor_1_fn(Easing__QuarticInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :721
+// public override sealed double Map(double k) :567
 void Easing__QuarticInImpl__Map_fn(Easing__QuarticInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = ((k_ * k_) * k_) * k_, void();
 }
 
-// public generated QuarticInImpl New() :719
+// public generated QuarticInImpl New() :565
 void Easing__QuarticInImpl__New1_fn(Easing__QuarticInImpl** __retval)
 {
     *__retval = Easing__QuarticInImpl::New1();
 }
 
-// public generated QuarticInImpl() [instance] :719
+// public generated QuarticInImpl() [instance] :565
 void Easing__QuarticInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuarticInImpl New() [static] :719
+// public generated QuarticInImpl New() [static] :565
 Easing__QuarticInImpl* Easing__QuarticInImpl::New1()
 {
     Easing__QuarticInImpl* obj1 = (Easing__QuarticInImpl*)uNew(Easing__QuarticInImpl_typeof());
@@ -9335,10 +9335,10 @@ Easing__QuarticInImpl* Easing__QuarticInImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.QuarticInOutImpl :736
+// internal sealed class Easing.QuarticInOutImpl :582
 // {
 static void Easing__QuarticInOutImpl_build(uType* type)
 {
@@ -9360,13 +9360,13 @@ static void Easing__QuarticInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated QuarticInOutImpl() :736
+// public generated QuarticInOutImpl() :582
 void Easing__QuarticInOutImpl__ctor_1_fn(Easing__QuarticInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :738
+// public override sealed double Map(double k) :584
 void Easing__QuarticInOutImpl__Map_fn(Easing__QuarticInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -9379,19 +9379,19 @@ void Easing__QuarticInOutImpl__Map_fn(Easing__QuarticInOutImpl* __this, double* 
     return *__retval = -0.5 * ((((k_ * k_) * k_) * k_) - 2.0), void();
 }
 
-// public generated QuarticInOutImpl New() :736
+// public generated QuarticInOutImpl New() :582
 void Easing__QuarticInOutImpl__New1_fn(Easing__QuarticInOutImpl** __retval)
 {
     *__retval = Easing__QuarticInOutImpl::New1();
 }
 
-// public generated QuarticInOutImpl() [instance] :736
+// public generated QuarticInOutImpl() [instance] :582
 void Easing__QuarticInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuarticInOutImpl New() [static] :736
+// public generated QuarticInOutImpl New() [static] :582
 Easing__QuarticInOutImpl* Easing__QuarticInOutImpl::New1()
 {
     Easing__QuarticInOutImpl* obj1 = (Easing__QuarticInOutImpl*)uNew(Easing__QuarticInOutImpl_typeof());
@@ -9400,10 +9400,10 @@ Easing__QuarticInOutImpl* Easing__QuarticInOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.QuarticOutImpl :727
+// internal sealed class Easing.QuarticOutImpl :573
 // {
 static void Easing__QuarticOutImpl_build(uType* type)
 {
@@ -9425,13 +9425,13 @@ static void Easing__QuarticOutImpl_build(uType* type)
     return type;
 }
 
-// public generated QuarticOutImpl() :727
+// public generated QuarticOutImpl() :573
 void Easing__QuarticOutImpl__ctor_1_fn(Easing__QuarticOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :729
+// public override sealed double Map(double k) :575
 void Easing__QuarticOutImpl__Map_fn(Easing__QuarticOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -9439,19 +9439,19 @@ void Easing__QuarticOutImpl__Map_fn(Easing__QuarticOutImpl* __this, double* k, d
     return *__retval = 1.0 - (((k_ * k_) * k_) * k_), void();
 }
 
-// public generated QuarticOutImpl New() :727
+// public generated QuarticOutImpl New() :573
 void Easing__QuarticOutImpl__New1_fn(Easing__QuarticOutImpl** __retval)
 {
     *__retval = Easing__QuarticOutImpl::New1();
 }
 
-// public generated QuarticOutImpl() [instance] :727
+// public generated QuarticOutImpl() [instance] :573
 void Easing__QuarticOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuarticOutImpl New() [static] :727
+// public generated QuarticOutImpl New() [static] :573
 Easing__QuarticOutImpl* Easing__QuarticOutImpl::New1()
 {
     Easing__QuarticOutImpl* obj1 = (Easing__QuarticOutImpl*)uNew(Easing__QuarticOutImpl_typeof());
@@ -9460,10 +9460,10 @@ Easing__QuarticOutImpl* Easing__QuarticOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.QuinticInImpl :748
+// internal sealed class Easing.QuinticInImpl :594
 // {
 static void Easing__QuinticInImpl_build(uType* type)
 {
@@ -9485,32 +9485,32 @@ static void Easing__QuinticInImpl_build(uType* type)
     return type;
 }
 
-// public generated QuinticInImpl() :748
+// public generated QuinticInImpl() :594
 void Easing__QuinticInImpl__ctor_1_fn(Easing__QuinticInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :750
+// public override sealed double Map(double k) :596
 void Easing__QuinticInImpl__Map_fn(Easing__QuinticInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = (((k_ * k_) * k_) * k_) * k_, void();
 }
 
-// public generated QuinticInImpl New() :748
+// public generated QuinticInImpl New() :594
 void Easing__QuinticInImpl__New1_fn(Easing__QuinticInImpl** __retval)
 {
     *__retval = Easing__QuinticInImpl::New1();
 }
 
-// public generated QuinticInImpl() [instance] :748
+// public generated QuinticInImpl() [instance] :594
 void Easing__QuinticInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuinticInImpl New() [static] :748
+// public generated QuinticInImpl New() [static] :594
 Easing__QuinticInImpl* Easing__QuinticInImpl::New1()
 {
     Easing__QuinticInImpl* obj1 = (Easing__QuinticInImpl*)uNew(Easing__QuinticInImpl_typeof());
@@ -9519,10 +9519,10 @@ Easing__QuinticInImpl* Easing__QuinticInImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.QuinticInOutImpl :765
+// internal sealed class Easing.QuinticInOutImpl :611
 // {
 static void Easing__QuinticInOutImpl_build(uType* type)
 {
@@ -9544,13 +9544,13 @@ static void Easing__QuinticInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated QuinticInOutImpl() :765
+// public generated QuinticInOutImpl() :611
 void Easing__QuinticInOutImpl__ctor_1_fn(Easing__QuinticInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :767
+// public override sealed double Map(double k) :613
 void Easing__QuinticInOutImpl__Map_fn(Easing__QuinticInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -9563,19 +9563,19 @@ void Easing__QuinticInOutImpl__Map_fn(Easing__QuinticInOutImpl* __this, double* 
     return *__retval = 0.5 * (((((k_ * k_) * k_) * k_) * k_) + 2.0), void();
 }
 
-// public generated QuinticInOutImpl New() :765
+// public generated QuinticInOutImpl New() :611
 void Easing__QuinticInOutImpl__New1_fn(Easing__QuinticInOutImpl** __retval)
 {
     *__retval = Easing__QuinticInOutImpl::New1();
 }
 
-// public generated QuinticInOutImpl() [instance] :765
+// public generated QuinticInOutImpl() [instance] :611
 void Easing__QuinticInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuinticInOutImpl New() [static] :765
+// public generated QuinticInOutImpl New() [static] :611
 Easing__QuinticInOutImpl* Easing__QuinticInOutImpl::New1()
 {
     Easing__QuinticInOutImpl* obj1 = (Easing__QuinticInOutImpl*)uNew(Easing__QuinticInOutImpl_typeof());
@@ -9584,10 +9584,10 @@ Easing__QuinticInOutImpl* Easing__QuinticInOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.QuinticOutImpl :756
+// internal sealed class Easing.QuinticOutImpl :602
 // {
 static void Easing__QuinticOutImpl_build(uType* type)
 {
@@ -9609,13 +9609,13 @@ static void Easing__QuinticOutImpl_build(uType* type)
     return type;
 }
 
-// public generated QuinticOutImpl() :756
+// public generated QuinticOutImpl() :602
 void Easing__QuinticOutImpl__ctor_1_fn(Easing__QuinticOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :758
+// public override sealed double Map(double k) :604
 void Easing__QuinticOutImpl__Map_fn(Easing__QuinticOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -9623,19 +9623,19 @@ void Easing__QuinticOutImpl__Map_fn(Easing__QuinticOutImpl* __this, double* k, d
     return *__retval = ((((k_ * k_) * k_) * k_) * k_) + 1.0, void();
 }
 
-// public generated QuinticOutImpl New() :756
+// public generated QuinticOutImpl New() :602
 void Easing__QuinticOutImpl__New1_fn(Easing__QuinticOutImpl** __retval)
 {
     *__retval = Easing__QuinticOutImpl::New1();
 }
 
-// public generated QuinticOutImpl() [instance] :756
+// public generated QuinticOutImpl() [instance] :602
 void Easing__QuinticOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuinticOutImpl New() [static] :756
+// public generated QuinticOutImpl New() [static] :602
 Easing__QuinticOutImpl* Easing__QuinticOutImpl::New1()
 {
     Easing__QuinticOutImpl* obj1 = (Easing__QuinticOutImpl*)uNew(Easing__QuinticOutImpl_typeof());
@@ -9644,8 +9644,8 @@ Easing__QuinticOutImpl* Easing__QuinticOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class RangeAdapter<T> :2551
 // {
@@ -9942,20 +9942,20 @@ RangeAdapter* RangeAdapter::New2(uType* __type, ::g::Uno::UX::Property1* source)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal static class RangeAdapterHelpers :2521
 // {
 // static RangeAdapterHelpers() :2521
 static void RangeAdapterHelpers__cctor__fn(uType* __type)
 {
-    RangeAdapterHelpers::_valueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[17/*"Value"*/]);
+    RangeAdapterHelpers::_valueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[16/*"Value"*/]);
 }
 
 static void RangeAdapterHelpers_build(uType* type)
 {
-    ::STRINGS[17] = uString::Const("Value");
+    ::STRINGS[16] = uString::Const("Value");
     type->SetFields(0,
         ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::Fuse::Animations::RangeAdapterHelpers::_valueName_, uFieldFlagsStatic);
 }
@@ -9977,8 +9977,8 @@ uClassType* RangeAdapterHelpers_typeof()
 ::g::Uno::UX::Selector RangeAdapterHelpers::_valueName_;
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class Resize :2688
 // {
@@ -10201,17 +10201,17 @@ Resize* Resize::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class ResizeAnimatorState :2740
 // {
 static void ResizeAnimatorState_build(uType* type)
 {
-    ::STRINGS[18] = uString::Const("Resize started without a Target node");
-    ::STRINGS[2] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno");
-    ::STRINGS[19] = uString::Const(".ctor");
-    ::STRINGS[20] = uString::Const("Resize started without as RelativeTo");
+    ::STRINGS[17] = uString::Const("Resize started without a Target node");
+    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
+    ::STRINGS[18] = uString::Const(".ctor");
+    ::STRINGS[19] = uString::Const("Resize started without as RelativeTo");
     ::TYPES[64] = ::g::Fuse::Animations::IResize_typeof();
     ::TYPES[65] = ::g::Fuse::IActualPlacement_typeof();
     ::TYPES[66] = ::g::Fuse::PlacedHandler_typeof();
@@ -10310,7 +10310,7 @@ void ResizeAnimatorState::ctor_2(::g::Fuse::Animations::Resize* r, ::g::Fuse::An
 
     if (_target == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[18/*"Resize star...*/], r, ::STRINGS[2/*"/Users/star...*/], 2754, ::STRINGS[19/*".ctor"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[17/*"Resize star...*/], r, ::STRINGS[2/*"/Users/eric...*/], 2754, ::STRINGS[18/*".ctor"*/]);
         _valid = false;
         return;
     }
@@ -10319,7 +10319,7 @@ void ResizeAnimatorState::ctor_2(::g::Fuse::Animations::Resize* r, ::g::Fuse::An
 
     if (_relativeTo == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[20/*"Resize star...*/], r, ::STRINGS[2/*"/Users/star...*/], 2762, ::STRINGS[19/*".ctor"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[19/*"Resize star...*/], r, ::STRINGS[2/*"/Users/eric...*/], 2762, ::STRINGS[18/*".ctor"*/]);
         _valid = false;
         return;
     }
@@ -10370,8 +10370,8 @@ ResizeAnimatorState* ResizeAnimatorState::New1(::g::Fuse::Animations::Resize* r,
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class Rotate :3743
 // {
@@ -10540,8 +10540,8 @@ Rotate* Rotate::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class Scale :3805
 // {
@@ -10664,8 +10664,8 @@ Scale* Scale::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal enum SeekDirection :110
 uEnumType* SeekDirection_typeof()
@@ -10680,8 +10680,8 @@ uEnumType* SeekDirection_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public enum TriggerAnimationState.SeekFlags :4375
 uEnumType* TriggerAnimationState__SeekFlags_typeof()
@@ -10696,8 +10696,8 @@ uEnumType* TriggerAnimationState__SeekFlags_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal enum SeekResult :117
 uEnumType* SeekResult_typeof()
@@ -10713,10 +10713,10 @@ uEnumType* SeekResult_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.SinusoidalInImpl :778
+// internal sealed class Easing.SinusoidalInImpl :624
 // {
 static void Easing__SinusoidalInImpl_build(uType* type)
 {
@@ -10738,32 +10738,32 @@ static void Easing__SinusoidalInImpl_build(uType* type)
     return type;
 }
 
-// public generated SinusoidalInImpl() :778
+// public generated SinusoidalInImpl() :624
 void Easing__SinusoidalInImpl__ctor_1_fn(Easing__SinusoidalInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :780
+// public override sealed double Map(double k) :626
 void Easing__SinusoidalInImpl__Map_fn(Easing__SinusoidalInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = 1.0 - ::g::Uno::Math::Cos((k_ * 3.1415926535897931) / 2.0), void();
 }
 
-// public generated SinusoidalInImpl New() :778
+// public generated SinusoidalInImpl New() :624
 void Easing__SinusoidalInImpl__New1_fn(Easing__SinusoidalInImpl** __retval)
 {
     *__retval = Easing__SinusoidalInImpl::New1();
 }
 
-// public generated SinusoidalInImpl() [instance] :778
+// public generated SinusoidalInImpl() [instance] :624
 void Easing__SinusoidalInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated SinusoidalInImpl New() [static] :778
+// public generated SinusoidalInImpl New() [static] :624
 Easing__SinusoidalInImpl* Easing__SinusoidalInImpl::New1()
 {
     Easing__SinusoidalInImpl* obj1 = (Easing__SinusoidalInImpl*)uNew(Easing__SinusoidalInImpl_typeof());
@@ -10772,10 +10772,10 @@ Easing__SinusoidalInImpl* Easing__SinusoidalInImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.SinusoidalInOutImpl :794
+// internal sealed class Easing.SinusoidalInOutImpl :640
 // {
 static void Easing__SinusoidalInOutImpl_build(uType* type)
 {
@@ -10797,32 +10797,32 @@ static void Easing__SinusoidalInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated SinusoidalInOutImpl() :794
+// public generated SinusoidalInOutImpl() :640
 void Easing__SinusoidalInOutImpl__ctor_1_fn(Easing__SinusoidalInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :796
+// public override sealed double Map(double k) :642
 void Easing__SinusoidalInOutImpl__Map_fn(Easing__SinusoidalInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = 0.5 * (1.0 - ::g::Uno::Math::Cos(3.1415926535897931 * k_)), void();
 }
 
-// public generated SinusoidalInOutImpl New() :794
+// public generated SinusoidalInOutImpl New() :640
 void Easing__SinusoidalInOutImpl__New1_fn(Easing__SinusoidalInOutImpl** __retval)
 {
     *__retval = Easing__SinusoidalInOutImpl::New1();
 }
 
-// public generated SinusoidalInOutImpl() [instance] :794
+// public generated SinusoidalInOutImpl() [instance] :640
 void Easing__SinusoidalInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated SinusoidalInOutImpl New() [static] :794
+// public generated SinusoidalInOutImpl New() [static] :640
 Easing__SinusoidalInOutImpl* Easing__SinusoidalInOutImpl::New1()
 {
     Easing__SinusoidalInOutImpl* obj1 = (Easing__SinusoidalInOutImpl*)uNew(Easing__SinusoidalInOutImpl_typeof());
@@ -10831,10 +10831,10 @@ Easing__SinusoidalInOutImpl* Easing__SinusoidalInOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------
 
-// internal sealed class Easing.SinusoidalOutImpl :786
+// internal sealed class Easing.SinusoidalOutImpl :632
 // {
 static void Easing__SinusoidalOutImpl_build(uType* type)
 {
@@ -10856,32 +10856,32 @@ static void Easing__SinusoidalOutImpl_build(uType* type)
     return type;
 }
 
-// public generated SinusoidalOutImpl() :786
+// public generated SinusoidalOutImpl() :632
 void Easing__SinusoidalOutImpl__ctor_1_fn(Easing__SinusoidalOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :788
+// public override sealed double Map(double k) :634
 void Easing__SinusoidalOutImpl__Map_fn(Easing__SinusoidalOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = ::g::Uno::Math::Sin((k_ * 3.1415926535897931) / 2.0), void();
 }
 
-// public generated SinusoidalOutImpl New() :786
+// public generated SinusoidalOutImpl New() :632
 void Easing__SinusoidalOutImpl__New1_fn(Easing__SinusoidalOutImpl** __retval)
 {
     *__retval = Easing__SinusoidalOutImpl::New1();
 }
 
-// public generated SinusoidalOutImpl() [instance] :786
+// public generated SinusoidalOutImpl() [instance] :632
 void Easing__SinusoidalOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated SinusoidalOutImpl New() [static] :786
+// public generated SinusoidalOutImpl New() [static] :632
 Easing__SinusoidalOutImpl* Easing__SinusoidalOutImpl::New1()
 {
     Easing__SinusoidalOutImpl* obj1 = (Easing__SinusoidalOutImpl*)uNew(Easing__SinusoidalOutImpl_typeof());
@@ -10890,8 +10890,8 @@ Easing__SinusoidalOutImpl* Easing__SinusoidalOutImpl::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class Skew :3850
 // {
@@ -11061,8 +11061,8 @@ Skew* Skew::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class Spin :2845
 // {
@@ -11179,15 +11179,15 @@ Spin* Spin::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class SpinState :2874
 // {
 static void SpinState_build(uType* type)
 {
-    ::STRINGS[8] = uString::Const("Invalid seek");
-    ::STRINGS[6] = uString::Const("../../../Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno");
+    ::STRINGS[7] = uString::Const("Invalid seek");
+    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[68] = ::g::Fuse::Animations::IMixerHandle_typeof()->MakeType(::g::Fuse::Transform_typeof(), NULL);
     type->SetFields(5,
@@ -11249,7 +11249,7 @@ void SpinState__Seek_fn(SpinState* __this, bool* on, float* interval, float* str
 
     if ((__this->mixHandle == NULL) || (__this->transform == NULL))
     {
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[8/*"Invalid seek"*/], 1, ::STRINGS[6/*"../../../Li...*/], 2903);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[7/*"Invalid seek"*/], 1, ::STRINGS[2/*"/Users/eric...*/], 2903);
         return *__retval = true, void();
     }
 
@@ -11289,8 +11289,8 @@ SpinState* SpinState::New1(::g::Fuse::Animations::Spin* animator, ::g::Fuse::Ani
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class SplineTrack :2957
 // {
@@ -11595,8 +11595,8 @@ SplineTrack* SplineTrack::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public abstract class TrackAnimator :3160
 // {
@@ -11990,8 +11990,8 @@ void TrackAnimator::Weight(double value)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract class TrackAnimatorState :3378
 // {
@@ -12156,8 +12156,8 @@ bool TrackAnimatorState::IsBackward()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract interface TrackProvider :3122
 // {
@@ -12171,8 +12171,8 @@ uInterfaceType* TrackProvider_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public abstract class TransformAnimator<TransformType> :3499
 // {
@@ -12413,15 +12413,15 @@ void TransformAnimator::Z(float value)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class TransformAnimatorState<TransformType> :3606
 // {
 static void TransformAnimatorState_build(uType* type)
 {
-    ::STRINGS[8] = uString::Const("Invalid seek");
-    ::STRINGS[6] = uString::Const("../../../Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno");
+    ::STRINGS[7] = uString::Const("Invalid seek");
+    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[74] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Transform_typeof(), NULL);
     ::TYPES[75] = ::g::Fuse::Transform_typeof();
@@ -12499,7 +12499,7 @@ void TransformAnimatorState__SeekValue_fn(TransformAnimatorState* __this, ::g::U
 
     if ((__this->mixHandle == NULL) || (__this->transform == NULL))
     {
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[8/*"Invalid seek"*/], 1, ::STRINGS[6/*"../../../Li...*/], 3645);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[7/*"Invalid seek"*/], 1, ::STRINGS[2/*"/Users/eric...*/], 3645);
         return;
     }
 
@@ -12544,8 +12544,8 @@ TransformAnimatorState* TransformAnimatorState::New1(uType* __type, ::g::Fuse::A
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal enum TransformPriority :3479
 uEnumType* TransformPriority_typeof()
@@ -12562,8 +12562,8 @@ uEnumType* TransformPriority_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class TriggerAnimation :3920
 // {
@@ -13028,8 +13028,8 @@ TriggerAnimation* TriggerAnimation::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class TriggerAnimationState :4135
 // {

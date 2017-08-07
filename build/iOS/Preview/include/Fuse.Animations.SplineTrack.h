@@ -1,8 +1,8 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Animations/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.ContinuousTrackProvider.h>
+#include <Fuse.Animations.Conti-d67e9f3.h>
 #include <Fuse.Animations.ITrackProvider.h>
 #include <Fuse.Animations.KeyframeTrack.h>
 #include <Fuse.Animations.TrackProvider.h>

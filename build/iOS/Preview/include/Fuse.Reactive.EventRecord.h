@@ -1,9 +1,9 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Reactive.IEventRecord.h>
-#include <Fuse.Scripting.IEventSerializer.h>
+#include <Fuse.Scripting.IEvent-434826af.h>
 #include <Uno.Object.h>
 #include <Uno.UX.Selector.h>
 namespace g{namespace Fuse{namespace Reactive{struct EventRecord;}}}
@@ -15,7 +15,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// internal sealed class EventRecord :741
+// internal sealed class EventRecord :729
 // {
 struct EventRecord_type : uType
 {

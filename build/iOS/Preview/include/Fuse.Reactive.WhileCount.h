@@ -1,9 +1,9 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
+#include <Fuse.Animations.IBase-d3bd6f2e.h>
+#include <Fuse.Animations.IUnwr-594abe9.h>
 #include <Fuse.Binding.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -20,7 +20,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public class WhileCount :2259
+// public class WhileCount :2065
 // {
 struct WhileCount_type : ::g::Fuse::Triggers::Trigger_type
 {

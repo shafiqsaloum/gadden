@@ -1,11 +1,11 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Binding.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
+#include <Fuse.Navigation.IBase-84e3f965.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
 #include <Uno.Collections.ICollection-1.h>
@@ -24,7 +24,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public partial sealed class Router :2453
+// public partial sealed class Router :2062
 // {
 struct Router_type : ::g::Fuse::Node_type
 {

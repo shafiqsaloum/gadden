@@ -1,10 +1,10 @@
-// This file was generated based on build/iOS/Preview/cache/ux11/MainView.g.uno.
+// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.gadden_bundle.h>
-#include <_root.gadden_FuseControlsControl_Background_Property.h>
-#include <_root.gadden_FuseControlsTextControl_Value_Property.h>
-#include <_root.gadden_FuseControlsTextInputControl_Value_Property.h>
+#include <_root.gadden_FuseCont-44c720e0.h>
+#include <_root.gadden_FuseCont-b48cdba6.h>
+#include <_root.gadden_FuseCont-bdb3f9e0.h>
 #include <_root.MainView.h>
 #include <_root.MainView.Template7.h>
 #include <_root.Paragraph.h>
@@ -168,7 +168,7 @@ void MainView__Template7__New1_fn(MainView__Template7* __this, uObject** __retva
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp3->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp16);
     temp17->StretchMode(3);
     temp17->Layer(1);
-    temp17->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::GoodiebagBackground7bf6debb()));
+    temp17->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::GoodiebagBackgroundda8e66b6()));
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[1/*Uno.Collections.ICollection<Fuse.Node>*/]), temp10);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[1/*Uno.Collections.ICollection<Fuse.Node>*/]), temp17);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp18);

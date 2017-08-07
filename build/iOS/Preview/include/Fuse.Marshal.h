@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Marshal/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Marshal/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -55,8 +55,6 @@ void Marshal__ToType_fn(uType* __type, uObject* o, uTRef __retval);
 void Marshal__ToUInt_fn(uObject* o, uint32_t* __retval);
 void Marshal__ToUShort_fn(uObject* o, uint16_t* __retval);
 void Marshal__TryConvertTo_fn(uType* t, uObject* o, uObject** res, uObject* diagnosticSource, bool* __retval);
-void Marshal__TryToType_fn(uType* __type, uObject* o, uTRef res, bool* __retval);
-void Marshal__TryToZeroFloat4_fn(uObject* o, ::g::Uno::Float4* value, int* size, bool* __retval);
 
 struct Marshal : uObject
 {
@@ -102,9 +100,6 @@ struct Marshal : uObject
     static uint32_t ToUInt(uObject* o);
     static uint16_t ToUShort(uObject* o);
     static bool TryConvertTo(uType* t, uObject* o, uObject** res, uObject* diagnosticSource);
-    template<class T>
-    static bool TryToType(uType* __type, uObject* o, T* res) { bool __retval; return Marshal__TryToType_fn(__type, o, uConstrain(__type->U(0), res), &__retval), __retval; }
-    static bool TryToZeroFloat4(uObject* o, ::g::Uno::Float4* value, int* size);
 };
 // }
 

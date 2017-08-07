@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -14,7 +14,7 @@ namespace g{
 namespace Fuse{
 namespace Text{
 
-// public static class Wrap :2446
+// public static class Wrap :2447
 // {
 uClassType* Wrap_typeof();
 void Wrap__ActualLineBreaks_fn(::g::Uno::Collections::List* logicalRuns, ::g::Uno::Collections::List** __retval);

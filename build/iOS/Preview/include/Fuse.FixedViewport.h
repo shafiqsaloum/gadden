@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,8 +9,8 @@
 #include <Uno.Object.h>
 namespace g{namespace Fuse{struct FixedViewport;}}
 namespace g{namespace Fuse{struct FrustumViewport;}}
-namespace g{namespace Fuse{struct Ray;}}
 namespace g{namespace Fuse{struct Visual;}}
+namespace g{namespace Uno{namespace Geometry{struct Ray;}}}
 namespace g{namespace Uno{struct Float3;}}
 namespace g{namespace Uno{struct Float4x4;}}
 namespace g{namespace Uno{struct Int2;}}
@@ -18,7 +18,7 @@ namespace g{namespace Uno{struct Int2;}}
 namespace g{
 namespace Fuse{
 
-// internal sealed class FixedViewport :1399
+// internal sealed class FixedViewport :1400
 // {
 struct FixedViewport_type : uType
 {
@@ -32,7 +32,7 @@ void FixedViewport__ctor__fn(FixedViewport* __this, ::g::Uno::Int2* pixelSize, f
 void FixedViewport__New1_fn(::g::Uno::Int2* pixelSize, float* pixelsPerPoint, uObject* frustum, FixedViewport** __retval);
 void FixedViewport__get_PixelSize_fn(FixedViewport* __this, ::g::Uno::Float2* __retval);
 void FixedViewport__get_PixelsPerPoint_fn(FixedViewport* __this, float* __retval);
-void FixedViewport__PointToWorldRay_fn(FixedViewport* __this, ::g::Uno::Float2* pointPos, ::g::Fuse::Ray* __retval);
+void FixedViewport__PointToWorldRay_fn(FixedViewport* __this, ::g::Uno::Float2* pointPos, ::g::Uno::Geometry::Ray* __retval);
 void FixedViewport__get_ProjectionTransform_fn(FixedViewport* __this, ::g::Uno::Float4x4* __retval);
 void FixedViewport__get_ProjectionTransformInverse_fn(FixedViewport* __this, ::g::Uno::Float4x4* __retval);
 void FixedViewport__get_Size_fn(FixedViewport* __this, ::g::Uno::Float2* __retval);
@@ -42,7 +42,7 @@ void FixedViewport__get_ViewProjectionTransformInverse_fn(FixedViewport* __this,
 void FixedViewport__get_ViewRange_fn(FixedViewport* __this, ::g::Uno::Float2* __retval);
 void FixedViewport__get_ViewTransform_fn(FixedViewport* __this, ::g::Uno::Float4x4* __retval);
 void FixedViewport__get_ViewTransformInverse_fn(FixedViewport* __this, ::g::Uno::Float4x4* __retval);
-void FixedViewport__WorldToLocalRay_fn(FixedViewport* __this, uObject* world, ::g::Fuse::Ray* worldRay, ::g::Fuse::Visual* where, ::g::Fuse::Ray* __retval);
+void FixedViewport__WorldToLocalRay_fn(FixedViewport* __this, uObject* world, ::g::Uno::Geometry::Ray* worldRay, ::g::Fuse::Visual* where, ::g::Uno::Geometry::Ray* __retval);
 
 struct FixedViewport : uObject
 {
@@ -54,7 +54,7 @@ struct FixedViewport : uObject
     void ctor_(::g::Uno::Int2 pixelSize, float pixelsPerPoint, uObject* frustum);
     ::g::Uno::Float2 PixelSize();
     float PixelsPerPoint();
-    ::g::Fuse::Ray PointToWorldRay(::g::Uno::Float2 pointPos);
+    ::g::Uno::Geometry::Ray PointToWorldRay(::g::Uno::Float2 pointPos);
     ::g::Uno::Float4x4 ProjectionTransform();
     ::g::Uno::Float4x4 ProjectionTransformInverse();
     ::g::Uno::Float2 Size();
@@ -64,7 +64,7 @@ struct FixedViewport : uObject
     ::g::Uno::Float2 ViewRange();
     ::g::Uno::Float4x4 ViewTransform();
     ::g::Uno::Float4x4 ViewTransformInverse();
-    ::g::Fuse::Ray WorldToLocalRay(uObject* world, ::g::Fuse::Ray worldRay, ::g::Fuse::Visual* where);
+    ::g::Uno::Geometry::Ray WorldToLocalRay(uObject* world, ::g::Uno::Geometry::Ray worldRay, ::g::Fuse::Visual* where);
     static FixedViewport* New1(::g::Uno::Int2 pixelSize, float pixelsPerPoint, uObject* frustum);
 };
 // }

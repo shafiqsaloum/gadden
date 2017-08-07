@@ -1,4 +1,4 @@
-// This file was generated based on build/iOS/Preview/cache/ux11/Hamburger.g.uno.
+// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/Hamburger.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,9 +11,9 @@
 #include <Fuse.IProperties.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
+#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>

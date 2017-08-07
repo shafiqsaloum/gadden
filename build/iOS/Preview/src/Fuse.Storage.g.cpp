@@ -7,10 +7,10 @@
 #include <Fuse.Scripting.NativeFunction.h>
 #include <Fuse.Scripting.NativeMember.h>
 #include <Fuse.Scripting.NativePromise-2.h>
-#include <Fuse.Scripting.ResultConverter-2.h>
+#include <Fuse.Scripting.Result-92713bce.h>
+#include <Fuse.Storage.Applicat-2356c164.h>
+#include <Fuse.Storage.Applicat-8bd00e9b.h>
 #include <Fuse.Storage.ApplicationDir.h>
-#include <Fuse.Storage.ApplicationDir.ReadClosure.h>
-#include <Fuse.Storage.ApplicationDir.WriteClosure.h>
 #include <Fuse.Storage.StorageModule.h>
 #include <Uno.ArgumentNullException.h>
 #include <Uno.Bool.h>
@@ -37,8 +37,8 @@ namespace g{
 namespace Fuse{
 namespace Storage{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Storage/1.1.1/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Storage/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // internal static class ApplicationDir :9
 // {
@@ -237,8 +237,8 @@ bool ApplicationDir::Write(uString* filename, uString* value)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Storage/1.1.1/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Storage/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // private sealed class ApplicationDir.ReadClosure :110
 // {
@@ -302,8 +302,8 @@ ApplicationDir__ReadClosure* ApplicationDir__ReadClosure::New1(uString* filename
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Storage/1.1.1/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Storage/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class StorageModule :148
 // {
@@ -495,8 +495,8 @@ uObject* StorageModule::Write(::g::Fuse::Scripting::Context* c, uArray* args)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Storage/1.1.1/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Storage/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
 // private sealed class ApplicationDir.WriteClosure :93
 // {

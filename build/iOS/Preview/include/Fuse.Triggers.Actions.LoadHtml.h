@@ -1,9 +1,9 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Controls.ISourceReceiver.h>
-#include <Fuse.Triggers.Actions.WebViewNavAction.h>
+#include <Fuse.Triggers.Actions-e0dcfc3.h>
 namespace g{namespace Fuse{namespace Controls{struct HTML;}}}
 namespace g{namespace Fuse{namespace Controls{struct WebView;}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct LoadHtml;}}}}
@@ -13,7 +13,7 @@ namespace Fuse{
 namespace Triggers{
 namespace Actions{
 
-// public sealed class LoadHtml :764
+// public sealed class LoadHtml :739
 // {
 struct LoadHtml_type : ::g::Fuse::Triggers::Actions::WebViewNavAction_type
 {

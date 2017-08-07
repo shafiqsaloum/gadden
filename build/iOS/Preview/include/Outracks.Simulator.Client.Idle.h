@@ -2,7 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Outracks.Simulator.Client.Connected.h>
+#include <Outracks.Simulator.Cl-75fc1ba.h>
 namespace g{namespace Outracks{namespace Simulator{namespace Client{struct Idle;}}}}
 namespace g{namespace Outracks{namespace Simulator{namespace Client{struct State;}}}}
 namespace g{namespace Uno{struct Exception;}}

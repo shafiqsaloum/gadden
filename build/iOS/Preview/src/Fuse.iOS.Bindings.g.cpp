@@ -5,7 +5,7 @@
 #include <CoreGraphics/CoreGraphics.h>
 #include <Fuse.DrawContext.h>
 #include <Fuse.iOS.Bindings.Blitter.h>
-#include <Fuse.iOS.Bindings.CGColorSpaceRef.h>
+#include <Fuse.iOS.Bindings.CGC-1303de24.h>
 #include <Fuse.iOS.Bindings.CGContextRef.h>
 #include <Fuse.IRenderViewport.h>
 #include <Fuse.Visual.h>
@@ -18,13 +18,13 @@
 #include <Uno.Graphics.PolygonFace.h>
 #include <Uno.Graphics.SamplerState.h>
 #include <Uno.Graphics.Texture2D.h>
-#include <Uno.Graphics.VertexAttributeType.h>
+#include <Uno.Graphics.VertexAt-4a875e1d.h>
 #include <Uno.Graphics.VertexBuffer.h>
 #include <Uno.Int.h>
 #include <Uno.IntPtr.h>
 #include <Uno.Matrix.h>
-#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
-#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
+#include <Uno.Runtime.Implement-6e9df330.h>
+#include <Uno.Runtime.Implement-81e7ab4c.h>
 static uType* TYPES[2];
 
 namespace g{
@@ -32,8 +32,8 @@ namespace Fuse{
 namespace iOS{
 namespace Bindings{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal sealed class Blitter :342
 // {
@@ -140,8 +140,8 @@ Blitter* Blitter::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal extern struct CGColorSpaceRef :184
 // {
@@ -166,8 +166,8 @@ uStructType* CGColorSpaceRef_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // internal extern struct CGContextRef :188
 // {

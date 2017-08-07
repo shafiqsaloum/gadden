@@ -1,7 +1,6 @@
 <!--
 TODO:
 * Fix an easier animation when user has clicked on the info-icon
-* Create an animation for the shake-icon that wiggles back and forward
 * Function for shake
 * Include button that appears after the first shake
 * Create vue for getting a result
@@ -11,7 +10,7 @@ TODO:
 <Page>
     <JavaScript File="IceBreakersPage.js" />
 
-    <DockPanel ux:Name="popupBackground" Height="100%" Background="Black" Opacity="1">
+    <Panel ux:Name="popupBackground" Height="70%" Background="Black" Opacity="1" Alignment="Top">
         <!-- Background -->
         <Image ux:Name="infoIcon" Opacity="1" Alignment="TopRight" Width="30" Height="30" Margin="20" File="../../assets/InfoIconWhite.png">
             <Clicked>
@@ -40,22 +39,53 @@ TODO:
             </Rectangle>
         </Panel>
 
-        <!-- Main content -->
-        <StackPanel Alignment="Center">
-            <TextView Font="TitleFont" TextColor="#fff" FontSize="65" TextWrapping="Wrap" TextAlignment="Center" LineSpacing="20" Alignment="Top" Margin="0,0,0,50">
-                SHAKE TO BREAK
-            </TextView>
-            <Paragraph TextAlignment="Center" Alignment="BottomCenter">
-                Skaka telefonen för att få tips på ice breakers
-            </Paragraph>
-        </StackPanel>
-        <!-- Info icon -->
-        <Panel ux:Name="iconPanel">
-            <Image Width="40%" Alignment="BottomCenter" Layer="Background" File="../../assets/IceBreakerIcon.png"  />
-        </Panel>
-        <Timeline ux:Name="timeline">
-            <Move Target="iconPanel" Y="0.50" Duration="1"   Delay="1" Easing="BackOut" RelativeTo="Size"/>
-        </Timeline>
+      <!-- Main content -->
+      <StackPanel Alignment="Center">
+          <TextView Font="TitleFont" TextColor="#fff" FontSize="65" TextWrapping="Wrap" TextAlignment="Center" LineSpacing="20" Alignment="Top" Margin="0,0,0,50">
+              SHAKE TO BREAK
+          </TextView>
+          <Paragraph TextAlignment="Center" Alignment="BottomCenter">
+              Skaka telefonen för att få tips på ice breakers
+          </Paragraph>
+      </StackPanel>
+    </Panel>
+
+    <Panel Height="30%" Background="Black" Alignment="Bottom">
+      <Image ux:Name="IceBreakerIcon" Width="40%" Alignment="BottomCenter" StretchMode="UniformToFill" File="../../assets/IceBreakerIcon.png" X="0">
+
+        <WhileActive Threshold="0.1">
+          <Rotate Degrees="10" Duration="0.5" Delay="0.5" />
+          <Rotate Degrees="-20" Duration="1" Delay="1" />
+          <Rotate Degrees="20" Duration="1" Delay="2" />
+          <Rotate Degrees="-20" Duration="1" Delay="3" />
+          <Rotate Degrees="20" Duration="1" Delay="4" />
+          <Rotate Degrees="-20" Duration="1" Delay="5" />
+          <Rotate Degrees="20" Duration="1" Delay="6" />
+          <Rotate Degrees="-20" Duration="1" Delay="7" />
+          <Rotate Degrees="20" Duration="1" Delay="8" />
+          <Rotate Degrees="-20" Duration="1" Delay="9" />
+          <Rotate Degrees="20" Duration="1" Delay="10" />
+        </WhileActive>
+      </Image>
+    </Panel>
+
+
+<!-- Info icon -->
+
+<!-- <Panel ux:Name="iconPanel"> -->
+<!-- </Panel> -->
+
+
+<!-- <Image ux:Name="IceBreakerIcon" Opacity="1" Width="40%" X="0" Alignment="BottomCenter" StretchMode="UniformToFill" File="../../assets/IceBreakerIcon.png" >
+<Clicked>
+  <Toggle Target="ImageMove" />
+</Clicked>
+</Image> -->
+
+        <!-- <Timeline ux:Name="timeline">
+            <Move Target="IceBreakerIcon" Y="0.50" Duration="1"   Delay="1" Easing="BackOut" RelativeTo="Size"/>
+            <Change iconPanel.X="-30" Duration="1" Delay="1" Easing="BackOut"/>
+        </Timeline> -->
 
         <Each Items="{IceBreakers}">
             <!-- Get title from JSON -->
@@ -64,5 +94,5 @@ TODO:
             </Panel>
         </Each>
 
-    </DockPanel>
+
 </Page>

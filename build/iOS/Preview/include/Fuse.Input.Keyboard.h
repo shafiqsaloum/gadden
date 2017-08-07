@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/input/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -17,7 +17,7 @@ namespace g{
 namespace Fuse{
 namespace Input{
 
-// public static class Keyboard :1025
+// public static class Keyboard :1016
 // {
 uClassType* Keyboard_typeof();
 void Keyboard__AddHandlers_fn(::g::Fuse::Visual* visual, uDelegate* pressed, uDelegate* released);

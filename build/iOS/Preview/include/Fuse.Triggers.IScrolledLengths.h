@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.1.1/triggers/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace Triggers{
 
-// public static class IScrolledLengths :650
+// public static class IScrolledLengths :644
 // {
 uClassType* IScrolledLengths_typeof();
 

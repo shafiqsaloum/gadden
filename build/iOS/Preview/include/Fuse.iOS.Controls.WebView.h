@@ -1,13 +1,13 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Controls.ISourceReceiver.h>
 #include <Fuse.Controls.IWebView.h>
+#include <Fuse.Controls.Native.-98c3244c.h>
 #include <Fuse.Controls.Native.ILeafView.h>
-#include <Fuse.Controls.Native.iOS.LeafView.h>
 #include <Fuse.Controls.Native.IView.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
+#include <Fuse.Navigation.IBase-84e3f965.h>
 #include <Fuse.Triggers.IProgress.h>
 #include <Uno.IDisposable.h>
 namespace g{namespace Fuse{namespace Controls{struct WebView;}}}
@@ -20,7 +20,7 @@ namespace Fuse{
 namespace iOS{
 namespace Controls{
 
-// public sealed extern class WebView :181
+// public sealed extern class WebView :179
 // {
 struct WebView_type : ::g::Fuse::Controls::Native::iOS::LeafView_type
 {
@@ -68,8 +68,6 @@ void WebView__get_Progress_fn(WebView* __this, double* __retval);
 void WebView__add_ProgressChanged_fn(WebView* __this, uDelegate* value);
 void WebView__remove_ProgressChanged_fn(WebView* __this, uDelegate* value);
 void WebView__Reload_fn(WebView* __this);
-void WebView__get_ScrollEnabled_fn(WebView* __this, bool* __retval);
-void WebView__set_ScrollEnabled_fn(WebView* __this, bool* value);
 void WebView__get_Source_fn(WebView* __this, uString** __retval);
 void WebView__set_Source_fn(WebView* __this, uString* value);
 void WebView__StartProgressUpdate_fn(WebView* __this);
@@ -92,7 +90,6 @@ struct WebView : ::g::Fuse::Controls::Native::iOS::LeafView
     uStrong< ::g::ObjC::Object*> Handle1;
     uStrong< ::g::ObjC::Object*> NavigationDelegate;
     uStrong<uString*> _BaseUrl;
-    bool _ScrollEnabled;
     bool _ZoomEnabled;
     uStrong<uDelegate*> BeginLoading1;
     uStrong<uDelegate*> PageLoaded1;
@@ -134,8 +131,6 @@ struct WebView : ::g::Fuse::Controls::Native::iOS::LeafView
     void add_ProgressChanged(uDelegate* value);
     void remove_ProgressChanged(uDelegate* value);
     void Reload();
-    bool ScrollEnabled();
-    void ScrollEnabled(bool value);
     uString* Source();
     void Source(uString* value);
     void StartProgressUpdate();

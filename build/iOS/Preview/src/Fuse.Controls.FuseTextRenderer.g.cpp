@@ -1,17 +1,17 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.FuseTextRenderer.AsyncMeasurer.h>
-#include <Fuse.Controls.FuseTextRenderer.CacheState.h>
-#include <Fuse.Controls.FuseTextRenderer.EverythingCached.h>
-#include <Fuse.Controls.FuseTextRenderer.Helpers.h>
-#include <Fuse.Controls.FuseTextRenderer.LogicalRunsCached.h>
-#include <Fuse.Controls.FuseTextRenderer.MeasurementsCached.h>
-#include <Fuse.Controls.FuseTextRenderer.NothingCached.h>
-#include <Fuse.Controls.FuseTextRenderer.RendererCached.h>
-#include <Fuse.Controls.FuseTextRenderer.TextControlData.h>
-#include <Fuse.Controls.FuseTextRenderer.TextRenderer.h>
-#include <Fuse.Controls.FuseTextRenderer.Tolerances.h>
+#include <Fuse.Controls.FuseTex-148cbbef.h>
+#include <Fuse.Controls.FuseTex-2d99832d.h>
+#include <Fuse.Controls.FuseTex-605a4b93.h>
+#include <Fuse.Controls.FuseTex-74f69a8b.h>
+#include <Fuse.Controls.FuseTex-7c93df0c.h>
+#include <Fuse.Controls.FuseTex-7f6678da.h>
+#include <Fuse.Controls.FuseTex-a0313cf6.h>
+#include <Fuse.Controls.FuseTex-a3df34db.h>
+#include <Fuse.Controls.FuseTex-b0def7da.h>
+#include <Fuse.Controls.FuseTex-c7cdbff7.h>
+#include <Fuse.Controls.FuseTex-f3912613.h>
 #include <Fuse.Controls.TextAlignment.h>
 #include <Fuse.Controls.TextControl.h>
 #include <Fuse.Controls.TextTruncation.h>
@@ -21,7 +21,7 @@
 #include <Fuse.GraphicsWorker.h>
 #include <Fuse.ICommonViewport.h>
 #include <Fuse.Internal.Cache-2.h>
-#include <Fuse.Internal.FontFaceDescriptor.h>
+#include <Fuse.Internal.FontFac-589fc2ef.h>
 #include <Fuse.InvalidateLayoutReason.h>
 #include <Fuse.IViewport.h>
 #include <Fuse.LayoutParams.h>
@@ -61,8 +61,8 @@
 #include <Uno.Matrix.h>
 #include <Uno.Rect.h>
 #include <Uno.String.h>
+#include <Uno.Threading.IDispat-6494c48e.h>
 #include <Uno.Threading.IDispatcher.h>
-#include <Uno.Threading.IDispatcherExtensions.h>
 static uString* STRINGS[5];
 static uType* TYPES[13];
 
@@ -71,8 +71,8 @@ namespace Fuse{
 namespace Controls{
 namespace FuseTextRenderer{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fusetextrenderer/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fusetextrenderer/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class AsyncMeasurer :701
 // {
@@ -143,8 +143,8 @@ AsyncMeasurer* AsyncMeasurer::New1(::g::Fuse::Controls::FuseTextRenderer::CacheS
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fusetextrenderer/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fusetextrenderer/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal abstract class CacheState :139
 // {
@@ -248,8 +248,8 @@ bool CacheState::TryGetRenderer(::g::Fuse::Controls::FuseTextRenderer::TextContr
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fusetextrenderer/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fusetextrenderer/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class EverythingCached :370
 // {
@@ -390,8 +390,8 @@ EverythingCached* EverythingCached::New1(::g::Fuse::Controls::FuseTextRenderer::
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fusetextrenderer/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fusetextrenderer/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal static class Helpers :74
 // {
@@ -495,8 +495,8 @@ float Helpers::ToAlignmentNumber(int alignment)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fusetextrenderer/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fusetextrenderer/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class LogicalRunsCached :205
 // {
@@ -588,8 +588,8 @@ LogicalRunsCached* LogicalRunsCached::New1(uString* renderValue)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fusetextrenderer/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fusetextrenderer/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class MeasurementsCached :239
 // {
@@ -697,8 +697,8 @@ MeasurementsCached* MeasurementsCached::New1(::g::Fuse::Controls::FuseTextRender
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fusetextrenderer/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fusetextrenderer/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class NothingCached :179
 // {
@@ -786,8 +786,8 @@ NothingCached* NothingCached::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fusetextrenderer/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fusetextrenderer/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class RendererCached :297
 // {
@@ -913,8 +913,8 @@ RendererCached* RendererCached::New1(::g::Fuse::Controls::FuseTextRenderer::Logi
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fusetextrenderer/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fusetextrenderer/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal struct TextControlData :10
 // {
@@ -993,8 +993,8 @@ TextControlData TextControlData__New1(::g::Fuse::Text::Font* font, ::g::Fuse::Co
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fusetextrenderer/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fusetextrenderer/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class TextRenderer :472
 // {
@@ -1009,7 +1009,7 @@ static void TextRenderer_build(uType* type)
 {
     ::STRINGS[2] = uString::Const("");
     ::STRINGS[3] = uString::Const("this._cacheState == null");
-    ::STRINGS[4] = uString::Const("../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fusetextrenderer/$.uno");
+    ::STRINGS[4] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fusetextrenderer/$.uno");
     ::TYPES[3] = ::g::Fuse::Internal::Cache_typeof()->MakeType(::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Internal::FontFaceDescriptor_typeof(), NULL), ::g::Fuse::Text::FontFace_typeof(), NULL);
     ::TYPES[4] = ::g::Uno::Func1_typeof()->MakeType(::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Internal::FontFaceDescriptor_typeof(), NULL), ::g::Fuse::Text::FontFace_typeof(), NULL);
     ::TYPES[5] = ::g::Fuse::Internal::Cache_typeof()->MakeType(::g::Fuse::Internal::FontFaceDescriptor_typeof(), ::g::Fuse::Text::FontFace_typeof(), NULL);
@@ -1192,7 +1192,7 @@ void TextRenderer::AsyncMeasurementsDone(::g::Fuse::Controls::FuseTextRenderer::
 {
     uStackFrame __("Fuse.Controls.FuseTextRenderer.TextRenderer", "AsyncMeasurementsDone(Fuse.Controls.FuseTextRenderer.CacheState)");
     ::g::Fuse::Triggers::BusyTask::SetBusy(_control, &_busyTask, 0, ::STRINGS[2/*""*/]);
-    ::g::Uno::Diagnostics::Debug::Assert(_cacheState == NULL, ::STRINGS[3/*"this._cache...*/], ::STRINGS[4/*"../../../Li...*/], 606, uArray::New(::TYPES[7/*object[]*/], 0));
+    ::g::Uno::Diagnostics::Debug::Assert(_cacheState == NULL, ::STRINGS[3/*"this._cache...*/], ::STRINGS[4/*"/Users/eric...*/], 606, uArray::New(::TYPES[7/*object[]*/], 0));
     _cacheState = state;
     uPtr(_control)->InvalidateLayout(2);
     uPtr(_control)->InvalidateVisual();
@@ -1392,8 +1392,8 @@ TextRenderer* TextRenderer::New1(::g::Fuse::Controls::TextControl* control, bool
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fusetextrenderer/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fusetextrenderer/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal struct Tolerances :56
 // {

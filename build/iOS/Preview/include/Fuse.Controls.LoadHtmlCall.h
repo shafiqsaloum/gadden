@@ -1,8 +1,8 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Controls.BufferedWebViewCall.h>
+#include <Fuse.Controls.Buffere-2ce2abf.h>
 #include <Uno.Object.h>
 namespace g{namespace Fuse{namespace Controls{struct LoadHtmlCall;}}}
 
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// internal sealed class LoadHtmlCall :456
+// internal sealed class LoadHtmlCall :433
 // {
 struct LoadHtmlCall_type : uType
 {

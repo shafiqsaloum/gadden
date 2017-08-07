@@ -5,19 +5,19 @@
 #include <Uno.ArgumentNullException.h>
 #include <Uno.Array.h>
 #include <Uno.Bool.h>
-#include <Uno.Collections.Dictionary-2.Bucket.h>
-#include <Uno.Collections.Dictionary-2.BucketState.h>
-#include <Uno.Collections.Dictionary-2.Enumerator.h>
+#include <Uno.Collections.Dicti-87d2e37d.h>
+#include <Uno.Collections.Dicti-894ef3c3.h>
+#include <Uno.Collections.Dicti-98f6bc43.h>
+#include <Uno.Collections.Dicti-bd7b2149.h>
+#include <Uno.Collections.Dicti-d1699346.h>
+#include <Uno.Collections.Dicti-d6e3a7c5.h>
+#include <Uno.Collections.Dicti-e0584c76.h>
 #include <Uno.Collections.Dictionary-2.h>
-#include <Uno.Collections.Dictionary-2.KeyCollection.Enumerator.h>
-#include <Uno.Collections.Dictionary-2.KeyCollection.h>
-#include <Uno.Collections.Dictionary-2.ValueCollection.Enumerator.h>
-#include <Uno.Collections.Dictionary-2.ValueCollection.h>
-#include <Uno.Collections.EmptyEnumerable-1.h>
-#include <Uno.Collections.EmptyEnumerator-1.h>
-#include <Uno.Collections.EnumerableExtensions.h>
-#include <Uno.Collections.EnumerableExtensions.LinkedList-1.h>
-#include <Uno.Collections.HashSet-1.Enumerator.h>
+#include <Uno.Collections.Empty-234fc386.h>
+#include <Uno.Collections.Empty-a11a196.h>
+#include <Uno.Collections.Enume-8ddd045.h>
+#include <Uno.Collections.Enume-c80626a.h>
+#include <Uno.Collections.HashS-aaabdf6f.h>
 #include <Uno.Collections.HashSet-1.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IDictionary-2.h>
@@ -25,30 +25,30 @@
 #include <Uno.Collections.IEnumerator.h>
 #include <Uno.Collections.IEnumerator-1.h>
 #include <Uno.Collections.IList-1.h>
-#include <Uno.Collections.IListExtensions.h>
+#include <Uno.Collections.IList-b56be992.h>
 #include <Uno.Collections.KeyValuePair-2.h>
-#include <Uno.Collections.LinkedList-1.Enumerator.h>
+#include <Uno.Collections.Linke-712f9f5e.h>
+#include <Uno.Collections.Linke-998cff42.h>
 #include <Uno.Collections.LinkedList-1.h>
-#include <Uno.Collections.LinkedListNode-1.h>
-#include <Uno.Collections.List-1.Enumerator.h>
 #include <Uno.Collections.List-1.h>
-#include <Uno.Collections.ObservableList-1.h>
-#include <Uno.Collections.OfTypeEnumerable-2.h>
-#include <Uno.Collections.OfTypeEnumerator-2.h>
-#include <Uno.Collections.OrderByCompare-1.h>
-#include <Uno.Collections.PriorityQueue-1.h>
-#include <Uno.Collections.PriorityQueueItem-1.h>
-#include <Uno.Collections.PriorityQueueType.h>
-#include <Uno.Collections.Queue-1.Enumerator.h>
+#include <Uno.Collections.List--251bdc7d.h>
+#include <Uno.Collections.Obser-ca008b9a.h>
+#include <Uno.Collections.OfTyp-11c32fbf.h>
+#include <Uno.Collections.OfTyp-710e061d.h>
+#include <Uno.Collections.Order-35b71307.h>
+#include <Uno.Collections.Prior-7cf783be.h>
+#include <Uno.Collections.Prior-bb0a4ec8.h>
+#include <Uno.Collections.Prior-fb66463b.h>
 #include <Uno.Collections.Queue-1.h>
-#include <Uno.Collections.ReadOnlyCollection-1.h>
+#include <Uno.Collections.Queue-a4ffa9de.h>
+#include <Uno.Collections.ReadO-235c1e0d.h>
 #include <Uno.Collections.RootableList-1.h>
-#include <Uno.Collections.SelectEnumerable-2.h>
-#include <Uno.Collections.SelectEnumerator-2.h>
-#include <Uno.Collections.Stack-1.Enumerator.h>
+#include <Uno.Collections.Selec-30636d68.h>
+#include <Uno.Collections.Selec-5ab24080.h>
 #include <Uno.Collections.Stack-1.h>
-#include <Uno.Collections.UnionEnumerable-1.h>
-#include <Uno.Collections.UnionEnumerator-1.h>
+#include <Uno.Collections.Stack-f89e0a99.h>
+#include <Uno.Collections.Union-87d9db80.h>
+#include <Uno.Collections.Union-f4d1d6f0.h>
 #include <Uno.Comparison-1.h>
 #include <Uno.Delegate.h>
 #include <Uno.Exception.h>
@@ -63,7 +63,7 @@
 #include <Uno.Math.h>
 #include <Uno.Object.h>
 #include <Uno.Predicate-1.h>
-#include <Uno.Runtime.Implementation.Internal.ArrayEnumerable-1.h>
+#include <Uno.Runtime.Implement-eca777ec.h>
 #include <Uno.String.h>
 static uString* STRINGS[17];
 static uType* TYPES[36];
@@ -72,8 +72,8 @@ namespace g{
 namespace Uno{
 namespace Collections{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // internal struct Dictionary<TKey, TValue>.Bucket :18
 // {
@@ -100,8 +100,8 @@ uStructType* Dictionary__Bucket_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // internal enum Dictionary<TKey, TValue>.BucketState :10
 uEnumType* Dictionary__BucketState_typeof()
@@ -117,8 +117,8 @@ uEnumType* Dictionary__BucketState_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class Dictionary<TKey, TValue> :8
 // {
@@ -622,8 +622,8 @@ Dictionary* Dictionary::New2(uType* __type, uObject* dictionary)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public sealed class EmptyEnumerable<T> :5
 // {
@@ -699,8 +699,8 @@ EmptyEnumerable* EmptyEnumerable::New1(uType* __type)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // internal sealed class EmptyEnumerator<T> :13
 // {
@@ -799,8 +799,8 @@ EmptyEnumerator* EmptyEnumerator::New1(uType* __type)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public static class EnumerableExtensions :27
 // {
@@ -1255,8 +1255,8 @@ uObject* EnumerableExtensions::Union(uType* __type, uObject* self, uObject* othe
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public struct Stack<T>.Enumerator :1535
 // {
@@ -1378,8 +1378,8 @@ void Stack__Enumerator__UnoCollectionsIEnumeratorReset_fn(uTRef __this, uType* _
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public struct List<T>.Enumerator :1093
 // {
@@ -1501,8 +1501,8 @@ void List__Enumerator__UnoCollectionsIEnumeratorReset_fn(uTRef __this, uType* __
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public struct HashSet<T>.Enumerator :535
 // {
@@ -1635,8 +1635,8 @@ void HashSet__Enumerator__UnoCollectionsIEnumeratorReset_fn(uTRef __this, uType*
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public struct Dictionary<TKey, TValue>.Enumerator :25
 // {
@@ -1773,8 +1773,8 @@ void Dictionary__Enumerator__UnoCollectionsIEnumeratorReset_fn(uTRef __this, uTy
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public struct Queue<T>.Enumerator :1307
 // {
@@ -1910,8 +1910,8 @@ void Queue__Enumerator__UnoCollectionsIEnumeratorReset_fn(uTRef __this, uType* _
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public struct Dictionary<TKey, TValue>.KeyCollection.Enumerator :79
 // {
@@ -2044,8 +2044,8 @@ void Dictionary__KeyCollection__Enumerator__UnoCollectionsIEnumeratorReset_fn(uT
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public struct LinkedList<T>.Enumerator :823
 // {
@@ -2196,8 +2196,8 @@ LinkedList__Enumerator LinkedList__Enumerator__New1(uType* __type, ::g::Uno::Col
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public struct Dictionary<TKey, TValue>.ValueCollection.Enumerator :172
 // {
@@ -2330,8 +2330,8 @@ void Dictionary__ValueCollection__Enumerator__UnoCollectionsIEnumeratorReset_fn(
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class HashSet<T> :533
 // {
@@ -2584,8 +2584,8 @@ HashSet* HashSet::New2(uType* __type, uObject* items)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public abstract interface ICollection<T> :655
 // {
@@ -2605,8 +2605,8 @@ uInterfaceType* ICollection_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public abstract interface IDictionary<TKey, TValue> :673
 // {
@@ -2622,8 +2622,8 @@ uInterfaceType* IDictionary_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public abstract interface IEnumerable<T> :697
 // {
@@ -2639,8 +2639,8 @@ uInterfaceType* IEnumerable_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public abstract interface IEnumerator :711
 // {
@@ -2657,8 +2657,8 @@ uInterfaceType* IEnumerator_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public abstract interface IEnumerator<T> :718
 // {
@@ -2674,8 +2674,8 @@ uInterfaceType* IEnumerator1_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public abstract interface IList<T> :732
 // {
@@ -2693,8 +2693,8 @@ uInterfaceType* IList_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // public static class IListExtensions :285
 // {
@@ -2713,9 +2713,13 @@ static void IListExtensions_build(uType* type)
     type->MethodTypes[1]->SetPrecalc(
         ::TYPES[22/*Uno.Collections.ICollection`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL),
         ::TYPES[23/*Uno.Collections.IList`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL));
-    type->Reflection.SetFunctions(2,
+    type->MethodTypes[2]->SetPrecalc(
+        ::TYPES[22/*Uno.Collections.ICollection`1*/]->MakeType(type->MethodTypes[2]->U(0), NULL),
+        ::TYPES[23/*Uno.Collections.IList`1*/]->MakeType(type->MethodTypes[2]->U(0), NULL));
+    type->Reflection.SetFunctions(3,
         new uFunction("AddRange`1", type->MethodTypes[0], (void*)IListExtensions__AddRange_fn, 0, true, uVoid_typeof(), 2, ::TYPES[23/*Uno.Collections.IList`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL), ::TYPES[2/*Uno.Collections.IEnumerable`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL)),
-        new uFunction("RemoveLast`1", type->MethodTypes[1], (void*)IListExtensions__RemoveLast_fn, 0, true, type->MethodTypes[1]->U(0), 1, ::TYPES[23/*Uno.Collections.IList`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL)));
+        new uFunction("Last`1", type->MethodTypes[1], (void*)IListExtensions__Last_fn, 0, true, type->MethodTypes[1]->U(0), 1, ::TYPES[23/*Uno.Collections.IList`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL)),
+        new uFunction("RemoveLast`1", type->MethodTypes[2], (void*)IListExtensions__RemoveLast_fn, 0, true, type->MethodTypes[2]->U(0), 1, ::TYPES[23/*Uno.Collections.IList`1*/]->MakeType(type->MethodTypes[2]->U(0), NULL)));
 }
 
 uClassType* IListExtensions_typeof()
@@ -2724,11 +2728,12 @@ uClassType* IListExtensions_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.MethodTypeCount = 2;
+    options.MethodTypeCount = 3;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("Uno.Collections.IListExtensions", options);
     type->MethodTypes[0] = type->NewMethodType(1, 3);
     type->MethodTypes[1] = type->NewMethodType(1, 2);
+    type->MethodTypes[2] = type->NewMethodType(1, 2);
     type->fp_build_ = IListExtensions_build;
     return type;
 }
@@ -2737,6 +2742,20 @@ uClassType* IListExtensions_typeof()
 void IListExtensions__AddRange_fn(uType* __type, uObject* self, uObject* collection)
 {
     IListExtensions::AddRange(__type, self, collection);
+}
+
+// public static T Last<T>(Uno.Collections.IList<T> self) :321
+void IListExtensions__Last_fn(uType* __type, uObject* self, uTRef __retval)
+{
+    uType* __types[] = {
+        __type->U(0),
+        __type->Precalced(0/*Uno.Collections.ICollection<T>*/),
+        __type->Precalced(1/*Uno.Collections.IList<T>*/),
+    };
+    uStackFrame __("Uno.Collections.IListExtensions", "Last`1(Uno.Collections.IList<T>)");
+    uT ret4(__types[0], U_ALLOCA(__types[0]->ValueSize));
+    int i = ::g::Uno::Collections::ICollection::Count(uInterface(uPtr(self), __types[1])) - 1;
+    return __retval.Store((::g::Uno::Collections::IList::get_Item_ex(uInterface(self, __types[2]), uCRef<int>(i), &ret4), ret4)), void();
 }
 
 // public static T RemoveLast<T>(Uno.Collections.IList<T> self) :335
@@ -2780,8 +2799,8 @@ void IListExtensions::AddRange(uType* __type, uObject* self, uObject* collection
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class Dictionary<TKey, TValue>.KeyCollection :77
 // {
@@ -2919,8 +2938,8 @@ Dictionary__KeyCollection* Dictionary__KeyCollection::New1(uType* __type, ::g::U
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public struct KeyValuePair<TKey, TValue> :772
 // {
@@ -2977,8 +2996,8 @@ void KeyValuePair__get_Value_fn(uTRef __this, uType* __type, uTRef __retval)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class LinkedList<T> :817
 // {
@@ -3490,8 +3509,8 @@ LinkedList* LinkedList::New1(uType* __type)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // private sealed class EnumerableExtensions.LinkedList<T> :80
 // {
@@ -3533,8 +3552,8 @@ void EnumerableExtensions__LinkedList__New1_fn(uType* __type, void* item, Enumer
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class LinkedListNode<T> :803
 // {
@@ -3667,8 +3686,8 @@ void LinkedListNode::Previous(LinkedListNode* value)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class List<T> :1087
 // {
@@ -4077,8 +4096,8 @@ List* List::New2(uType* __type, int capacity)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class ObservableList<T> :8
 // {
@@ -4341,8 +4360,8 @@ ObservableList* ObservableList::New1(uType* __type, uDelegate* added1, uDelegate
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // internal sealed class OfTypeEnumerable<T, U> :359
 // {
@@ -4421,8 +4440,8 @@ OfTypeEnumerable* OfTypeEnumerable::New1(uType* __type, uObject* source)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // internal sealed class OfTypeEnumerator<T, U> :374
 // {
@@ -4555,8 +4574,8 @@ OfTypeEnumerator* OfTypeEnumerator::New1(uType* __type, uObject* source)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // internal sealed class OrderByCompare<T> :438
 // {
@@ -4616,8 +4635,8 @@ OrderByCompare* OrderByCompare::New1(uType* __type, uDelegate* orderFunction)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class PriorityQueue<T> :1677
 // {
@@ -4830,8 +4849,8 @@ PriorityQueue* PriorityQueue::New1(uType* __type, int type)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal struct PriorityQueueItem<T> :1659
 // {
@@ -4857,8 +4876,8 @@ uStructType* PriorityQueueItem_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal enum PriorityQueueType :1665
 uEnumType* PriorityQueueType_typeof()
@@ -4873,8 +4892,8 @@ uEnumType* PriorityQueueType_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class Queue<T> :1305
 // {
@@ -5145,8 +5164,8 @@ Queue* Queue::New2(uType* __type, int capacity)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class ReadOnlyCollection<T> :1481
 // {
@@ -5225,8 +5244,8 @@ ReadOnlyCollection* ReadOnlyCollection::New1(uType* __type, uObject* list)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public sealed class RootableList<T> :1942
 // {
@@ -5607,8 +5626,8 @@ RootableList* RootableList::New1(uType* __type)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // internal sealed class SelectEnumerable<T, TRet> :459
 // {
@@ -5689,8 +5708,8 @@ SelectEnumerable* SelectEnumerable::New1(uType* __type, uObject* source, uDelega
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // internal sealed class SelectEnumerator<T, TRet> :476
 // {
@@ -5811,8 +5830,8 @@ SelectEnumerator* SelectEnumerator::New1(uType* __type, uObject* source, uDelega
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class Stack<T> :1509
 // {
@@ -6046,8 +6065,8 @@ Stack* Stack::New2(uType* __type, int capacity)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // internal sealed class UnionEnumerable<T> :514
 // {
@@ -6128,8 +6147,8 @@ UnionEnumerable* UnionEnumerable::New1(uType* __type, uObject* first, uObject* s
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
-// ----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Collections/1.0.1/extensions/$.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // internal sealed class UnionEnumerator<T> :531
 // {
@@ -6261,8 +6280,8 @@ UnionEnumerator* UnionEnumerator::New1(uType* __type, uObject* first, uObject* s
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class Dictionary<TKey, TValue>.ValueCollection :170
 // {

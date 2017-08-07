@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{namespace Uno{namespace Graphics{struct Framebuffer;}}}
 namespace g{
 namespace Fuse{
 
-// internal sealed class CacheFramebuffer :50
+// internal sealed class CacheFramebuffer :10
 // {
 uType* CacheFramebuffer_typeof();
 void CacheFramebuffer__ctor__fn(CacheFramebuffer* __this, int* width, int* height, int* format, int* flags);

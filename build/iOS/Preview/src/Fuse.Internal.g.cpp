@@ -14,21 +14,21 @@
 #include <Fuse.Internal.Cache-2.h>
 #include <Fuse.Internal.CacheItem-2.h>
 #include <Fuse.Internal.CacheRef-2.h>
+#include <Fuse.Internal.Curves.-1494dae5.h>
 #include <Fuse.Internal.Curves.h>
-#include <Fuse.Internal.Curves.PointInterpolater.h>
 #include <Fuse.Internal.DoubleBlender.h>
 #include <Fuse.Internal.DrawManager.h>
 #include <Fuse.Internal.Float2Blender.h>
 #include <Fuse.Internal.Float3Blender.h>
 #include <Fuse.Internal.Float4Blender.h>
 #include <Fuse.Internal.FloatBlender.h>
-#include <Fuse.Internal.FontFaceDescriptor.h>
+#include <Fuse.Internal.FontFac-589fc2ef.h>
 #include <Fuse.Internal.FrustumMatrix.h>
 #include <Fuse.Internal.FuseConfig.h>
-#include <Fuse.Internal.IImageContainerOwner.h>
+#include <Fuse.Internal.IImageC-c450902.h>
 #include <Fuse.Internal.ImageContainer.h>
 #include <Fuse.Internal.iOSSystemFont.h>
-#include <Fuse.Internal.MiniList-1.Enumerator-1.h>
+#include <Fuse.Internal.MiniLis-a9364139.h>
 #include <Fuse.Internal.MiniList-1.h>
 #include <Fuse.Internal.RectPacker.h>
 #include <Fuse.Internal.ScalarBlender-1.h>
@@ -42,27 +42,27 @@
 #include <Fuse.LayoutParams.h>
 #include <Fuse.Resources.FileImageSource.h>
 #include <Fuse.Resources.HttpImageSource.h>
+#include <Fuse.Resources.ImageS-355caaa1.h>
+#include <Fuse.Resources.ImageS-a985306c.h>
 #include <Fuse.Resources.ImageSource.h>
-#include <Fuse.Resources.ImageSourceErrorArgs.h>
-#include <Fuse.Resources.ImageSourceErrorHandler.h>
 #include <Fuse.Resources.MemoryPolicy.h>
-#include <Fuse.Resources.MultiDensityImageSource.h>
+#include <Fuse.Resources.MultiD-7688643f.h>
 #include <Fuse.SystemFont.Style.h>
 #include <Fuse.SystemFont.Weight.h>
 #include <Uno.Action-1.h>
 #include <Uno.ArgumentNullException.h>
-#include <Uno.ArgumentOutOfRangeException.h>
+#include <Uno.ArgumentOutOfRang-6803b39e.h>
 #include <Uno.Bool.h>
 #include <Uno.Collections.Dictionary-2.h>
-#include <Uno.Collections.EnumerableExtensions.h>
+#include <Uno.Collections.Enume-8ddd045.h>
 #include <Uno.Collections.HashSet-1.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IEnumerator.h>
 #include <Uno.Collections.IEnumerator-1.h>
 #include <Uno.Collections.IList-1.h>
+#include <Uno.Collections.Linke-712f9f5e.h>
 #include <Uno.Collections.LinkedList-1.h>
-#include <Uno.Collections.LinkedListNode-1.h>
 #include <Uno.Collections.List-1.h>
 #include <Uno.Collections.RootableList-1.h>
 #include <Uno.Delegate.h>
@@ -84,7 +84,7 @@
 #include <Uno.Matrix.h>
 #include <Uno.Predicate-1.h>
 #include <Uno.Recti.h>
-#include <Uno.Runtime.Implementation.Internal.ArrayEnumerable-1.h>
+#include <Uno.Runtime.Implement-eca777ec.h>
 #include <Uno.String.h>
 #include <Uno.Threading.Monitor.h>
 #include <Uno.Type.h>
@@ -100,8 +100,8 @@ namespace g{
 namespace Fuse{
 namespace Internal{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal abstract class Blender<T> :305
 // {
@@ -178,8 +178,8 @@ void Blender::ctor_()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class BlenderMap :252
 // {
@@ -328,8 +328,8 @@ BlenderMap* BlenderMap::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public sealed class Cache<TKey, TValue> :473
 // {
@@ -540,8 +540,8 @@ Cache* Cache::New1(uType* __type, uDelegate* factory, int maxUnused)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public struct CacheItem<TKey, TValue> :563
 // {
@@ -686,8 +686,8 @@ bool CacheItem__op_Inequality(uType* __type, CacheItem x, CacheItem y)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class CacheRef<TKey, TValue> :611
 // {
@@ -811,8 +811,8 @@ void CacheRef::Retain()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal static class Curves :853
 // {
@@ -902,8 +902,8 @@ void Curves::KochanekBartelTangent(::g::Uno::Float4 pa, ::g::Uno::Float4 pb, ::g
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class DoubleBlender :390
 // {
@@ -1038,10 +1038,10 @@ DoubleBlender* DoubleBlender::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno
-// ------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
+// -------------------------------------------------------------------------------------------
 
-// internal static class DrawManager :887
+// internal static class DrawManager :886
 // {
 static void DrawManager_build(uType* type)
 {
@@ -1063,25 +1063,25 @@ uClassType* DrawManager_typeof()
     return type;
 }
 
-// public static void EndDraw(Fuse.DrawContext dc) :900
+// public static void EndDraw(Fuse.DrawContext dc) :899
 void DrawManager__EndDraw_fn(::g::Fuse::DrawContext* dc)
 {
     DrawManager::EndDraw(dc);
 }
 
-// public static generated void add_Prepared(Uno.Action<Fuse.DrawContext> value) :889
+// public static generated void add_Prepared(Uno.Action<Fuse.DrawContext> value) :888
 void DrawManager__add_Prepared_fn(uDelegate* value)
 {
     DrawManager::add_Prepared(value);
 }
 
-// public static generated void remove_Prepared(Uno.Action<Fuse.DrawContext> value) :889
+// public static generated void remove_Prepared(Uno.Action<Fuse.DrawContext> value) :888
 void DrawManager__remove_Prepared_fn(uDelegate* value)
 {
     DrawManager::remove_Prepared(value);
 }
 
-// public static void PrepareDraw(Fuse.DrawContext dc) :891
+// public static void PrepareDraw(Fuse.DrawContext dc) :890
 void DrawManager__PrepareDraw_fn(::g::Fuse::DrawContext* dc)
 {
     DrawManager::PrepareDraw(dc);
@@ -1089,7 +1089,7 @@ void DrawManager__PrepareDraw_fn(::g::Fuse::DrawContext* dc)
 
 uSStrong<uDelegate*> DrawManager::Prepared1_;
 
-// public static void EndDraw(Fuse.DrawContext dc) [static] :900
+// public static void EndDraw(Fuse.DrawContext dc) [static] :899
 void DrawManager::EndDraw(::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Internal.DrawManager", "EndDraw(Fuse.DrawContext)");
@@ -1097,7 +1097,7 @@ void DrawManager::EndDraw(::g::Fuse::DrawContext* dc)
     dc->ReleaseRootbuffer();
 }
 
-// public static void PrepareDraw(Fuse.DrawContext dc) [static] :891
+// public static void PrepareDraw(Fuse.DrawContext dc) [static] :890
 void DrawManager::PrepareDraw(::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Internal.DrawManager", "PrepareDraw(Fuse.DrawContext)");
@@ -1108,14 +1108,14 @@ void DrawManager::PrepareDraw(::g::Fuse::DrawContext* dc)
         uPtr(p)->InvokeVoid(dc);
 }
 
-// public static generated void add_Prepared(Uno.Action<Fuse.DrawContext> value) [static] :889
+// public static generated void add_Prepared(Uno.Action<Fuse.DrawContext> value) [static] :888
 void DrawManager::add_Prepared(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.DrawManager", "add_Prepared(Uno.Action<Fuse.DrawContext>)");
     DrawManager::Prepared1_ = uCast<uDelegate*>(::g::Uno::Delegate::Combine(DrawManager::Prepared1_, value), ::TYPES[9/*Uno.Action<Fuse.DrawContext>*/]);
 }
 
-// public static generated void remove_Prepared(Uno.Action<Fuse.DrawContext> value) [static] :889
+// public static generated void remove_Prepared(Uno.Action<Fuse.DrawContext> value) [static] :888
 void DrawManager::remove_Prepared(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.DrawManager", "remove_Prepared(Uno.Action<Fuse.DrawContext>)");
@@ -1123,8 +1123,8 @@ void DrawManager::remove_Prepared(uDelegate* value)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // private struct MiniList<T>.Enumerator<T> :1624
 // {
@@ -1270,8 +1270,8 @@ MiniList__Enumerator MiniList__Enumerator__New1(uType* __type, ::g::Fuse::Intern
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class Float2Blender :408
 // {
@@ -1390,8 +1390,8 @@ Float2Blender* Float2Blender::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class Float3Blender :424
 // {
@@ -1510,8 +1510,8 @@ Float3Blender* Float3Blender::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class Float4Blender :440
 // {
@@ -1630,8 +1630,8 @@ Float4Blender* Float4Blender::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class FloatBlender :372
 // {
@@ -1766,8 +1766,8 @@ FloatBlender* FloatBlender::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class FontFaceDescriptor :2127
 // {
@@ -1902,8 +1902,8 @@ FontFaceDescriptor* FontFaceDescriptor::New2(::g::Uno::UX::FileSource* fileSourc
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal static class FrustumMatrix :1022
 // {
@@ -2081,8 +2081,8 @@ bool FrustumMatrix::TryPerspectiveProjectionInverse(::g::Uno::Float2 viewSize, f
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/internal/$.uno
-// ---------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/internal/$.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal static class FuseConfig :13
 // {
@@ -2103,8 +2103,8 @@ uClassType* FuseConfig_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.1.1/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal abstract interface IImageContainerOwner :13
 // {
@@ -2118,15 +2118,15 @@ uInterfaceType* IImageContainerOwner_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.1.1/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal sealed class ImageContainer :20
 // {
 static void ImageContainer_build(uType* type)
 {
     ::STRINGS[2] = uString::Const("Switching listen state on null Image");
-    ::STRINGS[3] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.1.1/internal/$.uno");
+    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/internal/$.uno");
     ::STRINGS[4] = uString::Const("UpdateSourceListen");
     ::STRINGS[5] = uString::Const("ResampleMode.Mipmap has been deprecated. Use ResampleMode.Linear instead.");
     ::STRINGS[6] = uString::Const("set_ResampleMode");
@@ -2763,7 +2763,7 @@ void ImageContainer::ReapplyOptions(::g::Fuse::Resources::ImageSource* src)
     if ((hf != NULL) && (MemoryPolicy() != NULL))
         uPtr(hf)->DefaultPolicy(MemoryPolicy());
 
-    ::g::Fuse::Resources::MultiDensityImageSource* mf = uAs< ::g::Fuse::Resources::MultiDensityImageSource*>(src, ::TYPES[26/*Fuse.Resources.MultiDensityImageSource*/]);
+    ::g::Fuse::Resources::MultiDensityImageSource* mf = uAs< ::g::Fuse::Resources::MultiDensityImageSource*>(Source(), ::TYPES[26/*Fuse.Resources.MultiDensityImageSource*/]);
 
     if (mf != NULL)
 
@@ -2807,7 +2807,7 @@ void ImageContainer::ResampleMode(int value)
     if (_resampleMode != value)
     {
         if (value == 2)
-            ::g::Fuse::Diagnostics::Deprecated(::STRINGS[5/*"ResampleMod...*/], this, ::STRINGS[3/*"/Users/star...*/], 295, ::STRINGS[6/*"set_Resampl...*/]);
+            ::g::Fuse::Diagnostics::Deprecated(::STRINGS[5/*"ResampleMod...*/], this, ::STRINGS[3/*"/Users/eric...*/], 295, ::STRINGS[6/*"set_Resampl...*/]);
 
         _resampleMode = value;
         OnParamChanged();
@@ -2921,7 +2921,7 @@ void ImageContainer::UpdateSourceListen(bool forceOff)
 
     if (_source == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[2/*"Switching l...*/], this, ::STRINGS[3/*"/Users/star...*/], 179, ::STRINGS[4/*"UpdateSourc...*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[2/*"Switching l...*/], this, ::STRINGS[3/*"/Users/eric...*/], 179, ::STRINGS[4/*"UpdateSourc...*/]);
         _isSourceListen = false;
         return;
     }
@@ -2971,8 +2971,8 @@ ImageContainer* ImageContainer::New1(uObject* owner)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal struct MiniList<T> :1516
 // {
@@ -3285,8 +3285,8 @@ void MiniList::RemoveAt(uType* __type, int index)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public delegate float4 Curves.PointInterpolater(float4 p0, float4 p1, float4 m0, float4 m1, float t) :877
 uDelegateType* Curves__PointInterpolater_typeof()
@@ -3304,8 +3304,8 @@ uDelegateType* Curves__PointInterpolater_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class RectPacker :1807
 // {
@@ -3545,8 +3545,8 @@ RectPacker* RectPacker::New1(::g::Uno::Int2 size)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal abstract class ScalarBlender<T> :366
 // {
@@ -3583,8 +3583,8 @@ void ScalarBlender::ctor_1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class Size2Blender :347
 // {
@@ -3634,7 +3634,7 @@ void Size2Blender__Add_fn(Size2Blender* __this, ::g::Uno::UX::Size2* a, ::g::Uno
 void Size2Blender__Length_fn(Size2Blender* __this, ::g::Uno::UX::Size2* a, double* __retval)
 {
     ::g::Uno::UX::Size2 a_ = *a;
-    return *__retval = (double)::g::Uno::Vector::Length(::g::Uno::UX::Size2__op_Explicit1(a_)), void();
+    return *__retval = (double)::g::Uno::Vector::Length(::g::Uno::UX::Size2__op_Explicit(a_)), void();
 }
 
 // public override sealed Uno.UX.Size2 Lerp(Uno.UX.Size2 a, Uno.UX.Size2 b, double d) :352
@@ -3670,8 +3670,8 @@ void Size2Blender__Sub_fn(Size2Blender* __this, ::g::Uno::UX::Size2* a, ::g::Uno
 void Size2Blender__ToUnit_fn(Size2Blender* __this, ::g::Uno::UX::Size2* a, double* length, ::g::Uno::UX::Size2* __retval)
 {
     ::g::Uno::UX::Size2 a_ = *a;
-    *length = (double)::g::Uno::Vector::Length(::g::Uno::UX::Size2__op_Explicit1(a_));
-    ::g::Uno::Float2 v = ::g::Uno::Vector::Normalize(::g::Uno::UX::Size2__op_Explicit1(a_));
+    *length = (double)::g::Uno::Vector::Length(::g::Uno::UX::Size2__op_Explicit(a_));
+    ::g::Uno::Float2 v = ::g::Uno::Vector::Normalize(::g::Uno::UX::Size2__op_Explicit(a_));
     ::g::Uno::UX::Size x = a_.X;
     ::g::Uno::UX::Size y = a_.Y;
     return *__retval = ::g::Uno::UX::Size2__New1(::g::Uno::UX::Size__New1(v.X, x.Unit), ::g::Uno::UX::Size__New1(v.Y, y.Unit)), void();
@@ -3706,8 +3706,8 @@ Size2Blender* Size2Blender::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class SizeBlender :331
 // {
@@ -3826,8 +3826,8 @@ SizeBlender* SizeBlender::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.1.1/internal/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/internal/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // internal sealed class SizingContainer :396
 // {
@@ -4282,8 +4282,8 @@ SizingContainer* SizingContainer::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal struct SkylineNode :1787
 // {
@@ -4336,8 +4336,8 @@ SkylineNode SkylineNode__New1(::g::Uno::Int2 position, int width)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public static class Statistics :2099
 // {
@@ -4386,8 +4386,8 @@ double Statistics::ExponentialMovingAverage(double current, double sample, doubl
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal static class SystemFont :2176
 // {
@@ -4460,8 +4460,8 @@ void SystemFont__GetFallback_fn(::g::Uno::UX::FileSource* file, ::g::Uno::Collec
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal static class VectorUtil :2224
 // {

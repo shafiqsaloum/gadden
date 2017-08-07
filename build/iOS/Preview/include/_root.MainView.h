@@ -1,4 +1,4 @@
-// This file was generated based on build/iOS/Preview/cache/ux11/MainView.g.uno.
+// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -170,13 +170,10 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector66() { return MainView_typeof()->Init(), __selector66_; }
     static ::g::Uno::UX::Selector __selector67_;
     static ::g::Uno::UX::Selector& __selector67() { return MainView_typeof()->Init(), __selector67_; }
-<<<<<<< HEAD
-=======
     static ::g::Uno::UX::Selector __selector68_;
     static ::g::Uno::UX::Selector& __selector68() { return MainView_typeof()->Init(), __selector68_; }
     static ::g::Uno::UX::Selector __selector69_;
     static ::g::Uno::UX::Selector& __selector69() { return MainView_typeof()->Init(), __selector69_; }
->>>>>>> 1b78b750525f1c14d0676759d68b214d8813e7b4
     static ::g::Uno::UX::Selector __selector7_;
     static ::g::Uno::UX::Selector& __selector7() { return MainView_typeof()->Init(), __selector7_; }
     static ::g::Uno::UX::Selector __selector8_;
@@ -245,6 +242,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Panel*> popupInfoMap;
     uStrong< ::g::Uno::UX::Property1*> popupInfoMap_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Panel*> popupInfoMap2;
+    uStrong< ::g::Uno::UX::Property1*> popupInfoMap2_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> program;
     uStrong< ::g::Fuse::Controls::Panel*> ProgramDetails;
     uStrong< ::g::Uno::UX::Property1*> ProgramDetails_Opacity_inst;

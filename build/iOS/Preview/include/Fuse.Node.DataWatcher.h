@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{namespace Fuse{struct Node__DataWatcher;}}
 namespace g{
 namespace Fuse{
 
-// private sealed class Node.DataWatcher :2904
+// private sealed class Node.DataWatcher :2893
 // {
 struct Node__DataWatcher_type : ::g::Fuse::Node__DataFinder_type
 {

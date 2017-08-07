@@ -1,9 +1,9 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Controls.ISourceReceiver.h>
-#include <Fuse.Navigation.IBaseNavigation.h>
+#include <Fuse.Navigation.IBase-84e3f965.h>
 #include <Fuse.Triggers.IProgress.h>
 #include <Uno.Object.h>
 namespace g{namespace Uno{namespace UX{struct FileSource;}}}
@@ -33,8 +33,6 @@ struct IWebView
     void(*fp_add_PageLoaded)(uObject*, uDelegate*);
     void(*fp_remove_PageLoaded)(uObject*, uDelegate*);
     void(*fp_Reload)(uObject*);
-    void(*fp_get_ScrollEnabled)(uObject*, bool*);
-    void(*fp_set_ScrollEnabled)(uObject*, bool*);
     void(*fp_Stop)(uObject*);
     void(*fp_add_URISchemeHandler)(uObject*, uDelegate*);
     void(*fp_remove_URISchemeHandler)(uObject*, uDelegate*);
@@ -59,8 +57,6 @@ struct IWebView
     static void add_PageLoaded(const uInterface& __this, uDelegate* value) { __this.VTable<IWebView>()->fp_add_PageLoaded(__this, value); }
     static void remove_PageLoaded(const uInterface& __this, uDelegate* value) { __this.VTable<IWebView>()->fp_remove_PageLoaded(__this, value); }
     static void Reload(const uInterface& __this) { __this.VTable<IWebView>()->fp_Reload(__this); }
-    static bool ScrollEnabled(const uInterface& __this) { bool __retval; return __this.VTable<IWebView>()->fp_get_ScrollEnabled(__this, &__retval), __retval; }
-    static void ScrollEnabled(const uInterface& __this, bool value) { __this.VTable<IWebView>()->fp_set_ScrollEnabled(__this, &value); }
     static void Stop(const uInterface& __this) { __this.VTable<IWebView>()->fp_Stop(__this); }
     static void add_URISchemeHandler(const uInterface& __this, uDelegate* value) { __this.VTable<IWebView>()->fp_add_URISchemeHandler(__this, value); }
     static void remove_URISchemeHandler(const uInterface& __this, uDelegate* value) { __this.VTable<IWebView>()->fp_remove_URISchemeHandler(__this, value); }

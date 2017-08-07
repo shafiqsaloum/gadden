@@ -1,14 +1,14 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBasePlayerFeedback.h>
-#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
+#include <Fuse.Animations.IBase-d3bd6f2e.h>
+#include <Fuse.Animations.IUnwr-594abe9.h>
 #include <Fuse.Binding.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
 #include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.WhileEnabledDisabledTrigger.h>
+#include <Fuse.Triggers.WhileEn-fb4c6c6e.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>

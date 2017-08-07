@@ -1,4 +1,4 @@
-// This file was generated based on build/iOS/Preview/cache/ux11/Profile.g.uno.
+// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/Profile.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.gadden_bundle.h>
@@ -66,8 +66,6 @@ static void Profile_build(uType* type)
     type->fp_ctor_ = (void*)Profile__New5_fn;
     type->fp_cctor_ = Profile__cctor_4_fn;
     type->interface15.fp_Draw = (void(*)(uObject*, ::g::Fuse::Drawing::Surface*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableDraw_fn;
-    type->interface15.fp_get_IsPrimary = (void(*)(uObject*, bool*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_IsPrimary_fn;
-    type->interface15.fp_get_ElementSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_ElementSize_fn;
     type->interface10.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
     type->interface12.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
     type->interface11.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;
@@ -142,7 +140,7 @@ void Profile::InitializeUX()
     Height(::g::Uno::UX::Size__New1(56.0f, 1));
     temp->Width(::g::Uno::UX::Size__New1(30.0f, 4));
     temp->Alignment(10);
-    temp->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::ProfileIconbbe80c60()));
+    temp->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::ProfileIcon9300a9dd()));
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
 }
 

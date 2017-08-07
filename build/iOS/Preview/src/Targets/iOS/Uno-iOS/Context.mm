@@ -3,7 +3,7 @@
 #include <uObjC.Foreign.h>
 #include <Uno.Platform.CoreApp.h>
 #include <Uno.Platform.iOS.Application.h>
-#include <Uno.Platform.EventSources.InterAppInvoke.h>
+#include <Uno.Platform.EventSou-afb2ad40.h>
 
 
 @interface uContext()

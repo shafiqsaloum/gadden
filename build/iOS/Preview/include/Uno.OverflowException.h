@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/exceptions/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/exceptions/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace Uno{struct OverflowException;}}
 namespace g{
 namespace Uno{
 
-// public sealed class OverflowException :348
+// public sealed class OverflowException :343
 // {
 ::g::Uno::Exception_type* OverflowException_typeof();
 void OverflowException__ctor_3_fn(OverflowException* __this, uString* message);

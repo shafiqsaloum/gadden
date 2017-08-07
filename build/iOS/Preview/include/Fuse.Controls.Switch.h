@@ -1,10 +1,10 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/togglecontrols/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/togglecontrols/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
-#include <Fuse.Controls.Native.IToggleViewHost.h>
+#include <Fuse.Controls.Native.-ba5282a0.h>
 #include <Fuse.Controls.ToggleControl.h>
 #include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
@@ -12,10 +12,10 @@
 #include <Fuse.IProperties.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions.IToggleable.h>
+#include <Fuse.Triggers.Actions-b5190bae.h>
+#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Fuse.Triggers.IValue-1.h>
 #include <Uno.Bool.h>
 #include <Uno.Collections.ICollection-1.h>

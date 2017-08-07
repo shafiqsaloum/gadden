@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Drawing{
 
-// public static class SurfaceUtil :3208
+// public static class SurfaceUtil :3884
 // {
 uClassType* SurfaceUtil_typeof();
 void SurfaceUtil__AngleInRange_fn(float* angle, float* start, float* end, bool* __retval);

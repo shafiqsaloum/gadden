@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{namespace Fuse{struct Visual;}}
 namespace g{
 namespace Fuse{
 
-// public sealed class RequestBringIntoViewArgs :6784
+// public sealed class RequestBringIntoViewArgs :6299
 // {
 uType* RequestBringIntoViewArgs_typeof();
 void RequestBringIntoViewArgs__ctor_1_fn(RequestBringIntoViewArgs* __this, ::g::Fuse::Visual* elm);

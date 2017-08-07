@@ -1,8 +1,8 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/collections/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Collections.Dictionary-2.Bucket.h>
+#include <Uno.Collections.Dicti-e0584c76.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IDictionary-2.h>
 #include <Uno.Collections.IEnumerable-1.h>
@@ -83,7 +83,7 @@ struct Dictionary : uObject
 
 }}} // ::g::Uno::Collections
 
-#include <Uno.Collections.Dictionary-2.Enumerator.h>
+#include <Uno.Collections.Dicti-d1699346.h>
 
 namespace g{
 namespace Uno{

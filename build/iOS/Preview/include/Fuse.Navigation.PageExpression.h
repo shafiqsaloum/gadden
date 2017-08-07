@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public sealed class PageExpression :1549
+// public sealed class PageExpression :1465
 // {
 ::g::Fuse::Reactive::Expression_type* PageExpression_typeof();
 void PageExpression__ctor_1_fn(PageExpression* __this, uString* key);

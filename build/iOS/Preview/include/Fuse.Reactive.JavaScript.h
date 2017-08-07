@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -7,7 +7,7 @@
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
 #include <Fuse.Node.ISiblingDataProvider.h>
-#include <Fuse.Reactive.ValueForwarder.IValueListener.h>
+#include <Fuse.Reactive.ValueFo-a26c06f.h>
 #include <Fuse.Scripting.IModuleProvider.h>
 #include <Fuse.Scripting.IScriptObject.h>
 #include <Uno.Collections.ICollection-1.h>

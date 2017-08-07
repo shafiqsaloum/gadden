@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Controls/1.1.1/.uno/package'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/.uno/package'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

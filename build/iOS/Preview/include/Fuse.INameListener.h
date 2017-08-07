@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{namespace Uno{namespace UX{struct Selector;}}}
 namespace g{
 namespace Fuse{
 
-// public abstract interface INameListener :2092
+// public abstract interface INameListener :2095
 // {
 uInterfaceType* INameListener_typeof();
 

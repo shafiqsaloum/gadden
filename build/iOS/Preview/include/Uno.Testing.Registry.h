@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Uno.Testing/1.1.3/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Testing/1.0.13/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,17 +11,25 @@ namespace g{
 namespace Uno{
 namespace Testing{
 
-// public sealed class Registry :891
+// public sealed class Registry :919
 // {
 uType* Registry_typeof();
 void Registry__ctor__fn(Registry* __this);
+void Registry__Add_fn(Registry* __this, uDelegate* method, uString* name, bool* ignore, uString* ignoreReason);
+void Registry__get_Count_fn(Registry* __this, int* __retval);
+void Registry__FindTest_fn(Registry* __this, uString* testName, ::g::Uno::Testing::NamedTestMethod** __retval);
+void Registry__get_Item_fn(Registry* __this, int* index, ::g::Uno::Testing::NamedTestMethod** __retval);
 void Registry__New1_fn(Registry** __retval);
 
 struct Registry : uObject
 {
-    uStrong< ::g::Uno::Collections::List*> _tests;
+    uStrong< ::g::Uno::Collections::List*> tests;
 
     void ctor_();
+    void Add(uDelegate* method, uString* name, bool ignore, uString* ignoreReason);
+    int Count();
+    ::g::Uno::Testing::NamedTestMethod* FindTest(uString* testName);
+    ::g::Uno::Testing::NamedTestMethod* Item(int index);
     static Registry* New1();
 };
 // }

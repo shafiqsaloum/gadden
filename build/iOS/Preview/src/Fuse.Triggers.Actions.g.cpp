@@ -12,67 +12,67 @@
 #include <Fuse.Internal.BlenderMap.h>
 #include <Fuse.LayoutPriority.h>
 #include <Fuse.Node.h>
-#include <Fuse.Scripting.IEventSerializer.h>
+#include <Fuse.Scripting.IEvent-434826af.h>
 #include <Fuse.Time.h>
-#include <Fuse.Triggers.Actions.BringIntoView.h>
-#include <Fuse.Triggers.Actions.BringToFront.h>
 #include <Fuse.Triggers.Actions.Callback.h>
-#include <Fuse.Triggers.Actions.CancelInteractions.h>
 #include <Fuse.Triggers.Actions.Collapse.h>
-#include <Fuse.Triggers.Actions.DebugAction.h>
-#include <Fuse.Triggers.Actions.DebugFrame.h>
-#include <Fuse.Triggers.Actions.DebugProperty-1.h>
-#include <Fuse.Triggers.Actions.DebugTime.h>
-#include <Fuse.Triggers.Actions.EvaluateJS.h>
-#include <Fuse.Triggers.Actions.GiveFocus.h>
 #include <Fuse.Triggers.Actions.Hide.h>
-#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions.ITaggedDebugProperty.h>
-#include <Fuse.Triggers.Actions.IToggleable.h>
-#include <Fuse.Triggers.Actions.JSEventArgs.h>
-#include <Fuse.Triggers.Actions.JSEventHandler.h>
 #include <Fuse.Triggers.Actions.LoadHtml.h>
 #include <Fuse.Triggers.Actions.LoadUrl.h>
 #include <Fuse.Triggers.Actions.Pause.h>
 #include <Fuse.Triggers.Actions.Play.h>
-#include <Fuse.Triggers.Actions.PlaybackAction.h>
 #include <Fuse.Triggers.Actions.PlayTo.h>
 #include <Fuse.Triggers.Actions.Pulse.h>
-#include <Fuse.Triggers.Actions.PulseBackward.h>
-#include <Fuse.Triggers.Actions.PulseForward.h>
-#include <Fuse.Triggers.Actions.RaiseUserEvent.h>
-#include <Fuse.Triggers.Actions.ReleaseFocus.h>
-#include <Fuse.Triggers.Actions.ReleasePage.h>
 #include <Fuse.Triggers.Actions.Reload.h>
 #include <Fuse.Triggers.Actions.Resume.h>
-#include <Fuse.Triggers.Actions.SendToBack.h>
 #include <Fuse.Triggers.Actions.Set-1.h>
 #include <Fuse.Triggers.Actions.Show.h>
 #include <Fuse.Triggers.Actions.Stop.h>
-#include <Fuse.Triggers.Actions.StopLoading.h>
-#include <Fuse.Triggers.Actions.TimelineAction.h>
-#include <Fuse.Triggers.Actions.TimelineActionHow.h>
 #include <Fuse.Triggers.Actions.Toggle.h>
-#include <Fuse.Triggers.Actions.TransitionLayout.h>
-#include <Fuse.Triggers.Actions.TransitionState.h>
-#include <Fuse.Triggers.Actions.TransitionStateType.h>
-#include <Fuse.Triggers.Actions.TriggerAction.h>
-#include <Fuse.Triggers.Actions.TriggerWhen.h>
-#include <Fuse.Triggers.Actions.UserEventArg.h>
-#include <Fuse.Triggers.Actions.WebViewNavAction.h>
+#include <Fuse.Triggers.Actions-14263c83.h>
+#include <Fuse.Triggers.Actions-1510788d.h>
+#include <Fuse.Triggers.Actions-18789401.h>
+#include <Fuse.Triggers.Actions-18bf0d20.h>
+#include <Fuse.Triggers.Actions-32966389.h>
+#include <Fuse.Triggers.Actions-38f4649e.h>
+#include <Fuse.Triggers.Actions-39642be7.h>
+#include <Fuse.Triggers.Actions-3a870264.h>
+#include <Fuse.Triggers.Actions-458e75fc.h>
+#include <Fuse.Triggers.Actions-5821cb24.h>
+#include <Fuse.Triggers.Actions-5af09f89.h>
+#include <Fuse.Triggers.Actions-79bb5ad.h>
+#include <Fuse.Triggers.Actions-7ea0e0be.h>
+#include <Fuse.Triggers.Actions-873d043e.h>
+#include <Fuse.Triggers.Actions-967f0fff.h>
+#include <Fuse.Triggers.Actions-9b9fd4af.h>
+#include <Fuse.Triggers.Actions-a1d52f6d.h>
+#include <Fuse.Triggers.Actions-a5e0b480.h>
+#include <Fuse.Triggers.Actions-b3c1f4a1.h>
+#include <Fuse.Triggers.Actions-b5190bae.h>
+#include <Fuse.Triggers.Actions-b8cdaf7f.h>
+#include <Fuse.Triggers.Actions-baf069a8.h>
+#include <Fuse.Triggers.Actions-d8fdd070.h>
+#include <Fuse.Triggers.Actions-e0327300.h>
+#include <Fuse.Triggers.Actions-e0dcfc3.h>
+#include <Fuse.Triggers.Actions-e65da75e.h>
+#include <Fuse.Triggers.Actions-e720de5b.h>
+#include <Fuse.Triggers.Actions-ea70af1f.h>
+#include <Fuse.Triggers.Actions-f89d8ce6.h>
+#include <Fuse.Triggers.Actions-fcab7e57.h>
+#include <Fuse.Triggers.Actions-ff0a4af5.h>
 #include <Fuse.Triggers.IPlayback.h>
 #include <Fuse.Triggers.IPulseTrigger.h>
+#include <Fuse.Triggers.LayoutT-3aa69d98.h>
+#include <Fuse.Triggers.LayoutT-9d622a39.h>
 #include <Fuse.Triggers.LayoutTransition.h>
-#include <Fuse.Triggers.LayoutTransitionedArgs.h>
-#include <Fuse.Triggers.LayoutTransitionedHandler.h>
 #include <Fuse.Triggers.StateGroup.h>
 #include <Fuse.Triggers.Timeline.h>
 #include <Fuse.UpdateManager.h>
 #include <Fuse.UpdateStage.h>
 #include <Fuse.UserEvent.h>
-#include <Fuse.Visual.CancelInteractionsType.h>
+#include <Fuse.Visual.CancelInt-459c56d4.h>
 #include <Fuse.Visual.h>
 #include <Fuse.VisualEvent-2.h>
 #include <Fuse.VisualEventArgs.h>
@@ -88,8 +88,8 @@
 #include <Uno.Collections.IEnumerator.h>
 #include <Uno.Collections.IEnumerator-1.h>
 #include <Uno.Collections.IList-1.h>
-#include <Uno.Collections.List-1.Enumerator.h>
 #include <Uno.Collections.List-1.h>
+#include <Uno.Collections.List--251bdc7d.h>
 #include <Uno.Delegate.h>
 #include <Uno.Diagnostics.Debug.h>
 #include <Uno.Double.h>
@@ -113,8 +113,8 @@ namespace Fuse{
 namespace Triggers{
 namespace Actions{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.1.1/triggers/actions/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/actions/$.uno
+// ---------------------------------------------------------------------------------------------------------------
 
 // public sealed class BringIntoView :41
 // {
@@ -180,8 +180,8 @@ BringIntoView* BringIntoView::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.1.1/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/triggers/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class BringToFront :39
 // {
@@ -280,8 +280,8 @@ BringToFront* BringToFront::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Callback :27
 // {
@@ -406,8 +406,8 @@ Callback* Callback::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class CancelInteractions :56
 // {
@@ -501,8 +501,8 @@ CancelInteractions* CancelInteractions::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Collapse :1129
 // {
@@ -567,8 +567,8 @@ Collapse* Collapse::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class DebugAction :90
 // {
@@ -691,8 +691,8 @@ DebugAction* DebugAction::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class DebugFrame :183
 // {
@@ -776,8 +776,8 @@ DebugFrame* DebugFrame::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class DebugProperty<T> :139
 // {
@@ -924,8 +924,8 @@ DebugProperty* DebugProperty::New1(uType* __type, ::g::Uno::UX::Property1* val)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class DebugTime :170
 // {
@@ -1009,10 +1009,10 @@ DebugTime* DebugTime::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
-// public sealed class EvaluateJS :988
+// public sealed class EvaluateJS :963
 // {
 static void EvaluateJS_build(uType* type)
 {
@@ -1054,49 +1054,49 @@ static void EvaluateJS_build(uType* type)
     return type;
 }
 
-// public generated EvaluateJS() :988
+// public generated EvaluateJS() :963
 void EvaluateJS__ctor_2_fn(EvaluateJS* __this)
 {
     __this->ctor_2();
 }
 
-// private void Execute() :1032
+// private void Execute() :1007
 void EvaluateJS__Execute_fn(EvaluateJS* __this)
 {
     __this->Execute();
 }
 
-// public generated void add_Handler(Fuse.Triggers.Actions.JSEventHandler value) :994
+// public generated void add_Handler(Fuse.Triggers.Actions.JSEventHandler value) :969
 void EvaluateJS__add_Handler_fn(EvaluateJS* __this, uDelegate* value)
 {
     __this->add_Handler(value);
 }
 
-// public generated void remove_Handler(Fuse.Triggers.Actions.JSEventHandler value) :994
+// public generated void remove_Handler(Fuse.Triggers.Actions.JSEventHandler value) :969
 void EvaluateJS__remove_Handler_fn(EvaluateJS* __this, uDelegate* value)
 {
     __this->remove_Handler(value);
 }
 
-// public string get_JavaScript() :1004
+// public string get_JavaScript() :979
 void EvaluateJS__get_JavaScript_fn(EvaluateJS* __this, uString** __retval)
 {
     *__retval = __this->JavaScript();
 }
 
-// public void set_JavaScript(string value) :1005
+// public void set_JavaScript(string value) :980
 void EvaluateJS__set_JavaScript_fn(EvaluateJS* __this, uString* value)
 {
     __this->JavaScript(value);
 }
 
-// public generated EvaluateJS New() :988
+// public generated EvaluateJS New() :963
 void EvaluateJS__New2_fn(EvaluateJS** __retval)
 {
     *__retval = EvaluateJS::New2();
 }
 
-// protected override sealed void Perform(Fuse.Node target) :1019
+// protected override sealed void Perform(Fuse.Node target) :994
 void EvaluateJS__Perform_fn(EvaluateJS* __this, ::g::Fuse::Node* target)
 {
     uStackFrame __("Fuse.Triggers.Actions.EvaluateJS", "Perform(Fuse.Node)");
@@ -1108,71 +1108,71 @@ void EvaluateJS__Perform_fn(EvaluateJS* __this, ::g::Fuse::Node* target)
         __this->Execute();
 }
 
-// private string PrepareScriptForEval(string js) :1009
+// private string PrepareScriptForEval(string js) :984
 void EvaluateJS__PrepareScriptForEval_fn(EvaluateJS* __this, uString* js, uString** __retval)
 {
     *__retval = __this->PrepareScriptForEval(js);
 }
 
-// private void ResultHandler(string result) :1037
+// private void ResultHandler(string result) :1012
 void EvaluateJS__ResultHandler_fn(EvaluateJS* __this, uString* result)
 {
     __this->ResultHandler(result);
 }
 
-// public Fuse.Controls.IWebView get_WebView() :997
+// public Fuse.Controls.IWebView get_WebView() :972
 void EvaluateJS__get_WebView_fn(EvaluateJS* __this, uObject** __retval)
 {
     *__retval = __this->WebView();
 }
 
-// public void set_WebView(Fuse.Controls.IWebView value) :998
+// public void set_WebView(Fuse.Controls.IWebView value) :973
 void EvaluateJS__set_WebView_fn(EvaluateJS* __this, uObject* value)
 {
     __this->WebView(value);
 }
 
-// public generated EvaluateJS() [instance] :988
+// public generated EvaluateJS() [instance] :963
 void EvaluateJS::ctor_2()
 {
     ctor_1();
 }
 
-// private void Execute() [instance] :1032
+// private void Execute() [instance] :1007
 void EvaluateJS::Execute()
 {
     uStackFrame __("Fuse.Triggers.Actions.EvaluateJS", "Execute()");
     ::g::Fuse::Controls::IWebView::Eval1(uInterface(uPtr(WebView()), ::TYPES[7/*Fuse.Controls.IWebView*/]), _processedSource, uDelegate::New(::TYPES[8/*Uno.Action<string>*/], (void*)EvaluateJS__ResultHandler_fn, this));
 }
 
-// public generated void add_Handler(Fuse.Triggers.Actions.JSEventHandler value) [instance] :994
+// public generated void add_Handler(Fuse.Triggers.Actions.JSEventHandler value) [instance] :969
 void EvaluateJS::add_Handler(uDelegate* value)
 {
     uStackFrame __("Fuse.Triggers.Actions.EvaluateJS", "add_Handler(Fuse.Triggers.Actions.JSEventHandler)");
     Handler1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Handler1, value), ::TYPES[9/*Fuse.Triggers.Actions.JSEventHandler*/]);
 }
 
-// public generated void remove_Handler(Fuse.Triggers.Actions.JSEventHandler value) [instance] :994
+// public generated void remove_Handler(Fuse.Triggers.Actions.JSEventHandler value) [instance] :969
 void EvaluateJS::remove_Handler(uDelegate* value)
 {
     uStackFrame __("Fuse.Triggers.Actions.EvaluateJS", "remove_Handler(Fuse.Triggers.Actions.JSEventHandler)");
     Handler1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Handler1, value), ::TYPES[9/*Fuse.Triggers.Actions.JSEventHandler*/]);
 }
 
-// public string get_JavaScript() [instance] :1004
+// public string get_JavaScript() [instance] :979
 uString* EvaluateJS::JavaScript()
 {
     return _processedSource;
 }
 
-// public void set_JavaScript(string value) [instance] :1005
+// public void set_JavaScript(string value) [instance] :980
 void EvaluateJS::JavaScript(uString* value)
 {
     uStackFrame __("Fuse.Triggers.Actions.EvaluateJS", "set_JavaScript(string)");
     _processedSource = PrepareScriptForEval(_rawSource = value);
 }
 
-// private string PrepareScriptForEval(string js) [instance] :1009
+// private string PrepareScriptForEval(string js) [instance] :984
 uString* EvaluateJS::PrepareScriptForEval(uString* js)
 {
     uStackFrame __("Fuse.Triggers.Actions.EvaluateJS", "PrepareScriptForEval(string)");
@@ -1185,7 +1185,7 @@ uString* EvaluateJS::PrepareScriptForEval(uString* js)
     return js;
 }
 
-// private void ResultHandler(string result) [instance] :1037
+// private void ResultHandler(string result) [instance] :1012
 void EvaluateJS::ResultHandler(uString* result)
 {
     uStackFrame __("Fuse.Triggers.Actions.EvaluateJS", "ResultHandler(string)");
@@ -1194,19 +1194,19 @@ void EvaluateJS::ResultHandler(uString* result)
         uPtr(Handler1)->Invoke(2, this, (::g::Fuse::Triggers::Actions::JSEventArgs*)::g::Fuse::Triggers::Actions::JSEventArgs::New2(result));
 }
 
-// public Fuse.Controls.IWebView get_WebView() [instance] :997
+// public Fuse.Controls.IWebView get_WebView() [instance] :972
 uObject* EvaluateJS::WebView()
 {
     return _target;
 }
 
-// public void set_WebView(Fuse.Controls.IWebView value) [instance] :998
+// public void set_WebView(Fuse.Controls.IWebView value) [instance] :973
 void EvaluateJS::WebView(uObject* value)
 {
     _target = value;
 }
 
-// public generated EvaluateJS New() [static] :988
+// public generated EvaluateJS New() [static] :963
 EvaluateJS* EvaluateJS::New2()
 {
     EvaluateJS* obj1 = (EvaluateJS*)uNew(EvaluateJS_typeof());
@@ -1215,8 +1215,8 @@ EvaluateJS* EvaluateJS::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class GiveFocus :224
 // {
@@ -1319,8 +1319,8 @@ GiveFocus* GiveFocus::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Hide :1097
 // {
@@ -1385,8 +1385,8 @@ Hide* Hide::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract interface ICollapse :1105
 // {
@@ -1402,8 +1402,8 @@ uInterfaceType* ICollapse_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract interface IHide :1073
 // {
@@ -1419,8 +1419,8 @@ uInterfaceType* IHide_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract interface IShow :1040
 // {
@@ -1436,8 +1436,8 @@ uInterfaceType* IShow_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract interface ITaggedDebugProperty :133
 // {
@@ -1454,8 +1454,8 @@ uInterfaceType* ITaggedDebugProperty_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract interface IToggleable :870
 // {
@@ -1471,10 +1471,10 @@ uInterfaceType* IToggleable_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
-// public sealed class JSEventArgs :893
+// public sealed class JSEventArgs :868
 // {
 static void JSEventArgs_build(uType* type)
 {
@@ -1507,33 +1507,33 @@ JSEventArgs_type* JSEventArgs_typeof()
     return type;
 }
 
-// public JSEventArgs(string resultJson) :896
+// public JSEventArgs(string resultJson) :871
 void JSEventArgs__ctor_1_fn(JSEventArgs* __this, uString* resultJson)
 {
     __this->ctor_1(resultJson);
 }
 
-// private void Fuse.Scripting.IScriptEvent.Serialize(Fuse.Scripting.IEventSerializer s) :901
+// private void Fuse.Scripting.IScriptEvent.Serialize(Fuse.Scripting.IEventSerializer s) :876
 void JSEventArgs__FuseScriptingIScriptEventSerialize_fn(JSEventArgs* __this, uObject* s)
 {
     uStackFrame __("Fuse.Triggers.Actions.JSEventArgs", "Fuse.Scripting.IScriptEvent.Serialize(Fuse.Scripting.IEventSerializer)");
     ::g::Fuse::Scripting::IEventSerializer::AddString(uInterface(uPtr(s), ::TYPES[11/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[6/*"json"*/], __this->ResultJson);
 }
 
-// public JSEventArgs New(string resultJson) :896
+// public JSEventArgs New(string resultJson) :871
 void JSEventArgs__New2_fn(uString* resultJson, JSEventArgs** __retval)
 {
     *__retval = JSEventArgs::New2(resultJson);
 }
 
-// public JSEventArgs(string resultJson) [instance] :896
+// public JSEventArgs(string resultJson) [instance] :871
 void JSEventArgs::ctor_1(uString* resultJson)
 {
     ctor_();
     ResultJson = resultJson;
 }
 
-// public JSEventArgs New(string resultJson) [static] :896
+// public JSEventArgs New(string resultJson) [static] :871
 JSEventArgs* JSEventArgs::New2(uString* resultJson)
 {
     JSEventArgs* obj1 = (JSEventArgs*)uNew(JSEventArgs_typeof());
@@ -1542,10 +1542,10 @@ JSEventArgs* JSEventArgs::New2(uString* resultJson)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
-// public delegate void JSEventHandler(object sender, Fuse.Triggers.Actions.JSEventArgs args) :907
+// public delegate void JSEventHandler(object sender, Fuse.Triggers.Actions.JSEventArgs args) :882
 uDelegateType* JSEventHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -1558,10 +1558,10 @@ uDelegateType* JSEventHandler_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
-// public sealed class LoadHtml :764
+// public sealed class LoadHtml :739
 // {
 static void LoadHtml_build(uType* type)
 {
@@ -1602,25 +1602,25 @@ LoadHtml_type* LoadHtml_typeof()
     return type;
 }
 
-// public generated LoadHtml() :764
+// public generated LoadHtml() :739
 void LoadHtml__ctor_3_fn(LoadHtml* __this)
 {
     __this->ctor_3();
 }
 
-// public generated string get_BaseUrl() :787
+// public generated string get_BaseUrl() :762
 void LoadHtml__get_BaseUrl_fn(LoadHtml* __this, uString** __retval)
 {
     *__retval = __this->BaseUrl();
 }
 
-// public generated void set_BaseUrl(string value) :787
+// public generated void set_BaseUrl(string value) :762
 void LoadHtml__set_BaseUrl_fn(LoadHtml* __this, uString* value)
 {
     __this->BaseUrl(value);
 }
 
-// private override sealed void Execute(Fuse.Controls.WebView webview) :789
+// private override sealed void Execute(Fuse.Controls.WebView webview) :764
 void LoadHtml__Execute_fn(LoadHtml* __this, ::g::Fuse::Controls::WebView* webview)
 {
     uStackFrame __("Fuse.Triggers.Actions.LoadHtml", "Execute(Fuse.Controls.WebView)");
@@ -1629,61 +1629,61 @@ void LoadHtml__Execute_fn(LoadHtml* __this, ::g::Fuse::Controls::WebView* webvie
         uPtr(webview)->LoadHtml1(__this->Source(), __this->BaseUrl());
 }
 
-// public Fuse.Controls.HTML get_HTMLSource() :773
+// public Fuse.Controls.HTML get_HTMLSource() :748
 void LoadHtml__get_HTMLSource_fn(LoadHtml* __this, ::g::Fuse::Controls::HTML** __retval)
 {
     *__retval = __this->HTMLSource();
 }
 
-// public void set_HTMLSource(Fuse.Controls.HTML value) :777
+// public void set_HTMLSource(Fuse.Controls.HTML value) :752
 void LoadHtml__set_HTMLSource_fn(LoadHtml* __this, ::g::Fuse::Controls::HTML* value)
 {
     __this->HTMLSource(value);
 }
 
-// public generated LoadHtml New() :764
+// public generated LoadHtml New() :739
 void LoadHtml__New2_fn(LoadHtml** __retval)
 {
     *__retval = LoadHtml::New2();
 }
 
-// public generated string get_Source() :768
+// public generated string get_Source() :743
 void LoadHtml__get_Source_fn(LoadHtml* __this, uString** __retval)
 {
     *__retval = __this->Source();
 }
 
-// public generated void set_Source(string value) :768
+// public generated void set_Source(string value) :743
 void LoadHtml__set_Source_fn(LoadHtml* __this, uString* value)
 {
     __this->Source(value);
 }
 
-// public generated LoadHtml() [instance] :764
+// public generated LoadHtml() [instance] :739
 void LoadHtml::ctor_3()
 {
     ctor_2();
 }
 
-// public generated string get_BaseUrl() [instance] :787
+// public generated string get_BaseUrl() [instance] :762
 uString* LoadHtml::BaseUrl()
 {
     return _BaseUrl;
 }
 
-// public generated void set_BaseUrl(string value) [instance] :787
+// public generated void set_BaseUrl(string value) [instance] :762
 void LoadHtml::BaseUrl(uString* value)
 {
     _BaseUrl = value;
 }
 
-// public Fuse.Controls.HTML get_HTMLSource() [instance] :773
+// public Fuse.Controls.HTML get_HTMLSource() [instance] :748
 ::g::Fuse::Controls::HTML* LoadHtml::HTMLSource()
 {
     return _html;
 }
 
-// public void set_HTMLSource(Fuse.Controls.HTML value) [instance] :777
+// public void set_HTMLSource(Fuse.Controls.HTML value) [instance] :752
 void LoadHtml::HTMLSource(::g::Fuse::Controls::HTML* value)
 {
     uStackFrame __("Fuse.Triggers.Actions.LoadHtml", "set_HTMLSource(Fuse.Controls.HTML)");
@@ -1691,19 +1691,19 @@ void LoadHtml::HTMLSource(::g::Fuse::Controls::HTML* value)
     uPtr(_html)->Receiver = (uObject*)this;
 }
 
-// public generated string get_Source() [instance] :768
+// public generated string get_Source() [instance] :743
 uString* LoadHtml::Source()
 {
     return _Source;
 }
 
-// public generated void set_Source(string value) [instance] :768
+// public generated void set_Source(string value) [instance] :743
 void LoadHtml::Source(uString* value)
 {
     _Source = value;
 }
 
-// public generated LoadHtml New() [static] :764
+// public generated LoadHtml New() [static] :739
 LoadHtml* LoadHtml::New2()
 {
     LoadHtml* obj1 = (LoadHtml*)uNew(LoadHtml_typeof());
@@ -1712,10 +1712,10 @@ LoadHtml* LoadHtml::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
-// public sealed class LoadUrl :722
+// public sealed class LoadUrl :697
 // {
 static void LoadUrl_build(uType* type)
 {
@@ -1745,13 +1745,13 @@ static void LoadUrl_build(uType* type)
     return type;
 }
 
-// public generated LoadUrl() :722
+// public generated LoadUrl() :697
 void LoadUrl__ctor_3_fn(LoadUrl* __this)
 {
     __this->ctor_3();
 }
 
-// private override sealed void Execute(Fuse.Controls.WebView webview) :727
+// private override sealed void Execute(Fuse.Controls.WebView webview) :702
 void LoadUrl__Execute_fn(LoadUrl* __this, ::g::Fuse::Controls::WebView* webview)
 {
     uStackFrame __("Fuse.Triggers.Actions.LoadUrl", "Execute(Fuse.Controls.WebView)");
@@ -1760,43 +1760,43 @@ void LoadUrl__Execute_fn(LoadUrl* __this, ::g::Fuse::Controls::WebView* webview)
         uPtr(webview)->LoadUrl(__this->Url());
 }
 
-// public generated LoadUrl New() :722
+// public generated LoadUrl New() :697
 void LoadUrl__New2_fn(LoadUrl** __retval)
 {
     *__retval = LoadUrl::New2();
 }
 
-// public generated string get_Url() :725
+// public generated string get_Url() :700
 void LoadUrl__get_Url_fn(LoadUrl* __this, uString** __retval)
 {
     *__retval = __this->Url();
 }
 
-// public generated void set_Url(string value) :725
+// public generated void set_Url(string value) :700
 void LoadUrl__set_Url_fn(LoadUrl* __this, uString* value)
 {
     __this->Url(value);
 }
 
-// public generated LoadUrl() [instance] :722
+// public generated LoadUrl() [instance] :697
 void LoadUrl::ctor_3()
 {
     ctor_2();
 }
 
-// public generated string get_Url() [instance] :725
+// public generated string get_Url() [instance] :700
 uString* LoadUrl::Url()
 {
     return _Url;
 }
 
-// public generated void set_Url(string value) [instance] :725
+// public generated void set_Url(string value) [instance] :700
 void LoadUrl::Url(uString* value)
 {
     _Url = value;
 }
 
-// public generated LoadUrl New() [static] :722
+// public generated LoadUrl New() [static] :697
 LoadUrl* LoadUrl::New2()
 {
     LoadUrl* obj1 = (LoadUrl*)uNew(LoadUrl_typeof());
@@ -1805,8 +1805,8 @@ LoadUrl* LoadUrl::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Pause :403
 // {
@@ -1873,8 +1873,8 @@ Pause* Pause::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public class Play :472
 // {
@@ -1941,8 +1941,8 @@ Play* Play::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract class PlaybackAction :300
 // {
@@ -2007,15 +2007,15 @@ void PlaybackAction::Target(uObject* value)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class PlayTo :540
 // {
 static void PlayTo_build(uType* type)
 {
     ::STRINGS[7] = uString::Const("Use the TimelineAction with `How=\"PlayTo\" instead.");
-    ::STRINGS[8] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno");
+    ::STRINGS[8] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno");
     ::STRINGS[9] = uString::Const(".ctor");
     ::TYPES[12] = ::g::Fuse::Triggers::IPlayback_typeof();
     type->SetFields(10,
@@ -2082,7 +2082,7 @@ void PlayTo__set_Progress_fn(PlayTo* __this, double* value)
 void PlayTo::ctor_3()
 {
     ctor_2();
-    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[7/*"Use the Tim...*/], this, ::STRINGS[8/*"/Users/star...*/], 547, ::STRINGS[9/*".ctor"*/]);
+    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[7/*"Use the Tim...*/], this, ::STRINGS[8/*"/Users/eric...*/], 547, ::STRINGS[9/*".ctor"*/]);
 }
 
 // public generated double get_Progress() [instance] :542
@@ -2106,8 +2106,8 @@ PlayTo* PlayTo::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Pulse :583
 // {
@@ -2200,8 +2200,8 @@ Pulse* Pulse::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class PulseBackward :598
 // {
@@ -2293,8 +2293,8 @@ PulseBackward* PulseBackward::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class PulseForward :613
 // {
@@ -2386,15 +2386,15 @@ PulseForward* PulseForward::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class RaiseUserEvent :192
 // {
 static void RaiseUserEvent_build(uType* type)
 {
     ::STRINGS[10] = uString::Const("no UserEvent found: ");
-    ::STRINGS[11] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/1.1.1/$.uno");
+    ::STRINGS[11] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/1.0.5/$.uno");
     ::STRINGS[12] = uString::Const("Perform");
     ::TYPES[14] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Triggers::Actions::UserEventArg_typeof(), NULL);
     ::TYPES[15] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), uObject_typeof(), NULL);
@@ -2485,7 +2485,7 @@ void RaiseUserEvent__Perform_fn(RaiseUserEvent* __this, ::g::Fuse::Node* target)
     }
 
     if (__this->_event == NULL)
-        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::STRINGS[10/*"no UserEven...*/], ::g::Uno::UX::Selector__op_Implicit1(__this->EventName())), __this, ::STRINGS[11/*"/Users/star...*/], 240, ::STRINGS[12/*"Perform"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::STRINGS[10/*"no UserEven...*/], ::g::Uno::UX::Selector__op_Implicit1(__this->EventName())), __this, ::STRINGS[11/*"/Users/eric...*/], 240, ::STRINGS[12/*"Perform"*/], NULL);
     else
         uPtr(__this->_event)->Raise(__this->ConvertArgs());
 }
@@ -2549,8 +2549,8 @@ RaiseUserEvent* RaiseUserEvent::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class ReleaseFocus :248
 // {
@@ -2612,15 +2612,15 @@ ReleaseFocus* ReleaseFocus::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.1.1/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class ReleasePage :273
 // {
 static void ReleasePage_build(uType* type)
 {
     ::STRINGS[13] = uString::Const("Requires a Visual and Navigator parent");
-    ::STRINGS[14] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.1.1/$.uno");
+    ::STRINGS[14] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno");
     ::STRINGS[12] = uString::Const("Perform");
     ::TYPES[1] = ::g::Fuse::Visual_typeof();
     ::TYPES[20] = ::g::Fuse::Controls::Navigator_typeof();
@@ -2676,7 +2676,7 @@ void ReleasePage__Perform_fn(ReleasePage* __this, ::g::Fuse::Node* n)
 
     if ((__this->_pendVisual == NULL) || (__this->_pendNavigator == NULL))
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[13/*"Requires a ...*/], __this, ::STRINGS[14/*"/Users/star...*/], 283, ::STRINGS[12/*"Perform"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[13/*"Requires a ...*/], __this, ::STRINGS[14/*"/Users/eric...*/], 283, ::STRINGS[12/*"Perform"*/], NULL);
         return;
     }
 
@@ -2711,10 +2711,10 @@ ReleasePage* ReleasePage::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
-// public sealed class Reload :698
+// public sealed class Reload :673
 // {
 static void Reload_build(uType* type)
 {
@@ -2740,32 +2740,32 @@ static void Reload_build(uType* type)
     return type;
 }
 
-// public generated Reload() :698
+// public generated Reload() :673
 void Reload__ctor_3_fn(Reload* __this)
 {
     __this->ctor_3();
 }
 
-// private override sealed void Execute(Fuse.Controls.WebView webview) :700
+// private override sealed void Execute(Fuse.Controls.WebView webview) :675
 void Reload__Execute_fn(Reload* __this, ::g::Fuse::Controls::WebView* webview)
 {
     uStackFrame __("Fuse.Triggers.Actions.Reload", "Execute(Fuse.Controls.WebView)");
     uPtr(webview)->Reload();
 }
 
-// public generated Reload New() :698
+// public generated Reload New() :673
 void Reload__New2_fn(Reload** __retval)
 {
     *__retval = Reload::New2();
 }
 
-// public generated Reload() [instance] :698
+// public generated Reload() [instance] :673
 void Reload::ctor_3()
 {
     ctor_2();
 }
 
-// public generated Reload New() [static] :698
+// public generated Reload New() [static] :673
 Reload* Reload::New2()
 {
     Reload* obj1 = (Reload*)uNew(Reload_typeof());
@@ -2774,15 +2774,15 @@ Reload* Reload::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Resume :485
 // {
 static void Resume_build(uType* type)
 {
     ::STRINGS[15] = uString::Const("Use `Play` instead of `Resume`");
-    ::STRINGS[8] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno");
+    ::STRINGS[8] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno");
     ::STRINGS[9] = uString::Const(".ctor");
     type->SetFields(10);
     type->Reflection.SetFunctions(1,
@@ -2821,7 +2821,7 @@ void Resume__New3_fn(Resume** __retval)
 void Resume::ctor_4()
 {
     ctor_3();
-    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[15/*"Use `Play` ...*/], this, ::STRINGS[8/*"/Users/star...*/], 490, ::STRINGS[9/*".ctor"*/]);
+    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[15/*"Use `Play` ...*/], this, ::STRINGS[8/*"/Users/eric...*/], 490, ::STRINGS[9/*".ctor"*/]);
 }
 
 // public Resume New() [static] :487
@@ -2833,8 +2833,8 @@ Resume* Resume::New3()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.1.1/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/triggers/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class SendToBack :84
 // {
@@ -2933,8 +2933,8 @@ SendToBack* SendToBack::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Set<T> :664
 // {
@@ -3121,8 +3121,8 @@ Set* Set::New2(uType* __type, ::g::Uno::UX::Property1* target)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Show :1065
 // {
@@ -3187,8 +3187,8 @@ Show* Show::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Stop :371
 // {
@@ -3255,10 +3255,10 @@ Stop* Stop::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
-// public sealed class StopLoading :710
+// public sealed class StopLoading :685
 // {
 static void StopLoading_build(uType* type)
 {
@@ -3284,32 +3284,32 @@ static void StopLoading_build(uType* type)
     return type;
 }
 
-// public generated StopLoading() :710
+// public generated StopLoading() :685
 void StopLoading__ctor_3_fn(StopLoading* __this)
 {
     __this->ctor_3();
 }
 
-// private override sealed void Execute(Fuse.Controls.WebView webview) :712
+// private override sealed void Execute(Fuse.Controls.WebView webview) :687
 void StopLoading__Execute_fn(StopLoading* __this, ::g::Fuse::Controls::WebView* webview)
 {
     uStackFrame __("Fuse.Triggers.Actions.StopLoading", "Execute(Fuse.Controls.WebView)");
     uPtr(webview)->Stop();
 }
 
-// public generated StopLoading New() :710
+// public generated StopLoading New() :685
 void StopLoading__New2_fn(StopLoading** __retval)
 {
     *__retval = StopLoading::New2();
 }
 
-// public generated StopLoading() [instance] :710
+// public generated StopLoading() [instance] :685
 void StopLoading::ctor_3()
 {
     ctor_2();
 }
 
-// public generated StopLoading New() [static] :710
+// public generated StopLoading New() [static] :685
 StopLoading* StopLoading::New2()
 {
     StopLoading* obj1 = (StopLoading*)uNew(StopLoading_typeof());
@@ -3318,15 +3318,15 @@ StopLoading* StopLoading::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class TimelineAction :811
 // {
 static void TimelineAction_build(uType* type)
 {
     ::STRINGS[17] = uString::Const("`TimelineAction` called without a `Timeline` `Target`");
-    ::STRINGS[8] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno");
+    ::STRINGS[8] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno");
     ::STRINGS[12] = uString::Const("Perform");
     type->SetFields(9,
         ::g::Fuse::Triggers::Actions::TimelineActionHow_typeof(), offsetof(::g::Fuse::Triggers::Actions::TimelineAction, _How), 0,
@@ -3391,7 +3391,7 @@ void TimelineAction__Perform_fn(TimelineAction* __this, ::g::Fuse::Node* target)
 
     if (t == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[17/*"`TimelineAc...*/], __this, ::STRINGS[8/*"/Users/star...*/], 827, ::STRINGS[12/*"Perform"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[17/*"`TimelineAc...*/], __this, ::STRINGS[8/*"/Users/eric...*/], 827, ::STRINGS[12/*"Perform"*/], NULL);
         return;
     }
 
@@ -3516,8 +3516,8 @@ TimelineAction* TimelineAction::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public enum TimelineActionHow :784
 uEnumType* TimelineActionHow_typeof()
@@ -3539,8 +3539,8 @@ uEnumType* TimelineActionHow_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Toggle :894
 // {
@@ -3658,8 +3658,8 @@ Toggle* Toggle::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.1.1/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/$.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class TransitionLayout :343
 // {
@@ -3777,8 +3777,8 @@ TransitionLayout* TransitionLayout::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class TransitionState :759
 // {
@@ -3903,8 +3903,8 @@ TransitionState* TransitionState::New2()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public enum TransitionStateType :751
 uEnumType* TransitionStateType_typeof()
@@ -3918,15 +3918,15 @@ uEnumType* TransitionStateType_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public abstract class TriggerAction :948
 // {
 static void TriggerAction_build(uType* type)
 {
     ::STRINGS[18] = uString::Const("Use `Trigger.When` instead of `Trigger.Direction`");
-    ::STRINGS[8] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno");
+    ::STRINGS[8] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno");
     ::STRINGS[19] = uString::Const("set_Direction");
     type->SetFields(2,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Triggers::Actions::TriggerAction, _delay), 0,
@@ -4107,7 +4107,7 @@ int TriggerAction::Direction()
 // public void set_Direction(Fuse.Triggers.Actions.TriggerWhen value) [instance] :960
 void TriggerAction::Direction(int value)
 {
-    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[18/*"Use `Trigge...*/], this, ::STRINGS[8/*"/Users/star...*/], 963, ::STRINGS[19/*"set_Direction"*/]);
+    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[18/*"Use `Trigge...*/], this, ::STRINGS[8/*"/Users/eric...*/], 963, ::STRINGS[19/*"set_Direction"*/]);
     When(value);
 }
 
@@ -4176,8 +4176,8 @@ void TriggerAction::When(int value)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.1.1/actions/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public enum TriggerWhen :924
 uEnumType* TriggerWhen_typeof()
@@ -4196,8 +4196,8 @@ uEnumType* TriggerWhen_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class UserEventArg :286
 // {
@@ -4413,10 +4413,10 @@ UserEventArg* UserEventArg::New2(uString* name)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.1.1/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
+// ------------------------------------------------------------------------------------------------------
 
-// public abstract class WebViewNavAction :676
+// public abstract class WebViewNavAction :651
 // {
 static void WebViewNavAction_build(uType* type)
 {
@@ -4441,13 +4441,13 @@ WebViewNavAction_type* WebViewNavAction_typeof()
     return type;
 }
 
-// internal WebViewNavAction() :678
+// internal WebViewNavAction() :653
 void WebViewNavAction__ctor_2_fn(WebViewNavAction* __this)
 {
     __this->ctor_2();
 }
 
-// protected override sealed void Perform(Fuse.Node target) :680
+// protected override sealed void Perform(Fuse.Node target) :655
 void WebViewNavAction__Perform_fn(WebViewNavAction* __this, ::g::Fuse::Node* target)
 {
     uStackFrame __("Fuse.Triggers.Actions.WebViewNavAction", "Perform(Fuse.Node)");
@@ -4462,7 +4462,7 @@ void WebViewNavAction__Perform_fn(WebViewNavAction* __this, ::g::Fuse::Node* tar
         __this->Execute(webView);
 }
 
-// internal WebViewNavAction() [instance] :678
+// internal WebViewNavAction() [instance] :653
 void WebViewNavAction::ctor_2()
 {
     ctor_1();

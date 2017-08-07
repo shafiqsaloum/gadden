@@ -2,13 +2,13 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Experimental.Cache.CacheLoaded.h>
+#include <Experimental.Cache.IC-2fb0e23a.h>
+#include <Experimental.Cache.IC-9cfb21d2.h>
 #include <Experimental.Cache.ICache.h>
-#include <Experimental.Cache.ICacheReader.h>
-#include <Experimental.Cache.ICacheWriter.h>
 #include <Experimental.Http.BinaryLoader.h>
+#include <Experimental.Http.Htt-2465a87a.h>
 #include <Experimental.Http.HttpLoader.h>
-#include <Experimental.Http.HttpResponseHeader.h>
-#include <Experimental.Http.Internal.DateUtil.h>
+#include <Experimental.Http.Int-14679e9d.h>
 #include <Experimental.Http.Loader.h>
 #include <Experimental.Http.LoaderConst.h>
 #include <Experimental.Http.TextLoader.h>
@@ -19,12 +19,12 @@
 #include <Uno.Buffer.h>
 #include <Uno.Byte.h>
 #include <Uno.Char.h>
-#include <Uno.Collections.Dictionary-2.Enumerator.h>
+#include <Uno.Collections.Dicti-d1699346.h>
 #include <Uno.Collections.Dictionary-2.h>
 #include <Uno.Collections.KeyValuePair-2.h>
 #include <Uno.Delegate.h>
 #include <Uno.Diagnostics.Debug.h>
-#include <Uno.Diagnostics.DebugMessageType.h>
+#include <Uno.Diagnostics.Debug-5d778620.h>
 #include <Uno.Exception.h>
 #include <Uno.Int.h>
 #include <Uno.IO.BinaryReader.h>
@@ -33,8 +33,8 @@
 #include <Uno.IO.StreamReader.h>
 #include <Uno.IO.StreamWriter.h>
 #include <Uno.Long.h>
-#include <Uno.Net.Http.HttpMessageHandler.h>
-#include <Uno.Net.Http.HttpMessageHandlerRequest.h>
+#include <Uno.Net.Http.HttpMess-1d2e0b2f.h>
+#include <Uno.Net.Http.HttpMess-8a5feb56.h>
 #include <Uno.Net.Http.HttpResponseType.h>
 #include <Uno.String.h>
 #include <Uno.Threading.IDispatcher.h>
@@ -45,8 +45,8 @@ namespace g{
 namespace Experimental{
 namespace Http{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Experimental.Http/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // internal sealed class BinaryLoader :10
 // {
@@ -160,8 +160,8 @@ BinaryLoader* BinaryLoader::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Experimental.Http/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // public static class HttpLoader :521
 // {
@@ -274,8 +274,8 @@ void HttpLoader::CacheMaxAge(int value)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Experimental.Http/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // public sealed class HttpResponseHeader :602
 // {
@@ -476,8 +476,8 @@ HttpResponseHeader* HttpResponseHeader::Read(::g::Uno::IO::BinaryReader* r)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Experimental.Http/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // internal abstract class Loader :708
 // {
@@ -488,7 +488,7 @@ static void Loader_build(uType* type)
     ::STRINGS[6] = uString::Const("etag");
     ::STRINGS[7] = uString::Const(" ");
     ::STRINGS[8] = uString::Const(":");
-    ::STRINGS[9] = uString::Const("../../../Library/Application Support/Fusetools/Packages/Experimental.Http/1.1.1/$.uno");
+    ::STRINGS[9] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno");
     ::STRINGS[10] = uString::Const("Failed loading caching: ");
     ::STRINGS[11] = uString::Const("If-None-Match");
     ::STRINGS[0] = uString::Const("GET");
@@ -711,8 +711,8 @@ bool Loader::LoadCache(uObject* record)
     catch (const uThrowable& __t)
     {
         ::g::Uno::Exception* e = __t.Exception;
-        ::g::Uno::Diagnostics::Debug::Log2(e, 1, ::STRINGS[9/*"../../../Li...*/], 853);
-        ::g::Uno::Diagnostics::Debug::Log5(::g::Uno::String::op_Addition2(::STRINGS[10/*"Failed load...*/], Uri), 1, ::STRINGS[9/*"../../../Li...*/], 854);
+        ::g::Uno::Diagnostics::Debug::Log2(e, 1, ::STRINGS[9/*"/Users/eric...*/], 853);
+        ::g::Uno::Diagnostics::Debug::Log5(::g::Uno::String::op_Addition2(::STRINGS[10/*"Failed load...*/], Uri), 1, ::STRINGS[9/*"/Users/eric...*/], 854);
         ::g::Experimental::Cache::ICacheReader::Delete(uInterface(uPtr(record), ::TYPES[0/*Experimental.Cache.ICacheReader*/]));
         return false;
     }
@@ -811,8 +811,8 @@ uString* Loader::ConstructRecordId(uString* method, uString* uri)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Experimental.Http/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // internal static class LoaderConst :701
 // {
@@ -838,8 +838,8 @@ uClassType* LoaderConst_typeof()
 uSStrong< ::g::Uno::Net::Http::HttpMessageHandler*> LoaderConst::Handler_;
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Experimental.Http/1.1.1/$.uno
-// -------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/$.uno
+// --------------------------------------------------------------------------------------------------
 
 // internal sealed class TextLoader :1157
 // {

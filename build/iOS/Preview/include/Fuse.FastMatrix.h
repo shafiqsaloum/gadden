@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{namespace Uno{struct Float4;}}
 namespace g{
 namespace Fuse{
 
-// public sealed class FastMatrix :1396
+// public sealed class FastMatrix :1242
 // {
 uType* FastMatrix_typeof();
 void FastMatrix__ctor__fn(FastMatrix* __this);

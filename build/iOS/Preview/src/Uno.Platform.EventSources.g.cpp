@@ -6,13 +6,13 @@
 #include <Uno.EventHandler-1.h>
 #include <Uno.Int.h>
 #include <Uno.Object.h>
+#include <Uno.Platform.Applicat-bf686309.h>
 #include <Uno.Platform.ApplicationState.h>
-#include <Uno.Platform.ApplicationStateTransitionHandler.h>
 #include <Uno.Platform.CoreApp.h>
 #include <Uno.Platform.EventModifiers.h>
-#include <Uno.Platform.EventSources.HardwareKeys.h>
-#include <Uno.Platform.EventSources.InterAppInvoke.h>
-#include <Uno.Platform.EventSources.TextSource.h>
+#include <Uno.Platform.EventSou-774431f7.h>
+#include <Uno.Platform.EventSou-afb2ad40.h>
+#include <Uno.Platform.EventSou-b16da529.h>
 #include <Uno.Platform.Key.h>
 #include <Uno.Platform.KeyEventArgs.h>
 #include <Uno.Platform.OSFrame.h>
@@ -25,8 +25,8 @@ namespace Uno{
 namespace Platform{
 namespace EventSources{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public static class HardwareKeys :1181
 // {
@@ -150,8 +150,8 @@ void HardwareKeys::remove_KeyUp(uDelegate* value)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public static class InterAppInvoke :1148
 // {
@@ -266,8 +266,8 @@ void InterAppInvoke::remove_ReceivedURI(uDelegate* value)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/$.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // public static class TextSource :1208
 // {

@@ -1,31 +1,31 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.FallbackTextEdit.DegreeSpan.h>
-#include <Fuse.Controls.FallbackTextEdit.LineCache.h>
-#include <Fuse.Controls.FallbackTextEdit.LineCacheLine.h>
-#include <Fuse.Controls.FallbackTextEdit.LineCachePasswordTransform.h>
-#include <Fuse.Controls.FallbackTextEdit.LineCacheTransform.h>
-#include <Fuse.Controls.FallbackTextEdit.SwipeGestureHelper.h>
-#include <Fuse.Controls.FallbackTextEdit.TextPosition.h>
-#include <Fuse.Controls.FallbackTextEdit.TextSpan.h>
-#include <Fuse.Controls.FallbackTextEdit.TextWindow.h>
-#include <Fuse.Controls.FallbackTextRenderer.DefaultTextRenderer.h>
-#include <Fuse.Controls.FallbackTextRenderer.WordWrapInfo.h>
-#include <Fuse.Controls.FallbackTextRenderer.WordWrapper.h>
-#include <Fuse.Controls.FallbackTextRenderer.WrappedLine.h>
+#include <Fuse.Controls.Fallbac-46e2e626.h>
+#include <Fuse.Controls.Fallbac-4e3fb76e.h>
+#include <Fuse.Controls.Fallbac-5d36af23.h>
+#include <Fuse.Controls.Fallbac-8b30b373.h>
+#include <Fuse.Controls.Fallbac-8d2cb690.h>
+#include <Fuse.Controls.Fallbac-949442c6.h>
+#include <Fuse.Controls.Fallbac-983d6c73.h>
+#include <Fuse.Controls.Fallbac-9d13b777.h>
+#include <Fuse.Controls.Fallbac-b0087bd4.h>
+#include <Fuse.Controls.Fallbac-b33b79fb.h>
+#include <Fuse.Controls.Fallbac-baae9452.h>
+#include <Fuse.Controls.Fallbac-c67e82be.h>
+#include <Fuse.Controls.Fallbac-d236bd62.h>
 #include <Fuse.Controls.TextAlignment.h>
 #include <Fuse.DrawContext.h>
-#include <Fuse.Elements.Internal.ElementDraw.h>
+#include <Fuse.Elements.Interna-632e825b.h>
 #include <Fuse.Visual.h>
 #include <Fuse.VisualBounds.h>
 #include <Uno.Action.h>
 #include <Uno.Bool.h>
 #include <Uno.Char.h>
-#include <Uno.Collections.EnumerableExtensions.h>
+#include <Uno.Collections.Enume-8ddd045.h>
 #include <Uno.Collections.IEnumerable-1.h>
-#include <Uno.Collections.List-1.Enumerator.h>
 #include <Uno.Collections.List-1.h>
+#include <Uno.Collections.List--251bdc7d.h>
 #include <Uno.Delegate.h>
 #include <Uno.Float.h>
 #include <Uno.Float2.h>
@@ -42,8 +42,8 @@ namespace Fuse{
 namespace Controls{
 namespace FallbackTextEdit{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextedit/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class DegreeSpan :18
 // {
@@ -122,8 +122,8 @@ DegreeSpan* DegreeSpan::New1(float a, float b)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextedit/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class LineCache :75
 // {
@@ -913,8 +913,8 @@ LineCache* LineCache::New1(uDelegate* onTextChanged, uDelegate* invalideLayout, 
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextedit/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class LineCacheLine :531
 // {
@@ -1238,8 +1238,8 @@ LineCacheLine* LineCacheLine::New1(uString* text, uObject* transform)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextedit/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class LineCachePasswordTransform :701
 // {
@@ -1336,8 +1336,8 @@ LineCachePasswordTransform* LineCachePasswordTransform::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextedit/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal abstract interface LineCacheTransform :696
 // {
@@ -1351,8 +1351,8 @@ uInterfaceType* LineCacheTransform_typeof()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextedit/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class SwipeGestureHelper :42
 // {
@@ -1429,8 +1429,8 @@ SwipeGestureHelper* SwipeGestureHelper::New1(float lengthThreshold, uArray* span
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextedit/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class TextPosition :736
 // {
@@ -1662,8 +1662,8 @@ bool TextPosition::op_LessThanOrEqual(TextPosition* a, TextPosition* b)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextedit/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class TextSpan :838
 // {
@@ -1813,8 +1813,8 @@ bool TextSpan::op_Inequality(TextSpan* a, TextSpan* b)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/textcontrols/fallbacktextedit/$.uno
-// --------------------------------------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class TextWindow :912
 // {
@@ -1836,7 +1836,7 @@ static void TextWindow_build(uType* type)
         ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface12),
         ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface13),
         ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface14));
-    type->SetFields(91,
+    type->SetFields(90,
         ::g::Fuse::Controls::FallbackTextEdit::LineCache_typeof(), offsetof(::g::Fuse::Controls::FallbackTextEdit::TextWindow, _lineCache), 0,
         ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Controls::FallbackTextEdit::TextWindow, _maxTextLength), 0,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Controls::FallbackTextEdit::TextWindow, _offset), 0,
@@ -1855,7 +1855,7 @@ static void TextWindow_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Elements::Element_typeof();
-    options.FieldCount = 100;
+    options.FieldCount = 99;
     options.InterfaceCount = 15;
     options.ObjectSize = sizeof(TextWindow);
     options.TypeSize = sizeof(::g::Fuse::Elements::Element_type);
@@ -1978,6 +1978,7 @@ void TextWindow__OnDraw_fn(TextWindow* __this, ::g::Fuse::DrawContext* dc)
 // public TextWindow(Fuse.Visual parent, Fuse.Controls.FallbackTextEdit.LineCache lineCache) [instance] :916
 void TextWindow::ctor_4(::g::Fuse::Visual* parent, ::g::Fuse::Controls::FallbackTextEdit::LineCache* lineCache)
 {
+    uStackFrame __("Fuse.Controls.FallbackTextEdit.TextWindow", ".ctor(Fuse.Visual,Fuse.Controls.FallbackTextEdit.LineCache)");
     ctor_3();
     _lineCache = lineCache;
     ClipToBounds(true);

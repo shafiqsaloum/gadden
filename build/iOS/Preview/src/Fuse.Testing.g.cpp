@@ -6,7 +6,7 @@
 #include <Fuse.DiagnosticHandler.h>
 #include <Fuse.Diagnostics.h>
 #include <Fuse.Reactive.JavaScript.h>
-#include <Fuse.Reactive.ThreadWorker.Fence.h>
+#include <Fuse.Reactive.ThreadW-2c6de4b3.h>
 #include <Fuse.Reactive.ThreadWorker.h>
 #include <Fuse.RootViewport.h>
 #include <Fuse.Scripting.Context.h>
@@ -15,13 +15,12 @@
 #include <Fuse.Scripting.NativeMember.h>
 #include <Fuse.Scripting.ScriptModule.h>
 #include <Fuse.Testing.JavaScriptTest.h>
-#include <Fuse.Testing.TestFailedException.h>
+#include <Fuse.Testing.TestRoot-2f5bf060.h>
+#include <Fuse.Testing.TestRoot-360e342e.h>
 #include <Fuse.Testing.TestRootPanel.h>
-#include <Fuse.Testing.TestRootPanel.StepFlags.h>
-#include <Fuse.Testing.TestRootSingletonsGuard.h>
 #include <Fuse.Testing.TestRootViewport.h>
+#include <Fuse.Testing.UnoTesti-f868a38f.h>
 #include <Fuse.Testing.UnoTestingHelper.h>
-#include <Fuse.Testing.UnoTestingHelper.TestFailure.h>
 #include <Fuse.Time.h>
 #include <Fuse.UpdateManager.h>
 #include <Fuse.Visual.h>
@@ -32,10 +31,10 @@
 #include <Uno.Bool.h>
 #include <Uno.Collections.IEnumerator.h>
 #include <Uno.Collections.IEnumerator-1.h>
-#include <Uno.Collections.List-1.Enumerator.h>
 #include <Uno.Collections.List-1.h>
-#include <Uno.Collections.ReadOnlyCollection-1.h>
-#include <Uno.Diagnostics.DebugMessageType.h>
+#include <Uno.Collections.List--251bdc7d.h>
+#include <Uno.Collections.ReadO-235c1e0d.h>
+#include <Uno.Diagnostics.Debug-5d778620.h>
 #include <Uno.Double.h>
 #include <Uno.Exception.h>
 #include <Uno.Float.h>
@@ -46,19 +45,20 @@
 #include <Uno.Platform.Window.h>
 #include <Uno.String.h>
 #include <Uno.Testing.Assert.h>
+#include <Uno.Testing.Assertion-65eaa948.h>
 #include <Uno.UX.NameTable.h>
 #include <Uno.UX.Resource.h>
-static uString* STRINGS[6];
+static uString* STRINGS[7];
 static uType* TYPES[12];
 
 namespace g{
 namespace Fuse{
 namespace Testing{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.1.1/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
-// public sealed class JavaScriptTest :53
+// public sealed class JavaScriptTest :46
 // {
 static void JavaScriptTest_build(uType* type)
 {
@@ -119,19 +119,19 @@ static void JavaScriptTest_build(uType* type)
     return type;
 }
 
-// public JavaScriptTest(Uno.UX.NameTable nameTable) :56
+// public JavaScriptTest(Uno.UX.NameTable nameTable) :49
 void JavaScriptTest__ctor_4_fn(JavaScriptTest* __this, ::g::Uno::UX::NameTable* nameTable)
 {
     __this->ctor_4(nameTable);
 }
 
-// public JavaScriptTest New(Uno.UX.NameTable nameTable) :56
+// public JavaScriptTest New(Uno.UX.NameTable nameTable) :49
 void JavaScriptTest__New3_fn(::g::Uno::UX::NameTable* nameTable, JavaScriptTest** __retval)
 {
     *__retval = JavaScriptTest::New3(nameTable);
 }
 
-// public JavaScriptTest(Uno.UX.NameTable nameTable) [instance] :56
+// public JavaScriptTest(Uno.UX.NameTable nameTable) [instance] :49
 void JavaScriptTest::ctor_4(::g::Uno::UX::NameTable* nameTable)
 {
     uStackFrame __("Fuse.Testing.JavaScriptTest", ".ctor(Uno.UX.NameTable)");
@@ -140,7 +140,7 @@ void JavaScriptTest::ctor_4(::g::Uno::UX::NameTable* nameTable)
     uPtr(_scriptModule)->Postamble(::STRINGS[1/*"\n} catch (...*/]);
 }
 
-// public JavaScriptTest New(Uno.UX.NameTable nameTable) [static] :56
+// public JavaScriptTest New(Uno.UX.NameTable nameTable) [static] :49
 JavaScriptTest* JavaScriptTest::New3(::g::Uno::UX::NameTable* nameTable)
 {
     JavaScriptTest* obj1 = (JavaScriptTest*)uNew(JavaScriptTest_typeof());
@@ -149,10 +149,10 @@ JavaScriptTest* JavaScriptTest::New3(::g::Uno::UX::NameTable* nameTable)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.1.1/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
-// private enum TestRootPanel.StepFlags :211
+// private enum TestRootPanel.StepFlags :205
 uEnumType* TestRootPanel__StepFlags_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -166,65 +166,15 @@ uEnumType* TestRootPanel__StepFlags_typeof()
     return type;
 }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.1.1/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
-// internal sealed class TestFailedException :11
-// {
-static void TestFailedException_build(uType* type)
-{
-    type->SetFields(4);
-}
-
-::g::Uno::Exception_type* TestFailedException_typeof()
-{
-    static uSStrong< ::g::Uno::Exception_type*> type;
-    if (type != NULL) return type;
-
-    uTypeOptions options;
-    options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 4;
-    options.ObjectSize = sizeof(TestFailedException);
-    options.TypeSize = sizeof(::g::Uno::Exception_type);
-    type = (::g::Uno::Exception_type*)uClassType::New("Fuse.Testing.TestFailedException", options);
-    type->fp_build_ = TestFailedException_build;
-    return type;
-}
-
-// public TestFailedException(string message) :13
-void TestFailedException__ctor_3_fn(TestFailedException* __this, uString* message)
-{
-    __this->ctor_3(message);
-}
-
-// public TestFailedException New(string message) :13
-void TestFailedException__New4_fn(uString* message, TestFailedException** __retval)
-{
-    *__retval = TestFailedException::New4(message);
-}
-
-// public TestFailedException(string message) [instance] :13
-void TestFailedException::ctor_3(uString* message)
-{
-    ctor_1(message);
-}
-
-// public TestFailedException New(string message) [static] :13
-TestFailedException* TestFailedException::New4(uString* message)
-{
-    TestFailedException* obj1 = (TestFailedException*)uNew(TestFailedException_typeof());
-    obj1->ctor_3(message);
-    return obj1;
-}
-// }
-
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.1.1/$.uno
-// --------------------------------------------------------------------------------------------
-
-// private sealed class UnoTestingHelper.TestFailure :31
+// private sealed class UnoTestingHelper.TestFailure :24
 // {
 static void UnoTestingHelper__TestFailure_build(uType* type)
 {
+    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.0.5/$.uno");
+    ::STRINGS[3] = uString::Const("Fail");
     type->SetFields(0,
         ::g::Uno::String_typeof(), offsetof(::g::Fuse::Testing::UnoTestingHelper__TestFailure, _message), 0);
 }
@@ -243,38 +193,38 @@ uType* UnoTestingHelper__TestFailure_typeof()
     return type;
 }
 
-// public TestFailure(string message) :34
+// public TestFailure(string message) :27
 void UnoTestingHelper__TestFailure__ctor__fn(UnoTestingHelper__TestFailure* __this, uString* message)
 {
     __this->ctor_(message);
 }
 
-// public void Fail() :39
+// public void Fail() :32
 void UnoTestingHelper__TestFailure__Fail_fn(UnoTestingHelper__TestFailure* __this)
 {
     __this->Fail();
 }
 
-// public TestFailure New(string message) :34
+// public TestFailure New(string message) :27
 void UnoTestingHelper__TestFailure__New1_fn(uString* message, UnoTestingHelper__TestFailure** __retval)
 {
     *__retval = UnoTestingHelper__TestFailure::New1(message);
 }
 
-// public TestFailure(string message) [instance] :34
+// public TestFailure(string message) [instance] :27
 void UnoTestingHelper__TestFailure::ctor_(uString* message)
 {
     _message = message;
 }
 
-// public void Fail() [instance] :39
+// public void Fail() [instance] :32
 void UnoTestingHelper__TestFailure::Fail()
 {
     uStackFrame __("Fuse.Testing.UnoTestingHelper.TestFailure", "Fail()");
-    U_THROW(::g::Fuse::Testing::TestFailedException::New4(_message));
+    ::g::Uno::Testing::Assert::Fail(_message, ::STRINGS[2/*"/Users/eric...*/], 34, ::STRINGS[3/*"Fail"*/]);
 }
 
-// public TestFailure New(string message) [static] :34
+// public TestFailure New(string message) [static] :27
 UnoTestingHelper__TestFailure* UnoTestingHelper__TestFailure::New1(uString* message)
 {
     UnoTestingHelper__TestFailure* obj1 = (UnoTestingHelper__TestFailure*)uNew(UnoTestingHelper__TestFailure_typeof());
@@ -283,18 +233,18 @@ UnoTestingHelper__TestFailure* UnoTestingHelper__TestFailure::New1(uString* mess
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.1.1/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
-// public sealed class TestRootPanel :123
+// public sealed class TestRootPanel :117
 // {
 static void TestRootPanel_build(uType* type)
 {
-    ::STRINGS[2] = uString::Const("/Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.1.1/$.uno");
-    ::STRINGS[3] = uString::Const("RunTest");
+    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.0.5/$.uno");
+    ::STRINGS[4] = uString::Const("RunTest");
     ::TYPES[0] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Diagnostic_typeof(), NULL);
     ::TYPES[1] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
-    ::TYPES[2] = ::g::Fuse::Testing::TestFailedException_typeof();
+    ::TYPES[2] = ::g::Uno::Testing::AssertionFailedException_typeof();
     ::TYPES[3] = ::g::Uno::AggregateException_typeof();
     ::TYPES[4] = ::g::Uno::Collections::IEnumerator_typeof();
     ::TYPES[5] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
@@ -343,8 +293,6 @@ static void TestRootPanel_build(uType* type)
     type->fp_build_ = TestRootPanel_build;
     type->fp_ctor_ = (void*)TestRootPanel__New4_fn;
     type->interface15.fp_Draw = (void(*)(uObject*, ::g::Fuse::Drawing::Surface*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableDraw_fn;
-    type->interface15.fp_get_IsPrimary = (void(*)(uObject*, bool*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_IsPrimary_fn;
-    type->interface15.fp_get_ElementSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_ElementSize_fn;
     type->interface10.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
     type->interface12.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
     type->interface11.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;
@@ -381,55 +329,55 @@ static void TestRootPanel_build(uType* type)
     return type;
 }
 
-// public TestRootPanel() :129
+// public TestRootPanel() :123
 void TestRootPanel__ctor_7_fn(TestRootPanel* __this)
 {
     __this->ctor_7();
 }
 
-// private Fuse.Testing.TestFailedException FindTestFailedException(Uno.Exception e) :140
-void TestRootPanel__FindTestFailedException_fn(TestRootPanel* __this, ::g::Uno::Exception* e, ::g::Fuse::Testing::TestFailedException** __retval)
+// private Uno.Testing.AssertionFailedException FindAssertionFailedException(Uno.Exception e) :134
+void TestRootPanel__FindAssertionFailedException_fn(TestRootPanel* __this, ::g::Uno::Exception* e, ::g::Uno::Testing::AssertionFailedException** __retval)
 {
-    *__retval = __this->FindTestFailedException(e);
+    *__retval = __this->FindAssertionFailedException(e);
 }
 
-// private void IncrementFrameImpl([float elapsedTime], [Fuse.Testing.TestRootPanel.StepFlags flags]) :242
+// private void IncrementFrameImpl([float elapsedTime], [Fuse.Testing.TestRootPanel.StepFlags flags]) :236
 void TestRootPanel__IncrementFrameImpl_fn(TestRootPanel* __this, float* elapsedTime, int* flags)
 {
     __this->IncrementFrameImpl(*elapsedTime, *flags);
 }
 
-// public TestRootPanel New() :129
+// public TestRootPanel New() :123
 void TestRootPanel__New4_fn(TestRootPanel** __retval)
 {
     *__retval = TestRootPanel::New4();
 }
 
-// private void OnDiagnostic(Fuse.Diagnostic d) :202
+// private void OnDiagnostic(Fuse.Diagnostic d) :196
 void TestRootPanel__OnDiagnostic_fn(TestRootPanel* __this, ::g::Fuse::Diagnostic* d)
 {
     __this->OnDiagnostic(d);
 }
 
-// internal Fuse.Testing.TestRootViewport get_RootViewport() :127
+// internal Fuse.Testing.TestRootViewport get_RootViewport() :121
 void TestRootPanel__get_RootViewport_fn(TestRootPanel* __this, ::g::Fuse::Testing::TestRootViewport** __retval)
 {
     *__retval = __this->RootViewport();
 }
 
-// public void RunTest() :165
+// public void RunTest() :159
 void TestRootPanel__RunTest_fn(TestRootPanel* __this)
 {
     __this->RunTest();
 }
 
-// internal void StepFrameJS() :297
+// internal void StepFrameJS() :291
 void TestRootPanel__StepFrameJS_fn(TestRootPanel* __this)
 {
     __this->StepFrameJS();
 }
 
-// public TestRootPanel() [instance] :129
+// public TestRootPanel() [instance] :123
 void TestRootPanel::ctor_7()
 {
     uStackFrame __("Fuse.Testing.TestRootPanel", ".ctor()");
@@ -442,15 +390,15 @@ void TestRootPanel::ctor_7()
     ::g::Fuse::Time::Init(0.0);
 }
 
-// private Fuse.Testing.TestFailedException FindTestFailedException(Uno.Exception e) [instance] :140
-::g::Fuse::Testing::TestFailedException* TestRootPanel::FindTestFailedException(::g::Uno::Exception* e)
+// private Uno.Testing.AssertionFailedException FindAssertionFailedException(Uno.Exception e) [instance] :134
+::g::Uno::Testing::AssertionFailedException* TestRootPanel::FindAssertionFailedException(::g::Uno::Exception* e)
 {
-    uStackFrame __("Fuse.Testing.TestRootPanel", "FindTestFailedException(Uno.Exception)");
+    uStackFrame __("Fuse.Testing.TestRootPanel", "FindAssertionFailedException(Uno.Exception)");
     ::g::Uno::Exception* ret5;
-    ::g::Fuse::Testing::TestFailedException* testFailedException = uAs< ::g::Fuse::Testing::TestFailedException*>(e, ::TYPES[2/*Fuse.Testing.TestFailedException*/]);
+    ::g::Uno::Testing::AssertionFailedException* assertionFailedException = uAs< ::g::Uno::Testing::AssertionFailedException*>(e, ::TYPES[2/*Uno.Testing.AssertionFailedException*/]);
 
-    if (testFailedException != NULL)
-        return testFailedException;
+    if (assertionFailedException != NULL)
+        return assertionFailedException;
 
     ::g::Uno::AggregateException* aggregateException = uAs< ::g::Uno::AggregateException*>(e, ::TYPES[3/*Uno.AggregateException*/]);
 
@@ -459,21 +407,21 @@ void TestRootPanel::ctor_7()
         for (uObject* enum1 = (uObject*)uPtr(uPtr(aggregateException)->InnerExceptions())->GetEnumerator(); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[4/*Uno.Collections.IEnumerator*/])); )
         {
             ::g::Uno::Exception* innerException = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), ::TYPES[5/*Uno.Collections.IEnumerator<Uno.Exception>*/]), &ret5), ret5);
-            testFailedException = FindTestFailedException(innerException);
+            assertionFailedException = FindAssertionFailedException(innerException);
 
-            if (testFailedException != NULL)
-                return testFailedException;
+            if (assertionFailedException != NULL)
+                return assertionFailedException;
         }
 
     ::g::Fuse::WrapException* wrapException = uAs< ::g::Fuse::WrapException*>(e, ::TYPES[6/*Fuse.WrapException*/]);
 
     if (wrapException != NULL)
-        return FindTestFailedException(uPtr(wrapException)->InnerException());
+        return FindAssertionFailedException(uPtr(wrapException)->InnerException());
 
     return NULL;
 }
 
-// private void IncrementFrameImpl([float elapsedTime], [Fuse.Testing.TestRootPanel.StepFlags flags]) [instance] :242
+// private void IncrementFrameImpl([float elapsedTime], [Fuse.Testing.TestRootPanel.StepFlags flags]) [instance] :236
 void TestRootPanel::IncrementFrameImpl(float elapsedTime, int flags)
 {
     uStackFrame __("Fuse.Testing.TestRootPanel", "IncrementFrameImpl([float],[Fuse.Testing.TestRootPanel.StepFlags])");
@@ -496,7 +444,7 @@ void TestRootPanel::IncrementFrameImpl(float elapsedTime, int flags)
         ::g::Fuse::UpdateManager::IncreaseFrameIndex();
 }
 
-// private void OnDiagnostic(Fuse.Diagnostic d) [instance] :202
+// private void OnDiagnostic(Fuse.Diagnostic d) [instance] :196
 void TestRootPanel::OnDiagnostic(::g::Fuse::Diagnostic* d)
 {
     uStackFrame __("Fuse.Testing.TestRootPanel", "OnDiagnostic(Fuse.Diagnostic)");
@@ -505,13 +453,13 @@ void TestRootPanel::OnDiagnostic(::g::Fuse::Diagnostic* d)
         ::g::Uno::Collections::List__Add_fn(uPtr(_errors), d);
 }
 
-// internal Fuse.Testing.TestRootViewport get_RootViewport() [instance] :127
+// internal Fuse.Testing.TestRootViewport get_RootViewport() [instance] :121
 ::g::Fuse::Testing::TestRootViewport* TestRootPanel::RootViewport()
 {
     return _rootViewport;
 }
 
-// public void RunTest() [instance] :165
+// public void RunTest() [instance] :159
 void TestRootPanel::RunTest()
 {
     uStackFrame __("Fuse.Testing.TestRootPanel", "RunTest()");
@@ -536,10 +484,10 @@ void TestRootPanel::RunTest()
         catch (const uThrowable& __t)
         {
             ::g::Uno::Exception* e = __t.Exception;
-            ::g::Fuse::Testing::TestFailedException* testFailedException = FindTestFailedException(e);
+            ::g::Uno::Testing::AssertionFailedException* assertionFailedException = FindAssertionFailedException(e);
 
-            if (testFailedException != NULL)
-                ::g::Uno::Testing::Assert::Fail(uPtr(testFailedException)->Message(), ::STRINGS[2/*"/Users/star...*/], 184, ::STRINGS[3/*"RunTest"*/]);
+            if (assertionFailedException != NULL)
+                U_THROW(assertionFailedException);
             else
                 throw __t;
         }
@@ -548,13 +496,13 @@ void TestRootPanel::RunTest()
     for (::g::Uno::Collections::List__Enumerator<uStrong< ::g::Fuse::Diagnostic*> > enum2 = (::g::Uno::Collections::List__GetEnumerator_fn(uPtr(_errors), &ret7), ret7); enum2.MoveNext(::TYPES[9/*Uno.Collections.List<Fuse.Diagnostic>.Enumerator*/]); )
     {
         ::g::Fuse::Diagnostic* e1 = enum2.Current(::TYPES[9/*Uno.Collections.List<Fuse.Diagnostic>.Enumerator*/]);
-        ::g::Uno::Testing::Assert::Fail(uPtr(e1)->ToString(), ::STRINGS[2/*"/Users/star...*/], 196, ::STRINGS[3/*"RunTest"*/]);
+        ::g::Uno::Testing::Assert::Fail(uPtr(e1)->ToString(), ::STRINGS[2/*"/Users/eric...*/], 190, ::STRINGS[4/*"RunTest"*/]);
     }
 
     guard->Dispose();
 }
 
-// internal void StepFrameJS() [instance] :297
+// internal void StepFrameJS() [instance] :291
 void TestRootPanel::StepFrameJS()
 {
     uStackFrame __("Fuse.Testing.TestRootPanel", "StepFrameJS()");
@@ -568,7 +516,7 @@ void TestRootPanel::StepFrameJS()
     }
 }
 
-// public TestRootPanel New() [static] :129
+// public TestRootPanel New() [static] :123
 TestRootPanel* TestRootPanel::New4()
 {
     TestRootPanel* obj4 = (TestRootPanel*)uNew(TestRootPanel_typeof());
@@ -577,10 +525,10 @@ TestRootPanel* TestRootPanel::New4()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.1.1/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
-// internal sealed class TestRootSingletonsGuard :411
+// internal sealed class TestRootSingletonsGuard :405
 // {
 static void TestRootSingletonsGuard_build(uType* type)
 {
@@ -603,38 +551,38 @@ TestRootSingletonsGuard_type* TestRootSingletonsGuard_typeof()
     return type;
 }
 
-// internal TestRootSingletonsGuard(Fuse.Testing.TestRootPanel trp) :413
+// internal TestRootSingletonsGuard(Fuse.Testing.TestRootPanel trp) :407
 void TestRootSingletonsGuard__ctor__fn(TestRootSingletonsGuard* __this, ::g::Fuse::Testing::TestRootPanel* trp)
 {
     __this->ctor_(trp);
 }
 
-// public void Dispose() :418
+// public void Dispose() :412
 void TestRootSingletonsGuard__Dispose_fn(TestRootSingletonsGuard* __this)
 {
     __this->Dispose();
 }
 
-// internal TestRootSingletonsGuard New(Fuse.Testing.TestRootPanel trp) :413
+// internal TestRootSingletonsGuard New(Fuse.Testing.TestRootPanel trp) :407
 void TestRootSingletonsGuard__New1_fn(::g::Fuse::Testing::TestRootPanel* trp, TestRootSingletonsGuard** __retval)
 {
     *__retval = TestRootSingletonsGuard::New1(trp);
 }
 
-// internal TestRootSingletonsGuard(Fuse.Testing.TestRootPanel trp) [instance] :413
+// internal TestRootSingletonsGuard(Fuse.Testing.TestRootPanel trp) [instance] :407
 void TestRootSingletonsGuard::ctor_(::g::Fuse::Testing::TestRootPanel* trp)
 {
     uStackFrame __("Fuse.Testing.TestRootSingletonsGuard", ".ctor(Fuse.Testing.TestRootPanel)");
     ::g::Fuse::AppBase::TestSetRootViewport(uPtr(trp)->RootViewport());
 }
 
-// public void Dispose() [instance] :418
+// public void Dispose() [instance] :412
 void TestRootSingletonsGuard::Dispose()
 {
     ::g::Fuse::AppBase::TestSetRootViewport(NULL);
 }
 
-// internal TestRootSingletonsGuard New(Fuse.Testing.TestRootPanel trp) [static] :413
+// internal TestRootSingletonsGuard New(Fuse.Testing.TestRootPanel trp) [static] :407
 TestRootSingletonsGuard* TestRootSingletonsGuard::New1(::g::Fuse::Testing::TestRootPanel* trp)
 {
     TestRootSingletonsGuard* obj1 = (TestRootSingletonsGuard*)uNew(TestRootSingletonsGuard_typeof());
@@ -643,10 +591,10 @@ TestRootSingletonsGuard* TestRootSingletonsGuard::New1(::g::Fuse::Testing::TestR
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.1.1/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
-// internal sealed class TestRootViewport :92
+// internal sealed class TestRootViewport :86
 // {
 static void TestRootViewport_build(uType* type)
 {
@@ -665,7 +613,7 @@ static void TestRootViewport_build(uType* type)
         ::g::Uno::IDisposable_typeof(), offsetof(TestRootViewport_type, interface11),
         ::g::Fuse::ICommonViewport_typeof(), offsetof(TestRootViewport_type, interface12),
         ::g::Fuse::IRenderViewport_typeof(), offsetof(TestRootViewport_type, interface13));
-    type->SetFields(65);
+    type->SetFields(64);
 }
 
 TestRootViewport_type* TestRootViewport_typeof()
@@ -675,7 +623,7 @@ TestRootViewport_type* TestRootViewport_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::RootViewport_typeof();
-    options.FieldCount = 65;
+    options.FieldCount = 64;
     options.InterfaceCount = 14;
     options.ObjectSize = sizeof(TestRootViewport);
     options.TypeSize = sizeof(TestRootViewport_type);
@@ -690,8 +638,8 @@ TestRootViewport_type* TestRootViewport_typeof()
     type->interface12.fp_get_PixelSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::RootViewport__get_PixelSize_fn;
     type->interface12.fp_get_ViewTransform = (void(*)(uObject*, ::g::Uno::Float4x4*))::g::Fuse::RootViewport__get_ViewTransform_fn;
     type->interface11.fp_Dispose = (void(*)(uObject*))::g::Fuse::RootViewport__UnoIDisposableDispose_fn;
-    type->interface10.fp_PointToWorldRay = (void(*)(uObject*, ::g::Uno::Float2*, ::g::Fuse::Ray*))::g::Fuse::RootViewport__PointToWorldRay_fn;
-    type->interface10.fp_WorldToLocalRay = (void(*)(uObject*, uObject*, ::g::Fuse::Ray*, ::g::Fuse::Visual*, ::g::Fuse::Ray*))::g::Fuse::RootViewport__WorldToLocalRay_fn;
+    type->interface10.fp_PointToWorldRay = (void(*)(uObject*, ::g::Uno::Float2*, ::g::Uno::Geometry::Ray*))::g::Fuse::RootViewport__PointToWorldRay_fn;
+    type->interface10.fp_WorldToLocalRay = (void(*)(uObject*, uObject*, ::g::Uno::Geometry::Ray*, ::g::Fuse::Visual*, ::g::Uno::Geometry::Ray*))::g::Fuse::RootViewport__WorldToLocalRay_fn;
     type->interface8.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
     type->interface8.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
     type->interface6.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsIListFuseNodeRemoveAt_fn;
@@ -720,25 +668,25 @@ TestRootViewport_type* TestRootViewport_typeof()
     return type;
 }
 
-// public extern TestRootViewport(Uno.Platform.Window window, [float pixelsPerPoint]) :102
+// public extern TestRootViewport(Uno.Platform.Window window, [float pixelsPerPoint]) :96
 void TestRootViewport__ctor_5_fn(TestRootViewport* __this, ::g::Uno::Platform::Window* window, float* pixelsPerPoint)
 {
     __this->ctor_5(window, *pixelsPerPoint);
 }
 
-// public extern TestRootViewport New(Uno.Platform.Window window, [float pixelsPerPoint]) :102
+// public extern TestRootViewport New(Uno.Platform.Window window, [float pixelsPerPoint]) :96
 void TestRootViewport__New4_fn(::g::Uno::Platform::Window* window, float* pixelsPerPoint, TestRootViewport** __retval)
 {
     *__retval = TestRootViewport::New4(window, *pixelsPerPoint);
 }
 
-// internal void Resize(float2 size) :107
+// internal void Resize(float2 size) :101
 void TestRootViewport__Resize_fn(TestRootViewport* __this, ::g::Uno::Float2* size)
 {
     __this->Resize(*size);
 }
 
-// public extern TestRootViewport(Uno.Platform.Window window, [float pixelsPerPoint]) [instance] :102
+// public extern TestRootViewport(Uno.Platform.Window window, [float pixelsPerPoint]) [instance] :96
 void TestRootViewport::ctor_5(::g::Uno::Platform::Window* window, float pixelsPerPoint)
 {
     uStackFrame __("Fuse.Testing.TestRootViewport", ".ctor(Uno.Platform.Window,[float])");
@@ -746,7 +694,7 @@ void TestRootViewport::ctor_5(::g::Uno::Platform::Window* window, float pixelsPe
     OverrideSize(::g::Uno::Float2__New1(100.0f), pixelsPerPoint, pixelsPerPoint);
 }
 
-// internal void Resize(float2 size) [instance] :107
+// internal void Resize(float2 size) [instance] :101
 void TestRootViewport::Resize(::g::Uno::Float2 size)
 {
     uStackFrame __("Fuse.Testing.TestRootViewport", "Resize(float2)");
@@ -754,7 +702,7 @@ void TestRootViewport::Resize(::g::Uno::Float2 size)
     OnResized(NULL, NULL);
 }
 
-// public extern TestRootViewport New(Uno.Platform.Window window, [float pixelsPerPoint]) [static] :102
+// public extern TestRootViewport New(Uno.Platform.Window window, [float pixelsPerPoint]) [static] :96
 TestRootViewport* TestRootViewport::New4(::g::Uno::Platform::Window* window, float pixelsPerPoint)
 {
     TestRootViewport* obj1 = (TestRootViewport*)uNew(TestRootViewport_typeof());
@@ -763,15 +711,15 @@ TestRootViewport* TestRootViewport::New4(::g::Uno::Platform::Window* window, flo
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.1.1/$.uno
-// --------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------
 
-// public sealed class UnoTestingHelper :19
+// public sealed class UnoTestingHelper :12
 // {
 static void UnoTestingHelper_build(uType* type)
 {
-    ::STRINGS[4] = uString::Const("FuseJS/Internal/UnoTestingHelper");
-    ::STRINGS[5] = uString::Const("testFailed");
+    ::STRINGS[5] = uString::Const("FuseJS/Internal/UnoTestingHelper");
+    ::STRINGS[6] = uString::Const("testFailed");
     ::TYPES[10] = ::g::Fuse::Scripting::NativeCallback_typeof();
     ::TYPES[11] = ::g::Uno::Action_typeof();
     type->SetInterfaces(
@@ -802,19 +750,19 @@ static void UnoTestingHelper_build(uType* type)
     return type;
 }
 
-// public UnoTestingHelper() :22
+// public UnoTestingHelper() :15
 void UnoTestingHelper__ctor_2_fn(UnoTestingHelper* __this)
 {
     __this->ctor_2();
 }
 
-// public UnoTestingHelper New() :22
+// public UnoTestingHelper New() :15
 void UnoTestingHelper__New2_fn(UnoTestingHelper** __retval)
 {
     *__retval = UnoTestingHelper::New2();
 }
 
-// private static object TestFailed(Fuse.Scripting.Context c, object[] args) :45
+// private static object TestFailed(Fuse.Scripting.Context c, object[] args) :38
 void UnoTestingHelper__TestFailed_fn(::g::Fuse::Scripting::Context* c, uArray* args, uObject** __retval)
 {
     *__retval = UnoTestingHelper::TestFailed(c, args);
@@ -822,7 +770,7 @@ void UnoTestingHelper__TestFailed_fn(::g::Fuse::Scripting::Context* c, uArray* a
 
 uSStrong<UnoTestingHelper*> UnoTestingHelper::_instance_;
 
-// public UnoTestingHelper() [instance] :22
+// public UnoTestingHelper() [instance] :15
 void UnoTestingHelper::ctor_2()
 {
     uStackFrame __("Fuse.Testing.UnoTestingHelper", ".ctor()");
@@ -831,11 +779,11 @@ void UnoTestingHelper::ctor_2()
     if (UnoTestingHelper::_instance_ != NULL)
         return;
 
-    ::g::Uno::UX::Resource::SetGlobalKey(UnoTestingHelper::_instance_ = this, ::STRINGS[4/*"FuseJS/Inte...*/]);
-    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[5/*"testFailed"*/], uDelegate::New(::TYPES[10/*Fuse.Scripting.NativeCallback*/], (void*)UnoTestingHelper__TestFailed_fn)));
+    ::g::Uno::UX::Resource::SetGlobalKey(UnoTestingHelper::_instance_ = this, ::STRINGS[5/*"FuseJS/Inte...*/]);
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[6/*"testFailed"*/], uDelegate::New(::TYPES[10/*Fuse.Scripting.NativeCallback*/], (void*)UnoTestingHelper__TestFailed_fn)));
 }
 
-// public UnoTestingHelper New() [static] :22
+// public UnoTestingHelper New() [static] :15
 UnoTestingHelper* UnoTestingHelper::New2()
 {
     UnoTestingHelper* obj1 = (UnoTestingHelper*)uNew(UnoTestingHelper_typeof());
@@ -843,7 +791,7 @@ UnoTestingHelper* UnoTestingHelper::New2()
     return obj1;
 }
 
-// private static object TestFailed(Fuse.Scripting.Context c, object[] args) [static] :45
+// private static object TestFailed(Fuse.Scripting.Context c, object[] args) [static] :38
 uObject* UnoTestingHelper::TestFailed(::g::Fuse::Scripting::Context* c, uArray* args)
 {
     uStackFrame __("Fuse.Testing.UnoTestingHelper", "TestFailed(Fuse.Scripting.Context,object[])");

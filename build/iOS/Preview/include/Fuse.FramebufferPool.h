@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Common/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{namespace Uno{struct Int2;}}
 namespace g{
 namespace Fuse{
 
-// public static class FramebufferPool :1811
+// public static class FramebufferPool :1657
 // {
 uClassType* FramebufferPool_typeof();
 void FramebufferPool__EnsurePool_fn();

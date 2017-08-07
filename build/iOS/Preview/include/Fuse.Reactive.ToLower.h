@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Reactive.Expressions/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Expressions/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public sealed class ToLower :1397
+// public sealed class ToLower :932
 // {
 ::g::Fuse::Reactive::UnaryOperator_type* ToLower_typeof();
 void ToLower__ctor_2_fn(ToLower* __this, ::g::Fuse::Reactive::Expression* value);

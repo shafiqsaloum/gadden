@@ -1,14 +1,14 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Drawing.Internal.Float2Buffer.h>
-#include <Fuse.Drawing.Internal.Float3Buffer.h>
-#include <Fuse.Drawing.Internal.FloatBuffer.h>
-#include <Fuse.Drawing.Internal.MultiBuffer.Field.h>
-#include <Fuse.Drawing.Internal.MultiBuffer.h>
-#include <Fuse.Drawing.Internal.MultiBuffer.Setter.h>
-#include <Fuse.Drawing.Internal.TypedBuffer.h>
-#include <Fuse.Drawing.Internal.UShortBuffer.h>
+#include <Fuse.Drawing.Internal-35dc6d45.h>
+#include <Fuse.Drawing.Internal-3dcc41e8.h>
+#include <Fuse.Drawing.Internal-a5c6f893.h>
+#include <Fuse.Drawing.Internal-b9d8148e.h>
+#include <Fuse.Drawing.Internal-bacec382.h>
+#include <Fuse.Drawing.Internal-bcd6298f.h>
+#include <Fuse.Drawing.Internal-cee8ff18.h>
+#include <Fuse.Drawing.Internal-eebb25d1.h>
 #include <Uno.Bool.h>
 #include <Uno.Buffer.h>
 #include <Uno.Byte.h>
@@ -21,7 +21,7 @@
 #include <Uno.Graphics.BufferUsage.h>
 #include <Uno.Graphics.DeviceBuffer.h>
 #include <Uno.Graphics.IndexBuffer.h>
-#include <Uno.Graphics.VertexAttributeType.h>
+#include <Uno.Graphics.VertexAt-4a875e1d.h>
 #include <Uno.Graphics.VertexBuffer.h>
 #include <Uno.Int.h>
 #include <Uno.Math.h>
@@ -34,8 +34,8 @@ namespace Fuse{
 namespace Drawing{
 namespace Internal{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class MultiBuffer.Field :195
 // {
@@ -94,8 +94,8 @@ MultiBuffer__Field* MultiBuffer__Field::New1()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Float2Buffer :151
 // {
@@ -191,8 +191,8 @@ Float2Buffer* Float2Buffer::New3()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class Float3Buffer :115
 // {
@@ -288,8 +288,8 @@ Float3Buffer* Float3Buffer::New3()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class FloatBuffer :133
 // {
@@ -385,8 +385,8 @@ FloatBuffer* FloatBuffer::New3()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class MultiBuffer :194
 // {
@@ -766,8 +766,8 @@ MultiBuffer* MultiBuffer::New3()
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class MultiBuffer.Setter :315
 // {
@@ -825,8 +825,8 @@ MultiBuffer__Setter* MultiBuffer__Setter::New1(::g::Fuse::Drawing::Internal::Mul
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public class TypedBuffer :22
 // {
@@ -1064,8 +1064,8 @@ TypedBuffer* TypedBuffer::New2(int typeSize1, int initSize)
 }
 // }
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.1.1/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing/1.0.5/internal/$.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public sealed class UShortBuffer :169
 // {

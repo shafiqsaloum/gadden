@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -7,7 +7,7 @@
 namespace g{
 namespace Fuse{
 
-// public delegate void VisualEventHandler(object sender, Fuse.VisualEventArgs args) :1095
+// public delegate void VisualEventHandler(object sender, Fuse.VisualEventArgs args) :1094
 uDelegateType* VisualEventHandler_typeof();
 
 }} // ::g::Fuse

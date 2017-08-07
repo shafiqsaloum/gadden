@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/backends/cplusplus/Uno/Memory.cpp'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/backends/cplusplus/Uno/Memory.cpp'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Uno/_internal.h>
@@ -138,10 +138,7 @@ uStackFrame::uStackFrame(const char* type, const char* function)
 
 uStackFrame::~uStackFrame()
 {
-#ifdef DEBUG_UNSAFE
-    uCallStackFrame* frame =
-#endif
-    _thread->CallStackPtr--;
+    uCallStackFrame* frame = _thread->CallStackPtr--;
 #ifdef DEBUG_UNSAFE
     frame->Type = NULL;
     frame->Function = NULL;

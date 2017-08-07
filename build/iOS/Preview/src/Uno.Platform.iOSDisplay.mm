@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/ios/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <ObjC.ID.h>
@@ -40,7 +40,7 @@ static void iOSDisplay__Finalize_fn(iOSDisplay* __this)
 static void iOSDisplay_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("this._handle != null");
-    ::STRINGS[1] = uString::Const("../../../Library/Application Support/Fusetools/Packages/UnoCore/1.1.3/source/uno/platform/ios/$.uno");
+    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno");
     ::TYPES[0] = uObject_typeof()->Array();
     ::TYPES[1] = ::g::Uno::EventHandler_typeof();
     type->SetFields(2,
@@ -242,7 +242,7 @@ void iOSDisplay::ctor_1(::g::ObjC::Object* handle)
     uStackFrame __("Uno.Platform.iOSDisplay", ".ctor(ObjC.Object)");
     ctor_();
     _handle = handle;
-    ::g::Uno::Diagnostics::Debug::Assert(_handle != NULL, ::STRINGS[0/*"this._handl...*/], ::STRINGS[1/*"../../../Li...*/], 37, uArray::New(::TYPES[0/*object[]*/], 0));
+    ::g::Uno::Diagnostics::Debug::Assert(_handle != NULL, ::STRINGS[0/*"this._handl...*/], ::STRINGS[1/*"/Users/eric...*/], 37, uArray::New(::TYPES[0/*object[]*/], 0));
     [((UIWindow*)uPtr(_handle)->Handle) uSetDisplay:this];
 }
 

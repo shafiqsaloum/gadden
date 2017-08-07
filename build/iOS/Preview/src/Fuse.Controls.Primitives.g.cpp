@@ -2,11 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.Controls.Circle.h>
-#include <Fuse.Controls.Primitives.ShadowElement.h>
+#include <Fuse.Controls.Primiti-9017cc31.h>
 #include <Fuse.Controls.Rectangle.h>
 #include <Fuse.DrawContext.h>
 #include <Fuse.Drawing.Brush.h>
-#include <Fuse.Drawing.Primitives.Rectangle.h>
+#include <Fuse.Drawing.Primitiv-8e6a7ca2.h>
 #include <Fuse.Drawing.SolidColor.h>
 #include <Fuse.ICommonViewport.h>
 #include <Fuse.IViewport.h>
@@ -26,10 +26,10 @@ namespace Fuse{
 namespace Controls{
 namespace Primitives{
 
-// /Users/star-destryer/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.1.1/$.uno
-// --------------------------------------------------------------------------------------------------------
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
-// internal sealed class ShadowElement :801
+// internal sealed class ShadowElement :745
 // {
 static void ShadowElement_build(uType* type)
 {
@@ -52,7 +52,7 @@ static void ShadowElement_build(uType* type)
         ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface12),
         ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface13),
         ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface14));
-    type->SetFields(91,
+    type->SetFields(90,
         ::TYPES[2/*Fuse.Controls.Circle*/], offsetof(::g::Fuse::Controls::Primitives::ShadowElement, _circleParent), 0,
         ::g::Uno::Float4_typeof(), offsetof(::g::Fuse::Controls::Primitives::ShadowElement, _color), 0,
         ::g::Fuse::Drawing::SolidColor_typeof(), offsetof(::g::Fuse::Controls::Primitives::ShadowElement, _fill), 0,
@@ -68,7 +68,7 @@ static void ShadowElement_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Elements::Element_typeof();
-    options.FieldCount = 97;
+    options.FieldCount = 96;
     options.InterfaceCount = 15;
     options.ObjectSize = sizeof(ShadowElement);
     options.TypeSize = sizeof(::g::Fuse::Elements::Element_type);
@@ -115,13 +115,13 @@ static void ShadowElement_build(uType* type)
     return type;
 }
 
-// public generated ShadowElement() :801
+// public generated ShadowElement() :745
 void ShadowElement__ctor_4_fn(ShadowElement* __this)
 {
     __this->ctor_4();
 }
 
-// protected override sealed Fuse.VisualBounds CalcRenderBounds() :903
+// protected override sealed Fuse.VisualBounds CalcRenderBounds() :847
 void ShadowElement__CalcRenderBounds_fn(ShadowElement* __this, ::g::Fuse::VisualBounds** __retval)
 {
     uStackFrame __("Fuse.Controls.Primitives.ShadowElement", "CalcRenderBounds()");
@@ -131,37 +131,37 @@ void ShadowElement__CalcRenderBounds_fn(ShadowElement* __this, ::g::Fuse::Visual
     return *__retval = r->InflateXY(__this->Smoothness() - 1.0f), void();
 }
 
-// public float4 get_Color() :892
+// public float4 get_Color() :836
 void ShadowElement__get_Color_fn(ShadowElement* __this, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->Color();
 }
 
-// public void set_Color(float4 value) :893
+// public void set_Color(float4 value) :837
 void ShadowElement__set_Color_fn(ShadowElement* __this, ::g::Uno::Float4* value)
 {
     __this->Color(*value);
 }
 
-// private float4 get_CornerRadius() :859
+// private float4 get_CornerRadius() :803
 void ShadowElement__get_CornerRadius_fn(ShadowElement* __this, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->CornerRadius();
 }
 
-// private float get_MaxSize() :872
+// private float get_MaxSize() :816
 void ShadowElement__get_MaxSize_fn(ShadowElement* __this, float* __retval)
 {
     *__retval = __this->MaxSize();
 }
 
-// public generated ShadowElement New() :801
+// public generated ShadowElement New() :745
 void ShadowElement__New2_fn(ShadowElement** __retval)
 {
     *__retval = ShadowElement::New2();
 }
 
-// protected override sealed void OnDraw(Fuse.DrawContext dc) :911
+// protected override sealed void OnDraw(Fuse.DrawContext dc) :855
 void ShadowElement__OnDraw_fn(ShadowElement* __this, ::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Controls.Primitives.ShadowElement", "OnDraw(Fuse.DrawContext)");
@@ -184,7 +184,7 @@ void ShadowElement__OnDraw_fn(ShadowElement* __this, ::g::Fuse::DrawContext* dc)
     uPtr(::g::Fuse::Drawing::Primitives::Rectangle::Singleton())->Shadow(dc, __this, size, __this->CornerRadius(), __this->_fill, offset, __this->Smoothness() * ::g::Fuse::ICommonViewport::PixelsPerPoint(uInterface(uPtr(__this->Viewport()), ::TYPES[0/*Fuse.ICommonViewport*/])));
 }
 
-// protected override sealed void OnRooted() :807
+// protected override sealed void OnRooted() :751
 void ShadowElement__OnRooted_fn(ShadowElement* __this)
 {
     uStackFrame __("Fuse.Controls.Primitives.ShadowElement", "OnRooted()");
@@ -198,7 +198,7 @@ void ShadowElement__OnRooted_fn(ShadowElement* __this)
     __this->_minSmoothness = (1.5f / ::g::Fuse::ICommonViewport::PixelsPerPoint(uInterface(uPtr(__this->Viewport()), ::TYPES[0/*Fuse.ICommonViewport*/])));
 }
 
-// protected override sealed void OnUnrooted() :820
+// protected override sealed void OnUnrooted() :764
 void ShadowElement__OnUnrooted_fn(ShadowElement* __this)
 {
     uStackFrame __("Fuse.Controls.Primitives.ShadowElement", "OnUnrooted()");
@@ -212,25 +212,25 @@ void ShadowElement__OnUnrooted_fn(ShadowElement* __this)
     ::g::Fuse::Elements::Element__OnUnrooted_fn(__this);
 }
 
-// public float get_Size() :845
+// public float get_Size() :789
 void ShadowElement__get_Size_fn(ShadowElement* __this, float* __retval)
 {
     *__retval = __this->Size();
 }
 
-// public void set_Size(float value) :846
+// public void set_Size(float value) :790
 void ShadowElement__set_Size_fn(ShadowElement* __this, float* value)
 {
     __this->Size(*value);
 }
 
-// private float get_Smoothness() :876
+// private float get_Smoothness() :820
 void ShadowElement__get_Smoothness_fn(ShadowElement* __this, float* __retval)
 {
     *__retval = __this->Smoothness();
 }
 
-// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector prop) :833
+// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector prop) :777
 void ShadowElement__UnoUXIPropertyListenerOnPropertyChanged_fn(ShadowElement* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Selector* prop)
 {
     uStackFrame __("Fuse.Controls.Primitives.ShadowElement", "Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject,Uno.UX.Selector)");
@@ -243,20 +243,20 @@ void ShadowElement__UnoUXIPropertyListenerOnPropertyChanged_fn(ShadowElement* __
     }
 }
 
-// public generated ShadowElement() [instance] :801
+// public generated ShadowElement() [instance] :745
 void ShadowElement::ctor_4()
 {
     _fill = ::g::Fuse::Drawing::SolidColor::New2();
     ctor_3();
 }
 
-// public float4 get_Color() [instance] :892
+// public float4 get_Color() [instance] :836
 ::g::Uno::Float4 ShadowElement::Color()
 {
     return _color;
 }
 
-// public void set_Color(float4 value) [instance] :893
+// public void set_Color(float4 value) [instance] :837
 void ShadowElement::Color(::g::Uno::Float4 value)
 {
     uStackFrame __("Fuse.Controls.Primitives.ShadowElement", "set_Color(float4)");
@@ -268,7 +268,7 @@ void ShadowElement::Color(::g::Uno::Float4 value)
     }
 }
 
-// private float4 get_CornerRadius() [instance] :859
+// private float4 get_CornerRadius() [instance] :803
 ::g::Uno::Float4 ShadowElement::CornerRadius()
 {
     uStackFrame __("Fuse.Controls.Primitives.ShadowElement", "get_CornerRadius()");
@@ -282,19 +282,19 @@ void ShadowElement::Color(::g::Uno::Float4 value)
         return ::g::Uno::Float4__New1(size);
 }
 
-// private float get_MaxSize() [instance] :872
+// private float get_MaxSize() [instance] :816
 float ShadowElement::MaxSize()
 {
     return ::g::Uno::Math::Min1(ActualSize().X, ActualSize().Y);
 }
 
-// public float get_Size() [instance] :845
+// public float get_Size() [instance] :789
 float ShadowElement::Size()
 {
     return _size;
 }
 
-// public void set_Size(float value) [instance] :846
+// public void set_Size(float value) [instance] :790
 void ShadowElement::Size(float value)
 {
     uStackFrame __("Fuse.Controls.Primitives.ShadowElement", "set_Size(float)");
@@ -307,14 +307,14 @@ void ShadowElement::Size(float value)
     }
 }
 
-// private float get_Smoothness() [instance] :876
+// private float get_Smoothness() [instance] :820
 float ShadowElement::Smoothness()
 {
     float size = _size + ::g::Uno::Math::Max1(0.0f, _size - MaxSize());
     return ::g::Uno::Math::Max1(size * 2.5f, _minSmoothness);
 }
 
-// public generated ShadowElement New() [static] :801
+// public generated ShadowElement New() [static] :745
 ShadowElement* ShadowElement::New2()
 {
     ShadowElement* obj2 = (ShadowElement*)uNew(ShadowElement_typeof());

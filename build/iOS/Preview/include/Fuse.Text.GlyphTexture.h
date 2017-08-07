@@ -1,4 +1,4 @@
-// This file was generated based on '../../../Library/Application Support/Fusetools/Packages/Fuse.Text/1.1.1/$.uno'.
+// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno'.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Text{
 
-// public struct GlyphTexture :1177
+// public struct GlyphTexture :1178
 // {
 uStructType* GlyphTexture_typeof();
 void GlyphTexture__ctor__fn(GlyphTexture* __this, ::g::Fuse::Text::SubTexture* subTexture, ::g::Uno::Float2* offset, float* scale);
