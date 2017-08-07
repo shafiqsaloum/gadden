@@ -24,9 +24,9 @@ TODO:
         <Image Alignment="TopCenter" Layer="Background" File="../../assets/BackgroundIceBreaker.png"/>
         <!-- While true target -->
         <WhileTrue ux:Name="opacityToggle">
-            <Change popupInfo.Opacity="1" Duration="0.1" />
-            <Change infoIcon.Opacity="0" />
-            <Change crossIcon.Opacity="1" />
+            <Change popupInfo.Opacity="1" Duration="0.3" />
+            <Change infoIcon.Opacity="0" Duration="0.3" />
+            <Change crossIcon.Opacity="1" Duration="0.3" />
         </WhileTrue>
         <!-- Info pop-up -->
         <Panel ux:Name="popupInfo" Opacity="0" Height="100%" Width="100%" Background="#0006">
@@ -40,7 +40,7 @@ TODO:
         </Panel>
 
       <!-- Main content -->
-      <StackPanel Alignment="Center">
+      <StackPanel Alignment="BottomCenter" Margin="0,0,0,20">
           <TextView Font="TitleFont" TextColor="#fff" FontSize="65" TextWrapping="Wrap" TextAlignment="Center" LineSpacing="20" Alignment="Top" Margin="0,0,0,50">
               SHAKE TO BREAK
           </TextView>
