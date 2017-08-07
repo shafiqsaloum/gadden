@@ -16,7 +16,7 @@ function Sponsors(item) {
 };
 
 
-fetch("https://dev.jexpo.se/dev/forms/coupons?getAttributes=1")
+fetch("https://dev.jexpo.se/dev/forms/ws:coupons?getAttributes=1")
 .then(function(response) { return response.json(); })
 .then(function(responseObject) {
     var items = [];
