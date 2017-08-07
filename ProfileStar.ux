@@ -1,0 +1,3 @@
+<StackPanel ux:Class="ProfileStar" Opacity="0" ItemSpacing="3" HitTestMode="LocalBounds" Width="56" Height="56" ContentAlignment="Center">
+	<Image  Alignment="Center" File="assets/ProfileIconStar.png" Width="30%" />
+</StackPanel>

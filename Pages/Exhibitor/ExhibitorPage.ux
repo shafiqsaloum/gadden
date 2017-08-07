@@ -49,6 +49,7 @@ TODO:
               <!-- While true event -->
               <WhileTrue ux:Name="yellowStar">
                   <Change starImage.Color="Yellow" Duration="0.3" />
+
               </WhileTrue>
               <WhileTrue ux:Name="showDetails">
                 <Change ExhibitorDetails.Opacity="1" Duration="0.2" />
