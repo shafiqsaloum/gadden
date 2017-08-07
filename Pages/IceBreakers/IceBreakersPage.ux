@@ -51,7 +51,8 @@ TODO:
     </Panel>
 
     <Panel Height="30%" Background="Black" Alignment="Bottom">
-      <Image ux:Name="IceBreakerIcon" Width="40%" Alignment="BottomCenter" StretchMode="UniformToFill" File="../../assets/IceBreakerIcon.png" X="0">
+      <Image ux:Name="IceBreakerButton" Opacity="0" Width="20%" Margin="0,0,0,40"  Alignment="BottomCenter" StretchMode="UniformToFill" File="../../assets/IceBreakerButtonWhite.png" />
+      <Image ux:Name="IceBreakerIcon" Opacity="1" Width="40%" Alignment="BottomCenter" StretchMode="UniformToFill" File="../../assets/IceBreakerIcon.png" X="0">
 
         <WhileActive Threshold="0.1">
           <Rotate Degrees="10" Duration="0.5" Delay="0.5" />
@@ -65,6 +66,9 @@ TODO:
           <Rotate Degrees="20" Duration="1" Delay="8" />
           <Rotate Degrees="-20" Duration="1" Delay="9" />
           <Rotate Degrees="20" Duration="1" Delay="10" />
+
+          <Change IceBreakerIcon.Opacity="0" Duration="0.3" Delay="11" />
+          <Change IceBreakerButton.Opacity="1" Duration="0.3" Delay="11" />
         </WhileActive>
       </Image>
     </Panel>
