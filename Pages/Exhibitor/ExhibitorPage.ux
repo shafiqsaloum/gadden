@@ -30,7 +30,7 @@ TODO:
             <Grid RowCount="1" ColumnCount="2">
 
               <!-- Get name from JSON -->
-              <SmallText Opacity="1" Value="{= toUpper({name})}" Width="180" Margin="0,3,0,3">
+              <SmallText Opacity="1" Value="{= toUpper({name})}" Width="180" Margin="10,3,0,3">
                 <!-- Click event -->
                 <Clicked>
                   <Toggle Target="showDetails" />
