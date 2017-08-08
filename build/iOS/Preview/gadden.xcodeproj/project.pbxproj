@@ -110,20 +110,20 @@
         F005700100000000000000C0 /* _root.gadden_FuseCont-862d1e68.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000C1 /* _root.gadden_FuseCont-862d1e68.h */; };
         F005700100000000000000C2 /* _root.gadden_FuseCont-61214812.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000C3 /* _root.gadden_FuseCont-61214812.h */; };
         F005700100000000000000C4 /* _root.gadden_FuseCont-44c720e0.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000C5 /* _root.gadden_FuseCont-44c720e0.h */; };
-        F005700100000000000000C6 /* _root.gadden_FuseCont-b48cdba6.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000C7 /* _root.gadden_FuseCont-b48cdba6.h */; };
-        F005700100000000000000C8 /* _root.gadden_FuseDraw-aa645b14.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000C9 /* _root.gadden_FuseDraw-aa645b14.h */; };
-        F005700100000000000000CA /* _root.gadden_FuseElem-acec0a78.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000CB /* _root.gadden_FuseElem-acec0a78.h */; };
-        F005700100000000000000CC /* _root.gadden_FuseElem-aceb110d.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000CD /* _root.gadden_FuseElem-aceb110d.h */; };
-        F005700100000000000000CE /* _root.gadden_FuseElem-791edf80.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000CF /* _root.gadden_FuseElem-791edf80.h */; };
-        F005700100000000000000D0 /* _root.gadden_FuseReac-3db2ace5.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000D1 /* _root.gadden_FuseReac-3db2ace5.h */; };
-        F005700100000000000000D2 /* _root.gadden_FuseReac-5462d75c.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000D3 /* _root.gadden_FuseReac-5462d75c.h */; };
-        F005700100000000000000D4 /* _root.gadden_FuseTrig-1a6a035e.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000D5 /* _root.gadden_FuseTrig-1a6a035e.h */; };
-        F005700100000000000000D6 /* _root.gadden_Tab_Text_Property.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000D7 /* _root.gadden_Tab_Text_Property.h */; };
-        F005700100000000000000D8 /* _root.gadden_TabSpons-e4947320.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000D9 /* _root.gadden_TabSpons-e4947320.h */; };
-        F005700100000000000000DA /* _root.gadden_TabText_-321cbc95.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000DB /* _root.gadden_TabText_-321cbc95.h */; };
-        F005700100000000000000DC /* _root.Hamburger.Template.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000DD /* _root.Hamburger.Template.h */; };
-        F005700100000000000000DE /* _root.Hamburger.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000DF /* _root.Hamburger.h */; };
-        F005700100000000000000E0 /* _root.LoginButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000E1 /* _root.LoginButton.h */; };
+        F005700100000000000000C6 /* _root.gadden_FuseCont-1833e517.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000C7 /* _root.gadden_FuseCont-1833e517.h */; };
+        F005700100000000000000C8 /* _root.gadden_FuseCont-b48cdba6.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000C9 /* _root.gadden_FuseCont-b48cdba6.h */; };
+        F005700100000000000000CA /* _root.gadden_FuseDraw-aa645b14.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000CB /* _root.gadden_FuseDraw-aa645b14.h */; };
+        F005700100000000000000CC /* _root.gadden_FuseElem-acec0a78.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000CD /* _root.gadden_FuseElem-acec0a78.h */; };
+        F005700100000000000000CE /* _root.gadden_FuseElem-aceb110d.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000CF /* _root.gadden_FuseElem-aceb110d.h */; };
+        F005700100000000000000D0 /* _root.gadden_FuseElem-791edf80.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000D1 /* _root.gadden_FuseElem-791edf80.h */; };
+        F005700100000000000000D2 /* _root.gadden_FuseReac-3db2ace5.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000D3 /* _root.gadden_FuseReac-3db2ace5.h */; };
+        F005700100000000000000D4 /* _root.gadden_FuseReac-5462d75c.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000D5 /* _root.gadden_FuseReac-5462d75c.h */; };
+        F005700100000000000000D6 /* _root.gadden_FuseTrig-1a6a035e.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000D7 /* _root.gadden_FuseTrig-1a6a035e.h */; };
+        F005700100000000000000D8 /* _root.gadden_Tab_Text_Property.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000D9 /* _root.gadden_Tab_Text_Property.h */; };
+        F005700100000000000000DA /* _root.gadden_TabSpons-e4947320.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000DB /* _root.gadden_TabSpons-e4947320.h */; };
+        F005700100000000000000DC /* _root.gadden_TabText_-321cbc95.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000DD /* _root.gadden_TabText_-321cbc95.h */; };
+        F005700100000000000000DE /* _root.Hamburger.Template.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000DF /* _root.Hamburger.Template.h */; };
+        F005700100000000000000E0 /* _root.Hamburger.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000E1 /* _root.Hamburger.h */; };
         F005700100000000000000E2 /* _root.MainView.Template.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000E3 /* _root.MainView.Template.h */; };
         F005700100000000000000E4 /* _root.MainView.Template1.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000E5 /* _root.MainView.Template1.h */; };
         F005700100000000000000E6 /* _root.MainView.Template2.h in Headers */ = {isa = PBXBuildFile; fileRef = F005700100000000000000E7 /* _root.MainView.Template2.h */; };
@@ -2584,20 +2584,20 @@
         F00570010000000000001414 /* _root.gadden_FuseCont-862d1e68.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001415 /* _root.gadden_FuseCont-862d1e68.cpp */; };
         F00570010000000000001416 /* _root.gadden_FuseCont-61214812.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001417 /* _root.gadden_FuseCont-61214812.cpp */; };
         F00570010000000000001418 /* _root.gadden_FuseCont-44c720e0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001419 /* _root.gadden_FuseCont-44c720e0.cpp */; };
-        F0057001000000000000141A /* _root.gadden_FuseCont-b48cdba6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0057001000000000000141B /* _root.gadden_FuseCont-b48cdba6.cpp */; };
-        F0057001000000000000141C /* _root.gadden_FuseDraw-aa645b14.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0057001000000000000141D /* _root.gadden_FuseDraw-aa645b14.cpp */; };
-        F0057001000000000000141E /* _root.gadden_FuseElem-acec0a78.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0057001000000000000141F /* _root.gadden_FuseElem-acec0a78.cpp */; };
-        F00570010000000000001420 /* _root.gadden_FuseElem-aceb110d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001421 /* _root.gadden_FuseElem-aceb110d.cpp */; };
-        F00570010000000000001422 /* _root.gadden_FuseElem-791edf80.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001423 /* _root.gadden_FuseElem-791edf80.cpp */; };
-        F00570010000000000001424 /* _root.gadden_FuseReac-3db2ace5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001425 /* _root.gadden_FuseReac-3db2ace5.cpp */; };
-        F00570010000000000001426 /* _root.gadden_FuseReac-5462d75c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001427 /* _root.gadden_FuseReac-5462d75c.cpp */; };
-        F00570010000000000001428 /* _root.gadden_FuseTrig-1a6a035e.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001429 /* _root.gadden_FuseTrig-1a6a035e.cpp */; };
-        F0057001000000000000142A /* _root.gadden_Tab_Text_Property.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0057001000000000000142B /* _root.gadden_Tab_Text_Property.cpp */; };
-        F0057001000000000000142C /* _root.gadden_TabSpons-e4947320.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0057001000000000000142D /* _root.gadden_TabSpons-e4947320.cpp */; };
-        F0057001000000000000142E /* _root.gadden_TabText_-321cbc95.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0057001000000000000142F /* _root.gadden_TabText_-321cbc95.cpp */; };
-        F00570010000000000001430 /* _root.Hamburger.Template.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001431 /* _root.Hamburger.Template.cpp */; };
-        F00570010000000000001432 /* _root.Hamburger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001433 /* _root.Hamburger.cpp */; };
-        F00570010000000000001434 /* _root.LoginButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001435 /* _root.LoginButton.cpp */; };
+        F0057001000000000000141A /* _root.gadden_FuseCont-1833e517.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0057001000000000000141B /* _root.gadden_FuseCont-1833e517.cpp */; };
+        F0057001000000000000141C /* _root.gadden_FuseCont-b48cdba6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0057001000000000000141D /* _root.gadden_FuseCont-b48cdba6.cpp */; };
+        F0057001000000000000141E /* _root.gadden_FuseDraw-aa645b14.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0057001000000000000141F /* _root.gadden_FuseDraw-aa645b14.cpp */; };
+        F00570010000000000001420 /* _root.gadden_FuseElem-acec0a78.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001421 /* _root.gadden_FuseElem-acec0a78.cpp */; };
+        F00570010000000000001422 /* _root.gadden_FuseElem-aceb110d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001423 /* _root.gadden_FuseElem-aceb110d.cpp */; };
+        F00570010000000000001424 /* _root.gadden_FuseElem-791edf80.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001425 /* _root.gadden_FuseElem-791edf80.cpp */; };
+        F00570010000000000001426 /* _root.gadden_FuseReac-3db2ace5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001427 /* _root.gadden_FuseReac-3db2ace5.cpp */; };
+        F00570010000000000001428 /* _root.gadden_FuseReac-5462d75c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001429 /* _root.gadden_FuseReac-5462d75c.cpp */; };
+        F0057001000000000000142A /* _root.gadden_FuseTrig-1a6a035e.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0057001000000000000142B /* _root.gadden_FuseTrig-1a6a035e.cpp */; };
+        F0057001000000000000142C /* _root.gadden_Tab_Text_Property.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0057001000000000000142D /* _root.gadden_Tab_Text_Property.cpp */; };
+        F0057001000000000000142E /* _root.gadden_TabSpons-e4947320.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0057001000000000000142F /* _root.gadden_TabSpons-e4947320.cpp */; };
+        F00570010000000000001430 /* _root.gadden_TabText_-321cbc95.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001431 /* _root.gadden_TabText_-321cbc95.cpp */; };
+        F00570010000000000001432 /* _root.Hamburger.Template.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001433 /* _root.Hamburger.Template.cpp */; };
+        F00570010000000000001434 /* _root.Hamburger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001435 /* _root.Hamburger.cpp */; };
         F00570010000000000001436 /* _root.MainView.Template.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001437 /* _root.MainView.Template.cpp */; };
         F00570010000000000001438 /* _root.MainView.Template1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F00570010000000000001439 /* _root.MainView.Template1.cpp */; };
         F0057001000000000000143A /* _root.MainView.Template2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0057001000000000000143B /* _root.MainView.Template2.cpp */; };
@@ -2929,20 +2929,20 @@
         F005700100000000000000C1 /* include/_root.gadden_FuseCont-862d1e68.h */ = {isa = PBXFileReference; name = _root.gadden_FuseCont-862d1e68.h; path = "include/_root.gadden_FuseCont-862d1e68.h"; sourceTree = "<group>"; };
         F005700100000000000000C3 /* include/_root.gadden_FuseCont-61214812.h */ = {isa = PBXFileReference; name = _root.gadden_FuseCont-61214812.h; path = "include/_root.gadden_FuseCont-61214812.h"; sourceTree = "<group>"; };
         F005700100000000000000C5 /* include/_root.gadden_FuseCont-44c720e0.h */ = {isa = PBXFileReference; name = _root.gadden_FuseCont-44c720e0.h; path = "include/_root.gadden_FuseCont-44c720e0.h"; sourceTree = "<group>"; };
-        F005700100000000000000C7 /* include/_root.gadden_FuseCont-b48cdba6.h */ = {isa = PBXFileReference; name = _root.gadden_FuseCont-b48cdba6.h; path = "include/_root.gadden_FuseCont-b48cdba6.h"; sourceTree = "<group>"; };
-        F005700100000000000000C9 /* include/_root.gadden_FuseDraw-aa645b14.h */ = {isa = PBXFileReference; name = _root.gadden_FuseDraw-aa645b14.h; path = "include/_root.gadden_FuseDraw-aa645b14.h"; sourceTree = "<group>"; };
-        F005700100000000000000CB /* include/_root.gadden_FuseElem-acec0a78.h */ = {isa = PBXFileReference; name = _root.gadden_FuseElem-acec0a78.h; path = "include/_root.gadden_FuseElem-acec0a78.h"; sourceTree = "<group>"; };
-        F005700100000000000000CD /* include/_root.gadden_FuseElem-aceb110d.h */ = {isa = PBXFileReference; name = _root.gadden_FuseElem-aceb110d.h; path = "include/_root.gadden_FuseElem-aceb110d.h"; sourceTree = "<group>"; };
-        F005700100000000000000CF /* include/_root.gadden_FuseElem-791edf80.h */ = {isa = PBXFileReference; name = _root.gadden_FuseElem-791edf80.h; path = "include/_root.gadden_FuseElem-791edf80.h"; sourceTree = "<group>"; };
-        F005700100000000000000D1 /* include/_root.gadden_FuseReac-3db2ace5.h */ = {isa = PBXFileReference; name = _root.gadden_FuseReac-3db2ace5.h; path = "include/_root.gadden_FuseReac-3db2ace5.h"; sourceTree = "<group>"; };
-        F005700100000000000000D3 /* include/_root.gadden_FuseReac-5462d75c.h */ = {isa = PBXFileReference; name = _root.gadden_FuseReac-5462d75c.h; path = "include/_root.gadden_FuseReac-5462d75c.h"; sourceTree = "<group>"; };
-        F005700100000000000000D5 /* include/_root.gadden_FuseTrig-1a6a035e.h */ = {isa = PBXFileReference; name = _root.gadden_FuseTrig-1a6a035e.h; path = "include/_root.gadden_FuseTrig-1a6a035e.h"; sourceTree = "<group>"; };
-        F005700100000000000000D7 /* include/_root.gadden_Tab_Text_Property.h */ = {isa = PBXFileReference; name = _root.gadden_Tab_Text_Property.h; path = "include/_root.gadden_Tab_Text_Property.h"; sourceTree = "<group>"; };
-        F005700100000000000000D9 /* include/_root.gadden_TabSpons-e4947320.h */ = {isa = PBXFileReference; name = _root.gadden_TabSpons-e4947320.h; path = "include/_root.gadden_TabSpons-e4947320.h"; sourceTree = "<group>"; };
-        F005700100000000000000DB /* include/_root.gadden_TabText_-321cbc95.h */ = {isa = PBXFileReference; name = _root.gadden_TabText_-321cbc95.h; path = "include/_root.gadden_TabText_-321cbc95.h"; sourceTree = "<group>"; };
-        F005700100000000000000DD /* include/_root.Hamburger.Template.h */ = {isa = PBXFileReference; name = _root.Hamburger.Template.h; path = "include/_root.Hamburger.Template.h"; sourceTree = "<group>"; };
-        F005700100000000000000DF /* include/_root.Hamburger.h */ = {isa = PBXFileReference; name = _root.Hamburger.h; path = "include/_root.Hamburger.h"; sourceTree = "<group>"; };
-        F005700100000000000000E1 /* include/_root.LoginButton.h */ = {isa = PBXFileReference; name = _root.LoginButton.h; path = "include/_root.LoginButton.h"; sourceTree = "<group>"; };
+        F005700100000000000000C7 /* include/_root.gadden_FuseCont-1833e517.h */ = {isa = PBXFileReference; name = _root.gadden_FuseCont-1833e517.h; path = "include/_root.gadden_FuseCont-1833e517.h"; sourceTree = "<group>"; };
+        F005700100000000000000C9 /* include/_root.gadden_FuseCont-b48cdba6.h */ = {isa = PBXFileReference; name = _root.gadden_FuseCont-b48cdba6.h; path = "include/_root.gadden_FuseCont-b48cdba6.h"; sourceTree = "<group>"; };
+        F005700100000000000000CB /* include/_root.gadden_FuseDraw-aa645b14.h */ = {isa = PBXFileReference; name = _root.gadden_FuseDraw-aa645b14.h; path = "include/_root.gadden_FuseDraw-aa645b14.h"; sourceTree = "<group>"; };
+        F005700100000000000000CD /* include/_root.gadden_FuseElem-acec0a78.h */ = {isa = PBXFileReference; name = _root.gadden_FuseElem-acec0a78.h; path = "include/_root.gadden_FuseElem-acec0a78.h"; sourceTree = "<group>"; };
+        F005700100000000000000CF /* include/_root.gadden_FuseElem-aceb110d.h */ = {isa = PBXFileReference; name = _root.gadden_FuseElem-aceb110d.h; path = "include/_root.gadden_FuseElem-aceb110d.h"; sourceTree = "<group>"; };
+        F005700100000000000000D1 /* include/_root.gadden_FuseElem-791edf80.h */ = {isa = PBXFileReference; name = _root.gadden_FuseElem-791edf80.h; path = "include/_root.gadden_FuseElem-791edf80.h"; sourceTree = "<group>"; };
+        F005700100000000000000D3 /* include/_root.gadden_FuseReac-3db2ace5.h */ = {isa = PBXFileReference; name = _root.gadden_FuseReac-3db2ace5.h; path = "include/_root.gadden_FuseReac-3db2ace5.h"; sourceTree = "<group>"; };
+        F005700100000000000000D5 /* include/_root.gadden_FuseReac-5462d75c.h */ = {isa = PBXFileReference; name = _root.gadden_FuseReac-5462d75c.h; path = "include/_root.gadden_FuseReac-5462d75c.h"; sourceTree = "<group>"; };
+        F005700100000000000000D7 /* include/_root.gadden_FuseTrig-1a6a035e.h */ = {isa = PBXFileReference; name = _root.gadden_FuseTrig-1a6a035e.h; path = "include/_root.gadden_FuseTrig-1a6a035e.h"; sourceTree = "<group>"; };
+        F005700100000000000000D9 /* include/_root.gadden_Tab_Text_Property.h */ = {isa = PBXFileReference; name = _root.gadden_Tab_Text_Property.h; path = "include/_root.gadden_Tab_Text_Property.h"; sourceTree = "<group>"; };
+        F005700100000000000000DB /* include/_root.gadden_TabSpons-e4947320.h */ = {isa = PBXFileReference; name = _root.gadden_TabSpons-e4947320.h; path = "include/_root.gadden_TabSpons-e4947320.h"; sourceTree = "<group>"; };
+        F005700100000000000000DD /* include/_root.gadden_TabText_-321cbc95.h */ = {isa = PBXFileReference; name = _root.gadden_TabText_-321cbc95.h; path = "include/_root.gadden_TabText_-321cbc95.h"; sourceTree = "<group>"; };
+        F005700100000000000000DF /* include/_root.Hamburger.Template.h */ = {isa = PBXFileReference; name = _root.Hamburger.Template.h; path = "include/_root.Hamburger.Template.h"; sourceTree = "<group>"; };
+        F005700100000000000000E1 /* include/_root.Hamburger.h */ = {isa = PBXFileReference; name = _root.Hamburger.h; path = "include/_root.Hamburger.h"; sourceTree = "<group>"; };
         F005700100000000000000E3 /* include/_root.MainView.Template.h */ = {isa = PBXFileReference; name = _root.MainView.Template.h; path = "include/_root.MainView.Template.h"; sourceTree = "<group>"; };
         F005700100000000000000E5 /* include/_root.MainView.Template1.h */ = {isa = PBXFileReference; name = _root.MainView.Template1.h; path = "include/_root.MainView.Template1.h"; sourceTree = "<group>"; };
         F005700100000000000000E7 /* include/_root.MainView.Template2.h */ = {isa = PBXFileReference; name = _root.MainView.Template2.h; path = "include/_root.MainView.Template2.h"; sourceTree = "<group>"; };
@@ -5403,20 +5403,20 @@
         F00570010000000000001415 /* src/_root.gadden_FuseCont-862d1e68.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseCont-862d1e68.cpp; path = "src/_root.gadden_FuseCont-862d1e68.cpp"; sourceTree = "<group>"; };
         F00570010000000000001417 /* src/_root.gadden_FuseCont-61214812.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseCont-61214812.cpp; path = "src/_root.gadden_FuseCont-61214812.cpp"; sourceTree = "<group>"; };
         F00570010000000000001419 /* src/_root.gadden_FuseCont-44c720e0.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseCont-44c720e0.cpp; path = "src/_root.gadden_FuseCont-44c720e0.cpp"; sourceTree = "<group>"; };
-        F0057001000000000000141B /* src/_root.gadden_FuseCont-b48cdba6.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseCont-b48cdba6.cpp; path = "src/_root.gadden_FuseCont-b48cdba6.cpp"; sourceTree = "<group>"; };
-        F0057001000000000000141D /* src/_root.gadden_FuseDraw-aa645b14.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseDraw-aa645b14.cpp; path = "src/_root.gadden_FuseDraw-aa645b14.cpp"; sourceTree = "<group>"; };
-        F0057001000000000000141F /* src/_root.gadden_FuseElem-acec0a78.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseElem-acec0a78.cpp; path = "src/_root.gadden_FuseElem-acec0a78.cpp"; sourceTree = "<group>"; };
-        F00570010000000000001421 /* src/_root.gadden_FuseElem-aceb110d.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseElem-aceb110d.cpp; path = "src/_root.gadden_FuseElem-aceb110d.cpp"; sourceTree = "<group>"; };
-        F00570010000000000001423 /* src/_root.gadden_FuseElem-791edf80.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseElem-791edf80.cpp; path = "src/_root.gadden_FuseElem-791edf80.cpp"; sourceTree = "<group>"; };
-        F00570010000000000001425 /* src/_root.gadden_FuseReac-3db2ace5.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseReac-3db2ace5.cpp; path = "src/_root.gadden_FuseReac-3db2ace5.cpp"; sourceTree = "<group>"; };
-        F00570010000000000001427 /* src/_root.gadden_FuseReac-5462d75c.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseReac-5462d75c.cpp; path = "src/_root.gadden_FuseReac-5462d75c.cpp"; sourceTree = "<group>"; };
-        F00570010000000000001429 /* src/_root.gadden_FuseTrig-1a6a035e.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseTrig-1a6a035e.cpp; path = "src/_root.gadden_FuseTrig-1a6a035e.cpp"; sourceTree = "<group>"; };
-        F0057001000000000000142B /* src/_root.gadden_Tab_Text_Property.cpp */ = {isa = PBXFileReference; name = _root.gadden_Tab_Text_Property.cpp; path = "src/_root.gadden_Tab_Text_Property.cpp"; sourceTree = "<group>"; };
-        F0057001000000000000142D /* src/_root.gadden_TabSpons-e4947320.cpp */ = {isa = PBXFileReference; name = _root.gadden_TabSpons-e4947320.cpp; path = "src/_root.gadden_TabSpons-e4947320.cpp"; sourceTree = "<group>"; };
-        F0057001000000000000142F /* src/_root.gadden_TabText_-321cbc95.cpp */ = {isa = PBXFileReference; name = _root.gadden_TabText_-321cbc95.cpp; path = "src/_root.gadden_TabText_-321cbc95.cpp"; sourceTree = "<group>"; };
-        F00570010000000000001431 /* src/_root.Hamburger.Template.cpp */ = {isa = PBXFileReference; name = _root.Hamburger.Template.cpp; path = "src/_root.Hamburger.Template.cpp"; sourceTree = "<group>"; };
-        F00570010000000000001433 /* src/_root.Hamburger.cpp */ = {isa = PBXFileReference; name = _root.Hamburger.cpp; path = "src/_root.Hamburger.cpp"; sourceTree = "<group>"; };
-        F00570010000000000001435 /* src/_root.LoginButton.cpp */ = {isa = PBXFileReference; name = _root.LoginButton.cpp; path = "src/_root.LoginButton.cpp"; sourceTree = "<group>"; };
+        F0057001000000000000141B /* src/_root.gadden_FuseCont-1833e517.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseCont-1833e517.cpp; path = "src/_root.gadden_FuseCont-1833e517.cpp"; sourceTree = "<group>"; };
+        F0057001000000000000141D /* src/_root.gadden_FuseCont-b48cdba6.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseCont-b48cdba6.cpp; path = "src/_root.gadden_FuseCont-b48cdba6.cpp"; sourceTree = "<group>"; };
+        F0057001000000000000141F /* src/_root.gadden_FuseDraw-aa645b14.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseDraw-aa645b14.cpp; path = "src/_root.gadden_FuseDraw-aa645b14.cpp"; sourceTree = "<group>"; };
+        F00570010000000000001421 /* src/_root.gadden_FuseElem-acec0a78.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseElem-acec0a78.cpp; path = "src/_root.gadden_FuseElem-acec0a78.cpp"; sourceTree = "<group>"; };
+        F00570010000000000001423 /* src/_root.gadden_FuseElem-aceb110d.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseElem-aceb110d.cpp; path = "src/_root.gadden_FuseElem-aceb110d.cpp"; sourceTree = "<group>"; };
+        F00570010000000000001425 /* src/_root.gadden_FuseElem-791edf80.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseElem-791edf80.cpp; path = "src/_root.gadden_FuseElem-791edf80.cpp"; sourceTree = "<group>"; };
+        F00570010000000000001427 /* src/_root.gadden_FuseReac-3db2ace5.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseReac-3db2ace5.cpp; path = "src/_root.gadden_FuseReac-3db2ace5.cpp"; sourceTree = "<group>"; };
+        F00570010000000000001429 /* src/_root.gadden_FuseReac-5462d75c.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseReac-5462d75c.cpp; path = "src/_root.gadden_FuseReac-5462d75c.cpp"; sourceTree = "<group>"; };
+        F0057001000000000000142B /* src/_root.gadden_FuseTrig-1a6a035e.cpp */ = {isa = PBXFileReference; name = _root.gadden_FuseTrig-1a6a035e.cpp; path = "src/_root.gadden_FuseTrig-1a6a035e.cpp"; sourceTree = "<group>"; };
+        F0057001000000000000142D /* src/_root.gadden_Tab_Text_Property.cpp */ = {isa = PBXFileReference; name = _root.gadden_Tab_Text_Property.cpp; path = "src/_root.gadden_Tab_Text_Property.cpp"; sourceTree = "<group>"; };
+        F0057001000000000000142F /* src/_root.gadden_TabSpons-e4947320.cpp */ = {isa = PBXFileReference; name = _root.gadden_TabSpons-e4947320.cpp; path = "src/_root.gadden_TabSpons-e4947320.cpp"; sourceTree = "<group>"; };
+        F00570010000000000001431 /* src/_root.gadden_TabText_-321cbc95.cpp */ = {isa = PBXFileReference; name = _root.gadden_TabText_-321cbc95.cpp; path = "src/_root.gadden_TabText_-321cbc95.cpp"; sourceTree = "<group>"; };
+        F00570010000000000001433 /* src/_root.Hamburger.Template.cpp */ = {isa = PBXFileReference; name = _root.Hamburger.Template.cpp; path = "src/_root.Hamburger.Template.cpp"; sourceTree = "<group>"; };
+        F00570010000000000001435 /* src/_root.Hamburger.cpp */ = {isa = PBXFileReference; name = _root.Hamburger.cpp; path = "src/_root.Hamburger.cpp"; sourceTree = "<group>"; };
         F00570010000000000001437 /* src/_root.MainView.Template.cpp */ = {isa = PBXFileReference; name = _root.MainView.Template.cpp; path = "src/_root.MainView.Template.cpp"; sourceTree = "<group>"; };
         F00570010000000000001439 /* src/_root.MainView.Template1.cpp */ = {isa = PBXFileReference; name = _root.MainView.Template1.cpp; path = "src/_root.MainView.Template1.cpp"; sourceTree = "<group>"; };
         F0057001000000000000143B /* src/_root.MainView.Template2.cpp */ = {isa = PBXFileReference; name = _root.MainView.Template2.cpp; path = "src/_root.MainView.Template2.cpp"; sourceTree = "<group>"; };
@@ -5801,20 +5801,20 @@
                 F005700100000000000000C1 /* include/_root.gadden_FuseCont-862d1e68.h */,
                 F005700100000000000000C3 /* include/_root.gadden_FuseCont-61214812.h */,
                 F005700100000000000000C5 /* include/_root.gadden_FuseCont-44c720e0.h */,
-                F005700100000000000000C7 /* include/_root.gadden_FuseCont-b48cdba6.h */,
-                F005700100000000000000C9 /* include/_root.gadden_FuseDraw-aa645b14.h */,
-                F005700100000000000000CB /* include/_root.gadden_FuseElem-acec0a78.h */,
-                F005700100000000000000CD /* include/_root.gadden_FuseElem-aceb110d.h */,
-                F005700100000000000000CF /* include/_root.gadden_FuseElem-791edf80.h */,
-                F005700100000000000000D1 /* include/_root.gadden_FuseReac-3db2ace5.h */,
-                F005700100000000000000D3 /* include/_root.gadden_FuseReac-5462d75c.h */,
-                F005700100000000000000D5 /* include/_root.gadden_FuseTrig-1a6a035e.h */,
-                F005700100000000000000D7 /* include/_root.gadden_Tab_Text_Property.h */,
-                F005700100000000000000D9 /* include/_root.gadden_TabSpons-e4947320.h */,
-                F005700100000000000000DB /* include/_root.gadden_TabText_-321cbc95.h */,
-                F005700100000000000000DD /* include/_root.Hamburger.Template.h */,
-                F005700100000000000000DF /* include/_root.Hamburger.h */,
-                F005700100000000000000E1 /* include/_root.LoginButton.h */,
+                F005700100000000000000C7 /* include/_root.gadden_FuseCont-1833e517.h */,
+                F005700100000000000000C9 /* include/_root.gadden_FuseCont-b48cdba6.h */,
+                F005700100000000000000CB /* include/_root.gadden_FuseDraw-aa645b14.h */,
+                F005700100000000000000CD /* include/_root.gadden_FuseElem-acec0a78.h */,
+                F005700100000000000000CF /* include/_root.gadden_FuseElem-aceb110d.h */,
+                F005700100000000000000D1 /* include/_root.gadden_FuseElem-791edf80.h */,
+                F005700100000000000000D3 /* include/_root.gadden_FuseReac-3db2ace5.h */,
+                F005700100000000000000D5 /* include/_root.gadden_FuseReac-5462d75c.h */,
+                F005700100000000000000D7 /* include/_root.gadden_FuseTrig-1a6a035e.h */,
+                F005700100000000000000D9 /* include/_root.gadden_Tab_Text_Property.h */,
+                F005700100000000000000DB /* include/_root.gadden_TabSpons-e4947320.h */,
+                F005700100000000000000DD /* include/_root.gadden_TabText_-321cbc95.h */,
+                F005700100000000000000DF /* include/_root.Hamburger.Template.h */,
+                F005700100000000000000E1 /* include/_root.Hamburger.h */,
                 F005700100000000000000E3 /* include/_root.MainView.Template.h */,
                 F005700100000000000000E5 /* include/_root.MainView.Template1.h */,
                 F005700100000000000000E7 /* include/_root.MainView.Template2.h */,
@@ -8282,20 +8282,20 @@
                 F00570010000000000001415 /* src/_root.gadden_FuseCont-862d1e68.cpp */,
                 F00570010000000000001417 /* src/_root.gadden_FuseCont-61214812.cpp */,
                 F00570010000000000001419 /* src/_root.gadden_FuseCont-44c720e0.cpp */,
-                F0057001000000000000141B /* src/_root.gadden_FuseCont-b48cdba6.cpp */,
-                F0057001000000000000141D /* src/_root.gadden_FuseDraw-aa645b14.cpp */,
-                F0057001000000000000141F /* src/_root.gadden_FuseElem-acec0a78.cpp */,
-                F00570010000000000001421 /* src/_root.gadden_FuseElem-aceb110d.cpp */,
-                F00570010000000000001423 /* src/_root.gadden_FuseElem-791edf80.cpp */,
-                F00570010000000000001425 /* src/_root.gadden_FuseReac-3db2ace5.cpp */,
-                F00570010000000000001427 /* src/_root.gadden_FuseReac-5462d75c.cpp */,
-                F00570010000000000001429 /* src/_root.gadden_FuseTrig-1a6a035e.cpp */,
-                F0057001000000000000142B /* src/_root.gadden_Tab_Text_Property.cpp */,
-                F0057001000000000000142D /* src/_root.gadden_TabSpons-e4947320.cpp */,
-                F0057001000000000000142F /* src/_root.gadden_TabText_-321cbc95.cpp */,
-                F00570010000000000001431 /* src/_root.Hamburger.Template.cpp */,
-                F00570010000000000001433 /* src/_root.Hamburger.cpp */,
-                F00570010000000000001435 /* src/_root.LoginButton.cpp */,
+                F0057001000000000000141B /* src/_root.gadden_FuseCont-1833e517.cpp */,
+                F0057001000000000000141D /* src/_root.gadden_FuseCont-b48cdba6.cpp */,
+                F0057001000000000000141F /* src/_root.gadden_FuseDraw-aa645b14.cpp */,
+                F00570010000000000001421 /* src/_root.gadden_FuseElem-acec0a78.cpp */,
+                F00570010000000000001423 /* src/_root.gadden_FuseElem-aceb110d.cpp */,
+                F00570010000000000001425 /* src/_root.gadden_FuseElem-791edf80.cpp */,
+                F00570010000000000001427 /* src/_root.gadden_FuseReac-3db2ace5.cpp */,
+                F00570010000000000001429 /* src/_root.gadden_FuseReac-5462d75c.cpp */,
+                F0057001000000000000142B /* src/_root.gadden_FuseTrig-1a6a035e.cpp */,
+                F0057001000000000000142D /* src/_root.gadden_Tab_Text_Property.cpp */,
+                F0057001000000000000142F /* src/_root.gadden_TabSpons-e4947320.cpp */,
+                F00570010000000000001431 /* src/_root.gadden_TabText_-321cbc95.cpp */,
+                F00570010000000000001433 /* src/_root.Hamburger.Template.cpp */,
+                F00570010000000000001435 /* src/_root.Hamburger.cpp */,
                 F00570010000000000001437 /* src/_root.MainView.Template.cpp */,
                 F00570010000000000001439 /* src/_root.MainView.Template1.cpp */,
                 F0057001000000000000143B /* src/_root.MainView.Template2.cpp */,
@@ -8653,20 +8653,20 @@
                 F00570010000000000001414 /* _root.gadden_FuseCont-862d1e68.cpp in Sources */,
                 F00570010000000000001416 /* _root.gadden_FuseCont-61214812.cpp in Sources */,
                 F00570010000000000001418 /* _root.gadden_FuseCont-44c720e0.cpp in Sources */,
-                F0057001000000000000141A /* _root.gadden_FuseCont-b48cdba6.cpp in Sources */,
-                F0057001000000000000141C /* _root.gadden_FuseDraw-aa645b14.cpp in Sources */,
-                F0057001000000000000141E /* _root.gadden_FuseElem-acec0a78.cpp in Sources */,
-                F00570010000000000001420 /* _root.gadden_FuseElem-aceb110d.cpp in Sources */,
-                F00570010000000000001422 /* _root.gadden_FuseElem-791edf80.cpp in Sources */,
-                F00570010000000000001424 /* _root.gadden_FuseReac-3db2ace5.cpp in Sources */,
-                F00570010000000000001426 /* _root.gadden_FuseReac-5462d75c.cpp in Sources */,
-                F00570010000000000001428 /* _root.gadden_FuseTrig-1a6a035e.cpp in Sources */,
-                F0057001000000000000142A /* _root.gadden_Tab_Text_Property.cpp in Sources */,
-                F0057001000000000000142C /* _root.gadden_TabSpons-e4947320.cpp in Sources */,
-                F0057001000000000000142E /* _root.gadden_TabText_-321cbc95.cpp in Sources */,
-                F00570010000000000001430 /* _root.Hamburger.Template.cpp in Sources */,
-                F00570010000000000001432 /* _root.Hamburger.cpp in Sources */,
-                F00570010000000000001434 /* _root.LoginButton.cpp in Sources */,
+                F0057001000000000000141A /* _root.gadden_FuseCont-1833e517.cpp in Sources */,
+                F0057001000000000000141C /* _root.gadden_FuseCont-b48cdba6.cpp in Sources */,
+                F0057001000000000000141E /* _root.gadden_FuseDraw-aa645b14.cpp in Sources */,
+                F00570010000000000001420 /* _root.gadden_FuseElem-acec0a78.cpp in Sources */,
+                F00570010000000000001422 /* _root.gadden_FuseElem-aceb110d.cpp in Sources */,
+                F00570010000000000001424 /* _root.gadden_FuseElem-791edf80.cpp in Sources */,
+                F00570010000000000001426 /* _root.gadden_FuseReac-3db2ace5.cpp in Sources */,
+                F00570010000000000001428 /* _root.gadden_FuseReac-5462d75c.cpp in Sources */,
+                F0057001000000000000142A /* _root.gadden_FuseTrig-1a6a035e.cpp in Sources */,
+                F0057001000000000000142C /* _root.gadden_Tab_Text_Property.cpp in Sources */,
+                F0057001000000000000142E /* _root.gadden_TabSpons-e4947320.cpp in Sources */,
+                F00570010000000000001430 /* _root.gadden_TabText_-321cbc95.cpp in Sources */,
+                F00570010000000000001432 /* _root.Hamburger.Template.cpp in Sources */,
+                F00570010000000000001434 /* _root.Hamburger.cpp in Sources */,
                 F00570010000000000001436 /* _root.MainView.Template.cpp in Sources */,
                 F00570010000000000001438 /* _root.MainView.Template1.cpp in Sources */,
                 F0057001000000000000143A /* _root.MainView.Template2.cpp in Sources */,
@@ -8965,20 +8965,20 @@
                 F005700100000000000000C0 /* _root.gadden_FuseCont-862d1e68.h in Headers */,
                 F005700100000000000000C2 /* _root.gadden_FuseCont-61214812.h in Headers */,
                 F005700100000000000000C4 /* _root.gadden_FuseCont-44c720e0.h in Headers */,
-                F005700100000000000000C6 /* _root.gadden_FuseCont-b48cdba6.h in Headers */,
-                F005700100000000000000C8 /* _root.gadden_FuseDraw-aa645b14.h in Headers */,
-                F005700100000000000000CA /* _root.gadden_FuseElem-acec0a78.h in Headers */,
-                F005700100000000000000CC /* _root.gadden_FuseElem-aceb110d.h in Headers */,
-                F005700100000000000000CE /* _root.gadden_FuseElem-791edf80.h in Headers */,
-                F005700100000000000000D0 /* _root.gadden_FuseReac-3db2ace5.h in Headers */,
-                F005700100000000000000D2 /* _root.gadden_FuseReac-5462d75c.h in Headers */,
-                F005700100000000000000D4 /* _root.gadden_FuseTrig-1a6a035e.h in Headers */,
-                F005700100000000000000D6 /* _root.gadden_Tab_Text_Property.h in Headers */,
-                F005700100000000000000D8 /* _root.gadden_TabSpons-e4947320.h in Headers */,
-                F005700100000000000000DA /* _root.gadden_TabText_-321cbc95.h in Headers */,
-                F005700100000000000000DC /* _root.Hamburger.Template.h in Headers */,
-                F005700100000000000000DE /* _root.Hamburger.h in Headers */,
-                F005700100000000000000E0 /* _root.LoginButton.h in Headers */,
+                F005700100000000000000C6 /* _root.gadden_FuseCont-1833e517.h in Headers */,
+                F005700100000000000000C8 /* _root.gadden_FuseCont-b48cdba6.h in Headers */,
+                F005700100000000000000CA /* _root.gadden_FuseDraw-aa645b14.h in Headers */,
+                F005700100000000000000CC /* _root.gadden_FuseElem-acec0a78.h in Headers */,
+                F005700100000000000000CE /* _root.gadden_FuseElem-aceb110d.h in Headers */,
+                F005700100000000000000D0 /* _root.gadden_FuseElem-791edf80.h in Headers */,
+                F005700100000000000000D2 /* _root.gadden_FuseReac-3db2ace5.h in Headers */,
+                F005700100000000000000D4 /* _root.gadden_FuseReac-5462d75c.h in Headers */,
+                F005700100000000000000D6 /* _root.gadden_FuseTrig-1a6a035e.h in Headers */,
+                F005700100000000000000D8 /* _root.gadden_Tab_Text_Property.h in Headers */,
+                F005700100000000000000DA /* _root.gadden_TabSpons-e4947320.h in Headers */,
+                F005700100000000000000DC /* _root.gadden_TabText_-321cbc95.h in Headers */,
+                F005700100000000000000DE /* _root.Hamburger.Template.h in Headers */,
+                F005700100000000000000E0 /* _root.Hamburger.h in Headers */,
                 F005700100000000000000E2 /* _root.MainView.Template.h in Headers */,
                 F005700100000000000000E4 /* _root.MainView.Template1.h in Headers */,
                 F005700100000000000000E6 /* _root.MainView.Template2.h in Headers */,

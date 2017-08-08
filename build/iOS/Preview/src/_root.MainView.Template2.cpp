@@ -64,12 +64,12 @@ static uType* TYPES[9];
 
 namespace g{
 
-// public partial sealed class MainView.Template2 :169
+// public partial sealed class MainView.Template2 :195
 // {
-// static Template2() :193
+// static Template2() :219
 static void MainView__Template2__cctor__fn(uType* __type)
 {
-    MainView__Template2::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[0/*"temp_eb9"*/], ::STRINGS[1/*"starImage"*/], ::STRINGS[2/*"yellowStar"*/], ::STRINGS[3/*"showDetails"*/]);
+    MainView__Template2::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[0/*"temp_eb10"*/], ::STRINGS[1/*"starImage"*/], ::STRINGS[2/*"yellowStar"*/], ::STRINGS[3/*"showDetails"*/]);
     MainView__Template2::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[4/*"Value"*/]);
     MainView__Template2::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[5/*"Color"*/]);
     MainView__Template2::__selector2_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[6/*"Opacity"*/]);
@@ -80,7 +80,7 @@ static void MainView__Template2__cctor__fn(uType* __type)
 
 static void MainView__Template2_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("temp_eb9");
+    ::STRINGS[0] = uString::Const("temp_eb10");
     ::STRINGS[1] = uString::Const("starImage");
     ::STRINGS[2] = uString::Const("yellowStar");
     ::STRINGS[3] = uString::Const("showDetails");
@@ -134,13 +134,13 @@ static void MainView__Template2_build(uType* type)
     return type;
 }
 
-// public Template2(MainView parent, MainView parentInstance) :173
+// public Template2(MainView parent, MainView parentInstance) :199
 void MainView__Template2__ctor_1_fn(MainView__Template2* __this, ::g::MainView* parent, ::g::MainView* parentInstance)
 {
     __this->ctor_1(parent, parentInstance);
 }
 
-// public override sealed object New() :196
+// public override sealed object New() :222
 void MainView__Template2__New1_fn(MainView__Template2* __this, uObject** __retval)
 {
     uStackFrame __("MainView.Template2", "New()");
@@ -159,7 +159,7 @@ void MainView__Template2__New1_fn(MainView__Template2* __this, uObject** __retva
     ::g::Fuse::Gestures::Clicked* temp5 = ::g::Fuse::Gestures::Clicked::New2();
     ::g::Fuse::Triggers::Actions::Toggle* temp6 = ::g::Fuse::Triggers::Actions::Toggle::New2();
     ::g::Fuse::Triggers::Actions::Callback* temp7 = ::g::Fuse::Triggers::Actions::Callback::New2();
-    ::g::Fuse::Reactive::EventBinding* temp_eb91 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp1, __this->__g_nametable1);
+    ::g::Fuse::Reactive::EventBinding* temp_eb101 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp1, __this->__g_nametable1);
     ::g::Fuse::Reactive::DataBinding* temp8 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp_Value_inst, (uObject*)temp3, __this->__g_nametable1, 3);
     ::g::Fuse::Gestures::Clicked* temp9 = ::g::Fuse::Gestures::Clicked::New2();
     ::g::Fuse::Triggers::Actions::Toggle* temp10 = ::g::Fuse::Triggers::Actions::Toggle::New2();
@@ -183,9 +183,9 @@ void MainView__Template2__New1_fn(MainView__Template2* __this, uObject** __retva
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp8);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp5->Actions()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp6);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp5->Actions()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp7);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp5->Bindings()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb91);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp5->Bindings()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb101);
     temp6->Target((uObject*)showDetails1);
-    temp7->add_Handler(uDelegate::New(::TYPES[6/*Fuse.VisualEventHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, temp_eb91));
+    temp7->add_Handler(uDelegate::New(::TYPES[6/*Fuse.VisualEventHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, temp_eb101));
     starImage1->Color(::g::Fuse::Drawing::Colors::White());
     starImage1->StretchMode(6);
     starImage1->Height(::g::Uno::UX::Size__New1(15.0f, 1));
@@ -211,7 +211,7 @@ void MainView__Template2__New1_fn(MainView__Template2* __this, uObject** __retva
     temp14->Margin(::g::Uno::Float4__New2(0.0f, 3.0f, 0.0f, 3.0f));
     temp14->SnapToPixels(true);
     temp14->Fill(temp15);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->__g_nametable1)->Objects()), ::TYPES[8/*Uno.Collections.ICollection<object>*/]), temp_eb91);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->__g_nametable1)->Objects()), ::TYPES[8/*Uno.Collections.ICollection<object>*/]), temp_eb101);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->__g_nametable1)->Objects()), ::TYPES[8/*Uno.Collections.ICollection<object>*/]), starImage1);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->__g_nametable1)->Objects()), ::TYPES[8/*Uno.Collections.ICollection<object>*/]), yellowStar1);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->__g_nametable1)->Objects()), ::TYPES[8/*Uno.Collections.ICollection<object>*/]), showDetails1);
@@ -220,7 +220,7 @@ void MainView__Template2__New1_fn(MainView__Template2* __this, uObject** __retva
     return *__retval = __self1, void();
 }
 
-// public Template2 New(MainView parent, MainView parentInstance) :173
+// public Template2 New(MainView parent, MainView parentInstance) :199
 void MainView__Template2__New2_fn(::g::MainView* parent, ::g::MainView* parentInstance, MainView__Template2** __retval)
 {
     *__retval = MainView__Template2::New2(parent, parentInstance);
@@ -234,7 +234,7 @@ uSStrong<uArray*> MainView__Template2::__g_static_nametable1_;
 ::g::Uno::UX::Selector MainView__Template2::__selector4_;
 ::g::Uno::UX::Selector MainView__Template2::__selector5_;
 
-// public Template2(MainView parent, MainView parentInstance) [instance] :173
+// public Template2(MainView parent, MainView parentInstance) [instance] :199
 void MainView__Template2::ctor_1(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     ctor_(NULL, false);
@@ -242,7 +242,7 @@ void MainView__Template2::ctor_1(::g::MainView* parent, ::g::MainView* parentIns
     __parentInstance1 = parentInstance;
 }
 
-// public Template2 New(MainView parent, MainView parentInstance) [static] :173
+// public Template2 New(MainView parent, MainView parentInstance) [static] :199
 MainView__Template2* MainView__Template2::New2(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     MainView__Template2* obj1 = (MainView__Template2*)uNew(MainView__Template2_typeof());

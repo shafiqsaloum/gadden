@@ -11,7 +11,7 @@ namespace g{struct gadden_FuseDrawingImageFill_Url_Property;}
 
 namespace g{
 
-// internal sealed class gadden_FuseDrawingImageFill_Url_Property :148
+// internal sealed class gadden_FuseDrawingImageFill_Url_Property :156
 // {
 ::g::Uno::UX::Property1_type* gadden_FuseDrawingImageFill_Url_Property_typeof();
 void gadden_FuseDrawingImageFill_Url_Property__ctor_3_fn(gadden_FuseDrawingImageFill_Url_Property* __this, ::g::Fuse::Drawing::ImageFill* obj, ::g::Uno::UX::Selector* name);

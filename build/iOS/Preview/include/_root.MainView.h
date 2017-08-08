@@ -275,6 +275,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb5;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb6;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb7;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb8;
     uStrong< ::g::Uno::UX::Property1*> temp_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp1_Url_inst;
     uStrong< ::g::Uno::UX::Property1*> temp10_Value_inst;

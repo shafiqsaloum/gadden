@@ -75,6 +75,7 @@ namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Pr
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsNavigationControl_Active_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsShadow_Color_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsTextControl_Value_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsTextInputControl_MaxLength_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseControlsTextInputControl_Value_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseDrawingImageFill_Url_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_ElementLayoutMaster_Property_typeof();}
@@ -88,7 +89,6 @@ namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Pr
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_TabText_Text_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* Hamburger__Template_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* Hamburger_typeof();}
-namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* LoginButton_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template1_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template2_typeof();}
@@ -2053,6 +2053,7 @@ void uInitRtti()
         (uType*(*)())&::g::gadden_FuseControlsNavigationControl_Active_Property_typeof,
         (uType*(*)())&::g::gadden_FuseControlsShadow_Color_Property_typeof,
         (uType*(*)())&::g::gadden_FuseControlsTextControl_Value_Property_typeof,
+        (uType*(*)())&::g::gadden_FuseControlsTextInputControl_MaxLength_Property_typeof,
         (uType*(*)())&::g::gadden_FuseControlsTextInputControl_Value_Property_typeof,
         (uType*(*)())&::g::gadden_FuseDrawingImageFill_Url_Property_typeof,
         (uType*(*)())&::g::gadden_FuseElementsElement_ElementLayoutMaster_Property_typeof,
@@ -2066,7 +2067,6 @@ void uInitRtti()
         (uType*(*)())&::g::gadden_TabText_Text_Property_typeof,
         (uType*(*)())&::g::Hamburger__Template_typeof,
         (uType*(*)())&::g::Hamburger_typeof,
-        (uType*(*)())&::g::LoginButton_typeof,
         (uType*(*)())&::g::MainView__Template_typeof,
         (uType*(*)())&::g::MainView__Template1_typeof,
         (uType*(*)())&::g::MainView__Template2_typeof,

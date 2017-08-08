@@ -11,7 +11,7 @@ namespace g{struct TabSponsor;}
 
 namespace g{
 
-// internal sealed class gadden_TabSponsor_Text_Property :165
+// internal sealed class gadden_TabSponsor_Text_Property :173
 // {
 ::g::Uno::UX::Property1_type* gadden_TabSponsor_Text_Property_typeof();
 void gadden_TabSponsor_Text_Property__ctor_3_fn(gadden_TabSponsor_Text_Property* __this, ::g::TabSponsor* obj, ::g::Uno::UX::Selector* name);

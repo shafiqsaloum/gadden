@@ -113,6 +113,14 @@ sealed class gadden_FuseControlsTextInputControl_Value_Property: Uno.UX.Property
     public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.TextInputControl)obj).SetValue(v, origin); }
     public override bool SupportsOriginSetter { get { return true; } }
 }
+sealed class gadden_FuseControlsTextInputControl_MaxLength_Property: Uno.UX.Property<int>
+{
+    [Uno.WeakReference] readonly Fuse.Controls.TextInputControl _obj;
+    public gadden_FuseControlsTextInputControl_MaxLength_Property(Fuse.Controls.TextInputControl obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override int Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.TextInputControl)obj).MaxLength; }
+    public override void Set(global::Uno.UX.PropertyObject obj, int v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.TextInputControl)obj).MaxLength = v; }
+}
 sealed class gadden_FuseTriggersActionsLaunchUri_Uri_Property: Uno.UX.Property<string>
 {
     [Uno.WeakReference] readonly Fuse.Triggers.Actions.LaunchUri _obj;

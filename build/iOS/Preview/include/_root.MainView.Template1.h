@@ -31,12 +31,19 @@ struct MainView__Template1 : ::g::Uno::UX::Template
     static ::g::Uno::UX::Selector& __selector1() { return MainView__Template1_typeof()->Init(), __selector1_; }
     static ::g::Uno::UX::Selector __selector2_;
     static ::g::Uno::UX::Selector& __selector2() { return MainView__Template1_typeof()->Init(), __selector2_; }
+    static ::g::Uno::UX::Selector __selector3_;
+    static ::g::Uno::UX::Selector& __selector3() { return MainView__Template1_typeof()->Init(), __selector3_; }
+    static ::g::Uno::UX::Selector __selector4_;
+    static ::g::Uno::UX::Selector& __selector4() { return MainView__Template1_typeof()->Init(), __selector4_; }
+    static ::g::Uno::UX::Selector __selector5_;
+    static ::g::Uno::UX::Selector& __selector5() { return MainView__Template1_typeof()->Init(), __selector5_; }
+    uStrong< ::g::Uno::UX::Property1*> ReadMoreText_MaxLength_inst;
+    uStrong< ::g::Uno::UX::Property1*> ReadMoreText_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp_Url_inst;
     uStrong< ::g::Uno::UX::Property1*> temp1_Url_inst;
     uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp4_Uri_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp5_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp3_Uri_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp4_Value_inst;
 
     void ctor_1(::g::MainView* parent, ::g::MainView* parentInstance);
     static MainView__Template1* New2(::g::MainView* parent, ::g::MainView* parentInstance);

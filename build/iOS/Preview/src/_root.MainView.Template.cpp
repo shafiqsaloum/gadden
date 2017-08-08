@@ -52,14 +52,14 @@ namespace g{
 // static Template() :21
 static void MainView__Template__cctor__fn(uType* __type)
 {
-    MainView__Template::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 1, ::STRINGS[0/*"temp_eb8"*/]);
+    MainView__Template::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 1, ::STRINGS[0/*"temp_eb9"*/]);
     MainView__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[1/*"Value"*/]);
     MainView__Template::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Url"*/]);
 }
 
 static void MainView__Template_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("temp_eb8");
+    ::STRINGS[0] = uString::Const("temp_eb9");
     ::STRINGS[1] = uString::Const("Value");
     ::STRINGS[2] = uString::Const("Url");
     ::STRINGS[3] = uString::Const("articleClicked");
@@ -122,7 +122,7 @@ void MainView__Template__New1_fn(MainView__Template* __this, uObject** __retval)
     ::g::Fuse::Gestures::Clicked* temp4 = ::g::Fuse::Gestures::Clicked::New2();
     ::g::Fuse::Triggers::Actions::Toggle* temp5 = ::g::Fuse::Triggers::Actions::Toggle::New2();
     ::g::Fuse::Triggers::Actions::Callback* temp6 = ::g::Fuse::Triggers::Actions::Callback::New2();
-    ::g::Fuse::Reactive::EventBinding* temp_eb81 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp1, __this->__g_nametable1);
+    ::g::Fuse::Reactive::EventBinding* temp_eb91 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp1, __this->__g_nametable1);
     ::g::Fuse::Controls::Panel* temp7 = ::g::Fuse::Controls::Panel::New3();
     ::g::Fuse::Reactive::DataBinding* temp8 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp_Value_inst, (uObject*)temp2, __this->__g_nametable1, 3);
     ::g::Fuse::Reactive::DataBinding* temp9 = ::g::Fuse::Reactive::DataBinding::New1(__this->__self_Url_inst1, (uObject*)temp3, __this->__g_nametable1, 3);
@@ -131,9 +131,9 @@ void MainView__Template__New1_fn(MainView__Template* __this, uObject** __retval)
     __self1->ZOffset(0.0f);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp4->Actions()), ::TYPES[1/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp5);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp4->Actions()), ::TYPES[1/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp6);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp4->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb81);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp4->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb91);
     temp5->Target((uObject*)uPtr(__this->__parent1)->opacityNews);
-    temp6->add_Handler(uDelegate::New(::TYPES[3/*Fuse.VisualEventHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, temp_eb81));
+    temp6->add_Handler(uDelegate::New(::TYPES[3/*Fuse.VisualEventHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, temp_eb91));
     temp7->Alignment(13);
     temp7->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 20.0f, 20.0f));
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp7->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
@@ -143,7 +143,7 @@ void MainView__Template__New1_fn(MainView__Template* __this, uObject** __retval)
     temp->TextColor(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
     temp->Font(::g::MainView::TitleFont());
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp8);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->__g_nametable1)->Objects()), ::TYPES[5/*Uno.Collections.ICollection<object>*/]), temp_eb81);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->__g_nametable1)->Objects()), ::TYPES[5/*Uno.Collections.ICollection<object>*/]), temp_eb91);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp4);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp7);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp9);
