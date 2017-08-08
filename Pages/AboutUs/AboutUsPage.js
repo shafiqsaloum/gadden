@@ -14,7 +14,7 @@ function ContactInformation(item) {
   this.title = item.title;
 }
 
-fetch("https://dev.jexpo.se/dev/forms/aboutus?getAttributes=1")
+fetch("https://dev.jexpo.se/dev/forms/ws:aboutus?getAttributes=1")
 .then(function(response) { return response.json(); })
 .then(function(responseObject) {
     var items = [];
@@ -27,7 +27,7 @@ fetch("https://dev.jexpo.se/dev/forms/aboutus?getAttributes=1")
     console.log("Error: " + e.message);
 });
 
-fetch("https://dev.jexpo.se/dev/forms/contacts?getAttributes=1")
+fetch("https://dev.jexpo.se/dev/forms/ws:contacts?getAttributes=1")
 .then(function(response) { return response.json(); })
 .then(function(responseObject) {
     var items = [];
