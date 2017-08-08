@@ -2,6 +2,7 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
+#include <Uno.UX.Size.h>
 #include <Uno.UX.Template.h>
 namespace g{namespace Uno{namespace UX{struct NameTable;}}}
 namespace g{namespace Uno{namespace UX{struct Property1;}}}
@@ -37,7 +38,7 @@ struct MainView__Template1 : ::g::Uno::UX::Template
     static ::g::Uno::UX::Selector& __selector4() { return MainView__Template1_typeof()->Init(), __selector4_; }
     static ::g::Uno::UX::Selector __selector5_;
     static ::g::Uno::UX::Selector& __selector5() { return MainView__Template1_typeof()->Init(), __selector5_; }
-    uStrong< ::g::Uno::UX::Property1*> ReadMoreText_MaxLength_inst;
+    uStrong< ::g::Uno::UX::Property1*> ReadMoreText_Height_inst;
     uStrong< ::g::Uno::UX::Property1*> ReadMoreText_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp_Url_inst;
     uStrong< ::g::Uno::UX::Property1*> temp1_Url_inst;

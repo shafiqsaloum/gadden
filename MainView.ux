@@ -163,7 +163,17 @@
 				<StackPanel Width="40%" Orientation="Horizontal" ItemSpacing="10" Alignment="Center">
 				<Text ux:Name="FilterButton" Opacity="0" Alignment="Center" Color="White" Font="RalewayBlack" FontSize="15" Value="FILTRERA" />
 				<Image ux:Name="FilterArrow" Opacity="0" Alignment="Right" File="assets/ArrowDownWhite.png" Width="15" />
+				<Clicked>
+					<Toggle Target="ShowFilter" />
+				</Clicked>
 				</StackPanel>
+
+				<WhileTrue ux:Name="ShowFilter">
+						<Change ExhibitorBackground.Opacity="0" Duration="0.3" />
+						<Change FilterBackground.Opacity="1" Duration="0.3" />
+						<Change FilterPanel.Opacity="1" Duration="0.3" />
+						<Change ExibitorList.Opacity="0" Duration="0.3" />
+				</WhileTrue>
 			</Panel>
 		</StackPanel>
 

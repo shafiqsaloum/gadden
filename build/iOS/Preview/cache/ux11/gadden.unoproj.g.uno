@@ -113,13 +113,13 @@ sealed class gadden_FuseControlsTextInputControl_Value_Property: Uno.UX.Property
     public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.TextInputControl)obj).SetValue(v, origin); }
     public override bool SupportsOriginSetter { get { return true; } }
 }
-sealed class gadden_FuseControlsTextInputControl_MaxLength_Property: Uno.UX.Property<int>
+sealed class gadden_FuseElementsElement_Height_Property: Uno.UX.Property<Uno.UX.Size>
 {
-    [Uno.WeakReference] readonly Fuse.Controls.TextInputControl _obj;
-    public gadden_FuseControlsTextInputControl_MaxLength_Property(Fuse.Controls.TextInputControl obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    [Uno.WeakReference] readonly Fuse.Elements.Element _obj;
+    public gadden_FuseElementsElement_Height_Property(Fuse.Elements.Element obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
     public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
-    public override int Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.TextInputControl)obj).MaxLength; }
-    public override void Set(global::Uno.UX.PropertyObject obj, int v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.TextInputControl)obj).MaxLength = v; }
+    public override Uno.UX.Size Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Elements.Element)obj).Height; }
+    public override void Set(global::Uno.UX.PropertyObject obj, Uno.UX.Size v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Elements.Element)obj).Height = v; }
 }
 sealed class gadden_FuseTriggersActionsLaunchUri_Uri_Property: Uno.UX.Property<string>
 {
@@ -128,6 +128,15 @@ sealed class gadden_FuseTriggersActionsLaunchUri_Uri_Property: Uno.UX.Property<s
     public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
     public override string Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Triggers.Actions.LaunchUri)obj).Uri; }
     public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Triggers.Actions.LaunchUri)obj).Uri = v; }
+}
+sealed class gadden_FuseControlsShape_Color_Property: Uno.UX.Property<float4>
+{
+    [Uno.WeakReference] readonly Fuse.Controls.Shape _obj;
+    public gadden_FuseControlsShape_Color_Property(Fuse.Controls.Shape obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override float4 Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.Shape)obj).Color; }
+    public override void Set(global::Uno.UX.PropertyObject obj, float4 v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.Shape)obj).SetColor(v, origin); }
+    public override bool SupportsOriginSetter { get { return true; } }
 }
 sealed class gadden_FuseControlsImage_Color_Property: Uno.UX.Property<float4>
 {

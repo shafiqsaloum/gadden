@@ -6,6 +6,7 @@
 #include <Fuse.IProperties.h>
 #include <Uno.Float4.h>
 #include <Uno.UX.Size.h>
+namespace g{namespace Fuse{namespace Controls{struct Circle;}}}
 namespace g{namespace Fuse{namespace Controls{struct EdgeNavigator;}}}
 namespace g{namespace Fuse{namespace Controls{struct Image;}}}
 namespace g{namespace Fuse{namespace Controls{struct Page;}}}
@@ -13,6 +14,7 @@ namespace g{namespace Fuse{namespace Controls{struct PageControl;}}}
 namespace g{namespace Fuse{namespace Controls{struct Panel;}}}
 namespace g{namespace Fuse{namespace Controls{struct Rectangle;}}}
 namespace g{namespace Fuse{namespace Controls{struct Shadow;}}}
+namespace g{namespace Fuse{namespace Controls{struct Text;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
 namespace g{namespace Fuse{namespace Reactive{struct EventBinding;}}}
@@ -44,6 +46,10 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector1() { return MainView_typeof()->Init(), __selector1_; }
     static ::g::Uno::UX::Selector __selector10_;
     static ::g::Uno::UX::Selector& __selector10() { return MainView_typeof()->Init(), __selector10_; }
+    static ::g::Uno::UX::Selector __selector100_;
+    static ::g::Uno::UX::Selector& __selector100() { return MainView_typeof()->Init(), __selector100_; }
+    static ::g::Uno::UX::Selector __selector101_;
+    static ::g::Uno::UX::Selector& __selector101() { return MainView_typeof()->Init(), __selector101_; }
     static ::g::Uno::UX::Selector __selector11_;
     static ::g::Uno::UX::Selector& __selector11() { return MainView_typeof()->Init(), __selector11_; }
     static ::g::Uno::UX::Selector __selector12_;
@@ -174,15 +180,114 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector69() { return MainView_typeof()->Init(), __selector69_; }
     static ::g::Uno::UX::Selector __selector7_;
     static ::g::Uno::UX::Selector& __selector7() { return MainView_typeof()->Init(), __selector7_; }
+    static ::g::Uno::UX::Selector __selector70_;
+    static ::g::Uno::UX::Selector& __selector70() { return MainView_typeof()->Init(), __selector70_; }
+    static ::g::Uno::UX::Selector __selector71_;
+    static ::g::Uno::UX::Selector& __selector71() { return MainView_typeof()->Init(), __selector71_; }
+    static ::g::Uno::UX::Selector __selector72_;
+    static ::g::Uno::UX::Selector& __selector72() { return MainView_typeof()->Init(), __selector72_; }
+    static ::g::Uno::UX::Selector __selector73_;
+    static ::g::Uno::UX::Selector& __selector73() { return MainView_typeof()->Init(), __selector73_; }
+    static ::g::Uno::UX::Selector __selector74_;
+    static ::g::Uno::UX::Selector& __selector74() { return MainView_typeof()->Init(), __selector74_; }
+    static ::g::Uno::UX::Selector __selector75_;
+    static ::g::Uno::UX::Selector& __selector75() { return MainView_typeof()->Init(), __selector75_; }
+    static ::g::Uno::UX::Selector __selector76_;
+    static ::g::Uno::UX::Selector& __selector76() { return MainView_typeof()->Init(), __selector76_; }
+    static ::g::Uno::UX::Selector __selector77_;
+    static ::g::Uno::UX::Selector& __selector77() { return MainView_typeof()->Init(), __selector77_; }
+    static ::g::Uno::UX::Selector __selector78_;
+    static ::g::Uno::UX::Selector& __selector78() { return MainView_typeof()->Init(), __selector78_; }
+    static ::g::Uno::UX::Selector __selector79_;
+    static ::g::Uno::UX::Selector& __selector79() { return MainView_typeof()->Init(), __selector79_; }
     static ::g::Uno::UX::Selector __selector8_;
     static ::g::Uno::UX::Selector& __selector8() { return MainView_typeof()->Init(), __selector8_; }
+    static ::g::Uno::UX::Selector __selector80_;
+    static ::g::Uno::UX::Selector& __selector80() { return MainView_typeof()->Init(), __selector80_; }
+    static ::g::Uno::UX::Selector __selector81_;
+    static ::g::Uno::UX::Selector& __selector81() { return MainView_typeof()->Init(), __selector81_; }
+    static ::g::Uno::UX::Selector __selector82_;
+    static ::g::Uno::UX::Selector& __selector82() { return MainView_typeof()->Init(), __selector82_; }
+    static ::g::Uno::UX::Selector __selector83_;
+    static ::g::Uno::UX::Selector& __selector83() { return MainView_typeof()->Init(), __selector83_; }
+    static ::g::Uno::UX::Selector __selector84_;
+    static ::g::Uno::UX::Selector& __selector84() { return MainView_typeof()->Init(), __selector84_; }
+    static ::g::Uno::UX::Selector __selector85_;
+    static ::g::Uno::UX::Selector& __selector85() { return MainView_typeof()->Init(), __selector85_; }
+    static ::g::Uno::UX::Selector __selector86_;
+    static ::g::Uno::UX::Selector& __selector86() { return MainView_typeof()->Init(), __selector86_; }
+    static ::g::Uno::UX::Selector __selector87_;
+    static ::g::Uno::UX::Selector& __selector87() { return MainView_typeof()->Init(), __selector87_; }
+    static ::g::Uno::UX::Selector __selector88_;
+    static ::g::Uno::UX::Selector& __selector88() { return MainView_typeof()->Init(), __selector88_; }
+    static ::g::Uno::UX::Selector __selector89_;
+    static ::g::Uno::UX::Selector& __selector89() { return MainView_typeof()->Init(), __selector89_; }
     static ::g::Uno::UX::Selector __selector9_;
     static ::g::Uno::UX::Selector& __selector9() { return MainView_typeof()->Init(), __selector9_; }
+    static ::g::Uno::UX::Selector __selector90_;
+    static ::g::Uno::UX::Selector& __selector90() { return MainView_typeof()->Init(), __selector90_; }
+    static ::g::Uno::UX::Selector __selector91_;
+    static ::g::Uno::UX::Selector& __selector91() { return MainView_typeof()->Init(), __selector91_; }
+    static ::g::Uno::UX::Selector __selector92_;
+    static ::g::Uno::UX::Selector& __selector92() { return MainView_typeof()->Init(), __selector92_; }
+    static ::g::Uno::UX::Selector __selector93_;
+    static ::g::Uno::UX::Selector& __selector93() { return MainView_typeof()->Init(), __selector93_; }
+    static ::g::Uno::UX::Selector __selector94_;
+    static ::g::Uno::UX::Selector& __selector94() { return MainView_typeof()->Init(), __selector94_; }
+    static ::g::Uno::UX::Selector __selector95_;
+    static ::g::Uno::UX::Selector& __selector95() { return MainView_typeof()->Init(), __selector95_; }
+    static ::g::Uno::UX::Selector __selector96_;
+    static ::g::Uno::UX::Selector& __selector96() { return MainView_typeof()->Init(), __selector96_; }
+    static ::g::Uno::UX::Selector __selector97_;
+    static ::g::Uno::UX::Selector& __selector97() { return MainView_typeof()->Init(), __selector97_; }
+    static ::g::Uno::UX::Selector __selector98_;
+    static ::g::Uno::UX::Selector& __selector98() { return MainView_typeof()->Init(), __selector98_; }
+    static ::g::Uno::UX::Selector __selector99_;
+    static ::g::Uno::UX::Selector& __selector99() { return MainView_typeof()->Init(), __selector99_; }
     uStrong< ::g::Fuse::Controls::Page*> about;
     uStrong< ::g::Fuse::Controls::Page*> aboutus;
     uStrong< ::g::Fuse::Controls::Panel*> AboutUsTab;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveEkonom;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveExtrajobb;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveHeltid;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveInternship;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveJurist;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveKandidat;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveLogostiker;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveMaster;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveMiljovetare;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveOnsdag;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveSommarjobb;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveTorsdag;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveUppsats;
     uStrong< ::g::Fuse::Controls::Image*> BackgroundImage;
     uStrong< ::g::Uno::UX::Property1*> BackgroundImage_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Circle*> CircleEkonom;
+    uStrong< ::g::Uno::UX::Property1*> CircleEkonom_Color_inst;
+    uStrong< ::g::Fuse::Controls::Circle*> CircleExtrajobb;
+    uStrong< ::g::Uno::UX::Property1*> CircleExtrajobb_Color_inst;
+    uStrong< ::g::Fuse::Controls::Circle*> CircleHeltid;
+    uStrong< ::g::Uno::UX::Property1*> CircleHeltid_Color_inst;
+    uStrong< ::g::Fuse::Controls::Circle*> CircleInternship;
+    uStrong< ::g::Uno::UX::Property1*> CircleInternship_Color_inst;
+    uStrong< ::g::Fuse::Controls::Circle*> CircleJurist;
+    uStrong< ::g::Uno::UX::Property1*> CircleJurist_Color_inst;
+    uStrong< ::g::Fuse::Controls::Circle*> CircleKandidat;
+    uStrong< ::g::Uno::UX::Property1*> CircleKandidat_Color_inst;
+    uStrong< ::g::Fuse::Controls::Circle*> CircleLogostiker;
+    uStrong< ::g::Uno::UX::Property1*> CircleLogostiker_Color_inst;
+    uStrong< ::g::Fuse::Controls::Circle*> CircleMaster;
+    uStrong< ::g::Uno::UX::Property1*> CircleMaster_Color_inst;
+    uStrong< ::g::Fuse::Controls::Circle*> CircleMiljovetare;
+    uStrong< ::g::Uno::UX::Property1*> CircleMiljovetare_Color_inst;
+    uStrong< ::g::Fuse::Controls::Circle*> CircleOnsdag;
+    uStrong< ::g::Uno::UX::Property1*> CircleOnsdag_Color_inst;
+    uStrong< ::g::Fuse::Controls::Circle*> CircleSommarjobb;
+    uStrong< ::g::Uno::UX::Property1*> CircleSommarjobb_Color_inst;
+    uStrong< ::g::Fuse::Controls::Circle*> CircleTorsdag;
+    uStrong< ::g::Uno::UX::Property1*> CircleTorsdag_Color_inst;
+    uStrong< ::g::Fuse::Controls::Circle*> CircleUppsats;
+    uStrong< ::g::Uno::UX::Property1*> CircleUppsats_Color_inst;
     uStrong< ::g::Fuse::Controls::Image*> crossIcon;
     uStrong< ::g::Uno::UX::Property1*> crossIcon_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Image*> crossIconMap;
@@ -190,8 +295,17 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Image*> crossIconMap2;
     uStrong< ::g::Uno::UX::Property1*> crossIconMap2_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> exhibitor;
+    uStrong< ::g::Fuse::Controls::Image*> ExhibitorBackground;
     uStrong< ::g::Fuse::Controls::Panel*> ExhibitorDetails;
     uStrong< ::g::Fuse::Controls::Panel*> ExibitorList;
+    uStrong< ::g::Fuse::Controls::Image*> FilterArrow;
+    uStrong< ::g::Uno::UX::Property1*> FilterArrow_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Image*> FilterBackground;
+    uStrong< ::g::Fuse::Controls::Text*> FilterButton;
+    uStrong< ::g::Uno::UX::Property1*> FilterButton_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Panel*> FilterPanel;
+    uStrong< ::g::Fuse::Controls::Image*> GaddenLogo;
+    uStrong< ::g::Uno::UX::Property1*> GaddenLogo_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> goodiebag;
     uStrong< ::g::Fuse::Controls::Panel*> GoodiebagTab;
     uStrong< ::g::Fuse::Controls::Page*> icebreaker;

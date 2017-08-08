@@ -1,7 +1,6 @@
 <!--
 TODO:
   * Function for the search input
-  * Add filter button to top
   * Add filter functions and create the vue
   * Fetch the image to exhibitor details page when it's included in the API
   * Save exhibitors locally for the user (is not in need of inlogged user)
@@ -15,6 +14,209 @@ TODO:
     <Change FilterButton.Opacity="1"  />
     <Change FilterArrow.Opacity="1"  />
   </WhileActive>
+
+  <Panel ux:Name="FilterPanel" Opacity="0" >
+    <ScrollView>
+      <StackPanel Margin="30">
+        <!-- Type of education -->
+        <Text Color="White" Font="RalewayBlack" FontSize="16" Value="TYP AV UTBILDNING" />
+        <Grid Row="2" ColumnCount="3">
+          <Panel Margin="10">
+            <StackPanel ItemSpacing="10" Alignment="Center">
+              <SmallText FontSize="10" Value="EKONOM" />
+              <Circle ux:Name="CircleEkonom" Color="#fff" Width="40" Height="40">
+                <Stroke Width="1" Color="Black" />
+                <Clicked>
+                  <Toggle Target="ActiveEkonom" />
+                </Clicked>
+              </Circle>
+            </StackPanel>
+          </Panel>
+          <Panel Margin="10">
+            <StackPanel ItemSpacing="10" Alignment="Center">
+              <SmallText FontSize="10" Value="MILJÖVETARE" />
+              <Circle ux:Name="CircleMiljovetare" Color="White" Width="40" Height="40">
+                <Stroke Width="1" Color="Black" />
+                <Clicked>
+                  <Toggle Target="ActiveMiljovetare" />
+                </Clicked>
+              </Circle>
+            </StackPanel>
+          </Panel>
+          <Panel Margin="10">
+            <StackPanel ItemSpacing="10" Alignment="Center">
+              <SmallText FontSize="10" Value="JURIST" />
+              <Circle ux:Name="CircleJurist" Color="White" Width="40" Height="40">
+                <Stroke Width="1" Color="Black" />
+                <Clicked>
+                  <Toggle Target="ActiveJurist" />
+                </Clicked>
+              </Circle>
+            </StackPanel>
+          </Panel>
+          <Panel Margin="10">
+            <StackPanel ItemSpacing="10" Alignment="Center">
+              <SmallText FontSize="10" Value="LOGISTIKER" />
+              <Circle ux:Name="CircleLogostiker" Color="White" Width="40" Height="40">
+                <Stroke Width="1" Color="Black" />
+                <Clicked>
+                  <Toggle Target="ActiveLogostiker" />
+                </Clicked>
+              </Circle>
+            </StackPanel>
+          </Panel>
+        </Grid>
+
+        <!-- Sets animation when active -->
+        <WhileTrue ux:Name="ActiveJurist"><Change CircleJurist.Color="#000" Duration="0.3" /></WhileTrue>
+        <WhileTrue ux:Name="ActiveEkonom"><Change CircleEkonom.Color="#000" Duration="0.3" /></WhileTrue>
+        <WhileTrue ux:Name="ActiveMiljovetare"><Change CircleMiljovetare.Color="#000" Duration="0.3" /></WhileTrue>
+        <WhileTrue ux:Name="ActiveLogostiker"><Change CircleLogostiker.Color="#000" Duration="0.3" /></WhileTrue>
+
+        <Rectangle Margin="0,20,0,20" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+
+        <!-- Type of job -->
+        <Text Color="White" Font="RalewayBlack" FontSize="16" Value="TYP AV JOBB" />
+        <Grid Row="2" ColumnCount="3">
+          <Panel Margin="10">
+            <StackPanel ItemSpacing="10" Alignment="Center">
+              <SmallText FontSize="10" Value="SOMMARJOBB" />
+              <Circle ux:Name="CircleSommarjobb" Color="#fff" Width="40" Height="40">
+                <Stroke Width="1" Color="Black" />
+                <Clicked>
+                  <Toggle Target="ActiveSommarjobb" />
+                </Clicked>
+              </Circle>
+            </StackPanel>
+          </Panel>
+          <Panel Margin="10">
+            <StackPanel ItemSpacing="10" Alignment="Center">
+              <SmallText FontSize="10" Value="UPPSATS" />
+              <Circle ux:Name="CircleUppsats" Color="#fff" Width="40" Height="40">
+                <Stroke Width="1" Color="Black" />
+                <Clicked>
+                  <Toggle Target="ActiveUppsats" />
+                </Clicked>
+              </Circle>
+            </StackPanel>
+          </Panel>
+          <Panel Margin="10">
+            <StackPanel ItemSpacing="10" Alignment="Center">
+              <SmallText FontSize="10" Value="INTERNSHIP" />
+              <Circle ux:Name="CircleInternship" Color="#fff" Width="40" Height="40">
+                <Stroke Width="1" Color="Black" />
+                <Clicked>
+                  <Toggle Target="ActiveInternship" />
+                </Clicked>
+              </Circle>
+            </StackPanel>
+          </Panel>
+          <Panel Margin="10">
+            <StackPanel ItemSpacing="10" Alignment="Center">
+              <SmallText FontSize="10" Value="HELTID" />
+              <Circle ux:Name="CircleHeltid" Color="#fff" Width="40" Height="40">
+                <Stroke Width="1" Color="Black" />
+                <Clicked>
+                  <Toggle Target="ActiveHeltid" />
+                </Clicked>
+              </Circle>
+            </StackPanel>
+          </Panel>
+          <Panel Margin="10">
+            <StackPanel ItemSpacing="10" Alignment="Center">
+              <SmallText FontSize="10" Value="EXTRAJOBB" />
+              <Circle ux:Name="CircleExtrajobb" Color="#fff" Width="40" Height="40">
+                <Stroke Width="1" Color="Black" />
+                <Clicked>
+                  <Toggle Target="ActiveExtrajobb" />
+                </Clicked>
+              </Circle>
+            </StackPanel>
+          </Panel>
+        </Grid>
+
+        <!-- Sets animation when active -->
+        <WhileTrue ux:Name="ActiveSommarjobb"><Change CircleSommarjobb.Color="#000" Duration="0.3" /></WhileTrue>
+        <WhileTrue ux:Name="ActiveUppsats"><Change CircleUppsats.Color="#000" Duration="0.3" /></WhileTrue>
+        <WhileTrue ux:Name="ActiveInternship"><Change CircleInternship.Color="#000" Duration="0.3" /></WhileTrue>
+        <WhileTrue ux:Name="ActiveHeltid"><Change CircleHeltid.Color="#000" Duration="0.3" /></WhileTrue>
+        <WhileTrue ux:Name="ActiveExtrajobb"><Change CircleExtrajobb.Color="#000" Duration="0.3" /></WhileTrue>
+
+        <Rectangle Margin="0,20,0,20" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+
+        <!-- Type of degree -->
+        <Text Color="White" Font="RalewayBlack" FontSize="16" Value="TYP AV EXAMEN" />
+        <Grid Row="1" ColumnCount="3">
+          <Panel Margin="10">
+            <StackPanel ItemSpacing="10" Alignment="Center">
+              <SmallText FontSize="10" Value="KANDIDAT" />
+              <Circle ux:Name="CircleKandidat" Color="#fff" Width="40" Height="40">
+                <Stroke Width="1" Color="Black" />
+                <Clicked>
+                  <Toggle Target="ActiveKandidat" />
+                </Clicked>
+              </Circle>
+            </StackPanel>
+          </Panel>
+          <Panel Margin="10">
+            <StackPanel ItemSpacing="10" Alignment="Center">
+              <SmallText FontSize="10" Value="MASTER" />
+              <Circle ux:Name="CircleMaster" Color="#fff" Width="40" Height="40">
+                <Stroke Width="1" Color="Black" />
+                <Clicked>
+                  <Toggle Target="ActiveMaster" />
+                </Clicked>
+              </Circle>
+            </StackPanel>
+          </Panel>
+        </Grid>
+
+        <!-- Sets animation when active -->
+        <WhileTrue ux:Name="ActiveKandidat"><Change CircleKandidat.Color="#000" Duration="0.3" /></WhileTrue>
+        <WhileTrue ux:Name="ActiveMaster"><Change CircleMaster.Color="#000" Duration="0.3" /></WhileTrue>
+
+        <Rectangle Margin="0,20,0,20" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+
+        <!-- Date picker -->
+        <Text Color="White" Font="RalewayBlack" FontSize="16" Value="VILKEN DAG(AR)" />
+        <Grid Row="1" ColumnCount="3">
+          <Panel Margin="10">
+            <StackPanel ItemSpacing="10" Alignment="Center">
+              <SmallText FontSize="10" Value="ONSDAG 8/11" />
+              <Circle ux:Name="CircleOnsdag" Color="#fff" Width="40" Height="40">
+                <Stroke Width="1" Color="Black" />
+                <Clicked>
+                  <Toggle Target="ActiveOnsdag" />
+                </Clicked>
+              </Circle>
+            </StackPanel>
+          </Panel>
+          <Panel Margin="10">
+            <StackPanel ItemSpacing="10" Alignment="Center">
+              <SmallText FontSize="10" Value="TORSDAG 9/11" />
+              <Circle ux:Name="CircleTorsdag" Color="#fff" Width="40" Height="40">
+                <Stroke Width="1" Color="Black" />
+                <Clicked>
+                  <Toggle Target="ActiveTorsdag" />
+                </Clicked>
+              </Circle>
+            </StackPanel>
+          </Panel>
+        </Grid>
+
+        <!-- Sets animation when active -->
+        <WhileTrue ux:Name="ActiveOnsdag"><Change CircleOnsdag.Color="#000" Duration="0.3" /></WhileTrue>
+        <WhileTrue ux:Name="ActiveTorsdag"><Change CircleTorsdag.Color="#000" Duration="0.3" /></WhileTrue>
+
+        <Rectangle Margin="0,20,0,20" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+
+        <!-- Button -->
+        <Rectangle Background="Black" Width="200" Height="50" Margin="0,15,0,0">
+          <Text Value="FILTRERA" Color="White" Alignment="Center" Font="RalewayBlack"/>
+        </Rectangle>
+      </StackPanel>
+    </ScrollView>
+  </Panel>
 
   <!-- Output exhibitor list -->
   <Panel ux:Name="ExibitorList" Opacity="1">
@@ -103,5 +305,6 @@ TODO:
   </Panel>
 
   <!-- Background image -->
-  <Image StretchMode="Fill" Layer="Background" File="../../assets/BackgroundExhibitor.png"  />
+  <Image ux:Name="ExhibitorBackground" Opacity="1" StretchMode="Fill" Layer="Background" File="../../assets/BackgroundExhibitor.png"  />
+  <Image ux:Name="FilterBackground" Opacity="0" StretchMode="Fill" Layer="Background" File="../../assets/BackgroundFilter.png"  />
 </Page>

@@ -16,10 +16,14 @@ struct gadden_bundle : uObject
 {
     static uSStrong< ::g::Uno::IO::BundleFile*> AboutUsPaged71bc3be_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& AboutUsPaged71bc3be() { return gadden_bundle_typeof()->Init(), AboutUsPaged71bc3be_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> ArrowDownWhitebe5688b1_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& ArrowDownWhitebe5688b1() { return gadden_bundle_typeof()->Init(), ArrowDownWhitebe5688b1_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundAbstractPaint7eb0f5a1_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundAbstractPaint7eb0f5a1() { return gadden_bundle_typeof()->Init(), BackgroundAbstractPaint7eb0f5a1_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundExhibitor67ed3f2d_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundExhibitor67ed3f2d() { return gadden_bundle_typeof()->Init(), BackgroundExhibitor67ed3f2d_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundFilterd86cfeb7_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundFilterd86cfeb7() { return gadden_bundle_typeof()->Init(), BackgroundFilterd86cfeb7_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundIceBreaker4245b230_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundIceBreaker4245b230() { return gadden_bundle_typeof()->Init(), BackgroundIceBreaker4245b230_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundNewsDetails0b71a49a_;

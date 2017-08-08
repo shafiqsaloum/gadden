@@ -8,7 +8,7 @@ namespace g{struct MainView__Template4;}
 
 namespace g{
 
-// public partial sealed class MainView.Template4 :388
+// public partial sealed class MainView.Template4 :389
 // {
 ::g::Uno::UX::Template_type* MainView__Template4_typeof();
 void MainView__Template4__ctor_1_fn(MainView__Template4* __this, ::g::MainView* parent, ::g::MainView* parentInstance);
