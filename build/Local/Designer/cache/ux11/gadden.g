@@ -12,4 +12,5 @@ build/Local/Designer/cache/ux11/TabText.g.uno
 build/Local/Designer/cache/ux11/AboutAboutUs.g.uno
 build/Local/Designer/cache/ux11/LoginButton.g.uno
 build/Local/Designer/cache/ux11/Profile.g.uno
+build/Local/Designer/cache/ux11/ProfileStar.g.uno
 build/Local/Designer/cache/ux11/gadden.unoproj.g.uno

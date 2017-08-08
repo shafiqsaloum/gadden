@@ -12,4 +12,5 @@
 .uno/CodeCompletion/ux11/AboutAboutUs.g.uno
 .uno/CodeCompletion/ux11/LoginButton.g.uno
 .uno/CodeCompletion/ux11/Profile.g.uno
+.uno/CodeCompletion/ux11/ProfileStar.g.uno
 .uno/CodeCompletion/ux11/gadden.unoproj.g.uno

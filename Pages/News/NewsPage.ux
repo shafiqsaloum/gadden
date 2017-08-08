@@ -34,9 +34,10 @@ TODO:
 
   <!-- While true event -->
   <WhileTrue ux:Name="opacityNews">
-    <Change NewsDetails.Opacity="1" Duration="0.2" />
-    <Change logoImage.Width="0%" Duration="0.2" />
+    <Change NewsDetails.Opacity="1" Duration="0.1" />
+    <Change logoImage.Width="0%" Duration="0.1" />
     <Change NewsFeed.Opacity="0" Duration="0.2" />
+    <Change BackgroundImage.Opacity="0" Duration="0.2" />
   </WhileTrue>
 
   <!-- Output newsfeed details -->

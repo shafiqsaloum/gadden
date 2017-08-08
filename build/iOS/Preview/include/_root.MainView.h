@@ -6,7 +6,6 @@
 #include <Fuse.IProperties.h>
 #include <Uno.Float4.h>
 #include <Uno.UX.Size.h>
-namespace g{namespace Fuse{namespace Controls{struct DockPanel;}}}
 namespace g{namespace Fuse{namespace Controls{struct EdgeNavigator;}}}
 namespace g{namespace Fuse{namespace Controls{struct Image;}}}
 namespace g{namespace Fuse{namespace Controls{struct Page;}}}
@@ -17,7 +16,6 @@ namespace g{namespace Fuse{namespace Controls{struct Shadow;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
 namespace g{namespace Fuse{namespace Reactive{struct EventBinding;}}}
-namespace g{namespace Fuse{namespace Triggers{struct Timeline;}}}
 namespace g{namespace Fuse{namespace Triggers{struct WhileTrue;}}}
 namespace g{namespace Fuse{struct Font;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -184,6 +182,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Page*> aboutus;
     uStrong< ::g::Fuse::Controls::Panel*> AboutUsTab;
     uStrong< ::g::Fuse::Controls::Image*> BackgroundImage;
+    uStrong< ::g::Uno::UX::Property1*> BackgroundImage_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Image*> crossIcon;
     uStrong< ::g::Uno::UX::Property1*> crossIcon_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Image*> crossIconMap;
@@ -196,7 +195,10 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Page*> goodiebag;
     uStrong< ::g::Fuse::Controls::Panel*> GoodiebagTab;
     uStrong< ::g::Fuse::Controls::Page*> icebreaker;
-    uStrong< ::g::Fuse::Controls::Panel*> iconPanel;
+    uStrong< ::g::Fuse::Controls::Image*> IceBreakerButton;
+    uStrong< ::g::Uno::UX::Property1*> IceBreakerButton_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Image*> IceBreakerIcon;
+    uStrong< ::g::Uno::UX::Property1*> IceBreakerIcon_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Panel*> indicator;
     uStrong< ::g::Uno::UX::Property1*> indicator_Element_LayoutMaster_inst;
     uStrong< ::g::Fuse::Controls::Rectangle*> indicatorAbout;
@@ -236,7 +238,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Panel*> plan3Tab;
     uStrong< ::g::Fuse::Controls::Page*> plan4;
     uStrong< ::g::Fuse::Controls::Panel*> plan4Tab;
-    uStrong< ::g::Fuse::Controls::DockPanel*> popupBackground;
+    uStrong< ::g::Fuse::Controls::Panel*> popupBackground;
     uStrong< ::g::Fuse::Controls::Panel*> popupInfo;
     uStrong< ::g::Uno::UX::Property1*> popupInfo_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Panel*> popupInfoMap;
@@ -297,7 +299,6 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> temp8_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp9_Value_inst;
     uStrong< ::g::Fuse::Controls::EdgeNavigator*> TheSidebar;
-    uStrong< ::g::Fuse::Triggers::Timeline*> timeline;
     static uSStrong< ::g::Fuse::Font*> TitleFont_;
     static uSStrong< ::g::Fuse::Font*>& TitleFont() { return MainView_typeof()->Init(), TitleFont_; }
     uStrong< ::g::Fuse::Controls::Panel*> TitleTest;

@@ -48,6 +48,8 @@ struct gadden_bundle : uObject
     static uSStrong< ::g::Uno::IO::BundleFile*>& HandelsbankenLogotypeWhitefcc429e9() { return gadden_bundle_typeof()->Init(), HandelsbankenLogotypeWhitefcc429e9_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> HHGSLogotypWhite257b8c22_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& HHGSLogotypWhite257b8c22() { return gadden_bundle_typeof()->Init(), HHGSLogotypWhite257b8c22_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> IceBreakerButtonWhited236d193_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakerButtonWhited236d193() { return gadden_bundle_typeof()->Init(), IceBreakerButtonWhited236d193_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> IceBreakerIcon45cb54c5_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakerIcon45cb54c5() { return gadden_bundle_typeof()->Init(), IceBreakerIcon45cb54c5_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> IceBreakersPaged6f6d67e_;
@@ -76,6 +78,8 @@ struct gadden_bundle : uObject
     static uSStrong< ::g::Uno::IO::BundleFile*>& PartnersPageec88aa66() { return gadden_bundle_typeof()->Init(), PartnersPageec88aa66_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> ProfileIcon9300a9dd_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& ProfileIcon9300a9dd() { return gadden_bundle_typeof()->Init(), ProfileIcon9300a9dd_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> ProfileIconStar96d15ebd_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& ProfileIconStar96d15ebd() { return gadden_bundle_typeof()->Init(), ProfileIconStar96d15ebd_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> ProgramPagec84f4f3e_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& ProgramPagec84f4f3e() { return gadden_bundle_typeof()->Init(), ProgramPagec84f4f3e_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> RalewayBlackcd5035ad_;
