@@ -10,7 +10,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class gadden_FuseElementsElement_ElementLayoutMaster_Property :124
+// internal sealed class gadden_FuseElementsElement_ElementLayoutMaster_Property :132
 // {
 static void gadden_FuseElementsElement_ElementLayoutMaster_Property_build(uType* type)
 {
@@ -38,46 +38,46 @@ static void gadden_FuseElementsElement_ElementLayoutMaster_Property_build(uType*
     return type;
 }
 
-// public gadden_FuseElementsElement_ElementLayoutMaster_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) :127
+// public gadden_FuseElementsElement_ElementLayoutMaster_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) :135
 void gadden_FuseElementsElement_ElementLayoutMaster_Property__ctor_3_fn(gadden_FuseElementsElement_ElementLayoutMaster_Property* __this, ::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed Fuse.Elements.Element Get(Uno.UX.PropertyObject obj) :129
+// public override sealed Fuse.Elements.Element Get(Uno.UX.PropertyObject obj) :137
 void gadden_FuseElementsElement_ElementLayoutMaster_Property__Get1_fn(gadden_FuseElementsElement_ElementLayoutMaster_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Fuse::Elements::Element** __retval)
 {
     uStackFrame __("gadden_FuseElementsElement_ElementLayoutMaster_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = ::g::Fuse::Controls::LayoutControl::GetLayoutMaster(uCast< ::g::Fuse::Elements::Element*>(obj, ::TYPES[0/*Fuse.Elements.Element*/])), void();
 }
 
-// public gadden_FuseElementsElement_ElementLayoutMaster_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) :127
+// public gadden_FuseElementsElement_ElementLayoutMaster_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) :135
 void gadden_FuseElementsElement_ElementLayoutMaster_Property__New1_fn(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector* name, gadden_FuseElementsElement_ElementLayoutMaster_Property** __retval)
 {
     *__retval = gadden_FuseElementsElement_ElementLayoutMaster_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :128
+// public override sealed Uno.UX.PropertyObject get_Object() :136
 void gadden_FuseElementsElement_ElementLayoutMaster_Property__get_Object_fn(gadden_FuseElementsElement_ElementLayoutMaster_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, Fuse.Elements.Element v, Uno.UX.IPropertyListener origin) :130
+// public override sealed void Set(Uno.UX.PropertyObject obj, Fuse.Elements.Element v, Uno.UX.IPropertyListener origin) :138
 void gadden_FuseElementsElement_ElementLayoutMaster_Property__Set1_fn(gadden_FuseElementsElement_ElementLayoutMaster_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Fuse::Elements::Element* v, uObject* origin)
 {
     uStackFrame __("gadden_FuseElementsElement_ElementLayoutMaster_Property", "Set(Uno.UX.PropertyObject,Fuse.Elements.Element,Uno.UX.IPropertyListener)");
     ::g::Fuse::Controls::LayoutControl::SetLayoutMaster(uCast< ::g::Fuse::Elements::Element*>(obj, ::TYPES[0/*Fuse.Elements.Element*/]), v);
 }
 
-// public gadden_FuseElementsElement_ElementLayoutMaster_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) [instance] :127
+// public gadden_FuseElementsElement_ElementLayoutMaster_Property(Fuse.Elements.Element obj, Uno.UX.Selector name) [instance] :135
 void gadden_FuseElementsElement_ElementLayoutMaster_Property::ctor_3(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public gadden_FuseElementsElement_ElementLayoutMaster_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) [static] :127
+// public gadden_FuseElementsElement_ElementLayoutMaster_Property New(Fuse.Elements.Element obj, Uno.UX.Selector name) [static] :135
 gadden_FuseElementsElement_ElementLayoutMaster_Property* gadden_FuseElementsElement_ElementLayoutMaster_Property::New1(::g::Fuse::Elements::Element* obj, ::g::Uno::UX::Selector name)
 {
     gadden_FuseElementsElement_ElementLayoutMaster_Property* obj1 = (gadden_FuseElementsElement_ElementLayoutMaster_Property*)uNew(gadden_FuseElementsElement_ElementLayoutMaster_Property_typeof());

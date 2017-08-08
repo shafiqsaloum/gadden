@@ -1,4 +1,0 @@
-$: 1215136897
-BuildCommand: build.sh
-RunCommand: run.sh
-Product: build/Release-iphoneos/gadden.app/gadden

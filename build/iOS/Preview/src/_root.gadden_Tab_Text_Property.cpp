@@ -11,7 +11,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class gadden_Tab_Text_Property :148
+// internal sealed class gadden_Tab_Text_Property :156
 // {
 static void gadden_Tab_Text_Property_build(uType* type)
 {
@@ -40,52 +40,52 @@ static void gadden_Tab_Text_Property_build(uType* type)
     return type;
 }
 
-// public gadden_Tab_Text_Property(Tab obj, Uno.UX.Selector name) :151
+// public gadden_Tab_Text_Property(Tab obj, Uno.UX.Selector name) :159
 void gadden_Tab_Text_Property__ctor_3_fn(gadden_Tab_Text_Property* __this, ::g::Tab* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed string Get(Uno.UX.PropertyObject obj) :153
+// public override sealed string Get(Uno.UX.PropertyObject obj) :161
 void gadden_Tab_Text_Property__Get1_fn(gadden_Tab_Text_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString** __retval)
 {
     uStackFrame __("gadden_Tab_Text_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Tab*>(obj, ::TYPES[0/*Tab*/]))->Text(), void();
 }
 
-// public gadden_Tab_Text_Property New(Tab obj, Uno.UX.Selector name) :151
+// public gadden_Tab_Text_Property New(Tab obj, Uno.UX.Selector name) :159
 void gadden_Tab_Text_Property__New1_fn(::g::Tab* obj, ::g::Uno::UX::Selector* name, gadden_Tab_Text_Property** __retval)
 {
     *__retval = gadden_Tab_Text_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :152
+// public override sealed Uno.UX.PropertyObject get_Object() :160
 void gadden_Tab_Text_Property__get_Object_fn(gadden_Tab_Text_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :154
+// public override sealed void Set(Uno.UX.PropertyObject obj, string v, Uno.UX.IPropertyListener origin) :162
 void gadden_Tab_Text_Property__Set1_fn(gadden_Tab_Text_Property* __this, ::g::Uno::UX::PropertyObject* obj, uString* v, uObject* origin)
 {
     uStackFrame __("gadden_Tab_Text_Property", "Set(Uno.UX.PropertyObject,string,Uno.UX.IPropertyListener)");
     uPtr(uCast< ::g::Tab*>(obj, ::TYPES[0/*Tab*/]))->SetText(v, origin);
 }
 
-// public override sealed bool get_SupportsOriginSetter() :155
+// public override sealed bool get_SupportsOriginSetter() :163
 void gadden_Tab_Text_Property__get_SupportsOriginSetter_fn(gadden_Tab_Text_Property* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-// public gadden_Tab_Text_Property(Tab obj, Uno.UX.Selector name) [instance] :151
+// public gadden_Tab_Text_Property(Tab obj, Uno.UX.Selector name) [instance] :159
 void gadden_Tab_Text_Property::ctor_3(::g::Tab* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public gadden_Tab_Text_Property New(Tab obj, Uno.UX.Selector name) [static] :151
+// public gadden_Tab_Text_Property New(Tab obj, Uno.UX.Selector name) [static] :159
 gadden_Tab_Text_Property* gadden_Tab_Text_Property::New1(::g::Tab* obj, ::g::Uno::UX::Selector name)
 {
     gadden_Tab_Text_Property* obj1 = (gadden_Tab_Text_Property*)uNew(gadden_Tab_Text_Property_typeof());

@@ -81,6 +81,11 @@
 #include <Fuse.JSFileSource.h>
 #include <Fuse.Json.h>
 #include <Fuse.KeyboardBootstrapper.h>
+#include <Fuse.Launcher.h>
+#include <Fuse.LauncherImpl.Ema-bf1389b5.h>
+#include <Fuse.LauncherImpl.Int-58fad324.h>
+#include <Fuse.LauncherImpl.MapsLauncher.h>
+#include <Fuse.LauncherImpl.Pho-6b03eff9.h>
 #include <Fuse.Layer.h>
 #include <Fuse.LayoutDependent.h>
 #include <Fuse.LayoutParams.Flags.h>
@@ -108,6 +113,7 @@
 #include <Fuse.OSVersion.h>
 #include <Fuse.PendingRemoveVisual.h>
 #include <Fuse.PerspectiveFrustum.h>
+#include <Fuse.PhoneUriHelper.h>
 #include <Fuse.PlacedArgs.h>
 #include <Fuse.PlacedHandler.h>
 #include <Fuse.Platform.AppEvents.h>
@@ -277,6 +283,7 @@
 #include <Uno.IO.TextReader.h>
 #include <Uno.Math.h>
 #include <Uno.Matrix.h>
+#include <Uno.Net.Http.Uri.h>
 #include <Uno.Object.h>
 #include <Uno.Platform.CoreApp.h>
 #include <Uno.Platform.Display.h>
@@ -314,7 +321,7 @@
 #include <Uno.UX.Template.h>
 #include <Uno.UX.Unit.h>
 #include <Uno.Vector.h>
-static uString* STRINGS[133];
+static uString* STRINGS[134];
 static uType* TYPES[160];
 
 namespace g{
@@ -7981,6 +7988,113 @@ void KeyboardBootstrapper::OnTextInput(uObject* sender, ::g::Uno::Platform::Text
 }
 // }
 
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Launcher/1.0.5/$.uno
+// ----------------------------------------------------------------------------------------------
+
+// public static class Launcher :14
+// {
+static void Launcher_build(uType* type)
+{
+    type->Reflection.SetFunctions(6,
+        new uFunction("LaunchCall", NULL, (void*)Launcher__LaunchCall_fn, 0, true, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
+        new uFunction("LaunchEmail", NULL, (void*)Launcher__LaunchEmail_fn, 0, true, uVoid_typeof(), 5, ::g::Uno::String_typeof(), ::g::Uno::String_typeof(), ::g::Uno::String_typeof(), ::g::Uno::String_typeof(), ::g::Uno::String_typeof()),
+        new uFunction("LaunchMaps", NULL, (void*)Launcher__LaunchMaps_fn, 0, true, uVoid_typeof(), 2, ::g::Uno::Double_typeof(), ::g::Uno::Double_typeof()),
+        new uFunction("LaunchMaps", NULL, (void*)Launcher__LaunchMaps1_fn, 0, true, uVoid_typeof(), 3, ::g::Uno::Double_typeof(), ::g::Uno::Double_typeof(), ::g::Uno::String_typeof()),
+        new uFunction("LaunchMaps", NULL, (void*)Launcher__LaunchMaps2_fn, 0, true, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
+        new uFunction("LaunchUri", NULL, (void*)Launcher__LaunchUri_fn, 0, true, uVoid_typeof(), 1, ::g::Uno::Net::Http::Uri_typeof()));
+}
+
+uClassType* Launcher_typeof()
+{
+    static uSStrong<uClassType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.TypeSize = sizeof(uClassType);
+    type = uClassType::New("Fuse.Launcher", options);
+    type->fp_build_ = Launcher_build;
+    return type;
+}
+
+// public static void LaunchCall(string callString) :21
+void Launcher__LaunchCall_fn(uString* callString)
+{
+    Launcher::LaunchCall(callString);
+}
+
+// public static void LaunchEmail(string to, string carbonCopy, string blindCarbonCopy, string subject, string message) :41
+void Launcher__LaunchEmail_fn(uString* to, uString* carbonCopy, uString* blindCarbonCopy, uString* subject, uString* message)
+{
+    Launcher::LaunchEmail(to, carbonCopy, blindCarbonCopy, subject, message);
+}
+
+// public static void LaunchMaps(double latitude, double longitude) :26
+void Launcher__LaunchMaps_fn(double* latitude, double* longitude)
+{
+    Launcher::LaunchMaps(*latitude, *longitude);
+}
+
+// public static void LaunchMaps(double latitude, double longitude, string query) :36
+void Launcher__LaunchMaps1_fn(double* latitude, double* longitude, uString* query)
+{
+    Launcher::LaunchMaps1(*latitude, *longitude, query);
+}
+
+// public static void LaunchMaps(string query) :31
+void Launcher__LaunchMaps2_fn(uString* query)
+{
+    Launcher::LaunchMaps2(query);
+}
+
+// public static void LaunchUri(Uno.Net.Http.Uri uri) :16
+void Launcher__LaunchUri_fn(::g::Uno::Net::Http::Uri* uri)
+{
+    Launcher::LaunchUri(uri);
+}
+
+// public static void LaunchCall(string callString) [static] :21
+void Launcher::LaunchCall(uString* callString)
+{
+    uStackFrame __("Fuse.Launcher", "LaunchCall(string)");
+    ::g::Fuse::LauncherImpl::PhoneLauncher::LaunchCall(callString);
+}
+
+// public static void LaunchEmail(string to, string carbonCopy, string blindCarbonCopy, string subject, string message) [static] :41
+void Launcher::LaunchEmail(uString* to, uString* carbonCopy, uString* blindCarbonCopy, uString* subject, uString* message)
+{
+    uStackFrame __("Fuse.Launcher", "LaunchEmail(string,string,string,string,string)");
+    ::g::Fuse::LauncherImpl::EmailLauncher::LaunchEmail(to, carbonCopy, blindCarbonCopy, subject, message);
+}
+
+// public static void LaunchMaps(double latitude, double longitude) [static] :26
+void Launcher::LaunchMaps(double latitude, double longitude)
+{
+    uStackFrame __("Fuse.Launcher", "LaunchMaps(double,double)");
+    ::g::Fuse::LauncherImpl::MapsLauncher::LaunchMaps(latitude, longitude);
+}
+
+// public static void LaunchMaps(double latitude, double longitude, string query) [static] :36
+void Launcher::LaunchMaps1(double latitude, double longitude, uString* query)
+{
+    uStackFrame __("Fuse.Launcher", "LaunchMaps(double,double,string)");
+    ::g::Fuse::LauncherImpl::MapsLauncher::LaunchMaps1(latitude, longitude, query);
+}
+
+// public static void LaunchMaps(string query) [static] :31
+void Launcher::LaunchMaps2(uString* query)
+{
+    uStackFrame __("Fuse.Launcher", "LaunchMaps(string)");
+    ::g::Fuse::LauncherImpl::MapsLauncher::LaunchMaps2(query);
+}
+
+// public static void LaunchUri(Uno.Net.Http.Uri uri) [static] :16
+void Launcher::LaunchUri(::g::Uno::Net::Http::Uri* uri)
+{
+    uStackFrame __("Fuse.Launcher", "LaunchUri(Uno.Net.Http.Uri)");
+    ::g::Fuse::LauncherImpl::InterAppLauncher::LaunchUri(uri);
+}
+// }
+
 // /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
 // -------------------------------------------------------------------------------------------
 
@@ -13761,6 +13875,45 @@ PerspectiveFrustum* PerspectiveFrustum::New1()
 }
 // }
 
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Launcher.Phone/1.0.5/phone/$.uno
+// ----------------------------------------------------------------------------------------------------------
+
+// internal static class PhoneUriHelper :123
+// {
+static void PhoneUriHelper_build(uType* type)
+{
+    ::STRINGS[103] = uString::Const("tel:");
+}
+
+uClassType* PhoneUriHelper_typeof()
+{
+    static uSStrong<uClassType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.TypeSize = sizeof(uClassType);
+    type = uClassType::New("Fuse.PhoneUriHelper", options);
+    type->fp_build_ = PhoneUriHelper_build;
+    return type;
+}
+
+// public static string PhoneNumberToUri(string phoneNumber) :125
+void PhoneUriHelper__PhoneNumberToUri_fn(uString* phoneNumber, uString** __retval)
+{
+    *__retval = PhoneUriHelper::PhoneNumberToUri(phoneNumber);
+}
+
+// public static string PhoneNumberToUri(string phoneNumber) [static] :125
+uString* PhoneUriHelper::PhoneNumberToUri(uString* phoneNumber)
+{
+    uStackFrame __("Fuse.PhoneUriHelper", "PhoneNumberToUri(string)");
+    ::g::Uno::Text::StringBuilder* builder = ::g::Uno::Text::StringBuilder::New1();
+    builder->Append2(::STRINGS[103/*"tel:"*/]);
+    builder->Append2(::g::Uno::Net::Http::Uri::Encode(phoneNumber));
+    return builder->ToString();
+}
+// }
+
 // /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
 // -------------------------------------------------------------------------------------------
 
@@ -13769,9 +13922,9 @@ PerspectiveFrustum* PerspectiveFrustum::New1()
 static void PlacedArgs_build(uType* type)
 {
     ::STRINGS[54] = uString::Const("x");
-    ::STRINGS[103] = uString::Const("y");
-    ::STRINGS[104] = uString::Const("width");
-    ::STRINGS[105] = uString::Const("height");
+    ::STRINGS[104] = uString::Const("y");
+    ::STRINGS[105] = uString::Const("width");
+    ::STRINGS[106] = uString::Const("height");
     ::TYPES[104] = ::g::Fuse::Scripting::IEventSerializer_typeof();
     type->SetInterfaces(
         ::g::Fuse::Scripting::IScriptEvent_typeof(), offsetof(PlacedArgs_type, interface0));
@@ -13974,9 +14127,9 @@ void PlacedArgs::Serialize(uObject* serializer)
 {
     uStackFrame __("Fuse.PlacedArgs", "Serialize(Fuse.Scripting.IEventSerializer)");
     ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(uPtr(serializer), ::TYPES[104/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[54/*"x"*/], (double)NewPosition().X);
-    ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(serializer, ::TYPES[104/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[103/*"y"*/], (double)NewPosition().Y);
-    ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(serializer, ::TYPES[104/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[104/*"width"*/], (double)NewSize().X);
-    ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(serializer, ::TYPES[104/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[105/*"height"*/], (double)NewSize().Y);
+    ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(serializer, ::TYPES[104/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[104/*"y"*/], (double)NewPosition().Y);
+    ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(serializer, ::TYPES[104/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[105/*"width"*/], (double)NewSize().X);
+    ::g::Fuse::Scripting::IEventSerializer::AddDouble(uInterface(serializer, ::TYPES[104/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[106/*"height"*/], (double)NewSize().Y);
 }
 
 // internal PlacedArgs New(bool hasPrev, float2 prevPosition, float2 newPosition, float2 prevSize, float2 newSize) [static] :4651
@@ -18477,8 +18630,8 @@ static void UpdateManager__cctor__fn(uType* __type)
 
 static void UpdateManager_build(uType* type)
 {
-    ::STRINGS[106] = uString::Const("no Action found to remove");
-    ::STRINGS[107] = uString::Const("no OnceAction found to remove");
+    ::STRINGS[107] = uString::Const("no Action found to remove");
+    ::STRINGS[108] = uString::Const("no OnceAction found to remove");
     ::TYPES[116] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Stage_typeof(), NULL);
     ::TYPES[117] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Action_typeof(), NULL);
     ::TYPES[55] = ::g::Uno::Exception_typeof();
@@ -18959,7 +19112,7 @@ void UpdateManager::RemoveAction(uObject* pu, int stage)
     ::g::Fuse::Stage* s = (::g::Uno::Collections::List__get_Item_fn(uPtr(UpdateManager::_stages()), uCRef<int>(stage), &ret14), ret14);
 
     if (!UpdateManager::RemoveFrom(uPtr(s)->Listeners, NULL, pu))
-        U_THROW(::g::Uno::Exception::New2(::STRINGS[106/*"no Action f...*/]));
+        U_THROW(::g::Uno::Exception::New2(::STRINGS[107/*"no Action f...*/]));
 
     uPtr(s)->HasListenersRemoved = true;
 }
@@ -18973,7 +19126,7 @@ void UpdateManager::RemoveAction1(uDelegate* pu, int stage)
     ::g::Fuse::Stage* s = (::g::Uno::Collections::List__get_Item_fn(uPtr(UpdateManager::_stages()), uCRef<int>(stage), &ret15), ret15);
 
     if (!UpdateManager::RemoveFrom(uPtr(s)->Listeners, pu, NULL))
-        U_THROW(::g::Uno::Exception::New2(::STRINGS[106/*"no Action f...*/]));
+        U_THROW(::g::Uno::Exception::New2(::STRINGS[107/*"no Action f...*/]));
 
     uPtr(s)->HasListenersRemoved = true;
 }
@@ -19015,7 +19168,7 @@ void UpdateManager::RemoveOnceAction(uDelegate* pu, int stage)
         return;
 
     if (!UpdateManager::RemoveFrom(uPtr(s)->Onces, pu, NULL))
-        U_THROW(::g::Uno::Exception::New2(::STRINGS[107/*"no OnceActi...*/]));
+        U_THROW(::g::Uno::Exception::New2(::STRINGS[108/*"no OnceActi...*/]));
 }
 
 // public static void Update() [static] :3359
@@ -19084,21 +19237,21 @@ uEnumType* UpdateStage_typeof()
 // static UserEvent() :356
 static void UserEvent__cctor_1_fn(uType* __type)
 {
-    ::g::Fuse::Scripting::ScriptClass::Register(__type, uArray::Init< ::g::Fuse::Scripting::ScriptMember*>(::TYPES[80/*Fuse.Scripting.ScriptMember[]*/], 1, (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New1(::TYPES[119/*Fuse.Scripting.ScriptMethod<Fuse.UserEvent>*/], ::STRINGS[108/*"raise"*/], uDelegate::New(::TYPES[120/*Uno.Action<Fuse.Scripting.Context, Fuse.UserEvent, object[]>*/], (void*)UserEvent__raise_fn), 2)));
+    ::g::Fuse::Scripting::ScriptClass::Register(__type, uArray::Init< ::g::Fuse::Scripting::ScriptMember*>(::TYPES[80/*Fuse.Scripting.ScriptMember[]*/], 1, (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New1(::TYPES[119/*Fuse.Scripting.ScriptMethod<Fuse.UserEvent>*/], ::STRINGS[109/*"raise"*/], uDelegate::New(::TYPES[120/*Uno.Action<Fuse.Scripting.Context, Fuse.UserEvent, object[]>*/], (void*)UserEvent__raise_fn), 2)));
 }
 
 static void UserEvent_build(uType* type)
 {
-    ::STRINGS[108] = uString::Const("raise");
-    ::STRINGS[109] = uString::Const("UserEvent requires a Name");
-    ::STRINGS[110] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/1.0.5/$.uno");
-    ::STRINGS[111] = uString::Const("OnRooted");
-    ::STRINGS[112] = uString::Const("Raise must be called with zero arguments, or one argument defining the arguments to the event");
-    ::STRINGS[113] = uString::Const("Raise must be called with a JavaScript object to define name/value pairs");
-    ::STRINGS[114] = uString::Const("Trying to Raise on unrooted UserEvent");
-    ::STRINGS[115] = uString::Const("Raise");
-    ::STRINGS[116] = uString::Const("Unknown event: ");
-    ::STRINGS[117] = uString::Const("RaiseEvent");
+    ::STRINGS[109] = uString::Const("raise");
+    ::STRINGS[110] = uString::Const("UserEvent requires a Name");
+    ::STRINGS[111] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/1.0.5/$.uno");
+    ::STRINGS[112] = uString::Const("OnRooted");
+    ::STRINGS[113] = uString::Const("Raise must be called with zero arguments, or one argument defining the arguments to the event");
+    ::STRINGS[114] = uString::Const("Raise must be called with a JavaScript object to define name/value pairs");
+    ::STRINGS[115] = uString::Const("Trying to Raise on unrooted UserEvent");
+    ::STRINGS[116] = uString::Const("Raise");
+    ::STRINGS[117] = uString::Const("Unknown event: ");
+    ::STRINGS[118] = uString::Const("RaiseEvent");
     ::TYPES[34] = ::g::Uno::Type_typeof();
     ::TYPES[80] = ::g::Fuse::Scripting::ScriptMember_typeof()->Array();
     ::TYPES[119] = ::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(type, NULL);
@@ -19178,7 +19331,7 @@ void UserEvent__OnRooted_fn(UserEvent* __this)
 
     if (::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit1(__this->Name()), NULL))
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[109/*"UserEvent r...*/], __this, ::STRINGS[110/*"/Users/eric...*/], 654, ::STRINGS[111/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[110/*"UserEvent r...*/], __this, ::STRINGS[111/*"/Users/eric...*/], 654, ::STRINGS[112/*"OnRooted"*/], NULL);
         return;
     }
 
@@ -19230,7 +19383,7 @@ void UserEvent::Raise(::g::Uno::Collections::Dictionary* args)
 
     if (Dispatch == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[114/*"Trying to R...*/], this, ::STRINGS[110/*"/Users/eric...*/], 701, ::STRINGS[115/*"Raise"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[115/*"Trying to R...*/], this, ::STRINGS[111/*"/Users/eric...*/], 701, ::STRINGS[116/*"Raise"*/]);
         return;
     }
 
@@ -19259,7 +19412,7 @@ void UserEvent::raise(::g::Fuse::Scripting::Context* c, UserEvent* n, uArray* ar
 
     if (uPtr(args)->Length() > 1)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[112/*"Raise must ...*/], n, ::STRINGS[110/*"/Users/eric...*/], 421, ::STRINGS[108/*"raise"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[113/*"Raise must ...*/], n, ::STRINGS[111/*"/Users/eric...*/], 421, ::STRINGS[109/*"raise"*/], NULL);
         return;
     }
 
@@ -19267,7 +19420,7 @@ void UserEvent::raise(::g::Fuse::Scripting::Context* c, UserEvent* n, uArray* ar
 
     if (so == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[113/*"Raise must ...*/], uPtr(args)->Strong<uObject*>(0), ::STRINGS[110/*"/Users/eric...*/], 428, ::STRINGS[108/*"raise"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[114/*"Raise must ...*/], uPtr(args)->Strong<uObject*>(0), ::STRINGS[111/*"/Users/eric...*/], 428, ::STRINGS[109/*"raise"*/], NULL);
         return;
     }
 
@@ -19293,7 +19446,7 @@ void UserEvent::RaiseEvent(::g::Fuse::Visual* from, ::g::Uno::UX::Selector name,
 
     if (ev == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition2(::STRINGS[116/*"Unknown eve...*/], ::g::Uno::UX::Selector__op_Implicit1(name)), NULL, ::STRINGS[110/*"/Users/eric...*/], 714, ::STRINGS[117/*"RaiseEvent"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition2(::STRINGS[117/*"Unknown eve...*/], ::g::Uno::UX::Selector__op_Implicit1(name)), NULL, ::STRINGS[111/*"/Users/eric...*/], 714, ::STRINGS[118/*"RaiseEvent"*/]);
         return;
     }
 
@@ -19339,7 +19492,7 @@ UserEvent* UserEvent::ScanTree(::g::Fuse::Node* at, ::g::Uno::UX::Selector name,
 // {
 static void UserEventArgs_build(uType* type)
 {
-    ::STRINGS[118] = uString::Const("name");
+    ::STRINGS[119] = uString::Const("name");
     ::TYPES[104] = ::g::Fuse::Scripting::IEventSerializer_typeof();
     ::TYPES[123] = ::g::Uno::Collections::Dictionary__Enumerator_typeof()->MakeType(::g::Uno::String_typeof(), uObject_typeof(), NULL);
     ::TYPES[124] = ::g::Uno::Collections::KeyValuePair_typeof()->MakeType(::g::Uno::String_typeof(), uObject_typeof(), NULL);
@@ -19407,7 +19560,7 @@ void UserEventArgs__FuseScriptingIScriptEventSerialize_fn(UserEventArgs* __this,
 {
     uStackFrame __("Fuse.UserEventArgs", "Fuse.Scripting.IScriptEvent.Serialize(Fuse.Scripting.IEventSerializer)");
     ::g::Uno::Collections::Dictionary__Enumerator<uStrong<uString*>, uStrong<uObject*> > ret3;
-    ::g::Fuse::Scripting::IEventSerializer::AddString(uInterface(uPtr(s), ::TYPES[104/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[118/*"name"*/], ::g::Uno::UX::Selector__op_Implicit1(uPtr(__this->Dispatch())->Name()));
+    ::g::Fuse::Scripting::IEventSerializer::AddString(uInterface(uPtr(s), ::TYPES[104/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[119/*"name"*/], ::g::Uno::UX::Selector__op_Implicit1(uPtr(__this->Dispatch())->Name()));
 
     if (__this->Args() != NULL)
 
@@ -19722,7 +19875,7 @@ uDelegateType* UserEventHandler_typeof()
 // static Version() :3656
 static void Version__cctor__fn(uType* __type)
 {
-    uString* versionString = ::STRINGS[119/*"1.0.5"*/];
+    uString* versionString = ::STRINGS[120/*"1.0.5"*/];
     Version::String_ = versionString;
 
     try
@@ -19735,16 +19888,16 @@ static void Version__cctor__fn(uType* __type)
     catch (const uThrowable& __t)
     {
         ::g::Uno::Exception* e = __t.Exception;
-        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::Format(::STRINGS[120/*"Failed to p...*/], uArray::Init<uObject*>(::TYPES[12/*object[]*/], 1, versionString)), NULL, ::STRINGS[121/*"/Users/eric...*/], 3671, ::STRINGS[122/*".cctor"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::Format(::STRINGS[121/*"Failed to p...*/], uArray::Init<uObject*>(::TYPES[12/*object[]*/], 1, versionString)), NULL, ::STRINGS[122/*"/Users/eric...*/], 3671, ::STRINGS[123/*".cctor"*/]);
     }
 }
 
 static void Version_build(uType* type)
 {
-    ::STRINGS[119] = uString::Const("1.0.5");
-    ::STRINGS[120] = uString::Const("Failed to parse version-string: \"{0}\"");
-    ::STRINGS[121] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno");
-    ::STRINGS[122] = uString::Const(".cctor");
+    ::STRINGS[120] = uString::Const("1.0.5");
+    ::STRINGS[121] = uString::Const("Failed to parse version-string: \"{0}\"");
+    ::STRINGS[122] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno");
+    ::STRINGS[123] = uString::Const(".cctor");
     ::TYPES[55] = ::g::Uno::Exception_typeof();
     ::TYPES[12] = uObject_typeof()->Array();
     type->SetFields(0,
@@ -19866,7 +20019,7 @@ void ViewportHelpers__WorldToLocalRay_fn(uObject* viewport, uObject* world, ::g:
 static void Visual__cctor_1_fn(uType* __type)
 {
     Visual::_isContextEnabledChangedHandle_ = ::g::Fuse::Properties::CreateHandle();
-    Visual::_isEnabledName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[123/*"IsEnabled"*/]);
+    Visual::_isEnabledName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[124/*"IsEnabled"*/]);
     Visual::_isVisibleChangedHandle_ = ::g::Fuse::Properties::CreateHandle();
     Visual::_layerProperty_ = ::g::Fuse::Properties::CreateHandle();
     Visual::_layoutRoleProperty_ = ::g::Fuse::Properties::CreateHandle();
@@ -19874,19 +20027,19 @@ static void Visual__cctor_1_fn(uType* __type)
     Visual::ParameterName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[100/*"Parameter"*/]);
     Visual::_resourcesHandle_ = ::g::Fuse::Properties::CreateHandle();
     Visual::_worldTransformInvalidatedHandle_ = ::g::Fuse::Properties::CreateHandle();
-    ::g::Fuse::Scripting::ScriptClass::Register(__type, uArray::Init< ::g::Fuse::Scripting::ScriptMember*>(::TYPES[80/*Fuse.Scripting.ScriptMember[]*/], 3, (::g::Fuse::Scripting::ScriptProperty1*)::g::Fuse::Scripting::ScriptProperty1::New1(::TYPES[127/*Fuse.Scripting.ScriptProperty<Fuse.Visual, string>*/], ::STRINGS[100/*"Parameter"*/], uDelegate::New(::TYPES[128/*Uno.Func<Fuse.Visual, Uno.UX.Property<string>>*/], (void*)Visual__getParameterProperty_fn), ::STRINGS[124/*".notNull()....*/]), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New1(::TYPES[129/*Fuse.Scripting.ScriptMethod<Fuse.Visual>*/], ::STRINGS[125/*"onParameter...*/], uDelegate::New(::TYPES[130/*Uno.Action<Fuse.Scripting.Context, Fuse.Visual, object[]>*/], (void*)Visual__onParameterChanged_fn), 2), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New1(::TYPES[129/*Fuse.Scripting.ScriptMethod<Fuse.Visual>*/], ::STRINGS[126/*"bringIntoView"*/], uDelegate::New(::TYPES[130/*Uno.Action<Fuse.Scripting.Context, Fuse.Visual, object[]>*/], (void*)Visual__bringIntoView_fn), 2)));
+    ::g::Fuse::Scripting::ScriptClass::Register(__type, uArray::Init< ::g::Fuse::Scripting::ScriptMember*>(::TYPES[80/*Fuse.Scripting.ScriptMember[]*/], 3, (::g::Fuse::Scripting::ScriptProperty1*)::g::Fuse::Scripting::ScriptProperty1::New1(::TYPES[127/*Fuse.Scripting.ScriptProperty<Fuse.Visual, string>*/], ::STRINGS[100/*"Parameter"*/], uDelegate::New(::TYPES[128/*Uno.Func<Fuse.Visual, Uno.UX.Property<string>>*/], (void*)Visual__getParameterProperty_fn), ::STRINGS[125/*".notNull()....*/]), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New1(::TYPES[129/*Fuse.Scripting.ScriptMethod<Fuse.Visual>*/], ::STRINGS[126/*"onParameter...*/], uDelegate::New(::TYPES[130/*Uno.Action<Fuse.Scripting.Context, Fuse.Visual, object[]>*/], (void*)Visual__onParameterChanged_fn), 2), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New1(::TYPES[129/*Fuse.Scripting.ScriptMethod<Fuse.Visual>*/], ::STRINGS[127/*"bringIntoView"*/], uDelegate::New(::TYPES[130/*Uno.Action<Fuse.Scripting.Context, Fuse.Visual, object[]>*/], (void*)Visual__bringIntoView_fn), 2)));
 }
 
 static void Visual_build(uType* type)
 {
-    ::STRINGS[123] = uString::Const("IsEnabled");
+    ::STRINGS[124] = uString::Const("IsEnabled");
     ::STRINGS[100] = uString::Const("Parameter");
-    ::STRINGS[124] = uString::Const(".notNull().parseJson()");
-    ::STRINGS[125] = uString::Const("onParameterChanged");
-    ::STRINGS[126] = uString::Const("bringIntoView");
-    ::STRINGS[127] = uString::Const("index");
-    ::STRINGS[128] = uString::Const("Layout was invalidated while performing layout");
-    ::STRINGS[129] = uString::Const("Invalid call to RearrangeMarginBox");
+    ::STRINGS[125] = uString::Const(".notNull().parseJson()");
+    ::STRINGS[126] = uString::Const("onParameterChanged");
+    ::STRINGS[127] = uString::Const("bringIntoView");
+    ::STRINGS[128] = uString::Const("index");
+    ::STRINGS[129] = uString::Const("Layout was invalidated while performing layout");
+    ::STRINGS[130] = uString::Const("Invalid call to RearrangeMarginBox");
     ::TYPES[34] = ::g::Uno::Type_typeof();
     ::TYPES[80] = ::g::Fuse::Scripting::ScriptMember_typeof()->Array();
     ::TYPES[127] = ::g::Fuse::Scripting::ScriptProperty1_typeof()->MakeType(type, ::g::Uno::String_typeof(), NULL);
@@ -22869,7 +23022,7 @@ void Visual::InsertNodes(int index, uObject* items)
     ::g::Fuse::Node* ret32;
 
     if ((index < 0) || (index > ::g::Uno::Collections::ICollection::Count(uInterface(uPtr(Children()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Node>*/]))))
-        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[127/*"index"*/]));
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[128/*"index"*/]));
 
     while (::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(items), ::TYPES[37/*Uno.Collections.IEnumerator*/])))
         InsertCleanup((::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(items), ::TYPES[145/*Uno.Collections.IEnumerator<Fuse.Node>*/]), &ret30), ret30));
@@ -22947,7 +23100,7 @@ void Visual::InvalidateLayout(int reason)
     uStackFrame __("Fuse.Visual", "InvalidateLayout([Fuse.InvalidateLayoutReason])");
 
     if (Visual::_performingLayout())
-        U_THROW(::g::Uno::Exception::New2(::STRINGS[128/*"Layout was ...*/]));
+        U_THROW(::g::Uno::Exception::New2(::STRINGS[129/*"Layout was ...*/]));
 
     if (reason <= _layoutDirty)
         return;
@@ -23641,7 +23794,7 @@ void Visual::RearrangeMarginBox()
     uStackFrame __("Fuse.Visual", "RearrangeMarginBox()");
 
     if (!HasMarginBox())
-        U_THROW(::g::Uno::Exception::New2(::STRINGS[129/*"Invalid cal...*/]));
+        U_THROW(::g::Uno::Exception::New2(::STRINGS[130/*"Invalid cal...*/]));
 
     ArrangeMarginBox(_ambPosition, _ambLayoutParams);
 }
@@ -24834,7 +24987,7 @@ uEnumType* VisualContext_typeof()
 // {
 static void VisualEvent_build(uType* type)
 {
-    ::STRINGS[130] = uString::Const("Invalid RaiseType for event");
+    ::STRINGS[131] = uString::Const("Invalid RaiseType for event");
     ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno");
     ::TYPES[157] = ::g::Uno::Collections::List_typeof();
     ::TYPES[55] = ::g::Uno::Exception_typeof();
@@ -25051,7 +25204,7 @@ void VisualEvent::Raise(::g::Fuse::VisualEventArgs* args, int type, bool bubble,
         }
         default:
         {
-            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[130/*"Invalid Rai...*/], 1, ::STRINGS[3/*"/Users/eric...*/], 1014);
+            ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[131/*"Invalid Rai...*/], 1, ::STRINGS[3/*"/Users/eric...*/], 1014);
             return;
         }
     }
@@ -25107,7 +25260,7 @@ void VisualEvent::RaiseWithoutBubble(::g::Fuse::VisualEventArgs* args, int type)
 // {
 static void VisualEventArgs_build(uType* type)
 {
-    ::STRINGS[131] = uString::Const("visual");
+    ::STRINGS[132] = uString::Const("visual");
     type->SetInterfaces(
         ::g::Fuse::Scripting::IScriptEvent_typeof(), offsetof(VisualEventArgs_type, interface0));
     type->SetFields(0,
@@ -25193,7 +25346,7 @@ void VisualEventArgs::ctor_1(::g::Fuse::Visual* visual)
     ctor_();
 
     if (visual == NULL)
-        U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[131/*"visual"*/]));
+        U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[132/*"visual"*/]));
 
     Visual(visual);
 }
@@ -25434,7 +25587,7 @@ TranslationModes__WidthMode* TranslationModes__WidthMode::New2()
 // {
 static void WrapException_build(uType* type)
 {
-    ::STRINGS[132] = uString::Const("Wrapped Exception");
+    ::STRINGS[133] = uString::Const("Wrapped Exception");
     type->SetFields(3);
 }
 
@@ -25490,7 +25643,7 @@ void WrapException__Unwrap_fn(::g::Uno::Exception* e, ::g::Uno::Exception** __re
 // public WrapException(Uno.Exception inner) [instance] :3705
 void WrapException::ctor_3(::g::Uno::Exception* inner)
 {
-    ctor_2(::STRINGS[132/*"Wrapped Exc...*/], inner);
+    ctor_2(::STRINGS[133/*"Wrapped Exc...*/], inner);
 }
 
 // public WrapException New(Uno.Exception inner) [static] :3705

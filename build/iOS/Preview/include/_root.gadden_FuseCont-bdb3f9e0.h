@@ -11,7 +11,7 @@ namespace g{struct gadden_FuseControlsControl_Background_Property;}
 
 namespace g{
 
-// internal sealed class gadden_FuseControlsControl_Background_Property :132
+// internal sealed class gadden_FuseControlsControl_Background_Property :140
 // {
 ::g::Uno::UX::Property1_type* gadden_FuseControlsControl_Background_Property_typeof();
 void gadden_FuseControlsControl_Background_Property__ctor_3_fn(gadden_FuseControlsControl_Background_Property* __this, ::g::Fuse::Controls::Control* obj, ::g::Uno::UX::Selector* name);

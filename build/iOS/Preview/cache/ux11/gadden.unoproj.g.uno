@@ -113,6 +113,14 @@ sealed class gadden_FuseControlsTextInputControl_Value_Property: Uno.UX.Property
     public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.TextInputControl)obj).SetValue(v, origin); }
     public override bool SupportsOriginSetter { get { return true; } }
 }
+sealed class gadden_FuseTriggersActionsLaunchUri_Uri_Property: Uno.UX.Property<string>
+{
+    [Uno.WeakReference] readonly Fuse.Triggers.Actions.LaunchUri _obj;
+    public gadden_FuseTriggersActionsLaunchUri_Uri_Property(Fuse.Triggers.Actions.LaunchUri obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override string Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Triggers.Actions.LaunchUri)obj).Uri; }
+    public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Triggers.Actions.LaunchUri)obj).Uri = v; }
+}
 sealed class gadden_FuseControlsImage_Color_Property: Uno.UX.Property<float4>
 {
     [Uno.WeakReference] readonly Fuse.Controls.Image _obj;

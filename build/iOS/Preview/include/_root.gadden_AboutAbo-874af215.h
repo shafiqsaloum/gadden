@@ -11,7 +11,7 @@ namespace g{struct gadden_AboutAboutUs_Text_Property;}
 
 namespace g{
 
-// internal sealed class gadden_AboutAboutUs_Text_Property :175
+// internal sealed class gadden_AboutAboutUs_Text_Property :183
 // {
 ::g::Uno::UX::Property1_type* gadden_AboutAboutUs_Text_Property_typeof();
 void gadden_AboutAboutUs_Text_Property__ctor_3_fn(gadden_AboutAboutUs_Text_Property* __this, ::g::AboutAboutUs* obj, ::g::Uno::UX::Selector* name);

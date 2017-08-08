@@ -10,7 +10,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class gadden_FuseControlsImage_Color_Property :116
+// internal sealed class gadden_FuseControlsImage_Color_Property :124
 // {
 static void gadden_FuseControlsImage_Color_Property_build(uType* type)
 {
@@ -38,32 +38,32 @@ static void gadden_FuseControlsImage_Color_Property_build(uType* type)
     return type;
 }
 
-// public gadden_FuseControlsImage_Color_Property(Fuse.Controls.Image obj, Uno.UX.Selector name) :119
+// public gadden_FuseControlsImage_Color_Property(Fuse.Controls.Image obj, Uno.UX.Selector name) :127
 void gadden_FuseControlsImage_Color_Property__ctor_3_fn(gadden_FuseControlsImage_Color_Property* __this, ::g::Fuse::Controls::Image* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed float4 Get(Uno.UX.PropertyObject obj) :121
+// public override sealed float4 Get(Uno.UX.PropertyObject obj) :129
 void gadden_FuseControlsImage_Color_Property__Get1_fn(gadden_FuseControlsImage_Color_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::Float4* __retval)
 {
     uStackFrame __("gadden_FuseControlsImage_Color_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Fuse::Controls::Image*>(obj, ::TYPES[0/*Fuse.Controls.Image*/]))->Color(), void();
 }
 
-// public gadden_FuseControlsImage_Color_Property New(Fuse.Controls.Image obj, Uno.UX.Selector name) :119
+// public gadden_FuseControlsImage_Color_Property New(Fuse.Controls.Image obj, Uno.UX.Selector name) :127
 void gadden_FuseControlsImage_Color_Property__New1_fn(::g::Fuse::Controls::Image* obj, ::g::Uno::UX::Selector* name, gadden_FuseControlsImage_Color_Property** __retval)
 {
     *__retval = gadden_FuseControlsImage_Color_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :120
+// public override sealed Uno.UX.PropertyObject get_Object() :128
 void gadden_FuseControlsImage_Color_Property__get_Object_fn(gadden_FuseControlsImage_Color_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, float4 v, Uno.UX.IPropertyListener origin) :122
+// public override sealed void Set(Uno.UX.PropertyObject obj, float4 v, Uno.UX.IPropertyListener origin) :130
 void gadden_FuseControlsImage_Color_Property__Set1_fn(gadden_FuseControlsImage_Color_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::Float4* v, uObject* origin)
 {
     uStackFrame __("gadden_FuseControlsImage_Color_Property", "Set(Uno.UX.PropertyObject,float4,Uno.UX.IPropertyListener)");
@@ -71,14 +71,14 @@ void gadden_FuseControlsImage_Color_Property__Set1_fn(gadden_FuseControlsImage_C
     uPtr(uCast< ::g::Fuse::Controls::Image*>(obj, ::TYPES[0/*Fuse.Controls.Image*/]))->Color(v_);
 }
 
-// public gadden_FuseControlsImage_Color_Property(Fuse.Controls.Image obj, Uno.UX.Selector name) [instance] :119
+// public gadden_FuseControlsImage_Color_Property(Fuse.Controls.Image obj, Uno.UX.Selector name) [instance] :127
 void gadden_FuseControlsImage_Color_Property::ctor_3(::g::Fuse::Controls::Image* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public gadden_FuseControlsImage_Color_Property New(Fuse.Controls.Image obj, Uno.UX.Selector name) [static] :119
+// public gadden_FuseControlsImage_Color_Property New(Fuse.Controls.Image obj, Uno.UX.Selector name) [static] :127
 gadden_FuseControlsImage_Color_Property* gadden_FuseControlsImage_Color_Property::New1(::g::Fuse::Controls::Image* obj, ::g::Uno::UX::Selector name)
 {
     gadden_FuseControlsImage_Color_Property* obj1 = (gadden_FuseControlsImage_Color_Property*)uNew(gadden_FuseControlsImage_Color_Property_typeof());

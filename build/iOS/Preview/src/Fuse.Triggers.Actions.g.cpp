@@ -10,10 +10,15 @@
 #include <Fuse.Input.Focus.h>
 #include <Fuse.Internal.Blender-1.h>
 #include <Fuse.Internal.BlenderMap.h>
+#include <Fuse.LauncherImpl.Ema-bf1389b5.h>
+#include <Fuse.LauncherImpl.Int-58fad324.h>
+#include <Fuse.LauncherImpl.MapsLauncher.h>
+#include <Fuse.LauncherImpl.Pho-6b03eff9.h>
 #include <Fuse.LayoutPriority.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IEvent-434826af.h>
 #include <Fuse.Time.h>
+#include <Fuse.Triggers.Actions.Call.h>
 #include <Fuse.Triggers.Actions.Callback.h>
 #include <Fuse.Triggers.Actions.Collapse.h>
 #include <Fuse.Triggers.Actions.Hide.h>
@@ -40,10 +45,13 @@
 #include <Fuse.Triggers.Actions-39642be7.h>
 #include <Fuse.Triggers.Actions-3a870264.h>
 #include <Fuse.Triggers.Actions-458e75fc.h>
+#include <Fuse.Triggers.Actions-57f7a0e.h>
 #include <Fuse.Triggers.Actions-5821cb24.h>
 #include <Fuse.Triggers.Actions-5af09f89.h>
+#include <Fuse.Triggers.Actions-7967284f.h>
 #include <Fuse.Triggers.Actions-79bb5ad.h>
 #include <Fuse.Triggers.Actions-7ea0e0be.h>
+#include <Fuse.Triggers.Actions-7ef45628.h>
 #include <Fuse.Triggers.Actions-873d043e.h>
 #include <Fuse.Triggers.Actions-967f0fff.h>
 #include <Fuse.Triggers.Actions-9b9fd4af.h>
@@ -100,6 +108,7 @@
 #include <Uno.Float4x4.h>
 #include <Uno.Int.h>
 #include <Uno.Matrix.h>
+#include <Uno.Net.Http.Uri.h>
 #include <Uno.Object.h>
 #include <Uno.String.h>
 #include <Uno.UX.Expression-1.h>
@@ -277,6 +286,95 @@ BringToFront* BringToFront::New2()
     BringToFront* obj2 = (BringToFront*)uNew(BringToFront_typeof());
     obj2->ctor_2();
     return obj2;
+}
+// }
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Launcher.Phone/1.0.5/phone/$.uno
+// ----------------------------------------------------------------------------------------------------------
+
+// public sealed class Call :103
+// {
+static void Call_build(uType* type)
+{
+    type->SetFields(9,
+        ::g::Uno::String_typeof(), offsetof(::g::Fuse::Triggers::Actions::Call, _Number), 0);
+    type->Reflection.SetFunctions(3,
+        new uFunction(".ctor", NULL, (void*)Call__New2_fn, 0, true, type, 0),
+        new uFunction("get_Number", NULL, (void*)Call__get_Number_fn, 0, false, ::g::Uno::String_typeof(), 0),
+        new uFunction("set_Number", NULL, (void*)Call__set_Number_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()));
+}
+
+::g::Fuse::Triggers::Actions::TriggerAction_type* Call_typeof()
+{
+    static uSStrong< ::g::Fuse::Triggers::Actions::TriggerAction_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Fuse::Triggers::Actions::TriggerAction_typeof();
+    options.FieldCount = 10;
+    options.ObjectSize = sizeof(Call);
+    options.TypeSize = sizeof(::g::Fuse::Triggers::Actions::TriggerAction_type);
+    type = (::g::Fuse::Triggers::Actions::TriggerAction_type*)uClassType::New("Fuse.Triggers.Actions.Call", options);
+    type->fp_build_ = Call_build;
+    type->fp_ctor_ = (void*)Call__New2_fn;
+    type->fp_Perform = (void(*)(::g::Fuse::Triggers::Actions::TriggerAction*, ::g::Fuse::Node*))Call__Perform_fn;
+    return type;
+}
+
+// public generated Call() :103
+void Call__ctor_2_fn(Call* __this)
+{
+    __this->ctor_2();
+}
+
+// public generated Call New() :103
+void Call__New2_fn(Call** __retval)
+{
+    *__retval = Call::New2();
+}
+
+// public generated string get_Number() :105
+void Call__get_Number_fn(Call* __this, uString** __retval)
+{
+    *__retval = __this->Number();
+}
+
+// public generated void set_Number(string value) :105
+void Call__set_Number_fn(Call* __this, uString* value)
+{
+    __this->Number(value);
+}
+
+// protected override sealed void Perform(Fuse.Node target) :107
+void Call__Perform_fn(Call* __this, ::g::Fuse::Node* target)
+{
+    ::g::Fuse::LauncherImpl::PhoneLauncher::LaunchCall(__this->Number());
+}
+
+// public generated Call() [instance] :103
+void Call::ctor_2()
+{
+    ctor_1();
+}
+
+// public generated string get_Number() [instance] :105
+uString* Call::Number()
+{
+    return _Number;
+}
+
+// public generated void set_Number(string value) [instance] :105
+void Call::Number(uString* value)
+{
+    _Number = value;
+}
+
+// public generated Call New() [static] :103
+Call* Call::New2()
+{
+    Call* obj1 = (Call*)uNew(Call_typeof());
+    obj1->ctor_2();
+    return obj1;
 }
 // }
 
@@ -1557,6 +1655,415 @@ uDelegateType* JSEventHandler_typeof()
         ::g::Fuse::Triggers::Actions::JSEventArgs_typeof());
     return type;
 }
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Launcher.Email/1.0.5/email/$.uno
+// ----------------------------------------------------------------------------------------------------------
+
+// public sealed class LaunchEmail :114
+// {
+static void LaunchEmail_build(uType* type)
+{
+    type->SetFields(9,
+        ::g::Uno::String_typeof(), offsetof(::g::Fuse::Triggers::Actions::LaunchEmail, _BlindCarbonCopy), 0,
+        ::g::Uno::String_typeof(), offsetof(::g::Fuse::Triggers::Actions::LaunchEmail, _CarbonCopy), 0,
+        ::g::Uno::String_typeof(), offsetof(::g::Fuse::Triggers::Actions::LaunchEmail, _Message), 0,
+        ::g::Uno::String_typeof(), offsetof(::g::Fuse::Triggers::Actions::LaunchEmail, _Subject), 0,
+        ::g::Uno::String_typeof(), offsetof(::g::Fuse::Triggers::Actions::LaunchEmail, _To), 0);
+    type->Reflection.SetFunctions(11,
+        new uFunction("get_BlindCarbonCopy", NULL, (void*)LaunchEmail__get_BlindCarbonCopy_fn, 0, false, ::g::Uno::String_typeof(), 0),
+        new uFunction("set_BlindCarbonCopy", NULL, (void*)LaunchEmail__set_BlindCarbonCopy_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
+        new uFunction("get_CarbonCopy", NULL, (void*)LaunchEmail__get_CarbonCopy_fn, 0, false, ::g::Uno::String_typeof(), 0),
+        new uFunction("set_CarbonCopy", NULL, (void*)LaunchEmail__set_CarbonCopy_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
+        new uFunction("get_Message", NULL, (void*)LaunchEmail__get_Message_fn, 0, false, ::g::Uno::String_typeof(), 0),
+        new uFunction("set_Message", NULL, (void*)LaunchEmail__set_Message_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
+        new uFunction(".ctor", NULL, (void*)LaunchEmail__New2_fn, 0, true, type, 0),
+        new uFunction("get_Subject", NULL, (void*)LaunchEmail__get_Subject_fn, 0, false, ::g::Uno::String_typeof(), 0),
+        new uFunction("set_Subject", NULL, (void*)LaunchEmail__set_Subject_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
+        new uFunction("get_To", NULL, (void*)LaunchEmail__get_To_fn, 0, false, ::g::Uno::String_typeof(), 0),
+        new uFunction("set_To", NULL, (void*)LaunchEmail__set_To_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()));
+}
+
+::g::Fuse::Triggers::Actions::TriggerAction_type* LaunchEmail_typeof()
+{
+    static uSStrong< ::g::Fuse::Triggers::Actions::TriggerAction_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Fuse::Triggers::Actions::TriggerAction_typeof();
+    options.FieldCount = 14;
+    options.ObjectSize = sizeof(LaunchEmail);
+    options.TypeSize = sizeof(::g::Fuse::Triggers::Actions::TriggerAction_type);
+    type = (::g::Fuse::Triggers::Actions::TriggerAction_type*)uClassType::New("Fuse.Triggers.Actions.LaunchEmail", options);
+    type->fp_build_ = LaunchEmail_build;
+    type->fp_ctor_ = (void*)LaunchEmail__New2_fn;
+    type->fp_Perform = (void(*)(::g::Fuse::Triggers::Actions::TriggerAction*, ::g::Fuse::Node*))LaunchEmail__Perform_fn;
+    return type;
+}
+
+// public generated LaunchEmail() :114
+void LaunchEmail__ctor_2_fn(LaunchEmail* __this)
+{
+    __this->ctor_2();
+}
+
+// public generated string get_BlindCarbonCopy() :118
+void LaunchEmail__get_BlindCarbonCopy_fn(LaunchEmail* __this, uString** __retval)
+{
+    *__retval = __this->BlindCarbonCopy();
+}
+
+// public generated void set_BlindCarbonCopy(string value) :118
+void LaunchEmail__set_BlindCarbonCopy_fn(LaunchEmail* __this, uString* value)
+{
+    __this->BlindCarbonCopy(value);
+}
+
+// public generated string get_CarbonCopy() :117
+void LaunchEmail__get_CarbonCopy_fn(LaunchEmail* __this, uString** __retval)
+{
+    *__retval = __this->CarbonCopy();
+}
+
+// public generated void set_CarbonCopy(string value) :117
+void LaunchEmail__set_CarbonCopy_fn(LaunchEmail* __this, uString* value)
+{
+    __this->CarbonCopy(value);
+}
+
+// public generated string get_Message() :120
+void LaunchEmail__get_Message_fn(LaunchEmail* __this, uString** __retval)
+{
+    *__retval = __this->Message();
+}
+
+// public generated void set_Message(string value) :120
+void LaunchEmail__set_Message_fn(LaunchEmail* __this, uString* value)
+{
+    __this->Message(value);
+}
+
+// public generated LaunchEmail New() :114
+void LaunchEmail__New2_fn(LaunchEmail** __retval)
+{
+    *__retval = LaunchEmail::New2();
+}
+
+// protected override sealed void Perform(Fuse.Node target) :122
+void LaunchEmail__Perform_fn(LaunchEmail* __this, ::g::Fuse::Node* target)
+{
+    uStackFrame __("Fuse.Triggers.Actions.LaunchEmail", "Perform(Fuse.Node)");
+    ::g::Fuse::LauncherImpl::EmailLauncher::LaunchEmail(__this->To(), __this->CarbonCopy(), __this->BlindCarbonCopy(), __this->Subject(), __this->Message());
+}
+
+// public generated string get_Subject() :119
+void LaunchEmail__get_Subject_fn(LaunchEmail* __this, uString** __retval)
+{
+    *__retval = __this->Subject();
+}
+
+// public generated void set_Subject(string value) :119
+void LaunchEmail__set_Subject_fn(LaunchEmail* __this, uString* value)
+{
+    __this->Subject(value);
+}
+
+// public generated string get_To() :116
+void LaunchEmail__get_To_fn(LaunchEmail* __this, uString** __retval)
+{
+    *__retval = __this->To();
+}
+
+// public generated void set_To(string value) :116
+void LaunchEmail__set_To_fn(LaunchEmail* __this, uString* value)
+{
+    __this->To(value);
+}
+
+// public generated LaunchEmail() [instance] :114
+void LaunchEmail::ctor_2()
+{
+    ctor_1();
+}
+
+// public generated string get_BlindCarbonCopy() [instance] :118
+uString* LaunchEmail::BlindCarbonCopy()
+{
+    return _BlindCarbonCopy;
+}
+
+// public generated void set_BlindCarbonCopy(string value) [instance] :118
+void LaunchEmail::BlindCarbonCopy(uString* value)
+{
+    _BlindCarbonCopy = value;
+}
+
+// public generated string get_CarbonCopy() [instance] :117
+uString* LaunchEmail::CarbonCopy()
+{
+    return _CarbonCopy;
+}
+
+// public generated void set_CarbonCopy(string value) [instance] :117
+void LaunchEmail::CarbonCopy(uString* value)
+{
+    _CarbonCopy = value;
+}
+
+// public generated string get_Message() [instance] :120
+uString* LaunchEmail::Message()
+{
+    return _Message;
+}
+
+// public generated void set_Message(string value) [instance] :120
+void LaunchEmail::Message(uString* value)
+{
+    _Message = value;
+}
+
+// public generated string get_Subject() [instance] :119
+uString* LaunchEmail::Subject()
+{
+    return _Subject;
+}
+
+// public generated void set_Subject(string value) [instance] :119
+void LaunchEmail::Subject(uString* value)
+{
+    _Subject = value;
+}
+
+// public generated string get_To() [instance] :116
+uString* LaunchEmail::To()
+{
+    return _To;
+}
+
+// public generated void set_To(string value) [instance] :116
+void LaunchEmail::To(uString* value)
+{
+    _To = value;
+}
+
+// public generated LaunchEmail New() [static] :114
+LaunchEmail* LaunchEmail::New2()
+{
+    LaunchEmail* obj1 = (LaunchEmail*)uNew(LaunchEmail_typeof());
+    obj1->ctor_2();
+    return obj1;
+}
+// }
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Launcher.Maps/1.0.5/maps/$.uno
+// --------------------------------------------------------------------------------------------------------
+
+// public sealed class LaunchMaps :112
+// {
+static void LaunchMaps_build(uType* type)
+{
+    type->SetFields(9,
+        ::g::Uno::String_typeof(), offsetof(::g::Fuse::Triggers::Actions::LaunchMaps, _Latitude), 0,
+        ::g::Uno::String_typeof(), offsetof(::g::Fuse::Triggers::Actions::LaunchMaps, _Longitude), 0);
+    type->Reflection.SetFunctions(5,
+        new uFunction("get_Latitude", NULL, (void*)LaunchMaps__get_Latitude_fn, 0, false, ::g::Uno::String_typeof(), 0),
+        new uFunction("set_Latitude", NULL, (void*)LaunchMaps__set_Latitude_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
+        new uFunction("get_Longitude", NULL, (void*)LaunchMaps__get_Longitude_fn, 0, false, ::g::Uno::String_typeof(), 0),
+        new uFunction("set_Longitude", NULL, (void*)LaunchMaps__set_Longitude_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
+        new uFunction(".ctor", NULL, (void*)LaunchMaps__New2_fn, 0, true, type, 0));
+}
+
+::g::Fuse::Triggers::Actions::TriggerAction_type* LaunchMaps_typeof()
+{
+    static uSStrong< ::g::Fuse::Triggers::Actions::TriggerAction_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Fuse::Triggers::Actions::TriggerAction_typeof();
+    options.FieldCount = 11;
+    options.ObjectSize = sizeof(LaunchMaps);
+    options.TypeSize = sizeof(::g::Fuse::Triggers::Actions::TriggerAction_type);
+    type = (::g::Fuse::Triggers::Actions::TriggerAction_type*)uClassType::New("Fuse.Triggers.Actions.LaunchMaps", options);
+    type->fp_build_ = LaunchMaps_build;
+    type->fp_ctor_ = (void*)LaunchMaps__New2_fn;
+    type->fp_Perform = (void(*)(::g::Fuse::Triggers::Actions::TriggerAction*, ::g::Fuse::Node*))LaunchMaps__Perform_fn;
+    return type;
+}
+
+// public generated LaunchMaps() :112
+void LaunchMaps__ctor_2_fn(LaunchMaps* __this)
+{
+    __this->ctor_2();
+}
+
+// public generated string get_Latitude() :114
+void LaunchMaps__get_Latitude_fn(LaunchMaps* __this, uString** __retval)
+{
+    *__retval = __this->Latitude();
+}
+
+// public generated void set_Latitude(string value) :114
+void LaunchMaps__set_Latitude_fn(LaunchMaps* __this, uString* value)
+{
+    __this->Latitude(value);
+}
+
+// public generated string get_Longitude() :115
+void LaunchMaps__get_Longitude_fn(LaunchMaps* __this, uString** __retval)
+{
+    *__retval = __this->Longitude();
+}
+
+// public generated void set_Longitude(string value) :115
+void LaunchMaps__set_Longitude_fn(LaunchMaps* __this, uString* value)
+{
+    __this->Longitude(value);
+}
+
+// public generated LaunchMaps New() :112
+void LaunchMaps__New2_fn(LaunchMaps** __retval)
+{
+    *__retval = LaunchMaps::New2();
+}
+
+// protected override sealed void Perform(Fuse.Node target) :117
+void LaunchMaps__Perform_fn(LaunchMaps* __this, ::g::Fuse::Node* target)
+{
+    uStackFrame __("Fuse.Triggers.Actions.LaunchMaps", "Perform(Fuse.Node)");
+    double lat = 0.0;
+    double lon = 0.0;
+
+    if (::g::Uno::Double::TryParse(__this->Latitude(), &lat) && ::g::Uno::Double::TryParse(__this->Longitude(), &lon))
+        ::g::Fuse::LauncherImpl::MapsLauncher::LaunchMaps(lat, lon);
+}
+
+// public generated LaunchMaps() [instance] :112
+void LaunchMaps::ctor_2()
+{
+    ctor_1();
+}
+
+// public generated string get_Latitude() [instance] :114
+uString* LaunchMaps::Latitude()
+{
+    return _Latitude;
+}
+
+// public generated void set_Latitude(string value) [instance] :114
+void LaunchMaps::Latitude(uString* value)
+{
+    _Latitude = value;
+}
+
+// public generated string get_Longitude() [instance] :115
+uString* LaunchMaps::Longitude()
+{
+    return _Longitude;
+}
+
+// public generated void set_Longitude(string value) [instance] :115
+void LaunchMaps::Longitude(uString* value)
+{
+    _Longitude = value;
+}
+
+// public generated LaunchMaps New() [static] :112
+LaunchMaps* LaunchMaps::New2()
+{
+    LaunchMaps* obj1 = (LaunchMaps*)uNew(LaunchMaps_typeof());
+    obj1->ctor_2();
+    return obj1;
+}
+// }
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Launcher.InterApp/1.0.5/interapp/$.uno
+// ----------------------------------------------------------------------------------------------------------------
+
+// public sealed class LaunchUri :94
+// {
+static void LaunchUri_build(uType* type)
+{
+    type->SetFields(9,
+        ::g::Uno::String_typeof(), offsetof(::g::Fuse::Triggers::Actions::LaunchUri, _Uri), 0);
+    type->Reflection.SetFunctions(3,
+        new uFunction(".ctor", NULL, (void*)LaunchUri__New2_fn, 0, true, type, 0),
+        new uFunction("get_Uri", NULL, (void*)LaunchUri__get_Uri_fn, 0, false, ::g::Uno::String_typeof(), 0),
+        new uFunction("set_Uri", NULL, (void*)LaunchUri__set_Uri_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::String_typeof()));
+}
+
+::g::Fuse::Triggers::Actions::TriggerAction_type* LaunchUri_typeof()
+{
+    static uSStrong< ::g::Fuse::Triggers::Actions::TriggerAction_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Fuse::Triggers::Actions::TriggerAction_typeof();
+    options.FieldCount = 10;
+    options.ObjectSize = sizeof(LaunchUri);
+    options.TypeSize = sizeof(::g::Fuse::Triggers::Actions::TriggerAction_type);
+    type = (::g::Fuse::Triggers::Actions::TriggerAction_type*)uClassType::New("Fuse.Triggers.Actions.LaunchUri", options);
+    type->fp_build_ = LaunchUri_build;
+    type->fp_ctor_ = (void*)LaunchUri__New2_fn;
+    type->fp_Perform = (void(*)(::g::Fuse::Triggers::Actions::TriggerAction*, ::g::Fuse::Node*))LaunchUri__Perform_fn;
+    return type;
+}
+
+// public generated LaunchUri() :94
+void LaunchUri__ctor_2_fn(LaunchUri* __this)
+{
+    __this->ctor_2();
+}
+
+// public generated LaunchUri New() :94
+void LaunchUri__New2_fn(LaunchUri** __retval)
+{
+    *__retval = LaunchUri::New2();
+}
+
+// protected override sealed void Perform(Fuse.Node target) :98
+void LaunchUri__Perform_fn(LaunchUri* __this, ::g::Fuse::Node* target)
+{
+    uStackFrame __("Fuse.Triggers.Actions.LaunchUri", "Perform(Fuse.Node)");
+    ::g::Fuse::LauncherImpl::InterAppLauncher::LaunchUri(::g::Uno::Net::Http::Uri::New1(__this->Uri()));
+}
+
+// public generated string get_Uri() :96
+void LaunchUri__get_Uri_fn(LaunchUri* __this, uString** __retval)
+{
+    *__retval = __this->Uri();
+}
+
+// public generated void set_Uri(string value) :96
+void LaunchUri__set_Uri_fn(LaunchUri* __this, uString* value)
+{
+    __this->Uri(value);
+}
+
+// public generated LaunchUri() [instance] :94
+void LaunchUri::ctor_2()
+{
+    ctor_1();
+}
+
+// public generated string get_Uri() [instance] :96
+uString* LaunchUri::Uri()
+{
+    return _Uri;
+}
+
+// public generated void set_Uri(string value) [instance] :96
+void LaunchUri::Uri(uString* value)
+{
+    _Uri = value;
+}
+
+// public generated LaunchUri New() [static] :94
+LaunchUri* LaunchUri::New2()
+{
+    LaunchUri* obj1 = (LaunchUri*)uNew(LaunchUri_typeof());
+    obj1->ctor_2();
+    return obj1;
+}
+// }
 
 // /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
 // ------------------------------------------------------------------------------------------------------

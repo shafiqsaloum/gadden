@@ -32,7 +32,11 @@ TODO:
               </Rectangle>
 
               <!-- Get website address from JSON -->
-              <Paragraph Margin="20,20,0,0" Value="{link}" IsReadOnly="True" />
+              <Paragraph Margin="20,20,0,0" Value="{link}" IsReadOnly="True" >
+                <Clicked>
+                  <LaunchUri Uri="{link}" />
+                </Clicked>
+              </Paragraph>
 
             </StackPanel>
           </Each>

@@ -1,6 +1,6 @@
 <!--
 TODO:
-  * Create an animation where the detail page slides in
+  * Add working ScrollView to details page
  -->
 
 <Page>
@@ -42,10 +42,10 @@ TODO:
 
   <!-- Output newsfeed details -->
   <Panel ux:Name="NewsDetails" Opacity="0" >
-    <Rectangle Width="100%" Height="100%"  Background="Black" ZOffset="1.0">
-  		<With Data="{selectedArticle}">
-        <ScrollView>
-          <StackPanel Width="100%" Height="100%">
+    <Rectangle Width="100%" Height="100%" Background="Black" ZOffset="1.0">
+      <ScrollView>
+        <StackPanel>
+  		    <With Data="{selectedArticle}">
 
             <!-- Get image from JSON -->
             <Panel Width="100%">
@@ -63,19 +63,22 @@ TODO:
 
             <!-- Get text from JSON -->
             <Panel Margin="20">
-              <StackPanel>
-                <Paragraph Value="{text}" />
-              </StackPanel>
+              <Paragraph Value="{text}" />
+            </Panel>
+            <Panel Margin="20">
+              <Paragraph Value="{text}" />
             </Panel>
 
-            <!-- Includes background locally -->
-            <Image File="../../assets/BackgroundNewsDetails.png" Width="100%" Layer="Background" Alignment="BottomCenter"/>
-
-          </StackPanel>
-        </ScrollView>
-    	</With>
+          </With>
+        </StackPanel>
+      </ScrollView>
     </Rectangle>
   </Panel>
+
+  <!-- Includes background locally -->
+  <Image File="../../assets/BackgroundNewsDetails.png" Width="100%" Layer="Background" Alignment="BottomCenter"/>
+
+
 
   <!-- Background image -->
   <Image ux:Name="BackgroundImage" Opacity="1" Alignment="Center" File="../../assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />

@@ -71,13 +71,14 @@ TODO:
             <Panel Margin="20">
               <Paragraph Value="{description}" />
             </Panel>
-            <!-- Butotn -->
+            <!-- Button -->
             <Panel Margin="0,0,0,50">
               <Rectangle Background="Black" Width="70%" Height="50" Alignment="Center" Margin="20,0,0,0">
                 <Stroke Width="1" Color="White" />
                 <Paragraph FontSize="16" Alignment="Center" Value="BOKA FÖRELÄSNING" />
               </Rectangle>
             </Panel>
+
           </With>
         </StackPanel>
       </ScrollView>

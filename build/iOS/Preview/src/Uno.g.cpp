@@ -1814,8 +1814,10 @@ Byte4 Byte4__New2(uint8_t x, uint8_t y, uint8_t z, uint8_t w)
 static void Char_build(uType* type)
 {
     ::TYPES[5] = uObject_typeof();
-    type->Reflection.SetFunctions(5,
+    type->Reflection.SetFunctions(7,
         new uFunction("IsDigit", NULL, (void*)Char__IsDigit_fn, 0, true, ::g::Uno::Bool_typeof(), 1, type),
+        new uFunction("IsLetter", NULL, (void*)Char__IsLetter_fn, 0, true, ::g::Uno::Bool_typeof(), 1, type),
+        new uFunction("IsLower", NULL, (void*)Char__IsLower_fn, 0, true, ::g::Uno::Bool_typeof(), 1, type),
         new uFunction("IsUpper", NULL, (void*)Char__IsUpper_fn, 0, true, ::g::Uno::Bool_typeof(), 1, type),
         new uFunction("IsWhiteSpace", NULL, (void*)Char__IsWhiteSpace_fn, 0, true, ::g::Uno::Bool_typeof(), 1, type),
         new uFunction("ToLower", NULL, (void*)Char__ToLower_fn, 0, true, type, 1, type),
@@ -1857,6 +1859,18 @@ void Char__IsDigit_fn(uChar* c, bool* __retval)
     *__retval = Char::IsDigit(*c);
 }
 
+// public static bool IsLetter(char c) :1204
+void Char__IsLetter_fn(uChar* c, bool* __retval)
+{
+    *__retval = Char::IsLetter(*c);
+}
+
+// public static bool IsLower(char c) :1191
+void Char__IsLower_fn(uChar* c, bool* __retval)
+{
+    *__retval = Char::IsLower(*c);
+}
+
 // public static bool IsUpper(char c) :1198
 void Char__IsUpper_fn(uChar* c, bool* __retval)
 {
@@ -1893,6 +1907,18 @@ void Char__ToUpper_fn(uChar* c, uChar* __retval)
 bool Char::IsDigit(uChar c)
 {
     return (c >= '0') && (c <= '9');
+}
+
+// public static bool IsLetter(char c) [static] :1204
+bool Char::IsLetter(uChar c)
+{
+    return ((((((Char::IsUpper(c) || Char::IsLower(c)) || ((c >= 453) && (c <= 8188))) || ((c >= 688) && (c <= 705))) || ((c >= 7468) && (c <= 7521))) || ((c >= 1488) && (c <= 1514))) || ((c >= 1569) && (c <= 1594))) || ((c >= 19968) && (c <= 40899));
+}
+
+// public static bool IsLower(char c) [static] :1191
+bool Char::IsLower(uChar c)
+{
+    return (((c >= 'a') && (c <= 'z')) || ((c >= 940) && (c <= 974))) || ((c >= 1072) && (c <= 1103));
 }
 
 // public static bool IsUpper(char c) [static] :1198

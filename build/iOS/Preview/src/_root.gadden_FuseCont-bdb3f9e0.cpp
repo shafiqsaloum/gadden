@@ -10,7 +10,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class gadden_FuseControlsControl_Background_Property :132
+// internal sealed class gadden_FuseControlsControl_Background_Property :140
 // {
 static void gadden_FuseControlsControl_Background_Property_build(uType* type)
 {
@@ -38,46 +38,46 @@ static void gadden_FuseControlsControl_Background_Property_build(uType* type)
     return type;
 }
 
-// public gadden_FuseControlsControl_Background_Property(Fuse.Controls.Control obj, Uno.UX.Selector name) :135
+// public gadden_FuseControlsControl_Background_Property(Fuse.Controls.Control obj, Uno.UX.Selector name) :143
 void gadden_FuseControlsControl_Background_Property__ctor_3_fn(gadden_FuseControlsControl_Background_Property* __this, ::g::Fuse::Controls::Control* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed Fuse.Drawing.Brush Get(Uno.UX.PropertyObject obj) :137
+// public override sealed Fuse.Drawing.Brush Get(Uno.UX.PropertyObject obj) :145
 void gadden_FuseControlsControl_Background_Property__Get1_fn(gadden_FuseControlsControl_Background_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Fuse::Drawing::Brush** __retval)
 {
     uStackFrame __("gadden_FuseControlsControl_Background_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Fuse::Controls::Control*>(obj, ::TYPES[0/*Fuse.Controls.Control*/]))->Background(), void();
 }
 
-// public gadden_FuseControlsControl_Background_Property New(Fuse.Controls.Control obj, Uno.UX.Selector name) :135
+// public gadden_FuseControlsControl_Background_Property New(Fuse.Controls.Control obj, Uno.UX.Selector name) :143
 void gadden_FuseControlsControl_Background_Property__New1_fn(::g::Fuse::Controls::Control* obj, ::g::Uno::UX::Selector* name, gadden_FuseControlsControl_Background_Property** __retval)
 {
     *__retval = gadden_FuseControlsControl_Background_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :136
+// public override sealed Uno.UX.PropertyObject get_Object() :144
 void gadden_FuseControlsControl_Background_Property__get_Object_fn(gadden_FuseControlsControl_Background_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, Fuse.Drawing.Brush v, Uno.UX.IPropertyListener origin) :138
+// public override sealed void Set(Uno.UX.PropertyObject obj, Fuse.Drawing.Brush v, Uno.UX.IPropertyListener origin) :146
 void gadden_FuseControlsControl_Background_Property__Set1_fn(gadden_FuseControlsControl_Background_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Fuse::Drawing::Brush* v, uObject* origin)
 {
     uStackFrame __("gadden_FuseControlsControl_Background_Property", "Set(Uno.UX.PropertyObject,Fuse.Drawing.Brush,Uno.UX.IPropertyListener)");
     uPtr(uCast< ::g::Fuse::Controls::Control*>(obj, ::TYPES[0/*Fuse.Controls.Control*/]))->Background(v);
 }
 
-// public gadden_FuseControlsControl_Background_Property(Fuse.Controls.Control obj, Uno.UX.Selector name) [instance] :135
+// public gadden_FuseControlsControl_Background_Property(Fuse.Controls.Control obj, Uno.UX.Selector name) [instance] :143
 void gadden_FuseControlsControl_Background_Property::ctor_3(::g::Fuse::Controls::Control* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public gadden_FuseControlsControl_Background_Property New(Fuse.Controls.Control obj, Uno.UX.Selector name) [static] :135
+// public gadden_FuseControlsControl_Background_Property New(Fuse.Controls.Control obj, Uno.UX.Selector name) [static] :143
 gadden_FuseControlsControl_Background_Property* gadden_FuseControlsControl_Background_Property::New1(::g::Fuse::Controls::Control* obj, ::g::Uno::UX::Selector name)
 {
     gadden_FuseControlsControl_Background_Property* obj1 = (gadden_FuseControlsControl_Background_Property*)uNew(gadden_FuseControlsControl_Background_Property_typeof());

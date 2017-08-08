@@ -5,8 +5,13 @@
 #include <Fuse.Diagnostic.h>
 #include <Fuse.Diagnostics.h>
 #include <Fuse.DiagnosticType.h>
+#include <Fuse.LauncherImpl.Ema-bf1389b5.h>
+#include <Fuse.LauncherImpl.Int-58fad324.h>
+#include <Fuse.LauncherImpl.MapsLauncher.h>
+#include <Fuse.LauncherImpl.Pho-6b03eff9.h>
 #include <Fuse.Marshal.h>
 #include <Fuse.MarshalException.h>
+#include <Fuse.Platform.InterApp.h>
 #include <Fuse.Reactive.Console.h>
 #include <Fuse.Reactive.DebugLog.h>
 #include <Fuse.Reactive.FuseJS.-3852eb71.h>
@@ -19,7 +24,11 @@
 #include <Fuse.Reactive.FuseJS.-97046318.h>
 #include <Fuse.Reactive.FuseJS.-bbc0df6b.h>
 #include <Fuse.Reactive.FuseJS.Builtins.h>
+#include <Fuse.Reactive.FuseJS.Email.h>
 #include <Fuse.Reactive.FuseJS.Http.h>
+#include <Fuse.Reactive.FuseJS.InterApp.h>
+#include <Fuse.Reactive.FuseJS.Maps.h>
+#include <Fuse.Reactive.FuseJS.Phone.h>
 #include <Fuse.Scripting.Callback.h>
 #include <Fuse.Scripting.Context.h>
 #include <Fuse.Scripting.Error.h>
@@ -30,8 +39,10 @@
 #include <Fuse.Scripting.Module.h>
 #include <Fuse.Scripting.ModuleResult.h>
 #include <Fuse.Scripting.NativeCallback.h>
+#include <Fuse.Scripting.NativeEvent.h>
 #include <Fuse.Scripting.NativeFunction.h>
 #include <Fuse.Scripting.NativeMember.h>
+#include <Fuse.Scripting.NativeModule.h>
 #include <Fuse.Scripting.Object.h>
 #include <Fuse.Scripting.Value.h>
 #include <Uno.Action.h>
@@ -72,14 +83,15 @@
 #include <Uno.Net.Http.HttpResponseType.h>
 #include <Uno.Net.Http.HttpStat-138f9460.h>
 #include <Uno.Net.Http.InvalidR-d0abcd6.h>
+#include <Uno.Net.Http.Uri.h>
 #include <Uno.Object.h>
 #include <Uno.Predicate-1.h>
 #include <Uno.String.h>
 #include <Uno.Threading.IDispatcher.h>
 #include <Uno.UX.FileSource.h>
 #include <Uno.UX.Resource.h>
-static uString* STRINGS[52];
-static uType* TYPES[39];
+static uString* STRINGS[64];
+static uType* TYPES[40];
 
 namespace g{
 namespace Fuse{
@@ -394,6 +406,101 @@ DiagnosticsImplModule* DiagnosticsImplModule::New2()
 }
 // }
 
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Launcher.Email/1.0.5/email/$.uno
+// ----------------------------------------------------------------------------------------------------------
+
+// public sealed class Email :150
+// {
+static void Email_build(uType* type)
+{
+    ::STRINGS[17] = uString::Const("FuseJS/Email");
+    ::STRINGS[18] = uString::Const("compose");
+    ::TYPES[5] = ::g::Fuse::Scripting::NativeCallback_typeof();
+    ::TYPES[8] = ::g::Uno::String_typeof();
+    type->SetInterfaces(
+        ::g::Uno::IDisposable_typeof(), offsetof(::g::Fuse::Scripting::NativeModule_type, interface0),
+        ::g::Fuse::Scripting::IModuleProvider_typeof(), offsetof(::g::Fuse::Scripting::NativeModule_type, interface1));
+    type->SetFields(4,
+        type, (uintptr_t)&::g::Fuse::Reactive::FuseJS::Email::_instance_, uFieldFlagsStatic);
+    type->Reflection.SetFunctions(2,
+        new uFunction("Compose", NULL, (void*)Email__Compose_fn, 0, true, uObject_typeof(), 2, ::g::Fuse::Scripting::Context_typeof(), uObject_typeof()->Array()),
+        new uFunction(".ctor", NULL, (void*)Email__New2_fn, 0, true, type, 0));
+}
+
+::g::Fuse::Scripting::NativeModule_type* Email_typeof()
+{
+    static uSStrong< ::g::Fuse::Scripting::NativeModule_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Fuse::Scripting::NativeModule_typeof();
+    options.FieldCount = 5;
+    options.InterfaceCount = 2;
+    options.ObjectSize = sizeof(Email);
+    options.TypeSize = sizeof(::g::Fuse::Scripting::NativeModule_type);
+    type = (::g::Fuse::Scripting::NativeModule_type*)uClassType::New("Fuse.Reactive.FuseJS.Email", options);
+    type->fp_build_ = Email_build;
+    type->fp_ctor_ = (void*)Email__New2_fn;
+    type->interface1.fp_GetModule = (void(*)(uObject*, ::g::Fuse::Scripting::Module**))::g::Fuse::Scripting::NativeModule__FuseScriptingIModuleProviderGetModule_fn;
+    type->interface0.fp_Dispose = (void(*)(uObject*))::g::Fuse::Scripting::Module__Dispose_fn;
+    return type;
+}
+
+// public Email() :154
+void Email__ctor_2_fn(Email* __this)
+{
+    __this->ctor_2();
+}
+
+// public static object Compose(Fuse.Scripting.Context context, object[] args) :177
+void Email__Compose_fn(::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
+{
+    *__retval = Email::Compose(context, args);
+}
+
+// public Email New() :154
+void Email__New2_fn(Email** __retval)
+{
+    *__retval = Email::New2();
+}
+
+uSStrong<Email*> Email::_instance_;
+
+// public Email() [instance] :154
+void Email::ctor_2()
+{
+    uStackFrame __("Fuse.Reactive.FuseJS.Email", ".ctor()");
+    ctor_1();
+
+    if (Email::_instance_ != NULL)
+        return;
+
+    ::g::Uno::UX::Resource::SetGlobalKey(Email::_instance_ = this, ::STRINGS[17/*"FuseJS/Email"*/]);
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[18/*"compose"*/], uDelegate::New(::TYPES[5/*Fuse.Scripting.NativeCallback*/], (void*)Email__Compose_fn)));
+}
+
+// public static object Compose(Fuse.Scripting.Context context, object[] args) [static] :177
+uObject* Email::Compose(::g::Fuse::Scripting::Context* context, uArray* args)
+{
+    uStackFrame __("Fuse.Reactive.FuseJS.Email", "Compose(Fuse.Scripting.Context,object[])");
+    uString* to = uCast<uString*>(uPtr(args)->Strong<uObject*>(0), ::TYPES[8/*string*/]);
+    uString* cc = uCast<uString*>(args->Strong<uObject*>(1), ::TYPES[8/*string*/]);
+    uString* bcc = uCast<uString*>(args->Strong<uObject*>(2), ::TYPES[8/*string*/]);
+    uString* subject = uCast<uString*>(args->Strong<uObject*>(3), ::TYPES[8/*string*/]);
+    uString* message = uCast<uString*>(args->Strong<uObject*>(4), ::TYPES[8/*string*/]);
+    ::g::Fuse::LauncherImpl::EmailLauncher::LaunchEmail(to, cc, bcc, subject, message);
+    return NULL;
+}
+
+// public Email New() [static] :154
+Email* Email::New2()
+{
+    Email* obj1 = (Email*)uNew(Email_typeof());
+    obj1->ctor_2();
+    return obj1;
+}
+// }
+
 // /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/1.0.5/fusejs/$.uno
 // ----------------------------------------------------------------------------------------------------------------
 
@@ -401,7 +508,7 @@ DiagnosticsImplModule* DiagnosticsImplModule::New2()
 // {
 static void Http__FunctionClosure_build(uType* type)
 {
-    ::TYPES[8] = ::g::Fuse::Scripting::Callback_typeof();
+    ::TYPES[9] = ::g::Fuse::Scripting::Callback_typeof();
     type->SetFields(0,
         ::g::Uno::Func2_typeof()->MakeType(::g::Fuse::Scripting::Context_typeof(), uObject_typeof()->Array(), uObject_typeof(), NULL), offsetof(::g::Fuse::Reactive::FuseJS::Http__FunctionClosure, _callback), 0,
         ::g::Fuse::Scripting::Context_typeof(), offsetof(::g::Fuse::Reactive::FuseJS::Http__FunctionClosure, _context), 0);
@@ -455,7 +562,7 @@ void Http__FunctionClosure::ctor_(::g::Fuse::Scripting::Context* context, uDeleg
 // public Fuse.Scripting.Callback get_Callback() [instance] :312
 uDelegate* Http__FunctionClosure::Callback()
 {
-    return uDelegate::New(::TYPES[8/*Fuse.Scripting.Callback*/], (void*)Http__FunctionClosure__function_fn, this);
+    return uDelegate::New(::TYPES[9/*Fuse.Scripting.Callback*/], (void*)Http__FunctionClosure__function_fn, this);
 }
 
 // private object function(object[] args) [instance] :305
@@ -481,9 +588,9 @@ Http__FunctionClosure* Http__FunctionClosure::New1(::g::Fuse::Scripting::Context
 // {
 static void Http__FuseJSHttpClient_build(uType* type)
 {
-    ::STRINGS[17] = uString::Const("createRequest");
-    ::TYPES[8] = ::g::Fuse::Scripting::Callback_typeof();
-    ::TYPES[9] = ::g::Uno::String_typeof();
+    ::STRINGS[19] = uString::Const("createRequest");
+    ::TYPES[9] = ::g::Fuse::Scripting::Callback_typeof();
+    ::TYPES[8] = ::g::Uno::String_typeof();
     type->SetFields(0,
         ::g::Uno::Net::Http::HttpMessageHandler_typeof(), offsetof(::g::Fuse::Reactive::FuseJS::Http__FuseJSHttpClient, _client), 0,
         ::g::Fuse::Scripting::Context_typeof(), offsetof(::g::Fuse::Reactive::FuseJS::Http__FuseJSHttpClient, _context), 0,
@@ -541,15 +648,15 @@ void Http__FuseJSHttpClient::ctor_(::g::Fuse::Scripting::Context* context)
     _context = context;
     _client = ::g::Uno::Net::Http::HttpMessageHandler::New1();
     Obj(uPtr(context)->NewObject());
-    uPtr(Obj())->Item(::STRINGS[17/*"createRequest"*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpClient__CreateRequest_fn, this));
+    uPtr(Obj())->Item(::STRINGS[19/*"createRequest"*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpClient__CreateRequest_fn, this));
 }
 
 // private object CreateRequest(object[] args) [instance] :332
 uObject* Http__FuseJSHttpClient::CreateRequest(uArray* args)
 {
     uStackFrame __("Fuse.Reactive.FuseJS.Http.FuseJSHttpClient", "CreateRequest(object[])");
-    uString* method = uAs<uString*>(uPtr(args)->Strong<uObject*>(0), ::TYPES[9/*string*/]);
-    uString* url = uAs<uString*>(args->Strong<uObject*>(1), ::TYPES[9/*string*/]);
+    uString* method = uAs<uString*>(uPtr(args)->Strong<uObject*>(0), ::TYPES[8/*string*/]);
+    uString* url = uAs<uString*>(args->Strong<uObject*>(1), ::TYPES[8/*string*/]);
     return ::g::Fuse::Reactive::FuseJS::Http__FuseJSHttpRequest::New1(_context, uPtr(_client)->CreateRequest1(method, url, uPtr(_context)->Dispatcher()))->Obj();
 }
 
@@ -581,33 +688,33 @@ Http__FuseJSHttpClient* Http__FuseJSHttpClient::New1(::g::Fuse::Scripting::Conte
 // {
 static void Http__FuseJSHttpRequest_build(uType* type)
 {
-    ::STRINGS[18] = uString::Const("enableCache");
-    ::STRINGS[19] = uString::Const("setTimeout");
-    ::STRINGS[20] = uString::Const("setResponseType");
-    ::STRINGS[21] = uString::Const("getResponseType");
-    ::STRINGS[22] = uString::Const("sendAsync");
-    ::STRINGS[23] = uString::Const("abort");
-    ::STRINGS[24] = uString::Const("setHeader");
-    ::STRINGS[25] = uString::Const("getResponseHeader");
-    ::STRINGS[26] = uString::Const("getResponseHeaders");
-    ::STRINGS[27] = uString::Const("getState");
-    ::STRINGS[28] = uString::Const("getResponseStatus");
-    ::STRINGS[29] = uString::Const("getResponseReasonPhrase");
-    ::STRINGS[30] = uString::Const("getResponseContentString");
-    ::STRINGS[31] = uString::Const("getResponseContentByteArray");
-    ::STRINGS[32] = uString::Const("This operation is illegal after request has finished");
-    ::STRINGS[33] = uString::Const("Unable to get header.");
-    ::STRINGS[34] = uString::Const("onabort");
-    ::STRINGS[35] = uString::Const("ondone");
-    ::STRINGS[36] = uString::Const("onerror");
-    ::STRINGS[37] = uString::Const("onprogress");
-    ::STRINGS[38] = uString::Const("onstatechanged");
-    ::STRINGS[39] = uString::Const("ontimeout");
-    ::STRINGS[40] = uString::Const("buffer");
+    ::STRINGS[20] = uString::Const("enableCache");
+    ::STRINGS[21] = uString::Const("setTimeout");
+    ::STRINGS[22] = uString::Const("setResponseType");
+    ::STRINGS[23] = uString::Const("getResponseType");
+    ::STRINGS[24] = uString::Const("sendAsync");
+    ::STRINGS[25] = uString::Const("abort");
+    ::STRINGS[26] = uString::Const("setHeader");
+    ::STRINGS[27] = uString::Const("getResponseHeader");
+    ::STRINGS[28] = uString::Const("getResponseHeaders");
+    ::STRINGS[29] = uString::Const("getState");
+    ::STRINGS[30] = uString::Const("getResponseStatus");
+    ::STRINGS[31] = uString::Const("getResponseReasonPhrase");
+    ::STRINGS[32] = uString::Const("getResponseContentString");
+    ::STRINGS[33] = uString::Const("getResponseContentByteArray");
+    ::STRINGS[34] = uString::Const("This operation is illegal after request has finished");
+    ::STRINGS[35] = uString::Const("Unable to get header.");
+    ::STRINGS[36] = uString::Const("onabort");
+    ::STRINGS[37] = uString::Const("ondone");
+    ::STRINGS[38] = uString::Const("onerror");
+    ::STRINGS[39] = uString::Const("onprogress");
+    ::STRINGS[40] = uString::Const("onstatechanged");
+    ::STRINGS[41] = uString::Const("ontimeout");
+    ::STRINGS[42] = uString::Const("buffer");
     ::TYPES[10] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::Net::Http::HttpMessageHandlerRequest_typeof(), NULL);
     ::TYPES[11] = ::g::Uno::Action2_typeof()->MakeType(::g::Uno::Net::Http::HttpMessageHandlerRequest_typeof(), ::g::Uno::String_typeof(), NULL);
     ::TYPES[12] = ::g::Uno::Action4_typeof()->MakeType(::g::Uno::Net::Http::HttpMessageHandlerRequest_typeof(), ::g::Uno::Int_typeof(), ::g::Uno::Int_typeof(), ::g::Uno::Bool_typeof(), NULL);
-    ::TYPES[8] = ::g::Fuse::Scripting::Callback_typeof();
+    ::TYPES[9] = ::g::Fuse::Scripting::Callback_typeof();
     ::TYPES[13] = ::g::Fuse::Scripting::JSCallback_typeof()->MakeMethod(0/*FromAction<int>*/, ::g::Uno::Int_typeof(), NULL);
     ::TYPES[14] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::Int_typeof(), NULL);
     ::TYPES[15] = ::g::Uno::Action_typeof();
@@ -621,14 +728,14 @@ static void Http__FuseJSHttpRequest_build(uType* type)
     ::TYPES[23] = ::g::Uno::Func_typeof()->MakeType(::g::Uno::Int_typeof(), NULL);
     ::TYPES[24] = ::g::Uno::Exception_typeof();
     ::TYPES[25] = ::g::Uno::Byte_typeof()->Array();
-    ::TYPES[9] = ::g::Uno::String_typeof();
+    ::TYPES[8] = ::g::Uno::String_typeof();
     ::TYPES[2] = ::g::Fuse::Scripting::Function_typeof();
     ::TYPES[3] = uObject_typeof()->Array();
     ::TYPES[26] = ::g::Fuse::Scripting::Object_typeof();
     ::TYPES[27] = ::g::Uno::Int_typeof();
     type->SetFields(0,
         uObject_typeof(), offsetof(::g::Fuse::Reactive::FuseJS::Http__FuseJSHttpRequest, _cachedResponseContent), 0,
-        ::TYPES[9/*string*/], offsetof(::g::Fuse::Reactive::FuseJS::Http__FuseJSHttpRequest, _cachedResponseHeaders), 0,
+        ::TYPES[8/*string*/], offsetof(::g::Fuse::Reactive::FuseJS::Http__FuseJSHttpRequest, _cachedResponseHeaders), 0,
         ::TYPES[27/*int*/], offsetof(::g::Fuse::Reactive::FuseJS::Http__FuseJSHttpRequest, _cachedResponseStatus), 0,
         ::g::Uno::Net::Http::HttpResponseType_typeof(), offsetof(::g::Fuse::Reactive::FuseJS::Http__FuseJSHttpRequest, _cachedResponseType), 0,
         ::g::Uno::Net::Http::HttpRequestState_typeof(), offsetof(::g::Fuse::Reactive::FuseJS::Http__FuseJSHttpRequest, _finalState), 0,
@@ -818,20 +925,20 @@ void Http__FuseJSHttpRequest::ctor_(::g::Fuse::Scripting::Context* context, ::g:
     uPtr(_req)->add_Done(uDelegate::New(::TYPES[10/*Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest>*/], (void*)Http__FuseJSHttpRequest__OnDone_fn, this));
     uPtr(_req)->add_StateChanged(uDelegate::New(::TYPES[10/*Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest>*/], (void*)Http__FuseJSHttpRequest__OnStateChanged_fn, this));
     uPtr(_req)->add_Progress(uDelegate::New(::TYPES[12/*Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, int, int, bool>*/], (void*)Http__FuseJSHttpRequest__OnProgress_fn, this));
-    uPtr(Obj())->Item(::STRINGS[18/*"enableCache"*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__EnableCache_fn, this));
-    uPtr(Obj())->Item(::STRINGS[19/*"setTimeout"*/], ::g::Fuse::Scripting::JSCallback::FromAction1(::TYPES[13/*Fuse.Scripting.JSCallback.FromAction<int>*/], uDelegate::New(::TYPES[14/*Uno.Action<int>*/], (void*)Http__FuseJSHttpRequest__SetTimeout_fn, this)));
-    uPtr(Obj())->Item(::STRINGS[20/*"setResponse...*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__SetResponseType_fn, this));
-    uPtr(Obj())->Item(::STRINGS[21/*"getResponse...*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__GetResponseType_fn, this));
-    uPtr(Obj())->Item(::STRINGS[22/*"sendAsync"*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__SendAsync_fn, this));
-    uPtr(Obj())->Item(::STRINGS[23/*"abort"*/], ::g::Fuse::Scripting::JSCallback::FromAction(uDelegate::New(::TYPES[15/*Uno.Action*/], (void*)Http__FuseJSHttpRequest__Abort_fn, this)));
-    uPtr(Obj())->Item(::STRINGS[24/*"setHeader"*/], ::g::Fuse::Scripting::JSCallback::FromAction2(::TYPES[16/*Fuse.Scripting.JSCallback.FromAction<string, string>*/], uDelegate::New(::TYPES[17/*Uno.Action<string, string>*/], (void*)Http__FuseJSHttpRequest__SetHeader_fn, this)));
-    uPtr(Obj())->Item(::STRINGS[25/*"getResponse...*/], ::g::Fuse::Scripting::JSCallback::FromFunc1(::TYPES[18/*Fuse.Scripting.JSCallback.FromFunc<string, string>*/], uDelegate::New(::TYPES[19/*Uno.Func<string, string>*/], (void*)Http__FuseJSHttpRequest__GetResponseHeader_fn, this)));
-    uPtr(Obj())->Item(::STRINGS[26/*"getResponse...*/], ::g::Fuse::Scripting::JSCallback::FromFunc(::TYPES[20/*Fuse.Scripting.JSCallback.FromFunc<string>*/], uDelegate::New(::TYPES[21/*Uno.Func<string>*/], (void*)Http__FuseJSHttpRequest__GetResponseHeaders_fn, this)));
-    uPtr(Obj())->Item(::STRINGS[27/*"getState"*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__GetState_fn, this));
-    uPtr(Obj())->Item(::STRINGS[28/*"getResponse...*/], ::g::Fuse::Scripting::JSCallback::FromFunc(::TYPES[22/*Fuse.Scripting.JSCallback.FromFunc<int>*/], uDelegate::New(::TYPES[23/*Uno.Func<int>*/], (void*)Http__FuseJSHttpRequest__GetResponseStatus_fn, this)));
-    uPtr(Obj())->Item(::STRINGS[29/*"getResponse...*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__GetResponseReasonPhrase_fn, this));
-    uPtr(Obj())->Item(::STRINGS[30/*"getResponse...*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__GetResponseContentString_fn, this));
-    uPtr(Obj())->Item(::STRINGS[31/*"getResponse...*/], uDelegate::New(::TYPES[8/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__GetResponseContentByteArray_fn, this));
+    uPtr(Obj())->Item(::STRINGS[20/*"enableCache"*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__EnableCache_fn, this));
+    uPtr(Obj())->Item(::STRINGS[21/*"setTimeout"*/], ::g::Fuse::Scripting::JSCallback::FromAction1(::TYPES[13/*Fuse.Scripting.JSCallback.FromAction<int>*/], uDelegate::New(::TYPES[14/*Uno.Action<int>*/], (void*)Http__FuseJSHttpRequest__SetTimeout_fn, this)));
+    uPtr(Obj())->Item(::STRINGS[22/*"setResponse...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__SetResponseType_fn, this));
+    uPtr(Obj())->Item(::STRINGS[23/*"getResponse...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__GetResponseType_fn, this));
+    uPtr(Obj())->Item(::STRINGS[24/*"sendAsync"*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__SendAsync_fn, this));
+    uPtr(Obj())->Item(::STRINGS[25/*"abort"*/], ::g::Fuse::Scripting::JSCallback::FromAction(uDelegate::New(::TYPES[15/*Uno.Action*/], (void*)Http__FuseJSHttpRequest__Abort_fn, this)));
+    uPtr(Obj())->Item(::STRINGS[26/*"setHeader"*/], ::g::Fuse::Scripting::JSCallback::FromAction2(::TYPES[16/*Fuse.Scripting.JSCallback.FromAction<string, string>*/], uDelegate::New(::TYPES[17/*Uno.Action<string, string>*/], (void*)Http__FuseJSHttpRequest__SetHeader_fn, this)));
+    uPtr(Obj())->Item(::STRINGS[27/*"getResponse...*/], ::g::Fuse::Scripting::JSCallback::FromFunc1(::TYPES[18/*Fuse.Scripting.JSCallback.FromFunc<string, string>*/], uDelegate::New(::TYPES[19/*Uno.Func<string, string>*/], (void*)Http__FuseJSHttpRequest__GetResponseHeader_fn, this)));
+    uPtr(Obj())->Item(::STRINGS[28/*"getResponse...*/], ::g::Fuse::Scripting::JSCallback::FromFunc(::TYPES[20/*Fuse.Scripting.JSCallback.FromFunc<string>*/], uDelegate::New(::TYPES[21/*Uno.Func<string>*/], (void*)Http__FuseJSHttpRequest__GetResponseHeaders_fn, this)));
+    uPtr(Obj())->Item(::STRINGS[29/*"getState"*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__GetState_fn, this));
+    uPtr(Obj())->Item(::STRINGS[30/*"getResponse...*/], ::g::Fuse::Scripting::JSCallback::FromFunc(::TYPES[22/*Fuse.Scripting.JSCallback.FromFunc<int>*/], uDelegate::New(::TYPES[23/*Uno.Func<int>*/], (void*)Http__FuseJSHttpRequest__GetResponseStatus_fn, this)));
+    uPtr(Obj())->Item(::STRINGS[31/*"getResponse...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__GetResponseReasonPhrase_fn, this));
+    uPtr(Obj())->Item(::STRINGS[32/*"getResponse...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__GetResponseContentString_fn, this));
+    uPtr(Obj())->Item(::STRINGS[33/*"getResponse...*/], uDelegate::New(::TYPES[9/*Fuse.Scripting.Callback*/], (void*)Http__FuseJSHttpRequest__GetResponseContentByteArray_fn, this));
 }
 
 // private void Abort() [instance] :417
@@ -861,7 +968,7 @@ void Http__FuseJSHttpRequest::CheckIsAttached()
     uStackFrame __("Fuse.Reactive.FuseJS.Http.FuseJSHttpRequest", "CheckIsAttached()");
 
     if (_req == NULL)
-        U_THROW(::g::Uno::InvalidOperationException::New5(::STRINGS[32/*"This operat...*/]));
+        U_THROW(::g::Uno::InvalidOperationException::New5(::STRINGS[34/*"This operat...*/]));
 }
 
 // private void DetachRequest() [instance] :383
@@ -943,7 +1050,7 @@ uString* Http__FuseJSHttpRequest::GetResponseContentString(uArray* args)
         _cachedResponseContent = uPtr(_req)->GetResponseContentString();
     }
 
-    uString* contentAsString = uAs<uString*>(_cachedResponseContent, ::TYPES[9/*string*/]);
+    uString* contentAsString = uAs<uString*>(_cachedResponseContent, ::TYPES[8/*string*/]);
 
     if (::g::Uno::String::op_Equality(contentAsString, NULL))
         U_THROW(::g::Uno::Net::Http::InvalidResponseTypeException::New4());
@@ -960,7 +1067,7 @@ uString* Http__FuseJSHttpRequest::GetResponseHeader(uString* key)
         return uPtr(_req)->GetResponseHeader(key);
 
     if (::g::Uno::String::op_Equality(_cachedResponseHeaders, NULL))
-        U_THROW(::g::Uno::InvalidOperationException::New5(::STRINGS[33/*"Unable to g...*/]));
+        U_THROW(::g::Uno::InvalidOperationException::New5(::STRINGS[35/*"Unable to g...*/]));
 
     return ::g::Fuse::Reactive::FuseJS::HttpHeaders::New1(_cachedResponseHeaders)->GetValue(key);
 }
@@ -1034,7 +1141,7 @@ void Http__FuseJSHttpRequest::Obj(::g::Fuse::Scripting::Object* value)
 void Http__FuseJSHttpRequest::OnAbort(::g::Uno::Net::Http::HttpMessageHandlerRequest* res)
 {
     uStackFrame __("Fuse.Reactive.FuseJS.Http.FuseJSHttpRequest", "OnAbort(Uno.Net.Http.HttpMessageHandlerRequest)");
-    ::g::Fuse::Scripting::Function* func = uAs< ::g::Fuse::Scripting::Function*>(uPtr(Obj())->Item(::STRINGS[34/*"onabort"*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
+    ::g::Fuse::Scripting::Function* func = uAs< ::g::Fuse::Scripting::Function*>(uPtr(Obj())->Item(::STRINGS[36/*"onabort"*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
 
     if (func != NULL)
         uPtr(func)->Call(uArray::New(::TYPES[3/*object[]*/], 0));
@@ -1046,7 +1153,7 @@ void Http__FuseJSHttpRequest::OnAbort(::g::Uno::Net::Http::HttpMessageHandlerReq
 void Http__FuseJSHttpRequest::OnDone(::g::Uno::Net::Http::HttpMessageHandlerRequest* res)
 {
     uStackFrame __("Fuse.Reactive.FuseJS.Http.FuseJSHttpRequest", "OnDone(Uno.Net.Http.HttpMessageHandlerRequest)");
-    ::g::Fuse::Scripting::Function* func = uAs< ::g::Fuse::Scripting::Function*>(uPtr(Obj())->Item(::STRINGS[35/*"ondone"*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
+    ::g::Fuse::Scripting::Function* func = uAs< ::g::Fuse::Scripting::Function*>(uPtr(Obj())->Item(::STRINGS[37/*"ondone"*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
 
     if (func != NULL)
         uPtr(func)->Call(uArray::New(::TYPES[3/*object[]*/], 0));
@@ -1058,7 +1165,7 @@ void Http__FuseJSHttpRequest::OnDone(::g::Uno::Net::Http::HttpMessageHandlerRequ
 void Http__FuseJSHttpRequest::OnError(::g::Uno::Net::Http::HttpMessageHandlerRequest* res, uString* error)
 {
     uStackFrame __("Fuse.Reactive.FuseJS.Http.FuseJSHttpRequest", "OnError(Uno.Net.Http.HttpMessageHandlerRequest,string)");
-    ::g::Fuse::Scripting::Function* func = uAs< ::g::Fuse::Scripting::Function*>(uPtr(Obj())->Item(::STRINGS[36/*"onerror"*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
+    ::g::Fuse::Scripting::Function* func = uAs< ::g::Fuse::Scripting::Function*>(uPtr(Obj())->Item(::STRINGS[38/*"onerror"*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
 
     if (func != NULL)
         uPtr(func)->Call(uArray::Init<uObject*>(::TYPES[3/*object[]*/], 1, error));
@@ -1070,7 +1177,7 @@ void Http__FuseJSHttpRequest::OnError(::g::Uno::Net::Http::HttpMessageHandlerReq
 void Http__FuseJSHttpRequest::OnProgress(::g::Uno::Net::Http::HttpMessageHandlerRequest* res, int current, int total, bool hastotal)
 {
     uStackFrame __("Fuse.Reactive.FuseJS.Http.FuseJSHttpRequest", "OnProgress(Uno.Net.Http.HttpMessageHandlerRequest,int,int,bool)");
-    ::g::Fuse::Scripting::Function* func = uAs< ::g::Fuse::Scripting::Function*>(uPtr(Obj())->Item(::STRINGS[37/*"onprogress"*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
+    ::g::Fuse::Scripting::Function* func = uAs< ::g::Fuse::Scripting::Function*>(uPtr(Obj())->Item(::STRINGS[39/*"onprogress"*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
 
     if (func != NULL)
         uPtr(func)->Call(uArray::Init<uObject*>(::TYPES[3/*object[]*/], 3, uBox<int>(::TYPES[27/*int*/], current), uBox<int>(::TYPES[27/*int*/], total), uBox(::g::Uno::Bool_typeof(), hastotal)));
@@ -1080,7 +1187,7 @@ void Http__FuseJSHttpRequest::OnProgress(::g::Uno::Net::Http::HttpMessageHandler
 void Http__FuseJSHttpRequest::OnStateChanged(::g::Uno::Net::Http::HttpMessageHandlerRequest* res)
 {
     uStackFrame __("Fuse.Reactive.FuseJS.Http.FuseJSHttpRequest", "OnStateChanged(Uno.Net.Http.HttpMessageHandlerRequest)");
-    ::g::Fuse::Scripting::Function* func = uAs< ::g::Fuse::Scripting::Function*>(uPtr(Obj())->Item(::STRINGS[38/*"onstatechan...*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
+    ::g::Fuse::Scripting::Function* func = uAs< ::g::Fuse::Scripting::Function*>(uPtr(Obj())->Item(::STRINGS[40/*"onstatechan...*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
 
     if (func != NULL)
         uPtr(func)->Call(uArray::Init<uObject*>(::TYPES[3/*object[]*/], 1, uBox<int>(::TYPES[27/*int*/], uPtr(_req)->State())));
@@ -1090,7 +1197,7 @@ void Http__FuseJSHttpRequest::OnStateChanged(::g::Uno::Net::Http::HttpMessageHan
 void Http__FuseJSHttpRequest::OnTimeout(::g::Uno::Net::Http::HttpMessageHandlerRequest* res)
 {
     uStackFrame __("Fuse.Reactive.FuseJS.Http.FuseJSHttpRequest", "OnTimeout(Uno.Net.Http.HttpMessageHandlerRequest)");
-    ::g::Fuse::Scripting::Function* func = uAs< ::g::Fuse::Scripting::Function*>(uPtr(Obj())->Item(::STRINGS[39/*"ontimeout"*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
+    ::g::Fuse::Scripting::Function* func = uAs< ::g::Fuse::Scripting::Function*>(uPtr(Obj())->Item(::STRINGS[41/*"ontimeout"*/]), ::TYPES[2/*Fuse.Scripting.Function*/]);
 
     if (func != NULL)
         uPtr(func)->Call(uArray::New(::TYPES[3/*object[]*/], 0));
@@ -1107,9 +1214,9 @@ uObject* Http__FuseJSHttpRequest::SendAsync(uArray* args)
     {
         uObject* a = uPtr(args)->Strong<uObject*>(0);
 
-        if (uIs(a, ::TYPES[9/*string*/]))
+        if (uIs(a, ::TYPES[8/*string*/]))
         {
-            uPtr(_req)->SendAsync2(uAs<uString*>(a, ::TYPES[9/*string*/]));
+            uPtr(_req)->SendAsync2(uAs<uString*>(a, ::TYPES[8/*string*/]));
             return NULL;
         }
         else if (uIs(a, ::TYPES[25/*byte[]*/]))
@@ -1122,9 +1229,9 @@ uObject* Http__FuseJSHttpRequest::SendAsync(uArray* args)
         {
             ::g::Fuse::Scripting::Object* obj = uAs< ::g::Fuse::Scripting::Object*>(a, ::TYPES[26/*Fuse.Scripting.Object*/]);
 
-            if ((obj != NULL) && (uPtr(obj)->Item(::STRINGS[40/*"buffer"*/]) != NULL))
+            if ((obj != NULL) && (uPtr(obj)->Item(::STRINGS[42/*"buffer"*/]) != NULL))
             {
-                uArray* b1 = uAs<uArray*>(uPtr(obj)->Item(::STRINGS[40/*"buffer"*/]), ::TYPES[25/*byte[]*/]);
+                uArray* b1 = uAs<uArray*>(uPtr(obj)->Item(::STRINGS[42/*"buffer"*/]), ::TYPES[25/*byte[]*/]);
                 uPtr(_req)->SendAsync1(b1);
                 return NULL;
             }
@@ -1183,8 +1290,8 @@ Http__FuseJSHttpRequest* Http__FuseJSHttpRequest::New1(::g::Fuse::Scripting::Con
 // {
 static void Http_build(uType* type)
 {
-    ::STRINGS[41] = uString::Const("FuseJS/Http");
-    ::STRINGS[42] = uString::Const("exports");
+    ::STRINGS[43] = uString::Const("FuseJS/Http");
+    ::STRINGS[44] = uString::Const("exports");
     ::TYPES[28] = ::g::Uno::Func2_typeof()->MakeType(::g::Fuse::Scripting::Context_typeof(), uObject_typeof()->Array(), uObject_typeof(), NULL);
     type->SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(::g::Fuse::Scripting::NativeModule_type, interface0),
@@ -1231,7 +1338,7 @@ void Http__CreateClient_fn(Http* __this, ::g::Fuse::Scripting::Context* context,
 void Http__Evaluate_fn(Http* __this, ::g::Fuse::Scripting::Context* c, ::g::Fuse::Scripting::ModuleResult* result)
 {
     uStackFrame __("Fuse.Reactive.FuseJS.Http", "Evaluate(Fuse.Scripting.Context,Fuse.Scripting.ModuleResult)");
-    uPtr(uPtr(result)->Object)->Item(::STRINGS[42/*"exports"*/], Http__FunctionClosure::New1(c, uDelegate::New(::TYPES[28/*Uno.Func<Fuse.Scripting.Context, object[], object>*/], (void*)Http__CreateClient_fn, __this))->Callback());
+    uPtr(uPtr(result)->Object)->Item(::STRINGS[44/*"exports"*/], Http__FunctionClosure::New1(c, uDelegate::New(::TYPES[28/*Uno.Func<Fuse.Scripting.Context, object[], object>*/], (void*)Http__CreateClient_fn, __this))->Callback());
 }
 
 // public Http New() :278
@@ -1251,7 +1358,7 @@ void Http::ctor_2()
     if (Http::_instance_ != NULL)
         return;
 
-    ::g::Uno::UX::Resource::SetGlobalKey(Http::_instance_ = this, ::STRINGS[41/*"FuseJS/Http"*/]);
+    ::g::Uno::UX::Resource::SetGlobalKey(Http::_instance_ = this, ::STRINGS[43/*"FuseJS/Http"*/]);
 }
 
 // private object CreateClient(Fuse.Scripting.Context context, object[] args) [instance] :289
@@ -1277,8 +1384,8 @@ Http* Http::New2()
 // {
 static void HttpHeaders_build(uType* type)
 {
-    ::STRINGS[43] = uString::Const(", ");
-    ::STRINGS[44] = uString::Const("");
+    ::STRINGS[45] = uString::Const(", ");
+    ::STRINGS[46] = uString::Const("");
     ::TYPES[29] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::Collections::IList_typeof()->MakeType(::g::Uno::String_typeof(), NULL), NULL);
     ::TYPES[30] = ::g::Uno::IDisposable_typeof();
     ::TYPES[31] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(10/*ToArray<string>*/, ::g::Uno::String_typeof(), NULL);
@@ -1360,9 +1467,9 @@ uString* HttpHeaders::GetValue(uString* key)
     uObject* list;
 
     if ((::g::Uno::Collections::Dictionary__TryGetValue_fn(uPtr(_headers), ::g::Uno::String::ToLower(uPtr(key)), (void**)(&list), &ret6), ret6))
-        return ::g::Uno::String::Join(::STRINGS[43/*", "*/], (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[31/*Uno.Collections.EnumerableExtensions.ToArray<string>*/], list));
+        return ::g::Uno::String::Join(::STRINGS[45/*", "*/], (uArray*)::g::Uno::Collections::EnumerableExtensions::ToArray(::TYPES[31/*Uno.Collections.EnumerableExtensions.ToArray<string>*/], list));
 
-    return ::STRINGS[44/*""*/];
+    return ::STRINGS[46/*""*/];
 }
 
 // private void ParseHeader(string headerLine) [instance] :666
@@ -1408,6 +1515,334 @@ HttpHeaders* HttpHeaders::New1(uString* headers)
     HttpHeaders* obj5 = (HttpHeaders*)uNew(HttpHeaders_typeof());
     obj5->ctor_(headers);
     return obj5;
+}
+// }
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Launcher.InterApp/1.0.5/interapp/$.uno
+// ----------------------------------------------------------------------------------------------------------------
+
+// public sealed class InterApp :139
+// {
+static void InterApp_build(uType* type)
+{
+    ::STRINGS[47] = uString::Const("receivedUri");
+    ::STRINGS[48] = uString::Const("FuseJS/InterApp");
+    ::STRINGS[49] = uString::Const("onReceivedUri");
+    ::STRINGS[50] = uString::Const("launchUri");
+    ::TYPES[3] = uObject_typeof()->Array();
+    ::TYPES[5] = ::g::Fuse::Scripting::NativeCallback_typeof();
+    ::TYPES[36] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
+    ::TYPES[8] = ::g::Uno::String_typeof();
+    type->SetInterfaces(
+        ::g::Uno::IDisposable_typeof(), offsetof(::g::Fuse::Scripting::NativeModule_type, interface0),
+        ::g::Fuse::Scripting::IModuleProvider_typeof(), offsetof(::g::Fuse::Scripting::NativeModule_type, interface1));
+    type->SetFields(12,
+        type, (uintptr_t)&::g::Fuse::Reactive::FuseJS::InterApp::_instance_, uFieldFlagsStatic);
+    type->Reflection.SetFunctions(2,
+        new uFunction("LaunchUri", NULL, (void*)InterApp__LaunchUri_fn, 0, true, uObject_typeof(), 2, ::g::Fuse::Scripting::Context_typeof(), ::TYPES[3/*object[]*/]),
+        new uFunction(".ctor", NULL, (void*)InterApp__New3_fn, 0, true, type, 0));
+}
+
+::g::Fuse::Scripting::NativeModule_type* InterApp_typeof()
+{
+    static uSStrong< ::g::Fuse::Scripting::NativeModule_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Fuse::Scripting::NativeEventEmitterModule_typeof();
+    options.FieldCount = 13;
+    options.InterfaceCount = 2;
+    options.ObjectSize = sizeof(InterApp);
+    options.TypeSize = sizeof(::g::Fuse::Scripting::NativeModule_type);
+    type = (::g::Fuse::Scripting::NativeModule_type*)uClassType::New("Fuse.Reactive.FuseJS.InterApp", options);
+    type->fp_build_ = InterApp_build;
+    type->fp_ctor_ = (void*)InterApp__New3_fn;
+    type->interface1.fp_GetModule = (void(*)(uObject*, ::g::Fuse::Scripting::Module**))::g::Fuse::Scripting::NativeModule__FuseScriptingIModuleProviderGetModule_fn;
+    type->interface0.fp_Dispose = (void(*)(uObject*))::g::Fuse::Scripting::Module__Dispose_fn;
+    return type;
+}
+
+// public InterApp() :143
+void InterApp__ctor_3_fn(InterApp* __this)
+{
+    __this->ctor_3();
+}
+
+// public static object LaunchUri(Fuse.Scripting.Context context, object[] args) :191
+void InterApp__LaunchUri_fn(::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
+{
+    *__retval = InterApp::LaunchUri(context, args);
+}
+
+// public InterApp New() :143
+void InterApp__New3_fn(InterApp** __retval)
+{
+    *__retval = InterApp::New3();
+}
+
+// private void OnReceivedUri(string uri) :168
+void InterApp__OnReceivedUri_fn(InterApp* __this, uString* uri)
+{
+    __this->OnReceivedUri(uri);
+}
+
+uSStrong<InterApp*> InterApp::_instance_;
+
+// public InterApp() [instance] :143
+void InterApp::ctor_3()
+{
+    uStackFrame __("Fuse.Reactive.FuseJS.InterApp", ".ctor()");
+    ctor_2(true, uArray::Init<uObject*>(::TYPES[3/*object[]*/], 1, ::STRINGS[47/*"receivedUri"*/]));
+
+    if (InterApp::_instance_ != NULL)
+        return;
+
+    ::g::Uno::UX::Resource::SetGlobalKey(InterApp::_instance_ = this, ::STRINGS[48/*"FuseJS/Inte...*/]);
+    ::g::Fuse::Scripting::NativeEvent* onReceivedUri = ::g::Fuse::Scripting::NativeEvent::New4(::STRINGS[49/*"onReceivedUri"*/], true);
+    On1(::STRINGS[47/*"receivedUri"*/], onReceivedUri);
+    AddMember(onReceivedUri);
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[50/*"launchUri"*/], uDelegate::New(::TYPES[5/*Fuse.Scripting.NativeCallback*/], (void*)InterApp__LaunchUri_fn)));
+    ::g::Fuse::Platform::InterApp::add_ReceivedURI(uDelegate::New(::TYPES[36/*Uno.Action<string>*/], (void*)InterApp__OnReceivedUri_fn, this));
+}
+
+// private void OnReceivedUri(string uri) [instance] :168
+void InterApp::OnReceivedUri(uString* uri)
+{
+    uStackFrame __("Fuse.Reactive.FuseJS.InterApp", "OnReceivedUri(string)");
+    Emit(uArray::Init<uObject*>(::TYPES[3/*object[]*/], 2, ::STRINGS[47/*"receivedUri"*/], uri));
+}
+
+// public static object LaunchUri(Fuse.Scripting.Context context, object[] args) [static] :191
+uObject* InterApp::LaunchUri(::g::Fuse::Scripting::Context* context, uArray* args)
+{
+    uStackFrame __("Fuse.Reactive.FuseJS.InterApp", "LaunchUri(Fuse.Scripting.Context,object[])");
+    ::g::Fuse::LauncherImpl::InterAppLauncher::LaunchUri(::g::Uno::Net::Http::Uri::New1(uCast<uString*>(uPtr(args)->Strong<uObject*>(0), ::TYPES[8/*string*/])));
+    return NULL;
+}
+
+// public InterApp New() [static] :143
+InterApp* InterApp::New3()
+{
+    InterApp* obj1 = (InterApp*)uNew(InterApp_typeof());
+    obj1->ctor_3();
+    return obj1;
+}
+// }
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Launcher.Maps/1.0.5/maps/$.uno
+// --------------------------------------------------------------------------------------------------------
+
+// public sealed class Maps :151
+// {
+static void Maps_build(uType* type)
+{
+    ::STRINGS[51] = uString::Const("FuseJS/Maps");
+    ::STRINGS[52] = uString::Const("openAt");
+    ::STRINGS[53] = uString::Const("searchNearby");
+    ::STRINGS[54] = uString::Const("searchNear");
+    ::TYPES[5] = ::g::Fuse::Scripting::NativeCallback_typeof();
+    ::TYPES[8] = ::g::Uno::String_typeof();
+    type->SetInterfaces(
+        ::g::Uno::IDisposable_typeof(), offsetof(::g::Fuse::Scripting::NativeModule_type, interface0),
+        ::g::Fuse::Scripting::IModuleProvider_typeof(), offsetof(::g::Fuse::Scripting::NativeModule_type, interface1));
+    type->SetFields(4,
+        type, (uintptr_t)&::g::Fuse::Reactive::FuseJS::Maps::_instance_, uFieldFlagsStatic);
+    type->Reflection.SetFunctions(4,
+        new uFunction(".ctor", NULL, (void*)Maps__New2_fn, 0, true, type, 0),
+        new uFunction("OpenAt", NULL, (void*)Maps__OpenAt_fn, 0, true, uObject_typeof(), 2, ::g::Fuse::Scripting::Context_typeof(), uObject_typeof()->Array()),
+        new uFunction("SearchNear", NULL, (void*)Maps__SearchNear_fn, 0, true, uObject_typeof(), 2, ::g::Fuse::Scripting::Context_typeof(), uObject_typeof()->Array()),
+        new uFunction("SearchNearby", NULL, (void*)Maps__SearchNearby_fn, 0, true, uObject_typeof(), 2, ::g::Fuse::Scripting::Context_typeof(), uObject_typeof()->Array()));
+}
+
+::g::Fuse::Scripting::NativeModule_type* Maps_typeof()
+{
+    static uSStrong< ::g::Fuse::Scripting::NativeModule_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Fuse::Scripting::NativeModule_typeof();
+    options.FieldCount = 5;
+    options.InterfaceCount = 2;
+    options.ObjectSize = sizeof(Maps);
+    options.TypeSize = sizeof(::g::Fuse::Scripting::NativeModule_type);
+    type = (::g::Fuse::Scripting::NativeModule_type*)uClassType::New("Fuse.Reactive.FuseJS.Maps", options);
+    type->fp_build_ = Maps_build;
+    type->fp_ctor_ = (void*)Maps__New2_fn;
+    type->interface1.fp_GetModule = (void(*)(uObject*, ::g::Fuse::Scripting::Module**))::g::Fuse::Scripting::NativeModule__FuseScriptingIModuleProviderGetModule_fn;
+    type->interface0.fp_Dispose = (void(*)(uObject*))::g::Fuse::Scripting::Module__Dispose_fn;
+    return type;
+}
+
+// public Maps() :155
+void Maps__ctor_2_fn(Maps* __this)
+{
+    __this->ctor_2();
+}
+
+// public Maps New() :155
+void Maps__New2_fn(Maps** __retval)
+{
+    *__retval = Maps::New2();
+}
+
+// public static object OpenAt(Fuse.Scripting.Context context, object[] args) :217
+void Maps__OpenAt_fn(::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
+{
+    *__retval = Maps::OpenAt(context, args);
+}
+
+// public static object SearchNear(Fuse.Scripting.Context context, object[] args) :196
+void Maps__SearchNear_fn(::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
+{
+    *__retval = Maps::SearchNear(context, args);
+}
+
+// public static object SearchNearby(Fuse.Scripting.Context context, object[] args) :175
+void Maps__SearchNearby_fn(::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
+{
+    *__retval = Maps::SearchNearby(context, args);
+}
+
+uSStrong<Maps*> Maps::_instance_;
+
+// public Maps() [instance] :155
+void Maps::ctor_2()
+{
+    uStackFrame __("Fuse.Reactive.FuseJS.Maps", ".ctor()");
+    ctor_1();
+
+    if (Maps::_instance_ != NULL)
+        return;
+
+    ::g::Uno::UX::Resource::SetGlobalKey(Maps::_instance_ = this, ::STRINGS[51/*"FuseJS/Maps"*/]);
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[52/*"openAt"*/], uDelegate::New(::TYPES[5/*Fuse.Scripting.NativeCallback*/], (void*)Maps__OpenAt_fn)));
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[53/*"searchNearby"*/], uDelegate::New(::TYPES[5/*Fuse.Scripting.NativeCallback*/], (void*)Maps__SearchNearby_fn)));
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[54/*"searchNear"*/], uDelegate::New(::TYPES[5/*Fuse.Scripting.NativeCallback*/], (void*)Maps__SearchNear_fn)));
+}
+
+// public Maps New() [static] :155
+Maps* Maps::New2()
+{
+    Maps* obj1 = (Maps*)uNew(Maps_typeof());
+    obj1->ctor_2();
+    return obj1;
+}
+
+// public static object OpenAt(Fuse.Scripting.Context context, object[] args) [static] :217
+uObject* Maps::OpenAt(::g::Fuse::Scripting::Context* context, uArray* args)
+{
+    uStackFrame __("Fuse.Reactive.FuseJS.Maps", "OpenAt(Fuse.Scripting.Context,object[])");
+    double latitude = ::g::Fuse::Marshal::ToDouble(uPtr(args)->Strong<uObject*>(0));
+    double longitude = ::g::Fuse::Marshal::ToDouble(args->Strong<uObject*>(1));
+    ::g::Fuse::LauncherImpl::MapsLauncher::LaunchMaps(latitude, longitude);
+    return NULL;
+}
+
+// public static object SearchNear(Fuse.Scripting.Context context, object[] args) [static] :196
+uObject* Maps::SearchNear(::g::Fuse::Scripting::Context* context, uArray* args)
+{
+    uStackFrame __("Fuse.Reactive.FuseJS.Maps", "SearchNear(Fuse.Scripting.Context,object[])");
+    double latitude = ::g::Fuse::Marshal::ToDouble(uPtr(args)->Strong<uObject*>(0));
+    double longitude = ::g::Fuse::Marshal::ToDouble(args->Strong<uObject*>(1));
+    uString* query = uCast<uString*>(args->Strong<uObject*>(2), ::TYPES[8/*string*/]);
+    ::g::Fuse::LauncherImpl::MapsLauncher::LaunchMaps1(latitude, longitude, query);
+    return NULL;
+}
+
+// public static object SearchNearby(Fuse.Scripting.Context context, object[] args) [static] :175
+uObject* Maps::SearchNearby(::g::Fuse::Scripting::Context* context, uArray* args)
+{
+    uStackFrame __("Fuse.Reactive.FuseJS.Maps", "SearchNearby(Fuse.Scripting.Context,object[])");
+    uString* query = uCast<uString*>(uPtr(args)->Strong<uObject*>(0), ::TYPES[8/*string*/]);
+    ::g::Fuse::LauncherImpl::MapsLauncher::LaunchMaps2(query);
+    return NULL;
+}
+// }
+
+// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Launcher.Phone/1.0.5/phone/$.uno
+// ----------------------------------------------------------------------------------------------------------
+
+// public sealed class Phone :158
+// {
+static void Phone_build(uType* type)
+{
+    ::STRINGS[55] = uString::Const("FuseJS/Phone");
+    ::STRINGS[56] = uString::Const("call");
+    ::TYPES[5] = ::g::Fuse::Scripting::NativeCallback_typeof();
+    ::TYPES[8] = ::g::Uno::String_typeof();
+    type->SetInterfaces(
+        ::g::Uno::IDisposable_typeof(), offsetof(::g::Fuse::Scripting::NativeModule_type, interface0),
+        ::g::Fuse::Scripting::IModuleProvider_typeof(), offsetof(::g::Fuse::Scripting::NativeModule_type, interface1));
+    type->SetFields(4,
+        type, (uintptr_t)&::g::Fuse::Reactive::FuseJS::Phone::_instance_, uFieldFlagsStatic);
+    type->Reflection.SetFunctions(2,
+        new uFunction("Call", NULL, (void*)Phone__Call_fn, 0, true, uObject_typeof(), 2, ::g::Fuse::Scripting::Context_typeof(), uObject_typeof()->Array()),
+        new uFunction(".ctor", NULL, (void*)Phone__New2_fn, 0, true, type, 0));
+}
+
+::g::Fuse::Scripting::NativeModule_type* Phone_typeof()
+{
+    static uSStrong< ::g::Fuse::Scripting::NativeModule_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Fuse::Scripting::NativeModule_typeof();
+    options.FieldCount = 5;
+    options.InterfaceCount = 2;
+    options.ObjectSize = sizeof(Phone);
+    options.TypeSize = sizeof(::g::Fuse::Scripting::NativeModule_type);
+    type = (::g::Fuse::Scripting::NativeModule_type*)uClassType::New("Fuse.Reactive.FuseJS.Phone", options);
+    type->fp_build_ = Phone_build;
+    type->fp_ctor_ = (void*)Phone__New2_fn;
+    type->interface1.fp_GetModule = (void(*)(uObject*, ::g::Fuse::Scripting::Module**))::g::Fuse::Scripting::NativeModule__FuseScriptingIModuleProviderGetModule_fn;
+    type->interface0.fp_Dispose = (void(*)(uObject*))::g::Fuse::Scripting::Module__Dispose_fn;
+    return type;
+}
+
+// public Phone() :161
+void Phone__ctor_2_fn(Phone* __this)
+{
+    __this->ctor_2();
+}
+
+// public static object Call(Fuse.Scripting.Context context, object[] args) :179
+void Phone__Call_fn(::g::Fuse::Scripting::Context* context, uArray* args, uObject** __retval)
+{
+    *__retval = Phone::Call(context, args);
+}
+
+// public Phone New() :161
+void Phone__New2_fn(Phone** __retval)
+{
+    *__retval = Phone::New2();
+}
+
+uSStrong<Phone*> Phone::_instance_;
+
+// public Phone() [instance] :161
+void Phone::ctor_2()
+{
+    uStackFrame __("Fuse.Reactive.FuseJS.Phone", ".ctor()");
+    ctor_1();
+    ::g::Uno::UX::Resource::SetGlobalKey(Phone::_instance_ = this, ::STRINGS[55/*"FuseJS/Phone"*/]);
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[56/*"call"*/], uDelegate::New(::TYPES[5/*Fuse.Scripting.NativeCallback*/], (void*)Phone__Call_fn)));
+}
+
+// public static object Call(Fuse.Scripting.Context context, object[] args) [static] :179
+uObject* Phone::Call(::g::Fuse::Scripting::Context* context, uArray* args)
+{
+    uStackFrame __("Fuse.Reactive.FuseJS.Phone", "Call(Fuse.Scripting.Context,object[])");
+    uString* callString = uCast<uString*>(uPtr(args)->Strong<uObject*>(0), ::TYPES[8/*string*/]);
+    ::g::Fuse::LauncherImpl::PhoneLauncher::LaunchCall(callString);
+    return NULL;
+}
+
+// public Phone New() [static] :161
+Phone* Phone::New2()
+{
+    Phone* obj1 = (Phone*)uNew(Phone_typeof());
+    obj1->ctor_2();
+    return obj1;
 }
 // }
 
@@ -1560,10 +1995,10 @@ TimerManager__Timer* TimerManager__Timer::New1(double ms, uDelegate* callback, b
 // {
 static void TimerManager_build(uType* type)
 {
-    ::TYPES[36] = ::g::Uno::Collections::List_typeof()->MakeType(TimerManager__Timer_typeof(), NULL);
+    ::TYPES[37] = ::g::Uno::Collections::List_typeof()->MakeType(TimerManager__Timer_typeof(), NULL);
     ::TYPES[14] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::Int_typeof(), NULL);
     type->SetFields(0,
-        ::TYPES[36/*Uno.Collections.List<Fuse.Reactive.FuseJS.TimerManager.Timer>*/], offsetof(::g::Fuse::Reactive::FuseJS::TimerManager, _timers), 0);
+        ::TYPES[37/*Uno.Collections.List<Fuse.Reactive.FuseJS.TimerManager.Timer>*/], offsetof(::g::Fuse::Reactive::FuseJS::TimerManager, _timers), 0);
 }
 
 uType* TimerManager_typeof()
@@ -1638,7 +2073,7 @@ void TimerManager__Tick_fn(TimerManager* __this)
 // public generated TimerManager() [instance] :865
 void TimerManager::ctor_()
 {
-    _timers = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[36/*Uno.Collections.List<Fuse.Reactive.FuseJS.TimerManager.Timer>*/]));
+    _timers = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[37/*Uno.Collections.List<Fuse.Reactive.FuseJS.TimerManager.Timer>*/]));
 }
 
 // public int AddTimer(double ms, Uno.Action callback, [bool repeat]) [instance] :886
@@ -1753,20 +2188,20 @@ TimerManager* TimerManager::New1()
 static void TimerModule_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("FuseJS/Timer");
-    ::STRINGS[45] = uString::Const("create");
-    ::STRINGS[46] = uString::Const("delete");
-    ::STRINGS[47] = uString::Const("create(): requires at least three arguments");
-    ::STRINGS[48] = uString::Const("create(): first argument must be a function");
-    ::STRINGS[49] = uString::Const("delete(): requires one argument");
-    ::STRINGS[50] = uString::Const("Timer.delete(): The parameter is not a valid timer handle");
+    ::STRINGS[57] = uString::Const("create");
+    ::STRINGS[58] = uString::Const("delete");
+    ::STRINGS[59] = uString::Const("create(): requires at least three arguments");
+    ::STRINGS[60] = uString::Const("create(): first argument must be a function");
+    ::STRINGS[61] = uString::Const("delete(): requires one argument");
+    ::STRINGS[62] = uString::Const("Timer.delete(): The parameter is not a valid timer handle");
     ::STRINGS[15] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/1.0.5/fusejs/$.uno");
-    ::STRINGS[51] = uString::Const("Delete");
+    ::STRINGS[63] = uString::Const("Delete");
     ::TYPES[5] = ::g::Fuse::Scripting::NativeCallback_typeof();
-    ::TYPES[37] = ::g::Uno::EventHandler_typeof();
+    ::TYPES[38] = ::g::Uno::EventHandler_typeof();
     ::TYPES[2] = ::g::Fuse::Scripting::Function_typeof();
     ::TYPES[3] = uObject_typeof()->Array();
     ::TYPES[15] = ::g::Uno::Action_typeof();
-    ::TYPES[38] = ::g::Fuse::MarshalException_typeof();
+    ::TYPES[39] = ::g::Fuse::MarshalException_typeof();
     type->SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(::g::Fuse::Scripting::NativeModule_type, interface0),
         ::g::Fuse::Scripting::IModuleProvider_typeof(), offsetof(::g::Fuse::Scripting::NativeModule_type, interface1));
@@ -1852,9 +2287,9 @@ void TimerModule::ctor_2()
 
     ::g::Uno::UX::Resource::SetGlobalKey(TimerModule::_instance_ = this, ::STRINGS[0/*"FuseJS/Timer"*/]);
     _tm = ::g::Fuse::Reactive::FuseJS::TimerManager::New1();
-    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[45/*"create"*/], uDelegate::New(::TYPES[5/*Fuse.Scripting.NativeCallback*/], (void*)TimerModule__Create_fn, this)));
-    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[46/*"delete"*/], uDelegate::New(::TYPES[5/*Fuse.Scripting.NativeCallback*/], (void*)TimerModule__Delete_fn, this)));
-    add_Reset(uDelegate::New(::TYPES[37/*Uno.EventHandler*/], (void*)TimerModule__OnReset_fn, this));
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[57/*"create"*/], uDelegate::New(::TYPES[5/*Fuse.Scripting.NativeCallback*/], (void*)TimerModule__Create_fn, this)));
+    AddMember(::g::Fuse::Scripting::NativeFunction::New1(::STRINGS[58/*"delete"*/], uDelegate::New(::TYPES[5/*Fuse.Scripting.NativeCallback*/], (void*)TimerModule__Delete_fn, this)));
+    add_Reset(uDelegate::New(::TYPES[38/*Uno.EventHandler*/], (void*)TimerModule__OnReset_fn, this));
 }
 
 // private object Create(Fuse.Scripting.Context context, object[] args) [instance] :776
@@ -1863,10 +2298,10 @@ uObject* TimerModule::Create(::g::Fuse::Scripting::Context* context, uArray* arg
     uStackFrame __("Fuse.Reactive.FuseJS.TimerModule", "Create(Fuse.Scripting.Context,object[])");
 
     if (uPtr(args)->Length() < 3)
-        U_THROW(::g::Fuse::Scripting::Error::New4(::STRINGS[47/*"create(): r...*/]));
+        U_THROW(::g::Fuse::Scripting::Error::New4(::STRINGS[59/*"create(): r...*/]));
 
     if (!uIs((uObject*)uPtr(args)->Strong<uObject*>(0), ::TYPES[2/*Fuse.Scripting.Function*/]))
-        U_THROW(::g::Fuse::Scripting::Error::New4(::STRINGS[48/*"create(): f...*/]));
+        U_THROW(::g::Fuse::Scripting::Error::New4(::STRINGS[60/*"create(): f...*/]));
 
     ::g::Fuse::Scripting::Function* func = uAs< ::g::Fuse::Scripting::Function*>(uPtr(args)->Strong<uObject*>(0), ::TYPES[2/*Fuse.Scripting.Function*/]);
     double ms = ::g::Fuse::Scripting::Value::ToNumber(args->Strong<uObject*>(1));
@@ -1885,7 +2320,7 @@ uObject* TimerModule::Delete(::g::Fuse::Scripting::Context* context, uArray* arg
     uStackFrame __("Fuse.Reactive.FuseJS.TimerModule", "Delete(Fuse.Scripting.Context,object[])");
 
     if (uPtr(args)->Length() < 1)
-        U_THROW(::g::Fuse::Scripting::Error::New4(::STRINGS[49/*"delete(): r...*/]));
+        U_THROW(::g::Fuse::Scripting::Error::New4(::STRINGS[61/*"delete(): r...*/]));
 
     try
     {
@@ -1894,10 +2329,10 @@ uObject* TimerModule::Delete(::g::Fuse::Scripting::Context* context, uArray* arg
     }
     catch (const uThrowable& __t)
     {
-        if (uIs(__t.Exception, ::TYPES[38/*Fuse.MarshalException*/]))
+        if (uIs(__t.Exception, ::TYPES[39/*Fuse.MarshalException*/]))
         {
             ::g::Fuse::MarshalException* me = (::g::Fuse::MarshalException*)__t.Exception;
-            ::g::Fuse::Diagnostics::UserWarning(::STRINGS[50/*"Timer.delet...*/], this, ::STRINGS[15/*"/Users/eric...*/], 829, ::STRINGS[51/*"Delete"*/]);
+            ::g::Fuse::Diagnostics::UserWarning(::STRINGS[62/*"Timer.delet...*/], this, ::STRINGS[15/*"/Users/eric...*/], 829, ::STRINGS[63/*"Delete"*/]);
         }
         else throw __t;
     }

@@ -82,6 +82,7 @@ namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Pr
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_Width_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseReactiveEach_Items_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseReactiveWith_Data_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseTriggersActionsLaunchUri_Uri_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_Tab_Text_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_TabSponsor_Text_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_TabText_Text_Property_typeof();}
@@ -531,6 +532,7 @@ namespace g{namespace Uno{namespace Net{namespace Http{uType* QueryParser_typeof
 namespace g{namespace Uno{namespace Net{namespace Http{uType* SchemeParser_typeof();}}}}
 namespace g{namespace Uno{namespace Net{namespace Http{uStructType* SchemeParserResult_typeof();}}}}
 namespace g{namespace Uno{namespace Net{namespace Http{uClassType* HttpMessageHandler__StaticData_typeof();}}}}
+namespace g{namespace Uno{namespace Net{namespace Http{uType* Uri_typeof();}}}}
 namespace g{namespace Uno{struct Exception_type; namespace Net{namespace Http{::g::Uno::Exception_type* UriFormatException_typeof();}}}}
 namespace g{namespace Uno{namespace Net{namespace Http{uType* UriScheme_typeof();}}}}
 namespace g{namespace Uno{namespace Net{namespace Http{uType* UserInfoParser_typeof();}}}}
@@ -542,6 +544,7 @@ namespace g{namespace Uno{struct Exception_type; namespace Testing{::g::Uno::Exc
 namespace g{namespace Uno{namespace Testing{uType* NamedTestMethod_typeof();}}}
 namespace g{namespace Uno{namespace Testing{uType* Registry_typeof();}}}
 namespace g{namespace Uno{namespace Testing{uType* TestAttribute_typeof();}}}
+namespace g{namespace Uno{namespace Permissions{uStructType* PlatformPermission_typeof();}}}
 namespace g{namespace ObjC{uStructType* ID_typeof();}}
 namespace g{namespace ObjC{uType* Object_typeof();}}
 namespace g{namespace Fuse{struct Node_type; ::g::Fuse::Node_type* AlternateRoot_typeof();}}
@@ -586,6 +589,7 @@ namespace g{namespace Fuse{uStructType* Visual__InteractionItem_typeof();}}
 namespace g{namespace Uno{namespace UX{struct FileSource_type;}} namespace Fuse{::g::Uno::UX::FileSource_type* JSFileSource_typeof();}}
 namespace g{namespace Fuse{uClassType* Json_typeof();}}
 namespace g{namespace Fuse{uType* KeyboardBootstrapper_typeof();}}
+namespace g{namespace Fuse{uClassType* Launcher_typeof();}}
 namespace g{namespace Fuse{uStructType* LayoutParams_typeof();}}
 namespace g{namespace Fuse{uClassType* LayoutPriority_typeof();}}
 namespace g{namespace Fuse{struct TranslationModes__LocalMode_type; TranslationModes__LocalMode_type* TranslationModes__LocalMode_typeof();}}
@@ -604,6 +608,7 @@ namespace g{namespace Fuse{struct TranslationModes__ParentSizeMode_type; Transla
 namespace g{namespace Fuse{uType* Version__Parser_typeof();}}
 namespace g{namespace Fuse{uType* PendingRemoveVisual_typeof();}}
 namespace g{namespace Fuse{struct PerspectiveFrustum_type; PerspectiveFrustum_type* PerspectiveFrustum_typeof();}}
+namespace g{namespace Fuse{uClassType* PhoneUriHelper_typeof();}}
 namespace g{namespace Fuse{struct PlacedArgs_type; PlacedArgs_type* PlacedArgs_typeof();}}
 namespace g{namespace Fuse{uType* Properties_typeof();}}
 namespace g{namespace Fuse{uType* PropertyHandle_typeof();}}
@@ -1041,11 +1046,15 @@ namespace g{namespace Fuse{namespace Reactive{struct With_type; With_type* With_
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{uType* Builtins_typeof();}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{uType* TimerModule__CallbackClosure_typeof();}}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeModule_type;}} namespace Fuse{namespace Reactive{namespace FuseJS{::g::Fuse::Scripting::NativeModule_type* DiagnosticsImplModule_typeof();}}}}
+namespace g{namespace Fuse{namespace Scripting{struct NativeModule_type;}} namespace Fuse{namespace Reactive{namespace FuseJS{::g::Fuse::Scripting::NativeModule_type* Email_typeof();}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{uType* Http__FunctionClosure_typeof();}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{uType* Http__FuseJSHttpClient_typeof();}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{uType* Http__FuseJSHttpRequest_typeof();}}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeModule_type;}} namespace Fuse{namespace Reactive{namespace FuseJS{::g::Fuse::Scripting::NativeModule_type* Http_typeof();}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{uType* HttpHeaders_typeof();}}}}
+namespace g{namespace Fuse{namespace Scripting{struct NativeModule_type;}} namespace Fuse{namespace Reactive{namespace FuseJS{::g::Fuse::Scripting::NativeModule_type* InterApp_typeof();}}}}
+namespace g{namespace Fuse{namespace Scripting{struct NativeModule_type;}} namespace Fuse{namespace Reactive{namespace FuseJS{::g::Fuse::Scripting::NativeModule_type* Maps_typeof();}}}}
+namespace g{namespace Fuse{namespace Scripting{struct NativeModule_type;}} namespace Fuse{namespace Reactive{namespace FuseJS{::g::Fuse::Scripting::NativeModule_type* Phone_typeof();}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{uType* TimerManager__Timer_typeof();}}}}
 namespace g{namespace Fuse{namespace Reactive{namespace FuseJS{uType* TimerManager_typeof();}}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeModule_type;}} namespace Fuse{namespace Reactive{namespace FuseJS{::g::Fuse::Scripting::NativeModule_type* TimerModule_typeof();}}}}
@@ -1226,6 +1235,7 @@ namespace g{namespace Fuse{namespace Triggers{struct WindowSizeTrigger_type; Win
 namespace g{namespace Fuse{namespace Triggers{struct LayoutTransition__WorldPositionChangeMode_type; LayoutTransition__WorldPositionChangeMode_type* LayoutTransition__WorldPositionChangeMode_typeof();}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction_type; ::g::Fuse::Triggers::Actions::TriggerAction_type* BringIntoView_typeof();}}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction_type; ::g::Fuse::Triggers::Actions::TriggerAction_type* BringToFront_typeof();}}}}
+namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction_type; ::g::Fuse::Triggers::Actions::TriggerAction_type* Call_typeof();}}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction_type; ::g::Fuse::Triggers::Actions::TriggerAction_type* Callback_typeof();}}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction_type; ::g::Fuse::Triggers::Actions::TriggerAction_type* CancelInteractions_typeof();}}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction_type; ::g::Fuse::Triggers::Actions::TriggerAction_type* Collapse_typeof();}}}}
@@ -1237,6 +1247,9 @@ namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAc
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction_type; ::g::Fuse::Triggers::Actions::TriggerAction_type* GiveFocus_typeof();}}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction_type; ::g::Fuse::Triggers::Actions::TriggerAction_type* Hide_typeof();}}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct JSEventArgs_type; JSEventArgs_type* JSEventArgs_typeof();}}}}
+namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction_type; ::g::Fuse::Triggers::Actions::TriggerAction_type* LaunchEmail_typeof();}}}}
+namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction_type; ::g::Fuse::Triggers::Actions::TriggerAction_type* LaunchMaps_typeof();}}}}
+namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction_type; ::g::Fuse::Triggers::Actions::TriggerAction_type* LaunchUri_typeof();}}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct LoadHtml_type; LoadHtml_type* LoadHtml_typeof();}}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct WebViewNavAction_type; ::g::Fuse::Triggers::Actions::WebViewNavAction_type* LoadUrl_typeof();}}}}
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct TriggerAction_type; ::g::Fuse::Triggers::Actions::TriggerAction_type* Pause_typeof();}}}}
@@ -1772,6 +1785,10 @@ namespace g{namespace Fuse{namespace WebSocket{struct NativeFunctionModule_type;
 namespace g{namespace Fuse{namespace WebSocket{uType* WebSocketClient_typeof();}}}
 namespace g{namespace Fuse{namespace WebSocket{struct NativeFunctionModule_type; ::g::Fuse::WebSocket::NativeFunctionModule_type* WebSocketClientModule_typeof();}}}
 namespace g{namespace Fuse{namespace Scripting{struct NativeModule_type;}} namespace Fuse{namespace WebSocket{::g::Fuse::Scripting::NativeModule_type* WebSocketClientWrapper_typeof();}}}
+namespace g{namespace Fuse{namespace LauncherImpl{uClassType* EmailLauncher_typeof();}}}
+namespace g{namespace Fuse{namespace LauncherImpl{uClassType* InterAppLauncher_typeof();}}}
+namespace g{namespace Fuse{namespace LauncherImpl{uClassType* MapsLauncher_typeof();}}}
+namespace g{namespace Fuse{namespace LauncherImpl{uClassType* PhoneLauncher_typeof();}}}
 namespace g{namespace Experimental{namespace Http{struct Loader_type; ::g::Experimental::Http::Loader_type* BinaryLoader_typeof();}}}
 namespace g{namespace Experimental{namespace Http{uClassType* HttpLoader_typeof();}}}
 namespace g{namespace Experimental{namespace Http{uType* HttpResponseHeader_typeof();}}}
@@ -2043,6 +2060,7 @@ void uInitRtti()
         (uType*(*)())&::g::gadden_FuseElementsElement_Width_Property_typeof,
         (uType*(*)())&::g::gadden_FuseReactiveEach_Items_Property_typeof,
         (uType*(*)())&::g::gadden_FuseReactiveWith_Data_Property_typeof,
+        (uType*(*)())&::g::gadden_FuseTriggersActionsLaunchUri_Uri_Property_typeof,
         (uType*(*)())&::g::gadden_Tab_Text_Property_typeof,
         (uType*(*)())&::g::gadden_TabSponsor_Text_Property_typeof,
         (uType*(*)())&::g::gadden_TabText_Text_Property_typeof,
@@ -2492,6 +2510,7 @@ void uInitRtti()
         (uType*(*)())&::g::Uno::Net::Http::SchemeParser_typeof,
         (uType*(*)())&::g::Uno::Net::Http::SchemeParserResult_typeof,
         (uType*(*)())&::g::Uno::Net::Http::HttpMessageHandler__StaticData_typeof,
+        (uType*(*)())&::g::Uno::Net::Http::Uri_typeof,
         (uType*(*)())&::g::Uno::Net::Http::UriFormatException_typeof,
         (uType*(*)())&::g::Uno::Net::Http::UriScheme_typeof,
         (uType*(*)())&::g::Uno::Net::Http::UserInfoParser_typeof,
@@ -2503,6 +2522,7 @@ void uInitRtti()
         (uType*(*)())&::g::Uno::Testing::NamedTestMethod_typeof,
         (uType*(*)())&::g::Uno::Testing::Registry_typeof,
         (uType*(*)())&::g::Uno::Testing::TestAttribute_typeof,
+        (uType*(*)())&::g::Uno::Permissions::PlatformPermission_typeof,
         (uType*(*)())&::g::ObjC::ID_typeof,
         (uType*(*)())&::g::ObjC::Object_typeof,
         (uType*(*)())&::g::Fuse::AlternateRoot_typeof,
@@ -2547,6 +2567,7 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::JSFileSource_typeof,
         (uType*(*)())&::g::Fuse::Json_typeof,
         (uType*(*)())&::g::Fuse::KeyboardBootstrapper_typeof,
+        (uType*(*)())&::g::Fuse::Launcher_typeof,
         (uType*(*)())&::g::Fuse::LayoutParams_typeof,
         (uType*(*)())&::g::Fuse::LayoutPriority_typeof,
         (uType*(*)())&::g::Fuse::TranslationModes__LocalMode_typeof,
@@ -2565,6 +2586,7 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Version__Parser_typeof,
         (uType*(*)())&::g::Fuse::PendingRemoveVisual_typeof,
         (uType*(*)())&::g::Fuse::PerspectiveFrustum_typeof,
+        (uType*(*)())&::g::Fuse::PhoneUriHelper_typeof,
         (uType*(*)())&::g::Fuse::PlacedArgs_typeof,
         (uType*(*)())&::g::Fuse::Properties_typeof,
         (uType*(*)())&::g::Fuse::PropertyHandle_typeof,
@@ -3002,11 +3024,15 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Reactive::FuseJS::Builtins_typeof,
         (uType*(*)())&::g::Fuse::Reactive::FuseJS::TimerModule__CallbackClosure_typeof,
         (uType*(*)())&::g::Fuse::Reactive::FuseJS::DiagnosticsImplModule_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::FuseJS::Email_typeof,
         (uType*(*)())&::g::Fuse::Reactive::FuseJS::Http__FunctionClosure_typeof,
         (uType*(*)())&::g::Fuse::Reactive::FuseJS::Http__FuseJSHttpClient_typeof,
         (uType*(*)())&::g::Fuse::Reactive::FuseJS::Http__FuseJSHttpRequest_typeof,
         (uType*(*)())&::g::Fuse::Reactive::FuseJS::Http_typeof,
         (uType*(*)())&::g::Fuse::Reactive::FuseJS::HttpHeaders_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::FuseJS::InterApp_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::FuseJS::Maps_typeof,
+        (uType*(*)())&::g::Fuse::Reactive::FuseJS::Phone_typeof,
         (uType*(*)())&::g::Fuse::Reactive::FuseJS::TimerManager__Timer_typeof,
         (uType*(*)())&::g::Fuse::Reactive::FuseJS::TimerManager_typeof,
         (uType*(*)())&::g::Fuse::Reactive::FuseJS::TimerModule_typeof,
@@ -3187,6 +3213,7 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Triggers::LayoutTransition__WorldPositionChangeMode_typeof,
         (uType*(*)())&::g::Fuse::Triggers::Actions::BringIntoView_typeof,
         (uType*(*)())&::g::Fuse::Triggers::Actions::BringToFront_typeof,
+        (uType*(*)())&::g::Fuse::Triggers::Actions::Call_typeof,
         (uType*(*)())&::g::Fuse::Triggers::Actions::Callback_typeof,
         (uType*(*)())&::g::Fuse::Triggers::Actions::CancelInteractions_typeof,
         (uType*(*)())&::g::Fuse::Triggers::Actions::Collapse_typeof,
@@ -3198,6 +3225,9 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::Triggers::Actions::GiveFocus_typeof,
         (uType*(*)())&::g::Fuse::Triggers::Actions::Hide_typeof,
         (uType*(*)())&::g::Fuse::Triggers::Actions::JSEventArgs_typeof,
+        (uType*(*)())&::g::Fuse::Triggers::Actions::LaunchEmail_typeof,
+        (uType*(*)())&::g::Fuse::Triggers::Actions::LaunchMaps_typeof,
+        (uType*(*)())&::g::Fuse::Triggers::Actions::LaunchUri_typeof,
         (uType*(*)())&::g::Fuse::Triggers::Actions::LoadHtml_typeof,
         (uType*(*)())&::g::Fuse::Triggers::Actions::LoadUrl_typeof,
         (uType*(*)())&::g::Fuse::Triggers::Actions::Pause_typeof,
@@ -3733,6 +3763,10 @@ void uInitRtti()
         (uType*(*)())&::g::Fuse::WebSocket::WebSocketClient_typeof,
         (uType*(*)())&::g::Fuse::WebSocket::WebSocketClientModule_typeof,
         (uType*(*)())&::g::Fuse::WebSocket::WebSocketClientWrapper_typeof,
+        (uType*(*)())&::g::Fuse::LauncherImpl::EmailLauncher_typeof,
+        (uType*(*)())&::g::Fuse::LauncherImpl::InterAppLauncher_typeof,
+        (uType*(*)())&::g::Fuse::LauncherImpl::MapsLauncher_typeof,
+        (uType*(*)())&::g::Fuse::LauncherImpl::PhoneLauncher_typeof,
         (uType*(*)())&::g::Experimental::Http::BinaryLoader_typeof,
         (uType*(*)())&::g::Experimental::Http::HttpLoader_typeof,
         (uType*(*)())&::g::Experimental::Http::HttpResponseHeader_typeof,
