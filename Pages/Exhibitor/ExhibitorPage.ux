@@ -5,11 +5,16 @@ TODO:
   * Add filter functions and create the vue
   * Fetch the image to exhibitor details page when it's included in the API
   * Save exhibitors locally for the user (is not in need of inlogged user)
-  *
  -->
 
 <Page>
   <JavaScript File="ExhibitorPage.js" />
+
+  <WhileActive Threshold="0.1">
+    <Change GaddenLogo.Opacity="0" />
+    <Change FilterButton.Opacity="1"  />
+    <Change FilterArrow.Opacity="1"  />
+  </WhileActive>
 
   <!-- Output exhibitor list -->
   <Panel ux:Name="ExibitorList" Opacity="1">

@@ -158,7 +158,12 @@
 						<NavigateToggle Target="sidebarProfile" />
 					</Clicked>
 				</Profile>
-				<Image Alignment="Center" File="assets/GaddenLogotypeSmallWhite.png" Width="20%" />
+				<Image ux:Name="GaddenLogo" Opacity="1" Alignment="Center" File="assets/GaddenLogotypeSmallWhite.png" Width="20%" />
+
+				<StackPanel Width="40%" Orientation="Horizontal" ItemSpacing="10" Alignment="Center">
+				<Text ux:Name="FilterButton" Opacity="0" Alignment="Center" Color="White" Font="RalewayBlack" FontSize="15" Value="FILTRERA" />
+				<Image ux:Name="FilterArrow" Opacity="0" Alignment="Right" File="assets/ArrowDownWhite.png" Width="15" />
+				</StackPanel>
 			</Panel>
 		</StackPanel>
 
