@@ -38,7 +38,7 @@
 				<Rectangle Margin="0,80,0,0" Background="Black" Width="70%" Height="50" Alignment="TopCenter" >
 					<Stroke Width="1" Color="White" />
 					<Paragraph FontSize="18" Alignment="Center" Value="LOGGA IN" />
-					<Clicked><Set navigation.Active="login" /> </Clicked>
+					<Clicked><Set navigation.Active="login" /> <Callback Handler="{closeTest}"/></Clicked>
 				</Rectangle>
 
 				<!-- Line seperator -->
