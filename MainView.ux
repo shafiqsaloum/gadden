@@ -34,7 +34,7 @@
 				<Change sidebarFade.Opacity="1" />
 			</ActivatingAnimation>
 
-			<Panel ux:Name="NotInlogged" Opacity="1">
+			<Panel ux:Name="NotInlogged" Opacity="0">
 				<StackPanel Margin="20">
 					<Rectangle Margin="0,80,0,0" Background="Black" Width="70%" Height="50" Alignment="TopCenter" >
 						<Stroke Width="1" Color="White" />
@@ -104,6 +104,41 @@
 				</StackPanel>
 			</ScrollView>
 		</Panel>
+
+		<Panel ux:Name="MemberInlogged" Opacity="1">
+			<ScrollView>
+				<StackPanel Margin="20">
+					<!-- Log out button -->
+					<SmallText Value="LOGGA UT" Alignment="TopRight" Color="White" Margin="0,20,0,0" Font="RalewayBlack" FontSize="12" />
+					<!-- Welcome text with users name in it -->
+					<Title Value="HEJ, JANE DOE" Margin="0,60,0,0" />
+					<!-- Seperator -->
+					<Rectangle Margin="0,30,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+					<!-- My events title -->
+					<Title Value="MINA HÄNDELSER" Alignment="Center" Margin="0,30,0,30"/>
+					<!-- Events -->
+					<Grid Row="1" Columns="3* ,1*">
+						<SmallText Value="NAMN PÅ EVENT/FÖRELÄSNING" FontSize="12" />
+						<Image File="assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
+					</Grid>
+					<!-- Seperator -->
+					<Rectangle Margin="0,20,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+					<!-- Starmarked exhibitor title -->
+					<!-- Title -->
+					<Title Alignment="Center" Margin="0,20,0,20" Value="STJÄRNMARKERADE UTSTÄLLARE" />
+					<!-- Content below creates lectures -->
+					<Image Alignment="BottomRight" Width="10" Margin="0,0,0,-10" File="assets/CrossIcon.png" />
+					<Grid Row="1" Columns="2* ,3* ,1*">
+						<Image Height="80" Width="100%" Alignment="BottomLeft" StretchMode="UniformToFill" File="assets/NewsExampleImage.png"/>
+						<SmallText Value="HANDELSBANKEN ONSDAG 8/11" FontSize="12" Alignment="BottomLeft" Margin="10,0,0,-5" />
+						<Image File="assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
+					</Grid>
+					<!-- Seperator -->
+					<Rectangle Margin="0,15,0,15" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+				</StackPanel>
+			</ScrollView>
+		</Panel>
+
 
 		</Panel>
 
