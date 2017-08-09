@@ -1,9 +1,6 @@
 <!--
 TODO:
-* Fix an easier animation when user has clicked on the info-icon
 * Function for shake
-* Include button that appears after the first shake
-* Create vue for getting a result
 * Function for randomally show a result
 -->
 
@@ -39,21 +36,48 @@ TODO:
             </Rectangle>
         </Panel>
 
-      <!-- Main content -->
-      <StackPanel Alignment="BottomCenter" Margin="0,0,0,20">
-          <TextView Font="TitleFont" TextColor="#fff" FontSize="65" TextWrapping="Wrap" TextAlignment="Center" LineSpacing="20" Alignment="Top" Margin="0,0,0,50">
-              SHAKE TO BREAK
-          </TextView>
-          <Paragraph TextAlignment="Center" Alignment="BottomCenter">
-              Skaka telefonen för att få tips på ice breakers
+      <!-- Result Vue -->
+      <Panel ux:Name="ResultPanel" Opacity="0">
+        <StackPanel Margin="20" Alignment="BottomCenter">
+          <Image Width="50%" Margin="30" Alignment="Center" File="../../assets/IceBreakerQuote.png"/>
+          <!-- Include randomized result here instead of Lorem Ipsum text -->
+          <Paragraph Alignment="Center" TextAlignment="Center" Width="80%" FontSize="16">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus elit nec commodo luctus, nunc sapien blandit tortor.
           </Paragraph>
-      </StackPanel>
+          <Rectangle Margin="0,20,0,20" Fill="#979797" Height="1px" SnapToPixels="true" Width="40%"/>
+        </StackPanel>
+      </Panel>
+
+      <!-- Main content -->
+      <Panel ux:Name="DefaultPanel" Opacity="1">
+        <StackPanel Alignment="BottomCenter" Margin="0,0,0,20">
+            <TextView Font="TitleFont" TextColor="#fff" FontSize="65" TextWrapping="Wrap" TextAlignment="Center" LineSpacing="20" Alignment="Top" Margin="0,0,0,50">
+                SHAKE TO BREAK
+            </TextView>
+            <Paragraph TextAlignment="Center" Alignment="BottomCenter">
+                Skaka telefonen för att få tips på ice breakers
+            </Paragraph>
+        </StackPanel>
+      </Panel>
     </Panel>
 
+    <!-- Ice Breaker icon and button -->
     <Panel Height="30%" Background="Black" Alignment="Bottom">
-      <Image ux:Name="IceBreakerButton" Opacity="0" Width="20%" Margin="0,0,0,40"  Alignment="BottomCenter" StretchMode="UniformToFill" File="../../assets/IceBreakerButtonWhite.png" />
+      <Image ux:Name="IceBreakerButton" Opacity="0" Width="20%" Margin="0,0,0,40"  Alignment="BottomCenter" StretchMode="UniformToFill" File="../../assets/IceBreakerButtonWhite.png">
+        <Clicked>
+          <Toggle Target="ShowResult" />
+        </Clicked>
+      </Image>
+
+      <!-- Shows results when click on button -->
+      <WhileTrue ux:Name="ShowResult">
+          <Change ResultPanel.Opacity="1" Duration="0.3" />
+          <Change DefaultPanel.Opacity="0" Duration="0.3" />
+      </WhileTrue>
+
       <Image ux:Name="IceBreakerIcon" Opacity="1" Width="40%" Alignment="BottomCenter" StretchMode="UniformToFill" File="../../assets/IceBreakerIcon.png" X="0">
 
+        <!-- Sets animation -->
         <WhileActive Threshold="0.1">
           <Rotate Degrees="10" Duration="0.5" Delay="0.5" />
           <Rotate Degrees="-20" Duration="1" Delay="1" />
@@ -67,6 +91,7 @@ TODO:
           <Rotate Degrees="-20" Duration="1" Delay="9" />
           <Rotate Degrees="20" Duration="1" Delay="10" />
 
+          <!-- Change to button -->
           <Change IceBreakerIcon.Opacity="0" Duration="0.3" Delay="11" />
           <Change IceBreakerButton.Opacity="1" Duration="0.3" Delay="11" />
         </WhileActive>

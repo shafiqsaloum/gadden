@@ -50,6 +50,8 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector100() { return MainView_typeof()->Init(), __selector100_; }
     static ::g::Uno::UX::Selector __selector101_;
     static ::g::Uno::UX::Selector& __selector101() { return MainView_typeof()->Init(), __selector101_; }
+    static ::g::Uno::UX::Selector __selector102_;
+    static ::g::Uno::UX::Selector& __selector102() { return MainView_typeof()->Init(), __selector102_; }
     static ::g::Uno::UX::Selector __selector11_;
     static ::g::Uno::UX::Selector& __selector11() { return MainView_typeof()->Init(), __selector11_; }
     static ::g::Uno::UX::Selector __selector12_;
@@ -296,14 +298,18 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> crossIconMap2_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> exhibitor;
     uStrong< ::g::Fuse::Controls::Image*> ExhibitorBackground;
+    uStrong< ::g::Uno::UX::Property1*> ExhibitorBackground_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Panel*> ExhibitorDetails;
     uStrong< ::g::Fuse::Controls::Panel*> ExibitorList;
+    uStrong< ::g::Uno::UX::Property1*> ExibitorList_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Image*> FilterArrow;
     uStrong< ::g::Uno::UX::Property1*> FilterArrow_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Image*> FilterBackground;
+    uStrong< ::g::Uno::UX::Property1*> FilterBackground_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Text*> FilterButton;
     uStrong< ::g::Uno::UX::Property1*> FilterButton_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Panel*> FilterPanel;
+    uStrong< ::g::Uno::UX::Property1*> FilterPanel_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Image*> GaddenLogo;
     uStrong< ::g::Uno::UX::Property1*> GaddenLogo_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> goodiebag;
@@ -374,6 +380,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Shadow*> shadow;
     uStrong< ::g::Uno::UX::Property1*> shadow_Color_inst;
     uStrong< ::g::Fuse::Controls::Shadow*> shadowProfile;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ShowFilter;
     uStrong< ::g::Fuse::Controls::Panel*> sidebar;
     uStrong< ::g::Fuse::Controls::Rectangle*> sidebarFade;
     uStrong< ::g::Uno::UX::Property1*> sidebarFade_Opacity_inst;
