@@ -57,7 +57,7 @@
 				</StackPanel>
 		</Panel>
 
-		<Panel ux:Name="CrewInlogged" Opacity="0">
+		<Panel ux:Name="CrewInlogged" Opacity="1">
 			<ScrollView>
 				<StackPanel Margin="20">
 					<!-- Log out button -->
@@ -70,6 +70,9 @@
 					<Grid Row="1" Columns="3* ,1*">
 						<Text Value="CREWINFORMATION" Color="White" Font="RalewayBlack" FontSize="14" Width="100%" />
 						<Image File="assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
+						<Clicked>
+							<Toggle Target="OpenCrewInformation" />
+						</Clicked>
 					</Grid>
 					<!-- Seperator -->
 					<Rectangle Margin="0,20,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
@@ -103,9 +106,15 @@
 					<Rectangle Margin="0,15,0,15" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
 				</StackPanel>
 			</ScrollView>
+
+			<WhileTrue ux:Name="OpenCrewInformation">
+					<Change CrewInformation.Opacity="1" Duration="0.3" />
+			</WhileTrue>
 		</Panel>
 
-		<Panel ux:Name="MemberInlogged" Opacity="1">
+
+
+		<Panel ux:Name="MemberInlogged" Opacity="0">
 			<ScrollView>
 				<StackPanel Margin="20">
 					<!-- Log out button -->
@@ -141,6 +150,32 @@
 
 
 		</Panel>
+
+		<!-- Crew information -->
+		<Panel ux:Name="CrewInformation" Background="Black" Height="100%" Opacity="0">
+			<ScrollView>
+				<StackPanel Margin="20">
+					<!-- Cross icon -->
+	        <Image Alignment="TopLeft" Width="15" Margin="10,20,0,0" File="assets/CrossIcon.png">
+						<Clicked>
+							<Toggle Target="CloseCrewInformation" />
+						</Clicked>
+					</Image>
+					<!-- Crew information title -->
+					<Title Value="CREWINFORMATION" Alignment="Center" Margin="0,60,0,15" />
+					<!-- Seperator -->
+					<Rectangle Margin="0,15,0,15" Fill="#979797" Height="1px" SnapToPixels="true" Width="40%"/>
+					<!-- Text -->
+					<Paragraph Margin="0,40,0,0">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget neque vitae odio euismod fermentum eget nec mauris. Sed sit amet lectus ultricies, cursus tellus ut, vulputate elit. Cras aliquet, risus sit amet dictum bibendum, odio odio feugiat justo, nec cursus neque mauris in enim. Nam sit amet varius justo. Integer accumsan fringilla nunc quis convallis. Duis vitae justo ipsum. Nam elementum diam nec sagittis ornare. Aliquam erat volutpat. Duis sed faucibus nisl, pharetra iaculis arcu. Suspendisse nec sapien ornare, dapibus mauris nec, semper leo. Vestibulum et tincidunt sapien. Vestibulum pulvinar dapibus nisl, non bibendum risus porta id. Pellentesque interdum pharetra condimentum.
+					</Paragraph>
+				</StackPanel>
+			</ScrollView>
+		</Panel>
+
+		<WhileTrue ux:Name="CloseCrewInformation">
+			<Change CrewInformation.Opacity="0" Duration="0.3" />
+		</WhileTrue>
 
 		<!-- Slide out menu -->
 		<Panel ux:Name="sidebar" Edge="Left" Width="100%" Margin="0,0,56,0" Background="#000">
