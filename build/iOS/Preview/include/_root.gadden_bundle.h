@@ -56,6 +56,8 @@ struct gadden_bundle : uObject
     static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakerButtonWhited236d193() { return gadden_bundle_typeof()->Init(), IceBreakerButtonWhited236d193_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> IceBreakerIcon45cb54c5_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakerIcon45cb54c5() { return gadden_bundle_typeof()->Init(), IceBreakerIcon45cb54c5_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> IceBreakerQuote7b878236_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakerQuote7b878236() { return gadden_bundle_typeof()->Init(), IceBreakerQuote7b878236_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> IceBreakersPaged6f6d67e_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakersPaged6f6d67e() { return gadden_bundle_typeof()->Init(), IceBreakersPaged6f6d67e_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> InfoDiskIcond6abc125_;

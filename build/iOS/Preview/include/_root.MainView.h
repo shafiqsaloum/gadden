@@ -52,6 +52,12 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector101() { return MainView_typeof()->Init(), __selector101_; }
     static ::g::Uno::UX::Selector __selector102_;
     static ::g::Uno::UX::Selector& __selector102() { return MainView_typeof()->Init(), __selector102_; }
+    static ::g::Uno::UX::Selector __selector103_;
+    static ::g::Uno::UX::Selector& __selector103() { return MainView_typeof()->Init(), __selector103_; }
+    static ::g::Uno::UX::Selector __selector104_;
+    static ::g::Uno::UX::Selector& __selector104() { return MainView_typeof()->Init(), __selector104_; }
+    static ::g::Uno::UX::Selector __selector105_;
+    static ::g::Uno::UX::Selector& __selector105() { return MainView_typeof()->Init(), __selector105_; }
     static ::g::Uno::UX::Selector __selector11_;
     static ::g::Uno::UX::Selector& __selector11() { return MainView_typeof()->Init(), __selector11_; }
     static ::g::Uno::UX::Selector __selector12_;
@@ -296,6 +302,8 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> crossIconMap_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Image*> crossIconMap2;
     uStrong< ::g::Uno::UX::Property1*> crossIconMap2_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Panel*> DefaultPanel;
+    uStrong< ::g::Uno::UX::Property1*> DefaultPanel_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> exhibitor;
     uStrong< ::g::Fuse::Controls::Image*> ExhibitorBackground;
     uStrong< ::g::Uno::UX::Property1*> ExhibitorBackground_Opacity_inst;
@@ -376,11 +384,14 @@ struct MainView : ::g::Fuse::App
     static uSStrong< ::g::Fuse::Font*>& Raleway() { return MainView_typeof()->Init(), Raleway_; }
     static uSStrong< ::g::Fuse::Font*> RalewayBlack_;
     static uSStrong< ::g::Fuse::Font*>& RalewayBlack() { return MainView_typeof()->Init(), RalewayBlack_; }
+    uStrong< ::g::Fuse::Controls::Panel*> ResultPanel;
+    uStrong< ::g::Uno::UX::Property1*> ResultPanel_Opacity_inst;
     uStrong< ::g::Fuse::Navigation::Router*> router;
     uStrong< ::g::Fuse::Controls::Shadow*> shadow;
     uStrong< ::g::Uno::UX::Property1*> shadow_Color_inst;
     uStrong< ::g::Fuse::Controls::Shadow*> shadowProfile;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> ShowFilter;
+    uStrong< ::g::Fuse::Triggers::WhileTrue*> ShowResult;
     uStrong< ::g::Fuse::Controls::Panel*> sidebar;
     uStrong< ::g::Fuse::Controls::Rectangle*> sidebarFade;
     uStrong< ::g::Uno::UX::Property1*> sidebarFade_Opacity_inst;
