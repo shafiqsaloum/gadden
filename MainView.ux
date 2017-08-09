@@ -80,6 +80,9 @@
 					<Grid Row="1" Columns="3* ,1*">
 						<Text Value="CREWSCHEMA" Color="White" Font="RalewayBlack" FontSize="14" Width="100%" />
 						<Image File="assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
+						<Clicked>
+							<Toggle Target="OpenCrewSchedual" />
+						</Clicked>
 					</Grid>
 					<!-- Seperator -->
 					<Rectangle Margin="0,20,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
@@ -173,8 +176,34 @@
 			</ScrollView>
 		</Panel>
 
+		<!-- Crew schedual -->
+		<Panel ux:Name="CrewSchedual" Background="Black" Height="100%" Opacity="0">
+			<ScrollView>
+				<StackPanel Margin="20">
+					<!-- Cross icon -->
+	        <Image Alignment="TopLeft" Width="15" Margin="10,20,0,0" File="assets/CrossIcon.png">
+						<Clicked>
+							<Toggle Target="CloseCrewSchedual" />
+						</Clicked>
+					</Image>
+					<!-- Crew information title -->
+					<Title Value="CREWSCHEMA" Alignment="Center" Margin="0,60,0,15" />
+					<!-- Seperator -->
+					<Rectangle Margin="0,15,0,15" Fill="#979797" Height="1px" SnapToPixels="true" Width="40%"/>
+					<!-- Text -->
+					<Paragraph Margin="0,40,0,0">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget neque vitae odio euismod fermentum eget nec mauris. Sed sit amet lectus ultricies, cursus tellus ut, vulputate elit. Cras aliquet, risus sit amet dictum bibendum, odio odio feugiat justo, nec cursus neque mauris in enim. Nam sit amet varius justo. Integer accumsan fringilla nunc quis convallis. Duis vitae justo ipsum. Nam elementum diam nec sagittis ornare. Aliquam erat volutpat. Duis sed faucibus nisl, pharetra iaculis arcu. Suspendisse nec sapien ornare, dapibus mauris nec, semper leo. Vestibulum et tincidunt sapien. Vestibulum pulvinar dapibus nisl, non bibendum risus porta id. Pellentesque interdum pharetra condimentum.
+					</Paragraph>
+				</StackPanel>
+			</ScrollView>
+		</Panel>
+
+		<!-- Closing pop-ups -->
 		<WhileTrue ux:Name="CloseCrewInformation">
 			<Change CrewInformation.Opacity="0" Duration="0.3" />
+		</WhileTrue>
+		<WhileTrue ux:Name="CloseCrewSchedual">
+			<Change CrewSchedual.Opacity="0" Duration="0.3" />
 		</WhileTrue>
 
 		<!-- Slide out menu -->
