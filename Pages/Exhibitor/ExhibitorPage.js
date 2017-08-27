@@ -5,6 +5,7 @@ function Exhibitor(item) {
     this.name = item.name;
     this.logo = item.profile.logotype.thumbs.large;
     this.about = item.profile.aboutUs;
+    this.offer = item.profile.weOffer;
 };
 
 var selectedExhibitor = Observable();

@@ -15,6 +15,105 @@ TODO:
     <Change FilterArrow.Opacity="1"  />
   </WhileActive>
 
+
+  <!-- Output exhibitor list -->
+  <Panel ux:Name="ExibitorList" Visibility="Visible">
+    <ScrollView>
+      <StackPanel Margin="20">
+
+        <!-- Search input -->
+        <TextInput PlaceholderText="Sök utställare" PlaceholderColor="#979797" Padding="5,0,0,0" Alignment="TopCenter" TextAlignment="Center" Width="100%" TextColor="White" Height="40" Margin="0,0,0,50">
+          <Image Height="13" Alignment="Center" Margin="0,0,120,0" StretchMode="UniformToFill" Layer="Background" File="../../assets/SearchGrey.png"  />
+          <Rectangle Fill="White" Layer="Background" CornerRadius="10" >
+            <Stroke Width="1" Color="#979797" />
+          </Rectangle>
+        </TextInput>
+
+        <!-- Output data -->
+        <Each Items="{exhibitor}">
+          <StackPanel>
+            <Grid RowCount="1" ColumnCount="2">
+
+              <!-- Get name from JSON -->
+              <SmallText Opacity="1" Value="{= toUpper({name})}" Width="180" Margin="10,3,0,3">
+                <!-- Click event -->
+                <Clicked>
+                  <Toggle Target="showDetails" />
+                  <Callback Handler="{exhibitorClicked}"/>
+                </Clicked>
+              </SmallText>
+
+              <!-- Include star image locally -->
+              <Image ux:Name="starImage" Height="15" Alignment="BottomRight" StretchMode="UniformToFill" File="../../assets/StarWhite.png" Margin="0,0,0,7" Color="White">
+                <!-- Click event -->
+                <Clicked>
+                  <Toggle Target="yellowStar" />
+                </Clicked>
+              </Image>
+
+              <!-- While true event -->
+              <WhileTrue ux:Name="yellowStar">
+                  <Change starImage.Color="Yellow" Duration="0.3" />
+
+              </WhileTrue>
+              <WhileTrue ux:Name="showDetails">
+                <Change ExhibitorDetails.Visibility="Visible" Duration="0.2" />
+                <Change ExibitorList.Visibility="Hidden" />
+              </WhileTrue>
+
+            </Grid>
+            <!-- Seperator -->
+            <Rectangle Margin="0,3,0,3" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+          </StackPanel>
+        </Each>
+      </StackPanel>
+  </ScrollView>
+</Panel>
+
+<!-- Output exhibitor details -->
+<Panel ux:Name="ExhibitorDetails" Visibility="Hidden">
+  <Rectangle Width="100%" Height="100%" Background="Black" ZOffset="3.0">
+    <ScrollView>
+      <StackPanel>
+        <With Data="{selectedExhibitor}">
+          <!-- Get image from JSON -->
+          <Panel Width="100%">
+              <Image Alignment="TopCenter" File="../../assets/NewsExampleImage.png" Width="100%" />
+          </Panel>
+
+          <!-- Get logotype from JSON -->
+          <Panel Margin="20" MaxHeight="60">
+            <Image Alignment="Left" Url="{logo}" />
+          </Panel>
+
+          <!-- Get name from JSON -->
+          <Panel Alignment="BottomLeft" Margin="20,20,0,0" Width="100%" Height="100%">
+            <Text Value="{= toUpper({name})}" Color="White" Font="Raleway" FontSize="28" LineSpacing="10" Height="100%" TextAlignment="Left"/>
+          </Panel>
+
+          <!-- Input date from JSON here -->
+          <Text Value="TORDAG 1/1 FREDAG 2/1" Color="Gray" Font="Raleway" FontSize="16" Margin="20,20,0,0" />
+
+          <!-- Get about text from JSON -->
+          <Panel Margin="20">
+            <Paragraph Value="{about}" />
+          </Panel>
+
+          <Title Value="HÄR FINNS VI" Alignment="Center" />
+
+          <!-- Input map from JSON -->
+          <Image Alignment="Center" File="../../assets/MapPlan3.png" Width="90%" Margin="0,20,0,20" />
+
+          <WelcomeText Value="VI ERBJUDER" Alignment="Center" Color="White" Margin="0,20,0,0" />
+          <SmallText Value="TYP AV JOBB" Alignment="Center" Font="RalewayBlack" />
+          <SmallText Value="{= toUpper({offer})}" Alignment="Center" />
+
+          </With>
+        </StackPanel>
+      </ScrollView>
+    </Rectangle>
+  </Panel>
+
   <Panel ux:Name="FilterPanel" Opacity="0" >
     <ScrollView>
       <StackPanel Margin="30">
@@ -218,91 +317,6 @@ TODO:
     </ScrollView>
   </Panel>
 
-  <!-- Output exhibitor list -->
-  <Panel ux:Name="ExibitorList" Opacity="1">
-    <ScrollView>
-      <StackPanel Margin="20">
-
-        <!-- Search input -->
-        <TextInput PlaceholderText="Sök utställare" PlaceholderColor="#979797" Padding="5,0,0,0" Alignment="TopCenter" TextAlignment="Center" Width="100%" TextColor="White" Height="40" Margin="0,0,0,50">
-          <Image Height="13" Alignment="Center" Margin="0,0,120,0" StretchMode="UniformToFill" Layer="Background" File="../../assets/SearchGrey.png"  />
-          <Rectangle Fill="White" Layer="Background" CornerRadius="10" >
-            <Stroke Width="1" Color="#979797" />
-          </Rectangle>
-        </TextInput>
-
-        <!-- Output data -->
-        <Each Items="{exhibitor}">
-          <StackPanel>
-            <Grid RowCount="1" ColumnCount="2">
-
-              <!-- Get name from JSON -->
-              <SmallText Opacity="1" Value="{= toUpper({name})}" Width="180" Margin="10,3,0,3">
-                <!-- Click event -->
-                <Clicked>
-                  <Toggle Target="showDetails" />
-                  <Callback Handler="{exhibitorClicked}"/>
-                </Clicked>
-              </SmallText>
-
-              <!-- Include star image locally -->
-              <Image ux:Name="starImage" Height="15" Alignment="BottomRight" StretchMode="UniformToFill" File="../../assets/StarWhite.png" Margin="0,0,0,7" Color="White">
-                <!-- Click event -->
-                <Clicked>
-                  <Toggle Target="yellowStar" />
-                </Clicked>
-              </Image>
-
-              <!-- While true event -->
-              <WhileTrue ux:Name="yellowStar">
-                  <Change starImage.Color="Yellow" Duration="0.3" />
-
-              </WhileTrue>
-              <WhileTrue ux:Name="showDetails">
-                <Change ExhibitorDetails.Opacity="1" Duration="0.2" />
-                <Change ExibitorList.Opacity="0" />
-              </WhileTrue>
-
-            </Grid>
-            <!-- Seperator -->
-            <Rectangle Margin="0,3,0,3" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
-          </StackPanel>
-        </Each>
-      </StackPanel>
-  </ScrollView>
-</Panel>
-
-<!-- Output exhibitor details -->
-<Panel ux:Name="ExhibitorDetails" Opacity="0">
-  <Rectangle Width="100%" Height="100%" Background="Black" ZOffset="3.0">
-    <ScrollView>
-      <StackPanel>
-        <With Data="{selectedExhibitor}">
-          <!-- Get image from JSON -->
-          <Panel Width="100%">
-              <Image Alignment="TopCenter" File="../../assets/NewsExampleImage.png" Width="100%" />
-          </Panel>
-
-          <!-- Get logotype from JSON -->
-          <Panel Margin="20" MaxHeight="60">
-            <Image Alignment="Left" Url="{logo}" />
-          </Panel>
-
-          <!-- Get name from JSON -->
-          <Panel Alignment="BottomLeft" Margin="0,20,0,0" Width="100%" Height="100%">
-            <Title Value="{name}" FontSize="28" LineSpacing="10" Height="100%" TextAlignment="Left"/>
-          </Panel>
-
-          <!-- Get about text from JSON -->
-          <Panel Margin="20">
-            <Paragraph Value="{about}" />
-          </Panel>
-
-          </With>
-        </StackPanel>
-      </ScrollView>
-    </Rectangle>
-  </Panel>
 
   <!-- Background image -->
   <Image ux:Name="ExhibitorBackground" Opacity="1" StretchMode="Fill" Layer="Background" File="../../assets/BackgroundExhibitor.png"  />

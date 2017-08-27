@@ -38,8 +38,8 @@ struct MainView__Template2 : ::g::Uno::UX::Template
     static ::g::Uno::UX::Selector& __selector4() { return MainView__Template2_typeof()->Init(), __selector4_; }
     static ::g::Uno::UX::Selector __selector5_;
     static ::g::Uno::UX::Selector& __selector5() { return MainView__Template2_typeof()->Init(), __selector5_; }
-    uStrong< ::g::Uno::UX::Property1*> ExhibitorDetails_Opacity_inst;
-    uStrong< ::g::Uno::UX::Property1*> ExibitorList_Opacity_inst;
+    uStrong< ::g::Uno::UX::Property1*> ExhibitorDetails_Visibility_inst;
+    uStrong< ::g::Uno::UX::Property1*> ExibitorList_Visibility_inst;
     uStrong< ::g::Uno::UX::Property1*> starImage_Color_inst;
     uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
 

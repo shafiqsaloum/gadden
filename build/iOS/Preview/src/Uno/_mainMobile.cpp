@@ -81,6 +81,7 @@ namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Pr
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_ElementLayoutMaster_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_Height_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_Opacity_Property_typeof();}
+namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_Visibility_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_Width_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseReactiveEach_Items_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseReactiveWith_Data_Property_typeof();}
@@ -2060,6 +2061,7 @@ void uInitRtti()
         (uType*(*)())&::g::gadden_FuseElementsElement_ElementLayoutMaster_Property_typeof,
         (uType*(*)())&::g::gadden_FuseElementsElement_Height_Property_typeof,
         (uType*(*)())&::g::gadden_FuseElementsElement_Opacity_Property_typeof,
+        (uType*(*)())&::g::gadden_FuseElementsElement_Visibility_Property_typeof,
         (uType*(*)())&::g::gadden_FuseElementsElement_Width_Property_typeof,
         (uType*(*)())&::g::gadden_FuseReactiveEach_Items_Property_typeof,
         (uType*(*)())&::g::gadden_FuseReactiveWith_Data_Property_typeof,

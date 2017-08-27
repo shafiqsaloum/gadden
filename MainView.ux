@@ -34,177 +34,177 @@
 				<Change sidebarFade.Opacity="1" />
 			</ActivatingAnimation>
 
-			<Panel ux:Name="NotInlogged" Opacity="0">
+			<!-- <Panel ux:Name="NotInlogged" Opacity="0">
 				<StackPanel Margin="20">
 					<Rectangle Margin="0,80,0,0" Background="Black" Width="70%" Height="50" Alignment="TopCenter" >
 						<Stroke Width="1" Color="White" />
 						<Paragraph FontSize="18" Alignment="Center" Value="LOGGA IN" />
 						<Clicked><Set navigation.Active="login" /> <Callback Handler="{closeTest}"/></Clicked>
-					</Rectangle>
+					</Rectangle> -->
 					<!-- Line seperator -->
-					<Rectangle Alignment="Center" Margin="0,40,0,0" Fill="White" Height="1px" SnapToPixels="true" Width="100%"/>
+					<!-- <Rectangle Alignment="Center" Margin="0,40,0,0" Fill="White" Height="1px" SnapToPixels="true" Width="100%"/> -->
 					<!-- Title -->
-					<Title Alignment="Center" Margin="0,20,0,20" Value="STJÄRNMARKERADE UTSTÄLLARE" />
+					<!-- <Title Alignment="Center" Margin="0,20,0,20" Value="STJÄRNMARKERADE UTSTÄLLARE" /> -->
 					<!-- Content below creates lectures -->
-					<Image Alignment="BottomRight" Width="10" Margin="0,0,0,-10" File="assets/CrossIcon.png" />
+					<!-- <Image Alignment="BottomRight" Width="10" Margin="0,0,0,-10" File="assets/CrossIcon.png" />
 					<Grid Row="1" Columns="2* ,3* ,1*">
 						<Image Height="80" Width="100%" Alignment="BottomLeft" StretchMode="UniformToFill" File="assets/NewsExampleImage.png"/>
 						<SmallText Value="HANDELSBANKEN ONSDAG 8/11" FontSize="12" Alignment="BottomLeft" Margin="10,0,0,-5" />
 						<Image File="assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
-					</Grid>
+					</Grid> -->
 					<!-- Seperator -->
-					<Rectangle Margin="0,20,0,20" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+					<!-- <Rectangle Margin="0,20,0,20" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
 				</StackPanel>
-		</Panel>
+		</Panel> -->
 
-		<Panel ux:Name="CrewInlogged" Opacity="1">
+		<!-- <Panel ux:Name="CrewInlogged" Opacity="1">
 			<ScrollView>
-				<StackPanel Margin="20">
+				<StackPanel Margin="20"> -->
 					<!-- Log out button -->
-					<SmallText Value="LOGGA UT" Alignment="TopRight" Color="White" Margin="0,20,0,0" Font="RalewayBlack" FontSize="12" />
+					<!-- <SmallText Value="LOGGA UT" Alignment="TopRight" Color="White" Margin="0,20,0,0" Font="RalewayBlack" FontSize="12" /> -->
 					<!-- Welcome text with users name in it -->
-					<Title Value="HEJ, JANE DOE" Margin="0,60,0,0" />
+					<!-- <Title Value="HEJ, JANE DOE" Margin="0,60,0,0" /> -->
 					<!-- Seperator -->
-					<Rectangle Margin="0,30,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+					<!-- <Rectangle Margin="0,30,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/> -->
 					<!-- Crew information -->
-					<Grid Row="1" Columns="3* ,1*">
+					<!-- <Grid Row="1" Columns="3* ,1*">
 						<Text Value="CREWINFORMATION" Color="White" Font="RalewayBlack" FontSize="14" Width="100%" />
 						<Image File="assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
 						<Clicked>
 							<Toggle Target="OpenCrewInformation" />
 						</Clicked>
-					</Grid>
+					</Grid> -->
 					<!-- Seperator -->
-					<Rectangle Margin="0,20,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+					<!-- <Rectangle Margin="0,20,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/> -->
 					<!-- Crew schedual -->
-					<Grid Row="1" Columns="3* ,1*">
+					<!-- <Grid Row="1" Columns="3* ,1*">
 						<Text Value="CREWSCHEMA" Color="White" Font="RalewayBlack" FontSize="14" Width="100%" />
 						<Image File="assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
 						<Clicked>
 							<Toggle Target="OpenCrewSchedual" />
 						</Clicked>
-					</Grid>
+					</Grid> -->
 					<!-- Seperator -->
-					<Rectangle Margin="0,20,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+					<!-- <Rectangle Margin="0,20,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/> -->
 					<!-- My events title -->
-					<Title Value="MINA HÄNDELSER" Alignment="Center" Margin="0,30,0,30"/>
+					<!-- <Title Value="MINA HÄNDELSER" Alignment="Center" Margin="0,30,0,30"/> -->
 					<!-- Events -->
-					<Grid Row="1" Columns="3* ,1*">
+					<!-- <Grid Row="1" Columns="3* ,1*">
 						<SmallText Value="NAMN PÅ EVENT/FÖRELÄSNING" FontSize="12" />
 						<Image File="assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
-					</Grid>
+					</Grid> -->
 					<!-- Seperator -->
-					<Rectangle Margin="0,20,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+					<!-- <Rectangle Margin="0,20,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/> -->
 					<!-- Starmarked exhibitor title -->
 					<!-- Title -->
-					<Title Alignment="Center" Margin="0,20,0,20" Value="STJÄRNMARKERADE UTSTÄLLARE" />
+					<!-- <Title Alignment="Center" Margin="0,20,0,20" Value="STJÄRNMARKERADE UTSTÄLLARE" /> -->
 					<!-- Content below creates lectures -->
-					<Image Alignment="BottomRight" Width="10" Margin="0,0,0,-10" File="assets/CrossIcon.png" />
+					<!-- <Image Alignment="BottomRight" Width="10" Margin="0,0,0,-10" File="assets/CrossIcon.png" />
 					<Grid Row="1" Columns="2* ,3* ,1*">
 						<Image Height="80" Width="100%" Alignment="BottomLeft" StretchMode="UniformToFill" File="assets/NewsExampleImage.png"/>
 						<SmallText Value="HANDELSBANKEN ONSDAG 8/11" FontSize="12" Alignment="BottomLeft" Margin="10,0,0,-5" />
 						<Image File="assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
-					</Grid>
+					</Grid> -->
 					<!-- Seperator -->
-					<Rectangle Margin="0,15,0,15" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+					<!-- <Rectangle Margin="0,15,0,15" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
 				</StackPanel>
-			</ScrollView>
+			</ScrollView> -->
 
-			<WhileTrue ux:Name="OpenCrewInformation">
+			<!-- <WhileTrue ux:Name="OpenCrewInformation">
 					<Change CrewInformation.Opacity="1" Duration="0.3" />
 			</WhileTrue>
-		</Panel>
+		</Panel> -->
 
 
 
-		<Panel ux:Name="MemberInlogged" Opacity="0">
+		<!-- <Panel ux:Name="MemberInlogged" Opacity="0">
 			<ScrollView>
-				<StackPanel Margin="20">
+				<StackPanel Margin="20"> -->
 					<!-- Log out button -->
-					<SmallText Value="LOGGA UT" Alignment="TopRight" Color="White" Margin="0,20,0,0" Font="RalewayBlack" FontSize="12" />
+					<!-- <SmallText Value="LOGGA UT" Alignment="TopRight" Color="White" Margin="0,20,0,0" Font="RalewayBlack" FontSize="12" /> -->
 					<!-- Welcome text with users name in it -->
-					<Title Value="HEJ, JANE DOE" Margin="0,60,0,0" />
+					<!-- <Title Value="HEJ, JANE DOE" Margin="0,60,0,0" /> -->
 					<!-- Seperator -->
-					<Rectangle Margin="0,30,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+					<!-- <Rectangle Margin="0,30,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/> -->
 					<!-- My events title -->
-					<Title Value="MINA HÄNDELSER" Alignment="Center" Margin="0,30,0,30"/>
+					<!-- <Title Value="MINA HÄNDELSER" Alignment="Center" Margin="0,30,0,30"/> -->
 					<!-- Events -->
-					<Grid Row="1" Columns="3* ,1*">
+					<!-- <Grid Row="1" Columns="3* ,1*">
 						<SmallText Value="NAMN PÅ EVENT/FÖRELÄSNING" FontSize="12" />
 						<Image File="assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
-					</Grid>
+					</Grid> -->
 					<!-- Seperator -->
-					<Rectangle Margin="0,20,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+					<!-- <Rectangle Margin="0,20,0,30" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/> -->
 					<!-- Starmarked exhibitor title -->
 					<!-- Title -->
-					<Title Alignment="Center" Margin="0,20,0,20" Value="STJÄRNMARKERADE UTSTÄLLARE" />
+					<!-- <Title Alignment="Center" Margin="0,20,0,20" Value="STJÄRNMARKERADE UTSTÄLLARE" /> -->
 					<!-- Content below creates lectures -->
-					<Image Alignment="BottomRight" Width="10" Margin="0,0,0,-10" File="assets/CrossIcon.png" />
+					<!-- <Image Alignment="BottomRight" Width="10" Margin="0,0,0,-10" File="assets/CrossIcon.png" />
 					<Grid Row="1" Columns="2* ,3* ,1*">
 						<Image Height="80" Width="100%" Alignment="BottomLeft" StretchMode="UniformToFill" File="assets/NewsExampleImage.png"/>
 						<SmallText Value="HANDELSBANKEN ONSDAG 8/11" FontSize="12" Alignment="BottomLeft" Margin="10,0,0,-5" />
 						<Image File="assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
-					</Grid>
+					</Grid> -->
 					<!-- Seperator -->
-					<Rectangle Margin="0,15,0,15" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+					<!-- <Rectangle Margin="0,15,0,15" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
 				</StackPanel>
 			</ScrollView>
-		</Panel>
+		</Panel> -->
 
 
 		</Panel>
 
 		<!-- Crew information -->
-		<Panel ux:Name="CrewInformation" Background="Black" Height="100%" Opacity="0">
+		<!-- <Panel ux:Name="CrewInformation" Background="Black" Height="100%" Opacity="0">
 			<ScrollView>
-				<StackPanel Margin="20">
+				<StackPanel Margin="20"> -->
 					<!-- Cross icon -->
-	        <Image Alignment="TopLeft" Width="15" Margin="10,20,0,0" File="assets/CrossIcon.png">
+	        <!-- <Image Alignment="TopLeft" Width="15" Margin="10,20,0,0" File="assets/CrossIcon.png">
 						<Clicked>
 							<Toggle Target="CloseCrewInformation" />
 						</Clicked>
-					</Image>
+					</Image> -->
 					<!-- Crew information title -->
-					<Title Value="CREWINFORMATION" Alignment="Center" Margin="0,60,0,15" />
+					<!-- <Title Value="CREWINFORMATION" Alignment="Center" Margin="0,60,0,15" /> -->
 					<!-- Seperator -->
-					<Rectangle Margin="0,15,0,15" Fill="#979797" Height="1px" SnapToPixels="true" Width="40%"/>
+					<!-- <Rectangle Margin="0,15,0,15" Fill="#979797" Height="1px" SnapToPixels="true" Width="40%"/> -->
 					<!-- Text -->
-					<Paragraph Margin="0,40,0,0">
+					<!-- <Paragraph Margin="0,40,0,0">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget neque vitae odio euismod fermentum eget nec mauris. Sed sit amet lectus ultricies, cursus tellus ut, vulputate elit. Cras aliquet, risus sit amet dictum bibendum, odio odio feugiat justo, nec cursus neque mauris in enim. Nam sit amet varius justo. Integer accumsan fringilla nunc quis convallis. Duis vitae justo ipsum. Nam elementum diam nec sagittis ornare. Aliquam erat volutpat. Duis sed faucibus nisl, pharetra iaculis arcu. Suspendisse nec sapien ornare, dapibus mauris nec, semper leo. Vestibulum et tincidunt sapien. Vestibulum pulvinar dapibus nisl, non bibendum risus porta id. Pellentesque interdum pharetra condimentum.
 					</Paragraph>
 				</StackPanel>
 			</ScrollView>
-		</Panel>
+		</Panel> -->
 
 		<!-- Crew schedual -->
-		<Panel ux:Name="CrewSchedual" Background="Black" Height="100%" Opacity="0">
+		<!-- <Panel ux:Name="CrewSchedual" Background="Black" Height="100%" Opacity="0">
 			<ScrollView>
-				<StackPanel Margin="20">
+				<StackPanel Margin="20"> -->
 					<!-- Cross icon -->
-	        <Image Alignment="TopLeft" Width="15" Margin="10,20,0,0" File="assets/CrossIcon.png">
+	        <!-- <Image Alignment="TopLeft" Width="15" Margin="10,20,0,0" File="assets/CrossIcon.png">
 						<Clicked>
 							<Toggle Target="CloseCrewSchedual" />
 						</Clicked>
-					</Image>
+					</Image> -->
 					<!-- Crew information title -->
-					<Title Value="CREWSCHEMA" Alignment="Center" Margin="0,60,0,15" />
+					<!-- <Title Value="CREWSCHEMA" Alignment="Center" Margin="0,60,0,15" /> -->
 					<!-- Seperator -->
-					<Rectangle Margin="0,15,0,15" Fill="#979797" Height="1px" SnapToPixels="true" Width="40%"/>
+					<!-- <Rectangle Margin="0,15,0,15" Fill="#979797" Height="1px" SnapToPixels="true" Width="40%"/> -->
 					<!-- Text -->
-					<Paragraph Margin="0,40,0,0">
+					<!-- <Paragraph Margin="0,40,0,0">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget neque vitae odio euismod fermentum eget nec mauris. Sed sit amet lectus ultricies, cursus tellus ut, vulputate elit. Cras aliquet, risus sit amet dictum bibendum, odio odio feugiat justo, nec cursus neque mauris in enim. Nam sit amet varius justo. Integer accumsan fringilla nunc quis convallis. Duis vitae justo ipsum. Nam elementum diam nec sagittis ornare. Aliquam erat volutpat. Duis sed faucibus nisl, pharetra iaculis arcu. Suspendisse nec sapien ornare, dapibus mauris nec, semper leo. Vestibulum et tincidunt sapien. Vestibulum pulvinar dapibus nisl, non bibendum risus porta id. Pellentesque interdum pharetra condimentum.
 					</Paragraph>
 				</StackPanel>
 			</ScrollView>
-		</Panel>
+		</Panel> -->
 
 		<!-- Closing pop-ups -->
-		<WhileTrue ux:Name="CloseCrewInformation">
+		<!-- <WhileTrue ux:Name="CloseCrewInformation">
 			<Change CrewInformation.Opacity="0" Duration="0.3" />
 		</WhileTrue>
 		<WhileTrue ux:Name="CloseCrewSchedual">
 			<Change CrewSchedual.Opacity="0" Duration="0.3" />
-		</WhileTrue>
+		</WhileTrue> -->
 
 		<!-- Slide out menu -->
 		<Panel ux:Name="sidebar" Edge="Left" Width="100%" Margin="0,0,56,0" Background="#000">

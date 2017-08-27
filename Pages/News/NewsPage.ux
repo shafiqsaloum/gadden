@@ -5,7 +5,7 @@ TODO:
 
 <Page>
   <JavaScript File="NewsPage.js" />
-  <Panel ux:Name="NewsFeed" Opacity="1">
+  <Panel ux:Name="NewsFeed" Visibility="Visible">
     <ScrollView>
       <StackPanel>
 
@@ -34,14 +34,12 @@ TODO:
 
   <!-- While true event -->
   <WhileTrue ux:Name="opacityNews">
-    <Change NewsDetails.Opacity="1" Duration="0.1" />
-    <Change logoImage.Width="0%" Duration="0.1" />
-    <Change NewsFeed.Opacity="0" Duration="0.2" />
-    <Change BackgroundImage.Opacity="0" Duration="0.2" />
+    <Change NewsDetails.Visibility="Visible" Duration="0.1" />
+    <Change NewsFeed.Visibility="Hidden" Duration="0.2" />
   </WhileTrue>
 
   <!-- Output newsfeed details -->
-  <Panel ux:Name="NewsDetails" Opacity="0" >
+  <Panel ux:Name="NewsDetails" Visibility="Hidden" >
     <Rectangle Width="100%" Height="100%" Background="Black" ZOffset="1.0">
       <ScrollView>
         <StackPanel>
@@ -49,7 +47,12 @@ TODO:
 
             <!-- Get image from JSON -->
             <Panel Width="100%">
-              <Image Alignment="TopRight" Width="25" Height="25" Margin="20" File="../../assets/CrossIcon.png" />
+              <Image Alignment="TopRight" Width="25" Height="25" Margin="20" File="../../assets/CrossIcon.png">
+                <Clicked>
+                  <Toggle Target="hideNewsDetails" />
+
+                </Clicked>
+              </Image>
               <Image Url="{image}" />
             </Panel>
 
@@ -65,9 +68,27 @@ TODO:
             <Panel Margin="20">
               <Paragraph Value="{text}" />
             </Panel>
-            <Panel Margin="20">
-              <Paragraph Value="{text}" />
-            </Panel>
+
+            <!-- Go to event -->
+            <Rectangle Background="Black" Width="60%" Height="60" Alignment="Center" Margin="20,0,0,0">
+              <!-- Outlines for button -->
+              <Stroke Width="2" Color="White" />
+              <!-- Text in button -->
+              <Paragraph FontSize="18" Alignment="Center" Value="GÅ TILL EVENT" IsReadOnly="True" />
+
+              <Clicked>
+                <Toggle Target="GoToEvent" />
+              </Clicked>
+            </Rectangle>
+
+            <!-- Background -->
+            <Image Margin="0,-60,0,0" Width="100%" Alignment="BottomCenter" File="../../assets/BackgroundNewsDetails.png" StretchMode="UniformToFill"/>
+
+            <WhileTrue ux:Name="GoToEvent">
+              <!-- <Change ReadMoreText.Height="110%" Duration="0.3" /> -->
+            </WhileTrue>
+
+
 
           </With>
         </StackPanel>
@@ -75,10 +96,16 @@ TODO:
     </Rectangle>
   </Panel>
 
+  <!-- While true event -->
+  <WhileTrue ux:Name="hideNewsDetails">
+      <Change NewsFeed.Visibility="Visible" Duration="0.2" />
+    <Change NewsDetails.Visibility="Hidden" Duration="0.1" />
+    <DebugAction Message="CLICKED AFTER" />
+  </WhileTrue>
+
+
   <!-- Includes background locally -->
-  <Image File="../../assets/BackgroundNewsDetails.png" Width="100%" Layer="Background" Alignment="BottomCenter"/>
-
-
+  <!-- <Image File="../../assets/BackgroundNewsDetails.png" Width="100%" Layer="Background" Alignment="BottomCenter"/> -->
 
   <!-- Background image -->
   <Image ux:Name="BackgroundImage" Opacity="1" Alignment="Center" File="../../assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
