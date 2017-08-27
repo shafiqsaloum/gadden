@@ -104,9 +104,44 @@ TODO:
           <!-- Input map from JSON -->
           <Image Alignment="Center" File="../../assets/MapPlan3.png" Width="90%" Margin="0,20,0,20" />
 
-          <WelcomeText Value="VI ERBJUDER" Alignment="Center" Color="White" Margin="0,20,0,0" />
-          <SmallText Value="TYP AV JOBB" Alignment="Center" Font="RalewayBlack" />
-          <SmallText Value="{= toUpper({offer})}" Alignment="Center" />
+          <!-- We offers -->
+          <Grid Row="0" Columns="1* ,1.5*, 1*" >
+            <Rectangle Margin="0,7,0,0" Fill="#979797" Height="1px" SnapToPixels="true" Width="80%"/>
+            <WelcomeText Width="100%" Value="VI ERBJUDER" Alignment="Center" Color="White" Margin="13,20,0,0" />
+            <Rectangle Margin="0,7,0,0" Fill="#979797" Height="1px" SnapToPixels="true" Width="80%"/>
+          </Grid>
+
+          <SmallText Value="TYP AV JOBB" Alignment="Center" Font="RalewayBlack" Margin="10" />
+          <Each Items="{offer}">
+            <SmallText Value="{= toUpper({offer})}" Alignment="Center" Margin="5" />
+          </Each>
+
+          <!-- We searching for -->
+          <Grid Row="0" Columns="1* ,1.5*, 1*" >
+            <Rectangle Margin="0,7,0,0" Fill="#979797" Height="1px" SnapToPixels="true" Width="80%"/>
+            <WelcomeText Value="VI SÖKER" Alignment="Center" Color="White" Margin="0,20,0,0" />
+            <Rectangle Margin="0,7,0,0" Fill="#979797" Height="1px" SnapToPixels="true" Width="80%"/>
+          </Grid>
+
+          <SmallText Value="TYP AV UTBILDNING" Alignment="Center" Font="RalewayBlack" Margin="10" />
+          <Each Items="{education}">
+            <SmallText Value="{= toUpper({education})}" Alignment="Center" Margin="5" />
+          </Each>
+
+          <!-- Go to website -->
+          <Rectangle Background="Black" Width="60%" Height="60" Alignment="Center" Margin="20,30,0,0">
+            <!-- Outlines for button -->
+            <Stroke Width="2" Color="White" />
+            <!-- Text in button -->
+            <Paragraph FontSize="18" Alignment="Center" Value="BESÖK WEBBPLATS" IsReadOnly="True" />
+
+            <Clicked>
+              <LaunchUri Uri="{link}" />
+            </Clicked>
+          </Rectangle>
+
+          <!-- Background -->
+          <Image Margin="0,-60,0,0" Width="100%" Alignment="BottomCenter" File="../../assets/BackgroundNewsDetails.png" StretchMode="UniformToFill"/>
 
           </With>
         </StackPanel>
