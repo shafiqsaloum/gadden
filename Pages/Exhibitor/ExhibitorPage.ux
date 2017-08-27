@@ -1,11 +1,3 @@
-<!--
-TODO:
-  * Function for the search input
-  * Add filter functions and create the vue
-  * Fetch the image to exhibitor details page when it's included in the API
-  * Save exhibitors locally for the user (is not in need of inlogged user)
- -->
-
 <Page>
   <JavaScript File="ExhibitorPage.js" />
 
@@ -78,8 +70,18 @@ TODO:
         <With Data="{selectedExhibitor}">
           <!-- Get image from JSON -->
           <Panel Width="100%">
+              <Image Alignment="TopRight" Width="25" Height="25" Margin="20" File="../../assets/CrossIcon.png">
+                <Clicked>
+                  <Toggle Target="hideExhibitorDetails" />
+                </Clicked>
+              </Image>
               <Image Alignment="TopCenter" File="../../assets/NewsExampleImage.png" Width="100%" />
           </Panel>
+
+          <WhileTrue ux:Name="hideExhibitorDetails">
+            <Change ExibitorList.Visibility="Visible" Duration="0.1" />
+            <Change ExhibitorDetails.Visibility="Hidden" Duration="0.2" />
+          </WhileTrue>
 
           <!-- Get logotype from JSON -->
           <Panel Margin="20" MaxHeight="60">
