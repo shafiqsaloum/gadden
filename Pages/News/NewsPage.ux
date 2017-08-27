@@ -23,7 +23,7 @@ TODO:
 
             <!-- Get title from JSON -->
             <Panel Alignment="BottomLeft" Margin="20">
-              <Text Value="{title}" Font="TitleFont" TextColor="#fff" TextWrapping="Wrap" FontSize="20" LineSpacing="10" />
+              <Text Value="{= toUpper({title})}" Font="TitleFont" TextColor="#fff" TextWrapping="Wrap" FontSize="20" LineSpacing="10" />
             </Panel>
           </Image>
 

@@ -92,7 +92,7 @@ TODO:
           </Panel>
 
           <!-- Input date from JSON here -->
-          <Text Value="TORDAG 1/1 FREDAG 2/1" Color="Gray" Font="Raleway" FontSize="16" Margin="20,20,0,0" />
+          <Text Value="{dates}" Color="Gray" Font="Raleway" FontSize="16" Margin="20,20,0,0" />
 
           <!-- Get about text from JSON -->
           <Panel Margin="20">
@@ -102,7 +102,7 @@ TODO:
           <Title Value="HÄR FINNS VI" Alignment="Center" />
 
           <!-- Input map from JSON -->
-          <Image Alignment="Center" File="../../assets/MapPlan3.png" Width="90%" Margin="0,20,0,20" />
+          <Image Alignment="Center" Url="{map}" Width="90%" Margin="0,20,0,20" />
 
           <!-- We offers -->
           <Grid Row="0" Columns="1* ,1.5*, 1*" >

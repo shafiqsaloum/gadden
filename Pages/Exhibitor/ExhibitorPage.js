@@ -8,6 +8,8 @@ function Exhibitor(item) {
     this.offer = item.profile.weOffer;
     this.education = item.profile.desiredProgramme;
     this.link = item.profile.urlWebsite;
+    this.dates = item.profile.exhibition;
+    this.map = item.profile.url;
 };
 
 var selectedExhibitor = Observable();

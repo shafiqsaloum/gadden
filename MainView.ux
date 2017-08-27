@@ -16,12 +16,12 @@
 	<!-- Global fonts -->
 	<Font ux:Global="Raleway" File="Raleway-Regular.ttf" />
 	<Font ux:Global="RalewayBlack" File="Raleway-Black.ttf" />
-	<Font ux:Global="TitleFont" File="font.ttf" />
+	<Font ux:Global="TitleFont" File="SugarPlums.ttf" />
 
 	<!-- Text classes-->
 	<Text ux:Class="WelcomeText" FontSize="20" Alignment="Center" Font="Raleway"/>
-	<TextView ux:Class="Title" Font="TitleFont" Alignment="BottomLeft" TextColor="#fff" Margin="20,0,0,0" TextWrapping="Wrap" FontSize="20" IsReadOnly="True"/>
-	<Text ux:Class="TitleBig" Font="TitleFont" Alignment="TopCenter" Color="#fff" FontSize="30" />
+	<TextView ux:Class="Title" Font="TitleFont" Alignment="BottomLeft" TextColor="#fff" Margin="20,0,0,0" TextWrapping="Wrap" FontSize="24" IsReadOnly="True"/>
+	<Text ux:Class="TitleBig" Font="TitleFont" Alignment="TopCenter" Color="#fff" FontSize="34" />
 	<TextView ux:Class="Paragraph" Font="Raleway"  TextColor="#fff" FontSize="14" TextWrapping="Wrap"  />
 	<Text ux:Class="ButtonText" Font="RalewayBlack" FontSize="14" Color="#fff" />
 	<Text ux:Class="SmallText" Font="Raleway" TextColor="#fff" FontSize="14" TextWrapping="Wrap" />
