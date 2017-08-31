@@ -2,11 +2,10 @@
   <JavaScript File="ExhibitorPage.js" />
 
   <WhileActive Threshold="0.1">
-    <Change GaddenLogo.Opacity="0" />
+    <!-- <Change GaddenLogo.Opacity="0" />
     <Change FilterButton.Opacity="1"  />
-    <Change FilterArrow.Opacity="1"  />
+    <Change FilterArrow.Opacity="1"  /> -->
   </WhileActive>
-
 
   <!-- Output exhibitor list -->
   <Panel ux:Name="ExibitorList" Visibility="Visible">
@@ -25,7 +24,6 @@
         <Each Items="{exhibitor}">
           <StackPanel>
             <Grid RowCount="1" ColumnCount="2">
-
               <!-- Get name from JSON -->
               <SmallText Opacity="1" Value="{= toUpper({name})}" Width="180" Margin="10,3,0,3">
                 <!-- Click event -->

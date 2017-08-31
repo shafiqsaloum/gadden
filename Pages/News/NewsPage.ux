@@ -3,35 +3,26 @@
   <Panel ux:Name="NewsFeed" Visibility="Visible">
     <ScrollView>
       <StackPanel>
-
         <!-- Logotype included locally -->
         <Image ux:Name="logoImage" Margin="10" Alignment="TopCenter" File="../../assets/GaddenLogotypeWhite.png" Width="60%" />
         <Each Items="{dataSource}">
-
           <!-- Get image from JSON -->
           <Image Width="100%" Height="100%" Url="{image}" ZOffset="0.0">
             <!-- Click event handlers -->
             <Clicked>
-              <Toggle Target="opacityNews" />
+              <Set NewsDetails.Visibility="Visible" Delay="0.2" />
+              <Set NewsFeed.Visibility="Hidden" Delay="0.2" />
               <Callback Handler="{articleClicked}"/>
             </Clicked>
-
             <!-- Get title from JSON -->
             <Panel Alignment="BottomLeft" Margin="20">
               <Text Value="{= toUpper({title})}" Font="TitleFont" TextColor="#fff" TextWrapping="Wrap" FontSize="20" LineSpacing="10" />
             </Panel>
           </Image>
-
         </Each>
       </StackPanel>
     </ScrollView>
   </Panel>
-
-  <!-- While true event -->
-  <WhileTrue ux:Name="opacityNews">
-    <Change NewsDetails.Visibility="Visible" Duration="0.1" />
-    <Change NewsFeed.Visibility="Hidden" Duration="0.2" />
-  </WhileTrue>
 
   <!-- Output newsfeed details -->
   <Panel ux:Name="NewsDetails" Visibility="Hidden" >
@@ -39,70 +30,43 @@
       <ScrollView>
         <StackPanel>
   		    <With Data="{selectedArticle}">
-
             <!-- Get image from JSON -->
             <Panel Width="100%">
               <Image Alignment="TopRight" Width="25" Height="25" Margin="20" File="../../assets/CrossIcon.png">
                 <Clicked>
-                  <Toggle Target="hideNewsDetails" />
-
+                  <Set NewsDetails.Visibility="Hidden" Delay="0.2" />
+                  <Set NewsFeed.Visibility="Visible" Delay="0.2" />
                 </Clicked>
               </Image>
               <Image Url="{image}" />
             </Panel>
-
             <!-- Get title from JSON -->
             <Panel ux:Name="TitleTest" Alignment="BottomLeft" Margin="0,20,0,0" Width="100%" Height="100%">
-              <Title Value="{title}" FontSize="28" LineSpacing="10" Height="100%" TextAlignment="Left"/>
+              <Title Value="{= toUpper({title})}" FontSize="28" LineSpacing="10" Height="100%" TextAlignment="Left"/>
             </Panel>
-
             <!-- Seperator -->
             <Rectangle Alignment="TopLeft" Fill="#979797" Height="1px" SnapToPixels="true" Width="60%" Margin="20,20,0,0" />
-
             <!-- Get text from JSON -->
             <Panel Margin="20">
               <Paragraph Value="{text}" />
             </Panel>
-
             <!-- Go to event -->
             <Rectangle Background="Black" Width="60%" Height="60" Alignment="Center" Margin="20,0,0,0">
               <!-- Outlines for button -->
               <Stroke Width="2" Color="White" />
               <!-- Text in button -->
               <Paragraph FontSize="18" Alignment="Center" Value="GÅ TILL EVENT" IsReadOnly="True" />
-
               <Clicked>
-                <Toggle Target="GoToEvent" />
               </Clicked>
             </Rectangle>
-
             <!-- Background -->
             <Image Margin="0,-60,0,0" Width="100%" Alignment="BottomCenter" File="../../assets/BackgroundNewsDetails.png" StretchMode="UniformToFill"/>
-
-            <WhileTrue ux:Name="GoToEvent">
-              <!-- <Change ReadMoreText.Height="110%" Duration="0.3" /> -->
-            </WhileTrue>
-
-
-
           </With>
         </StackPanel>
       </ScrollView>
     </Rectangle>
   </Panel>
 
-  <!-- While true event -->
-  <WhileTrue ux:Name="hideNewsDetails">
-      <Change NewsFeed.Visibility="Visible" Duration="0.2" />
-    <Change NewsDetails.Visibility="Hidden" Duration="0.1" />
-    <DebugAction Message="CLICKED AFTER" />
-  </WhileTrue>
-
-
-  <!-- Includes background locally -->
-  <!-- <Image File="../../assets/BackgroundNewsDetails.png" Width="100%" Layer="Background" Alignment="BottomCenter"/> -->
-
   <!-- Background image -->
   <Image ux:Name="BackgroundImage" Opacity="1" Alignment="Center" File="../../assets/BackgroundAbstractPaint.jpg" StretchMode="UniformToFill" />
-
 </Page>
