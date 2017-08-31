@@ -1,12 +1,5 @@
-<!--
-TODO:
-* Function for shake
-* Function for randomally show a result
--->
-
 <Page>
     <JavaScript File="IceBreakersPage.js" />
-
     <Panel ux:Name="popupBackground" Height="70%" Background="Black" Opacity="1" Alignment="Top">
         <!-- Background -->
         <Image ux:Name="infoIcon" Opacity="1" Alignment="TopRight" Width="30" Height="30" Margin="20" File="../../assets/InfoIconWhite.png">
@@ -51,7 +44,7 @@ TODO:
       <!-- Main content -->
       <Panel ux:Name="DefaultPanel" Opacity="1">
         <StackPanel Alignment="BottomCenter" Margin="0,0,0,20">
-            <TextView Font="TitleFont" TextColor="#fff" FontSize="65" TextWrapping="Wrap" TextAlignment="Center" LineSpacing="20" Alignment="Top" Margin="0,0,0,50">
+            <TextView Font="TitleFont" TextColor="#fff" FontSize="65" TextWrapping="Wrap" TextAlignment="Center" LineSpacing="0" Alignment="Top" Margin="0,0,0,50">
                 SHAKE TO BREAK
             </TextView>
             <Paragraph TextAlignment="Center" Alignment="BottomCenter">
