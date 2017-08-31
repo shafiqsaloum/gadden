@@ -307,12 +307,21 @@
 				</Profile>
 				<Image ux:Name="GaddenLogo" Opacity="1" Alignment="Center" File="assets/GaddenLogotypeSmallWhite.png" Width="20%" />
 
+				<!-- Header name for filter -->
 				<StackPanel Width="40%" Orientation="Horizontal" ItemSpacing="10" Alignment="Center">
-				<Text ux:Name="FilterButton" Opacity="0" Alignment="Center" Color="White" Font="RalewayBlack" FontSize="15" Value="FILTRERA" />
-				<Image ux:Name="FilterArrow" Opacity="0" Alignment="Right" File="assets/ArrowDownWhite.png" Width="15" />
-				<Clicked>
-					<Toggle Target="ShowFilter" />
-				</Clicked>
+					<Text ux:Name="FilterButton" Opacity="0" Alignment="Center" Color="White" Font="RalewayBlack" FontSize="15" Value="FILTRERA" />
+					<Image ux:Name="FilterArrow" Opacity="0" Alignment="Right" File="assets/ArrowDownWhite.png" Width="15" />
+					<Clicked>
+						<Toggle Target="ShowFilter" />
+					</Clicked>
+				</StackPanel>
+
+				<!-- Header name for partners -->
+				<StackPanel Width="40%" Orientation="Horizontal" ItemSpacing="10" Alignment="Center">
+					<Text ux:Name="PartnerTitle" Visibility="Hidden" Alignment="Center" Color="White" Font="RalewayBlack" FontSize="15" Value="PARTNERS" />
+					<!-- <Clicked>
+						<Set NewsDetails.Visibility="Hidden" Delay="0.2" />
+					</Clicked> -->
 				</StackPanel>
 
 				<WhileTrue ux:Name="ShowFilter">
