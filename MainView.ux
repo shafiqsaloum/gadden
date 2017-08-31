@@ -309,27 +309,26 @@
 
 				<!-- Header name for filter -->
 				<StackPanel Width="40%" Orientation="Horizontal" ItemSpacing="10" Alignment="Center">
-					<Text ux:Name="FilterButton" Opacity="0" Alignment="Center" Color="White" Font="RalewayBlack" FontSize="15" Value="FILTRERA" />
-					<Image ux:Name="FilterArrow" Opacity="0" Alignment="Right" File="assets/ArrowDownWhite.png" Width="15" />
+					<Text ux:Name="FilterButton" Visibility="Hidden" Alignment="Center" Color="White" Font="RalewayBlack" FontSize="15" Value="FILTRERA" />
+					<Image ux:Name="FilterArrow" Visibility="Hidden" Alignment="Right" File="assets/ArrowDownWhite.png" Width="15" />
 					<Clicked>
-						<Toggle Target="ShowFilter" />
+						<!-- <Toggle Target="ShowFilter" /> -->
+						<Set ExhibitorBackground.Visibility="Hidden" Delay="0.2" />
+						<Set FilterBackground.Visibility="Visible" Delay="0.2" />
+						<Set FilterPanel.Visibility="Visible" Delay="0.2" />
+						<Set ExibitorList.Visibility="Hidden" Delay="0.2" />
 					</Clicked>
 				</StackPanel>
 
-				<!-- Header name for partners -->
-				<StackPanel Width="40%" Orientation="Horizontal" ItemSpacing="10" Alignment="Center">
-					<Text ux:Name="PartnerTitle" Visibility="Hidden" Alignment="Center" Color="White" Font="RalewayBlack" FontSize="15" Value="PARTNERS" />
-					<!-- <Clicked>
-						<Set NewsDetails.Visibility="Hidden" Delay="0.2" />
-					</Clicked> -->
-				</StackPanel>
+				<!-- Header title for partners -->
+				<Text ux:Name="PartnerTitle" Visibility="Hidden" Alignment="Center" Color="White" Font="RalewayBlack" FontSize="15" Value="PARTNERS" />
 
-				<WhileTrue ux:Name="ShowFilter">
-						<Change ExhibitorBackground.Opacity="0" Duration="0.3" />
-						<Change FilterBackground.Opacity="1" Duration="0.3" />
-						<Change FilterPanel.Opacity="1" Duration="0.3" />
-						<Change ExibitorList.Opacity="0" Duration="0.3" />
-				</WhileTrue>
+				<!-- <WhileTrue ux:Name="ShowFilter">
+						<Change ExhibitorBackground.Visibility="Hidden" Duration="0.3" />
+						<Change FilterBackground.Visibility="Visible" Duration="0.3" />
+						<Change FilterPanel.Visibility="Visible" Duration="0.3" />
+						<Change ExibitorList.Visibility="Hidden" Duration="0.3" />
+				</WhileTrue> -->
 			</Panel>
 		</StackPanel>
 

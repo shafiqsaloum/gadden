@@ -1,17 +1,15 @@
 <Page>
   <JavaScript File="ExhibitorPage.js" />
-
+<!-- Set headbar title -->
   <WhileActive Threshold="0.1">
-    <!-- <Change GaddenLogo.Opacity="0" />
-    <Change FilterButton.Opacity="1"  />
-    <Change FilterArrow.Opacity="1"  /> -->
+    <Change GaddenLogo.Visibility="Hidden" />
+    <Change FilterButton.Visibility="Visible"  />
+    <Change FilterArrow.Visibility="Visible"  />
   </WhileActive>
-
   <!-- Output exhibitor list -->
   <Panel ux:Name="ExibitorList" Visibility="Visible">
     <ScrollView>
       <StackPanel Margin="20">
-
         <!-- Search input -->
         <TextInput PlaceholderText="Sök utställare" PlaceholderColor="#979797" Padding="5,0,0,0" Alignment="TopCenter" TextAlignment="Center" Width="100%" TextColor="White" Height="40" Margin="0,0,0,50">
           <Image Height="13" Alignment="Center" Margin="0,0,120,0" StretchMode="UniformToFill" Layer="Background" File="../../assets/SearchGrey.png"  />
@@ -70,17 +68,12 @@
           <Panel Width="100%">
               <Image Alignment="TopRight" Width="25" Height="25" Margin="20" File="../../assets/CrossIcon.png">
                 <Clicked>
-                  <Toggle Target="hideExhibitorDetails" />
+                  <Set ExibitorList.Visibility="Visible" Delay="0.2" />
+                  <Set ExhibitorDetails.Visibility="Hidden" Delay="0.2" />
                 </Clicked>
               </Image>
               <Image Alignment="TopCenter" File="../../assets/NewsExampleImage.png" Width="100%" />
           </Panel>
-
-          <WhileTrue ux:Name="hideExhibitorDetails">
-            <Change ExibitorList.Visibility="Visible" Duration="0.1" />
-            <Change ExhibitorDetails.Visibility="Hidden" Duration="0.2" />
-          </WhileTrue>
-
           <!-- Get logotype from JSON -->
           <Panel Margin="20" MaxHeight="60">
             <Image Alignment="Left" Url="{logo}" />
@@ -149,7 +142,8 @@
     </Rectangle>
   </Panel>
 
-  <Panel ux:Name="FilterPanel" Opacity="0" >
+<!-- Filter panel -->
+  <Panel ux:Name="FilterPanel" Visibility="Hidden" >
     <ScrollView>
       <StackPanel Margin="30">
         <!-- Type of education -->
@@ -347,6 +341,12 @@
         <!-- Button -->
         <Rectangle Background="Black" Width="200" Height="50" Margin="0,15,0,0">
           <Text Value="FILTRERA" Color="White" Alignment="Center" Font="RalewayBlack"/>
+          <Clicked>
+            <Set FilterPanel.Visibility="Hidden" Delay="0.2" />
+            <Set FilterBackground.Visibility="Hidden" Delay="0.2" />
+            <Set ExibitorList.Visibility="Visible" Delay="0.2" />
+            <Set ExhibitorBackground.Visibility="Visible" Delay="0.2" />
+          </Clicked>
         </Rectangle>
       </StackPanel>
     </ScrollView>
@@ -354,6 +354,6 @@
 
 
   <!-- Background image -->
-  <Image ux:Name="ExhibitorBackground" Opacity="1" StretchMode="Fill" Layer="Background" File="../../assets/BackgroundExhibitor.png"  />
-  <Image ux:Name="FilterBackground" Opacity="0" StretchMode="Fill" Layer="Background" File="../../assets/BackgroundFilter.png"  />
+  <Image ux:Name="ExhibitorBackground" Visibility="Visible" StretchMode="Fill" Layer="Background" File="../../assets/BackgroundExhibitor.png"  />
+  <Image ux:Name="FilterBackground" Visibility="Hidden" StretchMode="Fill" Layer="Background" File="../../assets/BackgroundFilter.png"  />
 </Page>
