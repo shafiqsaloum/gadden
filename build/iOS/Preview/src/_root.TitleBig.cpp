@@ -127,7 +127,7 @@ void TitleBig::ctor_8()
 void TitleBig::InitializeUX1()
 {
     uStackFrame __("TitleBig", "InitializeUX()");
-    FontSize(30.0f);
+    FontSize(34.0f);
     Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
     Alignment(6);
     Font(::g::MainView::TitleFont());

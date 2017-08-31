@@ -4,14 +4,12 @@
 #pragma once
 #include <Uno.UX.Template.h>
 namespace g{namespace Uno{namespace UX{struct NameTable;}}}
-namespace g{namespace Uno{namespace UX{struct Property1;}}}
-namespace g{namespace Uno{namespace UX{struct Selector;}}}
 namespace g{struct MainView;}
 namespace g{struct MainView__Template6;}
 
 namespace g{
 
-// public partial sealed class MainView.Template6 :447
+// public partial sealed class MainView.Template6 :450
 // {
 ::g::Uno::UX::Template_type* MainView__Template6_typeof();
 void MainView__Template6__ctor_1_fn(MainView__Template6* __this, ::g::MainView* parent, ::g::MainView* parentInstance);
@@ -25,9 +23,6 @@ struct MainView__Template6 : ::g::Uno::UX::Template
     static uSStrong<uArray*>& __g_static_nametable1() { return MainView__Template6_typeof()->Init(), __g_static_nametable1_; }
     uWeak< ::g::MainView*> __parent1;
     uWeak< ::g::MainView*> __parentInstance1;
-    static ::g::Uno::UX::Selector __selector0_;
-    static ::g::Uno::UX::Selector& __selector0() { return MainView__Template6_typeof()->Init(), __selector0_; }
-    uStrong< ::g::Uno::UX::Property1*> temp_Url_inst;
 
     void ctor_1(::g::MainView* parent, ::g::MainView* parentInstance);
     static MainView__Template6* New2(::g::MainView* parent, ::g::MainView* parentInstance);

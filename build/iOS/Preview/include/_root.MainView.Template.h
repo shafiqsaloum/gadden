@@ -29,7 +29,11 @@ struct MainView__Template : ::g::Uno::UX::Template
     static ::g::Uno::UX::Selector& __selector0() { return MainView__Template_typeof()->Init(), __selector0_; }
     static ::g::Uno::UX::Selector __selector1_;
     static ::g::Uno::UX::Selector& __selector1() { return MainView__Template_typeof()->Init(), __selector1_; }
+    static ::g::Uno::UX::Selector __selector2_;
+    static ::g::Uno::UX::Selector& __selector2() { return MainView__Template_typeof()->Init(), __selector2_; }
     uStrong< ::g::Uno::UX::Property1*> __self_Url_inst1;
+    uStrong< ::g::Uno::UX::Property1*> NewsDetails_Visibility_inst;
+    uStrong< ::g::Uno::UX::Property1*> NewsFeed_Visibility_inst;
     uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
 
     void ctor_1(::g::MainView* parent, ::g::MainView* parentInstance);

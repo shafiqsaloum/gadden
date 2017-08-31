@@ -72,6 +72,15 @@ sealed class gadden_FuseControlsNavigationControl_Active_Property: Uno.UX.Proper
     public override Fuse.Visual Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.NavigationControl)obj).Active; }
     public override void Set(global::Uno.UX.PropertyObject obj, Fuse.Visual v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.NavigationControl)obj).Active = v; }
 }
+sealed class gadden_FuseElementsElement_Visibility_Property: Uno.UX.Property<Fuse.Elements.Visibility>
+{
+    [Uno.WeakReference] readonly Fuse.Elements.Element _obj;
+    public gadden_FuseElementsElement_Visibility_Property(Fuse.Elements.Element obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override Fuse.Elements.Visibility Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Elements.Element)obj).Visibility; }
+    public override void Set(global::Uno.UX.PropertyObject obj, Fuse.Elements.Visibility v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Elements.Element)obj).SetVisibility(v, origin); }
+    public override bool SupportsOriginSetter { get { return true; } }
+}
 sealed class gadden_FuseReactiveEach_Items_Property: Uno.UX.Property<object>
 {
     [Uno.WeakReference] readonly Fuse.Reactive.Each _obj;
@@ -87,14 +96,6 @@ sealed class gadden_FuseControlsImage_Url_Property: Uno.UX.Property<string>
     public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
     public override string Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.Image)obj).Url; }
     public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.Image)obj).Url = v; }
-}
-sealed class gadden_FuseElementsElement_Width_Property: Uno.UX.Property<Uno.UX.Size>
-{
-    [Uno.WeakReference] readonly Fuse.Elements.Element _obj;
-    public gadden_FuseElementsElement_Width_Property(Fuse.Elements.Element obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
-    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
-    public override Uno.UX.Size Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Elements.Element)obj).Width; }
-    public override void Set(global::Uno.UX.PropertyObject obj, Uno.UX.Size v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Elements.Element)obj).Width = v; }
 }
 sealed class gadden_FuseReactiveWith_Data_Property: Uno.UX.Property<object>
 {
@@ -136,15 +137,6 @@ sealed class gadden_FuseControlsImage_Color_Property: Uno.UX.Property<float4>
     public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
     public override float4 Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.Image)obj).Color; }
     public override void Set(global::Uno.UX.PropertyObject obj, float4 v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.Image)obj).Color = v; }
-}
-sealed class gadden_FuseElementsElement_Visibility_Property: Uno.UX.Property<Fuse.Elements.Visibility>
-{
-    [Uno.WeakReference] readonly Fuse.Elements.Element _obj;
-    public gadden_FuseElementsElement_Visibility_Property(Fuse.Elements.Element obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
-    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
-    public override Fuse.Elements.Visibility Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Elements.Element)obj).Visibility; }
-    public override void Set(global::Uno.UX.PropertyObject obj, Fuse.Elements.Visibility v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Elements.Element)obj).SetVisibility(v, origin); }
-    public override bool SupportsOriginSetter { get { return true; } }
 }
 sealed class gadden_FuseControlsShape_Color_Property: Uno.UX.Property<float4>
 {

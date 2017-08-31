@@ -5,7 +5,6 @@
 #include <Fuse.App.h>
 #include <Fuse.IProperties.h>
 #include <Uno.Float4.h>
-#include <Uno.UX.Size.h>
 namespace g{namespace Fuse{namespace Controls{struct Circle;}}}
 namespace g{namespace Fuse{namespace Controls{struct EdgeNavigator;}}}
 namespace g{namespace Fuse{namespace Controls{struct Image;}}}
@@ -269,7 +268,6 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveTorsdag;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> ActiveUppsats;
     uStrong< ::g::Fuse::Controls::Image*> BackgroundImage;
-    uStrong< ::g::Uno::UX::Property1*> BackgroundImage_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Circle*> CircleEkonom;
     uStrong< ::g::Uno::UX::Property1*> CircleEkonom_Color_inst;
     uStrong< ::g::Fuse::Controls::Circle*> CircleExtrajobb;
@@ -306,20 +304,21 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> DefaultPanel_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> exhibitor;
     uStrong< ::g::Fuse::Controls::Image*> ExhibitorBackground;
-    uStrong< ::g::Uno::UX::Property1*> ExhibitorBackground_Opacity_inst;
+    uStrong< ::g::Uno::UX::Property1*> ExhibitorBackground_Visibility_inst;
     uStrong< ::g::Fuse::Controls::Panel*> ExhibitorDetails;
+    uStrong< ::g::Uno::UX::Property1*> ExhibitorDetails_Visibility_inst;
     uStrong< ::g::Fuse::Controls::Panel*> ExibitorList;
-    uStrong< ::g::Uno::UX::Property1*> ExibitorList_Opacity_inst;
+    uStrong< ::g::Uno::UX::Property1*> ExibitorList_Visibility_inst;
     uStrong< ::g::Fuse::Controls::Image*> FilterArrow;
-    uStrong< ::g::Uno::UX::Property1*> FilterArrow_Opacity_inst;
+    uStrong< ::g::Uno::UX::Property1*> FilterArrow_Visibility_inst;
     uStrong< ::g::Fuse::Controls::Image*> FilterBackground;
-    uStrong< ::g::Uno::UX::Property1*> FilterBackground_Opacity_inst;
+    uStrong< ::g::Uno::UX::Property1*> FilterBackground_Visibility_inst;
     uStrong< ::g::Fuse::Controls::Text*> FilterButton;
-    uStrong< ::g::Uno::UX::Property1*> FilterButton_Opacity_inst;
+    uStrong< ::g::Uno::UX::Property1*> FilterButton_Visibility_inst;
     uStrong< ::g::Fuse::Controls::Panel*> FilterPanel;
-    uStrong< ::g::Uno::UX::Property1*> FilterPanel_Opacity_inst;
+    uStrong< ::g::Uno::UX::Property1*> FilterPanel_Visibility_inst;
     uStrong< ::g::Fuse::Controls::Image*> GaddenLogo;
-    uStrong< ::g::Uno::UX::Property1*> GaddenLogo_Opacity_inst;
+    uStrong< ::g::Uno::UX::Property1*> GaddenLogo_Visibility_inst;
     uStrong< ::g::Fuse::Controls::Page*> goodiebag;
     uStrong< ::g::Fuse::Controls::Panel*> GoodiebagTab;
     uStrong< ::g::Fuse::Controls::Page*> icebreaker;
@@ -341,7 +340,6 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> infoIconMap2_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> login;
     uStrong< ::g::Fuse::Controls::Image*> logoImage;
-    uStrong< ::g::Uno::UX::Property1*> logoImage_Width_inst;
     uStrong< ::g::Fuse::Controls::Page*> map;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> MapToggle;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> MapToggle2;
@@ -355,13 +353,14 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> navigationSponsors_Active_inst;
     uStrong< ::g::Fuse::Controls::Page*> news;
     uStrong< ::g::Fuse::Controls::Panel*> NewsDetails;
-    uStrong< ::g::Uno::UX::Property1*> NewsDetails_Opacity_inst;
+    uStrong< ::g::Uno::UX::Property1*> NewsDetails_Visibility_inst;
     uStrong< ::g::Fuse::Controls::Panel*> NewsFeed;
-    uStrong< ::g::Uno::UX::Property1*> NewsFeed_Opacity_inst;
-    uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityNews;
+    uStrong< ::g::Uno::UX::Property1*> NewsFeed_Visibility_inst;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityProgram;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityToggle;
     uStrong< ::g::Fuse::Controls::Page*> partners;
+    uStrong< ::g::Fuse::Controls::Text*> PartnerTitle;
+    uStrong< ::g::Uno::UX::Property1*> PartnerTitle_Visibility_inst;
     uStrong< ::g::Fuse::Controls::Page*> plan3;
     uStrong< ::g::Fuse::Controls::Panel*> plan3Tab;
     uStrong< ::g::Fuse::Controls::Page*> plan4;
@@ -390,7 +389,6 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Shadow*> shadow;
     uStrong< ::g::Uno::UX::Property1*> shadow_Color_inst;
     uStrong< ::g::Fuse::Controls::Shadow*> shadowProfile;
-    uStrong< ::g::Fuse::Triggers::WhileTrue*> ShowFilter;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> ShowResult;
     uStrong< ::g::Fuse::Controls::Panel*> sidebar;
     uStrong< ::g::Fuse::Controls::Rectangle*> sidebarFade;
@@ -410,27 +408,30 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> temp_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp1_Url_inst;
     uStrong< ::g::Uno::UX::Property1*> temp10_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp11_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp12_Data_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp11_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp12_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp13_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp14_Url_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp15_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp16_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp17_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp14_Uri_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp15_Data_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp16_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp17_Url_inst;
     uStrong< ::g::Uno::UX::Property1*> temp18_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp19_Data_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp19_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp20_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp21_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp22_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp20_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp21_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp22_Data_inst;
     uStrong< ::g::Uno::UX::Property1*> temp23_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp24_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp25_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp26_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp27_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp4_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp5_Data_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp4_Data_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp5_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp6_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp7_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp8_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp7_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp8_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp9_Value_inst;
     uStrong< ::g::Fuse::Controls::EdgeNavigator*> TheSidebar;
     static uSStrong< ::g::Fuse::Font*> TitleFont_;

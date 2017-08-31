@@ -131,7 +131,7 @@ void Title::InitializeUX()
 {
     uStackFrame __("Title", "InitializeUX()");
     TextWrapping(1);
-    FontSize(20.0f);
+    FontSize(24.0f);
     TextColor(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
     IsReadOnly(true);
     Alignment(13);

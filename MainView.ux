@@ -22,7 +22,7 @@
 	<Text ux:Class="WelcomeText" FontSize="20" Alignment="Center" Font="Raleway"/>
 	<TextView ux:Class="Title" Font="TitleFont" Alignment="BottomLeft" TextColor="#fff" Margin="20,0,0,0" TextWrapping="Wrap" FontSize="24" IsReadOnly="True"/>
 	<Text ux:Class="TitleBig" Font="TitleFont" Alignment="TopCenter" Color="#fff" FontSize="34" />
-	<TextView ux:Class="Paragraph" Font="Raleway"  TextColor="#fff" FontSize="14" TextWrapping="Wrap"  />
+	<TextView ux:Class="Paragraph" Font="Raleway"  TextColor="#fff" FontSize="14" TextWrapping="Wrap" IsReadOnly="True" />
 	<Text ux:Class="ButtonText" Font="RalewayBlack" FontSize="14" Color="#fff" />
 	<Text ux:Class="SmallText" Font="Raleway" TextColor="#fff" FontSize="14" TextWrapping="Wrap" />
 
@@ -312,7 +312,6 @@
 					<Text ux:Name="FilterButton" Visibility="Hidden" Alignment="Center" Color="White" Font="RalewayBlack" FontSize="15" Value="FILTRERA" />
 					<Image ux:Name="FilterArrow" Visibility="Hidden" Alignment="Right" File="assets/ArrowDownWhite.png" Width="15" />
 					<Clicked>
-						<!-- <Toggle Target="ShowFilter" /> -->
 						<Set ExhibitorBackground.Visibility="Hidden" Delay="0.2" />
 						<Set FilterBackground.Visibility="Visible" Delay="0.2" />
 						<Set FilterPanel.Visibility="Visible" Delay="0.2" />
@@ -322,19 +321,11 @@
 
 				<!-- Header title for partners -->
 				<Text ux:Name="PartnerTitle" Visibility="Hidden" Alignment="Center" Color="White" Font="RalewayBlack" FontSize="15" Value="PARTNERS" />
-
-				<!-- <WhileTrue ux:Name="ShowFilter">
-						<Change ExhibitorBackground.Visibility="Hidden" Duration="0.3" />
-						<Change FilterBackground.Visibility="Visible" Duration="0.3" />
-						<Change FilterPanel.Visibility="Visible" Duration="0.3" />
-						<Change ExibitorList.Visibility="Hidden" Duration="0.3" />
-				</WhileTrue> -->
 			</Panel>
 		</StackPanel>
 
 
 	<PageControl ux:Name="navigation">
-
 		<Page ux:Name="news">
 				<ux:Include File="Pages/News/NewsPage.ux" />
 		</Page>

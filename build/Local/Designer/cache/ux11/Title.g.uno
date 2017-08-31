@@ -12,7 +12,7 @@ public partial class Title: Fuse.Controls.TextView
     void InitializeUX()
     {
         this.TextWrapping = Fuse.Controls.TextWrapping.Wrap;
-        this.FontSize = 20f;
+        this.FontSize = 24f;
         this.TextColor = float4(1f, 1f, 1f, 1f);
         this.IsReadOnly = true;
         this.Alignment = Fuse.Elements.Alignment.BottomLeft;

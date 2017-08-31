@@ -34,7 +34,9 @@
 #include <Fuse.Reactive.BindingMode.h>
 #include <Fuse.Reactive.Data.h>
 #include <Fuse.Reactive.DataBinding.h>
+#include <Fuse.Reactive.Expression.h>
 #include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.ToUpper.h>
 #include <Fuse.Triggers.Actions.Toggle.h>
 #include <Fuse.Triggers.Actions-57f7a0e.h>
 #include <Fuse.Triggers.Actions-b5190bae.h>
@@ -60,9 +62,9 @@ static uType* TYPES[8];
 
 namespace g{
 
-// public partial sealed class MainView.Template1 :68
+// public partial sealed class MainView.Template1 :79
 // {
-// static Template1() :91
+// static Template1() :102
 static void MainView__Template1__cctor__fn(uType* __type)
 {
     MainView__Template1::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 2, ::STRINGS[0/*"ReadMoreText"*/], ::STRINGS[1/*"ReadMore"*/]);
@@ -135,13 +137,13 @@ static void MainView__Template1_build(uType* type)
     return type;
 }
 
-// public Template1(MainView parent, MainView parentInstance) :72
+// public Template1(MainView parent, MainView parentInstance) :83
 void MainView__Template1__ctor_1_fn(MainView__Template1* __this, ::g::MainView* parent, ::g::MainView* parentInstance)
 {
     __this->ctor_1(parent, parentInstance);
 }
 
-// public override sealed object New() :94
+// public override sealed object New() :105
 void MainView__Template1__New1_fn(MainView__Template1* __this, uObject** __retval)
 {
     uStackFrame __("MainView.Template1", "New()");
@@ -153,92 +155,93 @@ void MainView__Template1__New1_fn(MainView__Template1* __this, uObject** __retva
     ::g::Fuse::Controls::Image* temp1 = ::g::Fuse::Controls::Image::New3();
     __this->temp1_Url_inst = ::g::gadden_FuseControlsImage_Url_Property::New1(temp1, MainView__Template1::__selector0());
     ::g::Fuse::Reactive::Data* temp6 = ::g::Fuse::Reactive::Data::New1(::STRINGS[7/*"logo"*/]);
+    ::g::Fuse::Reactive::Data* temp7 = ::g::Fuse::Reactive::Data::New1(::STRINGS[8/*"title"*/]);
     ::g::TitleBig* temp2 = ::g::TitleBig::New4();
     __this->temp2_Value_inst = ::g::gadden_FuseControlsTextControl_Value_Property::New1(temp2, MainView__Template1::__selector1());
-    ::g::Fuse::Reactive::Data* temp7 = ::g::Fuse::Reactive::Data::New1(::STRINGS[8/*"title"*/]);
+    ::g::Fuse::Reactive::ToUpper* temp8 = ::g::Fuse::Reactive::ToUpper::New1(temp7);
     ::g::Paragraph* ReadMoreText1 = ::g::Paragraph::New4();
     __this->ReadMoreText_Value_inst = ::g::gadden_FuseControlsTextInputControl_Value_Property::New1(ReadMoreText1, MainView__Template1::__selector1());
-    ::g::Fuse::Reactive::Data* temp8 = ::g::Fuse::Reactive::Data::New1(::STRINGS[9/*"text"*/]);
+    ::g::Fuse::Reactive::Data* temp9 = ::g::Fuse::Reactive::Data::New1(::STRINGS[9/*"text"*/]);
     __this->ReadMoreText_Height_inst = ::g::gadden_FuseElementsElement_Height_Property::New1(ReadMoreText1, MainView__Template1::__selector2());
     ::g::Fuse::Triggers::Actions::LaunchUri* temp3 = ::g::Fuse::Triggers::Actions::LaunchUri::New2();
     __this->temp3_Uri_inst = ::g::gadden_FuseTriggersActionsLaunchUri_Uri_Property::New1(temp3, MainView__Template1::__selector3());
-    ::g::Fuse::Reactive::Data* temp9 = ::g::Fuse::Reactive::Data::New1(::STRINGS[10/*"link"*/]);
+    ::g::Fuse::Reactive::Data* temp10 = ::g::Fuse::Reactive::Data::New1(::STRINGS[10/*"link"*/]);
     ::g::Paragraph* temp4 = ::g::Paragraph::New4();
     __this->temp4_Value_inst = ::g::gadden_FuseControlsTextInputControl_Value_Property::New1(temp4, MainView__Template1::__selector1());
-    ::g::Fuse::Reactive::Data* temp10 = ::g::Fuse::Reactive::Data::New1(::STRINGS[10/*"link"*/]);
-    ::g::Fuse::Reactive::DataBinding* temp11 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp_Url_inst, (uObject*)temp5, __this->__g_nametable1, 3);
-    ::g::Fuse::Reactive::DataBinding* temp12 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp1_Url_inst, (uObject*)temp6, __this->__g_nametable1, 3);
-    ::g::Fuse::Reactive::DataBinding* temp13 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp2_Value_inst, (uObject*)temp7, __this->__g_nametable1, 3);
-    ::g::Fuse::Reactive::DataBinding* temp14 = ::g::Fuse::Reactive::DataBinding::New1(__this->ReadMoreText_Value_inst, (uObject*)temp8, __this->__g_nametable1, 3);
-    ::g::Fuse::Controls::Rectangle* temp15 = ::g::Fuse::Controls::Rectangle::New3();
-    ::g::Fuse::Drawing::Stroke* temp16 = ::g::Fuse::Drawing::Stroke::New2();
-    ::g::Paragraph* temp17 = ::g::Paragraph::New4();
-    ::g::Fuse::Gestures::Clicked* temp18 = ::g::Fuse::Gestures::Clicked::New2();
-    ::g::Fuse::Triggers::Actions::Toggle* temp19 = ::g::Fuse::Triggers::Actions::Toggle::New2();
+    ::g::Fuse::Reactive::Data* temp11 = ::g::Fuse::Reactive::Data::New1(::STRINGS[10/*"link"*/]);
+    ::g::Fuse::Reactive::DataBinding* temp12 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp_Url_inst, (uObject*)temp5, __this->__g_nametable1, 3);
+    ::g::Fuse::Reactive::DataBinding* temp13 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp1_Url_inst, (uObject*)temp6, __this->__g_nametable1, 3);
+    ::g::Fuse::Reactive::DataBinding* temp14 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp2_Value_inst, (uObject*)temp8, __this->__g_nametable1, 3);
+    ::g::Fuse::Reactive::DataBinding* temp15 = ::g::Fuse::Reactive::DataBinding::New1(__this->ReadMoreText_Value_inst, (uObject*)temp9, __this->__g_nametable1, 3);
+    ::g::Fuse::Controls::Rectangle* temp16 = ::g::Fuse::Controls::Rectangle::New3();
+    ::g::Fuse::Drawing::Stroke* temp17 = ::g::Fuse::Drawing::Stroke::New2();
+    ::g::Paragraph* temp18 = ::g::Paragraph::New4();
+    ::g::Fuse::Gestures::Clicked* temp19 = ::g::Fuse::Gestures::Clicked::New2();
+    ::g::Fuse::Triggers::Actions::Toggle* temp20 = ::g::Fuse::Triggers::Actions::Toggle::New2();
     ::g::Fuse::Triggers::WhileTrue* ReadMore1 = ::g::Fuse::Triggers::WhileTrue::New2();
-    ::g::Fuse::Animations::Change* temp20 = (::g::Fuse::Animations::Change*)::g::Fuse::Animations::Change::New2(::TYPES[1/*Fuse.Animations.Change<Uno.UX.Size>*/], __this->ReadMoreText_Height_inst);
-    ::g::Fuse::Gestures::Clicked* temp21 = ::g::Fuse::Gestures::Clicked::New2();
-    ::g::Fuse::Reactive::DataBinding* temp22 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp3_Uri_inst, (uObject*)temp9, __this->__g_nametable1, 3);
-    ::g::Fuse::Reactive::DataBinding* temp23 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp4_Value_inst, (uObject*)temp10, __this->__g_nametable1, 3);
+    ::g::Fuse::Animations::Change* temp21 = (::g::Fuse::Animations::Change*)::g::Fuse::Animations::Change::New2(::TYPES[1/*Fuse.Animations.Change<Uno.UX.Size>*/], __this->ReadMoreText_Height_inst);
+    ::g::Fuse::Gestures::Clicked* temp22 = ::g::Fuse::Gestures::Clicked::New2();
+    ::g::Fuse::Reactive::DataBinding* temp23 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp3_Uri_inst, (uObject*)temp10, __this->__g_nametable1, 3);
+    ::g::Fuse::Reactive::DataBinding* temp24 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp4_Value_inst, (uObject*)temp11, __this->__g_nametable1, 3);
     __self1->Margin(::g::Uno::Float4__New2(0.0f, 10.0f, 0.0f, 10.0f));
     temp->StretchMode(6);
     temp->Width(::g::Uno::UX::Size__New1(100.0f, 4));
     temp->Height(::g::Uno::UX::Size__New1(200.0f, 1));
     temp->Alignment(4);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp11);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp12);
     temp1->StretchMode(6);
     temp1->MaxHeight(::g::Uno::UX::Size__New1(40.0f, 1));
     temp1->Alignment(5);
     temp1->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 0.0f, 20.0f));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp1->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp12);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp1->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp13);
     temp2->Alignment(5);
     temp2->Margin(::g::Uno::Float4__New2(20.0f, 0.0f, 0.0f, 20.0f));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp13);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp14);
     ReadMoreText1->IsReadOnly(true);
     ReadMoreText1->Height(::g::Uno::UX::Size__New1(60.0f, 1));
     ReadMoreText1->Margin(::g::Uno::Float4__New2(20.0f, 0.0f, 20.0f, 20.0f));
     ReadMoreText1->ClipToBounds(true);
     ReadMoreText1->Opacity(1.0f);
     ReadMoreText1->Name(MainView__Template1::__selector4());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(ReadMoreText1->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp14);
-    temp15->Width(::g::Uno::UX::Size__New1(40.0f, 4));
-    temp15->Height(::g::Uno::UX::Size__New1(40.0f, 1));
-    temp15->Alignment(5);
-    temp15->Margin(::g::Uno::Float4__New2(20.0f, 0.0f, 0.0f, 0.0f));
-    temp15->Background(::g::Fuse::Drawing::Brushes::Black());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp15->Strokes()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Drawing.Stroke>*/]), temp16);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp15->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp17);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp15->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp18);
-    temp16->Color(::g::Fuse::Drawing::Colors::White());
-    temp16->Width(1.0f);
-    temp17->Value(::STRINGS[11/*"LÄS MER"*/]);
-    temp17->IsReadOnly(true);
-    temp17->Alignment(10);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp18->Actions()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp19);
-    temp19->Target((uObject*)ReadMore1);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(ReadMoreText1->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp15);
+    temp16->Width(::g::Uno::UX::Size__New1(40.0f, 4));
+    temp16->Height(::g::Uno::UX::Size__New1(40.0f, 1));
+    temp16->Alignment(5);
+    temp16->Margin(::g::Uno::Float4__New2(20.0f, 0.0f, 0.0f, 0.0f));
+    temp16->Background(::g::Fuse::Drawing::Brushes::Black());
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp16->Strokes()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Drawing.Stroke>*/]), temp17);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp16->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp18);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp16->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp19);
+    temp17->Color(::g::Fuse::Drawing::Colors::White());
+    temp17->Width(1.0f);
+    temp18->Value(::STRINGS[11/*"LÄS MER"*/]);
+    temp18->IsReadOnly(true);
+    temp18->Alignment(10);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp19->Actions()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp20);
+    temp20->Target((uObject*)ReadMore1);
     ReadMore1->Name(MainView__Template1::__selector5());
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(ReadMore1->Animators()), ::TYPES[6/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp20);
-    ::g::Fuse::Animations::Change__set_Value_fn(temp20, uCRef(::g::Uno::UX::Size__New1(110.0f, 4)));
-    temp20->Duration(0.3);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(ReadMore1->Animators()), ::TYPES[6/*Uno.Collections.ICollection<Fuse.Animations.Animator>*/]), temp21);
+    ::g::Fuse::Animations::Change__set_Value_fn(temp21, uCRef(::g::Uno::UX::Size__New1(110.0f, 4)));
+    temp21->Duration(0.3);
     temp4->IsReadOnly(true);
     temp4->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 0.0f, 0.0f));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp4->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp21);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp4->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp23);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp21->Actions()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp3);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp21->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp22);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp4->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp22);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp4->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp24);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp22->Actions()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp3);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp22->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp23);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->__g_nametable1)->Objects()), ::TYPES[7/*Uno.Collections.ICollection<object>*/]), ReadMoreText1);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->__g_nametable1)->Objects()), ::TYPES[7/*Uno.Collections.ICollection<object>*/]), ReadMore1);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp1);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp2);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), ReadMoreText1);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp15);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp16);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), ReadMore1);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp4);
     return *__retval = __self1, void();
 }
 
-// public Template1 New(MainView parent, MainView parentInstance) :72
+// public Template1 New(MainView parent, MainView parentInstance) :83
 void MainView__Template1__New2_fn(::g::MainView* parent, ::g::MainView* parentInstance, MainView__Template1** __retval)
 {
     *__retval = MainView__Template1::New2(parent, parentInstance);
@@ -252,7 +255,7 @@ uSStrong<uArray*> MainView__Template1::__g_static_nametable1_;
 ::g::Uno::UX::Selector MainView__Template1::__selector4_;
 ::g::Uno::UX::Selector MainView__Template1::__selector5_;
 
-// public Template1(MainView parent, MainView parentInstance) [instance] :72
+// public Template1(MainView parent, MainView parentInstance) [instance] :83
 void MainView__Template1::ctor_1(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     ctor_(NULL, false);
@@ -260,7 +263,7 @@ void MainView__Template1::ctor_1(::g::MainView* parent, ::g::MainView* parentIns
     __parentInstance1 = parentInstance;
 }
 
-// public Template1 New(MainView parent, MainView parentInstance) [static] :72
+// public Template1 New(MainView parent, MainView parentInstance) [static] :83
 MainView__Template1* MainView__Template1::New2(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     MainView__Template1* obj1 = (MainView__Template1*)uNew(MainView__Template1_typeof());

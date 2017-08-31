@@ -82,7 +82,6 @@ namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Pr
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_Height_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_Opacity_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_Visibility_Property_typeof();}
-namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseElementsElement_Width_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseReactiveEach_Items_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseReactiveWith_Data_Property_typeof();}
 namespace g{namespace Uno{namespace UX{struct Property1_type;}} ::g::Uno::UX::Property1_type* gadden_FuseTriggersActionsLaunchUri_Uri_Property_typeof();}
@@ -101,6 +100,9 @@ namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Tem
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template7_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template8_typeof();}
 namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template9_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template10_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template11_typeof();}
+namespace g{namespace Uno{namespace UX{struct Template_type;}} ::g::Uno::UX::Template_type* MainView__Template12_typeof();}
 namespace g{namespace Fuse{struct AppBase_type;} ::g::Fuse::AppBase_type* MainView_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct TextInputControl_type;}} ::g::Fuse::Controls::TextInputControl_type* Paragraph_typeof();}
 namespace g{namespace Fuse{namespace Controls{struct Panel_type;}} ::g::Fuse::Controls::Panel_type* Profile_typeof();}
@@ -2062,7 +2064,6 @@ void uInitRtti()
         (uType*(*)())&::g::gadden_FuseElementsElement_Height_Property_typeof,
         (uType*(*)())&::g::gadden_FuseElementsElement_Opacity_Property_typeof,
         (uType*(*)())&::g::gadden_FuseElementsElement_Visibility_Property_typeof,
-        (uType*(*)())&::g::gadden_FuseElementsElement_Width_Property_typeof,
         (uType*(*)())&::g::gadden_FuseReactiveEach_Items_Property_typeof,
         (uType*(*)())&::g::gadden_FuseReactiveWith_Data_Property_typeof,
         (uType*(*)())&::g::gadden_FuseTriggersActionsLaunchUri_Uri_Property_typeof,
@@ -2081,6 +2082,9 @@ void uInitRtti()
         (uType*(*)())&::g::MainView__Template7_typeof,
         (uType*(*)())&::g::MainView__Template8_typeof,
         (uType*(*)())&::g::MainView__Template9_typeof,
+        (uType*(*)())&::g::MainView__Template10_typeof,
+        (uType*(*)())&::g::MainView__Template11_typeof,
+        (uType*(*)())&::g::MainView__Template12_typeof,
         (uType*(*)())&::g::MainView_typeof,
         (uType*(*)())&::g::Paragraph_typeof,
         (uType*(*)())&::g::Profile_typeof,

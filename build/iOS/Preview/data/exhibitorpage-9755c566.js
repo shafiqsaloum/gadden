@@ -6,6 +6,10 @@ function Exhibitor(item) {
     this.logo = item.profile.logotype.thumbs.large;
     this.about = item.profile.aboutUs;
     this.offer = item.profile.weOffer;
+    this.education = item.profile.desiredProgramme;
+    this.link = item.profile.urlWebsite;
+    this.dates = item.profile.exhibition;
+    this.map = item.profile.url;
 };
 
 var selectedExhibitor = Observable();

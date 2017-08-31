@@ -1,51 +1,38 @@
-<!--
-TODO:
-  * Sort program after schedual
-  * Forward the user to booking vue when target the button
- -->
-
 <Page>
   <JavaScript File="ProgramPage.js" />
-
-   <Panel ux:Name="ProgramFeed">
+  <!-- Output program feed -->
+   <Panel ux:Name="ProgramFeed" Background="#000" Visibility="Visible">
     <StackPanel Margin="20">
       <!-- Schedual title -->
-      <TitleBig Margin="0,40,0,20" Color="Black" Value="ONSDAG 8/11" />
-
+      <TitleBig Margin="0,40,0,20" Color="#FFF" Value="ONSDAG 8/11" />
       <Each Items="{dataProgram}">
-        <Grid RowCount="1" ColumnCount="2" Height="80" Margin="0,20,0,10">
-          <!-- Get image from JSON -->
-          <Image Height="80" Alignment="BottomLeft" StretchMode="UniformToFill" Url="{image}"/>
-          <Grid RowCount="2" ColumnCount="1" Alignment="BottomLeft" Margin="0,0,0,0" Height="100%">
-            <StackPanel>
+        <Panel>
+          <Grid Row="1" Columns="2* ,3* ,1*">
+            <!-- Get image from JSON -->
+            <Image Height="80" Width="100%" Alignment="BottomLeft" StretchMode="UniformToFill" Url="{image}"/>
+            <StackPanel Alignment="BottomLeft" Margin="3,0,0,0">
               <!-- Get name from JSON -->
               <Paragraph Row="1" Value="{name}" Font="RalewayBlack" TextWrapping="Wrap" />
               <!-- Get location from JSON -->
-              <Paragraph Row="2" Value="{location}" FontSize="10"  />
+              <SmallText Value="{location}" FontSize="12" Margin="3,0,0,0" />
             </StackPanel>
+            <Image File="../../assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
           </Grid>
-
           <!-- Click event -->
           <Clicked>
-            <Toggle Target="opacityProgram" />
+            <Set ProgramDetails.Visibility="Visible" Delay="0.2" />
+            <Set ProgramFeed.Visibility="Hidden" Delay="0.2" />
             <Callback Handler="{programClicked}"/>
           </Clicked>
-        </Grid>
-
+        </Panel>
         <!-- Septerator -->
-        <Rectangle Margin="0,7,0,7" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+        <Rectangle Margin="0,20,0,20" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
       </Each>
     </StackPanel>
   </Panel>
 
-  <WhileTrue ux:Name="opacityProgram">
-      <Change ProgramDetails.Opacity="1" Duration="0.2" />
-      <Change ProgramFeed.Opacity="0" />
-      <!-- <Change BackgroundImage.Opacity="0" /> -->
-  </WhileTrue>
-
   <!-- Output program details -->
-  <Panel ux:Name="ProgramDetails" Opacity="0"  >
+  <Panel ux:Name="ProgramDetails" Visibility="Visible"  >
     <Rectangle Width="100%" Height="100%"  Background="Black" ZOffset="1.0" >
       <ScrollView>
         <StackPanel>
@@ -56,7 +43,7 @@ TODO:
             </Panel>
             <!-- Get name from JSON -->
             <Panel Alignment="BottomLeft" Margin="0,20,0,0" Width="100%" Height="100%">
-              <Title Value="{name}" FontSize="28" LineSpacing="10" Height="100%" Width="100%" TextAlignment="Left"/>
+              <Title Value="{= toUpper({name})}" FontSize="28" LineSpacing="10" Height="100%" Width="100%" TextAlignment="Left"/>
             </Panel>
             <!-- Get time and location from JSON -->
             <Panel Margin="20">
@@ -84,9 +71,4 @@ TODO:
       </ScrollView>
     </Rectangle>
   </Panel>
-
-  <!-- Include background locally -->
-  <DockPanel Background="#000" >
-    <Image StretchMode="Fill" Layer="Background" File="../../assets/BackgroundProgram.png"  />
-  </DockPanel>
 </Page>

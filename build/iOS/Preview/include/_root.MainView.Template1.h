@@ -12,7 +12,7 @@ namespace g{struct MainView__Template1;}
 
 namespace g{
 
-// public partial sealed class MainView.Template1 :68
+// public partial sealed class MainView.Template1 :79
 // {
 ::g::Uno::UX::Template_type* MainView__Template1_typeof();
 void MainView__Template1__ctor_1_fn(MainView__Template1* __this, ::g::MainView* parent, ::g::MainView* parentInstance);
