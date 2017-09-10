@@ -76,7 +76,7 @@
                     </Panel>
 
                     <Panel>
-                      <Title Value="{article}" Alignment="Center" />
+                      <Title Value="{= toUpper({article})}" Alignment="Center" />
                     </Panel>
 
                     <Paragraph Value="{content}" Margin="0,0,0,0" Width="100%" Alignment="Center" TextAlignment="Center" Height="100%"/>

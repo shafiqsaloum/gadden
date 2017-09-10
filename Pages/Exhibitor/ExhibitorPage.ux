@@ -3,8 +3,8 @@
 <!-- Set headbar title -->
   <WhileActive Threshold="0.1">
     <Change GaddenLogo.Visibility="Hidden" />
-    <Change FilterButton.Visibility="Visible"  />
-    <Change FilterArrow.Visibility="Visible"  />
+    <Change FilterButton.Visibility="Visible" />
+    <Change FilterArrow.Visibility="Visible" />
   </WhileActive>
   <!-- Output exhibitor list -->
   <Panel ux:Name="ExibitorList" Visibility="Visible">

@@ -59,6 +59,8 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector105() { return MainView_typeof()->Init(), __selector105_; }
     static ::g::Uno::UX::Selector __selector106_;
     static ::g::Uno::UX::Selector& __selector106() { return MainView_typeof()->Init(), __selector106_; }
+    static ::g::Uno::UX::Selector __selector107_;
+    static ::g::Uno::UX::Selector& __selector107() { return MainView_typeof()->Init(), __selector107_; }
     static ::g::Uno::UX::Selector __selector11_;
     static ::g::Uno::UX::Selector& __selector11() { return MainView_typeof()->Init(), __selector11_; }
     static ::g::Uno::UX::Selector __selector12_;
@@ -340,6 +342,8 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> infoIconMap_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Image*> infoIconMap2;
     uStrong< ::g::Uno::UX::Property1*> infoIconMap2_Opacity_inst;
+    uStrong< ::g::Fuse::Controls::Panel*> LectureDetails;
+    uStrong< ::g::Uno::UX::Property1*> LectureDetails_Visibility_inst;
     uStrong< ::g::Fuse::Controls::Page*> login;
     uStrong< ::g::Fuse::Controls::Panel*> LoginPage;
     uStrong< ::g::Fuse::Controls::Image*> logoImage;
@@ -377,7 +381,9 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> popupInfoMap2_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> program;
     uStrong< ::g::Fuse::Controls::Panel*> ProgramDetails;
+    uStrong< ::g::Uno::UX::Property1*> ProgramDetails_Visibility_inst;
     uStrong< ::g::Fuse::Controls::Panel*> ProgramFeed;
+    uStrong< ::g::Uno::UX::Property1*> ProgramFeed_Visibility_inst;
     uStrong< ::g::Fuse::Controls::Page*> project;
     uStrong< ::g::Fuse::Controls::Panel*> ProjectTab;
     static uSStrong< ::g::Fuse::Font*> Raleway_;
@@ -400,6 +406,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Panel*> SponsorTab;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb0;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb1;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb10;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb2;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb3;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb4;
@@ -409,30 +416,36 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb8;
     uStrong< ::g::Uno::UX::Property1*> temp_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp1_Url_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp10_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp11_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp10_Data_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp11_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp12_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp13_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp14_Uri_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp15_Data_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp16_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp13_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp14_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp15_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp16_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp17_Url_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp18_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp19_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp18_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp19_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp20_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp21_Value_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp22_Data_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp23_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp24_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp25_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp26_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp27_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp20_Uri_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp21_Data_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp22_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp23_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp24_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp25_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp26_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp27_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp28_Data_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp29_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp30_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp31_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp32_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp33_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp4_Data_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp5_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp6_Items_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp7_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp5_Url_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp6_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp7_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp8_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp9_Value_inst;
     uStrong< ::g::Fuse::Controls::EdgeNavigator*> TheSidebar;

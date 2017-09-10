@@ -63,7 +63,7 @@ namespace g{
 // static Template5() :403
 static void MainView__Template5__cctor__fn(uType* __type)
 {
-    MainView__Template5::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 1, ::STRINGS[0/*"temp_eb11"*/]);
+    MainView__Template5::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 1, ::STRINGS[0/*"temp_eb12"*/]);
     MainView__Template5::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[1/*"Url"*/]);
     MainView__Template5::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Value"*/]);
     MainView__Template5::__selector2_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[3/*"Visibility"*/]);
@@ -71,7 +71,7 @@ static void MainView__Template5__cctor__fn(uType* __type)
 
 static void MainView__Template5_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("temp_eb11");
+    ::STRINGS[0] = uString::Const("temp_eb12");
     ::STRINGS[1] = uString::Const("Url");
     ::STRINGS[2] = uString::Const("Value");
     ::STRINGS[3] = uString::Const("Visibility");
@@ -155,7 +155,7 @@ void MainView__Template5__New1_fn(MainView__Template5* __this, uObject** __retva
     ::g::Fuse::Triggers::Actions::Set* temp14 = (::g::Fuse::Triggers::Actions::Set*)::g::Fuse::Triggers::Actions::Set::New2(::TYPES[1/*Fuse.Triggers.Actions.Set<Fuse.Elements.Visibility>*/], __this->ProgramDetails_Visibility_inst);
     ::g::Fuse::Triggers::Actions::Set* temp15 = (::g::Fuse::Triggers::Actions::Set*)::g::Fuse::Triggers::Actions::Set::New2(::TYPES[1/*Fuse.Triggers.Actions.Set<Fuse.Elements.Visibility>*/], __this->ProgramFeed_Visibility_inst);
     ::g::Fuse::Triggers::Actions::Callback* temp16 = ::g::Fuse::Triggers::Actions::Callback::New2();
-    ::g::Fuse::Reactive::EventBinding* temp_eb111 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp6, __this->__g_nametable1);
+    ::g::Fuse::Reactive::EventBinding* temp_eb121 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp6, __this->__g_nametable1);
     temp7->Columns(::STRINGS[8/*"2* ,3* ,1*"*/]);
     ::g::Fuse::Controls::Grid::SetRow(temp7, 1);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp7->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
@@ -183,13 +183,13 @@ void MainView__Template5__New1_fn(MainView__Template5* __this, uObject** __retva
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp13->Actions()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp14);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp13->Actions()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp15);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp13->Actions()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp16);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp13->Bindings()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb111);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp13->Bindings()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb121);
     ::g::Fuse::Triggers::Actions::Set__set_Value_fn(temp14, uCRef<int>(0));
     temp14->Delay(0.2f);
     ::g::Fuse::Triggers::Actions::Set__set_Value_fn(temp15, uCRef<int>(2));
     temp15->Delay(0.2f);
-    temp16->add_Handler(uDelegate::New(::TYPES[5/*Fuse.VisualEventHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, temp_eb111));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->__g_nametable1)->Objects()), ::TYPES[6/*Uno.Collections.ICollection<object>*/]), temp_eb111);
+    temp16->add_Handler(uDelegate::New(::TYPES[5/*Fuse.VisualEventHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, temp_eb121));
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->__g_nametable1)->Objects()), ::TYPES[6/*Uno.Collections.ICollection<object>*/]), temp_eb121);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp7);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp13);
     return *__retval = __self1, void();
