@@ -106,7 +106,7 @@
 
           <SmallText Value="TYP AV JOBB" Alignment="Center" Font="RalewayBlack" Margin="10" />
           <Each Items="{offer}">
-            <SmallText Value="{= toUpper({offer})}" Alignment="Center" Margin="5" />
+            <SmallText Value="{= toUpper({})}" Alignment="Center" Margin="5" />
           </Each>
 
           <!-- We searching for -->
@@ -118,7 +118,7 @@
 
           <SmallText Value="TYP AV UTBILDNING" Alignment="Center" Font="RalewayBlack" Margin="10" />
           <Each Items="{education}">
-            <SmallText Value="{= toUpper({education})}" Alignment="Center" Margin="5" />
+            <SmallText Value="{= toUpper({})}" Alignment="Center" Margin="5" />
           </Each>
 
           <!-- Go to website -->
