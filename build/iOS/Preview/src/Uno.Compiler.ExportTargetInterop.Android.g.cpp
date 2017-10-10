@@ -1,7 +1,7 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Uno.Compiler.ExportTa-9ae0ec55.h>
+#include <Uno.Compiler.ExportTargetInterop.Android.ForeignFixedNameAttribute.h>
 
 namespace g{
 namespace Uno{
@@ -9,8 +9,8 @@ namespace Compiler{
 namespace ExportTargetInterop{
 namespace Android{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/exporttargetinterop/foreign/android/$.uno
-// -------------------------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/compiler/exporttargetinterop/foreign/android/$.uno
+// ---------------------------------------------------------------------------------------------------------
 
 // public sealed class ForeignFixedNameAttribute :25
 // {

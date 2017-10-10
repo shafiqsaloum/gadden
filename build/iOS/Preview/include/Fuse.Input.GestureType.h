@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/input/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{
 namespace Fuse{
 namespace Input{
 
-// public enum GestureType :557
+// public enum GestureType :590
 uEnumType* GestureType_typeof();
 
 }}} // ::g::Fuse::Input

@@ -1,10 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Binding.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
+#include <Fuse.ITemplateSource.h>
 #include <Fuse.NodeGroupBase.h>
 #include <Fuse.Scripting.IScriptObject.h>
 #include <Uno.Collections.ICollection-1.h>
@@ -15,9 +16,14 @@ namespace g{namespace Fuse{struct NodeGroup;}}
 namespace g{
 namespace Fuse{
 
-// public sealed class NodeGroup :3302
+// public sealed class NodeGroup :3422
 // {
-::g::Fuse::Node_type* NodeGroup_typeof();
+struct NodeGroup_type : ::g::Fuse::Node_type
+{
+    ::g::Fuse::ITemplateSource interface6;
+};
+
+NodeGroup_type* NodeGroup_typeof();
 void NodeGroup__ctor_4_fn(NodeGroup* __this);
 void NodeGroup__get_IsActive_fn(NodeGroup* __this, bool* __retval);
 void NodeGroup__set_IsActive_fn(NodeGroup* __this, bool* value);

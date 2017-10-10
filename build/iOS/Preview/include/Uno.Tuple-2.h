@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{namespace Uno{struct Tuple2;}}
 namespace g{
 namespace Uno{
 
-// public sealed class Tuple<T1, T2> :7427
+// public sealed class Tuple<T1, T2> :7433
 // {
 uType* Tuple2_typeof();
 void Tuple2__ctor__fn(Tuple2* __this, void* item1, void* item2);

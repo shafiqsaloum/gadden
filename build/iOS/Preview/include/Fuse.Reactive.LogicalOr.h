@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Expressions/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public sealed class LogicalOr :604
+// public sealed class LogicalOr :1321
 // {
 ::g::Fuse::Reactive::InfixOperator_type* LogicalOr_typeof();
 void LogicalOr__ctor_3_fn(LogicalOr* __this, ::g::Fuse::Reactive::Expression* left, ::g::Fuse::Reactive::Expression* right);

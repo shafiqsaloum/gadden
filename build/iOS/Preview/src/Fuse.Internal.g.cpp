@@ -14,22 +14,28 @@
 #include <Fuse.Internal.Cache-2.h>
 #include <Fuse.Internal.CacheItem-2.h>
 #include <Fuse.Internal.CacheRef-2.h>
-#include <Fuse.Internal.Curves.-1494dae5.h>
 #include <Fuse.Internal.Curves.h>
+#include <Fuse.Internal.Curves.PointInterpolater.h>
 #include <Fuse.Internal.DoubleBlender.h>
 #include <Fuse.Internal.DrawManager.h>
 #include <Fuse.Internal.Float2Blender.h>
 #include <Fuse.Internal.Float3Blender.h>
 #include <Fuse.Internal.Float4Blender.h>
 #include <Fuse.Internal.FloatBlender.h>
-#include <Fuse.Internal.FontFac-589fc2ef.h>
+#include <Fuse.Internal.FontFaceDescriptor.h>
 #include <Fuse.Internal.FrustumMatrix.h>
 #include <Fuse.Internal.FuseConfig.h>
-#include <Fuse.Internal.IImageC-c450902.h>
+#include <Fuse.Internal.IImageContainerOwner.h>
 #include <Fuse.Internal.ImageContainer.h>
 #include <Fuse.Internal.iOSSystemFont.h>
-#include <Fuse.Internal.MiniLis-a9364139.h>
+#include <Fuse.Internal.MiniList-1.Enumerator.h>
 #include <Fuse.Internal.MiniList-1.h>
+#include <Fuse.Internal.MiniListMode.h>
+#include <Fuse.Internal.ObjectList-1.Enumerator.h>
+#include <Fuse.Internal.ObjectList-1.EnumeratorClass.h>
+#include <Fuse.Internal.ObjectList-1.Equality.h>
+#include <Fuse.Internal.ObjectList-1.h>
+#include <Fuse.Internal.ObjectList-1.Node.h>
 #include <Fuse.Internal.RectPacker.h>
 #include <Fuse.Internal.ScalarBlender-1.h>
 #include <Fuse.Internal.Size2Blender.h>
@@ -42,27 +48,27 @@
 #include <Fuse.LayoutParams.h>
 #include <Fuse.Resources.FileImageSource.h>
 #include <Fuse.Resources.HttpImageSource.h>
-#include <Fuse.Resources.ImageS-355caaa1.h>
-#include <Fuse.Resources.ImageS-a985306c.h>
 #include <Fuse.Resources.ImageSource.h>
+#include <Fuse.Resources.ImageSourceErrorArgs.h>
+#include <Fuse.Resources.ImageSourceErrorHandler.h>
 #include <Fuse.Resources.MemoryPolicy.h>
-#include <Fuse.Resources.MultiD-7688643f.h>
+#include <Fuse.Resources.MultiDensityImageSource.h>
 #include <Fuse.SystemFont.Style.h>
 #include <Fuse.SystemFont.Weight.h>
 #include <Uno.Action-1.h>
 #include <Uno.ArgumentNullException.h>
-#include <Uno.ArgumentOutOfRang-6803b39e.h>
+#include <Uno.ArgumentOutOfRangeException.h>
 #include <Uno.Bool.h>
 #include <Uno.Collections.Dictionary-2.h>
-#include <Uno.Collections.Enume-8ddd045.h>
+#include <Uno.Collections.EnumerableExtensions.h>
 #include <Uno.Collections.HashSet-1.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IEnumerator.h>
 #include <Uno.Collections.IEnumerator-1.h>
 #include <Uno.Collections.IList-1.h>
-#include <Uno.Collections.Linke-712f9f5e.h>
 #include <Uno.Collections.LinkedList-1.h>
+#include <Uno.Collections.LinkedListNode-1.h>
 #include <Uno.Collections.List-1.h>
 #include <Uno.Collections.RootableList-1.h>
 #include <Uno.Delegate.h>
@@ -84,7 +90,8 @@
 #include <Uno.Matrix.h>
 #include <Uno.Predicate-1.h>
 #include <Uno.Recti.h>
-#include <Uno.Runtime.Implement-eca777ec.h>
+#include <Uno.Runtime.Implementation.Internal.ArrayEnumerable-1.h>
+#include <Uno.SByte.h>
 #include <Uno.String.h>
 #include <Uno.Threading.Monitor.h>
 #include <Uno.Type.h>
@@ -93,15 +100,15 @@
 #include <Uno.UX.Size2.h>
 #include <Uno.UX.Unit.h>
 #include <Uno.Vector.h>
-static uString* STRINGS[9];
-static uType* TYPES[38];
+static uString* STRINGS[13];
+static uType* TYPES[42];
 
 namespace g{
 namespace Fuse{
 namespace Internal{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // internal abstract class Blender<T> :305
 // {
@@ -178,8 +185,8 @@ void Blender::ctor_()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // internal sealed class BlenderMap :252
 // {
@@ -328,8 +335,8 @@ BlenderMap* BlenderMap::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // public sealed class Cache<TKey, TValue> :473
 // {
@@ -540,8 +547,8 @@ Cache* Cache::New1(uType* __type, uDelegate* factory, int maxUnused)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // public struct CacheItem<TKey, TValue> :563
 // {
@@ -686,8 +693,8 @@ bool CacheItem__op_Inequality(uType* __type, CacheItem x, CacheItem y)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // internal sealed class CacheRef<TKey, TValue> :611
 // {
@@ -811,8 +818,8 @@ void CacheRef::Retain()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // internal static class Curves :853
 // {
@@ -902,8 +909,8 @@ void Curves::KochanekBartelTangent(::g::Uno::Float4 pa, ::g::Uno::Float4 pb, ::g
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // internal sealed class DoubleBlender :390
 // {
@@ -1038,10 +1045,10 @@ DoubleBlender* DoubleBlender::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/$.uno
+// ----------------------------------------------------
 
-// internal static class DrawManager :886
+// internal static class DrawManager :888
 // {
 static void DrawManager_build(uType* type)
 {
@@ -1063,25 +1070,25 @@ uClassType* DrawManager_typeof()
     return type;
 }
 
-// public static void EndDraw(Fuse.DrawContext dc) :899
+// public static void EndDraw(Fuse.DrawContext dc) :901
 void DrawManager__EndDraw_fn(::g::Fuse::DrawContext* dc)
 {
     DrawManager::EndDraw(dc);
 }
 
-// public static generated void add_Prepared(Uno.Action<Fuse.DrawContext> value) :888
+// public static generated void add_Prepared(Uno.Action<Fuse.DrawContext> value) :890
 void DrawManager__add_Prepared_fn(uDelegate* value)
 {
     DrawManager::add_Prepared(value);
 }
 
-// public static generated void remove_Prepared(Uno.Action<Fuse.DrawContext> value) :888
+// public static generated void remove_Prepared(Uno.Action<Fuse.DrawContext> value) :890
 void DrawManager__remove_Prepared_fn(uDelegate* value)
 {
     DrawManager::remove_Prepared(value);
 }
 
-// public static void PrepareDraw(Fuse.DrawContext dc) :890
+// public static void PrepareDraw(Fuse.DrawContext dc) :892
 void DrawManager__PrepareDraw_fn(::g::Fuse::DrawContext* dc)
 {
     DrawManager::PrepareDraw(dc);
@@ -1089,7 +1096,7 @@ void DrawManager__PrepareDraw_fn(::g::Fuse::DrawContext* dc)
 
 uSStrong<uDelegate*> DrawManager::Prepared1_;
 
-// public static void EndDraw(Fuse.DrawContext dc) [static] :899
+// public static void EndDraw(Fuse.DrawContext dc) [static] :901
 void DrawManager::EndDraw(::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Internal.DrawManager", "EndDraw(Fuse.DrawContext)");
@@ -1097,7 +1104,7 @@ void DrawManager::EndDraw(::g::Fuse::DrawContext* dc)
     dc->ReleaseRootbuffer();
 }
 
-// public static void PrepareDraw(Fuse.DrawContext dc) [static] :890
+// public static void PrepareDraw(Fuse.DrawContext dc) [static] :892
 void DrawManager::PrepareDraw(::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Internal.DrawManager", "PrepareDraw(Fuse.DrawContext)");
@@ -1108,14 +1115,14 @@ void DrawManager::PrepareDraw(::g::Fuse::DrawContext* dc)
         uPtr(p)->InvokeVoid(dc);
 }
 
-// public static generated void add_Prepared(Uno.Action<Fuse.DrawContext> value) [static] :888
+// public static generated void add_Prepared(Uno.Action<Fuse.DrawContext> value) [static] :890
 void DrawManager::add_Prepared(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.DrawManager", "add_Prepared(Uno.Action<Fuse.DrawContext>)");
     DrawManager::Prepared1_ = uCast<uDelegate*>(::g::Uno::Delegate::Combine(DrawManager::Prepared1_, value), ::TYPES[9/*Uno.Action<Fuse.DrawContext>*/]);
 }
 
-// public static generated void remove_Prepared(Uno.Action<Fuse.DrawContext> value) [static] :888
+// public static generated void remove_Prepared(Uno.Action<Fuse.DrawContext> value) [static] :890
 void DrawManager::remove_Prepared(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.DrawManager", "remove_Prepared(Uno.Action<Fuse.DrawContext>)");
@@ -1123,30 +1130,256 @@ void DrawManager::remove_Prepared(uDelegate* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
-// private struct MiniList<T>.Enumerator<T> :1624
+// public struct ObjectList<T>.Enumerator :2165
 // {
-// public T get_Current() [adapter] :1640
+// public void Dispose() [adapter] :2259
+static void ObjectList__Enumerator__Dispose_ex(uObject* __this)
+{
+    ObjectList__Enumerator__Dispose_fn((ObjectList__Enumerator*)((uint8_t*)__this + sizeof(uObject)), __this->__type);
+}
+
+static void ObjectList__Enumerator_build(uType* type)
+{
+    type->SetInterfaces(
+        ::g::Uno::IDisposable_typeof(), offsetof(ObjectList__Enumerator_type, interface0));
+    type->SetFields(0,
+        ::g::Fuse::Internal::ObjectList_typeof()->MakeType(type->T(0), NULL), offsetof(::g::Fuse::Internal::ObjectList__Enumerator, _source), 0,
+        ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Internal::ObjectList__Enumerator, _first), 0,
+        ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Internal::ObjectList__Enumerator, _at), 0,
+        ::g::Uno::SByte_typeof(), offsetof(::g::Fuse::Internal::ObjectList__Enumerator, _locked), 0);
+    type->Reflection.SetFunctions(6,
+        new uFunction("get_Current", type, (void*)ObjectList__Enumerator__get_Current_fn, 0, false, type->T(0), 0),
+        new uFunction("Dispose", type, (void*)ObjectList__Enumerator__Dispose_fn, 0, false, uVoid_typeof(), 0),
+        new uFunction("MoveNext", type, (void*)ObjectList__Enumerator__MoveNext_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
+        new uFunction(".ctor", type, (void*)ObjectList__Enumerator__New1_fn, 0, true, type, 2, ::g::Fuse::Internal::ObjectList_typeof()->MakeType(type->T(0), NULL), ::g::Uno::Bool_typeof()),
+        new uFunction("Next", type, (void*)ObjectList__Enumerator__Next_fn, 0, false, uVoid_typeof(), 0),
+        new uFunction("Reset", type, (void*)ObjectList__Enumerator__Reset_fn, 0, false, uVoid_typeof(), 0));
+}
+
+ObjectList__Enumerator_type* ObjectList__Enumerator_typeof()
+{
+    static uSStrong<ObjectList__Enumerator_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.FieldCount = 4;
+    options.GenericCount = 1;
+    options.InterfaceCount = 1;
+    options.ValueSize = sizeof(ObjectList__Enumerator);
+    options.TypeSize = sizeof(ObjectList__Enumerator_type);
+    type = (ObjectList__Enumerator_type*)uStructType::New("Fuse.Internal.ObjectList`1.Enumerator", options);
+    type->fp_build_ = ObjectList__Enumerator_build;
+    type->interface0.fp_Dispose = ObjectList__Enumerator__Dispose_ex;
+    return type;
+}
+
+// public Enumerator(Fuse.Internal.ObjectList<T> source, bool versionLock) :2172
+void ObjectList__Enumerator__ctor__fn(ObjectList__Enumerator* __this, uType* __type, ::g::Fuse::Internal::ObjectList* source, bool* versionLock)
+{
+    __this->ctor_(__type, source, *versionLock);
+}
+
+// public T get_Current() :2201
+void ObjectList__Enumerator__get_Current_fn(ObjectList__Enumerator* __this, uType* __type, uObject** __retval)
+{
+    *__retval = __this->Current(__type);
+}
+
+// public void Dispose() :2259
+void ObjectList__Enumerator__Dispose_fn(ObjectList__Enumerator* __this, uType* __type)
+{
+    __this->Dispose(__type);
+}
+
+// private bool get_Done() :2192
+void ObjectList__Enumerator__get_Done_fn(ObjectList__Enumerator* __this, uType* __type, bool* __retval)
+{
+    *__retval = __this->Done(__type);
+}
+
+// public bool MoveNext() :2180
+void ObjectList__Enumerator__MoveNext_fn(ObjectList__Enumerator* __this, uType* __type, bool* __retval)
+{
+    *__retval = __this->MoveNext(__type);
+}
+
+// public Enumerator New(Fuse.Internal.ObjectList<T> source, bool versionLock) :2172
+void ObjectList__Enumerator__New1_fn(uType* __type, ::g::Fuse::Internal::ObjectList* source, bool* versionLock, ObjectList__Enumerator* __retval)
+{
+    *__retval = ObjectList__Enumerator__New1(__type, source, *versionLock);
+}
+
+// public void Next() :2237
+void ObjectList__Enumerator__Next_fn(ObjectList__Enumerator* __this, uType* __type)
+{
+    __this->Next(__type);
+}
+
+// public void Reset() :2253
+void ObjectList__Enumerator__Reset_fn(ObjectList__Enumerator* __this, uType* __type)
+{
+    __this->Reset(__type);
+}
+
+// private void SkipNew() :2212
+void ObjectList__Enumerator__SkipNew_fn(ObjectList__Enumerator* __this, uType* __type)
+{
+    __this->SkipNew(__type);
+}
+
+// private void Unlock() :2244
+void ObjectList__Enumerator__Unlock_fn(ObjectList__Enumerator* __this, uType* __type)
+{
+    __this->Unlock(__type);
+}
+
+// public Enumerator(Fuse.Internal.ObjectList<T> source, bool versionLock) [instance] :2172
+void ObjectList__Enumerator::ctor_(uType* __type, ::g::Fuse::Internal::ObjectList* source, bool versionLock)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1.Enumerator", ".ctor(Fuse.Internal.ObjectList<T>,bool)");
+    _source = source;
+    _first = true;
+    _at = uPtr(_source)->_nodeHead;
+    _locked = (versionLock ? uPtr(_source)->Lock() : -1);
+}
+
+// public T get_Current() [instance] :2201
+uObject* ObjectList__Enumerator::Current(uType* __type)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1.Enumerator", "get_Current()");
+    SkipNew(__type);
+
+    if (_at == -1)
+        return NULL;
+
+    return uPtr(uPtr(_source)->_nodes)->Item< ::g::Fuse::Internal::ObjectList__Node>(_at).Value;
+}
+
+// public void Dispose() [instance] :2259
+void ObjectList__Enumerator::Dispose(uType* __type)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1.Enumerator", "Dispose()");
+    Unlock(__type);
+    _source = NULL;
+    _at = -1;
+}
+
+// private bool get_Done() [instance] :2192
+bool ObjectList__Enumerator::Done(uType* __type)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1.Enumerator", "get_Done()");
+    SkipNew(__type);
+    return _at == -1;
+}
+
+// public bool MoveNext() [instance] :2180
+bool ObjectList__Enumerator::MoveNext(uType* __type)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1.Enumerator", "MoveNext()");
+
+    if (_first)
+        _first = false;
+    else
+        Next(__type);
+
+    return !Done(__type);
+}
+
+// public void Next() [instance] :2237
+void ObjectList__Enumerator::Next(uType* __type)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1.Enumerator", "Next()");
+
+    if (_at != -1)
+        _at = uPtr(uPtr(_source)->_nodes)->Item< ::g::Fuse::Internal::ObjectList__Node>(_at).Next;
+
+    SkipNew(__type);
+}
+
+// public void Reset() [instance] :2253
+void ObjectList__Enumerator::Reset(uType* __type)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1.Enumerator", "Reset()");
+    _first = true;
+    _at = uPtr(_source)->_nodeHead;
+}
+
+// private void SkipNew() [instance] :2212
+void ObjectList__Enumerator::SkipNew(uType* __type)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1.Enumerator", "SkipNew()");
+
+    while (_at != -1)
+    {
+        int8_t rv = uPtr(uPtr(_source)->_nodes)->Item< ::g::Fuse::Internal::ObjectList__Node>(_at).RemoveVersion;
+
+        if ((rv != -1) && ((_locked == -1) || (rv <= _locked)))
+        {
+            _at = uPtr(uPtr(_source)->_nodes)->Item< ::g::Fuse::Internal::ObjectList__Node>(_at).Next;
+            continue;
+        }
+
+        if ((_locked != -1) && (uPtr(uPtr(_source)->_nodes)->Item< ::g::Fuse::Internal::ObjectList__Node>(_at).AddVersion > _locked))
+        {
+            _at = uPtr(uPtr(_source)->_nodes)->Item< ::g::Fuse::Internal::ObjectList__Node>(_at).Next;
+            continue;
+        }
+
+        break;
+    }
+
+    if (_at == -1)
+        Unlock(__type);
+}
+
+// private void Unlock() [instance] :2244
+void ObjectList__Enumerator::Unlock(uType* __type)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1.Enumerator", "Unlock()");
+
+    if (_locked != -1)
+    {
+        _locked = -1;
+        uPtr(_source)->Unlock();
+    }
+}
+
+// public Enumerator New(Fuse.Internal.ObjectList<T> source, bool versionLock) [static] :2172
+ObjectList__Enumerator ObjectList__Enumerator__New1(uType* __type, ::g::Fuse::Internal::ObjectList* source, bool versionLock)
+{
+    ObjectList__Enumerator obj1;
+    obj1.ctor_(__type, source, versionLock);
+    return obj1;
+}
+// }
+
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
+
+// public struct MiniList<T>.Enumerator :1696
+// {
+// public T get_Current() [adapter] :1717
 static void MiniList__Enumerator__get_Current_ex(uObject* __this, uObject** __retval)
 {
     MiniList__Enumerator__get_Current_fn((MiniList__Enumerator*)((uint8_t*)__this + sizeof(uObject)), __this->__type, __retval);
 }
 
-// public void Dispose() [adapter] :1647
+// public void Dispose() [adapter] :1736
 static void MiniList__Enumerator__Dispose_ex(uObject* __this)
 {
     MiniList__Enumerator__Dispose_fn((MiniList__Enumerator*)((uint8_t*)__this + sizeof(uObject)), __this->__type);
 }
 
-// public void Reset() [adapter] :1642
+// public void Reset() [adapter] :1767
 static void MiniList__Enumerator__Reset_ex(uObject* __this)
 {
     MiniList__Enumerator__Reset_fn((MiniList__Enumerator*)((uint8_t*)__this + sizeof(uObject)), __this->__type);
 }
 
-// public bool MoveNext() [adapter] :1635
+// public bool MoveNext() [adapter] :1744
 static void MiniList__Enumerator__MoveNext_ex(uObject* __this, bool* __retval)
 {
     MiniList__Enumerator__MoveNext_fn((MiniList__Enumerator*)((uint8_t*)__this + sizeof(uObject)), __this->__type, __retval);
@@ -1155,15 +1388,27 @@ static void MiniList__Enumerator__MoveNext_ex(uObject* __this, bool* __retval)
 static void MiniList__Enumerator_build(uType* type)
 {
     ::TYPES[10] = ::g::Fuse::Internal::MiniList_typeof();
+    ::TYPES[11] = ::g::Fuse::Internal::ObjectList__Enumerator_typeof();
     type->SetPrecalc(
-        ::g::Fuse::Internal::MiniList_typeof()->MakeType(type->T(1), NULL));
+        ::g::Fuse::Internal::MiniList_typeof()->MakeType(type->T(0), NULL),
+        ::g::Fuse::Internal::ObjectList__Enumerator_typeof()->MakeType(type->T(0), NULL),
+        type->T(0));
     type->SetInterfaces(
-        ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(type->T(1), NULL), offsetof(MiniList__Enumerator_type, interface0),
+        ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(type->T(0), NULL), offsetof(MiniList__Enumerator_type, interface0),
         ::g::Uno::IDisposable_typeof(), offsetof(MiniList__Enumerator_type, interface1),
         ::g::Uno::Collections::IEnumerator_typeof(), offsetof(MiniList__Enumerator_type, interface2));
     type->SetFields(0,
-        ::TYPES[10/*Fuse.Internal.MiniList`1*/]->MakeType(type->T(1), NULL), offsetof(::g::Fuse::Internal::MiniList__Enumerator, _source), 0,
-        ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Internal::MiniList__Enumerator, _index), 0);
+        ::TYPES[11/*Fuse.Internal.ObjectList`1.Enumerator*/]->MakeType(type->T(0), NULL), offsetof(::g::Fuse::Internal::MiniList__Enumerator, _iter), 0,
+        ::TYPES[10/*Fuse.Internal.MiniList`1*/]->MakeType(type->T(0), NULL), offsetof(::g::Fuse::Internal::MiniList__Enumerator, _source), 0,
+        ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Internal::MiniList__Enumerator, _first), 0,
+        uObject_typeof(), offsetof(::g::Fuse::Internal::MiniList__Enumerator, _value), 0,
+        ::g::Fuse::Internal::MiniListMode_typeof(), offsetof(::g::Fuse::Internal::MiniList__Enumerator, _mode), 0);
+    type->Reflection.SetFunctions(5,
+        new uFunction("get_Current", type, (void*)MiniList__Enumerator__get_Current_fn, 0, false, type->T(0), 0),
+        new uFunction("Dispose", type, (void*)MiniList__Enumerator__Dispose_fn, 0, false, uVoid_typeof(), 0),
+        new uFunction("MoveNext", type, (void*)MiniList__Enumerator__MoveNext_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
+        new uFunction(".ctor", type, (void*)MiniList__Enumerator__New1_fn, 0, true, type, 2, ::TYPES[10/*Fuse.Internal.MiniList`1*/]->MakeType(type->T(0), NULL), ::g::Uno::Bool_typeof()),
+        new uFunction("Reset", type, (void*)MiniList__Enumerator__Reset_fn, 0, false, uVoid_typeof(), 0));
 }
 
 MiniList__Enumerator_type* MiniList__Enumerator_typeof()
@@ -1172,13 +1417,13 @@ MiniList__Enumerator_type* MiniList__Enumerator_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 2;
-    options.GenericCount = 2;
+    options.FieldCount = 5;
+    options.GenericCount = 1;
     options.InterfaceCount = 3;
-    options.PrecalcCount = 1;
+    options.PrecalcCount = 3;
     options.ValueSize = sizeof(MiniList__Enumerator);
     options.TypeSize = sizeof(MiniList__Enumerator_type);
-    type = (MiniList__Enumerator_type*)uStructType::New("Fuse.Internal.MiniList`1.Enumerator`1", options);
+    type = (MiniList__Enumerator_type*)uStructType::New("Fuse.Internal.MiniList`1.Enumerator", options);
     type->fp_build_ = MiniList__Enumerator_build;
     type->interface0.fp_get_Current = (void(*)(uObject*, uTRef))MiniList__Enumerator__get_Current_ex;
     type->interface1.fp_Dispose = MiniList__Enumerator__Dispose_ex;
@@ -1187,91 +1432,304 @@ MiniList__Enumerator_type* MiniList__Enumerator_typeof()
     return type;
 }
 
-// public Enumerator(Fuse.Internal.MiniList<T> source) :1629
-void MiniList__Enumerator__ctor__fn(MiniList__Enumerator* __this, uType* __type, ::g::Fuse::Internal::MiniList* source)
+// public Enumerator(Fuse.Internal.MiniList<T> source, bool versionLock) :1704
+void MiniList__Enumerator__ctor__fn(MiniList__Enumerator* __this, uType* __type, ::g::Fuse::Internal::MiniList* source, bool* versionLock)
 {
-    __this->ctor_(__type, *source);
+    __this->ctor_(__type, *source, *versionLock);
 }
 
-// public T get_Current() :1640
+// public T get_Current() :1717
 void MiniList__Enumerator__get_Current_fn(MiniList__Enumerator* __this, uType* __type, uObject** __retval)
 {
     *__retval = __this->Current(__type);
 }
 
-// public void Dispose() :1647
+// public void Dispose() :1736
 void MiniList__Enumerator__Dispose_fn(MiniList__Enumerator* __this, uType* __type)
 {
     __this->Dispose(__type);
 }
 
-// public bool MoveNext() :1635
+// public bool MoveNext() :1744
 void MiniList__Enumerator__MoveNext_fn(MiniList__Enumerator* __this, uType* __type, bool* __retval)
 {
     *__retval = __this->MoveNext(__type);
 }
 
-// public Enumerator New(Fuse.Internal.MiniList<T> source) :1629
-void MiniList__Enumerator__New1_fn(uType* __type, ::g::Fuse::Internal::MiniList* source, MiniList__Enumerator* __retval)
+// public Enumerator New(Fuse.Internal.MiniList<T> source, bool versionLock) :1704
+void MiniList__Enumerator__New1_fn(uType* __type, ::g::Fuse::Internal::MiniList* source, bool* versionLock, MiniList__Enumerator* __retval)
 {
-    *__retval = MiniList__Enumerator__New1(__type, *source);
+    *__retval = MiniList__Enumerator__New1(__type, *source, *versionLock);
 }
 
-// public void Reset() :1642
+// public void Reset() :1767
 void MiniList__Enumerator__Reset_fn(MiniList__Enumerator* __this, uType* __type)
 {
     __this->Reset(__type);
 }
 
-// public Enumerator(Fuse.Internal.MiniList<T> source) [instance] :1629
-void MiniList__Enumerator::ctor_(uType* __type, ::g::Fuse::Internal::MiniList source)
+// public Enumerator(Fuse.Internal.MiniList<T> source, bool versionLock) [instance] :1704
+void MiniList__Enumerator::ctor_(uType* __type, ::g::Fuse::Internal::MiniList source, bool versionLock)
 {
+    uType* __types[] = {
+        __type->Precalced(0/*Fuse.Internal.MiniList<T>*/),
+    };
+    uStackFrame __("Fuse.Internal.MiniList`1.Enumerator", ".ctor(Fuse.Internal.MiniList<T>,bool)");
+    _mode = source._mode;
+
+    if (_mode == 2)
+        _iter = uPtr(source.AsList(__types[0]))->GetEnumeratorStruct(versionLock);
+    else
+        _value = source._list;
+
     _source = source;
-    _index = -1;
+    _first = true;
 }
 
-// public T get_Current() [instance] :1640
+// public T get_Current() [instance] :1717
 uObject* MiniList__Enumerator::Current(uType* __type)
 {
     uType* __types[] = {
-        __type->Precalced(0/*Fuse.Internal.MiniList<T>*/),
+        __type->Precalced(2/*T*/),
+        __type->Precalced(1/*Fuse.Internal.ObjectList<T>.Enumerator*/),
     };
-    uStackFrame __("Fuse.Internal.MiniList`1.Enumerator`1", "get_Current()");
-    return (uObject*)_source.Item(__types[0], _index);
+    uStackFrame __("Fuse.Internal.MiniList`1.Enumerator", "get_Current()");
+
+    switch (_mode)
+    {
+        case 0:
+            return NULL;
+        case 1:
+            return uAs<uObject*>(_value, __types[0]);
+        case 2:
+            return (uObject*)_iter.Current(__types[1]);
+    }
+
+    return NULL;
 }
 
-// public void Dispose() [instance] :1647
+// public void Dispose() [instance] :1736
 void MiniList__Enumerator::Dispose(uType* __type)
 {
+    uType* __types[] = {
+        __type->Precalced(1/*Fuse.Internal.ObjectList<T>.Enumerator*/),
+    };
+
+    if (_mode == 2)
+        _iter.Dispose(__types[0]);
+
+    _mode = 0;
+    _value = NULL;
 }
 
-// public bool MoveNext() [instance] :1635
+// public bool MoveNext() [instance] :1744
 bool MiniList__Enumerator::MoveNext(uType* __type)
 {
     uType* __types[] = {
-        __type->Precalced(0/*Fuse.Internal.MiniList<T>*/),
+        __type->Precalced(1/*Fuse.Internal.ObjectList<T>.Enumerator*/),
     };
-    uStackFrame __("Fuse.Internal.MiniList`1.Enumerator`1", "MoveNext()");
-    return (++_index) < _source.Count(__types[0]);
+
+    switch (_mode)
+    {
+        case 0:
+        {
+            _first = false;
+            return false;
+        }
+        case 1:
+        {
+            if (_first)
+            {
+                _first = false;
+                return true;
+            }
+
+            return false;
+        }
+        case 2:
+            return _iter.MoveNext(__types[0]);
+    }
+
+    return false;
 }
 
-// public void Reset() [instance] :1642
+// public void Reset() [instance] :1767
 void MiniList__Enumerator::Reset(uType* __type)
 {
-    _index = -1;
+    uType* __types[] = {
+        __type->Precalced(1/*Fuse.Internal.ObjectList<T>.Enumerator*/),
+    };
+    uStackFrame __("Fuse.Internal.MiniList`1.Enumerator", "Reset()");
+    _first = true;
+
+    if (_mode == 2)
+        _iter.Reset(__types[0]);
 }
 
-// public Enumerator New(Fuse.Internal.MiniList<T> source) [static] :1629
-MiniList__Enumerator MiniList__Enumerator__New1(uType* __type, ::g::Fuse::Internal::MiniList source)
+// public Enumerator New(Fuse.Internal.MiniList<T> source, bool versionLock) [static] :1704
+MiniList__Enumerator MiniList__Enumerator__New1(uType* __type, ::g::Fuse::Internal::MiniList source, bool versionLock)
 {
     MiniList__Enumerator obj1;
-    obj1.ctor_(__type, source);
+    obj1.ctor_(__type, source, versionLock);
     return obj1;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
+
+// public sealed class ObjectList<T>.EnumeratorClass :2130
+// {
+static void ObjectList__EnumeratorClass_build(uType* type)
+{
+    ::TYPES[11] = ::g::Fuse::Internal::ObjectList__Enumerator_typeof();
+    type->SetPrecalc(
+        ::g::Fuse::Internal::ObjectList__Enumerator_typeof()->MakeType(type->T(0), NULL));
+    type->SetInterfaces(
+        ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(type->T(0), NULL), offsetof(ObjectList__EnumeratorClass_type, interface0),
+        ::g::Uno::IDisposable_typeof(), offsetof(ObjectList__EnumeratorClass_type, interface1),
+        ::g::Uno::Collections::IEnumerator_typeof(), offsetof(ObjectList__EnumeratorClass_type, interface2));
+    type->SetFields(0,
+        ::TYPES[11/*Fuse.Internal.ObjectList`1.Enumerator*/]->MakeType(type->T(0), NULL), offsetof(::g::Fuse::Internal::ObjectList__EnumeratorClass, _en), 0);
+    type->Reflection.SetFunctions(5,
+        new uFunction("get_Current", NULL, (void*)ObjectList__EnumeratorClass__get_Current_fn, 0, false, type->T(0), 0),
+        new uFunction("Dispose", NULL, (void*)ObjectList__EnumeratorClass__Dispose_fn, 0, false, uVoid_typeof(), 0),
+        new uFunction("MoveNext", NULL, (void*)ObjectList__EnumeratorClass__MoveNext_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
+        new uFunction(".ctor", type, (void*)ObjectList__EnumeratorClass__New1_fn, 0, true, type, 1, ::g::Fuse::Internal::ObjectList_typeof()->MakeType(type->T(0), NULL)),
+        new uFunction("Reset", NULL, (void*)ObjectList__EnumeratorClass__Reset_fn, 0, false, uVoid_typeof(), 0));
+}
+
+ObjectList__EnumeratorClass_type* ObjectList__EnumeratorClass_typeof()
+{
+    static uSStrong<ObjectList__EnumeratorClass_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.FieldCount = 1;
+    options.GenericCount = 1;
+    options.InterfaceCount = 3;
+    options.PrecalcCount = 1;
+    options.ObjectSize = sizeof(ObjectList__EnumeratorClass);
+    options.TypeSize = sizeof(ObjectList__EnumeratorClass_type);
+    type = (ObjectList__EnumeratorClass_type*)uClassType::New("Fuse.Internal.ObjectList`1.EnumeratorClass", options);
+    type->fp_build_ = ObjectList__EnumeratorClass_build;
+    type->interface0.fp_get_Current = (void(*)(uObject*, uTRef))ObjectList__EnumeratorClass__get_Current_fn;
+    type->interface1.fp_Dispose = (void(*)(uObject*))ObjectList__EnumeratorClass__Dispose_fn;
+    type->interface2.fp_Reset = (void(*)(uObject*))ObjectList__EnumeratorClass__Reset_fn;
+    type->interface2.fp_MoveNext = (void(*)(uObject*, bool*))ObjectList__EnumeratorClass__MoveNext_fn;
+    return type;
+}
+
+// public EnumeratorClass(Fuse.Internal.ObjectList<T> source) :2134
+void ObjectList__EnumeratorClass__ctor__fn(ObjectList__EnumeratorClass* __this, ::g::Fuse::Internal::ObjectList* source)
+{
+    __this->ctor_(source);
+}
+
+// public T get_Current() :2140
+void ObjectList__EnumeratorClass__get_Current_fn(ObjectList__EnumeratorClass* __this, uObject** __retval)
+{
+    *__retval = __this->Current();
+}
+
+// public void Dispose() :2142
+void ObjectList__EnumeratorClass__Dispose_fn(ObjectList__EnumeratorClass* __this)
+{
+    __this->Dispose();
+}
+
+// public bool MoveNext() :2139
+void ObjectList__EnumeratorClass__MoveNext_fn(ObjectList__EnumeratorClass* __this, bool* __retval)
+{
+    *__retval = __this->MoveNext();
+}
+
+// public EnumeratorClass New(Fuse.Internal.ObjectList<T> source) :2134
+void ObjectList__EnumeratorClass__New1_fn(uType* __type, ::g::Fuse::Internal::ObjectList* source, ObjectList__EnumeratorClass** __retval)
+{
+    *__retval = ObjectList__EnumeratorClass::New1(__type, source);
+}
+
+// public void Reset() :2141
+void ObjectList__EnumeratorClass__Reset_fn(ObjectList__EnumeratorClass* __this)
+{
+    __this->Reset();
+}
+
+// public EnumeratorClass(Fuse.Internal.ObjectList<T> source) [instance] :2134
+void ObjectList__EnumeratorClass::ctor_(::g::Fuse::Internal::ObjectList* source)
+{
+    uType* __types[] = {
+        __type->Precalced(0/*Fuse.Internal.ObjectList<T>.Enumerator*/),
+    };
+    _en = ::g::Fuse::Internal::ObjectList__Enumerator__New1(__types[0], source, false);
+}
+
+// public T get_Current() [instance] :2140
+uObject* ObjectList__EnumeratorClass::Current()
+{
+    uType* __types[] = {
+        __type->Precalced(0/*Fuse.Internal.ObjectList<T>.Enumerator*/),
+    };
+    uStackFrame __("Fuse.Internal.ObjectList`1.EnumeratorClass", "get_Current()");
+    return _en.Current(__types[0]);
+}
+
+// public void Dispose() [instance] :2142
+void ObjectList__EnumeratorClass::Dispose()
+{
+    uType* __types[] = {
+        __type->Precalced(0/*Fuse.Internal.ObjectList<T>.Enumerator*/),
+    };
+    _en.Dispose(__types[0]);
+}
+
+// public bool MoveNext() [instance] :2139
+bool ObjectList__EnumeratorClass::MoveNext()
+{
+    uType* __types[] = {
+        __type->Precalced(0/*Fuse.Internal.ObjectList<T>.Enumerator*/),
+    };
+    return _en.MoveNext(__types[0]);
+}
+
+// public void Reset() [instance] :2141
+void ObjectList__EnumeratorClass::Reset()
+{
+    uType* __types[] = {
+        __type->Precalced(0/*Fuse.Internal.ObjectList<T>.Enumerator*/),
+    };
+    uStackFrame __("Fuse.Internal.ObjectList`1.EnumeratorClass", "Reset()");
+    _en.Reset(__types[0]);
+}
+
+// public EnumeratorClass New(Fuse.Internal.ObjectList<T> source) [static] :2134
+ObjectList__EnumeratorClass* ObjectList__EnumeratorClass::New1(uType* __type, ::g::Fuse::Internal::ObjectList* source)
+{
+    ObjectList__EnumeratorClass* obj1 = (ObjectList__EnumeratorClass*)uNew(__type);
+    obj1->ctor_(source);
+    return obj1;
+}
+// }
+
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
+
+// public enum ObjectList<T>.Equality :1840
+uEnumType* ObjectList__Equality_typeof()
+{
+    static uSStrong<uEnumType*> type;
+    if (type != NULL) return type;
+
+    type = uEnumType::New("Fuse.Internal.ObjectList`1.Equality", ::g::Uno::Int_typeof(), 2);
+    type->SetLiterals(
+        "Object", 0LL,
+        "Value", 1LL);
+    return type;
+}
+
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // internal sealed class Float2Blender :408
 // {
@@ -1390,8 +1848,8 @@ Float2Blender* Float2Blender::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // internal sealed class Float3Blender :424
 // {
@@ -1510,8 +1968,8 @@ Float3Blender* Float3Blender::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // internal sealed class Float4Blender :440
 // {
@@ -1630,8 +2088,8 @@ Float4Blender* Float4Blender::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // internal sealed class FloatBlender :372
 // {
@@ -1766,26 +2224,26 @@ FloatBlender* FloatBlender::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
-// internal sealed class FontFaceDescriptor :2127
+// internal sealed class FontFaceDescriptor :2789
 // {
 static void FontFaceDescriptor_build(uType* type)
 {
-    ::TYPES[11] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
-    ::TYPES[12] = ::g::Uno::String_typeof()->Array();
-    ::TYPES[13] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*SequenceEqual<string>*/, ::g::Uno::String_typeof(), NULL);
-    ::TYPES[14] = ::g::Uno::Int_typeof();
-    ::TYPES[15] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
-    ::TYPES[16] = ::g::Uno::Collections::IEnumerator_typeof();
-    ::TYPES[17] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
-    ::TYPES[18] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(0/*All<string>*/, ::g::Uno::String_typeof(), NULL);
-    ::TYPES[19] = ::g::Uno::Predicate_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
+    ::TYPES[12] = ::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
+    ::TYPES[13] = ::g::Uno::String_typeof()->Array();
+    ::TYPES[14] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*SequenceEqual<string>*/, ::g::Uno::String_typeof(), NULL);
+    ::TYPES[15] = ::g::Uno::Int_typeof();
+    ::TYPES[16] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
+    ::TYPES[17] = ::g::Uno::Collections::IEnumerator_typeof();
+    ::TYPES[18] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
+    ::TYPES[19] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(0/*All<string>*/, ::g::Uno::String_typeof(), NULL);
+    ::TYPES[20] = ::g::Uno::Predicate_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
     type->SetFields(0,
         ::g::Uno::UX::FileSource_typeof(), offsetof(::g::Fuse::Internal::FontFaceDescriptor, FileSource), 0,
-        ::TYPES[14/*int*/], offsetof(::g::Fuse::Internal::FontFaceDescriptor, Index), 0,
-        ::TYPES[15/*Uno.Collections.IEnumerable<string>*/], offsetof(::g::Fuse::Internal::FontFaceDescriptor, Styles), 0);
+        ::TYPES[15/*int*/], offsetof(::g::Fuse::Internal::FontFaceDescriptor, Index), 0,
+        ::TYPES[16/*Uno.Collections.IEnumerable<string>*/], offsetof(::g::Fuse::Internal::FontFaceDescriptor, Styles), 0);
 }
 
 uType* FontFaceDescriptor_typeof()
@@ -1804,27 +2262,27 @@ uType* FontFaceDescriptor_typeof()
     return type;
 }
 
-// public FontFaceDescriptor(Uno.UX.FileSource fileSource, int index) :2142
+// public FontFaceDescriptor(Uno.UX.FileSource fileSource, int index) :2804
 void FontFaceDescriptor__ctor__fn(FontFaceDescriptor* __this, ::g::Uno::UX::FileSource* fileSource, int* index)
 {
     __this->ctor_(fileSource, *index);
 }
 
-// public FontFaceDescriptor(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) :2134
+// public FontFaceDescriptor(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) :2796
 void FontFaceDescriptor__ctor_1_fn(FontFaceDescriptor* __this, ::g::Uno::UX::FileSource* fileSource, uObject* styles)
 {
     __this->ctor_1(fileSource, styles);
 }
 
-// public override sealed bool Equals(object o) :2154
+// public override sealed bool Equals(object o) :2816
 void FontFaceDescriptor__Equals_fn(FontFaceDescriptor* __this, uObject* o, bool* __retval)
 {
     uStackFrame __("Fuse.Internal.FontFaceDescriptor", "Equals(object)");
     FontFaceDescriptor* f = uAs<FontFaceDescriptor*>(o, __this->__type);
-    return *__retval = (((f != NULL) && ::g::Uno::String::op_Equality(uPtr(__this->FileSource)->Name, uPtr(uPtr(f)->FileSource)->Name)) && (__this->Index == uPtr(f)->Index)) && ::g::Uno::Collections::EnumerableExtensions::SequenceEqual(::TYPES[13/*Uno.Collections.EnumerableExtensions.SequenceEqual<string>*/], __this->Styles, uPtr(f)->Styles), void();
+    return *__retval = (((f != NULL) && ::g::Uno::String::op_Equality(uPtr(__this->FileSource)->Name, uPtr(uPtr(f)->FileSource)->Name)) && (__this->Index == uPtr(f)->Index)) && ::g::Uno::Collections::EnumerableExtensions::SequenceEqual(::TYPES[14/*Uno.Collections.EnumerableExtensions.SequenceEqual<string>*/], __this->Styles, uPtr(f)->Styles), void();
 }
 
-// public override sealed int GetHashCode() :2163
+// public override sealed int GetHashCode() :2825
 void FontFaceDescriptor__GetHashCode_fn(FontFaceDescriptor* __this, int* __retval)
 {
     uStackFrame __("Fuse.Internal.FontFaceDescriptor", "GetHashCode()");
@@ -1832,45 +2290,45 @@ void FontFaceDescriptor__GetHashCode_fn(FontFaceDescriptor* __this, int* __retva
     uString* ret5;
     int hash = 17;
     hash = (hash * 23) + uPtr(uPtr(__this->FileSource)->Name)->GetHashCode();
-    hash = (hash * 23) + ::g::Uno::Int::GetHashCode((ind1 = __this->Index, ind1), ::TYPES[14/*int*/]);
+    hash = (hash * 23) + ::g::Uno::Int::GetHashCode((ind1 = __this->Index, ind1), ::TYPES[15/*int*/]);
 
-    for (uObject* enum2 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(__this->Styles), ::TYPES[15/*Uno.Collections.IEnumerable<string>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum2), ::TYPES[16/*Uno.Collections.IEnumerator*/])); )
+    for (uObject* enum2 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(__this->Styles), ::TYPES[16/*Uno.Collections.IEnumerable<string>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum2), ::TYPES[17/*Uno.Collections.IEnumerator*/])); )
     {
-        uString* s = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum2), ::TYPES[17/*Uno.Collections.IEnumerator<string>*/]), &ret5), ret5);
+        uString* s = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum2), ::TYPES[18/*Uno.Collections.IEnumerator<string>*/]), &ret5), ret5);
         hash = (hash * 23) + uPtr(s)->GetHashCode();
     }
 
     return *__retval = hash, void();
 }
 
-// public bool Match(string styleString) :2149
+// public bool Match(string styleString) :2811
 void FontFaceDescriptor__Match_fn(FontFaceDescriptor* __this, uString* styleString, bool* __retval)
 {
     *__retval = __this->Match(styleString);
 }
 
-// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, int index) :2142
+// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, int index) :2804
 void FontFaceDescriptor__New1_fn(::g::Uno::UX::FileSource* fileSource, int* index, FontFaceDescriptor** __retval)
 {
     *__retval = FontFaceDescriptor::New1(fileSource, *index);
 }
 
-// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) :2134
+// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) :2796
 void FontFaceDescriptor__New2_fn(::g::Uno::UX::FileSource* fileSource, uObject* styles, FontFaceDescriptor** __retval)
 {
     *__retval = FontFaceDescriptor::New2(fileSource, styles);
 }
 
-// public FontFaceDescriptor(Uno.UX.FileSource fileSource, int index) [instance] :2142
+// public FontFaceDescriptor(Uno.UX.FileSource fileSource, int index) [instance] :2804
 void FontFaceDescriptor::ctor_(::g::Uno::UX::FileSource* fileSource, int index)
 {
     uStackFrame __("Fuse.Internal.FontFaceDescriptor", ".ctor(Uno.UX.FileSource,int)");
     FileSource = fileSource;
     Index = index;
-    Styles = (uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable::New1(::TYPES[11/*Uno.Runtime.Implementation.Internal.ArrayEnumerable<string>*/], uArray::New(::TYPES[12/*string[]*/], 0)));
+    Styles = (uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable::New1(::TYPES[12/*Uno.Runtime.Implementation.Internal.ArrayEnumerable<string>*/], uArray::New(::TYPES[13/*string[]*/], 0)));
 }
 
-// public FontFaceDescriptor(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) [instance] :2134
+// public FontFaceDescriptor(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) [instance] :2796
 void FontFaceDescriptor::ctor_1(::g::Uno::UX::FileSource* fileSource, uObject* styles)
 {
     FileSource = fileSource;
@@ -1878,14 +2336,14 @@ void FontFaceDescriptor::ctor_1(::g::Uno::UX::FileSource* fileSource, uObject* s
     Styles = styles;
 }
 
-// public bool Match(string styleString) [instance] :2149
+// public bool Match(string styleString) [instance] :2811
 bool FontFaceDescriptor::Match(uString* styleString)
 {
     uStackFrame __("Fuse.Internal.FontFaceDescriptor", "Match(string)");
-    return ::g::Uno::Collections::EnumerableExtensions::All(::TYPES[18/*Uno.Collections.EnumerableExtensions.All<string>*/], Styles, uDelegate::New(::TYPES[19/*Uno.Predicate<string>*/], (void*)::g::Uno::String__Contains_fn, uPtr(styleString)));
+    return ::g::Uno::Collections::EnumerableExtensions::All(::TYPES[19/*Uno.Collections.EnumerableExtensions.All<string>*/], Styles, uDelegate::New(::TYPES[20/*Uno.Predicate<string>*/], (void*)::g::Uno::String__Contains_fn, uPtr(styleString)));
 }
 
-// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, int index) [static] :2142
+// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, int index) [static] :2804
 FontFaceDescriptor* FontFaceDescriptor::New1(::g::Uno::UX::FileSource* fileSource, int index)
 {
     FontFaceDescriptor* obj4 = (FontFaceDescriptor*)uNew(FontFaceDescriptor_typeof());
@@ -1893,7 +2351,7 @@ FontFaceDescriptor* FontFaceDescriptor::New1(::g::Uno::UX::FileSource* fileSourc
     return obj4;
 }
 
-// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) [static] :2134
+// public FontFaceDescriptor New(Uno.UX.FileSource fileSource, Uno.Collections.IEnumerable<string> styles) [static] :2796
 FontFaceDescriptor* FontFaceDescriptor::New2(::g::Uno::UX::FileSource* fileSource, uObject* styles)
 {
     FontFaceDescriptor* obj3 = (FontFaceDescriptor*)uNew(FontFaceDescriptor_typeof());
@@ -1902,8 +2360,8 @@ FontFaceDescriptor* FontFaceDescriptor::New2(::g::Uno::UX::FileSource* fileSourc
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // internal static class FrustumMatrix :1022
 // {
@@ -1923,55 +2381,55 @@ uClassType* FrustumMatrix_typeof()
     return type;
 }
 
-// public static float4x4 OrthoLHInverse(float width, float height, float near, float far) :1054
+// public static float4x4 OrthoLHInverse(float width, float height, float near, float far) :1056
 void FrustumMatrix__OrthoLHInverse_fn(float* width, float* height, float* near, float* far, ::g::Uno::Float4x4* __retval)
 {
     *__retval = FrustumMatrix::OrthoLHInverse(*width, *height, *near, *far);
 }
 
-// public static float4x4 OrthoRHInverse(float width, float height, float zNear, float zFar) :1069
+// public static float4x4 OrthoRHInverse(float width, float height, float zNear, float zFar) :1071
 void FrustumMatrix__OrthoRHInverse_fn(float* width, float* height, float* zNear, float* zFar, ::g::Uno::Float4x4* __retval)
 {
     *__retval = FrustumMatrix::OrthoRHInverse(*width, *height, *zNear, *zFar);
 }
 
-// public static float4x4 PerspectiveView(float2 viewSize, float distance, float2 relOrigin) :1077
+// public static float4x4 PerspectiveView(float2 viewSize, float distance, float2 relOrigin) :1079
 void FrustumMatrix__PerspectiveView_fn(::g::Uno::Float2* viewSize, float* distance, ::g::Uno::Float2* relOrigin, ::g::Uno::Float4x4* __retval)
 {
     *__retval = FrustumMatrix::PerspectiveView(*viewSize, *distance, *relOrigin);
 }
 
-// public static float4x4 PerspectiveViewInverse(float2 viewSize, float distance, float2 relOrigin) :1084
+// public static float4x4 PerspectiveViewInverse(float2 viewSize, float distance, float2 relOrigin) :1086
 void FrustumMatrix__PerspectiveViewInverse_fn(::g::Uno::Float2* viewSize, float* distance, ::g::Uno::Float2* relOrigin, ::g::Uno::Float4x4* __retval)
 {
     *__retval = FrustumMatrix::PerspectiveViewInverse(*viewSize, *distance, *relOrigin);
 }
 
-// public static bool TryOrthoLH(float width, float height, float near, float far, float4x4& result) :1024
+// public static bool TryOrthoLH(float width, float height, float near, float far, float4x4& result) :1026
 void FrustumMatrix__TryOrthoLH_fn(float* width, float* height, float* near, float* far, ::g::Uno::Float4x4* result, bool* __retval)
 {
     *__retval = FrustumMatrix::TryOrthoLH(*width, *height, *near, *far, result);
 }
 
-// public static bool TryOrthoRH(float width, float height, float zNear, float zFar, float4x4& result) :1043
+// public static bool TryOrthoRH(float width, float height, float zNear, float zFar, float4x4& result) :1045
 void FrustumMatrix__TryOrthoRH_fn(float* width, float* height, float* zNear, float* zFar, ::g::Uno::Float4x4* result, bool* __retval)
 {
     *__retval = FrustumMatrix::TryOrthoRH(*width, *height, *zNear, *zFar, result);
 }
 
-// public static bool TryPerspectiveProjection(float2 viewSize, float znear, float zfar, float distance, float4x4& result) :1091
+// public static bool TryPerspectiveProjection(float2 viewSize, float znear, float zfar, float distance, float4x4& result) :1093
 void FrustumMatrix__TryPerspectiveProjection_fn(::g::Uno::Float2* viewSize, float* znear, float* zfar, float* distance, ::g::Uno::Float4x4* result, bool* __retval)
 {
     *__retval = FrustumMatrix::TryPerspectiveProjection(*viewSize, *znear, *zfar, *distance, result);
 }
 
-// public static bool TryPerspectiveProjectionInverse(float2 viewSize, float znear, float zfar, float distance, float4x4& result) :1110
+// public static bool TryPerspectiveProjectionInverse(float2 viewSize, float znear, float zfar, float distance, float4x4& result) :1112
 void FrustumMatrix__TryPerspectiveProjectionInverse_fn(::g::Uno::Float2* viewSize, float* znear, float* zfar, float* distance, ::g::Uno::Float4x4* result, bool* __retval)
 {
     *__retval = FrustumMatrix::TryPerspectiveProjectionInverse(*viewSize, *znear, *zfar, *distance, result);
 }
 
-// public static float4x4 OrthoLHInverse(float width, float height, float near, float far) [static] :1054
+// public static float4x4 OrthoLHInverse(float width, float height, float near, float far) [static] :1056
 ::g::Uno::Float4x4 FrustumMatrix::OrthoLHInverse(float width, float height, float near, float far)
 {
     float halfWidth = width * 0.5f;
@@ -1984,7 +2442,7 @@ void FrustumMatrix__TryPerspectiveProjectionInverse_fn(::g::Uno::Float2* viewSiz
     return result;
 }
 
-// public static float4x4 OrthoRHInverse(float width, float height, float zNear, float zFar) [static] :1069
+// public static float4x4 OrthoRHInverse(float width, float height, float zNear, float zFar) [static] :1071
 ::g::Uno::Float4x4 FrustumMatrix::OrthoRHInverse(float width, float height, float zNear, float zFar)
 {
     ::g::Uno::Float4x4 result = FrustumMatrix::OrthoLHInverse(width, height, zNear, zFar);
@@ -1993,7 +2451,7 @@ void FrustumMatrix__TryPerspectiveProjectionInverse_fn(::g::Uno::Float2* viewSiz
     return result;
 }
 
-// public static float4x4 PerspectiveView(float2 viewSize, float distance, float2 relOrigin) [static] :1077
+// public static float4x4 PerspectiveView(float2 viewSize, float distance, float2 relOrigin) [static] :1079
 ::g::Uno::Float4x4 FrustumMatrix::PerspectiveView(::g::Uno::Float2 viewSize, float distance, ::g::Uno::Float2 relOrigin)
 {
     ::g::Uno::Float4x4 t = ::g::Uno::Matrix::Translation(-relOrigin.X * viewSize.X, -relOrigin.Y * viewSize.Y, distance);
@@ -2001,7 +2459,7 @@ void FrustumMatrix__TryPerspectiveProjectionInverse_fn(::g::Uno::Float2* viewSiz
     return ::g::Uno::Matrix::Mul8(t, s);
 }
 
-// public static float4x4 PerspectiveViewInverse(float2 viewSize, float distance, float2 relOrigin) [static] :1084
+// public static float4x4 PerspectiveViewInverse(float2 viewSize, float distance, float2 relOrigin) [static] :1086
 ::g::Uno::Float4x4 FrustumMatrix::PerspectiveViewInverse(::g::Uno::Float2 viewSize, float distance, ::g::Uno::Float2 relOrigin)
 {
     ::g::Uno::Float4x4 s = ::g::Uno::Matrix::Scaling1(1.0f, -1.0f, 1.0f);
@@ -2009,7 +2467,7 @@ void FrustumMatrix__TryPerspectiveProjectionInverse_fn(::g::Uno::Float2* viewSiz
     return ::g::Uno::Matrix::Mul8(s, t);
 }
 
-// public static bool TryOrthoLH(float width, float height, float near, float far, float4x4& result) [static] :1024
+// public static bool TryOrthoLH(float width, float height, float near, float far, float4x4& result) [static] :1026
 bool FrustumMatrix::TryOrthoLH(float width, float height, float near, float far, ::g::Uno::Float4x4* result)
 {
     float depth = far - near;
@@ -2028,7 +2486,7 @@ bool FrustumMatrix::TryOrthoLH(float width, float height, float near, float far,
     return true;
 }
 
-// public static bool TryOrthoRH(float width, float height, float zNear, float zFar, float4x4& result) [static] :1043
+// public static bool TryOrthoRH(float width, float height, float zNear, float zFar, float4x4& result) [static] :1045
 bool FrustumMatrix::TryOrthoRH(float width, float height, float zNear, float zFar, ::g::Uno::Float4x4* result)
 {
     if (FrustumMatrix::TryOrthoLH(width, height, zNear, zFar, result))
@@ -2040,7 +2498,7 @@ bool FrustumMatrix::TryOrthoRH(float width, float height, float zNear, float zFa
     return false;
 }
 
-// public static bool TryPerspectiveProjection(float2 viewSize, float znear, float zfar, float distance, float4x4& result) [static] :1091
+// public static bool TryPerspectiveProjection(float2 viewSize, float znear, float zfar, float distance, float4x4& result) [static] :1093
 bool FrustumMatrix::TryPerspectiveProjection(::g::Uno::Float2 viewSize, float znear, float zfar, float distance, ::g::Uno::Float4x4* result)
 {
     float zdiff = znear - zfar;
@@ -2060,7 +2518,7 @@ bool FrustumMatrix::TryPerspectiveProjection(::g::Uno::Float2 viewSize, float zn
     return true;
 }
 
-// public static bool TryPerspectiveProjectionInverse(float2 viewSize, float znear, float zfar, float distance, float4x4& result) [static] :1110
+// public static bool TryPerspectiveProjectionInverse(float2 viewSize, float znear, float zfar, float distance, float4x4& result) [static] :1112
 bool FrustumMatrix::TryPerspectiveProjectionInverse(::g::Uno::Float2 viewSize, float znear, float zfar, float distance, ::g::Uno::Float4x4* result)
 {
     float zdiv = (2.0f * zfar) * znear;
@@ -2081,8 +2539,8 @@ bool FrustumMatrix::TryPerspectiveProjectionInverse(::g::Uno::Float2 viewSize, f
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/internal/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/internal/$.uno
+// -------------------------------------------------------------
 
 // internal static class FuseConfig :13
 // {
@@ -2103,8 +2561,8 @@ uClassType* FuseConfig_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/internal/$.uno
+// ----------------------------------------------------------------
 
 // internal abstract interface IImageContainerOwner :13
 // {
@@ -2118,48 +2576,48 @@ uInterfaceType* IImageContainerOwner_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/internal/$.uno
+// ----------------------------------------------------------------
 
 // internal sealed class ImageContainer :20
 // {
 static void ImageContainer_build(uType* type)
 {
     ::STRINGS[2] = uString::Const("Switching listen state on null Image");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/internal/$.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Elements/1.2.1/internal/$.uno");
     ::STRINGS[4] = uString::Const("UpdateSourceListen");
     ::STRINGS[5] = uString::Const("ResampleMode.Mipmap has been deprecated. Use ResampleMode.Linear instead.");
     ::STRINGS[6] = uString::Const("set_ResampleMode");
-    ::TYPES[16] = ::g::Uno::Collections::IEnumerator_typeof();
-    ::TYPES[20] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
-    ::TYPES[21] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
-    ::TYPES[22] = ::g::Fuse::Internal::IImageContainerOwner_typeof();
-    ::TYPES[23] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
-    ::TYPES[24] = ::g::Fuse::Resources::FileImageSource_typeof();
-    ::TYPES[25] = ::g::Fuse::Resources::HttpImageSource_typeof();
-    ::TYPES[26] = ::g::Fuse::Resources::MultiDensityImageSource_typeof();
-    ::TYPES[27] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
-    ::TYPES[28] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
-    ::TYPES[29] = ::g::Uno::EventHandler_typeof();
-    ::TYPES[30] = ::g::Fuse::Resources::ImageSourceErrorHandler_typeof();
-    ::TYPES[31] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
-    ::TYPES[32] = ::g::Uno::Collections::IList_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
-    ::TYPES[33] = ::g::Uno::Collections::RootableList_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
+    ::TYPES[17] = ::g::Uno::Collections::IEnumerator_typeof();
+    ::TYPES[21] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
+    ::TYPES[22] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
+    ::TYPES[23] = ::g::Fuse::Internal::IImageContainerOwner_typeof();
+    ::TYPES[24] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
+    ::TYPES[25] = ::g::Fuse::Resources::FileImageSource_typeof();
+    ::TYPES[26] = ::g::Fuse::Resources::HttpImageSource_typeof();
+    ::TYPES[27] = ::g::Fuse::Resources::MultiDensityImageSource_typeof();
+    ::TYPES[28] = ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
+    ::TYPES[29] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
+    ::TYPES[30] = ::g::Uno::EventHandler_typeof();
+    ::TYPES[31] = ::g::Fuse::Resources::ImageSourceErrorHandler_typeof();
+    ::TYPES[32] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
+    ::TYPES[33] = ::g::Uno::Collections::IList_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
+    ::TYPES[34] = ::g::Uno::Collections::RootableList_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), NULL);
     type->SetFields(0,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _density), 0,
-        ::TYPES[33/*Uno.Collections.RootableList<Uno.UX.FileSource>*/], offsetof(::g::Fuse::Internal::ImageContainer, _files), 0,
+        ::TYPES[34/*Uno.Collections.RootableList<Uno.UX.FileSource>*/], offsetof(::g::Fuse::Internal::ImageContainer, _files), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _isRooted), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _isSourceListen), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _isVisible), 0,
         ::g::Fuse::Resources::MemoryPolicy_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _memoryPolicy), 0,
-        ::TYPES[22/*Fuse.Internal.IImageContainerOwner*/], offsetof(::g::Fuse::Internal::ImageContainer, _owner), uFieldFlagsWeak,
+        ::TYPES[23/*Fuse.Internal.IImageContainerOwner*/], offsetof(::g::Fuse::Internal::ImageContainer, _owner), uFieldFlagsWeak,
         ::g::Fuse::Drawing::ResampleMode_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _resampleMode), 0,
         ::g::Fuse::Resources::ImageSource_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _source), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, _sourcePinned), 0,
         ::g::Fuse::Internal::SizingContainer_typeof(), offsetof(::g::Fuse::Internal::ImageContainer, Sizing), 0,
-        ::TYPES[29/*Uno.EventHandler*/], offsetof(::g::Fuse::Internal::ImageContainer, ParamChanged1), 0,
-        ::TYPES[29/*Uno.EventHandler*/], offsetof(::g::Fuse::Internal::ImageContainer, SourceChanged1), 0,
-        ::TYPES[30/*Fuse.Resources.ImageSourceErrorHandler*/], offsetof(::g::Fuse::Internal::ImageContainer, SourceError1), 0);
+        ::TYPES[30/*Uno.EventHandler*/], offsetof(::g::Fuse::Internal::ImageContainer, ParamChanged1), 0,
+        ::TYPES[30/*Uno.EventHandler*/], offsetof(::g::Fuse::Internal::ImageContainer, SourceChanged1), 0,
+        ::TYPES[31/*Fuse.Resources.ImageSourceErrorHandler*/], offsetof(::g::Fuse::Internal::ImageContainer, SourceError1), 0);
 }
 
 uType* ImageContainer_typeof()
@@ -2513,10 +2971,10 @@ void ImageContainer::CreateMultiDensitySource()
     ::g::Uno::UX::FileSource* ret14;
     ::g::Fuse::Resources::MultiDensityImageSource* s = ::g::Fuse::Resources::MultiDensityImageSource::New2();
 
-    for (uObject* enum4 = (uObject*)uPtr(_files)->GetEnumerator(); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum4), ::TYPES[16/*Uno.Collections.IEnumerator*/])); )
+    for (uObject* enum4 = (uObject*)uPtr(_files)->GetEnumerator(); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum4), ::TYPES[17/*Uno.Collections.IEnumerator*/])); )
     {
-        ::g::Uno::UX::FileSource* f = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum4), ::TYPES[20/*Uno.Collections.IEnumerator<Uno.UX.FileSource>*/]), &ret14), ret14);
-        ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(s)->Sources()), ::TYPES[21/*Uno.Collections.ICollection<Fuse.Resources.ImageSource>*/]), (collection5 = ::g::Fuse::Resources::FileImageSource::New3(f), ind9 = Density(), uPtr(collection5)->Density(ind9), ind9, ind10 = MemoryPolicy(), uPtr(collection5)->DefaultPolicy(ind10), ind10, collection5));
+        ::g::Uno::UX::FileSource* f = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum4), ::TYPES[21/*Uno.Collections.IEnumerator<Uno.UX.FileSource>*/]), &ret14), ret14);
+        ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(s)->Sources()), ::TYPES[22/*Uno.Collections.ICollection<Fuse.Resources.ImageSource>*/]), (collection5 = ::g::Fuse::Resources::FileImageSource::New3(f), ind9 = Density(), uPtr(collection5)->Density(ind9), ind9, ind10 = MemoryPolicy(), uPtr(collection5)->DefaultPolicy(ind10), ind10, collection5));
     }
 
     Source(s);
@@ -2559,10 +3017,10 @@ void ImageContainer::File(::g::Uno::UX::FileSource* value)
     ::g::Uno::UX::FileSource* ret18;
     uObject* files = Files();
 
-    if (((::g::Uno::Collections::ICollection::Count(uInterface(uPtr(files), ::TYPES[31/*Uno.Collections.ICollection<Uno.UX.FileSource>*/])) == 0) || (::g::Uno::Collections::ICollection::Count(uInterface(uPtr(files), ::TYPES[31/*Uno.Collections.ICollection<Uno.UX.FileSource>*/])) > 1)) || ((::g::Uno::Collections::IList::get_Item_ex(uInterface(uPtr(files), ::TYPES[32/*Uno.Collections.IList<Uno.UX.FileSource>*/]), uCRef<int>(0), &ret18), ret18) != value))
+    if (((::g::Uno::Collections::ICollection::Count(uInterface(uPtr(files), ::TYPES[32/*Uno.Collections.ICollection<Uno.UX.FileSource>*/])) == 0) || (::g::Uno::Collections::ICollection::Count(uInterface(uPtr(files), ::TYPES[32/*Uno.Collections.ICollection<Uno.UX.FileSource>*/])) > 1)) || ((::g::Uno::Collections::IList::get_Item_ex(uInterface(uPtr(files), ::TYPES[33/*Uno.Collections.IList<Uno.UX.FileSource>*/]), uCRef<int>(0), &ret18), ret18) != value))
     {
-        ::g::Uno::Collections::ICollection::Clear(uInterface(uPtr(files), ::TYPES[31/*Uno.Collections.ICollection<Uno.UX.FileSource>*/]));
-        ::g::Uno::Collections::ICollection::Add_ex(uInterface(files, ::TYPES[31/*Uno.Collections.ICollection<Uno.UX.FileSource>*/]), value);
+        ::g::Uno::Collections::ICollection::Clear(uInterface(uPtr(files), ::TYPES[32/*Uno.Collections.ICollection<Uno.UX.FileSource>*/]));
+        ::g::Uno::Collections::ICollection::Add_ex(uInterface(files, ::TYPES[32/*Uno.Collections.ICollection<Uno.UX.FileSource>*/]), value);
     }
 }
 
@@ -2573,10 +3031,10 @@ uObject* ImageContainer::Files()
 
     if (_files == NULL)
     {
-        _files = ((::g::Uno::Collections::RootableList*)::g::Uno::Collections::RootableList::New1(::TYPES[33/*Uno.Collections.RootableList<Uno.UX.FileSource>*/]));
+        _files = ((::g::Uno::Collections::RootableList*)::g::Uno::Collections::RootableList::New1(::TYPES[34/*Uno.Collections.RootableList<Uno.UX.FileSource>*/]));
 
         if (IsRooted())
-            uPtr(_files)->Subscribe(uDelegate::New(::TYPES[23/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFilesChanged_fn, this), uDelegate::New(::TYPES[23/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFilesChanged_fn, this));
+            uPtr(_files)->Subscribe(uDelegate::New(::TYPES[24/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFilesChanged_fn, this), uDelegate::New(::TYPES[24/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFilesChanged_fn, this));
     }
 
     return (uObject*)_files;
@@ -2678,7 +3136,7 @@ void ImageContainer::OnParamChanged()
         uPtr(ParamChanged1)->Invoke(2, this, (::g::Uno::EventArgs*)::g::Uno::EventArgs::Empty());
 
     if (_owner != NULL)
-        ::g::Fuse::Internal::IImageContainerOwner::OnParamChanged(uInterface(uPtr(_owner), ::TYPES[22/*Fuse.Internal.IImageContainerOwner*/]));
+        ::g::Fuse::Internal::IImageContainerOwner::OnParamChanged(uInterface(uPtr(_owner), ::TYPES[23/*Fuse.Internal.IImageContainerOwner*/]));
 }
 
 // private void OnRooted() [instance] :248
@@ -2688,7 +3146,7 @@ void ImageContainer::OnRooted()
 
     if (_files != NULL)
     {
-        uPtr(_files)->Subscribe(uDelegate::New(::TYPES[23/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFilesChanged_fn, this), uDelegate::New(::TYPES[23/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFilesChanged_fn, this));
+        uPtr(_files)->Subscribe(uDelegate::New(::TYPES[24/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFilesChanged_fn, this), uDelegate::New(::TYPES[24/*Uno.Action<Uno.UX.FileSource>*/], (void*)ImageContainer__OnFilesChanged_fn, this));
         OnFilesChanged(NULL);
     }
 }
@@ -2700,7 +3158,7 @@ void ImageContainer::OnSizingChanged()
     OnParamChanged();
 
     if (_owner != NULL)
-        ::g::Fuse::Internal::IImageContainerOwner::OnSizingChanged(uInterface(uPtr(_owner), ::TYPES[22/*Fuse.Internal.IImageContainerOwner*/]));
+        ::g::Fuse::Internal::IImageContainerOwner::OnSizingChanged(uInterface(uPtr(_owner), ::TYPES[23/*Fuse.Internal.IImageContainerOwner*/]));
 }
 
 // private void OnSourceChanged(object s, object a) [instance] :198
@@ -2713,7 +3171,7 @@ void ImageContainer::OnSourceChanged(uObject* s, uObject* a)
         uPtr(SourceChanged1)->Invoke(2, this, (::g::Uno::EventArgs*)::g::Uno::EventArgs::Empty());
 
     if (_owner != NULL)
-        ::g::Fuse::Internal::IImageContainerOwner::OnSourceChanged(uInterface(uPtr(_owner), ::TYPES[22/*Fuse.Internal.IImageContainerOwner*/]));
+        ::g::Fuse::Internal::IImageContainerOwner::OnSourceChanged(uInterface(uPtr(_owner), ::TYPES[23/*Fuse.Internal.IImageContainerOwner*/]));
 }
 
 // private void OnSourceError(object s, Fuse.Resources.ImageSourceErrorArgs args) [instance] :208
@@ -2738,14 +3196,14 @@ void ImageContainer::OnUnrooted()
 void ImageContainer::add_ParamChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "add_ParamChanged(Uno.EventHandler)");
-    ParamChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(ParamChanged1, value), ::TYPES[29/*Uno.EventHandler*/]);
+    ParamChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(ParamChanged1, value), ::TYPES[30/*Uno.EventHandler*/]);
 }
 
 // public generated void remove_ParamChanged(Uno.EventHandler value) [instance] :302
 void ImageContainer::remove_ParamChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "remove_ParamChanged(Uno.EventHandler)");
-    ParamChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(ParamChanged1, value), ::TYPES[29/*Uno.EventHandler*/]);
+    ParamChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(ParamChanged1, value), ::TYPES[30/*Uno.EventHandler*/]);
 }
 
 // private void ReapplyOptions(Fuse.Resources.ImageSource src) [instance] :93
@@ -2753,23 +3211,23 @@ void ImageContainer::ReapplyOptions(::g::Fuse::Resources::ImageSource* src)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "ReapplyOptions(Fuse.Resources.ImageSource)");
     ::g::Fuse::Resources::ImageSource* ret16;
-    ::g::Fuse::Resources::FileImageSource* f = uAs< ::g::Fuse::Resources::FileImageSource*>(src, ::TYPES[24/*Fuse.Resources.FileImageSource*/]);
+    ::g::Fuse::Resources::FileImageSource* f = uAs< ::g::Fuse::Resources::FileImageSource*>(src, ::TYPES[25/*Fuse.Resources.FileImageSource*/]);
 
     if ((f != NULL) && (MemoryPolicy() != NULL))
         uPtr(f)->DefaultPolicy(MemoryPolicy());
 
-    ::g::Fuse::Resources::HttpImageSource* hf = uAs< ::g::Fuse::Resources::HttpImageSource*>(src, ::TYPES[25/*Fuse.Resources.HttpImageSource*/]);
+    ::g::Fuse::Resources::HttpImageSource* hf = uAs< ::g::Fuse::Resources::HttpImageSource*>(src, ::TYPES[26/*Fuse.Resources.HttpImageSource*/]);
 
     if ((hf != NULL) && (MemoryPolicy() != NULL))
         uPtr(hf)->DefaultPolicy(MemoryPolicy());
 
-    ::g::Fuse::Resources::MultiDensityImageSource* mf = uAs< ::g::Fuse::Resources::MultiDensityImageSource*>(Source(), ::TYPES[26/*Fuse.Resources.MultiDensityImageSource*/]);
+    ::g::Fuse::Resources::MultiDensityImageSource* mf = uAs< ::g::Fuse::Resources::MultiDensityImageSource*>(src, ::TYPES[27/*Fuse.Resources.MultiDensityImageSource*/]);
 
     if (mf != NULL)
 
-        for (uObject* enum2 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(uPtr(mf)->Sources()), ::TYPES[27/*Uno.Collections.IEnumerable<Fuse.Resources.ImageSource>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum2), ::TYPES[16/*Uno.Collections.IEnumerator*/])); )
+        for (uObject* enum2 = (uObject*)::g::Uno::Collections::IEnumerable::GetEnumerator(uInterface(uPtr(uPtr(mf)->Sources()), ::TYPES[28/*Uno.Collections.IEnumerable<Fuse.Resources.ImageSource>*/])); ::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum2), ::TYPES[17/*Uno.Collections.IEnumerator*/])); )
         {
-            ::g::Fuse::Resources::ImageSource* s = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum2), ::TYPES[28/*Uno.Collections.IEnumerator<Fuse.Resources.ImageSource>*/]), &ret16), ret16);
+            ::g::Fuse::Resources::ImageSource* s = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum2), ::TYPES[29/*Uno.Collections.IEnumerator<Fuse.Resources.ImageSource>*/]), &ret16), ret16);
             ReapplyOptions(s);
         }
 }
@@ -2807,7 +3265,7 @@ void ImageContainer::ResampleMode(int value)
     if (_resampleMode != value)
     {
         if (value == 2)
-            ::g::Fuse::Diagnostics::Deprecated(::STRINGS[5/*"ResampleMod...*/], this, ::STRINGS[3/*"/Users/eric...*/], 295, ::STRINGS[6/*"set_Resampl...*/]);
+            ::g::Fuse::Diagnostics::Deprecated(::STRINGS[5/*"ResampleMod...*/], this, ::STRINGS[3/*"/usr/local/...*/], 295, ::STRINGS[6/*"set_Resampl...*/]);
 
         _resampleMode = value;
         OnParamChanged();
@@ -2838,28 +3296,28 @@ void ImageContainer::Source(::g::Fuse::Resources::ImageSource* value)
 void ImageContainer::add_SourceChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "add_SourceChanged(Uno.EventHandler)");
-    SourceChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SourceChanged1, value), ::TYPES[29/*Uno.EventHandler*/]);
+    SourceChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SourceChanged1, value), ::TYPES[30/*Uno.EventHandler*/]);
 }
 
 // public generated void remove_SourceChanged(Uno.EventHandler value) [instance] :197
 void ImageContainer::remove_SourceChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "remove_SourceChanged(Uno.EventHandler)");
-    SourceChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SourceChanged1, value), ::TYPES[29/*Uno.EventHandler*/]);
+    SourceChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SourceChanged1, value), ::TYPES[30/*Uno.EventHandler*/]);
 }
 
 // public generated void add_SourceError(Fuse.Resources.ImageSourceErrorHandler value) [instance] :207
 void ImageContainer::add_SourceError(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "add_SourceError(Fuse.Resources.ImageSourceErrorHandler)");
-    SourceError1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SourceError1, value), ::TYPES[30/*Fuse.Resources.ImageSourceErrorHandler*/]);
+    SourceError1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(SourceError1, value), ::TYPES[31/*Fuse.Resources.ImageSourceErrorHandler*/]);
 }
 
 // public generated void remove_SourceError(Fuse.Resources.ImageSourceErrorHandler value) [instance] :207
 void ImageContainer::remove_SourceError(uDelegate* value)
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "remove_SourceError(Fuse.Resources.ImageSourceErrorHandler)");
-    SourceError1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SourceError1, value), ::TYPES[30/*Fuse.Resources.ImageSourceErrorHandler*/]);
+    SourceError1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(SourceError1, value), ::TYPES[31/*Fuse.Resources.ImageSourceErrorHandler*/]);
 }
 
 // public Fuse.Elements.StretchDirection get_StretchDirection() [instance] :330
@@ -2921,7 +3379,7 @@ void ImageContainer::UpdateSourceListen(bool forceOff)
 
     if (_source == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[2/*"Switching l...*/], this, ::STRINGS[3/*"/Users/eric...*/], 179, ::STRINGS[4/*"UpdateSourc...*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[2/*"Switching l...*/], this, ::STRINGS[3/*"/usr/local/...*/], 179, ::STRINGS[4/*"UpdateSourc...*/]);
         _isSourceListen = false;
         return;
     }
@@ -2930,13 +3388,13 @@ void ImageContainer::UpdateSourceListen(bool forceOff)
 
     if (should)
     {
-        uPtr(_source)->add_Changed(uDelegate::New(::TYPES[29/*Uno.EventHandler*/], (void*)ImageContainer__OnSourceChanged_fn, this));
-        uPtr(_source)->add_Error(uDelegate::New(::TYPES[30/*Fuse.Resources.ImageSourceErrorHandler*/], (void*)ImageContainer__OnSourceError_fn, this));
+        uPtr(_source)->add_Changed(uDelegate::New(::TYPES[30/*Uno.EventHandler*/], (void*)ImageContainer__OnSourceChanged_fn, this));
+        uPtr(_source)->add_Error(uDelegate::New(::TYPES[31/*Fuse.Resources.ImageSourceErrorHandler*/], (void*)ImageContainer__OnSourceError_fn, this));
     }
     else
     {
-        uPtr(_source)->remove_Changed(uDelegate::New(::TYPES[29/*Uno.EventHandler*/], (void*)ImageContainer__OnSourceChanged_fn, this));
-        uPtr(_source)->remove_Error(uDelegate::New(::TYPES[30/*Fuse.Resources.ImageSourceErrorHandler*/], (void*)ImageContainer__OnSourceError_fn, this));
+        uPtr(_source)->remove_Changed(uDelegate::New(::TYPES[30/*Uno.EventHandler*/], (void*)ImageContainer__OnSourceChanged_fn, this));
+        uPtr(_source)->remove_Error(uDelegate::New(::TYPES[31/*Fuse.Resources.ImageSourceErrorHandler*/], (void*)ImageContainer__OnSourceError_fn, this));
     }
 }
 
@@ -2944,7 +3402,7 @@ void ImageContainer::UpdateSourceListen(bool forceOff)
 uString* ImageContainer::Url()
 {
     uStackFrame __("Fuse.Internal.ImageContainer", "get_Url()");
-    ::g::Fuse::Resources::HttpImageSource* http = uAs< ::g::Fuse::Resources::HttpImageSource*>(Source(), ::TYPES[25/*Fuse.Resources.HttpImageSource*/]);
+    ::g::Fuse::Resources::HttpImageSource* http = uAs< ::g::Fuse::Resources::HttpImageSource*>(Source(), ::TYPES[26/*Fuse.Resources.HttpImageSource*/]);
 
     if (http == NULL)
         return NULL;
@@ -2971,60 +3429,60 @@ ImageContainer* ImageContainer::New1(uObject* owner)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
-// internal struct MiniList<T> :1516
+// internal struct MiniList<T> :1532
 // {
-// public void Insert(int index, T value) [adapter] :1537
+// public void Insert(int index, T value) [adapter] :1564
 static void MiniList__Insert_ex(uObject* __this, int* index, uObject* value)
 {
     MiniList__Insert_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, index, value);
 }
 
-// public void RemoveAt(int index) [adapter] :1571
+// public void RemoveAt(int index) [adapter] :1610
 static void MiniList__RemoveAt_ex(uObject* __this, int* index)
 {
     MiniList__RemoveAt_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, index);
 }
 
-// public T get_Item(int index) [adapter] :1606
+// public T get_Item(int index) [adapter] :1665
 static void MiniList__get_Item_ex(uObject* __this, int* index, uObject** __retval)
 {
     MiniList__get_Item_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, index, __retval);
 }
 
-// public void Clear() [adapter] :1586
+// public void Clear() [adapter] :1627
 static void MiniList__Clear_ex(uObject* __this)
 {
     MiniList__Clear_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type);
 }
 
-// public void Add(T value) [adapter] :1532
+// public void Add(T value) [adapter] :1559
 static void MiniList__Add_ex(uObject* __this, uObject* value)
 {
     MiniList__Add_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, value);
 }
 
-// public bool Remove(T value) [adapter] :1556
+// public bool Remove(T value) [adapter] :1592
 static void MiniList__Remove_ex(uObject* __this, uObject* value, bool* __retval)
 {
     MiniList__Remove_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, value, __retval);
 }
 
-// public bool Contains(T value) [adapter] :1595
+// public bool Contains(T value) [adapter] :1645
 static void MiniList__Contains_ex(uObject* __this, uObject* value, bool* __retval)
 {
     MiniList__Contains_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, value, __retval);
 }
 
-// public int get_Count() [adapter] :1522
+// public int get_Count() [adapter] :1542
 static void MiniList__get_Count_ex(uObject* __this, int* __retval)
 {
     MiniList__get_Count_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, __retval);
 }
 
-// public Uno.Collections.IEnumerator<T> GetEnumerator() [adapter] :1619
+// public Uno.Collections.IEnumerator<T> GetEnumerator() [adapter] :1686
 static void MiniList__GetEnumerator_ex(uObject* __this, uObject** __retval)
 {
     MiniList__GetEnumerator_fn((MiniList*)((uint8_t*)__this + sizeof(uObject)), __this->__type, __retval);
@@ -3034,18 +3492,19 @@ static void MiniList_build(uType* type)
 {
     ::STRINGS[7] = uString::Const("value");
     ::STRINGS[8] = uString::Const("index");
-    ::TYPES[34] = ::g::Uno::Collections::List_typeof();
     ::TYPES[35] = MiniList__Enumerator_typeof();
+    ::TYPES[36] = ::g::Fuse::Internal::ObjectList_typeof();
     type->SetPrecalc(
-        ::g::Uno::Collections::List_typeof()->MakeType(type->T(0), NULL),
-        MiniList__Enumerator_typeof()->MakeType(type->T(0), type->T(0), NULL),
+        MiniList__Enumerator_typeof()->MakeType(type->T(0), NULL),
+        ::g::Fuse::Internal::ObjectList_typeof()->MakeType(type->T(0), NULL),
         type->T(0));
     type->SetInterfaces(
         ::g::Uno::Collections::IList_typeof()->MakeType(type->T(0), NULL), offsetof(MiniList_type, interface0),
         ::g::Uno::Collections::ICollection_typeof()->MakeType(type->T(0), NULL), offsetof(MiniList_type, interface1),
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(type->T(0), NULL), offsetof(MiniList_type, interface2));
     type->SetFields(0,
-        uObject_typeof(), offsetof(::g::Fuse::Internal::MiniList, _list), 0);
+        uObject_typeof(), offsetof(::g::Fuse::Internal::MiniList, _list), 0,
+        ::g::Fuse::Internal::MiniListMode_typeof(), offsetof(::g::Fuse::Internal::MiniList, _mode), 0);
 }
 
 MiniList_type* MiniList_typeof()
@@ -3054,7 +3513,7 @@ MiniList_type* MiniList_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 1;
+    options.FieldCount = 2;
     options.GenericCount = 1;
     options.InterfaceCount = 3;
     options.PrecalcCount = 3;
@@ -3074,127 +3533,173 @@ MiniList_type* MiniList_typeof()
     return type;
 }
 
-// public void Add(T value) :1532
+// public void Add(T value) :1559
 void MiniList__Add_fn(MiniList* __this, uType* __type, uObject* value)
 {
     __this->Add(__type, value);
 }
 
-// public void Clear() :1586
+// private Fuse.Internal.ObjectList<T> get_AsList() :1535
+void MiniList__get_AsList_fn(MiniList* __this, uType* __type, ::g::Fuse::Internal::ObjectList** __retval)
+{
+    *__retval = __this->AsList(__type);
+}
+
+// public void Clear() :1627
 void MiniList__Clear_fn(MiniList* __this, uType* __type)
 {
     __this->Clear(__type);
 }
 
-// public bool Contains(T value) :1595
+// public bool Contains(T value) :1645
 void MiniList__Contains_fn(MiniList* __this, uType* __type, uObject* value, bool* __retval)
 {
     *__retval = __this->Contains(__type, value);
 }
 
-// public int get_Count() :1522
+// public int get_Count() :1542
 void MiniList__get_Count_fn(MiniList* __this, uType* __type, int* __retval)
 {
     *__retval = __this->Count(__type);
 }
 
-// public Uno.Collections.IEnumerator<T> GetEnumerator() :1619
+// public Uno.Collections.IEnumerator<T> GetEnumerator() :1686
 void MiniList__GetEnumerator_fn(MiniList* __this, uType* __type, uObject** __retval)
 {
     *__retval = __this->GetEnumerator(__type);
 }
 
-// public void Insert(int index, T value) :1537
+// public Fuse.Internal.MiniList<T>.Enumerator GetEnumeratorVersionedStruct() :1691
+void MiniList__GetEnumeratorVersionedStruct_fn(MiniList* __this, uType* __type, MiniList__Enumerator* __retval)
+{
+    *__retval = __this->GetEnumeratorVersionedStruct(__type);
+}
+
+// public void Insert(int index, T value) :1564
 void MiniList__Insert_fn(MiniList* __this, uType* __type, int* index, uObject* value)
 {
     __this->Insert(__type, *index, value);
 }
 
-// public T get_Item(int index) :1606
+// public T get_Item(int index) :1665
 void MiniList__get_Item_fn(MiniList* __this, uType* __type, int* index, uObject** __retval)
 {
     *__retval = __this->Item(__type, *index);
 }
 
-// public bool Remove(T value) :1556
+// public bool Remove(T value) :1592
 void MiniList__Remove_fn(MiniList* __this, uType* __type, uObject* value, bool* __retval)
 {
     *__retval = __this->Remove(__type, value);
 }
 
-// public void RemoveAt(int index) :1571
+// public void RemoveAt(int index) :1610
 void MiniList__RemoveAt_fn(MiniList* __this, uType* __type, int* index)
 {
     __this->RemoveAt(__type, *index);
 }
 
-// public void Add(T value) [instance] :1532
+// public void Add(T value) [instance] :1559
 void MiniList::Add(uType* __type, uObject* value)
 {
     uStackFrame __("Fuse.Internal.MiniList`1", "Add(T)");
     Insert(__type, Count(__type), value);
 }
 
-// public void Clear() [instance] :1586
+// private Fuse.Internal.ObjectList<T> get_AsList() [instance] :1535
+::g::Fuse::Internal::ObjectList* MiniList::AsList(uType* __type)
+{
+    uType* __types[] = {
+        __type->Precalced(1/*Fuse.Internal.ObjectList<T>*/),
+    };
+    uStackFrame __("Fuse.Internal.MiniList`1", "get_AsList()");
+    return uCast< ::g::Fuse::Internal::ObjectList*>(_list, __types[0]);
+}
+
+// public void Clear() [instance] :1627
 void MiniList::Clear(uType* __type)
 {
-    uType* __types[] = {
-        __type->Precalced(0/*Uno.Collections.List<T>*/),
-    };
     uStackFrame __("Fuse.Internal.MiniList`1", "Clear()");
-    ::g::Uno::Collections::List* list = uAs< ::g::Uno::Collections::List*>(_list, __types[0]);
 
-    if (list != NULL)
-        uPtr(list)->Clear();
-    else
-        _list = NULL;
+    switch (_mode)
+    {
+        case 0:
+            break;
+        case 1:
+        {
+            _list = NULL;
+            _mode = 0;
+            break;
+        }
+        case 2:
+        {
+            uPtr(AsList(__type))->Clear();
+            break;
+        }
+    }
 }
 
-// public bool Contains(T value) [instance] :1595
+// public bool Contains(T value) [instance] :1645
 bool MiniList::Contains(uType* __type, uObject* value)
 {
-    uType* __types[] = {
-        __type->Precalced(0/*Uno.Collections.List<T>*/),
-    };
     uStackFrame __("Fuse.Internal.MiniList`1", "Contains(T)");
-    bool ret1;
-    ::g::Uno::Collections::List* list = uAs< ::g::Uno::Collections::List*>(_list, __types[0]);
 
-    if (list != NULL)
-        return (::g::Uno::Collections::List__Contains_fn(uPtr(list), value, &ret1), ret1);
+    switch (_mode)
+    {
+        case 0:
+            return false;
+        case 1:
+            return ::g::Uno::Object::Equals1(_list, value);
+        case 2:
+            return uPtr(AsList(__type))->Contains(value);
+    }
 
-    return (_list != NULL) && ::g::Uno::Object::Equals1(_list, value);
+    return false;
 }
 
-// public int get_Count() [instance] :1522
+// public int get_Count() [instance] :1542
 int MiniList::Count(uType* __type)
 {
-    uType* __types[] = {
-        __type->Precalced(0/*Uno.Collections.List<T>*/),
-    };
     uStackFrame __("Fuse.Internal.MiniList`1", "get_Count()");
-    ::g::Uno::Collections::List* list = uAs< ::g::Uno::Collections::List*>(_list, __types[0]);
 
-    if (list != NULL)
-        return uPtr(list)->Count();
+    switch (_mode)
+    {
+        case 0:
+            return 0;
+        case 1:
+            return 1;
+        case 2:
+            return uPtr(AsList(__type))->Count();
+    }
 
-    return (_list == NULL) ? 0 : 1;
+    return 0;
 }
 
-// public Uno.Collections.IEnumerator<T> GetEnumerator() [instance] :1619
+// public Uno.Collections.IEnumerator<T> GetEnumerator() [instance] :1686
 uObject* MiniList::GetEnumerator(uType* __type)
 {
     uType* __types[] = {
-        __type->Precalced(1/*Fuse.Internal.MiniList<T>.Enumerator<T>*/),
+        __type->Precalced(0/*Fuse.Internal.MiniList<T>.Enumerator*/),
     };
-    return uBox(__types[0], MiniList__Enumerator__New1(__types[0], *this));
+    uStackFrame __("Fuse.Internal.MiniList`1", "GetEnumerator()");
+    return uBox(__types[0], MiniList__Enumerator__New1(__types[0], *this, false));
 }
 
-// public void Insert(int index, T value) [instance] :1537
+// public Fuse.Internal.MiniList<T>.Enumerator GetEnumeratorVersionedStruct() [instance] :1691
+MiniList__Enumerator MiniList::GetEnumeratorVersionedStruct(uType* __type)
+{
+    uType* __types[] = {
+        __type->Precalced(0/*Fuse.Internal.MiniList<T>.Enumerator*/),
+    };
+    uStackFrame __("Fuse.Internal.MiniList`1", "GetEnumeratorVersionedStruct()");
+    return MiniList__Enumerator__New1(__types[0], *this, true);
+}
+
+// public void Insert(int index, T value) [instance] :1564
 void MiniList::Insert(uType* __type, int index, uObject* value)
 {
     uType* __types[] = {
-        __type->Precalced(0/*Uno.Collections.List<T>*/),
+        __type->Precalced(1/*Fuse.Internal.ObjectList<T>*/),
         __type->Precalced(2/*T*/),
     };
     uStackFrame __("Fuse.Internal.MiniList`1", "Insert(int,T)");
@@ -3202,91 +3707,764 @@ void MiniList::Insert(uType* __type, int index, uObject* value)
     if (value == NULL)
         U_THROW(::g::Uno::ArgumentNullException::New6(::STRINGS[7/*"value"*/]));
 
-    ::g::Uno::Collections::List* list = uAs< ::g::Uno::Collections::List*>(_list, __types[0]);
-
-    if (list == NULL)
+    if (_mode == 0)
     {
-        if ((_list == NULL) && (index != 0))
+        if (index != 0)
             U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[8/*"index"*/]));
 
-        list = (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(__types[0]);
-
-        if (_list != NULL)
-            ::g::Uno::Collections::List__Add_fn(uPtr(list), uAs<uObject*>(_list, __types[1]));
-
-        _list = list;
-    }
-
-    ::g::Uno::Collections::List__Insert_fn(uPtr(list), uCRef<int>(index), value);
-}
-
-// public T get_Item(int index) [instance] :1606
-uObject* MiniList::Item(uType* __type, int index)
-{
-    uType* __types[] = {
-        __type->Precalced(0/*Uno.Collections.List<T>*/),
-        __type->Precalced(2/*T*/),
-    };
-    uStackFrame __("Fuse.Internal.MiniList`1", "get_Item(int)");
-    uObject* ret3;
-    ::g::Uno::Collections::List* list = uAs< ::g::Uno::Collections::List*>(_list, __types[0]);
-
-    if (list != NULL)
-        return (::g::Uno::Collections::List__get_Item_fn(uPtr(list), uCRef<int>(index), &ret3), ret3);
-
-    if (index != 0)
-        U_THROW(::g::Uno::IndexOutOfRangeException::New4());
-
-    return uAs<uObject*>(_list, __types[1]);
-}
-
-// public bool Remove(T value) [instance] :1556
-bool MiniList::Remove(uType* __type, uObject* value)
-{
-    uType* __types[] = {
-        __type->Precalced(0/*Uno.Collections.List<T>*/),
-    };
-    uStackFrame __("Fuse.Internal.MiniList`1", "Remove(T)");
-    bool ret2;
-
-    if ((_list != NULL) && ::g::Uno::Object::Equals1(_list, value))
-    {
-        _list = NULL;
-        return true;
-    }
-
-    ::g::Uno::Collections::List* list = uAs< ::g::Uno::Collections::List*>(_list, __types[0]);
-
-    if (list == NULL)
-        return false;
-
-    return (::g::Uno::Collections::List__Remove_fn(uPtr(list), value, &ret2), ret2);
-}
-
-// public void RemoveAt(int index) [instance] :1571
-void MiniList::RemoveAt(uType* __type, int index)
-{
-    uType* __types[] = {
-        __type->Precalced(0/*Uno.Collections.List<T>*/),
-    };
-    uStackFrame __("Fuse.Internal.MiniList`1", "RemoveAt(int)");
-    ::g::Uno::Collections::List* list = uAs< ::g::Uno::Collections::List*>(_list, __types[0]);
-
-    if (list != NULL)
-    {
-        uPtr(list)->RemoveAt(index);
+        _list = value;
+        _mode = 1;
         return;
     }
 
-    if (index != 0)
+    if (_mode == 1)
+    {
+        ::g::Fuse::Internal::ObjectList* l = (::g::Fuse::Internal::ObjectList*)::g::Fuse::Internal::ObjectList::New1(__types[0], 1);
+        l->Add(uAs<uObject*>(_list, __types[1]));
+        _list = l;
+        _mode = 2;
+    }
+
+    uPtr(AsList(__type))->Insert(index, value);
+}
+
+// public T get_Item(int index) [instance] :1665
+uObject* MiniList::Item(uType* __type, int index)
+{
+    uType* __types[] = {
+        __type->Precalced(2/*T*/),
+    };
+    uStackFrame __("Fuse.Internal.MiniList`1", "get_Item(int)");
+
+    switch (_mode)
+    {
+        case 0:
+            U_THROW(::g::Uno::IndexOutOfRangeException::New4());
+        case 1:
+        {
+            if (index != 0)
+                U_THROW(::g::Uno::IndexOutOfRangeException::New4());
+
+            return uAs<uObject*>(_list, __types[0]);
+        }
+        case 2:
+            return (uObject*)uPtr(AsList(__type))->Item(index);
+    }
+
+    return NULL;
+}
+
+// public bool Remove(T value) [instance] :1592
+bool MiniList::Remove(uType* __type, uObject* value)
+{
+    uStackFrame __("Fuse.Internal.MiniList`1", "Remove(T)");
+
+    if (_mode == 0)
+        return false;
+
+    if (_mode == 1)
+    {
+        if (!::g::Uno::Object::Equals1(_list, value))
+            return false;
+
+        _list = NULL;
+        _mode = 0;
+        return true;
+    }
+
+    return uPtr(AsList(__type))->Remove(value);
+}
+
+// public void RemoveAt(int index) [instance] :1610
+void MiniList::RemoveAt(uType* __type, int index)
+{
+    uStackFrame __("Fuse.Internal.MiniList`1", "RemoveAt(int)");
+
+    if (_mode == 0)
         U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[8/*"index"*/]));
 
-    _list = NULL;
+    if (_mode == 1)
+    {
+        if (index != 0)
+            U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[8/*"index"*/]));
+
+        _mode = 0;
+        _list = NULL;
+        return;
+    }
+
+    uPtr(AsList(__type))->RemoveAt(index);
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
+
+// internal enum MiniListMode :1516
+uEnumType* MiniListMode_typeof()
+{
+    static uSStrong<uEnumType*> type;
+    if (type != NULL) return type;
+
+    type = uEnumType::New("Fuse.Internal.MiniListMode", ::g::Uno::Int_typeof(), 3);
+    type->SetLiterals(
+        "Empty", 0LL,
+        "Single", 1LL,
+        "List", 2LL);
+    return type;
+}
+
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
+
+// private struct ObjectList<T>.Node :1794
+// {
+static void ObjectList__Node_build(uType* type)
+{
+    type->SetFields(0,
+        type->T(0), offsetof(::g::Fuse::Internal::ObjectList__Node, Value), 0,
+        ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Internal::ObjectList__Node, Next), 0,
+        ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Internal::ObjectList__Node, Prev), 0,
+        ::g::Uno::SByte_typeof(), offsetof(::g::Fuse::Internal::ObjectList__Node, AddVersion), 0,
+        ::g::Uno::SByte_typeof(), offsetof(::g::Fuse::Internal::ObjectList__Node, RemoveVersion), 0,
+        ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Internal::ObjectList__Node, Ordered), 0);
+}
+
+uStructType* ObjectList__Node_typeof()
+{
+    static uSStrong<uStructType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.FieldCount = 6;
+    options.GenericCount = 1;
+    options.ValueSize = sizeof(ObjectList__Node);
+    options.TypeSize = sizeof(uStructType);
+    type = uStructType::New("Fuse.Internal.ObjectList`1.Node", options);
+    type->fp_build_ = ObjectList__Node_build;
+    return type;
+}
+
+// public void Clear() :1808
+void ObjectList__Node__Clear_fn(ObjectList__Node* __this, uType* __type)
+{
+    __this->Clear(__type);
+}
+
+// public void Clear() [instance] :1808
+void ObjectList__Node::Clear(uType* __type)
+{
+    Next = -1;
+    Prev = -1;
+    AddVersion = 0;
+    RemoveVersion = -1;
+    Value = NULL;
+}
+// }
+
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
+
+// internal sealed class ObjectList<T> :1792
+// {
+static void ObjectList_build(uType* type)
+{
+    ::STRINGS[9] = uString::Const("invalid Grow");
+    ::STRINGS[10] = uString::Const("unexpected _free==-1");
+    ::STRINGS[8] = uString::Const("index");
+    ::STRINGS[11] = uString::Const("excessive iteration starts");
+    ::STRINGS[12] = uString::Const("invalid call to Unlock");
+    ::TYPES[37] = ObjectList__EnumeratorClass_typeof();
+    ::TYPES[11] = ObjectList__Enumerator_typeof();
+    ::TYPES[38] = uObject_typeof()->Array();
+    ::TYPES[39] = ObjectList__Node_typeof();
+    type->SetPrecalc(
+        ObjectList__EnumeratorClass_typeof()->MakeType(type->T(0), NULL),
+        ObjectList__Enumerator_typeof()->MakeType(type->T(0), NULL),
+        ObjectList__Node_typeof()->MakeType(type->T(0), NULL)->Array(),
+        ObjectList__Node_typeof()->MakeType(type->T(0), NULL));
+    type->SetInterfaces(
+        ::g::Uno::Collections::IList_typeof()->MakeType(type->T(0), NULL), offsetof(ObjectList_type, interface0),
+        ::g::Uno::Collections::ICollection_typeof()->MakeType(type->T(0), NULL), offsetof(ObjectList_type, interface1),
+        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(type->T(0), NULL), offsetof(ObjectList_type, interface2));
+    type->SetFields(0,
+        ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Internal::ObjectList, _capacity), 0,
+        ObjectList__Equality_typeof(), offsetof(::g::Fuse::Internal::ObjectList, _equality), 0,
+        ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Internal::ObjectList, _free), 0,
+        ::g::Uno::SByte_typeof(), offsetof(::g::Fuse::Internal::ObjectList, _lockCount), 0,
+        ::g::Uno::SByte_typeof(), offsetof(::g::Fuse::Internal::ObjectList, _lockVersion), 0,
+        ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Internal::ObjectList, _nodeHead), 0,
+        ::TYPES[39/*Fuse.Internal.ObjectList`1.Node*/]->MakeType(type->T(0), NULL)->Array(), offsetof(::g::Fuse::Internal::ObjectList, _nodes), 0,
+        ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Internal::ObjectList, _nodeTail), 0,
+        ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Internal::ObjectList, _ordered), 0,
+        ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Internal::ObjectList, _size), 0);
+}
+
+ObjectList_type* ObjectList_typeof()
+{
+    static uSStrong<ObjectList_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.FieldCount = 10;
+    options.GenericCount = 1;
+    options.InterfaceCount = 3;
+    options.PrecalcCount = 4;
+    options.ObjectSize = sizeof(ObjectList);
+    options.TypeSize = sizeof(ObjectList_type);
+    type = (ObjectList_type*)uClassType::New("Fuse.Internal.ObjectList`1", options);
+    type->fp_build_ = ObjectList_build;
+    type->interface0.fp_Insert = (void(*)(uObject*, int*, void*))ObjectList__Insert_fn;
+    type->interface0.fp_RemoveAt = (void(*)(uObject*, int*))ObjectList__RemoveAt_fn;
+    type->interface0.fp_get_Item = (void(*)(uObject*, int*, uTRef))ObjectList__get_Item_fn;
+    type->interface1.fp_Clear = (void(*)(uObject*))ObjectList__Clear_fn;
+    type->interface1.fp_Add = (void(*)(uObject*, void*))ObjectList__Add_fn;
+    type->interface1.fp_Remove = (void(*)(uObject*, void*, bool*))ObjectList__Remove_fn;
+    type->interface1.fp_Contains = (void(*)(uObject*, void*, bool*))ObjectList__Contains_fn;
+    type->interface1.fp_get_Count = (void(*)(uObject*, int*))ObjectList__get_Count_fn;
+    type->interface2.fp_GetEnumerator = (void(*)(uObject*, uObject**))ObjectList__GetEnumerator_fn;
+    return type;
+}
+
+// public ObjectList([Fuse.Internal.ObjectList<T>.Equality equality]) :1847
+void ObjectList__ctor__fn(ObjectList* __this, int* equality)
+{
+    __this->ctor_(*equality);
+}
+
+// public void Add(T value) :1858
+void ObjectList__Add_fn(ObjectList* __this, uObject* value)
+{
+    __this->Add(value);
+}
+
+// private int AllocNext() :1903
+void ObjectList__AllocNext_fn(ObjectList* __this, int* __retval)
+{
+    *__retval = __this->AllocNext();
+}
+
+// private void CleanupVersion() :2298
+void ObjectList__CleanupVersion_fn(ObjectList* __this)
+{
+    __this->CleanupVersion();
+}
+
+// public void Clear() :2044
+void ObjectList__Clear_fn(ObjectList* __this)
+{
+    __this->Clear();
+}
+
+// private void CollapseNode(int q) :2022
+void ObjectList__CollapseNode_fn(ObjectList* __this, int* q)
+{
+    __this->CollapseNode(*q);
+}
+
+// public bool Contains(T value) :2060
+void ObjectList__Contains_fn(ObjectList* __this, uObject* value, bool* __retval)
+{
+    *__retval = __this->Contains(value);
+}
+
+// public int get_Count() :1855
+void ObjectList__get_Count_fn(ObjectList* __this, int* __retval)
+{
+    *__retval = __this->Count();
+}
+
+// private bool Equals(T a, T b) :2065
+void ObjectList__Equals2_fn(ObjectList* __this, uObject* a, uObject* b, bool* __retval)
+{
+    *__retval = __this->Equals2(a, b);
+}
+
+// public Uno.Collections.IEnumerator<T> GetEnumerator() :2125
+void ObjectList__GetEnumerator_fn(ObjectList* __this, uObject** __retval)
+{
+    *__retval = __this->GetEnumerator();
+}
+
+// internal Fuse.Internal.ObjectList<T>.Enumerator GetEnumeratorStruct(bool versionLock) :2155
+void ObjectList__GetEnumeratorStruct_fn(ObjectList* __this, bool* versionLock, ObjectList__Enumerator* __retval)
+{
+    *__retval = __this->GetEnumeratorStruct(*versionLock);
+}
+
+// public Fuse.Internal.ObjectList<T>.Enumerator GetEnumeratorVersionedStruct() :2160
+void ObjectList__GetEnumeratorVersionedStruct_fn(ObjectList* __this, ObjectList__Enumerator* __retval)
+{
+    *__retval = __this->GetEnumeratorVersionedStruct();
+}
+
+// private void Grow(int ncap) :1881
+void ObjectList__Grow_fn(ObjectList* __this, int* ncap)
+{
+    __this->Grow(*ncap);
+}
+
+// public void Insert(int index, T value) :1968
+void ObjectList__Insert_fn(ObjectList* __this, int* index, uObject* value)
+{
+    __this->Insert(*index, value);
+}
+
+// public T get_Item(int index) :2109
+void ObjectList__get_Item_fn(ObjectList* __this, int* index, uObject** __retval)
+{
+    *__retval = __this->Item(*index);
+}
+
+// private sbyte Lock() :2274
+void ObjectList__Lock_fn(ObjectList* __this, int8_t* __retval)
+{
+    *__retval = __this->Lock();
+}
+
+// public ObjectList New([Fuse.Internal.ObjectList<T>.Equality equality]) :1847
+void ObjectList__New1_fn(uType* __type, int* equality, ObjectList** __retval)
+{
+    *__retval = ObjectList::New1(__type, *equality);
+}
+
+// private int NodeAt(int index) :2085
+void ObjectList__NodeAt_fn(ObjectList* __this, int* index, int* __retval)
+{
+    *__retval = __this->NodeAt(*index);
+}
+
+// private int NodeFor(T value) :2072
+void ObjectList__NodeFor_fn(ObjectList* __this, uObject* value, int* __retval)
+{
+    *__retval = __this->NodeFor(value);
+}
+
+// private void Order() :1923
+void ObjectList__Order_fn(ObjectList* __this)
+{
+    __this->Order();
+}
+
+// public bool Remove(T value) :1998
+void ObjectList__Remove_fn(ObjectList* __this, uObject* value, bool* __retval)
+{
+    *__retval = __this->Remove(value);
+}
+
+// public void RemoveAt(int index) :2039
+void ObjectList__RemoveAt_fn(ObjectList* __this, int* index)
+{
+    __this->RemoveAt(*index);
+}
+
+// private void RemoveNode(int q) :2007
+void ObjectList__RemoveNode_fn(ObjectList* __this, int* q)
+{
+    __this->RemoveNode(*q);
+}
+
+// private void Unalloc(int q) :1914
+void ObjectList__Unalloc_fn(ObjectList* __this, int* q)
+{
+    __this->Unalloc(*q);
+}
+
+// private void Unlock() :2288
+void ObjectList__Unlock_fn(ObjectList* __this)
+{
+    __this->Unlock();
+}
+
+// public ObjectList([Fuse.Internal.ObjectList<T>.Equality equality]) [instance] :1847
+void ObjectList::ctor_(int equality)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", ".ctor([Fuse.Internal.ObjectList<T>.Equality])");
+    _nodeHead = -1;
+    _nodeTail = -1;
+    _free = -1;
+    _lockVersion = 0;
+    _lockCount = 0;
+    _equality = equality;
+    Grow(8);
+}
+
+// public void Add(T value) [instance] :1858
+void ObjectList::Add(uObject* value)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "Add(T)");
+    int q = AllocNext();
+    _ordered = false;
+
+    if (_nodeHead == -1)
+    {
+        uPtr(_nodes)->Item<ObjectList__Node>(q).Value = value;
+        uPtr(_nodes)->Item<ObjectList__Node>(q).AddVersion = _lockVersion;
+        _nodeHead = q;
+        _nodeTail = q;
+        _size++;
+        return;
+    }
+
+    uPtr(_nodes)->Item<ObjectList__Node>(_nodeTail).Next = q;
+    uPtr(_nodes)->Item<ObjectList__Node>(q).Prev = _nodeTail;
+    uPtr(_nodes)->Item<ObjectList__Node>(q).Value = value;
+    uPtr(_nodes)->Item<ObjectList__Node>(q).AddVersion = _lockVersion;
+    _nodeTail = q;
+    _size++;
+}
+
+// private int AllocNext() [instance] :1903
+int ObjectList::AllocNext()
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "AllocNext()");
+
+    if (_free == -1)
+        Grow(_capacity * 2);
+
+    int q = _free;
+    _free = uPtr(_nodes)->Item<ObjectList__Node>(q).Next;
+    uPtr(_nodes)->Item<ObjectList__Node>(q).Next = -1;
+    return q;
+}
+
+// private void CleanupVersion() [instance] :2298
+void ObjectList::CleanupVersion()
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "CleanupVersion()");
+    _lockVersion = 0;
+    int n = _nodeHead;
+
+    while (n != -1)
+    {
+        int p = n;
+        n = uPtr(_nodes)->Item<ObjectList__Node>(n).Next;
+        uPtr(_nodes)->Item<ObjectList__Node>(p).AddVersion = 0;
+
+        if (uPtr(_nodes)->Item<ObjectList__Node>(p).RemoveVersion != -1)
+            CollapseNode(p);
+    }
+}
+
+// public void Clear() [instance] :2044
+void ObjectList::Clear()
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "Clear()");
+    int q = _nodeHead;
+
+    while (q != -1)
+    {
+        int n = uPtr(_nodes)->Item<ObjectList__Node>(q).Next;
+        Unalloc(q);
+        q = n;
+    }
+
+    _size = 0;
+    _nodeHead = -1;
+    _nodeTail = -1;
+    _ordered = false;
+}
+
+// private void CollapseNode(int q) [instance] :2022
+void ObjectList::CollapseNode(int q)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "CollapseNode(int)");
+    int p = uPtr(_nodes)->Item<ObjectList__Node>(q).Prev;
+
+    if (p != -1)
+        uPtr(_nodes)->Item<ObjectList__Node>(p).Next = uPtr(_nodes)->Item<ObjectList__Node>(q).Next;
+    else
+        _nodeHead = uPtr(_nodes)->Item<ObjectList__Node>(q).Next;
+
+    int n = uPtr(_nodes)->Item<ObjectList__Node>(q).Next;
+
+    if (n != -1)
+        uPtr(_nodes)->Item<ObjectList__Node>(n).Prev = uPtr(_nodes)->Item<ObjectList__Node>(q).Prev;
+    else
+        _nodeTail = uPtr(_nodes)->Item<ObjectList__Node>(q).Prev;
+
+    Unalloc(q);
+}
+
+// public bool Contains(T value) [instance] :2060
+bool ObjectList::Contains(uObject* value)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "Contains(T)");
+    return NodeFor(value) != -1;
+}
+
+// public int get_Count() [instance] :1855
+int ObjectList::Count()
+{
+    return _size;
+}
+
+// private bool Equals(T a, T b) [instance] :2065
+bool ObjectList::Equals2(uObject* a, uObject* b)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "Equals(T,T)");
+
+    if (_equality == 0)
+        return a == b;
+
+    return ::g::Uno::Object::Equals1(a, b);
+}
+
+// public Uno.Collections.IEnumerator<T> GetEnumerator() [instance] :2125
+uObject* ObjectList::GetEnumerator()
+{
+    uType* __types[] = {
+        __type->Precalced(0/*Fuse.Internal.ObjectList<T>.EnumeratorClass*/),
+    };
+    uStackFrame __("Fuse.Internal.ObjectList`1", "GetEnumerator()");
+    return (uObject*)ObjectList__EnumeratorClass::New1(__types[0], this);
+}
+
+// internal Fuse.Internal.ObjectList<T>.Enumerator GetEnumeratorStruct(bool versionLock) [instance] :2155
+ObjectList__Enumerator ObjectList::GetEnumeratorStruct(bool versionLock)
+{
+    uType* __types[] = {
+        __type->Precalced(1/*Fuse.Internal.ObjectList<T>.Enumerator*/),
+    };
+    uStackFrame __("Fuse.Internal.ObjectList`1", "GetEnumeratorStruct(bool)");
+    return ObjectList__Enumerator__New1(__types[0], this, versionLock);
+}
+
+// public Fuse.Internal.ObjectList<T>.Enumerator GetEnumeratorVersionedStruct() [instance] :2160
+ObjectList__Enumerator ObjectList::GetEnumeratorVersionedStruct()
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "GetEnumeratorVersionedStruct()");
+    return GetEnumeratorStruct(true);
+}
+
+// private void Grow(int ncap) [instance] :1881
+void ObjectList::Grow(int ncap)
+{
+    uType* __types[] = {
+        __type->Precalced(2/*Fuse.Internal.ObjectList<T>.Node[]*/),
+        __type->Precalced(3/*Fuse.Internal.ObjectList<T>.Node*/),
+    };
+    uStackFrame __("Fuse.Internal.ObjectList`1", "Grow(int)");
+
+    if (ncap < (_capacity + 1))
+        U_THROW(::g::Uno::Exception::New2(::STRINGS[9/*"invalid Grow"*/]));
+
+    uArray* next = uArray::New(__types[0], ncap);
+
+    for (int i = 0; i < _capacity; ++i)
+        uPtr(next)->Item<ObjectList__Node>(i) = uPtr(_nodes)->Item<ObjectList__Node>(i);
+
+    for (int i1 = _capacity; i1 < ncap; ++i1)
+    {
+        uPtr(next)->Item<ObjectList__Node>(i1).Clear(__types[1]);
+        next->Item<ObjectList__Node>(i1).Next = _free;
+        _free = i1;
+    }
+
+    if (_free == -1)
+        U_THROW(::g::Uno::Exception::New2(::STRINGS[10/*"unexpected ...*/]));
+
+    _nodes = next;
+    _capacity = ncap;
+}
+
+// public void Insert(int index, T value) [instance] :1968
+void ObjectList::Insert(int index, uObject* value)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "Insert(int,T)");
+
+    if ((index < 0) || (index > _size))
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[8/*"index"*/]));
+
+    if ((_nodeHead == -1) || (index == _size))
+    {
+        Add(value);
+        return;
+    }
+
+    int cur = NodeAt(index);
+    int nu = AllocNext();
+    _ordered = false;
+    int p = uPtr(_nodes)->Item<ObjectList__Node>(cur).Prev;
+
+    if (p != -1)
+        uPtr(_nodes)->Item<ObjectList__Node>(p).Next = nu;
+    else
+        _nodeHead = nu;
+
+    uPtr(_nodes)->Item<ObjectList__Node>(cur).Prev = nu;
+    uPtr(_nodes)->Item<ObjectList__Node>(nu).Prev = p;
+    uPtr(_nodes)->Item<ObjectList__Node>(nu).Next = cur;
+    uPtr(_nodes)->Item<ObjectList__Node>(nu).Value = value;
+    uPtr(_nodes)->Item<ObjectList__Node>(nu).AddVersion = _lockVersion;
+    _size++;
+}
+
+// public T get_Item(int index) [instance] :2109
+uObject* ObjectList::Item(int index)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "get_Item(int)");
+
+    if (_lockVersion > 0)
+        return uPtr(_nodes)->Item<ObjectList__Node>(NodeAt(index)).Value;
+
+    if ((index < 0) || (index >= _size))
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[8/*"index"*/]));
+
+    if (!_ordered)
+        Order();
+
+    return uPtr(_nodes)->Item<ObjectList__Node>(uPtr(_nodes)->Item<ObjectList__Node>(index).Ordered).Value;
+}
+
+// private sbyte Lock() [instance] :2274
+int8_t ObjectList::Lock()
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "Lock()");
+
+    if (_lockVersion == 127)
+        U_THROW(::g::Uno::Exception::New2(::STRINGS[11/*"excessive i...*/]));
+
+    _lockCount++;
+    return _lockVersion++;
+}
+
+// private int NodeAt(int index) [instance] :2085
+int ObjectList::NodeAt(int index)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "NodeAt(int)");
+
+    if (index < 0)
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[8/*"index"*/]));
+
+    int n = _nodeHead;
+
+    while (n != -1)
+    {
+        if (uPtr(_nodes)->Item<ObjectList__Node>(n).RemoveVersion == -1)
+            index--;
+
+        if (index < 0)
+            break;
+
+        n = uPtr(_nodes)->Item<ObjectList__Node>(n).Next;
+    }
+
+    if (n == -1)
+        U_THROW(::g::Uno::ArgumentOutOfRangeException::New6(::STRINGS[8/*"index"*/]));
+
+    return n;
+}
+
+// private int NodeFor(T value) [instance] :2072
+int ObjectList::NodeFor(uObject* value)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "NodeFor(T)");
+    int n = _nodeHead;
+
+    while (n != -1)
+    {
+        if (Equals2(uPtr(_nodes)->Item<ObjectList__Node>(n).Value, value))
+            return n;
+
+        n = uPtr(_nodes)->Item<ObjectList__Node>(n).Next;
+    }
+
+    return -1;
+}
+
+// private void Order() [instance] :1923
+void ObjectList::Order()
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "Order()");
+    int c = 0;
+    int n = _nodeHead;
+
+    while (n != -1)
+    {
+        uPtr(_nodes)->Item<ObjectList__Node>(c).Ordered = n;
+        n = uPtr(_nodes)->Item<ObjectList__Node>(n).Next;
+        c++;
+    }
+
+    _ordered = true;
+}
+
+// public bool Remove(T value) [instance] :1998
+bool ObjectList::Remove(uObject* value)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "Remove(T)");
+    int q = NodeFor(value);
+
+    if (q == -1)
+        return false;
+
+    RemoveNode(q);
+    return true;
+}
+
+// public void RemoveAt(int index) [instance] :2039
+void ObjectList::RemoveAt(int index)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "RemoveAt(int)");
+    RemoveNode(NodeAt(index));
+}
+
+// private void RemoveNode(int q) [instance] :2007
+void ObjectList::RemoveNode(int q)
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "RemoveNode(int)");
+
+    if (_lockVersion > 0)
+    {
+        uPtr(_nodes)->Item<ObjectList__Node>(q).RemoveVersion = _lockVersion;
+        _ordered = false;
+        _size--;
+        return;
+    }
+
+    CollapseNode(q);
+    _ordered = false;
+    _size--;
+}
+
+// private void Unalloc(int q) [instance] :1914
+void ObjectList::Unalloc(int q)
+{
+    uType* __types[] = {
+        __type->Precalced(3/*Fuse.Internal.ObjectList<T>.Node*/),
+    };
+    uStackFrame __("Fuse.Internal.ObjectList`1", "Unalloc(int)");
+    _ordered = false;
+    uPtr(_nodes)->Item<ObjectList__Node>(q).Clear(__types[0]);
+    uPtr(_nodes)->Item<ObjectList__Node>(q).Next = _free;
+    _free = q;
+}
+
+// private void Unlock() [instance] :2288
+void ObjectList::Unlock()
+{
+    uStackFrame __("Fuse.Internal.ObjectList`1", "Unlock()");
+    _lockCount--;
+
+    if (_lockCount < 0)
+        U_THROW(::g::Uno::Exception::New2(::STRINGS[12/*"invalid cal...*/]));
+
+    if (_lockCount == 0)
+        CleanupVersion();
+}
+
+// public ObjectList New([Fuse.Internal.ObjectList<T>.Equality equality]) [static] :1847
+ObjectList* ObjectList::New1(uType* __type, int equality)
+{
+    ObjectList* obj1 = (ObjectList*)uNew(__type);
+    obj1->ctor_(equality);
+    return obj1;
+}
+// }
+
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // public delegate float4 Curves.PointInterpolater(float4 p0, float4 p1, float4 m0, float4 m1, float t) :877
 uDelegateType* Curves__PointInterpolater_typeof()
@@ -3304,16 +4482,16 @@ uDelegateType* Curves__PointInterpolater_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
-// internal sealed class RectPacker :1807
+// internal sealed class RectPacker :2469
 // {
 static void RectPacker_build(uType* type)
 {
-    ::TYPES[36] = ::g::Uno::Collections::LinkedList_typeof()->MakeType(::g::Fuse::Internal::SkylineNode_typeof(), NULL);
+    ::TYPES[40] = ::g::Uno::Collections::LinkedList_typeof()->MakeType(::g::Fuse::Internal::SkylineNode_typeof(), NULL);
     type->SetFields(0,
-        ::TYPES[36/*Uno.Collections.LinkedList<Fuse.Internal.SkylineNode>*/], offsetof(::g::Fuse::Internal::RectPacker, _skyline), 0,
+        ::TYPES[40/*Uno.Collections.LinkedList<Fuse.Internal.SkylineNode>*/], offsetof(::g::Fuse::Internal::RectPacker, _skyline), 0,
         ::g::Uno::Int2_typeof(), offsetof(::g::Fuse::Internal::RectPacker, _Size), 0);
 }
 
@@ -3331,65 +4509,65 @@ uType* RectPacker_typeof()
     return type;
 }
 
-// public RectPacker(int2 size) :1812
+// public RectPacker(int2 size) :2474
 void RectPacker__ctor__fn(RectPacker* __this, ::g::Uno::Int2* size)
 {
     __this->ctor_(*size);
 }
 
-// private void MergeNeighbours(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node) :1898
+// private void MergeNeighbours(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node) :2560
 void RectPacker__MergeNeighbours_fn(RectPacker* __this, ::g::Uno::Collections::LinkedListNode* node)
 {
     __this->MergeNeighbours(node);
 }
 
-// public RectPacker New(int2 size) :1812
+// public RectPacker New(int2 size) :2474
 void RectPacker__New1_fn(::g::Uno::Int2* size, RectPacker** __retval)
 {
     *__retval = RectPacker::New1(*size);
 }
 
-// private void ReplaceNodes(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, Fuse.Internal.SkylineNode newSkyline) :1872
+// private void ReplaceNodes(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, Fuse.Internal.SkylineNode newSkyline) :2534
 void RectPacker__ReplaceNodes_fn(RectPacker* __this, ::g::Uno::Collections::LinkedListNode* node, ::g::Fuse::Internal::SkylineNode* newSkyline)
 {
     __this->ReplaceNodes(node, *newSkyline);
 }
 
-// public generated int2 get_Size() :1809
+// public generated int2 get_Size() :2471
 void RectPacker__get_Size_fn(RectPacker* __this, ::g::Uno::Int2* __retval)
 {
     *__retval = __this->Size();
 }
 
-// private generated void set_Size(int2 value) :1809
+// private generated void set_Size(int2 value) :2471
 void RectPacker__set_Size_fn(RectPacker* __this, ::g::Uno::Int2* value)
 {
     __this->Size(*value);
 }
 
-// public bool TryAdd(int2 size, Uno.Recti& rect) :1819
+// public bool TryAdd(int2 size, Uno.Recti& rect) :2481
 void RectPacker__TryAdd_fn(RectPacker* __this, ::g::Uno::Int2* size, ::g::Uno::Recti* rect, bool* __retval)
 {
     *__retval = __this->TryAdd(*size, rect);
 }
 
-// private bool TryFit(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, int2 size, int& height) :1855
+// private bool TryFit(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, int2 size, int& height) :2517
 void RectPacker__TryFit_fn(RectPacker* __this, ::g::Uno::Collections::LinkedListNode* node, ::g::Uno::Int2* size, int* height, bool* __retval)
 {
     *__retval = __this->TryFit(node, *size, height);
 }
 
-// public RectPacker(int2 size) [instance] :1812
+// public RectPacker(int2 size) [instance] :2474
 void RectPacker::ctor_(::g::Uno::Int2 size)
 {
     uStackFrame __("Fuse.Internal.RectPacker", ".ctor(int2)");
     ::g::Uno::Collections::LinkedListNode* ret2;
     Size(size);
-    _skyline = ((::g::Uno::Collections::LinkedList*)::g::Uno::Collections::LinkedList::New1(::TYPES[36/*Uno.Collections.LinkedList<Fuse.Internal.SkylineNode>*/]));
+    _skyline = ((::g::Uno::Collections::LinkedList*)::g::Uno::Collections::LinkedList::New1(::TYPES[40/*Uno.Collections.LinkedList<Fuse.Internal.SkylineNode>*/]));
     ::g::Uno::Collections::LinkedList__AddFirst_fn(uPtr(_skyline), uCRef(::g::Fuse::Internal::SkylineNode__New1(::g::Uno::Int2__New1(0), Size().X)), &ret2);
 }
 
-// private void MergeNeighbours(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node) [instance] :1898
+// private void MergeNeighbours(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node) [instance] :2560
 void RectPacker::MergeNeighbours(::g::Uno::Collections::LinkedListNode* node)
 {
     uStackFrame __("Fuse.Internal.RectPacker", "MergeNeighbours(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode>)");
@@ -3428,7 +4606,7 @@ void RectPacker::MergeNeighbours(::g::Uno::Collections::LinkedListNode* node)
     }
 }
 
-// private void ReplaceNodes(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, Fuse.Internal.SkylineNode newSkyline) [instance] :1872
+// private void ReplaceNodes(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, Fuse.Internal.SkylineNode newSkyline) [instance] :2534
 void RectPacker::ReplaceNodes(::g::Uno::Collections::LinkedListNode* node, ::g::Fuse::Internal::SkylineNode newSkyline)
 {
     uStackFrame __("Fuse.Internal.RectPacker", "ReplaceNodes(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode>,Fuse.Internal.SkylineNode)");
@@ -3458,19 +4636,19 @@ void RectPacker::ReplaceNodes(::g::Uno::Collections::LinkedListNode* node, ::g::
     MergeNeighbours(newNode);
 }
 
-// public generated int2 get_Size() [instance] :1809
+// public generated int2 get_Size() [instance] :2471
 ::g::Uno::Int2 RectPacker::Size()
 {
     return _Size;
 }
 
-// private generated void set_Size(int2 value) [instance] :1809
+// private generated void set_Size(int2 value) [instance] :2471
 void RectPacker::Size(::g::Uno::Int2 value)
 {
     _Size = value;
 }
 
-// public bool TryAdd(int2 size, Uno.Recti& rect) [instance] :1819
+// public bool TryAdd(int2 size, Uno.Recti& rect) [instance] :2481
 bool RectPacker::TryAdd(::g::Uno::Int2 size, ::g::Uno::Recti* rect)
 {
     uStackFrame __("Fuse.Internal.RectPacker", "TryAdd(int2,Uno.Recti&)");
@@ -3509,7 +4687,7 @@ bool RectPacker::TryAdd(::g::Uno::Int2 size, ::g::Uno::Recti* rect)
     }
 }
 
-// private bool TryFit(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, int2 size, int& height) [instance] :1855
+// private bool TryFit(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode> node, int2 size, int& height) [instance] :2517
 bool RectPacker::TryFit(::g::Uno::Collections::LinkedListNode* node, ::g::Uno::Int2 size, int* height)
 {
     uStackFrame __("Fuse.Internal.RectPacker", "TryFit(Uno.Collections.LinkedListNode<Fuse.Internal.SkylineNode>,int2,int&)");
@@ -3536,7 +4714,7 @@ bool RectPacker::TryFit(::g::Uno::Collections::LinkedListNode* node, ::g::Uno::I
     return false;
 }
 
-// public RectPacker New(int2 size) [static] :1812
+// public RectPacker New(int2 size) [static] :2474
 RectPacker* RectPacker::New1(::g::Uno::Int2 size)
 {
     RectPacker* obj1 = (RectPacker*)uNew(RectPacker_typeof());
@@ -3545,8 +4723,8 @@ RectPacker* RectPacker::New1(::g::Uno::Int2 size)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // internal abstract class ScalarBlender<T> :366
 // {
@@ -3583,8 +4761,8 @@ void ScalarBlender::ctor_1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // internal sealed class Size2Blender :347
 // {
@@ -3634,7 +4812,7 @@ void Size2Blender__Add_fn(Size2Blender* __this, ::g::Uno::UX::Size2* a, ::g::Uno
 void Size2Blender__Length_fn(Size2Blender* __this, ::g::Uno::UX::Size2* a, double* __retval)
 {
     ::g::Uno::UX::Size2 a_ = *a;
-    return *__retval = (double)::g::Uno::Vector::Length(::g::Uno::UX::Size2__op_Explicit(a_)), void();
+    return *__retval = (double)::g::Uno::Vector::Length(::g::Uno::UX::Size2__op_Explicit1(a_)), void();
 }
 
 // public override sealed Uno.UX.Size2 Lerp(Uno.UX.Size2 a, Uno.UX.Size2 b, double d) :352
@@ -3670,8 +4848,8 @@ void Size2Blender__Sub_fn(Size2Blender* __this, ::g::Uno::UX::Size2* a, ::g::Uno
 void Size2Blender__ToUnit_fn(Size2Blender* __this, ::g::Uno::UX::Size2* a, double* length, ::g::Uno::UX::Size2* __retval)
 {
     ::g::Uno::UX::Size2 a_ = *a;
-    *length = (double)::g::Uno::Vector::Length(::g::Uno::UX::Size2__op_Explicit(a_));
-    ::g::Uno::Float2 v = ::g::Uno::Vector::Normalize(::g::Uno::UX::Size2__op_Explicit(a_));
+    *length = (double)::g::Uno::Vector::Length(::g::Uno::UX::Size2__op_Explicit1(a_));
+    ::g::Uno::Float2 v = ::g::Uno::Vector::Normalize(::g::Uno::UX::Size2__op_Explicit1(a_));
     ::g::Uno::UX::Size x = a_.X;
     ::g::Uno::UX::Size y = a_.Y;
     return *__retval = ::g::Uno::UX::Size2__New1(::g::Uno::UX::Size__New1(v.X, x.Unit), ::g::Uno::UX::Size__New1(v.Y, y.Unit)), void();
@@ -3706,8 +4884,8 @@ Size2Blender* Size2Blender::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
 // internal sealed class SizeBlender :331
 // {
@@ -3826,8 +5004,8 @@ SizeBlender* SizeBlender::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/internal/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/internal/$.uno
+// ----------------------------------------------------------------
 
 // internal sealed class SizingContainer :396
 // {
@@ -3864,7 +5042,7 @@ void SizingContainer__ctor__fn(SizingContainer* __this)
     __this->ctor_();
 }
 
-// public float4 CalcClip(float2 availableSize, float2& origin, float2& contentActualSize) :620
+// public float4 CalcClip(float2 availableSize, float2& origin, float2& contentActualSize) :621
 void SizingContainer__CalcClip_fn(SizingContainer* __this, ::g::Uno::Float2* availableSize, ::g::Uno::Float2* origin, ::g::Uno::Float2* contentActualSize, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->CalcClip(*availableSize, origin, contentActualSize);
@@ -3876,7 +5054,7 @@ void SizingContainer__CalcContentSize_fn(SizingContainer* __this, ::g::Uno::Floa
     *__retval = __this->CalcContentSize(*size, *pixelSize);
 }
 
-// public float2 CalcOrigin(float2 availableSize, float2 contentActualSize) :578
+// public float2 CalcOrigin(float2 availableSize, float2 contentActualSize) :579
 void SizingContainer__CalcOrigin_fn(SizingContainer* __this, ::g::Uno::Float2* availableSize, ::g::Uno::Float2* contentActualSize, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->CalcOrigin(*availableSize, *contentActualSize);
@@ -3894,7 +5072,7 @@ void SizingContainer__CalcScale1_fn(SizingContainer* __this, ::g::Uno::Float2* a
     *__retval = __this->CalcScale1(*availableSize, *desiredSize, *autoWidth, *autoHeight);
 }
 
-// public float2 ExpandFillSize(float2 size, Fuse.LayoutParams lp) :665
+// public float2 ExpandFillSize(float2 size, Fuse.LayoutParams lp) :666
 void SizingContainer__ExpandFillSize_fn(SizingContainer* __this, ::g::Uno::Float2* size, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->ExpandFillSize(*size, *lp);
@@ -3957,7 +5135,7 @@ void SizingContainer::ctor_()
     absoluteZoom = 1.0f;
 }
 
-// public float4 CalcClip(float2 availableSize, float2& origin, float2& contentActualSize) [instance] :620
+// public float4 CalcClip(float2 availableSize, float2& origin, float2& contentActualSize) [instance] :621
 ::g::Uno::Float4 SizingContainer::CalcClip(::g::Uno::Float2 availableSize, ::g::Uno::Float2* origin, ::g::Uno::Float2* contentActualSize)
 {
     ::g::Uno::Float4 ind1;
@@ -4036,7 +5214,7 @@ void SizingContainer::ctor_()
     return SnapSize(size);
 }
 
-// public float2 CalcOrigin(float2 availableSize, float2 contentActualSize) [instance] :578
+// public float2 CalcOrigin(float2 availableSize, float2 contentActualSize) [instance] :579
 ::g::Uno::Float2 SizingContainer::CalcOrigin(::g::Uno::Float2 availableSize, ::g::Uno::Float2 contentActualSize)
 {
     uStackFrame __("Fuse.Internal.SizingContainer", "CalcOrigin(float2,float2)");
@@ -4101,6 +5279,7 @@ void SizingContainer::ctor_()
     d.X = (d.X - PaddingWidth());
     d.Y = (d.Y - PaddingHeight());
     ::g::Uno::Float2 scale = ::g::Uno::Float2__New1(1.0f);
+    float zeroTolerance = 1e-05f;
 
     if ((autoWidth && autoHeight) && !(((stretchMode == 0) || (stretchMode == 1)) || (stretchMode == 2)))
     {
@@ -4167,7 +5346,7 @@ void SizingContainer::ctor_()
     return scale;
 }
 
-// public float2 ExpandFillSize(float2 size, Fuse.LayoutParams lp) [instance] :665
+// public float2 ExpandFillSize(float2 size, Fuse.LayoutParams lp) [instance] :666
 ::g::Uno::Float2 SizingContainer::ExpandFillSize(::g::Uno::Float2 size, ::g::Fuse::LayoutParams lp)
 {
     bool autoWidth = !lp.HasX();
@@ -4282,10 +5461,10 @@ SizingContainer* SizingContainer::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
-// internal struct SkylineNode :1787
+// internal struct SkylineNode :2449
 // {
 static void SkylineNode_build(uType* type)
 {
@@ -4308,26 +5487,26 @@ uStructType* SkylineNode_typeof()
     return type;
 }
 
-// public SkylineNode(int2 position, int width) :1800
+// public SkylineNode(int2 position, int width) :2462
 void SkylineNode__ctor__fn(SkylineNode* __this, ::g::Uno::Int2* position, int* width)
 {
     __this->ctor_(*position, *width);
 }
 
-// public SkylineNode New(int2 position, int width) :1800
+// public SkylineNode New(int2 position, int width) :2462
 void SkylineNode__New1_fn(::g::Uno::Int2* position, int* width, SkylineNode* __retval)
 {
     *__retval = SkylineNode__New1(*position, *width);
 }
 
-// public SkylineNode(int2 position, int width) [instance] :1800
+// public SkylineNode(int2 position, int width) [instance] :2462
 void SkylineNode::ctor_(::g::Uno::Int2 position, int width)
 {
     Position = position;
     Width = width;
 }
 
-// public SkylineNode New(int2 position, int width) [static] :1800
+// public SkylineNode New(int2 position, int width) [static] :2462
 SkylineNode SkylineNode__New1(::g::Uno::Int2 position, int width)
 {
     SkylineNode obj1;
@@ -4336,10 +5515,10 @@ SkylineNode SkylineNode__New1(::g::Uno::Int2 position, int width)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
-// public static class Statistics :2099
+// public static class Statistics :2761
 // {
 static void Statistics_build(uType* type)
 {
@@ -4360,25 +5539,25 @@ uClassType* Statistics_typeof()
     return type;
 }
 
-// public static double ContinuousFilterAlpha(double elapsed, double period) :2110
+// public static double ContinuousFilterAlpha(double elapsed, double period) :2772
 void Statistics__ContinuousFilterAlpha_fn(double* elapsed, double* period, double* __retval)
 {
     *__retval = Statistics::ContinuousFilterAlpha(*elapsed, *period);
 }
 
-// public static double ExponentialMovingAverage(double current, double sample, double elapsed, double period) :2103
+// public static double ExponentialMovingAverage(double current, double sample, double elapsed, double period) :2765
 void Statistics__ExponentialMovingAverage_fn(double* current, double* sample, double* elapsed, double* period, double* __retval)
 {
     *__retval = Statistics::ExponentialMovingAverage(*current, *sample, *elapsed, *period);
 }
 
-// public static double ContinuousFilterAlpha(double elapsed, double period) [static] :2110
+// public static double ContinuousFilterAlpha(double elapsed, double period) [static] :2772
 double Statistics::ContinuousFilterAlpha(double elapsed, double period)
 {
     return 1.0 - ::g::Uno::Math::Pow(2.7182818284590451, -elapsed / period);
 }
 
-// public static double ExponentialMovingAverage(double current, double sample, double elapsed, double period) [static] :2103
+// public static double ExponentialMovingAverage(double current, double sample, double elapsed, double period) [static] :2765
 double Statistics::ExponentialMovingAverage(double current, double sample, double elapsed, double period)
 {
     double alpha = Statistics::ContinuousFilterAlpha(elapsed, period);
@@ -4386,14 +5565,14 @@ double Statistics::ExponentialMovingAverage(double current, double sample, doubl
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
-// internal static class SystemFont :2176
+// internal static class SystemFont :2838
 // {
 static void SystemFont_build(uType* type)
 {
-    ::TYPES[37] = ::g::Uno::String_typeof();
+    ::TYPES[41] = ::g::Uno::String_typeof();
 }
 
 uClassType* SystemFont_typeof()
@@ -4408,62 +5587,62 @@ uClassType* SystemFont_typeof()
     return type;
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> get_Default() :2180
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> get_Default() :2842
 void SystemFont__get_Default_fn(::g::Uno::Collections::List** __retval)
 {
     *__retval = SystemFont::Default();
 }
 
-// public static Uno.Collections.HashSet<string> get_Families() :2207
+// public static Uno.Collections.HashSet<string> get_Families() :2869
 void SystemFont__get_Families_fn(::g::Uno::Collections::HashSet** __retval)
 {
     *__retval = SystemFont::Families();
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> Get(string family, [Fuse.SystemFont.Style style], [Fuse.SystemFont.Weight weight]) :2188
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> Get(string family, [Fuse.SystemFont.Style style], [Fuse.SystemFont.Weight weight]) :2850
 void SystemFont__Get_fn(uString* family, int* style, int* weight, ::g::Uno::Collections::List** __retval)
 {
     *__retval = SystemFont::Get(family, *style, *weight);
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> GetFallback(Uno.UX.FileSource file) :2198
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> GetFallback(Uno.UX.FileSource file) :2860
 void SystemFont__GetFallback_fn(::g::Uno::UX::FileSource* file, ::g::Uno::Collections::List** __retval)
 {
     *__retval = SystemFont::GetFallback(file);
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> Get(string family, [Fuse.SystemFont.Style style], [Fuse.SystemFont.Weight weight]) [static] :2188
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> Get(string family, [Fuse.SystemFont.Style style], [Fuse.SystemFont.Weight weight]) [static] :2850
 ::g::Uno::Collections::List* SystemFont::Get(uString* family, int style, int weight)
 {
     uStackFrame __("Fuse.Internal.SystemFont", "Get(string,[Fuse.SystemFont.Style],[Fuse.SystemFont.Weight])");
-    return ::g::Fuse::Internal::iOSSystemFont::Get(::g::Uno::String::op_Equality(family, NULL) ? uCast<uString*>(NULL, ::TYPES[37/*string*/]) : (uString*)::g::Uno::String::ToLower(uPtr(family)), style, weight);
+    return ::g::Fuse::Internal::iOSSystemFont::Get(::g::Uno::String::op_Equality(family, NULL) ? uCast<uString*>(NULL, ::TYPES[41/*string*/]) : (uString*)::g::Uno::String::ToLower(uPtr(family)), style, weight);
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> GetFallback(Uno.UX.FileSource file) [static] :2198
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> GetFallback(Uno.UX.FileSource file) [static] :2860
 ::g::Uno::Collections::List* SystemFont::GetFallback(::g::Uno::UX::FileSource* file)
 {
     uStackFrame __("Fuse.Internal.SystemFont", "GetFallback(Uno.UX.FileSource)");
     return ::g::Fuse::Internal::iOSSystemFont::GetFallback(file);
 }
 
-// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> get_Default() [static] :2180
+// public static Uno.Collections.List<Fuse.Internal.FontFaceDescriptor> get_Default() [static] :2842
 ::g::Uno::Collections::List* SystemFont::Default()
 {
     uStackFrame __("Fuse.Internal.SystemFont", "get_Default()");
     return ::g::Fuse::Internal::iOSSystemFont::Default();
 }
 
-// public static Uno.Collections.HashSet<string> get_Families() [static] :2207
+// public static Uno.Collections.HashSet<string> get_Families() [static] :2869
 ::g::Uno::Collections::HashSet* SystemFont::Families()
 {
     return ::g::Fuse::Internal::iOSSystemFont::Families();
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno
+// --------------------------------------------------------------
 
-// internal static class VectorUtil :2224
+// internal static class VectorUtil :2886
 // {
 static void VectorUtil_build(uType* type)
 {
@@ -4481,62 +5660,74 @@ uClassType* VectorUtil_typeof()
     return type;
 }
 
-// public static float Angle(float2 a, float2 b) :2255
+// public static float Angle(float2 a, float2 b) :2922
 void VectorUtil__Angle_fn(::g::Uno::Float2* a, ::g::Uno::Float2* b, float* __retval)
 {
     *__retval = VectorUtil::Angle(*a, *b);
 }
 
-// public static float DistanceLine(float4 line, float2 p) :2263
+// public static float DistanceLine(float4 line, float2 p) :2930
 void VectorUtil__DistanceLine_fn(::g::Uno::Float4* line, ::g::Uno::Float2* p, float* __retval)
 {
     *__retval = VectorUtil::DistanceLine(*line, *p);
 }
 
-// public static float2 Projection(float2 a, float2 b) :2229
+// public static float NormRejection(float2 a, float2 b) :2913
+void VectorUtil__NormRejection_fn(::g::Uno::Float2* a, ::g::Uno::Float2* b, float* __retval)
+{
+    *__retval = VectorUtil::NormRejection(*a, *b);
+}
+
+// public static float2 Projection(float2 a, float2 b) :2891
 void VectorUtil__Projection_fn(::g::Uno::Float2* a, ::g::Uno::Float2* b, ::g::Uno::Float2* __retval)
 {
     *__retval = VectorUtil::Projection(*a, *b);
 }
 
-// public static float2 Rejection(float2 a, float2 b) :2245
+// public static float2 Rejection(float2 a, float2 b) :2907
 void VectorUtil__Rejection_fn(::g::Uno::Float2* a, ::g::Uno::Float2* b, ::g::Uno::Float2* __retval)
 {
     *__retval = VectorUtil::Rejection(*a, *b);
 }
 
-// public static float ScalarProjection(float2 a, float2 b) :2237
+// public static float ScalarProjection(float2 a, float2 b) :2899
 void VectorUtil__ScalarProjection_fn(::g::Uno::Float2* a, ::g::Uno::Float2* b, float* __retval)
 {
     *__retval = VectorUtil::ScalarProjection(*a, *b);
 }
 
-// public static float Angle(float2 a, float2 b) [static] :2255
+// public static float Angle(float2 a, float2 b) [static] :2922
 float VectorUtil::Angle(::g::Uno::Float2 a, ::g::Uno::Float2 b)
 {
     return ::g::Uno::Math::Acos1(::g::Uno::Vector::Dot(a, b) / (::g::Uno::Vector::Length(a) * ::g::Uno::Vector::Length(b)));
 }
 
-// public static float DistanceLine(float4 line, float2 p) [static] :2263
+// public static float DistanceLine(float4 line, float2 p) [static] :2930
 float VectorUtil::DistanceLine(::g::Uno::Float4 line, ::g::Uno::Float2 p)
 {
     return ::g::Uno::Vector::Length(VectorUtil::Rejection(::g::Uno::Float2__op_Subtraction2(p, ::g::Uno::Float2__New2(line.X, line.Y)), ::g::Uno::Float2__op_Subtraction2(::g::Uno::Float2__New2(line.Z, line.W), ::g::Uno::Float2__New2(line.X, line.Y))));
 }
 
-// public static float2 Projection(float2 a, float2 b) [static] :2229
+// public static float NormRejection(float2 a, float2 b) [static] :2913
+float VectorUtil::NormRejection(::g::Uno::Float2 a, ::g::Uno::Float2 b)
+{
+    return ::g::Uno::Vector::Length(VectorUtil::Rejection(a, b));
+}
+
+// public static float2 Projection(float2 a, float2 b) [static] :2891
 ::g::Uno::Float2 VectorUtil::Projection(::g::Uno::Float2 a, ::g::Uno::Float2 b)
 {
     return ::g::Uno::Float2__op_Multiply(::g::Uno::Vector::Dot(a, b) / ::g::Uno::Vector::Dot(b, b), b);
 }
 
-// public static float2 Rejection(float2 a, float2 b) [static] :2245
+// public static float2 Rejection(float2 a, float2 b) [static] :2907
 ::g::Uno::Float2 VectorUtil::Rejection(::g::Uno::Float2 a, ::g::Uno::Float2 b)
 {
     ::g::Uno::Float2 a1 = VectorUtil::Projection(a, b);
     return ::g::Uno::Float2__op_Subtraction2(a, a1);
 }
 
-// public static float ScalarProjection(float2 a, float2 b) [static] :2237
+// public static float ScalarProjection(float2 a, float2 b) [static] :2899
 float VectorUtil::ScalarProjection(::g::Uno::Float2 a, ::g::Uno::Float2 b)
 {
     return ::g::Uno::Vector::Dot(a, b) / ::g::Uno::Vector::Length(b);

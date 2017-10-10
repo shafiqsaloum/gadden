@@ -21,7 +21,7 @@
 #include <Uno.Buffer.h>
 #include <Uno.Char.h>
 #include <Uno.Diagnostics.Debug.h>
-#include <Uno.Diagnostics.Debug-5d778620.h>
+#include <Uno.Diagnostics.DebugMessageType.h>
 #include <Uno.FormatException.h>
 #include <Uno.Graphics.BlendEquation.h>
 #include <Uno.Graphics.BlendOperand.h>
@@ -41,12 +41,12 @@
 #include <Uno.Graphics.RenderTarget.h>
 #include <Uno.Graphics.SamplerState.h>
 #include <Uno.Graphics.Texture2D.h>
-#include <Uno.Graphics.TextureA-43befa07.h>
+#include <Uno.Graphics.TextureAddressMode.h>
 #include <Uno.Graphics.TextureCube.h>
 #include <Uno.Graphics.TextureFilter.h>
 #include <Uno.Graphics.TextureHelpers.h>
-#include <Uno.Graphics.VertexAt-28188a9f.h>
-#include <Uno.Graphics.VertexAt-4a875e1d.h>
+#include <Uno.Graphics.VertexAttributeInfo.h>
+#include <Uno.Graphics.VertexAttributeType.h>
 #include <Uno.Graphics.VertexBuffer.h>
 #include <Uno.Graphics.VideoTexture.h>
 #include <Uno.Int.h>
@@ -56,8 +56,8 @@
 #include <Uno.Math.h>
 #include <Uno.Object.h>
 #include <Uno.ObjectDisposedException.h>
-#include <Uno.Runtime.Implement-122f7885.h>
-#include <Uno.Runtime.Implement-157d1e47.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLHelpers.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLInterop.h>
 #include <Uno.String.h>
 #include <Uno/Support.h>
 #include <XliPlatform/GL.h>
@@ -68,8 +68,8 @@ namespace g{
 namespace Uno{
 namespace Graphics{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public enum BlendEquation :199
 uEnumType* BlendEquation_typeof()
@@ -87,8 +87,8 @@ uEnumType* BlendEquation_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public enum BlendOperand :185
 uEnumType* BlendOperand_typeof()
@@ -111,8 +111,8 @@ uEnumType* BlendOperand_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public enum BufferUsage :125
 uEnumType* BufferUsage_typeof()
@@ -128,8 +128,8 @@ uEnumType* BufferUsage_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public enum CompareFunc :208
 uEnumType* CompareFunc_typeof()
@@ -150,8 +150,8 @@ uEnumType* CompareFunc_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public enum CubeFace :175
 uEnumType* CubeFace_typeof()
@@ -170,8 +170,8 @@ uEnumType* CubeFace_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public abstract class DeviceBuffer :9
 // {
@@ -424,8 +424,8 @@ void DeviceBuffer::Usage(int value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public enum Format :245
 uEnumType* Format_typeof()
@@ -445,8 +445,8 @@ uEnumType* Format_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public static class FormatHelpers :265
 // {
@@ -501,8 +501,8 @@ int FormatHelpers::GetStrideInBytes(int format)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public sealed class Framebuffer :297
 // {
@@ -513,15 +513,14 @@ static void Framebuffer_build(uType* type)
     type->SetFields(0,
         ::g::Uno::Graphics::Texture2D_typeof(), offsetof(::g::Uno::Graphics::Framebuffer, _ColorBuffer), 0,
         ::g::Uno::Graphics::RenderTarget_typeof(), offsetof(::g::Uno::Graphics::Framebuffer, _RenderTarget), 0);
-    type->Reflection.SetFunctions(8,
+    type->Reflection.SetFunctions(7,
         new uFunction("get_ColorBuffer", NULL, (void*)Framebuffer__get_ColorBuffer_fn, 0, false, ::g::Uno::Graphics::Texture2D_typeof(), 0),
         new uFunction("Dispose", NULL, (void*)Framebuffer__Dispose_fn, 0, false, uVoid_typeof(), 0),
         new uFunction("get_Format", NULL, (void*)Framebuffer__get_Format_fn, 0, false, ::g::Uno::Graphics::Format_typeof(), 0),
         new uFunction("get_HasDepth", NULL, (void*)Framebuffer__get_HasDepth_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
         new uFunction(".ctor", NULL, (void*)Framebuffer__New1_fn, 0, true, type, 3, ::g::Uno::Int2_typeof(), ::g::Uno::Graphics::Format_typeof(), ::g::Uno::Graphics::FramebufferFlags_typeof()),
         new uFunction("get_RenderTarget", NULL, (void*)Framebuffer__get_RenderTarget_fn, 0, false, ::g::Uno::Graphics::RenderTarget_typeof(), 0),
-        new uFunction("get_Size", NULL, (void*)Framebuffer__get_Size_fn, 0, false, ::g::Uno::Int2_typeof(), 0),
-        new uFunction("get_SupportsMipmap", NULL, (void*)Framebuffer__get_SupportsMipmap_fn, 0, false, ::g::Uno::Bool_typeof(), 0));
+        new uFunction("get_Size", NULL, (void*)Framebuffer__get_Size_fn, 0, false, ::g::Uno::Int2_typeof(), 0));
 }
 
 Framebuffer_type* Framebuffer_typeof()
@@ -540,7 +539,7 @@ Framebuffer_type* Framebuffer_typeof()
     return type;
 }
 
-// public Framebuffer(int2 size, Uno.Graphics.Format format, Uno.Graphics.FramebufferFlags flags) :331
+// public Framebuffer(int2 size, Uno.Graphics.Format format, Uno.Graphics.FramebufferFlags flags) :332
 void Framebuffer__ctor__fn(Framebuffer* __this, ::g::Uno::Int2* size, int* format, int* flags)
 {
     __this->ctor_(*size, *format, *flags);
@@ -558,13 +557,13 @@ void Framebuffer__set_ColorBuffer_fn(Framebuffer* __this, ::g::Uno::Graphics::Te
     __this->ColorBuffer(value);
 }
 
-// public void Dispose() :337
+// public void Dispose() :338
 void Framebuffer__Dispose_fn(Framebuffer* __this)
 {
     __this->Dispose();
 }
 
-// public Uno.Graphics.Format get_Format() :328
+// public Uno.Graphics.Format get_Format() :329
 void Framebuffer__get_Format_fn(Framebuffer* __this, int* __retval)
 {
     *__retval = __this->Format();
@@ -576,7 +575,7 @@ void Framebuffer__get_HasDepth_fn(Framebuffer* __this, bool* __retval)
     *__retval = __this->HasDepth();
 }
 
-// public Framebuffer New(int2 size, Uno.Graphics.Format format, Uno.Graphics.FramebufferFlags flags) :331
+// public Framebuffer New(int2 size, Uno.Graphics.Format format, Uno.Graphics.FramebufferFlags flags) :332
 void Framebuffer__New1_fn(::g::Uno::Int2* size, int* format, int* flags, Framebuffer** __retval)
 {
     *__retval = Framebuffer::New1(*size, *format, *flags);
@@ -600,13 +599,7 @@ void Framebuffer__get_Size_fn(Framebuffer* __this, ::g::Uno::Int2* __retval)
     *__retval = __this->Size();
 }
 
-// public bool get_SupportsMipmap() :323
-void Framebuffer__get_SupportsMipmap_fn(Framebuffer* __this, bool* __retval)
-{
-    *__retval = __this->SupportsMipmap();
-}
-
-// public Framebuffer(int2 size, Uno.Graphics.Format format, Uno.Graphics.FramebufferFlags flags) [instance] :331
+// public Framebuffer(int2 size, Uno.Graphics.Format format, Uno.Graphics.FramebufferFlags flags) [instance] :332
 void Framebuffer::ctor_(::g::Uno::Int2 size, int format, int flags)
 {
     uStackFrame __("framebuffer", ".ctor(int2,Uno.Graphics.Format,Uno.Graphics.FramebufferFlags)");
@@ -626,7 +619,7 @@ void Framebuffer::ColorBuffer(::g::Uno::Graphics::Texture2D* value)
     _ColorBuffer = value;
 }
 
-// public void Dispose() [instance] :337
+// public void Dispose() [instance] :338
 void Framebuffer::Dispose()
 {
     uStackFrame __("framebuffer", "Dispose()");
@@ -634,7 +627,7 @@ void Framebuffer::Dispose()
     uPtr(RenderTarget())->Dispose();
 }
 
-// public Uno.Graphics.Format get_Format() [instance] :328
+// public Uno.Graphics.Format get_Format() [instance] :329
 int Framebuffer::Format()
 {
     uStackFrame __("framebuffer", "get_Format()");
@@ -667,14 +660,7 @@ void Framebuffer::RenderTarget(::g::Uno::Graphics::RenderTarget* value)
     return uPtr(RenderTarget())->Size();
 }
 
-// public bool get_SupportsMipmap() [instance] :323
-bool Framebuffer::SupportsMipmap()
-{
-    uStackFrame __("framebuffer", "get_SupportsMipmap()");
-    return uPtr(ColorBuffer())->SupportsMipmap();
-}
-
-// public Framebuffer New(int2 size, Uno.Graphics.Format format, Uno.Graphics.FramebufferFlags flags) [static] :331
+// public Framebuffer New(int2 size, Uno.Graphics.Format format, Uno.Graphics.FramebufferFlags flags) [static] :332
 Framebuffer* Framebuffer::New1(::g::Uno::Int2 size, int format, int flags)
 {
     Framebuffer* obj1 = (Framebuffer*)uNew(Framebuffer_typeof());
@@ -683,8 +669,8 @@ Framebuffer* Framebuffer::New1(::g::Uno::Int2 size, int format, int flags)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public enum FramebufferFlags :290
 uEnumType* FramebufferFlags_typeof()
@@ -700,10 +686,10 @@ uEnumType* FramebufferFlags_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
-// public sealed class IndexBuffer :552
+// public sealed class IndexBuffer :553
 // {
 static void IndexBuffer_build(uType* type)
 {
@@ -732,31 +718,31 @@ static void IndexBuffer_build(uType* type)
     return type;
 }
 
-// public IndexBuffer(Uno.Buffer data, Uno.Graphics.BufferUsage usage) :572
+// public IndexBuffer(Uno.Buffer data, Uno.Graphics.BufferUsage usage) :573
 void IndexBuffer__ctor_2_fn(IndexBuffer* __this, ::g::Uno::Buffer* data, int* usage)
 {
     __this->ctor_2(data, *usage);
 }
 
-// public IndexBuffer(Uno.Graphics.BufferUsage usage) :554
+// public IndexBuffer(Uno.Graphics.BufferUsage usage) :555
 void IndexBuffer__ctor_3_fn(IndexBuffer* __this, int* usage)
 {
     __this->ctor_3(*usage);
 }
 
-// public IndexBuffer New(Uno.Buffer data, Uno.Graphics.BufferUsage usage) :572
+// public IndexBuffer New(Uno.Buffer data, Uno.Graphics.BufferUsage usage) :573
 void IndexBuffer__New2_fn(::g::Uno::Buffer* data, int* usage, IndexBuffer** __retval)
 {
     *__retval = IndexBuffer::New2(data, *usage);
 }
 
-// public IndexBuffer New(Uno.Graphics.BufferUsage usage) :554
+// public IndexBuffer New(Uno.Graphics.BufferUsage usage) :555
 void IndexBuffer__New3_fn(int* usage, IndexBuffer** __retval)
 {
     *__retval = IndexBuffer::New3(*usage);
 }
 
-// public IndexBuffer(Uno.Buffer data, Uno.Graphics.BufferUsage usage) [instance] :572
+// public IndexBuffer(Uno.Buffer data, Uno.Graphics.BufferUsage usage) [instance] :573
 void IndexBuffer::ctor_2(::g::Uno::Buffer* data, int usage)
 {
     uStackFrame __("Uno.Graphics.IndexBuffer", ".ctor(Uno.Buffer,Uno.Graphics.BufferUsage)");
@@ -764,14 +750,14 @@ void IndexBuffer::ctor_2(::g::Uno::Buffer* data, int usage)
     GLInit2(34963, data);
 }
 
-// public IndexBuffer(Uno.Graphics.BufferUsage usage) [instance] :554
+// public IndexBuffer(Uno.Graphics.BufferUsage usage) [instance] :555
 void IndexBuffer::ctor_3(int usage)
 {
     ctor_(usage);
     GLInit(34963);
 }
 
-// public IndexBuffer New(Uno.Buffer data, Uno.Graphics.BufferUsage usage) [static] :572
+// public IndexBuffer New(Uno.Buffer data, Uno.Graphics.BufferUsage usage) [static] :573
 IndexBuffer* IndexBuffer::New2(::g::Uno::Buffer* data, int usage)
 {
     IndexBuffer* obj3 = (IndexBuffer*)uNew(IndexBuffer_typeof());
@@ -779,7 +765,7 @@ IndexBuffer* IndexBuffer::New2(::g::Uno::Buffer* data, int usage)
     return obj3;
 }
 
-// public IndexBuffer New(Uno.Graphics.BufferUsage usage) [static] :554
+// public IndexBuffer New(Uno.Graphics.BufferUsage usage) [static] :555
 IndexBuffer* IndexBuffer::New3(int usage)
 {
     IndexBuffer* obj1 = (IndexBuffer*)uNew(IndexBuffer_typeof());
@@ -788,8 +774,8 @@ IndexBuffer* IndexBuffer::New3(int usage)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public enum IndexType :141
 uEnumType* IndexType_typeof()
@@ -806,8 +792,8 @@ uEnumType* IndexType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public enum PolygonFace :230
 uEnumType* PolygonFace_typeof()
@@ -824,8 +810,8 @@ uEnumType* PolygonFace_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public enum PolygonWinding :238
 uEnumType* PolygonWinding_typeof()
@@ -840,8 +826,8 @@ uEnumType* PolygonWinding_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public enum PrimitiveType :132
 uEnumType* PrimitiveType_typeof()
@@ -859,10 +845,10 @@ uEnumType* PrimitiveType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
-// public sealed class RenderTarget :634
+// public sealed class RenderTarget :635
 // {
 static void RenderTarget_build(uType* type)
 {
@@ -905,126 +891,126 @@ RenderTarget_type* RenderTarget_typeof()
     return type;
 }
 
-// internal RenderTarget() :672
+// internal RenderTarget() :673
 void RenderTarget__ctor__fn(RenderTarget* __this)
 {
     __this->ctor_();
 }
 
-// public static Uno.Graphics.RenderTarget Create(texture2D texture, int mip, bool depth) :677
+// public static Uno.Graphics.RenderTarget Create(texture2D texture, int mip, bool depth) :678
 void RenderTarget__Create_fn(::g::Uno::Graphics::Texture2D* texture, int* mip, bool* depth, RenderTarget** __retval)
 {
     *__retval = RenderTarget::Create(texture, *mip, *depth);
 }
 
-// public static Uno.Graphics.RenderTarget Create(textureCube texture, Uno.Graphics.CubeFace face, int mip, bool depth) :686
+// public static Uno.Graphics.RenderTarget Create(textureCube texture, Uno.Graphics.CubeFace face, int mip, bool depth) :687
 void RenderTarget__Create1_fn(::g::Uno::Graphics::TextureCube* texture, int* face, int* mip, bool* depth, RenderTarget** __retval)
 {
     *__retval = RenderTarget::Create1(texture, *face, *mip, *depth);
 }
 
-// public void Dispose() :700
+// public void Dispose() :701
 void RenderTarget__Dispose_fn(RenderTarget* __this)
 {
     __this->Dispose();
 }
 
-// public generated extern OpenGL.GLRenderbufferHandle get_GLDepthBufferHandle() :656
+// public generated extern OpenGL.GLRenderbufferHandle get_GLDepthBufferHandle() :657
 void RenderTarget__get_GLDepthBufferHandle_fn(RenderTarget* __this, uint32_t* __retval)
 {
     *__retval = __this->GLDepthBufferHandle();
 }
 
-// internal generated extern void set_GLDepthBufferHandle(OpenGL.GLRenderbufferHandle value) :657
+// internal generated extern void set_GLDepthBufferHandle(OpenGL.GLRenderbufferHandle value) :658
 void RenderTarget__set_GLDepthBufferHandle_fn(RenderTarget* __this, uint32_t* value)
 {
     __this->GLDepthBufferHandle(*value);
 }
 
-// public generated extern OpenGL.GLFramebufferHandle get_GLFramebufferHandle() :650
+// public generated extern OpenGL.GLFramebufferHandle get_GLFramebufferHandle() :651
 void RenderTarget__get_GLFramebufferHandle_fn(RenderTarget* __this, uint32_t* __retval)
 {
     *__retval = __this->GLFramebufferHandle();
 }
 
-// internal generated extern void set_GLFramebufferHandle(OpenGL.GLFramebufferHandle value) :651
+// internal generated extern void set_GLFramebufferHandle(OpenGL.GLFramebufferHandle value) :652
 void RenderTarget__set_GLFramebufferHandle_fn(RenderTarget* __this, uint32_t* value)
 {
     __this->GLFramebufferHandle(*value);
 }
 
-// public generated bool get_HasDepth() :644
+// public generated bool get_HasDepth() :645
 void RenderTarget__get_HasDepth_fn(RenderTarget* __this, bool* __retval)
 {
     *__retval = __this->HasDepth();
 }
 
-// internal generated void set_HasDepth(bool value) :645
+// internal generated void set_HasDepth(bool value) :646
 void RenderTarget__set_HasDepth_fn(RenderTarget* __this, bool* value)
 {
     __this->HasDepth(*value);
 }
 
-// public generated bool get_IsDisposed() :696
+// public generated bool get_IsDisposed() :697
 void RenderTarget__get_IsDisposed_fn(RenderTarget* __this, bool* __retval)
 {
     *__retval = __this->IsDisposed();
 }
 
-// private generated void set_IsDisposed(bool value) :697
+// private generated void set_IsDisposed(bool value) :698
 void RenderTarget__set_IsDisposed_fn(RenderTarget* __this, bool* value)
 {
     __this->IsDisposed(*value);
 }
 
-// internal RenderTarget New() :672
+// internal RenderTarget New() :673
 void RenderTarget__New1_fn(RenderTarget** __retval)
 {
     *__retval = RenderTarget::New1();
 }
 
-// internal generated extern bool get_OwnsGLDepthBufferHandle() :668
+// internal generated extern bool get_OwnsGLDepthBufferHandle() :669
 void RenderTarget__get_OwnsGLDepthBufferHandle_fn(RenderTarget* __this, bool* __retval)
 {
     *__retval = __this->OwnsGLDepthBufferHandle();
 }
 
-// internal generated extern void set_OwnsGLDepthBufferHandle(bool value) :669
+// internal generated extern void set_OwnsGLDepthBufferHandle(bool value) :670
 void RenderTarget__set_OwnsGLDepthBufferHandle_fn(RenderTarget* __this, bool* value)
 {
     __this->OwnsGLDepthBufferHandle(*value);
 }
 
-// internal generated extern bool get_OwnsGLFramebufferHandle() :662
+// internal generated extern bool get_OwnsGLFramebufferHandle() :663
 void RenderTarget__get_OwnsGLFramebufferHandle_fn(RenderTarget* __this, bool* __retval)
 {
     *__retval = __this->OwnsGLFramebufferHandle();
 }
 
-// internal generated extern void set_OwnsGLFramebufferHandle(bool value) :663
+// internal generated extern void set_OwnsGLFramebufferHandle(bool value) :664
 void RenderTarget__set_OwnsGLFramebufferHandle_fn(RenderTarget* __this, bool* value)
 {
     __this->OwnsGLFramebufferHandle(*value);
 }
 
-// public generated int2 get_Size() :638
+// public generated int2 get_Size() :639
 void RenderTarget__get_Size_fn(RenderTarget* __this, ::g::Uno::Int2* __retval)
 {
     *__retval = __this->Size();
 }
 
-// internal generated void set_Size(int2 value) :639
+// internal generated void set_Size(int2 value) :640
 void RenderTarget__set_Size_fn(RenderTarget* __this, ::g::Uno::Int2* value)
 {
     __this->Size(*value);
 }
 
-// internal RenderTarget() [instance] :672
+// internal RenderTarget() [instance] :673
 void RenderTarget::ctor_()
 {
 }
 
-// public void Dispose() [instance] :700
+// public void Dispose() [instance] :701
 void RenderTarget::Dispose()
 {
     uStackFrame __("Uno.Graphics.RenderTarget", "Dispose()");
@@ -1043,105 +1029,105 @@ void RenderTarget::Dispose()
     IsDisposed(true);
 }
 
-// public generated extern OpenGL.GLRenderbufferHandle get_GLDepthBufferHandle() [instance] :656
+// public generated extern OpenGL.GLRenderbufferHandle get_GLDepthBufferHandle() [instance] :657
 uint32_t RenderTarget::GLDepthBufferHandle()
 {
     return _GLDepthBufferHandle;
 }
 
-// internal generated extern void set_GLDepthBufferHandle(OpenGL.GLRenderbufferHandle value) [instance] :657
+// internal generated extern void set_GLDepthBufferHandle(OpenGL.GLRenderbufferHandle value) [instance] :658
 void RenderTarget::GLDepthBufferHandle(uint32_t value)
 {
     _GLDepthBufferHandle = value;
 }
 
-// public generated extern OpenGL.GLFramebufferHandle get_GLFramebufferHandle() [instance] :650
+// public generated extern OpenGL.GLFramebufferHandle get_GLFramebufferHandle() [instance] :651
 uint32_t RenderTarget::GLFramebufferHandle()
 {
     return _GLFramebufferHandle;
 }
 
-// internal generated extern void set_GLFramebufferHandle(OpenGL.GLFramebufferHandle value) [instance] :651
+// internal generated extern void set_GLFramebufferHandle(OpenGL.GLFramebufferHandle value) [instance] :652
 void RenderTarget::GLFramebufferHandle(uint32_t value)
 {
     _GLFramebufferHandle = value;
 }
 
-// public generated bool get_HasDepth() [instance] :644
+// public generated bool get_HasDepth() [instance] :645
 bool RenderTarget::HasDepth()
 {
     return _HasDepth;
 }
 
-// internal generated void set_HasDepth(bool value) [instance] :645
+// internal generated void set_HasDepth(bool value) [instance] :646
 void RenderTarget::HasDepth(bool value)
 {
     _HasDepth = value;
 }
 
-// public generated bool get_IsDisposed() [instance] :696
+// public generated bool get_IsDisposed() [instance] :697
 bool RenderTarget::IsDisposed()
 {
     return _IsDisposed;
 }
 
-// private generated void set_IsDisposed(bool value) [instance] :697
+// private generated void set_IsDisposed(bool value) [instance] :698
 void RenderTarget::IsDisposed(bool value)
 {
     _IsDisposed = value;
 }
 
-// internal generated extern bool get_OwnsGLDepthBufferHandle() [instance] :668
+// internal generated extern bool get_OwnsGLDepthBufferHandle() [instance] :669
 bool RenderTarget::OwnsGLDepthBufferHandle()
 {
     return _OwnsGLDepthBufferHandle;
 }
 
-// internal generated extern void set_OwnsGLDepthBufferHandle(bool value) [instance] :669
+// internal generated extern void set_OwnsGLDepthBufferHandle(bool value) [instance] :670
 void RenderTarget::OwnsGLDepthBufferHandle(bool value)
 {
     _OwnsGLDepthBufferHandle = value;
 }
 
-// internal generated extern bool get_OwnsGLFramebufferHandle() [instance] :662
+// internal generated extern bool get_OwnsGLFramebufferHandle() [instance] :663
 bool RenderTarget::OwnsGLFramebufferHandle()
 {
     return _OwnsGLFramebufferHandle;
 }
 
-// internal generated extern void set_OwnsGLFramebufferHandle(bool value) [instance] :663
+// internal generated extern void set_OwnsGLFramebufferHandle(bool value) [instance] :664
 void RenderTarget::OwnsGLFramebufferHandle(bool value)
 {
     _OwnsGLFramebufferHandle = value;
 }
 
-// public generated int2 get_Size() [instance] :638
+// public generated int2 get_Size() [instance] :639
 ::g::Uno::Int2 RenderTarget::Size()
 {
     return _Size;
 }
 
-// internal generated void set_Size(int2 value) [instance] :639
+// internal generated void set_Size(int2 value) [instance] :640
 void RenderTarget::Size(::g::Uno::Int2 value)
 {
     _Size = value;
 }
 
-// public static Uno.Graphics.RenderTarget Create(texture2D texture, int mip, bool depth) [static] :677
+// public static Uno.Graphics.RenderTarget Create(texture2D texture, int mip, bool depth) [static] :678
 RenderTarget* RenderTarget::Create(::g::Uno::Graphics::Texture2D* texture, int mip, bool depth)
 {
     uStackFrame __("Uno.Graphics.RenderTarget", "Create(texture2D,int,bool)");
     return ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLHelpers::CreateRenderTarget(3553, uPtr(texture)->GLTextureHandle(), mip, ::g::Uno::Graphics::TextureHelpers::GetMipSize(texture, mip), depth);
 }
 
-// public static Uno.Graphics.RenderTarget Create(textureCube texture, Uno.Graphics.CubeFace face, int mip, bool depth) [static] :686
+// public static Uno.Graphics.RenderTarget Create(textureCube texture, Uno.Graphics.CubeFace face, int mip, bool depth) [static] :687
 RenderTarget* RenderTarget::Create1(::g::Uno::Graphics::TextureCube* texture, int face, int mip, bool depth)
 {
     uStackFrame __("Uno.Graphics.RenderTarget", "Create(textureCube,Uno.Graphics.CubeFace,int,bool)");
     return ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLHelpers::CreateRenderTarget(34069 + face, uPtr(texture)->GLTextureHandle(), mip, ::g::Uno::Graphics::TextureHelpers::GetMipSize1(texture, mip), depth);
 }
 
-// internal RenderTarget New() [static] :672
+// internal RenderTarget New() [static] :673
 RenderTarget* RenderTarget::New1()
 {
     RenderTarget* obj1 = (RenderTarget*)uNew(RenderTarget_typeof());
@@ -1150,10 +1136,10 @@ RenderTarget* RenderTarget::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
-// public struct SamplerState :779
+// public struct SamplerState :780
 // {
 static void SamplerState_build(uType* type)
 {
@@ -1192,49 +1178,49 @@ uStructType* SamplerState_typeof()
     return type;
 }
 
-// public SamplerState(Uno.Graphics.TextureFilter minFilter, Uno.Graphics.TextureFilter magFilter, Uno.Graphics.TextureAddressMode addressMode) :807
+// public SamplerState(Uno.Graphics.TextureFilter minFilter, Uno.Graphics.TextureFilter magFilter, Uno.Graphics.TextureAddressMode addressMode) :808
 void SamplerState__ctor__fn(SamplerState* __this, int* minFilter, int* magFilter, int* addressMode)
 {
     __this->ctor_(*minFilter, *magFilter, *addressMode);
 }
 
-// public static Uno.Graphics.SamplerState get_LinearClamp() :842
+// public static Uno.Graphics.SamplerState get_LinearClamp() :843
 void SamplerState__get_LinearClamp_fn(SamplerState* __retval)
 {
     *__retval = SamplerState__LinearClamp();
 }
 
-// public static Uno.Graphics.SamplerState get_LinearWrap() :837
+// public static Uno.Graphics.SamplerState get_LinearWrap() :838
 void SamplerState__get_LinearWrap_fn(SamplerState* __retval)
 {
     *__retval = SamplerState__LinearWrap();
 }
 
-// public Uno.Graphics.TextureFilter get_MinFilterNoMipmap() :789
+// public Uno.Graphics.TextureFilter get_MinFilterNoMipmap() :790
 void SamplerState__get_MinFilterNoMipmap_fn(SamplerState* __this, int* __retval)
 {
     *__retval = __this->MinFilterNoMipmap();
 }
 
-// public static Uno.Graphics.SamplerState get_NearestClamp() :832
+// public static Uno.Graphics.SamplerState get_NearestClamp() :833
 void SamplerState__get_NearestClamp_fn(SamplerState* __retval)
 {
     *__retval = SamplerState__NearestClamp();
 }
 
-// public SamplerState New(Uno.Graphics.TextureFilter minFilter, Uno.Graphics.TextureFilter magFilter, Uno.Graphics.TextureAddressMode addressMode) :807
+// public SamplerState New(Uno.Graphics.TextureFilter minFilter, Uno.Graphics.TextureFilter magFilter, Uno.Graphics.TextureAddressMode addressMode) :808
 void SamplerState__New1_fn(int* minFilter, int* magFilter, int* addressMode, SamplerState* __retval)
 {
     *__retval = SamplerState__New1(*minFilter, *magFilter, *addressMode);
 }
 
-// public static Uno.Graphics.SamplerState get_TrilinearClamp() :852
+// public static Uno.Graphics.SamplerState get_TrilinearClamp() :853
 void SamplerState__get_TrilinearClamp_fn(SamplerState* __retval)
 {
     *__retval = SamplerState__TrilinearClamp();
 }
 
-// public SamplerState(Uno.Graphics.TextureFilter minFilter, Uno.Graphics.TextureFilter magFilter, Uno.Graphics.TextureAddressMode addressMode) [instance] :807
+// public SamplerState(Uno.Graphics.TextureFilter minFilter, Uno.Graphics.TextureFilter magFilter, Uno.Graphics.TextureAddressMode addressMode) [instance] :808
 void SamplerState::ctor_(int minFilter, int magFilter, int addressMode)
 {
     MinFilter = minFilter;
@@ -1244,7 +1230,7 @@ void SamplerState::ctor_(int minFilter, int magFilter, int addressMode)
     AddressW = addressMode;
 }
 
-// public Uno.Graphics.TextureFilter get_MinFilterNoMipmap() [instance] :789
+// public Uno.Graphics.TextureFilter get_MinFilterNoMipmap() [instance] :790
 int SamplerState::MinFilterNoMipmap()
 {
     switch (MinFilter)
@@ -1260,7 +1246,7 @@ int SamplerState::MinFilterNoMipmap()
     }
 }
 
-// public SamplerState New(Uno.Graphics.TextureFilter minFilter, Uno.Graphics.TextureFilter magFilter, Uno.Graphics.TextureAddressMode addressMode) [static] :807
+// public SamplerState New(Uno.Graphics.TextureFilter minFilter, Uno.Graphics.TextureFilter magFilter, Uno.Graphics.TextureAddressMode addressMode) [static] :808
 SamplerState SamplerState__New1(int minFilter, int magFilter, int addressMode)
 {
     SamplerState obj1;
@@ -1268,41 +1254,41 @@ SamplerState SamplerState__New1(int minFilter, int magFilter, int addressMode)
     return obj1;
 }
 
-// public static Uno.Graphics.SamplerState get_LinearClamp() [static] :842
+// public static Uno.Graphics.SamplerState get_LinearClamp() [static] :843
 SamplerState SamplerState__LinearClamp()
 {
     return SamplerState__New1(9729, 9729, 33071);
 }
 
-// public static Uno.Graphics.SamplerState get_LinearWrap() [static] :837
+// public static Uno.Graphics.SamplerState get_LinearWrap() [static] :838
 SamplerState SamplerState__LinearWrap()
 {
     return SamplerState__New1(9729, 9729, 10497);
 }
 
-// public static Uno.Graphics.SamplerState get_NearestClamp() [static] :832
+// public static Uno.Graphics.SamplerState get_NearestClamp() [static] :833
 SamplerState SamplerState__NearestClamp()
 {
     return SamplerState__New1(9728, 9728, 33071);
 }
 
-// public static Uno.Graphics.SamplerState get_TrilinearClamp() [static] :852
+// public static Uno.Graphics.SamplerState get_TrilinearClamp() [static] :853
 SamplerState SamplerState__TrilinearClamp()
 {
     return SamplerState__New1(9987, 9729, 33071);
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
-// public intrinsic sealed class Texture2D :873
+// public intrinsic sealed class Texture2D :874
 // {
 static void Texture2D_build(uType* type)
 {
     ::STRINGS[4] = uString::Const("OpenGL ES ");
     ::STRINGS[5] = uString::Const("**** Invalid version string: ");
-    ::STRINGS[6] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno");
+    ::STRINGS[6] = uString::Const("/usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno");
     ::STRINGS[7] = uString::Const("Texture2D");
     ::STRINGS[8] = uString::Const("Texture does not support mipmap");
     ::STRINGS[9] = uString::Const("Texture is immutable and cannot be updated");
@@ -1355,151 +1341,151 @@ Texture2D_type* Texture2D_typeof()
     return type;
 }
 
-// public Texture2D(int2 size, Uno.Graphics.Format format, bool mipmap) :1042
+// public Texture2D(int2 size, Uno.Graphics.Format format, bool mipmap) :1043
 void Texture2D__ctor__fn(Texture2D* __this, ::g::Uno::Int2* size, int* format, bool* mipmap)
 {
     __this->ctor_(*size, *format, *mipmap);
 }
 
-// public extern Texture2D(OpenGL.GLTextureHandle handle, int2 size, int mipCount, Uno.Graphics.Format format) :1032
+// public extern Texture2D(OpenGL.GLTextureHandle handle, int2 size, int mipCount, Uno.Graphics.Format format) :1033
 void Texture2D__ctor_1_fn(Texture2D* __this, uint32_t* handle, ::g::Uno::Int2* size, int* mipCount, int* format)
 {
     __this->ctor_1(*handle, *size, *mipCount, *format);
 }
 
-// private static extern bool CheckExtensionSupport(string extensionName) :982
+// private static extern bool CheckExtensionSupport(string extensionName) :983
 void Texture2D__CheckExtensionSupport_fn(uString* extensionName, bool* __retval)
 {
     *__retval = Texture2D::CheckExtensionSupport(extensionName);
 }
 
-// private static extern bool CheckGLES3Support() :963
+// private static extern bool CheckGLES3Support() :964
 void Texture2D__CheckGLES3Support_fn(bool* __retval)
 {
     *__retval = Texture2D::CheckGLES3Support();
 }
 
-// public void Dispose() :1064
+// public void Dispose() :1065
 void Texture2D__Dispose_fn(Texture2D* __this)
 {
     __this->Dispose();
 }
 
-// public generated Uno.Graphics.Format get_Format() :1022
+// public generated Uno.Graphics.Format get_Format() :1023
 void Texture2D__get_Format_fn(Texture2D* __this, int* __retval)
 {
     *__retval = __this->Format();
 }
 
-// private generated void set_Format(Uno.Graphics.Format value) :1023
+// private generated void set_Format(Uno.Graphics.Format value) :1024
 void Texture2D__set_Format_fn(Texture2D* __this, int* value)
 {
     __this->Format(*value);
 }
 
-// public void GenerateMipmap() :1191
+// public void GenerateMipmap() :1192
 void Texture2D__GenerateMipmap_fn(Texture2D* __this)
 {
     __this->GenerateMipmap();
 }
 
-// public generated extern OpenGL.GLTextureHandle get_GLTextureHandle() :1028
+// public generated extern OpenGL.GLTextureHandle get_GLTextureHandle() :1029
 void Texture2D__get_GLTextureHandle_fn(Texture2D* __this, uint32_t* __retval)
 {
     *__retval = __this->GLTextureHandle();
 }
 
-// private generated extern void set_GLTextureHandle(OpenGL.GLTextureHandle value) :1029
+// private generated extern void set_GLTextureHandle(OpenGL.GLTextureHandle value) :1030
 void Texture2D__set_GLTextureHandle_fn(Texture2D* __this, uint32_t* value)
 {
     __this->GLTextureHandle(*value);
 }
 
-// public static bool get_HaveNonPow2Support() :998
+// public static bool get_HaveNonPow2Support() :999
 void Texture2D__get_HaveNonPow2Support_fn(bool* __retval)
 {
     *__retval = Texture2D::HaveNonPow2Support();
 }
 
-// public generated bool get_IsDisposed() :1060
+// public generated bool get_IsDisposed() :1061
 void Texture2D__get_IsDisposed_fn(Texture2D* __this, bool* __retval)
 {
     *__retval = __this->IsDisposed();
 }
 
-// private generated void set_IsDisposed(bool value) :1061
+// private generated void set_IsDisposed(bool value) :1062
 void Texture2D__set_IsDisposed_fn(Texture2D* __this, bool* value)
 {
     __this->IsDisposed(*value);
 }
 
-// public bool get_IsMipmap() :1182
+// public bool get_IsMipmap() :1183
 void Texture2D__get_IsMipmap_fn(Texture2D* __this, bool* __retval)
 {
     *__retval = __this->IsMipmap();
 }
 
-// public bool get_IsPow2() :1177
+// public bool get_IsPow2() :1178
 void Texture2D__get_IsPow2_fn(Texture2D* __this, bool* __retval)
 {
     *__retval = __this->IsPow2();
 }
 
-// public static int get_MaxSize() :950
+// public static int get_MaxSize() :951
 void Texture2D__get_MaxSize_fn(int* __retval)
 {
     *__retval = Texture2D::MaxSize();
 }
 
-// public generated int get_MipCount() :1016
+// public generated int get_MipCount() :1017
 void Texture2D__get_MipCount_fn(Texture2D* __this, int* __retval)
 {
     *__retval = __this->MipCount();
 }
 
-// private generated void set_MipCount(int value) :1017
+// private generated void set_MipCount(int value) :1018
 void Texture2D__set_MipCount_fn(Texture2D* __this, int* value)
 {
     __this->MipCount(*value);
 }
 
-// public Texture2D New(int2 size, Uno.Graphics.Format format, bool mipmap) :1042
+// public Texture2D New(int2 size, Uno.Graphics.Format format, bool mipmap) :1043
 void Texture2D__New1_fn(::g::Uno::Int2* size, int* format, bool* mipmap, Texture2D** __retval)
 {
     *__retval = Texture2D::New1(*size, *format, *mipmap);
 }
 
-// public extern Texture2D New(OpenGL.GLTextureHandle handle, int2 size, int mipCount, Uno.Graphics.Format format) :1032
+// public extern Texture2D New(OpenGL.GLTextureHandle handle, int2 size, int mipCount, Uno.Graphics.Format format) :1033
 void Texture2D__New2_fn(uint32_t* handle, ::g::Uno::Int2* size, int* mipCount, int* format, Texture2D** __retval)
 {
     *__retval = Texture2D::New2(*handle, *size, *mipCount, *format);
 }
 
-// public generated int2 get_Size() :943
+// public generated int2 get_Size() :944
 void Texture2D__get_Size_fn(Texture2D* __this, ::g::Uno::Int2* __retval)
 {
     *__retval = __this->Size();
 }
 
-// private generated void set_Size(int2 value) :944
+// private generated void set_Size(int2 value) :945
 void Texture2D__set_Size_fn(Texture2D* __this, ::g::Uno::Int2* value)
 {
     __this->Size(*value);
 }
 
-// public bool get_SupportsMipmap() :1188
+// public bool get_SupportsMipmap() :1189
 void Texture2D__get_SupportsMipmap_fn(Texture2D* __this, bool* __retval)
 {
     *__retval = __this->SupportsMipmap();
 }
 
-// public void Update(Uno.Buffer mip0) :1108
+// public void Update(Uno.Buffer mip0) :1109
 void Texture2D__Update1_fn(Texture2D* __this, ::g::Uno::Buffer* mip0)
 {
     __this->Update1(mip0);
 }
 
-// public void Update(Uno.IntPtr mip0) :1085
+// public void Update(Uno.IntPtr mip0) :1086
 void Texture2D__Update2_fn(Texture2D* __this, void** mip0)
 {
     __this->Update2(*mip0);
@@ -1509,7 +1495,7 @@ bool Texture2D::_haveNonPow2Support_;
 bool Texture2D::_haveNonPow2SupportValid_;
 int Texture2D::_maxSize_;
 
-// public Texture2D(int2 size, Uno.Graphics.Format format, bool mipmap) [instance] :1042
+// public Texture2D(int2 size, Uno.Graphics.Format format, bool mipmap) [instance] :1043
 void Texture2D::ctor_(::g::Uno::Int2 size, int format, bool mipmap)
 {
     uStackFrame __("texture2D", ".ctor(int2,Uno.Graphics.Format,bool)");
@@ -1520,7 +1506,7 @@ void Texture2D::ctor_(::g::Uno::Int2 size, int format, bool mipmap)
     Update1(NULL);
 }
 
-// public extern Texture2D(OpenGL.GLTextureHandle handle, int2 size, int mipCount, Uno.Graphics.Format format) [instance] :1032
+// public extern Texture2D(OpenGL.GLTextureHandle handle, int2 size, int mipCount, Uno.Graphics.Format format) [instance] :1033
 void Texture2D::ctor_1(uint32_t handle, ::g::Uno::Int2 size, int mipCount, int format)
 {
     GLTextureHandle(handle);
@@ -1529,7 +1515,7 @@ void Texture2D::ctor_1(uint32_t handle, ::g::Uno::Int2 size, int mipCount, int f
     Format(format);
 }
 
-// public void Dispose() [instance] :1064
+// public void Dispose() [instance] :1065
 void Texture2D::Dispose()
 {
     uStackFrame __("texture2D", "Dispose()");
@@ -1542,19 +1528,19 @@ void Texture2D::Dispose()
     IsDisposed(true);
 }
 
-// public generated Uno.Graphics.Format get_Format() [instance] :1022
+// public generated Uno.Graphics.Format get_Format() [instance] :1023
 int Texture2D::Format()
 {
     return _Format;
 }
 
-// private generated void set_Format(Uno.Graphics.Format value) [instance] :1023
+// private generated void set_Format(Uno.Graphics.Format value) [instance] :1024
 void Texture2D::Format(int value)
 {
     _Format = value;
 }
 
-// public void GenerateMipmap() [instance] :1191
+// public void GenerateMipmap() [instance] :1192
 void Texture2D::GenerateMipmap()
 {
     uStackFrame __("texture2D", "GenerateMipmap()");
@@ -1569,73 +1555,73 @@ void Texture2D::GenerateMipmap()
     }
 }
 
-// public generated extern OpenGL.GLTextureHandle get_GLTextureHandle() [instance] :1028
+// public generated extern OpenGL.GLTextureHandle get_GLTextureHandle() [instance] :1029
 uint32_t Texture2D::GLTextureHandle()
 {
     return _GLTextureHandle;
 }
 
-// private generated extern void set_GLTextureHandle(OpenGL.GLTextureHandle value) [instance] :1029
+// private generated extern void set_GLTextureHandle(OpenGL.GLTextureHandle value) [instance] :1030
 void Texture2D::GLTextureHandle(uint32_t value)
 {
     _GLTextureHandle = value;
 }
 
-// public generated bool get_IsDisposed() [instance] :1060
+// public generated bool get_IsDisposed() [instance] :1061
 bool Texture2D::IsDisposed()
 {
     return _IsDisposed;
 }
 
-// private generated void set_IsDisposed(bool value) [instance] :1061
+// private generated void set_IsDisposed(bool value) [instance] :1062
 void Texture2D::IsDisposed(bool value)
 {
     _IsDisposed = value;
 }
 
-// public bool get_IsMipmap() [instance] :1182
+// public bool get_IsMipmap() [instance] :1183
 bool Texture2D::IsMipmap()
 {
     return (MipCount() > 1) && IsPow2();
 }
 
-// public bool get_IsPow2() [instance] :1177
+// public bool get_IsPow2() [instance] :1178
 bool Texture2D::IsPow2()
 {
     return ::g::Uno::Math::IsPow2(Size().X) && ::g::Uno::Math::IsPow2(Size().Y);
 }
 
-// public generated int get_MipCount() [instance] :1016
+// public generated int get_MipCount() [instance] :1017
 int Texture2D::MipCount()
 {
     return _MipCount;
 }
 
-// private generated void set_MipCount(int value) [instance] :1017
+// private generated void set_MipCount(int value) [instance] :1018
 void Texture2D::MipCount(int value)
 {
     _MipCount = value;
 }
 
-// public generated int2 get_Size() [instance] :943
+// public generated int2 get_Size() [instance] :944
 ::g::Uno::Int2 Texture2D::Size()
 {
     return _Size;
 }
 
-// private generated void set_Size(int2 value) [instance] :944
+// private generated void set_Size(int2 value) [instance] :945
 void Texture2D::Size(::g::Uno::Int2 value)
 {
     _Size = value;
 }
 
-// public bool get_SupportsMipmap() [instance] :1188
+// public bool get_SupportsMipmap() [instance] :1189
 bool Texture2D::SupportsMipmap()
 {
     return IsMipmap();
 }
 
-// public void Update(Uno.Buffer mip0) [instance] :1108
+// public void Update(Uno.Buffer mip0) [instance] :1109
 void Texture2D::Update1(::g::Uno::Buffer* mip0)
 {
     uStackFrame __("texture2D", "Update(Uno.Buffer)");
@@ -1655,7 +1641,7 @@ void Texture2D::Update1(::g::Uno::Buffer* mip0)
     }
 }
 
-// public void Update(Uno.IntPtr mip0) [instance] :1085
+// public void Update(Uno.IntPtr mip0) [instance] :1086
 void Texture2D::Update2(void* mip0)
 {
     uStackFrame __("texture2D", "Update(Uno.IntPtr)");
@@ -1675,7 +1661,7 @@ void Texture2D::Update2(void* mip0)
     }
 }
 
-// private static extern bool CheckExtensionSupport(string extensionName) [static] :982
+// private static extern bool CheckExtensionSupport(string extensionName) [static] :983
 bool Texture2D::CheckExtensionSupport(uString* extensionName)
 {
     uStackFrame __("texture2D", "CheckExtensionSupport(string)");
@@ -1693,7 +1679,7 @@ bool Texture2D::CheckExtensionSupport(uString* extensionName)
     return false;
 }
 
-// private static extern bool CheckGLES3Support() [static] :963
+// private static extern bool CheckGLES3Support() [static] :964
 bool Texture2D::CheckGLES3Support()
 {
     uStackFrame __("texture2D", "CheckGLES3Support()");
@@ -1712,7 +1698,7 @@ bool Texture2D::CheckGLES3Support()
             if (uIs(__t.Exception, ::TYPES[1/*Uno.FormatException*/]))
             {
                 ::g::Uno::FormatException* e = (::g::Uno::FormatException*)__t.Exception;
-                ::g::Uno::Diagnostics::Debug::Log5(::g::Uno::String::op_Addition2(::STRINGS[5/*"**** Invali...*/], versionString), 1, ::STRINGS[6/*"/Users/eric...*/], 975);
+                ::g::Uno::Diagnostics::Debug::Log5(::g::Uno::String::op_Addition2(::STRINGS[5/*"**** Invali...*/], versionString), 0, ::STRINGS[6/*"/usr/local/...*/], 976);
             }
             else throw __t;
         }
@@ -1721,7 +1707,7 @@ bool Texture2D::CheckGLES3Support()
     return false;
 }
 
-// public Texture2D New(int2 size, Uno.Graphics.Format format, bool mipmap) [static] :1042
+// public Texture2D New(int2 size, Uno.Graphics.Format format, bool mipmap) [static] :1043
 Texture2D* Texture2D::New1(::g::Uno::Int2 size, int format, bool mipmap)
 {
     Texture2D* obj5 = (Texture2D*)uNew(Texture2D_typeof());
@@ -1729,7 +1715,7 @@ Texture2D* Texture2D::New1(::g::Uno::Int2 size, int format, bool mipmap)
     return obj5;
 }
 
-// public extern Texture2D New(OpenGL.GLTextureHandle handle, int2 size, int mipCount, Uno.Graphics.Format format) [static] :1032
+// public extern Texture2D New(OpenGL.GLTextureHandle handle, int2 size, int mipCount, Uno.Graphics.Format format) [static] :1033
 Texture2D* Texture2D::New2(uint32_t handle, ::g::Uno::Int2 size, int mipCount, int format)
 {
     Texture2D* obj4 = (Texture2D*)uNew(Texture2D_typeof());
@@ -1737,7 +1723,7 @@ Texture2D* Texture2D::New2(uint32_t handle, ::g::Uno::Int2 size, int mipCount, i
     return obj4;
 }
 
-// public static bool get_HaveNonPow2Support() [static] :998
+// public static bool get_HaveNonPow2Support() [static] :999
 bool Texture2D::HaveNonPow2Support()
 {
     uStackFrame __("texture2D", "get_HaveNonPow2Support()");
@@ -1751,7 +1737,7 @@ bool Texture2D::HaveNonPow2Support()
     return Texture2D::_haveNonPow2Support_;
 }
 
-// public static int get_MaxSize() [static] :950
+// public static int get_MaxSize() [static] :951
 int Texture2D::MaxSize()
 {
     if (Texture2D::_maxSize_ == 0)
@@ -1761,10 +1747,10 @@ int Texture2D::MaxSize()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
-// public enum TextureAddressMode :773
+// public enum TextureAddressMode :774
 uEnumType* TextureAddressMode_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -1777,10 +1763,10 @@ uEnumType* TextureAddressMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
-// public intrinsic sealed class TextureCube :1264
+// public intrinsic sealed class TextureCube :1265
 // {
 static void TextureCube_build(uType* type)
 {
@@ -1814,49 +1800,49 @@ TextureCube_type* TextureCube_typeof()
     return type;
 }
 
-// public void Dispose() :1401
+// public void Dispose() :1402
 void TextureCube__Dispose_fn(TextureCube* __this)
 {
     __this->Dispose();
 }
 
-// public generated extern OpenGL.GLTextureHandle get_GLTextureHandle() :1367
+// public generated extern OpenGL.GLTextureHandle get_GLTextureHandle() :1368
 void TextureCube__get_GLTextureHandle_fn(TextureCube* __this, uint32_t* __retval)
 {
     *__retval = __this->GLTextureHandle();
 }
 
-// private generated extern void set_GLTextureHandle(OpenGL.GLTextureHandle value) :1368
+// private generated extern void set_GLTextureHandle(OpenGL.GLTextureHandle value) :1369
 void TextureCube__set_GLTextureHandle_fn(TextureCube* __this, uint32_t* value)
 {
     __this->GLTextureHandle(*value);
 }
 
-// public generated bool get_IsDisposed() :1397
+// public generated bool get_IsDisposed() :1398
 void TextureCube__get_IsDisposed_fn(TextureCube* __this, bool* __retval)
 {
     *__retval = __this->IsDisposed();
 }
 
-// private generated void set_IsDisposed(bool value) :1398
+// private generated void set_IsDisposed(bool value) :1399
 void TextureCube__set_IsDisposed_fn(TextureCube* __this, bool* value)
 {
     __this->IsDisposed(*value);
 }
 
-// public generated int get_Size() :1349
+// public generated int get_Size() :1350
 void TextureCube__get_Size_fn(TextureCube* __this, int* __retval)
 {
     *__retval = __this->Size();
 }
 
-// private generated void set_Size(int value) :1350
+// private generated void set_Size(int value) :1351
 void TextureCube__set_Size_fn(TextureCube* __this, int* value)
 {
     __this->Size(*value);
 }
 
-// public void Dispose() [instance] :1401
+// public void Dispose() [instance] :1402
 void TextureCube::Dispose()
 {
     uStackFrame __("textureCube", "Dispose()");
@@ -1869,47 +1855,47 @@ void TextureCube::Dispose()
     IsDisposed(true);
 }
 
-// public generated extern OpenGL.GLTextureHandle get_GLTextureHandle() [instance] :1367
+// public generated extern OpenGL.GLTextureHandle get_GLTextureHandle() [instance] :1368
 uint32_t TextureCube::GLTextureHandle()
 {
     return _GLTextureHandle;
 }
 
-// private generated extern void set_GLTextureHandle(OpenGL.GLTextureHandle value) [instance] :1368
+// private generated extern void set_GLTextureHandle(OpenGL.GLTextureHandle value) [instance] :1369
 void TextureCube::GLTextureHandle(uint32_t value)
 {
     _GLTextureHandle = value;
 }
 
-// public generated bool get_IsDisposed() [instance] :1397
+// public generated bool get_IsDisposed() [instance] :1398
 bool TextureCube::IsDisposed()
 {
     return _IsDisposed;
 }
 
-// private generated void set_IsDisposed(bool value) [instance] :1398
+// private generated void set_IsDisposed(bool value) [instance] :1399
 void TextureCube::IsDisposed(bool value)
 {
     _IsDisposed = value;
 }
 
-// public generated int get_Size() [instance] :1349
+// public generated int get_Size() [instance] :1350
 int TextureCube::Size()
 {
     return _Size;
 }
 
-// private generated void set_Size(int value) [instance] :1350
+// private generated void set_Size(int value) [instance] :1351
 void TextureCube::Size(int value)
 {
     _Size = value;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
-// public enum TextureFilter :762
+// public enum TextureFilter :763
 uEnumType* TextureFilter_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -1926,10 +1912,10 @@ uEnumType* TextureFilter_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
-// public static class TextureHelpers :1561
+// public static class TextureHelpers :1562
 // {
 static void TextureHelpers_build(uType* type)
 {
@@ -1951,25 +1937,25 @@ uClassType* TextureHelpers_typeof()
     return type;
 }
 
-// public static int GetMipCount(int2 size) :1597
+// public static int GetMipCount(int2 size) :1598
 void TextureHelpers__GetMipCount1_fn(::g::Uno::Int2* size, int* __retval)
 {
     *__retval = TextureHelpers::GetMipCount1(*size);
 }
 
-// public static int2 GetMipSize(texture2D texture, int mip) :1563
+// public static int2 GetMipSize(texture2D texture, int mip) :1564
 void TextureHelpers__GetMipSize_fn(::g::Uno::Graphics::Texture2D* texture, int* mip, ::g::Uno::Int2* __retval)
 {
     *__retval = TextureHelpers::GetMipSize(texture, *mip);
 }
 
-// public static int2 GetMipSize(textureCube texture, int mip) :1582
+// public static int2 GetMipSize(textureCube texture, int mip) :1583
 void TextureHelpers__GetMipSize1_fn(::g::Uno::Graphics::TextureCube* texture, int* mip, ::g::Uno::Int2* __retval)
 {
     *__retval = TextureHelpers::GetMipSize1(texture, *mip);
 }
 
-// public static int GetMipCount(int2 size) [static] :1597
+// public static int GetMipCount(int2 size) [static] :1598
 int TextureHelpers::GetMipCount1(::g::Uno::Int2 size)
 {
     int result = 0;
@@ -1985,7 +1971,7 @@ int TextureHelpers::GetMipCount1(::g::Uno::Int2 size)
     return result;
 }
 
-// public static int2 GetMipSize(texture2D texture, int mip) [static] :1563
+// public static int2 GetMipSize(texture2D texture, int mip) [static] :1564
 ::g::Uno::Int2 TextureHelpers::GetMipSize(::g::Uno::Graphics::Texture2D* texture, int mip)
 {
     uStackFrame __("Uno.Graphics.TextureHelpers", "GetMipSize(texture2D,int)");
@@ -2006,7 +1992,7 @@ int TextureHelpers::GetMipCount1(::g::Uno::Int2 size)
     return size;
 }
 
-// public static int2 GetMipSize(textureCube texture, int mip) [static] :1582
+// public static int2 GetMipSize(textureCube texture, int mip) [static] :1583
 ::g::Uno::Int2 TextureHelpers::GetMipSize1(::g::Uno::Graphics::TextureCube* texture, int mip)
 {
     uStackFrame __("Uno.Graphics.TextureHelpers", "GetMipSize(textureCube,int)");
@@ -2024,10 +2010,10 @@ int TextureHelpers::GetMipCount1(::g::Uno::Int2 size)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
-// public struct VertexAttributeInfo :1633
+// public struct VertexAttributeInfo :1634
 // {
 static void VertexAttributeInfo_build(uType* type)
 {
@@ -2058,8 +2044,8 @@ uStructType* VertexAttributeInfo_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
 // public enum VertexAttributeType :149
 uEnumType* VertexAttributeType_typeof()
@@ -2093,10 +2079,10 @@ uEnumType* VertexAttributeType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
-// public sealed class VertexBuffer :1712
+// public sealed class VertexBuffer :1713
 // {
 static void VertexBuffer_build(uType* type)
 {
@@ -2125,31 +2111,31 @@ static void VertexBuffer_build(uType* type)
     return type;
 }
 
-// public VertexBuffer(Uno.Buffer data, Uno.Graphics.BufferUsage usage) :1732
+// public VertexBuffer(Uno.Buffer data, Uno.Graphics.BufferUsage usage) :1733
 void VertexBuffer__ctor_2_fn(VertexBuffer* __this, ::g::Uno::Buffer* data, int* usage)
 {
     __this->ctor_2(data, *usage);
 }
 
-// public VertexBuffer(Uno.Graphics.BufferUsage usage) :1714
+// public VertexBuffer(Uno.Graphics.BufferUsage usage) :1715
 void VertexBuffer__ctor_3_fn(VertexBuffer* __this, int* usage)
 {
     __this->ctor_3(*usage);
 }
 
-// public VertexBuffer New(Uno.Buffer data, Uno.Graphics.BufferUsage usage) :1732
+// public VertexBuffer New(Uno.Buffer data, Uno.Graphics.BufferUsage usage) :1733
 void VertexBuffer__New2_fn(::g::Uno::Buffer* data, int* usage, VertexBuffer** __retval)
 {
     *__retval = VertexBuffer::New2(data, *usage);
 }
 
-// public VertexBuffer New(Uno.Graphics.BufferUsage usage) :1714
+// public VertexBuffer New(Uno.Graphics.BufferUsage usage) :1715
 void VertexBuffer__New3_fn(int* usage, VertexBuffer** __retval)
 {
     *__retval = VertexBuffer::New3(*usage);
 }
 
-// public VertexBuffer(Uno.Buffer data, Uno.Graphics.BufferUsage usage) [instance] :1732
+// public VertexBuffer(Uno.Buffer data, Uno.Graphics.BufferUsage usage) [instance] :1733
 void VertexBuffer::ctor_2(::g::Uno::Buffer* data, int usage)
 {
     uStackFrame __("Uno.Graphics.VertexBuffer", ".ctor(Uno.Buffer,Uno.Graphics.BufferUsage)");
@@ -2157,14 +2143,14 @@ void VertexBuffer::ctor_2(::g::Uno::Buffer* data, int usage)
     GLInit2(34962, data);
 }
 
-// public VertexBuffer(Uno.Graphics.BufferUsage usage) [instance] :1714
+// public VertexBuffer(Uno.Graphics.BufferUsage usage) [instance] :1715
 void VertexBuffer::ctor_3(int usage)
 {
     ctor_(usage);
     GLInit(34962);
 }
 
-// public VertexBuffer New(Uno.Buffer data, Uno.Graphics.BufferUsage usage) [static] :1732
+// public VertexBuffer New(Uno.Buffer data, Uno.Graphics.BufferUsage usage) [static] :1733
 VertexBuffer* VertexBuffer::New2(::g::Uno::Buffer* data, int usage)
 {
     VertexBuffer* obj3 = (VertexBuffer*)uNew(VertexBuffer_typeof());
@@ -2172,7 +2158,7 @@ VertexBuffer* VertexBuffer::New2(::g::Uno::Buffer* data, int usage)
     return obj3;
 }
 
-// public VertexBuffer New(Uno.Graphics.BufferUsage usage) [static] :1714
+// public VertexBuffer New(Uno.Graphics.BufferUsage usage) [static] :1715
 VertexBuffer* VertexBuffer::New3(int usage)
 {
     VertexBuffer* obj1 = (VertexBuffer*)uNew(VertexBuffer_typeof());
@@ -2181,10 +2167,10 @@ VertexBuffer* VertexBuffer::New3(int usage)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno
-// -------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno
+// ---------------------------------------------------------------------
 
-// public intrinsic sealed class VideoTexture :1788
+// public intrinsic sealed class VideoTexture :1789
 // {
 static void VideoTexture_build(uType* type)
 {
@@ -2222,55 +2208,55 @@ VideoTexture_type* VideoTexture_typeof()
     return type;
 }
 
-// public extern VideoTexture(OpenGL.GLTextureHandle handle) :1802
+// public extern VideoTexture(OpenGL.GLTextureHandle handle) :1803
 void VideoTexture__ctor__fn(VideoTexture* __this, uint32_t* handle)
 {
     __this->ctor_(*handle);
 }
 
-// public void Dispose() :1813
+// public void Dispose() :1814
 void VideoTexture__Dispose_fn(VideoTexture* __this)
 {
     __this->Dispose();
 }
 
-// public generated extern OpenGL.GLTextureHandle get_GLTextureHandle() :1798
+// public generated extern OpenGL.GLTextureHandle get_GLTextureHandle() :1799
 void VideoTexture__get_GLTextureHandle_fn(VideoTexture* __this, uint32_t* __retval)
 {
     *__retval = __this->GLTextureHandle();
 }
 
-// private generated extern void set_GLTextureHandle(OpenGL.GLTextureHandle value) :1799
+// private generated extern void set_GLTextureHandle(OpenGL.GLTextureHandle value) :1800
 void VideoTexture__set_GLTextureHandle_fn(VideoTexture* __this, uint32_t* value)
 {
     __this->GLTextureHandle(*value);
 }
 
-// public generated bool get_IsDisposed() :1809
+// public generated bool get_IsDisposed() :1810
 void VideoTexture__get_IsDisposed_fn(VideoTexture* __this, bool* __retval)
 {
     *__retval = __this->IsDisposed();
 }
 
-// private generated void set_IsDisposed(bool value) :1810
+// private generated void set_IsDisposed(bool value) :1811
 void VideoTexture__set_IsDisposed_fn(VideoTexture* __this, bool* value)
 {
     __this->IsDisposed(*value);
 }
 
-// public extern VideoTexture New(OpenGL.GLTextureHandle handle) :1802
+// public extern VideoTexture New(OpenGL.GLTextureHandle handle) :1803
 void VideoTexture__New1_fn(uint32_t* handle, VideoTexture** __retval)
 {
     *__retval = VideoTexture::New1(*handle);
 }
 
-// public extern VideoTexture(OpenGL.GLTextureHandle handle) [instance] :1802
+// public extern VideoTexture(OpenGL.GLTextureHandle handle) [instance] :1803
 void VideoTexture::ctor_(uint32_t handle)
 {
     GLTextureHandle(handle);
 }
 
-// public void Dispose() [instance] :1813
+// public void Dispose() [instance] :1814
 void VideoTexture::Dispose()
 {
     uStackFrame __("Uno.Graphics.VideoTexture", "Dispose()");
@@ -2283,31 +2269,31 @@ void VideoTexture::Dispose()
     IsDisposed(true);
 }
 
-// public generated extern OpenGL.GLTextureHandle get_GLTextureHandle() [instance] :1798
+// public generated extern OpenGL.GLTextureHandle get_GLTextureHandle() [instance] :1799
 uint32_t VideoTexture::GLTextureHandle()
 {
     return _GLTextureHandle;
 }
 
-// private generated extern void set_GLTextureHandle(OpenGL.GLTextureHandle value) [instance] :1799
+// private generated extern void set_GLTextureHandle(OpenGL.GLTextureHandle value) [instance] :1800
 void VideoTexture::GLTextureHandle(uint32_t value)
 {
     _GLTextureHandle = value;
 }
 
-// public generated bool get_IsDisposed() [instance] :1809
+// public generated bool get_IsDisposed() [instance] :1810
 bool VideoTexture::IsDisposed()
 {
     return _IsDisposed;
 }
 
-// private generated void set_IsDisposed(bool value) [instance] :1810
+// private generated void set_IsDisposed(bool value) [instance] :1811
 void VideoTexture::IsDisposed(bool value)
 {
     _IsDisposed = value;
 }
 
-// public extern VideoTexture New(OpenGL.GLTextureHandle handle) [static] :1802
+// public extern VideoTexture New(OpenGL.GLTextureHandle handle) [static] :1803
 VideoTexture* VideoTexture::New1(uint32_t handle)
 {
     VideoTexture* obj1 = (VideoTexture*)uNew(VideoTexture_typeof());

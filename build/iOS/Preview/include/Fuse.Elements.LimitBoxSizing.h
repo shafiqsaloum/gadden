@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// internal sealed class LimitBoxSizing :3439
+// internal sealed class LimitBoxSizing :3459
 // {
 ::g::Fuse::Elements::BoxSizing_type* LimitBoxSizing_typeof();
 void LimitBoxSizing__ctor_1_fn(LimitBoxSizing* __this);

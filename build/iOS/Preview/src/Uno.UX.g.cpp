@@ -5,7 +5,7 @@
 #include <Uno.ArgumentException.h>
 #include <Uno.Bool.h>
 #include <Uno.Byte.h>
-#include <Uno.Collections.Dicti-d1699346.h>
+#include <Uno.Collections.Dictionary-2.Enumerator.h>
 #include <Uno.Collections.Dictionary-2.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -49,7 +49,8 @@
 #include <Uno.UX.StreamExtensions.h>
 #include <Uno.UX.Template.h>
 #include <Uno.UX.Unit.h>
-#include <Uno.UX.UXAutoNameTabl-28c6abb4.h>
+#include <Uno.UX.UXAutoClassNameAttribute.h>
+#include <Uno.UX.UXAutoNameTableAttribute.h>
 #include <Uno.UX.UXComponentsAttribute.h>
 #include <Uno.UX.UXConstructorAttribute.h>
 #include <Uno.UX.UXContentAttribute.h>
@@ -57,13 +58,13 @@
 #include <Uno.UX.UXFileNameAttribute.h>
 #include <Uno.UX.UXFreestandingAttribute.h>
 #include <Uno.UX.UXGlobalModuleAttribute.h>
-#include <Uno.UX.UXGlobalResour-226240d5.h>
+#include <Uno.UX.UXGlobalResourceAttribute.h>
 #include <Uno.UX.UXLineNumberAttribute.h>
 #include <Uno.UX.UXNameAttribute.h>
 #include <Uno.UX.UXPrimaryAttribute.h>
-#include <Uno.UX.UXSourceFileNa-49949224.h>
-#include <Uno.UX.UXValueBinding-5a38545d.h>
-#include <Uno.UX.UXValueBinding-c53bb7cf.h>
+#include <Uno.UX.UXSourceFileNameAttribute.h>
+#include <Uno.UX.UXValueBindingArgumentAttribute.h>
+#include <Uno.UX.UXValueBindingTargetAttribute.h>
 #include <Uno.UX.UXVerbatimAttribute.h>
 #include <Uno.UX.ValueChangedArgs-1.h>
 #include <Uno.UX.ValueChangedHandler-1.h>
@@ -74,8 +75,8 @@ namespace g{
 namespace Uno{
 namespace UX{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
 // public sealed class BundleFileSource :8
 // {
@@ -193,8 +194,8 @@ BundleFileSource* BundleFileSource::New1(::g::Uno::IO::BundleFile* bundleFile)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/actions/$.uno
+// ---------------------------------------------------------------
 
 // public delegate T Expression<T>() :635
 uDelegateType* Expression_typeof()
@@ -207,8 +208,8 @@ uDelegateType* Expression_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
 // public abstract class FileSource :61
 // {
@@ -334,10 +335,10 @@ FileSource* FileSource::op_Implicit(::g::Uno::IO::BundleFile* bundleFile)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public abstract interface IPropertyListener :319
+// public abstract interface IPropertyListener :322
 // {
 uInterfaceType* IPropertyListener_typeof()
 {
@@ -351,8 +352,8 @@ uInterfaceType* IPropertyListener_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
 // public sealed class NameTable :175
 // {
@@ -524,10 +525,10 @@ NameTable* NameTable::New1(NameTable* parentTable, uArray* entries)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public abstract class Property :248
+// public abstract class Property :251
 // {
 static void Property_build(uType* type)
 {
@@ -559,19 +560,19 @@ Property_type* Property_typeof()
     return type;
 }
 
-// protected Property(Uno.UX.Selector name) :255
+// protected Property(Uno.UX.Selector name) :258
 void Property__ctor_1_fn(Property* __this, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_1(*name);
 }
 
-// public void AddListener(Uno.UX.IPropertyListener listener) :260
+// public void AddListener(Uno.UX.IPropertyListener listener) :263
 void Property__AddListener_fn(Property* __this, uObject* listener)
 {
     __this->AddListener(listener);
 }
 
-// public override sealed bool Equals(object obj) :270
+// public override sealed bool Equals(object obj) :273
 void Property__Equals_fn(Property* __this, uObject* obj, bool* __retval)
 {
     uStackFrame __("Uno.UX.Property", "Equals(object)");
@@ -583,66 +584,66 @@ void Property__Equals_fn(Property* __this, uObject* obj, bool* __retval)
     return *__retval = (uPtr(p)->Object() == __this->Object()) && ::g::Uno::UX::Selector__op_Equality(uPtr(p)->Name(), __this->_name), void();
 }
 
-// public object GetAsObject() :282
+// public object GetAsObject() :285
 void Property__GetAsObject1_fn(Property* __this, uObject** __retval)
 {
     *__retval = __this->GetAsObject1();
 }
 
-// public override sealed int GetHashCode() :277
+// public override sealed int GetHashCode() :280
 void Property__GetHashCode_fn(Property* __this, int* __retval)
 {
     uStackFrame __("Uno.UX.Property", "GetHashCode()");
     return *__retval = ::g::Uno::Object::GetHashCode(uPtr(__this->Object())) ^ __this->Name().Handle(), void();
 }
 
-// public override sealed Uno.UX.Selector get_Name() :253
+// public override sealed Uno.UX.Selector get_Name() :256
 void Property__get_Name_fn(Property* __this, ::g::Uno::UX::Selector* __retval)
 {
     return *__retval = __this->_name, void();
 }
 
-// public void RemoveListener(Uno.UX.IPropertyListener listener) :265
+// public void RemoveListener(Uno.UX.IPropertyListener listener) :268
 void Property__RemoveListener_fn(Property* __this, uObject* listener)
 {
     __this->RemoveListener(listener);
 }
 
-// public void SetAsObject(object value, Uno.UX.IPropertyListener origin) :283
+// public void SetAsObject(object value, Uno.UX.IPropertyListener origin) :286
 void Property__SetAsObject1_fn(Property* __this, uObject* value, uObject* origin)
 {
     __this->SetAsObject1(value, origin);
 }
 
-// protected Property(Uno.UX.Selector name) [instance] :255
+// protected Property(Uno.UX.Selector name) [instance] :258
 void Property::ctor_1(::g::Uno::UX::Selector name)
 {
     ctor_();
     _name = name;
 }
 
-// public void AddListener(Uno.UX.IPropertyListener listener) [instance] :260
+// public void AddListener(Uno.UX.IPropertyListener listener) [instance] :263
 void Property::AddListener(uObject* listener)
 {
     uStackFrame __("Uno.UX.Property", "AddListener(Uno.UX.IPropertyListener)");
     uPtr(Object())->AddPropertyListener(listener);
 }
 
-// public object GetAsObject() [instance] :282
+// public object GetAsObject() [instance] :285
 uObject* Property::GetAsObject1()
 {
     uStackFrame __("Uno.UX.Property", "GetAsObject()");
     return GetAsObject(Object());
 }
 
-// public void RemoveListener(Uno.UX.IPropertyListener listener) [instance] :265
+// public void RemoveListener(Uno.UX.IPropertyListener listener) [instance] :268
 void Property::RemoveListener(uObject* listener)
 {
     uStackFrame __("Uno.UX.Property", "RemoveListener(Uno.UX.IPropertyListener)");
     uPtr(Object())->RemovePropertyListener(listener);
 }
 
-// public void SetAsObject(object value, Uno.UX.IPropertyListener origin) [instance] :283
+// public void SetAsObject(object value, Uno.UX.IPropertyListener origin) [instance] :286
 void Property::SetAsObject1(uObject* value, uObject* origin)
 {
     uStackFrame __("Uno.UX.Property", "SetAsObject(object,Uno.UX.IPropertyListener)");
@@ -650,10 +651,10 @@ void Property::SetAsObject1(uObject* value, uObject* origin)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public abstract class Property<T> :286
+// public abstract class Property<T> :289
 // {
 static void Property1_build(uType* type)
 {
@@ -690,13 +691,13 @@ Property1_type* Property1_typeof()
     return type;
 }
 
-// protected Property(Uno.UX.Selector name) :288
+// protected Property(Uno.UX.Selector name) :291
 void Property1__ctor_2_fn(Property1* __this, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_2(*name);
 }
 
-// public T Get() :295
+// public T Get() :298
 void Property1__Get_fn(Property1* __this, uTRef __retval)
 {
     uType* __types[] = {
@@ -707,14 +708,14 @@ void Property1__Get_fn(Property1* __this, uTRef __retval)
     return __retval.Store((__this->Get1_ex(__this->Object(), &ret1), ret1)), void();
 }
 
-// public virtual T Get(Uno.UX.PropertyObject obj) :292
+// public virtual T Get(Uno.UX.PropertyObject obj) :295
 void Property1__Get1_fn(Property1* __this, ::g::Uno::UX::PropertyObject* obj, uTRef __retval)
 {
     uStackFrame __("Uno.UX.Property`1", "Get(Uno.UX.PropertyObject)");
     U_THROW(::g::Uno::NotSupportedException::New4());
 }
 
-// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :298
+// public override sealed object GetAsObject(Uno.UX.PropertyObject obj) :301
 void Property1__GetAsObject_fn(Property1* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
 {
     uType* __types[] = {
@@ -725,27 +726,27 @@ void Property1__GetAsObject_fn(Property1* __this, ::g::Uno::UX::PropertyObject* 
     return *__retval = uBoxPtr(__types[0], (__this->Get1_ex(obj, &ret2), ret2)), void();
 }
 
-// public override sealed Uno.Type get_PropertyType() :290
+// public override sealed Uno.Type get_PropertyType() :293
 void Property1__get_PropertyType_fn(Property1* __this, uType** __retval)
 {
     return *__retval = __this->__type->GetBase(Property1_typeof())->T(0), void();
 }
 
-// public void Set(T value, Uno.UX.IPropertyListener origin) :296
+// public void Set(T value, Uno.UX.IPropertyListener origin) :299
 void Property1__Set_fn(Property1* __this, void* value, uObject* origin)
 {
     uStackFrame __("Uno.UX.Property`1", "Set(T,Uno.UX.IPropertyListener)");
     __this->Set1_ex(__this->Object(), value, origin);
 }
 
-// public virtual void Set(Uno.UX.PropertyObject obj, T value, Uno.UX.IPropertyListener origin) :293
+// public virtual void Set(Uno.UX.PropertyObject obj, T value, Uno.UX.IPropertyListener origin) :296
 void Property1__Set1_fn(Property1* __this, ::g::Uno::UX::PropertyObject* obj, void* value, uObject* origin)
 {
     uStackFrame __("Uno.UX.Property`1", "Set(Uno.UX.PropertyObject,T,Uno.UX.IPropertyListener)");
     U_THROW(::g::Uno::NotSupportedException::New4());
 }
 
-// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object value, Uno.UX.IPropertyListener origin) :303
+// public override sealed void SetAsObject(Uno.UX.PropertyObject obj, object value, Uno.UX.IPropertyListener origin) :306
 void Property1__SetAsObject_fn(Property1* __this, ::g::Uno::UX::PropertyObject* obj, uObject* value, uObject* origin)
 {
     uStackFrame __("Uno.UX.Property`1", "SetAsObject(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
@@ -756,17 +757,17 @@ void Property1__SetAsObject_fn(Property1* __this, ::g::Uno::UX::PropertyObject* 
         __this->Set1_ex(obj, uUnboxAny(__this->__type->GetBase(Property1_typeof())->T(0), value), origin);
 }
 
-// protected Property(Uno.UX.Selector name) [instance] :288
+// protected Property(Uno.UX.Selector name) [instance] :291
 void Property1::ctor_2(::g::Uno::UX::Selector name)
 {
     ctor_1(name);
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public abstract class PropertyAccessor :239
+// public abstract class PropertyAccessor :242
 // {
 static void PropertyAccessor_build(uType* type)
 {
@@ -797,42 +798,42 @@ PropertyAccessor_type* PropertyAccessor_typeof()
     return type;
 }
 
-// protected generated PropertyAccessor() :239
+// protected generated PropertyAccessor() :242
 void PropertyAccessor__ctor__fn(PropertyAccessor* __this)
 {
     __this->ctor_();
 }
 
-// public virtual object GetAsObject(Uno.UX.PropertyObject obj) :245
+// public virtual object GetAsObject(Uno.UX.PropertyObject obj) :248
 void PropertyAccessor__GetAsObject_fn(PropertyAccessor* __this, ::g::Uno::UX::PropertyObject* obj, uObject** __retval)
 {
     uStackFrame __("Uno.UX.PropertyAccessor", "GetAsObject(Uno.UX.PropertyObject)");
     U_THROW(::g::Uno::NotSupportedException::New5(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[2/*"Property '"*/], ::g::Uno::UX::Selector__op_Implicit1(__this->Name())), ::STRINGS[3/*"' cannot be...*/])));
 }
 
-// public virtual void SetAsObject(Uno.UX.PropertyObject obj, object value, Uno.UX.IPropertyListener origin) :244
+// public virtual void SetAsObject(Uno.UX.PropertyObject obj, object value, Uno.UX.IPropertyListener origin) :247
 void PropertyAccessor__SetAsObject_fn(PropertyAccessor* __this, ::g::Uno::UX::PropertyObject* obj, uObject* value, uObject* origin)
 {
     uStackFrame __("Uno.UX.PropertyAccessor", "SetAsObject(Uno.UX.PropertyObject,object,Uno.UX.IPropertyListener)");
     U_THROW(::g::Uno::NotSupportedException::New5(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[2/*"Property '"*/], ::g::Uno::UX::Selector__op_Implicit1(__this->Name())), ::STRINGS[4/*"' cannot be...*/])));
 }
 
-// public virtual bool get_SupportsOriginSetter() :243
+// public virtual bool get_SupportsOriginSetter() :246
 void PropertyAccessor__get_SupportsOriginSetter_fn(PropertyAccessor* __this, bool* __retval)
 {
     return *__retval = false, void();
 }
 
-// protected generated PropertyAccessor() [instance] :239
+// protected generated PropertyAccessor() [instance] :242
 void PropertyAccessor::ctor_()
 {
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public class PropertyObject :324
+// public class PropertyObject :327
 // {
 static void PropertyObject_build(uType* type)
 {
@@ -864,66 +865,66 @@ uType* PropertyObject_typeof()
     return type;
 }
 
-// public generated PropertyObject() :324
+// public generated PropertyObject() :327
 void PropertyObject__ctor__fn(PropertyObject* __this)
 {
     __this->ctor_();
 }
 
-// public void AddPropertyListener(Uno.UX.IPropertyListener listener) :329
+// public void AddPropertyListener(Uno.UX.IPropertyListener listener) :332
 void PropertyObject__AddPropertyListener_fn(PropertyObject* __this, uObject* listener)
 {
     __this->AddPropertyListener(listener);
 }
 
-// public static void EmulatePropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector sel, Uno.UX.IPropertyListener origin) :362
+// public static void EmulatePropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector sel, Uno.UX.IPropertyListener origin) :365
 void PropertyObject__EmulatePropertyChanged_fn(PropertyObject* obj, ::g::Uno::UX::Selector* sel, uObject* origin)
 {
     PropertyObject::EmulatePropertyChanged(obj, *sel, origin);
 }
 
-// internal object GetSimulatedProperty(string name) :386
+// internal object GetSimulatedProperty(string name) :389
 void PropertyObject__GetSimulatedProperty_fn(PropertyObject* __this, uString* name, uObject** __retval)
 {
     *__retval = __this->GetSimulatedProperty(name);
 }
 
-// public generated PropertyObject New() :324
+// public generated PropertyObject New() :327
 void PropertyObject__New1_fn(PropertyObject** __retval)
 {
     *__retval = PropertyObject::New1();
 }
 
-// protected void OnPropertyChanged(Uno.UX.Selector property) :357
+// protected void OnPropertyChanged(Uno.UX.Selector property) :360
 void PropertyObject__OnPropertyChanged_fn(PropertyObject* __this, ::g::Uno::UX::Selector* property)
 {
     __this->OnPropertyChanged(*property);
 }
 
-// protected void OnPropertyChanged(Uno.UX.Selector property, Uno.UX.IPropertyListener origin) :344
+// protected void OnPropertyChanged(Uno.UX.Selector property, Uno.UX.IPropertyListener origin) :347
 void PropertyObject__OnPropertyChanged1_fn(PropertyObject* __this, ::g::Uno::UX::Selector* property, uObject* origin)
 {
     __this->OnPropertyChanged1(*property, origin);
 }
 
-// public void RemovePropertyListener(Uno.UX.IPropertyListener listener) :338
+// public void RemovePropertyListener(Uno.UX.IPropertyListener listener) :341
 void PropertyObject__RemovePropertyListener_fn(PropertyObject* __this, uObject* listener)
 {
     __this->RemovePropertyListener(listener);
 }
 
-// internal void SetSimulatedProperty(string name, object value, Uno.UX.IPropertyListener origin) :369
+// internal void SetSimulatedProperty(string name, object value, Uno.UX.IPropertyListener origin) :372
 void PropertyObject__SetSimulatedProperty_fn(PropertyObject* __this, uString* name, uObject* value, uObject* origin)
 {
     __this->SetSimulatedProperty(name, value, origin);
 }
 
-// public generated PropertyObject() [instance] :324
+// public generated PropertyObject() [instance] :327
 void PropertyObject::ctor_()
 {
 }
 
-// public void AddPropertyListener(Uno.UX.IPropertyListener listener) [instance] :329
+// public void AddPropertyListener(Uno.UX.IPropertyListener listener) [instance] :332
 void PropertyObject::AddPropertyListener(uObject* listener)
 {
     uStackFrame __("Uno.UX.PropertyObject", "AddPropertyListener(Uno.UX.IPropertyListener)");
@@ -934,7 +935,7 @@ void PropertyObject::AddPropertyListener(uObject* listener)
     ::g::Uno::Collections::List__Add_fn(uPtr(_propListeners), listener);
 }
 
-// internal object GetSimulatedProperty(string name) [instance] :386
+// internal object GetSimulatedProperty(string name) [instance] :389
 uObject* PropertyObject::GetSimulatedProperty(uString* name)
 {
     uStackFrame __("Uno.UX.PropertyObject", "GetSimulatedProperty(string)");
@@ -951,14 +952,14 @@ uObject* PropertyObject::GetSimulatedProperty(uString* name)
     return NULL;
 }
 
-// protected void OnPropertyChanged(Uno.UX.Selector property) [instance] :357
+// protected void OnPropertyChanged(Uno.UX.Selector property) [instance] :360
 void PropertyObject::OnPropertyChanged(::g::Uno::UX::Selector property)
 {
     uStackFrame __("Uno.UX.PropertyObject", "OnPropertyChanged(Uno.UX.Selector)");
     OnPropertyChanged1(property, uAs<uObject*>(this, ::TYPES[8/*Uno.UX.IPropertyListener*/]));
 }
 
-// protected void OnPropertyChanged(Uno.UX.Selector property, Uno.UX.IPropertyListener origin) [instance] :344
+// protected void OnPropertyChanged(Uno.UX.Selector property, Uno.UX.IPropertyListener origin) [instance] :347
 void PropertyObject::OnPropertyChanged1(::g::Uno::UX::Selector property, uObject* origin)
 {
     uStackFrame __("Uno.UX.PropertyObject", "OnPropertyChanged(Uno.UX.Selector,Uno.UX.IPropertyListener)");
@@ -976,7 +977,7 @@ void PropertyObject::OnPropertyChanged1(::g::Uno::UX::Selector property, uObject
         }
 }
 
-// public void RemovePropertyListener(Uno.UX.IPropertyListener listener) [instance] :338
+// public void RemovePropertyListener(Uno.UX.IPropertyListener listener) [instance] :341
 void PropertyObject::RemovePropertyListener(uObject* listener)
 {
     uStackFrame __("Uno.UX.PropertyObject", "RemovePropertyListener(Uno.UX.IPropertyListener)");
@@ -987,7 +988,7 @@ void PropertyObject::RemovePropertyListener(uObject* listener)
         _propListeners = NULL;
 }
 
-// internal void SetSimulatedProperty(string name, object value, Uno.UX.IPropertyListener origin) [instance] :369
+// internal void SetSimulatedProperty(string name, object value, Uno.UX.IPropertyListener origin) [instance] :372
 void PropertyObject::SetSimulatedProperty(uString* name, uObject* value, uObject* origin)
 {
     uStackFrame __("Uno.UX.PropertyObject", "SetSimulatedProperty(string,object,Uno.UX.IPropertyListener)");
@@ -1011,14 +1012,14 @@ void PropertyObject::SetSimulatedProperty(uString* name, uObject* value, uObject
     PropertyObject::EmulatePropertyChanged(this, ::g::Uno::UX::Selector__op_Implicit(name), origin);
 }
 
-// public static void EmulatePropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector sel, Uno.UX.IPropertyListener origin) [static] :362
+// public static void EmulatePropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector sel, Uno.UX.IPropertyListener origin) [static] :365
 void PropertyObject::EmulatePropertyChanged(PropertyObject* obj, ::g::Uno::UX::Selector sel, uObject* origin)
 {
     uStackFrame __("Uno.UX.PropertyObject", "EmulatePropertyChanged(Uno.UX.PropertyObject,Uno.UX.Selector,Uno.UX.IPropertyListener)");
     uPtr(obj)->OnPropertyChanged1(sel, origin);
 }
 
-// public generated PropertyObject New() [static] :324
+// public generated PropertyObject New() [static] :327
 PropertyObject* PropertyObject::New1()
 {
     PropertyObject* obj1 = (PropertyObject*)uNew(PropertyObject_typeof());
@@ -1027,12 +1028,12 @@ PropertyObject* PropertyObject::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public sealed class Resource :481
+// public sealed class Resource :484
 // {
-// static Resource() :481
+// static Resource() :484
 static void Resource__cctor__fn(uType* __type)
 {
     Resource::_globals_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[10/*Uno.Collections.Dictionary<string, Uno.Collections.List<object>>*/]));
@@ -1083,73 +1084,73 @@ uType* Resource_typeof()
     return type;
 }
 
-// public Resource(string key, object value) :487
+// public Resource(string key, object value) :490
 void Resource__ctor__fn(Resource* __this, uString* key, uObject* value)
 {
     __this->ctor_(key, value);
 }
 
-// public static void AddGlobalKeyListener(Uno.Action<string> listener) :501
+// public static void AddGlobalKeyListener(Uno.Action<string> listener) :504
 void Resource__AddGlobalKeyListener_fn(uDelegate* listener)
 {
     Resource::AddGlobalKeyListener(listener);
 }
 
-// public static string GetGlobalKey(object obj) :551
+// public static string GetGlobalKey(object obj) :554
 void Resource__GetGlobalKey_fn(uObject* obj, uString** __retval)
 {
     *__retval = Resource::GetGlobalKey(obj);
 }
 
-// public static Uno.Collections.IEnumerable<T> GetGlobalsOfType<T>() :563
+// public static Uno.Collections.IEnumerable<T> GetGlobalsOfType<T>() :566
 void Resource__GetGlobalsOfType_fn(uType* __type, uObject** __retval)
 {
     *__retval = Resource::GetGlobalsOfType(__type);
 }
 
-// public generated string get_Key() :483
+// public generated string get_Key() :486
 void Resource__get_Key_fn(Resource* __this, uString** __retval)
 {
     *__retval = __this->Key();
 }
 
-// private generated void set_Key(string value) :483
+// private generated void set_Key(string value) :486
 void Resource__set_Key_fn(Resource* __this, uString* value)
 {
     __this->Key(value);
 }
 
-// public Resource New(string key, object value) :487
+// public Resource New(string key, object value) :490
 void Resource__New1_fn(uString* key, uObject* value, Resource** __retval)
 {
     *__retval = Resource::New1(key, value);
 }
 
-// public static void RemoveGlobalKeyListener(Uno.Action<string> listener) :511
+// public static void RemoveGlobalKeyListener(Uno.Action<string> listener) :514
 void Resource__RemoveGlobalKeyListener_fn(uDelegate* listener)
 {
     Resource::RemoveGlobalKeyListener(listener);
 }
 
-// public static void SetGlobalKey(object obj, string key) :528
+// public static void SetGlobalKey(object obj, string key) :531
 void Resource__SetGlobalKey_fn(uObject* obj, uString* key)
 {
     Resource::SetGlobalKey(obj, key);
 }
 
-// public static bool TryFindGlobal(string key, Uno.Predicate<object> acceptor, object& res) :584
+// public static bool TryFindGlobal(string key, Uno.Predicate<object> acceptor, object& res) :587
 void Resource__TryFindGlobal_fn(uString* key, uDelegate* acceptor, uObject** res, bool* __retval)
 {
     *__retval = Resource::TryFindGlobal(key, acceptor, res);
 }
 
-// public generated object get_Value() :484
+// public generated object get_Value() :487
 void Resource__get_Value_fn(Resource* __this, uObject** __retval)
 {
     *__retval = __this->Value();
 }
 
-// private generated void set_Value(object value) :484
+// private generated void set_Value(object value) :487
 void Resource__set_Value_fn(Resource* __this, uObject* value)
 {
     __this->Value(value);
@@ -1158,38 +1159,38 @@ void Resource__set_Value_fn(Resource* __this, uObject* value)
 uSStrong< ::g::Uno::Collections::Dictionary*> Resource::_globals_;
 uSStrong< ::g::Uno::Collections::List*> Resource::_listeners_;
 
-// public Resource(string key, object value) [instance] :487
+// public Resource(string key, object value) [instance] :490
 void Resource::ctor_(uString* key, uObject* value)
 {
     Key(key);
     Value(value);
 }
 
-// public generated string get_Key() [instance] :483
+// public generated string get_Key() [instance] :486
 uString* Resource::Key()
 {
     return _Key;
 }
 
-// private generated void set_Key(string value) [instance] :483
+// private generated void set_Key(string value) [instance] :486
 void Resource::Key(uString* value)
 {
     _Key = value;
 }
 
-// public generated object get_Value() [instance] :484
+// public generated object get_Value() [instance] :487
 uObject* Resource::Value()
 {
     return _Value;
 }
 
-// private generated void set_Value(object value) [instance] :484
+// private generated void set_Value(object value) [instance] :487
 void Resource::Value(uObject* value)
 {
     _Value = value;
 }
 
-// public static void AddGlobalKeyListener(Uno.Action<string> listener) [static] :501
+// public static void AddGlobalKeyListener(Uno.Action<string> listener) [static] :504
 void Resource::AddGlobalKeyListener(uDelegate* listener)
 {
     uStackFrame __("Uno.UX.Resource", "AddGlobalKeyListener(Uno.Action<string>)");
@@ -1207,7 +1208,7 @@ void Resource::AddGlobalKeyListener(uDelegate* listener)
     }
 }
 
-// public static string GetGlobalKey(object obj) [static] :551
+// public static string GetGlobalKey(object obj) [static] :554
 uString* Resource::GetGlobalKey(uObject* obj)
 {
     uStackFrame __("Uno.UX.Resource", "GetGlobalKey(object)");
@@ -1236,7 +1237,7 @@ uString* Resource::GetGlobalKey(uObject* obj)
     return NULL;
 }
 
-// public static Uno.Collections.IEnumerable<T> GetGlobalsOfType<T>() [static] :563
+// public static Uno.Collections.IEnumerable<T> GetGlobalsOfType<T>() [static] :566
 uObject* Resource::GetGlobalsOfType(uType* __type)
 {
     uType* __types[] = {
@@ -1276,7 +1277,7 @@ uObject* Resource::GetGlobalsOfType(uType* __type)
     return (uObject*)result;
 }
 
-// public Resource New(string key, object value) [static] :487
+// public Resource New(string key, object value) [static] :490
 Resource* Resource::New1(uString* key, uObject* value)
 {
     Resource* obj5 = (Resource*)uNew(Resource_typeof());
@@ -1284,7 +1285,7 @@ Resource* Resource::New1(uString* key, uObject* value)
     return obj5;
 }
 
-// public static void RemoveGlobalKeyListener(Uno.Action<string> listener) [static] :511
+// public static void RemoveGlobalKeyListener(Uno.Action<string> listener) [static] :514
 void Resource::RemoveGlobalKeyListener(uDelegate* listener)
 {
     uStackFrame __("Uno.UX.Resource", "RemoveGlobalKeyListener(Uno.Action<string>)");
@@ -1303,7 +1304,7 @@ void Resource::RemoveGlobalKeyListener(uDelegate* listener)
     }
 }
 
-// public static void SetGlobalKey(object obj, string key) [static] :528
+// public static void SetGlobalKey(object obj, string key) [static] :531
 void Resource::SetGlobalKey(uObject* obj, uString* key)
 {
     uStackFrame __("Uno.UX.Resource", "SetGlobalKey(object,string)");
@@ -1351,7 +1352,7 @@ void Resource::SetGlobalKey(uObject* obj, uString* key)
     }
 }
 
-// public static bool TryFindGlobal(string key, Uno.Predicate<object> acceptor, object& res) [static] :584
+// public static bool TryFindGlobal(string key, Uno.Predicate<object> acceptor, object& res) [static] :587
 bool Resource::TryFindGlobal(uString* key, uDelegate* acceptor, uObject** res)
 {
     uStackFrame __("Uno.UX.Resource", "TryFindGlobal(string,Uno.Predicate<object>,object&)");
@@ -1389,10 +1390,10 @@ bool Resource::TryFindGlobal(uString* key, uDelegate* acceptor, uObject** res)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public struct Selector :649
+// public struct Selector :652
 // {
 static void Selector_build(uType* type)
 {
@@ -1421,13 +1422,13 @@ uStructType* Selector_typeof()
     return type;
 }
 
-// public Selector(string value) :657
+// public Selector(string value) :660
 void Selector__ctor__fn(Selector* __this, uString* value)
 {
     __this->ctor_(value);
 }
 
-// public override sealed bool Equals(object obj) :672
+// public override sealed bool Equals(object obj) :675
 void Selector__Equals_fn(Selector* __this, uType* __type, uObject* obj, bool* __retval)
 {
     uStackFrame __("Uno.UX.Selector", "Equals(object)");
@@ -1446,55 +1447,55 @@ void Selector__Equals_fn(Selector* __this, uType* __type, uObject* obj, bool* __
     return *__retval = false, void();
 }
 
-// public override sealed int GetHashCode() :667
+// public override sealed int GetHashCode() :670
 void Selector__GetHashCode_fn(Selector* __this, uType* __type, int* __retval)
 {
     return *__retval = __this->_handle, void();
 }
 
-// internal int get_Handle() :654
+// internal int get_Handle() :657
 void Selector__get_Handle_fn(Selector* __this, int* __retval)
 {
     *__retval = __this->Handle();
 }
 
-// public bool get_IsNull() :664
+// public bool get_IsNull() :667
 void Selector__get_IsNull_fn(Selector* __this, bool* __retval)
 {
     *__retval = __this->IsNull();
 }
 
-// public Selector New(string value) :657
+// public Selector New(string value) :660
 void Selector__New1_fn(uString* value, Selector* __retval)
 {
     *__retval = Selector__New1(value);
 }
 
-// public static operator ==(Uno.UX.Selector a, Uno.UX.Selector b) :699
+// public static operator ==(Uno.UX.Selector a, Uno.UX.Selector b) :702
 void Selector__op_Equality_fn(Selector* a, Selector* b, bool* __retval)
 {
     *__retval = Selector__op_Equality(*a, *b);
 }
 
-// public static implicit operator Uno.UX.Selector(string s) :689
+// public static implicit operator Uno.UX.Selector(string s) :692
 void Selector__op_Implicit_fn(uString* s, Selector* __retval)
 {
     *__retval = Selector__op_Implicit(s);
 }
 
-// public static implicit operator string(Uno.UX.Selector s) :694
+// public static implicit operator string(Uno.UX.Selector s) :697
 void Selector__op_Implicit1_fn(Selector* s, uString** __retval)
 {
     *__retval = Selector__op_Implicit1(*s);
 }
 
-// public static operator !=(Uno.UX.Selector a, Uno.UX.Selector b) :704
+// public static operator !=(Uno.UX.Selector a, Uno.UX.Selector b) :707
 void Selector__op_Inequality_fn(Selector* a, Selector* b, bool* __retval)
 {
     *__retval = Selector__op_Inequality(*a, *b);
 }
 
-// public override sealed string ToString() :709
+// public override sealed string ToString() :712
 void Selector__ToString_fn(Selector* __this, uType* __type, uString** __retval)
 {
     uStackFrame __("Uno.UX.Selector", "ToString()");
@@ -1505,26 +1506,26 @@ void Selector__ToString_fn(Selector* __this, uType* __type, uString** __retval)
     return *__retval = ::g::Uno::UX::SelectorRegistry::GetValue(__this->_handle), void();
 }
 
-// public Selector(string value) [instance] :657
+// public Selector(string value) [instance] :660
 void Selector::ctor_(uString* value)
 {
     uStackFrame __("Uno.UX.Selector", ".ctor(string)");
     _handle = ::g::Uno::UX::SelectorRegistry::GetHandle(value);
 }
 
-// internal int get_Handle() [instance] :654
+// internal int get_Handle() [instance] :657
 int Selector::Handle()
 {
     return _handle;
 }
 
-// public bool get_IsNull() [instance] :664
+// public bool get_IsNull() [instance] :667
 bool Selector::IsNull()
 {
     return _handle == 0;
 }
 
-// public Selector New(string value) [static] :657
+// public Selector New(string value) [static] :660
 Selector Selector__New1(uString* value)
 {
     Selector obj1;
@@ -1532,39 +1533,39 @@ Selector Selector__New1(uString* value)
     return obj1;
 }
 
-// public static operator ==(Uno.UX.Selector a, Uno.UX.Selector b) [static] :699
+// public static operator ==(Uno.UX.Selector a, Uno.UX.Selector b) [static] :702
 bool Selector__op_Equality(Selector a, Selector b)
 {
     return a._handle == b._handle;
 }
 
-// public static implicit operator Uno.UX.Selector(string s) [static] :689
+// public static implicit operator Uno.UX.Selector(string s) [static] :692
 Selector Selector__op_Implicit(uString* s)
 {
     uStackFrame __("Uno.UX.Selector", "op_Implicit(string)~Uno.UX.Selector");
     return Selector__New1(s);
 }
 
-// public static implicit operator string(Uno.UX.Selector s) [static] :694
+// public static implicit operator string(Uno.UX.Selector s) [static] :697
 uString* Selector__op_Implicit1(Selector s)
 {
     uStackFrame __("Uno.UX.Selector", "op_Implicit(Uno.UX.Selector)~string");
     return s.ToString(Selector_typeof());
 }
 
-// public static operator !=(Uno.UX.Selector a, Uno.UX.Selector b) [static] :704
+// public static operator !=(Uno.UX.Selector a, Uno.UX.Selector b) [static] :707
 bool Selector__op_Inequality(Selector a, Selector b)
 {
     return a._handle != b._handle;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// internal static class SelectorRegistry :618
+// internal static class SelectorRegistry :621
 // {
-// static SelectorRegistry() :618
+// static SelectorRegistry() :621
 static void SelectorRegistry__cctor__fn(uType* __type)
 {
     SelectorRegistry::_mutex_ = ::g::Uno::Object::New();
@@ -1598,13 +1599,13 @@ uClassType* SelectorRegistry_typeof()
     return type;
 }
 
-// internal static int GetHandle(string value) :625
+// internal static int GetHandle(string value) :628
 void SelectorRegistry__GetHandle_fn(uString* value, int* __retval)
 {
     *__retval = SelectorRegistry::GetHandle(value);
 }
 
-// public static string GetValue(int handle) :640
+// public static string GetValue(int handle) :643
 void SelectorRegistry__GetValue_fn(int* handle, uString** __retval)
 {
     *__retval = SelectorRegistry::GetValue(*handle);
@@ -1615,7 +1616,7 @@ uSStrong< ::g::Uno::Collections::Dictionary*> SelectorRegistry::_handleToString_
 uSStrong<uObject*> SelectorRegistry::_mutex_;
 uSStrong< ::g::Uno::Collections::Dictionary*> SelectorRegistry::_stringToHandle_;
 
-// internal static int GetHandle(string value) [static] :625
+// internal static int GetHandle(string value) [static] :628
 int SelectorRegistry::GetHandle(uString* value)
 {
     uStackFrame __("Uno.UX.SelectorRegistry", "GetHandle(string)");
@@ -1643,7 +1644,7 @@ int SelectorRegistry::GetHandle(uString* value)
     }
 }
 
-// public static string GetValue(int handle) [static] :640
+// public static string GetValue(int handle) [static] :643
 uString* SelectorRegistry::GetValue(int handle)
 {
     uStackFrame __("Uno.UX.SelectorRegistry", "GetValue(int)");
@@ -1663,10 +1664,10 @@ uString* SelectorRegistry::GetValue(int handle)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public static extern class SimulatedProperties :398
+// public static extern class SimulatedProperties :401
 // {
 static void SimulatedProperties_build(uType* type)
 {
@@ -1687,26 +1688,26 @@ uClassType* SimulatedProperties_typeof()
     return type;
 }
 
-// public static object Get(Uno.UX.PropertyObject obj, string name) :405
+// public static object Get(Uno.UX.PropertyObject obj, string name) :408
 void SimulatedProperties__Get_fn(::g::Uno::UX::PropertyObject* obj, uString* name, uObject** __retval)
 {
     *__retval = SimulatedProperties::Get(obj, name);
 }
 
-// public static void Set(Uno.UX.PropertyObject obj, string name, object value, Uno.UX.IPropertyListener origin) :400
+// public static void Set(Uno.UX.PropertyObject obj, string name, object value, Uno.UX.IPropertyListener origin) :403
 void SimulatedProperties__Set_fn(::g::Uno::UX::PropertyObject* obj, uString* name, uObject* value, uObject* origin)
 {
     SimulatedProperties::Set(obj, name, value, origin);
 }
 
-// public static object Get(Uno.UX.PropertyObject obj, string name) [static] :405
+// public static object Get(Uno.UX.PropertyObject obj, string name) [static] :408
 uObject* SimulatedProperties::Get(::g::Uno::UX::PropertyObject* obj, uString* name)
 {
     uStackFrame __("Uno.UX.SimulatedProperties", "Get(Uno.UX.PropertyObject,string)");
     return uPtr(obj)->GetSimulatedProperty(name);
 }
 
-// public static void Set(Uno.UX.PropertyObject obj, string name, object value, Uno.UX.IPropertyListener origin) [static] :400
+// public static void Set(Uno.UX.PropertyObject obj, string name, object value, Uno.UX.IPropertyListener origin) [static] :403
 void SimulatedProperties::Set(::g::Uno::UX::PropertyObject* obj, uString* name, uObject* value, uObject* origin)
 {
     uStackFrame __("Uno.UX.SimulatedProperties", "Set(Uno.UX.PropertyObject,string,object,Uno.UX.IPropertyListener)");
@@ -1714,10 +1715,10 @@ void SimulatedProperties::Set(::g::Uno::UX::PropertyObject* obj, uString* name, 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public struct Size :748
+// public struct Size :751
 // {
 static void Size_build(uType* type)
 {
@@ -1761,31 +1762,31 @@ uStructType* Size_typeof()
     return type;
 }
 
-// public Size(float value, Uno.UX.Unit unit) :753
+// public Size(float value, Uno.UX.Unit unit) :756
 void Size__ctor__fn(Size* __this, float* value, int* unit)
 {
     __this->ctor_(*value, *unit);
 }
 
-// public static Uno.UX.Size get_Auto() :828
+// public static Uno.UX.Size get_Auto() :831
 void Size__get_Auto_fn(Size* __retval)
 {
     *__retval = Size__Auto();
 }
 
-// public static Uno.UX.Unit Combine(Uno.UX.Unit a, Uno.UX.Unit b) :774
+// public static Uno.UX.Unit Combine(Uno.UX.Unit a, Uno.UX.Unit b) :777
 void Size__Combine_fn(int* a, int* b, int* __retval)
 {
     *__retval = Size::Combine(*a, *b);
 }
 
-// public Uno.UX.Unit DetermineUnit() :782
+// public Uno.UX.Unit DetermineUnit() :785
 void Size__DetermineUnit_fn(Size* __this, int* __retval)
 {
     *__retval = __this->DetermineUnit();
 }
 
-// public override sealed bool Equals(object obj) :860
+// public override sealed bool Equals(object obj) :863
 void Size__Equals_fn(Size* __this, uType* __type, uObject* obj, bool* __retval)
 {
     uStackFrame __("Uno.UX.Size", "Equals(object)");
@@ -1818,7 +1819,7 @@ void Size__Equals_fn(Size* __this, uType* __type, uObject* obj, bool* __retval)
         return *__retval = false, void();
 }
 
-// public override sealed int GetHashCode() :879
+// public override sealed int GetHashCode() :882
 void Size__GetHashCode_fn(Size* __this, uType* __type, int* __retval)
 {
     uStackFrame __("Uno.UX.Size", "GetHashCode()");
@@ -1826,79 +1827,79 @@ void Size__GetHashCode_fn(Size* __this, uType* __type, int* __retval)
     return *__retval = ::g::Uno::Float::GetHashCode((ind7 = __this->Value, ind7), ::TYPES[18/*float*/]), void();
 }
 
-// public bool get_IsAuto() :830
+// public bool get_IsAuto() :833
 void Size__get_IsAuto_fn(Size* __this, bool* __retval)
 {
     *__retval = __this->IsAuto();
 }
 
-// public Size New(float value, Uno.UX.Unit unit) :753
+// public Size New(float value, Uno.UX.Unit unit) :756
 void Size__New1_fn(float* value, int* unit, Size* __retval)
 {
     *__retval = Size__New1(*value, *unit);
 }
 
-// public static operator +(Uno.UX.Size a, Uno.UX.Size b) :788
+// public static operator +(Uno.UX.Size a, Uno.UX.Size b) :791
 void Size__op_Addition_fn(Size* a, Size* b, Size* __retval)
 {
     *__retval = Size__op_Addition(*a, *b);
 }
 
-// public static operator /(Uno.UX.Size a, Uno.UX.Size b) :813
+// public static operator /(Uno.UX.Size a, Uno.UX.Size b) :816
 void Size__op_Division1_fn(Size* a, Size* b, Size* __retval)
 {
     *__retval = Size__op_Division1(*a, *b);
 }
 
-// public static operator ==(Uno.UX.Size a, Uno.UX.Size b) :818
+// public static operator ==(Uno.UX.Size a, Uno.UX.Size b) :821
 void Size__op_Equality_fn(Size* a, Size* b, bool* __retval)
 {
     *__retval = Size__op_Equality(*a, *b);
 }
 
-// public static explicit operator float(Uno.UX.Size s) :769
-void Size__op_Explicit_fn(Size* s, float* __retval)
+// public static explicit operator float(Uno.UX.Size s) :772
+void Size__op_Explicit1_fn(Size* s, float* __retval)
 {
-    *__retval = Size__op_Explicit(*s);
+    *__retval = Size__op_Explicit1(*s);
 }
 
-// public static implicit operator Uno.UX.Size(float unspecifiedUnits) :759
+// public static implicit operator Uno.UX.Size(float unspecifiedUnits) :762
 void Size__op_Implicit_fn(float* unspecifiedUnits, Size* __retval)
 {
     *__retval = Size__op_Implicit(*unspecifiedUnits);
 }
 
-// public static implicit operator Uno.UX.Size(int unspecifiedUnits) :764
+// public static implicit operator Uno.UX.Size(int unspecifiedUnits) :767
 void Size__op_Implicit1_fn(int* unspecifiedUnits, Size* __retval)
 {
     *__retval = Size__op_Implicit1(*unspecifiedUnits);
 }
 
-// public static operator !=(Uno.UX.Size a, Uno.UX.Size b) :823
+// public static operator !=(Uno.UX.Size a, Uno.UX.Size b) :826
 void Size__op_Inequality_fn(Size* a, Size* b, bool* __retval)
 {
     *__retval = Size__op_Inequality(*a, *b);
 }
 
-// public static operator *(Uno.UX.Size a, float b) :798
+// public static operator *(Uno.UX.Size a, float b) :801
 void Size__op_Multiply_fn(Size* a, float* b, Size* __retval)
 {
     *__retval = Size__op_Multiply(*a, *b);
 }
 
-// public static operator *(Uno.UX.Size a, Uno.UX.Size b) :808
+// public static operator *(Uno.UX.Size a, Uno.UX.Size b) :811
 void Size__op_Multiply1_fn(Size* a, Size* b, Size* __retval)
 {
     *__retval = Size__op_Multiply1(*a, *b);
 }
 
-// public static operator -(Uno.UX.Size a, Uno.UX.Size b) :793
+// public static operator -(Uno.UX.Size a, Uno.UX.Size b) :796
 void Size__op_Subtraction_fn(Size* a, Size* b, Size* __retval)
 {
     *__retval = Size__op_Subtraction(*a, *b);
 }
 
-// public override sealed string ToString() :847
+// public override sealed string ToString() :850
 void Size__ToString_fn(Size* __this, uType* __type, uString** __retval)
 {
     uStackFrame __("Uno.UX.Size", "ToString()");
@@ -1926,14 +1927,14 @@ void Size__ToString_fn(Size* __this, uType* __type, uString** __retval)
     }
 }
 
-// public Size(float value, Uno.UX.Unit unit) [instance] :753
+// public Size(float value, Uno.UX.Unit unit) [instance] :756
 void Size::ctor_(float value, int unit)
 {
     Value = value;
     Unit = unit;
 }
 
-// public Uno.UX.Unit DetermineUnit() [instance] :782
+// public Uno.UX.Unit DetermineUnit() [instance] :785
 int Size::DetermineUnit()
 {
     if (Unit == 1)
@@ -1942,13 +1943,13 @@ int Size::DetermineUnit()
         return Unit;
 }
 
-// public bool get_IsAuto() [instance] :830
+// public bool get_IsAuto() [instance] :833
 bool Size::IsAuto()
 {
     return Unit == 0;
 }
 
-// public static Uno.UX.Unit Combine(Uno.UX.Unit a, Uno.UX.Unit b) [static] :774
+// public static Uno.UX.Unit Combine(Uno.UX.Unit a, Uno.UX.Unit b) [static] :777
 int Size::Combine(int a, int b)
 {
     if (a == b)
@@ -1963,7 +1964,7 @@ int Size::Combine(int a, int b)
     return 1;
 }
 
-// public Size New(float value, Uno.UX.Unit unit) [static] :753
+// public Size New(float value, Uno.UX.Unit unit) [static] :756
 Size Size__New1(float value, int unit)
 {
     Size obj8;
@@ -1971,77 +1972,77 @@ Size Size__New1(float value, int unit)
     return obj8;
 }
 
-// public static operator +(Uno.UX.Size a, Uno.UX.Size b) [static] :788
+// public static operator +(Uno.UX.Size a, Uno.UX.Size b) [static] :791
 Size Size__op_Addition(Size a, Size b)
 {
     return Size__New1(a.Value + b.Value, Size::Combine(a.Unit, b.Unit));
 }
 
-// public static operator /(Uno.UX.Size a, Uno.UX.Size b) [static] :813
+// public static operator /(Uno.UX.Size a, Uno.UX.Size b) [static] :816
 Size Size__op_Division1(Size a, Size b)
 {
     return Size__New1(a.Value / b.Value, Size::Combine(a.Unit, b.Unit));
 }
 
-// public static operator ==(Uno.UX.Size a, Uno.UX.Size b) [static] :818
+// public static operator ==(Uno.UX.Size a, Uno.UX.Size b) [static] :821
 bool Size__op_Equality(Size a, Size b)
 {
     return (a.Value == b.Value) && (a.Unit == b.Unit);
 }
 
-// public static explicit operator float(Uno.UX.Size s) [static] :769
-float Size__op_Explicit(Size s)
+// public static explicit operator float(Uno.UX.Size s) [static] :772
+float Size__op_Explicit1(Size s)
 {
     return s.Value;
 }
 
-// public static implicit operator Uno.UX.Size(float unspecifiedUnits) [static] :759
+// public static implicit operator Uno.UX.Size(float unspecifiedUnits) [static] :762
 Size Size__op_Implicit(float unspecifiedUnits)
 {
     return Size__New1(unspecifiedUnits, 1);
 }
 
-// public static implicit operator Uno.UX.Size(int unspecifiedUnits) [static] :764
+// public static implicit operator Uno.UX.Size(int unspecifiedUnits) [static] :767
 Size Size__op_Implicit1(int unspecifiedUnits)
 {
     return Size__New1((float)unspecifiedUnits, 1);
 }
 
-// public static operator !=(Uno.UX.Size a, Uno.UX.Size b) [static] :823
+// public static operator !=(Uno.UX.Size a, Uno.UX.Size b) [static] :826
 bool Size__op_Inequality(Size a, Size b)
 {
     return (a.Value != b.Value) || (a.Unit != b.Unit);
 }
 
-// public static operator *(Uno.UX.Size a, float b) [static] :798
+// public static operator *(Uno.UX.Size a, float b) [static] :801
 Size Size__op_Multiply(Size a, float b)
 {
     return Size__New1(a.Value * b, a.Unit);
 }
 
-// public static operator *(Uno.UX.Size a, Uno.UX.Size b) [static] :808
+// public static operator *(Uno.UX.Size a, Uno.UX.Size b) [static] :811
 Size Size__op_Multiply1(Size a, Size b)
 {
     return Size__New1(a.Value * b.Value, Size::Combine(a.Unit, b.Unit));
 }
 
-// public static operator -(Uno.UX.Size a, Uno.UX.Size b) [static] :793
+// public static operator -(Uno.UX.Size a, Uno.UX.Size b) [static] :796
 Size Size__op_Subtraction(Size a, Size b)
 {
     return Size__New1(a.Value - b.Value, Size::Combine(a.Unit, b.Unit));
 }
 
-// public static Uno.UX.Size get_Auto() [static] :828
+// public static Uno.UX.Size get_Auto() [static] :831
 Size Size__Auto()
 {
     return Size__New1(0.0f, 0);
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public struct Size2 :897
+// public struct Size2 :900
 // {
 static void Size2_build(uType* type)
 {
@@ -2075,19 +2076,19 @@ uStructType* Size2_typeof()
     return type;
 }
 
-// public Size2(Uno.UX.Size x, Uno.UX.Size y) :902
+// public Size2(Uno.UX.Size x, Uno.UX.Size y) :905
 void Size2__ctor__fn(Size2* __this, ::g::Uno::UX::Size* x, ::g::Uno::UX::Size* y)
 {
     __this->ctor_(*x, *y);
 }
 
-// public static Uno.UX.Size2 get_Auto() :967
+// public static Uno.UX.Size2 get_Auto() :970
 void Size2__get_Auto_fn(Size2* __retval)
 {
     *__retval = Size2__Auto();
 }
 
-// public override sealed bool Equals(object obj) :990
+// public override sealed bool Equals(object obj) :993
 void Size2__Equals_fn(Size2* __this, uType* __type, uObject* obj, bool* __retval)
 {
     uStackFrame __("Uno.UX.Size2", "Equals(object)");
@@ -2108,7 +2109,7 @@ void Size2__Equals_fn(Size2* __this, uType* __type, uObject* obj, bool* __retval
         return *__retval = false, void();
 }
 
-// public override sealed int GetHashCode() :1002
+// public override sealed int GetHashCode() :1005
 void Size2__GetHashCode_fn(Size2* __this, uType* __type, int* __retval)
 {
     uStackFrame __("Uno.UX.Size2", "GetHashCode()");
@@ -2117,67 +2118,67 @@ void Size2__GetHashCode_fn(Size2* __this, uType* __type, int* __retval)
     return *__retval = (ind3 = __this->X, (&ind3))->GetHashCode(::TYPES[20/*Uno.UX.Size*/]) ^ (ind4 = __this->Y, (&ind4))->GetHashCode(::TYPES[20/*Uno.UX.Size*/]), void();
 }
 
-// public Size2 New(Uno.UX.Size x, Uno.UX.Size y) :902
+// public Size2 New(Uno.UX.Size x, Uno.UX.Size y) :905
 void Size2__New1_fn(::g::Uno::UX::Size* x, ::g::Uno::UX::Size* y, Size2* __retval)
 {
     *__retval = Size2__New1(*x, *y);
 }
 
-// public static operator +(Uno.UX.Size2 a, Uno.UX.Size2 b) :925
+// public static operator +(Uno.UX.Size2 a, Uno.UX.Size2 b) :928
 void Size2__op_Addition_fn(Size2* a, Size2* b, Size2* __retval)
 {
     *__retval = Size2__op_Addition(*a, *b);
 }
 
-// public static operator /(Uno.UX.Size2 a, Uno.UX.Size2 b) :950
+// public static operator /(Uno.UX.Size2 a, Uno.UX.Size2 b) :953
 void Size2__op_Division1_fn(Size2* a, Size2* b, Size2* __retval)
 {
     *__retval = Size2__op_Division1(*a, *b);
 }
 
-// public static operator ==(Uno.UX.Size2 a, Uno.UX.Size2 b) :955
+// public static operator ==(Uno.UX.Size2 a, Uno.UX.Size2 b) :958
 void Size2__op_Equality_fn(Size2* a, Size2* b, bool* __retval)
 {
     *__retval = Size2__op_Equality(*a, *b);
 }
 
-// public static explicit operator float2(Uno.UX.Size2 v) :918
-void Size2__op_Explicit_fn(Size2* v, ::g::Uno::Float2* __retval)
+// public static explicit operator float2(Uno.UX.Size2 v) :921
+void Size2__op_Explicit1_fn(Size2* v, ::g::Uno::Float2* __retval)
 {
-    *__retval = Size2__op_Explicit(*v);
+    *__retval = Size2__op_Explicit1(*v);
 }
 
-// public static implicit operator Uno.UX.Size2(float2 unspecifiedUnitsVector) :908
+// public static implicit operator Uno.UX.Size2(float2 unspecifiedUnitsVector) :911
 void Size2__op_Implicit1_fn(::g::Uno::Float2* unspecifiedUnitsVector, Size2* __retval)
 {
     *__retval = Size2__op_Implicit1(*unspecifiedUnitsVector);
 }
 
-// public static operator !=(Uno.UX.Size2 a, Uno.UX.Size2 b) :960
+// public static operator !=(Uno.UX.Size2 a, Uno.UX.Size2 b) :963
 void Size2__op_Inequality_fn(Size2* a, Size2* b, bool* __retval)
 {
     *__retval = Size2__op_Inequality(*a, *b);
 }
 
-// public static operator *(Uno.UX.Size2 a, float b) :935
+// public static operator *(Uno.UX.Size2 a, float b) :938
 void Size2__op_Multiply_fn(Size2* a, float* b, Size2* __retval)
 {
     *__retval = Size2__op_Multiply(*a, *b);
 }
 
-// public static operator *(Uno.UX.Size2 a, Uno.UX.Size2 b) :945
+// public static operator *(Uno.UX.Size2 a, Uno.UX.Size2 b) :948
 void Size2__op_Multiply1_fn(Size2* a, Size2* b, Size2* __retval)
 {
     *__retval = Size2__op_Multiply1(*a, *b);
 }
 
-// public static operator -(Uno.UX.Size2 a, Uno.UX.Size2 b) :930
+// public static operator -(Uno.UX.Size2 a, Uno.UX.Size2 b) :933
 void Size2__op_Subtraction_fn(Size2* a, Size2* b, Size2* __retval)
 {
     *__retval = Size2__op_Subtraction(*a, *b);
 }
 
-// public override sealed string ToString() :985
+// public override sealed string ToString() :988
 void Size2__ToString_fn(Size2* __this, uType* __type, uString** __retval)
 {
     uStackFrame __("Uno.UX.Size2", "ToString()");
@@ -2186,14 +2187,14 @@ void Size2__ToString_fn(Size2* __this, uType* __type, uString** __retval)
     return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2((ind1 = __this->X, (&ind1))->ToString(::TYPES[20/*Uno.UX.Size*/]), ::STRINGS[12/*", "*/]), (ind2 = __this->Y, (&ind2))->ToString(::TYPES[20/*Uno.UX.Size*/])), void();
 }
 
-// public Size2(Uno.UX.Size x, Uno.UX.Size y) [instance] :902
+// public Size2(Uno.UX.Size x, Uno.UX.Size y) [instance] :905
 void Size2::ctor_(::g::Uno::UX::Size x, ::g::Uno::UX::Size y)
 {
     X = x;
     Y = y;
 }
 
-// public Size2 New(Uno.UX.Size x, Uno.UX.Size y) [static] :902
+// public Size2 New(Uno.UX.Size x, Uno.UX.Size y) [static] :905
 Size2 Size2__New1(::g::Uno::UX::Size x, ::g::Uno::UX::Size y)
 {
     Size2 obj5;
@@ -2201,71 +2202,71 @@ Size2 Size2__New1(::g::Uno::UX::Size x, ::g::Uno::UX::Size y)
     return obj5;
 }
 
-// public static operator +(Uno.UX.Size2 a, Uno.UX.Size2 b) [static] :925
+// public static operator +(Uno.UX.Size2 a, Uno.UX.Size2 b) [static] :928
 Size2 Size2__op_Addition(Size2 a, Size2 b)
 {
     return Size2__New1(::g::Uno::UX::Size__op_Addition(a.X, b.X), ::g::Uno::UX::Size__op_Addition(a.Y, b.Y));
 }
 
-// public static operator /(Uno.UX.Size2 a, Uno.UX.Size2 b) [static] :950
+// public static operator /(Uno.UX.Size2 a, Uno.UX.Size2 b) [static] :953
 Size2 Size2__op_Division1(Size2 a, Size2 b)
 {
     return Size2__New1(::g::Uno::UX::Size__op_Division1(a.X, b.X), ::g::Uno::UX::Size__op_Division1(a.Y, b.Y));
 }
 
-// public static operator ==(Uno.UX.Size2 a, Uno.UX.Size2 b) [static] :955
+// public static operator ==(Uno.UX.Size2 a, Uno.UX.Size2 b) [static] :958
 bool Size2__op_Equality(Size2 a, Size2 b)
 {
     return ::g::Uno::UX::Size__op_Equality(a.X, b.X) && ::g::Uno::UX::Size__op_Equality(a.Y, b.Y);
 }
 
-// public static explicit operator float2(Uno.UX.Size2 v) [static] :918
-::g::Uno::Float2 Size2__op_Explicit(Size2 v)
+// public static explicit operator float2(Uno.UX.Size2 v) [static] :921
+::g::Uno::Float2 Size2__op_Explicit1(Size2 v)
 {
     ::g::Uno::UX::Size x = v.X;
     ::g::Uno::UX::Size y = v.Y;
     return ::g::Uno::Float2__New2(x.Value, y.Value);
 }
 
-// public static implicit operator Uno.UX.Size2(float2 unspecifiedUnitsVector) [static] :908
+// public static implicit operator Uno.UX.Size2(float2 unspecifiedUnitsVector) [static] :911
 Size2 Size2__op_Implicit1(::g::Uno::Float2 unspecifiedUnitsVector)
 {
     return Size2__New1(::g::Uno::UX::Size__op_Implicit(unspecifiedUnitsVector.X), ::g::Uno::UX::Size__op_Implicit(unspecifiedUnitsVector.Y));
 }
 
-// public static operator !=(Uno.UX.Size2 a, Uno.UX.Size2 b) [static] :960
+// public static operator !=(Uno.UX.Size2 a, Uno.UX.Size2 b) [static] :963
 bool Size2__op_Inequality(Size2 a, Size2 b)
 {
     return ::g::Uno::UX::Size__op_Inequality(a.X, b.X) || ::g::Uno::UX::Size__op_Inequality(a.Y, b.Y);
 }
 
-// public static operator *(Uno.UX.Size2 a, float b) [static] :935
+// public static operator *(Uno.UX.Size2 a, float b) [static] :938
 Size2 Size2__op_Multiply(Size2 a, float b)
 {
     return Size2__New1(::g::Uno::UX::Size__op_Multiply(a.X, b), ::g::Uno::UX::Size__op_Multiply(a.Y, b));
 }
 
-// public static operator *(Uno.UX.Size2 a, Uno.UX.Size2 b) [static] :945
+// public static operator *(Uno.UX.Size2 a, Uno.UX.Size2 b) [static] :948
 Size2 Size2__op_Multiply1(Size2 a, Size2 b)
 {
     return Size2__New1(::g::Uno::UX::Size__op_Multiply1(a.X, b.X), ::g::Uno::UX::Size__op_Multiply1(a.Y, b.Y));
 }
 
-// public static operator -(Uno.UX.Size2 a, Uno.UX.Size2 b) [static] :930
+// public static operator -(Uno.UX.Size2 a, Uno.UX.Size2 b) [static] :933
 Size2 Size2__op_Subtraction(Size2 a, Size2 b)
 {
     return Size2__New1(::g::Uno::UX::Size__op_Subtraction(a.X, b.X), ::g::Uno::UX::Size__op_Subtraction(a.Y, b.Y));
 }
 
-// public static Uno.UX.Size2 get_Auto() [static] :967
+// public static Uno.UX.Size2 get_Auto() [static] :970
 Size2 Size2__Auto()
 {
     return Size2__New1(::g::Uno::UX::Size__Auto(), ::g::Uno::UX::Size__Auto());
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
 // internal static class StreamExtensions :100
 // {
@@ -2343,10 +2344,10 @@ uArray* StreamExtensions::ToArray(::g::Uno::IO::MemoryStream* memoryStream)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public abstract class Template :1023
+// public abstract class Template :1026
 // {
 static void Template_build(uType* type)
 {
@@ -2373,48 +2374,48 @@ Template_type* Template_typeof()
     return type;
 }
 
-// protected Template(string key, bool isDefault) :1033
+// protected Template(string key, bool isDefault) :1036
 void Template__ctor__fn(Template* __this, uString* key, bool* isDefault)
 {
     __this->ctor_(key, *isDefault);
 }
 
-// public bool get_IsDefault() :1031
+// public bool get_IsDefault() :1034
 void Template__get_IsDefault_fn(Template* __this, bool* __retval)
 {
     *__retval = __this->IsDefault();
 }
 
-// public string get_Key() :1027
+// public string get_Key() :1030
 void Template__get_Key_fn(Template* __this, uString** __retval)
 {
     *__retval = __this->Key();
 }
 
-// protected Template(string key, bool isDefault) [instance] :1033
+// protected Template(string key, bool isDefault) [instance] :1036
 void Template::ctor_(uString* key, bool isDefault)
 {
     _key = key;
     _isDefault = isDefault;
 }
 
-// public bool get_IsDefault() [instance] :1031
+// public bool get_IsDefault() [instance] :1034
 bool Template::IsDefault()
 {
     return _isDefault;
 }
 
-// public string get_Key() [instance] :1027
+// public string get_Key() [instance] :1030
 uString* Template::Key()
 {
     return _key;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public enum Unit :725
+// public enum Unit :728
 uEnumType* Unit_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -2430,10 +2431,63 @@ uEnumType* Unit_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public sealed class UXAutoNameTableAttribute :220
+// public sealed class UXAutoClassNameAttribute :223
+// {
+static void UXAutoClassNameAttribute_build(uType* type)
+{
+    type->Reflection.SetFunctions(1,
+        new uFunction(".ctor", NULL, (void*)UXAutoClassNameAttribute__New1_fn, 0, true, type, 0));
+}
+
+uType* UXAutoClassNameAttribute_typeof()
+{
+    static uSStrong<uType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::Attribute_typeof();
+    options.ObjectSize = sizeof(UXAutoClassNameAttribute);
+    options.TypeSize = sizeof(uType);
+    type = uClassType::New("Uno.UX.UXAutoClassNameAttribute", options);
+    type->fp_build_ = UXAutoClassNameAttribute_build;
+    type->fp_ctor_ = (void*)UXAutoClassNameAttribute__New1_fn;
+    return type;
+}
+
+// public generated UXAutoClassNameAttribute() :223
+void UXAutoClassNameAttribute__ctor_1_fn(UXAutoClassNameAttribute* __this)
+{
+    __this->ctor_1();
+}
+
+// public generated UXAutoClassNameAttribute New() :223
+void UXAutoClassNameAttribute__New1_fn(UXAutoClassNameAttribute** __retval)
+{
+    *__retval = UXAutoClassNameAttribute::New1();
+}
+
+// public generated UXAutoClassNameAttribute() [instance] :223
+void UXAutoClassNameAttribute::ctor_1()
+{
+    ctor_();
+}
+
+// public generated UXAutoClassNameAttribute New() [static] :223
+UXAutoClassNameAttribute* UXAutoClassNameAttribute::New1()
+{
+    UXAutoClassNameAttribute* obj1 = (UXAutoClassNameAttribute*)uNew(UXAutoClassNameAttribute_typeof());
+    obj1->ctor_1();
+    return obj1;
+}
+// }
+
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
+
+// public sealed class UXAutoNameTableAttribute :221
 // {
 static void UXAutoNameTableAttribute_build(uType* type)
 {
@@ -2456,25 +2510,25 @@ uType* UXAutoNameTableAttribute_typeof()
     return type;
 }
 
-// public generated UXAutoNameTableAttribute() :220
+// public generated UXAutoNameTableAttribute() :221
 void UXAutoNameTableAttribute__ctor_1_fn(UXAutoNameTableAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated UXAutoNameTableAttribute New() :220
+// public generated UXAutoNameTableAttribute New() :221
 void UXAutoNameTableAttribute__New1_fn(UXAutoNameTableAttribute** __retval)
 {
     *__retval = UXAutoNameTableAttribute::New1();
 }
 
-// public generated UXAutoNameTableAttribute() [instance] :220
+// public generated UXAutoNameTableAttribute() [instance] :221
 void UXAutoNameTableAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated UXAutoNameTableAttribute New() [static] :220
+// public generated UXAutoNameTableAttribute New() [static] :221
 UXAutoNameTableAttribute* UXAutoNameTableAttribute::New1()
 {
     UXAutoNameTableAttribute* obj1 = (UXAutoNameTableAttribute*)uNew(UXAutoNameTableAttribute_typeof());
@@ -2483,8 +2537,8 @@ UXAutoNameTableAttribute* UXAutoNameTableAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/attributes/$.uno
+// --------------------------------------------------------------------------
 
 // public sealed class UXComponentsAttribute :140
 // {
@@ -2536,8 +2590,8 @@ UXComponentsAttribute* UXComponentsAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/attributes/$.uno
+// --------------------------------------------------------------------------
 
 // public sealed class UXConstructorAttribute :152
 // {
@@ -2589,8 +2643,8 @@ UXConstructorAttribute* UXConstructorAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/attributes/$.uno
+// --------------------------------------------------------------------------
 
 // public sealed class UXContentAttribute :163
 // {
@@ -2642,8 +2696,8 @@ UXContentAttribute* UXContentAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
 // public sealed class UXExpressionAttribute :140
 // {
@@ -2695,10 +2749,10 @@ UXExpressionAttribute* UXExpressionAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/attributes/$.uno
+// --------------------------------------------------------------------------
 
-// public sealed class UXFileNameAttribute :278
+// public sealed class UXFileNameAttribute :291
 // {
 static void UXFileNameAttribute_build(uType* type)
 {
@@ -2721,25 +2775,25 @@ uType* UXFileNameAttribute_typeof()
     return type;
 }
 
-// public generated UXFileNameAttribute() :278
+// public generated UXFileNameAttribute() :291
 void UXFileNameAttribute__ctor_1_fn(UXFileNameAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated UXFileNameAttribute New() :278
+// public generated UXFileNameAttribute New() :291
 void UXFileNameAttribute__New1_fn(UXFileNameAttribute** __retval)
 {
     *__retval = UXFileNameAttribute::New1();
 }
 
-// public generated UXFileNameAttribute() [instance] :278
+// public generated UXFileNameAttribute() [instance] :291
 void UXFileNameAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated UXFileNameAttribute New() [static] :278
+// public generated UXFileNameAttribute New() [static] :291
 UXFileNameAttribute* UXFileNameAttribute::New1()
 {
     UXFileNameAttribute* obj1 = (UXFileNameAttribute*)uNew(UXFileNameAttribute_typeof());
@@ -2748,10 +2802,10 @@ UXFileNameAttribute* UXFileNameAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/attributes/$.uno
+// --------------------------------------------------------------------------
 
-// public sealed class UXFreestandingAttribute :192
+// public sealed class UXFreestandingAttribute :205
 // {
 static void UXFreestandingAttribute_build(uType* type)
 {
@@ -2774,25 +2828,25 @@ uType* UXFreestandingAttribute_typeof()
     return type;
 }
 
-// public generated UXFreestandingAttribute() :192
+// public generated UXFreestandingAttribute() :205
 void UXFreestandingAttribute__ctor_1_fn(UXFreestandingAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated UXFreestandingAttribute New() :192
+// public generated UXFreestandingAttribute New() :205
 void UXFreestandingAttribute__New1_fn(UXFreestandingAttribute** __retval)
 {
     *__retval = UXFreestandingAttribute::New1();
 }
 
-// public generated UXFreestandingAttribute() [instance] :192
+// public generated UXFreestandingAttribute() [instance] :205
 void UXFreestandingAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated UXFreestandingAttribute New() [static] :192
+// public generated UXFreestandingAttribute New() [static] :205
 UXFreestandingAttribute* UXFreestandingAttribute::New1()
 {
     UXFreestandingAttribute* obj1 = (UXFreestandingAttribute*)uNew(UXFreestandingAttribute_typeof());
@@ -2801,10 +2855,10 @@ UXFreestandingAttribute* UXFreestandingAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/attributes/$.uno
+// --------------------------------------------------------------------------
 
-// public sealed class UXGlobalModuleAttribute :224
+// public sealed class UXGlobalModuleAttribute :237
 // {
 static void UXGlobalModuleAttribute_build(uType* type)
 {
@@ -2827,25 +2881,25 @@ uType* UXGlobalModuleAttribute_typeof()
     return type;
 }
 
-// public UXGlobalModuleAttribute() :226
+// public UXGlobalModuleAttribute() :239
 void UXGlobalModuleAttribute__ctor_1_fn(UXGlobalModuleAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public UXGlobalModuleAttribute New() :226
+// public UXGlobalModuleAttribute New() :239
 void UXGlobalModuleAttribute__New1_fn(UXGlobalModuleAttribute** __retval)
 {
     *__retval = UXGlobalModuleAttribute::New1();
 }
 
-// public UXGlobalModuleAttribute() [instance] :226
+// public UXGlobalModuleAttribute() [instance] :239
 void UXGlobalModuleAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public UXGlobalModuleAttribute New() [static] :226
+// public UXGlobalModuleAttribute New() [static] :239
 UXGlobalModuleAttribute* UXGlobalModuleAttribute::New1()
 {
     UXGlobalModuleAttribute* obj1 = (UXGlobalModuleAttribute*)uNew(UXGlobalModuleAttribute_typeof());
@@ -2854,10 +2908,10 @@ UXGlobalModuleAttribute* UXGlobalModuleAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/attributes/$.uno
+// --------------------------------------------------------------------------
 
-// public sealed class UXGlobalResourceAttribute :212
+// public sealed class UXGlobalResourceAttribute :225
 // {
 static void UXGlobalResourceAttribute_build(uType* type)
 {
@@ -2886,44 +2940,44 @@ uType* UXGlobalResourceAttribute_typeof()
     return type;
 }
 
-// public UXGlobalResourceAttribute() :221
+// public UXGlobalResourceAttribute() :234
 void UXGlobalResourceAttribute__ctor_1_fn(UXGlobalResourceAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public UXGlobalResourceAttribute(string alias) :216
+// public UXGlobalResourceAttribute(string alias) :229
 void UXGlobalResourceAttribute__ctor_2_fn(UXGlobalResourceAttribute* __this, uString* alias)
 {
     __this->ctor_2(alias);
 }
 
-// public UXGlobalResourceAttribute New() :221
+// public UXGlobalResourceAttribute New() :234
 void UXGlobalResourceAttribute__New1_fn(UXGlobalResourceAttribute** __retval)
 {
     *__retval = UXGlobalResourceAttribute::New1();
 }
 
-// public UXGlobalResourceAttribute New(string alias) :216
+// public UXGlobalResourceAttribute New(string alias) :229
 void UXGlobalResourceAttribute__New2_fn(uString* alias, UXGlobalResourceAttribute** __retval)
 {
     *__retval = UXGlobalResourceAttribute::New2(alias);
 }
 
-// public UXGlobalResourceAttribute() [instance] :221
+// public UXGlobalResourceAttribute() [instance] :234
 void UXGlobalResourceAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public UXGlobalResourceAttribute(string alias) [instance] :216
+// public UXGlobalResourceAttribute(string alias) [instance] :229
 void UXGlobalResourceAttribute::ctor_2(uString* alias)
 {
     ctor_();
     Alias = alias;
 }
 
-// public UXGlobalResourceAttribute New() [static] :221
+// public UXGlobalResourceAttribute New() [static] :234
 UXGlobalResourceAttribute* UXGlobalResourceAttribute::New1()
 {
     UXGlobalResourceAttribute* obj2 = (UXGlobalResourceAttribute*)uNew(UXGlobalResourceAttribute_typeof());
@@ -2931,7 +2985,7 @@ UXGlobalResourceAttribute* UXGlobalResourceAttribute::New1()
     return obj2;
 }
 
-// public UXGlobalResourceAttribute New(string alias) [static] :216
+// public UXGlobalResourceAttribute New(string alias) [static] :229
 UXGlobalResourceAttribute* UXGlobalResourceAttribute::New2(uString* alias)
 {
     UXGlobalResourceAttribute* obj1 = (UXGlobalResourceAttribute*)uNew(UXGlobalResourceAttribute_typeof());
@@ -2940,10 +2994,10 @@ UXGlobalResourceAttribute* UXGlobalResourceAttribute::New2(uString* alias)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/attributes/$.uno
+// --------------------------------------------------------------------------
 
-// public sealed class UXLineNumberAttribute :250
+// public sealed class UXLineNumberAttribute :263
 // {
 static void UXLineNumberAttribute_build(uType* type)
 {
@@ -2966,25 +3020,25 @@ uType* UXLineNumberAttribute_typeof()
     return type;
 }
 
-// public generated UXLineNumberAttribute() :250
+// public generated UXLineNumberAttribute() :263
 void UXLineNumberAttribute__ctor_1_fn(UXLineNumberAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated UXLineNumberAttribute New() :250
+// public generated UXLineNumberAttribute New() :263
 void UXLineNumberAttribute__New1_fn(UXLineNumberAttribute** __retval)
 {
     *__retval = UXLineNumberAttribute::New1();
 }
 
-// public generated UXLineNumberAttribute() [instance] :250
+// public generated UXLineNumberAttribute() [instance] :263
 void UXLineNumberAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated UXLineNumberAttribute New() [static] :250
+// public generated UXLineNumberAttribute New() [static] :263
 UXLineNumberAttribute* UXLineNumberAttribute::New1()
 {
     UXLineNumberAttribute* obj1 = (UXLineNumberAttribute*)uNew(UXLineNumberAttribute_typeof());
@@ -2993,10 +3047,10 @@ UXLineNumberAttribute* UXLineNumberAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/attributes/$.uno
+// --------------------------------------------------------------------------
 
-// public sealed class UXNameAttribute :273
+// public sealed class UXNameAttribute :286
 // {
 static void UXNameAttribute_build(uType* type)
 {
@@ -3019,25 +3073,25 @@ uType* UXNameAttribute_typeof()
     return type;
 }
 
-// public generated UXNameAttribute() :273
+// public generated UXNameAttribute() :286
 void UXNameAttribute__ctor_1_fn(UXNameAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated UXNameAttribute New() :273
+// public generated UXNameAttribute New() :286
 void UXNameAttribute__New1_fn(UXNameAttribute** __retval)
 {
     *__retval = UXNameAttribute::New1();
 }
 
-// public generated UXNameAttribute() [instance] :273
+// public generated UXNameAttribute() [instance] :286
 void UXNameAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated UXNameAttribute New() [static] :273
+// public generated UXNameAttribute New() [static] :286
 UXNameAttribute* UXNameAttribute::New1()
 {
     UXNameAttribute* obj1 = (UXNameAttribute*)uNew(UXNameAttribute_typeof());
@@ -3046,10 +3100,10 @@ UXNameAttribute* UXNameAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/attributes/$.uno
+// --------------------------------------------------------------------------
 
-// public sealed class UXPrimaryAttribute :346
+// public sealed class UXPrimaryAttribute :359
 // {
 static void UXPrimaryAttribute_build(uType* type)
 {
@@ -3072,25 +3126,25 @@ uType* UXPrimaryAttribute_typeof()
     return type;
 }
 
-// public generated UXPrimaryAttribute() :346
+// public generated UXPrimaryAttribute() :359
 void UXPrimaryAttribute__ctor_1_fn(UXPrimaryAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated UXPrimaryAttribute New() :346
+// public generated UXPrimaryAttribute New() :359
 void UXPrimaryAttribute__New1_fn(UXPrimaryAttribute** __retval)
 {
     *__retval = UXPrimaryAttribute::New1();
 }
 
-// public generated UXPrimaryAttribute() [instance] :346
+// public generated UXPrimaryAttribute() [instance] :359
 void UXPrimaryAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated UXPrimaryAttribute New() [static] :346
+// public generated UXPrimaryAttribute New() [static] :359
 UXPrimaryAttribute* UXPrimaryAttribute::New1()
 {
     UXPrimaryAttribute* obj1 = (UXPrimaryAttribute*)uNew(UXPrimaryAttribute_typeof());
@@ -3099,10 +3153,10 @@ UXPrimaryAttribute* UXPrimaryAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/attributes/$.uno
+// --------------------------------------------------------------------------
 
-// public sealed class UXSourceFileNameAttribute :354
+// public sealed class UXSourceFileNameAttribute :367
 // {
 static void UXSourceFileNameAttribute_build(uType* type)
 {
@@ -3125,25 +3179,25 @@ uType* UXSourceFileNameAttribute_typeof()
     return type;
 }
 
-// public generated UXSourceFileNameAttribute() :354
+// public generated UXSourceFileNameAttribute() :367
 void UXSourceFileNameAttribute__ctor_1_fn(UXSourceFileNameAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated UXSourceFileNameAttribute New() :354
+// public generated UXSourceFileNameAttribute New() :367
 void UXSourceFileNameAttribute__New1_fn(UXSourceFileNameAttribute** __retval)
 {
     *__retval = UXSourceFileNameAttribute::New1();
 }
 
-// public generated UXSourceFileNameAttribute() [instance] :354
+// public generated UXSourceFileNameAttribute() [instance] :367
 void UXSourceFileNameAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated UXSourceFileNameAttribute New() [static] :354
+// public generated UXSourceFileNameAttribute New() [static] :367
 UXSourceFileNameAttribute* UXSourceFileNameAttribute::New1()
 {
     UXSourceFileNameAttribute* obj1 = (UXSourceFileNameAttribute*)uNew(UXSourceFileNameAttribute_typeof());
@@ -3152,10 +3206,10 @@ UXSourceFileNameAttribute* UXSourceFileNameAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/attributes/$.uno
+// --------------------------------------------------------------------------
 
-// public sealed class UXValueBindingArgumentAttribute :382
+// public sealed class UXValueBindingArgumentAttribute :395
 // {
 static void UXValueBindingArgumentAttribute_build(uType* type)
 {
@@ -3178,25 +3232,25 @@ uType* UXValueBindingArgumentAttribute_typeof()
     return type;
 }
 
-// public generated UXValueBindingArgumentAttribute() :382
+// public generated UXValueBindingArgumentAttribute() :395
 void UXValueBindingArgumentAttribute__ctor_1_fn(UXValueBindingArgumentAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated UXValueBindingArgumentAttribute New() :382
+// public generated UXValueBindingArgumentAttribute New() :395
 void UXValueBindingArgumentAttribute__New1_fn(UXValueBindingArgumentAttribute** __retval)
 {
     *__retval = UXValueBindingArgumentAttribute::New1();
 }
 
-// public generated UXValueBindingArgumentAttribute() [instance] :382
+// public generated UXValueBindingArgumentAttribute() [instance] :395
 void UXValueBindingArgumentAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated UXValueBindingArgumentAttribute New() [static] :382
+// public generated UXValueBindingArgumentAttribute New() [static] :395
 UXValueBindingArgumentAttribute* UXValueBindingArgumentAttribute::New1()
 {
     UXValueBindingArgumentAttribute* obj1 = (UXValueBindingArgumentAttribute*)uNew(UXValueBindingArgumentAttribute_typeof());
@@ -3205,10 +3259,10 @@ UXValueBindingArgumentAttribute* UXValueBindingArgumentAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/attributes/$.uno
+// --------------------------------------------------------------------------
 
-// public sealed class UXValueBindingTargetAttribute :392
+// public sealed class UXValueBindingTargetAttribute :405
 // {
 static void UXValueBindingTargetAttribute_build(uType* type)
 {
@@ -3231,25 +3285,25 @@ uType* UXValueBindingTargetAttribute_typeof()
     return type;
 }
 
-// public generated UXValueBindingTargetAttribute() :392
+// public generated UXValueBindingTargetAttribute() :405
 void UXValueBindingTargetAttribute__ctor_1_fn(UXValueBindingTargetAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated UXValueBindingTargetAttribute New() :392
+// public generated UXValueBindingTargetAttribute New() :405
 void UXValueBindingTargetAttribute__New1_fn(UXValueBindingTargetAttribute** __retval)
 {
     *__retval = UXValueBindingTargetAttribute::New1();
 }
 
-// public generated UXValueBindingTargetAttribute() [instance] :392
+// public generated UXValueBindingTargetAttribute() [instance] :405
 void UXValueBindingTargetAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated UXValueBindingTargetAttribute New() [static] :392
+// public generated UXValueBindingTargetAttribute New() [static] :405
 UXValueBindingTargetAttribute* UXValueBindingTargetAttribute::New1()
 {
     UXValueBindingTargetAttribute* obj1 = (UXValueBindingTargetAttribute*)uNew(UXValueBindingTargetAttribute_typeof());
@@ -3258,8 +3312,8 @@ UXValueBindingTargetAttribute* UXValueBindingTargetAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/attributes/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/attributes/$.uno
+// --------------------------------------------------------------------------
 
 // public sealed class UXVerbatimAttribute :165
 // {
@@ -3311,10 +3365,10 @@ UXVerbatimAttribute* UXVerbatimAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public class ValueChangedArgs<T> :227
+// public class ValueChangedArgs<T> :230
 // {
 static void ValueChangedArgs_build(uType* type)
 {
@@ -3341,14 +3395,14 @@ uType* ValueChangedArgs_typeof()
     return type;
 }
 
-// public ValueChangedArgs(T value) :231
+// public ValueChangedArgs(T value) :234
 void ValueChangedArgs__ctor_1_fn(ValueChangedArgs* __this, void* value)
 {
     __this->ctor_();
     ValueChangedArgs__set_Value_fn(__this, value);
 }
 
-// public ValueChangedArgs New(T value) :231
+// public ValueChangedArgs New(T value) :234
 void ValueChangedArgs__New2_fn(uType* __type, void* value, ValueChangedArgs** __retval)
 {
     ValueChangedArgs* obj1 = (ValueChangedArgs*)uNew(__type);
@@ -3356,23 +3410,23 @@ void ValueChangedArgs__New2_fn(uType* __type, void* value, ValueChangedArgs** __
     return *__retval = obj1, void();
 }
 
-// public generated T get_Value() :229
+// public generated T get_Value() :232
 void ValueChangedArgs__get_Value_fn(ValueChangedArgs* __this, uTRef __retval)
 {
     return __retval.Store(__this->_Value()), void();
 }
 
-// private generated void set_Value(T value) :229
+// private generated void set_Value(T value) :232
 void ValueChangedArgs__set_Value_fn(ValueChangedArgs* __this, void* value)
 {
     __this->_Value() = value;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno
+// ---------------------------------------------------------------
 
-// public delegate void ValueChangedHandler<T>(object sender, Uno.UX.ValueChangedArgs<T> args) :237
+// public delegate void ValueChangedHandler<T>(object sender, Uno.UX.ValueChangedArgs<T> args) :240
 uDelegateType* ValueChangedHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;

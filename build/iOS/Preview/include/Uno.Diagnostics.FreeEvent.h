@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/diagnostics/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Uno{
 namespace Diagnostics{
 
-// public sealed class FreeEvent :226
+// public sealed class FreeEvent :233
 // {
 ::g::Uno::Diagnostics::ProfileEvent_type* FreeEvent_typeof();
 void FreeEvent__get_Type_fn(FreeEvent* __this, int* __retval);

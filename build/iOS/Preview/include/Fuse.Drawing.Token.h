@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Drawing.Surface/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace Drawing{
 
-// internal sealed class Token :3404
+// internal sealed class Token :2679
 // {
 uType* Token_typeof();
 void Token__ctor__fn(Token* __this, int* first, bool* hasAction);

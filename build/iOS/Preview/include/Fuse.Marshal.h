@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Marshal/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Marshal/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -54,7 +54,11 @@ void Marshal__ToSize2_fn(uObject* o, ::g::Uno::UX::Size2* __retval);
 void Marshal__ToType_fn(uType* __type, uObject* o, uTRef __retval);
 void Marshal__ToUInt_fn(uObject* o, uint32_t* __retval);
 void Marshal__ToUShort_fn(uObject* o, uint16_t* __retval);
+void Marshal__ToVector_fn(uObject* arr, uObject** __retval);
+void Marshal__TryConvertArrayToVector_fn(uObject* arg, uObject** __retval);
 void Marshal__TryConvertTo_fn(uType* t, uObject* o, uObject** res, uObject* diagnosticSource, bool* __retval);
+void Marshal__TryToType_fn(uType* __type, uObject* o, uTRef res, bool* __retval);
+void Marshal__TryToZeroFloat4_fn(uObject* o, ::g::Uno::Float4* value, int* size, bool* __retval);
 
 struct Marshal : uObject
 {
@@ -99,7 +103,12 @@ struct Marshal : uObject
     static T ToType(uType* __type, uObject* o) { T __retval; return Marshal__ToType_fn(__type, o, &__retval), __retval; }
     static uint32_t ToUInt(uObject* o);
     static uint16_t ToUShort(uObject* o);
+    static uObject* ToVector(uObject* arr);
+    static uObject* TryConvertArrayToVector(uObject* arg);
     static bool TryConvertTo(uType* t, uObject* o, uObject** res, uObject* diagnosticSource);
+    template<class T>
+    static bool TryToType(uType* __type, uObject* o, T* res) { bool __retval; return Marshal__TryToType_fn(__type, o, uConstrain(__type->U(0), res), &__retval), __retval; }
+    static bool TryToZeroFloat4(uObject* o, ::g::Uno::Float4* value, int* size);
 };
 // }
 

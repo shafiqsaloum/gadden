@@ -1,8 +1,8 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Threading/1.0.13/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Uno.Threading/1.2.2/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Implementation/Cpp/posix_reset_event.h>
+#include <Implementation/Posix/posix_reset_event.h>
 #include <Uno.IDisposable.h>
 #include <Uno.Object.h>
 namespace g{namespace Uno{namespace Threading{struct EventWaitHandle;}}}
@@ -11,7 +11,7 @@ namespace g{
 namespace Uno{
 namespace Threading{
 
-// public class EventWaitHandle :232
+// public class EventWaitHandle :231
 // {
 struct EventWaitHandle_type : uType
 {

@@ -1,9 +1,9 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBase-d3bd6f2e.h>
-#include <Fuse.Animations.IUnwr-594abe9.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h>
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
 #include <Fuse.Binding.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -49,7 +49,7 @@ struct WhileValue : ::g::Fuse::Triggers::WhileTrigger
     bool _hasValue;
     uStrong<uObject*> _obj;
     uStrong<uObject*> _source;
-    uTField _value() { return __type->Field(this, 34); }
+    uTField _value() { return __type->Field(this, 37); }
     uStrong<uDelegate*> ValueChanged1;
 
     void ctor_6();

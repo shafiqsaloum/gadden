@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.iOS/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.App.h>
@@ -7,13 +7,13 @@
 #include <Fuse.Controls.GraphicsView.h>
 #include <Fuse.Controls.INativeViewRoot.h>
 #include <Fuse.Controls.ITextRenderer.h>
-#include <Fuse.Controls.Native.-6c93d881.h>
-#include <Fuse.Controls.Native.-87450d8.h>
-#include <Fuse.Controls.Native.-8c20fe6.h>
-#include <Fuse.Controls.Native.-cfc7adc7.h>
-#include <Fuse.Controls.Native.-e502cdf1.h>
+#include <Fuse.Controls.Native.iOS.FocusHelpers.h>
+#include <Fuse.Controls.Native.iOS.NativeFocus.h>
+#include <Fuse.Controls.Native.NativeRootViewport.h>
+#include <Fuse.Controls.Native.ViewHandle.h>
+#include <Fuse.Controls.Native.ViewHandle.InputMode.h>
 #include <Fuse.Controls.TextControl.h>
-#include <Fuse.Controls.TreeRen-26cd82a8.h>
+#include <Fuse.Controls.TreeRendererPanel.h>
 #include <Fuse.Device.h>
 #include <Fuse.iOS.Bindings.TextRenderer.h>
 #include <Fuse.MobileBootstrapping.h>
@@ -88,62 +88,62 @@ static void App_build(uType* type)
     return type;
 }
 
-// public App() :124
+// public App() :138
 void App__ctor_3_fn(App* __this)
 {
     __this->ctor_3();
 }
 
-// private void CheckFocus() :192
+// private void CheckFocus() :205
 void App__CheckFocus_fn(App* __this)
 {
     __this->CheckFocus();
 }
 
-// private void CheckStatusBarOrientation() :223
+// private void CheckStatusBarOrientation() :236
 void App__CheckStatusBarOrientation_fn(App* __this)
 {
     __this->CheckStatusBarOrientation();
 }
 
-// public override sealed Uno.Collections.IList<Fuse.Node> get_Children() :148
+// public override sealed Uno.Collections.IList<Fuse.Node> get_Children() :161
 void App__get_Children_fn(App* __this, uObject** __retval)
 {
     uStackFrame __("Fuse.App", "get_Children()");
-    return *__retval = uPtr(__this->_graphicsView)->Children(), void();
+    return *__retval = uPtr(__this->RootVisual())->Children(), void();
 }
 
-// public override sealed Fuse.Visual get_ChildrenVisual() :153
+// public override sealed Fuse.Visual get_ChildrenVisual() :166
 void App__get_ChildrenVisual_fn(App* __this, ::g::Fuse::Visual** __retval)
 {
-    return *__retval = __this->_graphicsView, void();
+    return *__retval = __this->RootVisual(), void();
 }
 
-// private static bool Compare(ObjC.Object x, ObjC.Object y) :210
+// private static bool Compare(ObjC.Object x, ObjC.Object y) :223
 void App__Compare_fn(::g::ObjC::Object* x, ::g::ObjC::Object* y, bool* __retval)
 {
     *__retval = App::Compare(x, y);
 }
 
-// private static bool IsNull(ObjC.Object x) :217
+// private static bool IsNull(ObjC.Object x) :230
 void App__IsNull_fn(::g::ObjC::Object* x, bool* __retval)
 {
     *__retval = App::IsNull(x);
 }
 
-// public App New() :124
+// public App New() :138
 void App__New1_fn(App** __retval)
 {
     *__retval = App::New1();
 }
 
-// private void OnTick(object sender, Uno.Platform.TimerEventArgs args) :156
+// private void OnTick(object sender, Uno.Platform.TimerEventArgs args) :169
 void App__OnTick_fn(App* __this, uObject* sender, ::g::Uno::Platform::TimerEventArgs* args)
 {
     __this->OnTick(sender, args);
 }
 
-// protected override void OnUpdate() :183
+// protected override void OnUpdate() :196
 void App__OnUpdate_fn(App* __this)
 {
     uStackFrame __("Fuse.App", "OnUpdate()");
@@ -152,32 +152,37 @@ void App__OnUpdate_fn(App* __this)
     ::g::Fuse::AppBase__OnUpdate_fn(__this);
 }
 
-// private void PropagateBackground() :178
+// private void PropagateBackground() :191
 void App__PropagateBackground_fn(App* __this)
 {
     __this->PropagateBackground();
 }
 
-// public App() [instance] :124
+// private Fuse.Visual get_RootVisual() :128
+void App__get_RootVisual_fn(App* __this, ::g::Fuse::Visual** __retval)
+{
+    *__retval = __this->RootVisual();
+}
+
+// public App() [instance] :138
 void App::ctor_3()
 {
     uStackFrame __("Fuse.App", ".ctor()");
+    _graphicsView = ::g::Fuse::Controls::GraphicsView::New3();
     _prevStatusBarOrientation = -1;
     ctor_2();
     ::g::Fuse::Platform::SystemUI::OnCreate();
     ::g::Fuse::Controls::TextControl::TextRendererFactory(uDelegate::New(::TYPES[0/*Uno.Func<Fuse.Controls.TextControl, Fuse.Controls.ITextRenderer>*/], (void*)::g::Fuse::iOS::Bindings::TextRenderer__Create_fn));
     ::g::Fuse::MobileBootstrapping::Init();
-    RootViewport(::g::Fuse::Controls::Native::NativeRootViewport::New4(::g::Fuse::Controls::Native::ViewHandle::New1(::g::Fuse::AppRoot::Handle())));
+    RootViewport(::g::Fuse::Controls::Native::NativeRootViewport::New4(::g::Fuse::Controls::Native::ViewHandle::New1(::g::Fuse::AppRoot::Handle(), 0)));
     ::g::Fuse::Time::Init(::g::Uno::Diagnostics::Clock::GetSeconds());
     uPtr(::g::Uno::Platform::Displays::MainDisplay())->add_Tick(uDelegate::New(::TYPES[1/*Uno.EventHandler<Uno.Platform.TimerEventArgs>*/], (void*)App__OnTick_fn, this));
     _renderPanel = ::g::Fuse::Controls::TreeRendererPanel::New4((uObject*)App__RootViewHost::New1());
-    _graphicsView = ::g::Fuse::Controls::GraphicsView::New3();
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(_renderPanel)->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), _graphicsView);
-    ::g::Fuse::Controls::Native::iOS::InputDispatch::AddListener(_renderPanel, ::g::Fuse::AppRoot::Handle());
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(RootViewport())->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), _renderPanel);
 }
 
-// private void CheckFocus() [instance] :192
+// private void CheckFocus() [instance] :205
 void App::CheckFocus()
 {
     uStackFrame __("Fuse.App", "CheckFocus()");
@@ -195,7 +200,7 @@ void App::CheckFocus()
     }
 }
 
-// private void CheckStatusBarOrientation() [instance] :223
+// private void CheckStatusBarOrientation() [instance] :236
 void App::CheckStatusBarOrientation()
 {
     uStackFrame __("Fuse.App", "CheckStatusBarOrientation()");
@@ -208,7 +213,7 @@ void App::CheckStatusBarOrientation()
     }
 }
 
-// private void OnTick(object sender, Uno.Platform.TimerEventArgs args) [instance] :156
+// private void OnTick(object sender, Uno.Platform.TimerEventArgs args) [instance] :169
 void App::OnTick(uObject* sender, ::g::Uno::Platform::TimerEventArgs* args)
 {
     uStackFrame __("Fuse.App", "OnTick(object,Uno.Platform.TimerEventArgs)");
@@ -236,13 +241,19 @@ void App::OnTick(uObject* sender, ::g::Uno::Platform::TimerEventArgs* args)
     }
 }
 
-// private void PropagateBackground() [instance] :178
+// private void PropagateBackground() [instance] :191
 void App::PropagateBackground()
 {
     ::g::Fuse::AppRoot::ClearColor(Background());
 }
 
-// private static bool Compare(ObjC.Object x, ObjC.Object y) [static] :210
+// private Fuse.Visual get_RootVisual() [instance] :128
+::g::Fuse::Visual* App::RootVisual()
+{
+    return _graphicsView;
+}
+
+// private static bool Compare(ObjC.Object x, ObjC.Object y) [static] :223
 bool App::Compare(::g::ObjC::Object* x, ::g::ObjC::Object* y)
 {
     @autoreleasepool
@@ -256,7 +267,7 @@ bool App::Compare(::g::ObjC::Object* x, ::g::ObjC::Object* y)
     
 }
 
-// private static bool IsNull(ObjC.Object x) [static] :217
+// private static bool IsNull(ObjC.Object x) [static] :230
 bool App::IsNull(::g::ObjC::Object* x)
 {
     @autoreleasepool
@@ -270,7 +281,7 @@ bool App::IsNull(::g::ObjC::Object* x)
     
 }
 
-// public App New() [static] :124
+// public App New() [static] :138
 App* App::New1()
 {
     App* obj1 = (App*)uNew(App_typeof());

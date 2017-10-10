@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -18,7 +18,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// internal sealed extern class TreeRenderer :2870
+// internal sealed extern class TreeRenderer :2894
 // {
 struct TreeRenderer_type : uType
 {

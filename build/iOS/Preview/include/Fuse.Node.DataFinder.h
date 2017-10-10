@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{namespace Fuse{struct Node__DataFinder;}}
 namespace g{
 namespace Fuse{
 
-// internal abstract class Node.DataFinder :2397
+// internal abstract class Node.DataFinder :2408
 // {
 struct Node__DataFinder_type : uType
 {

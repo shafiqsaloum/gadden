@@ -1,9 +1,9 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.INameListener.h>
-#include <Fuse.Reactive.Express-ee33104d.h>
+#include <Fuse.Reactive.ExpressionBinding.h>
 #include <Fuse.Reactive.IContext.h>
 #include <Fuse.Reactive.IListener.h>
 #include <Fuse.Reactive.IObserver.h>
@@ -61,6 +61,7 @@ void DataBinding__TryPushAsMarshalledValue_fn(DataBinding* __this, uObject* newV
 void DataBinding__TryPushAsName_fn(DataBinding* __this, uObject* newValue, bool* __retval);
 void DataBinding__TryPushAsValue_fn(DataBinding* __this, uObject* newValue, bool* __retval);
 void DataBinding__TypeToJSName_fn(uType* t, uString** __retval);
+void DataBinding__UnlistenNameRegistry_fn(DataBinding* __this);
 void DataBinding__UnoUXIPropertyListenerOnPropertyChanged_fn(DataBinding* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Selector* prop);
 void DataBinding__get_Write_fn(DataBinding* __this, bool* __retval);
 
@@ -69,6 +70,7 @@ struct DataBinding : ::g::Fuse::Reactive::ExpressionBinding
     uStrong< ::g::Fuse::Triggers::BusyTask*> _busyTask;
     uStrong<uObject*> _currentValue;
     int _mode;
+    uStrong<uString*> _registryName;
     uStrong<uObject*> _subscription;
     uStrong< ::g::Uno::UX::Property*> _Target;
 
@@ -87,6 +89,7 @@ struct DataBinding : ::g::Fuse::Reactive::ExpressionBinding
     void TryPushAsMarshalledValue(uObject* newValue);
     bool TryPushAsName(uObject* newValue);
     bool TryPushAsValue(uObject* newValue);
+    void UnlistenNameRegistry();
     bool Write();
     static DataBinding* New1(::g::Uno::UX::Property* target, uObject* key, ::g::Uno::UX::NameTable* nameTable, int mode);
     static ::g::Uno::UX::Selector ToSelector(uObject* newValue);

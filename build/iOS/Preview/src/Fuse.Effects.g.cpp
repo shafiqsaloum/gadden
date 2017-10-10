@@ -6,7 +6,7 @@
 #include <Fuse.Effects.BasicEffect.h>
 #include <Fuse.Effects.Blur.h>
 #include <Fuse.Effects.Desaturate.h>
-#include <Fuse.Effects.DropShad-41b5d682.h>
+#include <Fuse.Effects.DropShadow.Blitter.h>
 #include <Fuse.Effects.DropShadow.h>
 #include <Fuse.Effects.Duotone.h>
 #include <Fuse.Effects.Effect.h>
@@ -44,15 +44,15 @@
 #include <Uno.Graphics.PolygonFace.h>
 #include <Uno.Graphics.SamplerState.h>
 #include <Uno.Graphics.Texture2D.h>
-#include <Uno.Graphics.VertexAt-4a875e1d.h>
+#include <Uno.Graphics.VertexAttributeType.h>
 #include <Uno.Graphics.VertexBuffer.h>
 #include <Uno.Int.h>
 #include <Uno.Int2.h>
 #include <Uno.Math.h>
 #include <Uno.Matrix.h>
 #include <Uno.Rect.h>
-#include <Uno.Runtime.Implement-6e9df330.h>
-#include <Uno.Runtime.Implement-81e7ab4c.h>
+#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
 #include <Uno.String.h>
 #include <Uno.UShort.h>
 #include <Uno.UX.FileSource.h>
@@ -63,8 +63,8 @@ namespace g{
 namespace Fuse{
 namespace Effects{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.2.1/$.uno
+// ------------------------------------------------------
 
 // public abstract class BasicEffect :9
 // {
@@ -155,14 +155,14 @@ void BasicEffect::ctor_3(int effectType)
 // internal static Uno.Recti ConservativelySnapToCoveringIntegers(Uno.Rect r) [static] :24
 ::g::Uno::Recti BasicEffect::ConservativelySnapToCoveringIntegers(::g::Uno::Rect r)
 {
-    ::g::Uno::Int2 origin = ::g::Uno::Int2__op_Explicit(::g::Uno::Math::Floor2(r.LeftTop()));
-    ::g::Uno::Int2 size = ::g::Uno::Int2__op_Explicit(::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Addition1(::g::Uno::Float2__op_Subtraction2(r.RightBottom(), r.LeftTop()), 0.01f)));
+    ::g::Uno::Int2 origin = ::g::Uno::Int2__op_Explicit1(::g::Uno::Math::Floor2(r.LeftTop()));
+    ::g::Uno::Int2 size = ::g::Uno::Int2__op_Explicit1(::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Addition1(::g::Uno::Float2__op_Subtraction2(r.RightBottom(), r.LeftTop()), 0.01f)));
     return ::g::Uno::Recti__New1(origin.X, origin.Y, (origin.X + size.X) + 1, (origin.Y + size.Y) + 1);
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.2.1/$.uno
+// ------------------------------------------------------
 
 // private sealed class DropShadow.Blitter :461
 // {
@@ -279,8 +279,8 @@ DropShadow__Blitter* DropShadow__Blitter::Instance()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.2.1/$.uno
+// ------------------------------------------------------
 
 // public sealed class Blur :62
 // {
@@ -484,8 +484,8 @@ Blur* Blur::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.2.1/$.uno
+// ------------------------------------------------------
 
 // public sealed class Desaturate :139
 // {
@@ -647,8 +647,8 @@ Desaturate* Desaturate::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.2.1/$.uno
+// ------------------------------------------------------
 
 // public sealed class DropShadow :300
 // {
@@ -1000,8 +1000,8 @@ DropShadow* DropShadow::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.2.1/$.uno
+// ------------------------------------------------------
 
 // public sealed class Duotone :201
 // {
@@ -1233,8 +1233,8 @@ Duotone* Duotone::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/effects/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/effects/$.uno
+// ---------------------------------------------------------------
 
 // public abstract class Effect :17
 // {
@@ -1344,7 +1344,7 @@ void Effect__OnRenderingChanged_fn(Effect* __this)
     __this->OnRenderingChanged();
 }
 
-// protected override sealed void OnRooted() :27
+// protected override void OnRooted() :27
 void Effect__OnRooted_fn(Effect* __this)
 {
     uStackFrame __("Fuse.Effects.Effect", "OnRooted()");
@@ -1358,7 +1358,7 @@ void Effect__OnRooted_fn(Effect* __this)
     uPtr(__this->Element())->AddDrawCost(3.0);
 }
 
-// protected override sealed void OnUnrooted() :39
+// protected override void OnUnrooted() :39
 void Effect__OnUnrooted_fn(Effect* __this)
 {
     uStackFrame __("Fuse.Effects.Effect", "OnUnrooted()");
@@ -1469,8 +1469,8 @@ int Effect::Type()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.2.1/$.uno
+// ------------------------------------------------------
 
 // internal partial sealed class EffectHelpers :498
 // {
@@ -1596,7 +1596,7 @@ void EffectHelpers::ctor_()
         maxSamples = maxSamples * 2;
     }
 
-    ::g::Uno::Int2 samples = ::g::Uno::Int2__op_Explicit(::g::Uno::Math::Max2(::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Multiply(3.0f, sigmas)), 1.0f));
+    ::g::Uno::Int2 samples = ::g::Uno::Int2__op_Explicit1(::g::Uno::Math::Max2(::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Multiply(3.0f, sigmas)), 1.0f));
     ::g::Uno::Graphics::Framebuffer* tmp = BlurHorizontal(dc, uPtr(src)->Size(), src, sigmas.X, samples.X);
 
     if (fb != NULL)
@@ -1735,8 +1735,8 @@ EffectHelpers* EffectHelpers::Instance()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/effects/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/effects/$.uno
+// ---------------------------------------------------------------
 
 // public enum EffectType :10
 uEnumType* EffectType_typeof()
@@ -1752,8 +1752,8 @@ uEnumType* EffectType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.2.1/$.uno
+// ------------------------------------------------------
 
 // public sealed class Halftone :730
 // {
@@ -2064,8 +2064,8 @@ Halftone* Halftone::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.2.1/$.uno
+// ------------------------------------------------------
 
 // public sealed class Mask :874
 // {
@@ -2118,6 +2118,8 @@ Mask_type* Mask_typeof()
     type->fp_ctor_ = (void*)Mask__New2_fn;
     type->fp_ModifyRenderBounds = (void(*)(::g::Fuse::Effects::Effect*, ::g::Fuse::VisualBounds*, ::g::Fuse::VisualBounds**))Mask__ModifyRenderBounds_fn;
     type->fp_OnRender = (void(*)(::g::Fuse::Effects::BasicEffect*, ::g::Fuse::DrawContext*, ::g::Uno::Rect*))Mask__OnRender_fn;
+    type->fp_OnRooted = (void(*)(::g::Fuse::Node*))Mask__OnRooted_fn;
+    type->fp_OnUnrooted = (void(*)(::g::Fuse::Node*))Mask__OnUnrooted_fn;
     type->interface6.fp_OnSourceChanged = (void(*)(uObject*))Mask__FuseInternalIImageContainerOwnerOnSourceChanged_fn;
     type->interface6.fp_OnParamChanged = (void(*)(uObject*))Mask__FuseInternalIImageContainerOwnerOnParamChanged_fn;
     type->interface6.fp_OnSizingChanged = (void(*)(uObject*))Mask__FuseInternalIImageContainerOwnerOnSizingChanged_fn;
@@ -2145,33 +2147,33 @@ void Mask__ctor_4_fn(Mask* __this)
     __this->ctor_4();
 }
 
-// public Uno.UX.FileSource get_File() :1013
+// public Uno.UX.FileSource get_File() :1024
 void Mask__get_File_fn(Mask* __this, ::g::Uno::UX::FileSource** __retval)
 {
     *__retval = __this->File();
 }
 
-// public void set_File(Uno.UX.FileSource value) :1014
+// public void set_File(Uno.UX.FileSource value) :1025
 void Mask__set_File_fn(Mask* __this, ::g::Uno::UX::FileSource* value)
 {
     __this->File(value);
 }
 
-// private void Fuse.Internal.IImageContainerOwner.OnParamChanged() :891
+// private void Fuse.Internal.IImageContainerOwner.OnParamChanged() :902
 void Mask__FuseInternalIImageContainerOwnerOnParamChanged_fn(Mask* __this)
 {
     uStackFrame __("Fuse.Effects.Mask", "Fuse.Internal.IImageContainerOwner.OnParamChanged()");
     __this->OnRenderingChanged();
 }
 
-// private void Fuse.Internal.IImageContainerOwner.OnSizingChanged() :896
+// private void Fuse.Internal.IImageContainerOwner.OnSizingChanged() :907
 void Mask__FuseInternalIImageContainerOwnerOnSizingChanged_fn(Mask* __this)
 {
     uStackFrame __("Fuse.Effects.Mask", "Fuse.Internal.IImageContainerOwner.OnSizingChanged()");
     __this->OnRenderingChanged();
 }
 
-// private void Fuse.Internal.IImageContainerOwner.OnSourceChanged() :886
+// private void Fuse.Internal.IImageContainerOwner.OnSourceChanged() :897
 void Mask__FuseInternalIImageContainerOwnerOnSourceChanged_fn(Mask* __this)
 {
     uStackFrame __("Fuse.Effects.Mask", "Fuse.Internal.IImageContainerOwner.OnSourceChanged()");
@@ -2184,19 +2186,19 @@ void Mask__init_DrawCalls_fn(Mask* __this)
     __this->init_DrawCalls();
 }
 
-// public Fuse.Effects.Mask.MaskMode get_Mode() :916
+// public Fuse.Effects.Mask.MaskMode get_Mode() :927
 void Mask__get_Mode_fn(Mask* __this, int* __retval)
 {
     *__retval = __this->Mode();
 }
 
-// public void set_Mode(Fuse.Effects.Mask.MaskMode value) :917
+// public void set_Mode(Fuse.Effects.Mask.MaskMode value) :928
 void Mask__set_Mode_fn(Mask* __this, int* value)
 {
     __this->Mode(*value);
 }
 
-// public override sealed Fuse.VisualBounds ModifyRenderBounds(Fuse.VisualBounds inBounds) :927
+// public override sealed Fuse.VisualBounds ModifyRenderBounds(Fuse.VisualBounds inBounds) :938
 void Mask__ModifyRenderBounds_fn(Mask* __this, ::g::Fuse::VisualBounds* inBounds, ::g::Fuse::VisualBounds** __retval)
 {
     uStackFrame __("Fuse.Effects.Mask", "ModifyRenderBounds(Fuse.VisualBounds)");
@@ -2209,7 +2211,7 @@ void Mask__New2_fn(Mask** __retval)
     *__retval = Mask::New2();
 }
 
-// protected override sealed void OnRender(Fuse.DrawContext dc, Uno.Rect elementRect) :933
+// protected override sealed void OnRender(Fuse.DrawContext dc, Uno.Rect elementRect) :944
 void Mask__OnRender_fn(Mask* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Rect* elementRect)
 {
     uStackFrame __("Fuse.Effects.Mask", "OnRender(Fuse.DrawContext,Uno.Rect)");
@@ -2292,13 +2294,29 @@ void Mask__OnRender_fn(Mask* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Rect*
     ::g::Fuse::FramebufferPool::Release(original);
 }
 
-// public Fuse.Resources.ImageSource get_Source() :1021
+// protected override sealed void OnRooted() :885
+void Mask__OnRooted_fn(Mask* __this)
+{
+    uStackFrame __("Fuse.Effects.Mask", "OnRooted()");
+    ::g::Fuse::Effects::Effect__OnRooted_fn(__this);
+    uPtr(__this->_container)->IsRooted(true);
+}
+
+// protected override sealed void OnUnrooted() :891
+void Mask__OnUnrooted_fn(Mask* __this)
+{
+    uStackFrame __("Fuse.Effects.Mask", "OnUnrooted()");
+    uPtr(__this->_container)->IsRooted(false);
+    ::g::Fuse::Effects::Effect__OnUnrooted_fn(__this);
+}
+
+// public Fuse.Resources.ImageSource get_Source() :1032
 void Mask__get_Source_fn(Mask* __this, ::g::Fuse::Resources::ImageSource** __retval)
 {
     *__retval = __this->Source();
 }
 
-// public void set_Source(Fuse.Resources.ImageSource value) :1022
+// public void set_Source(Fuse.Resources.ImageSource value) :1033
 void Mask__set_Source_fn(Mask* __this, ::g::Fuse::Resources::ImageSource* value)
 {
     __this->Source(value);
@@ -2312,18 +2330,17 @@ void Mask::ctor_4()
     ctor_3(1);
     _container = ::g::Fuse::Internal::ImageContainer::New1((uObject*)this);
     uPtr(_container)->StretchMode(3);
-    uPtr(_container)->IsRooted(true);
     init_DrawCalls();
 }
 
-// public Uno.UX.FileSource get_File() [instance] :1013
+// public Uno.UX.FileSource get_File() [instance] :1024
 ::g::Uno::UX::FileSource* Mask::File()
 {
     uStackFrame __("Fuse.Effects.Mask", "get_File()");
     return uPtr(_container)->File();
 }
 
-// public void set_File(Uno.UX.FileSource value) [instance] :1014
+// public void set_File(Uno.UX.FileSource value) [instance] :1025
 void Mask::File(::g::Uno::UX::FileSource* value)
 {
     uStackFrame __("Fuse.Effects.Mask", "set_File(Uno.UX.FileSource)");
@@ -2345,13 +2362,13 @@ void Mask::init_DrawCalls()
     _draw_f63e1f3f = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseEffects_bundle::Mask6affc65c());
 }
 
-// public Fuse.Effects.Mask.MaskMode get_Mode() [instance] :916
+// public Fuse.Effects.Mask.MaskMode get_Mode() [instance] :927
 int Mask::Mode()
 {
     return _mode;
 }
 
-// public void set_Mode(Fuse.Effects.Mask.MaskMode value) [instance] :917
+// public void set_Mode(Fuse.Effects.Mask.MaskMode value) [instance] :928
 void Mask::Mode(int value)
 {
     uStackFrame __("Fuse.Effects.Mask", "set_Mode(Fuse.Effects.Mask.MaskMode)");
@@ -2363,14 +2380,14 @@ void Mask::Mode(int value)
     }
 }
 
-// public Fuse.Resources.ImageSource get_Source() [instance] :1021
+// public Fuse.Resources.ImageSource get_Source() [instance] :1032
 ::g::Fuse::Resources::ImageSource* Mask::Source()
 {
     uStackFrame __("Fuse.Effects.Mask", "get_Source()");
     return uPtr(_container)->Source();
 }
 
-// public void set_Source(Fuse.Resources.ImageSource value) [instance] :1022
+// public void set_Source(Fuse.Resources.ImageSource value) [instance] :1033
 void Mask::Source(::g::Fuse::Resources::ImageSource* value)
 {
     uStackFrame __("Fuse.Effects.Mask", "set_Source(Fuse.Resources.ImageSource)");
@@ -2386,10 +2403,10 @@ Mask* Mask::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.2.1/$.uno
+// ------------------------------------------------------
 
-// public enum Mask.MaskMode :902
+// public enum Mask.MaskMode :913
 uEnumType* Mask__MaskMode_typeof()
 {
     static uSStrong<uEnumType*> type;

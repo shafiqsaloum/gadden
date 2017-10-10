@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// public sealed class YFunction :3812
+// public sealed class YFunction :3833
 // {
 ::g::Fuse::Elements::LayoutFunction_type* YFunction_typeof();
 void YFunction__ctor_3_fn(YFunction* __this, ::g::Fuse::Reactive::Expression* element);

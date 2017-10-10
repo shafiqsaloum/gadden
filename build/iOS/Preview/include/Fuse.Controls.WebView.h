@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,12 +11,13 @@
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
-#include <Fuse.Navigation.IBase-84e3f965.h>
+#include <Fuse.ITemplateSource.h>
+#include <Fuse.Navigation.IBaseNavigation.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Fuse.Triggers.IProgress.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
@@ -33,14 +34,14 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial sealed class WebView :126
+// public partial sealed class WebView :127
 // {
 struct WebView_type : ::g::Fuse::Controls::Panel_type
 {
-    ::g::Fuse::Controls::IWebView interface16;
-    ::g::Fuse::Triggers::IProgress interface17;
-    ::g::Fuse::Navigation::IBaseNavigation interface18;
-    ::g::Fuse::Controls::ISourceReceiver interface19;
+    ::g::Fuse::Controls::IWebView interface17;
+    ::g::Fuse::Triggers::IProgress interface18;
+    ::g::Fuse::Navigation::IBaseNavigation interface19;
+    ::g::Fuse::Controls::ISourceReceiver interface20;
 };
 
 WebView_type* WebView_typeof();
@@ -82,6 +83,8 @@ void WebView__get_Progress_fn(WebView* __this, double* __retval);
 void WebView__add_ProgressChanged_fn(WebView* __this, uDelegate* value);
 void WebView__remove_ProgressChanged_fn(WebView* __this, uDelegate* value);
 void WebView__Reload_fn(WebView* __this);
+void WebView__get_ScrollEnabled_fn(WebView* __this, bool* __retval);
+void WebView__set_ScrollEnabled_fn(WebView* __this, bool* value);
 void WebView__setBaseUrl_fn(::g::Fuse::Scripting::Context* c, WebView* view, uArray* args);
 void WebView__setUrl_fn(::g::Fuse::Scripting::Context* c, WebView* view, uArray* args);
 void WebView__SetUrl_fn(WebView* __this, uString* value, uObject* origin);
@@ -147,6 +150,8 @@ struct WebView : ::g::Fuse::Controls::Panel
     void add_ProgressChanged(uDelegate* value);
     void remove_ProgressChanged(uDelegate* value);
     void Reload();
+    bool ScrollEnabled();
+    void ScrollEnabled(bool value);
     void SetUrl(uString* value, uObject* origin);
     uString* Source();
     void Source(uString* value);

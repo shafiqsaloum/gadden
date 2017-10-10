@@ -1,10 +1,10 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.Float4x4.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implement-476e2792.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
 namespace g{namespace Fuse{namespace Controls{struct FreezeDrawable;}}}
 namespace g{namespace Fuse{namespace Controls{struct Panel;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
@@ -17,7 +17,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// internal sealed class FreezeDrawable :2144
+// internal sealed class FreezeDrawable :2162
 // {
 uType* FreezeDrawable_typeof();
 void FreezeDrawable__ctor__fn(FreezeDrawable* __this);

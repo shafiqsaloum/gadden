@@ -1,20 +1,21 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/rangecontrols/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/rangecontrols/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
-#include <Fuse.Controls.Native.-5999be91.h>
+#include <Fuse.Controls.Native.IRangeViewHost.h>
 #include <Fuse.Controls.Panel.h>
 #include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
+#include <Fuse.ITemplateSource.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Fuse.Triggers.IProgress.h>
 #include <Fuse.Triggers.IValue-1.h>
 #include <Uno.Collections.ICollection-1.h>
@@ -29,13 +30,13 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public class RangeControl :561
+// public class RangeControl :559
 // {
 struct RangeControl_type : ::g::Fuse::Controls::Panel_type
 {
-    ::g::Fuse::Triggers::IProgress interface16;
-    ::g::Fuse::Triggers::IValue interface17;
-    ::g::Fuse::Controls::Native::IRangeViewHost interface18;
+    ::g::Fuse::Triggers::IProgress interface17;
+    ::g::Fuse::Triggers::IValue interface18;
+    ::g::Fuse::Controls::Native::IRangeViewHost interface19;
 };
 
 RangeControl_type* RangeControl_typeof();

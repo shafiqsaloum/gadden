@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -7,7 +7,7 @@
 namespace g{
 namespace Uno{
 
-// public intrinsic struct ULong :8272
+// public intrinsic struct ULong :8278
 // {
 uStructType* ULong_typeof();
 void ULong__Equals_fn(uint64_t* __this, uType* __type, uObject* o, bool* __retval);

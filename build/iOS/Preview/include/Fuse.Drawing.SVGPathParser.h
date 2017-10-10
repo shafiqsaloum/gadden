@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Drawing.Surface/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Drawing{
 
-// internal sealed class SVGPathParser :3181
+// internal sealed class SVGPathParser :2456
 // {
 uType* SVGPathParser_typeof();
 void SVGPathParser__ctor__fn(SVGPathParser* __this, uString* data, uObject* segments);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Gestures/1.2.1/internal/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,6 +9,7 @@ namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Gestures{namespace Internal{struct Swiper;}}}}
 namespace g{namespace Fuse{namespace Gestures{namespace Internal{struct SwipeRegion;}}}}
 namespace g{namespace Fuse{namespace Input{struct Gesture;}}}
+namespace g{namespace Fuse{namespace Input{struct GesturePriorityConfig;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerEventArgs;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerMovedArgs;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerPressedArgs;}}}
@@ -22,7 +23,7 @@ namespace Fuse{
 namespace Gestures{
 namespace Internal{
 
-// internal sealed class Swiper :943
+// internal sealed class Swiper :1006
 // {
 struct Swiper_type : uType
 {
@@ -36,14 +37,12 @@ void Swiper__AttachSwiper_fn(::g::Fuse::Elements::Element* elm, Swiper** __retva
 void Swiper__CheckNeedUpdated_fn(Swiper* __this, bool* off);
 void Swiper__Detach_fn(Swiper* __this);
 void Swiper__FromWindow_fn(Swiper* __this, ::g::Uno::Float2* p, ::g::Uno::Float2* __retval);
-void Swiper__FuseInputIGestureOnCapture_fn(Swiper* __this, ::g::Fuse::Input::PointerEventArgs* args, int* how);
+void Swiper__FuseInputIGestureOnCaptureChanged_fn(Swiper* __this, ::g::Fuse::Input::PointerEventArgs* args, int* how, int* prev);
 void Swiper__FuseInputIGestureOnLostCapture_fn(Swiper* __this, bool* forced);
 void Swiper__FuseInputIGestureOnPointerMoved_fn(Swiper* __this, ::g::Fuse::Input::PointerMovedArgs* args, int* __retval);
 void Swiper__FuseInputIGestureOnPointerPressed_fn(Swiper* __this, ::g::Fuse::Input::PointerPressedArgs* args, int* __retval);
 void Swiper__FuseInputIGestureOnPointerReleased_fn(Swiper* __this, ::g::Fuse::Input::PointerReleasedArgs* args, int* __retval);
-void Swiper__FuseInputIGestureget_Priority_fn(Swiper* __this, int* __retval);
-void Swiper__FuseInputIGestureget_PriorityAdjustment_fn(Swiper* __this, int* __retval);
-void Swiper__FuseInputIGestureget_Significance_fn(Swiper* __this, float* __retval);
+void Swiper__FuseInputIGestureget_Priority_fn(Swiper* __this, ::g::Fuse::Input::GesturePriorityConfig* __retval);
 void Swiper__MoveUser_fn(Swiper* __this, ::g::Uno::Float2* coord, double* elapsed, bool* release);
 void Swiper__New1_fn(::g::Fuse::Elements::Element* elm, Swiper** __retval);
 void Swiper__OnRooted_fn(Swiper* __this, ::g::Fuse::Elements::Element* n);
@@ -58,7 +57,6 @@ struct Swiper : uObject
 {
     bool _allowNewRegion;
     int _attachCount;
-    int _down;
     uStrong< ::g::Fuse::Elements::Element*> _element;
     uStrong< ::g::Fuse::Gestures::Internal::SwipeRegion*> _excludeRegion;
     uStrong< ::g::Fuse::Input::Gesture*> _gesture;

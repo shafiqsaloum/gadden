@@ -2,37 +2,37 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Outracks.Optional.h>
-#include <Outracks.Simulator.By-3fb73d1c.h>
-#include <Outracks.Simulator.By-c66e3e07.h>
-#include <Outracks.Simulator.By-fda889fc.h>
-#include <Outracks.Simulator.Gu-38dd0f53.h>
-#include <Outracks.Simulator.Im-4687ab12.h>
+#include <Outracks.Simulator.Bytecode.Lambda.h>
+#include <Outracks.Simulator.Bytecode.ProjectBytecode.h>
+#include <Outracks.Simulator.Bytecode.TypeName.h>
+#include <Outracks.Simulator.GuidSerializer.h>
+#include <Outracks.Simulator.ImmutableList-1.h>
 #include <Outracks.Simulator.List.h>
-#include <Outracks.Simulator.Ob-98516f34.h>
-#include <Outracks.Simulator.Pr-1306b863.h>
-#include <Outracks.Simulator.Pr-156ddfb3.h>
-#include <Outracks.Simulator.Pr-51753a1d.h>
-#include <Outracks.Simulator.Pr-53cbf5e1.h>
-#include <Outracks.Simulator.Pr-59de7475.h>
-#include <Outracks.Simulator.Pr-5b87553c.h>
-#include <Outracks.Simulator.Pr-5d4d976b.h>
-#include <Outracks.Simulator.Pr-5ff08ec5.h>
-#include <Outracks.Simulator.Pr-694bb62e.h>
-#include <Outracks.Simulator.Pr-81de9449.h>
-#include <Outracks.Simulator.Pr-998e636c.h>
-#include <Outracks.Simulator.Pr-a799276a.h>
-#include <Outracks.Simulator.Pr-bed485a.h>
-#include <Outracks.Simulator.Pr-d1da33c5.h>
-#include <Outracks.Simulator.Pr-e0a02f28.h>
-#include <Outracks.Simulator.Pr-e1a4207b.h>
-#include <Outracks.Simulator.So-adcf757e.h>
+#include <Outracks.Simulator.ObjectIdentifier.h>
+#include <Outracks.Simulator.Protocol.BuildProject.h>
+#include <Outracks.Simulator.Protocol.BytecodeGenerated.h>
+#include <Outracks.Simulator.Protocol.BytecodeUpdated.h>
+#include <Outracks.Simulator.Protocol.DebugLog.h>
+#include <Outracks.Simulator.Protocol.Diagnostic.h>
+#include <Outracks.Simulator.Protocol.DiagnosticType.h>
+#include <Outracks.Simulator.Protocol.DismissDiagnostic.h>
+#include <Outracks.Simulator.Protocol.Error.h>
+#include <Outracks.Simulator.Protocol.ExceptionInfo.h>
+#include <Outracks.Simulator.Protocol.GenerateBytecode.h>
+#include <Outracks.Simulator.Protocol.Ready.h>
+#include <Outracks.Simulator.Protocol.RegisterName.h>
+#include <Outracks.Simulator.Protocol.TriggerProgress.h>
+#include <Outracks.Simulator.Protocol.UnhandledException.h>
+#include <Outracks.Simulator.Protocol.UpdateAttribute.h>
+#include <Outracks.Simulator.Protocol.UxFileContents.h>
+#include <Outracks.Simulator.SourceReference.h>
 #include <System.IO.BinaryReader.h>
 #include <System.IO.BinaryWriter.h>
 #include <Uno.Action-1.h>
 #include <Uno.Action-2.h>
 #include <Uno.Bool.h>
 #include <Uno.Diagnostics.Debug.h>
-#include <Uno.Diagnostics.Debug-5d778620.h>
+#include <Uno.Diagnostics.DebugMessageType.h>
 #include <Uno.Double.h>
 #include <Uno.Exception.h>
 #include <Uno.Func-1.h>
@@ -1738,7 +1738,7 @@ Error* Error::ReadDataFrom(::g::System::IO::BinaryReader* reader)
 {
     uStackFrame __("Outracks.Simulator.Protocol.Error", "ReadDataFrom(System.IO.BinaryReader)");
     Error_typeof()->Init();
-    ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[11/*"Read Error"*/], 1, ::STRINGS[12/*"/usr/local/...*/], 572);
+    ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[11/*"Read Error"*/], 0, ::STRINGS[12/*"/usr/local/...*/], 572);
     ::g::Outracks::Simulator::Protocol::ExceptionInfo* exception = ::g::Outracks::Simulator::Protocol::ExceptionInfo::Read(reader);
     return Error::New2(exception);
 }

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Testing/1.0.13/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Uno.Testing/1.2.2/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,10 +9,11 @@ namespace g{
 namespace Uno{
 namespace Testing{
 
-// public partial static class Assert :117
+// public partial static class Assert :131
 // {
 uClassType* Assert_typeof();
 void Assert__Fail_fn(uString* message, uString* filePath, int* lineNumber, uString* memberName);
+void Assert__ReportFailure_fn(uString* filePath, int* lineNumber, uString* memberName, uString* expected, uString* actual);
 
 struct Assert : uObject
 {
@@ -20,6 +21,7 @@ struct Assert : uObject
     static int& maxStringLength() { return Assert_typeof()->Init(), maxStringLength_; }
 
     static void Fail(uString* message, uString* filePath, int lineNumber, uString* memberName);
+    static void ReportFailure(uString* filePath, int lineNumber, uString* memberName, uString* expected, uString* actual);
 };
 // }
 

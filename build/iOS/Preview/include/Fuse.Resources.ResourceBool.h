@@ -1,11 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Binding.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
-#include <Fuse.Resources.Resour-4d20d44f.h>
+#include <Fuse.Resources.ResourceSetter-1.h>
 #include <Fuse.Scripting.IScriptObject.h>
 #include <Uno.Bool.h>
 #include <Uno.Collections.ICollection-1.h>
@@ -17,7 +17,7 @@ namespace g{
 namespace Fuse{
 namespace Resources{
 
-// public sealed class ResourceBool :3704
+// public sealed class ResourceBool :3669
 // {
 ::g::Fuse::Node_type* ResourceBool_typeof();
 void ResourceBool__ctor_4_fn(ResourceBool* __this);

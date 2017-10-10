@@ -1,38 +1,38 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Animations.Anima-9f6f3909.h>
+#include <Fuse.Animations.AnimationVariant.h>
 #include <Fuse.Animations.Animator.h>
 #include <Fuse.Animations.Easing.h>
 #include <Fuse.Animations.IResizeMode.h>
 #include <Fuse.Animations.Move.h>
 #include <Fuse.Animations.Nothing.h>
-#include <Fuse.Animations.Playe-8fa817d1.h>
+#include <Fuse.Animations.PlayerFeedbackFlags.h>
 #include <Fuse.Animations.PlayMode.h>
 #include <Fuse.Animations.TrackAnimator.h>
-#include <Fuse.Animations.Trans-997c8373.h>
-#include <Fuse.Animations.Trigg-21dd249.h>
-#include <Fuse.Animations.Trigg-75f4f270.h>
-#include <Fuse.Animations.Trigg-96b74ffc.h>
+#include <Fuse.Animations.TransformAnimator-1.h>
+#include <Fuse.Animations.TriggerAnimation.h>
+#include <Fuse.Animations.TriggerAnimationState.h>
+#include <Fuse.Animations.TriggerAnimationState.SeekFlags.h>
 #include <Fuse.Controls.ITextEditControl.h>
 #include <Fuse.Controls.IWebView.h>
-#include <Fuse.Controls.Navigat-2fbffbd2.h>
-#include <Fuse.Controls.Navigat-340a5907.h>
-#include <Fuse.Controls.Navigat-4da4086.h>
-#include <Fuse.Controls.Navigat-70e90308.h>
+#include <Fuse.Controls.NavigationControl.h>
+#include <Fuse.Controls.NavigationControlTransition.h>
+#include <Fuse.Controls.NavigationSwitchedHandler.h>
 #include <Fuse.Controls.Navigator.h>
+#include <Fuse.Controls.NavigatorSwitchedArgs.h>
 #include <Fuse.Controls.ScrollDirections.h>
-#include <Fuse.Controls.ScrollP-640a7167.h>
+#include <Fuse.Controls.ScrollPositionChangedHandler.h>
 #include <Fuse.Controls.ScrollView.h>
 #include <Fuse.Controls.ScrollViewBase.h>
-#include <Fuse.Controls.TextInp-90db19ac.h>
-#include <Fuse.Controls.TextInp-e41606bc.h>
-#include <Fuse.Controls.TextInp-fdd74153.h>
+#include <Fuse.Controls.TextInputActionArgs.h>
+#include <Fuse.Controls.TextInputActionHandler.h>
+#include <Fuse.Controls.TextInputActionType.h>
 #include <Fuse.Controls.WebView.h>
 #include <Fuse.Diagnostics.h>
 #include <Fuse.Elements.Element.h>
-#include <Fuse.Elements.Preplac-74864b4.h>
 #include <Fuse.Elements.PreplacementArgs.h>
+#include <Fuse.Elements.PreplacementHandler.h>
 #include <Fuse.ICommonViewport.h>
 #include <Fuse.Input.Focus.h>
 #include <Fuse.Input.FocusGainedArgs.h>
@@ -50,18 +50,19 @@
 #include <Fuse.LayoutPriority.h>
 #include <Fuse.Marshal.h>
 #include <Fuse.Navigation.INavigation.h>
-#include <Fuse.Navigation.Navig-11678f15.h>
-#include <Fuse.Navigation.Navig-4be788bd.h>
 #include <Fuse.Navigation.NavigationArgs.h>
+#include <Fuse.Navigation.NavigationGotoMode.h>
+#include <Fuse.Navigation.NavigationHandler.h>
 #include <Fuse.Navigation.NavigationMode.h>
-#include <Fuse.Navigation.Navig-c3ed68c1.h>
-#include <Fuse.Navigation.Routi-30764b7e.h>
+#include <Fuse.Navigation.NavigationPageState.h>
+#include <Fuse.Navigation.RoutingOperation.h>
 #include <Fuse.Node.h>
+#include <Fuse.NodeGroupBase.ConstructFlags.h>
 #include <Fuse.PendingRemoveVisual.h>
 #include <Fuse.PlacedArgs.h>
 #include <Fuse.PlacedHandler.h>
-#include <Fuse.Platform.SystemU-2024c55a.h>
 #include <Fuse.Platform.SystemUI.h>
+#include <Fuse.Platform.SystemUIWillResizeEventArgs.h>
 #include <Fuse.Properties.h>
 #include <Fuse.PropertyHandle.h>
 #include <Fuse.RelativeTransform-1.h>
@@ -78,88 +79,88 @@
 #include <Fuse.Translation.h>
 #include <Fuse.TranslationModes.h>
 #include <Fuse.Triggers.Actions.Callback.h>
-#include <Fuse.Triggers.Actions-b3c1f4a1.h>
-#include <Fuse.Triggers.Actions-fcab7e57.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Actions.TriggerWhen.h>
 #include <Fuse.Triggers.AddingAnimation.h>
 #include <Fuse.Triggers.Android.h>
 #include <Fuse.Triggers.Busy.h>
 #include <Fuse.Triggers.BusyOn.h>
-#include <Fuse.Triggers.BusyTas-26a0325f.h>
 #include <Fuse.Triggers.BusyTask.h>
 #include <Fuse.Triggers.BusyTask.Type.h>
 #include <Fuse.Triggers.BusyTaskActivity.h>
 #include <Fuse.Triggers.BusyTaskMatch.h>
+#include <Fuse.Triggers.BusyTaskModule.ConstructorClosure.h>
 #include <Fuse.Triggers.BusyTaskModule.h>
-#include <Fuse.Triggers.Complet-462ee28e.h>
-#include <Fuse.Triggers.Complet-9d1486a7.h>
 #include <Fuse.Triggers.Completed.h>
+#include <Fuse.Triggers.CompletedActivation.h>
+#include <Fuse.Triggers.CompletedEventArgs.h>
 #include <Fuse.Triggers.ContainingText.h>
 #include <Fuse.Triggers.IBusyHandler.h>
 #include <Fuse.Triggers.IMediaPlayback.h>
-#include <Fuse.Triggers.Interac-a613fd39.h>
+#include <Fuse.Triggers.InteractionCompleted.h>
 #include <Fuse.Triggers.iOS.h>
 #include <Fuse.Triggers.IPlayback.h>
 #include <Fuse.Triggers.IProgress.h>
 #include <Fuse.Triggers.IPulseTrigger.h>
-#include <Fuse.Triggers.IScroll-2d167265.h>
-#include <Fuse.Triggers.IScroll-7d599e87.h>
-#include <Fuse.Triggers.IScroll-c30a2192.h>
 #include <Fuse.Triggers.IScrolledLength.h>
+#include <Fuse.Triggers.IScrolledLengths.ContentSizeLength.h>
 #include <Fuse.Triggers.IScrolledLengths.h>
-#include <Fuse.Triggers.IScroll-f5dfc45d.h>
+#include <Fuse.Triggers.IScrolledLengths.PixelsLength.h>
+#include <Fuse.Triggers.IScrolledLengths.PointsLength.h>
+#include <Fuse.Triggers.IScrolledLengths.ScrollViewSizeLength.h>
 #include <Fuse.Triggers.IValue-1.h>
 #include <Fuse.Triggers.IVisibility.h>
 #include <Fuse.Triggers.KeyPressHandler.h>
-#include <Fuse.Triggers.LayoutA-bbccc818.h>
 #include <Fuse.Triggers.LayoutAnimation.h>
-#include <Fuse.Triggers.LayoutT-17f13160.h>
-#include <Fuse.Triggers.LayoutT-38529711.h>
-#include <Fuse.Triggers.LayoutT-3aa69d98.h>
-#include <Fuse.Triggers.LayoutT-6adfe46a.h>
-#include <Fuse.Triggers.LayoutT-6d66b793.h>
-#include <Fuse.Triggers.LayoutT-999d3106.h>
-#include <Fuse.Triggers.LayoutT-9d622a39.h>
+#include <Fuse.Triggers.LayoutAnimationType.h>
 #include <Fuse.Triggers.LayoutTransition.h>
+#include <Fuse.Triggers.LayoutTransition.PositionChangeMode.h>
+#include <Fuse.Triggers.LayoutTransition.ResizeChangeMode.h>
+#include <Fuse.Triggers.LayoutTransition.ScaleChangeMode.h>
+#include <Fuse.Triggers.LayoutTransition.WorldPositionChangeMode.h>
+#include <Fuse.Triggers.LayoutTransitioned.h>
+#include <Fuse.Triggers.LayoutTransitionedArgs.h>
+#include <Fuse.Triggers.LayoutTransitionedHandler.h>
 #include <Fuse.Triggers.OnBackButton.h>
 #include <Fuse.Triggers.OnKeyPress.h>
-#include <Fuse.Triggers.OnUserE-d681e270.h>
 #include <Fuse.Triggers.OnUserEvent.h>
+#include <Fuse.Triggers.OnUserEventFilter.h>
 #include <Fuse.Triggers.PageBeginLoading.h>
 #include <Fuse.Triggers.PageLoaded.h>
-#include <Fuse.Triggers.Progres-182f6b55.h>
+#include <Fuse.Triggers.ProgressAnimation.h>
 #include <Fuse.Triggers.PullToReload.h>
-#include <Fuse.Triggers.PulseTr-e6f97a32.h>
 #include <Fuse.Triggers.PulseTrigger-1.h>
+#include <Fuse.Triggers.PulseTrigger-1.PulseHandler.h>
 #include <Fuse.Triggers.RangeAnimation.h>
-#include <Fuse.Triggers.Removin-3934475f.h>
+#include <Fuse.Triggers.RemovingAnimation.h>
 #include <Fuse.Triggers.Scrolled.h>
 #include <Fuse.Triggers.ScrolledArgs.h>
 #include <Fuse.Triggers.ScrolledWhere.h>
-#include <Fuse.Triggers.Scrolli-20ed4bc5.h>
-#include <Fuse.Triggers.Scrolli-e39f8f08.h>
+#include <Fuse.Triggers.ScrollingAnimation.h>
+#include <Fuse.Triggers.ScrollingAnimationRange.h>
 #include <Fuse.Triggers.ScrollRegion.h>
 #include <Fuse.Triggers.State.h>
-#include <Fuse.Triggers.StateGr-10cf9727.h>
+#include <Fuse.Triggers.StateGroup.GotoImpl.h>
 #include <Fuse.Triggers.StateGroup.h>
 #include <Fuse.Triggers.StateTransition.h>
-#include <Fuse.Triggers.TextInp-5cd41058.h>
+#include <Fuse.Triggers.TextInputActionTriggered.h>
 #include <Fuse.Triggers.Timeline.h>
 #include <Fuse.Triggers.Timeline.State.h>
-#include <Fuse.Triggers.Transit-122edce0.h>
 #include <Fuse.Triggers.Transition.h>
+#include <Fuse.Triggers.TransitionDirection.h>
 #include <Fuse.Triggers.TransitionGroup.h>
 #include <Fuse.Triggers.TransitionMode.h>
+#include <Fuse.Triggers.Trigger.DeferredItem.h>
 #include <Fuse.Triggers.Trigger.h>
-#include <Fuse.Triggers.Trigger-506bb336.h>
-#include <Fuse.Triggers.Trigger-fd67b2ab.h>
+#include <Fuse.Triggers.TriggerBypassMode.h>
 #include <Fuse.Triggers.TriggerPlayState.h>
 #include <Fuse.Triggers.WhileBool.h>
 #include <Fuse.Triggers.WhileBusy.h>
-#include <Fuse.Triggers.WhileCo-c4220d53.h>
 #include <Fuse.Triggers.WhileCompleted.h>
+#include <Fuse.Triggers.WhileContainsText.h>
 #include <Fuse.Triggers.WhileDisabled.h>
 #include <Fuse.Triggers.WhileEnabled.h>
-#include <Fuse.Triggers.WhileEn-fb4c6c6e.h>
+#include <Fuse.Triggers.WhileEnabledDisabledTrigger.h>
 #include <Fuse.Triggers.WhileFailed.h>
 #include <Fuse.Triggers.WhileFalse.h>
 #include <Fuse.Triggers.WhileFloat.h>
@@ -167,8 +168,8 @@
 #include <Fuse.Triggers.WhileFocused.h>
 #include <Fuse.Triggers.WhileFocusWithin.h>
 #include <Fuse.Triggers.WhileInteracting.h>
-#include <Fuse.Triggers.WhileKe-99bafeca.h>
-#include <Fuse.Triggers.WhileKe-9ea3ef4d.h>
+#include <Fuse.Triggers.WhileKeyboardVisible.h>
+#include <Fuse.Triggers.WhileKeyboardVisible.RelativeToKeyboardMode.h>
 #include <Fuse.Triggers.WhileLoading.h>
 #include <Fuse.Triggers.WhileNotFocused.h>
 #include <Fuse.Triggers.WhilePageLoading.h>
@@ -182,13 +183,14 @@
 #include <Fuse.Triggers.WhileTrue.h>
 #include <Fuse.Triggers.WhileValue-1.h>
 #include <Fuse.Triggers.WhileValueStatic.h>
-#include <Fuse.Triggers.WhileVi-6496a536.h>
 #include <Fuse.Triggers.WhileVisible.h>
-#include <Fuse.Triggers.WhileWi-326ada2e.h>
-#include <Fuse.Triggers.WhileWi-9de7166a.h>
-#include <Fuse.Triggers.WhileWi-c51569fd.h>
+#include <Fuse.Triggers.WhileVisibleInScrollView.h>
+#include <Fuse.Triggers.WhileVisibleInScrollViewMode.h>
+#include <Fuse.Triggers.WhileWindowAspect.h>
+#include <Fuse.Triggers.WhileWindowLandscape.h>
+#include <Fuse.Triggers.WhileWindowPortrait.h>
 #include <Fuse.Triggers.WhileWindowSize.h>
-#include <Fuse.Triggers.WindowS-8233f733.h>
+#include <Fuse.Triggers.WindowSizeTrigger.h>
 #include <Fuse.UpdateManager.h>
 #include <Fuse.UpdateStage.h>
 #include <Fuse.UserEvent.h>
@@ -242,8 +244,8 @@ namespace g{
 namespace Fuse{
 namespace Triggers{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class AddingAnimation :46
 // {
@@ -259,7 +261,7 @@ static void AddingAnimation_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::AddingAnimation, _delayFrame), 0);
     type->Reflection.SetFunctions(3,
         new uFunction("get_DelayFrame", NULL, (void*)AddingAnimation__get_DelayFrame_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
@@ -274,7 +276,7 @@ static void AddingAnimation_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(AddingAnimation);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -368,8 +370,8 @@ AddingAnimation* AddingAnimation::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class Android :1412
 // {
@@ -384,7 +386,7 @@ static void Android_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30);
+    type->SetFields(33);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)Android__New2_fn, 0, true, type, 0));
 }
@@ -396,7 +398,7 @@ static void Android_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 30;
+    options.FieldCount = 33;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(Android);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -465,8 +467,8 @@ Android* Android::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public partial sealed class Busy :137
 // {
@@ -481,7 +483,7 @@ static void Busy_build(uType* type)
     ::STRINGS[0] = uString::Const("activate");
     ::STRINGS[1] = uString::Const("deactivate");
     ::STRINGS[2] = uString::Const("Busy.activate takes no arguments");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno");
     ::STRINGS[4] = uString::Const("Busy.deactivate takes no arguments");
     ::STRINGS[5] = uString::Const("");
     ::STRINGS[6] = uString::Const("On='ParameterChanged' requires a Visual parent");
@@ -722,7 +724,7 @@ void Busy::UpdateState()
         if (v == NULL)
         {
             _rootOn = (_rootOn & -2);
-            ::g::Fuse::Diagnostics::UserError(::STRINGS[6/*"On='Paramet...*/], this, ::STRINGS[3/*"/Users/eric...*/], 203, ::STRINGS[7/*"UpdateState"*/], NULL);
+            ::g::Fuse::Diagnostics::UserError(::STRINGS[6/*"On='Paramet...*/], this, ::STRINGS[3/*"/usr/local/...*/], 203, ::STRINGS[7/*"UpdateState"*/], NULL);
         }
         else
             uPtr(v)->add_ParameterChanged(uDelegate::New(::TYPES[6/*Uno.EventHandler*/], (void*)Busy__OnParameterChanged_fn, this));
@@ -737,7 +739,7 @@ void Busy::activate(::g::Fuse::Scripting::Context* c, Busy* b, uArray* args)
 
     if (uPtr(args)->Length() != 0)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[2/*"Busy.activa...*/], b, ::STRINGS[3/*"/Users/eric...*/], 264, ::STRINGS[0/*"activate"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[2/*"Busy.activa...*/], b, ::STRINGS[3/*"/usr/local/...*/], 264, ::STRINGS[0/*"activate"*/], NULL);
         return;
     }
 
@@ -752,7 +754,7 @@ void Busy::deactivate(::g::Fuse::Scripting::Context* c, Busy* b, uArray* args)
 
     if (uPtr(args)->Length() != 0)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[4/*"Busy.deacti...*/], b, ::STRINGS[3/*"/Users/eric...*/], 282, ::STRINGS[1/*"deactivate"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[4/*"Busy.deacti...*/], b, ::STRINGS[3/*"/usr/local/...*/], 282, ::STRINGS[1/*"deactivate"*/], NULL);
         return;
     }
 
@@ -768,8 +770,8 @@ Busy* Busy::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public enum BusyOn :77
 uEnumType* BusyOn_typeof()
@@ -784,8 +786,8 @@ uEnumType* BusyOn_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class BusyTask :343
 // {
@@ -1158,8 +1160,8 @@ void BusyTask::SetBusy(::g::Fuse::Node* n, BusyTask** bt, int act, uString* mess
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public enum BusyTaskActivity :301
 uEnumType* BusyTaskActivity_typeof()
@@ -1182,8 +1184,8 @@ uEnumType* BusyTaskActivity_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public enum BusyTaskMatch :328
 uEnumType* BusyTaskMatch_typeof()
@@ -1199,8 +1201,8 @@ uEnumType* BusyTaskMatch_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class BusyTaskModule :552
 // {
@@ -1279,8 +1281,8 @@ BusyTaskModule* BusyTaskModule::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public partial sealed class Completed :644
 // {
@@ -1294,7 +1296,7 @@ static void Completed_build(uType* type)
 {
     ::STRINGS[10] = uString::Const("reset");
     ::STRINGS[11] = uString::Const("Completed.reset takes no arguments");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno");
     ::TYPES[1] = ::g::Uno::Type_typeof();
     ::TYPES[2] = ::g::Fuse::Scripting::ScriptMember_typeof()->Array();
     ::TYPES[16] = ::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(type, NULL);
@@ -1310,7 +1312,7 @@ static void Completed_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31,
+    type->SetFields(34,
         ::g::Fuse::Triggers::CompletedActivation_typeof(), offsetof(::g::Fuse::Triggers::Completed, _activation), 0,
         ::g::Fuse::Triggers::BusyTaskActivity_typeof(), offsetof(::g::Fuse::Triggers::Completed, _activity), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::Completed, _listening), 0,
@@ -1337,7 +1339,7 @@ static void Completed_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::PulseTrigger_typeof();
-    options.FieldCount = 37;
+    options.FieldCount = 40;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(Completed);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -1639,7 +1641,7 @@ void Completed::reset(::g::Fuse::Scripting::Context* c, Completed* cp, uArray* a
 
     if (uPtr(args)->Length() != 0)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[11/*"Completed.r...*/], cp, ::STRINGS[3/*"/Users/eric...*/], 824, ::STRINGS[10/*"reset"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[11/*"Completed.r...*/], cp, ::STRINGS[3/*"/usr/local/...*/], 824, ::STRINGS[10/*"reset"*/], NULL);
         return;
     }
 
@@ -1647,8 +1649,8 @@ void Completed::reset(::g::Fuse::Scripting::Context* c, Completed* cp, uArray* a
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public enum CompletedActivation :614
 uEnumType* CompletedActivation_typeof()
@@ -1663,8 +1665,8 @@ uEnumType* CompletedActivation_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class CompletedEventArgs :612
 // {
@@ -1716,15 +1718,15 @@ CompletedEventArgs* CompletedEventArgs::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // private sealed class BusyTaskModule.ConstructorClosure :565
 // {
 static void BusyTaskModule__ConstructorClosure_build(uType* type)
 {
     ::STRINGS[12] = uString::Const("Use the `Busy` behavior instead of FuseJS/BusyTask");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno");
     ::STRINGS[13] = uString::Const("Construct");
     ::STRINGS[14] = uString::Const("new BusyTask() - must provide 1 or 2 arguments");
     ::STRINGS[15] = uString::Const("new BusyTask() - argument must be an UX node");
@@ -1785,7 +1787,7 @@ uObject* BusyTaskModule__ConstructorClosure::Construct(uArray* args)
 
     if (!BusyTaskModule__ConstructorClosure::_warning_)
     {
-        ::g::Fuse::Diagnostics::Deprecated(::STRINGS[12/*"Use the `Bu...*/], this, ::STRINGS[3/*"/Users/eric...*/], 580, ::STRINGS[13/*"Construct"*/]);
+        ::g::Fuse::Diagnostics::Deprecated(::STRINGS[12/*"Use the `Bu...*/], this, ::STRINGS[3/*"/usr/local/...*/], 580, ::STRINGS[13/*"Construct"*/]);
         BusyTaskModule__ConstructorClosure::_warning_ = true;
     }
 
@@ -1814,15 +1816,15 @@ BusyTaskModule__ConstructorClosure* BusyTaskModule__ConstructorClosure::New1(::g
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class ContainingText :75
 // {
 static void ContainingText_build(uType* type)
 {
     ::STRINGS[16] = uString::Const("Use the trigger WhileContainsText instead");
-    ::STRINGS[17] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/triggers/$.uno");
+    ::STRINGS[17] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/triggers/$.uno");
     ::STRINGS[18] = uString::Const(".ctor");
     type->SetInterfaces(
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface0),
@@ -1833,7 +1835,7 @@ static void ContainingText_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(33);
+    type->SetFields(36);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)ContainingText__New3_fn, 0, true, type, 0));
 }
@@ -1845,7 +1847,7 @@ static void ContainingText_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileContainsText_typeof();
-    options.FieldCount = 33;
+    options.FieldCount = 36;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(ContainingText);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -1889,7 +1891,7 @@ void ContainingText__New3_fn(ContainingText** __retval)
 void ContainingText::ctor_7()
 {
     ctor_6();
-    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[16/*"Use the tri...*/], this, ::STRINGS[17/*"/Users/eric...*/], 79, ::STRINGS[18/*".ctor"*/]);
+    ::g::Fuse::Diagnostics::Deprecated(::STRINGS[16/*"Use the tri...*/], this, ::STRINGS[17/*"/usr/local/...*/], 79, ::STRINGS[18/*".ctor"*/]);
 }
 
 // public ContainingText New() [static] :77
@@ -1901,10 +1903,10 @@ ContainingText* ContainingText::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
-// private sealed class IScrolledLengths.ContentSizeLength :670
+// private sealed class IScrolledLengths.ContentSizeLength :678
 // {
 static void IScrolledLengths__ContentSizeLength_build(uType* type)
 {
@@ -1928,37 +1930,37 @@ IScrolledLengths__ContentSizeLength_type* IScrolledLengths__ContentSizeLength_ty
     return type;
 }
 
-// public generated ContentSizeLength() :670
+// public generated ContentSizeLength() :678
 void IScrolledLengths__ContentSizeLength__ctor__fn(IScrolledLengths__ContentSizeLength* __this)
 {
     __this->ctor_();
 }
 
-// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) :672
+// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) :680
 void IScrolledLengths__ContentSizeLength__GetPoints_fn(IScrolledLengths__ContentSizeLength* __this, float* value, ::g::Fuse::Controls::ScrollViewBase* scrollable, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->GetPoints(*value, scrollable);
 }
 
-// public generated ContentSizeLength New() :670
+// public generated ContentSizeLength New() :678
 void IScrolledLengths__ContentSizeLength__New1_fn(IScrolledLengths__ContentSizeLength** __retval)
 {
     *__retval = IScrolledLengths__ContentSizeLength::New1();
 }
 
-// public generated ContentSizeLength() [instance] :670
+// public generated ContentSizeLength() [instance] :678
 void IScrolledLengths__ContentSizeLength::ctor_()
 {
 }
 
-// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) [instance] :672
+// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) [instance] :680
 ::g::Uno::Float2 IScrolledLengths__ContentSizeLength::GetPoints(float value, ::g::Fuse::Controls::ScrollViewBase* scrollable)
 {
     uStackFrame __("Fuse.Triggers.IScrolledLengths.ContentSizeLength", "GetPoints(float,Fuse.Controls.ScrollViewBase)");
     return ::g::Uno::Float2__op_Multiply(value, ::g::Uno::Float2__op_Subtraction2(uPtr(scrollable)->MaxScroll(), uPtr(scrollable)->MinScroll()));
 }
 
-// public generated ContentSizeLength New() [static] :670
+// public generated ContentSizeLength New() [static] :678
 IScrolledLengths__ContentSizeLength* IScrolledLengths__ContentSizeLength::New1()
 {
     IScrolledLengths__ContentSizeLength* obj1 = (IScrolledLengths__ContentSizeLength*)uNew(IScrolledLengths__ContentSizeLength_typeof());
@@ -1967,8 +1969,8 @@ IScrolledLengths__ContentSizeLength* IScrolledLengths__ContentSizeLength::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // private sealed class Trigger.DeferredItem :2851
 // {
@@ -2033,8 +2035,8 @@ Trigger__DeferredItem* Trigger__DeferredItem::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // private sealed class StateGroup.GotoImpl :1967
 // {
@@ -2128,8 +2130,8 @@ StateGroup__GotoImpl* StateGroup__GotoImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public abstract interface IBusyHandler :338
 // {
@@ -2145,8 +2147,8 @@ uInterfaceType* IBusyHandler_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/actions/$.uno
+// ---------------------------------------------------------------
 
 // public abstract interface IMediaPlayback :289
 // {
@@ -2166,8 +2168,8 @@ uInterfaceType* IMediaPlayback_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/triggers/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls/1.2.1/triggers/$.uno
+// ----------------------------------------------------------------
 
 // public sealed class InteractionCompleted :184
 // {
@@ -2183,7 +2185,7 @@ static void InteractionCompleted_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::InteractionCompleted, _on), 0,
         ::g::Fuse::Visual_typeof(), offsetof(::g::Fuse::Triggers::InteractionCompleted, _source), 0,
         ::g::Fuse::Visual_typeof(), offsetof(::g::Fuse::Triggers::InteractionCompleted, _visual), 0);
@@ -2200,7 +2202,7 @@ static void InteractionCompleted_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 33;
+    options.FieldCount = 36;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(InteractionCompleted);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -2322,8 +2324,8 @@ InteractionCompleted* InteractionCompleted::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class iOS :1376
 // {
@@ -2338,7 +2340,7 @@ static void iOS_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30);
+    type->SetFields(33);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)iOS__New2_fn, 0, true, type, 0));
 }
@@ -2350,7 +2352,7 @@ static void iOS_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 30;
+    options.FieldCount = 33;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(iOS);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -2421,8 +2423,8 @@ iOS* iOS::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/actions/$.uno
+// ---------------------------------------------------------------
 
 // public abstract interface IPlayback :264
 // {
@@ -2447,8 +2449,8 @@ uInterfaceType* IPlayback_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public abstract interface IProgress :1444
 // {
@@ -2466,8 +2468,8 @@ uInterfaceType* IProgress_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public abstract interface IPulseTrigger :2138
 // {
@@ -2483,10 +2485,10 @@ uInterfaceType* IPulseTrigger_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
-// public abstract interface IScrolledLength :639
+// public abstract interface IScrolledLength :647
 // {
 uInterfaceType* IScrolledLength_typeof()
 {
@@ -2500,12 +2502,12 @@ uInterfaceType* IScrolledLength_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
-// public static class IScrolledLengths :644
+// public static class IScrolledLengths :652
 // {
-// static IScrolledLengths() :644
+// static IScrolledLengths() :652
 static void IScrolledLengths__cctor__fn(uType* __type)
 {
     IScrolledLengths::Points_ = (uObject*)IScrolledLengths__PointsLength::New1();
@@ -2548,8 +2550,8 @@ uSStrong<uObject*> IScrolledLengths::Points_;
 uSStrong<uObject*> IScrolledLengths::ScrollViewSize_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public abstract interface IValue<T> :1131
 // {
@@ -2568,8 +2570,8 @@ uInterfaceType* IValue_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // internal abstract interface IVisibility :11
 // {
@@ -2583,8 +2585,8 @@ uInterfaceType* IVisibility_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public delegate void KeyPressHandler(object sender, Fuse.Input.KeyEventArgs args) :1257
 uDelegateType* KeyPressHandler_typeof()
@@ -2599,15 +2601,15 @@ uDelegateType* KeyPressHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/triggers/$.uno
+// ----------------------------------------------------------------
 
-// public sealed class LayoutAnimation :212
+// public sealed class LayoutAnimation :213
 // {
 static void LayoutAnimation_build(uType* type)
 {
     ::STRINGS[19] = uString::Const("LayoutAnimation can only be used on an Element");
-    ::STRINGS[20] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/$.uno");
+    ::STRINGS[20] = uString::Const("/usr/local/share/uno/Packages/Fuse.Elements/1.2.1/triggers/$.uno");
     ::STRINGS[21] = uString::Const("OnRooted");
     ::TYPES[24] = ::g::Fuse::Elements::Element_typeof();
     ::TYPES[25] = ::g::Fuse::PlacedHandler_typeof();
@@ -2622,7 +2624,7 @@ static void LayoutAnimation_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::TYPES[24/*Fuse.Elements.Element*/], offsetof(::g::Fuse::Triggers::LayoutAnimation, _element), 0,
         ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Triggers::LayoutAnimation, _frameTrans), 0,
         ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Triggers::LayoutAnimation, _hasOld), 0,
@@ -2645,7 +2647,7 @@ static void LayoutAnimation_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 39;
+    options.FieldCount = 42;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(LayoutAnimation);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -2675,31 +2677,31 @@ static void LayoutAnimation_build(uType* type)
     return type;
 }
 
-// public generated LayoutAnimation() :212
+// public generated LayoutAnimation() :213
 void LayoutAnimation__ctor_5_fn(LayoutAnimation* __this)
 {
     __this->ctor_5();
 }
 
-// public generated LayoutAnimation New() :212
+// public generated LayoutAnimation New() :213
 void LayoutAnimation__New2_fn(LayoutAnimation** __retval)
 {
     *__retval = LayoutAnimation::New2();
 }
 
-// private void OnPlaced(object sender, Fuse.PlacedArgs args) :277
+// private void OnPlaced(object sender, Fuse.PlacedArgs args) :278
 void LayoutAnimation__OnPlaced_fn(LayoutAnimation* __this, uObject* sender, ::g::Fuse::PlacedArgs* args)
 {
     __this->OnPlaced(sender, args);
 }
 
-// private void OnPreplacement(object sender, Fuse.Elements.PreplacementArgs args) :256
+// private void OnPreplacement(object sender, Fuse.Elements.PreplacementArgs args) :257
 void LayoutAnimation__OnPreplacement_fn(LayoutAnimation* __this, uObject* sender, ::g::Fuse::Elements::PreplacementArgs* args)
 {
     __this->OnPreplacement(sender, args);
 }
 
-// protected override sealed void OnRooted() :222
+// protected override sealed void OnRooted() :223
 void LayoutAnimation__OnRooted_fn(LayoutAnimation* __this)
 {
     uStackFrame __("Fuse.Triggers.LayoutAnimation", "OnRooted()");
@@ -2708,7 +2710,7 @@ void LayoutAnimation__OnRooted_fn(LayoutAnimation* __this)
 
     if (__this->_element == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[19/*"LayoutAnima...*/], __this, ::STRINGS[20/*"/Users/eric...*/], 228, ::STRINGS[21/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[19/*"LayoutAnima...*/], __this, ::STRINGS[20/*"/usr/local/...*/], 229, ::STRINGS[21/*"OnRooted"*/], NULL);
         return;
     }
 
@@ -2718,13 +2720,13 @@ void LayoutAnimation__OnRooted_fn(LayoutAnimation* __this)
     ::g::Fuse::VisualEvent__AddHandler_fn(uPtr(::g::Fuse::Triggers::LayoutTransition::Transitioned()), __this->_element, uDelegate::New(::TYPES[27/*Fuse.Triggers.LayoutTransitionedHandler*/], (void*)LayoutAnimation__OnTransitioned_fn, __this));
 }
 
-// private void OnTransitioned(object sender, Fuse.Triggers.LayoutTransitionedArgs args) :303
+// private void OnTransitioned(object sender, Fuse.Triggers.LayoutTransitionedArgs args) :304
 void LayoutAnimation__OnTransitioned_fn(LayoutAnimation* __this, uObject* sender, ::g::Fuse::Triggers::LayoutTransitionedArgs* args)
 {
     __this->OnTransitioned(sender, args);
 }
 
-// protected override sealed void OnUnrooted() :238
+// protected override sealed void OnUnrooted() :239
 void LayoutAnimation__OnUnrooted_fn(LayoutAnimation* __this)
 {
     uStackFrame __("Fuse.Triggers.LayoutAnimation", "OnUnrooted()");
@@ -2740,26 +2742,26 @@ void LayoutAnimation__OnUnrooted_fn(LayoutAnimation* __this)
     ::g::Fuse::Triggers::Trigger__OnUnrooted_fn(__this);
 }
 
-// public Fuse.Triggers.LayoutAnimationType get_Type() :217
+// public Fuse.Triggers.LayoutAnimationType get_Type() :218
 void LayoutAnimation__get_Type_fn(LayoutAnimation* __this, int* __retval)
 {
     *__retval = __this->Type();
 }
 
-// public void set_Type(Fuse.Triggers.LayoutAnimationType value) :218
+// public void set_Type(Fuse.Triggers.LayoutAnimationType value) :219
 void LayoutAnimation__set_Type_fn(LayoutAnimation* __this, int* value)
 {
     __this->Type(*value);
 }
 
-// public generated LayoutAnimation() [instance] :212
+// public generated LayoutAnimation() [instance] :213
 void LayoutAnimation::ctor_5()
 {
     _type = 3;
     ctor_4();
 }
 
-// private void OnPlaced(object sender, Fuse.PlacedArgs args) [instance] :277
+// private void OnPlaced(object sender, Fuse.PlacedArgs args) [instance] :278
 void LayoutAnimation::OnPlaced(uObject* sender, ::g::Fuse::PlacedArgs* args)
 {
     uStackFrame __("Fuse.Triggers.LayoutAnimation", "OnPlaced(object,Fuse.PlacedArgs)");
@@ -2785,7 +2787,7 @@ void LayoutAnimation::OnPlaced(uObject* sender, ::g::Fuse::PlacedArgs* args)
     Deactivate();
 }
 
-// private void OnPreplacement(object sender, Fuse.Elements.PreplacementArgs args) [instance] :256
+// private void OnPreplacement(object sender, Fuse.Elements.PreplacementArgs args) [instance] :257
 void LayoutAnimation::OnPreplacement(uObject* sender, ::g::Fuse::Elements::PreplacementArgs* args)
 {
     uStackFrame __("Fuse.Triggers.LayoutAnimation", "OnPreplacement(object,Fuse.Elements.PreplacementArgs)");
@@ -2807,7 +2809,7 @@ void LayoutAnimation::OnPreplacement(uObject* sender, ::g::Fuse::Elements::Prepl
     _oldLocal = uPtr(_element)->LocalTransform();
 }
 
-// private void OnTransitioned(object sender, Fuse.Triggers.LayoutTransitionedArgs args) [instance] :303
+// private void OnTransitioned(object sender, Fuse.Triggers.LayoutTransitionedArgs args) [instance] :304
 void LayoutAnimation::OnTransitioned(uObject* sender, ::g::Fuse::Triggers::LayoutTransitionedArgs* args)
 {
     if (!((Type() & 2) == 2))
@@ -2818,19 +2820,19 @@ void LayoutAnimation::OnTransitioned(uObject* sender, ::g::Fuse::Triggers::Layou
     Deactivate();
 }
 
-// public Fuse.Triggers.LayoutAnimationType get_Type() [instance] :217
+// public Fuse.Triggers.LayoutAnimationType get_Type() [instance] :218
 int LayoutAnimation::Type()
 {
     return _type;
 }
 
-// public void set_Type(Fuse.Triggers.LayoutAnimationType value) [instance] :218
+// public void set_Type(Fuse.Triggers.LayoutAnimationType value) [instance] :219
 void LayoutAnimation::Type(int value)
 {
     _type = value;
 }
 
-// public generated LayoutAnimation New() [static] :212
+// public generated LayoutAnimation New() [static] :213
 LayoutAnimation* LayoutAnimation::New2()
 {
     LayoutAnimation* obj2 = (LayoutAnimation*)uNew(LayoutAnimation_typeof());
@@ -2839,10 +2841,10 @@ LayoutAnimation* LayoutAnimation::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/triggers/$.uno
+// ----------------------------------------------------------------
 
-// public enum LayoutAnimationType :160
+// public enum LayoutAnimationType :161
 uEnumType* LayoutAnimationType_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -2856,8 +2858,8 @@ uEnumType* LayoutAnimationType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/triggers/$.uno
+// ----------------------------------------------------------------
 
 // public static class LayoutTransition :26
 // {
@@ -2920,7 +2922,7 @@ void LayoutTransition__GetPositionChange_fn(::g::Fuse::Node* n, ::g::Uno::Float2
     *__retval = LayoutTransition::GetPositionChange(n, oldPos, newPos);
 }
 
-// internal static bool GetSizeChange(Fuse.Node n, float2& oldSize, float2& newSize) :141
+// internal static bool GetSizeChange(Fuse.Node n, float2& oldSize, float2& newSize) :142
 void LayoutTransition__GetSizeChange_fn(::g::Fuse::Node* n, ::g::Uno::Float2* oldSize, ::g::Uno::Float2* newSize, bool* __retval)
 {
     *__retval = LayoutTransition::GetSizeChange(n, oldSize, newSize);
@@ -2938,7 +2940,7 @@ void LayoutTransition__SetPositionChange_fn(::g::Fuse::Visual* n, ::g::Uno::Floa
     LayoutTransition::SetPositionChange(n, *oldPos, *newPos);
 }
 
-// internal static void SetSizeChange(Fuse.Node n, float2 oldSize, float2 newSize) :136
+// internal static void SetSizeChange(Fuse.Node n, float2 oldSize, float2 newSize) :137
 void LayoutTransition__SetSizeChange_fn(::g::Fuse::Node* n, ::g::Uno::Float2* oldSize, ::g::Uno::Float2* newSize)
 {
     LayoutTransition::SetSizeChange(n, *oldSize, *newSize);
@@ -2979,7 +2981,7 @@ bool LayoutTransition::GetPositionChange(::g::Fuse::Node* n, ::g::Uno::Float2* o
     return v != NULL;
 }
 
-// internal static bool GetSizeChange(Fuse.Node n, float2& oldSize, float2& newSize) [static] :141
+// internal static bool GetSizeChange(Fuse.Node n, float2& oldSize, float2& newSize) [static] :142
 bool LayoutTransition::GetSizeChange(::g::Fuse::Node* n, ::g::Uno::Float2* oldSize, ::g::Uno::Float2* newSize)
 {
     uStackFrame __("Fuse.Triggers.LayoutTransition", "GetSizeChange(Fuse.Node,float2&,float2&)");
@@ -3022,7 +3024,7 @@ void LayoutTransition::SetPositionChange(::g::Fuse::Visual* n, ::g::Uno::Float2 
     uPtr(uPtr(n)->Properties())->Set(LayoutTransition::_positionChange(), uBox(::g::Uno::Float4_typeof(), ::g::Uno::Float4__New7(oldPos, newPos)));
 }
 
-// internal static void SetSizeChange(Fuse.Node n, float2 oldSize, float2 newSize) [static] :136
+// internal static void SetSizeChange(Fuse.Node n, float2 oldSize, float2 newSize) [static] :137
 void LayoutTransition::SetSizeChange(::g::Fuse::Node* n, ::g::Uno::Float2 oldSize, ::g::Uno::Float2 newSize)
 {
     uStackFrame __("Fuse.Triggers.LayoutTransition", "SetSizeChange(Fuse.Node,float2,float2)");
@@ -3046,8 +3048,8 @@ void LayoutTransition::SetWorldPositionChange(::g::Fuse::Node* n, ::g::Uno::Floa
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/triggers/$.uno
+// ----------------------------------------------------------------
 
 // internal sealed class LayoutTransitioned :17
 // {
@@ -3108,8 +3110,8 @@ LayoutTransitioned* LayoutTransitioned::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/triggers/$.uno
+// ----------------------------------------------------------------
 
 // internal sealed class LayoutTransitionedArgs :10
 // {
@@ -3165,8 +3167,8 @@ LayoutTransitionedArgs* LayoutTransitionedArgs::New3(::g::Fuse::Visual* node)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/triggers/$.uno
+// ----------------------------------------------------------------
 
 // internal delegate void LayoutTransitionedHandler(object sender, Fuse.Triggers.LayoutTransitionedArgs args) :16
 uDelegateType* LayoutTransitionedHandler_typeof()
@@ -3181,8 +3183,8 @@ uDelegateType* LayoutTransitionedHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class OnBackButton :1345
 // {
@@ -3197,7 +3199,7 @@ static void OnBackButton_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(32);
+    type->SetFields(35);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)OnBackButton__New3_fn, 0, true, type, 0));
 }
@@ -3209,7 +3211,7 @@ static void OnBackButton_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::OnKeyPress_typeof();
-    options.FieldCount = 32;
+    options.FieldCount = 35;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(OnBackButton);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -3273,8 +3275,8 @@ OnBackButton* OnBackButton::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public class OnKeyPress :1278
 // {
@@ -3291,7 +3293,7 @@ static void OnKeyPress_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::g::Uno::Platform::Key_typeof(), offsetof(::g::Fuse::Triggers::OnKeyPress, _Key), 0,
         ::TYPES[29/*Fuse.Triggers.KeyPressHandler*/], offsetof(::g::Fuse::Triggers::OnKeyPress, Handler1), 0);
     type->Reflection.SetFunctions(5,
@@ -3309,7 +3311,7 @@ static void OnKeyPress_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 32;
+    options.FieldCount = 35;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(OnKeyPress);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -3452,15 +3454,15 @@ OnKeyPress* OnKeyPress::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.UserEvents/1.2.1/$.uno
+// ---------------------------------------------------------
 
 // public sealed class OnUserEvent :71
 // {
 static void OnUserEvent_build(uType* type)
 {
     ::STRINGS[22] = uString::Const("OnUserEvent requires a `EventName`");
-    ::STRINGS[23] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/1.0.5/$.uno");
+    ::STRINGS[23] = uString::Const("/usr/local/share/uno/Packages/Fuse.UserEvents/1.2.1/$.uno");
     ::STRINGS[21] = uString::Const("OnRooted");
     ::TYPES[30] = ::g::Fuse::UserEventHandler_typeof();
     type->SetInterfaces(
@@ -3472,7 +3474,7 @@ static void OnUserEvent_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::g::Fuse::Triggers::OnUserEventFilter_typeof(), offsetof(::g::Fuse::Triggers::OnUserEvent, _filter), 0,
         ::g::Fuse::UserEventDispatch_typeof(), offsetof(::g::Fuse::Triggers::OnUserEvent, _rootedEvent), 0,
         ::g::Fuse::Visual_typeof(), offsetof(::g::Fuse::Triggers::OnUserEvent, _scope), 0,
@@ -3495,7 +3497,7 @@ static void OnUserEvent_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 35;
+    options.FieldCount = 38;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(OnUserEvent);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -3586,7 +3588,7 @@ void OnUserEvent__OnRooted_fn(OnUserEvent* __this)
     ::g::Fuse::Triggers::Trigger__OnRooted_fn(__this);
 
     if (::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit1(__this->EventName()), NULL))
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[22/*"OnUserEvent...*/], __this, ::STRINGS[23/*"/Users/eric...*/], 99, ::STRINGS[21/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[22/*"OnUserEvent...*/], __this, ::STRINGS[23/*"/usr/local/...*/], 99, ::STRINGS[21/*"OnRooted"*/], NULL);
     else
     {
         __this->_rootedEvent = ::g::Fuse::UserEventDispatch::GetByName(__this->EventName());
@@ -3687,8 +3689,8 @@ OnUserEvent* OnUserEvent::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.UserEvents/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.UserEvents/1.2.1/$.uno
+// ---------------------------------------------------------
 
 // public enum OnUserEventFilter :7
 uEnumType* OnUserEventFilter_typeof()
@@ -3703,15 +3705,15 @@ uEnumType* OnUserEventFilter_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.2.1/$.uno
+// ---------------------------------------------------------------
 
-// public sealed class PageBeginLoading :1044
+// public sealed class PageBeginLoading :1069
 // {
 static void PageBeginLoading_build(uType* type)
 {
     ::STRINGS[24] = uString::Const("WebView");
-    ::STRINGS[25] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno");
+    ::STRINGS[25] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.2.1/$.uno");
     ::STRINGS[21] = uString::Const("OnRooted");
     ::TYPES[31] = ::g::Fuse::Controls::IWebView_typeof();
     ::TYPES[6] = ::g::Uno::EventHandler_typeof();
@@ -3724,7 +3726,7 @@ static void PageBeginLoading_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::TYPES[31/*Fuse.Controls.IWebView*/], offsetof(::g::Fuse::Triggers::PageBeginLoading, _webView), 0);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)PageBeginLoading__New2_fn, 0, true, type, 0));
@@ -3737,7 +3739,7 @@ static void PageBeginLoading_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(PageBeginLoading);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -3767,25 +3769,25 @@ static void PageBeginLoading_build(uType* type)
     return type;
 }
 
-// public generated PageBeginLoading() :1044
+// public generated PageBeginLoading() :1069
 void PageBeginLoading__ctor_5_fn(PageBeginLoading* __this)
 {
     __this->ctor_5();
 }
 
-// public generated PageBeginLoading New() :1044
+// public generated PageBeginLoading New() :1069
 void PageBeginLoading__New2_fn(PageBeginLoading** __retval)
 {
     *__retval = PageBeginLoading::New2();
 }
 
-// private void OnPageBeginLoading(object s, object a) :1062
+// private void OnPageBeginLoading(object s, object a) :1087
 void PageBeginLoading__OnPageBeginLoading_fn(PageBeginLoading* __this, uObject* s, uObject* a)
 {
     __this->OnPageBeginLoading(s, a);
 }
 
-// protected override sealed void OnRooted() :1048
+// protected override sealed void OnRooted() :1073
 void PageBeginLoading__OnRooted_fn(PageBeginLoading* __this)
 {
     uStackFrame __("Fuse.Triggers.PageBeginLoading", "OnRooted()");
@@ -3797,10 +3799,10 @@ void PageBeginLoading__OnRooted_fn(PageBeginLoading* __this)
         ::g::Fuse::Controls::IWebView::add_BeginLoading(uInterface(uPtr(__this->_webView), ::TYPES[31/*Fuse.Controls.IWebView*/]), uDelegate::New(::TYPES[6/*Uno.EventHandler*/], (void*)PageBeginLoading__OnPageBeginLoading_fn, __this));
     }
     else
-        ::g::Fuse::Diagnostics::UserRootError(::STRINGS[24/*"WebView"*/], __this->Parent(), __this, ::STRINGS[25/*"/Users/eric...*/], 1058, ::STRINGS[21/*"OnRooted"*/]);
+        ::g::Fuse::Diagnostics::UserRootError(::STRINGS[24/*"WebView"*/], __this->Parent(), __this, ::STRINGS[25/*"/usr/local/...*/], 1083, ::STRINGS[21/*"OnRooted"*/]);
 }
 
-// protected override sealed void OnUnrooted() :1067
+// protected override sealed void OnUnrooted() :1092
 void PageBeginLoading__OnUnrooted_fn(PageBeginLoading* __this)
 {
     uStackFrame __("Fuse.Triggers.PageBeginLoading", "OnUnrooted()");
@@ -3814,19 +3816,19 @@ void PageBeginLoading__OnUnrooted_fn(PageBeginLoading* __this)
     ::g::Fuse::Triggers::Trigger__OnUnrooted_fn(__this);
 }
 
-// public generated PageBeginLoading() [instance] :1044
+// public generated PageBeginLoading() [instance] :1069
 void PageBeginLoading::ctor_5()
 {
     ctor_4();
 }
 
-// private void OnPageBeginLoading(object s, object a) [instance] :1062
+// private void OnPageBeginLoading(object s, object a) [instance] :1087
 void PageBeginLoading::OnPageBeginLoading(uObject* s, uObject* a)
 {
     Pulse();
 }
 
-// public generated PageBeginLoading New() [static] :1044
+// public generated PageBeginLoading New() [static] :1069
 PageBeginLoading* PageBeginLoading::New2()
 {
     PageBeginLoading* obj1 = (PageBeginLoading*)uNew(PageBeginLoading_typeof());
@@ -3835,15 +3837,15 @@ PageBeginLoading* PageBeginLoading::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.2.1/$.uno
+// ---------------------------------------------------------------
 
-// public sealed class PageLoaded :1103
+// public sealed class PageLoaded :1128
 // {
 static void PageLoaded_build(uType* type)
 {
     ::STRINGS[24] = uString::Const("WebView");
-    ::STRINGS[25] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno");
+    ::STRINGS[25] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.2.1/$.uno");
     ::STRINGS[21] = uString::Const("OnRooted");
     ::TYPES[31] = ::g::Fuse::Controls::IWebView_typeof();
     ::TYPES[6] = ::g::Uno::EventHandler_typeof();
@@ -3856,7 +3858,7 @@ static void PageLoaded_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::TYPES[31/*Fuse.Controls.IWebView*/], offsetof(::g::Fuse::Triggers::PageLoaded, _webView), 0);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)PageLoaded__New2_fn, 0, true, type, 0));
@@ -3869,7 +3871,7 @@ static void PageLoaded_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(PageLoaded);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -3899,25 +3901,25 @@ static void PageLoaded_build(uType* type)
     return type;
 }
 
-// public generated PageLoaded() :1103
+// public generated PageLoaded() :1128
 void PageLoaded__ctor_5_fn(PageLoaded* __this)
 {
     __this->ctor_5();
 }
 
-// public generated PageLoaded New() :1103
+// public generated PageLoaded New() :1128
 void PageLoaded__New2_fn(PageLoaded** __retval)
 {
     *__retval = PageLoaded::New2();
 }
 
-// private void OnPageLoaded(object s, object a) :1121
+// private void OnPageLoaded(object s, object a) :1146
 void PageLoaded__OnPageLoaded_fn(PageLoaded* __this, uObject* s, uObject* a)
 {
     __this->OnPageLoaded(s, a);
 }
 
-// protected override sealed void OnRooted() :1107
+// protected override sealed void OnRooted() :1132
 void PageLoaded__OnRooted_fn(PageLoaded* __this)
 {
     uStackFrame __("Fuse.Triggers.PageLoaded", "OnRooted()");
@@ -3929,10 +3931,10 @@ void PageLoaded__OnRooted_fn(PageLoaded* __this)
         ::g::Fuse::Controls::IWebView::add_PageLoaded(uInterface(uPtr(__this->_webView), ::TYPES[31/*Fuse.Controls.IWebView*/]), uDelegate::New(::TYPES[6/*Uno.EventHandler*/], (void*)PageLoaded__OnPageLoaded_fn, __this));
     }
     else
-        ::g::Fuse::Diagnostics::UserRootError(::STRINGS[24/*"WebView"*/], __this->Parent(), __this, ::STRINGS[25/*"/Users/eric...*/], 1117, ::STRINGS[21/*"OnRooted"*/]);
+        ::g::Fuse::Diagnostics::UserRootError(::STRINGS[24/*"WebView"*/], __this->Parent(), __this, ::STRINGS[25/*"/usr/local/...*/], 1142, ::STRINGS[21/*"OnRooted"*/]);
 }
 
-// protected override sealed void OnUnrooted() :1126
+// protected override sealed void OnUnrooted() :1151
 void PageLoaded__OnUnrooted_fn(PageLoaded* __this)
 {
     uStackFrame __("Fuse.Triggers.PageLoaded", "OnUnrooted()");
@@ -3946,19 +3948,19 @@ void PageLoaded__OnUnrooted_fn(PageLoaded* __this)
     ::g::Fuse::Triggers::Trigger__OnUnrooted_fn(__this);
 }
 
-// public generated PageLoaded() [instance] :1103
+// public generated PageLoaded() [instance] :1128
 void PageLoaded::ctor_5()
 {
     ctor_4();
 }
 
-// private void OnPageLoaded(object s, object a) [instance] :1121
+// private void OnPageLoaded(object s, object a) [instance] :1146
 void PageLoaded::OnPageLoaded(uObject* s, uObject* a)
 {
     Pulse();
 }
 
-// public generated PageLoaded New() [static] :1103
+// public generated PageLoaded New() [static] :1128
 PageLoaded* PageLoaded::New2()
 {
     PageLoaded* obj1 = (PageLoaded*)uNew(PageLoaded_typeof());
@@ -3967,10 +3969,10 @@ PageLoaded* PageLoaded::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
-// private sealed class IScrolledLengths.PixelsLength :658
+// private sealed class IScrolledLengths.PixelsLength :666
 // {
 static void IScrolledLengths__PixelsLength_build(uType* type)
 {
@@ -3994,37 +3996,37 @@ IScrolledLengths__PixelsLength_type* IScrolledLengths__PixelsLength_typeof()
     return type;
 }
 
-// public generated PixelsLength() :658
+// public generated PixelsLength() :666
 void IScrolledLengths__PixelsLength__ctor__fn(IScrolledLengths__PixelsLength* __this)
 {
     __this->ctor_();
 }
 
-// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) :660
+// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) :668
 void IScrolledLengths__PixelsLength__GetPoints_fn(IScrolledLengths__PixelsLength* __this, float* value, ::g::Fuse::Controls::ScrollViewBase* scrollable, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->GetPoints(*value, scrollable);
 }
 
-// public generated PixelsLength New() :658
+// public generated PixelsLength New() :666
 void IScrolledLengths__PixelsLength__New1_fn(IScrolledLengths__PixelsLength** __retval)
 {
     *__retval = IScrolledLengths__PixelsLength::New1();
 }
 
-// public generated PixelsLength() [instance] :658
+// public generated PixelsLength() [instance] :666
 void IScrolledLengths__PixelsLength::ctor_()
 {
 }
 
-// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) [instance] :660
+// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) [instance] :668
 ::g::Uno::Float2 IScrolledLengths__PixelsLength::GetPoints(float value, ::g::Fuse::Controls::ScrollViewBase* scrollable)
 {
     uStackFrame __("Fuse.Triggers.IScrolledLengths.PixelsLength", "GetPoints(float,Fuse.Controls.ScrollViewBase)");
     return ::g::Uno::Float2__op_Division1(::g::Uno::Float2__New1(value), uPtr(scrollable)->AbsoluteZoom());
 }
 
-// public generated PixelsLength New() [static] :658
+// public generated PixelsLength New() [static] :666
 IScrolledLengths__PixelsLength* IScrolledLengths__PixelsLength::New1()
 {
     IScrolledLengths__PixelsLength* obj1 = (IScrolledLengths__PixelsLength*)uNew(IScrolledLengths__PixelsLength_typeof());
@@ -4033,10 +4035,10 @@ IScrolledLengths__PixelsLength* IScrolledLengths__PixelsLength::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
-// private sealed class IScrolledLengths.PointsLength :646
+// private sealed class IScrolledLengths.PointsLength :654
 // {
 static void IScrolledLengths__PointsLength_build(uType* type)
 {
@@ -4060,36 +4062,36 @@ IScrolledLengths__PointsLength_type* IScrolledLengths__PointsLength_typeof()
     return type;
 }
 
-// public generated PointsLength() :646
+// public generated PointsLength() :654
 void IScrolledLengths__PointsLength__ctor__fn(IScrolledLengths__PointsLength* __this)
 {
     __this->ctor_();
 }
 
-// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) :648
+// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) :656
 void IScrolledLengths__PointsLength__GetPoints_fn(IScrolledLengths__PointsLength* __this, float* value, ::g::Fuse::Controls::ScrollViewBase* scrollable, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->GetPoints(*value, scrollable);
 }
 
-// public generated PointsLength New() :646
+// public generated PointsLength New() :654
 void IScrolledLengths__PointsLength__New1_fn(IScrolledLengths__PointsLength** __retval)
 {
     *__retval = IScrolledLengths__PointsLength::New1();
 }
 
-// public generated PointsLength() [instance] :646
+// public generated PointsLength() [instance] :654
 void IScrolledLengths__PointsLength::ctor_()
 {
 }
 
-// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) [instance] :648
+// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) [instance] :656
 ::g::Uno::Float2 IScrolledLengths__PointsLength::GetPoints(float value, ::g::Fuse::Controls::ScrollViewBase* scrollable)
 {
     return ::g::Uno::Float2__New1(value);
 }
 
-// public generated PointsLength New() [static] :646
+// public generated PointsLength New() [static] :654
 IScrolledLengths__PointsLength* IScrolledLengths__PointsLength::New1()
 {
     IScrolledLengths__PointsLength* obj1 = (IScrolledLengths__PointsLength*)uNew(IScrolledLengths__PointsLength_typeof());
@@ -4098,8 +4100,8 @@ IScrolledLengths__PointsLength* IScrolledLengths__PointsLength::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/triggers/$.uno
+// ----------------------------------------------------------------
 
 // private sealed class LayoutTransition.PositionChangeMode :61
 // {
@@ -4195,8 +4197,8 @@ LayoutTransition__PositionChangeMode* LayoutTransition__PositionChangeMode::New1
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class ProgressAnimation :1478
 // {
@@ -4213,7 +4215,7 @@ static void ProgressAnimation_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::g::Uno::Double_typeof(), offsetof(::g::Fuse::Triggers::ProgressAnimation, _prevValue), 0,
         ::TYPES[32/*Fuse.Triggers.IProgress*/], offsetof(::g::Fuse::Triggers::ProgressAnimation, _progress), 0,
         ::TYPES[32/*Fuse.Triggers.IProgress*/], offsetof(::g::Fuse::Triggers::ProgressAnimation, _source), 0);
@@ -4230,7 +4232,7 @@ static void ProgressAnimation_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 33;
+    options.FieldCount = 36;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(ProgressAnimation);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -4403,8 +4405,8 @@ ProgressAnimation* ProgressAnimation::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
 // public partial sealed class PullToReload :64
 // {
@@ -4431,7 +4433,7 @@ static void PullToReload_build(uType* type)
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::ScrollingAnimation_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::ScrollingAnimation_type, interface7),
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(::g::Fuse::Triggers::ScrollingAnimation_type, interface8));
-    type->SetFields(40,
+    type->SetFields(43,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::PullToReload, _internLoading), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::PullToReload, _isLoading), 0,
         ::g::Fuse::Triggers::State_typeof(), offsetof(::g::Fuse::Triggers::PullToReload, _loading), 0,
@@ -4464,7 +4466,7 @@ static void PullToReload_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::ScrollingAnimation_typeof();
-    options.FieldCount = 49;
+    options.FieldCount = 52;
     options.InterfaceCount = 9;
     options.ObjectSize = sizeof(PullToReload);
     options.TypeSize = sizeof(::g::Fuse::Triggers::ScrollingAnimation_type);
@@ -4860,8 +4862,8 @@ PullToReload* PullToReload::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public delegate void PulseTrigger<ArgsT>.PulseHandler(object sender, ArgsT args) :1569
 uDelegateType* PulseTrigger__PulseHandler_typeof()
@@ -4876,8 +4878,8 @@ uDelegateType* PulseTrigger__PulseHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public abstract class PulseTrigger<ArgsT> :1566
 // {
@@ -4901,7 +4903,7 @@ static void PulseTrigger_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::TYPES[39/*Fuse.Triggers.PulseTrigger`1.PulseHandler*/]->MakeType(type->T(0), NULL), offsetof(::g::Fuse::Triggers::PulseTrigger, Handler1), 0);
     type->Reflection.SetFunctions(2,
         new uFunction("add_Handler", NULL, (void*)PulseTrigger__add_Handler_fn, 0, false, uVoid_typeof(), 1, ::TYPES[39/*Fuse.Triggers.PulseTrigger`1.PulseHandler*/]->MakeType(type->T(0), NULL)),
@@ -4915,7 +4917,7 @@ static void PulseTrigger_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 34;
     options.GenericCount = 1;
     options.InterfaceCount = 8;
     options.MethodTypeCount = 2;
@@ -5052,8 +5054,8 @@ void PulseTrigger::RemoveHandlerImpl(uType* __type, ::g::Fuse::Visual* visual, u
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // private enum WhileFloat.Range :3612
 uEnumType* WhileFloat__Range_typeof()
@@ -5069,8 +5071,8 @@ uEnumType* WhileFloat__Range_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class RangeAnimation :1638
 // {
@@ -5085,7 +5087,7 @@ static void RangeAnimation_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Triggers::RangeAnimation, _maximum), 0,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Triggers::RangeAnimation, _minimum), 0,
         ::g::Uno::Double_typeof(), offsetof(::g::Fuse::Triggers::RangeAnimation, _prevValue), 0,
@@ -5107,7 +5109,7 @@ static void RangeAnimation_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 34;
+    options.FieldCount = 37;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(RangeAnimation);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -5264,8 +5266,8 @@ RangeAnimation* RangeAnimation::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // private sealed class WhileKeyboardVisible.RelativeToKeyboardMode :1227
 // {
@@ -5356,15 +5358,15 @@ WhileKeyboardVisible__RelativeToKeyboardMode* WhileKeyboardVisible__RelativeToKe
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public class RemovingAnimation :1734
 // {
 static void RemovingAnimation_build(uType* type)
 {
     ::STRINGS[26] = uString::Const("Double removal of Visual");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno");
     ::STRINGS[27] = uString::Const("Fuse.IBeginRemoveVisualListener.OnBeginRemoveVisual");
     ::STRINGS[28] = uString::Const("Unexpected done");
     ::STRINGS[29] = uString::Const("OnDone");
@@ -5379,7 +5381,7 @@ static void RemovingAnimation_build(uType* type)
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(RemovingAnimation_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(RemovingAnimation_type, interface7),
         ::g::Fuse::IBeginRemoveVisualListener_typeof(), offsetof(RemovingAnimation_type, interface8));
-    type->SetFields(30,
+    type->SetFields(33,
         ::g::Fuse::PendingRemoveVisual_typeof(), offsetof(::g::Fuse::Triggers::RemovingAnimation, _args), 0);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)RemovingAnimation__New2_fn, 0, true, type, 0));
@@ -5392,7 +5394,7 @@ RemovingAnimation_type* RemovingAnimation_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 34;
     options.InterfaceCount = 9;
     options.ObjectSize = sizeof(RemovingAnimation);
     options.TypeSize = sizeof(RemovingAnimation_type);
@@ -5435,7 +5437,7 @@ void RemovingAnimation__FuseIBeginRemoveVisualListenerOnBeginRemoveVisual_fn(Rem
 
     if (__this->_args != NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[26/*"Double remo...*/], __this, ::STRINGS[3/*"/Users/eric...*/], 1742, ::STRINGS[27/*"Fuse.IBegin...*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[26/*"Double remo...*/], __this, ::STRINGS[3/*"/usr/local/...*/], 1742, ::STRINGS[27/*"Fuse.IBegin...*/]);
         return;
     }
 
@@ -5482,7 +5484,7 @@ void RemovingAnimation::OnDone()
 
     if (_args == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[28/*"Unexpected ...*/], this, ::STRINGS[3/*"/Users/eric...*/], 1755, ::STRINGS[29/*"OnDone"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[28/*"Unexpected ...*/], this, ::STRINGS[3/*"/usr/local/...*/], 1755, ::STRINGS[29/*"OnDone"*/]);
         return;
     }
 
@@ -5499,8 +5501,8 @@ RemovingAnimation* RemovingAnimation::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/triggers/$.uno
+// ----------------------------------------------------------------
 
 // private sealed class LayoutTransition.ResizeChangeMode :95
 // {
@@ -5569,8 +5571,8 @@ LayoutTransition__ResizeChangeMode* LayoutTransition__ResizeChangeMode::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/triggers/$.uno
+// ----------------------------------------------------------------
 
 // private sealed class LayoutTransition.ScaleChangeMode :109
 // {
@@ -5617,13 +5619,13 @@ void LayoutTransition__ScaleChangeMode__New1_fn(LayoutTransition__ScaleChangeMod
     *__retval = LayoutTransition__ScaleChangeMode::New1();
 }
 
-// public object Subscribe(Fuse.ITransformRelative transform) :123
+// public object Subscribe(Fuse.ITransformRelative transform) :124
 void LayoutTransition__ScaleChangeMode__Subscribe_fn(LayoutTransition__ScaleChangeMode* __this, uObject* transform, uObject** __retval)
 {
     *__retval = __this->Subscribe(transform);
 }
 
-// public void Unsubscribe(Fuse.ITransformRelative transform, object sub) :124
+// public void Unsubscribe(Fuse.ITransformRelative transform, object sub) :125
 void LayoutTransition__ScaleChangeMode__Unsubscribe_fn(LayoutTransition__ScaleChangeMode* __this, uObject* transform, uObject* sub)
 {
     __this->Unsubscribe(transform, sub);
@@ -5640,6 +5642,7 @@ void LayoutTransition__ScaleChangeMode::ctor_()
     uStackFrame __("Fuse.Triggers.LayoutTransition.ScaleChangeMode", "GetScaleVector(Fuse.Scaling)");
     ::g::Uno::Float2 oldSize, newSize;
     bool b = ::g::Fuse::Triggers::LayoutTransition::GetSizeChange(uPtr(v)->RelativeNode(), &oldSize, &newSize);
+    float zeroTolerance = 1e-05f;
 
     if ((!b || (newSize.Y < 1e-05f)) || (newSize.X < 1e-05f))
         return uPtr(v)->Vector();
@@ -5648,13 +5651,13 @@ void LayoutTransition__ScaleChangeMode::ctor_()
     return ::g::Uno::Float3__op_Multiply2(::g::Uno::Float3__New4(n, 1.0f), v->Vector());
 }
 
-// public object Subscribe(Fuse.ITransformRelative transform) [instance] :123
+// public object Subscribe(Fuse.ITransformRelative transform) [instance] :124
 uObject* LayoutTransition__ScaleChangeMode::Subscribe(uObject* transform)
 {
     return NULL;
 }
 
-// public void Unsubscribe(Fuse.ITransformRelative transform, object sub) [instance] :124
+// public void Unsubscribe(Fuse.ITransformRelative transform, object sub) [instance] :125
 void LayoutTransition__ScaleChangeMode::Unsubscribe(uObject* transform, uObject* sub)
 {
 }
@@ -5668,8 +5671,8 @@ LayoutTransition__ScaleChangeMode* LayoutTransition__ScaleChangeMode::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
 // public partial sealed class Scrolled :223
 // {
@@ -5683,7 +5686,7 @@ static void Scrolled_build(uType* type)
 {
     ::STRINGS[30] = uString::Const("check");
     ::STRINGS[31] = uString::Const("check takes no parameters");
-    ::STRINGS[32] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno");
+    ::STRINGS[32] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno");
     ::STRINGS[33] = uString::Const("Scrolled could not find a Scrollable control.");
     ::STRINGS[21] = uString::Const("OnRooted");
     ::TYPES[1] = ::g::Uno::Type_typeof();
@@ -5703,7 +5706,7 @@ static void Scrolled_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31,
+    type->SetFields(34,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::Scrolled, _inZone), 0,
         ::g::Fuse::Triggers::ScrollRegion_typeof(), offsetof(::g::Fuse::Triggers::Scrolled, _region), 0,
         ::g::Fuse::Controls::ScrollViewBase_typeof(), offsetof(::g::Fuse::Triggers::Scrolled, _scrollable), 0);
@@ -5724,7 +5727,7 @@ static void Scrolled_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::PulseTrigger_typeof();
-    options.FieldCount = 34;
+    options.FieldCount = 37;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(Scrolled);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -5788,7 +5791,7 @@ void Scrolled__OnRooted_fn(Scrolled* __this)
 
     if (__this->_scrollable == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[33/*"Scrolled co...*/], __this, ::STRINGS[32/*"/Users/eric...*/], 288, ::STRINGS[21/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[33/*"Scrolled co...*/], __this, ::STRINGS[32/*"/usr/local/...*/], 288, ::STRINGS[21/*"OnRooted"*/], NULL);
         return;
     }
 
@@ -5954,7 +5957,7 @@ void Scrolled::check(::g::Fuse::Scripting::Context* c, Scrolled* s, uArray* args
 
     if (uPtr(args)->Length() != 0)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[31/*"check takes...*/], s, ::STRINGS[32/*"/Users/eric...*/], 242, ::STRINGS[30/*"check"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[31/*"check takes...*/], s, ::STRINGS[32/*"/usr/local/...*/], 242, ::STRINGS[30/*"check"*/], NULL);
         return;
     }
 
@@ -5970,8 +5973,8 @@ Scrolled* Scrolled::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class ScrolledArgs :261
 // {
@@ -6023,10 +6026,10 @@ ScrolledArgs* ScrolledArgs::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
-// public enum ScrolledWhere :697
+// public enum ScrolledWhere :705
 uEnumType* ScrolledWhere_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -6040,8 +6043,8 @@ uEnumType* ScrolledWhere_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
 // public class ScrollingAnimation :410
 // {
@@ -6065,7 +6068,7 @@ static void ScrollingAnimation_build(uType* type)
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(ScrollingAnimation_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(ScrollingAnimation_type, interface7),
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(ScrollingAnimation_type, interface8));
-    type->SetFields(30,
+    type->SetFields(33,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Triggers::ScrollingAnimation, _from), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::ScrollingAnimation, _hasFrom), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::ScrollingAnimation, _hasRange), 0,
@@ -6098,7 +6101,7 @@ ScrollingAnimation_type* ScrollingAnimation_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 41;
+    options.FieldCount = 44;
     options.InterfaceCount = 9;
     options.ObjectSize = sizeof(ScrollingAnimation);
     options.TypeSize = sizeof(ScrollingAnimation_type);
@@ -6166,13 +6169,13 @@ void ScrollingAnimation__New2_fn(ScrollingAnimation** __retval)
     *__retval = ScrollingAnimation::New2();
 }
 
-// private double get_OffsetScrollProgress() :478
+// private double get_OffsetScrollProgress() :484
 void ScrollingAnimation__get_OffsetScrollProgress_fn(ScrollingAnimation* __this, double* __retval)
 {
     *__retval = __this->OffsetScrollProgress();
 }
 
-// protected override void OnRooted() :509
+// protected override void OnRooted() :516
 void ScrollingAnimation__OnRooted_fn(ScrollingAnimation* __this)
 {
     uStackFrame __("Fuse.Triggers.ScrollingAnimation", "OnRooted()");
@@ -6186,7 +6189,7 @@ void ScrollingAnimation__OnRooted_fn(ScrollingAnimation* __this)
     }
 }
 
-// protected override void OnUnrooted() :522
+// protected override void OnUnrooted() :529
 void ScrollingAnimation__OnUnrooted_fn(ScrollingAnimation* __this)
 {
     uStackFrame __("Fuse.Triggers.ScrollingAnimation", "OnUnrooted()");
@@ -6224,19 +6227,19 @@ void ScrollingAnimation__set_ScrollDirections_fn(ScrollingAnimation* __this, int
     __this->ScrollDirections(*value);
 }
 
-// public float get_To() :464
+// public float get_To() :467
 void ScrollingAnimation__get_To_fn(ScrollingAnimation* __this, float* __retval)
 {
     *__retval = __this->To();
 }
 
-// public void set_To(float value) :465
+// public void set_To(float value) :468
 void ScrollingAnimation__set_To_fn(ScrollingAnimation* __this, float* value)
 {
     __this->To(*value);
 }
 
-// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector prop) :534
+// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector prop) :541
 void ScrollingAnimation__UnoUXIPropertyListenerOnPropertyChanged_fn(ScrollingAnimation* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Selector* prop)
 {
     uStackFrame __("Fuse.Triggers.ScrollingAnimation", "Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject,Uno.UX.Selector)");
@@ -6264,11 +6267,15 @@ float ScrollingAnimation::From()
 // public void set_From(float value) [instance] :453
 void ScrollingAnimation::From(float value)
 {
+    uStackFrame __("Fuse.Triggers.ScrollingAnimation", "set_From(float)");
     _from = value;
     _hasFrom = true;
 
     if (!_hasRange)
         _range = 3;
+
+    if (_scrollable != NULL)
+        BypassSeek(OffsetScrollProgress(), 0);
 }
 
 // public generated bool get_Inverse() [instance] :446
@@ -6283,7 +6290,7 @@ void ScrollingAnimation::Inverse(bool value)
     _Inverse = value;
 }
 
-// private double get_OffsetScrollProgress() [instance] :478
+// private double get_OffsetScrollProgress() [instance] :484
 double ScrollingAnimation::OffsetScrollProgress()
 {
     uStackFrame __("Fuse.Triggers.ScrollingAnimation", "get_OffsetScrollProgress()");
@@ -6308,6 +6315,7 @@ double ScrollingAnimation::OffsetScrollProgress()
     ::g::Uno::Float2 range2 = ::g::Uno::Float2__op_Subtraction2(to, from);
     float at = uPtr(_scrollable)->ToScalarPosition(::g::Uno::Float2__op_Subtraction2(uPtr(_scrollable)->ScrollPosition(), from));
     float range = uPtr(_scrollable)->ToScalarPosition(range2);
+    float zeroTolerance = 1e-05f;
 
     if (::g::Uno::Math::Abs1(range) < 1e-05f)
         return 0.0;
@@ -6352,20 +6360,24 @@ void ScrollingAnimation::ScrollDirections(int value)
     _scrollDirections = value;
 }
 
-// public float get_To() [instance] :464
+// public float get_To() [instance] :467
 float ScrollingAnimation::To()
 {
     return _to;
 }
 
-// public void set_To(float value) [instance] :465
+// public void set_To(float value) [instance] :468
 void ScrollingAnimation::To(float value)
 {
+    uStackFrame __("Fuse.Triggers.ScrollingAnimation", "set_To(float)");
     _to = value;
     _hasTo = true;
 
     if (!_hasRange)
         _range = 3;
+
+    if (_scrollable != NULL)
+        BypassSeek(OffsetScrollProgress(), 0);
 }
 
 // public generated ScrollingAnimation New() [static] :410
@@ -6377,8 +6389,8 @@ ScrollingAnimation* ScrollingAnimation::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
 // public enum ScrollingAnimationRange :375
 uEnumType* ScrollingAnimationRange_typeof()
@@ -6397,10 +6409,10 @@ uEnumType* ScrollingAnimationRange_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
-// internal sealed class ScrollRegion :707
+// internal sealed class ScrollRegion :715
 // {
 static void ScrollRegion_build(uType* type)
 {
@@ -6426,62 +6438,62 @@ uType* ScrollRegion_typeof()
     return type;
 }
 
-// public generated ScrollRegion() :707
+// public generated ScrollRegion() :715
 void ScrollRegion__ctor__fn(ScrollRegion* __this)
 {
     __this->ctor_();
 }
 
-// private float2 CalcWithin(Fuse.Controls.ScrollViewBase scrollable) :736
+// private float2 CalcWithin(Fuse.Controls.ScrollViewBase scrollable) :744
 void ScrollRegion__CalcWithin_fn(ScrollRegion* __this, ::g::Fuse::Controls::ScrollViewBase* scrollable, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->CalcWithin(scrollable);
 }
 
-// public bool IsInZone(Fuse.Controls.ScrollViewBase scrollable) :741
+// public bool IsInZone(Fuse.Controls.ScrollViewBase scrollable) :749
 void ScrollRegion__IsInZone_fn(ScrollRegion* __this, ::g::Fuse::Controls::ScrollViewBase* scrollable, bool* __retval)
 {
     *__retval = __this->IsInZone(scrollable);
 }
 
-// public generated ScrollRegion New() :707
+// public generated ScrollRegion New() :715
 void ScrollRegion__New1_fn(ScrollRegion** __retval)
 {
     *__retval = ScrollRegion::New1();
 }
 
-// public bool SetRelativeTo(Fuse.Triggers.IScrolledLength value) :728
+// public bool SetRelativeTo(Fuse.Triggers.IScrolledLength value) :736
 void ScrollRegion__SetRelativeTo_fn(ScrollRegion* __this, uObject* value, bool* __retval)
 {
     *__retval = __this->SetRelativeTo(value);
 }
 
-// public bool SetTo(Fuse.Triggers.ScrolledWhere value) :710
+// public bool SetTo(Fuse.Triggers.ScrolledWhere value) :718
 void ScrollRegion__SetTo_fn(ScrollRegion* __this, int* value, bool* __retval)
 {
     *__retval = __this->SetTo(*value);
 }
 
-// public bool SetWithin(float value) :719
+// public bool SetWithin(float value) :727
 void ScrollRegion__SetWithin_fn(ScrollRegion* __this, float* value, bool* __retval)
 {
     *__retval = __this->SetWithin(*value);
 }
 
-// public generated ScrollRegion() [instance] :707
+// public generated ScrollRegion() [instance] :715
 void ScrollRegion::ctor_()
 {
     RelativeTo = ::g::Fuse::Triggers::IScrolledLengths::Points();
 }
 
-// private float2 CalcWithin(Fuse.Controls.ScrollViewBase scrollable) [instance] :736
+// private float2 CalcWithin(Fuse.Controls.ScrollViewBase scrollable) [instance] :744
 ::g::Uno::Float2 ScrollRegion::CalcWithin(::g::Fuse::Controls::ScrollViewBase* scrollable)
 {
     uStackFrame __("Fuse.Triggers.ScrollRegion", "CalcWithin(Fuse.Controls.ScrollViewBase)");
     return ::g::Fuse::Triggers::IScrolledLength::GetPoints(uInterface(uPtr(RelativeTo), ::TYPES[45/*Fuse.Triggers.IScrolledLength*/]), Within, scrollable);
 }
 
-// public bool IsInZone(Fuse.Controls.ScrollViewBase scrollable) [instance] :741
+// public bool IsInZone(Fuse.Controls.ScrollViewBase scrollable) [instance] :749
 bool ScrollRegion::IsInZone(::g::Fuse::Controls::ScrollViewBase* scrollable)
 {
     uStackFrame __("Fuse.Triggers.ScrollRegion", "IsInZone(Fuse.Controls.ScrollViewBase)");
@@ -6508,7 +6520,7 @@ bool ScrollRegion::IsInZone(::g::Fuse::Controls::ScrollViewBase* scrollable)
     return false;
 }
 
-// public bool SetRelativeTo(Fuse.Triggers.IScrolledLength value) [instance] :728
+// public bool SetRelativeTo(Fuse.Triggers.IScrolledLength value) [instance] :736
 bool ScrollRegion::SetRelativeTo(uObject* value)
 {
     if (RelativeTo == value)
@@ -6518,7 +6530,7 @@ bool ScrollRegion::SetRelativeTo(uObject* value)
     return true;
 }
 
-// public bool SetTo(Fuse.Triggers.ScrolledWhere value) [instance] :710
+// public bool SetTo(Fuse.Triggers.ScrolledWhere value) [instance] :718
 bool ScrollRegion::SetTo(int value)
 {
     if (To == value)
@@ -6528,7 +6540,7 @@ bool ScrollRegion::SetTo(int value)
     return true;
 }
 
-// public bool SetWithin(float value) [instance] :719
+// public bool SetWithin(float value) [instance] :727
 bool ScrollRegion::SetWithin(float value)
 {
     if (Within == value)
@@ -6538,7 +6550,7 @@ bool ScrollRegion::SetWithin(float value)
     return true;
 }
 
-// public generated ScrollRegion New() [static] :707
+// public generated ScrollRegion New() [static] :715
 ScrollRegion* ScrollRegion::New1()
 {
     ScrollRegion* obj1 = (ScrollRegion*)uNew(ScrollRegion_typeof());
@@ -6547,10 +6559,10 @@ ScrollRegion* ScrollRegion::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
-// private sealed class IScrolledLengths.ScrollViewSizeLength :683
+// private sealed class IScrolledLengths.ScrollViewSizeLength :691
 // {
 static void IScrolledLengths__ScrollViewSizeLength_build(uType* type)
 {
@@ -6574,37 +6586,37 @@ IScrolledLengths__ScrollViewSizeLength_type* IScrolledLengths__ScrollViewSizeLen
     return type;
 }
 
-// public generated ScrollViewSizeLength() :683
+// public generated ScrollViewSizeLength() :691
 void IScrolledLengths__ScrollViewSizeLength__ctor__fn(IScrolledLengths__ScrollViewSizeLength* __this)
 {
     __this->ctor_();
 }
 
-// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) :685
+// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) :693
 void IScrolledLengths__ScrollViewSizeLength__GetPoints_fn(IScrolledLengths__ScrollViewSizeLength* __this, float* value, ::g::Fuse::Controls::ScrollViewBase* scrollable, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->GetPoints(*value, scrollable);
 }
 
-// public generated ScrollViewSizeLength New() :683
+// public generated ScrollViewSizeLength New() :691
 void IScrolledLengths__ScrollViewSizeLength__New1_fn(IScrolledLengths__ScrollViewSizeLength** __retval)
 {
     *__retval = IScrolledLengths__ScrollViewSizeLength::New1();
 }
 
-// public generated ScrollViewSizeLength() [instance] :683
+// public generated ScrollViewSizeLength() [instance] :691
 void IScrolledLengths__ScrollViewSizeLength::ctor_()
 {
 }
 
-// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) [instance] :685
+// public float2 GetPoints(float value, Fuse.Controls.ScrollViewBase scrollable) [instance] :693
 ::g::Uno::Float2 IScrolledLengths__ScrollViewSizeLength::GetPoints(float value, ::g::Fuse::Controls::ScrollViewBase* scrollable)
 {
     uStackFrame __("Fuse.Triggers.IScrolledLengths.ScrollViewSizeLength", "GetPoints(float,Fuse.Controls.ScrollViewBase)");
     return ::g::Uno::Float2__op_Multiply(value, uPtr(scrollable)->ActualSize());
 }
 
-// public generated ScrollViewSizeLength New() [static] :683
+// public generated ScrollViewSizeLength New() [static] :691
 IScrolledLengths__ScrollViewSizeLength* IScrolledLengths__ScrollViewSizeLength::New1()
 {
     IScrolledLengths__ScrollViewSizeLength* obj1 = (IScrolledLengths__ScrollViewSizeLength*)uNew(IScrolledLengths__ScrollViewSizeLength_typeof());
@@ -6613,8 +6625,8 @@ IScrolledLengths__ScrollViewSizeLength* IScrolledLengths__ScrollViewSizeLength::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // private enum Timeline.State :2218
 uEnumType* Timeline__State_typeof()
@@ -6629,8 +6641,8 @@ uEnumType* Timeline__State_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public partial sealed class State :2024
 // {
@@ -6644,7 +6656,7 @@ static void State_build(uType* type)
 {
     ::STRINGS[35] = uString::Const("goto");
     ::STRINGS[36] = uString::Const("Cannot call `Goto` on an unrooted `State`");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno");
     ::STRINGS[37] = uString::Const("Goto");
     ::TYPES[1] = ::g::Uno::Type_typeof();
     ::TYPES[2] = ::g::Fuse::Scripting::ScriptMember_typeof()->Array();
@@ -6659,7 +6671,7 @@ static void State_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::State, _on), 0,
         ::g::Fuse::Triggers::StateGroup_typeof(), offsetof(::g::Fuse::Triggers::State, _stateGroup), 0);
     type->Reflection.SetFunctions(3,
@@ -6675,7 +6687,7 @@ static void State_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 32;
+    options.FieldCount = 35;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(State);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -6797,7 +6809,7 @@ void State::Goto()
 
     if (_stateGroup == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[36/*"Cannot call...*/], NULL, ::STRINGS[3/*"/Users/eric...*/], 2110, ::STRINGS[37/*"Goto"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[36/*"Cannot call...*/], NULL, ::STRINGS[3/*"/usr/local/...*/], 2110, ::STRINGS[37/*"Goto"*/]);
         return;
     }
 
@@ -6859,8 +6871,8 @@ State* State::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public partial sealed class StateGroup :1785
 // {
@@ -6875,7 +6887,7 @@ static void StateGroup_build(uType* type)
     ::STRINGS[35] = uString::Const("goto");
     ::STRINGS[38] = uString::Const("gotoNext");
     ::STRINGS[39] = uString::Const("StateGroup.goto requires 1 argument");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno");
     ::STRINGS[40] = uString::Const("goto_");
     ::STRINGS[41] = uString::Const("Unable to find State with Name: ");
     ::STRINGS[42] = uString::Const("gotoName");
@@ -7260,7 +7272,7 @@ void StateGroup::goto_(::g::Fuse::Scripting::Context* c, StateGroup* n, uArray* 
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[39/*"StateGroup....*/], n, ::STRINGS[3/*"/Users/eric...*/], 1825, ::STRINGS[40/*"goto_"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[39/*"StateGroup....*/], n, ::STRINGS[3/*"/usr/local/...*/], 1825, ::STRINGS[40/*"goto_"*/], NULL);
         return;
     }
 
@@ -7279,7 +7291,7 @@ void StateGroup::gotoName(::g::Fuse::Scripting::Context* c, StateGroup* n, uStri
 
     if (state == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::STRINGS[41/*"Unable to f...*/], name), n, ::STRINGS[3/*"/Users/eric...*/], 1805, ::STRINGS[42/*"gotoName"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::STRINGS[41/*"Unable to f...*/], name), n, ::STRINGS[3/*"/usr/local/...*/], 1805, ::STRINGS[42/*"gotoName"*/], NULL);
         return;
     }
 
@@ -7310,8 +7322,8 @@ bool StateGroup::StateAcceptor(uObject* o)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public enum StateTransition :1858
 uEnumType* StateTransition_typeof()
@@ -7326,15 +7338,15 @@ uEnumType* StateTransition_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class TextInputActionTriggered :107
 // {
 static void TextInputActionTriggered_build(uType* type)
 {
     ::STRINGS[43] = uString::Const("TextInputActionTriggered must be a child of an ITextEdit");
-    ::STRINGS[17] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/triggers/$.uno");
+    ::STRINGS[17] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/triggers/$.uno");
     ::STRINGS[21] = uString::Const("OnRooted");
     ::TYPES[54] = ::g::Fuse::Controls::ITextEditControl_typeof();
     ::TYPES[55] = ::g::Fuse::Controls::TextInputActionHandler_typeof();
@@ -7347,7 +7359,7 @@ static void TextInputActionTriggered_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::TYPES[54/*Fuse.Controls.ITextEditControl*/], offsetof(::g::Fuse::Triggers::TextInputActionTriggered, _textEdit), 0,
         ::g::Fuse::Controls::TextInputActionType_typeof(), offsetof(::g::Fuse::Triggers::TextInputActionTriggered, _type), 0);
     type->Reflection.SetFunctions(3,
@@ -7363,7 +7375,7 @@ static void TextInputActionTriggered_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 32;
+    options.FieldCount = 35;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(TextInputActionTriggered);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -7419,7 +7431,7 @@ void TextInputActionTriggered__OnRooted_fn(TextInputActionTriggered* __this)
     __this->_textEdit = uAs<uObject*>(__this->Parent(), ::TYPES[54/*Fuse.Controls.ITextEditControl*/]);
 
     if (__this->_textEdit == NULL)
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[43/*"TextInputAc...*/], __this, ::STRINGS[17/*"/Users/eric...*/], 126, ::STRINGS[21/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[43/*"TextInputAc...*/], __this, ::STRINGS[17/*"/usr/local/...*/], 126, ::STRINGS[21/*"OnRooted"*/], NULL);
     else
         ::g::Fuse::Controls::ITextEditControl::add_ActionTriggered(uInterface(uPtr(__this->_textEdit), ::TYPES[54/*Fuse.Controls.ITextEditControl*/]), uDelegate::New(::TYPES[55/*Fuse.Controls.TextInputActionHandler*/], (void*)TextInputActionTriggered__OnActionTriggered_fn, __this));
 }
@@ -7488,8 +7500,8 @@ TextInputActionTriggered* TextInputActionTriggered::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public partial sealed class Timeline :2203
 // {
@@ -7513,7 +7525,7 @@ static void Timeline_build(uType* type)
     ::STRINGS[52] = uString::Const("seek");
     ::STRINGS[53] = uString::Const("stop");
     ::STRINGS[54] = uString::Const("Timeline.seek requires 1 argument");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno");
     ::TYPES[1] = ::g::Uno::Type_typeof();
     ::TYPES[2] = ::g::Fuse::Scripting::ScriptMember_typeof()->Array();
     ::TYPES[56] = ::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(type, NULL);
@@ -7534,7 +7546,7 @@ static void Timeline_build(uType* type)
         ::g::Fuse::Triggers::IPlayback_typeof(), offsetof(Timeline_type, interface8),
         ::g::Fuse::Triggers::IPulseTrigger_typeof(), offsetof(Timeline_type, interface9),
         ::g::Fuse::Triggers::IProgress_typeof(), offsetof(Timeline_type, interface10));
-    type->SetFields(30,
+    type->SetFields(33,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::Timeline, _hasInitialProgress), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::Timeline, _hasTargetProgress), 0,
         ::g::Uno::Double_typeof(), offsetof(::g::Fuse::Triggers::Timeline, _initialProgress), 0,
@@ -7576,7 +7588,7 @@ Timeline_type* Timeline_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 39;
+    options.FieldCount = 42;
     options.InterfaceCount = 11;
     options.ObjectSize = sizeof(Timeline);
     options.TypeSize = sizeof(Timeline_type);
@@ -8133,7 +8145,7 @@ void Timeline::playTo(::g::Fuse::Scripting::Context* c, Timeline* n, uArray* arg
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[54/*"Timeline.se...*/], n, ::STRINGS[3/*"/Users/eric...*/], 2536, ::STRINGS[50/*"playTo"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[54/*"Timeline.se...*/], n, ::STRINGS[3/*"/usr/local/...*/], 2536, ::STRINGS[50/*"playTo"*/], NULL);
         return;
     }
 
@@ -8180,7 +8192,7 @@ void Timeline::seek(::g::Fuse::Scripting::Context* c, Timeline* n, uArray* args)
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[54/*"Timeline.se...*/], n, ::STRINGS[3/*"/Users/eric...*/], 2585, ::STRINGS[52/*"seek"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[54/*"Timeline.se...*/], n, ::STRINGS[3/*"/usr/local/...*/], 2585, ::STRINGS[52/*"seek"*/], NULL);
         return;
     }
 
@@ -8196,8 +8208,8 @@ void Timeline::stop(::g::Fuse::Scripting::Context* c, Timeline* n, uArray* args)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.2.1/$.uno
+// ------------------------------------------------------------------
 
 // public class Transition :2956
 // {
@@ -8220,7 +8232,7 @@ static void Transition_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::Transition, _autoRelease), 0,
         ::g::Fuse::Triggers::TransitionDirection_typeof(), offsetof(::g::Fuse::Triggers::Transition, _direction), 0,
         ::TYPES[60/*Fuse.Internal.MiniList<string>*/], offsetof(::g::Fuse::Triggers::Transition, _from), 0,
@@ -8256,7 +8268,7 @@ static void Transition_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 40;
+    options.FieldCount = 43;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(Transition);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -8784,8 +8796,8 @@ void Transition::Parse(::g::Fuse::Internal::MiniList* list, uString* src)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.2.1/$.uno
+// ------------------------------------------------------------------
 
 // public enum TransitionDirection :2902
 uEnumType* TransitionDirection_typeof()
@@ -8807,8 +8819,8 @@ uEnumType* TransitionDirection_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.2.1/$.uno
+// ------------------------------------------------------------------
 
 // internal sealed class TransitionGroup :2767
 // {
@@ -8821,7 +8833,7 @@ static void TransitionGroup__cctor__fn(uType* __type)
 static void TransitionGroup_build(uType* type)
 {
     ::STRINGS[56] = uString::Const("Transition must have a Navigator ancestor");
-    ::STRINGS[57] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno");
+    ::STRINGS[57] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.2.1/$.uno");
     ::STRINGS[58] = uString::Const("Root");
     ::STRINGS[59] = uString::Const("Transition must have a Visual parent");
     ::TYPES[64] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Fuse::Node_typeof(), type, NULL);
@@ -9060,7 +9072,7 @@ TransitionGroup* TransitionGroup::Root(::g::Fuse::Triggers::Transition* t)
 
     if (nav == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[56/*"Transition ...*/], t, ::STRINGS[57/*"/Users/eric...*/], 2782, ::STRINGS[58/*"Root"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[56/*"Transition ...*/], t, ::STRINGS[57/*"/usr/local/...*/], 2782, ::STRINGS[58/*"Root"*/], NULL);
         return NULL;
     }
 
@@ -9068,7 +9080,7 @@ TransitionGroup* TransitionGroup::Root(::g::Fuse::Triggers::Transition* t)
 
     if (vis == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[59/*"Transition ...*/], t, ::STRINGS[57/*"/Users/eric...*/], 2789, ::STRINGS[58/*"Root"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[59/*"Transition ...*/], t, ::STRINGS[57/*"/usr/local/...*/], 2789, ::STRINGS[58/*"Root"*/], NULL);
         return NULL;
     }
 
@@ -9085,8 +9097,8 @@ TransitionGroup* TransitionGroup::Root(::g::Fuse::Triggers::Transition* t)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Navigation/1.0.5/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.2.1/$.uno
+// ------------------------------------------------------------------
 
 // public enum TransitionMode :2937
 uEnumType* TransitionMode_typeof()
@@ -9102,8 +9114,8 @@ uEnumType* TransitionMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public abstract class Trigger :2667
 // {
@@ -9117,7 +9129,7 @@ static void Trigger_build(uType* type)
 {
     ::STRINGS[44] = uString::Const("Progress");
     ::STRINGS[60] = uString::Const("Trigger.OnPlaybackdone called with _animState == null");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno");
     ::STRINGS[61] = uString::Const("Fuse.Animations.IBasePlayerFeedback.OnPlaybackDone");
     ::STRINGS[62] = uString::Const("Trigger started prior to being rooted: ");
     ::TYPES[0] = ::g::Uno::Action_typeof();
@@ -9132,7 +9144,7 @@ static void Trigger_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(Trigger_type, interface7));
-    type->SetFields(17,
+    type->SetFields(20,
         ::TYPES[68/*Uno.Collections.List<Fuse.Triggers.Actions.TriggerAction>*/], offsetof(::g::Fuse::Triggers::Trigger, _actions), 0,
         ::g::Fuse::Animations::TriggerAnimation_typeof(), offsetof(::g::Fuse::Triggers::Trigger, _animation), 0,
         ::g::Fuse::Animations::TriggerAnimationState_typeof(), offsetof(::g::Fuse::Triggers::Trigger, _animState), 0,
@@ -9175,7 +9187,7 @@ Trigger_type* Trigger_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::NodeGroupBase_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(Trigger);
     options.TypeSize = sizeof(Trigger_type);
@@ -9366,7 +9378,7 @@ void Trigger__FuseAnimationsIBasePlayerFeedbackOnPlaybackDone_fn(Trigger* __this
 
     if (__this->_animState == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[60/*"Trigger.OnP...*/], __this, ::STRINGS[3/*"/Users/eric...*/], 2879, ::STRINGS[61/*"Fuse.Animat...*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[60/*"Trigger.OnP...*/], __this, ::STRINGS[3/*"/usr/local/...*/], 2879, ::STRINGS[61/*"Fuse.Animat...*/]);
         return;
     }
 
@@ -9645,7 +9657,7 @@ void Trigger__WhatDirection_fn(Trigger* __this, double* diff, bool* animating, i
 // protected generated Trigger() [instance] :2667
 void Trigger::ctor_4()
 {
-    ctor_3();
+    ctor_3(0);
 }
 
 // public Uno.Collections.IList<Fuse.Triggers.Actions.TriggerAction> get_Actions() [instance] :2791
@@ -10174,8 +10186,8 @@ int Trigger::WhatDirection(double diff, bool animating)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public enum TriggerBypassMode :2606
 uEnumType* TriggerBypassMode_typeof()
@@ -10191,8 +10203,8 @@ uEnumType* TriggerBypassMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public enum TriggerPlayState :2616
 uEnumType* TriggerPlayState_typeof()
@@ -10210,8 +10222,8 @@ uEnumType* TriggerPlayState_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // internal enum BusyTask.Type :349
 uEnumType* BusyTask__Type_typeof()
@@ -10226,8 +10238,8 @@ uEnumType* BusyTask__Type_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public abstract class WhileBool :3354
 // {
@@ -10245,7 +10257,7 @@ static void WhileBool_build(uType* type)
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(WhileBool_type, interface7),
         ::g::Fuse::Triggers::IPulseTrigger_typeof(), offsetof(WhileBool_type, interface8),
         ::g::Fuse::Triggers::Actions::IToggleable_typeof(), offsetof(WhileBool_type, interface9));
-    type->SetFields(36);
+    type->SetFields(39);
     type->Reflection.SetFunctions(3,
         new uFunction("Toggle", NULL, (void*)WhileBool__Toggle_fn, 0, false, uVoid_typeof(), 0),
         new uFunction("get_Value", NULL, (void*)WhileBool__get_Value1_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
@@ -10259,7 +10271,7 @@ WhileBool_type* WhileBool_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileValue_typeof();
-    options.FieldCount = 36;
+    options.FieldCount = 39;
     options.InterfaceCount = 10;
     options.ObjectSize = sizeof(WhileBool);
     options.TypeSize = sizeof(WhileBool_type);
@@ -10339,8 +10351,8 @@ void WhileBool::Value1(bool value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public class WhileBusy :3493
 // {
@@ -10357,7 +10369,7 @@ static void WhileBusy_build(uType* type)
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(WhileBusy_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(WhileBusy_type, interface7),
         ::g::Fuse::Triggers::IBusyHandler_typeof(), offsetof(WhileBusy_type, interface8));
-    type->SetFields(31,
+    type->SetFields(34,
         ::g::Fuse::Triggers::BusyTaskActivity_typeof(), offsetof(::g::Fuse::Triggers::WhileBusy, _activity), 0,
         ::g::Fuse::Triggers::BusyTaskMatch_typeof(), offsetof(::g::Fuse::Triggers::WhileBusy, _match), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::WhileBusy, _IsHandled), 0);
@@ -10378,7 +10390,7 @@ WhileBusy_type* WhileBusy_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 34;
+    options.FieldCount = 37;
     options.InterfaceCount = 9;
     options.ObjectSize = sizeof(WhileBusy);
     options.TypeSize = sizeof(WhileBusy_type);
@@ -10558,8 +10570,8 @@ WhileBusy* WhileBusy::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileCompleted :3946
 // {
@@ -10583,7 +10595,7 @@ static void WhileCompleted_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31,
+    type->SetFields(34,
         ::g::Fuse::PropertyHandle_typeof(), (uintptr_t)&::g::Fuse::Triggers::WhileCompleted::_whileCompletedProp_, uFieldFlagsStatic);
     type->Reflection.SetFunctions(2,
         new uFunction(".ctor", NULL, (void*)WhileCompleted__New2_fn, 0, true, type, 0),
@@ -10597,7 +10609,7 @@ static void WhileCompleted_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 32;
+    options.FieldCount = 35;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileCompleted);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -10711,15 +10723,15 @@ void WhileCompleted::SetState(::g::Fuse::Visual* n, bool paused)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
 // public class WhileContainsText :26
 // {
 static void WhileContainsText_build(uType* type)
 {
     ::STRINGS[63] = uString::Const("No TextInput or Source found for string");
-    ::STRINGS[17] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/triggers/$.uno");
+    ::STRINGS[17] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/triggers/$.uno");
     ::STRINGS[21] = uString::Const("OnRooted");
     ::TYPES[70] = ::g::Fuse::Triggers::IValue_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
     ::TYPES[71] = ::g::Uno::UX::ValueChangedHandler_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
@@ -10732,7 +10744,7 @@ static void WhileContainsText_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31,
+    type->SetFields(34,
         ::TYPES[70/*Fuse.Triggers.IValue<string>*/], offsetof(::g::Fuse::Triggers::WhileContainsText, _source), 0,
         ::TYPES[70/*Fuse.Triggers.IValue<string>*/], offsetof(::g::Fuse::Triggers::WhileContainsText, _value), 0);
     type->Reflection.SetFunctions(3,
@@ -10748,7 +10760,7 @@ static void WhileContainsText_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 33;
+    options.FieldCount = 36;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileContainsText);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -10808,7 +10820,7 @@ void WhileContainsText__OnRooted_fn(WhileContainsText* __this)
         __this->SetActive(!::g::Uno::String::IsNullOrEmpty((::g::Fuse::Triggers::IValue::get_Value_ex(uInterface(uPtr(__this->_value), ::TYPES[70/*Fuse.Triggers.IValue<string>*/]), &ret2), ret2)));
     }
     else
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[63/*"No TextInpu...*/], __this, ::STRINGS[17/*"/Users/eric...*/], 51, ::STRINGS[21/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[63/*"No TextInpu...*/], __this, ::STRINGS[17/*"/usr/local/...*/], 51, ::STRINGS[21/*"OnRooted"*/], NULL);
 }
 
 // protected override sealed void OnUnrooted() :55
@@ -10878,8 +10890,8 @@ WhileContainsText* WhileContainsText::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileDisabled :1086
 // {
@@ -10894,7 +10906,7 @@ static void WhileDisabled_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::WhileEnabledDisabledTrigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WhileEnabledDisabledTrigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WhileEnabledDisabledTrigger_type, interface7));
-    type->SetFields(31);
+    type->SetFields(34);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WhileDisabled__New2_fn, 0, true, type, 0));
 }
@@ -10906,7 +10918,7 @@ static void WhileDisabled_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileEnabledDisabledTrigger_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileDisabled);
     options.TypeSize = sizeof(::g::Fuse::Triggers::WhileEnabledDisabledTrigger_type);
@@ -10969,8 +10981,8 @@ WhileDisabled* WhileDisabled::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileEnabled :1111
 // {
@@ -10985,7 +10997,7 @@ static void WhileEnabled_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::WhileEnabledDisabledTrigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WhileEnabledDisabledTrigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WhileEnabledDisabledTrigger_type, interface7));
-    type->SetFields(31);
+    type->SetFields(34);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WhileEnabled__New2_fn, 0, true, type, 0));
 }
@@ -10997,7 +11009,7 @@ static void WhileEnabled_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileEnabledDisabledTrigger_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileEnabled);
     options.TypeSize = sizeof(::g::Fuse::Triggers::WhileEnabledDisabledTrigger_type);
@@ -11060,8 +11072,8 @@ WhileEnabled* WhileEnabled::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public abstract class WhileEnabledDisabledTrigger :1055
 // {
@@ -11077,7 +11089,7 @@ static void WhileEnabledDisabledTrigger_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(WhileEnabledDisabledTrigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(WhileEnabledDisabledTrigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(WhileEnabledDisabledTrigger_type, interface7));
-    type->SetFields(31);
+    type->SetFields(34);
 }
 
 WhileEnabledDisabledTrigger_type* WhileEnabledDisabledTrigger_typeof()
@@ -11087,7 +11099,7 @@ WhileEnabledDisabledTrigger_type* WhileEnabledDisabledTrigger_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileEnabledDisabledTrigger);
     options.TypeSize = sizeof(WhileEnabledDisabledTrigger_type);
@@ -11158,8 +11170,8 @@ void WhileEnabledDisabledTrigger::OnIsContextEnabledChanged(uObject* sender, ::g
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileFailed :3584
 // {
@@ -11175,7 +11187,7 @@ static void WhileFailed_build(uType* type)
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WhileBusy_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WhileBusy_type, interface7),
         ::g::Fuse::Triggers::IBusyHandler_typeof(), offsetof(::g::Fuse::Triggers::WhileBusy_type, interface8));
-    type->SetFields(34);
+    type->SetFields(37);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WhileFailed__New3_fn, 0, true, type, 0));
 }
@@ -11187,7 +11199,7 @@ static void WhileFailed_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileBusy_typeof();
-    options.FieldCount = 34;
+    options.FieldCount = 37;
     options.InterfaceCount = 9;
     options.ObjectSize = sizeof(WhileFailed);
     options.TypeSize = sizeof(::g::Fuse::Triggers::WhileBusy_type);
@@ -11246,8 +11258,8 @@ WhileFailed* WhileFailed::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileFalse :3444
 // {
@@ -11264,7 +11276,7 @@ static void WhileFalse_build(uType* type)
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WhileBool_type, interface7),
         ::g::Fuse::Triggers::IPulseTrigger_typeof(), offsetof(::g::Fuse::Triggers::WhileBool_type, interface8),
         ::g::Fuse::Triggers::Actions::IToggleable_typeof(), offsetof(::g::Fuse::Triggers::WhileBool_type, interface9));
-    type->SetFields(36);
+    type->SetFields(39);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WhileFalse__New2_fn, 0, true, type, 0));
 }
@@ -11276,7 +11288,7 @@ static void WhileFalse_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileBool_typeof();
-    options.FieldCount = 36;
+    options.FieldCount = 39;
     options.InterfaceCount = 10;
     options.ObjectSize = sizeof(WhileFalse);
     options.TypeSize = sizeof(::g::Fuse::Triggers::WhileBool_type);
@@ -11341,8 +11353,8 @@ WhileFalse* WhileFalse::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileFloat :3603
 // {
@@ -11359,7 +11371,7 @@ static void WhileFloat_build(uType* type)
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WhileValue_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WhileValue_type, interface7),
         ::g::Fuse::Triggers::IPulseTrigger_typeof(), offsetof(::g::Fuse::Triggers::WhileValue_type, interface8));
-    type->SetFields(36,
+    type->SetFields(39,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Triggers::WhileFloat, _compare), 0,
         WhileFloat__Range_typeof(), offsetof(::g::Fuse::Triggers::WhileFloat, _high), 0,
         WhileFloat__Range_typeof(), offsetof(::g::Fuse::Triggers::WhileFloat, _low), 0);
@@ -11384,7 +11396,7 @@ static void WhileFloat_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileValue_typeof();
-    options.FieldCount = 39;
+    options.FieldCount = 42;
     options.InterfaceCount = 9;
     options.ObjectSize = sizeof(WhileFloat);
     options.TypeSize = sizeof(::g::Fuse::Triggers::WhileValue_type);
@@ -11589,8 +11601,8 @@ WhileFloat* WhileFloat::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileFocused :3700
 // {
@@ -11607,7 +11619,7 @@ static void WhileFocused_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31);
+    type->SetFields(34);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WhileFocused__New2_fn, 0, true, type, 0));
 }
@@ -11619,7 +11631,7 @@ static void WhileFocused_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileFocused);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -11719,8 +11731,8 @@ WhileFocused* WhileFocused::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileFocusWithin :3778
 // {
@@ -11737,7 +11749,7 @@ static void WhileFocusWithin_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31);
+    type->SetFields(34);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WhileFocusWithin__New2_fn, 0, true, type, 0));
 }
@@ -11749,7 +11761,7 @@ static void WhileFocusWithin_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileFocusWithin);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -11850,8 +11862,8 @@ WhileFocusWithin* WhileFocusWithin::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/triggers/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls/1.2.1/triggers/$.uno
+// ----------------------------------------------------------------
 
 // public sealed class WhileInteracting :129
 // {
@@ -11867,7 +11879,7 @@ static void WhileInteracting_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31,
+    type->SetFields(34,
         ::g::Fuse::Visual_typeof(), offsetof(::g::Fuse::Triggers::WhileInteracting, _source), 0,
         ::g::Fuse::Visual_typeof(), offsetof(::g::Fuse::Triggers::WhileInteracting, _visual), 0);
     type->Reflection.SetFunctions(3,
@@ -11883,7 +11895,7 @@ static void WhileInteracting_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 33;
+    options.FieldCount = 36;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileInteracting);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -11997,8 +12009,8 @@ WhileInteracting* WhileInteracting::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileKeyboardVisible :1149
 // {
@@ -12021,13 +12033,13 @@ static void WhileKeyboardVisible_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Triggers::WhileKeyboardVisible, _baseHeight), 0,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Triggers::WhileKeyboardVisible, _threshold), 0,
         ::g::Uno::Float_typeof(), (uintptr_t)&::g::Fuse::Triggers::WhileKeyboardVisible::_deltaY_, uFieldFlagsStatic,
         ::g::Fuse::ITranslationMode_typeof(), (uintptr_t)&::g::Fuse::Triggers::WhileKeyboardVisible::Keyboard_, uFieldFlagsStatic);
     type->Reflection.SetFields(1,
-        new uField("Keyboard", 33));
+        new uField("Keyboard", 36));
     type->Reflection.SetFunctions(2,
         new uFunction(".ctor", NULL, (void*)WhileKeyboardVisible__New2_fn, 0, true, type, 0),
         new uFunction("get_Threshold", NULL, (void*)WhileKeyboardVisible__get_Threshold_fn, 0, false, ::g::Uno::Float_typeof(), 0));
@@ -12040,7 +12052,7 @@ static void WhileKeyboardVisible_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 34;
+    options.FieldCount = 37;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileKeyboardVisible);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -12172,8 +12184,8 @@ WhileKeyboardVisible* WhileKeyboardVisible::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileLoading :3842
 // {
@@ -12189,7 +12201,7 @@ static void WhileLoading_build(uType* type)
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WhileBusy_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WhileBusy_type, interface7),
         ::g::Fuse::Triggers::IBusyHandler_typeof(), offsetof(::g::Fuse::Triggers::WhileBusy_type, interface8));
-    type->SetFields(34);
+    type->SetFields(37);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WhileLoading__New3_fn, 0, true, type, 0));
 }
@@ -12201,7 +12213,7 @@ static void WhileLoading_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileBusy_typeof();
-    options.FieldCount = 34;
+    options.FieldCount = 37;
     options.InterfaceCount = 9;
     options.ObjectSize = sizeof(WhileLoading);
     options.TypeSize = sizeof(::g::Fuse::Triggers::WhileBusy_type);
@@ -12259,8 +12271,8 @@ WhileLoading* WhileLoading::New3()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileNotFocused :3733
 // {
@@ -12277,7 +12289,7 @@ static void WhileNotFocused_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31);
+    type->SetFields(34);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WhileNotFocused__New2_fn, 0, true, type, 0));
 }
@@ -12289,7 +12301,7 @@ static void WhileNotFocused_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileNotFocused);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -12389,15 +12401,15 @@ WhileNotFocused* WhileNotFocused::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.2.1/$.uno
+// ---------------------------------------------------------------
 
-// public sealed class WhilePageLoading :821
+// public sealed class WhilePageLoading :846
 // {
 static void WhilePageLoading_build(uType* type)
 {
     ::STRINGS[24] = uString::Const("WebView");
-    ::STRINGS[25] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/$.uno");
+    ::STRINGS[25] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.2.1/$.uno");
     ::STRINGS[21] = uString::Const("OnRooted");
     ::TYPES[31] = ::g::Fuse::Controls::IWebView_typeof();
     ::TYPES[76] = ::g::Fuse::Controls::WebView_typeof();
@@ -12411,7 +12423,7 @@ static void WhilePageLoading_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31,
+    type->SetFields(34,
         ::TYPES[76/*Fuse.Controls.WebView*/], offsetof(::g::Fuse::Triggers::WhilePageLoading, _webView), 0);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WhilePageLoading__New2_fn, 0, true, type, 0));
@@ -12424,7 +12436,7 @@ static void WhilePageLoading_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 32;
+    options.FieldCount = 35;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhilePageLoading);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -12454,25 +12466,25 @@ static void WhilePageLoading_build(uType* type)
     return type;
 }
 
-// public generated WhilePageLoading() :821
+// public generated WhilePageLoading() :846
 void WhilePageLoading__ctor_6_fn(WhilePageLoading* __this)
 {
     __this->ctor_6();
 }
 
-// public generated WhilePageLoading New() :821
+// public generated WhilePageLoading New() :846
 void WhilePageLoading__New2_fn(WhilePageLoading** __retval)
 {
     *__retval = WhilePageLoading::New2();
 }
 
-// private void OnProgressChanged(object s, object a) :850
+// private void OnProgressChanged(object s, object a) :875
 void WhilePageLoading__OnProgressChanged1_fn(WhilePageLoading* __this, uObject* s, uObject* a)
 {
     __this->OnProgressChanged1(s, a);
 }
 
-// protected override sealed void OnRooted() :825
+// protected override sealed void OnRooted() :850
 void WhilePageLoading__OnRooted_fn(WhilePageLoading* __this)
 {
     uStackFrame __("Fuse.Triggers.WhilePageLoading", "OnRooted()");
@@ -12485,10 +12497,10 @@ void WhilePageLoading__OnRooted_fn(WhilePageLoading* __this)
         __this->SetActive(uPtr(__this->_webView)->Progress() != 1.0);
     }
     else
-        ::g::Fuse::Diagnostics::UserRootError(::STRINGS[24/*"WebView"*/], __this->Parent(), __this, ::STRINGS[25/*"/Users/eric...*/], 836, ::STRINGS[21/*"OnRooted"*/]);
+        ::g::Fuse::Diagnostics::UserRootError(::STRINGS[24/*"WebView"*/], __this->Parent(), __this, ::STRINGS[25/*"/usr/local/...*/], 861, ::STRINGS[21/*"OnRooted"*/]);
 }
 
-// protected override sealed void OnUnrooted() :840
+// protected override sealed void OnUnrooted() :865
 void WhilePageLoading__OnUnrooted_fn(WhilePageLoading* __this)
 {
     uStackFrame __("Fuse.Triggers.WhilePageLoading", "OnUnrooted()");
@@ -12502,20 +12514,20 @@ void WhilePageLoading__OnUnrooted_fn(WhilePageLoading* __this)
     ::g::Fuse::Triggers::Trigger__OnUnrooted_fn(__this);
 }
 
-// public generated WhilePageLoading() [instance] :821
+// public generated WhilePageLoading() [instance] :846
 void WhilePageLoading::ctor_6()
 {
     ctor_5();
 }
 
-// private void OnProgressChanged(object s, object a) [instance] :850
+// private void OnProgressChanged(object s, object a) [instance] :875
 void WhilePageLoading::OnProgressChanged1(uObject* s, uObject* a)
 {
     uStackFrame __("Fuse.Triggers.WhilePageLoading", "OnProgressChanged(object,object)");
     SetActive(uPtr(_webView)->Progress() < 1.0);
 }
 
-// public generated WhilePageLoading New() [static] :821
+// public generated WhilePageLoading New() [static] :846
 WhilePageLoading* WhilePageLoading::New2()
 {
     WhilePageLoading* obj1 = (WhilePageLoading*)uNew(WhilePageLoading_typeof());
@@ -12524,8 +12536,8 @@ WhilePageLoading* WhilePageLoading::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhilePaused :3907
 // {
@@ -12549,7 +12561,7 @@ static void WhilePaused_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31,
+    type->SetFields(34,
         ::g::Fuse::PropertyHandle_typeof(), (uintptr_t)&::g::Fuse::Triggers::WhilePaused::_whilePausedProp_, uFieldFlagsStatic);
     type->Reflection.SetFunctions(2,
         new uFunction(".ctor", NULL, (void*)WhilePaused__New2_fn, 0, true, type, 0),
@@ -12563,7 +12575,7 @@ static void WhilePaused_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 32;
+    options.FieldCount = 35;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhilePaused);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -12677,8 +12689,8 @@ void WhilePaused::SetState(::g::Fuse::Visual* n, bool paused)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhilePlaying :3868
 // {
@@ -12702,7 +12714,7 @@ static void WhilePlaying_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31,
+    type->SetFields(34,
         ::g::Fuse::PropertyHandle_typeof(), (uintptr_t)&::g::Fuse::Triggers::WhilePlaying::_whilePlayingProp_, uFieldFlagsStatic);
     type->Reflection.SetFunctions(2,
         new uFunction(".ctor", NULL, (void*)WhilePlaying__New2_fn, 0, true, type, 0),
@@ -12716,7 +12728,7 @@ static void WhilePlaying_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 32;
+    options.FieldCount = 35;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhilePlaying);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -12830,10 +12842,10 @@ void WhilePlaying::SetState(::g::Fuse::Visual* n, bool playing)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
-// public sealed class WhileScrollable :566
+// public sealed class WhileScrollable :573
 // {
 static void WhileScrollable_build(uType* type)
 {
@@ -12848,7 +12860,7 @@ static void WhileScrollable_build(uType* type)
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(WhileScrollable_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(WhileScrollable_type, interface7),
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(WhileScrollable_type, interface8));
-    type->SetFields(31,
+    type->SetFields(34,
         ::TYPES[77/*Fuse.Controls.ScrollView*/], offsetof(::g::Fuse::Triggers::WhileScrollable, _scrollable), 0,
         ::TYPES[77/*Fuse.Controls.ScrollView*/], offsetof(::g::Fuse::Triggers::WhileScrollable, _source), 0,
         ::g::Fuse::Controls::ScrollDirections_typeof(), offsetof(::g::Fuse::Triggers::WhileScrollable, _ScrollDirections), 0);
@@ -12867,7 +12879,7 @@ WhileScrollable_type* WhileScrollable_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 34;
+    options.FieldCount = 37;
     options.InterfaceCount = 9;
     options.ObjectSize = sizeof(WhileScrollable);
     options.TypeSize = sizeof(WhileScrollable_type);
@@ -12898,25 +12910,25 @@ WhileScrollable_type* WhileScrollable_typeof()
     return type;
 }
 
-// public generated WhileScrollable() :566
+// public generated WhileScrollable() :573
 void WhileScrollable__ctor_6_fn(WhileScrollable* __this)
 {
     __this->ctor_6();
 }
 
-// private bool get_IsOn() :612
+// private bool get_IsOn() :619
 void WhileScrollable__get_IsOn_fn(WhileScrollable* __this, bool* __retval)
 {
     *__retval = __this->IsOn();
 }
 
-// public generated WhileScrollable New() :566
+// public generated WhileScrollable New() :573
 void WhileScrollable__New2_fn(WhileScrollable** __retval)
 {
     *__retval = WhileScrollable::New2();
 }
 
-// protected override sealed void OnRooted() :579
+// protected override sealed void OnRooted() :586
 void WhileScrollable__OnRooted_fn(WhileScrollable* __this)
 {
     uStackFrame __("Fuse.Triggers.WhileScrollable", "OnRooted()");
@@ -12930,7 +12942,7 @@ void WhileScrollable__OnRooted_fn(WhileScrollable* __this)
     }
 }
 
-// protected override sealed void OnUnrooted() :590
+// protected override sealed void OnUnrooted() :597
 void WhileScrollable__OnUnrooted_fn(WhileScrollable* __this)
 {
     uStackFrame __("Fuse.Triggers.WhileScrollable", "OnUnrooted()");
@@ -12944,31 +12956,31 @@ void WhileScrollable__OnUnrooted_fn(WhileScrollable* __this)
     ::g::Fuse::Triggers::Trigger__OnUnrooted_fn(__this);
 }
 
-// public generated Fuse.Controls.ScrollDirections get_ScrollDirections() :569
+// public generated Fuse.Controls.ScrollDirections get_ScrollDirections() :576
 void WhileScrollable__get_ScrollDirections_fn(WhileScrollable* __this, int* __retval)
 {
     *__retval = __this->ScrollDirections();
 }
 
-// public generated void set_ScrollDirections(Fuse.Controls.ScrollDirections value) :569
+// public generated void set_ScrollDirections(Fuse.Controls.ScrollDirections value) :576
 void WhileScrollable__set_ScrollDirections_fn(WhileScrollable* __this, int* value)
 {
     __this->ScrollDirections(*value);
 }
 
-// public Fuse.Controls.ScrollView get_ScrollView() :575
+// public Fuse.Controls.ScrollView get_ScrollView() :582
 void WhileScrollable__get_ScrollView_fn(WhileScrollable* __this, ::g::Fuse::Controls::ScrollView** __retval)
 {
     *__retval = __this->ScrollView();
 }
 
-// public void set_ScrollView(Fuse.Controls.ScrollView value) :576
+// public void set_ScrollView(Fuse.Controls.ScrollView value) :583
 void WhileScrollable__set_ScrollView_fn(WhileScrollable* __this, ::g::Fuse::Controls::ScrollView* value)
 {
     __this->ScrollView(value);
 }
 
-// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector prop) :600
+// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector prop) :607
 void WhileScrollable__UnoUXIPropertyListenerOnPropertyChanged_fn(WhileScrollable* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Selector* prop)
 {
     uStackFrame __("Fuse.Triggers.WhileScrollable", "Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject,Uno.UX.Selector)");
@@ -12977,49 +12989,50 @@ void WhileScrollable__UnoUXIPropertyListenerOnPropertyChanged_fn(WhileScrollable
         __this->SetActive(__this->IsOn());
 }
 
-// public generated WhileScrollable() [instance] :566
+// public generated WhileScrollable() [instance] :573
 void WhileScrollable::ctor_6()
 {
     ctor_5();
 }
 
-// private bool get_IsOn() [instance] :612
+// private bool get_IsOn() [instance] :619
 bool WhileScrollable::IsOn()
 {
     uStackFrame __("Fuse.Triggers.WhileScrollable", "get_IsOn()");
     ::g::Uno::Float2 p = uPtr(_scrollable)->ScrollPosition();
     ::g::Uno::Float2 mx = uPtr(_scrollable)->MaxScroll();
     ::g::Uno::Float2 mn = uPtr(_scrollable)->MinScroll();
+    float zeroTolerance = 1e-05f;
     bool isOn = (((((ScrollDirections() & 1) == 1) && ((p.X - 1e-05f) > mn.X)) || (((ScrollDirections() & 2) == 2) && ((p.X + 1e-05f) < mx.X))) || (((ScrollDirections() & 4) == 4) && ((p.Y - 1e-05f) > mn.Y))) || (((ScrollDirections() & 8) == 8) && ((p.Y + 1e-05f) < mx.Y));
     return isOn;
 }
 
-// public generated Fuse.Controls.ScrollDirections get_ScrollDirections() [instance] :569
+// public generated Fuse.Controls.ScrollDirections get_ScrollDirections() [instance] :576
 int WhileScrollable::ScrollDirections()
 {
     return _ScrollDirections;
 }
 
-// public generated void set_ScrollDirections(Fuse.Controls.ScrollDirections value) [instance] :569
+// public generated void set_ScrollDirections(Fuse.Controls.ScrollDirections value) [instance] :576
 void WhileScrollable::ScrollDirections(int value)
 {
     _ScrollDirections = value;
 }
 
-// public Fuse.Controls.ScrollView get_ScrollView() [instance] :575
+// public Fuse.Controls.ScrollView get_ScrollView() [instance] :582
 ::g::Fuse::Controls::ScrollView* WhileScrollable::ScrollView()
 {
     ::g::Fuse::Controls::ScrollView* ind1 = _source;
     return (ind1 != NULL) ? ind1 : uAs< ::g::Fuse::Controls::ScrollView*>(Parent(), ::TYPES[77/*Fuse.Controls.ScrollView*/]);
 }
 
-// public void set_ScrollView(Fuse.Controls.ScrollView value) [instance] :576
+// public void set_ScrollView(Fuse.Controls.ScrollView value) [instance] :583
 void WhileScrollable::ScrollView(::g::Fuse::Controls::ScrollView* value)
 {
     _source = value;
 }
 
-// public generated WhileScrollable New() [static] :566
+// public generated WhileScrollable New() [static] :573
 WhileScrollable* WhileScrollable::New2()
 {
     WhileScrollable* obj2 = (WhileScrollable*)uNew(WhileScrollable_typeof());
@@ -13028,15 +13041,15 @@ WhileScrollable* WhileScrollable::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
-// public sealed class WhileScrolled :785
+// public sealed class WhileScrolled :793
 // {
 static void WhileScrolled_build(uType* type)
 {
     ::STRINGS[33] = uString::Const("Scrolled could not find a Scrollable control.");
-    ::STRINGS[32] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno");
+    ::STRINGS[32] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno");
     ::STRINGS[21] = uString::Const("OnRooted");
     ::TYPES[42] = ::g::Fuse::Visual_typeof()->MakeMethod(2/*FindByType<Fuse.Controls.ScrollViewBase>*/, ::g::Fuse::Controls::ScrollViewBase_typeof(), NULL);
     ::TYPES[43] = ::g::Fuse::Controls::ScrollPositionChangedHandler_typeof();
@@ -13049,7 +13062,7 @@ static void WhileScrolled_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31,
+    type->SetFields(34,
         ::g::Fuse::Triggers::ScrollRegion_typeof(), offsetof(::g::Fuse::Triggers::WhileScrolled, _region), 0,
         ::g::Fuse::Controls::ScrollViewBase_typeof(), offsetof(::g::Fuse::Triggers::WhileScrolled, _scrollable), 0);
     type->Reflection.SetFunctions(7,
@@ -13069,7 +13082,7 @@ static void WhileScrolled_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 33;
+    options.FieldCount = 36;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileScrolled);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -13099,19 +13112,19 @@ static void WhileScrolled_build(uType* type)
     return type;
 }
 
-// public generated WhileScrolled() :785
+// public generated WhileScrolled() :793
 void WhileScrolled__ctor_6_fn(WhileScrolled* __this)
 {
     __this->ctor_6();
 }
 
-// public generated WhileScrolled New() :785
+// public generated WhileScrolled New() :793
 void WhileScrolled__New2_fn(WhileScrolled** __retval)
 {
     *__retval = WhileScrolled::New2();
 }
 
-// protected override sealed void OnRooted() :789
+// protected override sealed void OnRooted() :797
 void WhileScrolled__OnRooted_fn(WhileScrolled* __this)
 {
     uStackFrame __("Fuse.Triggers.WhileScrolled", "OnRooted()");
@@ -13120,7 +13133,7 @@ void WhileScrolled__OnRooted_fn(WhileScrolled* __this)
 
     if (__this->_scrollable == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[33/*"Scrolled co...*/], __this, ::STRINGS[32/*"/Users/eric...*/], 795, ::STRINGS[21/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[33/*"Scrolled co...*/], __this, ::STRINGS[32/*"/usr/local/...*/], 803, ::STRINGS[21/*"OnRooted"*/], NULL);
         return;
     }
 
@@ -13128,13 +13141,13 @@ void WhileScrolled__OnRooted_fn(WhileScrolled* __this)
     __this->Update();
 }
 
-// private void OnScrollPositionChanged(object s, object args) :819
+// private void OnScrollPositionChanged(object s, object args) :827
 void WhileScrolled__OnScrollPositionChanged_fn(WhileScrolled* __this, uObject* s, uObject* args)
 {
     __this->OnScrollPositionChanged(s, args);
 }
 
-// protected override sealed void OnUnrooted() :809
+// protected override sealed void OnUnrooted() :817
 void WhileScrolled__OnUnrooted_fn(WhileScrolled* __this)
 {
     uStackFrame __("Fuse.Triggers.WhileScrolled", "OnUnrooted()");
@@ -13148,70 +13161,70 @@ void WhileScrolled__OnUnrooted_fn(WhileScrolled* __this)
     ::g::Fuse::Triggers::Trigger__OnUnrooted_fn(__this);
 }
 
-// public Fuse.Triggers.IScrolledLength get_RelativeTo() :843
+// public Fuse.Triggers.IScrolledLength get_RelativeTo() :851
 void WhileScrolled__get_RelativeTo_fn(WhileScrolled* __this, uObject** __retval)
 {
     *__retval = __this->RelativeTo();
 }
 
-// public void set_RelativeTo(Fuse.Triggers.IScrolledLength value) :844
+// public void set_RelativeTo(Fuse.Triggers.IScrolledLength value) :852
 void WhileScrolled__set_RelativeTo_fn(WhileScrolled* __this, uObject* value)
 {
     __this->RelativeTo(value);
 }
 
-// public Fuse.Triggers.ScrolledWhere get_To() :829
+// public Fuse.Triggers.ScrolledWhere get_To() :837
 void WhileScrolled__get_To_fn(WhileScrolled* __this, int* __retval)
 {
     *__retval = __this->To();
 }
 
-// public void set_To(Fuse.Triggers.ScrolledWhere value) :830
+// public void set_To(Fuse.Triggers.ScrolledWhere value) :838
 void WhileScrolled__set_To_fn(WhileScrolled* __this, int* value)
 {
     __this->To(*value);
 }
 
-// private void Update() :803
+// private void Update() :811
 void WhileScrolled__Update_fn(WhileScrolled* __this)
 {
     __this->Update();
 }
 
-// public float get_Within() :836
+// public float get_Within() :844
 void WhileScrolled__get_Within_fn(WhileScrolled* __this, float* __retval)
 {
     *__retval = __this->Within();
 }
 
-// public void set_Within(float value) :837
+// public void set_Within(float value) :845
 void WhileScrolled__set_Within_fn(WhileScrolled* __this, float* value)
 {
     __this->Within(*value);
 }
 
-// public generated WhileScrolled() [instance] :785
+// public generated WhileScrolled() [instance] :793
 void WhileScrolled::ctor_6()
 {
     _region = ::g::Fuse::Triggers::ScrollRegion::New1();
     ctor_5();
 }
 
-// private void OnScrollPositionChanged(object s, object args) [instance] :819
+// private void OnScrollPositionChanged(object s, object args) [instance] :827
 void WhileScrolled::OnScrollPositionChanged(uObject* s, uObject* args)
 {
     uStackFrame __("Fuse.Triggers.WhileScrolled", "OnScrollPositionChanged(object,object)");
     Update();
 }
 
-// public Fuse.Triggers.IScrolledLength get_RelativeTo() [instance] :843
+// public Fuse.Triggers.IScrolledLength get_RelativeTo() [instance] :851
 uObject* WhileScrolled::RelativeTo()
 {
     uStackFrame __("Fuse.Triggers.WhileScrolled", "get_RelativeTo()");
     return uPtr(_region)->RelativeTo;
 }
 
-// public void set_RelativeTo(Fuse.Triggers.IScrolledLength value) [instance] :844
+// public void set_RelativeTo(Fuse.Triggers.IScrolledLength value) [instance] :852
 void WhileScrolled::RelativeTo(uObject* value)
 {
     uStackFrame __("Fuse.Triggers.WhileScrolled", "set_RelativeTo(Fuse.Triggers.IScrolledLength)");
@@ -13220,14 +13233,14 @@ void WhileScrolled::RelativeTo(uObject* value)
         Update();
 }
 
-// public Fuse.Triggers.ScrolledWhere get_To() [instance] :829
+// public Fuse.Triggers.ScrolledWhere get_To() [instance] :837
 int WhileScrolled::To()
 {
     uStackFrame __("Fuse.Triggers.WhileScrolled", "get_To()");
     return uPtr(_region)->To;
 }
 
-// public void set_To(Fuse.Triggers.ScrolledWhere value) [instance] :830
+// public void set_To(Fuse.Triggers.ScrolledWhere value) [instance] :838
 void WhileScrolled::To(int value)
 {
     uStackFrame __("Fuse.Triggers.WhileScrolled", "set_To(Fuse.Triggers.ScrolledWhere)");
@@ -13236,7 +13249,7 @@ void WhileScrolled::To(int value)
         Update();
 }
 
-// private void Update() [instance] :803
+// private void Update() [instance] :811
 void WhileScrolled::Update()
 {
     uStackFrame __("Fuse.Triggers.WhileScrolled", "Update()");
@@ -13245,14 +13258,14 @@ void WhileScrolled::Update()
         SetActive(uPtr(_region)->IsInZone(_scrollable));
 }
 
-// public float get_Within() [instance] :836
+// public float get_Within() [instance] :844
 float WhileScrolled::Within()
 {
     uStackFrame __("Fuse.Triggers.WhileScrolled", "get_Within()");
     return uPtr(_region)->Within;
 }
 
-// public void set_Within(float value) [instance] :837
+// public void set_Within(float value) [instance] :845
 void WhileScrolled::Within(float value)
 {
     uStackFrame __("Fuse.Triggers.WhileScrolled", "set_Within(float)");
@@ -13261,7 +13274,7 @@ void WhileScrolled::Within(float value)
         Update();
 }
 
-// public generated WhileScrolled New() [static] :785
+// public generated WhileScrolled New() [static] :793
 WhileScrolled* WhileScrolled::New2()
 {
     WhileScrolled* obj1 = (WhileScrolled*)uNew(WhileScrolled_typeof());
@@ -13270,8 +13283,8 @@ WhileScrolled* WhileScrolled::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileString :4003
 // {
@@ -13289,7 +13302,7 @@ static void WhileString_build(uType* type)
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WhileValue_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WhileValue_type, interface7),
         ::g::Fuse::Triggers::IPulseTrigger_typeof(), offsetof(::g::Fuse::Triggers::WhileValue_type, interface8));
-    type->SetFields(36,
+    type->SetFields(39,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::WhileString, _caseSensitive), 0,
         ::g::Uno::String_typeof(), offsetof(::g::Fuse::Triggers::WhileString, _compare), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::WhileString, _hasMaxLength), 0,
@@ -13322,7 +13335,7 @@ static void WhileString_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileValue_typeof();
-    options.FieldCount = 43;
+    options.FieldCount = 46;
     options.InterfaceCount = 9;
     options.ObjectSize = sizeof(WhileString);
     options.TypeSize = sizeof(::g::Fuse::Triggers::WhileValue_type);
@@ -13635,8 +13648,8 @@ WhileString* WhileString::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public enum WhileStringTest :3988
 uEnumType* WhileStringTest_typeof()
@@ -13654,8 +13667,8 @@ uEnumType* WhileStringTest_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public abstract class WhileTrigger :4175
 // {
@@ -13670,7 +13683,7 @@ static void WhileTrigger_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(30,
+    type->SetFields(33,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::WhileTrigger, _Invert), 0);
     type->Reflection.SetFunctions(2,
         new uFunction("get_Invert", NULL, (void*)WhileTrigger__get_Invert_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
@@ -13684,7 +13697,7 @@ static void WhileTrigger_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::Trigger_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileTrigger);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -13778,8 +13791,8 @@ void WhileTrigger::SetActive(bool on)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public class WhileTrue :3431
 // {
@@ -13796,7 +13809,7 @@ static void WhileTrue_build(uType* type)
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WhileBool_type, interface7),
         ::g::Fuse::Triggers::IPulseTrigger_typeof(), offsetof(::g::Fuse::Triggers::WhileBool_type, interface8),
         ::g::Fuse::Triggers::Actions::IToggleable_typeof(), offsetof(::g::Fuse::Triggers::WhileBool_type, interface9));
-    type->SetFields(36);
+    type->SetFields(39);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WhileTrue__New2_fn, 0, true, type, 0));
 }
@@ -13808,7 +13821,7 @@ static void WhileTrue_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileBool_typeof();
-    options.FieldCount = 36;
+    options.FieldCount = 39;
     options.InterfaceCount = 10;
     options.ObjectSize = sizeof(WhileTrue);
     options.TypeSize = sizeof(::g::Fuse::Triggers::WhileBool_type);
@@ -13873,15 +13886,15 @@ WhileTrue* WhileTrue::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public abstract class WhileValue<T> :4213
 // {
 static void WhileValue_build(uType* type)
 {
     ::STRINGS[64] = uString::Const("`Pulse` on a `WhileValue` will be removed, create a `Timeline` instead.");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno");
     ::STRINGS[65] = uString::Const("Pulse");
     ::TYPES[78] = ::g::Fuse::Triggers::IValue_typeof();
     ::TYPES[79] = ::g::Uno::UX::ValueChangedHandler_typeof();
@@ -13899,7 +13912,7 @@ static void WhileValue_build(uType* type)
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(WhileValue_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(WhileValue_type, interface7),
         ::g::Fuse::Triggers::IPulseTrigger_typeof(), offsetof(WhileValue_type, interface8));
-    type->SetFields(31,
+    type->SetFields(34,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Triggers::WhileValue, _hasValue), 0,
         ::TYPES[78/*Fuse.Triggers.IValue`1*/]->MakeType(type->T(0), NULL), offsetof(::g::Fuse::Triggers::WhileValue, _obj), 0,
         ::TYPES[78/*Fuse.Triggers.IValue`1*/]->MakeType(type->T(0), NULL), offsetof(::g::Fuse::Triggers::WhileValue, _source), 0,
@@ -13922,7 +13935,7 @@ WhileValue_type* WhileValue_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 36;
+    options.FieldCount = 39;
     options.GenericCount = 1;
     options.InterfaceCount = 9;
     options.PrecalcCount = 3;
@@ -14099,7 +14112,7 @@ void WhileValue::Pulse1()
 
     if (!::g::Fuse::Triggers::WhileValueStatic::_deprecatedNote_)
     {
-        ::g::Fuse::Diagnostics::Deprecated(::STRINGS[64/*"`Pulse` on ...*/], this, ::STRINGS[3/*"/Users/eric...*/], 4249, ::STRINGS[65/*"Pulse"*/]);
+        ::g::Fuse::Diagnostics::Deprecated(::STRINGS[64/*"`Pulse` on ...*/], this, ::STRINGS[3/*"/usr/local/...*/], 4249, ::STRINGS[65/*"Pulse"*/]);
         ::g::Fuse::Triggers::WhileValueStatic::_deprecatedNote_ = true;
     }
 
@@ -14168,8 +14181,8 @@ uObject* WhileValue::FindValueNode(uType* __type, ::g::Fuse::Node* n)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // internal static class WhileValueStatic :4208
 // {
@@ -14195,8 +14208,8 @@ uClassType* WhileValueStatic_typeof()
 bool WhileValueStatic::_deprecatedNote_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileVisible :4316
 // {
@@ -14212,7 +14225,7 @@ static void WhileVisible_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31);
+    type->SetFields(34);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WhileVisible__New2_fn, 0, true, type, 0));
 }
@@ -14224,7 +14237,7 @@ static void WhileVisible_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 31;
+    options.FieldCount = 34;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileVisible);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -14311,15 +14324,15 @@ WhileVisible* WhileVisible::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
 
-// public sealed class WhileVisibleInScrollView :889
+// public sealed class WhileVisibleInScrollView :912
 // {
 static void WhileVisibleInScrollView_build(uType* type)
 {
     ::STRINGS[66] = uString::Const("Could not find a ScrollView control.");
-    ::STRINGS[32] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/triggers/$.uno");
+    ::STRINGS[32] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno");
     ::STRINGS[21] = uString::Const("OnRooted");
     ::STRINGS[67] = uString::Const("Parent must be an Element");
     ::STRINGS[68] = uString::Const("Must have an Element path to the ScrollView");
@@ -14336,14 +14349,17 @@ static void WhileVisibleInScrollView_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::Trigger_type, interface7));
-    type->SetFields(31,
+    type->SetFields(34,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Triggers::WhileVisibleInScrollView, _distance), 0,
         ::TYPES[24/*Fuse.Elements.Element*/], offsetof(::g::Fuse::Triggers::WhileVisibleInScrollView, _element), 0,
+        ::g::Fuse::Triggers::WhileVisibleInScrollViewMode_typeof(), offsetof(::g::Fuse::Triggers::WhileVisibleInScrollView, _mode), 0,
         ::TYPES[45/*Fuse.Triggers.IScrolledLength*/], offsetof(::g::Fuse::Triggers::WhileVisibleInScrollView, _relativeTo), 0,
         ::g::Fuse::Controls::ScrollViewBase_typeof(), offsetof(::g::Fuse::Triggers::WhileVisibleInScrollView, _scrollable), 0);
-    type->Reflection.SetFunctions(5,
+    type->Reflection.SetFunctions(7,
         new uFunction("get_Distance", NULL, (void*)WhileVisibleInScrollView__get_Distance_fn, 0, false, ::g::Uno::Float_typeof(), 0),
         new uFunction("set_Distance", NULL, (void*)WhileVisibleInScrollView__set_Distance_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
+        new uFunction("get_Mode", NULL, (void*)WhileVisibleInScrollView__get_Mode_fn, 0, false, ::g::Fuse::Triggers::WhileVisibleInScrollViewMode_typeof(), 0),
+        new uFunction("set_Mode", NULL, (void*)WhileVisibleInScrollView__set_Mode_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Triggers::WhileVisibleInScrollViewMode_typeof()),
         new uFunction(".ctor", NULL, (void*)WhileVisibleInScrollView__New2_fn, 0, true, type, 0),
         new uFunction("get_RelativeTo", NULL, (void*)WhileVisibleInScrollView__get_RelativeTo_fn, 0, false, ::TYPES[45/*Fuse.Triggers.IScrolledLength*/], 0),
         new uFunction("set_RelativeTo", NULL, (void*)WhileVisibleInScrollView__set_RelativeTo_fn, 0, false, uVoid_typeof(), 1, ::TYPES[45/*Fuse.Triggers.IScrolledLength*/]));
@@ -14356,7 +14372,7 @@ static void WhileVisibleInScrollView_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 35;
+    options.FieldCount = 39;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileVisibleInScrollView);
     options.TypeSize = sizeof(::g::Fuse::Triggers::Trigger_type);
@@ -14386,31 +14402,43 @@ static void WhileVisibleInScrollView_build(uType* type)
     return type;
 }
 
-// public generated WhileVisibleInScrollView() :889
+// public generated WhileVisibleInScrollView() :912
 void WhileVisibleInScrollView__ctor_6_fn(WhileVisibleInScrollView* __this)
 {
     __this->ctor_6();
 }
 
-// public float get_Distance() :941
+// public float get_Distance() :964
 void WhileVisibleInScrollView__get_Distance_fn(WhileVisibleInScrollView* __this, float* __retval)
 {
     *__retval = __this->Distance();
 }
 
-// public void set_Distance(float value) :942
+// public void set_Distance(float value) :965
 void WhileVisibleInScrollView__set_Distance_fn(WhileVisibleInScrollView* __this, float* value)
 {
     __this->Distance(*value);
 }
 
-// public generated WhileVisibleInScrollView New() :889
+// public Fuse.Triggers.WhileVisibleInScrollViewMode get_Mode() :1000
+void WhileVisibleInScrollView__get_Mode_fn(WhileVisibleInScrollView* __this, int* __retval)
+{
+    *__retval = __this->Mode();
+}
+
+// public void set_Mode(Fuse.Triggers.WhileVisibleInScrollViewMode value) :1001
+void WhileVisibleInScrollView__set_Mode_fn(WhileVisibleInScrollView* __this, int* value)
+{
+    __this->Mode(*value);
+}
+
+// public generated WhileVisibleInScrollView New() :912
 void WhileVisibleInScrollView__New2_fn(WhileVisibleInScrollView** __retval)
 {
     *__retval = WhileVisibleInScrollView::New2();
 }
 
-// protected override sealed void OnRooted() :894
+// protected override sealed void OnRooted() :917
 void WhileVisibleInScrollView__OnRooted_fn(WhileVisibleInScrollView* __this)
 {
     uStackFrame __("Fuse.Triggers.WhileVisibleInScrollView", "OnRooted()");
@@ -14419,7 +14447,7 @@ void WhileVisibleInScrollView__OnRooted_fn(WhileVisibleInScrollView* __this)
 
     if (__this->_scrollable == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[66/*"Could not f...*/], __this, ::STRINGS[32/*"/Users/eric...*/], 900, ::STRINGS[21/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[66/*"Could not f...*/], __this, ::STRINGS[32/*"/usr/local/...*/], 923, ::STRINGS[21/*"OnRooted"*/], NULL);
         return;
     }
 
@@ -14427,13 +14455,13 @@ void WhileVisibleInScrollView__OnRooted_fn(WhileVisibleInScrollView* __this)
 
     if (__this->_element == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[67/*"Parent must...*/], __this, ::STRINGS[32/*"/Users/eric...*/], 907, ::STRINGS[21/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[67/*"Parent must...*/], __this, ::STRINGS[32/*"/usr/local/...*/], 930, ::STRINGS[21/*"OnRooted"*/], NULL);
         return;
     }
 
     if (!uPtr(__this->_element)->HasLayoutIn(__this->_scrollable))
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[68/*"Must have a...*/], __this, ::STRINGS[32/*"/Users/eric...*/], 913, ::STRINGS[21/*"OnRooted"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[68/*"Must have a...*/], __this, ::STRINGS[32/*"/usr/local/...*/], 936, ::STRINGS[21/*"OnRooted"*/], NULL);
         return;
     }
 
@@ -14441,13 +14469,13 @@ void WhileVisibleInScrollView__OnRooted_fn(WhileVisibleInScrollView* __this)
     __this->Update();
 }
 
-// private void OnScrollPositionChanged(object s, object args) :968
+// private void OnScrollPositionChanged(object s, object args) :1008
 void WhileVisibleInScrollView__OnScrollPositionChanged_fn(WhileVisibleInScrollView* __this, uObject* s, uObject* args)
 {
     __this->OnScrollPositionChanged(s, args);
 }
 
-// protected override sealed void OnUnrooted() :921
+// protected override sealed void OnUnrooted() :944
 void WhileVisibleInScrollView__OnUnrooted_fn(WhileVisibleInScrollView* __this)
 {
     uStackFrame __("Fuse.Triggers.WhileVisibleInScrollView", "OnUnrooted()");
@@ -14461,25 +14489,25 @@ void WhileVisibleInScrollView__OnUnrooted_fn(WhileVisibleInScrollView* __this)
     ::g::Fuse::Triggers::Trigger__OnUnrooted_fn(__this);
 }
 
-// public Fuse.Triggers.IScrolledLength get_RelativeTo() :959
+// public Fuse.Triggers.IScrolledLength get_RelativeTo() :982
 void WhileVisibleInScrollView__get_RelativeTo_fn(WhileVisibleInScrollView* __this, uObject** __retval)
 {
     *__retval = __this->RelativeTo();
 }
 
-// public void set_RelativeTo(Fuse.Triggers.IScrolledLength value) :960
+// public void set_RelativeTo(Fuse.Triggers.IScrolledLength value) :983
 void WhileVisibleInScrollView__set_RelativeTo_fn(WhileVisibleInScrollView* __this, uObject* value)
 {
     __this->RelativeTo(value);
 }
 
-// private void Update() :973
+// private void Update() :1013
 void WhileVisibleInScrollView__Update_fn(WhileVisibleInScrollView* __this)
 {
     __this->Update();
 }
 
-// public generated WhileVisibleInScrollView() [instance] :889
+// public generated WhileVisibleInScrollView() [instance] :912
 void WhileVisibleInScrollView::ctor_6()
 {
     _distance = 0.0f;
@@ -14487,13 +14515,13 @@ void WhileVisibleInScrollView::ctor_6()
     ctor_5();
 }
 
-// public float get_Distance() [instance] :941
+// public float get_Distance() [instance] :964
 float WhileVisibleInScrollView::Distance()
 {
     return _distance;
 }
 
-// public void set_Distance(float value) [instance] :942
+// public void set_Distance(float value) [instance] :965
 void WhileVisibleInScrollView::Distance(float value)
 {
     uStackFrame __("Fuse.Triggers.WhileVisibleInScrollView", "set_Distance(float)");
@@ -14501,20 +14529,34 @@ void WhileVisibleInScrollView::Distance(float value)
     Update();
 }
 
-// private void OnScrollPositionChanged(object s, object args) [instance] :968
+// public Fuse.Triggers.WhileVisibleInScrollViewMode get_Mode() [instance] :1000
+int WhileVisibleInScrollView::Mode()
+{
+    return _mode;
+}
+
+// public void set_Mode(Fuse.Triggers.WhileVisibleInScrollViewMode value) [instance] :1001
+void WhileVisibleInScrollView::Mode(int value)
+{
+    uStackFrame __("Fuse.Triggers.WhileVisibleInScrollView", "set_Mode(Fuse.Triggers.WhileVisibleInScrollViewMode)");
+    _mode = value;
+    Update();
+}
+
+// private void OnScrollPositionChanged(object s, object args) [instance] :1008
 void WhileVisibleInScrollView::OnScrollPositionChanged(uObject* s, uObject* args)
 {
     uStackFrame __("Fuse.Triggers.WhileVisibleInScrollView", "OnScrollPositionChanged(object,object)");
     Update();
 }
 
-// public Fuse.Triggers.IScrolledLength get_RelativeTo() [instance] :959
+// public Fuse.Triggers.IScrolledLength get_RelativeTo() [instance] :982
 uObject* WhileVisibleInScrollView::RelativeTo()
 {
     return _relativeTo;
 }
 
-// public void set_RelativeTo(Fuse.Triggers.IScrolledLength value) [instance] :960
+// public void set_RelativeTo(Fuse.Triggers.IScrolledLength value) [instance] :983
 void WhileVisibleInScrollView::RelativeTo(uObject* value)
 {
     uStackFrame __("Fuse.Triggers.WhileVisibleInScrollView", "set_RelativeTo(Fuse.Triggers.IScrolledLength)");
@@ -14522,22 +14564,44 @@ void WhileVisibleInScrollView::RelativeTo(uObject* value)
     Update();
 }
 
-// private void Update() [instance] :973
+// private void Update() [instance] :1013
 void WhileVisibleInScrollView::Update()
 {
     uStackFrame __("Fuse.Triggers.WhileVisibleInScrollView", "Update()");
 
-    if ((_element == NULL) || (_scrollable == NULL))
+    if (((_element == NULL) || (_scrollable == NULL)) || !uPtr(_element)->HasMarginBox())
         return;
 
+    float zeroTolerance = 1e-05f;
     ::g::Uno::Float2 min = uPtr(_element)->GetLayoutPositionIn(_scrollable);
     ::g::Uno::Float2 max = ::g::Uno::Float2__op_Addition2(min, uPtr(_element)->ActualSize());
-    float dist = uPtr(_scrollable)->ToScalarPosition(uPtr(_scrollable)->DistanceToView(min, max));
     float maxDist = uPtr(_scrollable)->ToScalarPosition(::g::Fuse::Triggers::IScrolledLength::GetPoints(uInterface(uPtr(RelativeTo()), ::TYPES[45/*Fuse.Triggers.IScrolledLength*/]), Distance(), _scrollable));
-    SetActive(dist < (maxDist + 1e-05f));
+    bool isInView = false;
+
+    switch (_mode)
+    {
+        case 1:
+        {
+            ::g::Uno::Float4 dist = uPtr(_scrollable)->DistanceToView(min, max);
+            float distStart = uPtr(_scrollable)->ToScalarPosition(::g::Uno::Float2__New2(dist.X, dist.Y));
+            float distEnd = uPtr(_scrollable)->ToScalarPosition(::g::Uno::Float2__New2(dist.Z, dist.W));
+            isInView = (distStart > (maxDist - 1e-05f)) && (distEnd > (maxDist - 1e-05f));
+            break;
+        }
+        case 0:
+        {
+            ::g::Uno::Float4 dist1 = uPtr(_scrollable)->DistanceToView(max, min);
+            float distStart1 = uPtr(_scrollable)->ToScalarPosition(::g::Uno::Float2__New2(dist1.X, dist1.Y));
+            float distEnd1 = uPtr(_scrollable)->ToScalarPosition(::g::Uno::Float2__New2(dist1.Z, dist1.W));
+            isInView = (distStart1 > ((-1.0f * maxDist) - 1e-05f)) && (distEnd1 > ((-1.0f * maxDist) - 1e-05f));
+            break;
+        }
+    }
+
+    SetActive(isInView);
 }
 
-// public generated WhileVisibleInScrollView New() [static] :889
+// public generated WhileVisibleInScrollView New() [static] :912
 WhileVisibleInScrollView* WhileVisibleInScrollView::New2()
 {
     WhileVisibleInScrollView* obj1 = (WhileVisibleInScrollView*)uNew(WhileVisibleInScrollView_typeof());
@@ -14546,8 +14610,24 @@ WhileVisibleInScrollView* WhileVisibleInScrollView::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/triggers/$.uno
+// ---------------------------------------------------------------------------
+
+// public enum WhileVisibleInScrollViewMode :871
+uEnumType* WhileVisibleInScrollViewMode_typeof()
+{
+    static uSStrong<uEnumType*> type;
+    if (type != NULL) return type;
+
+    type = uEnumType::New("Fuse.Triggers.WhileVisibleInScrollViewMode", ::g::Uno::Int_typeof(), 2);
+    type->SetLiterals(
+        "Partial", 0LL,
+        "Full", 1LL);
+    return type;
+}
+
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public abstract class WhileWindowAspect :4466
 // {
@@ -14563,7 +14643,7 @@ static void WhileWindowAspect_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::WindowSizeTrigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WindowSizeTrigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WindowSizeTrigger_type, interface7));
-    type->SetFields(32);
+    type->SetFields(35);
 }
 
 ::g::Fuse::Triggers::WindowSizeTrigger_type* WhileWindowAspect_typeof()
@@ -14573,7 +14653,7 @@ static void WhileWindowAspect_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WindowSizeTrigger_typeof();
-    options.FieldCount = 32;
+    options.FieldCount = 35;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileWindowAspect);
     options.TypeSize = sizeof(::g::Fuse::Triggers::WindowSizeTrigger_type);
@@ -14631,8 +14711,8 @@ float WhileWindowAspect::Aspect()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileWindowLandscape :4491
 // {
@@ -14647,7 +14727,7 @@ static void WhileWindowLandscape_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::WindowSizeTrigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WindowSizeTrigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WindowSizeTrigger_type, interface7));
-    type->SetFields(32);
+    type->SetFields(35);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WhileWindowLandscape__New2_fn, 0, true, type, 0));
 }
@@ -14659,7 +14739,7 @@ static void WhileWindowLandscape_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileWindowAspect_typeof();
-    options.FieldCount = 32;
+    options.FieldCount = 35;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileWindowLandscape);
     options.TypeSize = sizeof(::g::Fuse::Triggers::WindowSizeTrigger_type);
@@ -14722,8 +14802,8 @@ WhileWindowLandscape* WhileWindowLandscape::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileWindowPortrait :4507
 // {
@@ -14738,7 +14818,7 @@ static void WhileWindowPortrait_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::WindowSizeTrigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WindowSizeTrigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WindowSizeTrigger_type, interface7));
-    type->SetFields(32);
+    type->SetFields(35);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)WhileWindowPortrait__New2_fn, 0, true, type, 0));
 }
@@ -14750,7 +14830,7 @@ static void WhileWindowPortrait_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileWindowAspect_typeof();
-    options.FieldCount = 32;
+    options.FieldCount = 35;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileWindowPortrait);
     options.TypeSize = sizeof(::g::Fuse::Triggers::WindowSizeTrigger_type);
@@ -14813,8 +14893,8 @@ WhileWindowPortrait* WhileWindowPortrait::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class WhileWindowSize :4426
 // {
@@ -14830,7 +14910,7 @@ static void WhileWindowSize_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::WindowSizeTrigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WindowSizeTrigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(::g::Fuse::Triggers::WindowSizeTrigger_type, interface7));
-    type->SetFields(32,
+    type->SetFields(35,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Triggers::WhileWindowSize, _EqualTo), 0,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Triggers::WhileWindowSize, _GreaterThan), 0,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Triggers::WhileWindowSize, _LessThan), 0);
@@ -14851,7 +14931,7 @@ static void WhileWindowSize_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WindowSizeTrigger_typeof();
-    options.FieldCount = 35;
+    options.FieldCount = 38;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WhileWindowSize);
     options.TypeSize = sizeof(::g::Fuse::Triggers::WindowSizeTrigger_type);
@@ -15010,8 +15090,8 @@ WhileWindowSize* WhileWindowSize::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public abstract class WindowSizeTrigger :4346
 // {
@@ -15029,7 +15109,7 @@ static void WindowSizeTrigger_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(WindowSizeTrigger_type, interface5),
         ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof(), offsetof(WindowSizeTrigger_type, interface6),
         ::g::Fuse::Animations::IBasePlayerFeedback_typeof(), offsetof(WindowSizeTrigger_type, interface7));
-    type->SetFields(31,
+    type->SetFields(34,
         ::TYPES[80/*Fuse.IViewport*/], offsetof(::g::Fuse::Triggers::WindowSizeTrigger, _Viewport), 0);
 }
 
@@ -15040,7 +15120,7 @@ WindowSizeTrigger_type* WindowSizeTrigger_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Triggers::WhileTrigger_typeof();
-    options.FieldCount = 32;
+    options.FieldCount = 35;
     options.InterfaceCount = 8;
     options.ObjectSize = sizeof(WindowSizeTrigger);
     options.TypeSize = sizeof(WindowSizeTrigger_type);
@@ -15139,8 +15219,8 @@ void WindowSizeTrigger::Viewport(uObject* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/triggers/$.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/triggers/$.uno
+// ----------------------------------------------------------------
 
 // private sealed class LayoutTransition.WorldPositionChangeMode :32
 // {

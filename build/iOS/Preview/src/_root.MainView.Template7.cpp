@@ -1,60 +1,105 @@
-// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno.
+// This file was generated based on build/iOS/Preview/cache/ux11/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <_root.gadden_FuseCont-44c720e0.h>
+#include <_root.gadden_bundle.h>
+#include <_root.gadden_FuseControlsImage_Url_Property.h>
+#include <_root.gadden_FuseControlsTextControl_Value_Property.h>
+#include <_root.gadden_FuseControlsTextInputControl_Value_Property.h>
+#include <_root.gadden_FuseElementsElement_Visibility_Property.h>
 #include <_root.MainView.h>
 #include <_root.MainView.Template7.h>
+#include <_root.Paragraph.h>
+#include <_root.SmallText.h>
 #include <Fuse.Binding.h>
+#include <Fuse.Controls.Grid.h>
+#include <Fuse.Controls.Image.h>
 #include <Fuse.Controls.Panel.h>
-#include <Fuse.Controls.Text.h>
+#include <Fuse.Controls.StackPanel.h>
 #include <Fuse.Controls.TextControl.h>
+#include <Fuse.Controls.TextInputControl.h>
+#include <Fuse.Controls.TextWrapping.h>
 #include <Fuse.Elements.Alignment.h>
 #include <Fuse.Elements.Element.h>
+#include <Fuse.Elements.StretchMode.h>
+#include <Fuse.Elements.Visibility.h>
+#include <Fuse.Font.h>
+#include <Fuse.Gestures.Clicked.h>
 #include <Fuse.Node.h>
 #include <Fuse.Reactive.BindingMode.h>
 #include <Fuse.Reactive.Data.h>
 #include <Fuse.Reactive.DataBinding.h>
+#include <Fuse.Reactive.EventBinding.h>
 #include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Triggers.Actions.Callback.h>
+#include <Fuse.Triggers.Actions.Set-1.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h>
+#include <Fuse.Triggers.Trigger.h>
 #include <Fuse.Visual.h>
+#include <Fuse.VisualEventHandler.h>
 #include <Uno.Bool.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IList-1.h>
 #include <Uno.Float.h>
 #include <Uno.Float4.h>
+#include <Uno.Int.h>
+#include <Uno.IO.BundleFile.h>
 #include <Uno.Object.h>
 #include <Uno.String.h>
+#include <Uno.UX.BundleFileSource.h>
+#include <Uno.UX.FileSource.h>
 #include <Uno.UX.NameTable.h>
 #include <Uno.UX.Property.h>
 #include <Uno.UX.Property-1.h>
 #include <Uno.UX.Selector.h>
-static uString* STRINGS[2];
-static uType* TYPES[3];
+#include <Uno.UX.Size.h>
+#include <Uno.UX.Unit.h>
+static uString* STRINGS[9];
+static uType* TYPES[7];
 
 namespace g{
 
-// public partial sealed class MainView.Template7 :501
+// public partial sealed class MainView.Template7 :443
 // {
-// static Template7() :514
+// static Template7() :462
 static void MainView__Template7__cctor__fn(uType* __type)
 {
-    MainView__Template7::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 0);
-    MainView__Template7::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"Value"*/]);
+    MainView__Template7::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 1, ::STRINGS[0/*"temp_eb14"*/]);
+    MainView__Template7::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[1/*"Url"*/]);
+    MainView__Template7::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Value"*/]);
+    MainView__Template7::__selector2_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[3/*"Visibility"*/]);
 }
 
 static void MainView__Template7_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("Value");
-    ::STRINGS[1] = uString::Const("IceBreaker");
+    ::STRINGS[0] = uString::Const("temp_eb14");
+    ::STRINGS[1] = uString::Const("Url");
+    ::STRINGS[2] = uString::Const("Value");
+    ::STRINGS[3] = uString::Const("Visibility");
+    ::STRINGS[4] = uString::Const("image");
+    ::STRINGS[5] = uString::Const("name");
+    ::STRINGS[6] = uString::Const("location");
+    ::STRINGS[7] = uString::Const("programClicked");
+    ::STRINGS[8] = uString::Const("2* ,3* ,1*");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
-    ::TYPES[1] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL);
+    ::TYPES[1] = ::g::Fuse::Triggers::Actions::Set_typeof()->MakeType(::g::Fuse::Elements::Visibility_typeof(), NULL);
     ::TYPES[2] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
+    ::TYPES[3] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL);
+    ::TYPES[4] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Triggers::Actions::TriggerAction_typeof(), NULL);
+    ::TYPES[5] = ::g::Fuse::VisualEventHandler_typeof();
+    ::TYPES[6] = ::g::Uno::Collections::ICollection_typeof()->MakeType(uObject_typeof(), NULL);
     type->SetFields(2,
         ::g::Uno::UX::NameTable_typeof(), offsetof(::g::MainView__Template7, __g_nametable1), 0,
         ::g::MainView_typeof(), offsetof(::g::MainView__Template7, __parent1), uFieldFlagsWeak,
         ::g::MainView_typeof(), offsetof(::g::MainView__Template7, __parentInstance1), uFieldFlagsWeak,
-        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(::g::MainView__Template7, temp_Value_inst), 0,
+        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Fuse::Elements::Visibility_typeof(), NULL), offsetof(::g::MainView__Template7, ProgramDetails_Visibility_inst), 0,
+        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Fuse::Elements::Visibility_typeof(), NULL), offsetof(::g::MainView__Template7, ProgramFeed_Visibility_inst), 0,
+        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(::g::MainView__Template7, temp_Url_inst), 0,
+        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(::g::MainView__Template7, temp1_Value_inst), 0,
+        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(::g::MainView__Template7, temp2_Value_inst), 0,
         ::TYPES[0/*string[]*/], (uintptr_t)&::g::MainView__Template7::__g_static_nametable1_, uFieldFlagsStatic,
-        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::MainView__Template7::__selector0_, uFieldFlagsStatic);
+        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::MainView__Template7::__selector0_, uFieldFlagsStatic,
+        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::MainView__Template7::__selector1_, uFieldFlagsStatic,
+        ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::MainView__Template7::__selector2_, uFieldFlagsStatic);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)MainView__Template7__New2_fn, 0, true, type, 2, ::g::MainView_typeof(), ::g::MainView_typeof()));
 }
@@ -66,7 +111,7 @@ static void MainView__Template7_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::UX::Template_typeof();
-    options.FieldCount = 8;
+    options.FieldCount = 14;
     options.ObjectSize = sizeof(MainView__Template7);
     options.TypeSize = sizeof(::g::Uno::UX::Template_type);
     type = (::g::Uno::UX::Template_type*)uClassType::New("MainView.Template7", options);
@@ -76,30 +121,81 @@ static void MainView__Template7_build(uType* type)
     return type;
 }
 
-// public Template7(MainView parent, MainView parentInstance) :505
+// public Template7(MainView parent, MainView parentInstance) :447
 void MainView__Template7__ctor_1_fn(MainView__Template7* __this, ::g::MainView* parent, ::g::MainView* parentInstance)
 {
     __this->ctor_1(parent, parentInstance);
 }
 
-// public override sealed object New() :517
+// public override sealed object New() :465
 void MainView__Template7__New1_fn(MainView__Template7* __this, uObject** __retval)
 {
     uStackFrame __("MainView.Template7", "New()");
     ::g::Fuse::Controls::Panel* __self1 = ::g::Fuse::Controls::Panel::New3();
-    ::g::Fuse::Controls::Text* temp = ::g::Fuse::Controls::Text::New3();
-    __this->temp_Value_inst = ::g::gadden_FuseControlsTextControl_Value_Property::New1(temp, MainView__Template7::__selector0());
-    ::g::Fuse::Reactive::Data* temp1 = ::g::Fuse::Reactive::Data::New1(::STRINGS[1/*"IceBreaker"*/]);
+    ::g::Fuse::Controls::Image* temp = ::g::Fuse::Controls::Image::New3();
+    __this->temp_Url_inst = ::g::gadden_FuseControlsImage_Url_Property::New1(temp, MainView__Template7::__selector0());
+    ::g::Fuse::Reactive::Data* temp3 = ::g::Fuse::Reactive::Data::New1(::STRINGS[4/*"image"*/]);
     __this->__g_nametable1 = ::g::Uno::UX::NameTable::New1(uPtr(__this->__parent1)->__g_nametable1, MainView__Template7::__g_static_nametable1());
-    ::g::Fuse::Reactive::DataBinding* temp2 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp_Value_inst, (uObject*)temp1, __this->__g_nametable1, 3);
-    __self1->Alignment(13);
-    __self1->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 20.0f, 20.0f));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[1/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp2);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
+    ::g::Paragraph* temp1 = ::g::Paragraph::New4();
+    __this->temp1_Value_inst = ::g::gadden_FuseControlsTextInputControl_Value_Property::New1(temp1, MainView__Template7::__selector1());
+    ::g::Fuse::Reactive::Data* temp4 = ::g::Fuse::Reactive::Data::New1(::STRINGS[5/*"name"*/]);
+    ::g::SmallText* temp2 = ::g::SmallText::New4();
+    __this->temp2_Value_inst = ::g::gadden_FuseControlsTextControl_Value_Property::New1(temp2, MainView__Template7::__selector1());
+    ::g::Fuse::Reactive::Data* temp5 = ::g::Fuse::Reactive::Data::New1(::STRINGS[6/*"location"*/]);
+    __this->ProgramDetails_Visibility_inst = ::g::gadden_FuseElementsElement_Visibility_Property::New1(uPtr(__this->__parent1)->ProgramDetails, MainView__Template7::__selector2());
+    __this->ProgramFeed_Visibility_inst = ::g::gadden_FuseElementsElement_Visibility_Property::New1(uPtr(__this->__parent1)->ProgramFeed, MainView__Template7::__selector2());
+    ::g::Fuse::Reactive::Data* temp6 = ::g::Fuse::Reactive::Data::New1(::STRINGS[7/*"programClic...*/]);
+    ::g::Fuse::Controls::Grid* temp7 = ::g::Fuse::Controls::Grid::New4();
+    ::g::Fuse::Reactive::DataBinding* temp8 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp_Url_inst, (uObject*)temp3, __this->__g_nametable1, 3);
+    ::g::Fuse::Controls::StackPanel* temp9 = ::g::Fuse::Controls::StackPanel::New4();
+    ::g::Fuse::Reactive::DataBinding* temp10 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp1_Value_inst, (uObject*)temp4, __this->__g_nametable1, 3);
+    ::g::Fuse::Reactive::DataBinding* temp11 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp2_Value_inst, (uObject*)temp5, __this->__g_nametable1, 3);
+    ::g::Fuse::Controls::Image* temp12 = ::g::Fuse::Controls::Image::New3();
+    ::g::Fuse::Gestures::Clicked* temp13 = ::g::Fuse::Gestures::Clicked::New2();
+    ::g::Fuse::Triggers::Actions::Set* temp14 = (::g::Fuse::Triggers::Actions::Set*)::g::Fuse::Triggers::Actions::Set::New2(::TYPES[1/*Fuse.Triggers.Actions.Set<Fuse.Elements.Visibility>*/], __this->ProgramDetails_Visibility_inst);
+    ::g::Fuse::Triggers::Actions::Set* temp15 = (::g::Fuse::Triggers::Actions::Set*)::g::Fuse::Triggers::Actions::Set::New2(::TYPES[1/*Fuse.Triggers.Actions.Set<Fuse.Elements.Visibility>*/], __this->ProgramFeed_Visibility_inst);
+    ::g::Fuse::Triggers::Actions::Callback* temp16 = ::g::Fuse::Triggers::Actions::Callback::New2();
+    ::g::Fuse::Reactive::EventBinding* temp_eb141 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp6, __this->__g_nametable1);
+    temp7->Columns(::STRINGS[8/*"2* ,3* ,1*"*/]);
+    ::g::Fuse::Controls::Grid::SetRow(temp7, 1);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp7->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp7->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp9);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp7->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp12);
+    temp->StretchMode(6);
+    temp->Width(::g::Uno::UX::Size__New1(100.0f, 4));
+    temp->Height(::g::Uno::UX::Size__New1(80.0f, 1));
+    temp->Alignment(13);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp8);
+    temp9->Alignment(13);
+    temp9->Margin(::g::Uno::Float4__New2(3.0f, 0.0f, 0.0f, 0.0f));
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp9->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp1);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp9->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp2);
+    temp1->TextWrapping(1);
+    ::g::Fuse::Controls::Grid::SetRow(temp1, 1);
+    temp1->Font(::g::MainView::RalewayBlack());
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp1->Bindings()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp10);
+    temp2->FontSize(12.0f);
+    temp2->Margin(::g::Uno::Float4__New2(3.0f, 0.0f, 0.0f, 0.0f));
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Bindings()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp11);
+    temp12->Width(::g::Uno::UX::Size__New1(10.0f, 1));
+    temp12->Alignment(3);
+    temp12->File(::g::Uno::UX::BundleFileSource::New1(::g::gadden_bundle::ArrowRightWhite3d207980()));
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp13->Actions()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp14);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp13->Actions()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp15);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp13->Actions()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp16);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp13->Bindings()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb141);
+    ::g::Fuse::Triggers::Actions::Set__set_Value_fn(temp14, uCRef<int>(0));
+    temp14->Delay(0.2f);
+    ::g::Fuse::Triggers::Actions::Set__set_Value_fn(temp15, uCRef<int>(2));
+    temp15->Delay(0.2f);
+    temp16->add_Handler(uDelegate::New(::TYPES[5/*Fuse.VisualEventHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, temp_eb141));
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->__g_nametable1)->Objects()), ::TYPES[6/*Uno.Collections.ICollection<object>*/]), temp_eb141);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp7);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Node>*/]), temp13);
     return *__retval = __self1, void();
 }
 
-// public Template7 New(MainView parent, MainView parentInstance) :505
+// public Template7 New(MainView parent, MainView parentInstance) :447
 void MainView__Template7__New2_fn(::g::MainView* parent, ::g::MainView* parentInstance, MainView__Template7** __retval)
 {
     *__retval = MainView__Template7::New2(parent, parentInstance);
@@ -107,8 +203,10 @@ void MainView__Template7__New2_fn(::g::MainView* parent, ::g::MainView* parentIn
 
 uSStrong<uArray*> MainView__Template7::__g_static_nametable1_;
 ::g::Uno::UX::Selector MainView__Template7::__selector0_;
+::g::Uno::UX::Selector MainView__Template7::__selector1_;
+::g::Uno::UX::Selector MainView__Template7::__selector2_;
 
-// public Template7(MainView parent, MainView parentInstance) [instance] :505
+// public Template7(MainView parent, MainView parentInstance) [instance] :447
 void MainView__Template7::ctor_1(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     ctor_(NULL, false);
@@ -116,7 +214,7 @@ void MainView__Template7::ctor_1(::g::MainView* parent, ::g::MainView* parentIns
     __parentInstance1 = parentInstance;
 }
 
-// public Template7 New(MainView parent, MainView parentInstance) [static] :505
+// public Template7 New(MainView parent, MainView parentInstance) [static] :447
 MainView__Template7* MainView__Template7::New2(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     MainView__Template7* obj1 = (MainView__Template7*)uNew(MainView__Template7_typeof());

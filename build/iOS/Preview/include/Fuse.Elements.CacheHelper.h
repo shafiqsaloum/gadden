@@ -1,10 +1,10 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.Float2.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implement-476e2792.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
 namespace g{namespace Fuse{namespace Elements{struct Cache;}}}
 namespace g{namespace Fuse{namespace Elements{struct CacheHelper;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
@@ -14,7 +14,7 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// internal sealed class CacheHelper :287
+// internal sealed class CacheHelper :299
 // {
 uType* CacheHelper_typeof();
 void CacheHelper__ctor__fn(CacheHelper* __this);

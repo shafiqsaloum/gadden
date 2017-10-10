@@ -1,18 +1,18 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Text.Bidirection-87dd5f24.h>
+#include <Fuse.Text.Bidirectional.Implementation.UBidiRuns.h>
 #include <Fuse.Text.Bidirectional.Run.h>
 #include <Fuse.Text.Bidirectional.Runs.h>
-#include <Fuse.Text.Bidirection-d76428a6.h>
+#include <Fuse.Text.Bidirectional.Runs.Range.h>
 #include <Fuse.Text.ShapedRun.h>
 #include <Fuse.Text.SinglyLinkedList-1.h>
 #include <Fuse.Text.Substring.h>
 #include <Fuse.Text.TextDirection.h>
 #include <Uno.Bool.h>
 #include <Uno.Collections.IEnumerable-1.h>
+#include <Uno.Collections.List-1.Enumerator.h>
 #include <Uno.Collections.List-1.h>
-#include <Uno.Collections.List--251bdc7d.h>
 #include <Uno.Collections.Stack-1.h>
 #include <Uno.Diagnostics.Debug.h>
 #include <Uno.Int.h>
@@ -26,8 +26,8 @@ namespace Fuse{
 namespace Text{
 namespace Bidirectional{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.2.1/$.uno
+// ---------------------------------------------------
 
 // private sealed class Runs.Range :155
 // {
@@ -82,8 +82,8 @@ Runs__Range* Runs__Range::New1(int level, ::g::Fuse::Text::SinglyLinkedList* lef
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.2.1/$.uno
+// ---------------------------------------------------
 
 // public struct Run :8
 // {
@@ -232,15 +232,15 @@ Run Run__New1(::g::Fuse::Text::Substring* str, int level)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.2.1/$.uno
+// ---------------------------------------------------
 
 // public static class Runs :30
 // {
 static void Runs_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("ranges.Count >= 1");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.2.1/$.uno");
     ::STRINGS[2] = uString::Const("result.Count == runs.Count");
     ::STRINGS[3] = uString::Const("previous.Level < range.Level");
     ::TYPES[0] = ::g::Uno::Collections::Stack_typeof()->MakeType(Runs__Range_typeof(), NULL);
@@ -364,7 +364,7 @@ void Runs__TryMergeRangeWithPrevious_fn(::g::Uno::Collections::Stack* ranges, in
     }
 
     assert4 = ranges->Count();
-    ::g::Uno::Diagnostics::Debug::Assert(assert4 >= 1, ::STRINGS[0/*"ranges.Coun...*/], ::STRINGS[1/*"/Users/eric...*/], 100, uArray::Init<uObject*>(::TYPES[1/*object[]*/], 2, uBox<int>(::g::Uno::Int_typeof(), assert4), uBox<int>(::g::Uno::Int_typeof(), 1)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert4 >= 1, ::STRINGS[0/*"ranges.Coun...*/], ::STRINGS[1/*"/usr/local/...*/], 100, uArray::Init<uObject*>(::TYPES[1/*object[]*/], 2, uBox<int>(::g::Uno::Int_typeof(), assert4), uBox<int>(::g::Uno::Int_typeof(), 1)));
 
     while (ranges->Count() >= 2)
     {
@@ -391,7 +391,7 @@ void Runs__TryMergeRangeWithPrevious_fn(::g::Uno::Collections::Stack* ranges, in
 
     assert1 = result->Count();
     assert2 = uPtr(runs)->Count();
-    ::g::Uno::Diagnostics::Debug::Assert(assert1 == assert2, ::STRINGS[2/*"result.Coun...*/], ::STRINGS[1/*"/Users/eric...*/], 47, uArray::Init<uObject*>(::TYPES[1/*object[]*/], 2, uBox<int>(::g::Uno::Int_typeof(), assert1), uBox<int>(::g::Uno::Int_typeof(), assert2)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert1 == assert2, ::STRINGS[2/*"result.Coun...*/], ::STRINGS[1/*"/usr/local/...*/], 47, uArray::Init<uObject*>(::TYPES[1/*object[]*/], 2, uBox<int>(::g::Uno::Int_typeof(), assert1), uBox<int>(::g::Uno::Int_typeof(), assert2)));
     return result;
 }
 
@@ -424,9 +424,9 @@ void Runs::MergeRange(::g::Uno::Collections::Stack* ranges, Runs__Range* range)
     int assert5;
     Runs__Range* ret12;
     assert5 = uPtr(ranges)->Count();
-    ::g::Uno::Diagnostics::Debug::Assert(assert5 >= 1, ::STRINGS[0/*"ranges.Coun...*/], ::STRINGS[1/*"/Users/eric...*/], 120, uArray::Init<uObject*>(::TYPES[1/*object[]*/], 2, uBox<int>(::g::Uno::Int_typeof(), assert5), uBox<int>(::g::Uno::Int_typeof(), 1)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert5 >= 1, ::STRINGS[0/*"ranges.Coun...*/], ::STRINGS[1/*"/usr/local/...*/], 120, uArray::Init<uObject*>(::TYPES[1/*object[]*/], 2, uBox<int>(::g::Uno::Int_typeof(), assert5), uBox<int>(::g::Uno::Int_typeof(), 1)));
     Runs__Range* previous = (::g::Uno::Collections::Stack__Peek_fn(ranges, &ret12), ret12);
-    ::g::Uno::Diagnostics::Debug::Assert(uPtr(previous)->Level < uPtr(range)->Level, ::STRINGS[3/*"previous.Le...*/], ::STRINGS[1/*"/Users/eric...*/], 124, uArray::Init<uObject*>(::TYPES[1/*object[]*/], 2, uBox<int>(::g::Uno::Int_typeof(), uPtr(previous)->Level), uBox<int>(::g::Uno::Int_typeof(), uPtr(range)->Level)));
+    ::g::Uno::Diagnostics::Debug::Assert(uPtr(previous)->Level < uPtr(range)->Level, ::STRINGS[3/*"previous.Le...*/], ::STRINGS[1/*"/usr/local/...*/], 124, uArray::Init<uObject*>(::TYPES[1/*object[]*/], 2, uBox<int>(::g::Uno::Int_typeof(), uPtr(previous)->Level), uBox<int>(::g::Uno::Int_typeof(), uPtr(range)->Level)));
 
     if (Runs::IsRightToLeft(previous->Level))
     {

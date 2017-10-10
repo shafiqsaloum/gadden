@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{
 namespace Uno{
 namespace Collections{
 
-// public sealed class RootableList<T> :1942
+// public sealed class RootableList<T> :2604
 // {
 struct RootableList_type : uType
 {

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/collections/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/collections/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -66,7 +66,7 @@ struct Queue : uObject
 
 }}} // ::g::Uno::Collections
 
-#include <Uno.Collections.Queue-a4ffa9de.h>
+#include <Uno.Collections.Queue-1.Enumerator.h>
 
 namespace g{
 namespace Uno{

@@ -2,33 +2,32 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <time.h>
-#include <uBase/Console.h>
 #include <uBase/Time.h>
 #include <Uno.ArgumentException.h>
 #include <Uno.ArgumentNullException.h>
-#include <Uno.ArgumentOutOfRang-6803b39e.h>
+#include <Uno.ArgumentOutOfRangeException.h>
 #include <Uno.Bool.h>
 #include <Uno.Byte.h>
 #include <Uno.Char.h>
 #include <Uno.Collections.List-1.h>
 #include <Uno.Comparison-1.h>
 #include <Uno.Delegate.h>
-#include <Uno.Diagnostics.Debug-5d778620.h>
+#include <Uno.Diagnostics.DebugMessageType.h>
 #include <Uno.Double.h>
 #include <Uno.Float.h>
 #include <Uno.Int.h>
 #include <Uno.InvalidOperationException.h>
 #include <Uno.Long.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implement-2110557a.h>
-#include <Uno.Runtime.Implement-444123a4.h>
-#include <Uno.Runtime.Implement-496b321b.h>
-#include <Uno.Runtime.Implement-5299dae0.h>
-#include <Uno.Runtime.Implement-6eefa8cd.h>
-#include <Uno.Runtime.Implement-78c05898.h>
-#include <Uno.Runtime.Implement-ce657879.h>
-#include <Uno.Runtime.Implement-ed55561e.h>
-#include <Uno.Runtime.Implement-f781096a.h>
+#include <Uno.Runtime.Implementation.ArrayCopyImpl.h>
+#include <Uno.Runtime.Implementation.ArraySortImpl.h>
+#include <Uno.Runtime.Implementation.BufferImpl.h>
+#include <Uno.Runtime.Implementation.ClockImpl.h>
+#include <Uno.Runtime.Implementation.DebugImpl.h>
+#include <Uno.Runtime.Implementation.GenericEqualsImpl.h>
+#include <Uno.Runtime.Implementation.GraphicsContextHandle.h>
+#include <Uno.Runtime.Implementation.PlatformWindowHandle.h>
+#include <Uno.Runtime.Implementation.TextEncodingImpl.h>
 #include <Uno.Short.h>
 #include <Uno.String.h>
 #include <Uno.UInt.h>
@@ -43,8 +42,8 @@ namespace Uno{
 namespace Runtime{
 namespace Implementation{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/runtime/implementation/$.uno
+// -----------------------------------------------------------------------------------
 
 // internal static class ArrayCopyImpl :9
 // {
@@ -131,8 +130,8 @@ void ArrayCopyImpl::ValidateArguments(uType* __type, uArray* sourceArray, int so
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/runtime/implementation/$.uno
+// -----------------------------------------------------------------------------------
 
 // internal static class ArraySortImpl :68
 // {
@@ -327,8 +326,8 @@ void ArraySortImpl::ValidateArguments(uType* __type, uArray* elements, int index
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/runtime/implementation/$.uno
+// -----------------------------------------------------------------------------------
 
 // public static class BufferImpl :181
 // {
@@ -467,8 +466,8 @@ void BufferImpl::SetUShort(uArray* buffer, int offset, uint16_t value, bool litt
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/runtime/implementation/$.uno
+// -----------------------------------------------------------------------------------
 
 // internal static class ClockImpl :487
 // {
@@ -550,10 +549,10 @@ int ClockImpl::GetTimezoneOffset(int year, int month, int day)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/runtime/implementation/$.uno
+// -----------------------------------------------------------------------------------
 
-// internal static class DebugImpl :581
+// internal static class DebugImpl :579
 // {
 static void DebugImpl_build(uType* type)
 {
@@ -571,24 +570,25 @@ uClassType* DebugImpl_typeof()
     return type;
 }
 
-// public static void Log(string message, Uno.Diagnostics.DebugMessageType type) :583
+// public static void Log(string message, Uno.Diagnostics.DebugMessageType type) :581
 void DebugImpl__Log_fn(uString* message, int* type)
 {
     DebugImpl::Log(message, *type);
 }
 
-// public static void Log(string message, Uno.Diagnostics.DebugMessageType type) [static] :583
+// public static void Log(string message, Uno.Diagnostics.DebugMessageType type) [static] :581
 void DebugImpl::Log(uString* message, int type)
 {
-    uBase::PrintLine(uStringToXliString(message));
-    uBase::Out->GetStream()->Flush();
+    const char* ptr = uAllocCStr(message);
+    uLog(type, ptr);
+    uFreeCStr(ptr);
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/runtime/implementation/$.uno
+// -----------------------------------------------------------------------------------
 
-// internal static class GenericEqualsImpl :690
+// internal static class GenericEqualsImpl :689
 // {
 static void GenericEqualsImpl_build(uType* type)
 {
@@ -608,7 +608,7 @@ uClassType* GenericEqualsImpl_typeof()
     return type;
 }
 
-// public static bool Equals<T>(T left, T right) :692
+// public static bool Equals<T>(T left, T right) :691
 void GenericEqualsImpl__Equals_fn(uType* __type, void* left, void* right, bool* __retval)
 {
     uType* type = __type->U(0);
@@ -622,10 +622,10 @@ void GenericEqualsImpl__Equals_fn(uType* __type, void* left, void* right, bool* 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/runtime/implementation/$.uno
+// -----------------------------------------------------------------------------------
 
-// internal struct GraphicsContextHandle :733
+// internal struct GraphicsContextHandle :732
 // {
 static void GraphicsContextHandle_build(uType* type)
 {
@@ -645,10 +645,10 @@ uStructType* GraphicsContextHandle_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/runtime/implementation/$.uno
+// -----------------------------------------------------------------------------------
 
-// public struct PlatformWindowHandle :841
+// public struct PlatformWindowHandle :840
 // {
 static void PlatformWindowHandle_build(uType* type)
 {
@@ -668,10 +668,10 @@ uStructType* PlatformWindowHandle_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/runtime/implementation/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/runtime/implementation/$.uno
+// -----------------------------------------------------------------------------------
 
-// internal static class TextEncodingImpl :1262
+// internal static class TextEncodingImpl :1261
 // {
 static void TextEncodingImpl_build(uType* type)
 {
@@ -693,43 +693,43 @@ uClassType* TextEncodingImpl_typeof()
     return type;
 }
 
-// public static string DecodeAscii(byte[] value) :1497
+// public static string DecodeAscii(byte[] value) :1496
 void TextEncodingImpl__DecodeAscii_fn(uArray* value, uString** __retval)
 {
     *__retval = TextEncodingImpl::DecodeAscii(value);
 }
 
-// public static byte[] DecodeBase64(string value) :1339
+// public static byte[] DecodeBase64(string value) :1338
 void TextEncodingImpl__DecodeBase64_fn(uString* value, uArray** __retval)
 {
     *__retval = TextEncodingImpl::DecodeBase64(value);
 }
 
-// public static string DecodeUtf8(byte[] value) :1453
+// public static string DecodeUtf8(byte[] value) :1452
 void TextEncodingImpl__DecodeUtf8_fn(uArray* value, uString** __retval)
 {
     *__retval = TextEncodingImpl::DecodeUtf8(value);
 }
 
-// public static byte[] EncodeAscii(string value) :1517
+// public static byte[] EncodeAscii(string value) :1516
 void TextEncodingImpl__EncodeAscii_fn(uString* value, uArray** __retval)
 {
     *__retval = TextEncodingImpl::EncodeAscii(value);
 }
 
-// public static string EncodeBase64(byte[] value) :1267
+// public static string EncodeBase64(byte[] value) :1266
 void TextEncodingImpl__EncodeBase64_fn(uArray* value, uString** __retval)
 {
     *__retval = TextEncodingImpl::EncodeBase64(value);
 }
 
-// public static byte[] EncodeUtf8(string value) :1472
+// public static byte[] EncodeUtf8(string value) :1471
 void TextEncodingImpl__EncodeUtf8_fn(uString* value, uArray** __retval)
 {
     *__retval = TextEncodingImpl::EncodeUtf8(value);
 }
 
-// public static string DecodeAscii(byte[] value) [static] :1497
+// public static string DecodeAscii(byte[] value) [static] :1496
 uString* TextEncodingImpl::DecodeAscii(uArray* value)
 {
     uStackFrame __("Uno.Runtime.Implementation.TextEncodingImpl", "DecodeAscii(byte[])");
@@ -745,7 +745,7 @@ uString* TextEncodingImpl::DecodeAscii(uArray* value)
     return res;
 }
 
-// public static byte[] DecodeBase64(string value) [static] :1339
+// public static byte[] DecodeBase64(string value) [static] :1338
 uArray* TextEncodingImpl::DecodeBase64(uString* value)
 {
     uStackFrame __("Uno.Runtime.Implementation.TextEncodingImpl", "DecodeBase64(string)");
@@ -797,13 +797,13 @@ uArray* TextEncodingImpl::DecodeBase64(uString* value)
     return (uArray*)ret->ToArray();
 }
 
-// public static string DecodeUtf8(byte[] value) [static] :1453
+// public static string DecodeUtf8(byte[] value) [static] :1452
 uString* TextEncodingImpl::DecodeUtf8(uArray* value)
 {
     return uString::Utf8((const char*)uPtr(value)->Ptr(), uPtr(value)->Length());
 }
 
-// public static byte[] EncodeAscii(string value) [static] :1517
+// public static byte[] EncodeAscii(string value) [static] :1516
 uArray* TextEncodingImpl::EncodeAscii(uString* value)
 {
     uStackFrame __("Uno.Runtime.Implementation.TextEncodingImpl", "EncodeAscii(string)");
@@ -819,13 +819,13 @@ uArray* TextEncodingImpl::EncodeAscii(uString* value)
     return res;
 }
 
-// public static string EncodeBase64(byte[] value) [static] :1267
+// public static string EncodeBase64(byte[] value) [static] :1266
 uString* TextEncodingImpl::EncodeBase64(uArray* value)
 {
     return uBase64Encode(value);
 }
 
-// public static byte[] EncodeUtf8(string value) [static] :1472
+// public static byte[] EncodeUtf8(string value) [static] :1471
 uArray* TextEncodingImpl::EncodeUtf8(uString* value)
 {
     uBase::String str(uStringToXliString(value));

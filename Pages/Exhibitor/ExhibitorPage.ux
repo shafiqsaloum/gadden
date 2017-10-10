@@ -11,7 +11,8 @@
     <ScrollView>
       <StackPanel Margin="20">
         <!-- Search input -->
-        <TextInput PlaceholderText="Sök utställare" PlaceholderColor="#979797" Padding="5,0,0,0" Alignment="TopCenter" TextAlignment="Center" Width="100%" TextColor="White" Height="40" Margin="0,0,0,50">
+        <TextInput PlaceholderText="Sök utställare" Value="{entry}" PlaceholderColor="#979797" Padding="5,0,0,0" Alignment="TopCenter" TextAlignment="Center" Width="100%" TextColor="#333333" Height="40" Margin="0,0,0,50" >
+          <TextInput ActionTriggered="{search}" />
           <Image Height="13" Alignment="Center" Margin="0,0,120,0" StretchMode="UniformToFill" Layer="Background" File="../../assets/SearchGrey.png"  />
           <Rectangle Fill="White" Layer="Background" CornerRadius="10" >
             <Stroke Width="1" Color="#979797" />
@@ -20,6 +21,8 @@
 
         <!-- Output data -->
         <Each Items="{exhibitor}">
+          <Text Value="{letter}" Font="Bold" Color="White" Visibility="{visibility}">
+          </Text>
           <StackPanel>
             <Grid RowCount="1" ColumnCount="2">
               <!-- Get name from JSON -->
@@ -32,16 +35,17 @@
               </SmallText>
 
               <!-- Include star image locally -->
-              <Image ux:Name="starImage" Height="15" Alignment="BottomRight" StretchMode="UniformToFill" File="../../assets/StarWhite.png" Margin="0,0,0,7" Color="White">
+              <Image ux:Name="starImage" Height="15" Alignment="BottomRight" StretchMode="UniformToFill" File="../../assets/StarWhite.png" Margin="0,0,0,7" Color="{favorite}">
                 <!-- Click event -->
                 <Clicked>
                   <Toggle Target="yellowStar" />
+                  <Callback Handler="{saveStar}"/>
                 </Clicked>
               </Image>
 
               <!-- While true event -->
               <WhileTrue ux:Name="yellowStar">
-                  <Change starImage.Color="Yellow" Duration="0.3" />
+                  <Change starImage.Color="{toggle}" Duration="0.3" />
 
               </WhileTrue>
               <WhileTrue ux:Name="showDetails">

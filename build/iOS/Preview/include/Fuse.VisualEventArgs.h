@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{namespace Fuse{struct VisualEventArgs;}}
 namespace g{
 namespace Fuse{
 
-// public class VisualEventArgs :1070
+// public class VisualEventArgs :1072
 // {
 struct VisualEventArgs_type : uType
 {

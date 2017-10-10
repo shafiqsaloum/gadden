@@ -1,9 +1,9 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Primitives/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implement-476e2792.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
 namespace g{namespace Fuse{namespace Drawing{namespace Internal{struct Float2Buffer;}}}}
 namespace g{namespace Fuse{namespace Drawing{namespace Internal{struct UShortBuffer;}}}}
 namespace g{namespace Fuse{namespace Drawing{namespace Primitives{struct Circle;}}}}

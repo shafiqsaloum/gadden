@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Threading/1.0.13/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Uno.Threading/1.2.2/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Uno{
 namespace Threading{
 
-// public sealed class ManualResetEvent :670
+// public sealed class ManualResetEvent :669
 // {
 ::g::Uno::Threading::EventWaitHandle_type* ManualResetEvent_typeof();
 void ManualResetEvent__ctor_1_fn(ManualResetEvent* __this, bool* initialState);

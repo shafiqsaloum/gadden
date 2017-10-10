@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Drawing.Surface/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace Drawing{
 
-// public abstract class SurfacePath :3646
+// public abstract class SurfacePath :2921
 // {
 uType* SurfacePath_typeof();
 void SurfacePath__ctor__fn(SurfacePath* __this);

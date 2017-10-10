@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// public sealed class WidthFunction :3761
+// public sealed class WidthFunction :3782
 // {
 ::g::Fuse::Elements::LayoutFunction_type* WidthFunction_typeof();
 void WidthFunction__ctor_3_fn(WidthFunction* __this, ::g::Fuse::Reactive::Expression* element);

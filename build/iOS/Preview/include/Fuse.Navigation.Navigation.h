@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Navigation/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public interfacemodifiers class Navigation :829
+// public interfacemodifiers class Navigation :917
 // {
 uType* Navigation_typeof();
 void Navigation__ctor__fn(Navigation* __this);

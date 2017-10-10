@@ -1,20 +1,21 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.LayoutControl.h>
-#include <Fuse.Controls.Native.-77f68bed.h>
+#include <Fuse.Controls.Native.IOffscreenRendererHost.h>
 #include <Fuse.Elements.ITreeRenderer.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
+#include <Fuse.ITemplateSource.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -29,6 +30,7 @@ namespace g{namespace Fuse{struct LayoutParams;}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Fuse{struct VisualBounds;}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
+namespace g{namespace Uno{struct EventArgs;}}
 namespace g{namespace Uno{struct Float2;}}
 namespace g{namespace Uno{struct Float4x4;}}
 
@@ -36,12 +38,12 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class NativeViewHost :1542
+// public sealed class NativeViewHost :1561
 // {
 struct NativeViewHost_type : ::g::Fuse::Controls::Control_type
 {
-    ::g::Fuse::Elements::ITreeRenderer interface15;
-    ::g::Fuse::Controls::Native::IOffscreenRendererHost interface16;
+    ::g::Fuse::Elements::ITreeRenderer interface16;
+    ::g::Fuse::Controls::Native::IOffscreenRendererHost interface17;
 };
 
 NativeViewHost_type* NativeViewHost_typeof();
@@ -70,7 +72,7 @@ void NativeViewHost__get_IsInGraphicsContext_fn(NativeViewHost* __this, bool* __
 void NativeViewHost__New3_fn(NativeViewHost** __retval);
 void NativeViewHost__New4_fn(int* initialState, NativeViewHost** __retval);
 void NativeViewHost__OnInvalidateVisual_fn(NativeViewHost* __this);
-void NativeViewHost__OnInvalidateWorldTransform_fn(NativeViewHost* __this);
+void NativeViewHost__OnInvalidateWorldTransform_fn(NativeViewHost* __this, uObject* sender, ::g::Uno::EventArgs* args);
 void NativeViewHost__OnRooted_fn(NativeViewHost* __this);
 void NativeViewHost__OnUnrooted_fn(NativeViewHost* __this);
 void NativeViewHost__PostUpdateTransform_fn(NativeViewHost* __this);
@@ -101,6 +103,7 @@ struct NativeViewHost : ::g::Fuse::Controls::LayoutControl
     void DisableOffscreen();
     void EnableOffscreen();
     bool IsInGraphicsContext();
+    void OnInvalidateWorldTransform(uObject* sender, ::g::Uno::EventArgs* args);
     void PostUpdateTransform();
     bool RenderToTexture();
     void RenderToTexture(bool value);

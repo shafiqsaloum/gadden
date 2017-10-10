@@ -1,19 +1,20 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.ContentControl.h>
-#include <Fuse.Controls.Native.-737f180b.h>
+#include <Fuse.Controls.Native.IScrollViewHost.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
+#include <Fuse.ITemplateSource.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -28,17 +29,18 @@ namespace g{namespace Fuse{struct LayoutParams;}}
 namespace g{namespace Fuse{struct Translation;}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Uno{namespace UX{struct Selector;}}}
+namespace g{namespace Uno{struct Float4;}}
 namespace g{namespace Uno{struct Float4x4;}}
 
 namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial class ScrollViewBase :587
+// public partial class ScrollViewBase :605
 // {
 struct ScrollViewBase_type : ::g::Fuse::Controls::ContentControl_type
 {
-    ::g::Fuse::Controls::Native::IScrollViewHost interface15;
+    ::g::Fuse::Controls::Native::IScrollViewHost interface16;
 };
 
 ScrollViewBase_type* ScrollViewBase_typeof();
@@ -52,8 +54,8 @@ void ScrollViewBase__Constrain_fn(ScrollViewBase* __this, ::g::Uno::Float2* t, :
 void ScrollViewBase__ConstrainDown_fn(ScrollViewBase* __this, ::g::Uno::Float2* t, ::g::Uno::Float2* __retval);
 void ScrollViewBase__ConstrainExtents_fn(ScrollViewBase* __this, ::g::Uno::Float2* t, ::g::Uno::Float2* __retval);
 void ScrollViewBase__ConstrainUp_fn(ScrollViewBase* __this, ::g::Uno::Float2* t, ::g::Uno::Float2* __retval);
-void ScrollViewBase__DistanceToView_fn(ScrollViewBase* __this, ::g::Uno::Float2* min, ::g::Uno::Float2* max, ::g::Uno::Float2* __retval);
-void ScrollViewBase__DistanceToViewLinear_fn(ScrollViewBase* __this, float* min, float* max, float* sp, float* size, float* __retval);
+void ScrollViewBase__DistanceFromView_fn(ScrollViewBase* __this, ::g::Uno::Float2* position, int* target, ::g::Uno::Float2* __retval);
+void ScrollViewBase__DistanceToView_fn(ScrollViewBase* __this, ::g::Uno::Float2* min, ::g::Uno::Float2* max, ::g::Uno::Float4* __retval);
 void ScrollViewBase__get_Element_fn(ScrollViewBase* __this, ::g::Fuse::Elements::Element** __retval);
 void ScrollViewBase__FindAnchorElement_fn(ScrollViewBase* __this, ::g::Fuse::Elements::Element** __retval);
 void ScrollViewBase__FromScalarPosition_fn(ScrollViewBase* __this, float* value, ::g::Uno::Float2* __retval);
@@ -151,8 +153,8 @@ struct ScrollViewBase : ::g::Fuse::Controls::ContentControl
     ::g::Uno::Float2 ConstrainDown(::g::Uno::Float2 t);
     ::g::Uno::Float2 ConstrainExtents(::g::Uno::Float2 t);
     ::g::Uno::Float2 ConstrainUp(::g::Uno::Float2 t);
-    ::g::Uno::Float2 DistanceToView(::g::Uno::Float2 min, ::g::Uno::Float2 max);
-    float DistanceToViewLinear(float min, float max, float sp, float size);
+    ::g::Uno::Float2 DistanceFromView(::g::Uno::Float2 position, int target);
+    ::g::Uno::Float4 DistanceToView(::g::Uno::Float2 min, ::g::Uno::Float2 max);
     ::g::Fuse::Elements::Element* Element();
     ::g::Fuse::Elements::Element* FindAnchorElement();
     ::g::Uno::Float2 FromScalarPosition(float value);

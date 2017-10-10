@@ -15,67 +15,67 @@
 #include <Fuse.Elements.AlignmentHelpers.h>
 #include <Fuse.Elements.AspectConstraint.h>
 #include <Fuse.Elements.BoxPlacement.h>
-#include <Fuse.Elements.BoxSizi-fa66d301.h>
+#include <Fuse.Elements.BoxSizing.ConstraintFlags.h>
 #include <Fuse.Elements.BoxSizing.h>
 #include <Fuse.Elements.Cache.h>
 #include <Fuse.Elements.CacheHelper.h>
 #include <Fuse.Elements.CacheTile.h>
 #include <Fuse.Elements.CachingMode.h>
 #include <Fuse.Elements.DisplayHelpers.h>
+#include <Fuse.Elements.Element.BoundsChanged.h>
+#include <Fuse.Elements.Element.BoxSizingMode.h>
+#include <Fuse.Elements.Element.DefaultDisposable.h>
+#include <Fuse.Elements.Element.GMSCacheItem.h>
 #include <Fuse.Elements.Element.h>
-#include <Fuse.Elements.Element-484ece7c.h>
-#include <Fuse.Elements.Element-566ff6b4.h>
-#include <Fuse.Elements.Element-59dc4556.h>
-#include <Fuse.Elements.Element-8f7cb4eb.h>
-#include <Fuse.Elements.Element-a1baee23.h>
+#include <Fuse.Elements.Element.TransformChanged.h>
+#include <Fuse.Elements.Element.VisualAppeared.h>
+#include <Fuse.Elements.Element.VisualDisappeared.h>
 #include <Fuse.Elements.ElementAtlas.h>
+#include <Fuse.Elements.ElementAtlasFramebuffer.h>
+#include <Fuse.Elements.ElementAtlasFramebufferPool.h>
+#include <Fuse.Elements.ElementAtlasFramebufferPoolEntry.h>
+#include <Fuse.Elements.ElementAtlasFramebufferPoolImpl.h>
 #include <Fuse.Elements.ElementBatch.h>
+#include <Fuse.Elements.ElementBatchEntry.h>
 #include <Fuse.Elements.ElementBatcher.h>
-#include <Fuse.Elements.Element-bc8d2ebe.h>
-#include <Fuse.Elements.Element-bd497d56.h>
-#include <Fuse.Elements.Element-d8ffab5e.h>
-#include <Fuse.Elements.Element-e8906a44.h>
-#include <Fuse.Elements.Element-ed9a6306.h>
-#include <Fuse.Elements.Element-fa4e763a.h>
-#include <Fuse.Elements.Element-fe817708.h>
-#include <Fuse.Elements.Explici-eeebbf6e.h>
-#include <Fuse.Elements.FillAsp-a553d320.h>
+#include <Fuse.Elements.ExplicitTransformOrigin.h>
+#include <Fuse.Elements.FillAspectBoxSizing.h>
 #include <Fuse.Elements.HeightFunction.h>
 #include <Fuse.Elements.HitTestMode.h>
-#include <Fuse.Elements.IElemen-894a094d.h>
-#include <Fuse.Elements.Interac-8b35c528.h>
+#include <Fuse.Elements.IElementBatchDrawable.h>
+#include <Fuse.Elements.InteractiveTransform.h>
 #include <Fuse.Elements.ITransformOrigin.h>
 #include <Fuse.Elements.ITreeRenderer.h>
-#include <Fuse.Elements.LayoutF-af39d8b.h>
 #include <Fuse.Elements.LayoutFunction.h>
-#include <Fuse.Elements.LayoutM-516f33ff.h>
-#include <Fuse.Elements.LayoutM-76ecc3eb.h>
+#include <Fuse.Elements.LayoutFunction.LayoutSubscription.h>
 #include <Fuse.Elements.LayoutMasterAttr.h>
+#include <Fuse.Elements.LayoutMasterBoxSizing.h>
+#include <Fuse.Elements.LayoutMasterBoxSizing.LayoutMasterData.h>
 #include <Fuse.Elements.LayoutMasterMode.h>
 #include <Fuse.Elements.LimitBoxSizing.h>
-#include <Fuse.Elements.NoImpli-72cd78f3.h>
-#include <Fuse.Elements.Optiona-b611048b.h>
-#include <Fuse.Elements.Perspec-cd6b1b54.h>
-#include <Fuse.Elements.Preplac-74864b4.h>
+#include <Fuse.Elements.NoImplicitMaxBoxSizing.h>
+#include <Fuse.Elements.OptionalSimpleAlignment.h>
+#include <Fuse.Elements.PerspectiveRelativeToMode.h>
 #include <Fuse.Elements.PreplacementArgs.h>
+#include <Fuse.Elements.PreplacementHandler.h>
 #include <Fuse.Elements.SimpleAlignment.h>
-#include <Fuse.Elements.SingleV-c7c3ef9e.h>
-#include <Fuse.Elements.Standar-ab3ec62c.h>
+#include <Fuse.Elements.SingleVisualDrawable.h>
+#include <Fuse.Elements.StandardBoxSizing.h>
 #include <Fuse.Elements.StretchDirection.h>
 #include <Fuse.Elements.StretchMode.h>
 #include <Fuse.Elements.StretchSizing.h>
-#include <Fuse.Elements.Transfo-26c51bd7.h>
-#include <Fuse.Elements.Transfo-2f50f509.h>
-#include <Fuse.Elements.Transfo-734866e8.h>
-#include <Fuse.Elements.Transfo-8a441c48.h>
+#include <Fuse.Elements.TransformOrigins.AnchorOrigin.h>
+#include <Fuse.Elements.TransformOrigins.BoxCenter.h>
+#include <Fuse.Elements.TransformOrigins.CenterOrigin.h>
 #include <Fuse.Elements.TransformOrigins.h>
-#include <Fuse.Elements.Transla-61b329fc.h>
-#include <Fuse.Elements.Transla-62df642a.h>
-#include <Fuse.Elements.Transla-71e7c74f.h>
-#include <Fuse.Elements.Transla-8cfe1f5d.h>
-#include <Fuse.Elements.Transla-c8f7e37e.h>
-#include <Fuse.Elements.Transla-e4a67fe3.h>
+#include <Fuse.Elements.TransformOrigins.TopLeftOrigin.h>
 #include <Fuse.Elements.TranslationModes.h>
+#include <Fuse.Elements.TranslationModes.OffsetMode.h>
+#include <Fuse.Elements.TranslationModes.OffsetMode.Subscriptions.h>
+#include <Fuse.Elements.TranslationModes.PositionOffsetMode.h>
+#include <Fuse.Elements.TranslationModes.RelativeResizeChangeMode.h>
+#include <Fuse.Elements.TranslationModes.SizeFactorMode.h>
+#include <Fuse.Elements.TranslationModes.TransformOriginOffsetMode.h>
 #include <Fuse.Elements.Viewport.h>
 #include <Fuse.Elements.ViewportMode.h>
 #include <Fuse.Elements.Visibility.h>
@@ -110,6 +110,7 @@
 #include <Fuse.Platform.SystemUI.h>
 #include <Fuse.Properties.h>
 #include <Fuse.PropertyHandle.h>
+#include <Fuse.Ray.h>
 #include <Fuse.Reactive.Expression.h>
 #include <Fuse.Reactive.IContext.h>
 #include <Fuse.Reactive.IListener.h>
@@ -123,20 +124,20 @@
 #include <Fuse.UpdateStage.h>
 #include <Fuse.ViewportHelpers.h>
 #include <Fuse.Visual.h>
-#include <Fuse.Visual.HitTestTr-39a91efd.h>
+#include <Fuse.Visual.HitTestTransformMode.h>
 #include <Fuse.VisualBounds.h>
 #include <Uno.Action.h>
 #include <Uno.Action-1.h>
 #include <Uno.Action-2.h>
 #include <Uno.Bool.h>
 #include <Uno.Buffer.h>
-#include <Uno.Collections.Linke-712f9f5e.h>
 #include <Uno.Collections.LinkedList-1.h>
+#include <Uno.Collections.LinkedListNode-1.h>
+#include <Uno.Collections.List-1.Enumerator.h>
 #include <Uno.Collections.List-1.h>
-#include <Uno.Collections.List--251bdc7d.h>
 #include <Uno.Delegate.h>
 #include <Uno.Diagnostics.Debug.h>
-#include <Uno.Diagnostics.Debug-5d778620.h>
+#include <Uno.Diagnostics.DebugMessageType.h>
 #include <Uno.Double.h>
 #include <Uno.EventArgs.h>
 #include <Uno.EventHandler.h>
@@ -147,7 +148,6 @@
 #include <Uno.Float4.h>
 #include <Uno.Float4x4.h>
 #include <Uno.Func-3.h>
-#include <Uno.Geometry.Ray.h>
 #include <Uno.Graphics.BlendOperand.h>
 #include <Uno.Graphics.BufferUsage.h>
 #include <Uno.Graphics.DeviceBuffer.h>
@@ -160,7 +160,7 @@
 #include <Uno.Graphics.RenderTarget.h>
 #include <Uno.Graphics.SamplerState.h>
 #include <Uno.Graphics.Texture2D.h>
-#include <Uno.Graphics.VertexAt-4a875e1d.h>
+#include <Uno.Graphics.VertexAttributeType.h>
 #include <Uno.Graphics.VertexBuffer.h>
 #include <Uno.IDisposable.h>
 #include <Uno.Int.h>
@@ -170,8 +170,8 @@
 #include <Uno.Object.h>
 #include <Uno.Rect.h>
 #include <Uno.Recti.h>
-#include <Uno.Runtime.Implement-6e9df330.h>
-#include <Uno.Runtime.Implement-81e7ab4c.h>
+#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
 #include <Uno.String.h>
 #include <Uno.UShort.h>
 #include <Uno.UX.IPropertyListener.h>
@@ -188,10 +188,10 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public enum Alignment :2947
+// public enum Alignment :2967
 uEnumType* Alignment_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -218,10 +218,10 @@ uEnumType* Alignment_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public static class AlignmentHelpers :2998
+// public static class AlignmentHelpers :3018
 // {
 static void AlignmentHelpers_build(uType* type)
 {
@@ -243,49 +243,49 @@ uClassType* AlignmentHelpers_typeof()
     return type;
 }
 
-// public static float2 GetAnchor(Fuse.Elements.Alignment a) :3009
+// public static float2 GetAnchor(Fuse.Elements.Alignment a) :3029
 void AlignmentHelpers__GetAnchor_fn(int* a, ::g::Uno::Float2* __retval)
 {
     *__retval = AlignmentHelpers::GetAnchor(*a);
 }
 
-// public static Fuse.Elements.Alignment GetHorizontalAlign(Fuse.Elements.Alignment a) :3004
+// public static Fuse.Elements.Alignment GetHorizontalAlign(Fuse.Elements.Alignment a) :3024
 void AlignmentHelpers__GetHorizontalAlign_fn(int* a, int* __retval)
 {
     *__retval = AlignmentHelpers::GetHorizontalAlign(*a);
 }
 
-// internal static Fuse.Elements.SimpleAlignment GetHorizontalSimpleAlign(Fuse.Elements.Alignment a) :3032
+// internal static Fuse.Elements.SimpleAlignment GetHorizontalSimpleAlign(Fuse.Elements.Alignment a) :3052
 void AlignmentHelpers__GetHorizontalSimpleAlign_fn(int* a, int* __retval)
 {
     *__retval = AlignmentHelpers::GetHorizontalSimpleAlign(*a);
 }
 
-// internal static Fuse.Elements.OptionalSimpleAlignment GetHorizontalSimpleAlignOptional(Fuse.Elements.Alignment a) :3054
+// internal static Fuse.Elements.OptionalSimpleAlignment GetHorizontalSimpleAlignOptional(Fuse.Elements.Alignment a) :3074
 void AlignmentHelpers__GetHorizontalSimpleAlignOptional_fn(int* a, int* __retval)
 {
     *__retval = AlignmentHelpers::GetHorizontalSimpleAlignOptional(*a);
 }
 
-// public static Fuse.Elements.Alignment GetVerticalAlign(Fuse.Elements.Alignment a) :3000
+// public static Fuse.Elements.Alignment GetVerticalAlign(Fuse.Elements.Alignment a) :3020
 void AlignmentHelpers__GetVerticalAlign_fn(int* a, int* __retval)
 {
     *__retval = AlignmentHelpers::GetVerticalAlign(*a);
 }
 
-// internal static Fuse.Elements.SimpleAlignment GetVerticalSimpleAlign(Fuse.Elements.Alignment a) :3022
+// internal static Fuse.Elements.SimpleAlignment GetVerticalSimpleAlign(Fuse.Elements.Alignment a) :3042
 void AlignmentHelpers__GetVerticalSimpleAlign_fn(int* a, int* __retval)
 {
     *__retval = AlignmentHelpers::GetVerticalSimpleAlign(*a);
 }
 
-// internal static Fuse.Elements.OptionalSimpleAlignment GetVerticalSimpleAlignOptional(Fuse.Elements.Alignment a) :3042
+// internal static Fuse.Elements.OptionalSimpleAlignment GetVerticalSimpleAlignOptional(Fuse.Elements.Alignment a) :3062
 void AlignmentHelpers__GetVerticalSimpleAlignOptional_fn(int* a, int* __retval)
 {
     *__retval = AlignmentHelpers::GetVerticalSimpleAlignOptional(*a);
 }
 
-// public static float2 GetAnchor(Fuse.Elements.Alignment a) [static] :3009
+// public static float2 GetAnchor(Fuse.Elements.Alignment a) [static] :3029
 ::g::Uno::Float2 AlignmentHelpers::GetAnchor(int a)
 {
     int h = AlignmentHelpers::GetHorizontalAlign(a);
@@ -295,13 +295,13 @@ void AlignmentHelpers__GetVerticalSimpleAlignOptional_fn(int* a, int* __retval)
     return ::g::Uno::Float2__New2(x, y);
 }
 
-// public static Fuse.Elements.Alignment GetHorizontalAlign(Fuse.Elements.Alignment a) [static] :3004
+// public static Fuse.Elements.Alignment GetHorizontalAlign(Fuse.Elements.Alignment a) [static] :3024
 int AlignmentHelpers::GetHorizontalAlign(int a)
 {
     return a & 3;
 }
 
-// internal static Fuse.Elements.SimpleAlignment GetHorizontalSimpleAlign(Fuse.Elements.Alignment a) [static] :3032
+// internal static Fuse.Elements.SimpleAlignment GetHorizontalSimpleAlign(Fuse.Elements.Alignment a) [static] :3052
 int AlignmentHelpers::GetHorizontalSimpleAlign(int a)
 {
     int raw = AlignmentHelpers::GetHorizontalAlign(a);
@@ -315,7 +315,7 @@ int AlignmentHelpers::GetHorizontalSimpleAlign(int a)
     return 0;
 }
 
-// internal static Fuse.Elements.OptionalSimpleAlignment GetHorizontalSimpleAlignOptional(Fuse.Elements.Alignment a) [static] :3054
+// internal static Fuse.Elements.OptionalSimpleAlignment GetHorizontalSimpleAlignOptional(Fuse.Elements.Alignment a) [static] :3074
 int AlignmentHelpers::GetHorizontalSimpleAlignOptional(int a)
 {
     int raw = AlignmentHelpers::GetHorizontalAlign(a);
@@ -332,13 +332,13 @@ int AlignmentHelpers::GetHorizontalSimpleAlignOptional(int a)
     return 0;
 }
 
-// public static Fuse.Elements.Alignment GetVerticalAlign(Fuse.Elements.Alignment a) [static] :3000
+// public static Fuse.Elements.Alignment GetVerticalAlign(Fuse.Elements.Alignment a) [static] :3020
 int AlignmentHelpers::GetVerticalAlign(int a)
 {
     return a & 12;
 }
 
-// internal static Fuse.Elements.SimpleAlignment GetVerticalSimpleAlign(Fuse.Elements.Alignment a) [static] :3022
+// internal static Fuse.Elements.SimpleAlignment GetVerticalSimpleAlign(Fuse.Elements.Alignment a) [static] :3042
 int AlignmentHelpers::GetVerticalSimpleAlign(int a)
 {
     int raw = AlignmentHelpers::GetVerticalAlign(a);
@@ -352,7 +352,7 @@ int AlignmentHelpers::GetVerticalSimpleAlign(int a)
     return 0;
 }
 
-// internal static Fuse.Elements.OptionalSimpleAlignment GetVerticalSimpleAlignOptional(Fuse.Elements.Alignment a) [static] :3042
+// internal static Fuse.Elements.OptionalSimpleAlignment GetVerticalSimpleAlignOptional(Fuse.Elements.Alignment a) [static] :3062
 int AlignmentHelpers::GetVerticalSimpleAlignOptional(int a)
 {
     int raw = AlignmentHelpers::GetVerticalAlign(a);
@@ -370,10 +370,10 @@ int AlignmentHelpers::GetVerticalSimpleAlignOptional(int a)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed class TransformOrigins.AnchorOrigin :2511
+// private sealed class TransformOrigins.AnchorOrigin :2531
 // {
 static void TransformOrigins__AnchorOrigin_build(uType* type)
 {
@@ -397,37 +397,37 @@ TransformOrigins__AnchorOrigin_type* TransformOrigins__AnchorOrigin_typeof()
     return type;
 }
 
-// public generated AnchorOrigin() :2511
+// public generated AnchorOrigin() :2531
 void TransformOrigins__AnchorOrigin__ctor__fn(TransformOrigins__AnchorOrigin* __this)
 {
     __this->ctor_();
 }
 
-// public float3 GetOffset(Fuse.Elements.Element elm) :2513
+// public float3 GetOffset(Fuse.Elements.Element elm) :2533
 void TransformOrigins__AnchorOrigin__GetOffset_fn(TransformOrigins__AnchorOrigin* __this, ::g::Fuse::Elements::Element* elm, ::g::Uno::Float3* __retval)
 {
     *__retval = __this->GetOffset(elm);
 }
 
-// public generated AnchorOrigin New() :2511
+// public generated AnchorOrigin New() :2531
 void TransformOrigins__AnchorOrigin__New1_fn(TransformOrigins__AnchorOrigin** __retval)
 {
     *__retval = TransformOrigins__AnchorOrigin::New1();
 }
 
-// public generated AnchorOrigin() [instance] :2511
+// public generated AnchorOrigin() [instance] :2531
 void TransformOrigins__AnchorOrigin::ctor_()
 {
 }
 
-// public float3 GetOffset(Fuse.Elements.Element elm) [instance] :2513
+// public float3 GetOffset(Fuse.Elements.Element elm) [instance] :2533
 ::g::Uno::Float3 TransformOrigins__AnchorOrigin::GetOffset(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.TransformOrigins.AnchorOrigin", "GetOffset(Fuse.Elements.Element)");
     return ::g::Uno::Float3__New4(uPtr(elm)->ActualAnchor(), 0.0f);
 }
 
-// public generated AnchorOrigin New() [static] :2511
+// public generated AnchorOrigin New() [static] :2531
 TransformOrigins__AnchorOrigin* TransformOrigins__AnchorOrigin::New1()
 {
     TransformOrigins__AnchorOrigin* obj1 = (TransformOrigins__AnchorOrigin*)uNew(TransformOrigins__AnchorOrigin_typeof());
@@ -436,8 +436,8 @@ TransformOrigins__AnchorOrigin* TransformOrigins__AnchorOrigin::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public enum AspectConstraint :9
 uEnumType* AspectConstraint_typeof()
@@ -454,10 +454,10 @@ uEnumType* AspectConstraint_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed extern class Element.BoundsChanged :2804
+// private sealed extern class Element.BoundsChanged :2824
 // {
 static void Element__BoundsChanged_build(uType* type)
 {
@@ -485,25 +485,25 @@ Element__BoundsChanged_type* Element__BoundsChanged_typeof()
     return type;
 }
 
-// public BoundsChanged(Fuse.Elements.Element element, Uno.Action<Uno.Rect> handler) :2809
+// public BoundsChanged(Fuse.Elements.Element element, Uno.Action<Uno.Rect> handler) :2829
 void Element__BoundsChanged__ctor__fn(Element__BoundsChanged* __this, ::g::Fuse::Elements::Element* element, uDelegate* handler)
 {
     __this->ctor_(element, handler);
 }
 
-// public BoundsChanged New(Fuse.Elements.Element element, Uno.Action<Uno.Rect> handler) :2809
+// public BoundsChanged New(Fuse.Elements.Element element, Uno.Action<Uno.Rect> handler) :2829
 void Element__BoundsChanged__New1_fn(::g::Fuse::Elements::Element* element, uDelegate* handler, Element__BoundsChanged** __retval)
 {
     *__retval = Element__BoundsChanged::New1(element, handler);
 }
 
-// private void OnPlaced(object sender, Fuse.PlacedArgs args) :2817
+// private void OnPlaced(object sender, Fuse.PlacedArgs args) :2837
 void Element__BoundsChanged__OnPlaced_fn(Element__BoundsChanged* __this, uObject* sender, ::g::Fuse::PlacedArgs* args)
 {
     __this->OnPlaced(sender, args);
 }
 
-// private void Uno.IDisposable.Dispose() :2822
+// private void Uno.IDisposable.Dispose() :2842
 void Element__BoundsChanged__UnoIDisposableDispose_fn(Element__BoundsChanged* __this)
 {
     uStackFrame __("Fuse.Elements.Element.BoundsChanged", "Uno.IDisposable.Dispose()");
@@ -512,7 +512,7 @@ void Element__BoundsChanged__UnoIDisposableDispose_fn(Element__BoundsChanged* __
     __this->_handler = NULL;
 }
 
-// public BoundsChanged(Fuse.Elements.Element element, Uno.Action<Uno.Rect> handler) [instance] :2809
+// public BoundsChanged(Fuse.Elements.Element element, Uno.Action<Uno.Rect> handler) [instance] :2829
 void Element__BoundsChanged::ctor_(::g::Fuse::Elements::Element* element, uDelegate* handler)
 {
     uStackFrame __("Fuse.Elements.Element.BoundsChanged", ".ctor(Fuse.Elements.Element,Uno.Action<Uno.Rect>)");
@@ -522,14 +522,14 @@ void Element__BoundsChanged::ctor_(::g::Fuse::Elements::Element* element, uDeleg
     uPtr(_element)->add_Placed(uDelegate::New(::TYPES[0/*Fuse.PlacedHandler*/], (void*)Element__BoundsChanged__OnPlaced_fn, this));
 }
 
-// private void OnPlaced(object sender, Fuse.PlacedArgs args) [instance] :2817
+// private void OnPlaced(object sender, Fuse.PlacedArgs args) [instance] :2837
 void Element__BoundsChanged::OnPlaced(uObject* sender, ::g::Fuse::PlacedArgs* args)
 {
     uStackFrame __("Fuse.Elements.Element.BoundsChanged", "OnPlaced(object,Fuse.PlacedArgs)");
     uPtr(_handler)->InvokeVoid(uCRef(::g::Uno::Rect__New2(uPtr(args)->NewPosition(), uPtr(args)->NewSize())));
 }
 
-// public BoundsChanged New(Fuse.Elements.Element element, Uno.Action<Uno.Rect> handler) [static] :2809
+// public BoundsChanged New(Fuse.Elements.Element element, Uno.Action<Uno.Rect> handler) [static] :2829
 Element__BoundsChanged* Element__BoundsChanged::New1(::g::Fuse::Elements::Element* element, uDelegate* handler)
 {
     Element__BoundsChanged* obj1 = (Element__BoundsChanged*)uNew(Element__BoundsChanged_typeof());
@@ -538,10 +538,10 @@ Element__BoundsChanged* Element__BoundsChanged::New1(::g::Fuse::Elements::Elemen
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed class TransformOrigins.BoxCenter :2516
+// private sealed class TransformOrigins.BoxCenter :2536
 // {
 static void TransformOrigins__BoxCenter_build(uType* type)
 {
@@ -568,30 +568,30 @@ TransformOrigins__BoxCenter_type* TransformOrigins__BoxCenter_typeof()
     return type;
 }
 
-// public generated BoxCenter() :2516
+// public generated BoxCenter() :2536
 void TransformOrigins__BoxCenter__ctor__fn(TransformOrigins__BoxCenter* __this)
 {
     __this->ctor_();
 }
 
-// public float3 GetOffset(Fuse.Elements.Element elm) :2520
+// public float3 GetOffset(Fuse.Elements.Element elm) :2540
 void TransformOrigins__BoxCenter__GetOffset_fn(TransformOrigins__BoxCenter* __this, ::g::Fuse::Elements::Element* elm, ::g::Uno::Float3* __retval)
 {
     *__retval = __this->GetOffset(elm);
 }
 
-// public generated BoxCenter New() :2516
+// public generated BoxCenter New() :2536
 void TransformOrigins__BoxCenter__New1_fn(TransformOrigins__BoxCenter** __retval)
 {
     *__retval = TransformOrigins__BoxCenter::New1();
 }
 
-// public generated BoxCenter() [instance] :2516
+// public generated BoxCenter() [instance] :2536
 void TransformOrigins__BoxCenter::ctor_()
 {
 }
 
-// public float3 GetOffset(Fuse.Elements.Element elm) [instance] :2520
+// public float3 GetOffset(Fuse.Elements.Element elm) [instance] :2540
 ::g::Uno::Float3 TransformOrigins__BoxCenter::GetOffset(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.TransformOrigins.BoxCenter", "GetOffset(Fuse.Elements.Element)");
@@ -600,7 +600,7 @@ void TransformOrigins__BoxCenter::ctor_()
     return q;
 }
 
-// public generated BoxCenter New() [static] :2516
+// public generated BoxCenter New() [static] :2536
 TransformOrigins__BoxCenter* TransformOrigins__BoxCenter::New1()
 {
     TransformOrigins__BoxCenter* obj1 = (TransformOrigins__BoxCenter*)uNew(TransformOrigins__BoxCenter_typeof());
@@ -609,8 +609,8 @@ TransformOrigins__BoxCenter* TransformOrigins__BoxCenter::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public struct BoxPlacement :160
 // {
@@ -715,8 +715,8 @@ bool BoxPlacement::SanityConstrain()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
 // internal abstract class BoxSizing :216
 // {
@@ -975,10 +975,10 @@ float BoxSizing::UnitSize(::g::Fuse::Elements::Element* element, ::g::Uno::UX::S
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public enum Element.BoxSizingMode :1986
+// public enum Element.BoxSizingMode :2006
 uEnumType* Element__BoxSizingMode_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -994,8 +994,8 @@ uEnumType* Element__BoxSizingMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno
+// ---------------------------------------------------------------
 
 // internal partial sealed class Cache :10
 // {
@@ -1038,7 +1038,7 @@ void Cache__ctor__fn(Cache* __this, ::g::Fuse::Elements::Element* elm)
     __this->ctor_(elm);
 }
 
-// private void Blit(Fuse.DrawContext dc, float opacity) :281
+// private void Blit(Fuse.DrawContext dc, float opacity) :293
 void Cache__Blit_fn(Cache* __this, ::g::Fuse::DrawContext* dc, float* opacity)
 {
     __this->Blit(dc, *opacity);
@@ -1050,13 +1050,13 @@ void Cache__get_CacheTiles_fn(Cache* __this, uArray** __retval)
     *__retval = __this->CacheTiles();
 }
 
-// internal float4x4 CalculateCompositMatrix(Fuse.DrawContext dc, Uno.Recti cachingRect) :192
+// internal float4x4 CalculateCompositMatrix(Fuse.DrawContext dc, Uno.Recti cachingRect) :196
 void Cache__CalculateCompositMatrix_fn(Cache* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Recti* cachingRect, ::g::Uno::Float4x4* __retval)
 {
     *__retval = __this->CalculateCompositMatrix(dc, *cachingRect);
 }
 
-// internal static Uno.Recti ConservativelySnapToCoveringIntegers(Uno.Rect r) :161
+// internal static Uno.Recti ConservativelySnapToCoveringIntegers(Uno.Rect r) :165
 void Cache__ConservativelySnapToCoveringIntegers_fn(::g::Uno::Rect* r, ::g::Uno::Recti* __retval)
 {
     *__retval = Cache::ConservativelySnapToCoveringIntegers(*r);
@@ -1068,7 +1068,7 @@ void Cache__DrawCached_fn(Cache* __this, ::g::Fuse::DrawContext* dc, bool* __ret
     *__retval = __this->DrawCached(dc);
 }
 
-// internal void DrawHeuristically(Fuse.DrawContext dc) :149
+// internal void DrawHeuristically(Fuse.DrawContext dc) :153
 void Cache__DrawHeuristically_fn(Cache* __this, ::g::Fuse::DrawContext* dc)
 {
     __this->DrawHeuristically(dc);
@@ -1086,13 +1086,13 @@ void Cache__GetCachePreferenceCore_fn(Cache* __this, ::g::Fuse::DrawContext* dc,
     *__retval = __this->GetCachePreferenceCore(dc);
 }
 
-// internal bool GetCachingRect(Fuse.DrawContext dc, Uno.Recti& rect) :173
+// internal bool GetCachingRect(Fuse.DrawContext dc, Uno.Recti& rect) :177
 void Cache__GetCachingRect_fn(Cache* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Recti* rect, bool* __retval)
 {
     *__retval = __this->GetCachingRect(dc, rect);
 }
 
-// internal static bool GetCachingRect(Fuse.Elements.Element elm, Uno.Recti& rect) :178
+// internal static bool GetCachingRect(Fuse.Elements.Element elm, Uno.Recti& rect) :182
 void Cache__GetCachingRect1_fn(::g::Fuse::Elements::Element* elm, ::g::Uno::Recti* rect, bool* __retval)
 {
     *__retval = Cache::GetCachingRect1(elm, rect);
@@ -1104,7 +1104,7 @@ void Cache__Invalidate_fn(Cache* __this)
     __this->Invalidate();
 }
 
-// internal int get_MaxTileSize() :198
+// internal int get_MaxTileSize() :202
 void Cache__get_MaxTileSize_fn(Cache* __this, int* __retval)
 {
     *__retval = __this->MaxTileSize();
@@ -1116,19 +1116,19 @@ void Cache__New1_fn(::g::Fuse::Elements::Element* elm, Cache** __retval)
     *__retval = Cache::New1(elm);
 }
 
-// private bool PinAndValidate(Fuse.DrawContext dc) :200
+// private bool PinAndValidate(Fuse.DrawContext dc) :204
 void Cache__PinAndValidate_fn(Cache* __this, ::g::Fuse::DrawContext* dc, bool* __retval)
 {
     *__retval = __this->PinAndValidate(dc);
 }
 
-// private void Repaint(Fuse.DrawContext dc, Fuse.Elements.CacheTile tile) :256
+// private void Repaint(Fuse.DrawContext dc, Fuse.Elements.CacheTile tile) :260
 void Cache__Repaint_fn(Cache* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::CacheTile* tile)
 {
     __this->Repaint(dc, *tile);
 }
 
-// private void Unpin() :248
+// private void Unpin() :252
 void Cache__Unpin_fn(Cache* __this)
 {
     __this->Unpin();
@@ -1146,7 +1146,7 @@ void Cache::ctor_(::g::Fuse::Elements::Element* elm)
         U_THROW(::g::Uno::Exception::New1());
 }
 
-// private void Blit(Fuse.DrawContext dc, float opacity) [instance] :281
+// private void Blit(Fuse.DrawContext dc, float opacity) [instance] :293
 void Cache::Blit(::g::Fuse::DrawContext* dc, float opacity)
 {
     uStackFrame __("Fuse.Elements.Cache", "Blit(Fuse.DrawContext,float)");
@@ -1159,7 +1159,7 @@ uArray* Cache::CacheTiles()
     return _cacheTiles;
 }
 
-// internal float4x4 CalculateCompositMatrix(Fuse.DrawContext dc, Uno.Recti cachingRect) [instance] :192
+// internal float4x4 CalculateCompositMatrix(Fuse.DrawContext dc, Uno.Recti cachingRect) [instance] :196
 ::g::Uno::Float4x4 Cache::CalculateCompositMatrix(::g::Fuse::DrawContext* dc, ::g::Uno::Recti cachingRect)
 {
     uStackFrame __("Fuse.Elements.Cache", "CalculateCompositMatrix(Fuse.DrawContext,Uno.Recti)");
@@ -1180,7 +1180,7 @@ bool Cache::DrawCached(::g::Fuse::DrawContext* dc)
     return true;
 }
 
-// internal void DrawHeuristically(Fuse.DrawContext dc) [instance] :149
+// internal void DrawHeuristically(Fuse.DrawContext dc) [instance] :153
 void Cache::DrawHeuristically(::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Elements.Cache", "DrawHeuristically(Fuse.DrawContext)");
@@ -1244,7 +1244,7 @@ bool Cache::GetCachePreferenceCore(::g::Fuse::DrawContext* dc)
     return false;
 }
 
-// internal bool GetCachingRect(Fuse.DrawContext dc, Uno.Recti& rect) [instance] :173
+// internal bool GetCachingRect(Fuse.DrawContext dc, Uno.Recti& rect) [instance] :177
 bool Cache::GetCachingRect(::g::Fuse::DrawContext* dc, ::g::Uno::Recti* rect)
 {
     uStackFrame __("Fuse.Elements.Cache", "GetCachingRect(Fuse.DrawContext,Uno.Recti&)");
@@ -1257,13 +1257,13 @@ void Cache::Invalidate()
     _isValid = false;
 }
 
-// internal int get_MaxTileSize() [instance] :198
+// internal int get_MaxTileSize() [instance] :202
 int Cache::MaxTileSize()
 {
     return ::g::Uno::Graphics::Texture2D::MaxSize();
 }
 
-// private bool PinAndValidate(Fuse.DrawContext dc) [instance] :200
+// private bool PinAndValidate(Fuse.DrawContext dc) [instance] :204
 bool Cache::PinAndValidate(::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Elements.Cache", "PinAndValidate(Fuse.DrawContext)");
@@ -1305,7 +1305,7 @@ bool Cache::PinAndValidate(::g::Fuse::DrawContext* dc)
     return true;
 }
 
-// private void Repaint(Fuse.DrawContext dc, Fuse.Elements.CacheTile tile) [instance] :256
+// private void Repaint(Fuse.DrawContext dc, Fuse.Elements.CacheTile tile) [instance] :260
 void Cache::Repaint(::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::CacheTile tile)
 {
     uStackFrame __("Fuse.Elements.Cache", "Repaint(Fuse.DrawContext,Fuse.Elements.CacheTile)");
@@ -1324,13 +1324,21 @@ void Cache::Repaint(::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::CacheTile t
     bool oldIsCaching = uPtr(dc)->IsCaching();
     dc->IsCaching(true);
     dc->PushRenderTargetFrustum(uPtr(tile._framebuffer)->Framebuffer(), (uObject*)cc);
-    dc->Clear(::g::Uno::Float4__New1(0.0f), 1.0f);
-    uPtr(_element)->CompositEffects(dc);
-    dc->PopRenderTargetFrustum();
-    dc->IsCaching(oldIsCaching);
+
+    {
+        const auto __finally_fun = [&]()
+        {
+            uPtr(dc)->PopRenderTargetFrustum();
+            dc->IsCaching(oldIsCaching);
+        };
+
+        const uFinally<decltype(__finally_fun)> __f(__finally_fun);
+        uPtr(dc)->Clear(::g::Uno::Float4__New1(0.0f), 1.0f);
+        uPtr(_element)->CompositEffects(dc);
+    }
 }
 
-// private void Unpin() [instance] :248
+// private void Unpin() [instance] :252
 void Cache::Unpin()
 {
     uStackFrame __("Fuse.Elements.Cache", "Unpin()");
@@ -1345,16 +1353,16 @@ void Cache::Unpin()
     }
 }
 
-// internal static Uno.Recti ConservativelySnapToCoveringIntegers(Uno.Rect r) [static] :161
+// internal static Uno.Recti ConservativelySnapToCoveringIntegers(Uno.Rect r) [static] :165
 ::g::Uno::Recti Cache::ConservativelySnapToCoveringIntegers(::g::Uno::Rect r)
 {
     Cache_typeof()->Init();
-    ::g::Uno::Int2 origin = ::g::Uno::Int2__op_Explicit(::g::Uno::Math::Floor2(r.LeftTop()));
-    ::g::Uno::Int2 size = ::g::Uno::Int2__op_Explicit(::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Addition1(::g::Uno::Float2__op_Subtraction2(r.RightBottom(), r.LeftTop()), 0.01f)));
+    ::g::Uno::Int2 origin = ::g::Uno::Int2__op_Explicit1(::g::Uno::Math::Floor2(r.LeftTop()));
+    ::g::Uno::Int2 size = ::g::Uno::Int2__op_Explicit1(::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Addition1(::g::Uno::Float2__op_Subtraction2(r.RightBottom(), r.LeftTop()), 0.01f)));
     return ::g::Uno::Recti__New1(origin.X, origin.Y, (origin.X + size.X) + 1, (origin.Y + size.Y) + 1);
 }
 
-// internal static bool GetCachingRect(Fuse.Elements.Element elm, Uno.Recti& rect) [static] :178
+// internal static bool GetCachingRect(Fuse.Elements.Element elm, Uno.Recti& rect) [static] :182
 bool Cache::GetCachingRect1(::g::Fuse::Elements::Element* elm, ::g::Uno::Recti* rect)
 {
     uStackFrame __("Fuse.Elements.Cache", "GetCachingRect(Fuse.Elements.Element,Uno.Recti&)");
@@ -1380,10 +1388,10 @@ Cache* Cache::New1(::g::Fuse::Elements::Element* elm)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno
+// ---------------------------------------------------------------
 
-// internal sealed class CacheHelper :287
+// internal sealed class CacheHelper :299
 // {
 static void CacheHelper_build(uType* type)
 {
@@ -1410,37 +1418,37 @@ uType* CacheHelper_typeof()
     return type;
 }
 
-// public generated CacheHelper() :287
+// public generated CacheHelper() :299
 void CacheHelper__ctor__fn(CacheHelper* __this)
 {
     __this->ctor_();
 }
 
-// public void Blit(Fuse.DrawContext dc, Fuse.Elements.Cache cache, float opacity) :289
+// public void Blit(Fuse.DrawContext dc, Fuse.Elements.Cache cache, float opacity) :301
 void CacheHelper__Blit_fn(CacheHelper* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::Cache* cache, float* opacity)
 {
     __this->Blit(dc, cache, *opacity);
 }
 
-// private generated void init_DrawCalls() :287
+// private generated void init_DrawCalls() :299
 void CacheHelper__init_DrawCalls_fn(CacheHelper* __this)
 {
     __this->init_DrawCalls();
 }
 
-// public generated CacheHelper New() :287
+// public generated CacheHelper New() :299
 void CacheHelper__New1_fn(CacheHelper** __retval)
 {
     *__retval = CacheHelper::New1();
 }
 
-// public generated CacheHelper() [instance] :287
+// public generated CacheHelper() [instance] :299
 void CacheHelper::ctor_()
 {
     init_DrawCalls();
 }
 
-// public void Blit(Fuse.DrawContext dc, Fuse.Elements.Cache cache, float opacity) [instance] :289
+// public void Blit(Fuse.DrawContext dc, Fuse.Elements.Cache cache, float opacity) [instance] :301
 void CacheHelper::Blit(::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::Cache* cache, float opacity)
 {
     uStackFrame __("Fuse.Elements.CacheHelper", "Blit(Fuse.DrawContext,Fuse.Elements.Cache,float)");
@@ -1467,7 +1475,7 @@ void CacheHelper::Blit(::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::Cache* c
     }
 }
 
-// private generated void init_DrawCalls() [instance] :287
+// private generated void init_DrawCalls() [instance] :299
 void CacheHelper::init_DrawCalls()
 {
     uStackFrame __("Fuse.Elements.CacheHelper", "init_DrawCalls()");
@@ -1477,7 +1485,7 @@ void CacheHelper::init_DrawCalls()
     _draw_be52273c = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseElements_bundle::CacheHelper230c69b7());
 }
 
-// public generated CacheHelper New() [static] :287
+// public generated CacheHelper New() [static] :299
 CacheHelper* CacheHelper::New1()
 {
     CacheHelper* obj4 = (CacheHelper*)uNew(CacheHelper_typeof());
@@ -1486,8 +1494,8 @@ CacheHelper* CacheHelper::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno
+// ---------------------------------------------------------------
 
 // internal struct CacheTile :97
 // {
@@ -1547,10 +1555,10 @@ void CacheTile::EnsureHasFramebuffer()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public enum CachingMode :3082
+// public enum CachingMode :3102
 uEnumType* CachingMode_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -1564,10 +1572,10 @@ uEnumType* CachingMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed class TransformOrigins.CenterOrigin :2506
+// private sealed class TransformOrigins.CenterOrigin :2526
 // {
 static void TransformOrigins__CenterOrigin_build(uType* type)
 {
@@ -1591,37 +1599,37 @@ TransformOrigins__CenterOrigin_type* TransformOrigins__CenterOrigin_typeof()
     return type;
 }
 
-// public generated CenterOrigin() :2506
+// public generated CenterOrigin() :2526
 void TransformOrigins__CenterOrigin__ctor__fn(TransformOrigins__CenterOrigin* __this)
 {
     __this->ctor_();
 }
 
-// public float3 GetOffset(Fuse.Elements.Element elm) :2508
+// public float3 GetOffset(Fuse.Elements.Element elm) :2528
 void TransformOrigins__CenterOrigin__GetOffset_fn(TransformOrigins__CenterOrigin* __this, ::g::Fuse::Elements::Element* elm, ::g::Uno::Float3* __retval)
 {
     *__retval = __this->GetOffset(elm);
 }
 
-// public generated CenterOrigin New() :2506
+// public generated CenterOrigin New() :2526
 void TransformOrigins__CenterOrigin__New1_fn(TransformOrigins__CenterOrigin** __retval)
 {
     *__retval = TransformOrigins__CenterOrigin::New1();
 }
 
-// public generated CenterOrigin() [instance] :2506
+// public generated CenterOrigin() [instance] :2526
 void TransformOrigins__CenterOrigin::ctor_()
 {
 }
 
-// public float3 GetOffset(Fuse.Elements.Element elm) [instance] :2508
+// public float3 GetOffset(Fuse.Elements.Element elm) [instance] :2528
 ::g::Uno::Float3 TransformOrigins__CenterOrigin::GetOffset(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.TransformOrigins.CenterOrigin", "GetOffset(Fuse.Elements.Element)");
     return ::g::Uno::Float3__New4(::g::Uno::Float2__op_Division1(uPtr(elm)->ActualSize(), 2.0f), 0.0f);
 }
 
-// public generated CenterOrigin New() [static] :2506
+// public generated CenterOrigin New() [static] :2526
 TransformOrigins__CenterOrigin* TransformOrigins__CenterOrigin::New1()
 {
     TransformOrigins__CenterOrigin* obj1 = (TransformOrigins__CenterOrigin*)uNew(TransformOrigins__CenterOrigin_typeof());
@@ -1630,8 +1638,8 @@ TransformOrigins__CenterOrigin* TransformOrigins__CenterOrigin::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
 // protected enum BoxSizing.ConstraintFlags :316
 uEnumType* BoxSizing__ConstraintFlags_typeof()
@@ -1646,10 +1654,10 @@ uEnumType* BoxSizing__ConstraintFlags_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed extern class Element.DefaultDisposable :2746
+// private sealed extern class Element.DefaultDisposable :2766
 // {
 static void Element__DefaultDisposable_build(uType* type)
 {
@@ -1676,37 +1684,37 @@ Element__DefaultDisposable_type* Element__DefaultDisposable_typeof()
     return type;
 }
 
-// public generated DefaultDisposable() :2746
+// public generated DefaultDisposable() :2766
 void Element__DefaultDisposable__ctor__fn(Element__DefaultDisposable* __this)
 {
     __this->ctor_();
 }
 
-// public static Uno.IDisposable get_Instance() :2751
+// public static Uno.IDisposable get_Instance() :2771
 void Element__DefaultDisposable__get_Instance_fn(uObject** __retval)
 {
     *__retval = Element__DefaultDisposable::Instance();
 }
 
-// public generated DefaultDisposable New() :2746
+// public generated DefaultDisposable New() :2766
 void Element__DefaultDisposable__New1_fn(Element__DefaultDisposable** __retval)
 {
     *__retval = Element__DefaultDisposable::New1();
 }
 
-// private void Uno.IDisposable.Dispose() :2754
+// private void Uno.IDisposable.Dispose() :2774
 void Element__DefaultDisposable__UnoIDisposableDispose_fn(Element__DefaultDisposable* __this)
 {
 }
 
 uSStrong<uObject*> Element__DefaultDisposable::_instance_;
 
-// public generated DefaultDisposable() [instance] :2746
+// public generated DefaultDisposable() [instance] :2766
 void Element__DefaultDisposable::ctor_()
 {
 }
 
-// public generated DefaultDisposable New() [static] :2746
+// public generated DefaultDisposable New() [static] :2766
 Element__DefaultDisposable* Element__DefaultDisposable::New1()
 {
     Element__DefaultDisposable* obj2 = (Element__DefaultDisposable*)uNew(Element__DefaultDisposable_typeof());
@@ -1714,7 +1722,7 @@ Element__DefaultDisposable* Element__DefaultDisposable::New1()
     return obj2;
 }
 
-// public static Uno.IDisposable get_Instance() [static] :2751
+// public static Uno.IDisposable get_Instance() [static] :2771
 uObject* Element__DefaultDisposable::Instance()
 {
     uStackFrame __("Fuse.Elements.Element.DefaultDisposable", "get_Instance()");
@@ -1723,10 +1731,10 @@ uObject* Element__DefaultDisposable::Instance()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno
+// ---------------------------------------------------------------
 
-// internal static class DisplayHelpers :415
+// internal static class DisplayHelpers :427
 // {
 static void DisplayHelpers_build(uType* type)
 {
@@ -1744,25 +1752,25 @@ uClassType* DisplayHelpers_typeof()
     return type;
 }
 
-// public static int2 get_DisplaySizeHint() :419
+// public static int2 get_DisplaySizeHint() :431
 void DisplayHelpers__get_DisplaySizeHint_fn(::g::Uno::Int2* __retval)
 {
     *__retval = DisplayHelpers::DisplaySizeHint();
 }
 
-// public static int2 get_DisplaySizeHint() [static] :419
+// public static int2 get_DisplaySizeHint() [static] :431
 ::g::Uno::Int2 DisplayHelpers::DisplaySizeHint()
 {
-    return ::g::Uno::Int2__op_Explicit(::g::Fuse::Platform::SystemUI::Frame().Size());
+    return ::g::Uno::Int2__op_Explicit1(::g::Fuse::Platform::SystemUI::Frame().Size());
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public interfacemodifiers class Element :104
 // {
-// static Element() :2378
+// static Element() :2398
 static void Element__cctor_2_fn(uType* __type)
 {
     Element::_hitTestModeName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"HitTestMode"*/]);
@@ -1786,7 +1794,7 @@ static void Element_build(uType* type)
     ::STRINGS[4] = uString::Const("ExplicitTransformOrigin");
     ::STRINGS[5] = uString::Const("CaptureRegion bigger than maximum texture size, dropping rendering (size: ");
     ::STRINGS[6] = uString::Const(", max-size: ");
-    ::STRINGS[7] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno");
+    ::STRINGS[7] = uString::Const("/usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno");
     ::STRINGS[8] = uString::Const("This element has a partial opacity and is not flat. This will not render correctly. Put the opacity on a flat child panel instead.");
     ::STRINGS[9] = uString::Const("Composit");
     ::STRINGS[10] = uString::Const("This element can not be drawn.");
@@ -1839,14 +1847,15 @@ static void Element_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(Element_type, interface5),
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(Element_type, interface6),
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(Element_type, interface7),
-        ::TYPES[22/*Uno.Collections.ICollection<Fuse.Node>*/], offsetof(Element_type, interface8),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(Element_type, interface9),
-        ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(Element_type, interface10),
-        ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(Element_type, interface11),
-        ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(Element_type, interface12),
-        ::g::Fuse::IActualPlacement_typeof(), offsetof(Element_type, interface13),
-        ::g::Fuse::Animations::IResize_typeof(), offsetof(Element_type, interface14));
-    type->SetFields(55,
+        ::g::Fuse::ITemplateSource_typeof(), offsetof(Element_type, interface8),
+        ::TYPES[22/*Uno.Collections.ICollection<Fuse.Node>*/], offsetof(Element_type, interface9),
+        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(Element_type, interface10),
+        ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(Element_type, interface11),
+        ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(Element_type, interface12),
+        ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(Element_type, interface13),
+        ::g::Fuse::IActualPlacement_typeof(), offsetof(Element_type, interface14),
+        ::g::Fuse::Animations::IResize_typeof(), offsetof(Element_type, interface15));
+    type->SetFields(61,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Elements::Element, _actualAnchor), 0,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Elements::Element, _actualPosition), 0,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Elements::Element, _actualPositionCache), 0,
@@ -1890,8 +1899,8 @@ static void Element_build(uType* type)
         ::TYPES[18/*Fuse.Elements.ITransformOrigin*/], (uintptr_t)&::g::Fuse::Elements::Element::DefaultTransformOrigin_, uFieldFlagsStatic,
         ::g::Uno::UX::Selector_typeof(), (uintptr_t)&::g::Fuse::Elements::Element::ExplicitTransformOriginName_, uFieldFlagsStatic);
     type->Reflection.SetFields(2,
-        new uField("DefaultTransformOrigin", 95),
-        new uField("ExplicitTransformOriginName", 96));
+        new uField("DefaultTransformOrigin", 101),
+        new uField("ExplicitTransformOriginName", 102));
     type->Reflection.SetFunctions(68,
         new uFunction("get_ActualAnchor", NULL, (void*)Element__get_ActualAnchor_fn, 0, false, ::g::Uno::Float2_typeof(), 0),
         new uFunction("get_ActualPosition", NULL, (void*)Element__get_ActualPosition_fn, 0, false, ::g::Uno::Float2_typeof(), 0),
@@ -1970,8 +1979,8 @@ Element_type* Element_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Visual_typeof();
-    options.FieldCount = 97;
-    options.InterfaceCount = 15;
+    options.FieldCount = 103;
+    options.InterfaceCount = 16;
     options.ObjectSize = sizeof(Element);
     options.TypeSize = sizeof(Element_type);
     type = (Element_type*)uClassType::New("Fuse.Elements.Element", options);
@@ -1993,7 +2002,7 @@ Element_type* Element_typeof()
     type->fp_InvalidateLocalTransform = (void(*)(::g::Fuse::Visual*))Element__InvalidateLocalTransform_fn;
     type->fp_get_IsLocalVisible = (void(*)(::g::Fuse::Visual*, bool*))Element__get_IsLocalVisible_fn;
     type->fp_IsMarginBoxDependent = (void(*)(::g::Fuse::Visual*, ::g::Fuse::Visual*, int*))Element__IsMarginBoxDependent_fn;
-    type->fp_get_LocalBounds = (void(*)(::g::Fuse::Visual*, ::g::Uno::Geometry::Box*))Element__get_LocalBounds_fn;
+    type->fp_get_LocalBounds = (void(*)(::g::Fuse::Visual*, ::g::Fuse::Box*))Element__get_LocalBounds_fn;
     type->fp_get_LocalRenderBounds = (void(*)(::g::Fuse::Visual*, ::g::Fuse::VisualBounds**))Element__get_LocalRenderBounds_fn;
     type->fp_OnAdjustMarginBoxPosition = (void(*)(::g::Fuse::Visual*, ::g::Uno::Float2*))Element__OnAdjustMarginBoxPosition_fn;
     type->fp_OnArrangeMarginBox = (void(*)(::g::Fuse::Visual*, ::g::Uno::Float2*, ::g::Fuse::LayoutParams*, ::g::Uno::Float2*))Element__OnArrangeMarginBox_fn;
@@ -2017,24 +2026,25 @@ Element_type* Element_typeof()
     type->fp_PrependInverseTransformOrigin = (void(*)(::g::Fuse::Visual*, ::g::Fuse::FastMatrix*))Element__PrependInverseTransformOrigin_fn;
     type->fp_PrependTransformOrigin = (void(*)(::g::Fuse::Visual*, ::g::Fuse::FastMatrix*))Element__PrependTransformOrigin_fn;
     type->fp_get_TreeRenderer = Element__get_TreeRenderer_fn;
-    type->interface10.fp_Show = (void(*)(uObject*))Element__FuseTriggersActionsIShowShow_fn;
-    type->interface12.fp_Collapse = (void(*)(uObject*))Element__FuseTriggersActionsICollapseCollapse_fn;
-    type->interface11.fp_Hide = (void(*)(uObject*))Element__FuseTriggersActionsIHideHide_fn;
-    type->interface14.fp_SetSize = (void(*)(uObject*, ::g::Uno::Float2*))Element__FuseAnimationsIResizeSetSize_fn;
-    type->interface13.fp_get_ActualSize = (void(*)(uObject*, ::g::Uno::Float3*))Element__FuseIActualPlacementget_ActualSize_fn;
-    type->interface13.fp_get_ActualPosition = (void(*)(uObject*, ::g::Uno::Float3*))Element__FuseIActualPlacementget_ActualPosition_fn;
-    type->interface13.fp_add_Placed = (void(*)(uObject*, uDelegate*))Element__add_Placed_fn;
-    type->interface13.fp_remove_Placed = (void(*)(uObject*, uDelegate*))Element__remove_Placed_fn;
-    type->interface8.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
-    type->interface8.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
+    type->interface11.fp_Show = (void(*)(uObject*))Element__FuseTriggersActionsIShowShow_fn;
+    type->interface13.fp_Collapse = (void(*)(uObject*))Element__FuseTriggersActionsICollapseCollapse_fn;
+    type->interface12.fp_Hide = (void(*)(uObject*))Element__FuseTriggersActionsIHideHide_fn;
+    type->interface15.fp_SetSize = (void(*)(uObject*, ::g::Uno::Float2*))Element__FuseAnimationsIResizeSetSize_fn;
+    type->interface14.fp_get_ActualSize = (void(*)(uObject*, ::g::Uno::Float3*))Element__FuseIActualPlacementget_ActualSize_fn;
+    type->interface14.fp_get_ActualPosition = (void(*)(uObject*, ::g::Uno::Float3*))Element__FuseIActualPlacementget_ActualPosition_fn;
+    type->interface14.fp_add_Placed = (void(*)(uObject*, uDelegate*))Element__add_Placed_fn;
+    type->interface14.fp_remove_Placed = (void(*)(uObject*, uDelegate*))Element__remove_Placed_fn;
+    type->interface9.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
+    type->interface9.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
     type->interface6.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsIListFuseNodeRemoveAt_fn;
-    type->interface9.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
-    type->interface8.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
+    type->interface10.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
+    type->interface9.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
     type->interface6.fp_get_Item = (void(*)(uObject*, int*, uTRef))::g::Fuse::Visual__UnoCollectionsIListFuseNodeget_Item_fn;
     type->interface6.fp_Insert = (void(*)(uObject*, int*, void*))::g::Fuse::Visual__Insert1_fn;
     type->interface7.fp_OnPropertyChanged = (void(*)(uObject*, ::g::Uno::UX::PropertyObject*, ::g::Uno::UX::Selector*))::g::Fuse::Visual__OnPropertyChanged2_fn;
-    type->interface8.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
-    type->interface8.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
+    type->interface8.fp_FindTemplate = (void(*)(uObject*, uString*, ::g::Uno::UX::Template**))::g::Fuse::Visual__FindTemplate_fn;
+    type->interface9.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
+    type->interface9.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
     type->interface4.fp_Clear = (void(*)(uObject*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingClear_fn;
     type->interface4.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingContains_fn;
     type->interface0.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Node__UnoCollectionsIListFuseBindingRemoveAt_fn;
@@ -2059,7 +2069,7 @@ void Element__ctor_3_fn(Element* __this)
     __this->ctor_3();
 }
 
-// protected override sealed float2 get_AbsoluteViewportOrigin() :1867
+// protected override sealed float2 get_AbsoluteViewportOrigin() :1887
 void Element__get_AbsoluteViewportOrigin_fn(Element* __this, ::g::Uno::Float2* __retval)
 {
     uStackFrame __("Fuse.Elements.Element", "get_AbsoluteViewportOrigin()");
@@ -2069,61 +2079,61 @@ void Element__get_AbsoluteViewportOrigin_fn(Element* __this, ::g::Uno::Float2* _
     return *__retval = p, void();
 }
 
-// public float2 get_ActualAnchor() :2081
+// public float2 get_ActualAnchor() :2101
 void Element__get_ActualAnchor_fn(Element* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->ActualAnchor();
 }
 
-// internal void set_ActualAnchor(float2 value) :2082
+// internal void set_ActualAnchor(float2 value) :2102
 void Element__set_ActualAnchor_fn(Element* __this, ::g::Uno::Float2* value)
 {
     __this->ActualAnchor(*value);
 }
 
-// public float2 get_ActualPosition() :1885
+// public float2 get_ActualPosition() :1905
 void Element__get_ActualPosition_fn(Element* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->ActualPosition();
 }
 
-// public float2 get_ActualSize() :1919
+// public float2 get_ActualSize() :1939
 void Element__get_ActualSize_fn(Element* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->ActualSize();
 }
 
-// public Fuse.Elements.Alignment get_Alignment() :1612
+// public Fuse.Elements.Alignment get_Alignment() :1632
 void Element__get_Alignment_fn(Element* __this, int* __retval)
 {
     *__retval = __this->Alignment();
 }
 
-// public void set_Alignment(Fuse.Elements.Alignment value) :1613
+// public void set_Alignment(Fuse.Elements.Alignment value) :1633
 void Element__set_Alignment_fn(Element* __this, int* value)
 {
     __this->Alignment(*value);
 }
 
-// private Fuse.Elements.Element get_AncestorElement() :2402
+// private Fuse.Elements.Element get_AncestorElement() :2422
 void Element__get_AncestorElement_fn(Element* __this, Element** __retval)
 {
     *__retval = __this->AncestorElement();
 }
 
-// public Uno.UX.Size2 get_Anchor() :1763
+// public Uno.UX.Size2 get_Anchor() :1783
 void Element__get_Anchor_fn(Element* __this, ::g::Uno::UX::Size2* __retval)
 {
     *__retval = __this->Anchor();
 }
 
-// public void set_Anchor(Uno.UX.Size2 value) :1764
+// public void set_Anchor(Uno.UX.Size2 value) :1784
 void Element__set_Anchor_fn(Element* __this, ::g::Uno::UX::Size2* value)
 {
     __this->Anchor(*value);
 }
 
-// protected virtual void ArrangePaddingBox(Fuse.LayoutParams lp) :2259
+// protected virtual void ArrangePaddingBox(Fuse.LayoutParams lp) :2279
 void Element__ArrangePaddingBox_fn(Element* __this, ::g::Fuse::LayoutParams* lp)
 {
 }
@@ -2152,25 +2162,25 @@ void Element__set_AspectConstraint_fn(Element* __this, int* value)
     __this->AspectConstraint(*value);
 }
 
-// public Fuse.Elements.Element.BoxSizingMode get_BoxSizing() :2004
+// public Fuse.Elements.Element.BoxSizingMode get_BoxSizing() :2024
 void Element__get_BoxSizing_fn(Element* __this, int* __retval)
 {
     *__retval = __this->BoxSizing();
 }
 
-// public void set_BoxSizing(Fuse.Elements.Element.BoxSizingMode value) :2005
+// public void set_BoxSizing(Fuse.Elements.Element.BoxSizingMode value) :2025
 void Element__set_BoxSizing_fn(Element* __this, int* value)
 {
     __this->BoxSizing(*value);
 }
 
-// internal Fuse.Elements.BoxSizing get_BoxSizingObject() :2026
+// internal Fuse.Elements.BoxSizing get_BoxSizingObject() :2046
 void Element__get_BoxSizingObject_fn(Element* __this, ::g::Fuse::Elements::BoxSizing** __retval)
 {
     *__retval = __this->BoxSizingObject();
 }
 
-// private Fuse.Elements.Cache get_Cache() :1070
+// private Fuse.Elements.Cache get_Cache() :1090
 void Element__get_Cache_fn(Element* __this, ::g::Fuse::Elements::Cache** __retval)
 {
     *__retval = __this->Cache();
@@ -2209,7 +2219,7 @@ void Element__CalcRenderBoundsWithEffects_fn(Element* __this, ::g::Fuse::VisualB
     *__retval = __this->CalcRenderBoundsWithEffects();
 }
 
-// internal override sealed bool get_CanAdjustMarginBox() :2160
+// internal override sealed bool get_CanAdjustMarginBox() :2180
 void Element__get_CanAdjustMarginBox_fn(Element* __this, bool* __retval)
 {
     return *__retval = true, void();
@@ -2227,52 +2237,54 @@ void Element__CleanupBatching_fn(Element* __this)
     __this->CleanupBatching();
 }
 
-// public bool get_ClipToBounds() :1814
+// public bool get_ClipToBounds() :1834
 void Element__get_ClipToBounds_fn(Element* __this, bool* __retval)
 {
     *__retval = __this->ClipToBounds();
 }
 
-// public void set_ClipToBounds(bool value) :1815
+// public void set_ClipToBounds(bool value) :1835
 void Element__set_ClipToBounds_fn(Element* __this, bool* value)
 {
     __this->ClipToBounds(*value);
 }
 
-// private void Composit(Fuse.DrawContext dc) :1076
+// private void Composit(Fuse.DrawContext dc) :1096
 void Element__Composit_fn(Element* __this, ::g::Fuse::DrawContext* dc)
 {
     __this->Composit(dc);
 }
 
-// internal void CompositEffects(Fuse.DrawContext dc) :1116
+// internal void CompositEffects(Fuse.DrawContext dc) :1136
 void Element__CompositEffects_fn(Element* __this, ::g::Fuse::DrawContext* dc)
 {
     __this->CompositEffects(dc);
 }
 
-// private void DispatchPlacement() :2231
+// private void DispatchPlacement() :2251
 void Element__DispatchPlacement_fn(Element* __this)
 {
     __this->DispatchPlacement();
 }
 
-// public override void Draw(Fuse.DrawContext dc) :934
+// public override void Draw(Fuse.DrawContext dc) :937
 void Element__Draw_fn(Element* __this, ::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Elements.Element", "Draw(Fuse.DrawContext)");
 
     if (!__this->IsRootingCompleted())
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[11/*"Draw called...*/], __this, ::STRINGS[7/*"/Users/eric...*/], 937, ::STRINGS[12/*"Draw"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[11/*"Draw called...*/], __this, ::STRINGS[7/*"/usr/local/...*/], 940, ::STRINGS[12/*"Draw"*/]);
 
     if (__this->Visibility() != 0)
         return;
 
-    double t;
+    double cullTime;
     ::g::Uno::Recti visibleRect = __this->GetVisibleViewportInvertPixelRect(dc, __this->RenderBoundsWithEffects());
 
     if ((visibleRect.Size().X == 0) || (visibleRect.Size().Y == 0))
         return;
+
+    double t;
 
     if (__this->NeedsClipping())
     {
@@ -2290,7 +2302,7 @@ void Element__DrawNonUnderlayChildren_fn(Element* __this, ::g::Fuse::DrawContext
     __this->DrawNonUnderlayChildren(dc);
 }
 
-// public override sealed void DrawSelection(Fuse.DrawContext dc) :973
+// public override sealed void DrawSelection(Fuse.DrawContext dc) :993
 void Element__DrawSelection_fn(Element* __this, ::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Elements.Element", "DrawSelection(Fuse.DrawContext)");
@@ -2312,43 +2324,43 @@ void Element__DrawWithChildren_fn(Element* __this, ::g::Fuse::DrawContext* dc)
     __this->DrawNonUnderlayChildren(dc);
 }
 
-// private Uno.Collections.IList<Fuse.Effects.Effect> get_Effects() :996
+// private Uno.Collections.IList<Fuse.Effects.Effect> get_Effects() :1016
 void Element__get_Effects_fn(Element* __this, uObject** __retval)
 {
     *__retval = __this->Effects();
 }
 
-// internal generated Fuse.Elements.ElementBatchEntry get_ElementBatchEntry() :1073
+// internal generated Fuse.Elements.ElementBatchEntry get_ElementBatchEntry() :1093
 void Element__get_ElementBatchEntry_fn(Element* __this, ::g::Fuse::Elements::ElementBatchEntry** __retval)
 {
     *__retval = __this->ElementBatchEntry();
 }
 
-// internal generated void set_ElementBatchEntry(Fuse.Elements.ElementBatchEntry value) :1073
+// internal generated void set_ElementBatchEntry(Fuse.Elements.ElementBatchEntry value) :1093
 void Element__set_ElementBatchEntry_fn(Element* __this, ::g::Fuse::Elements::ElementBatchEntry* value)
 {
     __this->ElementBatchEntry(value);
 }
 
-// public Uno.UX.Size2 get_ExplicitTransformOrigin() :2577
+// public Uno.UX.Size2 get_ExplicitTransformOrigin() :2597
 void Element__get_ExplicitTransformOrigin_fn(Element* __this, ::g::Uno::UX::Size2* __retval)
 {
     *__retval = __this->ExplicitTransformOrigin();
 }
 
-// public void set_ExplicitTransformOrigin(Uno.UX.Size2 value) :2584
+// public void set_ExplicitTransformOrigin(Uno.UX.Size2 value) :2604
 void Element__set_ExplicitTransformOrigin_fn(Element* __this, ::g::Uno::UX::Size2* value)
 {
     __this->ExplicitTransformOrigin(*value);
 }
 
-// protected virtual bool FastTrackDrawWithOpacity(Fuse.DrawContext dc) :1111
+// protected virtual bool FastTrackDrawWithOpacity(Fuse.DrawContext dc) :1131
 void Element__FastTrackDrawWithOpacity_fn(Element* __this, ::g::Fuse::DrawContext* dc, bool* __retval)
 {
     return *__retval = false, void();
 }
 
-// private void Fuse.Animations.IResize.SetSize(float2 size) :2311
+// private void Fuse.Animations.IResize.SetSize(float2 size) :2331
 void Element__FuseAnimationsIResizeSetSize_fn(Element* __this, ::g::Uno::Float2* size)
 {
     uStackFrame __("Fuse.Elements.Element", "Fuse.Animations.IResize.SetSize(float2)");
@@ -2360,14 +2372,14 @@ void Element__FuseAnimationsIResizeSetSize_fn(Element* __this, ::g::Uno::Float2*
     __this->InvalidateLocalTransform();
 }
 
-// private float3 Fuse.IActualPlacement.get_ActualPosition() :1933
+// private float3 Fuse.IActualPlacement.get_ActualPosition() :1953
 void Element__FuseIActualPlacementget_ActualPosition_fn(Element* __this, ::g::Uno::Float3* __retval)
 {
     uStackFrame __("Fuse.Elements.Element", "Fuse.IActualPlacement.get_ActualPosition()");
     return *__retval = ::g::Uno::Float3__New4(__this->ActualPosition(), 0.0f), void();
 }
 
-// private float3 Fuse.IActualPlacement.get_ActualSize() :1932
+// private float3 Fuse.IActualPlacement.get_ActualSize() :1952
 void Element__FuseIActualPlacementget_ActualSize_fn(Element* __this, ::g::Uno::Float3* __retval)
 {
     return *__retval = ::g::Uno::Float3__New4(__this->ActualSize(), 0.0f), void();
@@ -2394,25 +2406,25 @@ void Element__FuseTriggersActionsIShowShow_fn(Element* __this)
     __this->Visibility(0);
 }
 
-// protected internal float2 GetArrangePaddingSize(Fuse.LayoutParams lp) :2066
+// protected internal float2 GetArrangePaddingSize(Fuse.LayoutParams lp) :2086
 void Element__GetArrangePaddingSize_fn(Element* __this, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->GetArrangePaddingSize(*lp);
 }
 
-// protected virtual float2 GetContentSize(Fuse.LayoutParams lp) :2061
+// protected virtual float2 GetContentSize(Fuse.LayoutParams lp) :2081
 void Element__GetContentSize_fn(Element* __this, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval)
 {
     return *__retval = ::g::Uno::Float2__New1(0.0f), void();
 }
 
-// internal float2 GetLayoutPositionIn(Fuse.Visual target) :2282
+// internal float2 GetLayoutPositionIn(Fuse.Visual target) :2302
 void Element__GetLayoutPositionIn_fn(Element* __this, ::g::Fuse::Visual* target, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->GetLayoutPositionIn(target);
 }
 
-// public override sealed float2 GetMarginSize(Fuse.LayoutParams lp) :2035
+// public override sealed float2 GetMarginSize(Fuse.LayoutParams lp) :2055
 void Element__GetMarginSize_fn(Element* __this, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval)
 {
     uStackFrame __("Fuse.Elements.Element", "GetMarginSize(Fuse.LayoutParams)");
@@ -2446,49 +2458,49 @@ void Element__GetVisibleViewportInvertPixelRect_fn(Element* __this, ::g::Fuse::D
     *__retval = __this->GetVisibleViewportInvertPixelRect(dc, localRegion);
 }
 
-// private void GMSReset() :1975
+// private void GMSReset() :1995
 void Element__GMSReset_fn(Element* __this)
 {
     __this->GMSReset();
 }
 
-// private bool get_HasActiveEffects() :1012
+// private bool get_HasActiveEffects() :1032
 void Element__get_HasActiveEffects_fn(Element* __this, bool* __retval)
 {
     *__retval = __this->HasActiveEffects();
 }
 
-// private bool get_HasCompositionEffect() :1032
+// private bool get_HasCompositionEffect() :1052
 void Element__get_HasCompositionEffect_fn(Element* __this, bool* __retval)
 {
     *__retval = __this->HasCompositionEffect();
 }
 
-// private bool get_HasEffects() :1006
+// private bool get_HasEffects() :1026
 void Element__get_HasEffects_fn(Element* __this, bool* __retval)
 {
     *__retval = __this->HasEffects();
 }
 
-// internal bool HasLayoutIn(Fuse.Visual target) :2266
+// internal bool HasLayoutIn(Fuse.Visual target) :2286
 void Element__HasLayoutIn_fn(Element* __this, ::g::Fuse::Visual* target, bool* __retval)
 {
     *__retval = __this->HasLayoutIn(target);
 }
 
-// public Uno.UX.Size get_Height() :1508
+// public Uno.UX.Size get_Height() :1528
 void Element__get_Height_fn(Element* __this, ::g::Uno::UX::Size* __retval)
 {
     *__retval = __this->Height();
 }
 
-// public void set_Height(Uno.UX.Size value) :1509
+// public void set_Height(Uno.UX.Size value) :1529
 void Element__set_Height_fn(Element* __this, ::g::Uno::UX::Size* value)
 {
     __this->Height(*value);
 }
 
-// protected override Fuse.VisualBounds get_HitTestChildrenBounds() :1454
+// protected override Fuse.VisualBounds get_HitTestChildrenBounds() :1474
 void Element__get_HitTestChildrenBounds_fn(Element* __this, ::g::Fuse::VisualBounds** __retval)
 {
     uStackFrame __("Fuse.Elements.Element", "get_HitTestChildrenBounds()");
@@ -2500,7 +2512,7 @@ void Element__get_HitTestChildrenBounds_fn(Element* __this, ::g::Fuse::VisualBou
     return *__retval = ::g::Fuse::VisualBounds::Empty(), void();
 }
 
-// protected override sealed Fuse.VisualBounds get_HitTestLocalBounds() :1432
+// protected override sealed Fuse.VisualBounds get_HitTestLocalBounds() :1452
 void Element__get_HitTestLocalBounds_fn(Element* __this, ::g::Fuse::VisualBounds** __retval)
 {
     uStackFrame __("Fuse.Elements.Element", "get_HitTestLocalBounds()");
@@ -2515,49 +2527,49 @@ void Element__get_HitTestLocalBounds_fn(Element* __this, ::g::Fuse::VisualBounds
     return *__retval = n, void();
 }
 
-// protected virtual Fuse.VisualBounds get_HitTestLocalVisualBounds() :1446
+// protected virtual Fuse.VisualBounds get_HitTestLocalVisualBounds() :1466
 void Element__get_HitTestLocalVisualBounds_fn(Element* __this, ::g::Fuse::VisualBounds** __retval)
 {
     return *__retval = ::g::Fuse::VisualBounds::Empty(), void();
 }
 
-// public Fuse.Elements.HitTestMode get_HitTestMode() :1387
+// public Fuse.Elements.HitTestMode get_HitTestMode() :1407
 void Element__get_HitTestMode_fn(Element* __this, int* __retval)
 {
     *__retval = __this->HitTestMode();
 }
 
-// public void set_HitTestMode(Fuse.Elements.HitTestMode value) :1388
+// public void set_HitTestMode(Fuse.Elements.HitTestMode value) :1408
 void Element__set_HitTestMode_fn(Element* __this, int* value)
 {
     __this->HitTestMode(*value);
 }
 
-// internal float2 get_IntendedPosition() :1929
+// internal float2 get_IntendedPosition() :1949
 void Element__get_IntendedPosition_fn(Element* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->IntendedPosition();
 }
 
-// internal float2 get_IntendedSize() :1924
+// internal float2 get_IntendedSize() :1944
 void Element__get_IntendedSize_fn(Element* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->IntendedSize();
 }
 
-// internal void InternArrangePaddingBox(Fuse.LayoutParams lp) :2251
+// internal void InternArrangePaddingBox(Fuse.LayoutParams lp) :2271
 void Element__InternArrangePaddingBox_fn(Element* __this, ::g::Fuse::LayoutParams* lp)
 {
     __this->InternArrangePaddingBox(*lp);
 }
 
-// internal float2 InternGetContentSize(Fuse.LayoutParams lp) :2056
+// internal float2 InternGetContentSize(Fuse.LayoutParams lp) :2076
 void Element__InternGetContentSize_fn(Element* __this, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->InternGetContentSize(*lp);
 }
 
-// protected override sealed void InvalidateLocalTransform() :2643
+// protected override sealed void InvalidateLocalTransform() :2663
 void Element__InvalidateLocalTransform_fn(Element* __this)
 {
     uStackFrame __("Fuse.Elements.Element", "InvalidateLocalTransform()");
@@ -2574,59 +2586,59 @@ void Element__InvalidateLocalTransform_fn(Element* __this)
     __this->NotifyTreeRendererTransformChanged();
 }
 
-// public void InvalidateRenderBoundsWithEffects() :2723
+// public void InvalidateRenderBoundsWithEffects() :2743
 void Element__InvalidateRenderBoundsWithEffects_fn(Element* __this)
 {
     __this->InvalidateRenderBoundsWithEffects();
 }
 
-// public override sealed bool get_IsLocalVisible() :2362
+// public override sealed bool get_IsLocalVisible() :2382
 void Element__get_IsLocalVisible_fn(Element* __this, bool* __retval)
 {
     return *__retval = __this->Visibility() == 0, void();
 }
 
-// protected override Fuse.LayoutDependent IsMarginBoxDependent(Fuse.Visual child) :2694
+// protected override Fuse.LayoutDependent IsMarginBoxDependent(Fuse.Visual child) :2714
 void Element__IsMarginBoxDependent_fn(Element* __this, ::g::Fuse::Visual* child, int* __retval)
 {
     uStackFrame __("Fuse.Elements.Element", "IsMarginBoxDependent(Fuse.Visual)");
     return *__retval = uPtr(__this->_boxSizing)->IsContentRelativeSize(__this), void();
 }
 
-// public bool IsPointInside(float2 localPoint) :1374
+// public bool IsPointInside(float2 localPoint) :1394
 void Element__IsPointInside_fn(Element* __this, ::g::Uno::Float2* localPoint, bool* __retval)
 {
     *__retval = __this->IsPointInside(*localPoint);
 }
 
-// public Uno.UX.Size get_LimitHeight() :3499
+// public Uno.UX.Size get_LimitHeight() :3519
 void Element__get_LimitHeight_fn(Element* __this, ::g::Uno::UX::Size* __retval)
 {
     *__retval = __this->LimitHeight();
 }
 
-// public void set_LimitHeight(Uno.UX.Size value) :3500
+// public void set_LimitHeight(Uno.UX.Size value) :3520
 void Element__set_LimitHeight_fn(Element* __this, ::g::Uno::UX::Size* value)
 {
     __this->LimitHeight(*value);
 }
 
-// public Uno.UX.Size get_LimitWidth() :3517
+// public Uno.UX.Size get_LimitWidth() :3537
 void Element__get_LimitWidth_fn(Element* __this, ::g::Uno::UX::Size* __retval)
 {
     *__retval = __this->LimitWidth();
 }
 
-// public void set_LimitWidth(Uno.UX.Size value) :3518
+// public void set_LimitWidth(Uno.UX.Size value) :3538
 void Element__set_LimitWidth_fn(Element* __this, ::g::Uno::UX::Size* value)
 {
     __this->LimitWidth(*value);
 }
 
-// public override sealed Uno.Geometry.Box get_LocalBounds() :2616
-void Element__get_LocalBounds_fn(Element* __this, ::g::Uno::Geometry::Box* __retval)
+// public override sealed Fuse.Box get_LocalBounds() :2636
+void Element__get_LocalBounds_fn(Element* __this, ::g::Fuse::Box* __retval)
 {
-    return *__retval = ::g::Uno::Geometry::Box__New1(::g::Uno::Float3__New1(0.0f), ::g::Uno::Float3__New4(__this->ActualSize(), 0.0f)), void();
+    return *__retval = ::g::Fuse::Box__New1(::g::Uno::Float3__New1(0.0f), ::g::Uno::Float3__New4(__this->ActualSize(), 0.0f)), void();
 }
 
 // public override Fuse.VisualBounds get_LocalRenderBounds() :832
@@ -2635,61 +2647,61 @@ void Element__get_LocalRenderBounds_fn(Element* __this, ::g::Fuse::VisualBounds*
     return *__retval = __this->RenderBoundsWithEffects(), void();
 }
 
-// public float4 get_Margin() :1693
+// public float4 get_Margin() :1713
 void Element__get_Margin_fn(Element* __this, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->Margin();
 }
 
-// public void set_Margin(float4 value) :1694
+// public void set_Margin(float4 value) :1714
 void Element__set_Margin_fn(Element* __this, ::g::Uno::Float4* value)
 {
     __this->Margin(*value);
 }
 
-// public Uno.UX.Size get_MaxHeight() :1592
+// public Uno.UX.Size get_MaxHeight() :1612
 void Element__get_MaxHeight_fn(Element* __this, ::g::Uno::UX::Size* __retval)
 {
     *__retval = __this->MaxHeight();
 }
 
-// public void set_MaxHeight(Uno.UX.Size value) :1593
+// public void set_MaxHeight(Uno.UX.Size value) :1613
 void Element__set_MaxHeight_fn(Element* __this, ::g::Uno::UX::Size* value)
 {
     __this->MaxHeight(*value);
 }
 
-// public Uno.UX.Size get_MaxWidth() :1571
+// public Uno.UX.Size get_MaxWidth() :1591
 void Element__get_MaxWidth_fn(Element* __this, ::g::Uno::UX::Size* __retval)
 {
     *__retval = __this->MaxWidth();
 }
 
-// public void set_MaxWidth(Uno.UX.Size value) :1572
+// public void set_MaxWidth(Uno.UX.Size value) :1592
 void Element__set_MaxWidth_fn(Element* __this, ::g::Uno::UX::Size* value)
 {
     __this->MaxWidth(*value);
 }
 
-// public Uno.UX.Size get_MinHeight() :1550
+// public Uno.UX.Size get_MinHeight() :1570
 void Element__get_MinHeight_fn(Element* __this, ::g::Uno::UX::Size* __retval)
 {
     *__retval = __this->MinHeight();
 }
 
-// public void set_MinHeight(Uno.UX.Size value) :1551
+// public void set_MinHeight(Uno.UX.Size value) :1571
 void Element__set_MinHeight_fn(Element* __this, ::g::Uno::UX::Size* value)
 {
     __this->MinHeight(*value);
 }
 
-// public Uno.UX.Size get_MinWidth() :1529
+// public Uno.UX.Size get_MinWidth() :1549
 void Element__get_MinWidth_fn(Element* __this, ::g::Uno::UX::Size* __retval)
 {
     *__retval = __this->MinWidth();
 }
 
-// public void set_MinWidth(Uno.UX.Size value) :1530
+// public void set_MinWidth(Uno.UX.Size value) :1550
 void Element__set_MinWidth_fn(Element* __this, ::g::Uno::UX::Size* value)
 {
     __this->MinWidth(*value);
@@ -2701,79 +2713,79 @@ void Element__get_NeedsClipping_fn(Element* __this, bool* __retval)
     *__retval = __this->NeedsClipping();
 }
 
-// private extern void NotifyRooted() :2892
+// private extern void NotifyRooted() :2912
 void Element__NotifyRooted_fn(Element* __this)
 {
     __this->NotifyRooted();
 }
 
-// private void NotifyTreeRedererOpacityChanged() :1283
+// private void NotifyTreeRedererOpacityChanged() :1303
 void Element__NotifyTreeRedererOpacityChanged_fn(Element* __this)
 {
     __this->NotifyTreeRedererOpacityChanged();
 }
 
-// private void NotifyTreeRendererHitTestModeChanged() :1273
+// private void NotifyTreeRendererHitTestModeChanged() :1293
 void Element__NotifyTreeRendererHitTestModeChanged_fn(Element* __this)
 {
     __this->NotifyTreeRendererHitTestModeChanged();
 }
 
-// private void NotifyTreeRendererPlaced() :2244
+// private void NotifyTreeRendererPlaced() :2264
 void Element__NotifyTreeRendererPlaced_fn(Element* __this)
 {
     __this->NotifyTreeRendererPlaced();
 }
 
-// private void NotifyTreeRendererRooted() :1317
+// private void NotifyTreeRendererRooted() :1337
 void Element__NotifyTreeRendererRooted_fn(Element* __this)
 {
     __this->NotifyTreeRendererRooted();
 }
 
-// private void NotifyTreeRendererRootingStarted() :1310
+// private void NotifyTreeRendererRootingStarted() :1330
 void Element__NotifyTreeRendererRootingStarted_fn(Element* __this)
 {
     __this->NotifyTreeRendererRootingStarted();
 }
 
-// private void NotifyTreeRendererTransformChanged() :1253
+// private void NotifyTreeRendererTransformChanged() :1273
 void Element__NotifyTreeRendererTransformChanged_fn(Element* __this)
 {
     __this->NotifyTreeRendererTransformChanged();
 }
 
-// private void NotifyTreeRendererUnrooted() :1333
+// private void NotifyTreeRendererUnrooted() :1353
 void Element__NotifyTreeRendererUnrooted_fn(Element* __this)
 {
     __this->NotifyTreeRendererUnrooted();
 }
 
-// private void NotifyTreeRendererZOrderChanged() :1236
+// private void NotifyTreeRendererZOrderChanged() :1256
 void Element__NotifyTreeRendererZOrderChanged_fn(Element* __this)
 {
     __this->NotifyTreeRendererZOrderChanged();
 }
 
-// private extern void NotifyUnrooted() :2907
+// private extern void NotifyUnrooted() :2927
 void Element__NotifyUnrooted_fn(Element* __this)
 {
     __this->NotifyUnrooted();
 }
 
-// public Uno.UX.Size2 get_Offset() :1740
+// public Uno.UX.Size2 get_Offset() :1760
 void Element__get_Offset_fn(Element* __this, ::g::Uno::UX::Size2* __retval)
 {
     *__retval = __this->Offset();
 }
 
-// public void set_Offset(Uno.UX.Size2 value) :1741
+// public void set_Offset(Uno.UX.Size2 value) :1761
 void Element__set_Offset_fn(Element* __this, ::g::Uno::UX::Size2* value)
 {
     __this->Offset(*value);
 }
 
-// internal override sealed void OnAdjustMarginBoxPosition(float2 position) :2161
+// internal override sealed void OnAdjustMarginBoxPosition(float2 position) :2181
 void Element__OnAdjustMarginBoxPosition_fn(Element* __this, ::g::Uno::Float2* position)
 {
     uStackFrame __("Fuse.Elements.Element", "OnAdjustMarginBoxPosition(float2)");
@@ -2781,7 +2793,7 @@ void Element__OnAdjustMarginBoxPosition_fn(Element* __this, ::g::Uno::Float2* po
     __this->PerformPlacement(::g::Uno::Float2__op_Addition2(__this->_actualPosition, ::g::Uno::Float2__op_Subtraction2(position_, __this->MarginBoxPosition())), __this->_actualSize, false);
 }
 
-// protected override sealed float2 OnArrangeMarginBox(float2 position, Fuse.LayoutParams lp) :2086
+// protected override sealed float2 OnArrangeMarginBox(float2 position, Fuse.LayoutParams lp) :2106
 void Element__OnArrangeMarginBox_fn(Element* __this, ::g::Uno::Float2* position, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval)
 {
     uStackFrame __("Fuse.Elements.Element", "OnArrangeMarginBox(float2,Fuse.LayoutParams)");
@@ -2792,7 +2804,7 @@ void Element__OnArrangeMarginBox_fn(Element* __this, ::g::Uno::Float2* position,
     if (bp.SanityConstrain())
     {
         if (!Element::_invalidValuesWarn())
-            ::g::Fuse::Diagnostics::InternalError(::STRINGS[13/*"Invalid val...*/], __this, ::STRINGS[7/*"/Users/eric...*/], 2093, ::STRINGS[14/*"OnArrangeMa...*/]);
+            ::g::Fuse::Diagnostics::InternalError(::STRINGS[13/*"Invalid val...*/], __this, ::STRINGS[7/*"/usr/local/...*/], 2113, ::STRINGS[14/*"OnArrangeMa...*/]);
 
         Element::_invalidValuesWarn() = true;
     }
@@ -2844,31 +2856,31 @@ void Element__OnDraw_fn(Element* __this, ::g::Fuse::DrawContext* dc)
 {
 }
 
-// private void OnEffectAdded(Fuse.Effects.Effect e) :1035
+// private void OnEffectAdded(Fuse.Effects.Effect e) :1055
 void Element__OnEffectAdded_fn(Element* __this, ::g::Fuse::Effects::Effect* e)
 {
     __this->OnEffectAdded(e);
 }
 
-// private void OnEffectRemoved(Fuse.Effects.Effect e) :1046
+// private void OnEffectRemoved(Fuse.Effects.Effect e) :1066
 void Element__OnEffectRemoved_fn(Element* __this, ::g::Fuse::Effects::Effect* e)
 {
     __this->OnEffectRemoved(e);
 }
 
-// private void OnEffectRenderBoundsChanged(Fuse.Effects.Effect e) :1062
+// private void OnEffectRenderBoundsChanged(Fuse.Effects.Effect e) :1082
 void Element__OnEffectRenderBoundsChanged_fn(Element* __this, ::g::Fuse::Effects::Effect* e)
 {
     __this->OnEffectRenderBoundsChanged(e);
 }
 
-// private void OnEffectRenderingChanged(Fuse.Effects.Effect e) :1057
+// private void OnEffectRenderingChanged(Fuse.Effects.Effect e) :1077
 void Element__OnEffectRenderingChanged_fn(Element* __this, ::g::Fuse::Effects::Effect* e)
 {
     __this->OnEffectRenderingChanged(e);
 }
 
-// protected override sealed void OnHitTest(Fuse.HitTestContext htc) :1399
+// protected override sealed void OnHitTest(Fuse.HitTestContext htc) :1419
 void Element__OnHitTest_fn(Element* __this, ::g::Fuse::HitTestContext* htc)
 {
     uStackFrame __("Fuse.Elements.Element", "OnHitTest(Fuse.HitTestContext)");
@@ -2889,25 +2901,25 @@ void Element__OnHitTest_fn(Element* __this, ::g::Fuse::HitTestContext* htc)
     }
 }
 
-// private void OnHitTestChildren(Fuse.HitTestContext htc) :1415
+// private void OnHitTestChildren(Fuse.HitTestContext htc) :1435
 void Element__OnHitTestChildren_fn(Element* __this, ::g::Fuse::HitTestContext* htc)
 {
     __this->OnHitTestChildren(htc);
 }
 
-// protected virtual void OnHitTestLocalVisual(Fuse.HitTestContext htc) :1425
+// protected virtual void OnHitTestLocalVisual(Fuse.HitTestContext htc) :1445
 void Element__OnHitTestLocalVisual_fn(Element* __this, ::g::Fuse::HitTestContext* htc)
 {
 }
 
-// protected override sealed void OnInvalidateLayout() :2688
+// protected override sealed void OnInvalidateLayout() :2708
 void Element__OnInvalidateLayout_fn(Element* __this)
 {
     ::g::Fuse::Visual__OnInvalidateLayout_fn(__this);
     __this->GMSReset();
 }
 
-// protected override sealed bool OnInvalidateRenderBounds() :2699
+// protected override sealed bool OnInvalidateRenderBounds() :2719
 void Element__OnInvalidateRenderBounds_fn(Element* __this, bool* __retval)
 {
     uStackFrame __("Fuse.Elements.Element", "OnInvalidateRenderBounds()");
@@ -2924,13 +2936,13 @@ void Element__OnInvalidateRenderBounds_fn(Element* __this, bool* __retval)
     return *__retval = false, void();
 }
 
-// private void OnInvalidateRenderBoundsWithEffects() :2714
+// private void OnInvalidateRenderBoundsWithEffects() :2734
 void Element__OnInvalidateRenderBoundsWithEffects_fn(Element* __this)
 {
     __this->OnInvalidateRenderBoundsWithEffects();
 }
 
-// protected override void OnInvalidateVisual() :2671
+// protected override void OnInvalidateVisual() :2691
 void Element__OnInvalidateVisual_fn(Element* __this)
 {
     uStackFrame __("Fuse.Elements.Element", "OnInvalidateVisual()");
@@ -2943,7 +2955,7 @@ void Element__OnInvalidateVisual_fn(Element* __this)
         uPtr(__this->ElementBatchEntry())->InvalidateVisual();
 }
 
-// protected override sealed void OnInvalidateVisualComposition() :2681
+// protected override sealed void OnInvalidateVisualComposition() :2701
 void Element__OnInvalidateVisualComposition_fn(Element* __this)
 {
     uStackFrame __("Fuse.Elements.Element", "OnInvalidateVisualComposition()");
@@ -2953,7 +2965,7 @@ void Element__OnInvalidateVisualComposition_fn(Element* __this)
         uPtr(__this->ElementBatchEntry())->InvalidateVisualComposition();
 }
 
-// protected override sealed void OnIsContextEnabledChanged() :1293
+// protected override sealed void OnIsContextEnabledChanged() :1313
 void Element__OnIsContextEnabledChanged_fn(Element* __this)
 {
     uStackFrame __("Fuse.Elements.Element", "OnIsContextEnabledChanged()");
@@ -2968,7 +2980,7 @@ void Element__OnIsContextEnabledChanged_fn(Element* __this)
     }
 }
 
-// protected override sealed void OnIsVisibleChanged() :1225
+// protected override sealed void OnIsVisibleChanged() :1245
 void Element__OnIsVisibleChanged_fn(Element* __this)
 {
     uStackFrame __("Fuse.Elements.Element", "OnIsVisibleChanged()");
@@ -2983,19 +2995,19 @@ void Element__OnIsVisibleChanged_fn(Element* __this)
     }
 }
 
-// private void OnOpacityChanged(Uno.UX.IPropertyListener origin) :2442
+// private void OnOpacityChanged(Uno.UX.IPropertyListener origin) :2462
 void Element__OnOpacityChanged_fn(Element* __this, uObject* origin)
 {
     __this->OnOpacityChanged(origin);
 }
 
-// private void OnPreplacement() :2146
+// private void OnPreplacement() :2166
 void Element__OnPreplacement_fn(Element* __this)
 {
     __this->OnPreplacement();
 }
 
-// internal override sealed void OnPreserveRootFrame() :2152
+// internal override sealed void OnPreserveRootFrame() :2172
 void Element__OnPreserveRootFrame_fn(Element* __this)
 {
     uStackFrame __("Fuse.Elements.Element", "OnPreserveRootFrame()");
@@ -3003,7 +3015,7 @@ void Element__OnPreserveRootFrame_fn(Element* __this)
     __this->OnPreplacement();
 }
 
-// protected override void OnRooted() :2329
+// protected override void OnRooted() :2349
 void Element__OnRooted_fn(Element* __this)
 {
     uStackFrame __("Fuse.Elements.Element", "OnRooted()");
@@ -3014,7 +3026,7 @@ void Element__OnRooted_fn(Element* __this)
     __this->NotifyRooted();
 }
 
-// protected internal override sealed void OnRootedPreChildren() :1304
+// protected internal override sealed void OnRootedPreChildren() :1324
 void Element__OnRootedPreChildren_fn(Element* __this)
 {
     uStackFrame __("Fuse.Elements.Element", "OnRootedPreChildren()");
@@ -3022,7 +3034,7 @@ void Element__OnRootedPreChildren_fn(Element* __this)
     ::g::Fuse::Visual__OnRootedPreChildren_fn(__this);
 }
 
-// protected override void OnUnrooted() :2346
+// protected override void OnUnrooted() :2366
 void Element__OnUnrooted_fn(Element* __this)
 {
     uStackFrame __("Fuse.Elements.Element", "OnUnrooted()");
@@ -3033,13 +3045,13 @@ void Element__OnUnrooted_fn(Element* __this)
     __this->NotifyUnrooted();
 }
 
-// private void OnVisibilityChanged(Fuse.Elements.Visibility oldVisibility, Uno.UX.IPropertyListener origin) :1663
+// private void OnVisibilityChanged(Fuse.Elements.Visibility oldVisibility, Uno.UX.IPropertyListener origin) :1683
 void Element__OnVisibilityChanged_fn(Element* __this, int* oldVisibility, uObject* origin)
 {
     __this->OnVisibilityChanged(*oldVisibility, origin);
 }
 
-// private void OnZOrderChanged() :1242
+// private void OnZOrderChanged() :1262
 void Element__OnZOrderChanged_fn(Element* __this)
 {
     __this->OnZOrderChanged();
@@ -3053,49 +3065,49 @@ void Element__OnZOrderInvalidated_fn(Element* __this)
     __this->_elementBatchValid = false;
 }
 
-// public float get_Opacity() :2430
+// public float get_Opacity() :2450
 void Element__get_Opacity_fn(Element* __this, float* __retval)
 {
     *__retval = __this->Opacity();
 }
 
-// public void set_Opacity(float value) :2431
+// public void set_Opacity(float value) :2451
 void Element__set_Opacity_fn(Element* __this, float* value)
 {
     __this->Opacity(*value);
 }
 
-// public float4 get_Padding() :1723
+// public float4 get_Padding() :1743
 void Element__get_Padding_fn(Element* __this, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->Padding();
 }
 
-// public void set_Padding(float4 value) :1724
+// public void set_Padding(float4 value) :1744
 void Element__set_Padding_fn(Element* __this, ::g::Uno::Float4* value)
 {
     __this->Padding(*value);
 }
 
-// internal void PerformPlacement(float2 position, float2 size, bool temp) :2172
+// internal void PerformPlacement(float2 position, float2 size, bool temp) :2192
 void Element__PerformPlacement_fn(Element* __this, ::g::Uno::Float2* position, ::g::Uno::Float2* size, bool* temp)
 {
     __this->PerformPlacement(*position, *size, *temp);
 }
 
-// public generated void add_Placed(Fuse.PlacedHandler value) :2134
+// public generated void add_Placed(Fuse.PlacedHandler value) :2154
 void Element__add_Placed_fn(Element* __this, uDelegate* value)
 {
     __this->add_Placed(value);
 }
 
-// public generated void remove_Placed(Fuse.PlacedHandler value) :2134
+// public generated void remove_Placed(Fuse.PlacedHandler value) :2154
 void Element__remove_Placed_fn(Element* __this, uDelegate* value)
 {
     __this->remove_Placed(value);
 }
 
-// protected override void PrependImplicitTransform(Fuse.FastMatrix m) :2634
+// protected override void PrependImplicitTransform(Fuse.FastMatrix m) :2654
 void Element__PrependImplicitTransform_fn(Element* __this, ::g::Fuse::FastMatrix* m)
 {
     uStackFrame __("Fuse.Elements.Element", "PrependImplicitTransform(Fuse.FastMatrix)");
@@ -3105,7 +3117,7 @@ void Element__PrependImplicitTransform_fn(Element* __this, ::g::Fuse::FastMatrix
         uPtr(m)->PrependTranslation1(::g::Uno::Float3__New4(::g::Uno::Float2__New2(actualPosition.X, actualPosition.Y), 0.0f));
 }
 
-// protected override sealed void PrependInverseTransformOrigin(Fuse.FastMatrix m) :2628
+// protected override sealed void PrependInverseTransformOrigin(Fuse.FastMatrix m) :2648
 void Element__PrependInverseTransformOrigin_fn(Element* __this, ::g::Fuse::FastMatrix* m)
 {
     uStackFrame __("Fuse.Elements.Element", "PrependInverseTransformOrigin(Fuse.FastMatrix)");
@@ -3113,7 +3125,7 @@ void Element__PrependInverseTransformOrigin_fn(Element* __this, ::g::Fuse::FastM
     uPtr(m)->PrependTranslation1(::g::Uno::Float3__op_UnaryNegation(off));
 }
 
-// protected override sealed void PrependTransformOrigin(Fuse.FastMatrix m) :2622
+// protected override sealed void PrependTransformOrigin(Fuse.FastMatrix m) :2642
 void Element__PrependTransformOrigin_fn(Element* __this, ::g::Fuse::FastMatrix* m)
 {
     uStackFrame __("Fuse.Elements.Element", "PrependTransformOrigin(Fuse.FastMatrix)");
@@ -3121,13 +3133,13 @@ void Element__PrependTransformOrigin_fn(Element* __this, ::g::Fuse::FastMatrix* 
     uPtr(m)->PrependTranslation1(off);
 }
 
-// public generated void add_Preplacement(Fuse.Elements.PreplacementHandler value) :2138
+// public generated void add_Preplacement(Fuse.Elements.PreplacementHandler value) :2158
 void Element__add_Preplacement_fn(Element* __this, uDelegate* value)
 {
     __this->add_Preplacement(value);
 }
 
-// public generated void remove_Preplacement(Fuse.Elements.PreplacementHandler value) :2138
+// public generated void remove_Preplacement(Fuse.Elements.PreplacementHandler value) :2158
 void Element__remove_Preplacement_fn(Element* __this, uDelegate* value)
 {
     __this->remove_Preplacement(value);
@@ -3151,43 +3163,43 @@ void Element__get_RenderBoundsWithoutEffects_fn(Element* __this, ::g::Fuse::Visu
     *__retval = __this->RenderBoundsWithoutEffects();
 }
 
-// internal void RequestLayout() :2029
+// internal void RequestLayout() :2049
 void Element__RequestLayout_fn(Element* __this)
 {
     __this->RequestLayout();
 }
 
-// private extern Uno.Collections.List<Uno.Action> get_RootedListeners() :2889
+// private extern Uno.Collections.List<Uno.Action> get_RootedListeners() :2909
 void Element__get_RootedListeners_fn(Element* __this, ::g::Uno::Collections::List** __retval)
 {
     *__retval = __this->RootedListeners();
 }
 
-// public void SetExplicitTransformOrigin(Uno.UX.Size2 value, Uno.UX.IPropertyListener origin) :2587
+// public void SetExplicitTransformOrigin(Uno.UX.Size2 value, Uno.UX.IPropertyListener origin) :2607
 void Element__SetExplicitTransformOrigin_fn(Element* __this, ::g::Uno::UX::Size2* value, uObject* origin)
 {
     __this->SetExplicitTransformOrigin(*value, origin);
 }
 
-// public void SetHitTestMode(Fuse.Elements.HitTestMode value, Uno.UX.IPropertyListener origin) :1391
+// public void SetHitTestMode(Fuse.Elements.HitTestMode value, Uno.UX.IPropertyListener origin) :1411
 void Element__SetHitTestMode_fn(Element* __this, int* value, uObject* origin)
 {
     __this->SetHitTestMode(*value, origin);
 }
 
-// private void SetNewTransform() :1262
+// private void SetNewTransform() :1282
 void Element__SetNewTransform_fn(Element* __this)
 {
     __this->SetNewTransform();
 }
 
-// public void SetOpacity(float value, Uno.UX.IPropertyListener origin) :2434
+// public void SetOpacity(float value, Uno.UX.IPropertyListener origin) :2454
 void Element__SetOpacity_fn(Element* __this, float* value, uObject* origin)
 {
     __this->SetOpacity(*value, origin);
 }
 
-// public void SetVisibility(Fuse.Elements.Visibility value, Uno.UX.IPropertyListener origin) :1655
+// public void SetVisibility(Fuse.Elements.Visibility value, Uno.UX.IPropertyListener origin) :1675
 void Element__SetVisibility_fn(Element* __this, int* value, uObject* origin)
 {
     __this->SetVisibility(*value, origin);
@@ -3199,98 +3211,98 @@ void Element__ShouldBatch_fn(Element* __this, bool* __retval)
     *__retval = __this->ShouldBatch();
 }
 
-// public Fuse.Elements.ITransformOrigin get_TransformOrigin() :2561
+// public Fuse.Elements.ITransformOrigin get_TransformOrigin() :2581
 void Element__get_TransformOrigin_fn(Element* __this, uObject** __retval)
 {
     *__retval = __this->TransformOrigin();
 }
 
-// public void set_TransformOrigin(Fuse.Elements.ITransformOrigin value) :2562
+// public void set_TransformOrigin(Fuse.Elements.ITransformOrigin value) :2582
 void Element__set_TransformOrigin_fn(Element* __this, uObject* value)
 {
     __this->TransformOrigin(value);
 }
 
-// public virtual Fuse.Elements.ITreeRenderer get_TreeRenderer() :1222
+// public virtual Fuse.Elements.ITreeRenderer get_TreeRenderer() :1242
 void Element__get_TreeRenderer_fn(Element* __this, uObject** __retval)
 {
     uStackFrame __("Fuse.Elements.Element", "get_TreeRenderer()");
     return *__retval = uIs((::g::Fuse::Visual*)__this->Parent(), Element_typeof()) ? (uObject*)uPtr(uCast<Element*>(__this->Parent(), Element_typeof()))->TreeRenderer() : NULL, void();
 }
 
-// private extern Uno.Collections.List<Uno.Action> get_UnrootedListeners() :2904
+// private extern Uno.Collections.List<Uno.Action> get_UnrootedListeners() :2924
 void Element__get_UnrootedListeners_fn(Element* __this, ::g::Uno::Collections::List** __retval)
 {
     *__retval = __this->UnrootedListeners();
 }
 
-// public Fuse.Elements.Visibility get_Visibility() :1651
+// public Fuse.Elements.Visibility get_Visibility() :1671
 void Element__get_Visibility_fn(Element* __this, int* __retval)
 {
     *__retval = __this->Visibility();
 }
 
-// public void set_Visibility(Fuse.Elements.Visibility value) :1652
+// public void set_Visibility(Fuse.Elements.Visibility value) :1672
 void Element__set_Visibility_fn(Element* __this, int* value)
 {
     __this->Visibility(*value);
 }
 
-// internal static extern Uno.IDisposable VisualAppearedFactory(object obj, Uno.Action<Uno.Rect, float4x4> handler) :2790
+// internal static extern Uno.IDisposable VisualAppearedFactory(object obj, Uno.Action<Uno.Rect, float4x4> handler) :2810
 void Element__VisualAppearedFactory_fn(uObject* obj, uDelegate* handler, uObject** __retval)
 {
     *__retval = Element::VisualAppearedFactory(obj, handler);
 }
 
-// internal static extern Uno.IDisposable VisualBoundsChangedFactory(object obj, Uno.Action<Uno.Rect> handler) :2797
+// internal static extern Uno.IDisposable VisualBoundsChangedFactory(object obj, Uno.Action<Uno.Rect> handler) :2817
 void Element__VisualBoundsChangedFactory_fn(uObject* obj, uDelegate* handler, uObject** __retval)
 {
     *__retval = Element::VisualBoundsChangedFactory(obj, handler);
 }
 
-// internal static extern Uno.IDisposable VisualDisappearedFactory(object obj, Uno.Action handler) :2830
+// internal static extern Uno.IDisposable VisualDisappearedFactory(object obj, Uno.Action handler) :2850
 void Element__VisualDisappearedFactory_fn(uObject* obj, uDelegate* handler, uObject** __retval)
 {
     *__retval = Element::VisualDisappearedFactory(obj, handler);
 }
 
-// internal static extern Uno.IDisposable VisualTransformChangedFactory(object obj, Uno.Action<float4x4> handler) :2757
+// internal static extern Uno.IDisposable VisualTransformChangedFactory(object obj, Uno.Action<float4x4> handler) :2777
 void Element__VisualTransformChangedFactory_fn(uObject* obj, uDelegate* handler, uObject** __retval)
 {
     *__retval = Element::VisualTransformChangedFactory(obj, handler);
 }
 
-// public Uno.UX.Size get_Width() :1486
+// public Uno.UX.Size get_Width() :1506
 void Element__get_Width_fn(Element* __this, ::g::Uno::UX::Size* __retval)
 {
     *__retval = __this->Width();
 }
 
-// public void set_Width(Uno.UX.Size value) :1487
+// public void set_Width(Uno.UX.Size value) :1507
 void Element__set_Width_fn(Element* __this, ::g::Uno::UX::Size* value)
 {
     __this->Width(*value);
 }
 
-// public Uno.UX.Size get_X() :1780
+// public Uno.UX.Size get_X() :1800
 void Element__get_X_fn(Element* __this, ::g::Uno::UX::Size* __retval)
 {
     *__retval = __this->X();
 }
 
-// public void set_X(Uno.UX.Size value) :1781
+// public void set_X(Uno.UX.Size value) :1801
 void Element__set_X_fn(Element* __this, ::g::Uno::UX::Size* value)
 {
     __this->X(*value);
 }
 
-// public Uno.UX.Size get_Y() :1797
+// public Uno.UX.Size get_Y() :1817
 void Element__get_Y_fn(Element* __this, ::g::Uno::UX::Size* __retval)
 {
     *__retval = __this->Y();
 }
 
-// public void set_Y(Uno.UX.Size value) :1798
+// public void set_Y(Uno.UX.Size value) :1818
 void Element__set_Y_fn(Element* __this, ::g::Uno::UX::Size* value)
 {
     __this->Y(*value);
@@ -3314,19 +3326,19 @@ void Element::ctor_3()
     ctor_2();
 }
 
-// public float2 get_ActualAnchor() [instance] :2081
+// public float2 get_ActualAnchor() [instance] :2101
 ::g::Uno::Float2 Element::ActualAnchor()
 {
     return _actualAnchor;
 }
 
-// internal void set_ActualAnchor(float2 value) [instance] :2082
+// internal void set_ActualAnchor(float2 value) [instance] :2102
 void Element::ActualAnchor(::g::Uno::Float2 value)
 {
     _actualAnchor = value;
 }
 
-// public float2 get_ActualPosition() [instance] :1885
+// public float2 get_ActualPosition() [instance] :1905
 ::g::Uno::Float2 Element::ActualPosition()
 {
     uStackFrame __("Fuse.Elements.Element", "get_ActualPosition()");
@@ -3350,19 +3362,19 @@ void Element::ActualAnchor(::g::Uno::Float2 value)
     return p;
 }
 
-// public float2 get_ActualSize() [instance] :1919
+// public float2 get_ActualSize() [instance] :1939
 ::g::Uno::Float2 Element::ActualSize()
 {
     return _actualSize;
 }
 
-// public Fuse.Elements.Alignment get_Alignment() [instance] :1612
+// public Fuse.Elements.Alignment get_Alignment() [instance] :1632
 int Element::Alignment()
 {
     return _alignment;
 }
 
-// public void set_Alignment(Fuse.Elements.Alignment value) [instance] :1613
+// public void set_Alignment(Fuse.Elements.Alignment value) [instance] :1633
 void Element::Alignment(int value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_Alignment(Fuse.Elements.Alignment)");
@@ -3374,7 +3386,7 @@ void Element::Alignment(int value)
     }
 }
 
-// private Fuse.Elements.Element get_AncestorElement() [instance] :2402
+// private Fuse.Elements.Element get_AncestorElement() [instance] :2422
 Element* Element::AncestorElement()
 {
     uStackFrame __("Fuse.Elements.Element", "get_AncestorElement()");
@@ -3393,7 +3405,7 @@ Element* Element::AncestorElement()
     return NULL;
 }
 
-// public Uno.UX.Size2 get_Anchor() [instance] :1763
+// public Uno.UX.Size2 get_Anchor() [instance] :1783
 ::g::Uno::UX::Size2 Element::Anchor()
 {
     uStackFrame __("Fuse.Elements.Element", "get_Anchor()");
@@ -3401,7 +3413,7 @@ Element* Element::AncestorElement()
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[23/*Fuse.Visual.Get<Uno.UX.Size2>*/], uCRef<int>(4096), uCRef(::g::Uno::UX::Size2__Auto()), &ret27), ret27);
 }
 
-// public void set_Anchor(Uno.UX.Size2 value) [instance] :1764
+// public void set_Anchor(Uno.UX.Size2 value) [instance] :1784
 void Element::Anchor(::g::Uno::UX::Size2 value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_Anchor(Uno.UX.Size2)");
@@ -3453,13 +3465,13 @@ void Element::AspectConstraint(int value)
     }
 }
 
-// public Fuse.Elements.Element.BoxSizingMode get_BoxSizing() [instance] :2004
+// public Fuse.Elements.Element.BoxSizingMode get_BoxSizing() [instance] :2024
 int Element::BoxSizing()
 {
     return _boxSizingMode;
 }
 
-// public void set_BoxSizing(Fuse.Elements.Element.BoxSizingMode value) [instance] :2005
+// public void set_BoxSizing(Fuse.Elements.Element.BoxSizingMode value) [instance] :2025
 void Element::BoxSizing(int value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_BoxSizing(Fuse.Elements.Element.BoxSizingMode)");
@@ -3501,13 +3513,13 @@ void Element::BoxSizing(int value)
     InvalidateLayout(2);
 }
 
-// internal Fuse.Elements.BoxSizing get_BoxSizingObject() [instance] :2026
+// internal Fuse.Elements.BoxSizing get_BoxSizingObject() [instance] :2046
 ::g::Fuse::Elements::BoxSizing* Element::BoxSizingObject()
 {
     return _boxSizing;
 }
 
-// private Fuse.Elements.Cache get_Cache() [instance] :1070
+// private Fuse.Elements.Cache get_Cache() [instance] :1090
 ::g::Fuse::Elements::Cache* Element::Cache()
 {
     uStackFrame __("Fuse.Elements.Element", "get_Cache()");
@@ -3566,7 +3578,7 @@ void Element::CachingMode(int value)
 
     if ((fsz.X > ::g::Uno::Graphics::Texture2D::MaxSize()) || (fsz.Y > ::g::Uno::Graphics::Texture2D::MaxSize()))
     {
-        ::g::Uno::Diagnostics::Debug::Log5(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::STRINGS[5/*"CaptureRegi...*/], uBox(::g::Uno::Int2_typeof(), fsz)), ::STRINGS[6/*", max-size: "*/]), uBox<int>(::g::Uno::Int_typeof(), ::g::Uno::Graphics::Texture2D::MaxSize())), 1, ::STRINGS[7/*"/Users/eric...*/], 913);
+        ::g::Uno::Diagnostics::Debug::Log5(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::STRINGS[5/*"CaptureRegi...*/], uBox(::g::Uno::Int2_typeof(), fsz)), ::STRINGS[6/*", max-size: "*/]), uBox<int>(::g::Uno::Int_typeof(), ::g::Uno::Graphics::Texture2D::MaxSize())), 0, ::STRINGS[7/*"/usr/local/...*/], 913);
         return NULL;
     }
 
@@ -3600,13 +3612,13 @@ void Element::CleanupBatching()
     }
 }
 
-// public bool get_ClipToBounds() [instance] :1814
+// public bool get_ClipToBounds() [instance] :1834
 bool Element::ClipToBounds()
 {
     return HasBit(1048576);
 }
 
-// public void set_ClipToBounds(bool value) [instance] :1815
+// public void set_ClipToBounds(bool value) [instance] :1835
 void Element::ClipToBounds(bool value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_ClipToBounds(bool)");
@@ -3620,7 +3632,7 @@ void Element::ClipToBounds(bool value)
     }
 }
 
-// private void Composit(Fuse.DrawContext dc) [instance] :1076
+// private void Composit(Fuse.DrawContext dc) [instance] :1096
 void Element::Composit(::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Elements.Element", "Composit(Fuse.DrawContext)");
@@ -3640,13 +3652,13 @@ void Element::Composit(::g::Fuse::DrawContext* dc)
         return;
     }
 
-    if (FastTrackDrawWithOpacity(dc))
+    if (!HasActiveEffects() && FastTrackDrawWithOpacity(dc))
         return;
 
     if (!flat && !_warnOpacityFlat)
     {
         _warnOpacityFlat = true;
-        ::g::Fuse::Diagnostics::UserWarning(::STRINGS[8/*"This elemen...*/], this, ::STRINGS[7/*"/Users/eric...*/], 1099, ::STRINGS[9/*"Composit"*/]);
+        ::g::Fuse::Diagnostics::UserWarning(::STRINGS[8/*"This elemen...*/], this, ::STRINGS[7/*"/usr/local/...*/], 1119, ::STRINGS[9/*"Composit"*/]);
     }
 
     bool r = uPtr(Cache())->DrawCached(dc);
@@ -3654,11 +3666,11 @@ void Element::Composit(::g::Fuse::DrawContext* dc)
     if (!r && !_warnNoCacheDraw)
     {
         _warnNoCacheDraw = true;
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[10/*"This elemen...*/], this, ::STRINGS[7/*"/Users/eric...*/], 1107, ::STRINGS[9/*"Composit"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[10/*"This elemen...*/], this, ::STRINGS[7/*"/usr/local/...*/], 1127, ::STRINGS[9/*"Composit"*/]);
     }
 }
 
-// internal void CompositEffects(Fuse.DrawContext dc) [instance] :1116
+// internal void CompositEffects(Fuse.DrawContext dc) [instance] :1136
 void Element::CompositEffects(::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Elements.Element", "CompositEffects(Fuse.DrawContext)");
@@ -3709,7 +3721,7 @@ void Element::CompositEffects(::g::Fuse::DrawContext* dc)
         }
 }
 
-// private void DispatchPlacement() [instance] :2231
+// private void DispatchPlacement() [instance] :2251
 void Element::DispatchPlacement()
 {
     uStackFrame __("Fuse.Elements.Element", "DispatchPlacement()");
@@ -3773,7 +3785,7 @@ void Element::DrawUnderlayChildren(::g::Fuse::DrawContext* dc)
         uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(ZOrder()), uCRef<int>(i), &ret21), ret21))->Draw(dc);
 }
 
-// private Uno.Collections.IList<Fuse.Effects.Effect> get_Effects() [instance] :996
+// private Uno.Collections.IList<Fuse.Effects.Effect> get_Effects() [instance] :1016
 uObject* Element::Effects()
 {
     uStackFrame __("Fuse.Elements.Element", "get_Effects()");
@@ -3784,19 +3796,19 @@ uObject* Element::Effects()
     return (uObject*)_effects;
 }
 
-// internal generated Fuse.Elements.ElementBatchEntry get_ElementBatchEntry() [instance] :1073
+// internal generated Fuse.Elements.ElementBatchEntry get_ElementBatchEntry() [instance] :1093
 ::g::Fuse::Elements::ElementBatchEntry* Element::ElementBatchEntry()
 {
     return _ElementBatchEntry;
 }
 
-// internal generated void set_ElementBatchEntry(Fuse.Elements.ElementBatchEntry value) [instance] :1073
+// internal generated void set_ElementBatchEntry(Fuse.Elements.ElementBatchEntry value) [instance] :1093
 void Element::ElementBatchEntry(::g::Fuse::Elements::ElementBatchEntry* value)
 {
     _ElementBatchEntry = value;
 }
 
-// public Uno.UX.Size2 get_ExplicitTransformOrigin() [instance] :2577
+// public Uno.UX.Size2 get_ExplicitTransformOrigin() [instance] :2597
 ::g::Uno::UX::Size2 Element::ExplicitTransformOrigin()
 {
     uStackFrame __("Fuse.Elements.Element", "get_ExplicitTransformOrigin()");
@@ -3808,21 +3820,21 @@ void Element::ElementBatchEntry(::g::Fuse::Elements::ElementBatchEntry* value)
     return uDefault< ::g::Uno::UX::Size2>();
 }
 
-// public void set_ExplicitTransformOrigin(Uno.UX.Size2 value) [instance] :2584
+// public void set_ExplicitTransformOrigin(Uno.UX.Size2 value) [instance] :2604
 void Element::ExplicitTransformOrigin(::g::Uno::UX::Size2 value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_ExplicitTransformOrigin(Uno.UX.Size2)");
     SetExplicitTransformOrigin(value, (uObject*)this);
 }
 
-// protected internal float2 GetArrangePaddingSize(Fuse.LayoutParams lp) [instance] :2066
+// protected internal float2 GetArrangePaddingSize(Fuse.LayoutParams lp) [instance] :2086
 ::g::Uno::Float2 Element::GetArrangePaddingSize(::g::Fuse::LayoutParams lp)
 {
     uStackFrame __("Fuse.Elements.Element", "GetArrangePaddingSize(Fuse.LayoutParams)");
     return uPtr(_boxSizing)->CalcArrangePaddingSize(this, lp);
 }
 
-// internal float2 GetLayoutPositionIn(Fuse.Visual target) [instance] :2282
+// internal float2 GetLayoutPositionIn(Fuse.Visual target) [instance] :2302
 ::g::Uno::Float2 Element::GetLayoutPositionIn(::g::Fuse::Visual* target)
 {
     uStackFrame __("Fuse.Elements.Element", "GetLayoutPositionIn(Fuse.Visual)");
@@ -3872,14 +3884,14 @@ void Element::ExplicitTransformOrigin(::g::Uno::UX::Size2 value)
     return i;
 }
 
-// private void GMSReset() [instance] :1975
+// private void GMSReset() [instance] :1995
 void Element::GMSReset()
 {
     _gmsCount = 0;
     _gmsAt = 0;
 }
 
-// private bool get_HasActiveEffects() [instance] :1012
+// private bool get_HasActiveEffects() [instance] :1032
 bool Element::HasActiveEffects()
 {
     uStackFrame __("Fuse.Elements.Element", "get_HasActiveEffects()");
@@ -3898,20 +3910,20 @@ bool Element::HasActiveEffects()
     return false;
 }
 
-// private bool get_HasCompositionEffect() [instance] :1032
+// private bool get_HasCompositionEffect() [instance] :1052
 bool Element::HasCompositionEffect()
 {
     return _compositionEffects > 0;
 }
 
-// private bool get_HasEffects() [instance] :1006
+// private bool get_HasEffects() [instance] :1026
 bool Element::HasEffects()
 {
     uStackFrame __("Fuse.Elements.Element", "get_HasEffects()");
     return (_effects != NULL) && (uPtr(_effects)->Count() > 0);
 }
 
-// internal bool HasLayoutIn(Fuse.Visual target) [instance] :2266
+// internal bool HasLayoutIn(Fuse.Visual target) [instance] :2286
 bool Element::HasLayoutIn(::g::Fuse::Visual* target)
 {
     uStackFrame __("Fuse.Elements.Element", "HasLayoutIn(Fuse.Visual)");
@@ -3928,13 +3940,13 @@ bool Element::HasLayoutIn(::g::Fuse::Visual* target)
     return true;
 }
 
-// public Uno.UX.Size get_Height() [instance] :1508
+// public Uno.UX.Size get_Height() [instance] :1528
 ::g::Uno::UX::Size Element::Height()
 {
     return _height;
 }
 
-// public void set_Height(Uno.UX.Size value) [instance] :1509
+// public void set_Height(Uno.UX.Size value) [instance] :1529
 void Element::Height(::g::Uno::UX::Size value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_Height(Uno.UX.Size)");
@@ -3946,7 +3958,7 @@ void Element::Height(::g::Uno::UX::Size value)
     }
 }
 
-// public Fuse.Elements.HitTestMode get_HitTestMode() [instance] :1387
+// public Fuse.Elements.HitTestMode get_HitTestMode() [instance] :1407
 int Element::HitTestMode()
 {
     uStackFrame __("Fuse.Elements.Element", "get_HitTestMode()");
@@ -3954,41 +3966,41 @@ int Element::HitTestMode()
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[31/*Fuse.Visual.Get<Fuse.Elements.HitTestMode>*/], uCRef<int>(524288), uCRef<int>(5), &ret33), ret33);
 }
 
-// public void set_HitTestMode(Fuse.Elements.HitTestMode value) [instance] :1388
+// public void set_HitTestMode(Fuse.Elements.HitTestMode value) [instance] :1408
 void Element::HitTestMode(int value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_HitTestMode(Fuse.Elements.HitTestMode)");
     SetHitTestMode(value, (uObject*)this);
 }
 
-// internal float2 get_IntendedPosition() [instance] :1929
+// internal float2 get_IntendedPosition() [instance] :1949
 ::g::Uno::Float2 Element::IntendedPosition()
 {
     uStackFrame __("Fuse.Elements.Element", "get_IntendedPosition()");
     return ActualPosition();
 }
 
-// internal float2 get_IntendedSize() [instance] :1924
+// internal float2 get_IntendedSize() [instance] :1944
 ::g::Uno::Float2 Element::IntendedSize()
 {
     return _intendedSize;
 }
 
-// internal void InternArrangePaddingBox(Fuse.LayoutParams lp) [instance] :2251
+// internal void InternArrangePaddingBox(Fuse.LayoutParams lp) [instance] :2271
 void Element::InternArrangePaddingBox(::g::Fuse::LayoutParams lp)
 {
     uStackFrame __("Fuse.Elements.Element", "InternArrangePaddingBox(Fuse.LayoutParams)");
     ArrangePaddingBox(lp);
 }
 
-// internal float2 InternGetContentSize(Fuse.LayoutParams lp) [instance] :2056
+// internal float2 InternGetContentSize(Fuse.LayoutParams lp) [instance] :2076
 ::g::Uno::Float2 Element::InternGetContentSize(::g::Fuse::LayoutParams lp)
 {
     uStackFrame __("Fuse.Elements.Element", "InternGetContentSize(Fuse.LayoutParams)");
     return GetContentSize(lp);
 }
 
-// public void InvalidateRenderBoundsWithEffects() [instance] :2723
+// public void InvalidateRenderBoundsWithEffects() [instance] :2743
 void Element::InvalidateRenderBoundsWithEffects()
 {
     uStackFrame __("Fuse.Elements.Element", "InvalidateRenderBoundsWithEffects()");
@@ -3998,13 +4010,13 @@ void Element::InvalidateRenderBoundsWithEffects()
         uPtr(Parent())->InvalidateRenderBounds();
 }
 
-// public bool IsPointInside(float2 localPoint) [instance] :1374
+// public bool IsPointInside(float2 localPoint) [instance] :1394
 bool Element::IsPointInside(::g::Uno::Float2 localPoint)
 {
     return !((((localPoint.X < 0.0f) || (localPoint.Y < 0.0f)) || (localPoint.X > ActualSize().X)) || (localPoint.Y > ActualSize().Y));
 }
 
-// public Uno.UX.Size get_LimitHeight() [instance] :3499
+// public Uno.UX.Size get_LimitHeight() [instance] :3519
 ::g::Uno::UX::Size Element::LimitHeight()
 {
     uStackFrame __("Fuse.Elements.Element", "get_LimitHeight()");
@@ -4012,7 +4024,7 @@ bool Element::IsPointInside(::g::Uno::Float2 localPoint)
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[32/*Fuse.Visual.Get<Uno.UX.Size>*/], uCRef<int>(16777216), uCRef(::g::Uno::UX::Size__Auto()), &ret34), ret34);
 }
 
-// public void set_LimitHeight(Uno.UX.Size value) [instance] :3500
+// public void set_LimitHeight(Uno.UX.Size value) [instance] :3520
 void Element::LimitHeight(::g::Uno::UX::Size value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_LimitHeight(Uno.UX.Size)");
@@ -4024,7 +4036,7 @@ void Element::LimitHeight(::g::Uno::UX::Size value)
     }
 }
 
-// public Uno.UX.Size get_LimitWidth() [instance] :3517
+// public Uno.UX.Size get_LimitWidth() [instance] :3537
 ::g::Uno::UX::Size Element::LimitWidth()
 {
     uStackFrame __("Fuse.Elements.Element", "get_LimitWidth()");
@@ -4032,7 +4044,7 @@ void Element::LimitHeight(::g::Uno::UX::Size value)
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[32/*Fuse.Visual.Get<Uno.UX.Size>*/], uCRef<int>(8388608), uCRef(::g::Uno::UX::Size__Auto()), &ret35), ret35);
 }
 
-// public void set_LimitWidth(Uno.UX.Size value) [instance] :3518
+// public void set_LimitWidth(Uno.UX.Size value) [instance] :3538
 void Element::LimitWidth(::g::Uno::UX::Size value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_LimitWidth(Uno.UX.Size)");
@@ -4044,7 +4056,7 @@ void Element::LimitWidth(::g::Uno::UX::Size value)
     }
 }
 
-// public float4 get_Margin() [instance] :1693
+// public float4 get_Margin() [instance] :1713
 ::g::Uno::Float4 Element::Margin()
 {
     uStackFrame __("Fuse.Elements.Element", "get_Margin()");
@@ -4052,7 +4064,7 @@ void Element::LimitWidth(::g::Uno::UX::Size value)
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[34/*Fuse.Visual.Get<float4>*/], uCRef<int>(1024), uCRef(::g::Uno::Float4__New1(0.0f)), &ret36), ret36);
 }
 
-// public void set_Margin(float4 value) [instance] :1694
+// public void set_Margin(float4 value) [instance] :1714
 void Element::Margin(::g::Uno::Float4 value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_Margin(float4)");
@@ -4064,7 +4076,7 @@ void Element::Margin(::g::Uno::Float4 value)
     }
 }
 
-// public Uno.UX.Size get_MaxHeight() [instance] :1592
+// public Uno.UX.Size get_MaxHeight() [instance] :1612
 ::g::Uno::UX::Size Element::MaxHeight()
 {
     uStackFrame __("Fuse.Elements.Element", "get_MaxHeight()");
@@ -4072,7 +4084,7 @@ void Element::Margin(::g::Uno::Float4 value)
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[32/*Fuse.Visual.Get<Uno.UX.Size>*/], uCRef<int>(512), uCRef(::g::Uno::UX::Size__Auto()), &ret37), ret37);
 }
 
-// public void set_MaxHeight(Uno.UX.Size value) [instance] :1593
+// public void set_MaxHeight(Uno.UX.Size value) [instance] :1613
 void Element::MaxHeight(::g::Uno::UX::Size value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_MaxHeight(Uno.UX.Size)");
@@ -4084,7 +4096,7 @@ void Element::MaxHeight(::g::Uno::UX::Size value)
     }
 }
 
-// public Uno.UX.Size get_MaxWidth() [instance] :1571
+// public Uno.UX.Size get_MaxWidth() [instance] :1591
 ::g::Uno::UX::Size Element::MaxWidth()
 {
     uStackFrame __("Fuse.Elements.Element", "get_MaxWidth()");
@@ -4092,7 +4104,7 @@ void Element::MaxHeight(::g::Uno::UX::Size value)
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[32/*Fuse.Visual.Get<Uno.UX.Size>*/], uCRef<int>(256), uCRef(::g::Uno::UX::Size__Auto()), &ret38), ret38);
 }
 
-// public void set_MaxWidth(Uno.UX.Size value) [instance] :1572
+// public void set_MaxWidth(Uno.UX.Size value) [instance] :1592
 void Element::MaxWidth(::g::Uno::UX::Size value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_MaxWidth(Uno.UX.Size)");
@@ -4104,7 +4116,7 @@ void Element::MaxWidth(::g::Uno::UX::Size value)
     }
 }
 
-// public Uno.UX.Size get_MinHeight() [instance] :1550
+// public Uno.UX.Size get_MinHeight() [instance] :1570
 ::g::Uno::UX::Size Element::MinHeight()
 {
     uStackFrame __("Fuse.Elements.Element", "get_MinHeight()");
@@ -4112,7 +4124,7 @@ void Element::MaxWidth(::g::Uno::UX::Size value)
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[32/*Fuse.Visual.Get<Uno.UX.Size>*/], uCRef<int>(128), uCRef(::g::Uno::UX::Size__Auto()), &ret39), ret39);
 }
 
-// public void set_MinHeight(Uno.UX.Size value) [instance] :1551
+// public void set_MinHeight(Uno.UX.Size value) [instance] :1571
 void Element::MinHeight(::g::Uno::UX::Size value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_MinHeight(Uno.UX.Size)");
@@ -4124,7 +4136,7 @@ void Element::MinHeight(::g::Uno::UX::Size value)
     }
 }
 
-// public Uno.UX.Size get_MinWidth() [instance] :1529
+// public Uno.UX.Size get_MinWidth() [instance] :1549
 ::g::Uno::UX::Size Element::MinWidth()
 {
     uStackFrame __("Fuse.Elements.Element", "get_MinWidth()");
@@ -4132,7 +4144,7 @@ void Element::MinHeight(::g::Uno::UX::Size value)
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[32/*Fuse.Visual.Get<Uno.UX.Size>*/], uCRef<int>(64), uCRef(::g::Uno::UX::Size__Auto()), &ret40), ret40);
 }
 
-// public void set_MinWidth(Uno.UX.Size value) [instance] :1530
+// public void set_MinWidth(Uno.UX.Size value) [instance] :1550
 void Element::MinWidth(::g::Uno::UX::Size value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_MinWidth(Uno.UX.Size)");
@@ -4150,7 +4162,7 @@ bool Element::NeedsClipping()
     return ClipToBounds();
 }
 
-// private extern void NotifyRooted() [instance] :2892
+// private extern void NotifyRooted() [instance] :2912
 void Element::NotifyRooted()
 {
     uStackFrame __("Fuse.Elements.Element", "NotifyRooted()");
@@ -4165,7 +4177,7 @@ void Element::NotifyRooted()
         }
 }
 
-// private void NotifyTreeRedererOpacityChanged() [instance] :1283
+// private void NotifyTreeRedererOpacityChanged() [instance] :1303
 void Element::NotifyTreeRedererOpacityChanged()
 {
     uStackFrame __("Fuse.Elements.Element", "NotifyTreeRedererOpacityChanged()");
@@ -4179,7 +4191,7 @@ void Element::NotifyTreeRedererOpacityChanged()
     }
 }
 
-// private void NotifyTreeRendererHitTestModeChanged() [instance] :1273
+// private void NotifyTreeRendererHitTestModeChanged() [instance] :1293
 void Element::NotifyTreeRendererHitTestModeChanged()
 {
     uStackFrame __("Fuse.Elements.Element", "NotifyTreeRendererHitTestModeChanged()");
@@ -4193,7 +4205,7 @@ void Element::NotifyTreeRendererHitTestModeChanged()
     }
 }
 
-// private void NotifyTreeRendererPlaced() [instance] :2244
+// private void NotifyTreeRendererPlaced() [instance] :2264
 void Element::NotifyTreeRendererPlaced()
 {
     uStackFrame __("Fuse.Elements.Element", "NotifyTreeRendererPlaced()");
@@ -4203,7 +4215,7 @@ void Element::NotifyTreeRendererPlaced()
         ::g::Fuse::Elements::ITreeRenderer::Placed(uInterface(uPtr(t), ::TYPES[14/*Fuse.Elements.ITreeRenderer*/]), this);
 }
 
-// private void NotifyTreeRendererRooted() [instance] :1317
+// private void NotifyTreeRendererRooted() [instance] :1337
 void Element::NotifyTreeRendererRooted()
 {
     uStackFrame __("Fuse.Elements.Element", "NotifyTreeRendererRooted()");
@@ -4223,7 +4235,7 @@ void Element::NotifyTreeRendererRooted()
     }
 }
 
-// private void NotifyTreeRendererRootingStarted() [instance] :1310
+// private void NotifyTreeRendererRootingStarted() [instance] :1330
 void Element::NotifyTreeRendererRootingStarted()
 {
     uStackFrame __("Fuse.Elements.Element", "NotifyTreeRendererRootingStarted()");
@@ -4233,7 +4245,7 @@ void Element::NotifyTreeRendererRootingStarted()
         ::g::Fuse::Elements::ITreeRenderer::RootingStarted(uInterface(uPtr(t), ::TYPES[14/*Fuse.Elements.ITreeRenderer*/]), this);
 }
 
-// private void NotifyTreeRendererTransformChanged() [instance] :1253
+// private void NotifyTreeRendererTransformChanged() [instance] :1273
 void Element::NotifyTreeRendererTransformChanged()
 {
     uStackFrame __("Fuse.Elements.Element", "NotifyTreeRendererTransformChanged()");
@@ -4245,7 +4257,7 @@ void Element::NotifyTreeRendererTransformChanged()
     }
 }
 
-// private void NotifyTreeRendererUnrooted() [instance] :1333
+// private void NotifyTreeRendererUnrooted() [instance] :1353
 void Element::NotifyTreeRendererUnrooted()
 {
     uStackFrame __("Fuse.Elements.Element", "NotifyTreeRendererUnrooted()");
@@ -4255,7 +4267,7 @@ void Element::NotifyTreeRendererUnrooted()
         ::g::Fuse::Elements::ITreeRenderer::Unrooted(uInterface(uPtr(TreeRenderer()), ::TYPES[14/*Fuse.Elements.ITreeRenderer*/]), this);
 }
 
-// private void NotifyTreeRendererZOrderChanged() [instance] :1236
+// private void NotifyTreeRendererZOrderChanged() [instance] :1256
 void Element::NotifyTreeRendererZOrderChanged()
 {
     uStackFrame __("Fuse.Elements.Element", "NotifyTreeRendererZOrderChanged()");
@@ -4264,7 +4276,7 @@ void Element::NotifyTreeRendererZOrderChanged()
         ::g::Fuse::UpdateManager::AddDeferredAction(uDelegate::New(::TYPES[15/*Uno.Action*/], (void*)Element__OnZOrderChanged_fn, this), 1, ::g::Fuse::LayoutPriority::Post());
 }
 
-// private extern void NotifyUnrooted() [instance] :2907
+// private extern void NotifyUnrooted() [instance] :2927
 void Element::NotifyUnrooted()
 {
     uStackFrame __("Fuse.Elements.Element", "NotifyUnrooted()");
@@ -4279,7 +4291,7 @@ void Element::NotifyUnrooted()
         }
 }
 
-// public Uno.UX.Size2 get_Offset() [instance] :1740
+// public Uno.UX.Size2 get_Offset() [instance] :1760
 ::g::Uno::UX::Size2 Element::Offset()
 {
     uStackFrame __("Fuse.Elements.Element", "get_Offset()");
@@ -4287,7 +4299,7 @@ void Element::NotifyUnrooted()
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[23/*Fuse.Visual.Get<Uno.UX.Size2>*/], uCRef<int>(8192), uCRef(::g::Uno::UX::Size2__Auto()), &ret41), ret41);
 }
 
-// public void set_Offset(Uno.UX.Size2 value) [instance] :1741
+// public void set_Offset(Uno.UX.Size2 value) [instance] :1761
 void Element::Offset(::g::Uno::UX::Size2 value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_Offset(Uno.UX.Size2)");
@@ -4299,7 +4311,7 @@ void Element::Offset(::g::Uno::UX::Size2 value)
     }
 }
 
-// private void OnEffectAdded(Fuse.Effects.Effect e) [instance] :1035
+// private void OnEffectAdded(Fuse.Effects.Effect e) [instance] :1055
 void Element::OnEffectAdded(::g::Fuse::Effects::Effect* e)
 {
     uStackFrame __("Fuse.Elements.Element", "OnEffectAdded(Fuse.Effects.Effect)");
@@ -4313,7 +4325,7 @@ void Element::OnEffectAdded(::g::Fuse::Effects::Effect* e)
     InvalidateVisual();
 }
 
-// private void OnEffectRemoved(Fuse.Effects.Effect e) [instance] :1046
+// private void OnEffectRemoved(Fuse.Effects.Effect e) [instance] :1066
 void Element::OnEffectRemoved(::g::Fuse::Effects::Effect* e)
 {
     uStackFrame __("Fuse.Elements.Element", "OnEffectRemoved(Fuse.Effects.Effect)");
@@ -4328,21 +4340,21 @@ void Element::OnEffectRemoved(::g::Fuse::Effects::Effect* e)
     InvalidateVisual();
 }
 
-// private void OnEffectRenderBoundsChanged(Fuse.Effects.Effect e) [instance] :1062
+// private void OnEffectRenderBoundsChanged(Fuse.Effects.Effect e) [instance] :1082
 void Element::OnEffectRenderBoundsChanged(::g::Fuse::Effects::Effect* e)
 {
     uStackFrame __("Fuse.Elements.Element", "OnEffectRenderBoundsChanged(Fuse.Effects.Effect)");
     InvalidateRenderBoundsWithEffects();
 }
 
-// private void OnEffectRenderingChanged(Fuse.Effects.Effect e) [instance] :1057
+// private void OnEffectRenderingChanged(Fuse.Effects.Effect e) [instance] :1077
 void Element::OnEffectRenderingChanged(::g::Fuse::Effects::Effect* e)
 {
     uStackFrame __("Fuse.Elements.Element", "OnEffectRenderingChanged(Fuse.Effects.Effect)");
     InvalidateVisual();
 }
 
-// private void OnHitTestChildren(Fuse.HitTestContext htc) [instance] :1415
+// private void OnHitTestChildren(Fuse.HitTestContext htc) [instance] :1435
 void Element::OnHitTestChildren(::g::Fuse::HitTestContext* htc)
 {
     uStackFrame __("Fuse.Elements.Element", "OnHitTestChildren(Fuse.HitTestContext)");
@@ -4357,7 +4369,7 @@ void Element::OnHitTestChildren(::g::Fuse::HitTestContext* htc)
     }
 }
 
-// private void OnInvalidateRenderBoundsWithEffects() [instance] :2714
+// private void OnInvalidateRenderBoundsWithEffects() [instance] :2734
 void Element::OnInvalidateRenderBoundsWithEffects()
 {
     uStackFrame __("Fuse.Elements.Element", "OnInvalidateRenderBoundsWithEffects()");
@@ -4368,7 +4380,7 @@ void Element::OnInvalidateRenderBoundsWithEffects()
     _renderBoundsWithEffects = NULL;
 }
 
-// private void OnOpacityChanged(Uno.UX.IPropertyListener origin) [instance] :2442
+// private void OnOpacityChanged(Uno.UX.IPropertyListener origin) [instance] :2462
 void Element::OnOpacityChanged(uObject* origin)
 {
     uStackFrame __("Fuse.Elements.Element", "OnOpacityChanged(Uno.UX.IPropertyListener)");
@@ -4377,7 +4389,7 @@ void Element::OnOpacityChanged(uObject* origin)
     NotifyTreeRedererOpacityChanged();
 }
 
-// private void OnPreplacement() [instance] :2146
+// private void OnPreplacement() [instance] :2166
 void Element::OnPreplacement()
 {
     uStackFrame __("Fuse.Elements.Element", "OnPreplacement()");
@@ -4386,7 +4398,7 @@ void Element::OnPreplacement()
         uPtr(Preplacement1)->Invoke(2, this, (::g::Fuse::Elements::PreplacementArgs*)::g::Fuse::Elements::PreplacementArgs::New2(_placedBefore != NULL));
 }
 
-// private void OnVisibilityChanged(Fuse.Elements.Visibility oldVisibility, Uno.UX.IPropertyListener origin) [instance] :1663
+// private void OnVisibilityChanged(Fuse.Elements.Visibility oldVisibility, Uno.UX.IPropertyListener origin) [instance] :1683
 void Element::OnVisibilityChanged(int oldVisibility, uObject* origin)
 {
     uStackFrame __("Fuse.Elements.Element", "OnVisibilityChanged(Fuse.Elements.Visibility,Uno.UX.IPropertyListener)");
@@ -4399,7 +4411,7 @@ void Element::OnVisibilityChanged(int oldVisibility, uObject* origin)
     InvalidateVisualComposition();
 }
 
-// private void OnZOrderChanged() [instance] :1242
+// private void OnZOrderChanged() [instance] :1262
 void Element::OnZOrderChanged()
 {
     uStackFrame __("Fuse.Elements.Element", "OnZOrderChanged()");
@@ -4413,7 +4425,7 @@ void Element::OnZOrderChanged()
     }
 }
 
-// public float get_Opacity() [instance] :2430
+// public float get_Opacity() [instance] :2450
 float Element::Opacity()
 {
     uStackFrame __("Fuse.Elements.Element", "get_Opacity()");
@@ -4421,14 +4433,14 @@ float Element::Opacity()
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[25/*Fuse.Visual.Get<float>*/], uCRef<int>(4194304), uCRef(1.0f), &ret42), ret42);
 }
 
-// public void set_Opacity(float value) [instance] :2431
+// public void set_Opacity(float value) [instance] :2451
 void Element::Opacity(float value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_Opacity(float)");
     SetOpacity(value, (uObject*)this);
 }
 
-// public float4 get_Padding() [instance] :1723
+// public float4 get_Padding() [instance] :1743
 ::g::Uno::Float4 Element::Padding()
 {
     uStackFrame __("Fuse.Elements.Element", "get_Padding()");
@@ -4436,7 +4448,7 @@ void Element::Opacity(float value)
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[34/*Fuse.Visual.Get<float4>*/], uCRef<int>(2048), uCRef(::g::Uno::Float4__New1(0.0f)), &ret43), ret43);
 }
 
-// public void set_Padding(float4 value) [instance] :1724
+// public void set_Padding(float4 value) [instance] :1744
 void Element::Padding(::g::Uno::Float4 value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_Padding(float4)");
@@ -4448,7 +4460,7 @@ void Element::Padding(::g::Uno::Float4 value)
     }
 }
 
-// internal void PerformPlacement(float2 position, float2 size, bool temp) [instance] :2172
+// internal void PerformPlacement(float2 position, float2 size, bool temp) [instance] :2192
 void Element::PerformPlacement(::g::Uno::Float2 position, ::g::Uno::Float2 size, bool temp)
 {
     uStackFrame __("Fuse.Elements.Element", "PerformPlacement(float2,float2,bool)");
@@ -4503,28 +4515,28 @@ void Element::PerformPlacement(::g::Uno::Float2 position, ::g::Uno::Float2 size,
         InvalidateLocalTransform();
 }
 
-// public generated void add_Placed(Fuse.PlacedHandler value) [instance] :2134
+// public generated void add_Placed(Fuse.PlacedHandler value) [instance] :2154
 void Element::add_Placed(uDelegate* value)
 {
     uStackFrame __("Fuse.Elements.Element", "add_Placed(Fuse.PlacedHandler)");
     Placed1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Placed1, value), ::TYPES[0/*Fuse.PlacedHandler*/]);
 }
 
-// public generated void remove_Placed(Fuse.PlacedHandler value) [instance] :2134
+// public generated void remove_Placed(Fuse.PlacedHandler value) [instance] :2154
 void Element::remove_Placed(uDelegate* value)
 {
     uStackFrame __("Fuse.Elements.Element", "remove_Placed(Fuse.PlacedHandler)");
     Placed1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Placed1, value), ::TYPES[0/*Fuse.PlacedHandler*/]);
 }
 
-// public generated void add_Preplacement(Fuse.Elements.PreplacementHandler value) [instance] :2138
+// public generated void add_Preplacement(Fuse.Elements.PreplacementHandler value) [instance] :2158
 void Element::add_Preplacement(uDelegate* value)
 {
     uStackFrame __("Fuse.Elements.Element", "add_Preplacement(Fuse.Elements.PreplacementHandler)");
     Preplacement1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Preplacement1, value), ::TYPES[39/*Fuse.Elements.PreplacementHandler*/]);
 }
 
-// public generated void remove_Preplacement(Fuse.Elements.PreplacementHandler value) [instance] :2138
+// public generated void remove_Preplacement(Fuse.Elements.PreplacementHandler value) [instance] :2158
 void Element::remove_Preplacement(uDelegate* value)
 {
     uStackFrame __("Fuse.Elements.Element", "remove_Preplacement(Fuse.Elements.PreplacementHandler)");
@@ -4574,21 +4586,21 @@ void Element::RemoveChildElementFromBatching(Element* elm)
     return _renderBoundsWithoutEffects;
 }
 
-// internal void RequestLayout() [instance] :2029
+// internal void RequestLayout() [instance] :2049
 void Element::RequestLayout()
 {
     uStackFrame __("Fuse.Elements.Element", "RequestLayout()");
     uPtr(_boxSizing)->RequestLayout(this);
 }
 
-// private extern Uno.Collections.List<Uno.Action> get_RootedListeners() [instance] :2889
+// private extern Uno.Collections.List<Uno.Action> get_RootedListeners() [instance] :2909
 ::g::Uno::Collections::List* Element::RootedListeners()
 {
     ::g::Uno::Collections::List* ind12 = _rootedListeners;
     return (ind12 != NULL) ? ind12 : (::g::Uno::Collections::List*)(_rootedListeners = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New2(::TYPES[36/*Uno.Collections.List<Uno.Action>*/], 1)));
 }
 
-// public void SetExplicitTransformOrigin(Uno.UX.Size2 value, Uno.UX.IPropertyListener origin) [instance] :2587
+// public void SetExplicitTransformOrigin(Uno.UX.Size2 value, Uno.UX.IPropertyListener origin) [instance] :2607
 void Element::SetExplicitTransformOrigin(::g::Uno::UX::Size2 value, uObject* origin)
 {
     uStackFrame __("Fuse.Elements.Element", "SetExplicitTransformOrigin(Uno.UX.Size2,Uno.UX.IPropertyListener)");
@@ -4612,7 +4624,7 @@ void Element::SetExplicitTransformOrigin(::g::Uno::UX::Size2 value, uObject* ori
     OnPropertyChanged1(Element::ExplicitTransformOriginName(), origin);
 }
 
-// public void SetHitTestMode(Fuse.Elements.HitTestMode value, Uno.UX.IPropertyListener origin) [instance] :1391
+// public void SetHitTestMode(Fuse.Elements.HitTestMode value, Uno.UX.IPropertyListener origin) [instance] :1411
 void Element::SetHitTestMode(int value, uObject* origin)
 {
     uStackFrame __("Fuse.Elements.Element", "SetHitTestMode(Fuse.Elements.HitTestMode,Uno.UX.IPropertyListener)");
@@ -4622,7 +4634,7 @@ void Element::SetHitTestMode(int value, uObject* origin)
     NotifyTreeRendererHitTestModeChanged();
 }
 
-// private void SetNewTransform() [instance] :1262
+// private void SetNewTransform() [instance] :1282
 void Element::SetNewTransform()
 {
     uStackFrame __("Fuse.Elements.Element", "SetNewTransform()");
@@ -4638,7 +4650,7 @@ void Element::SetNewTransform()
     _transformChanged = false;
 }
 
-// public void SetOpacity(float value, Uno.UX.IPropertyListener origin) [instance] :2434
+// public void SetOpacity(float value, Uno.UX.IPropertyListener origin) [instance] :2454
 void Element::SetOpacity(float value, uObject* origin)
 {
     uStackFrame __("Fuse.Elements.Element", "SetOpacity(float,Uno.UX.IPropertyListener)");
@@ -4650,7 +4662,7 @@ void Element::SetOpacity(float value, uObject* origin)
     }
 }
 
-// public void SetVisibility(Fuse.Elements.Visibility value, Uno.UX.IPropertyListener origin) [instance] :1655
+// public void SetVisibility(Fuse.Elements.Visibility value, Uno.UX.IPropertyListener origin) [instance] :1675
 void Element::SetVisibility(int value, uObject* origin)
 {
     uStackFrame __("Fuse.Elements.Element", "SetVisibility(Fuse.Elements.Visibility,Uno.UX.IPropertyListener)");
@@ -4680,7 +4692,7 @@ bool Element::ShouldBatch()
     return batchable > (::g::Uno::Collections::ICollection::Count(uInterface(uPtr(Children()), ::TYPES[22/*Uno.Collections.ICollection<Fuse.Node>*/])) / 2);
 }
 
-// public Fuse.Elements.ITransformOrigin get_TransformOrigin() [instance] :2561
+// public Fuse.Elements.ITransformOrigin get_TransformOrigin() [instance] :2581
 uObject* Element::TransformOrigin()
 {
     uStackFrame __("Fuse.Elements.Element", "get_TransformOrigin()");
@@ -4688,7 +4700,7 @@ uObject* Element::TransformOrigin()
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[37/*Fuse.Visual.Get<Fuse.Elements.ITransformOrigin>*/], uCRef<int>(2097152), Element::DefaultTransformOrigin(), &ret44), ret44);
 }
 
-// public void set_TransformOrigin(Fuse.Elements.ITransformOrigin value) [instance] :2562
+// public void set_TransformOrigin(Fuse.Elements.ITransformOrigin value) [instance] :2582
 void Element::TransformOrigin(uObject* value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_TransformOrigin(Fuse.Elements.ITransformOrigin)");
@@ -4700,33 +4712,33 @@ void Element::TransformOrigin(uObject* value)
     }
 }
 
-// private extern Uno.Collections.List<Uno.Action> get_UnrootedListeners() [instance] :2904
+// private extern Uno.Collections.List<Uno.Action> get_UnrootedListeners() [instance] :2924
 ::g::Uno::Collections::List* Element::UnrootedListeners()
 {
     ::g::Uno::Collections::List* ind13 = _unrootedListeners;
     return (ind13 != NULL) ? ind13 : (::g::Uno::Collections::List*)(_unrootedListeners = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New2(::TYPES[36/*Uno.Collections.List<Uno.Action>*/], 1)));
 }
 
-// public Fuse.Elements.Visibility get_Visibility() [instance] :1651
+// public Fuse.Elements.Visibility get_Visibility() [instance] :1671
 int Element::Visibility()
 {
     return _visibility;
 }
 
-// public void set_Visibility(Fuse.Elements.Visibility value) [instance] :1652
+// public void set_Visibility(Fuse.Elements.Visibility value) [instance] :1672
 void Element::Visibility(int value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_Visibility(Fuse.Elements.Visibility)");
     SetVisibility(value, (uObject*)this);
 }
 
-// public Uno.UX.Size get_Width() [instance] :1486
+// public Uno.UX.Size get_Width() [instance] :1506
 ::g::Uno::UX::Size Element::Width()
 {
     return _width;
 }
 
-// public void set_Width(Uno.UX.Size value) [instance] :1487
+// public void set_Width(Uno.UX.Size value) [instance] :1507
 void Element::Width(::g::Uno::UX::Size value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_Width(Uno.UX.Size)");
@@ -4738,7 +4750,7 @@ void Element::Width(::g::Uno::UX::Size value)
     }
 }
 
-// public Uno.UX.Size get_X() [instance] :1780
+// public Uno.UX.Size get_X() [instance] :1800
 ::g::Uno::UX::Size Element::X()
 {
     uStackFrame __("Fuse.Elements.Element", "get_X()");
@@ -4746,7 +4758,7 @@ void Element::Width(::g::Uno::UX::Size value)
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[32/*Fuse.Visual.Get<Uno.UX.Size>*/], uCRef<int>(16384), uCRef(::g::Uno::UX::Size__Auto()), &ret45), ret45);
 }
 
-// public void set_X(Uno.UX.Size value) [instance] :1781
+// public void set_X(Uno.UX.Size value) [instance] :1801
 void Element::X(::g::Uno::UX::Size value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_X(Uno.UX.Size)");
@@ -4758,7 +4770,7 @@ void Element::X(::g::Uno::UX::Size value)
     }
 }
 
-// public Uno.UX.Size get_Y() [instance] :1797
+// public Uno.UX.Size get_Y() [instance] :1817
 ::g::Uno::UX::Size Element::Y()
 {
     uStackFrame __("Fuse.Elements.Element", "get_Y()");
@@ -4766,7 +4778,7 @@ void Element::X(::g::Uno::UX::Size value)
     return (::g::Fuse::Visual__Get_fn(this, ::TYPES[32/*Fuse.Visual.Get<Uno.UX.Size>*/], uCRef<int>(32768), uCRef(::g::Uno::UX::Size__Auto()), &ret46), ret46);
 }
 
-// public void set_Y(Uno.UX.Size value) [instance] :1798
+// public void set_Y(Uno.UX.Size value) [instance] :1818
 void Element::Y(::g::Uno::UX::Size value)
 {
     uStackFrame __("Fuse.Elements.Element", "set_Y(Uno.UX.Size)");
@@ -4778,7 +4790,7 @@ void Element::Y(::g::Uno::UX::Size value)
     }
 }
 
-// internal static extern Uno.IDisposable VisualAppearedFactory(object obj, Uno.Action<Uno.Rect, float4x4> handler) [static] :2790
+// internal static extern Uno.IDisposable VisualAppearedFactory(object obj, Uno.Action<Uno.Rect, float4x4> handler) [static] :2810
 uObject* Element::VisualAppearedFactory(uObject* obj, uDelegate* handler)
 {
     uStackFrame __("Fuse.Elements.Element", "VisualAppearedFactory(object,Uno.Action<Uno.Rect, float4x4>)");
@@ -4786,7 +4798,7 @@ uObject* Element::VisualAppearedFactory(uObject* obj, uDelegate* handler)
     return uIs(obj, Element_typeof()) ? (uObject*)Element__VisualAppeared::New1(uCast<Element*>(obj, Element_typeof()), handler) : (uObject*)Element__DefaultDisposable::Instance();
 }
 
-// internal static extern Uno.IDisposable VisualBoundsChangedFactory(object obj, Uno.Action<Uno.Rect> handler) [static] :2797
+// internal static extern Uno.IDisposable VisualBoundsChangedFactory(object obj, Uno.Action<Uno.Rect> handler) [static] :2817
 uObject* Element::VisualBoundsChangedFactory(uObject* obj, uDelegate* handler)
 {
     uStackFrame __("Fuse.Elements.Element", "VisualBoundsChangedFactory(object,Uno.Action<Uno.Rect>)");
@@ -4794,7 +4806,7 @@ uObject* Element::VisualBoundsChangedFactory(uObject* obj, uDelegate* handler)
     return uIs(obj, Element_typeof()) ? (uObject*)Element__BoundsChanged::New1(uCast<Element*>(obj, Element_typeof()), handler) : (uObject*)Element__DefaultDisposable::Instance();
 }
 
-// internal static extern Uno.IDisposable VisualDisappearedFactory(object obj, Uno.Action handler) [static] :2830
+// internal static extern Uno.IDisposable VisualDisappearedFactory(object obj, Uno.Action handler) [static] :2850
 uObject* Element::VisualDisappearedFactory(uObject* obj, uDelegate* handler)
 {
     uStackFrame __("Fuse.Elements.Element", "VisualDisappearedFactory(object,Uno.Action)");
@@ -4802,7 +4814,7 @@ uObject* Element::VisualDisappearedFactory(uObject* obj, uDelegate* handler)
     return uIs(obj, Element_typeof()) ? (uObject*)Element__VisualDisappeared::New1(uCast<Element*>(obj, Element_typeof()), handler) : (uObject*)Element__DefaultDisposable::Instance();
 }
 
-// internal static extern Uno.IDisposable VisualTransformChangedFactory(object obj, Uno.Action<float4x4> handler) [static] :2757
+// internal static extern Uno.IDisposable VisualTransformChangedFactory(object obj, Uno.Action<float4x4> handler) [static] :2777
 uObject* Element::VisualTransformChangedFactory(uObject* obj, uDelegate* handler)
 {
     uStackFrame __("Fuse.Elements.Element", "VisualTransformChangedFactory(object,Uno.Action<float4x4>)");
@@ -4811,10 +4823,10 @@ uObject* Element::VisualTransformChangedFactory(uObject* obj, uDelegate* handler
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno
+// ---------------------------------------------------------------
 
-// internal sealed class ElementAtlas :624
+// internal sealed class ElementAtlas :636
 // {
 static void ElementAtlas_build(uType* type)
 {
@@ -4847,97 +4859,97 @@ uType* ElementAtlas_typeof()
     return type;
 }
 
-// public ElementAtlas() :636
+// public ElementAtlas() :648
 void ElementAtlas__ctor__fn(ElementAtlas* __this)
 {
     __this->ctor_();
 }
 
-// public bool AddElement(Fuse.Elements.Element elm) :668
+// public bool AddElement(Fuse.Elements.Element elm) :680
 void ElementAtlas__AddElement_fn(ElementAtlas* __this, ::g::Fuse::Elements::Element* elm, bool* __retval)
 {
     *__retval = __this->AddElement(elm);
 }
 
-// public void Dispose() :643
+// public void Dispose() :655
 void ElementAtlas__Dispose_fn(ElementAtlas* __this)
 {
     __this->Dispose();
 }
 
-// private void FillFramebuffer(Fuse.DrawContext dc, bool drawAll, Uno.Rect scissorRectInClipSpace) :784
-void ElementAtlas__FillFramebuffer_fn(ElementAtlas* __this, ::g::Fuse::DrawContext* dc, bool* drawAll, ::g::Uno::Rect* scissorRectInClipSpace)
+// private void FillFramebuffer(Fuse.DrawContext dc, framebuffer fb, bool drawAll, Uno.Rect scissorRectInClipSpace) :788
+void ElementAtlas__FillFramebuffer_fn(ElementAtlas* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Graphics::Framebuffer* fb, bool* drawAll, ::g::Uno::Rect* scissorRectInClipSpace)
 {
-    __this->FillFramebuffer(dc, *drawAll, *scissorRectInClipSpace);
+    __this->FillFramebuffer(dc, fb, *drawAll, *scissorRectInClipSpace);
 }
 
-// public static Uno.Rect GetScissorRectInClipSpace(Fuse.DrawContext dc) :752
+// public static Uno.Rect GetScissorRectInClipSpace(Fuse.DrawContext dc) :764
 void ElementAtlas__GetScissorRectInClipSpace_fn(::g::Fuse::DrawContext* dc, ::g::Uno::Rect* __retval)
 {
     *__retval = ElementAtlas::GetScissorRectInClipSpace(dc);
 }
 
-// internal void InvalidateElement(Fuse.Elements.Element elm) :655
+// internal void InvalidateElement(Fuse.Elements.Element elm) :667
 void ElementAtlas__InvalidateElement_fn(ElementAtlas* __this, ::g::Fuse::Elements::Element* elm)
 {
     __this->InvalidateElement(elm);
 }
 
-// public ElementAtlas New() :636
+// public ElementAtlas New() :648
 void ElementAtlas__New1_fn(ElementAtlas** __retval)
 {
     *__retval = ElementAtlas::New1();
 }
 
-// private void OnFramebufferCollected(object sender, Uno.EventArgs eventArgs) :649
+// private void OnFramebufferCollected(object sender, Uno.EventArgs eventArgs) :661
 void ElementAtlas__OnFramebufferCollected_fn(ElementAtlas* __this, uObject* sender, ::g::Uno::EventArgs* eventArgs)
 {
     __this->OnFramebufferCollected(sender, eventArgs);
 }
 
-// public framebuffer PinAndValidateFramebuffer(Fuse.DrawContext dc) :757
+// public framebuffer PinAndValidateFramebuffer(Fuse.DrawContext dc) :769
 void ElementAtlas__PinAndValidateFramebuffer_fn(ElementAtlas* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Graphics::Framebuffer** __retval)
 {
     *__retval = __this->PinAndValidateFramebuffer(dc);
 }
 
-// public bool ReinsertElement(Fuse.Elements.Element elm) :710
+// public bool ReinsertElement(Fuse.Elements.Element elm) :721
 void ElementAtlas__ReinsertElement_fn(ElementAtlas* __this, ::g::Fuse::Elements::Element* elm, bool* __retval)
 {
     *__retval = __this->ReinsertElement(elm);
 }
 
-// public void RemoveElement(Fuse.Elements.Element elm) :692
+// public void RemoveElement(Fuse.Elements.Element elm) :703
 void ElementAtlas__RemoveElement_fn(ElementAtlas* __this, ::g::Fuse::Elements::Element* elm)
 {
     __this->RemoveElement(elm);
 }
 
-// public float get_SpilledRatio() :632
+// public float get_SpilledRatio() :644
 void ElementAtlas__get_SpilledRatio_fn(ElementAtlas* __this, float* __retval)
 {
     *__retval = __this->SpilledRatio();
 }
 
-// public void Unpin() :779
+// public void Unpin() :783
 void ElementAtlas__Unpin_fn(ElementAtlas* __this)
 {
     __this->Unpin();
 }
 
-// private static float2 WindowCoordToClipSpace(float2 input, int2 viewportSize) :738
+// private static float2 WindowCoordToClipSpace(float2 input, int2 viewportSize) :750
 void ElementAtlas__WindowCoordToClipSpace_fn(::g::Uno::Float2* input, ::g::Uno::Int2* viewportSize, ::g::Uno::Float2* __retval)
 {
     *__retval = ElementAtlas::WindowCoordToClipSpace(*input, *viewportSize);
 }
 
-// private static Uno.Rect WindowRectToClipSpace(Uno.Rect input, int2 viewportSize) :743
+// private static Uno.Rect WindowRectToClipSpace(Uno.Rect input, int2 viewportSize) :755
 void ElementAtlas__WindowRectToClipSpace_fn(::g::Uno::Rect* input, ::g::Uno::Int2* viewportSize, ::g::Uno::Rect* __retval)
 {
     *__retval = ElementAtlas::WindowRectToClipSpace(*input, *viewportSize);
 }
 
-// public ElementAtlas() [instance] :636
+// public ElementAtlas() [instance] :648
 void ElementAtlas::ctor_()
 {
     uStackFrame __("Fuse.Elements.ElementAtlas", ".ctor()");
@@ -4947,15 +4959,11 @@ void ElementAtlas::ctor_()
     _rectPacker = ::g::Fuse::Internal::RectPacker::New1(::g::Fuse::Elements::ElementAtlasFramebuffer::Size());
 }
 
-// public bool AddElement(Fuse.Elements.Element elm) [instance] :668
+// public bool AddElement(Fuse.Elements.Element elm) [instance] :680
 bool ElementAtlas::AddElement(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.ElementAtlas", "AddElement(Fuse.Elements.Element)");
-    ::g::Uno::Recti cacheRect;
-
-    if (!::g::Fuse::Elements::Cache::GetCachingRect1(elm, &cacheRect))
-        return false;
-
+    ::g::Uno::Recti cacheRect = ::g::Fuse::Elements::ElementBatch::GetCachingRect(elm);
     ::g::Uno::Recti rect;
 
     if (!uPtr(_rectPacker)->TryAdd(cacheRect.Size(), &rect))
@@ -4970,14 +4978,14 @@ bool ElementAtlas::AddElement(::g::Fuse::Elements::Element* elm)
         uPtr(uPtr(entry)->_atlas)->RemoveElement(elm);
 
     uPtr(entry)->_atlas = this;
-    entry->_rect = rect;
+    entry->AtlasRect = rect;
     ::g::Uno::Collections::List__Add_fn(uPtr(_elements), elm);
     _invalidElements++;
     entry->IsValid = false;
     return true;
 }
 
-// public void Dispose() [instance] :643
+// public void Dispose() [instance] :655
 void ElementAtlas::Dispose()
 {
     uStackFrame __("Fuse.Elements.ElementAtlas", "Dispose()");
@@ -4985,12 +4993,13 @@ void ElementAtlas::Dispose()
     uPtr(_framebuffer)->Dispose();
 }
 
-// private void FillFramebuffer(Fuse.DrawContext dc, bool drawAll, Uno.Rect scissorRectInClipSpace) [instance] :784
-void ElementAtlas::FillFramebuffer(::g::Fuse::DrawContext* dc, bool drawAll, ::g::Uno::Rect scissorRectInClipSpace)
+// private void FillFramebuffer(Fuse.DrawContext dc, framebuffer fb, bool drawAll, Uno.Rect scissorRectInClipSpace) [instance] :788
+void ElementAtlas::FillFramebuffer(::g::Fuse::DrawContext* dc, ::g::Uno::Graphics::Framebuffer* fb, bool drawAll, ::g::Uno::Rect scissorRectInClipSpace)
 {
-    uStackFrame __("Fuse.Elements.ElementAtlas", "FillFramebuffer(Fuse.DrawContext,bool,Uno.Rect)");
+    uStackFrame __("Fuse.Elements.ElementAtlas", "FillFramebuffer(Fuse.DrawContext,framebuffer,bool,Uno.Rect)");
     ::g::Fuse::OrthographicFrustum* collection3;
     ::g::Uno::Collections::List__Enumerator<uStrong< ::g::Fuse::Elements::Element*> > ret7;
+    bool framebufferPushed = false;
     float density = uPtr(dc)->ViewportPixelsPerPoint();
     ::g::Uno::Float2 viewport = ::g::Uno::Float2__op_Division1(::g::Uno::Float2__op_Implicit1(uPtr(_rectPacker)->Size()), density);
 
@@ -5008,7 +5017,7 @@ void ElementAtlas::FillFramebuffer(::g::Fuse::DrawContext* dc, bool drawAll, ::g
                 continue;
 
             ::g::Uno::Recti cachingRect = ::g::Fuse::Elements::ElementBatch::GetCachingRect(elm);
-            ::g::Uno::Float2 offset = ::g::Uno::Float2__op_Division1(::g::Uno::Float2__op_Implicit1(::g::Uno::Int2__op_Subtraction1(uPtr(entry)->_rect.Minimum(), cachingRect.Minimum())), density);
+            ::g::Uno::Float2 offset = ::g::Uno::Float2__op_Division1(::g::Uno::Float2__op_Implicit1(::g::Uno::Int2__op_Subtraction1(uPtr(entry)->AtlasRect.Minimum(), cachingRect.Minimum())), density);
             ::g::Uno::Float4x4 translation = ::g::Uno::Matrix::Translation(offset.X, offset.Y, 0.0f);
             collection3 = ::g::Fuse::OrthographicFrustum::New1();
             ::g::Uno::Float2 ind4 = ::g::Uno::Float2__New2(0.0f, 0.0f);
@@ -5020,8 +5029,19 @@ void ElementAtlas::FillFramebuffer(::g::Fuse::DrawContext* dc, bool drawAll, ::g
             uPtr(collection3)->LocalFromWorld(ind5);
             ;
             ::g::Fuse::OrthographicFrustum* cc = collection3;
+
+            if (!framebufferPushed)
+            {
+                uPtr(dc)->PushRenderTarget(fb);
+
+                if (drawAll)
+                    uPtr(dc)->Clear(::g::Uno::Float4__New1(0.0f), 1.0f);
+
+                framebufferPushed = true;
+            }
+
             dc->PushViewport((uObject*)::g::Fuse::FixedViewport::New1(uPtr(_rectPacker)->Size(), density, (uObject*)cc));
-            ::g::Uno::Recti scissor = entry->_rect;
+            ::g::Uno::Recti scissor = entry->AtlasRect;
 
             if (elm->ClipToBounds())
                 scissor = uPtr(elm)->GetVisibleViewportInvertPixelRect(dc, uPtr(elm)->RenderBoundsWithEffects());
@@ -5041,9 +5061,12 @@ void ElementAtlas::FillFramebuffer(::g::Fuse::DrawContext* dc, bool drawAll, ::g
             entry->IsValid = true;
         }
     }
+
+    if (framebufferPushed)
+        uPtr(dc)->PopRenderTarget();
 }
 
-// internal void InvalidateElement(Fuse.Elements.Element elm) [instance] :655
+// internal void InvalidateElement(Fuse.Elements.Element elm) [instance] :667
 void ElementAtlas::InvalidateElement(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.ElementAtlas", "InvalidateElement(Fuse.Elements.Element)");
@@ -5059,7 +5082,7 @@ void ElementAtlas::InvalidateElement(::g::Fuse::Elements::Element* elm)
     }
 }
 
-// private void OnFramebufferCollected(object sender, Uno.EventArgs eventArgs) [instance] :649
+// private void OnFramebufferCollected(object sender, Uno.EventArgs eventArgs) [instance] :661
 void ElementAtlas::OnFramebufferCollected(uObject* sender, ::g::Uno::EventArgs* eventArgs)
 {
     uStackFrame __("Fuse.Elements.ElementAtlas", "OnFramebufferCollected(object,Uno.EventArgs)");
@@ -5072,7 +5095,7 @@ void ElementAtlas::OnFramebufferCollected(uObject* sender, ::g::Uno::EventArgs* 
     }
 }
 
-// public framebuffer PinAndValidateFramebuffer(Fuse.DrawContext dc) [instance] :757
+// public framebuffer PinAndValidateFramebuffer(Fuse.DrawContext dc) [instance] :769
 ::g::Uno::Graphics::Framebuffer* ElementAtlas::PinAndValidateFramebuffer(::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Elements.ElementAtlas", "PinAndValidateFramebuffer(Fuse.DrawContext)");
@@ -5081,24 +5104,14 @@ void ElementAtlas::OnFramebufferCollected(uObject* sender, ::g::Uno::EventArgs* 
     if (_invalidElements > 0)
     {
         ::g::Uno::Rect scissorRectInClipSpace = ElementAtlas::GetScissorRectInClipSpace(dc);
-        uPtr(dc)->PushRenderTarget(fb);
         bool drawAll = _invalidElements == uPtr(_elements)->Count();
-
-        if (drawAll)
-        {
-            uPtr(dc)->Clear(::g::Uno::Float4__New1(0.0f), 1.0f);
-            FillFramebuffer(dc, true, scissorRectInClipSpace);
-        }
-        else
-            FillFramebuffer(dc, false, scissorRectInClipSpace);
-
-        dc->PopRenderTarget();
+        FillFramebuffer(dc, fb, drawAll, scissorRectInClipSpace);
     }
 
     return fb;
 }
 
-// public bool ReinsertElement(Fuse.Elements.Element elm) [instance] :710
+// public bool ReinsertElement(Fuse.Elements.Element elm) [instance] :721
 bool ElementAtlas::ReinsertElement(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.ElementAtlas", "ReinsertElement(Fuse.Elements.Element)");
@@ -5121,8 +5134,8 @@ bool ElementAtlas::ReinsertElement(::g::Fuse::Elements::Element* elm)
     if (!uPtr(_rectPacker)->TryAdd(cacheRect.Size(), &rect))
         return false;
 
-    _spilledPixels = (_spilledPixels + uPtr(entry)->_rect.Area());
-    entry->_rect = rect;
+    _spilledPixels = (_spilledPixels + uPtr(entry)->AtlasRect.Area());
+    entry->AtlasRect = rect;
 
     if (entry->IsValid)
     {
@@ -5133,7 +5146,7 @@ bool ElementAtlas::ReinsertElement(::g::Fuse::Elements::Element* elm)
     return true;
 }
 
-// public void RemoveElement(Fuse.Elements.Element elm) [instance] :692
+// public void RemoveElement(Fuse.Elements.Element elm) [instance] :703
 void ElementAtlas::RemoveElement(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.ElementAtlas", "RemoveElement(Fuse.Elements.Element)");
@@ -5143,7 +5156,7 @@ void ElementAtlas::RemoveElement(::g::Fuse::Elements::Element* elm)
     if (uPtr(entry)->_atlas != this)
         U_THROW(::g::Uno::Exception::New2(::STRINGS[17/*"Removing fr...*/]));
 
-    _spilledPixels = (_spilledPixels + uPtr(entry)->_rect.Area());
+    _spilledPixels = (_spilledPixels + uPtr(entry)->AtlasRect.Area());
 
     if (!entry->IsValid)
         _invalidElements--;
@@ -5152,28 +5165,28 @@ void ElementAtlas::RemoveElement(::g::Fuse::Elements::Element* elm)
     entry->_atlas = NULL;
 }
 
-// public float get_SpilledRatio() [instance] :632
+// public float get_SpilledRatio() [instance] :644
 float ElementAtlas::SpilledRatio()
 {
     uStackFrame __("Fuse.Elements.ElementAtlas", "get_SpilledRatio()");
     return (float)_spilledPixels / (float)(uPtr(_rectPacker)->Size().X * uPtr(_rectPacker)->Size().Y);
 }
 
-// public void Unpin() [instance] :779
+// public void Unpin() [instance] :783
 void ElementAtlas::Unpin()
 {
     uStackFrame __("Fuse.Elements.ElementAtlas", "Unpin()");
     uPtr(_framebuffer)->Unpin();
 }
 
-// public static Uno.Rect GetScissorRectInClipSpace(Fuse.DrawContext dc) [static] :752
+// public static Uno.Rect GetScissorRectInClipSpace(Fuse.DrawContext dc) [static] :764
 ::g::Uno::Rect ElementAtlas::GetScissorRectInClipSpace(::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Elements.ElementAtlas", "GetScissorRectInClipSpace(Fuse.DrawContext)");
     return ElementAtlas::WindowRectToClipSpace(::g::Uno::Rect__op_Implicit(uPtr(dc)->Scissor()), uPtr(dc)->GLViewportPixelSize());
 }
 
-// public ElementAtlas New() [static] :636
+// public ElementAtlas New() [static] :648
 ElementAtlas* ElementAtlas::New1()
 {
     ElementAtlas* obj6 = (ElementAtlas*)uNew(ElementAtlas_typeof());
@@ -5181,13 +5194,13 @@ ElementAtlas* ElementAtlas::New1()
     return obj6;
 }
 
-// private static float2 WindowCoordToClipSpace(float2 input, int2 viewportSize) [static] :738
+// private static float2 WindowCoordToClipSpace(float2 input, int2 viewportSize) [static] :750
 ::g::Uno::Float2 ElementAtlas::WindowCoordToClipSpace(::g::Uno::Float2 input, ::g::Uno::Int2 viewportSize)
 {
     return ::g::Uno::Float2__op_Subtraction1(::g::Uno::Float2__op_Multiply1(::g::Uno::Float2__op_Division2(input, ::g::Uno::Float2__op_Implicit1(viewportSize)), 2.0f), 1.0f);
 }
 
-// private static Uno.Rect WindowRectToClipSpace(Uno.Rect input, int2 viewportSize) [static] :743
+// private static Uno.Rect WindowRectToClipSpace(Uno.Rect input, int2 viewportSize) [static] :755
 ::g::Uno::Rect ElementAtlas::WindowRectToClipSpace(::g::Uno::Rect input, ::g::Uno::Int2 viewportSize)
 {
     ::g::Uno::Float2 leftTop = ElementAtlas::WindowCoordToClipSpace(input.LeftTop(), viewportSize);
@@ -5196,10 +5209,10 @@ ElementAtlas* ElementAtlas::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno
+// ---------------------------------------------------------------
 
-// internal sealed class ElementAtlasFramebuffer :335
+// internal sealed class ElementAtlasFramebuffer :347
 // {
 static void ElementAtlasFramebuffer_build(uType* type)
 {
@@ -5228,78 +5241,78 @@ uType* ElementAtlasFramebuffer_typeof()
     return type;
 }
 
-// public generated ElementAtlasFramebuffer() :335
+// public generated ElementAtlasFramebuffer() :347
 void ElementAtlasFramebuffer__ctor__fn(ElementAtlasFramebuffer* __this)
 {
     __this->ctor_();
 }
 
-// internal void Collect() :378
+// internal void Collect() :390
 void ElementAtlasFramebuffer__Collect_fn(ElementAtlasFramebuffer* __this)
 {
     __this->Collect();
 }
 
-// public void Dispose() :340
+// public void Dispose() :352
 void ElementAtlasFramebuffer__Dispose_fn(ElementAtlasFramebuffer* __this)
 {
     __this->Dispose();
 }
 
-// internal generated void add_FramebufferCollected(Uno.EventHandler value) :376
+// internal generated void add_FramebufferCollected(Uno.EventHandler value) :388
 void ElementAtlasFramebuffer__add_FramebufferCollected_fn(ElementAtlasFramebuffer* __this, uDelegate* value)
 {
     __this->add_FramebufferCollected(value);
 }
 
-// internal generated void remove_FramebufferCollected(Uno.EventHandler value) :376
+// internal generated void remove_FramebufferCollected(Uno.EventHandler value) :388
 void ElementAtlasFramebuffer__remove_FramebufferCollected_fn(ElementAtlasFramebuffer* __this, uDelegate* value)
 {
     __this->remove_FramebufferCollected(value);
 }
 
-// public generated ElementAtlasFramebuffer New() :335
+// public generated ElementAtlasFramebuffer New() :347
 void ElementAtlasFramebuffer__New1_fn(ElementAtlasFramebuffer** __retval)
 {
     *__retval = ElementAtlasFramebuffer::New1();
 }
 
-// internal framebuffer Pin() :346
+// internal framebuffer Pin() :358
 void ElementAtlasFramebuffer__Pin_fn(ElementAtlasFramebuffer* __this, ::g::Uno::Graphics::Framebuffer** __retval)
 {
     *__retval = __this->Pin();
 }
 
-// internal generated bool get_Pinned() :338
+// internal generated bool get_Pinned() :350
 void ElementAtlasFramebuffer__get_Pinned_fn(ElementAtlasFramebuffer* __this, bool* __retval)
 {
     *__retval = __this->Pinned();
 }
 
-// private generated void set_Pinned(bool value) :338
+// private generated void set_Pinned(bool value) :350
 void ElementAtlasFramebuffer__set_Pinned_fn(ElementAtlasFramebuffer* __this, bool* value)
 {
     __this->Pinned(*value);
 }
 
-// public static int2 get_Size() :390
+// public static int2 get_Size() :402
 void ElementAtlasFramebuffer__get_Size_fn(::g::Uno::Int2* __retval)
 {
     *__retval = ElementAtlasFramebuffer::Size();
 }
 
-// internal void Unpin() :368
+// internal void Unpin() :380
 void ElementAtlasFramebuffer__Unpin_fn(ElementAtlasFramebuffer* __this)
 {
     __this->Unpin();
 }
 
-// public generated ElementAtlasFramebuffer() [instance] :335
+// public generated ElementAtlasFramebuffer() [instance] :347
 void ElementAtlasFramebuffer::ctor_()
 {
 }
 
-// internal void Collect() [instance] :378
+// internal void Collect() [instance] :390
 void ElementAtlasFramebuffer::Collect()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebuffer", "Collect()");
@@ -5315,7 +5328,7 @@ void ElementAtlasFramebuffer::Collect()
     _fb = NULL;
 }
 
-// public void Dispose() [instance] :340
+// public void Dispose() [instance] :352
 void ElementAtlasFramebuffer::Dispose()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebuffer", "Dispose()");
@@ -5324,21 +5337,21 @@ void ElementAtlasFramebuffer::Dispose()
         Collect();
 }
 
-// internal generated void add_FramebufferCollected(Uno.EventHandler value) [instance] :376
+// internal generated void add_FramebufferCollected(Uno.EventHandler value) [instance] :388
 void ElementAtlasFramebuffer::add_FramebufferCollected(uDelegate* value)
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebuffer", "add_FramebufferCollected(Uno.EventHandler)");
     FramebufferCollected1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(FramebufferCollected1, value), ::TYPES[41/*Uno.EventHandler*/]);
 }
 
-// internal generated void remove_FramebufferCollected(Uno.EventHandler value) [instance] :376
+// internal generated void remove_FramebufferCollected(Uno.EventHandler value) [instance] :388
 void ElementAtlasFramebuffer::remove_FramebufferCollected(uDelegate* value)
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebuffer", "remove_FramebufferCollected(Uno.EventHandler)");
     FramebufferCollected1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(FramebufferCollected1, value), ::TYPES[41/*Uno.EventHandler*/]);
 }
 
-// internal framebuffer Pin() [instance] :346
+// internal framebuffer Pin() [instance] :358
 ::g::Uno::Graphics::Framebuffer* ElementAtlasFramebuffer::Pin()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebuffer", "Pin()");
@@ -5369,19 +5382,19 @@ void ElementAtlasFramebuffer::remove_FramebufferCollected(uDelegate* value)
     return uPtr((::g::Uno::Collections::LinkedListNode__get_Value_fn(uPtr(_fb), &ret7), ret7))->Framebuffer;
 }
 
-// internal generated bool get_Pinned() [instance] :338
+// internal generated bool get_Pinned() [instance] :350
 bool ElementAtlasFramebuffer::Pinned()
 {
     return _Pinned;
 }
 
-// private generated void set_Pinned(bool value) [instance] :338
+// private generated void set_Pinned(bool value) [instance] :350
 void ElementAtlasFramebuffer::Pinned(bool value)
 {
     _Pinned = value;
 }
 
-// internal void Unpin() [instance] :368
+// internal void Unpin() [instance] :380
 void ElementAtlasFramebuffer::Unpin()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebuffer", "Unpin()");
@@ -5392,7 +5405,7 @@ void ElementAtlasFramebuffer::Unpin()
     Pinned(false);
 }
 
-// public generated ElementAtlasFramebuffer New() [static] :335
+// public generated ElementAtlasFramebuffer New() [static] :347
 ElementAtlasFramebuffer* ElementAtlasFramebuffer::New1()
 {
     ElementAtlasFramebuffer* obj1 = (ElementAtlasFramebuffer*)uNew(ElementAtlasFramebuffer_typeof());
@@ -5400,17 +5413,17 @@ ElementAtlasFramebuffer* ElementAtlasFramebuffer::New1()
     return obj1;
 }
 
-// public static int2 get_Size() [static] :390
+// public static int2 get_Size() [static] :402
 ::g::Uno::Int2 ElementAtlasFramebuffer::Size()
 {
     return ::g::Fuse::Elements::ElementAtlasFramebufferPool::ElementAtlasSize();
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno
+// ---------------------------------------------------------------
 
-// internal static class ElementAtlasFramebufferPool :433
+// internal static class ElementAtlasFramebufferPool :445
 // {
 static void ElementAtlasFramebufferPool_build(uType* type)
 {
@@ -5435,55 +5448,55 @@ uClassType* ElementAtlasFramebufferPool_typeof()
     return type;
 }
 
-// public static generated void add_AtlasSizeChanged(Uno.EventHandler value) :451
+// public static generated void add_AtlasSizeChanged(Uno.EventHandler value) :463
 void ElementAtlasFramebufferPool__add_AtlasSizeChanged_fn(uDelegate* value)
 {
     ElementAtlasFramebufferPool::add_AtlasSizeChanged(value);
 }
 
-// public static generated void remove_AtlasSizeChanged(Uno.EventHandler value) :451
+// public static generated void remove_AtlasSizeChanged(Uno.EventHandler value) :463
 void ElementAtlasFramebufferPool__remove_AtlasSizeChanged_fn(uDelegate* value)
 {
     ElementAtlasFramebufferPool::remove_AtlasSizeChanged(value);
 }
 
-// public static int2 get_ElementAtlasSize() :468
+// public static int2 get_ElementAtlasSize() :480
 void ElementAtlasFramebufferPool__get_ElementAtlasSize_fn(::g::Uno::Int2* __retval)
 {
     *__retval = ElementAtlasFramebufferPool::ElementAtlasSize();
 }
 
-// private static void set_ElementAtlasSize(int2 value) :473
+// private static void set_ElementAtlasSize(int2 value) :485
 void ElementAtlasFramebufferPool__set_ElementAtlasSize_fn(::g::Uno::Int2* value)
 {
     ElementAtlasFramebufferPool::ElementAtlasSize(*value);
 }
 
-// private static void EnsurePool() :487
+// private static void EnsurePool() :499
 void ElementAtlasFramebufferPool__EnsurePool_fn()
 {
     ElementAtlasFramebufferPool::EnsurePool();
 }
 
-// public static Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> FindFramebuffer() :498
+// public static Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> FindFramebuffer() :510
 void ElementAtlasFramebufferPool__FindFramebuffer_fn(::g::Uno::Collections::LinkedListNode** __retval)
 {
     *__retval = ElementAtlasFramebufferPool::FindFramebuffer();
 }
 
-// public static void Initialize() :436
+// public static void Initialize() :448
 void ElementAtlasFramebufferPool__Initialize_fn()
 {
     ElementAtlasFramebufferPool::Initialize();
 }
 
-// private static void OnResized(object sender, Uno.EventArgs args) :461
+// private static void OnResized(object sender, Uno.EventArgs args) :473
 void ElementAtlasFramebufferPool__OnResized_fn(uObject* sender, ::g::Uno::EventArgs* args)
 {
     ElementAtlasFramebufferPool::OnResized(sender, args);
 }
 
-// private static void UpdateElementAtlasSize() :453
+// private static void UpdateElementAtlasSize() :465
 void ElementAtlasFramebufferPool__UpdateElementAtlasSize_fn()
 {
     ElementAtlasFramebufferPool::UpdateElementAtlasSize();
@@ -5494,7 +5507,7 @@ bool ElementAtlasFramebufferPool::_isInitialized_;
 uSStrong< ::g::Fuse::Elements::ElementAtlasFramebufferPoolImpl*> ElementAtlasFramebufferPool::_poolImpl_;
 uSStrong<uDelegate*> ElementAtlasFramebufferPool::AtlasSizeChanged1_;
 
-// private static void EnsurePool() [static] :487
+// private static void EnsurePool() [static] :499
 void ElementAtlasFramebufferPool::EnsurePool()
 {
     if (ElementAtlasFramebufferPool::_poolImpl_ != NULL)
@@ -5504,7 +5517,7 @@ void ElementAtlasFramebufferPool::EnsurePool()
     ElementAtlasFramebufferPool::_poolImpl_ = ::g::Fuse::Elements::ElementAtlasFramebufferPoolImpl::New1();
 }
 
-// public static Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> FindFramebuffer() [static] :498
+// public static Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> FindFramebuffer() [static] :510
 ::g::Uno::Collections::LinkedListNode* ElementAtlasFramebufferPool::FindFramebuffer()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPool", "FindFramebuffer()");
@@ -5512,7 +5525,7 @@ void ElementAtlasFramebufferPool::EnsurePool()
     return uPtr(ElementAtlasFramebufferPool::_poolImpl_)->FindFramebuffer();
 }
 
-// public static void Initialize() [static] :436
+// public static void Initialize() [static] :448
 void ElementAtlasFramebufferPool::Initialize()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPool", "Initialize()");
@@ -5525,13 +5538,13 @@ void ElementAtlasFramebufferPool::Initialize()
     ElementAtlasFramebufferPool::_isInitialized_ = true;
 }
 
-// private static void OnResized(object sender, Uno.EventArgs args) [static] :461
+// private static void OnResized(object sender, Uno.EventArgs args) [static] :473
 void ElementAtlasFramebufferPool::OnResized(uObject* sender, ::g::Uno::EventArgs* args)
 {
     ElementAtlasFramebufferPool::UpdateElementAtlasSize();
 }
 
-// private static void UpdateElementAtlasSize() [static] :453
+// private static void UpdateElementAtlasSize() [static] :465
 void ElementAtlasFramebufferPool::UpdateElementAtlasSize()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPool", "UpdateElementAtlasSize()");
@@ -5539,7 +5552,7 @@ void ElementAtlasFramebufferPool::UpdateElementAtlasSize()
     ElementAtlasFramebufferPool::ElementAtlasSize(::g::Uno::Int2__New2(::g::Uno::Math::Min8((clientSize.X * 3) / 2, ::g::Uno::Graphics::Texture2D::MaxSize()), ::g::Uno::Math::Min8(clientSize.Y / 2, ::g::Uno::Graphics::Texture2D::MaxSize())));
 }
 
-// public static int2 get_ElementAtlasSize() [static] :468
+// public static int2 get_ElementAtlasSize() [static] :480
 ::g::Uno::Int2 ElementAtlasFramebufferPool::ElementAtlasSize()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPool", "get_ElementAtlasSize()");
@@ -5547,7 +5560,7 @@ void ElementAtlasFramebufferPool::UpdateElementAtlasSize()
     return ElementAtlasFramebufferPool::_elementAtlasSize_;
 }
 
-// private static void set_ElementAtlasSize(int2 value) [static] :473
+// private static void set_ElementAtlasSize(int2 value) [static] :485
 void ElementAtlasFramebufferPool::ElementAtlasSize(::g::Uno::Int2 value)
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPool", "set_ElementAtlasSize(int2)");
@@ -5561,14 +5574,14 @@ void ElementAtlasFramebufferPool::ElementAtlasSize(::g::Uno::Int2 value)
     }
 }
 
-// public static generated void add_AtlasSizeChanged(Uno.EventHandler value) [static] :451
+// public static generated void add_AtlasSizeChanged(Uno.EventHandler value) [static] :463
 void ElementAtlasFramebufferPool::add_AtlasSizeChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPool", "add_AtlasSizeChanged(Uno.EventHandler)");
     ElementAtlasFramebufferPool::AtlasSizeChanged1_ = uCast<uDelegate*>(::g::Uno::Delegate::Combine(ElementAtlasFramebufferPool::AtlasSizeChanged1_, value), ::TYPES[41/*Uno.EventHandler*/]);
 }
 
-// public static generated void remove_AtlasSizeChanged(Uno.EventHandler value) [static] :451
+// public static generated void remove_AtlasSizeChanged(Uno.EventHandler value) [static] :463
 void ElementAtlasFramebufferPool::remove_AtlasSizeChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPool", "remove_AtlasSizeChanged(Uno.EventHandler)");
@@ -5576,10 +5589,10 @@ void ElementAtlasFramebufferPool::remove_AtlasSizeChanged(uDelegate* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno
+// ---------------------------------------------------------------
 
-// internal sealed class ElementAtlasFramebufferPoolEntry :393
+// internal sealed class ElementAtlasFramebufferPoolEntry :405
 // {
 static void ElementAtlasFramebufferPoolEntry_build(uType* type)
 {
@@ -5604,36 +5617,36 @@ uType* ElementAtlasFramebufferPoolEntry_typeof()
     return type;
 }
 
-// public generated ElementAtlasFramebufferPoolEntry() :393
+// public generated ElementAtlasFramebufferPoolEntry() :405
 void ElementAtlasFramebufferPoolEntry__ctor__fn(ElementAtlasFramebufferPoolEntry* __this)
 {
     __this->ctor_();
 }
 
-// public void Collect() :399
+// public void Collect() :411
 void ElementAtlasFramebufferPoolEntry__Collect_fn(ElementAtlasFramebufferPoolEntry* __this)
 {
     __this->Collect();
 }
 
-// public void Dispose() :405
+// public void Dispose() :417
 void ElementAtlasFramebufferPoolEntry__Dispose_fn(ElementAtlasFramebufferPoolEntry* __this)
 {
     __this->Dispose();
 }
 
-// public generated ElementAtlasFramebufferPoolEntry New() :393
+// public generated ElementAtlasFramebufferPoolEntry New() :405
 void ElementAtlasFramebufferPoolEntry__New1_fn(ElementAtlasFramebufferPoolEntry** __retval)
 {
     *__retval = ElementAtlasFramebufferPoolEntry::New1();
 }
 
-// public generated ElementAtlasFramebufferPoolEntry() [instance] :393
+// public generated ElementAtlasFramebufferPoolEntry() [instance] :405
 void ElementAtlasFramebufferPoolEntry::ctor_()
 {
 }
 
-// public void Collect() [instance] :399
+// public void Collect() [instance] :411
 void ElementAtlasFramebufferPoolEntry::Collect()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPoolEntry", "Collect()");
@@ -5642,7 +5655,7 @@ void ElementAtlasFramebufferPoolEntry::Collect()
         uPtr(Owner)->Collect();
 }
 
-// public void Dispose() [instance] :405
+// public void Dispose() [instance] :417
 void ElementAtlasFramebufferPoolEntry::Dispose()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPoolEntry", "Dispose()");
@@ -5654,7 +5667,7 @@ void ElementAtlasFramebufferPoolEntry::Dispose()
     }
 }
 
-// public generated ElementAtlasFramebufferPoolEntry New() [static] :393
+// public generated ElementAtlasFramebufferPoolEntry New() [static] :405
 ElementAtlasFramebufferPoolEntry* ElementAtlasFramebufferPoolEntry::New1()
 {
     ElementAtlasFramebufferPoolEntry* obj1 = (ElementAtlasFramebufferPoolEntry*)uNew(ElementAtlasFramebufferPoolEntry_typeof());
@@ -5663,10 +5676,10 @@ ElementAtlasFramebufferPoolEntry* ElementAtlasFramebufferPoolEntry::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno
+// ---------------------------------------------------------------
 
-// internal sealed class ElementAtlasFramebufferPoolImpl :505
+// internal sealed class ElementAtlasFramebufferPoolImpl :517
 // {
 static void ElementAtlasFramebufferPoolImpl_build(uType* type)
 {
@@ -5695,62 +5708,62 @@ ElementAtlasFramebufferPoolImpl_type* ElementAtlasFramebufferPoolImpl_typeof()
     return type;
 }
 
-// internal ElementAtlasFramebufferPoolImpl() :509
+// internal ElementAtlasFramebufferPoolImpl() :521
 void ElementAtlasFramebufferPoolImpl__ctor__fn(ElementAtlasFramebufferPoolImpl* __this)
 {
     __this->ctor_();
 }
 
-// private Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> AddEntry() :582
+// private Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> AddEntry() :594
 void ElementAtlasFramebufferPoolImpl__AddEntry_fn(ElementAtlasFramebufferPoolImpl* __this, ::g::Uno::Collections::LinkedListNode** __retval)
 {
     *__retval = __this->AddEntry();
 }
 
-// private extern void DiscardPool() :541
+// private extern void DiscardPool() :553
 void ElementAtlasFramebufferPoolImpl__DiscardPool_fn(ElementAtlasFramebufferPoolImpl* __this)
 {
     __this->DiscardPool();
 }
 
-// private void EnsurePool() :572
+// private void EnsurePool() :584
 void ElementAtlasFramebufferPoolImpl__EnsurePool_fn(ElementAtlasFramebufferPoolImpl* __this)
 {
     __this->EnsurePool();
 }
 
-// internal Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> FindFramebuffer() :590
+// internal Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> FindFramebuffer() :602
 void ElementAtlasFramebufferPoolImpl__FindFramebuffer_fn(ElementAtlasFramebufferPoolImpl* __this, ::g::Uno::Collections::LinkedListNode** __retval)
 {
     *__retval = __this->FindFramebuffer();
 }
 
-// private void Fuse.Resources.ISoftDisposable.SoftDispose() :567
+// private void Fuse.Resources.ISoftDisposable.SoftDispose() :579
 void ElementAtlasFramebufferPoolImpl__FuseResourcesISoftDisposableSoftDispose_fn(ElementAtlasFramebufferPoolImpl* __this)
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPoolImpl", "Fuse.Resources.ISoftDisposable.SoftDispose()");
     __this->DiscardPool();
 }
 
-// internal ElementAtlasFramebufferPoolImpl New() :509
+// internal ElementAtlasFramebufferPoolImpl New() :521
 void ElementAtlasFramebufferPoolImpl__New1_fn(ElementAtlasFramebufferPoolImpl** __retval)
 {
     *__retval = ElementAtlasFramebufferPoolImpl::New1();
 }
 
-// private void OnAtlasSizeChanged(object sender, Uno.EventArgs eventArgs) :562
+// private void OnAtlasSizeChanged(object sender, Uno.EventArgs eventArgs) :574
 void ElementAtlasFramebufferPoolImpl__OnAtlasSizeChanged_fn(ElementAtlasFramebufferPoolImpl* __this, uObject* sender, ::g::Uno::EventArgs* eventArgs)
 {
     __this->OnAtlasSizeChanged(sender, eventArgs);
 }
 
-// internal void UpdateUsage(Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> fb) :606
+// internal void UpdateUsage(Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> fb) :618
 void ElementAtlasFramebufferPoolImpl__UpdateUsage_fn(ElementAtlasFramebufferPoolImpl* __this, ::g::Uno::Collections::LinkedListNode* fb)
 {
     __this->UpdateUsage(fb);
 }
 
-// internal ElementAtlasFramebufferPoolImpl() [instance] :509
+// internal ElementAtlasFramebufferPoolImpl() [instance] :521
 void ElementAtlasFramebufferPoolImpl::ctor_()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPoolImpl", ".ctor()");
@@ -5758,7 +5771,7 @@ void ElementAtlasFramebufferPoolImpl::ctor_()
     ::g::Fuse::Elements::ElementAtlasFramebufferPool::add_AtlasSizeChanged(uDelegate::New(::TYPES[41/*Uno.EventHandler*/], (void*)ElementAtlasFramebufferPoolImpl__OnAtlasSizeChanged_fn, this));
 }
 
-// private Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> AddEntry() [instance] :582
+// private Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> AddEntry() [instance] :594
 ::g::Uno::Collections::LinkedListNode* ElementAtlasFramebufferPoolImpl::AddEntry()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPoolImpl", "AddEntry()");
@@ -5769,7 +5782,7 @@ void ElementAtlasFramebufferPoolImpl::ctor_()
     return (::g::Uno::Collections::LinkedList__AddLast_fn(uPtr(_framebufferPool), entry, &ret2), ret2);
 }
 
-// private extern void DiscardPool() [instance] :541
+// private extern void DiscardPool() [instance] :553
 void ElementAtlasFramebufferPoolImpl::DiscardPool()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPoolImpl", "DiscardPool()");
@@ -5793,7 +5806,7 @@ void ElementAtlasFramebufferPoolImpl::DiscardPool()
     _framebufferPool = NULL;
 }
 
-// private void EnsurePool() [instance] :572
+// private void EnsurePool() [instance] :584
 void ElementAtlasFramebufferPoolImpl::EnsurePool()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPoolImpl", "EnsurePool()");
@@ -5807,7 +5820,7 @@ void ElementAtlasFramebufferPoolImpl::EnsurePool()
         AddEntry();
 }
 
-// internal Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> FindFramebuffer() [instance] :590
+// internal Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> FindFramebuffer() [instance] :602
 ::g::Uno::Collections::LinkedListNode* ElementAtlasFramebufferPoolImpl::FindFramebuffer()
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPoolImpl", "FindFramebuffer()");
@@ -5826,14 +5839,14 @@ void ElementAtlasFramebufferPoolImpl::EnsurePool()
     return fb;
 }
 
-// private void OnAtlasSizeChanged(object sender, Uno.EventArgs eventArgs) [instance] :562
+// private void OnAtlasSizeChanged(object sender, Uno.EventArgs eventArgs) [instance] :574
 void ElementAtlasFramebufferPoolImpl::OnAtlasSizeChanged(uObject* sender, ::g::Uno::EventArgs* eventArgs)
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPoolImpl", "OnAtlasSizeChanged(object,Uno.EventArgs)");
     DiscardPool();
 }
 
-// internal void UpdateUsage(Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> fb) [instance] :606
+// internal void UpdateUsage(Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry> fb) [instance] :618
 void ElementAtlasFramebufferPoolImpl::UpdateUsage(::g::Uno::Collections::LinkedListNode* fb)
 {
     uStackFrame __("Fuse.Elements.ElementAtlasFramebufferPoolImpl", "UpdateUsage(Uno.Collections.LinkedListNode<Fuse.Elements.ElementAtlasFramebufferPoolEntry>)");
@@ -5841,7 +5854,7 @@ void ElementAtlasFramebufferPoolImpl::UpdateUsage(::g::Uno::Collections::LinkedL
     uPtr(_framebufferPool)->AddFirst1(fb);
 }
 
-// internal ElementAtlasFramebufferPoolImpl New() [static] :509
+// internal ElementAtlasFramebufferPoolImpl New() [static] :521
 ElementAtlasFramebufferPoolImpl* ElementAtlasFramebufferPoolImpl::New1()
 {
     ElementAtlasFramebufferPoolImpl* obj1 = (ElementAtlasFramebufferPoolImpl*)uNew(ElementAtlasFramebufferPoolImpl_typeof());
@@ -5850,10 +5863,10 @@ ElementAtlasFramebufferPoolImpl* ElementAtlasFramebufferPoolImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno
+// ---------------------------------------------------------------
 
-// internal sealed class ElementBatch :1253
+// internal sealed class ElementBatch :1275
 // {
 static void ElementBatch_build(uType* type)
 {
@@ -5896,115 +5909,115 @@ ElementBatch_type* ElementBatch_typeof()
     return type;
 }
 
-// public ElementBatch(Fuse.Elements.ElementBatcher elementBatcher, Fuse.Elements.ElementAtlas elementAtlas) :1264
+// public ElementBatch(Fuse.Elements.ElementBatcher elementBatcher, Fuse.Elements.ElementAtlas elementAtlas) :1286
 void ElementBatch__ctor__fn(ElementBatch* __this, ::g::Fuse::Elements::ElementBatcher* elementBatcher, ::g::Fuse::Elements::ElementAtlas* elementAtlas)
 {
     __this->ctor_(elementBatcher, elementAtlas);
 }
 
-// public void AddElement(Fuse.Elements.Element elm) :1343
+// public void AddElement(Fuse.Elements.Element elm) :1367
 void ElementBatch__AddElement_fn(ElementBatch* __this, ::g::Fuse::Elements::Element* elm)
 {
     __this->AddElement(elm);
 }
 
-// private Fuse.VisualBounds CalcRenderBounds() :1321
+// private Fuse.VisualBounds CalcRenderBounds() :1345
 void ElementBatch__CalcRenderBounds_fn(ElementBatch* __this, ::g::Fuse::VisualBounds** __retval)
 {
     *__retval = __this->CalcRenderBounds();
 }
 
-// internal static Uno.Recti ConservativelySnapToCoveringIntegers(Uno.Rect r) :1297
+// internal static Uno.Recti ConservativelySnapToCoveringIntegers(Uno.Rect r) :1319
 void ElementBatch__ConservativelySnapToCoveringIntegers_fn(::g::Uno::Rect* r, ::g::Uno::Recti* __retval)
 {
     *__retval = ElementBatch::ConservativelySnapToCoveringIntegers(*r);
 }
 
-// public void Dispose() :1282
+// public void Dispose() :1304
 void ElementBatch__Dispose_fn(ElementBatch* __this)
 {
     __this->Dispose();
 }
 
-// public void Draw(Fuse.DrawContext dc, float4x4 localToClipTransform, Uno.Rect scissorRectInClipSpace) :1390
+// public void Draw(Fuse.DrawContext dc, float4x4 localToClipTransform, Uno.Rect scissorRectInClipSpace) :1414
 void ElementBatch__Draw_fn(ElementBatch* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Float4x4* localToClipTransform, ::g::Uno::Rect* scissorRectInClipSpace)
 {
     __this->Draw(dc, *localToClipTransform, *scissorRectInClipSpace);
 }
 
-// private void FillIndexBuffer() :1453
+// private void FillIndexBuffer() :1477
 void ElementBatch__FillIndexBuffer_fn(ElementBatch* __this)
 {
     __this->FillIndexBuffer();
 }
 
-// private void FillVertexPositionBuffer(Fuse.DrawContext dc) :1492
+// private void FillVertexPositionBuffer(Fuse.DrawContext dc) :1517
 void ElementBatch__FillVertexPositionBuffer_fn(ElementBatch* __this, ::g::Fuse::DrawContext* dc)
 {
     __this->FillVertexPositionBuffer(dc);
 }
 
-// private void FillVertexTexCoordBuffer() :1472
+// private void FillVertexTexCoordBuffer() :1498
 void ElementBatch__FillVertexTexCoordBuffer_fn(ElementBatch* __this)
 {
     __this->FillVertexTexCoordBuffer();
 }
 
-// public static Uno.Recti GetCachingRect(Fuse.Elements.Element elm) :1311
+// public static Uno.Recti GetCachingRect(Fuse.Elements.Element elm) :1333
 void ElementBatch__GetCachingRect_fn(::g::Fuse::Elements::Element* elm, ::g::Uno::Recti* __retval)
 {
     *__retval = ElementBatch::GetCachingRect(elm);
 }
 
-// private generated void init_DrawCalls() :1253
+// private generated void init_DrawCalls() :1275
 void ElementBatch__init_DrawCalls_fn(ElementBatch* __this)
 {
     __this->init_DrawCalls();
 }
 
-// internal void InvalidateOpacity(Fuse.Elements.Element elm) :1383
+// internal void InvalidateOpacity(Fuse.Elements.Element elm) :1407
 void ElementBatch__InvalidateOpacity_fn(ElementBatch* __this, ::g::Fuse::Elements::Element* elm)
 {
     __this->InvalidateOpacity(elm);
 }
 
-// public void InvalidateRenderBounds(Fuse.Elements.Element elm) :1370
+// public void InvalidateRenderBounds(Fuse.Elements.Element elm) :1394
 void ElementBatch__InvalidateRenderBounds_fn(ElementBatch* __this, ::g::Fuse::Elements::Element* elm)
 {
     __this->InvalidateRenderBounds(elm);
 }
 
-// internal void InvalidateTransform(Fuse.Elements.Element elm) :1377
+// internal void InvalidateTransform(Fuse.Elements.Element elm) :1401
 void ElementBatch__InvalidateTransform_fn(ElementBatch* __this, ::g::Fuse::Elements::Element* elm)
 {
     __this->InvalidateTransform(elm);
 }
 
-// public bool IsFull() :1448
+// public bool IsFull() :1472
 void ElementBatch__IsFull_fn(ElementBatch* __this, bool* __retval)
 {
     *__retval = __this->IsFull();
 }
 
-// public ElementBatch New(Fuse.Elements.ElementBatcher elementBatcher, Fuse.Elements.ElementAtlas elementAtlas) :1264
+// public ElementBatch New(Fuse.Elements.ElementBatcher elementBatcher, Fuse.Elements.ElementAtlas elementAtlas) :1286
 void ElementBatch__New1_fn(::g::Fuse::Elements::ElementBatcher* elementBatcher, ::g::Fuse::Elements::ElementAtlas* elementAtlas, ElementBatch** __retval)
 {
     *__retval = ElementBatch::New1(elementBatcher, elementAtlas);
 }
 
-// public void RemoveElement(Fuse.Elements.Element elm) :1357
+// public void RemoveElement(Fuse.Elements.Element elm) :1381
 void ElementBatch__RemoveElement_fn(ElementBatch* __this, ::g::Fuse::Elements::Element* elm)
 {
     __this->RemoveElement(elm);
 }
 
-// public Fuse.VisualBounds get_RenderBounds() :1332
+// public Fuse.VisualBounds get_RenderBounds() :1356
 void ElementBatch__get_RenderBounds_fn(ElementBatch* __this, ::g::Fuse::VisualBounds** __retval)
 {
     *__retval = __this->RenderBounds();
 }
 
-// public ElementBatch(Fuse.Elements.ElementBatcher elementBatcher, Fuse.Elements.ElementAtlas elementAtlas) [instance] :1264
+// public ElementBatch(Fuse.Elements.ElementBatcher elementBatcher, Fuse.Elements.ElementAtlas elementAtlas) [instance] :1286
 void ElementBatch::ctor_(::g::Fuse::Elements::ElementBatcher* elementBatcher, ::g::Fuse::Elements::ElementAtlas* elementAtlas)
 {
     _elements = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[44/*Uno.Collections.List<Fuse.Elements.ElementBatchEntry>*/]));
@@ -6023,7 +6036,7 @@ void ElementBatch::ctor_(::g::Fuse::Elements::ElementBatcher* elementBatcher, ::
     init_DrawCalls();
 }
 
-// public void AddElement(Fuse.Elements.Element elm) [instance] :1343
+// public void AddElement(Fuse.Elements.Element elm) [instance] :1367
 void ElementBatch::AddElement(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.ElementBatch", "AddElement(Fuse.Elements.Element)");
@@ -6040,7 +6053,7 @@ void ElementBatch::AddElement(::g::Fuse::Elements::Element* elm)
     _renderBounds = NULL;
 }
 
-// private Fuse.VisualBounds CalcRenderBounds() [instance] :1321
+// private Fuse.VisualBounds CalcRenderBounds() [instance] :1345
 ::g::Fuse::VisualBounds* ElementBatch::CalcRenderBounds()
 {
     uStackFrame __("Fuse.Elements.ElementBatch", "CalcRenderBounds()");
@@ -6053,7 +6066,7 @@ void ElementBatch::AddElement(::g::Fuse::Elements::Element* elm)
     return rect;
 }
 
-// public void Dispose() [instance] :1282
+// public void Dispose() [instance] :1304
 void ElementBatch::Dispose()
 {
     uStackFrame __("Fuse.Elements.ElementBatch", "Dispose()");
@@ -6075,7 +6088,7 @@ void ElementBatch::Dispose()
         uPtr(_indexBuffer)->Dispose();
 }
 
-// public void Draw(Fuse.DrawContext dc, float4x4 localToClipTransform, Uno.Rect scissorRectInClipSpace) [instance] :1390
+// public void Draw(Fuse.DrawContext dc, float4x4 localToClipTransform, Uno.Rect scissorRectInClipSpace) [instance] :1414
 void ElementBatch::Draw(::g::Fuse::DrawContext* dc, ::g::Uno::Float4x4 localToClipTransform, ::g::Uno::Rect scissorRectInClipSpace)
 {
     uStackFrame __("Fuse.Elements.ElementBatch", "Draw(Fuse.DrawContext,float4x4,Uno.Rect)");
@@ -6130,7 +6143,7 @@ void ElementBatch::Draw(::g::Fuse::DrawContext* dc, ::g::Uno::Float4x4 localToCl
     _prevElementCount = uPtr(_elements)->Count();
 }
 
-// private void FillIndexBuffer() [instance] :1453
+// private void FillIndexBuffer() [instance] :1477
 void ElementBatch::FillIndexBuffer()
 {
     uStackFrame __("Fuse.Elements.ElementBatch", "FillIndexBuffer()");
@@ -6152,7 +6165,7 @@ void ElementBatch::FillIndexBuffer()
     _indexBuffer = ::g::Uno::Graphics::IndexBuffer::New2(indices, 0);
 }
 
-// private void FillVertexPositionBuffer(Fuse.DrawContext dc) [instance] :1492
+// private void FillVertexPositionBuffer(Fuse.DrawContext dc) [instance] :1517
 void ElementBatch::FillVertexPositionBuffer(::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Elements.ElementBatch", "FillVertexPositionBuffer(Fuse.DrawContext)");
@@ -6172,9 +6185,9 @@ void ElementBatch::FillVertexPositionBuffer(::g::Fuse::DrawContext* dc)
         ::g::Uno::Recti cachingRect = ElementBatch::GetCachingRect(uPtr(entry)->_elm);
         float opacity = entry->_opacity;
         ::g::Uno::Float4x4 transform = uPtr(entry->_elm)->LocalTransform();
-        ::g::Uno::Float2 localOrigin = ::g::Uno::Float2__op_Multiply1(::g::Uno::Float2__op_Implicit1(cachingRect.Minimum()), densityScale);
+        ::g::Uno::Float2 localOrigin = ::g::Uno::Float2__op_Multiply1(::g::Uno::Float2__op_Addition1(::g::Uno::Float2__op_Implicit1(cachingRect.Minimum()), 0.5f), densityScale);
         ::g::Uno::Float2 positionOrigin = ::g::Uno::Float2__op_Addition2(::g::Uno::Float2__op_Addition2((ind2 = transform.Item(3), ::g::Uno::Float2__New2(ind2.X, ind2.Y)), ::g::Uno::Float2__op_Multiply(localOrigin.X, (ind3 = transform.Item(0), ::g::Uno::Float2__New2(ind3.X, ind3.Y)))), ::g::Uno::Float2__op_Multiply(localOrigin.Y, (ind4 = transform.Item(1), ::g::Uno::Float2__New2(ind4.X, ind4.Y))));
-        ::g::Uno::Float2 size = ::g::Uno::Float2__op_Multiply1(::g::Uno::Float2__op_Implicit1(cachingRect.Size()), densityScale);
+        ::g::Uno::Float2 size = ::g::Uno::Float2__op_Multiply1(::g::Uno::Float2__op_Subtraction1(::g::Uno::Float2__op_Implicit1(entry->AtlasRect.Size()), 1.0f), densityScale);
         ::g::Uno::Float2 right = ::g::Uno::Float2__op_Multiply1((ind5 = transform.Item(0), ::g::Uno::Float2__New2(ind5.X, ind5.Y)), size.X);
         ::g::Uno::Float2 up = ::g::Uno::Float2__op_Multiply1((ind6 = transform.Item(1), ::g::Uno::Float2__New2(ind6.X, ind6.Y)), size.Y);
         uPtr(vertexPositions)->Set6(((i * 4) * _positionInfo.BufferStride) + _positionInfo.BufferOffset, ::g::Uno::Float3__New4(positionOrigin, opacity), true);
@@ -6186,7 +6199,7 @@ void ElementBatch::FillVertexPositionBuffer(::g::Fuse::DrawContext* dc)
     uPtr(_positionInfo.Buffer)->Update(vertexPositions);
 }
 
-// private void FillVertexTexCoordBuffer() [instance] :1472
+// private void FillVertexTexCoordBuffer() [instance] :1498
 void ElementBatch::FillVertexTexCoordBuffer()
 {
     uStackFrame __("Fuse.Elements.ElementBatch", "FillVertexTexCoordBuffer()");
@@ -6197,9 +6210,8 @@ void ElementBatch::FillVertexTexCoordBuffer()
     for (int i = 0; i < elementCount; ++i)
     {
         ::g::Fuse::Elements::ElementBatchEntry* entry = (::g::Uno::Collections::List__get_Item_fn(uPtr(_elements), uCRef<int>(i), &ret12), ret12);
-        ::g::Uno::Recti cachingRect = ElementBatch::GetCachingRect(uPtr(entry)->_elm);
-        ::g::Uno::Float2 texCoordOrigin = ::g::Uno::Float2__op_Division2(::g::Uno::Float2__op_Implicit1(entry->_rect.Minimum()), ::g::Uno::Float2__op_Implicit1(uPtr(uPtr(_elementAtlas)->_rectPacker)->Size()));
-        ::g::Uno::Float2 size = ::g::Uno::Float2__op_Division2(::g::Uno::Float2__op_Implicit1(cachingRect.Size()), ::g::Uno::Float2__op_Implicit1(uPtr(uPtr(_elementAtlas)->_rectPacker)->Size()));
+        ::g::Uno::Float2 texCoordOrigin = ::g::Uno::Float2__op_Division2(::g::Uno::Float2__op_Addition1(::g::Uno::Float2__op_Implicit1(uPtr(entry)->AtlasRect.Minimum()), 0.5f), ::g::Uno::Float2__op_Implicit1(uPtr(uPtr(_elementAtlas)->_rectPacker)->Size()));
+        ::g::Uno::Float2 size = ::g::Uno::Float2__op_Division2(::g::Uno::Float2__op_Subtraction1(::g::Uno::Float2__op_Implicit1(entry->AtlasRect.Size()), 1.0f), ::g::Uno::Float2__op_Implicit1(uPtr(uPtr(_elementAtlas)->_rectPacker)->Size()));
         uPtr(vertexTexCoords)->Set5(((i * 4) * _texCoordInfo.BufferStride) + _texCoordInfo.BufferOffset, texCoordOrigin, true);
         vertexTexCoords->Set5((((i * 4) + 1) * _texCoordInfo.BufferStride) + _texCoordInfo.BufferOffset, ::g::Uno::Float2__op_Addition2(texCoordOrigin, ::g::Uno::Float2__New2(size.X, 0.0f)), true);
         vertexTexCoords->Set5((((i * 4) + 2) * _texCoordInfo.BufferStride) + _texCoordInfo.BufferOffset, ::g::Uno::Float2__op_Addition2(texCoordOrigin, size), true);
@@ -6209,20 +6221,20 @@ void ElementBatch::FillVertexTexCoordBuffer()
     uPtr(_texCoordInfo.Buffer)->Update(vertexTexCoords);
 }
 
-// private generated void init_DrawCalls() [instance] :1253
+// private generated void init_DrawCalls() [instance] :1275
 void ElementBatch::init_DrawCalls()
 {
     uStackFrame __("Fuse.Elements.ElementBatch", "init_DrawCalls()");
     _draw_f8c70145 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseElements_bundle::ElementBatchd43eeb4e());
 }
 
-// internal void InvalidateOpacity(Fuse.Elements.Element elm) [instance] :1383
+// internal void InvalidateOpacity(Fuse.Elements.Element elm) [instance] :1407
 void ElementBatch::InvalidateOpacity(::g::Fuse::Elements::Element* elm)
 {
     _vertexPositionBufferValid = false;
 }
 
-// public void InvalidateRenderBounds(Fuse.Elements.Element elm) [instance] :1370
+// public void InvalidateRenderBounds(Fuse.Elements.Element elm) [instance] :1394
 void ElementBatch::InvalidateRenderBounds(::g::Fuse::Elements::Element* elm)
 {
     _vertexPositionBufferValid = false;
@@ -6230,21 +6242,21 @@ void ElementBatch::InvalidateRenderBounds(::g::Fuse::Elements::Element* elm)
     _renderBounds = NULL;
 }
 
-// internal void InvalidateTransform(Fuse.Elements.Element elm) [instance] :1377
+// internal void InvalidateTransform(Fuse.Elements.Element elm) [instance] :1401
 void ElementBatch::InvalidateTransform(::g::Fuse::Elements::Element* elm)
 {
     _vertexPositionBufferValid = false;
     _renderBounds = NULL;
 }
 
-// public bool IsFull() [instance] :1448
+// public bool IsFull() [instance] :1472
 bool ElementBatch::IsFull()
 {
     uStackFrame __("Fuse.Elements.ElementBatch", "IsFull()");
     return (uPtr(_elements)->Count() * 6) >= 65535;
 }
 
-// public void RemoveElement(Fuse.Elements.Element elm) [instance] :1357
+// public void RemoveElement(Fuse.Elements.Element elm) [instance] :1381
 void ElementBatch::RemoveElement(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.ElementBatch", "RemoveElement(Fuse.Elements.Element)");
@@ -6261,7 +6273,7 @@ void ElementBatch::RemoveElement(::g::Fuse::Elements::Element* elm)
     _vertexTexCoordBufferValid = false;
 }
 
-// public Fuse.VisualBounds get_RenderBounds() [instance] :1332
+// public Fuse.VisualBounds get_RenderBounds() [instance] :1356
 ::g::Fuse::VisualBounds* ElementBatch::RenderBounds()
 {
     uStackFrame __("Fuse.Elements.ElementBatch", "get_RenderBounds()");
@@ -6272,15 +6284,15 @@ void ElementBatch::RemoveElement(::g::Fuse::Elements::Element* elm)
     return _renderBounds;
 }
 
-// internal static Uno.Recti ConservativelySnapToCoveringIntegers(Uno.Rect r) [static] :1297
+// internal static Uno.Recti ConservativelySnapToCoveringIntegers(Uno.Rect r) [static] :1319
 ::g::Uno::Recti ElementBatch::ConservativelySnapToCoveringIntegers(::g::Uno::Rect r)
 {
-    ::g::Uno::Int2 origin = ::g::Uno::Int2__op_Explicit(::g::Uno::Math::Floor2(r.Minimum()));
-    ::g::Uno::Int2 size = ::g::Uno::Int2__op_Explicit(::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Addition1(r.Size(), 0.01f)));
+    ::g::Uno::Int2 origin = ::g::Uno::Int2__op_Explicit1(::g::Uno::Math::Floor2(r.Minimum()));
+    ::g::Uno::Int2 size = ::g::Uno::Int2__op_Explicit1(::g::Uno::Math::Ceil2(::g::Uno::Float2__op_Addition1(r.Size(), 0.01f)));
     return ::g::Uno::Recti__New1(origin.X, origin.Y, (origin.X + size.X) + 1, (origin.Y + size.Y) + 1);
 }
 
-// public static Uno.Recti GetCachingRect(Fuse.Elements.Element elm) [static] :1311
+// public static Uno.Recti GetCachingRect(Fuse.Elements.Element elm) [static] :1333
 ::g::Uno::Recti ElementBatch::GetCachingRect(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.ElementBatch", "GetCachingRect(Fuse.Elements.Element)");
@@ -6289,10 +6301,11 @@ void ElementBatch::RemoveElement(::g::Fuse::Elements::Element* elm)
     if (uPtr(bounds)->IsInfinite() || uPtr(bounds)->IsEmpty())
         U_THROW(::g::Uno::Exception::New2(::STRINGS[22/*"element has...*/]));
 
+    int CachingRectPadding = 1;
     return ::g::Uno::Recti__Inflate(ElementBatch::ConservativelySnapToCoveringIntegers(::g::Uno::Rect__Scale(uPtr(bounds)->FlatRect(), elm->AbsoluteZoom())), 1);
 }
 
-// public ElementBatch New(Fuse.Elements.ElementBatcher elementBatcher, Fuse.Elements.ElementAtlas elementAtlas) [static] :1264
+// public ElementBatch New(Fuse.Elements.ElementBatcher elementBatcher, Fuse.Elements.ElementAtlas elementAtlas) [static] :1286
 ElementBatch* ElementBatch::New1(::g::Fuse::Elements::ElementBatcher* elementBatcher, ::g::Fuse::Elements::ElementAtlas* elementAtlas)
 {
     ElementBatch* obj7 = (ElementBatch*)uNew(ElementBatch_typeof());
@@ -6301,10 +6314,10 @@ ElementBatch* ElementBatch::New1(::g::Fuse::Elements::ElementBatcher* elementBat
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno
+// ---------------------------------------------------------------
 
-// internal sealed class ElementBatchEntry :1188
+// internal sealed class ElementBatchEntry :1210
 // {
 static void ElementBatchEntry_build(uType* type)
 {
@@ -6313,7 +6326,7 @@ static void ElementBatchEntry_build(uType* type)
         ::g::Fuse::Elements::ElementBatch_typeof(), offsetof(::g::Fuse::Elements::ElementBatchEntry, _batch), 0,
         ::g::Fuse::Elements::Element_typeof(), offsetof(::g::Fuse::Elements::ElementBatchEntry, _elm), 0,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Elements::ElementBatchEntry, _opacity), 0,
-        ::g::Uno::Recti_typeof(), offsetof(::g::Fuse::Elements::ElementBatchEntry, _rect), 0,
+        ::g::Uno::Recti_typeof(), offsetof(::g::Fuse::Elements::ElementBatchEntry, AtlasRect), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Elements::ElementBatchEntry, IsValid), 0);
 }
 
@@ -6331,55 +6344,55 @@ uType* ElementBatchEntry_typeof()
     return type;
 }
 
-// public ElementBatchEntry(Fuse.Elements.Element elm) :1190
+// public ElementBatchEntry(Fuse.Elements.Element elm) :1212
 void ElementBatchEntry__ctor__fn(ElementBatchEntry* __this, ::g::Fuse::Elements::Element* elm)
 {
     __this->ctor_(elm);
 }
 
-// private float GetEffectiveOpacity() :1196
+// private float GetEffectiveOpacity() :1218
 void ElementBatchEntry__GetEffectiveOpacity_fn(ElementBatchEntry* __this, float* __retval)
 {
     *__retval = __this->GetEffectiveOpacity();
 }
 
-// public void InvalidateRenderBounds() :1221
+// public void InvalidateRenderBounds() :1243
 void ElementBatchEntry__InvalidateRenderBounds_fn(ElementBatchEntry* __this)
 {
     __this->InvalidateRenderBounds();
 }
 
-// public void InvalidateTransform() :1230
+// public void InvalidateTransform() :1252
 void ElementBatchEntry__InvalidateTransform_fn(ElementBatchEntry* __this)
 {
     __this->InvalidateTransform();
 }
 
-// public void InvalidateVisual() :1203
+// public void InvalidateVisual() :1225
 void ElementBatchEntry__InvalidateVisual_fn(ElementBatchEntry* __this)
 {
     __this->InvalidateVisual();
 }
 
-// public void InvalidateVisualComposition() :1208
+// public void InvalidateVisualComposition() :1230
 void ElementBatchEntry__InvalidateVisualComposition_fn(ElementBatchEntry* __this)
 {
     __this->InvalidateVisualComposition();
 }
 
-// public ElementBatchEntry New(Fuse.Elements.Element elm) :1190
+// public ElementBatchEntry New(Fuse.Elements.Element elm) :1212
 void ElementBatchEntry__New1_fn(::g::Fuse::Elements::Element* elm, ElementBatchEntry** __retval)
 {
     *__retval = ElementBatchEntry::New1(elm);
 }
 
-// public void OnRemoved() :1236
+// public void OnRemoved() :1258
 void ElementBatchEntry__OnRemoved_fn(ElementBatchEntry* __this)
 {
     __this->OnRemoved();
 }
 
-// public ElementBatchEntry(Fuse.Elements.Element elm) [instance] :1190
+// public ElementBatchEntry(Fuse.Elements.Element elm) [instance] :1212
 void ElementBatchEntry::ctor_(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.ElementBatchEntry", ".ctor(Fuse.Elements.Element)");
@@ -6387,7 +6400,7 @@ void ElementBatchEntry::ctor_(::g::Fuse::Elements::Element* elm)
     _opacity = GetEffectiveOpacity();
 }
 
-// private float GetEffectiveOpacity() [instance] :1196
+// private float GetEffectiveOpacity() [instance] :1218
 float ElementBatchEntry::GetEffectiveOpacity()
 {
     uStackFrame __("Fuse.Elements.ElementBatchEntry", "GetEffectiveOpacity()");
@@ -6398,7 +6411,7 @@ float ElementBatchEntry::GetEffectiveOpacity()
     return 0.0f;
 }
 
-// public void InvalidateRenderBounds() [instance] :1221
+// public void InvalidateRenderBounds() [instance] :1243
 void ElementBatchEntry::InvalidateRenderBounds()
 {
     uStackFrame __("Fuse.Elements.ElementBatchEntry", "InvalidateRenderBounds()");
@@ -6410,7 +6423,7 @@ void ElementBatchEntry::InvalidateRenderBounds()
     }
 }
 
-// public void InvalidateTransform() [instance] :1230
+// public void InvalidateTransform() [instance] :1252
 void ElementBatchEntry::InvalidateTransform()
 {
     uStackFrame __("Fuse.Elements.ElementBatchEntry", "InvalidateTransform()");
@@ -6419,14 +6432,14 @@ void ElementBatchEntry::InvalidateTransform()
         uPtr(_batch)->InvalidateTransform(_elm);
 }
 
-// public void InvalidateVisual() [instance] :1203
+// public void InvalidateVisual() [instance] :1225
 void ElementBatchEntry::InvalidateVisual()
 {
     uStackFrame __("Fuse.Elements.ElementBatchEntry", "InvalidateVisual()");
     uPtr(_atlas)->InvalidateElement(_elm);
 }
 
-// public void InvalidateVisualComposition() [instance] :1208
+// public void InvalidateVisualComposition() [instance] :1230
 void ElementBatchEntry::InvalidateVisualComposition()
 {
     uStackFrame __("Fuse.Elements.ElementBatchEntry", "InvalidateVisualComposition()");
@@ -6441,7 +6454,7 @@ void ElementBatchEntry::InvalidateVisualComposition()
     }
 }
 
-// public void OnRemoved() [instance] :1236
+// public void OnRemoved() [instance] :1258
 void ElementBatchEntry::OnRemoved()
 {
     uStackFrame __("Fuse.Elements.ElementBatchEntry", "OnRemoved()");
@@ -6453,7 +6466,7 @@ void ElementBatchEntry::OnRemoved()
         uPtr(_batch)->RemoveElement(_elm);
 }
 
-// public ElementBatchEntry New(Fuse.Elements.Element elm) [static] :1190
+// public ElementBatchEntry New(Fuse.Elements.Element elm) [static] :1212
 ElementBatchEntry* ElementBatchEntry::New1(::g::Fuse::Elements::Element* elm)
 {
     ElementBatchEntry* obj1 = (ElementBatchEntry*)uNew(ElementBatchEntry_typeof());
@@ -6462,16 +6475,16 @@ ElementBatchEntry* ElementBatchEntry::New1(::g::Fuse::Elements::Element* elm)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno
+// ---------------------------------------------------------------
 
-// internal sealed class ElementBatcher :859
+// internal sealed class ElementBatcher :881
 // {
 static void ElementBatcher_build(uType* type)
 {
     ::STRINGS[24] = uString::Const("Trying to batch nothing!");
     ::STRINGS[25] = uString::Const("BUG: atlas-insertion failed, but should not!");
-    ::STRINGS[26] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno");
+    ::STRINGS[26] = uString::Const("/usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno");
     ::TYPES[46] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Visual_typeof(), NULL);
     ::TYPES[47] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Elements::ElementAtlas_typeof(), NULL);
     ::TYPES[48] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Elements::ElementBatch_typeof(), NULL);
@@ -6516,122 +6529,122 @@ ElementBatcher_type* ElementBatcher_typeof()
     return type;
 }
 
-// public ElementBatcher() :867
+// public ElementBatcher() :889
 void ElementBatcher__ctor__fn(ElementBatcher* __this)
 {
     __this->ctor_();
 }
 
-// public void AddElement(Fuse.Visual elm) :891
+// public void AddElement(Fuse.Visual elm) :913
 void ElementBatcher__AddElement_fn(ElementBatcher* __this, ::g::Fuse::Visual* elm)
 {
     __this->AddElement(elm);
 }
 
-// private Fuse.Elements.ElementAtlas allocAtlas() :915
+// private Fuse.Elements.ElementAtlas allocAtlas() :937
 void ElementBatcher__allocAtlas_fn(ElementBatcher* __this, ::g::Fuse::Elements::ElementAtlas** __retval)
 {
     *__retval = __this->allocAtlas();
 }
 
-// private Fuse.Elements.ElementBatch allocBatch(Fuse.Elements.ElementAtlas atlas) :922
+// private Fuse.Elements.ElementBatch allocBatch(Fuse.Elements.ElementAtlas atlas) :944
 void ElementBatcher__allocBatch_fn(ElementBatcher* __this, ::g::Fuse::Elements::ElementAtlas* atlas, ::g::Fuse::Elements::ElementBatch** __retval)
 {
     *__retval = __this->allocBatch(atlas);
 }
 
-// private void DiscardAtlasing() :929
+// private void DiscardAtlasing() :951
 void ElementBatcher__DiscardAtlasing_fn(ElementBatcher* __this)
 {
     __this->DiscardAtlasing();
 }
 
-// private void DiscardBatching() :946
+// private void DiscardBatching() :968
 void ElementBatcher__DiscardBatching_fn(ElementBatcher* __this)
 {
     __this->DiscardBatching();
 }
 
-// public void Dispose() :883
+// public void Dispose() :905
 void ElementBatcher__Dispose_fn(ElementBatcher* __this)
 {
     __this->Dispose();
 }
 
-// public void Draw(Fuse.DrawContext dc) :1105
+// public void Draw(Fuse.DrawContext dc) :1127
 void ElementBatcher__Draw_fn(ElementBatcher* __this, ::g::Fuse::DrawContext* dc)
 {
     __this->Draw(dc);
 }
 
-// private void Fuse.Resources.ISoftDisposable.SoftDispose() :878
+// private void Fuse.Resources.ISoftDisposable.SoftDispose() :900
 void ElementBatcher__FuseResourcesISoftDisposableSoftDispose_fn(ElementBatcher* __this)
 {
     uStackFrame __("Fuse.Elements.ElementBatcher", "Fuse.Resources.ISoftDisposable.SoftDispose()");
     __this->DiscardAtlasing();
 }
 
-// private static int get_MaxElementPixels() :955
+// private static int get_MaxElementPixels() :977
 void ElementBatcher__get_MaxElementPixels_fn(int* __retval)
 {
     *__retval = ElementBatcher::MaxElementPixels();
 }
 
-// private static int2 get_MaxElementSize() :953
+// private static int2 get_MaxElementSize() :975
 void ElementBatcher__get_MaxElementSize_fn(::g::Uno::Int2* __retval)
 {
     *__retval = ElementBatcher::MaxElementSize();
 }
 
-// public ElementBatcher New() :867
+// public ElementBatcher New() :889
 void ElementBatcher__New1_fn(ElementBatcher** __retval)
 {
     *__retval = ElementBatcher::New1();
 }
 
-// private void OnAtlasSizeChanged(object sender, Uno.EventArgs args) :873
+// private void OnAtlasSizeChanged(object sender, Uno.EventArgs args) :895
 void ElementBatcher__OnAtlasSizeChanged_fn(ElementBatcher* __this, uObject* sender, ::g::Uno::EventArgs* args)
 {
     __this->OnAtlasSizeChanged(sender, args);
 }
 
-// public void Remove(Fuse.Elements.Element elm) :904
+// public void Remove(Fuse.Elements.Element elm) :926
 void ElementBatcher__Remove_fn(ElementBatcher* __this, ::g::Fuse::Elements::Element* elm)
 {
     __this->Remove(elm);
 }
 
-// public void RemoveAllElements() :897
+// public void RemoveAllElements() :919
 void ElementBatcher__RemoveAllElements_fn(ElementBatcher* __this)
 {
     __this->RemoveAllElements();
 }
 
-// public static bool ShouldBatchElement(Fuse.Visual node) :970
+// public static bool ShouldBatchElement(Fuse.Visual node) :992
 void ElementBatcher__ShouldBatchElement_fn(::g::Fuse::Visual* node, bool* __retval)
 {
     *__retval = ElementBatcher::ShouldBatchElement(node);
 }
 
-// public static bool ShouldBatchElementWithCachingMode(Fuse.Elements.CachingMode mode) :965
+// public static bool ShouldBatchElementWithCachingMode(Fuse.Elements.CachingMode mode) :987
 void ElementBatcher__ShouldBatchElementWithCachingMode_fn(int* mode, bool* __retval)
 {
     *__retval = ElementBatcher::ShouldBatchElementWithCachingMode(*mode);
 }
 
-// public static bool ShouldBatchElementWithSize(int2 size) :957
+// public static bool ShouldBatchElementWithSize(int2 size) :979
 void ElementBatcher__ShouldBatchElementWithSize_fn(::g::Uno::Int2* size, bool* __retval)
 {
     *__retval = ElementBatcher::ShouldBatchElementWithSize(*size);
 }
 
-// private void UpdateDrawList() :994
+// private void UpdateDrawList() :1016
 void ElementBatcher__UpdateDrawList_fn(ElementBatcher* __this)
 {
     __this->UpdateDrawList();
 }
 
-// public ElementBatcher() [instance] :867
+// public ElementBatcher() [instance] :889
 void ElementBatcher::ctor_()
 {
     uStackFrame __("Fuse.Elements.ElementBatcher", ".ctor()");
@@ -6644,7 +6657,7 @@ void ElementBatcher::ctor_()
     ::g::Fuse::Elements::ElementAtlasFramebufferPool::add_AtlasSizeChanged(uDelegate::New(::TYPES[41/*Uno.EventHandler*/], (void*)ElementBatcher__OnAtlasSizeChanged_fn, this));
 }
 
-// public void AddElement(Fuse.Visual elm) [instance] :891
+// public void AddElement(Fuse.Visual elm) [instance] :913
 void ElementBatcher::AddElement(::g::Fuse::Visual* elm)
 {
     uStackFrame __("Fuse.Elements.ElementBatcher", "AddElement(Fuse.Visual)");
@@ -6652,7 +6665,7 @@ void ElementBatcher::AddElement(::g::Fuse::Visual* elm)
     DrawListValid = false;
 }
 
-// private Fuse.Elements.ElementAtlas allocAtlas() [instance] :915
+// private Fuse.Elements.ElementAtlas allocAtlas() [instance] :937
 ::g::Fuse::Elements::ElementAtlas* ElementBatcher::allocAtlas()
 {
     uStackFrame __("Fuse.Elements.ElementBatcher", "allocAtlas()");
@@ -6661,7 +6674,7 @@ void ElementBatcher::AddElement(::g::Fuse::Visual* elm)
     return atlas;
 }
 
-// private Fuse.Elements.ElementBatch allocBatch(Fuse.Elements.ElementAtlas atlas) [instance] :922
+// private Fuse.Elements.ElementBatch allocBatch(Fuse.Elements.ElementAtlas atlas) [instance] :944
 ::g::Fuse::Elements::ElementBatch* ElementBatcher::allocBatch(::g::Fuse::Elements::ElementAtlas* atlas)
 {
     uStackFrame __("Fuse.Elements.ElementBatcher", "allocBatch(Fuse.Elements.ElementAtlas)");
@@ -6670,7 +6683,7 @@ void ElementBatcher::AddElement(::g::Fuse::Visual* elm)
     return batch;
 }
 
-// private void DiscardAtlasing() [instance] :929
+// private void DiscardAtlasing() [instance] :951
 void ElementBatcher::DiscardAtlasing()
 {
     uStackFrame __("Fuse.Elements.ElementBatcher", "DiscardAtlasing()");
@@ -6698,7 +6711,7 @@ void ElementBatcher::DiscardAtlasing()
     DrawListValid = false;
 }
 
-// private void DiscardBatching() [instance] :946
+// private void DiscardBatching() [instance] :968
 void ElementBatcher::DiscardBatching()
 {
     uStackFrame __("Fuse.Elements.ElementBatcher", "DiscardBatching()");
@@ -6713,7 +6726,7 @@ void ElementBatcher::DiscardBatching()
     uPtr(_batchPool)->Clear();
 }
 
-// public void Dispose() [instance] :883
+// public void Dispose() [instance] :905
 void ElementBatcher::Dispose()
 {
     uStackFrame __("Fuse.Elements.ElementBatcher", "Dispose()");
@@ -6723,7 +6736,7 @@ void ElementBatcher::Dispose()
     uPtr(_elements)->Clear();
 }
 
-// public void Draw(Fuse.DrawContext dc) [instance] :1105
+// public void Draw(Fuse.DrawContext dc) [instance] :1127
 void ElementBatcher::Draw(::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Elements.ElementBatcher", "Draw(Fuse.DrawContext)");
@@ -6789,7 +6802,7 @@ void ElementBatcher::Draw(::g::Fuse::DrawContext* dc)
 
         ::g::Uno::Recti cachingRect;
 
-        if ((!::g::Fuse::Elements::Cache::GetCachingRect1(elm1, &cachingRect) || (cachingRect.Size().X > e->_rect.Size().X)) || (cachingRect.Size().Y > e->_rect.Size().Y))
+        if ((!::g::Fuse::Elements::Cache::GetCachingRect1(elm1, &cachingRect) || (cachingRect.Size().X > e->AtlasRect.Size().X)) || (cachingRect.Size().Y > e->AtlasRect.Size().Y))
         {
             if (!uPtr(atlas)->ReinsertElement(elm1))
             {
@@ -6819,14 +6832,14 @@ void ElementBatcher::Draw(::g::Fuse::DrawContext* dc)
     }
 }
 
-// private void OnAtlasSizeChanged(object sender, Uno.EventArgs args) [instance] :873
+// private void OnAtlasSizeChanged(object sender, Uno.EventArgs args) [instance] :895
 void ElementBatcher::OnAtlasSizeChanged(uObject* sender, ::g::Uno::EventArgs* args)
 {
     uStackFrame __("Fuse.Elements.ElementBatcher", "OnAtlasSizeChanged(object,Uno.EventArgs)");
     DiscardAtlasing();
 }
 
-// public void Remove(Fuse.Elements.Element elm) [instance] :904
+// public void Remove(Fuse.Elements.Element elm) [instance] :926
 void ElementBatcher::Remove(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.ElementBatcher", "Remove(Fuse.Elements.Element)");
@@ -6841,7 +6854,7 @@ void ElementBatcher::Remove(::g::Fuse::Elements::Element* elm)
     DrawListValid = false;
 }
 
-// public void RemoveAllElements() [instance] :897
+// public void RemoveAllElements() [instance] :919
 void ElementBatcher::RemoveAllElements()
 {
     uStackFrame __("Fuse.Elements.ElementBatcher", "RemoveAllElements()");
@@ -6849,7 +6862,7 @@ void ElementBatcher::RemoveAllElements()
     DrawListValid = false;
 }
 
-// private void UpdateDrawList() [instance] :994
+// private void UpdateDrawList() [instance] :1016
 void ElementBatcher::UpdateDrawList()
 {
     uStackFrame __("Fuse.Elements.ElementBatcher", "UpdateDrawList()");
@@ -6934,7 +6947,7 @@ void ElementBatcher::UpdateDrawList()
 
             if (((uPtr(elm)->ElementBatchEntry() == NULL) || (uPtr(uPtr(elm)->ElementBatchEntry())->_atlas != atlas)) && !uPtr(atlas)->AddElement(elm))
             {
-                ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[25/*"BUG: atlas-...*/], 1, ::STRINGS[26/*"/Users/eric...*/], 1085);
+                ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[25/*"BUG: atlas-...*/], 0, ::STRINGS[26/*"/usr/local/...*/], 1107);
                 ::g::Uno::Collections::List__Add_fn(uPtr(_drawList), (uObject*)::g::Fuse::Elements::SingleVisualDrawable::New1(elm));
                 batch = NULL;
                 continue;
@@ -6955,7 +6968,7 @@ void ElementBatcher::UpdateDrawList()
     }
 }
 
-// public ElementBatcher New() [static] :867
+// public ElementBatcher New() [static] :889
 ElementBatcher* ElementBatcher::New1()
 {
     ElementBatcher* obj13 = (ElementBatcher*)uNew(ElementBatcher_typeof());
@@ -6963,7 +6976,7 @@ ElementBatcher* ElementBatcher::New1()
     return obj13;
 }
 
-// public static bool ShouldBatchElement(Fuse.Visual node) [static] :970
+// public static bool ShouldBatchElement(Fuse.Visual node) [static] :992
 bool ElementBatcher::ShouldBatchElement(::g::Fuse::Visual* node)
 {
     uStackFrame __("Fuse.Elements.ElementBatcher", "ShouldBatchElement(Fuse.Visual)");
@@ -6988,36 +7001,36 @@ bool ElementBatcher::ShouldBatchElement(::g::Fuse::Visual* node)
     return ElementBatcher::ShouldBatchElementWithSize(cacheRect.Size());
 }
 
-// public static bool ShouldBatchElementWithCachingMode(Fuse.Elements.CachingMode mode) [static] :965
+// public static bool ShouldBatchElementWithCachingMode(Fuse.Elements.CachingMode mode) [static] :987
 bool ElementBatcher::ShouldBatchElementWithCachingMode(int mode)
 {
     return mode != 2;
 }
 
-// public static bool ShouldBatchElementWithSize(int2 size) [static] :957
+// public static bool ShouldBatchElementWithSize(int2 size) [static] :979
 bool ElementBatcher::ShouldBatchElementWithSize(::g::Uno::Int2 size)
 {
     ::g::Uno::Int2 maxSize = ElementBatcher::MaxElementSize();
     return ((size.X <= maxSize.X) && (size.Y <= maxSize.Y)) && ((size.X * size.Y) <= ElementBatcher::MaxElementPixels());
 }
 
-// private static int get_MaxElementPixels() [static] :955
+// private static int get_MaxElementPixels() [static] :977
 int ElementBatcher::MaxElementPixels()
 {
     return (ElementBatcher::MaxElementSize().X * ElementBatcher::MaxElementSize().Y) / 2;
 }
 
-// private static int2 get_MaxElementSize() [static] :953
+// private static int2 get_MaxElementSize() [static] :975
 ::g::Uno::Int2 ElementBatcher::MaxElementSize()
 {
     return ::g::Fuse::Elements::ElementAtlasFramebuffer::Size();
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// internal sealed class ExplicitTransformOrigin :2466
+// internal sealed class ExplicitTransformOrigin :2486
 // {
 static void ExplicitTransformOrigin_build(uType* type)
 {
@@ -7045,36 +7058,36 @@ ExplicitTransformOrigin_type* ExplicitTransformOrigin_typeof()
     return type;
 }
 
-// public generated ExplicitTransformOrigin() :2466
+// public generated ExplicitTransformOrigin() :2486
 void ExplicitTransformOrigin__ctor__fn(ExplicitTransformOrigin* __this)
 {
     __this->ctor_();
 }
 
-// public float3 GetOffset(Fuse.Elements.Element elm) :2490
+// public float3 GetOffset(Fuse.Elements.Element elm) :2510
 void ExplicitTransformOrigin__GetOffset_fn(ExplicitTransformOrigin* __this, ::g::Fuse::Elements::Element* elm, ::g::Uno::Float3* __retval)
 {
     *__retval = __this->GetOffset(elm);
 }
 
-// public generated ExplicitTransformOrigin New() :2466
+// public generated ExplicitTransformOrigin New() :2486
 void ExplicitTransformOrigin__New1_fn(ExplicitTransformOrigin** __retval)
 {
     *__retval = ExplicitTransformOrigin::New1();
 }
 
-// private float SizePart(Uno.UX.Size sz, float relative, float pixelsPerPoint) :2471
+// private float SizePart(Uno.UX.Size sz, float relative, float pixelsPerPoint) :2491
 void ExplicitTransformOrigin__SizePart_fn(ExplicitTransformOrigin* __this, ::g::Uno::UX::Size* sz, float* relative, float* pixelsPerPoint, float* __retval)
 {
     *__retval = __this->SizePart(*sz, *relative, *pixelsPerPoint);
 }
 
-// public generated ExplicitTransformOrigin() [instance] :2466
+// public generated ExplicitTransformOrigin() [instance] :2486
 void ExplicitTransformOrigin::ctor_()
 {
 }
 
-// public float3 GetOffset(Fuse.Elements.Element elm) [instance] :2490
+// public float3 GetOffset(Fuse.Elements.Element elm) [instance] :2510
 ::g::Uno::Float3 ExplicitTransformOrigin::GetOffset(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.ExplicitTransformOrigin", "GetOffset(Fuse.Elements.Element)");
@@ -7082,7 +7095,7 @@ void ExplicitTransformOrigin::ctor_()
     return ::g::Uno::Float3__New2(SizePart(Origin.X, elm->ActualSize().X, pixelsPerPoint), SizePart(Origin.Y, elm->ActualSize().Y, pixelsPerPoint), 0.0f);
 }
 
-// private float SizePart(Uno.UX.Size sz, float relative, float pixelsPerPoint) [instance] :2471
+// private float SizePart(Uno.UX.Size sz, float relative, float pixelsPerPoint) [instance] :2491
 float ExplicitTransformOrigin::SizePart(::g::Uno::UX::Size sz, float relative, float pixelsPerPoint)
 {
     int u = sz.DetermineUnit();
@@ -7100,7 +7113,7 @@ float ExplicitTransformOrigin::SizePart(::g::Uno::UX::Size sz, float relative, f
     return 0.0f;
 }
 
-// public generated ExplicitTransformOrigin New() [static] :2466
+// public generated ExplicitTransformOrigin New() [static] :2486
 ExplicitTransformOrigin* ExplicitTransformOrigin::New1()
 {
     ExplicitTransformOrigin* obj1 = (ExplicitTransformOrigin*)uNew(ExplicitTransformOrigin_typeof());
@@ -7109,8 +7122,8 @@ ExplicitTransformOrigin* ExplicitTransformOrigin::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
 // internal sealed class FillAspectBoxSizing :21
 // {
@@ -7281,10 +7294,10 @@ FillAspectBoxSizing* FillAspectBoxSizing::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private struct Element.GMSCacheItem :1964
+// private struct Element.GMSCacheItem :1984
 // {
 static void Element__GMSCacheItem_build(uType* type)
 {
@@ -7308,10 +7321,10 @@ uStructType* Element__GMSCacheItem_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public sealed class HeightFunction :3778
+// public sealed class HeightFunction :3799
 // {
 static void HeightFunction_build(uType* type)
 {
@@ -7341,39 +7354,39 @@ static void HeightFunction_build(uType* type)
     return type;
 }
 
-// public HeightFunction(Fuse.Reactive.Expression element) :3781
+// public HeightFunction(Fuse.Reactive.Expression element) :3802
 void HeightFunction__ctor_3_fn(HeightFunction* __this, ::g::Fuse::Reactive::Expression* element)
 {
     __this->ctor_3(element);
 }
 
-// protected override sealed object GetCurrentValue(Fuse.Elements.Element elm) :3788
+// protected override sealed object GetCurrentValue(Fuse.Elements.Element elm) :3809
 void HeightFunction__GetCurrentValue_fn(HeightFunction* __this, ::g::Fuse::Elements::Element* elm, uObject** __retval)
 {
     uStackFrame __("Fuse.Elements.HeightFunction", "GetCurrentValue(Fuse.Elements.Element)");
     return *__retval = uBox(::g::Uno::Float_typeof(), uPtr(elm)->ActualSize().Y), void();
 }
 
-// protected override sealed object GetValue(Fuse.PlacedArgs args) :3783
+// protected override sealed object GetValue(Fuse.PlacedArgs args) :3804
 void HeightFunction__GetValue_fn(HeightFunction* __this, ::g::Fuse::PlacedArgs* args, uObject** __retval)
 {
     uStackFrame __("Fuse.Elements.HeightFunction", "GetValue(Fuse.PlacedArgs)");
     return *__retval = uBox(::g::Uno::Float_typeof(), uPtr(args)->NewSize().Y), void();
 }
 
-// public HeightFunction New(Fuse.Reactive.Expression element) :3781
+// public HeightFunction New(Fuse.Reactive.Expression element) :3802
 void HeightFunction__New1_fn(::g::Fuse::Reactive::Expression* element, HeightFunction** __retval)
 {
     *__retval = HeightFunction::New1(element);
 }
 
-// public HeightFunction(Fuse.Reactive.Expression element) [instance] :3781
+// public HeightFunction(Fuse.Reactive.Expression element) [instance] :3802
 void HeightFunction::ctor_3(::g::Fuse::Reactive::Expression* element)
 {
     ctor_2(element);
 }
 
-// public HeightFunction New(Fuse.Reactive.Expression element) [static] :3781
+// public HeightFunction New(Fuse.Reactive.Expression element) [static] :3802
 HeightFunction* HeightFunction::New1(::g::Fuse::Reactive::Expression* element)
 {
     HeightFunction* obj1 = (HeightFunction*)uNew(HeightFunction_typeof());
@@ -7382,10 +7395,10 @@ HeightFunction* HeightFunction::New1(::g::Fuse::Reactive::Expression* element)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public enum HitTestMode :1354
+// public enum HitTestMode :1374
 uEnumType* HitTestMode_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -7402,10 +7415,10 @@ uEnumType* HitTestMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno
+// ---------------------------------------------------------------
 
-// internal abstract interface IElementBatchDrawable :840
+// internal abstract interface IElementBatchDrawable :862
 // {
 uInterfaceType* IElementBatchDrawable_typeof()
 {
@@ -7417,12 +7430,12 @@ uInterfaceType* IElementBatchDrawable_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public sealed class InteractiveTransform :3142
+// public sealed class InteractiveTransform :3162
 // {
-// static InteractiveTransform() :3142
+// static InteractiveTransform() :3162
 static void InteractiveTransform__cctor_1_fn(uType* __type)
 {
     InteractiveTransform::_zoomFactorName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[27/*"ZoomFactor"*/]);
@@ -7498,19 +7511,19 @@ static void InteractiveTransform_build(uType* type)
     return type;
 }
 
-// public generated InteractiveTransform() :3142
+// public generated InteractiveTransform() :3162
 void InteractiveTransform__ctor_3_fn(InteractiveTransform* __this)
 {
     __this->ctor_3();
 }
 
-// internal void AppendRotationScale(Fuse.FastMatrix matrix) :3218
+// internal void AppendRotationScale(Fuse.FastMatrix matrix) :3238
 void InteractiveTransform__AppendRotationScale_fn(InteractiveTransform* __this, ::g::Fuse::FastMatrix* matrix)
 {
     __this->AppendRotationScale(matrix);
 }
 
-// public override sealed void AppendTo(Fuse.FastMatrix matrix, [float weight]) :3211
+// public override sealed void AppendTo(Fuse.FastMatrix matrix, [float weight]) :3231
 void InteractiveTransform__AppendTo_fn(InteractiveTransform* __this, ::g::Fuse::FastMatrix* matrix, float* weight)
 {
     uStackFrame __("Fuse.Elements.InteractiveTransform", "AppendTo(Fuse.FastMatrix,[float])");
@@ -7520,19 +7533,19 @@ void InteractiveTransform__AppendTo_fn(InteractiveTransform* __this, ::g::Fuse::
     matrix->AppendRotation(__this->Rotation() * weight_);
 }
 
-// public override sealed bool get_IsFlat() :3202
+// public override sealed bool get_IsFlat() :3222
 void InteractiveTransform__get_IsFlat_fn(InteractiveTransform* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-// public generated InteractiveTransform New() :3142
+// public generated InteractiveTransform New() :3162
 void InteractiveTransform__New2_fn(InteractiveTransform** __retval)
 {
     *__retval = InteractiveTransform::New2();
 }
 
-// public override sealed void PrependTo(Fuse.FastMatrix matrix) :3204
+// public override sealed void PrependTo(Fuse.FastMatrix matrix) :3224
 void InteractiveTransform__PrependTo_fn(InteractiveTransform* __this, ::g::Fuse::FastMatrix* matrix)
 {
     uStackFrame __("Fuse.Elements.InteractiveTransform", "PrependTo(Fuse.FastMatrix)");
@@ -7541,55 +7554,55 @@ void InteractiveTransform__PrependTo_fn(InteractiveTransform* __this, ::g::Fuse:
     matrix->PrependTranslation(__this->Translation().X, __this->Translation().Y, 0.0f);
 }
 
-// public float get_Rotation() :3168
+// public float get_Rotation() :3188
 void InteractiveTransform__get_Rotation_fn(InteractiveTransform* __this, float* __retval)
 {
     *__retval = __this->Rotation();
 }
 
-// public void set_Rotation(float value) :3169
+// public void set_Rotation(float value) :3189
 void InteractiveTransform__set_Rotation_fn(InteractiveTransform* __this, float* value)
 {
     __this->Rotation(*value);
 }
 
-// public void SetRotation(float value, Uno.UX.IPropertyListener origin) :3173
+// public void SetRotation(float value, Uno.UX.IPropertyListener origin) :3193
 void InteractiveTransform__SetRotation_fn(InteractiveTransform* __this, float* value, uObject* origin)
 {
     __this->SetRotation(*value, origin);
 }
 
-// public void SetTranslation(float2 value, Uno.UX.IPropertyListener origin) :3192
+// public void SetTranslation(float2 value, Uno.UX.IPropertyListener origin) :3212
 void InteractiveTransform__SetTranslation_fn(InteractiveTransform* __this, ::g::Uno::Float2* value, uObject* origin)
 {
     __this->SetTranslation(*value, origin);
 }
 
-// public void SetZoomFactor(float value, Uno.UX.IPropertyListener origin) :3153
+// public void SetZoomFactor(float value, Uno.UX.IPropertyListener origin) :3173
 void InteractiveTransform__SetZoomFactor_fn(InteractiveTransform* __this, float* value, uObject* origin)
 {
     __this->SetZoomFactor(*value, origin);
 }
 
-// public float2 get_Translation() :3187
+// public float2 get_Translation() :3207
 void InteractiveTransform__get_Translation_fn(InteractiveTransform* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->Translation();
 }
 
-// public void set_Translation(float2 value) :3188
+// public void set_Translation(float2 value) :3208
 void InteractiveTransform__set_Translation_fn(InteractiveTransform* __this, ::g::Uno::Float2* value)
 {
     __this->Translation(*value);
 }
 
-// public float get_ZoomFactor() :3148
+// public float get_ZoomFactor() :3168
 void InteractiveTransform__get_ZoomFactor_fn(InteractiveTransform* __this, float* __retval)
 {
     *__retval = __this->ZoomFactor();
 }
 
-// public void set_ZoomFactor(float value) :3149
+// public void set_ZoomFactor(float value) :3169
 void InteractiveTransform__set_ZoomFactor_fn(InteractiveTransform* __this, float* value)
 {
     __this->ZoomFactor(*value);
@@ -7599,7 +7612,7 @@ void InteractiveTransform__set_ZoomFactor_fn(InteractiveTransform* __this, float
 ::g::Uno::UX::Selector InteractiveTransform::_translationName_;
 ::g::Uno::UX::Selector InteractiveTransform::_zoomFactorName_;
 
-// public generated InteractiveTransform() [instance] :3142
+// public generated InteractiveTransform() [instance] :3162
 void InteractiveTransform::ctor_3()
 {
     _zoomFactor = 1.0f;
@@ -7607,7 +7620,7 @@ void InteractiveTransform::ctor_3()
     ctor_2();
 }
 
-// internal void AppendRotationScale(Fuse.FastMatrix matrix) [instance] :3218
+// internal void AppendRotationScale(Fuse.FastMatrix matrix) [instance] :3238
 void InteractiveTransform::AppendRotationScale(::g::Fuse::FastMatrix* matrix)
 {
     uStackFrame __("Fuse.Elements.InteractiveTransform", "AppendRotationScale(Fuse.FastMatrix)");
@@ -7615,20 +7628,20 @@ void InteractiveTransform::AppendRotationScale(::g::Fuse::FastMatrix* matrix)
     matrix->AppendRotation(Rotation());
 }
 
-// public float get_Rotation() [instance] :3168
+// public float get_Rotation() [instance] :3188
 float InteractiveTransform::Rotation()
 {
     return _rotation;
 }
 
-// public void set_Rotation(float value) [instance] :3169
+// public void set_Rotation(float value) [instance] :3189
 void InteractiveTransform::Rotation(float value)
 {
     uStackFrame __("Fuse.Elements.InteractiveTransform", "set_Rotation(float)");
     SetRotation(value, NULL);
 }
 
-// public void SetRotation(float value, Uno.UX.IPropertyListener origin) [instance] :3173
+// public void SetRotation(float value, Uno.UX.IPropertyListener origin) [instance] :3193
 void InteractiveTransform::SetRotation(float value, uObject* origin)
 {
     uStackFrame __("Fuse.Elements.InteractiveTransform", "SetRotation(float,Uno.UX.IPropertyListener)");
@@ -7641,7 +7654,7 @@ void InteractiveTransform::SetRotation(float value, uObject* origin)
     }
 }
 
-// public void SetTranslation(float2 value, Uno.UX.IPropertyListener origin) [instance] :3192
+// public void SetTranslation(float2 value, Uno.UX.IPropertyListener origin) [instance] :3212
 void InteractiveTransform::SetTranslation(::g::Uno::Float2 value, uObject* origin)
 {
     uStackFrame __("Fuse.Elements.InteractiveTransform", "SetTranslation(float2,Uno.UX.IPropertyListener)");
@@ -7654,7 +7667,7 @@ void InteractiveTransform::SetTranslation(::g::Uno::Float2 value, uObject* origi
     }
 }
 
-// public void SetZoomFactor(float value, Uno.UX.IPropertyListener origin) [instance] :3153
+// public void SetZoomFactor(float value, Uno.UX.IPropertyListener origin) [instance] :3173
 void InteractiveTransform::SetZoomFactor(float value, uObject* origin)
 {
     uStackFrame __("Fuse.Elements.InteractiveTransform", "SetZoomFactor(float,Uno.UX.IPropertyListener)");
@@ -7667,33 +7680,33 @@ void InteractiveTransform::SetZoomFactor(float value, uObject* origin)
     }
 }
 
-// public float2 get_Translation() [instance] :3187
+// public float2 get_Translation() [instance] :3207
 ::g::Uno::Float2 InteractiveTransform::Translation()
 {
     return _translation;
 }
 
-// public void set_Translation(float2 value) [instance] :3188
+// public void set_Translation(float2 value) [instance] :3208
 void InteractiveTransform::Translation(::g::Uno::Float2 value)
 {
     uStackFrame __("Fuse.Elements.InteractiveTransform", "set_Translation(float2)");
     SetTranslation(value, NULL);
 }
 
-// public float get_ZoomFactor() [instance] :3148
+// public float get_ZoomFactor() [instance] :3168
 float InteractiveTransform::ZoomFactor()
 {
     return _zoomFactor;
 }
 
-// public void set_ZoomFactor(float value) [instance] :3149
+// public void set_ZoomFactor(float value) [instance] :3169
 void InteractiveTransform::ZoomFactor(float value)
 {
     uStackFrame __("Fuse.Elements.InteractiveTransform", "set_ZoomFactor(float)");
     SetZoomFactor(value, NULL);
 }
 
-// public generated InteractiveTransform New() [static] :3142
+// public generated InteractiveTransform New() [static] :3162
 InteractiveTransform* InteractiveTransform::New2()
 {
     InteractiveTransform* obj1 = (InteractiveTransform*)uNew(InteractiveTransform_typeof());
@@ -7702,10 +7715,10 @@ InteractiveTransform* InteractiveTransform::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public abstract interface ITransformOrigin :2461
+// public abstract interface ITransformOrigin :2481
 // {
 uInterfaceType* ITransformOrigin_typeof()
 {
@@ -7719,10 +7732,10 @@ uInterfaceType* ITransformOrigin_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public abstract interface ITreeRenderer :1201
+// public abstract interface ITreeRenderer :1221
 // {
 uInterfaceType* ITreeRenderer_typeof()
 {
@@ -7748,10 +7761,10 @@ uInterfaceType* ITreeRenderer_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public abstract class LayoutFunction :3702
+// public abstract class LayoutFunction :3723
 // {
 static void LayoutFunction_build(uType* type)
 {
@@ -7778,30 +7791,30 @@ LayoutFunction_type* LayoutFunction_typeof()
     return type;
 }
 
-// protected LayoutFunction(Fuse.Reactive.Expression element) :3704
+// protected LayoutFunction(Fuse.Reactive.Expression element) :3725
 void LayoutFunction__ctor_2_fn(LayoutFunction* __this, ::g::Fuse::Reactive::Expression* element)
 {
     __this->ctor_2(element);
 }
 
-// public override sealed Uno.IDisposable Subscribe(Fuse.Reactive.IContext dc, Fuse.Reactive.IListener listener) :3708
+// public override sealed Uno.IDisposable Subscribe(Fuse.Reactive.IContext dc, Fuse.Reactive.IListener listener) :3729
 void LayoutFunction__Subscribe_fn(LayoutFunction* __this, uObject* dc, uObject* listener, uObject** __retval)
 {
     uStackFrame __("Fuse.Elements.LayoutFunction", "Subscribe(Fuse.Reactive.IContext,Fuse.Reactive.IListener)");
     return *__retval = (uObject*)LayoutFunction__LayoutSubscription::New2(__this, dc, listener), void();
 }
 
-// protected LayoutFunction(Fuse.Reactive.Expression element) [instance] :3704
+// protected LayoutFunction(Fuse.Reactive.Expression element) [instance] :3725
 void LayoutFunction::ctor_2(::g::Fuse::Reactive::Expression* element)
 {
     ctor_1(element);
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public static class LayoutMasterAttr :3412
+// public static class LayoutMasterAttr :3432
 // {
 static void LayoutMasterAttr_build(uType* type)
 {
@@ -7822,26 +7835,26 @@ uClassType* LayoutMasterAttr_typeof()
     return type;
 }
 
-// public static Fuse.Elements.LayoutMasterMode GetLayoutMasterMode(Fuse.Elements.Element elm) :3424
+// public static Fuse.Elements.LayoutMasterMode GetLayoutMasterMode(Fuse.Elements.Element elm) :3444
 void LayoutMasterAttr__GetLayoutMasterMode_fn(::g::Fuse::Elements::Element* elm, int* __retval)
 {
     *__retval = LayoutMasterAttr::GetLayoutMasterMode(elm);
 }
 
-// public static void SetLayoutMasterMode(Fuse.Elements.Element elm, Fuse.Elements.LayoutMasterMode mode) :3418
+// public static void SetLayoutMasterMode(Fuse.Elements.Element elm, Fuse.Elements.LayoutMasterMode mode) :3438
 void LayoutMasterAttr__SetLayoutMasterMode_fn(::g::Fuse::Elements::Element* elm, int* mode)
 {
     LayoutMasterAttr::SetLayoutMasterMode(elm, *mode);
 }
 
-// public static Fuse.Elements.LayoutMasterMode GetLayoutMasterMode(Fuse.Elements.Element elm) [static] :3424
+// public static Fuse.Elements.LayoutMasterMode GetLayoutMasterMode(Fuse.Elements.Element elm) [static] :3444
 int LayoutMasterAttr::GetLayoutMasterMode(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.LayoutMasterAttr", "GetLayoutMasterMode(Fuse.Elements.Element)");
     return uPtr(::g::Fuse::Elements::LayoutMasterBoxSizing::GetLayoutMasterData(elm))->Mode;
 }
 
-// public static void SetLayoutMasterMode(Fuse.Elements.Element elm, Fuse.Elements.LayoutMasterMode mode) [static] :3418
+// public static void SetLayoutMasterMode(Fuse.Elements.Element elm, Fuse.Elements.LayoutMasterMode mode) [static] :3438
 void LayoutMasterAttr::SetLayoutMasterMode(::g::Fuse::Elements::Element* elm, int mode)
 {
     uStackFrame __("Fuse.Elements.LayoutMasterAttr", "SetLayoutMasterMode(Fuse.Elements.Element,Fuse.Elements.LayoutMasterMode)");
@@ -7849,12 +7862,12 @@ void LayoutMasterAttr::SetLayoutMasterMode(::g::Fuse::Elements::Element* elm, in
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// internal sealed class LayoutMasterBoxSizing :3245
+// internal sealed class LayoutMasterBoxSizing :3265
 // {
-// static LayoutMasterBoxSizing() :3245
+// static LayoutMasterBoxSizing() :3265
 static void LayoutMasterBoxSizing__cctor__fn(uType* __type)
 {
     LayoutMasterBoxSizing::Singleton_ = LayoutMasterBoxSizing::New1();
@@ -7891,13 +7904,13 @@ static void LayoutMasterBoxSizing_build(uType* type)
     return type;
 }
 
-// public generated LayoutMasterBoxSizing() :3245
+// public generated LayoutMasterBoxSizing() :3265
 void LayoutMasterBoxSizing__ctor_1_fn(LayoutMasterBoxSizing* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed float2 CalcArrangePaddingSize(Fuse.Elements.Element element, Fuse.LayoutParams lp) :3280
+// public override sealed float2 CalcArrangePaddingSize(Fuse.Elements.Element element, Fuse.LayoutParams lp) :3300
 void LayoutMasterBoxSizing__CalcArrangePaddingSize_fn(LayoutMasterBoxSizing* __this, ::g::Fuse::Elements::Element* element, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval)
 {
     uStackFrame __("Fuse.Elements.LayoutMasterBoxSizing", "CalcArrangePaddingSize(Fuse.Elements.Element,Fuse.LayoutParams)");
@@ -7905,7 +7918,7 @@ void LayoutMasterBoxSizing__CalcArrangePaddingSize_fn(LayoutMasterBoxSizing* __t
     return *__retval = uPtr(::g::Fuse::Elements::StandardBoxSizing::Singleton())->CalcArrangePaddingSize(element, lp_), void();
 }
 
-// public override sealed Fuse.Elements.BoxPlacement CalcBoxPlacement(Fuse.Elements.Element element, float2 position, Fuse.LayoutParams lp) :3249
+// public override sealed Fuse.Elements.BoxPlacement CalcBoxPlacement(Fuse.Elements.Element element, float2 position, Fuse.LayoutParams lp) :3269
 void LayoutMasterBoxSizing__CalcBoxPlacement_fn(LayoutMasterBoxSizing* __this, ::g::Fuse::Elements::Element* element, ::g::Uno::Float2* position, ::g::Fuse::LayoutParams* lp, ::g::Fuse::Elements::BoxPlacement* __retval)
 {
     uStackFrame __("Fuse.Elements.LayoutMasterBoxSizing", "CalcBoxPlacement(Fuse.Elements.Element,float2,Fuse.LayoutParams)");
@@ -7925,7 +7938,7 @@ void LayoutMasterBoxSizing__CalcBoxPlacement_fn(LayoutMasterBoxSizing* __this, :
     return *__retval = uPtr(::g::Fuse::Elements::StandardBoxSizing::Singleton())->CalcBoxPlacement(element, position_, lp_), void();
 }
 
-// public override sealed float2 CalcMarginSize(Fuse.Elements.Element element, Fuse.LayoutParams lp) :3271
+// public override sealed float2 CalcMarginSize(Fuse.Elements.Element element, Fuse.LayoutParams lp) :3291
 void LayoutMasterBoxSizing__CalcMarginSize_fn(LayoutMasterBoxSizing* __this, ::g::Fuse::Elements::Element* element, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval)
 {
     uStackFrame __("Fuse.Elements.LayoutMasterBoxSizing", "CalcMarginSize(Fuse.Elements.Element,Fuse.LayoutParams)");
@@ -7938,31 +7951,31 @@ void LayoutMasterBoxSizing__CalcMarginSize_fn(LayoutMasterBoxSizing* __this, ::g
     return *__retval = uPtr(::g::Fuse::Elements::StandardBoxSizing::Singleton())->CalcMarginSize(element, lp_), void();
 }
 
-// internal static Fuse.Elements.Element GetLayoutMaster(Fuse.Elements.Element elm) :3392
+// internal static Fuse.Elements.Element GetLayoutMaster(Fuse.Elements.Element elm) :3412
 void LayoutMasterBoxSizing__GetLayoutMaster_fn(::g::Fuse::Elements::Element* elm, ::g::Fuse::Elements::Element** __retval)
 {
     *__retval = LayoutMasterBoxSizing::GetLayoutMaster(elm);
 }
 
-// internal static Fuse.Elements.LayoutMasterBoxSizing.LayoutMasterData GetLayoutMasterData(Fuse.Elements.Element elm) :3367
+// internal static Fuse.Elements.LayoutMasterBoxSizing.LayoutMasterData GetLayoutMasterData(Fuse.Elements.Element elm) :3387
 void LayoutMasterBoxSizing__GetLayoutMasterData_fn(::g::Fuse::Elements::Element* elm, LayoutMasterBoxSizing__LayoutMasterData** __retval)
 {
     *__retval = LayoutMasterBoxSizing::GetLayoutMasterData(elm);
 }
 
-// public override sealed Fuse.LayoutDependent IsContentRelativeSize(Fuse.Elements.Element element) :3379
+// public override sealed Fuse.LayoutDependent IsContentRelativeSize(Fuse.Elements.Element element) :3399
 void LayoutMasterBoxSizing__IsContentRelativeSize_fn(LayoutMasterBoxSizing* __this, ::g::Fuse::Elements::Element* element, int* __retval)
 {
     return *__retval = 0, void();
 }
 
-// public generated LayoutMasterBoxSizing New() :3245
+// public generated LayoutMasterBoxSizing New() :3265
 void LayoutMasterBoxSizing__New1_fn(LayoutMasterBoxSizing** __retval)
 {
     *__retval = LayoutMasterBoxSizing::New1();
 }
 
-// public override sealed void RequestLayout(Fuse.Elements.Element element) :3265
+// public override sealed void RequestLayout(Fuse.Elements.Element element) :3285
 void LayoutMasterBoxSizing__RequestLayout_fn(LayoutMasterBoxSizing* __this, ::g::Fuse::Elements::Element* element)
 {
     uStackFrame __("Fuse.Elements.LayoutMasterBoxSizing", "RequestLayout(Fuse.Elements.Element)");
@@ -7970,7 +7983,7 @@ void LayoutMasterBoxSizing__RequestLayout_fn(LayoutMasterBoxSizing* __this, ::g:
     uPtr(data)->ScheduleCheckLayout();
 }
 
-// internal static void SetLayoutMaster(Fuse.Elements.Element elm, Fuse.Elements.Element master) :3386
+// internal static void SetLayoutMaster(Fuse.Elements.Element elm, Fuse.Elements.Element master) :3406
 void LayoutMasterBoxSizing__SetLayoutMaster_fn(::g::Fuse::Elements::Element* elm, ::g::Fuse::Elements::Element* master)
 {
     LayoutMasterBoxSizing::SetLayoutMaster(elm, master);
@@ -7979,13 +7992,13 @@ void LayoutMasterBoxSizing__SetLayoutMaster_fn(::g::Fuse::Elements::Element* elm
 uSStrong< ::g::Fuse::PropertyHandle*> LayoutMasterBoxSizing::_layoutMasterDataProperty_;
 uSStrong<LayoutMasterBoxSizing*> LayoutMasterBoxSizing::Singleton_;
 
-// public generated LayoutMasterBoxSizing() [instance] :3245
+// public generated LayoutMasterBoxSizing() [instance] :3265
 void LayoutMasterBoxSizing::ctor_1()
 {
     ctor_();
 }
 
-// internal static Fuse.Elements.Element GetLayoutMaster(Fuse.Elements.Element elm) [static] :3392
+// internal static Fuse.Elements.Element GetLayoutMaster(Fuse.Elements.Element elm) [static] :3412
 ::g::Fuse::Elements::Element* LayoutMasterBoxSizing::GetLayoutMaster(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.LayoutMasterBoxSizing", "GetLayoutMaster(Fuse.Elements.Element)");
@@ -7993,7 +8006,7 @@ void LayoutMasterBoxSizing::ctor_1()
     return uPtr(LayoutMasterBoxSizing::GetLayoutMasterData(elm))->Master();
 }
 
-// internal static Fuse.Elements.LayoutMasterBoxSizing.LayoutMasterData GetLayoutMasterData(Fuse.Elements.Element elm) [static] :3367
+// internal static Fuse.Elements.LayoutMasterBoxSizing.LayoutMasterData GetLayoutMasterData(Fuse.Elements.Element elm) [static] :3387
 LayoutMasterBoxSizing__LayoutMasterData* LayoutMasterBoxSizing::GetLayoutMasterData(::g::Fuse::Elements::Element* elm)
 {
     uStackFrame __("Fuse.Elements.LayoutMasterBoxSizing", "GetLayoutMasterData(Fuse.Elements.Element)");
@@ -8009,7 +8022,7 @@ LayoutMasterBoxSizing__LayoutMasterData* LayoutMasterBoxSizing::GetLayoutMasterD
     return sd;
 }
 
-// public generated LayoutMasterBoxSizing New() [static] :3245
+// public generated LayoutMasterBoxSizing New() [static] :3265
 LayoutMasterBoxSizing* LayoutMasterBoxSizing::New1()
 {
     LayoutMasterBoxSizing* obj1 = (LayoutMasterBoxSizing*)uNew(LayoutMasterBoxSizing_typeof());
@@ -8017,7 +8030,7 @@ LayoutMasterBoxSizing* LayoutMasterBoxSizing::New1()
     return obj1;
 }
 
-// internal static void SetLayoutMaster(Fuse.Elements.Element elm, Fuse.Elements.Element master) [static] :3386
+// internal static void SetLayoutMaster(Fuse.Elements.Element elm, Fuse.Elements.Element master) [static] :3406
 void LayoutMasterBoxSizing::SetLayoutMaster(::g::Fuse::Elements::Element* elm, ::g::Fuse::Elements::Element* master)
 {
     uStackFrame __("Fuse.Elements.LayoutMasterBoxSizing", "SetLayoutMaster(Fuse.Elements.Element,Fuse.Elements.Element)");
@@ -8026,10 +8039,10 @@ void LayoutMasterBoxSizing::SetLayoutMaster(::g::Fuse::Elements::Element* elm, :
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// internal sealed class LayoutMasterBoxSizing.LayoutMasterData :3287
+// internal sealed class LayoutMasterBoxSizing.LayoutMasterData :3307
 // {
 static void LayoutMasterBoxSizing__LayoutMasterData_build(uType* type)
 {
@@ -8058,54 +8071,54 @@ uType* LayoutMasterBoxSizing__LayoutMasterData_typeof()
     return type;
 }
 
-// public generated LayoutMasterData() :3287
+// public generated LayoutMasterData() :3307
 void LayoutMasterBoxSizing__LayoutMasterData__ctor__fn(LayoutMasterBoxSizing__LayoutMasterData* __this)
 {
     __this->ctor_();
 }
 
-// internal void CheckLayout() :3327
+// internal void CheckLayout() :3347
 void LayoutMasterBoxSizing__LayoutMasterData__CheckLayout_fn(LayoutMasterBoxSizing__LayoutMasterData* __this)
 {
     __this->CheckLayout();
 }
 
-// public Fuse.Elements.Element get_Master() :3297
+// public Fuse.Elements.Element get_Master() :3317
 void LayoutMasterBoxSizing__LayoutMasterData__get_Master_fn(LayoutMasterBoxSizing__LayoutMasterData* __this, ::g::Fuse::Elements::Element** __retval)
 {
     *__retval = __this->Master();
 }
 
-// public void set_Master(Fuse.Elements.Element value) :3298
+// public void set_Master(Fuse.Elements.Element value) :3318
 void LayoutMasterBoxSizing__LayoutMasterData__set_Master_fn(LayoutMasterBoxSizing__LayoutMasterData* __this, ::g::Fuse::Elements::Element* value)
 {
     __this->Master(value);
 }
 
-// public generated LayoutMasterData New() :3287
+// public generated LayoutMasterData New() :3307
 void LayoutMasterBoxSizing__LayoutMasterData__New1_fn(LayoutMasterBoxSizing__LayoutMasterData** __retval)
 {
     *__retval = LayoutMasterBoxSizing__LayoutMasterData::New1();
 }
 
-// private void OnPlaced(object s, object args) :3361
+// private void OnPlaced(object s, object args) :3381
 void LayoutMasterBoxSizing__LayoutMasterData__OnPlaced_fn(LayoutMasterBoxSizing__LayoutMasterData* __this, uObject* s, uObject* args)
 {
     __this->OnPlaced(s, args);
 }
 
-// internal void ScheduleCheckLayout() :3317
+// internal void ScheduleCheckLayout() :3337
 void LayoutMasterBoxSizing__LayoutMasterData__ScheduleCheckLayout_fn(LayoutMasterBoxSizing__LayoutMasterData* __this)
 {
     __this->ScheduleCheckLayout();
 }
 
-// public generated LayoutMasterData() [instance] :3287
+// public generated LayoutMasterData() [instance] :3307
 void LayoutMasterBoxSizing__LayoutMasterData::ctor_()
 {
 }
 
-// internal void CheckLayout() [instance] :3327
+// internal void CheckLayout() [instance] :3347
 void LayoutMasterBoxSizing__LayoutMasterData::CheckLayout()
 {
     uStackFrame __("Fuse.Elements.LayoutMasterBoxSizing.LayoutMasterData", "CheckLayout()");
@@ -8144,13 +8157,13 @@ void LayoutMasterBoxSizing__LayoutMasterData::CheckLayout()
     uPtr(Element)->ArrangeMarginBox(pos, ::g::Fuse::LayoutParams__Create(size));
 }
 
-// public Fuse.Elements.Element get_Master() [instance] :3297
+// public Fuse.Elements.Element get_Master() [instance] :3317
 ::g::Fuse::Elements::Element* LayoutMasterBoxSizing__LayoutMasterData::Master()
 {
     return _master;
 }
 
-// public void set_Master(Fuse.Elements.Element value) [instance] :3298
+// public void set_Master(Fuse.Elements.Element value) [instance] :3318
 void LayoutMasterBoxSizing__LayoutMasterData::Master(::g::Fuse::Elements::Element* value)
 {
     uStackFrame __("Fuse.Elements.LayoutMasterBoxSizing.LayoutMasterData", "set_Master(Fuse.Elements.Element)");
@@ -8170,14 +8183,14 @@ void LayoutMasterBoxSizing__LayoutMasterData::Master(::g::Fuse::Elements::Elemen
         ScheduleCheckLayout();
 }
 
-// private void OnPlaced(object s, object args) [instance] :3361
+// private void OnPlaced(object s, object args) [instance] :3381
 void LayoutMasterBoxSizing__LayoutMasterData::OnPlaced(uObject* s, uObject* args)
 {
     uStackFrame __("Fuse.Elements.LayoutMasterBoxSizing.LayoutMasterData", "OnPlaced(object,object)");
     ::g::Fuse::UpdateManager::AddDeferredAction(uDelegate::New(::TYPES[15/*Uno.Action*/], (void*)LayoutMasterBoxSizing__LayoutMasterData__CheckLayout_fn, this), -1, 0);
 }
 
-// internal void ScheduleCheckLayout() [instance] :3317
+// internal void ScheduleCheckLayout() [instance] :3337
 void LayoutMasterBoxSizing__LayoutMasterData::ScheduleCheckLayout()
 {
     uStackFrame __("Fuse.Elements.LayoutMasterBoxSizing.LayoutMasterData", "ScheduleCheckLayout()");
@@ -8189,7 +8202,7 @@ void LayoutMasterBoxSizing__LayoutMasterData::ScheduleCheckLayout()
     }
 }
 
-// public generated LayoutMasterData New() [static] :3287
+// public generated LayoutMasterData New() [static] :3307
 LayoutMasterBoxSizing__LayoutMasterData* LayoutMasterBoxSizing__LayoutMasterData::New1()
 {
     LayoutMasterBoxSizing__LayoutMasterData* obj2 = (LayoutMasterBoxSizing__LayoutMasterData*)uNew(LayoutMasterBoxSizing__LayoutMasterData_typeof());
@@ -8198,10 +8211,10 @@ LayoutMasterBoxSizing__LayoutMasterData* LayoutMasterBoxSizing__LayoutMasterData
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public enum LayoutMasterMode :3235
+// public enum LayoutMasterMode :3255
 uEnumType* LayoutMasterMode_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -8215,10 +8228,10 @@ uEnumType* LayoutMasterMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed class LayoutFunction.LayoutSubscription :3716
+// private sealed class LayoutFunction.LayoutSubscription :3737
 // {
 static void LayoutFunction__LayoutSubscription_build(uType* type)
 {
@@ -8252,13 +8265,13 @@ static void LayoutFunction__LayoutSubscription_build(uType* type)
     return type;
 }
 
-// public LayoutSubscription(Fuse.Elements.LayoutFunction lf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) :3720
+// public LayoutSubscription(Fuse.Elements.LayoutFunction lf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) :3741
 void LayoutFunction__LayoutSubscription__ctor_2_fn(LayoutFunction__LayoutSubscription* __this, ::g::Fuse::Elements::LayoutFunction* lf, uObject* context, uObject* listener)
 {
     __this->ctor_2(lf, context, listener);
 }
 
-// public override sealed void Dispose() :3750
+// public override sealed void Dispose() :3771
 void LayoutFunction__LayoutSubscription__Dispose_fn(LayoutFunction__LayoutSubscription* __this)
 {
     uStackFrame __("Fuse.Elements.LayoutFunction.LayoutSubscription", "Dispose()");
@@ -8269,13 +8282,13 @@ void LayoutFunction__LayoutSubscription__Dispose_fn(LayoutFunction__LayoutSubscr
         uPtr(__this->_element)->remove_Placed(uDelegate::New(::TYPES[0/*Fuse.PlacedHandler*/], (void*)LayoutFunction__LayoutSubscription__OnPlaced_fn, __this));
 }
 
-// public LayoutSubscription New(Fuse.Elements.LayoutFunction lf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) :3720
+// public LayoutSubscription New(Fuse.Elements.LayoutFunction lf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) :3741
 void LayoutFunction__LayoutSubscription__New2_fn(::g::Fuse::Elements::LayoutFunction* lf, uObject* context, uObject* listener, LayoutFunction__LayoutSubscription** __retval)
 {
     *__retval = LayoutFunction__LayoutSubscription::New2(lf, context, listener);
 }
 
-// protected override sealed void OnNewOperand(object elmObj) :3727
+// protected override sealed void OnNewOperand(object elmObj) :3748
 void LayoutFunction__LayoutSubscription__OnNewOperand_fn(LayoutFunction__LayoutSubscription* __this, uObject* elmObj)
 {
     uStackFrame __("Fuse.Elements.LayoutFunction.LayoutSubscription", "OnNewOperand(object)");
@@ -8297,13 +8310,13 @@ void LayoutFunction__LayoutSubscription__OnNewOperand_fn(LayoutFunction__LayoutS
     }
 }
 
-// private void OnPlaced(object sender, Fuse.PlacedArgs args) :3745
+// private void OnPlaced(object sender, Fuse.PlacedArgs args) :3766
 void LayoutFunction__LayoutSubscription__OnPlaced_fn(LayoutFunction__LayoutSubscription* __this, uObject* sender, ::g::Fuse::PlacedArgs* args)
 {
     __this->OnPlaced(sender, args);
 }
 
-// public LayoutSubscription(Fuse.Elements.LayoutFunction lf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) [instance] :3720
+// public LayoutSubscription(Fuse.Elements.LayoutFunction lf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) [instance] :3741
 void LayoutFunction__LayoutSubscription::ctor_2(::g::Fuse::Elements::LayoutFunction* lf, uObject* context, uObject* listener)
 {
     uStackFrame __("Fuse.Elements.LayoutFunction.LayoutSubscription", ".ctor(Fuse.Elements.LayoutFunction,Fuse.Reactive.IContext,Fuse.Reactive.IListener)");
@@ -8312,14 +8325,14 @@ void LayoutFunction__LayoutSubscription::ctor_2(::g::Fuse::Elements::LayoutFunct
     Init(context);
 }
 
-// private void OnPlaced(object sender, Fuse.PlacedArgs args) [instance] :3745
+// private void OnPlaced(object sender, Fuse.PlacedArgs args) [instance] :3766
 void LayoutFunction__LayoutSubscription::OnPlaced(uObject* sender, ::g::Fuse::PlacedArgs* args)
 {
     uStackFrame __("Fuse.Elements.LayoutFunction.LayoutSubscription", "OnPlaced(object,Fuse.PlacedArgs)");
     PushNewData(uPtr(_lf)->GetValue(args));
 }
 
-// public LayoutSubscription New(Fuse.Elements.LayoutFunction lf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) [static] :3720
+// public LayoutSubscription New(Fuse.Elements.LayoutFunction lf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) [static] :3741
 LayoutFunction__LayoutSubscription* LayoutFunction__LayoutSubscription::New2(::g::Fuse::Elements::LayoutFunction* lf, uObject* context, uObject* listener)
 {
     LayoutFunction__LayoutSubscription* obj1 = (LayoutFunction__LayoutSubscription*)uNew(LayoutFunction__LayoutSubscription_typeof());
@@ -8328,12 +8341,12 @@ LayoutFunction__LayoutSubscription* LayoutFunction__LayoutSubscription::New2(::g
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// internal sealed class LimitBoxSizing :3439
+// internal sealed class LimitBoxSizing :3459
 // {
-// static LimitBoxSizing() :3439
+// static LimitBoxSizing() :3459
 static void LimitBoxSizing__cctor__fn(uType* __type)
 {
     LimitBoxSizing::Singleton_ = LimitBoxSizing::New1();
@@ -8365,13 +8378,13 @@ static void LimitBoxSizing_build(uType* type)
     return type;
 }
 
-// public generated LimitBoxSizing() :3439
+// public generated LimitBoxSizing() :3459
 void LimitBoxSizing__ctor_1_fn(LimitBoxSizing* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed float2 CalcArrangePaddingSize(Fuse.Elements.Element element, Fuse.LayoutParams lp) :3458
+// public override sealed float2 CalcArrangePaddingSize(Fuse.Elements.Element element, Fuse.LayoutParams lp) :3478
 void LimitBoxSizing__CalcArrangePaddingSize_fn(LimitBoxSizing* __this, ::g::Fuse::Elements::Element* element, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval)
 {
     uStackFrame __("Fuse.Elements.LimitBoxSizing", "CalcArrangePaddingSize(Fuse.Elements.Element,Fuse.LayoutParams)");
@@ -8379,7 +8392,7 @@ void LimitBoxSizing__CalcArrangePaddingSize_fn(LimitBoxSizing* __this, ::g::Fuse
     return *__retval = uPtr(::g::Fuse::Elements::StandardBoxSizing::Singleton())->CalcArrangePaddingSize(element, lp_), void();
 }
 
-// public override sealed Fuse.Elements.BoxPlacement CalcBoxPlacement(Fuse.Elements.Element element, float2 position, Fuse.LayoutParams lp) :3443
+// public override sealed Fuse.Elements.BoxPlacement CalcBoxPlacement(Fuse.Elements.Element element, float2 position, Fuse.LayoutParams lp) :3463
 void LimitBoxSizing__CalcBoxPlacement_fn(LimitBoxSizing* __this, ::g::Fuse::Elements::Element* element, ::g::Uno::Float2* position, ::g::Fuse::LayoutParams* lp, ::g::Fuse::Elements::BoxPlacement* __retval)
 {
     uStackFrame __("Fuse.Elements.LimitBoxSizing", "CalcBoxPlacement(Fuse.Elements.Element,float2,Fuse.LayoutParams)");
@@ -8388,7 +8401,7 @@ void LimitBoxSizing__CalcBoxPlacement_fn(LimitBoxSizing* __this, ::g::Fuse::Elem
     return *__retval = uPtr(::g::Fuse::Elements::StandardBoxSizing::Singleton())->CalcBoxPlacement(element, position_, lp_), void();
 }
 
-// public override sealed float2 CalcMarginSize(Fuse.Elements.Element element, Fuse.LayoutParams lp) :3448
+// public override sealed float2 CalcMarginSize(Fuse.Elements.Element element, Fuse.LayoutParams lp) :3468
 void LimitBoxSizing__CalcMarginSize_fn(LimitBoxSizing* __this, ::g::Fuse::Elements::Element* element, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval)
 {
     uStackFrame __("Fuse.Elements.LimitBoxSizing", "CalcMarginSize(Fuse.Elements.Element,Fuse.LayoutParams)");
@@ -8400,13 +8413,13 @@ void LimitBoxSizing__CalcMarginSize_fn(LimitBoxSizing* __this, ::g::Fuse::Elemen
     return *__retval = c, void();
 }
 
-// private float2 Limit(Fuse.Elements.Element element, float2 std) :3463
+// private float2 Limit(Fuse.Elements.Element element, float2 std) :3483
 void LimitBoxSizing__Limit_fn(LimitBoxSizing* __this, ::g::Fuse::Elements::Element* element, ::g::Uno::Float2* std, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->Limit(element, *std);
 }
 
-// public generated LimitBoxSizing New() :3439
+// public generated LimitBoxSizing New() :3459
 void LimitBoxSizing__New1_fn(LimitBoxSizing** __retval)
 {
     *__retval = LimitBoxSizing::New1();
@@ -8414,13 +8427,13 @@ void LimitBoxSizing__New1_fn(LimitBoxSizing** __retval)
 
 uSStrong<LimitBoxSizing*> LimitBoxSizing::Singleton_;
 
-// public generated LimitBoxSizing() [instance] :3439
+// public generated LimitBoxSizing() [instance] :3459
 void LimitBoxSizing::ctor_1()
 {
     ctor_();
 }
 
-// private float2 Limit(Fuse.Elements.Element element, float2 std) [instance] :3463
+// private float2 Limit(Fuse.Elements.Element element, float2 std) [instance] :3483
 ::g::Uno::Float2 LimitBoxSizing::Limit(::g::Fuse::Elements::Element* element, ::g::Uno::Float2 std)
 {
     uStackFrame __("Fuse.Elements.LimitBoxSizing", "Limit(Fuse.Elements.Element,float2)");
@@ -8447,7 +8460,7 @@ void LimitBoxSizing::ctor_1()
     return std;
 }
 
-// public generated LimitBoxSizing New() [static] :3439
+// public generated LimitBoxSizing New() [static] :3459
 LimitBoxSizing* LimitBoxSizing::New1()
 {
     LimitBoxSizing* obj1 = (LimitBoxSizing*)uNew(LimitBoxSizing_typeof());
@@ -8456,8 +8469,8 @@ LimitBoxSizing* LimitBoxSizing::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
 // internal sealed class NoImplicitMaxBoxSizing :567
 // {
@@ -8520,10 +8533,10 @@ NoImplicitMaxBoxSizing* NoImplicitMaxBoxSizing::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private class TranslationModes.OffsetMode :3544
+// private class TranslationModes.OffsetMode :3564
 // {
 static void TranslationModes__OffsetMode_build(uType* type)
 {
@@ -8556,48 +8569,48 @@ TranslationModes__OffsetMode_type* TranslationModes__OffsetMode_typeof()
     return type;
 }
 
-// public generated OffsetMode() :3544
+// public generated OffsetMode() :3564
 void TranslationModes__OffsetMode__ctor__fn(TranslationModes__OffsetMode* __this)
 {
     __this->ctor_();
 }
 
-// public float3 GetAbsVector(Fuse.Translation t) :3546
+// public float3 GetAbsVector(Fuse.Translation t) :3566
 void TranslationModes__OffsetMode__GetAbsVector_fn(TranslationModes__OffsetMode* __this, ::g::Fuse::Translation* t, ::g::Uno::Float3* __retval)
 {
     *__retval = __this->GetAbsVector(t);
 }
 
-// protected virtual float3 GetDstOffset(Fuse.Elements.Element e) :3596
+// protected virtual float3 GetDstOffset(Fuse.Elements.Element e) :3616
 void TranslationModes__OffsetMode__GetDstOffset_fn(TranslationModes__OffsetMode* __this, ::g::Fuse::Elements::Element* e, ::g::Uno::Float3* __retval)
 {
     return *__retval = ::g::Uno::Float3__New1(0.0f), void();
 }
 
-// protected virtual float3 GetSrcOffset(Fuse.Elements.Element e) :3597
+// protected virtual float3 GetSrcOffset(Fuse.Elements.Element e) :3617
 void TranslationModes__OffsetMode__GetSrcOffset_fn(TranslationModes__OffsetMode* __this, ::g::Fuse::Elements::Element* e, ::g::Uno::Float3* __retval)
 {
     return *__retval = ::g::Uno::Float3__New1(0.0f), void();
 }
 
-// public object Subscribe(Fuse.ITransformRelative transform) :3575
+// public object Subscribe(Fuse.ITransformRelative transform) :3595
 void TranslationModes__OffsetMode__Subscribe_fn(TranslationModes__OffsetMode* __this, uObject* transform, uObject** __retval)
 {
     *__retval = __this->Subscribe(transform);
 }
 
-// public void Unsubscribe(Fuse.ITransformRelative transform, object sub) :3587
+// public void Unsubscribe(Fuse.ITransformRelative transform, object sub) :3607
 void TranslationModes__OffsetMode__Unsubscribe_fn(TranslationModes__OffsetMode* __this, uObject* transform, uObject* sub)
 {
     __this->Unsubscribe(transform, sub);
 }
 
-// public generated OffsetMode() [instance] :3544
+// public generated OffsetMode() [instance] :3564
 void TranslationModes__OffsetMode::ctor_()
 {
 }
 
-// public float3 GetAbsVector(Fuse.Translation t) [instance] :3546
+// public float3 GetAbsVector(Fuse.Translation t) [instance] :3566
 ::g::Uno::Float3 TranslationModes__OffsetMode::GetAbsVector(::g::Fuse::Translation* t)
 {
     uStackFrame __("Fuse.Elements.TranslationModes.OffsetMode", "GetAbsVector(Fuse.Translation)");
@@ -8624,7 +8637,7 @@ void TranslationModes__OffsetMode::ctor_()
     return ::g::Uno::Float3__op_Multiply2(worldChange, t->Vector());
 }
 
-// public object Subscribe(Fuse.ITransformRelative transform) [instance] :3575
+// public object Subscribe(Fuse.ITransformRelative transform) [instance] :3595
 uObject* TranslationModes__OffsetMode::Subscribe(uObject* transform)
 {
     uStackFrame __("Fuse.Elements.TranslationModes.OffsetMode", "Subscribe(Fuse.ITransformRelative)");
@@ -8643,7 +8656,7 @@ uObject* TranslationModes__OffsetMode::Subscribe(uObject* transform)
     return s;
 }
 
-// public void Unsubscribe(Fuse.ITransformRelative transform, object sub) [instance] :3587
+// public void Unsubscribe(Fuse.ITransformRelative transform, object sub) [instance] :3607
 void TranslationModes__OffsetMode::Unsubscribe(uObject* transform, uObject* sub)
 {
     uStackFrame __("Fuse.Elements.TranslationModes.OffsetMode", "Unsubscribe(Fuse.ITransformRelative,object)");
@@ -8656,10 +8669,10 @@ void TranslationModes__OffsetMode::Unsubscribe(uObject* transform, uObject* sub)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// internal enum OptionalSimpleAlignment :3074
+// internal enum OptionalSimpleAlignment :3094
 uEnumType* OptionalSimpleAlignment_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -8674,10 +8687,10 @@ uEnumType* OptionalSimpleAlignment_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public enum PerspectiveRelativeToMode :547
+// public enum PerspectiveRelativeToMode :557
 uEnumType* PerspectiveRelativeToMode_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -8691,10 +8704,10 @@ uEnumType* PerspectiveRelativeToMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed class TranslationModes.PositionOffsetMode :3600
+// private sealed class TranslationModes.PositionOffsetMode :3620
 // {
 static void TranslationModes__PositionOffsetMode_build(uType* type)
 {
@@ -8722,25 +8735,25 @@ static void TranslationModes__PositionOffsetMode_build(uType* type)
     return type;
 }
 
-// public generated PositionOffsetMode() :3600
+// public generated PositionOffsetMode() :3620
 void TranslationModes__PositionOffsetMode__ctor_1_fn(TranslationModes__PositionOffsetMode* __this)
 {
     __this->ctor_1();
 }
 
-// public generated PositionOffsetMode New() :3600
+// public generated PositionOffsetMode New() :3620
 void TranslationModes__PositionOffsetMode__New2_fn(TranslationModes__PositionOffsetMode** __retval)
 {
     *__retval = TranslationModes__PositionOffsetMode::New2();
 }
 
-// public generated PositionOffsetMode() [instance] :3600
+// public generated PositionOffsetMode() [instance] :3620
 void TranslationModes__PositionOffsetMode::ctor_1()
 {
     ctor_();
 }
 
-// public generated PositionOffsetMode New() [static] :3600
+// public generated PositionOffsetMode New() [static] :3620
 TranslationModes__PositionOffsetMode* TranslationModes__PositionOffsetMode::New2()
 {
     TranslationModes__PositionOffsetMode* obj1 = (TranslationModes__PositionOffsetMode*)uNew(TranslationModes__PositionOffsetMode_typeof());
@@ -8749,10 +8762,10 @@ TranslationModes__PositionOffsetMode* TranslationModes__PositionOffsetMode::New2
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public sealed class PreplacementArgs :1850
+// public sealed class PreplacementArgs :1870
 // {
 static void PreplacementArgs_build(uType* type)
 {
@@ -8777,50 +8790,50 @@ uType* PreplacementArgs_typeof()
     return type;
 }
 
-// internal PreplacementArgs(bool hasPrev) :1855
+// internal PreplacementArgs(bool hasPrev) :1875
 void PreplacementArgs__ctor_1_fn(PreplacementArgs* __this, bool* hasPrev)
 {
     __this->ctor_1(*hasPrev);
 }
 
-// public generated bool get_HasPrev() :1853
+// public generated bool get_HasPrev() :1873
 void PreplacementArgs__get_HasPrev_fn(PreplacementArgs* __this, bool* __retval)
 {
     *__retval = __this->HasPrev();
 }
 
-// private generated void set_HasPrev(bool value) :1853
+// private generated void set_HasPrev(bool value) :1873
 void PreplacementArgs__set_HasPrev_fn(PreplacementArgs* __this, bool* value)
 {
     __this->HasPrev(*value);
 }
 
-// internal PreplacementArgs New(bool hasPrev) :1855
+// internal PreplacementArgs New(bool hasPrev) :1875
 void PreplacementArgs__New2_fn(bool* hasPrev, PreplacementArgs** __retval)
 {
     *__retval = PreplacementArgs::New2(*hasPrev);
 }
 
-// internal PreplacementArgs(bool hasPrev) [instance] :1855
+// internal PreplacementArgs(bool hasPrev) [instance] :1875
 void PreplacementArgs::ctor_1(bool hasPrev)
 {
     ctor_();
     HasPrev(hasPrev);
 }
 
-// public generated bool get_HasPrev() [instance] :1853
+// public generated bool get_HasPrev() [instance] :1873
 bool PreplacementArgs::HasPrev()
 {
     return _HasPrev;
 }
 
-// private generated void set_HasPrev(bool value) [instance] :1853
+// private generated void set_HasPrev(bool value) [instance] :1873
 void PreplacementArgs::HasPrev(bool value)
 {
     _HasPrev = value;
 }
 
-// internal PreplacementArgs New(bool hasPrev) [static] :1855
+// internal PreplacementArgs New(bool hasPrev) [static] :1875
 PreplacementArgs* PreplacementArgs::New2(bool hasPrev)
 {
     PreplacementArgs* obj1 = (PreplacementArgs*)uNew(PreplacementArgs_typeof());
@@ -8829,10 +8842,10 @@ PreplacementArgs* PreplacementArgs::New2(bool hasPrev)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public delegate void PreplacementHandler(object sender, Fuse.Elements.PreplacementArgs args) :1861
+// public delegate void PreplacementHandler(object sender, Fuse.Elements.PreplacementArgs args) :1881
 uDelegateType* PreplacementHandler_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -8845,10 +8858,10 @@ uDelegateType* PreplacementHandler_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed class TranslationModes.RelativeResizeChangeMode :3659
+// private sealed class TranslationModes.RelativeResizeChangeMode :3680
 // {
 static void TranslationModes__RelativeResizeChangeMode_build(uType* type)
 {
@@ -8873,30 +8886,30 @@ TranslationModes__RelativeResizeChangeMode_type* TranslationModes__RelativeResiz
     return type;
 }
 
-// public generated RelativeResizeChangeMode() :3659
+// public generated RelativeResizeChangeMode() :3680
 void TranslationModes__RelativeResizeChangeMode__ctor__fn(TranslationModes__RelativeResizeChangeMode* __this)
 {
     __this->ctor_();
 }
 
-// public bool GetSizeChange(Fuse.Visual target, Fuse.Visual relative, float2& baseSize, float2& deltaSize) :3661
+// public bool GetSizeChange(Fuse.Visual target, Fuse.Visual relative, float2& baseSize, float2& deltaSize) :3682
 void TranslationModes__RelativeResizeChangeMode__GetSizeChange_fn(TranslationModes__RelativeResizeChangeMode* __this, ::g::Fuse::Visual* target, ::g::Fuse::Visual* relative, ::g::Uno::Float2* baseSize, ::g::Uno::Float2* deltaSize, bool* __retval)
 {
     *__retval = __this->GetSizeChange(target, relative, baseSize, deltaSize);
 }
 
-// public generated RelativeResizeChangeMode New() :3659
+// public generated RelativeResizeChangeMode New() :3680
 void TranslationModes__RelativeResizeChangeMode__New1_fn(TranslationModes__RelativeResizeChangeMode** __retval)
 {
     *__retval = TranslationModes__RelativeResizeChangeMode::New1();
 }
 
-// public generated RelativeResizeChangeMode() [instance] :3659
+// public generated RelativeResizeChangeMode() [instance] :3680
 void TranslationModes__RelativeResizeChangeMode::ctor_()
 {
 }
 
-// public bool GetSizeChange(Fuse.Visual target, Fuse.Visual relative, float2& baseSize, float2& deltaSize) [instance] :3661
+// public bool GetSizeChange(Fuse.Visual target, Fuse.Visual relative, float2& baseSize, float2& deltaSize) [instance] :3682
 bool TranslationModes__RelativeResizeChangeMode::GetSizeChange(::g::Fuse::Visual* target, ::g::Fuse::Visual* relative, ::g::Uno::Float2* baseSize, ::g::Uno::Float2* deltaSize)
 {
     uStackFrame __("Fuse.Elements.TranslationModes.RelativeResizeChangeMode", "GetSizeChange(Fuse.Visual,Fuse.Visual,float2&,float2&)");
@@ -8915,7 +8928,7 @@ bool TranslationModes__RelativeResizeChangeMode::GetSizeChange(::g::Fuse::Visual
     return true;
 }
 
-// public generated RelativeResizeChangeMode New() [static] :3659
+// public generated RelativeResizeChangeMode New() [static] :3680
 TranslationModes__RelativeResizeChangeMode* TranslationModes__RelativeResizeChangeMode::New1()
 {
     TranslationModes__RelativeResizeChangeMode* obj1 = (TranslationModes__RelativeResizeChangeMode*)uNew(TranslationModes__RelativeResizeChangeMode_typeof());
@@ -8924,10 +8937,10 @@ TranslationModes__RelativeResizeChangeMode* TranslationModes__RelativeResizeChan
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// internal enum SimpleAlignment :3067
+// internal enum SimpleAlignment :3087
 uEnumType* SimpleAlignment_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -8941,10 +8954,10 @@ uEnumType* SimpleAlignment_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno
+// ---------------------------------------------------------------
 
-// internal sealed class SingleVisualDrawable :845
+// internal sealed class SingleVisualDrawable :867
 // {
 static void SingleVisualDrawable_build(uType* type)
 {
@@ -8970,38 +8983,38 @@ SingleVisualDrawable_type* SingleVisualDrawable_typeof()
     return type;
 }
 
-// public SingleVisualDrawable(Fuse.Visual elm) :848
+// public SingleVisualDrawable(Fuse.Visual elm) :870
 void SingleVisualDrawable__ctor__fn(SingleVisualDrawable* __this, ::g::Fuse::Visual* elm)
 {
     __this->ctor_(elm);
 }
 
-// public void Draw(Fuse.DrawContext dc, float4x4 localToClipTransform, Uno.Rect scissorRectInClipSpace) :853
+// public void Draw(Fuse.DrawContext dc, float4x4 localToClipTransform, Uno.Rect scissorRectInClipSpace) :875
 void SingleVisualDrawable__Draw_fn(SingleVisualDrawable* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Float4x4* localToClipTransform, ::g::Uno::Rect* scissorRectInClipSpace)
 {
     __this->Draw(dc, *localToClipTransform, *scissorRectInClipSpace);
 }
 
-// public SingleVisualDrawable New(Fuse.Visual elm) :848
+// public SingleVisualDrawable New(Fuse.Visual elm) :870
 void SingleVisualDrawable__New1_fn(::g::Fuse::Visual* elm, SingleVisualDrawable** __retval)
 {
     *__retval = SingleVisualDrawable::New1(elm);
 }
 
-// public SingleVisualDrawable(Fuse.Visual elm) [instance] :848
+// public SingleVisualDrawable(Fuse.Visual elm) [instance] :870
 void SingleVisualDrawable::ctor_(::g::Fuse::Visual* elm)
 {
     _elm = elm;
 }
 
-// public void Draw(Fuse.DrawContext dc, float4x4 localToClipTransform, Uno.Rect scissorRectInClipSpace) [instance] :853
+// public void Draw(Fuse.DrawContext dc, float4x4 localToClipTransform, Uno.Rect scissorRectInClipSpace) [instance] :875
 void SingleVisualDrawable::Draw(::g::Fuse::DrawContext* dc, ::g::Uno::Float4x4 localToClipTransform, ::g::Uno::Rect scissorRectInClipSpace)
 {
     uStackFrame __("Fuse.Elements.SingleVisualDrawable", "Draw(Fuse.DrawContext,float4x4,Uno.Rect)");
     uPtr(_elm)->Draw(dc);
 }
 
-// public SingleVisualDrawable New(Fuse.Visual elm) [static] :848
+// public SingleVisualDrawable New(Fuse.Visual elm) [static] :870
 SingleVisualDrawable* SingleVisualDrawable::New1(::g::Fuse::Visual* elm)
 {
     SingleVisualDrawable* obj1 = (SingleVisualDrawable*)uNew(SingleVisualDrawable_typeof());
@@ -9010,10 +9023,10 @@ SingleVisualDrawable* SingleVisualDrawable::New1(::g::Fuse::Visual* elm)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed class TranslationModes.SizeFactorMode :3622
+// private sealed class TranslationModes.SizeFactorMode :3642
 // {
 static void TranslationModes__SizeFactorMode_build(uType* type)
 {
@@ -9044,42 +9057,42 @@ TranslationModes__SizeFactorMode_type* TranslationModes__SizeFactorMode_typeof()
     return type;
 }
 
-// public generated SizeFactorMode() :3622
+// public generated SizeFactorMode() :3642
 void TranslationModes__SizeFactorMode__ctor__fn(TranslationModes__SizeFactorMode* __this)
 {
     __this->ctor_();
 }
 
-// public float3 GetScaleVector(Fuse.Scaling t) :3624
+// public float3 GetScaleVector(Fuse.Scaling t) :3644
 void TranslationModes__SizeFactorMode__GetScaleVector_fn(TranslationModes__SizeFactorMode* __this, ::g::Fuse::Scaling* t, ::g::Uno::Float3* __retval)
 {
     *__retval = __this->GetScaleVector(t);
 }
 
-// public generated SizeFactorMode New() :3622
+// public generated SizeFactorMode New() :3642
 void TranslationModes__SizeFactorMode__New1_fn(TranslationModes__SizeFactorMode** __retval)
 {
     *__retval = TranslationModes__SizeFactorMode::New1();
 }
 
-// public object Subscribe(Fuse.ITransformRelative transform) :3639
+// public object Subscribe(Fuse.ITransformRelative transform) :3660
 void TranslationModes__SizeFactorMode__Subscribe_fn(TranslationModes__SizeFactorMode* __this, uObject* transform, uObject** __retval)
 {
     *__retval = __this->Subscribe(transform);
 }
 
-// public void Unsubscribe(Fuse.ITransformRelative transform, object sub) :3646
+// public void Unsubscribe(Fuse.ITransformRelative transform, object sub) :3667
 void TranslationModes__SizeFactorMode__Unsubscribe_fn(TranslationModes__SizeFactorMode* __this, uObject* transform, uObject* sub)
 {
     __this->Unsubscribe(transform, sub);
 }
 
-// public generated SizeFactorMode() [instance] :3622
+// public generated SizeFactorMode() [instance] :3642
 void TranslationModes__SizeFactorMode::ctor_()
 {
 }
 
-// public float3 GetScaleVector(Fuse.Scaling t) [instance] :3624
+// public float3 GetScaleVector(Fuse.Scaling t) [instance] :3644
 ::g::Uno::Float3 TranslationModes__SizeFactorMode::GetScaleVector(::g::Fuse::Scaling* t)
 {
     uStackFrame __("Fuse.Elements.TranslationModes.SizeFactorMode", "GetScaleVector(Fuse.Scaling)");
@@ -9090,6 +9103,7 @@ void TranslationModes__SizeFactorMode::ctor_()
         return ::g::Uno::Float3__New1(1.0f);
 
     ::g::Uno::Float2 sz = uPtr(src)->ActualSize();
+    float zeroTolerance = 1e-05f;
 
     if ((sz.X < 1e-05f) || (sz.Y < 1e-05f))
         return ::g::Uno::Float3__New1(1.0f);
@@ -9098,7 +9112,7 @@ void TranslationModes__SizeFactorMode::ctor_()
     return ::g::Uno::Float3__op_Addition2(::g::Uno::Float3__op_Multiply2(rel, t->Vector()), ::g::Uno::Float3__New1(1.0f));
 }
 
-// public object Subscribe(Fuse.ITransformRelative transform) [instance] :3639
+// public object Subscribe(Fuse.ITransformRelative transform) [instance] :3660
 uObject* TranslationModes__SizeFactorMode::Subscribe(uObject* transform)
 {
     uStackFrame __("Fuse.Elements.TranslationModes.SizeFactorMode", "Subscribe(Fuse.ITransformRelative)");
@@ -9110,7 +9124,7 @@ uObject* TranslationModes__SizeFactorMode::Subscribe(uObject* transform)
     return n;
 }
 
-// public void Unsubscribe(Fuse.ITransformRelative transform, object sub) [instance] :3646
+// public void Unsubscribe(Fuse.ITransformRelative transform, object sub) [instance] :3667
 void TranslationModes__SizeFactorMode::Unsubscribe(uObject* transform, uObject* sub)
 {
     uStackFrame __("Fuse.Elements.TranslationModes.SizeFactorMode", "Unsubscribe(Fuse.ITransformRelative,object)");
@@ -9119,7 +9133,7 @@ void TranslationModes__SizeFactorMode::Unsubscribe(uObject* transform, uObject* 
         ::g::Fuse::IActualPlacement::remove_Placed(uInterface(uPtr(uAs<uObject*>(sub, ::TYPES[60/*Fuse.IActualPlacement*/])), ::TYPES[60/*Fuse.IActualPlacement*/]), uDelegate::New(::TYPES[0/*Fuse.PlacedHandler*/], uInterface(uPtr(transform), ::TYPES[58/*Fuse.ITransformRelative*/]), offsetof(::g::Fuse::ITransformRelative, fp_OnTransformChanged)));
 }
 
-// public generated SizeFactorMode New() [static] :3622
+// public generated SizeFactorMode New() [static] :3642
 TranslationModes__SizeFactorMode* TranslationModes__SizeFactorMode::New1()
 {
     TranslationModes__SizeFactorMode* obj1 = (TranslationModes__SizeFactorMode*)uNew(TranslationModes__SizeFactorMode_typeof());
@@ -9128,8 +9142,8 @@ TranslationModes__SizeFactorMode* TranslationModes__SizeFactorMode::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
 // internal class StandardBoxSizing :410
 // {
@@ -9381,10 +9395,10 @@ StandardBoxSizing* StandardBoxSizing::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public enum StretchDirection :3113
+// public enum StretchDirection :3133
 uEnumType* StretchDirection_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -9398,10 +9412,10 @@ uEnumType* StretchDirection_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public enum StretchMode :3092
+// public enum StretchMode :3112
 uEnumType* StretchMode_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -9419,10 +9433,10 @@ uEnumType* StretchMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public enum StretchSizing :3126
+// public enum StretchSizing :3146
 uEnumType* StretchSizing_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -9435,10 +9449,10 @@ uEnumType* StretchSizing_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed class TranslationModes.OffsetMode.Subscriptions :3569
+// private sealed class TranslationModes.OffsetMode.Subscriptions :3589
 // {
 static void TranslationModes__OffsetMode__Subscriptions_build(uType* type)
 {
@@ -9463,24 +9477,24 @@ uType* TranslationModes__OffsetMode__Subscriptions_typeof()
     return type;
 }
 
-// public generated Subscriptions() :3569
+// public generated Subscriptions() :3589
 void TranslationModes__OffsetMode__Subscriptions__ctor__fn(TranslationModes__OffsetMode__Subscriptions* __this)
 {
     __this->ctor_();
 }
 
-// public generated Subscriptions New() :3569
+// public generated Subscriptions New() :3589
 void TranslationModes__OffsetMode__Subscriptions__New1_fn(TranslationModes__OffsetMode__Subscriptions** __retval)
 {
     *__retval = TranslationModes__OffsetMode__Subscriptions::New1();
 }
 
-// public generated Subscriptions() [instance] :3569
+// public generated Subscriptions() [instance] :3589
 void TranslationModes__OffsetMode__Subscriptions::ctor_()
 {
 }
 
-// public generated Subscriptions New() [static] :3569
+// public generated Subscriptions New() [static] :3589
 TranslationModes__OffsetMode__Subscriptions* TranslationModes__OffsetMode__Subscriptions::New1()
 {
     TranslationModes__OffsetMode__Subscriptions* obj1 = (TranslationModes__OffsetMode__Subscriptions*)uNew(TranslationModes__OffsetMode__Subscriptions_typeof());
@@ -9489,10 +9503,10 @@ TranslationModes__OffsetMode__Subscriptions* TranslationModes__OffsetMode__Subsc
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed class TransformOrigins.TopLeftOrigin :2501
+// private sealed class TransformOrigins.TopLeftOrigin :2521
 // {
 static void TransformOrigins__TopLeftOrigin_build(uType* type)
 {
@@ -9516,36 +9530,36 @@ TransformOrigins__TopLeftOrigin_type* TransformOrigins__TopLeftOrigin_typeof()
     return type;
 }
 
-// public generated TopLeftOrigin() :2501
+// public generated TopLeftOrigin() :2521
 void TransformOrigins__TopLeftOrigin__ctor__fn(TransformOrigins__TopLeftOrigin* __this)
 {
     __this->ctor_();
 }
 
-// public float3 GetOffset(Fuse.Elements.Element elm) :2503
+// public float3 GetOffset(Fuse.Elements.Element elm) :2523
 void TransformOrigins__TopLeftOrigin__GetOffset_fn(TransformOrigins__TopLeftOrigin* __this, ::g::Fuse::Elements::Element* elm, ::g::Uno::Float3* __retval)
 {
     *__retval = __this->GetOffset(elm);
 }
 
-// public generated TopLeftOrigin New() :2501
+// public generated TopLeftOrigin New() :2521
 void TransformOrigins__TopLeftOrigin__New1_fn(TransformOrigins__TopLeftOrigin** __retval)
 {
     *__retval = TransformOrigins__TopLeftOrigin::New1();
 }
 
-// public generated TopLeftOrigin() [instance] :2501
+// public generated TopLeftOrigin() [instance] :2521
 void TransformOrigins__TopLeftOrigin::ctor_()
 {
 }
 
-// public float3 GetOffset(Fuse.Elements.Element elm) [instance] :2503
+// public float3 GetOffset(Fuse.Elements.Element elm) [instance] :2523
 ::g::Uno::Float3 TransformOrigins__TopLeftOrigin::GetOffset(::g::Fuse::Elements::Element* elm)
 {
     return ::g::Uno::Float3__New1(0.0f);
 }
 
-// public generated TopLeftOrigin New() [static] :2501
+// public generated TopLeftOrigin New() [static] :2521
 TransformOrigins__TopLeftOrigin* TransformOrigins__TopLeftOrigin::New1()
 {
     TransformOrigins__TopLeftOrigin* obj1 = (TransformOrigins__TopLeftOrigin*)uNew(TransformOrigins__TopLeftOrigin_typeof());
@@ -9554,10 +9568,10 @@ TransformOrigins__TopLeftOrigin* TransformOrigins__TopLeftOrigin::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed extern class Element.TransformChanged :2764
+// private sealed extern class Element.TransformChanged :2784
 // {
 static void Element__TransformChanged_build(uType* type)
 {
@@ -9585,25 +9599,25 @@ Element__TransformChanged_type* Element__TransformChanged_typeof()
     return type;
 }
 
-// public TransformChanged(Fuse.Elements.Element element, Uno.Action<float4x4> handler) :2769
+// public TransformChanged(Fuse.Elements.Element element, Uno.Action<float4x4> handler) :2789
 void Element__TransformChanged__ctor__fn(Element__TransformChanged* __this, ::g::Fuse::Elements::Element* element, uDelegate* handler)
 {
     __this->ctor_(element, handler);
 }
 
-// public TransformChanged New(Fuse.Elements.Element element, Uno.Action<float4x4> handler) :2769
+// public TransformChanged New(Fuse.Elements.Element element, Uno.Action<float4x4> handler) :2789
 void Element__TransformChanged__New1_fn(::g::Fuse::Elements::Element* element, uDelegate* handler, Element__TransformChanged** __retval)
 {
     *__retval = Element__TransformChanged::New1(element, handler);
 }
 
-// private void OnWorldTransformInvalidated(object sender, Uno.EventArgs args) :2777
+// private void OnWorldTransformInvalidated(object sender, Uno.EventArgs args) :2797
 void Element__TransformChanged__OnWorldTransformInvalidated_fn(Element__TransformChanged* __this, uObject* sender, ::g::Uno::EventArgs* args)
 {
     __this->OnWorldTransformInvalidated(sender, args);
 }
 
-// private void Uno.IDisposable.Dispose() :2782
+// private void Uno.IDisposable.Dispose() :2802
 void Element__TransformChanged__UnoIDisposableDispose_fn(Element__TransformChanged* __this)
 {
     uStackFrame __("Fuse.Elements.Element.TransformChanged", "Uno.IDisposable.Dispose()");
@@ -9612,7 +9626,7 @@ void Element__TransformChanged__UnoIDisposableDispose_fn(Element__TransformChang
     __this->_handler = NULL;
 }
 
-// public TransformChanged(Fuse.Elements.Element element, Uno.Action<float4x4> handler) [instance] :2769
+// public TransformChanged(Fuse.Elements.Element element, Uno.Action<float4x4> handler) [instance] :2789
 void Element__TransformChanged::ctor_(::g::Fuse::Elements::Element* element, uDelegate* handler)
 {
     uStackFrame __("Fuse.Elements.Element.TransformChanged", ".ctor(Fuse.Elements.Element,Uno.Action<float4x4>)");
@@ -9622,14 +9636,14 @@ void Element__TransformChanged::ctor_(::g::Fuse::Elements::Element* element, uDe
     uPtr(_element)->add_WorldTransformInvalidated(uDelegate::New(::TYPES[41/*Uno.EventHandler*/], (void*)Element__TransformChanged__OnWorldTransformInvalidated_fn, this));
 }
 
-// private void OnWorldTransformInvalidated(object sender, Uno.EventArgs args) [instance] :2777
+// private void OnWorldTransformInvalidated(object sender, Uno.EventArgs args) [instance] :2797
 void Element__TransformChanged::OnWorldTransformInvalidated(uObject* sender, ::g::Uno::EventArgs* args)
 {
     uStackFrame __("Fuse.Elements.Element.TransformChanged", "OnWorldTransformInvalidated(object,Uno.EventArgs)");
     uPtr(_handler)->InvokeVoid(uCRef(uPtr(_element)->WorldTransform()));
 }
 
-// public TransformChanged New(Fuse.Elements.Element element, Uno.Action<float4x4> handler) [static] :2769
+// public TransformChanged New(Fuse.Elements.Element element, Uno.Action<float4x4> handler) [static] :2789
 Element__TransformChanged* Element__TransformChanged::New1(::g::Fuse::Elements::Element* element, uDelegate* handler)
 {
     Element__TransformChanged* obj1 = (Element__TransformChanged*)uNew(Element__TransformChanged_typeof());
@@ -9638,10 +9652,10 @@ Element__TransformChanged* Element__TransformChanged::New1(::g::Fuse::Elements::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed class TranslationModes.TransformOriginOffsetMode :3604
+// private sealed class TranslationModes.TransformOriginOffsetMode :3624
 // {
 static void TranslationModes__TransformOriginOffsetMode_build(uType* type)
 {
@@ -9672,39 +9686,39 @@ static void TranslationModes__TransformOriginOffsetMode_build(uType* type)
     return type;
 }
 
-// public generated TransformOriginOffsetMode() :3604
+// public generated TransformOriginOffsetMode() :3624
 void TranslationModes__TransformOriginOffsetMode__ctor_1_fn(TranslationModes__TransformOriginOffsetMode* __this)
 {
     __this->ctor_1();
 }
 
-// protected override sealed float3 GetDstOffset(Fuse.Elements.Element e) :3606
+// protected override sealed float3 GetDstOffset(Fuse.Elements.Element e) :3626
 void TranslationModes__TransformOriginOffsetMode__GetDstOffset_fn(TranslationModes__TransformOriginOffsetMode* __this, ::g::Fuse::Elements::Element* e, ::g::Uno::Float3* __retval)
 {
     uStackFrame __("Fuse.Elements.TranslationModes.TransformOriginOffsetMode", "GetDstOffset(Fuse.Elements.Element)");
     return *__retval = ::g::Fuse::Elements::ITransformOrigin::GetOffset(uInterface(uPtr(uPtr(e)->TransformOrigin()), ::TYPES[18/*Fuse.Elements.ITransformOrigin*/]), e), void();
 }
 
-// protected override sealed float3 GetSrcOffset(Fuse.Elements.Element e) :3611
+// protected override sealed float3 GetSrcOffset(Fuse.Elements.Element e) :3631
 void TranslationModes__TransformOriginOffsetMode__GetSrcOffset_fn(TranslationModes__TransformOriginOffsetMode* __this, ::g::Fuse::Elements::Element* e, ::g::Uno::Float3* __retval)
 {
     uStackFrame __("Fuse.Elements.TranslationModes.TransformOriginOffsetMode", "GetSrcOffset(Fuse.Elements.Element)");
     return *__retval = ::g::Fuse::Elements::ITransformOrigin::GetOffset(uInterface(uPtr(uPtr(e)->TransformOrigin()), ::TYPES[18/*Fuse.Elements.ITransformOrigin*/]), e), void();
 }
 
-// public generated TransformOriginOffsetMode New() :3604
+// public generated TransformOriginOffsetMode New() :3624
 void TranslationModes__TransformOriginOffsetMode__New2_fn(TranslationModes__TransformOriginOffsetMode** __retval)
 {
     *__retval = TranslationModes__TransformOriginOffsetMode::New2();
 }
 
-// public generated TransformOriginOffsetMode() [instance] :3604
+// public generated TransformOriginOffsetMode() [instance] :3624
 void TranslationModes__TransformOriginOffsetMode::ctor_1()
 {
     ctor_();
 }
 
-// public generated TransformOriginOffsetMode New() [static] :3604
+// public generated TransformOriginOffsetMode New() [static] :3624
 TranslationModes__TransformOriginOffsetMode* TranslationModes__TransformOriginOffsetMode::New2()
 {
     TranslationModes__TransformOriginOffsetMode* obj1 = (TranslationModes__TransformOriginOffsetMode*)uNew(TranslationModes__TransformOriginOffsetMode_typeof());
@@ -9713,12 +9727,12 @@ TranslationModes__TransformOriginOffsetMode* TranslationModes__TransformOriginOf
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public static class TransformOrigins :2499
+// public static class TransformOrigins :2519
 // {
-// static TransformOrigins() :2499
+// static TransformOrigins() :2519
 static void TransformOrigins__cctor__fn(uType* __type)
 {
     TransformOrigins__BoxCenter* collection2;
@@ -9767,12 +9781,12 @@ uSStrong<uObject*> TransformOrigins::TopLeft_;
 uSStrong<uObject*> TransformOrigins::VerticalBoxCenter_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public static class TranslationModes :3542
+// public static class TranslationModes :3562
 // {
-// static TranslationModes() :3542
+// static TranslationModes() :3562
 static void TranslationModes__cctor__fn(uType* __type)
 {
     TranslationModes::TransformOriginOffset_ = (uObject*)TranslationModes__TransformOriginOffsetMode::New2();
@@ -9815,10 +9829,10 @@ uSStrong<uObject*> TranslationModes::SizeFactor_;
 uSStrong<uObject*> TranslationModes::TransformOriginOffset_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public sealed class Viewport :573
+// public sealed class Viewport :583
 // {
 static void Viewport_build(uType* type)
 {
@@ -9840,17 +9854,18 @@ static void Viewport_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(Viewport_type, interface5),
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(Viewport_type, interface6),
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(Viewport_type, interface7),
-        ::TYPES[22/*Uno.Collections.ICollection<Fuse.Node>*/], offsetof(Viewport_type, interface8),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(Viewport_type, interface9),
-        ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(Viewport_type, interface10),
-        ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(Viewport_type, interface11),
-        ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(Viewport_type, interface12),
-        ::g::Fuse::IActualPlacement_typeof(), offsetof(Viewport_type, interface13),
-        ::g::Fuse::Animations::IResize_typeof(), offsetof(Viewport_type, interface14),
-        ::TYPES[61/*Fuse.IViewport*/], offsetof(Viewport_type, interface15),
-        ::TYPES[3/*Fuse.IRenderViewport*/], offsetof(Viewport_type, interface16),
-        ::TYPES[56/*Fuse.ICommonViewport*/], offsetof(Viewport_type, interface17));
-    type->SetFields(90,
+        ::g::Fuse::ITemplateSource_typeof(), offsetof(Viewport_type, interface8),
+        ::TYPES[22/*Uno.Collections.ICollection<Fuse.Node>*/], offsetof(Viewport_type, interface9),
+        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(Viewport_type, interface10),
+        ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(Viewport_type, interface11),
+        ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(Viewport_type, interface12),
+        ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(Viewport_type, interface13),
+        ::g::Fuse::IActualPlacement_typeof(), offsetof(Viewport_type, interface14),
+        ::g::Fuse::Animations::IResize_typeof(), offsetof(Viewport_type, interface15),
+        ::TYPES[61/*Fuse.IViewport*/], offsetof(Viewport_type, interface16),
+        ::TYPES[3/*Fuse.IRenderViewport*/], offsetof(Viewport_type, interface17),
+        ::TYPES[56/*Fuse.ICommonViewport*/], offsetof(Viewport_type, interface18));
+    type->SetFields(96,
         ::g::Uno::Graphics::PolygonFace_typeof(), offsetof(::g::Fuse::Elements::Viewport, _cullFace), 0,
         ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall_typeof(), offsetof(::g::Fuse::Elements::Viewport, _draw_bdff5d40), 0,
         ::TYPES[63/*Fuse.IFrustum*/], offsetof(::g::Fuse::Elements::Viewport, _frustum), 0,
@@ -9877,12 +9892,12 @@ static void Viewport_build(uType* type)
         new uFunction("set_PerspectiveRelativeTo", NULL, (void*)Viewport__set_PerspectiveRelativeTo_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Elements::PerspectiveRelativeToMode_typeof()),
         new uFunction("get_PixelSize", NULL, (void*)Viewport__get_PixelSize_fn, 0, false, ::g::Uno::Float2_typeof(), 0),
         new uFunction("get_PixelsPerPoint", NULL, (void*)Viewport__get_PixelsPerPoint_fn, 0, false, ::g::Uno::Float_typeof(), 0),
-        new uFunction("PointToWorldRay", NULL, (void*)Viewport__PointToWorldRay_fn, 0, false, ::g::Uno::Geometry::Ray_typeof(), 1, ::g::Uno::Float2_typeof()),
+        new uFunction("PointToWorldRay", NULL, (void*)Viewport__PointToWorldRay_fn, 0, false, ::g::Fuse::Ray_typeof(), 1, ::g::Uno::Float2_typeof()),
         new uFunction("get_RootVisual", NULL, (void*)Viewport__get_RootVisual_fn, 0, false, ::g::Fuse::Visual_typeof(), 0),
         new uFunction("set_RootVisual", NULL, (void*)Viewport__set_RootVisual_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Visual_typeof()),
         new uFunction("get_Size", NULL, (void*)Viewport__get_Size_fn, 0, false, ::g::Uno::Float2_typeof(), 0),
         new uFunction("get_ViewTransform", NULL, (void*)Viewport__get_ViewTransform_fn, 0, false, ::g::Uno::Float4x4_typeof(), 0),
-        new uFunction("WorldToLocalRay", NULL, (void*)Viewport__WorldToLocalRay_fn, 0, false, ::g::Uno::Geometry::Ray_typeof(), 3, ::TYPES[61/*Fuse.IViewport*/], ::g::Uno::Geometry::Ray_typeof(), ::g::Fuse::Visual_typeof()));
+        new uFunction("WorldToLocalRay", NULL, (void*)Viewport__WorldToLocalRay_fn, 0, false, ::g::Fuse::Ray_typeof(), 3, ::TYPES[61/*Fuse.IViewport*/], ::g::Fuse::Ray_typeof(), ::g::Fuse::Visual_typeof()));
 }
 
 Viewport_type* Viewport_typeof()
@@ -9892,8 +9907,8 @@ Viewport_type* Viewport_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Elements::Element_typeof();
-    options.FieldCount = 104;
-    options.InterfaceCount = 18;
+    options.FieldCount = 110;
+    options.InterfaceCount = 19;
     options.ObjectSize = sizeof(Viewport);
     options.TypeSize = sizeof(Viewport_type);
     type = (Viewport_type*)uClassType::New("Fuse.Elements.Viewport", options);
@@ -9908,34 +9923,35 @@ Viewport_type* Viewport_typeof()
     type->fp_OnRooted = (void(*)(::g::Fuse::Node*))Viewport__OnRooted_fn;
     type->fp_OnUnrooted = (void(*)(::g::Fuse::Node*))Viewport__OnUnrooted_fn;
     type->fp_get_ParentWorldTransformInternal = (void(*)(::g::Fuse::Visual*, ::g::Fuse::FastMatrix**))Viewport__get_ParentWorldTransformInternal_fn;
-    type->interface16.fp_get_ProjectionTransform = (void(*)(uObject*, ::g::Uno::Float4x4*))Viewport__FuseIRenderViewportget_ProjectionTransform_fn;
-    type->interface16.fp_get_ViewProjectionTransform = (void(*)(uObject*, ::g::Uno::Float4x4*))Viewport__FuseIRenderViewportget_ViewProjectionTransform_fn;
-    type->interface16.fp_get_ViewOrigin = (void(*)(uObject*, ::g::Uno::Float3*))Viewport__FuseIRenderViewportget_ViewOrigin_fn;
-    type->interface16.fp_get_ViewRange = (void(*)(uObject*, ::g::Uno::Float2*))Viewport__FuseIRenderViewportget_ViewRange_fn;
-    type->interface15.fp_PointToWorldRay = (void(*)(uObject*, ::g::Uno::Float2*, ::g::Uno::Geometry::Ray*))Viewport__PointToWorldRay_fn;
-    type->interface15.fp_WorldToLocalRay = (void(*)(uObject*, uObject*, ::g::Uno::Geometry::Ray*, ::g::Fuse::Visual*, ::g::Uno::Geometry::Ray*))Viewport__WorldToLocalRay_fn;
-    type->interface17.fp_get_PixelsPerPoint = (void(*)(uObject*, float*))Viewport__get_PixelsPerPoint_fn;
-    type->interface17.fp_get_Size = (void(*)(uObject*, ::g::Uno::Float2*))Viewport__get_Size_fn;
-    type->interface17.fp_get_PixelSize = (void(*)(uObject*, ::g::Uno::Float2*))Viewport__get_PixelSize_fn;
-    type->interface17.fp_get_ViewTransform = (void(*)(uObject*, ::g::Uno::Float4x4*))Viewport__get_ViewTransform_fn;
-    type->interface10.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
-    type->interface12.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
-    type->interface11.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;
-    type->interface14.fp_SetSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Elements::Element__FuseAnimationsIResizeSetSize_fn;
-    type->interface13.fp_get_ActualSize = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualSize_fn;
-    type->interface13.fp_get_ActualPosition = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualPosition_fn;
-    type->interface13.fp_add_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__add_Placed_fn;
-    type->interface13.fp_remove_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__remove_Placed_fn;
-    type->interface8.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
-    type->interface8.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
+    type->interface17.fp_get_ProjectionTransform = (void(*)(uObject*, ::g::Uno::Float4x4*))Viewport__FuseIRenderViewportget_ProjectionTransform_fn;
+    type->interface17.fp_get_ViewProjectionTransform = (void(*)(uObject*, ::g::Uno::Float4x4*))Viewport__FuseIRenderViewportget_ViewProjectionTransform_fn;
+    type->interface17.fp_get_ViewOrigin = (void(*)(uObject*, ::g::Uno::Float3*))Viewport__FuseIRenderViewportget_ViewOrigin_fn;
+    type->interface17.fp_get_ViewRange = (void(*)(uObject*, ::g::Uno::Float2*))Viewport__FuseIRenderViewportget_ViewRange_fn;
+    type->interface16.fp_PointToWorldRay = (void(*)(uObject*, ::g::Uno::Float2*, ::g::Fuse::Ray*))Viewport__PointToWorldRay_fn;
+    type->interface16.fp_WorldToLocalRay = (void(*)(uObject*, uObject*, ::g::Fuse::Ray*, ::g::Fuse::Visual*, ::g::Fuse::Ray*))Viewport__WorldToLocalRay_fn;
+    type->interface18.fp_get_PixelsPerPoint = (void(*)(uObject*, float*))Viewport__get_PixelsPerPoint_fn;
+    type->interface18.fp_get_Size = (void(*)(uObject*, ::g::Uno::Float2*))Viewport__get_Size_fn;
+    type->interface18.fp_get_PixelSize = (void(*)(uObject*, ::g::Uno::Float2*))Viewport__get_PixelSize_fn;
+    type->interface18.fp_get_ViewTransform = (void(*)(uObject*, ::g::Uno::Float4x4*))Viewport__get_ViewTransform_fn;
+    type->interface11.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
+    type->interface13.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
+    type->interface12.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;
+    type->interface15.fp_SetSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Elements::Element__FuseAnimationsIResizeSetSize_fn;
+    type->interface14.fp_get_ActualSize = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualSize_fn;
+    type->interface14.fp_get_ActualPosition = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualPosition_fn;
+    type->interface14.fp_add_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__add_Placed_fn;
+    type->interface14.fp_remove_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__remove_Placed_fn;
+    type->interface9.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
+    type->interface9.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
     type->interface6.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsIListFuseNodeRemoveAt_fn;
-    type->interface9.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
-    type->interface8.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
+    type->interface10.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
+    type->interface9.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
     type->interface6.fp_get_Item = (void(*)(uObject*, int*, uTRef))::g::Fuse::Visual__UnoCollectionsIListFuseNodeget_Item_fn;
     type->interface6.fp_Insert = (void(*)(uObject*, int*, void*))::g::Fuse::Visual__Insert1_fn;
     type->interface7.fp_OnPropertyChanged = (void(*)(uObject*, ::g::Uno::UX::PropertyObject*, ::g::Uno::UX::Selector*))::g::Fuse::Visual__OnPropertyChanged2_fn;
-    type->interface8.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
-    type->interface8.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
+    type->interface8.fp_FindTemplate = (void(*)(uObject*, uString*, ::g::Uno::UX::Template**))::g::Fuse::Visual__FindTemplate_fn;
+    type->interface9.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
+    type->interface9.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
     type->interface4.fp_Clear = (void(*)(uObject*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingClear_fn;
     type->interface4.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingContains_fn;
     type->interface0.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Node__UnoCollectionsIListFuseBindingRemoveAt_fn;
@@ -9954,13 +9970,13 @@ Viewport_type* Viewport_typeof()
     return type;
 }
 
-// public generated Viewport() :573
+// public generated Viewport() :583
 void Viewport__ctor_4_fn(Viewport* __this)
 {
     __this->ctor_4();
 }
 
-// protected override sealed void ArrangePaddingBox(Fuse.LayoutParams lp) :743
+// protected override sealed void ArrangePaddingBox(Fuse.LayoutParams lp) :753
 void Viewport__ArrangePaddingBox_fn(Viewport* __this, ::g::Fuse::LayoutParams* lp)
 {
     uStackFrame __("Fuse.Elements.Viewport", "ArrangePaddingBox(Fuse.LayoutParams)");
@@ -9972,7 +9988,7 @@ void Viewport__ArrangePaddingBox_fn(Viewport* __this, ::g::Fuse::LayoutParams* l
     uPtr(__this->RootVisual())->ArrangeMarginBox(::g::Uno::Float2__New1(0.0f), lp_);
 }
 
-// internal override sealed bool CalcAreChildrenFlat() :863
+// internal override sealed bool CalcAreChildrenFlat() :873
 void Viewport__CalcAreChildrenFlat_fn(Viewport* __this, bool* __retval)
 {
     uStackFrame __("Fuse.Elements.Viewport", "CalcAreChildrenFlat()");
@@ -9980,7 +9996,7 @@ void Viewport__CalcAreChildrenFlat_fn(Viewport* __this, bool* __retval)
     return *__retval = __this->IsDisabled() ? (::g::Fuse::Visual__CalcAreChildrenFlat_fn(__this, &ret2), ret2) : true, void();
 }
 
-// protected override sealed Fuse.VisualBounds CalcRenderBounds() :845
+// protected override sealed Fuse.VisualBounds CalcRenderBounds() :855
 void Viewport__CalcRenderBounds_fn(Viewport* __this, ::g::Fuse::VisualBounds** __retval)
 {
     uStackFrame __("Fuse.Elements.Viewport", "CalcRenderBounds()");
@@ -9990,19 +10006,19 @@ void Viewport__CalcRenderBounds_fn(Viewport* __this, ::g::Fuse::VisualBounds** _
     return *__retval = q, void();
 }
 
-// public Uno.Graphics.PolygonFace get_CullFace() :603
+// public Uno.Graphics.PolygonFace get_CullFace() :613
 void Viewport__get_CullFace_fn(Viewport* __this, int* __retval)
 {
     *__retval = __this->CullFace();
 }
 
-// public void set_CullFace(Uno.Graphics.PolygonFace value) :604
+// public void set_CullFace(Uno.Graphics.PolygonFace value) :614
 void Viewport__set_CullFace_fn(Viewport* __this, int* value)
 {
     __this->CullFace(*value);
 }
 
-// protected override sealed void DrawWithChildren(Fuse.DrawContext dc) :769
+// protected override sealed void DrawWithChildren(Fuse.DrawContext dc) :779
 void Viewport__DrawWithChildren_fn(Viewport* __this, ::g::Fuse::DrawContext* dc)
 {
     uStackFrame __("Fuse.Elements.Viewport", "DrawWithChildren(Fuse.DrawContext)");
@@ -10060,59 +10076,59 @@ void Viewport__DrawWithChildren_fn(Viewport* __this, ::g::Fuse::DrawContext* dc)
         uPtr(dc)->PopCullFace();
 }
 
-// private Fuse.IFrustum get_Frustum() :670
+// private Fuse.IFrustum get_Frustum() :680
 void Viewport__get_Frustum_fn(Viewport* __this, uObject** __retval)
 {
     *__retval = __this->Frustum();
 }
 
-// private void set_Frustum(Fuse.IFrustum value) :671
+// private void set_Frustum(Fuse.IFrustum value) :681
 void Viewport__set_Frustum_fn(Viewport* __this, uObject* value)
 {
     __this->Frustum(value);
 }
 
-// private Fuse.FrustumViewport get_FrustumViewport() :636
+// private Fuse.FrustumViewport get_FrustumViewport() :646
 void Viewport__get_FrustumViewport_fn(Viewport* __this, ::g::Fuse::FrustumViewport** __retval)
 {
     *__retval = __this->FrustumViewport();
 }
 
-// public float4x4 Fuse.IRenderViewport.get_ProjectionTransform() :904
+// public float4x4 Fuse.IRenderViewport.get_ProjectionTransform() :914
 void Viewport__FuseIRenderViewportget_ProjectionTransform_fn(Viewport* __this, ::g::Uno::Float4x4* __retval)
 {
     uStackFrame __("Fuse.Elements.Viewport", "Fuse.IRenderViewport.get_ProjectionTransform()");
     return *__retval = uPtr(__this->FrustumViewport())->ProjectionTransform, void();
 }
 
-// public float3 Fuse.IRenderViewport.get_ViewOrigin() :911
+// public float3 Fuse.IRenderViewport.get_ViewOrigin() :921
 void Viewport__FuseIRenderViewportget_ViewOrigin_fn(Viewport* __this, ::g::Uno::Float3* __retval)
 {
     uStackFrame __("Fuse.Elements.Viewport", "Fuse.IRenderViewport.get_ViewOrigin()");
     return *__retval = ::g::Fuse::IFrustum::GetWorldPosition(uInterface(uPtr(__this->Frustum()), ::TYPES[63/*Fuse.IFrustum*/]), (uObject*)__this), void();
 }
 
-// public float4x4 Fuse.IRenderViewport.get_ViewProjectionTransform() :908
+// public float4x4 Fuse.IRenderViewport.get_ViewProjectionTransform() :918
 void Viewport__FuseIRenderViewportget_ViewProjectionTransform_fn(Viewport* __this, ::g::Uno::Float4x4* __retval)
 {
     uStackFrame __("Fuse.Elements.Viewport", "Fuse.IRenderViewport.get_ViewProjectionTransform()");
     return *__retval = uPtr(__this->FrustumViewport())->ViewProjectionTransform, void();
 }
 
-// public float2 Fuse.IRenderViewport.get_ViewRange() :912
+// public float2 Fuse.IRenderViewport.get_ViewRange() :922
 void Viewport__FuseIRenderViewportget_ViewRange_fn(Viewport* __this, ::g::Uno::Float2* __retval)
 {
     uStackFrame __("Fuse.Elements.Viewport", "Fuse.IRenderViewport.get_ViewRange()");
     return *__retval = ::g::Fuse::IFrustum::GetDepthRange(uInterface(uPtr(__this->Frustum()), ::TYPES[63/*Fuse.IFrustum*/]), (uObject*)__this), void();
 }
 
-// private bool get_HasCullFace() :612
+// private bool get_HasCullFace() :622
 void Viewport__get_HasCullFace_fn(Viewport* __this, bool* __retval)
 {
     *__retval = __this->HasCullFace();
 }
 
-// protected override sealed Fuse.VisualBounds get_HitTestChildrenBounds() :854
+// protected override sealed Fuse.VisualBounds get_HitTestChildrenBounds() :864
 void Viewport__get_HitTestChildrenBounds_fn(Viewport* __this, ::g::Fuse::VisualBounds** __retval)
 {
     uStackFrame __("Fuse.Elements.Viewport", "get_HitTestChildrenBounds()");
@@ -10122,68 +10138,68 @@ void Viewport__get_HitTestChildrenBounds_fn(Viewport* __this, ::g::Fuse::VisualB
     return *__retval = q, void();
 }
 
-// internal override sealed Fuse.Visual.HitTestTransformMode get_HitTestTransform() :870
+// internal override sealed Fuse.Visual.HitTestTransformMode get_HitTestTransform() :880
 void Viewport__get_HitTestTransform_fn(Viewport* __this, int* __retval)
 {
     int ret5;
     return *__retval = __this->IsDisabled() ? (::g::Fuse::Visual__get_HitTestTransform_fn(__this, &ret5), ret5) : 1, void();
 }
 
-// private generated void init_DrawCalls() :573
+// private generated void init_DrawCalls() :583
 void Viewport__init_DrawCalls_fn(Viewport* __this)
 {
     __this->init_DrawCalls();
 }
 
-// private void InvalidateFrustum() :618
+// private void InvalidateFrustum() :628
 void Viewport__InvalidateFrustum_fn(Viewport* __this)
 {
     __this->InvalidateFrustum();
 }
 
-// private bool get_IsDisabled() :881
+// private bool get_IsDisabled() :891
 void Viewport__get_IsDisabled_fn(Viewport* __this, bool* __retval)
 {
     *__retval = __this->IsDisabled();
 }
 
-// private bool get_IsRoot() :616
+// private bool get_IsRoot() :626
 void Viewport__get_IsRoot_fn(Viewport* __this, bool* __retval)
 {
     *__retval = __this->IsRoot();
 }
 
-// public Fuse.Elements.ViewportMode get_Mode() :579
+// public Fuse.Elements.ViewportMode get_Mode() :589
 void Viewport__get_Mode_fn(Viewport* __this, int* __retval)
 {
     *__retval = __this->Mode();
 }
 
-// public void set_Mode(Fuse.Elements.ViewportMode value) :580
+// public void set_Mode(Fuse.Elements.ViewportMode value) :590
 void Viewport__set_Mode_fn(Viewport* __this, int* value)
 {
     __this->Mode(*value);
 }
 
-// private Fuse.VisualBounds ModifyBounds(Fuse.VisualBounds vb) :824
+// private Fuse.VisualBounds ModifyBounds(Fuse.VisualBounds vb) :834
 void Viewport__ModifyBounds_fn(Viewport* __this, ::g::Fuse::VisualBounds* vb, ::g::Fuse::VisualBounds** __retval)
 {
     *__retval = __this->ModifyBounds(vb);
 }
 
-// public generated Viewport New() :573
+// public generated Viewport New() :583
 void Viewport__New2_fn(Viewport** __retval)
 {
     *__retval = Viewport::New2();
 }
 
-// protected void OnPlaced(object s, object a) :763
+// protected void OnPlaced(object s, object a) :773
 void Viewport__OnPlaced_fn(Viewport* __this, uObject* s, uObject* a)
 {
     __this->OnPlaced(s, a);
 }
 
-// protected override sealed void OnRooted() :751
+// protected override sealed void OnRooted() :761
 void Viewport__OnRooted_fn(Viewport* __this)
 {
     uStackFrame __("Fuse.Elements.Viewport", "OnRooted()");
@@ -10191,7 +10207,7 @@ void Viewport__OnRooted_fn(Viewport* __this)
     __this->add_Placed(uDelegate::New(::TYPES[0/*Fuse.PlacedHandler*/], (void*)Viewport__OnPlaced_fn, __this));
 }
 
-// protected override sealed void OnUnrooted() :757
+// protected override sealed void OnUnrooted() :767
 void Viewport__OnUnrooted_fn(Viewport* __this)
 {
     uStackFrame __("Fuse.Elements.Viewport", "OnUnrooted()");
@@ -10199,98 +10215,98 @@ void Viewport__OnUnrooted_fn(Viewport* __this)
     ::g::Fuse::Elements::Element__OnUnrooted_fn(__this);
 }
 
-// internal override sealed Fuse.FastMatrix get_ParentWorldTransformInternal() :878
+// internal override sealed Fuse.FastMatrix get_ParentWorldTransformInternal() :888
 void Viewport__get_ParentWorldTransformInternal_fn(Viewport* __this, ::g::Fuse::FastMatrix** __retval)
 {
     ::g::Fuse::FastMatrix* ret6;
     return *__retval = __this->IsDisabled() ? (::g::Fuse::Visual__get_ParentWorldTransformInternal_fn(__this, &ret6), ret6) : (::g::Fuse::FastMatrix*)::g::Fuse::FastMatrix::Identity(), void();
 }
 
-// public float get_Perspective() :687
+// public float get_Perspective() :697
 void Viewport__get_Perspective_fn(Viewport* __this, float* __retval)
 {
     *__retval = __this->Perspective();
 }
 
-// public void set_Perspective(float value) :688
+// public void set_Perspective(float value) :698
 void Viewport__set_Perspective_fn(Viewport* __this, float* value)
 {
     __this->Perspective(*value);
 }
 
-// public Fuse.Elements.PerspectiveRelativeToMode get_PerspectiveRelativeTo() :709
+// public Fuse.Elements.PerspectiveRelativeToMode get_PerspectiveRelativeTo() :719
 void Viewport__get_PerspectiveRelativeTo_fn(Viewport* __this, int* __retval)
 {
     *__retval = __this->PerspectiveRelativeTo();
 }
 
-// public void set_PerspectiveRelativeTo(Fuse.Elements.PerspectiveRelativeToMode value) :710
+// public void set_PerspectiveRelativeTo(Fuse.Elements.PerspectiveRelativeToMode value) :720
 void Viewport__set_PerspectiveRelativeTo_fn(Viewport* __this, int* value)
 {
     __this->PerspectiveRelativeTo(*value);
 }
 
-// public float2 get_PixelSize() :894
+// public float2 get_PixelSize() :904
 void Viewport__get_PixelSize_fn(Viewport* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->PixelSize();
 }
 
-// public float get_PixelsPerPoint() :886
+// public float get_PixelsPerPoint() :896
 void Viewport__get_PixelsPerPoint_fn(Viewport* __this, float* __retval)
 {
     *__retval = __this->PixelsPerPoint();
 }
 
-// public Uno.Geometry.Ray PointToWorldRay(float2 pointPos) :915
-void Viewport__PointToWorldRay_fn(Viewport* __this, ::g::Uno::Float2* pointPos, ::g::Uno::Geometry::Ray* __retval)
+// public Fuse.Ray PointToWorldRay(float2 pointPos) :925
+void Viewport__PointToWorldRay_fn(Viewport* __this, ::g::Uno::Float2* pointPos, ::g::Fuse::Ray* __retval)
 {
     *__retval = __this->PointToWorldRay(*pointPos);
 }
 
-// public Fuse.Visual get_RootVisual() :650
+// public Fuse.Visual get_RootVisual() :660
 void Viewport__get_RootVisual_fn(Viewport* __this, ::g::Fuse::Visual** __retval)
 {
     *__retval = __this->RootVisual();
 }
 
-// public void set_RootVisual(Fuse.Visual value) :655
+// public void set_RootVisual(Fuse.Visual value) :665
 void Viewport__set_RootVisual_fn(Viewport* __this, ::g::Fuse::Visual* value)
 {
     __this->RootVisual(value);
 }
 
-// public float2 get_Size() :890
+// public float2 get_Size() :900
 void Viewport__get_Size_fn(Viewport* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->Size();
 }
 
-// private void UpdateFrustum() :626
+// private void UpdateFrustum() :636
 void Viewport__UpdateFrustum_fn(Viewport* __this)
 {
     __this->UpdateFrustum();
 }
 
-// private void UpdatePerspective() :720
+// private void UpdatePerspective() :730
 void Viewport__UpdatePerspective_fn(Viewport* __this)
 {
     __this->UpdatePerspective();
 }
 
-// public float4x4 get_ViewTransform() :898
+// public float4x4 get_ViewTransform() :908
 void Viewport__get_ViewTransform_fn(Viewport* __this, ::g::Uno::Float4x4* __retval)
 {
     *__retval = __this->ViewTransform();
 }
 
-// public Uno.Geometry.Ray WorldToLocalRay(Fuse.IViewport world, Uno.Geometry.Ray worldRay, Fuse.Visual where) :931
-void Viewport__WorldToLocalRay_fn(Viewport* __this, uObject* world, ::g::Uno::Geometry::Ray* worldRay, ::g::Fuse::Visual* where, ::g::Uno::Geometry::Ray* __retval)
+// public Fuse.Ray WorldToLocalRay(Fuse.IViewport world, Fuse.Ray worldRay, Fuse.Visual where) :941
+void Viewport__WorldToLocalRay_fn(Viewport* __this, uObject* world, ::g::Fuse::Ray* worldRay, ::g::Fuse::Visual* where, ::g::Fuse::Ray* __retval)
 {
     *__retval = __this->WorldToLocalRay(world, *worldRay, where);
 }
 
-// public generated Viewport() [instance] :573
+// public generated Viewport() [instance] :583
 void Viewport::ctor_4()
 {
     uStackFrame __("Fuse.Elements.Viewport", ".ctor()");
@@ -10301,13 +10317,13 @@ void Viewport::ctor_4()
     init_DrawCalls();
 }
 
-// public Uno.Graphics.PolygonFace get_CullFace() [instance] :603
+// public Uno.Graphics.PolygonFace get_CullFace() [instance] :613
 int Viewport::CullFace()
 {
     return _cullFace;
 }
 
-// public void set_CullFace(Uno.Graphics.PolygonFace value) [instance] :604
+// public void set_CullFace(Uno.Graphics.PolygonFace value) [instance] :614
 void Viewport::CullFace(int value)
 {
     uStackFrame __("Fuse.Elements.Viewport", "set_CullFace(Uno.Graphics.PolygonFace)");
@@ -10316,13 +10332,13 @@ void Viewport::CullFace(int value)
     InvalidateVisual();
 }
 
-// private Fuse.IFrustum get_Frustum() [instance] :670
+// private Fuse.IFrustum get_Frustum() [instance] :680
 uObject* Viewport::Frustum()
 {
     return _frustum;
 }
 
-// private void set_Frustum(Fuse.IFrustum value) [instance] :671
+// private void set_Frustum(Fuse.IFrustum value) [instance] :681
 void Viewport::Frustum(uObject* value)
 {
     uStackFrame __("Fuse.Elements.Viewport", "set_Frustum(Fuse.IFrustum)");
@@ -10330,7 +10346,7 @@ void Viewport::Frustum(uObject* value)
     InvalidateFrustum();
 }
 
-// private Fuse.FrustumViewport get_FrustumViewport() [instance] :636
+// private Fuse.FrustumViewport get_FrustumViewport() [instance] :646
 ::g::Fuse::FrustumViewport* Viewport::FrustumViewport()
 {
     uStackFrame __("Fuse.Elements.Viewport", "get_FrustumViewport()");
@@ -10344,13 +10360,13 @@ void Viewport::Frustum(uObject* value)
     return _frustumViewport;
 }
 
-// private bool get_HasCullFace() [instance] :612
+// private bool get_HasCullFace() [instance] :622
 bool Viewport::HasCullFace()
 {
     return _hasCullFace;
 }
 
-// private generated void init_DrawCalls() [instance] :573
+// private generated void init_DrawCalls() [instance] :583
 void Viewport::init_DrawCalls()
 {
     uStackFrame __("Fuse.Elements.Viewport", "init_DrawCalls()");
@@ -10361,7 +10377,7 @@ void Viewport::init_DrawCalls()
     _draw_bdff5d40 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseControls_bundle::Viewportd3ce851b());
 }
 
-// private void InvalidateFrustum() [instance] :618
+// private void InvalidateFrustum() [instance] :628
 void Viewport::InvalidateFrustum()
 {
     uStackFrame __("Fuse.Elements.Viewport", "InvalidateFrustum()");
@@ -10369,25 +10385,25 @@ void Viewport::InvalidateFrustum()
     InvalidateLocalTransform();
 }
 
-// private bool get_IsDisabled() [instance] :881
+// private bool get_IsDisabled() [instance] :891
 bool Viewport::IsDisabled()
 {
     return Mode() == 1;
 }
 
-// private bool get_IsRoot() [instance] :616
+// private bool get_IsRoot() [instance] :626
 bool Viewport::IsRoot()
 {
     return (Parent() == NULL) || uIs((::g::Fuse::Visual*)Parent(), ::TYPES[1/*Fuse.RootViewport*/]);
 }
 
-// public Fuse.Elements.ViewportMode get_Mode() [instance] :579
+// public Fuse.Elements.ViewportMode get_Mode() [instance] :589
 int Viewport::Mode()
 {
     return _mode;
 }
 
-// public void set_Mode(Fuse.Elements.ViewportMode value) [instance] :580
+// public void set_Mode(Fuse.Elements.ViewportMode value) [instance] :590
 void Viewport::Mode(int value)
 {
     uStackFrame __("Fuse.Elements.Viewport", "set_Mode(Fuse.Elements.ViewportMode)");
@@ -10399,7 +10415,7 @@ void Viewport::Mode(int value)
     InvalidateFrustum();
 }
 
-// private Fuse.VisualBounds ModifyBounds(Fuse.VisualBounds vb) [instance] :824
+// private Fuse.VisualBounds ModifyBounds(Fuse.VisualBounds vb) [instance] :834
 ::g::Fuse::VisualBounds* Viewport::ModifyBounds(::g::Fuse::VisualBounds* vb)
 {
     uStackFrame __("Fuse.Elements.Viewport", "ModifyBounds(Fuse.VisualBounds)");
@@ -10415,11 +10431,11 @@ void Viewport::Mode(int value)
         return uPtr(vb)->AddRect(::g::Uno::Float2__New1(0.0f), ActualSize());
 
     ::g::Uno::Float4x4 mx = uPtr(FrustumViewport())->GetFlatWorldToVisualTransform(ActualSize());
-    ::g::Fuse::VisualBounds* q = uPtr(vb)->TransformFlatten(mx);
+    ::g::Fuse::VisualBounds* q = uPtr(vb)->TransformFlatten1(::g::Fuse::FastMatrix::FromFloat4x4(mx));
     return q;
 }
 
-// protected void OnPlaced(object s, object a) [instance] :763
+// protected void OnPlaced(object s, object a) [instance] :773
 void Viewport::OnPlaced(uObject* s, uObject* a)
 {
     uStackFrame __("Fuse.Elements.Viewport", "OnPlaced(object,object)");
@@ -10427,13 +10443,13 @@ void Viewport::OnPlaced(uObject* s, uObject* a)
     InvalidateFrustum();
 }
 
-// public float get_Perspective() [instance] :687
+// public float get_Perspective() [instance] :697
 float Viewport::Perspective()
 {
     return _perspective;
 }
 
-// public void set_Perspective(float value) [instance] :688
+// public void set_Perspective(float value) [instance] :698
 void Viewport::Perspective(float value)
 {
     uStackFrame __("Fuse.Elements.Viewport", "set_Perspective(float)");
@@ -10446,13 +10462,13 @@ void Viewport::Perspective(float value)
     }
 }
 
-// public Fuse.Elements.PerspectiveRelativeToMode get_PerspectiveRelativeTo() [instance] :709
+// public Fuse.Elements.PerspectiveRelativeToMode get_PerspectiveRelativeTo() [instance] :719
 int Viewport::PerspectiveRelativeTo()
 {
     return _perspectiveRelativeTo;
 }
 
-// public void set_PerspectiveRelativeTo(Fuse.Elements.PerspectiveRelativeToMode value) [instance] :710
+// public void set_PerspectiveRelativeTo(Fuse.Elements.PerspectiveRelativeToMode value) [instance] :720
 void Viewport::PerspectiveRelativeTo(int value)
 {
     uStackFrame __("Fuse.Elements.Viewport", "set_PerspectiveRelativeTo(Fuse.Elements.PerspectiveRelativeToMode)");
@@ -10464,22 +10480,22 @@ void Viewport::PerspectiveRelativeTo(int value)
     }
 }
 
-// public float2 get_PixelSize() [instance] :894
+// public float2 get_PixelSize() [instance] :904
 ::g::Uno::Float2 Viewport::PixelSize()
 {
     uStackFrame __("Fuse.Elements.Viewport", "get_PixelSize()");
     return IsDisabled() ? ::g::Fuse::ICommonViewport::PixelSize(uInterface(uPtr(uPtr(Parent())->Viewport()), ::TYPES[56/*Fuse.ICommonViewport*/])) : ::g::Uno::Float2__op_Multiply1(ActualSize(), PixelsPerPoint());
 }
 
-// public float get_PixelsPerPoint() [instance] :886
+// public float get_PixelsPerPoint() [instance] :896
 float Viewport::PixelsPerPoint()
 {
     uStackFrame __("Fuse.Elements.Viewport", "get_PixelsPerPoint()");
     return ::g::Fuse::ICommonViewport::PixelsPerPoint(uInterface(uPtr(uPtr(Parent())->Viewport()), ::TYPES[56/*Fuse.ICommonViewport*/]));
 }
 
-// public Uno.Geometry.Ray PointToWorldRay(float2 pointPos) [instance] :915
-::g::Uno::Geometry::Ray Viewport::PointToWorldRay(::g::Uno::Float2 pointPos)
+// public Fuse.Ray PointToWorldRay(float2 pointPos) [instance] :925
+::g::Fuse::Ray Viewport::PointToWorldRay(::g::Uno::Float2 pointPos)
 {
     uStackFrame __("Fuse.Elements.Viewport", "PointToWorldRay(float2)");
 
@@ -10488,16 +10504,16 @@ float Viewport::PixelsPerPoint()
 
     if (!IsRoot())
     {
-        ::g::Uno::Geometry::Ray pr = ::g::Fuse::IViewport::PointToWorldRay(uInterface(uPtr(uPtr(Parent())->Viewport()), ::TYPES[61/*Fuse.IViewport*/]), pointPos);
-        ::g::Uno::Geometry::Ray local = ::g::Fuse::IViewport::WorldToLocalRay(uInterface(uPtr(uPtr(Parent())->Viewport()), ::TYPES[61/*Fuse.IViewport*/]), uPtr(Parent())->Viewport(), pr, this);
+        ::g::Fuse::Ray pr = ::g::Fuse::IViewport::PointToWorldRay(uInterface(uPtr(uPtr(Parent())->Viewport()), ::TYPES[61/*Fuse.IViewport*/]), pointPos);
+        ::g::Fuse::Ray local = ::g::Fuse::IViewport::WorldToLocalRay(uInterface(uPtr(uPtr(Parent())->Viewport()), ::TYPES[61/*Fuse.IViewport*/]), uPtr(Parent())->Viewport(), pr, this);
         pointPos = ::g::Fuse::ViewportHelpers::LocalPlaneIntersection(local);
     }
 
-    ::g::Uno::Geometry::Ray r = ::g::Fuse::ViewportHelpers::PointToWorldRay((uObject*)this, uPtr(FrustumViewport())->ViewProjectionTransformInverse, pointPos);
+    ::g::Fuse::Ray r = ::g::Fuse::ViewportHelpers::PointToWorldRay((uObject*)this, uPtr(FrustumViewport())->ViewProjectionTransformInverse, pointPos);
     return r;
 }
 
-// public Fuse.Visual get_RootVisual() [instance] :650
+// public Fuse.Visual get_RootVisual() [instance] :660
 ::g::Fuse::Visual* Viewport::RootVisual()
 {
     uStackFrame __("Fuse.Elements.Viewport", "get_RootVisual()");
@@ -10508,7 +10524,7 @@ float Viewport::PixelsPerPoint()
     return GetZOrderChild(0);
 }
 
-// public void set_RootVisual(Fuse.Visual value) [instance] :655
+// public void set_RootVisual(Fuse.Visual value) [instance] :665
 void Viewport::RootVisual(::g::Fuse::Visual* value)
 {
     uStackFrame __("Fuse.Elements.Viewport", "set_RootVisual(Fuse.Visual)");
@@ -10524,14 +10540,14 @@ void Viewport::RootVisual(::g::Fuse::Visual* value)
     }
 }
 
-// public float2 get_Size() [instance] :890
+// public float2 get_Size() [instance] :900
 ::g::Uno::Float2 Viewport::Size()
 {
     uStackFrame __("Fuse.Elements.Viewport", "get_Size()");
     return IsDisabled() ? ::g::Fuse::ICommonViewport::Size(uInterface(uPtr(uPtr(Parent())->Viewport()), ::TYPES[56/*Fuse.ICommonViewport*/])) : ActualSize();
 }
 
-// private void UpdateFrustum() [instance] :626
+// private void UpdateFrustum() [instance] :636
 void Viewport::UpdateFrustum()
 {
     uStackFrame __("Fuse.Elements.Viewport", "UpdateFrustum()");
@@ -10542,7 +10558,7 @@ void Viewport::UpdateFrustum()
         uPtr(_frustumViewport)->Update1((uObject*)this, Frustum(), this);
 }
 
-// private void UpdatePerspective() [instance] :720
+// private void UpdatePerspective() [instance] :730
 void Viewport::UpdatePerspective()
 {
     uStackFrame __("Fuse.Elements.Viewport", "UpdatePerspective()");
@@ -10583,17 +10599,17 @@ void Viewport::UpdatePerspective()
     InvalidateFrustum();
 }
 
-// public float4x4 get_ViewTransform() [instance] :898
+// public float4x4 get_ViewTransform() [instance] :908
 ::g::Uno::Float4x4 Viewport::ViewTransform()
 {
     uStackFrame __("Fuse.Elements.Viewport", "get_ViewTransform()");
     return IsDisabled() ? ::g::Fuse::ICommonViewport::ViewTransform(uInterface(uPtr(uPtr(Parent())->Viewport()), ::TYPES[56/*Fuse.ICommonViewport*/])) : uPtr(FrustumViewport())->ViewTransform;
 }
 
-// public Uno.Geometry.Ray WorldToLocalRay(Fuse.IViewport world, Uno.Geometry.Ray worldRay, Fuse.Visual where) [instance] :931
-::g::Uno::Geometry::Ray Viewport::WorldToLocalRay(uObject* world, ::g::Uno::Geometry::Ray worldRay, ::g::Fuse::Visual* where)
+// public Fuse.Ray WorldToLocalRay(Fuse.IViewport world, Fuse.Ray worldRay, Fuse.Visual where) [instance] :941
+::g::Fuse::Ray Viewport::WorldToLocalRay(uObject* world, ::g::Fuse::Ray worldRay, ::g::Fuse::Visual* where)
 {
-    uStackFrame __("Fuse.Elements.Viewport", "WorldToLocalRay(Fuse.IViewport,Uno.Geometry.Ray,Fuse.Visual)");
+    uStackFrame __("Fuse.Elements.Viewport", "WorldToLocalRay(Fuse.IViewport,Fuse.Ray,Fuse.Visual)");
 
     if (IsDisabled())
     {
@@ -10606,7 +10622,7 @@ void Viewport::UpdatePerspective()
     return ::g::Fuse::ViewportHelpers::WorldToLocalRay((uObject*)this, world, worldRay, where);
 }
 
-// public generated Viewport New() [static] :573
+// public generated Viewport New() [static] :583
 Viewport* Viewport::New2()
 {
     Viewport* obj1 = (Viewport*)uNew(Viewport_typeof());
@@ -10615,10 +10631,10 @@ Viewport* Viewport::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public enum ViewportMode :537
+// public enum ViewportMode :547
 uEnumType* ViewportMode_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -10632,10 +10648,10 @@ uEnumType* ViewportMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public enum Visibility :2927
+// public enum Visibility :2947
 uEnumType* Visibility_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -10649,10 +10665,10 @@ uEnumType* Visibility_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed extern class Element.VisualAppeared :2837
+// private sealed extern class Element.VisualAppeared :2857
 // {
 static void Element__VisualAppeared_build(uType* type)
 {
@@ -10680,25 +10696,25 @@ Element__VisualAppeared_type* Element__VisualAppeared_typeof()
     return type;
 }
 
-// public VisualAppeared(Fuse.Elements.Element element, Uno.Action<Uno.Rect, float4x4> handler) :2843
+// public VisualAppeared(Fuse.Elements.Element element, Uno.Action<Uno.Rect, float4x4> handler) :2863
 void Element__VisualAppeared__ctor__fn(Element__VisualAppeared* __this, ::g::Fuse::Elements::Element* element, uDelegate* handler)
 {
     __this->ctor_(element, handler);
 }
 
-// public VisualAppeared New(Fuse.Elements.Element element, Uno.Action<Uno.Rect, float4x4> handler) :2843
+// public VisualAppeared New(Fuse.Elements.Element element, Uno.Action<Uno.Rect, float4x4> handler) :2863
 void Element__VisualAppeared__New1_fn(::g::Fuse::Elements::Element* element, uDelegate* handler, Element__VisualAppeared** __retval)
 {
     *__retval = Element__VisualAppeared::New1(element, handler);
 }
 
-// private void OnRooted() :2852
+// private void OnRooted() :2872
 void Element__VisualAppeared__OnRooted_fn(Element__VisualAppeared* __this)
 {
     __this->OnRooted();
 }
 
-// private void Uno.IDisposable.Dispose() :2857
+// private void Uno.IDisposable.Dispose() :2877
 void Element__VisualAppeared__UnoIDisposableDispose_fn(Element__VisualAppeared* __this)
 {
     uStackFrame __("Fuse.Elements.Element.VisualAppeared", "Uno.IDisposable.Dispose()");
@@ -10708,7 +10724,7 @@ void Element__VisualAppeared__UnoIDisposableDispose_fn(Element__VisualAppeared* 
     __this->_handler = NULL;
 }
 
-// public VisualAppeared(Fuse.Elements.Element element, Uno.Action<Uno.Rect, float4x4> handler) [instance] :2843
+// public VisualAppeared(Fuse.Elements.Element element, Uno.Action<Uno.Rect, float4x4> handler) [instance] :2863
 void Element__VisualAppeared::ctor_(::g::Fuse::Elements::Element* element, uDelegate* handler)
 {
     uStackFrame __("Fuse.Elements.Element.VisualAppeared", ".ctor(Fuse.Elements.Element,Uno.Action<Uno.Rect, float4x4>)");
@@ -10720,14 +10736,14 @@ void Element__VisualAppeared::ctor_(::g::Fuse::Elements::Element* element, uDele
         OnRooted();
 }
 
-// private void OnRooted() [instance] :2852
+// private void OnRooted() [instance] :2872
 void Element__VisualAppeared::OnRooted()
 {
     uStackFrame __("Fuse.Elements.Element.VisualAppeared", "OnRooted()");
     uPtr(_handler)->Invoke(2, uCRef(::g::Uno::Rect__New2(uPtr(_element)->ActualPosition(), uPtr(_element)->ActualSize())), uCRef(uPtr(_element)->WorldTransform()));
 }
 
-// public VisualAppeared New(Fuse.Elements.Element element, Uno.Action<Uno.Rect, float4x4> handler) [static] :2843
+// public VisualAppeared New(Fuse.Elements.Element element, Uno.Action<Uno.Rect, float4x4> handler) [static] :2863
 Element__VisualAppeared* Element__VisualAppeared::New1(::g::Fuse::Elements::Element* element, uDelegate* handler)
 {
     Element__VisualAppeared* obj1 = (Element__VisualAppeared*)uNew(Element__VisualAppeared_typeof());
@@ -10736,10 +10752,10 @@ Element__VisualAppeared* Element__VisualAppeared::New1(::g::Fuse::Elements::Elem
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// private sealed extern class Element.VisualDisappeared :2865
+// private sealed extern class Element.VisualDisappeared :2885
 // {
 static void Element__VisualDisappeared_build(uType* type)
 {
@@ -10766,19 +10782,19 @@ Element__VisualDisappeared_type* Element__VisualDisappeared_typeof()
     return type;
 }
 
-// public VisualDisappeared(Fuse.Elements.Element element, Uno.Action handler) :2871
+// public VisualDisappeared(Fuse.Elements.Element element, Uno.Action handler) :2891
 void Element__VisualDisappeared__ctor__fn(Element__VisualDisappeared* __this, ::g::Fuse::Elements::Element* element, uDelegate* handler)
 {
     __this->ctor_(element, handler);
 }
 
-// public VisualDisappeared New(Fuse.Elements.Element element, Uno.Action handler) :2871
+// public VisualDisappeared New(Fuse.Elements.Element element, Uno.Action handler) :2891
 void Element__VisualDisappeared__New1_fn(::g::Fuse::Elements::Element* element, uDelegate* handler, Element__VisualDisappeared** __retval)
 {
     *__retval = Element__VisualDisappeared::New1(element, handler);
 }
 
-// private void Uno.IDisposable.Dispose() :2878
+// private void Uno.IDisposable.Dispose() :2898
 void Element__VisualDisappeared__UnoIDisposableDispose_fn(Element__VisualDisappeared* __this)
 {
     uStackFrame __("Fuse.Elements.Element.VisualDisappeared", "Uno.IDisposable.Dispose()");
@@ -10788,7 +10804,7 @@ void Element__VisualDisappeared__UnoIDisposableDispose_fn(Element__VisualDisappe
     __this->_handler = NULL;
 }
 
-// public VisualDisappeared(Fuse.Elements.Element element, Uno.Action handler) [instance] :2871
+// public VisualDisappeared(Fuse.Elements.Element element, Uno.Action handler) [instance] :2891
 void Element__VisualDisappeared::ctor_(::g::Fuse::Elements::Element* element, uDelegate* handler)
 {
     uStackFrame __("Fuse.Elements.Element.VisualDisappeared", ".ctor(Fuse.Elements.Element,Uno.Action)");
@@ -10797,7 +10813,7 @@ void Element__VisualDisappeared::ctor_(::g::Fuse::Elements::Element* element, uD
     ::g::Uno::Collections::List__Add_fn(uPtr(uPtr(_element)->UnrootedListeners()), _handler);
 }
 
-// public VisualDisappeared New(Fuse.Elements.Element element, Uno.Action handler) [static] :2871
+// public VisualDisappeared New(Fuse.Elements.Element element, Uno.Action handler) [static] :2891
 Element__VisualDisappeared* Element__VisualDisappeared::New1(::g::Fuse::Elements::Element* element, uDelegate* handler)
 {
     Element__VisualDisappeared* obj1 = (Element__VisualDisappeared*)uNew(Element__VisualDisappeared_typeof());
@@ -10806,10 +10822,10 @@ Element__VisualDisappeared* Element__VisualDisappeared::New1(::g::Fuse::Elements
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public sealed class WidthFunction :3761
+// public sealed class WidthFunction :3782
 // {
 static void WidthFunction_build(uType* type)
 {
@@ -10839,39 +10855,39 @@ static void WidthFunction_build(uType* type)
     return type;
 }
 
-// public WidthFunction(Fuse.Reactive.Expression element) :3764
+// public WidthFunction(Fuse.Reactive.Expression element) :3785
 void WidthFunction__ctor_3_fn(WidthFunction* __this, ::g::Fuse::Reactive::Expression* element)
 {
     __this->ctor_3(element);
 }
 
-// protected override sealed object GetCurrentValue(Fuse.Elements.Element elm) :3771
+// protected override sealed object GetCurrentValue(Fuse.Elements.Element elm) :3792
 void WidthFunction__GetCurrentValue_fn(WidthFunction* __this, ::g::Fuse::Elements::Element* elm, uObject** __retval)
 {
     uStackFrame __("Fuse.Elements.WidthFunction", "GetCurrentValue(Fuse.Elements.Element)");
     return *__retval = uBox(::g::Uno::Float_typeof(), uPtr(elm)->ActualSize().X), void();
 }
 
-// protected override sealed object GetValue(Fuse.PlacedArgs args) :3766
+// protected override sealed object GetValue(Fuse.PlacedArgs args) :3787
 void WidthFunction__GetValue_fn(WidthFunction* __this, ::g::Fuse::PlacedArgs* args, uObject** __retval)
 {
     uStackFrame __("Fuse.Elements.WidthFunction", "GetValue(Fuse.PlacedArgs)");
     return *__retval = uBox(::g::Uno::Float_typeof(), uPtr(args)->NewSize().X), void();
 }
 
-// public WidthFunction New(Fuse.Reactive.Expression element) :3764
+// public WidthFunction New(Fuse.Reactive.Expression element) :3785
 void WidthFunction__New1_fn(::g::Fuse::Reactive::Expression* element, WidthFunction** __retval)
 {
     *__retval = WidthFunction::New1(element);
 }
 
-// public WidthFunction(Fuse.Reactive.Expression element) [instance] :3764
+// public WidthFunction(Fuse.Reactive.Expression element) [instance] :3785
 void WidthFunction::ctor_3(::g::Fuse::Reactive::Expression* element)
 {
     ctor_2(element);
 }
 
-// public WidthFunction New(Fuse.Reactive.Expression element) [static] :3764
+// public WidthFunction New(Fuse.Reactive.Expression element) [static] :3785
 WidthFunction* WidthFunction::New1(::g::Fuse::Reactive::Expression* element)
 {
     WidthFunction* obj1 = (WidthFunction*)uNew(WidthFunction_typeof());
@@ -10880,10 +10896,10 @@ WidthFunction* WidthFunction::New1(::g::Fuse::Reactive::Expression* element)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public sealed class XFunction :3795
+// public sealed class XFunction :3816
 // {
 static void XFunction_build(uType* type)
 {
@@ -10913,39 +10929,39 @@ static void XFunction_build(uType* type)
     return type;
 }
 
-// public XFunction(Fuse.Reactive.Expression element) :3798
+// public XFunction(Fuse.Reactive.Expression element) :3819
 void XFunction__ctor_3_fn(XFunction* __this, ::g::Fuse::Reactive::Expression* element)
 {
     __this->ctor_3(element);
 }
 
-// protected override sealed object GetCurrentValue(Fuse.Elements.Element elm) :3805
+// protected override sealed object GetCurrentValue(Fuse.Elements.Element elm) :3826
 void XFunction__GetCurrentValue_fn(XFunction* __this, ::g::Fuse::Elements::Element* elm, uObject** __retval)
 {
     uStackFrame __("Fuse.Elements.XFunction", "GetCurrentValue(Fuse.Elements.Element)");
     return *__retval = uBox(::g::Uno::Float_typeof(), uPtr(elm)->ActualPosition().X), void();
 }
 
-// protected override sealed object GetValue(Fuse.PlacedArgs args) :3800
+// protected override sealed object GetValue(Fuse.PlacedArgs args) :3821
 void XFunction__GetValue_fn(XFunction* __this, ::g::Fuse::PlacedArgs* args, uObject** __retval)
 {
     uStackFrame __("Fuse.Elements.XFunction", "GetValue(Fuse.PlacedArgs)");
     return *__retval = uBox(::g::Uno::Float_typeof(), uPtr(args)->NewPosition().X), void();
 }
 
-// public XFunction New(Fuse.Reactive.Expression element) :3798
+// public XFunction New(Fuse.Reactive.Expression element) :3819
 void XFunction__New1_fn(::g::Fuse::Reactive::Expression* element, XFunction** __retval)
 {
     *__retval = XFunction::New1(element);
 }
 
-// public XFunction(Fuse.Reactive.Expression element) [instance] :3798
+// public XFunction(Fuse.Reactive.Expression element) [instance] :3819
 void XFunction::ctor_3(::g::Fuse::Reactive::Expression* element)
 {
     ctor_2(element);
 }
 
-// public XFunction New(Fuse.Reactive.Expression element) [static] :3798
+// public XFunction New(Fuse.Reactive.Expression element) [static] :3819
 XFunction* XFunction::New1(::g::Fuse::Reactive::Expression* element)
 {
     XFunction* obj1 = (XFunction*)uNew(XFunction_typeof());
@@ -10954,10 +10970,10 @@ XFunction* XFunction::New1(::g::Fuse::Reactive::Expression* element)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno
+// -------------------------------------------------------
 
-// public sealed class YFunction :3812
+// public sealed class YFunction :3833
 // {
 static void YFunction_build(uType* type)
 {
@@ -10987,39 +11003,39 @@ static void YFunction_build(uType* type)
     return type;
 }
 
-// public YFunction(Fuse.Reactive.Expression element) :3815
+// public YFunction(Fuse.Reactive.Expression element) :3836
 void YFunction__ctor_3_fn(YFunction* __this, ::g::Fuse::Reactive::Expression* element)
 {
     __this->ctor_3(element);
 }
 
-// protected override sealed object GetCurrentValue(Fuse.Elements.Element elm) :3822
+// protected override sealed object GetCurrentValue(Fuse.Elements.Element elm) :3843
 void YFunction__GetCurrentValue_fn(YFunction* __this, ::g::Fuse::Elements::Element* elm, uObject** __retval)
 {
     uStackFrame __("Fuse.Elements.YFunction", "GetCurrentValue(Fuse.Elements.Element)");
     return *__retval = uBox(::g::Uno::Float_typeof(), uPtr(elm)->ActualPosition().Y), void();
 }
 
-// protected override sealed object GetValue(Fuse.PlacedArgs args) :3817
+// protected override sealed object GetValue(Fuse.PlacedArgs args) :3838
 void YFunction__GetValue_fn(YFunction* __this, ::g::Fuse::PlacedArgs* args, uObject** __retval)
 {
     uStackFrame __("Fuse.Elements.YFunction", "GetValue(Fuse.PlacedArgs)");
     return *__retval = uBox(::g::Uno::Float_typeof(), uPtr(args)->NewPosition().Y), void();
 }
 
-// public YFunction New(Fuse.Reactive.Expression element) :3815
+// public YFunction New(Fuse.Reactive.Expression element) :3836
 void YFunction__New1_fn(::g::Fuse::Reactive::Expression* element, YFunction** __retval)
 {
     *__retval = YFunction::New1(element);
 }
 
-// public YFunction(Fuse.Reactive.Expression element) [instance] :3815
+// public YFunction(Fuse.Reactive.Expression element) [instance] :3836
 void YFunction::ctor_3(::g::Fuse::Reactive::Expression* element)
 {
     ctor_2(element);
 }
 
-// public YFunction New(Fuse.Reactive.Expression element) [static] :3815
+// public YFunction New(Fuse.Reactive.Expression element) [static] :3836
 YFunction* YFunction::New1(::g::Fuse::Reactive::Expression* element)
 {
     YFunction* obj1 = (YFunction*)uNew(YFunction_typeof());

@@ -1,8 +1,8 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.Express-ee33104d.h>
+#include <Fuse.Reactive.ExpressionBinding.h>
 #include <Fuse.Reactive.IContext.h>
 #include <Fuse.Reactive.IListener.h>
 namespace g{namespace Fuse{namespace Reactive{struct EventBinding;}}}
@@ -15,7 +15,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public sealed class EventBinding :661
+// public sealed class EventBinding :675
 // {
 ::g::Fuse::Reactive::ExpressionBinding_type* EventBinding_typeof();
 void EventBinding__ctor_2_fn(EventBinding* __this, uObject* key, ::g::Uno::UX::NameTable* nameTable);

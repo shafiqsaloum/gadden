@@ -1,35 +1,40 @@
 <Page>
   <JavaScript File="ProgramPage.js" />
   <!-- Output program feed -->
-   <Panel ux:Name="ProgramFeed" Background="#000" Visibility="Visible">
+   <ScrollView ux:Name="ProgramFeed" Background="#000" Visibility="Visible">
     <StackPanel Margin="20">
       <!-- Schedual title -->
-      <TitleBig Margin="0,40,0,20" Color="#FFF" Value="ONSDAG 8/11" />
+      <JavaScript>
+
+      </JavaScript>
       <Each Items="{dataProgram}">
-        <Panel>
-          <Grid Row="1" Columns="2* ,3* ,1*">
-            <!-- Get image from JSON -->
-            <Image Height="80" Width="100%" Alignment="BottomLeft" StretchMode="UniformToFill" Url="{image}"/>
-            <StackPanel Alignment="BottomLeft" Margin="3,0,0,0">
-              <!-- Get name from JSON -->
-              <Paragraph Row="1" Value="{name}" Font="RalewayBlack" TextWrapping="Wrap" />
-              <!-- Get location from JSON -->
-              <SmallText Value="{location}" FontSize="12" Margin="3,0,0,0" />
-            </StackPanel>
-            <Image File="../../assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
-          </Grid>
-          <!-- Click event -->
-          <Clicked>
-            <Set ProgramDetails.Visibility="Visible" Delay="0.2" />
-            <Set ProgramFeed.Visibility="Hidden" Delay="0.2" />
-            <Callback Handler="{programClicked}"/>
-          </Clicked>
-        </Panel>
-        <!-- Septerator -->
-        <Rectangle Margin="0,20,0,20" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+        <TitleBig Margin="0,20,0,20" Color="#FFF" Value="{dateToString}" Visibility="Visible" />
+        <Each Items="{programs}">
+          <Panel>
+            <Grid Row="1" Columns="2* ,3* ,1*">
+              <!-- Get image from JSON -->
+              <Image Height="80" Width="100%" Alignment="BottomLeft" StretchMode="UniformToFill" Url="{image}"/>
+              <StackPanel Alignment="BottomLeft" Margin="3,0,0,0">
+                <!-- Get name from JSON -->
+                <Paragraph Row="1" Value="{name}" Font="RalewayBlack" TextWrapping="Wrap" />
+                <!-- Get location from JSON -->
+                <SmallText Value="{location}" FontSize="12" Margin="3,0,0,0" />
+              </StackPanel>
+              <Image File="../../assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
+            </Grid>
+            <!-- Click event -->
+            <Clicked>
+              <Set ProgramDetails.Visibility="Visible" Delay="0.2" />
+              <Set ProgramFeed.Visibility="Hidden" Delay="0.2" />
+              <Callback Handler="{programClicked}"/>
+            </Clicked>
+          </Panel>
+          <!-- Septerator -->
+          <Rectangle Margin="0,20,0,20" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+      </Each>
       </Each>
     </StackPanel>
-  </Panel>
+  </ScrollView>
 
   <!-- Output program details -->
   <Panel ux:Name="ProgramDetails" Visibility="Visible"  >

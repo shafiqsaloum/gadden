@@ -1,33 +1,30 @@
-// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno.
+// This file was generated based on build/iOS/Preview/cache/ux11/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.MainView.h>
 #include <_root.MainView.Template6.h>
-#include <Fuse.Controls.Rectangle.h>
-#include <Fuse.Controls.Shape.h>
-#include <Fuse.Drawing.Brush.h>
-#include <Fuse.Drawing.StaticSolidColor.h>
+#include <_root.TitleBig.h>
+#include <Fuse.Controls.TextControl.h>
 #include <Fuse.Elements.Element.h>
-#include <Fuse.Visual.h>
 #include <Uno.Bool.h>
 #include <Uno.Float.h>
 #include <Uno.Float4.h>
 #include <Uno.Object.h>
 #include <Uno.String.h>
-#include <Uno.UX.Size.h>
-#include <Uno.UX.Unit.h>
+static uString* STRINGS[1];
 
 namespace g{
 
-// public partial sealed class MainView.Template6 :476
+// public partial sealed class MainView.Template6 :421
 // {
-// static Template6() :485
+// static Template6() :430
 static void MainView__Template6__cctor__fn(uType* __type)
 {
 }
 
 static void MainView__Template6_build(uType* type)
 {
+    ::STRINGS[0] = uString::Const("ONSDAG 8/11");
     type->SetFields(2,
         ::g::MainView_typeof(), offsetof(::g::MainView__Template6, __parent1), uFieldFlagsWeak,
         ::g::MainView_typeof(), offsetof(::g::MainView__Template6, __parentInstance1), uFieldFlagsWeak);
@@ -52,33 +49,30 @@ static void MainView__Template6_build(uType* type)
     return type;
 }
 
-// public Template6(MainView parent, MainView parentInstance) :480
+// public Template6(MainView parent, MainView parentInstance) :425
 void MainView__Template6__ctor_1_fn(MainView__Template6* __this, ::g::MainView* parent, ::g::MainView* parentInstance)
 {
     __this->ctor_1(parent, parentInstance);
 }
 
-// public override sealed object New() :488
+// public override sealed object New() :433
 void MainView__Template6__New1_fn(MainView__Template6* __this, uObject** __retval)
 {
     uStackFrame __("MainView.Template6", "New()");
-    ::g::Fuse::Controls::Rectangle* __self1 = ::g::Fuse::Controls::Rectangle::New3();
-    ::g::Fuse::Drawing::StaticSolidColor* temp = ::g::Fuse::Drawing::StaticSolidColor::New2(::g::Uno::Float4__New2(0.5921569f, 0.5921569f, 0.5921569f, 1.0f));
-    __self1->Width(::g::Uno::UX::Size__New1(100.0f, 4));
-    __self1->Height(::g::Uno::UX::Size__New1(1.0f, 3));
-    __self1->Margin(::g::Uno::Float4__New2(0.0f, 20.0f, 0.0f, 20.0f));
-    __self1->SnapToPixels(true);
-    __self1->Fill(temp);
+    ::g::TitleBig* __self1 = ::g::TitleBig::New4();
+    __self1->Value(::STRINGS[0/*"ONSDAG 8/11"*/]);
+    __self1->Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
+    __self1->Margin(::g::Uno::Float4__New2(0.0f, 40.0f, 0.0f, 20.0f));
     return *__retval = __self1, void();
 }
 
-// public Template6 New(MainView parent, MainView parentInstance) :480
+// public Template6 New(MainView parent, MainView parentInstance) :425
 void MainView__Template6__New2_fn(::g::MainView* parent, ::g::MainView* parentInstance, MainView__Template6** __retval)
 {
     *__retval = MainView__Template6::New2(parent, parentInstance);
 }
 
-// public Template6(MainView parent, MainView parentInstance) [instance] :480
+// public Template6(MainView parent, MainView parentInstance) [instance] :425
 void MainView__Template6::ctor_1(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     ctor_(NULL, false);
@@ -86,7 +80,7 @@ void MainView__Template6::ctor_1(::g::MainView* parent, ::g::MainView* parentIns
     __parentInstance1 = parentInstance;
 }
 
-// public Template6 New(MainView parent, MainView parentInstance) [static] :480
+// public Template6 New(MainView parent, MainView parentInstance) [static] :425
 MainView__Template6* MainView__Template6::New2(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     MainView__Template6* obj1 = (MainView__Template6*)uNew(MainView__Template6_typeof());

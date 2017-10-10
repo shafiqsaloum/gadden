@@ -1,9 +1,9 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/internal/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Gestures/1.2.1/internal/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBase-d3bd6f2e.h>
-#include <Fuse.Animations.IUnwr-594abe9.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h>
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
 #include <Fuse.Binding.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
@@ -14,23 +14,36 @@
 #include <Uno.Collections.IList-1.h>
 namespace g{namespace Fuse{namespace Gestures{struct Clicker;}}}
 namespace g{namespace Fuse{namespace Gestures{struct ClickerTrigger;}}}
+namespace g{namespace Fuse{namespace Input{struct PointerEventArgs;}}}
 
 namespace g{
 namespace Fuse{
 namespace Gestures{
 
-// public abstract class ClickerTrigger :13
+// public abstract class ClickerTrigger :21
 // {
 ::g::Fuse::Triggers::Trigger_type* ClickerTrigger_typeof();
 void ClickerTrigger__ctor_5_fn(ClickerTrigger* __this);
+void ClickerTrigger__Accept_fn(ClickerTrigger* __this, ::g::Fuse::Input::PointerEventArgs* args, bool* __retval);
+void ClickerTrigger__get_GesturePriority_fn(ClickerTrigger* __this, int* __retval);
+void ClickerTrigger__set_GesturePriority_fn(ClickerTrigger* __this, int* value);
 void ClickerTrigger__OnRooted_fn(ClickerTrigger* __this);
 void ClickerTrigger__OnUnrooted_fn(ClickerTrigger* __this);
+void ClickerTrigger__get_PointerIndex_fn(ClickerTrigger* __this, int* __retval);
+void ClickerTrigger__set_PointerIndex_fn(ClickerTrigger* __this, int* value);
 
 struct ClickerTrigger : ::g::Fuse::Triggers::Trigger
 {
+    int _gesturePriority;
+    int _pointerIndex;
     uStrong< ::g::Fuse::Gestures::Clicker*> Clicker;
 
     void ctor_5();
+    bool Accept(::g::Fuse::Input::PointerEventArgs* args);
+    int GesturePriority();
+    void GesturePriority(int value);
+    int PointerIndex();
+    void PointerIndex(int value);
 };
 // }
 

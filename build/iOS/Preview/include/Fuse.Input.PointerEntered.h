@@ -1,9 +1,9 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/input/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Input.PointerEnt-cfe04f3d.h>
 #include <Fuse.Input.PointerEnteredArgs.h>
+#include <Fuse.Input.PointerEnteredHandler.h>
 #include <Fuse.VisualEvent-2.h>
 namespace g{namespace Fuse{namespace Input{struct PointerEntered;}}}
 
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Input{
 
-// internal sealed class PointerEntered :2107
+// internal sealed class PointerEntered :2257
 // {
 ::g::Fuse::VisualEvent_type* PointerEntered_typeof();
 void PointerEntered__ctor_1_fn(PointerEntered* __this);

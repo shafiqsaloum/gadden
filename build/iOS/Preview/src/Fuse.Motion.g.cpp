@@ -4,27 +4,28 @@
 #include <Fuse.Animations.Easing.h>
 #include <Fuse.Diagnostics.h>
 #include <Fuse.Marshal.h>
-#include <Fuse.Motion.DelayFunc-f2d2023d.h>
 #include <Fuse.Motion.DelayFunction.h>
-#include <Fuse.Motion.Destinati-bd678751.h>
+#include <Fuse.Motion.DelayFunction.SetClosure.h>
+#include <Fuse.Motion.DestinationMotion-1.h>
+#include <Fuse.Motion.DestinationMotionConfig.h>
 #include <Fuse.Motion.MotionConfig.h>
-#include <Fuse.Motion.MotionDes-5490bd7d.h>
+#include <Fuse.Motion.MotionDestinationType.h>
 #include <Fuse.Motion.MotionUnit.h>
 #include <Fuse.Motion.NavigationMotion.h>
 #include <Fuse.Motion.OverflowType.h>
 #include <Fuse.Motion.ScrollViewMotion.h>
-#include <Fuse.Motion.Simulatio-17bdd43e.h>
-#include <Fuse.Motion.Simulatio-1b299d00.h>
-#include <Fuse.Motion.Simulatio-2e0ddcfb.h>
-#include <Fuse.Motion.Simulatio-73b2da14.h>
-#include <Fuse.Motion.Simulatio-8063728b.h>
-#include <Fuse.Motion.Simulatio-8291fa3c.h>
-#include <Fuse.Motion.Simulatio-871f3635.h>
-#include <Fuse.Motion.Simulatio-b08483ab.h>
-#include <Fuse.Motion.Simulatio-b08eb1c5.h>
-#include <Fuse.Motion.Simulatio-ca33dcbb.h>
-#include <Fuse.Motion.SpringFun-9f762851.h>
+#include <Fuse.Motion.Simulation.AdapterMultiplier-1.h>
+#include <Fuse.Motion.Simulation.AngularAdapter-1.h>
+#include <Fuse.Motion.Simulation.BasicBoundedRegion2D.h>
+#include <Fuse.Motion.Simulation.BoundedRegion2D.h>
+#include <Fuse.Motion.Simulation.DestinationSimulation-1.h>
+#include <Fuse.Motion.Simulation.EasingMotion-1.h>
+#include <Fuse.Motion.Simulation.ElasticForce-1.h>
+#include <Fuse.Motion.Simulation.Friction-1.h>
+#include <Fuse.Motion.Simulation.MotionSimulation-1.h>
+#include <Fuse.Motion.Simulation.SmoothSnap-1.h>
 #include <Fuse.Motion.SpringFunction.h>
+#include <Fuse.Motion.SpringFunction.Subscription.h>
 #include <Fuse.Reactive.Expression.h>
 #include <Fuse.Reactive.IContext.h>
 #include <Fuse.Reactive.IExpression.h>
@@ -45,16 +46,16 @@
 #include <Uno.Object.h>
 #include <Uno.String.h>
 static uString* STRINGS[3];
-static uType* TYPES[11];
+static uType* TYPES[12];
 
 namespace g{
 namespace Fuse{
 namespace Motion{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno
+// -----------------------------------------------------
 
-// public sealed class DelayFunction :520
+// public sealed class DelayFunction :618
 // {
 static void DelayFunction_build(uType* type)
 {
@@ -84,32 +85,32 @@ static void DelayFunction_build(uType* type)
     return type;
 }
 
-// public DelayFunction(Fuse.Reactive.Expression value, Fuse.Reactive.Expression delay) :523
+// public DelayFunction(Fuse.Reactive.Expression value, Fuse.Reactive.Expression delay) :621
 void DelayFunction__ctor_2_fn(DelayFunction* __this, ::g::Fuse::Reactive::Expression* value, ::g::Fuse::Reactive::Expression* delay)
 {
     __this->ctor_2(value, delay);
 }
 
-// public DelayFunction New(Fuse.Reactive.Expression value, Fuse.Reactive.Expression delay) :523
+// public DelayFunction New(Fuse.Reactive.Expression value, Fuse.Reactive.Expression delay) :621
 void DelayFunction__New1_fn(::g::Fuse::Reactive::Expression* value, ::g::Fuse::Reactive::Expression* delay, DelayFunction** __retval)
 {
     *__retval = DelayFunction::New1(value, delay);
 }
 
-// protected override sealed void OnNewOperands(Fuse.Reactive.IListener listener, object value, object delay) :525
+// protected override sealed void OnNewOperands(Fuse.Reactive.IListener listener, object value, object delay) :623
 void DelayFunction__OnNewOperands_fn(DelayFunction* __this, uObject* listener, uObject* value, uObject* delay)
 {
     uStackFrame __("Fuse.Motion.DelayFunction", "OnNewOperands(Fuse.Reactive.IListener,object,object)");
     ::g::Fuse::Timer::Wait(::g::Fuse::Marshal::ToDouble(delay), uDelegate::New(::TYPES[0/*Uno.Action*/], (void*)DelayFunction__SetClosure__Run_fn, DelayFunction__SetClosure::New1(__this, listener, value)));
 }
 
-// public DelayFunction(Fuse.Reactive.Expression value, Fuse.Reactive.Expression delay) [instance] :523
+// public DelayFunction(Fuse.Reactive.Expression value, Fuse.Reactive.Expression delay) [instance] :621
 void DelayFunction::ctor_2(::g::Fuse::Reactive::Expression* value, ::g::Fuse::Reactive::Expression* delay)
 {
     ctor_1(value, delay);
 }
 
-// public DelayFunction New(Fuse.Reactive.Expression value, Fuse.Reactive.Expression delay) [static] :523
+// public DelayFunction New(Fuse.Reactive.Expression value, Fuse.Reactive.Expression delay) [static] :621
 DelayFunction* DelayFunction::New1(::g::Fuse::Reactive::Expression* value, ::g::Fuse::Reactive::Expression* delay)
 {
     DelayFunction* obj1 = (DelayFunction*)uNew(DelayFunction_typeof());
@@ -118,51 +119,19 @@ DelayFunction* DelayFunction::New1(::g::Fuse::Reactive::Expression* value, ::g::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno
+// -----------------------------------------------------
 
-// public sealed class DestinationMotion<T> :246
+// public sealed class DestinationMotion<T> :506
 // {
 static void DestinationMotion_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("Invalidate simulation type: ");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno");
-    ::STRINGS[2] = uString::Const("Create");
-    ::TYPES[1] = ::g::Fuse::Motion::Simulation::EasingMotion_typeof();
-    ::TYPES[2] = ::g::Fuse::Motion::Simulation::ElasticForce_typeof();
-    ::TYPES[3] = ::g::Fuse::Motion::Simulation::SmoothSnap_typeof();
-    ::TYPES[4] = ::g::Fuse::Motion::Simulation::AngularAdapter_typeof();
-    ::TYPES[5] = ::g::Fuse::Motion::Simulation::AdapterMultiplier_typeof();
+    ::TYPES[1] = ::g::Fuse::Motion::DestinationMotionConfig_typeof();
     type->SetPrecalc(
-        ::g::Fuse::Motion::Simulation::EasingMotion_typeof()->MakeType(type->T(0), NULL),
-        ::g::Fuse::Motion::Simulation::ElasticForce_typeof()->MakeType(type->T(0), NULL),
-        ::g::Fuse::Motion::Simulation::SmoothSnap_typeof()->MakeType(type->T(0), NULL),
-        ::g::Fuse::Motion::Simulation::AngularAdapter_typeof()->MakeType(type->T(0), NULL),
-        ::g::Fuse::Motion::Simulation::AdapterMultiplier_typeof()->MakeType(type->T(0), NULL));
-    type->SetFields(0,
-        ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Motion::DestinationMotion, _distance), 0,
-        ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Motion::DestinationMotion, _duration), 0,
-        ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Motion::DestinationMotion, _durationExp), 0,
-        ::g::Fuse::Animations::Easing_typeof(), offsetof(::g::Fuse::Motion::DestinationMotion, _easing), 0,
-        ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Motion::DestinationMotion, _explicitType), 0,
-        ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Motion::DestinationMotion, _hasDistance), 0,
-        ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Motion::DestinationMotion, _hasDuration), 0,
-        ::g::Fuse::Motion::MotionDestinationType_typeof(), offsetof(::g::Fuse::Motion::DestinationMotion, _type), 0,
-        ::g::Fuse::Motion::MotionUnit_typeof(), offsetof(::g::Fuse::Motion::DestinationMotion, _unit), 0);
-    type->Reflection.SetFunctions(13,
-        new uFunction("get_Distance", NULL, (void*)DestinationMotion__get_Distance_fn, 0, false, ::g::Uno::Float_typeof(), 0),
-        new uFunction("set_Distance", NULL, (void*)DestinationMotion__set_Distance_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
-        new uFunction("get_Duration", NULL, (void*)DestinationMotion__get_Duration_fn, 0, false, ::g::Uno::Float_typeof(), 0),
-        new uFunction("set_Duration", NULL, (void*)DestinationMotion__set_Duration_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
-        new uFunction("get_DurationExp", NULL, (void*)DestinationMotion__get_DurationExp_fn, 0, false, ::g::Uno::Float_typeof(), 0),
-        new uFunction("set_DurationExp", NULL, (void*)DestinationMotion__set_DurationExp_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
-        new uFunction("get_Easing", NULL, (void*)DestinationMotion__get_Easing_fn, 0, false, ::g::Fuse::Animations::Easing_typeof(), 0),
-        new uFunction("set_Easing", NULL, (void*)DestinationMotion__set_Easing_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Animations::Easing_typeof()),
-        new uFunction(".ctor", type, (void*)DestinationMotion__New1_fn, 0, true, type, 0),
-        new uFunction("get_Type", NULL, (void*)DestinationMotion__get_Type_fn, 0, false, ::g::Fuse::Motion::MotionDestinationType_typeof(), 0),
-        new uFunction("set_Type", NULL, (void*)DestinationMotion__set_Type_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Motion::MotionDestinationType_typeof()),
-        new uFunction("get_Unit", NULL, (void*)DestinationMotion__get_Unit_fn, 0, false, ::g::Fuse::Motion::MotionUnit_typeof(), 0),
-        new uFunction("set_Unit", NULL, (void*)DestinationMotion__set_Unit_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Motion::MotionUnit_typeof()));
+        ::g::Fuse::Motion::DestinationMotionConfig_typeof()->MakeMethod(0/*Create<T>*/, type->T(0), NULL));
+    type->SetFields(9);
+    type->Reflection.SetFunctions(1,
+        new uFunction(".ctor", type, (void*)DestinationMotion__New2_fn, 0, true, type, 0));
 }
 
 uType* DestinationMotion_typeof()
@@ -171,109 +140,217 @@ uType* DestinationMotion_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Fuse::Motion::DestinationMotionConfig_typeof();
     options.FieldCount = 9;
     options.GenericCount = 1;
-    options.PrecalcCount = 5;
+    options.PrecalcCount = 1;
     options.ObjectSize = sizeof(DestinationMotion);
     options.TypeSize = sizeof(uType);
     type = uClassType::New("Fuse.Motion.DestinationMotion`1", options);
     type->fp_build_ = DestinationMotion_build;
-    type->fp_ctor_ = (void*)DestinationMotion__New1_fn;
+    type->fp_ctor_ = (void*)DestinationMotion__New2_fn;
     return type;
 }
 
-// public generated DestinationMotion() :246
-void DestinationMotion__ctor__fn(DestinationMotion* __this)
+// public generated DestinationMotion() :506
+void DestinationMotion__ctor_1_fn(DestinationMotion* __this)
+{
+    __this->ctor_1();
+}
+
+// internal new Fuse.Motion.Simulation.DestinationSimulation<T> Create() :508
+void DestinationMotion__Create1_fn(DestinationMotion* __this, uObject** __retval)
+{
+    *__retval = __this->Create1();
+}
+
+// public generated DestinationMotion New() :506
+void DestinationMotion__New2_fn(uType* __type, DestinationMotion** __retval)
+{
+    *__retval = DestinationMotion::New2(__type);
+}
+
+// public generated DestinationMotion() [instance] :506
+void DestinationMotion::ctor_1()
+{
+    ctor_();
+}
+
+// internal new Fuse.Motion.Simulation.DestinationSimulation<T> Create() [instance] :508
+uObject* DestinationMotion::Create1()
+{
+    uType* __types[] = {
+        __type->Precalced(0/*Fuse.Motion.DestinationMotionConfig.Create<T>*/),
+    };
+    uStackFrame __("Fuse.Motion.DestinationMotion`1", "Create()");
+    return (uObject*)Create(__types[0]);
+}
+
+// public generated DestinationMotion New() [static] :506
+DestinationMotion* DestinationMotion::New2(uType* __type)
+{
+    DestinationMotion* obj1 = (DestinationMotion*)uNew(__type);
+    obj1->ctor_1();
+    return obj1;
+}
+// }
+
+// /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno
+// -----------------------------------------------------
+
+// public class DestinationMotionConfig :335
+// {
+static void DestinationMotionConfig_build(uType* type)
+{
+    ::STRINGS[0] = uString::Const("Invalidate simulation type: ");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno");
+    ::STRINGS[2] = uString::Const("Create");
+    ::TYPES[2] = ::g::Fuse::Motion::Simulation::EasingMotion_typeof();
+    ::TYPES[3] = ::g::Fuse::Motion::Simulation::ElasticForce_typeof();
+    ::TYPES[4] = ::g::Fuse::Motion::Simulation::SmoothSnap_typeof();
+    ::TYPES[5] = ::g::Fuse::Motion::Simulation::AngularAdapter_typeof();
+    ::TYPES[6] = ::g::Fuse::Motion::Simulation::AdapterMultiplier_typeof();
+    type->MethodTypes[0]->SetPrecalc(
+        ::TYPES[2/*Fuse.Motion.Simulation.EasingMotion`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL),
+        ::TYPES[3/*Fuse.Motion.Simulation.ElasticForce`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL),
+        ::TYPES[4/*Fuse.Motion.Simulation.SmoothSnap`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL),
+        ::TYPES[5/*Fuse.Motion.Simulation.AngularAdapter`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL),
+        ::TYPES[6/*Fuse.Motion.Simulation.AdapterMultiplier`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL));
+    type->SetFields(0,
+        ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Motion::DestinationMotionConfig, _distance), 0,
+        ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Motion::DestinationMotionConfig, _duration), 0,
+        ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Motion::DestinationMotionConfig, _durationExp), 0,
+        ::g::Fuse::Animations::Easing_typeof(), offsetof(::g::Fuse::Motion::DestinationMotionConfig, _easing), 0,
+        ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Motion::DestinationMotionConfig, _explicitType), 0,
+        ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Motion::DestinationMotionConfig, _hasDistance), 0,
+        ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Motion::DestinationMotionConfig, _hasDuration), 0,
+        ::g::Fuse::Motion::MotionDestinationType_typeof(), offsetof(::g::Fuse::Motion::DestinationMotionConfig, _type), 0,
+        ::g::Fuse::Motion::MotionUnit_typeof(), offsetof(::g::Fuse::Motion::DestinationMotionConfig, _unit), 0);
+    type->Reflection.SetFunctions(13,
+        new uFunction("get_Distance", NULL, (void*)DestinationMotionConfig__get_Distance_fn, 0, false, ::g::Uno::Float_typeof(), 0),
+        new uFunction("set_Distance", NULL, (void*)DestinationMotionConfig__set_Distance_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
+        new uFunction("get_Duration", NULL, (void*)DestinationMotionConfig__get_Duration_fn, 0, false, ::g::Uno::Float_typeof(), 0),
+        new uFunction("set_Duration", NULL, (void*)DestinationMotionConfig__set_Duration_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
+        new uFunction("get_DurationExp", NULL, (void*)DestinationMotionConfig__get_DurationExp_fn, 0, false, ::g::Uno::Float_typeof(), 0),
+        new uFunction("set_DurationExp", NULL, (void*)DestinationMotionConfig__set_DurationExp_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
+        new uFunction("get_Easing", NULL, (void*)DestinationMotionConfig__get_Easing_fn, 0, false, ::g::Fuse::Animations::Easing_typeof(), 0),
+        new uFunction("set_Easing", NULL, (void*)DestinationMotionConfig__set_Easing_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Animations::Easing_typeof()),
+        new uFunction(".ctor", NULL, (void*)DestinationMotionConfig__New1_fn, 0, true, type, 0),
+        new uFunction("get_Type", NULL, (void*)DestinationMotionConfig__get_Type_fn, 0, false, ::g::Fuse::Motion::MotionDestinationType_typeof(), 0),
+        new uFunction("set_Type", NULL, (void*)DestinationMotionConfig__set_Type_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Motion::MotionDestinationType_typeof()),
+        new uFunction("get_Unit", NULL, (void*)DestinationMotionConfig__get_Unit_fn, 0, false, ::g::Fuse::Motion::MotionUnit_typeof(), 0),
+        new uFunction("set_Unit", NULL, (void*)DestinationMotionConfig__set_Unit_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Motion::MotionUnit_typeof()));
+}
+
+uType* DestinationMotionConfig_typeof()
+{
+    static uSStrong<uType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.FieldCount = 9;
+    options.MethodTypeCount = 1;
+    options.ObjectSize = sizeof(DestinationMotionConfig);
+    options.TypeSize = sizeof(uType);
+    type = uClassType::New("Fuse.Motion.DestinationMotionConfig", options);
+    type->MethodTypes[0] = type->NewMethodType(1, 5);
+    type->fp_build_ = DestinationMotionConfig_build;
+    type->fp_ctor_ = (void*)DestinationMotionConfig__New1_fn;
+    return type;
+}
+
+// public generated DestinationMotionConfig() :335
+void DestinationMotionConfig__ctor__fn(DestinationMotionConfig* __this)
 {
     __this->ctor_();
 }
 
-// internal Fuse.Motion.Simulation.DestinationSimulation<T> Create() :354
-void DestinationMotion__Create_fn(DestinationMotion* __this, uObject** __retval)
+// internal Fuse.Motion.Simulation.DestinationSimulation<T> Create<T>() :443
+void DestinationMotionConfig__Create_fn(DestinationMotionConfig* __this, uType* __type, uObject** __retval)
 {
-    *__retval = __this->Create();
+    *__retval = __this->Create(__type);
 }
 
-// public float get_Distance() :346
-void DestinationMotion__get_Distance_fn(DestinationMotion* __this, float* __retval)
+// public float get_Distance() :435
+void DestinationMotionConfig__get_Distance_fn(DestinationMotionConfig* __this, float* __retval)
 {
     *__retval = __this->Distance();
 }
 
-// public void set_Distance(float value) :347
-void DestinationMotion__set_Distance_fn(DestinationMotion* __this, float* value)
+// public void set_Distance(float value) :436
+void DestinationMotionConfig__set_Distance_fn(DestinationMotionConfig* __this, float* value)
 {
     __this->Distance(*value);
 }
 
-// public float get_Duration() :296
-void DestinationMotion__get_Duration_fn(DestinationMotion* __this, float* __retval)
+// public float get_Duration() :385
+void DestinationMotionConfig__get_Duration_fn(DestinationMotionConfig* __this, float* __retval)
 {
     *__retval = __this->Duration();
 }
 
-// public void set_Duration(float value) :297
-void DestinationMotion__set_Duration_fn(DestinationMotion* __this, float* value)
+// public void set_Duration(float value) :386
+void DestinationMotionConfig__set_Duration_fn(DestinationMotionConfig* __this, float* value)
 {
     __this->Duration(*value);
 }
 
-// public float get_DurationExp() :313
-void DestinationMotion__get_DurationExp_fn(DestinationMotion* __this, float* __retval)
+// public float get_DurationExp() :402
+void DestinationMotionConfig__get_DurationExp_fn(DestinationMotionConfig* __this, float* __retval)
 {
     *__retval = __this->DurationExp();
 }
 
-// public void set_DurationExp(float value) :314
-void DestinationMotion__set_DurationExp_fn(DestinationMotion* __this, float* value)
+// public void set_DurationExp(float value) :403
+void DestinationMotionConfig__set_DurationExp_fn(DestinationMotionConfig* __this, float* value)
 {
     __this->DurationExp(*value);
 }
 
-// public Fuse.Animations.Easing get_Easing() :275
-void DestinationMotion__get_Easing_fn(DestinationMotion* __this, ::g::Fuse::Animations::Easing** __retval)
+// public Fuse.Animations.Easing get_Easing() :364
+void DestinationMotionConfig__get_Easing_fn(DestinationMotionConfig* __this, ::g::Fuse::Animations::Easing** __retval)
 {
     *__retval = __this->Easing();
 }
 
-// public void set_Easing(Fuse.Animations.Easing value) :276
-void DestinationMotion__set_Easing_fn(DestinationMotion* __this, ::g::Fuse::Animations::Easing* value)
+// public void set_Easing(Fuse.Animations.Easing value) :365
+void DestinationMotionConfig__set_Easing_fn(DestinationMotionConfig* __this, ::g::Fuse::Animations::Easing* value)
 {
     __this->Easing(value);
 }
 
-// public generated DestinationMotion New() :246
-void DestinationMotion__New1_fn(uType* __type, DestinationMotion** __retval)
+// public generated DestinationMotionConfig New() :335
+void DestinationMotionConfig__New1_fn(DestinationMotionConfig** __retval)
 {
-    *__retval = DestinationMotion::New1(__type);
+    *__retval = DestinationMotionConfig::New1();
 }
 
-// public Fuse.Motion.MotionDestinationType get_Type() :257
-void DestinationMotion__get_Type_fn(DestinationMotion* __this, int* __retval)
+// public Fuse.Motion.MotionDestinationType get_Type() :346
+void DestinationMotionConfig__get_Type_fn(DestinationMotionConfig* __this, int* __retval)
 {
     *__retval = __this->Type();
 }
 
-// public void set_Type(Fuse.Motion.MotionDestinationType value) :258
-void DestinationMotion__set_Type_fn(DestinationMotion* __this, int* value)
+// public void set_Type(Fuse.Motion.MotionDestinationType value) :347
+void DestinationMotionConfig__set_Type_fn(DestinationMotionConfig* __this, int* value)
 {
     __this->Type(*value);
 }
 
-// public Fuse.Motion.MotionUnit get_Unit() :329
-void DestinationMotion__get_Unit_fn(DestinationMotion* __this, int* __retval)
+// public Fuse.Motion.MotionUnit get_Unit() :418
+void DestinationMotionConfig__get_Unit_fn(DestinationMotionConfig* __this, int* __retval)
 {
     *__retval = __this->Unit();
 }
 
-// public void set_Unit(Fuse.Motion.MotionUnit value) :330
-void DestinationMotion__set_Unit_fn(DestinationMotion* __this, int* value)
+// public void set_Unit(Fuse.Motion.MotionUnit value) :419
+void DestinationMotionConfig__set_Unit_fn(DestinationMotionConfig* __this, int* value)
 {
     __this->Unit(*value);
 }
 
-// public generated DestinationMotion() [instance] :246
-void DestinationMotion::ctor_()
+// public generated DestinationMotionConfig() [instance] :335
+void DestinationMotionConfig::ctor_()
 {
     _type = 1;
     _easing = ::g::Fuse::Animations::Easing::SinusoidalInOut();
@@ -282,8 +359,8 @@ void DestinationMotion::ctor_()
     _distance = 1000.0f;
 }
 
-// internal Fuse.Motion.Simulation.DestinationSimulation<T> Create() [instance] :354
-uObject* DestinationMotion::Create()
+// internal Fuse.Motion.Simulation.DestinationSimulation<T> Create<T>() [instance] :443
+uObject* DestinationMotionConfig::Create(uType* __type)
 {
     uType* __types[] = {
         __type->Precalced(0/*Fuse.Motion.Simulation.EasingMotion<T>*/),
@@ -292,7 +369,7 @@ uObject* DestinationMotion::Create()
         __type->Precalced(3/*Fuse.Motion.Simulation.AngularAdapter<T>*/),
         __type->Precalced(4/*Fuse.Motion.Simulation.AdapterMultiplier<T>*/),
     };
-    uStackFrame __("Fuse.Motion.DestinationMotion`1", "Create()");
+    uStackFrame __("Fuse.Motion.DestinationMotionConfig", "Create`1()");
     int effectiveUnit = Unit();
     float multiplier = 1.0f;
 
@@ -342,7 +419,7 @@ uObject* DestinationMotion::Create()
         }
         default:
         {
-            ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition1(::STRINGS[0/*"Invalidate ...*/], uBox<int>(::g::Fuse::Motion::MotionDestinationType_typeof(), Type())), this, ::STRINGS[1/*"/Users/eric...*/], 401, ::STRINGS[2/*"Create"*/], NULL);
+            ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition1(::STRINGS[0/*"Invalidate ...*/], uBox<int>(::g::Fuse::Motion::MotionDestinationType_typeof(), Type())), this, ::STRINGS[1/*"/usr/local/...*/], 490, ::STRINGS[2/*"Create"*/], NULL);
             dest = (uObject*)((::g::Fuse::Motion::Simulation::ElasticForce*)::g::Fuse::Motion::Simulation::ElasticForce::CreateNormalized(__types[1]));
             break;
         }
@@ -357,52 +434,52 @@ uObject* DestinationMotion::Create()
     return dest;
 }
 
-// public float get_Distance() [instance] :346
-float DestinationMotion::Distance()
+// public float get_Distance() [instance] :435
+float DestinationMotionConfig::Distance()
 {
     return _distance;
 }
 
-// public void set_Distance(float value) [instance] :347
-void DestinationMotion::Distance(float value)
+// public void set_Distance(float value) [instance] :436
+void DestinationMotionConfig::Distance(float value)
 {
     _distance = value;
     _hasDistance = true;
 }
 
-// public float get_Duration() [instance] :296
-float DestinationMotion::Duration()
+// public float get_Duration() [instance] :385
+float DestinationMotionConfig::Duration()
 {
     return _duration;
 }
 
-// public void set_Duration(float value) [instance] :297
-void DestinationMotion::Duration(float value)
+// public void set_Duration(float value) [instance] :386
+void DestinationMotionConfig::Duration(float value)
 {
     _duration = value;
     _hasDuration = true;
 }
 
-// public float get_DurationExp() [instance] :313
-float DestinationMotion::DurationExp()
+// public float get_DurationExp() [instance] :402
+float DestinationMotionConfig::DurationExp()
 {
     return _durationExp;
 }
 
-// public void set_DurationExp(float value) [instance] :314
-void DestinationMotion::DurationExp(float value)
+// public void set_DurationExp(float value) [instance] :403
+void DestinationMotionConfig::DurationExp(float value)
 {
     _durationExp = value;
 }
 
-// public Fuse.Animations.Easing get_Easing() [instance] :275
-::g::Fuse::Animations::Easing* DestinationMotion::Easing()
+// public Fuse.Animations.Easing get_Easing() [instance] :364
+::g::Fuse::Animations::Easing* DestinationMotionConfig::Easing()
 {
     return _easing;
 }
 
-// public void set_Easing(Fuse.Animations.Easing value) [instance] :276
-void DestinationMotion::Easing(::g::Fuse::Animations::Easing* value)
+// public void set_Easing(Fuse.Animations.Easing value) [instance] :365
+void DestinationMotionConfig::Easing(::g::Fuse::Animations::Easing* value)
 {
     _easing = value;
 
@@ -410,14 +487,14 @@ void DestinationMotion::Easing(::g::Fuse::Animations::Easing* value)
         _type = 0;
 }
 
-// public Fuse.Motion.MotionDestinationType get_Type() [instance] :257
-int DestinationMotion::Type()
+// public Fuse.Motion.MotionDestinationType get_Type() [instance] :346
+int DestinationMotionConfig::Type()
 {
     return _type;
 }
 
-// public void set_Type(Fuse.Motion.MotionDestinationType value) [instance] :258
-void DestinationMotion::Type(int value)
+// public void set_Type(Fuse.Motion.MotionDestinationType value) [instance] :347
+void DestinationMotionConfig::Type(int value)
 {
     if ((_type == value) && !_explicitType)
         return;
@@ -426,44 +503,44 @@ void DestinationMotion::Type(int value)
     _explicitType = true;
 }
 
-// public Fuse.Motion.MotionUnit get_Unit() [instance] :329
-int DestinationMotion::Unit()
+// public Fuse.Motion.MotionUnit get_Unit() [instance] :418
+int DestinationMotionConfig::Unit()
 {
     return _unit;
 }
 
-// public void set_Unit(Fuse.Motion.MotionUnit value) [instance] :330
-void DestinationMotion::Unit(int value)
+// public void set_Unit(Fuse.Motion.MotionUnit value) [instance] :419
+void DestinationMotionConfig::Unit(int value)
 {
     _unit = value;
 }
 
-// public generated DestinationMotion New() [static] :246
-DestinationMotion* DestinationMotion::New1(uType* __type)
+// public generated DestinationMotionConfig New() [static] :335
+DestinationMotionConfig* DestinationMotionConfig::New1()
 {
-    DestinationMotion* obj1 = (DestinationMotion*)uNew(__type);
+    DestinationMotionConfig* obj1 = (DestinationMotionConfig*)uNew(DestinationMotionConfig_typeof());
     obj1->ctor_();
     return obj1;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno
+// -----------------------------------------------------
 
 // public class MotionConfig :18
 // {
 static void MotionConfig_build(uType* type)
 {
-    ::TYPES[6] = ::g::Fuse::Motion::DestinationMotion_typeof()->MakeType(::g::Uno::Float2_typeof(), NULL);
-    ::TYPES[7] = ::g::Fuse::Motion::Simulation::Friction_typeof()->MakeType(::g::Uno::Float2_typeof(), NULL);
+    ::TYPES[7] = ::g::Fuse::Motion::DestinationMotion_typeof()->MakeType(::g::Uno::Float2_typeof(), NULL);
+    ::TYPES[8] = ::g::Fuse::Motion::Simulation::Friction_typeof()->MakeType(::g::Uno::Float2_typeof(), NULL);
     type->SetFields(0,
-        ::TYPES[6/*Fuse.Motion.DestinationMotion<float2>*/], offsetof(::g::Fuse::Motion::MotionConfig, _goto), 0,
+        ::TYPES[7/*Fuse.Motion.DestinationMotion<float2>*/], offsetof(::g::Fuse::Motion::MotionConfig, _goto), 0,
         ::g::Fuse::Motion::Simulation::BasicBoundedRegion2D_typeof(), offsetof(::g::Fuse::Motion::MotionConfig, _impl), 0,
         ::g::Fuse::Motion::OverflowType_typeof(), offsetof(::g::Fuse::Motion::MotionConfig, _overflow), 0,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Motion::MotionConfig, _overflowExtent), 0,
-        ::TYPES[6/*Fuse.Motion.DestinationMotion<float2>*/], offsetof(::g::Fuse::Motion::MotionConfig, _snap), 0);
+        ::TYPES[7/*Fuse.Motion.DestinationMotion<float2>*/], offsetof(::g::Fuse::Motion::MotionConfig, _snap), 0);
     type->Reflection.SetFunctions(28,
-        new uFunction("get_Goto", NULL, (void*)MotionConfig__get_Goto_fn, 0, false, ::TYPES[6/*Fuse.Motion.DestinationMotion<float2>*/], 0),
+        new uFunction("get_Goto", NULL, (void*)MotionConfig__get_Goto_fn, 0, false, ::TYPES[7/*Fuse.Motion.DestinationMotion<float2>*/], 0),
         new uFunction("get_GotoDistance", NULL, (void*)MotionConfig__get_GotoDistance_fn, 0, false, ::g::Uno::Float_typeof(), 0),
         new uFunction("set_GotoDistance", NULL, (void*)MotionConfig__set_GotoDistance_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
         new uFunction("get_GotoDuration", NULL, (void*)MotionConfig__get_GotoDuration_fn, 0, false, ::g::Uno::Float_typeof(), 0),
@@ -478,7 +555,7 @@ static void MotionConfig_build(uType* type)
         new uFunction("set_Overflow", NULL, (void*)MotionConfig__set_Overflow_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Motion::OverflowType_typeof()),
         new uFunction("get_OverflowExtent", NULL, (void*)MotionConfig__get_OverflowExtent_fn, 0, false, ::g::Uno::Float2_typeof(), 0),
         new uFunction("set_OverflowExtent", NULL, (void*)MotionConfig__set_OverflowExtent_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float2_typeof()),
-        new uFunction("get_Snap", NULL, (void*)MotionConfig__get_Snap_fn, 0, false, ::TYPES[6/*Fuse.Motion.DestinationMotion<float2>*/], 0),
+        new uFunction("get_Snap", NULL, (void*)MotionConfig__get_Snap_fn, 0, false, ::TYPES[7/*Fuse.Motion.DestinationMotion<float2>*/], 0),
         new uFunction("get_SnapDistance", NULL, (void*)MotionConfig__get_SnapDistance_fn, 0, false, ::g::Uno::Float_typeof(), 0),
         new uFunction("set_SnapDistance", NULL, (void*)MotionConfig__set_SnapDistance_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
         new uFunction("get_SnapDuration", NULL, (void*)MotionConfig__get_SnapDuration_fn, 0, false, ::g::Uno::Float_typeof(), 0),
@@ -709,8 +786,8 @@ void MotionConfig__set_Unit_fn(MotionConfig* __this, int* value)
 // protected MotionConfig() [instance] :22
 void MotionConfig::ctor_()
 {
-    _goto = ((::g::Fuse::Motion::DestinationMotion*)::g::Fuse::Motion::DestinationMotion::New1(::TYPES[6/*Fuse.Motion.DestinationMotion<float2>*/]));
-    _snap = ((::g::Fuse::Motion::DestinationMotion*)::g::Fuse::Motion::DestinationMotion::New1(::TYPES[6/*Fuse.Motion.DestinationMotion<float2>*/]));
+    _goto = ((::g::Fuse::Motion::DestinationMotion*)::g::Fuse::Motion::DestinationMotion::New2(::TYPES[7/*Fuse.Motion.DestinationMotion<float2>*/]));
+    _snap = ((::g::Fuse::Motion::DestinationMotion*)::g::Fuse::Motion::DestinationMotion::New2(::TYPES[7/*Fuse.Motion.DestinationMotion<float2>*/]));
     _overflowExtent = ::g::Uno::Float2__New1(150.0f);
 }
 
@@ -727,11 +804,11 @@ void MotionConfig::CreateImpl()
 {
     uStackFrame __("Fuse.Motion.MotionConfig", "CreateImpl()");
     _impl = ::g::Fuse::Motion::Simulation::BasicBoundedRegion2D::New1();
-    uPtr(_impl)->DestinationSimulation((uObject*)uPtr(_goto)->Create());
-    uPtr(_impl)->SnapSimulation((uObject*)uPtr(_snap)->Create());
+    uPtr(_impl)->DestinationSimulation((uObject*)uPtr(_goto)->Create1());
+    uPtr(_impl)->SnapSimulation((uObject*)uPtr(_snap)->Create1());
     uPtr(_impl)->OverflowExtent(OverflowExtent());
     uPtr(_impl)->Overflow(Overflow());
-    uPtr(_impl)->FrictionSimulation((uObject*)((::g::Fuse::Motion::Simulation::Friction*)::g::Fuse::Motion::Simulation::Friction::CreateUnit(::TYPES[7/*Fuse.Motion.Simulation.Friction<float2>*/], Unit())));
+    uPtr(_impl)->FrictionSimulation((uObject*)((::g::Fuse::Motion::Simulation::Friction*)::g::Fuse::Motion::Simulation::Friction::CreateUnit(::TYPES[8/*Fuse.Motion.Simulation.Friction<float2>*/], Unit())));
 }
 
 // public Fuse.Motion.DestinationMotion<float2> get_Goto() [instance] :49
@@ -948,10 +1025,10 @@ MotionConfig* MotionConfig::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno
+// -----------------------------------------------------
 
-// public enum MotionDestinationType :573
+// public enum MotionDestinationType :671
 uEnumType* MotionDestinationType_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -965,10 +1042,10 @@ uEnumType* MotionDestinationType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno
+// -----------------------------------------------------
 
-// public enum MotionUnit :586
+// public enum MotionUnit :684
 uEnumType* MotionUnit_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -983,8 +1060,8 @@ uEnumType* MotionUnit_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno
+// -----------------------------------------------------
 
 // public sealed class NavigationMotion :194
 // {
@@ -1044,10 +1121,10 @@ NavigationMotion* NavigationMotion::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno
+// -----------------------------------------------------
 
-// public enum OverflowType :560
+// public enum OverflowType :658
 uEnumType* OverflowType_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -1061,8 +1138,8 @@ uEnumType* OverflowType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno
+// -----------------------------------------------------
 
 // public sealed class ScrollViewMotion :213
 // {
@@ -1122,17 +1199,17 @@ ScrollViewMotion* ScrollViewMotion::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno
+// -----------------------------------------------------
 
-// private sealed class DelayFunction.SetClosure :530
+// private sealed class DelayFunction.SetClosure :628
 // {
 static void DelayFunction__SetClosure_build(uType* type)
 {
-    ::TYPES[8] = ::g::Fuse::Reactive::IListener_typeof();
+    ::TYPES[9] = ::g::Fuse::Reactive::IListener_typeof();
     type->SetFields(0,
         ::g::Fuse::Motion::DelayFunction_typeof(), offsetof(::g::Fuse::Motion::DelayFunction__SetClosure, _func), 0,
-        ::TYPES[8/*Fuse.Reactive.IListener*/], offsetof(::g::Fuse::Motion::DelayFunction__SetClosure, _target), 0,
+        ::TYPES[9/*Fuse.Reactive.IListener*/], offsetof(::g::Fuse::Motion::DelayFunction__SetClosure, _target), 0,
         uObject_typeof(), offsetof(::g::Fuse::Motion::DelayFunction__SetClosure, _v), 0);
 }
 
@@ -1150,25 +1227,25 @@ uType* DelayFunction__SetClosure_typeof()
     return type;
 }
 
-// public SetClosure(Fuse.Motion.DelayFunction func, Fuse.Reactive.IListener target, object v) :535
+// public SetClosure(Fuse.Motion.DelayFunction func, Fuse.Reactive.IListener target, object v) :633
 void DelayFunction__SetClosure__ctor__fn(DelayFunction__SetClosure* __this, ::g::Fuse::Motion::DelayFunction* func, uObject* target, uObject* v)
 {
     __this->ctor_(func, target, v);
 }
 
-// public SetClosure New(Fuse.Motion.DelayFunction func, Fuse.Reactive.IListener target, object v) :535
+// public SetClosure New(Fuse.Motion.DelayFunction func, Fuse.Reactive.IListener target, object v) :633
 void DelayFunction__SetClosure__New1_fn(::g::Fuse::Motion::DelayFunction* func, uObject* target, uObject* v, DelayFunction__SetClosure** __retval)
 {
     *__retval = DelayFunction__SetClosure::New1(func, target, v);
 }
 
-// public void Run() :541
+// public void Run() :639
 void DelayFunction__SetClosure__Run_fn(DelayFunction__SetClosure* __this)
 {
     __this->Run();
 }
 
-// public SetClosure(Fuse.Motion.DelayFunction func, Fuse.Reactive.IListener target, object v) [instance] :535
+// public SetClosure(Fuse.Motion.DelayFunction func, Fuse.Reactive.IListener target, object v) [instance] :633
 void DelayFunction__SetClosure::ctor_(::g::Fuse::Motion::DelayFunction* func, uObject* target, uObject* v)
 {
     _func = func;
@@ -1176,14 +1253,14 @@ void DelayFunction__SetClosure::ctor_(::g::Fuse::Motion::DelayFunction* func, uO
     _v = v;
 }
 
-// public void Run() [instance] :541
+// public void Run() [instance] :639
 void DelayFunction__SetClosure::Run()
 {
     uStackFrame __("Fuse.Motion.DelayFunction.SetClosure", "Run()");
-    ::g::Fuse::Reactive::IListener::OnNewData(uInterface(uPtr(_target), ::TYPES[8/*Fuse.Reactive.IListener*/]), (uObject*)_func, _v);
+    ::g::Fuse::Reactive::IListener::OnNewData(uInterface(uPtr(_target), ::TYPES[9/*Fuse.Reactive.IListener*/]), (uObject*)_func, _v);
 }
 
-// public SetClosure New(Fuse.Motion.DelayFunction func, Fuse.Reactive.IListener target, object v) [static] :535
+// public SetClosure New(Fuse.Motion.DelayFunction func, Fuse.Reactive.IListener target, object v) [static] :633
 DelayFunction__SetClosure* DelayFunction__SetClosure::New1(::g::Fuse::Motion::DelayFunction* func, uObject* target, uObject* v)
 {
     DelayFunction__SetClosure* obj1 = (DelayFunction__SetClosure*)uNew(DelayFunction__SetClosure_typeof());
@@ -1192,10 +1269,10 @@ DelayFunction__SetClosure* DelayFunction__SetClosure::New1(::g::Fuse::Motion::De
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno
+// -----------------------------------------------------
 
-// public sealed class SpringFunction :427
+// public sealed class SpringFunction :525
 // {
 static void SpringFunction_build(uType* type)
 {
@@ -1226,57 +1303,57 @@ static void SpringFunction_build(uType* type)
     return type;
 }
 
-// public SpringFunction(Fuse.Reactive.Expression value) :432
+// public SpringFunction(Fuse.Reactive.Expression value) :530
 void SpringFunction__ctor_1_fn(SpringFunction* __this, ::g::Fuse::Reactive::Expression* value)
 {
     __this->ctor_1(value);
 }
 
-// public SpringFunction New(Fuse.Reactive.Expression value) :432
+// public SpringFunction New(Fuse.Reactive.Expression value) :530
 void SpringFunction__New1_fn(::g::Fuse::Reactive::Expression* value, SpringFunction** __retval)
 {
     *__retval = SpringFunction::New1(value);
 }
 
-// public override sealed Uno.IDisposable Subscribe(Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) :438
+// public override sealed Uno.IDisposable Subscribe(Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) :536
 void SpringFunction__Subscribe_fn(SpringFunction* __this, uObject* context, uObject* listener, uObject** __retval)
 {
     uStackFrame __("Fuse.Motion.SpringFunction", "Subscribe(Fuse.Reactive.IContext,Fuse.Reactive.IListener)");
     return *__retval = (uObject*)SpringFunction__Subscription::New1(__this, context, listener), void();
 }
 
-// public generated Fuse.Reactive.Expression get_Value() :429
+// public generated Fuse.Reactive.Expression get_Value() :527
 void SpringFunction__get_Value_fn(SpringFunction* __this, ::g::Fuse::Reactive::Expression** __retval)
 {
     *__retval = __this->Value();
 }
 
-// private generated void set_Value(Fuse.Reactive.Expression value) :429
+// private generated void set_Value(Fuse.Reactive.Expression value) :527
 void SpringFunction__set_Value_fn(SpringFunction* __this, ::g::Fuse::Reactive::Expression* value)
 {
     __this->Value(value);
 }
 
-// public SpringFunction(Fuse.Reactive.Expression value) [instance] :432
+// public SpringFunction(Fuse.Reactive.Expression value) [instance] :530
 void SpringFunction::ctor_1(::g::Fuse::Reactive::Expression* value)
 {
     ctor_();
     Value(value);
 }
 
-// public generated Fuse.Reactive.Expression get_Value() [instance] :429
+// public generated Fuse.Reactive.Expression get_Value() [instance] :527
 ::g::Fuse::Reactive::Expression* SpringFunction::Value()
 {
     return _Value;
 }
 
-// private generated void set_Value(Fuse.Reactive.Expression value) [instance] :429
+// private generated void set_Value(Fuse.Reactive.Expression value) [instance] :527
 void SpringFunction::Value(::g::Fuse::Reactive::Expression* value)
 {
     _Value = value;
 }
 
-// public SpringFunction New(Fuse.Reactive.Expression value) [static] :432
+// public SpringFunction New(Fuse.Reactive.Expression value) [static] :530
 SpringFunction* SpringFunction::New1(::g::Fuse::Reactive::Expression* value)
 {
     SpringFunction* obj1 = (SpringFunction*)uNew(SpringFunction_typeof());
@@ -1285,27 +1362,27 @@ SpringFunction* SpringFunction::New1(::g::Fuse::Reactive::Expression* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno
+// -----------------------------------------------------
 
-// private sealed class SpringFunction.Subscription :443
+// private sealed class SpringFunction.Subscription :541
 // {
 static void SpringFunction__Subscription_build(uType* type)
 {
-    ::TYPES[9] = ::g::Fuse::Motion::Simulation::ElasticForce_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL);
-    ::TYPES[10] = ::g::Uno::IDisposable_typeof();
-    ::TYPES[8] = ::g::Fuse::Reactive::IListener_typeof();
+    ::TYPES[10] = ::g::Fuse::Motion::Simulation::ElasticForce_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL);
+    ::TYPES[11] = ::g::Uno::IDisposable_typeof();
+    ::TYPES[9] = ::g::Fuse::Reactive::IListener_typeof();
     ::TYPES[0] = ::g::Uno::Action_typeof();
     type->SetInterfaces(
-        ::TYPES[10/*Uno.IDisposable*/], offsetof(SpringFunction__Subscription_type, interface0),
-        ::TYPES[8/*Fuse.Reactive.IListener*/], offsetof(SpringFunction__Subscription_type, interface1));
+        ::TYPES[11/*Uno.IDisposable*/], offsetof(SpringFunction__Subscription_type, interface0),
+        ::TYPES[9/*Fuse.Reactive.IListener*/], offsetof(SpringFunction__Subscription_type, interface1));
     type->SetFields(0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Motion::SpringFunction__Subscription, _hasStartValue), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Motion::SpringFunction__Subscription, _isSimulating), 0,
-        ::TYPES[8/*Fuse.Reactive.IListener*/], offsetof(::g::Fuse::Motion::SpringFunction__Subscription, _listener), 0,
+        ::TYPES[9/*Fuse.Reactive.IListener*/], offsetof(::g::Fuse::Motion::SpringFunction__Subscription, _listener), 0,
         ::g::Fuse::Motion::SpringFunction_typeof(), offsetof(::g::Fuse::Motion::SpringFunction__Subscription, _sf), 0,
-        ::TYPES[9/*Fuse.Motion.Simulation.ElasticForce<float4>*/], offsetof(::g::Fuse::Motion::SpringFunction__Subscription, _sim), 0,
-        ::TYPES[10/*Uno.IDisposable*/], offsetof(::g::Fuse::Motion::SpringFunction__Subscription, _valueSub), 0);
+        ::TYPES[10/*Fuse.Motion.Simulation.ElasticForce<float4>*/], offsetof(::g::Fuse::Motion::SpringFunction__Subscription, _sim), 0,
+        ::TYPES[11/*Uno.IDisposable*/], offsetof(::g::Fuse::Motion::SpringFunction__Subscription, _valueSub), 0);
 }
 
 SpringFunction__Subscription_type* SpringFunction__Subscription_typeof()
@@ -1325,72 +1402,72 @@ SpringFunction__Subscription_type* SpringFunction__Subscription_typeof()
     return type;
 }
 
-// public Subscription(Fuse.Motion.SpringFunction sf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) :452
+// public Subscription(Fuse.Motion.SpringFunction sf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) :550
 void SpringFunction__Subscription__ctor__fn(SpringFunction__Subscription* __this, ::g::Fuse::Motion::SpringFunction* sf, uObject* context, uObject* listener)
 {
     __this->ctor_(sf, context, listener);
 }
 
-// public void Dispose() :459
+// public void Dispose() :557
 void SpringFunction__Subscription__Dispose_fn(SpringFunction__Subscription* __this)
 {
     __this->Dispose();
 }
 
-// public Subscription New(Fuse.Motion.SpringFunction sf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) :452
+// public Subscription New(Fuse.Motion.SpringFunction sf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) :550
 void SpringFunction__Subscription__New1_fn(::g::Fuse::Motion::SpringFunction* sf, uObject* context, uObject* listener, SpringFunction__Subscription** __retval)
 {
     *__retval = SpringFunction__Subscription::New1(sf, context, listener);
 }
 
-// public void OnNewData(Fuse.Reactive.IExpression source, object value) :469
+// public void OnNewData(Fuse.Reactive.IExpression source, object value) :567
 void SpringFunction__Subscription__OnNewData_fn(SpringFunction__Subscription* __this, uObject* source, uObject* value)
 {
     __this->OnNewData(source, value);
 }
 
-// private void Simulate() :500
+// private void Simulate() :598
 void SpringFunction__Subscription__Simulate_fn(SpringFunction__Subscription* __this)
 {
     __this->Simulate();
 }
 
-// private void StartSimulation() :486
+// private void StartSimulation() :584
 void SpringFunction__Subscription__StartSimulation_fn(SpringFunction__Subscription* __this)
 {
     __this->StartSimulation();
 }
 
-// private void StopSimulation() :493
+// private void StopSimulation() :591
 void SpringFunction__Subscription__StopSimulation_fn(SpringFunction__Subscription* __this)
 {
     __this->StopSimulation();
 }
 
-// public Subscription(Fuse.Motion.SpringFunction sf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) [instance] :452
+// public Subscription(Fuse.Motion.SpringFunction sf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) [instance] :550
 void SpringFunction__Subscription::ctor_(::g::Fuse::Motion::SpringFunction* sf, uObject* context, uObject* listener)
 {
     uStackFrame __("Fuse.Motion.SpringFunction.Subscription", ".ctor(Fuse.Motion.SpringFunction,Fuse.Reactive.IContext,Fuse.Reactive.IListener)");
-    _sim = ((::g::Fuse::Motion::Simulation::ElasticForce*)::g::Fuse::Motion::Simulation::ElasticForce::CreatePoints(::TYPES[9/*Fuse.Motion.Simulation.ElasticForce<float4>*/]));
+    _sim = ((::g::Fuse::Motion::Simulation::ElasticForce*)::g::Fuse::Motion::Simulation::ElasticForce::CreatePoints(::TYPES[10/*Fuse.Motion.Simulation.ElasticForce<float4>*/]));
     _sf = sf;
     _listener = listener;
     _valueSub = uPtr(uPtr(sf)->Value())->Subscribe(context, (uObject*)this);
 }
 
-// public void Dispose() [instance] :459
+// public void Dispose() [instance] :557
 void SpringFunction__Subscription::Dispose()
 {
     uStackFrame __("Fuse.Motion.SpringFunction.Subscription", "Dispose()");
 
     if (_valueSub != NULL)
-        ::g::Uno::IDisposable::Dispose(uInterface(uPtr(_valueSub), ::TYPES[10/*Uno.IDisposable*/]));
+        ::g::Uno::IDisposable::Dispose(uInterface(uPtr(_valueSub), ::TYPES[11/*Uno.IDisposable*/]));
 
     _valueSub = NULL;
     _listener = NULL;
     StopSimulation();
 }
 
-// public void OnNewData(Fuse.Reactive.IExpression source, object value) [instance] :469
+// public void OnNewData(Fuse.Reactive.IExpression source, object value) [instance] :567
 void SpringFunction__Subscription::OnNewData(uObject* source, uObject* value)
 {
     uStackFrame __("Fuse.Motion.SpringFunction.Subscription", "OnNewData(Fuse.Reactive.IExpression,object)");
@@ -1401,7 +1478,7 @@ void SpringFunction__Subscription::OnNewData(uObject* source, uObject* value)
     {
         ::g::Fuse::Motion::Simulation::ElasticForce__Reset_fn(uPtr(_sim), uCRef(v));
         _hasStartValue = true;
-        ::g::Fuse::Reactive::IListener::OnNewData(uInterface(uPtr(_listener), ::TYPES[8/*Fuse.Reactive.IListener*/]), (uObject*)_sf, uBox(::g::Uno::Float4_typeof(), v));
+        ::g::Fuse::Reactive::IListener::OnNewData(uInterface(uPtr(_listener), ::TYPES[9/*Fuse.Reactive.IListener*/]), (uObject*)_sf, uBox(::g::Uno::Float4_typeof(), v));
     }
     else if (::g::Uno::Float4__op_Inequality((::g::Fuse::Motion::Simulation::ElasticForce__get_Destination_fn(uPtr(_sim), &ret2), ret2), v))
     {
@@ -1410,19 +1487,19 @@ void SpringFunction__Subscription::OnNewData(uObject* source, uObject* value)
     }
 }
 
-// private void Simulate() [instance] :500
+// private void Simulate() [instance] :598
 void SpringFunction__Subscription::Simulate()
 {
     uStackFrame __("Fuse.Motion.SpringFunction.Subscription", "Simulate()");
     ::g::Uno::Float4 ret3;
     uPtr(_sim)->Update(::g::Fuse::Time::FrameInterval());
-    ::g::Fuse::Reactive::IListener::OnNewData(uInterface(uPtr(_listener), ::TYPES[8/*Fuse.Reactive.IListener*/]), (uObject*)_sf, uBox(::g::Uno::Float4_typeof(), (::g::Fuse::Motion::Simulation::ElasticForce__get_Position_fn(uPtr(_sim), &ret3), ret3)));
+    ::g::Fuse::Reactive::IListener::OnNewData(uInterface(uPtr(_listener), ::TYPES[9/*Fuse.Reactive.IListener*/]), (uObject*)_sf, uBox(::g::Uno::Float4_typeof(), (::g::Fuse::Motion::Simulation::ElasticForce__get_Position_fn(uPtr(_sim), &ret3), ret3)));
 
     if (uPtr(_sim)->IsStatic())
         StopSimulation();
 }
 
-// private void StartSimulation() [instance] :486
+// private void StartSimulation() [instance] :584
 void SpringFunction__Subscription::StartSimulation()
 {
     uStackFrame __("Fuse.Motion.SpringFunction.Subscription", "StartSimulation()");
@@ -1434,7 +1511,7 @@ void SpringFunction__Subscription::StartSimulation()
     _isSimulating = true;
 }
 
-// private void StopSimulation() [instance] :493
+// private void StopSimulation() [instance] :591
 void SpringFunction__Subscription::StopSimulation()
 {
     uStackFrame __("Fuse.Motion.SpringFunction.Subscription", "StopSimulation()");
@@ -1446,7 +1523,7 @@ void SpringFunction__Subscription::StopSimulation()
     _isSimulating = false;
 }
 
-// public Subscription New(Fuse.Motion.SpringFunction sf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) [static] :452
+// public Subscription New(Fuse.Motion.SpringFunction sf, Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) [static] :550
 SpringFunction__Subscription* SpringFunction__Subscription::New1(::g::Fuse::Motion::SpringFunction* sf, uObject* context, uObject* listener)
 {
     SpringFunction__Subscription* obj1 = (SpringFunction__Subscription*)uNew(SpringFunction__Subscription_typeof());

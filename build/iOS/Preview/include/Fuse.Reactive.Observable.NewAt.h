@@ -1,8 +1,8 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Reactive.JavaScript/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Reactive.Observa-9616d070.h>
+#include <Fuse.Reactive.Observable.Operation.h>
 namespace g{namespace Fuse{namespace Reactive{struct Observable;}}}
 namespace g{namespace Fuse{namespace Reactive{struct Observable__NewAt;}}}
 namespace g{namespace Fuse{namespace Reactive{struct Observable__Subscription;}}}
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// private sealed class Observable.NewAt :943
+// private sealed class Observable.NewAt :1124
 // {
 ::g::Fuse::Reactive::Observable__Operation_type* Observable__NewAt_typeof();
 void Observable__NewAt__ctor_1_fn(Observable__NewAt* __this, ::g::Fuse::Reactive::Observable* obs, int* index, uObject* newValue);

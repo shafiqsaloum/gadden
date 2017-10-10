@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{
 namespace Fuse{
 namespace Text{
 
-// internal struct Quad :1219
+// internal struct Quad :1218
 // {
 uStructType* Quad_typeof();
 void Quad__ctor__fn(Quad* __this, ::g::Uno::Float2* position, ::g::Uno::Recti* texCoords, float* scale);

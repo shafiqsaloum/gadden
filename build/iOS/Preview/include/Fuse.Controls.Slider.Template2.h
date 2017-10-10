@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/.uno/ux11/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/.uno/ux11/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

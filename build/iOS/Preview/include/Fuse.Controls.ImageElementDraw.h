@@ -1,10 +1,10 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.Float4x4.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implement-476e2792.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
 namespace g{namespace Fuse{namespace Controls{struct ImageElementDraw;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct Visual;}}
@@ -18,7 +18,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// internal sealed class ImageElementDraw :696
+// internal sealed class ImageElementDraw :752
 // {
 uType* ImageElementDraw_typeof();
 void ImageElementDraw__ctor__fn(ImageElementDraw* __this);

@@ -1,11 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.h>
+namespace g{namespace Fuse{struct Ray;}}
 namespace g{namespace Fuse{struct ViewportHelpers;}}
 namespace g{namespace Fuse{struct Visual;}}
-namespace g{namespace Uno{namespace Geometry{struct Ray;}}}
 namespace g{namespace Uno{struct Float2;}}
 namespace g{namespace Uno{struct Float4x4;}}
 
@@ -15,15 +15,15 @@ namespace Fuse{
 // public static class ViewportHelpers :1300
 // {
 uClassType* ViewportHelpers_typeof();
-void ViewportHelpers__LocalPlaneIntersection_fn(::g::Uno::Geometry::Ray* local, ::g::Uno::Float2* __retval);
-void ViewportHelpers__PointToWorldRay_fn(uObject* viewport, ::g::Uno::Float4x4* viewProjectionInverse, ::g::Uno::Float2* pointPos, ::g::Uno::Geometry::Ray* __retval);
-void ViewportHelpers__WorldToLocalRay_fn(uObject* viewport, uObject* world, ::g::Uno::Geometry::Ray* worldRay, ::g::Fuse::Visual* where, ::g::Uno::Geometry::Ray* __retval);
+void ViewportHelpers__LocalPlaneIntersection_fn(::g::Fuse::Ray* local, ::g::Uno::Float2* __retval);
+void ViewportHelpers__PointToWorldRay_fn(uObject* viewport, ::g::Uno::Float4x4* viewProjectionInverse, ::g::Uno::Float2* pointPos, ::g::Fuse::Ray* __retval);
+void ViewportHelpers__WorldToLocalRay_fn(uObject* viewport, uObject* world, ::g::Fuse::Ray* worldRay, ::g::Fuse::Visual* where, ::g::Fuse::Ray* __retval);
 
 struct ViewportHelpers : uObject
 {
-    static ::g::Uno::Float2 LocalPlaneIntersection(::g::Uno::Geometry::Ray local);
-    static ::g::Uno::Geometry::Ray PointToWorldRay(uObject* viewport, ::g::Uno::Float4x4 viewProjectionInverse, ::g::Uno::Float2 pointPos);
-    static ::g::Uno::Geometry::Ray WorldToLocalRay(uObject* viewport, uObject* world, ::g::Uno::Geometry::Ray worldRay, ::g::Fuse::Visual* where);
+    static ::g::Uno::Float2 LocalPlaneIntersection(::g::Fuse::Ray local);
+    static ::g::Fuse::Ray PointToWorldRay(uObject* viewport, ::g::Uno::Float4x4 viewProjectionInverse, ::g::Uno::Float2 pointPos);
+    static ::g::Fuse::Ray WorldToLocalRay(uObject* viewport, uObject* world, ::g::Fuse::Ray worldRay, ::g::Fuse::Visual* where);
 };
 // }
 

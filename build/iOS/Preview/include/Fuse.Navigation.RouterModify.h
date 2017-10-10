@@ -1,8 +1,8 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Navigation/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions-fcab7e57.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h>
 namespace g{namespace Fuse{namespace Navigation{struct Router;}}}
 namespace g{namespace Fuse{namespace Navigation{struct RouterModify;}}}
 namespace g{namespace Fuse{struct Node;}}
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public sealed class RouterModify :3323
+// public sealed class RouterModify :3771
 // {
 ::g::Fuse::Triggers::Actions::TriggerAction_type* RouterModify_typeof();
 void RouterModify__ctor_2_fn(RouterModify* __this);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{namespace Uno{namespace Platform{struct TextInputEventArgs;}}}
 namespace g{
 namespace Fuse{
 
-// internal sealed class KeyboardBootstrapper :1496
+// internal sealed class KeyboardBootstrapper :1494
 // {
 uType* KeyboardBootstrapper_typeof();
 void KeyboardBootstrapper__ctor__fn(KeyboardBootstrapper* __this);

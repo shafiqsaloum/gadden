@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// public static class LayoutMasterAttr :3412
+// public static class LayoutMasterAttr :3432
 // {
 uClassType* LayoutMasterAttr_typeof();
 void LayoutMasterAttr__GetLayoutMasterMode_fn(::g::Fuse::Elements::Element* elm, int* __retval);

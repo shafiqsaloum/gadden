@@ -1,9 +1,9 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Outracks.Building.Bui-7641c626.h>
+#include <Outracks.Building.BuildCanceledException.h>
 #include <Outracks.Building.BuildFailed.h>
-#include <Outracks.Building.Use-5a04599a.h>
+#include <Outracks.Building.UserCodeContainsErrors.h>
 #include <Uno.Exception.h>
 #include <Uno.String.h>
 static uString* STRINGS[2];
@@ -20,7 +20,7 @@ namespace Building{
 static void BuildCanceledException_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("Build was canceled");
-    type->SetFields(3);
+    type->SetFields(4);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)BuildCanceledException__New4_fn, 0, true, type, 0));
 }
@@ -32,7 +32,7 @@ static void BuildCanceledException_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 3;
+    options.FieldCount = 4;
     options.ObjectSize = sizeof(BuildCanceledException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Outracks.Building.BuildCanceledException", options);
@@ -75,7 +75,7 @@ BuildCanceledException* BuildCanceledException::New4()
 // {
 static void BuildFailed_build(uType* type)
 {
-    type->SetFields(3);
+    type->SetFields(4);
 }
 
 ::g::Uno::Exception_type* BuildFailed_typeof()
@@ -85,7 +85,7 @@ static void BuildFailed_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 3;
+    options.FieldCount = 4;
     options.ObjectSize = sizeof(BuildFailed);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Outracks.Building.BuildFailed", options);
@@ -114,7 +114,7 @@ void BuildFailed::ctor_3(uString* reason, ::g::Uno::Exception* innerException)
 static void UserCodeContainsErrors_build(uType* type)
 {
     ::STRINGS[1] = uString::Const("Errors were encountered while building the project");
-    type->SetFields(3);
+    type->SetFields(4);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)UserCodeContainsErrors__New4_fn, 0, true, type, 0));
 }
@@ -126,7 +126,7 @@ static void UserCodeContainsErrors_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Outracks::Building::BuildFailed_typeof();
-    options.FieldCount = 3;
+    options.FieldCount = 4;
     options.ObjectSize = sizeof(UserCodeContainsErrors);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Outracks.Building.UserCodeContainsErrors", options);

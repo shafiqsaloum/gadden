@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal sealed class PlayerPart :2086
+// internal sealed class PlayerPart :2285
 // {
 uType* PlayerPart_typeof();
 void PlayerPart__ctor__fn(PlayerPart* __this, double* currentProgress);

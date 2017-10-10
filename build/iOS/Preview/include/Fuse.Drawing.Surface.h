@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Drawing.Surface/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Drawing.Surface/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -6,7 +6,7 @@
 #include <Uno.Float4x4.h>
 #include <Uno.IDisposable.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implement-476e2792.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
 namespace g{namespace Fuse{namespace Drawing{struct Brush;}}}
 namespace g{namespace Fuse{namespace Drawing{struct LineSegment;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Stroke;}}}
@@ -21,7 +21,7 @@ namespace g{
 namespace Fuse{
 namespace Drawing{
 
-// public abstract class Surface :3657
+// public abstract class Surface :2935
 // {
 struct Surface_type : uType
 {
@@ -42,6 +42,7 @@ struct Surface_type : uType
 Surface_type* Surface_typeof();
 void Surface__ctor__fn(Surface* __this);
 void Surface__Draw_fn(Surface* __this, ::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::Element* elm, uObject* drawable);
+void Surface__DrawLocal_fn(Surface* __this, uObject* drawable);
 void Surface__get_ElementSize_fn(Surface* __this, ::g::Uno::Float2* __retval);
 void Surface__set_ElementSize_fn(Surface* __this, ::g::Uno::Float2* value);
 void Surface__init_DrawCalls_fn(Surface* __this);
@@ -62,6 +63,7 @@ struct Surface : uObject
     void Dispose() { (((Surface_type*)__type)->fp_Dispose)(this); }
     void DisposePath(::g::Fuse::Drawing::SurfacePath* path) { (((Surface_type*)__type)->fp_DisposePath)(this, path); }
     void Draw(::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::Element* elm, uObject* drawable);
+    void DrawLocal(uObject* drawable);
     ::g::Uno::Float2 ElementSize();
     void ElementSize(::g::Uno::Float2 value);
     void End() { (((Surface_type*)__type)->fp_End)(this); }

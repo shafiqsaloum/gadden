@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -6,7 +6,6 @@
 #include <Fuse.IDeferred.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
-#include <Fuse.ITemplateObserver.h>
 #include <Fuse.Node.ISubtreeDataProvider.h>
 #include <Fuse.Reactive.Instantiator.h>
 #include <Fuse.Reactive.IObserver.h>
@@ -20,7 +19,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public sealed class Instance :1631
+// public sealed class Instance :1710
 // {
 ::g::Fuse::Reactive::Instantiator_type* Instance_typeof();
 void Instance__ctor_5_fn(Instance* __this);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/fonts/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/content/fonts/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -53,7 +53,7 @@ struct FontFace : uObject
 
 }}}} // ::g::Uno::Content::Fonts
 
-#include <Uno.Content.Fonts.Ren-59fed012.h>
+#include <Uno.Content.Fonts.RenderedGlyph.h>
 
 namespace g{
 namespace Uno{

@@ -34,9 +34,7 @@
         <StackPanel Margin="20" Alignment="BottomCenter">
           <Image Width="50%" Margin="30" Alignment="Center" File="../../assets/IceBreakerQuote.png"/>
           <!-- Include randomized result here instead of Lorem Ipsum text -->
-          <Paragraph Alignment="Center" TextAlignment="Center" Width="80%" FontSize="16">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus elit nec commodo luctus, nunc sapien blandit tortor.
-          </Paragraph>
+            <Text Value="{IceBreaker}" Font="TitleFont" TextColor="#fff" TextWrapping="Wrap" FontSize="20" LineSpacing="10" />
           <Rectangle Margin="0,20,0,20" Fill="#979797" Height="1px" SnapToPixels="true" Width="40%"/>
         </StackPanel>
       </Panel>
@@ -56,16 +54,17 @@
 
     <!-- Ice Breaker icon and button -->
     <Panel Height="30%" Background="Black" Alignment="Bottom">
-      <Image ux:Name="IceBreakerButton" Opacity="0" Width="20%" Margin="0,0,0,40"  Alignment="BottomCenter" StretchMode="UniformToFill" File="../../assets/IceBreakerButtonWhite.png">
-        <Clicked>
+        <!-- runs function restart -->
+      <Image Clicked="{restart}" ux:Name="IceBreakerButton" Opacity="0" Width="20%" Margin="0,0,0,40"  Alignment="BottomCenter" StretchMode="UniformToFill" File="../../assets/IceBreakerButtonWhite.png">
+        <Clicked >
           <Toggle Target="ShowResult" />
         </Clicked>
       </Image>
 
       <!-- Shows results when click on button -->
       <WhileTrue ux:Name="ShowResult">
-          <Change ResultPanel.Opacity="1" Duration="0.3" />
-          <Change DefaultPanel.Opacity="0" Duration="0.3" />
+          <Change ResultPanel.Opacity="1" Duration="0.0" />
+          <Change DefaultPanel.Opacity="0" Duration="0.0" />
       </WhileTrue>
 
       <Image ux:Name="IceBreakerIcon" Opacity="1" Width="40%" Alignment="BottomCenter" StretchMode="UniformToFill" File="../../assets/IceBreakerIcon.png" X="0">
@@ -91,30 +90,10 @@
       </Image>
     </Panel>
 
-
-<!-- Info icon -->
-
-<!-- <Panel ux:Name="iconPanel"> -->
-<!-- </Panel> -->
-
-
-<!-- <Image ux:Name="IceBreakerIcon" Opacity="1" Width="40%" X="0" Alignment="BottomCenter" StretchMode="UniformToFill" File="../../assets/IceBreakerIcon.png" >
-<Clicked>
-  <Toggle Target="ImageMove" />
-</Clicked>
-</Image> -->
-
-        <!-- <Timeline ux:Name="timeline">
-            <Move Target="IceBreakerIcon" Y="0.50" Duration="1"   Delay="1" Easing="BackOut" RelativeTo="Size"/>
-            <Change iconPanel.X="-30" Duration="1" Delay="1" Easing="BackOut"/>
-        </Timeline> -->
-
-        <Each Items="{IceBreakers}">
-            <!-- Get title from JSON -->
-            <Panel Alignment="BottomLeft" Margin="20">
-                <Text Value="{IceBreaker}" />
-            </Panel>
-        </Each>
-
-
+    <Each Items="{IceBreakers}">
+        <!-- Get title from JSON -->
+        <Panel Alignment="BottomLeft" Margin="20">
+            <Text Value="{IceBreaker}" />
+        </Panel>
+    </Each>
 </Page>

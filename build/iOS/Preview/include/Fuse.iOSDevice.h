@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{namespace Uno{struct Rect;}}
 namespace g{
 namespace Fuse{
 
-// public static extern class iOSDevice :292
+// public static extern class iOSDevice :2270
 // {
 uClassType* iOSDevice_typeof();
 void iOSDevice__CompensateForOrientation_fn(::g::Uno::Float2* size, ::g::Uno::Float2* __retval);

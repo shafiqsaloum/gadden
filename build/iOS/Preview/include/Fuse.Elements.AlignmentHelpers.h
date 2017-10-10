@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// public static class AlignmentHelpers :2998
+// public static class AlignmentHelpers :3018
 // {
 uClassType* AlignmentHelpers_typeof();
 void AlignmentHelpers__GetAnchor_fn(int* a, ::g::Uno::Float2* __retval);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -7,7 +7,7 @@
 namespace g{
 namespace Uno{
 
-// public intrinsic struct Int :3451
+// public intrinsic struct Int :3453
 // {
 uStructType* Int_typeof();
 void Int__Equals_fn(int* __this, uType* __type, uObject* o, bool* __retval);

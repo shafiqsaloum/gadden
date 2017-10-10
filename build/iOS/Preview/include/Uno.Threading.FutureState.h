@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Threading/1.0.13/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Uno.Threading/1.2.2/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{
 namespace Uno{
 namespace Threading{
 
-// public enum FutureState :479
+// public enum FutureState :478
 uEnumType* FutureState_typeof();
 
 }}} // ::g::Uno::Threading

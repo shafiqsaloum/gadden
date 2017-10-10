@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Motion/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Motion{
 
-// public sealed class SpringFunction :427
+// public sealed class SpringFunction :525
 // {
 ::g::Fuse::Reactive::Expression_type* SpringFunction_typeof();
 void SpringFunction__ctor_1_fn(SpringFunction* __this, ::g::Fuse::Reactive::Expression* value);

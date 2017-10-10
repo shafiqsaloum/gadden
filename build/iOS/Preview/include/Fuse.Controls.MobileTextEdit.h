@@ -1,21 +1,22 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/textcontrols/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.ITextEditControl.h>
-#include <Fuse.Controls.Native.-ae84b26e.h>
+#include <Fuse.Controls.Native.ITextEditHost.h>
 #include <Fuse.Controls.TextEdit.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.Input.INotifyFocus.h>
 #include <Fuse.IProperties.h>
+#include <Fuse.ITemplateSource.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Fuse.Triggers.IValue-1.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
@@ -33,8 +34,8 @@ namespace Controls{
 // {
 struct MobileTextEdit_type : ::g::Fuse::Controls::TextEdit_type
 {
-    ::g::Fuse::Controls::Native::ITextEditHost interface17;
-    ::g::Fuse::Input::INotifyFocus interface18;
+    ::g::Fuse::Controls::Native::ITextEditHost interface18;
+    ::g::Fuse::Input::INotifyFocus interface19;
 };
 
 MobileTextEdit_type* MobileTextEdit_typeof();

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/backends/cplusplus/Uno/Reflection.cpp'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/backends/cplusplus/Uno/Reflection.cpp.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Uno/Reflection.h>

@@ -16,8 +16,8 @@ namespace Uno{
 namespace Content{
 namespace Images{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/content/images/$.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/content/images/$.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class Bitmap :9
 // {

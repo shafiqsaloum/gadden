@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace Fuse{struct OSVersion;}}
 namespace g{
 namespace Fuse{
 
-// public sealed extern class OSVersion :274
+// public sealed extern class OSVersion :2252
 // {
 uType* OSVersion_typeof();
 void OSVersion__ctor__fn(OSVersion* __this, int* major, int* minor, int* patch);

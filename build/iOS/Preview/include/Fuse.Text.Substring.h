@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Text{
 
-// public sealed class Substring :1800
+// public sealed class Substring :1799
 // {
 struct Substring_type : uType
 {

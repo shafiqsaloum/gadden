@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/backends/cplusplus/Uno/Uno.h'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/backends/cplusplus/Uno/Uno.h.
 // WARNING: Changes might be lost if you edit this file directly.
 //#pragma message ( "Deprecated: Please use <Uno.h>" )
 #include <Uno.h>

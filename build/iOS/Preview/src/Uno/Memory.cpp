@@ -1,20 +1,15 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/backends/cplusplus/Uno/Memory.cpp'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/backends/cplusplus/Uno/Memory.cpp.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Uno/_internal.h>
 #include <Uno/Support.h>
 #include <uBase/Atomic.h>
-#include <uBase/Console.h>
-#include <uBase/BaseLib.h>
-#include <uBase/Exception.h>
 #include <uBase/HashMap.h>
-#include <uBase/Thread.h>
 #include <uBase/String.h>
 #include <uBase/StringBuilder.h>
 #include <uBase/Thread.h>
 #include <uBase/Traits.h>
 #include <uBase/Unicode.h>
-#include <XliPlatform/MessageBox.h>
 #include <Uno.Type.h>
 #include <Uno.String.h>
 
@@ -39,13 +34,6 @@ void uInitObjectModel();
 void uFreeObjectModel();
 void uInitSupport();
 void uFreeSupport();
-
-void uFatal(const char* src, const char* msg)
-{
-    uBase::Error->WriteFormat("Runtime Error: %s: %s\n", src ? src : "(unknown)", msg ? msg : "(no message)");
-    Xli::MessageBox::Show(NULL, "The application has crashed.", "Fatal Error", Xli::DialogButtonsOK, Xli::DialogHintsError);
-    exit(1);
-}
 
 static uThreadData* uGetThreadData()
 {
@@ -138,7 +126,10 @@ uStackFrame::uStackFrame(const char* type, const char* function)
 
 uStackFrame::~uStackFrame()
 {
-    uCallStackFrame* frame = _thread->CallStackPtr--;
+#ifdef DEBUG_UNSAFE
+    uCallStackFrame* frame =
+#endif
+    _thread->CallStackPtr--;
 #ifdef DEBUG_UNSAFE
     frame->Type = NULL;
     frame->Function = NULL;
@@ -214,7 +205,8 @@ static void uPopAutoReleasePool(uThreadData* thread)
     }
 
 #if DEBUG_ARC >= 1
-    uBase::Error->WriteFormat("--- Alloc'd %d objects (%d bytes), Free'd %d objects (%d bytes) ---\n", frame->AllocCount, frame->AllocSize, frame->FreeCount, frame->FreeSize);
+    U_LOG("--- Alloc'd %d objects (%d bytes), Free'd %d objects (%d bytes) ---",
+          frame->AllocCount, frame->AllocSize, frame->FreeCount, frame->FreeSize);
 #endif
     thread->AutoReleaseList.Resize(frame->StartIndex);
     thread->AutoReleasePtr--;
@@ -269,12 +261,14 @@ void uAutoRelease(uObject* object)
         int retainCount = object->__retains - releaseCount;
         if (retainCount < 0)
         {
-            uBase::Error->WriteFormat("*** BAD AUTORELEASE: %s #%d (%d bytes, %d retains) ***%s\n", object->__type->FullName, object->__id, object->__size, retainCount, uGetCaller().Ptr());
+            U_LOG("*** BAD AUTORELEASE: %s #%d (%d bytes, %d retains) ***%s",
+                  object->__type->FullName, object->__id, object->__size, retainCount, uGetCaller().Ptr());
             U_FATAL();
         }
 #endif
 #if DEBUG_ARC >= 4
-        uBase::Error->WriteFormat("autorelease %s #%d (%d bytes, %d retains)%s\n", object->__type->FullName, object->__id, object->__size, object->__retains, uGetCaller().Ptr());
+        U_LOG("autorelease %s #%d (%d bytes, %d retains)%s",
+              object->__type->FullName, object->__id, object->__size, object->__retains, uGetCaller().Ptr());
 #endif
     }
 }
@@ -282,7 +276,7 @@ void uAutoRelease(uObject* object)
 void uRetainStruct(uType* type, void* address)
 {
 #if DEBUG_ARC >= 4
-    uBase::Error->WriteFormat("retain %s [struct] (%d bytes)%s\n", type->FullName, type->ValueSize, uGetCaller().Ptr());
+    U_LOG("retain %s [struct] (%d bytes)%s", type->FullName, type->ValueSize, uGetCaller().Ptr());
 #endif
     for (size_t i = 0; i < type->Refs.StrongCount; i++)
         uRetain(*(uObject**)((uint8_t*)address + type->Refs.Strong[i]));
@@ -291,7 +285,7 @@ void uRetainStruct(uType* type, void* address)
 void uReleaseStruct(uType* type, void* address)
 {
 #if DEBUG_ARC >= 4
-    uBase::Error->WriteFormat("release %s [struct] (%d bytes)%s\n", type->FullName, type->ValueSize, uGetCaller().Ptr());
+    U_LOG("release %s [struct] (%d bytes)%s", type->FullName, type->ValueSize, uGetCaller().Ptr());
 #endif
     for (size_t i = 0; i < type->Refs.StrongCount; i++)
     {
@@ -307,7 +301,7 @@ void uReleaseStruct(uType* type, void* address)
 void uAutoReleaseStruct(uType* type, void* address)
 {
 #if DEBUG_ARC >= 4
-    uBase::Error->WriteFormat("autorelease %s [struct] (%d bytes)%s\n", type->FullName, type->ValueSize, uGetCaller().Ptr());
+    U_LOG("autorelease %s [struct] (%d bytes)%s", type->FullName, type->ValueSize, uGetCaller().Ptr());
 #endif
     for (size_t i = 0; i < type->Refs.StrongCount; i++)
         uAutoRelease(*(uObject**)((uint8_t*)address + type->Refs.Strong[i]));
@@ -319,7 +313,8 @@ void uRetain(uObject* object)
     {
         uBase::AtomicIncrement(&object->__retains);
 #if DEBUG_ARC >= 3
-        uBase::Error->WriteFormat("retain %s #%d (%d bytes, %d retains)%s\n", object->__type->FullName, object->__id, object->__size, object->__retains, uGetCaller().Ptr());
+        U_LOG("retain %s #%d (%d bytes, %d retains)%s",
+              object->__type->FullName, object->__id, object->__size, object->__retains, uGetCaller().Ptr());
 #endif
     }
 }
@@ -357,7 +352,7 @@ void uRelease(uObject* object)
                     if (baseType->fp_Finalize)
                     {
                         try { (*baseType->fp_Finalize)(object); }
-                        catch (...) { uBase::Error->WriteFormat("Runtime Error: Unhandled exception in finalizer for %s\n", baseType->FullName); }
+                        catch (...) { uLog(uLogLevelError, "Runtime Error: Unhandled exception in finalizer for %s", baseType->FullName); }
                     }
                 } while ((baseType = baseType->Base));
                 uReleaseStruct(type, object);
@@ -416,7 +411,8 @@ void uRelease(uObject* object)
                 uBase::DeleteCond(object->__condptr);
 
 #if DEBUG_ARC >= 2
-            uBase::Error->WriteFormat("free %s #%d (%d bytes)%s\n", object->__type->FullName, object->__id, object->__size, uGetCaller().Ptr());
+            U_LOG("free %s #%d (%d bytes)%s",
+                  object->__type->FullName, object->__id, object->__size, uGetCaller().Ptr());
 #endif
 #ifdef DEBUG_DUMPS
             uEnterCritical();
@@ -431,16 +427,18 @@ void uRelease(uObject* object)
         if (object->__retains < 0)
         {
 #if DEBUG_ARC >= 4
-            uBase::Error->WriteFormat("*** BAD OBJECT: %s #%d (%d retains) ***%s\n", object->__type->FullName, object->__id, object->__retains, uGetCaller().Ptr());
+            U_LOG("*** BAD OBJECT: %s #%d (%d retains) ***%s",
+                  object->__type->FullName, object->__id, object->__retains, uGetCaller().Ptr());
 #else
-            uBase::Error->WriteFormat("*** BAD OBJECT: 0x%llx ***\n", (uintptr_t)object);
+            U_LOG("*** BAD OBJECT: 0x%llx ***", (uintptr_t)object);
 #endif
             U_FATAL();
         }
         else
         {
 #if DEBUG_ARC >= 3
-            uBase::Error->WriteFormat("release %s #%d (%d bytes, %d retains)%s\n", object->__type->FullName, object->__id, object->__size, object->__retains, uGetCaller().Ptr());
+            U_LOG("release %s #%d (%d bytes, %d retains)%s",
+                  object->__type->FullName, object->__id, object->__size, object->__retains, uGetCaller().Ptr());
 #endif
         }
     }
@@ -783,7 +781,7 @@ static uObject* uInitObject(uType* type, void* ptr, size_t size)
 #endif
 
 #if DEBUG_ARC >= 2
-    uBase::Error->WriteFormat("alloc %s #%d (%d bytes)%s\n", type->FullName, object->__id, size, uGetCaller().Ptr());
+    U_LOG("alloc %s #%d (%d bytes)%s", type->FullName, object->__id, size, uGetCaller().Ptr());
 #endif
 
 #ifdef DEBUG_DUMPS
@@ -868,7 +866,7 @@ uString* uString::New(int length)
 //        if (type->fp_Finalize)
 //        {
 //            try { (*type->fp_Finalize)(object); }
-//            catch (...) { uBase::Error->WriteFormat("Runtime Error: Unhandled exception in finalizer for %s\n", type->FullName); }
+//            catch (...) { uLog(uLogLevelError, "Runtime Error: Unhandled exception in finalizer for %s", type->FullName); }
 //        }
 //    }
 //    while (type = type->Base);
@@ -888,7 +886,7 @@ uString* uString::New(int length)
 //#endif
 //
 //#if DEBUG_ARC >= 2
-//    uBase::Error->WriteFormat("Garbage collected %s (%d bytes)\n", object->__type->FullName, object->__size);
+//    U_LOG("Garbage collected %s (%d bytes)", object->__type->FullName, object->__size);
 //#endif
 //
 //#ifdef DEBUG_DUMPS

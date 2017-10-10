@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Threading/1.0.13/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Uno.Threading/1.2.2/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{
 namespace Uno{
 namespace Threading{
 
-// public class Promise<T> :750
+// public class Promise<T> :749
 // {
 ::g::Uno::Threading::Future_type* Promise_typeof();
 void Promise__ctor_3_fn(Promise* __this);

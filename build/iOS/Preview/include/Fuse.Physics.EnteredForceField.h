@@ -1,13 +1,13 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Physics/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Physics/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBase-d3bd6f2e.h>
-#include <Fuse.Animations.IUnwr-594abe9.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h>
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
 #include <Fuse.Binding.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
-#include <Fuse.Physics.ForceFie-91943ec1.h>
+#include <Fuse.Physics.ForceFieldEventTrigger.h>
 #include <Fuse.Scripting.IScriptObject.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>

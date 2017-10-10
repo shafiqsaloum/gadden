@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,26 +10,27 @@
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
 #include <Fuse.IRenderViewport.h>
+#include <Fuse.ITemplateSource.h>
 #include <Fuse.IViewport.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
 #include <Uno.Float4x4.h>
-#include <Uno.Runtime.Implement-476e2792.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
 #include <Uno.UX.IPropertyListener.h>
 namespace g{namespace Fuse{namespace Elements{struct Viewport;}}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct FastMatrix;}}
 namespace g{namespace Fuse{struct FrustumViewport;}}
 namespace g{namespace Fuse{struct LayoutParams;}}
+namespace g{namespace Fuse{struct Ray;}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Fuse{struct VisualBounds;}}
-namespace g{namespace Uno{namespace Geometry{struct Ray;}}}
 namespace g{namespace Uno{namespace Graphics{struct VertexBuffer;}}}
 namespace g{namespace Uno{struct Float2;}}
 namespace g{namespace Uno{struct Float3;}}
@@ -38,13 +39,13 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// public sealed class Viewport :573
+// public sealed class Viewport :583
 // {
 struct Viewport_type : ::g::Fuse::Elements::Element_type
 {
-    ::g::Fuse::IViewport interface15;
-    ::g::Fuse::IRenderViewport interface16;
-    ::g::Fuse::ICommonViewport interface17;
+    ::g::Fuse::IViewport interface16;
+    ::g::Fuse::IRenderViewport interface17;
+    ::g::Fuse::ICommonViewport interface18;
 };
 
 Viewport_type* Viewport_typeof();
@@ -83,14 +84,14 @@ void Viewport__get_PerspectiveRelativeTo_fn(Viewport* __this, int* __retval);
 void Viewport__set_PerspectiveRelativeTo_fn(Viewport* __this, int* value);
 void Viewport__get_PixelSize_fn(Viewport* __this, ::g::Uno::Float2* __retval);
 void Viewport__get_PixelsPerPoint_fn(Viewport* __this, float* __retval);
-void Viewport__PointToWorldRay_fn(Viewport* __this, ::g::Uno::Float2* pointPos, ::g::Uno::Geometry::Ray* __retval);
+void Viewport__PointToWorldRay_fn(Viewport* __this, ::g::Uno::Float2* pointPos, ::g::Fuse::Ray* __retval);
 void Viewport__get_RootVisual_fn(Viewport* __this, ::g::Fuse::Visual** __retval);
 void Viewport__set_RootVisual_fn(Viewport* __this, ::g::Fuse::Visual* value);
 void Viewport__get_Size_fn(Viewport* __this, ::g::Uno::Float2* __retval);
 void Viewport__UpdateFrustum_fn(Viewport* __this);
 void Viewport__UpdatePerspective_fn(Viewport* __this);
 void Viewport__get_ViewTransform_fn(Viewport* __this, ::g::Uno::Float4x4* __retval);
-void Viewport__WorldToLocalRay_fn(Viewport* __this, uObject* world, ::g::Uno::Geometry::Ray* worldRay, ::g::Fuse::Visual* where, ::g::Uno::Geometry::Ray* __retval);
+void Viewport__WorldToLocalRay_fn(Viewport* __this, uObject* world, ::g::Fuse::Ray* worldRay, ::g::Fuse::Visual* where, ::g::Fuse::Ray* __retval);
 
 struct Viewport : ::g::Fuse::Elements::Element
 {
@@ -130,14 +131,14 @@ struct Viewport : ::g::Fuse::Elements::Element
     void PerspectiveRelativeTo(int value);
     ::g::Uno::Float2 PixelSize();
     float PixelsPerPoint();
-    ::g::Uno::Geometry::Ray PointToWorldRay(::g::Uno::Float2 pointPos);
+    ::g::Fuse::Ray PointToWorldRay(::g::Uno::Float2 pointPos);
     ::g::Fuse::Visual* RootVisual();
     void RootVisual(::g::Fuse::Visual* value);
     ::g::Uno::Float2 Size();
     void UpdateFrustum();
     void UpdatePerspective();
     ::g::Uno::Float4x4 ViewTransform();
-    ::g::Uno::Geometry::Ray WorldToLocalRay(uObject* world, ::g::Uno::Geometry::Ray worldRay, ::g::Fuse::Visual* where);
+    ::g::Fuse::Ray WorldToLocalRay(uObject* world, ::g::Fuse::Ray worldRay, ::g::Fuse::Visual* where);
     static Viewport* New2();
 };
 // }

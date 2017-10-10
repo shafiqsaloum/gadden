@@ -1,14 +1,14 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.iOS.TextRenderer/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.iOS.TextRenderer/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.Native.-6a21b22.h>
+#include <Fuse.Controls.Native.iOS.FontCache.h>
 #include <Fuse.Controls.TextAlignment.h>
 #include <Fuse.Controls.TextControl.h>
 #include <Fuse.Controls.TextTruncation.h>
 #include <Fuse.Controls.TextWrapping.h>
 #include <Fuse.Font.h>
 #include <Fuse.ICommonViewport.h>
-#include <Fuse.Internal.FontFac-589fc2ef.h>
+#include <Fuse.Internal.FontFaceDescriptor.h>
 #include <Fuse.iOS.Bindings.TextLayout.h>
 #include <Fuse.IViewport.h>
 #include <Fuse.Visual.h>

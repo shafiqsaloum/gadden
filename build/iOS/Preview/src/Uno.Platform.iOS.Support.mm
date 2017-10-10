@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/platform/ios/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/platform/ios/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <CoreGraphics/CoreGraphics.h>

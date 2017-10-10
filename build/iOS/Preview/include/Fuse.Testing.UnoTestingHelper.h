@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Testing/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{
 namespace Fuse{
 namespace Testing{
 
-// public sealed class UnoTestingHelper :12
+// public sealed class UnoTestingHelper :19
 // {
 ::g::Fuse::Scripting::NativeModule_type* UnoTestingHelper_typeof();
 void UnoTestingHelper__ctor_2_fn(UnoTestingHelper* __this);

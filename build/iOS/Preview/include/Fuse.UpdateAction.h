@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace Fuse{struct UpdateAction;}}
 namespace g{
 namespace Fuse{
 
-// internal struct UpdateAction :3150
+// internal struct UpdateAction :3514
 // {
 uStructType* UpdateAction_typeof();
 

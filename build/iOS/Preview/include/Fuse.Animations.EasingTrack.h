@@ -1,8 +1,8 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.Conti-d67e9f3.h>
+#include <Fuse.Animations.ContinuousTrackProvider.h>
 #include <Fuse.Animations.ITrackProvider.h>
 #include <Fuse.Animations.TrackProvider.h>
 #include <Uno.Object.h>
@@ -15,7 +15,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal sealed class EasingTrack :1257
+// internal sealed class EasingTrack :1452
 // {
 struct EasingTrack_type : uType
 {

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,7 @@ namespace g{
 namespace Fuse{
 namespace Text{
 
-// internal sealed class PositionedRun :1196
+// internal sealed class PositionedRun :1195
 // {
 uType* PositionedRun_typeof();
 void PositionedRun__ctor__fn(PositionedRun* __this, ::g::Fuse::Text::ShapedRun* shapedRun, ::g::Uno::Float2* position, ::g::Uno::Float2* measurements);

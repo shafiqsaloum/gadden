@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/FuseJS/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/FuseJS/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace FuseJS{struct Bundle__ReadClosure;}}
 namespace g{
 namespace FuseJS{
 
-// private sealed class Bundle.ReadClosure :795
+// private sealed class Bundle.ReadClosure :929
 // {
 uType* Bundle__ReadClosure_typeof();
 void Bundle__ReadClosure__ctor__fn(Bundle__ReadClosure* __this, uString* filename);

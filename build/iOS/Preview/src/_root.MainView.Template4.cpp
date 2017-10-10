@@ -1,7 +1,7 @@
-// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno.
+// This file was generated based on build/iOS/Preview/cache/ux11/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <_root.gadden_FuseCont-44c720e0.h>
+#include <_root.gadden_FuseControlsTextControl_Value_Property.h>
 #include <_root.MainView.h>
 #include <_root.MainView.Template4.h>
 #include <_root.SmallText.h>
@@ -32,9 +32,9 @@ static uType* TYPES[2];
 
 namespace g{
 
-// public partial sealed class MainView.Template4 :352
+// public partial sealed class MainView.Template4 :357
 // {
-// static Template4() :365
+// static Template4() :370
 static void MainView__Template4__cctor__fn(uType* __type)
 {
     MainView__Template4::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 0);
@@ -44,7 +44,7 @@ static void MainView__Template4__cctor__fn(uType* __type)
 static void MainView__Template4_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("Value");
-    ::STRINGS[1] = uString::Const("education");
+    ::STRINGS[1] = uString::Const("");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
     ::TYPES[1] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL);
     type->SetFields(2,
@@ -75,18 +75,18 @@ static void MainView__Template4_build(uType* type)
     return type;
 }
 
-// public Template4(MainView parent, MainView parentInstance) :356
+// public Template4(MainView parent, MainView parentInstance) :361
 void MainView__Template4__ctor_1_fn(MainView__Template4* __this, ::g::MainView* parent, ::g::MainView* parentInstance)
 {
     __this->ctor_1(parent, parentInstance);
 }
 
-// public override sealed object New() :368
+// public override sealed object New() :373
 void MainView__Template4__New1_fn(MainView__Template4* __this, uObject** __retval)
 {
     uStackFrame __("MainView.Template4", "New()");
     ::g::SmallText* __self1 = ::g::SmallText::New4();
-    ::g::Fuse::Reactive::Data* temp = ::g::Fuse::Reactive::Data::New1(::STRINGS[1/*"education"*/]);
+    ::g::Fuse::Reactive::Data* temp = ::g::Fuse::Reactive::Data::New1(::STRINGS[1/*""*/]);
     __this->__self_Value_inst1 = ::g::gadden_FuseControlsTextControl_Value_Property::New1(__self1, MainView__Template4::__selector0());
     ::g::Fuse::Reactive::ToUpper* temp1 = ::g::Fuse::Reactive::ToUpper::New1(temp);
     __this->__g_nametable1 = ::g::Uno::UX::NameTable::New1(uPtr(__this->__parent1)->__g_nametable1, MainView__Template4::__g_static_nametable1());
@@ -97,7 +97,7 @@ void MainView__Template4__New1_fn(MainView__Template4* __this, uObject** __retva
     return *__retval = __self1, void();
 }
 
-// public Template4 New(MainView parent, MainView parentInstance) :356
+// public Template4 New(MainView parent, MainView parentInstance) :361
 void MainView__Template4__New2_fn(::g::MainView* parent, ::g::MainView* parentInstance, MainView__Template4** __retval)
 {
     *__retval = MainView__Template4::New2(parent, parentInstance);
@@ -106,7 +106,7 @@ void MainView__Template4__New2_fn(::g::MainView* parent, ::g::MainView* parentIn
 uSStrong<uArray*> MainView__Template4::__g_static_nametable1_;
 ::g::Uno::UX::Selector MainView__Template4::__selector0_;
 
-// public Template4(MainView parent, MainView parentInstance) [instance] :356
+// public Template4(MainView parent, MainView parentInstance) [instance] :361
 void MainView__Template4::ctor_1(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     ctor_(NULL, false);
@@ -114,7 +114,7 @@ void MainView__Template4::ctor_1(::g::MainView* parent, ::g::MainView* parentIns
     __parentInstance1 = parentInstance;
 }
 
-// public Template4 New(MainView parent, MainView parentInstance) [static] :356
+// public Template4 New(MainView parent, MainView parentInstance) [static] :361
 MainView__Template4* MainView__Template4::New2(::g::MainView* parent, ::g::MainView* parentInstance)
 {
     MainView__Template4* obj1 = (MainView__Template4*)uNew(MainView__Template4_typeof());

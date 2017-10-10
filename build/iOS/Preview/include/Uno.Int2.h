@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{namespace Uno{struct UShort2;}}
 namespace g{
 namespace Uno{
 
-// public intrinsic struct Int2 :3596
+// public intrinsic struct Int2 :3598
 // {
 uStructType* Int2_typeof();
 void Int2__ctor__fn(Int2* __this, int* xy);
@@ -21,7 +21,7 @@ void Int2__New1_fn(int* xy, Int2* __retval);
 void Int2__New2_fn(int* x, int* y, Int2* __retval);
 void Int2__op_Addition1_fn(Int2* a, Int2* b, Int2* __retval);
 void Int2__op_Division1_fn(Int2* a, Int2* b, Int2* __retval);
-void Int2__op_Explicit_fn(::g::Uno::Float2* v, Int2* __retval);
+void Int2__op_Explicit1_fn(::g::Uno::Float2* v, Int2* __retval);
 void Int2__op_Implicit3_fn(::g::Uno::UShort2* v, Int2* __retval);
 void Int2__op_Inequality_fn(Int2* a, Int2* b, bool* __retval);
 void Int2__op_Multiply_fn(Int2* a, int* b, Int2* __retval);
@@ -45,7 +45,7 @@ Int2 Int2__New1(int xy);
 Int2 Int2__New2(int x, int y);
 Int2 Int2__op_Addition1(Int2 a, Int2 b);
 Int2 Int2__op_Division1(Int2 a, Int2 b);
-Int2 Int2__op_Explicit(::g::Uno::Float2 v);
+Int2 Int2__op_Explicit1(::g::Uno::Float2 v);
 Int2 Int2__op_Implicit3(::g::Uno::UShort2 v);
 bool Int2__op_Inequality(Int2 a, Int2 b);
 Int2 Int2__op_Multiply(Int2 a, int b);

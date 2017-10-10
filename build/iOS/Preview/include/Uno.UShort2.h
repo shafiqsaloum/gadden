@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace Uno{struct UShort2;}}
 namespace g{
 namespace Uno{
 
-// public intrinsic struct UShort2 :8541
+// public intrinsic struct UShort2 :8547
 // {
 uStructType* UShort2_typeof();
 void UShort2__ctor_1_fn(UShort2* __this, uint16_t* x, uint16_t* y);

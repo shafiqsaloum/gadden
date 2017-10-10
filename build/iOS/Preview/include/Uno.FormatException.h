@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/exceptions/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/exceptions/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{namespace Uno{struct FormatException;}}
 namespace g{
 namespace Uno{
 
-// public sealed class FormatException :192
+// public sealed class FormatException :197
 // {
 ::g::Uno::Exception_type* FormatException_typeof();
 void FormatException__ctor_3_fn(FormatException* __this, uString* message);

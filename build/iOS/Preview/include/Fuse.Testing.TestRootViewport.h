@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Testing/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Testing/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -7,6 +7,7 @@
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
 #include <Fuse.IRenderViewport.h>
+#include <Fuse.ITemplateSource.h>
 #include <Fuse.IViewport.h>
 #include <Fuse.Node.h>
 #include <Fuse.RootViewport.h>
@@ -24,11 +25,11 @@ namespace g{
 namespace Fuse{
 namespace Testing{
 
-// internal sealed class TestRootViewport :86
+// internal sealed class TestRootViewport :92
 // {
 struct TestRootViewport_type : ::g::Fuse::RootViewport_type
 {
-    ::g::Fuse::IRenderViewport interface13;
+    ::g::Fuse::IRenderViewport interface14;
 };
 
 TestRootViewport_type* TestRootViewport_typeof();

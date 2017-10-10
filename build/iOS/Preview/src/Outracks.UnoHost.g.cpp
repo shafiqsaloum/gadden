@@ -10,21 +10,21 @@
 #include <Fuse.Input.PointerEventArgs.h>
 #include <Fuse.Input.PointerMovedArgs.h>
 #include <Fuse.Input.PointerMovedHandler.h>
-#include <Fuse.Input.PointerPre-d85d5994.h>
 #include <Fuse.Input.PointerPressedArgs.h>
+#include <Fuse.Input.PointerPressedHandler.h>
 #include <Fuse.Visual.h>
 #include <Fuse.VisualEvent-2.h>
 #include <Outracks.IBinaryMessage.h>
-#include <Outracks.Simulator.Cl-49659bf2.h>
-#include <Outracks.Simulator.Cl-9b13a41f.h>
-#include <Outracks.UnoHost.Bina-58253e0.h>
-#include <Outracks.UnoHost.Empt-1009c907.h>
+#include <Outracks.Simulator.Client.Context.h>
+#include <Outracks.Simulator.Client.FakeApp.h>
+#include <Outracks.UnoHost.BinaryMessageInbox.h>
+#include <Outracks.UnoHost.EmptyDisposable.h>
 #include <Outracks.UnoHost.FusionInterop.h>
 #include <Outracks.UnoHost.HitTestQuery.h>
-#include <Outracks.UnoHost.Memb-cc89c4ad.h>
+#include <Outracks.UnoHost.MemberNotFound.h>
 #include <Outracks.UnoHost.Reflection.h>
 #include <Outracks.UnoHost.TypeNotFound.h>
-#include <Outracks.UnoHost.Unam-2f25db91.h>
+#include <Outracks.UnoHost.UnambiguousMethodNotFound.h>
 #include <Uno.Action-1.h>
 #include <Uno.Bool.h>
 #include <Uno.Collections.IList-1.h>
@@ -380,12 +380,12 @@ static void MemberNotFound_build(uType* type)
     ::STRINGS[0] = uString::Const("Member '");
     ::STRINGS[1] = uString::Const("' could not be found on object of type '");
     ::STRINGS[2] = uString::Const("'");
-    type->SetFields(3,
+    type->SetFields(4,
         ::g::Uno::String_typeof(), offsetof(::g::Outracks::UnoHost::MemberNotFound, Member), 0,
         ::g::Uno::String_typeof(), offsetof(::g::Outracks::UnoHost::MemberNotFound, Type), 0);
     type->Reflection.SetFields(2,
-        new uField("Member", 3),
-        new uField("Type", 4));
+        new uField("Member", 4),
+        new uField("Type", 5));
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)MemberNotFound__New4_fn, 0, true, type, 2, ::g::Uno::String_typeof(), ::g::Uno::String_typeof()));
 }
@@ -397,7 +397,7 @@ static void MemberNotFound_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 5;
+    options.FieldCount = 6;
     options.ObjectSize = sizeof(MemberNotFound);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Outracks.UnoHost.MemberNotFound", options);
@@ -634,10 +634,10 @@ static void TypeNotFound_build(uType* type)
 {
     ::STRINGS[3] = uString::Const("Type '");
     ::STRINGS[4] = uString::Const("' could not be found (recompile required?)");
-    type->SetFields(3,
+    type->SetFields(4,
         ::g::Uno::String_typeof(), offsetof(::g::Outracks::UnoHost::TypeNotFound, Type), 0);
     type->Reflection.SetFields(1,
-        new uField("Type", 3));
+        new uField("Type", 4));
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)TypeNotFound__New4_fn, 0, true, type, 1, ::g::Uno::String_typeof()));
 }
@@ -649,7 +649,7 @@ static void TypeNotFound_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 4;
+    options.FieldCount = 5;
     options.ObjectSize = sizeof(TypeNotFound);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Outracks.UnoHost.TypeNotFound", options);
@@ -695,12 +695,12 @@ static void UnambiguousMethodNotFound_build(uType* type)
     ::STRINGS[5] = uString::Const("Call to '");
     ::STRINGS[6] = uString::Const("' method is ambigious on object of type '");
     ::STRINGS[2] = uString::Const("'");
-    type->SetFields(3,
+    type->SetFields(4,
         ::g::Uno::String_typeof(), offsetof(::g::Outracks::UnoHost::UnambiguousMethodNotFound, Member), 0,
         ::g::Uno::String_typeof(), offsetof(::g::Outracks::UnoHost::UnambiguousMethodNotFound, Type), 0);
     type->Reflection.SetFields(2,
-        new uField("Member", 3),
-        new uField("Type", 4));
+        new uField("Member", 4),
+        new uField("Type", 5));
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)UnambiguousMethodNotFound__New4_fn, 0, true, type, 2, ::g::Uno::String_typeof(), ::g::Uno::String_typeof()));
 }
@@ -712,7 +712,7 @@ static void UnambiguousMethodNotFound_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 5;
+    options.FieldCount = 6;
     options.ObjectSize = sizeof(UnambiguousMethodNotFound);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Outracks.UnoHost.UnambiguousMethodNotFound", options);

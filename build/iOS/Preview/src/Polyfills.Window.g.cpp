@@ -16,8 +16,8 @@ namespace g{
 namespace Polyfills{
 namespace Window{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Polyfills.Window/1.0.5/$.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Polyfills.Window/1.2.1/$.uno
+// ----------------------------------------------------------
 
 // public sealed class WindowModule :12
 // {

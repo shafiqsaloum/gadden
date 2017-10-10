@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/io/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/io/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <uBase/Buffer.h>
@@ -18,7 +18,7 @@
 #include <Uno.IO.CppXliStreamHandle.h>
 #include <Uno.IO.MemoryStream.h>
 #include <Uno.IO.Stream.h>
-#include <Uno.Runtime.Implement-f781096a.h>
+#include <Uno.Runtime.Implementation.TextEncodingImpl.h>
 #include <Uno.String.h>
 #include <Uno/Support.h>
 #include <uObjC.Foreign.h>

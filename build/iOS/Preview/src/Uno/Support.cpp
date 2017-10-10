@@ -1,8 +1,6 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/backends/cplusplus/Uno/Support.cpp'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/backends/cplusplus/Uno/Support.cpp.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Uno.Byte.h>
-#include <Uno.Buffer.h>
 #include <Uno/Support.h>
 #include <uBase/Buffer.h>
 #include <uBase/Thread.h>
@@ -13,6 +11,17 @@
 #include <uImage/Png.h>
 #include <uImage/Texture.h>
 #include <XliPlatform/GL.h>
+#include <XliPlatform/MessageBox.h>
+#include <Uno.Byte.h>
+#include <Uno.Buffer.h>
+
+#if ANDROID
+#include <android/log.h>
+#elif IOS
+void uLogApple(const char* prefix, const char* format, va_list args);
+#else
+#include <cstdio>
+#endif
 
 static uBase::Mutex* _Critical;
 
@@ -24,6 +33,72 @@ void uInitSupport()
 void uFreeSupport()
 {
     uBase::DeleteMutex(_Critical);
+}
+
+// Synchronized logging
+void uLogv(int level, const char* format, va_list args)
+{
+    U_ASSERT(uLogLevelDebug == 0 &&
+             uLogLevelInformation == 1 &&
+             uLogLevelWarning == 2 &&
+             uLogLevelError == 3 &&
+             uLogLevelFatal == 4);
+
+    if (!format)
+        format = "";
+
+    if (level < 0)
+        level = 0;
+    else if (level > uLogLevelFatal)
+        level = uLogLevelFatal;
+
+#if ANDROID
+    int logs[] = {
+        ANDROID_LOG_DEBUG,  // uLogLevelDebug
+        ANDROID_LOG_INFO,   // uLogLevelInformation
+        ANDROID_LOG_WARN,   // uLogLevelWarning
+        ANDROID_LOG_ERROR,  // uLogLevelError
+        ANDROID_LOG_FATAL   // uLogLevelFatal
+    };
+    __android_log_vprint(logs[level], "gadden", format, args);
+#else
+    static const char* strings[] = {
+        "",             // uLogLevelDebug
+        "Info: ",       // uLogLevelInformation
+        "Warning: ",    // uLogLevelWarning
+        "Error: ",      // uLogLevelError
+        "Fatal: "       // uLogLevelFatal
+    };
+#if IOS
+    // Defined in ObjC file to call NSLog()
+    uLogApple(strings[level], format, args);
+#else
+    FILE* fp = level >= uLogLevelWarning
+            ? stderr
+            : stdout;
+    uBase::LockMutex(_Critical);
+    fputs(strings[level], fp);
+    vfprintf(fp, format, args);
+    fputc('\n', fp);
+    fflush(fp);
+    uBase::UnlockMutex(_Critical);
+#endif
+#endif
+}
+
+void uLog(int level, const char* format, ...)
+{
+    va_list args;
+    va_start(args, format);
+    uLogv(level, format, args);
+    va_end(args);
+}
+
+void uFatal(const char* src, const char* msg)
+{
+    uLog(uLogLevelFatal, "Runtime Error: %s: %s", src ? src : "(unknown)", msg ? msg : "(no message)");
+    Xli::MessageBox::Show(NULL, "The application has crashed.", "Fatal Error", Xli::DialogButtonsOK, Xli::DialogHintsError);
+    abort();
 }
 
 bool uEnterCriticalIfNull(void* addr)

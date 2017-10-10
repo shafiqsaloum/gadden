@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/1.0.5/ios/jetfire/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.WebSockets/1.2.1/ios/jetfire/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <ios/Jetfire/WebSocketClientObjc.h>

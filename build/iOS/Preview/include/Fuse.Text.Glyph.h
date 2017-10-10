@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Fuse{
 namespace Text{
 
-// public struct Glyph :733
+// public struct Glyph :732
 // {
 uStructType* Glyph_typeof();
 void Glyph__ctor__fn(Glyph* __this, int* fontIndex, uint32_t* index);

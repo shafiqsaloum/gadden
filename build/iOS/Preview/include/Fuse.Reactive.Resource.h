@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Expressions/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public sealed class Resource :833
+// public sealed class Resource :1647
 // {
 ::g::Fuse::Reactive::Expression_type* Resource_typeof();
 void Resource__ctor_1_fn(Resource* __this, uString* key);

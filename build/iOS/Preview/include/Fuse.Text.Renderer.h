@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -6,7 +6,7 @@
 #include <Fuse.Text.Quad.h>
 #include <Uno.IDisposable.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implement-476e2792.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
 namespace g{namespace Fuse{namespace Text{struct Font;}}}
 namespace g{namespace Fuse{namespace Text{struct GlyphAtlas;}}}
 namespace g{namespace Fuse{namespace Text{struct PositionedRun;}}}
@@ -21,7 +21,7 @@ namespace g{
 namespace Fuse{
 namespace Text{
 
-// public sealed class Renderer :1255
+// public sealed class Renderer :1254
 // {
 struct Renderer_type : uType
 {

@@ -1,12 +1,9 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Threading/1.0.13/implementation/cpp/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Uno.Threading/1.2.2/implementation/posix/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Implementation/Cpp/posix_mutex.h>
-#include <Implementation/Cpp/posix_reset_event.h>
-#include <Implementation/Cpp/posix_thread.h>
+#include <Implementation/Posix/posix_reset_event.h>
 #include <pthread.h>
-#include <unistd.h>
 #include <Uno.h>
 namespace g{namespace Uno{namespace Threading{struct PthreadHelpers;}}}
 namespace g{namespace Uno{namespace Threading{struct Thread;}}}

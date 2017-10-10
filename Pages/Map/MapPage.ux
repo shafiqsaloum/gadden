@@ -8,7 +8,7 @@ TODO:
   <JavaScript File="MapPage.js" />
 
   <!-- Sets animation between floors -->
-  <Panel ux:Name="indicator" LayoutMaster="plan3Tab" Background="Black">
+  <Panel ux:Name="indicator" LayoutMaster="plan3Tab" Background="#fff">
     <TabText Background="#fff" ZOffset="1.0">
       <Text TextColor="#000" ZOffset="2.0"/>
     </TabText>

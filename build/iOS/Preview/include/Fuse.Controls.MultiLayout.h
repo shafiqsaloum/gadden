@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -18,7 +18,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class MultiLayout :1293
+// public sealed class MultiLayout :1312
 // {
 ::g::Fuse::Node_type* MultiLayout_typeof();
 void MultiLayout__ctor_3_fn(MultiLayout* __this);

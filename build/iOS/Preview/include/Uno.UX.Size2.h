@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/ux/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/ux/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Uno{
 namespace UX{
 
-// public struct Size2 :897
+// public struct Size2 :900
 // {
 uStructType* Size2_typeof();
 void Size2__ctor__fn(Size2* __this, ::g::Uno::UX::Size* x, ::g::Uno::UX::Size* y);
@@ -22,7 +22,7 @@ void Size2__New1_fn(::g::Uno::UX::Size* x, ::g::Uno::UX::Size* y, Size2* __retva
 void Size2__op_Addition_fn(Size2* a, Size2* b, Size2* __retval);
 void Size2__op_Division1_fn(Size2* a, Size2* b, Size2* __retval);
 void Size2__op_Equality_fn(Size2* a, Size2* b, bool* __retval);
-void Size2__op_Explicit_fn(Size2* v, ::g::Uno::Float2* __retval);
+void Size2__op_Explicit1_fn(Size2* v, ::g::Uno::Float2* __retval);
 void Size2__op_Implicit1_fn(::g::Uno::Float2* unspecifiedUnitsVector, Size2* __retval);
 void Size2__op_Inequality_fn(Size2* a, Size2* b, bool* __retval);
 void Size2__op_Multiply_fn(Size2* a, float* b, Size2* __retval);
@@ -45,7 +45,7 @@ Size2 Size2__New1(::g::Uno::UX::Size x, ::g::Uno::UX::Size y);
 Size2 Size2__op_Addition(Size2 a, Size2 b);
 Size2 Size2__op_Division1(Size2 a, Size2 b);
 bool Size2__op_Equality(Size2 a, Size2 b);
-::g::Uno::Float2 Size2__op_Explicit(Size2 v);
+::g::Uno::Float2 Size2__op_Explicit1(Size2 v);
 Size2 Size2__op_Implicit1(::g::Uno::Float2 unspecifiedUnitsVector);
 bool Size2__op_Inequality(Size2 a, Size2 b);
 Size2 Size2__op_Multiply(Size2 a, float b);

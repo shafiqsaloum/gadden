@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,11 +9,12 @@
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
+#include <Fuse.ITemplateSource.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -28,6 +29,7 @@ namespace g{namespace Fuse{struct LayoutParams;}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Fuse{struct VisualBounds;}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
+namespace g{namespace Uno{struct EventArgs;}}
 namespace g{namespace Uno{struct Float2;}}
 namespace g{namespace Uno{struct Float4x4;}}
 
@@ -35,12 +37,12 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// internal sealed extern class SingleViewHost :2270
+// internal sealed extern class SingleViewHost :2285
 // {
 struct SingleViewHost_type : ::g::Fuse::Controls::Control_type
 {
-    ::g::Fuse::Elements::ITreeRenderer interface15;
-    ::g::Uno::IDisposable interface16;
+    ::g::Fuse::Elements::ITreeRenderer interface16;
+    ::g::Uno::IDisposable interface17;
 };
 
 SingleViewHost_type* SingleViewHost_typeof();
@@ -65,7 +67,7 @@ void SingleViewHost__FuseElementsITreeRendererZOrderChanged_fn(SingleViewHost* _
 void SingleViewHost__GetContentSize_fn(SingleViewHost* __this, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval);
 void SingleViewHost__New2_fn(int* initialState, ::g::Fuse::Controls::Native::ViewHandle* viewHandle, uObject* renderer, SingleViewHost** __retval);
 void SingleViewHost__OnInvalidateVisual_fn(SingleViewHost* __this);
-void SingleViewHost__OnInvalidateWorldTransform_fn(SingleViewHost* __this);
+void SingleViewHost__OnInvalidateWorldTransform_fn(SingleViewHost* __this, uObject* sender, ::g::Uno::EventArgs* args);
 void SingleViewHost__OnRooted_fn(SingleViewHost* __this);
 void SingleViewHost__OnUnrooted_fn(SingleViewHost* __this);
 void SingleViewHost__get_RenderToTexture_fn(SingleViewHost* __this, int* __retval);
@@ -90,6 +92,7 @@ struct SingleViewHost : ::g::Fuse::Controls::Control
     void ctor_5(int initialState, ::g::Fuse::Controls::Native::ViewHandle* viewHandle, uObject* renderer);
     ::g::Uno::Float4x4 CalcTransform();
     void Dispose();
+    void OnInvalidateWorldTransform(uObject* sender, ::g::Uno::EventArgs* args);
     int RenderToTexture();
     void RenderToTexture(int value);
     void SetOffscreen();

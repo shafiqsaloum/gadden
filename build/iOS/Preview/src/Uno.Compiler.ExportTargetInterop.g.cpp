@@ -1,20 +1,20 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Uno.Compiler.ExportTa-1f7bf541.h>
-#include <Uno.Compiler.ExportTa-535c540a.h>
-#include <Uno.Compiler.ExportTa-575c7de8.h>
-#include <Uno.Compiler.ExportTa-d031c56.h>
-#include <Uno.Compiler.ExportTa-e7d9de3.h>
-#include <Uno.Compiler.ExportTa-f620648.h>
+#include <Uno.Compiler.ExportTargetInterop.DontCopyStructAttribute.h>
+#include <Uno.Compiler.ExportTargetInterop.DontExportAttribute.h>
+#include <Uno.Compiler.ExportTargetInterop.OptionalAttribute.h>
+#include <Uno.Compiler.ExportTargetInterop.StaticAttribute.h>
+#include <Uno.Compiler.ExportTargetInterop.TargetSpecificImplementationAttribute.h>
+#include <Uno.Compiler.ExportTargetInterop.TargetSpecificTypeAttribute.h>
 
 namespace g{
 namespace Uno{
 namespace Compiler{
 namespace ExportTargetInterop{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/exporttargetinterop/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/compiler/exporttargetinterop/$.uno
+// -----------------------------------------------------------------------------------------
 
 // public sealed class DontCopyStructAttribute :6
 // {
@@ -66,8 +66,8 @@ DontCopyStructAttribute* DontCopyStructAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/exporttargetinterop/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/compiler/exporttargetinterop/$.uno
+// -----------------------------------------------------------------------------------------
 
 // public sealed class DontExportAttribute :17
 // {
@@ -119,10 +119,10 @@ DontExportAttribute* DontExportAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/exporttargetinterop/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/compiler/exporttargetinterop/$.uno
+// -----------------------------------------------------------------------------------------
 
-// public sealed class OptionalAttribute :114
+// public sealed class OptionalAttribute :115
 // {
 static void OptionalAttribute_build(uType* type)
 {
@@ -145,25 +145,25 @@ uType* OptionalAttribute_typeof()
     return type;
 }
 
-// public generated OptionalAttribute() :114
+// public generated OptionalAttribute() :115
 void OptionalAttribute__ctor_1_fn(OptionalAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated OptionalAttribute New() :114
+// public generated OptionalAttribute New() :115
 void OptionalAttribute__New1_fn(OptionalAttribute** __retval)
 {
     *__retval = OptionalAttribute::New1();
 }
 
-// public generated OptionalAttribute() [instance] :114
+// public generated OptionalAttribute() [instance] :115
 void OptionalAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated OptionalAttribute New() [static] :114
+// public generated OptionalAttribute New() [static] :115
 OptionalAttribute* OptionalAttribute::New1()
 {
     OptionalAttribute* obj1 = (OptionalAttribute*)uNew(OptionalAttribute_typeof());
@@ -172,10 +172,10 @@ OptionalAttribute* OptionalAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/exporttargetinterop/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/compiler/exporttargetinterop/$.uno
+// -----------------------------------------------------------------------------------------
 
-// public sealed class StaticAttribute :165
+// public sealed class StaticAttribute :166
 // {
 static void StaticAttribute_build(uType* type)
 {
@@ -198,25 +198,25 @@ uType* StaticAttribute_typeof()
     return type;
 }
 
-// public generated StaticAttribute() :165
+// public generated StaticAttribute() :166
 void StaticAttribute__ctor_1_fn(StaticAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated StaticAttribute New() :165
+// public generated StaticAttribute New() :166
 void StaticAttribute__New1_fn(StaticAttribute** __retval)
 {
     *__retval = StaticAttribute::New1();
 }
 
-// public generated StaticAttribute() [instance] :165
+// public generated StaticAttribute() [instance] :166
 void StaticAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated StaticAttribute New() [static] :165
+// public generated StaticAttribute New() [static] :166
 StaticAttribute* StaticAttribute::New1()
 {
     StaticAttribute* obj1 = (StaticAttribute*)uNew(StaticAttribute_typeof());
@@ -225,10 +225,10 @@ StaticAttribute* StaticAttribute::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/exporttargetinterop/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/compiler/exporttargetinterop/$.uno
+// -----------------------------------------------------------------------------------------
 
-// public sealed class TargetSpecificImplementationAttribute :177
+// public sealed class TargetSpecificImplementationAttribute :178
 // {
 static void TargetSpecificImplementationAttribute_build(uType* type)
 {
@@ -251,25 +251,25 @@ uType* TargetSpecificImplementationAttribute_typeof()
     return type;
 }
 
-// public generated TargetSpecificImplementationAttribute() :177
+// public generated TargetSpecificImplementationAttribute() :178
 void TargetSpecificImplementationAttribute__ctor_1_fn(TargetSpecificImplementationAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated TargetSpecificImplementationAttribute New() :177
+// public generated TargetSpecificImplementationAttribute New() :178
 void TargetSpecificImplementationAttribute__New1_fn(TargetSpecificImplementationAttribute** __retval)
 {
     *__retval = TargetSpecificImplementationAttribute::New1();
 }
 
-// public generated TargetSpecificImplementationAttribute() [instance] :177
+// public generated TargetSpecificImplementationAttribute() [instance] :178
 void TargetSpecificImplementationAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated TargetSpecificImplementationAttribute New() [static] :177
+// public generated TargetSpecificImplementationAttribute New() [static] :178
 TargetSpecificImplementationAttribute* TargetSpecificImplementationAttribute::New1()
 {
     TargetSpecificImplementationAttribute* obj1 = (TargetSpecificImplementationAttribute*)uNew(TargetSpecificImplementationAttribute_typeof());
@@ -278,10 +278,10 @@ TargetSpecificImplementationAttribute* TargetSpecificImplementationAttribute::Ne
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/compiler/exporttargetinterop/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/compiler/exporttargetinterop/$.uno
+// -----------------------------------------------------------------------------------------
 
-// public sealed class TargetSpecificTypeAttribute :189
+// public sealed class TargetSpecificTypeAttribute :190
 // {
 static void TargetSpecificTypeAttribute_build(uType* type)
 {
@@ -304,25 +304,25 @@ uType* TargetSpecificTypeAttribute_typeof()
     return type;
 }
 
-// public generated TargetSpecificTypeAttribute() :189
+// public generated TargetSpecificTypeAttribute() :190
 void TargetSpecificTypeAttribute__ctor_1_fn(TargetSpecificTypeAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated TargetSpecificTypeAttribute New() :189
+// public generated TargetSpecificTypeAttribute New() :190
 void TargetSpecificTypeAttribute__New1_fn(TargetSpecificTypeAttribute** __retval)
 {
     *__retval = TargetSpecificTypeAttribute::New1();
 }
 
-// public generated TargetSpecificTypeAttribute() [instance] :189
+// public generated TargetSpecificTypeAttribute() [instance] :190
 void TargetSpecificTypeAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated TargetSpecificTypeAttribute New() [static] :189
+// public generated TargetSpecificTypeAttribute New() [static] :190
 TargetSpecificTypeAttribute* TargetSpecificTypeAttribute::New1()
 {
     TargetSpecificTypeAttribute* obj1 = (TargetSpecificTypeAttribute*)uNew(TargetSpecificTypeAttribute_typeof());

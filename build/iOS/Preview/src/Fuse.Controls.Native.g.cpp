@@ -1,44 +1,45 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <_root.FuseControlsNat-fa0facbc.h>
-#include <Fuse.Controls.AutoCap-526a856d.h>
+#include <_root.FuseControlsNative_bundle.h>
+#include <Fuse.Controls.AutoCapitalizationHint.h>
 #include <Fuse.Controls.AutoCorrectHint.h>
-#include <Fuse.Controls.Native.-11768b55.h>
-#include <Fuse.Controls.Native.-118b98c3.h>
-#include <Fuse.Controls.Native.-145924dd.h>
-#include <Fuse.Controls.Native.-20f6897.h>
-#include <Fuse.Controls.Native.-3800373f.h>
-#include <Fuse.Controls.Native.-448e7355.h>
-#include <Fuse.Controls.Native.-48feff79.h>
-#include <Fuse.Controls.Native.-5999be91.h>
-#include <Fuse.Controls.Native.-6c93d881.h>
-#include <Fuse.Controls.Native.-737f180b.h>
-#include <Fuse.Controls.Native.-77f68bed.h>
-#include <Fuse.Controls.Native.-92d9dd5d.h>
-#include <Fuse.Controls.Native.-ae84b26e.h>
-#include <Fuse.Controls.Native.-b1307a12.h>
-#include <Fuse.Controls.Native.-b2e724e6.h>
-#include <Fuse.Controls.Native.-ba5282a0.h>
-#include <Fuse.Controls.Native.-be81896e.h>
 #include <Fuse.Controls.Native.Blitter.h>
-#include <Fuse.Controls.Native.-c578532e.h>
-#include <Fuse.Controls.Native.-d04e9e71.h>
-#include <Fuse.Controls.Native.-dcf1df13.h>
-#include <Fuse.Controls.Native.-e477fb6b.h>
-#include <Fuse.Controls.Native.-e502cdf1.h>
-#include <Fuse.Controls.Native.-eae69f6e.h>
-#include <Fuse.Controls.Native.-fbe3e9f9.h>
+#include <Fuse.Controls.Native.ICircleView.h>
+#include <Fuse.Controls.Native.IGraphicsView.h>
+#include <Fuse.Controls.Native.IImageView.h>
+#include <Fuse.Controls.Native.ILabelView.h>
 #include <Fuse.Controls.Native.ILeafView.h>
+#include <Fuse.Controls.Native.ImageHandle.h>
+#include <Fuse.Controls.Native.ImageLoader.h>
+#include <Fuse.Controls.Native.INativeViewRenderer.h>
+#include <Fuse.Controls.Native.IOffscreenRenderer.h>
+#include <Fuse.Controls.Native.IOffscreenRendererHost.h>
 #include <Fuse.Controls.Native.iOS.View.h>
+#include <Fuse.Controls.Native.IRangeView.h>
+#include <Fuse.Controls.Native.IRangeViewHost.h>
+#include <Fuse.Controls.Native.IRectangleView.h>
+#include <Fuse.Controls.Native.IScrollView.h>
+#include <Fuse.Controls.Native.IScrollViewHost.h>
+#include <Fuse.Controls.Native.IShapeView.h>
 #include <Fuse.Controls.Native.ITextEdit.h>
+#include <Fuse.Controls.Native.ITextEditHost.h>
 #include <Fuse.Controls.Native.ITextView.h>
+#include <Fuse.Controls.Native.IToggleView.h>
+#include <Fuse.Controls.Native.IToggleViewHost.h>
 #include <Fuse.Controls.Native.IView.h>
+#include <Fuse.Controls.Native.IViewGroup.h>
+#include <Fuse.Controls.Native.IViewHandleRenderer.h>
 #include <Fuse.Controls.Native.IViewHost.h>
+#include <Fuse.Controls.Native.NativeRootViewport.h>
+#include <Fuse.Controls.Native.OffscreenRendering.h>
+#include <Fuse.Controls.Native.ViewExtensions.h>
+#include <Fuse.Controls.Native.ViewHandle.h>
+#include <Fuse.Controls.Native.ViewHandle.InputMode.h>
 #include <Fuse.Controls.ScrollDirections.h>
 #include <Fuse.Controls.TextAlignment.h>
-#include <Fuse.Controls.TextInp-90db19ac.h>
-#include <Fuse.Controls.TextInp-cfb86f57.h>
+#include <Fuse.Controls.TextInputActionStyle.h>
+#include <Fuse.Controls.TextInputActionType.h>
 #include <Fuse.Controls.TextInputHint.h>
 #include <Fuse.Controls.TextTruncation.h>
 #include <Fuse.Controls.TextWrapping.h>
@@ -58,12 +59,12 @@
 #include <Uno.Graphics.BufferUsage.h>
 #include <Uno.Graphics.PolygonFace.h>
 #include <Uno.Graphics.Texture2D.h>
-#include <Uno.Graphics.VertexAt-4a875e1d.h>
+#include <Uno.Graphics.VertexAttributeType.h>
 #include <Uno.Graphics.VertexBuffer.h>
 #include <Uno.Int.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implement-6e9df330.h>
-#include <Uno.Runtime.Implement-81e7ab4c.h>
+#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
 #include <Uno.String.h>
 static uString* STRINGS[2];
 static uType* TYPES[2];
@@ -73,8 +74,8 @@ namespace Fuse{
 namespace Controls{
 namespace Native{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // internal sealed extern class Blitter :775
 // {
@@ -182,8 +183,8 @@ Blitter* Blitter::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface ICircleView :460
 // {
@@ -202,8 +203,8 @@ uInterfaceType* ICircleView_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IGraphicsView :365
 // {
@@ -220,8 +221,8 @@ uInterfaceType* IGraphicsView_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IImageView :443
 // {
@@ -239,8 +240,8 @@ uInterfaceType* IImageView_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface ILabelView :371
 // {
@@ -256,8 +257,8 @@ uInterfaceType* ILabelView_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface ILeafView :363
 // {
@@ -271,8 +272,8 @@ uInterfaceType* ILeafView_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // internal sealed extern class ImageHandle :41
 // {
@@ -397,8 +398,8 @@ ImageHandle* ImageHandle::New1(uString* name, uObject* handle)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface INativeViewRenderer :480
 // {
@@ -415,8 +416,24 @@ uInterfaceType* INativeViewRenderer_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/$.uno
+// ----------------------------------------------------
+
+// public enum ViewHandle.InputMode :5185
+uEnumType* ViewHandle__InputMode_typeof()
+{
+    static uSStrong<uEnumType*> type;
+    if (type != NULL) return type;
+
+    type = uEnumType::New("Fuse.Controls.Native.ViewHandle.InputMode", ::g::Uno::Int_typeof(), 2);
+    type->SetLiterals(
+        "Automatic", 0LL,
+        "Manual", 1LL);
+    return type;
+}
+
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IOffscreenRenderer :503
 // {
@@ -433,8 +450,8 @@ uInterfaceType* IOffscreenRenderer_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IOffscreenRendererHost :498
 // {
@@ -450,8 +467,8 @@ uInterfaceType* IOffscreenRendererHost_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IRangeView :407
 // {
@@ -467,8 +484,8 @@ uInterfaceType* IRangeView_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IRangeViewHost :412
 // {
@@ -484,8 +501,8 @@ uInterfaceType* IRangeViewHost_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IRectangleView :455
 // {
@@ -501,8 +518,8 @@ uInterfaceType* IRectangleView_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IScrollView :468
 // {
@@ -519,8 +536,8 @@ uInterfaceType* IScrollView_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IScrollViewHost :474
 // {
@@ -537,8 +554,8 @@ uInterfaceType* IScrollViewHost_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IShapeView :450
 // {
@@ -554,8 +571,8 @@ uInterfaceType* IShapeView_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface ITextEdit :417
 // {
@@ -583,8 +600,8 @@ uInterfaceType* ITextEdit_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface ITextEditHost :389
 // {
@@ -603,8 +620,8 @@ uInterfaceType* ITextEditHost_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface ITextView :376
 // {
@@ -628,8 +645,8 @@ uInterfaceType* ITextView_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IToggleView :397
 // {
@@ -645,8 +662,8 @@ uInterfaceType* IToggleView_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IToggleViewHost :402
 // {
@@ -662,8 +679,8 @@ uInterfaceType* IToggleViewHost_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IView :361
 // {
@@ -677,8 +694,8 @@ uInterfaceType* IView_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IViewGroup :434
 // {
@@ -698,8 +715,8 @@ uInterfaceType* IViewGroup_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // internal abstract extern interface IViewHandleRenderer :545
 // {
@@ -713,8 +730,8 @@ uInterfaceType* IViewHandleRenderer_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public abstract interface IViewHost :486
 // {
@@ -731,8 +748,8 @@ uInterfaceType* IViewHost_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // internal sealed extern class NativeRootViewport :818
 // {
@@ -747,12 +764,13 @@ static void NativeRootViewport_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::RootViewport_type, interface5),
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::RootViewport_type, interface6),
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(::g::Fuse::RootViewport_type, interface7),
-        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::RootViewport_type, interface8),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::RootViewport_type, interface9),
-        ::g::Fuse::IViewport_typeof(), offsetof(::g::Fuse::RootViewport_type, interface10),
-        ::g::Uno::IDisposable_typeof(), offsetof(::g::Fuse::RootViewport_type, interface11),
-        ::g::Fuse::ICommonViewport_typeof(), offsetof(::g::Fuse::RootViewport_type, interface12));
-    type->SetFields(64,
+        ::g::Fuse::ITemplateSource_typeof(), offsetof(::g::Fuse::RootViewport_type, interface8),
+        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::RootViewport_type, interface9),
+        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::RootViewport_type, interface10),
+        ::g::Fuse::IViewport_typeof(), offsetof(::g::Fuse::RootViewport_type, interface11),
+        ::g::Uno::IDisposable_typeof(), offsetof(::g::Fuse::RootViewport_type, interface12),
+        ::g::Fuse::ICommonViewport_typeof(), offsetof(::g::Fuse::RootViewport_type, interface13));
+    type->SetFields(70,
         ::g::Fuse::Controls::Native::ViewHandle_typeof(), offsetof(::g::Fuse::Controls::Native::NativeRootViewport, _rootView), 0);
 }
 
@@ -763,29 +781,30 @@ static void NativeRootViewport_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::RootViewport_typeof();
-    options.FieldCount = 65;
-    options.InterfaceCount = 13;
+    options.FieldCount = 71;
+    options.InterfaceCount = 14;
     options.ObjectSize = sizeof(NativeRootViewport);
     options.TypeSize = sizeof(::g::Fuse::RootViewport_type);
     type = (::g::Fuse::RootViewport_type*)uClassType::New("Fuse.Controls.Native.NativeRootViewport", options);
     type->fp_build_ = NativeRootViewport_build;
-    type->interface11.fp_Dispose = (void(*)(uObject*))::g::Fuse::RootViewport__UnoIDisposableDispose_fn;
-    type->interface10.fp_PointToWorldRay = (void(*)(uObject*, ::g::Uno::Float2*, ::g::Uno::Geometry::Ray*))::g::Fuse::RootViewport__PointToWorldRay_fn;
-    type->interface10.fp_WorldToLocalRay = (void(*)(uObject*, uObject*, ::g::Uno::Geometry::Ray*, ::g::Fuse::Visual*, ::g::Uno::Geometry::Ray*))::g::Fuse::RootViewport__WorldToLocalRay_fn;
-    type->interface12.fp_get_PixelsPerPoint = (void(*)(uObject*, float*))::g::Fuse::RootViewport__get_PixelsPerPoint_fn;
-    type->interface12.fp_get_Size = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::RootViewport__get_Size_fn;
-    type->interface12.fp_get_PixelSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::RootViewport__get_PixelSize_fn;
-    type->interface12.fp_get_ViewTransform = (void(*)(uObject*, ::g::Uno::Float4x4*))::g::Fuse::RootViewport__get_ViewTransform_fn;
-    type->interface8.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
-    type->interface8.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
+    type->interface12.fp_Dispose = (void(*)(uObject*))::g::Fuse::RootViewport__UnoIDisposableDispose_fn;
+    type->interface11.fp_PointToWorldRay = (void(*)(uObject*, ::g::Uno::Float2*, ::g::Fuse::Ray*))::g::Fuse::RootViewport__PointToWorldRay_fn;
+    type->interface11.fp_WorldToLocalRay = (void(*)(uObject*, uObject*, ::g::Fuse::Ray*, ::g::Fuse::Visual*, ::g::Fuse::Ray*))::g::Fuse::RootViewport__WorldToLocalRay_fn;
+    type->interface13.fp_get_PixelsPerPoint = (void(*)(uObject*, float*))::g::Fuse::RootViewport__get_PixelsPerPoint_fn;
+    type->interface13.fp_get_Size = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::RootViewport__get_Size_fn;
+    type->interface13.fp_get_PixelSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::RootViewport__get_PixelSize_fn;
+    type->interface13.fp_get_ViewTransform = (void(*)(uObject*, ::g::Uno::Float4x4*))::g::Fuse::RootViewport__get_ViewTransform_fn;
+    type->interface9.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
+    type->interface9.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
     type->interface6.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsIListFuseNodeRemoveAt_fn;
-    type->interface9.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
-    type->interface8.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
+    type->interface10.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
+    type->interface9.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
     type->interface6.fp_get_Item = (void(*)(uObject*, int*, uTRef))::g::Fuse::Visual__UnoCollectionsIListFuseNodeget_Item_fn;
     type->interface6.fp_Insert = (void(*)(uObject*, int*, void*))::g::Fuse::Visual__Insert1_fn;
     type->interface7.fp_OnPropertyChanged = (void(*)(uObject*, ::g::Uno::UX::PropertyObject*, ::g::Uno::UX::Selector*))::g::Fuse::Visual__OnPropertyChanged2_fn;
-    type->interface8.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
-    type->interface8.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
+    type->interface8.fp_FindTemplate = (void(*)(uObject*, uString*, ::g::Uno::UX::Template**))::g::Fuse::Visual__FindTemplate_fn;
+    type->interface9.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
+    type->interface9.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
     type->interface4.fp_Clear = (void(*)(uObject*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingClear_fn;
     type->interface4.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingContains_fn;
     type->interface0.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Node__UnoCollectionsIListFuseBindingRemoveAt_fn;
@@ -873,8 +892,8 @@ NativeRootViewport* NativeRootViewport::New5(::g::Fuse::Controls::Native::ViewHa
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // public enum OffscreenRendering :492
 uEnumType* OffscreenRendering_typeof()
@@ -889,8 +908,8 @@ uEnumType* OffscreenRendering_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/$.uno
-// -----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/$.uno
+// --------------------------------------------------------------
 
 // internal static extern class ViewExtensions :510
 // {

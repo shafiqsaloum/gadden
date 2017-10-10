@@ -1,13 +1,13 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Navigation/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.IBase-d3bd6f2e.h>
-#include <Fuse.Animations.IUnwr-594abe9.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h>
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
 #include <Fuse.Binding.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
-#include <Fuse.Navigation.While-943620aa.h>
+#include <Fuse.Navigation.WhileHistoryTrigger.h>
 #include <Fuse.Scripting.IScriptObject.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
@@ -18,7 +18,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public sealed class WhileCanGoBack :4892
+// public sealed class WhileCanGoBack :5329
 // {
 ::g::Fuse::Navigation::WhileHistoryTrigger_type* WhileCanGoBack_typeof();
 void WhileCanGoBack__ctor_7_fn(WhileCanGoBack* __this);

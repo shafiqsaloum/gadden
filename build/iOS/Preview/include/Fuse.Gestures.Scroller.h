@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.ScrollView/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -18,6 +18,7 @@ namespace g{namespace Fuse{namespace Controls{struct ScrollView;}}}
 namespace g{namespace Fuse{namespace Gestures{struct Scroller;}}}
 namespace g{namespace Fuse{namespace Gestures{struct SwipeGestureHelper;}}}
 namespace g{namespace Fuse{namespace Input{struct Gesture;}}}
+namespace g{namespace Fuse{namespace Input{struct GesturePriorityConfig;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerEventArgs;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerMovedArgs;}}}
 namespace g{namespace Fuse{namespace Input{struct PointerPressedArgs;}}}
@@ -48,14 +49,12 @@ void Scroller__CheckNeedUpdated_fn(Scroller* __this, bool* off);
 void Scroller__get_DelayStart_fn(Scroller* __this, bool* __retval);
 void Scroller__set_DelayStart_fn(Scroller* __this, bool* value);
 void Scroller__FromWindow_fn(Scroller* __this, ::g::Uno::Float2* p, ::g::Uno::Float2* __retval);
-void Scroller__FuseInputIGestureOnCapture_fn(Scroller* __this, ::g::Fuse::Input::PointerEventArgs* args, int* how);
+void Scroller__FuseInputIGestureOnCaptureChanged_fn(Scroller* __this, ::g::Fuse::Input::PointerEventArgs* args, int* how, int* prev);
 void Scroller__FuseInputIGestureOnLostCapture_fn(Scroller* __this, bool* forced);
 void Scroller__FuseInputIGestureOnPointerMoved_fn(Scroller* __this, ::g::Fuse::Input::PointerMovedArgs* args, int* __retval);
 void Scroller__FuseInputIGestureOnPointerPressed_fn(Scroller* __this, ::g::Fuse::Input::PointerPressedArgs* args, int* __retval);
 void Scroller__FuseInputIGestureOnPointerReleased_fn(Scroller* __this, ::g::Fuse::Input::PointerReleasedArgs* args, int* __retval);
-void Scroller__FuseInputIGestureget_Priority_fn(Scroller* __this, int* __retval);
-void Scroller__FuseInputIGestureget_PriorityAdjustment_fn(Scroller* __this, int* __retval);
-void Scroller__FuseInputIGestureget_Significance_fn(Scroller* __this, float* __retval);
+void Scroller__FuseInputIGestureget_Priority_fn(Scroller* __this, ::g::Fuse::Input::GesturePriorityConfig* __retval);
 void Scroller__Goto_fn(Scroller* __this, ::g::Uno::Float2* position);
 void Scroller__MoveUser_fn(Scroller* __this, int* flags, double* time);
 void Scroller__New2_fn(Scroller** __retval);
@@ -68,6 +67,8 @@ void Scroller__OnUpdated_fn(Scroller* __this);
 void Scroller__get_OverflowExtent_fn(Scroller* __this, ::g::Uno::Float2* __retval);
 void Scroller__PerformBringIntoView_fn(Scroller* __this);
 void Scroller__get_ScrollableUserScroll_fn(Scroller* __this, bool* __retval);
+void Scroller__StartInvalidateVisual_fn(Scroller* __this);
+void Scroller__StopInvalidateVisual_fn(Scroller* __this);
 void Scroller__UnoUXIPropertyListenerOnPropertyChanged_fn(Scroller* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Selector* sel);
 void Scroller__UpdatePointerEvents_fn(Scroller* __this, bool* forceOff);
 void Scroller__UpdateScrollMax_fn(Scroller* __this);
@@ -85,6 +86,7 @@ struct Scroller : ::g::Fuse::Behavior
     uStrong< ::g::Fuse::Visual*> _pendingBringIntoView;
     bool _pointerListening;
     ::g::Uno::Float2 _pointerPos;
+    bool _pressed;
     ::g::Uno::Float2 _prevPos;
     double _prevTime;
     uStrong<uObject*> _region;
@@ -113,6 +115,8 @@ struct Scroller : ::g::Fuse::Behavior
     ::g::Uno::Float2 OverflowExtent();
     void PerformBringIntoView();
     bool ScrollableUserScroll();
+    void StartInvalidateVisual();
+    void StopInvalidateVisual();
     void UpdatePointerEvents(bool forceOff);
     void UpdateScrollMax();
     bool UserScroll();

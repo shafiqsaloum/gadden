@@ -1,31 +1,31 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Controls.Fallbac-46e2e626.h>
-#include <Fuse.Controls.Fallbac-4e3fb76e.h>
-#include <Fuse.Controls.Fallbac-5d36af23.h>
-#include <Fuse.Controls.Fallbac-8b30b373.h>
-#include <Fuse.Controls.Fallbac-8d2cb690.h>
-#include <Fuse.Controls.Fallbac-949442c6.h>
-#include <Fuse.Controls.Fallbac-983d6c73.h>
-#include <Fuse.Controls.Fallbac-9d13b777.h>
-#include <Fuse.Controls.Fallbac-b0087bd4.h>
-#include <Fuse.Controls.Fallbac-b33b79fb.h>
-#include <Fuse.Controls.Fallbac-baae9452.h>
-#include <Fuse.Controls.Fallbac-c67e82be.h>
-#include <Fuse.Controls.Fallbac-d236bd62.h>
+#include <Fuse.Controls.FallbackTextEdit.DegreeSpan.h>
+#include <Fuse.Controls.FallbackTextEdit.LineCache.h>
+#include <Fuse.Controls.FallbackTextEdit.LineCacheLine.h>
+#include <Fuse.Controls.FallbackTextEdit.LineCachePasswordTransform.h>
+#include <Fuse.Controls.FallbackTextEdit.LineCacheTransform.h>
+#include <Fuse.Controls.FallbackTextEdit.SwipeGestureHelper.h>
+#include <Fuse.Controls.FallbackTextEdit.TextPosition.h>
+#include <Fuse.Controls.FallbackTextEdit.TextSpan.h>
+#include <Fuse.Controls.FallbackTextEdit.TextWindow.h>
+#include <Fuse.Controls.FallbackTextRenderer.DefaultTextRenderer.h>
+#include <Fuse.Controls.FallbackTextRenderer.WordWrapInfo.h>
+#include <Fuse.Controls.FallbackTextRenderer.WordWrapper.h>
+#include <Fuse.Controls.FallbackTextRenderer.WrappedLine.h>
 #include <Fuse.Controls.TextAlignment.h>
 #include <Fuse.DrawContext.h>
-#include <Fuse.Elements.Interna-632e825b.h>
+#include <Fuse.Elements.Internal.ElementDraw.h>
 #include <Fuse.Visual.h>
 #include <Fuse.VisualBounds.h>
 #include <Uno.Action.h>
 #include <Uno.Bool.h>
 #include <Uno.Char.h>
-#include <Uno.Collections.Enume-8ddd045.h>
+#include <Uno.Collections.EnumerableExtensions.h>
 #include <Uno.Collections.IEnumerable-1.h>
+#include <Uno.Collections.List-1.Enumerator.h>
 #include <Uno.Collections.List-1.h>
-#include <Uno.Collections.List--251bdc7d.h>
 #include <Uno.Delegate.h>
 #include <Uno.Float.h>
 #include <Uno.Float2.h>
@@ -42,8 +42,8 @@ namespace Fuse{
 namespace Controls{
 namespace FallbackTextEdit{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/textcontrols/fallbacktextedit/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class DegreeSpan :18
 // {
@@ -122,8 +122,8 @@ DegreeSpan* DegreeSpan::New1(float a, float b)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/textcontrols/fallbacktextedit/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class LineCache :75
 // {
@@ -913,8 +913,8 @@ LineCache* LineCache::New1(uDelegate* onTextChanged, uDelegate* invalideLayout, 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/textcontrols/fallbacktextedit/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class LineCacheLine :531
 // {
@@ -1238,8 +1238,8 @@ LineCacheLine* LineCacheLine::New1(uString* text, uObject* transform)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/textcontrols/fallbacktextedit/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class LineCachePasswordTransform :701
 // {
@@ -1336,8 +1336,8 @@ LineCachePasswordTransform* LineCachePasswordTransform::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/textcontrols/fallbacktextedit/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal abstract interface LineCacheTransform :696
 // {
@@ -1351,8 +1351,8 @@ uInterfaceType* LineCacheTransform_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/textcontrols/fallbacktextedit/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class SwipeGestureHelper :42
 // {
@@ -1429,8 +1429,8 @@ SwipeGestureHelper* SwipeGestureHelper::New1(float lengthThreshold, uArray* span
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/textcontrols/fallbacktextedit/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class TextPosition :736
 // {
@@ -1662,8 +1662,8 @@ bool TextPosition::op_LessThanOrEqual(TextPosition* a, TextPosition* b)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/textcontrols/fallbacktextedit/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class TextSpan :838
 // {
@@ -1813,8 +1813,8 @@ bool TextSpan::op_Inequality(TextSpan* a, TextSpan* b)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/textcontrols/fallbacktextedit/$.uno
-// ---------------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/textcontrols/fallbacktextedit/$.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class TextWindow :912
 // {
@@ -1829,14 +1829,15 @@ static void TextWindow_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Elements::Element_type, interface5),
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Elements::Element_type, interface6),
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface7),
-        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Elements::Element_type, interface8),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Elements::Element_type, interface9),
-        ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface10),
-        ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface11),
-        ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface12),
-        ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface13),
-        ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface14));
-    type->SetFields(90,
+        ::g::Fuse::ITemplateSource_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface8),
+        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Elements::Element_type, interface9),
+        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Elements::Element_type, interface10),
+        ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface11),
+        ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface12),
+        ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface13),
+        ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface14),
+        ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Elements::Element_type, interface15));
+    type->SetFields(96,
         ::g::Fuse::Controls::FallbackTextEdit::LineCache_typeof(), offsetof(::g::Fuse::Controls::FallbackTextEdit::TextWindow, _lineCache), 0,
         ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Controls::FallbackTextEdit::TextWindow, _maxTextLength), 0,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Controls::FallbackTextEdit::TextWindow, _offset), 0,
@@ -1855,32 +1856,33 @@ static void TextWindow_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Elements::Element_typeof();
-    options.FieldCount = 99;
-    options.InterfaceCount = 15;
+    options.FieldCount = 105;
+    options.InterfaceCount = 16;
     options.ObjectSize = sizeof(TextWindow);
     options.TypeSize = sizeof(::g::Fuse::Elements::Element_type);
     type = (::g::Fuse::Elements::Element_type*)uClassType::New("Fuse.Controls.FallbackTextEdit.TextWindow", options);
     type->fp_build_ = TextWindow_build;
     type->fp_CalcRenderBounds = (void(*)(::g::Fuse::Elements::Element*, ::g::Fuse::VisualBounds**))TextWindow__CalcRenderBounds_fn;
     type->fp_OnDraw = (void(*)(::g::Fuse::Elements::Element*, ::g::Fuse::DrawContext*))TextWindow__OnDraw_fn;
-    type->interface10.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
-    type->interface12.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
-    type->interface11.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;
-    type->interface14.fp_SetSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Elements::Element__FuseAnimationsIResizeSetSize_fn;
-    type->interface13.fp_get_ActualSize = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualSize_fn;
-    type->interface13.fp_get_ActualPosition = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualPosition_fn;
-    type->interface13.fp_add_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__add_Placed_fn;
-    type->interface13.fp_remove_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__remove_Placed_fn;
-    type->interface8.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
-    type->interface8.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
+    type->interface11.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
+    type->interface13.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
+    type->interface12.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;
+    type->interface15.fp_SetSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Elements::Element__FuseAnimationsIResizeSetSize_fn;
+    type->interface14.fp_get_ActualSize = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualSize_fn;
+    type->interface14.fp_get_ActualPosition = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualPosition_fn;
+    type->interface14.fp_add_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__add_Placed_fn;
+    type->interface14.fp_remove_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__remove_Placed_fn;
+    type->interface9.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
+    type->interface9.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
     type->interface6.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsIListFuseNodeRemoveAt_fn;
-    type->interface9.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
-    type->interface8.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
+    type->interface10.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
+    type->interface9.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
     type->interface6.fp_get_Item = (void(*)(uObject*, int*, uTRef))::g::Fuse::Visual__UnoCollectionsIListFuseNodeget_Item_fn;
     type->interface6.fp_Insert = (void(*)(uObject*, int*, void*))::g::Fuse::Visual__Insert1_fn;
     type->interface7.fp_OnPropertyChanged = (void(*)(uObject*, ::g::Uno::UX::PropertyObject*, ::g::Uno::UX::Selector*))::g::Fuse::Visual__OnPropertyChanged2_fn;
-    type->interface8.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
-    type->interface8.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
+    type->interface8.fp_FindTemplate = (void(*)(uObject*, uString*, ::g::Uno::UX::Template**))::g::Fuse::Visual__FindTemplate_fn;
+    type->interface9.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
+    type->interface9.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
     type->interface4.fp_Clear = (void(*)(uObject*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingClear_fn;
     type->interface4.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingContains_fn;
     type->interface0.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Node__UnoCollectionsIListFuseBindingRemoveAt_fn;
@@ -1978,7 +1980,6 @@ void TextWindow__OnDraw_fn(TextWindow* __this, ::g::Fuse::DrawContext* dc)
 // public TextWindow(Fuse.Visual parent, Fuse.Controls.FallbackTextEdit.LineCache lineCache) [instance] :916
 void TextWindow::ctor_4(::g::Fuse::Visual* parent, ::g::Fuse::Controls::FallbackTextEdit::LineCache* lineCache)
 {
-    uStackFrame __("Fuse.Controls.FallbackTextEdit.TextWindow", ".ctor(Fuse.Visual,Fuse.Controls.FallbackTextEdit.LineCache)");
     ctor_3();
     _lineCache = lineCache;
     ClipToBounds(true);

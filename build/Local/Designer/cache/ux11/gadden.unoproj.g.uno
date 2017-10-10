@@ -138,6 +138,14 @@ sealed class gadden_FuseControlsImage_Color_Property: Uno.UX.Property<float4>
     public override float4 Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.Image)obj).Color; }
     public override void Set(global::Uno.UX.PropertyObject obj, float4 v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.Image)obj).Color = v; }
 }
+sealed class gadden_FuseAnimationsChangefloat4_Value_Property: Uno.UX.Property<float4>
+{
+    [Uno.WeakReference] readonly Fuse.Animations.Change<float4> _obj;
+    public gadden_FuseAnimationsChangefloat4_Value_Property(Fuse.Animations.Change<float4> obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override float4 Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Animations.Change<float4>)obj).Value; }
+    public override void Set(global::Uno.UX.PropertyObject obj, float4 v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Animations.Change<float4>)obj).Value = v; }
+}
 sealed class gadden_FuseControlsShape_Color_Property: Uno.UX.Property<float4>
 {
     [Uno.WeakReference] readonly Fuse.Controls.Shape _obj;

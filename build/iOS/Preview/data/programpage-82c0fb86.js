@@ -17,13 +17,20 @@ function programClicked(args) {
 	selectedProgram.value = args.data;
 };
 
-fetch("http://dev.jexpo.se/dev/events/ws:2017?getAttributes=true")
+fetch("http://p17.jexpo.se/gadden/events/ws:2017?getAttributes=true")
 .then(function(response) { return response.json(); })
 .then(function(responseObject) {
     var items = [];
     responseObject.results.forEach(function(r) {
         items.push(new Program(r));
     });
+    items.sort((x, y)=>{
+      return new Date(
+        x.date
+      ).getTime() > new Date(
+        y.date
+      ).getTime()
+    })
     program.replaceAll(items);
     debug_log("data: " + JSON.stringify(data));
 }).catch(function(e) {

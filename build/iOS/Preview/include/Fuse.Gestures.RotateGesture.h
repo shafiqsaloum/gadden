@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Gestures/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -17,7 +17,7 @@ namespace g{
 namespace Fuse{
 namespace Gestures{
 
-// public sealed class RotateGesture :852
+// public sealed class RotateGesture :851
 // {
 ::g::Fuse::Gestures::TransformGesture_type* RotateGesture_typeof();
 void RotateGesture__ctor_4_fn(RotateGesture* __this, ::g::Fuse::Elements::InteractiveTransform* target);

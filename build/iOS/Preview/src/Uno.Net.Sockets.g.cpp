@@ -9,7 +9,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <Uno.ArgumentException.h>
-#include <Uno.ArgumentOutOfRang-6803b39e.h>
+#include <Uno.ArgumentOutOfRangeException.h>
 #include <Uno.Bool.h>
 #include <Uno.Byte.h>
 #include <Uno.Exception.h>
@@ -24,9 +24,9 @@
 #include <Uno.Net.Sockets.NetworkStream.h>
 #include <Uno.Net.Sockets.ProtocolType.h>
 #include <Uno.Net.Sockets.SelectMode.h>
-#include <Uno.Net.Sockets.Socke-432e1b25.h>
-#include <Uno.Net.Sockets.Socke-b77e7003.h>
 #include <Uno.Net.Sockets.Socket.h>
+#include <Uno.Net.Sockets.Socket.SocketHandle.h>
+#include <Uno.Net.Sockets.SocketException.h>
 #include <Uno.Net.Sockets.SocketFlags.h>
 #include <Uno.Net.Sockets.SocketHelpers.h>
 #include <Uno.Net.Sockets.SocketShutdown.h>
@@ -40,8 +40,8 @@ namespace Uno{
 namespace Net{
 namespace Sockets{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.2.2/$.uno
+// ---------------------------------------------------------
 
 // public enum AddressFamily :592
 uEnumType* AddressFamily_typeof()
@@ -56,8 +56,8 @@ uEnumType* AddressFamily_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.2.2/$.uno
+// ---------------------------------------------------------
 
 // public sealed class NetworkStream :515
 // {
@@ -200,8 +200,8 @@ NetworkStream* NetworkStream::New1(::g::Uno::Net::Sockets::Socket* socket)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.2.2/$.uno
+// ---------------------------------------------------------
 
 // public enum ProtocolType :605
 uEnumType* ProtocolType_typeof()
@@ -215,8 +215,8 @@ uEnumType* ProtocolType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.2.2/$.uno
+// ---------------------------------------------------------
 
 // public enum SelectMode :611
 uEnumType* SelectMode_typeof()
@@ -232,8 +232,8 @@ uEnumType* SelectMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.2.2/$.uno
+// ---------------------------------------------------------
 
 // public sealed class Socket :844
 // {
@@ -494,14 +494,14 @@ Socket* Socket::New1(int addressFamily, int socketType, int protocolType)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.2.2/$.uno
+// ---------------------------------------------------------
 
 // public sealed class SocketException :1128
 // {
 static void SocketException_build(uType* type)
 {
-    type->SetFields(3);
+    type->SetFields(4);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)SocketException__New4_fn, 0, true, type, 1, ::g::Uno::String_typeof()));
 }
@@ -513,7 +513,7 @@ static void SocketException_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 3;
+    options.FieldCount = 4;
     options.ObjectSize = sizeof(SocketException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.Net.Sockets.SocketException", options);
@@ -548,8 +548,8 @@ SocketException* SocketException::New4(uString* message)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.2.2/$.uno
+// ---------------------------------------------------------
 
 // public enum SocketFlags :628
 uEnumType* SocketFlags_typeof()
@@ -563,8 +563,8 @@ uEnumType* SocketFlags_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.2.2/$.uno
+// ---------------------------------------------------------
 
 // internal extern struct Socket.SocketHandle :851
 // {
@@ -586,8 +586,8 @@ uStructType* Socket__SocketHandle_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.2.2/$.uno
+// ---------------------------------------------------------
 
 // internal sealed extern class SocketHelpers :639
 // {
@@ -810,8 +810,8 @@ int SocketHelpers::Shutdown(int sock, int how)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.2.2/$.uno
+// ---------------------------------------------------------
 
 // public enum SocketShutdown :619
 uEnumType* SocketShutdown_typeof()
@@ -827,8 +827,8 @@ uEnumType* SocketShutdown_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Sockets/1.0.13/$.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.2.2/$.uno
+// ---------------------------------------------------------
 
 // public enum SocketType :599
 uEnumType* SocketType_typeof()

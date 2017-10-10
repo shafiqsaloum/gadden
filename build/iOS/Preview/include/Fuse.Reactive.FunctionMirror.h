@@ -1,10 +1,10 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.JavaScript/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Reactive.JavaScript/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.IRaw.h>
+#include <Fuse.Reactive.DiagnosticSubject.h>
 #include <Fuse.Reactive.IEventHandler.h>
-#include <Fuse.Reactive.JavaScr-a102336.h>
 namespace g{namespace Fuse{namespace Reactive{struct FunctionMirror;}}}
 namespace g{namespace Fuse{namespace Scripting{struct Function;}}}
 
@@ -12,7 +12,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// internal sealed class FunctionMirror :164
+// internal sealed class FunctionMirror :191
 // {
 struct FunctionMirror_type : uType
 {
@@ -26,7 +26,7 @@ void FunctionMirror__Dispatch_fn(FunctionMirror* __this, uObject* e);
 void FunctionMirror__New2_fn(::g::Fuse::Scripting::Function* func, FunctionMirror** __retval);
 void FunctionMirror__get_Raw_fn(FunctionMirror* __this, uObject** __retval);
 
-struct FunctionMirror : ::g::Fuse::Reactive::JavaScript__DiagnosticSubject
+struct FunctionMirror : ::g::Fuse::Reactive::DiagnosticSubject
 {
     uStrong< ::g::Fuse::Scripting::Function*> _func;
 

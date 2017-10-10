@@ -1,7 +1,8 @@
-// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno.
+// This file was generated based on build/iOS/Preview/cache/ux11/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
+#include <Uno.Float4.h>
 #include <Uno.UX.Template.h>
 namespace g{namespace Uno{namespace UX{struct NameTable;}}}
 namespace g{namespace Uno{namespace UX{struct Property1;}}}
@@ -11,7 +12,7 @@ namespace g{struct MainView__Template3;}
 
 namespace g{
 
-// public partial sealed class MainView.Template3 :320
+// public partial sealed class MainView.Template3 :230
 // {
 ::g::Uno::UX::Template_type* MainView__Template3_typeof();
 void MainView__Template3__ctor_1_fn(MainView__Template3* __this, ::g::MainView* parent, ::g::MainView* parentInstance);
@@ -27,7 +28,21 @@ struct MainView__Template3 : ::g::Uno::UX::Template
     uWeak< ::g::MainView*> __parentInstance1;
     static ::g::Uno::UX::Selector __selector0_;
     static ::g::Uno::UX::Selector& __selector0() { return MainView__Template3_typeof()->Init(), __selector0_; }
-    uStrong< ::g::Uno::UX::Property1*> __self_Value_inst1;
+    static ::g::Uno::UX::Selector __selector1_;
+    static ::g::Uno::UX::Selector& __selector1() { return MainView__Template3_typeof()->Init(), __selector1_; }
+    static ::g::Uno::UX::Selector __selector2_;
+    static ::g::Uno::UX::Selector& __selector2() { return MainView__Template3_typeof()->Init(), __selector2_; }
+    static ::g::Uno::UX::Selector __selector3_;
+    static ::g::Uno::UX::Selector& __selector3() { return MainView__Template3_typeof()->Init(), __selector3_; }
+    static ::g::Uno::UX::Selector __selector4_;
+    static ::g::Uno::UX::Selector& __selector4() { return MainView__Template3_typeof()->Init(), __selector4_; }
+    static ::g::Uno::UX::Selector __selector5_;
+    static ::g::Uno::UX::Selector& __selector5() { return MainView__Template3_typeof()->Init(), __selector5_; }
+    uStrong< ::g::Uno::UX::Property1*> ExhibitorDetails_Visibility_inst;
+    uStrong< ::g::Uno::UX::Property1*> ExibitorList_Visibility_inst;
+    uStrong< ::g::Uno::UX::Property1*> starImage_Color_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp1_Value_inst;
 
     void ctor_1(::g::MainView* parent, ::g::MainView* parentInstance);
     static MainView__Template3* New2(::g::MainView* parent, ::g::MainView* parentInstance);

@@ -5,8 +5,8 @@ var selectedLecture = Observable();
 
 function Article(item) {
     this.title = item.title;
-    this.image = item.image.url;
-    this.text = item.text;
+    this.image = '';
+    this.text = item.content;
 };
 // Collects data from cliked article
 function articleClicked(args) {
@@ -19,11 +19,13 @@ function goToEvent(args) {
 	selectedProgram.value = args.data;
 };
 
-fetch("https://dev.jexpo.se/dev/forms/ws:news?getAttributes=1")
-.then(function(response) { return response.json(); })
-.then(function(responseObject) {
+fetch("https://p17.jexpo.se/gadden/forms/ws:news?getAttributes=1")
+.then(function(response) {
+    var res = undefined
+    res = JSON.parse(JSON.stringify(response))
+    res = JSON.parse(res._bodyInit)
     var items = [];
-    responseObject.results.forEach(function(r) {
+    res.results.forEach(function(r) {
         items.push(new Article(r));
     });
     data.replaceAll(items);

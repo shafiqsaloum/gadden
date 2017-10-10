@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/backends/cplusplus/Uno/ObjectModel.cpp'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/backends/cplusplus/Uno/ObjectModel.cpp.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Uno/_internal.h>
@@ -466,10 +466,9 @@ uType* uGetParameterized(uType* type, uType* root)
 
 #ifdef DEBUG_GENERICS
     uBase::String indent = uIndentString(_Indent++);
-    uBase::Error->WriteFormat(
-        "%suGetParameterized(\n    %s%s,\n    %s%s)\n", indent.Ptr(),
-        indent.Ptr(), uTypeString(type).Ptr(),
-        indent.Ptr(), uTypeString(root).Ptr());
+    U_LOG("%suGetParameterized(\n    %s%s,\n    %s%s)", indent.Ptr(),
+          indent.Ptr(), uTypeString(type).Ptr(),
+          indent.Ptr(), uTypeString(root).Ptr());
 #endif
     uType* result;
     if (type->GenericCount)
@@ -499,7 +498,7 @@ uType* uGetParameterized(uType* type, uType* root)
     U_ASSERT(result && (result->Definition == type->Definition ||
         type->Type == uTypeTypeGeneric && type->GenericCount == 0));
 #ifdef DEBUG_GENERICS
-    uBase::Error->WriteFormat("%s => %s\n", indent.Ptr(), uTypeString(result).Ptr());
+    U_LOG("%s => %s", indent.Ptr(), uTypeString(result).Ptr());
     --_Indent;
 #endif
     return result;

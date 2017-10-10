@@ -3,15 +3,17 @@ var singleNews = Observable();
 
 function SingleDetails(item) {
     this.title = item.title;
-    this.image = item.image.url;
+    this.image = item.attachment.thumbs.large;
     this.text = item.text;
 };
 
-fetch("https://dev.jexpo.se/dev/forms/news?getAttributes=1")
+fetch("https://p17.jexpo.se/gadden/forms/news?getAttributes=1")
 .then(function(response) { return response.json(); })
 .then(function(responseObject) {
     var items = [];
     responseObject.results.forEach(function(r) {
+      console.log('NEWSSSSSssSSS')
+      console.log(JSON.stringify(r))
         items.push(new SingleDetails(r));
     });
     singleNews.replaceAll(items);

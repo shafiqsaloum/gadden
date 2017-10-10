@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -19,13 +19,13 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// internal sealed class ElementAtlas :624
+// internal sealed class ElementAtlas :636
 // {
 uType* ElementAtlas_typeof();
 void ElementAtlas__ctor__fn(ElementAtlas* __this);
 void ElementAtlas__AddElement_fn(ElementAtlas* __this, ::g::Fuse::Elements::Element* elm, bool* __retval);
 void ElementAtlas__Dispose_fn(ElementAtlas* __this);
-void ElementAtlas__FillFramebuffer_fn(ElementAtlas* __this, ::g::Fuse::DrawContext* dc, bool* drawAll, ::g::Uno::Rect* scissorRectInClipSpace);
+void ElementAtlas__FillFramebuffer_fn(ElementAtlas* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Graphics::Framebuffer* fb, bool* drawAll, ::g::Uno::Rect* scissorRectInClipSpace);
 void ElementAtlas__GetScissorRectInClipSpace_fn(::g::Fuse::DrawContext* dc, ::g::Uno::Rect* __retval);
 void ElementAtlas__InvalidateElement_fn(ElementAtlas* __this, ::g::Fuse::Elements::Element* elm);
 void ElementAtlas__New1_fn(ElementAtlas** __retval);
@@ -49,7 +49,7 @@ struct ElementAtlas : uObject
     void ctor_();
     bool AddElement(::g::Fuse::Elements::Element* elm);
     void Dispose();
-    void FillFramebuffer(::g::Fuse::DrawContext* dc, bool drawAll, ::g::Uno::Rect scissorRectInClipSpace);
+    void FillFramebuffer(::g::Fuse::DrawContext* dc, ::g::Uno::Graphics::Framebuffer* fb, bool drawAll, ::g::Uno::Rect scissorRectInClipSpace);
     void InvalidateElement(::g::Fuse::Elements::Element* elm);
     void OnFramebufferCollected(uObject* sender, ::g::Uno::EventArgs* eventArgs);
     ::g::Uno::Graphics::Framebuffer* PinAndValidateFramebuffer(::g::Fuse::DrawContext* dc);

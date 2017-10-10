@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Reactive.Bindings/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -6,7 +6,6 @@
 #include <Fuse.IDeferred.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
-#include <Fuse.ITemplateObserver.h>
 #include <Fuse.Node.ISubtreeDataProvider.h>
 #include <Fuse.Reactive.Instantiator.h>
 #include <Fuse.Reactive.IObserver.h>
@@ -23,7 +22,7 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// public sealed class Each :528
+// public sealed class Each :540
 // {
 ::g::Fuse::Reactive::Instantiator_type* Each_typeof();
 void Each__ctor_5_fn(Each* __this);
@@ -32,7 +31,7 @@ void Each__get_Count1_fn(Each* __this, int* __retval);
 void Each__set_Count1_fn(Each* __this, int* value);
 void Each__GetEach_fn(::g::Fuse::Visual* container, Each** __retval);
 void Each__GetItems_fn(::g::Fuse::Visual* container, uObject** __retval);
-void Each__GetMatchKey1_fn(::g::Fuse::Visual* container, uString** __retval);
+void Each__GetMatchKey_fn(::g::Fuse::Visual* container, uString** __retval);
 void Each__get_Items_fn(Each* __this, uObject** __retval);
 void Each__set_Items_fn(Each* __this, uObject* value);
 void Each__get_Limit1_fn(Each* __this, int* __retval);
@@ -61,7 +60,7 @@ struct Each : ::g::Fuse::Reactive::Instantiator
     void Offset1(int value);
     static Each* GetEach(::g::Fuse::Visual* container);
     static uObject* GetItems(::g::Fuse::Visual* container);
-    static uString* GetMatchKey1(::g::Fuse::Visual* container);
+    static uString* GetMatchKey(::g::Fuse::Visual* container);
     static Each* New4();
     static Each* New5(uObject* templates);
     static void SetItems(::g::Fuse::Visual* container, uObject* items);

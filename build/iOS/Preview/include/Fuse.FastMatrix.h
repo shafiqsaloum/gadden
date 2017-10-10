@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{namespace Uno{struct Float4;}}
 namespace g{
 namespace Fuse{
 
-// public sealed class FastMatrix :1242
+// public sealed class FastMatrix :1397
 // {
 uType* FastMatrix_typeof();
 void FastMatrix__ctor__fn(FastMatrix* __this);
@@ -44,6 +44,8 @@ void FastMatrix__PrependTranslation_fn(FastMatrix* __this, float* x, float* y, f
 void FastMatrix__PrependTranslation1_fn(FastMatrix* __this, ::g::Uno::Float3* offset);
 void FastMatrix__ResetIdentity_fn(FastMatrix* __this);
 void FastMatrix__SimpleTranslation_fn(FastMatrix* __this, float* x, float* y, float* z);
+void FastMatrix__TransformVector_fn(FastMatrix* __this, ::g::Uno::Float3* v, ::g::Uno::Float3* __retval);
+void FastMatrix__get_Translation_fn(FastMatrix* __this, ::g::Uno::Float3* __retval);
 
 struct FastMatrix : uObject
 {
@@ -77,6 +79,8 @@ struct FastMatrix : uObject
     void PrependTranslation1(::g::Uno::Float3 offset);
     void ResetIdentity();
     void SimpleTranslation(float x, float y, float z);
+    ::g::Uno::Float3 TransformVector(::g::Uno::Float3 v);
+    ::g::Uno::Float3 Translation();
     static FastMatrix* FromFloat4x4(::g::Uno::Float4x4 m);
     static FastMatrix* Identity();
     static FastMatrix* New1();

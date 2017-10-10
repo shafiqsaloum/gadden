@@ -1,9 +1,9 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/input/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Input.PointerRel-5863e73d.h>
 #include <Fuse.Input.PointerReleasedArgs.h>
+#include <Fuse.Input.PointerReleasedHandler.h>
 #include <Fuse.VisualEvent-2.h>
 namespace g{namespace Fuse{namespace Input{struct PointerReleased;}}}
 
@@ -11,7 +11,7 @@ namespace g{
 namespace Fuse{
 namespace Input{
 
-// internal sealed class PointerReleased :2088
+// internal sealed class PointerReleased :2238
 // {
 ::g::Fuse::VisualEvent_type* PointerReleased_typeof();
 void PointerReleased__ctor_1_fn(PointerReleased* __this);

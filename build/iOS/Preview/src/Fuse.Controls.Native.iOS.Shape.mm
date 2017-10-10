@@ -1,9 +1,10 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/ios/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <CoreGraphics/CoreGraphics.h>
-#include <Fuse.Controls.Native.-e502cdf1.h>
 #include <Fuse.Controls.Native.iOS.Shape.h>
+#include <Fuse.Controls.Native.ViewHandle.h>
+#include <Fuse.Controls.Native.ViewHandle.InputMode.h>
 #include <Fuse.Diagnostics.h>
 #include <Fuse.Drawing.Brush.h>
 #include <Fuse.Drawing.DynamicBrush.h>
@@ -17,7 +18,7 @@
 #include <QuartzCore/QuartzCore.h>
 #include <UIKit/UIKit.h>
 #include <Uno.Bool.h>
-#include <Uno.Collections.Enume-8ddd045.h>
+#include <Uno.Collections.EnumerableExtensions.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
 #include <Uno.Float.h>
@@ -38,12 +39,12 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// internal abstract extern class Shape :1985
+// internal abstract extern class Shape :1734
 // {
 static void Shape_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("");
-    ::STRINGS[1] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Native/1.0.5/ios/$.uno");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Native/1.2.1/ios/$.uno");
     ::STRINGS[2] = uString::Const("SetBrush");
     ::TYPES[0] = ::g::Fuse::Drawing::LinearGradient_typeof();
     ::TYPES[1] = ::g::Fuse::Drawing::SolidColor_typeof();
@@ -57,7 +58,7 @@ static void Shape_build(uType* type)
         ::g::Uno::IDisposable_typeof(), offsetof(Shape_type, interface0),
         ::g::Fuse::Controls::Native::IView_typeof(), offsetof(Shape_type, interface1),
         ::g::Fuse::Controls::Native::IShapeView_typeof(), offsetof(Shape_type, interface2));
-    type->SetFields(7,
+    type->SetFields(8,
         ::g::Fuse::Drawing::Brush_typeof()->Array(), offsetof(::g::Fuse::Controls::Native::iOS::Shape, _fills), 0,
         ::g::Fuse::Drawing::Stroke_typeof()->Array(), offsetof(::g::Fuse::Controls::Native::iOS::Shape, _strokes), 0);
 }
@@ -69,7 +70,7 @@ Shape_type* Shape_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Native::iOS::View_typeof();
-    options.FieldCount = 9;
+    options.FieldCount = 10;
     options.InterfaceCount = 3;
     options.ObjectSize = sizeof(Shape);
     options.TypeSize = sizeof(Shape_type);
@@ -82,19 +83,19 @@ Shape_type* Shape_typeof()
     return type;
 }
 
-// protected Shape() :1987
+// protected Shape() :1736
 void Shape__ctor_4_fn(Shape* __this)
 {
     __this->ctor_4();
 }
 
-// private static ObjC.Object Create() :2202
+// private static ObjC.Object Create() :1951
 void Shape__Create_fn(::g::ObjC::Object** __retval)
 {
     *__retval = Shape::Create();
 }
 
-// private void Fuse.Controls.Native.IShapeView.Update(Fuse.Drawing.Brush[] fills, Fuse.Drawing.Stroke[] strokes, float pixelsPerPoint) :1997
+// private void Fuse.Controls.Native.IShapeView.Update(Fuse.Drawing.Brush[] fills, Fuse.Drawing.Stroke[] strokes, float pixelsPerPoint) :1746
 void Shape__FuseControlsNativeIShapeViewUpdate_fn(Shape* __this, uArray* fills, uArray* strokes, float* pixelsPerPoint)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.Shape", "Fuse.Controls.Native.IShapeView.Update(Fuse.Drawing.Brush[],Fuse.Drawing.Stroke[],float)");
@@ -103,81 +104,81 @@ void Shape__FuseControlsNativeIShapeViewUpdate_fn(Shape* __this, uArray* fills, 
     __this->OnShapeChanged();
 }
 
-// private static void MakeLayers(ObjC.Object handle, int layerCount) :2186
+// private static void MakeLayers(ObjC.Object handle, int layerCount) :1935
 void Shape__MakeLayers_fn(::g::ObjC::Object* handle, int* layerCount)
 {
     Shape::MakeLayers(handle, *layerCount);
 }
 
-// protected internal override sealed void OnPositionChanged() :1989
+// protected internal override sealed void OnPositionChanged() :1738
 void Shape__OnPositionChanged_fn(Shape* __this)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.Shape", "OnPositionChanged()");
     __this->OnShapeChanged();
 }
 
-// protected void OnShapeChanged() :2004
+// protected void OnShapeChanged() :1753
 void Shape__OnShapeChanged_fn(Shape* __this)
 {
     __this->OnShapeChanged();
 }
 
-// protected internal override sealed void OnSizeChanged() :1990
+// protected internal override sealed void OnSizeChanged() :1739
 void Shape__OnSizeChanged_fn(Shape* __this)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.Shape", "OnSizeChanged()");
     __this->OnShapeChanged();
 }
 
-// private static int SelectOffset(Fuse.Drawing.GradientStop a, Fuse.Drawing.GradientStop b) :2056
+// private static int SelectOffset(Fuse.Drawing.GradientStop a, Fuse.Drawing.GradientStop b) :1805
 void Shape__SelectOffset_fn(::g::Fuse::Drawing::GradientStop* a, ::g::Fuse::Drawing::GradientStop* b, int* __retval)
 {
     *__retval = Shape::SelectOffset(a, b);
 }
 
-// private void SetBrush(Fuse.Drawing.Brush brush, int layer, ObjC.Object path, bool isLine, float strokeWidth) :2032
+// private void SetBrush(Fuse.Drawing.Brush brush, int layer, ObjC.Object path, bool isLine, float strokeWidth) :1781
 void Shape__SetBrush_fn(Shape* __this, ::g::Fuse::Drawing::Brush* brush, int* layer, ::g::ObjC::Object* path, bool* isLine, float* strokeWidth)
 {
     __this->SetBrush(brush, *layer, path, *isLine, *strokeWidth);
 }
 
-// private static void SetBrush(ObjC.Object handle, float r, float g, float b, float a, int layerIndex, ObjC.Object pathHandle, bool isLine, float strokeWidth, float opacity) :2164
+// private static void SetBrush(ObjC.Object handle, float r, float g, float b, float a, int layerIndex, ObjC.Object pathHandle, bool isLine, float strokeWidth, float opacity) :1913
 void Shape__SetBrush1_fn(::g::ObjC::Object* handle, float* r, float* g, float* b, float* a, int* layerIndex, ::g::ObjC::Object* pathHandle, bool* isLine, float* strokeWidth, float* opacity)
 {
     Shape::SetBrush1(handle, *r, *g, *b, *a, *layerIndex, pathHandle, *isLine, *strokeWidth, *opacity);
 }
 
-// private void SetLinearGradient(Fuse.Drawing.LinearGradient gradient, int layer, ObjC.Object path, bool isLine, float strokeWidth) :2061
+// private void SetLinearGradient(Fuse.Drawing.LinearGradient gradient, int layer, ObjC.Object path, bool isLine, float strokeWidth) :1810
 void Shape__SetLinearGradient_fn(Shape* __this, ::g::Fuse::Drawing::LinearGradient* gradient, int* layer, ::g::ObjC::Object* path, bool* isLine, float* strokeWidth)
 {
     __this->SetLinearGradient(gradient, *layer, path, *isLine, *strokeWidth);
 }
 
-// private static void SetLinearGradient(ObjC.Object handle, int layerIndex, ObjC.Object pathHandle, bool isLine, float strokeWidth, float startX, float startY, float endX, float endY, float[] colors, float[] offsets, float width, float height) :2093
+// private static void SetLinearGradient(ObjC.Object handle, int layerIndex, ObjC.Object pathHandle, bool isLine, float strokeWidth, float startX, float startY, float endX, float endY, float[] colors, float[] offsets, float width, float height) :1842
 void Shape__SetLinearGradient1_fn(::g::ObjC::Object* handle, int* layerIndex, ::g::ObjC::Object* pathHandle, bool* isLine, float* strokeWidth, float* startX, float* startY, float* endX, float* endY, uArray* colors, uArray* offsets, float* width, float* height)
 {
     Shape::SetLinearGradient1(handle, *layerIndex, pathHandle, *isLine, *strokeWidth, *startX, *startY, *endX, *endY, colors, offsets, *width, *height);
 }
 
-// protected float2 get_ShapePosition() :1992
+// protected float2 get_ShapePosition() :1741
 void Shape__get_ShapePosition_fn(Shape* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->ShapePosition();
 }
 
-// protected float2 get_ShapeSize() :1993
+// protected float2 get_ShapeSize() :1742
 void Shape__get_ShapeSize_fn(Shape* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->ShapeSize();
 }
 
-// protected Shape() [instance] :1987
+// protected Shape() [instance] :1736
 void Shape::ctor_4()
 {
-    ctor_2(Shape::Create());
+    ctor_2(Shape::Create(), 0);
 }
 
-// protected void OnShapeChanged() [instance] :2004
+// protected void OnShapeChanged() [instance] :1753
 void Shape::OnShapeChanged()
 {
     uStackFrame __("Fuse.Controls.Native.iOS.Shape", "OnShapeChanged()");
@@ -202,7 +203,7 @@ void Shape::OnShapeChanged()
         }
 }
 
-// private void SetBrush(Fuse.Drawing.Brush brush, int layer, ObjC.Object path, bool isLine, float strokeWidth) [instance] :2032
+// private void SetBrush(Fuse.Drawing.Brush brush, int layer, ObjC.Object path, bool isLine, float strokeWidth) [instance] :1781
 void Shape::SetBrush(::g::Fuse::Drawing::Brush* brush, int layer, ::g::ObjC::Object* path, bool isLine, float strokeWidth)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.Shape", "SetBrush(Fuse.Drawing.Brush,int,ObjC.Object,bool,float)");
@@ -223,14 +224,14 @@ void Shape::SetBrush(::g::Fuse::Drawing::Brush* brush, int layer, ::g::ObjC::Obj
             c = uPtr(ssc)->Color();
 
         if ((sc == NULL) && (ssc == NULL))
-            ::g::Fuse::Diagnostics::Unsupported(::STRINGS[0/*""*/], brush, ::STRINGS[1/*"/Users/eric...*/], 2049, ::STRINGS[2/*"SetBrush"*/]);
+            ::g::Fuse::Diagnostics::Unsupported(::STRINGS[0/*""*/], brush, ::STRINGS[1/*"/usr/local/...*/], 1798, ::STRINGS[2/*"SetBrush"*/]);
 
         ::g::Fuse::Drawing::DynamicBrush* db = uAs< ::g::Fuse::Drawing::DynamicBrush*>(brush, ::TYPES[3/*Fuse.Drawing.DynamicBrush*/]);
         Shape::SetBrush1(Handle(), c.X, c.Y, c.Z, c.W, layer, path, isLine, strokeWidth, (db != NULL) ? uPtr(db)->Opacity() : 1.0f);
     }
 }
 
-// private void SetLinearGradient(Fuse.Drawing.LinearGradient gradient, int layer, ObjC.Object path, bool isLine, float strokeWidth) [instance] :2061
+// private void SetLinearGradient(Fuse.Drawing.LinearGradient gradient, int layer, ObjC.Object path, bool isLine, float strokeWidth) [instance] :1810
 void Shape::SetLinearGradient(::g::Fuse::Drawing::LinearGradient* gradient, int layer, ::g::ObjC::Object* path, bool isLine, float strokeWidth)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.Shape", "SetLinearGradient(Fuse.Drawing.LinearGradient,int,ObjC.Object,bool,float)");
@@ -250,19 +251,19 @@ void Shape::SetLinearGradient(::g::Fuse::Drawing::LinearGradient* gradient, int 
     Shape::SetLinearGradient1(Handle(), layer, path, isLine, strokeWidth, gradient->StartPoint().X, gradient->StartPoint().Y, gradient->EndPoint().X, gradient->EndPoint().Y, colors, offsets, ShapeSize().X, ShapeSize().Y);
 }
 
-// protected float2 get_ShapePosition() [instance] :1992
+// protected float2 get_ShapePosition() [instance] :1741
 ::g::Uno::Float2 Shape::ShapePosition()
 {
     return ::g::Uno::Float2__New1(0.0f);
 }
 
-// protected float2 get_ShapeSize() [instance] :1993
+// protected float2 get_ShapeSize() [instance] :1742
 ::g::Uno::Float2 Shape::ShapeSize()
 {
     return Size();
 }
 
-// private static ObjC.Object Create() [static] :2202
+// private static ObjC.Object Create() [static] :1951
 ::g::ObjC::Object* Shape::Create()
 {
     @autoreleasepool
@@ -279,7 +280,7 @@ void Shape::SetLinearGradient(::g::Fuse::Drawing::LinearGradient* gradient, int 
     
 }
 
-// private static void MakeLayers(ObjC.Object handle, int layerCount) [static] :2186
+// private static void MakeLayers(ObjC.Object handle, int layerCount) [static] :1935
 void Shape::MakeLayers(::g::ObjC::Object* handle, int layerCount)
 {
     @autoreleasepool
@@ -303,14 +304,14 @@ void Shape::MakeLayers(::g::ObjC::Object* handle, int layerCount)
     
 }
 
-// private static int SelectOffset(Fuse.Drawing.GradientStop a, Fuse.Drawing.GradientStop b) [static] :2056
+// private static int SelectOffset(Fuse.Drawing.GradientStop a, Fuse.Drawing.GradientStop b) [static] :1805
 int Shape::SelectOffset(::g::Fuse::Drawing::GradientStop* a, ::g::Fuse::Drawing::GradientStop* b)
 {
     uStackFrame __("Fuse.Controls.Native.iOS.Shape", "SelectOffset(Fuse.Drawing.GradientStop,Fuse.Drawing.GradientStop)");
     return (int)::g::Uno::Math::Sign1(uPtr(a)->Offset() - uPtr(b)->Offset());
 }
 
-// private static void SetBrush(ObjC.Object handle, float r, float g, float b, float a, int layerIndex, ObjC.Object pathHandle, bool isLine, float strokeWidth, float opacity) [static] :2164
+// private static void SetBrush(ObjC.Object handle, float r, float g, float b, float a, int layerIndex, ObjC.Object pathHandle, bool isLine, float strokeWidth, float opacity) [static] :1913
 void Shape::SetBrush1(::g::ObjC::Object* handle, float r, float g, float b, float a, int layerIndex, ::g::ObjC::Object* pathHandle, bool isLine, float strokeWidth, float opacity)
 {
     @autoreleasepool
@@ -340,7 +341,7 @@ void Shape::SetBrush1(::g::ObjC::Object* handle, float r, float g, float b, floa
     
 }
 
-// private static void SetLinearGradient(ObjC.Object handle, int layerIndex, ObjC.Object pathHandle, bool isLine, float strokeWidth, float startX, float startY, float endX, float endY, float[] colors, float[] offsets, float width, float height) [static] :2093
+// private static void SetLinearGradient(ObjC.Object handle, int layerIndex, ObjC.Object pathHandle, bool isLine, float strokeWidth, float startX, float startY, float endX, float endY, float[] colors, float[] offsets, float width, float height) [static] :1842
 void Shape::SetLinearGradient1(::g::ObjC::Object* handle, int layerIndex, ::g::ObjC::Object* pathHandle, bool isLine, float strokeWidth, float startX, float startY, float endX, float endY, uArray* colors, uArray* offsets, float width, float height)
 {
     @autoreleasepool
@@ -377,7 +378,7 @@ void Shape::SetLinearGradient1(::g::ObjC::Object* handle, int layerIndex, ::g::O
             
             auto gradientStops = [&]() -> int { ::uForeignPool __foreignPool; return uCast<uArray*>((offsets).unoArray, ::g::Uno::Float_typeof()->Array())->Length(); }();
             
-            NSMutableArray* locations = [[NSMutableArray alloc] initWithCapacity:gradientStops];	
+            NSMutableArray* locations = [[NSMutableArray alloc] initWithCapacity:gradientStops];
             
             for (int i = 0; i < gradientStops; i++)
             {

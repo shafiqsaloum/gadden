@@ -1,4 +1,4 @@
-// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/build/iOS/Preview/cache/ux11/MainView.g.uno.
+// This file was generated based on build/iOS/Preview/cache/ux11/MainView.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -407,6 +407,9 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb0;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb1;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb10;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb11;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb15;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb16;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb2;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb3;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb4;
@@ -436,12 +439,15 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> temp26_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp27_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp28_Data_inst;
-    uStrong< ::g::Uno::UX::Property1*> temp29_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp29_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp3_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp30_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp31_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp32_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp33_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp34_Items_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp35_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp36_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp4_Data_inst;
     uStrong< ::g::Uno::UX::Property1*> temp5_Url_inst;
     uStrong< ::g::Uno::UX::Property1*> temp6_Value_inst;

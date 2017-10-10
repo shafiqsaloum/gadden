@@ -1,20 +1,21 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/shapes/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/shapes/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Shape.h>
-#include <Fuse.Drawing.IDrawObj-d34d045e.h>
+#include <Fuse.Drawing.IDrawObjectWatcherFeedback.h>
 #include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
+#include <Fuse.ITemplateSource.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -29,7 +30,7 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public interfacemodifiers class EllipticalShape :870
+// public interfacemodifiers class EllipticalShape :869
 // {
 ::g::Fuse::Controls::Shape_type* EllipticalShape_typeof();
 void EllipticalShape__ctor_7_fn(EllipticalShape* __this);

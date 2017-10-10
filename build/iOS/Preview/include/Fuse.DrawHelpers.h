@@ -1,10 +1,10 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.Float2.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implement-476e2792.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct DrawHelpers;}}
 namespace g{namespace Uno{namespace Graphics{struct VertexBuffer;}}}
@@ -15,7 +15,7 @@ namespace g{namespace Uno{struct Rect;}}
 namespace g{
 namespace Fuse{
 
-// internal sealed class DrawHelpers :5268
+// internal sealed class DrawHelpers :5940
 // {
 uType* DrawHelpers_typeof();
 void DrawHelpers__ctor__fn(DrawHelpers* __this);

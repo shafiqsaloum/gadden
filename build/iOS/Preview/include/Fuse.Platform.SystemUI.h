@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Platform/1.0.5/ios/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Platform/1.2.1/ios/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

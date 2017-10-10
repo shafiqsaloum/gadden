@@ -1,7 +1,7 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Android.Controls-b7abe437.h>
+#include <Fuse.Android.Controls.WebViewUtils.WebViewForeign.h>
 
 namespace g{
 namespace Fuse{
@@ -9,10 +9,10 @@ namespace Android{
 namespace Controls{
 namespace WebViewUtils{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.WebView/1.0.5/android/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.2.1/android/$.uno
+// -----------------------------------------------------------------------
 
-// public static class WebViewForeign :299
+// public static class WebViewForeign :300
 // {
 static void WebViewForeign_build(uType* type)
 {

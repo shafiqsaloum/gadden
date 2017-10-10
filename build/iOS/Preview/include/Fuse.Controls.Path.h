@@ -1,21 +1,22 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/shapes/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/shapes/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
 #include <Fuse.Controls.Shape.h>
-#include <Fuse.Drawing.IDrawObj-d34d045e.h>
+#include <Fuse.Drawing.IDrawObjectWatcherFeedback.h>
 #include <Fuse.Drawing.ISurfaceDrawable.h>
 #include <Fuse.Drawing.LineSegment.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
+#include <Fuse.ITemplateSource.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -56,7 +57,6 @@ void Path__set_FitMode_fn(Path* __this, int* value);
 void Path__GetContentSize_fn(Path* __this, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval);
 void Path__GetDesiredContentSize_fn(Path* __this, ::g::Uno::Float2* __retval);
 void Path__InvalidateSurfacePath_fn(Path* __this);
-void Path__get_NeedSurface_fn(Path* __this, bool* __retval);
 void Path__New3_fn(Path** __retval);
 void Path__OnShapeLayoutChanged_fn(Path* __this);
 void Path__get_Sizing_fn(Path* __this, ::g::Fuse::Internal::SizingContainer** __retval);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// public sealed class Cycle<T> :803
+// public sealed class Cycle<T> :997
 // {
 ::g::Fuse::Animations::Animator_type* Cycle_typeof();
 void Cycle__ctor_3_fn(Cycle* __this, ::g::Uno::UX::Property1* Target1);

@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Testing/1.0.13/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Uno.Testing/1.2.2/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,21 +9,12 @@ namespace g{
 namespace Uno{
 namespace Testing{
 
-// public sealed class NamedTestMethod :892
+// internal sealed class NamedTestMethod :867
 // {
 uType* NamedTestMethod_typeof();
-void NamedTestMethod__ctor__fn(NamedTestMethod* __this, uDelegate* method, uString* name, bool* ignore, uString* ignoreReason);
-void NamedTestMethod__New1_fn(uDelegate* method, uString* name, bool* ignore, uString* ignoreReason, NamedTestMethod** __retval);
 
 struct NamedTestMethod : uObject
 {
-    bool Ignore;
-    uStrong<uString*> IgnoreReason;
-    uStrong<uDelegate*> Method;
-    uStrong<uString*> Name;
-
-    void ctor_(uDelegate* method, uString* name, bool ignore, uString* ignoreReason);
-    static NamedTestMethod* New1(uDelegate* method, uString* name, bool ignore, uString* ignoreReason);
 };
 // }
 

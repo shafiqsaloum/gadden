@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Primitives/1.0.5/rangecontrols/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.2.1/rangecontrols/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,11 +9,12 @@
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
+#include <Fuse.ITemplateSource.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Fuse.Triggers.IValue-1.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
@@ -27,11 +28,11 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public sealed class RangeControl2D :733
+// public sealed class RangeControl2D :731
 // {
 struct RangeControl2D_type : ::g::Fuse::Controls::Panel_type
 {
-    ::g::Fuse::Triggers::IValue interface16;
+    ::g::Fuse::Triggers::IValue interface17;
 };
 
 RangeControl2D_type* RangeControl2D_typeof();

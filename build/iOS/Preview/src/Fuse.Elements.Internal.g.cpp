@@ -4,8 +4,8 @@
 #include <_root.FuseElements_bundle.h>
 #include <Fuse.DrawContext.h>
 #include <Fuse.Elements.Element.h>
-#include <Fuse.Elements.Interna-632e825b.h>
-#include <Fuse.Elements.Interna-78588865.h>
+#include <Fuse.Elements.Internal.ElementDraw.h>
+#include <Fuse.Elements.Internal.Scale9Rectangle.h>
 #include <Fuse.IRenderViewport.h>
 #include <Fuse.Visual.h>
 #include <Uno.Bool.h>
@@ -22,12 +22,12 @@
 #include <Uno.Graphics.PolygonFace.h>
 #include <Uno.Graphics.SamplerState.h>
 #include <Uno.Graphics.Texture2D.h>
-#include <Uno.Graphics.VertexAt-4a875e1d.h>
+#include <Uno.Graphics.VertexAttributeType.h>
 #include <Uno.Graphics.VertexBuffer.h>
 #include <Uno.Int.h>
 #include <Uno.Matrix.h>
-#include <Uno.Runtime.Implement-6e9df330.h>
-#include <Uno.Runtime.Implement-81e7ab4c.h>
+#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
 #include <Uno.UShort.h>
 static uType* TYPES[4];
 
@@ -36,8 +36,8 @@ namespace Fuse{
 namespace Elements{
 namespace Internal{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/drawing/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/drawing/$.uno
+// ---------------------------------------------------------------
 
 // internal sealed class ElementDraw :352
 // {
@@ -145,8 +145,8 @@ ElementDraw* ElementDraw::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/drawing/$.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/drawing/$.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Scale9Rectangle :377
 // {

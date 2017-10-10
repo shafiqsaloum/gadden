@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Text/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace Fuse{
 namespace Text{
 namespace Edit{
 
-// internal struct Caret :183
+// internal struct Caret :182
 // {
 uStructType* Caret_typeof();
 void Caret__ctor__fn(Caret* __this, int* cluster, int* lineIndex, int* runIndex, ::g::Uno::Float2* visualPos);

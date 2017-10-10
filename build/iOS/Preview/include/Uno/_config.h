@@ -1,9 +1,10 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/backends/cplusplus/Uno/_config.h'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/backends/cplusplus/Uno/_config.h.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <cfloat>
 #include <cstring>
 #include <stdint.h>
+#include <stdarg.h>
 #include <uBase/Config.h>
 
 // Debugging
@@ -33,6 +34,18 @@ typedef uint16_t uChar;
 #define U_STR1(STR) #STR
 #define U_STR2(STR) U_STR1(STR)
 #define U_SOURCE __FILE__ ":" U_STR2(__LINE__)
+
+// Logging
+enum uLogLevel {
+    uLogLevelDebug = 0,
+    uLogLevelInformation = 1,
+    uLogLevelWarning = 2,
+    uLogLevelError = 3,
+    uLogLevelFatal = 4
+};
+void uLog(int level, const char* format, ...);
+void uLogv(int level, const char* format, va_list args);
+#define U_LOG(...) uLog(0, __VA_ARGS__)
 
 // Kill switch
 U_NORETURN void uFatal(const char* src = NULL, const char* msg = NULL);

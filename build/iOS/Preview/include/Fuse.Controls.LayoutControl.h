@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Panels/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,11 +8,12 @@
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
+#include <Fuse.ITemplateSource.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
@@ -22,6 +23,7 @@ namespace g{namespace Fuse{namespace Controls{struct LayoutControlSurface;}}}
 namespace g{namespace Fuse{namespace Drawing{struct Surface;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Layouts{struct Layout;}}}
+namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct LayoutParams;}}
 namespace g{namespace Fuse{struct Visual;}}
 namespace g{namespace Uno{struct Float2;}}
@@ -30,11 +32,12 @@ namespace g{
 namespace Fuse{
 namespace Controls{
 
-// public partial class LayoutControl :993
+// public partial class LayoutControl :992
 // {
 ::g::Fuse::Controls::Control_type* LayoutControl_typeof();
 void LayoutControl__ctor_5_fn(LayoutControl* __this);
 void LayoutControl__ArrangePaddingBox_fn(LayoutControl* __this, ::g::Fuse::LayoutParams* lp);
+void LayoutControl__FastTrackDrawWithOpacity_fn(LayoutControl* __this, ::g::Fuse::DrawContext* dc, bool* __retval);
 void LayoutControl__GetContentSize_fn(LayoutControl* __this, ::g::Fuse::LayoutParams* lp, ::g::Uno::Float2* __retval);
 void LayoutControl__GetLayoutMaster_fn(::g::Fuse::Elements::Element* elm, ::g::Fuse::Elements::Element** __retval);
 void LayoutControl__IsMarginBoxDependent_fn(LayoutControl* __this, ::g::Fuse::Visual* child, int* __retval);
@@ -44,6 +47,7 @@ void LayoutControl__set_Layout_fn(LayoutControl* __this, ::g::Fuse::Layouts::Lay
 void LayoutControl__get_LayoutSurface_fn(LayoutControl* __this, ::g::Fuse::Drawing::Surface** __retval);
 void LayoutControl__New2_fn(LayoutControl** __retval);
 void LayoutControl__OnChildAdded_fn(LayoutControl* __this, ::g::Fuse::Node* elm);
+void LayoutControl__OnChildMoved_fn(LayoutControl* __this, ::g::Fuse::Node* elm);
 void LayoutControl__OnChildRemoved_fn(LayoutControl* __this, ::g::Fuse::Node* elm);
 void LayoutControl__OnRooted_fn(LayoutControl* __this);
 void LayoutControl__OnUnrooted_fn(LayoutControl* __this);

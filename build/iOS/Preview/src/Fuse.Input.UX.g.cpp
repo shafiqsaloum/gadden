@@ -12,21 +12,21 @@
 #include <Fuse.Input.KeyReleasedArgs.h>
 #include <Fuse.Input.KeyReleasedHandler.h>
 #include <Fuse.Input.Pointer.h>
-#include <Fuse.Input.PointerEnt-cfe04f3d.h>
 #include <Fuse.Input.PointerEnteredArgs.h>
+#include <Fuse.Input.PointerEnteredHandler.h>
 #include <Fuse.Input.PointerLeftArgs.h>
 #include <Fuse.Input.PointerLeftHandler.h>
 #include <Fuse.Input.PointerMovedArgs.h>
 #include <Fuse.Input.PointerMovedHandler.h>
-#include <Fuse.Input.PointerPre-d85d5994.h>
 #include <Fuse.Input.PointerPressedArgs.h>
-#include <Fuse.Input.PointerRel-5863e73d.h>
+#include <Fuse.Input.PointerPressedHandler.h>
 #include <Fuse.Input.PointerReleasedArgs.h>
-#include <Fuse.Input.PointerWhe-656d8f41.h>
-#include <Fuse.Input.PointerWhe-d06481ac.h>
-#include <Fuse.Input.UX.Attache-a56e7ad2.h>
-#include <Fuse.Input.UX.Attache-df6daa1a.h>
-#include <Fuse.Input.UX.Attache-e30f1ff1.h>
+#include <Fuse.Input.PointerReleasedHandler.h>
+#include <Fuse.Input.PointerWheelMovedArgs.h>
+#include <Fuse.Input.PointerWheelMovedHandler.h>
+#include <Fuse.Input.UX.AttachedFocusMembers.h>
+#include <Fuse.Input.UX.AttachedKeyboardMembers.h>
+#include <Fuse.Input.UX.AttachedPointerMembers.h>
 #include <Fuse.Visual.h>
 #include <Fuse.VisualEvent-2.h>
 
@@ -35,8 +35,8 @@ namespace Fuse{
 namespace Input{
 namespace UX{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/ux/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/input/ux/$.uno
+// -------------------------------------------------------------
 
 // public static class AttachedFocusMembers :7
 // {
@@ -114,8 +114,8 @@ void AttachedFocusMembers::RemoveFocusLostHandler(::g::Fuse::Visual* node, uDele
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/ux/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/input/ux/$.uno
+// -------------------------------------------------------------
 
 // public static class AttachedKeyboardMembers :43
 // {
@@ -193,8 +193,8 @@ void AttachedKeyboardMembers::RemoveKeyReleasedHandler(::g::Fuse::Visual* node, 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/input/ux/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/input/ux/$.uno
+// -------------------------------------------------------------
 
 // public static class AttachedPointerMembers :83
 // {

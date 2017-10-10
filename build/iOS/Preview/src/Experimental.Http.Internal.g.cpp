@@ -1,7 +1,7 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Experimental.Http.Int-14679e9d.h>
+#include <Experimental.Http.Internal.DateUtil.h>
 #include <Uno.DateTime.h>
 #include <Uno.Int.h>
 #include <Uno.Time.ZonedDateTime.h>
@@ -11,8 +11,8 @@ namespace Experimental{
 namespace Http{
 namespace Internal{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Experimental.Http/1.0.5/internal/$.uno
-// -----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Experimental.Http/1.2.1/internal/$.uno
+// --------------------------------------------------------------------
 
 // internal static class DateUtil :7
 // {

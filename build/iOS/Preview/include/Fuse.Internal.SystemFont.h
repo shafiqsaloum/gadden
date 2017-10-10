@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{
 namespace Fuse{
 namespace Internal{
 
-// internal static class SystemFont :2176
+// internal static class SystemFont :2838
 // {
 uClassType* SystemFont_typeof();
 void SystemFont__get_Default_fn(::g::Uno::Collections::List** __retval);

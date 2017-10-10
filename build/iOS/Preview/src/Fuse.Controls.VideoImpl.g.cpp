@@ -3,18 +3,18 @@
 
 #include <_root.FuseControlsVideo_bundle.h>
 #include <Fuse.Controls.Graphics.Visual.h>
-#include <Fuse.Controls.VideoIm-28d4de69.h>
-#include <Fuse.Controls.VideoIm-4d990014.h>
-#include <Fuse.Controls.VideoIm-72c895ca.h>
-#include <Fuse.Controls.VideoIm-7b2eaac1.h>
-#include <Fuse.Controls.VideoIm-7c15c6f7.h>
-#include <Fuse.Controls.VideoIm-aeb6ffae.h>
-#include <Fuse.Controls.VideoIm-aee99c23.h>
-#include <Fuse.Controls.VideoIm-b5ceac8f.h>
-#include <Fuse.Controls.VideoIm-bfe06558.h>
-#include <Fuse.Controls.VideoIm-c1aafe14.h>
-#include <Fuse.Controls.VideoIm-e232fc69.h>
-#include <Fuse.Controls.VideoIm-f0b495bd.h>
+#include <Fuse.Controls.VideoImpl.EmptyVideo.h>
+#include <Fuse.Controls.VideoImpl.GraphicsVideoService.h>
+#include <Fuse.Controls.VideoImpl.iOS.VideoLoader.h>
+#include <Fuse.Controls.VideoImpl.IVideoCallbacks.h>
+#include <Fuse.Controls.VideoImpl.IVideoPlayer.h>
+#include <Fuse.Controls.VideoImpl.IVideoService.h>
+#include <Fuse.Controls.VideoImpl.LoadingClosure.h>
+#include <Fuse.Controls.VideoImpl.Scale9Rectangle.h>
+#include <Fuse.Controls.VideoImpl.VideoDiskCache.h>
+#include <Fuse.Controls.VideoImpl.VideoDrawElement.h>
+#include <Fuse.Controls.VideoImpl.VideoLoader.h>
+#include <Fuse.Controls.VideoImpl.VideoVisual.h>
 #include <Fuse.Diagnostics.h>
 #include <Fuse.DrawContext.h>
 #include <Fuse.Elements.Alignment.h>
@@ -42,12 +42,12 @@
 #include <Uno.Buffer.h>
 #include <Uno.Byte.h>
 #include <Uno.Char.h>
-#include <Uno.Collections.Dicti-d1699346.h>
+#include <Uno.Collections.Dictionary-2.Enumerator.h>
 #include <Uno.Collections.Dictionary-2.h>
 #include <Uno.Collections.KeyValuePair-2.h>
 #include <Uno.Delegate.h>
 #include <Uno.Diagnostics.Debug.h>
-#include <Uno.Diagnostics.Debug-5d778620.h>
+#include <Uno.Diagnostics.DebugMessageType.h>
 #include <Uno.Double.h>
 #include <Uno.EventArgs.h>
 #include <Uno.EventHandler.h>
@@ -64,7 +64,7 @@
 #include <Uno.Graphics.IndexType.h>
 #include <Uno.Graphics.PolygonFace.h>
 #include <Uno.Graphics.SamplerState.h>
-#include <Uno.Graphics.VertexAt-4a875e1d.h>
+#include <Uno.Graphics.VertexAttributeType.h>
 #include <Uno.Graphics.VertexBuffer.h>
 #include <Uno.Graphics.VideoTexture.h>
 #include <Uno.Int.h>
@@ -75,8 +75,8 @@
 #include <Uno.Math.h>
 #include <Uno.Matrix.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implement-6e9df330.h>
-#include <Uno.Runtime.Implement-81e7ab4c.h>
+#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
 #include <Uno.String.h>
 #include <Uno.Threading.Future.h>
 #include <Uno.Threading.Future-1.h>
@@ -92,8 +92,8 @@ namespace Fuse{
 namespace Controls{
 namespace VideoImpl{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.2.1/$.uno
+// -------------------------------------------------------------
 
 // internal sealed class EmptyVideo :32
 // {
@@ -247,8 +247,8 @@ EmptyVideo* EmptyVideo::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.2.1/$.uno
+// -------------------------------------------------------------
 
 // internal sealed class GraphicsVideoService :677
 // {
@@ -645,8 +645,8 @@ GraphicsVideoService* GraphicsVideoService::New1(uObject* callbacks)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.2.1/$.uno
+// -------------------------------------------------------------
 
 // internal abstract interface IVideoCallbacks :626
 // {
@@ -660,8 +660,8 @@ uInterfaceType* IVideoCallbacks_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.2.1/$.uno
+// -------------------------------------------------------------
 
 // internal abstract interface IVideoPlayer :13
 // {
@@ -675,8 +675,8 @@ uInterfaceType* IVideoPlayer_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.2.1/$.uno
+// -------------------------------------------------------------
 
 // internal abstract interface IVideoService :600
 // {
@@ -690,8 +690,8 @@ uInterfaceType* IVideoService_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.2.1/$.uno
+// -------------------------------------------------------------
 
 // internal sealed class LoadingClosure :635
 // {
@@ -794,8 +794,8 @@ LoadingClosure* LoadingClosure::New1(::g::Uno::Threading::Future1* loadedFuture,
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.2.1/$.uno
+// -------------------------------------------------------------
 
 // internal sealed class Scale9Rectangle :1344
 // {
@@ -918,8 +918,8 @@ Scale9Rectangle* Scale9Rectangle::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.2.1/$.uno
+// -------------------------------------------------------------
 
 // internal static class VideoDiskCache :892
 // {
@@ -935,7 +935,7 @@ static void VideoDiskCache_build(uType* type)
     ::STRINGS[0] = uString::Const("/tempVideo");
     ::STRINGS[1] = uString::Const(".");
     ::STRINGS[2] = uString::Const("Deleting temporary file: ");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Video/1.2.1/$.uno");
     ::TYPES[11] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
     ::TYPES[12] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Platform::ApplicationState_typeof(), NULL);
     ::TYPES[13] = ::g::Uno::Char_typeof()->Array();
@@ -1025,15 +1025,15 @@ void VideoDiskCache::OnTerminating(int newState)
 
         if (::g::Uno::IO::File::Exists(pair.Value(::TYPES[16/*Uno.Collections.KeyValuePair<string, string>*/])))
         {
-            ::g::Uno::Diagnostics::Debug::Log5(::g::Uno::String::op_Addition2(::STRINGS[2/*"Deleting te...*/], pair.Value(::TYPES[16/*Uno.Collections.KeyValuePair<string, string>*/])), 1, ::STRINGS[3/*"/Users/eric...*/], 910);
+            ::g::Uno::Diagnostics::Debug::Log5(::g::Uno::String::op_Addition2(::STRINGS[2/*"Deleting te...*/], pair.Value(::TYPES[16/*Uno.Collections.KeyValuePair<string, string>*/])), 0, ::STRINGS[3/*"/usr/local/...*/], 910);
             ::g::Uno::IO::File::Delete(pair.Value(::TYPES[16/*Uno.Collections.KeyValuePair<string, string>*/]));
         }
     }
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.2.1/$.uno
+// -------------------------------------------------------------
 
 // internal sealed class VideoDrawElement :1313
 // {
@@ -1144,8 +1144,8 @@ VideoDrawElement* VideoDrawElement::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.2.1/$.uno
+// -------------------------------------------------------------
 
 // internal static class VideoLoader :953
 // {
@@ -1195,15 +1195,15 @@ void VideoLoader__Load1_fn(::g::Uno::UX::FileSource* file, ::g::Uno::Threading::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.2.1/$.uno
+// -------------------------------------------------------------
 
 // internal sealed extern class VideoVisual :1028
 // {
 static void VideoVisual_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("Video error");
-    ::STRINGS[3] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Video/1.2.1/$.uno");
     ::STRINGS[6] = uString::Const("Fuse.Controls.VideoImpl.IVideoCallbacks.OnError");
     ::STRINGS[7] = uString::Const("");
     ::STRINGS[8] = uString::Const("IPlayback.PlayTo(double) not supported in Fuse.Controls.Video");
@@ -1225,13 +1225,14 @@ static void VideoVisual_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(VideoVisual_type, interface5),
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(VideoVisual_type, interface6),
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(VideoVisual_type, interface7),
-        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(VideoVisual_type, interface8),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(VideoVisual_type, interface9),
-        ::g::Fuse::Controls::VideoImpl::IVideoCallbacks_typeof(), offsetof(VideoVisual_type, interface10),
-        ::TYPES[21/*Fuse.Triggers.IMediaPlayback*/], offsetof(VideoVisual_type, interface11),
-        ::TYPES[20/*Fuse.Triggers.IPlayback*/], offsetof(VideoVisual_type, interface12),
-        ::g::Fuse::Triggers::IProgress_typeof(), offsetof(VideoVisual_type, interface13));
-    type->SetFields(58,
+        ::g::Fuse::ITemplateSource_typeof(), offsetof(VideoVisual_type, interface8),
+        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(VideoVisual_type, interface9),
+        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(VideoVisual_type, interface10),
+        ::g::Fuse::Controls::VideoImpl::IVideoCallbacks_typeof(), offsetof(VideoVisual_type, interface11),
+        ::TYPES[21/*Fuse.Triggers.IMediaPlayback*/], offsetof(VideoVisual_type, interface12),
+        ::TYPES[20/*Fuse.Triggers.IPlayback*/], offsetof(VideoVisual_type, interface13),
+        ::g::Fuse::Triggers::IProgress_typeof(), offsetof(VideoVisual_type, interface14));
+    type->SetFields(64,
         ::g::Fuse::Triggers::BusyTask_typeof(), offsetof(::g::Fuse::Controls::VideoImpl::VideoVisual, _busyTask), 0,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Controls::VideoImpl::VideoVisual, _drawOrigin), 0,
         ::g::Uno::Float2_typeof(), offsetof(::g::Fuse::Controls::VideoImpl::VideoVisual, _drawSize), 0,
@@ -1252,8 +1253,8 @@ VideoVisual_type* VideoVisual_typeof()
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Graphics::ControlVisual_typeof();
-    options.FieldCount = 69;
-    options.InterfaceCount = 14;
+    options.FieldCount = 75;
+    options.InterfaceCount = 15;
     options.ObjectSize = sizeof(VideoVisual);
     options.TypeSize = sizeof(VideoVisual_type);
     type = (VideoVisual_type*)uClassType::New("Fuse.Controls.VideoImpl.VideoVisual", options);
@@ -1265,39 +1266,40 @@ VideoVisual_type* VideoVisual_typeof()
     type->fp_GetMarginSize = (void(*)(::g::Fuse::Visual*, ::g::Fuse::LayoutParams*, ::g::Uno::Float2*))VideoVisual__GetMarginSize_fn;
     type->fp_OnArrangeMarginBox = (void(*)(::g::Fuse::Visual*, ::g::Uno::Float2*, ::g::Fuse::LayoutParams*, ::g::Uno::Float2*))VideoVisual__OnArrangeMarginBox_fn;
     type->fp_OnHitTest = (void(*)(::g::Fuse::Visual*, ::g::Fuse::HitTestContext*))VideoVisual__OnHitTest_fn;
-    type->interface10.fp_OnFrameAvailable = (void(*)(uObject*))VideoVisual__FuseControlsVideoImplIVideoCallbacksOnFrameAvailable_fn;
-    type->interface10.fp_OnError = (void(*)(uObject*, ::g::Uno::Exception*))VideoVisual__FuseControlsVideoImplIVideoCallbacksOnError_fn;
-    type->interface10.fp_OnLoading = (void(*)(uObject*))VideoVisual__FuseControlsVideoImplIVideoCallbacksOnLoading_fn;
-    type->interface10.fp_OnReady = (void(*)(uObject*))VideoVisual__FuseControlsVideoImplIVideoCallbacksOnReady_fn;
-    type->interface10.fp_OnCompleted = (void(*)(uObject*))VideoVisual__FuseControlsVideoImplIVideoCallbacksOnCompleted_fn;
-    type->interface12.fp_Stop = (void(*)(uObject*))VideoVisual__FuseTriggersIPlaybackStop_fn;
-    type->interface12.fp_PlayTo = (void(*)(uObject*, double*))VideoVisual__FuseTriggersIPlaybackPlayTo_fn;
-    type->interface12.fp_Pause = (void(*)(uObject*))VideoVisual__FuseTriggersIPlaybackPause_fn;
-    type->interface12.fp_Resume = (void(*)(uObject*))VideoVisual__FuseTriggersIPlaybackResume_fn;
-    type->interface11.fp_get_Volume = (void(*)(uObject*, float*))VideoVisual__FuseTriggersIMediaPlaybackget_Volume_fn;
-    type->interface11.fp_set_Volume = (void(*)(uObject*, float*))VideoVisual__FuseTriggersIMediaPlaybackset_Volume_fn;
-    type->interface11.fp_get_Position = (void(*)(uObject*, double*))VideoVisual__FuseTriggersIMediaPlaybackget_Position_fn;
-    type->interface11.fp_set_Position = (void(*)(uObject*, double*))VideoVisual__FuseTriggersIMediaPlaybackset_Position_fn;
-    type->interface11.fp_get_Duration = (void(*)(uObject*, double*))VideoVisual__FuseTriggersIMediaPlaybackget_Duration_fn;
-    type->interface12.fp_get_CanPlayTo = (void(*)(uObject*, bool*))VideoVisual__FuseTriggersIPlaybackget_CanPlayTo_fn;
-    type->interface13.fp_get_Progress = (void(*)(uObject*, double*))VideoVisual__FuseTriggersIProgressget_Progress_fn;
-    type->interface12.fp_get_Progress = (void(*)(uObject*, double*))VideoVisual__FuseTriggersIPlaybackget_Progress_fn;
-    type->interface12.fp_set_Progress = (void(*)(uObject*, double*))VideoVisual__FuseTriggersIPlaybackset_Progress_fn;
-    type->interface12.fp_get_CanStop = (void(*)(uObject*, bool*))VideoVisual__FuseTriggersIPlaybackget_CanStop_fn;
-    type->interface12.fp_get_CanPause = (void(*)(uObject*, bool*))VideoVisual__FuseTriggersIPlaybackget_CanPause_fn;
-    type->interface12.fp_get_CanResume = (void(*)(uObject*, bool*))VideoVisual__FuseTriggersIPlaybackget_CanResume_fn;
-    type->interface13.fp_add_ProgressChanged = (void(*)(uObject*, uDelegate*))VideoVisual__FuseTriggersIProgressadd_ProgressChanged_fn;
-    type->interface13.fp_remove_ProgressChanged = (void(*)(uObject*, uDelegate*))VideoVisual__FuseTriggersIProgressremove_ProgressChanged_fn;
-    type->interface8.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
-    type->interface8.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
+    type->interface11.fp_OnFrameAvailable = (void(*)(uObject*))VideoVisual__FuseControlsVideoImplIVideoCallbacksOnFrameAvailable_fn;
+    type->interface11.fp_OnError = (void(*)(uObject*, ::g::Uno::Exception*))VideoVisual__FuseControlsVideoImplIVideoCallbacksOnError_fn;
+    type->interface11.fp_OnLoading = (void(*)(uObject*))VideoVisual__FuseControlsVideoImplIVideoCallbacksOnLoading_fn;
+    type->interface11.fp_OnReady = (void(*)(uObject*))VideoVisual__FuseControlsVideoImplIVideoCallbacksOnReady_fn;
+    type->interface11.fp_OnCompleted = (void(*)(uObject*))VideoVisual__FuseControlsVideoImplIVideoCallbacksOnCompleted_fn;
+    type->interface13.fp_Stop = (void(*)(uObject*))VideoVisual__FuseTriggersIPlaybackStop_fn;
+    type->interface13.fp_PlayTo = (void(*)(uObject*, double*))VideoVisual__FuseTriggersIPlaybackPlayTo_fn;
+    type->interface13.fp_Pause = (void(*)(uObject*))VideoVisual__FuseTriggersIPlaybackPause_fn;
+    type->interface13.fp_Resume = (void(*)(uObject*))VideoVisual__FuseTriggersIPlaybackResume_fn;
+    type->interface12.fp_get_Volume = (void(*)(uObject*, float*))VideoVisual__FuseTriggersIMediaPlaybackget_Volume_fn;
+    type->interface12.fp_set_Volume = (void(*)(uObject*, float*))VideoVisual__FuseTriggersIMediaPlaybackset_Volume_fn;
+    type->interface12.fp_get_Position = (void(*)(uObject*, double*))VideoVisual__FuseTriggersIMediaPlaybackget_Position_fn;
+    type->interface12.fp_set_Position = (void(*)(uObject*, double*))VideoVisual__FuseTriggersIMediaPlaybackset_Position_fn;
+    type->interface12.fp_get_Duration = (void(*)(uObject*, double*))VideoVisual__FuseTriggersIMediaPlaybackget_Duration_fn;
+    type->interface13.fp_get_CanPlayTo = (void(*)(uObject*, bool*))VideoVisual__FuseTriggersIPlaybackget_CanPlayTo_fn;
+    type->interface14.fp_get_Progress = (void(*)(uObject*, double*))VideoVisual__FuseTriggersIProgressget_Progress_fn;
+    type->interface13.fp_get_Progress = (void(*)(uObject*, double*))VideoVisual__FuseTriggersIPlaybackget_Progress_fn;
+    type->interface13.fp_set_Progress = (void(*)(uObject*, double*))VideoVisual__FuseTriggersIPlaybackset_Progress_fn;
+    type->interface13.fp_get_CanStop = (void(*)(uObject*, bool*))VideoVisual__FuseTriggersIPlaybackget_CanStop_fn;
+    type->interface13.fp_get_CanPause = (void(*)(uObject*, bool*))VideoVisual__FuseTriggersIPlaybackget_CanPause_fn;
+    type->interface13.fp_get_CanResume = (void(*)(uObject*, bool*))VideoVisual__FuseTriggersIPlaybackget_CanResume_fn;
+    type->interface14.fp_add_ProgressChanged = (void(*)(uObject*, uDelegate*))VideoVisual__FuseTriggersIProgressadd_ProgressChanged_fn;
+    type->interface14.fp_remove_ProgressChanged = (void(*)(uObject*, uDelegate*))VideoVisual__FuseTriggersIProgressremove_ProgressChanged_fn;
+    type->interface9.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
+    type->interface9.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
     type->interface6.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsIListFuseNodeRemoveAt_fn;
-    type->interface9.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
-    type->interface8.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
+    type->interface10.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
+    type->interface9.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
     type->interface6.fp_get_Item = (void(*)(uObject*, int*, uTRef))::g::Fuse::Visual__UnoCollectionsIListFuseNodeget_Item_fn;
     type->interface6.fp_Insert = (void(*)(uObject*, int*, void*))::g::Fuse::Visual__Insert1_fn;
     type->interface7.fp_OnPropertyChanged = (void(*)(uObject*, ::g::Uno::UX::PropertyObject*, ::g::Uno::UX::Selector*))::g::Fuse::Visual__OnPropertyChanged2_fn;
-    type->interface8.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
-    type->interface8.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
+    type->interface8.fp_FindTemplate = (void(*)(uObject*, uString*, ::g::Uno::UX::Template**))::g::Fuse::Visual__FindTemplate_fn;
+    type->interface9.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
+    type->interface9.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
     type->interface4.fp_Clear = (void(*)(uObject*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingClear_fn;
     type->interface4.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingContains_fn;
     type->interface0.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Node__UnoCollectionsIListFuseBindingRemoveAt_fn;
@@ -1401,7 +1403,7 @@ void VideoVisual__FuseControlsVideoImplIVideoCallbacksOnError_fn(VideoVisual* __
     ::g::Fuse::Controls::Video* ret16;
     __this->ResetTriggers();
     ::g::Fuse::Triggers::BusyTask::SetBusy((::g::Fuse::Controls::Graphics::ControlVisual__get_Control_fn(__this, &ret16), ret16), &__this->_busyTask, 16, uPtr(e)->Message());
-    ::g::Fuse::Diagnostics::UnknownException(::STRINGS[5/*"Video error"*/], e, __this, ::STRINGS[3/*"/Users/eric...*/], 1081, ::STRINGS[6/*"Fuse.Contro...*/]);
+    ::g::Fuse::Diagnostics::UnknownException(::STRINGS[5/*"Video error"*/], e, __this, ::STRINGS[3/*"/usr/local/...*/], 1081, ::STRINGS[6/*"Fuse.Contro...*/]);
 }
 
 // private void Fuse.Controls.VideoImpl.IVideoCallbacks.OnFrameAvailable() :1067
@@ -1513,7 +1515,7 @@ void VideoVisual__FuseTriggersIPlaybackPause_fn(VideoVisual* __this)
 // private void Fuse.Triggers.IPlayback.PlayTo(double progress) :1128
 void VideoVisual__FuseTriggersIPlaybackPlayTo_fn(VideoVisual* __this, double* progress)
 {
-    ::g::Fuse::Diagnostics::Unsupported(::STRINGS[8/*"IPlayback.P...*/], __this, ::STRINGS[3/*"/Users/eric...*/], 1130, ::STRINGS[9/*"Fuse.Trigge...*/]);
+    ::g::Fuse::Diagnostics::Unsupported(::STRINGS[8/*"IPlayback.P...*/], __this, ::STRINGS[3/*"/usr/local/...*/], 1130, ::STRINGS[9/*"Fuse.Trigge...*/]);
 }
 
 // private double Fuse.Triggers.IPlayback.get_Progress() :1163

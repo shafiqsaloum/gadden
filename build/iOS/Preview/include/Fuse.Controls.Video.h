@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Controls.Video/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Video/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,11 +9,12 @@
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
+#include <Fuse.ITemplateSource.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Fuse.Triggers.IMediaPlayback.h>
 #include <Fuse.Triggers.IPlayback.h>
 #include <Fuse.Triggers.IProgress.h>
@@ -36,9 +37,9 @@ namespace Controls{
 // {
 struct Video_type : ::g::Fuse::Controls::Panel_type
 {
-    ::g::Fuse::Triggers::IMediaPlayback interface16;
-    ::g::Fuse::Triggers::IPlayback interface17;
-    ::g::Fuse::Triggers::IProgress interface18;
+    ::g::Fuse::Triggers::IMediaPlayback interface17;
+    ::g::Fuse::Triggers::IPlayback interface18;
+    ::g::Fuse::Triggers::IProgress interface19;
 };
 
 Video_type* Video_typeof();

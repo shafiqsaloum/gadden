@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{namespace Uno{struct Int3;}}
 namespace g{
 namespace Fuse{
 
-// internal sealed class Version.Parser :3592
+// internal sealed class Version.Parser :3956
 // {
 uType* Version__Parser_typeof();
 void Version__Parser__ctor__fn(Version__Parser* __this, ::g::Uno::IO::TextReader* textReader);

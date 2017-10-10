@@ -1,18 +1,19 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Binding.h>
-#include <Fuse.Elements.Element-e8906a44.h>
+#include <Fuse.Elements.Element.GMSCacheItem.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
+#include <Fuse.ITemplateSource.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
+#include <Fuse.Triggers.Actions.ICollapse.h>
 #include <Fuse.Triggers.Actions.IHide.h>
 #include <Fuse.Triggers.Actions.IShow.h>
-#include <Fuse.Triggers.Actions-ea70af1f.h>
 #include <Fuse.Visual.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
@@ -26,13 +27,13 @@ namespace g{namespace Fuse{namespace Elements{struct Cache;}}}
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementBatchEntry;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementBatcher;}}}
+namespace g{namespace Fuse{struct Box;}}
 namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct FastMatrix;}}
 namespace g{namespace Fuse{struct HitTestContext;}}
 namespace g{namespace Fuse{struct LayoutParams;}}
 namespace g{namespace Fuse{struct VisualBounds;}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
-namespace g{namespace Uno{namespace Geometry{struct Box;}}}
 namespace g{namespace Uno{namespace Graphics{struct Framebuffer;}}}
 namespace g{namespace Uno{namespace UX{struct Selector;}}}
 namespace g{namespace Uno{namespace UX{struct Size2;}}}
@@ -50,11 +51,11 @@ namespace Elements{
 // {
 struct Element_type : ::g::Fuse::Visual_type
 {
-    ::g::Fuse::Triggers::Actions::IShow interface10;
-    ::g::Fuse::Triggers::Actions::IHide interface11;
-    ::g::Fuse::Triggers::Actions::ICollapse interface12;
-    ::g::Fuse::IActualPlacement interface13;
-    ::g::Fuse::Animations::IResize interface14;
+    ::g::Fuse::Triggers::Actions::IShow interface11;
+    ::g::Fuse::Triggers::Actions::IHide interface12;
+    ::g::Fuse::Triggers::Actions::ICollapse interface13;
+    ::g::Fuse::IActualPlacement interface14;
+    ::g::Fuse::Animations::IResize interface15;
     void(*fp_ArrangePaddingBox)(::g::Fuse::Elements::Element*, ::g::Fuse::LayoutParams*);
     void(*fp_CalcRenderBounds)(::g::Fuse::Elements::Element*, ::g::Fuse::VisualBounds**);
     void(*fp_DrawWithChildren)(::g::Fuse::Elements::Element*, ::g::Fuse::DrawContext*);
@@ -147,7 +148,7 @@ void Element__get_LimitHeight_fn(Element* __this, ::g::Uno::UX::Size* __retval);
 void Element__set_LimitHeight_fn(Element* __this, ::g::Uno::UX::Size* value);
 void Element__get_LimitWidth_fn(Element* __this, ::g::Uno::UX::Size* __retval);
 void Element__set_LimitWidth_fn(Element* __this, ::g::Uno::UX::Size* value);
-void Element__get_LocalBounds_fn(Element* __this, ::g::Uno::Geometry::Box* __retval);
+void Element__get_LocalBounds_fn(Element* __this, ::g::Fuse::Box* __retval);
 void Element__get_LocalRenderBounds_fn(Element* __this, ::g::Fuse::VisualBounds** __retval);
 void Element__get_Margin_fn(Element* __this, ::g::Uno::Float4* __retval);
 void Element__set_Margin_fn(Element* __this, ::g::Uno::Float4* value);
@@ -440,10 +441,10 @@ struct Element : ::g::Fuse::Visual
 
 }}} // ::g::Fuse::Elements
 
+#include <Fuse.Box.h>
 #include <Fuse.LayoutParams.h>
 #include <Uno.Float3.h>
 #include <Uno.Float4.h>
-#include <Uno.Geometry.Box.h>
 #include <Uno.Rect.h>
 #include <Uno.Recti.h>
 #include <Uno.UX.Size2.h>

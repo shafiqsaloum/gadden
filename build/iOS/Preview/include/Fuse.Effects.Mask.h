@@ -1,18 +1,18 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Effects/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Effects/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Binding.h>
 #include <Fuse.Effects.BasicEffect.h>
 #include <Fuse.INotifyUnrooted.h>
-#include <Fuse.Internal.IImageC-c450902.h>
+#include <Fuse.Internal.IImageContainerOwner.h>
 #include <Fuse.IProperties.h>
 #include <Fuse.Scripting.IScriptObject.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
 #include <Uno.Float4x4.h>
-#include <Uno.Runtime.Implement-476e2792.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
 namespace g{namespace Fuse{namespace Effects{struct Mask;}}}
 namespace g{namespace Fuse{namespace Internal{struct ImageContainer;}}}
 namespace g{namespace Fuse{namespace Resources{struct ImageSource;}}}
@@ -46,6 +46,8 @@ void Mask__set_Mode_fn(Mask* __this, int* value);
 void Mask__ModifyRenderBounds_fn(Mask* __this, ::g::Fuse::VisualBounds* inBounds, ::g::Fuse::VisualBounds** __retval);
 void Mask__New2_fn(Mask** __retval);
 void Mask__OnRender_fn(Mask* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Rect* elementRect);
+void Mask__OnRooted_fn(Mask* __this);
+void Mask__OnUnrooted_fn(Mask* __this);
 void Mask__get_Source_fn(Mask* __this, ::g::Fuse::Resources::ImageSource** __retval);
 void Mask__set_Source_fn(Mask* __this, ::g::Fuse::Resources::ImageSource* value);
 

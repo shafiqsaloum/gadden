@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/diagnostics/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace g{
 namespace Uno{
 namespace Diagnostics{
 
-// public sealed class IdMap<T> :249
+// public sealed class IdMap<T> :256
 // {
 uType* IdMap_typeof();
 void IdMap__ctor__fn(IdMap* __this, bool* twoWay);

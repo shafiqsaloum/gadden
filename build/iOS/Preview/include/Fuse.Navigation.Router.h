@@ -1,11 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Navigation/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Navigation/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Binding.h>
 #include <Fuse.INotifyUnrooted.h>
 #include <Fuse.IProperties.h>
-#include <Fuse.Navigation.IBase-84e3f965.h>
+#include <Fuse.Navigation.IBaseNavigation.h>
 #include <Fuse.Node.h>
 #include <Fuse.Scripting.IScriptObject.h>
 #include <Uno.Collections.ICollection-1.h>
@@ -24,7 +24,7 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// public partial sealed class Router :2062
+// public partial sealed class Router :2519
 // {
 struct Router_type : ::g::Fuse::Node_type
 {
@@ -47,11 +47,11 @@ void Router__FuseNavigationIBaseNavigationget_CanGoForward_fn(Router* __this, bo
 void Router__FuseNavigationIBaseNavigationGoForward_fn(Router* __this);
 void Router__GetCurrent_fn(Router* __this, ::g::Fuse::Visual* from, uObject* to, ::g::Fuse::Navigation::Route** __retval);
 void Router__GetCurrentRoute_fn(Router* __this, ::g::Fuse::Navigation::Route** __retval);
-void Router__GetCurrentUp_fn(Router* __this, ::g::Fuse::Node* from, ::g::Fuse::Navigation::Route** __retval);
 void Router__GetOutletDepth_fn(Router* __this, uObject* outlet, int* __retval);
 void Router__GetRelative_fn(::g::Fuse::Scripting::Context* c, Router* r, uArray* args, ::g::Fuse::Navigation::Route** __retval);
 void Router__GetRelativeRoute_fn(Router* __this, ::g::Fuse::Node* from, ::g::Fuse::Navigation::Route* rel, ::g::Fuse::Navigation::Route** __retval);
 void Router__GetRoute_fn(::g::Fuse::Scripting::Context* c, Router* r, uArray* args);
+void Router__GetRouteUpToRouter_fn(Router* __this, ::g::Fuse::Node* from, ::g::Fuse::Navigation::Route** __retval);
 void Router__GoBack_fn(Router* __this);
 void Router__GoBack1_fn(::g::Fuse::Scripting::Context* c, Router* r, uArray* args);
 void Router__Goto_fn(Router* __this, ::g::Fuse::Navigation::Route* route, uString* operationStyle);
@@ -60,6 +60,7 @@ void Router__GotoMasterRoute_fn(Router* __this);
 void Router__GotoRelative_fn(::g::Fuse::Scripting::Context* c, Router* r, uArray* args);
 void Router__GoUp_fn(Router* __this);
 void Router__HasOtherRouter_fn(Router* __this, ::g::Fuse::Visual* n, bool* __retval);
+void Router__HasRouter_fn(Router* __this, ::g::Fuse::Visual* n, bool* __retval);
 void Router__add_HistoryChanged_fn(Router* __this, uDelegate* value);
 void Router__remove_HistoryChanged_fn(Router* __this, uDelegate* value);
 void Router__get_IsMasterRouter_fn(Router* __this, bool* __retval);
@@ -117,14 +118,15 @@ struct Router : ::g::Fuse::Node
     void FinishPrepared();
     ::g::Fuse::Navigation::Route* GetCurrent(::g::Fuse::Visual* from, uObject* to);
     ::g::Fuse::Navigation::Route* GetCurrentRoute();
-    ::g::Fuse::Navigation::Route* GetCurrentUp(::g::Fuse::Node* from);
     int GetOutletDepth(uObject* outlet);
     ::g::Fuse::Navigation::Route* GetRelativeRoute(::g::Fuse::Node* from, ::g::Fuse::Navigation::Route* rel);
+    ::g::Fuse::Navigation::Route* GetRouteUpToRouter(::g::Fuse::Node* from);
     void GoBack();
     void Goto(::g::Fuse::Navigation::Route* route, uString* operationStyle);
     void GotoMasterRoute();
     void GoUp();
     bool HasOtherRouter(::g::Fuse::Visual* n);
+    bool HasRouter(::g::Fuse::Visual* n);
     void add_HistoryChanged(uDelegate* value);
     void remove_HistoryChanged(uDelegate* value);
     bool IsMasterRouter();

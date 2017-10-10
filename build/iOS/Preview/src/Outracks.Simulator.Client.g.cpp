@@ -30,7 +30,7 @@
 #include <Fuse.Input.PointerMovedArgs.h>
 #include <Fuse.Input.PointerPressedArgs.h>
 #include <Fuse.Input.PointerReleasedArgs.h>
-#include <Fuse.Input.PointerWhe-656d8f41.h>
+#include <Fuse.Input.PointerWheelMovedArgs.h>
 #include <Fuse.Layouts.Orientation.h>
 #include <Fuse.Node.h>
 #include <Fuse.Timer.h>
@@ -40,66 +40,66 @@
 #include <Outracks.IBinaryMessage.h>
 #include <Outracks.Optional.h>
 #include <Outracks.Optional-1.h>
-#include <Outracks.Simulator.By-3fb73d1c.h>
-#include <Outracks.Simulator.By-c66e3e07.h>
-#include <Outracks.Simulator.Cl-120d77c1.h>
-#include <Outracks.Simulator.Cl-1a17011c.h>
-#include <Outracks.Simulator.Cl-1b215019.h>
-#include <Outracks.Simulator.Cl-33b9bd5e.h>
-#include <Outracks.Simulator.Cl-37a4bf3c.h>
-#include <Outracks.Simulator.Cl-3fa957cd.h>
-#include <Outracks.Simulator.Cl-406bdb32.h>
-#include <Outracks.Simulator.Cl-48b3f4fb.h>
-#include <Outracks.Simulator.Cl-49659bf2.h>
-#include <Outracks.Simulator.Cl-4ab4e5d1.h>
-#include <Outracks.Simulator.Cl-4c8bca2c.h>
-#include <Outracks.Simulator.Cl-6212198a.h>
-#include <Outracks.Simulator.Cl-73f02d32.h>
-#include <Outracks.Simulator.Cl-75fc1ba.h>
-#include <Outracks.Simulator.Cl-76415cc8.h>
-#include <Outracks.Simulator.Cl-769345e6.h>
-#include <Outracks.Simulator.Cl-836a59ac.h>
-#include <Outracks.Simulator.Cl-964115cd.h>
-#include <Outracks.Simulator.Cl-990772b4.h>
-#include <Outracks.Simulator.Cl-9b13a41f.h>
-#include <Outracks.Simulator.Cl-aca6e979.h>
-#include <Outracks.Simulator.Cl-ad171c29.h>
-#include <Outracks.Simulator.Cl-ae253a04.h>
-#include <Outracks.Simulator.Cl-b47ea6ce.h>
-#include <Outracks.Simulator.Cl-ce790bfc.h>
-#include <Outracks.Simulator.Cl-d43770dc.h>
-#include <Outracks.Simulator.Cl-de0df58f.h>
-#include <Outracks.Simulator.Cl-e12028b1.h>
-#include <Outracks.Simulator.Cl-e973d727.h>
-#include <Outracks.Simulator.Cl-ee1b7f8e.h>
-#include <Outracks.Simulator.Cl-f37d8846.h>
+#include <Outracks.Simulator.Bytecode.Lambda.h>
+#include <Outracks.Simulator.Bytecode.ProjectBytecode.h>
+#include <Outracks.Simulator.Client.Application.h>
+#include <Outracks.Simulator.Client.BytecodeCache.h>
+#include <Outracks.Simulator.Client.ChangeIp.h>
+#include <Outracks.Simulator.Client.Connected.h>
+#include <Outracks.Simulator.Client.Connecting.h>
+#include <Outracks.Simulator.Client.ConnectingToHost.h>
+#include <Outracks.Simulator.Client.ConnectingToProxy.h>
+#include <Outracks.Simulator.Client.ConnectionLost.h>
+#include <Outracks.Simulator.Client.Context.h>
+#include <Outracks.Simulator.Client.DesignerNotRunning.h>
+#include <Outracks.Simulator.Client.DeviceInfo.h>
+#include <Outracks.Simulator.Client.DialogButton.h>
+#include <Outracks.Simulator.Client.Dialogs.LoadingScreen.h>
+#include <Outracks.Simulator.Client.Dialogs.ModalDialog.h>
+#include <Outracks.Simulator.Client.EmptyClass.h>
+#include <Outracks.Simulator.Client.Exceptions.h>
+#include <Outracks.Simulator.Client.FailedToConnect.h>
+#include <Outracks.Simulator.Client.FakeApp.h>
+#include <Outracks.Simulator.Client.Faulted.h>
+#include <Outracks.Simulator.Client.GoOffline.h>
 #include <Outracks.Simulator.Client.Idle.h>
+#include <Outracks.Simulator.Client.InputMode.h>
+#include <Outracks.Simulator.Client.LoadingScreen.h>
+#include <Outracks.Simulator.Client.ModalDialog.h>
+#include <Outracks.Simulator.Client.Reifying.h>
+#include <Outracks.Simulator.Client.Running.h>
+#include <Outracks.Simulator.Client.ShowingModalDialog.h>
+#include <Outracks.Simulator.Client.ShowingPrompt.h>
+#include <Outracks.Simulator.Client.State.h>
+#include <Outracks.Simulator.Client.Uninitialized.h>
+#include <Outracks.Simulator.Client.UserAppState.h>
+#include <Outracks.Simulator.Client.VirtualMachine.h>
 #include <Outracks.Simulator.Closure.h>
-#include <Outracks.Simulator.Co-6107db6e.h>
-#include <Outracks.Simulator.Co-be174b5d.h>
-#include <Outracks.Simulator.De-bd4defb7.h>
-#include <Outracks.Simulator.De-d26d7421.h>
-#include <Outracks.Simulator.Fo-7466e78c.h>
-#include <Outracks.Simulator.IS-5cd3f04c.h>
-#include <Outracks.Simulator.Of-c5e231f4.h>
-#include <Outracks.Simulator.Pr-1306b863.h>
-#include <Outracks.Simulator.Pr-156ddfb3.h>
-#include <Outracks.Simulator.Pr-51753a1d.h>
-#include <Outracks.Simulator.Pr-59de7475.h>
-#include <Outracks.Simulator.Pr-5b87553c.h>
-#include <Outracks.Simulator.Pr-694bb62e.h>
-#include <Outracks.Simulator.Pr-81de9449.h>
-#include <Outracks.Simulator.Pr-998e636c.h>
-#include <Outracks.Simulator.Pr-bed485a.h>
-#include <Outracks.Simulator.Pr-e0a02f28.h>
+#include <Outracks.Simulator.ConcurrentQueue-1.h>
+#include <Outracks.Simulator.ConnectToFirstRespondingEndpoint.h>
+#include <Outracks.Simulator.DesignerNotRunning.h>
+#include <Outracks.Simulator.DeveloperMenu.h>
+#include <Outracks.Simulator.ForgetAction-2.h>
+#include <Outracks.Simulator.ISimulatorClient.h>
+#include <Outracks.Simulator.OfflineSimulatorClient.h>
+#include <Outracks.Simulator.Protocol.BytecodeGenerated.h>
+#include <Outracks.Simulator.Protocol.BytecodeUpdated.h>
+#include <Outracks.Simulator.Protocol.DebugLog.h>
+#include <Outracks.Simulator.Protocol.Diagnostic.h>
+#include <Outracks.Simulator.Protocol.DismissDiagnostic.h>
+#include <Outracks.Simulator.Protocol.Error.h>
+#include <Outracks.Simulator.Protocol.ExceptionInfo.h>
+#include <Outracks.Simulator.Protocol.Ready.h>
+#include <Outracks.Simulator.Protocol.RegisterName.h>
+#include <Outracks.Simulator.Protocol.UnhandledException.h>
 #include <Outracks.Simulator.ProxyClient.h>
-#include <Outracks.Simulator.Ru-17d57c15.h>
-#include <Outracks.Simulator.Ru-34926e08.h>
-#include <Outracks.Simulator.Ru-89c0ca37.h>
-#include <Outracks.Simulator.Si-ca2693fb.h>
+#include <Outracks.Simulator.Runtime.Environment.h>
+#include <Outracks.Simulator.Runtime.IReflection.h>
+#include <Outracks.Simulator.Runtime.ScopeClosure.h>
+#include <Outracks.Simulator.SimulatorClient.h>
 #include <Outracks.Simulator.Task-1.h>
 #include <Outracks.UnoBinaryMessage.h>
-#include <Outracks.UnoHost.Bina-58253e0.h>
+#include <Outracks.UnoHost.BinaryMessageInbox.h>
 #include <Outracks.UnoHost.FusionInterop.h>
 #include <System.IO.BinaryReader.h>
 #include <System.IO.BinaryWriter.h>
@@ -107,20 +107,20 @@
 #include <Uno.Action-1.h>
 #include <Uno.AggregateException.h>
 #include <Uno.Bool.h>
-#include <Uno.Collections.Dicti-d1699346.h>
+#include <Uno.Collections.Dictionary-2.Enumerator.h>
 #include <Uno.Collections.Dictionary-2.h>
-#include <Uno.Collections.Enume-8ddd045.h>
+#include <Uno.Collections.EnumerableExtensions.h>
 #include <Uno.Collections.ICollection-1.h>
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IEnumerator.h>
 #include <Uno.Collections.IEnumerator-1.h>
 #include <Uno.Collections.IList-1.h>
-#include <Uno.Collections.IList-b56be992.h>
+#include <Uno.Collections.IListExtensions.h>
 #include <Uno.Collections.KeyValuePair-2.h>
 #include <Uno.Collections.List-1.h>
-#include <Uno.Collections.ReadO-235c1e0d.h>
+#include <Uno.Collections.ReadOnlyCollection-1.h>
 #include <Uno.Diagnostics.Debug.h>
-#include <Uno.Diagnostics.Debug-5d778620.h>
+#include <Uno.Diagnostics.DebugMessageType.h>
 #include <Uno.Diagnostics.LogHandler.h>
 #include <Uno.Double.h>
 #include <Uno.Exception.h>
@@ -138,11 +138,11 @@
 #include <Uno.Net.IPEndPoint.h>
 #include <Uno.Net.Sockets.Socket.h>
 #include <Uno.Object.h>
-#include <Uno.Platform.Applicat-bf686309.h>
+#include <Uno.Platform.ApplicationStateTransitionHandler.h>
 #include <Uno.Platform.CoreApp.h>
 #include <Uno.Platform.Display.h>
 #include <Uno.Platform.Displays.h>
-#include <Uno.Runtime.Implement-eca777ec.h>
+#include <Uno.Runtime.Implementation.Internal.ArrayEnumerable-1.h>
 #include <Uno.String.h>
 #include <Uno.Threading.Monitor.h>
 #include <Uno.Type.h>
@@ -1901,15 +1901,16 @@ static void FakeApp_build(uType* type)
         ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface5),
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface6),
         ::g::Uno::UX::IPropertyListener_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface7),
-        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface8),
-        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface9),
-        ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface10),
-        ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface11),
-        ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface12),
-        ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface13),
-        ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface14),
-        ::g::Fuse::Drawing::ISurfaceDrawable_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface15));
-    type->SetFields(105,
+        ::g::Fuse::ITemplateSource_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface8),
+        ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface9),
+        ::g::Uno::Collections::IEnumerable_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL), offsetof(::g::Fuse::Controls::Panel_type, interface10),
+        ::g::Fuse::Triggers::Actions::IShow_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface11),
+        ::g::Fuse::Triggers::Actions::IHide_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface12),
+        ::g::Fuse::Triggers::Actions::ICollapse_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface13),
+        ::g::Fuse::IActualPlacement_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface14),
+        ::g::Fuse::Animations::IResize_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface15),
+        ::g::Fuse::Drawing::ISurfaceDrawable_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface16));
+    type->SetFields(110,
         ::g::Fuse::App_typeof(), offsetof(::g::Outracks::Simulator::Client::FakeApp, _app), 0);
     type->Reflection.SetFunctions(6,
         new uFunction("get_Background", NULL, (void*)FakeApp__get_Background1_fn, 0, false, ::g::Uno::Float4_typeof(), 0),
@@ -1927,31 +1928,34 @@ static void FakeApp_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Panel_typeof();
-    options.FieldCount = 106;
-    options.InterfaceCount = 16;
+    options.FieldCount = 111;
+    options.InterfaceCount = 17;
     options.ObjectSize = sizeof(FakeApp);
     options.TypeSize = sizeof(::g::Fuse::Controls::Panel_type);
     type = (::g::Fuse::Controls::Panel_type*)uClassType::New("Outracks.Simulator.Client.FakeApp", options);
     type->fp_build_ = FakeApp_build;
-    type->interface15.fp_Draw = (void(*)(uObject*, ::g::Fuse::Drawing::Surface*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableDraw_fn;
-    type->interface10.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
-    type->interface12.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
-    type->interface11.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;
-    type->interface14.fp_SetSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Elements::Element__FuseAnimationsIResizeSetSize_fn;
-    type->interface13.fp_get_ActualSize = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualSize_fn;
-    type->interface13.fp_get_ActualPosition = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualPosition_fn;
-    type->interface13.fp_add_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__add_Placed_fn;
-    type->interface13.fp_remove_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__remove_Placed_fn;
-    type->interface8.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
-    type->interface8.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
+    type->interface16.fp_Draw = (void(*)(uObject*, ::g::Fuse::Drawing::Surface*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableDraw_fn;
+    type->interface16.fp_get_IsPrimary = (void(*)(uObject*, bool*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_IsPrimary_fn;
+    type->interface16.fp_get_ElementSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Controls::Panel__FuseDrawingISurfaceDrawableget_ElementSize_fn;
+    type->interface11.fp_Show = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIShowShow_fn;
+    type->interface13.fp_Collapse = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsICollapseCollapse_fn;
+    type->interface12.fp_Hide = (void(*)(uObject*))::g::Fuse::Elements::Element__FuseTriggersActionsIHideHide_fn;
+    type->interface15.fp_SetSize = (void(*)(uObject*, ::g::Uno::Float2*))::g::Fuse::Elements::Element__FuseAnimationsIResizeSetSize_fn;
+    type->interface14.fp_get_ActualSize = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualSize_fn;
+    type->interface14.fp_get_ActualPosition = (void(*)(uObject*, ::g::Uno::Float3*))::g::Fuse::Elements::Element__FuseIActualPlacementget_ActualPosition_fn;
+    type->interface14.fp_add_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__add_Placed_fn;
+    type->interface14.fp_remove_Placed = (void(*)(uObject*, uDelegate*))::g::Fuse::Elements::Element__remove_Placed_fn;
+    type->interface9.fp_Clear = (void(*)(uObject*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeClear_fn;
+    type->interface9.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeContains_fn;
     type->interface6.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsIListFuseNodeRemoveAt_fn;
-    type->interface9.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
-    type->interface8.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
+    type->interface10.fp_GetEnumerator = (void(*)(uObject*, uObject**))::g::Fuse::Visual__UnoCollectionsIEnumerableFuseNodeGetEnumerator_fn;
+    type->interface9.fp_get_Count = (void(*)(uObject*, int*))::g::Fuse::Visual__UnoCollectionsICollectionFuseNodeget_Count_fn;
     type->interface6.fp_get_Item = (void(*)(uObject*, int*, uTRef))::g::Fuse::Visual__UnoCollectionsIListFuseNodeget_Item_fn;
     type->interface6.fp_Insert = (void(*)(uObject*, int*, void*))::g::Fuse::Visual__Insert1_fn;
     type->interface7.fp_OnPropertyChanged = (void(*)(uObject*, ::g::Uno::UX::PropertyObject*, ::g::Uno::UX::Selector*))::g::Fuse::Controls::Control__OnPropertyChanged2_fn;
-    type->interface8.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
-    type->interface8.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
+    type->interface8.fp_FindTemplate = (void(*)(uObject*, uString*, ::g::Uno::UX::Template**))::g::Fuse::Visual__FindTemplate_fn;
+    type->interface9.fp_Add = (void(*)(uObject*, void*))::g::Fuse::Visual__Add1_fn;
+    type->interface9.fp_Remove = (void(*)(uObject*, void*, bool*))::g::Fuse::Visual__Remove1_fn;
     type->interface4.fp_Clear = (void(*)(uObject*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingClear_fn;
     type->interface4.fp_Contains = (void(*)(uObject*, void*, bool*))::g::Fuse::Node__UnoCollectionsICollectionFuseBindingContains_fn;
     type->interface0.fp_RemoveAt = (void(*)(uObject*, int*))::g::Fuse::Node__UnoCollectionsIListFuseBindingRemoveAt_fn;
@@ -2627,7 +2631,7 @@ void Running__OnUpdate_fn(Running* __this, ::g::Outracks::Simulator::Client::Sta
 
     if (currentZoom != __this->_zoomWhenRooted)
     {
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[29/*"Density cha...*/], 1, ::STRINGS[1/*"/usr/local/...*/], 651);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[29/*"Density cha...*/], 0, ::STRINGS[1/*"/usr/local/...*/], 651);
         return *__retval = ::g::Outracks::Simulator::Client::Reifying::New1(__this->Client, __this->_runningReify), void();
     }
 
@@ -2756,7 +2760,7 @@ void ShowingModalDialog__OnEnterState_fn(ShowingModalDialog* __this, ::g::Outrac
 void ShowingModalDialog__OnException_fn(ShowingModalDialog* __this, ::g::Uno::Exception* e, ::g::Outracks::Simulator::Client::State** __retval)
 {
     uStackFrame __("Outracks.Simulator.Client.ShowingModalDialog", "OnException(Uno.Exception)");
-    ::g::Uno::Diagnostics::Debug::Log5(uPtr(e)->Message(), 1, ::STRINGS[1/*"/usr/local/...*/], 1435);
+    ::g::Uno::Diagnostics::Debug::Log5(uPtr(e)->Message(), 0, ::STRINGS[1/*"/usr/local/...*/], 1435);
     return *__retval = __this, void();
 }
 
@@ -2871,8 +2875,8 @@ void ShowingPrompt__OnEnterState_fn(ShowingPrompt* __this, ::g::Outracks::Simula
     ::g::Fuse::Controls::Button* cancel = collection2;
     ::g::Fuse::Gestures::Clicked::AddHandler(cancel, uDelegate::New(::TYPES[52/*Fuse.Gestures.ClickedHandler*/], (void*)ShowingPrompt__OnCancelClicked_fn, __this));
     __this->_input = ::g::Fuse::Controls::TextBox::New4();
-    ::g::Uno::Diagnostics::Debug::Log5(::g::Uno::String::op_Addition2(::STRINGS[32/*"# "*/], __this->_header), 1, ::STRINGS[1/*"/usr/local/...*/], 1345);
-    ::g::Uno::Diagnostics::Debug::Log5(__this->_body, 1, ::STRINGS[1/*"/usr/local/...*/], 1346);
+    ::g::Uno::Diagnostics::Debug::Log5(::g::Uno::String::op_Addition2(::STRINGS[32/*"# "*/], __this->_header), 0, ::STRINGS[1/*"/usr/local/...*/], 1345);
+    ::g::Uno::Diagnostics::Debug::Log5(__this->_body, 0, ::STRINGS[1/*"/usr/local/...*/], 1346);
     ::g::Outracks::Simulator::Client::ModalDialog::ShowPrompt(::g::Outracks::Simulator::Client::Context::App(), __this->_header, __this->_body, __this->_input, (uObject*)((::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable*)::g::Uno::Runtime::Implementation::Internal::ArrayEnumerable::New1(::TYPES[55/*Uno.Runtime.Implementation.Internal.ArrayEnumerable<Fuse.Controls.Control>*/], uArray::Init< ::g::Fuse::Controls::Control*>(::TYPES[56/*Fuse.Controls.Control[]*/], 2, cancel, ok))));
     return *__retval = __this, void();
 }

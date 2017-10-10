@@ -1,4 +1,4 @@
-// This file was generated based on /Users/ericaglimsholt/Documents/Skola/Handelsmarketing/Gadden/gadden/gadden.unoproj.
+// This file was generated based on gadden.unoproj.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -14,94 +14,94 @@ uClassType* gadden_bundle_typeof();
 
 struct gadden_bundle : uObject
 {
-    static uSStrong< ::g::Uno::IO::BundleFile*> AboutUsPaged71bc3be_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& AboutUsPaged71bc3be() { return gadden_bundle_typeof()->Init(), AboutUsPaged71bc3be_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> ArrowDownWhitebe5688b1_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& ArrowDownWhitebe5688b1() { return gadden_bundle_typeof()->Init(), ArrowDownWhitebe5688b1_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> ArrowRightWhite1d5f6f6b_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& ArrowRightWhite1d5f6f6b() { return gadden_bundle_typeof()->Init(), ArrowRightWhite1d5f6f6b_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundAbstractPaint7eb0f5a1_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundAbstractPaint7eb0f5a1() { return gadden_bundle_typeof()->Init(), BackgroundAbstractPaint7eb0f5a1_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundExhibitor67ed3f2d_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundExhibitor67ed3f2d() { return gadden_bundle_typeof()->Init(), BackgroundExhibitor67ed3f2d_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundFilterd86cfeb7_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundFilterd86cfeb7() { return gadden_bundle_typeof()->Init(), BackgroundFilterd86cfeb7_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundIceBreaker4245b230_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundIceBreaker4245b230() { return gadden_bundle_typeof()->Init(), BackgroundIceBreaker4245b230_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundNewsDetails0b71a49a_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundNewsDetails0b71a49a() { return gadden_bundle_typeof()->Init(), BackgroundNewsDetails0b71a49a_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> CrossIcon13a86b2c_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& CrossIcon13a86b2c() { return gadden_bundle_typeof()->Init(), CrossIcon13a86b2c_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> ErnstYoungLogotypeWhite0bff62cd_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& ErnstYoungLogotypeWhite0bff62cd() { return gadden_bundle_typeof()->Init(), ErnstYoungLogotypeWhite0bff62cd_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> ExhibitorPage13f35c9e_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& ExhibitorPage13f35c9e() { return gadden_bundle_typeof()->Init(), ExhibitorPage13f35c9e_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> ForetagsGarderobIconb33e92b7_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& ForetagsGarderobIconb33e92b7() { return gadden_bundle_typeof()->Init(), ForetagsGarderobIconb33e92b7_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> ForetagsLoungeIcon5d2ec04b_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& ForetagsLoungeIcon5d2ec04b() { return gadden_bundle_typeof()->Init(), ForetagsLoungeIcon5d2ec04b_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> GaddenLogotypeSmallWhite740d07ab_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& GaddenLogotypeSmallWhite740d07ab() { return gadden_bundle_typeof()->Init(), GaddenLogotypeSmallWhite740d07ab_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> GaddenLogotypeWhite1c35d470_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& GaddenLogotypeWhite1c35d470() { return gadden_bundle_typeof()->Init(), GaddenLogotypeWhite1c35d470_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> GoodiebagBackgroundda8e66b6_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& GoodiebagBackgroundda8e66b6() { return gadden_bundle_typeof()->Init(), GoodiebagBackgroundda8e66b6_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> HandelsbankenLogotypeWhitefcc429e9_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& HandelsbankenLogotypeWhitefcc429e9() { return gadden_bundle_typeof()->Init(), HandelsbankenLogotypeWhitefcc429e9_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> HHGSLogotypWhite257b8c22_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& HHGSLogotypWhite257b8c22() { return gadden_bundle_typeof()->Init(), HHGSLogotypWhite257b8c22_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> IceBreakerButtonWhited236d193_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakerButtonWhited236d193() { return gadden_bundle_typeof()->Init(), IceBreakerButtonWhited236d193_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> IceBreakerIcon45cb54c5_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakerIcon45cb54c5() { return gadden_bundle_typeof()->Init(), IceBreakerIcon45cb54c5_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> IceBreakerQuote7b878236_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakerQuote7b878236() { return gadden_bundle_typeof()->Init(), IceBreakerQuote7b878236_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> IceBreakersPaged6f6d67e_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakersPaged6f6d67e() { return gadden_bundle_typeof()->Init(), IceBreakersPaged6f6d67e_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> InfoDiskIcond6abc125_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& InfoDiskIcond6abc125() { return gadden_bundle_typeof()->Init(), InfoDiskIcond6abc125_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> InfoIconWhitebb670657_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& InfoIconWhitebb670657() { return gadden_bundle_typeof()->Init(), InfoIconWhitebb670657_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> Login51b2d545_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& Login51b2d545() { return gadden_bundle_typeof()->Init(), Login51b2d545_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> MapPageedc903fe_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& MapPageedc903fe() { return gadden_bundle_typeof()->Init(), MapPageedc903fe_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> MapPlan33b43bb45_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& MapPlan33b43bb45() { return gadden_bundle_typeof()->Init(), MapPlan33b43bb45_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> MapPlan4d288e982_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& MapPlan4d288e982() { return gadden_bundle_typeof()->Init(), MapPlan4d288e982_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> MenuBackground6a8fe2ea_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& MenuBackground6a8fe2ea() { return gadden_bundle_typeof()->Init(), MenuBackground6a8fe2ea_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> MiljomarktLogotypeWhiteca9eb941_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& MiljomarktLogotypeWhiteca9eb941() { return gadden_bundle_typeof()->Init(), MiljomarktLogotypeWhiteca9eb941_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> NewsExampleImage799d0165_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& NewsExampleImage799d0165() { return gadden_bundle_typeof()->Init(), NewsExampleImage799d0165_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> NewsPagea12da51e_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& NewsPagea12da51e() { return gadden_bundle_typeof()->Init(), NewsPagea12da51e_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> PartnersPageec88aa66_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& PartnersPageec88aa66() { return gadden_bundle_typeof()->Init(), PartnersPageec88aa66_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> ProfileIcon9300a9dd_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& ProfileIcon9300a9dd() { return gadden_bundle_typeof()->Init(), ProfileIcon9300a9dd_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> ProfileIconStar96d15ebd_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& ProfileIconStar96d15ebd() { return gadden_bundle_typeof()->Init(), ProfileIconStar96d15ebd_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> ProgramPagec84f4f3e_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& ProgramPagec84f4f3e() { return gadden_bundle_typeof()->Init(), ProgramPagec84f4f3e_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> RalewayBlackcd5035ad_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& RalewayBlackcd5035ad() { return gadden_bundle_typeof()->Init(), RalewayBlackcd5035ad_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> RalewayRegulara87b1aaa_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& RalewayRegulara87b1aaa() { return gadden_bundle_typeof()->Init(), RalewayRegulara87b1aaa_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> SearchGrey1d3e7726_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& SearchGrey1d3e7726() { return gadden_bundle_typeof()->Init(), SearchGrey1d3e7726_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> SponsorsPage55b7763e_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& SponsorsPage55b7763e() { return gadden_bundle_typeof()->Init(), SponsorsPage55b7763e_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> StarWhite6e65c160_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& StarWhite6e65c160() { return gadden_bundle_typeof()->Init(), StarWhite6e65c160_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> StudentGarderobIcona35cfd01_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& StudentGarderobIcona35cfd01() { return gadden_bundle_typeof()->Init(), StudentGarderobIcona35cfd01_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> StudentLoungeIcon0d682f55_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& StudentLoungeIcon0d682f55() { return gadden_bundle_typeof()->Init(), StudentLoungeIcon0d682f55_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> SugarPlums751a615b_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& SugarPlums751a615b() { return gadden_bundle_typeof()->Init(), SugarPlums751a615b_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> AboutUsPage118699e7_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& AboutUsPage118699e7() { return gadden_bundle_typeof()->Init(), AboutUsPage118699e7_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> ArrowDownWhited96db7ae_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& ArrowDownWhited96db7ae() { return gadden_bundle_typeof()->Init(), ArrowDownWhited96db7ae_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> ArrowRightWhite3d207980_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& ArrowRightWhite3d207980() { return gadden_bundle_typeof()->Init(), ArrowRightWhite3d207980_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundAbstractPaintaf87a254_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundAbstractPaintaf87a254() { return gadden_bundle_typeof()->Init(), BackgroundAbstractPaintaf87a254_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundExhibitor9cd57b8a_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundExhibitor9cd57b8a() { return gadden_bundle_typeof()->Init(), BackgroundExhibitor9cd57b8a_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundFilter403b162a_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundFilter403b162a() { return gadden_bundle_typeof()->Init(), BackgroundFilter403b162a_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundIceBreaker4fd1a959_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundIceBreaker4fd1a959() { return gadden_bundle_typeof()->Init(), BackgroundIceBreaker4fd1a959_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> BackgroundNewsDetails819ed1f3_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& BackgroundNewsDetails819ed1f3() { return gadden_bundle_typeof()->Init(), BackgroundNewsDetails819ed1f3_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> CrossIcon5653a7c5_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& CrossIcon5653a7c5() { return gadden_bundle_typeof()->Init(), CrossIcon5653a7c5_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> ErnstYoungLogotypeWhite743b8602_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& ErnstYoungLogotypeWhite743b8602() { return gadden_bundle_typeof()->Init(), ErnstYoungLogotypeWhite743b8602_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> ExhibitorPage06d66bc7_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& ExhibitorPage06d66bc7() { return gadden_bundle_typeof()->Init(), ExhibitorPage06d66bc7_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> ForetagsGarderobIcon954c1dd2_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& ForetagsGarderobIcon954c1dd2() { return gadden_bundle_typeof()->Init(), ForetagsGarderobIcon954c1dd2_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> ForetagsLoungeIcon612ba428_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& ForetagsLoungeIcon612ba428() { return gadden_bundle_typeof()->Init(), ForetagsLoungeIcon612ba428_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> GaddenLogotypeSmallWhite67f0bde0_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& GaddenLogotypeSmallWhite67f0bde0() { return gadden_bundle_typeof()->Init(), GaddenLogotypeSmallWhite67f0bde0_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> GaddenLogotypeWhite2f420aa9_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& GaddenLogotypeWhite2f420aa9() { return gadden_bundle_typeof()->Init(), GaddenLogotypeWhite2f420aa9_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> GoodiebagBackground52fd459d_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& GoodiebagBackground52fd459d() { return gadden_bundle_typeof()->Init(), GoodiebagBackground52fd459d_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> HandelsbankenLogotypeWhite2b3c3eec_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& HandelsbankenLogotypeWhite2b3c3eec() { return gadden_bundle_typeof()->Init(), HandelsbankenLogotypeWhite2b3c3eec_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> HHGSLogotypWhitea19945a1_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& HHGSLogotypWhitea19945a1() { return gadden_bundle_typeof()->Init(), HHGSLogotypWhitea19945a1_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> IceBreakerButtonWhite8a174a20_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakerButtonWhite8a174a20() { return gadden_bundle_typeof()->Init(), IceBreakerButtonWhite8a174a20_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> IceBreakerIcon4b4540d8_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakerIcon4b4540d8() { return gadden_bundle_typeof()->Init(), IceBreakerIcon4b4540d8_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> IceBreakerQuote6d2bd1b5_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakerQuote6d2bd1b5() { return gadden_bundle_typeof()->Init(), IceBreakerQuote6d2bd1b5_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> IceBreakersPagefe52e227_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& IceBreakersPagefe52e227() { return gadden_bundle_typeof()->Init(), IceBreakersPagefe52e227_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> InfoDiskIcon17c40378_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& InfoDiskIcon17c40378() { return gadden_bundle_typeof()->Init(), InfoDiskIcon17c40378_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> InfoIconWhite2f2ec674_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& InfoIconWhite2f2ec674() { return gadden_bundle_typeof()->Init(), InfoIconWhite2f2ec674_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> Logind834cf98_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& Logind834cf98() { return gadden_bundle_typeof()->Init(), Logind834cf98_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> MapPage0b082c27_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& MapPage0b082c27() { return gadden_bundle_typeof()->Init(), MapPage0b082c27_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> MapPlan3f655005a_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& MapPlan3f655005a() { return gadden_bundle_typeof()->Init(), MapPlan3f655005a_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> MapPlan4f6552653_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& MapPlan4f6552653() { return gadden_bundle_typeof()->Init(), MapPlan4f6552653_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> MenuBackground54de29a9_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& MenuBackground54de29a9() { return gadden_bundle_typeof()->Init(), MenuBackground54de29a9_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> MiljomarktLogotypeWhitebe8d1e56_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& MiljomarktLogotypeWhitebe8d1e56() { return gadden_bundle_typeof()->Init(), MiljomarktLogotypeWhitebe8d1e56_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> NewsExampleImage8740a630_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& NewsExampleImage8740a630() { return gadden_bundle_typeof()->Init(), NewsExampleImage8740a630_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> NewsPage68651a27_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& NewsPage68651a27() { return gadden_bundle_typeof()->Init(), NewsPage68651a27_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> PartnersPage388f10bf_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& PartnersPage388f10bf() { return gadden_bundle_typeof()->Init(), PartnersPage388f10bf_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> ProfileIcon173ff27a_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& ProfileIcon173ff27a() { return gadden_bundle_typeof()->Init(), ProfileIcon173ff27a_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> ProfileIconStaraf1f7022_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& ProfileIconStaraf1f7022() { return gadden_bundle_typeof()->Init(), ProfileIconStaraf1f7022_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> ProgramPagef5f399e7_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& ProgramPagef5f399e7() { return gadden_bundle_typeof()->Init(), ProgramPagef5f399e7_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> RalewayBlack7c65f2a8_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& RalewayBlack7c65f2a8() { return gadden_bundle_typeof()->Init(), RalewayBlack7c65f2a8_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> RalewayRegularf8b9cde9_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& RalewayRegularf8b9cde9() { return gadden_bundle_typeof()->Init(), RalewayRegularf8b9cde9_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> SearchGrey4f0b9e6f_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& SearchGrey4f0b9e6f() { return gadden_bundle_typeof()->Init(), SearchGrey4f0b9e6f_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> SponsorsPagec55e65e7_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& SponsorsPagec55e65e7() { return gadden_bundle_typeof()->Init(), SponsorsPagec55e65e7_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> StarWhiteba16c477_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& StarWhiteba16c477() { return gadden_bundle_typeof()->Init(), StarWhiteba16c477_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> StudentGarderobIcon61404a0c_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& StudentGarderobIcon61404a0c() { return gadden_bundle_typeof()->Init(), StudentGarderobIcon61404a0c_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> StudentLoungeIcon12949b82_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& StudentLoungeIcon12949b82() { return gadden_bundle_typeof()->Init(), StudentLoungeIcon12949b82_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> SugarPlumseb988f08_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& SugarPlumseb988f08() { return gadden_bundle_typeof()->Init(), SugarPlumseb988f08_; }
 };
 // }
 

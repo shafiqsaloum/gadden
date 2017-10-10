@@ -11,12 +11,12 @@
 #include <Fuse.Scripting.NativeMember.h>
 #include <Fuse.Scripting.NativeModule.h>
 #include <Fuse.Scripting.Object.h>
-#include <Fuse.WebSocket.IWebSo-b6556b9.h>
-#include <Fuse.WebSocket.Native-505d0c55.h>
-#include <Fuse.WebSocket.Native-9d2202e4.h>
-#include <Fuse.WebSocket.WebSoc-2254f404.h>
-#include <Fuse.WebSocket.WebSoc-48199f2b.h>
+#include <Fuse.WebSocket.IWebSocketClient.h>
+#include <Fuse.WebSocket.NativeFunctionModule.FunctionClosure.h>
+#include <Fuse.WebSocket.NativeFunctionModule.h>
 #include <Fuse.WebSocket.WebSocketClient.h>
+#include <Fuse.WebSocket.WebSocketClientModule.h>
+#include <Fuse.WebSocket.WebSocketClientWrapper.h>
 #include <Jetfire.WebSocketClient.h>
 #include <Uno.Action.h>
 #include <Uno.Action-1.h>
@@ -39,8 +39,8 @@ namespace g{
 namespace Fuse{
 namespace WebSocket{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.WebSockets/1.2.1/$.uno
+// ---------------------------------------------------------
 
 // private sealed class NativeFunctionModule.FunctionClosure :131
 // {
@@ -119,8 +119,8 @@ NativeFunctionModule__FunctionClosure* NativeFunctionModule__FunctionClosure::Ne
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.WebSockets/1.2.1/$.uno
+// ---------------------------------------------------------
 
 // internal abstract interface IWebSocketClient :83
 // {
@@ -134,8 +134,8 @@ uInterfaceType* IWebSocketClient_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.WebSockets/1.2.1/$.uno
+// ---------------------------------------------------------
 
 // public abstract class NativeFunctionModule :111
 // {
@@ -200,8 +200,8 @@ void NativeFunctionModule::ctor_2(uString* name)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.WebSockets/1.2.1/$.uno
+// ---------------------------------------------------------
 
 // public sealed class WebSocketClient :8
 // {
@@ -402,8 +402,8 @@ WebSocketClient* WebSocketClient::New1(uString* uri, uArray* protocols)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.WebSockets/1.2.1/$.uno
+// ---------------------------------------------------------
 
 // public sealed class WebSocketClientModule :155
 // {
@@ -487,8 +487,8 @@ WebSocketClientModule* WebSocketClientModule::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.WebSockets/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.WebSockets/1.2.1/$.uno
+// ---------------------------------------------------------
 
 // internal sealed class WebSocketClientWrapper :172
 // {

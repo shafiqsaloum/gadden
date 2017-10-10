@@ -1,11 +1,11 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Elements/1.0.5/caching/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.2.1/caching/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Elements.IElemen-894a094d.h>
-#include <Uno.Graphics.VertexAt-28188a9f.h>
+#include <Fuse.Elements.IElementBatchDrawable.h>
+#include <Uno.Graphics.VertexAttributeInfo.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implement-476e2792.h>
+#include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall.h>
 namespace g{namespace Fuse{namespace Elements{struct Element;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementAtlas;}}}
 namespace g{namespace Fuse{namespace Elements{struct ElementBatch;}}}
@@ -24,7 +24,7 @@ namespace g{
 namespace Fuse{
 namespace Elements{
 
-// internal sealed class ElementBatch :1253
+// internal sealed class ElementBatch :1275
 // {
 struct ElementBatch_type : uType
 {

@@ -1,107 +1,112 @@
 // This file was generated based on '(multiple files)'.
 // WARNING: Changes might be lost if you edit this file directly.
 
-#include <Fuse.Animations.Anima-2f54bcf0.h>
-#include <Fuse.Animations.Anima-9f6f3909.h>
+#include <Fuse.Animations.AnimationVariant.h>
 #include <Fuse.Animations.Animator.h>
 #include <Fuse.Animations.AnimatorState.h>
+#include <Fuse.Animations.AnimatorVariant.h>
+#include <Fuse.Animations.Attract.h>
+#include <Fuse.Animations.Attract.Subscription.h>
 #include <Fuse.Animations.Attractor-1.h>
-#include <Fuse.Animations.Avera-2b3394b0.h>
-#include <Fuse.Animations.Avera-d2893fe7.h>
+#include <Fuse.Animations.AttractorConfig.h>
+#include <Fuse.Animations.AverageMasterProperty-1.h>
+#include <Fuse.Animations.AverageMasterTransform.h>
 #include <Fuse.Animations.AverageMixer.h>
 #include <Fuse.Animations.Change-1.h>
-#include <Fuse.Animations.Conti-233bd07.h>
-#include <Fuse.Animations.Conti-d67e9f3.h>
-#include <Fuse.Animations.Conve-36a5c7e0.h>
-#include <Fuse.Animations.Conve-36a5c7e2.h>
-#include <Fuse.Animations.Conve-36a5c7e3.h>
-#include <Fuse.Animations.Conve-d9da2591.h>
+#include <Fuse.Animations.ContinuousTrackChangeState-1.h>
+#include <Fuse.Animations.ContinuousTrackProvider.h>
 #include <Fuse.Animations.Converter-1.h>
+#include <Fuse.Animations.ConverterDouble.h>
 #include <Fuse.Animations.ConverterFloat.h>
+#include <Fuse.Animations.ConverterFloat2.h>
+#include <Fuse.Animations.ConverterFloat3.h>
+#include <Fuse.Animations.ConverterFloat4.h>
 #include <Fuse.Animations.ConverterSize.h>
 #include <Fuse.Animations.ConverterSize2.h>
-#include <Fuse.Animations.Creat-d717a85f.h>
-#include <Fuse.Animations.Cubic-aa541862.h>
+#include <Fuse.Animations.CreateStateParams.h>
+#include <Fuse.Animations.CubicBezierEasing.h>
 #include <Fuse.Animations.Cycle-1.h>
 #include <Fuse.Animations.CycleState-1.h>
 #include <Fuse.Animations.CycleWaveform.h>
-#include <Fuse.Animations.Discr-864f74d9.h>
-#include <Fuse.Animations.Discr-ab696ab5.h>
-#include <Fuse.Animations.Discr-c06613e4.h>
-#include <Fuse.Animations.Discr-c354302b.h>
-#include <Fuse.Animations.Discr-c9a8607c.h>
-#include <Fuse.Animations.Discr-ed319c64.h>
+#include <Fuse.Animations.DestinationBehavior-1.h>
+#include <Fuse.Animations.DestinationBehavior-1.ValueHandler.h>
+#include <Fuse.Animations.DiscreteKeyframeTrack.h>
+#include <Fuse.Animations.DiscreteMasterProperty-1.h>
+#include <Fuse.Animations.DiscreteMasterTransform.h>
 #include <Fuse.Animations.DiscreteMixer.h>
-#include <Fuse.Animations.Easin-1629b8de.h>
-#include <Fuse.Animations.Easin-2bc722aa.h>
-#include <Fuse.Animations.Easin-2cfac9fd.h>
-#include <Fuse.Animations.Easin-3403b834.h>
-#include <Fuse.Animations.Easin-3a4eddc3.h>
-#include <Fuse.Animations.Easin-415c2349.h>
-#include <Fuse.Animations.Easin-4465e553.h>
-#include <Fuse.Animations.Easin-575a1f5f.h>
-#include <Fuse.Animations.Easin-5b6cada4.h>
-#include <Fuse.Animations.Easin-5c94be4a.h>
-#include <Fuse.Animations.Easin-5e2591f2.h>
-#include <Fuse.Animations.Easin-5f101b83.h>
-#include <Fuse.Animations.Easin-61472a22.h>
-#include <Fuse.Animations.Easin-63fc962e.h>
-#include <Fuse.Animations.Easin-69caaa88.h>
-#include <Fuse.Animations.Easin-76822aaf.h>
-#include <Fuse.Animations.Easin-77784bb7.h>
-#include <Fuse.Animations.Easin-7c43bf9c.h>
-#include <Fuse.Animations.Easin-87c2bc3c.h>
-#include <Fuse.Animations.Easin-88f71b99.h>
-#include <Fuse.Animations.Easin-8d87fbcd.h>
-#include <Fuse.Animations.Easin-9b0d98b6.h>
-#include <Fuse.Animations.Easin-a5b90955.h>
-#include <Fuse.Animations.Easin-b5669208.h>
-#include <Fuse.Animations.Easin-bcab48ca.h>
-#include <Fuse.Animations.Easin-ccffb351.h>
-#include <Fuse.Animations.Easin-d718cbb3.h>
-#include <Fuse.Animations.Easin-dd81a6a5.h>
-#include <Fuse.Animations.Easin-e748cec3.h>
-#include <Fuse.Animations.Easin-e938836c.h>
-#include <Fuse.Animations.Easin-f2fa966f.h>
-#include <Fuse.Animations.Easin-fbce721d.h>
+#include <Fuse.Animations.DiscreteSingleTrack.h>
+#include <Fuse.Animations.DiscreteTrackChangeState-1.h>
+#include <Fuse.Animations.DiscreteTrackProvider.h>
+#include <Fuse.Animations.Easing.BackInImpl.h>
+#include <Fuse.Animations.Easing.BackInOutImpl.h>
+#include <Fuse.Animations.Easing.BackOutImpl.h>
+#include <Fuse.Animations.Easing.BounceInImpl.h>
+#include <Fuse.Animations.Easing.BounceInOutImpl.h>
+#include <Fuse.Animations.Easing.BounceOutImpl.h>
+#include <Fuse.Animations.Easing.CircularInImpl.h>
+#include <Fuse.Animations.Easing.CircularInOutImpl.h>
+#include <Fuse.Animations.Easing.CircularOutImpl.h>
+#include <Fuse.Animations.Easing.CubicInImpl.h>
+#include <Fuse.Animations.Easing.CubicInOutImpl.h>
+#include <Fuse.Animations.Easing.CubicOutImpl.h>
+#include <Fuse.Animations.Easing.ElasticInImpl.h>
+#include <Fuse.Animations.Easing.ElasticInOutImpl.h>
+#include <Fuse.Animations.Easing.ElasticOutImpl.h>
+#include <Fuse.Animations.Easing.ExponentialInImpl.h>
+#include <Fuse.Animations.Easing.ExponentialInOutImpl.h>
+#include <Fuse.Animations.Easing.ExponentialOutImpl.h>
 #include <Fuse.Animations.Easing.h>
+#include <Fuse.Animations.Easing.LinearImpl.h>
+#include <Fuse.Animations.Easing.QuadraticInImpl.h>
+#include <Fuse.Animations.Easing.QuadraticInOutImpl.h>
+#include <Fuse.Animations.Easing.QuadraticOutImpl.h>
+#include <Fuse.Animations.Easing.QuarticInImpl.h>
+#include <Fuse.Animations.Easing.QuarticInOutImpl.h>
+#include <Fuse.Animations.Easing.QuarticOutImpl.h>
+#include <Fuse.Animations.Easing.QuinticInImpl.h>
+#include <Fuse.Animations.Easing.QuinticInOutImpl.h>
+#include <Fuse.Animations.Easing.QuinticOutImpl.h>
+#include <Fuse.Animations.Easing.SinusoidalInImpl.h>
+#include <Fuse.Animations.Easing.SinusoidalInOutImpl.h>
+#include <Fuse.Animations.Easing.SinusoidalOutImpl.h>
 #include <Fuse.Animations.EasingFunction.h>
+#include <Fuse.Animations.EasingFunctions.h>
 #include <Fuse.Animations.EasingTrack.h>
-#include <Fuse.Animations.FastM-24ef5203.h>
-#include <Fuse.Animations.IBase-d3bd6f2e.h>
+#include <Fuse.Animations.FastMatrixTransform.h>
+#include <Fuse.Animations.IBasePlayerFeedback.h>
 #include <Fuse.Animations.IMixer.h>
 #include <Fuse.Animations.IMixerHandle-1.h>
 #include <Fuse.Animations.IMixerMaster.h>
-#include <Fuse.Animations.IPlay-a3f2f81f.h>
+#include <Fuse.Animations.IPlayerFeedback.h>
 #include <Fuse.Animations.IResize.h>
 #include <Fuse.Animations.IResizeMode.h>
 #include <Fuse.Animations.ITrackProvider.h>
-#include <Fuse.Animations.IUnwr-594abe9.h>
-#include <Fuse.Animations.Keyfr-30a8e414.h>
+#include <Fuse.Animations.IUnwrappedPlayerFeedback.h>
 #include <Fuse.Animations.Keyframe.h>
+#include <Fuse.Animations.KeyframeInterpolation.h>
 #include <Fuse.Animations.KeyframeTrack.h>
-#include <Fuse.Animations.Maste-197394bf.h>
-#include <Fuse.Animations.Maste-2a82cad6.h>
-#include <Fuse.Animations.Maste-4c7af709.h>
-#include <Fuse.Animations.Maste-9f52236c.h>
+#include <Fuse.Animations.MasterBase-1.GFWResult.h>
 #include <Fuse.Animations.MasterBase-1.h>
+#include <Fuse.Animations.MasterProperty-1.h>
+#include <Fuse.Animations.MasterPropertyGet.h>
+#include <Fuse.Animations.MasterTransform.h>
 #include <Fuse.Animations.Mixer.h>
 #include <Fuse.Animations.MixerBase.h>
 #include <Fuse.Animations.MixerHandle-1.h>
 #include <Fuse.Animations.MixOp.h>
 #include <Fuse.Animations.Move.h>
-#include <Fuse.Animations.Nothi-ca9c5305.h>
 #include <Fuse.Animations.Nothing.h>
-#include <Fuse.Animations.OpenA-dfad1354.h>
+#include <Fuse.Animations.NothingAnimatorState.h>
 #include <Fuse.Animations.OpenAnimator.h>
-#include <Fuse.Animations.Playe-8fa817d1.h>
+#include <Fuse.Animations.OpenAnimatorState.h>
 #include <Fuse.Animations.Player.h>
+#include <Fuse.Animations.PlayerFeedbackFlags.h>
 #include <Fuse.Animations.PlayerPart.h>
 #include <Fuse.Animations.PlayMode.h>
-#include <Fuse.Animations.Range-39d99c29.h>
 #include <Fuse.Animations.RangeAdapter-1.h>
-#include <Fuse.Animations.Resiz-a57d457c.h>
+#include <Fuse.Animations.RangeAdapterHelpers.h>
 #include <Fuse.Animations.Resize.h>
+#include <Fuse.Animations.ResizeAnimatorState.h>
 #include <Fuse.Animations.Rotate.h>
 #include <Fuse.Animations.Scale.h>
 #include <Fuse.Animations.SeekDirection.h>
@@ -110,35 +115,41 @@
 #include <Fuse.Animations.Spin.h>
 #include <Fuse.Animations.SpinState.h>
 #include <Fuse.Animations.SplineTrack.h>
-#include <Fuse.Animations.Track-26653137.h>
 #include <Fuse.Animations.TrackAnimator.h>
+#include <Fuse.Animations.TrackAnimatorState.h>
 #include <Fuse.Animations.TrackProvider.h>
-#include <Fuse.Animations.Trans-1cbe36aa.h>
-#include <Fuse.Animations.Trans-55a8cee6.h>
-#include <Fuse.Animations.Trans-997c8373.h>
-#include <Fuse.Animations.Trigg-21dd249.h>
-#include <Fuse.Animations.Trigg-75f4f270.h>
-#include <Fuse.Animations.Trigg-96b74ffc.h>
+#include <Fuse.Animations.TransformAnimator-1.h>
+#include <Fuse.Animations.TransformAnimatorState-1.h>
+#include <Fuse.Animations.TransformPriority.h>
+#include <Fuse.Animations.TriggerAnimation.h>
+#include <Fuse.Animations.TriggerAnimationState.h>
+#include <Fuse.Animations.TriggerAnimationState.SeekFlags.h>
 #include <Fuse.Diagnostics.h>
 #include <Fuse.FastMatrix.h>
 #include <Fuse.IActualPlacement.h>
 #include <Fuse.Internal.Blender-1.h>
 #include <Fuse.Internal.BlenderMap.h>
-#include <Fuse.Internal.Curves.-1494dae5.h>
 #include <Fuse.Internal.Curves.h>
+#include <Fuse.Internal.Curves.PointInterpolater.h>
 #include <Fuse.Internal.ScalarBlender-1.h>
 #include <Fuse.IScalingMode.h>
 #include <Fuse.ITranslationMode.h>
-#include <Fuse.Motion.Destinati-bd678751.h>
-#include <Fuse.Motion.MotionDes-5490bd7d.h>
+#include <Fuse.Marshal.h>
+#include <Fuse.Motion.DestinationMotion-1.h>
+#include <Fuse.Motion.DestinationMotionConfig.h>
+#include <Fuse.Motion.MotionDestinationType.h>
 #include <Fuse.Motion.MotionUnit.h>
-#include <Fuse.Motion.Simulatio-8063728b.h>
-#include <Fuse.Motion.Simulatio-a4ba96c1.h>
-#include <Fuse.Motion.Simulatio-b08eb1c5.h>
+#include <Fuse.Motion.Simulation.DestinationSimulation-1.h>
+#include <Fuse.Motion.Simulation.MotionSimulation-1.h>
+#include <Fuse.Motion.Simulation.Simulation.h>
 #include <Fuse.Node.h>
 #include <Fuse.PlacedHandler.h>
 #include <Fuse.Properties.h>
 #include <Fuse.PropertyHandle.h>
+#include <Fuse.Reactive.Expression.h>
+#include <Fuse.Reactive.IContext.h>
+#include <Fuse.Reactive.IExpression.h>
+#include <Fuse.Reactive.IListener.h>
 #include <Fuse.RelativeTransform-1.h>
 #include <Fuse.Rotation.h>
 #include <Fuse.ScalingModes.h>
@@ -159,7 +170,7 @@
 #include <Uno.Collections.List-1.h>
 #include <Uno.Delegate.h>
 #include <Uno.Diagnostics.Debug.h>
-#include <Uno.Diagnostics.Debug-5d778620.h>
+#include <Uno.Diagnostics.DebugMessageType.h>
 #include <Uno.Double.h>
 #include <Uno.Exception.h>
 #include <Uno.Float.h>
@@ -167,6 +178,7 @@
 #include <Uno.Float3.h>
 #include <Uno.Float4.h>
 #include <Uno.Float4x4.h>
+#include <Uno.IDisposable.h>
 #include <Uno.Int.h>
 #include <Uno.Math.h>
 #include <Uno.Object.h>
@@ -179,17 +191,17 @@
 #include <Uno.UX.Selector.h>
 #include <Uno.UX.Size.h>
 #include <Uno.UX.Size2.h>
-static uString* STRINGS[20];
-static uType* TYPES[80];
+static uString* STRINGS[22];
+static uType* TYPES[95];
 
 namespace g{
 namespace Fuse{
 namespace Animations{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public enum AnimationVariant :3903
+// public enum AnimationVariant :4109
 uEnumType* AnimationVariant_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -202,8 +214,8 @@ uEnumType* AnimationVariant_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
 // public abstract class Animator :70
 // {
@@ -313,8 +325,8 @@ void Animator::MixOp(int value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
 // internal abstract class AnimatorState :124
 // {
@@ -369,8 +381,8 @@ void AnimatorState::ctor_(::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
 // internal enum AnimatorVariant :8
 uEnumType* AnimatorVariant_typeof()
@@ -386,16 +398,86 @@ uEnumType* AnimatorVariant_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public sealed class Attractor<T> :176
+// public sealed class Attract :191
+// {
+static void Attract_build(uType* type)
+{
+    type->SetInterfaces(
+        ::g::Fuse::Reactive::IExpression_typeof(), offsetof(::g::Fuse::Reactive::Expression_type, interface0));
+    type->SetFields(0,
+        ::g::Fuse::Animations::AttractorConfig_typeof(), offsetof(::g::Fuse::Animations::Attract, _config), 0,
+        ::g::Fuse::Reactive::Expression_typeof(), offsetof(::g::Fuse::Animations::Attract, _sourceValue), 0);
+    type->Reflection.SetFunctions(1,
+        new uFunction(".ctor", NULL, (void*)Attract__New1_fn, 0, true, type, 2, ::g::Fuse::Reactive::Expression_typeof(), ::g::Fuse::Animations::AttractorConfig_typeof()));
+}
+
+::g::Fuse::Reactive::Expression_type* Attract_typeof()
+{
+    static uSStrong< ::g::Fuse::Reactive::Expression_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Fuse::Reactive::Expression_typeof();
+    options.FieldCount = 2;
+    options.InterfaceCount = 1;
+    options.ObjectSize = sizeof(Attract);
+    options.TypeSize = sizeof(::g::Fuse::Reactive::Expression_type);
+    type = (::g::Fuse::Reactive::Expression_type*)uClassType::New("Fuse.Animations.Attract", options);
+    type->fp_build_ = Attract_build;
+    type->fp_Subscribe = (void(*)(::g::Fuse::Reactive::Expression*, uObject*, uObject*, uObject**))Attract__Subscribe_fn;
+    type->interface0.fp_Subscribe = (void(*)(uObject*, uObject*, uObject*, uObject**))Attract__Subscribe_fn;
+    return type;
+}
+
+// public Attract(Fuse.Reactive.Expression value, Fuse.Animations.AttractorConfig config) :197
+void Attract__ctor_1_fn(Attract* __this, ::g::Fuse::Reactive::Expression* value, ::g::Fuse::Animations::AttractorConfig* config)
+{
+    __this->ctor_1(value, config);
+}
+
+// public Attract New(Fuse.Reactive.Expression value, Fuse.Animations.AttractorConfig config) :197
+void Attract__New1_fn(::g::Fuse::Reactive::Expression* value, ::g::Fuse::Animations::AttractorConfig* config, Attract** __retval)
+{
+    *__retval = Attract::New1(value, config);
+}
+
+// public override sealed Uno.IDisposable Subscribe(Fuse.Reactive.IContext context, Fuse.Reactive.IListener listener) :204
+void Attract__Subscribe_fn(Attract* __this, uObject* context, uObject* listener, uObject** __retval)
+{
+    uStackFrame __("Fuse.Animations.Attract", "Subscribe(Fuse.Reactive.IContext,Fuse.Reactive.IListener)");
+    return *__retval = (uObject*)Attract__Subscription::New1(__this, context, listener), void();
+}
+
+// public Attract(Fuse.Reactive.Expression value, Fuse.Animations.AttractorConfig config) [instance] :197
+void Attract::ctor_1(::g::Fuse::Reactive::Expression* value, ::g::Fuse::Animations::AttractorConfig* config)
+{
+    ctor_();
+    _config = config;
+    _sourceValue = value;
+}
+
+// public Attract New(Fuse.Reactive.Expression value, Fuse.Animations.AttractorConfig config) [static] :197
+Attract* Attract::New1(::g::Fuse::Reactive::Expression* value, ::g::Fuse::Animations::AttractorConfig* config)
+{
+    Attract* obj1 = (Attract*)uNew(Attract_typeof());
+    obj1->ctor_1(value, config);
+    return obj1;
+}
+// }
+
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
+
+// public sealed class Attractor<T> :370
 // {
 static void Attractor_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("target");
     ::STRINGS[1] = uString::Const("Motion should not be changed post-rooting");
-    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
+    ::STRINGS[2] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno");
     ::STRINGS[3] = uString::Const("set_Motion");
     ::TYPES[0] = ::g::Fuse::Motion::DestinationMotion_typeof();
     ::TYPES[1] = ::g::Fuse::Motion::Simulation::Simulation_typeof();
@@ -484,109 +566,109 @@ Attractor_type* Attractor_typeof()
     return type;
 }
 
-// internal Attractor() :178
+// internal Attractor() :372
 void Attractor__ctor_3_fn(Attractor* __this)
 {
     __this->ctor_3();
 }
 
-// public Attractor(Uno.UX.Property<T> target) :186
+// public Attractor(Uno.UX.Property<T> target) :380
 void Attractor__ctor_4_fn(Attractor* __this, ::g::Uno::UX::Property1* target)
 {
     __this->ctor_4(target);
 }
 
-// private void CheckNeedUpdate() :303
+// private void CheckNeedUpdate() :497
 void Attractor__CheckNeedUpdate_fn(Attractor* __this)
 {
     __this->CheckNeedUpdate();
 }
 
-// public float get_Distance() :242
+// public float get_Distance() :436
 void Attractor__get_Distance_fn(Attractor* __this, float* __retval)
 {
     *__retval = __this->Distance();
 }
 
-// public void set_Distance(float value) :243
+// public void set_Distance(float value) :437
 void Attractor__set_Distance_fn(Attractor* __this, float* value)
 {
     __this->Distance(*value);
 }
 
-// public float get_Duration() :230
+// public float get_Duration() :424
 void Attractor__get_Duration_fn(Attractor* __this, float* __retval)
 {
     *__retval = __this->Duration();
 }
 
-// public void set_Duration(float value) :231
+// public void set_Duration(float value) :425
 void Attractor__set_Duration_fn(Attractor* __this, float* value)
 {
     __this->Duration(*value);
 }
 
-// public float get_DurationExp() :236
+// public float get_DurationExp() :430
 void Attractor__get_DurationExp_fn(Attractor* __this, float* __retval)
 {
     *__retval = __this->DurationExp();
 }
 
-// public void set_DurationExp(float value) :237
+// public void set_DurationExp(float value) :431
 void Attractor__set_DurationExp_fn(Attractor* __this, float* value)
 {
     __this->DurationExp(*value);
 }
 
-// public Fuse.Animations.Easing get_Easing() :217
+// public Fuse.Animations.Easing get_Easing() :411
 void Attractor__get_Easing_fn(Attractor* __this, ::g::Fuse::Animations::Easing** __retval)
 {
     *__retval = __this->Easing();
 }
 
-// public void set_Easing(Fuse.Animations.Easing value) :218
+// public void set_Easing(Fuse.Animations.Easing value) :412
 void Attractor__set_Easing_fn(Attractor* __this, ::g::Fuse::Animations::Easing* value)
 {
     __this->Easing(value);
 }
 
-// public bool get_IsEnabled() :261
+// public bool get_IsEnabled() :455
 void Attractor__get_IsEnabled_fn(Attractor* __this, bool* __retval)
 {
     *__retval = __this->IsEnabled();
 }
 
-// public void set_IsEnabled(bool value) :262
+// public void set_IsEnabled(bool value) :456
 void Attractor__set_IsEnabled_fn(Attractor* __this, bool* value)
 {
     __this->IsEnabled(*value);
 }
 
-// public Fuse.Motion.DestinationMotion<T> get_Motion() :196
+// public Fuse.Motion.DestinationMotion<T> get_Motion() :390
 void Attractor__get_Motion_fn(Attractor* __this, ::g::Fuse::Motion::DestinationMotion** __retval)
 {
     *__retval = __this->Motion();
 }
 
-// public void set_Motion(Fuse.Motion.DestinationMotion<T> value) :197
+// public void set_Motion(Fuse.Motion.DestinationMotion<T> value) :391
 void Attractor__set_Motion_fn(Attractor* __this, ::g::Fuse::Motion::DestinationMotion* value)
 {
     __this->Motion(value);
 }
 
-// internal Attractor New() :178
+// internal Attractor New() :372
 void Attractor__New2_fn(uType* __type, Attractor** __retval)
 {
     *__retval = Attractor::New2(__type);
 }
 
-// public Attractor New(Uno.UX.Property<T> target) :186
+// public Attractor New(Uno.UX.Property<T> target) :380
 void Attractor__New3_fn(uType* __type, ::g::Uno::UX::Property1* target, Attractor** __retval)
 {
     *__retval = Attractor::New3(__type, target);
 }
 
-// protected override sealed void OnRooted() :316
+// protected override sealed void OnRooted() :510
 void Attractor__OnRooted_fn(Attractor* __this)
 {
     uType* __types[] = {
@@ -596,12 +678,12 @@ void Attractor__OnRooted_fn(Attractor* __this)
     uStackFrame __("Fuse.Animations.Attractor`1", "OnRooted()");
     uT ret3(__types[0], U_ALLOCA(__types[0]->ValueSize));
     ::g::Fuse::Node__OnRooted_fn(__this);
-    __this->_sim = ((uObject*)uPtr(__this->Motion())->Create());
+    __this->_sim = ((uObject*)uPtr(__this->Motion())->Create1());
     ::g::Fuse::Motion::Simulation::DestinationSimulation::Reset_ex(uInterface(uPtr(__this->_sim), __types[1]), (::g::Uno::UX::Property1__Get_fn(uPtr(__this->Target()), &ret3), ret3));
     uPtr(__this->Target())->AddListener((uObject*)__this);
 }
 
-// protected override sealed void OnUnrooted() :324
+// protected override sealed void OnUnrooted() :518
 void Attractor__OnUnrooted_fn(Attractor* __this)
 {
     uStackFrame __("Fuse.Animations.Attractor`1", "OnUnrooted()");
@@ -611,55 +693,55 @@ void Attractor__OnUnrooted_fn(Attractor* __this)
     ::g::Fuse::Node__OnUnrooted_fn(__this);
 }
 
-// public generated Uno.UX.Property<T> get_Target() :183
+// public generated Uno.UX.Property<T> get_Target() :377
 void Attractor__get_Target_fn(Attractor* __this, ::g::Uno::UX::Property1** __retval)
 {
     *__retval = __this->Target();
 }
 
-// private generated void set_Target(Uno.UX.Property<T> value) :183
+// private generated void set_Target(Uno.UX.Property<T> value) :377
 void Attractor__set_Target_fn(Attractor* __this, ::g::Uno::UX::Property1* value)
 {
     __this->Target(value);
 }
 
-// public float get_TimeMultiplier() :276
+// public float get_TimeMultiplier() :470
 void Attractor__get_TimeMultiplier_fn(Attractor* __this, float* __retval)
 {
     *__retval = __this->TimeMultiplier();
 }
 
-// public void set_TimeMultiplier(float value) :277
+// public void set_TimeMultiplier(float value) :471
 void Attractor__set_TimeMultiplier_fn(Attractor* __this, float* value)
 {
     __this->TimeMultiplier(*value);
 }
 
-// public Fuse.Motion.MotionDestinationType get_Type() :209
+// public Fuse.Motion.MotionDestinationType get_Type() :403
 void Attractor__get_Type_fn(Attractor* __this, int* __retval)
 {
     *__retval = __this->Type();
 }
 
-// public void set_Type(Fuse.Motion.MotionDestinationType value) :210
+// public void set_Type(Fuse.Motion.MotionDestinationType value) :404
 void Attractor__set_Type_fn(Attractor* __this, int* value)
 {
     __this->Type(*value);
 }
 
-// public Fuse.Motion.MotionUnit get_Unit() :251
+// public Fuse.Motion.MotionUnit get_Unit() :445
 void Attractor__get_Unit_fn(Attractor* __this, int* __retval)
 {
     *__retval = __this->Unit();
 }
 
-// public void set_Unit(Fuse.Motion.MotionUnit value) :252
+// public void set_Unit(Fuse.Motion.MotionUnit value) :446
 void Attractor__set_Unit_fn(Attractor* __this, int* value)
 {
     __this->Unit(*value);
 }
 
-// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector prop) :342
+// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector prop) :536
 void Attractor__UnoUXIPropertyListenerOnPropertyChanged_fn(Attractor* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Selector* prop)
 {
     uType* __types[] = {
@@ -684,13 +766,13 @@ void Attractor__UnoUXIPropertyListenerOnPropertyChanged_fn(Attractor* __this, ::
     __this->CheckNeedUpdate();
 }
 
-// private void Update() :332
+// private void Update() :526
 void Attractor__Update_fn(Attractor* __this)
 {
     __this->Update();
 }
 
-// public T get_Value() :282
+// public T get_Value() :476
 void Attractor__get_Value_fn(Attractor* __this, uTRef __retval)
 {
     uType* __types[] = {
@@ -707,7 +789,7 @@ void Attractor__get_Value_fn(Attractor* __this, uTRef __retval)
     return __retval.Store((::g::Uno::UX::Property1__Get_fn(uPtr(__this->Target()), &ret8), ret8)), void();
 }
 
-// public void set_Value(T value) :288
+// public void set_Value(T value) :482
 void Attractor__set_Value_fn(Attractor* __this, void* value)
 {
     uType* __types[] = {
@@ -724,26 +806,26 @@ void Attractor__set_Value_fn(Attractor* __this, void* value)
         ::g::Uno::UX::Property1__Set_fn(uPtr(__this->Target()), value, (uObject*)__this);
 }
 
-// internal Attractor() [instance] :178
+// internal Attractor() [instance] :372
 void Attractor::ctor_3()
 {
     uType* __types[] = {
         __type->Precalced(0/*Fuse.Motion.DestinationMotion<T>*/),
     };
-    _motion = ((::g::Fuse::Motion::DestinationMotion*)::g::Fuse::Motion::DestinationMotion::New1(__types[0]));
+    _motion = ((::g::Fuse::Motion::DestinationMotion*)::g::Fuse::Motion::DestinationMotion::New2(__types[0]));
     _isEnabled = true;
     _timeMultiplier = 1.0f;
     ctor_2();
 }
 
-// public Attractor(Uno.UX.Property<T> target) [instance] :186
+// public Attractor(Uno.UX.Property<T> target) [instance] :380
 void Attractor::ctor_4(::g::Uno::UX::Property1* target)
 {
     uType* __types[] = {
         __type->Precalced(0/*Fuse.Motion.DestinationMotion<T>*/),
     };
     uStackFrame __("Fuse.Animations.Attractor`1", ".ctor(Uno.UX.Property<T>)");
-    _motion = ((::g::Fuse::Motion::DestinationMotion*)::g::Fuse::Motion::DestinationMotion::New1(__types[0]));
+    _motion = ((::g::Fuse::Motion::DestinationMotion*)::g::Fuse::Motion::DestinationMotion::New2(__types[0]));
     _isEnabled = true;
     _timeMultiplier = 1.0f;
     ctor_2();
@@ -754,7 +836,7 @@ void Attractor::ctor_4(::g::Uno::UX::Property1* target)
     Target(target);
 }
 
-// private void CheckNeedUpdate() [instance] :303
+// private void CheckNeedUpdate() [instance] :497
 void Attractor::CheckNeedUpdate()
 {
     uStackFrame __("Fuse.Animations.Attractor`1", "CheckNeedUpdate()");
@@ -771,69 +853,69 @@ void Attractor::CheckNeedUpdate()
     _isUpdate = need;
 }
 
-// public float get_Distance() [instance] :242
+// public float get_Distance() [instance] :436
 float Attractor::Distance()
 {
     uStackFrame __("Fuse.Animations.Attractor`1", "get_Distance()");
     return uPtr(_motion)->Distance();
 }
 
-// public void set_Distance(float value) [instance] :243
+// public void set_Distance(float value) [instance] :437
 void Attractor::Distance(float value)
 {
     uStackFrame __("Fuse.Animations.Attractor`1", "set_Distance(float)");
     uPtr(_motion)->Distance(value);
 }
 
-// public float get_Duration() [instance] :230
+// public float get_Duration() [instance] :424
 float Attractor::Duration()
 {
     uStackFrame __("Fuse.Animations.Attractor`1", "get_Duration()");
     return uPtr(_motion)->Duration();
 }
 
-// public void set_Duration(float value) [instance] :231
+// public void set_Duration(float value) [instance] :425
 void Attractor::Duration(float value)
 {
     uStackFrame __("Fuse.Animations.Attractor`1", "set_Duration(float)");
     uPtr(_motion)->Duration(value);
 }
 
-// public float get_DurationExp() [instance] :236
+// public float get_DurationExp() [instance] :430
 float Attractor::DurationExp()
 {
     uStackFrame __("Fuse.Animations.Attractor`1", "get_DurationExp()");
     return uPtr(_motion)->DurationExp();
 }
 
-// public void set_DurationExp(float value) [instance] :237
+// public void set_DurationExp(float value) [instance] :431
 void Attractor::DurationExp(float value)
 {
     uStackFrame __("Fuse.Animations.Attractor`1", "set_DurationExp(float)");
     uPtr(_motion)->DurationExp(value);
 }
 
-// public Fuse.Animations.Easing get_Easing() [instance] :217
+// public Fuse.Animations.Easing get_Easing() [instance] :411
 ::g::Fuse::Animations::Easing* Attractor::Easing()
 {
     uStackFrame __("Fuse.Animations.Attractor`1", "get_Easing()");
     return uPtr(_motion)->Easing();
 }
 
-// public void set_Easing(Fuse.Animations.Easing value) [instance] :218
+// public void set_Easing(Fuse.Animations.Easing value) [instance] :412
 void Attractor::Easing(::g::Fuse::Animations::Easing* value)
 {
     uStackFrame __("Fuse.Animations.Attractor`1", "set_Easing(Fuse.Animations.Easing)");
     uPtr(_motion)->Easing(value);
 }
 
-// public bool get_IsEnabled() [instance] :261
+// public bool get_IsEnabled() [instance] :455
 bool Attractor::IsEnabled()
 {
     return _isEnabled;
 }
 
-// public void set_IsEnabled(bool value) [instance] :262
+// public void set_IsEnabled(bool value) [instance] :456
 void Attractor::IsEnabled(bool value)
 {
     uType* __types[] = {
@@ -854,74 +936,74 @@ void Attractor::IsEnabled(bool value)
     CheckNeedUpdate();
 }
 
-// public Fuse.Motion.DestinationMotion<T> get_Motion() [instance] :196
+// public Fuse.Motion.DestinationMotion<T> get_Motion() [instance] :390
 ::g::Fuse::Motion::DestinationMotion* Attractor::Motion()
 {
     return _motion;
 }
 
-// public void set_Motion(Fuse.Motion.DestinationMotion<T> value) [instance] :197
+// public void set_Motion(Fuse.Motion.DestinationMotion<T> value) [instance] :391
 void Attractor::Motion(::g::Fuse::Motion::DestinationMotion* value)
 {
     _motion = value;
 
     if (IsRootingCompleted())
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[1/*"Motion shou...*/], this, ::STRINGS[2/*"/Users/eric...*/], 201, ::STRINGS[3/*"set_Motion"*/], NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[1/*"Motion shou...*/], this, ::STRINGS[2/*"/usr/local/...*/], 395, ::STRINGS[3/*"set_Motion"*/], NULL);
 }
 
-// public generated Uno.UX.Property<T> get_Target() [instance] :183
+// public generated Uno.UX.Property<T> get_Target() [instance] :377
 ::g::Uno::UX::Property1* Attractor::Target()
 {
     return _Target;
 }
 
-// private generated void set_Target(Uno.UX.Property<T> value) [instance] :183
+// private generated void set_Target(Uno.UX.Property<T> value) [instance] :377
 void Attractor::Target(::g::Uno::UX::Property1* value)
 {
     _Target = value;
 }
 
-// public float get_TimeMultiplier() [instance] :276
+// public float get_TimeMultiplier() [instance] :470
 float Attractor::TimeMultiplier()
 {
     return _timeMultiplier;
 }
 
-// public void set_TimeMultiplier(float value) [instance] :277
+// public void set_TimeMultiplier(float value) [instance] :471
 void Attractor::TimeMultiplier(float value)
 {
     _timeMultiplier = value;
 }
 
-// public Fuse.Motion.MotionDestinationType get_Type() [instance] :209
+// public Fuse.Motion.MotionDestinationType get_Type() [instance] :403
 int Attractor::Type()
 {
     uStackFrame __("Fuse.Animations.Attractor`1", "get_Type()");
     return uPtr(_motion)->Type();
 }
 
-// public void set_Type(Fuse.Motion.MotionDestinationType value) [instance] :210
+// public void set_Type(Fuse.Motion.MotionDestinationType value) [instance] :404
 void Attractor::Type(int value)
 {
     uStackFrame __("Fuse.Animations.Attractor`1", "set_Type(Fuse.Motion.MotionDestinationType)");
     uPtr(_motion)->Type(value);
 }
 
-// public Fuse.Motion.MotionUnit get_Unit() [instance] :251
+// public Fuse.Motion.MotionUnit get_Unit() [instance] :445
 int Attractor::Unit()
 {
     uStackFrame __("Fuse.Animations.Attractor`1", "get_Unit()");
     return uPtr(_motion)->Unit();
 }
 
-// public void set_Unit(Fuse.Motion.MotionUnit value) [instance] :252
+// public void set_Unit(Fuse.Motion.MotionUnit value) [instance] :446
 void Attractor::Unit(int value)
 {
     uStackFrame __("Fuse.Animations.Attractor`1", "set_Unit(Fuse.Motion.MotionUnit)");
     uPtr(_motion)->Unit(value);
 }
 
-// private void Update() [instance] :332
+// private void Update() [instance] :526
 void Attractor::Update()
 {
     uType* __types[] = {
@@ -940,7 +1022,7 @@ void Attractor::Update()
     CheckNeedUpdate();
 }
 
-// internal Attractor New() [static] :178
+// internal Attractor New() [static] :372
 Attractor* Attractor::New2(uType* __type)
 {
     Attractor* obj1 = (Attractor*)uNew(__type);
@@ -948,7 +1030,7 @@ Attractor* Attractor::New2(uType* __type)
     return obj1;
 }
 
-// public Attractor New(Uno.UX.Property<T> target) [static] :186
+// public Attractor New(Uno.UX.Property<T> target) [static] :380
 Attractor* Attractor::New3(uType* __type, ::g::Uno::UX::Property1* target)
 {
     Attractor* obj2 = (Attractor*)uNew(__type);
@@ -957,10 +1039,65 @@ Attractor* Attractor::New3(uType* __type, ::g::Uno::UX::Property1* target)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class AverageMasterProperty<T> :377
+// public sealed class AttractorConfig :169
+// {
+static void AttractorConfig_build(uType* type)
+{
+    type->SetFields(9);
+    type->Reflection.SetFunctions(1,
+        new uFunction(".ctor", NULL, (void*)AttractorConfig__New2_fn, 0, true, type, 0));
+}
+
+uType* AttractorConfig_typeof()
+{
+    static uSStrong<uType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.BaseDefinition = ::g::Fuse::Motion::DestinationMotionConfig_typeof();
+    options.FieldCount = 9;
+    options.ObjectSize = sizeof(AttractorConfig);
+    options.TypeSize = sizeof(uType);
+    type = uClassType::New("Fuse.Animations.AttractorConfig", options);
+    type->fp_build_ = AttractorConfig_build;
+    type->fp_ctor_ = (void*)AttractorConfig__New2_fn;
+    return type;
+}
+
+// public generated AttractorConfig() :169
+void AttractorConfig__ctor_1_fn(AttractorConfig* __this)
+{
+    __this->ctor_1();
+}
+
+// public generated AttractorConfig New() :169
+void AttractorConfig__New2_fn(AttractorConfig** __retval)
+{
+    *__retval = AttractorConfig::New2();
+}
+
+// public generated AttractorConfig() [instance] :169
+void AttractorConfig::ctor_1()
+{
+    ctor_();
+}
+
+// public generated AttractorConfig New() [static] :169
+AttractorConfig* AttractorConfig::New2()
+{
+    AttractorConfig* obj1 = (AttractorConfig*)uNew(AttractorConfig_typeof());
+    obj1->ctor_1();
+    return obj1;
+}
+// }
+
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
+
+// internal sealed class AverageMasterProperty<T> :571
 // {
 static void AverageMasterProperty_build(uType* type)
 {
@@ -999,19 +1136,19 @@ static void AverageMasterProperty_build(uType* type)
     return type;
 }
 
-// public AverageMasterProperty(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) :379
+// public AverageMasterProperty(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) :573
 void AverageMasterProperty__ctor_2_fn(AverageMasterProperty* __this, ::g::Uno::UX::Property1* property, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     __this->ctor_2(property, mixerBase);
 }
 
-// public AverageMasterProperty New(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) :379
+// public AverageMasterProperty New(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) :573
 void AverageMasterProperty__New1_fn(uType* __type, ::g::Uno::UX::Property1* property, ::g::Fuse::Animations::MixerBase* mixerBase, AverageMasterProperty** __retval)
 {
     *__retval = AverageMasterProperty::New1(__type, property, mixerBase);
 }
 
-// protected override sealed void OnActive() :383
+// protected override sealed void OnActive() :577
 void AverageMasterProperty__OnActive_fn(AverageMasterProperty* __this)
 {
     uType* __types[] = {
@@ -1024,7 +1161,7 @@ void AverageMasterProperty__OnActive_fn(AverageMasterProperty* __this)
         __this->blender = ((::g::Fuse::Internal::Blender*)::g::Fuse::Internal::BlenderMap::Get(__types[0]));
 }
 
-// public override sealed void OnComplete() :390
+// public override sealed void OnComplete() :584
 void AverageMasterProperty__OnComplete_fn(AverageMasterProperty* __this)
 {
     uType* __types[] = {
@@ -1066,13 +1203,13 @@ void AverageMasterProperty__OnComplete_fn(AverageMasterProperty* __this)
     ::g::Fuse::Animations::MasterProperty__Set_fn(__this, nv);
 }
 
-// public AverageMasterProperty(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) [instance] :379
+// public AverageMasterProperty(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) [instance] :573
 void AverageMasterProperty::ctor_2(::g::Uno::UX::Property1* property, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     ctor_1(property, mixerBase);
 }
 
-// public AverageMasterProperty New(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) [static] :379
+// public AverageMasterProperty New(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) [static] :573
 AverageMasterProperty* AverageMasterProperty::New1(uType* __type, ::g::Uno::UX::Property1* property, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     AverageMasterProperty* obj1 = (AverageMasterProperty*)uNew(__type);
@@ -1081,10 +1218,10 @@ AverageMasterProperty* AverageMasterProperty::New1(uType* __type, ::g::Uno::UX::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class AverageMasterTransform :417
+// internal sealed class AverageMasterTransform :611
 // {
 static void AverageMasterTransform_build(uType* type)
 {
@@ -1111,19 +1248,19 @@ static void AverageMasterTransform_build(uType* type)
     return type;
 }
 
-// public AverageMasterTransform(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) :419
+// public AverageMasterTransform(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) :613
 void AverageMasterTransform__ctor_2_fn(AverageMasterTransform* __this, ::g::Fuse::Visual* node, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     __this->ctor_2(node, mixerBase);
 }
 
-// public AverageMasterTransform New(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) :419
+// public AverageMasterTransform New(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) :613
 void AverageMasterTransform__New1_fn(::g::Fuse::Visual* node, ::g::Fuse::Animations::MixerBase* mixerBase, AverageMasterTransform** __retval)
 {
     *__retval = AverageMasterTransform::New1(node, mixerBase);
 }
 
-// public override sealed void OnComplete() :422
+// public override sealed void OnComplete() :616
 void AverageMasterTransform__OnComplete_fn(AverageMasterTransform* __this)
 {
     uStackFrame __("Fuse.Animations.AverageMasterTransform", "OnComplete()");
@@ -1152,13 +1289,13 @@ void AverageMasterTransform__OnComplete_fn(AverageMasterTransform* __this)
     }
 }
 
-// public AverageMasterTransform(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) [instance] :419
+// public AverageMasterTransform(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) [instance] :613
 void AverageMasterTransform::ctor_2(::g::Fuse::Visual* node, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     ctor_1(node, mixerBase);
 }
 
-// public AverageMasterTransform New(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) [static] :419
+// public AverageMasterTransform New(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) [static] :613
 AverageMasterTransform* AverageMasterTransform::New1(::g::Fuse::Visual* node, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     AverageMasterTransform* obj1 = (AverageMasterTransform*)uNew(AverageMasterTransform_typeof());
@@ -1167,10 +1304,10 @@ AverageMasterTransform* AverageMasterTransform::New1(::g::Fuse::Visual* node, ::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class AverageMixer :367
+// internal sealed class AverageMixer :561
 // {
 static void AverageMixer_build(uType* type)
 {
@@ -1205,13 +1342,13 @@ static void AverageMixer_build(uType* type)
     return type;
 }
 
-// public generated AverageMixer() :367
+// public generated AverageMixer() :561
 void AverageMixer__ctor_1_fn(AverageMixer* __this)
 {
     __this->ctor_1();
 }
 
-// protected override sealed Fuse.Animations.MasterProperty<T> CreateMaster<T>(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) :369
+// protected override sealed Fuse.Animations.MasterProperty<T> CreateMaster<T>(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) :563
 void AverageMixer__CreateMaster_fn(AverageMixer* __this, uType* __type, ::g::Uno::UX::Property1* property, ::g::Fuse::Animations::MixerBase* mixerBase, ::g::Fuse::Animations::MasterProperty** __retval)
 {
     __type = AverageMixer_typeof()->GetVirtual(0, __type);
@@ -1221,25 +1358,25 @@ void AverageMixer__CreateMaster_fn(AverageMixer* __this, uType* __type, ::g::Uno
     return *__retval = (::g::Fuse::Animations::AverageMasterProperty*)::g::Fuse::Animations::AverageMasterProperty::New1(__types[0], property, mixerBase), void();
 }
 
-// protected override sealed Fuse.Animations.MasterBase<Fuse.Transform> CreateMasterTransform(Fuse.Visual element, Fuse.Animations.MixerBase mixerBase) :372
+// protected override sealed Fuse.Animations.MasterBase<Fuse.Transform> CreateMasterTransform(Fuse.Visual element, Fuse.Animations.MixerBase mixerBase) :566
 void AverageMixer__CreateMasterTransform_fn(AverageMixer* __this, ::g::Fuse::Visual* element, ::g::Fuse::Animations::MixerBase* mixerBase, ::g::Fuse::Animations::MasterBase** __retval)
 {
     return *__retval = ::g::Fuse::Animations::AverageMasterTransform::New1(element, mixerBase), void();
 }
 
-// public generated AverageMixer New() :367
+// public generated AverageMixer New() :561
 void AverageMixer__New1_fn(AverageMixer** __retval)
 {
     *__retval = AverageMixer::New1();
 }
 
-// public generated AverageMixer() [instance] :367
+// public generated AverageMixer() [instance] :561
 void AverageMixer::ctor_1()
 {
     ctor_();
 }
 
-// public generated AverageMixer New() [static] :367
+// public generated AverageMixer New() [static] :561
 AverageMixer* AverageMixer::New1()
 {
     AverageMixer* obj1 = (AverageMixer*)uNew(AverageMixer_typeof());
@@ -1248,10 +1385,10 @@ AverageMixer* AverageMixer::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.BackInImpl :756
+// internal sealed class Easing.BackInImpl :911
 // {
 static void Easing__BackInImpl_build(uType* type)
 {
@@ -1273,13 +1410,13 @@ static void Easing__BackInImpl_build(uType* type)
     return type;
 }
 
-// public generated BackInImpl() :756
+// public generated BackInImpl() :911
 void Easing__BackInImpl__ctor_1_fn(Easing__BackInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :758
+// public override sealed double Map(double k) :913
 void Easing__BackInImpl__Map_fn(Easing__BackInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -1287,19 +1424,19 @@ void Easing__BackInImpl__Map_fn(Easing__BackInImpl* __this, double* k, double* _
     return *__retval = (k_ * k_) * (((double)(s + 1.0f) * k_) - (double)s), void();
 }
 
-// public generated BackInImpl New() :756
+// public generated BackInImpl New() :911
 void Easing__BackInImpl__New1_fn(Easing__BackInImpl** __retval)
 {
     *__retval = Easing__BackInImpl::New1();
 }
 
-// public generated BackInImpl() [instance] :756
+// public generated BackInImpl() [instance] :911
 void Easing__BackInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated BackInImpl New() [static] :756
+// public generated BackInImpl New() [static] :911
 Easing__BackInImpl* Easing__BackInImpl::New1()
 {
     Easing__BackInImpl* obj1 = (Easing__BackInImpl*)uNew(Easing__BackInImpl_typeof());
@@ -1308,10 +1445,10 @@ Easing__BackInImpl* Easing__BackInImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.BackInOutImpl :775
+// internal sealed class Easing.BackInOutImpl :930
 // {
 static void Easing__BackInOutImpl_build(uType* type)
 {
@@ -1333,13 +1470,13 @@ static void Easing__BackInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated BackInOutImpl() :775
+// public generated BackInOutImpl() :930
 void Easing__BackInOutImpl__ctor_1_fn(Easing__BackInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :777
+// public override sealed double Map(double k) :932
 void Easing__BackInOutImpl__Map_fn(Easing__BackInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -1353,19 +1490,19 @@ void Easing__BackInOutImpl__Map_fn(Easing__BackInOutImpl* __this, double* k, dou
     return *__retval = 0.5 * (((k_ * k_) * (((double)(s + 1.0f) * k_) + (double)s)) + 2.0), void();
 }
 
-// public generated BackInOutImpl New() :775
+// public generated BackInOutImpl New() :930
 void Easing__BackInOutImpl__New1_fn(Easing__BackInOutImpl** __retval)
 {
     *__retval = Easing__BackInOutImpl::New1();
 }
 
-// public generated BackInOutImpl() [instance] :775
+// public generated BackInOutImpl() [instance] :930
 void Easing__BackInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated BackInOutImpl New() [static] :775
+// public generated BackInOutImpl New() [static] :930
 Easing__BackInOutImpl* Easing__BackInOutImpl::New1()
 {
     Easing__BackInOutImpl* obj1 = (Easing__BackInOutImpl*)uNew(Easing__BackInOutImpl_typeof());
@@ -1374,10 +1511,10 @@ Easing__BackInOutImpl* Easing__BackInOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.BackOutImpl :765
+// internal sealed class Easing.BackOutImpl :920
 // {
 static void Easing__BackOutImpl_build(uType* type)
 {
@@ -1399,13 +1536,13 @@ static void Easing__BackOutImpl_build(uType* type)
     return type;
 }
 
-// public generated BackOutImpl() :765
+// public generated BackOutImpl() :920
 void Easing__BackOutImpl__ctor_1_fn(Easing__BackOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :767
+// public override sealed double Map(double k) :922
 void Easing__BackOutImpl__Map_fn(Easing__BackOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -1414,19 +1551,19 @@ void Easing__BackOutImpl__Map_fn(Easing__BackOutImpl* __this, double* k, double*
     return *__retval = ((k_ * k_) * (((double)(s + 1.0f) * k_) + (double)s)) + 1.0, void();
 }
 
-// public generated BackOutImpl New() :765
+// public generated BackOutImpl New() :920
 void Easing__BackOutImpl__New1_fn(Easing__BackOutImpl** __retval)
 {
     *__retval = Easing__BackOutImpl::New1();
 }
 
-// public generated BackOutImpl() [instance] :765
+// public generated BackOutImpl() [instance] :920
 void Easing__BackOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated BackOutImpl New() [static] :765
+// public generated BackOutImpl New() [static] :920
 Easing__BackOutImpl* Easing__BackOutImpl::New1()
 {
     Easing__BackOutImpl* obj1 = (Easing__BackOutImpl*)uNew(Easing__BackOutImpl_typeof());
@@ -1435,10 +1572,10 @@ Easing__BackOutImpl* Easing__BackOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.BounceInImpl :790
+// internal sealed class Easing.BounceInImpl :945
 // {
 static void Easing__BounceInImpl_build(uType* type)
 {
@@ -1460,13 +1597,13 @@ static void Easing__BounceInImpl_build(uType* type)
     return type;
 }
 
-// public generated BounceInImpl() :790
+// public generated BounceInImpl() :945
 void Easing__BounceInImpl__ctor_1_fn(Easing__BounceInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :792
+// public override sealed double Map(double k) :947
 void Easing__BounceInImpl__Map_fn(Easing__BounceInImpl* __this, double* k, double* __retval)
 {
     uStackFrame __("Fuse.Animations.Easing.BounceInImpl", "Map(double)");
@@ -1474,19 +1611,19 @@ void Easing__BounceInImpl__Map_fn(Easing__BounceInImpl* __this, double* k, doubl
     return *__retval = 1.0 - uPtr(::g::Fuse::Animations::Easing::BounceOut())->Map(1.0 - k_), void();
 }
 
-// public generated BounceInImpl New() :790
+// public generated BounceInImpl New() :945
 void Easing__BounceInImpl__New1_fn(Easing__BounceInImpl** __retval)
 {
     *__retval = Easing__BounceInImpl::New1();
 }
 
-// public generated BounceInImpl() [instance] :790
+// public generated BounceInImpl() [instance] :945
 void Easing__BounceInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated BounceInImpl New() [static] :790
+// public generated BounceInImpl New() [static] :945
 Easing__BounceInImpl* Easing__BounceInImpl::New1()
 {
     Easing__BounceInImpl* obj1 = (Easing__BounceInImpl*)uNew(Easing__BounceInImpl_typeof());
@@ -1495,10 +1632,10 @@ Easing__BounceInImpl* Easing__BounceInImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.BounceInOutImpl :824
+// internal sealed class Easing.BounceInOutImpl :979
 // {
 static void Easing__BounceInOutImpl_build(uType* type)
 {
@@ -1520,13 +1657,13 @@ static void Easing__BounceInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated BounceInOutImpl() :824
+// public generated BounceInOutImpl() :979
 void Easing__BounceInOutImpl__ctor_1_fn(Easing__BounceInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :826
+// public override sealed double Map(double k) :981
 void Easing__BounceInOutImpl__Map_fn(Easing__BounceInOutImpl* __this, double* k, double* __retval)
 {
     uStackFrame __("Fuse.Animations.Easing.BounceInOutImpl", "Map(double)");
@@ -1538,19 +1675,19 @@ void Easing__BounceInOutImpl__Map_fn(Easing__BounceInOutImpl* __this, double* k,
     return *__retval = (uPtr(::g::Fuse::Animations::Easing::BounceOut())->Map((k_ * 2.0) - 1.0) * 0.5) + 0.5, void();
 }
 
-// public generated BounceInOutImpl New() :824
+// public generated BounceInOutImpl New() :979
 void Easing__BounceInOutImpl__New1_fn(Easing__BounceInOutImpl** __retval)
 {
     *__retval = Easing__BounceInOutImpl::New1();
 }
 
-// public generated BounceInOutImpl() [instance] :824
+// public generated BounceInOutImpl() [instance] :979
 void Easing__BounceInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated BounceInOutImpl New() [static] :824
+// public generated BounceInOutImpl New() [static] :979
 Easing__BounceInOutImpl* Easing__BounceInOutImpl::New1()
 {
     Easing__BounceInOutImpl* obj1 = (Easing__BounceInOutImpl*)uNew(Easing__BounceInOutImpl_typeof());
@@ -1559,10 +1696,10 @@ Easing__BounceInOutImpl* Easing__BounceInOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.BounceOutImpl :798
+// internal sealed class Easing.BounceOutImpl :953
 // {
 static void Easing__BounceOutImpl_build(uType* type)
 {
@@ -1584,13 +1721,13 @@ static void Easing__BounceOutImpl_build(uType* type)
     return type;
 }
 
-// public generated BounceOutImpl() :798
+// public generated BounceOutImpl() :953
 void Easing__BounceOutImpl__ctor_1_fn(Easing__BounceOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :800
+// public override sealed double Map(double k) :955
 void Easing__BounceOutImpl__Map_fn(Easing__BounceOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -1614,19 +1751,19 @@ void Easing__BounceOutImpl__Map_fn(Easing__BounceOutImpl* __this, double* k, dou
     }
 }
 
-// public generated BounceOutImpl New() :798
+// public generated BounceOutImpl New() :953
 void Easing__BounceOutImpl__New1_fn(Easing__BounceOutImpl** __retval)
 {
     *__retval = Easing__BounceOutImpl::New1();
 }
 
-// public generated BounceOutImpl() [instance] :798
+// public generated BounceOutImpl() [instance] :953
 void Easing__BounceOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated BounceOutImpl New() [static] :798
+// public generated BounceOutImpl New() [static] :953
 Easing__BounceOutImpl* Easing__BounceOutImpl::New1()
 {
     Easing__BounceOutImpl* obj1 = (Easing__BounceOutImpl*)uNew(Easing__BounceOutImpl_typeof());
@@ -1635,10 +1772,10 @@ Easing__BounceOutImpl* Easing__BounceOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public sealed class Change<T> :487
+// public sealed class Change<T> :681
 // {
 static void Change_build(uType* type)
 {
@@ -1697,13 +1834,13 @@ static void Change_build(uType* type)
     return type;
 }
 
-// public Change(Uno.UX.Property<T> target) :515
+// public Change(Uno.UX.Property<T> target) :709
 void Change__ctor_3_fn(Change* __this, ::g::Uno::UX::Property1* target)
 {
     __this->ctor_3(target);
 }
 
-// internal override sealed Fuse.Animations.AnimatorState CreateState(Fuse.Animations.CreateStateParams p) :549
+// internal override sealed Fuse.Animations.AnimatorState CreateState(Fuse.Animations.CreateStateParams p) :743
 void Change__CreateState_fn(Change* __this, ::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse::Animations::AnimatorState** __retval)
 {
     uType* __types[] = {
@@ -1717,79 +1854,79 @@ void Change__CreateState_fn(Change* __this, ::g::Fuse::Animations::CreateStatePa
     return *__retval = (::g::Fuse::Animations::DiscreteTrackChangeState*)::g::Fuse::Animations::DiscreteTrackChangeState::New1(__types[1], __this, p), void();
 }
 
-// public float get_DegreesX() :581
+// public float get_DegreesX() :775
 void Change__get_DegreesX_fn(Change* __this, float* __retval)
 {
     *__retval = __this->DegreesX();
 }
 
-// public void set_DegreesX(float value) :582
+// public void set_DegreesX(float value) :776
 void Change__set_DegreesX_fn(Change* __this, float* value)
 {
     __this->DegreesX(*value);
 }
 
-// public float2 get_DegreesXY() :623
+// public float2 get_DegreesXY() :817
 void Change__get_DegreesXY_fn(Change* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->DegreesXY();
 }
 
-// public void set_DegreesXY(float2 value) :624
+// public void set_DegreesXY(float2 value) :818
 void Change__set_DegreesXY_fn(Change* __this, ::g::Uno::Float2* value)
 {
     __this->DegreesXY(*value);
 }
 
-// public float get_DegreesY() :595
+// public float get_DegreesY() :789
 void Change__get_DegreesY_fn(Change* __this, float* __retval)
 {
     *__retval = __this->DegreesY();
 }
 
-// public void set_DegreesY(float value) :596
+// public void set_DegreesY(float value) :790
 void Change__set_DegreesY_fn(Change* __this, float* value)
 {
     __this->DegreesY(*value);
 }
 
-// public float get_DegreesZ() :609
+// public float get_DegreesZ() :803
 void Change__get_DegreesZ_fn(Change* __this, float* __retval)
 {
     *__retval = __this->DegreesZ();
 }
 
-// public void set_DegreesZ(float value) :610
+// public void set_DegreesZ(float value) :804
 void Change__set_DegreesZ_fn(Change* __this, float* value)
 {
     __this->DegreesZ(*value);
 }
 
-// private bool get_IsContinuous() :558
+// private bool get_IsContinuous() :752
 void Change__get_IsContinuous_fn(Change* __this, bool* __retval)
 {
     *__retval = __this->IsContinuous();
 }
 
-// public Change New(Uno.UX.Property<T> target) :515
+// public Change New(Uno.UX.Property<T> target) :709
 void Change__New2_fn(uType* __type, ::g::Uno::UX::Property1* target, Change** __retval)
 {
     *__retval = Change::New2(__type, target);
 }
 
-// public generated Uno.UX.Property<T> get_Target() :492
+// public generated Uno.UX.Property<T> get_Target() :686
 void Change__get_Target_fn(Change* __this, ::g::Uno::UX::Property1** __retval)
 {
     *__retval = __this->Target();
 }
 
-// private generated void set_Target(Uno.UX.Property<T> value) :492
+// private generated void set_Target(Uno.UX.Property<T> value) :686
 void Change__set_Target_fn(Change* __this, ::g::Uno::UX::Property1* value)
 {
     __this->Target(value);
 }
 
-// public T get_Value() :499
+// public T get_Value() :693
 void Change__get_Value_fn(Change* __this, uTRef __retval)
 {
     uType* __types[] = {
@@ -1800,7 +1937,7 @@ void Change__get_Value_fn(Change* __this, uTRef __retval)
     return __retval.Store(__types[0], __this->IsContinuous() ? (uPtr(__this->ContinuousConverter)->Out_ex(uCRef(__this->_vectorValue), &ret3), (void*)ret3) : (void*)uUnboxAny(__types[0], __this->_objectValue)), void();
 }
 
-// public void set_Value(T value) :503
+// public void set_Value(T value) :697
 void Change__set_Value_fn(Change* __this, void* value)
 {
     uStackFrame __("Fuse.Animations.Change`1", "set_Value(T)");
@@ -1812,55 +1949,55 @@ void Change__set_Value_fn(Change* __this, void* value)
         __this->_objectValue = uBoxPtr(__this->__type->T(0), value);
 }
 
-// public float get_X() :574
+// public float get_X() :768
 void Change__get_X_fn(Change* __this, float* __retval)
 {
     *__retval = __this->X();
 }
 
-// public void set_X(float value) :575
+// public void set_X(float value) :769
 void Change__set_X_fn(Change* __this, float* value)
 {
     __this->X(*value);
 }
 
-// public float2 get_XY() :616
+// public float2 get_XY() :810
 void Change__get_XY_fn(Change* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->XY();
 }
 
-// public void set_XY(float2 value) :617
+// public void set_XY(float2 value) :811
 void Change__set_XY_fn(Change* __this, ::g::Uno::Float2* value)
 {
     __this->XY(*value);
 }
 
-// public float get_Y() :588
+// public float get_Y() :782
 void Change__get_Y_fn(Change* __this, float* __retval)
 {
     *__retval = __this->Y();
 }
 
-// public void set_Y(float value) :589
+// public void set_Y(float value) :783
 void Change__set_Y_fn(Change* __this, float* value)
 {
     __this->Y(*value);
 }
 
-// public float get_Z() :602
+// public float get_Z() :796
 void Change__get_Z_fn(Change* __this, float* __retval)
 {
     *__retval = __this->Z();
 }
 
-// public void set_Z(float value) :603
+// public void set_Z(float value) :797
 void Change__set_Z_fn(Change* __this, float* value)
 {
     __this->Z(*value);
 }
 
-// public Change(Uno.UX.Property<T> target) [instance] :515
+// public Change(Uno.UX.Property<T> target) [instance] :709
 void Change::ctor_3(::g::Uno::UX::Property1* target)
 {
     uType* __types[] = {
@@ -1904,122 +2041,122 @@ void Change::ctor_3(::g::Uno::UX::Property1* target)
     }
 }
 
-// public float get_DegreesX() [instance] :581
+// public float get_DegreesX() [instance] :775
 float Change::DegreesX()
 {
     return ::g::Uno::Math::RadiansToDegrees1(X());
 }
 
-// public void set_DegreesX(float value) [instance] :582
+// public void set_DegreesX(float value) [instance] :776
 void Change::DegreesX(float value)
 {
     X(::g::Uno::Math::DegreesToRadians1(value));
 }
 
-// public float2 get_DegreesXY() [instance] :623
+// public float2 get_DegreesXY() [instance] :817
 ::g::Uno::Float2 Change::DegreesXY()
 {
     return ::g::Uno::Float2__New2(::g::Uno::Math::RadiansToDegrees1(X()), ::g::Uno::Math::RadiansToDegrees1(Y()));
 }
 
-// public void set_DegreesXY(float2 value) [instance] :624
+// public void set_DegreesXY(float2 value) [instance] :818
 void Change::DegreesXY(::g::Uno::Float2 value)
 {
     XY(::g::Uno::Float2__New2(::g::Uno::Math::DegreesToRadians1(value.X), ::g::Uno::Math::DegreesToRadians1(value.Y)));
 }
 
-// public float get_DegreesY() [instance] :595
+// public float get_DegreesY() [instance] :789
 float Change::DegreesY()
 {
     return ::g::Uno::Math::RadiansToDegrees1(Y());
 }
 
-// public void set_DegreesY(float value) [instance] :596
+// public void set_DegreesY(float value) [instance] :790
 void Change::DegreesY(float value)
 {
     Y(::g::Uno::Math::DegreesToRadians1(value));
 }
 
-// public float get_DegreesZ() [instance] :609
+// public float get_DegreesZ() [instance] :803
 float Change::DegreesZ()
 {
     return ::g::Uno::Math::RadiansToDegrees1(Y());
 }
 
-// public void set_DegreesZ(float value) [instance] :610
+// public void set_DegreesZ(float value) [instance] :804
 void Change::DegreesZ(float value)
 {
     Y(::g::Uno::Math::DegreesToRadians1(value));
 }
 
-// private bool get_IsContinuous() [instance] :558
+// private bool get_IsContinuous() [instance] :752
 bool Change::IsContinuous()
 {
     return (((((::g::Uno::Type::op_Equality(__type->T(0), ::g::Uno::Float_typeof()) || ::g::Uno::Type::op_Equality(__type->T(0), ::g::Uno::Float2_typeof())) || ::g::Uno::Type::op_Equality(__type->T(0), ::g::Uno::Float3_typeof())) || ::g::Uno::Type::op_Equality(__type->T(0), ::g::Uno::Float4_typeof())) || ::g::Uno::Type::op_Equality(__type->T(0), ::g::Uno::Double_typeof())) || ::g::Uno::Type::op_Equality(__type->T(0), ::g::Uno::UX::Size_typeof())) || ::g::Uno::Type::op_Equality(__type->T(0), ::g::Uno::UX::Size2_typeof());
 }
 
-// public generated Uno.UX.Property<T> get_Target() [instance] :492
+// public generated Uno.UX.Property<T> get_Target() [instance] :686
 ::g::Uno::UX::Property1* Change::Target()
 {
     return _Target;
 }
 
-// private generated void set_Target(Uno.UX.Property<T> value) [instance] :492
+// private generated void set_Target(Uno.UX.Property<T> value) [instance] :686
 void Change::Target(::g::Uno::UX::Property1* value)
 {
     _Target = value;
 }
 
-// public float get_X() [instance] :574
+// public float get_X() [instance] :768
 float Change::X()
 {
     return _vectorValue.X;
 }
 
-// public void set_X(float value) [instance] :575
+// public void set_X(float value) [instance] :769
 void Change::X(float value)
 {
     _vectorValue.X = value;
 }
 
-// public float2 get_XY() [instance] :616
+// public float2 get_XY() [instance] :810
 ::g::Uno::Float2 Change::XY()
 {
     ::g::Uno::Float4 ind1 = _vectorValue;
     return ::g::Uno::Float2__New2(ind1.X, ind1.Y);
 }
 
-// public void set_XY(float2 value) [instance] :617
+// public void set_XY(float2 value) [instance] :811
 void Change::XY(::g::Uno::Float2 value)
 {
     _vectorValue = ::g::Uno::Float4__New6(value, _vectorValue.Z, _vectorValue.W);
 }
 
-// public float get_Y() [instance] :588
+// public float get_Y() [instance] :782
 float Change::Y()
 {
     return _vectorValue.Y;
 }
 
-// public void set_Y(float value) [instance] :589
+// public void set_Y(float value) [instance] :783
 void Change::Y(float value)
 {
     _vectorValue.Y = value;
 }
 
-// public float get_Z() [instance] :602
+// public float get_Z() [instance] :796
 float Change::Z()
 {
     return _vectorValue.Z;
 }
 
-// public void set_Z(float value) [instance] :603
+// public void set_Z(float value) [instance] :797
 void Change::Z(float value)
 {
     _vectorValue.Z = value;
 }
 
-// public Change New(Uno.UX.Property<T> target) [static] :515
+// public Change New(Uno.UX.Property<T> target) [static] :709
 Change* Change::New2(uType* __type, ::g::Uno::UX::Property1* target)
 {
     Change* obj2 = (Change*)uNew(__type);
@@ -2028,10 +2165,10 @@ Change* Change::New2(uType* __type, ::g::Uno::UX::Property1* target)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.CircularInImpl :682
+// internal sealed class Easing.CircularInImpl :837
 // {
 static void Easing__CircularInImpl_build(uType* type)
 {
@@ -2053,32 +2190,32 @@ static void Easing__CircularInImpl_build(uType* type)
     return type;
 }
 
-// public generated CircularInImpl() :682
+// public generated CircularInImpl() :837
 void Easing__CircularInImpl__ctor_1_fn(Easing__CircularInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :684
+// public override sealed double Map(double k) :839
 void Easing__CircularInImpl__Map_fn(Easing__CircularInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = 1.0 - ::g::Uno::Math::Sqrt(1.0 - (k_ * k_)), void();
 }
 
-// public generated CircularInImpl New() :682
+// public generated CircularInImpl New() :837
 void Easing__CircularInImpl__New1_fn(Easing__CircularInImpl** __retval)
 {
     *__retval = Easing__CircularInImpl::New1();
 }
 
-// public generated CircularInImpl() [instance] :682
+// public generated CircularInImpl() [instance] :837
 void Easing__CircularInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated CircularInImpl New() [static] :682
+// public generated CircularInImpl New() [static] :837
 Easing__CircularInImpl* Easing__CircularInImpl::New1()
 {
     Easing__CircularInImpl* obj1 = (Easing__CircularInImpl*)uNew(Easing__CircularInImpl_typeof());
@@ -2087,10 +2224,10 @@ Easing__CircularInImpl* Easing__CircularInImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.CircularInOutImpl :699
+// internal sealed class Easing.CircularInOutImpl :854
 // {
 static void Easing__CircularInOutImpl_build(uType* type)
 {
@@ -2112,13 +2249,13 @@ static void Easing__CircularInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated CircularInOutImpl() :699
+// public generated CircularInOutImpl() :854
 void Easing__CircularInOutImpl__ctor_1_fn(Easing__CircularInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :701
+// public override sealed double Map(double k) :856
 void Easing__CircularInOutImpl__Map_fn(Easing__CircularInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -2131,19 +2268,19 @@ void Easing__CircularInOutImpl__Map_fn(Easing__CircularInOutImpl* __this, double
     return *__retval = 0.5 * (::g::Uno::Math::Sqrt(1.0 - (k_ * k_)) + 1.0), void();
 }
 
-// public generated CircularInOutImpl New() :699
+// public generated CircularInOutImpl New() :854
 void Easing__CircularInOutImpl__New1_fn(Easing__CircularInOutImpl** __retval)
 {
     *__retval = Easing__CircularInOutImpl::New1();
 }
 
-// public generated CircularInOutImpl() [instance] :699
+// public generated CircularInOutImpl() [instance] :854
 void Easing__CircularInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated CircularInOutImpl New() [static] :699
+// public generated CircularInOutImpl New() [static] :854
 Easing__CircularInOutImpl* Easing__CircularInOutImpl::New1()
 {
     Easing__CircularInOutImpl* obj1 = (Easing__CircularInOutImpl*)uNew(Easing__CircularInOutImpl_typeof());
@@ -2152,10 +2289,10 @@ Easing__CircularInOutImpl* Easing__CircularInOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.CircularOutImpl :690
+// internal sealed class Easing.CircularOutImpl :845
 // {
 static void Easing__CircularOutImpl_build(uType* type)
 {
@@ -2177,13 +2314,13 @@ static void Easing__CircularOutImpl_build(uType* type)
     return type;
 }
 
-// public generated CircularOutImpl() :690
+// public generated CircularOutImpl() :845
 void Easing__CircularOutImpl__ctor_1_fn(Easing__CircularOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :692
+// public override sealed double Map(double k) :847
 void Easing__CircularOutImpl__Map_fn(Easing__CircularOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -2191,19 +2328,19 @@ void Easing__CircularOutImpl__Map_fn(Easing__CircularOutImpl* __this, double* k,
     return *__retval = ::g::Uno::Math::Sqrt(1.0 - (k_ * k_)), void();
 }
 
-// public generated CircularOutImpl New() :690
+// public generated CircularOutImpl New() :845
 void Easing__CircularOutImpl__New1_fn(Easing__CircularOutImpl** __retval)
 {
     *__retval = Easing__CircularOutImpl::New1();
 }
 
-// public generated CircularOutImpl() [instance] :690
+// public generated CircularOutImpl() [instance] :845
 void Easing__CircularOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated CircularOutImpl New() [static] :690
+// public generated CircularOutImpl New() [static] :845
 Easing__CircularOutImpl* Easing__CircularOutImpl::New1()
 {
     Easing__CircularOutImpl* obj1 = (Easing__CircularOutImpl*)uNew(Easing__CircularOutImpl_typeof());
@@ -2212,15 +2349,15 @@ Easing__CircularOutImpl* Easing__CircularOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class ContinuousTrackChangeState<T> :661
+// internal sealed class ContinuousTrackChangeState<T> :855
 // {
 static void ContinuousTrackChangeState_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("Invalid Seek");
-    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
+    ::STRINGS[2] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[13] = ::g::Fuse::Animations::IMixerHandle_typeof();
     type->SetPrecalc(
@@ -2251,13 +2388,13 @@ static void ContinuousTrackChangeState_build(uType* type)
     return type;
 }
 
-// public ContinuousTrackChangeState(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) :666
+// public ContinuousTrackChangeState(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) :860
 void ContinuousTrackChangeState__ctor_2_fn(ContinuousTrackChangeState* __this, ::g::Fuse::Animations::Change* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     __this->ctor_2(animator, p);
 }
 
-// public override sealed void Disable() :673
+// public override sealed void Disable() :867
 void ContinuousTrackChangeState__Disable_fn(ContinuousTrackChangeState* __this)
 {
     uType* __types[] = {
@@ -2272,13 +2409,13 @@ void ContinuousTrackChangeState__Disable_fn(ContinuousTrackChangeState* __this)
     __this->mixHandle = NULL;
 }
 
-// public ContinuousTrackChangeState New(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) :666
+// public ContinuousTrackChangeState New(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) :860
 void ContinuousTrackChangeState__New1_fn(uType* __type, ::g::Fuse::Animations::Change* animator, ::g::Fuse::Animations::CreateStateParams* p, ContinuousTrackChangeState** __retval)
 {
     *__retval = ContinuousTrackChangeState::New1(__type, animator, p);
 }
 
-// protected override sealed void SeekValue(float4 value, float strength) :682
+// protected override sealed void SeekValue(float4 value, float strength) :876
 void ContinuousTrackChangeState__SeekValue_fn(ContinuousTrackChangeState* __this, ::g::Uno::Float4* value, float* strength)
 {
     uType* __types[] = {
@@ -2292,14 +2429,14 @@ void ContinuousTrackChangeState__SeekValue_fn(ContinuousTrackChangeState* __this
 
     if (__this->mixHandle == NULL)
     {
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[5/*"Invalid Seek"*/], 1, ::STRINGS[2/*"/Users/eric...*/], 686);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[5/*"Invalid Seek"*/], 0, ::STRINGS[2/*"/usr/local/...*/], 880);
         return;
     }
 
     ::g::Fuse::Animations::IMixerHandle::Set_ex(uInterface(uPtr(__this->mixHandle), __types[1]), (uPtr((::g::Fuse::Animations::Converter*)uPtr(__this->Animator1)->ContinuousConverter)->Out_ex(uCRef(value_), &ret2), ret2), uCRef(strength_));
 }
 
-// public ContinuousTrackChangeState(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) [instance] :666
+// public ContinuousTrackChangeState(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) [instance] :860
 void ContinuousTrackChangeState::ctor_2(::g::Fuse::Animations::Change* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     uType* __types[] = {
@@ -2311,7 +2448,7 @@ void ContinuousTrackChangeState::ctor_2(::g::Fuse::Animations::Change* animator,
     mixHandle = ((uObject*)::g::Fuse::Animations::IMixer::Register(uInterface(uPtr(uPtr(Animator1)->Mixer), ::TYPES[12/*Fuse.Animations.IMixer*/]), __types[0], (::g::Uno::UX::Property1*)uPtr(Animator1)->Target(), uPtr(Animator1)->MixOp()));
 }
 
-// public ContinuousTrackChangeState New(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) [static] :666
+// public ContinuousTrackChangeState New(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) [static] :860
 ContinuousTrackChangeState* ContinuousTrackChangeState::New1(uType* __type, ::g::Fuse::Animations::Change* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     ContinuousTrackChangeState* obj1 = (ContinuousTrackChangeState*)uNew(__type);
@@ -2320,10 +2457,10 @@ ContinuousTrackChangeState* ContinuousTrackChangeState::New1(uType* __type, ::g:
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract interface ContinuousTrackProvider :3128
+// internal abstract interface ContinuousTrackProvider :3334
 // {
 uInterfaceType* ContinuousTrackProvider_typeof()
 {
@@ -2335,10 +2472,10 @@ uInterfaceType* ContinuousTrackProvider_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract class Converter<T> :693
+// internal abstract class Converter<T> :887
 // {
 static void Converter_build(uType* type)
 {
@@ -2358,24 +2495,24 @@ Converter_type* Converter_typeof()
     return type;
 }
 
-// protected generated Converter() :693
+// protected generated Converter() :887
 void Converter__ctor__fn(Converter* __this)
 {
     __this->ctor_();
 }
 
-// protected generated Converter() [instance] :693
+// protected generated Converter() [instance] :887
 void Converter::ctor_()
 {
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class ConverterDouble :742
+// internal sealed class ConverterDouble :936
 // {
-// static ConverterDouble() :742
+// static ConverterDouble() :936
 static void ConverterDouble__cctor__fn(uType* __type)
 {
     ConverterDouble::Singleton_ = ConverterDouble::New1();
@@ -2407,26 +2544,26 @@ static void ConverterDouble_build(uType* type)
     return type;
 }
 
-// public generated ConverterDouble() :742
+// public generated ConverterDouble() :936
 void ConverterDouble__ctor_1_fn(ConverterDouble* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed float4 In(double value) :746
+// public override sealed float4 In(double value) :940
 void ConverterDouble__In_fn(ConverterDouble* __this, double* value, ::g::Uno::Float4* __retval)
 {
     double value_ = *value;
     return *__retval = ::g::Uno::Float4__New2((float)value_, 0.0f, 0.0f, 0.0f), void();
 }
 
-// public generated ConverterDouble New() :742
+// public generated ConverterDouble New() :936
 void ConverterDouble__New1_fn(ConverterDouble** __retval)
 {
     *__retval = ConverterDouble::New1();
 }
 
-// public override sealed double Out(float4 value) :745
+// public override sealed double Out(float4 value) :939
 void ConverterDouble__Out_fn(ConverterDouble* __this, ::g::Uno::Float4* value, double* __retval)
 {
     ::g::Uno::Float4 value_ = *value;
@@ -2435,13 +2572,13 @@ void ConverterDouble__Out_fn(ConverterDouble* __this, ::g::Uno::Float4* value, d
 
 uSStrong<ConverterDouble*> ConverterDouble::Singleton_;
 
-// public generated ConverterDouble() [instance] :742
+// public generated ConverterDouble() [instance] :936
 void ConverterDouble::ctor_1()
 {
     ctor_();
 }
 
-// public generated ConverterDouble New() [static] :742
+// public generated ConverterDouble New() [static] :936
 ConverterDouble* ConverterDouble::New1()
 {
     ConverterDouble* obj1 = (ConverterDouble*)uNew(ConverterDouble_typeof());
@@ -2450,12 +2587,12 @@ ConverterDouble* ConverterDouble::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class ConverterFloat :699
+// internal sealed class ConverterFloat :893
 // {
-// static ConverterFloat() :699
+// static ConverterFloat() :893
 static void ConverterFloat__cctor__fn(uType* __type)
 {
     ConverterFloat::Singleton_ = ConverterFloat::New1();
@@ -2487,26 +2624,26 @@ static void ConverterFloat_build(uType* type)
     return type;
 }
 
-// public generated ConverterFloat() :699
+// public generated ConverterFloat() :893
 void ConverterFloat__ctor_1_fn(ConverterFloat* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed float4 In(float value) :703
+// public override sealed float4 In(float value) :897
 void ConverterFloat__In_fn(ConverterFloat* __this, float* value, ::g::Uno::Float4* __retval)
 {
     float value_ = *value;
     return *__retval = ::g::Uno::Float4__New2(value_, 0.0f, 0.0f, 0.0f), void();
 }
 
-// public generated ConverterFloat New() :699
+// public generated ConverterFloat New() :893
 void ConverterFloat__New1_fn(ConverterFloat** __retval)
 {
     *__retval = ConverterFloat::New1();
 }
 
-// public override sealed float Out(float4 value) :702
+// public override sealed float Out(float4 value) :896
 void ConverterFloat__Out_fn(ConverterFloat* __this, ::g::Uno::Float4* value, float* __retval)
 {
     ::g::Uno::Float4 value_ = *value;
@@ -2515,13 +2652,13 @@ void ConverterFloat__Out_fn(ConverterFloat* __this, ::g::Uno::Float4* value, flo
 
 uSStrong<ConverterFloat*> ConverterFloat::Singleton_;
 
-// public generated ConverterFloat() [instance] :699
+// public generated ConverterFloat() [instance] :893
 void ConverterFloat::ctor_1()
 {
     ctor_();
 }
 
-// public generated ConverterFloat New() [static] :699
+// public generated ConverterFloat New() [static] :893
 ConverterFloat* ConverterFloat::New1()
 {
     ConverterFloat* obj1 = (ConverterFloat*)uNew(ConverterFloat_typeof());
@@ -2530,12 +2667,12 @@ ConverterFloat* ConverterFloat::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class ConverterFloat2 :721
+// internal sealed class ConverterFloat2 :915
 // {
-// static ConverterFloat2() :721
+// static ConverterFloat2() :915
 static void ConverterFloat2__cctor__fn(uType* __type)
 {
     ConverterFloat2::Singleton_ = ConverterFloat2::New1();
@@ -2567,26 +2704,26 @@ static void ConverterFloat2_build(uType* type)
     return type;
 }
 
-// public generated ConverterFloat2() :721
+// public generated ConverterFloat2() :915
 void ConverterFloat2__ctor_1_fn(ConverterFloat2* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed float4 In(float2 value) :725
+// public override sealed float4 In(float2 value) :919
 void ConverterFloat2__In_fn(ConverterFloat2* __this, ::g::Uno::Float2* value, ::g::Uno::Float4* __retval)
 {
     ::g::Uno::Float2 value_ = *value;
     return *__retval = ::g::Uno::Float4__New6(value_, 0.0f, 0.0f), void();
 }
 
-// public generated ConverterFloat2 New() :721
+// public generated ConverterFloat2 New() :915
 void ConverterFloat2__New1_fn(ConverterFloat2** __retval)
 {
     *__retval = ConverterFloat2::New1();
 }
 
-// public override sealed float2 Out(float4 value) :724
+// public override sealed float2 Out(float4 value) :918
 void ConverterFloat2__Out_fn(ConverterFloat2* __this, ::g::Uno::Float4* value, ::g::Uno::Float2* __retval)
 {
     ::g::Uno::Float4 value_ = *value;
@@ -2595,13 +2732,13 @@ void ConverterFloat2__Out_fn(ConverterFloat2* __this, ::g::Uno::Float4* value, :
 
 uSStrong<ConverterFloat2*> ConverterFloat2::Singleton_;
 
-// public generated ConverterFloat2() [instance] :721
+// public generated ConverterFloat2() [instance] :915
 void ConverterFloat2::ctor_1()
 {
     ctor_();
 }
 
-// public generated ConverterFloat2 New() [static] :721
+// public generated ConverterFloat2 New() [static] :915
 ConverterFloat2* ConverterFloat2::New1()
 {
     ConverterFloat2* obj1 = (ConverterFloat2*)uNew(ConverterFloat2_typeof());
@@ -2610,12 +2747,12 @@ ConverterFloat2* ConverterFloat2::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class ConverterFloat3 :728
+// internal sealed class ConverterFloat3 :922
 // {
-// static ConverterFloat3() :728
+// static ConverterFloat3() :922
 static void ConverterFloat3__cctor__fn(uType* __type)
 {
     ConverterFloat3::Singleton_ = ConverterFloat3::New1();
@@ -2647,26 +2784,26 @@ static void ConverterFloat3_build(uType* type)
     return type;
 }
 
-// public generated ConverterFloat3() :728
+// public generated ConverterFloat3() :922
 void ConverterFloat3__ctor_1_fn(ConverterFloat3* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed float4 In(float3 value) :732
+// public override sealed float4 In(float3 value) :926
 void ConverterFloat3__In_fn(ConverterFloat3* __this, ::g::Uno::Float3* value, ::g::Uno::Float4* __retval)
 {
     ::g::Uno::Float3 value_ = *value;
     return *__retval = ::g::Uno::Float4__New8(value_, 0.0f), void();
 }
 
-// public generated ConverterFloat3 New() :728
+// public generated ConverterFloat3 New() :922
 void ConverterFloat3__New1_fn(ConverterFloat3** __retval)
 {
     *__retval = ConverterFloat3::New1();
 }
 
-// public override sealed float3 Out(float4 value) :731
+// public override sealed float3 Out(float4 value) :925
 void ConverterFloat3__Out_fn(ConverterFloat3* __this, ::g::Uno::Float4* value, ::g::Uno::Float3* __retval)
 {
     ::g::Uno::Float4 value_ = *value;
@@ -2675,13 +2812,13 @@ void ConverterFloat3__Out_fn(ConverterFloat3* __this, ::g::Uno::Float4* value, :
 
 uSStrong<ConverterFloat3*> ConverterFloat3::Singleton_;
 
-// public generated ConverterFloat3() [instance] :728
+// public generated ConverterFloat3() [instance] :922
 void ConverterFloat3::ctor_1()
 {
     ctor_();
 }
 
-// public generated ConverterFloat3 New() [static] :728
+// public generated ConverterFloat3 New() [static] :922
 ConverterFloat3* ConverterFloat3::New1()
 {
     ConverterFloat3* obj1 = (ConverterFloat3*)uNew(ConverterFloat3_typeof());
@@ -2690,12 +2827,12 @@ ConverterFloat3* ConverterFloat3::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class ConverterFloat4 :735
+// internal sealed class ConverterFloat4 :929
 // {
-// static ConverterFloat4() :735
+// static ConverterFloat4() :929
 static void ConverterFloat4__cctor__fn(uType* __type)
 {
     ConverterFloat4::Singleton_ = ConverterFloat4::New1();
@@ -2727,26 +2864,26 @@ static void ConverterFloat4_build(uType* type)
     return type;
 }
 
-// public generated ConverterFloat4() :735
+// public generated ConverterFloat4() :929
 void ConverterFloat4__ctor_1_fn(ConverterFloat4* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed float4 In(float4 value) :739
+// public override sealed float4 In(float4 value) :933
 void ConverterFloat4__In_fn(ConverterFloat4* __this, ::g::Uno::Float4* value, ::g::Uno::Float4* __retval)
 {
     ::g::Uno::Float4 value_ = *value;
     return *__retval = value_, void();
 }
 
-// public generated ConverterFloat4 New() :735
+// public generated ConverterFloat4 New() :929
 void ConverterFloat4__New1_fn(ConverterFloat4** __retval)
 {
     *__retval = ConverterFloat4::New1();
 }
 
-// public override sealed float4 Out(float4 value) :738
+// public override sealed float4 Out(float4 value) :932
 void ConverterFloat4__Out_fn(ConverterFloat4* __this, ::g::Uno::Float4* value, ::g::Uno::Float4* __retval)
 {
     ::g::Uno::Float4 value_ = *value;
@@ -2755,13 +2892,13 @@ void ConverterFloat4__Out_fn(ConverterFloat4* __this, ::g::Uno::Float4* value, :
 
 uSStrong<ConverterFloat4*> ConverterFloat4::Singleton_;
 
-// public generated ConverterFloat4() [instance] :735
+// public generated ConverterFloat4() [instance] :929
 void ConverterFloat4::ctor_1()
 {
     ctor_();
 }
 
-// public generated ConverterFloat4 New() [static] :735
+// public generated ConverterFloat4 New() [static] :929
 ConverterFloat4* ConverterFloat4::New1()
 {
     ConverterFloat4* obj1 = (ConverterFloat4*)uNew(ConverterFloat4_typeof());
@@ -2770,12 +2907,12 @@ ConverterFloat4* ConverterFloat4::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class ConverterSize :706
+// internal sealed class ConverterSize :900
 // {
-// static ConverterSize() :706
+// static ConverterSize() :900
 static void ConverterSize__cctor__fn(uType* __type)
 {
     ConverterSize::Singleton_ = ConverterSize::New1();
@@ -2807,26 +2944,26 @@ static void ConverterSize_build(uType* type)
     return type;
 }
 
-// public generated ConverterSize() :706
+// public generated ConverterSize() :900
 void ConverterSize__ctor_1_fn(ConverterSize* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed float4 In(Uno.UX.Size value) :710
+// public override sealed float4 In(Uno.UX.Size value) :904
 void ConverterSize__In_fn(ConverterSize* __this, ::g::Uno::UX::Size* value, ::g::Uno::Float4* __retval)
 {
     ::g::Uno::UX::Size value_ = *value;
     return *__retval = ::g::Uno::Float4__New2(value_.Value, 0.0f, 0.0f, 0.0f), void();
 }
 
-// public generated ConverterSize New() :706
+// public generated ConverterSize New() :900
 void ConverterSize__New1_fn(ConverterSize** __retval)
 {
     *__retval = ConverterSize::New1();
 }
 
-// public override sealed Uno.UX.Size Out(float4 value) :709
+// public override sealed Uno.UX.Size Out(float4 value) :903
 void ConverterSize__Out_fn(ConverterSize* __this, ::g::Uno::Float4* value, ::g::Uno::UX::Size* __retval)
 {
     ::g::Uno::Float4 value_ = *value;
@@ -2835,13 +2972,13 @@ void ConverterSize__Out_fn(ConverterSize* __this, ::g::Uno::Float4* value, ::g::
 
 uSStrong<ConverterSize*> ConverterSize::Singleton_;
 
-// public generated ConverterSize() [instance] :706
+// public generated ConverterSize() [instance] :900
 void ConverterSize::ctor_1()
 {
     ctor_();
 }
 
-// public generated ConverterSize New() [static] :706
+// public generated ConverterSize New() [static] :900
 ConverterSize* ConverterSize::New1()
 {
     ConverterSize* obj1 = (ConverterSize*)uNew(ConverterSize_typeof());
@@ -2850,12 +2987,12 @@ ConverterSize* ConverterSize::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class ConverterSize2 :713
+// internal sealed class ConverterSize2 :907
 // {
-// static ConverterSize2() :713
+// static ConverterSize2() :907
 static void ConverterSize2__cctor__fn(uType* __type)
 {
     ConverterSize2::Singleton_ = ConverterSize2::New1();
@@ -2887,26 +3024,26 @@ static void ConverterSize2_build(uType* type)
     return type;
 }
 
-// public generated ConverterSize2() :713
+// public generated ConverterSize2() :907
 void ConverterSize2__ctor_1_fn(ConverterSize2* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed float4 In(Uno.UX.Size2 value) :717
+// public override sealed float4 In(Uno.UX.Size2 value) :911
 void ConverterSize2__In_fn(ConverterSize2* __this, ::g::Uno::UX::Size2* value, ::g::Uno::Float4* __retval)
 {
     ::g::Uno::UX::Size2 value_ = *value;
-    return *__retval = ::g::Uno::Float4__New2(::g::Uno::UX::Size__op_Explicit(value_.X), ::g::Uno::UX::Size__op_Explicit(value_.Y), 0.0f, 0.0f), void();
+    return *__retval = ::g::Uno::Float4__New2(::g::Uno::UX::Size__op_Explicit1(value_.X), ::g::Uno::UX::Size__op_Explicit1(value_.Y), 0.0f, 0.0f), void();
 }
 
-// public generated ConverterSize2 New() :713
+// public generated ConverterSize2 New() :907
 void ConverterSize2__New1_fn(ConverterSize2** __retval)
 {
     *__retval = ConverterSize2::New1();
 }
 
-// public override sealed Uno.UX.Size2 Out(float4 value) :716
+// public override sealed Uno.UX.Size2 Out(float4 value) :910
 void ConverterSize2__Out_fn(ConverterSize2* __this, ::g::Uno::Float4* value, ::g::Uno::UX::Size2* __retval)
 {
     ::g::Uno::Float4 value_ = *value;
@@ -2915,13 +3052,13 @@ void ConverterSize2__Out_fn(ConverterSize2* __this, ::g::Uno::Float4* value, ::g
 
 uSStrong<ConverterSize2*> ConverterSize2::Singleton_;
 
-// public generated ConverterSize2() [instance] :713
+// public generated ConverterSize2() [instance] :907
 void ConverterSize2::ctor_1()
 {
     ctor_();
 }
 
-// public generated ConverterSize2 New() [static] :713
+// public generated ConverterSize2 New() [static] :907
 ConverterSize2* ConverterSize2::New1()
 {
     ConverterSize2* obj1 = (ConverterSize2*)uNew(ConverterSize2_typeof());
@@ -2930,8 +3067,8 @@ ConverterSize2* ConverterSize2::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
 // internal sealed class CreateStateParams :103
 // {
@@ -2984,10 +3121,10 @@ CreateStateParams* CreateStateParams::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// public sealed class CubicBezierEasing :885
+// public sealed class CubicBezierEasing :1040
 // {
 static void CubicBezierEasing_build(uType* type)
 {
@@ -3027,73 +3164,73 @@ static void CubicBezierEasing_build(uType* type)
     return type;
 }
 
-// public generated CubicBezierEasing() :885
+// public generated CubicBezierEasing() :1040
 void CubicBezierEasing__ctor_1_fn(CubicBezierEasing* __this)
 {
     __this->ctor_1();
 }
 
-// public generated double get_C1X() :892
+// public generated double get_C1X() :1047
 void CubicBezierEasing__get_C1X_fn(CubicBezierEasing* __this, double* __retval)
 {
     *__retval = __this->C1X();
 }
 
-// public generated void set_C1X(double value) :892
+// public generated void set_C1X(double value) :1047
 void CubicBezierEasing__set_C1X_fn(CubicBezierEasing* __this, double* value)
 {
     __this->C1X(*value);
 }
 
-// public generated double get_C1Y() :893
+// public generated double get_C1Y() :1048
 void CubicBezierEasing__get_C1Y_fn(CubicBezierEasing* __this, double* __retval)
 {
     *__retval = __this->C1Y();
 }
 
-// public generated void set_C1Y(double value) :893
+// public generated void set_C1Y(double value) :1048
 void CubicBezierEasing__set_C1Y_fn(CubicBezierEasing* __this, double* value)
 {
     __this->C1Y(*value);
 }
 
-// public generated double get_C2X() :894
+// public generated double get_C2X() :1049
 void CubicBezierEasing__get_C2X_fn(CubicBezierEasing* __this, double* __retval)
 {
     *__retval = __this->C2X();
 }
 
-// public generated void set_C2X(double value) :894
+// public generated void set_C2X(double value) :1049
 void CubicBezierEasing__set_C2X_fn(CubicBezierEasing* __this, double* value)
 {
     __this->C2X(*value);
 }
 
-// public generated double get_C2Y() :895
+// public generated double get_C2Y() :1050
 void CubicBezierEasing__get_C2Y_fn(CubicBezierEasing* __this, double* __retval)
 {
     *__retval = __this->C2Y();
 }
 
-// public generated void set_C2Y(double value) :895
+// public generated void set_C2Y(double value) :1050
 void CubicBezierEasing__set_C2Y_fn(CubicBezierEasing* __this, double* value)
 {
     __this->C2Y(*value);
 }
 
-// public float4 get_ControlPoints() :899
+// public float4 get_ControlPoints() :1054
 void CubicBezierEasing__get_ControlPoints_fn(CubicBezierEasing* __this, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->ControlPoints();
 }
 
-// public void set_ControlPoints(float4 value) :900
+// public void set_ControlPoints(float4 value) :1055
 void CubicBezierEasing__set_ControlPoints_fn(CubicBezierEasing* __this, ::g::Uno::Float4* value)
 {
     __this->ControlPoints(*value);
 }
 
-// public override sealed double Map(double p) :903
+// public override sealed double Map(double p) :1058
 void CubicBezierEasing__Map_fn(CubicBezierEasing* __this, double* p, double* __retval)
 {
     double p_ = *p;
@@ -3123,73 +3260,73 @@ void CubicBezierEasing__Map_fn(CubicBezierEasing* __this, double* p, double* __r
     return *__retval = (((e * ((t * t) * t)) + (f * (t * t))) + (g * t)) + h, void();
 }
 
-// public generated CubicBezierEasing New() :885
+// public generated CubicBezierEasing New() :1040
 void CubicBezierEasing__New1_fn(CubicBezierEasing** __retval)
 {
     *__retval = CubicBezierEasing::New1();
 }
 
-// public generated CubicBezierEasing() [instance] :885
+// public generated CubicBezierEasing() [instance] :1040
 void CubicBezierEasing::ctor_1()
 {
     ctor_();
 }
 
-// public generated double get_C1X() [instance] :892
+// public generated double get_C1X() [instance] :1047
 double CubicBezierEasing::C1X()
 {
     return _C1X;
 }
 
-// public generated void set_C1X(double value) [instance] :892
+// public generated void set_C1X(double value) [instance] :1047
 void CubicBezierEasing::C1X(double value)
 {
     _C1X = value;
 }
 
-// public generated double get_C1Y() [instance] :893
+// public generated double get_C1Y() [instance] :1048
 double CubicBezierEasing::C1Y()
 {
     return _C1Y;
 }
 
-// public generated void set_C1Y(double value) [instance] :893
+// public generated void set_C1Y(double value) [instance] :1048
 void CubicBezierEasing::C1Y(double value)
 {
     _C1Y = value;
 }
 
-// public generated double get_C2X() [instance] :894
+// public generated double get_C2X() [instance] :1049
 double CubicBezierEasing::C2X()
 {
     return _C2X;
 }
 
-// public generated void set_C2X(double value) [instance] :894
+// public generated void set_C2X(double value) [instance] :1049
 void CubicBezierEasing::C2X(double value)
 {
     _C2X = value;
 }
 
-// public generated double get_C2Y() [instance] :895
+// public generated double get_C2Y() [instance] :1050
 double CubicBezierEasing::C2Y()
 {
     return _C2Y;
 }
 
-// public generated void set_C2Y(double value) [instance] :895
+// public generated void set_C2Y(double value) [instance] :1050
 void CubicBezierEasing::C2Y(double value)
 {
     _C2Y = value;
 }
 
-// public float4 get_ControlPoints() [instance] :899
+// public float4 get_ControlPoints() [instance] :1054
 ::g::Uno::Float4 CubicBezierEasing::ControlPoints()
 {
     return ::g::Uno::Float4__New2((float)C1X(), (float)C1Y(), (float)C2X(), (float)C2Y());
 }
 
-// public void set_ControlPoints(float4 value) [instance] :900
+// public void set_ControlPoints(float4 value) [instance] :1055
 void CubicBezierEasing::ControlPoints(::g::Uno::Float4 value)
 {
     C1X((double)value.X);
@@ -3198,7 +3335,7 @@ void CubicBezierEasing::ControlPoints(::g::Uno::Float4 value)
     C2Y((double)value.W);
 }
 
-// public generated CubicBezierEasing New() [static] :885
+// public generated CubicBezierEasing New() [static] :1040
 CubicBezierEasing* CubicBezierEasing::New1()
 {
     CubicBezierEasing* obj1 = (CubicBezierEasing*)uNew(CubicBezierEasing_typeof());
@@ -3207,10 +3344,10 @@ CubicBezierEasing* CubicBezierEasing::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.CubicInImpl :535
+// internal sealed class Easing.CubicInImpl :690
 // {
 static void Easing__CubicInImpl_build(uType* type)
 {
@@ -3232,32 +3369,32 @@ static void Easing__CubicInImpl_build(uType* type)
     return type;
 }
 
-// public generated CubicInImpl() :535
+// public generated CubicInImpl() :690
 void Easing__CubicInImpl__ctor_1_fn(Easing__CubicInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :537
+// public override sealed double Map(double k) :692
 void Easing__CubicInImpl__Map_fn(Easing__CubicInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = (k_ * k_) * k_, void();
 }
 
-// public generated CubicInImpl New() :535
+// public generated CubicInImpl New() :690
 void Easing__CubicInImpl__New1_fn(Easing__CubicInImpl** __retval)
 {
     *__retval = Easing__CubicInImpl::New1();
 }
 
-// public generated CubicInImpl() [instance] :535
+// public generated CubicInImpl() [instance] :690
 void Easing__CubicInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated CubicInImpl New() [static] :535
+// public generated CubicInImpl New() [static] :690
 Easing__CubicInImpl* Easing__CubicInImpl::New1()
 {
     Easing__CubicInImpl* obj1 = (Easing__CubicInImpl*)uNew(Easing__CubicInImpl_typeof());
@@ -3266,10 +3403,10 @@ Easing__CubicInImpl* Easing__CubicInImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.CubicInOutImpl :552
+// internal sealed class Easing.CubicInOutImpl :707
 // {
 static void Easing__CubicInOutImpl_build(uType* type)
 {
@@ -3291,13 +3428,13 @@ static void Easing__CubicInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated CubicInOutImpl() :552
+// public generated CubicInOutImpl() :707
 void Easing__CubicInOutImpl__ctor_1_fn(Easing__CubicInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :554
+// public override sealed double Map(double k) :709
 void Easing__CubicInOutImpl__Map_fn(Easing__CubicInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -3310,19 +3447,19 @@ void Easing__CubicInOutImpl__Map_fn(Easing__CubicInOutImpl* __this, double* k, d
     return *__retval = 0.5 * (((k_ * k_) * k_) + 2.0), void();
 }
 
-// public generated CubicInOutImpl New() :552
+// public generated CubicInOutImpl New() :707
 void Easing__CubicInOutImpl__New1_fn(Easing__CubicInOutImpl** __retval)
 {
     *__retval = Easing__CubicInOutImpl::New1();
 }
 
-// public generated CubicInOutImpl() [instance] :552
+// public generated CubicInOutImpl() [instance] :707
 void Easing__CubicInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated CubicInOutImpl New() [static] :552
+// public generated CubicInOutImpl New() [static] :707
 Easing__CubicInOutImpl* Easing__CubicInOutImpl::New1()
 {
     Easing__CubicInOutImpl* obj1 = (Easing__CubicInOutImpl*)uNew(Easing__CubicInOutImpl_typeof());
@@ -3331,10 +3468,10 @@ Easing__CubicInOutImpl* Easing__CubicInOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.CubicOutImpl :543
+// internal sealed class Easing.CubicOutImpl :698
 // {
 static void Easing__CubicOutImpl_build(uType* type)
 {
@@ -3356,13 +3493,13 @@ static void Easing__CubicOutImpl_build(uType* type)
     return type;
 }
 
-// public generated CubicOutImpl() :543
+// public generated CubicOutImpl() :698
 void Easing__CubicOutImpl__ctor_1_fn(Easing__CubicOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :545
+// public override sealed double Map(double k) :700
 void Easing__CubicOutImpl__Map_fn(Easing__CubicOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -3370,19 +3507,19 @@ void Easing__CubicOutImpl__Map_fn(Easing__CubicOutImpl* __this, double* k, doubl
     return *__retval = ((k_ * k_) * k_) + 1.0, void();
 }
 
-// public generated CubicOutImpl New() :543
+// public generated CubicOutImpl New() :698
 void Easing__CubicOutImpl__New1_fn(Easing__CubicOutImpl** __retval)
 {
     *__retval = Easing__CubicOutImpl::New1();
 }
 
-// public generated CubicOutImpl() [instance] :543
+// public generated CubicOutImpl() [instance] :698
 void Easing__CubicOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated CubicOutImpl New() [static] :543
+// public generated CubicOutImpl New() [static] :698
 Easing__CubicOutImpl* Easing__CubicOutImpl::New1()
 {
     Easing__CubicOutImpl* obj1 = (Easing__CubicOutImpl*)uNew(Easing__CubicOutImpl_typeof());
@@ -3391,10 +3528,10 @@ Easing__CubicOutImpl* Easing__CubicOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public sealed class Cycle<T> :803
+// public sealed class Cycle<T> :997
 // {
 static void Cycle_build(uType* type)
 {
@@ -3459,25 +3596,25 @@ static void Cycle_build(uType* type)
     return type;
 }
 
-// public Cycle(Uno.UX.Property<T> Target) :831
+// public Cycle(Uno.UX.Property<T> Target) :1025
 void Cycle__ctor_3_fn(Cycle* __this, ::g::Uno::UX::Property1* Target1)
 {
     __this->ctor_3(Target1);
 }
 
-// public generated T get_Base() :819
+// public generated T get_Base() :1013
 void Cycle__get_Base_fn(Cycle* __this, uTRef __retval)
 {
     return __retval.Store(__this->_Base()), void();
 }
 
-// public generated void set_Base(T value) :819
+// public generated void set_Base(T value) :1013
 void Cycle__set_Base_fn(Cycle* __this, void* value)
 {
     __this->_Base() = value;
 }
 
-// internal override sealed Fuse.Animations.AnimatorState CreateState(Fuse.Animations.CreateStateParams p) :870
+// internal override sealed Fuse.Animations.AnimatorState CreateState(Fuse.Animations.CreateStateParams p) :1064
 void Cycle__CreateState_fn(Cycle* __this, ::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse::Animations::AnimatorState** __retval)
 {
     uType* __types[] = {
@@ -3486,145 +3623,145 @@ void Cycle__CreateState_fn(Cycle* __this, ::g::Fuse::Animations::CreateStatePara
     return *__retval = (::g::Fuse::Animations::CycleState*)::g::Fuse::Animations::CycleState::New1(__types[0], __this, p), void();
 }
 
-// public Fuse.Animations.Easing get_Easing() :938
+// public Fuse.Animations.Easing get_Easing() :1132
 void Cycle__get_Easing_fn(Cycle* __this, ::g::Fuse::Animations::Easing** __retval)
 {
     *__retval = __this->Easing();
 }
 
-// public void set_Easing(Fuse.Animations.Easing value) :939
+// public void set_Easing(Fuse.Animations.Easing value) :1133
 void Cycle__set_Easing_fn(Cycle* __this, ::g::Fuse::Animations::Easing* value)
 {
     __this->Easing(value);
 }
 
-// public double get_Frequency() :845
+// public double get_Frequency() :1039
 void Cycle__get_Frequency_fn(Cycle* __this, double* __retval)
 {
     *__retval = __this->Frequency();
 }
 
-// public void set_Frequency(double value) :846
+// public void set_Frequency(double value) :1040
 void Cycle__set_Frequency_fn(Cycle* __this, double* value)
 {
     __this->Frequency(*value);
 }
 
-// public double get_FrequencyBack() :854
+// public double get_FrequencyBack() :1048
 void Cycle__get_FrequencyBack_fn(Cycle* __this, double* __retval)
 {
     *__retval = __this->FrequencyBack();
 }
 
-// public void set_FrequencyBack(double value) :855
+// public void set_FrequencyBack(double value) :1049
 void Cycle__set_FrequencyBack_fn(Cycle* __this, double* value)
 {
     __this->FrequencyBack(*value);
 }
 
-// public generated float get_High() :810
+// public generated float get_High() :1004
 void Cycle__get_High_fn(Cycle* __this, float* __retval)
 {
     *__retval = __this->High();
 }
 
-// public generated void set_High(float value) :810
+// public generated void set_High(float value) :1004
 void Cycle__set_High_fn(Cycle* __this, float* value)
 {
     __this->High(*value);
 }
 
-// private bool get_IsOneCrossing() :882
+// private bool get_IsOneCrossing() :1076
 void Cycle__get_IsOneCrossing_fn(Cycle* __this, bool* __retval)
 {
     *__retval = __this->IsOneCrossing();
 }
 
-// private bool get_IsZeroCrossing() :877
+// private bool get_IsZeroCrossing() :1071
 void Cycle__get_IsZeroCrossing_fn(Cycle* __this, bool* __retval)
 {
     *__retval = __this->IsZeroCrossing();
 }
 
-// public generated float get_Low() :808
+// public generated float get_Low() :1002
 void Cycle__get_Low_fn(Cycle* __this, float* __retval)
 {
     *__retval = __this->Low();
 }
 
-// public generated void set_Low(float value) :808
+// public generated void set_Low(float value) :1002
 void Cycle__set_Low_fn(Cycle* __this, float* value)
 {
     __this->Low(*value);
 }
 
-// public Cycle New(Uno.UX.Property<T> Target) :831
+// public Cycle New(Uno.UX.Property<T> Target) :1025
 void Cycle__New2_fn(uType* __type, ::g::Uno::UX::Property1* Target1, Cycle** __retval)
 {
     *__retval = Cycle::New2(__type, Target1);
 }
 
-// public generated T get_Offset() :828
+// public generated T get_Offset() :1022
 void Cycle__get_Offset_fn(Cycle* __this, uTRef __retval)
 {
     return __retval.Store(__this->_Offset()), void();
 }
 
-// public generated void set_Offset(T value) :828
+// public generated void set_Offset(T value) :1022
 void Cycle__set_Offset_fn(Cycle* __this, void* value)
 {
     __this->_Offset() = value;
 }
 
-// public float get_ProgressOffset() :921
+// public float get_ProgressOffset() :1115
 void Cycle__get_ProgressOffset_fn(Cycle* __this, float* __retval)
 {
     *__retval = __this->ProgressOffset();
 }
 
-// public void set_ProgressOffset(float value) :922
+// public void set_ProgressOffset(float value) :1116
 void Cycle__set_ProgressOffset_fn(Cycle* __this, float* value)
 {
     __this->ProgressOffset(*value);
 }
 
-// private double get_RestProgress() :890
+// private double get_RestProgress() :1084
 void Cycle__get_RestProgress_fn(Cycle* __this, double* __retval)
 {
     *__retval = __this->RestProgress();
 }
 
-// public generated Uno.UX.Property<T> get_Target() :806
+// public generated Uno.UX.Property<T> get_Target() :1000
 void Cycle__get_Target_fn(Cycle* __this, ::g::Uno::UX::Property1** __retval)
 {
     *__retval = __this->Target();
 }
 
-// private generated void set_Target(Uno.UX.Property<T> value) :806
+// private generated void set_Target(Uno.UX.Property<T> value) :1000
 void Cycle__set_Target_fn(Cycle* __this, ::g::Uno::UX::Property1* value)
 {
     __this->Target(value);
 }
 
-// public Fuse.Animations.CycleWaveform get_Waveform() :866
+// public Fuse.Animations.CycleWaveform get_Waveform() :1060
 void Cycle__get_Waveform_fn(Cycle* __this, int* __retval)
 {
     *__retval = __this->Waveform();
 }
 
-// public void set_Waveform(Fuse.Animations.CycleWaveform value) :867
+// public void set_Waveform(Fuse.Animations.CycleWaveform value) :1061
 void Cycle__set_Waveform_fn(Cycle* __this, int* value)
 {
     __this->Waveform(*value);
 }
 
-// internal double WaveformFunc(double i, double offset) :945
+// internal double WaveformFunc(double i, double offset) :1139
 void Cycle__WaveformFunc_fn(Cycle* __this, double* i, double* offset, double* __retval)
 {
     *__retval = __this->WaveformFunc(*i, *offset);
 }
 
-// public Cycle(Uno.UX.Property<T> Target) [instance] :831
+// public Cycle(Uno.UX.Property<T> Target) [instance] :1025
 void Cycle::ctor_3(::g::Uno::UX::Property1* Target1)
 {
     uType* __types[] = {
@@ -3647,93 +3784,93 @@ void Cycle::ctor_3(::g::Uno::UX::Property1* Target1)
     Cycle__set_Offset_fn(this, (blender->get_Zero_ex(&ret3), ret3));
 }
 
-// public Fuse.Animations.Easing get_Easing() [instance] :938
+// public Fuse.Animations.Easing get_Easing() [instance] :1132
 ::g::Fuse::Animations::Easing* Cycle::Easing()
 {
     return _easing;
 }
 
-// public void set_Easing(Fuse.Animations.Easing value) [instance] :939
+// public void set_Easing(Fuse.Animations.Easing value) [instance] :1133
 void Cycle::Easing(::g::Fuse::Animations::Easing* value)
 {
     _easing = value;
 }
 
-// public double get_Frequency() [instance] :845
+// public double get_Frequency() [instance] :1039
 double Cycle::Frequency()
 {
     return _frequency;
 }
 
-// public void set_Frequency(double value) [instance] :846
+// public void set_Frequency(double value) [instance] :1040
 void Cycle::Frequency(double value)
 {
     _frequency = value;
 }
 
-// public double get_FrequencyBack() [instance] :854
+// public double get_FrequencyBack() [instance] :1048
 double Cycle::FrequencyBack()
 {
     return _hasBackFrequency ? _backFrequency : Frequency();
 }
 
-// public void set_FrequencyBack(double value) [instance] :855
+// public void set_FrequencyBack(double value) [instance] :1049
 void Cycle::FrequencyBack(double value)
 {
     _backFrequency = value;
     _hasBackFrequency = true;
 }
 
-// public generated float get_High() [instance] :810
+// public generated float get_High() [instance] :1004
 float Cycle::High()
 {
     return _High;
 }
 
-// public generated void set_High(float value) [instance] :810
+// public generated void set_High(float value) [instance] :1004
 void Cycle::High(float value)
 {
     _High = value;
 }
 
-// private bool get_IsOneCrossing() [instance] :882
+// private bool get_IsOneCrossing() [instance] :1076
 bool Cycle::IsOneCrossing()
 {
     return (Low() <= 1.0f) && (High() >= 1.0f);
 }
 
-// private bool get_IsZeroCrossing() [instance] :877
+// private bool get_IsZeroCrossing() [instance] :1071
 bool Cycle::IsZeroCrossing()
 {
     return (Low() <= 0.0f) && (High() >= 0.0f);
 }
 
-// public generated float get_Low() [instance] :808
+// public generated float get_Low() [instance] :1002
 float Cycle::Low()
 {
     return _Low;
 }
 
-// public generated void set_Low(float value) [instance] :808
+// public generated void set_Low(float value) [instance] :1002
 void Cycle::Low(float value)
 {
     _Low = value;
 }
 
-// public float get_ProgressOffset() [instance] :921
+// public float get_ProgressOffset() [instance] :1115
 float Cycle::ProgressOffset()
 {
     return (_hasProgressOffset || (_easing != NULL)) ? _progressOffset : (float)RestProgress();
 }
 
-// public void set_ProgressOffset(float value) [instance] :922
+// public void set_ProgressOffset(float value) [instance] :1116
 void Cycle::ProgressOffset(float value)
 {
     _hasProgressOffset = true;
     _progressOffset = value;
 }
 
-// private double get_RestProgress() [instance] :890
+// private double get_RestProgress() [instance] :1084
 double Cycle::RestProgress()
 {
     double v = 0.0;
@@ -3758,31 +3895,31 @@ double Cycle::RestProgress()
     return v;
 }
 
-// public generated Uno.UX.Property<T> get_Target() [instance] :806
+// public generated Uno.UX.Property<T> get_Target() [instance] :1000
 ::g::Uno::UX::Property1* Cycle::Target()
 {
     return _Target;
 }
 
-// private generated void set_Target(Uno.UX.Property<T> value) [instance] :806
+// private generated void set_Target(Uno.UX.Property<T> value) [instance] :1000
 void Cycle::Target(::g::Uno::UX::Property1* value)
 {
     _Target = value;
 }
 
-// public Fuse.Animations.CycleWaveform get_Waveform() [instance] :866
+// public Fuse.Animations.CycleWaveform get_Waveform() [instance] :1060
 int Cycle::Waveform()
 {
     return _waveform;
 }
 
-// public void set_Waveform(Fuse.Animations.CycleWaveform value) [instance] :867
+// public void set_Waveform(Fuse.Animations.CycleWaveform value) [instance] :1061
 void Cycle::Waveform(int value)
 {
     _waveform = value;
 }
 
-// internal double WaveformFunc(double i, double offset) [instance] :945
+// internal double WaveformFunc(double i, double offset) [instance] :1139
 double Cycle::WaveformFunc(double i, double offset)
 {
     switch (Waveform())
@@ -3813,7 +3950,7 @@ double Cycle::WaveformFunc(double i, double offset)
     return i;
 }
 
-// public Cycle New(Uno.UX.Property<T> Target) [static] :831
+// public Cycle New(Uno.UX.Property<T> Target) [static] :1025
 Cycle* Cycle::New2(uType* __type, ::g::Uno::UX::Property1* Target1)
 {
     Cycle* obj1 = (Cycle*)uNew(__type);
@@ -3822,15 +3959,15 @@ Cycle* Cycle::New2(uType* __type, ::g::Uno::UX::Property1* Target1)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class CycleState<T> :974
+// internal sealed class CycleState<T> :1168
 // {
 static void CycleState_build(uType* type)
 {
     ::STRINGS[7] = uString::Const("Invalid seek");
-    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
+    ::STRINGS[2] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[5] = ::g::Fuse::Internal::BlenderMap_typeof();
     ::TYPES[13] = ::g::Fuse::Animations::IMixerHandle_typeof();
@@ -3865,13 +4002,13 @@ static void CycleState_build(uType* type)
     return type;
 }
 
-// public CycleState(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) :980
+// public CycleState(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) :1174
 void CycleState__ctor_2_fn(CycleState* __this, ::g::Fuse::Animations::Cycle* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     __this->ctor_2(animator, p);
 }
 
-// public override sealed void Disable() :988
+// public override sealed void Disable() :1182
 void CycleState__Disable_fn(CycleState* __this)
 {
     uType* __types[] = {
@@ -3887,13 +4024,13 @@ void CycleState__Disable_fn(CycleState* __this)
     __this->progress = 0.0;
 }
 
-// public CycleState New(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) :980
+// public CycleState New(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) :1174
 void CycleState__New1_fn(uType* __type, ::g::Fuse::Animations::Cycle* animator, ::g::Fuse::Animations::CreateStateParams* p, CycleState** __retval)
 {
     *__retval = CycleState::New1(__type, animator, p);
 }
 
-// protected override sealed bool Seek(bool on, float interval, float strength, Fuse.Animations.SeekDirection dir) :1006
+// protected override sealed bool Seek(bool on, float interval, float strength, Fuse.Animations.SeekDirection dir) :1200
 void CycleState__Seek_fn(CycleState* __this, bool* on, float* interval, float* strength, int* dir, bool* __retval)
 {
     uType* __types[] = {
@@ -3912,7 +4049,7 @@ void CycleState__Seek_fn(CycleState* __this, bool* on, float* interval, float* s
 
     if (__this->mixHandle == NULL)
     {
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[7/*"Invalid seek"*/], 1, ::STRINGS[2/*"/Users/eric...*/], 1010);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[7/*"Invalid seek"*/], 0, ::STRINGS[2/*"/usr/local/...*/], 1204);
         return *__retval = true, void();
     }
 
@@ -3938,7 +4075,7 @@ void CycleState__Seek_fn(CycleState* __this, bool* on, float* interval, float* s
     return *__retval = done, void();
 }
 
-// public CycleState(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) [instance] :980
+// public CycleState(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) [instance] :1174
 void CycleState::ctor_2(::g::Fuse::Animations::Cycle* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     uType* __types[] = {
@@ -3952,7 +4089,7 @@ void CycleState::ctor_2(::g::Fuse::Animations::Cycle* animator, ::g::Fuse::Anima
     blender = ((::g::Fuse::Internal::Blender*)::g::Fuse::Internal::BlenderMap::Get(__types[1]));
 }
 
-// public CycleState New(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) [static] :980
+// public CycleState New(Fuse.Animations.Cycle<T> animator, Fuse.Animations.CreateStateParams p) [static] :1174
 CycleState* CycleState::New1(uType* __type, ::g::Fuse::Animations::Cycle* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     CycleState* obj1 = (CycleState*)uNew(__type);
@@ -3961,10 +4098,10 @@ CycleState* CycleState::New1(uType* __type, ::g::Fuse::Animations::Cycle* animat
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public enum CycleWaveform :759
+// public enum CycleWaveform :953
 uEnumType* CycleWaveform_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -3979,23 +4116,195 @@ uEnumType* CycleWaveform_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class DiscreteKeyframeTrack :1050
+// internal sealed class DestinationBehavior<T> :244
+// {
+static void DestinationBehavior_build(uType* type)
+{
+    ::TYPES[1] = ::g::Fuse::Motion::Simulation::Simulation_typeof();
+    ::TYPES[4] = ::g::Fuse::Motion::Simulation::MotionSimulation_typeof();
+    ::TYPES[15] = ::g::Fuse::Motion::DestinationMotionConfig_typeof();
+    ::TYPES[3] = ::g::Fuse::Motion::Simulation::DestinationSimulation_typeof();
+    ::TYPES[2] = ::g::Uno::Action_typeof();
+    type->SetPrecalc(
+        type->T(0),
+        ::g::Fuse::Motion::Simulation::MotionSimulation_typeof()->MakeType(type->T(0), NULL),
+        ::g::Fuse::Motion::DestinationMotionConfig_typeof()->MakeMethod(0/*Create<T>*/, type->T(0), NULL),
+        ::g::Fuse::Motion::Simulation::DestinationSimulation_typeof()->MakeType(type->T(0), NULL));
+    type->SetFields(0,
+        DestinationBehavior__ValueHandler_typeof()->MakeType(type->T(0), NULL), offsetof(::g::Fuse::Animations::DestinationBehavior, _handler), 0,
+        ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Animations::DestinationBehavior, _listenUpdate), 0,
+        ::TYPES[3/*Fuse.Motion.Simulation.DestinationSimulation`1*/]->MakeType(type->T(0), NULL), offsetof(::g::Fuse::Animations::DestinationBehavior, _simulation), 0,
+        ::TYPES[15/*Fuse.Motion.DestinationMotionConfig*/], offsetof(::g::Fuse::Animations::DestinationBehavior, Motion), 0);
+}
+
+uType* DestinationBehavior_typeof()
+{
+    static uSStrong<uType*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.FieldCount = 4;
+    options.GenericCount = 1;
+    options.PrecalcCount = 4;
+    options.ObjectSize = sizeof(DestinationBehavior);
+    options.TypeSize = sizeof(uType);
+    type = uClassType::New("Fuse.Animations.DestinationBehavior`1", options);
+    type->fp_build_ = DestinationBehavior_build;
+    type->fp_ctor_ = (void*)DestinationBehavior__New1_fn;
+    return type;
+}
+
+// public generated DestinationBehavior() :244
+void DestinationBehavior__ctor__fn(DestinationBehavior* __this)
+{
+    __this->ctor_();
+}
+
+// public generated DestinationBehavior New() :244
+void DestinationBehavior__New1_fn(uType* __type, DestinationBehavior** __retval)
+{
+    *__retval = DestinationBehavior::New1(__type);
+}
+
+// private void OnUpdate() :253
+void DestinationBehavior__OnUpdate_fn(DestinationBehavior* __this)
+{
+    __this->OnUpdate();
+}
+
+// public void SetValue(T value, Fuse.Animations.DestinationBehavior<T>.ValueHandler handler) :286
+void DestinationBehavior__SetValue_fn(DestinationBehavior* __this, void* value, uDelegate* handler)
+{
+    uType* __types[] = {
+        __this->__type->Precalced(0/*T*/),
+        __this->__type->Precalced(2/*Fuse.Motion.DestinationMotionConfig.Create<T>*/),
+        __this->__type->Precalced(3/*Fuse.Motion.Simulation.DestinationSimulation<T>*/),
+        __this->__type->Precalced(1/*Fuse.Motion.Simulation.MotionSimulation<T>*/),
+    };
+    uStackFrame __("Fuse.Animations.DestinationBehavior`1", "SetValue(T,Fuse.Animations.DestinationBehavior<T>.ValueHandler)");
+    uT ret3(__types[0], U_ALLOCA(__types[0]->ValueSize));
+
+    if (__this->Motion == NULL)
+    {
+        uPtr(handler)->InvokeVoid(value);
+        return;
+    }
+
+    __this->_handler = handler;
+
+    if (__this->_simulation == NULL)
+    {
+        __this->_simulation = ((uObject*)uPtr(__this->Motion)->Create(__types[1]));
+        ::g::Fuse::Motion::Simulation::DestinationSimulation::Reset_ex(uInterface(uPtr(__this->_simulation), __types[2]), value);
+
+        if (::g::Uno::Delegate::op_Inequality(__this->_handler, NULL))
+            uPtr(__this->_handler)->InvokeVoid((::g::Fuse::Motion::Simulation::MotionSimulation::get_Position_ex(uInterface(uPtr(__this->_simulation), __types[3]), &ret3), ret3));
+    }
+    else
+    {
+        ::g::Fuse::Motion::Simulation::DestinationSimulation::set_Destination_ex(uInterface(uPtr(__this->_simulation), __types[2]), value);
+        ::g::Fuse::Motion::Simulation::DestinationSimulation::Start(uInterface(uPtr(__this->_simulation), __types[2]));
+    }
+
+    if (!__this->_listenUpdate)
+    {
+        ::g::Fuse::UpdateManager::AddAction1(uDelegate::New(::TYPES[2/*Uno.Action*/], (void*)DestinationBehavior__OnUpdate_fn, __this), 0);
+        __this->_listenUpdate = true;
+    }
+}
+
+// private void StopListenUpdate() :270
+void DestinationBehavior__StopListenUpdate_fn(DestinationBehavior* __this)
+{
+    __this->StopListenUpdate();
+}
+
+// public void Unroot() :279
+void DestinationBehavior__Unroot_fn(DestinationBehavior* __this)
+{
+    __this->Unroot();
+}
+
+// public generated DestinationBehavior() [instance] :244
+void DestinationBehavior::ctor_()
+{
+}
+
+// private void OnUpdate() [instance] :253
+void DestinationBehavior::OnUpdate()
+{
+    uType* __types[] = {
+        __type->Precalced(0/*T*/),
+        __type->Precalced(1/*Fuse.Motion.Simulation.MotionSimulation<T>*/),
+    };
+    uStackFrame __("Fuse.Animations.DestinationBehavior`1", "OnUpdate()");
+    uT ret2(__types[0], U_ALLOCA(__types[0]->ValueSize));
+
+    if (_simulation == NULL)
+    {
+        StopListenUpdate();
+        return;
+    }
+
+    ::g::Fuse::Motion::Simulation::Simulation::Update(uInterface(uPtr(_simulation), ::TYPES[1/*Fuse.Motion.Simulation.Simulation*/]), ::g::Fuse::Time::FrameInterval());
+
+    if (::g::Uno::Delegate::op_Inequality(_handler, NULL))
+        uPtr(_handler)->InvokeVoid((::g::Fuse::Motion::Simulation::MotionSimulation::get_Position_ex(uInterface(uPtr(_simulation), __types[1]), &ret2), ret2));
+
+    if (::g::Fuse::Motion::Simulation::Simulation::IsStatic(uInterface(uPtr(_simulation), ::TYPES[1/*Fuse.Motion.Simulation.Simulation*/])))
+        StopListenUpdate();
+}
+
+// private void StopListenUpdate() [instance] :270
+void DestinationBehavior::StopListenUpdate()
+{
+    uStackFrame __("Fuse.Animations.DestinationBehavior`1", "StopListenUpdate()");
+
+    if (_listenUpdate)
+    {
+        ::g::Fuse::UpdateManager::RemoveAction1(uDelegate::New(::TYPES[2/*Uno.Action*/], (void*)DestinationBehavior__OnUpdate_fn, this), 0);
+        _listenUpdate = false;
+    }
+}
+
+// public void Unroot() [instance] :279
+void DestinationBehavior::Unroot()
+{
+    uStackFrame __("Fuse.Animations.DestinationBehavior`1", "Unroot()");
+    StopListenUpdate();
+    _simulation = NULL;
+    _handler = NULL;
+}
+
+// public generated DestinationBehavior New() [static] :244
+DestinationBehavior* DestinationBehavior::New1(uType* __type)
+{
+    DestinationBehavior* obj1 = (DestinationBehavior*)uNew(__type);
+    obj1->ctor_();
+    return obj1;
+}
+// }
+
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
+
+// internal sealed class DiscreteKeyframeTrack :1244
 // {
 static void DiscreteKeyframeTrack_build(uType* type)
 {
-    ::TYPES[15] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Animations::Keyframe_typeof(), NULL);
-    ::TYPES[16] = ::g::Fuse::Animations::DiscreteTrackProvider_typeof();
+    ::TYPES[16] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Animations::Keyframe_typeof(), NULL);
+    ::TYPES[17] = ::g::Fuse::Animations::DiscreteTrackProvider_typeof();
     type->SetInterfaces(
-        ::TYPES[16/*Fuse.Animations.DiscreteTrackProvider*/], offsetof(DiscreteKeyframeTrack_type, interface0),
+        ::TYPES[17/*Fuse.Animations.DiscreteTrackProvider*/], offsetof(DiscreteKeyframeTrack_type, interface0),
         ::g::Fuse::Animations::ITrackProvider_typeof(), offsetof(DiscreteKeyframeTrack_type, interface1),
         ::g::Fuse::Animations::KeyframeTrack_typeof(), offsetof(DiscreteKeyframeTrack_type, interface2),
         ::g::Fuse::Animations::TrackProvider_typeof(), offsetof(DiscreteKeyframeTrack_type, interface3));
     type->SetFields(0,
         ::g::Uno::Double_typeof(), offsetof(::g::Fuse::Animations::DiscreteKeyframeTrack, _duration), 0,
-        ::TYPES[15/*Uno.Collections.List<Fuse.Animations.Keyframe>*/], offsetof(::g::Fuse::Animations::DiscreteKeyframeTrack, _frames), 0,
+        ::TYPES[16/*Uno.Collections.List<Fuse.Animations.Keyframe>*/], offsetof(::g::Fuse::Animations::DiscreteKeyframeTrack, _frames), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Animations::DiscreteKeyframeTrack, _init), 0,
         ::g::Fuse::Animations::KeyframeInterpolation_typeof(), offsetof(::g::Fuse::Animations::DiscreteKeyframeTrack, _Interpolation), 0);
 }
@@ -4023,23 +4332,23 @@ DiscreteKeyframeTrack_type* DiscreteKeyframeTrack_typeof()
     return type;
 }
 
-// public generated DiscreteKeyframeTrack() :1050
+// public generated DiscreteKeyframeTrack() :1244
 void DiscreteKeyframeTrack__ctor__fn(DiscreteKeyframeTrack* __this)
 {
     __this->ctor_();
 }
 
-// private Fuse.Animations.SeekResult Fuse.Animations.DiscreteTrackProvider.GetSeekProgress(Fuse.Animations.TrackAnimatorState tas, double progress, double interval, Fuse.Animations.SeekDirection dir, object& value, double& strength) :1083
+// private Fuse.Animations.SeekResult Fuse.Animations.DiscreteTrackProvider.GetSeekProgress(Fuse.Animations.TrackAnimatorState tas, double progress, double interval, Fuse.Animations.SeekDirection dir, object& value, double& strength) :1277
 void DiscreteKeyframeTrack__FuseAnimationsDiscreteTrackProviderGetSeekProgress_fn(DiscreteKeyframeTrack* __this, ::g::Fuse::Animations::TrackAnimatorState* tas, double* progress, double* interval, int* dir, uObject** value, double* strength, int* __retval)
 {
     uStackFrame __("Fuse.Animations.DiscreteKeyframeTrack", "Fuse.Animations.DiscreteTrackProvider.GetSeekProgress(Fuse.Animations.TrackAnimatorState,double,double,Fuse.Animations.SeekDirection,object&,double&)");
     double progress_ = *progress;
     double interval_ = *interval;
     int dir_ = *dir;
-    return *__retval = ::g::Fuse::Animations::DiscreteTrackProvider::GetSeekTime(uInterface(uPtr(uAs<uObject*>(__this, ::TYPES[16/*Fuse.Animations.DiscreteTrackProvider*/])), ::TYPES[16/*Fuse.Animations.DiscreteTrackProvider*/]), tas, progress_ * __this->_duration, interval_, dir_, value, strength), void();
+    return *__retval = ::g::Fuse::Animations::DiscreteTrackProvider::GetSeekTime(uInterface(uPtr(uAs<uObject*>(__this, ::TYPES[17/*Fuse.Animations.DiscreteTrackProvider*/])), ::TYPES[17/*Fuse.Animations.DiscreteTrackProvider*/]), tas, progress_ * __this->_duration, interval_, dir_, value, strength), void();
 }
 
-// private Fuse.Animations.SeekResult Fuse.Animations.DiscreteTrackProvider.GetSeekTime(Fuse.Animations.TrackAnimatorState tas, double elapsed, double interval, Fuse.Animations.SeekDirection dir, object& value, double& strength) :1091
+// private Fuse.Animations.SeekResult Fuse.Animations.DiscreteTrackProvider.GetSeekTime(Fuse.Animations.TrackAnimatorState tas, double elapsed, double interval, Fuse.Animations.SeekDirection dir, object& value, double& strength) :1285
 void DiscreteKeyframeTrack__FuseAnimationsDiscreteTrackProviderGetSeekTime_fn(DiscreteKeyframeTrack* __this, ::g::Fuse::Animations::TrackAnimatorState* tas, double* elapsed, double* interval, int* dir, uObject** value, double* strength, int* __retval)
 {
     uStackFrame __("Fuse.Animations.DiscreteKeyframeTrack", "Fuse.Animations.DiscreteTrackProvider.GetSeekTime(Fuse.Animations.TrackAnimatorState,double,double,Fuse.Animations.SeekDirection,object&,double&)");
@@ -4076,13 +4385,13 @@ void DiscreteKeyframeTrack__FuseAnimationsDiscreteTrackProviderGetSeekTime_fn(Di
     return *__retval = (((dir_ == 0) ? elapsed_ >= 0.0 : elapsed_ <= 0.0) ? 1 : 0) | 2, void();
 }
 
-// private Fuse.Animations.AnimatorVariant Fuse.Animations.TrackProvider.GetAnimatorVariant(Fuse.Animations.TrackAnimator ta) :1078
+// private Fuse.Animations.AnimatorVariant Fuse.Animations.TrackProvider.GetAnimatorVariant(Fuse.Animations.TrackAnimator ta) :1272
 void DiscreteKeyframeTrack__FuseAnimationsTrackProviderGetAnimatorVariant_fn(DiscreteKeyframeTrack* __this, ::g::Fuse::Animations::TrackAnimator* ta, int* __retval)
 {
     return *__retval = 0, void();
 }
 
-// private double Fuse.Animations.TrackProvider.GetDuration(Fuse.Animations.TrackAnimator ta, Fuse.Animations.AnimationVariant variant) :1072
+// private double Fuse.Animations.TrackProvider.GetDuration(Fuse.Animations.TrackAnimator ta, Fuse.Animations.AnimationVariant variant) :1266
 void DiscreteKeyframeTrack__FuseAnimationsTrackProviderGetDuration_fn(DiscreteKeyframeTrack* __this, ::g::Fuse::Animations::TrackAnimator* ta, int* variant, double* __retval)
 {
     uStackFrame __("Fuse.Animations.DiscreteKeyframeTrack", "Fuse.Animations.TrackProvider.GetDuration(Fuse.Animations.TrackAnimator,Fuse.Animations.AnimationVariant)");
@@ -4090,43 +4399,43 @@ void DiscreteKeyframeTrack__FuseAnimationsTrackProviderGetDuration_fn(DiscreteKe
     return *__retval = __this->_duration, void();
 }
 
-// private void Init() :1063
+// private void Init() :1257
 void DiscreteKeyframeTrack__Init_fn(DiscreteKeyframeTrack* __this)
 {
     __this->Init();
 }
 
-// public generated Fuse.Animations.KeyframeInterpolation get_Interpolation() :1059
+// public generated Fuse.Animations.KeyframeInterpolation get_Interpolation() :1253
 void DiscreteKeyframeTrack__get_Interpolation_fn(DiscreteKeyframeTrack* __this, int* __retval)
 {
     *__retval = __this->Interpolation();
 }
 
-// public generated void set_Interpolation(Fuse.Animations.KeyframeInterpolation value) :1059
+// public generated void set_Interpolation(Fuse.Animations.KeyframeInterpolation value) :1253
 void DiscreteKeyframeTrack__set_Interpolation_fn(DiscreteKeyframeTrack* __this, int* value)
 {
     __this->Interpolation(*value);
 }
 
-// public Uno.Collections.IList<Fuse.Animations.Keyframe> get_Keyframes() :1056
+// public Uno.Collections.IList<Fuse.Animations.Keyframe> get_Keyframes() :1250
 void DiscreteKeyframeTrack__get_Keyframes_fn(DiscreteKeyframeTrack* __this, uObject** __retval)
 {
     *__retval = __this->Keyframes();
 }
 
-// public generated DiscreteKeyframeTrack New() :1050
+// public generated DiscreteKeyframeTrack New() :1244
 void DiscreteKeyframeTrack__New1_fn(DiscreteKeyframeTrack** __retval)
 {
     *__retval = DiscreteKeyframeTrack::New1();
 }
 
-// public generated DiscreteKeyframeTrack() [instance] :1050
+// public generated DiscreteKeyframeTrack() [instance] :1244
 void DiscreteKeyframeTrack::ctor_()
 {
-    _frames = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[15/*Uno.Collections.List<Fuse.Animations.Keyframe>*/]));
+    _frames = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[16/*Uno.Collections.List<Fuse.Animations.Keyframe>*/]));
 }
 
-// private void Init() [instance] :1063
+// private void Init() [instance] :1257
 void DiscreteKeyframeTrack::Init()
 {
     uStackFrame __("Fuse.Animations.DiscreteKeyframeTrack", "Init()");
@@ -4138,26 +4447,26 @@ void DiscreteKeyframeTrack::Init()
     _init = true;
 }
 
-// public generated Fuse.Animations.KeyframeInterpolation get_Interpolation() [instance] :1059
+// public generated Fuse.Animations.KeyframeInterpolation get_Interpolation() [instance] :1253
 int DiscreteKeyframeTrack::Interpolation()
 {
     return _Interpolation;
 }
 
-// public generated void set_Interpolation(Fuse.Animations.KeyframeInterpolation value) [instance] :1059
+// public generated void set_Interpolation(Fuse.Animations.KeyframeInterpolation value) [instance] :1253
 void DiscreteKeyframeTrack::Interpolation(int value)
 {
     _Interpolation = value;
 }
 
-// public Uno.Collections.IList<Fuse.Animations.Keyframe> get_Keyframes() [instance] :1056
+// public Uno.Collections.IList<Fuse.Animations.Keyframe> get_Keyframes() [instance] :1250
 uObject* DiscreteKeyframeTrack::Keyframes()
 {
     uStackFrame __("Fuse.Animations.DiscreteKeyframeTrack", "get_Keyframes()");
     return (uObject*)_frames;
 }
 
-// public generated DiscreteKeyframeTrack New() [static] :1050
+// public generated DiscreteKeyframeTrack New() [static] :1244
 DiscreteKeyframeTrack* DiscreteKeyframeTrack::New1()
 {
     DiscreteKeyframeTrack* obj1 = (DiscreteKeyframeTrack*)uNew(DiscreteKeyframeTrack_typeof());
@@ -4166,10 +4475,10 @@ DiscreteKeyframeTrack* DiscreteKeyframeTrack::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class DiscreteMasterProperty<T> :1144
+// internal sealed class DiscreteMasterProperty<T> :1338
 // {
 static void DiscreteMasterProperty_build(uType* type)
 {
@@ -4204,19 +4513,19 @@ static void DiscreteMasterProperty_build(uType* type)
     return type;
 }
 
-// public DiscreteMasterProperty(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) :1146
+// public DiscreteMasterProperty(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) :1340
 void DiscreteMasterProperty__ctor_2_fn(DiscreteMasterProperty* __this, ::g::Uno::UX::Property1* property, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     __this->ctor_2(property, mixerBase);
 }
 
-// public DiscreteMasterProperty New(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) :1146
+// public DiscreteMasterProperty New(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) :1340
 void DiscreteMasterProperty__New1_fn(uType* __type, ::g::Uno::UX::Property1* property, ::g::Fuse::Animations::MixerBase* mixerBase, DiscreteMasterProperty** __retval)
 {
     *__retval = DiscreteMasterProperty::New1(__type, property, mixerBase);
 }
 
-// public override sealed void OnComplete() :1149
+// public override sealed void OnComplete() :1343
 void DiscreteMasterProperty__OnComplete_fn(DiscreteMasterProperty* __this)
 {
     uType* __types[] = {
@@ -4243,13 +4552,13 @@ void DiscreteMasterProperty__OnComplete_fn(DiscreteMasterProperty* __this)
     ::g::Fuse::Animations::MasterProperty__Set_fn(__this, nv);
 }
 
-// public DiscreteMasterProperty(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) [instance] :1146
+// public DiscreteMasterProperty(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) [instance] :1340
 void DiscreteMasterProperty::ctor_2(::g::Uno::UX::Property1* property, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     ctor_1(property, mixerBase);
 }
 
-// public DiscreteMasterProperty New(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) [static] :1146
+// public DiscreteMasterProperty New(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) [static] :1340
 DiscreteMasterProperty* DiscreteMasterProperty::New1(uType* __type, ::g::Uno::UX::Property1* property, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     DiscreteMasterProperty* obj1 = (DiscreteMasterProperty*)uNew(__type);
@@ -4258,10 +4567,10 @@ DiscreteMasterProperty* DiscreteMasterProperty::New1(uType* __type, ::g::Uno::UX
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class DiscreteMasterTransform :1167
+// internal sealed class DiscreteMasterTransform :1361
 // {
 static void DiscreteMasterTransform_build(uType* type)
 {
@@ -4287,19 +4596,19 @@ static void DiscreteMasterTransform_build(uType* type)
     return type;
 }
 
-// public DiscreteMasterTransform(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) :1169
+// public DiscreteMasterTransform(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) :1363
 void DiscreteMasterTransform__ctor_2_fn(DiscreteMasterTransform* __this, ::g::Fuse::Visual* node, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     __this->ctor_2(node, mixerBase);
 }
 
-// public DiscreteMasterTransform New(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) :1169
+// public DiscreteMasterTransform New(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) :1363
 void DiscreteMasterTransform__New1_fn(::g::Fuse::Visual* node, ::g::Fuse::Animations::MixerBase* mixerBase, DiscreteMasterTransform** __retval)
 {
     *__retval = DiscreteMasterTransform::New1(node, mixerBase);
 }
 
-// public override sealed void OnComplete() :1172
+// public override sealed void OnComplete() :1366
 void DiscreteMasterTransform__OnComplete_fn(DiscreteMasterTransform* __this)
 {
     uStackFrame __("Fuse.Animations.DiscreteMasterTransform", "OnComplete()");
@@ -4325,13 +4634,13 @@ void DiscreteMasterTransform__OnComplete_fn(DiscreteMasterTransform* __this)
     uPtr(__this->FMT)->Changed();
 }
 
-// public DiscreteMasterTransform(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) [instance] :1169
+// public DiscreteMasterTransform(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) [instance] :1363
 void DiscreteMasterTransform::ctor_2(::g::Fuse::Visual* node, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     ctor_1(node, mixerBase);
 }
 
-// public DiscreteMasterTransform New(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) [static] :1169
+// public DiscreteMasterTransform New(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) [static] :1363
 DiscreteMasterTransform* DiscreteMasterTransform::New1(::g::Fuse::Visual* node, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     DiscreteMasterTransform* obj1 = (DiscreteMasterTransform*)uNew(DiscreteMasterTransform_typeof());
@@ -4340,16 +4649,16 @@ DiscreteMasterTransform* DiscreteMasterTransform::New1(::g::Fuse::Visual* node, 
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class DiscreteMixer :1134
+// internal sealed class DiscreteMixer :1328
 // {
 static void DiscreteMixer_build(uType* type)
 {
-    ::TYPES[17] = ::g::Fuse::Animations::DiscreteMasterProperty_typeof();
+    ::TYPES[18] = ::g::Fuse::Animations::DiscreteMasterProperty_typeof();
     type->MethodTypes[0]->SetPrecalc(
-        ::TYPES[17/*Fuse.Animations.DiscreteMasterProperty`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL));
+        ::TYPES[18/*Fuse.Animations.DiscreteMasterProperty`1*/]->MakeType(type->MethodTypes[0]->U(0), NULL));
     type->SetInterfaces(
         ::g::Fuse::Animations::IMixer_typeof(), offsetof(::g::Fuse::Animations::MixerBase_type, interface0));
     type->SetFields(2);
@@ -4378,13 +4687,13 @@ static void DiscreteMixer_build(uType* type)
     return type;
 }
 
-// public generated DiscreteMixer() :1134
+// public generated DiscreteMixer() :1328
 void DiscreteMixer__ctor_1_fn(DiscreteMixer* __this)
 {
     __this->ctor_1();
 }
 
-// protected override sealed Fuse.Animations.MasterProperty<T> CreateMaster<T>(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) :1136
+// protected override sealed Fuse.Animations.MasterProperty<T> CreateMaster<T>(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) :1330
 void DiscreteMixer__CreateMaster_fn(DiscreteMixer* __this, uType* __type, ::g::Uno::UX::Property1* property, ::g::Fuse::Animations::MixerBase* mixerBase, ::g::Fuse::Animations::MasterProperty** __retval)
 {
     __type = DiscreteMixer_typeof()->GetVirtual(0, __type);
@@ -4394,25 +4703,25 @@ void DiscreteMixer__CreateMaster_fn(DiscreteMixer* __this, uType* __type, ::g::U
     return *__retval = (::g::Fuse::Animations::DiscreteMasterProperty*)::g::Fuse::Animations::DiscreteMasterProperty::New1(__types[0], property, mixerBase), void();
 }
 
-// protected override sealed Fuse.Animations.MasterBase<Fuse.Transform> CreateMasterTransform(Fuse.Visual element, Fuse.Animations.MixerBase mixerBase) :1139
+// protected override sealed Fuse.Animations.MasterBase<Fuse.Transform> CreateMasterTransform(Fuse.Visual element, Fuse.Animations.MixerBase mixerBase) :1333
 void DiscreteMixer__CreateMasterTransform_fn(DiscreteMixer* __this, ::g::Fuse::Visual* element, ::g::Fuse::Animations::MixerBase* mixerBase, ::g::Fuse::Animations::MasterBase** __retval)
 {
     return *__retval = ::g::Fuse::Animations::DiscreteMasterTransform::New1(element, mixerBase), void();
 }
 
-// public generated DiscreteMixer New() :1134
+// public generated DiscreteMixer New() :1328
 void DiscreteMixer__New1_fn(DiscreteMixer** __retval)
 {
     *__retval = DiscreteMixer::New1();
 }
 
-// public generated DiscreteMixer() [instance] :1134
+// public generated DiscreteMixer() [instance] :1328
 void DiscreteMixer::ctor_1()
 {
     ctor_();
 }
 
-// public generated DiscreteMixer New() [static] :1134
+// public generated DiscreteMixer New() [static] :1328
 DiscreteMixer* DiscreteMixer::New1()
 {
     DiscreteMixer* obj1 = (DiscreteMixer*)uNew(DiscreteMixer_typeof());
@@ -4421,12 +4730,12 @@ DiscreteMixer* DiscreteMixer::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class DiscreteSingleTrack :1202
+// internal sealed class DiscreteSingleTrack :1396
 // {
-// static DiscreteSingleTrack() :1202
+// static DiscreteSingleTrack() :1396
 static void DiscreteSingleTrack__cctor__fn(uType* __type)
 {
     DiscreteSingleTrack::Singleton_ = DiscreteSingleTrack::New1();
@@ -4463,13 +4772,13 @@ DiscreteSingleTrack_type* DiscreteSingleTrack_typeof()
     return type;
 }
 
-// public generated DiscreteSingleTrack() :1202
+// public generated DiscreteSingleTrack() :1396
 void DiscreteSingleTrack__ctor__fn(DiscreteSingleTrack* __this)
 {
     __this->ctor_();
 }
 
-// private Fuse.Animations.SeekResult Fuse.Animations.DiscreteTrackProvider.GetSeekProgress(Fuse.Animations.TrackAnimatorState tas, double progress, double interval, Fuse.Animations.SeekDirection dir, object& value, double& strength) :1217
+// private Fuse.Animations.SeekResult Fuse.Animations.DiscreteTrackProvider.GetSeekProgress(Fuse.Animations.TrackAnimatorState tas, double progress, double interval, Fuse.Animations.SeekDirection dir, object& value, double& strength) :1411
 void DiscreteSingleTrack__FuseAnimationsDiscreteTrackProviderGetSeekProgress_fn(DiscreteSingleTrack* __this, ::g::Fuse::Animations::TrackAnimatorState* tas, double* progress, double* interval, int* dir, uObject** value, double* strength, int* __retval)
 {
     uStackFrame __("Fuse.Animations.DiscreteSingleTrack", "Fuse.Animations.DiscreteTrackProvider.GetSeekProgress(Fuse.Animations.TrackAnimatorState,double,double,Fuse.Animations.SeekDirection,object&,double&)");
@@ -4480,7 +4789,7 @@ void DiscreteSingleTrack__FuseAnimationsDiscreteTrackProviderGetSeekProgress_fn(
     return *__retval = (((dir_ == 0) ? progress_ >= 1.0 : progress_ <= 0.0) ? 1 : 0) | 2, void();
 }
 
-// private Fuse.Animations.SeekResult Fuse.Animations.DiscreteTrackProvider.GetSeekTime(Fuse.Animations.TrackAnimatorState tas, double elapsed, double interval, Fuse.Animations.SeekDirection dir, object& value, double& strength) :1228
+// private Fuse.Animations.SeekResult Fuse.Animations.DiscreteTrackProvider.GetSeekTime(Fuse.Animations.TrackAnimatorState tas, double elapsed, double interval, Fuse.Animations.SeekDirection dir, object& value, double& strength) :1422
 void DiscreteSingleTrack__FuseAnimationsDiscreteTrackProviderGetSeekTime_fn(DiscreteSingleTrack* __this, ::g::Fuse::Animations::TrackAnimatorState* tas, double* elapsed, double* interval, int* dir, uObject** value, double* strength, int* __retval)
 {
     uStackFrame __("Fuse.Animations.DiscreteSingleTrack", "Fuse.Animations.DiscreteTrackProvider.GetSeekTime(Fuse.Animations.TrackAnimatorState,double,double,Fuse.Animations.SeekDirection,object&,double&)");
@@ -4488,6 +4797,7 @@ void DiscreteSingleTrack__FuseAnimationsDiscreteTrackProviderGetSeekTime_fn(Disc
     double elapsed_ = *elapsed;
     double duration = uPtr(tas)->Duration();
     float progress;
+    float zeroTolerance = 1e-05f;
 
     if (duration < 9.9999997473787516e-06)
         progress = (float)(((dir_ == 0) ? elapsed_ >= -9.9999997473787516e-06 : elapsed_ > 9.9999997473787516e-06) ? 1 : 0);
@@ -4499,14 +4809,14 @@ void DiscreteSingleTrack__FuseAnimationsDiscreteTrackProviderGetSeekTime_fn(Disc
     return *__retval = (((dir_ == 0) ? elapsed_ >= 0.0 : elapsed_ <= 0.0) ? 1 : 0) | 2, void();
 }
 
-// private Fuse.Animations.AnimatorVariant Fuse.Animations.TrackProvider.GetAnimatorVariant(Fuse.Animations.TrackAnimator ta) :1212
+// private Fuse.Animations.AnimatorVariant Fuse.Animations.TrackProvider.GetAnimatorVariant(Fuse.Animations.TrackAnimator ta) :1406
 void DiscreteSingleTrack__FuseAnimationsTrackProviderGetAnimatorVariant_fn(DiscreteSingleTrack* __this, ::g::Fuse::Animations::TrackAnimator* ta, int* __retval)
 {
     uStackFrame __("Fuse.Animations.DiscreteSingleTrack", "Fuse.Animations.TrackProvider.GetAnimatorVariant(Fuse.Animations.TrackAnimator)");
     return *__retval = uPtr(ta)->HasBack() ? 2 : 0, void();
 }
 
-// private double Fuse.Animations.TrackProvider.GetDuration(Fuse.Animations.TrackAnimator ta, Fuse.Animations.AnimationVariant variant) :1207
+// private double Fuse.Animations.TrackProvider.GetDuration(Fuse.Animations.TrackAnimator ta, Fuse.Animations.AnimationVariant variant) :1401
 void DiscreteSingleTrack__FuseAnimationsTrackProviderGetDuration_fn(DiscreteSingleTrack* __this, ::g::Fuse::Animations::TrackAnimator* ta, int* variant, double* __retval)
 {
     uStackFrame __("Fuse.Animations.DiscreteSingleTrack", "Fuse.Animations.TrackProvider.GetDuration(Fuse.Animations.TrackAnimator,Fuse.Animations.AnimationVariant)");
@@ -4514,7 +4824,7 @@ void DiscreteSingleTrack__FuseAnimationsTrackProviderGetDuration_fn(DiscreteSing
     return *__retval = (variant_ == 1) ? uPtr(ta)->DurationBack() : uPtr(ta)->Duration(), void();
 }
 
-// public generated DiscreteSingleTrack New() :1202
+// public generated DiscreteSingleTrack New() :1396
 void DiscreteSingleTrack__New1_fn(DiscreteSingleTrack** __retval)
 {
     *__retval = DiscreteSingleTrack::New1();
@@ -4522,12 +4832,12 @@ void DiscreteSingleTrack__New1_fn(DiscreteSingleTrack** __retval)
 
 uSStrong<DiscreteSingleTrack*> DiscreteSingleTrack::Singleton_;
 
-// public generated DiscreteSingleTrack() [instance] :1202
+// public generated DiscreteSingleTrack() [instance] :1396
 void DiscreteSingleTrack::ctor_()
 {
 }
 
-// public generated DiscreteSingleTrack New() [static] :1202
+// public generated DiscreteSingleTrack New() [static] :1396
 DiscreteSingleTrack* DiscreteSingleTrack::New1()
 {
     DiscreteSingleTrack* obj1 = (DiscreteSingleTrack*)uNew(DiscreteSingleTrack_typeof());
@@ -4536,15 +4846,15 @@ DiscreteSingleTrack* DiscreteSingleTrack::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class DiscreteTrackChangeState<T> :628
+// internal sealed class DiscreteTrackChangeState<T> :822
 // {
 static void DiscreteTrackChangeState_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("Invalid Seek");
-    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
+    ::STRINGS[2] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[13] = ::g::Fuse::Animations::IMixerHandle_typeof();
     type->SetPrecalc(
@@ -4575,13 +4885,13 @@ static void DiscreteTrackChangeState_build(uType* type)
     return type;
 }
 
-// public DiscreteTrackChangeState(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) :633
+// public DiscreteTrackChangeState(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) :827
 void DiscreteTrackChangeState__ctor_2_fn(DiscreteTrackChangeState* __this, ::g::Fuse::Animations::Change* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     __this->ctor_2(animator, p);
 }
 
-// public override sealed void Disable() :640
+// public override sealed void Disable() :834
 void DiscreteTrackChangeState__Disable_fn(DiscreteTrackChangeState* __this)
 {
     uType* __types[] = {
@@ -4596,13 +4906,13 @@ void DiscreteTrackChangeState__Disable_fn(DiscreteTrackChangeState* __this)
     __this->mixHandle = NULL;
 }
 
-// public DiscreteTrackChangeState New(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) :633
+// public DiscreteTrackChangeState New(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) :827
 void DiscreteTrackChangeState__New1_fn(uType* __type, ::g::Fuse::Animations::Change* animator, ::g::Fuse::Animations::CreateStateParams* p, DiscreteTrackChangeState** __retval)
 {
     *__retval = DiscreteTrackChangeState::New1(__type, animator, p);
 }
 
-// protected override sealed void SeekObjectValue(object value, float strength) :649
+// protected override sealed void SeekObjectValue(object value, float strength) :843
 void DiscreteTrackChangeState__SeekObjectValue_fn(DiscreteTrackChangeState* __this, uObject* value, float* strength)
 {
     uType* __types[] = {
@@ -4614,7 +4924,7 @@ void DiscreteTrackChangeState__SeekObjectValue_fn(DiscreteTrackChangeState* __th
 
     if (__this->mixHandle == NULL)
     {
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[5/*"Invalid Seek"*/], 1, ::STRINGS[2/*"/Users/eric...*/], 653);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[5/*"Invalid Seek"*/], 0, ::STRINGS[2/*"/usr/local/...*/], 847);
         return;
     }
 
@@ -4622,7 +4932,7 @@ void DiscreteTrackChangeState__SeekObjectValue_fn(DiscreteTrackChangeState* __th
         ::g::Fuse::Animations::IMixerHandle::Set_ex(uInterface(uPtr(__this->mixHandle), __types[1]), uUnboxAny(__types[0], value), uCRef(strength_));
 }
 
-// public DiscreteTrackChangeState(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) [instance] :633
+// public DiscreteTrackChangeState(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) [instance] :827
 void DiscreteTrackChangeState::ctor_2(::g::Fuse::Animations::Change* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     uType* __types[] = {
@@ -4634,7 +4944,7 @@ void DiscreteTrackChangeState::ctor_2(::g::Fuse::Animations::Change* animator, :
     mixHandle = ((uObject*)::g::Fuse::Animations::IMixer::Register(uInterface(uPtr(uPtr(Animator1)->Mixer), ::TYPES[12/*Fuse.Animations.IMixer*/]), __types[0], (::g::Uno::UX::Property1*)uPtr(Animator1)->Target(), uPtr(Animator1)->MixOp()));
 }
 
-// public DiscreteTrackChangeState New(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) [static] :633
+// public DiscreteTrackChangeState New(Fuse.Animations.Change<T> animator, Fuse.Animations.CreateStateParams p) [static] :827
 DiscreteTrackChangeState* DiscreteTrackChangeState::New1(uType* __type, ::g::Fuse::Animations::Change* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     DiscreteTrackChangeState* obj1 = (DiscreteTrackChangeState*)uNew(__type);
@@ -4643,10 +4953,10 @@ DiscreteTrackChangeState* DiscreteTrackChangeState::New1(uType* __type, ::g::Fus
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract interface DiscreteTrackProvider :3136
+// internal abstract interface DiscreteTrackProvider :3342
 // {
 uInterfaceType* DiscreteTrackProvider_typeof()
 {
@@ -4658,12 +4968,12 @@ uInterfaceType* DiscreteTrackProvider_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// public abstract class Easing :449
+// public abstract class Easing :604
 // {
-// static Easing() :449
+// static Easing() :604
 static void Easing__cctor__fn(uType* __type)
 {
     Easing::Linear_ = Easing__LinearImpl::New1();
@@ -4784,7 +5094,7 @@ Easing_type* Easing_typeof()
     return type;
 }
 
-// protected generated Easing() :449
+// protected generated Easing() :604
 void Easing__ctor__fn(Easing* __this)
 {
     __this->ctor_();
@@ -4822,16 +5132,16 @@ uSStrong<Easing*> Easing::SinusoidalIn_;
 uSStrong<Easing*> Easing::SinusoidalInOut_;
 uSStrong<Easing*> Easing::SinusoidalOut_;
 
-// protected generated Easing() [instance] :449
+// protected generated Easing() [instance] :604
 void Easing::ctor_()
 {
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// public delegate float EasingFunction(float f) :931
+// public delegate float EasingFunction(float f) :1086
 uDelegateType* EasingFunction_typeof()
 {
     static uSStrong<uDelegateType*> type;
@@ -4843,45 +5153,45 @@ uDelegateType* EasingFunction_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// public static class EasingFunctions :939
+// public static class EasingFunctions :1094
 // {
 static void EasingFunctions_build(uType* type)
 {
-    ::TYPES[18] = ::g::Fuse::Animations::Easing__LinearImpl_typeof();
-    ::TYPES[19] = ::g::Fuse::Animations::EasingFunction_typeof();
-    ::TYPES[20] = ::g::Fuse::Animations::Easing__QuadraticInImpl_typeof();
-    ::TYPES[21] = ::g::Fuse::Animations::Easing__QuadraticOutImpl_typeof();
-    ::TYPES[22] = ::g::Fuse::Animations::Easing__QuadraticInOutImpl_typeof();
-    ::TYPES[23] = ::g::Fuse::Animations::Easing__CubicInImpl_typeof();
-    ::TYPES[24] = ::g::Fuse::Animations::Easing__CubicOutImpl_typeof();
-    ::TYPES[25] = ::g::Fuse::Animations::Easing__CubicInOutImpl_typeof();
-    ::TYPES[26] = ::g::Fuse::Animations::Easing__QuarticInImpl_typeof();
-    ::TYPES[27] = ::g::Fuse::Animations::Easing__QuarticOutImpl_typeof();
-    ::TYPES[28] = ::g::Fuse::Animations::Easing__QuarticInOutImpl_typeof();
-    ::TYPES[29] = ::g::Fuse::Animations::Easing__QuinticInImpl_typeof();
-    ::TYPES[30] = ::g::Fuse::Animations::Easing__QuinticOutImpl_typeof();
-    ::TYPES[31] = ::g::Fuse::Animations::Easing__QuinticInOutImpl_typeof();
-    ::TYPES[32] = ::g::Fuse::Animations::Easing__SinusoidalInImpl_typeof();
-    ::TYPES[33] = ::g::Fuse::Animations::Easing__SinusoidalOutImpl_typeof();
-    ::TYPES[34] = ::g::Fuse::Animations::Easing__SinusoidalInOutImpl_typeof();
-    ::TYPES[35] = ::g::Fuse::Animations::Easing__ExponentialInImpl_typeof();
-    ::TYPES[36] = ::g::Fuse::Animations::Easing__ExponentialOutImpl_typeof();
-    ::TYPES[37] = ::g::Fuse::Animations::Easing__ExponentialInOutImpl_typeof();
-    ::TYPES[38] = ::g::Fuse::Animations::Easing__CircularInImpl_typeof();
-    ::TYPES[39] = ::g::Fuse::Animations::Easing__CircularOutImpl_typeof();
-    ::TYPES[40] = ::g::Fuse::Animations::Easing__CircularInOutImpl_typeof();
-    ::TYPES[41] = ::g::Fuse::Animations::Easing__ElasticInImpl_typeof();
-    ::TYPES[42] = ::g::Fuse::Animations::Easing__ElasticOutImpl_typeof();
-    ::TYPES[43] = ::g::Fuse::Animations::Easing__ElasticInOutImpl_typeof();
-    ::TYPES[44] = ::g::Fuse::Animations::Easing__BackInImpl_typeof();
-    ::TYPES[45] = ::g::Fuse::Animations::Easing__BackOutImpl_typeof();
-    ::TYPES[46] = ::g::Fuse::Animations::Easing__BackInOutImpl_typeof();
-    ::TYPES[47] = ::g::Fuse::Animations::Easing__BounceInImpl_typeof();
-    ::TYPES[48] = ::g::Fuse::Animations::Easing__BounceOutImpl_typeof();
-    ::TYPES[49] = ::g::Fuse::Animations::Easing__BounceInOutImpl_typeof();
+    ::TYPES[19] = ::g::Fuse::Animations::Easing__LinearImpl_typeof();
+    ::TYPES[20] = ::g::Fuse::Animations::EasingFunction_typeof();
+    ::TYPES[21] = ::g::Fuse::Animations::Easing__QuadraticInImpl_typeof();
+    ::TYPES[22] = ::g::Fuse::Animations::Easing__QuadraticOutImpl_typeof();
+    ::TYPES[23] = ::g::Fuse::Animations::Easing__QuadraticInOutImpl_typeof();
+    ::TYPES[24] = ::g::Fuse::Animations::Easing__CubicInImpl_typeof();
+    ::TYPES[25] = ::g::Fuse::Animations::Easing__CubicOutImpl_typeof();
+    ::TYPES[26] = ::g::Fuse::Animations::Easing__CubicInOutImpl_typeof();
+    ::TYPES[27] = ::g::Fuse::Animations::Easing__QuarticInImpl_typeof();
+    ::TYPES[28] = ::g::Fuse::Animations::Easing__QuarticOutImpl_typeof();
+    ::TYPES[29] = ::g::Fuse::Animations::Easing__QuarticInOutImpl_typeof();
+    ::TYPES[30] = ::g::Fuse::Animations::Easing__QuinticInImpl_typeof();
+    ::TYPES[31] = ::g::Fuse::Animations::Easing__QuinticOutImpl_typeof();
+    ::TYPES[32] = ::g::Fuse::Animations::Easing__QuinticInOutImpl_typeof();
+    ::TYPES[33] = ::g::Fuse::Animations::Easing__SinusoidalInImpl_typeof();
+    ::TYPES[34] = ::g::Fuse::Animations::Easing__SinusoidalOutImpl_typeof();
+    ::TYPES[35] = ::g::Fuse::Animations::Easing__SinusoidalInOutImpl_typeof();
+    ::TYPES[36] = ::g::Fuse::Animations::Easing__ExponentialInImpl_typeof();
+    ::TYPES[37] = ::g::Fuse::Animations::Easing__ExponentialOutImpl_typeof();
+    ::TYPES[38] = ::g::Fuse::Animations::Easing__ExponentialInOutImpl_typeof();
+    ::TYPES[39] = ::g::Fuse::Animations::Easing__CircularInImpl_typeof();
+    ::TYPES[40] = ::g::Fuse::Animations::Easing__CircularOutImpl_typeof();
+    ::TYPES[41] = ::g::Fuse::Animations::Easing__CircularInOutImpl_typeof();
+    ::TYPES[42] = ::g::Fuse::Animations::Easing__ElasticInImpl_typeof();
+    ::TYPES[43] = ::g::Fuse::Animations::Easing__ElasticOutImpl_typeof();
+    ::TYPES[44] = ::g::Fuse::Animations::Easing__ElasticInOutImpl_typeof();
+    ::TYPES[45] = ::g::Fuse::Animations::Easing__BackInImpl_typeof();
+    ::TYPES[46] = ::g::Fuse::Animations::Easing__BackOutImpl_typeof();
+    ::TYPES[47] = ::g::Fuse::Animations::Easing__BackInOutImpl_typeof();
+    ::TYPES[48] = ::g::Fuse::Animations::Easing__BounceInImpl_typeof();
+    ::TYPES[49] = ::g::Fuse::Animations::Easing__BounceOutImpl_typeof();
+    ::TYPES[50] = ::g::Fuse::Animations::Easing__BounceInOutImpl_typeof();
     type->Reflection.SetFunctions(32,
         new uFunction("BackIn", NULL, (void*)EasingFunctions__BackIn_fn, 0, true, ::g::Uno::Float_typeof(), 1, ::g::Uno::Float_typeof()),
         new uFunction("BackInOut", NULL, (void*)EasingFunctions__BackInOut_fn, 0, true, ::g::Uno::Float_typeof(), 1, ::g::Uno::Float_typeof()),
@@ -4901,7 +5211,7 @@ static void EasingFunctions_build(uType* type)
         new uFunction("ExponentialIn", NULL, (void*)EasingFunctions__ExponentialIn_fn, 0, true, ::g::Uno::Float_typeof(), 1, ::g::Uno::Float_typeof()),
         new uFunction("ExponentialInOut", NULL, (void*)EasingFunctions__ExponentialInOut_fn, 0, true, ::g::Uno::Float_typeof(), 1, ::g::Uno::Float_typeof()),
         new uFunction("ExponentialOut", NULL, (void*)EasingFunctions__ExponentialOut_fn, 0, true, ::g::Uno::Float_typeof(), 1, ::g::Uno::Float_typeof()),
-        new uFunction("FromEasing", NULL, (void*)EasingFunctions__FromEasing_fn, 0, true, ::TYPES[19/*Fuse.Animations.EasingFunction*/], 1, ::g::Fuse::Animations::Easing_typeof()),
+        new uFunction("FromEasing", NULL, (void*)EasingFunctions__FromEasing_fn, 0, true, ::TYPES[20/*Fuse.Animations.EasingFunction*/], 1, ::g::Fuse::Animations::Easing_typeof()),
         new uFunction("Linear", NULL, (void*)EasingFunctions__Linear_fn, 0, true, ::g::Uno::Float_typeof(), 1, ::g::Uno::Float_typeof()),
         new uFunction("QuadraticIn", NULL, (void*)EasingFunctions__QuadraticIn_fn, 0, true, ::g::Uno::Float_typeof(), 1, ::g::Uno::Float_typeof()),
         new uFunction("QuadraticInOut", NULL, (void*)EasingFunctions__QuadraticInOut_fn, 0, true, ::g::Uno::Float_typeof(), 1, ::g::Uno::Float_typeof()),
@@ -4929,206 +5239,206 @@ uClassType* EasingFunctions_typeof()
     return type;
 }
 
-// public static float BackIn(float k) :1173
+// public static float BackIn(float k) :1328
 void EasingFunctions__BackIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::BackIn(*k);
 }
 
-// public static float BackInOut(float k) :1186
+// public static float BackInOut(float k) :1341
 void EasingFunctions__BackInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::BackInOut(*k);
 }
 
-// public static float BackOut(float k) :1179
+// public static float BackOut(float k) :1334
 void EasingFunctions__BackOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::BackOut(*k);
 }
 
-// public static float BounceIn(float k) :1198
+// public static float BounceIn(float k) :1353
 void EasingFunctions__BounceIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::BounceIn(*k);
 }
 
-// public static float BounceInOut(float k) :1226
+// public static float BounceInOut(float k) :1381
 void EasingFunctions__BounceInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::BounceInOut(*k);
 }
 
-// public static float BounceOut(float k) :1203
+// public static float BounceOut(float k) :1358
 void EasingFunctions__BounceOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::BounceOut(*k);
 }
 
-// public static float CircularIn(float k) :1117
+// public static float CircularIn(float k) :1272
 void EasingFunctions__CircularIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::CircularIn(*k);
 }
 
-// public static float CircularInOut(float k) :1128
+// public static float CircularInOut(float k) :1283
 void EasingFunctions__CircularInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::CircularInOut(*k);
 }
 
-// public static float CircularOut(float k) :1122
+// public static float CircularOut(float k) :1277
 void EasingFunctions__CircularOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::CircularOut(*k);
 }
 
-// public static float CubicIn(float k) :1015
+// public static float CubicIn(float k) :1170
 void EasingFunctions__CubicIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::CubicIn(*k);
 }
 
-// public static float CubicInOut(float k) :1026
+// public static float CubicInOut(float k) :1181
 void EasingFunctions__CubicInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::CubicInOut(*k);
 }
 
-// public static float CubicOut(float k) :1020
+// public static float CubicOut(float k) :1175
 void EasingFunctions__CubicOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::CubicOut(*k);
 }
 
-// public static float ElasticIn(float k) :1137
+// public static float ElasticIn(float k) :1292
 void EasingFunctions__ElasticIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::ElasticIn(*k);
 }
 
-// public static float ElasticInOut(float k) :1159
+// public static float ElasticInOut(float k) :1314
 void EasingFunctions__ElasticInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::ElasticInOut(*k);
 }
 
-// public static float ElasticOut(float k) :1148
+// public static float ElasticOut(float k) :1303
 void EasingFunctions__ElasticOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::ElasticOut(*k);
 }
 
-// public static float ExponentialIn(float k) :1092
+// public static float ExponentialIn(float k) :1247
 void EasingFunctions__ExponentialIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::ExponentialIn(*k);
 }
 
-// public static float ExponentialInOut(float k) :1102
+// public static float ExponentialInOut(float k) :1257
 void EasingFunctions__ExponentialInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::ExponentialInOut(*k);
 }
 
-// public static float ExponentialOut(float k) :1097
+// public static float ExponentialOut(float k) :1252
 void EasingFunctions__ExponentialOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::ExponentialOut(*k);
 }
 
-// public static Fuse.Animations.EasingFunction FromEasing(Fuse.Animations.Easing e) :941
+// public static Fuse.Animations.EasingFunction FromEasing(Fuse.Animations.Easing e) :1096
 void EasingFunctions__FromEasing_fn(::g::Fuse::Animations::Easing* e, uDelegate** __retval)
 {
     *__retval = EasingFunctions::FromEasing(e);
 }
 
-// public static float Linear(float k) :988
+// public static float Linear(float k) :1143
 void EasingFunctions__Linear_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::Linear(*k);
 }
 
-// public static float QuadraticIn(float k) :993
+// public static float QuadraticIn(float k) :1148
 void EasingFunctions__QuadraticIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuadraticIn(*k);
 }
 
-// public static float QuadraticInOut(float k) :1003
+// public static float QuadraticInOut(float k) :1158
 void EasingFunctions__QuadraticInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuadraticInOut(*k);
 }
 
-// public static float QuadraticOut(float k) :998
+// public static float QuadraticOut(float k) :1153
 void EasingFunctions__QuadraticOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuadraticOut(*k);
 }
 
-// public static float QuarticIn(float k) :1036
+// public static float QuarticIn(float k) :1191
 void EasingFunctions__QuarticIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuarticIn(*k);
 }
 
-// public static float QuarticInOut(float k) :1047
+// public static float QuarticInOut(float k) :1202
 void EasingFunctions__QuarticInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuarticInOut(*k);
 }
 
-// public static float QuarticOut(float k) :1041
+// public static float QuarticOut(float k) :1196
 void EasingFunctions__QuarticOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuarticOut(*k);
 }
 
-// public static float QuinticIn(float k) :1056
+// public static float QuinticIn(float k) :1211
 void EasingFunctions__QuinticIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuinticIn(*k);
 }
 
-// public static float QuinticInOut(float k) :1067
+// public static float QuinticInOut(float k) :1222
 void EasingFunctions__QuinticInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuinticInOut(*k);
 }
 
-// public static float QuinticOut(float k) :1061
+// public static float QuinticOut(float k) :1216
 void EasingFunctions__QuinticOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::QuinticOut(*k);
 }
 
-// public static float SinusoidalIn(float k) :1077
+// public static float SinusoidalIn(float k) :1232
 void EasingFunctions__SinusoidalIn_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::SinusoidalIn(*k);
 }
 
-// public static float SinusoidalInOut(float k) :1087
+// public static float SinusoidalInOut(float k) :1242
 void EasingFunctions__SinusoidalInOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::SinusoidalInOut(*k);
 }
 
-// public static float SinusoidalOut(float k) :1082
+// public static float SinusoidalOut(float k) :1237
 void EasingFunctions__SinusoidalOut_fn(float* k, float* __retval)
 {
     *__retval = EasingFunctions::SinusoidalOut(*k);
 }
 
-// public static float BackIn(float k) [static] :1173
+// public static float BackIn(float k) [static] :1328
 float EasingFunctions::BackIn(float k)
 {
     float s = 1.70158f;
     return (k * k) * (((s + 1.0f) * k) - s);
 }
 
-// public static float BackInOut(float k) [static] :1186
+// public static float BackInOut(float k) [static] :1341
 float EasingFunctions::BackInOut(float k)
 {
     float s = 2.59490943f;
@@ -5141,7 +5451,7 @@ float EasingFunctions::BackInOut(float k)
     return 0.5f * (((k * k) * (((s + 1.0f) * k) + s)) + 2.0f);
 }
 
-// public static float BackOut(float k) [static] :1179
+// public static float BackOut(float k) [static] :1334
 float EasingFunctions::BackOut(float k)
 {
     float s = 1.70158f;
@@ -5149,13 +5459,13 @@ float EasingFunctions::BackOut(float k)
     return ((k * k) * (((s + 1.0f) * k) + s)) + 1.0f;
 }
 
-// public static float BounceIn(float k) [static] :1198
+// public static float BounceIn(float k) [static] :1353
 float EasingFunctions::BounceIn(float k)
 {
     return 1.0f - EasingFunctions::BounceOut(1.0f - k);
 }
 
-// public static float BounceInOut(float k) [static] :1226
+// public static float BounceInOut(float k) [static] :1381
 float EasingFunctions::BounceInOut(float k)
 {
     if (k < 0.5f)
@@ -5164,7 +5474,7 @@ float EasingFunctions::BounceInOut(float k)
     return (EasingFunctions::BounceOut((k * 2.0f) - 1.0f) * 0.5f) + 0.5f;
 }
 
-// public static float BounceOut(float k) [static] :1203
+// public static float BounceOut(float k) [static] :1358
 float EasingFunctions::BounceOut(float k)
 {
     if (k < 0.363636374f)
@@ -5186,13 +5496,13 @@ float EasingFunctions::BounceOut(float k)
     }
 }
 
-// public static float CircularIn(float k) [static] :1117
+// public static float CircularIn(float k) [static] :1272
 float EasingFunctions::CircularIn(float k)
 {
     return 1.0f - ::g::Uno::Math::Sqrt1(1.0f - (k * k));
 }
 
-// public static float CircularInOut(float k) [static] :1128
+// public static float CircularInOut(float k) [static] :1283
 float EasingFunctions::CircularInOut(float k)
 {
     k = k * 2.0f;
@@ -5204,20 +5514,20 @@ float EasingFunctions::CircularInOut(float k)
     return 0.5f * (::g::Uno::Math::Sqrt1(1.0f - (k * k)) + 1.0f);
 }
 
-// public static float CircularOut(float k) [static] :1122
+// public static float CircularOut(float k) [static] :1277
 float EasingFunctions::CircularOut(float k)
 {
     k = k - 1.0f;
     return ::g::Uno::Math::Sqrt1(1.0f - (k * k));
 }
 
-// public static float CubicIn(float k) [static] :1015
+// public static float CubicIn(float k) [static] :1170
 float EasingFunctions::CubicIn(float k)
 {
     return (k * k) * k;
 }
 
-// public static float CubicInOut(float k) [static] :1026
+// public static float CubicInOut(float k) [static] :1181
 float EasingFunctions::CubicInOut(float k)
 {
     k = k * 2.0f;
@@ -5229,14 +5539,14 @@ float EasingFunctions::CubicInOut(float k)
     return 0.5f * (((k * k) * k) + 2.0f);
 }
 
-// public static float CubicOut(float k) [static] :1020
+// public static float CubicOut(float k) [static] :1175
 float EasingFunctions::CubicOut(float k)
 {
     k = k - 1.0f;
     return ((k * k) * k) + 1.0f;
 }
 
-// public static float ElasticIn(float k) [static] :1137
+// public static float ElasticIn(float k) [static] :1292
 float EasingFunctions::ElasticIn(float k)
 {
     if (k == 0.0f)
@@ -5249,7 +5559,7 @@ float EasingFunctions::ElasticIn(float k)
     return -::g::Uno::Math::Pow1(2.0f, 10.0f * k) * ::g::Uno::Math::Sin1(((k - 0.1f) * 6.28318548f) * 2.5f);
 }
 
-// public static float ElasticInOut(float k) [static] :1159
+// public static float ElasticInOut(float k) [static] :1314
 float EasingFunctions::ElasticInOut(float k)
 {
     if (k == 0.0f)
@@ -5266,7 +5576,7 @@ float EasingFunctions::ElasticInOut(float k)
     return ((::g::Uno::Math::Pow1(2.0f, -10.0f * k) * ::g::Uno::Math::Sin1(((k - 0.1f) * 6.28318548f) * 2.5f)) * 0.5f) + 1.0f;
 }
 
-// public static float ElasticOut(float k) [static] :1148
+// public static float ElasticOut(float k) [static] :1303
 float EasingFunctions::ElasticOut(float k)
 {
     if (k == 0.0f)
@@ -5278,13 +5588,13 @@ float EasingFunctions::ElasticOut(float k)
     return (::g::Uno::Math::Pow1(2.0f, -10.0f * k) * ::g::Uno::Math::Sin1(((k - 0.1f) * 6.28318548f) * 2.5f)) + 1.0f;
 }
 
-// public static float ExponentialIn(float k) [static] :1092
+// public static float ExponentialIn(float k) [static] :1247
 float EasingFunctions::ExponentialIn(float k)
 {
     return (k == 0.0f) ? 0.0f : ::g::Uno::Math::Pow1(1024.0f, k - 1.0f);
 }
 
-// public static float ExponentialInOut(float k) [static] :1102
+// public static float ExponentialInOut(float k) [static] :1257
 float EasingFunctions::ExponentialInOut(float k)
 {
     if (k == 0.0f)
@@ -5301,124 +5611,124 @@ float EasingFunctions::ExponentialInOut(float k)
     return 0.5f * (-::g::Uno::Math::Pow1(2.0f, -10.0f * (k - 1.0f)) + 2.0f);
 }
 
-// public static float ExponentialOut(float k) [static] :1097
+// public static float ExponentialOut(float k) [static] :1252
 float EasingFunctions::ExponentialOut(float k)
 {
     return (k == 1.0f) ? 1.0f : 1.0f - ::g::Uno::Math::Pow1(2.0f, -10.0f * k);
 }
 
-// public static Fuse.Animations.EasingFunction FromEasing(Fuse.Animations.Easing e) [static] :941
+// public static Fuse.Animations.EasingFunction FromEasing(Fuse.Animations.Easing e) [static] :1096
 uDelegate* EasingFunctions::FromEasing(::g::Fuse::Animations::Easing* e)
 {
-    if (uIs(e, ::TYPES[18/*Fuse.Animations.Easing.LinearImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__Linear_fn);
+    if (uIs(e, ::TYPES[19/*Fuse.Animations.Easing.LinearImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__Linear_fn);
 
-    if (uIs(e, ::TYPES[20/*Fuse.Animations.Easing.QuadraticInImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuadraticIn_fn);
+    if (uIs(e, ::TYPES[21/*Fuse.Animations.Easing.QuadraticInImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuadraticIn_fn);
 
-    if (uIs(e, ::TYPES[21/*Fuse.Animations.Easing.QuadraticOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuadraticOut_fn);
+    if (uIs(e, ::TYPES[22/*Fuse.Animations.Easing.QuadraticOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuadraticOut_fn);
 
-    if (uIs(e, ::TYPES[22/*Fuse.Animations.Easing.QuadraticInOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuadraticInOut_fn);
+    if (uIs(e, ::TYPES[23/*Fuse.Animations.Easing.QuadraticInOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuadraticInOut_fn);
 
-    if (uIs(e, ::TYPES[23/*Fuse.Animations.Easing.CubicInImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__CubicIn_fn);
+    if (uIs(e, ::TYPES[24/*Fuse.Animations.Easing.CubicInImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__CubicIn_fn);
 
-    if (uIs(e, ::TYPES[24/*Fuse.Animations.Easing.CubicOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__CubicOut_fn);
+    if (uIs(e, ::TYPES[25/*Fuse.Animations.Easing.CubicOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__CubicOut_fn);
 
-    if (uIs(e, ::TYPES[25/*Fuse.Animations.Easing.CubicInOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__CubicInOut_fn);
+    if (uIs(e, ::TYPES[26/*Fuse.Animations.Easing.CubicInOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__CubicInOut_fn);
 
-    if (uIs(e, ::TYPES[26/*Fuse.Animations.Easing.QuarticInImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuarticIn_fn);
+    if (uIs(e, ::TYPES[27/*Fuse.Animations.Easing.QuarticInImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuarticIn_fn);
 
-    if (uIs(e, ::TYPES[27/*Fuse.Animations.Easing.QuarticOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuarticOut_fn);
+    if (uIs(e, ::TYPES[28/*Fuse.Animations.Easing.QuarticOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuarticOut_fn);
 
-    if (uIs(e, ::TYPES[28/*Fuse.Animations.Easing.QuarticInOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuarticInOut_fn);
+    if (uIs(e, ::TYPES[29/*Fuse.Animations.Easing.QuarticInOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuarticInOut_fn);
 
-    if (uIs(e, ::TYPES[29/*Fuse.Animations.Easing.QuinticInImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuinticIn_fn);
+    if (uIs(e, ::TYPES[30/*Fuse.Animations.Easing.QuinticInImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuinticIn_fn);
 
-    if (uIs(e, ::TYPES[30/*Fuse.Animations.Easing.QuinticOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuinticOut_fn);
+    if (uIs(e, ::TYPES[31/*Fuse.Animations.Easing.QuinticOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuinticOut_fn);
 
-    if (uIs(e, ::TYPES[31/*Fuse.Animations.Easing.QuinticInOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuinticInOut_fn);
+    if (uIs(e, ::TYPES[32/*Fuse.Animations.Easing.QuinticInOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__QuinticInOut_fn);
 
-    if (uIs(e, ::TYPES[32/*Fuse.Animations.Easing.SinusoidalInImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__SinusoidalIn_fn);
+    if (uIs(e, ::TYPES[33/*Fuse.Animations.Easing.SinusoidalInImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__SinusoidalIn_fn);
 
-    if (uIs(e, ::TYPES[33/*Fuse.Animations.Easing.SinusoidalOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__SinusoidalOut_fn);
+    if (uIs(e, ::TYPES[34/*Fuse.Animations.Easing.SinusoidalOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__SinusoidalOut_fn);
 
-    if (uIs(e, ::TYPES[34/*Fuse.Animations.Easing.SinusoidalInOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__SinusoidalInOut_fn);
+    if (uIs(e, ::TYPES[35/*Fuse.Animations.Easing.SinusoidalInOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__SinusoidalInOut_fn);
 
-    if (uIs(e, ::TYPES[35/*Fuse.Animations.Easing.ExponentialInImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__ExponentialIn_fn);
+    if (uIs(e, ::TYPES[36/*Fuse.Animations.Easing.ExponentialInImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__ExponentialIn_fn);
 
-    if (uIs(e, ::TYPES[36/*Fuse.Animations.Easing.ExponentialOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__ExponentialOut_fn);
+    if (uIs(e, ::TYPES[37/*Fuse.Animations.Easing.ExponentialOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__ExponentialOut_fn);
 
-    if (uIs(e, ::TYPES[37/*Fuse.Animations.Easing.ExponentialInOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__ExponentialInOut_fn);
+    if (uIs(e, ::TYPES[38/*Fuse.Animations.Easing.ExponentialInOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__ExponentialInOut_fn);
 
-    if (uIs(e, ::TYPES[38/*Fuse.Animations.Easing.CircularInImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__CircularIn_fn);
+    if (uIs(e, ::TYPES[39/*Fuse.Animations.Easing.CircularInImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__CircularIn_fn);
 
-    if (uIs(e, ::TYPES[39/*Fuse.Animations.Easing.CircularOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__CircularOut_fn);
+    if (uIs(e, ::TYPES[40/*Fuse.Animations.Easing.CircularOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__CircularOut_fn);
 
-    if (uIs(e, ::TYPES[40/*Fuse.Animations.Easing.CircularInOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__CircularInOut_fn);
+    if (uIs(e, ::TYPES[41/*Fuse.Animations.Easing.CircularInOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__CircularInOut_fn);
 
-    if (uIs(e, ::TYPES[41/*Fuse.Animations.Easing.ElasticInImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__ElasticIn_fn);
+    if (uIs(e, ::TYPES[42/*Fuse.Animations.Easing.ElasticInImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__ElasticIn_fn);
 
-    if (uIs(e, ::TYPES[42/*Fuse.Animations.Easing.ElasticOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__ElasticOut_fn);
+    if (uIs(e, ::TYPES[43/*Fuse.Animations.Easing.ElasticOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__ElasticOut_fn);
 
-    if (uIs(e, ::TYPES[43/*Fuse.Animations.Easing.ElasticInOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__ElasticInOut_fn);
+    if (uIs(e, ::TYPES[44/*Fuse.Animations.Easing.ElasticInOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__ElasticInOut_fn);
 
-    if (uIs(e, ::TYPES[44/*Fuse.Animations.Easing.BackInImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__BackIn_fn);
+    if (uIs(e, ::TYPES[45/*Fuse.Animations.Easing.BackInImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__BackIn_fn);
 
-    if (uIs(e, ::TYPES[45/*Fuse.Animations.Easing.BackOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__BackOut_fn);
+    if (uIs(e, ::TYPES[46/*Fuse.Animations.Easing.BackOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__BackOut_fn);
 
-    if (uIs(e, ::TYPES[46/*Fuse.Animations.Easing.BackInOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__BackInOut_fn);
+    if (uIs(e, ::TYPES[47/*Fuse.Animations.Easing.BackInOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__BackInOut_fn);
 
-    if (uIs(e, ::TYPES[47/*Fuse.Animations.Easing.BounceInImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__BounceIn_fn);
+    if (uIs(e, ::TYPES[48/*Fuse.Animations.Easing.BounceInImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__BounceIn_fn);
 
-    if (uIs(e, ::TYPES[48/*Fuse.Animations.Easing.BounceOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__BounceOut_fn);
+    if (uIs(e, ::TYPES[49/*Fuse.Animations.Easing.BounceOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__BounceOut_fn);
 
-    if (uIs(e, ::TYPES[49/*Fuse.Animations.Easing.BounceInOutImpl*/]))
-        return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__BounceInOut_fn);
+    if (uIs(e, ::TYPES[50/*Fuse.Animations.Easing.BounceInOutImpl*/]))
+        return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__BounceInOut_fn);
 
-    return uDelegate::New(::TYPES[19/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__Linear_fn);
+    return uDelegate::New(::TYPES[20/*Fuse.Animations.EasingFunction*/], (void*)EasingFunctions__Linear_fn);
 }
 
-// public static float Linear(float k) [static] :988
+// public static float Linear(float k) [static] :1143
 float EasingFunctions::Linear(float k)
 {
     return k;
 }
 
-// public static float QuadraticIn(float k) [static] :993
+// public static float QuadraticIn(float k) [static] :1148
 float EasingFunctions::QuadraticIn(float k)
 {
     return k * k;
 }
 
-// public static float QuadraticInOut(float k) [static] :1003
+// public static float QuadraticInOut(float k) [static] :1158
 float EasingFunctions::QuadraticInOut(float k)
 {
     k = k * 2.0f;
@@ -5430,19 +5740,19 @@ float EasingFunctions::QuadraticInOut(float k)
     return -0.5f * ((k * (k - 2.0f)) - 1.0f);
 }
 
-// public static float QuadraticOut(float k) [static] :998
+// public static float QuadraticOut(float k) [static] :1153
 float EasingFunctions::QuadraticOut(float k)
 {
     return k * (2.0f - k);
 }
 
-// public static float QuarticIn(float k) [static] :1036
+// public static float QuarticIn(float k) [static] :1191
 float EasingFunctions::QuarticIn(float k)
 {
     return ((k * k) * k) * k;
 }
 
-// public static float QuarticInOut(float k) [static] :1047
+// public static float QuarticInOut(float k) [static] :1202
 float EasingFunctions::QuarticInOut(float k)
 {
     k = k * 2.0f;
@@ -5454,20 +5764,20 @@ float EasingFunctions::QuarticInOut(float k)
     return -0.5f * ((((k * k) * k) * k) - 2.0f);
 }
 
-// public static float QuarticOut(float k) [static] :1041
+// public static float QuarticOut(float k) [static] :1196
 float EasingFunctions::QuarticOut(float k)
 {
     k = k - 1.0f;
     return 1.0f - (((k * k) * k) * k);
 }
 
-// public static float QuinticIn(float k) [static] :1056
+// public static float QuinticIn(float k) [static] :1211
 float EasingFunctions::QuinticIn(float k)
 {
     return (((k * k) * k) * k) * k;
 }
 
-// public static float QuinticInOut(float k) [static] :1067
+// public static float QuinticInOut(float k) [static] :1222
 float EasingFunctions::QuinticInOut(float k)
 {
     k = k * 2.0f;
@@ -5479,38 +5789,38 @@ float EasingFunctions::QuinticInOut(float k)
     return 0.5f * (((((k * k) * k) * k) * k) + 2.0f);
 }
 
-// public static float QuinticOut(float k) [static] :1061
+// public static float QuinticOut(float k) [static] :1216
 float EasingFunctions::QuinticOut(float k)
 {
     k = k - 1.0f;
     return ((((k * k) * k) * k) * k) + 1.0f;
 }
 
-// public static float SinusoidalIn(float k) [static] :1077
+// public static float SinusoidalIn(float k) [static] :1232
 float EasingFunctions::SinusoidalIn(float k)
 {
     return 1.0f - ::g::Uno::Math::Cos1((k * 3.14159274f) / 2.0f);
 }
 
-// public static float SinusoidalInOut(float k) [static] :1087
+// public static float SinusoidalInOut(float k) [static] :1242
 float EasingFunctions::SinusoidalInOut(float k)
 {
     return 0.5f * (1.0f - ::g::Uno::Math::Cos1(3.14159274f * k));
 }
 
-// public static float SinusoidalOut(float k) [static] :1082
+// public static float SinusoidalOut(float k) [static] :1237
 float EasingFunctions::SinusoidalOut(float k)
 {
     return ::g::Uno::Math::Sin1((k * 3.14159274f) / 2.0f);
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class EasingTrack :1257
+// internal sealed class EasingTrack :1452
 // {
-// static EasingTrack() :1257
+// static EasingTrack() :1452
 static void EasingTrack__cctor__fn(uType* __type)
 {
     EasingTrack::Singleton_ = EasingTrack::New1();
@@ -5518,9 +5828,9 @@ static void EasingTrack__cctor__fn(uType* __type)
 
 static void EasingTrack_build(uType* type)
 {
-    ::TYPES[50] = ::g::Fuse::Animations::ContinuousTrackProvider_typeof();
+    ::TYPES[51] = ::g::Fuse::Animations::ContinuousTrackProvider_typeof();
     type->SetInterfaces(
-        ::TYPES[50/*Fuse.Animations.ContinuousTrackProvider*/], offsetof(EasingTrack_type, interface0),
+        ::TYPES[51/*Fuse.Animations.ContinuousTrackProvider*/], offsetof(EasingTrack_type, interface0),
         ::g::Fuse::Animations::ITrackProvider_typeof(), offsetof(EasingTrack_type, interface1),
         ::g::Fuse::Animations::TrackProvider_typeof(), offsetof(EasingTrack_type, interface2));
     type->SetFields(0,
@@ -5548,13 +5858,13 @@ EasingTrack_type* EasingTrack_typeof()
     return type;
 }
 
-// public generated EasingTrack() :1257
+// public generated EasingTrack() :1452
 void EasingTrack__ctor__fn(EasingTrack* __this)
 {
     __this->ctor_();
 }
 
-// private Fuse.Animations.SeekResult Fuse.Animations.ContinuousTrackProvider.GetSeekProgress(Fuse.Animations.TrackAnimatorState tas, double progress, double interval, Fuse.Animations.SeekDirection dir, float4& value, double& strength) :1272
+// private Fuse.Animations.SeekResult Fuse.Animations.ContinuousTrackProvider.GetSeekProgress(Fuse.Animations.TrackAnimatorState tas, double progress, double interval, Fuse.Animations.SeekDirection dir, float4& value, double& strength) :1467
 void EasingTrack__FuseAnimationsContinuousTrackProviderGetSeekProgress_fn(EasingTrack* __this, ::g::Fuse::Animations::TrackAnimatorState* tas, double* progress, double* interval, int* dir, ::g::Uno::Float4* value, double* strength, int* __retval)
 {
     uStackFrame __("Fuse.Animations.EasingTrack", "Fuse.Animations.ContinuousTrackProvider.GetSeekProgress(Fuse.Animations.TrackAnimatorState,double,double,Fuse.Animations.SeekDirection,float4&,double&)");
@@ -5567,7 +5877,7 @@ void EasingTrack__FuseAnimationsContinuousTrackProviderGetSeekProgress_fn(Easing
     return *__retval = (((dir_ == 0) ? progress_ >= 1.0 : progress_ <= 0.0) ? 1 : 0) | 2, void();
 }
 
-// private Fuse.Animations.SeekResult Fuse.Animations.ContinuousTrackProvider.GetSeekTime(Fuse.Animations.TrackAnimatorState tas, double elapsed, double interval, Fuse.Animations.SeekDirection dir, float4& value, double& strength) :1286
+// private Fuse.Animations.SeekResult Fuse.Animations.ContinuousTrackProvider.GetSeekTime(Fuse.Animations.TrackAnimatorState tas, double elapsed, double interval, Fuse.Animations.SeekDirection dir, float4& value, double& strength) :1481
 void EasingTrack__FuseAnimationsContinuousTrackProviderGetSeekTime_fn(EasingTrack* __this, ::g::Fuse::Animations::TrackAnimatorState* tas, double* elapsed, double* interval, int* dir, ::g::Uno::Float4* value, double* strength, int* __retval)
 {
     uStackFrame __("Fuse.Animations.EasingTrack", "Fuse.Animations.ContinuousTrackProvider.GetSeekTime(Fuse.Animations.TrackAnimatorState,double,double,Fuse.Animations.SeekDirection,float4&,double&)");
@@ -5576,23 +5886,24 @@ void EasingTrack__FuseAnimationsContinuousTrackProviderGetSeekTime_fn(EasingTrac
     double interval_ = *interval;
     double duration = uPtr(tas)->Duration();
     float progress;
+    float zeroTolerance = 1e-05f;
 
     if (duration < 9.9999997473787516e-06)
         progress = (float)(((dir_ == 0) ? elapsed_ >= -9.9999997473787516e-06 : elapsed_ > 9.9999997473787516e-06) ? 1 : 0);
     else
         progress = (float)(elapsed_ / duration);
 
-    return *__retval = ::g::Fuse::Animations::ContinuousTrackProvider::GetSeekProgress(uInterface(uPtr(uAs<uObject*>(__this, ::TYPES[50/*Fuse.Animations.ContinuousTrackProvider*/])), ::TYPES[50/*Fuse.Animations.ContinuousTrackProvider*/]), tas, (double)progress, interval_, dir_, value, strength), void();
+    return *__retval = ::g::Fuse::Animations::ContinuousTrackProvider::GetSeekProgress(uInterface(uPtr(uAs<uObject*>(__this, ::TYPES[51/*Fuse.Animations.ContinuousTrackProvider*/])), ::TYPES[51/*Fuse.Animations.ContinuousTrackProvider*/]), tas, (double)progress, interval_, dir_, value, strength), void();
 }
 
-// private Fuse.Animations.AnimatorVariant Fuse.Animations.TrackProvider.GetAnimatorVariant(Fuse.Animations.TrackAnimator ta) :1267
+// private Fuse.Animations.AnimatorVariant Fuse.Animations.TrackProvider.GetAnimatorVariant(Fuse.Animations.TrackAnimator ta) :1462
 void EasingTrack__FuseAnimationsTrackProviderGetAnimatorVariant_fn(EasingTrack* __this, ::g::Fuse::Animations::TrackAnimator* ta, int* __retval)
 {
     uStackFrame __("Fuse.Animations.EasingTrack", "Fuse.Animations.TrackProvider.GetAnimatorVariant(Fuse.Animations.TrackAnimator)");
     return *__retval = uPtr(ta)->HasBack() ? 2 : 0, void();
 }
 
-// private double Fuse.Animations.TrackProvider.GetDuration(Fuse.Animations.TrackAnimator ta, Fuse.Animations.AnimationVariant variant) :1262
+// private double Fuse.Animations.TrackProvider.GetDuration(Fuse.Animations.TrackAnimator ta, Fuse.Animations.AnimationVariant variant) :1457
 void EasingTrack__FuseAnimationsTrackProviderGetDuration_fn(EasingTrack* __this, ::g::Fuse::Animations::TrackAnimator* ta, int* variant, double* __retval)
 {
     uStackFrame __("Fuse.Animations.EasingTrack", "Fuse.Animations.TrackProvider.GetDuration(Fuse.Animations.TrackAnimator,Fuse.Animations.AnimationVariant)");
@@ -5600,7 +5911,7 @@ void EasingTrack__FuseAnimationsTrackProviderGetDuration_fn(EasingTrack* __this,
     return *__retval = ((variant_ == 1) && uPtr(ta)->HasBack()) ? uPtr(ta)->DurationBack() : uPtr(ta)->Duration(), void();
 }
 
-// public generated EasingTrack New() :1257
+// public generated EasingTrack New() :1452
 void EasingTrack__New1_fn(EasingTrack** __retval)
 {
     *__retval = EasingTrack::New1();
@@ -5608,12 +5919,12 @@ void EasingTrack__New1_fn(EasingTrack** __retval)
 
 uSStrong<EasingTrack*> EasingTrack::Singleton_;
 
-// public generated EasingTrack() [instance] :1257
+// public generated EasingTrack() [instance] :1452
 void EasingTrack::ctor_()
 {
 }
 
-// public generated EasingTrack New() [static] :1257
+// public generated EasingTrack New() [static] :1452
 EasingTrack* EasingTrack::New1()
 {
     EasingTrack* obj1 = (EasingTrack*)uNew(EasingTrack_typeof());
@@ -5622,10 +5933,10 @@ EasingTrack* EasingTrack::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.ElasticInImpl :711
+// internal sealed class Easing.ElasticInImpl :866
 // {
 static void Easing__ElasticInImpl_build(uType* type)
 {
@@ -5647,13 +5958,13 @@ static void Easing__ElasticInImpl_build(uType* type)
     return type;
 }
 
-// public generated ElasticInImpl() :711
+// public generated ElasticInImpl() :866
 void Easing__ElasticInImpl__ctor_1_fn(Easing__ElasticInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :713
+// public override sealed double Map(double k) :868
 void Easing__ElasticInImpl__Map_fn(Easing__ElasticInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -5668,19 +5979,19 @@ void Easing__ElasticInImpl__Map_fn(Easing__ElasticInImpl* __this, double* k, dou
     return *__retval = -::g::Uno::Math::Pow(2.0, 10.0 * k_) * ::g::Uno::Math::Sin(((k_ - 0.10000000149011612) * 6.2831854820251465) * 2.5), void();
 }
 
-// public generated ElasticInImpl New() :711
+// public generated ElasticInImpl New() :866
 void Easing__ElasticInImpl__New1_fn(Easing__ElasticInImpl** __retval)
 {
     *__retval = Easing__ElasticInImpl::New1();
 }
 
-// public generated ElasticInImpl() [instance] :711
+// public generated ElasticInImpl() [instance] :866
 void Easing__ElasticInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated ElasticInImpl New() [static] :711
+// public generated ElasticInImpl New() [static] :866
 Easing__ElasticInImpl* Easing__ElasticInImpl::New1()
 {
     Easing__ElasticInImpl* obj1 = (Easing__ElasticInImpl*)uNew(Easing__ElasticInImpl_typeof());
@@ -5689,10 +6000,10 @@ Easing__ElasticInImpl* Easing__ElasticInImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.ElasticInOutImpl :739
+// internal sealed class Easing.ElasticInOutImpl :894
 // {
 static void Easing__ElasticInOutImpl_build(uType* type)
 {
@@ -5714,13 +6025,13 @@ static void Easing__ElasticInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated ElasticInOutImpl() :739
+// public generated ElasticInOutImpl() :894
 void Easing__ElasticInOutImpl__ctor_1_fn(Easing__ElasticInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :741
+// public override sealed double Map(double k) :896
 void Easing__ElasticInOutImpl__Map_fn(Easing__ElasticInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -5739,19 +6050,19 @@ void Easing__ElasticInOutImpl__Map_fn(Easing__ElasticInOutImpl* __this, double* 
     return *__retval = ((::g::Uno::Math::Pow(2.0, -10.0 * k_) * ::g::Uno::Math::Sin(((k_ - 0.10000000149011612) * 6.2831854820251465) * 2.5)) * 0.5) + 1.0, void();
 }
 
-// public generated ElasticInOutImpl New() :739
+// public generated ElasticInOutImpl New() :894
 void Easing__ElasticInOutImpl__New1_fn(Easing__ElasticInOutImpl** __retval)
 {
     *__retval = Easing__ElasticInOutImpl::New1();
 }
 
-// public generated ElasticInOutImpl() [instance] :739
+// public generated ElasticInOutImpl() [instance] :894
 void Easing__ElasticInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated ElasticInOutImpl New() [static] :739
+// public generated ElasticInOutImpl New() [static] :894
 Easing__ElasticInOutImpl* Easing__ElasticInOutImpl::New1()
 {
     Easing__ElasticInOutImpl* obj1 = (Easing__ElasticInOutImpl*)uNew(Easing__ElasticInOutImpl_typeof());
@@ -5760,10 +6071,10 @@ Easing__ElasticInOutImpl* Easing__ElasticInOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.ElasticOutImpl :725
+// internal sealed class Easing.ElasticOutImpl :880
 // {
 static void Easing__ElasticOutImpl_build(uType* type)
 {
@@ -5785,13 +6096,13 @@ static void Easing__ElasticOutImpl_build(uType* type)
     return type;
 }
 
-// public generated ElasticOutImpl() :725
+// public generated ElasticOutImpl() :880
 void Easing__ElasticOutImpl__ctor_1_fn(Easing__ElasticOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :727
+// public override sealed double Map(double k) :882
 void Easing__ElasticOutImpl__Map_fn(Easing__ElasticOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -5805,19 +6116,19 @@ void Easing__ElasticOutImpl__Map_fn(Easing__ElasticOutImpl* __this, double* k, d
     return *__retval = (::g::Uno::Math::Pow(2.0, -10.0 * k_) * ::g::Uno::Math::Sin(((k_ - 0.10000000149011612) * 6.2831854820251465) * 2.5)) + 1.0, void();
 }
 
-// public generated ElasticOutImpl New() :725
+// public generated ElasticOutImpl New() :880
 void Easing__ElasticOutImpl__New1_fn(Easing__ElasticOutImpl** __retval)
 {
     *__retval = Easing__ElasticOutImpl::New1();
 }
 
-// public generated ElasticOutImpl() [instance] :725
+// public generated ElasticOutImpl() [instance] :880
 void Easing__ElasticOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated ElasticOutImpl New() [static] :725
+// public generated ElasticOutImpl New() [static] :880
 Easing__ElasticOutImpl* Easing__ElasticOutImpl::New1()
 {
     Easing__ElasticOutImpl* obj1 = (Easing__ElasticOutImpl*)uNew(Easing__ElasticOutImpl_typeof());
@@ -5826,10 +6137,10 @@ Easing__ElasticOutImpl* Easing__ElasticOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.ExponentialInImpl :648
+// internal sealed class Easing.ExponentialInImpl :803
 // {
 static void Easing__ExponentialInImpl_build(uType* type)
 {
@@ -5851,32 +6162,32 @@ static void Easing__ExponentialInImpl_build(uType* type)
     return type;
 }
 
-// public generated ExponentialInImpl() :648
+// public generated ExponentialInImpl() :803
 void Easing__ExponentialInImpl__ctor_1_fn(Easing__ExponentialInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :650
+// public override sealed double Map(double k) :805
 void Easing__ExponentialInImpl__Map_fn(Easing__ExponentialInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = (k_ == 0.0) ? 0.0 : ::g::Uno::Math::Pow(1024.0, k_ - 1.0), void();
 }
 
-// public generated ExponentialInImpl New() :648
+// public generated ExponentialInImpl New() :803
 void Easing__ExponentialInImpl__New1_fn(Easing__ExponentialInImpl** __retval)
 {
     *__retval = Easing__ExponentialInImpl::New1();
 }
 
-// public generated ExponentialInImpl() [instance] :648
+// public generated ExponentialInImpl() [instance] :803
 void Easing__ExponentialInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated ExponentialInImpl New() [static] :648
+// public generated ExponentialInImpl New() [static] :803
 Easing__ExponentialInImpl* Easing__ExponentialInImpl::New1()
 {
     Easing__ExponentialInImpl* obj1 = (Easing__ExponentialInImpl*)uNew(Easing__ExponentialInImpl_typeof());
@@ -5885,10 +6196,10 @@ Easing__ExponentialInImpl* Easing__ExponentialInImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.ExponentialInOutImpl :664
+// internal sealed class Easing.ExponentialInOutImpl :819
 // {
 static void Easing__ExponentialInOutImpl_build(uType* type)
 {
@@ -5910,13 +6221,13 @@ static void Easing__ExponentialInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated ExponentialInOutImpl() :664
+// public generated ExponentialInOutImpl() :819
 void Easing__ExponentialInOutImpl__ctor_1_fn(Easing__ExponentialInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :666
+// public override sealed double Map(double k) :821
 void Easing__ExponentialInOutImpl__Map_fn(Easing__ExponentialInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -5935,19 +6246,19 @@ void Easing__ExponentialInOutImpl__Map_fn(Easing__ExponentialInOutImpl* __this, 
     return *__retval = 0.5 * (-::g::Uno::Math::Pow(2.0, -10.0 * (k_ - 1.0)) + 2.0), void();
 }
 
-// public generated ExponentialInOutImpl New() :664
+// public generated ExponentialInOutImpl New() :819
 void Easing__ExponentialInOutImpl__New1_fn(Easing__ExponentialInOutImpl** __retval)
 {
     *__retval = Easing__ExponentialInOutImpl::New1();
 }
 
-// public generated ExponentialInOutImpl() [instance] :664
+// public generated ExponentialInOutImpl() [instance] :819
 void Easing__ExponentialInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated ExponentialInOutImpl New() [static] :664
+// public generated ExponentialInOutImpl New() [static] :819
 Easing__ExponentialInOutImpl* Easing__ExponentialInOutImpl::New1()
 {
     Easing__ExponentialInOutImpl* obj1 = (Easing__ExponentialInOutImpl*)uNew(Easing__ExponentialInOutImpl_typeof());
@@ -5956,10 +6267,10 @@ Easing__ExponentialInOutImpl* Easing__ExponentialInOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.ExponentialOutImpl :656
+// internal sealed class Easing.ExponentialOutImpl :811
 // {
 static void Easing__ExponentialOutImpl_build(uType* type)
 {
@@ -5981,32 +6292,32 @@ static void Easing__ExponentialOutImpl_build(uType* type)
     return type;
 }
 
-// public generated ExponentialOutImpl() :656
+// public generated ExponentialOutImpl() :811
 void Easing__ExponentialOutImpl__ctor_1_fn(Easing__ExponentialOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :658
+// public override sealed double Map(double k) :813
 void Easing__ExponentialOutImpl__Map_fn(Easing__ExponentialOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = (k_ == 1.0) ? 1.0 : 1.0 - ::g::Uno::Math::Pow(2.0, -10.0 * k_), void();
 }
 
-// public generated ExponentialOutImpl New() :656
+// public generated ExponentialOutImpl New() :811
 void Easing__ExponentialOutImpl__New1_fn(Easing__ExponentialOutImpl** __retval)
 {
     *__retval = Easing__ExponentialOutImpl::New1();
 }
 
-// public generated ExponentialOutImpl() [instance] :656
+// public generated ExponentialOutImpl() [instance] :811
 void Easing__ExponentialOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated ExponentialOutImpl New() [static] :656
+// public generated ExponentialOutImpl New() [static] :811
 Easing__ExponentialOutImpl* Easing__ExponentialOutImpl::New1()
 {
     Easing__ExponentialOutImpl* obj1 = (Easing__ExponentialOutImpl*)uNew(Easing__ExponentialOutImpl_typeof());
@@ -6015,10 +6326,10 @@ Easing__ExponentialOutImpl* Easing__ExponentialOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class FastMatrixTransform :1810
+// internal sealed class FastMatrixTransform :2006
 // {
 static void FastMatrixTransform_build(uType* type)
 {
@@ -6068,62 +6379,63 @@ static void FastMatrixTransform_build(uType* type)
     return type;
 }
 
-// public generated FastMatrixTransform() :1810
+// public generated FastMatrixTransform() :2006
 void FastMatrixTransform__ctor_3_fn(FastMatrixTransform* __this)
 {
     __this->ctor_3();
 }
 
-// public override sealed void AppendTo(Fuse.FastMatrix m, float weight) :1814
+// public override sealed void AppendTo(Fuse.FastMatrix m, float weight) :2010
 void FastMatrixTransform__AppendTo_fn(FastMatrixTransform* __this, ::g::Fuse::FastMatrix* m, float* weight)
 {
     uStackFrame __("Fuse.Animations.FastMatrixTransform", "AppendTo(Fuse.FastMatrix,float)");
     uPtr(m)->AppendFastMatrix(__this->Matrix);
 }
 
-// public void Changed() :1825
+// public void Changed() :2021
 void FastMatrixTransform__Changed_fn(FastMatrixTransform* __this)
 {
     __this->Changed();
 }
 
-// public override sealed bool get_IsFlat() :1832
+// public override sealed bool get_IsFlat() :2028
 void FastMatrixTransform__get_IsFlat_fn(FastMatrixTransform* __this, bool* __retval)
 {
     uStackFrame __("Fuse.Animations.FastMatrixTransform", "get_IsFlat()");
     ::g::Uno::Float4x4 m = uPtr(__this->Matrix)->Matrix();
+    float zeroTolerance = 1e-05f;
     bool q = (((((::g::Uno::Math::Abs1(m.M13) < 1e-05f) && (::g::Uno::Math::Abs1(m.M23) < 1e-05f)) && (::g::Uno::Math::Abs1(m.M43) < 1e-05f)) && (::g::Uno::Math::Abs1(m.M14) < 1e-05f)) && (::g::Uno::Math::Abs1(m.M24) < 1e-05f)) && (::g::Uno::Math::Abs1(m.M34) < 1e-05f);
     return *__retval = q, void();
 }
 
-// public generated FastMatrixTransform New() :1810
+// public generated FastMatrixTransform New() :2006
 void FastMatrixTransform__New2_fn(FastMatrixTransform** __retval)
 {
     *__retval = FastMatrixTransform::New2();
 }
 
-// public override sealed void PrependTo(Fuse.FastMatrix m) :1820
+// public override sealed void PrependTo(Fuse.FastMatrix m) :2016
 void FastMatrixTransform__PrependTo_fn(FastMatrixTransform* __this, ::g::Fuse::FastMatrix* m)
 {
     uStackFrame __("Fuse.Animations.FastMatrixTransform", "PrependTo(Fuse.FastMatrix)");
     uPtr(m)->PrependFastMatrix(__this->Matrix);
 }
 
-// public generated FastMatrixTransform() [instance] :1810
+// public generated FastMatrixTransform() [instance] :2006
 void FastMatrixTransform::ctor_3()
 {
     Matrix = ::g::Fuse::FastMatrix::Identity();
     ctor_2();
 }
 
-// public void Changed() [instance] :1825
+// public void Changed() [instance] :2021
 void FastMatrixTransform::Changed()
 {
     uStackFrame __("Fuse.Animations.FastMatrixTransform", "Changed()");
     OnMatrixChanged(NULL, NULL);
 }
 
-// public generated FastMatrixTransform New() [static] :1810
+// public generated FastMatrixTransform New() [static] :2006
 FastMatrixTransform* FastMatrixTransform::New2()
 {
     FastMatrixTransform* obj1 = (FastMatrixTransform*)uNew(FastMatrixTransform_typeof());
@@ -6132,10 +6444,10 @@ FastMatrixTransform* FastMatrixTransform::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// protected struct MasterBase<T>.GFWResult :1696
+// protected struct MasterBase<T>.GFWResult :1892
 // {
 static void MasterBase__GFWResult_build(uType* type)
 {
@@ -6160,10 +6472,10 @@ uStructType* MasterBase__GFWResult_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract interface IBasePlayerFeedback :4113
+// internal abstract interface IBasePlayerFeedback :4320
 // {
 uInterfaceType* IBasePlayerFeedback_typeof()
 {
@@ -6175,10 +6487,10 @@ uInterfaceType* IBasePlayerFeedback_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public abstract interface IMixer :1540
+// public abstract interface IMixer :1736
 // {
 uInterfaceType* IMixer_typeof()
 {
@@ -6194,10 +6506,10 @@ uInterfaceType* IMixer_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public abstract interface IMixerHandle<T> :1546
+// public abstract interface IMixerHandle<T> :1742
 // {
 uInterfaceType* IMixerHandle_typeof()
 {
@@ -6213,10 +6525,10 @@ uInterfaceType* IMixerHandle_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract interface IMixerMaster :1561
+// internal abstract interface IMixerMaster :1757
 // {
 uInterfaceType* IMixerMaster_typeof()
 {
@@ -6228,10 +6540,10 @@ uInterfaceType* IMixerMaster_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract interface IPlayerFeedback :4119
+// internal abstract interface IPlayerFeedback :4326
 // {
 uInterfaceType* IPlayerFeedback_typeof()
 {
@@ -6243,10 +6555,10 @@ uInterfaceType* IPlayerFeedback_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public abstract interface IResize :2661
+// public abstract interface IResize :2864
 // {
 uInterfaceType* IResize_typeof()
 {
@@ -6260,10 +6572,10 @@ uInterfaceType* IResize_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public abstract interface IResizeMode :2666
+// public abstract interface IResizeMode :2869
 // {
 uInterfaceType* IResizeMode_typeof()
 {
@@ -6277,10 +6589,10 @@ uInterfaceType* IResizeMode_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public abstract interface ITrackProvider :3119
+// public abstract interface ITrackProvider :3325
 // {
 uInterfaceType* ITrackProvider_typeof()
 {
@@ -6292,10 +6604,10 @@ uInterfaceType* ITrackProvider_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract interface IUnwrappedPlayerFeedback :4124
+// internal abstract interface IUnwrappedPlayerFeedback :4331
 // {
 uInterfaceType* IUnwrappedPlayerFeedback_typeof()
 {
@@ -6307,15 +6619,15 @@ uInterfaceType* IUnwrappedPlayerFeedback_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public sealed class Keyframe :1343
+// public sealed class Keyframe :1539
 // {
 static void Keyframe_build(uType* type)
 {
-    ::TYPES[51] = ::g::Uno::Collections::ICollection_typeof()->MakeType(type, NULL);
-    ::TYPES[52] = ::g::Uno::Collections::IList_typeof()->MakeType(type, NULL);
+    ::TYPES[52] = ::g::Uno::Collections::ICollection_typeof()->MakeType(type, NULL);
+    ::TYPES[53] = ::g::Uno::Collections::IList_typeof()->MakeType(type, NULL);
     type->SetFields(0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Animations::Keyframe, _hasTangentIn), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Animations::Keyframe, _hasTangentOut), 0,
@@ -6376,396 +6688,396 @@ uType* Keyframe_typeof()
     return type;
 }
 
-// public generated Keyframe() :1343
+// public generated Keyframe() :1539
 void Keyframe__ctor__fn(Keyframe* __this)
 {
     __this->ctor_();
 }
 
-// internal static double CompleteFrames(Uno.Collections.IList<Fuse.Animations.Keyframe> frames, float tension, float bias, float continuity) :1474
+// internal static double CompleteFrames(Uno.Collections.IList<Fuse.Animations.Keyframe> frames, float tension, float bias, float continuity) :1670
 void Keyframe__CompleteFrames_fn(uObject* frames, float* tension, float* bias, float* continuity, double* __retval)
 {
     *__retval = Keyframe::CompleteFrames(frames, *tension, *bias, *continuity);
 }
 
-// public float get_DegreesX() :1391
+// public float get_DegreesX() :1587
 void Keyframe__get_DegreesX_fn(Keyframe* __this, float* __retval)
 {
     *__retval = __this->DegreesX();
 }
 
-// public void set_DegreesX(float value) :1392
+// public void set_DegreesX(float value) :1588
 void Keyframe__set_DegreesX_fn(Keyframe* __this, float* value)
 {
     __this->DegreesX(*value);
 }
 
-// public float2 get_DegreesXY() :1409
+// public float2 get_DegreesXY() :1605
 void Keyframe__get_DegreesXY_fn(Keyframe* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->DegreesXY();
 }
 
-// public void set_DegreesXY(float2 value) :1410
+// public void set_DegreesXY(float2 value) :1606
 void Keyframe__set_DegreesXY_fn(Keyframe* __this, ::g::Uno::Float2* value)
 {
     __this->DegreesXY(*value);
 }
 
-// public float get_DegreesY() :1397
+// public float get_DegreesY() :1593
 void Keyframe__get_DegreesY_fn(Keyframe* __this, float* __retval)
 {
     *__retval = __this->DegreesY();
 }
 
-// public void set_DegreesY(float value) :1398
+// public void set_DegreesY(float value) :1594
 void Keyframe__set_DegreesY_fn(Keyframe* __this, float* value)
 {
     __this->DegreesY(*value);
 }
 
-// public float get_DegreesZ() :1403
+// public float get_DegreesZ() :1599
 void Keyframe__get_DegreesZ_fn(Keyframe* __this, float* __retval)
 {
     *__retval = __this->DegreesZ();
 }
 
-// public void set_DegreesZ(float value) :1404
+// public void set_DegreesZ(float value) :1600
 void Keyframe__set_DegreesZ_fn(Keyframe* __this, float* value)
 {
     __this->DegreesZ(*value);
 }
 
-// public generated Keyframe New() :1343
+// public generated Keyframe New() :1539
 void Keyframe__New1_fn(Keyframe** __retval)
 {
     *__retval = Keyframe::New1();
 }
 
-// public object get_ObjectValue() :1355
+// public object get_ObjectValue() :1551
 void Keyframe__get_ObjectValue_fn(Keyframe* __this, uObject** __retval)
 {
     *__retval = __this->ObjectValue();
 }
 
-// public void set_ObjectValue(object value) :1356
+// public void set_ObjectValue(object value) :1552
 void Keyframe__set_ObjectValue_fn(Keyframe* __this, uObject* value)
 {
     __this->ObjectValue(value);
 }
 
-// public float4 get_TangentIn() :1442
+// public float4 get_TangentIn() :1638
 void Keyframe__get_TangentIn_fn(Keyframe* __this, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->TangentIn();
 }
 
-// public void set_TangentIn(float4 value) :1443
+// public void set_TangentIn(float4 value) :1639
 void Keyframe__set_TangentIn_fn(Keyframe* __this, ::g::Uno::Float4* value)
 {
     __this->TangentIn(*value);
 }
 
-// public float4 get_TangentOut() :1452
+// public float4 get_TangentOut() :1648
 void Keyframe__get_TangentOut_fn(Keyframe* __this, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->TangentOut();
 }
 
-// public void set_TangentOut(float4 value) :1453
+// public void set_TangentOut(float4 value) :1649
 void Keyframe__set_TangentOut_fn(Keyframe* __this, ::g::Uno::Float4* value)
 {
     __this->TangentOut(*value);
 }
 
-// public double get_Time() :1430
+// public double get_Time() :1626
 void Keyframe__get_Time_fn(Keyframe* __this, double* __retval)
 {
     *__retval = __this->Time();
 }
 
-// public void set_Time(double value) :1431
+// public void set_Time(double value) :1627
 void Keyframe__set_Time_fn(Keyframe* __this, double* value)
 {
     __this->Time(*value);
 }
 
-// public double get_TimeDelta() :1418
+// public double get_TimeDelta() :1614
 void Keyframe__get_TimeDelta_fn(Keyframe* __this, double* __retval)
 {
     *__retval = __this->TimeDelta();
 }
 
-// public void set_TimeDelta(double value) :1419
+// public void set_TimeDelta(double value) :1615
 void Keyframe__set_TimeDelta_fn(Keyframe* __this, double* value)
 {
     __this->TimeDelta(*value);
 }
 
-// public float4 get_Value() :1348
+// public float4 get_Value() :1544
 void Keyframe__get_Value_fn(Keyframe* __this, ::g::Uno::Float4* __retval)
 {
     *__retval = __this->Value();
 }
 
-// public void set_Value(float4 value) :1349
+// public void set_Value(float4 value) :1545
 void Keyframe__set_Value_fn(Keyframe* __this, ::g::Uno::Float4* value)
 {
     __this->Value(*value);
 }
 
-// public float get_X() :1361
+// public float get_X() :1557
 void Keyframe__get_X_fn(Keyframe* __this, float* __retval)
 {
     *__retval = __this->X();
 }
 
-// public void set_X(float value) :1362
+// public void set_X(float value) :1558
 void Keyframe__set_X_fn(Keyframe* __this, float* value)
 {
     __this->X(*value);
 }
 
-// public float2 get_XY() :1379
+// public float2 get_XY() :1575
 void Keyframe__get_XY_fn(Keyframe* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->XY();
 }
 
-// public void set_XY(float2 value) :1380
+// public void set_XY(float2 value) :1576
 void Keyframe__set_XY_fn(Keyframe* __this, ::g::Uno::Float2* value)
 {
     __this->XY(*value);
 }
 
-// public float3 get_XYZ() :1385
+// public float3 get_XYZ() :1581
 void Keyframe__get_XYZ_fn(Keyframe* __this, ::g::Uno::Float3* __retval)
 {
     *__retval = __this->XYZ();
 }
 
-// public void set_XYZ(float3 value) :1386
+// public void set_XYZ(float3 value) :1582
 void Keyframe__set_XYZ_fn(Keyframe* __this, ::g::Uno::Float3* value)
 {
     __this->XYZ(*value);
 }
 
-// public float get_Y() :1367
+// public float get_Y() :1563
 void Keyframe__get_Y_fn(Keyframe* __this, float* __retval)
 {
     *__retval = __this->Y();
 }
 
-// public void set_Y(float value) :1368
+// public void set_Y(float value) :1564
 void Keyframe__set_Y_fn(Keyframe* __this, float* value)
 {
     __this->Y(*value);
 }
 
-// public float get_Z() :1373
+// public float get_Z() :1569
 void Keyframe__get_Z_fn(Keyframe* __this, float* __retval)
 {
     *__retval = __this->Z();
 }
 
-// public void set_Z(float value) :1374
+// public void set_Z(float value) :1570
 void Keyframe__set_Z_fn(Keyframe* __this, float* value)
 {
     __this->Z(*value);
 }
 
-// public generated Keyframe() [instance] :1343
+// public generated Keyframe() [instance] :1539
 void Keyframe::ctor_()
 {
 }
 
-// public float get_DegreesX() [instance] :1391
+// public float get_DegreesX() [instance] :1587
 float Keyframe::DegreesX()
 {
     return ::g::Uno::Math::RadiansToDegrees1(_value.X);
 }
 
-// public void set_DegreesX(float value) [instance] :1392
+// public void set_DegreesX(float value) [instance] :1588
 void Keyframe::DegreesX(float value)
 {
     _value.X = ::g::Uno::Math::DegreesToRadians1(value);
 }
 
-// public float2 get_DegreesXY() [instance] :1409
+// public float2 get_DegreesXY() [instance] :1605
 ::g::Uno::Float2 Keyframe::DegreesXY()
 {
     return ::g::Uno::Float2__New2(::g::Uno::Math::RadiansToDegrees1(_value.X), ::g::Uno::Math::RadiansToDegrees1(_value.Y));
 }
 
-// public void set_DegreesXY(float2 value) [instance] :1410
+// public void set_DegreesXY(float2 value) [instance] :1606
 void Keyframe::DegreesXY(::g::Uno::Float2 value)
 {
     _value = ::g::Uno::Float4__New2(::g::Uno::Math::DegreesToRadians1(value.X), ::g::Uno::Math::DegreesToRadians1(value.Y), _value.Z, _value.W);
 }
 
-// public float get_DegreesY() [instance] :1397
+// public float get_DegreesY() [instance] :1593
 float Keyframe::DegreesY()
 {
     return ::g::Uno::Math::RadiansToDegrees1(_value.Y);
 }
 
-// public void set_DegreesY(float value) [instance] :1398
+// public void set_DegreesY(float value) [instance] :1594
 void Keyframe::DegreesY(float value)
 {
     _value.Y = ::g::Uno::Math::DegreesToRadians1(value);
 }
 
-// public float get_DegreesZ() [instance] :1403
+// public float get_DegreesZ() [instance] :1599
 float Keyframe::DegreesZ()
 {
     return ::g::Uno::Math::RadiansToDegrees1(_value.Z);
 }
 
-// public void set_DegreesZ(float value) [instance] :1404
+// public void set_DegreesZ(float value) [instance] :1600
 void Keyframe::DegreesZ(float value)
 {
     _value.Z = ::g::Uno::Math::DegreesToRadians1(value);
 }
 
-// public object get_ObjectValue() [instance] :1355
+// public object get_ObjectValue() [instance] :1551
 uObject* Keyframe::ObjectValue()
 {
     return _objectValue;
 }
 
-// public void set_ObjectValue(object value) [instance] :1356
+// public void set_ObjectValue(object value) [instance] :1552
 void Keyframe::ObjectValue(uObject* value)
 {
     _objectValue = value;
 }
 
-// public float4 get_TangentIn() [instance] :1442
+// public float4 get_TangentIn() [instance] :1638
 ::g::Uno::Float4 Keyframe::TangentIn()
 {
     return _tangentIn;
 }
 
-// public void set_TangentIn(float4 value) [instance] :1443
+// public void set_TangentIn(float4 value) [instance] :1639
 void Keyframe::TangentIn(::g::Uno::Float4 value)
 {
     _tangentIn = value;
     _hasTangentIn = true;
 }
 
-// public float4 get_TangentOut() [instance] :1452
+// public float4 get_TangentOut() [instance] :1648
 ::g::Uno::Float4 Keyframe::TangentOut()
 {
     return _tangentOut;
 }
 
-// public void set_TangentOut(float4 value) [instance] :1453
+// public void set_TangentOut(float4 value) [instance] :1649
 void Keyframe::TangentOut(::g::Uno::Float4 value)
 {
     _tangentOut = value;
     _hasTangentOut = true;
 }
 
-// public double get_Time() [instance] :1430
+// public double get_Time() [instance] :1626
 double Keyframe::Time()
 {
     return _time;
 }
 
-// public void set_Time(double value) [instance] :1431
+// public void set_Time(double value) [instance] :1627
 void Keyframe::Time(double value)
 {
     _time = value;
     _hasTime = true;
 }
 
-// public double get_TimeDelta() [instance] :1418
+// public double get_TimeDelta() [instance] :1614
 double Keyframe::TimeDelta()
 {
     return _timeDelta;
 }
 
-// public void set_TimeDelta(double value) [instance] :1419
+// public void set_TimeDelta(double value) [instance] :1615
 void Keyframe::TimeDelta(double value)
 {
     _timeDelta = value;
     _hasTimeDelta = true;
 }
 
-// public float4 get_Value() [instance] :1348
+// public float4 get_Value() [instance] :1544
 ::g::Uno::Float4 Keyframe::Value()
 {
     return _value;
 }
 
-// public void set_Value(float4 value) [instance] :1349
+// public void set_Value(float4 value) [instance] :1545
 void Keyframe::Value(::g::Uno::Float4 value)
 {
     _value = value;
 }
 
-// public float get_X() [instance] :1361
+// public float get_X() [instance] :1557
 float Keyframe::X()
 {
     return _value.X;
 }
 
-// public void set_X(float value) [instance] :1362
+// public void set_X(float value) [instance] :1558
 void Keyframe::X(float value)
 {
     _value.X = value;
 }
 
-// public float2 get_XY() [instance] :1379
+// public float2 get_XY() [instance] :1575
 ::g::Uno::Float2 Keyframe::XY()
 {
     ::g::Uno::Float4 ind1 = _value;
     return ::g::Uno::Float2__New2(ind1.X, ind1.Y);
 }
 
-// public void set_XY(float2 value) [instance] :1380
+// public void set_XY(float2 value) [instance] :1576
 void Keyframe::XY(::g::Uno::Float2 value)
 {
     _value = ::g::Uno::Float4__New6(value, _value.Z, _value.W);
 }
 
-// public float3 get_XYZ() [instance] :1385
+// public float3 get_XYZ() [instance] :1581
 ::g::Uno::Float3 Keyframe::XYZ()
 {
     ::g::Uno::Float4 ind2 = _value;
     return ::g::Uno::Float3__New2(ind2.X, ind2.Y, ind2.Z);
 }
 
-// public void set_XYZ(float3 value) [instance] :1386
+// public void set_XYZ(float3 value) [instance] :1582
 void Keyframe::XYZ(::g::Uno::Float3 value)
 {
     _value = ::g::Uno::Float4__New8(value, _value.W);
 }
 
-// public float get_Y() [instance] :1367
+// public float get_Y() [instance] :1563
 float Keyframe::Y()
 {
     return _value.Y;
 }
 
-// public void set_Y(float value) [instance] :1368
+// public void set_Y(float value) [instance] :1564
 void Keyframe::Y(float value)
 {
     _value.Y = value;
 }
 
-// public float get_Z() [instance] :1373
+// public float get_Z() [instance] :1569
 float Keyframe::Z()
 {
     return _value.Z;
 }
 
-// public void set_Z(float value) [instance] :1374
+// public void set_Z(float value) [instance] :1570
 void Keyframe::Z(float value)
 {
     _value.Z = value;
 }
 
-// internal static double CompleteFrames(Uno.Collections.IList<Fuse.Animations.Keyframe> frames, float tension, float bias, float continuity) [static] :1474
+// internal static double CompleteFrames(Uno.Collections.IList<Fuse.Animations.Keyframe> frames, float tension, float bias, float continuity) [static] :1670
 double Keyframe::CompleteFrames(uObject* frames, float tension, float bias, float continuity)
 {
     uStackFrame __("Fuse.Animations.Keyframe", "CompleteFrames(Uno.Collections.IList<Fuse.Animations.Keyframe>,float,float,float)");
@@ -6775,12 +7087,12 @@ double Keyframe::CompleteFrames(uObject* frames, float tension, float bias, floa
     Keyframe* ret7;
     double time = 0.0;
 
-    for (int i = 0; i < ::g::Uno::Collections::ICollection::Count(uInterface(uPtr(frames), ::TYPES[51/*Uno.Collections.ICollection<Fuse.Animations.Keyframe>*/])); ++i)
+    for (int i = 0; i < ::g::Uno::Collections::ICollection::Count(uInterface(uPtr(frames), ::TYPES[52/*Uno.Collections.ICollection<Fuse.Animations.Keyframe>*/])); ++i)
     {
-        Keyframe* prev = (::g::Uno::Collections::IList::get_Item_ex(uInterface(uPtr(frames), ::TYPES[52/*Uno.Collections.IList<Fuse.Animations.Keyframe>*/]), uCRef<int>(::g::Uno::Math::Max8(0, i - 1)), &ret4), ret4);
-        Keyframe* frame = (::g::Uno::Collections::IList::get_Item_ex(uInterface(frames, ::TYPES[52/*Uno.Collections.IList<Fuse.Animations.Keyframe>*/]), uCRef<int>(i), &ret5), ret5);
-        Keyframe* next = (::g::Uno::Collections::IList::get_Item_ex(uInterface(frames, ::TYPES[52/*Uno.Collections.IList<Fuse.Animations.Keyframe>*/]), uCRef<int>(::g::Uno::Math::Min8(::g::Uno::Collections::ICollection::Count(uInterface(frames, ::TYPES[51/*Uno.Collections.ICollection<Fuse.Animations.Keyframe>*/])) - 1, i + 1)), &ret6), ret6);
-        Keyframe* next2 = (::g::Uno::Collections::IList::get_Item_ex(uInterface(frames, ::TYPES[52/*Uno.Collections.IList<Fuse.Animations.Keyframe>*/]), uCRef<int>(::g::Uno::Math::Min8(::g::Uno::Collections::ICollection::Count(uInterface(frames, ::TYPES[51/*Uno.Collections.ICollection<Fuse.Animations.Keyframe>*/])) - 1, i + 2)), &ret7), ret7);
+        Keyframe* prev = (::g::Uno::Collections::IList::get_Item_ex(uInterface(uPtr(frames), ::TYPES[53/*Uno.Collections.IList<Fuse.Animations.Keyframe>*/]), uCRef<int>(::g::Uno::Math::Max8(0, i - 1)), &ret4), ret4);
+        Keyframe* frame = (::g::Uno::Collections::IList::get_Item_ex(uInterface(frames, ::TYPES[53/*Uno.Collections.IList<Fuse.Animations.Keyframe>*/]), uCRef<int>(i), &ret5), ret5);
+        Keyframe* next = (::g::Uno::Collections::IList::get_Item_ex(uInterface(frames, ::TYPES[53/*Uno.Collections.IList<Fuse.Animations.Keyframe>*/]), uCRef<int>(::g::Uno::Math::Min8(::g::Uno::Collections::ICollection::Count(uInterface(frames, ::TYPES[52/*Uno.Collections.ICollection<Fuse.Animations.Keyframe>*/])) - 1, i + 1)), &ret6), ret6);
+        Keyframe* next2 = (::g::Uno::Collections::IList::get_Item_ex(uInterface(frames, ::TYPES[53/*Uno.Collections.IList<Fuse.Animations.Keyframe>*/]), uCRef<int>(::g::Uno::Math::Min8(::g::Uno::Collections::ICollection::Count(uInterface(frames, ::TYPES[52/*Uno.Collections.ICollection<Fuse.Animations.Keyframe>*/])) - 1, i + 2)), &ret7), ret7);
 
         if (uPtr(frame)->_hasTime)
         {
@@ -6811,7 +7123,7 @@ double Keyframe::CompleteFrames(uObject* frames, float tension, float bias, floa
     return time;
 }
 
-// public generated Keyframe New() [static] :1343
+// public generated Keyframe New() [static] :1539
 Keyframe* Keyframe::New1()
 {
     Keyframe* obj3 = (Keyframe*)uNew(Keyframe_typeof());
@@ -6820,10 +7132,10 @@ Keyframe* Keyframe::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public enum KeyframeInterpolation :2944
+// public enum KeyframeInterpolation :3148
 uEnumType* KeyframeInterpolation_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -6838,10 +7150,10 @@ uEnumType* KeyframeInterpolation_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract interface KeyframeTrack :3144
+// internal abstract interface KeyframeTrack :3350
 // {
 uInterfaceType* KeyframeTrack_typeof()
 {
@@ -6853,10 +7165,10 @@ uInterfaceType* KeyframeTrack_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.LinearImpl :496
+// internal sealed class Easing.LinearImpl :651
 // {
 static void Easing__LinearImpl_build(uType* type)
 {
@@ -6878,32 +7190,32 @@ static void Easing__LinearImpl_build(uType* type)
     return type;
 }
 
-// public generated LinearImpl() :496
+// public generated LinearImpl() :651
 void Easing__LinearImpl__ctor_1_fn(Easing__LinearImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :498
+// public override sealed double Map(double k) :653
 void Easing__LinearImpl__Map_fn(Easing__LinearImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = k_, void();
 }
 
-// public generated LinearImpl New() :496
+// public generated LinearImpl New() :651
 void Easing__LinearImpl__New1_fn(Easing__LinearImpl** __retval)
 {
     *__retval = Easing__LinearImpl::New1();
 }
 
-// public generated LinearImpl() [instance] :496
+// public generated LinearImpl() [instance] :651
 void Easing__LinearImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated LinearImpl New() [static] :496
+// public generated LinearImpl New() [static] :651
 Easing__LinearImpl* Easing__LinearImpl::New1()
 {
     Easing__LinearImpl* obj1 = (Easing__LinearImpl*)uNew(Easing__LinearImpl_typeof());
@@ -6912,12 +7224,12 @@ Easing__LinearImpl* Easing__LinearImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract class MasterBase<T> :1613
+// internal abstract class MasterBase<T> :1809
 // {
-// ~MasterBase() :1621
+// ~MasterBase() :1817
 static void MasterBase__Finalize_fn(MasterBase* __this)
 {
 }
@@ -6925,9 +7237,9 @@ static void MasterBase__Finalize_fn(MasterBase* __this)
 static void MasterBase_build(uType* type)
 {
     ::STRINGS[8] = uString::Const("Attempt to register in inactive Master");
-    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
+    ::STRINGS[2] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno");
     ::STRINGS[9] = uString::Const("Register");
-    ::TYPES[53] = ::g::Uno::Collections::List_typeof();
+    ::TYPES[54] = ::g::Uno::Collections::List_typeof();
     ::TYPES[2] = ::g::Uno::Action_typeof();
     type->SetPrecalc(
         ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Animations::MixerHandle_typeof()->MakeType(type->T(0), NULL), NULL));
@@ -6937,7 +7249,7 @@ static void MasterBase_build(uType* type)
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Animations::MasterBase, _inactive), 0,
         ::g::Fuse::Animations::MixerBase_typeof(), offsetof(::g::Fuse::Animations::MasterBase, _mixerBase), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Animations::MasterBase, DirtyValue), 0,
-        ::TYPES[53/*Uno.Collections.List`1*/]->MakeType(::g::Fuse::Animations::MixerHandle_typeof()->MakeType(type->T(0), NULL), NULL), offsetof(::g::Fuse::Animations::MasterBase, Handles), 0);
+        ::TYPES[54/*Uno.Collections.List`1*/]->MakeType(::g::Fuse::Animations::MixerHandle_typeof()->MakeType(type->T(0), NULL), NULL), offsetof(::g::Fuse::Animations::MasterBase, Handles), 0);
 }
 
 MasterBase_type* MasterBase_typeof()
@@ -6959,48 +7271,48 @@ MasterBase_type* MasterBase_typeof()
     return type;
 }
 
-// protected MasterBase([Fuse.Animations.MixerBase mixerBase]) :1616
+// protected MasterBase([Fuse.Animations.MixerBase mixerBase]) :1812
 void MasterBase__ctor__fn(MasterBase* __this, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     __this->ctor_(mixerBase);
 }
 
-// private void Complete() :1667
+// private void Complete() :1863
 void MasterBase__Complete_fn(MasterBase* __this)
 {
     __this->Complete();
 }
 
-// protected Fuse.Animations.MasterBase<T>.GFWResult GetFullWeight() :1702
+// protected Fuse.Animations.MasterBase<T>.GFWResult GetFullWeight() :1898
 void MasterBase__GetFullWeight_fn(MasterBase* __this, MasterBase__GFWResult* __retval)
 {
     *__retval = __this->GetFullWeight();
 }
 
-// public void MarkDirty() :1681
+// public void MarkDirty() :1877
 void MasterBase__MarkDirty_fn(MasterBase* __this)
 {
     __this->MarkDirty();
 }
 
-// protected virtual void OnActive() :1664
+// protected virtual void OnActive() :1860
 void MasterBase__OnActive_fn(MasterBase* __this)
 {
 }
 
-// public void Register(Fuse.Animations.MixerHandle<T> handle) :1632
+// public void Register(Fuse.Animations.MixerHandle<T> handle) :1828
 void MasterBase__Register_fn(MasterBase* __this, ::g::Fuse::Animations::MixerHandle* handle)
 {
     __this->Register(handle);
 }
 
-// public void Unregister(Fuse.Animations.MixerHandle<T> handle) :1648
+// public void Unregister(Fuse.Animations.MixerHandle<T> handle) :1844
 void MasterBase__Unregister_fn(MasterBase* __this, ::g::Fuse::Animations::MixerHandle* handle)
 {
     __this->Unregister(handle);
 }
 
-// protected MasterBase([Fuse.Animations.MixerBase mixerBase]) [instance] :1616
+// protected MasterBase([Fuse.Animations.MixerBase mixerBase]) [instance] :1812
 void MasterBase::ctor_(::g::Fuse::Animations::MixerBase* mixerBase)
 {
     uType* __types[] = {
@@ -7010,7 +7322,7 @@ void MasterBase::ctor_(::g::Fuse::Animations::MixerBase* mixerBase)
     _mixerBase = mixerBase;
 }
 
-// private void Complete() [instance] :1667
+// private void Complete() [instance] :1863
 void MasterBase::Complete()
 {
     uStackFrame __("Fuse.Animations.MasterBase`1", "Complete()");
@@ -7026,7 +7338,7 @@ void MasterBase::Complete()
     OnComplete();
 }
 
-// protected Fuse.Animations.MasterBase<T>.GFWResult GetFullWeight() [instance] :1702
+// protected Fuse.Animations.MasterBase<T>.GFWResult GetFullWeight() [instance] :1898
 MasterBase__GFWResult MasterBase::GetFullWeight()
 {
     uStackFrame __("Fuse.Animations.MasterBase`1", "GetFullWeight()");
@@ -7051,7 +7363,7 @@ MasterBase__GFWResult MasterBase::GetFullWeight()
     return collection1;
 }
 
-// public void MarkDirty() [instance] :1681
+// public void MarkDirty() [instance] :1877
 void MasterBase::MarkDirty()
 {
     uStackFrame __("Fuse.Animations.MasterBase`1", "MarkDirty()");
@@ -7070,7 +7382,7 @@ void MasterBase::MarkDirty()
     ::g::Fuse::UpdateManager::AddDeferredAction(uDelegate::New(::TYPES[2/*Uno.Action*/], (void*)MasterBase__Complete_fn, this), -1, 0);
 }
 
-// public void Register(Fuse.Animations.MixerHandle<T> handle) [instance] :1632
+// public void Register(Fuse.Animations.MixerHandle<T> handle) [instance] :1828
 void MasterBase::Register(::g::Fuse::Animations::MixerHandle* handle)
 {
     uStackFrame __("Fuse.Animations.MasterBase`1", "Register(Fuse.Animations.MixerHandle<T>)");
@@ -7078,7 +7390,7 @@ void MasterBase::Register(::g::Fuse::Animations::MixerHandle* handle)
 
     if (_inactive)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[8/*"Attempt to ...*/], this, ::STRINGS[2/*"/Users/eric...*/], 1636, ::STRINGS[9/*"Register"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[8/*"Attempt to ...*/], this, ::STRINGS[2/*"/usr/local/...*/], 1832, ::STRINGS[9/*"Register"*/]);
         return;
     }
 
@@ -7093,7 +7405,7 @@ void MasterBase::Register(::g::Fuse::Animations::MixerHandle* handle)
         OnActive();
 }
 
-// public void Unregister(Fuse.Animations.MixerHandle<T> handle) [instance] :1648
+// public void Unregister(Fuse.Animations.MixerHandle<T> handle) [instance] :1844
 void MasterBase::Unregister(::g::Fuse::Animations::MixerHandle* handle)
 {
     uStackFrame __("Fuse.Animations.MasterBase`1", "Unregister(Fuse.Animations.MixerHandle<T>)");
@@ -7112,17 +7424,17 @@ void MasterBase::Unregister(::g::Fuse::Animations::MixerHandle* handle)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract class MasterProperty<T> :1729
+// internal abstract class MasterProperty<T> :1925
 // {
 static void MasterProperty_build(uType* type)
 {
     ::STRINGS[10] = uString::Const("The property ");
     ::STRINGS[11] = uString::Const(" of ");
     ::STRINGS[12] = uString::Const(" cannot be reliably animated because it does not provide an origin-setter. Animating this property may lead to visual glitches or inconsistencies.");
-    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
+    ::STRINGS[2] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno");
     ::STRINGS[13] = uString::Const("GiveOriginSetterWarning");
     type->SetBase(::g::Fuse::Animations::MasterBase_typeof()->MakeType(type->T(0), NULL));
     type->SetPrecalc(
@@ -7163,25 +7475,25 @@ MasterProperty_type* MasterProperty_typeof()
     return type;
 }
 
-// protected MasterProperty(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) :1734
+// protected MasterProperty(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) :1930
 void MasterProperty__ctor_1_fn(MasterProperty* __this, ::g::Uno::UX::Property1* property, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     __this->ctor_1(property, mixerBase);
 }
 
-// public object GetPropertyObject() :1732
+// public object GetPropertyObject() :1928
 void MasterProperty__GetPropertyObject_fn(MasterProperty* __this, uObject** __retval)
 {
     *__retval = __this->GetPropertyObject();
 }
 
-// private void GiveOriginSetterWarning() :1788
+// private void GiveOriginSetterWarning() :1984
 void MasterProperty__GiveOriginSetterWarning_fn(MasterProperty* __this)
 {
     __this->GiveOriginSetterWarning();
 }
 
-// protected override void OnActive() :1750
+// protected override void OnActive() :1946
 void MasterProperty__OnActive_fn(MasterProperty* __this)
 {
     uType* __types[] = {
@@ -7198,7 +7510,7 @@ void MasterProperty__OnActive_fn(MasterProperty* __this)
     }
 }
 
-// protected override sealed void OnInactive() :1760
+// protected override sealed void OnInactive() :1956
 void MasterProperty__OnInactive_fn(MasterProperty* __this)
 {
     uType* __types[] = {
@@ -7215,13 +7527,13 @@ void MasterProperty__OnInactive_fn(MasterProperty* __this)
     }
 }
 
-// public override sealed T get_RestValue() :1743
+// public override sealed T get_RestValue() :1939
 void MasterProperty__get_RestValue_fn(MasterProperty* __this, uTRef __retval)
 {
     return __retval.Store(__this->_restValue()), void();
 }
 
-// protected void Set(T value) :1800
+// protected void Set(T value) :1996
 void MasterProperty__Set_fn(MasterProperty* __this, void* value)
 {
     uStackFrame __("Fuse.Animations.MasterProperty`1", "Set(T)");
@@ -7234,7 +7546,7 @@ void MasterProperty__Set_fn(MasterProperty* __this, void* value)
     ::g::Uno::UX::Property1__Set_fn(uPtr(__this->Property), value, (uObject*)__this);
 }
 
-// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector property) :1770
+// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector property) :1966
 void MasterProperty__UnoUXIPropertyListenerOnPropertyChanged_fn(MasterProperty* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Selector* property)
 {
     uType* __types[] = {
@@ -7259,20 +7571,20 @@ void MasterProperty__UnoUXIPropertyListenerOnPropertyChanged_fn(MasterProperty* 
     }
 }
 
-// protected MasterProperty(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) [instance] :1734
+// protected MasterProperty(Uno.UX.Property<T> property, Fuse.Animations.MixerBase mixerBase) [instance] :1930
 void MasterProperty::ctor_1(::g::Uno::UX::Property1* property, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     ctor_(mixerBase);
     Property = property;
 }
 
-// public object GetPropertyObject() [instance] :1732
+// public object GetPropertyObject() [instance] :1928
 uObject* MasterProperty::GetPropertyObject()
 {
     return Property;
 }
 
-// private void GiveOriginSetterWarning() [instance] :1788
+// private void GiveOriginSetterWarning() [instance] :1984
 void MasterProperty::GiveOriginSetterWarning()
 {
     uStackFrame __("Fuse.Animations.MasterProperty`1", "GiveOriginSetterWarning()");
@@ -7280,15 +7592,15 @@ void MasterProperty::GiveOriginSetterWarning()
     if (!_warningGiven)
     {
         _warningGiven = true;
-        ::g::Fuse::Diagnostics::UserWarning(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[10/*"The property "*/], ::g::Uno::UX::Selector__op_Implicit1(uPtr(Property)->Name())), ::STRINGS[11/*" of "*/]), uPtr(Property)->Object()), ::STRINGS[12/*" cannot be ...*/]), this, ::STRINGS[2/*"/Users/eric...*/], 1793, ::STRINGS[13/*"GiveOriginS...*/]);
+        ::g::Fuse::Diagnostics::UserWarning(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[10/*"The property "*/], ::g::Uno::UX::Selector__op_Implicit1(uPtr(Property)->Name())), ::STRINGS[11/*" of "*/]), uPtr(Property)->Object()), ::STRINGS[12/*" cannot be ...*/]), this, ::STRINGS[2/*"/usr/local/...*/], 1989, ::STRINGS[13/*"GiveOriginS...*/]);
     }
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract interface MasterPropertyGet :1725
+// internal abstract interface MasterPropertyGet :1921
 // {
 uInterfaceType* MasterPropertyGet_typeof()
 {
@@ -7300,12 +7612,12 @@ uInterfaceType* MasterPropertyGet_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract class MasterTransform :1846
+// internal abstract class MasterTransform :2043
 // {
-// static MasterTransform() :1846
+// static MasterTransform() :2043
 static void MasterTransform__cctor__fn(uType* __type)
 {
     MasterTransform::identity_ = ::g::Fuse::Translation::New2();
@@ -7313,7 +7625,7 @@ static void MasterTransform__cctor__fn(uType* __type)
 
 static void MasterTransform_build(uType* type)
 {
-    ::TYPES[54] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
+    ::TYPES[55] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
     type->SetBase(::g::Fuse::Animations::MasterBase_typeof()->MakeType(::g::Fuse::Transform_typeof(), NULL));
     type->SetInterfaces(
         ::g::Fuse::Animations::IMixerMaster_typeof(), offsetof(::g::Fuse::Animations::MasterBase_type, interface0));
@@ -7343,30 +7655,30 @@ static void MasterTransform_build(uType* type)
     return type;
 }
 
-// protected MasterTransform(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) :1851
+// protected MasterTransform(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) :2048
 void MasterTransform__ctor_1_fn(MasterTransform* __this, ::g::Fuse::Visual* node, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     __this->ctor_1(node, mixerBase);
 }
 
-// protected override sealed void OnActive() :1858
+// protected override sealed void OnActive() :2055
 void MasterTransform__OnActive_fn(MasterTransform* __this)
 {
     uStackFrame __("Fuse.Animations.MasterTransform", "OnActive()");
     __this->FMT = ::g::Fuse::Animations::FastMatrixTransform::New2();
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->Visual)->Children()), ::TYPES[54/*Uno.Collections.ICollection<Fuse.Node>*/]), __this->FMT);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->Visual)->Children()), ::TYPES[55/*Uno.Collections.ICollection<Fuse.Node>*/]), __this->FMT);
 }
 
-// protected override sealed void OnInactive() :1864
+// protected override sealed void OnInactive() :2061
 void MasterTransform__OnInactive_fn(MasterTransform* __this)
 {
     uStackFrame __("Fuse.Animations.MasterTransform", "OnInactive()");
     bool ret1;
-    ::g::Uno::Collections::ICollection::Remove_ex(uInterface(uPtr(uPtr(__this->Visual)->Children()), ::TYPES[54/*Uno.Collections.ICollection<Fuse.Node>*/]), __this->FMT, &ret1);
+    ::g::Uno::Collections::ICollection::Remove_ex(uInterface(uPtr(uPtr(__this->Visual)->Children()), ::TYPES[55/*Uno.Collections.ICollection<Fuse.Node>*/]), __this->FMT, &ret1);
     __this->FMT = NULL;
 }
 
-// public override sealed Fuse.Transform get_RestValue() :1873
+// public override sealed Fuse.Transform get_RestValue() :2070
 void MasterTransform__get_RestValue_fn(MasterTransform* __this, ::g::Fuse::Transform** __retval)
 {
     return *__retval = MasterTransform::identity(), void();
@@ -7374,7 +7686,7 @@ void MasterTransform__get_RestValue_fn(MasterTransform* __this, ::g::Fuse::Trans
 
 uSStrong< ::g::Fuse::Transform*> MasterTransform::identity_;
 
-// protected MasterTransform(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) [instance] :1851
+// protected MasterTransform(Fuse.Visual node, Fuse.Animations.MixerBase mixerBase) [instance] :2048
 void MasterTransform::ctor_1(::g::Fuse::Visual* node, ::g::Fuse::Animations::MixerBase* mixerBase)
 {
     ctor_(mixerBase);
@@ -7382,12 +7694,12 @@ void MasterTransform::ctor_1(::g::Fuse::Visual* node, ::g::Fuse::Animations::Mix
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class Mixer :1553
+// internal sealed class Mixer :1749
 // {
-// static Mixer() :1553
+// static Mixer() :1749
 static void Mixer__cctor__fn(uType* __type)
 {
     Mixer::_default_ = (uObject*)::g::Fuse::Animations::AverageMixer::New1();
@@ -7417,25 +7729,25 @@ uType* Mixer_typeof()
     return type;
 }
 
-// public generated Mixer() :1553
+// public generated Mixer() :1749
 void Mixer__ctor__fn(Mixer* __this)
 {
     __this->ctor_();
 }
 
-// public static Fuse.Animations.IMixer get_Default() :1556
+// public static Fuse.Animations.IMixer get_Default() :1752
 void Mixer__get_Default_fn(uObject** __retval)
 {
     *__retval = Mixer::Default();
 }
 
-// public static Fuse.Animations.IMixer get_DefaultDiscrete() :1558
+// public static Fuse.Animations.IMixer get_DefaultDiscrete() :1754
 void Mixer__get_DefaultDiscrete_fn(uObject** __retval)
 {
     *__retval = Mixer::DefaultDiscrete();
 }
 
-// public generated Mixer New() :1553
+// public generated Mixer New() :1749
 void Mixer__New1_fn(Mixer** __retval)
 {
     *__retval = Mixer::New1();
@@ -7444,12 +7756,12 @@ void Mixer__New1_fn(Mixer** __retval)
 uSStrong<uObject*> Mixer::_default_;
 uSStrong<uObject*> Mixer::_defaultDiscrete_;
 
-// public generated Mixer() [instance] :1553
+// public generated Mixer() [instance] :1749
 void Mixer::ctor_()
 {
 }
 
-// public generated Mixer New() [static] :1553
+// public generated Mixer New() [static] :1749
 Mixer* Mixer::New1()
 {
     Mixer* obj1 = (Mixer*)uNew(Mixer_typeof());
@@ -7457,14 +7769,14 @@ Mixer* Mixer::New1()
     return obj1;
 }
 
-// public static Fuse.Animations.IMixer get_Default() [static] :1556
+// public static Fuse.Animations.IMixer get_Default() [static] :1752
 uObject* Mixer::Default()
 {
     Mixer_typeof()->Init();
     return Mixer::_default();
 }
 
-// public static Fuse.Animations.IMixer get_DefaultDiscrete() [static] :1558
+// public static Fuse.Animations.IMixer get_DefaultDiscrete() [static] :1754
 uObject* Mixer::DefaultDiscrete()
 {
     Mixer_typeof()->Init();
@@ -7472,29 +7784,29 @@ uObject* Mixer::DefaultDiscrete()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract class MixerBase :1563
+// internal abstract class MixerBase :1759
 // {
 static void MixerBase_build(uType* type)
 {
-    ::TYPES[55] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(uObject_typeof(), uObject_typeof(), NULL);
-    ::TYPES[56] = ::g::Fuse::Animations::MasterBase_typeof();
-    ::TYPES[57] = ::g::Fuse::Animations::MixerHandle_typeof();
-    ::TYPES[58] = ::TYPES[56/*Fuse.Animations.MasterBase`1*/]->MakeType(::g::Fuse::Transform_typeof(), NULL);
-    ::TYPES[59] = ::TYPES[57/*Fuse.Animations.MixerHandle`1*/]->MakeType(::g::Fuse::Transform_typeof(), NULL);
-    ::TYPES[60] = ::g::Fuse::Animations::MasterPropertyGet_typeof();
-    ::TYPES[61] = ::g::Fuse::Animations::MasterTransform_typeof();
+    ::TYPES[56] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(uObject_typeof(), uObject_typeof(), NULL);
+    ::TYPES[57] = ::g::Fuse::Animations::MasterBase_typeof();
+    ::TYPES[58] = ::g::Fuse::Animations::MixerHandle_typeof();
+    ::TYPES[59] = ::TYPES[57/*Fuse.Animations.MasterBase`1*/]->MakeType(::g::Fuse::Transform_typeof(), NULL);
+    ::TYPES[60] = ::TYPES[58/*Fuse.Animations.MixerHandle`1*/]->MakeType(::g::Fuse::Transform_typeof(), NULL);
+    ::TYPES[61] = ::g::Fuse::Animations::MasterPropertyGet_typeof();
+    ::TYPES[62] = ::g::Fuse::Animations::MasterTransform_typeof();
     type->MethodTypes[1]->SetPrecalc(
         type->MakeMethod(0/*CreateMaster<T>*/, type->MethodTypes[1]->U(0), NULL),
-        ::TYPES[56/*Fuse.Animations.MasterBase`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL),
-        ::TYPES[57/*Fuse.Animations.MixerHandle`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL));
+        ::TYPES[57/*Fuse.Animations.MasterBase`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL),
+        ::TYPES[58/*Fuse.Animations.MixerHandle`1*/]->MakeType(type->MethodTypes[1]->U(0), NULL));
     type->SetInterfaces(
         ::g::Fuse::Animations::IMixer_typeof(), offsetof(MixerBase_type, interface0));
     type->SetFields(0,
         ::g::Fuse::PropertyHandle_typeof(), offsetof(::g::Fuse::Animations::MixerBase, _propHandle), 0,
-        ::TYPES[55/*Uno.Collections.Dictionary<object, object>*/], offsetof(::g::Fuse::Animations::MixerBase, Masters), 0);
+        ::TYPES[56/*Uno.Collections.Dictionary<object, object>*/], offsetof(::g::Fuse::Animations::MixerBase, Masters), 0);
 }
 
 MixerBase_type* MixerBase_typeof()
@@ -7517,38 +7829,38 @@ MixerBase_type* MixerBase_typeof()
     return type;
 }
 
-// protected generated MixerBase() :1563
+// protected generated MixerBase() :1759
 void MixerBase__ctor__fn(MixerBase* __this)
 {
     __this->ctor_();
 }
 
-// public Fuse.Animations.IMixerHandle<T> Register<T>(Uno.UX.Property<T> property, Fuse.Animations.MixOp mode) :1567
+// public Fuse.Animations.IMixerHandle<T> Register<T>(Uno.UX.Property<T> property, Fuse.Animations.MixOp mode) :1763
 void MixerBase__Register_fn(MixerBase* __this, uType* __type, ::g::Uno::UX::Property1* property, int* mode, uObject** __retval)
 {
     *__retval = __this->Register(__type, property, *mode);
 }
 
-// public Fuse.Animations.IMixerHandle<Fuse.Transform> RegisterTransform(Fuse.Visual element, Fuse.Animations.MixOp mode, [int priority]) :1581
+// public Fuse.Animations.IMixerHandle<Fuse.Transform> RegisterTransform(Fuse.Visual element, Fuse.Animations.MixOp mode, [int priority]) :1777
 void MixerBase__RegisterTransform_fn(MixerBase* __this, ::g::Fuse::Visual* element, int* mode, int* priority, uObject** __retval)
 {
     *__retval = __this->RegisterTransform(element, *mode, *priority);
 }
 
-// public void Unused(Fuse.Animations.IMixerMaster mb) :1596
+// public void Unused(Fuse.Animations.IMixerMaster mb) :1792
 void MixerBase__Unused_fn(MixerBase* __this, uObject* mb)
 {
     __this->Unused(mb);
 }
 
-// protected generated MixerBase() [instance] :1563
+// protected generated MixerBase() [instance] :1759
 void MixerBase::ctor_()
 {
-    Masters = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[55/*Uno.Collections.Dictionary<object, object>*/]));
+    Masters = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[56/*Uno.Collections.Dictionary<object, object>*/]));
     _propHandle = ::g::Fuse::Properties::CreateHandle();
 }
 
-// public Fuse.Animations.IMixerHandle<T> Register<T>(Uno.UX.Property<T> property, Fuse.Animations.MixOp mode) [instance] :1567
+// public Fuse.Animations.IMixerHandle<T> Register<T>(Uno.UX.Property<T> property, Fuse.Animations.MixOp mode) [instance] :1763
 uObject* MixerBase::Register(uType* __type, ::g::Uno::UX::Property1* property, int mode)
 {
     __type = MixerBase_typeof()->GetVirtual(1, __type);
@@ -7571,7 +7883,7 @@ uObject* MixerBase::Register(uType* __type, ::g::Uno::UX::Property1* property, i
     return (uObject*)((::g::Fuse::Animations::MixerHandle*)::g::Fuse::Animations::MixerHandle::New1(__types[2], masterT, mode, 0));
 }
 
-// public Fuse.Animations.IMixerHandle<Fuse.Transform> RegisterTransform(Fuse.Visual element, Fuse.Animations.MixOp mode, [int priority]) [instance] :1581
+// public Fuse.Animations.IMixerHandle<Fuse.Transform> RegisterTransform(Fuse.Visual element, Fuse.Animations.MixOp mode, [int priority]) [instance] :1777
 uObject* MixerBase::RegisterTransform(::g::Fuse::Visual* element, int mode, int priority)
 {
     uStackFrame __("Fuse.Animations.MixerBase", "RegisterTransform(Fuse.Visual,Fuse.Animations.MixOp,[int])");
@@ -7583,36 +7895,36 @@ uObject* MixerBase::RegisterTransform(::g::Fuse::Visual* element, int mode, int 
         uPtr(uPtr(element)->Properties())->Set(_propHandle, master);
     }
 
-    ::g::Fuse::Animations::MasterBase* masterT = uCast< ::g::Fuse::Animations::MasterBase*>(master, ::TYPES[58/*Fuse.Animations.MasterBase<Fuse.Transform>*/]);
-    return (uObject*)((::g::Fuse::Animations::MixerHandle*)::g::Fuse::Animations::MixerHandle::New1(::TYPES[59/*Fuse.Animations.MixerHandle<Fuse.Transform>*/], masterT, mode, priority));
+    ::g::Fuse::Animations::MasterBase* masterT = uCast< ::g::Fuse::Animations::MasterBase*>(master, ::TYPES[59/*Fuse.Animations.MasterBase<Fuse.Transform>*/]);
+    return (uObject*)((::g::Fuse::Animations::MixerHandle*)::g::Fuse::Animations::MixerHandle::New1(::TYPES[60/*Fuse.Animations.MixerHandle<Fuse.Transform>*/], masterT, mode, priority));
 }
 
-// public void Unused(Fuse.Animations.IMixerMaster mb) [instance] :1596
+// public void Unused(Fuse.Animations.IMixerMaster mb) [instance] :1792
 void MixerBase::Unused(uObject* mb)
 {
     uStackFrame __("Fuse.Animations.MixerBase", "Unused(Fuse.Animations.IMixerMaster)");
     bool ret2;
-    uObject* prop = uAs<uObject*>(mb, ::TYPES[60/*Fuse.Animations.MasterPropertyGet*/]);
+    uObject* prop = uAs<uObject*>(mb, ::TYPES[61/*Fuse.Animations.MasterPropertyGet*/]);
 
     if (prop != NULL)
-        ::g::Uno::Collections::Dictionary__Remove_fn(uPtr(Masters), ::g::Fuse::Animations::MasterPropertyGet::GetPropertyObject(uInterface(uPtr(prop), ::TYPES[60/*Fuse.Animations.MasterPropertyGet*/])), &ret2);
+        ::g::Uno::Collections::Dictionary__Remove_fn(uPtr(Masters), ::g::Fuse::Animations::MasterPropertyGet::GetPropertyObject(uInterface(uPtr(prop), ::TYPES[61/*Fuse.Animations.MasterPropertyGet*/])), &ret2);
 
-    ::g::Fuse::Animations::MasterTransform* trans = uAs< ::g::Fuse::Animations::MasterTransform*>(mb, ::TYPES[61/*Fuse.Animations.MasterTransform*/]);
+    ::g::Fuse::Animations::MasterTransform* trans = uAs< ::g::Fuse::Animations::MasterTransform*>(mb, ::TYPES[62/*Fuse.Animations.MasterTransform*/]);
 
     if (trans != NULL)
         uPtr(uPtr(uPtr(trans)->Visual)->Properties())->Clear(_propHandle);
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class MixerHandle<T> :1877
+// internal sealed class MixerHandle<T> :2074
 // {
 static void MixerHandle_build(uType* type)
 {
     ::STRINGS[14] = uString::Const("invalid MixerHandle.Set post-Unregister");
-    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
+    ::STRINGS[2] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno");
     ::STRINGS[15] = uString::Const("Invalid MixerHandle.RestValue post-Unregister");
     type->SetPrecalc(
         type->T(0));
@@ -7647,49 +7959,49 @@ MixerHandle_type* MixerHandle_typeof()
     return type;
 }
 
-// public MixerHandle(Fuse.Animations.MasterBase<T> master, Fuse.Animations.MixOp mode, int priority) :1890
+// public MixerHandle(Fuse.Animations.MasterBase<T> master, Fuse.Animations.MixOp mode, int priority) :2087
 void MixerHandle__ctor__fn(MixerHandle* __this, ::g::Fuse::Animations::MasterBase* master, int* mode, int* priority)
 {
     __this->ctor_(master, *mode, *priority);
 }
 
-// public bool get_HasValue() :1883
+// public bool get_HasValue() :2080
 void MixerHandle__get_HasValue_fn(MixerHandle* __this, bool* __retval)
 {
     *__retval = __this->HasValue();
 }
 
-// public generated Fuse.Animations.MixOp get_MixOp() :1885
+// public generated Fuse.Animations.MixOp get_MixOp() :2082
 void MixerHandle__get_MixOp_fn(MixerHandle* __this, int* __retval)
 {
     *__retval = __this->MixOp();
 }
 
-// public generated void set_MixOp(Fuse.Animations.MixOp value) :1885
+// public generated void set_MixOp(Fuse.Animations.MixOp value) :2082
 void MixerHandle__set_MixOp_fn(MixerHandle* __this, int* value)
 {
     __this->MixOp(*value);
 }
 
-// public MixerHandle New(Fuse.Animations.MasterBase<T> master, Fuse.Animations.MixOp mode, int priority) :1890
+// public MixerHandle New(Fuse.Animations.MasterBase<T> master, Fuse.Animations.MixOp mode, int priority) :2087
 void MixerHandle__New1_fn(uType* __type, ::g::Fuse::Animations::MasterBase* master, int* mode, int* priority, MixerHandle** __retval)
 {
     *__retval = MixerHandle::New1(__type, master, *mode, *priority);
 }
 
-// public generated int get_Priority() :1887
+// public generated int get_Priority() :2084
 void MixerHandle__get_Priority_fn(MixerHandle* __this, int* __retval)
 {
     *__retval = __this->Priority();
 }
 
-// private generated void set_Priority(int value) :1887
+// private generated void set_Priority(int value) :2084
 void MixerHandle__set_Priority_fn(MixerHandle* __this, int* value)
 {
     __this->Priority(*value);
 }
 
-// public T get_RestValue() :1921
+// public T get_RestValue() :2118
 void MixerHandle__get_RestValue_fn(MixerHandle* __this, uTRef __retval)
 {
     uType* __types[] = {
@@ -7704,7 +8016,7 @@ void MixerHandle__get_RestValue_fn(MixerHandle* __this, uTRef __retval)
     return __retval.Store((uPtr(__this->Master)->get_RestValue_ex(&ret2), ret2)), void();
 }
 
-// public void Set(T value, float strength) :1905
+// public void Set(T value, float strength) :2102
 void MixerHandle__Set_fn(MixerHandle* __this, void* value, float* strength)
 {
     uStackFrame __("Fuse.Animations.MixerHandle`1", "Set(T,float)");
@@ -7712,7 +8024,7 @@ void MixerHandle__Set_fn(MixerHandle* __this, void* value, float* strength)
 
     if (__this->Master == NULL)
     {
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[14/*"invalid Mix...*/], 1, ::STRINGS[2/*"/Users/eric...*/], 1909);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[14/*"invalid Mix...*/], 0, ::STRINGS[2/*"/usr/local/...*/], 2106);
         return;
     }
 
@@ -7722,13 +8034,13 @@ void MixerHandle__Set_fn(MixerHandle* __this, void* value, float* strength)
     uPtr(__this->Master)->MarkDirty();
 }
 
-// public void Unregister() :1898
+// public void Unregister() :2095
 void MixerHandle__Unregister_fn(MixerHandle* __this)
 {
     __this->Unregister();
 }
 
-// public MixerHandle(Fuse.Animations.MasterBase<T> master, Fuse.Animations.MixOp mode, int priority) [instance] :1890
+// public MixerHandle(Fuse.Animations.MasterBase<T> master, Fuse.Animations.MixOp mode, int priority) [instance] :2087
 void MixerHandle::ctor_(::g::Fuse::Animations::MasterBase* master, int mode, int priority)
 {
     uStackFrame __("Fuse.Animations.MixerHandle`1", ".ctor(Fuse.Animations.MasterBase<T>,Fuse.Animations.MixOp,int)");
@@ -7738,37 +8050,37 @@ void MixerHandle::ctor_(::g::Fuse::Animations::MasterBase* master, int mode, int
     uPtr(Master)->Register(this);
 }
 
-// public bool get_HasValue() [instance] :1883
+// public bool get_HasValue() [instance] :2080
 bool MixerHandle::HasValue()
 {
     return _hasValue;
 }
 
-// public generated Fuse.Animations.MixOp get_MixOp() [instance] :1885
+// public generated Fuse.Animations.MixOp get_MixOp() [instance] :2082
 int MixerHandle::MixOp()
 {
     return _MixOp;
 }
 
-// public generated void set_MixOp(Fuse.Animations.MixOp value) [instance] :1885
+// public generated void set_MixOp(Fuse.Animations.MixOp value) [instance] :2082
 void MixerHandle::MixOp(int value)
 {
     _MixOp = value;
 }
 
-// public generated int get_Priority() [instance] :1887
+// public generated int get_Priority() [instance] :2084
 int MixerHandle::Priority()
 {
     return _Priority;
 }
 
-// private generated void set_Priority(int value) [instance] :1887
+// private generated void set_Priority(int value) [instance] :2084
 void MixerHandle::Priority(int value)
 {
     _Priority = value;
 }
 
-// public void Unregister() [instance] :1898
+// public void Unregister() [instance] :2095
 void MixerHandle::Unregister()
 {
     uStackFrame __("Fuse.Animations.MixerHandle`1", "Unregister()");
@@ -7777,7 +8089,7 @@ void MixerHandle::Unregister()
     Master = NULL;
 }
 
-// public MixerHandle New(Fuse.Animations.MasterBase<T> master, Fuse.Animations.MixOp mode, int priority) [static] :1890
+// public MixerHandle New(Fuse.Animations.MasterBase<T> master, Fuse.Animations.MixOp mode, int priority) [static] :2087
 MixerHandle* MixerHandle::New1(uType* __type, ::g::Fuse::Animations::MasterBase* master, int mode, int priority)
 {
     MixerHandle* obj1 = (MixerHandle*)uNew(__type);
@@ -7786,10 +8098,10 @@ MixerHandle* MixerHandle::New1(uType* __type, ::g::Fuse::Animations::MasterBase*
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public enum MixOp :1530
+// public enum MixOp :1726
 uEnumType* MixOp_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -7803,10 +8115,10 @@ uEnumType* MixOp_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public sealed class Move :3688
+// public sealed class Move :3894
 // {
 static void Move_build(uType* type)
 {
@@ -7836,31 +8148,31 @@ static void Move_build(uType* type)
     return type;
 }
 
-// public Move() :3690
+// public Move() :3896
 void Move__ctor_4_fn(Move* __this)
 {
     __this->ctor_4();
 }
 
-// public Move New() :3690
+// public Move New() :3896
 void Move__New2_fn(Move** __retval)
 {
     *__retval = Move::New2();
 }
 
-// public Fuse.ITranslationMode get_RelativeTo() :3717
+// public Fuse.ITranslationMode get_RelativeTo() :3923
 void Move__get_RelativeTo_fn(Move* __this, uObject** __retval)
 {
     *__retval = __this->RelativeTo();
 }
 
-// public void set_RelativeTo(Fuse.ITranslationMode value) :3718
+// public void set_RelativeTo(Fuse.ITranslationMode value) :3924
 void Move__set_RelativeTo_fn(Move* __this, uObject* value)
 {
     __this->RelativeTo(value);
 }
 
-// internal override sealed void Update(Fuse.Visual elm, Fuse.Translation t, float4 value) :3721
+// internal override sealed void Update(Fuse.Visual elm, Fuse.Translation t, float4 value) :3927
 void Move__Update_fn(Move* __this, ::g::Fuse::Visual* elm, ::g::Fuse::Translation* t, ::g::Uno::Float4* value)
 {
     uStackFrame __("Fuse.Animations.Move", "Update(Fuse.Visual,Fuse.Translation,float4)");
@@ -7871,7 +8183,7 @@ void Move__Update_fn(Move* __this, ::g::Fuse::Visual* elm, ::g::Fuse::Translatio
     t->Vector(::g::Uno::Float3__New2(value_.X, value_.Y, value_.Z));
 }
 
-// public Move() [instance] :3690
+// public Move() [instance] :3896
 void Move::ctor_4()
 {
     _relativeTo = ::g::Fuse::TranslationModes::Local();
@@ -7879,19 +8191,19 @@ void Move::ctor_4()
     Priority(1000);
 }
 
-// public Fuse.ITranslationMode get_RelativeTo() [instance] :3717
+// public Fuse.ITranslationMode get_RelativeTo() [instance] :3923
 uObject* Move::RelativeTo()
 {
     return _relativeTo;
 }
 
-// public void set_RelativeTo(Fuse.ITranslationMode value) [instance] :3718
+// public void set_RelativeTo(Fuse.ITranslationMode value) [instance] :3924
 void Move::RelativeTo(uObject* value)
 {
     _relativeTo = value;
 }
 
-// public Move New() [static] :3690
+// public Move New() [static] :3896
 Move* Move::New2()
 {
     Move* obj2 = (Move*)uNew(Move_typeof());
@@ -7900,10 +8212,10 @@ Move* Move::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public sealed class Nothing :1943
+// public sealed class Nothing :2140
 // {
 static void Nothing_build(uType* type)
 {
@@ -7929,32 +8241,32 @@ static void Nothing_build(uType* type)
     return type;
 }
 
-// public generated Nothing() :1943
+// public generated Nothing() :2140
 void Nothing__ctor_3_fn(Nothing* __this)
 {
     __this->ctor_3();
 }
 
-// internal override sealed Fuse.Animations.AnimatorState CreateState(Fuse.Animations.CreateStateParams p) :1945
+// internal override sealed Fuse.Animations.AnimatorState CreateState(Fuse.Animations.CreateStateParams p) :2142
 void Nothing__CreateState_fn(Nothing* __this, ::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse::Animations::AnimatorState** __retval)
 {
     return *__retval = ::g::Fuse::Animations::NothingAnimatorState::New1(__this, p), void();
 }
 
-// public generated Nothing New() :1943
+// public generated Nothing New() :2140
 void Nothing__New2_fn(Nothing** __retval)
 {
     *__retval = Nothing::New2();
 }
 
-// public generated Nothing() [instance] :1943
+// public generated Nothing() [instance] :2140
 void Nothing::ctor_3()
 {
     uStackFrame __("Fuse.Animations.Nothing", ".ctor()");
     ctor_2();
 }
 
-// public generated Nothing New() [static] :1943
+// public generated Nothing New() [static] :2140
 Nothing* Nothing::New2()
 {
     Nothing* obj1 = (Nothing*)uNew(Nothing_typeof());
@@ -7963,10 +8275,10 @@ Nothing* Nothing::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class NothingAnimatorState :1951
+// internal sealed class NothingAnimatorState :2148
 // {
 static void NothingAnimatorState_build(uType* type)
 {
@@ -7988,26 +8300,26 @@ static void NothingAnimatorState_build(uType* type)
     return type;
 }
 
-// public NothingAnimatorState(Fuse.Animations.Nothing animator, Fuse.Animations.CreateStateParams p) :1953
+// public NothingAnimatorState(Fuse.Animations.Nothing animator, Fuse.Animations.CreateStateParams p) :2150
 void NothingAnimatorState__ctor_2_fn(NothingAnimatorState* __this, ::g::Fuse::Animations::Nothing* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     __this->ctor_2(animator, p);
 }
 
-// public NothingAnimatorState New(Fuse.Animations.Nothing animator, Fuse.Animations.CreateStateParams p) :1953
+// public NothingAnimatorState New(Fuse.Animations.Nothing animator, Fuse.Animations.CreateStateParams p) :2150
 void NothingAnimatorState__New1_fn(::g::Fuse::Animations::Nothing* animator, ::g::Fuse::Animations::CreateStateParams* p, NothingAnimatorState** __retval)
 {
     *__retval = NothingAnimatorState::New1(animator, p);
 }
 
-// public NothingAnimatorState(Fuse.Animations.Nothing animator, Fuse.Animations.CreateStateParams p) [instance] :1953
+// public NothingAnimatorState(Fuse.Animations.Nothing animator, Fuse.Animations.CreateStateParams p) [instance] :2150
 void NothingAnimatorState::ctor_2(::g::Fuse::Animations::Nothing* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     uStackFrame __("Fuse.Animations.NothingAnimatorState", ".ctor(Fuse.Animations.Nothing,Fuse.Animations.CreateStateParams)");
     ctor_1(animator, p, NULL);
 }
 
-// public NothingAnimatorState New(Fuse.Animations.Nothing animator, Fuse.Animations.CreateStateParams p) [static] :1953
+// public NothingAnimatorState New(Fuse.Animations.Nothing animator, Fuse.Animations.CreateStateParams p) [static] :2150
 NothingAnimatorState* NothingAnimatorState::New1(::g::Fuse::Animations::Nothing* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     NothingAnimatorState* obj1 = (NothingAnimatorState*)uNew(NothingAnimatorState_typeof());
@@ -8016,10 +8328,10 @@ NothingAnimatorState* NothingAnimatorState::New1(::g::Fuse::Animations::Nothing*
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public abstract class OpenAnimator :1976
+// public abstract class OpenAnimator :2173
 // {
 static void OpenAnimator_build(uType* type)
 {
@@ -8050,86 +8362,86 @@ static void OpenAnimator_build(uType* type)
     return type;
 }
 
-// protected generated OpenAnimator() :1976
+// protected generated OpenAnimator() :2173
 void OpenAnimator__ctor_2_fn(OpenAnimator* __this)
 {
     __this->ctor_2();
 }
 
-// internal override sealed Fuse.Animations.AnimatorVariant get_AnimatorVariant() :1980
+// internal override sealed Fuse.Animations.AnimatorVariant get_AnimatorVariant() :2177
 void OpenAnimator__get_AnimatorVariant_fn(OpenAnimator* __this, int* __retval)
 {
     return *__retval = 1, void();
 }
 
-// public double get_Duration() :1991
+// public double get_Duration() :2188
 void OpenAnimator__get_Duration_fn(OpenAnimator* __this, double* __retval)
 {
     *__retval = __this->Duration();
 }
 
-// public void set_Duration(double value) :1992
+// public void set_Duration(double value) :2189
 void OpenAnimator__set_Duration_fn(OpenAnimator* __this, double* value)
 {
     __this->Duration(*value);
 }
 
-// internal double GetDelay(Fuse.Animations.AnimationVariant dir, double totalDuration) :2013
+// internal double GetDelay(Fuse.Animations.AnimationVariant dir, double totalDuration) :2210
 void OpenAnimator__GetDelay_fn(OpenAnimator* __this, int* dir, double* totalDuration, double* __retval)
 {
     *__retval = __this->GetDelay(*dir, *totalDuration);
 }
 
-// internal override sealed double GetDurationWithDelay(Fuse.Animations.AnimationVariant dir) :2008
+// internal override sealed double GetDurationWithDelay(Fuse.Animations.AnimationVariant dir) :2205
 void OpenAnimator__GetDurationWithDelay_fn(OpenAnimator* __this, int* dir, double* __retval)
 {
     return *__retval = __this->Delay() + __this->Duration(), void();
 }
 
-// public bool get_HasDuration() :2006
+// public bool get_HasDuration() :2203
 void OpenAnimator__get_HasDuration_fn(OpenAnimator* __this, bool* __retval)
 {
     *__retval = __this->HasDuration();
 }
 
-// public void ResetDuration() :1999
+// public void ResetDuration() :2196
 void OpenAnimator__ResetDuration_fn(OpenAnimator* __this)
 {
     __this->ResetDuration();
 }
 
-// protected generated OpenAnimator() [instance] :1976
+// protected generated OpenAnimator() [instance] :2173
 void OpenAnimator::ctor_2()
 {
     ctor_1();
 }
 
-// public double get_Duration() [instance] :1991
+// public double get_Duration() [instance] :2188
 double OpenAnimator::Duration()
 {
     return _duration;
 }
 
-// public void set_Duration(double value) [instance] :1992
+// public void set_Duration(double value) [instance] :2189
 void OpenAnimator::Duration(double value)
 {
     _duration = value;
     _hasDuration = true;
 }
 
-// internal double GetDelay(Fuse.Animations.AnimationVariant dir, double totalDuration) [instance] :2013
+// internal double GetDelay(Fuse.Animations.AnimationVariant dir, double totalDuration) [instance] :2210
 double OpenAnimator::GetDelay(int dir, double totalDuration)
 {
     return Delay();
 }
 
-// public bool get_HasDuration() [instance] :2006
+// public bool get_HasDuration() [instance] :2203
 bool OpenAnimator::HasDuration()
 {
     return _hasDuration;
 }
 
-// public void ResetDuration() [instance] :1999
+// public void ResetDuration() [instance] :2196
 void OpenAnimator::ResetDuration()
 {
     _duration = 0.0;
@@ -8137,10 +8449,10 @@ void OpenAnimator::ResetDuration()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract class OpenAnimatorState :2019
+// internal abstract class OpenAnimatorState :2216
 // {
 static void OpenAnimatorState_build(uType* type)
 {
@@ -8167,19 +8479,19 @@ OpenAnimatorState_type* OpenAnimatorState_typeof()
     return type;
 }
 
-// protected OpenAnimatorState(Fuse.Animations.OpenAnimator animator, Fuse.Animations.CreateStateParams p, [Fuse.Visual useVisual]) :2024
+// protected OpenAnimatorState(Fuse.Animations.OpenAnimator animator, Fuse.Animations.CreateStateParams p, [Fuse.Visual useVisual]) :2221
 void OpenAnimatorState__ctor_1_fn(OpenAnimatorState* __this, ::g::Fuse::Animations::OpenAnimator* animator, ::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse::Visual* useVisual)
 {
     __this->ctor_1(animator, p, useVisual);
 }
 
-// public override sealed bool get_IsOpenEnd() :2031
+// public override sealed bool get_IsOpenEnd() :2228
 void OpenAnimatorState__get_IsOpenEnd_fn(OpenAnimatorState* __this, bool* __retval)
 {
     return *__retval = true, void();
 }
 
-// internal override sealed Fuse.Animations.SeekResult SeekProgress(double progress, double interval, Fuse.Animations.SeekDirection dir, double strength) :2033
+// internal override sealed Fuse.Animations.SeekResult SeekProgress(double progress, double interval, Fuse.Animations.SeekDirection dir, double strength) :2230
 void OpenAnimatorState__SeekProgress_fn(OpenAnimatorState* __this, double* progress, double* interval, int* dir, double* strength, int* __retval)
 {
     uStackFrame __("Fuse.Animations.OpenAnimatorState", "SeekProgress(double,double,Fuse.Animations.SeekDirection,double)");
@@ -8190,7 +8502,7 @@ void OpenAnimatorState__SeekProgress_fn(OpenAnimatorState* __this, double* progr
     return *__retval = __this->SeekTime(progress_ * __this->TotalDuration, interval_, dir_, strength_), void();
 }
 
-// internal override sealed Fuse.Animations.SeekResult SeekTime(double nominal, double interval, Fuse.Animations.SeekDirection dir, double strength) :2039
+// internal override sealed Fuse.Animations.SeekResult SeekTime(double nominal, double interval, Fuse.Animations.SeekDirection dir, double strength) :2236
 void OpenAnimatorState__SeekTime_fn(OpenAnimatorState* __this, double* nominal, double* interval, int* dir, double* strength, int* __retval)
 {
     uStackFrame __("Fuse.Animations.OpenAnimatorState", "SeekTime(double,double,Fuse.Animations.SeekDirection,double)");
@@ -8199,6 +8511,7 @@ void OpenAnimatorState__SeekTime_fn(OpenAnimatorState* __this, double* nominal, 
     double interval_ = *interval;
     double strength_ = *strength;
     double delay = uPtr(__this->Animator)->GetDelay(__this->Variant, __this->TotalDuration);
+    float zeroTolerance = 1e-05f;
     bool on = (dir_ == 0) ? nominal_ > (delay - 9.9999997473787516e-06) : nominal_ > (delay + 9.9999997473787516e-06);
 
     if (uPtr(__this->Animator)->HasDuration() && (nominal_ > ((delay + uPtr(__this->Animator)->Duration()) - 9.9999997473787516e-06)))
@@ -8212,7 +8525,7 @@ void OpenAnimatorState__SeekTime_fn(OpenAnimatorState* __this, double* nominal, 
     return *__retval = (__this->_seekDone ? 2 : 0) | ((mayEnd && __this->_seekDone) ? 1 : 0), void();
 }
 
-// protected OpenAnimatorState(Fuse.Animations.OpenAnimator animator, Fuse.Animations.CreateStateParams p, [Fuse.Visual useVisual]) [instance] :2024
+// protected OpenAnimatorState(Fuse.Animations.OpenAnimator animator, Fuse.Animations.CreateStateParams p, [Fuse.Visual useVisual]) [instance] :2221
 void OpenAnimatorState::ctor_1(::g::Fuse::Animations::OpenAnimator* animator, ::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse::Visual* useVisual)
 {
     uStackFrame __("Fuse.Animations.OpenAnimatorState", ".ctor(Fuse.Animations.OpenAnimator,Fuse.Animations.CreateStateParams,[Fuse.Visual])");
@@ -8222,15 +8535,15 @@ void OpenAnimatorState::ctor_1(::g::Fuse::Animations::OpenAnimator* animator, ::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class Player :2244
+// internal sealed class Player :2445
 // {
 static void Player_build(uType* type)
 {
-    ::TYPES[62] = ::g::Fuse::Animations::IPlayerFeedback_typeof();
-    ::TYPES[63] = ::g::Fuse::Animations::IBasePlayerFeedback_typeof();
+    ::TYPES[63] = ::g::Fuse::Animations::IPlayerFeedback_typeof();
+    ::TYPES[64] = ::g::Fuse::Animations::IBasePlayerFeedback_typeof();
     type->SetInterfaces(
         ::g::Fuse::IUpdateListener_typeof(), offsetof(Player_type, interface0));
     type->SetFields(0,
@@ -8241,7 +8554,7 @@ static void Player_build(uType* type)
         ::g::Fuse::Animations::SeekDirection_typeof(), offsetof(::g::Fuse::Animations::Player, _seekDirection), 0,
         ::g::Fuse::Animations::AnimatorState_typeof()->Array(), offsetof(::g::Fuse::Animations::Player, _states), 0,
         ::g::Fuse::Animations::PlayerPart_typeof(), offsetof(::g::Fuse::Animations::Player, _strength), 0,
-        ::TYPES[62/*Fuse.Animations.IPlayerFeedback*/], offsetof(::g::Fuse::Animations::Player, Feedback), 0,
+        ::TYPES[63/*Fuse.Animations.IPlayerFeedback*/], offsetof(::g::Fuse::Animations::Player, Feedback), 0,
         ::g::Fuse::Animations::TriggerAnimation_typeof(), offsetof(::g::Fuse::Animations::Player, _Animation), 0,
         ::g::Fuse::Animations::PlayMode_typeof(), offsetof(::g::Fuse::Animations::Player, _Mode), 0,
         ::g::Fuse::Animations::AnimationVariant_typeof(), offsetof(::g::Fuse::Animations::Player, _Variant), 0,
@@ -8264,206 +8577,206 @@ Player_type* Player_typeof()
     return type;
 }
 
-// public Player(Fuse.Visual elm, Fuse.Animations.TriggerAnimation animation, Fuse.Animations.AnimationVariant variant, Fuse.Animations.PlayMode mode) :2266
+// public Player(Fuse.Visual elm, Fuse.Animations.TriggerAnimation animation, Fuse.Animations.AnimationVariant variant, Fuse.Animations.PlayMode mode) :2467
 void Player__ctor__fn(Player* __this, ::g::Fuse::Visual* elm, ::g::Fuse::Animations::TriggerAnimation* animation, int* variant, int* mode)
 {
     __this->ctor_(elm, animation, *variant, *mode);
 }
 
-// public generated Fuse.Animations.TriggerAnimation get_Animation() :2249
+// public generated Fuse.Animations.TriggerAnimation get_Animation() :2450
 void Player__get_Animation_fn(Player* __this, ::g::Fuse::Animations::TriggerAnimation** __retval)
 {
     *__retval = __this->Animation();
 }
 
-// private generated void set_Animation(Fuse.Animations.TriggerAnimation value) :2249
+// private generated void set_Animation(Fuse.Animations.TriggerAnimation value) :2450
 void Player__set_Animation_fn(Player* __this, ::g::Fuse::Animations::TriggerAnimation* value)
 {
     __this->Animation(value);
 }
 
-// public double get_AnimatorsDuration() :2282
+// public double get_AnimatorsDuration() :2483
 void Player__get_AnimatorsDuration_fn(Player* __this, double* __retval)
 {
     *__retval = __this->AnimatorsDuration();
 }
 
-// private void CheckUpdate([bool interval]) :2288
+// private void CheckUpdate([bool interval]) :2489
 void Player__CheckUpdate_fn(Player* __this, bool* interval)
 {
     __this->CheckUpdate(*interval);
 }
 
-// public void Disable() :2383
+// public void Disable() :2584
 void Player__Disable_fn(Player* __this)
 {
     __this->Disable();
 }
 
-// private void Done() :2368
+// private void Done() :2569
 void Player__Done_fn(Player* __this)
 {
     __this->Done();
 }
 
-// public void FadeIn(double time) :2497
+// public void FadeIn(double time) :2699
 void Player__FadeIn_fn(Player* __this, double* time)
 {
     __this->FadeIn(*time);
 }
 
-// public void FadeOut(double time) :2504
+// public void FadeOut(double time) :2706
 void Player__FadeOut_fn(Player* __this, double* time)
 {
     __this->FadeOut(*time);
 }
 
-// private void Fuse.IUpdateListener.Update() :2284
+// private void Fuse.IUpdateListener.Update() :2485
 void Player__FuseIUpdateListenerUpdate_fn(Player* __this)
 {
     uStackFrame __("Fuse.Animations.Player", "Fuse.IUpdateListener.Update()");
     __this->CheckUpdate(true);
 }
 
-// public bool get_IsStable() :2335
+// public bool get_IsStable() :2536
 void Player__get_IsStable_fn(Player* __this, bool* __retval)
 {
     *__retval = __this->IsStable();
 }
 
-// internal bool get_IsSyncState() :2423
+// internal bool get_IsSyncState() :2625
 void Player__get_IsSyncState_fn(Player* __this, bool* __retval)
 {
     *__retval = __this->IsSyncState();
 }
 
-// public generated Fuse.Animations.PlayMode get_Mode() :2251
+// public generated Fuse.Animations.PlayMode get_Mode() :2452
 void Player__get_Mode_fn(Player* __this, int* __retval)
 {
     *__retval = __this->Mode();
 }
 
-// private generated void set_Mode(Fuse.Animations.PlayMode value) :2251
+// private generated void set_Mode(Fuse.Animations.PlayMode value) :2452
 void Player__set_Mode_fn(Player* __this, int* value)
 {
     __this->Mode(*value);
 }
 
-// public Player New(Fuse.Visual elm, Fuse.Animations.TriggerAnimation animation, Fuse.Animations.AnimationVariant variant, Fuse.Animations.PlayMode mode) :2266
+// public Player New(Fuse.Visual elm, Fuse.Animations.TriggerAnimation animation, Fuse.Animations.AnimationVariant variant, Fuse.Animations.PlayMode mode) :2467
 void Player__New1_fn(::g::Fuse::Visual* elm, ::g::Fuse::Animations::TriggerAnimation* animation, int* variant, int* mode, Player** __retval)
 {
     *__retval = Player::New1(elm, animation, *variant, *mode);
 }
 
-// public void PlayToEnd() :2469
+// public void PlayToEnd() :2671
 void Player__PlayToEnd_fn(Player* __this)
 {
     __this->PlayToEnd();
 }
 
-// public void PlayToProgress(double progress) :2460
+// public void PlayToProgress(double progress) :2662
 void Player__PlayToProgress_fn(Player* __this, double* progress)
 {
     __this->PlayToProgress(*progress);
 }
 
-// public void PlayToStart() :2477
+// public void PlayToStart() :2679
 void Player__PlayToStart_fn(Player* __this)
 {
     __this->PlayToStart();
 }
 
-// public double get_Progress() :2397
+// public double get_Progress() :2598
 void Player__get_Progress_fn(Player* __this, double* __retval)
 {
     *__retval = __this->Progress();
 }
 
-// public double get_RemainTime() :2401
+// public double get_RemainTime() :2602
 void Player__get_RemainTime_fn(Player* __this, double* __retval)
 {
     *__retval = __this->RemainTime();
 }
 
-// public void SeekProgress(double progress, [bool triggerUpdate]) :2411
+// public void SeekProgress(double progress, [bool triggerUpdate]) :2613
 void Player__SeekProgress_fn(Player* __this, double* progress, bool* triggerUpdate)
 {
     __this->SeekProgress(*progress, *triggerUpdate);
 }
 
-// private void Start() :2340
+// private void Start() :2541
 void Player__Start_fn(Player* __this)
 {
     __this->Start();
 }
 
-// private Fuse.Animations.AnimatorState[] get_States() :2256
+// private Fuse.Animations.AnimatorState[] get_States() :2457
 void Player__get_States_fn(Player* __this, uArray** __retval)
 {
     *__retval = __this->States();
 }
 
-// private void Stop() :2349
+// private void Stop() :2550
 void Player__Stop_fn(Player* __this)
 {
     __this->Stop();
 }
 
-// public double get_Strength() :2489
+// public double get_Strength() :2691
 void Player__get_Strength_fn(Player* __this, double* __retval)
 {
     *__retval = __this->Strength();
 }
 
-// public void set_Strength(double value) :2490
+// public void set_Strength(double value) :2692
 void Player__set_Strength_fn(Player* __this, double* value)
 {
     __this->Strength(*value);
 }
 
-// public void Suspend() :2358
+// public void Suspend() :2559
 void Player__Suspend_fn(Player* __this)
 {
     __this->Suspend();
 }
 
-// public void TimeChanged() :2276
+// public void TimeChanged() :2477
 void Player__TimeChanged_fn(Player* __this)
 {
     __this->TimeChanged();
 }
 
-// private bool UpdateStates(bool isInterval) :2429
+// private bool UpdateStates(bool isInterval) :2631
 void Player__UpdateStates_fn(Player* __this, bool* isInterval, bool* __retval)
 {
     *__retval = __this->UpdateStates(*isInterval);
 }
 
-// public generated Fuse.Animations.AnimationVariant get_Variant() :2250
+// public generated Fuse.Animations.AnimationVariant get_Variant() :2451
 void Player__get_Variant_fn(Player* __this, int* __retval)
 {
     *__retval = __this->Variant();
 }
 
-// public generated void set_Variant(Fuse.Animations.AnimationVariant value) :2250
+// public generated void set_Variant(Fuse.Animations.AnimationVariant value) :2451
 void Player__set_Variant_fn(Player* __this, int* value)
 {
     __this->Variant(*value);
 }
 
-// public generated Fuse.Visual get_Visual() :2248
+// public generated Fuse.Visual get_Visual() :2449
 void Player__get_Visual_fn(Player* __this, ::g::Fuse::Visual** __retval)
 {
     *__retval = __this->Visual();
 }
 
-// private generated void set_Visual(Fuse.Visual value) :2248
+// private generated void set_Visual(Fuse.Visual value) :2449
 void Player__set_Visual_fn(Player* __this, ::g::Fuse::Visual* value)
 {
     __this->Visual(value);
 }
 
-// public Player(Fuse.Visual elm, Fuse.Animations.TriggerAnimation animation, Fuse.Animations.AnimationVariant variant, Fuse.Animations.PlayMode mode) [instance] :2266
+// public Player(Fuse.Visual elm, Fuse.Animations.TriggerAnimation animation, Fuse.Animations.AnimationVariant variant, Fuse.Animations.PlayMode mode) [instance] :2467
 void Player::ctor_(::g::Fuse::Visual* elm, ::g::Fuse::Animations::TriggerAnimation* animation, int variant, int mode)
 {
     uStackFrame __("Fuse.Animations.Player", ".ctor(Fuse.Visual,Fuse.Animations.TriggerAnimation,Fuse.Animations.AnimationVariant,Fuse.Animations.PlayMode)");
@@ -8478,26 +8791,26 @@ void Player::ctor_(::g::Fuse::Visual* elm, ::g::Fuse::Animations::TriggerAnimati
     TimeChanged();
 }
 
-// public generated Fuse.Animations.TriggerAnimation get_Animation() [instance] :2249
+// public generated Fuse.Animations.TriggerAnimation get_Animation() [instance] :2450
 ::g::Fuse::Animations::TriggerAnimation* Player::Animation()
 {
     return _Animation;
 }
 
-// private generated void set_Animation(Fuse.Animations.TriggerAnimation value) [instance] :2249
+// private generated void set_Animation(Fuse.Animations.TriggerAnimation value) [instance] :2450
 void Player::Animation(::g::Fuse::Animations::TriggerAnimation* value)
 {
     _Animation = value;
 }
 
-// public double get_AnimatorsDuration() [instance] :2282
+// public double get_AnimatorsDuration() [instance] :2483
 double Player::AnimatorsDuration()
 {
     uStackFrame __("Fuse.Animations.Player", "get_AnimatorsDuration()");
     return uPtr(_progress)->Duration;
 }
 
-// private void CheckUpdate([bool interval]) [instance] :2288
+// private void CheckUpdate([bool interval]) [instance] :2489
 void Player::CheckUpdate(bool interval)
 {
     uStackFrame __("Fuse.Animations.Player", "CheckUpdate([bool])");
@@ -8508,7 +8821,7 @@ void Player::CheckUpdate(bool interval)
         bool wrapped = (Mode() == 1) ? uPtr(_progress)->WrapStep() : uPtr(_progress)->Step();
 
         if (Feedback != NULL)
-            ::g::Fuse::Animations::IPlayerFeedback::OnProgressUpdated(uInterface(uPtr(Feedback), ::TYPES[62/*Fuse.Animations.IPlayerFeedback*/]), this, (wrapped ? 1 : 0) | 2);
+            ::g::Fuse::Animations::IPlayerFeedback::OnProgressUpdated(uInterface(uPtr(Feedback), ::TYPES[63/*Fuse.Animations.IPlayerFeedback*/]), this, (wrapped ? 1 : 0) | 2);
 
         running = running || (uPtr(_progress)->IsProgress ? uPtr(_progress)->Animate : true);
     }
@@ -8534,11 +8847,11 @@ void Player::CheckUpdate(bool interval)
         _allStable = stable;
 
         if ((Feedback != NULL) && stable)
-            ::g::Fuse::Animations::IBasePlayerFeedback::OnStable(uInterface(uPtr(Feedback), ::TYPES[63/*Fuse.Animations.IBasePlayerFeedback*/]), this);
+            ::g::Fuse::Animations::IBasePlayerFeedback::OnStable(uInterface(uPtr(Feedback), ::TYPES[64/*Fuse.Animations.IBasePlayerFeedback*/]), this);
     }
 }
 
-// public void Disable() [instance] :2383
+// public void Disable() [instance] :2584
 void Player::Disable()
 {
     uStackFrame __("Fuse.Animations.Player", "Disable()");
@@ -8553,7 +8866,7 @@ void Player::Disable()
     }
 }
 
-// private void Done() [instance] :2368
+// private void Done() [instance] :2569
 void Player::Done()
 {
     uStackFrame __("Fuse.Animations.Player", "Done()");
@@ -8565,11 +8878,11 @@ void Player::Done()
         _isDone = true;
 
         if (Feedback != NULL)
-            ::g::Fuse::Animations::IBasePlayerFeedback::OnPlaybackDone(uInterface(uPtr(Feedback), ::TYPES[63/*Fuse.Animations.IBasePlayerFeedback*/]), this);
+            ::g::Fuse::Animations::IBasePlayerFeedback::OnPlaybackDone(uInterface(uPtr(Feedback), ::TYPES[64/*Fuse.Animations.IBasePlayerFeedback*/]), this);
     }
 }
 
-// public void FadeIn(double time) [instance] :2497
+// public void FadeIn(double time) [instance] :2699
 void Player::FadeIn(double time)
 {
     uStackFrame __("Fuse.Animations.Player", "FadeIn(double)");
@@ -8578,7 +8891,7 @@ void Player::FadeIn(double time)
     CheckUpdate(false);
 }
 
-// public void FadeOut(double time) [instance] :2504
+// public void FadeOut(double time) [instance] :2706
 void Player::FadeOut(double time)
 {
     uStackFrame __("Fuse.Animations.Player", "FadeOut(double)");
@@ -8587,32 +8900,32 @@ void Player::FadeOut(double time)
     CheckUpdate(false);
 }
 
-// public bool get_IsStable() [instance] :2335
+// public bool get_IsStable() [instance] :2536
 bool Player::IsStable()
 {
     return _allStable;
 }
 
-// internal bool get_IsSyncState() [instance] :2423
+// internal bool get_IsSyncState() [instance] :2625
 bool Player::IsSyncState()
 {
     uStackFrame __("Fuse.Animations.Player", "get_IsSyncState()");
     return (uPtr(_progress)->Current == 0.0) || (uPtr(_progress)->Progress() == 1.0);
 }
 
-// public generated Fuse.Animations.PlayMode get_Mode() [instance] :2251
+// public generated Fuse.Animations.PlayMode get_Mode() [instance] :2452
 int Player::Mode()
 {
     return _Mode;
 }
 
-// private generated void set_Mode(Fuse.Animations.PlayMode value) [instance] :2251
+// private generated void set_Mode(Fuse.Animations.PlayMode value) [instance] :2452
 void Player::Mode(int value)
 {
     _Mode = value;
 }
 
-// public void PlayToEnd() [instance] :2469
+// public void PlayToEnd() [instance] :2671
 void Player::PlayToEnd()
 {
     uStackFrame __("Fuse.Animations.Player", "PlayToEnd()");
@@ -8622,7 +8935,7 @@ void Player::PlayToEnd()
     CheckUpdate(false);
 }
 
-// public void PlayToProgress(double progress) [instance] :2460
+// public void PlayToProgress(double progress) [instance] :2662
 void Player::PlayToProgress(double progress)
 {
     uStackFrame __("Fuse.Animations.Player", "PlayToProgress(double)");
@@ -8635,7 +8948,7 @@ void Player::PlayToProgress(double progress)
     CheckUpdate(false);
 }
 
-// public void PlayToStart() [instance] :2477
+// public void PlayToStart() [instance] :2679
 void Player::PlayToStart()
 {
     uStackFrame __("Fuse.Animations.Player", "PlayToStart()");
@@ -8645,17 +8958,18 @@ void Player::PlayToStart()
     CheckUpdate(false);
 }
 
-// public double get_Progress() [instance] :2397
+// public double get_Progress() [instance] :2598
 double Player::Progress()
 {
     uStackFrame __("Fuse.Animations.Player", "get_Progress()");
     return uPtr(_progress)->Progress();
 }
 
-// public double get_RemainTime() [instance] :2401
+// public double get_RemainTime() [instance] :2602
 double Player::RemainTime()
 {
     uStackFrame __("Fuse.Animations.Player", "get_RemainTime()");
+    float zeroTolerance = 1e-05f;
 
     if (uPtr(_progress)->IsProgress || (uPtr(_progress)->Duration < 9.9999997473787516e-06))
         return 0.0;
@@ -8663,7 +8977,7 @@ double Player::RemainTime()
     return (Variant() == 0) ? uPtr(_progress)->Duration - uPtr(_progress)->Current : uPtr(_progress)->Current;
 }
 
-// public void SeekProgress(double progress, [bool triggerUpdate]) [instance] :2411
+// public void SeekProgress(double progress, [bool triggerUpdate]) [instance] :2613
 void Player::SeekProgress(double progress, bool triggerUpdate)
 {
     uStackFrame __("Fuse.Animations.Player", "SeekProgress(double,[bool])");
@@ -8672,10 +8986,10 @@ void Player::SeekProgress(double progress, bool triggerUpdate)
     CheckUpdate(false);
 
     if (triggerUpdate && (Feedback != NULL))
-        ::g::Fuse::Animations::IPlayerFeedback::OnProgressUpdated(uInterface(uPtr(Feedback), ::TYPES[62/*Fuse.Animations.IPlayerFeedback*/]), this, 0);
+        ::g::Fuse::Animations::IPlayerFeedback::OnProgressUpdated(uInterface(uPtr(Feedback), ::TYPES[63/*Fuse.Animations.IPlayerFeedback*/]), this, 0);
 }
 
-// private void Start() [instance] :2340
+// private void Start() [instance] :2541
 void Player::Start()
 {
     uStackFrame __("Fuse.Animations.Player", "Start()");
@@ -8687,7 +9001,7 @@ void Player::Start()
     }
 }
 
-// private Fuse.Animations.AnimatorState[] get_States() [instance] :2256
+// private Fuse.Animations.AnimatorState[] get_States() [instance] :2457
 uArray* Player::States()
 {
     uStackFrame __("Fuse.Animations.Player", "get_States()");
@@ -8698,7 +9012,7 @@ uArray* Player::States()
     return _states;
 }
 
-// private void Stop() [instance] :2349
+// private void Stop() [instance] :2550
 void Player::Stop()
 {
     uStackFrame __("Fuse.Animations.Player", "Stop()");
@@ -8710,14 +9024,14 @@ void Player::Stop()
     }
 }
 
-// public double get_Strength() [instance] :2489
+// public double get_Strength() [instance] :2691
 double Player::Strength()
 {
     uStackFrame __("Fuse.Animations.Player", "get_Strength()");
     return uPtr(_strength)->Progress();
 }
 
-// public void set_Strength(double value) [instance] :2490
+// public void set_Strength(double value) [instance] :2692
 void Player::Strength(double value)
 {
     uStackFrame __("Fuse.Animations.Player", "set_Strength(double)");
@@ -8725,7 +9039,7 @@ void Player::Strength(double value)
     CheckUpdate(false);
 }
 
-// public void Suspend() [instance] :2358
+// public void Suspend() [instance] :2559
 void Player::Suspend()
 {
     uStackFrame __("Fuse.Animations.Player", "Suspend()");
@@ -8734,14 +9048,14 @@ void Player::Suspend()
     CheckUpdate(false);
 }
 
-// public void TimeChanged() [instance] :2276
+// public void TimeChanged() [instance] :2477
 void Player::TimeChanged()
 {
     uStackFrame __("Fuse.Animations.Player", "TimeChanged()");
     uPtr(_progress)->AlterDuration(uPtr(Animation())->GetAnimatorsDuration(Variant()), uPtr(Animation())->GetTimeMultiplier(Variant()));
 }
 
-// private bool UpdateStates(bool isInterval) [instance] :2429
+// private bool UpdateStates(bool isInterval) [instance] :2631
 bool Player::UpdateStates(bool isInterval)
 {
     uStackFrame __("Fuse.Animations.Player", "UpdateStates(bool)");
@@ -8767,31 +9081,31 @@ bool Player::UpdateStates(bool isInterval)
     return allStable;
 }
 
-// public generated Fuse.Animations.AnimationVariant get_Variant() [instance] :2250
+// public generated Fuse.Animations.AnimationVariant get_Variant() [instance] :2451
 int Player::Variant()
 {
     return _Variant;
 }
 
-// public generated void set_Variant(Fuse.Animations.AnimationVariant value) [instance] :2250
+// public generated void set_Variant(Fuse.Animations.AnimationVariant value) [instance] :2451
 void Player::Variant(int value)
 {
     _Variant = value;
 }
 
-// public generated Fuse.Visual get_Visual() [instance] :2248
+// public generated Fuse.Visual get_Visual() [instance] :2449
 ::g::Fuse::Visual* Player::Visual()
 {
     return _Visual;
 }
 
-// private generated void set_Visual(Fuse.Visual value) [instance] :2248
+// private generated void set_Visual(Fuse.Visual value) [instance] :2449
 void Player::Visual(::g::Fuse::Visual* value)
 {
     _Visual = value;
 }
 
-// public Player New(Fuse.Visual elm, Fuse.Animations.TriggerAnimation animation, Fuse.Animations.AnimationVariant variant, Fuse.Animations.PlayMode mode) [static] :2266
+// public Player New(Fuse.Visual elm, Fuse.Animations.TriggerAnimation animation, Fuse.Animations.AnimationVariant variant, Fuse.Animations.PlayMode mode) [static] :2467
 Player* Player::New1(::g::Fuse::Visual* elm, ::g::Fuse::Animations::TriggerAnimation* animation, int variant, int mode)
 {
     Player* obj1 = (Player*)uNew(Player_typeof());
@@ -8800,10 +9114,10 @@ Player* Player::New1(::g::Fuse::Visual* elm, ::g::Fuse::Animations::TriggerAnima
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal enum PlayerFeedbackFlags :4106
+// internal enum PlayerFeedbackFlags :4313
 uEnumType* PlayerFeedbackFlags_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -8817,10 +9131,10 @@ uEnumType* PlayerFeedbackFlags_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class PlayerPart :2086
+// internal sealed class PlayerPart :2285
 // {
 static void PlayerPart_build(uType* type)
 {
@@ -8850,79 +9164,79 @@ uType* PlayerPart_typeof()
     return type;
 }
 
-// public PlayerPart([double currentProgress]) :2096
+// public PlayerPart([double currentProgress]) :2297
 void PlayerPart__ctor__fn(PlayerPart* __this, double* currentProgress)
 {
     __this->ctor_(*currentProgress);
 }
 
-// public void AlterDuration(double t, double timeMult) :2232
+// public void AlterDuration(double t, double timeMult) :2433
 void PlayerPart__AlterDuration_fn(PlayerPart* __this, double* t, double* timeMult)
 {
     __this->AlterDuration(*t, *timeMult);
 }
 
-// private void MarkSource(bool isAnimating) :2128
+// private void MarkSource(bool isAnimating) :2329
 void PlayerPart__MarkSource_fn(PlayerPart* __this, bool* isAnimating)
 {
     __this->MarkSource(*isAnimating);
 }
 
-// public PlayerPart New([double currentProgress]) :2096
+// public PlayerPart New([double currentProgress]) :2297
 void PlayerPart__New1_fn(double* currentProgress, PlayerPart** __retval)
 {
     *__retval = PlayerPart::New1(*currentProgress);
 }
 
-// public void PlayToEnd() :2140
+// public void PlayToEnd() :2341
 void PlayerPart__PlayToEnd_fn(PlayerPart* __this)
 {
     __this->PlayToEnd();
 }
 
-// public void PlayToProgress(double progress) :2102
+// public void PlayToProgress(double progress) :2303
 void PlayerPart__PlayToProgress_fn(PlayerPart* __this, double* progress)
 {
     __this->PlayToProgress(*progress);
 }
 
-// public void PlayToStart() :2145
+// public void PlayToStart() :2346
 void PlayerPart__PlayToStart_fn(PlayerPart* __this)
 {
     __this->PlayToStart();
 }
 
-// public double get_Progress() :2222
+// public double get_Progress() :2423
 void PlayerPart__get_Progress_fn(PlayerPart* __this, double* __retval)
 {
     *__retval = __this->Progress();
 }
 
-// public void SeekProgress(double p) :2204
+// public void SeekProgress(double p) :2405
 void PlayerPart__SeekProgress_fn(PlayerPart* __this, double* p)
 {
     __this->SeekProgress(*p);
 }
 
-// public bool Step() :2151
+// public bool Step() :2352
 void PlayerPart__Step_fn(PlayerPart* __this, bool* __retval)
 {
     *__retval = __this->Step();
 }
 
-// public double get_TimeMultiplier() :2241
+// public double get_TimeMultiplier() :2442
 void PlayerPart__get_TimeMultiplier_fn(PlayerPart* __this, double* __retval)
 {
     *__retval = __this->TimeMultiplier();
 }
 
-// public bool WrapStep() :2175
+// public bool WrapStep() :2376
 void PlayerPart__WrapStep_fn(PlayerPart* __this, bool* __retval)
 {
     *__retval = __this->WrapStep();
 }
 
-// public PlayerPart([double currentProgress]) [instance] :2096
+// public PlayerPart([double currentProgress]) [instance] :2297
 void PlayerPart::ctor_(double currentProgress)
 {
     _timeMultiplier = 1.0;
@@ -8930,7 +9244,7 @@ void PlayerPart::ctor_(double currentProgress)
     Current = currentProgress;
 }
 
-// public void AlterDuration(double t, double timeMult) [instance] :2232
+// public void AlterDuration(double t, double timeMult) [instance] :2433
 void PlayerPart::AlterDuration(double t, double timeMult)
 {
     _timeMultiplier = timeMult;
@@ -8940,7 +9254,7 @@ void PlayerPart::AlterDuration(double t, double timeMult)
     SeekProgress(p);
 }
 
-// private void MarkSource(bool isAnimating) [instance] :2128
+// private void MarkSource(bool isAnimating) [instance] :2329
 void PlayerPart::MarkSource(bool isAnimating)
 {
     Source = Current;
@@ -8951,13 +9265,13 @@ void PlayerPart::MarkSource(bool isAnimating)
         SourceTime = ::g::Fuse::Time::FrameTime();
 }
 
-// public void PlayToEnd() [instance] :2140
+// public void PlayToEnd() [instance] :2341
 void PlayerPart::PlayToEnd()
 {
     PlayToProgress(1.0);
 }
 
-// public void PlayToProgress(double progress) [instance] :2102
+// public void PlayToProgress(double progress) [instance] :2303
 void PlayerPart::PlayToProgress(double progress)
 {
     bool nIsProgress;
@@ -8983,13 +9297,13 @@ void PlayerPart::PlayToProgress(double progress)
     Target = nTarget;
 }
 
-// public void PlayToStart() [instance] :2145
+// public void PlayToStart() [instance] :2346
 void PlayerPart::PlayToStart()
 {
     PlayToProgress(0.0);
 }
 
-// public double get_Progress() [instance] :2222
+// public double get_Progress() [instance] :2423
 double PlayerPart::Progress()
 {
     if (IsProgress)
@@ -8998,7 +9312,7 @@ double PlayerPart::Progress()
         return ::g::Uno::Math::Clamp(Current / Duration, 0.0, 1.0);
 }
 
-// public void SeekProgress(double p) [instance] :2204
+// public void SeekProgress(double p) [instance] :2405
 void PlayerPart::SeekProgress(double p)
 {
     p = ::g::Uno::Math::Clamp(p, 0.0, 1.0);
@@ -9016,7 +9330,7 @@ void PlayerPart::SeekProgress(double p)
     }
 }
 
-// public bool Step() [instance] :2151
+// public bool Step() [instance] :2352
 bool PlayerPart::Step()
 {
     _stepTime = ::g::Fuse::Time::FrameTime();
@@ -9036,13 +9350,13 @@ bool PlayerPart::Step()
     return false;
 }
 
-// public double get_TimeMultiplier() [instance] :2241
+// public double get_TimeMultiplier() [instance] :2442
 double PlayerPart::TimeMultiplier()
 {
     return _timeMultiplier;
 }
 
-// public bool WrapStep() [instance] :2175
+// public bool WrapStep() [instance] :2376
 bool PlayerPart::WrapStep()
 {
     if (IsProgress || ((Target > 0.0) && (Target < 1.0)))
@@ -9068,7 +9382,7 @@ bool PlayerPart::WrapStep()
     return wrap;
 }
 
-// public PlayerPart New([double currentProgress]) [static] :2096
+// public PlayerPart New([double currentProgress]) [static] :2297
 PlayerPart* PlayerPart::New1(double currentProgress)
 {
     PlayerPart* obj1 = (PlayerPart*)uNew(PlayerPart_typeof());
@@ -9077,10 +9391,10 @@ PlayerPart* PlayerPart::New1(double currentProgress)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public enum PlayMode :3909
+// public enum PlayMode :4115
 uEnumType* PlayMode_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -9093,10 +9407,10 @@ uEnumType* PlayMode_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.QuadraticInImpl :504
+// internal sealed class Easing.QuadraticInImpl :659
 // {
 static void Easing__QuadraticInImpl_build(uType* type)
 {
@@ -9118,32 +9432,32 @@ static void Easing__QuadraticInImpl_build(uType* type)
     return type;
 }
 
-// public generated QuadraticInImpl() :504
+// public generated QuadraticInImpl() :659
 void Easing__QuadraticInImpl__ctor_1_fn(Easing__QuadraticInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :506
+// public override sealed double Map(double k) :661
 void Easing__QuadraticInImpl__Map_fn(Easing__QuadraticInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = k_ * k_, void();
 }
 
-// public generated QuadraticInImpl New() :504
+// public generated QuadraticInImpl New() :659
 void Easing__QuadraticInImpl__New1_fn(Easing__QuadraticInImpl** __retval)
 {
     *__retval = Easing__QuadraticInImpl::New1();
 }
 
-// public generated QuadraticInImpl() [instance] :504
+// public generated QuadraticInImpl() [instance] :659
 void Easing__QuadraticInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuadraticInImpl New() [static] :504
+// public generated QuadraticInImpl New() [static] :659
 Easing__QuadraticInImpl* Easing__QuadraticInImpl::New1()
 {
     Easing__QuadraticInImpl* obj1 = (Easing__QuadraticInImpl*)uNew(Easing__QuadraticInImpl_typeof());
@@ -9152,10 +9466,10 @@ Easing__QuadraticInImpl* Easing__QuadraticInImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.QuadraticInOutImpl :520
+// internal sealed class Easing.QuadraticInOutImpl :675
 // {
 static void Easing__QuadraticInOutImpl_build(uType* type)
 {
@@ -9177,13 +9491,13 @@ static void Easing__QuadraticInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated QuadraticInOutImpl() :520
+// public generated QuadraticInOutImpl() :675
 void Easing__QuadraticInOutImpl__ctor_1_fn(Easing__QuadraticInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :522
+// public override sealed double Map(double k) :677
 void Easing__QuadraticInOutImpl__Map_fn(Easing__QuadraticInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -9196,19 +9510,19 @@ void Easing__QuadraticInOutImpl__Map_fn(Easing__QuadraticInOutImpl* __this, doub
     return *__retval = -0.5 * ((k_ * (k_ - 2.0)) - 1.0), void();
 }
 
-// public generated QuadraticInOutImpl New() :520
+// public generated QuadraticInOutImpl New() :675
 void Easing__QuadraticInOutImpl__New1_fn(Easing__QuadraticInOutImpl** __retval)
 {
     *__retval = Easing__QuadraticInOutImpl::New1();
 }
 
-// public generated QuadraticInOutImpl() [instance] :520
+// public generated QuadraticInOutImpl() [instance] :675
 void Easing__QuadraticInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuadraticInOutImpl New() [static] :520
+// public generated QuadraticInOutImpl New() [static] :675
 Easing__QuadraticInOutImpl* Easing__QuadraticInOutImpl::New1()
 {
     Easing__QuadraticInOutImpl* obj1 = (Easing__QuadraticInOutImpl*)uNew(Easing__QuadraticInOutImpl_typeof());
@@ -9217,10 +9531,10 @@ Easing__QuadraticInOutImpl* Easing__QuadraticInOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.QuadraticOutImpl :512
+// internal sealed class Easing.QuadraticOutImpl :667
 // {
 static void Easing__QuadraticOutImpl_build(uType* type)
 {
@@ -9242,32 +9556,32 @@ static void Easing__QuadraticOutImpl_build(uType* type)
     return type;
 }
 
-// public generated QuadraticOutImpl() :512
+// public generated QuadraticOutImpl() :667
 void Easing__QuadraticOutImpl__ctor_1_fn(Easing__QuadraticOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :514
+// public override sealed double Map(double k) :669
 void Easing__QuadraticOutImpl__Map_fn(Easing__QuadraticOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = k_ * (2.0 - k_), void();
 }
 
-// public generated QuadraticOutImpl New() :512
+// public generated QuadraticOutImpl New() :667
 void Easing__QuadraticOutImpl__New1_fn(Easing__QuadraticOutImpl** __retval)
 {
     *__retval = Easing__QuadraticOutImpl::New1();
 }
 
-// public generated QuadraticOutImpl() [instance] :512
+// public generated QuadraticOutImpl() [instance] :667
 void Easing__QuadraticOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuadraticOutImpl New() [static] :512
+// public generated QuadraticOutImpl New() [static] :667
 Easing__QuadraticOutImpl* Easing__QuadraticOutImpl::New1()
 {
     Easing__QuadraticOutImpl* obj1 = (Easing__QuadraticOutImpl*)uNew(Easing__QuadraticOutImpl_typeof());
@@ -9276,10 +9590,10 @@ Easing__QuadraticOutImpl* Easing__QuadraticOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.QuarticInImpl :565
+// internal sealed class Easing.QuarticInImpl :720
 // {
 static void Easing__QuarticInImpl_build(uType* type)
 {
@@ -9301,32 +9615,32 @@ static void Easing__QuarticInImpl_build(uType* type)
     return type;
 }
 
-// public generated QuarticInImpl() :565
+// public generated QuarticInImpl() :720
 void Easing__QuarticInImpl__ctor_1_fn(Easing__QuarticInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :567
+// public override sealed double Map(double k) :722
 void Easing__QuarticInImpl__Map_fn(Easing__QuarticInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = ((k_ * k_) * k_) * k_, void();
 }
 
-// public generated QuarticInImpl New() :565
+// public generated QuarticInImpl New() :720
 void Easing__QuarticInImpl__New1_fn(Easing__QuarticInImpl** __retval)
 {
     *__retval = Easing__QuarticInImpl::New1();
 }
 
-// public generated QuarticInImpl() [instance] :565
+// public generated QuarticInImpl() [instance] :720
 void Easing__QuarticInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuarticInImpl New() [static] :565
+// public generated QuarticInImpl New() [static] :720
 Easing__QuarticInImpl* Easing__QuarticInImpl::New1()
 {
     Easing__QuarticInImpl* obj1 = (Easing__QuarticInImpl*)uNew(Easing__QuarticInImpl_typeof());
@@ -9335,10 +9649,10 @@ Easing__QuarticInImpl* Easing__QuarticInImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.QuarticInOutImpl :582
+// internal sealed class Easing.QuarticInOutImpl :737
 // {
 static void Easing__QuarticInOutImpl_build(uType* type)
 {
@@ -9360,13 +9674,13 @@ static void Easing__QuarticInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated QuarticInOutImpl() :582
+// public generated QuarticInOutImpl() :737
 void Easing__QuarticInOutImpl__ctor_1_fn(Easing__QuarticInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :584
+// public override sealed double Map(double k) :739
 void Easing__QuarticInOutImpl__Map_fn(Easing__QuarticInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -9379,19 +9693,19 @@ void Easing__QuarticInOutImpl__Map_fn(Easing__QuarticInOutImpl* __this, double* 
     return *__retval = -0.5 * ((((k_ * k_) * k_) * k_) - 2.0), void();
 }
 
-// public generated QuarticInOutImpl New() :582
+// public generated QuarticInOutImpl New() :737
 void Easing__QuarticInOutImpl__New1_fn(Easing__QuarticInOutImpl** __retval)
 {
     *__retval = Easing__QuarticInOutImpl::New1();
 }
 
-// public generated QuarticInOutImpl() [instance] :582
+// public generated QuarticInOutImpl() [instance] :737
 void Easing__QuarticInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuarticInOutImpl New() [static] :582
+// public generated QuarticInOutImpl New() [static] :737
 Easing__QuarticInOutImpl* Easing__QuarticInOutImpl::New1()
 {
     Easing__QuarticInOutImpl* obj1 = (Easing__QuarticInOutImpl*)uNew(Easing__QuarticInOutImpl_typeof());
@@ -9400,10 +9714,10 @@ Easing__QuarticInOutImpl* Easing__QuarticInOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.QuarticOutImpl :573
+// internal sealed class Easing.QuarticOutImpl :728
 // {
 static void Easing__QuarticOutImpl_build(uType* type)
 {
@@ -9425,13 +9739,13 @@ static void Easing__QuarticOutImpl_build(uType* type)
     return type;
 }
 
-// public generated QuarticOutImpl() :573
+// public generated QuarticOutImpl() :728
 void Easing__QuarticOutImpl__ctor_1_fn(Easing__QuarticOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :575
+// public override sealed double Map(double k) :730
 void Easing__QuarticOutImpl__Map_fn(Easing__QuarticOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -9439,19 +9753,19 @@ void Easing__QuarticOutImpl__Map_fn(Easing__QuarticOutImpl* __this, double* k, d
     return *__retval = 1.0 - (((k_ * k_) * k_) * k_), void();
 }
 
-// public generated QuarticOutImpl New() :573
+// public generated QuarticOutImpl New() :728
 void Easing__QuarticOutImpl__New1_fn(Easing__QuarticOutImpl** __retval)
 {
     *__retval = Easing__QuarticOutImpl::New1();
 }
 
-// public generated QuarticOutImpl() [instance] :573
+// public generated QuarticOutImpl() [instance] :728
 void Easing__QuarticOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuarticOutImpl New() [static] :573
+// public generated QuarticOutImpl New() [static] :728
 Easing__QuarticOutImpl* Easing__QuarticOutImpl::New1()
 {
     Easing__QuarticOutImpl* obj1 = (Easing__QuarticOutImpl*)uNew(Easing__QuarticOutImpl_typeof());
@@ -9460,10 +9774,10 @@ Easing__QuarticOutImpl* Easing__QuarticOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.QuinticInImpl :594
+// internal sealed class Easing.QuinticInImpl :749
 // {
 static void Easing__QuinticInImpl_build(uType* type)
 {
@@ -9485,32 +9799,32 @@ static void Easing__QuinticInImpl_build(uType* type)
     return type;
 }
 
-// public generated QuinticInImpl() :594
+// public generated QuinticInImpl() :749
 void Easing__QuinticInImpl__ctor_1_fn(Easing__QuinticInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :596
+// public override sealed double Map(double k) :751
 void Easing__QuinticInImpl__Map_fn(Easing__QuinticInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = (((k_ * k_) * k_) * k_) * k_, void();
 }
 
-// public generated QuinticInImpl New() :594
+// public generated QuinticInImpl New() :749
 void Easing__QuinticInImpl__New1_fn(Easing__QuinticInImpl** __retval)
 {
     *__retval = Easing__QuinticInImpl::New1();
 }
 
-// public generated QuinticInImpl() [instance] :594
+// public generated QuinticInImpl() [instance] :749
 void Easing__QuinticInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuinticInImpl New() [static] :594
+// public generated QuinticInImpl New() [static] :749
 Easing__QuinticInImpl* Easing__QuinticInImpl::New1()
 {
     Easing__QuinticInImpl* obj1 = (Easing__QuinticInImpl*)uNew(Easing__QuinticInImpl_typeof());
@@ -9519,10 +9833,10 @@ Easing__QuinticInImpl* Easing__QuinticInImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.QuinticInOutImpl :611
+// internal sealed class Easing.QuinticInOutImpl :766
 // {
 static void Easing__QuinticInOutImpl_build(uType* type)
 {
@@ -9544,13 +9858,13 @@ static void Easing__QuinticInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated QuinticInOutImpl() :611
+// public generated QuinticInOutImpl() :766
 void Easing__QuinticInOutImpl__ctor_1_fn(Easing__QuinticInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :613
+// public override sealed double Map(double k) :768
 void Easing__QuinticInOutImpl__Map_fn(Easing__QuinticInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -9563,19 +9877,19 @@ void Easing__QuinticInOutImpl__Map_fn(Easing__QuinticInOutImpl* __this, double* 
     return *__retval = 0.5 * (((((k_ * k_) * k_) * k_) * k_) + 2.0), void();
 }
 
-// public generated QuinticInOutImpl New() :611
+// public generated QuinticInOutImpl New() :766
 void Easing__QuinticInOutImpl__New1_fn(Easing__QuinticInOutImpl** __retval)
 {
     *__retval = Easing__QuinticInOutImpl::New1();
 }
 
-// public generated QuinticInOutImpl() [instance] :611
+// public generated QuinticInOutImpl() [instance] :766
 void Easing__QuinticInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuinticInOutImpl New() [static] :611
+// public generated QuinticInOutImpl New() [static] :766
 Easing__QuinticInOutImpl* Easing__QuinticInOutImpl::New1()
 {
     Easing__QuinticInOutImpl* obj1 = (Easing__QuinticInOutImpl*)uNew(Easing__QuinticInOutImpl_typeof());
@@ -9584,10 +9898,10 @@ Easing__QuinticInOutImpl* Easing__QuinticInOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.QuinticOutImpl :602
+// internal sealed class Easing.QuinticOutImpl :757
 // {
 static void Easing__QuinticOutImpl_build(uType* type)
 {
@@ -9609,13 +9923,13 @@ static void Easing__QuinticOutImpl_build(uType* type)
     return type;
 }
 
-// public generated QuinticOutImpl() :602
+// public generated QuinticOutImpl() :757
 void Easing__QuinticOutImpl__ctor_1_fn(Easing__QuinticOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :604
+// public override sealed double Map(double k) :759
 void Easing__QuinticOutImpl__Map_fn(Easing__QuinticOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
@@ -9623,19 +9937,19 @@ void Easing__QuinticOutImpl__Map_fn(Easing__QuinticOutImpl* __this, double* k, d
     return *__retval = ((((k_ * k_) * k_) * k_) * k_) + 1.0, void();
 }
 
-// public generated QuinticOutImpl New() :602
+// public generated QuinticOutImpl New() :757
 void Easing__QuinticOutImpl__New1_fn(Easing__QuinticOutImpl** __retval)
 {
     *__retval = Easing__QuinticOutImpl::New1();
 }
 
-// public generated QuinticOutImpl() [instance] :602
+// public generated QuinticOutImpl() [instance] :757
 void Easing__QuinticOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated QuinticOutImpl New() [static] :602
+// public generated QuinticOutImpl New() [static] :757
 Easing__QuinticOutImpl* Easing__QuinticOutImpl::New1()
 {
     Easing__QuinticOutImpl* obj1 = (Easing__QuinticOutImpl*)uNew(Easing__QuinticOutImpl_typeof());
@@ -9644,10 +9958,10 @@ Easing__QuinticOutImpl* Easing__QuinticOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public sealed class RangeAdapter<T> :2551
+// public sealed class RangeAdapter<T> :2754
 // {
 static void RangeAdapter_build(uType* type)
 {
@@ -9722,13 +10036,13 @@ RangeAdapter_type* RangeAdapter_typeof()
     return type;
 }
 
-// public RangeAdapter(Uno.UX.Property<T> source) :2558
+// public RangeAdapter(Uno.UX.Property<T> source) :2761
 void RangeAdapter__ctor_3_fn(RangeAdapter* __this, ::g::Uno::UX::Property1* source)
 {
     __this->ctor_3(source);
 }
 
-// private T In(T value) :2644
+// private T In(T value) :2847
 void RangeAdapter__In_fn(RangeAdapter* __this, void* value, uTRef __retval)
 {
     uType* __types[] = {
@@ -9743,13 +10057,13 @@ void RangeAdapter__In_fn(RangeAdapter* __this, void* value, uTRef __retval)
     return __retval.Store((uPtr(__this->_blender)->FromDouble_ex(uCRef(src), &ret3), ret3)), void();
 }
 
-// public RangeAdapter New(Uno.UX.Property<T> source) :2558
+// public RangeAdapter New(Uno.UX.Property<T> source) :2761
 void RangeAdapter__New2_fn(uType* __type, ::g::Uno::UX::Property1* source, RangeAdapter** __retval)
 {
     *__retval = RangeAdapter::New2(__type, source);
 }
 
-// protected override sealed void OnRooted() :2578
+// protected override sealed void OnRooted() :2781
 void RangeAdapter__OnRooted_fn(RangeAdapter* __this)
 {
     uStackFrame __("Fuse.Animations.RangeAdapter`1", "OnRooted()");
@@ -9757,7 +10071,7 @@ void RangeAdapter__OnRooted_fn(RangeAdapter* __this)
     uPtr(__this->Source())->AddListener((uObject*)__this);
 }
 
-// protected override sealed void OnUnrooted() :2584
+// protected override sealed void OnUnrooted() :2787
 void RangeAdapter__OnUnrooted_fn(RangeAdapter* __this)
 {
     uStackFrame __("Fuse.Animations.RangeAdapter`1", "OnUnrooted()");
@@ -9765,7 +10079,7 @@ void RangeAdapter__OnUnrooted_fn(RangeAdapter* __this)
     ::g::Fuse::Node__OnUnrooted_fn(__this);
 }
 
-// private T Out(T value) :2635
+// private T Out(T value) :2838
 void RangeAdapter__Out_fn(RangeAdapter* __this, void* value, uTRef __retval)
 {
     uType* __types[] = {
@@ -9780,7 +10094,7 @@ void RangeAdapter__Out_fn(RangeAdapter* __this, void* value, uTRef __retval)
     return __retval.Store((uPtr(__this->_blender)->FromDouble_ex(uCRef(dst), &ret5), ret5)), void();
 }
 
-// public void SetValue(T value, Uno.UX.IPropertyListener origin) :2573
+// public void SetValue(T value, Uno.UX.IPropertyListener origin) :2776
 void RangeAdapter__SetValue_fn(RangeAdapter* __this, void* value, uObject* origin)
 {
     uType* __types[] = {
@@ -9791,19 +10105,19 @@ void RangeAdapter__SetValue_fn(RangeAdapter* __this, void* value, uObject* origi
     ::g::Uno::UX::Property1__Set_fn(uPtr(__this->Source()), (RangeAdapter__In_fn(__this, value, &ret6), ret6), origin);
 }
 
-// public generated Uno.UX.Property<T> get_Source() :2553
+// public generated Uno.UX.Property<T> get_Source() :2756
 void RangeAdapter__get_Source_fn(RangeAdapter* __this, ::g::Uno::UX::Property1** __retval)
 {
     *__retval = __this->Source();
 }
 
-// private generated void set_Source(Uno.UX.Property<T> value) :2553
+// private generated void set_Source(Uno.UX.Property<T> value) :2756
 void RangeAdapter__set_Source_fn(RangeAdapter* __this, ::g::Uno::UX::Property1* value)
 {
     __this->Source(value);
 }
 
-// public T get_SourceRangeMax() :2611
+// public T get_SourceRangeMax() :2814
 void RangeAdapter__get_SourceRangeMax_fn(RangeAdapter* __this, uTRef __retval)
 {
     uType* __types[] = {
@@ -9814,7 +10128,7 @@ void RangeAdapter__get_SourceRangeMax_fn(RangeAdapter* __this, uTRef __retval)
     return __retval.Store((uPtr(__this->_blender)->FromDouble_ex(uCRef(__this->_sourceRangeMax), &ret7), ret7)), void();
 }
 
-// public void set_SourceRangeMax(T value) :2612
+// public void set_SourceRangeMax(T value) :2815
 void RangeAdapter__set_SourceRangeMax_fn(RangeAdapter* __this, void* value)
 {
     uStackFrame __("Fuse.Animations.RangeAdapter`1", "set_SourceRangeMax(T)");
@@ -9822,7 +10136,7 @@ void RangeAdapter__set_SourceRangeMax_fn(RangeAdapter* __this, void* value)
     __this->_sourceRangeMax = (uPtr(__this->_blender)->ToDouble_ex(value, &ret8), ret8);
 }
 
-// public T get_SourceRangeMin() :2602
+// public T get_SourceRangeMin() :2805
 void RangeAdapter__get_SourceRangeMin_fn(RangeAdapter* __this, uTRef __retval)
 {
     uType* __types[] = {
@@ -9833,7 +10147,7 @@ void RangeAdapter__get_SourceRangeMin_fn(RangeAdapter* __this, uTRef __retval)
     return __retval.Store((uPtr(__this->_blender)->FromDouble_ex(uCRef(__this->_sourceRangeMin), &ret9), ret9)), void();
 }
 
-// public void set_SourceRangeMin(T value) :2603
+// public void set_SourceRangeMin(T value) :2806
 void RangeAdapter__set_SourceRangeMin_fn(RangeAdapter* __this, void* value)
 {
     uStackFrame __("Fuse.Animations.RangeAdapter`1", "set_SourceRangeMin(T)");
@@ -9841,14 +10155,14 @@ void RangeAdapter__set_SourceRangeMin_fn(RangeAdapter* __this, void* value)
     __this->_sourceRangeMin = (uPtr(__this->_blender)->ToDouble_ex(value, &ret10), ret10);
 }
 
-// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector sel) :2591
+// private void Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject obj, Uno.UX.Selector sel) :2794
 void RangeAdapter__UnoUXIPropertyListenerOnPropertyChanged_fn(RangeAdapter* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Uno::UX::Selector* sel)
 {
     uStackFrame __("Fuse.Animations.RangeAdapter`1", "Uno.UX.IPropertyListener.OnPropertyChanged(Uno.UX.PropertyObject,Uno.UX.Selector)");
     __this->OnPropertyChanged(::g::Fuse::Animations::RangeAdapterHelpers::_valueName());
 }
 
-// public T get_Value() :2569
+// public T get_Value() :2772
 void RangeAdapter__get_Value_fn(RangeAdapter* __this, uTRef __retval)
 {
     uType* __types[] = {
@@ -9860,14 +10174,14 @@ void RangeAdapter__get_Value_fn(RangeAdapter* __this, uTRef __retval)
     return __retval.Store((RangeAdapter__Out_fn(__this, (::g::Uno::UX::Property1__Get_fn(uPtr(__this->Source()), &ret12), ret12), &ret11), ret11)), void();
 }
 
-// public void set_Value(T value) :2570
+// public void set_Value(T value) :2773
 void RangeAdapter__set_Value_fn(RangeAdapter* __this, void* value)
 {
     uStackFrame __("Fuse.Animations.RangeAdapter`1", "set_Value(T)");
     RangeAdapter__SetValue_fn(__this, value, (uObject*)__this);
 }
 
-// public T get_ValueRangeMax() :2630
+// public T get_ValueRangeMax() :2833
 void RangeAdapter__get_ValueRangeMax_fn(RangeAdapter* __this, uTRef __retval)
 {
     uType* __types[] = {
@@ -9878,7 +10192,7 @@ void RangeAdapter__get_ValueRangeMax_fn(RangeAdapter* __this, uTRef __retval)
     return __retval.Store((uPtr(__this->_blender)->FromDouble_ex(uCRef(__this->_valueRangeMax), &ret13), ret13)), void();
 }
 
-// public void set_ValueRangeMax(T value) :2631
+// public void set_ValueRangeMax(T value) :2834
 void RangeAdapter__set_ValueRangeMax_fn(RangeAdapter* __this, void* value)
 {
     uStackFrame __("Fuse.Animations.RangeAdapter`1", "set_ValueRangeMax(T)");
@@ -9886,7 +10200,7 @@ void RangeAdapter__set_ValueRangeMax_fn(RangeAdapter* __this, void* value)
     __this->_valueRangeMax = (uPtr(__this->_blender)->ToDouble_ex(value, &ret14), ret14);
 }
 
-// public T get_ValueRangeMin() :2621
+// public T get_ValueRangeMin() :2824
 void RangeAdapter__get_ValueRangeMin_fn(RangeAdapter* __this, uTRef __retval)
 {
     uType* __types[] = {
@@ -9897,7 +10211,7 @@ void RangeAdapter__get_ValueRangeMin_fn(RangeAdapter* __this, uTRef __retval)
     return __retval.Store((uPtr(__this->_blender)->FromDouble_ex(uCRef(__this->_valueRangeMin), &ret15), ret15)), void();
 }
 
-// public void set_ValueRangeMin(T value) :2622
+// public void set_ValueRangeMin(T value) :2825
 void RangeAdapter__set_ValueRangeMin_fn(RangeAdapter* __this, void* value)
 {
     uStackFrame __("Fuse.Animations.RangeAdapter`1", "set_ValueRangeMin(T)");
@@ -9905,7 +10219,7 @@ void RangeAdapter__set_ValueRangeMin_fn(RangeAdapter* __this, void* value)
     __this->_valueRangeMin = (uPtr(__this->_blender)->ToDouble_ex(value, &ret16), ret16);
 }
 
-// public RangeAdapter(Uno.UX.Property<T> source) [instance] :2558
+// public RangeAdapter(Uno.UX.Property<T> source) [instance] :2761
 void RangeAdapter::ctor_3(::g::Uno::UX::Property1* source)
 {
     uType* __types[] = {
@@ -9921,19 +10235,19 @@ void RangeAdapter::ctor_3(::g::Uno::UX::Property1* source)
     Source(source);
 }
 
-// public generated Uno.UX.Property<T> get_Source() [instance] :2553
+// public generated Uno.UX.Property<T> get_Source() [instance] :2756
 ::g::Uno::UX::Property1* RangeAdapter::Source()
 {
     return _Source;
 }
 
-// private generated void set_Source(Uno.UX.Property<T> value) [instance] :2553
+// private generated void set_Source(Uno.UX.Property<T> value) [instance] :2756
 void RangeAdapter::Source(::g::Uno::UX::Property1* value)
 {
     _Source = value;
 }
 
-// public RangeAdapter New(Uno.UX.Property<T> source) [static] :2558
+// public RangeAdapter New(Uno.UX.Property<T> source) [static] :2761
 RangeAdapter* RangeAdapter::New2(uType* __type, ::g::Uno::UX::Property1* source)
 {
     RangeAdapter* obj1 = (RangeAdapter*)uNew(__type);
@@ -9942,12 +10256,12 @@ RangeAdapter* RangeAdapter::New2(uType* __type, ::g::Uno::UX::Property1* source)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal static class RangeAdapterHelpers :2521
+// internal static class RangeAdapterHelpers :2724
 // {
-// static RangeAdapterHelpers() :2521
+// static RangeAdapterHelpers() :2724
 static void RangeAdapterHelpers__cctor__fn(uType* __type)
 {
     RangeAdapterHelpers::_valueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[16/*"Value"*/]);
@@ -9977,10 +10291,10 @@ uClassType* RangeAdapterHelpers_typeof()
 ::g::Uno::UX::Selector RangeAdapterHelpers::_valueName_;
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public sealed class Resize :2688
+// public sealed class Resize :2891
 // {
 static void Resize_build(uType* type)
 {
@@ -10021,178 +10335,178 @@ static void Resize_build(uType* type)
     return type;
 }
 
-// public generated Resize() :2688
+// public generated Resize() :2891
 void Resize__ctor_3_fn(Resize* __this)
 {
     __this->ctor_3();
 }
 
-// internal override sealed Fuse.Animations.AnimatorState CreateState(Fuse.Animations.CreateStateParams p) :2734
+// internal override sealed Fuse.Animations.AnimatorState CreateState(Fuse.Animations.CreateStateParams p) :2937
 void Resize__CreateState_fn(Resize* __this, ::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse::Animations::AnimatorState** __retval)
 {
     return *__retval = ::g::Fuse::Animations::ResizeAnimatorState::New1(__this, p), void();
 }
 
-// public generated Resize New() :2688
+// public generated Resize New() :2891
 void Resize__New2_fn(Resize** __retval)
 {
     *__retval = Resize::New2();
 }
 
-// public generated Fuse.Visual get_RelativeNode() :2694
+// public generated Fuse.Visual get_RelativeNode() :2897
 void Resize__get_RelativeNode_fn(Resize* __this, ::g::Fuse::Visual** __retval)
 {
     *__retval = __this->RelativeNode();
 }
 
-// public generated void set_RelativeNode(Fuse.Visual value) :2694
+// public generated void set_RelativeNode(Fuse.Visual value) :2897
 void Resize__set_RelativeNode_fn(Resize* __this, ::g::Fuse::Visual* value)
 {
     __this->RelativeNode(value);
 }
 
-// public Fuse.Animations.IResizeMode get_RelativeTo() :2705
+// public Fuse.Animations.IResizeMode get_RelativeTo() :2908
 void Resize__get_RelativeTo_fn(Resize* __this, uObject** __retval)
 {
     *__retval = __this->RelativeTo();
 }
 
-// public void set_RelativeTo(Fuse.Animations.IResizeMode value) :2706
+// public void set_RelativeTo(Fuse.Animations.IResizeMode value) :2909
 void Resize__set_RelativeTo_fn(Resize* __this, uObject* value)
 {
     __this->RelativeTo(value);
 }
 
-// public generated Fuse.Visual get_Target() :2691
+// public generated Fuse.Visual get_Target() :2894
 void Resize__get_Target_fn(Resize* __this, ::g::Fuse::Visual** __retval)
 {
     *__retval = __this->Target();
 }
 
-// public generated void set_Target(Fuse.Visual value) :2691
+// public generated void set_Target(Fuse.Visual value) :2894
 void Resize__set_Target_fn(Resize* __this, ::g::Fuse::Visual* value)
 {
     __this->Target(value);
 }
 
-// public float2 get_Vector() :2730
+// public float2 get_Vector() :2933
 void Resize__get_Vector_fn(Resize* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->Vector();
 }
 
-// public void set_Vector(float2 value) :2731
+// public void set_Vector(float2 value) :2934
 void Resize__set_Vector_fn(Resize* __this, ::g::Uno::Float2* value)
 {
     __this->Vector(*value);
 }
 
-// public float get_X() :2712
+// public float get_X() :2915
 void Resize__get_X_fn(Resize* __this, float* __retval)
 {
     *__retval = __this->X();
 }
 
-// public void set_X(float value) :2713
+// public void set_X(float value) :2916
 void Resize__set_X_fn(Resize* __this, float* value)
 {
     __this->X(*value);
 }
 
-// public float get_Y() :2719
+// public float get_Y() :2922
 void Resize__get_Y_fn(Resize* __this, float* __retval)
 {
     *__retval = __this->Y();
 }
 
-// public void set_Y(float value) :2720
+// public void set_Y(float value) :2923
 void Resize__set_Y_fn(Resize* __this, float* value)
 {
     __this->Y(*value);
 }
 
-// public generated Resize() [instance] :2688
+// public generated Resize() [instance] :2891
 void Resize::ctor_3()
 {
     uStackFrame __("Fuse.Animations.Resize", ".ctor()");
     ctor_2();
 }
 
-// public generated Fuse.Visual get_RelativeNode() [instance] :2694
+// public generated Fuse.Visual get_RelativeNode() [instance] :2897
 ::g::Fuse::Visual* Resize::RelativeNode()
 {
     return _RelativeNode;
 }
 
-// public generated void set_RelativeNode(Fuse.Visual value) [instance] :2694
+// public generated void set_RelativeNode(Fuse.Visual value) [instance] :2897
 void Resize::RelativeNode(::g::Fuse::Visual* value)
 {
     _RelativeNode = value;
 }
 
-// public Fuse.Animations.IResizeMode get_RelativeTo() [instance] :2705
+// public Fuse.Animations.IResizeMode get_RelativeTo() [instance] :2908
 uObject* Resize::RelativeTo()
 {
     return _resizeMode;
 }
 
-// public void set_RelativeTo(Fuse.Animations.IResizeMode value) [instance] :2706
+// public void set_RelativeTo(Fuse.Animations.IResizeMode value) [instance] :2909
 void Resize::RelativeTo(uObject* value)
 {
     _resizeMode = value;
 }
 
-// public generated Fuse.Visual get_Target() [instance] :2691
+// public generated Fuse.Visual get_Target() [instance] :2894
 ::g::Fuse::Visual* Resize::Target()
 {
     return _Target;
 }
 
-// public generated void set_Target(Fuse.Visual value) [instance] :2691
+// public generated void set_Target(Fuse.Visual value) [instance] :2894
 void Resize::Target(::g::Fuse::Visual* value)
 {
     _Target = value;
 }
 
-// public float2 get_Vector() [instance] :2730
+// public float2 get_Vector() [instance] :2933
 ::g::Uno::Float2 Resize::Vector()
 {
     ::g::Uno::Float4 ind1 = _vectorValue;
     return ::g::Uno::Float2__New2(ind1.X, ind1.Y);
 }
 
-// public void set_Vector(float2 value) [instance] :2731
+// public void set_Vector(float2 value) [instance] :2934
 void Resize::Vector(::g::Uno::Float2 value)
 {
     ::g::Uno::Float4 ind2;
     _vectorValue = ::g::Uno::Float4__New7(value, (ind2 = _vectorValue, ::g::Uno::Float2__New2(ind2.Z, ind2.W)));
 }
 
-// public float get_X() [instance] :2712
+// public float get_X() [instance] :2915
 float Resize::X()
 {
     return _vectorValue.X;
 }
 
-// public void set_X(float value) [instance] :2713
+// public void set_X(float value) [instance] :2916
 void Resize::X(float value)
 {
     _vectorValue.X = value;
 }
 
-// public float get_Y() [instance] :2719
+// public float get_Y() [instance] :2922
 float Resize::Y()
 {
     return _vectorValue.Y;
 }
 
-// public void set_Y(float value) [instance] :2720
+// public void set_Y(float value) [instance] :2923
 void Resize::Y(float value)
 {
     _vectorValue.Y = value;
 }
 
-// public generated Resize New() [static] :2688
+// public generated Resize New() [static] :2891
 Resize* Resize::New2()
 {
     Resize* obj3 = (Resize*)uNew(Resize_typeof());
@@ -10201,28 +10515,28 @@ Resize* Resize::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class ResizeAnimatorState :2740
+// internal sealed class ResizeAnimatorState :2943
 // {
 static void ResizeAnimatorState_build(uType* type)
 {
     ::STRINGS[17] = uString::Const("Resize started without a Target node");
-    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
+    ::STRINGS[2] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno");
     ::STRINGS[18] = uString::Const(".ctor");
     ::STRINGS[19] = uString::Const("Resize started without as RelativeTo");
-    ::TYPES[64] = ::g::Fuse::Animations::IResize_typeof();
-    ::TYPES[65] = ::g::Fuse::IActualPlacement_typeof();
-    ::TYPES[66] = ::g::Fuse::PlacedHandler_typeof();
-    ::TYPES[67] = ::g::Fuse::Animations::IResizeMode_typeof();
+    ::TYPES[65] = ::g::Fuse::Animations::IResize_typeof();
+    ::TYPES[66] = ::g::Fuse::IActualPlacement_typeof();
+    ::TYPES[67] = ::g::Fuse::PlacedHandler_typeof();
+    ::TYPES[68] = ::g::Fuse::Animations::IResizeMode_typeof();
     type->SetFields(6,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Animations::ResizeAnimatorState, _lastStrength), 0,
         ::g::Uno::Float4_typeof(), offsetof(::g::Fuse::Animations::ResizeAnimatorState, _lastValue), 0,
         ::g::Fuse::Visual_typeof(), offsetof(::g::Fuse::Animations::ResizeAnimatorState, _relativeNode), 0,
-        ::TYPES[67/*Fuse.Animations.IResizeMode*/], offsetof(::g::Fuse::Animations::ResizeAnimatorState, _relativeTo), 0,
+        ::TYPES[68/*Fuse.Animations.IResizeMode*/], offsetof(::g::Fuse::Animations::ResizeAnimatorState, _relativeTo), 0,
         ::g::Fuse::Animations::Resize_typeof(), offsetof(::g::Fuse::Animations::ResizeAnimatorState, _resize), 0,
-        ::TYPES[64/*Fuse.Animations.IResize*/], offsetof(::g::Fuse::Animations::ResizeAnimatorState, _target), 0,
+        ::TYPES[65/*Fuse.Animations.IResize*/], offsetof(::g::Fuse::Animations::ResizeAnimatorState, _target), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Animations::ResizeAnimatorState, _valid), 0);
 }
 
@@ -10243,13 +10557,13 @@ static void ResizeAnimatorState_build(uType* type)
     return type;
 }
 
-// public ResizeAnimatorState(Fuse.Animations.Resize r, Fuse.Animations.CreateStateParams p) :2748
+// public ResizeAnimatorState(Fuse.Animations.Resize r, Fuse.Animations.CreateStateParams p) :2951
 void ResizeAnimatorState__ctor_2_fn(ResizeAnimatorState* __this, ::g::Fuse::Animations::Resize* r, ::g::Fuse::Animations::CreateStateParams* p)
 {
     __this->ctor_2(r, p);
 }
 
-// public override sealed void Disable() :2779
+// public override sealed void Disable() :2982
 void ResizeAnimatorState__Disable_fn(ResizeAnimatorState* __this)
 {
     uStackFrame __("Fuse.Animations.ResizeAnimatorState", "Disable()");
@@ -10258,30 +10572,30 @@ void ResizeAnimatorState__Disable_fn(ResizeAnimatorState* __this)
     if (!__this->_valid)
         return;
 
-    uObject* e = uAs<uObject*>(__this->_target, ::TYPES[65/*Fuse.IActualPlacement*/]);
+    uObject* e = uAs<uObject*>(__this->_target, ::TYPES[66/*Fuse.IActualPlacement*/]);
 
     if (e != NULL)
-        ::g::Fuse::IActualPlacement::remove_Placed(uInterface(uPtr(e), ::TYPES[65/*Fuse.IActualPlacement*/]), uDelegate::New(::TYPES[66/*Fuse.PlacedHandler*/], (void*)ResizeAnimatorState__OnPlaced_fn, __this));
+        ::g::Fuse::IActualPlacement::remove_Placed(uInterface(uPtr(e), ::TYPES[66/*Fuse.IActualPlacement*/]), uDelegate::New(::TYPES[67/*Fuse.PlacedHandler*/], (void*)ResizeAnimatorState__OnPlaced_fn, __this));
 
-    uObject* elm = uAs<uObject*>(__this->_relativeNode, ::TYPES[65/*Fuse.IActualPlacement*/]);
+    uObject* elm = uAs<uObject*>(__this->_relativeNode, ::TYPES[66/*Fuse.IActualPlacement*/]);
 
     if (elm != NULL)
-        ::g::Fuse::IActualPlacement::remove_Placed(uInterface(uPtr(elm), ::TYPES[65/*Fuse.IActualPlacement*/]), uDelegate::New(::TYPES[66/*Fuse.PlacedHandler*/], (void*)ResizeAnimatorState__OnPlaced_fn, __this));
+        ::g::Fuse::IActualPlacement::remove_Placed(uInterface(uPtr(elm), ::TYPES[66/*Fuse.IActualPlacement*/]), uDelegate::New(::TYPES[67/*Fuse.PlacedHandler*/], (void*)ResizeAnimatorState__OnPlaced_fn, __this));
 }
 
-// public ResizeAnimatorState New(Fuse.Animations.Resize r, Fuse.Animations.CreateStateParams p) :2748
+// public ResizeAnimatorState New(Fuse.Animations.Resize r, Fuse.Animations.CreateStateParams p) :2951
 void ResizeAnimatorState__New1_fn(::g::Fuse::Animations::Resize* r, ::g::Fuse::Animations::CreateStateParams* p, ResizeAnimatorState** __retval)
 {
     *__retval = ResizeAnimatorState::New1(r, p);
 }
 
-// private void OnPlaced(object s, object a) :2818
+// private void OnPlaced(object s, object a) :3021
 void ResizeAnimatorState__OnPlaced_fn(ResizeAnimatorState* __this, uObject* s, uObject* a)
 {
     __this->OnPlaced(s, a);
 }
 
-// protected override sealed void SeekValue(float4 value, float strength) :2796
+// protected override sealed void SeekValue(float4 value, float strength) :2999
 void ResizeAnimatorState__SeekValue_fn(ResizeAnimatorState* __this, ::g::Uno::Float4* value, float* strength)
 {
     uStackFrame __("Fuse.Animations.ResizeAnimatorState", "SeekValue(float4,float)");
@@ -10292,13 +10606,13 @@ void ResizeAnimatorState__SeekValue_fn(ResizeAnimatorState* __this, ::g::Uno::Fl
     __this->Update(value_, strength_);
 }
 
-// private void Update(float4 value, float strength) :2803
+// private void Update(float4 value, float strength) :3006
 void ResizeAnimatorState__Update_fn(ResizeAnimatorState* __this, ::g::Uno::Float4* value, float* strength)
 {
     __this->Update(*value, *strength);
 }
 
-// public ResizeAnimatorState(Fuse.Animations.Resize r, Fuse.Animations.CreateStateParams p) [instance] :2748
+// public ResizeAnimatorState(Fuse.Animations.Resize r, Fuse.Animations.CreateStateParams p) [instance] :2951
 void ResizeAnimatorState::ctor_2(::g::Fuse::Animations::Resize* r, ::g::Fuse::Animations::CreateStateParams* p)
 {
     uStackFrame __("Fuse.Animations.ResizeAnimatorState", ".ctor(Fuse.Animations.Resize,Fuse.Animations.CreateStateParams)");
@@ -10306,11 +10620,11 @@ void ResizeAnimatorState::ctor_2(::g::Fuse::Animations::Resize* r, ::g::Fuse::An
     _valid = true;
     ctor_1(r, p, uPtr(r)->Target());
     _resize = r;
-    _target = uAs<uObject*>(Visual, ::TYPES[64/*Fuse.Animations.IResize*/]);
+    _target = uAs<uObject*>(Visual, ::TYPES[65/*Fuse.Animations.IResize*/]);
 
     if (_target == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[17/*"Resize star...*/], r, ::STRINGS[2/*"/Users/eric...*/], 2754, ::STRINGS[18/*".ctor"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[17/*"Resize star...*/], r, ::STRINGS[2/*"/usr/local/...*/], 2957, ::STRINGS[18/*".ctor"*/]);
         _valid = false;
         return;
     }
@@ -10319,31 +10633,31 @@ void ResizeAnimatorState::ctor_2(::g::Fuse::Animations::Resize* r, ::g::Fuse::An
 
     if (_relativeTo == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::STRINGS[19/*"Resize star...*/], r, ::STRINGS[2/*"/Users/eric...*/], 2762, ::STRINGS[18/*".ctor"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::STRINGS[19/*"Resize star...*/], r, ::STRINGS[2/*"/usr/local/...*/], 2965, ::STRINGS[18/*".ctor"*/]);
         _valid = false;
         return;
     }
 
     _relativeNode = (ind1 = uPtr(_resize)->RelativeNode(), ((ind1 != NULL) ? ind1 : (::g::Fuse::Visual*)Visual));
-    uObject* elm = uAs<uObject*>(_relativeNode, ::TYPES[65/*Fuse.IActualPlacement*/]);
+    uObject* elm = uAs<uObject*>(_relativeNode, ::TYPES[66/*Fuse.IActualPlacement*/]);
 
     if (elm != NULL)
-        ::g::Fuse::IActualPlacement::add_Placed(uInterface(uPtr(elm), ::TYPES[65/*Fuse.IActualPlacement*/]), uDelegate::New(::TYPES[66/*Fuse.PlacedHandler*/], (void*)ResizeAnimatorState__OnPlaced_fn, this));
+        ::g::Fuse::IActualPlacement::add_Placed(uInterface(uPtr(elm), ::TYPES[66/*Fuse.IActualPlacement*/]), uDelegate::New(::TYPES[67/*Fuse.PlacedHandler*/], (void*)ResizeAnimatorState__OnPlaced_fn, this));
 
-    uObject* e = uAs<uObject*>(_target, ::TYPES[65/*Fuse.IActualPlacement*/]);
+    uObject* e = uAs<uObject*>(_target, ::TYPES[66/*Fuse.IActualPlacement*/]);
 
     if (e != NULL)
-        ::g::Fuse::IActualPlacement::add_Placed(uInterface(uPtr(e), ::TYPES[65/*Fuse.IActualPlacement*/]), uDelegate::New(::TYPES[66/*Fuse.PlacedHandler*/], (void*)ResizeAnimatorState__OnPlaced_fn, this));
+        ::g::Fuse::IActualPlacement::add_Placed(uInterface(uPtr(e), ::TYPES[66/*Fuse.IActualPlacement*/]), uDelegate::New(::TYPES[67/*Fuse.PlacedHandler*/], (void*)ResizeAnimatorState__OnPlaced_fn, this));
 }
 
-// private void OnPlaced(object s, object a) [instance] :2818
+// private void OnPlaced(object s, object a) [instance] :3021
 void ResizeAnimatorState::OnPlaced(uObject* s, uObject* a)
 {
     uStackFrame __("Fuse.Animations.ResizeAnimatorState", "OnPlaced(object,object)");
     Update(_lastValue, _lastStrength);
 }
 
-// private void Update(float4 value, float strength) [instance] :2803
+// private void Update(float4 value, float strength) [instance] :3006
 void ResizeAnimatorState::Update(::g::Uno::Float4 value, float strength)
 {
     uStackFrame __("Fuse.Animations.ResizeAnimatorState", "Update(float4,float)");
@@ -10354,14 +10668,14 @@ void ResizeAnimatorState::Update(::g::Uno::Float4 value, float strength)
     ::g::Uno::Float2 baseSize;
     ::g::Uno::Float2 deltaSize;
 
-    if (::g::Fuse::Animations::IResizeMode::GetSizeChange(uInterface(uPtr(_relativeTo), ::TYPES[67/*Fuse.Animations.IResizeMode*/]), Visual, _relativeNode, &baseSize, &deltaSize))
+    if (::g::Fuse::Animations::IResizeMode::GetSizeChange(uInterface(uPtr(_relativeTo), ::TYPES[68/*Fuse.Animations.IResizeMode*/]), Visual, _relativeNode, &baseSize, &deltaSize))
     {
         ::g::Uno::Float2 sz = ::g::Uno::Float2__op_Addition2(baseSize, ::g::Uno::Float2__op_Multiply1(::g::Uno::Float2__op_Multiply2(deltaSize, ::g::Uno::Float2__New2(value.X, value.Y)), strength));
-        ::g::Fuse::Animations::IResize::SetSize(uInterface(uPtr(_target), ::TYPES[64/*Fuse.Animations.IResize*/]), sz);
+        ::g::Fuse::Animations::IResize::SetSize(uInterface(uPtr(_target), ::TYPES[65/*Fuse.Animations.IResize*/]), sz);
     }
 }
 
-// public ResizeAnimatorState New(Fuse.Animations.Resize r, Fuse.Animations.CreateStateParams p) [static] :2748
+// public ResizeAnimatorState New(Fuse.Animations.Resize r, Fuse.Animations.CreateStateParams p) [static] :2951
 ResizeAnimatorState* ResizeAnimatorState::New1(::g::Fuse::Animations::Resize* r, ::g::Fuse::Animations::CreateStateParams* p)
 {
     ResizeAnimatorState* obj2 = (ResizeAnimatorState*)uNew(ResizeAnimatorState_typeof());
@@ -10370,10 +10684,10 @@ ResizeAnimatorState* ResizeAnimatorState::New1(::g::Fuse::Animations::Resize* r,
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public sealed class Rotate :3743
+// public sealed class Rotate :3949
 // {
 static void Rotate_build(uType* type)
 {
@@ -10408,67 +10722,67 @@ static void Rotate_build(uType* type)
     return type;
 }
 
-// public Rotate() :3745
+// public Rotate() :3951
 void Rotate__ctor_4_fn(Rotate* __this)
 {
     __this->ctor_4();
 }
 
-// public float get_Degrees() :3753
+// public float get_Degrees() :3959
 void Rotate__get_Degrees_fn(Rotate* __this, float* __retval)
 {
     *__retval = __this->Degrees();
 }
 
-// public void set_Degrees(float value) :3754
+// public void set_Degrees(float value) :3960
 void Rotate__set_Degrees_fn(Rotate* __this, float* value)
 {
     __this->Degrees(*value);
 }
 
-// public float get_DegreesX() :3760
+// public float get_DegreesX() :3966
 void Rotate__get_DegreesX_fn(Rotate* __this, float* __retval)
 {
     *__retval = __this->DegreesX();
 }
 
-// public void set_DegreesX(float value) :3761
+// public void set_DegreesX(float value) :3967
 void Rotate__set_DegreesX_fn(Rotate* __this, float* value)
 {
     __this->DegreesX(*value);
 }
 
-// public float get_DegreesY() :3767
+// public float get_DegreesY() :3973
 void Rotate__get_DegreesY_fn(Rotate* __this, float* __retval)
 {
     *__retval = __this->DegreesY();
 }
 
-// public void set_DegreesY(float value) :3768
+// public void set_DegreesY(float value) :3974
 void Rotate__set_DegreesY_fn(Rotate* __this, float* value)
 {
     __this->DegreesY(*value);
 }
 
-// public float get_DegreesZ() :3774
+// public float get_DegreesZ() :3980
 void Rotate__get_DegreesZ_fn(Rotate* __this, float* __retval)
 {
     *__retval = __this->DegreesZ();
 }
 
-// public void set_DegreesZ(float value) :3775
+// public void set_DegreesZ(float value) :3981
 void Rotate__set_DegreesZ_fn(Rotate* __this, float* value)
 {
     __this->DegreesZ(*value);
 }
 
-// public Rotate New() :3745
+// public Rotate New() :3951
 void Rotate__New2_fn(Rotate** __retval)
 {
     *__retval = Rotate::New2();
 }
 
-// internal override sealed void Update(Fuse.Visual elm, Fuse.Rotation t, float4 value) :3778
+// internal override sealed void Update(Fuse.Visual elm, Fuse.Rotation t, float4 value) :3984
 void Rotate__Update_fn(Rotate* __this, ::g::Fuse::Visual* elm, ::g::Fuse::Rotation* t, ::g::Uno::Float4* value)
 {
     uStackFrame __("Fuse.Animations.Rotate", "Update(Fuse.Visual,Fuse.Rotation,float4)");
@@ -10476,62 +10790,62 @@ void Rotate__Update_fn(Rotate* __this, ::g::Fuse::Visual* elm, ::g::Fuse::Rotati
     uPtr(t)->EulerAngle(::g::Uno::Float3__New2(value_.X, value_.Y, value_.Z));
 }
 
-// public Rotate() [instance] :3745
+// public Rotate() [instance] :3951
 void Rotate::ctor_4()
 {
     ctor_3();
     Priority(3000);
 }
 
-// public float get_Degrees() [instance] :3753
+// public float get_Degrees() [instance] :3959
 float Rotate::Degrees()
 {
     return DegreesZ();
 }
 
-// public void set_Degrees(float value) [instance] :3754
+// public void set_Degrees(float value) [instance] :3960
 void Rotate::Degrees(float value)
 {
     DegreesZ(value);
 }
 
-// public float get_DegreesX() [instance] :3760
+// public float get_DegreesX() [instance] :3966
 float Rotate::DegreesX()
 {
     return ::g::Uno::Math::RadiansToDegrees1(X());
 }
 
-// public void set_DegreesX(float value) [instance] :3761
+// public void set_DegreesX(float value) [instance] :3967
 void Rotate::DegreesX(float value)
 {
     X(::g::Uno::Math::DegreesToRadians1(value));
 }
 
-// public float get_DegreesY() [instance] :3767
+// public float get_DegreesY() [instance] :3973
 float Rotate::DegreesY()
 {
     return ::g::Uno::Math::RadiansToDegrees1(Y());
 }
 
-// public void set_DegreesY(float value) [instance] :3768
+// public void set_DegreesY(float value) [instance] :3974
 void Rotate::DegreesY(float value)
 {
     Y(::g::Uno::Math::DegreesToRadians1(value));
 }
 
-// public float get_DegreesZ() [instance] :3774
+// public float get_DegreesZ() [instance] :3980
 float Rotate::DegreesZ()
 {
     return ::g::Uno::Math::RadiansToDegrees1(Z());
 }
 
-// public void set_DegreesZ(float value) [instance] :3775
+// public void set_DegreesZ(float value) [instance] :3981
 void Rotate::DegreesZ(float value)
 {
     Z(::g::Uno::Math::DegreesToRadians1(value));
 }
 
-// public Rotate New() [static] :3745
+// public Rotate New() [static] :3951
 Rotate* Rotate::New2()
 {
     Rotate* obj1 = (Rotate*)uNew(Rotate_typeof());
@@ -10540,10 +10854,10 @@ Rotate* Rotate::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public sealed class Scale :3805
+// public sealed class Scale :4011
 // {
 static void Scale_build(uType* type)
 {
@@ -10575,43 +10889,43 @@ static void Scale_build(uType* type)
     return type;
 }
 
-// public Scale() :3815
+// public Scale() :4021
 void Scale__ctor_4_fn(Scale* __this)
 {
     __this->ctor_4();
 }
 
-// public float get_Factor() :3824
+// public float get_Factor() :4030
 void Scale__get_Factor_fn(Scale* __this, float* __retval)
 {
     *__retval = __this->Factor();
 }
 
-// public void set_Factor(float value) :3825
+// public void set_Factor(float value) :4031
 void Scale__set_Factor_fn(Scale* __this, float* value)
 {
     __this->Factor(*value);
 }
 
-// public Scale New() :3815
+// public Scale New() :4021
 void Scale__New2_fn(Scale** __retval)
 {
     *__retval = Scale::New2();
 }
 
-// public Fuse.IScalingMode get_RelativeTo() :3811
+// public Fuse.IScalingMode get_RelativeTo() :4017
 void Scale__get_RelativeTo_fn(Scale* __this, uObject** __retval)
 {
     *__retval = __this->RelativeTo();
 }
 
-// public void set_RelativeTo(Fuse.IScalingMode value) :3812
+// public void set_RelativeTo(Fuse.IScalingMode value) :4018
 void Scale__set_RelativeTo_fn(Scale* __this, uObject* value)
 {
     __this->RelativeTo(value);
 }
 
-// internal override sealed void Update(Fuse.Visual elm, Fuse.Scaling t, float4 value) :3828
+// internal override sealed void Update(Fuse.Visual elm, Fuse.Scaling t, float4 value) :4034
 void Scale__Update_fn(Scale* __this, ::g::Fuse::Visual* elm, ::g::Fuse::Scaling* t, ::g::Uno::Float4* value)
 {
     uStackFrame __("Fuse.Animations.Scale", "Update(Fuse.Visual,Fuse.Scaling,float4)");
@@ -10622,7 +10936,7 @@ void Scale__Update_fn(Scale* __this, ::g::Fuse::Visual* elm, ::g::Fuse::Scaling*
     t->Vector(::g::Uno::Float3__New2(value_.X, value_.Y, value_.Z));
 }
 
-// public Scale() [instance] :3815
+// public Scale() [instance] :4021
 void Scale::ctor_4()
 {
     _relativeTo = ::g::Fuse::ScalingModes::Identity();
@@ -10631,31 +10945,31 @@ void Scale::ctor_4()
     _vectorValue = ::g::Uno::Float4__New1(1.0f);
 }
 
-// public float get_Factor() [instance] :3824
+// public float get_Factor() [instance] :4030
 float Scale::Factor()
 {
     return X();
 }
 
-// public void set_Factor(float value) [instance] :3825
+// public void set_Factor(float value) [instance] :4031
 void Scale::Factor(float value)
 {
     _vectorValue = ::g::Uno::Float4__New1(value);
 }
 
-// public Fuse.IScalingMode get_RelativeTo() [instance] :3811
+// public Fuse.IScalingMode get_RelativeTo() [instance] :4017
 uObject* Scale::RelativeTo()
 {
     return _relativeTo;
 }
 
-// public void set_RelativeTo(Fuse.IScalingMode value) [instance] :3812
+// public void set_RelativeTo(Fuse.IScalingMode value) [instance] :4018
 void Scale::RelativeTo(uObject* value)
 {
     _relativeTo = value;
 }
 
-// public Scale New() [static] :3815
+// public Scale New() [static] :4021
 Scale* Scale::New2()
 {
     Scale* obj2 = (Scale*)uNew(Scale_typeof());
@@ -10664,8 +10978,8 @@ Scale* Scale::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
 // internal enum SeekDirection :110
 uEnumType* SeekDirection_typeof()
@@ -10680,10 +10994,10 @@ uEnumType* SeekDirection_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public enum TriggerAnimationState.SeekFlags :4375
+// public enum TriggerAnimationState.SeekFlags :4583
 uEnumType* TriggerAnimationState__SeekFlags_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -10696,8 +11010,8 @@ uEnumType* TriggerAnimationState__SeekFlags_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
 // internal enum SeekResult :117
 uEnumType* SeekResult_typeof()
@@ -10713,10 +11027,10 @@ uEnumType* SeekResult_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.SinusoidalInImpl :624
+// internal sealed class Easing.SinusoidalInImpl :779
 // {
 static void Easing__SinusoidalInImpl_build(uType* type)
 {
@@ -10738,32 +11052,32 @@ static void Easing__SinusoidalInImpl_build(uType* type)
     return type;
 }
 
-// public generated SinusoidalInImpl() :624
+// public generated SinusoidalInImpl() :779
 void Easing__SinusoidalInImpl__ctor_1_fn(Easing__SinusoidalInImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :626
+// public override sealed double Map(double k) :781
 void Easing__SinusoidalInImpl__Map_fn(Easing__SinusoidalInImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = 1.0 - ::g::Uno::Math::Cos((k_ * 3.1415926535897931) / 2.0), void();
 }
 
-// public generated SinusoidalInImpl New() :624
+// public generated SinusoidalInImpl New() :779
 void Easing__SinusoidalInImpl__New1_fn(Easing__SinusoidalInImpl** __retval)
 {
     *__retval = Easing__SinusoidalInImpl::New1();
 }
 
-// public generated SinusoidalInImpl() [instance] :624
+// public generated SinusoidalInImpl() [instance] :779
 void Easing__SinusoidalInImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated SinusoidalInImpl New() [static] :624
+// public generated SinusoidalInImpl New() [static] :779
 Easing__SinusoidalInImpl* Easing__SinusoidalInImpl::New1()
 {
     Easing__SinusoidalInImpl* obj1 = (Easing__SinusoidalInImpl*)uNew(Easing__SinusoidalInImpl_typeof());
@@ -10772,10 +11086,10 @@ Easing__SinusoidalInImpl* Easing__SinusoidalInImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.SinusoidalInOutImpl :640
+// internal sealed class Easing.SinusoidalInOutImpl :795
 // {
 static void Easing__SinusoidalInOutImpl_build(uType* type)
 {
@@ -10797,32 +11111,32 @@ static void Easing__SinusoidalInOutImpl_build(uType* type)
     return type;
 }
 
-// public generated SinusoidalInOutImpl() :640
+// public generated SinusoidalInOutImpl() :795
 void Easing__SinusoidalInOutImpl__ctor_1_fn(Easing__SinusoidalInOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :642
+// public override sealed double Map(double k) :797
 void Easing__SinusoidalInOutImpl__Map_fn(Easing__SinusoidalInOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = 0.5 * (1.0 - ::g::Uno::Math::Cos(3.1415926535897931 * k_)), void();
 }
 
-// public generated SinusoidalInOutImpl New() :640
+// public generated SinusoidalInOutImpl New() :795
 void Easing__SinusoidalInOutImpl__New1_fn(Easing__SinusoidalInOutImpl** __retval)
 {
     *__retval = Easing__SinusoidalInOutImpl::New1();
 }
 
-// public generated SinusoidalInOutImpl() [instance] :640
+// public generated SinusoidalInOutImpl() [instance] :795
 void Easing__SinusoidalInOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated SinusoidalInOutImpl New() [static] :640
+// public generated SinusoidalInOutImpl New() [static] :795
 Easing__SinusoidalInOutImpl* Easing__SinusoidalInOutImpl::New1()
 {
     Easing__SinusoidalInOutImpl* obj1 = (Easing__SinusoidalInOutImpl*)uNew(Easing__SinusoidalInOutImpl_typeof());
@@ -10831,10 +11145,10 @@ Easing__SinusoidalInOutImpl* Easing__SinusoidalInOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/$.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.2.1/$.uno
+// -----------------------------------------------------
 
-// internal sealed class Easing.SinusoidalOutImpl :632
+// internal sealed class Easing.SinusoidalOutImpl :787
 // {
 static void Easing__SinusoidalOutImpl_build(uType* type)
 {
@@ -10856,32 +11170,32 @@ static void Easing__SinusoidalOutImpl_build(uType* type)
     return type;
 }
 
-// public generated SinusoidalOutImpl() :632
+// public generated SinusoidalOutImpl() :787
 void Easing__SinusoidalOutImpl__ctor_1_fn(Easing__SinusoidalOutImpl* __this)
 {
     __this->ctor_1();
 }
 
-// public override sealed double Map(double k) :634
+// public override sealed double Map(double k) :789
 void Easing__SinusoidalOutImpl__Map_fn(Easing__SinusoidalOutImpl* __this, double* k, double* __retval)
 {
     double k_ = *k;
     return *__retval = ::g::Uno::Math::Sin((k_ * 3.1415926535897931) / 2.0), void();
 }
 
-// public generated SinusoidalOutImpl New() :632
+// public generated SinusoidalOutImpl New() :787
 void Easing__SinusoidalOutImpl__New1_fn(Easing__SinusoidalOutImpl** __retval)
 {
     *__retval = Easing__SinusoidalOutImpl::New1();
 }
 
-// public generated SinusoidalOutImpl() [instance] :632
+// public generated SinusoidalOutImpl() [instance] :787
 void Easing__SinusoidalOutImpl::ctor_1()
 {
     ctor_();
 }
 
-// public generated SinusoidalOutImpl New() [static] :632
+// public generated SinusoidalOutImpl New() [static] :787
 Easing__SinusoidalOutImpl* Easing__SinusoidalOutImpl::New1()
 {
     Easing__SinusoidalOutImpl* obj1 = (Easing__SinusoidalOutImpl*)uNew(Easing__SinusoidalOutImpl_typeof());
@@ -10890,10 +11204,10 @@ Easing__SinusoidalOutImpl* Easing__SinusoidalOutImpl::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public sealed class Skew :3850
+// public sealed class Skew :4056
 // {
 static void Skew_build(uType* type)
 {
@@ -10928,55 +11242,55 @@ static void Skew_build(uType* type)
     return type;
 }
 
-// public Skew() :3852
+// public Skew() :4058
 void Skew__ctor_4_fn(Skew* __this)
 {
     __this->ctor_4();
 }
 
-// public float get_DegreesX() :3865
+// public float get_DegreesX() :4071
 void Skew__get_DegreesX_fn(Skew* __this, float* __retval)
 {
     *__retval = __this->DegreesX();
 }
 
-// public void set_DegreesX(float value) :3866
+// public void set_DegreesX(float value) :4072
 void Skew__set_DegreesX_fn(Skew* __this, float* value)
 {
     __this->DegreesX(*value);
 }
 
-// public float2 get_DegreesXY() :3886
+// public float2 get_DegreesXY() :4092
 void Skew__get_DegreesXY_fn(Skew* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->DegreesXY();
 }
 
-// public void set_DegreesXY(float2 value) :3887
+// public void set_DegreesXY(float2 value) :4093
 void Skew__set_DegreesXY_fn(Skew* __this, ::g::Uno::Float2* value)
 {
     __this->DegreesXY(*value);
 }
 
-// public float get_DegreesY() :3872
+// public float get_DegreesY() :4078
 void Skew__get_DegreesY_fn(Skew* __this, float* __retval)
 {
     *__retval = __this->DegreesY();
 }
 
-// public void set_DegreesY(float value) :3873
+// public void set_DegreesY(float value) :4079
 void Skew__set_DegreesY_fn(Skew* __this, float* value)
 {
     __this->DegreesY(*value);
 }
 
-// public Skew New() :3852
+// public Skew New() :4058
 void Skew__New2_fn(Skew** __retval)
 {
     *__retval = Skew::New2();
 }
 
-// internal override sealed void Update(Fuse.Visual elm, Fuse.Shear t, float4 value) :3857
+// internal override sealed void Update(Fuse.Visual elm, Fuse.Shear t, float4 value) :4063
 void Skew__Update_fn(Skew* __this, ::g::Fuse::Visual* elm, ::g::Fuse::Shear* t, ::g::Uno::Float4* value)
 {
     uStackFrame __("Fuse.Animations.Skew", "Update(Fuse.Visual,Fuse.Shear,float4)");
@@ -10984,75 +11298,75 @@ void Skew__Update_fn(Skew* __this, ::g::Fuse::Visual* elm, ::g::Fuse::Shear* t, 
     uPtr(t)->Vector(::g::Uno::Float2__New2(value_.X, value_.Y));
 }
 
-// public float2 get_XY() :3879
+// public float2 get_XY() :4085
 void Skew__get_XY_fn(Skew* __this, ::g::Uno::Float2* __retval)
 {
     *__retval = __this->XY();
 }
 
-// public void set_XY(float2 value) :3880
+// public void set_XY(float2 value) :4086
 void Skew__set_XY_fn(Skew* __this, ::g::Uno::Float2* value)
 {
     __this->XY(*value);
 }
 
-// public Skew() [instance] :3852
+// public Skew() [instance] :4058
 void Skew::ctor_4()
 {
     ctor_3();
     Priority(4000);
 }
 
-// public float get_DegreesX() [instance] :3865
+// public float get_DegreesX() [instance] :4071
 float Skew::DegreesX()
 {
     return ::g::Uno::Math::RadiansToDegrees1(X());
 }
 
-// public void set_DegreesX(float value) [instance] :3866
+// public void set_DegreesX(float value) [instance] :4072
 void Skew::DegreesX(float value)
 {
     X(::g::Uno::Math::DegreesToRadians1(value));
 }
 
-// public float2 get_DegreesXY() [instance] :3886
+// public float2 get_DegreesXY() [instance] :4092
 ::g::Uno::Float2 Skew::DegreesXY()
 {
     return ::g::Uno::Float2__New2(::g::Uno::Math::RadiansToDegrees1(X()), ::g::Uno::Math::RadiansToDegrees1(Y()));
 }
 
-// public void set_DegreesXY(float2 value) [instance] :3887
+// public void set_DegreesXY(float2 value) [instance] :4093
 void Skew::DegreesXY(::g::Uno::Float2 value)
 {
     XY(::g::Uno::Float2__New2(::g::Uno::Math::DegreesToRadians1(value.X), ::g::Uno::Math::DegreesToRadians1(value.Y)));
 }
 
-// public float get_DegreesY() [instance] :3872
+// public float get_DegreesY() [instance] :4078
 float Skew::DegreesY()
 {
     return ::g::Uno::Math::RadiansToDegrees1(Y());
 }
 
-// public void set_DegreesY(float value) [instance] :3873
+// public void set_DegreesY(float value) [instance] :4079
 void Skew::DegreesY(float value)
 {
     Y(::g::Uno::Math::DegreesToRadians1(value));
 }
 
-// public float2 get_XY() [instance] :3879
+// public float2 get_XY() [instance] :4085
 ::g::Uno::Float2 Skew::XY()
 {
     ::g::Uno::Float4 ind1 = _vectorValue;
     return ::g::Uno::Float2__New2(ind1.X, ind1.Y);
 }
 
-// public void set_XY(float2 value) [instance] :3880
+// public void set_XY(float2 value) [instance] :4086
 void Skew::XY(::g::Uno::Float2 value)
 {
     _vectorValue = ::g::Uno::Float4__New6(value, _vectorValue.Z, _vectorValue.W);
 }
 
-// public Skew New() [static] :3852
+// public Skew New() [static] :4058
 Skew* Skew::New2()
 {
     Skew* obj2 = (Skew*)uNew(Skew_typeof());
@@ -11061,10 +11375,10 @@ Skew* Skew::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public sealed class Spin :2845
+// public sealed class Spin :3048
 // {
 static void Spin_build(uType* type)
 {
@@ -11096,49 +11410,49 @@ static void Spin_build(uType* type)
     return type;
 }
 
-// public Spin() :2847
+// public Spin() :3050
 void Spin__ctor_3_fn(Spin* __this)
 {
     __this->ctor_3();
 }
 
-// internal override sealed Fuse.Animations.AnimatorState CreateState(Fuse.Animations.CreateStateParams p) :2867
+// internal override sealed Fuse.Animations.AnimatorState CreateState(Fuse.Animations.CreateStateParams p) :3070
 void Spin__CreateState_fn(Spin* __this, ::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse::Animations::AnimatorState** __retval)
 {
     return *__retval = ::g::Fuse::Animations::SpinState::New1(__this, p), void();
 }
 
-// public double get_Frequency() :2863
+// public double get_Frequency() :3066
 void Spin__get_Frequency_fn(Spin* __this, double* __retval)
 {
     *__retval = __this->Frequency();
 }
 
-// public void set_Frequency(double value) :2864
+// public void set_Frequency(double value) :3067
 void Spin__set_Frequency_fn(Spin* __this, double* value)
 {
     __this->Frequency(*value);
 }
 
-// public Spin New() :2847
+// public Spin New() :3050
 void Spin__New2_fn(Spin** __retval)
 {
     *__retval = Spin::New2();
 }
 
-// public generated Fuse.Visual get_Target() :2855
+// public generated Fuse.Visual get_Target() :3058
 void Spin__get_Target_fn(Spin* __this, ::g::Fuse::Visual** __retval)
 {
     *__retval = __this->Target();
 }
 
-// public generated void set_Target(Fuse.Visual value) :2855
+// public generated void set_Target(Fuse.Visual value) :3058
 void Spin__set_Target_fn(Spin* __this, ::g::Fuse::Visual* value)
 {
     __this->Target(value);
 }
 
-// public Spin() [instance] :2847
+// public Spin() [instance] :3050
 void Spin::ctor_3()
 {
     _hertz = 1.0;
@@ -11146,31 +11460,31 @@ void Spin::ctor_3()
     MixOp(1);
 }
 
-// public double get_Frequency() [instance] :2863
+// public double get_Frequency() [instance] :3066
 double Spin::Frequency()
 {
     return _hertz;
 }
 
-// public void set_Frequency(double value) [instance] :2864
+// public void set_Frequency(double value) [instance] :3067
 void Spin::Frequency(double value)
 {
     _hertz = value;
 }
 
-// public generated Fuse.Visual get_Target() [instance] :2855
+// public generated Fuse.Visual get_Target() [instance] :3058
 ::g::Fuse::Visual* Spin::Target()
 {
     return _Target;
 }
 
-// public generated void set_Target(Fuse.Visual value) [instance] :2855
+// public generated void set_Target(Fuse.Visual value) [instance] :3058
 void Spin::Target(::g::Fuse::Visual* value)
 {
     _Target = value;
 }
 
-// public Spin New() [static] :2847
+// public Spin New() [static] :3050
 Spin* Spin::New2()
 {
     Spin* obj1 = (Spin*)uNew(Spin_typeof());
@@ -11179,21 +11493,21 @@ Spin* Spin::New2()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class SpinState :2874
+// internal sealed class SpinState :3077
 // {
 static void SpinState_build(uType* type)
 {
     ::STRINGS[7] = uString::Const("Invalid seek");
-    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
+    ::STRINGS[2] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
-    ::TYPES[68] = ::g::Fuse::Animations::IMixerHandle_typeof()->MakeType(::g::Fuse::Transform_typeof(), NULL);
+    ::TYPES[69] = ::g::Fuse::Animations::IMixerHandle_typeof()->MakeType(::g::Fuse::Transform_typeof(), NULL);
     type->SetFields(5,
         ::g::Fuse::Animations::Spin_typeof(), offsetof(::g::Fuse::Animations::SpinState, Animator1), 0,
         ::g::Uno::Double_typeof(), offsetof(::g::Fuse::Animations::SpinState, degrees), 0,
-        ::TYPES[68/*Fuse.Animations.IMixerHandle<Fuse.Transform>*/], offsetof(::g::Fuse::Animations::SpinState, mixHandle), 0,
+        ::TYPES[69/*Fuse.Animations.IMixerHandle<Fuse.Transform>*/], offsetof(::g::Fuse::Animations::SpinState, mixHandle), 0,
         ::g::Fuse::Rotation_typeof(), offsetof(::g::Fuse::Animations::SpinState, transform), 0);
 }
 
@@ -11214,13 +11528,13 @@ static void SpinState_build(uType* type)
     return type;
 }
 
-// public SpinState(Fuse.Animations.Spin animator, Fuse.Animations.CreateStateParams p) :2880
+// public SpinState(Fuse.Animations.Spin animator, Fuse.Animations.CreateStateParams p) :3083
 void SpinState__ctor_2_fn(SpinState* __this, ::g::Fuse::Animations::Spin* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     __this->ctor_2(animator, p);
 }
 
-// public override sealed void Disable() :2889
+// public override sealed void Disable() :3092
 void SpinState__Disable_fn(SpinState* __this)
 {
     uStackFrame __("Fuse.Animations.SpinState", "Disable()");
@@ -11229,17 +11543,17 @@ void SpinState__Disable_fn(SpinState* __this)
         return;
 
     __this->degrees = 0.0;
-    ::g::Fuse::Animations::IMixerHandle::Unregister(uInterface(uPtr(__this->mixHandle), ::TYPES[68/*Fuse.Animations.IMixerHandle<Fuse.Transform>*/]));
+    ::g::Fuse::Animations::IMixerHandle::Unregister(uInterface(uPtr(__this->mixHandle), ::TYPES[69/*Fuse.Animations.IMixerHandle<Fuse.Transform>*/]));
     __this->mixHandle = NULL;
 }
 
-// public SpinState New(Fuse.Animations.Spin animator, Fuse.Animations.CreateStateParams p) :2880
+// public SpinState New(Fuse.Animations.Spin animator, Fuse.Animations.CreateStateParams p) :3083
 void SpinState__New1_fn(::g::Fuse::Animations::Spin* animator, ::g::Fuse::Animations::CreateStateParams* p, SpinState** __retval)
 {
     *__retval = SpinState::New1(animator, p);
 }
 
-// protected override sealed bool Seek(bool on, float interval, float strength, Fuse.Animations.SeekDirection dir) :2899
+// protected override sealed bool Seek(bool on, float interval, float strength, Fuse.Animations.SeekDirection dir) :3102
 void SpinState__Seek_fn(SpinState* __this, bool* on, float* interval, float* strength, int* dir, bool* __retval)
 {
     uStackFrame __("Fuse.Animations.SpinState", "Seek(bool,float,float,Fuse.Animations.SeekDirection)");
@@ -11249,13 +11563,14 @@ void SpinState__Seek_fn(SpinState* __this, bool* on, float* interval, float* str
 
     if ((__this->mixHandle == NULL) || (__this->transform == NULL))
     {
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[7/*"Invalid seek"*/], 1, ::STRINGS[2/*"/Users/eric...*/], 2903);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[7/*"Invalid seek"*/], 0, ::STRINGS[2/*"/usr/local/...*/], 3106);
         return *__retval = true, void();
     }
 
     bool done = false;
     double oldDegrees = __this->degrees;
     __this->degrees = (__this->degrees + ((double)(interval_ * 360.0f) * uPtr(__this->Animator1)->Frequency()));
+    float zeroTolerance = 1e-05f;
 
     if (on_)
         __this->degrees = ::g::Uno::Math::Mod(__this->degrees, 360.0);
@@ -11266,11 +11581,11 @@ void SpinState__Seek_fn(SpinState* __this, bool* on, float* interval, float* str
     }
 
     uPtr(__this->transform)->Degrees((float)__this->degrees);
-    ::g::Fuse::Animations::IMixerHandle::Set_ex(uInterface(uPtr(__this->mixHandle), ::TYPES[68/*Fuse.Animations.IMixerHandle<Fuse.Transform>*/]), __this->transform, uCRef(strength_));
+    ::g::Fuse::Animations::IMixerHandle::Set_ex(uInterface(uPtr(__this->mixHandle), ::TYPES[69/*Fuse.Animations.IMixerHandle<Fuse.Transform>*/]), __this->transform, uCRef(strength_));
     return *__retval = done, void();
 }
 
-// public SpinState(Fuse.Animations.Spin animator, Fuse.Animations.CreateStateParams p) [instance] :2880
+// public SpinState(Fuse.Animations.Spin animator, Fuse.Animations.CreateStateParams p) [instance] :3083
 void SpinState::ctor_2(::g::Fuse::Animations::Spin* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     uStackFrame __("Fuse.Animations.SpinState", ".ctor(Fuse.Animations.Spin,Fuse.Animations.CreateStateParams)");
@@ -11280,7 +11595,7 @@ void SpinState::ctor_2(::g::Fuse::Animations::Spin* animator, ::g::Fuse::Animati
     mixHandle = ::g::Fuse::Animations::IMixer::RegisterTransform(uInterface(uPtr(uPtr(Animator1)->Mixer), ::TYPES[12/*Fuse.Animations.IMixer*/]), Visual, uPtr(Animator1)->MixOp(), 3000);
 }
 
-// public SpinState New(Fuse.Animations.Spin animator, Fuse.Animations.CreateStateParams p) [static] :2880
+// public SpinState New(Fuse.Animations.Spin animator, Fuse.Animations.CreateStateParams p) [static] :3083
 SpinState* SpinState::New1(::g::Fuse::Animations::Spin* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     SpinState* obj1 = (SpinState*)uNew(SpinState_typeof());
@@ -11289,18 +11604,18 @@ SpinState* SpinState::New1(::g::Fuse::Animations::Spin* animator, ::g::Fuse::Ani
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class SplineTrack :2957
+// internal sealed class SplineTrack :3161
 // {
 static void SplineTrack_build(uType* type)
 {
-    ::TYPES[15] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Animations::Keyframe_typeof(), NULL);
-    ::TYPES[69] = ::g::Fuse::Internal::Curves__PointInterpolater_typeof();
-    ::TYPES[50] = ::g::Fuse::Animations::ContinuousTrackProvider_typeof();
+    ::TYPES[16] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Animations::Keyframe_typeof(), NULL);
+    ::TYPES[70] = ::g::Fuse::Internal::Curves__PointInterpolater_typeof();
+    ::TYPES[51] = ::g::Fuse::Animations::ContinuousTrackProvider_typeof();
     type->SetInterfaces(
-        ::TYPES[50/*Fuse.Animations.ContinuousTrackProvider*/], offsetof(SplineTrack_type, interface0),
+        ::TYPES[51/*Fuse.Animations.ContinuousTrackProvider*/], offsetof(SplineTrack_type, interface0),
         ::g::Fuse::Animations::ITrackProvider_typeof(), offsetof(SplineTrack_type, interface1),
         ::g::Fuse::Animations::KeyframeTrack_typeof(), offsetof(SplineTrack_type, interface2),
         ::g::Fuse::Animations::TrackProvider_typeof(), offsetof(SplineTrack_type, interface3));
@@ -11308,9 +11623,9 @@ static void SplineTrack_build(uType* type)
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Animations::SplineTrack, _bias), 0,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Animations::SplineTrack, _continuity), 0,
         ::g::Uno::Double_typeof(), offsetof(::g::Fuse::Animations::SplineTrack, _duration), 0,
-        ::TYPES[15/*Uno.Collections.List<Fuse.Animations.Keyframe>*/], offsetof(::g::Fuse::Animations::SplineTrack, _frames), 0,
+        ::TYPES[16/*Uno.Collections.List<Fuse.Animations.Keyframe>*/], offsetof(::g::Fuse::Animations::SplineTrack, _frames), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Animations::SplineTrack, _init), 0,
-        ::TYPES[69/*Fuse.Internal.Curves.PointInterpolater*/], offsetof(::g::Fuse::Animations::SplineTrack, _pointInterpolater), 0,
+        ::TYPES[70/*Fuse.Internal.Curves.PointInterpolater*/], offsetof(::g::Fuse::Animations::SplineTrack, _pointInterpolater), 0,
         ::g::Fuse::Animations::KeyframeInterpolation_typeof(), offsetof(::g::Fuse::Animations::SplineTrack, _style), 0,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Animations::SplineTrack, _tension), 0);
 }
@@ -11338,47 +11653,47 @@ SplineTrack_type* SplineTrack_typeof()
     return type;
 }
 
-// public generated SplineTrack() :2957
+// public generated SplineTrack() :3161
 void SplineTrack__ctor__fn(SplineTrack* __this)
 {
     __this->ctor_();
 }
 
-// public float get_Bias() :2986
+// public float get_Bias() :3190
 void SplineTrack__get_Bias_fn(SplineTrack* __this, float* __retval)
 {
     *__retval = __this->Bias();
 }
 
-// public void set_Bias(float value) :2987
+// public void set_Bias(float value) :3191
 void SplineTrack__set_Bias_fn(SplineTrack* __this, float* value)
 {
     __this->Bias(*value);
 }
 
-// public float get_Continuity() :3000
+// public float get_Continuity() :3204
 void SplineTrack__get_Continuity_fn(SplineTrack* __this, float* __retval)
 {
     *__retval = __this->Continuity();
 }
 
-// public void set_Continuity(float value) :3001
+// public void set_Continuity(float value) :3205
 void SplineTrack__set_Continuity_fn(SplineTrack* __this, float* value)
 {
     __this->Continuity(*value);
 }
 
-// private Fuse.Animations.SeekResult Fuse.Animations.ContinuousTrackProvider.GetSeekProgress(Fuse.Animations.TrackAnimatorState tas, double progress, double interval, Fuse.Animations.SeekDirection dir, float4& value, double& strength) :3062
+// private Fuse.Animations.SeekResult Fuse.Animations.ContinuousTrackProvider.GetSeekProgress(Fuse.Animations.TrackAnimatorState tas, double progress, double interval, Fuse.Animations.SeekDirection dir, float4& value, double& strength) :3266
 void SplineTrack__FuseAnimationsContinuousTrackProviderGetSeekProgress_fn(SplineTrack* __this, ::g::Fuse::Animations::TrackAnimatorState* tas, double* progress, double* interval, int* dir, ::g::Uno::Float4* value, double* strength, int* __retval)
 {
     uStackFrame __("Fuse.Animations.SplineTrack", "Fuse.Animations.ContinuousTrackProvider.GetSeekProgress(Fuse.Animations.TrackAnimatorState,double,double,Fuse.Animations.SeekDirection,float4&,double&)");
     double progress_ = *progress;
     double interval_ = *interval;
     int dir_ = *dir;
-    return *__retval = ::g::Fuse::Animations::ContinuousTrackProvider::GetSeekTime(uInterface(uPtr(uAs<uObject*>(__this, ::TYPES[50/*Fuse.Animations.ContinuousTrackProvider*/])), ::TYPES[50/*Fuse.Animations.ContinuousTrackProvider*/]), tas, progress_ * __this->_duration, interval_, dir_, value, strength), void();
+    return *__retval = ::g::Fuse::Animations::ContinuousTrackProvider::GetSeekTime(uInterface(uPtr(uAs<uObject*>(__this, ::TYPES[51/*Fuse.Animations.ContinuousTrackProvider*/])), ::TYPES[51/*Fuse.Animations.ContinuousTrackProvider*/]), tas, progress_ * __this->_duration, interval_, dir_, value, strength), void();
 }
 
-// private Fuse.Animations.SeekResult Fuse.Animations.ContinuousTrackProvider.GetSeekTime(Fuse.Animations.TrackAnimatorState tas, double elapsed, double interval, Fuse.Animations.SeekDirection dir, float4& value, double& strength) :3070
+// private Fuse.Animations.SeekResult Fuse.Animations.ContinuousTrackProvider.GetSeekTime(Fuse.Animations.TrackAnimatorState tas, double elapsed, double interval, Fuse.Animations.SeekDirection dir, float4& value, double& strength) :3274
 void SplineTrack__FuseAnimationsContinuousTrackProviderGetSeekTime_fn(SplineTrack* __this, ::g::Fuse::Animations::TrackAnimatorState* tas, double* elapsed, double* interval, int* dir, ::g::Uno::Float4* value, double* strength, int* __retval)
 {
     uStackFrame __("Fuse.Animations.SplineTrack", "Fuse.Animations.ContinuousTrackProvider.GetSeekTime(Fuse.Animations.TrackAnimatorState,double,double,Fuse.Animations.SeekDirection,float4&,double&)");
@@ -11418,6 +11733,7 @@ void SplineTrack__FuseAnimationsContinuousTrackProviderGetSeekTime_fn(SplineTrac
     else
     {
         int previous = segment - 1;
+        float zeroTolerance = 1e-05f;
         double segmentProgress1 = (uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(__this->_frames), uCRef<int>(segment), &ret5), ret5))->TimeDelta() < 9.9999997473787516e-06) ? 0.0 : ::g::Uno::Math::Clamp((elapsed_ - uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(__this->_frames), uCRef<int>(previous), &ret6), ret6))->Time()) / uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(__this->_frames), uCRef<int>(segment), &ret7), ret7))->TimeDelta(), 0.0, 1.0);
         *value = (uPtr(__this->_pointInterpolater)->Invoke(&ret8, 5, uCRef(uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(__this->_frames), uCRef<int>(previous), &ret9), ret9))->Value()), uCRef(uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(__this->_frames), uCRef<int>(segment), &ret10), ret10))->Value()), uCRef(uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(__this->_frames), uCRef<int>(previous), &ret11), ret11))->TangentOut()), uCRef(uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(__this->_frames), uCRef<int>(segment), &ret12), ret12))->TangentIn()), uCRef((float)segmentProgress1)), ret8);
         *strength = 1.0;
@@ -11426,13 +11742,13 @@ void SplineTrack__FuseAnimationsContinuousTrackProviderGetSeekTime_fn(SplineTrac
     return *__retval = (((dir_ == 0) ? elapsed_ >= __this->_duration : elapsed_ <= 0.0) ? 1 : 0) | 2, void();
 }
 
-// private Fuse.Animations.AnimatorVariant Fuse.Animations.TrackProvider.GetAnimatorVariant(Fuse.Animations.TrackAnimator tas) :3057
+// private Fuse.Animations.AnimatorVariant Fuse.Animations.TrackProvider.GetAnimatorVariant(Fuse.Animations.TrackAnimator tas) :3261
 void SplineTrack__FuseAnimationsTrackProviderGetAnimatorVariant_fn(SplineTrack* __this, ::g::Fuse::Animations::TrackAnimator* tas, int* __retval)
 {
     return *__retval = 0, void();
 }
 
-// private double Fuse.Animations.TrackProvider.GetDuration(Fuse.Animations.TrackAnimator ta, Fuse.Animations.AnimationVariant variant) :3051
+// private double Fuse.Animations.TrackProvider.GetDuration(Fuse.Animations.TrackAnimator ta, Fuse.Animations.AnimationVariant variant) :3255
 void SplineTrack__FuseAnimationsTrackProviderGetDuration_fn(SplineTrack* __this, ::g::Fuse::Animations::TrackAnimator* ta, int* variant, double* __retval)
 {
     uStackFrame __("Fuse.Animations.SplineTrack", "Fuse.Animations.TrackProvider.GetDuration(Fuse.Animations.TrackAnimator,Fuse.Animations.AnimationVariant)");
@@ -11440,84 +11756,84 @@ void SplineTrack__FuseAnimationsTrackProviderGetDuration_fn(SplineTrack* __this,
     return *__retval = __this->_duration, void();
 }
 
-// private void Init() :3043
+// private void Init() :3247
 void SplineTrack__Init_fn(SplineTrack* __this)
 {
     __this->Init();
 }
 
-// public Fuse.Animations.KeyframeInterpolation get_Interpolation() :3013
+// public Fuse.Animations.KeyframeInterpolation get_Interpolation() :3217
 void SplineTrack__get_Interpolation_fn(SplineTrack* __this, int* __retval)
 {
     *__retval = __this->Interpolation();
 }
 
-// public void set_Interpolation(Fuse.Animations.KeyframeInterpolation value) :3014
+// public void set_Interpolation(Fuse.Animations.KeyframeInterpolation value) :3218
 void SplineTrack__set_Interpolation_fn(SplineTrack* __this, int* value)
 {
     __this->Interpolation(*value);
 }
 
-// public Uno.Collections.IList<Fuse.Animations.Keyframe> get_Keyframes() :2963
+// public Uno.Collections.IList<Fuse.Animations.Keyframe> get_Keyframes() :3167
 void SplineTrack__get_Keyframes_fn(SplineTrack* __this, uObject** __retval)
 {
     *__retval = __this->Keyframes();
 }
 
-// public generated SplineTrack New() :2957
+// public generated SplineTrack New() :3161
 void SplineTrack__New1_fn(SplineTrack** __retval)
 {
     *__retval = SplineTrack::New1();
 }
 
-// public float get_Tension() :2972
+// public float get_Tension() :3176
 void SplineTrack__get_Tension_fn(SplineTrack* __this, float* __retval)
 {
     *__retval = __this->Tension();
 }
 
-// public void set_Tension(float value) :2973
+// public void set_Tension(float value) :3177
 void SplineTrack__set_Tension_fn(SplineTrack* __this, float* value)
 {
     __this->Tension(*value);
 }
 
-// public generated SplineTrack() [instance] :2957
+// public generated SplineTrack() [instance] :3161
 void SplineTrack::ctor_()
 {
-    _frames = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[15/*Uno.Collections.List<Fuse.Animations.Keyframe>*/]));
+    _frames = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[16/*Uno.Collections.List<Fuse.Animations.Keyframe>*/]));
     _tension = 1.0f;
     _continuity = -1.0f;
-    _pointInterpolater = uDelegate::New(::TYPES[69/*Fuse.Internal.Curves.PointInterpolater*/], (void*)::g::Fuse::Internal::Curves__LinearPoint_fn);
+    _pointInterpolater = uDelegate::New(::TYPES[70/*Fuse.Internal.Curves.PointInterpolater*/], (void*)::g::Fuse::Internal::Curves__LinearPoint_fn);
 }
 
-// public float get_Bias() [instance] :2986
+// public float get_Bias() [instance] :3190
 float SplineTrack::Bias()
 {
     return _bias;
 }
 
-// public void set_Bias(float value) [instance] :2987
+// public void set_Bias(float value) [instance] :3191
 void SplineTrack::Bias(float value)
 {
     _bias = value;
     _style = 2;
 }
 
-// public float get_Continuity() [instance] :3000
+// public float get_Continuity() [instance] :3204
 float SplineTrack::Continuity()
 {
     return _continuity;
 }
 
-// public void set_Continuity(float value) [instance] :3001
+// public void set_Continuity(float value) [instance] :3205
 void SplineTrack::Continuity(float value)
 {
     _continuity = value;
     _style = 2;
 }
 
-// private void Init() [instance] :3043
+// private void Init() [instance] :3247
 void SplineTrack::Init()
 {
     uStackFrame __("Fuse.Animations.SplineTrack", "Init()");
@@ -11529,13 +11845,13 @@ void SplineTrack::Init()
     _init = true;
 }
 
-// public Fuse.Animations.KeyframeInterpolation get_Interpolation() [instance] :3013
+// public Fuse.Animations.KeyframeInterpolation get_Interpolation() [instance] :3217
 int SplineTrack::Interpolation()
 {
     return _style;
 }
 
-// public void set_Interpolation(Fuse.Animations.KeyframeInterpolation value) [instance] :3014
+// public void set_Interpolation(Fuse.Animations.KeyframeInterpolation value) [instance] :3218
 void SplineTrack::Interpolation(int value)
 {
     _style = value;
@@ -11547,7 +11863,7 @@ void SplineTrack::Interpolation(int value)
             _bias = 0.0f;
             _tension = 1.0f;
             _continuity = -1.0f;
-            _pointInterpolater = uDelegate::New(::TYPES[69/*Fuse.Internal.Curves.PointInterpolater*/], (void*)::g::Fuse::Internal::Curves__LinearPoint_fn);
+            _pointInterpolater = uDelegate::New(::TYPES[70/*Fuse.Internal.Curves.PointInterpolater*/], (void*)::g::Fuse::Internal::Curves__LinearPoint_fn);
             break;
         }
         case 1:
@@ -11555,38 +11871,38 @@ void SplineTrack::Interpolation(int value)
             _bias = 0.0f;
             _tension = 0.0f;
             _continuity = 0.0f;
-            _pointInterpolater = uDelegate::New(::TYPES[69/*Fuse.Internal.Curves.PointInterpolater*/], (void*)::g::Fuse::Internal::Curves__CubicHermitePoint_fn);
+            _pointInterpolater = uDelegate::New(::TYPES[70/*Fuse.Internal.Curves.PointInterpolater*/], (void*)::g::Fuse::Internal::Curves__CubicHermitePoint_fn);
             break;
         }
         default:
         {
-            _pointInterpolater = uDelegate::New(::TYPES[69/*Fuse.Internal.Curves.PointInterpolater*/], (void*)::g::Fuse::Internal::Curves__CubicHermitePoint_fn);
+            _pointInterpolater = uDelegate::New(::TYPES[70/*Fuse.Internal.Curves.PointInterpolater*/], (void*)::g::Fuse::Internal::Curves__CubicHermitePoint_fn);
             break;
         }
     }
 }
 
-// public Uno.Collections.IList<Fuse.Animations.Keyframe> get_Keyframes() [instance] :2963
+// public Uno.Collections.IList<Fuse.Animations.Keyframe> get_Keyframes() [instance] :3167
 uObject* SplineTrack::Keyframes()
 {
     uStackFrame __("Fuse.Animations.SplineTrack", "get_Keyframes()");
     return (uObject*)_frames;
 }
 
-// public float get_Tension() [instance] :2972
+// public float get_Tension() [instance] :3176
 float SplineTrack::Tension()
 {
     return _tension;
 }
 
-// public void set_Tension(float value) [instance] :2973
+// public void set_Tension(float value) [instance] :3177
 void SplineTrack::Tension(float value)
 {
     _tension = value;
     _style = 2;
 }
 
-// public generated SplineTrack New() [static] :2957
+// public generated SplineTrack New() [static] :3161
 SplineTrack* SplineTrack::New1()
 {
     SplineTrack* obj1 = (SplineTrack*)uNew(SplineTrack_typeof());
@@ -11595,21 +11911,304 @@ SplineTrack* SplineTrack::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public abstract class TrackAnimator :3160
+// private sealed class Attract.Subscription :209
+// {
+static void Attract__Subscription_build(uType* type)
+{
+    ::STRINGS[20] = uString::Const("Unexpected size for attract: ");
+    ::STRINGS[2] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno");
+    ::STRINGS[21] = uString::Const("NeedSim");
+    ::TYPES[71] = ::g::Fuse::Animations::DestinationBehavior_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL);
+    ::TYPES[72] = ::g::Uno::IDisposable_typeof();
+    ::TYPES[73] = ::g::Fuse::Animations::DestinationBehavior__ValueHandler_typeof()->MakeType(::g::Uno::Float_typeof(), NULL);
+    ::TYPES[74] = ::g::Fuse::Animations::DestinationBehavior__ValueHandler_typeof()->MakeType(::g::Uno::Float2_typeof(), NULL);
+    ::TYPES[75] = ::g::Fuse::Animations::DestinationBehavior__ValueHandler_typeof()->MakeType(::g::Uno::Float3_typeof(), NULL);
+    ::TYPES[76] = ::g::Fuse::Animations::DestinationBehavior__ValueHandler_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL);
+    ::TYPES[77] = ::g::Fuse::Animations::DestinationBehavior_typeof()->MakeType(::g::Uno::Float_typeof(), NULL);
+    ::TYPES[78] = ::g::Fuse::Animations::DestinationBehavior_typeof()->MakeType(::g::Uno::Float2_typeof(), NULL);
+    ::TYPES[79] = ::g::Fuse::Animations::DestinationBehavior_typeof()->MakeType(::g::Uno::Float3_typeof(), NULL);
+    ::TYPES[80] = ::g::Fuse::Reactive::IListener_typeof();
+    ::TYPES[81] = type->MakeMethod(0/*OnValueUpdate<float>*/, ::g::Uno::Float_typeof(), NULL);
+    ::TYPES[82] = type->MakeMethod(0/*OnValueUpdate<float2>*/, ::g::Uno::Float2_typeof(), NULL);
+    ::TYPES[83] = type->MakeMethod(0/*OnValueUpdate<float3>*/, ::g::Uno::Float3_typeof(), NULL);
+    ::TYPES[84] = type->MakeMethod(0/*OnValueUpdate<float4>*/, ::g::Uno::Float4_typeof(), NULL);
+    type->SetInterfaces(
+        ::TYPES[80/*Fuse.Reactive.IListener*/], offsetof(Attract__Subscription_type, interface0),
+        ::TYPES[72/*Uno.IDisposable*/], offsetof(Attract__Subscription_type, interface1));
+    type->SetFields(0,
+        ::g::Fuse::Animations::Attract_typeof(), offsetof(::g::Fuse::Animations::Attract__Subscription, _attract), 0,
+        ::g::Uno::Int_typeof(), offsetof(::g::Fuse::Animations::Attract__Subscription, _simSize), 0,
+        ::TYPES[77/*Fuse.Animations.DestinationBehavior<float>*/], offsetof(::g::Fuse::Animations::Attract__Subscription, _simulation1), 0,
+        ::TYPES[78/*Fuse.Animations.DestinationBehavior<float2>*/], offsetof(::g::Fuse::Animations::Attract__Subscription, _simulation2), 0,
+        ::TYPES[79/*Fuse.Animations.DestinationBehavior<float3>*/], offsetof(::g::Fuse::Animations::Attract__Subscription, _simulation3), 0,
+        ::TYPES[71/*Fuse.Animations.DestinationBehavior<float4>*/], offsetof(::g::Fuse::Animations::Attract__Subscription, _simulation4), 0,
+        ::TYPES[72/*Uno.IDisposable*/], offsetof(::g::Fuse::Animations::Attract__Subscription, _sourceSub), 0,
+        ::TYPES[80/*Fuse.Reactive.IListener*/], offsetof(::g::Fuse::Animations::Attract__Subscription, _target), 0);
+}
+
+Attract__Subscription_type* Attract__Subscription_typeof()
+{
+    static uSStrong<Attract__Subscription_type*> type;
+    if (type != NULL) return type;
+
+    uTypeOptions options;
+    options.FieldCount = 8;
+    options.InterfaceCount = 2;
+    options.MethodTypeCount = 1;
+    options.ObjectSize = sizeof(Attract__Subscription);
+    options.TypeSize = sizeof(Attract__Subscription_type);
+    type = (Attract__Subscription_type*)uClassType::New("Fuse.Animations.Attract.Subscription", options);
+    type->MethodTypes[0] = type->NewMethodType(1, 0);
+    type->fp_build_ = Attract__Subscription_build;
+    type->interface0.fp_OnNewData = (void(*)(uObject*, uObject*, uObject*))Attract__Subscription__FuseReactiveIListenerOnNewData_fn;
+    type->interface1.fp_Dispose = (void(*)(uObject*))Attract__Subscription__Dispose_fn;
+    return type;
+}
+
+// public Subscription(Fuse.Animations.Attract attract, Fuse.Reactive.IContext context, Fuse.Reactive.IListener target) :224
+void Attract__Subscription__ctor__fn(Attract__Subscription* __this, ::g::Fuse::Animations::Attract* attract, uObject* context, uObject* target)
+{
+    __this->ctor_(attract, context, target);
+}
+
+// private void CleanSimulation() :304
+void Attract__Subscription__CleanSimulation_fn(Attract__Subscription* __this)
+{
+    __this->CleanSimulation();
+}
+
+// public void Dispose() :328
+void Attract__Subscription__Dispose_fn(Attract__Subscription* __this)
+{
+    __this->Dispose();
+}
+
+// private void Fuse.Reactive.IListener.OnNewData(Fuse.Reactive.IExpression source, object oValue) :244
+void Attract__Subscription__FuseReactiveIListenerOnNewData_fn(Attract__Subscription* __this, uObject* source, uObject* oValue)
+{
+    uStackFrame __("Fuse.Animations.Attract.Subscription", "Fuse.Reactive.IListener.OnNewData(Fuse.Reactive.IExpression,object)");
+    ::g::Uno::Float4 value = ::g::Uno::Float4__New1(0.0f);
+    int size = 0;
+
+    if (!::g::Fuse::Marshal::TryToZeroFloat4(oValue, &value, &size))
+    {
+        __this->CleanSimulation();
+        return;
+    }
+
+    __this->NeedSim(size);
+
+    if (__this->_simulation1 != NULL)
+        ::g::Fuse::Animations::DestinationBehavior__SetValue_fn(uPtr(__this->_simulation1), uCRef(value.X), uDelegate::New(::TYPES[73/*Fuse.Animations.DestinationBehavior<float>.ValueHandler*/], (void*)Attract__Subscription__OnValueUpdate1_fn, __this));
+
+    if (__this->_simulation2 != NULL)
+        ::g::Fuse::Animations::DestinationBehavior__SetValue_fn(uPtr(__this->_simulation2), uCRef(::g::Uno::Float2__New2(value.X, value.Y)), uDelegate::New(::TYPES[74/*Fuse.Animations.DestinationBehavior<float2>.ValueHandler*/], (void*)Attract__Subscription__OnValueUpdate2_fn, __this));
+
+    if (__this->_simulation3 != NULL)
+        ::g::Fuse::Animations::DestinationBehavior__SetValue_fn(uPtr(__this->_simulation3), uCRef(::g::Uno::Float3__New2(value.X, value.Y, value.Z)), uDelegate::New(::TYPES[75/*Fuse.Animations.DestinationBehavior<float3>.ValueHandler*/], (void*)Attract__Subscription__OnValueUpdate3_fn, __this));
+
+    if (__this->_simulation4 != NULL)
+        ::g::Fuse::Animations::DestinationBehavior__SetValue_fn(uPtr(__this->_simulation4), uCRef(value), uDelegate::New(::TYPES[76/*Fuse.Animations.DestinationBehavior<float4>.ValueHandler*/], (void*)Attract__Subscription__OnValueUpdate4_fn, __this));
+}
+
+// private void NeedSim(int size) :268
+void Attract__Subscription__NeedSim_fn(Attract__Subscription* __this, int* size)
+{
+    __this->NeedSim(*size);
+}
+
+// public Subscription New(Fuse.Animations.Attract attract, Fuse.Reactive.IContext context, Fuse.Reactive.IListener target) :224
+void Attract__Subscription__New1_fn(::g::Fuse::Animations::Attract* attract, uObject* context, uObject* target, Attract__Subscription** __retval)
+{
+    *__retval = Attract__Subscription::New1(attract, context, target);
+}
+
+// private void OnValueUpdate<T>(T value) :233
+void Attract__Subscription__OnValueUpdate_fn(Attract__Subscription* __this, uType* __type, void* value)
+{
+    uStackFrame __("Fuse.Animations.Attract.Subscription", "OnValueUpdate`1(T)");
+
+    if (__this->_target == NULL)
+        return;
+
+    ::g::Fuse::Reactive::IListener::OnNewData(uInterface(uPtr(__this->_target), ::TYPES[80/*Fuse.Reactive.IListener*/]), (uObject*)__this->_attract, uBoxPtr(__type->U(0), value));
+}
+
+// private void OnValueUpdate1(float value) :242
+void Attract__Subscription__OnValueUpdate1_fn(Attract__Subscription* __this, float* value)
+{
+    __this->OnValueUpdate1(*value);
+}
+
+// private void OnValueUpdate2(float2 value) :241
+void Attract__Subscription__OnValueUpdate2_fn(Attract__Subscription* __this, ::g::Uno::Float2* value)
+{
+    __this->OnValueUpdate2(*value);
+}
+
+// private void OnValueUpdate3(float3 value) :240
+void Attract__Subscription__OnValueUpdate3_fn(Attract__Subscription* __this, ::g::Uno::Float3* value)
+{
+    __this->OnValueUpdate3(*value);
+}
+
+// private void OnValueUpdate4(float4 value) :239
+void Attract__Subscription__OnValueUpdate4_fn(Attract__Subscription* __this, ::g::Uno::Float4* value)
+{
+    __this->OnValueUpdate4(*value);
+}
+
+// public Subscription(Fuse.Animations.Attract attract, Fuse.Reactive.IContext context, Fuse.Reactive.IListener target) [instance] :224
+void Attract__Subscription::ctor_(::g::Fuse::Animations::Attract* attract, uObject* context, uObject* target)
+{
+    uStackFrame __("Fuse.Animations.Attract.Subscription", ".ctor(Fuse.Animations.Attract,Fuse.Reactive.IContext,Fuse.Reactive.IListener)");
+    _target = target;
+    _attract = attract;
+    _simulation4 = ((::g::Fuse::Animations::DestinationBehavior*)::g::Fuse::Animations::DestinationBehavior::New1(::TYPES[71/*Fuse.Animations.DestinationBehavior<float4>*/]));
+    uPtr(_simulation4)->Motion = uPtr(attract)->_config;
+    _sourceSub = uPtr(attract->_sourceValue)->Subscribe(context, (uObject*)this);
+}
+
+// private void CleanSimulation() [instance] :304
+void Attract__Subscription::CleanSimulation()
+{
+    uStackFrame __("Fuse.Animations.Attract.Subscription", "CleanSimulation()");
+
+    if (_simulation4 != NULL)
+    {
+        uPtr(_simulation4)->Unroot();
+        _simulation4 = NULL;
+    }
+
+    if (_simulation3 != NULL)
+    {
+        uPtr(_simulation3)->Unroot();
+        _simulation3 = NULL;
+    }
+
+    if (_simulation2 != NULL)
+    {
+        uPtr(_simulation2)->Unroot();
+        _simulation2 = NULL;
+    }
+
+    if (_simulation1 != NULL)
+    {
+        uPtr(_simulation1)->Unroot();
+        _simulation1 = NULL;
+    }
+}
+
+// public void Dispose() [instance] :328
+void Attract__Subscription::Dispose()
+{
+    uStackFrame __("Fuse.Animations.Attract.Subscription", "Dispose()");
+
+    if (_sourceSub != NULL)
+    {
+        ::g::Uno::IDisposable::Dispose(uInterface(uPtr(_sourceSub), ::TYPES[72/*Uno.IDisposable*/]));
+        _sourceSub = NULL;
+    }
+
+    _target = NULL;
+    _attract = NULL;
+    CleanSimulation();
+}
+
+// private void NeedSim(int size) [instance] :268
+void Attract__Subscription::NeedSim(int size)
+{
+    uStackFrame __("Fuse.Animations.Attract.Subscription", "NeedSim(int)");
+
+    if (size != _simSize)
+    {
+        CleanSimulation();
+        _simSize = size;
+    }
+
+    if ((size < 0) || (size > 4))
+    {
+        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition1(::STRINGS[20/*"Unexpected ...*/], uBox<int>(::g::Uno::Int_typeof(), size)), this, ::STRINGS[2/*"/usr/local/...*/], 278, ::STRINGS[21/*"NeedSim"*/]);
+        return;
+    }
+
+    if ((size == 1) && (_simulation1 == NULL))
+    {
+        _simulation1 = ((::g::Fuse::Animations::DestinationBehavior*)::g::Fuse::Animations::DestinationBehavior::New1(::TYPES[77/*Fuse.Animations.DestinationBehavior<float>*/]));
+        uPtr(_simulation1)->Motion = uPtr(_attract)->_config;
+    }
+    else if ((size == 2) && (_simulation2 == NULL))
+    {
+        _simulation2 = ((::g::Fuse::Animations::DestinationBehavior*)::g::Fuse::Animations::DestinationBehavior::New1(::TYPES[78/*Fuse.Animations.DestinationBehavior<float2>*/]));
+        uPtr(_simulation2)->Motion = uPtr(_attract)->_config;
+    }
+    else if ((size == 3) && (_simulation3 == NULL))
+    {
+        _simulation3 = ((::g::Fuse::Animations::DestinationBehavior*)::g::Fuse::Animations::DestinationBehavior::New1(::TYPES[79/*Fuse.Animations.DestinationBehavior<float3>*/]));
+        uPtr(_simulation3)->Motion = uPtr(_attract)->_config;
+    }
+    else if ((size == 4) && (_simulation4 == NULL))
+    {
+        _simulation4 = ((::g::Fuse::Animations::DestinationBehavior*)::g::Fuse::Animations::DestinationBehavior::New1(::TYPES[71/*Fuse.Animations.DestinationBehavior<float4>*/]));
+        uPtr(_simulation4)->Motion = uPtr(_attract)->_config;
+    }
+}
+
+// private void OnValueUpdate1(float value) [instance] :242
+void Attract__Subscription::OnValueUpdate1(float value)
+{
+    uStackFrame __("Fuse.Animations.Attract.Subscription", "OnValueUpdate1(float)");
+    Attract__Subscription__OnValueUpdate_fn(this, ::TYPES[81/*Fuse.Animations.Attract.Subscription.OnValueUpdate<float>*/], uCRef(value));
+}
+
+// private void OnValueUpdate2(float2 value) [instance] :241
+void Attract__Subscription::OnValueUpdate2(::g::Uno::Float2 value)
+{
+    uStackFrame __("Fuse.Animations.Attract.Subscription", "OnValueUpdate2(float2)");
+    Attract__Subscription__OnValueUpdate_fn(this, ::TYPES[82/*Fuse.Animations.Attract.Subscription.OnValueUpdate<float2>*/], uCRef(value));
+}
+
+// private void OnValueUpdate3(float3 value) [instance] :240
+void Attract__Subscription::OnValueUpdate3(::g::Uno::Float3 value)
+{
+    uStackFrame __("Fuse.Animations.Attract.Subscription", "OnValueUpdate3(float3)");
+    Attract__Subscription__OnValueUpdate_fn(this, ::TYPES[83/*Fuse.Animations.Attract.Subscription.OnValueUpdate<float3>*/], uCRef(value));
+}
+
+// private void OnValueUpdate4(float4 value) [instance] :239
+void Attract__Subscription::OnValueUpdate4(::g::Uno::Float4 value)
+{
+    uStackFrame __("Fuse.Animations.Attract.Subscription", "OnValueUpdate4(float4)");
+    Attract__Subscription__OnValueUpdate_fn(this, ::TYPES[84/*Fuse.Animations.Attract.Subscription.OnValueUpdate<float4>*/], uCRef(value));
+}
+
+// public Subscription New(Fuse.Animations.Attract attract, Fuse.Reactive.IContext context, Fuse.Reactive.IListener target) [static] :224
+Attract__Subscription* Attract__Subscription::New1(::g::Fuse::Animations::Attract* attract, uObject* context, uObject* target)
+{
+    Attract__Subscription* obj1 = (Attract__Subscription*)uNew(Attract__Subscription_typeof());
+    obj1->ctor_(attract, context, target);
+    return obj1;
+}
+// }
+
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
+
+// public abstract class TrackAnimator :3366
 // {
 static void TrackAnimator_build(uType* type)
 {
-    ::TYPES[70] = ::g::Fuse::Animations::TrackProvider_typeof();
-    ::TYPES[71] = ::g::Fuse::Animations::KeyframeTrack_typeof();
-    ::TYPES[72] = ::g::Fuse::Animations::ITrackProvider_typeof();
-    ::TYPES[50] = ::g::Fuse::Animations::ContinuousTrackProvider_typeof();
+    ::TYPES[85] = ::g::Fuse::Animations::TrackProvider_typeof();
+    ::TYPES[86] = ::g::Fuse::Animations::KeyframeTrack_typeof();
+    ::TYPES[87] = ::g::Fuse::Animations::ITrackProvider_typeof();
+    ::TYPES[51] = ::g::Fuse::Animations::ContinuousTrackProvider_typeof();
     type->SetFields(5,
-        ::TYPES[70/*Fuse.Animations.TrackProvider*/], offsetof(::g::Fuse::Animations::TrackAnimator, _continuousProvider), 0,
+        ::TYPES[85/*Fuse.Animations.TrackProvider*/], offsetof(::g::Fuse::Animations::TrackAnimator, _continuousProvider), 0,
         ::g::Uno::Double_typeof(), offsetof(::g::Fuse::Animations::TrackAnimator, _delayBack), 0,
-        ::TYPES[70/*Fuse.Animations.TrackProvider*/], offsetof(::g::Fuse::Animations::TrackAnimator, _discreteProvider), 0,
+        ::TYPES[85/*Fuse.Animations.TrackProvider*/], offsetof(::g::Fuse::Animations::TrackAnimator, _discreteProvider), 0,
         ::g::Uno::Double_typeof(), offsetof(::g::Fuse::Animations::TrackAnimator, _durationBack), 0,
         ::g::Fuse::Animations::Easing_typeof(), offsetof(::g::Fuse::Animations::TrackAnimator, _easing), 0,
         ::g::Fuse::Animations::Easing_typeof(), offsetof(::g::Fuse::Animations::TrackAnimator, _easingBack), 0,
@@ -11617,7 +12216,7 @@ static void TrackAnimator_build(uType* type)
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Animations::TrackAnimator, _hasDurationBack), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Animations::TrackAnimator, _hasEasingBack), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Animations::TrackAnimator, _isDiscrete), 0,
-        ::TYPES[71/*Fuse.Animations.KeyframeTrack*/], offsetof(::g::Fuse::Animations::TrackAnimator, _keyframeTrack), 0,
+        ::TYPES[86/*Fuse.Animations.KeyframeTrack*/], offsetof(::g::Fuse::Animations::TrackAnimator, _keyframeTrack), 0,
         uObject_typeof(), offsetof(::g::Fuse::Animations::TrackAnimator, _objectValue), 0,
         ::g::Uno::Float4_typeof(), offsetof(::g::Fuse::Animations::TrackAnimator, _vectorValue), 0,
         ::g::Uno::Double_typeof(), offsetof(::g::Fuse::Animations::TrackAnimator, _weight), 0,
@@ -11636,8 +12235,8 @@ static void TrackAnimator_build(uType* type)
         new uFunction("get_KeyframeInterpolation", NULL, (void*)TrackAnimator__get_KeyframeInterpolation_fn, 0, false, ::g::Fuse::Animations::KeyframeInterpolation_typeof(), 0),
         new uFunction("set_KeyframeInterpolation", NULL, (void*)TrackAnimator__set_KeyframeInterpolation_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Animations::KeyframeInterpolation_typeof()),
         new uFunction("get_Keyframes", NULL, (void*)TrackAnimator__get_Keyframes_fn, 0, false, ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Animations::Keyframe_typeof(), NULL), 0),
-        new uFunction("get_Provider", NULL, (void*)TrackAnimator__get_Provider_fn, 0, false, ::TYPES[72/*Fuse.Animations.ITrackProvider*/], 0),
-        new uFunction("set_Provider", NULL, (void*)TrackAnimator__set_Provider_fn, 0, false, uVoid_typeof(), 1, ::TYPES[72/*Fuse.Animations.ITrackProvider*/]),
+        new uFunction("get_Provider", NULL, (void*)TrackAnimator__get_Provider_fn, 0, false, ::TYPES[87/*Fuse.Animations.ITrackProvider*/], 0),
+        new uFunction("set_Provider", NULL, (void*)TrackAnimator__set_Provider_fn, 0, false, uVoid_typeof(), 1, ::TYPES[87/*Fuse.Animations.ITrackProvider*/]),
         new uFunction("get_Weight", NULL, (void*)TrackAnimator__get_Weight_fn, 0, false, ::g::Uno::Double_typeof(), 0),
         new uFunction("set_Weight", NULL, (void*)TrackAnimator__set_Weight_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Double_typeof()));
 }
@@ -11659,86 +12258,86 @@ static void TrackAnimator_build(uType* type)
     return type;
 }
 
-// protected generated TrackAnimator() :3160
+// protected generated TrackAnimator() :3366
 void TrackAnimator__ctor_2_fn(TrackAnimator* __this)
 {
     __this->ctor_2();
 }
 
-// internal override sealed Fuse.Animations.AnimatorVariant get_AnimatorVariant() :3164
+// internal override sealed Fuse.Animations.AnimatorVariant get_AnimatorVariant() :3370
 void TrackAnimator__get_AnimatorVariant_fn(TrackAnimator* __this, int* __retval)
 {
     uStackFrame __("Fuse.Animations.TrackAnimator", "get_AnimatorVariant()");
 
     if (__this->_discreteProvider != NULL)
-        return *__retval = ::g::Fuse::Animations::TrackProvider::GetAnimatorVariant(uInterface(uPtr(__this->_discreteProvider), ::TYPES[70/*Fuse.Animations.TrackProvider*/]), __this), void();
+        return *__retval = ::g::Fuse::Animations::TrackProvider::GetAnimatorVariant(uInterface(uPtr(__this->_discreteProvider), ::TYPES[85/*Fuse.Animations.TrackProvider*/]), __this), void();
     else if (__this->_continuousProvider != NULL)
-        return *__retval = ::g::Fuse::Animations::TrackProvider::GetAnimatorVariant(uInterface(uPtr(__this->_continuousProvider), ::TYPES[70/*Fuse.Animations.TrackProvider*/]), __this), void();
+        return *__retval = ::g::Fuse::Animations::TrackProvider::GetAnimatorVariant(uInterface(uPtr(__this->_continuousProvider), ::TYPES[85/*Fuse.Animations.TrackProvider*/]), __this), void();
 
     return *__retval = 0, void();
 }
 
-// public double get_DelayBack() :3274
+// public double get_DelayBack() :3480
 void TrackAnimator__get_DelayBack_fn(TrackAnimator* __this, double* __retval)
 {
     *__retval = __this->DelayBack();
 }
 
-// public void set_DelayBack(double value) :3275
+// public void set_DelayBack(double value) :3481
 void TrackAnimator__set_DelayBack_fn(TrackAnimator* __this, double* value)
 {
     __this->DelayBack(*value);
 }
 
-// public generated double get_Duration() :3250
+// public generated double get_Duration() :3456
 void TrackAnimator__get_Duration_fn(TrackAnimator* __this, double* __retval)
 {
     *__retval = __this->Duration();
 }
 
-// public generated void set_Duration(double value) :3250
+// public generated void set_Duration(double value) :3456
 void TrackAnimator__set_Duration_fn(TrackAnimator* __this, double* value)
 {
     __this->Duration(*value);
 }
 
-// public double get_DurationBack() :3259
+// public double get_DurationBack() :3465
 void TrackAnimator__get_DurationBack_fn(TrackAnimator* __this, double* __retval)
 {
     *__retval = __this->DurationBack();
 }
 
-// public void set_DurationBack(double value) :3260
+// public void set_DurationBack(double value) :3466
 void TrackAnimator__set_DurationBack_fn(TrackAnimator* __this, double* value)
 {
     __this->DurationBack(*value);
 }
 
-// public Fuse.Animations.Easing get_Easing() :3228
+// public Fuse.Animations.Easing get_Easing() :3434
 void TrackAnimator__get_Easing_fn(TrackAnimator* __this, ::g::Fuse::Animations::Easing** __retval)
 {
     *__retval = __this->Easing();
 }
 
-// public void set_Easing(Fuse.Animations.Easing value) :3229
+// public void set_Easing(Fuse.Animations.Easing value) :3435
 void TrackAnimator__set_Easing_fn(TrackAnimator* __this, ::g::Fuse::Animations::Easing* value)
 {
     __this->Easing(value);
 }
 
-// public Fuse.Animations.Easing get_EasingBack() :3239
+// public Fuse.Animations.Easing get_EasingBack() :3445
 void TrackAnimator__get_EasingBack_fn(TrackAnimator* __this, ::g::Fuse::Animations::Easing** __retval)
 {
     *__retval = __this->EasingBack();
 }
 
-// public void set_EasingBack(Fuse.Animations.Easing value) :3240
+// public void set_EasingBack(Fuse.Animations.Easing value) :3446
 void TrackAnimator__set_EasingBack_fn(TrackAnimator* __this, ::g::Fuse::Animations::Easing* value)
 {
     __this->EasingBack(value);
 }
 
-// internal override sealed double GetDurationWithDelay(Fuse.Animations.AnimationVariant dir) :3174
+// internal override sealed double GetDurationWithDelay(Fuse.Animations.AnimationVariant dir) :3380
 void TrackAnimator__GetDurationWithDelay_fn(TrackAnimator* __this, int* dir, double* __retval)
 {
     uStackFrame __("Fuse.Animations.TrackAnimator", "GetDurationWithDelay(Fuse.Animations.AnimationVariant)");
@@ -11746,80 +12345,80 @@ void TrackAnimator__GetDurationWithDelay_fn(TrackAnimator* __this, int* dir, dou
     double duration = 0.0;
 
     if (__this->_discreteProvider != NULL)
-        duration = ::g::Fuse::Animations::TrackProvider::GetDuration(uInterface(uPtr(__this->_discreteProvider), ::TYPES[70/*Fuse.Animations.TrackProvider*/]), __this, dir_);
+        duration = ::g::Fuse::Animations::TrackProvider::GetDuration(uInterface(uPtr(__this->_discreteProvider), ::TYPES[85/*Fuse.Animations.TrackProvider*/]), __this, dir_);
     else if (__this->_continuousProvider != NULL)
-        duration = ::g::Fuse::Animations::TrackProvider::GetDuration(uInterface(uPtr(__this->_continuousProvider), ::TYPES[70/*Fuse.Animations.TrackProvider*/]), __this, dir_);
+        duration = ::g::Fuse::Animations::TrackProvider::GetDuration(uInterface(uPtr(__this->_continuousProvider), ::TYPES[85/*Fuse.Animations.TrackProvider*/]), __this, dir_);
 
     return *__retval = (((dir_ == 1) && __this->HasBack()) ? __this->DelayBack() : __this->Delay()) + duration, void();
 }
 
-// internal Fuse.Animations.TrackProvider GetProvider(Fuse.Animations.AnimationVariant variant) :3214
+// internal Fuse.Animations.TrackProvider GetProvider(Fuse.Animations.AnimationVariant variant) :3420
 void TrackAnimator__GetProvider_fn(TrackAnimator* __this, int* variant, uObject** __retval)
 {
     *__retval = __this->GetProvider(*variant);
 }
 
-// internal bool get_HasBack() :3284
+// internal bool get_HasBack() :3490
 void TrackAnimator__get_HasBack_fn(TrackAnimator* __this, bool* __retval)
 {
     *__retval = __this->HasBack();
 }
 
-// public Fuse.Animations.KeyframeInterpolation get_KeyframeInterpolation() :3314
+// public Fuse.Animations.KeyframeInterpolation get_KeyframeInterpolation() :3520
 void TrackAnimator__get_KeyframeInterpolation_fn(TrackAnimator* __this, int* __retval)
 {
     *__retval = __this->KeyframeInterpolation();
 }
 
-// public void set_KeyframeInterpolation(Fuse.Animations.KeyframeInterpolation value) :3315
+// public void set_KeyframeInterpolation(Fuse.Animations.KeyframeInterpolation value) :3521
 void TrackAnimator__set_KeyframeInterpolation_fn(TrackAnimator* __this, int* value)
 {
     __this->KeyframeInterpolation(*value);
 }
 
-// public Uno.Collections.IList<Fuse.Animations.Keyframe> get_Keyframes() :3357
+// public Uno.Collections.IList<Fuse.Animations.Keyframe> get_Keyframes() :3563
 void TrackAnimator__get_Keyframes_fn(TrackAnimator* __this, uObject** __retval)
 {
     *__retval = __this->Keyframes();
 }
 
-// private Fuse.Animations.KeyframeTrack get_KeyframeTrack() :3290
+// private Fuse.Animations.KeyframeTrack get_KeyframeTrack() :3496
 void TrackAnimator__get_KeyframeTrack_fn(TrackAnimator* __this, uObject** __retval)
 {
     *__retval = __this->KeyframeTrack();
 }
 
-// internal void MarkDiscrete() :3189
+// internal void MarkDiscrete() :3395
 void TrackAnimator__MarkDiscrete_fn(TrackAnimator* __this)
 {
     __this->MarkDiscrete();
 }
 
-// public Fuse.Animations.ITrackProvider get_Provider() :3200
+// public Fuse.Animations.ITrackProvider get_Provider() :3406
 void TrackAnimator__get_Provider_fn(TrackAnimator* __this, uObject** __retval)
 {
     *__retval = __this->Provider();
 }
 
-// public void set_Provider(Fuse.Animations.ITrackProvider value) :3206
+// public void set_Provider(Fuse.Animations.ITrackProvider value) :3412
 void TrackAnimator__set_Provider_fn(TrackAnimator* __this, uObject* value)
 {
     __this->Provider(value);
 }
 
-// public double get_Weight() :3368
+// public double get_Weight() :3574
 void TrackAnimator__get_Weight_fn(TrackAnimator* __this, double* __retval)
 {
     *__retval = __this->Weight();
 }
 
-// public void set_Weight(double value) :3369
+// public void set_Weight(double value) :3575
 void TrackAnimator__set_Weight_fn(TrackAnimator* __this, double* value)
 {
     __this->Weight(*value);
 }
 
-// protected generated TrackAnimator() [instance] :3160
+// protected generated TrackAnimator() [instance] :3366
 void TrackAnimator::ctor_2()
 {
     uStackFrame __("Fuse.Animations.TrackAnimator", ".ctor()");
@@ -11829,104 +12428,104 @@ void TrackAnimator::ctor_2()
     ctor_1();
 }
 
-// public double get_DelayBack() [instance] :3274
+// public double get_DelayBack() [instance] :3480
 double TrackAnimator::DelayBack()
 {
     return _hasDelayBack ? _delayBack : 0.0;
 }
 
-// public void set_DelayBack(double value) [instance] :3275
+// public void set_DelayBack(double value) [instance] :3481
 void TrackAnimator::DelayBack(double value)
 {
     _delayBack = value;
     _hasDelayBack = true;
 }
 
-// public generated double get_Duration() [instance] :3250
+// public generated double get_Duration() [instance] :3456
 double TrackAnimator::Duration()
 {
     return _Duration;
 }
 
-// public generated void set_Duration(double value) [instance] :3250
+// public generated void set_Duration(double value) [instance] :3456
 void TrackAnimator::Duration(double value)
 {
     _Duration = value;
 }
 
-// public double get_DurationBack() [instance] :3259
+// public double get_DurationBack() [instance] :3465
 double TrackAnimator::DurationBack()
 {
     return _hasDurationBack ? _durationBack : Duration();
 }
 
-// public void set_DurationBack(double value) [instance] :3260
+// public void set_DurationBack(double value) [instance] :3466
 void TrackAnimator::DurationBack(double value)
 {
     _durationBack = value;
     _hasDurationBack = true;
 }
 
-// public Fuse.Animations.Easing get_Easing() [instance] :3228
+// public Fuse.Animations.Easing get_Easing() [instance] :3434
 ::g::Fuse::Animations::Easing* TrackAnimator::Easing()
 {
     return _easing;
 }
 
-// public void set_Easing(Fuse.Animations.Easing value) [instance] :3229
+// public void set_Easing(Fuse.Animations.Easing value) [instance] :3435
 void TrackAnimator::Easing(::g::Fuse::Animations::Easing* value)
 {
     _easing = value;
 }
 
-// public Fuse.Animations.Easing get_EasingBack() [instance] :3239
+// public Fuse.Animations.Easing get_EasingBack() [instance] :3445
 ::g::Fuse::Animations::Easing* TrackAnimator::EasingBack()
 {
     return _hasEasingBack ? (::g::Fuse::Animations::Easing*)_easingBack : (::g::Fuse::Animations::Easing*)_easing;
 }
 
-// public void set_EasingBack(Fuse.Animations.Easing value) [instance] :3240
+// public void set_EasingBack(Fuse.Animations.Easing value) [instance] :3446
 void TrackAnimator::EasingBack(::g::Fuse::Animations::Easing* value)
 {
     _easingBack = value;
     _hasEasingBack = true;
 }
 
-// internal Fuse.Animations.TrackProvider GetProvider(Fuse.Animations.AnimationVariant variant) [instance] :3214
+// internal Fuse.Animations.TrackProvider GetProvider(Fuse.Animations.AnimationVariant variant) [instance] :3420
 uObject* TrackAnimator::GetProvider(int variant)
 {
     uObject* ind1 = _discreteProvider;
     return (ind1 != NULL) ? ind1 : (uObject*)_continuousProvider;
 }
 
-// internal bool get_HasBack() [instance] :3284
+// internal bool get_HasBack() [instance] :3490
 bool TrackAnimator::HasBack()
 {
     return (_hasDelayBack || _hasDurationBack) || _hasEasingBack;
 }
 
-// public Fuse.Animations.KeyframeInterpolation get_KeyframeInterpolation() [instance] :3314
+// public Fuse.Animations.KeyframeInterpolation get_KeyframeInterpolation() [instance] :3520
 int TrackAnimator::KeyframeInterpolation()
 {
     uStackFrame __("Fuse.Animations.TrackAnimator", "get_KeyframeInterpolation()");
-    return ::g::Fuse::Animations::KeyframeTrack::Interpolation(uInterface(uPtr(KeyframeTrack()), ::TYPES[71/*Fuse.Animations.KeyframeTrack*/]));
+    return ::g::Fuse::Animations::KeyframeTrack::Interpolation(uInterface(uPtr(KeyframeTrack()), ::TYPES[86/*Fuse.Animations.KeyframeTrack*/]));
 }
 
-// public void set_KeyframeInterpolation(Fuse.Animations.KeyframeInterpolation value) [instance] :3315
+// public void set_KeyframeInterpolation(Fuse.Animations.KeyframeInterpolation value) [instance] :3521
 void TrackAnimator::KeyframeInterpolation(int value)
 {
     uStackFrame __("Fuse.Animations.TrackAnimator", "set_KeyframeInterpolation(Fuse.Animations.KeyframeInterpolation)");
-    ::g::Fuse::Animations::KeyframeTrack::Interpolation(uInterface(uPtr(KeyframeTrack()), ::TYPES[71/*Fuse.Animations.KeyframeTrack*/]), value);
+    ::g::Fuse::Animations::KeyframeTrack::Interpolation(uInterface(uPtr(KeyframeTrack()), ::TYPES[86/*Fuse.Animations.KeyframeTrack*/]), value);
 }
 
-// public Uno.Collections.IList<Fuse.Animations.Keyframe> get_Keyframes() [instance] :3357
+// public Uno.Collections.IList<Fuse.Animations.Keyframe> get_Keyframes() [instance] :3563
 uObject* TrackAnimator::Keyframes()
 {
     uStackFrame __("Fuse.Animations.TrackAnimator", "get_Keyframes()");
-    return ::g::Fuse::Animations::KeyframeTrack::Keyframes(uInterface(uPtr(KeyframeTrack()), ::TYPES[71/*Fuse.Animations.KeyframeTrack*/]));
+    return ::g::Fuse::Animations::KeyframeTrack::Keyframes(uInterface(uPtr(KeyframeTrack()), ::TYPES[86/*Fuse.Animations.KeyframeTrack*/]));
 }
 
-// private Fuse.Animations.KeyframeTrack get_KeyframeTrack() [instance] :3290
+// private Fuse.Animations.KeyframeTrack get_KeyframeTrack() [instance] :3496
 uObject* TrackAnimator::KeyframeTrack()
 {
     uStackFrame __("Fuse.Animations.TrackAnimator", "get_KeyframeTrack()");
@@ -11950,7 +12549,7 @@ uObject* TrackAnimator::KeyframeTrack()
     return _keyframeTrack;
 }
 
-// internal void MarkDiscrete() [instance] :3189
+// internal void MarkDiscrete() [instance] :3395
 void TrackAnimator::MarkDiscrete()
 {
     uStackFrame __("Fuse.Animations.TrackAnimator", "MarkDiscrete()");
@@ -11959,49 +12558,49 @@ void TrackAnimator::MarkDiscrete()
     _isDiscrete = true;
 }
 
-// public Fuse.Animations.ITrackProvider get_Provider() [instance] :3200
+// public Fuse.Animations.ITrackProvider get_Provider() [instance] :3406
 uObject* TrackAnimator::Provider()
 {
     if (_continuousProvider != NULL)
-        return uAs<uObject*>(_continuousProvider, ::TYPES[72/*Fuse.Animations.ITrackProvider*/]);
+        return uAs<uObject*>(_continuousProvider, ::TYPES[87/*Fuse.Animations.ITrackProvider*/]);
 
     return NULL;
 }
 
-// public void set_Provider(Fuse.Animations.ITrackProvider value) [instance] :3206
+// public void set_Provider(Fuse.Animations.ITrackProvider value) [instance] :3412
 void TrackAnimator::Provider(uObject* value)
 {
     _continuousProvider = NULL;
 
-    if (uIs(value, ::TYPES[50/*Fuse.Animations.ContinuousTrackProvider*/]))
-        _continuousProvider = uAs<uObject*>(value, ::TYPES[70/*Fuse.Animations.TrackProvider*/]);
+    if (uIs(value, ::TYPES[51/*Fuse.Animations.ContinuousTrackProvider*/]))
+        _continuousProvider = uAs<uObject*>(value, ::TYPES[85/*Fuse.Animations.TrackProvider*/]);
 }
 
-// public double get_Weight() [instance] :3368
+// public double get_Weight() [instance] :3574
 double TrackAnimator::Weight()
 {
     return _weight;
 }
 
-// public void set_Weight(double value) [instance] :3369
+// public void set_Weight(double value) [instance] :3575
 void TrackAnimator::Weight(double value)
 {
     _weight = value;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract class TrackAnimatorState :3378
+// internal abstract class TrackAnimatorState :3584
 // {
 static void TrackAnimatorState_build(uType* type)
 {
-    ::TYPES[50] = ::g::Fuse::Animations::ContinuousTrackProvider_typeof();
-    ::TYPES[16] = ::g::Fuse::Animations::DiscreteTrackProvider_typeof();
+    ::TYPES[51] = ::g::Fuse::Animations::ContinuousTrackProvider_typeof();
+    ::TYPES[17] = ::g::Fuse::Animations::DiscreteTrackProvider_typeof();
     type->SetFields(3,
-        ::TYPES[50/*Fuse.Animations.ContinuousTrackProvider*/], offsetof(::g::Fuse::Animations::TrackAnimatorState, _continuousProvider), 0,
-        ::TYPES[16/*Fuse.Animations.DiscreteTrackProvider*/], offsetof(::g::Fuse::Animations::TrackAnimatorState, _discreteProvider), 0,
+        ::TYPES[51/*Fuse.Animations.ContinuousTrackProvider*/], offsetof(::g::Fuse::Animations::TrackAnimatorState, _continuousProvider), 0,
+        ::TYPES[17/*Fuse.Animations.DiscreteTrackProvider*/], offsetof(::g::Fuse::Animations::TrackAnimatorState, _discreteProvider), 0,
         ::g::Fuse::Animations::TrackAnimator_typeof(), offsetof(::g::Fuse::Animations::TrackAnimatorState, Animator), 0);
 }
 
@@ -12024,36 +12623,36 @@ TrackAnimatorState_type* TrackAnimatorState_typeof()
     return type;
 }
 
-// protected TrackAnimatorState(Fuse.Animations.TrackAnimator animator, Fuse.Animations.CreateStateParams p, [Fuse.Visual useVisual]) :3384
+// protected TrackAnimatorState(Fuse.Animations.TrackAnimator animator, Fuse.Animations.CreateStateParams p, [Fuse.Visual useVisual]) :3590
 void TrackAnimatorState__ctor_1_fn(TrackAnimatorState* __this, ::g::Fuse::Animations::TrackAnimator* animator, ::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse::Visual* useVisual)
 {
     __this->ctor_1(animator, p, useVisual);
 }
 
-// public double get_Duration() :3463
+// public double get_Duration() :3669
 void TrackAnimatorState__get_Duration_fn(TrackAnimatorState* __this, double* __retval)
 {
     *__retval = __this->Duration();
 }
 
-// public Fuse.Animations.Easing get_Easing() :3468
+// public Fuse.Animations.Easing get_Easing() :3674
 void TrackAnimatorState__get_Easing_fn(TrackAnimatorState* __this, ::g::Fuse::Animations::Easing** __retval)
 {
     *__retval = __this->Easing();
 }
 
-// public bool get_IsBackward() :3458
+// public bool get_IsBackward() :3664
 void TrackAnimatorState__get_IsBackward_fn(TrackAnimatorState* __this, bool* __retval)
 {
     *__retval = __this->IsBackward();
 }
 
-// protected virtual void SeekObjectValue(object value, float strength) :3454
+// protected virtual void SeekObjectValue(object value, float strength) :3660
 void TrackAnimatorState__SeekObjectValue_fn(TrackAnimatorState* __this, uObject* value, float* strength)
 {
 }
 
-// internal override sealed Fuse.Animations.SeekResult SeekProgress(double progress, double interval, Fuse.Animations.SeekDirection dir, double strength) :3394
+// internal override sealed Fuse.Animations.SeekResult SeekProgress(double progress, double interval, Fuse.Animations.SeekDirection dir, double strength) :3600
 void TrackAnimatorState__SeekProgress_fn(TrackAnimatorState* __this, double* progress, double* interval, int* dir, double* strength, int* __retval)
 {
     uStackFrame __("Fuse.Animations.TrackAnimatorState", "SeekProgress(double,double,Fuse.Animations.SeekDirection,double)");
@@ -12066,7 +12665,7 @@ void TrackAnimatorState__SeekProgress_fn(TrackAnimatorState* __this, double* pro
     {
         double oStrength;
         ::g::Uno::Float4 oValue;
-        int r = ::g::Fuse::Animations::ContinuousTrackProvider::GetSeekProgress(uInterface(uPtr(__this->_continuousProvider), ::TYPES[50/*Fuse.Animations.ContinuousTrackProvider*/]), __this, progress_, interval_, dir_, &oValue, &oStrength);
+        int r = ::g::Fuse::Animations::ContinuousTrackProvider::GetSeekProgress(uInterface(uPtr(__this->_continuousProvider), ::TYPES[51/*Fuse.Animations.ContinuousTrackProvider*/]), __this, progress_, interval_, dir_, &oValue, &oStrength);
         __this->SeekValue(oValue, (float)((oStrength * strength_) * uPtr(__this->Animator)->Weight()));
         return *__retval = r, void();
     }
@@ -12075,7 +12674,7 @@ void TrackAnimatorState__SeekProgress_fn(TrackAnimatorState* __this, double* pro
     {
         double oStrength1;
         uObject* oValue1;
-        int r1 = ::g::Fuse::Animations::DiscreteTrackProvider::GetSeekProgress(uInterface(uPtr(__this->_discreteProvider), ::TYPES[16/*Fuse.Animations.DiscreteTrackProvider*/]), __this, progress_, interval_, dir_, &oValue1, &oStrength1);
+        int r1 = ::g::Fuse::Animations::DiscreteTrackProvider::GetSeekProgress(uInterface(uPtr(__this->_discreteProvider), ::TYPES[17/*Fuse.Animations.DiscreteTrackProvider*/]), __this, progress_, interval_, dir_, &oValue1, &oStrength1);
         __this->SeekObjectValue(oValue1, (float)((oStrength1 * strength_) * uPtr(__this->Animator)->Weight()));
         return *__retval = r1, void();
     }
@@ -12083,7 +12682,7 @@ void TrackAnimatorState__SeekProgress_fn(TrackAnimatorState* __this, double* pro
     return *__retval = 3, void();
 }
 
-// internal override sealed Fuse.Animations.SeekResult SeekTime(double elapsed, double interval, Fuse.Animations.SeekDirection dir, double strength) :3420
+// internal override sealed Fuse.Animations.SeekResult SeekTime(double elapsed, double interval, Fuse.Animations.SeekDirection dir, double strength) :3626
 void TrackAnimatorState__SeekTime_fn(TrackAnimatorState* __this, double* elapsed, double* interval, int* dir, double* strength, int* __retval)
 {
     uStackFrame __("Fuse.Animations.TrackAnimatorState", "SeekTime(double,double,Fuse.Animations.SeekDirection,double)");
@@ -12102,7 +12701,7 @@ void TrackAnimatorState__SeekTime_fn(TrackAnimatorState* __this, double* elapsed
     {
         double oStrength;
         ::g::Uno::Float4 oValue;
-        int r = ::g::Fuse::Animations::ContinuousTrackProvider::GetSeekTime(uInterface(uPtr(__this->_continuousProvider), ::TYPES[50/*Fuse.Animations.ContinuousTrackProvider*/]), __this, relTime, interval_, dir_, &oValue, &oStrength);
+        int r = ::g::Fuse::Animations::ContinuousTrackProvider::GetSeekTime(uInterface(uPtr(__this->_continuousProvider), ::TYPES[51/*Fuse.Animations.ContinuousTrackProvider*/]), __this, relTime, interval_, dir_, &oValue, &oStrength);
         __this->SeekValue(oValue, (float)((oStrength * strength_) * uPtr(__this->Animator)->Weight()));
         return *__retval = r, void();
     }
@@ -12111,7 +12710,7 @@ void TrackAnimatorState__SeekTime_fn(TrackAnimatorState* __this, double* elapsed
     {
         double oStrength1;
         uObject* oValue1;
-        int r1 = ::g::Fuse::Animations::DiscreteTrackProvider::GetSeekTime(uInterface(uPtr(__this->_discreteProvider), ::TYPES[16/*Fuse.Animations.DiscreteTrackProvider*/]), __this, relTime, interval_, dir_, &oValue1, &oStrength1);
+        int r1 = ::g::Fuse::Animations::DiscreteTrackProvider::GetSeekTime(uInterface(uPtr(__this->_discreteProvider), ::TYPES[17/*Fuse.Animations.DiscreteTrackProvider*/]), __this, relTime, interval_, dir_, &oValue1, &oStrength1);
         __this->SeekObjectValue(oValue1, (float)((oStrength1 * strength_) * uPtr(__this->Animator)->Weight()));
         return *__retval = r1, void();
     }
@@ -12119,47 +12718,47 @@ void TrackAnimatorState__SeekTime_fn(TrackAnimatorState* __this, double* elapsed
     return *__retval = 3, void();
 }
 
-// protected virtual void SeekValue(float4 value, float strength) :3453
+// protected virtual void SeekValue(float4 value, float strength) :3659
 void TrackAnimatorState__SeekValue_fn(TrackAnimatorState* __this, ::g::Uno::Float4* value, float* strength)
 {
 }
 
-// protected TrackAnimatorState(Fuse.Animations.TrackAnimator animator, Fuse.Animations.CreateStateParams p, [Fuse.Visual useVisual]) [instance] :3384
+// protected TrackAnimatorState(Fuse.Animations.TrackAnimator animator, Fuse.Animations.CreateStateParams p, [Fuse.Visual useVisual]) [instance] :3590
 void TrackAnimatorState::ctor_1(::g::Fuse::Animations::TrackAnimator* animator, ::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse::Visual* useVisual)
 {
     uStackFrame __("Fuse.Animations.TrackAnimatorState", ".ctor(Fuse.Animations.TrackAnimator,Fuse.Animations.CreateStateParams,[Fuse.Visual])");
     ctor_(p, useVisual);
     Animator = animator;
     uObject* pr = uPtr(animator)->GetProvider(Variant);
-    _continuousProvider = uAs<uObject*>(pr, ::TYPES[50/*Fuse.Animations.ContinuousTrackProvider*/]);
-    _discreteProvider = uAs<uObject*>(pr, ::TYPES[16/*Fuse.Animations.DiscreteTrackProvider*/]);
+    _continuousProvider = uAs<uObject*>(pr, ::TYPES[51/*Fuse.Animations.ContinuousTrackProvider*/]);
+    _discreteProvider = uAs<uObject*>(pr, ::TYPES[17/*Fuse.Animations.DiscreteTrackProvider*/]);
 }
 
-// public double get_Duration() [instance] :3463
+// public double get_Duration() [instance] :3669
 double TrackAnimatorState::Duration()
 {
     uStackFrame __("Fuse.Animations.TrackAnimatorState", "get_Duration()");
     return IsBackward() ? uPtr(Animator)->DurationBack() : uPtr(Animator)->Duration();
 }
 
-// public Fuse.Animations.Easing get_Easing() [instance] :3468
+// public Fuse.Animations.Easing get_Easing() [instance] :3674
 ::g::Fuse::Animations::Easing* TrackAnimatorState::Easing()
 {
     uStackFrame __("Fuse.Animations.TrackAnimatorState", "get_Easing()");
     return IsBackward() ? (::g::Fuse::Animations::Easing*)uPtr(Animator)->EasingBack() : (::g::Fuse::Animations::Easing*)uPtr(Animator)->Easing();
 }
 
-// public bool get_IsBackward() [instance] :3458
+// public bool get_IsBackward() [instance] :3664
 bool TrackAnimatorState::IsBackward()
 {
     return Variant == 1;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal abstract interface TrackProvider :3122
+// internal abstract interface TrackProvider :3328
 // {
 uInterfaceType* TrackProvider_typeof()
 {
@@ -12171,14 +12770,14 @@ uInterfaceType* TrackProvider_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public abstract class TransformAnimator<TransformType> :3499
+// public abstract class TransformAnimator<TransformType> :3705
 // {
 static void TransformAnimator_build(uType* type)
 {
-    ::TYPES[73] = ::g::Fuse::Animations::TransformAnimatorState_typeof();
+    ::TYPES[88] = ::g::Fuse::Animations::TransformAnimatorState_typeof();
     type->SetPrecalc(
         ::g::Fuse::Animations::TransformAnimatorState_typeof()->MakeType(type->T(0), NULL));
     type->SetFields(20,
@@ -12220,13 +12819,13 @@ TransformAnimator_type* TransformAnimator_typeof()
     return type;
 }
 
-// internal TransformAnimator() :3502
+// internal TransformAnimator() :3708
 void TransformAnimator__ctor_3_fn(TransformAnimator* __this)
 {
     __this->ctor_3();
 }
 
-// internal override sealed Fuse.Animations.AnimatorState CreateState(Fuse.Animations.CreateStateParams p) :3600
+// internal override sealed Fuse.Animations.AnimatorState CreateState(Fuse.Animations.CreateStateParams p) :3806
 void TransformAnimator__CreateState_fn(TransformAnimator* __this, ::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse::Animations::AnimatorState** __retval)
 {
     uType* __types[] = {
@@ -12235,91 +12834,91 @@ void TransformAnimator__CreateState_fn(TransformAnimator* __this, ::g::Fuse::Ani
     return *__retval = (::g::Fuse::Animations::TransformAnimatorState*)::g::Fuse::Animations::TransformAnimatorState::New1(__types[0], __this, p), void();
 }
 
-// public generated int get_Priority() :3596
+// public generated int get_Priority() :3802
 void TransformAnimator__get_Priority_fn(TransformAnimator* __this, int* __retval)
 {
     *__retval = __this->Priority();
 }
 
-// public generated void set_Priority(int value) :3596
+// public generated void set_Priority(int value) :3802
 void TransformAnimator__set_Priority_fn(TransformAnimator* __this, int* value)
 {
     __this->Priority(*value);
 }
 
-// public generated Fuse.Visual get_RelativeNode() :3588
+// public generated Fuse.Visual get_RelativeNode() :3794
 void TransformAnimator__get_RelativeNode_fn(TransformAnimator* __this, ::g::Fuse::Visual** __retval)
 {
     *__retval = __this->RelativeNode();
 }
 
-// public generated void set_RelativeNode(Fuse.Visual value) :3589
+// public generated void set_RelativeNode(Fuse.Visual value) :3795
 void TransformAnimator__set_RelativeNode_fn(TransformAnimator* __this, ::g::Fuse::Visual* value)
 {
     __this->RelativeNode(value);
 }
 
-// public generated Fuse.Visual get_Target() :3593
+// public generated Fuse.Visual get_Target() :3799
 void TransformAnimator__get_Target_fn(TransformAnimator* __this, ::g::Fuse::Visual** __retval)
 {
     *__retval = __this->Target();
 }
 
-// public generated void set_Target(Fuse.Visual value) :3593
+// public generated void set_Target(Fuse.Visual value) :3799
 void TransformAnimator__set_Target_fn(TransformAnimator* __this, ::g::Fuse::Visual* value)
 {
     __this->Target(value);
 }
 
-// public float3 get_Vector() :3571
+// public float3 get_Vector() :3777
 void TransformAnimator__get_Vector_fn(TransformAnimator* __this, ::g::Uno::Float3* __retval)
 {
     *__retval = __this->Vector();
 }
 
-// public void set_Vector(float3 value) :3572
+// public void set_Vector(float3 value) :3778
 void TransformAnimator__set_Vector_fn(TransformAnimator* __this, ::g::Uno::Float3* value)
 {
     __this->Vector(*value);
 }
 
-// public float get_X() :3520
+// public float get_X() :3726
 void TransformAnimator__get_X_fn(TransformAnimator* __this, float* __retval)
 {
     *__retval = __this->X();
 }
 
-// public void set_X(float value) :3521
+// public void set_X(float value) :3727
 void TransformAnimator__set_X_fn(TransformAnimator* __this, float* value)
 {
     __this->X(*value);
 }
 
-// public float get_Y() :3537
+// public float get_Y() :3743
 void TransformAnimator__get_Y_fn(TransformAnimator* __this, float* __retval)
 {
     *__retval = __this->Y();
 }
 
-// public void set_Y(float value) :3538
+// public void set_Y(float value) :3744
 void TransformAnimator__set_Y_fn(TransformAnimator* __this, float* value)
 {
     __this->Y(*value);
 }
 
-// public float get_Z() :3554
+// public float get_Z() :3760
 void TransformAnimator__get_Z_fn(TransformAnimator* __this, float* __retval)
 {
     *__retval = __this->Z();
 }
 
-// public void set_Z(float value) :3555
+// public void set_Z(float value) :3761
 void TransformAnimator__set_Z_fn(TransformAnimator* __this, float* value)
 {
     __this->Z(*value);
 }
 
-// internal TransformAnimator() [instance] :3502
+// internal TransformAnimator() [instance] :3708
 void TransformAnimator::ctor_3()
 {
     uStackFrame __("Fuse.Animations.TransformAnimator`1", ".ctor()");
@@ -12327,113 +12926,113 @@ void TransformAnimator::ctor_3()
     MixOp(1);
 }
 
-// public generated int get_Priority() [instance] :3596
+// public generated int get_Priority() [instance] :3802
 int TransformAnimator::Priority()
 {
     return _Priority;
 }
 
-// public generated void set_Priority(int value) [instance] :3596
+// public generated void set_Priority(int value) [instance] :3802
 void TransformAnimator::Priority(int value)
 {
     _Priority = value;
 }
 
-// public generated Fuse.Visual get_RelativeNode() [instance] :3588
+// public generated Fuse.Visual get_RelativeNode() [instance] :3794
 ::g::Fuse::Visual* TransformAnimator::RelativeNode()
 {
     return _RelativeNode;
 }
 
-// public generated void set_RelativeNode(Fuse.Visual value) [instance] :3589
+// public generated void set_RelativeNode(Fuse.Visual value) [instance] :3795
 void TransformAnimator::RelativeNode(::g::Fuse::Visual* value)
 {
     _RelativeNode = value;
 }
 
-// public generated Fuse.Visual get_Target() [instance] :3593
+// public generated Fuse.Visual get_Target() [instance] :3799
 ::g::Fuse::Visual* TransformAnimator::Target()
 {
     return _Target;
 }
 
-// public generated void set_Target(Fuse.Visual value) [instance] :3593
+// public generated void set_Target(Fuse.Visual value) [instance] :3799
 void TransformAnimator::Target(::g::Fuse::Visual* value)
 {
     _Target = value;
 }
 
-// public float3 get_Vector() [instance] :3571
+// public float3 get_Vector() [instance] :3777
 ::g::Uno::Float3 TransformAnimator::Vector()
 {
     ::g::Uno::Float4 ind1 = _vectorValue;
     return ::g::Uno::Float3__New2(ind1.X, ind1.Y, ind1.Z);
 }
 
-// public void set_Vector(float3 value) [instance] :3572
+// public void set_Vector(float3 value) [instance] :3778
 void TransformAnimator::Vector(::g::Uno::Float3 value)
 {
     _vectorValue = ::g::Uno::Float4__New8(value, _vectorValue.W);
 }
 
-// public float get_X() [instance] :3520
+// public float get_X() [instance] :3726
 float TransformAnimator::X()
 {
     return _vectorValue.X;
 }
 
-// public void set_X(float value) [instance] :3521
+// public void set_X(float value) [instance] :3727
 void TransformAnimator::X(float value)
 {
     _vectorValue.X = value;
 }
 
-// public float get_Y() [instance] :3537
+// public float get_Y() [instance] :3743
 float TransformAnimator::Y()
 {
     return _vectorValue.Y;
 }
 
-// public void set_Y(float value) [instance] :3538
+// public void set_Y(float value) [instance] :3744
 void TransformAnimator::Y(float value)
 {
     _vectorValue.Y = value;
 }
 
-// public float get_Z() [instance] :3554
+// public float get_Z() [instance] :3760
 float TransformAnimator::Z()
 {
     return _vectorValue.Z;
 }
 
-// public void set_Z(float value) [instance] :3555
+// public void set_Z(float value) [instance] :3761
 void TransformAnimator::Z(float value)
 {
     _vectorValue.Z = value;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class TransformAnimatorState<TransformType> :3606
+// internal sealed class TransformAnimatorState<TransformType> :3812
 // {
 static void TransformAnimatorState_build(uType* type)
 {
     ::STRINGS[7] = uString::Const("Invalid seek");
-    ::STRINGS[2] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno");
+    ::STRINGS[2] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
-    ::TYPES[74] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Transform_typeof(), NULL);
-    ::TYPES[75] = ::g::Fuse::Transform_typeof();
-    ::TYPES[68] = ::g::Fuse::Animations::IMixerHandle_typeof()->MakeType(::TYPES[75/*Fuse.Transform*/], NULL);
+    ::TYPES[89] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Transform_typeof(), NULL);
+    ::TYPES[90] = ::g::Fuse::Transform_typeof();
+    ::TYPES[69] = ::g::Fuse::Animations::IMixerHandle_typeof()->MakeType(::TYPES[90/*Fuse.Transform*/], NULL);
     type->SetPrecalc(
         type->T(0));
     type->SetFields(6,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Animations::TransformAnimatorState, _inSeek), 0,
         ::g::Uno::Float_typeof(), offsetof(::g::Fuse::Animations::TransformAnimatorState, _lastStrength), 0,
-        ::TYPES[74/*Uno.Action<Fuse.Transform>*/], offsetof(::g::Fuse::Animations::TransformAnimatorState, _matAct), 0,
+        ::TYPES[89/*Uno.Action<Fuse.Transform>*/], offsetof(::g::Fuse::Animations::TransformAnimatorState, _matAct), 0,
         ::g::Fuse::Animations::TransformAnimator_typeof()->MakeType(type->T(0), NULL), offsetof(::g::Fuse::Animations::TransformAnimatorState, Animator1), 0,
-        ::TYPES[68/*Fuse.Animations.IMixerHandle<Fuse.Transform>*/], offsetof(::g::Fuse::Animations::TransformAnimatorState, mixHandle), 0,
+        ::TYPES[69/*Fuse.Animations.IMixerHandle<Fuse.Transform>*/], offsetof(::g::Fuse::Animations::TransformAnimatorState, mixHandle), 0,
         type->T(0), offsetof(::g::Fuse::Animations::TransformAnimatorState, transform), 0);
 }
 
@@ -12456,13 +13055,13 @@ static void TransformAnimatorState_build(uType* type)
     return type;
 }
 
-// public TransformAnimatorState(Fuse.Animations.TransformAnimator<TransformType> animator, Fuse.Animations.CreateStateParams p) :3614
+// public TransformAnimatorState(Fuse.Animations.TransformAnimator<TransformType> animator, Fuse.Animations.CreateStateParams p) :3820
 void TransformAnimatorState__ctor_2_fn(TransformAnimatorState* __this, ::g::Fuse::Animations::TransformAnimator* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     __this->ctor_2(animator, p);
 }
 
-// public override sealed void Disable() :3627
+// public override sealed void Disable() :3833
 void TransformAnimatorState__Disable_fn(TransformAnimatorState* __this)
 {
     uStackFrame __("Fuse.Animations.TransformAnimatorState`1", "Disable()");
@@ -12470,27 +13069,27 @@ void TransformAnimatorState__Disable_fn(TransformAnimatorState* __this)
     if (__this->mixHandle == NULL)
         return;
 
-    ::g::Fuse::Animations::IMixerHandle::Unregister(uInterface(uPtr(__this->mixHandle), ::TYPES[68/*Fuse.Animations.IMixerHandle<Fuse.Transform>*/]));
+    ::g::Fuse::Animations::IMixerHandle::Unregister(uInterface(uPtr(__this->mixHandle), ::TYPES[69/*Fuse.Animations.IMixerHandle<Fuse.Transform>*/]));
     __this->mixHandle = NULL;
-    uPtr(uAs< ::g::Fuse::Transform*>(__this->transform, ::TYPES[75/*Fuse.Transform*/]))->remove_MatrixChanged(__this->_matAct);
+    uPtr(uAs< ::g::Fuse::Transform*>(__this->transform, ::TYPES[90/*Fuse.Transform*/]))->remove_MatrixChanged(__this->_matAct);
     ::g::Fuse::Node::Unrelate(__this->Visual, __this->transform);
     __this->_matAct = NULL;
     __this->transform = NULL;
 }
 
-// public TransformAnimatorState New(Fuse.Animations.TransformAnimator<TransformType> animator, Fuse.Animations.CreateStateParams p) :3614
+// public TransformAnimatorState New(Fuse.Animations.TransformAnimator<TransformType> animator, Fuse.Animations.CreateStateParams p) :3820
 void TransformAnimatorState__New1_fn(uType* __type, ::g::Fuse::Animations::TransformAnimator* animator, ::g::Fuse::Animations::CreateStateParams* p, TransformAnimatorState** __retval)
 {
     *__retval = TransformAnimatorState::New1(__type, animator, p);
 }
 
-// internal void OnMatrixChanged(Fuse.Transform ignore) :3659
+// internal void OnMatrixChanged(Fuse.Transform ignore) :3865
 void TransformAnimatorState__OnMatrixChanged_fn(TransformAnimatorState* __this, ::g::Fuse::Transform* ignore)
 {
     __this->OnMatrixChanged(ignore);
 }
 
-// protected override sealed void SeekValue(float4 value, float strength) :3641
+// protected override sealed void SeekValue(float4 value, float strength) :3847
 void TransformAnimatorState__SeekValue_fn(TransformAnimatorState* __this, ::g::Uno::Float4* value, float* strength)
 {
     uStackFrame __("Fuse.Animations.TransformAnimatorState`1", "SeekValue(float4,float)");
@@ -12499,18 +13098,18 @@ void TransformAnimatorState__SeekValue_fn(TransformAnimatorState* __this, ::g::U
 
     if ((__this->mixHandle == NULL) || (__this->transform == NULL))
     {
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[7/*"Invalid seek"*/], 1, ::STRINGS[2/*"/Users/eric...*/], 3645);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[7/*"Invalid seek"*/], 0, ::STRINGS[2/*"/usr/local/...*/], 3851);
         return;
     }
 
     __this->_inSeek = true;
     uPtr(__this->Animator1)->Update(__this->Visual, __this->transform, value_);
     __this->_lastStrength = strength_;
-    ::g::Fuse::Animations::IMixerHandle::Set_ex(uInterface(uPtr(__this->mixHandle), ::TYPES[68/*Fuse.Animations.IMixerHandle<Fuse.Transform>*/]), __this->transform, uCRef(__this->_lastStrength));
+    ::g::Fuse::Animations::IMixerHandle::Set_ex(uInterface(uPtr(__this->mixHandle), ::TYPES[69/*Fuse.Animations.IMixerHandle<Fuse.Transform>*/]), __this->transform, uCRef(__this->_lastStrength));
     __this->_inSeek = false;
 }
 
-// public TransformAnimatorState(Fuse.Animations.TransformAnimator<TransformType> animator, Fuse.Animations.CreateStateParams p) [instance] :3614
+// public TransformAnimatorState(Fuse.Animations.TransformAnimator<TransformType> animator, Fuse.Animations.CreateStateParams p) [instance] :3820
 void TransformAnimatorState::ctor_2(::g::Fuse::Animations::TransformAnimator* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     uType* __types[] = {
@@ -12521,21 +13120,21 @@ void TransformAnimatorState::ctor_2(::g::Fuse::Animations::TransformAnimator* an
     ctor_1(animator, p, uPtr(animator)->Target());
     Animator1 = animator;
     mixHandle = ::g::Fuse::Animations::IMixer::RegisterTransform(uInterface(uPtr(uPtr(Animator1)->Mixer), ::TYPES[12/*Fuse.Animations.IMixer*/]), Visual, uPtr(Animator1)->MixOp(), uPtr(Animator1)->Priority());
-    _matAct = uDelegate::New(::TYPES[74/*Uno.Action<Fuse.Transform>*/], (void*)TransformAnimatorState__OnMatrixChanged_fn, this);
-    uPtr(uAs< ::g::Fuse::Transform*>(transform, ::TYPES[75/*Fuse.Transform*/]))->add_MatrixChanged(_matAct);
+    _matAct = uDelegate::New(::TYPES[89/*Uno.Action<Fuse.Transform>*/], (void*)TransformAnimatorState__OnMatrixChanged_fn, this);
+    uPtr(uAs< ::g::Fuse::Transform*>(transform, ::TYPES[90/*Fuse.Transform*/]))->add_MatrixChanged(_matAct);
     ::g::Fuse::Node::Relate(Visual, transform);
 }
 
-// internal void OnMatrixChanged(Fuse.Transform ignore) [instance] :3659
+// internal void OnMatrixChanged(Fuse.Transform ignore) [instance] :3865
 void TransformAnimatorState::OnMatrixChanged(::g::Fuse::Transform* ignore)
 {
     uStackFrame __("Fuse.Animations.TransformAnimatorState`1", "OnMatrixChanged(Fuse.Transform)");
 
     if ((!_inSeek && (mixHandle != NULL)) && (transform != NULL))
-        ::g::Fuse::Animations::IMixerHandle::Set_ex(uInterface(uPtr(mixHandle), ::TYPES[68/*Fuse.Animations.IMixerHandle<Fuse.Transform>*/]), transform, uCRef(_lastStrength));
+        ::g::Fuse::Animations::IMixerHandle::Set_ex(uInterface(uPtr(mixHandle), ::TYPES[69/*Fuse.Animations.IMixerHandle<Fuse.Transform>*/]), transform, uCRef(_lastStrength));
 }
 
-// public TransformAnimatorState New(Fuse.Animations.TransformAnimator<TransformType> animator, Fuse.Animations.CreateStateParams p) [static] :3614
+// public TransformAnimatorState New(Fuse.Animations.TransformAnimator<TransformType> animator, Fuse.Animations.CreateStateParams p) [static] :3820
 TransformAnimatorState* TransformAnimatorState::New1(uType* __type, ::g::Fuse::Animations::TransformAnimator* animator, ::g::Fuse::Animations::CreateStateParams* p)
 {
     TransformAnimatorState* obj1 = (TransformAnimatorState*)uNew(__type);
@@ -12544,10 +13143,10 @@ TransformAnimatorState* TransformAnimatorState::New1(uType* __type, ::g::Fuse::A
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal enum TransformPriority :3479
+// internal enum TransformPriority :3685
 uEnumType* TransformPriority_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -12562,18 +13161,18 @@ uEnumType* TransformPriority_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// public sealed class TriggerAnimation :3920
+// public sealed class TriggerAnimation :4126
 // {
 static void TriggerAnimation_build(uType* type)
 {
-    ::TYPES[76] = ::g::Fuse::Animations::AnimatorState_typeof()->Array();
-    ::TYPES[77] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Animations::Animator_typeof(), NULL);
+    ::TYPES[91] = ::g::Fuse::Animations::AnimatorState_typeof()->Array();
+    ::TYPES[92] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Animations::Animator_typeof(), NULL);
     ::TYPES[2] = ::g::Uno::Action_typeof();
     type->SetFields(0,
-        ::TYPES[77/*Uno.Collections.List<Fuse.Animations.Animator>*/], offsetof(::g::Fuse::Animations::TriggerAnimation, _animators), 0,
+        ::TYPES[92/*Uno.Collections.List<Fuse.Animations.Animator>*/], offsetof(::g::Fuse::Animations::TriggerAnimation, _animators), 0,
         type, offsetof(::g::Fuse::Animations::TriggerAnimation, _backward), 0,
         ::g::Uno::Double_typeof(), offsetof(::g::Fuse::Animations::TriggerAnimation, _crossFadeDuration), 0,
         ::g::Uno::Bool_typeof(), offsetof(::g::Fuse::Animations::TriggerAnimation, _hasStretchDuration), 0,
@@ -12615,175 +13214,175 @@ uType* TriggerAnimation_typeof()
     return type;
 }
 
-// public generated TriggerAnimation() :3920
+// public generated TriggerAnimation() :4126
 void TriggerAnimation__ctor__fn(TriggerAnimation* __this)
 {
     __this->ctor_();
 }
 
-// public Uno.Collections.IList<Fuse.Animations.Animator> get_Animators() :3926
+// public Uno.Collections.IList<Fuse.Animations.Animator> get_Animators() :4132
 void TriggerAnimation__get_Animators_fn(TriggerAnimation* __this, uObject** __retval)
 {
     *__retval = __this->Animators();
 }
 
-// public Fuse.Animations.TriggerAnimation get_Backward() :3941
+// public Fuse.Animations.TriggerAnimation get_Backward() :4147
 void TriggerAnimation__get_Backward_fn(TriggerAnimation* __this, TriggerAnimation** __retval)
 {
     *__retval = __this->Backward();
 }
 
-// public void set_Backward(Fuse.Animations.TriggerAnimation value) :3947
+// public void set_Backward(Fuse.Animations.TriggerAnimation value) :4153
 void TriggerAnimation__set_Backward_fn(TriggerAnimation* __this, TriggerAnimation* value)
 {
     __this->Backward(value);
 }
 
-// internal Fuse.Animations.AnimatorState[] CreateAnimatorsState(Fuse.Animations.AnimationVariant variant, Fuse.Visual elm) :3958
+// internal Fuse.Animations.AnimatorState[] CreateAnimatorsState(Fuse.Animations.AnimationVariant variant, Fuse.Visual elm) :4164
 void TriggerAnimation__CreateAnimatorsState_fn(TriggerAnimation* __this, int* variant, ::g::Fuse::Visual* elm, uArray** __retval)
 {
     *__retval = __this->CreateAnimatorsState(*variant, elm);
 }
 
-// internal Fuse.Animations.Player CreatePlayer([Fuse.Visual node], [Fuse.Animations.AnimationVariant variant]) :4084
+// internal Fuse.Animations.Player CreatePlayer([Fuse.Visual node], [Fuse.Animations.AnimationVariant variant]) :4291
 void TriggerAnimation__CreatePlayer_fn(TriggerAnimation* __this, ::g::Fuse::Visual* node, int* variant, ::g::Fuse::Animations::Player** __retval)
 {
     *__retval = __this->CreatePlayer(node, *variant);
 }
 
-// internal Fuse.Animations.TriggerAnimationState CreateState([Fuse.Visual elm]) :4072
+// internal Fuse.Animations.TriggerAnimationState CreateState([Fuse.Visual elm]) :4279
 void TriggerAnimation__CreateState_fn(TriggerAnimation* __this, ::g::Fuse::Visual* elm, ::g::Fuse::Animations::TriggerAnimationState** __retval)
 {
     *__retval = __this->CreateState(elm);
 }
 
-// public double get_CrossFadeDuration() :4023
+// public double get_CrossFadeDuration() :4229
 void TriggerAnimation__get_CrossFadeDuration_fn(TriggerAnimation* __this, double* __retval)
 {
     *__retval = __this->CrossFadeDuration();
 }
 
-// public void set_CrossFadeDuration(double value) :4024
+// public void set_CrossFadeDuration(double value) :4230
 void TriggerAnimation__set_CrossFadeDuration_fn(TriggerAnimation* __this, double* value)
 {
     __this->CrossFadeDuration(*value);
 }
 
-// public double GetAnimatorsDuration(Fuse.Animations.AnimationVariant variant) :3973
+// public double GetAnimatorsDuration(Fuse.Animations.AnimationVariant variant) :4179
 void TriggerAnimation__GetAnimatorsDuration_fn(TriggerAnimation* __this, int* variant, double* __retval)
 {
     *__retval = __this->GetAnimatorsDuration(*variant);
 }
 
-// public double GetTimeMultiplier(Fuse.Animations.AnimationVariant variant) :4033
+// public double GetTimeMultiplier(Fuse.Animations.AnimationVariant variant) :4239
 void TriggerAnimation__GetTimeMultiplier_fn(TriggerAnimation* __this, int* variant, double* __retval)
 {
     *__retval = __this->GetTimeMultiplier(*variant);
 }
 
-// public bool get_HasAnimators() :3935
+// public bool get_HasAnimators() :4141
 void TriggerAnimation__get_HasAnimators_fn(TriggerAnimation* __this, bool* __retval)
 {
     *__retval = __this->HasAnimators();
 }
 
-// public bool get_HasBackward() :3955
+// public bool get_HasBackward() :4161
 void TriggerAnimation__get_HasBackward_fn(TriggerAnimation* __this, bool* __retval)
 {
     *__retval = __this->HasBackward();
 }
 
-// internal bool get_HasDirectionVariant() :4052
+// internal bool get_HasDirectionVariant() :4259
 void TriggerAnimation__get_HasDirectionVariant_fn(TriggerAnimation* __this, bool* __retval)
 {
     *__retval = __this->HasDirectionVariant();
 }
 
-// public generated TriggerAnimation New() :3920
+// public generated TriggerAnimation New() :4126
 void TriggerAnimation__New1_fn(TriggerAnimation** __retval)
 {
     *__retval = TriggerAnimation::New1();
 }
 
-// private void OnTimeChanged() :4027
+// private void OnTimeChanged() :4233
 void TriggerAnimation__OnTimeChanged_fn(TriggerAnimation* __this)
 {
     __this->OnTimeChanged();
 }
 
-// public Fuse.Animations.PlayMode get_PlayMode() :4100
+// public Fuse.Animations.PlayMode get_PlayMode() :4307
 void TriggerAnimation__get_PlayMode_fn(TriggerAnimation* __this, int* __retval)
 {
     *__retval = __this->PlayMode();
 }
 
-// public void set_PlayMode(Fuse.Animations.PlayMode value) :4101
+// public void set_PlayMode(Fuse.Animations.PlayMode value) :4308
 void TriggerAnimation__set_PlayMode_fn(TriggerAnimation* __this, int* value)
 {
     __this->PlayMode(*value);
 }
 
-// internal Fuse.Animations.AnimationVariant RestrictVariant(Fuse.Animations.AnimationVariant variant) :4077
+// internal Fuse.Animations.AnimationVariant RestrictVariant(Fuse.Animations.AnimationVariant variant) :4284
 void TriggerAnimation__RestrictVariant_fn(TriggerAnimation* __this, int* variant, int* __retval)
 {
     *__retval = __this->RestrictVariant(*variant);
 }
 
-// public double get_StretchDuration() :4009
+// public double get_StretchDuration() :4215
 void TriggerAnimation__get_StretchDuration_fn(TriggerAnimation* __this, double* __retval)
 {
     *__retval = __this->StretchDuration();
 }
 
-// public void set_StretchDuration(double value) :4010
+// public void set_StretchDuration(double value) :4216
 void TriggerAnimation__set_StretchDuration_fn(TriggerAnimation* __this, double* value)
 {
     __this->StretchDuration(*value);
 }
 
-// internal generated void add_TimeChanged(Uno.Action value) :4048
+// internal generated void add_TimeChanged(Uno.Action value) :4255
 void TriggerAnimation__add_TimeChanged_fn(TriggerAnimation* __this, uDelegate* value)
 {
     __this->add_TimeChanged(value);
 }
 
-// internal generated void remove_TimeChanged(Uno.Action value) :4048
+// internal generated void remove_TimeChanged(Uno.Action value) :4255
 void TriggerAnimation__remove_TimeChanged_fn(TriggerAnimation* __this, uDelegate* value)
 {
     __this->remove_TimeChanged(value);
 }
 
-// public double get_TimeMultiplier() :3995
+// public double get_TimeMultiplier() :4201
 void TriggerAnimation__get_TimeMultiplier_fn(TriggerAnimation* __this, double* __retval)
 {
     *__retval = __this->TimeMultiplier();
 }
 
-// public void set_TimeMultiplier(double value) :3996
+// public void set_TimeMultiplier(double value) :4202
 void TriggerAnimation__set_TimeMultiplier_fn(TriggerAnimation* __this, double* value)
 {
     __this->TimeMultiplier(*value);
 }
 
-// public generated TriggerAnimation() [instance] :3920
+// public generated TriggerAnimation() [instance] :4126
 void TriggerAnimation::ctor_()
 {
     _timeMultiplier = 1.0;
     _crossFadeDuration = 0.5;
 }
 
-// public Uno.Collections.IList<Fuse.Animations.Animator> get_Animators() [instance] :3926
+// public Uno.Collections.IList<Fuse.Animations.Animator> get_Animators() [instance] :4132
 uObject* TriggerAnimation::Animators()
 {
     uStackFrame __("Fuse.Animations.TriggerAnimation", "get_Animators()");
 
     if (_animators == NULL)
-        _animators = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[77/*Uno.Collections.List<Fuse.Animations.Animator>*/]));
+        _animators = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[92/*Uno.Collections.List<Fuse.Animations.Animator>*/]));
 
     return (uObject*)_animators;
 }
 
-// public Fuse.Animations.TriggerAnimation get_Backward() [instance] :3941
+// public Fuse.Animations.TriggerAnimation get_Backward() [instance] :4147
 TriggerAnimation* TriggerAnimation::Backward()
 {
     if (_backward == NULL)
@@ -12792,13 +13391,13 @@ TriggerAnimation* TriggerAnimation::Backward()
     return _backward;
 }
 
-// public void set_Backward(Fuse.Animations.TriggerAnimation value) [instance] :3947
+// public void set_Backward(Fuse.Animations.TriggerAnimation value) [instance] :4153
 void TriggerAnimation::Backward(TriggerAnimation* value)
 {
     _backward = value;
 }
 
-// internal Fuse.Animations.AnimatorState[] CreateAnimatorsState(Fuse.Animations.AnimationVariant variant, Fuse.Visual elm) [instance] :3958
+// internal Fuse.Animations.AnimatorState[] CreateAnimatorsState(Fuse.Animations.AnimationVariant variant, Fuse.Visual elm) [instance] :4164
 uArray* TriggerAnimation::CreateAnimatorsState(int variant, ::g::Fuse::Visual* elm)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimation", "CreateAnimatorsState(Fuse.Animations.AnimationVariant,Fuse.Visual)");
@@ -12811,9 +13410,9 @@ uArray* TriggerAnimation::CreateAnimatorsState(int variant, ::g::Fuse::Visual* e
     ::g::Fuse::Animations::CreateStateParams* csp = collection1;
 
     if (_animators == NULL)
-        return uArray::New(::TYPES[76/*Fuse.Animations.AnimatorState[]*/], 0);
+        return uArray::New(::TYPES[91/*Fuse.Animations.AnimatorState[]*/], 0);
 
-    uArray* state = uArray::New(::TYPES[76/*Fuse.Animations.AnimatorState[]*/], uPtr(_animators)->Count());
+    uArray* state = uArray::New(::TYPES[91/*Fuse.Animations.AnimatorState[]*/], uPtr(_animators)->Count());
 
     for (int i = 0; i < uPtr(_animators)->Count(); ++i)
         uPtr(state)->Strong< ::g::Fuse::Animations::AnimatorState*>(i) = uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(_animators), uCRef<int>(i), &ret3), ret3))->CreateState(csp);
@@ -12821,7 +13420,7 @@ uArray* TriggerAnimation::CreateAnimatorsState(int variant, ::g::Fuse::Visual* e
     return state;
 }
 
-// internal Fuse.Animations.Player CreatePlayer([Fuse.Visual node], [Fuse.Animations.AnimationVariant variant]) [instance] :4084
+// internal Fuse.Animations.Player CreatePlayer([Fuse.Visual node], [Fuse.Animations.AnimationVariant variant]) [instance] :4291
 ::g::Fuse::Animations::Player* TriggerAnimation::CreatePlayer(::g::Fuse::Visual* node, int variant)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimation", "CreatePlayer([Fuse.Visual],[Fuse.Animations.AnimationVariant])");
@@ -12836,25 +13435,25 @@ uArray* TriggerAnimation::CreateAnimatorsState(int variant, ::g::Fuse::Visual* e
     return ::g::Fuse::Animations::Player::New1(node, this, 1, PlayMode());
 }
 
-// internal Fuse.Animations.TriggerAnimationState CreateState([Fuse.Visual elm]) [instance] :4072
+// internal Fuse.Animations.TriggerAnimationState CreateState([Fuse.Visual elm]) [instance] :4279
 ::g::Fuse::Animations::TriggerAnimationState* TriggerAnimation::CreateState(::g::Fuse::Visual* elm)
 {
     return ::g::Fuse::Animations::TriggerAnimationState::New1(this, elm);
 }
 
-// public double get_CrossFadeDuration() [instance] :4023
+// public double get_CrossFadeDuration() [instance] :4229
 double TriggerAnimation::CrossFadeDuration()
 {
     return _crossFadeDuration;
 }
 
-// public void set_CrossFadeDuration(double value) [instance] :4024
+// public void set_CrossFadeDuration(double value) [instance] :4230
 void TriggerAnimation::CrossFadeDuration(double value)
 {
     _crossFadeDuration = value;
 }
 
-// public double GetAnimatorsDuration(Fuse.Animations.AnimationVariant variant) [instance] :3973
+// public double GetAnimatorsDuration(Fuse.Animations.AnimationVariant variant) [instance] :4179
 double TriggerAnimation::GetAnimatorsDuration(int variant)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimation", "GetAnimatorsDuration(Fuse.Animations.AnimationVariant)");
@@ -12878,7 +13477,7 @@ double TriggerAnimation::GetAnimatorsDuration(int variant)
     return max;
 }
 
-// public double GetTimeMultiplier(Fuse.Animations.AnimationVariant variant) [instance] :4033
+// public double GetTimeMultiplier(Fuse.Animations.AnimationVariant variant) [instance] :4239
 double TriggerAnimation::GetTimeMultiplier(int variant)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimation", "GetTimeMultiplier(Fuse.Animations.AnimationVariant)");
@@ -12886,6 +13485,7 @@ double TriggerAnimation::GetTimeMultiplier(int variant)
     if (_hasStretchDuration)
     {
         double dur = GetAnimatorsDuration(variant);
+        float zeroTolerance = 1e-05f;
 
         if (_stretchDuration < 9.9999997473787516e-06)
             return 1.0;
@@ -12897,20 +13497,20 @@ double TriggerAnimation::GetTimeMultiplier(int variant)
     return TimeMultiplier();
 }
 
-// public bool get_HasAnimators() [instance] :3935
+// public bool get_HasAnimators() [instance] :4141
 bool TriggerAnimation::HasAnimators()
 {
     uStackFrame __("Fuse.Animations.TriggerAnimation", "get_HasAnimators()");
     return (_animators != NULL) && (uPtr(_animators)->Count() > 0);
 }
 
-// public bool get_HasBackward() [instance] :3955
+// public bool get_HasBackward() [instance] :4161
 bool TriggerAnimation::HasBackward()
 {
     return _backward != NULL;
 }
 
-// internal bool get_HasDirectionVariant() [instance] :4052
+// internal bool get_HasDirectionVariant() [instance] :4259
 bool TriggerAnimation::HasDirectionVariant()
 {
     uStackFrame __("Fuse.Animations.TriggerAnimation", "get_HasDirectionVariant()");
@@ -12936,7 +13536,7 @@ bool TriggerAnimation::HasDirectionVariant()
     return has;
 }
 
-// private void OnTimeChanged() [instance] :4027
+// private void OnTimeChanged() [instance] :4233
 void TriggerAnimation::OnTimeChanged()
 {
     uStackFrame __("Fuse.Animations.TriggerAnimation", "OnTimeChanged()");
@@ -12945,19 +13545,19 @@ void TriggerAnimation::OnTimeChanged()
         uPtr(TimeChanged1)->InvokeVoid();
 }
 
-// public Fuse.Animations.PlayMode get_PlayMode() [instance] :4100
+// public Fuse.Animations.PlayMode get_PlayMode() [instance] :4307
 int TriggerAnimation::PlayMode()
 {
     return _playMode;
 }
 
-// public void set_PlayMode(Fuse.Animations.PlayMode value) [instance] :4101
+// public void set_PlayMode(Fuse.Animations.PlayMode value) [instance] :4308
 void TriggerAnimation::PlayMode(int value)
 {
     _playMode = value;
 }
 
-// internal Fuse.Animations.AnimationVariant RestrictVariant(Fuse.Animations.AnimationVariant variant) [instance] :4077
+// internal Fuse.Animations.AnimationVariant RestrictVariant(Fuse.Animations.AnimationVariant variant) [instance] :4284
 int TriggerAnimation::RestrictVariant(int variant)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimation", "RestrictVariant(Fuse.Animations.AnimationVariant)");
@@ -12968,13 +13568,13 @@ int TriggerAnimation::RestrictVariant(int variant)
     return variant;
 }
 
-// public double get_StretchDuration() [instance] :4009
+// public double get_StretchDuration() [instance] :4215
 double TriggerAnimation::StretchDuration()
 {
     return _stretchDuration;
 }
 
-// public void set_StretchDuration(double value) [instance] :4010
+// public void set_StretchDuration(double value) [instance] :4216
 void TriggerAnimation::StretchDuration(double value)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimation", "set_StretchDuration(double)");
@@ -12987,27 +13587,27 @@ void TriggerAnimation::StretchDuration(double value)
     OnTimeChanged();
 }
 
-// internal generated void add_TimeChanged(Uno.Action value) [instance] :4048
+// internal generated void add_TimeChanged(Uno.Action value) [instance] :4255
 void TriggerAnimation::add_TimeChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimation", "add_TimeChanged(Uno.Action)");
     TimeChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(TimeChanged1, value), ::TYPES[2/*Uno.Action*/]);
 }
 
-// internal generated void remove_TimeChanged(Uno.Action value) [instance] :4048
+// internal generated void remove_TimeChanged(Uno.Action value) [instance] :4255
 void TriggerAnimation::remove_TimeChanged(uDelegate* value)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimation", "remove_TimeChanged(Uno.Action)");
     TimeChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(TimeChanged1, value), ::TYPES[2/*Uno.Action*/]);
 }
 
-// public double get_TimeMultiplier() [instance] :3995
+// public double get_TimeMultiplier() [instance] :4201
 double TriggerAnimation::TimeMultiplier()
 {
     return _timeMultiplier;
 }
 
-// public void set_TimeMultiplier(double value) [instance] :3996
+// public void set_TimeMultiplier(double value) [instance] :4202
 void TriggerAnimation::TimeMultiplier(double value)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimation", "set_TimeMultiplier(double)");
@@ -13019,7 +13619,7 @@ void TriggerAnimation::TimeMultiplier(double value)
     OnTimeChanged();
 }
 
-// public generated TriggerAnimation New() [static] :3920
+// public generated TriggerAnimation New() [static] :4126
 TriggerAnimation* TriggerAnimation::New1()
 {
     TriggerAnimation* obj2 = (TriggerAnimation*)uNew(TriggerAnimation_typeof());
@@ -13028,28 +13628,28 @@ TriggerAnimation* TriggerAnimation::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno
+// ---------------------------------------------------------
 
-// internal sealed class TriggerAnimationState :4135
+// internal sealed class TriggerAnimationState :4342
 // {
 static void TriggerAnimationState_build(uType* type)
 {
     ::TYPES[2] = ::g::Uno::Action_typeof();
-    ::TYPES[63] = ::g::Fuse::Animations::IBasePlayerFeedback_typeof();
-    ::TYPES[78] = ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof();
-    ::TYPES[79] = ::g::Fuse::Animations::Player_typeof();
+    ::TYPES[64] = ::g::Fuse::Animations::IBasePlayerFeedback_typeof();
+    ::TYPES[93] = ::g::Fuse::Animations::IUnwrappedPlayerFeedback_typeof();
+    ::TYPES[94] = ::g::Fuse::Animations::Player_typeof();
     type->SetInterfaces(
         ::g::Fuse::Animations::IPlayerFeedback_typeof(), offsetof(TriggerAnimationState_type, interface0),
-        ::TYPES[63/*Fuse.Animations.IBasePlayerFeedback*/], offsetof(TriggerAnimationState_type, interface1));
+        ::TYPES[64/*Fuse.Animations.IBasePlayerFeedback*/], offsetof(TriggerAnimationState_type, interface1));
     type->SetFields(0,
-        ::TYPES[79/*Fuse.Animations.Player*/], offsetof(::g::Fuse::Animations::TriggerAnimationState, _backPlayer), 0,
-        ::TYPES[79/*Fuse.Animations.Player*/], offsetof(::g::Fuse::Animations::TriggerAnimationState, _curPlayer), 0,
+        ::TYPES[94/*Fuse.Animations.Player*/], offsetof(::g::Fuse::Animations::TriggerAnimationState, _backPlayer), 0,
+        ::TYPES[94/*Fuse.Animations.Player*/], offsetof(::g::Fuse::Animations::TriggerAnimationState, _curPlayer), 0,
         ::g::Fuse::Animations::AnimationVariant_typeof(), offsetof(::g::Fuse::Animations::TriggerAnimationState, _curPlayerVariant), 0,
-        ::TYPES[79/*Fuse.Animations.Player*/], offsetof(::g::Fuse::Animations::TriggerAnimationState, _forePlayer), 0,
+        ::TYPES[94/*Fuse.Animations.Player*/], offsetof(::g::Fuse::Animations::TriggerAnimationState, _forePlayer), 0,
         ::g::Fuse::Visual_typeof(), offsetof(::g::Fuse::Animations::TriggerAnimationState, _node), 0,
         ::g::Uno::Double_typeof(), offsetof(::g::Fuse::Animations::TriggerAnimationState, _prevProgress), 0,
-        ::TYPES[78/*Fuse.Animations.IUnwrappedPlayerFeedback*/], offsetof(::g::Fuse::Animations::TriggerAnimationState, Feedback), 0,
+        ::TYPES[93/*Fuse.Animations.IUnwrappedPlayerFeedback*/], offsetof(::g::Fuse::Animations::TriggerAnimationState, Feedback), 0,
         ::g::Fuse::Animations::TriggerAnimation_typeof(), offsetof(::g::Fuse::Animations::TriggerAnimationState, _Animation), 0);
 }
 
@@ -13071,37 +13671,37 @@ TriggerAnimationState_type* TriggerAnimationState_typeof()
     return type;
 }
 
-// internal TriggerAnimationState(Fuse.Animations.TriggerAnimation animation, Fuse.Visual node) :4140
+// internal TriggerAnimationState(Fuse.Animations.TriggerAnimation animation, Fuse.Visual node) :4347
 void TriggerAnimationState__ctor__fn(TriggerAnimationState* __this, ::g::Fuse::Animations::TriggerAnimation* animation, ::g::Fuse::Visual* node)
 {
     __this->ctor_(animation, node);
 }
 
-// private generated Fuse.Animations.TriggerAnimation get_Animation() :4137
+// private generated Fuse.Animations.TriggerAnimation get_Animation() :4344
 void TriggerAnimationState__get_Animation_fn(TriggerAnimationState* __this, ::g::Fuse::Animations::TriggerAnimation** __retval)
 {
     *__retval = __this->Animation();
 }
 
-// private generated void set_Animation(Fuse.Animations.TriggerAnimation value) :4137
+// private generated void set_Animation(Fuse.Animations.TriggerAnimation value) :4344
 void TriggerAnimationState__set_Animation_fn(TriggerAnimationState* __this, ::g::Fuse::Animations::TriggerAnimation* value)
 {
     __this->Animation(value);
 }
 
-// public double get_CurrentAnimatorsDuration() :4352
+// public double get_CurrentAnimatorsDuration() :4560
 void TriggerAnimationState__get_CurrentAnimatorsDuration_fn(TriggerAnimationState* __this, double* __retval)
 {
     *__retval = __this->CurrentAnimatorsDuration();
 }
 
-// public void Dispose() :4151
+// public void Dispose() :4358
 void TriggerAnimationState__Dispose_fn(TriggerAnimationState* __this)
 {
     __this->Dispose();
 }
 
-// private void Fuse.Animations.IBasePlayerFeedback.OnPlaybackDone(object s) :4216
+// private void Fuse.Animations.IBasePlayerFeedback.OnPlaybackDone(object s) :4423
 void TriggerAnimationState__FuseAnimationsIBasePlayerFeedbackOnPlaybackDone_fn(TriggerAnimationState* __this, uObject* s)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "Fuse.Animations.IBasePlayerFeedback.OnPlaybackDone(object)");
@@ -13110,10 +13710,10 @@ void TriggerAnimationState__FuseAnimationsIBasePlayerFeedbackOnPlaybackDone_fn(T
         return;
 
     if (__this->Feedback != NULL)
-        ::g::Fuse::Animations::IBasePlayerFeedback::OnPlaybackDone(uInterface(uPtr(__this->Feedback), ::TYPES[63/*Fuse.Animations.IBasePlayerFeedback*/]), __this);
+        ::g::Fuse::Animations::IBasePlayerFeedback::OnPlaybackDone(uInterface(uPtr(__this->Feedback), ::TYPES[64/*Fuse.Animations.IBasePlayerFeedback*/]), __this);
 }
 
-// private void Fuse.Animations.IBasePlayerFeedback.OnStable(object s) :4225
+// private void Fuse.Animations.IBasePlayerFeedback.OnStable(object s) :4432
 void TriggerAnimationState__FuseAnimationsIBasePlayerFeedbackOnStable_fn(TriggerAnimationState* __this, uObject* s)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "Fuse.Animations.IBasePlayerFeedback.OnStable(object)");
@@ -13122,10 +13722,10 @@ void TriggerAnimationState__FuseAnimationsIBasePlayerFeedbackOnStable_fn(Trigger
         return;
 
     if (__this->Feedback != NULL)
-        ::g::Fuse::Animations::IBasePlayerFeedback::OnStable(uInterface(uPtr(__this->Feedback), ::TYPES[63/*Fuse.Animations.IBasePlayerFeedback*/]), __this);
+        ::g::Fuse::Animations::IBasePlayerFeedback::OnStable(uInterface(uPtr(__this->Feedback), ::TYPES[64/*Fuse.Animations.IBasePlayerFeedback*/]), __this);
 }
 
-// private void Fuse.Animations.IPlayerFeedback.OnProgressUpdated(object s, Fuse.Animations.PlayerFeedbackFlags flags) :4187
+// private void Fuse.Animations.IPlayerFeedback.OnProgressUpdated(object s, Fuse.Animations.PlayerFeedbackFlags flags) :4394
 void TriggerAnimationState__FuseAnimationsIPlayerFeedbackOnProgressUpdated_fn(TriggerAnimationState* __this, uObject* s, int* flags)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "Fuse.Animations.IPlayerFeedback.OnProgressUpdated(object,Fuse.Animations.PlayerFeedbackFlags)");
@@ -13146,107 +13746,107 @@ void TriggerAnimationState__FuseAnimationsIPlayerFeedbackOnProgressUpdated_fn(Tr
         if ((flags_ & 1) == 1)
         {
             flags_ = flags_ & -2;
-            ::g::Fuse::Animations::IUnwrappedPlayerFeedback::OnProgressUpdated(uInterface(uPtr(__this->Feedback), ::TYPES[78/*Fuse.Animations.IUnwrappedPlayerFeedback*/]), __this, prev, (double)((diff > 0.0) ? 0 : 1), flags_);
-            ::g::Fuse::Animations::IUnwrappedPlayerFeedback::OnProgressUpdated(uInterface(uPtr(__this->Feedback), ::TYPES[78/*Fuse.Animations.IUnwrappedPlayerFeedback*/]), __this, (double)((diff > 0.0) ? 1 : 0), cur, flags_);
+            ::g::Fuse::Animations::IUnwrappedPlayerFeedback::OnProgressUpdated(uInterface(uPtr(__this->Feedback), ::TYPES[93/*Fuse.Animations.IUnwrappedPlayerFeedback*/]), __this, prev, (double)((diff > 0.0) ? 0 : 1), flags_);
+            ::g::Fuse::Animations::IUnwrappedPlayerFeedback::OnProgressUpdated(uInterface(uPtr(__this->Feedback), ::TYPES[93/*Fuse.Animations.IUnwrappedPlayerFeedback*/]), __this, (double)((diff > 0.0) ? 1 : 0), cur, flags_);
         }
         else
-            ::g::Fuse::Animations::IUnwrappedPlayerFeedback::OnProgressUpdated(uInterface(uPtr(__this->Feedback), ::TYPES[78/*Fuse.Animations.IUnwrappedPlayerFeedback*/]), __this, prev, cur, flags_);
+            ::g::Fuse::Animations::IUnwrappedPlayerFeedback::OnProgressUpdated(uInterface(uPtr(__this->Feedback), ::TYPES[93/*Fuse.Animations.IUnwrappedPlayerFeedback*/]), __this, prev, cur, flags_);
     }
 
     __this->_prevProgress = __this->Progress();
 }
 
-// private Fuse.Animations.Player GetCurrentPlayer(Fuse.Animations.AnimationVariant tendTo, Fuse.Animations.TriggerAnimationState.SeekFlags flags) :4363
+// private Fuse.Animations.Player GetCurrentPlayer(Fuse.Animations.AnimationVariant tendTo, Fuse.Animations.TriggerAnimationState.SeekFlags flags) :4571
 void TriggerAnimationState__GetCurrentPlayer_fn(TriggerAnimationState* __this, int* tendTo, int* flags, ::g::Fuse::Animations::Player** __retval)
 {
     *__retval = __this->GetCurrentPlayer(*tendTo, *flags);
 }
 
-// private Fuse.Animations.Player GetPlayer([Fuse.Animations.AnimationVariant variant], [bool noFade]) :4244
+// private Fuse.Animations.Player GetPlayer([Fuse.Animations.AnimationVariant variant], [bool noFade]) :4451
 void TriggerAnimationState__GetPlayer_fn(TriggerAnimationState* __this, int* variant, bool* noFade, ::g::Fuse::Animations::Player** __retval)
 {
     *__retval = __this->GetPlayer(*variant, *noFade);
 }
 
-// public bool get_IsStable() :4236
+// public bool get_IsStable() :4443
 void TriggerAnimationState__get_IsStable_fn(TriggerAnimationState* __this, bool* __retval)
 {
     *__retval = __this->IsStable();
 }
 
-// internal TriggerAnimationState New(Fuse.Animations.TriggerAnimation animation, Fuse.Visual node) :4140
+// internal TriggerAnimationState New(Fuse.Animations.TriggerAnimation animation, Fuse.Visual node) :4347
 void TriggerAnimationState__New1_fn(::g::Fuse::Animations::TriggerAnimation* animation, ::g::Fuse::Visual* node, TriggerAnimationState** __retval)
 {
     *__retval = TriggerAnimationState::New1(animation, node);
 }
 
-// private void OnTimeChanged() :4172
+// private void OnTimeChanged() :4379
 void TriggerAnimationState__OnTimeChanged_fn(TriggerAnimationState* __this)
 {
     __this->OnTimeChanged();
 }
 
-// public void PlayEnd(bool on) :4324
+// public void PlayEnd(bool on) :4532
 void TriggerAnimationState__PlayEnd_fn(TriggerAnimationState* __this, bool* on)
 {
     __this->PlayEnd(*on);
 }
 
-// public void PlayOff() :4312
+// public void PlayOff() :4520
 void TriggerAnimationState__PlayOff_fn(TriggerAnimationState* __this)
 {
     __this->PlayOff();
 }
 
-// public void PlayOn() :4318
+// public void PlayOn() :4526
 void TriggerAnimationState__PlayOn_fn(TriggerAnimationState* __this)
 {
     __this->PlayOn();
 }
 
-// public void PlayToProgress(double progress, [Fuse.Animations.AnimationVariant tendTo], [Fuse.Animations.TriggerAnimationState.SeekFlags flags]) :4392
+// public void PlayToProgress(double progress, [Fuse.Animations.AnimationVariant tendTo], [Fuse.Animations.TriggerAnimationState.SeekFlags flags]) :4600
 void TriggerAnimationState__PlayToProgress_fn(TriggerAnimationState* __this, double* progress, int* tendTo, int* flags)
 {
     __this->PlayToProgress(*progress, *tendTo, *flags);
 }
 
-// public double get_PreviousProgress() :4344
+// public double get_PreviousProgress() :4552
 void TriggerAnimationState__get_PreviousProgress_fn(TriggerAnimationState* __this, double* __retval)
 {
     *__retval = __this->PreviousProgress();
 }
 
-// public double get_Progress() :4334
+// public double get_Progress() :4542
 void TriggerAnimationState__get_Progress_fn(TriggerAnimationState* __this, double* __retval)
 {
     *__retval = __this->Progress();
 }
 
-// public bool get_ProgressFullOff() :4361
+// public bool get_ProgressFullOff() :4569
 void TriggerAnimationState__get_ProgressFullOff_fn(TriggerAnimationState* __this, bool* __retval)
 {
     *__retval = __this->ProgressFullOff();
 }
 
-// public bool get_ProgressFullOn() :4360
+// public bool get_ProgressFullOn() :4568
 void TriggerAnimationState__get_ProgressFullOn_fn(TriggerAnimationState* __this, bool* __retval)
 {
     *__retval = __this->ProgressFullOn();
 }
 
-// public void SeekProgress(double newProgress, [Fuse.Animations.AnimationVariant tendTo], [Fuse.Animations.TriggerAnimationState.SeekFlags flags]) :4382
+// public void SeekProgress(double newProgress, [Fuse.Animations.AnimationVariant tendTo], [Fuse.Animations.TriggerAnimationState.SeekFlags flags]) :4590
 void TriggerAnimationState__SeekProgress_fn(TriggerAnimationState* __this, double* newProgress, int* tendTo, int* flags)
 {
     __this->SeekProgress(*newProgress, *tendTo, *flags);
 }
 
-// private void TrackProgress(Fuse.Animations.Player player) :4181
+// private void TrackProgress(Fuse.Animations.Player player) :4388
 void TriggerAnimationState__TrackProgress_fn(TriggerAnimationState* __this, ::g::Fuse::Animations::Player* player)
 {
     __this->TrackProgress(player);
 }
 
-// internal TriggerAnimationState(Fuse.Animations.TriggerAnimation animation, Fuse.Visual node) [instance] :4140
+// internal TriggerAnimationState(Fuse.Animations.TriggerAnimation animation, Fuse.Visual node) [instance] :4347
 void TriggerAnimationState::ctor_(::g::Fuse::Animations::TriggerAnimation* animation, ::g::Fuse::Visual* node)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", ".ctor(Fuse.Animations.TriggerAnimation,Fuse.Visual)");
@@ -13255,19 +13855,19 @@ void TriggerAnimationState::ctor_(::g::Fuse::Animations::TriggerAnimation* anima
     _node = node;
 }
 
-// private generated Fuse.Animations.TriggerAnimation get_Animation() [instance] :4137
+// private generated Fuse.Animations.TriggerAnimation get_Animation() [instance] :4344
 ::g::Fuse::Animations::TriggerAnimation* TriggerAnimationState::Animation()
 {
     return _Animation;
 }
 
-// private generated void set_Animation(Fuse.Animations.TriggerAnimation value) [instance] :4137
+// private generated void set_Animation(Fuse.Animations.TriggerAnimation value) [instance] :4344
 void TriggerAnimationState::Animation(::g::Fuse::Animations::TriggerAnimation* value)
 {
     _Animation = value;
 }
 
-// public double get_CurrentAnimatorsDuration() [instance] :4352
+// public double get_CurrentAnimatorsDuration() [instance] :4560
 double TriggerAnimationState::CurrentAnimatorsDuration()
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "get_CurrentAnimatorsDuration()");
@@ -13278,7 +13878,7 @@ double TriggerAnimationState::CurrentAnimatorsDuration()
     return uPtr(_curPlayer)->AnimatorsDuration();
 }
 
-// public void Dispose() [instance] :4151
+// public void Dispose() [instance] :4358
 void TriggerAnimationState::Dispose()
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "Dispose()");
@@ -13301,7 +13901,7 @@ void TriggerAnimationState::Dispose()
     _node = NULL;
 }
 
-// private Fuse.Animations.Player GetCurrentPlayer(Fuse.Animations.AnimationVariant tendTo, Fuse.Animations.TriggerAnimationState.SeekFlags flags) [instance] :4363
+// private Fuse.Animations.Player GetCurrentPlayer(Fuse.Animations.AnimationVariant tendTo, Fuse.Animations.TriggerAnimationState.SeekFlags flags) [instance] :4571
 ::g::Fuse::Animations::Player* TriggerAnimationState::GetCurrentPlayer(int tendTo, int flags)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "GetCurrentPlayer(Fuse.Animations.AnimationVariant,Fuse.Animations.TriggerAnimationState.SeekFlags)");
@@ -13312,10 +13912,10 @@ void TriggerAnimationState::Dispose()
             return _curPlayer;
     }
 
-    return uAs< ::g::Fuse::Animations::Player*>(GetPlayer(tendTo, false), ::TYPES[79/*Fuse.Animations.Player*/]);
+    return uAs< ::g::Fuse::Animations::Player*>(GetPlayer(tendTo, false), ::TYPES[94/*Fuse.Animations.Player*/]);
 }
 
-// private Fuse.Animations.Player GetPlayer([Fuse.Animations.AnimationVariant variant], [bool noFade]) [instance] :4244
+// private Fuse.Animations.Player GetPlayer([Fuse.Animations.AnimationVariant variant], [bool noFade]) [instance] :4451
 ::g::Fuse::Animations::Player* TriggerAnimationState::GetPlayer(int variant, bool noFade)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "GetPlayer([Fuse.Animations.AnimationVariant],[bool])");
@@ -13367,6 +13967,7 @@ void TriggerAnimationState::Dispose()
             uPtr(cur)->Strength(0.0);
 
         double remainTime = prev->RemainTime();
+        float zeroTolerance = 1e-05f;
 
         if ((prev->IsSyncState() || (remainTime < 9.9999997473787516e-06)) || noFade)
         {
@@ -13384,7 +13985,7 @@ void TriggerAnimationState::Dispose()
     return cur;
 }
 
-// public bool get_IsStable() [instance] :4236
+// public bool get_IsStable() [instance] :4443
 bool TriggerAnimationState::IsStable()
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "get_IsStable()");
@@ -13395,7 +13996,7 @@ bool TriggerAnimationState::IsStable()
     return uPtr(_curPlayer)->IsStable();
 }
 
-// private void OnTimeChanged() [instance] :4172
+// private void OnTimeChanged() [instance] :4379
 void TriggerAnimationState::OnTimeChanged()
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "OnTimeChanged()");
@@ -13407,7 +14008,7 @@ void TriggerAnimationState::OnTimeChanged()
         uPtr(_backPlayer)->TimeChanged();
 }
 
-// public void PlayEnd(bool on) [instance] :4324
+// public void PlayEnd(bool on) [instance] :4532
 void TriggerAnimationState::PlayEnd(bool on)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "PlayEnd(bool)");
@@ -13418,7 +14019,7 @@ void TriggerAnimationState::PlayEnd(bool on)
         PlayOff();
 }
 
-// public void PlayOff() [instance] :4312
+// public void PlayOff() [instance] :4520
 void TriggerAnimationState::PlayOff()
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "PlayOff()");
@@ -13426,7 +14027,7 @@ void TriggerAnimationState::PlayOff()
     uPtr(p)->PlayToStart();
 }
 
-// public void PlayOn() [instance] :4318
+// public void PlayOn() [instance] :4526
 void TriggerAnimationState::PlayOn()
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "PlayOn()");
@@ -13434,7 +14035,7 @@ void TriggerAnimationState::PlayOn()
     uPtr(p)->PlayToEnd();
 }
 
-// public void PlayToProgress(double progress, [Fuse.Animations.AnimationVariant tendTo], [Fuse.Animations.TriggerAnimationState.SeekFlags flags]) [instance] :4392
+// public void PlayToProgress(double progress, [Fuse.Animations.AnimationVariant tendTo], [Fuse.Animations.TriggerAnimationState.SeekFlags flags]) [instance] :4600
 void TriggerAnimationState::PlayToProgress(double progress, int tendTo, int flags)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "PlayToProgress(double,[Fuse.Animations.AnimationVariant],[Fuse.Animations.TriggerAnimationState.SeekFlags])");
@@ -13442,13 +14043,13 @@ void TriggerAnimationState::PlayToProgress(double progress, int tendTo, int flag
     uPtr(player)->PlayToProgress(progress);
 }
 
-// public double get_PreviousProgress() [instance] :4344
+// public double get_PreviousProgress() [instance] :4552
 double TriggerAnimationState::PreviousProgress()
 {
     return _prevProgress;
 }
 
-// public double get_Progress() [instance] :4334
+// public double get_Progress() [instance] :4542
 double TriggerAnimationState::Progress()
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "get_Progress()");
@@ -13459,21 +14060,21 @@ double TriggerAnimationState::Progress()
     return 0.0;
 }
 
-// public bool get_ProgressFullOff() [instance] :4361
+// public bool get_ProgressFullOff() [instance] :4569
 bool TriggerAnimationState::ProgressFullOff()
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "get_ProgressFullOff()");
     return Progress() <= 0.0;
 }
 
-// public bool get_ProgressFullOn() [instance] :4360
+// public bool get_ProgressFullOn() [instance] :4568
 bool TriggerAnimationState::ProgressFullOn()
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "get_ProgressFullOn()");
     return Progress() >= 1.0;
 }
 
-// public void SeekProgress(double newProgress, [Fuse.Animations.AnimationVariant tendTo], [Fuse.Animations.TriggerAnimationState.SeekFlags flags]) [instance] :4382
+// public void SeekProgress(double newProgress, [Fuse.Animations.AnimationVariant tendTo], [Fuse.Animations.TriggerAnimationState.SeekFlags flags]) [instance] :4590
 void TriggerAnimationState::SeekProgress(double newProgress, int tendTo, int flags)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "SeekProgress(double,[Fuse.Animations.AnimationVariant],[Fuse.Animations.TriggerAnimationState.SeekFlags])");
@@ -13486,14 +14087,14 @@ void TriggerAnimationState::SeekProgress(double newProgress, int tendTo, int fla
     uPtr(player)->SeekProgress(newProgress, !bypassUpdate);
 }
 
-// private void TrackProgress(Fuse.Animations.Player player) [instance] :4181
+// private void TrackProgress(Fuse.Animations.Player player) [instance] :4388
 void TriggerAnimationState::TrackProgress(::g::Fuse::Animations::Player* player)
 {
     uStackFrame __("Fuse.Animations.TriggerAnimationState", "TrackProgress(Fuse.Animations.Player)");
     uPtr(player)->Feedback = (uObject*)this;
 }
 
-// internal TriggerAnimationState New(Fuse.Animations.TriggerAnimation animation, Fuse.Visual node) [static] :4140
+// internal TriggerAnimationState New(Fuse.Animations.TriggerAnimation animation, Fuse.Visual node) [static] :4347
 TriggerAnimationState* TriggerAnimationState::New1(::g::Fuse::Animations::TriggerAnimation* animation, ::g::Fuse::Visual* node)
 {
     TriggerAnimationState* obj1 = (TriggerAnimationState*)uNew(TriggerAnimationState_typeof());
@@ -13501,5 +14102,20 @@ TriggerAnimationState* TriggerAnimationState::New1(::g::Fuse::Animations::Trigge
     return obj1;
 }
 // }
+
+// /usr/local/share/uno/Packages/Fuse.Motion/1.2.1/$.uno
+// -----------------------------------------------------
+
+// public delegate void DestinationBehavior<T>.ValueHandler(T value) :248
+uDelegateType* DestinationBehavior__ValueHandler_typeof()
+{
+    static uSStrong<uDelegateType*> type;
+    if (type != NULL) return type;
+
+    type = uDelegateType::New("Fuse.Animations.DestinationBehavior`1.ValueHandler", 1, 1);
+    type->SetSignature(uVoid_typeof(),
+        type->T(0));
+    return type;
+}
 
 }}} // ::g::Fuse::Animations

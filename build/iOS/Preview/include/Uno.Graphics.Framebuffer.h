@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/graphics/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/graphics/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -31,7 +31,6 @@ void Framebuffer__New1_fn(::g::Uno::Int2* size, int* format, int* flags, Framebu
 void Framebuffer__get_RenderTarget_fn(Framebuffer* __this, ::g::Uno::Graphics::RenderTarget** __retval);
 void Framebuffer__set_RenderTarget_fn(Framebuffer* __this, ::g::Uno::Graphics::RenderTarget* value);
 void Framebuffer__get_Size_fn(Framebuffer* __this, ::g::Uno::Int2* __retval);
-void Framebuffer__get_SupportsMipmap_fn(Framebuffer* __this, bool* __retval);
 
 struct Framebuffer : uObject
 {
@@ -47,7 +46,6 @@ struct Framebuffer : uObject
     ::g::Uno::Graphics::RenderTarget* RenderTarget();
     void RenderTarget(::g::Uno::Graphics::RenderTarget* value);
     ::g::Uno::Int2 Size();
-    bool SupportsMipmap();
     static Framebuffer* New1(::g::Uno::Int2 size, int format, int flags);
 };
 // }

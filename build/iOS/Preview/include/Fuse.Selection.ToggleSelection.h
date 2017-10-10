@@ -1,8 +1,8 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Selection/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Selection/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions-fcab7e57.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h>
 namespace g{namespace Fuse{namespace Selection{struct ToggleSelection;}}}
 namespace g{namespace Fuse{struct Node;}}
 

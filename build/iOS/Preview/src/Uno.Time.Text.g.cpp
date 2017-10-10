@@ -18,23 +18,23 @@
 #include <Uno.Time.LocalTime.h>
 #include <Uno.Time.Offset.h>
 #include <Uno.Time.OffsetDateTime.h>
-#include <Uno.Time.Text.FixedFo-3caa69db.h>
+#include <Uno.Time.Text.FixedFormatPattern-1.h>
 #include <Uno.Time.Text.IPatternPart-1.h>
-#include <Uno.Time.Text.LocalDa-27b9fe0.h>
-#include <Uno.Time.Text.LocalDa-2e9342e4.h>
-#include <Uno.Time.Text.LocalDa-9eba1702.h>
 #include <Uno.Time.Text.LocalDatePattern.h>
-#include <Uno.Time.Text.LocalTi-a13b9cda.h>
+#include <Uno.Time.Text.LocalDatePattern.LocalDateBucket.h>
+#include <Uno.Time.Text.LocalDateTimePattern.h>
+#include <Uno.Time.Text.LocalDateTimePattern.LocalDateTimeBucket.h>
 #include <Uno.Time.Text.LocalTimePattern.h>
+#include <Uno.Time.Text.LocalTimePattern.LocalTimeBucket.h>
 #include <Uno.Time.Text.NumberPart-1.h>
-#include <Uno.Time.Text.OffsetD-198d1bcc.h>
-#include <Uno.Time.Text.OffsetD-ecb3cada.h>
-#include <Uno.Time.Text.OffsetP-7c12f43a.h>
+#include <Uno.Time.Text.OffsetDateTimePattern.h>
+#include <Uno.Time.Text.OffsetDateTimePattern.OffsetDateTimeBucket.h>
 #include <Uno.Time.Text.OffsetPattern.h>
-#include <Uno.Time.Text.OffsetP-e5e2d2a8.h>
+#include <Uno.Time.Text.OffsetPattern.OffsetBucket.h>
+#include <Uno.Time.Text.OffsetPatternPart-1.h>
 #include <Uno.Time.Text.ParseResult-1.h>
 #include <Uno.Time.Text.PatternPart-2.h>
-#include <Uno.Time.Text.RangeNu-7ec9c3f5.h>
+#include <Uno.Time.Text.RangeNumberPart-1.h>
 #include <Uno.Time.Text.SeparatorPart-1.h>
 #include <Uno.Time.Text.SignPart-1.h>
 static uString* STRINGS[10];
@@ -45,8 +45,8 @@ namespace Uno{
 namespace Time{
 namespace Text{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class FixedFormatPattern<T> :7
 // {
@@ -149,8 +149,8 @@ FixedFormatPattern* FixedFormatPattern::New1(uType* __type, uArray* parts)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // internal abstract interface IPatternPart<T> :820
 // {
@@ -164,8 +164,8 @@ uInterfaceType* IPatternPart_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // private sealed class LocalDatePattern.LocalDateBucket :164
 // {
@@ -219,8 +219,8 @@ LocalDatePattern__LocalDateBucket* LocalDatePattern__LocalDateBucket::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // public sealed class LocalDatePattern :65
 // {
@@ -457,8 +457,8 @@ LocalDatePattern* LocalDatePattern::GeneralIsoPattern()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // private sealed class LocalDateTimePattern.LocalDateTimeBucket :318
 // {
@@ -515,8 +515,8 @@ LocalDateTimePattern__LocalDateTimeBucket* LocalDateTimePattern__LocalDateTimeBu
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // public sealed class LocalDateTimePattern :179
 // {
@@ -834,8 +834,8 @@ LocalDateTimePattern* LocalDateTimePattern::GeneralIsoPattern()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // private sealed class LocalTimePattern.LocalTimeBucket :436
 // {
@@ -889,8 +889,8 @@ LocalTimePattern__LocalTimeBucket* LocalTimePattern__LocalTimeBucket::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // public sealed class LocalTimePattern :336
 // {
@@ -1127,8 +1127,8 @@ LocalTimePattern* LocalTimePattern::GeneralIsoPattern()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class NumberPart<T> :862
 // {
@@ -1247,8 +1247,8 @@ NumberPart* NumberPart::New1(uType* __type, int size, bool obligatory, uDelegate
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // private sealed class OffsetPattern.OffsetBucket :741
 // {
@@ -1302,8 +1302,8 @@ OffsetPattern__OffsetBucket* OffsetPattern__OffsetBucket::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // private sealed class OffsetDateTimePattern.OffsetDateTimeBucket :617
 // {
@@ -1362,8 +1362,8 @@ OffsetDateTimePattern__OffsetDateTimeBucket* OffsetDateTimePattern__OffsetDateTi
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // public sealed class OffsetDateTimePattern :451
 // {
@@ -1740,8 +1740,8 @@ OffsetDateTimePattern* OffsetDateTimePattern::GeneralIsoPattern()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // public sealed class OffsetPattern :638
 // {
@@ -1983,8 +1983,8 @@ OffsetPattern* OffsetPattern::GeneralIsoPattern()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class OffsetPatternPart<T> :1057
 // {
@@ -2066,8 +2066,8 @@ OffsetPatternPart* OffsetPatternPart::New1(uType* __type, uDelegate* setter, uDe
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // public sealed class ParseResult<T> :756
 // {
@@ -2166,8 +2166,8 @@ ParseResult* ParseResult::New2(uType* __type, ::g::Uno::Exception* exception)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // internal abstract class PatternPart<TBucket, T> :829
 // {
@@ -2372,8 +2372,8 @@ void PatternPart::SkipNextPartsCountIfThisNotSpecified(int value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class RangeNumberPart<T> :902
 // {
@@ -2475,8 +2475,8 @@ RangeNumberPart* RangeNumberPart::New1(uType* __type, int size, int maxSize, uDe
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class SeparatorPart<T> :1009
 // {
@@ -2611,8 +2611,8 @@ SeparatorPart* SeparatorPart::New2(uType* __type, bool obligatory, uChar separat
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/time/text/$.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/time/text/$.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class SignPart<T> :960
 // {

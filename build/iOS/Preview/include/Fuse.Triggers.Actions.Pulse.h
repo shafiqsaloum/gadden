@@ -1,8 +1,8 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Triggers/1.0.5/actions/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Triggers/1.2.1/actions/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Triggers.Actions-fcab7e57.h>
+#include <Fuse.Triggers.Actions.TriggerAction.h>
 namespace g{namespace Fuse{namespace Triggers{namespace Actions{struct Pulse;}}}}
 namespace g{namespace Fuse{struct Node;}}
 

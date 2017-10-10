@@ -5,11 +5,11 @@
 #include <Fuse.Platform.ApplicationState.h>
 #include <Fuse.Platform.InterApp.h>
 #include <Fuse.Platform.Lifecycle.h>
-#include <Fuse.Platform.StatusB-487afe75.h>
+#include <Fuse.Platform.StatusBarAnimation.h>
 #include <Fuse.Platform.StatusBarStyle.h>
-#include <Fuse.Platform.SystemU-2024c55a.h>
-#include <Fuse.Platform.SystemU-a6dfc5d1.h>
 #include <Fuse.Platform.SystemUIID.h>
+#include <Fuse.Platform.SystemUIResizeReason.h>
+#include <Fuse.Platform.SystemUIWillResizeEventArgs.h>
 #include <Fuse.Platform.SysUIState.h>
 #include <Uno.Action.h>
 #include <Uno.Action-1.h>
@@ -20,10 +20,10 @@
 #include <Uno.EventHandler-1.h>
 #include <Uno.Int.h>
 #include <Uno.Object.h>
-#include <Uno.Platform.Applicat-bf686309.h>
 #include <Uno.Platform.ApplicationState.h>
+#include <Uno.Platform.ApplicationStateTransitionHandler.h>
 #include <Uno.Platform.CoreApp.h>
-#include <Uno.Platform.EventSou-afb2ad40.h>
+#include <Uno.Platform.EventSources.InterAppInvoke.h>
 #include <Uno.String.h>
 static uType* TYPES[6];
 
@@ -31,8 +31,8 @@ namespace g{
 namespace Fuse{
 namespace Platform{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Platform/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.2.1/$.uno
+// -------------------------------------------------------
 
 // internal static class AppEvents :15
 // {
@@ -112,8 +112,8 @@ void AppEvents::remove_LowMemoryWarning(uDelegate* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Platform/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public enum ApplicationState :72
 uEnumType* ApplicationState_typeof()
@@ -131,8 +131,8 @@ uEnumType* ApplicationState_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Platform/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public static class InterApp :44
 // {
@@ -215,8 +215,8 @@ void InterApp::remove_ReceivedURI(uDelegate* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Platform/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public static class Lifecycle :89
 // {
@@ -563,8 +563,8 @@ void Lifecycle::remove_Terminating(uDelegate* value)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Platform/1.0.5/ios/$.uno
-// --------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.2.1/ios/$.uno
+// -----------------------------------------------------------
 
 // public enum StatusBarAnimation :16
 uEnumType* StatusBarAnimation_typeof()
@@ -580,8 +580,8 @@ uEnumType* StatusBarAnimation_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Platform/1.0.5/ios/$.uno
-// --------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.2.1/ios/$.uno
+// -----------------------------------------------------------
 
 // public enum StatusBarStyle :10
 uEnumType* StatusBarStyle_typeof()
@@ -596,8 +596,8 @@ uEnumType* StatusBarStyle_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Platform/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public enum SystemUIID :165
 uEnumType* SystemUIID_typeof()
@@ -612,8 +612,8 @@ uEnumType* SystemUIID_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Platform/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public enum SystemUIResizeReason :171
 uEnumType* SystemUIResizeReason_typeof()
@@ -629,8 +629,8 @@ uEnumType* SystemUIResizeReason_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Platform/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.2.1/$.uno
+// -------------------------------------------------------
 
 // public sealed class SystemUIWillResizeEventArgs :185
 // {
@@ -876,8 +876,8 @@ SystemUIWillResizeEventArgs* SystemUIWillResizeEventArgs::New2(int id, int resiz
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Platform/1.0.5/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.2.1/$.uno
+// -------------------------------------------------------
 
 // internal enum SysUIState :178
 uEnumType* SysUIState_typeof()

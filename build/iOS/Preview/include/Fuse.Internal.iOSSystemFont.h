@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -15,7 +15,7 @@ namespace g{
 namespace Fuse{
 namespace Internal{
 
-// internal static extern class iOSSystemFont :1144
+// internal static extern class iOSSystemFont :1146
 // {
 uClassType* iOSSystemFont_typeof();
 void iOSSystemFont__AddFamily_fn(uString* name);

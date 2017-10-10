@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Nodes/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{namespace Uno{struct Float4;}}
 namespace g{
 namespace Fuse{
 
-// public struct LayoutParams :1555
+// public struct LayoutParams :1553
 // {
 uStructType* LayoutParams_typeof();
 void LayoutParams__BoxConstrain_fn(LayoutParams* __this, LayoutParams* o);

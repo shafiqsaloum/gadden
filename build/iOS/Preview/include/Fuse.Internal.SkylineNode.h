@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Common/1.0.5/internal/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.2.1/internal/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace g{
 namespace Fuse{
 namespace Internal{
 
-// internal struct SkylineNode :1787
+// internal struct SkylineNode :2449
 // {
 uStructType* SkylineNode_typeof();
 void SkylineNode__ctor__fn(SkylineNode* __this, ::g::Uno::Int2* position, int* width);

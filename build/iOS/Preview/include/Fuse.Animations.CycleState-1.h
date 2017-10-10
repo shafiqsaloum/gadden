@@ -1,8 +1,8 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Animations/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Animations/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Fuse.Animations.OpenA-dfad1354.h>
+#include <Fuse.Animations.OpenAnimatorState.h>
 namespace g{namespace Fuse{namespace Animations{struct CreateStateParams;}}}
 namespace g{namespace Fuse{namespace Animations{struct Cycle;}}}
 namespace g{namespace Fuse{namespace Animations{struct CycleState;}}}
@@ -12,7 +12,7 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// internal sealed class CycleState<T> :974
+// internal sealed class CycleState<T> :1168
 // {
 ::g::Fuse::Animations::OpenAnimatorState_type* CycleState_typeof();
 void CycleState__ctor_2_fn(CycleState* __this, ::g::Fuse::Animations::Cycle* animator, ::g::Fuse::Animations::CreateStateParams* p);

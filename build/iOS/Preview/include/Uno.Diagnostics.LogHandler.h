@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/UnoCore/1.0.13/source/uno/diagnostics/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.2.2/source/uno/diagnostics/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,7 +8,7 @@ namespace g{
 namespace Uno{
 namespace Diagnostics{
 
-// public delegate void LogHandler(string message, Uno.Diagnostics.DebugMessageType type) :72
+// public delegate void LogHandler(string message, Uno.Diagnostics.DebugMessageType type) :75
 uDelegateType* LogHandler_typeof();
 
 }}} // ::g::Uno::Diagnostics

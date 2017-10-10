@@ -1,4 +1,4 @@
-// This file was generated based on '/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Fuse.Gestures/1.0.5/$.uno'.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Gestures/1.2.1/$.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -18,7 +18,7 @@ namespace g{
 namespace Fuse{
 namespace Gestures{
 
-// public class KeepInViewCommon :137
+// public class KeepInViewCommon :140
 // {
 ::g::Fuse::Node_type* KeepInViewCommon_typeof();
 void KeepInViewCommon__ctor_3_fn(KeepInViewCommon* __this);

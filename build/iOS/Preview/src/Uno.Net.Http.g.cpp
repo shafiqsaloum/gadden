@@ -11,45 +11,45 @@
 #include <Uno.Char.h>
 #include <Uno.Collections.Dictionary-2.h>
 #include <Uno.Collections.IDictionary-2.h>
+#include <Uno.Collections.List-1.Enumerator.h>
 #include <Uno.Collections.List-1.h>
-#include <Uno.Collections.List--251bdc7d.h>
 #include <Uno.Delegate.h>
 #include <Uno.Diagnostics.Debug.h>
-#include <Uno.Diagnostics.Debug-5d778620.h>
+#include <Uno.Diagnostics.DebugMessageType.h>
 #include <Uno.Exception.h>
 #include <Uno.GC.h>
 #include <Uno.Int.h>
 #include <Uno.Long.h>
-#include <Uno.Net.Http.Absolute-f205092.h>
+#include <Uno.Net.Http.AbsolutePathParser.h>
 #include <Uno.Net.Http.HashParser.h>
 #include <Uno.Net.Http.HostInfo.h>
 #include <Uno.Net.Http.HostInfoParser.h>
-#include <Uno.Net.Http.HttpDefa-b19f5e55.h>
-#include <Uno.Net.Http.HttpMess-1d2e0b2f.h>
-#include <Uno.Net.Http.HttpMess-2de79056.h>
-#include <Uno.Net.Http.HttpMess-3c1f1370.h>
-#include <Uno.Net.Http.HttpMess-8a5feb56.h>
+#include <Uno.Net.Http.HttpDefaultDispatcher.h>
 #include <Uno.Net.Http.HttpMessageCache.h>
-#include <Uno.Net.Http.HttpMess-b09aa232.h>
+#include <Uno.Net.Http.HttpMessageHandler.h>
+#include <Uno.Net.Http.HttpMessageHandler.StaticData.h>
+#include <Uno.Net.Http.HttpMessageHandlerRequest.DispatchClosure.h>
+#include <Uno.Net.Http.HttpMessageHandlerRequest.DispatchClosure-1.h>
+#include <Uno.Net.Http.HttpMessageHandlerRequest.h>
 #include <Uno.Net.Http.HttpRequestState.h>
 #include <Uno.Net.Http.HttpResponseType.h>
-#include <Uno.Net.Http.HttpStat-138f9460.h>
-#include <Uno.Net.Http.Implemen-b8370cb9.h>
-#include <Uno.Net.Http.Implemen-c6c2da8d.h>
-#include <Uno.Net.Http.Implemen-c964dca9.h>
-#include <Uno.Net.Http.InvalidR-d0abcd6.h>
-#include <Uno.Net.Http.InvalidS-7f541f1c.h>
+#include <Uno.Net.Http.HttpStatusReasonPhrase.h>
+#include <Uno.Net.Http.Implementation.IHttpRequest.h>
+#include <Uno.Net.Http.Implementation.iOSHttpRequest.h>
+#include <Uno.Net.Http.Implementation.iOSHttpSharedCache.h>
+#include <Uno.Net.Http.InvalidResponseTypeException.h>
+#include <Uno.Net.Http.InvalidStateException.h>
 #include <Uno.Net.Http.QueryParser.h>
-#include <Uno.Net.Http.SchemePa-1d577c7e.h>
 #include <Uno.Net.Http.SchemeParser.h>
+#include <Uno.Net.Http.SchemeParserResult.h>
 #include <Uno.Net.Http.Uri.h>
-#include <Uno.Net.Http.UriForma-83749d5f.h>
+#include <Uno.Net.Http.UriFormatException.h>
 #include <Uno.Net.Http.UriScheme.h>
 #include <Uno.Net.Http.UriSchemeType.h>
 #include <Uno.Net.Http.UserInfoParser.h>
 #include <Uno.ObjectDisposedException.h>
-#include <Uno.Platform.Applicat-bf686309.h>
 #include <Uno.Platform.ApplicationState.h>
+#include <Uno.Platform.ApplicationStateTransitionHandler.h>
 #include <Uno.Platform.CoreApp.h>
 #include <Uno.String.h>
 #include <Uno.Text.Utf8.h>
@@ -62,8 +62,8 @@ namespace Uno{
 namespace Net{
 namespace Http{
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/uriparsers/$.uno
+// -----------------------------------------------------------------
 
 // public sealed class AbsolutePathParser :8
 // {
@@ -137,8 +137,8 @@ uString* AbsolutePathParser::Parse(uString* uriString, int idx, int endIdx, int*
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // private sealed class HttpMessageHandlerRequest.DispatchClosure :333
 // {
@@ -212,8 +212,8 @@ HttpMessageHandlerRequest__DispatchClosure* HttpMessageHandlerRequest__DispatchC
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // private sealed class HttpMessageHandlerRequest.DispatchClosure<TArg1> :356
 // {
@@ -280,8 +280,8 @@ void HttpMessageHandlerRequest__DispatchClosure1::Run()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/uriparsers/$.uno
+// -----------------------------------------------------------------
 
 // public sealed class HashParser :32
 // {
@@ -357,8 +357,8 @@ uString* HashParser::Parse(uString* uriString, int idx, int* startPartIdx)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/uriparsers/$.uno
+// -----------------------------------------------------------------
 
 // public sealed class HostInfo :60
 // {
@@ -491,8 +491,8 @@ HostInfo* HostInfo::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/uriparsers/$.uno
+// -----------------------------------------------------------------
 
 // public sealed class HostInfoParser :69
 // {
@@ -694,8 +694,8 @@ HostInfoParser* HostInfoParser::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // internal sealed class HttpDefaultDispatcher :847
 // {
@@ -760,8 +760,8 @@ HttpDefaultDispatcher* HttpDefaultDispatcher::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // public static class HttpMessageCache :5
 // {
@@ -774,7 +774,7 @@ static void HttpMessageCache__cctor__fn(uType* __type)
 static void HttpMessageCache_build(uType* type)
 {
     ::STRINGS[22] = uString::Const("Uno.Net.Http.HttpMessageCache: Changes to IsCacheEnabled are ignored after initialization.");
-    ::STRINGS[23] = uString::Const("/Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno");
+    ::STRINGS[23] = uString::Const("/usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno");
     ::STRINGS[24] = uString::Const("Uno.Net.Http.HttpMessageCache: Changes to MaxCacheSizeInBytes are ignored after initialization.");
     ::TYPES[2] = ::g::Uno::Platform::ApplicationStateTransitionHandler_typeof();
     type->SetFields(0,
@@ -879,7 +879,7 @@ void HttpMessageCache::IsCacheEnabled(bool value)
     HttpMessageCache_typeof()->Init();
 
     if (HttpMessageCache::_isInitialized())
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[22/*"Uno.Net.Htt...*/], 1, ::STRINGS[23/*"/Users/eric...*/], 17);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[22/*"Uno.Net.Htt...*/], 0, ::STRINGS[23/*"/usr/local/...*/], 17);
     else
         HttpMessageCache::_isCacheDisabled() = !value;
 }
@@ -898,14 +898,14 @@ void HttpMessageCache::MaxCacheSizeInBytes(int64_t value)
     HttpMessageCache_typeof()->Init();
 
     if (HttpMessageCache::_isInitialized())
-        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[24/*"Uno.Net.Htt...*/], 1, ::STRINGS[23/*"/Users/eric...*/], 30);
+        ::g::Uno::Diagnostics::Debug::Log5(::STRINGS[24/*"Uno.Net.Htt...*/], 0, ::STRINGS[23/*"/usr/local/...*/], 30);
     else
         HttpMessageCache::_maxCacheSizeInBytes() = value;
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // public sealed class HttpMessageHandler :93
 // {
@@ -1076,8 +1076,8 @@ HttpMessageHandler* HttpMessageHandler::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // public sealed class HttpMessageHandlerRequest :203
 // {
@@ -1850,8 +1850,8 @@ HttpMessageHandlerRequest* HttpMessageHandlerRequest::New1(::g::Uno::Net::Http::
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // public enum HttpRequestState :712
 uEnumType* HttpRequestState_typeof()
@@ -1874,8 +1874,8 @@ uEnumType* HttpRequestState_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // public enum HttpResponseType :736
 uEnumType* HttpResponseType_typeof()
@@ -1891,8 +1891,8 @@ uEnumType* HttpResponseType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // public static class HttpStatusReasonPhrase :750
 // {
@@ -2028,15 +2028,15 @@ uString* HttpStatusReasonPhrase::GetFromStatusCode(int statusCode)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // public sealed class InvalidResponseTypeException :691
 // {
 static void InvalidResponseTypeException_build(uType* type)
 {
     ::STRINGS[75] = uString::Const("Response type is invalid.");
-    type->SetFields(3);
+    type->SetFields(4);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)InvalidResponseTypeException__New4_fn, 0, true, type, 0));
 }
@@ -2048,7 +2048,7 @@ static void InvalidResponseTypeException_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 3;
+    options.FieldCount = 4;
     options.ObjectSize = sizeof(InvalidResponseTypeException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.Net.Http.InvalidResponseTypeException", options);
@@ -2084,15 +2084,15 @@ InvalidResponseTypeException* InvalidResponseTypeException::New4()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // public sealed class InvalidStateException :697
 // {
 static void InvalidStateException_build(uType* type)
 {
     ::STRINGS[76] = uString::Const("The object is in an invalid state.");
-    type->SetFields(3);
+    type->SetFields(4);
     type->Reflection.SetFunctions(2,
         new uFunction(".ctor", NULL, (void*)InvalidStateException__New4_fn, 0, true, type, 0),
         new uFunction(".ctor", NULL, (void*)InvalidStateException__New5_fn, 0, true, type, 1, ::g::Uno::String_typeof()));
@@ -2105,7 +2105,7 @@ static void InvalidStateException_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 3;
+    options.FieldCount = 4;
     options.ObjectSize = sizeof(InvalidStateException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.Net.Http.InvalidStateException", options);
@@ -2167,8 +2167,8 @@ InvalidStateException* InvalidStateException::New5(uString* message)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/uriparsers/$.uno
+// -----------------------------------------------------------------
 
 // public sealed class QueryParser :161
 // {
@@ -2248,8 +2248,8 @@ uString* QueryParser::Parse(uString* uriString, uString* scheme, int idx, int* s
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/uriparsers/$.uno
+// -----------------------------------------------------------------
 
 // public sealed class SchemeParser :201
 // {
@@ -2346,8 +2346,8 @@ SchemeParser* SchemeParser::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/uriparsers/$.uno
+// -----------------------------------------------------------------
 
 // public struct SchemeParserResult :195
 // {
@@ -2376,8 +2376,8 @@ uStructType* SchemeParserResult_typeof()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // internal static class HttpMessageHandler.StaticData :95
 // {
@@ -2420,8 +2420,8 @@ void HttpMessageHandler__StaticData::IncrementPendingRequests()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // public sealed class Uri :869
 // {
@@ -2906,14 +2906,14 @@ Uri* Uri::New1(uString* uriString)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // public sealed class UriFormatException :1097
 // {
 static void UriFormatException_build(uType* type)
 {
-    type->SetFields(3);
+    type->SetFields(4);
     type->Reflection.SetFunctions(1,
         new uFunction(".ctor", NULL, (void*)UriFormatException__New4_fn, 0, true, type, 1, ::g::Uno::String_typeof()));
 }
@@ -2925,7 +2925,7 @@ static void UriFormatException_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Uno::Exception_typeof();
-    options.FieldCount = 3;
+    options.FieldCount = 4;
     options.ObjectSize = sizeof(UriFormatException);
     options.TypeSize = sizeof(::g::Uno::Exception_type);
     type = (::g::Uno::Exception_type*)uClassType::New("Uno.Net.Http.UriFormatException", options);
@@ -2960,8 +2960,8 @@ UriFormatException* UriFormatException::New4(uString* message)
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // public sealed class UriScheme :1120
 // {
@@ -3122,8 +3122,8 @@ UriScheme* UriScheme::New1()
 }
 // }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/$.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/$.uno
+// ------------------------------------------------------
 
 // public enum UriSchemeType :1113
 uEnumType* UriSchemeType_typeof()
@@ -3139,8 +3139,8 @@ uEnumType* UriSchemeType_typeof()
     return type;
 }
 
-// /Users/ericaglimsholt/Library/Application Support/Fusetools/Packages/Uno.Net.Http/1.0.13/uriparsers/$.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.2.2/uriparsers/$.uno
+// -----------------------------------------------------------------
 
 // public sealed class UserInfoParser :257
 // {
